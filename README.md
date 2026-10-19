@@ -1,0 +1,77 @@
+# VoteSticker.org
+
+Free, nonpartisan profile pictures that show your state's voting dates for the November 3, 2026
+election. Pick your state, save a ready-made design or make your own, and post it. Live at
+**https://votesticker.org**.
+
+Made by Garrett Nafzinger of [Garrett Digital](https://www.garrettdigital.com/).
+
+## What It Does
+
+- **One page per state** (`/texas/`, `/district-of-columbia/`) with that state's early voting,
+  vote-by-mail, or Election Day dates and a link to the official election office.
+- **Ready-made designs** for the most populous states, plus a maker with 18 designs (3 layouts by 6
+  palettes) and short headlines that are true for the state ("VOTE EARLY" only where early voting is
+  confirmed).
+- **Nothing gets cropped.** Every picture keeps its content inside the circle that Facebook, Instagram,
+  X, and LinkedIn crop profile pictures to. QA renders all 4,302 combinations and fails on any pixel
+  outside it.
+- **Private by design.** Pictures are drawn in the browser with canvas. Nothing is uploaded.
+
+## Rules the Content Follows
+
+- A state shows dates only after they were read on an official state page, with the source URL and
+  check date stored in `site/states.js`. Unchecked states say Election Day, render with `noindex`, and
+  stay out of the sitemap.
+- Messages stay short: two-line headlines that read at 40 to 60 px.
+- No site address on the images, no party symbols, no red-versus-blue themes.
+
+## Layout
+
+| Path | What |
+|---|---|
+| `site/states.js` | One row per state plus DC: dates, summary, official link, source, check date. **The only file to edit for dates** |
+| `site/index.php` | Page template (hub and state pages): titles, descriptions, canonical, breadcrumbs, state panel, internal links |
+| `site/app.js`, `site/app.css` | The maker: layouts, drawing, saving, sharing |
+| `site/state-shapes.js` | Generated state outlines (US Census boundaries via us-atlas 3.0.1, public domain) |
+| `site/assets/` | Fonts (Anton, Archivo Black; SIL Open Font License), icons, brand mark, share images, ready-made designs |
+| `site/<state>/index.php` | Two-line stubs that render that state locally |
+| `build/` | Static build, state stubs, share images, favicon, outline and crop-fit tools |
+| `scripts/` | QA: `qa_cards.mjs` (every card in Chromium and WebKit, plus server-vs-browser panel parity) and `qa_seo.py` (52 pages: metadata, canonicals, links, sitemap, redirects) |
+| `docs/` | Image prompts, date research prompts, launch posts, history |
+
+## Build and Deploy
+
+The live site is static HTML on Cloudflare Pages. PHP runs only at build time.
+
+```
+python3 -I build/state_pages.py        # after any states.js change: state folder stubs
+node build/og_states.mjs                # after new designs or dates: per-state share images (needs php -S on site/)
+python3 -I build/build_static.py        # renders 52 pages into dist/, writes sitemap.xml and robots.txt
+python3 -m http.server 8792 -d dist     # then QA locally:
+python3 -I scripts/qa_seo.py --base http://127.0.0.1:8792/ --no-legacy
+node scripts/qa_cards.mjs --base http://127.0.0.1:8792/
+wrangler pages deploy dist --project-name votesticker --branch main
+python3 -I scripts/qa_seo.py            # live, including the old garrettn.com/vote/ redirects
+```
+
+`build/lastmod.json` keeps each page's content hash and the date it last changed, so the sitemap's
+`<lastmod>` moves only when a page really changes. Commit it with each build.
+
+## Adding Ready-Made Designs
+
+Review each image (spelling, en dash in ranges, accurate outline at true proportions, capital star in
+the right place and clear of the letters, no headline inside the outline), then run
+`build/fit_to_circle.py` on it into `site/assets/states/<abbr>/<abbr>-vote-N.jpg`. Any state folder there
+shows as a gallery on that state's page with no code change. Prompts are in
+`docs/round3-prompts-one-state.md`.
+
+## Brand
+
+VoteSticker.org takes its look from the "I Voted" sticker: a cream sticker with a peeled corner and the
+capital star, in the navy (#14295E), red (#C1272D), cream (#FBF6E8), and gold (#F2C14E) of the most
+popular designs. The mark is `site/assets/mark.svg`; the wordmark is Anton.
+
+## License
+
+Code: MIT. The ready-made images and the brand mark are not licensed for reuse.

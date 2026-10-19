@@ -1,0 +1,6 @@
+dist/
+originals/
+legacy-garrettn/
+node_modules/
+.DS_Store
+__pycache__/

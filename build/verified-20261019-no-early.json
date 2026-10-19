@@ -1,0 +1,26 @@
+{
+ "AL": {
+  "kind": "none",
+  "varies": false,
+  "note": "If you can't vote in person on Election Day, you may qualify for an absentee ballot.",
+  "officialUrl": "https://www.sos.alabama.gov/alabama-votes",
+  "officialLabel": "sos.alabama.gov",
+  "sourceUrl": "https://www.sos.alabama.gov/alabama-votes/voter/absentee-voting"
+ },
+ "NH": {
+  "kind": "none",
+  "varies": false,
+  "note": "If you can't vote in person on Election Day, you may qualify for an absentee ballot.",
+  "officialUrl": "https://www.sos.nh.gov/elections/absentee-ballots",
+  "officialLabel": "sos.nh.gov",
+  "sourceUrl": "https://www.sos.nh.gov/elections/absentee-ballots"
+ },
+ "MS": {
+  "kind": "none",
+  "varies": false,
+  "note": "Absentee voting, in person or by mail, is open to voters who meet certain conditions.",
+  "officialUrl": "https://www.sos.ms.gov/elections-voting",
+  "officialLabel": "sos.ms.gov",
+  "sourceUrl": "https://www.sos.ms.gov/yall-vote/absentee-voting-information"
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "IA": {
+  "kind": "in-person",
+  "start": "2026-10-14",
+  "end": "2026-11-02",
+  "varies": false,
+  "note": "Vote absentee in person at your county auditor's office.",
+  "officialUrl": "https://sos.iowa.gov/elections/auditors/auditorslist.html",
+  "officialLabel": "sos.iowa.gov",
+  "sourceUrl": "https://sos.iowa.gov/news-resources/secretary-pate-encourages-iowans-make-plan-vote-2026-general-election"
+ },
+ "MD": {
+  "kind": "in-person",
+  "start": "2026-10-22",
+  "end": "2026-10-29",
+  "varies": false,
+  "note": "Early voting centers are open 7 a.m. to 8 p.m.",
+  "officialUrl": "https://elections.maryland.gov/voting/early_voting.html",
+  "officialLabel": "elections.maryland.gov",
+  "sourceUrl": "https://elections.maryland.gov/voting/early_voting.html"
+ },
+ "MI": {
+  "kind": "in-person",
+  "start": "2026-10-24",
+  "end": "2026-11-01",
+  "varies": true,
+  "note": "Every community is open at least these days; some add more. Look up your site at mi.gov/earlyvoting.",
+  "officialUrl": "https://www.michigan.gov/sos/elections/voting/early-voting",
+  "officialLabel": "mi.gov/earlyvoting",
+  "sourceUrl": "https://www.michigan.gov/sos/resources/news/2026/10/13/three-weeks-before-election-day-6-percent-of-voters-have-already-cast-their-ballot"
+ },
+ "MN": {
+  "kind": "in-person",
+  "start": "2026-09-18",
+  "end": "2026-11-02",
+  "varies": false,
+  "note": "Vote at your county or city election office; the last day is Monday, November 2, until 5 p.m.",
+  "officialUrl": "https://www.sos.mn.gov/elections-voting/other-ways-to-vote/voting-locations-before-election-day/",
+  "officialLabel": "sos.mn.gov",
+  "sourceUrl": "https://www.sos.mn.gov/elections-voting/other-ways-to-vote/voting-locations-before-election-day/"
+ },
+ "NJ": {
+  "kind": "in-person",
+  "start": "2026-10-24",
+  "end": "2026-11-01",
+  "varies": false,
+  "note": "Open 10 a.m. to 8 p.m. Monday to Saturday, and 10 a.m. to 6 p.m. Sunday.",
+  "officialUrl": "https://www.nj.gov/state/elections/vote.shtml",
+  "officialLabel": "vote.nj.gov",
+  "sourceUrl": "https://www.nj.gov/state/elections/vote.shtml"
+ },
+ "OK": {
+  "kind": "in-person",
+  "start": "2026-10-29",
+  "end": "2026-10-31",
+  "varies": false,
+  "note": "Thursday and Friday 8 a.m. to 6 p.m., Saturday 8 a.m. to 2 p.m., in the county where you are registered.",
+  "officialUrl": "https://oklahoma.gov/elections/voters/early-voting.html",
+  "officialLabel": "oklahoma.gov/elections",
+  "sourceUrl": "https://oklahoma.gov/elections/voters/early-voting.html"
+ },
+ "HI": {
+  "kind": "mail",
+  "start": "2026-10-16",
+  "end": "2026-11-03",
+  "varies": false,
+  "note": "Ballots arrive by October 16. They must be received by 7 p.m. on Election Day, so mail early or use a drop box.",
+  "officialUrl": "https://elections.hawaii.gov/voting/",
+  "officialLabel": "elections.hawaii.gov",
+  "sourceUrl": "https://elections.hawaii.gov/news-release/hawaii-voters-to-receive-general-election-ballots-by-october-16/"
+ },
+ "ID": {
+  "kind": "in-person",
+  "end": "2026-10-30",
+  "varies": true,
+  "dateLine": "THROUGH OCT 30",
+  "summary": "Early voting is open in every Idaho county through Friday, October 30.",
+  "note": "Days and hours differ by county; find yours on VoteIdaho.gov.",
+  "officialUrl": "https://voteidaho.gov/casting-your-ballot/",
+  "officialLabel": "voteidaho.gov",
+  "sourceUrl": "https://voteidaho.gov/casting-your-ballot/"
+ },
+ "NE": {
+  "kind": "in-person",
+  "end": "2026-11-02",
+  "varies": true,
+  "dateLine": "THROUGH NOV 2",
+  "summary": "You can vote early in person at your county election office through Monday, November 2.",
+  "note": "In-person early voting opens 30 days before the election; call your county office for hours.",
+  "officialUrl": "https://sos.nebraska.gov/elections/early-voting",
+  "officialLabel": "sos.nebraska.gov",
+  "sourceUrl": "https://sos.nebraska.gov/elections/early-voting"
+ }
+}
