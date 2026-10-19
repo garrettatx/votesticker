@@ -141,7 +141,7 @@ def main():
         if '?state=' in html:
             fail(f'/{p}: has a ?state= link')
         og = pg.meta.get('og:image', '')
-        want_og = f'{PROD}assets/og/{p[:-1]}.jpg' if p else f'{PROD}assets/og-vote.jpg'
+        want_og = f'{PROD}assets/og/{p[:-1]}.jpg' if p else f'{PROD}assets/og-hub.jpg'
         if not og.startswith(want_og + '?v='):
             fail(f'/{p}: og:image {og}')
         elif fetch(urljoin(base, og.replace(PROD, '')))[0] != 200:

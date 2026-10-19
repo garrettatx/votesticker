@@ -523,13 +523,7 @@
 	function redraw() { drawGrid(); drawPreview(); }
 
 	function init() {
-		var sel = $('state');
-		STATES.forEach(function (s) {
-			var o = document.createElement('option');
-			o.value = s.abbr;
-			o.textContent = s.name;
-			sel.appendChild(o);
-		});
+		finder();
 		var headSel = $('headline');
 		$('circle').checked = state.circle;
 		document.body.classList.toggle('as-circle', state.circle);
@@ -538,10 +532,6 @@
 		wireSave($('save'));
 		buildGrid();
 
-		sel.addEventListener('change', function () {
-			var meta = (window.VOTE_META || {})[sel.value];
-			if (meta) { window.location.href = (window.VOTE_BASE || '/') + meta.slug + '/'; }
-		});
 		headSel.addEventListener('change', function () {
 			state.headline = headSel.value;
 			// The date line follows the headline until someone types their own.
@@ -609,7 +599,70 @@
 
 		// Each state has its own page (/<slug>/, rendered by index.php); the menu goes there.
 		var start = window.VOTE_PAGE_STATE;
-		if (byAbbr[start]) { sel.value = start; showState(start); }
+		if (byAbbr[start]) { showState(start); }
+	}
+
+	// The state finder: a type-ahead combobox (ARIA 1.2 pattern). Names match from the start of any word,
+	// two letters also match the postal code ("tx"), and choosing a state goes to its page.
+	function finder() {
+		var input = $('state-find'), list = $('state-options'), go = $('state-go');
+		if (!input) { return; }
+		var meta = window.VOTE_META || {}, matches = [], active = -1;
+		var visit = function (abbr) { if (meta[abbr]) { window.location.href = (window.VOTE_BASE || '/') + meta[abbr].slug + '/'; } };
+		var find = function (q) {
+			q = q.trim().toLowerCase().replace(/[^a-z ]/g, '');
+			if (!q) { return []; }
+			var code = q.length === 2 ? STATES.filter(function (s) { return s.abbr.toLowerCase() === q; }) : [];
+			var words = STATES.filter(function (s) {
+				var n = s.name.toLowerCase().replace(/[^a-z ]/g, '');
+				return n.indexOf(q) === 0 || n.indexOf(' ' + q) > 0;
+			});
+			return code.concat(words.filter(function (s) { return code.indexOf(s) < 0; })).slice(0, 8);
+		};
+		var close = function () { list.hidden = true; input.setAttribute('aria-expanded', 'false'); input.removeAttribute('aria-activedescendant'); active = -1; };
+		var mark = function (i) {
+			active = i;
+			Array.prototype.forEach.call(list.children, function (li, k) { li.setAttribute('aria-selected', String(k === i)); });
+			if (i >= 0) { input.setAttribute('aria-activedescendant', 'state-opt-' + i); } else { input.removeAttribute('aria-activedescendant'); }
+		};
+		var draw = function () {
+			matches = find(input.value);
+			list.innerHTML = '';
+			matches.forEach(function (s, i) {
+				var li = document.createElement('li');
+				li.id = 'state-opt-' + i;
+				li.setAttribute('role', 'option');
+				li.setAttribute('aria-selected', 'false');
+				var nm = document.createElement('span');
+				nm.textContent = s.name;
+				var st = document.createElement('span');
+				st.className = 'finder__status';
+				st.textContent = (meta[s.abbr] || {}).status || '';
+				li.appendChild(nm);
+				li.appendChild(st);
+				li.addEventListener('mousedown', function (e) { e.preventDefault(); visit(s.abbr); });
+				list.appendChild(li);
+			});
+			if (!matches.length && input.value.trim()) {
+				var none = document.createElement('li');
+				none.className = 'finder__none';
+				none.textContent = 'No state matches. Try the full name.';
+				list.appendChild(none);
+			}
+			var open = !!input.value.trim();
+			list.hidden = !open;
+			input.setAttribute('aria-expanded', String(open && matches.length > 0));
+			mark(matches.length ? 0 : -1);
+		};
+		input.addEventListener('input', draw);
+		input.addEventListener('keydown', function (e) {
+			if (e.key === 'ArrowDown' && matches.length) { e.preventDefault(); if (list.hidden) { draw(); } else { mark(Math.min(active + 1, matches.length - 1)); } }
+			else if (e.key === 'ArrowUp' && matches.length) { e.preventDefault(); mark(Math.max(active - 1, 0)); }
+			else if (e.key === 'Enter') { e.preventDefault(); if (matches[active]) { visit(matches[active].abbr); } else if (matches[0]) { visit(matches[0].abbr); } }
+			else if (e.key === 'Escape') { close(); }
+		});
+		input.addEventListener('blur', function () { setTimeout(close, 120); });
+		go.addEventListener('click', function () { draw(); if (matches[0]) { visit(matches[active >= 0 ? active : 0].abbr); } else { input.focus(); } });
 	}
 
 	function fonts() {

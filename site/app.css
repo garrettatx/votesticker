@@ -202,10 +202,9 @@ main > .controls { max-width: 480px; }
 
 /* Brand lockup in the header band; the breadcrumbs follow it on state pages. */
 .brand { display: inline-flex; align-items: center; gap: 10px; margin: 0 0 14px; color: #FBF6E8; text-decoration: none; }
-.brand__mark { flex: none; width: 38px; height: 38px; transform: rotate(-8deg); }
-.brand__name { font-family: "Vote Display", Impact, sans-serif; font-size: 1.5rem; letter-spacing: 0.03em; line-height: 1; white-space: nowrap; }
+.brand__mark { flex: none; width: 40px; height: 40px; transform: rotate(-8deg); }
+.brand__name { font-family: "Vote Display", Impact, sans-serif; font-size: 1.6rem; letter-spacing: 0.02em; line-height: 1; white-space: nowrap; }
 .brand__hi { color: #F2C14E; }
-.brand__tld { font-size: 0.62em; letter-spacing: 0.06em; color: #DCE3F2; margin-left: 1px; }
 .brand__tag { display: none; font-size: 0.86rem; color: #DCE3F2; padding-left: 12px; border-left: 1px solid #9FB0D6; }
 @media (min-width: 600px) { .brand__tag { display: inline; } }
 .brand:hover .brand__name { text-decoration: underline; text-underline-offset: 4px; }
@@ -215,3 +214,64 @@ main > .controls { max-width: 480px; }
 .foot__made { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
 .foot__gd { display: inline-flex; align-items: center; }
 .foot__gd img { height: 40px; width: auto; display: block; }
+
+/* Direction A, Civic Print Shop (October 19, 2026): Anton display type, navy band, red ribbon, gold
+   accents, cream paper. */
+@font-face { font-family: "Vote Display"; src: url("/assets/fonts/anton.woff2") format("woff2"); font-display: swap; }
+.top h1, .display-h { font-family: "Vote Display", Impact, sans-serif; font-weight: 400; letter-spacing: 0.01em; }
+.top h1 { font-size: clamp(2.1rem, 6vw, 3.6rem); line-height: 1.02; margin: 4px 0 10px; }
+.display-h { font-size: clamp(1.6rem, 3.6vw, 2.2rem); line-height: 1.1; margin: 0 0 10px; }
+.ribbon { display: inline-block; margin: 0 0 12px; padding: 8px 14px; border-radius: 8px; background: #C1272D; color: #fff; font-family: "Vote Display", Impact, sans-serif; font-size: clamp(1.15rem, 3vw, 1.6rem); letter-spacing: 0.03em; line-height: 1.1; }
+
+/* Hub hero: the promise, the finder, and three stickers. */
+.top--hub { padding-bottom: 32px; }
+.hero { display: grid; gap: 24px; align-items: center; }
+.eyebrow { margin: 0; font-weight: 800; font-size: 0.85rem; letter-spacing: 0.14em; text-transform: uppercase; color: #F2C14E; }
+.top--hub h1 { font-size: clamp(2.6rem, 8vw, 4.4rem); text-transform: uppercase; }
+.top--hub .lead { font-size: 1.08rem; }
+.hero__art { display: flex; justify-content: center; gap: 4%; max-width: 420px; width: 100%; margin: 4px auto 0; }
+.hero__sticker { width: 30%; height: auto; border-radius: 50%; box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35); }
+.hero__sticker--1 { transform: rotate(-8deg); }
+.hero__sticker--2 { transform: rotate(6deg) translateY(10px); }
+.hero__sticker--3 { transform: rotate(-3deg); }
+@media (min-width: 860px) {
+	.top--hub { padding: 28px 0 48px; }
+	.hero { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 48px; }
+	.hero__art { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 26px; max-width: 470px; margin: 0 0 0 auto; }
+	.hero__sticker { width: 100%; }
+	.hero__sticker--1 { transform: rotate(-8deg); }
+	.hero__sticker--2 { transform: rotate(7deg) translateY(36px); }
+	.hero__sticker--3 { grid-column: 1 / span 2; width: 50%; justify-self: center; margin-top: -24px; transform: rotate(-3deg); }
+}
+
+/* State finder: type-ahead combobox. */
+.finder { margin: 18px 0 0; max-width: 560px; }
+.finder label { display: block; font-weight: 800; margin-bottom: 6px; }
+.finder__box { position: relative; display: flex; gap: 8px; }
+.finder input { flex: 1; min-width: 0; min-height: 54px; border: 2px solid #14295E; border-radius: 12px; font-size: 1.05rem; font-weight: 600; color: #14295E; }
+.btn--gold { background: #F2C14E; border-color: #F2C14E; color: #14295E; min-height: 54px; border-radius: 12px; padding: 10px 22px; }
+.btn--gold:hover { background: #F6D27A; }
+.finder ul { position: absolute; z-index: 5; left: 0; right: 0; top: calc(100% + 6px); margin: 0; padding: 6px; list-style: none; background: #fff; border: 2px solid #14295E; border-radius: 12px; box-shadow: 0 12px 28px rgba(20, 41, 94, 0.25); color: #1F2430; }
+.finder li[role="option"] { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; padding: 11px 12px; border-radius: 8px; cursor: pointer; font-weight: 700; }
+.finder li[aria-selected="true"], .finder li[role="option"]:hover { background: #FBF0D2; }
+.finder__status { font-weight: 400; font-size: 0.88rem; color: #5A5F6B; text-align: right; }
+.finder__none { padding: 11px 12px; color: #5A5F6B; }
+.finder .help { margin: 8px 0 0; font-size: 0.92rem; }
+.top .finder label { color: #FBF6E8; }
+.top .finder input { border-color: #FBF6E8; }
+.top .finder .help a { color: #DCE3F2; }
+.controls--find { display: block; margin: 24px 0; }
+
+/* Showcase, How It Works, trust band. */
+.showcase { margin-top: 36px; }
+.how-wrap { margin: 40px 0 0; }
+.how { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; counter-reset: how; max-width: none; }
+@media (min-width: 760px) { .how { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.how li { counter-increment: how; background: #fff; border: 2px solid #14295E; border-radius: 16px; padding: 20px 22px; line-height: 1.5; color: #3A4562; }
+.how li::before { content: counter(how); display: block; font-family: "Vote Display", Impact, sans-serif; font-size: 2.6rem; line-height: 1; color: #C1272D; margin-bottom: 8px; }
+.how li b { display: block; color: #14295E; font-size: 1.15rem; margin-bottom: 4px; }
+.trust { display: flex; gap: 18px; align-items: center; margin: 32px 0 0; padding: 22px 24px; border-radius: 18px; background: #14295E; color: #DCE3F2; }
+.trust svg { flex: none; }
+.trust p { margin: 0; line-height: 1.5; }
+.trust b { color: #FBF6E8; }
+@media (max-width: 479px) { .trust { flex-direction: column; align-items: flex-start; } }

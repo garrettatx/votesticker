@@ -86,12 +86,45 @@ for (const type of [chromium, webkit]) {
 			return out.toDataURL('image/png');
 		}, ['TX', 'KS', 'MO', 'NY', 'WA', 'CA', 'CO', 'VA', 'DC', 'NC', 'PA', 'AL', 'NH', 'MS', 'MA', 'TN', 'MI', 'WV']);
 		fs.writeFileSync(path.join(OUT, 'contact-sheet.png'), Buffer.from(sheet.split(',')[1], 'base64'));
-		const phone = await browser.newPage({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2 });
-		await phone.goto(BASE + 'kansas/', { waitUntil: 'networkidle' });
-		await phone.waitForTimeout(500);
-		const overflow = await phone.evaluate(() => document.documentElement.scrollWidth > window.innerWidth);
-		if (overflow) { console.log('  FAIL phone page scrolls sideways'); failed++; }
-		await phone.screenshot({ path: path.join(OUT, 'page-phone.png'), fullPage: true });
+		// Every page type at phone, tablet, laptop, and wide widths: no sideways scroll, finder and H1 on screen.
+		let shots = 0;
+		for (const w of [320, 375, 390, 768, 1024, 1440]) {
+			const vp = await browser.newPage({ viewport: { width: w, height: 900 }, deviceScaleFactor: w < 800 ? 2 : 1 });
+			for (const [name, url] of [['hub', ''], ['kansas', 'kansas/'], ['alabama', 'alabama/'], ['arizona', 'arizona/']]) {
+				await vp.goto(BASE + url, { waitUntil: 'networkidle' });
+				await vp.waitForTimeout(300);
+				const bad = await vp.evaluate(() => {
+					const out = [];
+					if (document.documentElement.scrollWidth > window.innerWidth) { out.push('scrolls sideways by ' + (document.documentElement.scrollWidth - window.innerWidth) + 'px'); }
+					const f = document.getElementById('state-find');
+					if (!f || f.getBoundingClientRect().width < 160) { out.push('finder missing or too narrow'); }
+					Array.prototype.forEach.call(document.querySelectorAll('button, .btn, a.share__btn, .finder input'), (el) => {
+						const r = el.getBoundingClientRect();
+						if (r.width && r.height < 40) { out.push('small target: ' + (el.id || el.className) + ' ' + Math.round(r.height) + 'px'); }
+					});
+					return out;
+				});
+				bad.forEach((m) => { console.log(`  FAIL ${name} at ${w}px: ${m}`); failed++; });
+				await vp.screenshot({ path: path.join(OUT, `page-${name}-${w}.png`), fullPage: true });
+				shots++;
+			}
+			await vp.close();
+		}
+		console.log(`  ${shots} page screenshots at 320 to 1440 px`);
+
+		// The finder: "nor" lists North Carolina first, "tx" finds Texas, Enter goes to the page.
+		const fp = await browser.newPage({ viewport: { width: 390, height: 844 } });
+		await fp.goto(BASE, { waitUntil: 'networkidle' });
+		await fp.fill('#state-find', 'tx');
+		const first = await fp.textContent('#state-opt-0');
+		if (!/^Texas/.test(first || '')) { console.log('  FAIL finder: "tx" first option is ' + first); failed++; }
+		await fp.fill('#state-find', 'nor');
+		const opts = await fp.$$eval('#state-options [role=option]', (els) => els.map((e) => e.firstChild.textContent));
+		if (opts.join() !== 'North Carolina,North Dakota') { console.log('  FAIL finder: "nor" lists ' + opts.join()); failed++; }
+		await fp.screenshot({ path: path.join(OUT, 'finder-open.png') });
+		await fp.press('#state-find', 'Enter');
+		await fp.waitForURL(BASE + 'north-carolina/');
+		await fp.close();
 
 		// Every state page: server panel == JS panel, gallery count matches, no page errors.
 		const slug = (n) => n.toLowerCase().replace(/[^a-z]+/g, '-').replace(/^-|-$/g, '');
@@ -114,7 +147,8 @@ for (const type of [chromium, webkit]) {
 			else if (js[1] !== server[abbr][1]) { console.log(`  FAIL ${abbr}: gallery ${server[abbr][1]} server vs ${js[1]} js`); failed++; }
 			else { panel++; }
 		}
-		await sp.selectOption('#state', 'NC');
+		await sp.fill('#state-find', 'north car');
+		await sp.click('#state-go');
 		await sp.waitForURL(BASE + 'north-carolina/');
 		console.log(`  ${panel} of ${states.length} state pages: server panel matches app.js; menu goes to ${new URL(sp.url()).pathname}`);
 		if (spErr.length) { console.log('  state page errors: ' + spErr.slice(0, 3).join(' | ')); failed += spErr.length; }

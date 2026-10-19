@@ -46,7 +46,7 @@ The live site is static HTML on Cloudflare Pages. PHP runs only at build time.
 
 ```
 python3 -I build/state_pages.py        # after any states.js change: state folder stubs
-node build/og_states.mjs                # after new designs or dates: per-state share images (needs php -S on site/)
+node build/og_cards.mjs                 # after new designs or dates: 51 state share cards + the hub card (needs php -S 127.0.0.1:8791 -t site)
 python3 -I build/build_static.py        # renders 52 pages into dist/, writes sitemap.xml and robots.txt
 python3 -m http.server 8792 -d dist     # then QA locally:
 python3 -I scripts/qa_seo.py --base http://127.0.0.1:8792/ --no-legacy
@@ -68,9 +68,16 @@ shows as a gallery on that state's page with no code change. Prompts are in
 
 ## Brand
 
-VoteSticker.org takes its look from the "I Voted" sticker: a cream sticker with a peeled corner and the
-capital star, in the navy (#14295E), red (#C1272D), cream (#FBF6E8), and gold (#F2C14E) of the most
-popular designs. The mark is `site/assets/mark.svg`; the wordmark is Anton.
+Vote Sticker, "Make your plan. Share the sticker." Direction A, Civic Print Shop, chosen October 19, 2026
+from three mockups. It takes its look from the "I Voted" sticker: a cream sticker with a peeled corner
+and the capital star, in the navy (#14295E), red (#C1272D), cream (#FBF6E8), and gold (#F2C14E) of the
+most popular designs. Anton for display type, a red ribbon for each state's key fact. The mark is
+`site/assets/mark.svg`.
+
+State pages fall into families by how the state votes (mail, early, Election Day only, not yet checked).
+Each family has its own lead, ribbon, and related-states heading (`vote_meta()` in `site/index.php`).
+The state finder is a type-ahead box (names or postal codes); the full list of state links below it is
+the no-JavaScript path.
 
 ## License
 
