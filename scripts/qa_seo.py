@@ -189,8 +189,13 @@ def main():
 
     # The old home: hub, every state page, legacy ?state= links and the old sitemap all 301 to PROD.
     if not opts.no_legacy:
-        checks = [('', ''), ('index.php', ''), ('sitemap.xml', 'sitemap.xml'), ('?state=tx', 'texas/'), ('?state=dc', 'district-of-columbia/'),
-                  ('?state=zz', ''), ('?state=%3Cx%3E', ''), ('not-a-state/', '')]
+        # The old folder keeps only redirect scripts; its static files (old sitemap, assets) are gone and 404.
+        for gone in ('sitemap.xml', 'app.js', 'not-a-state/'):
+            status, _, _ = fetch(LEGACY + gone)
+            if status != 404:
+                fail(f'legacy {LEGACY}{gone}: {status}, want 404')
+        checks = [('', ''), ('index.php', ''), ('?state=tx', 'texas/'), ('?state=dc', 'district-of-columbia/'),
+                  ('?state=zz', ''), ('?state=%3Cx%3E', '')]
         checks += [(p, p) for p in paths[1:]]
         bad = 0
         for q, want in checks:
