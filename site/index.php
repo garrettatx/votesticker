@@ -153,10 +153,10 @@ if ( ( defined( 'VOTE_SLUG' ) && ! $vote_abbr ) || ( ! defined( 'VOTE_SLUG' ) &&
 }
 $vote_st = $vote_abbr ? $vote_rows[ $vote_abbr ] : null;
 $vote_page = $vote_st ? $vote_meta[ $vote_abbr ] : array(
-	'title' => 'Voting Profile Pictures by State, With 2026 Voting Dates',
-	'h1' => 'Voting Profile Pictures by State',
-	'lead' => "Pick your state, choose a design, and save your picture. Each one is based on your state's voting options and links to the official election office.",
-	'desc' => "Pick your state and save a free profile picture with its early voting, vote-by-mail, or Election Day dates. Fits the profile-picture circle, links to your state's election office, and is nonpartisan.",
+	'title' => 'Voting Stickers by State | VoteSticker.org',
+	'h1' => 'Voting Stickers by State',
+	'lead' => "Pick your state, choose a design, and save your sticker. Each one is based on your state's voting options and includes a link to the official election office.",
+	'desc' => "Create a free voting sticker for your profile picture. Choose your state and a design, save it, and check official links for early voting, vote by mail, or Election Day.",
 	'index' => true,
 );
 $vote_url = VOTE_SITE . VOTE_BASE . ( $vote_st ? $vote_page['slug'] . '/' : '' );
@@ -217,7 +217,7 @@ $vote_ld = array(
 			<svg class="brand__mark" aria-hidden="true" viewBox="0 0 40 40" width="40" height="40"><path d="M37.61 23.74A18 18 0 1 0 23.74 37.61Z" fill="#FBF6E8"/><path d="M37.61 23.74A18 18 0 1 0 23.74 37.61Z" fill="none" stroke="#14295E" stroke-width="1.6" transform="translate(20 20) scale(.8) translate(-20 -20)"/><path d="M37.61 23.74L23.74 37.61Q26.4 26.4 37.61 23.74Z" fill="#D9C99A"/><path d="M18.60 9.80 L20.77 15.61 L26.97 15.88 L22.12 19.74 L23.77 25.72 L18.60 22.30 L13.43 25.72 L15.08 19.74 L10.23 15.88 L16.43 15.61Z" fill="#C1272D"/>
 </svg>
 			<span class="brand__name">VOTE<span class="brand__hi">STICKER</span><span class="brand__tld">.ORG</span></span>
-			<span class="brand__tag">Profile pictures with your state's voting info</span>
+			<span class="brand__tag">Profile-picture stickers with your state's voting info</span>
 		</a>
 		<?php if ( $vote_st ) : ?>
 		<nav class="crumbs" aria-label="Breadcrumb"><ol>
@@ -229,7 +229,7 @@ $vote_ld = array(
 		<h1 id="page-h1"><?php echo vote_e( $vote_page['h1'] ); ?></h1>
 		<p class="lead" id="page-lead"><?php echo vote_e( $vote_page['lead'] ); ?></p>
 		<p class="share">
-			<button type="button" class="share__btn" id="share-link" data-url="<?php echo vote_e( $vote_url ); ?>" data-title="<?php echo vote_e( $vote_page['title'] ); ?>"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7L12 19"/></svg><span id="share-label"><?php echo $vote_st ? 'Copy link to this ' . vote_e( $vote_rows[ $vote_abbr ]['name'] ) . ' page' : 'Copy this page link'; ?></span></button>
+			<button type="button" class="share__btn" id="share-link" data-url="<?php echo vote_e( $vote_url ); ?>" data-title="<?php echo vote_e( $vote_page['title'] ); ?>"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7L12 19"/></svg><span id="share-label"><?php echo $vote_st ? 'Copy link to this ' . vote_e( $vote_rows[ $vote_abbr ]['name'] ) . ' page' : 'Copy page link'; ?></span></button>
 		</p>
 	</div>
 </header>
@@ -238,7 +238,7 @@ $vote_ld = array(
 	<div class="controls">
 		<label>Choose your state
 			<select id="state" aria-describedby="state-help"><option value="">Select a state</option></select>
-			<span class="help" id="state-help">The pictures, message, and voting links update for your state. If your state doesn't offer early voting, you'll see Election Day instead.</span>
+			<span class="help" id="state-help">The design, message, and voting links update for your state. If your state doesn't offer early voting, you'll see Election Day instead.</span>
 		</label>
 
 	</div>
@@ -251,8 +251,8 @@ $vote_ld = array(
 	?>
 	<?php if ( $vote_showcase && ! $vote_st ) : ?>
 	<section class="showcase" id="showcase" aria-labelledby="showcase-h">
-		<h2 id="showcase-h">Ready-Made Designs</h2>
-		<p>Every design shows that state's dates and fits the round profile crop. Tap a state to see all of its designs, or choose yours above to make your own.</p>
+		<h2 id="showcase-h">Ready-Made Stickers</h2>
+		<p>Start with a ready-made sticker, or choose your state above to make your own. Every one fits the round profile-picture crop.</p>
 		<div class="grid grid--showcase">
 			<?php foreach ( $vote_showcase as $abbr => $n ) : ?>
 			<a class="pick" href="<?php echo VOTE_BASE . $vote_meta[ strtoupper( $abbr ) ]['slug']; ?>/">
@@ -264,7 +264,7 @@ $vote_ld = array(
 		<h2 class="how-h">How It Works</h2>
 		<ol class="how">
 			<li>Pick your state.</li>
-			<li>Choose a ready-made design or make your own.</li>
+			<li>Choose a ready-made sticker or make your own.</li>
 			<li>Check the official link for your voting location, hours, and ID rules before you go.</li>
 		</ol>
 	</section>
@@ -275,7 +275,7 @@ $vote_ld = array(
 		<section class="info" id="info" aria-live="polite"><?php echo $vote_st ? vote_info( $vote_st ) : ''; ?></section>
 
 		<section class="gallery" id="gallery"<?php echo $vote_files ? '' : ' hidden'; ?> aria-labelledby="gallery-h">
-			<h2 id="gallery-h"><?php echo $vote_st ? 'Ready-Made ' . vote_e( $vote_st['name'] ) . ' Designs' : 'Ready-Made Designs'; ?></h2>
+			<h2 id="gallery-h"><?php echo $vote_st ? 'Ready-Made ' . vote_e( $vote_st['name'] ) . ' Stickers' : 'Ready-Made Stickers'; ?></h2>
 			<p>Tap one to save it.</p>
 			<div class="grid grid--gallery" id="gallery-grid"><?php foreach ( $vote_files as $i => $src ) : ?><a class="tile" href="<?php echo vote_e( $src ); ?>" download="vote-<?php echo strtolower( $vote_abbr ) . '-' . ( $i + 1 ); ?>.jpg"><img src="<?php echo vote_e( $src ); ?>" alt="<?php echo vote_e( $vote_st['name'] . ' vote picture, hand-made design ' . ( $i + 1 ) ); ?>" width="1080" height="1080" loading="lazy"></a><?php endforeach; ?></div>
 		</section>
@@ -379,19 +379,19 @@ $vote_ld = array(
 
 	<section class="faq" aria-labelledby="faq-h">
 		<h2 id="faq-h">Common Questions</h2>
-		<details><summary>Is this an official election site?</summary><p>No. It's an independent, nonpartisan tool made by one person. For registration, polling places, and deadlines, go to your state or local election office. Each state page links to it.</p></details>
+		<details><summary>Is this an official election site?</summary><p>No. VoteSticker.org is an independent, nonpartisan tool made by one person. For registration, polling places, and deadlines, go to your state or local election office. Each state page links to it.</p></details>
 		<details><summary>Where do the dates come from?</summary><p>From official state sources: the election office's own pages or state law, checked and dated. Until a state's dates are confirmed, its pictures say Election Day.</p></details>
 		<details><summary>Why do some states say hours or start dates vary?</summary><p>In some states, counties or towns set their own early voting days, hours, and locations. Your local election office has the final details.</p></details>
-		<details><summary>What if my state doesn't have early voting?</summary><p>Your pictures say VOTE NOV 3. If you can't vote in person on Election Day, you may qualify for an absentee ballot; your state's panel links to the rules.</p></details>
-		<details><summary>Do you keep my information?</summary><p>No. Your picture is created in your browser and never uploaded.</p></details>
+		<details><summary>What if my state doesn't have early voting?</summary><p>Your sticker says VOTE NOV 3. If you can't vote in person on Election Day, you may qualify for an absentee ballot; your state's panel links to the rules.</p></details>
+		<details><summary>Do you keep my information?</summary><p>No. Your sticker is created in your browser and never uploaded.</p></details>
 	</section>
 </main>
 
 <footer class="foot">
 	<div class="wrap">
-		<p><b>This tool is nonpartisan.</b> Voting dates come from official state sources. Before you vote, check your registration, polling place, hours, and ID rules with your state or local election office. <a href="https://www.usa.gov/state-election-office">Find your state or local election office</a>.</p>
+		<p><b>This tool is nonpartisan.</b> Voting dates and links come from official state election sources. Before you vote, check your registration, polling place, hours, and ID rules with your state or local election office. <a href="https://www.usa.gov/state-election-office">Find your state or local election office</a>.</p>
 		<p class="foot__made"><span><?php echo vote_e( VOTE_BRAND ); ?> is made by Garrett Nafzinger of</span> <a class="foot__gd" href="https://www.garrettdigital.com/"><img src="<?php echo vote_v( 'assets/gd-logo.svg' ); ?>" alt="Garrett Digital" width="152" height="40"></a></p>
-		<p>Pictures are created in your browser. Nothing is uploaded.</p>
+		<p>Your sticker is created in your browser. Nothing is uploaded.</p>
 	</div>
 </footer>
 

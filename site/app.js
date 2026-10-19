@@ -494,7 +494,7 @@
 		var files = (window.VOTE_GALLERY || {})[st.abbr] || [];
 		$('gallery').hidden = !files.length;
 		// States with ready-made pictures lead with them; the maker follows as "Or Make Your Own" (October 19).
-		$('gallery-h').textContent = 'Ready-Made ' + st.name + ' Designs';
+		$('gallery-h').textContent = 'Ready-Made ' + st.name + ' Stickers';
 		$('maker-h').hidden = !files.length;
 		document.body.classList.toggle('has-gallery', !!files.length);
 		var grid = $('gallery-grid');
