@@ -134,10 +134,14 @@ def fix(src, dst, abbr, shape, capx, capy):
         while tt > my1 + 1 and nb[tt - 1, X0:X1].any(): tt -= 1
         rows = np.nonzero(nb[my1 + 1:tt, X0:X1].any(1))[0]
         gap = tt - (my1 + 1 + rows.max() if len(rows) else my1) - 1
-        shift = min(max(0, round(GAP * W) - gap), max(0, my0 - round(0.06 * W)))
+        # type above the outline too (an arched headline): split the space instead of crowding it
+        above = next((my0 - y - 1 for y in range(my0 - 1, 0, -1) if nb[y, X0:X1].any() and not R[y, X0:X1].any()), my0)
+        room = above if above < my0 else my0 - round(0.06 * W)
+        want = round(GAP * W) if above >= my0 else min(round(GAP * W), (above + gap) // 2)
+        shift = min(max(0, want - gap), max(0, room - want if above < my0 else room))
         if shift:
             band = a[my0 - 10:tt, X0:X1].copy(); a[my0 - 10 - shift:tt - shift, X0:X1] = band; a[tt - shift:tt, X0:X1] = bg
-        note += f', gap {gap}px +{shift}'
+        note += f', gap {gap}px +{shift}' + (f' (type above, {above}px)' if above < my0 else '')
     Image.fromarray(a.astype('uint8')).save(dst)
     return note
 
