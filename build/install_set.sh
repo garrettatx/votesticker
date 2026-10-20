@@ -5,20 +5,22 @@
 #   build/install_set.sh <abbr> <slug> <hero N after renumbering> <kept review numbers...>
 #   build/install_set.sh al alabama 6 1 2 3 4 5 6 7 8 9 10
 set -e
+setopt null_glob
 cd "${0:A:h}/.."
 abbr=$1 slug=$2 hero=$3; shift 3
 R=incoming/codex/$abbr/review-claude
 day=$(date +%Y%m%d)
 mkdir -p originals/$abbr/retired-$day originals/$abbr/fixed
-if ls site/assets/states/$abbr/*.jpg >/dev/null 2>&1; then
-  cp site/assets/states/$abbr/*.jpg originals/$abbr/retired-$day/
-  git rm -q --ignore-unmatch site/assets/states/$abbr/*.jpg
-  rm -f site/assets/states/$abbr/*.jpg
+old=(site/assets/states/$abbr/*.jpg)
+if (( ${#old} )); then
+  cp $old originals/$abbr/retired-$day/
+  git rm -q --ignore-unmatch $old
+  rm -f $old
 fi
 mkdir -p site/assets/states/$abbr
 n=1
 for i in "$@"; do cp $R/$abbr-vote-$i.jpg site/assets/states/$abbr/$abbr-vote-$n.jpg; n=$((n+1)); done
-cp $R/fixed/*.png originals/$abbr/fixed/ 2>/dev/null || true
+fx=($R/fixed/*.png); (( ${#fx} )) && cp $fx originals/$abbr/fixed/
 up=${(U)abbr}
 python3 - "$up" "$hero" <<'EOF'
 import re, sys
