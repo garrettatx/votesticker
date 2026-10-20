@@ -25,6 +25,11 @@ Ready-made sets are the designer tier: each image looks composed by hand, with s
 and real contrast. The maker in `site/app.js` (Sticker, Poster, Stamp, Big type, Badge) is the template
 tier. Images 5 to 10 must not resemble those layouts or each other.
 
+**What Garrett picks (October 20):** diagonal type, and palettes that don't look like election
+material: chartreuse on cobalt, gold on maroon, cream on plum, gold on teal, cream on burnt orange.
+In images 5 to 10, lean on these over red, white and blue; the brand red and navy stay in cores 1
+and 2. An arched varsity headline and a map set beside the type also landed well.
+
 ## Words
 
 - Dates and which messages are true come only from `site/states.js`. Today's date decides "BY <last
