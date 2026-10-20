@@ -48,6 +48,10 @@ tier. Images 5 to 10 must not resemble those layouts or each other.
 - **No rings, borders or frames,** including the badge core image. They cannot be recentered.
 - **Strong backgrounds only.** Saturated or dark. A pale tint (lavender, near white) disappears
   against the white and gray of social feeds and reads as an empty circle.
+- **Two light backgrounds per set at most.** Mississippi came back with four (cream, magnolia, cream,
+  lavender), and a light disk has no edge on a white feed. Core 1 (Cream) counts as one. Most state
+  palettes in `build/prompt_states.py` have a pale background, so core 4 uses the state palette
+  reversed: the ink color as the background, the pale color for type, the accent for the bar.
 - **Balance the visual weight.** Centering is done by bounding box, so a staggered layout with empty
   space in one corner still looks shifted inside the circle. Stack or balance the type.
 - **No accent marks near words.** A small slash or tick beside a word reads as punctuation or a typo
@@ -64,6 +68,14 @@ tier. Images 5 to 10 must not resemble those layouts or each other.
   artwork and scales it evenly inside the safe circle. A strong composition that only breaks the circle
   or sits off center is kept, not redrawn.
 - Small spacing fixes on flat backgrounds (moving a map up, removing a stray mark). Claude does these.
+
+## Results So Far
+
+- **Mississippi (October 20):** 13 files for 10 slots. Every background was flat, all type was correct,
+  and after fitting every image sat inside the circle (scales 0.75 to 1.0). Codex made 1254 px PNGs,
+  which the fit tool resizes to 1080. Its High-setting self-check caught the core 2 accent-bar error
+  on its own. Second lines (ELECTION DAY, the state name) don't read at 48 px in any design; the
+  headline does, which is the rule.
 
 ## Checking Images
 
