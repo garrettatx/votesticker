@@ -3,6 +3,9 @@
 Read docs/codex-ready-made-brief.md first and follow it. Then make this state's set. Write only inside
 incoming/codex/fl/. No git commands, no deploy. Stop when CHECK.md is written.
 
+Save usage: redraw only for wrong words, a broken or unrecognizable map, or a rule break. Claude fixes
+star position, map gaps, maps within 8% of true width, centering and the circle crop.
+
 ## Facts
 
 - Source: site/states.js. Status on October 20: In-person OCT 24–31; upcoming; county/local days vary.
