@@ -54,6 +54,8 @@ tier. Images 5 to 10 must not resemble those layouts or each other.
   at 48 px (MAKE A PLAN had a gold slash after "A").
 - **No repeated concepts.** Two images on the same diagonal over the same plum background read as a
   color swap. Vary composition and palette; check BRIEFS.md before each image.
+- **The accent bar holds the date line, never the headline.** Mississippi's Navy core put the red bar
+  behind NOV 3 instead of ELECTION DAY.
 - **Red with blue** only in the brand core palettes (Cream, Navy). Never as opposing halves.
 
 ## Not Codex's Job
