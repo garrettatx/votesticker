@@ -30,5 +30,5 @@ Never use: VOTE EARLY, I VOTED EARLY.
 ## Output
 
 - incoming/codex/or/BRIEFS.md before drawing (words, concept, colors, map and star position).
-- Ten PNGs named or-01-<concept>-<palette>.png through or-10-..., redos under new names.
+- Ten PNGs named or-01-<concept>-<palette>.png onward, redos under new names.
 - incoming/codex/or/CHECK.md, then stop.

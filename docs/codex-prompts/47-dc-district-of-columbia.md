@@ -1,4 +1,4 @@
-# District of Columbia (DC): Ready-Made Set for Codex
+# District of Columbia (DC): I VOTED Pack for Codex
 
 Read docs/codex-ready-made-brief.md first and follow it. Then make this state's set. Write only inside
 incoming/codex/dc/. No git commands, no deploy. Stop when CHECK.md is written.
@@ -10,25 +10,20 @@ incoming/codex/dc/. No git commands, no deploy. Stop when CHECK.md is written.
 - No capital star (DC is a district).
 - Outline: accurate, at true proportions, never stretched.
 - State palette: background #FFFFFF, ink #1B1B1B, accent #C8102E. Core 4 reverses it: #1B1B1B background.
-- Ready-made images on the site now: 10. This set adds ten; Claude decides what stays.
+- Ready-made images on the site now: 10. Those stay: they are strong, but every one carries the main message only. This pack adds the five sayings the set lacks, in new concepts and palettes that differ from the existing images (look at site/assets/states/dc/ first).
 
-## The Ten Images (slash = line break, not printed)
+## The Five Images (slash = line break, not printed)
 
-1. Core Cream shape: VOTE / EARLY, date line OCT 26–NOV 1
-2. Core Navy big type: VOTE / EARLY, date line OCT 26–NOV 1
-3. Core Forest badge (no ring): VOTE / EARLY, date line OCT 26–NOV 1
-4. Core shape in the state palette, reversed (ink color as the background): VOTE / EARLY, date line OCT 26–NOV 1
-5. Creative: VOTE / EARLY, date line OCT 26–NOV 1
-6. Creative: I VOTED, second line WASHINGTON, DC
-7. Creative: I VOTED, second line WASHINGTON, DC
-8. Creative: I VOTED / EARLY, second line WASHINGTON, DC
-9. Creative: MAKE A / PLAN, second line VOTE EARLY
-10. Creative: VOTE / EARLY, date line OCT 26–NOV 1
+1. Creative, the house design (tilted I VOTED, cream on deep plum, outline above): I VOTED, second line WASHINGTON, DC
+2. Creative: I VOTED, second line WASHINGTON, DC
+3. Creative: I VOTED / EARLY, second line WASHINGTON, DC
+4. Creative: MAKE A / PLAN, second line VOTE EARLY
+5. Creative: I VOTED, second line WASHINGTON, DC
 
 Never use: VOTE BY MAIL, I VOTED BY MAIL, MY BALLOT IS IN.
 
 ## Output
 
 - incoming/codex/dc/BRIEFS.md before drawing (words, concept, colors, map and star position).
-- Ten PNGs named dc-01-<concept>-<palette>.png through dc-10-..., redos under new names.
+- Five PNGs named dc-01-<concept>-<palette>.png onward, redos under new names.
 - incoming/codex/dc/CHECK.md, then stop.

@@ -30,5 +30,5 @@ Never use: VOTE EARLY, I VOTED EARLY, VOTE BY MAIL, I VOTED BY MAIL, MY BALLOT I
 ## Output
 
 - incoming/codex/vt/BRIEFS.md before drawing (words, concept, colors, map and star position).
-- Ten PNGs named vt-01-<concept>-<palette>.png through vt-10-..., redos under new names.
+- Ten PNGs named vt-01-<concept>-<palette>.png onward, redos under new names.
 - incoming/codex/vt/CHECK.md, then stop.

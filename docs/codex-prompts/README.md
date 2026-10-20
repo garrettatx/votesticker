@@ -10,55 +10,55 @@ One file per state, in build order (fewest ready-made images first). Generated b
 Two or three chats at a time at most. Tell Claude when a CHECK.md lands; Claude reviews, fixes,
 and puts the approved set live.
 
-| # | State | Images now | Kind |
-|---|---|---|---|
-| 1 | [Idaho](01-id-idaho.md) | 3 | early |
-| 2 | [Michigan](02-mi-michigan.md) | 3 | early |
-| 3 | [Nebraska](03-ne-nebraska.md) | 3 | early |
-| 4 | [New Jersey](04-nj-new-jersey.md) | 4 | early |
-| 5 | [Alabama](05-al-alabama.md) | 5 | none |
-| 6 | [Alaska](06-ak-alaska.md) | 5 | early |
-| 7 | [Arizona](07-az-arizona.md) | 5 | none |
-| 8 | [Arkansas](08-ar-arkansas.md) | 5 | none |
-| 9 | [Connecticut](09-ct-connecticut.md) | 5 | none |
-| 10 | [Delaware](10-de-delaware.md) | 5 | early |
-| 11 | [Florida](11-fl-florida.md) | 5 | early |
-| 12 | [Georgia](12-ga-georgia.md) | 5 | none |
-| 13 | [Hawaii](13-hi-hawaii.md) | 5 | mail |
-| 14 | [Illinois](14-il-illinois.md) | 5 | none |
-| 15 | [Indiana](15-in-indiana.md) | 5 | none |
-| 16 | [Iowa](16-ia-iowa.md) | 5 | early |
-| 17 | [Kentucky](17-ky-kentucky.md) | 5 | none |
-| 18 | [Louisiana](18-la-louisiana.md) | 5 | none |
-| 19 | [Maine](19-me-maine.md) | 5 | none |
-| 20 | [Massachusetts](20-ma-massachusetts.md) | 5 | none |
-| 21 | [Minnesota](21-mn-minnesota.md) | 5 | early |
-| 22 | [Montana](22-mt-montana.md) | 5 | none |
-| 23 | [Nevada](23-nv-nevada.md) | 5 | early |
-| 24 | [New Hampshire](24-nh-new-hampshire.md) | 5 | none |
-| 25 | [New Mexico](25-nm-new-mexico.md) | 5 | none |
-| 26 | [North Dakota](26-nd-north-dakota.md) | 5 | none |
-| 27 | [Ohio](27-oh-ohio.md) | 5 | none |
-| 28 | [Oklahoma](28-ok-oklahoma.md) | 5 | early |
-| 29 | [Oregon](29-or-oregon.md) | 5 | mail |
-| 30 | [Rhode Island](30-ri-rhode-island.md) | 5 | early |
-| 31 | [South Carolina](31-sc-south-carolina.md) | 5 | early |
-| 32 | [South Dakota](32-sd-south-dakota.md) | 5 | none |
-| 33 | [Tennessee](33-tn-tennessee.md) | 5 | none |
-| 34 | [Utah](34-ut-utah.md) | 5 | none |
-| 35 | [Vermont](35-vt-vermont.md) | 5 | none |
-| 36 | [West Virginia](36-wv-west-virginia.md) | 5 | none |
-| 37 | [Wisconsin](37-wi-wisconsin.md) | 5 | none |
-| 38 | [Wyoming](38-wy-wyoming.md) | 5 | none |
-| 39 | [California](39-ca-california.md) | 6 | mail |
-| 40 | [Maryland](40-md-maryland.md) | 6 | early |
-| 41 | [North Carolina](41-nc-north-carolina.md) | 6 | early |
-| 42 | [Virginia](42-va-virginia.md) | 6 | early |
-| 43 | [Colorado](43-co-colorado.md) | 7 | mail |
-| 44 | [New York](44-ny-new-york.md) | 7 | early |
-| 45 | [Pennsylvania](45-pa-pennsylvania.md) | 7 | early |
-| 46 | [Texas](46-tx-texas.md) | 9 | early |
-| 47 | [District of Columbia](47-dc-district-of-columbia.md) | 10 | early |
-| 48 | [Kansas](48-ks-kansas.md) | 10 | early |
-| 49 | [Missouri](49-mo-missouri.md) | 10 | early |
-| 50 | [Washington](50-wa-washington.md) | 10 | mail |
+| # | State | Images now | Kind | Makes |
+|---|---|---|---|---|
+| 1 | [Idaho](01-id-idaho.md) | 3 | early | set of 10 |
+| 2 | [Michigan](02-mi-michigan.md) | 3 | early | set of 10 |
+| 3 | [Nebraska](03-ne-nebraska.md) | 3 | early | set of 10 |
+| 4 | [New Jersey](04-nj-new-jersey.md) | 4 | early | set of 10 |
+| 5 | [Alabama](05-al-alabama.md) | 5 | none | set of 10 |
+| 6 | [Alaska](06-ak-alaska.md) | 5 | early | set of 10 |
+| 7 | [Arizona](07-az-arizona.md) | 5 | none | set of 10 |
+| 8 | [Arkansas](08-ar-arkansas.md) | 5 | none | set of 10 |
+| 9 | [Connecticut](09-ct-connecticut.md) | 5 | none | set of 10 |
+| 10 | [Delaware](10-de-delaware.md) | 5 | early | set of 10 |
+| 11 | [Florida](11-fl-florida.md) | 5 | early | set of 10 |
+| 12 | [Georgia](12-ga-georgia.md) | 5 | none | set of 10 |
+| 13 | [Hawaii](13-hi-hawaii.md) | 5 | mail | set of 10 |
+| 14 | [Illinois](14-il-illinois.md) | 5 | none | set of 10 |
+| 15 | [Indiana](15-in-indiana.md) | 5 | none | set of 10 |
+| 16 | [Iowa](16-ia-iowa.md) | 5 | early | set of 10 |
+| 17 | [Kentucky](17-ky-kentucky.md) | 5 | none | set of 10 |
+| 18 | [Louisiana](18-la-louisiana.md) | 5 | none | set of 10 |
+| 19 | [Maine](19-me-maine.md) | 5 | none | set of 10 |
+| 20 | [Massachusetts](20-ma-massachusetts.md) | 5 | none | set of 10 |
+| 21 | [Minnesota](21-mn-minnesota.md) | 5 | early | set of 10 |
+| 22 | [Montana](22-mt-montana.md) | 5 | none | set of 10 |
+| 23 | [Nevada](23-nv-nevada.md) | 5 | early | set of 10 |
+| 24 | [New Hampshire](24-nh-new-hampshire.md) | 5 | none | set of 10 |
+| 25 | [New Mexico](25-nm-new-mexico.md) | 5 | none | set of 10 |
+| 26 | [North Dakota](26-nd-north-dakota.md) | 5 | none | set of 10 |
+| 27 | [Ohio](27-oh-ohio.md) | 5 | none | set of 10 |
+| 28 | [Oklahoma](28-ok-oklahoma.md) | 5 | early | set of 10 |
+| 29 | [Oregon](29-or-oregon.md) | 5 | mail | set of 10 |
+| 30 | [Rhode Island](30-ri-rhode-island.md) | 5 | early | set of 10 |
+| 31 | [South Carolina](31-sc-south-carolina.md) | 5 | early | set of 10 |
+| 32 | [South Dakota](32-sd-south-dakota.md) | 5 | none | set of 10 |
+| 33 | [Tennessee](33-tn-tennessee.md) | 5 | none | set of 10 |
+| 34 | [Utah](34-ut-utah.md) | 5 | none | set of 10 |
+| 35 | [Vermont](35-vt-vermont.md) | 5 | none | set of 10 |
+| 36 | [West Virginia](36-wv-west-virginia.md) | 5 | none | set of 10 |
+| 37 | [Wisconsin](37-wi-wisconsin.md) | 5 | none | set of 10 |
+| 38 | [Wyoming](38-wy-wyoming.md) | 5 | none | set of 10 |
+| 39 | [California](39-ca-california.md) | 6 | mail | 5-image I VOTED pack |
+| 40 | [Maryland](40-md-maryland.md) | 6 | early | set of 10 |
+| 41 | [North Carolina](41-nc-north-carolina.md) | 6 | early | set of 10 |
+| 42 | [Virginia](42-va-virginia.md) | 6 | early | set of 10 |
+| 43 | [Colorado](43-co-colorado.md) | 7 | mail | 5-image I VOTED pack |
+| 44 | [New York](44-ny-new-york.md) | 7 | early | 5-image I VOTED pack |
+| 45 | [Pennsylvania](45-pa-pennsylvania.md) | 7 | early | 5-image I VOTED pack |
+| 46 | [Texas](46-tx-texas.md) | 9 | early | 5-image I VOTED pack |
+| 47 | [District of Columbia](47-dc-district-of-columbia.md) | 10 | early | 5-image I VOTED pack |
+| 48 | [Kansas](48-ks-kansas.md) | 10 | early | 5-image I VOTED pack |
+| 49 | [Missouri](49-mo-missouri.md) | 10 | early | 5-image I VOTED pack |
+| 50 | [Washington](50-wa-washington.md) | 10 | mail | 5-image I VOTED pack |

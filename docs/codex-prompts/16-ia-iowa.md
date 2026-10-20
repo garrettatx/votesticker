@@ -30,5 +30,5 @@ Never use: VOTE BY MAIL, I VOTED BY MAIL, MY BALLOT IS IN.
 ## Output
 
 - incoming/codex/ia/BRIEFS.md before drawing (words, concept, colors, map and star position).
-- Ten PNGs named ia-01-<concept>-<palette>.png through ia-10-..., redos under new names.
+- Ten PNGs named ia-01-<concept>-<palette>.png onward, redos under new names.
 - incoming/codex/ia/CHECK.md, then stop.

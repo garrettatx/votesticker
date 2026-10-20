@@ -30,5 +30,5 @@ Never use: VOTE EARLY, I VOTED EARLY, VOTE BY MAIL, I VOTED BY MAIL, MY BALLOT I
 ## Output
 
 - incoming/codex/ky/BRIEFS.md before drawing (words, concept, colors, map and star position).
-- Ten PNGs named ky-01-<concept>-<palette>.png through ky-10-..., redos under new names.
+- Ten PNGs named ky-01-<concept>-<palette>.png onward, redos under new names.
 - incoming/codex/ky/CHECK.md, then stop.
