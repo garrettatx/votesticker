@@ -1,0 +1,34 @@
+# Georgia (GA): Ready-Made Set for Codex
+
+Read docs/codex-ready-made-brief.md first and follow it. Then make this state's set. Write only inside
+incoming/codex/ga/. No git commands, no deploy. Stop when CHECK.md is written.
+
+## Facts
+
+- Source: site/states.js. Status on October 20: Unchecked; no verified early dates.
+- Main message: VOTE / NOV 3, date line ELECTION DAY.
+- Capital: Atlanta. Star at 26% across and 27% down the outline's bounding box (site/state-shapes.js).
+- Outline: accurate, at true proportions, never stretched.
+- State palette: background #F6EFE6, ink #2B3A2E, accent #D2652E. Core 4 reverses it: #2B3A2E background.
+- Ready-made images on the site now: 5. This set adds ten; Claude decides what stays.
+
+## The Ten Images (slash = line break, not printed)
+
+1. Core Cream shape: VOTE / NOV 3, date line ELECTION DAY
+2. Core Navy big type: VOTE / NOV 3, date line ELECTION DAY
+3. Core Forest badge (no ring): VOTE / NOV 3, date line ELECTION DAY
+4. Core shape in the state palette, reversed (ink color as the background): VOTE / NOV 3, date line ELECTION DAY
+5. Creative: VOTE / NOV 3, date line ELECTION DAY
+6. Creative: I VOTED, second line GEORGIA
+7. Creative: I VOTED, second line GEORGIA
+8. Creative: I VOTED, second line GEORGIA
+9. Creative: MAKE A / PLAN, second line VOTE NOV 3
+10. Creative: GEORGIA / VOTES, second line NOV 3
+
+Never use: VOTE EARLY, I VOTED EARLY, VOTE BY MAIL, I VOTED BY MAIL, MY BALLOT IS IN.
+
+## Output
+
+- incoming/codex/ga/BRIEFS.md before drawing (words, concept, colors, map and star position).
+- Ten PNGs named ga-01-<concept>-<palette>.png through ga-10-..., redos under new names.
+- incoming/codex/ga/CHECK.md, then stop.

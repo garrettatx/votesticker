@@ -81,6 +81,16 @@ function vote_files( $abbr ) {
 	return array_map( function ( $f ) use ( $abbr ) { return vote_v( 'assets/states/' . strtolower( $abbr ) . '/' . $f ); }, array_values( $files ) );
 }
 
+// The state hero shows one standout ready-made, tilted (October 20, Garrett): the design named here,
+// or the first in the set. Numbers match <abbr>-vote-N.jpg.
+const VOTE_HERO = array( 'MS' => 5 );
+function vote_hero_file( $abbr ) {
+	$n = VOTE_HERO[ $abbr ] ?? 0;
+	$k = strtolower( $abbr );
+	if ( $n && is_file( __DIR__ . "/assets/states/$k/$k-vote-$n.jpg" ) && ! vote_es() ) { return vote_v( "assets/states/$k/$k-vote-$n.jpg" ); }
+	return vote_files( $abbr )[0] ?? '';
+}
+
 // Bordering states, for the "Neighboring States" links (AK and HI have none).
 const VOTE_NEIGHBORS = array(
 	'AL' => 'FL GA MS TN', 'AZ' => 'CA CO NV NM UT', 'AR' => 'LA MS MO OK TN TX', 'CA' => 'AZ NV OR',
@@ -471,12 +481,12 @@ $vote_ld = array(
 <meta property="og:site_name" content="<?php echo vote_e( VOTE_BRAND ); ?>">
 <?php endif; ?>
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="<?php echo VOTE_BASE; ?>assets/icons/favicon.ico" sizes="any">
+<link rel="icon" href="<?php echo vote_v( 'assets/icons/favicon.ico' ); ?>" sizes="any">
 <link rel="icon" type="image/svg+xml" href="<?php echo vote_v( 'assets/icons/favicon.svg' ); ?>">
 <link rel="mask-icon" href="<?php echo VOTE_BASE; ?>assets/icons/mask-icon.svg" color="#14295E">
 <link rel="manifest" href="<?php echo VOTE_BASE; ?>site.webmanifest">
-<link rel="icon" type="image/png" sizes="32x32" href="<?php echo VOTE_BASE; ?>assets/icons/favicon-32.png">
-<link rel="apple-touch-icon" href="<?php echo VOTE_BASE; ?>assets/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="<?php echo vote_v( 'assets/icons/favicon-32.png' ); ?>">
+<link rel="apple-touch-icon" href="<?php echo vote_v( 'assets/icons/apple-touch-icon.png' ); ?>">
 <meta name="theme-color" content="#0F2558">
 <link rel="preload" href="<?php echo VOTE_BASE; ?>assets/fonts/anton.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="<?php echo VOTE_BASE; ?>assets/fonts/archivo-black.woff2" as="font" type="font/woff2" crossorigin>
@@ -516,7 +526,7 @@ $vote_ld = array(
 			<?php endforeach; ?>
 		</ol></nav>
 		<?php endif; ?>
-		<?php if ( $vote_st ) : $vote_lead_img = vote_files( $vote_abbr )[0] ?? ''; $vote_art = vote_es() ? 'data:image/gif;base64,R0lGODlhAQABAAAAACw=' : $vote_lead_img; ?>
+		<?php if ( $vote_st ) : $vote_lead_img = vote_hero_file( $vote_abbr ); $vote_art = vote_es() ? 'data:image/gif;base64,R0lGODlhAQABAAAAACw=' : $vote_lead_img; ?>
 		<div class="state-hero<?php echo $vote_art ? ' state-hero--art' : ''; ?>">
 			<div>
 				<h1 id="page-h1"><?php echo vote_e( $vote_page['h1'] ); ?></h1>
