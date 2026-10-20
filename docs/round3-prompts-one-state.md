@@ -19,6 +19,7 @@ FORMAT (every image)
 
 TEXT
 - Use only the exact headline and date line I give for the state. No other words, no URL, no hashtags, no state name.
+- Each state's dates are different. Never carry a date, outline, or capital over from an earlier state in this chat.
 - All caps, spelled exactly. Date ranges use an en dash (OCT 24–NOV 1), never a hyphen or em dash.
 - Headline in a heavy condensed sans like Anton; date line in a wide heavy sans like Archivo Black.
 - The headline is the picture. Its two lines together take up about half the image's height and most of the circle's width, centered. The date line sits directly under it, at least a third of the headline's letter height.
@@ -78,120 +79,134 @@ file list, then send the next. Start a fresh chat (setup message again) every tw
 the second group say VOTE NOV 3 because those states' early voting dates aren't verified yet; that
 message stays true either way.
 
+### Already Built (Skip These)
+
+- ~~California~~ (6 stickers live)
+- ~~Texas~~ (9 stickers live)
+- ~~New York~~ (7 stickers live)
+- ~~Pennsylvania~~ (7 stickers live)
+- ~~North Carolina~~ (6 stickers live)
+- ~~Virginia~~ (6 stickers live)
+- ~~Washington~~ (10 stickers live)
+- ~~Missouri~~ (10 stickers live)
+- ~~Colorado~~ (7 stickers live)
+- ~~Kansas~~ (10 stickers live)
+- ~~District of Columbia~~ (10 stickers live)
+
 ### Verified Dates
 
 #### 1. Florida (VOTE / EARLY, OCT 24–31)
 
 ```
-Florida. Headline: VOTE / EARLY. Date line: OCT 24–31. Capital star: Tallahassee. Include the panhandle at its true length; keep the outline small rather than squashing it. State palette (gulf and citrus): background #E8F6F3, ink #0B4F6C, accent #F28F3B. Make the 10, check them, then send the zip.
+Florida. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / EARLY. Date line: OCT 24–31. Capital star: Tallahassee. Include the panhandle at its true length; keep the outline small rather than squashing it. State palette (gulf and citrus): background #E8F6F3, ink #0B4F6C, accent #F28F3B. Make the 10, check them, then send the zip.
 ```
 
 #### 2. Michigan (VOTE / EARLY, OCT 24–NOV 1)
 
 ```
-Michigan. Headline: VOTE / EARLY. Date line: OCT 24–NOV 1. Capital star: Lansing. Show both the Upper and Lower Peninsulas, with the gap between them. State palette (great lakes): background #E9F1F7, ink #0B3954, accent #2A9D8F. Make the 10, check them, then send the zip.
+Michigan. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / EARLY. Date line: OCT 24–NOV 1. Capital star: Lansing. Show both the Upper and Lower Peninsulas, with the gap between them. State palette (great lakes): background #E9F1F7, ink #0B3954, accent #2A9D8F. Make the 10, check them, then send the zip.
 ```
 
 #### 3. New Jersey (VOTE / EARLY, OCT 24–NOV 1)
 
 ```
-New Jersey. Headline: VOTE / EARLY. Date line: OCT 24–NOV 1. Capital star: Trenton, on the western edge along the Delaware River. New Jersey is tall and narrow: set the headline beside or below it, never inside. State palette (shore and buff): background #F1ECE2, ink #1B2A41, accent #C9A227. Make the 10, check them, then send the zip.
+New Jersey. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / EARLY. Date line: OCT 24–NOV 1. Capital star: Trenton, on the western edge along the Delaware River. New Jersey is tall and narrow: set the headline beside or below it, never inside. State palette (shore and buff): background #F1ECE2, ink #1B2A41, accent #C9A227. Make the 10, check them, then send the zip.
 ```
 
 #### 4. Maryland (VOTE / EARLY, OCT 22–29)
 
 ```
-Maryland. Headline: VOTE / EARLY. Date line: OCT 22–29. Capital star: Annapolis, on the west shore of the Chesapeake Bay. Keep the long western panhandle and the bay shape accurate; Maryland is wide and thin, so keep the outline small above the headline. State palette (black and gold): background #F6F1E7, ink #1C1C1C, accent #E0A100. Make the 10, check them, then send the zip.
+Maryland. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / EARLY. Date line: OCT 22–29. Capital star: Annapolis, on the west shore of the Chesapeake Bay. Keep the long western panhandle and the bay shape accurate; Maryland is wide and thin, so keep the outline small above the headline. State palette (black and gold): background #F6F1E7, ink #1C1C1C, accent #E0A100. Make the 10, check them, then send the zip.
 ```
 
 #### 5. Minnesota (VOTE / EARLY, BY NOV 2)
 
 ```
-Minnesota. Headline: VOTE / EARLY. Date line: BY NOV 2. Capital star: Saint Paul, in the east-central part of the state, not Minneapolis or Duluth. Include the small Northwest Angle notch at the top and the Arrowhead in the northeast. State palette (lakes and pines): background #EAF2F8, ink #102A43, accent #3C8D5A. Make the 10, check them, then send the zip.
+Minnesota. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / EARLY. Date line: BY NOV 2. Capital star: Saint Paul, in the east-central part of the state, not Minneapolis or Duluth. Include the small Northwest Angle notch at the top and the Arrowhead in the northeast. State palette (lakes and pines): background #EAF2F8, ink #102A43, accent #3C8D5A. Make the 10, check them, then send the zip.
 ```
 
 #### 6. South Carolina (VOTE / EARLY, BY OCT 31)
 
 ```
-South Carolina. Headline: VOTE / EARLY. Date line: BY OCT 31. Capital star: Columbia, in the middle of the state, not Charleston. State palette (palmetto and indigo): background #EAF0F4, ink #16324F, accent #3E7CB1. Make the 10, check them, then send the zip.
+South Carolina. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / EARLY. Date line: BY OCT 31. Capital star: Columbia, in the middle of the state, not Charleston. State palette (palmetto and indigo): background #EAF0F4, ink #16324F, accent #3E7CB1. Make the 10, check them, then send the zip.
 ```
 
 #### 7. Alabama (VOTE / NOV 3, ELECTION DAY)
 
 ```
-Alabama. Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Montgomery. Alabama cards say Election Day, so never use the words "early" or "mail." State palette (crimson and gold): background #F3ECE1, ink #5B1F2B, accent #C98B2B. Make the 10, check them, then send the zip.
+Alabama. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Montgomery. Alabama cards say Election Day, so never use the words "early" or "mail." State palette (crimson and gold): background #F3ECE1, ink #5B1F2B, accent #C98B2B. Make the 10, check them, then send the zip.
 ```
 
 #### 8. Oregon (VOTE / BY MAIL, DUE NOV 3)
 
 ```
-Oregon. Headline: VOTE / BY MAIL. Date line: DUE NOV 3. Capital star: Salem, in the northwest, not Portland. Oregon mails every voter a ballot, so never use the word "early." State palette (forest and river): background #E6EFE9, ink #1F3B2C, accent #2F6690. Make the 10, check them, then send the zip.
+Oregon. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / BY MAIL. Date line: DUE NOV 3. Capital star: Salem, in the northwest, not Portland. Oregon mails every voter a ballot, so never use the word "early." State palette (forest and river): background #E6EFE9, ink #1F3B2C, accent #2F6690. Make the 10, check them, then send the zip.
 ```
 
 #### 9. Oklahoma (VOTE / EARLY, OCT 29–31)
 
 ```
-Oklahoma. Headline: VOTE / EARLY. Date line: OCT 29–31. Capital star: Oklahoma City. Include the panhandle at its true length. State palette (red earth): background #F5EEE6, ink #22303C, accent #C46A2E. Make the 10, check them, then send the zip.
+Oklahoma. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / EARLY. Date line: OCT 29–31. Capital star: Oklahoma City. Include the panhandle at its true length. State palette (red earth): background #F5EEE6, ink #22303C, accent #C46A2E. Make the 10, check them, then send the zip.
 ```
 
 #### 10. Iowa (VOTE / EARLY, BY NOV 2)
 
 ```
-Iowa. Headline: VOTE / EARLY. Date line: BY NOV 2. Capital star: Des Moines. State palette (corn gold): background #F5F0E1, ink #2B2D42, accent #D99A26. Make the 10, check them, then send the zip.
+Iowa. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / EARLY. Date line: BY NOV 2. Capital star: Des Moines. State palette (corn gold): background #F5F0E1, ink #2B2D42, accent #D99A26. Make the 10, check them, then send the zip.
 ```
 
 #### 11. Nevada (VOTE / EARLY, BY OCT 30)
 
 ```
-Nevada. Headline: VOTE / EARLY. Date line: BY OCT 30. Capital star: Carson City, in the west near Lake Tahoe, not Las Vegas or Reno. State palette (sagebrush and sandstone): background #F6EEE6, ink #22223B, accent #C2703D. Make the 10, check them, then send the zip.
+Nevada. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / EARLY. Date line: BY OCT 30. Capital star: Carson City, in the west near Lake Tahoe, not Las Vegas or Reno. State palette (sagebrush and sandstone): background #F6EEE6, ink #22223B, accent #C2703D. Make the 10, check them, then send the zip.
 ```
 
 #### 12. Mississippi (VOTE / NOV 3, ELECTION DAY)
 
 ```
-Mississippi. Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Jackson. Mississippi cards say Election Day, so never use the words "early" or "mail." State palette (magnolia and river): background #EEF0EA, ink #1F2E2B, accent #B9852E. Make the 10, check them, then send the zip.
+Mississippi. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Jackson. Mississippi cards say Election Day, so never use the words "early" or "mail." State palette (magnolia and river): background #EEF0EA, ink #1F2E2B, accent #B9852E. Make the 10, check them, then send the zip.
 ```
 
 #### 13. Nebraska (VOTE / EARLY, BY NOV 2)
 
 ```
-Nebraska. Headline: VOTE / EARLY. Date line: BY NOV 2. Capital star: Lincoln, not Omaha. State palette (prairie and barn red): background #F4EFE3, ink #2C2A29, accent #C0392B. Make the 10, check them, then send the zip.
+Nebraska. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / EARLY. Date line: BY NOV 2. Capital star: Lincoln, not Omaha. State palette (prairie and barn red): background #F4EFE3, ink #2C2A29, accent #C0392B. Make the 10, check them, then send the zip.
 ```
 
 #### 14. Idaho (VOTE / EARLY, BY OCT 30)
 
 ```
-Idaho. Headline: VOTE / EARLY. Date line: BY OCT 30. Capital star: Boise. State palette (sage and timber): background #EEF1E8, ink #22333B, accent #8C6A3F. Make the 10, check them, then send the zip.
+Idaho. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / EARLY. Date line: BY OCT 30. Capital star: Boise. State palette (sage and timber): background #EEF1E8, ink #22333B, accent #8C6A3F. Make the 10, check them, then send the zip.
 ```
 
 #### 15. Hawaii (VOTE / BY MAIL, DUE NOV 3)
 
 ```
-Hawaii. Headline: VOTE / BY MAIL. Date line: DUE NOV 3. Capital star: Honolulu, on Oahu. Show the main islands in their real arrangement, small; never a single blob. Hawaii mails every voter a ballot, so never use the word "early." State palette (reef and hibiscus): background #E5F4F1, ink #0D3B4C, accent #E86A4A. Make the 10, check them, then send the zip.
+Hawaii. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / BY MAIL. Date line: DUE NOV 3. Capital star: Honolulu, on Oahu. Show the main islands in their real arrangement, small; never a single blob. Hawaii mails every voter a ballot, so never use the word "early." State palette (reef and hibiscus): background #E5F4F1, ink #0D3B4C, accent #E86A4A. Make the 10, check them, then send the zip.
 ```
 
 #### 16. New Hampshire (VOTE / NOV 3, ELECTION DAY)
 
 ```
-New Hampshire. Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Concord. New Hampshire is tall and narrow: keep the outline small and set the headline beside or below it. New Hampshire cards say Election Day, so never use the words "early" or "mail." State palette (granite and maple): background #EEF2EE, ink #1E3A2F, accent #C8553D. Make the 10, check them, then send the zip.
+New Hampshire. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Concord. New Hampshire is tall and narrow: keep the outline small and set the headline beside or below it. New Hampshire cards say Election Day, so never use the words "early" or "mail." State palette (granite and maple): background #EEF2EE, ink #1E3A2F, accent #C8553D. Make the 10, check them, then send the zip.
 ```
 
 #### 17. Rhode Island (VOTE / EARLY, BY NOV 2)
 
 ```
-Rhode Island. Headline: VOTE / EARLY. Date line: BY NOV 2. Capital star: Providence. Rhode Island is tiny: show the outline small with Narragansett Bay, or leave it out. State palette (ocean state): background #E8F1F6, ink #0F3550, accent #E0A526. Make the 10, check them, then send the zip.
+Rhode Island. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / EARLY. Date line: BY NOV 2. Capital star: Providence. Rhode Island is tiny: show the outline small with Narragansett Bay, or leave it out. State palette (ocean state): background #E8F1F6, ink #0F3550, accent #E0A526. Make the 10, check them, then send the zip.
 ```
 
 #### 18. Delaware (VOTE / EARLY, OCT 22–NOV 1)
 
 ```
-Delaware. Headline: VOTE / EARLY. Date line: OCT 22–NOV 1. Capital star: Dover. Delaware is small and tall: keep the outline small and accurate. State palette (bay and buff): background #EAF2F4, ink #123C4A, accent #D9A441. Make the 10, check them, then send the zip.
+Delaware. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / EARLY. Date line: OCT 22–NOV 1. Capital star: Dover. Delaware is small and tall: keep the outline small and accurate. State palette (bay and buff): background #EAF2F4, ink #123C4A, accent #D9A441. Make the 10, check them, then send the zip.
 ```
 
 #### 19. Alaska (VOTE / EARLY, BY NOV 2)
 
 ```
-Alaska. Headline: VOTE / EARLY. Date line: BY NOV 2. Capital star: Juneau, in the southeast panhandle. Include the Aleutian chain and the southeast panhandle; keep it at true proportions, never squashed. State palette (night sky and gold): background #E6F0F6, ink #0E2A47, accent #F2B33D. Make the 10, check them, then send the zip.
+Alaska. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / EARLY. Date line: BY NOV 2. Capital star: Juneau, in the southeast panhandle. Include the Aleutian chain and the southeast panhandle; keep it at true proportions, never squashed. State palette (night sky and gold): background #E6F0F6, ink #0E2A47, accent #F2B33D. Make the 10, check them, then send the zip.
 ```
 
 ### Dates Not Yet Verified (Election Day Message)
@@ -199,127 +214,127 @@ Alaska. Headline: VOTE / EARLY. Date line: BY NOV 2. Capital star: Juneau, in th
 #### 20. Illinois (VOTE / NOV 3, ELECTION DAY)
 
 ```
-Illinois. Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Springfield, in the middle of the state, not Chicago. Illinois cards say Election Day, so never use the words "early" or "mail." State palette (lake and prairie gold): background #EEF2F6, ink #14213D, accent #E5A823. Make the 10, check them, then send the zip.
+Illinois. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Springfield, in the middle of the state, not Chicago. Illinois cards say Election Day, so never use the words "early" or "mail." State palette (lake and prairie gold): background #EEF2F6, ink #14213D, accent #E5A823. Make the 10, check them, then send the zip.
 ```
 
 #### 21. Ohio (VOTE / NOV 3, ELECTION DAY)
 
 ```
-Ohio. Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Columbus. Ohio cards say Election Day, so never use the words "early" or "mail." State palette (river and buckeye): background #F1F1EE, ink #1F2A44, accent #B33F40. Make the 10, check them, then send the zip.
+Ohio. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Columbus. Ohio cards say Election Day, so never use the words "early" or "mail." State palette (river and buckeye): background #F1F1EE, ink #1F2A44, accent #B33F40. Make the 10, check them, then send the zip.
 ```
 
 #### 22. Georgia (VOTE / NOV 3, ELECTION DAY)
 
 ```
-Georgia. Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Atlanta. Georgia cards say Election Day, so never use the words "early" or "mail." State palette (peach and pine): background #F6EFE6, ink #2B3A2E, accent #E07A3F. Make the 10, check them, then send the zip.
+Georgia. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Atlanta. Georgia cards say Election Day, so never use the words "early" or "mail." State palette (peach and pine): background #F6EFE6, ink #2B3A2E, accent #E07A3F. Make the 10, check them, then send the zip.
 ```
 
 #### 23. Arizona (VOTE / NOV 3, ELECTION DAY)
 
 ```
-Arizona. Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Phoenix. Arizona cards say Election Day, so never use the words "early" or "mail." State palette (desert sunset): background #FBEBDD, ink #2E2A4F, accent #D9663B. Make the 10, check them, then send the zip.
+Arizona. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Phoenix. Arizona cards say Election Day, so never use the words "early" or "mail." State palette (desert sunset): background #FBEBDD, ink #2E2A4F, accent #D9663B. Make the 10, check them, then send the zip.
 ```
 
 #### 24. Tennessee (VOTE / NOV 3, ELECTION DAY)
 
 ```
-Tennessee. Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Nashville. Tennessee is very wide and thin: keep the outline small above the headline. Tennessee cards say Election Day, so never use the words "early" or "mail." State palette (smoky mountain): background #F3EEE6, ink #1F2A44, accent #C1663B. Make the 10, check them, then send the zip.
+Tennessee. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Nashville. Tennessee is very wide and thin: keep the outline small above the headline. Tennessee cards say Election Day, so never use the words "early" or "mail." State palette (smoky mountain): background #F3EEE6, ink #1F2A44, accent #C1663B. Make the 10, check them, then send the zip.
 ```
 
 #### 25. Massachusetts (VOTE / NOV 3, ELECTION DAY)
 
 ```
-Massachusetts. Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Boston. Include Cape Cod. Massachusetts cards say Election Day, so never use the words "early" or "mail." State palette (harbor and brick): background #EDF1F5, ink #16324F, accent #B5502D. Make the 10, check them, then send the zip.
+Massachusetts. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Boston. Include Cape Cod. Massachusetts cards say Election Day, so never use the words "early" or "mail." State palette (harbor and brick): background #EDF1F5, ink #16324F, accent #B5502D. Make the 10, check them, then send the zip.
 ```
 
 #### 26. Indiana (VOTE / NOV 3, ELECTION DAY)
 
 ```
-Indiana. Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Indianapolis. Indiana cards say Election Day, so never use the words "early" or "mail." State palette (limestone and gold): background #F2F0E8, ink #1C2541, accent #C9A227. Make the 10, check them, then send the zip.
+Indiana. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Indianapolis. Indiana cards say Election Day, so never use the words "early" or "mail." State palette (limestone and gold): background #F2F0E8, ink #1C2541, accent #C9A227. Make the 10, check them, then send the zip.
 ```
 
 #### 27. Wisconsin (VOTE / NOV 3, ELECTION DAY)
 
 ```
-Wisconsin. Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Madison. Include the Door Peninsula. Wisconsin cards say Election Day, so never use the words "early" or "mail." State palette (lake and cherry): background #EEF2F6, ink #14213D, accent #C9473A. Make the 10, check them, then send the zip.
+Wisconsin. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Madison. Include the Door Peninsula. Wisconsin cards say Election Day, so never use the words "early" or "mail." State palette (lake and cherry): background #EEF2F6, ink #14213D, accent #C9473A. Make the 10, check them, then send the zip.
 ```
 
 #### 28. Louisiana (VOTE / NOV 3, ELECTION DAY)
 
 ```
-Louisiana. Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Baton Rouge, not New Orleans. Keep the boot shape and the Mississippi delta accurate. Louisiana cards say Election Day, so never use the words "early" or "mail." State palette (bayou purple and gold): background #EFEDF5, ink #2D1E4F, accent #D4A72C. Make the 10, check them, then send the zip.
+Louisiana. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Baton Rouge, not New Orleans. Keep the boot shape and the Mississippi delta accurate. Louisiana cards say Election Day, so never use the words "early" or "mail." State palette (bayou purple and gold): background #EFEDF5, ink #2D1E4F, accent #D4A72C. Make the 10, check them, then send the zip.
 ```
 
 #### 29. Kentucky (VOTE / NOV 3, ELECTION DAY)
 
 ```
-Kentucky. Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Frankfort, not Louisville or Lexington. Kentucky cards say Election Day, so never use the words "early" or "mail." State palette (bluegrass): background #EEF3EC, ink #123524, accent #3A6EA5. Make the 10, check them, then send the zip.
+Kentucky. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Frankfort, not Louisville or Lexington. Kentucky cards say Election Day, so never use the words "early" or "mail." State palette (bluegrass): background #EEF3EC, ink #123524, accent #3A6EA5. Make the 10, check them, then send the zip.
 ```
 
 #### 30. Connecticut (VOTE / NOV 3, ELECTION DAY)
 
 ```
-Connecticut. Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Hartford. Connecticut cards say Election Day, so never use the words "early" or "mail." State palette (harbor and leaf): background #EAF0F5, ink #13294B, accent #7A9A3B. Make the 10, check them, then send the zip.
+Connecticut. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Hartford. Connecticut cards say Election Day, so never use the words "early" or "mail." State palette (harbor and leaf): background #EAF0F5, ink #13294B, accent #7A9A3B. Make the 10, check them, then send the zip.
 ```
 
 #### 31. Utah (VOTE / NOV 3, ELECTION DAY)
 
 ```
-Utah. Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Salt Lake City. Utah cards say Election Day, so never use the words "early" or "mail." State palette (red rock): background #FBEFE3, ink #2B2D42, accent #C8553D. Make the 10, check them, then send the zip.
+Utah. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Salt Lake City. Utah cards say Election Day, so never use the words "early" or "mail." State palette (red rock): background #FBEFE3, ink #2B2D42, accent #C8553D. Make the 10, check them, then send the zip.
 ```
 
 #### 32. Arkansas (VOTE / NOV 3, ELECTION DAY)
 
 ```
-Arkansas. Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Little Rock. Arkansas cards say Election Day, so never use the words "early" or "mail." State palette (pine and clay): background #EEF2E6, ink #1F3B2C, accent #B5452B. Make the 10, check them, then send the zip.
+Arkansas. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Little Rock. Arkansas cards say Election Day, so never use the words "early" or "mail." State palette (pine and clay): background #EEF2E6, ink #1F3B2C, accent #B5452B. Make the 10, check them, then send the zip.
 ```
 
 #### 33. New Mexico (VOTE / NOV 3, ELECTION DAY)
 
 ```
-New Mexico. Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Santa Fe, not Albuquerque. New Mexico cards say Election Day, so never use the words "early" or "mail." State palette (adobe and chile): background #FBF0E1, ink #3A2E39, accent #D1495B. Make the 10, check them, then send the zip.
+New Mexico. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Santa Fe, not Albuquerque. New Mexico cards say Election Day, so never use the words "early" or "mail." State palette (adobe and chile): background #FBF0E1, ink #3A2E39, accent #D1495B. Make the 10, check them, then send the zip.
 ```
 
 #### 34. West Virginia (VOTE / NOV 3, ELECTION DAY)
 
 ```
-West Virginia. Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Charleston, West Virginia. Keep both panhandles accurate. West Virginia cards say Election Day, so never use the words "early" or "mail." State palette (mountain and gold): background #EEF1EA, ink #1F2E3D, accent #D4A72C. Make the 10, check them, then send the zip.
+West Virginia. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Charleston, West Virginia. Keep both panhandles accurate. West Virginia cards say Election Day, so never use the words "early" or "mail." State palette (mountain and gold): background #EEF1EA, ink #1F2E3D, accent #D4A72C. Make the 10, check them, then send the zip.
 ```
 
 #### 35. Maine (VOTE / NOV 3, ELECTION DAY)
 
 ```
-Maine. Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Augusta. Maine cards say Election Day, so never use the words "early" or "mail." State palette (spruce and coast): background #E8F1EE, ink #123B33, accent #3B6EA5. Make the 10, check them, then send the zip.
+Maine. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Augusta. Maine cards say Election Day, so never use the words "early" or "mail." State palette (spruce and coast): background #E8F1EE, ink #123B33, accent #3B6EA5. Make the 10, check them, then send the zip.
 ```
 
 #### 36. Montana (VOTE / NOV 3, ELECTION DAY)
 
 ```
-Montana. Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Helena. Montana cards say Election Day, so never use the words "early" or "mail." State palette (big sky and rust): background #EAF0F4, ink #1D3557, accent #C46D3B. Make the 10, check them, then send the zip.
+Montana. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Helena. Montana cards say Election Day, so never use the words "early" or "mail." State palette (big sky and rust): background #EAF0F4, ink #1D3557, accent #C46D3B. Make the 10, check them, then send the zip.
 ```
 
 #### 37. South Dakota (VOTE / NOV 3, ELECTION DAY)
 
 ```
-South Dakota. Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Pierre, in the middle of the state. South Dakota cards say Election Day, so never use the words "early" or "mail." State palette (badlands and sage): background #F3EFE5, ink #2A2D34, accent #5B8E7D. Make the 10, check them, then send the zip.
+South Dakota. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Pierre, in the middle of the state. South Dakota cards say Election Day, so never use the words "early" or "mail." State palette (badlands and sage): background #F3EFE5, ink #2A2D34, accent #5B8E7D. Make the 10, check them, then send the zip.
 ```
 
 #### 38. North Dakota (VOTE / NOV 3, ELECTION DAY)
 
 ```
-North Dakota. Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Bismarck. North Dakota cards say Election Day, so never use the words "early" or "mail." State palette (wheat and sky): background #F1F2EA, ink #203038, accent #C9A227. Make the 10, check them, then send the zip.
+North Dakota. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Bismarck. North Dakota cards say Election Day, so never use the words "early" or "mail." State palette (wheat and sky): background #F1F2EA, ink #203038, accent #C9A227. Make the 10, check them, then send the zip.
 ```
 
 #### 39. Vermont (VOTE / NOV 3, ELECTION DAY)
 
 ```
-Vermont. Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Montpelier. Vermont cards say Election Day, so never use the words "early" or "mail." State palette (green mountain and maple): background #EEF3EC, ink #1E3B2C, accent #C0392B. Make the 10, check them, then send the zip.
+Vermont. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Montpelier. Vermont cards say Election Day, so never use the words "early" or "mail." State palette (green mountain and maple): background #EEF3EC, ink #1E3B2C, accent #C0392B. Make the 10, check them, then send the zip.
 ```
 
 #### 40. Wyoming (VOTE / NOV 3, ELECTION DAY)
 
 ```
-Wyoming. Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Cheyenne, in the southeast corner. Wyoming is a plain rectangle: keep it bold and simple. Wyoming cards say Election Day, so never use the words "early" or "mail." State palette (high plains): background #F2EFE6, ink #2B2D42, accent #B5652B. Make the 10, check them, then send the zip.
+Wyoming. Use these exact details in all 10 images, and nothing from earlier states: Headline: VOTE / NOV 3. Date line: ELECTION DAY. Capital star: Cheyenne, in the southeast corner. Wyoming is a plain rectangle: keep it bold and simple. Wyoming cards say Election Day, so never use the words "early" or "mail." State palette (high plains): background #F2EFE6, ink #2B2D42, accent #B5652B. Make the 10, check them, then send the zip.
 ```
 
 <!-- 40 states, 11 already have sets: CA, CO, DC, KS, MO, NC, NY, PA, TX, VA, WA -->

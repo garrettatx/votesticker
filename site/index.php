@@ -41,6 +41,8 @@ function vote_e( $s ) { return htmlspecialchars( (string) $s, ENT_QUOTES, 'UTF-8
 function vote_long( $ymd ) { return date( 'F j', strtotime( $ymd ) ); }
 function vote_short( $ymd ) { return date( 'M j', strtotime( $ymd ) ); }
 function vote_day( $ymd ) { return date( 'l, F j', strtotime( $ymd ) ); }
+// Gallery columns on wide screens: one row up to 6, then rows as even as possible (7 and 8 make 4s).
+function vote_cols( $n ) { return $n <= 6 ? max( $n, 1 ) : ( $n <= 8 ? 4 : 5 ); }
 function vote_verified( $st ) { return 'verified' === ( $st['status'] ?? '' ); }
 function vote_files( $abbr ) {
 	$files = array_map( 'basename', glob( __DIR__ . '/assets/states/' . strtolower( $abbr ) . '/*.jpg' ) ?: array() );
@@ -128,7 +130,7 @@ function vote_meta( $st ) {
 function vote_info( $st ) {
 	$eday = 'Election Day is Tuesday, November 3, 2026.';
 	if ( ! vote_verified( $st ) ) {
-		return '<h2>Vote by Nov 3</h2><p>We haven’t checked ' . vote_e( $st['name'] ) . '’s early voting dates yet, so these pictures show Election Day. ' .
+		return '<h2>Vote by Nov 3</h2><p>We haven’t checked ' . vote_e( $st['name'] ) . '’s early voting dates yet, so these stickers say Election Day. ' .
 			'Look up your dates and polling place at <a href="https://www.vote411.org/' . vote_slug( $st['name'] ) . '" target="_blank" rel="noopener">Vote411</a> ' .
 			'(League of Women Voters) or your state election office.</p><p>' . $eday . '</p>';
 	}
@@ -145,7 +147,7 @@ function vote_info( $st ) {
 	}
 	$html .= '</b> ' . ( 'none' === $kind ? '' : $eday ) . '</p>';
 	if ( ! empty( $st['note'] ) ) { $html .= '<p>' . vote_e( $st['note'] ) . '</p>'; }
-	$html .= '<p><a href="' . vote_e( $st['officialUrl'] ) . '" target="_blank" rel="noopener">' . ( 'none' === $kind ? 'Voting information at ' : 'Find your polling place at ' ) . vote_e( $st['officialLabel'] ) . '</a></p>';
+	$html .= '<p><a class="official" href="' . vote_e( $st['officialUrl'] ) . '" target="_blank" rel="noopener"><span><b>Official ' . vote_e( $st['name'] ) . ' voting information</b><small>' . ( 'none' === $kind ? 'Absentee rules and polling places at ' : 'Polling places and hours at ' ) . vote_e( $st['officialLabel'] ) . '</small></span></a></p>';
 	$html .= '<p class="source">Dates from the <a href="' . vote_e( $st['sourceUrl'] ) . '" target="_blank" rel="noopener">state election office</a>, checked ' . date( 'F j, Y', strtotime( $st['checked'] ) ) . '.</p>';
 	return $html;
 }
@@ -195,7 +197,7 @@ $vote_share = '<p class="share"><button type="button" class="share__btn" id="sha
 function vote_finder( $label, $placeholder ) {
 	return '<div class="finder"><label for="state-find">' . vote_e( $label ) . '</label>'
 		. '<div class="finder__box"><input id="state-find" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="state-options" autocomplete="off" autocapitalize="words" spellcheck="false" placeholder="' . vote_e( $placeholder ) . '">'
-		. '<button type="button" class="btn btn--gold" id="state-go">Go</button>'
+		. '<button type="button" class="btn btn--gold" id="state-go">Find</button>'
 		. '<ul id="state-options" role="listbox" aria-label="Matching states" hidden></ul></div>'
 		. '<p class="help" id="state-help"><a href="#states-h">Or browse the full list of states</a></p></div>';
 }
@@ -260,11 +262,16 @@ $vote_ld = array(
 			<?php endforeach; ?>
 		</ol></nav>
 		<?php endif; ?>
-		<?php if ( $vote_st ) : ?>
-		<h1 id="page-h1"><?php echo vote_e( $vote_page['h1'] ); ?></h1>
-		<p class="ribbon"><?php echo vote_e( $vote_page['ribbon'] ); ?></p>
-		<p class="lead" id="page-lead"><?php echo vote_e( $vote_page['lead'] ); ?></p>
-		<?php echo $vote_share; ?>
+		<?php if ( $vote_st ) : $vote_lead_img = vote_files( $vote_abbr )[0] ?? ''; ?>
+		<div class="state-hero<?php echo $vote_lead_img ? ' state-hero--art' : ''; ?>">
+			<div>
+				<h1 id="page-h1"><?php echo vote_e( $vote_page['h1'] ); ?></h1>
+				<p class="ribbon"><?php echo vote_e( $vote_page['ribbon'] ); ?></p>
+				<p class="lead" id="page-lead"><?php echo vote_e( $vote_page['lead'] ); ?></p>
+				<?php echo $vote_share; ?>
+			</div>
+			<?php if ( $vote_lead_img ) : ?><img class="state-hero__sticker" src="<?php echo vote_e( $vote_lead_img ); ?>" alt="" width="1080" height="1080" aria-hidden="true"><?php endif; ?>
+		</div>
 		<?php else : ?>
 		<div class="hero">
 			<div class="hero__text">
@@ -298,7 +305,7 @@ $vote_ld = array(
 	<?php if ( $vote_showcase && ! $vote_st ) : ?>
 	<section class="showcase" id="showcase" aria-labelledby="showcase-h">
 		<h2 id="showcase-h" class="display-h">Ready-Made Stickers</h2>
-		<p>A few from the most populous states. Tap one to see that state's full set, or find your state above to make your own.</p>
+		<p class="section-intro">A few from the most populous states. Tap one to see that state's full set, or find your state above to make your own.</p>
 		<div class="grid grid--showcase">
 			<?php foreach ( $vote_showcase as $abbr => $n ) : ?>
 			<a class="pick" href="<?php echo VOTE_BASE . $vote_meta[ strtoupper( $abbr ) ]['slug']; ?>/">
@@ -327,12 +334,12 @@ $vote_ld = array(
 		<section class="info" id="info" aria-live="polite"><?php echo $vote_st ? vote_info( $vote_st ) : ''; ?></section>
 
 		<section class="gallery" id="gallery"<?php echo $vote_files ? '' : ' hidden'; ?> aria-labelledby="gallery-h">
-			<h2 id="gallery-h"><?php echo $vote_st ? 'Ready-Made ' . vote_e( $vote_st['name'] ) . ' Stickers' : 'Ready-Made Stickers'; ?></h2>
-			<p>Tap one to save it.</p>
-			<div class="grid grid--gallery" id="gallery-grid"><?php foreach ( $vote_files as $i => $src ) : ?><a class="tile" href="<?php echo vote_e( $src ); ?>" download="vote-<?php echo strtolower( $vote_abbr ) . '-' . ( $i + 1 ); ?>.jpg"><img src="<?php echo vote_e( $src ); ?>" alt="<?php echo vote_e( $vote_st['name'] . ' vote picture, hand-made design ' . ( $i + 1 ) ); ?>" width="1080" height="1080" loading="lazy"></a><?php endforeach; ?></div>
+			<h2 id="gallery-h" class="display-h"><?php echo $vote_st ? 'Ready-Made ' . vote_e( $vote_st['name'] ) . ' Stickers' : 'Ready-Made Stickers'; ?></h2>
+			<p>Tap one to save it. Every sticker keeps its words inside the profile-picture circle.</p>
+			<div class="grid grid--gallery" id="gallery-grid" style="--cols: <?php echo vote_cols( count( $vote_files ) ); ?>"><?php foreach ( $vote_files as $i => $src ) : ?><a class="tile" href="<?php echo vote_e( $src ); ?>" download="vote-<?php echo strtolower( $vote_abbr ) . '-' . ( $i + 1 ); ?>.jpg"><img src="<?php echo vote_e( $src ); ?>" alt="<?php echo vote_e( $vote_st['name'] . ' vote picture, hand-made design ' . ( $i + 1 ) ); ?>" width="1080" height="1080" loading="lazy"></a><?php endforeach; ?></div>
 		</section>
 
-		<h2 class="maker-h" id="maker-h"<?php echo $vote_files ? '' : ' hidden'; ?>>Or Make Your Own</h2>
+		<h2 class="maker-h display-h" id="maker-h"<?php echo $vote_files ? '' : ' hidden'; ?>>Or Make Your Own</h2>
 		<div class="controls controls--maker">
 			<label>Main message
 				<select id="headline"></select>
@@ -391,23 +398,23 @@ $vote_ld = array(
 	$vote_prev = false !== $vote_pos && $vote_pos > 0 ? $vote_keys[ $vote_pos - 1 ] : '';
 	$vote_next = false !== $vote_pos && $vote_pos < count( $vote_keys ) - 1 ? $vote_keys[ $vote_pos + 1 ] : '';
 	?>
+	<div class="discover">
 	<?php if ( $vote_same && $vote_same_h ) : ?>
 	<section class="near" aria-labelledby="same-h">
 		<h2 id="same-h"><?php echo vote_e( $vote_same_h ); ?></h2>
 		<ul>
 			<?php foreach ( $vote_same as $abbr ) : ?>
-			<li><a href="<?php echo VOTE_BASE . $vote_meta[ $abbr ]['slug']; ?>/"><?php echo vote_e( $vote_rows[ $abbr ]['name'] ); ?></a>: <?php echo vote_e( $vote_meta[ $abbr ]['status'] ); ?></li>
+			<li><a href="<?php echo VOTE_BASE . $vote_meta[ $abbr ]['slug']; ?>/"><?php echo vote_e( $vote_rows[ $abbr ]['name'] ); ?></a><span><?php echo vote_e( ucfirst( $vote_meta[ $abbr ]['status'] ) ); ?></span></li>
 			<?php endforeach; ?>
 		</ul>
 	</section>
 	<?php endif; ?>
 	<?php if ( $vote_near ) : ?>
 	<section class="near" aria-labelledby="near-h">
-		<h2 id="near-h">Neighboring States</h2>
-		<p>Voting dates for the states next door:</p>
+		<h2 id="near-h">States Next Door</h2>
 		<ul>
 			<?php foreach ( $vote_near as $abbr ) : ?>
-			<li><a href="<?php echo VOTE_BASE . $vote_meta[ $abbr ]['slug']; ?>/"><?php echo vote_e( $vote_rows[ $abbr ]['name'] ); ?></a>: <?php echo vote_e( $vote_meta[ $abbr ]['status'] ); ?></li>
+			<li><a href="<?php echo VOTE_BASE . $vote_meta[ $abbr ]['slug']; ?>/"><?php echo vote_e( $vote_rows[ $abbr ]['name'] ); ?></a><span><?php echo vote_e( ucfirst( $vote_meta[ $abbr ]['status'] ) ); ?></span></li>
 			<?php endforeach; ?>
 		</ul>
 	</section>
@@ -428,6 +435,7 @@ $vote_ld = array(
 			<?php endforeach; ?>
 		</ul>
 	</nav>
+	</div>
 
 	<section class="faq" aria-labelledby="faq-h">
 		<h2 id="faq-h">Common Questions</h2>

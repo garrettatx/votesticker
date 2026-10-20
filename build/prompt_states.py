@@ -88,7 +88,7 @@ def message(r):
             else:
                 line = f'{ss}–{es}'
         extra = ''
-    parts = [f'{r["name"]}. Headline: {head}. Date line: {line}. Capital star: {cap}.']
+    parts = [f'{r["name"]}. Use these exact details in all 10 images, and nothing from earlier states: Headline: {head}. Date line: {line}. Capital star: {cap}.']
     if note:
         parts.append(note + '.')
     if extra:
@@ -109,7 +109,11 @@ def main():
     assert set(todo) | have == set(rows), set(rows) - set(todo) - have
     groups = [('Verified Dates', lambda r: r['status'] == 'verified'),
               ('Dates Not Yet Verified (Election Day Message)', lambda r: r['status'] != 'verified')]
-    out = []
+    out = ['### Already Built (Skip These)\n']
+    for a in [a for a in POP if a in have]:
+        k = len(list((ROOT / 'site/assets/states' / a.lower()).glob('*.jpg')))
+        out.append(f'- ~~{rows[a]["name"]}~~ ({k} stickers live)')
+    out.append('')
     n = 0
     for title, test in groups:
         sel = [a for a in todo if test(rows[a])]

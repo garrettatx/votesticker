@@ -363,7 +363,7 @@
 		var lookup = 'https://www.vote411.org/' + slug(st.name);
 		var eday = 'Election Day is ' + ELECTION.label + '.';
 		if (st.status !== 'verified') {
-			return '<h2>Vote by ' + shortDate(day(ELECTION.day)).replace(/^(\w)(\w+)/, function (m, a, b) { return a + b.toLowerCase(); }) + '</h2><p>We haven’t checked ' + esc(st.name) + '’s early voting dates yet, so these pictures show Election Day. ' +
+			return '<h2>Vote by ' + shortDate(day(ELECTION.day)).replace(/^(\w)(\w+)/, function (m, a, b) { return a + b.toLowerCase(); }) + '</h2><p>We haven’t checked ' + esc(st.name) + '’s early voting dates yet, so these stickers say Election Day. ' +
 				'Look up your dates and polling place at <a href="' + lookup + '" target="_blank" rel="noopener">Vote411</a> ' +
 				'(League of Women Voters) or your state election office.</p><p>' + eday + '</p>';
 		}
@@ -379,7 +379,7 @@
 		}
 		html += '</b> ' + (st.kind === 'none' ? '' : eday) + '</p>';
 		if (st.note) { html += '<p>' + esc(st.note) + '</p>'; }
-		html += '<p><a href="' + esc(st.officialUrl) + '" target="_blank" rel="noopener">' + (st.kind === 'none' ? 'Voting information at ' : 'Find your polling place at ') + esc(st.officialLabel) + '</a></p>';
+		html += '<p><a class="official" href="' + esc(st.officialUrl) + '" target="_blank" rel="noopener"><span><b>Official ' + esc(st.name) + ' voting information</b><small>' + (st.kind === 'none' ? 'Absentee rules and polling places at ' : 'Polling places and hours at ') + esc(st.officialLabel) + '</small></span></a></p>';
 		html += '<p class="source">Dates from the <a href="' + esc(st.sourceUrl) + '" target="_blank" rel="noopener">state election office</a>, checked ' +
 			longDate(day(st.checked)).replace(/^\w+, /, '') + ', ' + st.checked.slice(0, 4) + '.</p>';
 		return html;
@@ -499,6 +499,7 @@
 		document.body.classList.toggle('has-gallery', !!files.length);
 		var grid = $('gallery-grid');
 		grid.innerHTML = '';
+		grid.style.setProperty('--cols', files.length <= 6 ? Math.max(files.length, 1) : files.length <= 8 ? 4 : 5);
 		files.forEach(function (src, i) {
 			var name = 'vote-' + st.abbr.toLowerCase() + '-' + (i + 1) + '.jpg';
 			var a = document.createElement('a');
