@@ -70,7 +70,7 @@
 		{ id: 'type', name: 'Big type' },
 		{ id: 'badge', name: 'Badge' }
 	];
-	// Short lines only, at most 9 characters each, so a card reads at 40 px in a comment thread
+	// Short lines only, at most 10 characters each (POR CORREO), so a card reads at 40 px in a comment thread
 	// (Garrett, October 19; QA enforces the limit).
 	// `early` headlines only where a verified row has early voting, `mail` only in all-mail states;
 	// everywhere else the card says VOTE NOV 3.
@@ -82,9 +82,16 @@
 		// who has voted, any state, any day.
 		// Its date bar names the state and year instead of a date.
 		ivoted: { label: 'I voted', lines: ['I VOTED'], stateLine: true },
-		yovote: { label: 'Yo voté (Spanish)', lines: ['YO VOTÉ'], stateLine: true },
 		mailed: { mail: true, label: 'I voted by mail', lines: ['I VOTED', 'BY MAIL'], stateLine: true },
 		voted: { early: true, label: 'I voted early', lines: ['I VOTED', 'EARLY'] },
+		// Spanish (October 19): the informal tú form used in Mexican and US Latino voter outreach. Date bars
+		// put the day first ("19–30 OCT", "HASTA EL 27 OCT").
+		votatemprano: { early: true, es: true, label: 'Vota temprano (español)', lines: ['VOTA', 'TEMPRANO'] },
+		votacorreo: { mail: true, es: true, label: 'Vota por correo (español)', lines: ['VOTA', 'POR CORREO'] },
+		vota3nov: { dated: true, es: true, label: 'Vota 3 de nov (español)', lines: ['VOTA', '3 DE NOV'] },
+		yovote: { es: true, label: 'Yo voté (español)', lines: ['YO VOTÉ'], stateLine: true },
+		yovotetemprano: { early: true, es: true, label: 'Yo voté temprano (español)', lines: ['YO VOTÉ', 'TEMPRANO'] },
+		yovotecorreo: { mail: true, es: true, label: 'Yo voté por correo (español)', lines: ['YO VOTÉ', 'POR CORREO'], stateLine: true },
 	};
 
 	function hasEarly(st) { return st.status === 'verified' && st.kind !== 'none'; }
@@ -134,7 +141,9 @@
 	// The date line a card starts with, for a state and headline. A headline that already carries the
 	// date (VOTE NOV 3) gets ELECTION DAY under it.
 	function defaultDateLine(st, headline) {
-		if (headline && HEADLINES[headline] && HEADLINES[headline].dated) { return 'ELECTION DAY'; }
+		var hd = headline && HEADLINES[headline];
+		if (hd && hd.es && !hd.stateLine) { return spanishDateLine(st, hd); }
+		if (hd && hd.dated) { return 'ELECTION DAY'; }
 		// Short enough to read in a thumbnail: the name up to 10 letters, else the postal code (NC 2026).
 		if (headline && HEADLINES[headline] && HEADLINES[headline].stateLine) { return (st.name.length <= 10 ? st.name.toUpperCase() : st.abbr) + ' ' + ELECTION.day.slice(0, 4); }
 		if (!hasEarly(st)) { return electionLine(); }
@@ -142,6 +151,19 @@
 		if (st.kind === 'mail') { return 'DUE ' + shortDate(day(st.end)); }
 		if (!st.start || !st.end) { return electionLine(); }
 		return rangeLine(day(st.start), day(st.end));
+	}
+
+	// Spanish date bars: day before month, "HASTA EL" for a last day.
+	var MESES = { JAN: 'ENE', APR: 'ABR', AUG: 'AGO', SEP: 'SEPT', DEC: 'DIC' };
+	function mes(d) { var m = MONTHS[d.getMonth()]; return MESES[m] || m; }
+	function spanishDateLine(st, hd) {
+		if (hd.dated || !hasEarly(st)) { return 'DÍA DE ELECCIONES'; }
+		if (st.kind === 'mail') { return 'HASTA EL ' + day(st.end).getDate() + ' ' + mes(day(st.end)); }
+		var by = /^BY ([A-Z]{3}) (\d+)$/.exec(st.dateLine || '');
+		if (by) { return 'HASTA EL ' + by[2] + ' ' + (MESES[by[1]] || by[1]); }
+		if (!st.start || !st.end) { return 'DÍA DE ELECCIONES'; }
+		var a = day(st.start), b = day(st.end);
+		return a.getMonth() === b.getMonth() ? a.getDate() + '–' + b.getDate() + ' ' + mes(b) : a.getDate() + ' ' + mes(a) + '–' + b.getDate() + ' ' + mes(b);
 	}
 
 	function luminance(hex) {

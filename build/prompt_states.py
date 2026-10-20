@@ -104,15 +104,18 @@ def main():
         if l.strip().startswith('{"abbr"'):
             r = json.loads(l.strip().rstrip(','))
             rows[r['abbr']] = r
-    have = {p.name.upper() for p in (ROOT / 'site/assets/states').iterdir() if p.is_dir()}
+    # States whose first sets were too samey to keep as final (October 19): redo them; their current
+    # images stay live until the new ones replace them.
+    redo = {'FL', 'MD', 'NJ'}
+    have = {p.name.upper() for p in (ROOT / 'site/assets/states').iterdir() if p.is_dir()} - redo
     todo = [a for a in POP if a in rows and a not in have]
-    assert set(todo) | have == set(rows), set(rows) - set(todo) - have
     groups = [('Verified Dates', lambda r: r['status'] == 'verified'),
               ('Dates Not Yet Verified (Election Day Message)', lambda r: r['status'] != 'verified')]
     out = ['### Already Built (Skip These)\n']
     for a in [a for a in POP if a in have]:
         k = len(list((ROOT / 'site/assets/states' / a.lower()).glob('*.jpg')))
         out.append(f'- ~~{rows[a]["name"]}~~ ({k} stickers live)')
+    out.append(f'\nRedo (current sets look too much alike; they stay live until replaced): {", ".join(rows[a]["name"] for a in POP if a in redo)}.')
     out.append('')
     n = 0
     for title, test in groups:

@@ -1,73 +1,78 @@
 # Ready-Made Set Prompts: One State at a Time
 
-Written October 19, 2026, after ChatGPT stalled on the six-state prompt. Covers every state without a
-ready-made set; dates come from `site/states.js` (regenerate the list with `build/prompt_states.py`). Start a new chat, attach 2 or 3 Texas images, send the setup message, then send
-one state message. Send the next state only after that state's zip arrives. Two states per chat is the
-most to try; start a fresh chat after that.
+Updated October 19, 2026 (evening). Covers every state that still needs a set; dates come from
+`site/states.js` (regenerate with `build/prompt_states.py`, then `build/prompts_html.py`).
 
-The Shape layout changed: round 2 lost 15 of 60 images to headlines set inside the state outline, so
-text and outline never overlap now.
+**How to run it:** start a new chat. Attach these three images from `site/assets/states/` as the
+examples: `tx/tx-vote-2.jpg` (Texas, big type), `md/md-vote-1.jpg` (Maryland, large solid map), and
+`nc/nc-vote-2.jpg` (North Carolina, badge). Send the setup message, wait for "Ready," then send one state
+message. Send the next state only after that state's zip arrives. Start a fresh chat every two states.
+
+**Why the split:** images 1 to 4 follow a fixed spec so every state has a dependable core set. Images 5
+to 10 are six different design ideas, because Florida, Maryland, and New Jersey came back as one layout
+in ten colors.
 
 ## 1. Setup Message (Once per Chat)
 
 ```
-I'm making nonpartisan "vote" profile pictures for friends in different states. The attached Texas images show the style. I'll send one state at a time. For each state you make 10 images, check them, and give me one zip. Then stop and wait for the next state.
+WHAT THIS IS
+I run VoteSticker.org, a free, nonpartisan site where people pick their state and save a "vote" sticker to use as their profile picture on Facebook, Instagram, LinkedIn, and X. Each state gets a set of 10 ready-made stickers with that state's own voting message and dates. The goal: a friend scrolling past sees it at thumbnail size, reads the message instantly, and checks when they can vote. Someone from that state should be proud to use it.
 
-FORMAT (every image)
-- One square image per reply, 1:1, at least 1080 x 1080 px. Never a grid, collage, contact sheet, or preview of several designs in one image.
-- These are profile pictures. Facebook, Instagram, LinkedIn, and X crop them to a circle and show them as small as 40 px. Keep ALL text and art inside a centered circle about 80% of the image width. The background color fills the whole square; corners hold only that color.
+The three attached images are examples of what works: a huge condensed headline, a solid state outline with a star on the capital, the dates on a solid bar, two or three flat colors. Match their quality and clarity, not their exact layout.
 
-TEXT
+I'll send one state at a time. For each state: make 10 images one at a time, check them, give me one zip, then stop and wait.
+
+RULES FOR ALL 10 IMAGES
+Format
+- One square image per reply, at least 1080 x 1080 px. Never a grid, collage, or preview sheet of several designs.
+- Social sites crop profile pictures to a circle and show them as small as 40 px. Keep ALL text and art inside a centered circle about 80% of the image width. Corners hold only background color.
+
+Text
 - Use only the exact headline and date line I give for the state. No other words, no URL, no hashtags, no state name.
-- Each state's dates are different. Never carry a date, outline, or capital over from an earlier state in this chat.
-- All caps, spelled exactly. Date ranges use an en dash (OCT 24–NOV 1), never a hyphen or em dash.
-- Headline in a heavy condensed sans like Anton; date line in a wide heavy sans like Archivo Black.
-- The headline is the picture. Its two lines together take up about half the image's height and most of the circle's width, centered. The date line sits directly under it, at least a third of the headline's letter height.
-- Test every image by imagining it shrunk to a 48 px circle: VOTE EARLY (or the given headline) and the date must still be readable.
+- Spell everything exactly, all caps. Date ranges use an en dash (OCT 24–NOV 1), never a hyphen.
+- Each state's details are its own. Never carry a date, outline, or capital over from an earlier state.
+- The headline is the picture: its lines take up about half the image's height, in a heavy condensed display face like Anton or Bebas Neue (never a regular bold sans like Arial). The date line sits right under it, at least a third of the headline's letter height, in a wide heavy sans like Archivo Black.
+- Shrunk to a 48 px circle, the headline and date must still read.
 
-ART
-- Flat vector, 2 or 3 solid colors, high contrast. No gradients, textures, shadows, photos, or 3D.
-- The only art allowed: the state outline, the capital star, an optional thin ring inside the crop circle, and the solid bar behind the date. No scenes or illustrations: no palm trees, birds, flowers, skylines, sunsets, beaches, mountains, or landmarks. They turn to mush at thumbnail size and push the words down.
-- The state outline stays small: no wider than about a third of the image, above or beside the headline.
-- Never put the headline inside the state outline, and never let text overlap the outline. Keep the outline above, beside, or below the text, or leave it out.
-- The outline must be accurate at its true proportions. Never stretch or squash it; make it smaller instead.
-- A small five-point star marks the capital at its real location. The star never touches or cuts into a letter.
+Art
+- Flat vector, 2 or 3 solid colors, strong contrast. No gradients, photos, textures, or 3D.
+- The state outline is a solid filled shape (never a thin line drawing), accurate, at its true proportions, never stretched. A small five-point star marks the capital at its real location and never touches a letter.
+- Never put the headline inside the outline or let text overlap it.
 - Nonpartisan: no flags, party symbols, red-versus-blue themes, ballots, checkmarks, people, or logos.
+- No scenes or illustrations: no palm trees, birds, skylines, sunsets, beaches, or landmarks.
 
-PALETTES
-- Cream: background #FBF8F0, ink #14295E, accent #C1272D
-- Navy: background #0F2558, ink #FBF6E8, accent #B3262C
-- Forest: background #0A3D2C, ink #FBF6E8, accent #D4AF4A
-- Sand: background #EBDABF, ink #1F1E1C, accent #A9552A
-- Sky: background #D4E8FA, ink #14295E, accent #C1272D
-- Sage: background #8FAF88, ink #0B3A23, accent #E0BC4E
+IMAGES 1 TO 4: THE CORE SET (follow exactly)
+1. Shape layout in Cream: background #FBF8F0, ink #14295E, accent #C1272D. A large solid outline across the upper part (as wide as the headline), star on the capital, headline below it, dates in an accent bar.
+2. Big type layout in Navy: background #0F2558, ink #FBF6E8, accent #B3262C. A small outline on top, the headline as big as it goes, dates in an accent bar.
+3. Badge layout in Forest: background #0A3D2C, ink #FBF6E8, accent #D4AF4A. A thin ring just inside the crop circle, small outline, headline, dates in an accent bar.
+4. Shape layout in the state's own palette (given in the state message).
 
-LAYOUTS
-- Shape: medium state outline in ink in the upper part of the circle, capital star on it, headline below the outline (not touching it), date line in an accent bar at the bottom.
-- Big type: small state outline on top, huge two-line headline, date line in a solid accent-color bar.
-- Badge: thin ring just inside the crop circle, small state outline, headline, date in an accent bar.
-
-IMAGES 1 TO 4 (guidelines)
-Shape in Cream, Big type in Navy, Badge in Forest, and Shape in the state's own palette.
-
-IMAGES 5 TO 10 (variations)
-Six more. The goal is a picture that makes a friend scrolling past stop and check when they can vote, and that someone from this state would be proud to use. Vary only the palette (any 2 or 3 flat colors with strong contrast, including colors that feel like the state), the type arrangement (stacked, slightly tilted, headline in a solid shape), the position of the small outline, and whether there's a ring. No added illustrations. Everything in FORMAT, TEXT, and ART still applies. Make the six different from each other and from images 1 to 4.
+IMAGES 5 TO 10: SIX DIFFERENT IDEAS (creative freedom inside the rules)
+Make each one a different concept, not the core layouts in new colors. Pick six of these, or invent your own that fit the rules:
+- Map hero: the solid outline large and in the accent color, headline stacked below it big.
+- Side by side: outline on the left, headline stacked on the right, dates under both.
+- Sticker: a disc with a thick ring and a thin inner ring, dates on a bar tipped a few degrees.
+- Two-tone headline: first line in one color, second line in the accent, dates between two short rules.
+- Stamp: the headline knocked out of a solid rounded block, outline above, dates below.
+- Split field: the background split on a clean diagonal into two flat colors, headline across the split in a color that reads on both.
+- Ticket: the headline inside a ticket shape with notched corners, dates on the stub.
+- Bold border: a thick solid border band inside the circle in the accent color, everything centered inside it.
+Colors for 5 to 10: any 2 or 3 flat colors with strong contrast, including colors that feel like the state (its landscape or seasons), never red against blue. One small flat accent is allowed (a wave line, a leaf, a sunburst) if it's simple, one color, and smaller than the outline.
+Before making them, list the six concepts you picked in one line each, then make them.
 
 BEFORE THE ZIP: CHECK ALL 10
-Look at each image again and redo any that fails:
-1. Headline and date line spelled exactly as given, nothing added, en dash in ranges.
-2. Everything inside the center circle; corners are plain background. One design per image, not a grid.
-2b. Shrunk to 48 px, the headline and date still read. The headline fills about half the height. No scenery or illustrations.
-3. Text never overlaps the state outline; the star doesn't touch a letter.
-4. Outline accurate and not stretched; star on the capital, not a big city or border.
-5. Headline still readable shrunk to 48 px.
-6. No two images look nearly the same.
-Then tell me "10 of 10 checked" and list any you redid and why.
+Redo any image that fails:
+1. Headline and date line exactly as given, en dash in ranges, nothing added.
+2. Everything inside the center circle, one design per image.
+3. Readable at 48 px; the headline fills about half the height.
+4. Solid outline, accurate, not stretched; star on the capital, clear of letters; no text over the outline.
+5. Images 5 to 10 are six different concepts, not color swaps of each other or of 1 to 4.
+Then say "10 of 10 checked" and list any you redid and why.
 
 THE ZIP
 - One zip per state named [State]-[Message]-10-Profile-Pictures (for example Florida-Vote-Early-10-Profile-Pictures).
 - Inside: exactly 10 PNGs named [state]-01-[layout]-[palette].png through [state]-10-..., lowercase with hyphens.
-- After the zip, list the 10 file names it holds, then stop and wait for my next state.
+- After the zip, list the 10 file names, then stop and wait for my next state.
 
 Reply "Ready" and wait for the first state.
 ```
@@ -92,6 +97,8 @@ message stays true either way.
 - ~~Colorado~~ (7 stickers live)
 - ~~Kansas~~ (10 stickers live)
 - ~~District of Columbia~~ (10 stickers live)
+
+Redo (current sets look too much alike; they stay live until replaced): Florida, New Jersey, Maryland.
 
 ### Verified Dates
 
