@@ -69,6 +69,9 @@ the type also landed well.
   (Jackson: 41% across, 56% down). Most Mississippi stars were drawn too far north.
 - **"Flat" means no visible gradient or texture.** Image tools add 1 to 5 RGB levels of noise; that
   passes. Don't fail or redraw for it.
+- **I stays on the same line as VOTED,** never alone on its own line (it reads as a numeral 1 or a
+  pillar). **Type families:** the heavy condensed sans, or brush lettering. No slab or wood-type
+  serifs; they look out of family next to the rest of the set (Nebraska).
 - **No oversized initial letter.** A giant serif I beside the map reads as a column at 48 px
   (Mississippi 07, Idaho I VOTED).
 - **Proven concepts can repeat across states; each set still needs its own ideas.** Strong concepts
