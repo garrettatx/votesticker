@@ -46,8 +46,8 @@ for (const st of states) {
 		if (files.length) { im = await og.img(files[0]); }
 		else {
 			im = document.createElement('canvas');
-			const h = V.defaultHeadline(row);
-			V.render(im, 600, { state: st.abbr, design: 'badge', palette: 'navy', headline: h, dateText: V.defaultDateLine(row, h) });
+			const h = V.stateHeadline(row);
+			V.render(im, 600, { state: st.abbr, design: 'sticker', palette: 'state', headline: h, dateText: V.defaultDateLine(row, h) });
 		}
 		og.sticker(g, im, 300, 315, 225, -6);
 		g.textAlign = 'left'; g.textBaseline = 'alphabetic'; g.fillStyle = '#14295E';

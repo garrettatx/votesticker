@@ -39,21 +39,29 @@ for (const type of [chromium, webkit]) {
 				const wrong = V.headlinesFor(st).filter((k) => V.HEADLINES[k].early);
 				if (wrong.length) bad.push(`${st.abbr}: offers early headlines ${wrong.join(', ')}`);
 			}
+			// Thumbnail rule: no headline line longer than 9 characters.
+			for (const h of V.headlinesFor(st)) {
+				const lines = typeof V.HEADLINES[h].lines === 'function' ? V.HEADLINES[h].lines(st) : V.HEADLINES[h].lines;
+				lines.filter((l) => l.length > 9).forEach((l) => bad.push(`${st.abbr} ${h}: line "${l}" is longer than 9 characters`));
+			}
 			for (const d of V.DESIGNS) {
 				for (const p of V.PALETTES) {
 					for (const h of V.headlinesFor(st)) {
 						const dateText = st.abbr === 'TX' ? 'OCT 24–NOV 1' : V.defaultDateLine(st, h);
-						V.render(c, 540, { state: st.abbr, design: d.id, palette: p.id, headline: h, dateText });
+						// Draw the card twice: background, disc and rings only, then complete. Any difference
+						// outside the safe circle is content that a profile-picture crop could cut.
+						const o = { state: st.abbr, design: d.id, palette: p.id, headline: h, dateText };
+						V.render(c, 540, Object.assign({ decorOnly: true }, o));
+						const base = c.getContext('2d').getImageData(0, 0, 540, 540).data;
+						V.render(c, 540, o);
 						const px = c.getContext('2d').getImageData(0, 0, 540, 540).data;
-						const bg = [px[0], px[1], px[2]];
 						let outside = 0;
 						for (let y = 0; y < 540; y += 2) {
 							for (let x = 0; x < 540; x += 2) {
 								const r = Math.hypot(x + 0.5 - 270, y + 0.5 - 270);
 								if (r <= V.SAFE / 2 + 2) continue;
-								if (d.id === 'badge' && Math.abs(r - 253) < 6) continue; // the ring
 								const i = (y * 540 + x) * 4;
-								if (Math.abs(px[i] - bg[0]) + Math.abs(px[i + 1] - bg[1]) + Math.abs(px[i + 2] - bg[2]) > 24) outside++;
+								if (Math.abs(px[i] - base[i]) + Math.abs(px[i + 1] - base[i + 1]) + Math.abs(px[i + 2] - base[i + 2]) > 24) outside++;
 							}
 						}
 						n++;

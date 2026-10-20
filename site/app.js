@@ -20,25 +20,71 @@
 		{ id: 'forest', name: 'Forest and gold', bg: '#0A3D2C', ink: '#FBF6E8', accent: '#D4AF4A', onAccent: '#0A3D2C' },
 		{ id: 'sand', name: 'Sand and rust', bg: '#EBDABF', ink: '#1F1E1C', accent: '#A9552A', onAccent: '#FBF6E8' },
 		{ id: 'sky', name: 'Sky and navy', bg: '#D4E8FA', ink: '#14295E', accent: '#C1272D', onAccent: '#FBF8F0' },
-		{ id: 'sage', name: 'Sage and forest', bg: '#8FAF88', ink: '#0B3A23', accent: '#E0BC4E', onAccent: '#0B3A23' }
+		{ id: 'sage', name: 'Sage and forest', bg: '#8FAF88', ink: '#0B3A23', accent: '#E0BC4E', onAccent: '#0B3A23' },
+		{ id: 'state', name: 'State colors' }
 	];
+	// Each state's own colors (background, ink, accent): the palettes the ready-made sets were made in,
+	// and for the other states the palettes in docs/round3-prompts-one-state.md (October 19).
+	var STATE_COLORS = {
+		AL: ['#F3ECE1', '#5B1F2B', '#C98B2B'], AK: ['#E6F0F6', '#0E2A47', '#F2B33D'], AZ: ['#FBEBDD', '#2E2A4F', '#D9663B'],
+		AR: ['#EEF2E6', '#1F3B2C', '#B5452B'], CA: ['#FFF3E0', '#1F3A5F', '#E07A1F'], CO: ['#1D3557', '#F1FAEE', '#F4B942'],
+		CT: ['#EAF0F5', '#13294B', '#5E7F2A'], DE: ['#EAF2F4', '#123C4A', '#C99231'], DC: ['#FFFFFF', '#1B1B1B', '#C8102E'],
+		FL: ['#E8F6F3', '#0B4F6C', '#E07A2B'], GA: ['#F6EFE6', '#2B3A2E', '#D2652E'], HI: ['#E5F4F1', '#0D3B4C', '#D9583A'],
+		ID: ['#EEF1E8', '#22333B', '#8C6A3F'], IL: ['#EEF2F6', '#14213D', '#D49A12'], IN: ['#F2F0E8', '#1C2541', '#B38F1D'],
+		IA: ['#F5F0E1', '#2B2D42', '#C9870F'], KS: ['#F4E9C8', '#1F3A5F', '#D0921A'], KY: ['#EEF3EC', '#123524', '#3A6EA5'],
+		LA: ['#EFEDF5', '#2D1E4F', '#C4961F'], ME: ['#E8F1EE', '#123B33', '#3B6EA5'], MD: ['#F6F1E7', '#1C1C1C', '#C98A00'],
+		MA: ['#EDF1F5', '#16324F', '#B5502D'], MI: ['#E9F1F7', '#0B3954', '#21857A'], MN: ['#EAF2F8', '#102A43', '#3C8D5A'],
+		MS: ['#EEF0EA', '#1F2E2B', '#A8762A'], MO: ['#DCE9F2', '#12355B', '#2E7D6B'], MT: ['#EAF0F4', '#1D3557', '#C46D3B'],
+		NE: ['#F4EFE3', '#2C2A29', '#C0392B'], NV: ['#F6EEE6', '#22223B', '#C2703D'], NH: ['#EEF2EE', '#1E3A2F', '#C8553D'],
+		NJ: ['#F1ECE2', '#1B2A41', '#B38F1D'], NM: ['#FBF0E1', '#3A2E39', '#D1495B'], NY: ['#1B1B1B', '#FBF6E8', '#F2A900'],
+		NC: ['#E6F0F8', '#13294B', '#3B82BF'], ND: ['#F1F2EA', '#203038', '#B38F1D'], OH: ['#F1F1EE', '#1F2A44', '#B33F40'],
+		OK: ['#F5EEE6', '#22303C', '#C46A2E'], OR: ['#E6EFE9', '#1F3B2C', '#2F6690'], PA: ['#102A43', '#F0F4F8', '#F0B429'],
+		RI: ['#E8F1F6', '#0F3550', '#D0921A'], SC: ['#EAF0F4', '#16324F', '#3E7CB1'], SD: ['#F3EFE5', '#2A2D34', '#4F8271'],
+		TN: ['#F3EEE6', '#1F2A44', '#C1663B'], TX: ['#0A3D2C', '#FBF6E8', '#D4AF4A'], UT: ['#FBEFE3', '#2B2D42', '#C8553D'],
+		VT: ['#EEF3EC', '#1E3B2C', '#C0392B'], VA: ['#EDE6DA', '#233142', '#8C2F39'], WA: ['#E3EEE6', '#1E4D3A', '#3E7CB1'],
+		WV: ['#EEF1EA', '#1F2E3D', '#C4961F'], WI: ['#EEF2F6', '#14213D', '#C9473A'], WY: ['#F2EFE6', '#2B2D42', '#B5652B']
+	};
+	function paletteFor(id, st) {
+		if (id !== 'state') { return PALETTES.filter(function (x) { return x.id === id; })[0] || PALETTES[1]; }
+		var c = STATE_COLORS[st.abbr] || ['#0F2558', '#FBF6E8', '#B3262C'];
+		// Text on the accent bar takes whichever of the two base colors reads better on it.
+		return { id: 'state', name: st.name + ' colors', bg: c[0], ink: c[1], accent: c[2], onAccent: contrast(c[2], c[0]) > contrast(c[2], c[1]) ? c[0] : c[1] };
+	}
+	// A shade of the background for the square's corners behind a sticker disc: darker on light
+	// backgrounds, lighter on dark ones.
+	function shade(hex, amt) {
+		var n = parseInt(hex.slice(1), 16), dark = luminance(hex) < 0.2;
+		return '#' + [n >> 16, (n >> 8) & 255, n & 255].map(function (c) {
+			var v = dark ? c + (255 - c) * amt : c * (1 - amt);
+			return ('0' + Math.round(v).toString(16)).slice(-2);
+		}).join('');
+	}
 	// Big type first: at 40 to 60 px, the size most people see a profile picture, it reads best (October 19).
+	// October 19, evening: Sticker, Poster and Stamp follow the ready-made sets (a disc with rings and a
+	// tilted date bar, a two-tone headline, a headline knocked out of a block). "State shape" was retired:
+	// it set the headline inside the outline, the pattern rejected from the ChatGPT sets.
 	var DESIGNS = [
+		{ id: 'sticker', name: 'Sticker' },
+		{ id: 'poster', name: 'Poster' },
+		{ id: 'stamp', name: 'Stamp' },
 		{ id: 'type', name: 'Big type' },
-		{ id: 'shape', name: 'State shape' },
 		{ id: 'badge', name: 'Badge' }
 	];
-	// Two short lines each, so a card still reads at 40 px in a comment thread (Garrett, October 19).
+	// Short lines only, at most 9 characters each, so a card reads at 40 px in a comment thread
+	// (Garrett, October 19; QA enforces the limit).
 	// `early` headlines only where a verified row has early voting, `mail` only in all-mail states;
 	// everywhere else the card says VOTE NOV 3.
 	var HEADLINES = {
 		early: { early: true, label: 'Vote early', lines: ['VOTE', 'EARLY'] },
 		mail: { mail: true, label: 'Vote by mail', lines: ['VOTE', 'BY MAIL'] },
 		nov3: { dated: true, label: 'Vote Nov 3', lines: ['VOTE', 'NOV 3'] },
-		voting: { early: true, label: 'I\u2019m voting early', lines: ['I\u2019M VOTING', 'EARLY'] },
+		// "I voted" is the main alternate to the state's own message (Garrett, October 19): true for anyone
+		// who has voted, any state, any day.
+		// Its date bar names the state and year instead of a date.
+		ivoted: { label: 'I voted', lines: ['I VOTED'], stateLine: true },
+		yovote: { label: 'Yo voté (Spanish)', lines: ['YO VOTÉ'], stateLine: true },
+		mailed: { mail: true, label: 'I voted by mail', lines: ['I VOTED', 'BY MAIL'], stateLine: true },
 		voted: { early: true, label: 'I voted early', lines: ['I VOTED', 'EARLY'] },
-		imvoting: { label: 'I\u2019m voting', lines: ['I\u2019M', 'VOTING'] },
-		state: { label: '[State] votes', lines: function (st) { return [(st.abbr === 'DC' ? 'DC' : st.name.toUpperCase()), 'VOTES']; } }
 	};
 
 	function hasEarly(st) { return st.status === 'verified' && st.kind !== 'none'; }
@@ -48,7 +94,9 @@
 			return (!h.early || hasEarly(st)) && (!h.mail || (hasEarly(st) && st.kind === 'mail'));
 		});
 	}
-	function defaultHeadline(st) { return !hasEarly(st) ? 'nov3' : st.kind === 'mail' ? 'mail' : 'early'; }
+	// The state's own message (VOTE EARLY, VOTE BY MAIL, VOTE NOV 3): share images and the ready-made sets.
+	function stateHeadline(st) { return !hasEarly(st) ? 'nov3' : st.kind === 'mail' ? 'mail' : 'early'; }
+	function defaultHeadline(st) { return stateHeadline(st); }
 	function headlineLines(key, st) {
 		var h = HEADLINES[key] || HEADLINES.nov3;
 		return typeof h.lines === 'function' ? h.lines(st) : h.lines;
@@ -87,6 +135,8 @@
 	// date (VOTE NOV 3) gets ELECTION DAY under it.
 	function defaultDateLine(st, headline) {
 		if (headline && HEADLINES[headline] && HEADLINES[headline].dated) { return 'ELECTION DAY'; }
+		// Short enough to read in a thumbnail: the name up to 10 letters, else the postal code (NC 2026).
+		if (headline && HEADLINES[headline] && HEADLINES[headline].stateLine) { return (st.name.length <= 10 ? st.name.toUpperCase() : st.abbr) + ' ' + ELECTION.day.slice(0, 4); }
 		if (!hasEarly(st)) { return electionLine(); }
 		if (st.dateLine) { return st.dateLine; }
 		if (st.kind === 'mail') { return 'DUE ' + shortDate(day(st.end)); }
@@ -170,29 +220,47 @@
 		return placed;
 	}
 
-	function boxesHit(a, b) { return a[0] < b[2] && b[0] < a[2] && a[1] < b[3] && b[1] < a[3]; }
+	// Tip a group of items about the center of its first item's box (radians).
+	function tilt(items, rot) {
+		var b = items[0].box, pv = [(b[0] + b[2]) / 2, (b[1] + b[3]) / 2];
+		items.forEach(function (it) { it.rot = rot; it.pivot = pv; });
+	}
 
 	var LAYOUTS = {
-		// The state filled in ink, the headline in the background color with an ink outline, a star on the capital, dates below.
-		shape: function (st, p, lines, dateText) {
-			var sh = shape(st.abbr), k = Math.min(1000 / sh.w, 800 / sh.h);
-			var w = sh.w * k, h = sh.h * k, x = -w / 2;
-			var shapeItem = { t: 'shape', abbr: st.abbr, x: x, y: 0, k: k, color: p.ink };
-			var head = textBlock(lines, DISPLAY, Math.min(Math.max(w * 0.78, 560), 800));
-			var headH = head.asc * lines.length + head.gap * (lines.length - 1);
-			var headTop = h * 0.48 - headH / 2;
-			var placed = placeText(head, 0, headTop, p.ink);
-			var sw = head.size * 0.07;
-			placed.items.forEach(function (it) {
-				it.color = p.bg; it.stroke = p.ink; it.strokeWidth = sw;
-				it.box = [it.box[0] - sw / 2, it.box[1] - sw / 2, it.box[2] + sw / 2, it.box[3] + sw / 2];
-			});
-			var items = [shapeItem].concat(placed.items);
-			var r = Math.max(w, h) * 0.045, star = { t: 'star', cx: x + sh.cap[0] * k, cy: sh.cap[1] * k, r: r, color: p.accent };
-			var starBox = [star.cx - r * 1.4, star.cy - r * 1.4, star.cx + r * 1.4, star.cy + r * 1.4];
-			if (!placed.items.some(function (it) { return boxesHit(it.box, starBox); })) { items.push(star); }
-			var date = dateItems(dateText, 0, Math.max(h, placed.bottom) + head.asc * 0.3, Math.min(Math.max(w * 0.8, 560), 760), head.asc * 0.5, p.ink);
-			return { items: items.concat(date.items), safe: SAFE };
+		// The ready-made look: a disc with a heavy ring and a thin inner ring, the state on top, a big
+		// headline, and the dates on an accent bar tipped a few degrees, like a sticker slapped on.
+		sticker: function (st, p, lines, dateText) {
+			var icon = iconItem(st, 0, 0, 200, 360, p.ink, p.accent);
+			var head = textBlock(lines, DISPLAY, 800, 300);
+			var placed = placeText(head, 0, icon.bottom + 40, p.ink);
+			var date = dateItems(dateText, 0, placed.bottom + head.asc * 0.26, 640, Math.min(head.asc * 0.5, 120), p.onAccent, p.accent);
+			tilt(date.items, -0.05);
+			return { items: icon.items.concat(placed.items, date.items), safe: 420, disc: { fill: p.bg, outer: shade(p.bg, 0.16), rings: [[506, 16, p.ink], [470, 4, p.ink]] } };
+		},
+		// Two-tone poster: the first line in ink, the second in the accent when it reads, dates between rules.
+		poster: function (st, p, lines, dateText) {
+			var icon = iconItem(st, 0, 0, 190, 340, p.ink, p.accent);
+			var head = textBlock(lines, DISPLAY, 820, 300);
+			var placed = placeText(head, 0, icon.bottom + 40, p.ink);
+			if (lines.length > 1 && contrast(p.accent, p.bg) >= 3) { placed.items[placed.items.length - 1].color = p.accent; }
+			var date = dateItems(dateText, 0, placed.bottom + head.asc * 0.34, 600, Math.min(head.asc * 0.44, 110), p.ink);
+			var db = date.items[0].box, cy = (db[1] + db[3]) / 2, rw = 70, gap = 26, th = Math.max(6, (db[3] - db[1]) * 0.12);
+			var rules = [
+				{ t: 'box', box: [db[0] - gap - rw, cy - th / 2, db[0] - gap, cy + th / 2], color: p.ink },
+				{ t: 'box', box: [db[2] + gap, cy - th / 2, db[2] + gap + rw, cy + th / 2], color: p.ink }
+			];
+			return { items: icon.items.concat(placed.items, date.items, rules), safe: SAFE };
+		},
+		// Stamp: the headline knocked out of a solid ink block with rounded corners, the state above.
+		stamp: function (st, p, lines, dateText) {
+			var icon = iconItem(st, 0, 0, 180, 320, p.ink, p.accent);
+			var head = textBlock(lines, DISPLAY, 700, 280);
+			var padX = head.asc * 0.32, padY = head.asc * 0.26;
+			var placed = placeText(head, 0, icon.bottom + 34 + padY, p.bg);
+			var w = Math.max.apply(null, head.lines.map(function (l) { return l.w; }));
+			var block = { t: 'box', box: [-w / 2 - padX, icon.bottom + 34, w / 2 + padX, placed.bottom + padY], color: p.ink, radius: head.asc * 0.22 };
+			var date = dateItems(dateText, 0, block.box[3] + head.asc * 0.28, w + padX * 2, head.asc * 0.42, contrast(p.accent, p.bg) >= 3 ? p.accent : p.ink);
+			return { items: icon.items.concat([block], placed.items, date.items), safe: SAFE };
 		},
 		// A small state on top, the headline as big as it goes, dates in the accent color.
 		type: function (st, p, lines, dateText) {
@@ -219,7 +287,10 @@
 			return shape(it.abbr).pts.map(function (q) { return [it.x + q[0] * it.k, it.y + q[1] * it.k]; });
 		}
 		var b = it.t === 'star' ? [it.cx - it.r, it.cy - it.r, it.cx + it.r, it.cy + it.r] : it.box;
-		return [[b[0], b[1]], [b[2], b[1]], [b[0], b[3]], [b[2], b[3]]];
+		var pts = [[b[0], b[1]], [b[2], b[1]], [b[0], b[3]], [b[2], b[3]]];
+		if (!it.rot) { return pts; }
+		var c = Math.cos(it.rot), s = Math.sin(it.rot), pv = it.pivot;
+		return pts.map(function (q) { var dx = q[0] - pv[0], dy = q[1] - pv[1]; return [pv[0] + dx * c - dy * s, pv[1] + dx * s + dy * c]; });
 	}
 
 	// Scale and center so the farthest point of any item lands on the safe circle.
@@ -255,10 +326,24 @@
 	}
 
 	function drawItem(ctx, it) {
+		if (it.rot) {
+			ctx.save();
+			ctx.translate(it.pivot[0], it.pivot[1]);
+			ctx.rotate(it.rot);
+			ctx.translate(-it.pivot[0], -it.pivot[1]);
+			drawItem(ctx, { t: it.t, s: it.s, font: it.font, color: it.color, x: it.x, base: it.base, box: it.box, radius: it.radius, stroke: it.stroke, strokeWidth: it.strokeWidth });
+			ctx.restore();
+			return;
+		}
 		ctx.fillStyle = it.color;
 		if (it.t === 'shape') { drawShape(ctx, it); return; }
 		if (it.t === 'star') { drawStar(ctx, it.cx, it.cy, it.r); return; }
-		if (it.t === 'box') { ctx.fillRect(it.box[0], it.box[1], it.box[2] - it.box[0], it.box[3] - it.box[1]); return; }
+		if (it.t === 'box') {
+			ctx.beginPath();
+			if (it.radius && ctx.roundRect) { ctx.roundRect(it.box[0], it.box[1], it.box[2] - it.box[0], it.box[3] - it.box[1], it.radius); } else { ctx.rect(it.box[0], it.box[1], it.box[2] - it.box[0], it.box[3] - it.box[1]); }
+			ctx.fill();
+			return;
+		}
 		ctx.font = it.font;
 		ctx.textBaseline = 'alphabetic';
 		ctx.textAlign = 'left';
@@ -276,7 +361,7 @@
 	// Draw one card on a canvas `px` pixels wide: square, or a 9:16 Story with the same card in the
 	// middle. No site address on any image (Garrett, October 19).
 	function render(canvas, px, opts) {
-		var st = byAbbr[opts.state], p = PALETTES.filter(function (x) { return x.id === opts.palette; })[0];
+		var st = byAbbr[opts.state], p = paletteFor(opts.palette, st);
 		var layout = LAYOUTS[opts.design](st, p, headlineLines(opts.headline, st), opts.dateText);
 		var f = fit(layout);
 		var tall = opts.story ? STORY_H : SIZE;
@@ -284,10 +369,24 @@
 		canvas.height = Math.round(px * tall / SIZE);
 		var ctx = canvas.getContext('2d');
 		ctx.setTransform(px / SIZE, 0, 0, px / SIZE, 0, 0);
-		ctx.fillStyle = p.bg;
+		ctx.fillStyle = layout.disc ? layout.disc.outer : p.bg;
 		ctx.fillRect(0, 0, SIZE, tall);
 		if (opts.story) {
 			ctx.translate(0, (tall - SIZE) / 2);
+		}
+		if (layout.disc) {
+			// The disc fills the profile-picture circle exactly; the corners outside it never show once cropped.
+			ctx.fillStyle = layout.disc.fill;
+			ctx.beginPath();
+			ctx.arc(SIZE / 2, SIZE / 2, SIZE / 2, 0, Math.PI * 2);
+			ctx.fill();
+			layout.disc.rings.forEach(function (r) {
+				ctx.strokeStyle = r[2];
+				ctx.lineWidth = r[1];
+				ctx.beginPath();
+				ctx.arc(SIZE / 2, SIZE / 2, r[0], 0, Math.PI * 2);
+				ctx.stroke();
+			});
 		}
 		if (layout.ring) {
 			ctx.strokeStyle = layout.ring;
@@ -296,6 +395,7 @@
 			ctx.arc(SIZE / 2, SIZE / 2, RING_R, 0, Math.PI * 2);
 			ctx.stroke();
 		}
+		if (opts.decorOnly) { return fit(layout); }
 		ctx.translate(SIZE / 2, SIZE / 2);
 		ctx.scale(f.s, f.s);
 		ctx.translate(-f.cx, -f.cy);
@@ -347,8 +447,8 @@
 		state: null,
 		headline: 'nov3',
 		dateEdited: false,
-		design: load('design', 'type'),
-		palette: load('palette', 'navy'),
+		design: load('design2', 'sticker'),
+		palette: load('palette2', 'state'),
 		dateText: '',
 		circle: load('circle', true),
 		story: false
@@ -560,8 +660,8 @@
 			if (!b) { return; }
 			state.design = b.dataset.design;
 			state.palette = b.dataset.palette;
-			save('design', state.design);
-			save('palette', state.palette);
+			save('design2', state.design);
+			save('palette2', state.palette);
 			setPressed();
 			drawPreview();
 			var top = $('preview').getBoundingClientRect().top;
@@ -675,7 +775,7 @@
 	}
 
 	// For the QA script: draw any card and report how far its content reaches from the center.
-	window.VOTE_CARDS = { render: render, fit: fit, LAYOUTS: LAYOUTS, PALETTES: PALETTES, DESIGNS: DESIGNS, HEADLINES: HEADLINES, headlinesFor: headlinesFor, defaultHeadline: defaultHeadline, defaultDateLine: defaultDateLine, SAFE: SAFE };
+	window.VOTE_CARDS = { stateHeadline: stateHeadline, paletteFor: paletteFor, render: render, fit: fit, LAYOUTS: LAYOUTS, PALETTES: PALETTES, DESIGNS: DESIGNS, HEADLINES: HEADLINES, headlinesFor: headlinesFor, defaultHeadline: defaultHeadline, defaultDateLine: defaultDateLine, SAFE: SAFE };
 
 	fonts().then(init, function () { init(); });
 })();
