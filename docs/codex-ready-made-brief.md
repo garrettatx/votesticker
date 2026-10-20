@@ -67,6 +67,10 @@ favorite. Each one still has to pass the rules.
   at 48 px (MAKE A PLAN had a gold slash after "A").
 - **No repeated concepts.** Two images on the same diagonal over the same plum background read as a
   color swap. Vary composition and palette; check BRIEFS.md before each image.
+- **Draw the outline from the repo's geometry.** Generated maps come out too narrow or flattened
+  (Minnesota copper, Arizona teal and plum, Nebraska). Render the state's path from
+  `site/state-shapes.js` to a PNG and give it to the image tool as the shape reference before the
+  first image, not after a failure.
 - **Place the star from the repo's map data.** Before drawing, read the state's `w`, `h` and `cap` in
   `site/state-shapes.js` and give the star's position as a share of the outline's width and height
   (Jackson: 41% across, 56% down). Most Mississippi stars were drawn too far north.
