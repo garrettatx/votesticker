@@ -25,7 +25,7 @@ PROD = 'https://votesticker.org/'
 # English that must never appear in a Spanish page's visible text.
 SENTINELS = ['Vote Stickers', 'Early voting', 'early voting', 'Ready-Made', 'Make your', 'Make Your', 'Copy link', 'Official info',
              'Before You Vote', 'Common Questions', 'Download picture', 'Previous state', 'Next state', 'States Next Door',
-             'Election Day', 'Find your', 'Pick a', 'This tool', 'is made by', 'Your sticker', 'Tap one', 'votes by mail',
+             'Election Day', 'Find your', 'Pick a', 'This tool', 'built by', 'Your sticker', 'Tap one', 'votes by mail',
              'Browse All', 'All States', 'Looking for', 'Type a state', 'Suggested post', 'Preview circle', 'Main message']
 # Proper nouns and bracketed official titles that stay in English on purpose.
 ALLOWED = ['Vote Sticker', 'VoteSticker.org', 'League of Women Voters', 'Supervisor of Elections', 'county board of elections',

@@ -4,13 +4,14 @@ Free, nonpartisan profile pictures that show your state's voting dates for the N
 election. Pick your state, save a ready-made design or make your own, and post it. Live at
 **https://votesticker.org**.
 
-Made by Garrett Nafzinger of [Garrett Digital](https://www.garrettdigital.com/).
+Made by Garrett Nafzinger of [Garrett Digital](https://www.garrettdigital.com/). The site footer reads
+"VoteSticker.org built by" with the Garrett Digital logo (Spanish: "VoteSticker.org, desarrollado por").
 
 ## What It Does
 
 - **One page per state** (`/texas/`, `/district-of-columbia/`) with that state's early voting,
   vote-by-mail, or Election Day dates and a link to the official election office.
-- **Ready-made designs** for the most populous states, plus a maker with 18 designs (3 layouts by 6
+- **Ready-made designs** for all 51 pages (English only), plus a maker with 18 designs (3 layouts by 6
   palettes) and short headlines that are true for the state ("VOTE EARLY" only where early voting is
   confirmed).
 - **Nothing gets cropped.** Every picture keeps its content inside the circle that Facebook, Instagram,
@@ -21,8 +22,11 @@ Made by Garrett Nafzinger of [Garrett Digital](https://www.garrettdigital.com/).
 ## Rules the Content Follows
 
 - A state shows dates only after they were read on an official state page, with the source URL and
-  check date stored in `site/states.js`. Unchecked states say Election Day, render with `noindex`, and
-  stay out of the sitemap.
+  check date stored in `site/states.js`. Unchecked states say Election Day. Every state page is
+  indexable and in the sitemap, in both languages (since October 19, 2026).
+- State FAQ answers come only from official sources, with the source shown on the page
+  (`build/faq_text.py`, `docs/faq-sources.json`). Registration answers are fixed dates; recheck them
+  as deadlines pass.
 - Messages stay short: two-line headlines that read at 40 to 60 px.
 - No site address on the images, no party symbols, no red-versus-blue themes.
 

@@ -735,8 +735,7 @@ $vote_ld = array(
 <footer class="foot">
 	<div class="wrap">
 		<p><b><?php echo vote_e( t( 'This tool is nonpartisan.' ) ); ?></b> <?php echo vote_e( t( 'Voting dates and links come from official state election sources. Before you vote, check your registration, polling place, hours, and ID rules with your state or local election office.' ) ); ?> <a href="<?php echo vote_e( t( 'https://www.usa.gov/state-election-office' ) ); ?>"><?php echo vote_e( t( 'Find your state or local election office' ) ); ?></a>.</p>
-		<p class="foot__made"><span><?php echo vote_e( t( '%s is made by', VOTE_BRAND ) ); ?></span> <a class="foot__gd" href="https://www.garrettdigital.com/"><img src="<?php echo vote_v( 'assets/gd-logo.svg' ); ?>" alt="Garrett Digital" width="152" height="40"></a></p>
-		<p><?php echo vote_e( t( 'Your sticker is created in your browser. Nothing is uploaded.' ) ); ?></p>
+		<p class="foot__made"><span><?php echo vote_e( t( 'VoteSticker.org built by' ) ); ?></span> <a class="foot__gd" href="https://www.garrettdigital.com/"><img src="<?php echo vote_v( 'assets/gd-logo.svg' ); ?>" alt="Garrett Digital" width="152" height="40"></a></p>
 	</div>
 </footer>
 
