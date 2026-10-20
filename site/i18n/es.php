@@ -160,7 +160,7 @@ return array(
 		'Do you keep my information?' => '¿Guardan mi información?',
 		'Source:' => 'Fuente:',
 		'checked %s.' => 'consultada el %s.',
-		'When are polls open in %s on Election Day?' => '¿En qué horario puedes votar en %s el Día de las Elecciones?',
+		'When are polls open in %s on Election Day?' => '¿En qué horario puedo votar en %s el Día de las Elecciones?',
 		'When is the ballot deadline in %s?' => '¿Cuál es la fecha límite para entregar tu boleta en %s?',
 		'Do I need ID to vote in %s?' => '¿Necesito identificación para votar en %s?',
 		'Can I still register to vote in %s?' => '¿Todavía puedo registrarme para votar en %s?',

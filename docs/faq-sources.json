@@ -1,0 +1,576 @@
+{
+ "AL": {
+  "polls": {
+   "open": "7 a.m.",
+   "close": "7 p.m.",
+   "summary": "Polls are open 7 a.m. to 7 p.m. local time. A few polling places in the Eastern Time Zone may use Eastern Time. You can't join the line after 7 p.m.",
+   "source": "https://www.sos.alabama.gov/sites/default/files/election-2026/2026-VoterGuide.pdf",
+   "quote": "Alabama polling places are open from 7 A.M. to 7 P.M. on Election Day. Please note that polling places located in the Eastern Time Zone may be open from 7 A.M. to 7 P.M. Eastern Time."
+  },
+  "id": {
+   "rule": "photo_required",
+   "summary": "You must show a photo ID, such as an Alabama driver's license, a U.S. passport, or a free Alabama Photo Voter ID card. Without one, two poll workers can vouch for you, or you vote provisionally.",
+   "source": "https://www.sos.alabama.gov/sites/default/files/election-2026/2026-VoterGuide.pdf",
+   "quote": "A voter who does not have a valid form of photo ID on Election Day can vote a regular ballot only if their name appears on the official voters list and they are positively identified by at least two election officials."
+  },
+  "registration": {
+   "rule": "no",
+   "deadline": "Monday, October 19, 2026 for online, mail (postmarked by that date), and in-person registration. Online closes at 11:59 p.m.; in person by close of business.",
+   "summary": "The deadline to register for the November 3 election is October 19, 2026, online, by mail, or in person. Alabama has no same-day or Election Day registration.",
+   "source": "https://www.sos.alabama.gov/sites/default/files/election-2026/2026-VoterGuide.pdf",
+   "quote": "Voter registration is open all year, except during the 14 days prior to an election and on Election Day."
+  },
+  "selfie": {
+   "rule": "allowed",
+   "summary": "You may take a photo of your own ballot. Taking other photos inside the polling place is not allowed. You may bring a phone if you don't disturb other voters.",
+   "source": "https://www.sos.alabama.gov/sites/default/files/election-2026/2026-VoterGuide.pdf",
+   "quote": "CAN I TAKE PHOTOGRAPHS INSIDE MY POLLING PLACE? Yes. However, an individual may only take a photograph of their own ballot. Taking other photographs within the polling place may intimidate other voters and is not allowed."
+  },
+  "notes": "Source is the Secretary of State's 2026 Voter Guide PDF; its registration chart lists Oct. 19 for the general election. The ID rule has an exception: two election officials can positively identify a voter who lacks photo ID, so some classifiers call this non-strict. The guide addresses photographing your own ballot but says nothing about sharing it; no ban on sharing was found."
+ },
+ "AK": {
+  "polls": {
+   "open": "7 a.m.",
+   "close": "8 p.m.",
+   "summary": "Polls are open 7 a.m. to 8 p.m. on Election Day, November 3, 2026.",
+   "source": "https://www.elections.alaska.gov/calendar/",
+   "quote": "11/03/2026 General Election Day. Polls open from 7a.m. – 8p.m."
+  },
+  "id": {
+   "rule": "id_nonphoto",
+   "summary": "You must show one ID, such as your voter ID card, a driver's license, or a passport. A utility bill or bank statement with your name and address also works.",
+   "source": "https://www.akleg.gov/basis/statutes.asp#15.15.225",
+   "quote": "Before being allowed to vote, each voter shall exhibit to an election official one form of identification, including (1) an official voter registration card, driver's license, state identification card, current and valid photo identification, birth certificate, passport, or hunting or fishing license"
+  },
+  "registration": {
+   "rule": "no",
+   "deadline": "Sunday, October 4, 2026 (30 days before the election) for online, mail (postmarked), and in-person registration.",
+   "summary": "The deadline to register or update your registration was October 4, 2026. Alaska does not offer same-day or Election Day registration for state and federal races.",
+   "source": "https://www.elections.alaska.gov/calendar/",
+   "quote": "10/04/2026 Deadline for voters to register to vote or update their registration. Deadline always falls on a Sunday. 30th day prior to the election."
+  },
+  "selfie": {
+   "rule": "not_allowed",
+   "summary": "State law bars you from showing your marked ballot to anyone in a way that reveals how you voted, so sharing a photo of your ballot is not allowed.",
+   "source": "https://www.akleg.gov/basis/statutes.asp#15.15.280",
+   "quote": "Sec. 15.15.280. Prohibiting the exhibition of marked ballots. Subject to AS 15.15.240 a voter may not exhibit the voter's ballot to an election official or any other person so as to enable any person to ascertain how the voter marked the ballot."
+  },
+  "notes": "Statute text read via the akleg.gov print view (statutes.asp?media=print&secStart=...). Alaska spans two time zones (the western Aleutians use Hawaii-Aleutian time); the official calendar does not say local time, so the summary omits it. Without ID you may vote a questioned ballot (AS 15.15.225(c)); a poll worker who knows you may waive ID except for first-time mail registrants. AS 15.15.280 does not mention photos specifically; the not_allowed rule is an inference from the ban on exhibiting a marked ballot. Region 4 rural communities have special in-person absentee arrangements."
+ },
+ "AZ": {
+  "polls": {
+   "open": "6 a.m.",
+   "close": "7 p.m.",
+   "summary": "Polls are open 6 a.m. to 7 p.m. If you are in line when polls close, you can still vote.",
+   "source": "https://www.azleg.gov/ars/16/00565.htm",
+   "quote": "the polls shall be opened in every precinct at 6:00 a.m. on the day of election and shall be closed at 7:00 p.m."
+  },
+  "id": {
+   "rule": "id_nonphoto",
+   "summary": "You must show one photo ID with your name and address, such as an Arizona driver license or tribal ID, or two documents like a utility bill and bank statement.",
+   "source": "https://www.azleg.gov/ars/16/00579.htm",
+   "quote": "A valid form of identification that bears the photograph, name and address of the elector that reasonably appear to be the same as the name and address in the precinct register, including an Arizona driver license"
+  },
+  "registration": {
+   "rule": "no",
+   "deadline": "Monday, October 5, 2026 (registration must be received before midnight of the 29th day before the election), for online, mail, and in-person registration.",
+   "summary": "Your registration had to be received by midnight on October 5, 2026. Arizona does not offer same-day or Election Day registration.",
+   "source": "https://www.azleg.gov/ars/16/00120.htm",
+   "quote": "the registration has been received by the county recorder or the recorder's designee pursuant to section 16-134 before midnight of the twenty-ninth day preceding the date of the election."
+  },
+  "selfie": {
+   "rule": "limited",
+   "summary": "Posting an image of your own ballot is not a crime, but no one may take photos or videos within 75 feet of a polling place. A mail ballot photo is fine.",
+   "source": "https://www.azleg.gov/ars/16/00515.htm",
+   "quote": "Notwithstanding section 16-1018, a person may not take photographs or videos while within the seventy-five foot limit."
+  },
+  "notes": "azsos.gov returned 403 to fetches, so all four answers rest on Arizona Revised Statutes at azleg.gov. Selfie: ARS 16-1018(4) bans showing ANOTHER voter's ballot and says a voter who posts an image of their own ballot consents to retransmittal; ARS 16-515(G) bans photos within the 75-foot limit. Without qualifying ID you vote a provisional or conditional provisional ballot (ARS 16-579). The registration date was computed from the 29-day rule (Nov 3 minus 29 days = Oct 5); azsos.gov could not be checked for a published date. Arizona does not observe daylight saving time, but the Navajo Nation does; the statute does not address time zones."
+ },
+ "AR": {
+  "polls": {
+   "open": "7:30 a.m.",
+   "close": "7:30 p.m.",
+   "summary": "Polls are open 7:30 a.m. to 7:30 p.m. If you are in line at 7:30 p.m., you can still vote.",
+   "source": "https://www.sos.arkansas.gov/uploads/elections/2026_Election_Calendar_Rev._6-2025_.pdf",
+   "quote": "November 3, 2026 – Tuesday GENERAL ELECTION, NONPARTISAN RUNOFF ELECTION, AND ANNUAL SCHOOL RUNOFF ELECTION Polls open 7:30 am to 7:30 pm"
+  },
+  "id": {
+   "rule": "photo_required",
+   "summary": "You must show a photo ID, such as an Arkansas driver's license, a U.S. passport, or a concealed carry license. Without one, you vote provisionally and must show ID by the following Monday.",
+   "source": "https://www.sos.arkansas.gov/elections/voter-information/voter-registration-information/voting-in-arkansas",
+   "quote": "Provisional ID - If you voted provisional because of not having sufficient identification, you will have until the Monday after the election to provide identification to the County Clerkto have your vote counted"
+  },
+  "registration": {
+   "rule": "no",
+   "deadline": "Monday, October 5, 2026 (the 30-day deadline falls on Sunday, October 4, and moves to the next business day).",
+   "summary": "The deadline to register for the November 3 election was October 5, 2026. Arkansas does not offer same-day or Election Day registration.",
+   "source": "https://www.sos.arkansas.gov/uploads/elections/2026_Election_Calendar_Rev._6-2025_.pdf",
+   "quote": "October 4, 2026 – Sunday* 30 DAYS PRIOR TO THE GENERAL ELECTION Deadline to apply to register to vote in the General Election. ... The actual deadline will be Monday, October 5, 2026."
+  },
+  "selfie": null,
+  "notes": "Accepted IDs are listed in the State Board of Election Commissioners' 2026 Poll Worker Guide (sbec.arkansas.gov): AR driver's license or ID (including the Mobile ID app), concealed carry license, U.S. passport, military ID, college ID; may be expired up to 4 years. The poll worker guide says provisional ID voters can return 'before Monday at noon following the election'; the SOS page says 'until the Monday after the election.' Selfie: no Arkansas statute or official guidance found on ballot photos; the official code site is LexisNexis and could not be searched. The SOS pages offer only paper registration forms; I did not find an online registration option, but did not confirm in writing that none exists. 'No same-day registration' rests on the 30-day deadline in Ark. Code 7-5-201(a) and Amendment 51."
+ },
+ "CA": {
+  "polls": {
+   "open": "7 a.m.",
+   "close": "8 p.m.",
+   "summary": "Every voter gets a mail ballot. Polls and vote centers are open 7 a.m. to 8 p.m. on November 3. Drop off your ballot by 8 p.m., or mail it postmarked by November 3.",
+   "source": "https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026",
+   "quote": "November 3 is the last day to vote in-person or return a ballot by 8:00 p.m. Polls are open from 7:00 a.m. to 8:00 p.m."
+  },
+  "id": {
+   "rule": "no_id",
+   "summary": "Most voters don't need to show ID. Some first-time voters who registered by mail or online without an ID number may be asked for a license, passport, or utility bill.",
+   "source": "https://vigarchive.sos.ca.gov/2026/primary/voter-info/voter-id-registration-req.htm",
+   "quote": "Do I Need to Show ID to Vote in California? In most cases, NO. California does not generally require voters to show identification at the polls."
+  },
+  "registration": {
+   "rule": "yes",
+   "deadline": "Monday, October 19, 2026 to register online (the standard 15-day deadline). After that, Same Day Voter Registration (Conditional Voter Registration) is available at county elections offices, vote centers, and polling places through Election Day.",
+   "summary": "The regular deadline is October 19, 2026. After that, you can still register and vote the same day at your county elections office, a vote center, or a polling place.",
+   "source": "https://www.sos.ca.gov/elections/voter-registration/same-day-reg",
+   "quote": "Eligible citizens who need to register or re-register to vote within 14 days of an election can complete this process to register and vote at their county elections office, polling place, or vote center."
+  },
+  "selfie": {
+   "rule": "allowed",
+   "summary": "Since 2017, state law lets you photograph your own ballot and share it. Poll workers can still respond if photos disrupt voting, and you can't photograph voters entering or leaving.",
+   "source": "https://elections.cdn.sos.ca.gov/ccrov/pdf/2017/february/17014jl.pdf",
+   "quote": "A voter may now take a photograph of their ballot (a “ballot selfie”) and share it on social media."
+  },
+  "notes": "Deadline quote for Oct. 19 is on the SOS Nov. 3, 2026 page: 'The last day to register to vote online for November 3, 2026, General Election is October 19.' Mailed ballots must be postmarked by Nov. 3 and received within 7 days (SOS Where and How to Vote page). The ID page used is the SOS 2026 primary Voter Information Guide archive; the current-guide URL returned 403. Selfie source is SOS County Clerk memo #17014 (Feb. 2017) quoting Elections Code 14291(b) as amended by AB 1494; leginfo.legislature.ca.gov blocked fetching, so the code text was read through the memo. Elections Code 18541 bars photographing voters entering or exiting a polling place within 100 feet."
+ },
+ "CO": {
+  "polls": {
+   "open": null,
+   "close": "7 p.m.",
+   "summary": "Colorado votes by mail. Your ballot must reach your county clerk by 7 p.m. on November 3; postmarks don't count. Voter service and polling centers are open for in-person voting until 7 p.m.",
+   "source": "https://www.coloradosos.gov/pubs/elections/FAQs/ElectionDay.html",
+   "quote": "Postmarks do not count; ballots must be in the hands of the county clerk by 7:00 PM on Election Day in order to be counted."
+  },
+  "id": {
+   "rule": "id_nonphoto",
+   "summary": "If you vote in person, you must show ID. A Colorado driver's license or Colorado ID is most common, and many other forms are accepted. The address doesn't have to match.",
+   "source": "https://www.coloradosos.gov/pubs/elections/FAQs/ElectionDay.html",
+   "quote": "All voters who vote in-person must provide identification. While there are many forms of acceptable identification, most voters find it convenient to bring their Colorado driver's license or Colorado ID."
+  },
+  "registration": {
+   "rule": "yes",
+   "deadline": "Monday, October 26, 2026 (8th day before Election Day) to register online or by mail and still get a ballot by mail. After that, register in person at a voter service and polling center through Election Day.",
+   "summary": "Register online or by mail by October 26, 2026 to get a mail ballot. After that, you can register and vote in person at a voter service and polling center through Election Day.",
+   "source": "https://www.coloradosos.gov/pubs/elections/FAQs/VoterRegistrationFAQ.html",
+   "quote": "If you miss the above deadlines, you may register in-person at a voter service and polling center in your county through Election Day."
+  },
+  "selfie": {
+   "rule": "allowed",
+   "summary": "A 2017 law lets you show your voted ballot to others and share a photo of it. County clerks may set reasonable limits on photography at voting centers.",
+   "source": "https://leg.colorado.gov/bills/hb17-1014",
+   "quote": "any voter may show his or her voted ballot to any other person"
+  },
+  "notes": "Colorado runs all-mail elections, so 'open' is null: the FAQ gives the 7 p.m. deadline but no opening time for voter service and polling centers on Election Day, and opening hours vary by county. The Oct. 26 date is computed from 'through the 8th day before Election Day' (Nov. 3 minus 8 days); the FAQ gives the rule, not the date. Selfie: HB17-1014 (signed March 16, 2017, effective Aug. 9, 2017) removed the ban on showing a voted ballot; the quote comes from the bill summary on leg.colorado.gov, read through WebFetch."
+ },
+ "CT": {
+  "polls": {
+   "open": "6 a.m.",
+   "close": "8 p.m.",
+   "summary": "Polls are open 6 a.m. to 8 p.m. If you are in line by 8 p.m., you can vote. Same-day registration locations keep the same hours.",
+   "source": "https://portal.ct.gov/-/media/sots/early-voting/2026-voting-guide/2026_voter_guide-2-final-combined.pdf",
+   "quote": "Polls are open 6 a.m. – 8 p.m. • As long as you’re in line by 8 p.m., you can vote, and your vote will be counted."
+  },
+  "id": {
+   "rule": "id_nonphoto",
+   "summary": "You'll be asked for a Social Security card or any preprinted ID showing your name with your address, signature, or photo. If you have none, you can sign a statement instead.",
+   "source": "https://portal.ct.gov/-/media/sots/early-voting/2026-voting-guide/2026_voter_guide-2-final-combined.pdf",
+   "quote": "Social security card or any pre-printed form of ID showing the voter’s name together with his or her (1) address, (2) signature, or (3) photograph Alternative to ID Sign a statement on Form ED-681"
+  },
+  "registration": {
+   "rule": "yes",
+   "deadline": "Friday, October 16, 2026 for in-person (registrar of voters, until 8 p.m.), mail (postmarked), and online (by 11:59 p.m.). After that, Same Day Registration during early voting (October 19 to November 1) and on Election Day at your town's designated location.",
+   "summary": "The regular deadline was October 16, 2026. You can still register and vote the same day during early voting, October 19 to November 1, or on Election Day at your town's Same Day Registration location.",
+   "source": "https://portal.ct.gov/-/media/sots/electionservices/voterfactsheets/2026-voter-reg/voter-registration-deadlines-11-03-26pub.pdf",
+   "quote": "If you miss the October 16 voter registration deadline, you can still register and vote through Same Day Registration. Same Day Registration is available: • During all Early Voting hours (October 19 – November 1) • On Election Day, November 3"
+  },
+  "selfie": null,
+  "notes": "Changed recently: P.A. 23-5 (effective Jan. 1, 2024) moved the regular registration deadline from 7 days to 18 days before the election and added same-day registration during early voting. ID: an affidavit (Form ED-681) is accepted instead of ID, so this is arguably closer to 'ID requested'; first-time voters who registered by mail without ID verification must show photo ID or a document with name and address. Selfie: the 2026 SOTS Voter Guide only says media may not photograph how a voter marks a ballot; no statute or SOTS guidance on voters photographing their own ballots was found in CGS Title 9 chapters 143 to 157. Hours: CGS 9-174 (chapter 146) also sets 6 a.m. to 8 p.m."
+ },
+ "DE": {
+  "polls": {
+   "open": "7 a.m.",
+   "close": "8 p.m.",
+   "summary": "Polls are open 7 a.m. to 8 p.m. You must vote at your assigned polling place on Election Day.",
+   "source": "https://elections.delaware.gov/voter/waystovote.html",
+   "quote": "Voters must vote at their assigned Polling Place on Election Day. Polls are open 7 a.m. to 8 p.m."
+  },
+  "id": {
+   "rule": "id_nonphoto",
+   "summary": "You must show proof of identity, such as a photo ID, utility bill, or bank statement. If you don't have it with you, you can sign an affidavit and vote.",
+   "source": "https://delcode.delaware.gov/title15/c049/index.html",
+   "quote": "In the event the voter does not have proof of identity with them, the voter shall sign an affidavit of affirmation that the voter is the person listed on the election district record."
+  },
+  "registration": {
+   "rule": "no",
+   "deadline": "Saturday, October 10, 2026 at 11:59 p.m. (4th Saturday before the election). Mailed applications postmarked by the deadline count.",
+   "summary": "The deadline to register for the November 3 election was October 10, 2026, at 11:59 p.m. Delaware does not currently offer same-day or Election Day registration.",
+   "source": "https://elections.delaware.gov/voter/votereg.html",
+   "quote": "The 2026 General Election Voter Registration Deadline is Saturday, October 10, 2026, at 11:59 p.m."
+  },
+  "selfie": null,
+  "notes": "Changed recently: the Delaware Supreme Court struck down the 2022 same-day registration law in 2024 (Albence v. Higgin), so 'no' reflects current practice; the Department page gives only the Oct. 10 deadline and doesn't mention same-day registration. ID: 15 Del. C. 4937(a) requires 'proof of identity' with an affidavit alternative; the accepted-document list (photo ID, utility bill, bank statement, government check) is quoted on the Department's provisional ballot page. Selfie: no Title 15 provision on voters photographing or showing their ballot was found; Title 15 only tells election officers to make sure no mirror or camera can view the ballot. Registration quote was read at elections.delaware.gov/voter/votereg.shtml (the site's nav links to votereg.html)."
+ },
+ "DC": {
+  "polls": {
+   "open": "7 a.m.",
+   "close": "8 p.m.",
+   "summary": "Every registered voter is mailed a ballot. On November 3, vote centers are open 7 a.m. to 8 p.m., and you can vote at any one. Drop boxes close at 8 p.m. Mailed ballots must be postmarked by November 3.",
+   "source": "https://www.dcboe.org/voters/find-out-where-to-vote/election-day-vote-centers",
+   "quote": "2026 General Election Day Vote Centers Tuesday, November 3, 2026, from 7:00 a.m. to 8:00 p.m. Voters may cast their ballots AT ANY VOTE CENTER regardless of their residential address"
+  },
+  "id": {
+   "rule": "no_id",
+   "summary": "Most voters don't show ID. If you registered by mail or online for the first time, you may need to show ID with your name and address, like a photo ID or utility bill.",
+   "source": "https://www.dcboe.org/voters/register-to-vote/register-update-voter-registration",
+   "quote": "If you are registering to vote in the District of Columbia for the first time and submit a voter registration application by mail or electronically, you may be required to provide identification that shows your name and current address the first time you vote"
+  },
+  "registration": {
+   "rule": "yes",
+   "deadline": "Tuesday, October 13, 2026 (21 days before the election) for online and mail applications to be received. After that, register in person with proof of residence at an Early Vote Center or an Election Day Vote Center.",
+   "summary": "Online and mail registrations had to arrive by October 13, 2026. You can still register and vote the same day during early voting or on Election Day if you bring proof of residence.",
+   "source": "https://www.dcboe.org/getContentAsset/4d04f4a1-fb2a-4f8a-809f-d3f708f232df/5ebbd046-860b-4ee1-81c8-43d0e3bc446e/2026-General-Election-Calendar-Version-09292026.pdf?language=en",
+   "quote": "On Election Day, between the hours of 7:00 a.m. to 8:00 p.m., qualified electors may register to vote and cast full ballots in person at Vote Centers."
+  },
+  "selfie": null,
+  "notes": "The 2026 General Election Calendar (Rev. 10/1/2026) lists Oct. 13 as the 'Deadline for receipt of all voter registration applications ... except for those submitted in person at the Board or at voter registration agencies (21 days before the election)'. Mailed ballots must be postmarked by Election Day and received by Nov. 13, 2026. Selfie: no DC Code, DCMR, or DCBOE statement found; news reports quote a DCBOE spokesperson saying there is no ban, but that is not an official source."
+ },
+ "FL": {
+  "polls": {
+   "open": "7 a.m.",
+   "close": "7 p.m.",
+   "summary": "Polls are open 7 a.m. to 7 p.m. local time (Florida has two time zones). If you are in line at closing, you can vote.",
+   "source": "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0100/Sections/0100.011.html",
+   "quote": "The polls shall be open at the voting places at 7:00 a.m., on the day of the election, and shall be kept open until 7:00 p.m., of the same day, and the time shall be regulated by the customary time in standard use in the county seat of the locality."
+  },
+  "id": {
+   "rule": "photo_required",
+   "summary": "You must show a current photo ID with your signature, such as a Florida driver license, Florida ID card, or U.S. passport. Without one, you vote a provisional ballot.",
+   "source": "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0101/Sections/0101.043.html",
+   "quote": "The clerk or inspector shall require each elector, upon entering the polling place, to present one of the following current and valid picture identifications: 1. Florida driver license."
+  },
+  "registration": {
+   "rule": "no",
+   "deadline": "Monday, October 5, 2026 (29 days before the election).",
+   "summary": "The deadline to register for the November 3 election was October 5, 2026. Florida does not offer same-day or Election Day registration.",
+   "source": "https://dos.fl.gov/elections/for-voters/election-dates/",
+   "quote": "Deadline to register to vote: October 5, 2026"
+  },
+  "selfie": {
+   "rule": "allowed",
+   "summary": "You may photograph your own ballot. No other photography is allowed in the polling room or early voting area.",
+   "source": "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0102/Sections/0102.031.html",
+   "quote": "No photography is permitted in the polling room or early voting area, except an elector may photograph his or her own ballot."
+  },
+  "notes": "ID: Fla. Stat. 101.043 lists accepted photo IDs; if the photo ID lacks a signature, a second ID with a signature is required. The accepted-ID list was amended in recent sessions, so the statute site (leg.state.fl.us, current-year statutes) is the place to recheck. Fla. Stat. 102.031(5) permits photographing your own ballot; it does not separately address sharing it, and no ban on sharing was found. 'No same-day registration' rests on the 29-day deadline on the DOS registration page."
+ },
+ "MT": {
+  "polls": {
+   "open": "7 a.m.",
+   "close": "8 p.m.",
+   "summary": "Most polling places are open 7 a.m. to 8 p.m. A polling place with fewer than 400 voters may open as late as noon, and the county mails a notice if it does.",
+   "source": "https://archive.legmt.gov/bills/mca/title_0130/chapter_0010/part_0010/section_0060/0130-0010-0010-0060.html",
+   "quote": "Except as provided in subsections (2)(a) and (3), polling places must be open from 7 a.m. to 8 p.m."
+  },
+  "id": {
+   "rule": "photo_required",
+   "summary": "You must show a photo ID such as a Montana driver's license, state ID card, U.S. passport, or tribal photo ID. Other photo IDs work if paired with a utility bill or bank statement.",
+   "source": "https://archive.legmt.gov/bills/mca/title_0130/chapter_0130/part_0010/section_0140/0130-0130-0010-0140.html",
+   "quote": "a current utility bill, bank statement, paycheck, government check, or other government document that shows the elector's name and current address; and (B) photo identification that shows the elector's name."
+  },
+  "registration": {
+   "rule": "yes",
+   "deadline": "Regular registration closed October 5, 2026 (mail postmarked by then is accepted). Late registration at your county election office runs from October 6 through noon on Election Day, November 3, 2026.",
+   "summary": "Regular registration closed October 5. You can still register late at your county election office and vote there, up to noon on Election Day.",
+   "source": "https://archive.legmt.gov/bills/mca/title_0130/chapter_0020/part_0030/section_0040/0130-0020-0030-0040.html",
+   "quote": "In a federal election, an elector may register or change the elector's voter registration information after the close of regular registration ... (c) prior to noon on the day of the election."
+  },
+  "selfie": {
+   "rule": "allowed",
+   "summary": "Montana's Commissioner of Political Practices says taking a selfie with your own marked ballot and sharing it does not break state law.",
+   "source": "https://politicalpractices.mt.gov/_docs/2018-Advisory-Opinions/2018-AO-002-Ballot-Selfies-Final.pdf",
+   "quote": "Voluntarily taking a picture of yourself (a “selfie”) with your marked ballot and sharing the image on social media or with family and friends does not violate the prohibitions of Mont. Code Ann.§ 13-35-201."
+  },
+  "notes": "2025 law (Ch. 409) moved the Election Day late-registration cutoff to noon. SB 490 Saturday registration is blocked by court order per votemt.gov. sosmt.gov returned 403; statutes used. Selfie source is a 2018 advisory opinion (COPP), not a statute; polling-place photo policy beyond that not found. Online registration options were not checked."
+ },
+ "NE": {
+  "polls": {
+   "open": "8 a.m. Central / 7 a.m. Mountain",
+   "close": "8 p.m. Central / 7 p.m. Mountain",
+   "summary": "Nebraska spans two time zones. Polls are open 8 a.m. to 8 p.m. in the Central Time Zone and 7 a.m. to 7 p.m. in the Mountain Time Zone.",
+   "source": "https://sos.nebraska.gov/elections/election-day-faq",
+   "quote": "The polls are open from 8 a.m. to 8 p.m. in the Central Time Zone and from 7 a.m. to 7 p.m. in the Mountain Time Zone."
+  },
+  "id": {
+   "rule": "photo_required",
+   "summary": "You must show a photo ID with your name and photo, such as a Nebraska driver's license, state ID, or U.S. passport. It can be expired. Without one, you vote provisionally.",
+   "source": "https://sos.nebraska.gov/elections/voter-id",
+   "quote": "Yes, voters must present an acceptable form of photo ID before casting a ballot in every primary, general and special election."
+  },
+  "registration": {
+   "rule": "no",
+   "deadline": "Online by midnight and mail postmarked by Friday, October 16, 2026. In person at your county election office by 6 p.m. Friday, October 23, 2026.",
+   "summary": "Register online or by mail by October 16, or in person at your county election office by 6 p.m. October 23. Nebraska has no Election Day registration.",
+   "source": "https://sos.nebraska.gov/sites/default/files/doc/elections/2026/2026_Election_Calendar.pdf",
+   "quote": "23-Oct At 6 PM - last day for in-person voter registration. §32-302"
+  },
+  "selfie": {
+   "rule": "allowed",
+   "summary": "State law lets you photograph your own marked ballot and share the photo. No one may pressure you to show your ballot.",
+   "source": "https://nebraskalegislature.gov/laws/statutes.php?statute=32-1527",
+   "quote": "This subsection does not prohibit a voter from voluntarily photographing his or her ballot after it is marked and revealing such photograph in a manner that allows the photograph to be viewed by another person."
+  },
+  "notes": "Photo ID law LB514 took effect May 2024. Voters with a reasonable impediment can sign a certification and vote provisionally; provisional voters without ID can show ID at the county office by the Tuesday after the election. Election Day registration not offered (only presidential-only ballots for recent movers in presidential years). Polling-place photo policy beyond 32-1527 not found."
+ },
+ "NV": {
+  "polls": {
+   "open": "7 a.m.",
+   "close": "7 p.m.",
+   "summary": "Nevada mails a ballot to active voters, and in-person polling places are also open 7 a.m. to 7 p.m. on Election Day. Return a mail ballot by hand or drop box before polls close, or mail it postmarked by Election Day so it arrives by 5 p.m. on the fourth day after.",
+   "source": "https://www.leg.state.nv.us/nrs/nrs-293.html",
+   "quote": "at all elections held under the provisions of this title, the polls must open at 7 a.m. and close at 7 p.m."
+  },
+  "id": {
+   "rule": "no_id",
+   "summary": "Most registered voters do not show ID; you sign to vote. First-time voters who registered by mail or online without ID checks may need a photo ID or a utility bill or bank statement.",
+   "source": "https://www.leg.state.nv.us/nrs/nrs-293.html",
+   "quote": "May vote at a polling place only if the person presents to the election board officer at the polling place: (1) A current and valid photo identification of the person, which shows his or her physical address; or (2) A copy of a current utility bill"
+  },
+  "registration": {
+   "rule": "yes",
+   "deadline": "Mail and in person at the county clerk: Tuesday, October 6, 2026. Online: through Election Day, November 3, 2026. You can also register in person at an early voting site or at your polling place on Election Day.",
+   "summary": "Register by mail or at the county clerk by October 6, or online through Election Day. You can also register and vote in person during early voting or on Election Day.",
+   "source": "https://www.leg.state.nv.us/nrs/nrs-293.html",
+   "quote": "an elector may register to vote in person on the day of the election at any polling place in the county or city, as applicable, in which the elector is eligible to vote."
+  },
+  "selfie": {
+   "rule": "limited",
+   "summary": "State law bars members of the public from photographing voting at a polling place. No state law found that addresses photos of your own mail ballot.",
+   "source": "https://www.leg.state.nv.us/nrs/nrs-293.html",
+   "quote": "A member of the general public shall not photograph the conduct of voting at a polling place or record the conduct of voting on audiotape or any other means of sound or video reproduction."
+  },
+  "notes": "nvsos.gov blocked automated fetching (Incapsula), so all four answers come from NRS chapter 293 (page includes 2025 amendments). Mail ballot return quote is NRS 293.269921; registration deadlines NRS 293.560 (mail/in person fourth Tuesday before = Oct 6; online through Election Day). Voter ID: Question 7 (2024) passed once and is on the Nov 2026 ballot for a second vote; AB 499 (2025) was vetoed, so no ID rule applies for this election. Selfie rule is an inference from NRS 293.274; whether it applies to a voter's own ballot is not stated; SOS FAQ could not be checked."
+ },
+ "NH": {
+  "polls": {
+   "open": "No later than 11 a.m. (varies by town)",
+   "close": "No earlier than 7 p.m. (varies by town)",
+   "summary": "Hours vary by town and city. Polls must open by 11 a.m. and stay open until at least 7 p.m.; many open earlier. Check your town or city clerk for exact hours.",
+   "source": "https://gc.nh.gov/rsa/html/LXIII/659/659-4.htm",
+   "quote": "At all state elections in towns and cities the polls shall open not later than 11 o'clock in the morning and shall close not earlier than 7 o'clock in the evening."
+  },
+  "id": {
+   "rule": "photo_required",
+   "summary": "You must show a valid photo ID: a driver's license from any state, a state ID card, a U.S. military ID, or a U.S. passport. Without one, an election official must verify who you are.",
+   "source": "https://gc.nh.gov/rsa/html/LXIII/659/659-13.htm",
+   "quote": "If the supervisor of the checklist determines that the voter's qualifications and identity have not been established, the voter shall not be allowed to vote."
+  },
+  "registration": {
+   "rule": "yes",
+   "deadline": "Register with your town or city clerk before the supervisors of the checklist's last session, held 6 to 13 days before the election (about October 21 to 28, 2026, set by each town). You can also register at your polling place on Election Day, November 3, 2026.",
+   "summary": "Register with your town or city clerk before the last checklist session, 6 to 13 days before the election, or at your polling place on Election Day. You must bring proof of citizenship.",
+   "source": "https://gc.nh.gov/rsa/html/LXIII/654/654-7-a.htm",
+   "quote": "Any person whose name is not on the checklist but who is otherwise a qualified voter shall be entitled to vote by requesting to be registered to vote at the polling place on election day."
+  },
+  "selfie": null,
+  "notes": "sos.nh.gov blocks automated fetching (Akamai 403), so answers use RSA text. ID: 2024 law (Ch. 378, eff. Nov 11, 2024) removed the affidavit options; as of Sept 8, 2026 an official who personally knows you can attest to your identity. Registration now requires proof of citizenship (RSA 654:12), e.g., birth certificate, passport, or naturalization papers. Selfie: RSA 659:35 still says a voter may not photograph and share a marked ballot, but the First Circuit struck that ban down in Rideout v. Gardner (2016); no official SOS page confirming current enforcement was reachable, so left null. Do not publish 'not allowed' from the statute text alone."
+ },
+ "NJ": {
+  "polls": {
+   "open": "6 a.m.",
+   "close": "8 p.m.",
+   "summary": "Polls are open 6 a.m. to 8 p.m. on Election Day, November 3, 2026. In-person early voting runs October 24 to November 1.",
+   "source": "https://www.nj.gov/state/elections/assets/pdf/posters-bill-of-rights/2026-11-bill-of-rights-poster-english.pdf",
+   "quote": "11/03/26 General Election Day Polls Are Open From 6 A.M. - 8 P.M."
+  },
+  "id": {
+   "rule": "no_id",
+   "summary": "Most voters do not show ID. Some first-time voters who registered by mail without verified ID numbers must show ID, such as a driver's license or a utility bill, or vote provisionally.",
+   "source": "https://www.nj.gov/state/elections/assets/pdf/posters-bill-of-rights/2026-11-bill-of-rights-poster-english.pdf",
+   "quote": "If you DO NOT show the board workers any identification you CANNOT vote on the voting machine. You MUST vote with a provisional paper ballot."
+  },
+  "registration": {
+   "rule": "no",
+   "deadline": "October 13, 2026 (21 days before the election), online, by mail, or in person.",
+   "summary": "The deadline to register for the November 3 election was October 13, 2026. New Jersey does not offer Election Day registration.",
+   "source": "https://www.nj.gov/state/elections/voter-registration.shtml",
+   "quote": "The Voter Registration Deadline is 21 days before the election. General Election – October 13, 2026"
+  },
+  "selfie": {
+   "rule": "limited",
+   "summary": "State law says no one may show their ballot inside the polling room. No law found that addresses photos of a mail ballot at home.",
+   "source": "https://www.nj.gov/state/dos-statutes-elections-19-31-39.shtml",
+   "quote": "NJSA 19:34-7 Violation of ballot regulations No person shall within the polling room mark his ballot in a place other than in the polling booth or show his ballot"
+  },
+  "notes": "ID quote applies only to 'Need ID' voters listed on the poster (mail registrants after 2003 who never voted federally in the county, or whose numbers were not verified). Selfie: 19:34-7 bans showing a ballot in the polling room; news reports describe ballot selfies as illegal in NJ, and bills to allow them have stalled. No Division of Elections FAQ on selfies found."
+ },
+ "NM": {
+  "polls": {
+   "open": "7 a.m.",
+   "close": "7 p.m.",
+   "summary": "Polling locations are open 7 a.m. to 7 p.m. on Election Day. Mailed ballots must be received by 7 p.m. on Election Day.",
+   "source": "https://www.sos.nm.gov/wp-content/uploads/2026/06/2026-Important-General-Election-Dates.pdf",
+   "quote": "Polling locations will be open from 7:00 a.m. to 7:00 p.m. Check with your County Clerk for location information. Mailed ballots must be received by 7:00 p.m."
+  },
+  "id": {
+   "rule": "no_id",
+   "summary": "Most voters do not show ID. You state your name, year of birth, and registered address. First-time voters who registered by mail without ID must show one, such as a photo ID or utility bill.",
+   "source": "https://www.sos.nm.gov/voting-and-elections/voting-faqs/voting/",
+   "quote": "Otherwise, you will be asked to provide a verbal or written statement of identification including your name, year of birth, and registered address."
+  },
+  "registration": {
+   "rule": "yes",
+   "deadline": "Mail, agent, and online registration closed October 6, 2026 (28 days before). Same-day registration is available in person during early voting and at any polling location in your county on Election Day, November 3, 2026.",
+   "summary": "Regular registration closed October 6. You can still register and vote the same day at your County Clerk's office, some early voting sites, or any polling location in your county on Election Day.",
+   "source": "https://www.sos.nm.gov/voting-and-elections/voting-faqs/same-day-voter-registration-faq/",
+   "quote": "Any eligible voter in New Mexico can register to vote or update their voter registration and then vote on the same day at their County Clerk’s office or at any polling location in their county on Election Day"
+  },
+  "selfie": null,
+  "notes": "Same-day registration requires a physical ID (government, tribal, or school photo ID; plus a recent document if the address differs). The SOS voter registration FAQ still says late applications are held until after the election, which predates same-day registration; the SDR FAQ and the 2026 dates sheet both confirm Election Day SDR. The Oct 6 date comes from the 28-day rule and the SOS candidate guide summary; the dates PDF lost its date graphics in text extraction. Selfie: no official SOS or statute text found; news reports conflict (2016 'technically illegal', 2020 'allowed')."
+ },
+ "NY": {
+  "polls": {
+   "open": "6 a.m.",
+   "close": "9 p.m.",
+   "summary": "Polls are open 6 a.m. to 9 p.m. on Election Day, November 3, 2026. Early voting runs October 24 to November 1, with hours set by each county.",
+   "source": "https://elections.ny.gov/system/files/documents/2026/08/508_2026-state-of-new-york-election-law_v2.pdf",
+   "quote": "the general election from six o’clock in the morning until nine o’clock in the evening"
+  },
+  "id": {
+   "rule": "no_id",
+   "summary": "Most voters do not show ID; you sign the poll book. First-time voters who registered by mail without verified ID may need a photo ID, utility bill, bank statement, or paycheck.",
+   "source": "https://elections.ny.gov/system/files/documents/2026/08/508_2026-state-of-new-york-election-law_v2.pdf",
+   "quote": "presents to the appropriate election inspector, clerk or coordinator a current and valid photo identification; or ( ii ) presents ... a copy of a current utility bill, bank statement, government check, paycheck"
+  },
+  "registration": {
+   "rule": "no",
+   "deadline": "Your application must be received by your county board of elections by October 24, 2026. Address changes are due October 19.",
+   "summary": "Your registration must reach your county board of elections by October 24, 2026. New York does not offer Election Day registration.",
+   "source": "https://elections.ny.gov/system/files/documents/2025/12/2026-political-calendar-quad-fold-12.9.2025-final.pdf",
+   "quote": "Oct 24 Registration Deadline for General Election: Last day application must be received by BOE to be eligible to vote in General Election."
+  },
+  "selfie": {
+   "rule": "not_allowed",
+   "summary": "State law makes it a misdemeanor to show your marked ballot to anyone in a way that reveals your votes, which covers ballot selfies. A federal court upheld the ban at polling places.",
+   "source": "https://elections.ny.gov/system/files/documents/2026/08/508_2026-state-of-new-york-election-law_v2.pdf",
+   "quote": "10. Shows his ballot after it is prepared for voting, to any person so as to reveal the contents, or solicits a voter to show the same"
+  },
+  "notes": "elections.ny.gov blocks curl/WebFetch (403); pages and PDFs were read in Chrome. Election Law compilation is amended through Laws 2025, ch. 701. Registration deadline moved to 10 days before the election by 2022 law. ID quote is Election Law 8-303 (HAVA first-time mail registrants). Selfie: Election Law 17-130(10); Silberberg v. Board of Elections (S.D.N.Y. 2017) upheld the ban at polling sites. Whether BOE enforces it against mail-ballot photos is not stated; treat as not allowed per statute text. Section 17-130 is headed 'Misdemeanor in relation to elections.'"
+ },
+ "NC": {
+  "polls": {
+   "open": "6:30 a.m.",
+   "close": "7:30 p.m.",
+   "summary": "Polling places are open 6:30 a.m. to 7:30 p.m. on Election Day. If you are in line at 7:30 p.m., you can still vote.",
+   "source": "https://www.ncsbe.gov/voting/vote-person-election-day",
+   "quote": "Polling places will be open from 6:30 a.m. to 7:30 p.m. on Election Day. Any voter in line at their assigned polling place at 7:30 p.m. will be able to vote."
+  },
+  "id": {
+   "rule": "photo_requested",
+   "summary": "You will be asked for photo ID, such as a North Carolina driver's license, U.S. passport, or free voter photo ID card. If you cannot show one, you can fill out an ID Exception Form.",
+   "source": "https://www.ncsbe.gov/voting/voter-id",
+   "quote": "If a voter cannot show an acceptable photo ID when voting in person, they can still vote by filling out an ID Exception Form."
+  },
+  "registration": {
+   "rule": "early_only",
+   "deadline": "Friday, October 9, 2026 (25 days before Election Day). After that, you can register and vote the same day only at an early voting site during the early voting period.",
+   "summary": "The regular deadline is October 9, 2026. After that, you can register and vote at the same time during early voting, but not on Election Day.",
+   "source": "https://www.ncsbe.gov/registering/how-register",
+   "quote": "If you missed the voter registration deadline, you may still be able to register and vote or make changes (except for party affiliation) to your voter registration and vote during the early voting period."
+  },
+  "selfie": {
+   "rule": "not_allowed",
+   "summary": "State law bars photographing a voted ballot. It also bars photographing voters inside the voting area without permission from the voter and the chief judge.",
+   "source": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_163/GS_163-166.3.html",
+   "quote": "No person shall photograph, videotape, or otherwise record the image of a voted official ballot for any purpose not otherwise permitted under law."
+  },
+  "notes": "Photo ID enforced since 2024. With an ID Exception Form you vote provisionally, and county boards must count it if the form is truthfully completed. October 9 is computed from the 25-day rule on the SBE page (25 days before Nov 3 is Oct 9). G.S. 163-166.3(c) has no exception for your own ballot."
+ },
+ "ND": {
+  "polls": {
+   "open": "Between 7 a.m. and 9 a.m. local time (set by county or city)",
+   "close": "Between 7 p.m. and 9 p.m. local time (set by county or city)",
+   "summary": "Hours vary by county or city. Polls open by 9 a.m. (no earlier than 7 a.m.) and stay open until at least 7 p.m. (no later than 9 p.m.) local time. North Dakota spans two time zones.",
+   "source": "https://ndlegis.gov/cencode/t16-1c01.pdf",
+   "quote": "The polls at all primary, general, and special elections must be opened at nine a.m. or earlier, but not earlier than seven a.m."
+  },
+  "id": {
+   "rule": "id_nonphoto",
+   "summary": "You must show a North Dakota driver's license, nondriver ID card, or tribal ID with your name, current North Dakota address, and birth date. A utility bill or bank statement can fill in missing details.",
+   "source": "https://ndlegis.gov/cencode/t16-1c01.pdf",
+   "quote": "A qualified elector shall provide a valid form of identification to the proper election official before receiving a ballot for voting."
+  },
+  "registration": {
+   "rule": "yes",
+   "deadline": "No deadline. North Dakota has no voter registration; bring a valid ID showing your current residential address.",
+   "summary": "North Dakota has no voter registration. If you are eligible, you can vote on Election Day by showing a valid ID with your current address.",
+   "source": "https://www.sos.nd.gov/elections/voter/voting-north-dakota",
+   "quote": "North Dakota does not require voter registration, but you do need to have a valid form of identification that can be used for voting."
+  },
+  "selfie": null,
+  "notes": "No voter registration exists, so 'yes' is used for registration rule because eligible residents can vote on Election Day with ID; the page may want custom wording. ID: without valid ID you mark a set-aside ballot and must show ID within 13 days (before the canvassing board meets), per sos.nd.gov. The ID types do not have to carry a photo by statute (tribal IDs/letters, long-term care certificates), so classed id_nonphoto; it is stricter than most nonphoto states because supplemental documents only fill gaps in a listed ID. Selfie: no provision found in NDCC chapters 16.1-01, -05, -13, or -15, and no SOS guidance found."
+ },
+ "OH": {
+  "polls": {
+   "open": "6:30 a.m.",
+   "close": "7:30 p.m.",
+   "summary": "On Election Day, polls are open 6:30 a.m. to 7:30 p.m. You must vote at your assigned precinct polling place.",
+   "source": "https://www.ohiosos.gov/elections",
+   "quote": "On Election Day, you must cast your ballot in your precinct at your designated polling place between the hours of 6:30 a.m. and 7:30 p.m."
+  },
+  "id": {
+   "rule": "photo_required",
+   "summary": "You must show an unexpired photo ID, such as an Ohio driver's license, state ID card, U.S. passport, or military ID. Without one, you vote a provisional ballot.",
+   "source": "https://www.ohiosos.gov/elections",
+   "quote": "Ohio law requires voters to present a valid, unexpired photo ID that includes their name and photograph."
+  },
+  "registration": {
+   "rule": "no",
+   "deadline": "Monday, October 5, 2026 (30 days before; the 30th day falls on a Sunday, so the deadline moves to the next business day). Mail forms must be received or postmarked by then.",
+   "summary": "The deadline was October 5, 2026, online, by mail, or in person. Ohio has no same-day or Election Day registration.",
+   "source": "https://www.ohiosos.gov/elections/frequently-asked-questions",
+   "quote": "Ohio law requires registration at least 30 days before an election. If the deadline falls on a Sunday or legal holiday, it extends to the next business day."
+  },
+  "selfie": {
+   "rule": "limited",
+   "summary": "State law bars letting others see your ballot to show how you are about to vote. No official guidance was found on sharing a photo of your ballot after you vote.",
+   "source": "https://codes.ohio.gov/ohio-revised-code/section-3599.20",
+   "quote": "being an elector, allow the elector's ballot to be seen by another, except as provided by section 3505.24 of the Revised Code, with the apparent intention of letting it be known how the elector is about to vote"
+  },
+  "notes": "ohiosos.gov blocks curl (403); read in Chrome. Photo ID law HB 458 took effect April 2023; provisional voters without ID must show ID at the board of elections within four days (not quoted from the page). Oct 5 is computed from the 30-day rule. Selfie: R.C. 3599.20 wording is about a ballot 'about to' be voted; whether it reaches a post-voting selfie is unclear, and no SOS FAQ addresses it. Consider null if 'limited' overstates it."
+ },
+ "OK": {
+  "polls": {
+   "open": "7 a.m.",
+   "close": "7 p.m.",
+   "summary": "Polls are open 7 a.m. to 7 p.m. on Election Day.",
+   "source": "https://oklahoma.gov/elections/voters/how-to-vote.html",
+   "quote": "The polls are open 7 a.m. to 7 p.m."
+  },
+  "id": {
+   "rule": "id_nonphoto",
+   "summary": "You must show proof of identity: a current photo ID, such as a driver's license, or the free voter ID card your county election board mailed you. Without either, you can sign an affidavit and vote provisionally.",
+   "source": "https://oklahoma.gov/elections/voters/proof-of-identity.html",
+   "quote": "In addition, voters may use the free voter identification card they received by mail from the County Election Board when they registered to vote. The law allows use of the voter identification card even though it does not include a photograph."
+  },
+  "registration": {
+   "rule": "no",
+   "deadline": "Applications must be postmarked or delivered by Friday, October 9, 2026 (25 days before the election).",
+   "summary": "Your application must be postmarked by October 9, 2026. Registration then closes until after the election; Oklahoma has no Election Day registration.",
+   "source": "https://oklahoma.gov/elections/voters/voting-101.html",
+   "quote": "Voter registration is closed for 24 days prior to an election. Applications must be postmarked no later than 25 days prior to the election."
+  },
+  "selfie": {
+   "rule": "allowed",
+   "summary": "You may take a picture of your marked ballot, but do not post or share it until you are outside the election enclosure, where you check in and vote.",
+   "source": "https://oklahoma.gov/elections/voters/voting-101.html",
+   "quote": "Feel free to take a picture of your marked ballot – but don’t post your picture to social media or share it with anyone until you are outside of the election enclosure."
+  },
+  "notes": "Oct 9 is computed from the 25-day rule. The OK Voter Portal says you can register or update registration there. Selfie guidance adds that disclosing your vote inside the election enclosure is a crime."
+ }
+}
