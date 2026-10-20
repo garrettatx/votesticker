@@ -62,6 +62,18 @@ IndexNow: two key files deploy to the site root, `site/f691b1b3d7674b378f82c72b1
 submits only URLs whose sitemap `<lastmod>` changed since the last run (`build/indexnow-sent.json`,
 commit it too). `--dry-run` lists them, `--all` resends everything.
 
+## Analytics and Verification
+
+- **GA4** `G-PZWZTXDSDE` and **Ahrefs Web Analytics** (`analytics.ahrefs.com`) load from the template head.
+- **Bing Webmaster Tools:** verified by the DNS-only CNAME `41b5c37d4b0f8e8d036bdff704183665` →
+  `verify.bing.com`, plus the `msvalidate.01` meta on the English home page.
+- **Ahrefs Bot Analytics** (connected October 20, 2026): Cloudflare Worker method, which works on the
+  Free plan (Logpush needs Enterprise). Ahrefs deployed the worker
+  `ahrefs--bot-analytics--c6a56ff243ba3a00f3280a31c64aff5e` with the zone route `*votesticker.org/*`,
+  `request_limit_fail_open: true`. Every request runs the worker and counts toward the account's
+  100,000 Workers requests a day; past that the site still serves and only bot data pauses. The setup
+  token is Garrett's and is never stored in this repo. To remove: delete the route, then the worker.
+
 `build/lastmod.json` keeps each page's content hash and the date it last changed, so the sitemap's
 `<lastmod>` moves only when a page really changes. Commit it with each build.
 
