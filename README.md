@@ -53,10 +53,29 @@ python3 -I scripts/qa_seo.py --base http://127.0.0.1:8792/ --no-legacy
 node scripts/qa_cards.mjs --base http://127.0.0.1:8792/
 wrangler pages deploy dist --project-name votesticker --branch main
 python3 -I scripts/qa_seo.py            # live, including the old garrettn.com/vote/ redirects
+python3 -I scripts/qa_es.py             # Spanish pairs
+node scripts/qa_devices.mjs --base https://votesticker.org/   # iPhone, iPad, Android, both languages
 ```
 
 `build/lastmod.json` keeps each page's content hash and the date it last changed, so the sitemap's
 `<lastmod>` moves only when a page really changes. Commit it with each build.
+
+## Spanish (/es/)
+
+Every page has a Spanish pair at `/es/<state>/` with the same English slug. One template, one
+dictionary: `site/i18n/es.php` holds the Spanish strings (keyed by the English), Spanish state names,
+and the 30 state notes. Register, glossary, and reviewer questions: `docs/spanish-style.md`.
+
+- Spanish pages show no ready-made sets (they are English images); they open on the maker, which
+  defaults to Spanish messages. Header and showcase art are Spanish stickers drawn by `app.js`.
+- Language switch on every page goes to the exact pair; the English home page suggests Spanish once to
+  browsers that prefer it, and an explicit choice is remembered. Nothing redirects.
+- **Review gate:** `VOTE_ES_INDEX` in `site/index.php` is `false` until a native speaker signs off.
+  Spanish pages are then `noindex`, out of the sitemap, and no page carries hreflang. Flip it, rebuild,
+  run QA, deploy.
+- Spanish share cards: `node build/og_cards.mjs http://127.0.0.1:8791/ es`.
+- QA: `python3 -I scripts/qa_es.py [--base]` checks every pair (lang, canonical, hreflang gate, switch,
+  links staying in /es/, leftover English, structural parity, sitemap).
 
 ## Adding Ready-Made Designs
 

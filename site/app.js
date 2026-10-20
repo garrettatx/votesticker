@@ -84,26 +84,43 @@
 		ivoted: { label: 'I voted', lines: ['I VOTED'], stateLine: true },
 		mailed: { mail: true, label: 'I voted by mail', lines: ['I VOTED', 'BY MAIL'], stateLine: true },
 		voted: { early: true, label: 'I voted early', lines: ['I VOTED', 'EARLY'] },
-		// Spanish (October 19): the informal tú form used in Mexican and US Latino voter outreach. Date bars
+		// Spanish (October 19): tú, per the project glossary (docs/spanish-style.md); "Ya voté" is the
+		// everyday Mexican phrasing for "I voted". Date bars
 		// put the day first ("19–30 OCT", "HASTA EL 27 OCT").
 		votatemprano: { early: true, es: true, label: 'Vota temprano (español)', lines: ['VOTA', 'TEMPRANO'] },
 		votacorreo: { mail: true, es: true, label: 'Vota por correo (español)', lines: ['VOTA', 'POR CORREO'] },
 		vota3nov: { dated: true, es: true, label: 'Vota 3 de nov (español)', lines: ['VOTA', '3 DE NOV'] },
-		yovote: { es: true, label: 'Yo voté (español)', lines: ['YO VOTÉ'], stateLine: true },
-		yovotetemprano: { early: true, es: true, label: 'Yo voté temprano (español)', lines: ['YO VOTÉ', 'TEMPRANO'] },
-		yovotecorreo: { mail: true, es: true, label: 'Yo voté por correo (español)', lines: ['YO VOTÉ', 'POR CORREO'], stateLine: true },
+		yavote: { es: true, label: 'Ya voté (español)', lines: ['YA VOTÉ'], stateLine: true },
+		yavotetemprano: { early: true, es: true, label: 'Ya voté temprano (español)', lines: ['YA VOTÉ', 'TEMPRANO'] },
+		yavotecorreo: { mail: true, es: true, label: 'Ya voté por correo (español)', lines: ['YA VOTÉ', 'POR CORREO'], stateLine: true },
+		voyavotar: { es: true, label: 'Voy a votar (español)', lines: ['VOY A', 'VOTAR'], stateLine: true },
 	};
+
+	// Language (October 19): the page sets VOTE_LANG and VOTE_T (maker strings from the same dictionary as
+	// the page, i18n/es.php). T('English %s', value) returns the translation with values filled in.
+	var LANG = window.VOTE_LANG || 'en';
+	function T(key) {
+		var out = (window.VOTE_T || {})[key] || key, args = Array.prototype.slice.call(arguments, 1);
+		return out.replace(/%s/g, function () { return args.length ? String(args.shift()) : ''; });
+	}
+	// A state's name in the page language (Spanish names come from the page's VOTE_META).
+	function nameOf(st) { return ((window.VOTE_META || {})[st.abbr] || {}).name || st.name; }
 
 	function hasEarly(st) { return st.status === 'verified' && st.kind !== 'none'; }
 	function headlinesFor(st) {
-		return Object.keys(HEADLINES).filter(function (k) {
+		var keys = Object.keys(HEADLINES).filter(function (k) {
 			var h = HEADLINES[k];
 			return (!h.early || hasEarly(st)) && (!h.mail || (hasEarly(st) && st.kind === 'mail'));
 		});
+		// Spanish pages list the Spanish messages first.
+		return LANG === 'es' ? keys.filter(function (k) { return HEADLINES[k].es; }).concat(keys.filter(function (k) { return !HEADLINES[k].es; })) : keys;
 	}
 	// The state's own message (VOTE EARLY, VOTE BY MAIL, VOTE NOV 3): share images and the ready-made sets.
 	function stateHeadline(st) { return !hasEarly(st) ? 'nov3' : st.kind === 'mail' ? 'mail' : 'early'; }
-	function defaultHeadline(st) { return stateHeadline(st); }
+	function defaultHeadline(st) {
+		var k = stateHeadline(st);
+		return LANG === 'es' ? { early: 'votatemprano', mail: 'votacorreo', nov3: 'vota3nov' }[k] : k;
+	}
 	function headlineLines(key, st) {
 		var h = HEADLINES[key] || HEADLINES.nov3;
 		return typeof h.lines === 'function' ? h.lines(st) : h.lines;
@@ -145,7 +162,7 @@
 		if (hd && hd.es && !hd.stateLine) { return spanishDateLine(st, hd); }
 		if (hd && hd.dated) { return 'ELECTION DAY'; }
 		// Short enough to read in a thumbnail: the name up to 10 letters, else the postal code (NC 2026).
-		if (headline && HEADLINES[headline] && HEADLINES[headline].stateLine) { return (st.name.length <= 10 ? st.name.toUpperCase() : st.abbr) + ' ' + ELECTION.day.slice(0, 4); }
+		if (headline && HEADLINES[headline] && HEADLINES[headline].stateLine) { var nm = HEADLINES[headline].es ? nameOf(st) : st.name; return (nm.length <= 10 ? nm.toUpperCase() : st.abbr) + ' ' + ELECTION.day.slice(0, 4); }
 		if (!hasEarly(st)) { return electionLine(); }
 		if (st.dateLine) { return st.dateLine; }
 		if (st.kind === 'mail') { return 'DUE ' + shortDate(day(st.end)); }
@@ -157,11 +174,11 @@
 	var MESES = { JAN: 'ENE', APR: 'ABR', AUG: 'AGO', SEP: 'SEPT', DEC: 'DIC' };
 	function mes(d) { var m = MONTHS[d.getMonth()]; return MESES[m] || m; }
 	function spanishDateLine(st, hd) {
-		if (hd.dated || !hasEarly(st)) { return 'DÍA DE ELECCIONES'; }
+		if (hd.dated || !hasEarly(st)) { return 'DÍA DE LAS ELECCIONES'; }
 		if (st.kind === 'mail') { return 'HASTA EL ' + day(st.end).getDate() + ' ' + mes(day(st.end)); }
 		var by = /^BY ([A-Z]{3}) (\d+)$/.exec(st.dateLine || '');
 		if (by) { return 'HASTA EL ' + by[2] + ' ' + (MESES[by[1]] || by[1]); }
-		if (!st.start || !st.end) { return 'DÍA DE ELECCIONES'; }
+		if (!st.start || !st.end) { return 'DÍA DE LAS ELECCIONES'; }
 		var a = day(st.start), b = day(st.end);
 		return a.getMonth() === b.getMonth() ? a.getDate() + '–' + b.getDate() + ' ' + mes(b) : a.getDate() + ' ' + mes(a) + '–' + b.getDate() + ' ' + mes(b);
 	}
@@ -442,9 +459,9 @@
 		} catch (e) { return false; }
 	})();
 	var TIPS = {
-		ios: SHARE_TO_PHOTOS ? 'Tap Save to Photos, then Save Image. Then set it as your profile picture from Photos.' : 'Tap Open image, press and hold the picture, and choose Save to Photos.',
-		android: 'The picture saves to your Downloads. Set it as your profile picture from there.',
-		desktop: 'The picture saves to your Downloads folder.'
+		ios: SHARE_TO_PHOTOS ? T('Tap Save to Photos, then Save Image. Then set it as your profile picture from Photos.') : T('Tap Open image, press and hold the picture, and choose Save to Photos.'),
+		android: T('The picture saves to your Downloads. Set it as your profile picture from there.'),
+		desktop: T('The picture saves to your Downloads folder.')
 	};
 
 	var current = { blob: null, url: null, name: '' };
@@ -481,49 +498,8 @@
 		return { state: state.state, design: state.design, palette: state.palette, headline: state.headline, dateText: state.dateText.toUpperCase() };
 	}
 
-	function infoHtml(st) {
-		var lookup = 'https://www.vote411.org/' + slug(st.name);
-		var eday = 'Election Day is ' + ELECTION.label + '.';
-		if (st.status !== 'verified') {
-			return '<h2>Vote by ' + shortDate(day(ELECTION.day)).replace(/^(\w)(\w+)/, function (m, a, b) { return a + b.toLowerCase(); }) + '</h2><p>We haven’t checked ' + esc(st.name) + '’s early voting dates yet, so these stickers say Election Day. ' +
-				'Look up your dates and polling place at <a href="' + lookup + '" target="_blank" rel="noopener">Vote411</a> ' +
-				'(League of Women Voters) or your state election office.</p><p>' + eday + '</p>';
-		}
-		var html = '<h2>' + (st.kind === 'mail' ? 'Vote by mail' : st.kind === 'none' ? 'Vote on Election Day' : 'Vote early') + '</h2><p><b>';
-		if (st.summary) {
-			html += esc(st.summary);
-		} else if (st.kind === 'mail') {
-			html += esc(st.name) + ' votes by mail. Return your ballot by ' + longDate(day(st.end)) + '.';
-		} else if (st.kind === 'none') {
-			html += esc(st.name) + ' doesn\u2019t have early voting open to everyone. Most voters vote on Election Day, ' + ELECTION.label + '.';
-		} else {
-			html += 'Early voting in ' + esc(st.name) + ' runs ' + longDate(day(st.start)) + ' to ' + longDate(day(st.end)) + '.';
-		}
-		html += '</b> ' + (st.kind === 'none' ? '' : eday) + '</p>';
-		if (st.note) { html += '<p>' + esc(st.note) + '</p>'; }
-		html += '<p><a class="official" href="' + esc(st.officialUrl) + '" target="_blank" rel="noopener"><span><b>Official ' + esc(st.name) + ' voting information</b><small>' + (st.kind === 'none' ? 'Absentee rules and polling places at ' : 'Polling places and hours at ') + esc(st.officialLabel) + '</small></span></a></p>';
-		html += '<p class="source">Dates from the <a href="' + esc(st.sourceUrl) + '" target="_blank" rel="noopener">state election office</a>, checked ' +
-			longDate(day(st.checked)).replace(/^\w+, /, '') + ', ' + st.checked.slice(0, 4) + '.</p>';
-		return html;
-	}
-
-	function postText(st) {
-		if (st.status === 'verified' && st.summary) {
-			return st.summary + ' Details at ' + st.officialLabel + '.';
-		}
-		if (st.status === 'verified' && st.kind === 'mail') {
-			return st.name + ' votes by mail. Return your ballot by ' + MONTHS_LONG[day(st.end).getMonth()] + ' ' + day(st.end).getDate() + '. Details at ' + st.officialLabel + '.';
-		}
-		if (st.status === 'verified' && st.kind === 'in-person') {
-			var a = day(st.start), b = day(st.end);
-			var range = MONTHS_LONG[a.getMonth()] + ' ' + a.getDate() + ' to ' + (a.getMonth() === b.getMonth() ? '' : MONTHS_LONG[b.getMonth()] + ' ') + b.getDate();
-			return 'Early voting in ' + st.name + ' runs ' + range + '. Find your polling place at ' + st.officialLabel + '.';
-		}
-		if (st.status === 'verified' && st.kind === 'none') {
-			return 'Election Day in ' + st.name + ' is ' + ELECTION.label + '. Make a plan to vote. Polling places and absentee rules are at ' + st.officialLabel + '.';
-		}
-		return 'Election Day is ' + ELECTION.label + '. Make a plan to vote, and check whether you can vote early in ' + st.name + ' at vote411.org.';
-	}
+	// The state panel and suggested post text are rendered by index.php in the page's language (October 19);
+	// this script no longer rebuilds them.
 
 	function buildGrid() {
 		var grid = $('grid');
@@ -535,7 +511,7 @@
 				b.className = 'tile';
 				b.dataset.design = d.id;
 				b.dataset.palette = p.id;
-				b.setAttribute('aria-label', d.name + ', ' + p.name);
+				b.setAttribute('aria-label', T(d.name) + ', ' + T(p.name));
 				b.setAttribute('aria-pressed', String(d.id === state.design && p.id === state.palette));
 				var c = document.createElement('canvas');
 				b.appendChild(c);
@@ -592,17 +568,15 @@
 		headlinesFor(st).forEach(function (k) {
 			var o = document.createElement('option');
 			o.value = k;
-			o.textContent = k === 'state' ? (st.abbr === 'DC' ? 'DC' : st.name) + ' votes' : HEADLINES[k].label;
+			o.textContent = T(HEADLINES[k].label);
 			headSel.appendChild(o);
 		});
 		if (!keepDate || headlinesFor(st).indexOf(state.headline) < 0) { state.headline = defaultHeadline(st); }
 		headSel.value = state.headline;
 		if (!keepDate) { state.dateText = defaultDateLine(st, state.headline); state.dateEdited = false; }
 		$('date').value = state.dateText;
-		$('info').innerHTML = infoHtml(st);
-		$('post-text').value = postText(st);
-		var plain = (st.status === 'verified' ? (st.summary || $('info').querySelector('b').textContent) : st.name + ': Election Day is ' + ELECTION.label + '.') +
-			(st.status === 'verified' ? ' Official info: ' + st.officialLabel : '');
+		var lead = $('info').querySelector('b');
+		var plain = st.status === 'verified' && lead ? lead.textContent + ' ' + T('Official info: ') + st.officialLabel : nameOf(st) + ': ' + T('Election Day is %s.', T(ELECTION.label));
 		$('summary').textContent = plain;
 		setAlt();
 		showGallery(st);
@@ -616,9 +590,10 @@
 		var files = (window.VOTE_GALLERY || {})[st.abbr] || [];
 		$('gallery').hidden = !files.length;
 		// States with ready-made pictures lead with them; the maker follows as "Or Make Your Own" (October 19).
-		$('gallery-h').textContent = 'Ready-Made ' + st.name + ' Stickers';
-		$('maker-h').textContent = files.length ? 'Or Make Your Own' : 'Make Your ' + st.name + ' Sticker';
-		$('maker-h').classList.toggle('maker-h--first', !files.length);
+		$('gallery-h').textContent = T('Ready-Made %s Stickers', nameOf(st));
+		var first = !files.length;
+		$('maker-h').textContent = first ? T('Make Your %s Sticker', nameOf(st)) : T('Or Make Your Own');
+		$('maker-h').classList.toggle('maker-h--first', first);
 		document.body.classList.toggle('has-gallery', !!files.length);
 		var grid = $('gallery-grid');
 		grid.innerHTML = '';
@@ -631,7 +606,7 @@
 			a.download = name;
 			var img = document.createElement('img');
 			img.src = src;
-			img.alt = st.name + ' vote picture, hand-made design ' + (i + 1);
+			img.alt = T('%s vote picture, hand-made design %s', nameOf(st), i + 1);
 			img.width = img.height = 1080;
 			img.loading = 'lazy';
 			a.appendChild(img);
@@ -641,18 +616,49 @@
 
 	function setAlt() {
 		var st = byAbbr[state.state];
-		$('preview').alt = 'Profile picture: ' + headlineLines(state.headline, st).join(' ') + ', ' + st.name + '. ' + $('summary').textContent;
+		$('preview').alt = T('Profile picture: ') + headlineLines(state.headline, st).join(' ') + ', ' + nameOf(st) + '. ' + $('summary').textContent;
 	}
 
 	function redraw() { drawGrid(); drawPreview(); }
 
+	// Language choice: an explicit click on English/Español is remembered in this browser. The English
+	// home page suggests Spanish once to a browser that prefers it; nothing ever redirects.
+	function language() {
+		var get = function () { try { return localStorage.getItem('vote-sticker:lang'); } catch (e) { return null; } };
+		var set = function (v) { try { localStorage.setItem('vote-sticker:lang', v); } catch (e) { /* private window */ } };
+		Array.prototype.forEach.call(document.querySelectorAll('[data-lang-choice]'), function (a) {
+			a.addEventListener('click', function () { set(a.getAttribute('data-lang-choice')); });
+		});
+		var bar = $('lang-suggest');
+		if (!bar) { return; }
+		var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ''];
+		if (!get() && /^es\b/i.test(langs[0] || '')) { bar.hidden = false; }
+		$('lang-suggest-no').addEventListener('click', function () { set('en'); bar.hidden = true; });
+	}
+
+	// Spanish pages: the header and showcase art become Spanish stickers drawn here (the ready-made sets
+	// are English images).
+	function spanishArt() {
+		if (LANG !== 'es') { return; }
+		Array.prototype.forEach.call(document.querySelectorAll('img[data-es-state]'), function (img) {
+			var st = byAbbr[img.getAttribute('data-es-state')];
+			if (!st) { return; }
+			var c = document.createElement('canvas'), h = defaultHeadline(st);
+			render(c, 720, { state: st.abbr, design: 'sticker', palette: 'state', headline: h, dateText: defaultDateLine(st, h) });
+			img.src = c.toDataURL('image/png');
+			img.removeAttribute('loading');
+		});
+	}
+
 	function init() {
+		language();
+		spanishArt();
 		finder();
 		var headSel = $('headline');
 		$('circle').checked = state.circle;
 		document.body.classList.toggle('as-circle', state.circle);
 		$('tip').textContent = TIPS[DEVICE];
-		$('save').textContent = SHARE_TO_PHOTOS ? 'Save to Photos' : 'Download picture';
+		$('save').textContent = SHARE_TO_PHOTOS ? T('Save to Photos') : T('Download picture');
 		wireSave($('save'));
 		buildGrid();
 
@@ -692,7 +698,7 @@
 		});
 		$('copy').addEventListener('click', function () {
 			var t = $('post-text');
-			var done = function () { $('copy').textContent = 'Copied'; setTimeout(function () { $('copy').textContent = 'Copy post text'; }, 2000); };
+			var done = function () { $('copy').textContent = T('Copied'); setTimeout(function () { $('copy').textContent = T('Copy post text'); }, 2000); };
 			if (navigator.clipboard && navigator.clipboard.writeText) {
 				navigator.clipboard.writeText(t.value).then(done, function () { t.select(); document.execCommand('copy'); done(); });
 			} else { t.select(); document.execCommand('copy'); done(); }
@@ -709,12 +715,12 @@
 					navigator.share({ title: shareTitle, url: shareUrl }).catch(function () {});
 					return;
 				}
-				var copied = function () { said('Link copied'); };
+				var copied = function () { said(T('Link copied')); };
 				var fallback = function () {
 					var t = document.createElement('textarea');
 					t.value = shareUrl; t.setAttribute('readonly', ''); t.style.position = 'fixed'; t.style.left = '-9999px';
 					document.body.appendChild(t); t.select();
-					try { document.execCommand('copy'); copied(); } catch (e) { said('Copy this: ' + shareUrl); }
+					try { document.execCommand('copy'); copied(); } catch (e) { said(T('Copy this: ') + shareUrl); }
 					document.body.removeChild(t);
 				};
 				if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(shareUrl).then(copied, fallback); } else { fallback(); }
@@ -733,13 +739,14 @@
 		if (!input) { return; }
 		var meta = window.VOTE_META || {}, matches = [], active = -1;
 		var visit = function (abbr) { if (meta[abbr]) { window.location.href = (window.VOTE_BASE || '/') + meta[abbr].slug + '/'; } };
+		// Accent-free matching, on the page-language name and the English name ("nueva", "new", "nuev").
+		var fold = function (x) { return x.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z ]/g, ''); };
 		var find = function (q) {
-			q = q.trim().toLowerCase().replace(/[^a-z ]/g, '');
+			q = fold(q.trim());
 			if (!q) { return []; }
 			var code = q.length === 2 ? STATES.filter(function (s) { return s.abbr.toLowerCase() === q; }) : [];
 			var words = STATES.filter(function (s) {
-				var n = s.name.toLowerCase().replace(/[^a-z ]/g, '');
-				return n.indexOf(q) === 0 || n.indexOf(' ' + q) > 0;
+				return [nameOf(s), s.name].some(function (nm) { var n = fold(nm); return n.indexOf(q) === 0 || n.indexOf(' ' + q) > 0; });
 			});
 			return code.concat(words.filter(function (s) { return code.indexOf(s) < 0; })).slice(0, 8);
 		};
@@ -758,7 +765,7 @@
 				li.setAttribute('role', 'option');
 				li.setAttribute('aria-selected', 'false');
 				var nm = document.createElement('span');
-				nm.textContent = s.name;
+				nm.textContent = nameOf(s);
 				var st = document.createElement('span');
 				st.className = 'finder__status';
 				st.textContent = (meta[s.abbr] || {}).status || '';
@@ -770,7 +777,7 @@
 			if (!matches.length && input.value.trim()) {
 				var none = document.createElement('li');
 				none.className = 'finder__none';
-				none.textContent = 'No state matches. Try the full name.';
+				none.textContent = T('No state matches. Try the full name.');
 				list.appendChild(none);
 			}
 			var open = !!input.value.trim();

@@ -57,12 +57,14 @@ def main():
         shutil.copy2(src, dst)
         copied += 1
 
-    pages = {'': render()}
+    # English at the root, Spanish under es/ (same template, same states).
+    pages = {'': render(), 'es/': render('es')}
     for r in rows:
         s = slug(r['name'])
-        if not (SITE / s / 'index.php').exists():
-            raise SystemExit(f'missing state folder site/{s}/ (run build/state_pages.py)')
+        if not (SITE / s / 'index.php').exists() or not (SITE / 'es' / s / 'index.php').exists():
+            raise SystemExit(f'missing state folder site/{s}/ or site/es/{s}/ (run build/state_pages.py)')
         pages[s + '/'] = render(s)
+        pages['es/' + s + '/'] = render('es/' + s)
     for path, html in pages.items():
         d = DIST / path
         d.mkdir(parents=True, exist_ok=True)
@@ -87,6 +89,7 @@ def main():
     xml.append('</urlset>')
     (DIST / 'sitemap.xml').write_text('\n'.join(xml) + '\n')
     (DIST / '404.html').write_text(render('404'))
+    (DIST / 'es' / '404.html').write_text(render('es/404'))  # Pages serves the nearest 404.html
     (DIST / 'robots.txt').write_text(f'User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}sitemap.xml\n')
     print(f'dist/: {copied} files copied, {len(pages)} pages rendered, sitemap {len(urls)} URLs')
 

@@ -5,13 +5,19 @@
  *   php build/render.php            the hub
  *   php build/render.php texas      one state, by its folder name
  *   php build/render.php 404        the not-found page
+ *   php build/render.php es/texas   the Spanish page (also: es, es/404)
  *
  * Same code path as the live PHP pages: index.php only sees VOTE_SLUG, as a state folder's stub sets it.
  */
-if ( isset( $argv[1] ) && '404' === $argv[1] ) {
-	define( 'VOTE_404', true );
-} elseif ( isset( $argv[1] ) && $argv[1] !== '' ) {
-	define( 'VOTE_SLUG', $argv[1] );
+$arg = $argv[1] ?? '';
+if ( 'es' === $arg || 0 === strpos( $arg, 'es/' ) ) {
+	define( 'VOTE_LANG', 'es' );
+	$arg = (string) substr( $arg, 3 );
 }
-$_SERVER['REQUEST_URI'] = '/';
+if ( '404' === $arg ) {
+	define( 'VOTE_404', true );
+} elseif ( '' !== $arg ) {
+	define( 'VOTE_SLUG', $arg );
+}
+$_SERVER['REQUEST_URI'] = defined( 'VOTE_LANG' ) ? '/es/' : '/';
 require dirname( __DIR__ ) . '/site/index.php';

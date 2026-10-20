@@ -412,3 +412,14 @@ select:hover, input:hover, textarea:hover { border-color: #A79D86; }
 /* 404: a plain way home under the finder. */
 .home-link { margin: var(--s4) 0 0; font-size: var(--fs-sm); }
 .home-link a { color: var(--cream); font-weight: 700; }
+
+/* Language (October 19): English/Español switch beside the brand, and a one-time Spanish suggestion
+   on the English home page for browsers that prefer Spanish. */
+.top__bar { display: flex; align-items: center; justify-content: space-between; gap: var(--s3); margin: 0 0 var(--s5); }
+.top__bar .brand { margin: 0; min-width: 0; }
+.lang-switch { flex: none; display: inline-flex; align-items: center; min-height: 40px; padding: 6px 14px; border: 1.5px solid #7D8DB6; border-radius: 999px; color: var(--cream); font-size: var(--fs-sm); font-weight: 700; text-decoration: none; }
+.lang-switch:hover { background: var(--cream); border-color: var(--cream); color: var(--ink); }
+.lang-suggest { background: #FBF0D2; border-bottom: 1px solid #E8D59C; color: var(--ink); }
+.lang-suggest .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s2) var(--s4); padding-top: var(--s3); padding-bottom: var(--s3); }
+.lang-suggest p { margin: 0; font-weight: 700; }
+.lang-suggest .btn { min-height: 40px; padding: 6px 16px; }

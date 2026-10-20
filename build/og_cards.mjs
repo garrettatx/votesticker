@@ -7,10 +7,14 @@ import { chromium } from 'playwright';
 import fs from 'node:fs';
 import path from 'node:path';
 const BASE = process.argv[2] || 'http://127.0.0.1:8791/';
+// Spanish cards (October 19): node build/og_cards.mjs <base> es  writes assets/og/es/<slug>.jpg and og-hub-es.jpg.
+const LANG = process.argv[3] === 'es' ? 'es' : 'en';
+const ES = LANG === 'es';
 const SITE = path.join(path.dirname(new URL(import.meta.url).pathname), '../site');
-fs.mkdirSync(path.join(SITE, 'assets/og'), { recursive: true });
+const OGDIR = path.join(SITE, ES ? 'assets/og/es' : 'assets/og');
+fs.mkdirSync(OGDIR, { recursive: true });
 const b = await chromium.launch(); const p = await b.newPage();
-await p.goto(BASE + 'texas/', { waitUntil: 'networkidle' }); await p.waitForTimeout(800);
+await p.goto(BASE + (ES ? 'es/' : '') + 'texas/', { waitUntil: 'networkidle' }); await p.waitForTimeout(800);
 await p.evaluate(() => document.fonts.ready);
 
 const setup = () => {
@@ -41,12 +45,14 @@ for (const st of states) {
 		const out = document.createElement('canvas'); out.width = 1200; out.height = 630;
 		const g = out.getContext('2d');
 		g.fillStyle = '#FBF6E8'; g.fillRect(0, 0, 1200, 630);
-		const files = window.VOTE_GALLERY[st.abbr] || [];
+		// Spanish cards always show a Spanish sticker from the maker; the ready-made sets are in English.
+		const es = window.VOTE_LANG === 'es';
+		const files = es ? [] : window.VOTE_GALLERY[st.abbr] || [];
 		let im;
 		if (files.length) { im = await og.img(files[0]); }
 		else {
 			im = document.createElement('canvas');
-			const h = V.stateHeadline(row);
+			const h = es ? V.defaultHeadline(row) : V.stateHeadline(row);
 			V.render(im, 600, { state: st.abbr, design: 'sticker', palette: 'state', headline: h, dateText: V.defaultDateLine(row, h) });
 		}
 		og.sticker(g, im, 300, 315, 225, -6);
@@ -60,10 +66,10 @@ for (const st of states) {
 		g.fillStyle = '#fff'; g.textBaseline = 'middle'; g.fillText(st.ribbon, 598, 336);
 		await og.sign(g, 580, 460, false);
 		g.textAlign = 'left'; g.fillStyle = '#3A4562'; g.font = '600 24px system-ui, sans-serif';
-		g.fillText('Make your plan. Share the sticker.', 580, 512);
+		g.fillText(window.VOTE_LANG === 'es' ? 'Haz tu plan. Comparte el sticker.' : 'Make your plan. Share the sticker.', 580, 512);
 		return out.toDataURL('image/jpeg', 0.86);
 	}, st);
-	fs.writeFileSync(path.join(SITE, 'assets/og', st.slug + '.jpg'), Buffer.from(url.split(',')[1], 'base64'));
+	fs.writeFileSync(path.join(OGDIR, st.slug + '.jpg'), Buffer.from(url.split(',')[1], 'base64'));
 }
 
 // Hub card.
@@ -72,15 +78,23 @@ const hub = await p.evaluate(async () => {
 	const g = out.getContext('2d');
 	g.fillStyle = '#14295E'; g.fillRect(0, 0, 1200, 630);
 	await og.sign(g, 64, 92, true);
-	g.textAlign = 'left'; g.textBaseline = 'alphabetic'; g.fillStyle = '#FBF6E8'; og.fit(g, 'MAKE YOUR PLAN.', 92, '"Vote Display"', 560);
-	['MAKE YOUR PLAN.', 'SHARE THE', 'STICKER.'].forEach((t, i) => g.fillText(t, 64, 250 + i * 98));
+	g.textAlign = 'left'; g.textBaseline = 'alphabetic'; g.fillStyle = '#FBF6E8';
+	const es = window.VOTE_LANG === 'es';
+	const lines = es ? ['HAZ TU PLAN.', 'COMPARTE EL', 'STICKER.'] : ['MAKE YOUR PLAN.', 'SHARE THE', 'STICKER.'];
+	og.fit(g, es ? 'COMPARTE EL' : 'MAKE YOUR PLAN.', 92, '"Vote Display"', 560);
+	lines.forEach((t, i) => g.fillText(t, 64, 250 + i * 98));
 	g.fillStyle = '#F2C14E'; g.font = '700 28px system-ui, sans-serif';
-	g.fillText('Voting stickers for all 50 states and DC', 64, 560);
+	g.fillText(es ? 'Stickers para votar en los 50 estados y DC' : 'Voting stickers for all 50 states and DC', 64, 560);
 	const G = window.VOTE_GALLERY, pick = (a, n) => (G[a] || []).find((f) => f.indexOf(a.toLowerCase() + '-vote-' + n + '.jpg') > 0) || (G[a] || [])[0];
-	const ims = await Promise.all([pick('TX', 2), pick('WA', 6), pick('PA', 4), pick('CA', 4)].map(og.img));
+	const draw = (abbr) => {
+		const c = document.createElement('canvas'), V = window.VOTE_CARDS, row = window.VOTE_STATES.find((x) => x.abbr === abbr), h = V.defaultHeadline(row);
+		V.render(c, 600, { state: abbr, design: 'sticker', palette: 'state', headline: h, dateText: V.defaultDateLine(row, h) });
+		return c;
+	};
+	const ims = es ? ['TX', 'WA', 'NC', 'CA'].map(draw) : await Promise.all([pick('TX', 2), pick('WA', 6), pick('PA', 4), pick('CA', 4)].map(og.img));
 	[[835, 190, 135, -9], [1060, 170, 120, 7], [855, 450, 128, 5], [1075, 430, 115, -6]].forEach(([x, y, r, d], i) => og.sticker(g, ims[i], x, y, r, d));
 	return out.toDataURL('image/jpeg', 0.86);
 });
-fs.writeFileSync(path.join(SITE, 'assets/og-hub.jpg'), Buffer.from(hub.split(',')[1], 'base64'));
+fs.writeFileSync(path.join(SITE, ES ? 'assets/og-hub-es.jpg' : 'assets/og-hub.jpg'), Buffer.from(hub.split(',')[1], 'base64'));
 console.log(`${states.length} state cards and the hub card written`);
 await b.close();
