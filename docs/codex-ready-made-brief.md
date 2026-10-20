@@ -65,11 +65,10 @@ tier. Images 5 to 10 must not resemble those layouts or each other.
   passes. Don't fail or redraw for it.
 - **No oversized initial letter.** A giant serif I beside the map reads as a column at 48 px
   (Mississippi 07, Idaho I VOTED).
-- **Vary concepts across states too.** Before choosing images 5 to 10, read the BRIEFS.md files of
-  states already done in incoming/codex/ and don't reuse their concepts, so the site doesn't look
-  templated state to state. One exception, by Garrett's call (October 20): one house design per set,
-  I VOTED on a slight upward diagonal in a light cream over deep plum, with the outline above in a
-  lighter tint of the plum (Mississippi 08, Idaho).
+- **Proven concepts can repeat across states; each set still needs its own ideas.** Strong concepts
+  from earlier states may come back (the tilted plum I VOTED from Mississippi 08 and Idaho is a
+  favorite). At least three of images 5 to 10 must be concepts no earlier state used: read the
+  BRIEFS.md files in incoming/codex/ first, and say in BRIEFS.md which images are new ideas.
 - **The accent bar holds the date line, never the headline.** Mississippi's Navy core put the red bar
   behind NOV 3 instead of ELECTION DAY.
 - **Red with blue** only in the brand core palettes (Cream, Navy). Never as opposing halves.
