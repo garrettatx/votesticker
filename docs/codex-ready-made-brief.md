@@ -28,7 +28,8 @@ tier. Images 5 to 10 must not resemble those layouts or each other.
 **What Garrett picks (October 20):** diagonal type, and palettes that don't look like election
 material: chartreuse on cobalt, gold on maroon, cream on plum, gold on teal, cream on burnt orange.
 In images 5 to 10, lean on these over red, white and blue; the brand red and navy stay in cores 1
-and 2. An arched varsity headline and a map set beside the type also landed well.
+and 2. An arched varsity headline, brush lettering over a clean block line (Nebraska), and a map set beside
+the type also landed well.
 
 ## Words
 
