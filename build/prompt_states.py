@@ -106,7 +106,7 @@ def main():
             rows[r['abbr']] = r
     # States whose first sets were too samey to keep as final (October 19): redo them; their current
     # images stay live until the new ones replace them.
-    redo = {'MD', 'NJ'}
+    redo = {'MD', 'NJ', 'ID', 'MS', 'NE'}  # ID, MS, NE: most designs had the outline touching the headline
     have = {p.name.upper() for p in (ROOT / 'site/assets/states').iterdir() if p.is_dir()} - redo
     todo = [a for a in POP if a in rows and a not in have]
     groups = [('Verified Dates', lambda r: r['status'] == 'verified'),
@@ -115,7 +115,7 @@ def main():
     for a in [a for a in POP if a in have]:
         k = len(list((ROOT / 'site/assets/states' / a.lower()).glob('*.jpg')))
         out.append(f'- ~~{rows[a]["name"]}~~ ({k} stickers live)')
-    out.append(f'\nRedo (current sets look too much alike; they stay live until replaced): {", ".join(rows[a]["name"] for a in POP if a in redo)}.')
+    out.append(f'\nRedo (current sets need another pass: too alike, or outline touching the headline; they stay live until replaced): {", ".join(rows[a]["name"] for a in POP if a in redo)}.')
     out.append('')
     n = 0
     for title, test in groups:
