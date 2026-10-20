@@ -664,6 +664,7 @@
 
 		headSel.addEventListener('change', function () {
 			state.headline = headSel.value;
+			setPost();
 			// The date line follows the headline until someone types their own.
 			if (!state.dateEdited) { state.dateText = defaultDateLine(byAbbr[state.state], state.headline); $('date').value = state.dateText; }
 			setAlt();
@@ -696,6 +697,17 @@
 			var top = $('preview').getBoundingClientRect().top;
 			if (top < 0 || top > window.innerHeight * 0.6) { $('preview-wrap').scrollIntoView({ behavior: 'smooth', block: 'start' }); }
 		});
+		// The suggested post follows the sticker's message until the person edits the text themselves.
+		var POST_KIND = { early: 'pre_early', votatemprano: 'pre_early', mail: 'pre_mail', votacorreo: 'pre_mail', nov3: 'pre_day', vota3nov: 'pre_day', voyavotar: 'pre_day',
+			ivoted: 'post', yavote: 'post', voted: 'post_early', yavotetemprano: 'post_early', mailed: 'post_mail', yavotecorreo: 'post_mail' };
+		var postBox = $('post-text'), postEdited = false, posts = {};
+		try { posts = JSON.parse(postBox.dataset.posts || '{}'); } catch (e) { posts = {}; }
+		postBox.addEventListener('input', function () { postEdited = true; });
+		function setPost() {
+			var text = posts[POST_KIND[state.headline]];
+			if (text && !postEdited) { postBox.value = text; }
+		}
+		// No call on load: the server already wrote the version for the state's default message.
 		$('copy').addEventListener('click', function () {
 			var t = $('post-text');
 			var done = function () { $('copy').textContent = T('Copied'); setTimeout(function () { $('copy').textContent = T('Copy post text'); }, 2000); };

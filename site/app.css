@@ -396,6 +396,7 @@ select:hover, input:hover, textarea:hover { border-color: #A79D86; }
 .faq summary::after { content: "+"; flex: none; width: 28px; height: 28px; display: grid; place-items: center; border-radius: 50%; border: 1.5px solid var(--line-strong); font-weight: 700; transition: transform 0.15s; }
 .faq details[open] summary::after { content: "–"; }
 .faq details p { margin: var(--s3) 0 0; }
+.faq .faq__src { font-size: var(--fs-sm); color: var(--muted); margin-top: var(--s2); }
 
 .foot { margin-top: var(--s8); padding: var(--s6) 0 var(--s7); border-top: 1px solid var(--line); color: var(--muted); font-size: var(--fs-sm); }
 .foot p { margin: 0 0 var(--s3); max-width: 50rem; }

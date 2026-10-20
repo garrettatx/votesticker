@@ -55,7 +55,12 @@ wrangler pages deploy dist --project-name votesticker --branch main
 python3 -I scripts/qa_seo.py            # live, including the old garrettn.com/vote/ redirects
 python3 -I scripts/qa_es.py             # Spanish pairs
 node scripts/qa_devices.mjs --base https://votesticker.org/   # iPhone, iPad, Android, both languages
+python3 -I scripts/indexnow.py          # tell Bing and other IndexNow engines which pages changed
 ```
+
+IndexNow: two key files deploy to the site root, `site/f691b1b3d7674b378f82c72b1b27f5d8.txt` (this script, Bing) and `site/4fhy7yhf7perp8cdybzgtndafpuwd2wr.txt` (Ahrefs Site Audit auto-submission). The script
+submits only URLs whose sitemap `<lastmod>` changed since the last run (`build/indexnow-sent.json`,
+commit it too). `--dry-run` lists them, `--all` resends everything.
 
 `build/lastmod.json` keeps each page's content hash and the date it last changed, so the sitemap's
 `<lastmod>` moves only when a page really changes. Commit it with each build.

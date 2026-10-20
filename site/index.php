@@ -38,7 +38,6 @@ function vote_es() { return 'es' === $GLOBALS['vote_lang']; }
 function t( $s, ...$args ) { $o = $GLOBALS['vote_i18n']['t'][ $s ] ?? $s; return $args ? vsprintf( $o, $args ) : $o; }
 // Page links carry the language prefix; images, scripts and fonts are shared (VOTE_BASE).
 function vote_pbase() { return vote_es() ? VOTE_BASE . 'es/' : VOTE_BASE; }
-// A state's name in lists and links (Spanish names where Spanish-language U.S. media use one).
 // State names stay in English on Spanish pages too (Garrett, October 19): voters search and see them that way.
 function vote_lname( $st ) { return $st['name']; }
 // A state's name in titles and headings: English writes Washington, DC for the District.
@@ -105,7 +104,7 @@ function vote_meta( $st ) {
 	$name = vote_name( $st );
 	$kind = vote_verified( $st ) ? ( $st['kind'] ?? 'none' ) : 'unchecked';
 	$n = count( vote_files( $st['abbr'] ) );
-	$save = $n ? 'Save one of ' . $n . ' ready-made stickers or make your own' : 'Make your own sticker';
+	$save = $n ? 'Save one of ' . $n . ' ready-made I voted and vote stickers or make your own' : 'Make your own I voted or vote sticker';
 	$with = function ( $what ) use ( $n ) { return $n ? 'Save one of ' . $n . ' ready-made stickers with ' . $what . ', or make your own' : 'Make a sticker with ' . $what; };
 	if ( 'mail' === $kind ) {
 		$tag = 'Vote by Mail, Due ' . vote_short( $st['end'] );
@@ -147,8 +146,9 @@ function vote_meta( $st ) {
 	}
 	return array(
 		'slug' => vote_slug( $st['name'] ),
-		'title' => $name . ' Vote Stickers: ' . $tag,
-		'h1' => $name . ' Vote Stickers',
+		// "I voted sticker" is the term people search (Ahrefs, October 19); long names drop "and Vote" to fit.
+		'title' => strlen( $name . ' I Voted and Vote Stickers: ' . $tag ) > 62 ? $name . ' I Voted Stickers: ' . $tag : $name . ' I Voted and Vote Stickers: ' . $tag,
+		'h1' => $name . ' I Voted and Vote Stickers',
 		'crumb' => $name,
 		'ribbon' => $ribbon,
 		'lead' => $lead,
@@ -156,7 +156,9 @@ function vote_meta( $st ) {
 		'status' => $status,
 		'family' => $family,
 		'name' => $st['name'],
-		'index' => vote_verified( $st ),
+		// Every state page is indexable (Garrett, October 19): each has a ready-made set and verified FAQ
+		// answers even where early voting dates aren't checked yet.
+		'index' => true,
 	);
 }
 
@@ -212,19 +214,77 @@ function vote_meta_es( $st ) {
 		'status' => $status,
 		'family' => $kind,
 		'name' => $name,
-		'index' => vote_verified( $st ) && VOTE_ES_INDEX,
+		'index' => VOTE_ES_INDEX,
 	);
 }
 
 // Suggested post text, in the person's own voice to friends (Spanish uses tú there).
-function vote_post( $st ) {
-	return vote_post_body( $st ) . "\n\n" . vote_hashtags( $st );
+const VOTE_FAQ_CHECKED = '2026-10-19';
+const VOTE_FAQ_Q = array(
+	'polls'  => 'When are polls open in %s on Election Day?',
+	'mail'   => 'When is the ballot deadline in %s?',
+	'id'     => 'Do I need ID to vote in %s?',
+	'reg'    => 'Can I still register to vote in %s?',
+	'selfie' => 'Can I take a picture of my ballot in %s?',
+);
+// The verified state questions for this page, in VOTE_FAQ_Q order: [question, answer, source URL].
+function vote_state_faq( $st ) {
+	static $all = null;
+	if ( null === $all ) { $all = require __DIR__ . '/faq-states.php'; }
+	$out = array();
+	foreach ( VOTE_FAQ_Q as $key => $q ) {
+		$a = $all[ $st['abbr'] ][ $key ] ?? null;
+		if ( ! $a || empty( $a['src'] ) || empty( $a[ vote_es() ? 'es' : 'en' ] ) ) { continue; }
+		$out[] = array( t( $q, vote_name( $st ) ), $a[ vote_es() ? 'es' : 'en' ], $a['src'] );
+	}
+	return $out;
 }
 
-// #IVoted (#YaVoté in Spanish), the brand tag, and a state tag such as #VoteTexas.
-function vote_hashtags( $st ) {
+// Suggested post text, one version per sticker message (rules and evidence: docs/post-text-rules.md).
+// First person, one useful state fact, a plan question (never "tag a friend"), an invite back, and
+// three hashtags that match the message. The maker swaps versions when the message changes.
+const VOTE_POST_KINDS = array( 'pre_early', 'pre_mail', 'pre_day', 'post', 'post_early', 'post_mail' );
+
+// The version that matches the state's default sticker (app.js stateHeadline()).
+function vote_post_default( $st ) {
+	if ( ! vote_verified( $st ) || ! in_array( $st['kind'], array( 'in-person', 'mail' ), true ) ) { return 'pre_day'; }
+	return 'mail' === $st['kind'] ? 'pre_mail' : 'pre_early';
+}
+
+function vote_post( $st, $kind = null ) {
+	$kind = $kind ?: vote_post_default( $st );
+	$es = vote_es();
+	$name = vote_name( $st );
+	$open = $es
+		? array( 'pre_early' => 'Voy a votar temprano.', 'pre_mail' => 'Voy a entregar mi boleta con tiempo.', 'pre_day' => 'Voy a votar el Día de las Elecciones.', 'post' => 'Ya voté.', 'post_early' => 'Ya voté temprano.', 'post_mail' => 'Ya entregué mi boleta.' )
+		: array( 'pre_early' => "I'm voting early.", 'pre_mail' => "I'm getting my ballot in early.", 'pre_day' => "I'm voting on Election Day.", 'post' => 'I voted.', 'post_early' => 'I voted early.', 'post_mail' => 'My ballot is in.' );
+	$ask = $es
+		? array( 'pre_mail' => '¿Cuándo vas a devolver tu boleta?', 'post' => '¿Y tú, ya tienes tu plan para votar?', 'default' => '¿Ya tienes tu plan para votar?' )
+		: array( 'pre_mail' => 'When are you sending yours back?', 'post' => "What's your plan to vote?", 'default' => "What's your plan to vote?" );
+	$question = $ask[ 0 === strpos( $kind, 'post' ) ? 'post' : $kind ] ?? $ask['default'];
+	// Full https:// URL so it links everywhere, LinkedIn and email included.
+	$link = 'https://votesticker.org/' . ( $es ? 'es/' : '' ) . vote_slug( $st['name'] );
+	$invite = $es
+		? '¿Quieres uno? Haz gratis tu sticker para votar en ' . $name . ': ' . $link
+		: 'Want one? Make your own free ' . $name . ' vote sticker: ' . $link;
+	return $open[ $kind ] . ' ' . vote_post_body( $st ) . ' ' . $question . "\n\n" . $invite . "\n" . vote_hashtags( $st, $kind );
+}
+
+// Three tags: the message's own tag, the brand, and the state (#VoteTexas). #IVoted only after voting.
+function vote_hashtags( $st, $kind ) {
 	$state = 'DC' === $st['abbr'] ? 'DC' : str_replace( ' ', '', $st['name'] );
-	return ( vote_es() ? '#YaVoté' : '#IVoted' ) . ' #VoteSticker #Vote' . $state;
+	$lead = vote_es()
+		? array( 'pre_early' => '#VotaTemprano', 'pre_mail' => '#VotaPorCorreo', 'pre_day' => '#YoVoto' )
+		: array( 'pre_early' => '#VoteEarly', 'pre_mail' => '#VoteByMail', 'pre_day' => '#ElectionDay' );
+	$tag = $lead[ $kind ] ?? ( vote_es() ? '#YaVoté' : '#IVoted' );
+	return $tag . ' #VoteSticker #Vote' . $state;
+}
+
+// Every version, for the maker to swap in (JSON on the textarea).
+function vote_post_all( $st ) {
+	$out = array();
+	foreach ( VOTE_POST_KINDS as $k ) { $out[ $k ] = vote_post( $st, $k ); }
+	return $out;
 }
 
 function vote_post_body( $st ) {
@@ -335,11 +395,11 @@ if ( $vote_404 ) {
 }
 $vote_st = $vote_abbr ? $vote_rows[ $vote_abbr ] : null;
 $vote_page = $vote_st ? $vote_meta[ $vote_abbr ] : array(
-	'title' => t( 'Voting Stickers by State | Vote Sticker' ),
+	'title' => t( 'I Voted Sticker Maker: Free Vote Stickers by State' ),
 	'h1' => t( 'Make your plan. Share the sticker.' ),
 	'eyebrow' => t( 'Voting stickers for all 50 states and DC' ),
 	'lead' => t( 'Pick your state, choose a design, and save a profile-picture sticker with your voting dates. Each one links to your official election office.' ),
-	'desc' => t( 'Create a free voting sticker for your profile picture. Choose your state and a design, save it, and check official links for early voting, vote by mail, or Election Day.' ),
+	'desc' => t( 'Make a free I voted sticker or vote sticker for your profile picture. Pick your state and a design, download a PNG, and check official links for early voting, vote by mail, or Election Day.' ),
 	'index' => ! vote_es() || VOTE_ES_INDEX,
 );
 if ( $vote_404 ) {
@@ -424,6 +484,7 @@ $vote_ld = array(
 <?php if ( ! $vote_404 ) : ?><script type="application/ld+json"><?php echo vote_json( $vote_ld ); ?></script><?php endif; ?>
 <?php if ( ! $vote_st && ! $vote_404 ) : ?><script type="application/ld+json"><?php echo vote_json( array( '@context' => 'https://schema.org', '@type' => 'WebSite', 'name' => VOTE_BRAND, 'alternateName' => 'VoteSticker.org', 'url' => VOTE_SITE . vote_pbase(), 'inLanguage' => $vote_lang ) ); ?></script><?php echo "\n"; endif; ?>
 <!-- Google tag (gtag.js) -->
+<script src="https://analytics.ahrefs.com/analytics.js" data-key="JWFR/FwEHfD5yA/gz1K/Jg" async></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PZWZTXDSDE"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -577,7 +638,7 @@ $vote_ld = array(
 				<p class="hint" id="tip"></p>
 				<details class="post" open>
 					<summary><?php echo vote_e( t( 'Suggested post text' ) ); ?></summary>
-					<textarea id="post-text" rows="5" aria-label="<?php echo vote_e( t( 'Suggested post text' ) ); ?>"><?php echo $vote_st ? vote_e( vote_post( $vote_st ) ) : ''; ?></textarea>
+					<textarea id="post-text" rows="6"<?php if ( $vote_st ) : ?> data-posts="<?php echo vote_e( vote_json( vote_post_all( $vote_st ) ) ); ?>"<?php endif; ?> aria-label="<?php echo vote_e( t( 'Suggested post text' ) ); ?>"><?php echo $vote_st ? vote_e( vote_post( $vote_st ) ) : ''; ?></textarea>
 					<button type="button" class="btn btn--quiet" id="copy"><?php echo vote_e( t( 'Copy post text' ) ); ?></button>
 				</details>
 			</div>
@@ -655,6 +716,13 @@ $vote_ld = array(
 	<?php if ( ! $vote_404 ) : ?>
 	<section class="faq" aria-labelledby="faq-h">
 		<h2 id="faq-h"><?php echo vote_e( t( 'Common Questions' ) ); ?></h2>
+		<?php if ( $vote_st ) : foreach ( vote_state_faq( $vote_st ) as $vote_q ) : ?>
+		<details class="faq__state"><summary><?php echo vote_e( $vote_q[0] ); ?></summary><p><?php echo vote_e( $vote_q[1] ); ?></p><p class="faq__src"><?php echo vote_e( t( 'Source:' ) ); ?> <a href="<?php echo vote_e( $vote_q[2] ); ?>" target="_blank" rel="noopener"><?php echo vote_e( preg_replace( '#^www\.#', '', parse_url( $vote_q[2], PHP_URL_HOST ) ) ); ?></a>, <?php echo vote_e( t( 'checked %s.', vote_es() ? '19 de octubre de 2026' : 'October 19, 2026' ) ); ?></p></details>
+		<?php endforeach; else : ?>
+		<details><summary><?php echo vote_e( t( 'Can I post a photo of my ballot?' ) ); ?></summary><p><?php echo vote_e( t( 'It depends on the state. Some states allow a picture of your own marked ballot, and some make it illegal to show one. Each state page says what that state allows, where we could confirm it. The stickers made here show no ballot.' ) ); ?></p></details>
+		<?php endif; ?>
+		<details><summary><?php echo vote_e( t( 'When should I switch to I voted?' ) ); ?></summary><p><?php echo vote_e( t( 'After you vote. Choose I voted in the Main message menu, or I voted early or I voted by mail if that fits.' ) ); ?></p></details>
+		<details><summary><?php echo vote_e( t( 'How do I make it my profile picture?' ) ); ?></summary><p><?php echo vote_e( t( 'Tap Download picture, then open your profile settings in the app and choose the saved image as your photo. The design stays inside the circle that profile photos are cropped to.' ) ); ?></p></details>
 		<details><summary><?php echo vote_e( t( 'Is this an official election site?' ) ); ?></summary><p><?php echo vote_e( t( 'No. Vote Sticker is an independent, nonpartisan tool made by one person. For registration, polling places, and deadlines, go to your state or local election office. Each state page links to it.' ) ); ?></p></details>
 		<details><summary><?php echo vote_e( t( 'Where do the dates come from?' ) ); ?></summary><p><?php echo vote_e( t( "From official state sources: the election office's own pages or state law, checked and dated. Until a state's dates are confirmed, its stickers say Election Day." ) ); ?></p></details>
 		<details><summary><?php echo vote_e( t( 'Why do some states say hours or start dates vary?' ) ); ?></summary><p><?php echo vote_e( t( 'In some states, counties or towns set their own early voting days, hours, and locations. Your local election office has the final details.' ) ); ?></p></details>

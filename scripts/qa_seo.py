@@ -128,8 +128,8 @@ def main():
         if pg.canon != PROD + p:
             fail(f'/{p}: canonical {pg.canon}')
         noindex = 'noindex' in pg.meta.get('robots', '')
-        if p and noindex == (p in verified):
-            fail(f'/{p}: noindex={noindex}, verified={p in verified}')
+        if p and noindex:
+            fail(f'/{p}: state page is noindex')  # every state page is indexable since October 19
         if not p and noindex:
             fail('hub is noindex')
         try:
@@ -208,14 +208,14 @@ def main():
         if bad > 5:
             fail(f'legacy: {bad} of {len(checks)} old URLs do not redirect correctly')
 
-    # Sitemap: exactly the hub and the verified states.
+    # Sitemap: exactly the hub and every state page (all indexable since October 19).
     status, _, xml = fetch(urljoin(base, 'sitemap.xml'))
     locs = {l for l in re.findall(r'<loc>(.*?)</loc>', xml) if '/es/' not in l}  # Spanish pages: scripts/qa_es.py
-    want = {PROD} | {PROD + p for p in verified}
+    want = {PROD} | {PROD + p for p in pages if p}
     if status != 200 or locs != want:
         fail(f'sitemap: HTTP {status}, extra {sorted(locs - want)[:3]}, missing {sorted(want - locs)[:3]}')
 
-    print(f'{len(pages)} pages, {len(internal)} internal links, {len(verified)} indexable states')
+    print(f'{len(pages)} pages, {len(internal)} internal links, {len([p for p in pages if p])} indexable states')
     for f in fails[:40]:
         print('  FAIL ' + f)
     print('FAILED (%d)' % len(fails) if fails else 'PASS')

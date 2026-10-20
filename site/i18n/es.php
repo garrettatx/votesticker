@@ -68,11 +68,11 @@ return array(
 	// Page and maker strings, keyed by the English. %s marks a value filled in by the code.
 	't' => array(
 		// Head, header, hub
-		'Voting Stickers by State | Vote Sticker' => 'Stickers para votar por estado | Vote Sticker',
+		'I Voted Sticker Maker: Free Vote Stickers by State' => 'Stickers de Ya voté y para votar por estado, gratis | Vote Sticker',
 		'Make your plan. Share the sticker.' => 'Haz tu plan. Comparte el sticker.',
 		'Voting stickers for all 50 states and DC' => 'Stickers para votar en los 50 estados y DC',
 		'Pick your state, choose a design, and save a profile-picture sticker with your voting dates. Each one links to your official election office.' => 'Elige tu estado y un diseño, y guarda un sticker con tus fechas para votar para tu foto de perfil. Cada uno enlaza a la oficina electoral oficial de tu estado.',
-		'Create a free voting sticker for your profile picture. Choose your state and a design, save it, and check official links for early voting, vote by mail, or Election Day.' => 'Crea gratis un sticker para votar para tu foto de perfil. Elige tu estado y un diseño, guárdalo y revisa los enlaces oficiales sobre votación anticipada, voto por correo o el Día de las Elecciones.',
+		'Make a free I voted sticker or vote sticker for your profile picture. Pick your state and a design, download a PNG, and check official links for early voting, vote by mail, or Election Day.' => 'Haz gratis un sticker de Ya voté o para votar para tu foto de perfil. Elige tu estado y un diseño, descarga un PNG y revisa los enlaces oficiales sobre votación anticipada, voto por correo o el Día de las Elecciones.',
 		'Page Not Found | Vote Sticker' => 'Página no encontrada | Vote Sticker',
 		'We can’t find that page.' => 'No encontramos esa página.',
 		'Page not found' => 'Página no encontrada',
@@ -158,6 +158,19 @@ return array(
 		"What if my state doesn't have early voting?" => '¿Y si mi estado no tiene votación anticipada?',
 		"Your sticker says VOTE NOV 3. If you can't vote in person on Election Day, you may qualify for an absentee ballot. Your state's page links to the rules." => 'Tu sticker dice VOTA 3 DE NOV. Si no puedes votar en persona el Día de las Elecciones, es posible que puedas votar en ausencia. La página de tu estado enlaza a las reglas.',
 		'Do you keep my information?' => '¿Guardan mi información?',
+		'Source:' => 'Fuente:',
+		'checked %s.' => 'consultada el %s.',
+		'When are polls open in %s on Election Day?' => '¿En qué horario puedes votar en %s el Día de las Elecciones?',
+		'When is the ballot deadline in %s?' => '¿Cuál es la fecha límite para entregar tu boleta en %s?',
+		'Do I need ID to vote in %s?' => '¿Necesito identificación para votar en %s?',
+		'Can I still register to vote in %s?' => '¿Todavía puedo registrarme para votar en %s?',
+		'Can I take a picture of my ballot in %s?' => '¿Puedo tomarle foto a mi boleta en %s?',
+		'Can I post a photo of my ballot?' => '¿Puedo publicar una foto de mi boleta?',
+		'It depends on the state. Some states allow a picture of your own marked ballot, and some make it illegal to show one. Each state page says what that state allows, where we could confirm it. The stickers made here show no ballot.' => 'Depende del estado. Algunos estados permiten tomarle foto a tu propia boleta marcada y en otros es ilegal mostrarla. La página de cada estado dice qué permite ese estado, cuando pudimos confirmarlo. Los stickers que haces aquí no muestran ninguna boleta.',
+		'When should I switch to I voted?' => '¿Cuándo cambio a Ya voté?',
+		'After you vote. Choose I voted in the Main message menu, or I voted early or I voted by mail if that fits.' => 'Después de votar. Elige Ya voté en el menú Mensaje principal, o Ya voté temprano o Ya voté por correo, según cómo hayas votado.',
+		'How do I make it my profile picture?' => '¿Cómo uso mi sticker como foto de perfil?',
+		'Tap Download picture, then open your profile settings in the app and choose the saved image as your photo. The design stays inside the circle that profile photos are cropped to.' => 'Toca Descargar imagen, abre la configuración de tu perfil en la app y elige la imagen guardada como tu foto. El diseño queda dentro del círculo al que se recortan las fotos de perfil.',
 		'No. Your sticker is created in your browser and never uploaded.' => 'No. Tu sticker se crea en tu navegador y nunca se sube.',
 		// Footer
 		'This tool is nonpartisan.' => 'Esta herramienta no es partidista.',
