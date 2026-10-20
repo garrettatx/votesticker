@@ -38,7 +38,7 @@ def slug(name):
 def render(slug_name=''):
     cmd = ['php', str(ROOT / 'build' / 'render.php')] + ([slug_name] if slug_name else [])
     out = subprocess.run(cmd, capture_output=True, text=True, check=True).stdout
-    if '</html>' not in out or '<h1' not in out:
+    if '</html>' not in out or '<h1' not in out:  # the 404 render exits with status 0 too
         raise SystemExit(f'empty render for {slug_name or "hub"}: {out[:200]!r}')
     return out
 
@@ -86,6 +86,7 @@ def main():
     xml += [f'  <url>\n    <loc>{u}</loc>\n    <lastmod>{m}</lastmod>\n  </url>' for u, m in urls]
     xml.append('</urlset>')
     (DIST / 'sitemap.xml').write_text('\n'.join(xml) + '\n')
+    (DIST / '404.html').write_text(render('404'))
     (DIST / 'robots.txt').write_text(f'User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}sitemap.xml\n')
     print(f'dist/: {copied} files copied, {len(pages)} pages rendered, sitemap {len(urls)} URLs')
 

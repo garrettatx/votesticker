@@ -59,7 +59,10 @@ a:hover { text-decoration-thickness: 2px; text-decoration-color: currentColor; }
 .crumbs a:hover, .states a:hover, .near a:hover, .finder .help a:hover { text-decoration: underline; text-underline-offset: 0.16em; }
 /* 3. Actions (official links, buttons): containers, never bare underlined text. See .official, .btn. */
 
-:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+/* Focus: navy on paper, gold on the navy band. Selection in brand gold. */
+:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; border-radius: 4px; }
+.top :focus-visible, .trust :focus-visible { outline-color: var(--gold); }
+::selection { background: var(--gold); color: var(--ink); }
 
 /* ------------------------------------------------------------------ */
 /* Headings                                                            */
@@ -124,6 +127,16 @@ h2 { margin: 0 0 var(--s3); color: var(--ink); font-size: var(--fs-h3); line-hei
 	.state-hero--art { display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: var(--s7); align-items: center; }
 	.state-hero__sticker { display: block; width: 260px; height: auto; border-radius: 50%; transform: rotate(-6deg); box-shadow: 0 12px 26px rgba(0, 0, 0, 0.35); }
 }
+
+/* State hero: jump straight to the stickers; official info and the copy link stay one quiet row. */
+.jump { display: flex; flex-wrap: wrap; gap: 10px; margin: var(--s5) 0 0; }
+.jump .btn { min-height: 52px; }
+.jump .btn--line { background: transparent; border-color: #7D8DB6; color: var(--cream); }
+.jump .btn--line:hover { background: var(--cream); border-color: var(--cream); color: var(--ink); }
+.hero-meta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s2) var(--s4); margin-top: var(--s4); }
+.hero-meta .share { margin: 0; }
+.hero-meta__official { color: var(--band-text); font-size: var(--fs-sm); font-weight: 600; text-decoration: none; }
+.hero-meta__official:hover { color: var(--cream); text-decoration: underline; }
 
 /* Copy-link button: outline that fills on hover. */
 .share { margin: var(--s5) 0 0; }
@@ -224,7 +237,7 @@ select:hover, input:hover, textarea:hover { border-color: #A79D86; }
 	border: 1px solid var(--line);
 	border-radius: var(--radius-lg);
 	padding: 22px 20px 18px;
-	margin: 0 0 var(--s7);
+	margin: 0;
 	box-shadow: 0 1px 2px rgba(20, 41, 94, 0.05);
 }
 @media (min-width: 860px) { .info { padding: 28px 32px 24px; } }
@@ -260,10 +273,13 @@ select:hover, input:hover, textarea:hover { border-color: #A79D86; }
 .grid.grid--gallery { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: var(--s4); }
 @media (min-width: 860px) { .grid.grid--gallery { grid-template-columns: repeat(var(--cols, 5), minmax(0, 1fr)); gap: 20px; } }
 
-.maker-h { margin: 0 0 var(--s4); padding-top: var(--s6); border-top: 1px solid var(--line); }
+.maker-h { margin: 0 0 var(--s4); padding-top: var(--s6); border-top: 1px solid var(--line);  scroll-margin-top: var(--s4); }
+.maker-h--first { border-top: 0; }
+#gallery { padding-top: var(--s6); scroll-margin-top: var(--s4); }
+.before-h { margin: var(--s7) 0 var(--s4); padding-top: var(--s6); border-top: 1px solid var(--line); }
+.discover__find { padding-bottom: var(--s5); border-bottom: 1px solid var(--line-strong); }
 .controls--maker { margin: 0 0 var(--s5); }
 .maker { display: grid; gap: var(--s6); }
-@media (max-width: 859px) { .maker__designs { order: -1; } }
 @media (min-width: 860px) {
 	.maker { grid-template-columns: minmax(320px, 420px) 1fr; align-items: start; }
 	.maker__preview { position: sticky; top: var(--s4); }
@@ -383,10 +399,16 @@ select:hover, input:hover, textarea:hover { border-color: #A79D86; }
 
 .foot { margin-top: var(--s8); padding: var(--s6) 0 var(--s7); border-top: 1px solid var(--line); color: var(--muted); font-size: var(--fs-sm); }
 .foot p { margin: 0 0 var(--s3); max-width: 50rem; }
-.foot__made { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
-.foot__gd { display: inline-flex; align-items: center; }
+.foot__made { line-height: 40px; }
+/* The logo's wordmark baseline sits 51% down its 40 px height (measured October 19); vertical-align puts
+   that line on the text baseline instead of centering the boxes, which left the logo 4 px high. */
+.foot__gd { display: inline-block; margin-left: 6px; line-height: 0; vertical-align: -19.6px; }
 .foot__gd img { height: 40px; width: auto; display: block; }
 
 @media (prefers-reduced-motion: reduce) {
 	* { transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* 404: a plain way home under the finder. */
+.home-link { margin: var(--s4) 0 0; font-size: var(--fs-sm); }
+.home-link a { color: var(--cream); font-weight: 700; }

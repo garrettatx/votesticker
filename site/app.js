@@ -15,13 +15,13 @@
 	var DISPLAY = '"Vote Display"', DATE = '"Vote Date"';
 
 	var PALETTES = [
+		{ id: 'state', name: 'State colors' },
 		{ id: 'cream', name: 'Cream and navy', bg: '#FBF8F0', ink: '#14295E', accent: '#C1272D', onAccent: '#FBF8F0' },
 		{ id: 'navy', name: 'Navy and red', bg: '#0F2558', ink: '#FBF6E8', accent: '#B3262C', onAccent: '#FBF6E8' },
 		{ id: 'forest', name: 'Forest and gold', bg: '#0A3D2C', ink: '#FBF6E8', accent: '#D4AF4A', onAccent: '#0A3D2C' },
 		{ id: 'sand', name: 'Sand and rust', bg: '#EBDABF', ink: '#1F1E1C', accent: '#A9552A', onAccent: '#FBF6E8' },
 		{ id: 'sky', name: 'Sky and navy', bg: '#D4E8FA', ink: '#14295E', accent: '#C1272D', onAccent: '#FBF8F0' },
-		{ id: 'sage', name: 'Sage and forest', bg: '#8FAF88', ink: '#0B3A23', accent: '#E0BC4E', onAccent: '#0B3A23' },
-		{ id: 'state', name: 'State colors' }
+		{ id: 'sage', name: 'Sage and forest', bg: '#8FAF88', ink: '#0B3A23', accent: '#E0BC4E', onAccent: '#0B3A23' }
 	];
 	// Each state's own colors (background, ink, accent): the palettes the ready-made sets were made in,
 	// and for the other states the palettes in docs/round3-prompts-one-state.md (October 19).
@@ -617,7 +617,8 @@
 		$('gallery').hidden = !files.length;
 		// States with ready-made pictures lead with them; the maker follows as "Or Make Your Own" (October 19).
 		$('gallery-h').textContent = 'Ready-Made ' + st.name + ' Stickers';
-		$('maker-h').hidden = !files.length;
+		$('maker-h').textContent = files.length ? 'Or Make Your Own' : 'Make Your ' + st.name + ' Sticker';
+		$('maker-h').classList.toggle('maker-h--first', !files.length);
 		document.body.classList.toggle('has-gallery', !!files.length);
 		var grid = $('gallery-grid');
 		grid.innerHTML = '';

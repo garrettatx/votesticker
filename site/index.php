@@ -169,9 +169,13 @@ if ( ! defined( 'VOTE_SLUG' ) && isset( $_GET['state'] ) ) {
 
 $vote_abbr = defined( 'VOTE_SLUG' ) ? ( $vote_by_slug[ VOTE_SLUG ] ?? '' ) : '';
 $vote_path = (string) parse_url( $_SERVER['REQUEST_URI'] ?? VOTE_BASE, PHP_URL_PATH );
-if ( ( defined( 'VOTE_SLUG' ) && ! $vote_abbr ) || ( ! defined( 'VOTE_SLUG' ) && ! in_array( $vote_path, array( VOTE_BASE, VOTE_BASE . 'index.php' ), true ) ) ) {
+// Unknown addresses get a real 404 with the finder, popular states, and the full state list
+// (Nielsen Norman Group's error-page guidance: say it plainly, keep the site's navigation, offer search
+// and the most useful links). build/build_static.py writes the same page to dist/404.html.
+$vote_404 = defined( 'VOTE_404' ) || ( defined( 'VOTE_SLUG' ) && ! $vote_abbr ) || ( ! defined( 'VOTE_SLUG' ) && ! in_array( $vote_path, array( VOTE_BASE, VOTE_BASE . 'index.php' ), true ) );
+if ( $vote_404 ) {
 	http_response_code( 404 );
-	exit( 'Not found' );
+	$vote_abbr = '';
 }
 $vote_st = $vote_abbr ? $vote_rows[ $vote_abbr ] : null;
 $vote_page = $vote_st ? $vote_meta[ $vote_abbr ] : array(
@@ -182,6 +186,16 @@ $vote_page = $vote_st ? $vote_meta[ $vote_abbr ] : array(
 	'desc' => "Create a free voting sticker for your profile picture. Choose your state and a design, save it, and check official links for early voting, vote by mail, or Election Day.",
 	'index' => true,
 );
+if ( $vote_404 ) {
+	$vote_page = array(
+		'title' => 'Page Not Found | Vote Sticker',
+		'h1' => 'We can’t find that page.',
+		'eyebrow' => 'Page not found',
+		'lead' => 'The link may be old or have a typo. Every state has its own page of voting stickers. Find yours below.',
+		'desc' => 'This page isn’t on Vote Sticker. Find your state for voting stickers and official election links.',
+		'index' => false,
+	);
+}
 $vote_url = VOTE_SITE . VOTE_BASE . ( $vote_st ? $vote_page['slug'] . '/' : '' );
 // Share image: one per state from build/og_states.mjs, the hub's from build/og_image.mjs.
 $vote_og = $vote_st && is_file( __DIR__ . '/assets/og/' . $vote_page['slug'] . '.jpg' ) ? 'assets/og/' . $vote_page['slug'] . '.jpg' : 'assets/og-hub.jpg';
@@ -215,8 +229,9 @@ $vote_ld = array(
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title><?php echo vote_e( $vote_page['title'] ); ?></title>
 <meta name="description" content="<?php echo vote_e( $vote_page['desc'] ); ?>">
-<link rel="canonical" href="<?php echo vote_e( $vote_url ); ?>">
+<?php if ( ! $vote_404 ) : ?><link rel="canonical" href="<?php echo vote_e( $vote_url ); ?>"><?php echo "\n"; endif; ?>
 <?php if ( ! $vote_page['index'] ) : ?><meta name="robots" content="noindex, follow"><?php echo "\n"; endif; ?>
+<?php if ( ! $vote_404 ) : ?>
 <meta property="og:title" content="<?php echo vote_e( $vote_page['title'] ); ?>">
 <meta property="og:description" content="<?php echo vote_e( $vote_page['desc'] ); ?>">
 <meta property="og:type" content="website">
@@ -226,16 +241,20 @@ $vote_ld = array(
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="<?php echo vote_e( $vote_og_alt ); ?>">
 <meta property="og:site_name" content="<?php echo vote_e( VOTE_BRAND ); ?>">
+<?php endif; ?>
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="<?php echo VOTE_BASE; ?>assets/icons/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="<?php echo vote_v( 'assets/icons/favicon.svg' ); ?>">
+<link rel="mask-icon" href="<?php echo VOTE_BASE; ?>assets/icons/mask-icon.svg" color="#14295E">
+<link rel="manifest" href="<?php echo VOTE_BASE; ?>site.webmanifest">
 <link rel="icon" type="image/png" sizes="32x32" href="<?php echo VOTE_BASE; ?>assets/icons/favicon-32.png">
 <link rel="apple-touch-icon" href="<?php echo VOTE_BASE; ?>assets/icons/apple-touch-icon.png">
 <meta name="theme-color" content="#0F2558">
 <link rel="preload" href="<?php echo VOTE_BASE; ?>assets/fonts/anton.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="<?php echo VOTE_BASE; ?>assets/fonts/archivo-black.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="<?php echo vote_v( 'app.css' ); ?>">
-<script type="application/ld+json"><?php echo vote_json( $vote_ld ); ?></script>
-<?php if ( ! $vote_st ) : ?><script type="application/ld+json"><?php echo vote_json( array( '@context' => 'https://schema.org', '@type' => 'WebSite', 'name' => VOTE_BRAND, 'alternateName' => 'VoteSticker.org', 'url' => VOTE_SITE . VOTE_BASE ) ); ?></script><?php echo "\n"; endif; ?>
+<?php if ( ! $vote_404 ) : ?><script type="application/ld+json"><?php echo vote_json( $vote_ld ); ?></script><?php endif; ?>
+<?php if ( ! $vote_st && ! $vote_404 ) : ?><script type="application/ld+json"><?php echo vote_json( array( '@context' => 'https://schema.org', '@type' => 'WebSite', 'name' => VOTE_BRAND, 'alternateName' => 'VoteSticker.org', 'url' => VOTE_SITE . VOTE_BASE ) ); ?></script><?php echo "\n"; endif; ?>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PZWZTXDSDE"></script>
 <script>
@@ -268,7 +287,15 @@ $vote_ld = array(
 				<h1 id="page-h1"><?php echo vote_e( $vote_page['h1'] ); ?></h1>
 				<p class="ribbon"><?php echo vote_e( $vote_page['ribbon'] ); ?></p>
 				<p class="lead" id="page-lead"><?php echo vote_e( $vote_page['lead'] ); ?></p>
-				<?php echo $vote_share; ?>
+				<p class="jump">
+					<?php if ( $vote_lead_img ) : ?><a class="btn btn--gold" href="#gallery">See <?php echo vote_e( $vote_st['name'] ); ?> stickers <span aria-hidden="true">↓</span></a><?php endif; ?>
+					<a class="btn <?php echo $vote_lead_img ? 'btn--line' : 'btn--gold'; ?>" href="#maker-h"><?php echo $vote_lead_img ? 'Make your own' : 'Make your sticker'; ?> <span aria-hidden="true">↓</span></a>
+				</p>
+				<div class="hero-meta">
+					<?php if ( vote_verified( $vote_st ) ) : ?><a class="hero-meta__official" href="<?php echo vote_e( $vote_st['officialUrl'] ); ?>" target="_blank" rel="noopener">Official info: <?php echo vote_e( $vote_st['officialLabel'] ); ?> <span aria-hidden="true">↗</span></a>
+					<?php else : ?><a class="hero-meta__official" href="https://www.vote411.org/<?php echo vote_slug( $vote_st['name'] ); ?>" target="_blank" rel="noopener">Check your dates at Vote411 <span aria-hidden="true">↗</span></a><?php endif; ?>
+					<?php echo $vote_share; ?>
+				</div>
 			</div>
 			<?php if ( $vote_lead_img ) : ?><img class="state-hero__sticker" src="<?php echo vote_e( $vote_lead_img ); ?>" alt="" width="1080" height="1080" aria-hidden="true"><?php endif; ?>
 		</div>
@@ -279,7 +306,7 @@ $vote_ld = array(
 				<h1 id="page-h1"><?php echo vote_e( $vote_page['h1'] ); ?></h1>
 				<p class="lead" id="page-lead"><?php echo vote_e( $vote_page['lead'] ); ?></p>
 				<?php echo vote_finder( 'Your state', 'Type a state, like Texas or TX' ); ?>
-				<?php echo $vote_share; ?>
+				<?php echo $vote_404 ? '<p class="home-link"><a href="' . VOTE_BASE . '">Go to the Vote Sticker home page</a></p>' : $vote_share; ?>
 			</div>
 			<div class="hero__art" aria-hidden="true">
 				<?php foreach ( array( array( 'tx', 2 ), array( 'ca', 4 ), array( 'nc', 2 ) ) as $k => $h ) : if ( is_file( __DIR__ . "/assets/states/{$h[0]}/{$h[0]}-vote-{$h[1]}.jpg" ) ) : ?>
@@ -292,9 +319,6 @@ $vote_ld = array(
 </header>
 
 <main class="wrap">
-	<?php if ( $vote_st ) : ?>
-	<div class="controls controls--find"><?php echo vote_finder( 'Looking for another state?', 'Type a state name' ); ?></div>
-	<?php endif; ?>
 
 	<?php
 	// Landing showcase (October 19): one polished ready-made design per state, most populous first,
@@ -304,8 +328,8 @@ $vote_ld = array(
 	?>
 	<?php if ( $vote_showcase && ! $vote_st ) : ?>
 	<section class="showcase" id="showcase" aria-labelledby="showcase-h">
-		<h2 id="showcase-h" class="display-h">Ready-Made Stickers</h2>
-		<p class="section-intro">A few from the most populous states. Tap one to see that state's full set, or find your state above to make your own.</p>
+		<h2 id="showcase-h" class="display-h"><?php echo $vote_404 ? 'Popular States' : 'Ready-Made Stickers'; ?></h2>
+		<p class="section-intro"><?php echo $vote_404 ? 'Ready-made stickers from the most populous states. Tap one to see that state’s page.' : 'A few from the most populous states. Tap one to see that state\'s full set, or find your state above to make your own.'; ?></p>
 		<div class="grid grid--showcase">
 			<?php foreach ( $vote_showcase as $abbr => $n ) : ?>
 			<a class="pick" href="<?php echo VOTE_BASE . $vote_meta[ strtoupper( $abbr ) ]['slug']; ?>/">
@@ -315,6 +339,7 @@ $vote_ld = array(
 			<?php endforeach; ?>
 		</div>
 	</section>
+	<?php if ( ! $vote_404 ) : ?>
 	<section class="how-wrap" aria-labelledby="how-h">
 		<h2 id="how-h" class="display-h">How It Works</h2>
 		<ol class="how">
@@ -328,18 +353,17 @@ $vote_ld = array(
 		<p><b>Nonpartisan by design.</b> We make the reminder. Your state or local election office has the final word. No account, and nothing is uploaded.</p>
 	</section>
 	<?php endif; ?>
+	<?php endif; ?>
 
 	<?php $vote_files = $vote_st ? vote_files( $vote_abbr ) : array(); ?>
 	<div id="maker"<?php echo $vote_st ? '' : ' hidden'; ?>>
-		<section class="info" id="info" aria-live="polite"><?php echo $vote_st ? vote_info( $vote_st ) : ''; ?></section>
-
 		<section class="gallery" id="gallery"<?php echo $vote_files ? '' : ' hidden'; ?> aria-labelledby="gallery-h">
 			<h2 id="gallery-h" class="display-h"><?php echo $vote_st ? 'Ready-Made ' . vote_e( $vote_st['name'] ) . ' Stickers' : 'Ready-Made Stickers'; ?></h2>
-			<p>Tap one to save it. Every sticker keeps its words inside the profile-picture circle.</p>
+			<p>Tap one to save it. Each keeps its words inside the profile-picture circle.</p>
 			<div class="grid grid--gallery" id="gallery-grid" style="--cols: <?php echo vote_cols( count( $vote_files ) ); ?>"><?php foreach ( $vote_files as $i => $src ) : ?><a class="tile" href="<?php echo vote_e( $src ); ?>" download="vote-<?php echo strtolower( $vote_abbr ) . '-' . ( $i + 1 ); ?>.jpg"><img src="<?php echo vote_e( $src ); ?>" alt="<?php echo vote_e( $vote_st['name'] . ' vote picture, hand-made design ' . ( $i + 1 ) ); ?>" width="1080" height="1080" loading="lazy"></a><?php endforeach; ?></div>
 		</section>
 
-		<h2 class="maker-h display-h" id="maker-h"<?php echo $vote_files ? '' : ' hidden'; ?>>Or Make Your Own</h2>
+		<h2 class="maker-h display-h<?php echo $vote_files ? '' : ' maker-h--first'; ?>" id="maker-h"><?php echo $vote_files ? 'Or Make Your Own' : 'Make Your ' . vote_e( $vote_st['name'] ?? '' ) . ' Sticker'; ?></h2>
 		<div class="controls controls--maker">
 			<label>Main message
 				<select id="headline"></select>
@@ -376,6 +400,8 @@ $vote_ld = array(
 			</section>
 		</div>
 
+		<h2 class="display-h before-h" id="before-h">Before You Vote<?php echo $vote_st ? ' in ' . vote_e( 'DC' === $vote_abbr ? 'DC' : $vote_st['name'] ) : ''; ?></h2>
+		<section class="info" id="info" aria-live="polite" aria-labelledby="before-h"><?php echo $vote_st ? vote_info( $vote_st ) : ''; ?></section>
 	</div>
 
 	<?php
@@ -399,6 +425,7 @@ $vote_ld = array(
 	$vote_next = false !== $vote_pos && $vote_pos < count( $vote_keys ) - 1 ? $vote_keys[ $vote_pos + 1 ] : '';
 	?>
 	<div class="discover">
+	<?php if ( $vote_st ) : ?><div class="discover__find"><?php echo vote_finder( 'Looking for another state?', 'Type a state name' ); ?></div><?php endif; ?>
 	<?php if ( $vote_same && $vote_same_h ) : ?>
 	<section class="near" aria-labelledby="same-h">
 		<h2 id="same-h"><?php echo vote_e( $vote_same_h ); ?></h2>
@@ -437,6 +464,7 @@ $vote_ld = array(
 	</nav>
 	</div>
 
+	<?php if ( ! $vote_404 ) : ?>
 	<section class="faq" aria-labelledby="faq-h">
 		<h2 id="faq-h">Common Questions</h2>
 		<details><summary>Is this an official election site?</summary><p>No. Vote Sticker is an independent, nonpartisan tool made by one person. For registration, polling places, and deadlines, go to your state or local election office. Each state page links to it.</p></details>
@@ -445,6 +473,7 @@ $vote_ld = array(
 		<details><summary>What if my state doesn't have early voting?</summary><p>Your sticker says VOTE NOV 3. If you can't vote in person on Election Day, you may qualify for an absentee ballot. Your state's page links to the rules.</p></details>
 		<details><summary>Do you keep my information?</summary><p>No. Your sticker is created in your browser and never uploaded.</p></details>
 	</section>
+	<?php endif; ?>
 </main>
 
 <footer class="foot">

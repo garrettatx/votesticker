@@ -1,0 +1,14 @@
+{
+  "name": "Vote Sticker",
+  "short_name": "Vote Sticker",
+  "description": "Voting stickers for your profile picture, by state. Make your plan. Share the sticker.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#FBF8F0",
+  "theme_color": "#14295E",
+  "icons": [
+    { "src": "/assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/assets/icons/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
