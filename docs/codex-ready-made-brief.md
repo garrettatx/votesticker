@@ -63,6 +63,11 @@ tier. Images 5 to 10 must not resemble those layouts or each other.
   (Jackson: 41% across, 56% down). Most Mississippi stars were drawn too far north.
 - **"Flat" means no visible gradient or texture.** Image tools add 1 to 5 RGB levels of noise; that
   passes. Don't fail or redraw for it.
+- **No oversized initial letter.** A giant serif I beside the map reads as a column at 48 px
+  (Mississippi 07, Idaho I VOTED).
+- **Vary concepts across states too.** Before choosing images 5 to 10, read the BRIEFS.md files of
+  states already done in incoming/codex/ and don't reuse their concepts, so the site doesn't look
+  templated state to state.
 - **The accent bar holds the date line, never the headline.** Mississippi's Navy core put the red bar
   behind NOV 3 instead of ELECTION DAY.
 - **Red with blue** only in the brand core palettes (Cream, Navy). Never as opposing halves.
