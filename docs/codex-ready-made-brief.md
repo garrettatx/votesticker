@@ -69,7 +69,8 @@ tier. Images 5 to 10 must not resemble those layouts or each other.
 
 ## Not Codex's Job
 
-- Centering and fitting into the crop circle. Claude runs `build/fit_to_circle.py`, which centers the
+- Star placement, map gaps, centering and fitting. Claude runs `build/codex_finish.py <ABBR> <out> <pngs...>`,
+  which finds the outline, moves the star, opens the gap, then runs `build/fit_to_circle.py`, which centers the
   artwork and scales it evenly inside the safe circle. A strong composition that only breaks the circle
   or sits off center is kept, not redrawn.
 - Small spacing fixes on flat backgrounds (moving a map up, removing a stray mark). Claude does these.
