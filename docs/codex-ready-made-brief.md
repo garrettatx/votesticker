@@ -67,7 +67,9 @@ tier. Images 5 to 10 must not resemble those layouts or each other.
   (Mississippi 07, Idaho I VOTED).
 - **Vary concepts across states too.** Before choosing images 5 to 10, read the BRIEFS.md files of
   states already done in incoming/codex/ and don't reuse their concepts, so the site doesn't look
-  templated state to state.
+  templated state to state. One exception, by Garrett's call (October 20): one house design per set,
+  I VOTED on a slight upward diagonal in a light cream over deep plum, with the outline above in a
+  lighter tint of the plum (Mississippi 08, Idaho).
 - **The accent bar holds the date line, never the headline.** Mississippi's Navy core put the red bar
   behind NOV 3 instead of ELECTION DAY.
 - **Red with blue** only in the brand core palettes (Cream, Navy). Never as opposing halves.
