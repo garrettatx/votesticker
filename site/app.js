@@ -746,7 +746,7 @@
 			if (!q) { return []; }
 			var code = q.length === 2 ? STATES.filter(function (s) { return s.abbr.toLowerCase() === q; }) : [];
 			var words = STATES.filter(function (s) {
-				return [nameOf(s), s.name].some(function (nm) { var n = fold(nm); return n.indexOf(q) === 0 || n.indexOf(' ' + q) > 0; });
+				return [nameOf(s), s.name, (meta[s.abbr] || {}).alias || ''].some(function (nm) { var n = fold(nm); return n.indexOf(q) === 0 || n.indexOf(' ' + q) > 0; });
 			});
 			return code.concat(words.filter(function (s) { return code.indexOf(s) < 0; })).slice(0, 8);
 		};

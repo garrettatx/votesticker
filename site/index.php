@@ -39,9 +39,10 @@ function t( $s, ...$args ) { $o = $GLOBALS['vote_i18n']['t'][ $s ] ?? $s; return
 // Page links carry the language prefix; images, scripts and fonts are shared (VOTE_BASE).
 function vote_pbase() { return vote_es() ? VOTE_BASE . 'es/' : VOTE_BASE; }
 // A state's name in lists and links (Spanish names where Spanish-language U.S. media use one).
-function vote_lname( $st ) { return vote_es() ? ( $GLOBALS['vote_i18n']['names'][ $st['abbr'] ] ?? $st['name'] ) : $st['name']; }
+// State names stay in English on Spanish pages too (Garrett, October 19): voters search and see them that way.
+function vote_lname( $st ) { return $st['name']; }
 // A state's name in titles and headings: English writes Washington, DC for the District.
-function vote_name( $st ) { return vote_es() ? vote_lname( $st ) : ( 'DC' === $st['abbr'] ? 'Washington, DC' : $st['name'] ); }
+function vote_name( $st ) { return 'DC' === $st['abbr'] ? 'Washington, DC' : $st['name']; }
 function vote_sfield( $st, $key ) { return vote_es() ? ( $GLOBALS['vote_i18n']['states'][ $st['abbr'] ][ $key ] ?? '' ) : ( $st[ $key ] ?? '' ); }
 const VOTE_MESES = array( 'enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre' );
 const VOTE_MES = array( 'ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sept', 'oct', 'nov', 'dic' );
@@ -217,8 +218,18 @@ function vote_meta_es( $st ) {
 
 // Suggested post text, in the person's own voice to friends (Spanish uses tú there).
 function vote_post( $st ) {
+	return vote_post_body( $st ) . "\n\n" . vote_hashtags( $st );
+}
+
+// #IVoted (#YaVoté in Spanish), the brand tag, and a state tag such as #VoteTexas.
+function vote_hashtags( $st ) {
+	$state = 'DC' === $st['abbr'] ? 'DC' : str_replace( ' ', '', $st['name'] );
+	return ( vote_es() ? '#YaVoté' : '#IVoted' ) . ' #VoteSticker #Vote' . $state;
+}
+
+function vote_post_body( $st ) {
 	$label = $st['officialLabel'] ?? '';
-	$name = vote_lname( $st );
+	$name = vote_name( $st );
 	if ( vote_es() ) {
 		$sum = vote_sfield( $st, 'summary' );
 		if ( vote_verified( $st ) && $sum ) { return $sum . ' Detalles en ' . $label . '.'; }
@@ -301,6 +312,7 @@ $vote_meta = array();
 $vote_by_slug = array();
 foreach ( $vote_rows as $abbr => $row ) {
 	$vote_meta[ $abbr ] = vote_meta( $row );
+	if ( isset( $GLOBALS['vote_i18n']['aliases'][ $abbr ] ) ) { $vote_meta[ $abbr ]['alias'] = $GLOBALS['vote_i18n']['aliases'][ $abbr ]; }
 	$vote_by_slug[ $vote_meta[ $abbr ]['slug'] ] = $abbr;
 }
 
@@ -380,6 +392,7 @@ $vote_ld = array(
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title><?php echo vote_e( $vote_page['title'] ); ?></title>
 <meta name="description" content="<?php echo vote_e( $vote_page['desc'] ); ?>">
+<?php if ( ! $vote_st && ! $vote_404 && ! vote_es() ) : ?><meta name="msvalidate.01" content="AA4622D038EF44D13B72400468BB1E7B"><?php echo "\n"; endif; ?>
 <?php if ( ! $vote_404 ) : ?><link rel="canonical" href="<?php echo vote_e( $vote_url ); ?>"><?php echo "\n"; endif; ?>
 <?php if ( ! $vote_404 && VOTE_ES_INDEX ) : ?><link rel="alternate" hreflang="en" href="<?php echo vote_e( $vote_alt['en'] ); ?>">
 <link rel="alternate" hreflang="es" href="<?php echo vote_e( $vote_alt['es'] ); ?>">
@@ -562,9 +575,9 @@ $vote_ld = array(
 					<a class="link-quiet" id="open" href="#" target="_blank" rel="noopener"><?php echo vote_e( t( 'Open full image' ) ); ?></a>
 				</div>
 				<p class="hint" id="tip"></p>
-				<details class="post">
+				<details class="post" open>
 					<summary><?php echo vote_e( t( 'Suggested post text' ) ); ?></summary>
-					<textarea id="post-text" rows="4" aria-label="<?php echo vote_e( t( 'Suggested post text' ) ); ?>"><?php echo $vote_st ? vote_e( vote_post( $vote_st ) ) : ''; ?></textarea>
+					<textarea id="post-text" rows="5" aria-label="<?php echo vote_e( t( 'Suggested post text' ) ); ?>"><?php echo $vote_st ? vote_e( vote_post( $vote_st ) ) : ''; ?></textarea>
 					<button type="button" class="btn btn--quiet" id="copy"><?php echo vote_e( t( 'Copy post text' ) ); ?></button>
 				</details>
 			</div>

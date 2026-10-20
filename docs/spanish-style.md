@@ -47,10 +47,9 @@ octubre", "el martes 3 de noviembre". Times: "7 p. m.", "8:30 a. m.".
 
 ## State Names
 
-Spanish names where Spanish-language U.S. media use one: Carolina del Norte, Carolina del Sur, Dakota
-del Norte, Dakota del Sur, Hawái, Luisiana, Misisipi, Misuri, Nueva Jersey, Nueva York, Nuevo
-Hampshire, Nuevo México, Pensilvania, Virginia Occidental, Washington D. C. Every other state keeps its
-English name. URLs keep English slugs (`/es/new-york/`).
+Every state keeps its English name on Spanish pages: North Carolina, South Carolina, West Virginia,
+Mississippi, New York, Washington, DC (Garrett, October 19). Voters see and search them that way on
+ballots and official sites. URLs keep English slugs (`/es/new-york/`).
 
 ## What Spanish Pages Leave Out on Purpose
 
@@ -70,5 +69,5 @@ Spanish pages are `noindex`, out of the sitemap, and no page carries hreflang. F
 2. **"sticker" or "calcomanía"** in body copy?
 3. **"Ya voté" or "Yo voté"** on the sticker?
 4. **"votación anticipada" vs "votación temprana"** in headings: we use anticipada.
-5. **State names:** keep "Nuevo Hampshire" and "Misisipi", or use the English names?
+5. **State names:** decided, English everywhere (Garrett, October 19).
 6. **"Para no correr riesgos"** (Oregon's "to be safe"): natural enough?

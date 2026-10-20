@@ -20,7 +20,7 @@ for (const [type, dev] of [[webkit, 'iPhone 13'], [webkit, 'iPhone SE'], [webkit
 	await p.goto(BASE + 'es/', { waitUntil: 'networkidle' });
 	await p.tap('#state-find'); await p.fill('#state-find', 'nueva y');
 	const first = await p.textContent('#state-opt-0');
-	if (!/^Nueva York/.test(first || '')) { console.log(`  FAIL ${dev} es finder: "nueva y" first is ${first}`); fails++; }
+	if (!/^New York/.test(first || '')) { console.log(`  FAIL ${dev} es finder: "nueva y" first is ${first}`); fails++; }
 	await p.tap('#state-opt-0'); await p.waitForURL(BASE + 'es/new-york/');
 	const head = await p.$eval('#headline', (s) => s.options[s.selectedIndex].textContent);
 	if (head !== 'Vota temprano') { console.log(`  FAIL ${dev} es default message is ${head}`); fails++; }

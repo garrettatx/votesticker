@@ -8,8 +8,10 @@
  * DRAFT: pending review by a native speaker; Spanish pages stay noindex until VOTE_ES_INDEX is true.
  */
 return array(
-	// Spanish state names where Spanish-language U.S. media use one; all others stay as in English.
-	'names' => array(
+	// State names stay in English (Garrett, October 19). Kept empty so nothing translates them.
+	'names' => array(),
+	// Spanish names, for the state finder only: typing "nueva york" still finds New York. Never displayed.
+	'aliases' => array(
 		'DC' => 'Washington D. C.', 'HI' => 'Hawái', 'LA' => 'Luisiana', 'MS' => 'Misisipi', 'MO' => 'Misuri',
 		'NH' => 'Nuevo Hampshire', 'NJ' => 'Nueva Jersey', 'NM' => 'Nuevo México', 'NY' => 'Nueva York',
 		'NC' => 'Carolina del Norte', 'ND' => 'Dakota del Norte', 'PA' => 'Pensilvania', 'SC' => 'Carolina del Sur',
@@ -39,7 +41,7 @@ return array(
 		'MN' => array( 'note' => 'Vota en la oficina electoral de tu condado o ciudad; el último día es el lunes 2 de noviembre, hasta las 5 p. m.' ),
 		'MS' => array( 'note' => 'El voto en ausencia, en persona o por correo, está disponible para votantes que cumplan ciertas condiciones.' ),
 		'MO' => array(
-			'summary' => 'En Misuri, el voto en ausencia en persona, sin necesidad de dar un motivo, es del martes 20 de octubre al lunes 2 de noviembre.',
+			'summary' => 'En Missouri, el voto en ausencia en persona, sin necesidad de dar un motivo, es del martes 20 de octubre al lunes 2 de noviembre.',
 			'note' => 'Vota en el lugar que indique tu autoridad electoral local (local election authority).',
 		),
 		'NE' => array(
@@ -54,8 +56,8 @@ return array(
 		'OK' => array( 'note' => 'Jueves y viernes de 8 a. m. a 6 p. m., y sábado de 8 a. m. a 2 p. m., en el condado donde te registraste.' ),
 		'OR' => array( 'note' => 'Las boletas se envían a partir del 14 de octubre. Para no correr riesgos, envía la tuya por correo a más tardar el 27 de octubre, o déjala en un buzón de entrega de boletas antes de las 8 p. m. del Día de las Elecciones.' ),
 		'PA' => array(
-			'summary' => 'En Pensilvania puedes pedir, llenar y entregar una boleta por correo en una sola visita a la oficina electoral de tu condado, hasta las 5 p. m. del martes 27 de octubre.',
-			'note' => 'Esta boleta por correo en persona es la forma en que los votantes de Pensilvania votan por anticipado.',
+			'summary' => 'En Pennsylvania puedes pedir, llenar y entregar una boleta por correo en una sola visita a la oficina electoral de tu condado, hasta las 5 p. m. del martes 27 de octubre.',
+			'note' => 'Esta boleta por correo en persona es la forma en que los votantes de Pennsylvania votan por anticipado.',
 		),
 		'RI' => array( 'note' => 'Vota en el ayuntamiento de tu ciudad o pueblo, o en un lugar designado, en horario regular de oficina.' ),
 		'SC' => array( 'note' => 'De lunes a sábado; cerrado el domingo 25 de octubre. Vota en cualquier centro de votación anticipada de tu condado.' ),
