@@ -210,7 +210,7 @@ def main():
 
     # Sitemap: exactly the hub and the verified states.
     status, _, xml = fetch(urljoin(base, 'sitemap.xml'))
-    locs = set(re.findall(r'<loc>(.*?)</loc>', xml))
+    locs = {l for l in re.findall(r'<loc>(.*?)</loc>', xml) if '/es/' not in l}  # Spanish pages: scripts/qa_es.py
     want = {PROD} | {PROD + p for p in verified}
     if status != 200 or locs != want:
         fail(f'sitemap: HTTP {status}, extra {sorted(locs - want)[:3]}, missing {sorted(want - locs)[:3]}')

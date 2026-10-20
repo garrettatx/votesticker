@@ -70,7 +70,7 @@ and the 30 state notes. Register, glossary, and reviewer questions: `docs/spanis
   defaults to Spanish messages. Header and showcase art are Spanish stickers drawn by `app.js`.
 - Language switch on every page goes to the exact pair; the English home page suggests Spanish once to
   browsers that prefer it, and an explicit choice is remembered. Nothing redirects.
-- **Review gate:** `VOTE_ES_INDEX` in `site/index.php` is `false` until a native speaker signs off.
+- **Indexing:** `VOTE_ES_INDEX` in `site/index.php` is `true` (Garrett turned it on October 19; native review to follow). Set it `false` to hide Spanish again:
   Spanish pages are then `noindex`, out of the sitemap, and no page carries hreflang. Flip it, rebuild,
   run QA, deploy.
 - Spanish share cards: `node build/og_cards.mjs http://127.0.0.1:8791/ es`.

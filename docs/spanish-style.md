@@ -60,7 +60,7 @@ English name. URLs keep English slugs (`/es/new-york/`).
 
 ## Release Gate
 
-`VOTE_ES_INDEX` in `site/index.php` stays `false` until a native speaker signs off. While false,
+`VOTE_ES_INDEX` in `site/index.php` was turned on by Garrett on October 19, ahead of the native review. Set it `false` to pull Spanish from search again. While false,
 Spanish pages are `noindex`, out of the sitemap, and no page carries hreflang. Flip it, rebuild, run
 `scripts/qa_es.py`, deploy.
 

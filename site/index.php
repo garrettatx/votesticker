@@ -31,7 +31,7 @@ const VOTE_BRAND = 'Vote Sticker'; // the tool's name: header lockup, breadcrumb
 // state names and state notes live in i18n/es.php, keyed by the English, so a missing key shows English
 // and QA catches it. Spanish pages stay noindex, and hreflang stays off, until a native speaker has
 // reviewed them; then set VOTE_ES_INDEX to true and rebuild.
-const VOTE_ES_INDEX = false;
+const VOTE_ES_INDEX = true; // indexing on: Garrett, October 19 (native review to follow)
 $vote_lang = defined( 'VOTE_LANG' ) ? VOTE_LANG : 'en';
 $vote_i18n = 'es' === $vote_lang ? require __DIR__ . '/i18n/es.php' : array( 't' => array(), 'names' => array(), 'states' => array() );
 function vote_es() { return 'es' === $GLOBALS['vote_lang']; }
@@ -333,9 +333,9 @@ $vote_page = $vote_st ? $vote_meta[ $vote_abbr ] : array(
 if ( $vote_404 ) {
 	$vote_page = array(
 		'title' => t( 'Page Not Found | Vote Sticker' ),
-		'h1' => t( 'We can’t find that page.' ),
-		'eyebrow' => t( 'Page not found' ),
-		'lead' => t( 'The link may be old or have a typo. Every state has its own page of voting stickers. Find yours below.' ),
+		'h1' => t( 'Page not found' ),
+		'eyebrow' => t( 'Error 404' ),
+		'lead' => t( 'There’s no page at this address. The link may be old or have a typo. Find your state below, or try one of these pages.' ),
 		'desc' => t( 'This page isn’t on Vote Sticker. Find your state for voting stickers and official election links.' ),
 		'index' => false,
 	);
@@ -463,17 +463,30 @@ $vote_ld = array(
 		<?php else : ?>
 		<div class="hero">
 			<div class="hero__text">
-				<p class="eyebrow"><?php echo vote_e( $vote_page['eyebrow'] ); ?></p>
+				<p class="<?php echo $vote_404 ? 'ribbon ribbon--err' : 'eyebrow'; ?>"><?php echo vote_e( $vote_page['eyebrow'] ); ?></p>
 				<h1 id="page-h1"><?php echo vote_e( $vote_page['h1'] ); ?></h1>
 				<p class="lead" id="page-lead"><?php echo vote_e( $vote_page['lead'] ); ?></p>
 				<?php echo vote_finder( 'Your state', 'Type a state, like Texas or TX' ); ?>
-				<?php echo $vote_404 ? '<p class="home-link"><a href="' . vote_pbase() . '">' . vote_e( t( 'Go to the Vote Sticker home page' ) ) . '</a></p>' : $vote_share; ?>
+				<?php if ( $vote_404 ) : ?>
+				<nav class="err-links" aria-labelledby="err-links-h">
+					<h2 id="err-links-h"><?php echo vote_e( t( 'Try one of these' ) ); ?></h2>
+					<ul>
+						<li><a href="<?php echo vote_pbase(); ?>"><?php echo vote_e( t( 'Vote Sticker home page' ) ); ?></a></li>
+						<?php foreach ( array( 'TX', 'CA', 'FL', 'NY', 'PA' ) as $a ) : ?><li><a href="<?php echo vote_pbase() . $vote_meta[ $a ]['slug']; ?>/"><?php echo vote_e( t( '%s stickers', vote_lname( $vote_rows[ $a ] ) ) ); ?></a></li><?php endforeach; ?>
+						<li><a href="<?php echo vote_pbase(); ?>#faq-h"><?php echo vote_e( t( 'Common Questions' ) ); ?></a></li>
+					</ul>
+				</nav>
+				<?php else : ?><?php echo $vote_share; ?><?php endif; ?>
 			</div>
+			<?php if ( $vote_404 ) : ?>
+			<div class="err-sticker" aria-hidden="true"><span>404</span><small><?php echo vote_e( t( 'Page not found' ) ); ?></small></div>
+			<?php else : ?>
 			<div class="hero__art" aria-hidden="true">
 				<?php foreach ( array( array( 'tx', 2 ), array( 'ca', 4 ), array( 'nc', 2 ) ) as $k => $h ) : if ( is_file( __DIR__ . "/assets/states/{$h[0]}/{$h[0]}-vote-{$h[1]}.jpg" ) ) : ?>
 				<img class="hero__sticker hero__sticker--<?php echo $k + 1; ?>" src="<?php echo vote_v( "assets/states/{$h[0]}/{$h[0]}-vote-{$h[1]}.jpg" ); ?>" alt="" width="1080" height="1080"<?php echo $k ? ' loading="lazy"' : ''; ?><?php echo vote_es() ? ' data-es-state="' . strtoupper( $h[0] ) . '"' : ''; ?>>
 				<?php endif; endforeach; ?>
 			</div>
+			<?php endif; ?>
 		</div>
 		<?php endif; ?>
 	</div>

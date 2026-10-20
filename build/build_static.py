@@ -84,8 +84,19 @@ def main():
         new[path] = [h, prev[1] if prev and prev[0] == h else today]
         urls.append((url, new[path][1]))
     LASTMOD.write_text(json.dumps(new, indent=1, sort_keys=True) + '\n')
-    xml = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-    xml += [f'  <url>\n    <loc>{u}</loc>\n    <lastmod>{m}</lastmod>\n  </url>' for u, m in urls]
+    # Each URL lists its language pair (Google's sitemap form of hreflang) when both pages are indexable.
+    indexable = {u for u, _ in urls}
+    def alts(u):
+        tail = u[len(SITE_URL):]
+        en = SITE_URL + (tail[3:] if tail.startswith('es/') else tail)
+        es = SITE_URL + 'es/' + (tail[3:] if tail.startswith('es/') else tail)
+        if en not in indexable or es not in indexable:
+            return ''
+        return (f'\n    <xhtml:link rel="alternate" hreflang="en" href="{en}"/>'
+                f'\n    <xhtml:link rel="alternate" hreflang="es" href="{es}"/>'
+                f'\n    <xhtml:link rel="alternate" hreflang="x-default" href="{en}"/>')
+    xml = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">']
+    xml += [f'  <url>\n    <loc>{u}</loc>\n    <lastmod>{m}</lastmod>{alts(u)}\n  </url>' for u, m in urls]
     xml.append('</urlset>')
     (DIST / 'sitemap.xml').write_text('\n'.join(xml) + '\n')
     (DIST / '404.html').write_text(render('404'))

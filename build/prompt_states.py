@@ -106,7 +106,7 @@ def main():
             rows[r['abbr']] = r
     # States whose first sets were too samey to keep as final (October 19): redo them; their current
     # images stay live until the new ones replace them.
-    redo = {'FL', 'MD', 'NJ'}
+    redo = {'MD', 'NJ'}
     have = {p.name.upper() for p in (ROOT / 'site/assets/states').iterdir() if p.is_dir()} - redo
     todo = [a for a in POP if a in rows and a not in have]
     groups = [('Verified Dates', lambda r: r['status'] == 'verified'),

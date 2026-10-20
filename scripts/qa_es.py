@@ -133,17 +133,21 @@ def main():
             continue
         en, es = parse(en_html), parse(es_html)
         noindex = 'noindex' in es.meta.get('robots', '')
-        gated = noindex if gated is None else gated
+        en_noindex = 'noindex' in en.meta.get('robots', '')
+        gated = noindex if gated is None else gated  # the hub decides: Spanish still under review or live
         if es.lang != 'es' or en.lang != 'en':
             fail(f'/{p}: lang en={en.lang!r} es={es.lang!r}')
         if es.canon != PROD + 'es/' + p:
             fail(f'/es/{p}: canonical {es.canon}')
         want = {'en': PROD + p, 'es': PROD + 'es/' + p, 'x-default': PROD + p}
-        if noindex:
+        if gated:
             if es.alts or en.alts:
-                fail(f'/{p}: hreflang present while Spanish is noindex')
-        elif es.alts != want or en.alts != want:
-            fail(f'/{p}: hreflang en={en.alts} es={es.alts}')
+                fail(f'/{p}: hreflang present while Spanish is under review')
+        else:
+            if es.alts != want or en.alts != want:
+                fail(f'/{p}: hreflang en={en.alts} es={es.alts}')
+            if noindex != en_noindex:
+                fail(f'/{p}: noindex en={en_noindex} es={noindex}')
         if urljoin(base, es.switch) not in (PROD + p, urljoin(base, p)) or urljoin(base, en.switch) not in (PROD + 'es/' + p, urljoin(base, 'es/' + p)):
             fail(f'/{p}: language switch en->{en.switch} es->{es.switch}')
         if es.meta.get('og:locale') != 'es_MX' or not re.search(r'/assets/(og/es/|og-hub-es)', es.meta.get('og:image', '')):

@@ -409,10 +409,6 @@ select:hover, input:hover, textarea:hover { border-color: #A79D86; }
 	* { transition: none !important; scroll-behavior: auto !important; }
 }
 
-/* 404: a plain way home under the finder. */
-.home-link { margin: var(--s4) 0 0; font-size: var(--fs-sm); }
-.home-link a { color: var(--cream); font-weight: 700; }
-
 /* Language (October 19): English/Español switch beside the brand, and a one-time Spanish suggestion
    on the English home page for browsers that prefer Spanish. */
 .top__bar { display: flex; align-items: center; justify-content: space-between; gap: var(--s3); margin: 0 0 var(--s5); }
@@ -423,3 +419,17 @@ select:hover, input:hover, textarea:hover { border-color: #A79D86; }
 .lang-suggest .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s2) var(--s4); padding-top: var(--s3); padding-bottom: var(--s3); }
 .lang-suggest p { margin: 0; font-weight: 700; }
 .lang-suggest .btn { min-height: 40px; padding: 6px 16px; }
+
+/* 404: an unmistakable error (red label, plain heading, a 404 sticker) and the most useful next steps. */
+.ribbon--err { margin-bottom: var(--s2); }
+.err-links { margin-top: var(--s5); }
+.err-links h2 { color: var(--cream); font-size: var(--fs-base); margin: 0 0 var(--s2); }
+.err-links ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: var(--s2); }
+.err-links a { display: inline-flex; align-items: center; min-height: 44px; padding: 8px 14px; border: 1.5px solid #7D8DB6; border-radius: 999px; color: var(--cream); font-size: var(--fs-sm); font-weight: 700; text-decoration: none; }
+.err-links a:hover { background: var(--cream); border-color: var(--cream); color: var(--ink); }
+.err-sticker { display: none; }
+@media (min-width: 860px) {
+	.err-sticker { display: flex; flex-direction: column; align-items: center; justify-content: center; justify-self: center; width: 340px; height: 340px; border-radius: 50%; background: var(--cream); color: var(--ink); box-shadow: 0 0 0 10px var(--cream), 0 0 0 16px var(--accent), 0 14px 30px rgba(0, 0, 0, 0.35); transform: rotate(-6deg); }
+	.err-sticker span { font-family: "Vote Display", Impact, sans-serif; font-size: 8rem; line-height: 0.9; }
+	.err-sticker small { margin-top: var(--s2); font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); }
+}
