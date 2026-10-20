@@ -79,6 +79,7 @@ favorite. Each one still has to pass the rules.
 - **I stays on the same line as VOTED,** never alone on its own line (it reads as a numeral 1 or a
   pillar). **Type families:** the heavy condensed sans, or brush lettering. No slab or wood-type
   serifs; they look out of family next to the rest of the set (Nebraska).
+- **A contrasting I is fine at headline height** (Oregon's gold slab I on the VOTED line reads as "I VOTED").
 - **No oversized initial letter.** A giant serif I beside the map reads as a column at 48 px
   (Mississippi 07, Idaho I VOTED).
 - **Proven concepts can repeat across states; each set still needs its own ideas.** Strong concepts
