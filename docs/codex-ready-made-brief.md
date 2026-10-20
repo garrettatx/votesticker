@@ -74,6 +74,8 @@ favorite. Each one still has to pass the rules.
 - **Place the star from the repo's map data.** Before drawing, read the state's `w`, `h` and `cap` in
   `site/state-shapes.js` and give the star's position as a share of the outline's width and height
   (Jackson: 41% across, 56% down). Most Mississippi stars were drawn too far north.
+- **Don't redraw for small misses.** A map within 8% of its true width, or a star a little off, is
+  Claude's to fix (`codex_finish.py` widens squeezed maps and moves stars). Redraws cost usage.
 - **"Flat" means no visible gradient or texture.** Image tools add 1 to 5 RGB levels of noise; that
   passes. Don't fail or redraw for it.
 - **Every shape has a job.** The outline, the type, a plate or bar that backs the type (a stepped plate

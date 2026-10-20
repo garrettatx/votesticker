@@ -108,9 +108,30 @@ def fix(src, dst, abbr, shape, capx, capy):
     if R is None or R.sum() < 500:
         Image.fromarray(a.astype('uint8')).save(dst); return f'no outline matched (best {iou:.2f}); unchanged'
     ry, rx = np.nonzero(R); mx0, my0, mx1, my1 = rx.min(), ry.min(), rx.max(), ry.max()
+    # true proportions: widen (or heighten) a squeezed outline when open background allows it
+    note_p = ''
+    want = shape.shape[1] / shape.shape[0]; have = (mx1 - mx0) / max(my1 - my0, 1)
+    if abs(have / want - 1) > 0.08:
+        bw, bh = mx1 - mx0 + 1, my1 - my0 + 1
+        nw, nh = (round(bh * want), bh) if have < want else (bw, round(bw / want))
+        cx0 = round((mx0 + mx1) / 2 - nw / 2); cy0 = my1 + 1 - nh if nh > bh else my0
+        box = np.zeros_like(R); box[max(cy0 - 12, 0):cy0 + nh + 12, max(cx0 - 12, 0):cx0 + nw + 12] = True
+        if cx0 >= 0 and cy0 >= 0 and cx0 + nw <= W and not (nonbg & box & ~grow(R, 3)).any():
+            layer = Image.fromarray(a[my0:my1 + 1, mx0:mx1 + 1].astype('uint8')).resize((nw, nh), Image.LANCZOS)
+            lm = Image.fromarray((grow(R, 2)[my0:my1 + 1, mx0:mx1 + 1] * 255).astype('uint8')).resize((nw, nh), Image.LANCZOS)
+            a[grow(R, 3)] = bg
+            img = Image.fromarray(a.astype('uint8')); img.paste(layer, (cx0, cy0), lm)
+            a = np.asarray(img).astype(int).copy(); nonbg = np.abs(a - bg).sum(2) > 60
+            R, iou = find_outline(nonbg, shape)
+            if R is None or R.sum() < 500:
+                Image.fromarray(a.astype('uint8')).save(dst); return 'proportions fixed; outline lost after'
+            ry, rx = np.nonzero(R); mx0, my0, mx1, my1 = rx.min(), ry.min(), rx.max(), ry.max()
+            note_p = f', proportions {have / want:.2f} -> 1.00'
+        else:
+            note_p = f', proportions {have / want:.2f} (no room to fix)'
     mapc = np.median(a[shrink(R, 6)], axis=0)
     diff = np.abs(a - mapc).sum(2)
-    S0 = shrink(R, 6) & (diff > 90); note = f'outline {iou:.2f}'
+    S0 = shrink(R, 6) & (diff > 90); note = f'outline {iou:.2f}' + note_p
     if S0.any():
         best = None; left = S0.copy()
         while left.any():
