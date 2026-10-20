@@ -83,14 +83,16 @@ def find_outline(nonbg, shape):
         if area < 150: continue
         sx = (x1 - x0) / (pb[2] - pb[0]); sy = (y1 - y0) / (pb[3] - pb[1])
         if not 0.7 < sx / sy < 1.4: continue
-        k = (sx + sy) / 2
-        fx0 = x0 - pb[0] * k; fy0 = y0 - pb[1] * k; fw, fh = sh_w * k, sh_h * k
+        fx0 = x0 - pb[0] * sx; fy0 = y0 - pb[1] * sy; fw, fh = sh_w * sx, sh_h * sy
         fx0, fy0 = int(round(fx0)), int(round(fy0)); fx1, fy1 = int(round(fx0 + fw)), int(round(fy0 + fh))
         if fx0 < -3 or fy0 < -3 or fx1 > W + 3 or fy1 > H + 3: continue
         fx0, fy0, fx1, fy1 = max(fx0, 0), max(fy0, 0), min(fx1, W), min(fy1, H)
-        ids = {m for m, a2, a, b, c, d in comps if a >= fx0 - 2 and b >= fy0 - 2 and c <= fx1 + 2 and d <= fy1 + 2}
-        got = fill_holes(np.isin(lab[fy0:fy1, fx0:fx1], list(ids)))
-        want = np.asarray(Image.fromarray(shape).resize((fx1 - fx0, fy1 - fy0), Image.NEAREST))
+        ids = {m for m, a2, a, b, c, d in comps if a >= fx0 - 2 and b >= fy0 - 2 and c <= fx1 + 2 and d <= fy1 + 2} | {n}
+        # score the anchor against the shape's largest part alone: generated maps place a second part
+        # (Michigan's Upper Peninsula) only roughly, so a whole-shape score undersells a good match
+        got = fill_holes(lab[y0:y1, x0:x1] == n)
+        part = big[pb[1]:pb[3], pb[0]:pb[2]]
+        want = np.asarray(Image.fromarray(part).resize((x1 - x0, y1 - y0), Image.NEAREST))
         iou = (got & want).sum() / max((got | want).sum(), 1)
         if iou > best[0]: best = (iou, ids)
     if best[0] < 0.6: return None, best[0]
@@ -103,7 +105,7 @@ def fix(src, dst, abbr, shape, capx, capy):
     bg = np.median(np.array([a[6, 6], a[6, W - 7], a[H - 7, 6], a[H - 7, W - 7]]), axis=0)
     nonbg = np.abs(a - bg).sum(2) > 60
     R, iou = find_outline(nonbg, shape)
-    if R is None:
+    if R is None or R.sum() < 500:
         Image.fromarray(a.astype('uint8')).save(dst); return f'no outline matched (best {iou:.2f}); unchanged'
     ry, rx = np.nonzero(R); mx0, my0, mx1, my1 = rx.min(), ry.min(), rx.max(), ry.max()
     mapc = np.median(a[shrink(R, 6)], axis=0)

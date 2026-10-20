@@ -114,6 +114,9 @@ Never use: {never}.
 - incoming/codex/{k}/CHECK.md, then stop.
 """
     fn = f'{i:02d}-{k}-{r["name"].lower().replace(" ", "-")}.md'
+    if a in STRONG:  # Garrett, October 20: the strong early sets stay as they are, no new images
+        index.append(f'| {i} | {r["name"]} | {r["have"]} | {kind} | skip: strong set already |')
+        continue
     (OUT / fn).write_text(body)
     index.append(f'| {i} | [{r["name"]}]({fn}) | {r["have"]} | {kind} | {"5-image I VOTED pack" if a in STRONG else "set of 10"} |')
 (OUT / 'README.md').write_text("""# Codex Prompt Files

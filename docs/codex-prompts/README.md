@@ -50,15 +50,15 @@ and puts the approved set live.
 | 36 | [West Virginia](36-wv-west-virginia.md) | 5 | none | set of 10 |
 | 37 | [Wisconsin](37-wi-wisconsin.md) | 5 | none | set of 10 |
 | 38 | [Wyoming](38-wy-wyoming.md) | 5 | none | set of 10 |
-| 39 | [California](39-ca-california.md) | 6 | mail | 5-image I VOTED pack |
+| 39 | California | 6 | mail | skip: strong set already |
 | 40 | [Maryland](40-md-maryland.md) | 6 | early | set of 10 |
 | 41 | [North Carolina](41-nc-north-carolina.md) | 6 | early | set of 10 |
 | 42 | [Virginia](42-va-virginia.md) | 6 | early | set of 10 |
-| 43 | [Colorado](43-co-colorado.md) | 7 | mail | 5-image I VOTED pack |
-| 44 | [New York](44-ny-new-york.md) | 7 | early | 5-image I VOTED pack |
-| 45 | [Pennsylvania](45-pa-pennsylvania.md) | 7 | early | 5-image I VOTED pack |
-| 46 | [Texas](46-tx-texas.md) | 9 | early | 5-image I VOTED pack |
-| 47 | [District of Columbia](47-dc-district-of-columbia.md) | 10 | early | 5-image I VOTED pack |
-| 48 | [Kansas](48-ks-kansas.md) | 10 | early | 5-image I VOTED pack |
-| 49 | [Missouri](49-mo-missouri.md) | 10 | early | 5-image I VOTED pack |
-| 50 | [Washington](50-wa-washington.md) | 10 | mail | 5-image I VOTED pack |
+| 43 | Colorado | 7 | mail | skip: strong set already |
+| 44 | New York | 7 | early | skip: strong set already |
+| 45 | Pennsylvania | 7 | early | skip: strong set already |
+| 46 | Texas | 9 | early | skip: strong set already |
+| 47 | District of Columbia | 10 | early | skip: strong set already |
+| 48 | Kansas | 10 | early | skip: strong set already |
+| 49 | Missouri | 10 | early | skip: strong set already |
+| 50 | Washington | 10 | mail | skip: strong set already |
