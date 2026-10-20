@@ -58,6 +58,11 @@ tier. Images 5 to 10 must not resemble those layouts or each other.
   at 48 px (MAKE A PLAN had a gold slash after "A").
 - **No repeated concepts.** Two images on the same diagonal over the same plum background read as a
   color swap. Vary composition and palette; check BRIEFS.md before each image.
+- **Place the star from the repo's map data.** Before drawing, read the state's `w`, `h` and `cap` in
+  `site/state-shapes.js` and give the star's position as a share of the outline's width and height
+  (Jackson: 41% across, 56% down). Most Mississippi stars were drawn too far north.
+- **"Flat" means no visible gradient or texture.** Image tools add 1 to 5 RGB levels of noise; that
+  passes. Don't fail or redraw for it.
 - **The accent bar holds the date line, never the headline.** Mississippi's Navy core put the red bar
   behind NOV 3 instead of ELECTION DAY.
 - **Red with blue** only in the brand core palettes (Cream, Navy). Never as opposing halves.
