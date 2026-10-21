@@ -1,0 +1,224 @@
+{
+ "abbr": "ID",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "voteidaho.gov": {
+   "en": "the Idaho Secretary of State (VoteIdaho.gov)",
+   "es": "la Secretaría de Estado de Idaho (VoteIdaho.gov)"
+  },
+  "archive.voteidaho.gov": {
+   "en": "the Idaho Secretary of State (VoteIdaho.gov)",
+   "es": "la Secretaría de Estado de Idaho (VoteIdaho.gov)"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "Preregistration closes at 5 p.m. local time on Friday, October 23, 2026. After that, you can still register in person at early voting or at your polling place on Election Day with a photo ID and proof of residence.",
+   "es": "El registro previo cierra a las 5 p. m., hora local, del viernes 23 de octubre de 2026. Después de esa fecha, todavía puedes registrarte en persona en la votación anticipada o en tu lugar de votación el Día de las Elecciones con una identificación con foto y un comprobante de domicilio.",
+   "src": "https://archive.voteidaho.gov/download/2026-election-calendar.pdf",
+   "checked": "2026-10-21",
+   "quote": "Pre-registration Deadline: Voter registrations must be received by the county clerk by 5 p.m. local time — for the Nov. 3 election.",
+   "status": "verified",
+   "until": "2026-10-23",
+   "en_after": "Preregistration closed October 23. You can still register in person at your polling place on Election Day with a photo ID and proof of residence.",
+   "es_after": "El registro previo cerró el 23 de octubre. Todavía puedes registrarte en persona en tu lugar de votación el Día de las Elecciones con una identificación con foto y un comprobante de domicilio."
+  },
+  "mail_request": {
+   "en": "Your county clerk must receive your absentee ballot request by 5 p.m. on Friday, October 23, 2026.",
+   "es": "El secretario de tu condado (county clerk) debe recibir tu solicitud de boleta de voto en ausencia a más tardar a las 5 p. m. del viernes 23 de octubre de 2026.",
+   "src": "https://archive.voteidaho.gov/download/2026-election-calendar.pdf",
+   "checked": "2026-10-21",
+   "quote": "Absentee Ballot Application Deadline: Applications must be received by the county clerk by 5 p.m. — for the Nov. 3 election.",
+   "status": "verified",
+   "until": "2026-10-23",
+   "en_after": "Absentee requests closed at 5 p.m. on October 23. You can still vote in person on Election Day, 8 a.m. to 8 p.m.",
+   "es_after": "Las solicitudes de boleta de voto en ausencia cerraron a las 5 p. m. del 23 de octubre. Todavía puedes votar en persona el Día de las Elecciones, de 8 a. m. a 8 p. m."
+  },
+  "mail_return": {
+   "en": "Mail it with a stamp, drop it in an official elections drop box, or bring it to your county elections office. Your county clerk must receive it by 8 p.m. on Tuesday, November 3, 2026.",
+   "es": "Envíala por correo con estampilla, déjala en un buzón electoral oficial o llévala a la oficina electoral de tu condado. El secretario de tu condado debe recibirla a más tardar a las 8 p. m. del martes 3 de noviembre de 2026.",
+   "src": "https://voteidaho.gov/casting-your-ballot/",
+   "checked": "2026-10-21",
+   "quote": "Return the completed ballot by mail, to an official elections drop box, or your county elections office by 8 p.m. on Election Day for your vote to be counted.",
+   "status": "verified"
+  },
+  "early_hours": {
+   "en": "Days and hours differ by county, so check your county in the chart on VoteIdaho.gov. Early voting ends at 5 p.m. on Friday, October 30.",
+   "es": "Los días y horarios cambian según el condado, así que busca el tuyo en la tabla de VoteIdaho.gov. La votación anticipada termina a las 5 p. m. del viernes 30 de octubre.",
+   "src": "https://archive.voteidaho.gov/download/2026-election-calendar.pdf",
+   "checked": "2026-10-21",
+   "quote": "In-Person Absentee/Early Voting Ends: At 5 p.m. — for the Nov. 3 election.",
+   "status": "verified"
+  },
+  "cure": {
+   "status": "missing",
+   "notes": "VoteIdaho says signatures on absentee envelopes are verified, but no cure process or deadline was found."
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "Vote early at an early voting or in-person absentee location in your county until October 30. On Election Day, go to your assigned voting location, based on your home address, from 8 a.m. to 8 p.m.",
+   "es": "Vota por anticipado en un lugar de votación anticipada o de voto en ausencia en persona de tu condado hasta el 30 de octubre. El Día de las Elecciones, ve al lugar de votación que te corresponde según tu domicilio, de 8 a. m. a 8 p. m.",
+   "src": "https://voteidaho.gov/casting-your-ballot/",
+   "checked": "2026-10-21",
+   "quote": "Visit your voting location (polling place) on Election Day between 8 a.m. to 8 p.m. You are assigned a specific voting location based on your physical address.",
+   "status": "verified"
+  },
+  "first_time": {
+   "en": "Registering at the polls? Bring a current photo ID and proof of residence, such as a lease, mortgage or rental agreement. Register using your main Idaho home address.",
+   "es": "¿Te vas a registrar en el lugar de votación? Lleva una identificación con foto vigente y un comprobante de domicilio, como un contrato de arrendamiento, de hipoteca o de renta. Regístrate con la dirección de tu casa principal en Idaho.",
+   "src": "https://voteidaho.gov/voter-registration/",
+   "checked": "2026-10-21",
+   "quote": "To register to vote in person, you will need a current photo ID and proof of residence.",
+   "status": "verified"
+  }
+ },
+ "where": {
+  "locator_url": "https://votertools.voteidaho.gov/TEDElectionLink/VoterServices/voter/where-do-I-vote",
+  "locator_label": {
+   "en": "Where Do I Vote? (VoteIdaho.gov)",
+   "es": "Where Do I Vote? (VoteIdaho.gov)"
+  },
+  "local_offices_url": "https://voteidaho.gov/county-clerk/",
+  "rule": {
+   "en": "Look up your assigned Election Day voting location on VoteIdaho.gov. For early voting, find your county in the early voting chart or ask your county elections office.",
+   "es": "Busca en VoteIdaho.gov el lugar de votación que te corresponde el Día de las Elecciones. Para la votación anticipada, busca tu condado en la tabla de votación anticipada o pregunta en la oficina electoral de tu condado.",
+   "src": "https://voteidaho.gov/guide-to-vote-in-person/",
+   "checked": "2026-10-21",
+   "quote": "To vote in person on Election Day, you must visit your assigned voting location based on your physical address.",
+   "status": "verified"
+  }
+ },
+ "id": {
+  "rule": "photo_requested",
+  "accepted": {
+   "en": [
+    "Idaho driver's license or ID card",
+    "U.S. passport or federal photo ID card",
+    "Concealed weapons license issued by an Idaho county sheriff"
+   ],
+   "es": [
+    "Licencia de conducir o tarjeta de identificación de Idaho",
+    "Pasaporte de EE. UU. o identificación federal con foto",
+    "Licencia para portar armas ocultas (concealed weapons license) expedida por un sheriff de condado de Idaho"
+   ],
+   "src": "https://voteidaho.gov/guide-to-vote-in-person/",
+   "checked": "2026-10-21",
+   "quote": "Concealed weapons license issued by a county sheriff in Idaho",
+   "status": "verified"
+  },
+  "expired": {
+   "status": "missing"
+  },
+  "without": {
+   "en": "No photo ID? If you're registered, sign a Personal Identification Affidavit with your name and address, swearing to who you are. You then get a regular ballot, counted with all the others.",
+   "es": "¿No tienes identificación con foto? Si estás registrado, firma una declaración jurada de identidad (Personal Identification Affidavit) con tu nombre y dirección, en la que juras quién eres. Luego recibes una boleta regular, que se cuenta con todas las demás.",
+   "src": "https://voteidaho.gov/guide-to-vote-in-person/",
+   "checked": "2026-10-21",
+   "quote": "After signing the Affidavit, the voter will be issued a ballot to be tabulated with all other ballots.",
+   "status": "verified"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "Any registered Idaho voter can request an absentee ballot by mail, no reason needed. You need a new request each calendar year.",
+   "es": "Cualquier votante registrado en Idaho puede pedir una boleta de voto en ausencia por correo, sin dar una razón. Necesitas hacer una solicitud nueva cada año calendario.",
+   "src": "https://voteidaho.gov/casting-your-ballot/",
+   "checked": "2026-10-21",
+   "quote": "Any registered voter in Idaho may request an absentee ballot to be mailed to their address.",
+   "status": "verified"
+  },
+  "witness": {
+   "en": "Sign the outside of the return envelope. Elections staff verify every signature. Mailing it? Add postage.",
+   "es": "Firma el sobre de devolución por fuera. El personal electoral verifica todas las firmas. ¿La envías por correo? Ponle estampilla.",
+   "src": "https://voteidaho.gov/casting-your-ballot/",
+   "checked": "2026-10-21",
+   "quote": "Remember to sign the outside of the return envelope. All signatures will be verified by elections staff.",
+   "status": "verified"
+  },
+  "track_url": "https://votertools.voteidaho.gov/TEDElectionLink/VoterServices/voter-search/ovr-voter-search?returnUrl=VoterServices%2Fvoter%2Fvoter-profile",
+  "cure": {
+   "status": "missing",
+   "notes": "See dates.cure."
+  },
+  "dropbox": {
+   "en": "Use an official elections drop box or take it to your county elections office by 8 p.m. on Election Day.",
+   "es": "Usa un buzón electoral oficial o llévala a la oficina electoral de tu condado a más tardar a las 8 p. m. del Día de las Elecciones.",
+   "src": "https://voteidaho.gov/casting-your-ballot/",
+   "checked": "2026-10-21",
+   "quote": "Return the completed ballot by mail, to an official elections drop box, or your county elections office by 8 p.m. on Election Day for your vote to be counted.",
+   "status": "verified"
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "en": "Leave the campaign gear at home. Voting locations are neutral spaces, so don't wear or bring anything that promotes a candidate, issue or party on the ballot.",
+   "es": "Deja en casa lo de campaña. Los lugares de votación son espacios neutrales, así que no lleves puesto ni traigas nada que promueva a un candidato, una propuesta o un partido de la boleta.",
+   "src": "https://voteidaho.gov/guide-to-vote-in-person/",
+   "checked": "2026-10-21",
+   "quote": "Voting locations are neutral, non-partisan spaces, so do not wear or bring anything to vote that promotes a candidate, issue, or party on the ballot.",
+   "status": "verified"
+  },
+  "phone": {
+   "status": "missing"
+  },
+  "line": {
+   "en": "Polls close at 8 p.m. If you're in line by then, stay put. You can still vote.",
+   "es": "Los lugares de votación cierran a las 8 p. m. Si estás en la fila a esa hora, no te salgas. Todavía puedes votar.",
+   "src": "https://voteidaho.gov/guide-to-vote-in-person/",
+   "checked": "2026-10-21",
+   "quote": "If you are in line to vote by 8 p.m. on Election Day, you may vote, even after polls close.",
+   "status": "verified"
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "en": "Idaho's own voting guide ends with a sticker: after you turn in your ballot, grab an I Voted sticker and wear it proudly.",
+   "es": "La propia guía para votar de Idaho termina con un sticker: después de entregar tu boleta, toma un sticker de I Voted y llévalo con orgullo.",
+   "src": "https://voteidaho.gov/guide-to-vote-in-person/",
+   "checked": "2026-10-21",
+   "quote": "Grab an “I Voted” sticker and wear it proudly!",
+   "status": "verified"
+  }
+ },
+ "faq": {
+  "provisional": {
+   "en": "Idaho doesn't use provisional ballots. If you're not registered, register at early voting or at your polling place on Election Day with a photo ID and proof of residence.",
+   "es": "Idaho no usa boletas provisionales. Si no estás registrado, regístrate en la votación anticipada o en tu lugar de votación el Día de las Elecciones con una identificación con foto y un comprobante de domicilio.",
+   "src": "https://voteidaho.gov/frequently-asked-questions/",
+   "checked": "2026-10-21",
+   "quote": "Idaho does not utilize provisional ballots.",
+   "status": "verified"
+  },
+  "line": {
+   "en": "You can still vote. If you're in line by 8 p.m. on Election Day, you may vote even after the polls close.",
+   "es": "Todavía puedes votar. Si estás en la fila a las 8 p. m. del Día de las Elecciones, puedes votar aunque ya hayan cerrado los lugares de votación.",
+   "src": "https://voteidaho.gov/guide-to-vote-in-person/",
+   "checked": "2026-10-21",
+   "quote": "If you are in line to vote by 8 p.m. on Election Day, you may vote, even after polls close.",
+   "status": "verified"
+  },
+  "track": {
+   "en": "Check your voter record on VoteIdaho.gov to see whether your county clerk has mailed your absentee ballot and whether your county received it back.",
+   "es": "Revisa tu registro de votante en VoteIdaho.gov para ver si el secretario de tu condado ya te envió tu boleta de voto en ausencia y si tu condado ya la recibió de vuelta.",
+   "src": "https://voteidaho.gov/frequently-asked-questions/",
+   "checked": "2026-10-21",
+   "quote": "You may check to see if your county clerk has mailed an absentee ballot on your voter record.",
+   "status": "verified"
+  },
+  "unsigned": {
+   "status": "missing"
+  },
+  "late_mail": {
+   "en": "Your county clerk must receive it by 8 p.m. on Election Day. Running late? Use an official drop box or take it to your county elections office instead of mailing it.",
+   "es": "El secretario de tu condado debe recibirla a más tardar a las 8 p. m. del Día de las Elecciones. ¿Se te hizo tarde? Mejor usa un buzón electoral oficial o llévala a la oficina electoral de tu condado en lugar de mandarla por correo.",
+   "src": "https://archive.voteidaho.gov/download/2026-election-calendar.pdf",
+   "checked": "2026-10-21",
+   "quote": "Absentee Ballot Return Deadline: Voted absentee ballots must be received — by the county clerk — by 8 p.m. for the Nov. 3 election.",
+   "status": "verified"
+  }
+ },
+ "notes": "Read October 21, 2026 on voteidaho.gov (Casting Your Ballot, Guide to Voting in Person, Registering To Vote, FAQ, 2026 Idaho General Election, Preregistration Deadline event) and the 2026 Election Calendar PDF on archive.voteidaho.gov. Early voting end in states.js (Friday, October 30) matches: the calendar says it ends at 5 p.m., and Casting Your Ballot says 'Visit an early voting or in-person absentee location until October 30.' The calendar also says early voting 'may begin' October 13 in counties that choose to offer it. legislature.idaho.gov (Idaho Code) failed to connect from curl and WebFetch, and Claude in Chrome has no permission for that domain, so no statute was read. Electioneering distance: the VoteIdaho FAQ says 'In Idaho, electioneering is prohibited within 250 feet of a voting location. See Idaho Code, 18-2318.' The statute could not be read to confirm, so the gear fact uses the clothing rule from the in-person guide and leaves the distance off. The 2026 General Election page shows a sticker image with alt text 'I Voted. America 250 in Idaho. 1776-2026.' (file 2026-vote-sticker.png); not used because no sentence says how it is distributed. No cure process, phone rule or expired-ID rule found."
+}

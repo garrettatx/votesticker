@@ -1,0 +1,159 @@
+{
+ "abbr": "DC",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "code.dccouncil.gov": {
+   "en": "the D.C. Code",
+   "es": "el Código del Distrito de Columbia (D.C. Code)"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "Missed the deadline? Register and vote the same day at any Vote Center during early voting or on Election Day. Bring proof of where you live, like a current government photo ID or a copy of a utility bill.",
+   "es": "¿Se te pasó la fecha límite? Regístrate y vota el mismo día en cualquier centro de votación (Vote Center) durante la votación anticipada o el Día de las Elecciones. Lleva un comprobante de domicilio, como una identificación con foto del gobierno vigente o una copia de un recibo de servicios.",
+   "src": "https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.07",
+   "checked": "2026-10-21",
+   "quote": "A qualified elector may register during early voting or on election day by appearing in person at any Vote Center and by completing a voter registration application, making an oath in the form prescribed by the Board, and providing proof of residence.",
+   "status": "verified"
+  },
+  "mail_request": {
+   "status": "missing",
+   "notes": "DCBOE says every registered voter is mailed a ballot, but dcboe.org fails the validator's OFFICIAL host pattern, so it can't be cited."
+  },
+  "mail_return": {
+   "en": "Drop box or Vote Center: by 8 p.m. on Tuesday, November 3. Mail: postmarked on or before November 3 and received by the Board of Elections within 10 days after Election Day.",
+   "es": "Buzón de entrega o centro de votación: a más tardar a las 8 p. m. del martes 3 de noviembre. Correo: con matasellos del 3 de noviembre o antes y recibida por la Junta de Elecciones (Board of Elections) dentro de los 10 días después del Día de las Elecciones.",
+   "src": "https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.05",
+   "checked": "2026-10-21",
+   "quote": "Postmarked or otherwise proven to have been mailed on or before election day and received by the Board no later than the 10th day after election day; or",
+   "status": "verified"
+  },
+  "early_hours": {
+   "status": "missing",
+   "notes": "The D.C. Code leaves early voting hours to the Board. DCBOE's Early Vote Centers page gives 8:30 a.m. to 7 p.m., Monday, October 26 to Sunday, November 1 (matches states.js), but dcboe.org can't be cited."
+  },
+  "cure": {
+   "status": "missing",
+   "notes": "D.C. Code 1-1001.05(a)(10D) tells the Board to write cure rules; the rules (DCMR) and DCBOE's cure page were not read."
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "Vote at any Vote Center in DC, during early voting or on Election Day, wherever you live in the District. There's at least one early voting Vote Center in every ward.",
+   "es": "Vota en cualquier centro de votación (Vote Center) de DC, durante la votación anticipada o el Día de las Elecciones, sin importar en qué parte del Distrito vivas. Hay por lo menos un centro de votación anticipada en cada distrito electoral (ward).",
+   "src": "https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.09",
+   "checked": "2026-10-21",
+   "quote": "The Board shall permit a registered qualified elector to vote at any Vote Center, regardless of the registered qualified elector's current residence address within the District.",
+   "status": "verified"
+  },
+  "first_time": {
+   "en": "First time voting in DC and registered by mail? Bring a copy of a current government photo ID, utility bill, bank statement, government check or paycheck with your name and address, unless you sent one when you registered. Without it, you vote a special ballot.",
+   "es": "¿Votas por primera vez en DC y te registraste por correo? Lleva una copia de una identificación con foto del gobierno vigente, un recibo de servicios, un estado de cuenta bancario, un cheque del gobierno o un talón de pago con tu nombre y dirección, salvo que ya la hayas enviado al registrarte. Sin ella, votas con una boleta especial (special ballot).",
+   "src": "https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.07",
+   "checked": "2026-10-21",
+   "quote": "Individuals who fail to present this identification shall vote by special ballot.",
+   "status": "verified"
+  }
+ },
+ "where": {
+  "rule": {
+   "status": "missing",
+   "notes": "The Vote Center and drop box locator is on earlyvoting.dcboe.org and dcboe.org, which fail the validator's OFFICIAL host pattern, so no locator_url or label is set."
+  }
+ },
+ "id": {
+  "rule": "no_id",
+  "accepted": {
+   "status": "missing",
+   "notes": "Most voters show no ID; the first-time mail registrant rule is in how.first_time."
+  },
+  "expired": {
+   "status": "missing"
+  },
+  "without": {
+   "status": "missing"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "Any registered DC voter can vote by mail, for any reason.",
+   "es": "Cualquier votante registrado en DC puede votar por correo, por cualquier razón.",
+   "src": "https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.09",
+   "checked": "2026-10-21",
+   "quote": "The Board shall permit any duly registered voter to vote by mail-in ballot, for any reason, under such rules as the Board may issue.",
+   "status": "verified"
+  },
+  "witness": {
+   "status": "missing"
+  },
+  "cure": {
+   "status": "missing",
+   "notes": "See dates.cure."
+  },
+  "dropbox": {
+   "en": "Put it in a ballot drop box or bring it to a Vote Center by 8 p.m. on Election Day.",
+   "es": "Déjala en un buzón de entrega de boletas o llévala a un centro de votación a más tardar a las 8 p. m. del Día de las Elecciones.",
+   "src": "https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.05",
+   "checked": "2026-10-21",
+   "quote": "In a ballot drop box or at a Vote Center; or",
+   "status": "verified"
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "en": "Keep the campaigning 50 feet away. No one may canvass, electioneer, circulate petitions or post campaign material inside a Vote Center or within 50 feet of its entrance and exit.",
+   "es": "Mantén la campaña a 50 pies de distancia. Nadie puede pedir votos, hacer campaña, circular peticiones ni poner material de campaña dentro de un centro de votación ni a menos de 50 pies de su entrada y su salida.",
+   "src": "https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.10",
+   "checked": "2026-10-21",
+   "quote": "No person shall canvass, electioneer, circulate petitions, post any campaign material or engage in any activity that interferes with the orderly conduct of the election within a Vote Center or within a 50-foot distance from the entrance and exit of a Vote Center.",
+   "status": "verified"
+  },
+  "phone": {
+   "status": "missing"
+  },
+  "line": {
+   "status": "missing",
+   "notes": "The D.C. Code sets polls at 7 a.m. to 8 p.m. (1-1001.10(b)(1)) but no in-line-at-closing rule was found in the sections read."
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "status": "missing"
+  }
+ },
+ "faq": {
+  "provisional": {
+   "en": "DC calls it a special ballot. If your name is missing from the list, or your name or address is wrong, you can still vote one. The Board reviews it, you can call a toll-free line to hear its decision, and you get a hearing 8 to 10 days after the election if it says no.",
+   "es": "En DC se llama boleta especial (special ballot). Si tu nombre no aparece en la lista, o tu nombre o dirección están mal, igual puedes votar con una. La Junta la revisa, puedes llamar a una línea gratuita para saber su decisión, y si la rechaza tienes una audiencia entre 8 y 10 días después de la elección.",
+   "src": "https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.09",
+   "checked": "2026-10-21",
+   "quote": "Any individual who alleges that their name has been erroneously omitted from the list of registered voters, or alleges that their name, address or party affiliation is erroneously printed on the list of registered voters, shall be permitted to cast a ballot.",
+   "status": "verified"
+  },
+  "line": {
+   "status": "missing"
+  },
+  "track": {
+   "en": "Track your mail-in ballot on the Board of Elections website, from the day it's mailed to you to when it's received and accepted.",
+   "es": "Sigue tu boleta por correo en el sitio web de la Junta de Elecciones (Board of Elections), desde el día en que te la envían hasta que la reciben y la aceptan.",
+   "src": "https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.05",
+   "checked": "2026-10-21",
+   "quote": "Mail-in ballots, including the dates on which the mail-in ballot was mailed to the voter and received, processed, and accepted or rejected by the Board; and",
+   "status": "verified"
+  },
+  "unsigned": {
+   "status": "missing"
+  },
+  "late_mail": {
+   "en": "A mailed ballot counts if it's postmarked on or before November 3 and reaches the Board within 10 days. Mailing it late? Use a drop box or a Vote Center by 8 p.m. on Election Day instead.",
+   "es": "Una boleta por correo cuenta si tiene matasellos del 3 de noviembre o antes y llega a la Junta dentro de 10 días. ¿La envías tarde? Mejor usa un buzón de entrega o un centro de votación a más tardar a las 8 p. m. del Día de las Elecciones.",
+   "src": "https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.05",
+   "checked": "2026-10-21",
+   "quote": "Received by the Board by 8 p.m. on election day:",
+   "status": "verified"
+  }
+ },
+ "notes": "Read October 21, 2026 on code.dccouncil.gov (D.C. Code 1-1001.05, .07, .09, .10). VALIDATOR HOST: dcboe.org and earlyvoting.dcboe.org, the DC Board of Elections' own domains, fail the OFFICIAL pattern in build/facts_text.py, so nothing is cited from them and no where.locator_url, track_url or local_offices_url is set. Facts that only DCBOE states are missing: the mail request (every voter is mailed a ballot), early voting hours, the cure process and deadline, the in-line rule, witness, phone rule and sticker. The Early Vote Centers page (read in Chrome) says 'Early Vote Centers open from Monday, October 26 through Sunday, November 1, between 8:30 a.m. and 7:00 p.m.', matching states.js. Mail return: the Code gives the 10th day after Election Day; faq-sources.json records DCBOE's calendar as November 13, 2026. No calendar date is computed here. 1-1001.05(a)(10A) has a separate 7th-day rule for absentee ballots (UOCAVA context); mail-in ballots follow (10B). Provisional (special) ballot hearing: 8 to 10 days after the election, 1-1001.09(e)."
+}

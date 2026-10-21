@@ -1,0 +1,204 @@
+{
+ "abbr": "HI",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "elections.hawaii.gov": {
+   "en": "the Hawaii Office of Elections",
+   "es": "la Oficina de Elecciones de Hawaii (Office of Elections)"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "Not registered yet? Register online any time, or register and vote the same day at a voter service center, open through Election Day. Paper applications must reach your County Elections Division by Monday, October 26.",
+   "es": "¿Todavía no estás registrado? Regístrate en línea en cualquier momento, o regístrate y vota el mismo día en un centro de servicio al votante (voter service center), abierto hasta el Día de las Elecciones. Las solicitudes en papel deben llegar a la División de Elecciones de tu condado (County Elections Division) a más tardar el lunes 26 de octubre.",
+   "src": "https://elections.hawaii.gov/voting/",
+   "checked": "2026-10-21",
+   "quote": "Voters may register online at any time or in-person at a voter service center.",
+   "status": "verified",
+   "until": "2026-10-26",
+   "en_after": "Not registered yet? Register online any time, or register and vote the same day at a voter service center, open through Election Day. Paper applications closed October 26.",
+   "es_after": "¿Todavía no estás registrado? Regístrate en línea en cualquier momento, o regístrate y vota el mismo día en un centro de servicio al votante, abierto hasta el Día de las Elecciones. Las solicitudes en papel cerraron el 26 de octubre."
+  },
+  "mail_request": {
+   "status": "missing",
+   "notes": "Every registered voter is mailed a ballot; there is no request deadline. Away from home? The deadline to have the ballot sent to an alternate address is October 27, 2026 (voting page)."
+  },
+  "mail_return": {
+   "en": "Drop it at a ballot drop box in your county, or mail it in the postage-paid return envelope. Either way it must arrive by 7 p.m. on Tuesday, November 3, so give the mail plenty of time.",
+   "es": "Déjala en un buzón de entrega de boletas de tu condado, o envíala por correo en el sobre de devolución con porte pagado. De cualquier forma debe llegar a más tardar a las 7 p. m. del martes 3 de noviembre, así que dale al correo tiempo de sobra.",
+   "src": "https://elections.hawaii.gov/wp-content/uploads/VoterGuide_2026_General_English.pdf",
+   "checked": "2026-10-21",
+   "quote": "Voted ballots must be received by your County Elections Divisions by 7:00 PM on Election Day to be counted.",
+   "status": "verified"
+  },
+  "early_hours": {
+   "en": "The main voter service centers in each county are open Monday to Saturday, 8 a.m. to 4:30 p.m., from October 20 to November 2, and 7 a.m. to 7 p.m. on Election Day. Some smaller sites keep shorter days, so check the list.",
+   "es": "Los principales centros de servicio al votante de cada condado abren de lunes a sábado, de 8 a. m. a 4:30 p. m., del 20 de octubre al 2 de noviembre, y de 7 a. m. a 7 p. m. el Día de las Elecciones. Algunos lugares más pequeños abren menos días, así que revisa la lista.",
+   "src": "https://elections.hawaii.gov/voter-service-centers-and-places-of-deposit/",
+   "checked": "2026-10-21",
+   "quote": "October 20, 2026, through November 2, 2026",
+   "status": "verified"
+  },
+  "cure": {
+   "status": "missing",
+   "notes": "The cure window is relative: five business days after the election (2026 voter guide). It is in mail.cure; no calendar date is computed."
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "Your ballot comes to you by mail. Rather vote in person? Go to a voter service center in your county, open from October 20 through Election Day (closed Sundays), for in-person voting, accessible voting and same day registration.",
+   "es": "Tu boleta te llega por correo. ¿Prefieres votar en persona? Ve a un centro de servicio al votante de tu condado, abierto del 20 de octubre hasta el Día de las Elecciones (cerrado los domingos), para votar en persona, votar con equipo accesible o registrarte el mismo día.",
+   "src": "https://elections.hawaii.gov/voting/",
+   "checked": "2026-10-21",
+   "quote": "Open 10 business days prior to the election offering accessible voting, in person voting and same day registration.",
+   "status": "verified"
+  },
+  "first_time": {
+   "en": "Not registered on Election Day? You can still register at a voter service center in your county and vote in person. You'll get a mail ballot for future elections.",
+   "es": "¿No estás registrado el Día de las Elecciones? Todavía puedes registrarte en un centro de servicio al votante de tu condado y votar en persona. Recibirás una boleta por correo para las próximas elecciones.",
+   "src": "https://elections.hawaii.gov/wp-content/uploads/VoterGuide_2026_General_English.pdf",
+   "checked": "2026-10-21",
+   "quote": "You will be permitted to vote in person for that election and will receive a mail ballot for future elections.",
+   "status": "verified"
+  }
+ },
+ "where": {
+  "locator_url": "https://elections.hawaii.gov/voter-service-centers-and-places-of-deposit/",
+  "locator_label": {
+   "en": "Voter Service Centers and Ballot Drop Boxes (Hawaii Office of Elections)",
+   "es": "Centros de servicio al votante y buzones de entrega (Oficina de Elecciones de Hawaii)"
+  },
+  "locator_cta": {
+   "en": "Find a drop box",
+   "es": "Buscar un buzón"
+  },
+  "local_offices_url": "https://elections.hawaii.gov/resources/county-election-divisions/",
+  "rule": {
+   "en": "Voter service centers and ballot drop boxes are listed by county on the Office of Elections site. Drop your ballot at any drop box in your county.",
+   "es": "Los centros de servicio al votante y los buzones de entrega de boletas aparecen por condado en el sitio de la Oficina de Elecciones. Deja tu boleta en cualquier buzón de entrega de tu condado.",
+   "src": "https://elections.hawaii.gov/wp-content/uploads/VoterGuide_2026_General_English.pdf",
+   "checked": "2026-10-21",
+   "quote": "Drop your voted ballot at a ballot drop box location within your county.",
+   "status": "verified"
+  }
+ },
+ "id": {
+  "rule": "no_id",
+  "accepted": {
+   "status": "missing",
+   "notes": "Mail voters sign the envelope; no ID list for in-person voting was found on elections.hawaii.gov pages read. The existing FAQ answer covers ID."
+  },
+  "expired": {
+   "status": "missing"
+  },
+  "without": {
+   "status": "missing"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "Every registered voter gets a ballot in the mail, no request needed. Ballots arrive by Friday, October 16. Didn't get yours, or made a mistake? Ask your County Elections Division for a replacement.",
+   "es": "Cada votante registrado recibe una boleta por correo, sin tener que pedirla. Las boletas llegan a más tardar el viernes 16 de octubre. ¿No te llegó o te equivocaste? Pide una de reemplazo a la División de Elecciones de tu condado.",
+   "src": "https://elections.hawaii.gov/wp-content/uploads/VoterGuide_2026_General_English.pdf",
+   "checked": "2026-10-21",
+   "quote": "If you do not receive your ballot, contact your County Elections Division and they will issue you a replacement ballot.",
+   "status": "verified"
+  },
+  "witness": {
+   "en": "Read the affirmation statement and sign the return envelope. Your ballot can't be counted without your signature. Can't sign on your own? Someone you trust can be your witness, but not your employer or union agent.",
+   "es": "Lee la declaración de afirmación y firma el sobre de devolución. Tu boleta no se puede contar sin tu firma. ¿No puedes firmar por tu cuenta? Una persona de confianza puede ser tu testigo, pero no tu empleador ni un agente de tu sindicato.",
+   "src": "https://elections.hawaii.gov/wp-content/uploads/VoterGuide_2026_General_English.pdf",
+   "checked": "2026-10-21",
+   "quote": "You must sign the return envelope for your ballot to be counted.",
+   "status": "verified"
+  },
+  "cure": {
+   "en": "Your county compares the signature on your envelope with the one on file. If they can't confirm a match, they'll notify you, and you have five business days after Election Day to fix it.",
+   "es": "Tu condado compara la firma del sobre con la que tiene en tu registro. Si no pueden confirmar que coincide, te avisarán, y tienes cinco días hábiles después del Día de las Elecciones para corregirlo.",
+   "src": "https://elections.hawaii.gov/wp-content/uploads/VoterGuide_2026_General_English.pdf",
+   "checked": "2026-10-21",
+   "quote": "If officials are unable to confirm a match, you’ll be notified to fix the issue within five business days post-election.",
+   "status": "verified"
+  },
+  "dropbox": {
+   "en": "Drop it at any ballot drop box in your county by 7 p.m. on Election Day. Locations and hours are on the Office of Elections site.",
+   "es": "Déjala en cualquier buzón de entrega de boletas de tu condado a más tardar a las 7 p. m. del Día de las Elecciones. Los lugares y horarios están en el sitio de la Oficina de Elecciones.",
+   "src": "https://elections.hawaii.gov/wp-content/uploads/VoterGuide_2026_General_English.pdf",
+   "checked": "2026-10-21",
+   "quote": "Drop your voted ballot at a ballot drop box location within your county.",
+   "status": "verified"
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "status": "missing",
+   "notes": "HRS 11-132 (electioneering) is on capitol.hawaii.gov, which blocked curl with a Cloudflare 403 and showed a bot check in Chrome; not read, not bypassed. elections.hawaii.gov has no electioneering page found."
+  },
+  "phone": {
+   "status": "missing"
+  },
+  "line": {
+   "en": "Voting closes at 7 p.m. on Election Day. If you're in line at a voter service center or a ballot drop box by then, stay in line. You'll be allowed to vote or drop off your ballot. Leave the line and you can't rejoin.",
+   "es": "La votación cierra a las 7 p. m. del Día de las Elecciones. Si a esa hora estás en la fila de un centro de servicio al votante o de un buzón de entrega, no te salgas. Te dejarán votar o entregar tu boleta. Si te sales de la fila, no puedes volver a entrar.",
+   "src": "https://elections.hawaii.gov/wp-content/uploads/VoterGuide_2026_General_English.pdf",
+   "checked": "2026-10-21",
+   "quote": "Officials mark the end of the line, and you will not be permitted to rejoin if you leave.",
+   "status": "verified"
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "en": "Hawaii tied its sticker to ballot tracking: in 2022, once your ballot was accepted for counting, you could download a virtual I Voted sticker.",
+   "es": "Hawaii unió su sticker al seguimiento de boletas: en 2022, una vez que aceptaban tu boleta para contarla, podías descargar un sticker virtual de I Voted.",
+   "src": "https://elections.hawaii.gov/news-release/ballot-tracking-service-available-for-hawaii-voters/",
+   "checked": "2026-10-21",
+   "quote": "“Once your ballot has been accepted for counting, voters can also download their virtual ‘I Voted’ sticker,” he added.",
+   "status": "verified"
+  }
+ },
+ "faq": {
+  "provisional": {
+   "en": "You can ask for a provisional ballot if your voter registration can't be confirmed. It's counted only if your County Elections Division confirms your registration. You can find out whether it counted by calling them or on the Office of Elections website.",
+   "es": "Puedes pedir una boleta provisional si no se puede confirmar tu registro de votante. Solo se cuenta si la División de Elecciones de tu condado confirma tu registro. Puedes saber si se contó llamando a esa oficina o en el sitio web de la Oficina de Elecciones.",
+   "src": "https://elections.hawaii.gov/wp-content/uploads/VoterGuide_2026_General_English.pdf",
+   "checked": "2026-10-21",
+   "quote": "You can request a provisional ballot if you cannot confirm your voter registration.",
+   "status": "verified"
+  },
+  "line": {
+   "en": "Stay in line. If you're in line at 7 p.m. at a voter service center or a drop box, you'll be allowed to vote or drop off your ballot.",
+   "es": "No te salgas de la fila. Si estás en la fila a las 7 p. m. en un centro de servicio al votante o un buzón de entrega, te dejarán votar o entregar tu boleta.",
+   "src": "https://elections.hawaii.gov/wp-content/uploads/VoterGuide_2026_General_English.pdf",
+   "checked": "2026-10-21",
+   "quote": "If you are in line, stay in line.",
+   "status": "verified"
+  },
+  "track": {
+   "en": "Sign up for ballot tracking alerts by text, email or voice call at elections.hawaii.gov. You'll hear when your ballot is mailed, when it's received and accepted, and when the deadline is close.",
+   "es": "Regístrate en elections.hawaii.gov para recibir avisos de seguimiento de tu boleta por mensaje de texto, correo electrónico o llamada. Te avisarán cuando envíen tu boleta, cuando la reciban y la acepten, y cuando se acerque la fecha límite.",
+   "src": "https://elections.hawaii.gov/wp-content/uploads/VoterGuide_2026_General_English.pdf",
+   "checked": "2026-10-21",
+   "quote": "Sign up for ballot tracking alerts via text, email, or voice call at elections.hawaii.gov.",
+   "status": "verified"
+  },
+  "unsigned": {
+   "en": "Your ballot can't be counted without your signature. If officials can't confirm your signature, they'll notify you, and you have five business days after Election Day to fix it.",
+   "es": "Tu boleta no se puede contar sin tu firma. Si no pueden confirmar tu firma, te avisarán, y tienes cinco días hábiles después del Día de las Elecciones para corregirlo.",
+   "src": "https://elections.hawaii.gov/wp-content/uploads/VoterGuide_2026_General_English.pdf",
+   "checked": "2026-10-21",
+   "quote": "If officials are unable to confirm a match, you’ll be notified to fix the issue within five business days post-election.",
+   "status": "verified"
+  },
+  "late_mail": {
+   "en": "It won't count. Ballots must be received, not postmarked, by 7 p.m. on November 3. If it's getting close, use a ballot drop box instead of the mail.",
+   "es": "No se cuenta. Las boletas deben recibirse, no basta el matasellos, a más tardar a las 7 p. m. del 3 de noviembre. Si ya está cerca la fecha, usa un buzón de entrega en lugar del correo.",
+   "src": "https://elections.hawaii.gov/news-release/hawaii-voters-to-receive-general-election-ballots-by-october-16/",
+   "checked": "2026-10-21",
+   "quote": "Ballots received after the deadline cannot be counted.",
+   "status": "verified"
+  }
+ },
+ "notes": "Read October 21, 2026 on elections.hawaii.gov (curl worked): Voting, Voter Service Centers and Ballot Drop Boxes, Voting in Hawaii, Provisional Voting, Replacement Ballot, County Elections Divisions, the October 16 ballot news release, the 2022 ballot tracking release, and the 2026 General Election Voter Guide PDF. states.js treats Hawaii as all-mail (ballots by October 16, received by 7 p.m. November 3); both match. Voter service centers run October 20 to November 3, excluding Sundays (voting page); smaller sites (Lanai, Molokai, Hana, Wahiawa, Kaneohe) have shorter schedules. capitol.hawaii.gov (HRS) returned a Cloudflare 403 to curl and a bot check in Chrome, so the electioneering distance (HRS 11-132) was not read. No tracking URL is set: the sign-up link is not on the pages read (BallotTrax is named on Voting in Hawaii). The October 27 alternate-address deadline is on the voting page. Sticker: the virtual sticker is from a 2022 release; no 2026 page confirms it."
+}

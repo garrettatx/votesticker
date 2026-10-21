@@ -1,0 +1,253 @@
+{
+ "abbr": "DE",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "elections.delaware.gov": {
+   "en": "the Delaware Department of Elections",
+   "es": "el Departamento de Elecciones de Delaware (Department of Elections)"
+  },
+  "delcode.delaware.gov": {
+   "en": "the Delaware Code",
+   "es": "el Código de Delaware"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "Registration closed Saturday, October 10, 2026. Not sure you're registered? Look yourself up on iVote, the state's voter portal.",
+   "es": "El registro cerró el sábado 10 de octubre de 2026. ¿No sabes si estás registrado? Búscate en iVote, el portal de votantes del estado.",
+   "src": "https://elections.delaware.gov/elections/general/general.html",
+   "checked": "2026-10-21",
+   "quote": "The deadline to register to vote if you are not yet registered is Saturday, October 10, 2026.",
+   "status": "verified"
+  },
+  "mail_request": {
+   "en": "Request your absentee ballot by Friday, October 30, 2026, to have it mailed to you. The fastest way is on iVote.",
+   "es": "Solicita tu boleta de voto en ausencia a más tardar el viernes 30 de octubre de 2026 para que te la manden por correo. La forma más rápida es en iVote.",
+   "src": "https://elections.delaware.gov/elections/general/general.html",
+   "checked": "2026-10-21",
+   "quote": "The last day to submit a request for a General Election absentee ballot in order for the absentee ballot to be mailed is Friday, October 30, 2026.",
+   "status": "verified",
+   "until": "2026-10-30",
+   "en_after": "The last day to request a mailed absentee ballot was October 30. You can still vote in person on Election Day at your assigned polling place.",
+   "es_after": "El último día para solicitar una boleta de voto en ausencia por correo fue el 30 de octubre. Todavía puedes votar en persona el Día de las Elecciones en el lugar de votación que te corresponde."
+  },
+  "mail_return": {
+   "en": "Your county Department of Elections office must receive it by 8 p.m. on Tuesday, November 3, 2026. A postmark isn't enough, so mail it as soon as you can, or hand it in at your county office.",
+   "es": "La oficina del Departamento de Elecciones de tu condado debe recibirla a más tardar a las 8 p. m. del martes 3 de noviembre de 2026. No basta con el matasellos, así que envíala lo antes posible o entrégala en la oficina de tu condado.",
+   "src": "https://elections.delaware.gov/elections/general/general.html",
+   "checked": "2026-10-21",
+   "quote": "Absentee ballots must be received by the Department of Elections by Election Day, Tuesday, November 3, 2026 by the close of polls at 8 p.m., in order to count.",
+   "status": "verified"
+  },
+  "early_hours": {
+   "en": "Thursday, October 22 to Saturday, October 24: 7 a.m. to 7 p.m. No early voting on Sunday, October 25. Monday, October 26 and Tuesday, October 27: 7 a.m. to 7 p.m. Wednesday, October 28 to Sunday, November 1: 11 a.m. to 7 p.m.",
+   "es": "Del jueves 22 al sábado 24 de octubre: de 7 a. m. a 7 p. m. No hay votación anticipada el domingo 25 de octubre. Lunes 26 y martes 27 de octubre: de 7 a. m. a 7 p. m. Del miércoles 28 de octubre al domingo 1 de noviembre: de 11 a. m. a 7 p. m.",
+   "src": "https://elections.delaware.gov/elections/votinglocations.html",
+   "checked": "2026-10-21",
+   "quote": "October 28, 2026 – November 1, 2026, 11 a.m. – 7 p.m.",
+   "status": "verified",
+   "until": "2026-10-27",
+   "en_after": "Through Sunday, November 1, early voting sites are open 11 a.m. to 7 p.m.",
+   "es_after": "Hasta el domingo 1 de noviembre, los centros de votación anticipada abren de 11 a. m. a 7 p. m."
+  },
+  "cure": {
+   "en": "Forgot to sign the oath or seal the envelope? You can fix it until the polls close at 8 p.m. on Tuesday, November 3, 2026.",
+   "es": "¿Se te olvidó firmar el juramento o cerrar el sobre? Puedes corregirlo hasta que cierren los lugares de votación a las 8 p. m. del martes 3 de noviembre de 2026.",
+   "src": "https://delcode.delaware.gov/title15/c055/index.html",
+   "checked": "2026-10-21",
+   "quote": "If a returned ballot is cured before the polls close on the day of the election, the ballot must be processed and included in the tabulation.",
+   "status": "verified"
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "During early voting, vote at any early voting site in your county. On Election Day, vote at your assigned polling place from 7 a.m. to 8 p.m.",
+   "es": "Durante la votación anticipada, vota en cualquier centro de votación anticipada de tu condado. El Día de las Elecciones, vota en el lugar de votación que te corresponde de 7 a. m. a 8 p. m.",
+   "src": "https://elections.delaware.gov/voter/waystovote.html",
+   "checked": "2026-10-21",
+   "quote": "You may vote in person at any Early Voting Site in your county of residence during the 10 day early voting period before Election Day.",
+   "status": "verified"
+  },
+  "first_time": {
+   "status": "missing"
+  }
+ },
+ "where": {
+  "locator_url": "https://ivote.de.gov/",
+  "locator_label": {
+   "en": "iVote voter portal (Delaware Department of Elections)",
+   "es": "Portal de votantes iVote (Departamento de Elecciones de Delaware)"
+  },
+  "local_offices_url": "https://elections.delaware.gov/locations.html",
+  "sample_ballot_url": "https://gis.elections.delaware.gov/apps/c10cf595f3614d9886927b7d396b2c87/explore",
+  "rule": {
+   "en": "Look yourself up on iVote to find your Election Day polling place. It's also on your Polling Place Card. Early voting sites for each county are on the Department's Voting Locations page.",
+   "es": "Búscate en iVote para encontrar tu lugar de votación del Día de las Elecciones. También aparece en tu tarjeta de lugar de votación (Polling Place Card). Los centros de votación anticipada de cada condado están en la página Voting Locations del Departamento.",
+   "src": "https://elections.delaware.gov/voter/waystovote.html",
+   "checked": "2026-10-21",
+   "quote": "Your assigned Polling Place is listed on your Polling Place Card.",
+   "status": "verified"
+  }
+ },
+ "id": {
+  "rule": "id_nonphoto",
+  "accepted": {
+   "en": [
+    "Delaware driver's license",
+    "Delaware state ID card",
+    "A copy of a current utility bill, bank statement, government check, paycheck or other government document with your name and address"
+   ],
+   "es": [
+    "Licencia de conducir de Delaware",
+    "Tarjeta de identificación estatal de Delaware",
+    "Una copia de un recibo de servicios reciente, estado de cuenta bancario, cheque del gobierno, talón de pago u otro documento del gobierno con tu nombre y dirección"
+   ],
+   "src": "https://elections.delaware.gov/elections/general/general.html",
+   "checked": "2026-10-21",
+   "quote": "You may show one form of ID, which may be a Delaware Driver's License or State ID Card, or a copy of a current utility bill, bank statement, government check, paycheck or other government document that shows your name and address.",
+   "status": "verified"
+  },
+  "expired": {
+   "status": "missing"
+  },
+  "without": {
+   "en": "No ID with you? You can still vote. Election officers check your registration, and once it's confirmed you sign an Affidavit of Affirmation of Voter Identity.",
+   "es": "¿No traes identificación? Igual puedes votar. Los funcionarios electorales revisan tu registro y, una vez confirmado, firmas una declaración jurada de identidad (Affidavit of Affirmation of Voter Identity).",
+   "src": "https://elections.delaware.gov/elections/general/general.html",
+   "checked": "2026-10-21",
+   "quote": "When your voter registration is confirmed, you will be permitted to vote after completing an Affidavit of Affirmation of Voter Identity.",
+   "status": "verified"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "You can vote absentee in Delaware if you can't get to your polling place on Election Day because you:",
+   "es": "Puedes votar en ausencia en Delaware si no puedes ir a tu lugar de votación el Día de las Elecciones porque:",
+   "src": "https://delcode.delaware.gov/title15/c055/index.html",
+   "checked": "2026-10-21",
+   "quote": "Because such person is absent from the district while on vacation; or",
+   "status": "verified"
+  },
+  "who_list": {
+   "en": [
+    "work in public service for the United States or Delaware, or live outside the country for a while, or are the spouse or dependent living with someone who does",
+    "serve in the armed forces or merchant marine, or with the American Red Cross or USO alongside the armed forces",
+    "can't get there because of your job, including caring at home for a parent, spouse or child who needs constant care",
+    "are sick or physically disabled",
+    "are away on vacation",
+    "can't vote at that time or on that day because of your religion",
+    "are covered by the federal military and overseas voting law (UOCAVA) or another federal law"
+   ],
+   "es": [
+    "trabajas en el servicio público de Estados Unidos o de Delaware, o vives fuera del país por un tiempo, o eres cónyuge o dependiente y vives con alguien en esa situación",
+    "sirves en las fuerzas armadas o la marina mercante, o con la Cruz Roja Americana o la USO junto a las fuerzas armadas",
+    "no puedes ir por tu trabajo, incluido cuidar en casa a tu padre o madre, cónyuge o hijo que necesita cuidado constante",
+    "estás enfermo o tienes una discapacidad física",
+    "estás fuera de vacaciones",
+    "no puedes votar a esa hora o ese día por tu religión",
+    "te cubre la ley federal de voto militar y en el extranjero (UOCAVA) u otra ley federal"
+   ],
+   "src": "https://delcode.delaware.gov/title15/c055/index.html",
+   "checked": "2026-10-21",
+   "quote": "Because such person is sick or physically disabled; or",
+   "status": "verified"
+  },
+  "witness": {
+   "en": "Check that your information on the ballot envelope is right, sign the oath on it, and seal it.",
+   "es": "Revisa que tus datos en el sobre de la boleta estén bien, firma el juramento que viene en el sobre y ciérralo.",
+   "src": "https://delcode.delaware.gov/title15/c055/index.html",
+   "checked": "2026-10-21",
+   "quote": "The elector shall confirm that the information about that elector on the ballot envelope is correct and then sign the self-administered oath.",
+   "status": "verified"
+  },
+  "track_url": "https://ivote.de.gov/",
+  "cure": {
+   "en": "Forgot to sign the oath or seal the envelope? The Department will try to reach you by phone or email so you can fix it. It counts if you fix it before the polls close at 8 p.m. on Election Day.",
+   "es": "¿Se te olvidó firmar el juramento o cerrar el sobre? El Departamento intentará comunicarse contigo por teléfono o correo electrónico para que lo corrijas. Cuenta si lo corriges antes de que cierren los lugares de votación a las 8 p. m. del Día de las Elecciones.",
+   "src": "https://delcode.delaware.gov/title15/c055/index.html",
+   "checked": "2026-10-21",
+   "quote": "The Department shall attempt to notify the voter by phone or email of the deficiency under subsection (a) of this section and of the action that the voter can take to correct the deficiency.",
+   "status": "verified"
+  },
+  "dropbox": {
+   "en": "Hand it in at your county Department of Elections office during business hours, by 8 p.m. on Election Day. Early voting sites and polling places can't take absentee ballots.",
+   "es": "Entrégala en la oficina del Departamento de Elecciones de tu condado en horario de oficina, a más tardar a las 8 p. m. del Día de las Elecciones. Los centros de votación anticipada y los lugares de votación no reciben boletas de voto en ausencia.",
+   "src": "https://elections.delaware.gov/voter/waystovote.html",
+   "checked": "2026-10-21",
+   "quote": "Absentee ballots are not accepted at early voting sites and polling places.",
+   "status": "verified"
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "en": "Leave the campaign buttons and banners at home. Within 50 feet of the entrance to the building where you vote, no one may electioneer, and that includes wearing a button, banner or other item about issues, candidates or partisan topics.",
+   "es": "Deja en casa los botones y las pancartas de campaña. A menos de 50 pies de la entrada del edificio donde votas nadie puede hacer campaña, y eso incluye llevar un botón, una pancarta u otro objeto sobre propuestas, candidatos o temas partidistas.",
+   "src": "https://delcode.delaware.gov/title15/c049/sc02/index.html",
+   "checked": "2026-10-21",
+   "quote": "“Electioneering” includes political discussion of issues, candidates or partisan topics, the wearing of any button, banner or other object referring to issues, candidates or partisan topics,",
+   "status": "verified"
+  },
+  "phone": {
+   "status": "missing"
+  },
+  "line": {
+   "en": "Polls close at 8 p.m. If you're in line by then, stay put. You'll be allowed to vote.",
+   "es": "Los lugares de votación cierran a las 8 p. m. Si estás en la fila a esa hora, no te salgas. Te dejarán votar.",
+   "src": "https://delcode.delaware.gov/title15/c049/sc02/index.html",
+   "checked": "2026-10-21",
+   "quote": "The election shall be continued open until 8:00 p.m. when it shall be closed.",
+   "status": "verified"
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "status": "missing",
+   "notes": "No Delaware sticker contest or design found on an official page."
+  }
+ },
+ "faq": {
+  "provisional": {
+   "en": "If your eligibility can't be confirmed at the polls, you can vote a provisional ballot for the federal offices on the ballot. The Department reviews provisional ballots the day after the election.",
+   "es": "Si no pueden confirmar en el lugar de votación que tienes derecho a votar, puedes votar con una boleta provisional para los cargos federales de la boleta. El Departamento revisa las boletas provisionales el día después de la elección.",
+   "src": "https://delcode.delaware.gov/title15/c049/sc02/index.html",
+   "checked": "2026-10-21",
+   "quote": "Election officers shall inform an individual who is not being permitted to vote, for any reason, that the individual may cast a provisional ballot for the federal offices on the ballot in that election.",
+   "status": "verified"
+  },
+  "line": {
+   "en": "You can still vote. Anyone waiting in line by 8 p.m. on Election Day, inside or outside the voting room, is allowed to vote.",
+   "es": "Igual puedes votar. Toda persona que esté en la fila a las 8 p. m. del Día de las Elecciones, dentro o fuera del cuarto de votación, puede votar.",
+   "src": "https://delcode.delaware.gov/title15/c049/sc02/index.html",
+   "checked": "2026-10-21",
+   "quote": "provided that at 8:00 p.m. they shall be in a line awaiting their turn to vote within the voting room itself or if the line extends outside of the voting room itself within that line;",
+   "status": "verified"
+  },
+  "track": {
+   "en": "Check your absentee ballot's status on iVote, the state's voter portal, or call the Department of Elections.",
+   "es": "Revisa el estado de tu boleta de voto en ausencia en iVote, el portal de votantes del estado, o llama al Departamento de Elecciones.",
+   "src": "https://elections.delaware.gov/elections/general/general.html",
+   "checked": "2026-10-21",
+   "quote": "Check on the status of yours with the State's Voter Portal.",
+   "status": "verified"
+  },
+  "unsigned": {
+   "en": "The Department will try to reach you by phone or email. Sign the oath, or seal the envelope, before the polls close at 8 p.m. on Election Day and your ballot counts.",
+   "es": "El Departamento intentará comunicarse contigo por teléfono o correo electrónico. Firma el juramento, o cierra el sobre, antes de que cierren los lugares de votación a las 8 p. m. del Día de las Elecciones y tu boleta cuenta.",
+   "src": "https://delcode.delaware.gov/title15/c055/index.html",
+   "checked": "2026-10-21",
+   "quote": "The Department shall offer a voter an opportunity to cure a returned ballot if the voter has failed to do any of the following:",
+   "status": "verified"
+  },
+  "late_mail": {
+   "en": "It has to reach your county office by 8 p.m. on November 3, and a postmark doesn't count. In the last days, take it to your county Department of Elections office instead.",
+   "es": "Debe llegar a la oficina de tu condado a más tardar a las 8 p. m. del 3 de noviembre, y el matasellos no cuenta. En los últimos días, mejor llévala a la oficina del Departamento de Elecciones de tu condado.",
+   "src": "https://elections.delaware.gov/voter/waystovote.html",
+   "checked": "2026-10-21",
+   "quote": "You may return your absentee ballot by mail. If mailing your absentee ballot, please mail it as soon as possible to avoid delays.",
+   "status": "verified"
+  }
+ },
+ "notes": "Read October 21, 2026 on elections.delaware.gov (General Election, Ways to Vote and Voting Locations by curl; the Absentee page in Chrome, because the site's firewall rejected curl and WebFetch after a few requests; the 2026 Election Calendar PDF and the FAQ page were also rejected and not read) and delcode.delaware.gov (Title 15, ch. 49 subch. II: 4937 ID, 4942 electioneering, 4947 closing and line, 4948 provisional; ch. 55: 5502 eligibility, 5507 envelope, 5508 return, 5509A cure). Early voting dates in states.js (October 22 to November 1, no early voting Sunday, October 25) match the Voting Locations page. 'A postmark isn't enough' rests on 5508(b) and the received-by wording; no page says 'postmark' outright. The waystovote page links to a 2024 election calendar PDF; the general page links the 2026 one. Delaware absentee voting needs a reason (5502; the Absentee page says permanent absentee status 'is affirmed by the Delaware Supreme Court'). Provisional ballots under 4948 are for federal offices only. No phone rule, expired-ID rule or sticker tradition found."
+}

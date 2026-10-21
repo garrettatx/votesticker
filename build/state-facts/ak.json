@@ -1,0 +1,241 @@
+{
+ "abbr": "AK",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "www.elections.alaska.gov": {
+   "en": "the Alaska Division of Elections",
+   "es": "la División de Elecciones de Alaska (Division of Elections)"
+  },
+  "www.akleg.gov": {
+   "en": "Alaska law",
+   "es": "la ley de Alaska"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "Registration closed Sunday, October 4, 2026. Not sure you're registered? Check My Voter Portal before you go.",
+   "es": "El registro cerró el domingo 4 de octubre de 2026. ¿No sabes si estás registrado? Revisa My Voter Portal antes de ir.",
+   "src": "https://www.elections.alaska.gov/calendar/",
+   "checked": "2026-10-21",
+   "quote": "Deadline for voters to register to vote or update their registration.",
+   "status": "verified"
+  },
+  "mail_request": {
+   "en": "The Division of Elections must receive your by-mail application by Saturday, October 24, 2026. Too late for mail? You can apply for a ballot by fax or online delivery until 5 p.m. Alaska time on Monday, November 2.",
+   "es": "La División de Elecciones debe recibir tu solicitud de boleta por correo a más tardar el sábado 24 de octubre de 2026. ¿Ya es tarde para el correo? Puedes solicitar una boleta por fax o por entrega en línea hasta las 5 p. m., hora de Alaska, del lunes 2 de noviembre.",
+   "src": "https://www.elections.alaska.gov/calendar/",
+   "checked": "2026-10-21",
+   "quote": "Deadline to receive absentee by-mail applications.",
+   "status": "verified",
+   "until": "2026-10-24",
+   "en_after": "By-mail applications closed October 24. You can still apply for a ballot by fax or online delivery until 5 p.m. Alaska time on Monday, November 2, or vote early in person.",
+   "es_after": "Las solicitudes de boleta por correo cerraron el 24 de octubre. Todavía puedes solicitar una boleta por fax o por entrega en línea hasta las 5 p. m., hora de Alaska, del lunes 2 de noviembre, o votar por anticipado en persona."
+  },
+  "mail_return": {
+   "en": "Mail it with a stamp, postmarked by Tuesday, November 3, and ask the postal clerk to hand cancel it at the counter. It must arrive by Friday, November 13. Or drop it at a Division office or any voting location by 8 p.m. on Election Day.",
+   "es": "Envíala con estampilla y con matasellos del martes 3 de noviembre o antes, y pide en el mostrador de la oficina postal que le pongan el matasellos a mano. Debe llegar a más tardar el viernes 13 de noviembre. O entrégala en una oficina de la División o en cualquier lugar de votación a más tardar a las 8 p. m. del Día de las Elecciones.",
+   "src": "https://www.elections.alaska.gov/doc/mp/2026/MediaPacket-2026-General.%20V3.pdf",
+   "checked": "2026-10-21",
+   "quote": "10-day deadline to receive absentee ballots mailed from within the U.S.",
+   "status": "verified"
+  },
+  "early_hours": {
+   "en": "Hours differ by location, so check yours on the early voting list. Regional elections offices add weekend hours: 10 a.m. to 4 p.m. on Saturdays, October 24 and 31, and noon to 4 p.m. on Sundays, October 25 and November 1.",
+   "es": "El horario cambia según el lugar, así que revisa el tuyo en la lista de votación anticipada. Las oficinas electorales regionales abren también el fin de semana: de 10 a. m. a 4 p. m. los sábados 24 y 31 de octubre, y de 12 p. m. a 4 p. m. los domingos 25 de octubre y 1 de noviembre.",
+   "src": "https://www.elections.alaska.gov/calendar/",
+   "checked": "2026-10-21",
+   "quote": "Regional Offices open 10 a.m. – 4 p.m. for Absentee and Early Voting.",
+   "status": "verified",
+   "until": "2026-10-25",
+   "en_after": "Hours differ by location, so check yours on the early voting list. Regional elections offices are open 10 a.m. to 4 p.m. on Saturday, October 31, and noon to 4 p.m. on Sunday, November 1.",
+   "es_after": "El horario cambia según el lugar, así que revisa el tuyo en la lista de votación anticipada. Las oficinas electorales regionales abren de 10 a. m. a 4 p. m. el sábado 31 de octubre, y de 12 p. m. a 4 p. m. el domingo 1 de noviembre."
+  },
+  "cure": {
+   "status": "missing",
+   "notes": "Alaska has no cure process (2026 General Election media packet). Stated in mail.cure instead of as a date."
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "Vote early from Monday, October 19 at an Early Voting or Absentee In-Person location. Each one has its own hours and ballots. On Election Day, vote at your precinct's polling place from 7 a.m. to 8 p.m.",
+   "es": "Vota por anticipado desde el lunes 19 de octubre en un lugar de votación anticipada (Early Voting) o de voto en ausencia en persona (Absentee In-Person). Cada uno tiene su propio horario y sus boletas. El Día de las Elecciones, vota en el lugar de votación de tu precinto de 7 a. m. a 8 p. m.",
+   "src": "https://www.elections.alaska.gov/voter-information/absentee-and-early-voting/",
+   "checked": "2026-10-21",
+   "quote": "Absentee In-Person and Early Voting locations are open for voting starting 15 days prior and through Election Day. Each location has different hours and district ballots available.",
+   "status": "verified"
+  },
+  "first_time": {
+   "status": "missing",
+   "notes": "Same-day registration exists only for the presidential race in a presidential election (media packet), so it doesn't apply in 2026. No first-time-voter step found beyond the ID rule."
+  }
+ },
+ "where": {
+  "locator_url": "https://www.elections.alaska.gov/election-polls/",
+  "locator_label": {
+   "en": "Polling Place Locations (Alaska Division of Elections)",
+   "es": "Polling Place Locations (División de Elecciones de Alaska)"
+  },
+  "local_offices_url": "https://www.elections.alaska.gov/contact-information/",
+  "sample_ballot_url": "https://www.elections.alaska.gov/sample-ballots/",
+  "rule": {
+   "en": "Look up your Election Day polling place by city and district, or by address on the Division's precinct map. Early voting sites, with their hours, are on a separate list.",
+   "es": "Busca tu lugar de votación del Día de las Elecciones por ciudad y distrito, o por dirección en el mapa de precintos de la División. Los lugares de votación anticipada, con sus horarios, están en otra lista.",
+   "src": "https://www.elections.alaska.gov/election-polls/",
+   "checked": "2026-10-21",
+   "quote": "Use the form below to search for polling locations by city and district, or you can use the Division of Election’s Precinct Locator powered by Esri to search for the nearest polling location based on an address.",
+   "status": "verified"
+  }
+ },
+ "id": {
+  "rule": "id_nonphoto",
+  "accepted": {
+   "en": [
+    "Voter registration card",
+    "Alaska driver's license",
+    "Alaska state ID card",
+    "Current and valid photo ID card",
+    "Military ID card",
+    "Birth certificate",
+    "Hunting or fishing license",
+    "Current utility bill, government check, bank statement, paycheck or other government document, including a Tribal ID, with your name and current address"
+   ],
+   "es": [
+    "Tarjeta de registro de votante",
+    "Licencia de conducir de Alaska",
+    "Tarjeta de identificación estatal de Alaska",
+    "Identificación con foto vigente y válida",
+    "Identificación militar",
+    "Acta de nacimiento",
+    "Licencia de caza o pesca",
+    "Recibo de servicios reciente, cheque del gobierno, estado de cuenta bancario, talón de pago u otro documento del gobierno, incluida una identificación tribal (Tribal ID), con tu nombre y tu dirección actual"
+   ],
+   "src": "https://www.elections.alaska.gov/doc/mp/2026/MediaPacket-2026-General.%20V3.pdf",
+   "checked": "2026-10-21",
+   "quote": "Voters MUST be prepared to show one of the following forms of identification:",
+   "status": "verified"
+  },
+  "expired": {
+   "status": "missing"
+  },
+  "without": {
+   "en": "No ID with you? A poll worker who knows you can waive it, unless you're a first-time voter who registered by mail or online without ID. Otherwise you vote a questioned ballot, which a review board checks before it's counted.",
+   "es": "¿No traes identificación? Un trabajador electoral que te conozca puede dispensarla, salvo que votes por primera vez y te hayas registrado por correo o en línea sin identificación. Si no, votas con una boleta cuestionada (questioned ballot), que una junta revisa antes de contarla.",
+   "src": "https://www.akleg.gov/basis/statutes.asp?media=print&secStart=15.15.225&secEnd=15.15.225",
+   "checked": "2026-10-21",
+   "quote": "A voter who cannot exhibit a required form of identification shall be allowed to vote a questioned ballot.",
+   "status": "verified"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "Any Alaska voter can vote absentee, no reason needed. You have to apply for a ballot by mail, fax or online delivery; Alaska doesn't mail one to everyone.",
+   "es": "Cualquier votante de Alaska puede votar en ausencia, sin dar una razón. Tienes que solicitar una boleta por correo, por fax o por entrega en línea; Alaska no le manda una a todo el mundo.",
+   "src": "https://www.elections.alaska.gov/voter-information/absentee-and-early-voting/",
+   "checked": "2026-10-21",
+   "quote": "Alaska is a No Excuse voting state. Anyone can apply to vote absentee by mail, fax, or online delivery.",
+   "status": "verified"
+  },
+  "witness": {
+   "en": "Sign your return envelope in front of a witness who is 18 or older, and have them sign it too. Add at least one identifier, and it's a good idea to date both signatures.",
+   "es": "Firma el sobre de devolución frente a un testigo de 18 años o más, y pídele que también lo firme. Agrega por lo menos un dato de identificación, y conviene poner la fecha en las dos firmas.",
+   "src": "https://www.elections.alaska.gov/voter-information/absentee-and-early-voting/",
+   "checked": "2026-10-21",
+   "quote": "Your witness must be 18 years of age or older and must also sign the return ballot envelope.",
+   "status": "verified"
+  },
+  "track_url": "https://myvoterportal.alaska.gov/",
+  "cure": {
+   "en": "Check the envelope before you seal it: your signature, your witness's signature and an identifier. Alaska has no way to fix a mistake once your ballot reaches the Division.",
+   "es": "Revisa el sobre antes de cerrarlo: tu firma, la firma de tu testigo y un dato de identificación. En Alaska no hay forma de corregir un error una vez que tu boleta llega a la División.",
+   "src": "https://www.elections.alaska.gov/doc/mp/2026/MediaPacket-2026-General.%20V3.pdf",
+   "checked": "2026-10-21",
+   "quote": "State law does not provide for a cure process. Once a ballot is received by the division, no changes can be made by the voter.",
+   "status": "verified"
+  },
+  "dropbox": {
+   "en": "There are no drop boxes. Hand your ballot in at a Division office or any voting location by 8 p.m. on Election Day.",
+   "es": "No hay buzones de entrega. Entrega tu boleta en una oficina de la División o en cualquier lugar de votación a más tardar a las 8 p. m. del Día de las Elecciones.",
+   "src": "https://www.elections.alaska.gov/doc/mp/2026/MediaPacket-2026-General.%20V3.pdf",
+   "checked": "2026-10-21",
+   "quote": "Drop boxes will not be available. Voters can turn in their absentee ballot to one of our offices or any voting location. The voter must do so by 8pm on Election Day.",
+   "status": "verified"
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "en": "Leave the campaign gear at home. Within 200 feet of any polling place entrance, no one may campaign, display campaign items for candidates or issues on that ballot, hand out cards or handbills, or put up political signs.",
+   "es": "Deja en casa lo de campaña. A menos de 200 pies de cualquier entrada a un lugar de votación nadie puede hacer campaña, mostrar artículos de campaña de candidatos o propuestas de esa boleta, repartir tarjetas o volantes, ni poner letreros políticos.",
+   "src": "https://www.elections.alaska.gov/doc/mp/2026/MediaPacket-2026-General.%20V3.pdf",
+   "checked": "2026-10-21",
+   "quote": "Alaska law prohibits political persuasion within 200 feet of any entrance to a polling place during the hours the polls are open. This means that there may not be any discussion or display or campaign items for candidates or issues appearing on the ballot at that polling place.",
+   "status": "verified"
+  },
+  "phone": {
+   "status": "missing",
+   "notes": "No voter phone rule found. The media packet's photo rules are for press. The ballot selfie answer is in faq-states.php."
+  },
+  "line": {
+   "en": "Polls close at 8 p.m. If you're in line by then, stay put. You can still vote.",
+   "es": "Los lugares de votación cierran a las 8 p. m. Si estás en la fila a esa hora, no te salgas. Todavía puedes votar.",
+   "src": "https://www.akleg.gov/basis/statutes.asp?media=print&secStart=15.15.320&secEnd=15.15.320",
+   "checked": "2026-10-21",
+   "quote": "Every qualified voter present and in line at the time prescribed for closing the polls may vote.",
+   "status": "verified"
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "en": "Alaska's Division of Elections has put kids' art on its stickers. For 2022 it held a youth contest for the I Voted sticker, open to ages 5 to 13, with one winner from each of the state's five regions, picked by a public ranked choice vote.",
+   "es": "La División de Elecciones de Alaska ha puesto arte de niños en sus stickers. Para 2022 organizó un concurso juvenil para el sticker de I Voted, abierto a niños de 5 a 13 años, con un ganador de cada una de las cinco regiones del estado, elegido por el público con voto por orden de preferencia.",
+   "src": "https://www.elections.alaska.gov/2022-i-voted-sticker-and-official-election-pamphlet-youth-artwork-contest/",
+   "checked": "2026-10-21",
+   "quote": "“I Voted” sticker submissions are open to youth ages 5-13 years and there will be one winner in each of the five regions.",
+   "status": "verified"
+  }
+ },
+ "faq": {
+  "provisional": {
+   "en": "Alaska calls it a questioned ballot. You vote one if your name isn't on the precinct list, or if you have no ID and no poll worker knows you. You fill out an oath and affidavit envelope, and a review board checks it before counting.",
+   "es": "En Alaska se llama boleta cuestionada (questioned ballot). Votas con una si tu nombre no está en la lista del precinto, o si no traes identificación y ningún trabajador electoral te conoce. Llenas un sobre con juramento y declaración jurada, y una junta lo revisa antes de contarlo.",
+   "src": "https://www.elections.alaska.gov/doc/mp/2026/MediaPacket-2026-General.%20V3.pdf",
+   "checked": "2026-10-21",
+   "quote": "If a voter’s name does not appear on the precinct register, the voter must vote a questioned ballot.",
+   "status": "verified"
+  },
+  "line": {
+   "en": "You can still vote. Every qualified voter in line when the polls close at 8 p.m. may vote.",
+   "es": "Todavía puedes votar. Toda persona con derecho a votar que esté en la fila cuando cierran los lugares de votación a las 8 p. m. puede votar.",
+   "src": "https://www.akleg.gov/basis/statutes.asp?media=print&secStart=15.15.320&secEnd=15.15.320",
+   "checked": "2026-10-21",
+   "quote": "Every qualified voter present and in line at the time prescribed for closing the polls may vote.",
+   "status": "verified"
+  },
+  "track": {
+   "en": "Check your application and ballot status on My Voter Portal, the Division's voter information tool.",
+   "es": "Revisa el estado de tu solicitud y de tu boleta en My Voter Portal, la herramienta de información al votante de la División.",
+   "src": "https://www.elections.alaska.gov/voter-information/absentee-and-early-voting/",
+   "checked": "2026-10-21",
+   "quote": "The Voter Information Tool can check registration, application, and ballot status.",
+   "status": "verified"
+  },
+  "unsigned": {
+   "en": "It can't be fixed. Alaska has no cure process, and once your ballot reaches the Division you can't change it. Check both signatures and your identifier before you mail it.",
+   "es": "No se puede corregir. Alaska no tiene proceso para corregir boletas, y una vez que tu boleta llega a la División no puedes cambiarla. Revisa las dos firmas y tu dato de identificación antes de enviarla.",
+   "src": "https://www.elections.alaska.gov/doc/mp/2026/MediaPacket-2026-General.%20V3.pdf",
+   "checked": "2026-10-21",
+   "quote": "State law does not provide for a cure process. Once a ballot is received by the division, no changes can be made by the voter.",
+   "status": "verified"
+  },
+  "late_mail": {
+   "en": "A mailed ballot counts if it's postmarked by November 3 and arrives by November 13. Mailing it close to Election Day? Ask the postal clerk to hand cancel it at the counter, or hand it in at a voting location by 8 p.m. on November 3.",
+   "es": "Una boleta por correo cuenta si tiene matasellos del 3 de noviembre o antes y llega a más tardar el 13 de noviembre. ¿La envías cerca del Día de las Elecciones? Pide en el mostrador de la oficina postal que le pongan el matasellos a mano, o entrégala en un lugar de votación a más tardar a las 8 p. m. del 3 de noviembre.",
+   "src": "https://www.elections.alaska.gov/voter-information/absentee-and-early-voting/",
+   "checked": "2026-10-21",
+   "quote": "To ensure timely postmarks, the division recommends you have the USPS postal clerk hand cancel your ballot at the counter.",
+   "status": "verified"
+  }
+ },
+ "notes": "Read October 21, 2026 on elections.alaska.gov (curl worked): early and absentee in-person locations (avo), the election calendar, Absentee and Early Voting, Polling Place Locations, the 2026 General Election media packet PDF (V3), and the 2022 youth sticker contest release; and akleg.gov print view for AS 15.15.170, 15.15.225, 15.15.320, 15.20.081 and 15.20.203. Early voting start, Monday, October 19, matches states.js (calendar: 'Absentee In Person, EV, electronic transmission and Special Needs voting begins.'); the avo page lists most sites through November 2. November 13 is the 10th day after the election (AS 15.20.081(e), media packet). Weekend regional office hours are Division policy, not law (calendar). The precinct map is on akelections.maps.arcgis.com, which the validator would reject, so locator_url points at the Polling Place Locations page that links to it. myvoterportal.alaska.gov returned 403 to curl; it is linked from the Absentee and Early Voting page and the media packet. Return envelopes need postage (media packet: 'Is return postage pre-paid for absentee by-mail ballots? No.'). The Division does not verify signatures (media packet). Sticker: the only official contest page found is for 2022; no 2026 sticker page found. Expired ID rule and a voter phone rule not found."
+}

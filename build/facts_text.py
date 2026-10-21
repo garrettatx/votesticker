@@ -36,7 +36,8 @@ BANNED_HOSTS = ('vote.org', 'vote411.org', 'ballotpedia.org', 'ncsl.org', 'wikip
 OFFICIAL = re.compile(r'(\.gov$|\.us$|^sos\.|^elections?\.|^vote|statutes|legis|^www\.sos\.|capitol)')
 BANNED_WORDS = re.compile(r'RE-VERIFY|\bTODO\b|(?i:\blikely\b|\bprobably\b|\btypically\b|\bgenerally\b|\busually\b)|—')
 # State election offices that run tools on a vendor's host, linked from the state's own page.
-ALLOW_HOSTS = {'goelect.txelections.civixapps.com'}  # Texas My Voter Portal, linked from votetexas.gov/voting/where.html
+ALLOW_HOSTS = {'goelect.txelections.civixapps.com',
+               'dcboe.org', 'www.dcboe.org', 'earlyvoting.dcboe.org'}  # DC Board of Elections, the District's election office  # Texas My Voter Portal, linked from votetexas.gov/voting/where.html
 
 # Every fact the template knows, with its kind: text (en/es strings), list (en/es lists), url (a bare
 # string), rule (one of RULES).
