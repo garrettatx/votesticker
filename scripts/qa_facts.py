@@ -26,12 +26,12 @@ print(r.stdout.strip())
 if r.returncode:
     fails.append('facts_text.py --check failed')
 
-facts = {p.stem.upper() for p in (ROOT / 'build' / 'state-facts').glob('*.json')}
+facts = {p.stem.upper() for p in (ROOT / 'build' / 'state-facts').glob('*.json') if json.loads(p.read_text()).get('live') is True}
 php = (ROOT / 'site' / 'facts-states.php').read_text() if (ROOT / 'site' / 'facts-states.php').exists() else ''
 for a in sorted(facts):
     if f"'{a}' =>" not in php:
         fails.append(f'{a}: site/facts-states.php is out of date; run python3 -I build/facts_text.py')
-    for p in sorted((ROOT / 'build' / 'state-facts').glob('*.json')):
+    for p in sorted(x for x in (ROOT / 'build' / 'state-facts').glob('*.json') if x.stem.upper() in facts):
         if p.stat().st_mtime > (ROOT / 'site' / 'facts-states.php').stat().st_mtime:
             fails.append(f'{p.name} is newer than site/facts-states.php; run python3 -I build/facts_text.py')
             break

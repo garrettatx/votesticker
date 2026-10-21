@@ -389,7 +389,8 @@ select:hover, input:hover, textarea:hover { border-color: #A79D86; }
 @media (min-width: 960px) { .near ul { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 .near li { display: flex; flex-direction: column; padding: var(--s2) 0; border-bottom: 1px solid var(--line); }
 .near li a { font-weight: 700; }
-.near li span { font-size: var(--fs-xs); color: var(--muted); }
+.near li span { font-size: var(--fs-sm); color: var(--muted); }
+.near li span .when__date, .states .when__date { color: var(--ink); }
 
 .pager { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s3); }
 .pager a { display: flex; flex-direction: column; gap: 2px; min-height: 44px; padding: var(--s3) var(--s4); background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); font-weight: 700; transition: border-color 0.15s; }
@@ -399,10 +400,11 @@ select:hover, input:hover, textarea:hover { border-color: #A79D86; }
 .pager__next { grid-column: 2; text-align: right; }
 .pager__next span::after { content: " →"; }
 
-.states ul { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: var(--s5); font-size: var(--fs-sm); }
+.states ul { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: var(--s5); font-size: 1rem; }
 @media (min-width: 600px) { .states ul { columns: 3; } }
-@media (min-width: 860px) { .states ul { columns: 5; column-gap: var(--s6); } }
+@media (min-width: 860px) { .states ul { columns: 4; column-gap: var(--s6); } }
 .states li { padding: 4px 0; break-inside: avoid; }
+.states li > a, .states li > span[aria-current] { font-weight: 700; }
 .states a { color: #2A3A66; }
 .states span[aria-current] { display: inline-block; padding: 0 8px; margin-left: -8px; border-radius: 6px; background: var(--ink); color: #fff; font-weight: 700; }
 
@@ -433,7 +435,12 @@ select:hover, input:hover, textarea:hover { border-color: #A79D86; }
 .foot__gd-line { font-size: var(--fs-xs); }
 .hero__today { margin: var(--s3) 0 0; font-weight: 700; text-wrap: pretty; }
 h2, .lead, .guide p, .info p, .section-intro { text-wrap: pretty; }
-.states__when { display: block; font-size: var(--fs-xs); color: var(--muted); }
+.states__when { display: block; margin-top: 2px; font-size: var(--fs-sm); }
+/* Status lines in the state lists: the state name leads, the label is quiet, the date reads (October 21 review). */
+.when__label { color: var(--muted); }
+.when__date { font-weight: 700; color: var(--ink); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.states li { margin-bottom: var(--s2); }
+.dates td { font-variant-numeric: tabular-nums; }
 .why { margin: var(--s7) 0 0; max-width: 46rem; }
 .states__all summary { cursor: pointer; font-weight: 700; color: var(--ink); min-height: 28px; margin-bottom: var(--s3); }
 .states__all[open] summary { margin-bottom: var(--s4); }

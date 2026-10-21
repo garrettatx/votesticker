@@ -84,6 +84,18 @@ function vote_files( $abbr ) {
 // The state hero shows one standout ready-made, tilted (October 20, Garrett): the design named here,
 // or the first in the set. Numbers match <abbr>-vote-N.jpg.
 const VOTE_HERO = array( 'MS' => 5, 'MI' => 7, 'ID' => 7, 'NJ' => 5, 'OR' => 5, 'MN' => 6, 'NE' => 6, 'AL' => 6, 'AZ' => 6, 'CT' => 7, 'DE' => 5, 'GA' => 5, 'FL' => 5, 'HI' => 6, 'IL' => 8, 'AR' => 6, 'IN' => 5, 'KY' => 8, 'ME' => 6, 'LA' => 6, 'IA' => 8, 'MA' => 5, 'MT' => 5, 'NV' => 8, 'NH' => 8 );
+// What each ready-made sticker shows, for alt text (site/assets/states/alts.json, read from the images).
+function vote_alt( $src, $st, $i ) {
+	static $alts = null;
+	if ( null === $alts ) { $f = __DIR__ . '/assets/states/alts.json'; $alts = is_file( $f ) ? json_decode( file_get_contents( $f ), true ) : array(); }
+	$key = preg_replace( '#^.*/|\.jpg.*$#', '', $src );
+	return $alts[ $key ] ?? t( '%s vote sticker, ready-made design %s', vote_lname( $st ), $i + 1 );
+}
+// A state's status line as label + date ("Early voting" muted, "Oct 24–31" darker).
+function vote_status_html( $status ) {
+	$p = explode( ' · ', $status, 2 );
+	return '<span class="when__label">' . vote_e( $p[0] ) . '</span>' . ( isset( $p[1] ) ? ' <span class="when__date">' . vote_e( $p[1] ) . '</span>' : '' );
+}
 function vote_hero_file( $abbr ) {
 	$n = VOTE_HERO[ $abbr ] ?? 0;
 	$k = strtolower( $abbr );
@@ -123,7 +135,7 @@ function vote_meta( $st ) {
 		$ribbon = $st['ribbon'] ?? 'VOTE BY MAIL, DUE ' . strtoupper( vote_short( $st['end'] ) );
 		$fact = $name . ' votes by mail, with ballots due ' . vote_long( $st['end'] ) . '.';
 		$lead = 'Your ballot came in the mail. Pick a day to send it back, then grab a sticker so your friends remember theirs.';
-		$status = 'votes by mail';
+		$status = 'Votes by mail';
 		$family = 'mail';
 	} elseif ( 'in-person' === $kind && ! empty( $st['start'] ) && empty( $st['dateLine'] ) ) {
 		$same = date( 'n', strtotime( $st['start'] ) ) === date( 'n', strtotime( $st['end'] ) );
@@ -132,28 +144,28 @@ function vote_meta( $st ) {
 		$ribbon = 'EARLY VOTING ' . strtoupper( $range );
 		$fact = 'Early voting in ' . $name . ' runs ' . vote_long( $st['start'] ) . ' to ' . ( $same ? date( 'j', strtotime( $st['end'] ) ) : vote_long( $st['end'] ) ) . '.';
 		$lead = $grab . ' Early voting runs ' . $range . '.';
-		$status = 'early voting ' . $range;
+		$status = 'Early voting · ' . $range;
 		$family = 'early';
 	} elseif ( 'in-person' === $kind && ! empty( $st['end'] ) ) {
 		$tag = 'Early Voting Through ' . vote_short( $st['end'] );
 		$ribbon = 'EARLY VOTING THROUGH ' . strtoupper( vote_short( $st['end'] ) );
 		$fact = 'Early voting in ' . $name . ' runs through ' . vote_long( $st['end'] ) . '.';
 		$lead = $grab . ' Early voting runs through ' . vote_short( $st['end'] ) . '.';
-		$status = 'early voting through ' . vote_short( $st['end'] );
+		$status = 'Early voting · through ' . vote_short( $st['end'] );
 		$family = 'early';
 	} elseif ( 'none' === $kind ) {
 		$tag = 'Vote on Election Day, Nov 3';
 		$ribbon = 'VOTE ON ELECTION DAY, NOV 3';
 		$fact = $name . ' doesn’t have early voting open to everyone. Election Day is Tuesday, November 3.';
 		$lead = $grab . ' Election Day is Tuesday, November 3. Can’t make it that day? Check whether you can vote absentee in ' . $name . '.';
-		$status = 'Election Day, Nov 3';
+		$status = 'Election Day · Nov 3';
 		$family = 'eday';
 	} else {
 		$tag = 'Election Day Nov 3';
 		$ribbon = 'ELECTION DAY, NOV 3';
 		$fact = 'Election Day is Tuesday, November 3. Early voting dates for ' . $name . ' aren’t checked here yet.';
 		$lead = $grab . ' Election Day is Tuesday, November 3. We haven’t confirmed ' . $name . '’s early voting dates yet, so these stickers say Election Day.';
-		$status = 'Election Day, Nov 3';
+		$status = 'Election Day · Nov 3';
 		$family = 'unchecked';
 	}
 	return array(
@@ -187,7 +199,7 @@ function vote_meta_es( $st ) {
 		$ribbon = vote_sfield( $st, 'ribbon' ) ?: 'VOTA POR CORREO, HASTA EL ' . vote_upper( vote_short( $st['end'] ) );
 		$fact = $name . ' vota por correo y las boletas deben entregarse a más tardar el ' . vote_long( $st['end'] ) . '.';
 		$lead = 'Tu boleta te llegó por correo. Escoge un día para devolverla y luego toma un sticker para que tus amigos se acuerden de la suya.';
-		$status = 'vota por correo';
+		$status = 'Vota por correo';
 	} elseif ( 'in-person' === $kind && ! empty( $st['start'] ) && empty( $st['dateLine'] ) ) {
 		$range = vote_range( $st['start'], $st['end'] );
 		$same = date( 'n', strtotime( $st['start'] ) ) === date( 'n', strtotime( $st['end'] ) );
@@ -195,25 +207,25 @@ function vote_meta_es( $st ) {
 		$ribbon = 'VOTACIÓN ANTICIPADA ' . vote_upper( $range );
 		$fact = 'La votación anticipada en ' . $name . ' es del ' . ( $same ? date( 'j', strtotime( $st['start'] ) ) : vote_long( $st['start'] ) ) . ' al ' . vote_long( $st['end'] ) . '.';
 		$lead = $grab . ' La votación anticipada es del ' . ( $same ? date( 'j', strtotime( $st['start'] ) ) : vote_long( $st['start'] ) ) . ' al ' . vote_long( $st['end'] ) . '.';
-		$status = 'votación anticipada ' . $range;
+		$status = 'Votación anticipada · ' . $range;
 	} elseif ( 'in-person' === $kind && ! empty( $st['end'] ) ) {
 		$tag = 'votación anticipada hasta el ' . vote_short( $st['end'] );
 		$ribbon = 'VOTACIÓN ANTICIPADA HASTA EL ' . vote_upper( vote_short( $st['end'] ) );
 		$fact = 'La votación anticipada en ' . $name . ' es hasta el ' . vote_long( $st['end'] ) . '.';
 		$lead = $grab . ' La votación anticipada es hasta el ' . vote_long( $st['end'] ) . '.';
-		$status = 'votación anticipada hasta el ' . vote_short( $st['end'] );
+		$status = 'Votación anticipada · hasta el ' . vote_short( $st['end'] );
 	} elseif ( 'none' === $kind ) {
 		$tag = 'vota el Día de las Elecciones, 3 nov';
 		$ribbon = 'VOTA EL DÍA DE LAS ELECCIONES, 3 NOV';
 		$fact = $name . ' no tiene votación anticipada abierta a todos. El Día de las Elecciones es el martes 3 de noviembre.';
 		$lead = $grab . ' El Día de las Elecciones es el martes 3 de noviembre. ¿No puedes ir ese día? Revisa si puedes votar en ausencia en ' . $name . '.';
-		$status = 'Día de las Elecciones, 3 nov';
+		$status = 'Día de las Elecciones · 3 nov';
 	} else {
 		$tag = 'Día de las Elecciones, 3 nov';
 		$ribbon = 'DÍA DE LAS ELECCIONES, 3 NOV';
 		$fact = 'El Día de las Elecciones es el martes 3 de noviembre. Aún no hemos verificado las fechas de votación anticipada de ' . $name . '.';
 		$lead = $grab . ' El Día de las Elecciones es el martes 3 de noviembre. Aún no hemos verificado las fechas de votación anticipada de ' . $name . ', así que estos stickers dicen Día de las Elecciones.';
-		$status = 'Día de las Elecciones, 3 nov';
+		$status = 'Día de las Elecciones · 3 nov';
 	}
 	return array(
 		'slug' => vote_slug( $st['name'] ),
@@ -892,7 +904,7 @@ $vote_ld = array(
 		<section class="gallery" id="gallery"<?php echo $vote_files ? '' : ' hidden'; ?> aria-labelledby="gallery-h">
 			<h2 id="gallery-h" class="display-h"><?php echo vote_e( $vote_st ? t( 'Pick a %s Sticker', vote_lname( $vote_st ) ) : t( 'Ready-Made Stickers' ) ); ?></h2>
 			<p><?php echo vote_e( t( 'Tap a sticker to save it. The words stay inside the circle, so nothing gets cut off in your profile photo.' ) ); ?></p>
-			<div class="grid grid--gallery" id="gallery-grid" style="--cols: <?php echo vote_cols( count( $vote_files ) ); ?>"><?php foreach ( $vote_files as $i => $src ) : ?><a class="tile" href="<?php echo vote_e( $src ); ?>" download="vote-<?php echo strtolower( $vote_abbr ) . '-' . ( $i + 1 ); ?>.jpg"><img src="<?php echo vote_e( $src ); ?>" alt="<?php echo vote_e( t( '%s vote sticker, ready-made design %s', vote_lname( $vote_st ), $i + 1 ) ); ?>" width="1080" height="1080" loading="lazy"></a><?php endforeach; ?></div>
+			<div class="grid grid--gallery" id="gallery-grid" style="--cols: <?php echo vote_cols( count( $vote_files ) ); ?>"><?php foreach ( $vote_files as $i => $src ) : ?><a class="tile" href="<?php echo vote_e( $src ); ?>" download="vote-<?php echo strtolower( $vote_abbr ) . '-' . ( $i + 1 ); ?>.jpg"><img src="<?php echo vote_e( $src ); ?>" alt="<?php echo vote_e( vote_alt( $src, $vote_st, $i ) ); ?>" width="1080" height="1080" loading="lazy"></a><?php endforeach; ?></div>
 		</section>
 
 		<?php $vote_maker_first = ! $vote_files; ?>
@@ -970,7 +982,7 @@ $vote_ld = array(
 		<h2 id="same-h"><?php echo vote_e( $vote_same_h ); ?></h2>
 		<ul>
 			<?php foreach ( $vote_same as $abbr ) : ?>
-			<li><a href="<?php echo vote_pbase() . $vote_meta[ $abbr ]['slug']; ?>/"><?php echo vote_e( vote_lname( $vote_rows[ $abbr ] ) ); ?></a><span><?php echo vote_e( mb_strtoupper( mb_substr( $vote_meta[ $abbr ]['status'], 0, 1 ) ) . mb_substr( $vote_meta[ $abbr ]['status'], 1 ) ); ?></span></li>
+			<li><a href="<?php echo vote_pbase() . $vote_meta[ $abbr ]['slug']; ?>/"><?php echo vote_e( vote_lname( $vote_rows[ $abbr ] ) ); ?></a><span><?php echo vote_status_html( $vote_meta[ $abbr ]['status'] ); ?></span></li>
 			<?php endforeach; ?>
 		</ul>
 	</section>
@@ -980,7 +992,7 @@ $vote_ld = array(
 		<h2 id="near-h"><?php echo vote_e( t( 'States Next Door' ) ); ?></h2>
 		<ul>
 			<?php foreach ( $vote_near as $abbr ) : ?>
-			<li><a href="<?php echo vote_pbase() . $vote_meta[ $abbr ]['slug']; ?>/"><?php echo vote_e( vote_lname( $vote_rows[ $abbr ] ) ); ?></a><span><?php echo vote_e( mb_strtoupper( mb_substr( $vote_meta[ $abbr ]['status'], 0, 1 ) ) . mb_substr( $vote_meta[ $abbr ]['status'], 1 ) ); ?></span></li>
+			<li><a href="<?php echo vote_pbase() . $vote_meta[ $abbr ]['slug']; ?>/"><?php echo vote_e( vote_lname( $vote_rows[ $abbr ] ) ); ?></a><span><?php echo vote_status_html( $vote_meta[ $abbr ]['status'] ); ?></span></li>
 			<?php endforeach; ?>
 		</ul>
 	</section>
@@ -998,7 +1010,7 @@ $vote_ld = array(
 		<details class="states__all"<?php echo $vote_st ? '' : ' open'; ?>><summary><?php echo vote_e( t( 'Show all 50 states and DC' ) ); ?></summary>
 		<ul>
 			<?php foreach ( $vote_rows as $abbr => $row ) : ?>
-			<li><?php if ( $abbr === $vote_abbr ) : ?><span aria-current="page"><?php echo vote_e( vote_lname( $row ) ); ?></span><?php else : ?><a href="<?php echo vote_pbase() . $vote_meta[ $abbr ]['slug']; ?>/"><?php echo vote_e( vote_lname( $row ) ); ?></a><?php endif; ?><span class="states__when"><?php echo vote_e( $vote_meta[ $abbr ]['status'] ); ?></span></li>
+			<li><?php if ( $abbr === $vote_abbr ) : ?><span aria-current="page"><?php echo vote_e( vote_lname( $row ) ); ?></span><?php else : ?><a href="<?php echo vote_pbase() . $vote_meta[ $abbr ]['slug']; ?>/"><?php echo vote_e( vote_lname( $row ) ); ?></a><?php endif; ?><span class="states__when"><?php echo vote_status_html( $vote_meta[ $abbr ]['status'] ); ?></span></li>
 			<?php endforeach; ?>
 		</ul>
 		</details>
@@ -1052,6 +1064,7 @@ foreach ( glob( __DIR__ . '/assets/states/*', GLOB_ONLYDIR ) as $dir ) { $vote_g
 ?>
 <script>window.VOTE_GALLERY = <?php echo vote_json( $vote_gallery ); ?>; window.VOTE_HEROES = <?php echo vote_json( array_combine( array_keys( $vote_gallery ), array_map( 'vote_hero_file', array_keys( $vote_gallery ) ) ) ); ?>;
 window.VOTE_META = <?php echo vote_json( $vote_meta ); ?>;
+window.VOTE_ALTS = <?php echo vote_json( $vote_st ? array_map( function ( $f, $i ) use ( $vote_st ) { return vote_alt( $f, $vote_st, $i ); }, vote_files( $vote_abbr ), array_keys( vote_files( $vote_abbr ) ) ) : array() ); ?>;
 window.VOTE_BASE = <?php echo vote_json( vote_pbase() ); ?>;
 window.VOTE_LANG = <?php echo vote_json( $vote_lang ); ?>;
 window.VOTE_T = <?php

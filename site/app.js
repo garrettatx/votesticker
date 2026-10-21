@@ -789,7 +789,7 @@
 			a.download = name;
 			var img = document.createElement('img');
 			img.src = src;
-			img.alt = T('%s vote sticker, ready-made design %s', nameOf(st), i + 1);
+			img.alt = (window.VOTE_ALTS || [])[i] || T('%s vote sticker, ready-made design %s', nameOf(st), i + 1);
 			img.width = img.height = 1080;
 			img.loading = 'lazy';
 			a.appendChild(img);
