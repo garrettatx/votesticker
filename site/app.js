@@ -104,6 +104,7 @@
 		// Its date bar names the state and year instead of a date.
 		ivoted: { label: 'I voted', lines: ['I VOTED'], stateLine: true },
 		mailed: { mail: true, label: 'I voted by mail', lines: ['I VOTED', 'BY MAIL'], stateLine: true },
+		ballotin: { mail: true, label: 'My ballot is in', lines: ['MY BALLOT', 'IS IN'], stateLine: true },
 		voted: { early: true, label: 'I voted early', lines: ['I VOTED', 'EARLY'] },
 		// Spanish (October 19): tú, per the project glossary (docs/spanish-style.md); "Ya voté" is the
 		// everyday Mexican phrasing for "I voted". Date bars
@@ -898,7 +899,7 @@
 		});
 		// The suggested post follows the sticker's message until the person edits the text themselves.
 		var POST_KIND = { early: 'pre_early', votatemprano: 'pre_early', mail: 'pre_mail', votacorreo: 'pre_mail', nov3: 'pre_day', vota3nov: 'pre_day', voyavotar: 'pre_day',
-			ivoted: 'post', yavote: 'post', voted: 'post_early', yavotetemprano: 'post_early', mailed: 'post_mail', yavotecorreo: 'post_mail' };
+			ivoted: 'post', yavote: 'post', voted: 'post_early', yavotetemprano: 'post_early', mailed: 'post_mail', ballotin: 'post_mail', yavotecorreo: 'post_mail' };
 		var postBox = $('post-text'), postEdited = false, posts = {}, postVariant = 'plan';
 		try { posts = JSON.parse(postBox.dataset.posts || '{}'); } catch (e) { posts = {}; }
 		postBox.addEventListener('input', function () { postEdited = true; });

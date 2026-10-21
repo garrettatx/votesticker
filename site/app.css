@@ -85,6 +85,7 @@ h2 { margin: 0 0 var(--s3); color: var(--ink); font-size: var(--fs-h3); line-hei
 .top { background: var(--ink); color: var(--cream); padding: var(--s5) 0 var(--s6); }
 @media (min-width: 860px) { .top { padding: var(--s6) 0 var(--s7); } }
 .top h1 {
+	text-wrap: balance;
 	font-family: "Vote Display", Impact, sans-serif;
 	font-weight: 400;
 	font-size: var(--fs-h1);
@@ -150,6 +151,12 @@ h2 { margin: 0 0 var(--s3); color: var(--ink); font-size: var(--fs-h3); line-hei
 .hero { display: grid; gap: var(--s5); align-items: center; }
 .eyebrow { margin: 0; font-weight: 800; font-size: var(--fs-xs); letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); }
 .top--hub h1 { font-size: var(--fs-hero); text-transform: uppercase; margin: var(--s2) 0 var(--s4); }
+/* Sentence-per-line headline: each line sized to fit its column without wrapping on desktop. */
+.h1__line { display: block; }
+@media (min-width: 860px) {
+	.top--hub h1:has(.h1__line) { font-size: clamp(2.7rem, 4.4vw, 4.1rem); }
+	.h1__line { white-space: nowrap; }
+}
 .hero__art { display: flex; justify-content: center; gap: 4%; max-width: 420px; width: 100%; margin: var(--s2) auto 0; }
 .hero__sticker { width: 30%; height: auto; border-radius: 50%; box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35); }
 .hero__sticker--1 { transform: rotate(-8deg); }
@@ -424,7 +431,8 @@ select:hover, input:hover, textarea:hover { border-color: #A79D86; }
 .about .guide { margin-top: var(--s6); }
 .foot__links a { font-weight: 700; }
 .foot__gd-line { font-size: var(--fs-xs); }
-.hero__today { margin: var(--s3) 0 0; font-weight: 700; }
+.hero__today { margin: var(--s3) 0 0; font-weight: 700; text-wrap: pretty; }
+h2, .lead, .guide p, .info p, .section-intro { text-wrap: pretty; }
 .states__when { display: block; font-size: var(--fs-xs); color: var(--muted); }
 .why { margin: var(--s7) 0 0; max-width: 46rem; }
 .states__all summary { cursor: pointer; font-weight: 700; color: var(--ink); min-height: 28px; margin-bottom: var(--s3); }
