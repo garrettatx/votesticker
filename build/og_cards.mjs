@@ -48,13 +48,24 @@ for (const st of states) {
 		// Spanish cards always show a Spanish sticker from the maker; the ready-made sets are in English.
 		const es = window.VOTE_LANG === 'es';
 		const files = es ? [] : window.VOTE_GALLERY[st.abbr] || [];
-		let im;
-		if (files.length) { im = await og.img(files[0]); }
-		else {
-			im = document.createElement('canvas');
-			const h = es ? V.defaultHeadline(row) : V.stateHeadline(row);
-			V.render(im, 600, { state: st.abbr, design: 'sticker', palette: 'state', headline: h, dateText: V.defaultDateLine(row, h) });
+		// The state's hero sticker, big, with two more from its set peeking out behind it (October 21), so
+		// the preview shows the set, not one design. Spanish cards draw three maker designs instead.
+		let im, extras;
+		const draw = (design, palette) => {
+			const c = document.createElement('canvas'), h = es ? V.defaultHeadline(row) : V.stateHeadline(row);
+			V.render(c, 600, { state: st.abbr, design, palette, headline: h, dateText: V.defaultDateLine(row, h) });
+			return c;
+		};
+		if (files.length) {
+			const hero = (window.VOTE_HEROES || {})[st.abbr] || files[0];
+			im = await og.img(hero);
+			extras = await Promise.all(files.filter((f) => f !== hero).slice(0, 2).map(og.img));
+		} else {
+			im = draw('tilt', 'plum');
+			extras = [draw('brush', 'rust'), draw('arch', 'maroon')];
 		}
+		if (extras[0]) { og.sticker(g, extras[0], 118, 478, 88, -12); }
+		if (extras[1]) { og.sticker(g, extras[1], 478, 150, 82, 9); }
 		og.sticker(g, im, 300, 315, 225, -6);
 		g.textAlign = 'left'; g.textBaseline = 'alphabetic'; g.fillStyle = '#14295E';
 		const name = st.crumb.toUpperCase();
@@ -67,6 +78,8 @@ for (const st of states) {
 		await og.sign(g, 580, 460, false);
 		g.textAlign = 'left'; g.fillStyle = '#3A4562'; g.font = '600 24px system-ui, sans-serif';
 		g.fillText(window.VOTE_LANG === 'es' ? 'Haz tu plan. Comparte el sticker.' : 'Make your plan. Share the sticker.', 580, 512);
+		g.fillStyle = '#6B7280'; g.font = '500 22px system-ui, sans-serif';
+		g.fillText(window.VOTE_LANG === 'es' ? 'Gratis y no partidista. 50 estados y DC.' : 'Free and nonpartisan. 50 states and DC.', 580, 548);
 		return out.toDataURL('image/jpeg', 0.86);
 	}, st);
 	fs.writeFileSync(path.join(OGDIR, st.slug + '.jpg'), Buffer.from(url.split(',')[1], 'base64'));

@@ -294,23 +294,23 @@ function vote_post( $st, $kind = null, $variant = 'plan' ) {
 	}
 	if ( 'friends' === $variant ) {
 		if ( $es ) {
-			$lead = $after ? $open[ $kind ] . ' Esto es para mis amigos en ' . $name . ' que todavía no han votado: ' : 'Esto es para mis amigos en ' . $name . ': ';
-			$mine = 'Si quieres un sticker como el mío, es gratis: ' . $link;
+			$lead = $after ? $open[ $kind ] . ' Amigos en ' . $name . ' que todavía no han votado: ' : 'Amigos en ' . $name . ': ';
+			$mine = 'Un sticker como el mío, gratis: ' . $link;
 		} else {
-			$lead = $after ? $open[ $kind ] . ' Posting this for my friends in ' . $name . " who haven't yet: " : 'Posting this for my friends in ' . $name . ': ';
-			$mine = "If you want a sticker like mine, it's free: " . $link;
+			$lead = $after ? $open[ $kind ] . ' ' . $name . " friends who haven't voted yet: " : $name . ' friends: ';
+			$mine = 'A sticker like mine, free: ' . $link;
 		}
 		return $lead . vote_post_fact( $st, $after, false ) . ' ' . $where . "\n\n" . $mine . "\n" . $tags;
 	}
 	if ( 'official' === $variant ) {
 		if ( $es ) {
-			$q = '¿No sabes dónde o cuándo votar en ' . $name . '? ';
-			$info = vote_verified( $st ) && $label ? 'En ' . $label . ' están los lugares, los horarios y las reglas de identificación.' : 'En vote411.org están los lugares y los horarios para ' . $name . '.';
-			$mine = 'Yo hice mi sticker en un minuto, gratis y sin cuenta: ' . $link;
+			$q = '';
+			$info = vote_verified( $st ) && $label ? 'Dónde votar en ' . $name . ', horarios y reglas de identificación: ' . $label . '.' : 'Dónde votar en ' . $name . ' y horarios: vote411.org.';
+			$mine = 'Haz el tuyo gratis en un minuto, sin cuenta: ' . $link;
 		} else {
-			$q = 'Not sure where or when to vote in ' . $name . '? ';
-			$info = vote_verified( $st ) && $label ? $label . ' has polling places, hours, and ID rules.' : 'vote411.org has polling places and hours for ' . $name . '.';
-			$mine = 'I made my sticker in about a minute, free, no account: ' . $link;
+			$q = '';
+			$info = vote_verified( $st ) && $label ? 'Where to vote in ' . $name . ', hours, and ID rules: ' . $label . '.' : 'Where to vote in ' . $name . ' and hours: vote411.org.';
+			$mine = 'Make yours free in about a minute, no account: ' . $link;
 		}
 		return ( $after ? $open[ $kind ] . ' ' : '' ) . $q . $info . ' ' . $fact . "\n\n" . $mine . "\n" . $tags;
 	}
@@ -840,7 +840,7 @@ $vote_ld = array(
 $vote_gallery = array();
 foreach ( glob( __DIR__ . '/assets/states/*', GLOB_ONLYDIR ) as $dir ) { $vote_gallery[ strtoupper( basename( $dir ) ) ] = vote_files( basename( $dir ) ); }
 ?>
-<script>window.VOTE_GALLERY = <?php echo vote_json( $vote_gallery ); ?>;
+<script>window.VOTE_GALLERY = <?php echo vote_json( $vote_gallery ); ?>; window.VOTE_HEROES = <?php echo vote_json( array_combine( array_keys( $vote_gallery ), array_map( 'vote_hero_file', array_keys( $vote_gallery ) ) ) ); ?>;
 window.VOTE_META = <?php echo vote_json( $vote_meta ); ?>;
 window.VOTE_BASE = <?php echo vote_json( vote_pbase() ); ?>;
 window.VOTE_LANG = <?php echo vote_json( $vote_lang ); ?>;

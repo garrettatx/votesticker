@@ -59,14 +59,15 @@ English post.
 
 Garrett asked for three to five options per state, each with helpful hashtags and the invite to make a
 sticker. Chips above the box pick one; picking replaces the text even after an edit, because it is a
-choice. The headline rule still never overwrites an edit.
+choice. The headline rule still never overwrites an edit. No preamble in any version: the first words
+are the message or the fact, never "posting this" or "not sure if".
 
 | Version | Shape | Hashtags |
 |---|---|---|
 | Plan | The original: opening, fact with official site, plan question, invite | message tag, #VoteSticker, #Vote{State} |
 | Short | Opening, one-sentence fact, "Make your free {State} vote sticker: link" (Instagram and X length) | the same three |
-| Friends | "Posting this for my friends in {State}:" the fact, where to find polling places, "If you want a sticker like mine, it's free: link" | message tag, #{State}, #Election2026, #VoteSticker |
-| Official info | "Not sure where or when to vote in {State}?" the official site (or vote411.org where unverified), the fact, "I made my sticker in about a minute, free, no account: link" | #Vote{State}, message tag, #Election2026, #VoteSticker |
+| Friends | "{State} friends:" the fact, where to find polling places, "A sticker like mine, free: link" | message tag, #{State}, #Election2026, #VoteSticker |
+| Official info | "Where to vote in {State}, hours, and ID rules: official site" (vote411.org where unverified), the fact, "Make yours free in about a minute, no account: link" | #Vote{State}, message tag, #Election2026, #VoteSticker |
 
 After voting, the fact turns into "still time": early voting runs through the end date and polls open
 November 3, ballots are due on the deadline, or polls are open Tuesday, November 3. Spanish versions
