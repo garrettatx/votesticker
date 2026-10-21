@@ -898,13 +898,23 @@
 		// The suggested post follows the sticker's message until the person edits the text themselves.
 		var POST_KIND = { early: 'pre_early', votatemprano: 'pre_early', mail: 'pre_mail', votacorreo: 'pre_mail', nov3: 'pre_day', vota3nov: 'pre_day', voyavotar: 'pre_day',
 			ivoted: 'post', yavote: 'post', voted: 'post_early', yavotetemprano: 'post_early', mailed: 'post_mail', yavotecorreo: 'post_mail' };
-		var postBox = $('post-text'), postEdited = false, posts = {};
+		var postBox = $('post-text'), postEdited = false, posts = {}, postVariant = 'plan';
 		try { posts = JSON.parse(postBox.dataset.posts || '{}'); } catch (e) { posts = {}; }
 		postBox.addEventListener('input', function () { postEdited = true; });
 		function setPost() {
-			var text = posts[POST_KIND[state.headline]];
+			var text = (posts[POST_KIND[state.headline]] || {})[postVariant];
 			if (text && !postEdited) { postBox.value = text; }
 		}
+		// Four versions of each message (Plan, Short, Friends, Official info). Picking one is a choice,
+		// so it replaces the text even after an edit; the headline rule above still respects edits.
+		$('post-picks').addEventListener('click', function (e) {
+			var b = e.target.closest('.pick-chip');
+			if (!b) { return; }
+			postVariant = b.dataset.variant;
+			Array.prototype.forEach.call(document.querySelectorAll('#post-picks .pick-chip'), function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+			postEdited = false;
+			setPost();
+		});
 		// No call on load: the server already wrote the version for the state's default message.
 		$('copy').addEventListener('click', function () {
 			var t = $('post-text');

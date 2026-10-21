@@ -197,6 +197,7 @@ return array(
 		'Sticker' => 'Sticker', 'Poster' => 'Póster', 'Stamp' => 'Sello', 'Big type' => 'Letra grande', 'Tilt' => 'Inclinado',
 		'Brush' => 'Pincel', 'Side by side' => 'Lado a lado', 'Arch' => 'Arco', 'Plate' => 'Placa', 'Split' => 'Dividido', 'Map below' => 'Mapa abajo',
 		'Colors' => 'Colores',
+		'Post versions' => 'Versiones del texto', 'Plan' => 'Con plan', 'Short' => 'Corto', 'Friends' => 'Para amigos', 'Official info' => 'Info oficial',
 		'State colors' => 'Colores del estado', 'Cream and navy' => 'Crema y azul marino', 'Navy and red' => 'Azul marino y rojo',
 		'Forest and gold' => 'Verde bosque y dorado', 'Cobalt and chartreuse' => 'Cobalto y verde lima', 'Maroon and gold' => 'Granate y dorado',
 		'Plum and cream' => 'Ciruela y crema', 'Teal and gold' => 'Verde azulado y dorado', 'Burnt orange and cream' => 'Naranja quemado y crema',

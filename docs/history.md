@@ -138,3 +138,20 @@ https://www.garrettn.com/2026/10/19/vote-profile-picture/ (his edit lists TX, KS
 other states" as having extra designs; NY and CA sets were still being made). Photo and featured image
 are media 11775 (`og-vote.jpg`), linked to /vote/. Media 11772 (the first, generator-made version) is
 unused. Built from `build/post-20261019.php`.
+
+## October 21: The Maker Rebuilt Around the Codex Lessons
+
+The grid had been 5 layouts by 7 palettes, 35 tiles that read as the same sticker recolored. Now each
+of 11 layouts is one tile in the palette that suits it, and a swatch row under the preview recolors the
+chosen one (what the tile shows is what you get; the swatches change only that). Seven layouts came
+from the Codex sets Garrett picked: Tilt (the plum I VOTED), Brush (Luckiest Guy, 14 KB; Permanent
+Marker was tried and is too thin at 48 px), Side by side, Arch (letters set along a curve, one item
+each), Plate (one word knocked out of an accent block), Split (a two-color diagonal field, hand-picked
+per palette) and Map below. Badge went: a ring can't be recentered, and it was Sticker without the
+disc. The pale palettes went too (sand, sky, sage); six Codex palettes replaced them, each with its
+own star and split colors. Tiles are 168 px. `scripts/sheet_designs.mjs` renders contact sheets of
+every design across palettes, headlines and Spanish for review. QA: 42,130 cards inside the safe
+circle in Chromium and WebKit.
+
+Same day: four versions of the suggested post text per message (Plan, Short, Friends, Official info),
+picked with chips above the box; each ends with the invite and three or four matching hashtags.

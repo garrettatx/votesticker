@@ -254,6 +254,10 @@ function vote_state_faq( $st ) {
 // First person, one useful state fact, a plan question (never "tag a friend"), an invite back, and
 // three hashtags that match the message. The maker swaps versions when the message changes.
 const VOTE_POST_KINDS = array( 'pre_early', 'pre_mail', 'pre_day', 'post', 'post_early', 'post_mail' );
+// Four versions of each (October 21): the plan post, a short one for Instagram and X, one written for
+// the person's friends in the state, and one that leads with where to find the official information.
+// Every version ends with the invite to make a sticker and three or four matching hashtags.
+const VOTE_POST_VARIANTS = array( 'plan' => 'Plan', 'short' => 'Short', 'friends' => 'Friends', 'official' => 'Official info' );
 
 // The version that matches the state's default sticker (app.js stateHeadline()).
 function vote_post_default( $st ) {
@@ -261,39 +265,115 @@ function vote_post_default( $st ) {
 	return 'mail' === $st['kind'] ? 'pre_mail' : 'pre_early';
 }
 
-function vote_post( $st, $kind = null ) {
+function vote_post( $st, $kind = null, $variant = 'plan' ) {
 	$kind = $kind ?: vote_post_default( $st );
 	$es = vote_es();
 	$name = vote_name( $st );
+	$after = 0 === strpos( $kind, 'post' );
+	$label = $st['officialLabel'] ?? '';
 	$open = $es
 		? array( 'pre_early' => 'Voy a votar temprano.', 'pre_mail' => 'Voy a entregar mi boleta con tiempo.', 'pre_day' => 'Voy a votar el Día de las Elecciones.', 'post' => 'Ya voté.', 'post_early' => 'Ya voté temprano.', 'post_mail' => 'Ya entregué mi boleta.' )
 		: array( 'pre_early' => "I'm voting early.", 'pre_mail' => "I'm getting my ballot in early.", 'pre_day' => "I'm voting on Election Day.", 'post' => 'I voted.', 'post_early' => 'I voted early.', 'post_mail' => 'My ballot is in.' );
 	$ask = $es
 		? array( 'pre_mail' => '¿Cuándo vas a devolver tu boleta?', 'post' => '¿Y tú, ya tienes tu plan para votar?', 'default' => '¿Ya tienes tu plan para votar?' )
 		: array( 'pre_mail' => 'When are you sending yours back?', 'post' => "What's your plan to vote?", 'default' => "What's your plan to vote?" );
-	$question = $ask[ 0 === strpos( $kind, 'post' ) ? 'post' : $kind ] ?? $ask['default'];
+	$question = $ask[ $after ? 'post' : $kind ] ?? $ask['default'];
 	// Full https:// URL so it links everywhere, LinkedIn and email included.
 	$link = 'https://votesticker.org/' . ( $es ? 'es/' : '' ) . vote_slug( $st['name'] );
 	$invite = $es
 		? '¿Quieres uno? Haz gratis tu sticker para votar en ' . $name . ': ' . $link
 		: 'Want one? Make your own free ' . $name . ' vote sticker: ' . $link;
-	return $open[ $kind ] . ' ' . vote_post_body( $st ) . ' ' . $question . "\n\n" . $invite . "\n" . vote_hashtags( $st, $kind );
+	$fact = vote_post_fact( $st, $after );
+	$where = vote_verified( $st ) && $label
+		? ( $es ? 'Lugares y horarios en ' . $label . '.' : 'Polling places and hours are at ' . $label . '.' )
+		: ( $es ? 'Lugares y horarios para ' . $name . ' en vote411.org.' : 'Polling places and hours for ' . $name . ' are at vote411.org.' );
+	$tags = vote_hashtags( $st, $kind, $variant );
+	if ( 'short' === $variant ) {
+		$make = $es ? 'Haz gratis tu sticker para votar en ' . $name . ': ' . $link : 'Make your free ' . $name . ' vote sticker: ' . $link;
+		return $open[ $kind ] . ' ' . $fact . "\n" . $make . "\n" . $tags;
+	}
+	if ( 'friends' === $variant ) {
+		if ( $es ) {
+			$lead = $after ? $open[ $kind ] . ' Esto es para mis amigos en ' . $name . ' que todavía no han votado: ' : 'Esto es para mis amigos en ' . $name . ': ';
+			$mine = 'Si quieres un sticker como el mío, es gratis: ' . $link;
+		} else {
+			$lead = $after ? $open[ $kind ] . ' Posting this for my friends in ' . $name . " who haven't yet: " : 'Posting this for my friends in ' . $name . ': ';
+			$mine = "If you want a sticker like mine, it's free: " . $link;
+		}
+		return $lead . vote_post_fact( $st, $after, false ) . ' ' . $where . "\n\n" . $mine . "\n" . $tags;
+	}
+	if ( 'official' === $variant ) {
+		if ( $es ) {
+			$q = '¿No sabes dónde o cuándo votar en ' . $name . '? ';
+			$info = vote_verified( $st ) && $label ? 'En ' . $label . ' están los lugares, los horarios y las reglas de identificación.' : 'En vote411.org están los lugares y los horarios para ' . $name . '.';
+			$mine = 'Yo hice mi sticker en un minuto, gratis y sin cuenta: ' . $link;
+		} else {
+			$q = 'Not sure where or when to vote in ' . $name . '? ';
+			$info = vote_verified( $st ) && $label ? $label . ' has polling places, hours, and ID rules.' : 'vote411.org has polling places and hours for ' . $name . '.';
+			$mine = 'I made my sticker in about a minute, free, no account: ' . $link;
+		}
+		return ( $after ? $open[ $kind ] . ' ' : '' ) . $q . $info . ' ' . $fact . "\n\n" . $mine . "\n" . $tags;
+	}
+	return $open[ $kind ] . ' ' . vote_post_body( $st ) . ' ' . $question . "\n\n" . $invite . "\n" . $tags;
 }
 
-// Three tags: the message's own tag, the brand, and the state (#VoteTexas). #IVoted only after voting.
-function vote_hashtags( $st, $kind ) {
+// One short fact for the short, friends and official versions: the dates before voting, "still time"
+// after. Same verified data as the page. With $named false the sentence skips the state's name and
+// starts lowercase, for a lead that already names the state ("Posting this for my friends in Texas:").
+function vote_post_fact( $st, $after, $named = true ) {
+	$es = vote_es();
+	$name = vote_name( $st );
+	$ok = vote_verified( $st );
+	$kind = $ok ? $st['kind'] : '';
+	$in = $named ? ( $es ? ' en ' . $name : ' in ' . $name ) : '';
+	if ( $es ) {
+		if ( 'in-person' === $kind ) {
+			$same = date( 'n', strtotime( $st['start'] ) ) === date( 'n', strtotime( $st['end'] ) );
+			$f = $after ? ( $named ? 'Todavía hay tiempo: la' : 'la' ) . ' votación anticipada' . $in . ' sigue hasta el ' . vote_long( $st['end'] ) . ', y el 3 de noviembre abren las casillas.'
+				: 'la votación anticipada' . $in . ' es del ' . ( $same ? date( 'j', strtotime( $st['start'] ) ) : vote_long( $st['start'] ) ) . ' al ' . vote_long( $st['end'] ) . '.';
+		} elseif ( 'mail' === $kind ) {
+			$f = $after ? ( $named ? 'Si todavía no has entregado la tuya,' . $in . ' la' : 'la' ) . ' boleta se recibe a más tardar el ' . vote_long( $st['end'] ) . '.'
+				: ( $named ? $name . ' vota por correo. La' : 'la' ) . ' boleta se entrega a más tardar el ' . vote_long( $st['end'] ) . '.';
+		} else {
+			$f = $after ? ( $named ? 'Si todavía no has votado,' . $in . ' las' : 'las' ) . ' casillas abren el martes 3 de noviembre.'
+				: 'el Día de las Elecciones' . $in . ' es el martes 3 de noviembre.';
+		}
+	} elseif ( 'in-person' === $kind ) {
+		$same = date( 'n', strtotime( $st['start'] ) ) === date( 'n', strtotime( $st['end'] ) );
+		$f = $after ? ( $named ? "There's still time: early" : 'early' ) . ' voting' . $in . ' runs through ' . vote_long( $st['end'] ) . ', and polls are open November 3.'
+			: 'early voting' . $in . ' runs ' . vote_long( $st['start'] ) . ' to ' . ( $same ? date( 'j', strtotime( $st['end'] ) ) : vote_long( $st['end'] ) ) . '.';
+	} elseif ( 'mail' === $kind ) {
+		$f = $after ? ( $named ? "If yours isn't in yet, " . $name . ' ballots' : 'ballots' ) . ' are due ' . vote_long( $st['end'] ) . '.'
+			: ( $named ? $name . ' votes by mail. Ballots' : 'ballots' ) . ' are due ' . vote_long( $st['end'] ) . '.';
+	} else {
+		$f = $after ? ( $named ? "If you haven't yet, polls" . $in : 'polls' ) . ' are open Tuesday, November 3.' : 'Election Day' . $in . ' is Tuesday, November 3.';
+	}
+	return $named ? vote_ucfirst( $f ) : $f;
+}
+function vote_ucfirst( $s ) { return mb_strtoupper( mb_substr( $s, 0, 1 ) ) . mb_substr( $s, 1 ); }
+
+// Three or four tags: the message's own tag, the brand, and the state (#VoteTexas). #IVoted only after
+// voting. The friends and official versions swap in #Election2026 and the plain state tag.
+function vote_hashtags( $st, $kind, $variant = 'plan' ) {
 	$state = 'DC' === $st['abbr'] ? 'DC' : str_replace( ' ', '', $st['name'] );
-	$lead = vote_es()
+	$es = vote_es();
+	$lead = $es
 		? array( 'pre_early' => '#VotaTemprano', 'pre_mail' => '#VotaPorCorreo', 'pre_day' => '#YoVoto' )
 		: array( 'pre_early' => '#VoteEarly', 'pre_mail' => '#VoteByMail', 'pre_day' => '#ElectionDay' );
-	$tag = $lead[ $kind ] ?? ( vote_es() ? '#YaVoté' : '#IVoted' );
+	$tag = $lead[ $kind ] ?? ( $es ? '#YaVoté' : '#IVoted' );
+	$year = $es ? '#Elecciones2026' : '#Election2026';
+	if ( 'friends' === $variant ) { return $tag . ' #' . $state . ' ' . $year . ' #VoteSticker'; }
+	if ( 'official' === $variant ) { return '#Vote' . $state . ' ' . $tag . ' ' . $year . ' #VoteSticker'; }
 	return $tag . ' #VoteSticker #Vote' . $state;
 }
 
-// Every version, for the maker to swap in (JSON on the textarea).
+// Every message in every version, for the maker to swap in (JSON on the textarea).
 function vote_post_all( $st ) {
 	$out = array();
-	foreach ( VOTE_POST_KINDS as $k ) { $out[ $k ] = vote_post( $st, $k ); }
+	foreach ( VOTE_POST_KINDS as $k ) {
+		$out[ $k ] = array();
+		foreach ( array_keys( VOTE_POST_VARIANTS ) as $v ) { $out[ $k ][ $v ] = vote_post( $st, $k, $v ); }
+	}
 	return $out;
 }
 
@@ -653,7 +733,8 @@ $vote_ld = array(
 				<p class="hint" id="tip"></p>
 				<details class="post" open>
 					<summary><?php echo vote_e( t( 'Suggested post text' ) ); ?></summary>
-					<textarea id="post-text" rows="6"<?php if ( $vote_st ) : ?> data-posts="<?php echo vote_e( vote_json( vote_post_all( $vote_st ) ) ); ?>"<?php endif; ?> aria-label="<?php echo vote_e( t( 'Suggested post text' ) ); ?>"><?php echo $vote_st ? vote_e( vote_post( $vote_st ) ) : ''; ?></textarea>
+					<div class="post-picks" id="post-picks" role="group" aria-label="<?php echo vote_e( t( 'Post versions' ) ); ?>"><?php foreach ( VOTE_POST_VARIANTS as $vk => $vl ) : ?><button type="button" class="pick-chip" data-variant="<?php echo $vk; ?>" aria-pressed="<?php echo 'plan' === $vk ? 'true' : 'false'; ?>"><?php echo vote_e( t( $vl ) ); ?></button><?php endforeach; ?></div>
+					<textarea id="post-text" rows="7"<?php if ( $vote_st ) : ?> data-posts="<?php echo vote_e( vote_json( vote_post_all( $vote_st ) ) ); ?>"<?php endif; ?> aria-label="<?php echo vote_e( t( 'Suggested post text' ) ); ?>"><?php echo $vote_st ? vote_e( vote_post( $vote_st ) ) : ''; ?></textarea>
 					<button type="button" class="btn btn--quiet" id="copy"><?php echo vote_e( t( 'Copy post text' ) ); ?></button>
 				</details>
 			</div>

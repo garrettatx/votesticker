@@ -11,12 +11,16 @@ Made by Garrett Nafzinger of [Garrett Digital](https://www.garrettdigital.com/).
 
 - **One page per state** (`/texas/`, `/district-of-columbia/`) with that state's early voting,
   vote-by-mail, or Election Day dates and a link to the official election office.
-- **Ready-made designs** for all 51 pages (English only), plus a maker with 18 designs (3 layouts by 6
-  palettes) and short headlines that are true for the state ("VOTE EARLY" only where early voting is
-  confirmed).
+- **Ready-made designs** for all 51 pages (English only), plus a maker with 11 layouts, each shown
+  once in the palette that suits it, and a swatch row of 10 palettes (the state's own, three brand
+  cores, and six from the Codex sets) that recolors the chosen one. Headlines are short and true for
+  the state ("VOTE EARLY" only where early voting is confirmed).
 - **Nothing gets cropped.** Every picture keeps its content inside the circle that Facebook, Instagram,
-  X, and LinkedIn crop profile pictures to. QA renders all 4,302 combinations and fails on any pixel
+  X, and LinkedIn crop profile pictures to. QA renders all 42,130 combinations and fails on any pixel
   outside it.
+- **Suggested post text** in four versions per sticker message (Plan, Short, Friends, Official info),
+  each with the state's dates, the invite to make a sticker, and three or four matching hashtags
+  (`docs/post-text-rules.md`).
 - **Private by design.** Pictures are drawn in the browser with canvas. Nothing is uploaded.
 
 ## Rules the Content Follows
@@ -38,7 +42,7 @@ Made by Garrett Nafzinger of [Garrett Digital](https://www.garrettdigital.com/).
 | `site/index.php` | Page template (hub and state pages): titles, descriptions, canonical, breadcrumbs, state panel, internal links |
 | `site/app.js`, `site/app.css` | The maker: layouts, drawing, saving, sharing |
 | `site/state-shapes.js` | Generated state outlines (US Census boundaries via us-atlas 3.0.1, public domain) |
-| `site/assets/` | Fonts (Anton, Archivo Black; SIL Open Font License), icons, brand mark, share images, ready-made designs |
+| `site/assets/` | Fonts (Anton and Archivo Black, SIL Open Font License; Luckiest Guy, Apache 2.0; all subset with pyftsubset), icons, brand mark, share images, ready-made designs |
 | `site/<state>/index.php` | Two-line stubs that render that state locally |
 | `build/` | Static build, state stubs, share images, favicon, outline and crop-fit tools |
 | `scripts/` | QA: `qa_cards.mjs` (every card in Chromium and WebKit, plus server-vs-browser panel parity) and `qa_seo.py` (52 pages: metadata, canonicals, links, sitemap, redirects) |
