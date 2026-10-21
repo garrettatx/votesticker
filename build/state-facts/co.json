@@ -1,0 +1,216 @@
+{
+ "abbr": "CO",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "www.coloradosos.gov": {
+   "en": "the Colorado Secretary of State",
+   "es": "la Secretaría de Estado de Colorado"
+  },
+  "www.sos.state.co.us": {
+   "en": "the Colorado Secretary of State",
+   "es": "la Secretaría de Estado de Colorado"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "Register by Monday, October 26, 2026 to still be mailed a ballot. After that, register and vote in person at a voter service and polling center, through Election Day.",
+   "es": "Regístrate a más tardar el lunes 26 de octubre de 2026 para que todavía te envíen una boleta por correo. Después de esa fecha, regístrate y vota en persona en un centro de votación y servicio al votante, hasta el Día de las Elecciones.",
+   "src": "https://www.sos.state.co.us/pubs/newsRoom/pressReleases/2026/PR20260923GeneralElection.html",
+   "checked": "2026-10-21",
+   "quote": "October 26 - Deadline to register to vote and still be mailed a ballot.",
+   "status": "verified",
+   "until": "2026-10-26",
+   "en_after": "The deadline to register and be mailed a ballot was October 26. You can still register and vote in person at a voter service and polling center through 7 p.m. on Election Day.",
+   "es_after": "La fecha límite para registrarte y recibir una boleta por correo fue el 26 de octubre. Todavía puedes registrarte y votar en persona en un centro de votación y servicio al votante hasta las 7 p. m. del Día de las Elecciones."
+  },
+  "mail_request": {
+   "status": "missing",
+   "notes": "Every active voter is mailed a ballot; there is no request deadline."
+  },
+  "mail_return": {
+   "en": "Drop box or voter center: by 7 p.m. on Tuesday, November 3. Mail: October 26 is the last suggested day to mail it. From October 27 on, take it in your signed envelope to a drop box or voter center instead.",
+   "es": "Buzón o centro de votación: a más tardar a las 7 p. m. del martes 3 de noviembre. Correo: el 26 de octubre es el último día sugerido para enviarla. A partir del 27 de octubre, mejor llévala en tu sobre firmado a un buzón o a un centro de votación.",
+   "src": "https://www.sos.state.co.us/pubs/newsRoom/pressReleases/2026/PR20260923GeneralElection.html",
+   "checked": "2026-10-21",
+   "quote": "October 27 - Voters who have not yet returned their mail ballot by this date should physically deliver their ballot within their signed return envelope to a ballot drop box or vote center or vote in person at a vote center.",
+   "status": "verified"
+  },
+  "early_hours": {
+   "status": "missing",
+   "notes": "Voter service and polling center hours are set by each county."
+  },
+  "cure": {
+   "status": "missing",
+   "notes": "The eight-day signature cure period appears only on an archived 2017 SOS press release (PR20171115CuringBallots); no current SOS page with the 2026 deadline was found. GoVoteColorado links a 'Cure my ballot' app at myballot.coloradosos.gov/ecure. The Larimer County signature page returned 403."
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "Rather vote in person? Go to any voter service and polling center in your county with ID, until 7 p.m. on Election Day. If you vote at a center outside your home county, you only get the statewide races.",
+   "es": "¿Prefieres votar en persona? Ve a cualquier centro de votación y servicio al votante de tu condado con tu identificación, hasta las 7 p. m. del Día de las Elecciones. Si votas en un centro fuera de tu condado, solo recibes las contiendas estatales.",
+   "src": "https://www.coloradosos.gov/pubs/elections/files/KnowYourRights.pdf",
+   "checked": "2026-10-21",
+   "quote": "You will only receive a ballot with statewide races if you vote at a voter center outside your home county.",
+   "status": "verified"
+  },
+  "first_time": {
+   "en": "Registered for the first time recently? You may need to send a copy of your ID with your mail ballot. Your county clerk includes instructions with the ballot.",
+   "es": "¿Te registraste por primera vez hace poco? Es posible que tengas que mandar una copia de tu identificación con tu boleta por correo. La oficina electoral de tu condado (county clerk) incluye las instrucciones con la boleta.",
+   "src": "https://www.coloradosos.gov/pubs/elections/FAQs/mailBallotsFAQ.html",
+   "checked": "2026-10-21",
+   "quote": "If you recently registered for the first time, you may need to provide a copy of your ID along with your mail ballot.",
+   "status": "verified"
+  }
+ },
+ "where": {
+  "locator_url": "https://www.coloradosos.gov/pubs/elections/VIP.html",
+  "locator_label": {
+   "en": "Drop boxes and voting locations (Colorado Secretary of State)",
+   "es": "Buzones y lugares de votación (Secretaría de Estado de Colorado)"
+  },
+  "locator_cta": {
+   "en": "Find a drop box",
+   "es": "Buscar un buzón"
+  },
+  "rule": {
+   "en": "Enter your registered address to find drop boxes and voting locations near you. You can return your ballot to any 24-hour drop box in the state.",
+   "es": "Escribe la dirección donde estás registrado para encontrar buzones y lugares de votación cerca de ti. Puedes devolver tu boleta en cualquier buzón de 24 horas del estado.",
+   "src": "https://www.coloradosos.gov/pubs/elections/files/KnowYourRights.pdf",
+   "checked": "2026-10-21",
+   "quote": "You can mail your ballot back to your County Clerk via USPS, or return your ballot to any 24-hour drop box in the state.",
+   "status": "verified"
+  }
+ },
+ "id": {
+  "rule": "id_nonphoto",
+  "accepted": {
+   "en": [
+    "Colorado driver's license or Colorado ID card",
+    "U.S. passport or passport card",
+    "U.S. military ID or veteran ID card with your photo",
+    "Government employee ID with your photo (federal, Colorado or local)",
+    "Colorado college or university student ID with your photo",
+    "Tribal ID card",
+    "Medicare or Medicaid card",
+    "Certified copy of your U.S. birth certificate or naturalization papers",
+    "A utility bill, bank statement, paycheck, government check or other government document from the last 60 days with your name and address"
+   ],
+   "es": [
+    "Licencia de conducir o tarjeta de identificación de Colorado",
+    "Pasaporte o tarjeta pasaporte de EE. UU.",
+    "Identificación militar o de veterano de EE. UU. con tu foto",
+    "Credencial de empleado del gobierno con tu foto (federal, de Colorado o local)",
+    "Credencial estudiantil con tu foto de una universidad de Colorado",
+    "Identificación tribal",
+    "Tarjeta de Medicare o Medicaid",
+    "Copia certificada de tu acta de nacimiento de EE. UU. o de tus documentos de naturalización",
+    "Un recibo de servicios, estado de cuenta bancario, talón de pago, cheque del gobierno u otro documento del gobierno de los últimos 60 días con tu nombre y dirección"
+   ],
+   "src": "https://www.sos.state.co.us/pubs/elections/vote/acceptableFormsOfID.html",
+   "checked": "2026-10-21",
+   "quote": "All voters who vote at the polls must provide identification.",
+   "status": "verified"
+  },
+  "expired": {
+   "status": "missing",
+   "notes": "The SOS list says 'valid' for most IDs but doesn't say how expiration is treated. It does say any ID that shows an address must show a Colorado address, and the Election Day FAQ says it doesn't have to match your registration."
+  },
+  "without": {
+   "status": "missing"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "Every active voter is mailed a ballot. Ballots went out October 2 to 9. Didn't get one, or made a mistake, damaged or lost it? Ask your county clerk for a replacement, or vote in person at a voter service and polling center.",
+   "es": "A cada votante activo le envían una boleta por correo. Las boletas se enviaron del 2 al 9 de octubre. ¿No te llegó, o te equivocaste, se dañó o la perdiste? Pide una de reemplazo a la oficina electoral de tu condado, o vota en persona en un centro de votación y servicio al votante.",
+   "src": "https://www.coloradosos.gov/pubs/elections/FAQs/mailBallotsFAQ.html",
+   "checked": "2026-10-21",
+   "quote": "You may request a replacement mail ballot from your county clerk. You may also vote in-person at a voter service and polling center.",
+   "status": "verified"
+  },
+  "witness": {
+   "en": "Sign the envelope when you return your mail ballot. If you're not sure it will arrive in time, drop it off in person.",
+   "es": "Firma el sobre cuando devuelvas tu boleta por correo. Si no estás seguro de que llegue a tiempo, entrégala en persona.",
+   "src": "https://www.coloradosos.gov/pubs/elections/FAQs/mailBallotsFAQ.html",
+   "checked": "2026-10-21",
+   "quote": "Be sure to sign the envelope when you return your mail ballot.",
+   "status": "verified"
+  },
+  "track_url": "https://ballottrax.coloradosos.gov/voter/",
+  "cure": {
+   "status": "missing"
+  },
+  "dropbox": {
+   "en": "Drop boxes are open 24/7 and under video surveillance. A team of election judges from both parties collects the ballots regularly. Get yours in by 7 p.m. on Election Day.",
+   "es": "Los buzones están abiertos las 24 horas, todos los días, y tienen vigilancia por video. Un equipo de jueces electorales de ambos partidos recoge las boletas con regularidad. Deja la tuya a más tardar a las 7 p. m. del Día de las Elecciones.",
+   "src": "https://www.coloradosos.gov/pubs/elections/FAQs/mailBallotsFAQ.html",
+   "checked": "2026-10-21",
+   "quote": "Drop-box locations are open and are under video surveillance 24/7.",
+   "status": "verified"
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "status": "missing",
+   "notes": "The 100-foot electioneering rule (C.R.S. 1-13-714) was seen only on a Douglas County page and secondary sources; no SOS page or statute text was read."
+  },
+  "phone": {
+   "status": "missing"
+  },
+  "line": {
+   "en": "In line at a voter center or a drop box by 7 p.m. on Election Day? Stay put. You can vote, and your ballot will be counted.",
+   "es": "¿Estás en la fila de un centro de votación o de un buzón a las 7 p. m. del Día de las Elecciones? No te salgas. Puedes votar y tu boleta se contará.",
+   "src": "https://www.coloradosos.gov/pubs/elections/files/KnowYourRights.pdf",
+   "checked": "2026-10-21",
+   "quote": "If you are in line to cast a ballot at a voter center or a drop box by 7:00 p.m. on Election Day, you can vote and it will be counted.",
+   "status": "verified"
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "en": "Colorado has an \"I Voted\" digital sticker contest for high school students. The Secretary of State's staff pick the winner by popular vote, and the winning design shows up in BallotTrax messages and a statewide press release.",
+   "es": "Colorado tiene un concurso de stickers digitales de \"I Voted\" para estudiantes de preparatoria. El personal de la Secretaría de Estado elige al ganador por voto popular, y el diseño ganador aparece en los mensajes de BallotTrax y en un comunicado de prensa estatal.",
+   "src": "https://www.coloradosos.gov/pubs/elections/votedSticker/contest.html",
+   "checked": "2026-10-21",
+   "quote": "The creator of the winning design will be featured in a statewide press release, media coverage, and BallotTrax messages.",
+   "status": "verified"
+  }
+ },
+ "faq": {
+  "provisional": {
+   "en": "If you register on Election Day but don't have ID that can be verified, you can vote a provisional ballot. After Election Day, election officials check that you're eligible, and if you are, it's counted.",
+   "es": "Si te registras el Día de las Elecciones pero no tienes una identificación que se pueda verificar, puedes votar con una boleta provisional. Después del Día de las Elecciones, los funcionarios electorales revisan si tienes derecho a votar y, si es así, se cuenta.",
+   "src": "https://www.coloradosos.gov/pubs/elections/FAQs/ElectionDay.html",
+   "checked": "2026-10-21",
+   "quote": "If you try to register to vote on Election Day, but do not have verifiable identification, you may vote a provisional ballot.",
+   "status": "verified"
+  },
+  "line": {
+   "en": "You can still vote. Everyone in line at their polling location by 7 p.m. gets to vote, no matter how long it takes.",
+   "es": "Igual puedes votar. Toda persona que esté en la fila de su lugar de votación a las 7 p. m. puede votar, sin importar cuánto tarde.",
+   "src": "https://www.coloradosos.gov/pubs/elections/FAQs/ElectionDay.html",
+   "checked": "2026-10-21",
+   "quote": "Voters who are in line at their polling location by 7:00 PM are allowed to vote no matter how long it takes for each person to cast his or her ballot.",
+   "status": "verified"
+  },
+  "track": {
+   "en": "Sign up for BallotTrax at ballottrax.coloradosos.gov to follow your ballot from sent to accepted. You can also log in to your voter record at GoVoteColorado.gov to see whether your ballot was mailed.",
+   "es": "Regístrate en BallotTrax en ballottrax.coloradosos.gov para seguir tu boleta desde que la envían hasta que la aceptan. También puedes entrar a tu registro de votante en GoVoteColorado.gov para ver si ya te enviaron la boleta.",
+   "src": "https://www.coloradosos.gov/pubs/elections/FAQs/mailBallotsFAQ.html",
+   "checked": "2026-10-21",
+   "quote": "sign up for BallotTrax, a system that will allow you to track your ballot from sent to accepted.",
+   "status": "verified"
+  },
+  "late_mail": {
+   "en": "Postmarks don't count in Colorado. Your ballot has to be in your county clerk's hands by 7 p.m. on Election Day, so in the last week, use a drop box or voter center.",
+   "es": "En Colorado el matasellos no cuenta. Tu boleta tiene que estar en manos de la oficina electoral de tu condado a más tardar a las 7 p. m. del Día de las Elecciones, así que en la última semana usa un buzón o un centro de votación.",
+   "src": "https://www.coloradosos.gov/pubs/elections/FAQs/ElectionDay.html",
+   "checked": "2026-10-21",
+   "quote": "Postmarks do not count; ballots must be in the hands of the county clerk by 7:00 PM on Election Day in order to be counted.",
+   "status": "verified"
+  }
+ },
+ "notes": "Read October 21, 2026 on coloradosos.gov and sos.state.co.us with curl: September 23, 2026 general election press release (ballots mailed October 2 to 9, drop boxes open by October 12, voter centers by October 19, October 26 registration-by-mail and suggested mail-back date, October 27 hand-delivery advice), Election Day FAQ, Mail Ballots FAQ, Acceptable Forms of Identification, Know Your Voting Rights booklet (updated July 20, 2026), GoVoteColorado home, Where do I drop off my ballot (VIP), I Voted digital sticker contest. faq.late_mail says 'in the last week' to match the press release's October 27 advice. The ID list is condensed from the SOS list (pilot's license, Division of Youth Services ID and facility verifications left off); IDs issued under Part 5 of Article 2 of Title 42 are not accepted. Not found on a current official page: signature cure deadline, electioneering and clothing rule, phone rule, voter center hours, a statewide county clerk directory URL. mail.who's 'Ballots went out October 2 to 9' is from the press release ('Colorado's County Clerks will mail ballots via the Postal Service to every active voter between October 2 and October 9'); the rest of that fact is from the Mail Ballots FAQ."
+}

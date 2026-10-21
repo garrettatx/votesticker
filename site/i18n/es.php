@@ -19,6 +19,9 @@ return array(
 	),
 	// State facts: summary (when the standard sentence would mislead) and note, from states.js.
 	'states' => array(
+		'IL' => array( 'note' => 'La votación anticipada ya está abierta en la oficina de tu autoridad electoral; más lugares permanentes abren el 19 de octubre. La autoridad electoral de tu condado o ciudad publica lugares y horarios.' ),
+		'AZ' => array( 'note' => 'Vota por anticipado en persona en un lugar de votación anticipada de tu condado hasta las 7 p. m. del viernes 30 de octubre. Los condados fijan lugares y horarios.' ),
+		'MA' => array( 'note' => 'Cada ciudad y pueblo fija sus horarios y lugares de votación anticipada. El buscador del estado los publica.' ),
 		'IN' => array( 'note' => 'Vota por anticipado en la oficina del secretario del condado (circuit court clerk) o en un lugar satélite. Termina al mediodía del lunes 2 de noviembre, y los condados fijan días y horarios.' ),
 		'TN' => array( 'note' => 'Cada condado fija sus lugares y horarios de votación anticipada. Consulta la comisión electoral de tu condado.' ),
 		'OH' => array( 'note' => 'Vota por anticipado en la junta electoral de tu condado o en su centro de votación anticipada. El horario es el mismo en todo el estado.' ),

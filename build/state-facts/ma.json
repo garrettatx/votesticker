@@ -1,0 +1,203 @@
+{
+ "abbr": "MA",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 state election",
+ "sources": {
+  "www.sec.state.ma.us": {
+   "en": "the Massachusetts Secretary of the Commonwealth",
+   "es": "la Secretaría del Commonwealth de Massachusetts (Secretary of the Commonwealth)"
+  },
+  "malegislature.gov": {
+   "en": "the Massachusetts General Laws",
+   "es": "las Leyes Generales de Massachusetts"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "Register by Saturday, October 24, 2026: online until 11:59 p.m., by mail with a form postmarked that day, or in person by 5 p.m.",
+   "es": "Regístrate a más tardar el sábado 24 de octubre de 2026: en línea hasta las 11:59 p. m., por correo con un formulario con matasellos de ese día, o en persona a más tardar a las 5 p. m.",
+   "src": "https://www.sec.state.ma.us/divisions/elections/research-and-statistics/2026-Information-for-voters/2026-voting-options.htm",
+   "checked": "2026-10-21",
+   "quote": "You must be registered to vote by Saturday, October 24, 2026, in order to vote in this election.",
+   "status": "verified",
+   "until": "2026-10-24",
+   "en_after": "Registration closed October 24. Became a U.S. citizen after that? Register in person at your local election office until 4 p.m. on Monday, November 2, and bring proof of your naturalization date.",
+   "es_after": "El registro cerró el 24 de octubre. ¿Te hiciste ciudadano de EE. UU. después de esa fecha? Regístrate en persona en tu oficina electoral local hasta las 4 p. m. del lunes 2 de noviembre, y lleva un comprobante de la fecha de tu naturalización."
+  },
+  "mail_request": {
+   "en": "Your local election office must receive your Vote by Mail application by 5 p.m. on Tuesday, October 27, 2026. Apply sooner if you plan to mail your ballot back.",
+   "es": "Tu oficina electoral local debe recibir tu solicitud para votar por correo (Vote by Mail application) a más tardar a las 5 p. m. del martes 27 de octubre de 2026. Solicítala antes si piensas devolver tu boleta por correo.",
+   "src": "https://www.sec.state.ma.us/divisions/elections/research-and-statistics/2026-Information-for-voters/2026-voting-options.htm",
+   "checked": "2026-10-21",
+   "quote": "Your Vote by Mail application will be honored as long as it reaches your local election office by 5 p.m. on Tuesday, October 27, 2026, but you should apply earlier if you are planning to return your ballot by mail.",
+   "status": "verified",
+   "until": "2026-10-27",
+   "en_after": "Applications closed at 5 p.m. on October 27. You can still vote in person, early or on Election Day.",
+   "es_after": "Las solicitudes cerraron a las 5 p. m. del 27 de octubre. Todavía puedes votar en persona, por anticipado o el Día de las Elecciones."
+  },
+  "mail_return": {
+   "en": "Drop box or your local election office: by the close of polls at 8 p.m. on Tuesday, November 3. Mail: postmarked by November 3, with 3 extra days allowed for it to arrive. Haven't mailed it a week before Election Day? Use a drop box or hand it in.",
+   "es": "Buzón de entrega u oficina electoral local: antes del cierre de los lugares de votación a las 8 p. m. del martes 3 de noviembre. Correo: con matasellos del 3 de noviembre o antes, con 3 días extra para que llegue. ¿No la has enviado una semana antes del Día de las Elecciones? Usa un buzón de entrega o entrégala en persona.",
+   "src": "https://www.sec.state.ma.us/divisions/elections/voting-information/vote-by-mail.htm",
+   "checked": "2026-10-21",
+   "quote": "The only exception is for ballots returned by mail in the biennial state election in November, when 3 extra days are allowed for ballots postmarked by Election Day to arrive in the mail.",
+   "status": "verified"
+  },
+  "early_hours": {
+   "en": "Your city or town sets its own early voting hours, and every one has hours on both weekends, October 17 to 18 and October 24 to 25. Many towns have limited or no hours on Fridays, so check the schedule first.",
+   "es": "Tu ciudad o municipio fija su propio horario de votación anticipada, y todos abren los dos fines de semana, del 17 al 18 de octubre y del 24 al 25 de octubre. Muchos municipios tienen poco o ningún horario los viernes, así que revisa el horario antes.",
+   "src": "https://www.sec.state.ma.us/divisions/elections/voting-information/vote-early.htm",
+   "checked": "2026-10-21",
+   "quote": "The early voting period includes the weekends of October 17-18 and October 24-25. Every city and town will hold early voting hours on both weekends.",
+   "status": "verified"
+  },
+  "cure": {
+   "status": "missing",
+   "notes": "No signature cure process or deadline found on sec.state.ma.us. The Vote by Mail page says a voter whose mail ballot was rejected can vote in person (used in mail.cure)."
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "Vote early at any early voting location in the city or town where you're registered. It may not be your Election Day polling place. On Election Day, go to your assigned polling place, open 7 a.m. to 8 p.m. Some towns open as early as 5:45 a.m.",
+   "es": "Vota por anticipado en cualquier lugar de votación anticipada de la ciudad o municipio donde estás registrado. Puede no ser tu lugar de votación del Día de las Elecciones. El Día de las Elecciones, ve a tu lugar de votación asignado, abierto de 7 a. m. a 8 p. m. Algunos municipios abren desde las 5:45 a. m.",
+   "src": "https://www.sec.state.ma.us/divisions/elections/voting-information/vote-early.htm",
+   "checked": "2026-10-21",
+   "quote": "During early voting, you can vote at any early voting location in the city or town where you are registered to vote.",
+   "status": "verified"
+  },
+  "first_time": {
+   "en": "Voting for the first time in Massachusetts? Bring ID with your name and the address where you're registered, like a driver's license, a recent utility bill or a lease. Forgot it? Vote a provisional ballot and come back with ID before the polls close so it counts.",
+   "es": "¿Votas por primera vez en Massachusetts? Lleva una identificación con tu nombre y la dirección donde estás registrado, como una licencia de conducir, un recibo de servicios reciente o un contrato de renta. ¿Se te olvidó? Vota con una boleta provisional y regresa con tu identificación antes de que cierren los lugares de votación para que se cuente.",
+   "src": "https://www.sec.state.ma.us/divisions/elections/voting-information/identification-requirements.htm",
+   "checked": "2026-10-21",
+   "quote": "If you return with identification before the polls close, your ballot will be counted.",
+   "status": "verified"
+  }
+ },
+ "where": {
+  "locator_url": "https://www.sec.state.ma.us/WhereDoIVoteMA/WhereDoIVote",
+  "locator_label": {
+   "en": "Where Do I Vote (Massachusetts Secretary of the Commonwealth)",
+   "es": "Dónde votar en Massachusetts (Secretaría del Commonwealth)"
+  },
+  "local_offices_url": "https://www.sec.state.ma.us/divisions/elections/voter-resources/find-my-local-election-office.htm",
+  "rule": {
+   "en": "Find your Election Day polling place with Where Do I Vote. For early voting sites and hours in your community, use the state's early voting schedule tool.",
+   "es": "Busca tu lugar de votación del Día de las Elecciones en Where Do I Vote. Para los lugares y horarios de votación anticipada de tu comunidad, usa la herramienta estatal de horarios de votación anticipada (early voting schedule tool).",
+   "src": "https://www.sec.state.ma.us/divisions/elections/voting-information/vote-early.htm",
+   "checked": "2026-10-21",
+   "quote": "Use our early voting schedule tool to find early voting hours and locations in your community.",
+   "status": "verified"
+  }
+ },
+ "id": {
+  "rule": "no_id",
+  "accepted": {
+   "status": "missing",
+   "notes": "ID is asked only of some voters (first time in Massachusetts, inactive list, provisional or challenged ballot); examples are in how.first_time."
+  },
+  "expired": {
+   "status": "missing"
+  },
+  "without": {
+   "en": "Asked for ID and can't show it? If you're voting for the first time, you vote a provisional ballot and come back with ID before the polls close. For any other reason, you vote a challenged ballot. It's cast as normal and only looked at in a recount, court order or audit.",
+   "es": "¿Te piden identificación y no puedes mostrarla? Si votas por primera vez, votas con una boleta provisional y regresas con tu identificación antes de que cierren los lugares de votación. Por cualquier otra razón, votas con una boleta impugnada (challenged ballot). Se deposita como cualquier otra y solo se revisa si hay un reconteo, una orden judicial o una auditoría.",
+   "src": "https://www.sec.state.ma.us/divisions/elections/voting-information/identification-requirements.htm",
+   "checked": "2026-10-21",
+   "quote": "Your ballot will be cast as normal and only examined if there is a recount, court order, or audit.",
+   "status": "verified"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "Any registered voter can vote by mail, no reason needed. Apply online at VoteInMA.com, with the application mailed to every voter, or by email or fax with your handwritten signature.",
+   "es": "Cualquier votante registrado puede votar por correo, sin dar una razón. Solicítalo en línea en VoteInMA.com, con la solicitud que se le envió a cada votante, o por correo electrónico o fax con tu firma a mano.",
+   "src": "https://www.sec.state.ma.us/divisions/elections/research-and-statistics/2026-Information-for-voters/2026-voting-options.htm",
+   "checked": "2026-10-21",
+   "quote": "State law allows you to cast your ballot by mail, without needing a reason to do so.",
+   "status": "verified"
+  },
+  "witness": {
+   "status": "missing"
+  },
+  "track_url": "https://www.sec.state.ma.us/WhereDoIVoteMA/TrackMyBallot",
+  "cure": {
+   "en": "Check Track My Ballot to see whether your ballot was accepted or rejected. If it was rejected, or it hasn't reached your local election office, you can still vote in person, early or on Election Day.",
+   "es": "Revisa Track My Ballot para ver si aceptaron o rechazaron tu boleta. Si la rechazaron, o todavía no llega a tu oficina electoral local, igual puedes votar en persona, por anticipado o el Día de las Elecciones.",
+   "src": "https://www.sec.state.ma.us/divisions/elections/voting-information/vote-by-mail.htm",
+   "checked": "2026-10-21",
+   "quote": "Your ballot was received by your local election office, but it was rejected",
+   "status": "verified"
+  },
+  "dropbox": {
+   "en": "Use a secure ballot drop box in your city or town, hand it to your local election office, or drop it at an early voting site during early voting hours. You can't drop it off at a polling place on Election Day.",
+   "es": "Usa un buzón seguro de entrega de boletas de tu ciudad o municipio, entrégala en tu oficina electoral local o déjala en un lugar de votación anticipada durante el horario de votación anticipada. No puedes dejarla en un lugar de votación el Día de las Elecciones.",
+   "src": "https://www.sec.state.ma.us/divisions/elections/voting-information/vote-by-mail.htm",
+   "checked": "2026-10-21",
+   "quote": "Ballots cannot be dropped off at a polling place on Election Day.",
+   "status": "verified"
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "en": "Leave campaign signs, posters and flyers behind. They aren't allowed in the polling place, the building or on its grounds, or within 150 feet of the entrance door. The same rule applies at early voting sites.",
+   "es": "Deja afuera los letreros, carteles y volantes de campaña. No se permiten en el lugar de votación, en el edificio ni en su terreno, ni a menos de 150 pies de la puerta de entrada. La misma regla aplica en los lugares de votación anticipada.",
+   "src": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVIII/Chapter54/Section65",
+   "checked": "2026-10-21",
+   "quote": "no other poster, card, handbill, placard, picture or circular intended to influence the action of the voter shall be posted, exhibited, circulated or distributed in the polling place, in the building where the polling place is located, on the walls thereof, on the premises on which the building stands, or within one hundred and fifty feet of the building entrance door to such polling place.",
+   "status": "verified"
+  },
+  "phone": {
+   "status": "missing"
+  },
+  "line": {
+   "en": "Polls close at 8 p.m. If you're in line at your polling place by then, stay put. You can still vote.",
+   "es": "Los lugares de votación cierran a las 8 p. m. Si estás en la fila de tu lugar de votación a esa hora, no te salgas. Igual puedes votar.",
+   "src": "https://www.sec.state.ma.us/divisions/elections/research-and-statistics/2026-Information-for-voters/2026-voting-options.htm",
+   "checked": "2026-10-21",
+   "quote": "If you are an eligible voter, you can cast a ballot as long as you are in line at your polling place by 8 p.m.",
+   "status": "verified"
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "status": "missing"
+  }
+ },
+ "faq": {
+  "provisional": {
+   "en": "You vote a provisional ballot if you're not on the voter list, your information on it is wrong, or you're a first-time voter without ID. It counts if your local election office confirms you're registered, and it has 12 days after the election to decide. Call 1-800-462-VOTE after Election Day to see if yours counted.",
+   "es": "Votas con una boleta provisional si no estás en la lista de votantes, si tu información en la lista está mal o si votas por primera vez sin identificación. Se cuenta si tu oficina electoral local confirma que estás registrado, y tiene 12 días después de la elección para decidirlo. Llama al 1-800-462-VOTE después del Día de las Elecciones para saber si se contó la tuya.",
+   "src": "https://www.sec.state.ma.us/divisions/elections/voting-information/provisional-ballots.htm",
+   "checked": "2026-10-21",
+   "quote": "Provisional ballots cast for state and local elections must be resolved within 12 days of the election.",
+   "status": "verified"
+  },
+  "line": {
+   "en": "You can still vote. If you're an eligible voter in line at your polling place by 8 p.m., you can cast your ballot.",
+   "es": "Igual puedes votar. Si tienes derecho a votar y estás en la fila de tu lugar de votación a las 8 p. m., puedes votar.",
+   "src": "https://www.sec.state.ma.us/divisions/elections/research-and-statistics/2026-Information-for-voters/2026-voting-options.htm",
+   "checked": "2026-10-21",
+   "quote": "If you are an eligible voter, you can cast a ballot as long as you are in line at your polling place by 8 p.m.",
+   "status": "verified"
+  },
+  "track": {
+   "en": "Use Track My Ballot on the Secretary of the Commonwealth's site. It shows the date your ballot was mailed, the date it came back, and whether it was accepted or rejected.",
+   "es": "Usa Track My Ballot en el sitio de la Secretaría del Commonwealth. Muestra la fecha en que te enviaron la boleta, la fecha en que regresó y si la aceptaron o la rechazaron.",
+   "src": "https://www.sec.state.ma.us/divisions/elections/voting-information/vote-by-mail.htm",
+   "checked": "2026-10-21",
+   "quote": "The tracker will show you the date your ballot was mailed, the date it was returned, and whether your ballot was accepted or rejected.",
+   "status": "verified"
+  },
+  "late_mail": {
+   "en": "A mailed ballot postmarked by November 3 gets 3 extra days to arrive. Still, if you haven't mailed it a week before Election Day, use a drop box or hand it in so it counts.",
+   "es": "Una boleta enviada por correo con matasellos del 3 de noviembre o antes tiene 3 días extra para llegar. Aun así, si no la has enviado una semana antes del Día de las Elecciones, usa un buzón de entrega o entrégala en persona para que se cuente.",
+   "src": "https://www.sec.state.ma.us/divisions/elections/research-and-statistics/2026-Information-for-voters/2026-voting-options.htm",
+   "checked": "2026-10-21",
+   "quote": "If you have not mailed your ballot within one week of Election Day, it is strongly recommended that your return your ballot by drop box or in person, to ensure your ballot can be counted!",
+   "status": "verified"
+  }
+ },
+ "notes": "Read October 21, 2026 in Chrome on sec.state.ma.us (curl gets a 212-byte block page): 2026 Information for Voters (main page and Voting Options), Vote Early, Voting by Mail, Identification Requirements, Provisional Ballots, Polling Hours, Registering to Vote. malegislature.gov c. 54 s. 65 read with curl. EARLY VOTING DATES FOR states.js (status unchecked): Saturday, October 17 to Friday, October 30, 2026. Source https://www.sec.state.ma.us/divisions/elections/research-and-statistics/2026-Information-for-voters/2026-voting-options.htm : 'In-person early voting will begin on Saturday, October 17 and end on Friday, October 30.' Confirmed on https://www.sec.state.ma.us/divisions/elections/voting-information/vote-early.htm : 'Early voting for the November 3, 2026 State Election will be held October 17-30.' Hours vary by city or town (varies: true for hours, not days); officialUrl candidate https://www.sec.state.ma.us/EarlyVotingWeb/EarlyVotingSearch.aspx. The mail return rule gives '3 extra days' but no calendar date or hour, so no date is stated. The registration en_after rests on the Registering to Vote page: 'If you became a U.S. citizen after the voter registration deadline, you can register to vote in person at your local election office until 4 p.m. on the day before the election.' The 150-foot rule in c. 54 s. 65 covers posters, cards, handbills, placards, pictures and circulars; it does not name clothing or buttons, so the page doesn't say shirts are banned. Not found: signature cure deadline, witness rule, phone and photo rule, sticker tradition."
+}

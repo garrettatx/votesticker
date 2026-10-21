@@ -1,0 +1,225 @@
+{
+ "abbr": "AZ",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "azsos.gov": {
+   "en": "the Arizona Secretary of State",
+   "es": "la Secretaría de Estado de Arizona"
+  },
+  "www.azleg.gov": {
+   "en": "the Arizona Revised Statutes",
+   "es": "las Leyes Revisadas de Arizona (Arizona Revised Statutes)"
+  },
+  "www.azcleanelections.gov": {
+   "en": "the Arizona Citizens Clean Elections Commission",
+   "es": "la Comisión de Elecciones Limpias de Arizona (Citizens Clean Elections Commission)"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "Registration closed at 11:59 p.m. on Monday, October 5, 2026. Not sure you're registered? Call your county recorder.",
+   "es": "El registro cerró a las 11:59 p. m. del lunes 5 de octubre de 2026. ¿No sabes si estás registrado? Llama a la oficina del registrador de tu condado (county recorder).",
+   "src": "https://azsos.gov/elections/calendar-dates",
+   "checked": "2026-10-21",
+   "quote": "Last day to register to vote in the November 3, 2026 General Election at 11:59 p.m.",
+   "status": "verified"
+  },
+  "mail_request": {
+   "en": "Ask for a ballot by mail by Friday, October 23, 2026. Your county recorder must have your request by 5 p.m. that day.",
+   "es": "Pide tu boleta por correo a más tardar el viernes 23 de octubre de 2026. El registrador de tu condado debe recibir tu solicitud a más tardar a las 5 p. m. de ese día.",
+   "src": "https://www.azcleanelections.gov/state-general",
+   "checked": "2026-10-21",
+   "quote": "23Last Day to Request Ballot By Mail",
+   "status": "verified",
+   "until": "2026-10-23",
+   "en_after": "Requests for a ballot by mail closed October 23. You can still vote early in person with ID, or at the polls on Election Day.",
+   "es_after": "Las solicitudes de boleta por correo cerraron el 23 de octubre. Todavía puedes votar por anticipado en persona con identificación, o en tu lugar de votación el Día de las Elecciones."
+  },
+  "mail_return": {
+   "en": "Drop it off at any polling place or voting location in your county by 7 p.m. on Tuesday, November 3. By mail, your county recorder must receive it by 7 p.m. that day, so mail it back by Tuesday, October 27.",
+   "es": "Entrégala en cualquier lugar de votación de tu condado a más tardar a las 7 p. m. del martes 3 de noviembre. Por correo, el registrador de tu condado debe recibirla a más tardar a las 7 p. m. de ese día, así que envíala a más tardar el martes 27 de octubre.",
+   "src": "https://www.azleg.gov/ars/16/00548.htm",
+   "checked": "2026-10-21",
+   "quote": "In order to be counted and valid, the ballot must be received by the county recorder or other officer in charge of elections or deposited at any polling place in the county no later than 7:00 p.m. on election day.",
+   "status": "verified"
+  },
+  "early_hours": {
+   "status": "missing",
+   "notes": "Early voting site hours are set by each county; no statewide hours found."
+  },
+  "cure": {
+   "en": "Signature doesn't match? You can fix it until the 5th business day after the election. Forgot to sign? You have until 7 p.m. on Election Day.",
+   "es": "¿Tu firma no coincide? Puedes corregirla hasta el quinto día hábil después de la elección. ¿Se te olvidó firmar? Tienes hasta las 7 p. m. del Día de las Elecciones.",
+   "src": "https://www.azleg.gov/ars/16/00550.htm",
+   "checked": "2026-10-21",
+   "quote": "The county recorder or other officer in charge of elections shall allow signatures to be corrected not later than the fifth business day after a primary, general or special election that includes a federal office or the third business day after any other election.",
+   "status": "verified"
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "Bring ID whether you vote early or on Election Day. You need it to get a ballot at an in-person early voting location too. On Election Day, polls are open 6 a.m. to 7 p.m.",
+   "es": "Lleva identificación ya sea que votes por anticipado o el Día de las Elecciones. También la necesitas para recibir una boleta en un lugar de votación anticipada en persona. El Día de las Elecciones, los lugares de votación abren de 6 a. m. a 7 p. m.",
+   "src": "https://azsos.gov/elections/voters/voting-elections",
+   "checked": "2026-10-21",
+   "quote": "Valid identification is also required prior to receiving a ballot at any in-person early voting location or emergency vote center or from a special election board.",
+   "status": "verified"
+  },
+  "first_time": {
+   "status": "missing"
+  }
+ },
+ "where": {
+  "local_offices_url": "https://azsos.gov/elections/about-elections/county-election-contact-info",
+  "rule": {
+   "en": "Your county runs its own voting locations. In Maricopa County, look yours up at locations.maricopa.vote. In Pima County, use pima.gov. Anywhere else, check with your county election office.",
+   "es": "Tu condado tiene sus propios lugares de votación. En el condado de Maricopa, busca el tuyo en locations.maricopa.vote. En el condado de Pima, usa pima.gov. En cualquier otro condado, consulta con tu oficina electoral del condado.",
+   "src": "https://azsos.gov/elections",
+   "checked": "2026-10-21",
+   "quote": "If you're a Maricopa County voter, visit locations.maricopa.vote to find a voting location.",
+   "status": "verified"
+  }
+ },
+ "id": {
+  "rule": "id_nonphoto",
+  "accepted": {
+   "en": [
+    "One photo ID with your name and address: an Arizona driver license, an Arizona non-operating ID card, a tribal ID, or another valid U.S. federal, state or local government ID",
+    "Or two documents with your name and address, such as a utility bill or a bank or credit union statement dated within 90 days of the election, Arizona vehicle registration, an Arizona vehicle insurance card, a property tax statement, your voter registration card, or mail marked \"Official Election Material\"",
+    "Or a photo ID whose address doesn't match, a U.S. passport or a U.S. military ID, plus one document from the list above"
+   ],
+   "es": [
+    "Una identificación con foto que tenga tu nombre y dirección: licencia de conducir de Arizona, tarjeta de identificación de no conductor de Arizona (non-operating ID), identificación tribal u otra identificación vigente del gobierno federal, estatal o local de EE. UU.",
+    "O dos documentos con tu nombre y dirección, como un recibo de servicios o un estado de cuenta del banco o de la cooperativa de crédito con fecha dentro de los 90 días antes de la elección, el registro de tu vehículo de Arizona, una tarjeta de seguro de auto de Arizona, un estado de cuenta del impuesto predial, tu tarjeta de registro de votante o correo marcado \"Official Election Material\" (material electoral oficial)",
+    "O una identificación con foto cuya dirección no coincida, un pasaporte de EE. UU. o una identificación militar de EE. UU., más un documento de la lista anterior"
+   ],
+   "src": "https://azsos.gov/elections/voters/voting-elections",
+   "checked": "2026-10-21",
+   "quote": "When you arrive to vote at the polls on Election Day you will announce your name and place of residence to the election official and present one form of identification from List #1 or two different forms of identification from List #2 or 3.",
+   "status": "verified"
+  },
+  "expired": {
+   "status": "missing",
+   "notes": "The SOS list says 'Valid' for licenses and IDs but doesn't address expired IDs."
+  },
+  "without": {
+   "en": "No acceptable ID? You vote a conditional provisional ballot. To make it count, show ID to your county recorder by 5 p.m. on the 5th business day after the election.",
+   "es": "¿No tienes una identificación aceptada? Votas con una boleta provisional condicional. Para que se cuente, muestra tu identificación al registrador de tu condado a más tardar a las 5 p. m. del quinto día hábil después de la elección.",
+   "src": "https://azsos.gov/elections/voters/voting-elections",
+   "checked": "2026-10-21",
+   "quote": "A voter will be issued a conditional provisional ballot if they did not provide acceptable proof of identity to poll workers.",
+   "status": "verified"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "Any registered voter can get a ballot by mail. Join the Active Early Voting List to get one for every election, or ask for one for this election only, online, by phone, by email or with a written form to your county recorder.",
+   "es": "Cualquier votante registrado puede recibir una boleta por correo. Inscríbete en la lista permanente de votación anticipada (Active Early Voting List) para recibir una en cada elección, o pide una solo para esta elección, en línea, por teléfono, por correo electrónico o con un formulario por escrito al registrador de tu condado.",
+   "src": "https://azsos.gov/elections/voters/early-voting",
+   "checked": "2026-10-21",
+   "quote": "Registered voters have two ways to get an early ballot-by-mail:",
+   "status": "verified"
+  },
+  "witness": {
+   "en": "Sign the affidavit on the return envelope. Your county compares that signature with the one on your registration record.",
+   "es": "Firma la declaración (affidavit) en el sobre de devolución. Tu condado compara esa firma con la de tu registro de votante.",
+   "src": "https://www.azleg.gov/ars/16/00550.htm",
+   "checked": "2026-10-21",
+   "quote": "the county recorder or other officer in charge of elections shall compare the signature on the envelope with the signature of the elector on the elector's registration record",
+   "status": "verified"
+  },
+  "track_url": "https://trackmyballot.azsos.gov",
+  "cure": {
+   "en": "If your signature looks different from the one on file, your county will try to reach you so you can fix it, until the 5th business day after the election. If you forgot to sign, they'll contact you, and you have until 7 p.m. on Election Day to add it.",
+   "es": "Si tu firma se ve distinta a la de tu registro, tu condado intentará comunicarse contigo para que la corrijas, hasta el quinto día hábil después de la elección. Si se te olvidó firmar, se comunicarán contigo, y tienes hasta las 7 p. m. del Día de las Elecciones para agregarla.",
+   "src": "https://www.azleg.gov/ars/16/00550.htm",
+   "checked": "2026-10-21",
+   "quote": "If the signature is missing, the county recorder or other officer in charge of elections shall make reasonable efforts to contact the elector, advise the elector of the missing signature and allow the elector to add the elector's signature not later than 7:00 p.m. on election day.",
+   "status": "verified"
+  },
+  "dropbox": {
+   "en": "New in 2026: when you drop off your sealed ballot at a voting location, you can show your ID there. The envelope is stamped \"ID verified\" and your ballot is ready to count without the later signature check.",
+   "es": "Nuevo en 2026: cuando entregues tu boleta sellada en un lugar de votación, puedes mostrar ahí tu identificación. Al sobre le ponen un sello de \"ID verified\" (identificación verificada) y tu boleta queda lista para contarse sin la revisión de firma posterior.",
+   "src": "https://www.azleg.gov/ars/16/00579.htm",
+   "checked": "2026-10-21",
+   "quote": "Beginning in 2026, at any voting location the voter may choose to provide identification when presenting the voter's mailed early ballot",
+   "status": "verified"
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "en": "Wear what you like. Arizona lets voters wear clothing with a political message inside the 75-foot limit. Campaigning there is out, though: no handing out literature or talking to voters about candidates or issues.",
+   "es": "Ponte lo que quieras. Arizona permite que los votantes usen ropa con mensajes políticos dentro del límite de 75 pies. Lo que no se permite ahí es hacer campaña: nada de repartir folletos ni hablar con los votantes sobre candidatos o temas de la boleta.",
+   "src": "https://azsos.gov/elections/about-elections/guidance-voting-location-conduct",
+   "checked": "2026-10-21",
+   "quote": "A voter is permitted to wear clothing with a political message inside the 75-foot limit, but poll workers, observers, and election officials may not.",
+   "status": "verified"
+  },
+  "phone": {
+   "en": "Take your sticker selfie outside the 75-foot line. Photos and video are not allowed within 75 feet of a voting location.",
+   "es": "Tómate la selfie con tu sticker fuera de la línea de 75 pies. No se permiten fotos ni video a menos de 75 pies de un lugar de votación.",
+   "src": "https://azsos.gov/elections/about-elections/guidance-voting-location-conduct",
+   "checked": "2026-10-21",
+   "quote": "(But keep in mind that taking photos or video is prohibited inside the 75-foot limit of a voting location.)",
+   "status": "verified"
+  },
+  "line": {
+   "en": "Polls close at 7 p.m. If you're in line when they close, stay put. You'll be allowed to vote.",
+   "es": "Los lugares de votación cierran a las 7 p. m. Si estás en la fila cuando cierran, no te salgas. Te dejarán votar.",
+   "src": "https://www.azleg.gov/ars/16/00565.htm",
+   "checked": "2026-10-21",
+   "quote": "Any qualified voter who at the moment of closing is in the line of waiting voters shall be allowed to vote.",
+   "status": "verified"
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "status": "missing"
+  }
+ },
+ "faq": {
+  "provisional": {
+   "en": "You may get one if you were sent an early ballot, your name isn't on the roster, you're on inactive status, or you changed your name or moved within the county without updating your registration. It counts once the county confirms you're registered and eligible. In counties without vote centers, you also need to be in the right precinct.",
+   "es": "Te la pueden dar si te enviaron una boleta anticipada, si tu nombre no está en la lista, si estás en estado inactivo, o si cambiaste de nombre o te mudaste dentro del condado sin actualizar tu registro. Se cuenta cuando el condado confirma que estás registrado y que tienes derecho a votar. En los condados sin centros de votación, también tienes que estar en el precinto correcto.",
+   "src": "https://azsos.gov/elections/voters/voting-elections",
+   "checked": "2026-10-21",
+   "quote": "Provisional ballots won't be counted until the county verifies that the voter is in fact registered and eligible to vote.",
+   "status": "verified"
+  },
+  "line": {
+   "en": "You can still vote. Anyone qualified who is in line when the polls close at 7 p.m. is allowed to vote.",
+   "es": "Igual puedes votar. Toda persona con derecho a votar que esté en la fila cuando cierren los lugares de votación a las 7 p. m. puede votar.",
+   "src": "https://www.azleg.gov/ars/16/00565.htm",
+   "checked": "2026-10-21",
+   "quote": "Any qualified voter who at the moment of closing is in the line of waiting voters shall be allowed to vote.",
+   "status": "verified"
+  },
+  "track": {
+   "en": "Use Track My Ballot at trackmyballot.azsos.gov. It shows whether your county got your ballot and whether it was verified and sent to be counted, or rejected.",
+   "es": "Usa Track My Ballot en trackmyballot.azsos.gov. Muestra si tu condado recibió tu boleta y si la verificaron y la mandaron a contar, o si la rechazaron.",
+   "src": "https://www.azleg.gov/ars/16/00550.htm",
+   "checked": "2026-10-21",
+   "quote": "the county recorder or other officer in charge of elections shall provide an early ballot tracking system that indicates whether the voter's early ballot has been received and whether the early ballot has been verified and sent to be tabulated or rejected.",
+   "status": "verified"
+  },
+  "unsigned": {
+   "en": "Your county will try to reach you. Add your signature by 7 p.m. on Election Day or your ballot won't count.",
+   "es": "Tu condado intentará comunicarse contigo. Agrega tu firma a más tardar a las 7 p. m. del Día de las Elecciones o tu boleta no se contará.",
+   "src": "https://www.azleg.gov/ars/16/00550.htm",
+   "checked": "2026-10-21",
+   "quote": "If the signature is missing, the county recorder or other officer in charge of elections shall make reasonable efforts to contact the elector, advise the elector of the missing signature and allow the elector to add the elector's signature not later than 7:00 p.m. on election day.",
+   "status": "verified"
+  },
+  "late_mail": {
+   "en": "Arizona counts mailed ballots only if they arrive by 7 p.m. on Election Day. After Tuesday, October 27, skip the mail and drop it off at any polling place or voting location in your county.",
+   "es": "Arizona solo cuenta las boletas por correo que llegan a más tardar a las 7 p. m. del Día de las Elecciones. Después del martes 27 de octubre, no la mandes por correo y entrégala en cualquier lugar de votación de tu condado.",
+   "src": "https://www.azcleanelections.gov/state-general",
+   "checked": "2026-10-21",
+   "quote": "27Mail Back Ballot By",
+   "status": "verified"
+  }
+ },
+ "notes": "Read October 21, 2026. azsos.gov returns 403 to curl and WebFetch, so its pages were read in Chrome (Calendar Dates accordion for November 3, Early Voting, Voting in Elections with the ID lists and provisional ballots, Elections FAQ, Guidance on Voting Location Conduct). azleg.gov read with curl (ARS 16-515, 16-542, 16-548, 16-550, 16-565, 16-579). azcleanelections.gov is the state's Citizens Clean Elections Commission; its State General page is the only official page read that gives the mail request, mail-back and last early voting dates as calendar dates. The quotes from it are the page's date-list text ('October 23 Last Day to Request Ballot By Mail', 'October 27 Mail Back Ballot By', 'October 30 Last Day to Vote Early In-Person'), joined without spaces in the page source. October 23 also matches ARS 16-542(E): 5 p.m. on the 11th day before the election. The SOS Master Elections Calendar PDF (azsos.gov/media/585) could not be read: 403 to curl and no text in Chrome's PDF viewer. EARLY VOTING DATES FOR states.js (status unchecked): start Wednesday, October 7, 2026, from https://azsos.gov/elections/calendar-dates : 'October 7, 2026 Early voting begins and early ballots mailed'. End Friday, October 30, 2026, from https://www.azcleanelections.gov/state-general : 'October 30 Last Day to Vote Early In-Person', matching ARS 16-542(E) https://www.azleg.gov/ars/16/00542.htm : 'An elector who appears personally not later than 7:00 p.m. on the Friday preceding the election at an on-site early voting location that is established by the county recorder or other officer in charge of elections shall be given a ballot'. Locations and hours vary by county. ARS 16-542(H) also allows emergency voting from 7 p.m. Friday to 5 p.m. Monday, as each county sets. No locator_url: the SOS points Maricopa and Pima voters to county lookups and others to county offices; my.arizona.vote is a state portal but its host fails the validator's OFFICIAL pattern. Not found: early voting hours, first-time voter rules, expired ID rule, sticker tradition. The 'mail it back by Tuesday, October 27' advice in dates.mail_return and faq.late_mail is the Clean Elections Commission's recommended mail-back date, not a legal deadline; the legal rule (received by 7 p.m. on Election Day) is ARS 16-548."
+}

@@ -1,0 +1,200 @@
+{
+ "abbr": "IL",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "www.elections.il.gov": {
+   "en": "the Illinois State Board of Elections",
+   "es": "la Junta Electoral del Estado de Illinois (Illinois State Board of Elections)"
+  },
+  "www.ilga.gov": {
+   "en": "the Illinois Election Code",
+   "es": "el Código Electoral de Illinois"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "Regular registration closed October 6, and online registration closed October 18. You can still register and vote at the same visit, in person at a grace period site, through Election Day.",
+   "es": "El registro regular cerró el 6 de octubre y el registro en línea cerró el 18 de octubre. Todavía puedes registrarte y votar en la misma visita, en persona en un lugar del periodo de gracia (grace period), hasta el Día de las Elecciones.",
+   "src": "https://www.elections.il.gov/NewDocDisplay.aspx?%2fM0cs48zOKVZyk9eAbpEoxjoGz9b5YaGE%2bEuf7JVd2Tlx2Mybp2RbacEJVh848tnFOLoTd3G4cRsCxSj%2bcrL1MmhG9QsYgJ9OQfN8tD1KknCt4vGDLyf%2beCKsyu7xmW0lAxDBpXvp%2bNIr4wjxV9GPBgF6J94lGLth4owFgdUkow%3d",
+   "checked": "2026-10-21",
+   "quote": "Grace period registration and voting will be available after this date. Online voter registration through the State Board of Elections website will continue through Sunday, October 18, 2026.",
+   "status": "verified"
+  },
+  "mail_request": {
+   "en": "Online or by mail: your election authority must receive your application by Thursday, October 29, 2026. In person at your election authority's office: by Monday, November 2.",
+   "es": "En línea o por correo: tu autoridad electoral local (election authority) debe recibir tu solicitud a más tardar el jueves 29 de octubre de 2026. En persona en la oficina de tu autoridad electoral: a más tardar el lunes 2 de noviembre.",
+   "src": "https://www.elections.il.gov/NewDocDisplay.aspx?%2fM0cs48zOKVZyk9eAbpEoxjoGz9b5YaGlSMHdiy2iXFAjyfyuQAf7RuSHGhmj4krBXKBjMHMC1kXG9lGcteFHxJG77yV2o99NE75AqeL5DThKkCHpaEu2oLSuh20w3EwQdWH71Ci9K32uwKewIazRSajZGQBVzmfzwlOzw4whnSWC4%2fbXhBNlQ%3d%3d",
+   "checked": "2026-10-21",
+   "quote": "Last day to request October 29, 2026 (any way other than in person)",
+   "status": "verified",
+   "until": "2026-10-29",
+   "en_after": "Online and mail applications closed October 29. You can still apply in person at your election authority's office through Monday, November 2.",
+   "es_after": "Las solicitudes en línea y por correo cerraron el 29 de octubre. Todavía puedes solicitarla en persona en la oficina de tu autoridad electoral hasta el lunes 2 de noviembre."
+  },
+  "mail_return": {
+   "en": "Drop box: by 7 p.m. on Tuesday, November 3, where your election authority has one. Mail: postmarked by November 3 and received by Tuesday, November 17, 2026. You can also hand it in at your election authority's office through Election Day.",
+   "es": "Buzón de entrega: a más tardar a las 7 p. m. del martes 3 de noviembre, donde tu autoridad electoral tenga uno. Correo: con matasellos del 3 de noviembre o antes y recibida a más tardar el martes 17 de noviembre de 2026. También puedes entregarla en la oficina de tu autoridad electoral hasta el Día de las Elecciones.",
+   "src": "https://www.elections.il.gov/NewDocDisplay.aspx?%2fM0cs48zOKVZyk9eAbpEoxjoGz9b5YaGlSMHdiy2iXFAjyfyuQAf7RuSHGhmj4krBXKBjMHMC1kXG9lGcteFHxJG77yV2o99NE75AqeL5DThKkCHpaEu2oLSuh20w3EwQdWH71Ci9K32uwKewIazRSajZGQBVzmfzwlOzw4whnSWC4%2fbXhBNlQ%3d%3d",
+   "checked": "2026-10-21",
+   "quote": "All ballots must be postmarked by Election Day and received by November 17, 2026",
+   "status": "verified"
+  },
+  "early_hours": {
+   "en": "Starting October 19, permanent early voting sites must be open weekdays 8:30 a.m. to 4:30 p.m. or 9 a.m. to 5 p.m., and until 7 p.m. on weekdays in the last 8 days. Saturdays and holidays: 9 a.m. to noon. Sundays: 10 a.m. to 4 p.m. Temporary sites set their own hours.",
+   "es": "A partir del 19 de octubre, los centros permanentes de votación anticipada deben abrir entre semana de 8:30 a. m. a 4:30 p. m. o de 9 a. m. a 5 p. m., y hasta las 7 p. m. entre semana en los últimos 8 días. Sábados y días festivos: de 9 a. m. al mediodía. Domingos: de 10 a. m. a 4 p. m. Los lugares temporales fijan su propio horario.",
+   "src": "https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=001000050K19A-15",
+   "checked": "2026-10-21",
+   "quote": "a permanent polling place for early voting must remain open beginning the 15th day before an election through the end of the day before election day during the hours of 8:30 a.m. to 4:30 p.m., or 9:00 a.m. to 5:00 p.m., on weekdays",
+   "status": "verified"
+  },
+  "cure": {
+   "en": "If your mail ballot is rejected, your election authority must send you a notice within two days. You can show why it should count until Tuesday, November 17, 2026.",
+   "es": "Si rechazan tu boleta por correo, tu autoridad electoral debe enviarte un aviso en un plazo de dos días. Tienes hasta el martes 17 de noviembre de 2026 para demostrar por qué debe contarse.",
+   "src": "https://www.elections.il.gov/NewDocDisplay.aspx?%2fM0cs48zOKVZyk9eAbpEoxjoGz9b5YaGE%2bEuf7JVd2Tlx2Mybp2RbacEJVh848tnFOLoTd3G4cRsCxSj%2bcrL1MmhG9QsYgJ9OQfN8tD1KknCt4vGDLyf%2beCKsyu7xmW0lAxDBpXvp%2bNIr4wjxV9GPBgF6J94lGLth4owFgdUkow%3d",
+   "checked": "2026-10-21",
+   "quote": "Such voters must be given an opportunity to appear before the election authority on or before the 14th day following the election to show cause to why the ballot should not be rejected.",
+   "status": "verified"
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "Vote early at any early voting site your election authority sets up. On Election Day, go to your polling place between 6 a.m. and 7 p.m. Every election authority also runs at least one Election Day vote center where any voter in its area can vote.",
+   "es": "Vota por anticipado en cualquier lugar de votación anticipada que abra tu autoridad electoral. El Día de las Elecciones, ve a tu lugar de votación entre las 6 a. m. y las 7 p. m. Cada autoridad electoral también tiene por lo menos un centro de votación el Día de las Elecciones donde puede votar cualquier votante de su zona.",
+   "src": "https://www.elections.il.gov/NewDocDisplay.aspx?%2fM0cs48zOKVZyk9eAbpEoxjoGz9b5YaGE%2bEuf7JVd2Tlx2Mybp2RbacEJVh848tnFOLoTd3G4cRsCxSj%2bcrL1MmhG9QsYgJ9OQfN8tD1KknCt4vGDLyf%2beCKsyu7xmW0lAxDBpXvp%2bNIr4wjxV9GPBgF6J94lGLth4owFgdUkow%3d",
+   "checked": "2026-10-21",
+   "quote": "Election authorities shall establish at least one location at an office of the election authority or in the largest municipality within its jurisdiction where all voters in its jurisdiction are allowed to vote on Election Day during polling place hours, regardless of the precinct in which they are registered",
+   "status": "verified"
+  },
+  "first_time": {
+   "en": "Registering during the grace period? Bring two forms of ID, at least one with your current address, like a driver's license, lease, utility bill or bank statement. You vote right then, in person, at the same visit.",
+   "es": "¿Te vas a registrar durante el periodo de gracia? Lleva dos identificaciones, por lo menos una con tu dirección actual, como una licencia de conducir, un contrato de renta, un recibo de servicios o un estado de cuenta bancario. Votas ahí mismo, en persona, en la misma visita.",
+   "src": "https://www.elections.il.gov/NewDocDisplay.aspx?%2fM0cs48zOKVZyk9eAbpEoxjoGz9b5YaGE%2bEuf7JVd2Tlx2Mybp2RbacEJVh848tnFOLoTd3G4cRsCxSj%2bcrL1MmhG9QsYgJ9OAgI8oxP06UUz3N9a%2babH2TsAY3ULa94pWnj7HwRoALh1dif5CSlCA%3d%3d",
+   "checked": "2026-10-21",
+   "quote": "If a voter who registers to vote or changes their address during this grace period wishes to vote in the election occurring during this grace period, they must do so in-person at the same time that they register.",
+   "status": "verified"
+  }
+ },
+ "where": {
+  "locator_url": "https://ova.elections.il.gov/PollingPlaceLookup.aspx",
+  "locator_label": {
+   "en": "Polling Place Locator (Illinois State Board of Elections)",
+   "es": "Buscador de lugares de votación de la Junta Electoral del Estado de Illinois"
+  },
+  "local_offices_url": "https://www.elections.il.gov/ElectionOperations/ElectionAuthorities.aspx",
+  "rule": {
+   "en": "Early voting: any site your election authority sets up. Your election authority is your county clerk, or a city or county board of election commissioners in places like Chicago. It posts early voting sites, dates and hours.",
+   "es": "Votación anticipada: cualquier lugar que abra tu autoridad electoral. Tu autoridad electoral es el secretario de tu condado (county clerk), o una junta de comisionados electorales de la ciudad o del condado en lugares como Chicago. Ahí publican los lugares, las fechas y el horario de la votación anticipada.",
+   "src": "https://www.elections.il.gov/NewDocDisplay.aspx?%2fM0cs48zOKVZyk9eAbpEoxjoGz9b5YaGE%2bEuf7JVd2Tlx2Mybp2RbacEJVh848tnFOLoTd3G4cRsCxSj%2bcrL1MmhG9QsYgJ9e5wE4tKLgaaopDaaWmFheIeWqmvhmfkWslmarqW5C0xuwyDgFhSttQ%3d%3d",
+   "checked": "2026-10-21",
+   "quote": "Each election authority shall determine and publish a list of the locations, dates, and hours of each early voting site in their jurisdiction.",
+   "status": "verified"
+  }
+ },
+ "id": {
+  "rule": "no_id",
+  "accepted": {
+   "status": "missing",
+   "notes": "Most voters give their name and sign in; the existing FAQ answer covers the first-time mail registrant exception."
+  },
+  "expired": {
+   "status": "missing"
+  },
+  "without": {
+   "status": "missing"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "Any registered voter can vote by mail, no excuse needed. You can also ask to join the permanent vote by mail list and get a ballot for every election.",
+   "es": "Cualquier votante registrado puede votar por correo, sin dar una razón. También puedes pedir que te pongan en la lista permanente de voto por correo y recibir una boleta en cada elección.",
+   "src": "https://www.elections.il.gov/NewDocDisplay.aspx?%2fM0cs48zOKVZyk9eAbpEoxjoGz9b5YaGlSMHdiy2iXFAjyfyuQAf7RuSHGhmj4krBXKBjMHMC1kXG9lGcteFHxJG77yV2o99NE75AqeL5DThKkCHpaEu2oLSuh20w3EwQdWH71Ci9K32uwKewIazRSajZGQBVzmfzwlOzw4whnSWC4%2fbXhBNlQ%3d%3d",
+   "checked": "2026-10-21",
+   "quote": "Anyone can vote by mail in Illinois without an excuse, as long as they are registered to vote.",
+   "status": "verified"
+  },
+  "witness": {
+   "en": "Sign the certification on the ballot envelope. If someone helps you mark your ballot, their name and address go on the envelope too.",
+   "es": "Firma la certificación en el sobre de la boleta. Si alguien te ayuda a marcar tu boleta, su nombre y dirección también van en el sobre.",
+   "src": "https://www.elections.il.gov/NewDocDisplay.aspx?%2fM0cs48zOKVZyk9eAbpEoxjoGz9b5YaGE%2bEuf7JVd2Tlx2Mybp2RbacEJVh848tnFOLoTd3G4cRsCxSj%2bcrL1MmhG9QsYgJ993sRKyHy6NSrOeqhGSgJZjOQiDLWY39IoNmqSBb0J5o%3d",
+   "checked": "2026-10-21",
+   "quote": "If the voter receives assistance in voting their ballot, the name and address of the individual providing the assistance must be placed on the ballot certification envelope.",
+   "status": "verified"
+  },
+  "track_url": "",
+  "cure": {
+   "en": "If your signature is missing or doesn't match, you'll get a notice by mail within two days with steps to get your ballot reinstated. You have 14 days after the election to fix it with your election authority.",
+   "es": "Si falta tu firma o no coincide, recibirás un aviso por correo en un plazo de dos días con los pasos para que tu boleta vuelva a ser válida. Tienes 14 días después de la elección para corregirlo con tu autoridad electoral.",
+   "src": "https://www.elections.il.gov/NewDocDisplay.aspx?%2fM0cs48zOKVZyk9eAbpEoxjoGz9b5YaGlSMHdiy2iXFAjyfyuQAf7RuSHGhmj4krBXKBjMHMC1kXG9lGcteFHxJG77yV2o99NE75AqeL5DThKkCHpaEu2oLSuh20w3EwQdWH71Ci9K32uwKewIazRSajZGQBVzmfzwlOzw4whnSWC4%2fbXhBNlQ%3d%3d",
+   "checked": "2026-10-21",
+   "quote": "Voters are notified by mail of a rejected ballot within two days of rejection.",
+   "status": "verified"
+  },
+  "dropbox": {
+   "en": "Some election authorities have drop boxes, open until 7 p.m. on Election Day, no stamp needed. Check the State Board of Elections' drop box list. You can also hand it in at your election authority's office.",
+   "es": "Algunas autoridades electorales tienen buzones de entrega, abiertos hasta las 7 p. m. del Día de las Elecciones, sin estampilla. Revisa la lista de buzones de la Junta Electoral del Estado. También puedes entregarla en la oficina de tu autoridad electoral.",
+   "src": "https://www.elections.il.gov/NewDocDisplay.aspx?%2fM0cs48zOKVZyk9eAbpEoxjoGz9b5YaGlSMHdiy2iXFAjyfyuQAf7RuSHGhmj4krBXKBjMHMC1kXG9lGcteFHxJG77yV2o99NE75AqeL5DThKkCHpaEu2oLSuh20w3EwQdWH71Ci9K32uwKewIazRSajZGQBVzmfzwlOzw4whnSWC4%2fbXhBNlQ%3d%3d",
+   "checked": "2026-10-21",
+   "quote": "These are available until 7pm on Election Day",
+   "status": "verified"
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "en": "Look for cones or small flags about 100 feet from the entrance. Inside that line is a campaign-free zone: no one may campaign or ask for votes. The same zone applies at early voting sites.",
+   "es": "Busca conos o banderitas a unos 100 pies de la entrada. Dentro de esa línea hay una zona libre de campaña: nadie puede hacer campaña ni pedir votos. La misma zona aplica en los lugares de votación anticipada.",
+   "src": "https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=001000050K17-29",
+   "checked": "2026-10-21",
+   "quote": "Election officers shall place 2 or more cones, small United States national flags, or some other marker a distance of 100 horizontal feet from each entrance to the room used by voters to engage in voting",
+   "status": "verified"
+  },
+  "phone": {
+   "status": "missing",
+   "notes": "No State Board of Elections page or statute read this session on phones or photos at the polls. 10 ILCS 5/29-9 bans marking a ballot so another person can see it; it does not mention photographs (same gap as the selfie FAQ)."
+  },
+  "line": {
+   "status": "missing",
+   "notes": "10 ILCS 5/17-1 sets 6 a.m. to 7 p.m. but says nothing about voters in line at closing; no official page found."
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "status": "missing"
+  }
+ },
+ "faq": {
+  "provisional": {
+   "en": "You vote a provisional ballot if, for example, your name isn't on the precinct list, your eligibility is challenged, or you registered by mail without ID and still can't show it. You can bring more proof to your election authority by close of business on the Tuesday after the election, November 10. The election authority decides within 14 days whether it counts.",
+   "es": "Votas con una boleta provisional si, por ejemplo, tu nombre no aparece en la lista del precinto, cuestionan tu derecho a votar o te registraste por correo sin identificación y todavía no puedes mostrarla. Puedes llevar más pruebas a tu autoridad electoral a más tardar al cierre del día hábil del martes después de la elección, el 10 de noviembre. La autoridad electoral decide en un plazo de 14 días si se cuenta.",
+   "src": "https://www.elections.il.gov/NewDocDisplay.aspx?%2fM0cs48zOKVZyk9eAbpEoxjoGz9b5YaGE%2bEuf7JVd2Tlx2Mybp2RbacEJVh848tnFOLoTd3G4cRsCxSj%2bcrL1MmhG9QsYgJ9wLcsNnM%2fXIuUHd1t%2b364AGqaMSnCpJ4Q%2bBr6S8vrv9k2jo5dDGVArA%3d%3d",
+   "checked": "2026-10-21",
+   "quote": "A provisional voter may submit additional information to the election authority no later than the close of business on the Tuesday after the election.",
+   "status": "verified"
+  },
+  "line": {
+   "status": "missing"
+  },
+  "track": {
+   "status": "missing",
+   "notes": "No statewide ballot tracker found on elections.il.gov; tracking is run by each election authority."
+  },
+  "unsigned": {
+   "en": "Your election authority will mail you a notice within two days with steps to fix it. You have until Tuesday, November 17, 2026 to resolve it, so check your mail after you send your ballot back.",
+   "es": "Tu autoridad electoral te enviará un aviso por correo en un plazo de dos días con los pasos para corregirlo. Tienes hasta el martes 17 de noviembre de 2026 para resolverlo, así que revisa tu correo después de devolver tu boleta.",
+   "src": "https://www.elections.il.gov/NewDocDisplay.aspx?%2fM0cs48zOKVZyk9eAbpEoxjoGz9b5YaGE%2bEuf7JVd2Tlx2Mybp2RbacEJVh848tnFOLoTd3G4cRsCxSj%2bcrL1MmhG9QsYgJ9OQfN8tD1KknCt4vGDLyf%2beCKsyu7xmW0lAxDBpXvp%2bNIr4wjxV9GPBgF6J94lGLth4owFgdUkow%3d",
+   "checked": "2026-10-21",
+   "quote": "Voters whose ballots were rejected must be sent a notice of such along with the reason for the rejection within two days of the rejection, but in all cases prior to the end of the 14-day period in which to count the vote by mail ballots.",
+   "status": "verified"
+  },
+  "late_mail": {
+   "en": "A postmark isn't guaranteed the day you mail it. Close to Election Day, ask at the post office counter for a hand postmark, or use a drop box or your election authority's office instead.",
+   "es": "El matasellos no está garantizado el mismo día que la envías. Cerca del Día de las Elecciones, pide en el mostrador de la oficina postal que le pongan el matasellos a mano, o mejor usa un buzón de entrega o la oficina de tu autoridad electoral.",
+   "src": "https://www.elections.il.gov/NewDocDisplay.aspx?%2fM0cs48zOKVZyk9eAbpEoxjoGz9b5YaGE%2bEuf7JVd2Tlx2Mybp2RbacEJVh848tnFOLoTd3G4cRsCxSj%2bcrL1MmhG9QsYgJ993sRKyHy6NSrOeqhGSgJZjOQiDLWY39IoNmqSBb0J5o%3d",
+   "checked": "2026-10-21",
+   "quote": "It is suggested that voters who are mailing their ballots close to Election Day go to the post office counter and request a manual postmark.",
+   "status": "verified"
+  }
+ },
+ "notes": "Read October 21, 2026 on elections.il.gov (2026 Election and Campaign Finance Calendar, amended July 9, 2025; 2026 Illinois Voter Guide for Voting by Mail; fact sheets on Early Voting, Grace Period Registration, Provisional Voting, Voting by Mail, Registering to Vote) and ilga.gov (10 ILCS 5/17-1, 17-29, 19A-15). The SBE web calendar and election pages load their content by script and returned almost nothing to curl; the PDFs were read instead. EARLY VOTING DATES FOR states.js (status unchecked): from the SBE 2026 Election and Campaign Finance Calendar, https://www.elections.il.gov/NewDocDisplay.aspx?%2fM0cs48zOKVZyk9eAbpEoxjoGz9b5YaGE%2bEuf7JVd2Tlx2Mybp2RbacEJVh848tnFOLoTd3G4cRsCxSj%2bcrL1MmhG9QsYgJ9OQfN8tD1KknCt4vGDLyf%2beCKsyu7xmW0lAxDBpXvp%2bNIr4wjxV9GPBgF6J94lGLth4owFgdUkow%3d : Thursday, September 24, 2026, 'First day for early voting at the office of the election authority and temporary locations designated by the election authority.'; Monday, October 19, 2026, 'First day for early voting at permanent polling places other than the office of the election authority. These permanent polling places are to be open on holidays, Saturdays, and Sundays.'; Monday, November 2, 2026, 'Last day for early voting at the office of the election authority and permanent locations designated by the election authority.' So start 2026-09-24 (election authority offices only, varies by authority), wider sites from 2026-10-19, end 2026-11-02. Dates computed by me and confirmed on an SBE page: provisional follow-up deadline Tuesday, November 10 (the calendar lists 'PROVISIONAL VOTERS - LAST DAY TO SUBMIT SUPPORTING DOCUMENTATION' under Tuesday, November 10, 2026); cure deadline November 17 (the 14-day show-cause rule is listed under Tuesday, November 17, 2026). Early hours 'in the last 8 days' paraphrases 19A-15(b) 'beginning 8 days before election day'. Not found: phone and photo rule, in-line-at-closing rule, statewide ballot tracker, sticker tradition. The definition of election authority (county clerk, municipal or county board of election commissioners) is from the SBE calendar's Definitions page."
+}

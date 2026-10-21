@@ -1,0 +1,211 @@
+{
+ "abbr": "CA",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "www.sos.ca.gov": {
+   "en": "the California Secretary of State",
+   "es": "la Secretaría de Estado de California"
+  },
+  "elections.cdn.sos.ca.gov": {
+   "en": "the California Secretary of State",
+   "es": "la Secretaría de Estado de California"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "Online registration closed October 19. You can still register and vote the same day, through Election Day, at your county elections office or any in-person voting location in your county.",
+   "es": "El registro en línea cerró el 19 de octubre. Todavía puedes registrarte y votar el mismo día, hasta el Día de las Elecciones, en la oficina electoral de tu condado o en cualquier lugar de votación en persona de tu condado.",
+   "src": "https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026",
+   "checked": "2026-10-21",
+   "quote": "Eligible citizens who missed the deadline to register to vote may complete the \"Same Day\" voter registration process through Election Day on November 3, 2026, at their local county elections office or any in-person voting location within their county.",
+   "status": "verified"
+  },
+  "mail_request": {
+   "status": "missing",
+   "notes": "Every active registered voter is mailed a ballot; there is no request deadline. A replacement ballot can be requested from the county elections office."
+  },
+  "mail_return": {
+   "en": "Drop box or voting location: by 8 p.m. on Tuesday, November 3. Mail: postmarked on or before November 3 and received by your county by Tuesday, November 10, and no stamp needed. Mail it at least 7 days before Election Day; after that, use a drop box or ask a postal employee for a hand postmark.",
+   "es": "Buzón o lugar de votación: a más tardar a las 8 p. m. del martes 3 de noviembre. Correo: con matasellos del 3 de noviembre o antes y recibida por tu condado a más tardar el martes 10 de noviembre, y no necesita estampilla. Envíala por lo menos 7 días antes del Día de las Elecciones; después de eso, usa un buzón o pide a un empleado postal que le ponga el matasellos a mano.",
+   "src": "https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026/key-dates-deadlines",
+   "checked": "2026-10-21",
+   "quote": "Vote‐By‐Mail Ballots returned by mail, in order to be counted, must be postmarked on or before Election Day and received by your county elections office.",
+   "status": "verified"
+  },
+  "early_hours": {
+   "status": "missing",
+   "notes": "Early voting site and vote center hours are set by each county; no statewide hours found."
+  },
+  "cure": {
+   "en": "Forgot to sign your ballot envelope, or your signature doesn't match? Your county must receive the signature statement by 5 p.m. on Wednesday, November 25, 2026.",
+   "es": "¿Se te olvidó firmar el sobre de tu boleta o tu firma no coincide? Tu condado debe recibir la declaración de firma a más tardar a las 5 p. m. del miércoles 25 de noviembre de 2026.",
+   "src": "https://elections.cdn.sos.ca.gov/statewide-elections/2026-general/november-3-2026-general-combo-statement.pdf",
+   "checked": "2026-10-21",
+   "quote": "To ensure that your ballot for the November 3, 2026, General Election will be counted, this completed Statement must be received by our office as soon as possible, but no later than 5 p.m. on November 25, 2026.",
+   "status": "verified"
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "Your ballot comes to you by mail, and you can vote in person instead. Early voting sites and, in Voter's Choice Act counties, vote centers are open before Election Day, and in-person early voting locations across the state are open Saturday, October 31. On Election Day, polls are open 7 a.m. to 8 p.m.",
+   "es": "Tu boleta te llega por correo, y también puedes votar en persona. Los lugares de votación anticipada y, en los condados de la Voter's Choice Act, los centros de votación abren antes del Día de las Elecciones, y los lugares de votación anticipada en persona de todo el estado abren el sábado 31 de octubre. El Día de las Elecciones, los lugares de votación abren de 7 a. m. a 8 p. m.",
+   "src": "https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026",
+   "checked": "2026-10-21",
+   "quote": "In-person early voting locations throughout California will be open on Saturday, October 31.",
+   "status": "verified"
+  },
+  "first_time": {
+   "en": "Missed the deadline? Go to your county elections office, a vote center or a polling place to register conditionally and vote a provisional ballot, through Election Day. It's often called Same Day Voter Registration.",
+   "es": "¿Se te pasó la fecha límite? Ve a la oficina electoral de tu condado, a un centro de votación o a un lugar de votación para registrarte de forma condicional y votar con una boleta provisional, hasta el Día de las Elecciones. Se conoce como registro el mismo día (Same Day Voter Registration).",
+   "src": "https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026/key-dates-deadlines",
+   "checked": "2026-10-21",
+   "quote": "Same Day Registration available. Voters can \"conditionally\" register and vote a provisional ballot during this time",
+   "status": "verified"
+  }
+ },
+ "where": {
+  "locator_url": "https://caearlyvoting.sos.ca.gov/",
+  "locator_label": {
+   "en": "CAEarlyVoting.sos.ca.gov drop boxes and voting locations",
+   "es": "Buzones y lugares de votación en CAEarlyVoting.sos.ca.gov"
+  },
+  "locator_cta": {
+   "en": "Find a drop box",
+   "es": "Buscar un buzón"
+  },
+  "local_offices_url": "https://www.sos.ca.gov/elections/voting-resources/county-elections-offices",
+  "rule": {
+   "en": "Find your nearest drop box, polling place or vote center at CAEarlyVoting.sos.ca.gov, or ask your county elections office. You can drop off your finished ballot at any polling place or ballot drop-off location in California.",
+   "es": "Busca el buzón, lugar de votación o centro de votación más cercano en CAEarlyVoting.sos.ca.gov, o pregunta en la oficina electoral de tu condado. Puedes entregar tu boleta ya llena en cualquier lugar de votación o de entrega de boletas de California.",
+   "src": "https://elections.cdn.sos.ca.gov/pdfs/quick-facts-2026-general.pdf",
+   "checked": "2026-10-21",
+   "quote": "Visit caearlyvoting.sos.ca.gov to find your nearest drop box, polling place, or vote center location.",
+   "status": "verified"
+  }
+ },
+ "id": {
+  "rule": "no_id",
+  "accepted": {
+   "status": "missing",
+   "notes": "Most voters show no ID. The SOS ID fact sheet lists IDs accepted when ID is required (first-time federal voters who registered by mail or online without a CA ID or SSN); the existing FAQ answer covers it."
+  },
+  "expired": {
+   "status": "missing"
+  },
+  "without": {
+   "en": "Asked for ID and don't have it? You can still vote a provisional ballot. It's counted once your eligibility is confirmed.",
+   "es": "¿Te piden identificación y no la tienes? Igual puedes votar con una boleta provisional. Se cuenta cuando confirman que tienes derecho a votar.",
+   "src": "https://elections.cdn.sos.ca.gov/pdfs/trusted-info/trusted-info-voter-id-reg-requirements.pdf",
+   "checked": "2026-10-21",
+   "quote": "No problem, you can still cast a provisional ballot. Your vote will be counted after your eligibility is confirmed.",
+   "status": "verified"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "Every active registered voter gets a ballot in the mail with a postage-paid return envelope. Didn't get yours, or it got lost or damaged? Ask your county elections office for a replacement by phone, email or fax.",
+   "es": "Cada votante registrado activo recibe una boleta por correo con un sobre de devolución con porte pagado. ¿No te llegó, o se perdió o se dañó? Pide una de reemplazo a la oficina electoral de tu condado por teléfono, correo electrónico o fax.",
+   "src": "https://elections.cdn.sos.ca.gov/pdfs/quick-facts-2026-general.pdf",
+   "checked": "2026-10-21",
+   "quote": "All active registered voters will be mailed a ballot for the November 3, 2026, General Election.",
+   "status": "verified"
+  },
+  "witness": {
+   "en": "Sign and date the outside of the return envelope, with a signature that matches your California driver's license, state ID or registration. Can't return it yourself? Fill out the authorization on the envelope and anyone can take it in for you, as long as they aren't paid per ballot.",
+   "es": "Firma y pon la fecha por fuera del sobre de devolución, con una firma que coincida con la de tu licencia de conducir, identificación estatal o registro de California. ¿No puedes entregarla tú? Llena la autorización en el sobre y cualquier persona puede llevarla por ti, siempre que no le paguen por boleta.",
+   "src": "https://elections.cdn.sos.ca.gov/pdfs/trusted-info/vbm-faq.pdf",
+   "checked": "2026-10-21",
+   "quote": "Anyone may return your ballot for you, as long as they do not get paid on a per ballot basis.",
+   "status": "verified"
+  },
+  "track_url": "https://wheresmyballot.sos.ca.gov/",
+  "cure": {
+   "en": "If you forgot to sign or your signature doesn't compare, your county will reach you by mail, phone, email or Where's My Ballot? and send a form. Fill it out and return it by 5 p.m. on November 25.",
+   "es": "Si se te olvidó firmar o tu firma no coincide, tu condado se comunicará contigo por correo, teléfono, correo electrónico o Where's My Ballot? y te mandará un formulario. Llénalo y devuélvelo a más tardar a las 5 p. m. del 25 de noviembre.",
+   "src": "https://elections.cdn.sos.ca.gov/pdfs/trusted-info/trusted-info-missing-signature.pdf",
+   "checked": "2026-10-21",
+   "quote": "The deadline to fix your missing or noncomparable signature is 5:00 p.m. on November 25, 2026.",
+   "status": "verified"
+  },
+  "dropbox": {
+   "en": "Drop it at any polling place or ballot drop-off location in California by 8 p.m. on Election Day. Drop boxes are clearly marked \"Official Ballot Drop Box.\"",
+   "es": "Déjala en cualquier lugar de votación o de entrega de boletas de California a más tardar a las 8 p. m. del Día de las Elecciones. Los buzones tienen un letrero claro que dice \"Official Ballot Drop Box\" (buzón oficial de boletas).",
+   "src": "https://elections.cdn.sos.ca.gov/pdfs/trusted-info/vbm-faq.pdf",
+   "checked": "2026-10-21",
+   "quote": "You may personally deliver your ballot to any polling or ballot drop-off location in California by 8:00 p.m. on Election Day.",
+   "status": "verified"
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "en": "Leave the campaign shirts, hats, buttons and stickers at home. Within 100 feet of a polling place, vote center or elections office, you can't show a candidate's name, likeness or logo, or a ballot measure's number, title or logo.",
+   "es": "Deja en casa las camisetas, gorras, botones y calcomanías de campaña. A menos de 100 pies de un lugar de votación, un centro de votación o una oficina electoral, no puedes mostrar el nombre, la imagen o el logo de un candidato, ni el número, el título o el logo de una propuesta de la boleta.",
+   "src": "https://elections.cdn.sos.ca.gov/ccrov/2021/august/21118jl.pdf",
+   "checked": "2026-10-21",
+   "quote": "Buttons, hats, pencils, pens, shirts, signs, or stickers containing information about candidates or issues on the ballot",
+   "status": "verified"
+  },
+  "phone": {
+   "status": "missing",
+   "notes": "The ballot selfie answer is in faq-states.php. Elections Code 18541 bars photographing voters entering or leaving a polling place (read in SOS memo CCROV #21118), but no general phone rule was found."
+  },
+  "line": {
+   "en": "Polls close at 8 p.m. If you're still in line then, stay put. You have the right to vote.",
+   "es": "Los lugares de votación cierran a las 8 p. m. Si todavía estás en la fila a esa hora, no te salgas. Tienes derecho a votar.",
+   "src": "https://www.sos.ca.gov/elections/voter-bill-rights",
+   "checked": "2026-10-21",
+   "quote": "The right to vote if you are still in line when the polls close.",
+   "status": "verified"
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "status": "missing"
+  }
+ },
+ "faq": {
+  "provisional": {
+   "en": "If your name isn't on the list, you can still vote with a provisional ballot. It counts if elections officials find you're eligible. Registering the same day also means voting a provisional ballot.",
+   "es": "Si tu nombre no está en la lista, igual puedes votar con una boleta provisional. Se cuenta si los funcionarios electorales confirman que tienes derecho a votar. Si te registras el mismo día, también votas con una boleta provisional.",
+   "src": "https://www.sos.ca.gov/elections/voter-bill-rights",
+   "checked": "2026-10-21",
+   "quote": "Your vote will be counted if elections officials determine that you are eligible to vote.",
+   "status": "verified"
+  },
+  "line": {
+   "en": "You can still vote. California's Voter Bill of Rights gives you the right to vote if you're still in line when the polls close.",
+   "es": "Igual puedes votar. La Carta de Derechos del Votante de California (Voter Bill of Rights) te da derecho a votar si todavía estás en la fila cuando cierran los lugares de votación.",
+   "src": "https://www.sos.ca.gov/elections/voter-bill-rights",
+   "checked": "2026-10-21",
+   "quote": "The right to vote if you are still in line when the polls close.",
+   "status": "verified"
+  },
+  "track": {
+   "en": "Sign up for Where's My Ballot? at WheresMyBallot.sos.ca.gov to get text, email or voice call updates when your ballot is mailed, received and counted, or if there's a problem to fix.",
+   "es": "Regístrate en Where's My Ballot? en WheresMyBallot.sos.ca.gov para recibir avisos por mensaje de texto, correo electrónico o llamada cuando envíen tu boleta, cuando la reciban y cuando la cuenten, o si hay un problema que corregir.",
+   "src": "https://elections.cdn.sos.ca.gov/pdfs/trusted-info/vbm-faq.pdf",
+   "checked": "2026-10-21",
+   "quote": "You will receive a notification when your ballot has been mailed to you, when your ballot is received by your county elections office, and when your ballot has been counted.",
+   "status": "verified"
+  },
+  "unsigned": {
+   "en": "Your county will contact you and send a form to sign. Return it by 5 p.m. on November 25, 2026, or your ballot won't count. Fill it out right away.",
+   "es": "Tu condado se comunicará contigo y te mandará un formulario para firmar. Devuélvelo a más tardar a las 5 p. m. del 25 de noviembre de 2026, o tu boleta no se contará. Llénalo de inmediato.",
+   "src": "https://elections.cdn.sos.ca.gov/statewide-elections/2026-general/november-3-2026-general-combo-statement.pdf",
+   "checked": "2026-10-21",
+   "quote": "I understand that my failure to sign this Statement means that my vote-by-mail or provisional ballot will be invalidated.",
+   "status": "verified"
+  },
+  "late_mail": {
+   "en": "A mailed ballot counts if it's postmarked by November 3 and arrives within 7 days. Mailing it in the last week? Take it to a post office and ask a postal employee for a hand postmark, or use a drop box.",
+   "es": "Una boleta por correo cuenta si tiene matasellos del 3 de noviembre o antes y llega en un plazo de 7 días. ¿La envías en la última semana? Llévala a una oficina postal y pide a un empleado que le ponga el matasellos a mano, o usa un buzón.",
+   "src": "https://elections.cdn.sos.ca.gov/pdfs/trusted-info/vbm-faq.pdf",
+   "checked": "2026-10-21",
+   "quote": "If you mail it closer to Election Day, take it to a United States Post Office and ask a postal employee for a manual postmark.",
+   "status": "verified"
+  }
+ },
+ "notes": "Read October 21, 2026 on sos.ca.gov (November 3, 2026 General Election page, Key Dates and Deadlines, Voter Bill of Rights, Where's My Ballot?) and elections.cdn.sos.ca.gov PDFs (Quick Facts for the November 3, 2026 General Election, Vote-by-Mail FAQ, How to Fix a Missing or Noncomparable Signature, the November 3, 2026 combined signature statement, Voter ID & Registration Requirements, CCROV memo #21118 on electioneering, August 9, 2021). leginfo.legislature.ca.gov returned 403 to curl and an empty page in Chrome, so the Elections Code was read only as quoted in the SOS memo. Key dates: ballots mailed by October 5; early voting sites and drop-off locations open October 5; Voter's Choice Act vote centers open October 24; mailed ballots must arrive by November 10. Cure: the combined statement and the signature fact sheet both give 5 p.m. November 25, 2026; the VBM FAQ states the rule as two days before the county certifies, which the statewide date reflects. Electioneering: the SOS memo measures 100 feet from the entrance, while Elections Code 18370 and 18541 as quoted measure from the room where voters sign in and vote; the page says only 'within 100 feet of a polling place'. The memo also says campaign or movement slogans are not electioneering; left off the page. No early voting hours, phone rule or sticker tradition found."
+}
