@@ -1,0 +1,249 @@
+{
+ "abbr": "TN",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "sos.tn.gov": {
+   "en": "the Tennessee Secretary of State",
+   "es": "la Secretaría de Estado de Tennessee"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "Registration closed on Monday, October 5, 2026. Not sure you're registered? Check the Secretary of State's voter lookup.",
+   "es": "El registro cerró el lunes 5 de octubre de 2026. ¿No sabes si estás registrado? Revisa la búsqueda de votantes de la Secretaría de Estado.",
+   "src": "https://sos.tn.gov/elections/calendar",
+   "checked": "2026-10-21",
+   "quote": "Voter Registration Deadline Monday, October 5, 2026",
+   "status": "verified"
+  },
+  "mail_request": {
+   "en": "Your county election commission must receive your written request by Saturday, October 24, 2026. You can send it by mail or email, with your signature.",
+   "es": "La comisión electoral de tu condado (county election commission) debe recibir tu solicitud por escrito a más tardar el sábado 24 de octubre de 2026. Puedes enviarla por correo postal o por correo electrónico, con tu firma.",
+   "src": "https://sos.tn.gov/elections/calendar",
+   "checked": "2026-10-21",
+   "quote": "Absentee Ballot Request Deadline Saturday, October 24, 2026",
+   "status": "verified",
+   "until": "2026-10-24",
+   "en_after": "Requests closed on October 24. You can still vote early in person through Thursday, October 29, or at your polling place on Election Day.",
+   "es_after": "Las solicitudes cerraron el 24 de octubre. Todavía puedes votar por anticipado en persona hasta el jueves 29 de octubre, o en tu lugar de votación el Día de las Elecciones."
+  },
+  "mail_return": {
+   "en": "Mail it in time for your county election commission to get it by the close of polls on Tuesday, November 3, 2026. It has to go by mail or a carrier like FedEx or UPS. You can't hand it in.",
+   "es": "Envíala por correo con tiempo para que la comisión electoral de tu condado la reciba antes de que cierren las urnas el martes 3 de noviembre de 2026. Tiene que ir por correo postal o por una paquetería como FedEx o UPS. No puedes entregarla en persona.",
+   "src": "https://sos.tn.gov/elections/guides/guide-to-absentee-voting",
+   "checked": "2026-10-21",
+   "quote": "You must mail your ballot in time for your county election commission to receive it no later than the close of polls on Election Day.",
+   "status": "verified"
+  },
+  "early_hours": {
+   "en": "Your county election commission sets early voting hours and sites. Early voting is open on Saturdays in the window, but closed on holidays. Find yours in the GoVoteTN app.",
+   "es": "La comisión electoral de tu condado fija los horarios y los lugares de votación anticipada. La votación anticipada abre los sábados dentro del periodo, pero cierra en días festivos. Busca los tuyos en la app GoVoteTN.",
+   "src": "https://sos.tn.gov/elections/guides/how-to-early-vote-in-person",
+   "checked": "2026-10-21",
+   "quote": "For details regarding times and early voting locations, a person must contact the local county election commission office.",
+   "status": "verified"
+  },
+  "cure": {
+   "status": "missing",
+   "notes": "No absentee cure process or deadline found on sos.tn.gov."
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "Vote early at your county election commission office or a satellite site it opens. No reason needed. On Election Day, vote at your assigned polling place.",
+   "es": "Vota por anticipado en la oficina de la comisión electoral de tu condado o en un centro satélite que abra. No necesitas dar una razón. El Día de las Elecciones, vota en el lugar de votación que te corresponde.",
+   "src": "https://sos.tn.gov/elections/guides/how-to-early-vote-in-person",
+   "checked": "2026-10-21",
+   "quote": "To vote early, a person must appear in person at either the County Election Commission office or at a satellite voting location opened by the county election commission.",
+   "status": "verified"
+  },
+  "first_time": {
+   "en": "Moved since you registered? Vote early. You can change the address on your registration and vote at the same early voting site.",
+   "es": "¿Te mudaste desde que te registraste? Vota por anticipado. Puedes cambiar la dirección de tu registro y votar en el mismo centro de votación anticipada.",
+   "src": "https://sos.tn.gov/elections/guides/how-to-early-vote-in-person",
+   "checked": "2026-10-21",
+   "quote": "There are many advantages to voting early, namely being able to choose a day during the early voting period that best fits the voter’s schedule and the voter being able to change his or her address of registration and vote in the same voting location.",
+   "status": "verified"
+  }
+ },
+ "where": {
+  "locator_url": "https://tnmap.tn.gov/voterlookup/",
+  "locator_label": {
+   "en": "Voter Registration Information Lookup (Tennessee Secretary of State)",
+   "es": "Voter Registration Information Lookup (Secretaría de Estado de Tennessee)"
+  },
+  "rule": {
+   "en": "The state's voter lookup shows your early voting and Election Day information, your polling place, and your absentee ballot status. The free GoVoteTN app has polling places, hours and sample ballots too.",
+   "es": "La búsqueda de votantes del estado muestra tu información de votación anticipada y del Día de las Elecciones, tu lugar de votación y el estado de tu boleta de voto en ausencia. La app gratuita GoVoteTN también tiene lugares de votación, horarios y boletas de muestra.",
+   "src": "https://sos.tn.gov/govotetn",
+   "checked": "2026-10-21",
+   "quote": "This tool allows voters to review their registration information, track absentee ballots, see early voting and Election Day information, and find their polling place.",
+   "status": "verified"
+  }
+ },
+ "id": {
+  "rule": "photo_required",
+  "accepted": {
+   "en": [
+    "Tennessee driver's license with your photo",
+    "U.S. passport",
+    "Photo ID from the Tennessee Department of Safety and Homeland Security",
+    "Photo ID from the federal or Tennessee state government",
+    "U.S. military photo ID",
+    "Tennessee handgun carry permit with your photo"
+   ],
+   "es": [
+    "Licencia de conducir de Tennessee con tu foto",
+    "Pasaporte de EE. UU.",
+    "Identificación con foto del Departamento de Seguridad y Seguridad Nacional de Tennessee (Department of Safety and Homeland Security)",
+    "Identificación con foto del gobierno federal o del gobierno estatal de Tennessee",
+    "Identificación militar de EE. UU. con foto",
+    "Permiso de portación de armas de Tennessee (handgun carry permit) con tu foto"
+   ],
+   "src": "https://sos.tn.gov/elections/voter-id-requirements",
+   "checked": "2026-10-21",
+   "quote": "Any of the following IDs may be used, even if expired:",
+   "status": "verified"
+  },
+  "expired": {
+   "en": "An expired ID still works. First-time voter who registered by mail or online? With an expired ID, also bring a current utility bill, bank statement, government check, paycheck or other government document with your name and address. College IDs and IDs from other states don't count.",
+   "es": "Una identificación vencida sí sirve. ¿Votas por primera vez y te registraste por correo o en línea? Si tu identificación está vencida, lleva también un recibo de servicios reciente, un estado de cuenta bancario, un cheque del gobierno, un talón de pago u otro documento del gobierno con tu nombre y dirección. No sirven las credenciales universitarias ni las identificaciones de otros estados.",
+   "src": "https://sos.tn.gov/elections/voter-id-requirements",
+   "checked": "2026-10-21",
+   "quote": "For first-time voters who register by mail or Online Voter Registration, if the ID is expired, the voter must also present one of the following :",
+   "status": "verified"
+  },
+  "without": {
+   "en": "Forgot your photo ID? You vote a provisional ballot. Then you have two business days after Election Day to show a valid photo ID at your county election commission office.",
+   "es": "¿Se te olvidó tu identificación con foto? Votas con una boleta provisional. Luego tienes dos días hábiles después del Día de las Elecciones para mostrar una identificación con foto válida en la oficina de la comisión electoral de tu condado.",
+   "src": "https://sos.tn.gov/node/149",
+   "checked": "2026-10-21",
+   "quote": "You will then have two (2) business days after Election Day to return to the election commission office to show a valid photo ID.",
+   "status": "verified"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "You can vote absentee by mail in Tennessee if you:",
+   "es": "Puedes votar en ausencia por correo en Tennessee si:",
+   "src": "https://sos.tn.gov/elections/guides/guide-to-absentee-voting",
+   "checked": "2026-10-21",
+   "quote": "You can vote absentee by-mail if you fall under one of the following categories:",
+   "status": "verified"
+  },
+  "who_list": {
+   "en": [
+    "are 60 or older",
+    "will be outside your county during all of early voting and all day on Election Day",
+    "are hospitalized, ill or physically disabled and can't get to your polling place, or care for someone who is",
+    "or your spouse are a full-time student at a college outside your county",
+    "live in a nursing home, assisted living facility or home for the aged outside your county",
+    "are a candidate in the election",
+    "observe a religious holiday that keeps you from voting in person during early voting and on Election Day",
+    "serve as an Election Day official or work for the election commission",
+    "can't vote in person because of jury duty",
+    "have a disability and an inaccessible polling place",
+    "or your spouse hold a CDL or TWIC card and will be working out of the state or county during early voting and Election Day, with no address to get mail there",
+    "are in the military or a U.S. citizen living overseas",
+    "are on the permanent absentee list"
+   ],
+   "es": [
+    "tienes 60 años o más",
+    "vas a estar fuera de tu condado durante toda la votación anticipada y todo el Día de las Elecciones",
+    "estás hospitalizado, enfermo o tienes una discapacidad física y no puedes ir a tu lugar de votación, o cuidas a alguien en esa situación",
+    "tú o tu cónyuge estudian tiempo completo en una universidad fuera de tu condado",
+    "vives en un asilo de ancianos, una residencia de vida asistida o un hogar para personas mayores fuera de tu condado",
+    "eres candidato en la elección",
+    "observas una festividad religiosa que te impide votar en persona durante la votación anticipada y el Día de las Elecciones",
+    "trabajas como funcionario electoral el Día de las Elecciones o para la comisión electoral",
+    "no puedes votar en persona por servir como jurado",
+    "tienes una discapacidad y tu lugar de votación no es accesible",
+    "tú o tu cónyuge tienen licencia comercial (CDL) o tarjeta TWIC y van a trabajar fuera del estado o del condado durante la votación anticipada y el Día de las Elecciones, sin una dirección donde recibir correo",
+    "eres militar o ciudadano de EE. UU. que vive en el extranjero",
+    "estás en la lista permanente de voto en ausencia"
+   ],
+   "src": "https://sos.tn.gov/elections/guides/guide-to-absentee-voting",
+   "checked": "2026-10-21",
+   "quote": "You are sixty (60) years of age or older.",
+   "status": "verified"
+  },
+  "witness": {
+   "status": "missing",
+   "notes": "The absentee guide lists what the request must contain (including the voter's signature) but says nothing about signing or witnessing the ballot envelope."
+  },
+  "track_url": "https://tnmap.tn.gov/voterlookup/",
+  "cure": {
+   "status": "missing",
+   "notes": "No cure process found on sos.tn.gov."
+  },
+  "dropbox": {
+   "en": "Tennessee has no drop-off for mail ballots. Send yours by mail or a carrier like FedEx or UPS. You can't hand it to a poll worker during early voting or on Election Day.",
+   "es": "Tennessee no tiene lugares para entregar boletas por correo. Envía la tuya por correo postal o por una paquetería como FedEx o UPS. No puedes dársela a un trabajador electoral durante la votación anticipada ni el Día de las Elecciones.",
+   "src": "https://sos.tn.gov/elections/guides/guide-to-absentee-voting",
+   "checked": "2026-10-21",
+   "quote": "You must return your ballot by mail (USPS, FedEx, UPS, etc.). Hand delivery or handing it to a poll worker during early voting or on Election Day is not permitted.",
+   "status": "verified"
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "en": "Leave the campaign shirts and gear at home. Voters wearing campaign clothing or paraphernalia aren't allowed within 100 feet of a polling place entrance, where campaign materials and asking for votes are banned.",
+   "es": "Deja en casa las camisetas y los artículos de campaña. A los votantes con ropa o artículos de campaña no se les permite estar a menos de 100 pies de la entrada de un lugar de votación, donde están prohibidos el material de campaña y pedir el voto.",
+   "src": "https://sos.tn.gov/newsroom/press-releases/everything-voters-need-to-know-for-the-august-6-election-this-thursday",
+   "checked": "2026-10-21",
+   "quote": "Voters wearing campaign-related clothing or paraphernalia will not be allowed within the 100-foot boundary.",
+   "status": "verified"
+  },
+  "phone": {
+   "status": "missing",
+   "notes": "The only official source found is a 2016 Attorney General opinion (tn.gov/content/dam/tn/attorneygeneral/documents/ops/2016/op16-049.pdf) describing T.C.A. 2-7-142 as allowing phones for voting information but barring photos and video. docs/faq-sources.json notes a 2017 bill to allow ballot photos whose final status wasn't confirmed, and the current statute text wasn't read (Tennessee's code is hosted on LexisNexis, not a state host)."
+  },
+  "line": {
+   "en": "All polls close at 8 p.m. Eastern or 7 p.m. Central. If you're in line when polls close, stay put. You'll be allowed to vote.",
+   "es": "Todos los lugares de votación cierran a las 8 p. m., hora del Este, o a las 7 p. m., hora del Centro. Si estás en la fila cuando cierran, no te salgas. Te dejarán votar.",
+   "src": "https://sos.tn.gov/newsroom/press-releases/everything-voters-need-to-know-for-the-august-6-election-this-thursday",
+   "checked": "2026-10-21",
+   "quote": "If you are in line at the time the polls close, you will be allowed to vote.",
+   "status": "verified"
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "en": "Tennessee's 2026 I Voted sticker is a special America 250 edition from the Secretary of State, with patriotic artwork for the country's 250th anniversary. It's handed out at polling places during this year's elections.",
+   "es": "El sticker de I Voted de Tennessee para 2026 es una edición especial de America 250 de la Secretaría de Estado, con arte patriótico por los 250 años del país. Se reparte en los lugares de votación durante las elecciones de este año.",
+   "src": "https://sos.tn.gov/elections/press-releases/secretary-of-state-tre-hargett-announces-commemorative-america-250-i-voted",
+   "checked": "2026-10-21",
+   "quote": "The special America 250 sticker, which will be available at polling locations during upcoming elections, features patriotic artwork recognizing the nation's semiquincentennial and serves as a reminder of the enduring importance of civic engagement.",
+   "status": "verified"
+  }
+ },
+ "faq": {
+  "provisional": {
+   "en": "If you don't bring a photo ID, you vote a provisional ballot. To have it reviewed, show a valid photo ID at your county election commission office within two business days after Election Day and sign an affidavit there.",
+   "es": "Si no llevas una identificación con foto, votas con una boleta provisional. Para que la revisen, muestra una identificación con foto válida en la oficina de la comisión electoral de tu condado dentro de los dos días hábiles después del Día de las Elecciones y firma ahí una declaración jurada.",
+   "src": "https://sos.tn.gov/node/149",
+   "checked": "2026-10-21",
+   "quote": "Upon returning to the election commission office, the voter will sign an affidavit and a copy of the voter’s photo ID will be made to be reviewed by the counting board.",
+   "status": "verified"
+  },
+  "line": {
+   "en": "You can still vote. If you're in line when polls close at 8 p.m. Eastern or 7 p.m. Central, you'll be allowed to vote.",
+   "es": "Todavía puedes votar. Si estás en la fila cuando cierran las urnas a las 8 p. m., hora del Este, o a las 7 p. m., hora del Centro, te dejarán votar.",
+   "src": "https://sos.tn.gov/newsroom/press-releases/everything-voters-need-to-know-for-the-august-6-election-this-thursday",
+   "checked": "2026-10-21",
+   "quote": "All polls close at 8 p.m. EDT / 7 p.m. CDT. If you are in line at the time the polls close, you will be allowed to vote.",
+   "status": "verified"
+  },
+  "track": {
+   "en": "Use the state's Voter Registration Information Lookup. It tracks absentee ballots along with your registration and polling place.",
+   "es": "Usa la búsqueda de votantes del estado (Voter Registration Information Lookup). Ahí puedes seguir tu boleta de voto en ausencia, además de ver tu registro y tu lugar de votación.",
+   "src": "https://sos.tn.gov/govotetn",
+   "checked": "2026-10-21",
+   "quote": "This tool allows voters to review their registration information, track absentee ballots, see early voting and Election Day information, and find their polling place.",
+   "status": "verified"
+  }
+ },
+ "notes": "Read October 21, 2026 in Chrome (sos.tn.gov returns a block page to curl). Pages: GoVoteTN voter page, 2026 Elections Calendar, Guide to Absentee Voting, Voter ID Requirements, FAQ node 149 (no photo ID), How to Early Vote In Person, August 4, 2026 'Everything Voters Need to Know' press release (polls close, line, 100-foot rule), July 15, 2026 America 250 sticker release. EARLY VOTING DATES FOR states.js (Tennessee is unchecked): Wednesday, October 14 to Thursday, October 29, 2026. Source https://sos.tn.gov/elections/calendar: 'Early Voting Wednesday, October 14 – Thursday, October 29, 2026'. Also on https://sos.tn.gov/govotetn: 'Early Voting for the November 3 Election: October 14 through October 29'. Sites and hours are set by each county election commission (GoVoteTN app, https://govote.tnsos.gov/). The polls and 100-foot rules come from the August 2026 election press release; no November release was found, and they describe state law, not that election alone. No local_offices_url: the SOS county commission list is on tnsos.org, which the validator's OFFICIAL pattern rejects (https://tnsos.org/elections/election_commissions.php, linked from sos.tn.gov/govotetn); add it to ALLOW_HOSTS if wanted. Mail return: by mail or carrier only, received by close of polls; no hand delivery, so no drop boxes. The early voting page also says early voting 'typically begins twenty (20) days before an election and ends five (5) days before'; not used, since the calendar gives the dates."
+}

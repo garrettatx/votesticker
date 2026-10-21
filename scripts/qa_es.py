@@ -170,6 +170,8 @@ def main():
         text = ' '.join(' '.join(es.text).split())
         for a in ALLOWED:
             text = text.replace(a, '')
+        # English official names sit in parentheses after their Spanish rendering (docs/spanish-style.md).
+        text = re.sub(r'\([^()]*\)', '', text)
         left = [s for s in SENTINELS if s in text] + sorted(set(m.group(0) for m in FUNCTION_WORDS.finditer(text)))
         if left:
             fail(f'/es/{p}: English left: {left[:6]}')

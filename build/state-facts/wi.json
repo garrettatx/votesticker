@@ -1,0 +1,235 @@
+{
+ "abbr": "WI",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "myvote.wi.gov": {
+   "en": "MyVote Wisconsin",
+   "es": "MyVote Wisconsin"
+  },
+  "elections.wi.gov": {
+   "en": "the Wisconsin Elections Commission",
+   "es": "la Comisión Electoral de Wisconsin (Wisconsin Elections Commission)"
+  },
+  "docs.legis.wisconsin.gov": {
+   "en": "Wisconsin law",
+   "es": "la ley de Wisconsin"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "Online and by mail: closed October 14, 2026. At your municipal clerk's office: until 5 p.m. on Friday, October 30. Or register at your polling place on Election Day. Bring proof of residence either way.",
+   "es": "En línea y por correo: cerró el 14 de octubre de 2026. En la oficina del secretario de tu municipio (municipal clerk): hasta las 5 p. m. del viernes 30 de octubre. O regístrate en tu lugar de votación el Día de las Elecciones. En cualquier caso, lleva un comprobante de domicilio.",
+   "src": "https://myvote.wi.gov/en-us/Voter-Deadlines",
+   "checked": "2026-10-21",
+   "quote": "Voters may register in-person in their municipal clerk’s office during the clerk’s business hours until 5:00 p.m. on October 30, 2026.",
+   "status": "verified",
+   "until": "2026-10-30",
+   "en_after": "You can still register at your polling place on Election Day, November 3, between 7 a.m. and 8 p.m. Bring proof of residence.",
+   "es_after": "Todavía puedes registrarte en tu lugar de votación el Día de las Elecciones, 3 de noviembre, entre las 7 a. m. y las 8 p. m. Lleva un comprobante de domicilio."
+  },
+  "mail_request": {
+   "en": "Your municipal clerk must receive your request by 5 p.m. on Thursday, October 29, 2026. Request online at MyVote.wi.gov, with a copy of your photo ID.",
+   "es": "El secretario de tu municipio debe recibir tu solicitud a más tardar a las 5 p. m. del jueves 29 de octubre de 2026. Solicítala en línea en MyVote.wi.gov, con una copia de tu identificación con foto.",
+   "src": "https://myvote.wi.gov/en-us/Voter-Deadlines",
+   "checked": "2026-10-21",
+   "quote": "If you are a regular or a Overseas Voters, your absentee ballot request must be received by your municipal clerk no later than 5:00 p.m. on October 29, 2026.",
+   "status": "verified",
+   "until": "2026-10-29",
+   "en_after": "Requests for a mailed ballot closed at 5 p.m. on October 29. You may still be able to vote absentee in person at your clerk's office through Sunday, November 1, depending on your town or city.",
+   "es_after": "Las solicitudes de boleta por correo cerraron a las 5 p. m. del 29 de octubre. Puede que todavía puedas votar en ausencia en persona en la oficina del secretario hasta el domingo 1 de noviembre, según tu ciudad o municipio."
+  },
+  "mail_return": {
+   "en": "Your municipal clerk must have it in hand by 8 p.m. on Tuesday, November 3, 2026. A postmark doesn't count. Mailing it? The Elections Commission says to send it at least 10 days before Election Day.",
+   "es": "El secretario de tu municipio debe tenerla en la mano a más tardar a las 8 p. m. del martes 3 de noviembre de 2026. El matasellos no cuenta. ¿La vas a enviar por correo? La Comisión Electoral recomienda mandarla por lo menos 10 días antes del Día de las Elecciones.",
+   "src": "https://elections.wi.gov/news-events/wisconsins-election-faqs",
+   "checked": "2026-10-21",
+   "quote": "Absentee ballots must be in the hands of election officials by 8 p.m. on Election Day to be counted.",
+   "status": "verified"
+  },
+  "early_hours": {
+   "en": "Each city, village and town sets its own days and hours for in-person absentee voting, and some clerk's offices don't add extra hours. Check MyVote or call your municipal clerk.",
+   "es": "Cada ciudad, villa y municipio fija sus propios días y horarios de voto en ausencia en persona, y algunas oficinas del secretario no agregan horas extra. Revisa MyVote o llama al secretario de tu municipio.",
+   "src": "https://elections.wi.gov/what-person-absentee-voting-and-how-can-i-do-it",
+   "checked": "2026-10-21",
+   "quote": "Each city, village and town in Wisconsin is responsible for setting the dates and hours of in-person absentee voting for their municipality.",
+   "status": "verified"
+  },
+  "cure": {
+   "status": "missing",
+   "notes": "No cure deadline. Wis. Stat. 6.87(9) lets the clerk return a ballot with a bad certificate when time permits; it is in mail.cure."
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "Vote early as an in-person absentee voter at your municipal clerk's office or another site it names, with your photo ID. You vote right there and hand the sealed ballot to the clerk's staff. On Election Day, vote at your polling place from 7 a.m. to 8 p.m.",
+   "es": "Vota por anticipado como votante en ausencia en persona en la oficina del secretario de tu municipio o en otro lugar que indique, con tu identificación con foto. Votas ahí mismo y le entregas la boleta sellada al personal del secretario. El Día de las Elecciones, vota en tu lugar de votación de 7 a. m. a 8 p. m.",
+   "src": "https://elections.wi.gov/what-person-absentee-voting-and-how-can-i-do-it",
+   "checked": "2026-10-21",
+   "quote": "If you apply for an absentee ballot in your municipal clerk's office, or another designated location for in-person absentee voting, you will vote your ballot immediately in the clerk's office, seal your ballot in the proper envelope, and return it to a member of the clerk's staff.",
+   "status": "verified"
+  },
+  "first_time": {
+   "en": "New to Wisconsin, or moved or changed your name? Fill out a registration form at your polling place and bring proof of residence. You don't need photo ID to register, but you'll show it before you get a ballot.",
+   "es": "¿Eres nuevo en Wisconsin, o te mudaste o cambiaste de nombre? Llena un formulario de registro en tu lugar de votación y lleva un comprobante de domicilio. No necesitas identificación con foto para registrarte, pero la mostrarás antes de recibir tu boleta.",
+   "src": "https://elections.wi.gov/election-day-voting",
+   "checked": "2026-10-21",
+   "quote": "You do not have to show your photo ID when registering, but you will have to show photo ID before being issued a ballot.",
+   "status": "verified"
+  }
+ },
+ "where": {
+  "locator_url": "https://myvote.wi.gov/en-us/",
+  "locator_label": {
+   "en": "MyVote Wisconsin",
+   "es": "MyVote Wisconsin"
+  },
+  "local_offices_url": "https://myvote.wi.gov/en-US/MyMunicipalClerk",
+  "rule": {
+   "en": "In-person absentee voting is at your municipal clerk's office or a site it names. Each city, village and town sets its own dates and hours, listed on MyVote. On Election Day, find your polling place on MyVote.",
+   "es": "El voto en ausencia en persona es en la oficina del secretario de tu municipio o en un lugar que indique. Cada ciudad, villa y municipio fija sus propias fechas y horarios, que aparecen en MyVote. El Día de las Elecciones, busca tu lugar de votación en MyVote.",
+   "src": "https://elections.wi.gov/what-person-absentee-voting-and-how-can-i-do-it",
+   "checked": "2026-10-21",
+   "quote": "To find the dates and hours for in-person absentee voting where you live, check MyVote Wisconsin or contact your municipal clerk.",
+   "status": "verified"
+  }
+ },
+ "id": {
+  "rule": "photo_required",
+  "accepted": {
+   "en": [
+    "Wisconsin DOT driver's license, even if driving privileges are revoked or suspended",
+    "Wisconsin DOT ID card",
+    "Military ID from a U.S. uniformed service",
+    "U.S. passport",
+    "ID from a federally recognized tribe in Wisconsin",
+    "Photo ID from a Wisconsin accredited college or university with issue date, signature and an expiration date no more than two years out",
+    "Veteran's photo ID from the Veterans Health Administration (unexpired)",
+    "Certificate of naturalization issued in the last two years",
+    "Wisconsin DOT driving receipt or ID card receipt (valid 45 days)"
+   ],
+   "es": [
+    "Licencia de conducir del DOT de Wisconsin, aunque tengas suspendido o revocado el permiso de manejar",
+    "Tarjeta de identificación del DOT de Wisconsin",
+    "Identificación militar de un servicio uniformado de EE. UU.",
+    "Pasaporte de EE. UU.",
+    "Identificación de una tribu reconocida a nivel federal en Wisconsin",
+    "Identificación con foto de un colegio o universidad acreditada de Wisconsin con fecha de emisión, firma y una fecha de vencimiento de no más de dos años",
+    "Identificación de veterano con foto de la Administración de Salud de Veteranos (Veterans Health Administration), vigente",
+    "Certificado de naturalización emitido en los últimos dos años",
+    "Recibo de licencia de conducir o de tarjeta de identificación del DOT de Wisconsin (válido por 45 días)"
+   ],
+   "src": "https://elections.wi.gov/photoid",
+   "checked": "2026-10-21",
+   "quote": "These are acceptable for voting purposes, and can be unexpired or expired after the date of the most recent general election:",
+   "status": "verified"
+  },
+  "expired": {
+   "en": "A Wisconsin driver's license or state ID, military ID or U.S. passport still works if it expired after the last general election, November 5, 2024. The address on your ID doesn't have to be current.",
+   "es": "La licencia de conducir o identificación estatal de Wisconsin, la identificación militar o el pasaporte de EE. UU. sirven si vencieron después de la última elección general, el 5 de noviembre de 2024. La dirección de tu identificación no tiene que estar actualizada.",
+   "src": "https://elections.wi.gov/election-day-voting",
+   "checked": "2026-10-21",
+   "quote": "For State of Wisconsin Driver License or State ID cards, Military IDs, and Passports, they can be expired, if they expired since the last General Election.",
+   "status": "verified"
+  },
+  "without": {
+   "en": "No photo ID with you? You can vote a provisional ballot. It counts if you bring your ID to the polling place by 8 p.m., or to your municipal clerk by 4 p.m. on Friday, November 6.",
+   "es": "¿No traes tu identificación con foto? Puedes votar con una boleta provisional. Cuenta si llevas tu identificación al lugar de votación a más tardar a las 8 p. m., o al secretario de tu municipio a más tardar a las 4 p. m. del viernes 6 de noviembre.",
+   "src": "https://elections.wi.gov/election-day-voting",
+   "checked": "2026-10-21",
+   "quote": "You may also present your photo ID to the municipal clerk in person by 4:00 p.m. the Friday after the Election.",
+   "status": "verified"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "Any registered Wisconsin voter can vote absentee, for any reason. Include a copy of your photo ID with your request.",
+   "es": "Cualquier votante registrado en Wisconsin puede votar en ausencia, por cualquier razón. Incluye una copia de tu identificación con foto con tu solicitud.",
+   "src": "https://myvote.wi.gov/en-us/Voter-Deadlines",
+   "checked": "2026-10-21",
+   "quote": "All voters in Wisconsin can request an absentee ballot be mailed to them for any reason.",
+   "status": "verified"
+  },
+  "witness": {
+   "en": "Mark your ballot in front of one adult U.S. citizen witness, then sign the certificate on the envelope. Your witness signs and writes their address too. A ballot with the witness address missing can't be counted.",
+   "es": "Marca tu boleta frente a un testigo adulto que sea ciudadano de EE. UU. y luego firma el certificado del sobre. Tu testigo también firma y escribe su dirección. Una boleta sin la dirección del testigo no se puede contar.",
+   "src": "https://docs.legis.wisconsin.gov/statutes/statutes/6/iv/87",
+   "checked": "2026-10-21",
+   "quote": "If a certificate is missing the address of a witness, the ballot may not be counted.",
+   "status": "verified"
+  },
+  "track_url": "https://myvote.wi.gov/en-us/",
+  "cure": {
+   "en": "If the certificate on your envelope is filled out wrong or missing, your clerk may send the ballot back to you to fix, when there's time to correct it and return it by 8 p.m. on Election Day.",
+   "es": "Si el certificado de tu sobre está mal llenado o falta, el secretario puede devolverte la boleta para que lo corrijas, cuando haya tiempo de corregirlo y entregarla a más tardar a las 8 p. m. del Día de las Elecciones.",
+   "src": "https://docs.legis.wisconsin.gov/statutes/statutes/6/iv/87",
+   "checked": "2026-10-21",
+   "quote": "If a municipal clerk receives an absentee ballot with an improperly completed certificate or with no certificate, the clerk may return the ballot to the elector, inside the sealed envelope when an envelope is received, together with a new envelope if necessary, whenever time permits the elector to correct the defect and return the ballot within the period authorized under sub. (6).",
+   "status": "verified"
+  },
+  "dropbox": {
+   "en": "Mail it, or drop it off at your clerk's office, your polling place or your community's absentee counting location. It has to be there by 8 p.m. on Election Day.",
+   "es": "Envíala por correo, o entrégala en la oficina del secretario, en tu lugar de votación o en el lugar donde tu comunidad cuenta los votos en ausencia. Tiene que llegar a más tardar a las 8 p. m. del Día de las Elecciones.",
+   "src": "https://elections.wi.gov/voters/voting-absentee",
+   "checked": "2026-10-21",
+   "quote": "With absentee voting, you can vote early at your municipal clerk’s office before Election Day, or receive your ballot by mail and either mail in your completed ballot or drop it off at your clerk’s office or polling place or absentee counting location.",
+   "status": "verified"
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "en": "No electioneering at a polling place during voting hours, or on public property within 100 feet of an entrance to the building. The same applies at your clerk's office while absentee ballots are being cast.",
+   "es": "No se permite hacer propaganda electoral en un lugar de votación durante el horario de votación, ni en propiedad pública a menos de 100 pies de una entrada del edificio. Lo mismo aplica en la oficina del secretario mientras se emiten votos en ausencia.",
+   "src": "https://docs.legis.wisconsin.gov/statutes/statutes/12/03",
+   "checked": "2026-10-21",
+   "quote": "No person may engage in electioneering during polling hours on any public property on election day within 100 feet of an entrance to a building containing a polling place.",
+   "status": "verified"
+  },
+  "phone": {
+   "status": "missing",
+   "notes": "No voter phone or photo rule found on elections.wi.gov. The October 21, 2026 'Media at the Polls' release bars photos and video in the voting area for media under Wis. Admin. Code EL 4.07, not for voters. The existing FAQ answer (no sharing a marked ballot) rests on Wis. Stat. 12.13(1)(f)."
+  },
+  "line": {
+   "en": "Polls close at 8 p.m. If you're in line by then, stay put. You'll be allowed to vote.",
+   "es": "Los lugares de votación cierran a las 8 p. m. Si estás en la fila a esa hora, no te salgas. Te dejarán votar.",
+   "src": "https://docs.legis.wisconsin.gov/statutes/statutes/6/iii/78",
+   "checked": "2026-10-21",
+   "quote": "Any elector waiting to vote, whether within the polling booth or in the line outside the booth at the time the polls officially close, shall be permitted to vote.",
+   "status": "verified"
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "status": "missing",
+   "notes": "No statewide sticker or contest found on elections.wi.gov; not searched further at county level."
+  }
+ },
+ "faq": {
+  "provisional": {
+   "en": "If you don't have a photo ID, you can vote a provisional ballot. Bring your ID to the polling place by 8 p.m., or to your municipal clerk by 4 p.m. the Friday after the election, and it counts. Miss the deadline and it doesn't.",
+   "es": "Si no tienes una identificación con foto, puedes votar con una boleta provisional. Lleva tu identificación al lugar de votación a más tardar a las 8 p. m., o al secretario de tu municipio a más tardar a las 4 p. m. del viernes después de la elección, y se cuenta. Si no lo haces a tiempo, no se cuenta.",
+   "src": "https://elections.wi.gov/election-day-voting",
+   "checked": "2026-10-21",
+   "quote": "If you provide photo ID by the deadline, the ballot will count. If you do not provide photo ID by the deadline, your ballot will not count.",
+   "status": "verified"
+  },
+  "line": {
+   "en": "You can still vote. Anyone waiting in line when polls close at 8 p.m. is allowed to vote.",
+   "es": "Todavía puedes votar. Cualquier persona que esté esperando en la fila cuando cierran las urnas a las 8 p. m. puede votar.",
+   "src": "https://docs.legis.wisconsin.gov/statutes/statutes/6/iii/78",
+   "checked": "2026-10-21",
+   "quote": "Any elector waiting to vote, whether within the polling booth or in the line outside the booth at the time the polls officially close, shall be permitted to vote.",
+   "status": "verified"
+  },
+  "track": {
+   "en": "Track your request on MyVote.wi.gov to see that it's approved, your ballot was sent, and it came back to be counted.",
+   "es": "Sigue tu solicitud en MyVote.wi.gov para ver que la aprobaron, que te enviaron la boleta y que la recibieron para contarla.",
+   "src": "https://elections.wi.gov/voters/voting-absentee",
+   "checked": "2026-10-21",
+   "quote": "Already requested a ballot? Track your request to see that it's approved, your ballot is sent, and returned to be counted.",
+   "status": "verified"
+  }
+ },
+ "notes": "Read October 21, 2026 in Chrome (elections.wi.gov and myvote.wi.gov show a Cloudflare check to curl; accordion text read from the page source) and docs.legis.wisconsin.gov by curl. Pages: MyVote Voter Deadlines, WEC Voting Absentee, Photo ID, Election Day Voting, What Is In-Person Absentee Voting, Wisconsin's Election FAQs, October 21, 2026 Media at the Polls release; Wis. Stat. 6.78(4), 6.87(4)(b)1, (6d), (9), 12.03(2). EARLY VOTING DATES FOR states.js (Wisconsin is unchecked): in-person absentee voting October 20, 2026, possibly through Sunday, November 1, 2026, with dates and hours set by each municipality. Source https://myvote.wi.gov/en-us/Voter-Deadlines: 'October 20, 2026, possibly through November 1, 2026-In-Person Absentee Voting period- Voters can possibly request and vote an absentee ballot in-person in their municipal clerk’s office through November 1, 2026. Office hours vary by municipality. Some municipal offices may not offer additional in-person absentee hours Check MyVote or contact your municipal clerk for absentee voting hours.' WEC absentee page: 'The last possible day for a clerk to conduct in-person absentee voting is the Sunday before the election. Each municipal clerk's office sets its own schedule for in-person absentee voting.' The card would need varies: true (municipal schedules). The provisional deadline in id.without is 'by 4:00 p.m. the Friday after the Election' = Friday, November 6 (computed; faq.provisional keeps the relative wording). Witness rule from Wis. Stat. 6.87; the WEC Uniform Absentee Instructions (EL-128, elections.wi.gov/media/13784/download) are a PDF that downloaded instead of displaying in Chrome and weren't read; one copy was saved to the browser's Downloads folder. The WEC witness-address memo returned 'Access denied'. No statement on drop boxes beyond 'placed in a drop box' in the FAQ data note, so mail.dropbox doesn't promise one. Gear: 12.03 bans electioneering; no official page found on voters' campaign clothing, so gear doesn't tell voters what to wear."
+}

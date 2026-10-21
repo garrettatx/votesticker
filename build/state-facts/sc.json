@@ -1,0 +1,234 @@
+{
+ "abbr": "SC",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "scvotes.gov": {
+   "en": "the South Carolina Election Commission",
+   "es": "la Comisión Electoral de South Carolina (South Carolina Election Commission)"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "Registration closed on Sunday, October 4, 2026 online and on Monday, October 5 by mail. Not sure you're registered? Check MyscVOTES.",
+   "es": "El registro cerró el domingo 4 de octubre de 2026 en línea y el lunes 5 de octubre por correo. ¿No sabes si estás registrado? Revisa MyscVOTES.",
+   "src": "https://scvotes.gov/voters/2026prep/",
+   "checked": "2026-10-21",
+   "quote": "Register online at scVOTES.gov (must be received by Sunday, October 4).",
+   "status": "verified"
+  },
+  "mail_request": {
+   "en": "Return your absentee application to your county voter registration office by 5 p.m. on Friday, October 23, 2026, by U.S. mail or in person. Applications can't be emailed or faxed.",
+   "es": "Entrega tu solicitud de voto en ausencia en la oficina de registro de votantes de tu condado (county voter registration office) a más tardar a las 5 p. m. del viernes 23 de octubre de 2026, por correo postal o en persona. Las solicitudes no se pueden enviar por correo electrónico ni por fax.",
+   "src": "https://scvotes.gov/wp-content/uploads/2026/09/Absentee-Statewide-General-Election-Go-To-Guide.pdf",
+   "checked": "2026-10-21",
+   "quote": "The deadline to return your application is 5:00 p.m. on Friday, October 23.",
+   "status": "verified",
+   "until": "2026-10-23",
+   "en_after": "Absentee applications closed at 5 p.m. on October 23. You can still vote early in person through Saturday, October 31, or at your polling place on Election Day.",
+   "es_after": "Las solicitudes de voto en ausencia cerraron a las 5 p. m. del 23 de octubre. Todavía puedes votar por anticipado en persona hasta el sábado 31 de octubre, o en tu lugar de votación el Día de las Elecciones."
+  },
+  "mail_return": {
+   "en": "Your county voter registration office must receive it by 7 p.m. on Tuesday, November 3, 2026. Mail it at least a week before Election Day, or bring it in person with your photo ID.",
+   "es": "La oficina de registro de votantes de tu condado debe recibirla a más tardar a las 7 p. m. del martes 3 de noviembre de 2026. Envíala por correo por lo menos una semana antes del Día de las Elecciones, o llévala en persona con tu identificación con foto.",
+   "src": "https://scvotes.gov/wp-content/uploads/2026/09/Absentee-Statewide-General-Election-Go-To-Guide.pdf",
+   "checked": "2026-10-21",
+   "quote": "Ballots must be received by your county voter registration office by 7:00 p.m. on Tuesday, November 3.",
+   "status": "verified"
+  },
+  "early_hours": {
+   "status": "missing",
+   "notes": "Conflict on one official page. scvotes.gov/voters/early-voting/ says for 2026: 'Early voting centers are open 8:30 a.m.- 6:00 p.m. (Monday-Saturday)', and further down, in its general schedule: 'Statewide General Elections Monday, 15 days prior to election day, through Saturday, three days prior to election day. 8:30 a.m. – 5:00 p.m. Closed Sundays and state holidays.' The 6 p.m. close is also on the 2026prep page and the Voter Go-To Guide, and S.C. Code 7-13-25(F)(1) says 'for statewide general elections, the early voting centers must be open from 8:30 a.m. until 6:00 p.m. on each day of the early voting period'. Left missing until Garrett picks; 6 p.m. has the statute behind it."
+  },
+  "cure": {
+   "status": "missing",
+   "notes": "No absentee cure process found on scvotes.gov."
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "Vote early at any early voting center in your county, no reason needed, with your photo ID. On Election Day, vote at the polling place for your precinct.",
+   "es": "Vota por anticipado en cualquier centro de votación anticipada de tu condado, sin dar una razón, con tu identificación con foto. El Día de las Elecciones, vota en el lugar de votación de tu precinto.",
+   "src": "https://scvotes.gov/voters/2026prep/",
+   "checked": "2026-10-21",
+   "quote": "Any voter can vote early at any early voting center in their county during the early voting period.",
+   "status": "verified"
+  },
+  "first_time": {
+   "en": "Moved and didn't update your registration? If you moved within your precinct, update your address at your polling place and vote a regular ballot. If you moved to another precinct in your county, or to another county within 30 days of the election, go to your county voter registration office, change your address and vote a regular ballot there.",
+   "es": "¿Te mudaste y no actualizaste tu registro? Si te mudaste dentro de tu precinto, actualiza tu dirección en tu lugar de votación y vota con una boleta regular. Si te mudaste a otro precinto de tu condado, o a otro condado dentro de los 30 días antes de la elección, ve a la oficina de registro de votantes de tu condado, cambia tu dirección y vota ahí con una boleta regular.",
+   "src": "https://scvotes.gov/voters/voter-faq/",
+   "checked": "2026-10-21",
+   "quote": "Go to the voter registration office in the county in which you currently reside, change your address, and vote a regular ballot there.",
+   "status": "verified"
+  }
+ },
+ "where": {
+  "locator_url": "https://vrems.scvotes.sc.gov/Voter/Login?PageMode=PollingPlace",
+  "locator_label": {
+   "en": "Find My Polling Place (MyscVOTES)",
+   "es": "Find My Polling Place (MyscVOTES)"
+  },
+  "local_offices_url": "https://scvotes.gov/contact/county-voter-registration-election-offices/",
+  "rule": {
+   "en": "Early voting is at any early voting center in your county. On Election Day, vote at the polling place for your precinct. Your polling place may have changed since your voter card was printed, so check MyscVOTES before you go.",
+   "es": "La votación anticipada es en cualquier centro de votación anticipada de tu condado. El Día de las Elecciones, vota en el lugar de votación de tu precinto. Puede que tu lugar de votación haya cambiado desde que se imprimió tu tarjeta de votante, así que revisa MyscVOTES antes de ir.",
+   "src": "https://scvotes.gov/voters/voter-faq/",
+   "checked": "2026-10-21",
+   "quote": "Always check your polling place at scVOTES.gov before leaving to vote.",
+   "status": "verified"
+  }
+ },
+ "id": {
+  "rule": "photo_requested",
+  "accepted": {
+   "en": [
+    "South Carolina driver's license, standard or REAL ID",
+    "South Carolina DMV ID card, standard or REAL ID, including a Concealed Weapons Permit",
+    "South Carolina voter registration card with photo",
+    "Federal military ID, including Department of Defense photo IDs and the VA benefits card",
+    "U.S. passport or passport card"
+   ],
+   "es": [
+    "Licencia de conducir de South Carolina, estándar o REAL ID",
+    "Tarjeta de identificación del DMV de South Carolina, estándar o REAL ID, incluido el permiso para portar armas ocultas (Concealed Weapons Permit)",
+    "Tarjeta de registro de votante de South Carolina con foto",
+    "Identificación militar federal, incluidas las identificaciones con foto del Departamento de Defensa y la tarjeta de beneficios de Asuntos de Veteranos (VA)",
+    "Pasaporte o tarjeta pasaporte de EE. UU."
+   ],
+   "src": "https://scvotes.gov/voters/photo-id-requirements/",
+   "checked": "2026-10-21",
+   "quote": "When voting in person, you will be asked to show one of the following current and valid Photo IDs:",
+   "status": "verified"
+  },
+  "expired": {
+   "en": "Your photo ID has to be current and valid. No ID? Registered voters can get a free photo voter registration card at the county voter registration office, even on Election Day.",
+   "es": "Tu identificación con foto debe estar vigente y ser válida. ¿No tienes? Si ya estás registrado, puedes sacar gratis una tarjeta de registro de votante con foto en la oficina de registro de votantes de tu condado, incluso el Día de las Elecciones.",
+   "src": "https://scvotes.gov/voters/voter-faq/",
+   "checked": "2026-10-21",
+   "quote": "If you are already registered to vote, you can go to your county voter registration and elections office, provide your date of birth and the last four digits of your Social Security Number, and have your photo taken.  You can do this even on Election Day.",
+   "status": "verified"
+  },
+  "without": {
+   "en": "Forgot your photo ID? Vote a provisional ballot, and show your ID at your county voter registration office before the election is certified. Can't get a photo ID? Bring your non-photo voter registration card, sign an affidavit saying why, and vote a provisional ballot that counts unless the affidavit is shown to be false.",
+   "es": "¿Se te olvidó tu identificación con foto? Vota con una boleta provisional y muestra tu identificación en la oficina de registro de votantes de tu condado antes de que se certifique la elección. ¿No puedes conseguir una identificación con foto? Lleva tu tarjeta de registro de votante sin foto, firma una declaración jurada que explique por qué, y vota con una boleta provisional que se cuenta salvo que se demuestre que la declaración es falsa.",
+   "src": "https://scvotes.gov/voters/photo-id-requirements/",
+   "checked": "2026-10-21",
+   "quote": "You may vote a provisional ballot that will count only if you show your Photo ID to the county voter registration and elections office prior to certification of the election (usually Thursday or Friday after the election).",
+   "status": "verified"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "You need a qualifying reason to vote absentee in South Carolina. You can if you:",
+   "es": "Necesitas una razón válida para votar en ausencia en South Carolina. Puedes hacerlo si:",
+   "src": "https://scvotes.gov/voters/absentee-voting/",
+   "checked": "2026-10-21",
+   "quote": "Persons sixty-five years of age or older.",
+   "status": "verified"
+  },
+  "who_list": {
+   "en": [
+    "are 65 or older",
+    "have a physical disability",
+    "can't vote during early voting hours or on Election Day because of work",
+    "are caring for someone sick or physically disabled and can't vote during early voting or on Election Day",
+    "will be out of your county for all of early voting and while polls are open on Election Day",
+    "are confined to a jail or pretrial facility awaiting arrest or trial and can't vote during early voting or on Election Day",
+    "are in the U.S. Armed Forces or Merchant Marines, or their spouse or dependent living with them",
+    "are admitted to a hospital as an emergency patient on Election Day or within four days before it"
+   ],
+   "es": [
+    "tienes 65 años o más",
+    "tienes una discapacidad física",
+    "no puedes votar durante el horario de votación anticipada ni el Día de las Elecciones por tu trabajo",
+    "cuidas a una persona enferma o con discapacidad física y no puedes votar durante la votación anticipada ni el Día de las Elecciones",
+    "vas a estar fuera de tu condado durante toda la votación anticipada y mientras abren las urnas el Día de las Elecciones",
+    "estás en una cárcel o centro de detención esperando que se resuelva tu arresto o juicio y no puedes votar durante la votación anticipada ni el Día de las Elecciones",
+    "eres miembro de las Fuerzas Armadas o de la Marina Mercante de EE. UU., o su cónyuge o dependiente que vive con esa persona",
+    "te internan en un hospital como paciente de emergencia el Día de las Elecciones o en los cuatro días anteriores"
+   ],
+   "src": "https://scvotes.gov/voters/absentee-voting/",
+   "checked": "2026-10-21",
+   "quote": "Persons with physical disabilities.",
+   "status": "verified"
+  },
+  "witness": {
+   "en": "Sign the voter's oath on the return envelope and have someone 18 or older witness your signature. You don't need a notary.",
+   "es": "Firma el juramento del votante en el sobre de devolución y pide que una persona de 18 años o más sea testigo de tu firma. No necesitas notario.",
+   "src": "https://scvotes.gov/voters/absentee-voting/",
+   "checked": "2026-10-21",
+   "quote": "Be sure to sign the voter’s oath and have your signature witnessed.  Anyone age 18 or older can witness your signature.  A notary is not necessary.",
+   "status": "verified"
+  },
+  "track_url": "https://vrems.scvotes.sc.gov/Voter/Login?PageMode=AbsenteeInfo",
+  "cure": {
+   "status": "missing",
+   "notes": "No absentee cure process found on scvotes.gov."
+  },
+  "dropbox": {
+   "en": "Bring your ballot to your county voter registration office, or to an early voting center during early voting, and show your photo ID. A family member or authorized representative can return it for you with an Authorized Returnee form.",
+   "es": "Lleva tu boleta a la oficina de registro de votantes de tu condado, o a un centro de votación anticipada durante la votación anticipada, y muestra tu identificación con foto. Un familiar directo o un representante autorizado puede devolverla por ti con el formulario Authorized Returnee.",
+   "src": "https://scvotes.gov/voters/absentee-voting/",
+   "checked": "2026-10-21",
+   "quote": "Return your ballot to your county voter registration office or an early voting center either by mail or personal delivery.",
+   "status": "verified"
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "en": "No campaigning inside the polling place. Within 500 feet of an entrance, campaign literature, signs and posters aren't allowed.",
+   "es": "No se permite hacer campaña dentro del lugar de votación. A menos de 500 pies de una entrada no se permiten folletos, letreros ni carteles de campaña.",
+   "src": "https://scvotes.gov/voters/voter-faq/",
+   "checked": "2026-10-21",
+   "quote": "However, no campaign literature, signs, or posters are allowed.",
+   "status": "verified"
+  },
+  "phone": {
+   "status": "missing",
+   "notes": "No phone rule for voters found on scvotes.gov. The existing FAQ answer (no ballot selfies) rests on S.C. Code 7-25-100."
+  },
+  "line": {
+   "en": "Polls close at 7 p.m. If you're in line by then, stay put. You'll be allowed to vote.",
+   "es": "Los lugares de votación cierran a las 7 p. m. Si estás en la fila a esa hora, no te salgas. Te dejarán votar.",
+   "src": "https://scvotes.gov/voters/how-to-vote/",
+   "checked": "2026-10-21",
+   "quote": "Polling places are open from 7:00 a.m. to 7:00 p.m. on Election Day.  Anyone in line at 7:00 p.m. will be allowed to vote.",
+   "status": "verified"
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "status": "missing",
+   "notes": "No sticker page found on scvotes.gov. The U.S. Election Assistance Commission's Clearinghouse Awards pages (eac.gov, 2022 winner and 2023 honorable mention for South Carolina I Voted stickers) and news coverage describe a 2022 statewide redesign with palmetto tree and state-outline stickers; eac.gov is federal, not a state or county source, so not used."
+  }
+ },
+ "faq": {
+  "provisional": {
+   "en": "You vote one if you forgot your photo ID, or if you can't get one and sign a reasonable impediment affidavit. If you forgot it, show your ID at the county office before certification. County boards decide which provisional ballots count on the Friday after the election.",
+   "es": "Votas con una si se te olvidó tu identificación con foto, o si no puedes conseguir una y firmas una declaración de impedimento razonable. Si se te olvidó, muestra tu identificación en la oficina del condado antes de la certificación. Las juntas de los condados deciden qué boletas provisionales se cuentan el viernes después de la elección.",
+   "src": "https://scvotes.gov/voters/voter-faq/",
+   "checked": "2026-10-21",
+   "quote": "On Friday following the election, county election boards determine which provisional ballots to count, and those votes are added to the totals.",
+   "status": "verified"
+  },
+  "line": {
+   "en": "You can still vote. Anyone in line at 7 p.m. on Election Day will be allowed to vote.",
+   "es": "Todavía puedes votar. Cualquier persona que esté en la fila a las 7 p. m. del Día de las Elecciones podrá votar.",
+   "src": "https://scvotes.gov/voters/how-to-vote/",
+   "checked": "2026-10-21",
+   "quote": "Anyone in line at 7:00 p.m. will be allowed to vote.",
+   "status": "verified"
+  },
+  "track": {
+   "en": "Check the status of your absentee request and track your ballot online at scVOTES.gov, or call your county voter registration office.",
+   "es": "Revisa el estado de tu solicitud de voto en ausencia y sigue tu boleta en línea en scVOTES.gov, o llama a la oficina de registro de votantes de tu condado.",
+   "src": "https://scvotes.gov/voters/absentee-voting/",
+   "checked": "2026-10-21",
+   "quote": "Check the status of your absentee request and track your ballot online or contact your county voter registration office.",
+   "status": "verified"
+  }
+ },
+ "notes": "Read October 21, 2026 on scvotes.gov by curl (Early Voting, Prep for the 2026 Statewide General Election, Absentee Voting, Photo ID Requirements, General FAQs, How to Vote), the 2026 Voter and Absentee Go-To Guides (PDFs, September 2026), and S.C. Code Title 7 Chapter 13 on scstatehouse.gov (not cited in a fact). South Carolina is already verified in states.js (October 19 to 31, closed Sunday, October 25); the early voting page still says 'Early Voting for 2026 Statewide General Election are Monday, October 19 - Saturday, October 31.' and 'Closed Sunday, October 25'. CONFLICT on early voting hours: see dates.early_hours notes (6 p.m. in the 2026 lines, guides and statute; 5 p.m. in the page's general schedule table). Mail request date: the absentee page says '5:00 p.m. on the 11th day prior to the election'; the 2026 Absentee Go-To Guide gives Friday, October 23. Registration also closed by mail (postmarked) on October 5 and in person at most offices at 5 p.m. October 2. Campaign rules: the FAQ covers literature, signs and posters within 500 feet and candidate badges, but not voters' clothing, so gear doesn't tell voters what to wear. Drop boxes are not mentioned anywhere; in-person return is to the county office or an early voting center, with photo ID."
+}
