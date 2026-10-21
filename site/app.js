@@ -826,8 +826,9 @@
 		Array.prototype.forEach.call(document.querySelectorAll('img[data-es-state]'), function (img) {
 			var st = byAbbr[img.getAttribute('data-es-state')];
 			if (!st) { return; }
-			var c = document.createElement('canvas'), h = defaultHeadline(st);
-			render(c, 720, { state: st.abbr, design: 'sticker', palette: 'state', headline: h, dateText: defaultDateLine(st, h) });
+			var c = document.createElement('canvas'), want = img.getAttribute('data-es-headline');
+			var h = want && headlinesFor(st).indexOf(want) >= 0 ? want : defaultHeadline(st);
+			render(c, 720, { state: st.abbr, design: img.getAttribute('data-es-design') || 'sticker', palette: img.getAttribute('data-es-palette') || 'state', headline: h, dateText: defaultDateLine(st, h) });
 			img.src = c.toDataURL('image/png');
 			img.removeAttribute('loading');
 		});

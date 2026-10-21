@@ -1,0 +1,235 @@
+{
+ "abbr": "NJ",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "www.nj.gov": {
+   "en": "the New Jersey Division of Elections",
+   "es": "la División de Elecciones de New Jersey"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "Registration closed October 13, 2026. New Jersey has no Election Day registration.",
+   "es": "El registro cerró el 13 de octubre de 2026. New Jersey no tiene registro el Día de las Elecciones.",
+   "src": "https://www.nj.gov/state/elections/voter-registration.shtml",
+   "checked": "2026-10-21",
+   "quote": "Voter Registration Deadline for the General Election was October 13, 2026.",
+   "status": "verified"
+  },
+  "mail_request": {
+   "en": "By mail: your county clerk must receive your application by Tuesday, October 27, 2026. In person: apply at your county clerk's office until 3 p.m. on Monday, November 2.",
+   "es": "Por correo: el secretario de tu condado (county clerk) debe recibir tu solicitud a más tardar el martes 27 de octubre de 2026. En persona: solicítala en la oficina del secretario de tu condado hasta las 3 p. m. del lunes 2 de noviembre.",
+   "src": "https://www.nj.gov/state/elections/assets/pdf/chrons/2026-chron-general-election-0109.pdf",
+   "checked": "2026-10-21",
+   "quote": "October 27 Deadline to apply for a Mail-In Ballot by Mail for General Election (not less than 7 days prior to election)",
+   "status": "verified",
+   "until": "2026-10-27",
+   "en_after": "By mail: closed October 27. In person: apply at your county clerk's office until 3 p.m. on Monday, November 2.",
+   "es_after": "Por correo: cerró el 27 de octubre. En persona: solicítala en la oficina del secretario de tu condado hasta las 3 p. m. del lunes 2 de noviembre."
+  },
+  "mail_return": {
+   "en": "Drop box or county Board of Elections office: by 8 p.m. on Tuesday, November 3. Mail: postmarked on or before November 3 and received by 8 p.m. on Monday, November 9, 2026. You can't hand it in at a polling place.",
+   "es": "Buzón de entrega u oficina de la junta electoral de tu condado (county Board of Elections): a más tardar a las 8 p. m. del martes 3 de noviembre. Por correo: con matasellos del 3 de noviembre o antes y recibida a más tardar a las 8 p. m. del lunes 9 de noviembre de 2026. No puedes entregarla en un lugar de votación.",
+   "src": "https://www.nj.gov/state/elections/assets/pdf/posters-bill-of-rights/2026-11-bill-of-rights-poster-english.pdf",
+   "checked": "2026-10-21",
+   "quote": "If you are going to mail your ballot, it must be postmarked ON or BEFORE Election Day, November 3, 2026, and received by your county Board of Elections by 8 p.m. November 9, 2026.",
+   "status": "verified"
+  },
+  "early_hours": {
+   "en": "Monday to Saturday, 10 a.m. to 8 p.m. Sunday, 10 a.m. to 6 p.m. No appointment needed.",
+   "es": "De lunes a sábado, de 10 a. m. a 8 p. m. El domingo, de 10 a. m. a 6 p. m. No necesitas cita.",
+   "src": "https://www.nj.gov/state/elections/vote-early-voting.shtml",
+   "checked": "2026-10-21",
+   "quote": "Hours will be Monday-Saturday, 10:00 a.m.–8:00 p.m. and Sunday, 10:00 a.m.–6:00 p.m. No appointment is necessary.",
+   "status": "verified"
+  },
+  "cure": {
+   "status": "missing",
+   "notes": "Two official pages give different deadlines. The 2026 General Election Timeline says 'November 14 Deadline for Receipt of Cure Form to County Boards of Election (within 11 days after the general election) N.J.S.A. 19:63-17'. The November 2026 Voters' Bill of Rights poster says 'You will have until 48 hours prior to the certifiction of results to return the cure form'. Left missing until Garrett picks."
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "From October 24 to November 1, pick the early voting site in your county that's most convenient and vote on a machine. On Election Day, vote at your own polling place, which is printed on the sample ballot your county mails you.",
+   "es": "Del 24 de octubre al 1 de noviembre, escoge el centro de votación anticipada de tu condado que te quede mejor y vota en una máquina. El Día de las Elecciones, vota en tu propio lugar de votación, que viene impreso en la boleta de muestra que te envía tu condado.",
+   "src": "https://www.nj.gov/state/elections/vote-early-voting.shtml",
+   "checked": "2026-10-21",
+   "quote": "Find the most convenient early voting site in your county and pick the day that works for you.",
+   "status": "verified"
+  },
+  "first_time": {
+   "en": "Not sure you're registered or that your address is current? Look yourself up with Voter Search before you go.",
+   "es": "¿No sabes si estás registrado o si tu dirección está al día? Búscate en Voter Search (búsqueda de votante) antes de ir.",
+   "src": "https://www.nj.gov/state/elections/voter-registration.shtml",
+   "checked": "2026-10-21",
+   "quote": "Use the “Voter Search” to make sure your registration status is up to date.",
+   "status": "verified"
+  }
+ },
+ "where": {
+  "locator_url": "https://voter.svrs.nj.gov/polling-place-search",
+  "locator_label": {
+   "en": "Polling place search (New Jersey Division of Elections)",
+   "es": "Búsqueda de lugar de votación (División de Elecciones de New Jersey)"
+  },
+  "local_offices_url": "https://www.nj.gov/state/elections/vote-county-election-officials.shtml",
+  "rule": {
+   "en": "Your Election Day polling place is also printed on the sample ballot your county mails you. Locations come from the counties.",
+   "es": "Tu lugar de votación del Día de las Elecciones también viene impreso en la boleta de muestra que te envía tu condado. Los lugares los fijan los condados.",
+   "src": "https://www.nj.gov/state/elections/vote-polling-location.shtml",
+   "checked": "2026-10-21",
+   "quote": "Your Polling Place information can also be found printed on your sample Ballot sent out by your county.",
+   "status": "verified"
+  }
+ },
+ "id": {
+  "rule": "no_id",
+  "accepted": {
+   "en": [
+    "Any valid, current photo ID, such as a New Jersey driver's license, a military or government ID, a student or job ID, or a store membership card",
+    "Bank statement or paycheck",
+    "Car registration",
+    "Sample ballot",
+    "Utility bill or rent receipt",
+    "Government check or document",
+    "Non-photo New Jersey driver's license"
+   ],
+   "es": [
+    "Cualquier identificación con foto válida y vigente, como una licencia de conducir de New Jersey, una identificación militar o del gobierno, una credencial de estudiante o de trabajo, o una tarjeta de membresía de una tienda",
+    "Estado de cuenta bancario o talón de pago",
+    "Registro del auto",
+    "Boleta de muestra",
+    "Recibo de servicios o recibo de renta",
+    "Cheque o documento del gobierno",
+    "Licencia de conducir de New Jersey sin foto"
+   ],
+   "src": "https://www.nj.gov/state/elections/assets/pdf/posters-bill-of-rights/2026-11-bill-of-rights-poster-english.pdf",
+   "checked": "2026-10-21",
+   "quote": "Any current document with your name and address on it, including but is not limited to:",
+   "status": "verified"
+  },
+  "expired": {
+   "en": "Only some first-time voters who registered by mail show ID, mostly when their ID number couldn't be checked. A photo ID has to be valid and current. A document without a photo needs to be current and show your name and address.",
+   "es": "Solo algunos votantes nuevos que se registraron por correo muestran identificación, sobre todo cuando no se pudo verificar su número de identificación. Una identificación con foto debe ser válida y estar vigente. Un documento sin foto debe ser reciente y mostrar tu nombre y dirección.",
+   "src": "https://www.nj.gov/state/elections/assets/pdf/posters-bill-of-rights/2026-11-bill-of-rights-poster-english.pdf",
+   "checked": "2026-10-21",
+   "quote": "Any Valid and Current Photo ID:",
+   "status": "verified"
+  },
+  "without": {
+   "en": "If you're a \"Need ID\" voter and can't show ID, you'll vote a provisional paper ballot. For it to count, get a copy of your ID to your county Commissioner of Registration by close of business on Thursday, November 5.",
+   "es": "Si eres un votante que necesita identificación (\"Need ID\") y no puedes mostrarla, votarás con una boleta provisional de papel. Para que cuente, entrega una copia de tu identificación al comisionado de registro de tu condado (Commissioner of Registration) antes del cierre de oficinas del jueves 5 de noviembre.",
+   "src": "https://www.nj.gov/state/elections/assets/pdf/posters-bill-of-rights/2026-11-bill-of-rights-poster-english.pdf",
+   "checked": "2026-10-21",
+   "quote": "For this provisional ballot to count, a copy of your ID must be submitted to your County Commissioner of Registration by close of business on the second day after the election",
+   "status": "verified"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "Any registered voter can vote by mail, for any reason. Apply with your county clerk. If you're on the vote-by-mail list and want to vote early on a machine instead, contact your county clerk to opt out first.",
+   "es": "Cualquier votante registrado puede votar por correo, por cualquier razón. Solicita tu boleta con el secretario de tu condado. Si estás en la lista de voto por correo y prefieres votar por anticipado en una máquina, primero comunícate con el secretario de tu condado para darte de baja.",
+   "src": "https://www.nj.gov/state/elections/vote-by-mail.shtml",
+   "checked": "2026-10-21",
+   "quote": "Any voter may apply for Vote-By-Mail by completing the Application for Mail-in Ballot and returning the application to their County Clerk .",
+   "status": "verified"
+  },
+  "witness": {
+   "en": "No witness or notary needed. Fill in and sign the certificate on the inner envelope, and leave it attached.",
+   "es": "No necesitas testigo ni notario. Llena y firma el certificado del sobre interior, y déjalo pegado.",
+   "src": "https://www.nj.gov/state/elections/vote-by-mail.shtml",
+   "checked": "2026-10-21",
+   "quote": "No, Mail-in Ballots do not require a witness or notary.",
+   "status": "verified"
+  },
+  "track_url": "https://trackmyballot.nj.gov/",
+  "cure": {
+   "en": "If your ballot is rejected for a missing or mismatched signature, your county sends a notice within 24 hours. Fill out, sign and date the cure form, and return it in person, by fax or by email to your county Board of Elections.",
+   "es": "Si rechazan tu boleta porque falta la firma o no coincide, tu condado te manda un aviso en un plazo de 24 horas. Llena, firma y pon la fecha en el formulario para corregirla (cure form), y entrégalo en persona, por fax o por correo electrónico a la junta electoral de tu condado.",
+   "src": "https://www.nj.gov/state/elections/assets/pdf/posters-bill-of-rights/2026-11-bill-of-rights-poster-english.pdf",
+   "checked": "2026-10-21",
+   "quote": "If your ballot was rejected for a missing or mismatched signature, a notice will be issued by your county elections office within 24 hours of the ballot being rejected.",
+   "status": "verified"
+  },
+  "dropbox": {
+   "en": "Every county has at least 10 secure drop boxes, open 24 hours a day until 8 p.m. on Election Day. You can also mail your ballot or take it to your county Board of Elections office.",
+   "es": "Cada condado tiene por lo menos 10 buzones de entrega seguros, abiertos las 24 horas hasta las 8 p. m. del Día de las Elecciones. También puedes enviar tu boleta por correo o llevarla a la oficina de la junta electoral de tu condado.",
+   "src": "https://www.nj.gov/state/elections/vote-secure-drop-boxes.shtml",
+   "checked": "2026-10-21",
+   "quote": "There will be at least 10 drop boxes located throughout each county, which will be available 24 hours a day.",
+   "status": "verified"
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "en": "Leave the campaign shirts, hats and buttons at home. Inside the polling place, or within 100 feet of its outside entrance, you can't wear or display anything that supports or opposes a candidate, party or public question on the ballot.",
+   "es": "Deja en casa las camisetas, gorras y botones de campaña. Dentro del lugar de votación, o a menos de 100 pies de su entrada exterior, no puedes llevar ni mostrar nada que apoye o se oponga a un candidato, un partido o una pregunta pública de la boleta.",
+   "src": "https://www.nj.gov/state/elections/vote-early-voting.shtml",
+   "checked": "2026-10-21",
+   "quote": "That includes political badges, buttons, insignias, t-shirts, hats or other display that can be read or viewed to identify support or opposition of a candidate, political party or public questions.",
+   "status": "verified"
+  },
+  "phone": {
+   "status": "missing",
+   "notes": "No Division of Elections page or the Bill of Rights poster addresses phone use. The FAQ selfie answer (N.J.S.A. 19:34-7) covers showing your ballot."
+  },
+  "line": {
+   "en": "Polls close at 8 p.m. If you're in line then, stay put. You must be allowed to vote.",
+   "es": "Los lugares de votación cierran a las 8 p. m. Si estás en la fila a esa hora, no te salgas. Te tienen que dejar votar.",
+   "src": "https://www.nj.gov/state/elections/assets/pdf/posters-bill-of-rights/2026-11-bill-of-rights-poster-english.pdf",
+   "checked": "2026-10-21",
+   "quote": "If you are in line to vote at the time of the closing of the polls, you MUST be allowed to vote.",
+   "status": "verified"
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "status": "missing"
+  }
+ },
+ "faq": {
+  "provisional": {
+   "en": "It's a paper ballot you vote when, for example, you moved within your county without updating your address, your poll book entry is incomplete, or you're a \"Need ID\" voter without ID. It's counted after your county verifies it, and you can check its status online after the election.",
+   "es": "Es una boleta de papel que votas cuando, por ejemplo, te mudaste dentro de tu condado sin actualizar tu dirección, tus datos en el registro están incompletos o eres un votante \"Need ID\" sin identificación. Se cuenta después de que tu condado la verifica, y puedes revisar su estado en línea después de la elección.",
+   "src": "https://www.nj.gov/state/elections/assets/pdf/posters-bill-of-rights/2026-11-bill-of-rights-poster-english.pdf",
+   "checked": "2026-10-21",
+   "quote": "All provisional ballots are taken to the County Commissioner of Registration’s office after the close of the polls for verification and counting by the County Board of Election.",
+   "status": "verified"
+  },
+  "line": {
+   "en": "You still get to vote. If you're in line when polls close at 8 p.m., you must be allowed to vote.",
+   "es": "Igual puedes votar. Si estás en la fila cuando cierran los lugares de votación a las 8 p. m., te tienen que dejar votar.",
+   "src": "https://www.nj.gov/state/elections/assets/pdf/posters-bill-of-rights/2026-11-bill-of-rights-poster-english.pdf",
+   "checked": "2026-10-21",
+   "quote": "If you are in line to vote at the time of the closing of the polls, you MUST be allowed to vote.",
+   "status": "verified"
+  },
+  "track": {
+   "en": "Sign in to Track My Ballot at TrackMyBallot.nj.gov. First time? Set up an account with your driver's license number, the last 4 digits of your Social Security number, or your voter ID number. Counties post updates on their own schedule.",
+   "es": "Entra a Track My Ballot (rastrear mi boleta) en TrackMyBallot.nj.gov. ¿Es tu primera vez? Crea una cuenta con tu número de licencia de conducir, los últimos 4 dígitos de tu número de Seguro Social o tu número de identificación de votante. Cada condado publica las actualizaciones a su ritmo.",
+   "src": "https://www.nj.gov/state/elections/vote-track-my-ballot.shtml",
+   "checked": "2026-10-21",
+   "quote": "The amount of time it takes until updates are posted to the Track My Ballot tool will vary from county to county.",
+   "status": "verified"
+  },
+  "unsigned": {
+   "en": "Your county will contact you by email, phone or letter so you can certify that you cast the ballot. A missing or non-matching signature is the only problem the law lets you fix.",
+   "es": "Tu condado se comunicará contigo por correo electrónico, teléfono o carta para que certifiques que tú enviaste la boleta. Que falte la firma o no coincida es el único problema que la ley te deja corregir.",
+   "src": "https://www.nj.gov/state/elections/vote-track-my-ballot.shtml",
+   "checked": "2026-10-21",
+   "quote": "A missing or non-matching signature is the only reason, by law, that a ballot can be ’cured’ and then counted.",
+   "status": "verified"
+  },
+  "late_mail": {
+   "en": "A mailed ballot counts if it's postmarked on or before November 3 and arrives by 8 p.m. on November 9. Mail it a few days early, or ask a post office clerk to hand-stamp the postmark. Not sure it'll make it? Use a drop box by 8 p.m. on Election Day.",
+   "es": "Una boleta por correo cuenta si tiene matasellos del 3 de noviembre o antes y llega a más tardar a las 8 p. m. del 9 de noviembre. Envíala unos días antes, o pide en el mostrador de la oficina postal que le pongan el matasellos a mano. ¿No sabes si llegará a tiempo? Usa un buzón de entrega antes de las 8 p. m. del Día de las Elecciones.",
+   "src": "https://www.nj.gov/state/elections/vote-by-mail.shtml",
+   "checked": "2026-10-21",
+   "quote": "To make sure your ballot is postmarked on time, put your ballot in the mail at least a few days before election day, or go up to the counter at a U.S. Post Office and have a clerk manually stamp the postmark on your ballot envelope.",
+   "status": "verified"
+  }
+ },
+ "notes": "Read October 21, 2026 on nj.gov/state/elections: Vote-By-Mail, In-Person Early Voting, Voter Registration, Polling Location, Secure Drop Boxes, Track My Ballot, County Election Officials, the 2026 General Election Timeline PDF (updated January 9, 2026) and the November 2026 Voters' Bill of Rights poster PDF. CONFLICT on the cure deadline (timeline: November 14, within 11 days, N.J.S.A. 19:63-17; poster: 48 hours before certification), so dates.cure is missing and mail.cure gives the process without a date. The early voting page also carries a stale line ('General Election In-Person Early Voting Polling period has passed.') next to the 2026 dates; the 2026 dates and hours match the poster. Mail return: the Vote-By-Mail page says received 'on or before 6 days after Election Day' in one place and 'by 8 pm on the sixth day after the close of the polls' in another; the poster and timeline both give 8 p.m. November 9, used here. No phone rule and no official sticker program found."
+}

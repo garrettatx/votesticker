@@ -83,7 +83,7 @@ function vote_files( $abbr ) {
 
 // The state hero shows one standout ready-made, tilted (October 20, Garrett): the design named here,
 // or the first in the set. Numbers match <abbr>-vote-N.jpg.
-const VOTE_HERO = array( 'MS' => 5, 'MI' => 7, 'ID' => 7, 'NJ' => 5, 'OR' => 5, 'MN' => 6, 'NE' => 6, 'AL' => 6, 'AZ' => 6, 'CT' => 7, 'DE' => 5, 'GA' => 5, 'FL' => 5, 'HI' => 6, 'IL' => 8, 'AR' => 6, 'IN' => 5, 'KY' => 8, 'ME' => 6, 'LA' => 6, 'IA' => 8, 'MA' => 5, 'MT' => 5, 'NV' => 8, 'NH' => 8 );
+const VOTE_HERO = array( 'MS' => 5, 'MI' => 7, 'ID' => 7, 'NJ' => 5, 'OR' => 5, 'MN' => 6, 'NE' => 6, 'AL' => 6, 'AZ' => 6, 'CT' => 7, 'DE' => 5, 'GA' => 7, 'FL' => 5, 'HI' => 6, 'IL' => 8, 'AR' => 6, 'IN' => 5, 'KY' => 8, 'ME' => 6, 'LA' => 6, 'IA' => 8, 'MA' => 5, 'MT' => 5, 'NV' => 8, 'NH' => 8 );
 // What each ready-made sticker shows, for alt text (site/assets/states/alts.json, read from the images).
 function vote_alt( $src, $st, $i ) {
 	static $alts = null;
@@ -851,8 +851,11 @@ $vote_ld = array(
 			<div class="err-sticker" aria-hidden="true"><span>404</span><small><?php echo vote_e( t( 'Page not found' ) ); ?></small></div>
 			<?php elseif ( ! $vote_about ) : ?>
 			<div class="hero__art" aria-hidden="true">
-				<?php foreach ( array( array( 'tx', 2 ), array( 'ca', 4 ), array( 'nc', 2 ) ) as $k => $h ) : if ( is_file( __DIR__ . "/assets/states/{$h[0]}/{$h[0]}-vote-{$h[1]}.jpg" ) ) : ?>
-				<img class="hero__sticker hero__sticker--<?php echo $k + 1; ?>" src="<?php echo vote_v( "assets/states/{$h[0]}/{$h[0]}-vote-{$h[1]}.jpg" ); ?>" alt="" width="1080" height="1080"<?php echo $k ? ' loading="lazy"' : ''; ?><?php echo vote_es() ? ' data-es-state="' . strtoupper( $h[0] ) . '"' : ''; ?>>
+				<?php
+				// Four messages, four colors (October 21): vote early, I voted, my ballot is in, make a plan.
+				// Spanish pages draw the same four messages in Spanish (app.js spanishArt()).
+				foreach ( array( array( 'tx', 2, 'type', 'votatemprano', 'forest' ), array( 'ga', 7, 'type', 'yavote', 'maroon' ), array( 'or', 8, 'tilt', 'yavotecorreo', 'cobalt' ), array( 'az', 9, 'side', 'voyavotar', 'plum' ) ) as $k => $h ) : if ( is_file( __DIR__ . "/assets/states/{$h[0]}/{$h[0]}-vote-{$h[1]}.jpg" ) ) : ?>
+				<img class="hero__sticker hero__sticker--<?php echo $k + 1; ?>" src="<?php echo vote_v( "assets/states/{$h[0]}/{$h[0]}-vote-{$h[1]}.jpg" ); ?>" alt="" width="1080" height="1080"<?php echo $k ? ' loading="lazy"' : ''; ?><?php echo vote_es() ? ' data-es-state="' . strtoupper( $h[0] ) . '" data-es-design="' . $h[2] . '" data-es-headline="' . $h[3] . '" data-es-palette="' . $h[4] . '"' : ''; ?>>
 				<?php endif; endforeach; ?>
 			</div>
 			<?php endif; ?>

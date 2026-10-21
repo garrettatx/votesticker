@@ -1,0 +1,247 @@
+{
+ "abbr": "MI",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "www.michigan.gov": {
+   "en": "the Michigan Secretary of State",
+   "es": "la Secretaría de Estado de Michigan"
+  },
+  "www.legislature.mi.gov": {
+   "en": "Michigan Election Law",
+   "es": "la Ley Electoral de Michigan"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "Online and by mail: closed 15 days before Election Day, on October 19, 2026. In person: register at your city or township clerk's office through 8 p.m. on Election Day, and bring proof of residency.",
+   "es": "En línea y por correo: cerró 15 días antes del Día de las Elecciones, el 19 de octubre de 2026. En persona: regístrate en la oficina del secretario de tu ciudad o municipio (clerk) hasta las 8 p. m. del Día de las Elecciones, y lleva un comprobante de domicilio.",
+   "src": "https://www.michigan.gov/sos/elections/voting/register-to-vote",
+   "checked": "2026-10-21",
+   "quote": "Within 14 days of an election , and on Election Day, voters may only register by visiting their local clerk’s office or satellite office to register in person with proof of residency documentation.",
+   "status": "verified"
+  },
+  "mail_request": {
+   "en": "Online or by mail: your local clerk must receive your application by 5 p.m. on Friday, October 30, 2026. In person at your clerk's office: by 4 p.m. on Monday, November 2.",
+   "es": "En línea o por correo: el secretario local (clerk) debe recibir tu solicitud a más tardar a las 5 p. m. del viernes 30 de octubre de 2026. En persona en la oficina del secretario: a más tardar a las 4 p. m. del lunes 2 de noviembre.",
+   "src": "https://www.michigan.gov/sos/elections/voting/absentee-voting",
+   "checked": "2026-10-21",
+   "quote": "Mailed applications must be received by a voter’s local city or township clerk’s office by 5 p.m. the Friday before Election Day.",
+   "status": "verified",
+   "until": "2026-10-30",
+   "en_after": "Online and mail applications closed at 5 p.m. on October 30. You can still apply in person at your clerk's office until 4 p.m. on Monday, November 2.",
+   "es_after": "Las solicitudes en línea y por correo cerraron a las 5 p. m. del 30 de octubre. Todavía puedes solicitarla en persona en la oficina del secretario hasta las 4 p. m. del lunes 2 de noviembre."
+  },
+  "mail_return": {
+   "en": "Your local clerk must receive it by 8 p.m. on Tuesday, November 3, 2026. A postmark isn't enough, so in the last two weeks use a drop box or your clerk's office instead of the mail. Military and overseas deadlines differ.",
+   "es": "El secretario local debe recibirla a más tardar a las 8 p. m. del martes 3 de noviembre de 2026. No basta con el matasellos, así que en las últimas dos semanas usa un buzón de entrega o la oficina del secretario en lugar del correo. Los plazos para votantes militares y en el extranjero son distintos.",
+   "src": "https://www.michigan.gov/sos/elections/voting/absentee-voting",
+   "checked": "2026-10-21",
+   "quote": "Mailed absentee ballots from all voters, except military and overseas voters, must be received by the voter's local clerk by 8 p.m. on Election Day.",
+   "status": "verified"
+  },
+  "early_hours": {
+   "en": "Every early voting site is open at least 8 hours a day for the nine days. Your community sets the exact hours, and some add days.",
+   "es": "Cada centro de votación anticipada abre por lo menos 8 horas al día durante los nueve días. Tu comunidad fija el horario exacto, y algunas agregan días.",
+   "src": "https://www.legislature.mi.gov/Laws/MCL?objectName=MCL-168-720a",
+   "checked": "2026-10-21",
+   "quote": "Is open for at least 8 hours each day during the required 9 consecutive days of early voting.",
+   "status": "verified"
+  },
+  "cure": {
+   "en": "Missing or mismatched signature on your absentee ballot envelope? Return the cure form by 5 p.m. on Friday, November 6, 2026.",
+   "es": "¿Falta la firma en el sobre de tu boleta de voto en ausencia o no coincide? Devuelve el formulario para corregirla (cure form) a más tardar a las 5 p. m. del viernes 6 de noviembre de 2026.",
+   "src": "https://www.legislature.mi.gov/Laws/MCL?objectName=MCL-168-766",
+   "checked": "2026-10-21",
+   "quote": "An absent voter ballot return envelope that is not cured by 5 p.m. on the third day following the election remains rejected.",
+   "status": "verified"
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "Vote early at your assigned early voting site, or one of several if your community has more. You put your ballot straight into the tabulator, like on Election Day. On Election Day, go to your assigned polling place between 7 a.m. and 8 p.m.",
+   "es": "Vota por anticipado en el centro de votación anticipada que te asignaron, o en uno de varios si tu comunidad tiene más. Metes tu boleta directo en la máquina tabuladora, igual que el Día de las Elecciones. El Día de las Elecciones, ve a tu lugar de votación asignado entre las 7 a. m. y las 8 p. m.",
+   "src": "https://www.michigan.gov/sos/elections/voting/early-in-person-voting",
+   "checked": "2026-10-21",
+   "quote": "Voters may only cast a ballot at their assigned early voting site(s).",
+   "status": "verified"
+  },
+  "first_time": {
+   "en": "New to Michigan, or moved? Go to your city or township clerk's office with proof of residency, like a utility bill or bank statement, to register. You can vote an absentee ballot right there, or head to your polling place if there's time.",
+   "es": "¿Eres nuevo en Michigan o te mudaste? Ve a la oficina del secretario de tu ciudad o municipio con un comprobante de domicilio, como un recibo de servicios o un estado de cuenta bancario, para registrarte. Puedes votar con una boleta de voto en ausencia ahí mismo, o ir a tu lugar de votación si te da tiempo.",
+   "src": "https://www.michigan.gov/sos/elections/voting/vote-on-election-day",
+   "checked": "2026-10-21",
+   "quote": "To vote, they may either request an absentee ballot and vote at their clerk's office or go to their polling place to vote if time allows.",
+   "status": "verified"
+  }
+ },
+ "where": {
+  "locator_url": "https://mvic.sos.state.mi.us/Voter/Index",
+  "locator_label": {
+   "en": "Michigan Voter Information Center (Michigan.gov/Vote)",
+   "es": "Michigan Voter Information Center (Michigan.gov/Vote)"
+  },
+  "rule": {
+   "en": "Look up your assigned early voting site and your Election Day polling place at Michigan.gov/Vote. You can only vote early at a site you're assigned to.",
+   "es": "Busca tu centro de votación anticipada asignado y tu lugar de votación del Día de las Elecciones en Michigan.gov/Vote. Solo puedes votar por anticipado en un centro que te hayan asignado.",
+   "src": "https://www.michigan.gov/sos/elections/voting/early-in-person-voting",
+   "checked": "2026-10-21",
+   "quote": "They can look up their assigned early voting site(s) up to 60 days prior to Election Day at Michigan.gov/Vote .",
+   "status": "verified"
+  }
+ },
+ "id": {
+  "rule": "photo_requested",
+  "accepted": {
+   "en": [
+    "Driver's license or state ID from Michigan or another state",
+    "Federal, state, county or local government photo ID",
+    "U.S. passport",
+    "Military photo ID",
+    "School or college ID",
+    "Tribal photo ID",
+    "Concealed pistol license"
+   ],
+   "es": [
+    "Licencia de conducir o identificación estatal de Michigan o de otro estado",
+    "Identificación con foto del gobierno federal, estatal, del condado o local",
+    "Pasaporte de EE. UU.",
+    "Identificación militar con foto",
+    "Credencial escolar o universitaria",
+    "Identificación tribal con foto",
+    "Licencia para portar pistola oculta (concealed pistol license)"
+   ],
+   "src": "https://www.michigan.gov/sos/elections/voting/vote-on-election-day",
+   "checked": "2026-10-21",
+   "quote": "Driver’s license or state ID card issued by Michigan or another state",
+   "status": "verified"
+  },
+  "expired": {
+   "en": "An expired Michigan driver's license or state ID still works. Any other photo ID has to be current. Your ID doesn't need your address on it.",
+   "es": "Una licencia de conducir o identificación estatal de Michigan vencida sí sirve. Cualquier otra identificación con foto debe estar vigente. Tu identificación no tiene que mostrar tu dirección.",
+   "src": "https://www.michigan.gov/sos/elections/voting/vote-on-election-day",
+   "checked": "2026-10-21",
+   "quote": "A voter may use an expired Michigan driver's license or state ID as a valid form of photo ID.",
+   "status": "verified"
+  },
+  "without": {
+   "en": "No photo ID, or forgot it? Sign an affidavit saying you don't have one with you, and you vote a regular ballot that's counted with all the others.",
+   "es": "¿No tienes identificación con foto o se te olvidó? Firma una declaración jurada de que no la traes, y votas con una boleta regular que se cuenta con todas las demás.",
+   "src": "https://www.michigan.gov/sos/elections/voting/vote-on-election-day",
+   "checked": "2026-10-21",
+   "quote": "Once the affidavit is signed, they may cast a ballot, and it will be counted with all other ballots on Election Day.",
+   "status": "verified"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "Any registered voter can vote absentee, no reason needed. Check the box on your application to join the permanent list and get a ballot for every election.",
+   "es": "Cualquier votante registrado puede votar en ausencia, sin dar una razón. Marca la casilla en tu solicitud para entrar a la lista permanente y recibir una boleta en cada elección.",
+   "src": "https://www.michigan.gov/sos/elections/voting/absentee-voting",
+   "checked": "2026-10-21",
+   "quote": "All registered voters in Michigan have the right to vote by mail using an absentee ballot delivered to their home.",
+   "status": "verified"
+  },
+  "witness": {
+   "en": "Sign and date the return envelope in the space provided, using the signature on your driver's license, state ID or voter registration. Made a mistake, like signing in the wrong place? Ask your clerk for a new ballot.",
+   "es": "Firma y pon la fecha en el sobre de devolución, en el espacio indicado, con la firma de tu licencia de conducir, identificación estatal o registro de votante. ¿Te equivocaste, por ejemplo firmaste en el lugar equivocado? Pídele una boleta nueva al secretario.",
+   "src": "https://www.michigan.gov/sos/elections/voting/absentee-voting",
+   "checked": "2026-10-21",
+   "quote": "Voters must sign and date the return envelope on the provided space.",
+   "status": "verified"
+  },
+  "track_url": "https://mvic.sos.state.mi.us/Voter/Index",
+  "cure": {
+   "en": "If your signature is missing or doesn't match, your clerk will reach you by phone, email or text, or by mail if they have no other way. Send back the cure form online, in person or by mail by 5 p.m. on Friday, November 6.",
+   "es": "Si falta tu firma o no coincide, el secretario se comunicará contigo por teléfono, correo electrónico o mensaje de texto, o por correo postal si no tiene otra forma. Devuelve el formulario para corregirla en línea, en persona o por correo a más tardar a las 5 p. m. del viernes 6 de noviembre.",
+   "src": "https://www.legislature.mi.gov/Laws/MCL?objectName=MCL-168-766a",
+   "checked": "2026-10-21",
+   "quote": "The clerk must notify the elector by telephone, email, or text message, if available. In the absence of the elector's telephone number or email address, the clerk must notify the elector by United States mail.",
+   "status": "verified"
+  },
+  "dropbox": {
+   "en": "Use one of your clerk's drop boxes by 8 p.m. on Election Day. You can also put your finished absentee ballot straight into the tabulator at your early voting site, or at your polling place on Election Day (not in Detroit).",
+   "es": "Usa uno de los buzones de entrega del secretario a más tardar a las 8 p. m. del Día de las Elecciones. También puedes meter tu boleta de voto en ausencia ya llena directo en la máquina tabuladora de tu centro de votación anticipada, o de tu lugar de votación el Día de las Elecciones (no en Detroit).",
+   "src": "https://www.michigan.gov/sos/elections/voting/absentee-voting",
+   "checked": "2026-10-21",
+   "quote": "Ballots must be inserted into a drop box by 8 p.m. on Election Day to be counted.",
+   "status": "verified"
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "en": "Leave the campaign shirts, hats, pins and stickers at home. Michigan bans election or campaign clothing and accessories within 100 feet of a polling place. If you show up in a shirt or button with election images or slogans, you'll be asked to cover or remove it.",
+   "es": "Deja en casa las camisetas, gorras, pines y calcomanías de campaña. Michigan prohíbe la ropa y los accesorios electorales o de campaña a menos de 100 pies de un lugar de votación. Si llegas con una camiseta o un botón con imágenes o lemas electorales, te pedirán que lo tapes o te lo quites.",
+   "src": "https://www.michigan.gov/sos/elections/voting/vote-on-election-day",
+   "checked": "2026-10-21",
+   "quote": "If you go to the polls with a shirt or button bearing election-related images or slogans, you will be asked to cover or remove it.",
+   "status": "verified"
+  },
+  "phone": {
+   "status": "missing",
+   "notes": "Conflict between official pages. Vote on Election Day says 'Do take a selfie outside the voting area.' and 'Do not take a photo within the voting area.' The early voting page and the SOS Elections FAQ say voters may photograph their own ballot in the voting booth. Left missing until Garrett picks."
+  },
+  "line": {
+   "en": "Polls close at 8 p.m. If you're in line by then, stay put. You'll be allowed to vote. The same goes at closing time on each day of early voting.",
+   "es": "Los lugares de votación cierran a las 8 p. m. Si estás en la fila a esa hora, no te salgas. Te dejarán votar. Lo mismo aplica a la hora de cierre de cada día de votación anticipada.",
+   "src": "https://www.legislature.mi.gov/Laws/MCL?objectName=MCL-168-720",
+   "checked": "2026-10-21",
+   "quote": "Every qualified elector present and in line at the polls at the hour prescribed for the closing thereof shall be allowed to vote.",
+   "status": "verified"
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "en": "Michigan has a statewide I Voted sticker contest, started in 2024 by the Secretary of State's college student advisory task force. This year more than 2,000 designs came in, the public voted on finalists, and nine winners were picked in three categories. Local clerks can order the winning stickers for November.",
+   "es": "Michigan tiene un concurso estatal de stickers de I Voted, que empezó en 2024 por idea del grupo asesor de estudiantes universitarios de la Secretaría de Estado. Este año llegaron más de 2,000 diseños, el público votó por los finalistas y se eligieron nueve ganadores en tres categorías. Los secretarios locales pueden pedir los stickers ganadores para noviembre.",
+   "src": "https://www.michigan.gov/sos/elections/voting/i-voted-sticker-contest",
+   "checked": "2026-10-21",
+   "quote": "Winning stickers will be available for election clerks to order for the November election.",
+   "status": "verified"
+  }
+ },
+ "faq": {
+  "provisional": {
+   "en": "You may get one if your name isn't on the list, you're at the wrong polling place, or you're a first-time voter without the required ID. You then have 6 days to bring ID to your city or township clerk. It counts if officials confirm you're registered in the right place.",
+   "es": "Te la pueden dar si tu nombre no está en la lista, si estás en el lugar de votación equivocado o si votas por primera vez y no tienes la identificación requerida. Luego tienes 6 días para llevar tu identificación al secretario de tu ciudad o municipio. Se cuenta si confirman que estás registrado en el lugar correcto.",
+   "src": "https://www.michigan.gov/sos/elections/voting/vote-on-election-day",
+   "checked": "2026-10-21",
+   "quote": "After casting a provisional ballot, a voter has 6 days to provide appropriate ID documentation to their city or township clerk.",
+   "status": "verified"
+  },
+  "line": {
+   "en": "You can still vote. Everyone qualified and in line at 8 p.m. on Election Day is allowed to vote, and the same goes at closing time during early voting.",
+   "es": "Igual puedes votar. Toda persona con derecho a votar que esté en la fila a las 8 p. m. del Día de las Elecciones puede votar, y lo mismo aplica a la hora de cierre durante la votación anticipada.",
+   "src": "https://www.michigan.gov/sos/elections/voting/early-in-person-voting",
+   "checked": "2026-10-21",
+   "quote": "During each day of the early voting period, eligible voters waiting in line when an early voting site closes have the right to stay in line and cast a ballot.",
+   "status": "verified"
+  },
+  "track": {
+   "en": "Go to mi.gov/myvoterinfo and check the Absentee ballot section for when your ballot was sent and whether your clerk got it back. Sign up at mi.gov/ballotalert for email updates. Ballots handed in at an early voting site or on Election Day don't show up there.",
+   "es": "Entra a mi.gov/myvoterinfo y revisa la sección de boleta de voto en ausencia (Absentee ballot) para ver cuándo se envió tu boleta y si el secretario ya la recibió. Regístrate en mi.gov/ballotalert para recibir avisos por correo electrónico. Las boletas que entregas en un centro de votación anticipada o el Día de las Elecciones no aparecen ahí.",
+   "src": "https://www.michigan.gov/sos/elections/voting/ballot-tracking",
+   "checked": "2026-10-21",
+   "quote": "check the \"Absentee ballot\" section to view the date your ballot was sent and whether the clerk has received your completed ballot.",
+   "status": "verified"
+  },
+  "unsigned": {
+   "en": "Your clerk will contact you with a cure form. Sign and return it online, in person or by mail by 5 p.m. on Friday, November 6, or your ballot stays rejected.",
+   "es": "El secretario se comunicará contigo con un formulario para corregirla. Fírmalo y devuélvelo en línea, en persona o por correo a más tardar a las 5 p. m. del viernes 6 de noviembre, o tu boleta sigue rechazada.",
+   "src": "https://www.legislature.mi.gov/Laws/MCL?objectName=MCL-168-766",
+   "checked": "2026-10-21",
+   "quote": "An absent voter ballot return envelope that is not cured by 5 p.m. on the third day following the election remains rejected.",
+   "status": "verified"
+  },
+  "late_mail": {
+   "en": "In the last two weeks, mailing it isn't recommended. It has to reach your clerk by 8 p.m. on Election Day, so use a drop box, your clerk's office or your early voting site instead.",
+   "es": "En las últimas dos semanas no se recomienda enviarla por correo. Debe llegar al secretario a más tardar a las 8 p. m. del Día de las Elecciones, así que mejor usa un buzón de entrega, la oficina del secretario o tu centro de votación anticipada.",
+   "src": "https://www.michigan.gov/sos/elections/voting/absentee-voting",
+   "checked": "2026-10-21",
+   "quote": "Return and submit an absentee ballot by mail (not recommended within 14 days of an election)",
+   "status": "verified"
+  }
+ },
+ "notes": "Read October 21, 2026 on michigan.gov/sos (Vote on Election Day, Register to Vote, Absentee Voting, Early In-Person Voting, Ballot Tracking, I Voted Sticker Contest) and legislature.mi.gov (MCL 168.720 hours and line, 168.720a early voting minimums, 168.766 cure deadline, 168.766a cure notice). The October 19 registration date is 15 days before November 3, per the SOS 15-day rule and the existing FAQ. Cure deadline: 5 p.m. on the third day after the election = Friday, November 6. Mail application deadline: 5 p.m. the Friday before = October 30. CONFLICT on photos: the Election Day page says not to take a photo within the voting area, while the early voting page and the SOS FAQ say voters may photograph their own ballot in the booth, so polls_rules.phone is missing. Detroit absentee voters can't tabulate at Election Day polling places (stated on the absentee page). No county offices list URL used; the clerk lookup is inside the Voter Information Center."
+}

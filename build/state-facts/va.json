@@ -1,0 +1,236 @@
+{
+ "abbr": "VA",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "www.elections.virginia.gov": {
+   "en": "the Virginia Department of Elections",
+   "es": "el Departamento de Elecciones de Virginia"
+  },
+  "law.lis.virginia.gov": {
+   "en": "Virginia law",
+   "es": "la ley de Virginia"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "Register or update your registration by Friday, October 23, 2026. After that, you can still register in person and vote a provisional ballot through Election Day.",
+   "es": "Regístrate o actualiza tu registro a más tardar el viernes 23 de octubre de 2026. Después de esa fecha, todavía puedes registrarte en persona y votar con una boleta provisional hasta el Día de las Elecciones.",
+   "src": "https://www.elections.virginia.gov/casting-a-ballot/calendars-schedules/upcoming-elections.html",
+   "checked": "2026-10-21",
+   "quote": "Voters may register and vote using a provisional ballot In-Person after October 23, 2026, through Election Day.",
+   "status": "verified",
+   "until": "2026-10-23",
+   "en_after": "The regular deadline was October 23, 2026. You can still register in person and vote a provisional ballot through Election Day.",
+   "es_after": "La fecha límite regular fue el 23 de octubre de 2026. Todavía puedes registrarte en persona y votar con una boleta provisional hasta el Día de las Elecciones."
+  },
+  "mail_request": {
+   "en": "Your local registrar's office must receive your application by 5 p.m. on Friday, October 23, 2026. You can apply online through the Citizen Portal.",
+   "es": "La oficina de registro de tu localidad (general registrar) debe recibir tu solicitud a más tardar a las 5 p. m. del viernes 23 de octubre de 2026. Puedes presentarla en línea en el Citizen Portal.",
+   "src": "https://www.elections.virginia.gov/casting-a-ballot/calendars-schedules/upcoming-elections.html",
+   "checked": "2026-10-21",
+   "quote": "Your request must be received by your local registrar's office by 5:00 p.m.",
+   "status": "verified",
+   "until": "2026-10-23",
+   "en_after": "Applications closed at 5 p.m. on October 23, 2026. You can still vote in person.",
+   "es_after": "Las solicitudes cerraron a las 5 p. m. del 23 de octubre de 2026. Todavía puedes votar en persona."
+  },
+  "mail_return": {
+   "en": "Bring it to your general registrar's office by 7 p.m. on Tuesday, November 3, or use a drop-off location in your locality. By mail, it must be postmarked on or before November 3 and reach your registrar by noon on the third day after the election.",
+   "es": "Llévala a la oficina de registro de tu localidad (general registrar) a más tardar a las 7 p. m. del martes 3 de noviembre, o usa un lugar de entrega de tu localidad. Por correo, debe tener matasellos del 3 de noviembre o antes y llegar a la oficina de registro a más tardar al mediodía del tercer día después de la elección.",
+   "src": "https://www.elections.virginia.gov/casting-a-ballot/absentee-voting/",
+   "checked": "2026-10-21",
+   "quote": "If you are returning your ballot by mail, it must be postmarked on or before election day and received by your general registrar's office by noon on the third day following the election (In the event that that day is a holiday, the deadline is moved to the following business day).",
+   "status": "verified"
+  },
+  "early_hours": {
+   "en": "Early voting ends at 5 p.m. on Saturday, October 31. Registrar offices are also open for early voting on Saturday, October 24 and Sunday, October 25. Ask your registrar for hours and satellite sites.",
+   "es": "La votación anticipada termina a las 5 p. m. del sábado 31 de octubre. Las oficinas de registro también abren para votar por anticipado el sábado 24 y el domingo 25 de octubre. Pregunta en tu oficina de registro por los horarios y los centros satélite.",
+   "src": "https://www.elections.virginia.gov/casting-a-ballot/calendars-schedules/upcoming-elections.html",
+   "checked": "2026-10-21",
+   "quote": "Voter registration offices will be open for early voting on Sunday, October 18, 2026; Saturday, October 24, 2026; Sunday, October 25, 2026, and Saturday, October 31, 2026.",
+   "status": "verified",
+   "until": "2026-10-25",
+   "en_after": "Early voting ends at 5 p.m. on Saturday, October 31. Ask your registrar for hours and satellite sites.",
+   "es_after": "La votación anticipada termina a las 5 p. m. del sábado 31 de octubre. Pregunta en tu oficina de registro por los horarios y los centros satélite."
+  },
+  "cure": {
+   "status": "missing",
+   "notes": "The cure deadline is relative (noon on the third day after the election, Code 24.2-709.1); it is in mail.cure rather than as a computed date here."
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "During early voting, go to your general registrar's office or any early voting site in your county or city. You don't need a reason. On Election Day, vote at your assigned polling place.",
+   "es": "Durante la votación anticipada, ve a la oficina de registro de tu localidad (general registrar) o a cualquier centro de votación anticipada de tu condado o ciudad. No necesitas dar una razón. El Día de las Elecciones, vota en el lugar de votación que te corresponde.",
+   "src": "https://www.elections.virginia.gov/casting-a-ballot/",
+   "checked": "2026-10-21",
+   "quote": "Any voter in the locality may visit the General Registrar's Office or an early voting site to vote in person or drop off their mailed absentee ballot.",
+   "status": "verified"
+  },
+  "first_time": {
+   "status": "missing"
+  }
+ },
+ "where": {
+  "locator_url": "https://www.elections.virginia.gov/casting-a-ballot/polling-place-lookup/",
+  "locator_label": {
+   "en": "Polling Place Lookup (Virginia Department of Elections)",
+   "es": "Polling Place Lookup (Departamento de Elecciones de Virginia)"
+  },
+  "local_offices_url": "https://vote.elections.virginia.gov/VoterInformation/PublicContactLookup",
+  "rule": {
+   "en": "Enter your address in the state's lookup tool to see your Election Day polling place, early voting dates, hours and locations, ballot drop-off options and what's on your ballot.",
+   "es": "Escribe tu dirección en la herramienta de búsqueda del estado para ver tu lugar de votación del Día de las Elecciones, las fechas, horarios y lugares de votación anticipada, las opciones para entregar tu boleta y lo que aparece en tu boleta.",
+   "src": "https://www.elections.virginia.gov/casting-a-ballot/polling-place-lookup/",
+   "checked": "2026-10-21",
+   "quote": "Simply enter your full address (including ZIP code) in the field below to see:",
+   "status": "verified"
+  }
+ },
+ "id": {
+  "rule": "id_nonphoto",
+  "accepted": {
+   "en": [
+    "Virginia driver's license, current or expired",
+    "Virginia DMV-issued ID card, current or expired",
+    "Employee photo ID from your employer, public or private",
+    "U.S. military ID",
+    "Student ID from a Virginia high school, college or university",
+    "Student photo ID from a U.S. college or university",
+    "U.S. passport or passport card",
+    "Government-issued ID from the federal government, Virginia or a local government",
+    "Voter ID card or voter confirmation documents from the Department of Elections",
+    "Tribal ID from one of the 11 tribes Virginia recognizes",
+    "Nursing home resident ID from a government facility",
+    "Utility bill, bank statement, government check or paycheck with your name and address, no more than 12 months old",
+    "Any other current government document with your name and address"
+   ],
+   "es": [
+    "Licencia de conducir de Virginia, vigente o vencida",
+    "Tarjeta de identificación del DMV de Virginia, vigente o vencida",
+    "Identificación de empleado con foto de tu empleador, público o privado",
+    "Identificación militar de EE. UU.",
+    "Identificación de estudiante de una preparatoria, colegio o universidad de Virginia",
+    "Identificación de estudiante con foto de un colegio o universidad de EE. UU.",
+    "Pasaporte o tarjeta pasaporte de EE. UU.",
+    "Identificación del gobierno federal, de Virginia o de un gobierno local",
+    "Tarjeta de votante o documentos de confirmación de votante del Departamento de Elecciones",
+    "Identificación tribal de una de las 11 tribus que reconoce Virginia",
+    "Identificación de residente de un asilo de ancianos de un centro del gobierno",
+    "Recibo de servicios, estado de cuenta bancario, cheque del gobierno o talón de pago con tu nombre y dirección, de no más de 12 meses",
+    "Cualquier otro documento vigente del gobierno con tu nombre y dirección"
+   ],
+   "src": "https://www.elections.virginia.gov/media/formswarehouse/voter-id/outreach-materials/documents/Voter-Identification-Chart---Revised-09.2026.pdf",
+   "checked": "2026-10-21",
+   "quote": "All voters casting a ballot in-person will be asked to show one form of identification.",
+   "status": "verified"
+  },
+  "expired": {
+   "en": "A Virginia driver's license or DMV ID card counts even if it's expired. Other IDs can't be expired more than 12 months.",
+   "es": "La licencia de conducir o la tarjeta de identificación del DMV de Virginia sirve aunque esté vencida. Las demás identificaciones no pueden tener más de 12 meses de vencidas.",
+   "src": "https://www.elections.virginia.gov/media/formswarehouse/voter-id/outreach-materials/documents/Voter-Identification-Chart---Revised-09.2026.pdf",
+   "checked": "2026-10-21",
+   "quote": "“Valid” means the document is genuine and is not expired for more than twelve months, except for a Virginia driver’s license or DMV-issued ID card, for which the expiration date should not be considered when determining its validity.",
+   "status": "verified"
+  },
+  "without": {
+   "en": "Forgot your ID? Sign an ID Confirmation Statement and vote a regular ballot. If you don't sign it, you vote a provisional ballot and have until noon on the Friday after the election to get a copy of your ID or a signed statement to your local electoral board.",
+   "es": "¿Olvidaste tu identificación? Firma una declaración de confirmación de identidad (ID Confirmation Statement) y vota con una boleta regular. Si no la firmas, votas con una boleta provisional y tienes hasta el mediodía del viernes después de la elección para entregar una copia de tu identificación o la declaración firmada a la junta electoral de tu localidad (electoral board).",
+   "src": "https://www.elections.virginia.gov/casting-a-ballot/in-person-voting/",
+   "checked": "2026-10-21",
+   "quote": "A voter will have until noon on the Friday following the election to deliver a copy of the identification or sign and submit an ID Confirmation Statement to the local electoral board.",
+   "status": "verified"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "Any registered voter in Virginia can vote absentee by mail. You don't need a reason.",
+   "es": "Cualquier votante registrado en Virginia puede votar en ausencia por correo. No necesitas dar una razón.",
+   "src": "https://law.lis.virginia.gov/vacode/title24.2/chapter7/section24.2-700/",
+   "checked": "2026-10-21",
+   "quote": "Any registered voter may vote by absentee ballot in accordance with the provisions of this chapter in any election in which he is qualified to vote.",
+   "status": "verified"
+  },
+  "witness": {
+   "en": "Fill in and sign the statement on the back of the ballot envelope. Leaving out your middle name or the date won't void your ballot.",
+   "es": "Llena y firma la declaración que viene al reverso del sobre de la boleta. Si te falta el segundo nombre o la fecha, tu boleta no se anula.",
+   "src": "https://law.lis.virginia.gov/vacode/title24.2/chapter7/section24.2-707/",
+   "checked": "2026-10-21",
+   "quote": "After the voter has marked his absentee ballot, he shall (a) enclose the ballot in the envelope provided for that purpose, (b) seal the envelope, (c) fill in and sign the statement printed on the back of the envelope,",
+   "status": "verified"
+  },
+  "track_url": "https://ballot.elections.virginia.gov/voter/va/bt/track",
+  "cure": {
+   "en": "Made a mistake on the envelope? If your ballot reaches the registrar by the Friday before Election Day, the registrar will tell you by mail or email within three days, and you can fix it until noon on the third day after the election.",
+   "es": "¿Cometiste un error en el sobre? Si tu boleta llega a la oficina de registro a más tardar el viernes antes del Día de las Elecciones, te avisarán por correo postal o electrónico dentro de tres días, y puedes corregirlo hasta el mediodía del tercer día después de la elección.",
+   "src": "https://law.lis.virginia.gov/vacode/title24.2/chapter7/section24.2-709.1/",
+   "checked": "2026-10-21",
+   "quote": "The voter shall be entitled to make such necessary corrections before noon on the third day after the election, and his ballot shall then be counted pursuant to the procedures set forth in this chapter if he is found to be entitled to vote.",
+   "status": "verified"
+  },
+  "dropbox": {
+   "en": "Drop-off locations are set by each locality. The instructions in your ballot mailing list the ones near you.",
+   "es": "Cada localidad decide sus lugares de entrega. Las instrucciones que vienen con tu boleta te dicen cuáles te quedan cerca.",
+   "src": "https://www.elections.virginia.gov/casting-a-ballot/absentee-voting/",
+   "checked": "2026-10-21",
+   "quote": "For more information on drop off locations in your locality, review the absentee instructions provided in your absentee ballot mailing.",
+   "status": "verified"
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "en": "You can wear your campaign shirt, hat, button or sticker when you go in to vote. What's not allowed within 40 feet of a polling place entrance: hanging around, handing out campaign material or trying to sway anyone's vote.",
+   "es": "Puedes llevar tu camiseta, gorra, botón o sticker de campaña cuando entres a votar. Lo que no se permite a menos de 40 pies de la entrada de un lugar de votación: quedarte ahí, repartir material de campaña o tratar de influir en el voto de alguien.",
+   "src": "https://law.lis.virginia.gov/vacode/title24.2/chapter6/section24.2-604/",
+   "checked": "2026-10-21",
+   "quote": "The provisions of subsections A and C shall not be construed to prohibit a person who approaches or enters the polling place for the purpose of voting from wearing a shirt, hat, or other apparel on which a candidate's name or a political slogan appears or from having a sticker or button attached to his apparel on which a candidate's name or a political slogan appears.",
+   "status": "verified"
+  },
+  "phone": {
+   "en": "You can use your phone inside the polling place. Election officers can stop phone use that slows down or disrupts voting, or that tries to sway another voter.",
+   "es": "Puedes usar tu teléfono dentro del lugar de votación. Los funcionarios electorales pueden detener el uso del teléfono si retrasa o interrumpe la votación, o si intenta influir en otro votante.",
+   "src": "https://law.lis.virginia.gov/admincode/title1/agency20/chapter60/section30/",
+   "checked": "2026-10-21",
+   "quote": "The use of electronic devices inside the polling place is generally permitted.",
+   "status": "verified"
+  },
+  "line": {
+   "status": "missing"
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "status": "missing",
+   "notes": "No statewide sticker or contest found on elections.virginia.gov. Prince William County ran a 2024 design contest (pwcva.gov news release) and rotates four winning designs; the 2026 design was read only in news coverage, not on the county page."
+  }
+ },
+ "faq": {
+  "provisional": {
+   "en": "If you come without an acceptable ID and don't sign an ID Confirmation Statement, you vote a provisional ballot. It counts if your ID copy or signed statement reaches your local electoral board by noon on the Friday after the election. A Friday postmark isn't enough.",
+   "es": "Si llegas sin una identificación aceptada y no firmas una declaración de confirmación de identidad (ID Confirmation Statement), votas con una boleta provisional. Cuenta si la copia de tu identificación o la declaración firmada llega a la junta electoral de tu localidad (electoral board) a más tardar al mediodía del viernes después de la elección. El matasellos del viernes no basta.",
+   "src": "https://www.elections.virginia.gov/casting-a-ballot/in-person-voting/",
+   "checked": "2026-10-21",
+   "quote": "Please note that the copy of the ID or signed ID Confirmation Statement must be delivered to the electoral board by noon on the Friday following the election, or the provisional ballot cannot be counted.",
+   "status": "verified"
+  },
+  "line": {
+   "en": "You can still vote. Anyone in line at 7 p.m. on Election Day will be allowed to vote.",
+   "es": "Todavía puedes votar. Cualquier persona que esté en la fila a las 7 p. m. del Día de las Elecciones podrá votar.",
+   "src": "https://www.elections.virginia.gov/casting-a-ballot/",
+   "checked": "2026-10-21",
+   "quote": "Anyone in line at 7:00 p.m. will be allowed to vote.",
+   "status": "verified"
+  },
+  "track": {
+   "en": "Track your mail ballot on Ballot Scout. Voters in Fairfax and Prince William counties use their county's own tracker.",
+   "es": "Sigue tu boleta por correo en Ballot Scout. Los votantes de los condados de Fairfax y Prince William usan el sistema de su propio condado.",
+   "src": "https://www.elections.virginia.gov/casting-a-ballot/absentee-voting/",
+   "checked": "2026-10-21",
+   "quote": "If you have submitted an absentee ballot application for a ballot to be sent by mail, you can track your ballot by logging into Ballot Scout.",
+   "status": "verified"
+  }
+ },
+ "notes": "Read October 21, 2026 on elections.virginia.gov (curl worked) and law.lis.virginia.gov. Early voting dates in states.js (Sept. 18 to Oct. 31) match the upcoming-elections page: 'Friday, September 18, 2026 through 5:00 p.m., Saturday, October 31, 2026.' Code 24.2-709.1 has two versions on the page; the one 'Effective until January 1, 2027' (cure by noon on the third day after the election, for ballots received by the Friday before) is used; the 2027 version moves it to 5 p.m. on the Monday after. The mail return and cure deadlines are stated relative to the election; no official page states them as calendar dates, so none is computed. Campaign gear: Code 24.2-604(D) lets voters wear campaign apparel, buttons and stickers, so Virginia is the opposite of Texas and Georgia here. Witness: the envelope statement is required (24.2-707); an ELECT summary of 2023 law changes reportedly removed the witness signature, not read directly, so the file doesn't say 'no witness'. No sticker tradition on an official page."
+}

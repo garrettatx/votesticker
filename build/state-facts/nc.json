@@ -1,0 +1,226 @@
+{
+ "abbr": "NC",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "www.ncsbe.gov": {
+   "en": "the North Carolina State Board of Elections",
+   "es": "la Junta Electoral del Estado de North Carolina (State Board of Elections)"
+  },
+  "www.ncleg.gov": {
+   "en": "the North Carolina General Statutes",
+   "es": "las leyes de North Carolina (General Statutes)"
+  },
+  "www.dcovotes.dconc.gov": {
+   "en": "the Durham County Board of Elections",
+   "es": "la junta electoral del condado de Durham (Board of Elections)"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "The regular deadline was 5 p.m. on Friday, October 9, 2026. You can still register and vote at the same time at any early voting site in your county until early voting ends. Same-day registration isn't available for most voters on Election Day.",
+   "es": "La fecha límite regular fue a las 5 p. m. del viernes 9 de octubre de 2026. Todavía puedes registrarte y votar al mismo tiempo en cualquier centro de votación anticipada de tu condado hasta que termine la votación anticipada. El registro el mismo día no está disponible para la mayoría de los votantes el Día de las Elecciones.",
+   "src": "https://www.ncsbe.gov/voting/upcoming-election",
+   "checked": "2026-10-21",
+   "quote": "Oct. 9: Voter registration deadline (5 p.m.).* For more, see How to Register.",
+   "status": "verified",
+   "until": "2026-10-31",
+   "en_after": "Registration closed. Same-day registration ended with early voting, and it isn't available for most voters on Election Day.",
+   "es_after": "El registro cerró. El registro el mismo día terminó con la votación anticipada, y no está disponible para la mayoría de los votantes el Día de las Elecciones."
+  },
+  "mail_request": {
+   "en": "Your county board of elections must receive your request by 5 p.m. on Tuesday, October 20, 2026.",
+   "es": "La junta electoral de tu condado (county board of elections) debe recibir tu solicitud a más tardar a las 5 p. m. del martes 20 de octubre de 2026.",
+   "src": "https://www.ncsbe.gov/voting/upcoming-election",
+   "checked": "2026-10-21",
+   "quote": "Oct. 20: Absentee ballot request deadline (5 p.m.).*",
+   "status": "verified",
+   "until": "2026-10-20",
+   "en_after": "Requests closed at 5 p.m. on October 20, 2026. You can still vote in person.",
+   "es_after": "Las solicitudes cerraron a las 5 p. m. del 20 de octubre de 2026. Todavía puedes votar en persona."
+  },
+  "mail_return": {
+   "en": "Your county board of elections must receive it by 7:30 p.m. on Tuesday, November 3. A postmark isn't enough: the old three-day grace period for mailed ballots is gone.",
+   "es": "La junta electoral de tu condado debe recibirla a más tardar a las 7:30 p. m. del martes 3 de noviembre. El matasellos no basta: ya no existe el periodo de gracia de tres días para las boletas por correo.",
+   "src": "https://www.ncsbe.gov/voting/vote-mail/detailed-instructions-voting-mail",
+   "checked": "2026-10-21",
+   "quote": "Your ballot must be received by your county board of elections by 7:30 p.m. on Election Day. Note: State law previously provided for a grace period if your ballot was postmarked on or before Election Day and received within three days after the election. That is no longer the case.",
+   "status": "verified"
+  },
+  "early_hours": {
+   "en": "Each county sets its own early voting sites and schedules. Find yours with the state's Early Voting Site Search.",
+   "es": "Cada condado decide sus propios centros y horarios de votación anticipada. Encuentra los tuyos con la búsqueda de centros de votación anticipada del estado (Early Voting Site Search).",
+   "src": "https://www.ncsbe.gov/voting/upcoming-election",
+   "checked": "2026-10-21",
+   "quote": "For in-person early voting locations and schedules in your county, see the Early Voting Site Search.",
+   "status": "verified"
+  },
+  "cure": {
+   "status": "missing",
+   "notes": "No mail ballot cure deadline found on ncsbe.gov vote-by-mail pages."
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "During early voting, you can vote at any early voting site in your county. On Election Day, you vote at your assigned polling place.",
+   "es": "Durante la votación anticipada puedes votar en cualquier centro de votación anticipada de tu condado. El Día de las Elecciones votas en el lugar de votación que te corresponde.",
+   "src": "https://www.ncsbe.gov/voting/vote-early-person",
+   "checked": "2026-10-21",
+   "quote": "During the early voting period, voters may cast a ballot at any early voting site in their county. This is different than Election Day, when registered voters must vote at their assigned polling place.",
+   "status": "verified"
+  },
+  "first_time": {
+   "status": "missing"
+  }
+ },
+ "where": {
+  "locator_url": "https://vt.ncsbe.gov/RegLkup/",
+  "locator_label": {
+   "en": "Voter Search (NC State Board of Elections)",
+   "es": "Voter Search (Junta Electoral del Estado de North Carolina)"
+  },
+  "local_offices_url": "https://vt.ncsbe.gov/BOEInfo/",
+  "rule": {
+   "en": "The Voter Search shows your registration, your Election Day polling place, your absentee ballot information and your sample ballot.",
+   "es": "Voter Search muestra tu registro, tu lugar de votación del Día de las Elecciones, la información de tu boleta de voto en ausencia y tu boleta de muestra.",
+   "src": "https://www.ncsbe.gov/voting/upcoming-election",
+   "checked": "2026-10-21",
+   "quote": "There, you can also find your polling place, party affiliation, absentee ballot information, and more.",
+   "status": "verified"
+  }
+ },
+ "id": {
+  "rule": "photo_requested",
+  "accepted": {
+   "en": [
+    "North Carolina driver's license",
+    "State ID from the NCDMV, also called a non-operator ID",
+    "Driver's license or non-driver ID from another state, DC or a U.S. territory, only if you registered in North Carolina within 90 days of the election",
+    "U.S. passport or passport card",
+    "Free North Carolina voter photo ID card from your county board of elections",
+    "College or university student photo ID approved by the State Board of Elections",
+    "State or local government or charter school employee photo ID approved by the State Board of Elections",
+    "Military or veterans ID card with photo from the U.S. government",
+    "Tribal enrollment card with photo from a tribe recognized by North Carolina or the federal government",
+    "Public assistance ID card with photo from a U.S. or North Carolina agency"
+   ],
+   "es": [
+    "Licencia de conducir de North Carolina",
+    "Identificación estatal del NCDMV, también llamada non-operator ID",
+    "Licencia de conducir o identificación de otro estado, DC o un territorio de EE. UU., solo si te registraste en North Carolina dentro de los 90 días antes de la elección",
+    "Pasaporte o tarjeta pasaporte de EE. UU.",
+    "Credencial gratuita de votante con foto de North Carolina de la junta electoral de tu condado",
+    "Identificación de estudiante con foto de un colegio o universidad aprobada por la Junta Electoral del Estado",
+    "Identificación de empleado con foto del gobierno estatal o local o de una escuela chárter, aprobada por la Junta Electoral del Estado",
+    "Identificación militar o de veterano con foto del gobierno de EE. UU.",
+    "Tarjeta de inscripción tribal con foto de una tribu reconocida por North Carolina o el gobierno federal",
+    "Tarjeta de asistencia pública con foto de una agencia de EE. UU. o de North Carolina"
+   ],
+   "src": "https://www.ncsbe.gov/voting/voter-id",
+   "checked": "2026-10-21",
+   "quote": "Any of the following that is unexpired, or expired for one year or less:",
+   "status": "verified"
+  },
+  "expired": {
+   "en": "Most IDs can be expired up to one year. A regular (class C) driver's license that expired on or after July 1, 2025 still works. If you're 65 or older, an expired ID works if it was current on your 65th birthday. Military, veterans, tribal and public assistance IDs count whatever their dates.",
+   "es": "La mayoría de las identificaciones pueden tener hasta un año de vencidas. Una licencia de conducir regular (clase C) que venció el 1 de julio de 2025 o después todavía sirve. Si tienes 65 años o más, una identificación vencida sirve si estaba vigente el día que cumpliste 65. Las identificaciones militares, de veterano, tribales y de asistencia pública cuentan sin importar sus fechas.",
+   "src": "https://www.ncsbe.gov/voting/voter-id",
+   "checked": "2026-10-21",
+   "quote": "Note: A voter 65 or older may use an expired form of acceptable ID if the ID was unexpired on their 65th birthday.",
+   "status": "verified"
+  },
+  "without": {
+   "en": "Left your ID at home? Go get it and come back, or vote a provisional ballot and bring your ID to your county elections office by noon on the fifth business day after Election Day. Can't show one at all? Fill out an ID Exception Form and vote a provisional ballot. It counts if the form is filled out truthfully.",
+   "es": "¿Dejaste tu identificación en casa? Ve por ella y regresa, o vota con una boleta provisional y lleva tu identificación a la oficina electoral de tu condado a más tardar al mediodía del quinto día hábil después del Día de las Elecciones. ¿No puedes mostrar ninguna? Llena un formulario de excepción de identificación (ID Exception Form) y vota con una boleta provisional. Cuenta si llenas el formulario con la verdad.",
+   "src": "https://www.ncsbe.gov/voting/voter-id",
+   "checked": "2026-10-21",
+   "quote": "County boards of elections must count provisional ballots with truthfully completed ID Exception Forms.",
+   "status": "verified"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "Any registered voter in North Carolina can vote by mail. No excuse is needed.",
+   "es": "Cualquier votante registrado en North Carolina puede votar por correo. No necesitas dar una razón.",
+   "src": "https://www.ncsbe.gov/voting/upcoming-election",
+   "checked": "2026-10-21",
+   "quote": "Any North Carolina registered voter may request, receive, and vote a mail-in absentee ballot for the 2026 elections. No excuse is needed.",
+   "status": "verified"
+  },
+  "witness": {
+   "en": "Mark your ballot in front of two witnesses or one notary. They watch that you mark it, not how you vote, then sign the envelope. Put a copy of your photo ID, or the yellow Photo ID Exception Form, in the clear sleeve on the back.",
+   "es": "Marca tu boleta frente a dos testigos o un notario. Ellos ven que la marques, no por quién votas, y luego firman el sobre. Pon una copia de tu identificación con foto, o el formulario amarillo de excepción (Photo ID Exception Form), en la funda transparente de atrás.",
+   "src": "https://www.ncsbe.gov/voting/vote-mail/detailed-instructions-voting-mail",
+   "checked": "2026-10-21",
+   "quote": "Mark your ballot in the presence of a notary public or two witnesses. Your notary public or two witnesses should observe that you mark the ballot, not how you vote.",
+   "status": "verified"
+  },
+  "track_url": "https://vt.ncsbe.gov/RegLkup/",
+  "cure": {
+   "status": "missing"
+  },
+  "dropbox": {
+   "en": "Bring your mail ballot to your county board of elections office or to an early voting site in your county. Only you, a near relative or a legal guardian can mail or drop it off, unless you need help because of a disability.",
+   "es": "Lleva tu boleta por correo a la oficina de la junta electoral de tu condado o a un centro de votación anticipada de tu condado. Solo tú, un familiar cercano o tu tutor legal pueden enviarla o entregarla, salvo que necesites ayuda por una discapacidad.",
+   "src": "https://www.ncsbe.gov/voting/vote-mail/detailed-instructions-voting-mail",
+   "checked": "2026-10-21",
+   "quote": "You can return your ballot to your county board of elections office or to an early voting site in your county.",
+   "status": "verified"
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "en": "Campaigning stops at the buffer zone, which your county sets at 25 to 50 feet from the voting place door. Inside it, no one can hand out campaign literature, put up political signs or ask for votes.",
+   "es": "La campaña se detiene en la zona de protección, que tu condado fija entre 25 y 50 pies de la puerta del lugar de votación. Dentro de esa zona nadie puede repartir propaganda, poner letreros políticos ni pedir votos.",
+   "src": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_163/GS_163-166.4.html",
+   "checked": "2026-10-21",
+   "quote": "In determining the dimensions of that buffer zone for each voting place, the county board of elections shall, where practical, set the limit at 50 feet from the door of entrance to the voting place, measured when that door is closed, but in no event shall it set the limit at more than 50 feet or at less than 25 feet.",
+   "status": "verified"
+  },
+  "phone": {
+   "en": "Take your sticker selfie outside. North Carolina law bars photos of a voted ballot, and photos of other voters in the voting area need their OK and the chief judge's.",
+   "es": "Tómate la selfie con tu sticker afuera. La ley de North Carolina prohíbe tomarle foto a una boleta votada, y para tomarle foto a otros votantes en el área de votación necesitas su permiso y el del juez principal (chief judge).",
+   "src": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_163/GS_163-166.3.html",
+   "checked": "2026-10-21",
+   "quote": "No person shall photograph, videotape, or otherwise record the image of a voted official ballot for any purpose not otherwise permitted under law.",
+   "status": "verified"
+  },
+  "line": {
+   "status": "missing"
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "en": "Some North Carolina counties let residents help pick the sticker. Durham County's 2026 contest opened with public voting, and the top three designs go to the county Board of Elections, which picks the winner.",
+   "es": "Algunos condados de North Carolina dejan que los residentes ayuden a elegir el sticker. El concurso de 2026 del condado de Durham empezó con una votación pública, y los tres diseños con más votos pasan a la junta electoral del condado (Board of Elections), que elige al ganador.",
+   "src": "https://www.dcovotes.dconc.gov/Home/Components/News/News/10867/4100",
+   "checked": "2026-10-21",
+   "quote": "Following that round, the top three designs will be presented to the Durham County Board of Elections for selection of the winning design.",
+   "status": "verified"
+  }
+ },
+ "faq": {
+  "provisional": {
+   "en": "You vote a provisional ballot when there's a question about your registration or address, you're at the wrong precinct, or you can't show photo ID. Your county board researches it and counts it if you're eligible. Check its status online with your PIN, starting 10 days after the election.",
+   "es": "Votas con una boleta provisional cuando hay dudas sobre tu registro o tu dirección, estás en el precinto equivocado o no puedes mostrar una identificación con foto. La junta de tu condado lo revisa y la cuenta si puedes votar. Revisa su estado en línea con tu PIN a partir de 10 días después de la elección.",
+   "src": "https://www.ncsbe.gov/voting/provisional-voting",
+   "checked": "2026-10-21",
+   "quote": "If a provisional application is approved, only then will the voter’s provisional ballot be removed from the sealed envelope and the ballot counted or, if applicable, partially counted.",
+   "status": "verified"
+  },
+  "line": {
+   "status": "missing",
+   "notes": "Already in the polls FAQ answer ('If you're in line at 7:30 p.m., you can still vote')."
+  },
+  "track": {
+   "en": "Sign up for BallotTrax to follow your mail ballot from printed to accepted, or look it up in the Voter Search.",
+   "es": "Inscríbete en BallotTrax para seguir tu boleta por correo desde que se imprime hasta que se acepta, o búscala en Voter Search.",
+   "src": "https://www.ncsbe.gov/voting/vote-mail",
+   "checked": "2026-10-21",
+   "quote": "Once you have requested your absentee ballot, you can track its status from printed to accepted by signing up online for status notifications through BallotTrax.",
+   "status": "verified"
+  }
+ },
+ "notes": "Read October 21, 2026 on ncsbe.gov and ncleg.gov (curl worked); dcovotes.dconc.gov through Chrome. Early voting dates in states.js (Oct. 15 to Oct. 31, ending 3 p.m.) match ncsbe.gov/voting/vote-early-person: 'Starts: Thursday, Oct. 15.' and 'Ends: 3 p.m. Saturday, Oct. 31.' The registration deadline is now stated on ncsbe.gov ('Oct. 9: Voter registration deadline (5 p.m.)'), replacing the computed date in faq-sources.json. mail.track_url is the Voter Search because BallotTrax (northcarolina.ballottrax.net) is a vendor host the validator doesn't allow; add it to ALLOW_HOSTS if you want the direct link. The ID exception form path gives the provisional ballot a different deadline from the 'bring your ID' path; both are from ncsbe.gov/voting/voter-id. No official page says whether a voter may wear campaign clothing; gear rule covers the buffer zone only. Durham County's winning design was not announced on the county page as read; Jackson County's winner was found only in news (WLOS). Cure deadline not found."
+}

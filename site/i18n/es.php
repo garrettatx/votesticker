@@ -19,6 +19,7 @@ return array(
 	),
 	// State facts: summary (when the standard sentence would mislead) and note, from states.js.
 	'states' => array(
+		'GA' => array( 'note' => 'Vota en cualquier lugar de votación anticipada de tu condado. El horario cambia según el lugar; My Voter Page lo publica.' ),
 		'AL' => array( 'note' => 'Si no puedes votar en persona el Día de las Elecciones, es posible que cumplas los requisitos para votar con una boleta de voto en ausencia.' ),
 		'AK' => array( 'note' => 'Los horarios varían según el lugar. Busca el centro de votación anticipada más cercano.' ),
 		'CA' => array( 'ribbon' => 'POR CORREO O EN PERSONA HASTA EL 3 NOV', 'note' => 'Todos los votantes inscritos reciben una boleta por correo. Devuélvela a más tardar el Día de las Elecciones; si la envías por correo, debe tener matasellos del 3 de noviembre o antes.' ),

@@ -1,0 +1,239 @@
+{
+ "abbr": "NY",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "elections.ny.gov": {
+   "en": "the New York State Board of Elections",
+   "es": "la Junta Electoral del Estado de New York"
+  },
+  "www.nysenate.gov": {
+   "en": "New York Election Law",
+   "es": "la Ley Electoral de New York"
+  },
+  "elections.ulstercountyny.gov": {
+   "en": "the Ulster County Board of Elections",
+   "es": "la Junta Electoral del condado de Ulster"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "Your application must reach a board of elections by Saturday, October 24, 2026, by mail or in person. New York has no Election Day registration.",
+   "es": "Tu solicitud debe llegar a una junta electoral (board of elections) a más tardar el sábado 24 de octubre de 2026, por correo o en persona. New York no tiene registro el Día de las Elecciones.",
+   "src": "https://elections.ny.gov/registration-and-voting-deadlines",
+   "checked": "2026-10-21",
+   "quote": "Applications must be received by a board of elections no later than October 24, 2026 to be eligible to vote in the General Election.",
+   "status": "verified",
+   "until": "2026-10-24",
+   "en_after": "Registration closed October 24, 2026. Not sure you're registered? Check the state's voter lookup.",
+   "es_after": "El registro cerró el 24 de octubre de 2026. ¿No sabes si estás registrado? Revisa la búsqueda de votantes del estado."
+  },
+  "mail_request": {
+   "en": "To get an early mail ballot by mail, your county board of elections must receive your application by Saturday, October 24, 2026. To pick one up in person, apply by Monday, November 2.",
+   "es": "Para recibir una boleta anticipada por correo (early mail ballot), la junta electoral de tu condado debe recibir tu solicitud a más tardar el sábado 24 de octubre de 2026. Para recogerla en persona, solicítala a más tardar el lunes 2 de noviembre.",
+   "src": "https://elections.ny.gov/request-ballot",
+   "checked": "2026-10-21",
+   "quote": "Applications requesting to receive an early mail ballot must be received by the board of elections in your county no later than ten days before the election.",
+   "status": "verified",
+   "until": "2026-10-24",
+   "en_after": "Applications to get a ballot by mail closed October 24. You can still apply in person at your county board of elections through Monday, November 2.",
+   "es_after": "Las solicitudes para recibir la boleta por correo cerraron el 24 de octubre. Todavía puedes solicitarla en persona en la junta electoral de tu condado hasta el lunes 2 de noviembre."
+  },
+  "mail_return": {
+   "en": "Mail: postmarked by Tuesday, November 3, and received by Tuesday, November 10, 2026. In person: at your county board of elections or any poll site in your county by 9 p.m. on November 3, or at an early voting site in your county from October 24 to November 1.",
+   "es": "Por correo: con matasellos del martes 3 de noviembre o antes, y recibida a más tardar el martes 10 de noviembre de 2026. En persona: en la junta electoral de tu condado o en cualquier lugar de votación de tu condado a más tardar a las 9 p. m. del 3 de noviembre, o en un centro de votación anticipada de tu condado del 24 de octubre al 1 de noviembre.",
+   "src": "https://elections.ny.gov/request-ballot",
+   "checked": "2026-10-21",
+   "quote": "Put it in the mail ensuring it receives a postmark no later than November 3rd. Must be received by the County Board of Elections no later than November 10th.",
+   "status": "verified"
+  },
+  "early_hours": {
+   "en": "Hours are set by your county board of elections. Check your county's schedule before you go.",
+   "es": "El horario lo fija la junta electoral de tu condado. Revisa el horario de tu condado antes de ir.",
+   "src": "https://elections.ny.gov/early-voting",
+   "checked": "2026-10-21",
+   "quote": "Early Voting hours of operation are provided by local County Boards of Elections.",
+   "status": "verified"
+  },
+  "cure": {
+   "status": "missing",
+   "notes": "The Board of Elections' cure link (elections.ny.gov/notice-and-cure-process) redirects to a 2021 guidance PDF; no 2026 cure deadline was found on an official page that could be read."
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "During early voting, October 24 to November 1, you can go to any of your assigned early voting centers in your county. In New York City you're assigned one early voting site. You mark and scan your ballot just like on Election Day.",
+   "es": "Durante la votación anticipada, del 24 de octubre al 1 de noviembre, puedes ir a cualquiera de los centros de votación anticipada que te asignaron en tu condado. En la ciudad de New York te asignan un solo centro de votación anticipada. Marcas y escaneas tu boleta igual que el Día de las Elecciones.",
+   "src": "https://elections.ny.gov/early-voting",
+   "checked": "2026-10-21",
+   "quote": "Voters may visit any of their assigned Early Voting Centers in their county, except in New York City, where voters are assigned to one early voting site.",
+   "status": "verified"
+  },
+  "first_time": {
+   "en": "Use the Board of Elections' poll site and voter lookup to confirm you're registered and to find both your early voting site and your Election Day polling place.",
+   "es": "Usa la búsqueda de votantes y lugares de votación de la Junta Electoral para confirmar que estás registrado y encontrar tu centro de votación anticipada y tu lugar de votación del Día de las Elecciones.",
+   "src": "https://elections.ny.gov/ways-vote",
+   "checked": "2026-10-21",
+   "quote": "Use the Board of Elections' poll site and voter look up to confirm your registration status, and find your election day and early voting polling place.",
+   "status": "verified"
+  }
+ },
+ "where": {
+  "locator_url": "https://voterlookup.elections.ny.gov/",
+  "locator_label": {
+   "en": "Poll site and voter lookup (New York State Board of Elections)",
+   "es": "Búsqueda de votantes y lugares de votación (Junta Electoral del Estado de New York)"
+  },
+  "local_offices_url": "https://publicreporting.elections.ny.gov/CountyBoardRoster/CountyBoardRoster",
+  "rule": {
+   "en": "At the wrong poll site, or not in the poll book? Poll workers will tell you your correct polling place. If your record is missing there, you can sign an affidavit and vote an affidavit ballot.",
+   "es": "¿Estás en el lugar de votación equivocado o no apareces en el registro? Los trabajadores electorales te dirán cuál es tu lugar de votación correcto. Si ahí no aparece tu registro, puedes firmar una declaración jurada y votar con una boleta de declaración jurada (affidavit ballot).",
+   "src": "https://www.nysenate.gov/legislation/laws/ELN/8-302",
+   "checked": "2026-10-21",
+   "quote": "advise the voter of the correct polling place and election district for the residence address provided by the voter to such poll clerk or election inspector.",
+   "status": "verified"
+  }
+ },
+ "id": {
+  "rule": "no_id",
+  "accepted": {
+   "en": [
+    "A current and valid photo ID",
+    "A current utility bill",
+    "A bank statement",
+    "A government check or paycheck",
+    "Another government document with your name and address"
+   ],
+   "es": [
+    "Una identificación con foto vigente y válida",
+    "Un recibo de servicios reciente",
+    "Un estado de cuenta bancario",
+    "Un cheque del gobierno o un talón de pago",
+    "Otro documento del gobierno con tu nombre y dirección"
+   ],
+   "src": "https://www.nysenate.gov/legislation/laws/ELN/8-303",
+   "checked": "2026-10-21",
+   "quote": "presents to the appropriate election inspector, clerk or coordinator a copy of a current utility bill, bank statement, government check, paycheck, or other government document that shows the name and address of the voter",
+   "status": "verified"
+  },
+  "expired": {
+   "en": "Only some first-time voters need ID: those who registered by mail and haven't voted for a federal office in their county before. A photo ID has to be current and valid.",
+   "es": "Solo algunos votantes nuevos necesitan identificación: quienes se registraron por correo y nunca han votado por un cargo federal en su condado. Una identificación con foto debe estar vigente y ser válida.",
+   "src": "https://www.nysenate.gov/legislation/laws/ELN/8-303",
+   "checked": "2026-10-21",
+   "quote": "presents to the appropriate election inspector, clerk or coordinator a current and valid photo identification",
+   "status": "verified"
+  },
+  "without": {
+   "en": "Asked for ID and don't have it? You can still vote an affidavit ballot, and it counts as long as you're otherwise an eligible voter.",
+   "es": "¿Te piden identificación y no la tienes? Igual puedes votar con una boleta de declaración jurada (affidavit ballot), y se cuenta siempre que cumplas los demás requisitos para votar.",
+   "src": "https://www.nysenate.gov/legislation/laws/ELN/8-303",
+   "checked": "2026-10-21",
+   "quote": "may cast an affidavit ballot, and notwithstanding this section of law, such affidavit ballot shall be duly cast and counted",
+   "status": "verified"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "Any registered voter can apply for an early mail ballot, no reason needed. Apply online, in person at your county board of elections, or send someone to drop off your application and pick up your ballot.",
+   "es": "Cualquier votante registrado puede solicitar una boleta anticipada por correo (early mail ballot), sin dar una razón. Solicítala en línea, en persona en la junta electoral de tu condado, o manda a alguien a entregar tu solicitud y recoger tu boleta.",
+   "src": "https://elections.ny.gov/request-ballot",
+   "checked": "2026-10-21",
+   "quote": "Any registered voter may apply for an early mail ballot.",
+   "status": "verified"
+  },
+  "witness": {
+   "en": "Put your ballot in the Security Envelope, then sign and date the outside of that envelope and seal it. It goes in the prepaid Return Envelope, so no stamp needed.",
+   "es": "Mete tu boleta en el sobre de seguridad (Security Envelope), luego firma y pon la fecha afuera de ese sobre y séllalo. Va dentro del sobre de devolución con porte pagado, así que no necesita estampilla.",
+   "src": "https://elections.ny.gov/request-ballot",
+   "checked": "2026-10-21",
+   "quote": "Sign and date the outside of the Security Envelope.",
+   "status": "verified"
+  },
+  "track_url": "https://voterlookup.elections.ny.gov/",
+  "cure": {
+   "en": "Some envelope mistakes can be fixed. If yours has one, your county board of elections will send you a notice, and you fix it by filing a cure statement.",
+   "es": "Algunos errores en el sobre se pueden corregir. Si el tuyo tiene uno, la junta electoral de tu condado te enviará un aviso, y lo corriges presentando una declaración de corrección (cure statement).",
+   "src": "https://elections.ny.gov/request-ballot",
+   "checked": "2026-10-21",
+   "quote": "If your ballot envelope has a curable defect, you will receive a notice from the board of elections.",
+   "status": "verified"
+  },
+  "dropbox": {
+   "en": "You can hand in your ballot at any early voting site in your county from October 24 to November 1, or at any poll site in your county or your county board of elections by 9 p.m. on November 3.",
+   "es": "Puedes entregar tu boleta en cualquier centro de votación anticipada de tu condado del 24 de octubre al 1 de noviembre, o en cualquier lugar de votación de tu condado o en la junta electoral de tu condado a más tardar a las 9 p. m. del 3 de noviembre.",
+   "src": "https://elections.ny.gov/request-ballot",
+   "checked": "2026-10-21",
+   "quote": "Bringing it to an early voting poll site in your county between October 24th and November 1st.",
+   "status": "verified"
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "en": "Leave the campaign buttons at home. While polls are open, no political banner, button, poster or placard is allowed in the polling place or within 100 feet of its entrances.",
+   "es": "Deja en casa los botones de campaña. Mientras los lugares de votación están abiertos, no se permite ninguna pancarta, botón, póster ni letrero político dentro del lugar de votación ni a menos de 100 pies de sus entradas.",
+   "src": "https://www.nysenate.gov/legislation/laws/ELN/8-104",
+   "checked": "2026-10-21",
+   "quote": "no political banner, button, poster or placard shall be allowed in or upon the polling place or within such one hundred foot radial.",
+   "status": "verified"
+  },
+  "phone": {
+   "status": "missing",
+   "notes": "Election Law 8-104 does not address phones. The ballot selfie rule (Election Law 17-130) is already in the FAQ."
+  },
+  "line": {
+   "en": "Polls close at 9 p.m. If you're in line or inside the polling place by then, you'll be allowed to vote.",
+   "es": "Los lugares de votación cierran a las 9 p. m. Si estás en la fila o dentro del lugar de votación a esa hora, te dejarán votar.",
+   "src": "https://www.nysenate.gov/legislation/laws/ELN/8-104",
+   "checked": "2026-10-21",
+   "quote": "Voters entitled to vote who are on line or in the polling place at the time fixed by law for the closing of the polls shall be allowed to vote.",
+   "status": "verified"
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "en": "Ulster County's Board of Elections runs a student I Voted sticker contest, now in its sixth year. Students ages 9 to 18 send in designs, the public votes on the finalists, and the winning sticker goes to every voter in the county on November 3, 2026.",
+   "es": "La Junta Electoral del condado de Ulster organiza un concurso de stickers de I Voted para estudiantes, que ya va en su sexto año. Estudiantes de 9 a 18 años mandan sus diseños, el público vota por los finalistas, y el sticker ganador se le da a cada votante del condado el 3 de noviembre de 2026.",
+   "src": "https://elections.ulstercountyny.gov/i-voted-contest",
+   "checked": "2026-10-21",
+   "quote": "The design with the most votes will be produced and distributed to all voters at the November 3, 2026 General Election.",
+   "status": "verified"
+  }
+ },
+ "faq": {
+  "provisional": {
+   "en": "New York calls it an affidavit ballot. You vote one when your record is missing from the poll book at your correct polling place, or you moved within the state and didn't update your address. You sign a sworn statement that you're registered and still qualified to vote there.",
+   "es": "En New York se llama boleta de declaración jurada (affidavit ballot). La votas cuando tu registro no aparece en el libro de votantes de tu lugar de votación correcto, o cuando te mudaste dentro del estado y no actualizaste tu dirección. Firmas una declaración jurada de que estás registrado y todavía tienes derecho a votar ahí.",
+   "src": "https://www.nysenate.gov/legislation/laws/ELN/8-302",
+   "checked": "2026-10-21",
+   "quote": "They may swear to and subscribe an affidavit stating that they have duly registered to vote, the address in such election district from which they registered, that they remain a duly qualified voter in such election district",
+   "status": "verified"
+  },
+  "line": {
+   "en": "You still get to vote. Anyone eligible who is in line or inside the polling place at closing time, 9 p.m., must be allowed to vote.",
+   "es": "Igual puedes votar. Cualquier persona con derecho a votar que esté en la fila o dentro del lugar de votación a la hora de cierre, las 9 p. m., debe poder votar.",
+   "src": "https://www.nysenate.gov/legislation/laws/ELN/8-104",
+   "checked": "2026-10-21",
+   "quote": "Voters entitled to vote who are on line or in the polling place at the time fixed by law for the closing of the polls shall be allowed to vote.",
+   "status": "verified"
+  },
+  "track": {
+   "en": "Look up your ballot with the Board of Elections' Poll Site Search, Voter Registration, and Mail Ballot Tracker at voterlookup.elections.ny.gov.",
+   "es": "Busca tu boleta en la herramienta de la Junta Electoral para buscar lugares de votación, registro y rastrear boletas por correo, en voterlookup.elections.ny.gov.",
+   "src": "https://elections.ny.gov/request-ballot",
+   "checked": "2026-10-21",
+   "quote": "Voters can track their early mail ballot via the Board of Elections' Poll Site Search, Voter Registration, and Mail Ballot Tracker available at https://voterlookup.elections.ny.gov/",
+   "status": "verified"
+  },
+  "late_mail": {
+   "en": "It has to be postmarked by November 3 and reach your county board of elections by November 10. The Postal Service suggests mailing about seven days ahead. Mailing on Election Day? Check the box's last pickup time, or hand it in at a poll site in your county by 9 p.m. instead.",
+   "es": "Debe tener matasellos del 3 de noviembre o antes y llegar a la junta electoral de tu condado a más tardar el 10 de noviembre. El Servicio Postal sugiere enviarla unos siete días antes. ¿La mandas el Día de las Elecciones? Revisa la última hora de recolección del buzón, o mejor entrégala en un lugar de votación de tu condado antes de las 9 p. m.",
+   "src": "https://elections.ny.gov/request-ballot",
+   "checked": "2026-10-21",
+   "quote": "ballots entered after the last posted collection time will not be postmarked until the following business day.",
+   "status": "verified"
+  }
+ },
+ "notes": "Read October 21, 2026 in Chrome (elections.ny.gov and nysenate.gov return 403 to curl and WebFetch): Early Voting, Registration and Voting Deadlines, Request a Ballot, Ways to Vote; Election Law 8-104 (electioneering, line rule), 8-302 (affidavit ballots), 8-303 (first-time voter ID). The 2026 Political Calendar is a PDF that could not be read in this session, so the cure deadline was not found; the Board's cure page redirects to a 2021 guidance PDF. The early mail ballot in-person deadline ('no later than the day before the election') is November 2. No phone rule found. Sticker tradition is Ulster County's official contest page; the winner is named only in news reports, so it is not stated."
+}

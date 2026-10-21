@@ -1,0 +1,223 @@
+{
+ "abbr": "PA",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "www.pa.gov": {
+   "en": "the Pennsylvania Department of State",
+   "es": "el Departamento de Estado de Pennsylvania"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "Registration closed October 19, 2026. Pennsylvania has no Election Day registration.",
+   "es": "El registro cerró el 19 de octubre de 2026. Pennsylvania no tiene registro el Día de las Elecciones.",
+   "src": "https://www.pa.gov/agencies/vote/elections/upcoming-elections",
+   "checked": "2026-10-21",
+   "quote": "Last day to register to vote : Oct. 19, 2026",
+   "status": "verified"
+  },
+  "mail_request": {
+   "en": "Your county election office must receive your application by 5 p.m. on Tuesday, October 27, 2026. That is also the last day to apply in person and vote your mail ballot in the same visit.",
+   "es": "La oficina electoral de tu condado debe recibir tu solicitud a más tardar a las 5 p. m. del martes 27 de octubre de 2026. Ese también es el último día para solicitarla en persona y votar tu boleta por correo en la misma visita.",
+   "src": "https://www.pa.gov/agencies/vote/voter-support/mail-in-and-absentee-ballot",
+   "checked": "2026-10-21",
+   "quote": "5 p.m. Oct. 27: Your APPLICATION for a mail-in or absentee ballot must be received by your county election office .",
+   "status": "verified",
+   "until": "2026-10-27",
+   "en_after": "Applications closed at 5 p.m. on October 27. Had an emergency since then, like a sudden illness or a last-minute trip? Ask your county election office about an emergency absentee ballot before 8 p.m. on Election Day.",
+   "es_after": "Las solicitudes cerraron a las 5 p. m. del 27 de octubre. ¿Tuviste una emergencia desde entonces, como una enfermedad repentina o un viaje de último momento? Pregunta en la oficina electoral de tu condado por una boleta de emergencia para votar en ausencia (emergency absentee ballot) antes de las 8 p. m. del Día de las Elecciones."
+  },
+  "mail_return": {
+   "en": "Your county election office must have it in hand by 8 p.m. on Tuesday, November 3. A postmark by Election Day isn't enough, so return it as soon as you can. Overseas and military deadlines differ.",
+   "es": "La oficina electoral de tu condado debe tenerla en sus manos a más tardar a las 8 p. m. del martes 3 de noviembre. No basta con el matasellos del Día de las Elecciones, así que devuélvela lo antes posible. Los plazos para votantes en el extranjero y militares son distintos.",
+   "src": "https://www.pa.gov/agencies/vote/voter-support/mail-in-and-absentee-ballot",
+   "checked": "2026-10-21",
+   "quote": "8 p.m. Nov. 3: Your county election office must RECEIVE your completed mail ballot by this time. A postmark by 8 p.m. Nov. 3 is not sufficient.",
+   "status": "verified"
+  },
+  "early_hours": {
+   "status": "missing",
+   "notes": "Pennsylvania has no early voting. The in-person mail ballot is done at county election offices during their own hours; the Ballot Return Locations page lists each county's hours, but no statewide rule."
+  },
+  "cure": {
+   "status": "missing",
+   "notes": "No Department of State page read on October 21 gives a statewide process or deadline for fixing a mail ballot problem."
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "Want to vote before Election Day? Once your county's ballots are ready, go to your county election office, apply for a mail ballot, fill it out and hand it in, all in one visit. Bring your PennDOT ID number or the last four digits of your Social Security number. Call or check your county's website first to make sure ballots are ready.",
+   "es": "¿Quieres votar antes del Día de las Elecciones? Cuando las boletas de tu condado estén listas, ve a la oficina electoral de tu condado, solicita una boleta por correo, llénala y entrégala, todo en una sola visita. Lleva tu número de identificación de PennDOT o los últimos cuatro dígitos de tu número de Seguro Social. Primero llama o revisa el sitio web de tu condado para confirmar que las boletas estén listas.",
+   "src": "https://www.pa.gov/agencies/vote/voter-support/mail-in-and-absentee-ballot/mail-ballot-before-election-day",
+   "checked": "2026-10-21",
+   "quote": "You will need your PennDOT ID number or the last 4 digits of your Social Security number.",
+   "status": "verified"
+  },
+  "first_time": {
+   "en": "Voting at your polling place for the first time, or at a new one after a move? Look up your polling place and bring an ID. It doesn't have to have a photo.",
+   "es": "¿Vas a votar por primera vez en tu lugar de votación, o en uno nuevo después de mudarte? Busca tu lugar de votación y lleva una identificación. No tiene que tener foto.",
+   "src": "https://www.pa.gov/agencies/vote/voter-support/new-voters",
+   "checked": "2026-10-21",
+   "quote": "The first time you vote, you must bring a photo or non-photo ID.",
+   "status": "verified"
+  }
+ },
+ "where": {
+  "locator_url": "https://www.pavoterservices.pa.gov/Pages/PollingPlaceInfo.aspx",
+  "locator_label": {
+   "en": "Find Your Polling Place (Pennsylvania Department of State)",
+   "es": "Buscador oficial de lugares de votación (Departamento de Estado de Pennsylvania)"
+  },
+  "local_offices_url": "https://www.pa.gov/agencies/vote/contact-us/contact-your-election-officials",
+  "rule": {
+   "en": "On Election Day, go to your own polling place. At the wrong one, you can only vote a provisional ballot, and only if you believe you're eligible there.",
+   "es": "El Día de las Elecciones, ve a tu propio lugar de votación. Si vas a uno equivocado, solo puedes votar con una boleta provisional, y solo si crees que tienes derecho a votar ahí.",
+   "src": "https://www.pa.gov/agencies/vote/voter-support/elections-faqs",
+   "checked": "2026-10-21",
+   "quote": "You must go to your correct polling place to vote. However, if you believe you are eligible to vote at that polling place, you may vote using a provisional ballot .",
+   "status": "verified"
+  }
+ },
+ "id": {
+  "rule": "no_id",
+  "accepted": {
+   "en": [
+    "Pennsylvania driver's license or PennDOT ID card",
+    "ID from any Pennsylvania state agency or the U.S. government",
+    "U.S. passport or U.S. Armed Forces ID",
+    "Student ID, including a digital one",
+    "Employee ID",
+    "A voter registration card from your county",
+    "Firearm permit",
+    "Current utility bill or bank statement",
+    "Paycheck or government check"
+   ],
+   "es": [
+    "Licencia de conducir de Pennsylvania o tarjeta de identificación de PennDOT",
+    "Identificación de cualquier agencia estatal de Pennsylvania o del gobierno de EE. UU.",
+    "Pasaporte de EE. UU. o identificación de las Fuerzas Armadas de EE. UU.",
+    "Identificación de estudiante, también digital",
+    "Identificación de empleado",
+    "Una tarjeta de registro de votante de tu condado",
+    "Permiso de armas de fuego (firearm permit)",
+    "Recibo de servicios o estado de cuenta bancario reciente",
+    "Talón de pago o cheque del gobierno"
+   ],
+   "src": "https://www.pa.gov/agencies/vote/voter-support/new-voters",
+   "checked": "2026-10-21",
+   "quote": "If you do not have a photo ID, you can use one of the following so long as it includes your name and address:",
+   "status": "verified"
+  },
+  "expired": {
+   "en": "Only first-time voters at a polling place need ID. A photo ID can't be expired, canceled or revoked. An ID without a photo needs your name and address on it.",
+   "es": "Solo quienes votan por primera vez en un lugar de votación necesitan identificación. Una identificación con foto no puede estar vencida, cancelada ni revocada. Una identificación sin foto debe tener tu nombre y dirección.",
+   "src": "https://www.pa.gov/agencies/vote/voter-support/new-voters",
+   "checked": "2026-10-21",
+   "quote": "You may use one of the following forms of photo identification , so long as it is not expired, canceled, or revoked:",
+   "status": "verified"
+  },
+  "without": {
+   "en": "Asked for ID and can't show one? You can vote a provisional ballot, and your county decides within 7 days after the election whether it counts.",
+   "es": "¿Te piden identificación y no puedes mostrarla? Puedes votar con una boleta provisional, y tu condado decide en los 7 días después de la elección si se cuenta.",
+   "src": "https://www.pa.gov/agencies/vote/voter-support/provisional-ballot",
+   "checked": "2026-10-21",
+   "quote": "You are required to show ID, but cannot show ID.",
+   "status": "verified"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "Any registered voter can vote by mail, and you don't need a reason. Apply online, by mail or at your county election office.",
+   "es": "Cualquier votante registrado puede votar por correo, y no necesitas dar una razón. Solicita tu boleta en línea, por correo o en la oficina electoral de tu condado.",
+   "src": "https://www.pa.gov/agencies/vote/voter-support/mail-in-and-absentee-ballot",
+   "checked": "2026-10-21",
+   "quote": "Mail-in ballot: Any registered voter may apply to vote by mail in the next election. You do not have to provide a reason for why you want to vote by mail ballot.",
+   "status": "verified"
+  },
+  "witness": {
+   "en": "Seal your ballot in the yellow envelope, put that in the outer return envelope, then sign and date the declaration on the outside. Skip the yellow envelope or the signature and date, and your ballot won't count.",
+   "es": "Sella tu boleta en el sobre amarillo, mételo en el sobre exterior de devolución y luego firma y pon la fecha en la declaración de afuera. Si no usas el sobre amarillo o no firmas y pones la fecha, tu boleta no se cuenta.",
+   "src": "https://www.pa.gov/agencies/vote/voter-support/mail-in-and-absentee-ballot",
+   "checked": "2026-10-21",
+   "quote": "If you do not complete the declaration on the return envelope your ballot will not be counted.",
+   "status": "verified"
+  },
+  "track_url": "https://www.pavoterservices.pa.gov/Pages/BallotTracking.aspx",
+  "cure": {
+   "status": "missing",
+   "notes": "No statewide cure process or deadline on the pages read."
+  },
+  "dropbox": {
+   "en": "Return it by mail, at a drop box, at your county election office or at another official location your county lists. You have to return your own ballot, unless you have a disability and named someone in writing to deliver it.",
+   "es": "Devuélvela por correo, en un buzón de entrega, en la oficina electoral de tu condado o en otro lugar oficial que indique tu condado. Tienes que entregar tu propia boleta, a menos que tengas una discapacidad y hayas nombrado por escrito a alguien para que la entregue.",
+   "src": "https://www.pa.gov/agencies/vote/voter-support/mail-in-and-absentee-ballot/return-ballot",
+   "checked": "2026-10-21",
+   "quote": "Pennsylvania voters have options on how to return their mail ballot: by mail, at a drop box, at their county election office, or other officially designated location.",
+   "status": "verified"
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "en": "You can wear a shirt, button or hat for a candidate when you go in to vote. Inside, you can't campaign or ask anyone to back a candidate. Campaign workers and signs stay at least 10 feet from the voting room entrance.",
+   "es": "Puedes llevar una camiseta, un botón o una gorra de un candidato cuando entras a votar. Adentro no puedes hacer campaña ni pedirle a nadie que apoye a un candidato. Los trabajadores y letreros de campaña deben quedarse a por lo menos 10 pies de la entrada de la sala de votación.",
+   "src": "https://www.pa.gov/agencies/vote/voter-support/rules-at-the-polls",
+   "checked": "2026-10-21",
+   "quote": "Voters may wear clothing, buttons, or hats that show support for a candidate when they enter the polling place to vote.",
+   "status": "verified"
+  },
+  "phone": {
+   "status": "missing",
+   "notes": "Rules at the Polls and the FAQ say nothing about phones or photos in the polling place."
+  },
+  "line": {
+   "en": "Polls close at 8 p.m. If you're in line by then, stay in line. You can vote.",
+   "es": "Los lugares de votación cierran a las 8 p. m. Si estás en la fila para esa hora, quédate en la fila. Puedes votar.",
+   "src": "https://www.pa.gov/agencies/vote/voter-support/rules-at-the-polls",
+   "checked": "2026-10-21",
+   "quote": "Polls are open from 7 a.m. to 8 p.m. on Election Day. Remember, if you are in line by 8 p.m., you can vote.",
+   "status": "verified"
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "status": "missing"
+  }
+ },
+ "faq": {
+  "provisional": {
+   "en": "It's a ballot you vote when your eligibility isn't clear at the polls, for example if your name isn't in the poll book. Your county decides within 7 days after the election, and you can look up whether it counted starting 7 days after.",
+   "es": "Es una boleta que votas cuando no está claro en el lugar de votación si tienes derecho a votar, por ejemplo si tu nombre no aparece en el registro. Tu condado decide en los 7 días después de la elección, y puedes consultar si se contó a partir de 7 días después.",
+   "src": "https://www.pa.gov/agencies/vote/voter-support/provisional-ballot",
+   "checked": "2026-10-21",
+   "quote": "Within 7 days after the election, the county board of elections will decide whether you were eligible to vote at the election district where you voted the provisional ballot.",
+   "status": "verified"
+  },
+  "line": {
+   "en": "You can still vote. If you're in line by 8 p.m., you'll be allowed to cast your ballot.",
+   "es": "Todavía puedes votar. Si estás en la fila a las 8 p. m., te dejarán emitir tu voto.",
+   "src": "https://www.pa.gov/agencies/vote/voter-support/new-voters",
+   "checked": "2026-10-21",
+   "quote": "If you are in line at or before 8 p.m. (when polls close), you will be allowed to cast your vote.",
+   "status": "verified"
+  },
+  "track": {
+   "en": "Check your ballot status online with the Department of State. If you gave your county an email address, you may also get an email when your ballot arrives.",
+   "es": "Revisa el estado de tu boleta en línea con el Departamento de Estado. Si le diste a tu condado un correo electrónico, también podrías recibir un aviso cuando llegue tu boleta.",
+   "src": "https://www.pa.gov/agencies/vote/voter-support/mail-in-and-absentee-ballot",
+   "checked": "2026-10-21",
+   "quote": "you may receive an email notification when your returned ballot is received, as well as information about your ballot status, depending on county practices.",
+   "status": "verified"
+  },
+  "unsigned": {
+   "en": "Check before you send it: if the outer envelope isn't signed and dated, your ballot won't be counted. Questions? Call your county election office.",
+   "es": "Revisa antes de enviarla: si el sobre exterior no tiene tu firma y la fecha, tu boleta no se cuenta. ¿Tienes dudas? Llama a la oficina electoral de tu condado.",
+   "src": "https://www.pa.gov/agencies/vote/voter-support/mail-in-and-absentee-ballot/mail-ballot-before-election-day",
+   "checked": "2026-10-21",
+   "quote": "If you do not sign and date the outer return envelope, your ballot will not be counted.",
+   "status": "verified"
+  }
+ },
+ "notes": "Read October 21, 2026 on pa.gov (the vote.pa.gov pages): Upcoming Elections, Mail-in and Absentee Ballot, On-Demand Mail Ballot Voting, Ballot Return Locations, Rules at the Polls, Provisional Ballot, First Time Voters (new-voters), FAQ. Pennsylvania has no early voting; the in-person mail ballot (states.js) is the early option, and county office hours are listed per county, not statewide, so early_hours is missing. No statewide cure process or deadline, no phone or photo rule, and no ballot selfie rule were found. Ballot tracking and polling place lookup are on pavoterservices.pa.gov, linked from pa.gov. No official I voted sticker program was found. ID rule follows docs/faq-sources.json (no_id: only first-time voters at a polling place show ID, photo or non-photo)."
+}
