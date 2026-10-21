@@ -1,0 +1,80 @@
+# Daily rebuild and deploy (October 21, 2026). Some page text depends on the date: the home page's
+# "Early voting is open today in N states", facts with an `until` date (Washington registration turns to
+# past tense after October 26), and ribbons that change when a state's window closes. The static build
+# freezes that text, so this rebuilds every morning at about 6 a.m. Central and on demand.
+# The repo is public, so these runs don't count against the account's Actions minutes.
+#
+# Secrets (repository settings, never in this file): CLOUDFLARE_API_TOKEN (Cloudflare Pages: Edit) and
+# CLOUDFLARE_ACCOUNT_ID.
+name: Daily build
+
+on:
+  schedule:
+    - cron: '5 11 * * *'   # 11:05 UTC: 6:05 a.m. CDT through November 1, 5:05 a.m. CST after
+  workflow_dispatch:
+
+permissions:
+  contents: write   # commit build/lastmod.json and build/indexnow-sent.json back
+
+concurrency:
+  group: daily-build
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      TZ: America/Chicago
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          coverage: none
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Validate facts
+        run: python3 -I build/facts_text.py --check
+
+      - name: Build
+        run: |
+          python3 -I build/facts_text.py
+          python3 -I build/build_static.py
+
+      - name: QA the build locally
+        run: |
+          python3 -m http.server 8792 -d dist >/dev/null 2>&1 &
+          sleep 2
+          python3 -I scripts/qa_seo.py --base http://127.0.0.1:8792/ --no-legacy
+          python3 -I scripts/qa_es.py --base http://127.0.0.1:8792/
+          python3 -I scripts/qa_facts.py --base http://127.0.0.1:8792/
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist --project-name votesticker --branch main --commit-dirty=true
+
+      - name: QA live
+        run: |
+          sleep 10
+          python3 -I scripts/qa_seo.py --no-legacy
+          python3 -I scripts/qa_es.py
+          python3 -I scripts/qa_facts.py --base https://votesticker.org/
+
+      - name: Tell search engines what changed
+        run: python3 -I scripts/indexnow.py
+
+      - name: Commit build records
+        run: |
+          git config user.name "votesticker-daily"
+          git config user.email "actions@users.noreply.github.com"
+          git add build/lastmod.json build/indexnow-sent.json site/facts-states.php
+          git diff --cached --quiet || git commit -m "Daily build $(date +%F)"
+          git push
