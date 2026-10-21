@@ -122,7 +122,7 @@ def main():
     _, js = fetch(urljoin(base, 'states.js'))
     rows = [json.loads(l.strip().rstrip(',')) for l in js.splitlines() if l.strip().startswith('{"abbr"')]
     slug = lambda n: re.sub(r'[^a-z]+', '-', n.lower()).strip('-')
-    paths = [''] + [slug(r['name']) + '/' for r in rows]
+    paths = [''] + [slug(r['name']) + '/' for r in rows] + ['about/']
     gated = None
     links = set()
     for p in paths:

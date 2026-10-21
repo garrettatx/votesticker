@@ -65,6 +65,8 @@ def main():
             raise SystemExit(f'missing state folder site/{s}/ or site/es/{s}/ (run build/state_pages.py)')
         pages[s + '/'] = render(s)
         pages['es/' + s + '/'] = render('es/' + s)
+    pages['about/'] = render('about')
+    pages['es/about/'] = render('es/about')
     for path, html in pages.items():
         d = DIST / path
         d.mkdir(parents=True, exist_ok=True)

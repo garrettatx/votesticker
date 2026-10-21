@@ -42,7 +42,7 @@ for m in re.finditer(r'"abbr": "([A-Z]{2})", "name": "([^"]+)"', (ROOT / 'site' 
 
 
 def page(path):
-    with urllib.request.urlopen(BASE + path) as f:
+    with urllib.request.urlopen(urllib.request.Request(BASE + path, headers={'User-Agent': 'votesticker-qa'})) as f:
         return f.read().decode()
 
 

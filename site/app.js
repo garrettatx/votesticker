@@ -836,6 +836,7 @@
 		language();
 		spanishArt();
 		finder();
+		if (!$('maker')) { return; }  // the About page: header and footer only
 		var headSel = $('headline');
 		$('circle').checked = state.circle;
 		document.body.classList.toggle('as-circle', state.circle);

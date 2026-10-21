@@ -11,7 +11,7 @@ return array(
 		),
 		'dates.mail_request' => array(
 			'en' => 'Your county\'s early voting clerk must receive your application by Friday, October 23, 2026.',
-			'es' => 'El encargado de la votación anticipada de tu condado (early voting clerk) debe recibir tu solicitud a más tardar el viernes 23 de octubre de 2026.',
+			'es' => 'La oficina electoral de tu condado debe recibir tu solicitud a más tardar el viernes 23 de octubre de 2026.',
 			'src' => 'https://www.sos.state.tx.us/elections/voter/important-election-dates.shtml',
 			'checked' => '2026-10-21',
 		),

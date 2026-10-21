@@ -31,7 +31,7 @@ def main():
     assert len(rows) == 51, len(rows)
     slugs = {slug(r['name']) for r in rows}
     for d in SITE.iterdir():  # drop folders for states that no longer exist (none expected)
-        if d.is_dir() and (d / 'index.php').exists() and d.name not in slugs and d.name != 'es':
+        if d.is_dir() and (d / 'index.php').exists() and d.name not in slugs and d.name not in ('es', 'about'):
             raise SystemExit(f'unexpected state folder {d.name}')
     for r in rows:
         d = SITE / slug(r['name'])
