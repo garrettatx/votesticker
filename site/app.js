@@ -187,7 +187,7 @@
 		if (headline && HEADLINES[headline] && HEADLINES[headline].stateLine) { var nm = HEADLINES[headline].es ? nameOf(st) : st.name; return (nm.length <= 10 ? nm.toUpperCase() : st.abbr) + ' ' + ELECTION.day.slice(0, 4); }
 		if (!hasEarly(st)) { return electionLine(); }
 		if (st.dateLine) { return st.dateLine; }
-		if (st.kind === 'mail') { return 'DUE ' + shortDate(day(st.end)); }
+		if (st.kind === 'mail') { return st.dateLineMail || 'DUE ' + shortDate(day(st.end)); }
 		if (!st.start || !st.end) { return electionLine(); }
 		return rangeLine(day(st.start), day(st.end));
 	}

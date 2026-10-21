@@ -119,7 +119,8 @@ function vote_meta( $st ) {
 	$grab = $n ? 'Grab a ready-made sticker or make your own, then set it as your profile picture.' : 'Make your sticker, then set it as your profile picture.';
 	if ( 'mail' === $kind ) {
 		$tag = 'Vote by Mail, Due ' . vote_short( $st['end'] );
-		$ribbon = 'VOTE BY MAIL, DUE ' . strtoupper( vote_short( $st['end'] ) );
+		// The state's own return rule where it's verified (drop box by 8 p.m., received by 7 p.m.): states.js `ribbon`.
+		$ribbon = $st['ribbon'] ?? 'VOTE BY MAIL, DUE ' . strtoupper( vote_short( $st['end'] ) );
 		$fact = $name . ' votes by mail, with ballots due ' . vote_long( $st['end'] ) . '.';
 		$lead = 'Your ballot came in the mail. Pick a day to send it back, then grab a sticker so your friends remember theirs.';
 		$status = 'votes by mail';
@@ -183,7 +184,7 @@ function vote_meta_es( $st ) {
 	$grab = $n ? 'Toma un sticker listo para usar o crea el tuyo, y ponlo de foto de perfil.' : 'Crea tu sticker y ponlo de foto de perfil.';
 	if ( 'mail' === $kind ) {
 		$tag = 'vota por correo hasta el ' . vote_short( $st['end'] );
-		$ribbon = 'VOTA POR CORREO, HASTA EL ' . vote_upper( vote_short( $st['end'] ) );
+		$ribbon = vote_sfield( $st, 'ribbon' ) ?: 'VOTA POR CORREO, HASTA EL ' . vote_upper( vote_short( $st['end'] ) );
 		$fact = $name . ' vota por correo y las boletas deben entregarse a más tardar el ' . vote_long( $st['end'] ) . '.';
 		$lead = 'Tu boleta te llegó por correo. Escoge un día para devolverla y luego toma un sticker para que tus amigos se acuerden de la suya.';
 		$status = 'vota por correo';

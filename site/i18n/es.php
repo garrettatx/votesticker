@@ -21,12 +21,12 @@ return array(
 	'states' => array(
 		'AL' => array( 'note' => 'Si no puedes votar en persona el Día de las Elecciones, es posible que cumplas los requisitos para votar con una boleta de voto en ausencia.' ),
 		'AK' => array( 'note' => 'Los horarios varían según el lugar. Busca el centro de votación anticipada más cercano.' ),
-		'CA' => array( 'note' => 'Todos los votantes inscritos reciben una boleta por correo. Devuélvela a más tardar el Día de las Elecciones; si la envías por correo, debe tener matasellos del 3 de noviembre o antes.' ),
-		'CO' => array( 'note' => 'Las boletas se enviaron por correo del 2 al 9 de octubre. Devuelve la tuya antes de las 7 p. m. del Día de las Elecciones en un buzón de entrega de boletas o en un centro de votación.' ),
+		'CA' => array( 'ribbon' => 'POR CORREO O EN PERSONA HASTA EL 3 NOV', 'note' => 'Todos los votantes inscritos reciben una boleta por correo. Devuélvela a más tardar el Día de las Elecciones; si la envías por correo, debe tener matasellos del 3 de noviembre o antes.' ),
+		'CO' => array( 'ribbon' => 'ENTRÉGALA ANTES DE LAS 7 P. M. DEL 3 NOV', 'note' => 'Las boletas se enviaron por correo del 2 al 9 de octubre. Devuelve la tuya antes de las 7 p. m. del Día de las Elecciones en un buzón de entrega de boletas o en un centro de votación.' ),
 		'DE' => array( 'note' => 'No hay votación anticipada el domingo 25 de octubre.' ),
 		'DC' => array( 'note' => 'Los centros de votación anticipada abren de 8:30 a. m. a 7 p. m.' ),
 		'FL' => array( 'note' => 'Todos los condados ofrecen del 24 al 31 de octubre. Tu condado puede agregar más días; consulta con tu Supervisor de Elecciones (Supervisor of Elections).' ),
-		'HI' => array( 'note' => 'Las boletas llegan a más tardar el 16 de octubre. Deben recibirse antes de las 7 p. m. del Día de las Elecciones, así que envía la tuya con tiempo o usa un buzón de entrega de boletas.' ),
+		'HI' => array( 'ribbon' => 'DEBE LLEGAR ANTES DE LAS 7 P. M. DEL 3 NOV', 'note' => 'Las boletas llegan a más tardar el 16 de octubre. Deben recibirse antes de las 7 p. m. del Día de las Elecciones, así que envía la tuya con tiempo o usa un buzón de entrega de boletas.' ),
 		'ID' => array(
 			'summary' => 'La votación anticipada está abierta en todos los condados de Idaho hasta el viernes 30 de octubre.',
 			'note' => 'Los días y horarios varían según el condado; busca el tuyo en VoteIdaho.gov.',
@@ -54,7 +54,7 @@ return array(
 		'NY' => array( 'note' => 'La junta electoral de tu condado (county board of elections) fija los lugares y horarios de votación anticipada.' ),
 		'NC' => array( 'note' => 'La votación anticipada termina a las 3 p. m. del sábado 31 de octubre. Vota en cualquier centro de votación anticipada de tu condado.' ),
 		'OK' => array( 'note' => 'Jueves y viernes de 8 a. m. a 6 p. m., y sábado de 8 a. m. a 2 p. m., en el condado donde te registraste.' ),
-		'OR' => array( 'note' => 'Las boletas se envían a partir del 14 de octubre. Para no correr riesgos, envía la tuya por correo a más tardar el 27 de octubre, o déjala en un buzón de entrega de boletas antes de las 8 p. m. del Día de las Elecciones.' ),
+		'OR' => array( 'ribbon' => 'BUZÓN HASTA LAS 8 P. M. DEL 3 NOV', 'note' => 'Las boletas se envían a partir del 14 de octubre. Para no correr riesgos, envía la tuya por correo a más tardar el 27 de octubre, o déjala en un buzón de entrega de boletas antes de las 8 p. m. del Día de las Elecciones.' ),
 		'PA' => array(
 			'summary' => 'En Pennsylvania puedes pedir, llenar y entregar una boleta por correo en una sola visita a la oficina electoral de tu condado, hasta las 5 p. m. del martes 27 de octubre.',
 			'note' => 'Esta boleta por correo en persona es la forma en que los votantes de Pennsylvania votan por anticipado.',
@@ -63,7 +63,7 @@ return array(
 		'SC' => array( 'note' => 'De lunes a sábado; cerrado el domingo 25 de octubre. Vota en cualquier centro de votación anticipada de tu condado.' ),
 		'TX' => array( 'note' => 'Vota en cualquier lugar de votación anticipada del condado donde te registraste.' ),
 		'VA' => array( 'note' => 'Todas las localidades ofrecen votación anticipada. Vota en la localidad donde te registraste.' ),
-		'WA' => array( 'note' => 'Las boletas se enviaron por correo a más tardar el 16 de octubre. Devuelve la tuya antes de las 8 p. m. del Día de las Elecciones, por correo o en un buzón de entrega de boletas.' ),
+		'WA' => array( 'ribbon' => 'BUZÓN HASTA LAS 8 P. M. DEL 3 NOV', 'note' => 'Las boletas se enviaron por correo a más tardar el 16 de octubre. Devuelve la tuya antes de las 8 p. m. del Día de las Elecciones, por correo o en un buzón de entrega de boletas.' ),
 	),
 	// Page and maker strings, keyed by the English. %s marks a value filled in by the code.
 	't' => array(
