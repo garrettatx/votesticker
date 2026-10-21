@@ -6,7 +6,7 @@ Open items, newest first. Started October 21, 2026. Move an item to `docs/histor
 
 | Item | Why | Notes |
 |---|---|---|
-| **Facts files for the remaining 39 states** | 12 live (TX, WA, GA, VA, FL, NC, MD, PA, NV, NJ, NY, MI). Batches C (OH, TN, IN, SC, WI) and D (IL, CA, MA, AZ, CO) running. | Agents write files without `"live"`; review, then mark live. Open calls: NJ cure deadline (Nov 14 timeline vs. 48 hours before certification), MI photo rule (two SOS pages disagree), GA selfie FAQ could cite the stronger SOS "No." |
+| **Facts files for the last 9 states** | 42 live. Paused October 21 for Garrett's usage window; resume one agent at a time when he says it reset. Left: ME, MT, NM, ND, SD, UT, VT, WV, WY. | Open fact calls: SC early voting close (5 vs 6 p.m.; statute says 6), NJ cure deadline, MI photo rule, KS mail return (SOS page contradicts itself: injunction vs. no grace period), KY ID: `faq_text.py` answer may predate KRS 117.228 as amended July 15, 2026, AR in-person absentee deadlines (Absentee page vs. FAQ), NH thin (sos.nh.gov blocks reading), AR locator host voterview.ar-nova.org not allowed. |
 | **"Early voting has ended" family** | Texas ends October 30, others sooner. A page that still says "early voting runs" after it closes is wrong. | Plan Section 5.1 (`early_over`). Depends on the daily rebuild. |
 
 ## Done October 21
