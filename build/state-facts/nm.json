@@ -1,0 +1,178 @@
+{
+ "abbr": "NM",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "www.sos.nm.gov": {
+   "en": "the New Mexico Secretary of State",
+   "es": "la Secretaría de Estado de New Mexico"
+  },
+  "www.santafecountynm.gov": {
+   "en": "the Santa Fe County Clerk",
+   "es": "la oficina de la secretaria del condado de Santa Fe (Santa Fe County Clerk)"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "Registration by mail, through a registration agent and online closed October 6, 2026. You can still register in person and vote the same day at your County Clerk's office, at some early voting sites, and at any polling place in your county on Election Day.",
+   "es": "El registro por correo, con un agente de registro y en línea cerró el 6 de octubre de 2026. Todavía puedes registrarte en persona y votar el mismo día en la oficina de la secretaría de tu condado (County Clerk), en algunos centros de votación anticipada y en cualquier lugar de votación de tu condado el Día de las Elecciones.",
+   "src": "https://www.sos.nm.gov/wp-content/uploads/2026/06/2026-Important-General-Election-Dates.pdf",
+   "checked": "2026-10-21",
+   "quote": "Voter registration by mail, by voter registration agent, and online closes.",
+   "status": "verified"
+  },
+  "mail_request": {
+   "en": "Request your mailed ballot by Tuesday, October 20, 2026, on NMVote.org or with a paper application. Your County Clerk must receive it by then.",
+   "es": "Pide tu boleta por correo a más tardar el martes 20 de octubre de 2026, en NMVote.org o con una solicitud en papel. La oficina de la secretaría de tu condado (County Clerk) debe recibirla para esa fecha.",
+   "src": "https://www.sos.nm.gov/wp-content/uploads/2026/06/2026-Important-General-Election-Dates.pdf",
+   "checked": "2026-10-21",
+   "quote": "This is the last day you may request a mailed ballot. You may request a ballot on NMVote.org or by using a paper application that can be found on our website or obtained via your County Clerk.",
+   "status": "verified",
+   "until": "2026-10-20",
+   "en_after": "Requests for a mailed ballot closed October 20, 2026. Vote early in person through Saturday, October 31, or at a polling place on Election Day, 7 a.m. to 7 p.m.",
+   "es_after": "Las solicitudes de boleta por correo cerraron el 20 de octubre de 2026. Vota por anticipado en persona hasta el sábado 31 de octubre, o en un lugar de votación el Día de las Elecciones, de 7 a. m. a 7 p. m."
+  },
+  "mail_return": {
+   "en": "Your ballot must reach your County Clerk, or your precinct, by 7 p.m. on Tuesday, November 3, 2026. Return postage is prepaid, but leave enough time for it to arrive.",
+   "es": "Tu boleta debe llegar a la oficina de la secretaría de tu condado (County Clerk), o a tu precinto, a más tardar a las 7 p. m. del martes 3 de noviembre de 2026. El envío de regreso ya está pagado, pero deja tiempo suficiente para que llegue.",
+   "src": "https://www.sos.nm.gov/voting-and-elections/voting-faqs/absentee-voting-by-mail/",
+   "checked": "2026-10-21",
+   "quote": "Ballots must be returned to the county clerk or voter’s precinct by 7:00 p.m. on Election Day to be counted (Section 1-6-10 (B), NMSA 1978).",
+   "status": "verified"
+  },
+  "early_hours": {
+   "status": "missing",
+   "notes": "The SOS says to check with your County Clerk for early voting sites and hours; no statewide hours found."
+  },
+  "cure": {
+   "status": "missing",
+   "notes": "No cure process found on the SOS absentee, voting or provisional FAQ pages."
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "Vote early in person at your County Clerk's office starting October 6. More early voting sites open across the state on October 17, and early voting ends Saturday, October 31. Check your County Clerk for sites and hours.",
+   "es": "Vota por anticipado en persona en la oficina de la secretaría de tu condado (County Clerk) desde el 6 de octubre. El 17 de octubre abren más centros de votación anticipada en todo el estado, y la votación anticipada termina el sábado 31 de octubre. Consulta con la secretaría de tu condado los lugares y horarios.",
+   "src": "https://www.sos.nm.gov/voting-and-elections/voting-faqs/early-voting-in-person/",
+   "checked": "2026-10-21",
+   "quote": "Early voting ends the Saturday before the election.",
+   "status": "verified"
+  },
+  "first_time": {
+   "en": "Registering or updating your registration the same day you vote? Bring a photo ID from the federal government, a state, a tribe, nation or pueblo, or a school. If it doesn't show your current address, also bring a utility bill, bank statement, paycheck or similar document from the last 90 days with your name and address.",
+   "es": "¿Te vas a registrar o vas a actualizar tu registro el mismo día que votas? Lleva una identificación con foto del gobierno federal, de un estado, de una nación, tribu o pueblo indígena, o de una escuela. Si no muestra tu dirección actual, lleva también un recibo de servicios, un estado de cuenta bancario, un talón de pago o un documento parecido de los últimos 90 días con tu nombre y dirección.",
+   "src": "https://www.sos.nm.gov/voting-and-elections/voting-faqs/same-day-voter-registration-faq/",
+   "checked": "2026-10-21",
+   "quote": "A physical form of identification that is issued by the federal government, a state government, a federally recognized Indian nation, tribe or pueblo or an educational institution and that:",
+   "status": "verified"
+  }
+ },
+ "where": {
+  "locator_url": "https://voterportal.servis.sos.state.nm.us/WhereToVoteAddress.aspx",
+  "locator_label": {
+   "en": "Voter Information Portal (New Mexico Secretary of State)",
+   "es": "Buscador oficial de lugares de votación (Secretaría de Estado de New Mexico)"
+  },
+  "locator_cta": {
+   "en": "Find where to vote",
+   "es": "Buscar dónde votar"
+  },
+  "local_offices_url": "https://www.sos.nm.gov/voting-and-elections/county-clerk-information/",
+  "rule": {
+   "en": "Look up early voting sites in the state's Voter Information Portal, or call your County Clerk for sites, dates and hours. Polling places are open 7 a.m. to 7 p.m. on Election Day.",
+   "es": "Busca los centros de votación anticipada en el portal oficial de información para votantes del estado (Voter Information Portal), o llama a la secretaría de tu condado (County Clerk) para saber lugares, fechas y horarios. Los lugares de votación abren de 7 a. m. a 7 p. m. el Día de las Elecciones.",
+   "src": "https://www.sos.nm.gov/voting-and-elections/voting-faqs/early-voting-in-person/",
+   "checked": "2026-10-21",
+   "quote": "Look up early voting locations here or call your county clerk for locations and dates and hours of operation.",
+   "status": "verified"
+  }
+ },
+ "id": {
+  "rule": "no_id",
+  "accepted": {
+   "status": "missing",
+   "notes": "Most voters show no ID. The ID list on the SOS Voting FAQ applies to first-time voters who registered by mail without ID; same-day registration ID is in how.first_time."
+  },
+  "expired": {
+   "status": "missing"
+  },
+  "without": {
+   "en": "Most voters don't show ID. You state your name, year of birth and registered address. If you registered by mail for the first time and didn't send ID, bring a photo ID or a document with your name and current address, or you'll vote a provisional ballot.",
+   "es": "La mayoría de los votantes no muestra identificación. Dices tu nombre, tu año de nacimiento y tu dirección registrada. Si te registraste por correo por primera vez y no mandaste identificación, lleva una identificación con foto o un documento con tu nombre y dirección actual, o votarás con una boleta provisional.",
+   "src": "https://www.sos.nm.gov/voting-and-elections/voting-faqs/voting/",
+   "checked": "2026-10-21",
+   "quote": "Otherwise, you will be asked to provide a verbal or written statement of identification including your name, year of birth, and registered address.",
+   "status": "verified"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "Any registered voter can ask for a mailed ballot. You can also join the permanent absentee list and get one for every statewide election.",
+   "es": "Cualquier votante registrado puede pedir una boleta por correo. También puedes entrar a la lista permanente de voto en ausencia y recibir una en cada elección estatal.",
+   "src": "https://www.sos.nm.gov/voting-and-elections/voting-faqs/absentee-voting-by-mail/",
+   "checked": "2026-10-21",
+   "quote": "Eligible voters can now opt-in to the permanent absentee list to automatically be sent an absentee (mail-in) ballot for each statewide election by their county clerk.",
+   "status": "verified"
+  },
+  "witness": {
+   "status": "missing",
+   "notes": "No witness or envelope-signing instructions found on the SOS absentee FAQ."
+  },
+  "track_url": "https://sos.nm.gov/trackmyballot",
+  "cure": {
+   "status": "missing"
+  },
+  "dropbox": {
+   "en": "Mail it back, postage prepaid, or hand it in at your County Clerk's office. Only you, a caregiver or an immediate family member (spouse, child, parent, brother or sister) can deliver it.",
+   "es": "Devuélvela por correo, con el envío ya pagado, o entrégala en la oficina de la secretaría de tu condado (County Clerk). Solo tú, la persona que te cuida o un familiar directo (cónyuge, hijo, padre o madre, hermano o hermana) pueden entregarla.",
+   "src": "https://www.sos.nm.gov/voting-and-elections/voting-faqs/voting/",
+   "checked": "2026-10-21",
+   "quote": "Pursuant to NMSA 1978, Section 1-6-10.1, a voter, caregiver to that voter or member of that voter’s “immediate family” defined as a person’s spouse, children, parents, brothers and sisters may deliver a voter’s absentee ballot to the county clerk in person or by mail.",
+   "status": "verified"
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "status": "missing",
+   "notes": "The electioneering rule (NMSA 1-20-16, 100 feet) is on nmonesource.com, the state's official statutes host, which the validator does not accept; no sos.nm.gov page states it."
+  },
+  "phone": {
+   "status": "missing",
+   "notes": "No official phone or ballot photo rule found on sos.nm.gov; faq-sources.json also left the NM selfie answer null."
+  },
+  "line": {
+   "status": "missing",
+   "notes": "No in-line-at-closing rule found on sos.nm.gov; the statute host nmonesource.com is not accepted by the validator."
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "en": "In Santa Fe County, students design the I Voted sticker. The county clerk's 2026 contest closed September 8, and the three winning designs are being printed for voters this election.",
+   "es": "En el condado de Santa Fe, los estudiantes diseñan el sticker de \"I Voted\". El concurso 2026 de la secretaría del condado cerró el 8 de septiembre, y los tres diseños ganadores se imprimen para los votantes en esta elección.",
+   "src": "https://www.santafecountynm.gov/clerk/community-outreach/i-voted-sticker-contest",
+   "checked": "2026-10-21",
+   "quote": "The winning 3 designs will be printed and shared with voters during this election cycle.",
+   "status": "verified"
+  }
+ },
+ "faq": {
+  "provisional": {
+   "en": "You get a provisional ballot if your name isn't on the roster at your polling place, or if you're a first-time voter who registered by mail and doesn't bring the required ID. Check its status after the election in the state's provisional ballot lookup.",
+   "es": "Te dan una boleta provisional si tu nombre no está en la lista de tu lugar de votación, o si votas por primera vez, te registraste por correo y no llevas la identificación requerida. Revisa su estado después de la elección en el buscador oficial de boletas provisionales del estado.",
+   "src": "https://www.sos.nm.gov/voting-and-elections/voting-faqs/provisional-voting/",
+   "checked": "2026-10-21",
+   "quote": "You will be issued a provisional ballot if your name does not appear on the roster at your polling place or if you are a first time voter who registered by mail and do not provide the required identification.",
+   "status": "verified"
+  },
+  "track": {
+   "en": "Check the status of your absentee application and ballot with the Secretary of State's ballot tracker, or contact your County Clerk's office.",
+   "es": "Revisa el estado de tu solicitud y de tu boleta de voto en ausencia en el buscador oficial de la Secretaría de Estado para seguir tu boleta (Track My Ballot), o comunícate con la oficina de la secretaría de tu condado.",
+   "src": "https://www.sos.nm.gov/voting-and-elections/voting-faqs/absentee-voting-by-mail/",
+   "checked": "2026-10-21",
+   "quote": "To check the status of your Absentee Application, go HERE or contact your County Clerk’s Office .",
+   "status": "verified"
+  }
+ },
+ "notes": "Read October 21, 2026 with curl on sos.nm.gov (Voting FAQ, Same Day Voter Registration FAQ, Absentee Voting by Mail, Early Voting in Person, Provisional Voting) and the 2026 Important General Election Dates PDF (read through WebFetch, which kept the file in the session's tool-results; its text layer drops the dates, the page image shows them: OCT 6, OCT 17, OCT 20, OCT 31, NOV 3). Weekdays come from the calendar. Sticker from the Santa Fe County Clerk's contest page (county program, no statewide sticker found). VALIDATOR HOST: nmonesource.com (New Mexico's official statute site, NMSA 1978) is not in OFFICIAL or ALLOW_HOSTS, so the electioneering distance (1-20-16), the line-at-closing rule and the cure statute were not cited; polls_rules.gear and .line are missing. EARLY VOTING DATES FOR THE LEAD (states.js has NM unchecked): Tuesday, October 6 to Saturday, October 31, 2026, at County Clerk offices from October 6, with more sites from Saturday, October 17. Sources: (1) https://www.sos.nm.gov/wp-content/uploads/2026/06/2026-Important-General-Election-Dates.pdf: OCT 6 'Early voting begins at County Clerk Offices. In-person same day voter registration is available.'; OCT 17 'More early voting sites open across the state. Check with your County Clerk for a list of alternate early voting sites and their hours of operation.'; OCT 31 'Early Voting ends.' (2) https://www.sos.nm.gov/voting-and-elections/voting-faqs/early-voting-in-person/: 'You may go to your county clerk’s office beginning the 28th day before the election and vote.' 'Expanded early voting is available in many counties beginning on the third Saturday before the election.' 'Early voting ends the Saturday before the election.' Hours set by each county. Suggested states.js note: 'Vote early at your County Clerk's office; more sites from Oct. 17. Same-day registration available.' Not found: early voting hours, cure process, mail witness/signing rule, drop box rule on a state page (county pages list drop boxes), phone and line rules."
+}

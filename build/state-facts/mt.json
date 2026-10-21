@@ -1,0 +1,228 @@
+{
+ "abbr": "MT",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "votemt.gov": {
+   "en": "VoteMT.gov (Montana Secretary of State)",
+   "es": "VoteMT.gov (Secretaría de Estado de Montana)"
+  },
+  "sosmt.gov": {
+   "en": "the Montana Secretary of State",
+   "es": "la Secretaría de Estado de Montana"
+  },
+  "mca.legmt.gov": {
+   "en": "the Montana Code",
+   "es": "el código de leyes de Montana (Montana Code Annotated)"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "Regular registration closed Monday, October 5, 2026. You can still register late at your county election office, but you have to pick up your ballot in person.",
+   "es": "El registro regular cerró el lunes 5 de octubre de 2026. Todavía puedes registrarte tarde en la oficina electoral de tu condado, pero tienes que recoger tu boleta en persona.",
+   "src": "https://votemt.gov/frequently-asked-questions/",
+   "checked": "2026-10-21",
+   "quote": "Late registration is the 30-day period before an election. Eligible voters may register to vote or update their registration during the late registration period. In order to vote in the election, a voter must obtain their ballot in person.",
+   "status": "verified"
+  },
+  "mail_request": {
+   "en": "Your county election office must receive your application by noon on Monday, November 2, 2026. Drop it off in person and you can pick up your ballot at the same time.",
+   "es": "La oficina electoral de tu condado debe recibir tu solicitud a más tardar al mediodía del lunes 2 de noviembre de 2026. Si la entregas en persona, puedes recoger tu boleta en ese momento.",
+   "src": "https://sosmt.gov/elections/absentee/",
+   "checked": "2026-10-21",
+   "quote": "Applications must be received by the county election office by noon the day before the election. If you drop off the application you will be able to pick up the absentee ballot at the same time.",
+   "status": "verified",
+   "until": "2026-11-02",
+   "en_after": "Absentee applications closed at noon on November 2, 2026. Vote at your polling place on Election Day, 7 a.m. to 8 p.m. in most places.",
+   "es_after": "Las solicitudes de voto en ausencia cerraron al mediodía del 2 de noviembre de 2026. Vota en tu lugar de votación el Día de las Elecciones, de 7 a. m. a 8 p. m. en la mayoría de los lugares."
+  },
+  "mail_return": {
+   "en": "Your ballot must reach your county election office or a polling place by 8 p.m. on Tuesday, November 3, 2026. Mailing it? Send it at least a week before Election Day.",
+   "es": "Tu boleta debe llegar a la oficina electoral de tu condado o a un lugar de votación a más tardar a las 8 p. m. del martes 3 de noviembre de 2026. ¿La mandas por correo? Envíala por lo menos una semana antes del Día de las Elecciones.",
+   "src": "https://sosmt.gov/elections/absentee/",
+   "checked": "2026-10-21",
+   "quote": "Absentee ballots must be received at the election office or polling place by 8:00 p.m. on Election Day.",
+   "status": "verified"
+  },
+  "early_hours": {
+   "status": "missing",
+   "notes": "In-person absentee voting is at each county election office during its hours; no statewide hours found. The VoteMT calendar lists 'Election Offices Open (8:00 a.m. to 5:00 p.m.)' on Saturday, October 31, 2026, but the same entry carries the notice that SB 490's Saturday registration and voting is enjoined, so it is unclear whether offices open that day."
+  },
+  "cure": {
+   "en": "If your county contacts you because your envelope signature is missing or can't be verified, fix it before 8 p.m. on Tuesday, November 3, 2026, by mail, electronically, by fax or in person.",
+   "es": "Si tu condado se comunica contigo porque falta la firma en tu sobre o no la pueden verificar, corrígelo antes de las 8 p. m. del martes 3 de noviembre de 2026, por correo, por medios electrónicos, por fax o en persona.",
+   "src": "https://mca.legmt.gov/bills/mca/title_0130/chapter_0130/part_0020/section_0450/0130-0130-0020-0450.html",
+   "checked": "2026-10-21",
+   "quote": "The election administrator shall inform the elector that, prior to 8 p.m. on election day, the elector may: (a) by mail, facsimile, electronic means, or in person, resolve the issue that resulted in the ballot being handled as a provisional ballot, confirm the validity of the ballot, or verify the elector's or agent's signature or provide a signature",
+   "status": "verified"
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "Want to vote before Election Day? Go to your county election office, apply for an absentee ballot, and mark it right there. Ballots are ready for in-person voting 30 days before Election Day. On Election Day, vote at your polling place.",
+   "es": "¿Quieres votar antes del Día de las Elecciones? Ve a la oficina electoral de tu condado, pide una boleta de voto en ausencia y márcala ahí mismo. Las boletas están listas para votar en persona 30 días antes del Día de las Elecciones. El Día de las Elecciones, vota en tu lugar de votación.",
+   "src": "https://mca.legmt.gov/bills/mca/title_0130/chapter_0130/part_0020/section_0220/0130-0130-0020-0220.html",
+   "checked": "2026-10-21",
+   "quote": "As soon as the official ballots are available for in-person absentee voting under 13-13-205(1)(a)(i), the election administrator shall permit an elector to apply for, receive, and mark an absentee ballot before election day by appearing in person at the office of the election administrator and marking the ballot in a voting station area designated by the election administrator.",
+   "status": "verified"
+  },
+  "first_time": {
+   "status": "missing",
+   "notes": "Late registration end time is in conflict; see notes."
+  }
+ },
+ "where": {
+  "locator_url": "https://voterportal.mt.gov/WhereToVote.aspx",
+  "locator_label": {
+   "en": "My Voting Information (Montana Secretary of State)",
+   "es": "Buscador oficial de información para votantes (Secretaría de Estado de Montana)"
+  },
+  "locator_cta": {
+   "en": "Find my polling place",
+   "es": "Buscar mi lugar de votación"
+  },
+  "local_offices_url": "https://sosmt.gov/elections/election-administrators-contact-list/",
+  "rule": {
+   "en": "Your county election office sets your polling place. Look it up, along with your sample ballot, in the Secretary of State's voter lookup.",
+   "es": "La oficina electoral de tu condado define tu lugar de votación. Búscalo, junto con tu boleta de muestra, en el buscador oficial de la Secretaría de Estado.",
+   "src": "https://votemt.gov/frequently-asked-questions/",
+   "checked": "2026-10-21",
+   "quote": "Your county elections office will designate polling places and other voter-specific information.",
+   "status": "verified"
+  }
+ },
+ "id": {
+  "rule": "photo_required",
+  "accepted": {
+   "en": [
+    "Driver's license or REAL ID",
+    "Montana state ID card",
+    "Military ID",
+    "Tribal photo ID",
+    "U.S. passport",
+    "Montana concealed carry permit",
+    "Montana University System or NAIA school photo ID"
+   ],
+   "es": [
+    "Licencia de conducir o REAL ID",
+    "Tarjeta de identificación estatal de Montana",
+    "Identificación militar",
+    "Identificación tribal con foto",
+    "Pasaporte de EE. UU.",
+    "Permiso de Montana para portar armas ocultas (concealed carry permit)",
+    "Credencial con foto del sistema universitario de Montana (Montana University System) o de una escuela de la NAIA"
+   ],
+   "src": "https://votemt.gov/voter-identification/",
+   "checked": "2026-10-21",
+   "quote": "An election worker will request a physical copy of your photo identification that is current, valid, and readable, which must be one of the following:",
+   "status": "verified"
+  },
+  "expired": {
+   "en": "Your ID has to be current, valid and readable.",
+   "es": "Tu identificación tiene que estar vigente, ser válida y poder leerse.",
+   "src": "https://votemt.gov/voter-identification/",
+   "checked": "2026-10-21",
+   "quote": "An election worker will request a physical copy of your photo identification that is current, valid, and readable, which must be one of the following:",
+   "status": "verified"
+  },
+  "without": {
+   "en": "Have a different photo ID with your name? Bring it plus a current utility bill, bank statement, paycheck, government check or other government document with your name and current address. Without either, you vote a provisional ballot and have until 5 p.m. on Wednesday, November 4, 2026, to show ID.",
+   "es": "¿Tienes otra identificación con foto con tu nombre? Llévala junto con un recibo de servicios reciente, un estado de cuenta bancario, un talón de pago, un cheque del gobierno u otro documento del gobierno con tu nombre y tu dirección actual. Si no tienes nada de eso, votas con una boleta provisional y tienes hasta las 5 p. m. del miércoles 4 de noviembre de 2026 para mostrar tu identificación.",
+   "src": "https://mca.legmt.gov/bills/mca/title_0130/chapter_0150/part_0010/section_0070/0130-0150-0010-0070.html",
+   "checked": "2026-10-21",
+   "quote": "If a legally registered individual casts a provisional ballot because the individual failed to provide sufficient identification as required pursuant to 13-13-114(1)(a): (a) the elector has until 5 p.m. on the day after the election to provide identification information pursuant to the requirements of 13-13-114",
+   "status": "verified"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "Any registered voter in Montana can vote absentee, no reason needed. You can also ask to get an absentee ballot mailed for every future election.",
+   "es": "Cualquier votante registrado en Montana puede votar en ausencia, sin dar una razón. También puedes pedir que te manden una boleta de voto en ausencia para cada elección futura.",
+   "src": "https://sosmt.gov/elections/absentee/",
+   "checked": "2026-10-21",
+   "quote": "Any registered voter may vote by absentee ballot.",
+   "status": "verified"
+  },
+  "witness": {
+   "en": "Put your ballot in the secrecy envelope, then in the return envelope. Sign and date the affirmation on the return envelope yourself. It also has a space for your birth year, which isn't being enforced right now.",
+   "es": "Mete tu boleta en el sobre de confidencialidad y luego en el sobre de devolución. Firma tú mismo la declaración del sobre de devolución y ponle la fecha. También trae un espacio para tu año de nacimiento, que por ahora no se está exigiendo.",
+   "src": "https://votemt.gov/absentee-ballot/",
+   "checked": "2026-10-21",
+   "quote": "Sign, date, and write your birth year in the dedicated space on your return envelope. (*Birth year requirement not currently enforced)",
+   "status": "verified"
+  },
+  "track_url": "https://voterportal.mt.gov/WhereToVote.aspx",
+  "cure": {
+   "en": "Ballot rejected? Fill out the elector signature part of the Fix My Rejected Ballot form with your signature, today's date and your birth year, add a copy of an acceptable ID, and return it to your county election office.",
+   "es": "¿Rechazaron tu boleta? Llena la parte de la firma del votante en el formulario oficial para corregir una boleta rechazada (Fix My Rejected Ballot) con tu firma, la fecha de hoy y tu año de nacimiento, agrega una copia de una identificación aceptada y entrégalo en la oficina electoral de tu condado.",
+   "src": "https://votemt.gov/resolve-my-ballot/",
+   "checked": "2026-10-21",
+   "quote": "Complete the \"ELECTOR SIGNATURE\" portion of the form, including your signature, today's date, and your birth year, and provide a copy of an acceptable ID. Return the completed form and ID to your county elections office.",
+   "status": "verified"
+  },
+  "dropbox": {
+   "en": "Return it by mail, or drop it off at your county election office or any polling place in your county.",
+   "es": "Devuélvela por correo, o entrégala en la oficina electoral de tu condado o en cualquier lugar de votación de tu condado.",
+   "src": "https://mca.legmt.gov/bills/mca/title_0130/chapter_0130/part_0020/section_0010/0130-0130-0020-0010.html",
+   "checked": "2026-10-21",
+   "quote": "returning the signature envelope with all appropriate enclosures by regular mail, postage paid, or by delivering it to: (i) the election office; (ii) a polling place within the elector's county;",
+   "status": "verified"
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "en": "Leave the campaign buttons and badges at home. Montana bans wearing or showing any badge, button or insignia for a candidate or ballot issue where you vote, and bans electioneering within 100 feet of the building entrance.",
+   "es": "Deja en casa los botones e insignias de campaña. Montana prohíbe llevar o mostrar cualquier insignia, botón o distintivo a favor o en contra de un candidato o una propuesta en el lugar donde votas, y prohíbe hacer campaña a menos de 100 pies de la entrada del edificio.",
+   "src": "https://mca.legmt.gov/bills/mca/title_0130/chapter_0350/part_0020/section_0110/0130-0350-0020-0110.html",
+   "checked": "2026-10-21",
+   "quote": "A person may not buy, sell, give, wear, or display at any location where an elector may obtain or vote a ballot, during the hours the location is open to electors to obtain or vote a ballot, any badge, button, or other insignia that is designed or tends to aid or promote the success or defeat of any candidate or ballot issue to be voted on at the election.",
+   "status": "verified"
+  },
+  "phone": {
+   "status": "missing",
+   "notes": "No phone or polling-place photo rule found on votemt.gov or sosmt.gov pages read. The ballot-selfie FAQ answer (COPP 2018 advisory opinion, a PDF) is already in faq_text.py and was not re-read."
+  },
+  "line": {
+   "status": "missing",
+   "notes": "No in-line-at-closing rule found in MCA 13-1-106 or on votemt.gov."
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "en": "Montana has a new I Voted sticker for 2026, made by the Secretary of State with election officials from all 56 counties. It's red, white and blue, with an outline of the state and its mountains. You'll get one at polling places and county election offices.",
+   "es": "Montana tiene un nuevo sticker de \"I Voted\" para 2026, hecho por la Secretaría de Estado con funcionarios electorales de los 56 condados. Es rojo, blanco y azul, con la silueta del estado y sus montañas. Te lo dan en los lugares de votación y en las oficinas electorales de los condados.",
+   "src": "https://sosmt.gov/secretary-christi-jacobsen-unveils-new-i-voted-sticker-ahead-of-montanas-2026-elections/",
+   "checked": "2026-10-21",
+   "quote": "Montanans will see the new sticker at polling places and in county election offices during the 2026 Primary and General Elections.",
+   "status": "verified"
+  }
+ },
+ "faq": {
+  "provisional": {
+   "en": "You vote a provisional ballot if you can't show the required ID, your name isn't in the register, or your registration can't be confirmed at the polls. Bring ID or eligibility information to your county by 5 p.m. the day after the election, and it counts once your county verifies you.",
+   "es": "Votas con una boleta provisional si no puedes mostrar la identificación requerida, si tu nombre no está en el registro o si no pueden confirmar tu registro en el lugar de votación. Lleva tu identificación o tus datos de elegibilidad a tu condado a más tardar a las 5 p. m. del día siguiente a la elección, y se cuenta cuando tu condado te verifique.",
+   "src": "https://mca.legmt.gov/bills/mca/title_0130/chapter_0150/part_0010/section_0070/0130-0150-0010-0070.html",
+   "checked": "2026-10-21",
+   "quote": "A provisional ballot must be counted if the election administrator verifies the individual's identity or eligibility pursuant to rules adopted under 13-13-603.",
+   "status": "verified"
+  },
+  "track": {
+   "en": "Use the Secretary of State's Track My Ballot tool to see whether your county election office has accepted your ballot.",
+   "es": "Usa el buscador oficial de la Secretaría de Estado para seguir tu boleta (Track My Ballot) y ver si la oficina electoral de tu condado ya la aceptó.",
+   "src": "https://votemt.gov/resolve-my-ballot/",
+   "checked": "2026-10-21",
+   "quote": "This online tool allows Montana voters to ensure their ballot has been \"Accepted\" by their county election office.",
+   "status": "verified"
+  },
+  "late_mail": {
+   "en": "Mailing it in the last week is risky. It has to reach your county election office or a polling place by 8 p.m. on Election Day, so drop it off in person instead.",
+   "es": "Mandarla por correo en la última semana es arriesgado. Tiene que llegar a la oficina electoral de tu condado o a un lugar de votación a más tardar a las 8 p. m. del Día de las Elecciones, así que mejor entrégala en persona.",
+   "src": "https://votemt.gov/absentee-ballot/",
+   "checked": "2026-10-21",
+   "quote": "Mail your ballot at least 1 week before Election Day",
+   "status": "verified"
+  }
+ },
+ "notes": "Read October 21, 2026: votemt.gov with curl (FAQ, Voter Identification, Absentee Ballot, Resolve My Ballot, Election Calendar, Same-Weekend Registration); sosmt.gov in Claude in Chrome because curl gets 403 (Voting by Absentee Ballot, the 2026 I Voted sticker release, the SB 490 court-order release); mca.legmt.gov (13-2-304, 13-13-114, 13-13-201, 13-13-205, 13-13-211, 13-13-222, 13-13-245, 13-15-107, 13-35-211, 13-1-106). The October 5 date is on the VoteMT Election Calendar ('Close of Regular Registration ... October 5, 2026 5:00 pm'); 'Monday' is the calendar weekday. November 2 is 'noon the day before the election'; November 4 is '5 p.m. on the day after the election'. CONFLICT, LATE REGISTRATION CUTOFF (left out of the file, and FLAG FOR faq_text.py): MCA 13-2-304(3) as printed (Ch. 409, L. 2025, SB 490) says federal-election late registration must be received and verified 'prior to the close of business on the Friday before the election; between 8 a.m. and 5 p.m. on the Saturday before the election; and prior to noon on the day of the election.' But the Secretary of State says SB 490 is enjoined: https://votemt.gov/same-weekend-registration/ 'A court order has prohibited Montana election officials from implementing Senate Bill 490' and https://sosmt.gov/montana-election-officials-warn-of-increased-potential-for-long-lines-on-election-day-following-court-order/ says the bill 'amended Montana's late registration procedures, opening a late registration period from 8 a.m. to 5 p.m. on the Saturday before Election Day ... and allowing federal voter registration activities through noon on Election Day' and that a District Court 'issued a preliminary injunction against Senate Bill 490, barring election officials from implementing it.' The same-weekend page also prints 'Federal registration available through noon on Election Day.' next to 'Registration ends at 8 p.m.' The existing faq_text.py MT 'reg' answer ('vote there until noon on Election Day') rests on the enjoined text and should be re-checked; no official page states the current Election Day cutoff in one clear sentence. EARLY VOTING FOR THE LEAD (states.js has MT unchecked): no-excuse in-person absentee voting at the county election office. Start: ballots available 'for absentee voting in person' 30 days prior to election day (MCA 13-13-205(1)(a)(i): '30 days prior to election day for absentee voting in person'), which is Sunday, October 4, 2026 by the calendar (offices are closed weekends, so in practice Monday, October 5); VoteMT's calendar lists 'General Election Absentee Ballots Sent' October 9, 2026 (25 days before, the mailing date). End: applications 'must be received by the county election office by noon the day before the election' (sosmt.gov/elections/absentee), noon Monday, November 2, 2026; MCA 13-13-222 lets voters 'apply for, receive, and mark an absentee ballot before election day by appearing in person at the office of the election administrator.' Hours: county office hours; not stated statewide. Suggested states.js note: 'Vote absentee in person at your county election office.' Not found: line-at-closing rule, phone/photo rule at the polls, early voting hours."
+}

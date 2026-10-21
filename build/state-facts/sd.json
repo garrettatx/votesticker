@@ -1,0 +1,195 @@
+{
+ "abbr": "SD",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "sdsos.gov": {
+   "en": "the South Dakota Secretary of State",
+   "es": "la Secretaría de Estado de South Dakota"
+  },
+  "sdlegislature.gov": {
+   "en": "South Dakota law",
+   "es": "la ley de South Dakota"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "Registration for the general election closed October 19, 2026. Not sure you're registered? Check the state's Voter Information Portal.",
+   "es": "El registro para la elección general cerró el 19 de octubre de 2026. ¿No sabes si estás registrado? Revisa el portal oficial de información para votantes del estado (Voter Information Portal).",
+   "src": "https://sdsos.gov/elections-voting/upcoming-elections/general-information/2026%20Election%20Information/2026-Election-Information.aspx",
+   "checked": "2026-10-21",
+   "quote": "Voter Registration Deadline: October 19, 2026",
+   "status": "verified"
+  },
+  "mail_request": {
+   "en": "Apply in person at your county election office by 5 p.m. on Monday, November 2, 2026, or until the office closes that day if it's later. Bring your photo ID or sign the affidavit.",
+   "es": "Solicítala en persona en la oficina electoral de tu condado a más tardar a las 5 p. m. del lunes 2 de noviembre de 2026, o hasta que cierre la oficina ese día si es más tarde. Lleva tu identificación con foto o firma la declaración jurada.",
+   "src": "https://sdlegislature.gov/Statutes/12-19-2.1",
+   "checked": "2026-10-21",
+   "quote": "At any time prior to an election, a voter may apply for an absentee ballot in person at the office of and to the person in charge of the election during regular office hours or until five p.m. on the day before the election, whichever is later.",
+   "status": "verified",
+   "until": "2026-11-02",
+   "en_after": "Absentee applications closed on November 2, 2026. Vote at your polling place on Election Day, 7 a.m. to 7 p.m. local time.",
+   "es_after": "Las solicitudes de voto en ausencia cerraron el 2 de noviembre de 2026. Vota en tu lugar de votación el Día de las Elecciones, de 7 a. m. a 7 p. m. hora local."
+  },
+  "mail_return": {
+   "en": "Your county election official must get your ballot on Election Day, Tuesday, November 3, 2026, in time to send it to your precinct before polls close at 7 p.m. local time. A ballot that arrives after the polls close isn't counted.",
+   "es": "El funcionario electoral de tu condado debe recibir tu boleta el Día de las Elecciones, martes 3 de noviembre de 2026, a tiempo para mandarla a tu precinto antes de que cierren las urnas a las 7 p. m. hora local. Una boleta que llega después del cierre no se cuenta.",
+   "src": "https://sdsos.gov/elections-voting/voting/absentee-voting.aspx",
+   "checked": "2026-10-21",
+   "quote": "Your voted ballot MUST be received by your County Election Official on Election Day in enough time to deliver your ballot to your voting precinct before the polls close.",
+   "status": "verified"
+  },
+  "early_hours": {
+   "status": "missing",
+   "notes": "In-person absentee voting happens at the county auditor's office during its office hours; no statewide hours found."
+  },
+  "cure": {
+   "status": "missing",
+   "notes": "No absentee cure process found on sdsos.gov."
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "Want to vote before Election Day? Go to your County Auditor's office once absentee voting begins and vote in person. Bring a photo ID, or sign a personal identification affidavit and vote a regular ballot.",
+   "es": "¿Quieres votar antes del Día de las Elecciones? Ve a la oficina del auditor de tu condado (County Auditor) cuando empiece el voto en ausencia y vota en persona. Lleva una identificación con foto, o firma una declaración jurada de identificación personal y vota con una boleta regular.",
+   "src": "https://sdsos.gov/elections-voting/voting/absentee-voting.aspx",
+   "checked": "2026-10-21",
+   "quote": "Registered voters can vote in-person once Absentee Voting begins at their County Auditor's office by bringing along a valid photo identification card (ID). If a voter does not have a photo ID, they must be given the option to sign a personal identification affidavit and vote a regular ballot.",
+   "status": "verified"
+  },
+  "first_time": {
+   "en": "You're not registered until your county election official accepts your application and sends you an acknowledgement notice. That notice also lists your polling place. No notice within 15 days? Contact your county election official.",
+   "es": "No estás registrado hasta que el funcionario electoral de tu condado acepta tu solicitud y te manda un aviso de confirmación (acknowledgement notice). Ese aviso también dice cuál es tu lugar de votación. ¿No te llegó en 15 días? Comunícate con el funcionario electoral de tu condado.",
+   "src": "https://sdsos.gov/elections-voting/voting/default.aspx",
+   "checked": "2026-10-21",
+   "quote": "If you do not receive an acknowledgement notice within 15 days of the date you submitted your application, contact your County Election Official.",
+   "status": "verified"
+  }
+ },
+ "where": {
+  "locator_url": "https://vip.sdsos.gov/viplogin.aspx",
+  "locator_label": {
+   "en": "Voter Information Portal (South Dakota Secretary of State)",
+   "es": "Portal oficial de información para votantes (Secretaría de Estado de South Dakota)"
+  },
+  "locator_cta": {
+   "en": "Find my polling place",
+   "es": "Buscar mi lugar de votación"
+  },
+  "local_offices_url": "https://vip.sdsos.gov/CountyAuditors.aspx",
+  "rule": {
+   "en": "Find your polling place in the state's Voter Information Portal. It's also on the acknowledgement notice your county sent when you registered. Polls are open 7 a.m. to 7 p.m. local time.",
+   "es": "Busca tu lugar de votación en el portal oficial de información para votantes del estado (Voter Information Portal). También aparece en el aviso de confirmación que te mandó tu condado cuando te registraste. Los lugares de votación abren de 7 a. m. a 7 p. m. hora local.",
+   "src": "https://sdsos.gov/elections-voting/voting/default.aspx",
+   "checked": "2026-10-21",
+   "quote": "You can find your polling place online by visiting the Voter Information Portal.",
+   "status": "verified"
+  }
+ },
+ "id": {
+  "rule": "photo_requested",
+  "accepted": {
+   "en": [
+    "South Dakota driver's license or nondriver ID card",
+    "U.S. government photo ID, such as a passport",
+    "U.S. Armed Forces ID",
+    "Current student photo ID from a South Dakota high school or accredited college or university",
+    "Tribal photo ID"
+   ],
+   "es": [
+    "Licencia de conducir o identificación para personas que no manejan (nondriver ID) de South Dakota",
+    "Identificación con foto del gobierno de EE. UU., como el pasaporte",
+    "Identificación de las Fuerzas Armadas de EE. UU.",
+    "Credencial de estudiante con foto vigente de una preparatoria o de una universidad acreditada de South Dakota",
+    "Identificación tribal con foto"
+   ],
+   "src": "https://sdsos.gov/elections-voting/voting/default.aspx",
+   "checked": "2026-10-21",
+   "quote": "All voters who appear at a polling place must show proof of identification (SDCL12-18-6.1). Approved forms of photo identification include:",
+   "status": "verified"
+  },
+  "expired": {
+   "status": "missing",
+   "notes": "Only the student ID is described as 'current' on the SOS page; no expired-ID rule found for the others."
+  },
+  "without": {
+   "en": "No photo ID? Sign a personal identification affidavit, and you still vote a regular ballot.",
+   "es": "¿No tienes identificación con foto? Firma una declaración jurada de identificación personal, y de todos modos votas con una boleta regular.",
+   "src": "https://sdsos.gov/elections-voting/voting/default.aspx",
+   "checked": "2026-10-21",
+   "quote": "If you do not have a photo ID, you can sign a personal identification affidavit, and will still be allowed to vote a regular ballot.",
+   "status": "verified"
+  }
+ },
+ "mail": {
+  "who": {
+   "status": "missing",
+   "notes": "The SOS absentee page says only 'If you are unable to attend your polling place in person on Election Day, you may be eligible to vote by absentee ballot.' and 'At any time prior to an election, a voter may apply for an absentee ballot'. It never says plainly whether a reason is needed, so eligibility is not stated."
+  },
+  "witness": {
+   "status": "missing",
+   "notes": "No return-envelope witness or notary rule found on the SOS absentee page. Mailed applications must be the original, signed form."
+  },
+  "track_url": "",
+  "cure": {
+   "status": "missing"
+  },
+  "dropbox": {
+   "status": "missing",
+   "notes": "No drop box or return-method rule found on the SOS absentee page beyond returning the ballot to the County Election Official."
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "en": "Leave the campaign signs and posters at home. Within 100 feet of any entrance to a polling place, including where people vote absentee, no one may display campaign posters, signs or other campaign materials or ask for votes.",
+   "es": "Deja en casa los letreros y carteles de campaña. A menos de 100 pies de cualquier entrada a un lugar de votación, incluso donde se vota en ausencia, nadie puede mostrar carteles, letreros u otros materiales de campaña ni pedir votos.",
+   "src": "https://sdlegislature.gov/Statutes/12-18-3",
+   "checked": "2026-10-21",
+   "quote": "Except for sample ballots and materials and supplies necessary for the conduct of the election, no person may, in any polling place or within or on any building in which a polling place is located or within one hundred feet from any entrance leading into a polling place, maintain a campaign office or public address system, or use any communication or photographic device in a manner which repeatedly distracts, interrupts, or intimidates any voter or election worker, or display campaign posters, signs, or other campaign materials or by any like means solicit any votes for or against any person or political party or position on a question submitted or which may be submitted.",
+   "status": "verified"
+  },
+  "phone": {
+   "en": "Take your sticker selfie, not a ballot selfie. South Dakota law bars showing anyone your marked ballot in a way that reveals your votes.",
+   "es": "Tómate la selfie con tu sticker, no con tu boleta. La ley de South Dakota prohíbe mostrarle a alguien tu boleta marcada de forma que se vea por quién votaste.",
+   "src": "https://sdlegislature.gov/Statutes/12-18-27",
+   "checked": "2026-10-21",
+   "quote": "No person may publicize an official ballot after it is marked to any person in such a way as to reveal the contents of the official ballot, or the name of any candidate for whom the person has marked a vote.",
+   "status": "verified"
+  },
+  "line": {
+   "status": "missing",
+   "notes": "No in-line-at-closing rule found on sdsos.gov or in the statutes read."
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "en": "For the 2026 general election, the Secretary of State asked South Dakota students to design the next I Voted sticker, through the Civics in the 605 Statewide Sticker Showcase. Entries came in from kindergarten through 12th grade, in four age groups.",
+   "es": "Para la elección general de 2026, la Secretaría de Estado invitó a estudiantes de South Dakota a diseñar el próximo sticker de \"I Voted\", con el concurso estatal Civics in the 605 Statewide Sticker Showcase. Participaron desde kínder hasta 12.º grado, en cuatro grupos de edad.",
+   "src": "https://sdsos.gov/Information/sos-awards.aspx",
+   "checked": "2026-10-21",
+   "quote": "The Secretary of State's Office invited students to design the next “I Voted” sticker for use during the 2026 General Election.",
+   "status": "verified"
+  }
+ },
+ "faq": {
+  "provisional": {
+   "en": "A provisional ballot counts only if your county finds you registered in that precinct before the registration deadline. The county checks before the official canvass.",
+   "es": "Una boleta provisional solo se cuenta si tu condado confirma que te registraste en ese precinto antes de la fecha límite de registro. El condado lo revisa antes del escrutinio oficial.",
+   "src": "https://sdlegislature.gov/Statutes/12-20-5.1",
+   "checked": "2026-10-21",
+   "quote": "If there is no evidence that a voter registration form had been completed by the person showing a residence address in that precinct and returned to an official voter registration site prior to the deadline to register to vote for the election, the provisional ballot is invalid.",
+   "status": "verified"
+  },
+  "late_mail": {
+   "en": "Running late? Hand it to your county election official on Election Day early enough for it to reach your precinct before 7 p.m. local time. Ballots delivered after the polls close aren't counted.",
+   "es": "¿Se te hizo tarde? Entrégala al funcionario electoral de tu condado el Día de las Elecciones con tiempo para que llegue a tu precinto antes de las 7 p. m. hora local. Las boletas que llegan después del cierre no se cuentan.",
+   "src": "https://sdlegislature.gov/Statutes/12-19-12",
+   "checked": "2026-10-21",
+   "quote": "If an absentee ballot is delivered to a polling place, absentee counting board, or the office of the person in charge of the election after the polls are closed in the county or local jurisdiction, the absentee ballot may not be counted or opened.",
+   "status": "verified"
+  }
+ },
+ "notes": "Read October 21, 2026 with curl on sdsos.gov (Voting, Absentee Voting, 2026 Election Information, Information/sos-awards) and the sdlegislature.gov statutes API (12-18-3, 12-18-27, 12-19-2.1, 12-19-12, 12-20-5.1), cited by their public URLs (https://sdlegislature.gov/Statutes/<section>), as faq-sources.json does. The phone fact rests on 12-18-27, the same section the existing FAQ selfie answer cites. 12-18-3 also bars using 'any communication or photographic device in a manner which repeatedly distracts, interrupts, or intimidates any voter or election worker' within 100 feet; not used on the page. Weekday for November 2 is the calendar weekday. EARLY VOTING FOR THE LEAD (states.js has SD unchecked): in-person absentee voting at the County Auditor's office, Friday, September 18, 2026 through 5 p.m. Monday, November 2, 2026 (or later if regular office hours run later). Sources: (1) https://sdsos.gov/elections-voting/upcoming-elections/general-information/2026%20Election%20Information/2026-Election-Information.aspx: 'Absentee Voting Begins: September 18, 2026' under 'General Election Date: November 3, 2026'. (2) https://sdsos.gov/elections-voting/voting/absentee-voting.aspx: 'Registered voters can vote in-person once Absentee Voting begins at their County Auditor's office by bringing along a valid photo identification card (ID).' and 'At any time prior to an election, a voter may apply for an absentee ballot in person at the office of and to the person in charge of the election during regular office hours or until five p.m. on the day before the election, whichever is later.' Hours: county office hours. Suggested states.js note: 'Vote absentee in person at your County Auditor's office through Mon., Nov. 2.' Not found: absentee eligibility stated plainly, ballot tracking, drop boxes, witness rule, cure, expired-ID rule, line rule."
+}

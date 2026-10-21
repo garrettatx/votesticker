@@ -1,0 +1,206 @@
+{
+ "abbr": "ND",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "www.sos.nd.gov": {
+   "en": "the North Dakota Secretary of State",
+   "es": "la Secretaría de Estado de North Dakota"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "There's nothing to register for. North Dakota doesn't require voter registration, but you do need a valid ID to vote, so have yours ready before you go.",
+   "es": "No hay nada que registrar. North Dakota no exige registro de votantes, pero sí necesitas una identificación válida para votar, así que tenla lista antes de ir.",
+   "src": "https://www.sos.nd.gov/elections/voter/voting-north-dakota",
+   "checked": "2026-10-21",
+   "quote": "North Dakota does not require voter registration, but you do need to have a valid form of identification that can be used for voting.",
+   "status": "verified"
+  },
+  "mail_request": {
+   "en": "Get your absentee ballot application to your county auditor by Monday, November 2, 2026. You'll need to give your ID information on it.",
+   "es": "Entrega tu solicitud de boleta de voto en ausencia al auditor de tu condado (county auditor) a más tardar el lunes 2 de noviembre de 2026. Tienes que poner los datos de tu identificación en ella.",
+   "src": "https://www.sos.nd.gov/elections/voter/elections-currentpast",
+   "checked": "2026-10-21",
+   "quote": "November 2, 2026 - Absentee Application Submission Deadline",
+   "status": "verified",
+   "until": "2026-11-02",
+   "en_after": "Absentee applications closed November 2, 2026. Vote in person on Election Day with your ID.",
+   "es_after": "Las solicitudes de voto en ausencia cerraron el 2 de noviembre de 2026. Vota en persona el Día de las Elecciones con tu identificación."
+  },
+  "mail_return": {
+   "en": "Your ballot must be received by the close of polls on Tuesday, November 3, 2026. Mail it with your own postage, use a county drop box, or hand it to your county auditor. Polling places won't take it.",
+   "es": "Tu boleta debe llegar antes de que cierren las urnas el martes 3 de noviembre de 2026. Mándala por correo con tu propia estampilla, usa un buzón de entrega del condado o entrégala al auditor de tu condado. Los lugares de votación no la reciben.",
+   "src": "https://www.sos.nd.gov/elections/voter/voting-north-dakota/how-do-i-vote/absentee-voting",
+   "checked": "2026-10-21",
+   "quote": "Absentee ballots must be received by the close of polls on Election Day , and can be returned by mail, county drop box, or in person to the county auditor.",
+   "status": "verified"
+  },
+  "early_hours": {
+   "status": "missing",
+   "notes": "Early voting is offered only in some counties, on dates and hours each county sets (listed by county on vip.sos.nd.gov/Precincts.aspx?eid=348). No statewide hours."
+  },
+  "cure": {
+   "status": "missing",
+   "notes": "No absentee cure process found on the SOS absentee page."
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "Some counties offer early voting on set dates and times before Election Day; check whether yours does. On Election Day, vote at the polling location for your precinct, or at any vote center in your county if your county uses them. Either way, a poll worker checks your ID and asks if you're 18, a U.S. citizen and have lived in North Dakota for the last 30 days.",
+   "es": "Algunos condados ofrecen votación anticipada en fechas y horarios fijos antes del Día de las Elecciones; revisa si el tuyo la tiene. El Día de las Elecciones, vota en el lugar de votación de tu precinto, o en cualquier centro de votación de tu condado si tu condado los usa. En los dos casos, un trabajador electoral revisa tu identificación y te pregunta si tienes 18 años, si eres ciudadano de EE. UU. y si has vivido en North Dakota los últimos 30 días.",
+   "src": "https://www.sos.nd.gov/elections/voter/voting-north-dakota/how-do-i-vote",
+   "checked": "2026-10-21",
+   "quote": "Some communities offer early voting at certain dates and times prior to Election Day.",
+   "status": "verified"
+  },
+  "first_time": {
+   "en": "Moved since your ND ID was issued? Update it with the Department of Transportation if you can. If not, bring your ID plus a current bank statement, utility bill, paycheck or government document with your new address.",
+   "es": "¿Te mudaste desde que te dieron tu identificación de North Dakota? Actualízala con el Departamento de Transporte si puedes. Si no, lleva tu identificación junto con un estado de cuenta bancario, un recibo de servicios, un talón de pago o un documento del gobierno reciente con tu nueva dirección.",
+   "src": "https://www.sos.nd.gov/elections/voter/voting-north-dakota/forms-voter-id",
+   "checked": "2026-10-21",
+   "quote": "You can bring your non-updated, North Dakota issued identification along with supplemental information that includes your updated address to the polling location on Election Day.",
+   "status": "verified"
+  }
+ },
+ "where": {
+  "locator_url": "https://vip.sos.nd.gov/WhereToVote.aspx?tab=AddressandVotingTimes&ptlPKID=7&ptlhPKID=50",
+  "locator_label": {
+   "en": "My Voting Information (North Dakota Secretary of State)",
+   "es": "Buscador oficial de información para votar (Secretaría de Estado de North Dakota)"
+  },
+  "locator_cta": {
+   "en": "Find my polling place",
+   "es": "Buscar mi lugar de votación"
+  },
+  "local_offices_url": "https://www.sos.nd.gov/elections/voter/current-officials/county-election-officials",
+  "sample_ballot_url": "https://vip.sos.nd.gov/WhereToVote.aspx?tab=AddressandVotingTimes&ptlPKID=7&ptlhPKID=50",
+  "rule": {
+   "en": "Enter your address in the My Voting Information portal to see your polling location, its hours and your sample ballot. Some counties use vote centers, where you can vote at any one in the county.",
+   "es": "Escribe tu dirección en el buscador oficial del estado (My Voting Information) para ver tu lugar de votación, su horario y tu boleta de muestra. Algunos condados usan centros de votación, donde puedes votar en cualquiera del condado.",
+   "src": "https://www.sos.nd.gov/elections/voter/voting-north-dakota/how-do-i-vote",
+   "checked": "2026-10-21",
+   "quote": "You can enter your address into the My Voting Info portal to find out where you can go to vote based on where you live.",
+   "status": "verified"
+  }
+ },
+ "id": {
+  "rule": "id_nonphoto",
+  "accepted": {
+   "en": [
+    "North Dakota driver's license",
+    "North Dakota non-driver ID",
+    "Tribal ID or tribal letter",
+    "Long-term care certificate from a North Dakota facility you live in"
+   ],
+   "es": [
+    "Licencia de conducir de North Dakota",
+    "Identificación de North Dakota para personas que no manejan (non-driver ID)",
+    "Identificación tribal o carta tribal",
+    "Certificado de cuidado a largo plazo de un centro de North Dakota donde vives (long-term care certificate)"
+   ],
+   "src": "https://www.sos.nd.gov/elections/voter/voting-north-dakota",
+   "checked": "2026-10-21",
+   "quote": "North Dakota is the only state without voter registration as our Voter ID Law requires a valid form of ID to vote. Valid forms of ID that can be used for voting are:",
+   "status": "verified"
+  },
+  "expired": {
+   "status": "missing",
+   "notes": "No expired-ID rule found on the SOS Forms of Voter ID page. It does say NDDOT digital IDs are not accepted and out-of-state IDs can't be used with supplemental documents."
+  },
+  "without": {
+   "en": "No valid ID with you? You can vote a set-aside ballot. It counts once you show your ID to your county auditor, in person or electronically, within 13 days after the election, before the County Canvassing Board meets.",
+   "es": "¿No traes una identificación válida? Puedes votar con una boleta apartada (set-aside ballot). Se cuenta cuando muestras tu identificación al auditor de tu condado, en persona o por medios electrónicos, dentro de los 13 días después de la elección, antes de que se reúna la junta de escrutinio del condado (County Canvassing Board).",
+   "src": "https://www.sos.nd.gov/elections/voter/voting-north-dakota/forms-voter-id",
+   "checked": "2026-10-21",
+   "quote": "Within 13 days after the election, you must update or present your driver’s license, non-driver ID, Tribal ID or documentation, or Long Term Care Certificate before the County Canvassing Board meets.",
+   "status": "verified"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "Any eligible voter can vote absentee, but you have to ask first: no one is mailed a ballot without an application. In vote-by-mail counties, the county auditor mails you the application.",
+   "es": "Cualquier persona con derecho a votar puede votar en ausencia, pero primero tienes que pedirlo: a nadie le mandan una boleta sin una solicitud. En los condados que votan por correo, el auditor del condado te manda la solicitud por correo.",
+   "src": "https://www.sos.nd.gov/elections/voter/voting-north-dakota/how-do-i-vote/absentee-voting",
+   "checked": "2026-10-21",
+   "quote": "In vote by mail counties, voting age residents are mailed an absentee ballot application by their county auditor.",
+   "status": "verified"
+  },
+  "witness": {
+   "en": "Sign the return envelope yourself. Your county compares that signature with the one on your application.",
+   "es": "Firma tú mismo el sobre de devolución. Tu condado compara esa firma con la de tu solicitud.",
+   "src": "https://www.sos.nd.gov/elections/voter/voting-north-dakota/how-do-i-vote/absentee-voting",
+   "checked": "2026-10-21",
+   "quote": "Signatures from the absentee ballot application are compared to the signature on the returned ballot envelope. Only you should sign your absentee ballot return envelope.",
+   "status": "verified"
+  },
+  "track_url": "https://vip.sos.nd.gov/AbsenteeTracker.aspx",
+  "cure": {
+   "status": "missing"
+  },
+  "dropbox": {
+   "en": "Every county has secure absentee ballot drop boxes. Get your ballot in one by the close of polls on Election Day, or hand it to your county auditor.",
+   "es": "Cada condado tiene buzones de entrega seguros para boletas de voto en ausencia. Deja tu boleta en uno antes de que cierren las urnas el Día de las Elecciones, o entrégala al auditor de tu condado.",
+   "src": "https://www.sos.nd.gov/elections/voter/voting-north-dakota/how-do-i-vote/absentee-voting",
+   "checked": "2026-10-21",
+   "quote": "Strategically placed secure absentee ballot drop boxes are provided in each county for voters who wish to deliver their absentee ballot directly to the county. Ballots must be placed in the drop box by the close of polls on Election Day.",
+   "status": "verified"
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "en": "Leave the campaign buttons and hats at home. Within 100 feet of the polling place entrance, and inside, you can't wear political badges, buttons or insignias, or try to sway anyone's vote.",
+   "es": "Deja en casa los botones y gorras de campaña. A menos de 100 pies de la entrada del lugar de votación, y adentro, no puedes llevar insignias, botones ni distintivos políticos, ni tratar de influir en el voto de nadie.",
+   "src": "https://www.sos.nd.gov/elections/voter/voting-north-dakota",
+   "checked": "2026-10-21",
+   "quote": "Political badges, buttons, insignias, or other items may not be worn within 100 feet from the entrance of a polling place or in the polling place while it is open for voting.",
+   "status": "verified"
+  },
+  "phone": {
+   "status": "missing",
+   "notes": "No phone or photo rule found on sos.nd.gov; faq-sources.json found none in NDCC either."
+  },
+  "line": {
+   "status": "missing",
+   "notes": "No in-line-at-closing rule found on sos.nd.gov pages read."
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "en": "North Dakota held its first statewide I Voted sticker contest for 2026. Haylee Senger of Bottineau won with \"You Betcha I Voted,\" picked by 4,792 North Dakotans from 478 artists' entries. It debuted at the June 9 primary.",
+   "es": "North Dakota hizo su primer concurso estatal de stickers de \"I Voted\" para 2026. Ganó Haylee Senger, de Bottineau, con \"You Betcha I Voted\", elegido por 4,792 personas de North Dakota entre las propuestas de 478 artistas. Se estrenó en la elección primaria del 9 de junio.",
+   "src": "https://www.sos.nd.gov/elections/civic-engagement-initiative/i-voted-sticker-design-contest",
+   "checked": "2026-10-21",
+   "quote": "Haylee Senger from Bottineau submitted the winning “You Betcha I Voted” sticker design, which debuted at the polls during the 2026 Primary Election on June 9.",
+   "status": "verified"
+  }
+ },
+ "faq": {
+  "provisional": {
+   "en": "North Dakota uses a set-aside ballot if you don't have a valid ID with you. Show your ID to the county auditor within 13 days after the election, before the County Canvassing Board meets, and your ballot will be counted.",
+   "es": "North Dakota usa una boleta apartada (set-aside ballot) si no traes una identificación válida. Muestra tu identificación al auditor del condado dentro de los 13 días después de la elección, antes de que se reúna la junta de escrutinio del condado, y tu boleta se contará.",
+   "src": "https://www.sos.nd.gov/elections/voter/voting-north-dakota/forms-voter-id",
+   "checked": "2026-10-21",
+   "quote": "You may submit your identification to the county auditor, in person or electronically, and your ballot will be counted.",
+   "status": "verified"
+  },
+  "track": {
+   "en": "Use the state's absentee ballot tracker to see whether your county received your ballot.",
+   "es": "Usa el buscador oficial del estado para seguir tu boleta de voto en ausencia (absentee ballot tracker) y ver si tu condado ya la recibió.",
+   "src": "https://www.sos.nd.gov/elections/voter/voting-north-dakota/how-do-i-vote/absentee-voting",
+   "checked": "2026-10-21",
+   "quote": "You can track your ballot to see if your ballot was received.",
+   "status": "verified"
+  },
+  "late_mail": {
+   "en": "Don't bring it to your polling place; absentee ballots aren't accepted there on Election Day. Put it in a county drop box or hand it to your county auditor before polls close.",
+   "es": "No la lleves a tu lugar de votación; ahí no aceptan boletas de voto en ausencia el Día de las Elecciones. Déjala en un buzón de entrega del condado o entrégala al auditor de tu condado antes de que cierren las urnas.",
+   "src": "https://www.sos.nd.gov/elections/voter/voting-north-dakota/how-do-i-vote/absentee-voting",
+   "checked": "2026-10-21",
+   "quote": "They will NOT be accepted at polling locations on Election Day.",
+   "status": "verified"
+  }
+ },
+ "notes": "Read October 21, 2026 with curl on sos.nd.gov (Voting in North Dakota, Forms of Voter ID, How Do I Vote, Absentee Voting, Where Do I Vote, Elections - Current/Past, I Voted Sticker Design Contest) and vip.sos.nd.gov (Precincts.aspx?eid=348, page 1 of the early voting list). Weekday for November 2 is the calendar weekday. NO VOTER REGISTRATION: the file uses the SOS sentence 'North Dakota does not require voter registration, but you do need to have a valid form of identification that can be used for voting.' and 'North Dakota is the only state without voter registration as our Voter ID Law requires a valid form of ID to vote.' Polls close between 7 and 9 p.m. local time depending on the county (faq_text.py), so mail_return says 'close of polls' as the SOS does. EARLY VOTING FOR THE LEAD (states.js has ND unchecked): no statewide window. 'Some communities offer early voting at certain dates and times prior to Election Day.' (https://www.sos.nd.gov/elections/voter/voting-north-dakota/how-do-i-vote), with the county list at https://vip.sos.nd.gov/Precincts.aspx?eid=348 ('Early Voting Available Counties'). Page 1 of that list (page 2 needs a postback and was not opened) shows: Burleigh (Bismarck Event Center) Oct 22 to Nov 2, 2026, with 'Oct 22 2026 12:00PM-Oct 22 2026 5:30PM' first and 'Nov 2 2026 9:00AM-Nov 2 2026 5:00PM' last; Cass (five Fargo-area sites) Oct 27 to Oct 31, 'Oct 27 2026 11:00AM-Oct 27 2026 7:00PM'; Grand Forks (Alerus Center) Oct 27 to Oct 31; Morton (Mandan Public Library) Oct 27 to Nov 2; Sioux County one-evening absentee voting days Oct 28 and Oct 30. Absentee voting began 'September 24, 2026 - Absentee Begins' (elections-currentpast). Suggested states.js note: 'Early voting in some counties only; dates vary. Check your county.' Not found: statewide early voting hours, cure process, expired-ID rule, phone and line rules."
+}

@@ -19,6 +19,7 @@ return array(
 	),
 	// State facts: summary (when the standard sentence would mislead) and note, from states.js.
 	'states' => array(
+		'NM' => array( 'note' => 'La votación anticipada empieza en las oficinas del secretario del condado (County Clerk). Más lugares abren en todo el estado el 17 de octubre.' ),
 		'KY' => array( 'note' => 'La votación anticipada sin excusa es de jueves a sábado. Cada condado fija sus horarios y lugares.' ),
 		'LA' => array( 'note' => 'De 8:30 a. m. a 6 p. m.; no hay votación anticipada el domingo 25 de octubre.' ),
 		'CT' => array( 'note' => 'La mayoría de los días de 10 a. m. a 6 p. m.; el martes 27 y el jueves 29 de octubre, de 8 a. m. a 8 p. m.' ),
