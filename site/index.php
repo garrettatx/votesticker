@@ -245,7 +245,106 @@ function vote_state_faq( $st ) {
 	foreach ( VOTE_FAQ_Q as $key => $q ) {
 		$a = $all[ $st['abbr'] ][ $key ] ?? null;
 		if ( ! $a || empty( $a['src'] ) || empty( $a[ vote_es() ? 'es' : 'en' ] ) ) { continue; }
-		$out[] = array( t( $q, vote_name( $st ) ), $a[ vote_es() ? 'es' : 'en' ], $a['src'] );
+		$out[] = array( t( $q, vote_name( $st ) ), $a[ vote_es() ? 'es' : 'en' ], $a['src'], VOTE_FAQ_CHECKED );
+	}
+	// Extra questions answered in the state's facts file (build/state-facts/), each with its own check date.
+	foreach ( VOTE_FACT_Q as $path => $q ) {
+		$f = vote_fact( $st, $path );
+		if ( $f ) { $out[] = array( t( $q, vote_name( $st ) ), $f['text'], $f['src'], $f['checked'] ); }
+	}
+	return $out;
+}
+const VOTE_FACT_Q = array(
+	'dates.mail_return' => 'When is the mail ballot deadline in %s?',
+	'faq.provisional'   => 'What is a provisional ballot in %s, and does it count?',
+	'faq.line'          => 'What if I am in line when the polls close in %s?',
+	'faq.track'         => 'How do I check that my mail ballot was counted in %s?',
+);
+
+// The voting guide facts for a state (build/facts_text.py writes site/facts-states.php from
+// build/state-facts/<abbr>.json). vote_fact() returns array( text, src, checked ) in the page language,
+// a bare string for URLs, labels and rules, or null when the state has no verified fact (or, on a
+// Spanish page, no Spanish text yet).
+function vote_facts( $abbr ) {
+	static $all = null;
+	if ( null === $all ) { $f = __DIR__ . '/facts-states.php'; $all = is_file( $f ) ? require $f : array(); }
+	return $all[ $abbr ] ?? array();
+}
+function vote_fact( $st, $path ) {
+	$f = vote_facts( $st['abbr'] )[ $path ] ?? null;
+	if ( ! is_array( $f ) ) { return $f; }
+	$text = $f[ vote_es() ? 'es' : 'en' ] ?? '';
+	return $text ? array( 'text' => $text, 'src' => $f['src'], 'checked' => $f['checked'] ) : null;
+}
+function vote_host( $url ) { return preg_replace( '#^www\.#', '', (string) parse_url( $url, PHP_URL_HOST ) ); }
+function vote_checked( $ymd ) { $t = strtotime( $ymd ); return vote_es() ? date( 'j', $t ) . ' de ' . VOTE_MESES[ date( 'n', $t ) - 1 ] . ' de ' . date( 'Y', $t ) : date( 'F j, Y', $t ); }
+// The source line under a fact: the official host as a link and the date it was read.
+function vote_cite( $f ) {
+	return '<span class="cite">' . vote_e( t( 'Source:' ) ) . ' <a href="' . vote_e( $f['src'] ) . '" target="_blank" rel="noopener">' . vote_e( vote_host( $f['src'] ) ) . '</a>, ' . vote_e( t( 'checked %s.', vote_checked( $f['checked'] ) ) ) . '</span>';
+}
+function vote_fact_p( $f ) { return $f ? '<p>' . vote_e( $f['text'] ) . ' ' . vote_cite( $f ) . '</p>' : ''; }
+
+// The guide: dates, where to vote, ID, mail voting, rules at the polls, the state's sticker tradition.
+// Every block shows only when its facts are verified; a state without a facts file shows none of it.
+function vote_guide( $st ) {
+	if ( ! vote_facts( $st['abbr'] ) ) { return ''; }
+	$name = 'DC' === $st['abbr'] ? 'DC' : $st['name'];
+	$h = function ( $id, $text ) { return '<h2 class="display-h guide__h" id="' . $id . '">' . vote_e( $text ) . '</h2>'; };
+	$out = '';
+
+	// Dates and deadlines, as a table.
+	$rows = array();
+	$add = function ( $label, $f ) use ( &$rows ) { if ( $f ) { $rows[] = '<tr><th scope="row">' . vote_e( t( $label ) ) . '</th><td>' . vote_e( $f['text'] ) . ' ' . vote_cite( $f ) . '</td></tr>'; } };
+	$add( 'Register to vote by', vote_fact( $st, 'dates.reg_deadline' ) );
+	if ( vote_verified( $st ) && 'in-person' === $st['kind'] && ! empty( $st['start'] ) ) {
+		$rows[] = '<tr><th scope="row">' . vote_e( t( 'Early voting' ) ) . '</th><td>' . vote_e( vote_es() ? 'Del ' . vote_day( $st['start'] ) . ' al ' . vote_day( $st['end'] ) . ' de 2026.' : vote_day( $st['start'] ) . ' to ' . vote_day( $st['end'] ) . ', 2026.' )
+			. ' ' . vote_cite( array( 'src' => $st['sourceUrl'] ?? $st['officialUrl'], 'checked' => $st['checked'] ) ) . '</td></tr>';
+	}
+	$add( 'Early voting hours', vote_fact( $st, 'dates.early_hours' ) );
+	$add( 'Request a mail ballot by', vote_fact( $st, 'dates.mail_request' ) );
+	$add( 'Return a mail ballot by', vote_fact( $st, 'dates.mail_return' ) );
+	$add( 'Fix a problem with a mail ballot by', vote_fact( $st, 'dates.cure' ) );
+	$rows[] = '<tr><th scope="row">' . vote_e( t( 'Election Day' ) ) . '</th><td>' . vote_e( vote_es() ? 'Martes 3 de noviembre de 2026.' : 'Tuesday, November 3, 2026.' ) . '</td></tr>';
+	if ( count( $rows ) > 1 ) {
+		$out .= '<section class="guide" aria-labelledby="dates-h">' . $h( 'dates-h', t( '%s Voting Dates and Deadlines, 2026', $name ) )
+			. '<table class="dates"><caption class="sr-only">' . vote_e( t( '%s voting dates and deadlines for the November 3, 2026 election', $name ) ) . '</caption><tbody>' . implode( '', $rows ) . '</tbody></table></section>';
+	}
+
+	// Where to vote.
+	$where = vote_fact_p( vote_fact( $st, 'how.in_person' ) ) . vote_fact_p( vote_fact( $st, 'where.rule' ) ) . vote_fact_p( vote_fact( $st, 'how.first_time' ) );
+	$loc = vote_fact( $st, 'where.locator_url' );
+	if ( $loc ) {
+		$where .= '<p><a class="official" href="' . vote_e( $loc ) . '" target="_blank" rel="noopener"><span><b>' . vote_e( t( 'Find where you vote' ) ) . '</b><small>' . vote_e( vote_fact( $st, 'where.locator_label' ) ) . '</small></span></a></p>';
+	}
+	$offices = vote_fact( $st, 'where.local_offices_url' );
+	if ( $offices ) { $where .= '<p class="guide__more"><a href="' . vote_e( $offices ) . '" target="_blank" rel="noopener">' . vote_e( t( '%s county and local election offices', $name ) ) . '</a></p>'; }
+	if ( $where ) { $out .= '<section class="guide" aria-labelledby="where-h">' . $h( 'where-h', t( 'Where to Vote in %s', $name ) ) . $where . '</section>'; }
+
+	// Voter ID.
+	$ids = vote_facts( $st['abbr'] )['id.accepted'] ?? null;
+	$list = $ids ? ( vote_es() ? $ids['es'] : $ids['en'] ) : array();
+	$id = '';
+	if ( $list ) {
+		$id .= '<p>' . vote_e( t( 'Bring one of these:' ) ) . '</p><ul class="guide__list">';
+		foreach ( $list as $item ) { $id .= '<li>' . vote_e( $item ) . '</li>'; }
+		$id .= '</ul><p class="guide__src">' . vote_cite( array( 'src' => $ids['src'], 'checked' => $ids['checked'] ) ) . '</p>';
+	}
+	$id .= vote_fact_p( vote_fact( $st, 'id.expired' ) ) . vote_fact_p( vote_fact( $st, 'id.without' ) );
+	if ( $id ) { $out .= '<section class="guide" aria-labelledby="id-h">' . $h( 'id-h', t( 'Voter ID in %s', $name ) ) . $id . '</section>'; }
+
+	// Voting by mail.
+	$mail = vote_fact_p( vote_fact( $st, 'mail.who' ) ) . vote_fact_p( vote_fact( $st, 'mail.witness' ) ) . vote_fact_p( vote_fact( $st, 'mail.dropbox' ) ) . vote_fact_p( vote_fact( $st, 'mail.cure' ) );
+	$track = vote_fact( $st, 'mail.track_url' );
+	if ( $track ) { $mail .= '<p class="guide__more"><a href="' . vote_e( $track ) . '" target="_blank" rel="noopener">' . vote_e( t( 'Track your %s mail ballot', $name ) ) . '</a></p>'; }
+	if ( $mail ) { $out .= '<section class="guide" aria-labelledby="mail-h">' . $h( 'mail-h', t( 'Voting by Mail in %s', $name ) ) . $mail . '</section>'; }
+
+	// Rules at the polls, then the state's own sticker tradition, which leads back to the maker.
+	$polls = vote_fact_p( vote_fact( $st, 'polls_rules.gear' ) ) . vote_fact_p( vote_fact( $st, 'polls_rules.phone' ) ) . vote_fact_p( vote_fact( $st, 'polls_rules.line' ) );
+	if ( $polls ) { $out .= '<section class="guide" aria-labelledby="polls-h">' . $h( 'polls-h', t( 'At the Polls in %s: Campaign Gear and Phones', $name ) ) . $polls . '</section>'; }
+	$sticker = vote_fact( $st, 'sticker.tradition' );
+	if ( $sticker ) {
+		$out .= '<section class="guide" aria-labelledby="sticker-h">' . $h( 'sticker-h', t( '%s and the I Voted Sticker', $name ) ) . vote_fact_p( $sticker )
+			. '<p><a href="#maker-h">' . vote_e( t( 'Make your own %s I voted sticker', $name ) ) . '</a></p></section>';
 	}
 	return $out;
 }
@@ -573,6 +672,7 @@ $vote_ld = array(
 <link rel="preload" href="<?php echo VOTE_BASE; ?>assets/fonts/luckiest-guy.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="<?php echo vote_v( 'app.css' ); ?>">
 <?php if ( ! $vote_404 ) : ?><script type="application/ld+json"><?php echo vote_json( $vote_ld ); ?></script><?php endif; ?>
+<?php if ( $vote_st && ( $vote_faq_ld = vote_state_faq( $vote_st ) ) ) : ?><script type="application/ld+json"><?php echo vote_json( array( '@context' => 'https://schema.org', '@type' => 'FAQPage', 'inLanguage' => $vote_lang, 'mainEntity' => array_map( function ( $q ) { return array( '@type' => 'Question', 'name' => $q[0], 'acceptedAnswer' => array( '@type' => 'Answer', 'text' => $q[1] ) ); }, $vote_faq_ld ) ) ); ?></script><?php echo "\n"; endif; ?>
 <?php if ( ! $vote_st && ! $vote_404 ) : ?><script type="application/ld+json"><?php echo vote_json( array( '@context' => 'https://schema.org', '@type' => 'WebSite', 'name' => VOTE_BRAND, 'alternateName' => 'VoteSticker.org', 'url' => VOTE_SITE . vote_pbase(), 'inLanguage' => $vote_lang ) ); ?></script><?php echo "\n"; endif; ?>
 <!-- Google tag (gtag.js) -->
 <script src="https://analytics.ahrefs.com/analytics.js" data-key="JWFR/FwEHfD5yA/gz1K/Jg" async></script>
@@ -747,6 +847,7 @@ $vote_ld = array(
 
 		<h2 class="display-h before-h" id="before-h"><?php echo vote_e( $vote_st ? t( 'Before You Vote in %s', vote_es() ? vote_lname( $vote_st ) : ( 'DC' === $vote_abbr ? 'DC' : $vote_st['name'] ) ) : t( 'Before You Vote' ) ); ?></h2>
 		<section class="info" id="info" aria-live="polite" aria-labelledby="before-h"><?php echo $vote_st ? vote_info( $vote_st ) : ''; ?></section>
+		<?php echo $vote_st ? vote_guide( $vote_st ) : ''; ?>
 	</div>
 
 	<?php
@@ -813,7 +914,7 @@ $vote_ld = array(
 	<section class="faq" aria-labelledby="faq-h">
 		<h2 id="faq-h"><?php echo vote_e( t( 'Common Questions' ) ); ?></h2>
 		<?php if ( $vote_st ) : foreach ( vote_state_faq( $vote_st ) as $vote_q ) : ?>
-		<details class="faq__state"><summary><?php echo vote_e( $vote_q[0] ); ?></summary><p><?php echo vote_e( $vote_q[1] ); ?></p><p class="faq__src"><?php echo vote_e( t( 'Source:' ) ); ?> <a href="<?php echo vote_e( $vote_q[2] ); ?>" target="_blank" rel="noopener"><?php echo vote_e( preg_replace( '#^www\.#', '', parse_url( $vote_q[2], PHP_URL_HOST ) ) ); ?></a>, <?php echo vote_e( t( 'checked %s.', vote_es() ? '19 de octubre de 2026' : 'October 19, 2026' ) ); ?></p></details>
+		<details class="faq__state"><summary><?php echo vote_e( $vote_q[0] ); ?></summary><p><?php echo vote_e( $vote_q[1] ); ?></p><p class="faq__src"><?php echo vote_e( t( 'Source:' ) ); ?> <a href="<?php echo vote_e( $vote_q[2] ); ?>" target="_blank" rel="noopener"><?php echo vote_e( preg_replace( '#^www\.#', '', parse_url( $vote_q[2], PHP_URL_HOST ) ) ); ?></a>, <?php echo vote_e( t( 'checked %s.', vote_checked( $vote_q[3] ) ) ); ?></p></details>
 		<?php endforeach; else : ?>
 		<details><summary><?php echo vote_e( t( 'Can I post a photo of my ballot?' ) ); ?></summary><p><?php echo vote_e( t( 'It depends on the state. Some states allow a picture of your own marked ballot, and some make it illegal to show one. Each state page says what that state allows, where we could confirm it. The stickers made here show no ballot.' ) ); ?></p></details>
 		<?php endif; ?>

@@ -1,0 +1,174 @@
+{
+ "abbr": "TX",
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "dates": {
+  "reg_deadline": {
+   "en": "October 5, 2026. That deadline has passed for the November 3 election.",
+   "es": "El 5 de octubre de 2026. Esa fecha ya pasó para la elección del 3 de noviembre.",
+   "src": "https://www.sos.state.tx.us/elections/voter/important-election-dates.shtml",
+   "checked": "2026-10-21",
+   "quote": "Last Day to Register to Vote: Monday, October 5, 2026",
+   "status": "verified"
+  },
+  "mail_request": {
+   "en": "Your county's early voting clerk must receive your application by Friday, October 23, 2026.",
+   "es": "El encargado de la votación anticipada de tu condado (early voting clerk) debe recibir tu solicitud a más tardar el viernes 23 de octubre de 2026.",
+   "src": "https://www.sos.state.tx.us/elections/voter/important-election-dates.shtml",
+   "checked": "2026-10-21",
+   "quote": "Last day to receive application for ballot by mail: Friday, October 23, 2026",
+   "status": "verified"
+  },
+  "mail_return": {
+   "en": "In hand by 7 p.m. on Tuesday, November 3, or postmarked by 7 p.m. that day and received by 5 p.m. on Wednesday, November 4, 2026. Overseas and military deadlines differ.",
+   "es": "Debe llegar a más tardar a las 7 p. m. del martes 3 de noviembre, o tener matasellos de las 7 p. m. de ese día o antes y llegar a más tardar a las 5 p. m. del miércoles 4 de noviembre de 2026. Los plazos para votantes en el extranjero y militares son distintos.",
+   "src": "https://www.sos.state.tx.us/elections/voter/important-election-dates.shtml",
+   "checked": "2026-10-21",
+   "quote": "Wednesday, November 4, 2026 (next business day after Election Day) at 5:00 p.m. if carrier envelope is postmarked by 7:00 p.m. at the location of the election on Election Day",
+   "status": "verified"
+  },
+  "early_hours": {
+   "status": "missing"
+  },
+  "cure": {
+   "status": "missing"
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "During early voting you can vote at any early voting location in the county where you live. On Election Day, it depends on your county: counties in the Countywide Polling Place Program let you vote at any location in the county, and the rest send you to your assigned precinct.",
+   "es": "Durante la votación anticipada puedes votar en cualquier lugar de votación anticipada del condado donde vives. El Día de las Elecciones depende de tu condado: los condados del programa de lugares de votación en todo el condado (Countywide Polling Place Program) te dejan votar en cualquier lugar del condado, y los demás te asignan tu precinto.",
+   "src": "https://www.votetexas.gov/voting/where.html",
+   "checked": "2026-10-21",
+   "quote": "Registered and eligible voters may vote at ANY early voting location located in their county of residence.",
+   "status": "verified"
+  },
+  "first_time": {
+   "status": "missing"
+  }
+ },
+ "where": {
+  "locator_url": "https://goelect.txelections.civixapps.com/ivis-mvp-ui/#/login",
+  "locator_label": "My Voter Portal (Texas Secretary of State)",
+  "local_offices_url": "https://www.sos.state.tx.us/elections/voter/county.shtml",
+  "rule": {
+   "en": "Election Day polls are open 7 a.m. to 7 p.m. at every polling place in Texas. My Voter Portal shows your registration and where you can vote; your county elections office lists early voting sites and hours.",
+   "es": "El Día de las Elecciones, todos los lugares de votación de Texas abren de 7 a. m. a 7 p. m. My Voter Portal muestra tu registro y dónde puedes votar; la oficina electoral de tu condado publica los lugares y horarios de la votación anticipada.",
+   "src": "https://www.votetexas.gov/voting/where.html",
+   "checked": "2026-10-21",
+   "quote": "Election Day voting hours are 7:00 a.m. to 7:00 p.m. at all polling places statewide.",
+   "status": "verified"
+  }
+ },
+ "id": {
+  "rule": "photo_requested",
+  "accepted": {
+   "en": [
+    "Texas driver license",
+    "Texas Election Identification Certificate",
+    "Texas personal identification card",
+    "Texas handgun license",
+    "U.S. military ID card with your photo",
+    "U.S. citizenship certificate with your photo",
+    "U.S. passport, book or card"
+   ],
+   "es": [
+    "Licencia de conducir de Texas",
+    "Certificado de Identificación Electoral de Texas (Election Identification Certificate)",
+    "Tarjeta de identificación personal de Texas",
+    "Licencia de portación de armas de Texas (handgun license)",
+    "Tarjeta de identificación militar de EE. UU. con tu foto",
+    "Certificado de ciudadanía de EE. UU. con tu foto",
+    "Pasaporte de EE. UU., libreta o tarjeta"
+   ],
+   "src": "https://www.votetexas.gov/voting/need-id.html",
+   "checked": "2026-10-21",
+   "quote": "United States Passport (book or card)",
+   "status": "verified"
+  },
+  "expired": {
+   "en": "If you are 18 to 69, your ID can be expired up to four years. If you are 70 or older, it can be expired for any length of time. The citizenship certificate doesn't expire.",
+   "es": "Si tienes de 18 a 69 años, tu identificación puede tener hasta cuatro años de vencida. Si tienes 70 años o más, puede estar vencida por cualquier tiempo. El certificado de ciudadanía no vence.",
+   "src": "https://www.votetexas.gov/voting/need-id.html",
+   "checked": "2026-10-21",
+   "quote": "may be expired for any length of time if the identification is otherwise valid",
+   "status": "verified"
+  },
+  "without": {
+   "en": "If you can't reasonably get one of the seven, you can still vote a regular ballot: show a supporting document with your name, such as your voter registration certificate, a current utility bill, a bank statement, a paycheck, a government check or a certified birth certificate, and sign a Reasonable Impediment Declaration.",
+   "es": "Si no puedes conseguir una de las siete por una razón válida, igual puedes votar con una boleta regular: muestra un documento de apoyo con tu nombre, como tu certificado de registro de votante, un recibo de servicios reciente, un estado de cuenta bancario, un talón de pago, un cheque del gobierno o un acta de nacimiento certificada, y firma una declaración de impedimento razonable (Reasonable Impediment Declaration).",
+   "src": "https://www.votetexas.gov/voting/need-id.html",
+   "checked": "2026-10-21",
+   "quote": "copy of or original current utility bill;",
+   "status": "verified"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "You can vote by mail in Texas if you are 65 or older on Election Day, sick or disabled, expected to give birth within three weeks before or after Election Day, away from your county on Election Day and during early voting hours, or confined in jail or involuntary civil commitment.",
+   "es": "Puedes votar por correo en Texas si tienes 65 años o más el Día de las Elecciones, si estás enfermo o tienes una discapacidad, si esperas dar a luz en las tres semanas antes o después del Día de las Elecciones, si vas a estar fuera de tu condado el Día de las Elecciones y durante el horario de la votación anticipada, o si estás en la cárcel o bajo internamiento civil involuntario.",
+   "src": "https://www.votetexas.gov/faq/index.html",
+   "checked": "2026-10-21",
+   "quote": "are 65 years of age or older on Election Day; or",
+   "status": "verified"
+  },
+  "track_url": "",
+  "cure": {
+   "status": "missing"
+  },
+  "dropbox": {
+   "status": "missing"
+  },
+  "witness": {
+   "en": "If someone helps you with your mail ballot, their name and address go on the carrier envelope and they sign it.",
+   "es": "Si alguien te ayuda con tu boleta por correo, su nombre y dirección van en el sobre de envío y esa persona lo firma.",
+   "src": "https://www.votetexas.gov/voting-by-mail/index.html",
+   "checked": "2026-10-21",
+   "quote": "your helper's name and address must be on the carrier envelope",
+   "status": "verified"
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "en": "Within 100 feet of any outside door to the polling place, no one may wear a badge, insignia or emblem about a candidate, measure or party on the ballot, or about the conduct of the election. Electioneering, which includes political signs and literature, is banned in the same 100 feet and within 20 feet of curbside voting spaces.",
+   "es": "A menos de 100 pies de cualquier puerta exterior del lugar de votación, nadie puede llevar una insignia, emblema o distintivo sobre un candidato, una propuesta o un partido que aparezca en la boleta, ni sobre la conducción de la elección. Hacer campaña, lo que incluye letreros y folletos políticos, está prohibido en esos mismos 100 pies y a menos de 20 pies de los espacios para votar desde el auto (curbside voting).",
+   "src": "https://statutes.capitol.texas.gov/Docs/EL/htm/EL.61.htm",
+   "checked": "2026-10-21",
+   "quote": "a person may not wear a badge, insignia, emblem, or other similar communicative device relating to a candidate, measure, or political party appearing on the ballot, or to the conduct of the election, in the polling place or within 100 feet of any outside door",
+   "status": "verified"
+  },
+  "phone": {
+   "en": "You can't use a phone or other wireless device in the room where voting is taking place, and no one may record images or sound within 100 feet of a voting station.",
+   "es": "No puedes usar un teléfono ni otro aparato inalámbrico en el cuarto donde se está votando, y nadie puede grabar imágenes ni sonido a menos de 100 pies de una cabina de votación.",
+   "src": "https://statutes.capitol.texas.gov/Docs/EL/htm/EL.61.htm",
+   "checked": "2026-10-21",
+   "quote": "a person may not use a wireless communication device within a room in which voting is taking place.",
+   "status": "verified"
+  },
+  "line": {
+   "status": "missing"
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "status": "missing"
+  }
+ },
+ "faq": {
+  "provisional": {
+   "en": "You vote a provisional ballot when poll workers can't verify your registration. You'll get a notice in the mail by the 10th day after the local canvass telling you whether it counted.",
+   "es": "Votas con una boleta provisional cuando los trabajadores electorales no pueden verificar tu registro. Recibirás un aviso por correo a más tardar 10 días después del escrutinio local que te dirá si se contó.",
+   "src": "https://www.votetexas.gov/faq/index.html",
+   "checked": "2026-10-21",
+   "quote": "Provisional voters will receive a notice in the mail by the 10th day after the local canvass",
+   "status": "verified"
+  },
+  "line": {
+   "status": "missing"
+  },
+  "track": {
+   "status": "missing"
+  }
+ },
+ "notes": "Read October 21, 2026. Early voting minimum hours (Election Code 85.005), the cure deadline, the ballot tracker URL and the in-line-at-closing rule were not confirmed on an official page; left missing. Williamson County's sticker contest page blocks automated reading. The ID rule class follows docs/faq-sources.json (photo_requested: a Reasonable Impediment Declaration lets a voter without photo ID vote a regular ballot)."
+}
