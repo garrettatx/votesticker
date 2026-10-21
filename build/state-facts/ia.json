@@ -1,0 +1,213 @@
+{
+ "abbr": "IA",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "sos.iowa.gov": {
+   "en": "the Iowa Secretary of State",
+   "es": "la Secretaría de Estado de Iowa"
+  },
+  "voterready.iowa.gov": {
+   "en": "Voter Ready Iowa",
+   "es": "Voter Ready Iowa"
+  },
+  "www.legis.iowa.gov": {
+   "en": "the Iowa Code",
+   "es": "el Código de Iowa"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "Preregistration closed Monday, October 19, 2026. You can still register and vote at your polling place on Election Day.",
+   "es": "El registro previo cerró el lunes 19 de octubre de 2026. Todavía puedes registrarte y votar en tu lugar de votación el Día de las Elecciones.",
+   "src": "https://voterready.iowa.gov/",
+   "checked": "2026-10-21",
+   "quote": "Monday, October 19 – Pre-registration Deadline; Deadline to Request Absentee Ballot to be Mailed received by County Auditor prior to 5:00 p.m. CT",
+   "status": "verified"
+  },
+  "mail_request": {
+   "en": "Requests for a mailed ballot closed at 5 p.m. on Monday, October 19, 2026. You can still vote absentee in person at your county auditor's office through Monday, November 2.",
+   "es": "Las solicitudes de boleta por correo cerraron a las 5 p. m. del lunes 19 de octubre de 2026. Todavía puedes votar en ausencia en persona en la oficina del auditor de tu condado (County Auditor) hasta el lunes 2 de noviembre.",
+   "src": "https://sos.iowa.gov/news-resources/secretary-pate-encourages-iowans-make-plan-vote-2026-general-election",
+   "checked": "2026-10-21",
+   "quote": "Requests to receive a ballot by mail must be received by the County Auditor’s office by Monday, October 19, no later than 5:00 p.m. In-person absentee voting at the county auditor’s office is available through November 2, the day before the election.",
+   "status": "verified"
+  },
+  "mail_return": {
+   "en": "Your county auditor's office must receive your ballot by 8 p.m. on Tuesday, November 3. Mail it or hand deliver it to the auditor. Voted absentee ballots can't be dropped off at your polling place.",
+   "es": "La oficina del auditor de tu condado debe recibir tu boleta a más tardar a las 8 p. m. del martes 3 de noviembre. Mándala por correo o entrégala en persona al auditor. Las boletas de voto en ausencia ya llenas no se pueden entregar en tu lugar de votación.",
+   "src": "https://voterready.iowa.gov/voting-absentee/",
+   "checked": "2026-10-21",
+   "quote": "Mail your ballot so that is received by 8:00 p.m. CT on Election Day.",
+   "status": "verified"
+  },
+  "early_hours": {
+   "en": "In-person absentee voting ends at 5 p.m. on Monday, November 2, the day before the election. Ask your county auditor's office for its hours.",
+   "es": "La votación en ausencia en persona termina a las 5 p. m. del lunes 2 de noviembre, el día antes de la elección. Pregunta en la oficina del auditor de tu condado por su horario.",
+   "src": "https://voterready.iowa.gov/voting-absentee/",
+   "checked": "2026-10-21",
+   "quote": "In-person absentee voting is available beginning 20 days prior to the election and runs up to 5 p.m. the day prior to the election.",
+   "status": "verified",
+   "until": "2026-11-02",
+   "en_after": "In-person absentee voting ended November 2. Vote at your polling place on Election Day, 7 a.m. to 8 p.m.",
+   "es_after": "La votación en ausencia en persona terminó el 2 de noviembre. Vota en tu lugar de votación el Día de las Elecciones, de 7 a. m. a 8 p. m."
+  },
+  "cure": {
+   "status": "missing",
+   "notes": "No absentee ballot cure process or deadline found on sos.iowa.gov or voterready.iowa.gov."
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "Before Election Day, any registered voter can vote absentee in person at the county auditor's office or at a satellite location, if your county has one. On Election Day, vote at the polling place for the precinct where you live.",
+   "es": "Antes del Día de las Elecciones, cualquier votante registrado puede votar en ausencia en persona en la oficina del auditor del condado (County Auditor) o en un lugar satélite, si tu condado tiene uno. El Día de las Elecciones, vota en el lugar de votación del precinto donde vives.",
+   "src": "https://voterready.iowa.gov/voting-absentee/",
+   "checked": "2026-10-21",
+   "quote": "You can vote in your county auditor’s office or at an appropriate satellite location, if available.",
+   "status": "verified"
+  },
+  "first_time": {
+   "en": "Not registered yet? Go to the polling place for your current address on Election Day and register there. Bring ID and proof of where you live, like a lease, utility bill or bank statement from the last 45 days. Without them, a registered voter from your precinct can attest for you.",
+   "es": "¿Todavía no te registras? Ve al lugar de votación de tu domicilio actual el Día de las Elecciones y regístrate ahí. Lleva una identificación y un comprobante de domicilio, como un contrato de renta, un recibo de servicios o un estado de cuenta bancario de los últimos 45 días. Si no los tienes, un votante registrado de tu precinto puede dar fe de quién eres.",
+   "src": "https://sos.iowa.gov/voters/election-day",
+   "checked": "2026-10-21",
+   "quote": "If you are voting on Election Day and cannot prove who you are and where you live with the documents listed above, a registered voter from your precinct may attest for you.",
+   "status": "verified"
+  }
+ },
+ "where": {
+  "locator_url": "https://apps.sos.iowa.gov/elections/voterreg/pollingplace/search.aspx",
+  "locator_label": {
+   "en": "Find Your Polling Place (Iowa Secretary of State)",
+   "es": "Buscador oficial de lugares de votación (Secretaría de Estado de Iowa)"
+  },
+  "locator_cta": {
+   "en": "Find my polling place",
+   "es": "Buscar mi lugar de votación"
+  },
+  "local_offices_url": "https://sos.iowa.gov/auditors",
+  "rule": {
+   "en": "Iowa law says you vote at the polling place for the precinct where you live. Not sure where that is? Look it up by ZIP code or ask your county auditor.",
+   "es": "La ley de Iowa dice que votas en el lugar de votación del precinto donde vives. ¿No sabes cuál es? Búscalo con tu código postal o pregúntale al auditor de tu condado (County Auditor).",
+   "src": "https://voterready.iowa.gov/voting-at-the-polls/",
+   "checked": "2026-10-21",
+   "quote": "Iowa law requires each voter to vote in the polling place for the precinct where the voter lives. Voters with questions about where to vote may contact the county auditor or find their precinct online.",
+   "status": "verified"
+  }
+ },
+ "id": {
+  "rule": "id_nonphoto",
+  "accepted": {
+   "en": [
+    "Iowa driver's license, expired no more than 90 days",
+    "Iowa non-operator ID, expired no more than 90 days",
+    "U.S. passport, not expired",
+    "U.S. military ID or veteran ID, not expired",
+    "Iowa Voter Identification Card, signed",
+    "Tribal ID card or document, signed, with a photo, not expired"
+   ],
+   "es": [
+    "Licencia de conducir de Iowa, con no más de 90 días de vencida",
+    "Identificación de Iowa para no conductores (non-operator ID), con no más de 90 días de vencida",
+    "Pasaporte de EE. UU., vigente",
+    "Identificación militar o de veterano de EE. UU., vigente",
+    "Iowa Voter Identification Card (credencial de votante de Iowa), firmada",
+    "Tarjeta o documento de identificación tribal, firmado, con foto y vigente"
+   ],
+   "src": "https://voterready.iowa.gov/voting-at-the-polls/",
+   "checked": "2026-10-21",
+   "quote": "Iowa Driver’s License (not expired more than 90 days)",
+   "status": "verified"
+  },
+  "expired": {
+   "en": "An Iowa driver's license or non-operator ID still works up to 90 days after it expires. A passport, military or veteran ID, or tribal ID must not be expired.",
+   "es": "La licencia de conducir de Iowa o la identificación para no conductores todavía sirve hasta 90 días después de vencer. El pasaporte, la identificación militar o de veterano y la identificación tribal deben estar vigentes.",
+   "src": "https://voterready.iowa.gov/voting-at-the-polls/",
+   "checked": "2026-10-21",
+   "quote": "Iowa Non-Operator ID (not expired more than 90 days)",
+   "status": "verified"
+  },
+  "without": {
+   "en": "No ID from the list? You can prove who you are and where you live with the documents used for Election Day registration. Otherwise you'll be offered a provisional ballot, and you can bring ID until the county canvass, the Monday after Election Day.",
+   "es": "¿No tienes una identificación de la lista? Puedes comprobar quién eres y dónde vives con los documentos que se usan para registrarse el Día de las Elecciones. Si no, te ofrecerán una boleta provisional, y puedes llevar tu identificación hasta el escrutinio del condado, el lunes después del Día de las Elecciones.",
+   "src": "https://sos.iowa.gov/voters/voter-id-faq",
+   "checked": "2026-10-21",
+   "quote": "Voters without the necessary ID will be offered a provisional ballot and can provide ID up until the time of the county canvass of votes (Monday after election day for Primary and General Elections).",
+   "status": "verified"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "Any registered voter in Iowa can vote absentee, by mail or in person. You don't need a reason.",
+   "es": "Cualquier votante registrado en Iowa puede votar en ausencia, por correo o en persona. No necesitas dar una razón.",
+   "src": "https://voterready.iowa.gov/voting-absentee/",
+   "checked": "2026-10-21",
+   "quote": "Any registered voter may choose to vote absentee by mail or in person in Iowa.",
+   "status": "verified"
+  },
+  "track_url": "https://apps.sos.iowa.gov/elections/absenteeballotstatus/absentee/search",
+  "cure": {
+   "status": "missing",
+   "notes": "Not found on sos.iowa.gov or voterready.iowa.gov."
+  },
+  "dropbox": {
+   "status": "missing",
+   "notes": "The SOS and Voter Ready pages list only mail and hand delivery to the county auditor; neither page mentions drop boxes."
+  },
+  "witness": {
+   "status": "missing",
+   "notes": "Voter Ready says the request form needs no witness or notary; no statement about the ballot envelope was found."
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "en": "Keep campaigning at least 300 feet from the polling place door. On Election Day, Iowa law bans electioneering, posting signs and asking for votes on polling place grounds or within 300 feet of an outside door that leads to the polls.",
+   "es": "Mantén cualquier campaña a por lo menos 300 pies de la puerta del lugar de votación. El Día de las Elecciones, la ley de Iowa prohíbe hacer campaña, poner letreros y pedir votos en el terreno del lugar de votación o a menos de 300 pies de una puerta exterior que lleve a donde se vota.",
+   "src": "https://www.legis.iowa.gov/docs/code/39A.4.pdf",
+   "checked": "2026-10-21",
+   "quote": "Loitering, congregating, electioneering, posting signs, treating voters, or soliciting votes, during the receiving of the ballots, either on the premises of a polling place or within three hundred feet of an outside door of a building affording access to a room where the polls are held",
+   "status": "verified"
+  },
+  "phone": {
+   "en": "Take your sticker selfie without getting in other voters' way. Iowa bans photos and showing your voted ballot only when it's for an illegal purpose or it interferes with other voters or the polling place.",
+   "es": "Tómate la selfie con tu sticker sin estorbar a otros votantes. Iowa prohíbe las fotos y mostrar tu boleta votada solo cuando es con un fin ilegal o cuando interfiere con otros votantes o con el lugar de votación.",
+   "src": "https://www.legis.iowa.gov/docs/code/49.88.pdf",
+   "checked": "2026-10-21",
+   "quote": "The use of photographic devices and the display of voted ballots is prohibited if such use or display is for purposes prohibited under chapter 39A, interferes with other voters, or interferes with the orderly operation of the polling place.",
+   "status": "verified"
+  },
+  "line": {
+   "status": "missing",
+   "notes": "Iowa Code 49.73 sets the 8 p.m. close but says nothing about voters in line; no SOS page found that states the in-line rule."
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "status": "missing",
+   "notes": "No statewide or county I voted sticker page found on an official host."
+  }
+ },
+ "faq": {
+  "provisional": {
+   "en": "You're offered a provisional ballot if you were already sent an absentee ballot, don't show ID when it's required, or are challenged by another voter. You get a notice that day saying why and whether you need to bring more documents.",
+   "es": "Te ofrecen una boleta provisional si ya te habían mandado una boleta de voto en ausencia, si no muestras identificación cuando se requiere o si otro votante te impugna. Ese mismo día recibes un aviso que dice por qué y si necesitas llevar más documentos.",
+   "src": "https://sos.iowa.gov/voters/voter-id-faq",
+   "checked": "2026-10-21",
+   "quote": "Provisional voters receive a notice on Election Day with information about the reason for the challenge and whether they need to provide additional documentation regarding their eligibility.",
+   "status": "verified"
+  },
+  "line": {
+   "status": "missing"
+  },
+  "track": {
+   "en": "Once your county auditor has your request, you can track your absentee ballot on the Secretary of State's Track Your Absentee Ballot page.",
+   "es": "Cuando el auditor de tu condado ya tiene tu solicitud, puedes seguir tu boleta de voto en ausencia en la página de seguimiento de la Secretaría de Estado (Track Your Absentee Ballot).",
+   "src": "https://voterready.iowa.gov/voting-absentee/",
+   "checked": "2026-10-21",
+   "quote": "Did you know you can track the status of your absentee ballot after your request form has been received by the county auditor?",
+   "status": "verified"
+  }
+ },
+ "notes": "Read October 21, 2026. sos.iowa.gov and voterready.iowa.gov return 403 to curl and WebFetch; read in Chrome. EARLY VOTING DATES match states.js (October 14 to November 2): the SOS release of September 15, 2026 says 'Iowans can begin casting ballots for the 2026 General Election on Wednesday, October 14' and 'In-person absentee voting at the county auditor’s office is available through November 2, the day before the election.' Voter Ready's calendar adds 'Monday, November 2 – Absentee Ballot In-Person Deadline' and says in-person absentee 'runs up to 5 p.m. the day prior to the election.' Registration: the existing faq_text.py says preregistration closes October 19, which the Voter Ready calendar now confirms. ID: the SOS Election Day page lists more photo IDs (out-of-state license, employer ID, Iowa student ID) as proof of identity for Election Day registration; the file uses the six IDs Voter Ready and the SOS Voter ID FAQ list for registered voters. Drop boxes, cure, ballot witness rule, the in-line-at-closing rule and a sticker tradition were not found on an official page; left missing."
+}

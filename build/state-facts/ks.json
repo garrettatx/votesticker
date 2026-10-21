@@ -1,0 +1,222 @@
+{
+ "abbr": "KS",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "sos.ks.gov": {
+   "en": "the Kansas Secretary of State",
+   "es": "la Secretaría de Estado de Kansas"
+  },
+  "kansasvoterinfo.gov": {
+   "en": "VoterView (Kansas Secretary of State)",
+   "es": "VoterView (Secretaría de Estado de Kansas)"
+  },
+  "www.ksrevisor.gov": {
+   "en": "Kansas law",
+   "es": "la ley de Kansas"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "Registration closed Tuesday, October 13, 2026. Kansas has no same-day or Election Day registration.",
+   "es": "El registro cerró el martes 13 de octubre de 2026. Kansas no tiene registro el mismo día ni el Día de las Elecciones.",
+   "src": "https://sos.ks.gov/elections/important-election-dates.html",
+   "checked": "2026-10-21",
+   "quote": "October 13 Deadline to register to vote or update your voter registration to change address or name only to participate in the 2026 general election.",
+   "status": "verified"
+  },
+  "mail_request": {
+   "status": "missing",
+   "notes": "K.S.A. 25-1122(f)(1)(B) says mail applications for the general election are filed 'between 90 days prior to such election and the Tuesday of the week preceding such general election' (that reads as Tuesday, October 27, 2026). No official page states the 2026 calendar date, so it is not computed here."
+  },
+  "mail_return": {
+   "status": "missing",
+   "notes": "CONFLICT on the same SOS page (sos.ks.gov/elections/advance-voting-information.html). Quote 1: 'A district court in Douglas County entered a statewide injunction requiring ballots postmarked by election day to be counted if a ballot arrives by the last postal delivery on Friday after the election. ... the Secretary of State filed a renewed motion with the Court of Appeals after the Primary asking it to stay the injunction for purposes of the General Election. The motion was denied.' Quote 2: 'Beginning in 2026, all mail ballots must be received in the county election office, authorized drop box, or polling place by close of polls on Election day to be counted. Voters will no longer have a 3-day grace period for their ballot to arrive.' The dates page and voter information page repeat quote 2; the Elections 101 PDF still shows the old 3-day grace period."
+  },
+  "early_hours": {
+   "en": "Each county sets its own advance voting times and places, so check with your county election office. Every county must start in-person advance voting by Tuesday, October 27, and it ends at noon on Monday, November 2.",
+   "es": "Cada condado decide sus horarios y lugares de votación anticipada, así que consulta con la oficina electoral de tu condado. Todos los condados deben empezar la votación anticipada en persona a más tardar el martes 27 de octubre, y termina al mediodía del lunes 2 de noviembre.",
+   "src": "https://www.ksrevisor.gov/statutes/chapters/ch25/025_011_0022.html",
+   "checked": "2026-10-21",
+   "quote": "Unless an earlier date is designated by the county election office, applications for advance voting ballots transmitted to the voter in person shall be filed on the Tuesday next preceding the election and on each subsequent business day until no later than 12:00 noon on the day preceding such election.",
+   "status": "verified",
+   "until": "2026-11-02",
+   "en_after": "In-person advance voting ended at noon on November 2. Vote at your polling place on Election Day.",
+   "es_after": "La votación anticipada en persona terminó al mediodía del 2 de noviembre. Vota en tu lugar de votación el Día de las Elecciones."
+  },
+  "cure": {
+   "status": "missing",
+   "notes": "The SOS FAQ says the county contacts the voter about a signature mismatch (used in mail.cure) but gives no deadline."
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "Before Election Day, you can advance vote in person at your county election office or a satellite voting site, starting as early as 20 days before the election. On Election Day, vote at your polling place.",
+   "es": "Antes del Día de las Elecciones puedes votar por anticipado en persona en la oficina electoral de tu condado o en un centro de votación satélite, desde 20 días antes de la elección. El Día de las Elecciones, vota en tu lugar de votación.",
+   "src": "https://sos.ks.gov/elections/election-faq.html",
+   "checked": "2026-10-21",
+   "quote": "State law allows in-person advance voting to begin up to 20 days before election day at county election offices or satellite voting locations. All counties must offer in-person advance voting no later than one week before election day.",
+   "status": "verified"
+  },
+  "first_time": {
+   "status": "missing",
+   "notes": "Kansas has no same-day registration (dates.reg_deadline). The FAQ's moved-after-the-deadline rule (vote at your old precinct and fill out a new registration) is not a first-time-voter rule, so it is not used here."
+  }
+ },
+ "where": {
+  "locator_url": "https://kansasvoterinfo.gov/VoterView",
+  "locator_label": {
+   "en": "VoterView (Kansas Secretary of State)",
+   "es": "VoterView (Secretaría de Estado de Kansas)"
+  },
+  "locator_cta": {
+   "en": "Find my polling place",
+   "es": "Buscar mi lugar de votación"
+  },
+  "local_offices_url": "https://sos.ks.gov/elections/county_election_officers.aspx",
+  "rule": {
+   "en": "Look up your polling place on VoterView by entering your address. You can also check your registration and the status of your mail ballot there.",
+   "es": "Busca tu lugar de votación en VoterView con tu dirección. Ahí también puedes revisar tu registro y el estado de tu boleta por correo.",
+   "src": "https://kansasvoterinfo.gov/VoterView",
+   "checked": "2026-10-21",
+   "quote": "Confirm your address, party association, mail-in ballot statuses, and polling place locations.",
+   "status": "verified"
+  }
+ },
+ "id": {
+  "rule": "photo_required",
+  "accepted": {
+   "en": [
+    "Driver's license or nondriver ID card from Kansas or another state",
+    "U.S. passport",
+    "U.S. military ID",
+    "ID card from a Native American tribe",
+    "Employee badge or ID from a city, county, state or federal government office",
+    "Student ID from an accredited college or university in Kansas",
+    "Concealed carry license from Kansas or another state",
+    "Public assistance ID card from a government office"
+   ],
+   "es": [
+    "Licencia de conducir o identificación para no conductores de Kansas o de otro estado",
+    "Pasaporte de EE. UU.",
+    "Identificación militar de EE. UU.",
+    "Identificación de una tribu nativa americana",
+    "Credencial o identificación de empleado de una oficina de gobierno municipal, de condado, estatal o federal",
+    "Identificación de estudiante de una universidad acreditada en Kansas",
+    "Licencia de portación oculta de armas (concealed carry license) de Kansas o de otro estado",
+    "Tarjeta de identificación de asistencia pública de una oficina de gobierno"
+   ],
+   "src": "https://sos.ks.gov/elections/voter-information.html",
+   "checked": "2026-10-21",
+   "quote": "State law requires Kansas voters to show photographic identification when casting a vote in person. The following documents may be used to meet photo ID requirements for voting:",
+   "status": "verified"
+  },
+  "expired": {
+   "en": "If your ID has an expiration date, it can't be expired when you vote. If you're 65 or older, an expired photo ID works.",
+   "es": "Si tu identificación tiene fecha de vencimiento, no puede estar vencida cuando votes. Si tienes 65 años o más, sirve una identificación con foto vencida.",
+   "src": "https://sos.ks.gov/elections/election-faq.html",
+   "checked": "2026-10-21",
+   "quote": "If the photo ID has an expiration date on it, the ID must not have expired at the time of voting.",
+   "status": "verified"
+  },
+  "without": {
+   "en": "Forgot your ID? You'll vote a provisional ballot, and it counts once you get your photo ID to the county election office before the county canvass. Don't have a photo ID? You can get a free nondriver ID card from the Kansas Division of Motor Vehicles.",
+   "es": "¿Olvidaste tu identificación? Votarás con una boleta provisional, y cuenta cuando lleves tu identificación con foto a la oficina electoral del condado antes del escrutinio del condado. ¿No tienes identificación con foto? Puedes sacar gratis una identificación para no conductores en la División de Vehículos Motorizados de Kansas (Kansas Division of Motor Vehicles).",
+   "src": "https://sos.ks.gov/elections/election-faq.html",
+   "checked": "2026-10-21",
+   "quote": "Registered voters who do not have an approved government-issued photo ID and would like one to vote may apply for a free nondriver identification card with the Kansas Division of Motor Vehicles.",
+   "status": "verified"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "Any Kansas voter can vote by mail, no excuse needed. You have to apply for a mail ballot for each election, with your driver's license number or a copy of your photo ID.",
+   "es": "Cualquier votante de Kansas puede votar por correo, sin dar una razón. Tienes que pedir una boleta por correo para cada elección, con el número de tu licencia de conducir o una copia de tu identificación con foto.",
+   "src": "https://sos.ks.gov/elections/election-faq.html",
+   "checked": "2026-10-21",
+   "quote": "You do not need an excuse to advance vote by mail ballot. However, you do need to apply to have an advanced by mail ballot mailed to you for each election",
+   "status": "verified"
+  },
+  "track_url": "https://kansasvoterinfo.gov/VoterView",
+  "cure": {
+   "en": "Sign the outside of your ballot envelope. If the signature doesn't match the one on file, your county election office will contact you to verify it.",
+   "es": "Firma el exterior del sobre de tu boleta. Si la firma no coincide con la que tienen registrada, la oficina electoral de tu condado se comunicará contigo para verificarla.",
+   "src": "https://sos.ks.gov/elections/election-faq.html",
+   "checked": "2026-10-21",
+   "quote": "When a voter has completed their advance by mail ballot, they must sign the outside of the ballot envelope. That signature is then reviewed with voter registration records. If the signatures do not match, the signature may be challenged, and the county election office will contact the voter to verify the signature.",
+   "status": "verified"
+  },
+  "dropbox": {
+   "en": "Drop your ballot in any drop box in your county, or take it to any polling place in your county. Drop boxes lock when the polls close on Election Day.",
+   "es": "Deja tu boleta en cualquier buzón de entrega de tu condado o llévala a cualquier lugar de votación de tu condado. Los buzones se cierran con llave cuando cierran las urnas el Día de las Elecciones.",
+   "src": "https://sos.ks.gov/elections/advance-voting-information.html",
+   "checked": "2026-10-21",
+   "quote": "Voters who vote by mail can return their advance ballot to their county election office by putting it in any of the drop boxes located within their county. Drop boxes are locked at the close of polls on Election Day .",
+   "status": "verified"
+  },
+  "witness": {
+   "status": "missing",
+   "notes": "The signature requirement is in mail.cure; no witness or notary rule found."
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "en": "Leave the campaign buttons and stickers at home. Within 250 feet of the entrance to a polling place or advance voting site, you can't wear or hand out labels, signs, posters, stickers or anything else that clearly backs a candidate or a side on a ballot question. A bumper sticker on the car that drives you there is fine.",
+   "es": "Deja en casa los botones y stickers de campaña. A menos de 250 pies de la entrada de un lugar de votación o de un centro de votación anticipada no puedes llevar ni repartir etiquetas, letreros, carteles, stickers ni nada que apoye claramente a un candidato o una postura sobre una propuesta de la boleta. Una calcomanía en la defensa del carro que te lleva está bien.",
+   "src": "https://www.ksrevisor.gov/statutes/chapters/ch25/025_024_0030.html",
+   "checked": "2026-10-21",
+   "quote": "including wearing, exhibiting or distributing labels, signs, posters, stickers or other materials that clearly identify a candidate in the election or clearly indicate support or opposition to a question submitted election within any polling place on election day or advance voting site during the time period allowed by law for casting a ballot by advance voting or within a radius of 250 feet from the entrance thereof",
+   "status": "verified"
+  },
+  "phone": {
+   "status": "missing",
+   "notes": "No statute or SOS guidance on phones or ballot photos found (same finding as docs/faq-sources.json)."
+  },
+  "line": {
+   "en": "Stay in line. Everyone in line when the polls close gets to vote.",
+   "es": "Quédate en la fila. Todos los que estén en la fila cuando cierren las urnas pueden votar.",
+   "src": "https://sos.ks.gov/elections/election-faq.html",
+   "checked": "2026-10-21",
+   "quote": "Stay in line! All voters who are in line when polling locations close are allowed to vote.",
+   "status": "verified"
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "en": "The Secretary of State's own list of what to expect when you vote ends with leaving the polling place, and a reminder not to forget your sticker.",
+   "es": "La propia lista de la Secretaría de Estado sobre qué esperar cuando votas termina con salir del lugar de votación, y un recordatorio de no olvidar tu sticker.",
+   "src": "https://sos.ks.gov/elections/election-faq.html",
+   "checked": "2026-10-21",
+   "quote": "Exit the polling place (don’t forget your sticker)",
+   "status": "verified"
+  }
+ },
+ "faq": {
+  "provisional": {
+   "en": "You vote a provisional ballot if you don't show a valid photo ID, or if you asked for a mail ballot but vote in person instead. A missing-ID provisional ballot counts once you get your photo ID to the county election office before the county canvass.",
+   "es": "Votas con una boleta provisional si no muestras una identificación con foto válida, o si pediste una boleta por correo pero votas en persona. Una boleta provisional por falta de identificación cuenta cuando llevas tu identificación con foto a la oficina electoral del condado antes del escrutinio del condado.",
+   "src": "https://www.ksrevisor.gov/statutes/chapters/ch25/025_011_0022.html",
+   "checked": "2026-10-21",
+   "quote": "The voter shall provide a valid form of identification as defined in K.S.A. 25-2908 , and amendments thereto, to the county election officer in person or provide a copy by mail or electronic means before the meeting of the county board of canvassers.",
+   "status": "verified"
+  },
+  "line": {
+   "en": "Stay in line. Everyone in line when the polls close gets to vote.",
+   "es": "Quédate en la fila. Todos los que estén en la fila cuando cierren las urnas pueden votar.",
+   "src": "https://sos.ks.gov/elections/election-faq.html",
+   "checked": "2026-10-21",
+   "quote": "Stay in line! All voters who are in line when polling locations close are allowed to vote.",
+   "status": "verified"
+  },
+  "track": {
+   "en": "Track your mail ballot application and your ballot online at kansasvoterinfo.gov, or call your county election office.",
+   "es": "Sigue tu solicitud de boleta por correo y tu boleta en línea en kansasvoterinfo.gov, o llama a la oficina electoral de tu condado.",
+   "src": "https://sos.ks.gov/elections/election-faq.html",
+   "checked": "2026-10-21",
+   "quote": "In addition, for the first time, voters can track the status of their advance by mail ballot application and advance by mail ballot online at kansasvoterinfo.gov/ .",
+   "status": "verified"
+  }
+ },
+ "notes": "Read October 21, 2026 on sos.ks.gov (curl worked), kansasvoterinfo.gov and ksrevisor.gov (K.S.A. 25-1122, 25-2430). EARLY VOTING: states.js (October 14 start, varies by county, ends noon Monday November 2) matches the SOS dates page ('October 14 First day of advance voting... In-person advance voting may begin', 'October 27 In-person advance voting must begin for all counties') and K.S.A. 25-1122(g)(1) ('until no later than 12:00 noon on the day preceding such election'). MAIL RETURN CONFLICT: see dates.mail_return notes; the advance voting page reports a Douglas County injunction (postmarked by Election Day, received by the Friday after) that the Court of Appeals declined to stay for the General Election, and in the next paragraph says all 2026 mail ballots must arrive by close of polls. The lead should decide before any return deadline goes on the page. Mail request deadline: statute only gives 'the Tuesday of the week preceding' the election (reads as October 27); not computed. The drop box and advance voting location lists say 'Will Be Available Soon'; the drop box list is an xlsx download, not opened. Election Day hours stay in faq_text.py (7 a.m. to 7 p.m., counties may run 6 a.m. to 8 p.m.)."
+}
