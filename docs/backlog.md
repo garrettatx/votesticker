@@ -6,7 +6,7 @@ Open items, newest first. Started October 21, 2026. Move an item to `docs/histor
 
 | Item | Why | Notes |
 |---|---|---|
-| **Facts files for the last 9 states** | 42 live. Paused October 21 for Garrett's usage window; resume one agent at a time when he says it reset. Left: ME, MT, NM, ND, SD, UT, VT, WV, WY. | Open fact calls: SC early voting close (5 vs 6 p.m.; statute says 6), NJ cure deadline, MI photo rule, KS mail return (SOS page contradicts itself: injunction vs. no grace period), KY ID: `faq_text.py` answer may predate KRS 117.228 as amended July 15, 2026, AR in-person absentee deadlines (Absentee page vs. FAQ), NH thin (sos.nh.gov blocks reading), AR locator host voterview.ar-nova.org not allowed. |
+| **Open fact calls** | All 51 guides live October 21. These stayed off the pages because official sources disagree or couldn't be read. | SC early voting close (5 vs 6 p.m.; statute says 6), NJ cure deadline, MI photo rule, KS mail return (SOS page contradicts itself), AR in-person absentee deadlines, MT late-registration cutoff (court blocked SB 490; live answer now says ask your county), WY regular registration date (Oct 19 PDF vs. 14-day rule), WV provisional-without-ID path, VT mail deadline (statute vs. SOS page), NH thin (sos.nh.gov blocks reading), Vermont/Maine/Montana/ND/SD early windows not set (no single official date). Alaska and Maine could get a ranked-choice link to Resist Now's Learn guide. |
 | **"Early voting has ended" family** | Texas ends October 30, others sooner. A page that still says "early voting runs" after it closes is wrong. | Plan Section 5.1 (`early_over`). Depends on the daily rebuild. |
 
 ## Done October 21
