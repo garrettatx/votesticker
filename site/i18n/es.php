@@ -270,6 +270,7 @@ return array(
 		"Yes. There's nothing to buy, no account and no email list. Garrett Digital built it as a public service and pays for the hosting." => 'Sí. No hay nada que comprar, ni cuenta, ni lista de correo. Garrett Digital lo construyó como un servicio público y paga el alojamiento.',
 		'Who made this?' => '¿Quién lo hizo?', 'Garrett Digital, a search marketing studio in Austin, Texas.' => 'Garrett Digital, un estudio de marketing en buscadores en Austin, Texas.', 'More on the About page' => 'Más en la página Acerca de',
 		'Built in Austin by' => 'Hecho en Austin por', 'We build fast, useful websites and tools. Have an idea?' => 'Hacemos sitios web y herramientas rápidos y útiles. ¿Tienes una idea?', "Let's talk." => 'Hablemos.',
+		"Show your friends you're voting." => 'Muéstrales a tus amigos que vas a votar.',
 		'Post versions' => 'Versiones del texto', 'Plan' => 'Con plan', 'Short' => 'Corto', 'Friends' => 'Para amigos', 'Official info' => 'Info oficial',
 		'State colors' => 'Colores del estado', 'Cream and navy' => 'Crema y azul marino', 'Navy and red' => 'Azul marino y rojo',
 		'Forest and gold' => 'Verde bosque y dorado', 'Cobalt and chartreuse' => 'Cobalto y verde lima', 'Maroon and gold' => 'Granate y dorado',

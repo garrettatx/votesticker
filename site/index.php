@@ -676,8 +676,8 @@ $vote_other = vote_es() ? 'en' : 'es';
 $vote_og_dir = vote_es() ? 'assets/og/es/' : 'assets/og/';
 $vote_og = $vote_st && is_file( __DIR__ . '/' . $vote_og_dir . $vote_page['slug'] . '.jpg' ) ? $vote_og_dir . $vote_page['slug'] . '.jpg' : ( vote_es() && is_file( __DIR__ . '/assets/og-hub-es.jpg' ) ? 'assets/og-hub-es.jpg' : 'assets/og-hub.jpg' );
 $vote_og_alt = vote_es()
-	? ( $vote_st ? $vote_page['h1'] . ': ' . $vote_page['status'] . '. Un sticker para votar de ' . $vote_page['crumb'] . ' sobre papel color crema.' : 'Vote Sticker: haz tu plan, comparte el sticker. Stickers para votar en los 50 estados y DC.' )
-	: ( $vote_st ? $vote_page['h1'] . ': ' . $vote_page['status'] . '. A ' . $vote_page['crumb'] . ' voting sticker on cream paper.' : 'Vote Sticker: make your plan, share the sticker. Voting stickers for all 50 states and DC, with ready-made designs from Texas, Washington, Pennsylvania, and California.' );
+	? ( $vote_st ? $vote_page['h1'] . ': ' . $vote_page['status'] . '. Un sticker para votar de ' . $vote_page['crumb'] . ' sobre papel color crema.' : 'Vote Sticker: muéstrales a tus amigos que vas a votar. Stickers para votar en los 50 estados y DC.' )
+	: ( $vote_st ? $vote_page['h1'] . ': ' . $vote_page['status'] . '. A ' . $vote_page['crumb'] . ' voting sticker on cream paper.' : "Vote Sticker: show your friends you're voting. Voting stickers for all 50 states and DC, with ready-made designs from Texas, Washington, Pennsylvania, and California." );
 
 // Breadcrumbs start at the tool's hub, never the WordPress site (Garrett: no links back to the root).
 $vote_crumbs = array( array( VOTE_BRAND, VOTE_SITE . vote_pbase() ) );
@@ -768,7 +768,7 @@ $vote_ld = array(
 			<svg class="brand__mark" aria-hidden="true" viewBox="0 0 40 40" width="40" height="40"><path d="M37.61 23.74A18 18 0 1 0 23.74 37.61Z" fill="#FBF6E8"/><path d="M37.61 23.74A18 18 0 1 0 23.74 37.61Z" fill="none" stroke="#14295E" stroke-width="1.6" transform="translate(20 20) scale(.8) translate(-20 -20)"/><path d="M37.61 23.74L23.74 37.61Q26.4 26.4 37.61 23.74Z" fill="#D9C99A"/><path d="M18.60 9.80 L20.77 15.61 L26.97 15.88 L22.12 19.74 L23.77 25.72 L18.60 22.30 L13.43 25.72 L15.08 19.74 L10.23 15.88 L16.43 15.61Z" fill="#C1272D"/>
 </svg>
 			<span class="brand__name">VOTE <span class="brand__hi">STICKER</span></span>
-			<span class="brand__tag"><?php echo vote_e( t( "Profile-picture stickers with your state's voting info" ) ); ?></span>
+			<span class="brand__tag"><?php echo vote_e( t( "Show your friends you're voting." ) ); ?></span>
 		</a>
 		<a class="lang-switch" href="<?php echo vote_e( $vote_404 ? VOTE_SITE . ( vote_es() ? VOTE_BASE : VOTE_BASE . 'es/' ) : $vote_alt[ $vote_other ] ); ?>" hreflang="<?php echo $vote_other; ?>" lang="<?php echo $vote_other; ?>" data-lang-choice="<?php echo $vote_other; ?>"><?php echo vote_es() ? 'English' : 'Español'; ?></a>
 		</div>

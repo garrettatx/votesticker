@@ -77,7 +77,7 @@ for (const st of states) {
 		g.fillStyle = '#fff'; g.textBaseline = 'middle'; g.fillText(st.ribbon, 598, 336);
 		await og.sign(g, 580, 460, false);
 		g.textAlign = 'left'; g.fillStyle = '#3A4562'; g.font = '600 24px system-ui, sans-serif';
-		g.fillText(window.VOTE_LANG === 'es' ? 'Haz tu plan. Comparte el sticker.' : 'Make your plan. Share the sticker.', 580, 512);
+		g.fillText(window.VOTE_LANG === 'es' ? 'Muéstrales a tus amigos que vas a votar.' : "Show your friends you're voting.", 580, 512);
 		g.fillStyle = '#6B7280'; g.font = '500 22px system-ui, sans-serif';
 		g.fillText(window.VOTE_LANG === 'es' ? 'Gratis y no partidista. 50 estados y DC.' : 'Free and nonpartisan. 50 states and DC.', 580, 548);
 		return out.toDataURL('image/jpeg', 0.86);
@@ -93,8 +93,8 @@ const hub = await p.evaluate(async () => {
 	await og.sign(g, 64, 92, true);
 	g.textAlign = 'left'; g.textBaseline = 'alphabetic'; g.fillStyle = '#FBF6E8';
 	const es = window.VOTE_LANG === 'es';
-	const lines = es ? ['HAZ TU PLAN.', 'COMPARTE EL', 'STICKER.'] : ['MAKE YOUR PLAN.', 'SHARE THE', 'STICKER.'];
-	og.fit(g, es ? 'COMPARTE EL' : 'MAKE YOUR PLAN.', 92, '"Vote Display"', 560);
+	const lines = es ? ['MUÉSTRALES', 'A TUS AMIGOS', 'QUE VAS A VOTAR.'] : ['SHOW YOUR', 'FRIENDS', "YOU'RE VOTING."];
+	og.fit(g, es ? 'QUE VAS A VOTAR.' : "YOU'RE VOTING.", 92, '"Vote Display"', 560);
 	lines.forEach((t, i) => g.fillText(t, 64, 250 + i * 98));
 	g.fillStyle = '#F2C14E'; g.font = '700 28px system-ui, sans-serif';
 	g.fillText(es ? 'Stickers para votar en los 50 estados y DC' : 'Voting stickers for all 50 states and DC', 64, 560);
