@@ -1,0 +1,253 @@
+{
+ "abbr": "AL",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "www.sos.alabama.gov": {
+   "en": "the Alabama Secretary of State",
+   "es": "la Secretaría de Estado de Alabama"
+  },
+  "myinfo.alabamavotes.gov": {
+   "en": "My Voting Information (Alabama Secretary of State)",
+   "es": "el buscador oficial de la Secretaría de Estado de Alabama"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "Registration closed Monday, October 19, 2026. Alabama has no Election Day registration.",
+   "es": "El registro cerró el lunes 19 de octubre de 2026. Alabama no tiene registro el Día de las Elecciones.",
+   "src": "https://www.sos.alabama.gov/sites/default/files/election-2026/2026-VoterGuide.pdf",
+   "checked": "2026-10-21",
+   "quote": "Voter registration is open all year, except during the 14 days prior to an election and on Election Day.",
+   "status": "verified"
+  },
+  "mail_request": {
+   "en": "Your county's Absentee Election Manager must receive your absentee application by Tuesday, October 27, 2026, if you mail it, or by Thursday, October 29, 2026, if you bring it in person.",
+   "es": "La oficina de voto en ausencia de tu condado (Absentee Election Manager) debe recibir tu solicitud a más tardar el martes 27 de octubre de 2026 si la mandas por correo, o el jueves 29 de octubre de 2026 si la llevas en persona.",
+   "src": "https://www.sos.alabama.gov/sites/default/files/election-2026/2026-VoterGuide.pdf",
+   "checked": "2026-10-21",
+   "quote": "The absentee ballot application must be returned to the Absentee Election Manager by U.S. Mail or by commercial carrier no later than the seventh day prior to the election; or returned in person by the voter no later than the fifth day prior to the election.",
+   "status": "verified",
+   "until": "2026-10-29",
+   "en_after": "Absentee applications closed October 29, 2026. Plan to vote at your polling place on Election Day, 7 a.m. to 7 p.m.",
+   "es_after": "Las solicitudes de voto en ausencia cerraron el 29 de octubre de 2026. Planea votar en tu lugar de votación el Día de las Elecciones, de 7 a. m. a 7 p. m."
+  },
+  "mail_return": {
+   "en": "A mailed ballot must reach your county's Absentee Election Manager by noon on Tuesday, November 3. Bringing it yourself? Get it to that office by 5 p.m. on Monday, November 2, 2026.",
+   "es": "Una boleta enviada por correo debe llegar a la oficina de voto en ausencia de tu condado (Absentee Election Manager) a más tardar al mediodía del martes 3 de noviembre. ¿La vas a llevar tú? Entrégala en esa oficina a más tardar a las 5 p. m. del lunes 2 de noviembre de 2026.",
+   "src": "https://www.sos.alabama.gov/alabama-votes/voter/absentee-voting",
+   "checked": "2026-10-21",
+   "quote": "An absentee ballot returned by mail must be received by the Absentee Election Manager no later than noon on election day. If hand-delivered, the ballot must be in the office of the Absentee Election Manager by the close of business (but no later than 5 p.m.) on the day prior to the election.",
+   "status": "verified"
+  },
+  "early_hours": {
+   "status": "missing",
+   "notes": "Alabama has no early voting period (states.js kind 'none'); there are no early voting hours to state."
+  },
+  "cure": {
+   "status": "missing",
+   "notes": "No absentee signature or witness cure process found on sos.alabama.gov or in the 2026 Voter Guide. The only post-election fix found is showing photo ID by 5 p.m. the Friday after the election (in id.without)."
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "Alabama has no early voting, so most people vote at their polling place on Election Day. If you qualify for an absentee ballot, you can also visit your county's Absentee Election Manager to ask for one. In most counties that's the circuit clerk.",
+   "es": "Alabama no tiene votación anticipada, así que la mayoría vota en su lugar de votación el Día de las Elecciones. Si cumples los requisitos para votar en ausencia, también puedes ir a la oficina de voto en ausencia de tu condado (Absentee Election Manager), para pedir tu boleta. En la mayoría de los condados es la oficina del secretario del tribunal de circuito (Circuit Clerk).",
+   "src": "https://www.sos.alabama.gov/alabama-votes/voter/absentee-voting",
+   "checked": "2026-10-21",
+   "quote": "To obtain an absentee ballot, write or visit the local Absentee Election Manager (usually the Circuit Clerk), request an absentee ballot, and provide the following:",
+   "status": "verified"
+  },
+  "first_time": {
+   "en": "Just registered? Watch for a voter ID postcard from your county Board of Registrars. That's your sign you're registered. Not sure? Call your Board of Registrars or check at alabamavotes.gov.",
+   "es": "¿Te acabas de registrar? Espera una tarjeta postal de votante (Voter ID card) de la junta de registro de tu condado (Board of Registrars). Esa es la señal de que ya estás registrado. ¿No estás seguro? Llama a la junta de registro de tu condado o revisa en alabamavotes.gov.",
+   "src": "https://www.sos.alabama.gov/sites/default/files/election-2026/2026-VoterGuide.pdf",
+   "checked": "2026-10-21",
+   "quote": "This notification will typically be a voter identification postcard confirming that you are registered to vote.",
+   "status": "verified"
+  }
+ },
+ "where": {
+  "locator_url": "https://myinfo.alabamavotes.gov/voterview",
+  "locator_label": {
+   "en": "My Voting Information (Alabama Secretary of State)",
+   "es": "Buscador oficial de lugares de votación (Secretaría de Estado de Alabama)"
+  },
+  "locator_cta": {
+   "en": "Find my polling place",
+   "es": "Buscar mi lugar de votación"
+  },
+  "local_offices_url": "https://www.sos.alabama.gov/city-county-lookup/counties",
+  "sample_ballot_url": "https://www.sos.alabama.gov/alabama-votes/2026-general-election-sample-ballots",
+  "rule": {
+   "en": "Your voter ID card, a postcard from your county Board of Registrars, lists your precinct and polling place. You can also look it up with My Voting Information on the Secretary of State's site.",
+   "es": "Tu tarjeta de votante (Voter ID card), una tarjeta postal de la junta de registro de tu condado (Board of Registrars), dice tu precinto y tu lugar de votación. También puedes buscarlo en el buscador oficial de la Secretaría de Estado (My Voting Information).",
+   "src": "https://www.sos.alabama.gov/sites/default/files/election-2026/2026-VoterGuide.pdf",
+   "checked": "2026-10-21",
+   "quote": "The Voter ID card is a postcard which includes the voter’s precinct information and polling location.",
+   "status": "verified"
+  }
+ },
+ "id": {
+  "rule": "photo_required",
+  "accepted": {
+   "en": [
+    "Alabama driver's license, including the ALEA Digital Driver's License",
+    "Alabama non-driver ID, including the ALEA Digital Non-Driver ID",
+    "Free Alabama Photo Voter ID card",
+    "U.S. passport",
+    "Military ID",
+    "Tribal ID",
+    "Employee ID from the federal government, the State of Alabama, or an Alabama county, city, board or other entity of the state",
+    "Student or employee ID from a public or private college or university in Alabama",
+    "Student or employee ID from a state college or university in any other state",
+    "Any other federal or state-issued photo ID, such as a pistol permit with a photo"
+   ],
+   "es": [
+    "Licencia de conducir de Alabama, incluida la versión digital de ALEA (ALEA Digital Driver's License)",
+    "Identificación de Alabama para no conductores, incluida la versión digital de ALEA (ALEA Digital Non-Driver ID)",
+    "Credencial gratuita de votante con foto de Alabama (Alabama Photo Voter ID card)",
+    "Pasaporte de EE. UU.",
+    "Identificación militar",
+    "Identificación tribal",
+    "Identificación de empleado del gobierno federal, del estado de Alabama o de un condado, ciudad, junta u otra entidad del estado de Alabama",
+    "Identificación de estudiante o empleado de una universidad pública o privada de Alabama",
+    "Identificación de estudiante o empleado de una universidad estatal de cualquier otro estado",
+    "Cualquier otra identificación con foto del gobierno federal o de un estado, como un permiso de pistola con foto"
+   ],
+   "src": "https://www.sos.alabama.gov/sites/default/files/election-2026/2026-VoterGuide.pdf",
+   "checked": "2026-10-21",
+   "quote": "A voter must present one of the following forms of identification before they will be permitted to vote.",
+   "status": "verified"
+  },
+  "expired": {
+   "en": "An Alabama driver's license or non-driver ID still works if it expired less than 60 days ago. The other IDs on the list must be valid.",
+   "es": "La licencia de conducir o la identificación para no conductores de Alabama todavía sirve si se venció hace menos de 60 días. Las demás identificaciones de la lista deben estar vigentes.",
+   "src": "https://www.sos.alabama.gov/sites/default/files/election-2026/2026-VoterGuide.pdf",
+   "checked": "2026-10-21",
+   "quote": "Valid Alabama Driver’s License, including ALEA Digital Driver’s License (not expired or expired less than 60 days)",
+   "status": "verified"
+  },
+  "without": {
+   "en": "No photo ID? You can still vote a regular ballot if your name is on the voter list and two election officials identify you. If they can't, you vote a provisional ballot and have until 5 p.m. on Friday, November 6, 2026, to bring a photo ID to your county Board of Registrars. Need an ID? The Board of Registrars gives out the Alabama Photo Voter ID card for free.",
+   "es": "¿No tienes identificación con foto? Todavía puedes votar con una boleta regular si tu nombre está en la lista de votantes y dos funcionarios electorales te identifican. Si no pueden, votas con una boleta provisional y tienes hasta las 5 p. m. del viernes 6 de noviembre de 2026 para llevar una identificación con foto a la junta de registro de tu condado (Board of Registrars). ¿Necesitas una? Esa junta da gratis la credencial de votante con foto de Alabama (Alabama Photo Voter ID card).",
+   "src": "https://www.sos.alabama.gov/sites/default/files/election-2026/2026-VoterGuide.pdf",
+   "checked": "2026-10-21",
+   "quote": "No Photo ID at Polling Place and Unable to be Positively Identified by Two Election Officials - The voter has until 5 P.M. on the Friday following the election to submit a valid form of photo ID to the Board of Registrars.",
+   "status": "verified"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "You can vote absentee in Alabama if you:",
+   "es": "Puedes votar en ausencia en Alabama si:",
+   "src": "https://www.sos.alabama.gov/alabama-votes/voter/absentee-voting",
+   "checked": "2026-10-21",
+   "quote": "A voter may cast an absentee ballot if he or she",
+   "status": "verified"
+  },
+  "who_list": {
+   "en": [
+    "expect to be away from your county on Election Day",
+    "are ill or have a physical disability that keeps you from getting to the polling place",
+    "are 65 or older or have a disability, and a physical condition keeps you from reaching your assigned polling place",
+    "are a registered Alabama voter living outside your county, such as a member of the armed forces, someone working outside the U.S., a college student, or the spouse or child of one",
+    "are an appointed election officer or poll watcher at a polling place other than your own",
+    "expect to work a required shift of 10 hours or more during polling hours",
+    "are a caregiver for a close family member who is confined to their home",
+    "are in prison or jail and haven't been convicted of a felony involving moral turpitude"
+   ],
+   "es": [
+    "esperas estar fuera de tu condado el Día de las Elecciones",
+    "estás enfermo o tienes una discapacidad física que no te deja llegar al lugar de votación",
+    "tienes 65 años o más o tienes una discapacidad, y una condición física no te deja llegar a tu lugar de votación",
+    "eres votante registrado de Alabama y vives fuera de tu condado, por ejemplo si estás en las fuerzas armadas, trabajas fuera de EE. UU., eres estudiante universitario o eres cónyuge o hijo de una de esas personas",
+    "eres funcionario electoral u observador designado en un lugar de votación que no es el tuyo",
+    "esperas trabajar un turno obligatorio de 10 horas o más durante el horario de votación",
+    "cuidas a un familiar cercano que no puede salir de su casa",
+    "estás en prisión o en la cárcel y no te han condenado por un delito grave de vileza moral (felony involving moral turpitude)"
+   ],
+   "src": "https://www.sos.alabama.gov/alabama-votes/voter/absentee-voting",
+   "checked": "2026-10-21",
+   "quote": "EXPECTS TO WORK A REQUIRED SHIFT, 10-HOURS OR MORE, that coincides with polling hours",
+   "status": "verified"
+  },
+  "track_url": "https://myinfo.alabamavotes.gov/voterview",
+  "witness": {
+   "en": "Sign the affidavit on your ballot envelope in front of a notary or two witnesses who are 18 or older. Without that, the ballot can't be counted. Online or remote notarizing isn't allowed.",
+   "es": "Firma la declaración del sobre de tu boleta frente a un notario o dos testigos de 18 años o más. Sin eso, la boleta no se puede contar. No se permite notarizar en línea ni a distancia.",
+   "src": "https://www.sos.alabama.gov/alabama-votes/voter/absentee-voting",
+   "checked": "2026-10-21",
+   "quote": "An absentee ballot cannot be counted unless the affidavit is notarized or has the signatures of two witnesses. Electronic or remote notarization is not permitted.",
+   "status": "verified"
+  },
+  "cure": {
+   "status": "missing",
+   "notes": "No cure process found on the SOS absentee page or the 2026 Voter Guide."
+  },
+  "dropbox": {
+   "en": "Send your ballot by U.S. Mail or a commercial carrier, or hand it yourself to your county's Absentee Election Manager. Those are the only legal ways to return it.",
+   "es": "Manda tu boleta por el Servicio Postal de EE. UU. o por una empresa de mensajería, o entrégala tú mismo en la oficina de voto en ausencia de tu condado (Absentee Election Manager). Esas son las únicas formas legales de devolverla.",
+   "src": "https://www.sos.alabama.gov/alabama-votes/voter/absentee-voting",
+   "checked": "2026-10-21",
+   "quote": "The voter has only the following legal ways to return the absentee ballot:",
+   "status": "verified"
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "en": "You can wear campaign buttons or T-shirts into the polling place in Alabama. Just don't hang around or leave campaign materials behind. Campaigners have to stay at least 30 feet from the entrance.",
+   "es": "En Alabama puedes entrar al lugar de votación con botones o camisetas de campaña. Solo no te quedes merodeando ni dejes propaganda de campaña. Quienes hacen campaña deben quedarse a por lo menos 30 pies de la entrada.",
+   "src": "https://www.sos.alabama.gov/alabama-votes/faqs",
+   "checked": "2026-10-21",
+   "quote": "Can I wear campaign buttons or t-shirts with political advertisements into the polling place? Yes. However, you should not loiter or leave any campaign materials in the polling place.",
+   "status": "verified"
+  },
+  "phone": {
+   "en": "Bring your phone, just don't disturb other voters. Inside, the only photo allowed is of or with your own ballot, so take your sticker selfie outside.",
+   "es": "Puedes llevar tu teléfono, solo no molestes a los demás votantes. Adentro, la única foto permitida es de tu propia boleta o contigo y tu boleta, así que tómate la selfie con tu sticker afuera.",
+   "src": "https://www.sos.alabama.gov/alabama-votes/faqs",
+   "checked": "2026-10-21",
+   "quote": "However, voters are permitted to take a picture of or with their ballot, as long as they do not disclose the content of any other voter's ballot or disrupt the voting process.",
+   "status": "verified"
+  },
+  "line": {
+   "en": "Get in line before 7 p.m. Anyone who tries to join the line after 7 p.m. can't vote.",
+   "es": "Fórmate en la fila antes de las 7 p. m. Quien intente formarse después de las 7 p. m. no puede votar.",
+   "src": "https://www.sos.alabama.gov/sites/default/files/election-2026/2026-VoterGuide.pdf",
+   "checked": "2026-10-21",
+   "quote": "Anyone who attempts to join the voting line after 7:00 P.M. shall not be permitted to vote.",
+   "status": "verified"
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "status": "missing",
+   "notes": "No I voted sticker contest or statewide sticker found on sos.alabama.gov (site search and newsroom)."
+  }
+ },
+ "faq": {
+  "provisional": {
+   "en": "If your name isn't on the voter list and the county can't confirm your registration, you can vote a provisional ballot. It counts if your county Board of Registrars confirms you're qualified to vote at that polling place.",
+   "es": "Si tu nombre no aparece en la lista de votantes y el condado no puede confirmar tu registro, puedes votar con una boleta provisional. Cuenta si la junta de registro de tu condado (Board of Registrars) confirma que puedes votar en ese lugar de votación.",
+   "src": "https://www.sos.alabama.gov/sites/default/files/election-2026/2026-VoterGuide.pdf",
+   "checked": "2026-10-21",
+   "quote": "Voter Name Not on Poll List - The provisional ballot will be counted if the county Board of Registrars are able to confirm that the person casting the ballot is a duly qualified elector of the polling place where the ballot was cast.",
+   "status": "verified"
+  },
+  "line": {
+   "status": "missing",
+   "notes": "The Voter Guide says only that no one may join the line after 7 p.m. (in polls_rules.line); it does not say in writing that voters already in line at 7 p.m. may vote, so this answer is left out."
+  },
+  "track": {
+   "en": "Check your absentee ballot's status with My Voting Information on the Secretary of State's site.",
+   "es": "Revisa el estado de tu boleta de voto en ausencia en el buscador oficial de la Secretaría de Estado (My Voting Information).",
+   "src": "https://myinfo.alabamavotes.gov/voterview",
+   "checked": "2026-10-21",
+   "quote": "Confirm your registration status, ballot status, polling location, and address.",
+   "status": "verified"
+  }
+ },
+ "notes": "Read October 21, 2026 with curl on sos.alabama.gov: the 2026 Voter Guide PDF, Absentee Voting Information, the Alabama Votes FAQ, the Photo Voter ID page, and myinfo.alabamavotes.gov/voterview (page labeled VoterView; the Voter Guide calls the tool 'My Voting Information'). The Voter Guide's deadline chart labels the mail ballot row 'must be postmarked no later than noon', but its text, its dates list ('Absentee ballots returned by mail must be received by noon') and the SOS absentee page all say received by noon; the file uses received. Absentee voting starts 'no later than' September 9 per the guide's chart. Photo rule: the FAQ says camera phones can't take photos or video inside, but in the same FAQ voters may take a picture 'of or with their ballot'; polls_rules.phone keeps both. Sticker tradition not found. States.js has AL verified as kind 'none'; nothing here contradicts it."
+}

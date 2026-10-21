@@ -19,6 +19,10 @@ return array(
 	),
 	// State facts: summary (when the standard sentence would mislead) and note, from states.js.
 	'states' => array(
+		'KY' => array( 'note' => 'La votación anticipada sin excusa es de jueves a sábado. Cada condado fija sus horarios y lugares.' ),
+		'LA' => array( 'note' => 'De 8:30 a. m. a 6 p. m.; no hay votación anticipada el domingo 25 de octubre.' ),
+		'CT' => array( 'note' => 'La mayoría de los días de 10 a. m. a 6 p. m.; el martes 27 y el jueves 29 de octubre, de 8 a. m. a 8 p. m.' ),
+		'AR' => array( 'note' => 'Entre semana de 8 a. m. a 6 p. m. y sábados de 10 a. m. a 4 p. m. La votación anticipada termina a las 5 p. m. del lunes 2 de noviembre.' ),
 		'IL' => array( 'note' => 'La votación anticipada ya está abierta en la oficina de tu autoridad electoral; más lugares permanentes abren el 19 de octubre. La autoridad electoral de tu condado o ciudad publica lugares y horarios.' ),
 		'AZ' => array( 'note' => 'Vota por anticipado en persona en un lugar de votación anticipada de tu condado hasta las 7 p. m. del viernes 30 de octubre. Los condados fijan lugares y horarios.' ),
 		'MA' => array( 'note' => 'Cada ciudad y pueblo fija sus horarios y lugares de votación anticipada. El buscador del estado los publica.' ),
