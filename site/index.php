@@ -490,6 +490,7 @@ $vote_ld = array(
 <meta name="theme-color" content="#0F2558">
 <link rel="preload" href="<?php echo VOTE_BASE; ?>assets/fonts/anton.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="<?php echo VOTE_BASE; ?>assets/fonts/archivo-black.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="<?php echo VOTE_BASE; ?>assets/fonts/luckiest-guy.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="<?php echo vote_v( 'app.css' ); ?>">
 <?php if ( ! $vote_404 ) : ?><script type="application/ld+json"><?php echo vote_json( $vote_ld ); ?></script><?php endif; ?>
 <?php if ( ! $vote_st && ! $vote_404 ) : ?><script type="application/ld+json"><?php echo vote_json( array( '@context' => 'https://schema.org', '@type' => 'WebSite', 'name' => VOTE_BRAND, 'alternateName' => 'VoteSticker.org', 'url' => VOTE_SITE . vote_pbase(), 'inLanguage' => $vote_lang ) ); ?></script><?php echo "\n"; endif; ?>
@@ -639,6 +640,10 @@ $vote_ld = array(
 					<button type="button" class="size" data-size="story" aria-pressed="false"><?php echo vote_e( t( 'Story' ) ); ?></button>
 				</div>
 				<div class="frame"><img id="preview" alt="<?php echo vote_e( t( 'Your profile picture' ) ); ?>" width="1080" height="1080"></div>
+				<div class="colors">
+					<div class="swatches" id="swatches" role="group" aria-label="<?php echo vote_e( t( 'Colors' ) ); ?>"></div>
+					<p class="swatch-name" id="swatch-name" aria-live="polite"></p>
+				</div>
 				<p class="summary" id="summary"></p>
 				<label class="check" id="circle-check"><input type="checkbox" id="circle"> <?php echo vote_e( t( 'Preview circle crop' ) ); ?></label>
 				<div class="actions">

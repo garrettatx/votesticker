@@ -11,18 +11,28 @@
 (function () {
 	'use strict';
 
-	var SIZE = 1080, STORY_H = 1920, SAFE = 500, BADGE_SAFE = 430, RING_R = 506;
-	var DISPLAY = '"Vote Display"', DATE = '"Vote Date"';
+	var SIZE = 1080, STORY_H = 1920, SAFE = 500;
+	var DISPLAY = '"Vote Display"', DATE = '"Vote Date"', BRUSH = '"Vote Brush"';
 
+	// October 21: the pale palettes (sand, sky, sage) went; a light disc has no edge on a white feed. The six
+	// new ones are the colors Garrett picked from the Codex sets: chartreuse on cobalt, gold on maroon, cream
+	// on plum, gold on teal, cream on burnt orange, gold on charcoal. `star` is the capital star's color when
+	// it isn't the accent (the Codex sets cut the star out in the background color).
 	var PALETTES = [
 		{ id: 'state', name: 'State colors' },
-		{ id: 'cream', name: 'Cream and navy', bg: '#FBF8F0', ink: '#14295E', accent: '#C1272D', onAccent: '#FBF8F0' },
-		{ id: 'navy', name: 'Navy and red', bg: '#0F2558', ink: '#FBF6E8', accent: '#B3262C', onAccent: '#FBF6E8' },
-		{ id: 'forest', name: 'Forest and gold', bg: '#0A3D2C', ink: '#FBF6E8', accent: '#D4AF4A', onAccent: '#0A3D2C' },
-		{ id: 'sand', name: 'Sand and rust', bg: '#EBDABF', ink: '#1F1E1C', accent: '#A9552A', onAccent: '#FBF6E8' },
-		{ id: 'sky', name: 'Sky and navy', bg: '#D4E8FA', ink: '#14295E', accent: '#C1272D', onAccent: '#FBF8F0' },
-		{ id: 'sage', name: 'Sage and forest', bg: '#8FAF88', ink: '#0B3A23', accent: '#E0BC4E', onAccent: '#0B3A23' }
+		{ id: 'cream', name: 'Cream and navy', bg: '#FBF8F0', ink: '#14295E', accent: '#C1272D', onAccent: '#FBF8F0', split: '#E8E1CE' },
+		{ id: 'navy', name: 'Navy and red', bg: '#0F2558', ink: '#FBF6E8', accent: '#B3262C', onAccent: '#FBF6E8', split: '#1C3C85' },
+		{ id: 'forest', name: 'Forest and gold', bg: '#0A3D2C', ink: '#FBF6E8', accent: '#D4AF4A', onAccent: '#0A3D2C', split: '#145C40' },
+		{ id: 'cobalt', name: 'Cobalt and chartreuse', bg: '#1F3FB5', ink: '#DDF04D', accent: '#FFF0D2', onAccent: '#1F3FB5', star: '#1F3FB5', split: '#132B85' },
+		{ id: 'maroon', name: 'Maroon and gold', bg: '#602139', ink: '#F0C45D', accent: '#FFF0D5', onAccent: '#602139', star: '#602139', split: '#43183A' },
+		{ id: 'plum', name: 'Plum and cream', bg: '#48203F', ink: '#FFE8C1', accent: '#EFA978', onAccent: '#48203F', star: '#48203F', split: '#A0421F' },
+		{ id: 'teal', name: 'Teal and gold', bg: '#0F5E66', ink: '#FFF0D2', accent: '#E8B13A', onAccent: '#0F5E66', star: '#0F5E66', split: '#2F5D3A' },
+		{ id: 'rust', name: 'Burnt orange and cream', bg: '#AD431E', ink: '#FFF0D5', accent: '#EFC05B', onAccent: '#AD431E', star: '#AD431E', split: '#7E2F12' },
+		{ id: 'charcoal', name: 'Charcoal and gold', bg: '#2A2D2A', ink: '#FFF0D3', accent: '#D4A531', onAccent: '#2A2D2A', star: '#2A2D2A', split: '#3E4A3C' }
 	];
+	function starOf(p) { return p.star || p.accent; }
+	// The date line in the accent where it reads on the background, else in ink.
+	function dateColor(p) { return contrast(p.accent, p.bg) >= 3 ? p.accent : p.ink; }
 	// Each state's own colors (background, ink, accent): the palettes the ready-made sets were made in,
 	// and for the other states the palettes in docs/round3-prompts-one-state.md (October 19).
 	var STATE_COLORS = {
@@ -63,13 +73,24 @@
 	// October 19, evening: Sticker, Poster and Stamp follow the ready-made sets (a disc with rings and a
 	// tilted date bar, a two-tone headline, a headline knocked out of a block). "State shape" was retired:
 	// it set the headline inside the outline, the pattern rejected from the ChatGPT sets.
+	// October 21: one tile per design, each shown in the palette that suits it (`palette`); a swatch row
+	// recolors the chosen one. Seven of these follow the Codex sets Garrett picked: the tilted headline,
+	// brush lettering, the map beside the type, an arched line, a word knocked out of a plate, a split
+	// field, and the map under the headline. Badge (a ring, and Sticker without the disc) was retired.
 	var DESIGNS = [
-		{ id: 'sticker', name: 'Sticker' },
-		{ id: 'poster', name: 'Poster' },
-		{ id: 'stamp', name: 'Stamp' },
-		{ id: 'type', name: 'Big type' },
-		{ id: 'badge', name: 'Badge' }
+		{ id: 'tilt', name: 'Tilt', palette: 'plum' },
+		{ id: 'type', name: 'Big type', palette: 'navy' },
+		{ id: 'brush', name: 'Brush', palette: 'rust' },
+		{ id: 'side', name: 'Side by side', palette: 'teal' },
+		{ id: 'arch', name: 'Arch', palette: 'maroon' },
+		{ id: 'plate', name: 'Plate', palette: 'charcoal' },
+		{ id: 'split', name: 'Split', palette: 'cobalt' },
+		{ id: 'below', name: 'Map below', palette: 'forest' },
+		{ id: 'sticker', name: 'Sticker', palette: 'state' },
+		{ id: 'poster', name: 'Poster', palette: 'cream' },
+		{ id: 'stamp', name: 'Stamp', palette: 'navy' }
 	];
+	function designOf(id) { return DESIGNS.filter(function (d) { return d.id === id; })[0]; }
 	// Short lines only, at most 10 characters each (POR CORREO), so a card reads at 40 px in a comment thread
 	// (Garrett, October 19; QA enforces the limit).
 	// `early` headlines only where a verified row has early voting, `mail` only in all-mail states;
@@ -264,6 +285,38 @@
 		var b = items[0].box, pv = [(b[0] + b[2]) / 2, (b[1] + b[3]) / 2];
 		items.forEach(function (it) { it.rot = rot; it.pivot = pv; });
 	}
+	// Tip a group about the center of everything in it (text and boxes only: a rotated shape loses its path).
+	function tiltAll(items, rot) {
+		var b = bounds(items), pv = [(b[0] + b[2]) / 2, (b[1] + b[3]) / 2];
+		items.forEach(function (it) { it.rot = rot; it.pivot = pv; });
+	}
+	function bounds(items) {
+		var pts = [];
+		items.forEach(function (it) { pts = pts.concat(itemPoints(it)); });
+		var xs = pts.map(function (q) { return q[0]; }), ys = pts.map(function (q) { return q[1]; });
+		return [Math.min.apply(null, xs), Math.min.apply(null, ys), Math.max.apply(null, xs), Math.max.apply(null, ys)];
+	}
+	// A line of type set along an arc that opens downward (the varsity arch): one item per letter, each
+	// turned to sit on the curve. `theta` is the whole arc in radians; the top of the arc is at y = 0.
+	function archItems(text, family, width, maxAsc, color, theta) {
+		var block = textBlock([text], family, width, maxAsc), size = block.size, asc = block.asc;
+		measureCtx.font = size + 'px ' + family;
+		var chars = text.split(''), ws = chars.map(function (c) { return measureCtx.measureText(c).width; });
+		var track = size * 0.03, W = ws.reduce(function (a, b) { return a + b; }, 0) + track * (chars.length - 1);
+		var R = W / theta, items = [], cum = 0;
+		chars.forEach(function (c, i) {
+			var a = -theta / 2 + (cum + ws[i] / 2) / R;
+			var px = R * Math.sin(a), py = R - R * Math.cos(a) + asc;
+			if (c !== ' ') {
+				items.push({ t: 'text', s: c, font: size + 'px ' + family, color: color, x: px - ws[i] / 2, base: py,
+					box: [px - ws[i] / 2, py - asc, px + ws[i] / 2, py], rot: a, pivot: [px, py] });
+			}
+			cum += ws[i] + track;
+		});
+		return { items: items, bottom: R - R * Math.cos(theta / 2) + asc, asc: asc, size: size };
+	}
+	// A text block with just some of another block's lines, at the same size.
+	function linesOf(block, from, to) { return { family: block.family, size: block.size, asc: block.asc, gap: block.gap, lines: block.lines.slice(from, to) }; }
 
 	var LAYOUTS = {
 		// The ready-made look: a disc with a heavy ring and a thin inner ring, the state on top, a big
@@ -311,13 +364,111 @@
 				plain ? p.accent : p.onAccent, plain ? null : p.accent);
 			return { items: icon.items.concat(placed.items, date.items), safe: SAFE };
 		},
-		// A ring at the edge of the circle crop, the state, the headline, dates on an accent bar.
-		badge: function (st, p, lines, dateText) {
-			var icon = iconItem(st, 0, 0, 110, 200, p.ink, p.accent);
-			var head = textBlock(lines, DISPLAY, 640);
-			var placed = placeText(head, 0, icon.bottom + 36, p.ink);
-			var date = dateItems(dateText, 0, placed.bottom + head.asc * 0.2, 520, head.asc * 0.42, p.onAccent, p.accent);
-			return { items: icon.items.concat(placed.items, date.items), safe: BADGE_SAFE, ring: p.ink };
+		// The house favorite (Mississippi 08, Idaho): the map upright, the headline and its second line
+		// rising 8 degrees to the right.
+		tilt: function (st, p, lines, dateText) {
+			var icon = iconItem(st, 0, 0, 240, 400, p.ink, starOf(p));
+			var head = textBlock(lines, DISPLAY, 820, 300);
+			var placed = placeText(head, 0, icon.bottom + 64, p.ink);
+			var date = dateItems(dateText, 0, placed.bottom + head.asc * 0.2, 640, head.asc * 0.44, dateColor(p));
+			var group = placed.items.concat(date.items);
+			tiltAll(group, -0.14);
+			return { items: icon.items.concat(group), safe: SAFE };
+		},
+		// Brush lettering, rising a little, over a clean block second line (Nebraska, Arkansas).
+		brush: function (st, p, lines, dateText) {
+			var icon = iconItem(st, 0, 0, 180, 320, p.ink, starOf(p));
+			var head = textBlock(lines, BRUSH, 880, 290);
+			var placed = placeText(head, 0, icon.bottom + 50, p.ink);
+			tiltAll(placed.items, -0.06);
+			var b = bounds(placed.items);
+			var date = dateItems(dateText, 0, b[3] + head.asc * 0.26, 640, head.asc * 0.5, dateColor(p));
+			return { items: icon.items.concat(placed.items, date.items), safe: SAFE };
+		},
+		// The map beside the headline, the date line under both (the MAKE A PLAN sets).
+		side: function (st, p, lines, dateText) {
+			var head = textBlock(lines, DISPLAY, 540, 250), sh = shape(st.abbr);
+			var th = head.asc * lines.length + head.gap * (lines.length - 1);
+			var k = Math.min(th / sh.h, 440 / sh.w), iw = sh.w * k, ih = sh.h * k, gap = 56;
+			var tw = Math.max.apply(null, head.lines.map(function (l) { return l.w; }));
+			var icon = iconItem(st, iw / 2, (th - ih) / 2, th, 440, p.ink, starOf(p));
+			var placed = placeText(head, iw + gap + tw / 2, 0, p.ink);
+			var total = iw + gap + tw;
+			var date = dateItems(dateText, total / 2, Math.max(th, icon.bottom) + head.asc * 0.3, Math.min(total, 760), head.asc * 0.5, dateColor(p));
+			return { items: icon.items.concat(placed.items, date.items), safe: SAFE };
+		},
+		// The varsity arch: the first line curved over the map, the rest straight under it.
+		arch: function (st, p, lines, dateText) {
+			var top = archItems(lines[0], DISPLAY, 780, 240, p.ink, 1.05);
+			var icon = iconItem(st, 0, top.bottom + 20, 240, 400, p.ink, starOf(p));
+			var items = top.items.concat(icon.items), y = icon.bottom + 30, date;
+			if (lines.length > 1) {
+				var head = textBlock([lines[1]], DISPLAY, 720, 270);
+				var placed = placeText(head, 0, y, p.ink);
+				items = items.concat(placed.items);
+				date = dateItems(dateText, 0, placed.bottom + head.asc * 0.24, 560, head.asc * 0.42, p.onAccent, p.accent);
+			} else {
+				date = dateItems(dateText, 0, y, 640, top.asc * 0.5, dateColor(p));
+			}
+			return { items: items.concat(date.items), safe: SAFE };
+		},
+		// One word knocked out of an accent plate (Louisiana 07): VOTED on a single-line headline, else the
+		// second line. The rest of the headline in ink.
+		plate: function (st, p, lines, dateText) {
+			var icon = iconItem(st, 0, 0, 170, 320, p.ink, starOf(p));
+			var head = textBlock(lines, DISPLAY, 800, 300), items = icon.items, padX = head.asc * 0.14, padY = head.asc * 0.1;
+			var placed, plain, word;
+			if (lines.length === 1 && lines[0].indexOf(' ') > 0) {
+				// "I VOTED": the first word in ink, the rest on the plate, kept on one line.
+				var sp = lines[0].indexOf(' '), a = lines[0].slice(0, sp), b = lines[0].slice(sp + 1);
+				measureCtx.font = head.size + 'px ' + DISPLAY;
+				var wa = measureCtx.measureText(a + ' ').width, wb = measureCtx.measureText(b).width, w = wa + wb;
+				var base = icon.bottom + 50 + head.asc;
+				plain = { t: 'text', s: a, font: head.size + 'px ' + DISPLAY, color: p.ink, x: -w / 2, base: base, box: [-w / 2, base - head.asc, -w / 2 + wa, base] };
+				word = { t: 'text', s: b, font: head.size + 'px ' + DISPLAY, color: p.onAccent, x: -w / 2 + wa, base: base, box: [-w / 2 + wa, base - head.asc, w / 2, base] };
+				placed = { items: [plain, word], bottom: base };
+			} else {
+				placed = placeText(head, 0, icon.bottom + 50, p.ink);
+				word = placed.items[placed.items.length - 1];
+				word.color = p.onAccent;
+			}
+			var wb2 = word.box;
+			items = items.concat(placed.items.filter(function (it) { return it !== word; }),
+				[{ t: 'box', box: [wb2[0] - padX, wb2[1] - padY, wb2[2] + padX, wb2[3] + padY], color: p.accent, radius: head.asc * 0.08 }, word]);
+			var date = dateItems(dateText, 0, placed.bottom + padY + head.asc * 0.3, 640, head.asc * 0.44, p.ink);
+			return { items: items.concat(date.items), safe: SAFE };
+		},
+		// A field split on the diagonal behind a plain stack (Minnesota, Kentucky 09). The second color is
+		// the accent where ink reads on it; the brand cores stay off red and blue halves.
+		split: function (st, p, lines, dateText) {
+			var icon = iconItem(st, 0, 0, 190, 340, p.ink, starOf(p));
+			var head = textBlock(lines, DISPLAY, 820, 300);
+			var placed = placeText(head, 0, icon.bottom + 48, p.ink);
+			var date = dateItems(dateText, 0, placed.bottom + head.asc * 0.24, 700, head.asc * 0.5, p.ink);
+			var second = p.split || shade(p.bg, 0.22);
+			return { items: icon.items.concat(placed.items, date.items), safe: SAFE, field: { color: second, from: [0, 0.64], to: [1, 0.3] } };
+		},
+		// The headline on top, the map beside the second line, the date under (Kentucky and Nevada 10).
+		below: function (st, p, lines, dateText) {
+			var head = textBlock(lines, DISPLAY, 820, 300), sh = shape(st.abbr);
+			var first = placeText(linesOf(head, 0, 1), 0, 0, p.ink), items = first.items;
+			var rowTop = first.bottom + head.gap * 1.6, row, rowBottom;
+			if (lines.length > 1) {
+				row = { block: linesOf(head, 1, 2), color: p.ink };
+			} else {
+				row = { block: textBlock([dateText], DATE, 560, head.asc * 0.7), color: dateColor(p) };
+			}
+			var rh = row.block.asc, k = Math.min(rh / sh.h, 420 / sh.w), iw = sh.w * k, ih = sh.h * k, gap = 44;
+			var tw = row.block.lines[0].w, total = iw + gap + tw, left = -total / 2;
+			var icon = iconItem(st, left + iw / 2, rowTop + (rh - ih) / 2, rh, 420, p.ink, starOf(p));
+			var placed = placeText(row.block, left + iw + gap + tw / 2, rowTop, row.color);
+			items = items.concat(icon.items, placed.items);
+			rowBottom = Math.max(placed.bottom, icon.bottom);
+			if (lines.length > 1) {
+				var date = dateItems(dateText, 0, rowBottom + head.asc * 0.28, 640, head.asc * 0.44, dateColor(p));
+				items = items.concat(date.items);
+			}
+			return { items: items, safe: SAFE };
 		}
 	};
 
@@ -427,12 +578,17 @@
 				ctx.stroke();
 			});
 		}
-		if (layout.ring) {
-			ctx.strokeStyle = layout.ring;
-			ctx.lineWidth = 12;
+		if (layout.field) {
+			// A second background color below a line across the square (x and y as shares of the side).
+			var fd = layout.field;
+			ctx.fillStyle = fd.color;
 			ctx.beginPath();
-			ctx.arc(SIZE / 2, SIZE / 2, RING_R, 0, Math.PI * 2);
-			ctx.stroke();
+			ctx.moveTo(fd.from[0] * SIZE, fd.from[1] * SIZE);
+			ctx.lineTo(fd.to[0] * SIZE, fd.to[1] * SIZE);
+			ctx.lineTo(SIZE, SIZE);
+			ctx.lineTo(0, SIZE);
+			ctx.closePath();
+			ctx.fill();
 		}
 		if (opts.decorOnly) { return fit(layout); }
 		ctx.translate(SIZE / 2, SIZE / 2);
@@ -486,8 +642,8 @@
 		state: null,
 		headline: 'nov3',
 		dateEdited: false,
-		design: load('design2', 'sticker'),
-		palette: load('palette2', 'state'),
+		design: load('design3', 'tilt'),
+		palette: load('palette3', 'plum'),
 		dateText: '',
 		circle: load('circle', true),
 		story: false
@@ -501,33 +657,58 @@
 	// The state panel and suggested post text are rendered by index.php in the page's language (October 19);
 	// this script no longer rebuilds them.
 
+	// One tile per design, each in its own palette; the chosen design shows the chosen palette.
 	function buildGrid() {
 		var grid = $('grid');
 		grid.innerHTML = '';
 		DESIGNS.forEach(function (d) {
-			PALETTES.forEach(function (p) {
-				var b = document.createElement('button');
-				b.type = 'button';
-				b.className = 'tile';
-				b.dataset.design = d.id;
-				b.dataset.palette = p.id;
-				b.setAttribute('aria-label', T(d.name) + ', ' + T(p.name));
-				b.setAttribute('aria-pressed', String(d.id === state.design && p.id === state.palette));
-				var c = document.createElement('canvas');
-				b.appendChild(c);
-				grid.appendChild(b);
-			});
+			var b = document.createElement('button');
+			b.type = 'button';
+			b.className = 'tile';
+			b.dataset.design = d.id;
+			b.setAttribute('aria-label', T(d.name));
+			b.setAttribute('aria-pressed', String(d.id === state.design));
+			b.appendChild(document.createElement('canvas'));
+			var name = document.createElement('span');
+			name.className = 'tile__name';
+			name.textContent = T(d.name);
+			b.appendChild(name);
+			grid.appendChild(b);
 		});
 	}
 
 	function drawGrid() {
-		var px = Math.round(Math.min(window.devicePixelRatio || 1, 2) * 180);
+		var px = Math.round(Math.min(window.devicePixelRatio || 1, 2) * 200);
 		Array.prototype.forEach.call(document.querySelectorAll('#grid .tile'), function (b) {
 			var o = opts();
 			o.design = b.dataset.design;
-			o.palette = b.dataset.palette;
+			o.palette = o.design === state.design ? state.palette : designOf(o.design).palette;
 			render(b.querySelector('canvas'), px, o);
 		});
+	}
+
+	// The color row under the preview: a dot per palette (background, ink, accent), the state's own first.
+	function buildSwatches() {
+		var row = $('swatches');
+		row.innerHTML = '';
+		PALETTES.forEach(function (p) {
+			var b = document.createElement('button');
+			b.type = 'button';
+			b.className = 'swatch';
+			b.dataset.palette = p.id;
+			b.setAttribute('aria-label', T(p.name));
+			b.appendChild(document.createElement('span'));
+			row.appendChild(b);
+		});
+	}
+	function drawSwatches() {
+		var st = byAbbr[state.state];
+		Array.prototype.forEach.call(document.querySelectorAll('#swatches .swatch'), function (b) {
+			var p = paletteFor(b.dataset.palette, st);
+			b.firstChild.style.background = 'linear-gradient(135deg, ' + p.bg + ' 0 56%, ' + p.ink + ' 56% 80%, ' + p.accent + ' 80%)';
+			b.setAttribute('aria-pressed', String(b.dataset.palette === state.palette));
+		});
+		$('swatch-name').textContent = T(paletteFor(state.palette, st).name);
 	}
 
 	function drawPreview() {
@@ -554,7 +735,7 @@
 
 	function setPressed() {
 		Array.prototype.forEach.call(document.querySelectorAll('#grid .tile'), function (b) {
-			b.setAttribute('aria-pressed', String(b.dataset.design === state.design && b.dataset.palette === state.palette));
+			b.setAttribute('aria-pressed', String(b.dataset.design === state.design));
 		});
 	}
 
@@ -581,6 +762,7 @@
 		setAlt();
 		showGallery(st);
 		$('maker').hidden = false;
+		drawSwatches();
 		drawGrid();
 		drawPreview();
 	}
@@ -660,7 +842,11 @@
 		$('tip').textContent = TIPS[DEVICE];
 		$('save').textContent = SHARE_TO_PHOTOS ? T('Save to Photos') : T('Download picture');
 		wireSave($('save'));
+		// A design or palette remembered from an earlier version of the maker may be gone.
+		if (!LAYOUTS[state.design]) { state.design = 'tilt'; }
+		if (!PALETTES.some(function (p) { return p.id === state.palette; })) { state.palette = designOf(state.design).palette; }
 		buildGrid();
+		buildSwatches();
 
 		headSel.addEventListener('change', function () {
 			state.headline = headSel.value;
@@ -688,14 +874,26 @@
 		$('grid').addEventListener('click', function (e) {
 			var b = e.target.closest('.tile');
 			if (!b) { return; }
+			// What the tile shows is what you get: the design in its own palette. The swatches recolor it.
 			state.design = b.dataset.design;
-			state.palette = b.dataset.palette;
-			save('design2', state.design);
-			save('palette2', state.palette);
+			state.palette = designOf(state.design).palette;
+			save('design3', state.design);
+			save('palette3', state.palette);
 			setPressed();
+			drawSwatches();
+			drawGrid();
 			drawPreview();
 			var top = $('preview').getBoundingClientRect().top;
 			if (top < 0 || top > window.innerHeight * 0.6) { $('preview-wrap').scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+		});
+		$('swatches').addEventListener('click', function (e) {
+			var b = e.target.closest('.swatch');
+			if (!b) { return; }
+			state.palette = b.dataset.palette;
+			save('palette3', state.palette);
+			drawSwatches();
+			drawGrid();
+			drawPreview();
 		});
 		// The suggested post follows the sticker's message until the person edits the text themselves.
 		var POST_KIND = { early: 'pre_early', votatemprano: 'pre_early', mail: 'pre_mail', votacorreo: 'pre_mail', nov3: 'pre_day', vota3nov: 'pre_day', voyavotar: 'pre_day',
@@ -812,12 +1010,14 @@
 		var base = (window.VOTE_ASSETS || 'assets/') + 'fonts/';
 		return Promise.all([
 			new FontFace(DISPLAY.replace(/"/g, ''), 'url(' + base + 'anton.woff2)'),
-			new FontFace(DATE.replace(/"/g, ''), 'url(' + base + 'archivo-black.woff2)')
+			new FontFace(DATE.replace(/"/g, ''), 'url(' + base + 'archivo-black.woff2)'),
+			new FontFace(BRUSH.replace(/"/g, ''), 'url(' + base + 'luckiest-guy.woff2)')
 		].map(function (f) { return f.load().then(function (l) { document.fonts.add(l); }); }));
 	}
 
 	// For the QA script: draw any card and report how far its content reaches from the center.
-	window.VOTE_CARDS = { stateHeadline: stateHeadline, paletteFor: paletteFor, render: render, fit: fit, LAYOUTS: LAYOUTS, PALETTES: PALETTES, DESIGNS: DESIGNS, HEADLINES: HEADLINES, headlinesFor: headlinesFor, defaultHeadline: defaultHeadline, defaultDateLine: defaultDateLine, SAFE: SAFE };
+	window.VOTE_CARDS = { stateHeadline: stateHeadline, paletteFor: paletteFor, render: render, fit: fit, LAYOUTS: LAYOUTS, PALETTES: PALETTES, DESIGNS: DESIGNS, HEADLINES: HEADLINES, headlinesFor: headlinesFor, defaultHeadline: defaultHeadline, defaultDateLine: defaultDateLine, SAFE: SAFE,
+		setBrush: function (family, url) { return new FontFace(family, 'url(' + url + ')').load().then(function (l) { document.fonts.add(l); BRUSH = '"' + family + '"'; }); } };
 
 	fonts().then(init, function () { init(); });
 })();
