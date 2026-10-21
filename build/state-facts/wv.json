@@ -1,0 +1,257 @@
+{
+ "abbr": "WV",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "sos.wv.gov": {
+   "en": "the West Virginia Secretary of State",
+   "es": "la Secretaría de Estado de West Virginia"
+  },
+  "code.wvlegislature.gov": {
+   "en": "the West Virginia Code",
+   "es": "el Código de West Virginia"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "Registration closed Tuesday, October 13, 2026. You had to register at least 21 days before the election. Not sure you're registered? Check your record at GoVoteWV.",
+   "es": "El registro cerró el martes 13 de octubre de 2026. Había que registrarse por lo menos 21 días antes de la elección. ¿No sabes si estás registrado? Revisa tu registro en GoVoteWV.",
+   "src": "https://sos.wv.gov/govotewv",
+   "checked": "2026-10-21",
+   "quote": "October 13, 2026 — Voter Registration Deadline",
+   "status": "verified"
+  },
+  "mail_request": {
+   "en": "If you qualify to vote absentee, your county clerk must receive your application by Wednesday, October 28, 2026. Send it by mail, email or fax, or bring it in person.",
+   "es": "Si cumples los requisitos para votar en ausencia, la oficina del secretario de tu condado (county clerk) debe recibir tu solicitud a más tardar el miércoles 28 de octubre de 2026. Mándala por correo postal, correo electrónico o fax, o llévala en persona.",
+   "src": "https://sos.wv.gov/govotewv",
+   "checked": "2026-10-21",
+   "quote": "October 28, 2026 — Deadline for Absentee Ballot Applications",
+   "status": "verified",
+   "until": "2026-10-28",
+   "en_after": "Applications closed October 28. In the hospital in the last week before the election? Call your county clerk about an emergency absentee ballot by noon on Election Day.",
+   "es_after": "Las solicitudes cerraron el 28 de octubre. ¿Estás en el hospital en la última semana antes de la elección? Llama a la oficina del secretario de tu condado para pedir una boleta de emergencia a más tardar al mediodía del Día de las Elecciones."
+  },
+  "mail_return": {
+   "en": "By mail: postmarked by Tuesday, November 3, and received by your county clerk by the start of canvass, Monday, November 9. By hand: at your county clerk's office by Monday, November 2. No one can hand-deliver more than two voters' ballots.",
+   "es": "Por correo: con matasellos del martes 3 de noviembre o antes, y debe llegar a la oficina del secretario de tu condado antes de que empiece el escrutinio, el lunes 9 de noviembre. En persona: en la oficina del secretario de tu condado a más tardar el lunes 2 de noviembre. Nadie puede entregar en persona las boletas de más de dos votantes.",
+   "src": "https://sos.wv.gov/govotewv",
+   "checked": "2026-10-21",
+   "quote": "November 9, 2026 — Absentee Ballots Postmarked by Election Day Accepted",
+   "status": "verified",
+   "until": "2026-11-02",
+   "en_after": "Hand delivery closed November 2. By mail: postmarked by Tuesday, November 3, and received by your county clerk by Monday, November 9.",
+   "es_after": "La entrega en persona cerró el 2 de noviembre. Por correo: con matasellos del martes 3 de noviembre o antes, y debe llegar a la oficina del secretario de tu condado a más tardar el lunes 9 de noviembre."
+  },
+  "early_hours": {
+   "en": "Early voting runs Wednesday, October 21 to Saturday, October 31, 2026, during normal business hours. Both Saturdays, October 24 and October 31, sites are open 9 a.m. to 5 p.m.",
+   "es": "La votación anticipada va del miércoles 21 al sábado 31 de octubre de 2026, en horario normal de oficina. Los dos sábados, 24 y 31 de octubre, los centros abren de 9 a. m. a 5 p. m.",
+   "src": "https://sos.wv.gov/govotewv",
+   "checked": "2026-10-21",
+   "quote": "October 21 – October 31, 2026 — Early Voting in Person — Voter may vote an early ballot at the county courthouse, an annex or a designated community voting location during normal business hours. Early voting must be conducted between 9 a.m. and 5 p.m. on the last 2 Saturdays before the General Election.",
+   "status": "verified",
+   "until": "2026-10-31",
+   "en_after": "Early voting ended October 31. On Election Day, vote at your assigned polling place, 6:30 a.m. to 7:30 p.m.",
+   "es_after": "La votación anticipada terminó el 31 de octubre. El Día de las Elecciones, vota en el lugar que te corresponde, de 6:30 a. m. a 7:30 p. m."
+  },
+  "cure": {
+   "status": "missing",
+   "notes": "No absentee ballot cure process or deadline found on sos.wv.gov."
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "Vote early at your county courthouse, an annex or a community voting site October 21 to 31. On Election Day, you must vote at your assigned polling place.",
+   "es": "Vota por anticipado en el juzgado de tu condado (county courthouse), en un anexo o en un centro de votación comunitario del 21 al 31 de octubre. El Día de las Elecciones tienes que votar en el lugar de votación que te corresponde.",
+   "src": "https://sos.wv.gov/elections/voter-information/elections-frequently-asked-questions-faqs",
+   "checked": "2026-10-21",
+   "quote": "Remember that on Election Day you must vote at your assigned polling location.",
+   "status": "verified"
+  },
+  "first_time": {
+   "en": "Voting for the first time in West Virginia or your county? Bring a valid ID with your current name and address: a photo ID, a utility bill, a bank statement, a government check, a paycheck or another government document. Voting absentee? Put a copy in the return envelope, outside the secrecy envelope.",
+   "es": "¿Es la primera vez que votas en West Virginia o en tu condado? Lleva una identificación válida con tu nombre y dirección actuales: una identificación con foto, un recibo de servicios, un estado de cuenta bancario, un cheque del gobierno, un talón de pago u otro documento del gobierno. ¿Votas en ausencia? Mete una copia en el sobre de devolución, fuera del sobre de privacidad.",
+   "src": "https://sos.wv.gov/be-registered-and-ready",
+   "checked": "2026-10-21",
+   "quote": "Valid ID for first-time voters — only the following documents showing your current name and address can be accepted:",
+   "status": "verified"
+  }
+ },
+ "where": {
+  "locator_url": "https://apps.sos.wv.gov/Elections/Voter/FindMyPollingPlace",
+  "locator_label": {
+   "en": "Find Your Polling Place (West Virginia Secretary of State)",
+   "es": "Búsqueda de tu lugar de votación (Secretaría de Estado de West Virginia)"
+  },
+  "locator_cta": {
+   "en": "Find my polling place",
+   "es": "Buscar mi lugar de votación"
+  },
+  "local_offices_url": "https://sos.wv.gov/west-virginia-county-clerk-directory",
+  "rule": {
+   "en": "Look up your Election Day polling place with the state's search. Early voting sites and hours for all 55 counties are on the Secretary of State's early voting locations page.",
+   "es": "Busca tu lugar de votación del Día de las Elecciones en la herramienta del estado. Los centros y horarios de votación anticipada de los 55 condados están en la página de lugares de votación anticipada de la Secretaría de Estado.",
+   "src": "https://sos.wv.gov/early-voting-locations",
+   "checked": "2026-10-21",
+   "quote": "Early voting locations are listed below for all 55 West Virginia counties.",
+   "status": "verified"
+  }
+ },
+ "id": {
+  "rule": "photo_required",
+  "accepted": {
+   "en": [
+    "West Virginia driver's license or state-issued ID",
+    "Driver's license from another state",
+    "U.S. passport or passport card",
+    "Government employee ID with photo, from a local, state or federal government",
+    "Student ID with photo from a West Virginia college or high school",
+    "U.S. military ID with photo",
+    "Voter registration card with photo from a West Virginia county clerk or the Secretary of State",
+    "DMV ID without a photo, for voters whose recognized religious community forbids being photographed"
+   ],
+   "es": [
+    "Licencia de conducir o identificación estatal de West Virginia",
+    "Licencia de conducir de otro estado",
+    "Pasaporte o tarjeta pasaporte de EE. UU.",
+    "Identificación de empleado del gobierno con foto, local, estatal o federal",
+    "Identificación de estudiante con foto de una universidad o preparatoria de West Virginia",
+    "Identificación militar de EE. UU. con foto",
+    "Tarjeta de registro de votante con foto de la oficina del secretario de un condado de West Virginia o de la Secretaría de Estado",
+    "Identificación del DMV sin foto, para votantes cuya comunidad religiosa reconocida les prohíbe tomarse fotos"
+   ],
+   "src": "https://sos.wv.gov/be-registered-and-ready",
+   "checked": "2026-10-21",
+   "quote": "West Virginia voters must show an approved form of photo identification at the polls during early voting or on Election Day.",
+   "status": "verified"
+  },
+  "expired": {
+   "en": "Your ID can't be expired. If you're 65 or older, an expired ID still works as long as it hadn't expired on your 65th birthday.",
+   "es": "Tu identificación no puede estar vencida. Si tienes 65 años o más, una identificación vencida sirve siempre que no estuviera vencida el día que cumpliste 65.",
+   "src": "https://sos.wv.gov/be-registered-and-ready",
+   "checked": "2026-10-21",
+   "quote": "Of the IDs listed above, if the voter is 65 years of age or older and the ID is expired, it is still acceptable if the document was not expired on their 65th birthday.",
+   "status": "verified"
+  },
+  "without": {
+   "en": "No ID? An adult who has known you for at least six months can sign an affidavit and show their own photo ID, or a poll worker who has known you that long can vouch for you. You can also get a free voter ID card at your county clerk's office.",
+   "es": "¿No tienes identificación? Un adulto que te conozca desde hace por lo menos seis meses puede firmar una declaración jurada y mostrar su propia identificación con foto, o un trabajador electoral que te conozca desde hace ese tiempo puede responder por ti. También puedes sacar una tarjeta de identificación de votante gratis en la oficina del secretario de tu condado.",
+   "src": "https://sos.wv.gov/be-registered-and-ready",
+   "checked": "2026-10-21",
+   "quote": "Registered voters can receive a free voter ID card by submitting an application in person at their county clerk's office.",
+   "status": "verified"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "You can vote absentee by mail only if you can't vote in person during all of early voting and on Election Day, for a reason the law allows, such as:",
+   "es": "Puedes votar en ausencia por correo solo si no puedes votar en persona durante toda la votación anticipada ni el Día de las Elecciones, por una razón que permite la ley, como:",
+   "src": "https://sos.wv.gov/media/359/download?inline",
+   "checked": "2026-10-21",
+   "quote": "A registered voter may vote an absentee ballot by mail if the voter is “confined,” or not in their home county, for the entire duration of in-person voting (both the early voting period and on Election Day), for one of the many reasons and excuses allowed by law.",
+   "status": "verified"
+  },
+  "who_list": {
+   "en": [
+    "illness, injury or another medical reason",
+    "a disability or advanced age that keeps you from getting around",
+    "incarceration or home detention, unless you're serving a sentence for a felony, treason or election bribery",
+    "your work hours and distance from the county seat",
+    "an early voting site and polling place you can't get into",
+    "personal or business travel",
+    "attending college or another school or training",
+    "living outside the county for now",
+    "serving as an elected or appointed state or federal official"
+   ],
+   "es": [
+    "enfermedad, lesión u otra razón médica",
+    "una discapacidad o edad avanzada que no te deja moverte",
+    "estar en la cárcel o en arresto domiciliario, a menos que cumplas una condena por un delito grave (felony), traición o soborno electoral",
+    "tu horario de trabajo y la distancia a la cabecera del condado",
+    "un centro de votación anticipada y un lugar de votación a los que no tienes acceso",
+    "un viaje personal o de negocios",
+    "estudiar en la universidad u otra escuela o capacitación",
+    "vivir por ahora fuera del condado",
+    "ser funcionario estatal o federal, electo o designado"
+   ],
+   "src": "https://sos.wv.gov/media/359/download?inline",
+   "checked": "2026-10-21",
+   "quote": "Voters not able to vote in person during Early Voting or Election Day due to one of the following circumstances may vote an absentee ballot by mail:",
+   "status": "verified"
+  },
+  "witness": {
+   "status": "missing",
+   "notes": "The ballot instructions (paper and optical scan) are separate documents that were not read."
+  },
+  "track_url": "https://apps.sos.wv.gov/Elections/Voter/AbsenteeBallotTracking",
+  "cure": {
+   "status": "missing"
+  },
+  "dropbox": {
+   "status": "missing",
+   "notes": "No drop boxes mentioned on sos.wv.gov; return is by mail or hand delivery to the county clerk."
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "en": "Leave the campaign gear at home. Within 100 feet of the outside entrance of the building where you vote, no one can display signs or other campaign items, hand out literature or ask for votes. The same goes for early voting sites while voting is going on. A bumper sticker on your parked car is fine.",
+   "es": "Deja en casa la ropa y los artículos de campaña. A menos de 100 pies de la entrada exterior del edificio donde votas, nadie puede mostrar letreros u otros artículos de campaña, repartir folletos ni pedir votos. Lo mismo aplica en los centros de votación anticipada mientras se está votando. Una calcomanía en la defensa de tu auto estacionado sí se permite.",
+   "src": "https://code.wvlegislature.gov/3-9-9/",
+   "checked": "2026-10-21",
+   "quote": "No person may do any electioneering on election day within any polling place, or within one hundred feet of the outside entrance to the building housing the polling place.",
+   "status": "verified"
+  },
+  "phone": {
+   "status": "missing",
+   "notes": "The only device rule found is W. Va. Code 3-4A-23 (no recording device in the voting booth), already in the existing selfie FAQ."
+  },
+  "line": {
+   "status": "missing",
+   "notes": "W. Va. Code 3-1-31 sets 6:30 a.m. to 7:30 p.m. but says nothing about voters in line at closing; no SOS page found that does."
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "en": "West Virginia held its first statewide I Voted! sticker contest for eighth graders in 2026. Reese Childers of Shady Spring Middle School in Raleigh County won, and Raleigh County handed 11,000 of her stickers to in-person voters in the May primary.",
+   "es": "West Virginia hizo en 2026 su primer concurso estatal de stickers de \"¡Ya voté!\" (I Voted!) para estudiantes de octavo grado. Ganó Reese Childers, de la secundaria Shady Spring del condado de Raleigh, y el condado de Raleigh repartió 11,000 de sus stickers a quienes votaron en persona en las primarias de mayo.",
+   "src": "https://sos.wv.gov/article/warner-announces-raleigh-countys-reese-childers-statewide-winner-west-virginias-first-ever",
+   "checked": "2026-10-21",
+   "quote": "In addition, Raleigh County Clerk Scott Van Meter was presented with 11,000 stickers featuring Reese's design to be handed out to Raleigh County voters who vote in-person in the Primary Election.",
+   "status": "verified"
+  }
+ },
+ "faq": {
+  "provisional": {
+   "en": "If poll workers can't find your name in the poll book, or there's another question about whether you can vote, they must offer you a provisional ballot. It counts if the Board of Canvassers finds you're eligible and registered.",
+   "es": "Si los trabajadores electorales no encuentran tu nombre en el registro de votantes, o hay otra duda sobre si puedes votar, tienen que ofrecerte una boleta provisional. Cuenta si la junta de escrutinio (Board of Canvassers) determina que tienes derecho a votar y estás registrado.",
+   "src": "https://sos.wv.gov/elections/voter-information/elections-frequently-asked-questions-faqs",
+   "checked": "2026-10-21",
+   "quote": "If you vote a provisional ballot for any other reason, and the Board of Canvassers find that you are eligible and registered, your ballot will be counted.",
+   "status": "verified"
+  },
+  "line": {
+   "status": "missing"
+  },
+  "track": {
+   "en": "Look up your absentee ballot's status with the Secretary of State's absentee ballot tracker.",
+   "es": "Revisa el estado de tu boleta de voto en ausencia en la herramienta de seguimiento de la Secretaría de Estado (Absentee Ballot Tracking).",
+   "src": "https://sos.wv.gov/absentee-voting-information",
+   "checked": "2026-10-21",
+   "quote": "Absentee voters may conveniently track the status of their absentee ballots by entering the requested information at the following link: Absentee Ballot Tracking.",
+   "status": "verified"
+  },
+  "unsigned": {
+   "status": "missing"
+  },
+  "late_mail": {
+   "en": "A mailed absentee ballot still counts if it's postmarked by November 3 and reaches your county clerk by the start of canvass on Monday, November 9.",
+   "es": "Una boleta en ausencia enviada por correo todavía cuenta si tiene matasellos del 3 de noviembre o antes y llega a la oficina del secretario de tu condado antes de que empiece el escrutinio, el lunes 9 de noviembre.",
+   "src": "https://sos.wv.gov/govotewv",
+   "checked": "2026-10-21",
+   "quote": "November 9, 2026 — Absentee Ballots Postmarked by Election Day Accepted",
+   "status": "verified"
+  }
+ },
+ "notes": "Read October 21, 2026 on sos.wv.gov (GoVoteWV 2026 General Election calendar, be-registered-and-ready, elections FAQ, absentee-voting-information, the absentee eligibility PDF at /media/359, early-voting-locations, the March 11, 2026 sticker contest release) and code.wvlegislature.gov (3-1-31 hours, 3-1-34 ID, 3-1-41 provisional, 3-9-9 electioneering). EARLY VOTING for states.js: Wednesday, October 21 to Saturday, October 31, 2026. GoVoteWV quote: 'October 21 – October 31, 2026 — Early Voting in Person — Voter may vote an early ballot at the county courthouse, an annex or a designated community voting location during normal business hours. Early voting must be conducted between 9 a.m. and 5 p.m. on the last 2 Saturdays before the General Election.' Early voting locations page: 'Early Voting Dates: October 21–31, 2026' (https://sos.wv.gov/early-voting-locations). CONFLICT on a provisional ballot cast for lack of ID: the elections FAQ says 'If you vote a provisional ballot because you did not show ID, just present your ID at your County Clerk's Office before canvass and your ballot will be counted', while the ID page says 'Before canvass, the provisional ballot signature is compared to the voter's registration signature. If the signatures match, the vote should count at canvass.' W. Va. Code 3-1-34(a)(6)(A) matches the ID page ('The provisional ballot may be counted once the election authority verifies the identity of the individual by comparing that individual's signature to the current signature on file'). So id.without leaves out the provisional path, and faq.provisional gives only the general rule. The docs/faq-sources.json WV id summary ('show ID before canvass') follows the FAQ wording; the live faq_text answer ('Without one, you vote a provisional ballot') is still accurate. Sample ballot lookup is at wv.omniballot.us (vendor, linked from GoVoteWV); not used. Canvass date: November 9 is from the GoVoteWV calendar."
+}

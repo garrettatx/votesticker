@@ -1,0 +1,217 @@
+{
+ "abbr": "VT",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "sos.vermont.gov": {
+   "en": "the Vermont Secretary of State",
+   "es": "la Secretaría de Estado de Vermont"
+  },
+  "outside.vermont.gov": {
+   "en": "the Vermont Secretary of State's 2026 elections calendar",
+   "es": "el calendario electoral 2026 de la Secretaría de Estado de Vermont"
+  },
+  "legislature.vermont.gov": {
+   "en": "Vermont law",
+   "es": "la ley de Vermont"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "There's no deadline. Register online, at your town or city clerk's office during business hours, or at your polling place on Election Day, November 3.",
+   "es": "No hay fecha límite. Regístrate en línea, en la oficina del secretario de tu municipio o ciudad (town clerk) en horario de oficina, o en tu lugar de votación el Día de las Elecciones, el 3 de noviembre.",
+   "src": "https://sos.vermont.gov/elections/voters/registration/",
+   "checked": "2026-10-21",
+   "quote": "Registration is available during all normal business hours of your town or city clerk's office on days preceding the election and during polling hours on Election Day.",
+   "status": "verified"
+  },
+  "mail_request": {
+   "en": "Active voters get a ballot in the mail without asking. Need another one? Ask your town clerk by 5 p.m., or when the office closes, on Monday, November 2.",
+   "es": "Los votantes activos reciben su boleta por correo sin pedirla. ¿Necesitas otra? Pídela al secretario de tu municipio a más tardar a las 5 p. m., o a la hora en que cierre la oficina, el lunes 2 de noviembre.",
+   "src": "https://outside.vermont.gov/dept/sos/Elections_Division/town_clerks_local_elections/election_procedure/elections_calendar.pdf",
+   "checked": "2026-10-21",
+   "quote": "Voters, family members, authorized persons or health care providers may request early or absentee ballots until 5:00 p.m. or the closing of the town clerk's office on this day.",
+   "status": "verified",
+   "until": "2026-11-02",
+   "en_after": "Requests closed November 2. You can still vote at your polling place on Election Day.",
+   "es_after": "Las solicitudes cerraron el 2 de noviembre. Todavía puedes votar en tu lugar de votación el Día de las Elecciones."
+  },
+  "mail_return": {
+   "en": "Town clerk's office or your town's drop box: before the clerk's office closes on Monday, November 2. Polling place: hand it in by 7 p.m. on Tuesday, November 3.",
+   "es": "Oficina del secretario de tu municipio o el buzón de entrega de tu municipio: antes de que cierre la oficina el lunes 2 de noviembre. Lugar de votación: entrégala a más tardar a las 7 p. m. del martes 3 de noviembre.",
+   "src": "https://legislature.vermont.gov/statutes/section/17/051/02543",
+   "checked": "2026-10-21",
+   "quote": "to any secure ballot drop box provided by the town or city in which the voter is registered pursuant to section 2543a of this subchapter before the close of business on the day before the election;",
+   "status": "verified",
+   "until": "2026-11-02",
+   "en_after": "The clerk's office and drop box deadline was November 2. Bring your ballot to your polling place by 7 p.m. on Tuesday, November 3.",
+   "es_after": "La fecha límite para la oficina del secretario y el buzón de entrega fue el 2 de noviembre. Lleva tu boleta a tu lugar de votación a más tardar a las 7 p. m. del martes 3 de noviembre."
+  },
+  "early_hours": {
+   "en": "Vote early at your town or city clerk's office during its business hours. Hours differ by town, so check with your clerk.",
+   "es": "Vota por anticipado en la oficina del secretario de tu municipio o ciudad en su horario de oficina. El horario cambia según el municipio, así que confírmalo con tu secretario.",
+   "src": "https://sos.vermont.gov/elections/voters/",
+   "checked": "2026-10-21",
+   "quote": "Vote early at your town clerk’s office during business hours.",
+   "status": "verified"
+  },
+  "cure": {
+   "en": "If your mail ballot has a problem, such as a missing signature, you can fix it until the polls close at 7 p.m. on Tuesday, November 3.",
+   "es": "Si tu boleta por correo tiene un problema, como que le falte la firma, puedes corregirlo hasta que cierren los lugares de votación a las 7 p. m. del martes 3 de noviembre.",
+   "src": "https://legislature.vermont.gov/statutes/section/17/051/02547",
+   "checked": "2026-10-21",
+   "quote": "Upon notification, the voter may cure the defect until the closing of the polls on election day by:",
+   "status": "verified"
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "Vote early at your town clerk's office during business hours, or at your polling place on Election Day. You can also bring the ballot mailed to you and vote it at the polls. Don't have it with you? You can still vote after signing an Affidavit of No Ballot Cast.",
+   "es": "Vota por anticipado en la oficina del secretario de tu municipio en horario de oficina, o en tu lugar de votación el Día de las Elecciones. También puedes llevar la boleta que te llegó por correo y votarla ahí. ¿No la traes? Igual puedes votar después de firmar una declaración jurada de que no has votado (Affidavit of No Ballot Cast).",
+   "src": "https://sos.vermont.gov/elections/voters/",
+   "checked": "2026-10-21",
+   "quote": "Don’t have the ballot mailed to you when you go to the polls? You can still vote. You’ll just need to sign an Affidavit of No Ballot Cast before the clerk can issue another ballot to you.",
+   "status": "verified"
+  },
+  "first_time": {
+   "en": "Registering in Vermont for the first time by mail or online? Include a copy of an ID: a photo ID such as a driver's license or passport, a current utility bill, a current bank statement or another government document.",
+   "es": "¿Te registras en Vermont por primera vez por correo o en línea? Incluye una copia de una identificación: una identificación con foto como la licencia de conducir o el pasaporte, un recibo de servicios reciente, un estado de cuenta bancario reciente u otro documento del gobierno.",
+   "src": "https://sos.vermont.gov/elections/voters/registration/",
+   "checked": "2026-10-21",
+   "quote": "If you are registering to vote in Vermont for the first time by mail or online, you must include a photocopy of an acceptable form of ID.",
+   "status": "verified"
+  }
+ },
+ "where": {
+  "locator_url": "https://map.vermont.gov/voting-info-lookup/",
+  "locator_label": {
+   "en": "Town Clerk & Voting Info Lookup (Vermont Secretary of State)",
+   "es": "Mapa de lugares de votación, buzones y secretarios municipales (Secretaría de Estado de Vermont)"
+  },
+  "locator_cta": {
+   "en": "Find my polling place",
+   "es": "Buscar mi lugar de votación"
+  },
+  "local_offices_url": "https://sos.vermont.gov/elections/town-clerks/",
+  "rule": {
+   "en": "Search your address on the state's lookup map to see your polling place, your town clerk's contact information and hours, and the drop box for the town and district where you normally vote. Polls open between 5 a.m. and 10 a.m., depending on the town, and all close at 7 p.m.",
+   "es": "Busca tu dirección en el mapa del estado para ver tu lugar de votación, los datos de contacto y el horario del secretario de tu municipio, y el buzón de entrega del municipio y distrito donde votas normalmente. Los lugares de votación abren entre las 5 a. m. y las 10 a. m., según el municipio, y todos cierran a las 7 p. m.",
+   "src": "https://sos.vermont.gov/elections/voters/polling-places/",
+   "checked": "2026-10-21",
+   "quote": "Use the Town Clerk & Voting Info Lookup map to find your town or city clerk’s contact information and hours, your polling place, the secure drop box location in the town and district where you'd usually vote in person, and your Vermont House and Senate legislative districts.",
+   "status": "verified"
+  }
+ },
+ "id": {
+  "rule": "no_id",
+  "accepted": {
+   "status": "missing",
+   "notes": "Most voters show no ID; the first-time mail or online registrant rule is in how.first_time."
+  },
+  "expired": {
+   "status": "missing"
+  },
+  "without": {
+   "status": "missing"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "Every active, registered voter gets a general election ballot in the mail without asking. The state mails them by October 1. Moved, or didn't get yours? Ask your town clerk for another; you'll sign an Affidavit of No Ballot Cast.",
+   "es": "Cada votante activo y registrado recibe por correo una boleta para la elección general sin pedirla. El estado las envía a más tardar el 1 de octubre. ¿Te mudaste o no te llegó? Pide otra al secretario de tu municipio; vas a firmar una declaración jurada de que no has votado (Affidavit of No Ballot Cast).",
+   "src": "https://sos.vermont.gov/elections/voters/",
+   "checked": "2026-10-21",
+   "quote": "Vermont automatically mails ballots to all qualified voters by October 1 of each even-numbered year.",
+   "status": "verified"
+  },
+  "witness": {
+   "en": "Sign the certificate on the outside of the envelope. Your ballot isn't valid without your signature.",
+   "es": "Firma el certificado que viene por fuera del sobre. Tu boleta no es válida sin tu firma.",
+   "src": "https://sos.vermont.gov/elections/voters/early-absentee-voting/",
+   "checked": "2026-10-21",
+   "quote": "The voter must sign the certificate on the outside of the envelope for the ballot to be valid.",
+   "status": "verified"
+  },
+  "track_url": "https://vote.vermont.gov/",
+  "cure": {
+   "en": "Forgot to sign, or left the ballot out of the envelope? Your town clerk will let you know, and you can fix it in person, with a new ballot, or by returning a signed affidavit before the polls close on Election Day.",
+   "es": "¿Se te olvidó firmar o no metiste la boleta en el sobre? El secretario de tu municipio te va a avisar, y puedes corregirlo en persona, con una boleta nueva o devolviendo una declaración jurada firmada antes de que cierren los lugares de votación el Día de las Elecciones.",
+   "src": "https://legislature.vermont.gov/statutes/section/17/051/02547",
+   "checked": "2026-10-21",
+   "quote": "Upon notification, the voter may cure the defect until the closing of the polls on election day by:",
+   "status": "verified"
+  },
+  "dropbox": {
+   "en": "Use the secure drop box in the town and district where you would normally vote in person. The state's lookup map shows where it is.",
+   "es": "Usa el buzón de entrega seguro del municipio y distrito donde normalmente votas en persona. El mapa del estado te muestra dónde está.",
+   "src": "https://sos.vermont.gov/elections/voters/polling-places/",
+   "checked": "2026-10-21",
+   "quote": "the secure drop box location in the town and district where you'd usually vote in person",
+   "status": "verified"
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "en": "Wearing a candidate shirt or button? Cover it up while you're inside the building where you vote. No campaign stickers, buttons or literature can be displayed in there, and the same goes for the town clerk's office during early voting.",
+   "es": "¿Llevas una camiseta o un botón de un candidato? Cúbrelo mientras estés dentro del edificio donde votas. Ahí no se puede mostrar ningún sticker, botón ni folleto de campaña, y lo mismo aplica en la oficina del secretario del municipio durante la votación anticipada.",
+   "src": "https://sos.vermont.gov/elections/voters/voter-faqs/",
+   "checked": "2026-10-21",
+   "quote": "If you plan to wear candidate paraphernalia, you will have to cover it while inside the building containing the polling place.",
+   "status": "verified"
+  },
+  "phone": {
+   "status": "missing",
+   "notes": "No phone or photo rule found on the SOS voter pages or in 17 V.S.A. 2508; the existing FAQ also found no selfie provision."
+  },
+  "line": {
+   "status": "missing",
+   "notes": "Covered by faq.line."
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "status": "missing",
+   "notes": "Seven Days and Vermont Public report a 2024 SOS student I Voted sticker contest (winner Kezia Warfisch of Wolcott), but no sos.vermont.gov page about it was found."
+  }
+ },
+ "faq": {
+  "provisional": {
+   "en": "Vermont rarely uses them. If you're not on the checklist, you can register and vote that day. If you say you registered on time, you sign an affidavit and vote.",
+   "es": "En Vermont casi no se usan. Si no apareces en la lista de votantes, puedes registrarte y votar ese mismo día. Si dices que te registraste a tiempo, firmas una declaración jurada y votas.",
+   "src": "https://sos.vermont.gov/elections/voters/voter-faqs/",
+   "checked": "2026-10-21",
+   "quote": "If for any reason your name is not on the voter registration list when you arrive at the polls, you can simply fill out a registration form and vote that day.",
+   "status": "verified"
+  },
+  "line": {
+   "en": "You can still vote. If you're at the polling place at 7 p.m. and haven't had a chance to vote, the polls stay open long enough for you to vote.",
+   "es": "Todavía puedes votar. Si estás en el lugar de votación a las 7 p. m. y no has podido votar, el lugar sigue abierto el tiempo necesario para que votes.",
+   "src": "https://legislature.vermont.gov/statutes/section/17/051/02561",
+   "checked": "2026-10-21",
+   "quote": "If at the hour of closing there are any qualified voters at the polling place desiring to vote, who have been unable to do so since appearing there, the polls shall be kept open long enough after the hour of closing to allow those present a reasonable opportunity to vote.",
+   "status": "verified"
+  },
+  "track": {
+   "en": "Log in to the Vermont Voter Portal to check your ballot's status and the date it was mailed to you.",
+   "es": "Entra al portal de votantes de Vermont (Vermont Voter Portal) para revisar el estado de tu boleta y la fecha en que te la enviaron.",
+   "src": "https://sos.vermont.gov/elections/voters/early-absentee-voting/",
+   "checked": "2026-10-21",
+   "quote": "Visit the Vermont Voter Portal to check the status of your ballot, the date it was mailed to you, and other information.",
+   "status": "verified"
+  },
+  "unsigned": {
+   "en": "Your town clerk will send you a notice with an affidavit to sign. Get it back before the polls close on Election Day by mail or in person, or by the end of the business day before the election if you send it electronically.",
+   "es": "El secretario de tu municipio te enviará un aviso con una declaración jurada para firmar. Devuélvela antes de que cierren los lugares de votación el Día de las Elecciones, por correo o en persona, o antes del cierre del día hábil anterior a la elección si la mandas por medios electrónicos.",
+   "src": "https://legislature.vermont.gov/statutes/section/17/051/02547",
+   "checked": "2026-10-21",
+   "quote": "provided the affidavit is received by the presiding officer or other sworn election official prior to the closing of the polls if returned in person or by mail or prior to the close of business on the day before the election if returned electronically.",
+   "status": "verified"
+  },
+  "late_mail": {
+   "status": "missing",
+   "notes": "CONFLICT on the mail deadline. 17 V.S.A. 2543(d)(1)(C) counts a ballot returned 'by mail to the town clerk’s office before the close of the polls on the day of the election', while the SOS pages say 'Return your ballot to your town clerk’s office before the office closes on the day before the election, or bring it to your polling place before 7 p.m. on Election Day.'"
+  }
+ },
+ "notes": "Read October 21, 2026 on sos.vermont.gov (voters, early-absentee-voting, registration, voter-faqs, polling-places, polling-place-sign-rules, town-clerks), the SOS 2026 elections calendar PDF (v1.2, July 1, 2026) on outside.vermont.gov, and legislature.vermont.gov (17 V.S.A. 2508, 2543, 2546, 2547, 2561). EARLY VOTING for states.js: in person at the town or city clerk's office during business hours, starting 45 days before the election (Saturday, September 19, 2026) or as soon as ballots are available, through the close of the clerk's office on Monday, November 2. Quotes: 'Early voting for the General Election begins 45 days before the election or as soon as ballots are available. Contact your town or city clerk to confirm that ballots are available in your town.' (https://sos.vermont.gov/elections/voters/); calendar: 'September 19 (Saturday, 45 days before the election) Clerks – Town clerks must receive general election ballots (not later than 45 days before the election).'; 17 V.S.A. 2543(d)(1)(A): ballots returned 'by any means, to the town clerk’s office before the close of business on the day preceding the election' are counted. The November 2 end date is from that return rule, not stated as an early voting end date. CONFLICT (mail_return, late_mail): 17 V.S.A. 2543(d)(1)(C) counts ballots mailed to the clerk that arrive 'before the close of the polls on the day of the election', while the SOS pages say to return to the clerk 'before the office closes on the day before the election'. dates.mail_return therefore gives only the drop box, clerk's office and polling place deadlines, which both sources agree on, and says nothing about mail arrival. Electioneering: 17 V.S.A. 2508 bans displaying campaign stickers and buttons 'within the building containing a polling place' and has no distance in feet (SOS sign rules page: 'There is no specific number of feet away from the polling place limitation in Vermont law'). Provisional ballots are rare in Vermont per the SOS FAQ. vote.vermont.gov is where mvp.vermont.gov now redirects (the Vermont Voter Portal)."
+}

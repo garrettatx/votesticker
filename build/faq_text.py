@@ -283,8 +283,8 @@ A.update({
     'KY': {
         'polls': ("Polls are open 6 a.m. to 6 p.m. local time. Kentucky has two time zones.",
                   "Los lugares de votación abren de 6 a. m. a 6 p. m., hora local. Kentucky tiene dos zonas horarias."),
-        'id': ("You'll be asked for a photo ID, such as a Kentucky driver's license, a U.S. passport, or a military ID. If you can't get one, you can sign an affirmation and vote.",
-               "Te pedirán una identificación con foto, como una licencia de conducir de Kentucky, un pasaporte de EE. UU. o una identificación militar. Si no puedes conseguir una, puedes firmar una declaración y votar."),
+        'id': ("You'll be asked for a photo ID, such as a Kentucky driver's license, a U.S. passport, or a military ID. If you can't get one for a reason the law lists, such as your work schedule, a lost ID or no transportation, you can sign an affirmation and vote, but you still have to show an ID card with your name and photo, or a county ID card approved by the State Board of Elections.",
+               "Te pedirán una identificación con foto, como una licencia de conducir de Kentucky, un pasaporte de EE. UU. o una identificación militar. Si no puedes conseguir una por una razón que marca la ley, como tu horario de trabajo, haber perdido tu identificación o no tener transporte, puedes firmar una declaración y votar, pero igual tienes que mostrar una tarjeta de identificación con tu nombre y tu foto, o una identificación de un condado aprobada por la Junta Estatal de Elecciones (State Board of Elections)."),
         'reg': no_reg('Kentucky', 'October 5, 2026', '5 de octubre de 2026'),
     },
     'LA': {

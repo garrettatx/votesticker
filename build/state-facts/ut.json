@@ -1,0 +1,244 @@
+{
+ "abbr": "UT",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "vote.utah.gov": {
+   "en": "the Utah Lieutenant Governor's Office",
+   "es": "la Oficina del Vicegobernador de Utah"
+  },
+  "le.utah.gov": {
+   "en": "the Utah Election Code",
+   "es": "el Código Electoral de Utah"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "Online, by mail or at your county clerk's office: your clerk must receive it by 5 p.m. on Friday, October 23, 2026. After that, you can register in person when you vote, during early voting or on Election Day, with two forms of ID.",
+   "es": "En línea, por correo o en la oficina del secretario de tu condado (county clerk): debe recibirlo a más tardar a las 5 p. m. del viernes 23 de octubre de 2026. Después de esa fecha, puedes registrarte en persona cuando vayas a votar, durante la votación anticipada o el Día de las Elecciones, con dos formas de identificación.",
+   "src": "https://vote.utah.gov/learn-about-registering-to-vote/",
+   "checked": "2026-10-21",
+   "quote": "For the November 3rd, 2026 Regular General Election, your county clerk must receive your registration by 5:00 pm on Friday, October 23rd, 2026.",
+   "status": "verified",
+   "until": "2026-10-23",
+   "en_after": "The regular deadline was October 23, 2026. You can still register in person when you vote, at an early voting location or on Election Day, with two forms of ID.",
+   "es_after": "La fecha límite regular fue el 23 de octubre de 2026. Todavía puedes registrarte en persona cuando vayas a votar, en un lugar de votación anticipada o el Día de las Elecciones, con dos formas de identificación."
+  },
+  "mail_request": {
+   "en": "Active voters get a ballot in the mail without asking. The last day to request a ballot is 5 p.m. on Tuesday, October 27, 2026.",
+   "es": "Los votantes activos reciben su boleta por correo sin pedirla. El último día para solicitar una boleta es el martes 27 de octubre de 2026 a las 5 p. m.",
+   "src": "https://vote.utah.gov/current-election-information/",
+   "checked": "2026-10-21",
+   "quote": "Request Ballot By October 27, 2026 by 5pm",
+   "status": "verified",
+   "until": "2026-10-27",
+   "en_after": "Requests closed at 5 p.m. on October 27. You can still vote in person, early through October 30 or on Election Day.",
+   "es_after": "Las solicitudes cerraron a las 5 p. m. del 27 de octubre. Todavía puedes votar en persona, por anticipado hasta el 30 de octubre o el Día de las Elecciones."
+  },
+  "mail_return": {
+   "en": "Drop box or polling place: by 8 p.m. on Tuesday, November 3. Mail: your county clerk must receive it by 8 p.m. that day. A postmark isn't enough, and ballots that arrive after November 3 don't count.",
+   "es": "Buzón de entrega o lugar de votación: a más tardar a las 8 p. m. del martes 3 de noviembre. Por correo: la oficina del secretario de tu condado debe recibirla a más tardar a las 8 p. m. de ese día. El matasellos no basta, y las boletas que llegan después del 3 de noviembre no cuentan.",
+   "src": "https://vote.utah.gov/learn-about-voting-by-mail-and-absentee-voting/",
+   "checked": "2026-10-21",
+   "quote": "Your mail ballot must received by the clerk’s office on or before 8:00 p.m. on Election Day, November 3, 2026. Ballots received after November 3, 2026 will not be counted.",
+   "status": "verified"
+  },
+  "early_hours": {
+   "en": "Early voting runs Tuesday, October 20 to Friday, October 30, 2026. Every county holds it, but times and locations vary, so look yours up at vote.utah.gov.",
+   "es": "La votación anticipada va del martes 20 al viernes 30 de octubre de 2026. Todos los condados la ofrecen, pero los horarios y lugares cambian, así que busca los tuyos en vote.utah.gov.",
+   "src": "https://vote.utah.gov/wp-content/uploads/2026/09/2026-Voter-Information-Pamphlet.pdf",
+   "checked": "2026-10-21",
+   "quote": "All counties conduct early voting, although times and locations vary. Visit vote.utah.gov to find early voting locations and times.",
+   "status": "verified",
+   "until": "2026-10-30",
+   "en_after": "Early voting ended October 30. On Election Day, polling locations are open 7 a.m. to 8 p.m.",
+   "es_after": "La votación anticipada terminó el 30 de octubre. El Día de las Elecciones, los lugares de votación abren de 7 a. m. a 8 p. m."
+  },
+  "cure": {
+   "status": "missing",
+   "notes": "The cure deadline is noon on the last business day before the county canvass (Utah Code 20A-3a-401(9)). Counties canvass between November 10 and November 17 (2026 Utah Election Calendar), so there is no single statewide date; the rule is in mail.cure."
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "Your ballot comes in the mail, but you can also vote in person: early from October 20 to 30, or on Election Day from 7 a.m. to 8 p.m. Every county has at least one Election Day polling location.",
+   "es": "Tu boleta te llega por correo, pero también puedes votar en persona: por anticipado del 20 al 30 de octubre, o el Día de las Elecciones de 7 a. m. a 8 p. m. Cada condado tiene por lo menos un lugar de votación el Día de las Elecciones.",
+   "src": "https://vote.utah.gov/wp-content/uploads/2026/09/2026-Voter-Information-Pamphlet.pdf",
+   "checked": "2026-10-21",
+   "quote": "Eligible voters can vote in-person on Election Day. All counties must have at least one polling location.",
+   "status": "verified"
+  },
+  "first_time": {
+   "en": "Registering for the first time and voting by mail? Your county clerk may ask you to put a copy of your ID in the return envelope with your ballot. Check the instructions that come with it.",
+   "es": "¿Te registras por primera vez y votas por correo? La oficina del secretario de tu condado puede pedirte que metas una copia de tu identificación en el sobre de devolución junto con tu boleta. Revisa las instrucciones que vienen con ella.",
+   "src": "https://le.utah.gov/xcode/Title20A/Chapter3A/20A-3a-S204.html",
+   "checked": "2026-10-21",
+   "quote": "if required by the election officer because the voter has not yet provided valid voter identification with the voter's voter registration record, include a copy of the voter's valid voter identification with the ballot inside the return envelope;",
+   "status": "verified"
+  }
+ },
+ "where": {
+  "locator_url": "https://votesearch.utah.gov/voter-search/search/search-by-address/how-and-where-can-i-vote",
+  "locator_label": {
+   "en": "How and Where Can I Vote? (vote.utah.gov)",
+   "es": "Dónde y cómo votar, búsqueda por dirección (vote.utah.gov)"
+  },
+  "locator_cta": {
+   "en": "Find where to vote",
+   "es": "Buscar dónde votar"
+  },
+  "local_offices_url": "https://vote.utah.gov/county-clerk-contact-information/",
+  "rule": {
+   "en": "Look up early voting locations and times, drop boxes and your Election Day polling location at vote.utah.gov. Your county clerk can also tell you where to vote or drop off your ballot.",
+   "es": "Busca los lugares y horarios de votación anticipada, los buzones de entrega y tu lugar de votación del Día de las Elecciones en vote.utah.gov. La oficina del secretario de tu condado también te puede decir dónde votar o dejar tu boleta.",
+   "src": "https://vote.utah.gov/wp-content/uploads/2026/09/2026-Voter-Information-Pamphlet.pdf",
+   "checked": "2026-10-21",
+   "quote": "Contact your clerk’s office to find a location to cast or drop off your ballot on Election Day.",
+   "status": "verified"
+  }
+ },
+ "id": {
+  "rule": "id_nonphoto",
+  "accepted": {
+   "en": [
+    "Utah driver license",
+    "ID card issued by the state of Utah or the U.S. government",
+    "Utah concealed carry permit",
+    "U.S. passport",
+    "U.S. military ID card",
+    "Tribal ID card, Bureau of Indian Affairs card or tribal treaty card (no photo needed)"
+   ],
+   "es": [
+    "Licencia de conducir de Utah",
+    "Tarjeta de identificación del estado de Utah o del gobierno de EE. UU.",
+    "Permiso de Utah para portar armas ocultas (concealed carry permit)",
+    "Pasaporte de EE. UU.",
+    "Tarjeta de identificación militar de EE. UU.",
+    "Identificación tribal, tarjeta de la Oficina de Asuntos Indígenas (Bureau of Indian Affairs) o tarjeta de tratado tribal (no necesita foto)"
+   ],
+   "src": "https://le.utah.gov/xcode/Title20A/Chapter1/20A-1-S102.html",
+   "checked": "2026-10-21",
+   "quote": "a form of identification that bears the name and photograph of the voter which may include:",
+   "status": "verified"
+  },
+  "expired": {
+   "en": "Your photo ID has to be current, not expired.",
+   "es": "Tu identificación con foto tiene que estar vigente, no vencida.",
+   "src": "https://vote.utah.gov/voter-id-requirements/",
+   "checked": "2026-10-21",
+   "quote": "ONE primary form of ID that is valid (not expired), has your name, and has your photograph.",
+   "status": "verified"
+  },
+  "without": {
+   "en": "No photo ID? Bring two documents with your name that together show where you live, such as a birth certificate, a Social Security card, a government check or paycheck from the last 90 days, a Medicaid or Medicare card, or your current Utah vehicle registration.",
+   "es": "¿No tienes identificación con foto? Lleva dos documentos con tu nombre que juntos muestren dónde vives, como un acta de nacimiento, una tarjeta del Seguro Social, un cheque del gobierno o un talón de pago de los últimos 90 días, una tarjeta de Medicaid o Medicare, o el registro vigente de tu vehículo en Utah.",
+   "src": "https://le.utah.gov/xcode/Title20A/Chapter1/20A-1-S102.html",
+   "checked": "2026-10-21",
+   "quote": "two forms of identification not listed under Subsection (84)(a) or (b) but that bear the name of the voter and provide evidence that the voter resides in the voting precinct, which may include:",
+   "status": "verified"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "Every active voter gets a ballot in the mail. County clerks mail them between October 13 and October 27, 2026. If yours doesn't arrive soon after, call your county clerk's office right away.",
+   "es": "Cada votante activo recibe su boleta por correo. Las oficinas de los secretarios de condado las envían entre el 13 y el 27 de octubre de 2026. Si la tuya no llega poco después, llama de inmediato a la oficina del secretario de tu condado.",
+   "src": "https://vote.utah.gov/learn-about-voting-by-mail-and-absentee-voting/",
+   "checked": "2026-10-21",
+   "quote": "If you do not receive a ballot shortly after this time, immediately contact your county clerk’s office.",
+   "status": "verified"
+  },
+  "witness": {
+   "en": "Sign the affidavit on the return envelope and write the last four digits of your Utah driver license or state ID card.",
+   "es": "Firma la declaración jurada del sobre de devolución y escribe los últimos cuatro dígitos de tu licencia de conducir o tarjeta de identificación de Utah.",
+   "src": "https://le.utah.gov/xcode/Title20A/Chapter3A/20A-3a-S204.html",
+   "checked": "2026-10-21",
+   "quote": "enter the last four digits of the voter's Utah driver license or Utah state identification card;",
+   "status": "verified"
+  },
+  "track_url": "https://votesearch.utah.gov/voter-search/search/search-by-voter/track-mail-ballot",
+  "cure": {
+   "en": "If your signature or ID number is in question, your county clerk will contact you with an affidavit to sign. It must reach the clerk by noon on the last business day before your county's canvass, and then your ballot counts.",
+   "es": "Si hay dudas sobre tu firma o tu número de identificación, la oficina del secretario de tu condado se comunicará contigo con una declaración jurada para firmar. Debe llegar a la oficina a más tardar al mediodía del último día hábil antes del escrutinio de tu condado, y entonces tu boleta cuenta.",
+   "src": "https://le.utah.gov/xcode/Title20A/Chapter3A/20A-3a-S401.html",
+   "checked": "2026-10-21",
+   "quote": "if the election officer receives the affidavit no later than noon on the last business day before the day of the applicable canvass, count the individual's ballot;",
+   "status": "verified"
+  },
+  "dropbox": {
+   "en": "Drop boxes close at 8 p.m. on Tuesday, November 3. Find the one closest to you at vote.utah.gov.",
+   "es": "Los buzones de entrega cierran a las 8 p. m. del martes 3 de noviembre. Busca el más cercano en vote.utah.gov.",
+   "src": "https://vote.utah.gov/wp-content/uploads/2026/09/2026-Voter-Information-Pamphlet.pdf",
+   "checked": "2026-10-21",
+   "quote": "Find the drop box closest to you at vote.utah.gov. Drop boxes close at 8:00 p.m. on Nov. 3.",
+   "status": "verified"
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "en": "Save the campaigning for later. Within 150 feet of the building where you vote, or where a ballot drop box sits, no one can try to sway votes by word or in print, hand out cards or flyers, or gather petition signatures.",
+   "es": "Deja la campaña para después. A menos de 150 pies del edificio donde votas, o de donde hay un buzón de entrega de boletas, nadie puede tratar de influir en el voto de palabra o por escrito, repartir tarjetas o volantes, ni juntar firmas para peticiones.",
+   "src": "https://le.utah.gov/xcode/Title20A/Chapter3A/20A-3a-S501.html",
+   "checked": "2026-10-21",
+   "quote": "An individual may not, within a polling place or in any public area within 150 feet of the building where a polling place is located:",
+   "status": "verified"
+  },
+  "phone": {
+   "status": "missing",
+   "notes": "No phone-use rule found in 20A-3a-501 or 20A-3a-204. The ballot photo rule (20A-3a-504) is in the existing selfie FAQ."
+  },
+  "line": {
+   "status": "missing",
+   "notes": "Covered by faq.line."
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "en": "In 2020, vote.utah.gov posted four I Voted stickers you could download and print at home.",
+   "es": "En 2020, vote.utah.gov publicó cuatro stickers de \"Ya voté\" (I Voted) para descargar e imprimir en casa.",
+   "src": "https://vote.utah.gov/stickers/",
+   "checked": "2026-10-21",
+   "quote": "Click here to download all four 2020 “I Voted” stickers",
+   "status": "verified"
+  }
+ },
+ "faq": {
+  "provisional": {
+   "en": "If you register after October 23, you vote a provisional ballot. If you vote a provisional ballot without showing ID, you have until Monday, November 9, 2026, to show it to your county clerk.",
+   "es": "Si te registras después del 23 de octubre, votas con una boleta provisional. Si votas con una boleta provisional sin mostrar identificación, tienes hasta el lunes 9 de noviembre de 2026 para mostrarla en la oficina del secretario de tu condado.",
+   "src": "https://vote.utah.gov/wp-content/uploads/2026/01/2026-Utah-Election-Calendar.pdf",
+   "checked": "2026-10-21",
+   "quote": "Last day that the voter can provide ID to the election officer, if they didn’t when voting provisionally 20A-4-107(1)",
+   "status": "verified"
+  },
+  "line": {
+   "en": "You can still vote. Anyone in line at a polling place by 8 p.m. on Election Day gets to vote, and anyone in line at a drop box by 8 p.m. with a sealed ballot gets to drop it in.",
+   "es": "Todavía puedes votar. Cualquier persona que esté en la fila de un lugar de votación a las 8 p. m. del Día de las Elecciones puede votar, y quien esté en la fila de un buzón de entrega a las 8 p. m. con su boleta sellada puede depositarla.",
+   "src": "https://le.utah.gov/xcode/Title20A/Chapter3A/20A-3a-S204.html",
+   "checked": "2026-10-21",
+   "quote": "in line at a ballot drop box, with a sealed return envelope containing a ballot in the voter's possession, is allowed to deposit the ballot in the ballot drop box; or",
+   "status": "verified"
+  },
+  "track": {
+   "en": "Sign up at vote.utah.gov to be told when your ballot is sent and counted, or check its status there anytime.",
+   "es": "Inscríbete en vote.utah.gov para que te avisen cuando envíen y cuenten tu boleta, o revisa su estado ahí cuando quieras.",
+   "src": "https://vote.utah.gov/track-my-ballot/",
+   "checked": "2026-10-21",
+   "quote": "Sign up to be notified when your mail-in ballot is sent and counted.",
+   "status": "verified"
+  },
+  "unsigned": {
+   "status": "missing",
+   "notes": "20A-3a-401 sets the cure process for a questioned signature or ID number; whether a fully unsigned envelope can be cured was not stated in the parts read."
+  },
+  "late_mail": {
+   "en": "A mailed ballot counts only if your county clerk receives it by 8 p.m. on November 3, whatever the postmark. If it's late, use a drop box or take it to a polling location instead.",
+   "es": "Una boleta por correo cuenta solo si la oficina del secretario de tu condado la recibe a más tardar a las 8 p. m. del 3 de noviembre, sin importar el matasellos. Si ya es tarde, usa un buzón de entrega o llévala a un lugar de votación.",
+   "src": "https://vote.utah.gov/wp-content/uploads/2026/09/2026-Voter-Information-Pamphlet.pdf",
+   "checked": "2026-10-21",
+   "quote": "Ballots received after Nov. 3 will not be counted, regardless of when they are postmarked.",
+   "status": "verified"
+  }
+ },
+ "notes": "Read October 21, 2026 on vote.utah.gov (curl worked: current-election-information, learn-about-registering-to-vote, learn-about-voting-by-mail-and-absentee-voting, voter-id-requirements, securing-your-mail-ballot, track-my-ballot, stickers, the 2026 Utah Election Calendar PDF and the 2026 Voter Information Pamphlet PDF) and le.utah.gov (20A-1-102 valid voter ID, 20A-1-302 hours, 20A-3a-204, 20A-3a-401, 20A-3a-501, 20A-3a-601). EARLY VOTING for states.js: Tuesday, October 20 to Friday, October 30, 2026. Pamphlet: 'VOTE EARLY IN-PERSON (October 20th - October 30th) All counties conduct early voting, although times and locations vary.' Calendar marks 'In-person early voting period begins' on Tuesday, October 20. Utah Code 20A-3a-601(2): the period 'begins on the date that is 14 calendar days before the date of the election; and continues through the Friday before the election if the election date is a Tuesday'; 601(3)(a) lets an election officer extend it to the day before the election, and 601(4)(b) requires early voting 'on each weekday'. Source URL: https://vote.utah.gov/wp-content/uploads/2026/09/2026-Voter-Information-Pamphlet.pdf. ID: the vote.utah.gov ID page's two-document list omits the paycheck that Code 20A-1-102(84)(c)(iv) and the pamphlet include; the statute is cited for id.without. Sticker: the 2020 printable stickers are the only official sticker page found. Utah County ran a 2026 student 'I Voted' sticker contest (reported by KSL and Lehi Free Press), but utahcounty.gov/Elections/kids/ returned HTTP 500, so it is not used. The mail_request deadline is from the current-election page; the page does not say who needs to request (it also says active voters are mailed one automatically)."
+}

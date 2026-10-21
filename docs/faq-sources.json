@@ -763,7 +763,7 @@
    "rule": "photo_requested",
    "summary": "You'll be asked for a photo ID, such as a Kentucky driver's license, U.S. passport, or military ID. If you can't get one, you can sign an affirmation and vote.",
    "source": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=58074",
-   "quote": "if a voter is unable to provide proof of identification as required under KRS 117.225, and as defined under KRS 117.001, a voter may cast a ballot if the individual ... executes a voter's affirmation"
+   "quote": "if a voter is unable to provide proof of identification as required under KRS 117.225, and as defined under KRS 117.001, a voter may cast a ballot if the individual ... executes a voter's affirmation (2) In addition to the requirements of subsection (1) of this section, to cast a ballot, the voter who is unable to provide proof of identification shall provide to an election officer: (a) Any identification card issued by a county in this state ... or (b) Any identification card with the voter's photograph and the name of the voter stated."
   },
   "registration": {
    "rule": "no",

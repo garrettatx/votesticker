@@ -19,6 +19,9 @@ return array(
 	),
 	// State facts: summary (when the standard sentence would mislead) and note, from states.js.
 	'states' => array(
+		'WY' => array( 'note' => 'Vota en ausencia en persona en la oficina del secretario de tu condado (county clerk), sin necesidad de excusa, hasta el día antes de la elección.' ),
+		'WV' => array( 'note' => 'Vota por anticipado en el juzgado del condado, un anexo o un lugar de votación comunitario en horario de oficina, y de 9 a. m. a 5 p. m. los dos últimos sábados.' ),
+		'UT' => array( 'note' => 'Todos los condados tienen votación anticipada; los horarios y lugares cambian. Utah también envía una boleta por correo a cada votante.' ),
 		'NM' => array( 'note' => 'La votación anticipada empieza en las oficinas del secretario del condado (County Clerk). Más lugares abren en todo el estado el 17 de octubre.' ),
 		'KY' => array( 'note' => 'La votación anticipada sin excusa es de jueves a sábado. Cada condado fija sus horarios y lugares.' ),
 		'LA' => array( 'note' => 'De 8:30 a. m. a 6 p. m.; no hay votación anticipada el domingo 25 de octubre.' ),

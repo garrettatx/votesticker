@@ -1,0 +1,232 @@
+{
+ "abbr": "WY",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "sos.wyo.gov": {
+   "en": "the Wyoming Secretary of State",
+   "es": "la Secretaría de Estado de Wyoming"
+  },
+  "wyoleg.gov": {
+   "en": "the Wyoming Election Code",
+   "es": "el Código Electoral de Wyoming"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "You can still register and vote at the same time: in person with your county clerk during absentee voting, through Monday, November 2, or at your polling place on Election Day. Bring proof of identity, U.S. citizenship and Wyoming residency.",
+   "es": "Todavía puedes registrarte y votar al mismo tiempo: en persona con el secretario de tu condado (county clerk) durante la votación en ausencia, hasta el lunes 2 de noviembre, o en tu lugar de votación el Día de las Elecciones. Lleva comprobantes de identidad, ciudadanía estadounidense y domicilio en Wyoming.",
+   "src": "https://sos.wyo.gov/Elections/Docs/2026/2026_Key_Election_Dates.pdf",
+   "checked": "2026-10-21",
+   "quote": "Voters may still register in person and cast an absentee ballot October 20 – November 2, 2026",
+   "status": "verified",
+   "until": "2026-11-02",
+   "en_after": "You can still register and vote at the same time at your polling place on Election Day. Bring proof of identity, U.S. citizenship and Wyoming residency.",
+   "es_after": "Todavía puedes registrarte y votar al mismo tiempo en tu lugar de votación el Día de las Elecciones. Lleva comprobantes de identidad, ciudadanía estadounidense y domicilio en Wyoming."
+  },
+  "mail_request": {
+   "en": "Ask your county clerk by phone, email, fax, mail or in person, any day through Monday, November 2. You don't need a reason. Requests aren't taken on Election Day.",
+   "es": "Pídela al secretario de tu condado por teléfono, correo electrónico, fax, correo postal o en persona, cualquier día hasta el lunes 2 de noviembre. No necesitas dar una razón. El Día de las Elecciones no se aceptan solicitudes.",
+   "src": "https://sos.wyo.gov/faqs.aspx?root=ELEC",
+   "checked": "2026-10-21",
+   "quote": "Registered voters may request an absentee ballot from your county clerk at any time during an election year, but not on the day of the election.",
+   "status": "verified",
+   "until": "2026-11-02",
+   "en_after": "Requests closed November 2. You can still vote at your polling place, 7 a.m. to 7 p.m.",
+   "es_after": "Las solicitudes cerraron el 2 de noviembre. Todavía puedes votar en tu lugar de votación, de 7 a. m. a 7 p. m."
+  },
+  "mail_return": {
+   "en": "Your county clerk's office must receive it by 7 p.m. on Tuesday, November 3, 2026. Mail inside the county can take up to seven days, longer from outside it, so mail it early or bring it to the clerk's office yourself.",
+   "es": "La oficina del secretario de tu condado debe recibirla a más tardar a las 7 p. m. del martes 3 de noviembre de 2026. El correo dentro del condado puede tardar hasta siete días, y más desde fuera, así que mándala con tiempo o llévala tú a la oficina del secretario.",
+   "src": "https://sos.wyo.gov/Elections/State/AbsenteeVoting.aspx",
+   "checked": "2026-10-21",
+   "quote": "All Absentee ballots must be received in the county clerk's office no later than 7:00 p.m. on Election Day. Ballots arriving after the deadline will not be counted.",
+   "status": "verified"
+  },
+  "early_hours": {
+   "en": "In-person absentee voting runs Tuesday, October 6 to Monday, November 2, 2026. Ask your county clerk where and when.",
+   "es": "La votación en ausencia en persona va del martes 6 de octubre al lunes 2 de noviembre de 2026. Pregunta al secretario de tu condado dónde y a qué hora.",
+   "src": "https://sos.wyo.gov/Elections/Docs/2026/2026_Key_Election_Dates.pdf",
+   "checked": "2026-10-21",
+   "quote": "General Election …………………………………………………………………… October 6 – November 2, 2026",
+   "status": "verified",
+   "until": "2026-11-02",
+   "en_after": "Absentee voting ended November 2. Vote at your polling place on Election Day, 7 a.m. to 7 p.m.",
+   "es_after": "La votación en ausencia terminó el 2 de noviembre. Vota en tu lugar de votación el Día de las Elecciones, de 7 a. m. a 7 p. m."
+  },
+  "cure": {
+   "status": "missing",
+   "notes": "No absentee ballot cure process found on sos.wyo.gov."
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "Vote absentee in person with your county clerk before Election Day, or at your polling place on Election Day. Some counties run vote centers, where you can vote at any polling place in the county; your county clerk can tell you.",
+   "es": "Vota en ausencia en persona con el secretario de tu condado antes del Día de las Elecciones, o en tu lugar de votación el Día de las Elecciones. Algunos condados tienen centros de votación donde puedes votar en cualquier lugar de votación del condado; el secretario de tu condado te puede decir.",
+   "src": "https://sos.wyo.gov/faqs.aspx?root=ELEC",
+   "checked": "2026-10-21",
+   "quote": "Vote centers allow for residents in a county to vote at ANY polling place location in that county.",
+   "status": "verified"
+  },
+  "first_time": {
+   "en": "Registered by mail and voting absentee in your first federal election? Put a copy of your photo ID, or a document with your name and home address, in the envelope with your ballot.",
+   "es": "¿Te registraste por correo y vas a votar en ausencia en tu primera elección federal? Mete en el sobre, junto con tu boleta, una copia de tu identificación con foto o de un documento con tu nombre y domicilio.",
+   "src": "https://sos.wyo.gov/faqs.aspx?root=ELEC",
+   "checked": "2026-10-21",
+   "quote": "If you registered to vote by mail and are voting by absentee ballot in your first federal election, you must enclose a copy of your photo ID or document bearing your name and residence address in the envelope with your voted ballot.",
+   "status": "verified"
+  }
+ },
+ "where": {
+  "locator_url": "https://myelectionday.sos.wyo.gov/WYVOTES/Pages/VOSearch.aspx",
+  "locator_label": {
+   "en": "Polling Place Locator (Wyoming Secretary of State)",
+   "es": "Búsqueda de lugares de votación (Secretaría de Estado de Wyoming)"
+  },
+  "locator_cta": {
+   "en": "Find my polling place",
+   "es": "Buscar mi lugar de votación"
+  },
+  "local_offices_url": "https://sos.wyo.gov/Elections/Docs/2026/2026_Voter_Guide.pdf",
+  "rule": {
+   "en": "Enter your address in the state's Polling Place Locator, or call your county clerk's office. Polls are open 7 a.m. to 7 p.m.",
+   "es": "Escribe tu dirección en el buscador de lugares de votación del estado, o llama a la oficina del secretario de tu condado. Los lugares de votación abren de 7 a. m. a 7 p. m.",
+   "src": "https://sos.wyo.gov/faqs.aspx?root=ELEC",
+   "checked": "2026-10-21",
+   "quote": "Enter your address in our Polling Place Locator, found on our website or contact your county clerk’s office.",
+   "status": "verified"
+  }
+ },
+ "id": {
+  "rule": "id_nonphoto",
+  "accepted": {
+   "en": [
+    "Wyoming driver's license or ID card",
+    "Tribal ID card",
+    "U.S. passport",
+    "U.S. military card",
+    "Driver's license or ID card from another state",
+    "University of Wyoming student ID",
+    "Wyoming community college student ID",
+    "Wyoming public school student ID",
+    "Medicare or Medicaid insurance card (accepted through December 31, 2029)",
+    "Wyoming concealed firearm permit"
+   ],
+   "es": [
+    "Licencia de conducir o tarjeta de identificación de Wyoming",
+    "Identificación tribal",
+    "Pasaporte de EE. UU.",
+    "Tarjeta militar de EE. UU.",
+    "Licencia de conducir o tarjeta de identificación de otro estado",
+    "Identificación de estudiante de la Universidad de Wyoming (University of Wyoming)",
+    "Identificación de estudiante de un colegio comunitario de Wyoming",
+    "Identificación de estudiante de una escuela pública de Wyoming",
+    "Tarjeta del seguro de Medicare o Medicaid (se acepta hasta el 31 de diciembre de 2029)",
+    "Permiso de Wyoming para portar armas ocultas (concealed firearm permit)"
+   ],
+   "src": "https://sos.wyo.gov/Elections/VoterID/Default.aspx",
+   "checked": "2026-10-21",
+   "quote": "Wyoming voters are required to show an acceptable form of identification when voting in person.",
+   "status": "verified"
+  },
+  "expired": {
+   "status": "missing",
+   "notes": "The SOS list says 'Valid' for the passport, Medicare and Medicaid cards and firearm permit only; no general expired-ID rule found."
+  },
+  "without": {
+   "en": "Don't have one of these? You can get a free Wyoming ID card at your local Driver Services office.",
+   "es": "¿No tienes ninguna de estas? Puedes sacar gratis una tarjeta de identificación de Wyoming en la oficina local de servicios para conductores (Driver Services).",
+   "src": "https://sos.wyo.gov/Elections/VoterID/Default.aspx",
+   "checked": "2026-10-21",
+   "quote": "If you do not have one of the documents in the list above, you may obtain a free Wyoming Identification Card from your local Driver Services office.",
+   "status": "verified"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "Any registered Wyoming voter can vote absentee. You don't need to give a reason. If you mail it in, you don't need to send ID.",
+   "es": "Cualquier votante registrado en Wyoming puede votar en ausencia. No necesitas dar una razón. Si la mandas por correo, no tienes que enviar identificación.",
+   "src": "https://sos.wyo.gov/faqs.aspx?root=ELEC",
+   "checked": "2026-10-21",
+   "quote": "You do not have to give a reason for requesting an absentee ballot.",
+   "status": "verified"
+  },
+  "witness": {
+   "status": "missing"
+  },
+  "track_url": "",
+  "cure": {
+   "status": "missing"
+  },
+  "dropbox": {
+   "status": "missing",
+   "notes": "The SOS absentee page lists only in-person return to the county clerk's office and mail; no drop boxes."
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "en": "Save the campaigning for far from the polls. On Election Day, no campaigning of any kind, including signs and handing out literature, within 100 yards of any public entrance to the building where you vote. At absentee polling places on other days, it's 100 feet. One small bumper sticker per candidate on your parked car is fine while you vote.",
+   "es": "Deja la campaña para lejos del lugar de votación. El Día de las Elecciones no se permite ningún tipo de campaña, incluidos letreros y reparto de folletos, a menos de 100 yardas de cualquier entrada pública del edificio donde votas. En los lugares de votación en ausencia, los demás días, son 100 pies. Una calcomanía pequeña por candidato en la defensa de tu auto estacionado sí se permite mientras votas.",
+   "src": "https://wyoleg.gov/statutes/compress/title22.pdf",
+   "checked": "2026-10-21",
+   "quote": "within one hundred (100) yards on the day of a primary, general or special election and within one hundred (100) feet on all other days, of any public entrance to the building in which the polling place is located.",
+   "status": "verified"
+  },
+  "phone": {
+   "status": "missing"
+  },
+  "line": {
+   "status": "missing",
+   "notes": "Covered by faq.line."
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "en": "In 2019, for the 150th anniversary of women's suffrage in Wyoming, the Secretary of State's office ran an I Voted sticker design contest for high school juniors and seniors and college students. County clerks were to hand out the winning stickers at polling places.",
+   "es": "En 2019, por el 150 aniversario del voto de las mujeres en Wyoming, la Secretaría de Estado organizó un concurso de diseño de stickers de \"Ya voté\" (I Voted) para estudiantes de los dos últimos años de preparatoria y de universidad. Los secretarios de condado iban a repartir los stickers ganadores en los lugares de votación.",
+   "src": "https://sos.wyo.gov/Elections/Docs/2020/150th_I_Voted_Sticker_Contest.pdf",
+   "checked": "2026-10-21",
+   "quote": "The Wyoming County Clerks will be distributing the stickers at polling places during Early Voting and on Election Day.",
+   "status": "verified"
+  }
+ },
+ "faq": {
+  "provisional": {
+   "en": "If you're turned away or can't prove you're eligible, you can vote a provisional ballot. For it to count, bring proof that you're eligible to your county clerk by close of business on Wednesday, November 4.",
+   "es": "Si no te dejan votar o no puedes comprobar que tienes derecho, puedes votar con una boleta provisional. Para que cuente, lleva un comprobante de que puedes votar a la oficina del secretario de tu condado antes del cierre del miércoles 4 de noviembre.",
+   "src": "https://sos.wyo.gov/faqs.aspx?root=ELEC",
+   "checked": "2026-10-21",
+   "quote": "In order for your vote to be counted, you must provide proof of your eligibility to vote to the county clerk no later than close of business the day following the election.",
+   "status": "verified"
+  },
+  "line": {
+   "en": "You can still vote. Polls stay open until the last person in line at 7 p.m. has voted.",
+   "es": "Todavía puedes votar. Los lugares de votación siguen abiertos hasta que vote la última persona que estaba en la fila a las 7 p. m.",
+   "src": "https://sos.wyo.gov/faqs.aspx?root=ELEC",
+   "checked": "2026-10-21",
+   "quote": "Polls are open from 7 a.m. to 7 p.m., or until the last person in line at 7 p.m. has voted.",
+   "status": "verified"
+  },
+  "track": {
+   "en": "Call your county clerk to check on your absentee ballot.",
+   "es": "Llama a la oficina del secretario de tu condado para saber cómo va tu boleta de voto en ausencia.",
+   "src": "https://sos.wyo.gov/Elections/State/AbsenteeVoting.aspx",
+   "checked": "2026-10-21",
+   "quote": "Contact your county clerk for information on the status of your ballot.",
+   "status": "verified"
+  },
+  "unsigned": {
+   "status": "missing"
+  },
+  "late_mail": {
+   "en": "It won't count. Your county clerk must receive it by 7 p.m. on Election Day, whatever the postmark. If time is short, bring it to the clerk's office in person instead.",
+   "es": "No va a contar. La oficina del secretario de tu condado debe recibirla a más tardar a las 7 p. m. del Día de las Elecciones, sin importar el matasellos. Si te queda poco tiempo, llévala en persona a la oficina del secretario.",
+   "src": "https://sos.wyo.gov/Elections/State/AbsenteeVoting.aspx",
+   "checked": "2026-10-21",
+   "quote": "Ballots arriving after the deadline will not be counted.",
+   "status": "verified"
+  }
+ },
+ "notes": "Read October 21, 2026 on sos.wyo.gov (Elections FAQ, Absentee Voting, Voter ID, 2026 Key Election Dates PDF, 2026 Voter Guide PDF, the 2019 sticker contest PDF) and wyoleg.gov (Title 22 PDF: 22-26-113 electioneering, 22-3-118 proof of identity). EARLY VOTING for states.js: in-person absentee voting, Tuesday, October 6 to Monday, November 2, 2026. Key Dates quote: 'Absentee Voting: ... General Election …… October 6 – November 2, 2026'; FAQ: 'Absentee voting begins 28 days prior to the election (45 days for military or overseas voters) and ends the day before the election.' Source URL: https://sos.wyo.gov/Elections/Docs/2026/2026_Key_Election_Dates.pdf. CONFLICT on the regular registration deadline: the Key Dates PDF says 'Voter Registration Closes: General …… October 19, 2026', while the FAQ says 'The deadline for voter registration is 14 days before an election' and the Voter Guide says 'by mail not less than (14) days before an election', which counts to October 20 (14 days before November 3). The live faq_text.py WY 'reg' answer says October 20. Both dates have passed and same-day registration is open, so reg_deadline gives only the same-day route and no regular date. local_offices_url is the 2026 Voter Guide PDF, whose last two pages list all 23 county clerks; no HTML county clerk list was found. No ballot tracker: the SOS absentee page says to contact the county clerk. 'mail it early' in mail_return rests on the SOS line '(Mail delivery within the county may take up to seven (7) days, and longer if you’re mailing your ballot from outside the county.)'."
+}
