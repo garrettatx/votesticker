@@ -42,7 +42,7 @@ curl -s -m 30 -o /dev/null -w "IndexNow %{http_code}\n" -H "Content-Type: applic
 git add site/assets/states/$abbr site/index.php build/lastmod.json
 git commit -q -m "${(C)slug//-/ }: $(($n-1)) new ready-mades from Codex; retire the earlier set
 
-Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>
 Claude-Session: https://claude.ai/code/session_01U4jJBSt3CnGjJYrtPzNn5q"
 git push -q
 git log --oneline -1
