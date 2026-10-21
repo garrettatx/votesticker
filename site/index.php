@@ -330,6 +330,12 @@ function vote_faq_raw( $st, $key ) {
 	return $a && ! empty( $a['src'] ) && ! empty( $a[ vote_es() ? 'es' : 'en' ] ) ? array( $a[ vote_es() ? 'es' : 'en' ], $a['src'] ) : null;
 }
 
+// One "go deeper" line to a Resist Now Learn guide (Garrett, October 21): only where the guide answers the next
+// question a reader of that section has. English only, so Spanish pages say so.
+function vote_rn( $path, $lead, $label ) {
+	return '<p class="guide__more">' . vote_e( t( $lead ) ) . ' <a href="https://resistnow.net/learn/' . $path . '/">' . vote_e( t( $label ) ) . '</a>' . ( vote_es() ? ' (en inglés)' : '' ) . '.</p>';
+}
+
 // The guide under the summary box: dates, where to vote, ID, mail voting, rules at the polls, the state's
 // sticker tradition. Headings read the way people search; each section ends with one source line.
 // Every block shows only when its facts are verified; a state without a facts file shows none of it.
@@ -355,7 +361,8 @@ function vote_guide( $st ) {
 	$rows[] = '<tr><th scope="row">' . vote_e( t( 'Election Day' ) ) . '</th><td>' . vote_e( vote_es() ? 'Martes 3 de noviembre de 2026.' : 'Tuesday, November 3, 2026.' ) . '</td></tr>';
 	if ( count( $rows ) > 1 ) {
 		$out .= '<section class="guide" aria-labelledby="dates-h">' . $h( 'dates-h', t( 'Key Dates for Nov. 3' ) )
-			. '<table class="dates"><caption class="sr-only">' . vote_e( t( '%s voting dates and deadlines for the November 3, 2026 election', $name ) ) . '</caption><tbody>' . implode( '', $rows ) . '</tbody></table>' . vote_sources_line( $st, $srcs ) . '</section>';
+			. '<table class="dates"><caption class="sr-only">' . vote_e( t( '%s voting dates and deadlines for the November 3, 2026 election', $name ) ) . '</caption><tbody>' . implode( '', $rows ) . '</tbody></table>' . vote_sources_line( $st, $srcs )
+			. ( vote_fact( $st, 'dates.reg_deadline' ) ? vote_rn( 'voter-registration', 'Missed a registration deadline?', 'What you can still do, state by state' ) : '' ) . '</section>';
 	}
 
 	// A section is a list of facts; each adds its source to the section's line.
@@ -386,7 +393,7 @@ function vote_guide( $st ) {
 		$id .= '</ul>'; $srcs[] = $ids['src'];
 	}
 	foreach ( array( 'id.expired', 'id.without' ) as $k ) { $f = vote_fact( $st, $k ); if ( $f ) { $id .= '<p>' . vote_e( $f['text'] ) . '</p>'; $srcs[] = $f['src']; } }
-	if ( $id ) { $out .= '<section class="guide" aria-labelledby="id-h">' . $h( 'id-h', t( 'What ID to Bring' ) ) . $id . vote_sources_line( $st, $srcs ) . '</section>'; }
+	if ( $id ) { $out .= '<section class="guide" aria-labelledby="id-h">' . $h( 'id-h', t( 'What ID to Bring' ) ) . $id . vote_sources_line( $st, $srcs ) . vote_rn( 'voter-id-laws', 'Forgot your ID, or want to see how other states compare?', 'Voter ID rules in every state' ) . '</section>'; }
 
 	// Voting by mail: who qualifies (a list where the state has conditions), then the rest.
 	$mail = ''; $srcs = array();
@@ -398,7 +405,7 @@ function vote_guide( $st ) {
 	foreach ( array( 'mail.witness', 'mail.dropbox', 'mail.cure' ) as $k ) { $f = vote_fact( $st, $k ); if ( $f ) { $mail .= '<p>' . vote_e( $f['text'] ) . '</p>'; $srcs[] = $f['src']; } }
 	$track = vote_fact( $st, 'mail.track_url' );
 	if ( $track ) { $mail .= '<p class="guide__more"><a href="' . vote_e( $track ) . '" target="_blank" rel="noopener">' . vote_e( t( 'Track your %s mail ballot', $name ) ) . '</a></p>'; }
-	if ( $mail ) { $out .= '<section class="guide" aria-labelledby="mail-h">' . $h( 'mail-h', t( 'mail' === ( $st['kind'] ?? '' ) && vote_verified( $st ) ? 'Returning Your Ballot' : 'Who Can Vote by Mail' ) ) . $mail . vote_sources_line( $st, $srcs ) . '</section>'; }
+	if ( $mail ) { $out .= '<section class="guide" aria-labelledby="mail-h">' . $h( 'mail-h', t( 'mail' === ( $st['kind'] ?? '' ) && vote_verified( $st ) ? 'Returning Your Ballot' : 'Who Can Vote by Mail' ) ) . $mail . vote_sources_line( $st, $srcs ) . vote_rn( 'mail-in-voting', 'Why mail ballots get rejected, and how to fix a signature problem:', 'the mail voting guide' ) . '</section>'; }
 
 	// Rules at the polls, then the state's own sticker tradition, which leads back to the maker.
 	$p = $section( 'polls-h', t( 'Phones, Photos, and Campaign Gear' ), array( 'polls_rules.gear', 'polls_rules.phone', 'polls_rules.line' ) );
