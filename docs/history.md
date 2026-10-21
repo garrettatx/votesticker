@@ -155,3 +155,11 @@ circle in Chromium and WebKit.
 
 Same day: four versions of the suggested post text per message (Plan, Short, Friends, Official info),
 picked with chips above the box; each ends with the invite and three or four matching hashtags.
+
+Later on October 21: the 14 states still on the plain October 19 sets (AK, NM, ND, OH, OK, RI, SC, SD, TN,
+UT, VT, WV, WI, WY) lost them (saved under `originals/<abbr>/retired-20261021/`). Each got two stickers
+rendered by the rebuilt maker instead, Tilt in plum with the state's message and Brush in burnt orange
+with I VOTED, so the hero and the share card have something strong to show. Maryland, North Carolina
+and Virginia keep their six hand-made images. Garrett's call: no more Codex sets; the maker is now good
+enough. The Alaska Codex drawings in `incoming/codex/ak/` were never installed (eight of ten maps came
+back 13 to 41% too wide). OG cards now show the state's hero with two more from its set peeking out.
