@@ -42,7 +42,10 @@ return array(
 			'checked' => '2026-10-21',
 		),
 		'where.locator_url' => 'https://goelect.txelections.civixapps.com/ivis-mvp-ui/#/login',
-		'where.locator_label' => 'My Voter Portal (Texas Secretary of State)',
+		'where.locator_label' => array(
+			'en' => 'My Voter Portal (Texas Secretary of State)',
+			'es' => 'My Voter Portal (Secretaría de Estado de Texas)',
+		),
 		'where.local_offices_url' => 'https://www.sos.state.tx.us/elections/voter/county.shtml',
 		'where.rule' => array(
 			'en' => 'My Voter Portal shows your registration and where you can vote. Your county elections office lists early voting sites and their hours.',
@@ -133,7 +136,10 @@ return array(
 			'checked' => '2026-10-21',
 		),
 		'where.locator_url' => 'https://voter.votewa.gov/WhereToVote.aspx',
-		'where.locator_label' => 'VoteWA.gov drop boxes and voting centers',
+		'where.locator_label' => array(
+			'en' => 'VoteWA.gov drop boxes and voting centers',
+			'es' => 'Buzones y centros de votación en VoteWA.gov',
+		),
 		'where.local_offices_url' => 'https://www.sos.wa.gov/elections/voters/voter-registration/county-elections-offices',
 		'mail.who' => array(
 			'en' => 'Every registered voter gets a ballot in the mail; they went out on October 16. If yours hasn\'t arrived, contact your county elections office or print a replacement at VoteWA.gov. Your county counts only one ballot from you.',

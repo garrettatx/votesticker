@@ -52,7 +52,10 @@
  },
  "where": {
   "locator_url": "https://voter.votewa.gov/WhereToVote.aspx",
-  "locator_label": "VoteWA.gov drop boxes and voting centers",
+  "locator_label": {
+   "en": "VoteWA.gov drop boxes and voting centers",
+   "es": "Buzones y centros de votación en VoteWA.gov"
+  },
   "local_offices_url": "https://www.sos.wa.gov/elections/voters/voter-registration/county-elections-offices",
   "rule": {
    "status": "missing"

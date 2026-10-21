@@ -49,7 +49,10 @@
  },
  "where": {
   "locator_url": "https://goelect.txelections.civixapps.com/ivis-mvp-ui/#/login",
-  "locator_label": "My Voter Portal (Texas Secretary of State)",
+  "locator_label": {
+   "en": "My Voter Portal (Texas Secretary of State)",
+   "es": "My Voter Portal (Secretaría de Estado de Texas)"
+  },
   "local_offices_url": "https://www.sos.state.tx.us/elections/voter/county.shtml",
   "rule": {
    "en": "My Voter Portal shows your registration and where you can vote. Your county elections office lists early voting sites and their hours.",

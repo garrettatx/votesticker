@@ -274,6 +274,7 @@ function vote_facts( $abbr ) {
 function vote_fact( $st, $path ) {
 	$f = vote_facts( $st['abbr'] )[ $path ] ?? null;
 	if ( ! is_array( $f ) ) { return $f; }
+	if ( ! isset( $f['src'] ) ) { return $f[ vote_es() ? 'es' : 'en' ] ?: $f['en']; }  // a label in both languages
 	$text = $f[ vote_es() ? 'es' : 'en' ] ?? '';
 	return $text ? array( 'text' => $text, 'src' => $f['src'], 'checked' => $f['checked'] ) : null;
 }

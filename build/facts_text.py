@@ -80,10 +80,15 @@ def check(abbr, d, today):
         v = get(d, path)
         if v is None or v == '':
             continue
-        if kind in ('url', 'label'):
+        if kind == 'label':
+            # A label is shown as-is: a string, or {"en": ..., "es": ...} for a name that reads differently in Spanish.
+            if not (isinstance(v, str) or (isinstance(v, dict) and v.get('en') and v.get('es') and set(v) <= {'en', 'es'})):
+                errs.append(f'{path}: must be a string or an object with en and es')
+            continue
+        if kind == 'url':
             if not isinstance(v, str):
                 errs.append(f'{path}: must be a string')
-            elif kind == 'url':
+            else:
                 errs += [f'{path}: {e}' for e in host_errors(v)]
             continue
         if kind == 'rule':
