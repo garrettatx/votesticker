@@ -83,7 +83,7 @@ function vote_files( $abbr ) {
 
 // The state hero shows one standout ready-made, tilted (October 20, Garrett): the design named here,
 // or the first in the set. Numbers match <abbr>-vote-N.jpg.
-const VOTE_HERO = array( 'MS' => 5, 'MI' => 7, 'ID' => 7, 'NJ' => 5, 'OR' => 5, 'MN' => 6, 'NE' => 6, 'AL' => 6, 'AZ' => 6, 'CT' => 7, 'DE' => 5, 'GA' => 5, 'FL' => 5, 'HI' => 6, 'IL' => 8, 'AR' => 6, 'IN' => 5, 'KY' => 8 );
+const VOTE_HERO = array( 'MS' => 5, 'MI' => 7, 'ID' => 7, 'NJ' => 5, 'OR' => 5, 'MN' => 6, 'NE' => 6, 'AL' => 6, 'AZ' => 6, 'CT' => 7, 'DE' => 5, 'GA' => 5, 'FL' => 5, 'HI' => 6, 'IL' => 8, 'AR' => 6, 'IN' => 5, 'KY' => 8, 'ME' => 6 );
 function vote_hero_file( $abbr ) {
 	$n = VOTE_HERO[ $abbr ] ?? 0;
 	$k = strtolower( $abbr );
