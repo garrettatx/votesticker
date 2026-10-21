@@ -4,7 +4,10 @@ Read docs/codex-ready-made-brief.md first and follow it. Then make this state's 
 incoming/codex/ga/. No git commands, no deploy. Stop when CHECK.md is written.
 
 Save usage: redraw only for wrong words, a broken or unrecognizable map, or a rule break. Claude fixes
-star position, map gaps, maps within 8% of true width, centering and the circle crop.
+star position, map gaps, maps within 8% of true width, centering and the circle crop. Ask for the second
+line at 40% of the headline's letter height in the first prompt of every image; an undersized date line was
+the most common redraw on October 21. If you are stopped partway, everything saved is used: write each PNG
+as soon as it is checked, and keep going in slot order.
 
 ## Facts
 

@@ -92,6 +92,9 @@ favorite. Each one still has to pass the rules.
   from earlier states may come back (the tilted plum I VOTED from Mississippi 08 and Idaho is a
   favorite). At least three of images 5 to 10 must be concepts no earlier state used: read the
   BRIEFS.md files in incoming/codex/ first, and say in BRIEFS.md which images are new ideas.
+- **Two-color type splits by word or line, never mid-word.** Montana's VOTE NOV 3 colored VO and 3
+  chartreuse and TE and NOV cream, a checkerboard that reads as random. Color whole words or whole
+  lines (VOTE in one color, NOV 3 in the other), or give the accent to the one word that matters.
 - **The accent bar holds the date line, never the headline.** Mississippi's Navy core put the red bar
   behind NOV 3 instead of ELECTION DAY.
 - **Red with blue** only in the brand core palettes (Cream, Navy). Never as opposing halves.
@@ -111,6 +114,13 @@ favorite. Each one still has to pass the rules.
   which the fit tool resizes to 1080. Its High-setting self-check caught the core 2 accent-bar error
   on its own. Second lines (ELECTION DAY, the state name) don't read at 48 px in any design; the
   headline does, which is the rule.
+
+- **October 21 batch (AK, IN, IA, KY, LA, ME, MA, MT, NV, NH):** the most common redraw was a second
+  line drawn under a third of the headline height (MA, MT, NV, KY, IA each spent one to three redraws on
+  it). Ask for 40% in the first prompt. Six chats on Medium used most of a 5-hour window; three were
+  stopped at about 14% left. A stopped chat with all ten slots saved is enough for Claude to finish
+  (MA, MT, NV); one stopped at two images (NH) restarts later. Alaska came back 13 to 41% too wide in
+  eight of ten and three map redraws didn't fix it, so Claude replaces wide maps from repo geometry.
 
 ## Checking Images
 
