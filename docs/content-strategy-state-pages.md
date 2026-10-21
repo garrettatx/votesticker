@@ -572,6 +572,14 @@ Paste this with the two placeholders filled. It assumes Phase 0 is done.
 You are filling the voting facts file for one state on votesticker.org. State: [STATE NAME] ([ABBR]).
 Repo: /Users/gnafzing/Documents/seo-command-center/clients/hobby-sites/votesticker
 
+Voice and rules: docs/brand-brief.md (read it first). Write each fact the way a friendly neighbor who
+checked the facts would say it: lead with what the voter does ("Leave the campaign shirts and hats at
+home."), then the rule, then the next step. Lists for eligibility conditions (mail.who is the intro
+sentence, mail.who_list the items). A passed deadline says "Passed (date)" and the page adds the next
+step. Add a "sources" map naming every host you cite, in English and Spanish ("the Texas Secretary of
+State" / "la Secretaría de Estado de Texas"); the page shows one source line per section from it.
+Texas (build/state-facts/tx.json) and Washington (wa.json) are the models.
+
 Read first, in this order: docs/content-strategy-state-pages.md Section 7 (rules, checklist, file
 format), the row for [ABBR] in site/states.js, the [ABBR] block in site/faq-states.php, and the [ABBR]
 entry in docs/faq-sources.json (it has notes on what was and was not found on October 19).
@@ -746,6 +754,24 @@ earning after November 3.
 **The smaller model guessing.** The validator rejects empty quotes, stale dates, non-official hosts,
 hedging words and placeholder text; the prompt forbids editing any file but the one facts file; nothing
 it writes reaches a page until `facts_text.py` regenerates `site/facts-states.php` and QA passes.
+
+## Lessons From the Texas Review (October 21)
+
+Garrett's review of the first Texas page, applied to the template and every state after it:
+
+- Say each date once: ribbon and dates table. The old "Before You Vote" panel is now a summary box
+  (dates, hours, ID, where to vote) and the sections below never repeat the dates.
+- One source line per section, with named sources and one page-level "last checked" date
+  (`vote_sources_line()`), instead of a "Source:" stamp under every paragraph. Facts files name every
+  host in `sources`.
+- Headings read the way people search: Key Dates for Nov. 3, Where You Can Vote, What ID to Bring,
+  Who Can Vote by Mail, Phones, Photos, and Campaign Gear, Questions People Ask.
+- Facts lead with what the voter does, then the rule. Eligibility as a list. A passed deadline gets a
+  next step. The phone rule carries the sticker angle ("take your sticker selfie outside").
+- The maker shows designs before the preview on phones. The all-states list is collapsed on state
+  pages and shows each state's key date. Unchecked states read "Election Day, Nov 3", not "not
+  checked yet".
+- Alt text: "[State] vote sticker, ready-made design N" for now; per-image descriptions are still open.
 
 ## What This Plan Could Not Verify
 

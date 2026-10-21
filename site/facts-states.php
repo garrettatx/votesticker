@@ -3,9 +3,23 @@
 return array(
 	'TX' => array(
 		'election' => '2026-11-03',
+		'sources' => array(
+			'www.sos.state.tx.us' => array(
+				'en' => 'the Texas Secretary of State',
+				'es' => 'la Secretaría de Estado de Texas',
+			),
+			'www.votetexas.gov' => array(
+				'en' => 'VoteTexas.gov',
+				'es' => 'VoteTexas.gov',
+			),
+			'statutes.capitol.texas.gov' => array(
+				'en' => 'the Texas Election Code',
+				'es' => 'el Código Electoral de Texas',
+			),
+		),
 		'dates.reg_deadline' => array(
-			'en' => 'October 5, 2026. That deadline has passed for the November 3 election.',
-			'es' => 'El 5 de octubre de 2026. Esa fecha ya pasó para la elección del 3 de noviembre.',
+			'en' => 'Registration closed October 5, 2026. Texas has no same-day or Election Day registration.',
+			'es' => 'El registro cerró el 5 de octubre de 2026. Texas no tiene registro el mismo día ni el Día de las Elecciones.',
 			'src' => 'https://www.sos.state.tx.us/elections/voter/important-election-dates.shtml',
 			'checked' => '2026-10-21',
 		),
@@ -31,8 +45,8 @@ return array(
 		'where.locator_label' => 'My Voter Portal (Texas Secretary of State)',
 		'where.local_offices_url' => 'https://www.sos.state.tx.us/elections/voter/county.shtml',
 		'where.rule' => array(
-			'en' => 'Election Day polls are open 7 a.m. to 7 p.m. at every polling place in Texas. My Voter Portal shows your registration and where you can vote; your county elections office lists early voting sites and hours.',
-			'es' => 'El Día de las Elecciones, todos los lugares de votación de Texas abren de 7 a. m. a 7 p. m. My Voter Portal muestra tu registro y dónde puedes votar; la oficina electoral de tu condado publica los lugares y horarios de la votación anticipada.',
+			'en' => 'My Voter Portal shows your registration and where you can vote. Your county elections office lists early voting sites and their hours.',
+			'es' => 'My Voter Portal muestra tu registro y dónde puedes votar. La oficina electoral de tu condado publica los lugares de votación anticipada y sus horarios.',
 			'src' => 'https://www.votetexas.gov/voting/where.html',
 			'checked' => '2026-10-21',
 		),
@@ -50,14 +64,20 @@ return array(
 			'checked' => '2026-10-21',
 		),
 		'id.without' => array(
-			'en' => 'If you can\'t reasonably get one of the seven, you can still vote a regular ballot: show a supporting document with your name, such as your voter registration certificate, a current utility bill, a bank statement, a paycheck, a government check or a certified birth certificate, and sign a Reasonable Impediment Declaration.',
-			'es' => 'Si no puedes conseguir una de las siete por una razón válida, igual puedes votar con una boleta regular: muestra un documento de apoyo con tu nombre, como tu certificado de registro de votante, un recibo de servicios reciente, un estado de cuenta bancario, un talón de pago, un cheque del gobierno o un acta de nacimiento certificada, y firma una declaración de impedimento razonable (Reasonable Impediment Declaration).',
+			'en' => 'Don\'t have one of these? You can still vote a regular ballot. Bring a document with your name on it, such as your voter registration certificate, a current utility bill, a bank statement, a paycheck, a government check or a certified birth certificate, and sign a short form called a Reasonable Impediment Declaration.',
+			'es' => '¿No tienes ninguna de estas? Igual puedes votar con una boleta regular. Lleva un documento con tu nombre, como tu certificado de registro de votante, un recibo de servicios reciente, un estado de cuenta bancario, un talón de pago, un cheque del gobierno o un acta de nacimiento certificada, y firma un formulario corto llamado Reasonable Impediment Declaration (declaración de impedimento razonable).',
 			'src' => 'https://www.votetexas.gov/voting/need-id.html',
 			'checked' => '2026-10-21',
 		),
 		'mail.who' => array(
-			'en' => 'You can vote by mail in Texas if you are 65 or older on Election Day, sick or disabled, expected to give birth within three weeks before or after Election Day, away from your county on Election Day and during early voting hours, or confined in jail or involuntary civil commitment.',
-			'es' => 'Puedes votar por correo en Texas si tienes 65 años o más el Día de las Elecciones, si estás enfermo o tienes una discapacidad, si esperas dar a luz en las tres semanas antes o después del Día de las Elecciones, si vas a estar fuera de tu condado el Día de las Elecciones y durante el horario de la votación anticipada, o si estás en la cárcel o bajo internamiento civil involuntario.',
+			'en' => 'You can vote by mail in Texas if you:',
+			'es' => 'Puedes votar por correo en Texas si:',
+			'src' => 'https://www.votetexas.gov/faq/index.html',
+			'checked' => '2026-10-21',
+		),
+		'mail.who_list' => array(
+			'en' => array( 'are 65 or older on Election Day', 'are sick or disabled', 'are expected to give birth within three weeks before or after Election Day', 'will be away from your county on Election Day and during early voting hours', 'are confined in jail or involuntary civil commitment but otherwise eligible' ),
+			'es' => array( 'tienes 65 años o más el Día de las Elecciones', 'estás enfermo o tienes una discapacidad', 'esperas dar a luz en las tres semanas antes o después del Día de las Elecciones', 'vas a estar fuera de tu condado el Día de las Elecciones y durante el horario de votación anticipada', 'estás en la cárcel o bajo internamiento civil involuntario pero puedes votar' ),
 			'src' => 'https://www.votetexas.gov/faq/index.html',
 			'checked' => '2026-10-21',
 		),
@@ -68,14 +88,14 @@ return array(
 			'checked' => '2026-10-21',
 		),
 		'polls_rules.gear' => array(
-			'en' => 'Within 100 feet of any outside door to the polling place, no one may wear a badge, insignia or emblem about a candidate, measure or party on the ballot, or about the conduct of the election. Electioneering, which includes political signs and literature, is banned in the same 100 feet and within 20 feet of curbside voting spaces.',
-			'es' => 'A menos de 100 pies de cualquier puerta exterior del lugar de votación, nadie puede llevar una insignia, emblema o distintivo sobre un candidato, una propuesta o un partido que aparezca en la boleta, ni sobre la conducción de la elección. Hacer campaña, lo que incluye letreros y folletos políticos, está prohibido en esos mismos 100 pies y a menos de 20 pies de los espacios para votar desde el auto (curbside voting).',
+			'en' => 'Leave the campaign shirts and hats at home. Within 100 feet of any outside door to the polling place, you can\'t wear a badge, button or anything else about a candidate, party or measure on the ballot. Political signs and handouts are out in that zone too, and within 20 feet of curbside voting spaces.',
+			'es' => 'Deja en casa las camisetas y gorras de campaña. A menos de 100 pies de cualquier puerta exterior del lugar de votación no puedes llevar una insignia, un botón ni nada sobre un candidato, un partido o una propuesta que aparezca en la boleta. Los letreros y folletos políticos también están prohibidos en esa zona, y a menos de 20 pies de los espacios para votar desde el auto.',
 			'src' => 'https://statutes.capitol.texas.gov/Docs/EL/htm/EL.61.htm',
 			'checked' => '2026-10-21',
 		),
 		'polls_rules.phone' => array(
-			'en' => 'You can\'t use a phone or other wireless device in the room where voting is taking place, and no one may record images or sound within 100 feet of a voting station.',
-			'es' => 'No puedes usar un teléfono ni otro aparato inalámbrico en el cuarto donde se está votando, y nadie puede grabar imágenes ni sonido a menos de 100 pies de una cabina de votación.',
+			'en' => 'Keep your phone put away in the room where voting happens, and take your sticker selfie outside: Texas bans recording images or sound within 100 feet of a voting station.',
+			'es' => 'Guarda el teléfono en el cuarto donde se vota, y tómate la selfie con tu sticker afuera: Texas prohíbe grabar imágenes o sonido a menos de 100 pies de una cabina de votación.',
 			'src' => 'https://statutes.capitol.texas.gov/Docs/EL/htm/EL.61.htm',
 			'checked' => '2026-10-21',
 		),
@@ -83,6 +103,67 @@ return array(
 			'en' => 'You vote a provisional ballot when poll workers can\'t verify your registration. You\'ll get a notice in the mail by the 10th day after the local canvass telling you whether it counted.',
 			'es' => 'Votas con una boleta provisional cuando los trabajadores electorales no pueden verificar tu registro. Recibirás un aviso por correo a más tardar 10 días después del escrutinio local que te dirá si se contó.',
 			'src' => 'https://www.votetexas.gov/faq/index.html',
+			'checked' => '2026-10-21',
+		),
+	),
+	'WA' => array(
+		'election' => '2026-11-03',
+		'sources' => array(
+			'www.sos.wa.gov' => array(
+				'en' => 'the Washington Secretary of State',
+				'es' => 'la Secretaría de Estado de Washington',
+			),
+		),
+		'dates.reg_deadline' => array(
+			'en' => 'Online and by mail, registration closed October 26, 2026. In person, you can still register or update your address at any county elections office until 8 p.m. on Election Day, November 3.',
+			'es' => 'En línea y por correo, el registro cerró el 26 de octubre de 2026. En persona, todavía puedes registrarte o actualizar tu dirección en cualquier oficina electoral de condado hasta las 8 p. m. del Día de las Elecciones, 3 de noviembre.',
+			'src' => 'https://www.sos.wa.gov/elections/elections-calendar/dates-and-deadlines',
+			'checked' => '2026-10-21',
+		),
+		'dates.mail_return' => array(
+			'en' => 'Put it in an official drop box by 8 p.m. on Tuesday, November 3, no stamp needed. Mailing it instead? The Secretary of State says to mail it more than a week before Election Day, because ballots that arrive too late can\'t be counted.',
+			'es' => 'Déjala en un buzón oficial a más tardar a las 8 p. m. del martes 3 de noviembre, sin estampilla. ¿Prefieres mandarla por correo? La Secretaría de Estado dice que la envíes más de una semana antes del Día de las Elecciones, porque las boletas que llegan tarde no se cuentan.',
+			'src' => 'https://www.sos.wa.gov/elections/voters/helpful-information/frequently-asked-questions-voting-mail',
+			'checked' => '2026-10-21',
+		),
+		'how.in_person' => array(
+			'en' => 'Washington votes by mail, so there\'s no polling place to find. Every county also opens voting centers until 8 p.m. on Election Day, where you can register, pick up a replacement ballot or use an accessible voting unit.',
+			'es' => 'Washington vota por correo, así que no tienes que buscar un lugar de votación. Cada condado también abre centros de votación hasta las 8 p. m. del Día de las Elecciones, donde puedes registrarte, recoger una boleta de reemplazo o usar una unidad de votación accesible.',
+			'src' => 'https://www.sos.wa.gov/elections/voters/helpful-information/frequently-asked-questions-about-elections',
+			'checked' => '2026-10-21',
+		),
+		'where.locator_url' => 'https://voter.votewa.gov/WhereToVote.aspx',
+		'where.locator_label' => 'VoteWA.gov drop boxes and voting centers',
+		'where.local_offices_url' => 'https://www.sos.wa.gov/elections/voters/voter-registration/county-elections-offices',
+		'mail.who' => array(
+			'en' => 'Every registered voter gets a ballot in the mail; they went out on October 16. If yours hasn\'t arrived, contact your county elections office or print a replacement at VoteWA.gov. Your county counts only one ballot from you.',
+			'es' => 'Todos los votantes registrados reciben su boleta por correo; se enviaron el 16 de octubre. Si la tuya no ha llegado, comunícate con la oficina electoral de tu condado o imprime una de reemplazo en VoteWA.gov. Tu condado cuenta solo una boleta tuya.',
+			'src' => 'https://www.sos.wa.gov/elections/voters/helpful-information/frequently-asked-questions-voting-mail',
+			'checked' => '2026-10-21',
+		),
+		'mail.track_url' => 'https://voter.votewa.gov/WhereToVote.aspx',
+		'mail.cure' => array(
+			'en' => 'If your signature is missing or doesn\'t match, your county auditor has to contact you, so watch your mail and email after you send the ballot back.',
+			'es' => 'Si tu firma falta o no coincide, el auditor de tu condado tiene que comunicarse contigo, así que revisa tu correo postal y tu correo electrónico después de devolver la boleta.',
+			'src' => 'https://www.sos.wa.gov/elections/voters/helpful-information/frequently-asked-questions-about-elections',
+			'checked' => '2026-10-21',
+		),
+		'mail.dropbox' => array(
+			'en' => 'Official drop boxes are open until 8 p.m. on Election Day. Sign in to VoteWA.gov for the ones near you, or download the statewide list from the Secretary of State.',
+			'es' => 'Los buzones oficiales están abiertos hasta las 8 p. m. del Día de las Elecciones. Entra a VoteWA.gov para ver los que te quedan cerca, o descarga la lista estatal de la Secretaría de Estado.',
+			'src' => 'https://www.sos.wa.gov/elections/voters/voter-registration/drop-box-and-voting-center-locations',
+			'checked' => '2026-10-21',
+		),
+		'mail.witness' => array(
+			'en' => 'Sign the return envelope. Your county compares it with the signature on your registration. If you can\'t sign, make a mark in front of two witnesses and have them sign in the spaces on the envelope.',
+			'es' => 'Firma el sobre de devolución. Tu condado la compara con la firma de tu registro. Si no puedes firmar, haz una marca frente a dos testigos y pídeles que firmen en los espacios del sobre.',
+			'src' => 'https://www.sos.wa.gov/elections/voters/helpful-information/frequently-asked-questions-voting-mail',
+			'checked' => '2026-10-21',
+		),
+		'faq.track' => array(
+			'en' => 'Sign in to VoteWA.gov and check your ballot status, or text VOTE to 868392 for updates by text message.',
+			'es' => 'Entra a VoteWA.gov y revisa el estado de tu boleta, o manda VOTE por mensaje de texto al 868392 para recibir avisos.',
+			'src' => 'https://www.sos.wa.gov/elections/voters/helpful-information/frequently-asked-questions-voting-mail',
 			'checked' => '2026-10-21',
 		),
 	),

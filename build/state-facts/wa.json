@@ -1,0 +1,141 @@
+{
+ "abbr": "WA",
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "www.sos.wa.gov": {
+   "en": "the Washington Secretary of State",
+   "es": "la Secretaría de Estado de Washington"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "Online and by mail, registration closed October 26, 2026. In person, you can still register or update your address at any county elections office until 8 p.m. on Election Day, November 3.",
+   "es": "En línea y por correo, el registro cerró el 26 de octubre de 2026. En persona, todavía puedes registrarte o actualizar tu dirección en cualquier oficina electoral de condado hasta las 8 p. m. del Día de las Elecciones, 3 de noviembre.",
+   "src": "https://www.sos.wa.gov/elections/elections-calendar/dates-and-deadlines",
+   "checked": "2026-10-21",
+   "quote": "Online and mail registrations must be received 8 days before Election Day.",
+   "status": "verified"
+  },
+  "mail_request": {
+   "status": "missing",
+   "notes": "Every registered voter is mailed a ballot; there is no request deadline."
+  },
+  "mail_return": {
+   "en": "Put it in an official drop box by 8 p.m. on Tuesday, November 3, no stamp needed. Mailing it instead? The Secretary of State says to mail it more than a week before Election Day, because ballots that arrive too late can't be counted.",
+   "es": "Déjala en un buzón oficial a más tardar a las 8 p. m. del martes 3 de noviembre, sin estampilla. ¿Prefieres mandarla por correo? La Secretaría de Estado dice que la envíes más de una semana antes del Día de las Elecciones, porque las boletas que llegan tarde no se cuentan.",
+   "src": "https://www.sos.wa.gov/elections/voters/helpful-information/frequently-asked-questions-voting-mail",
+   "checked": "2026-10-21",
+   "quote": "Return your ballot to an official ballot drop box by 8 p.m. on Election Day.",
+   "status": "verified"
+  },
+  "early_hours": {
+   "status": "missing"
+  },
+  "cure": {
+   "status": "missing",
+   "notes": "The SOS FAQ says counties contact voters about signature problems but gives no deadline."
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "Washington votes by mail, so there's no polling place to find. Every county also opens voting centers until 8 p.m. on Election Day, where you can register, pick up a replacement ballot or use an accessible voting unit.",
+   "es": "Washington vota por correo, así que no tienes que buscar un lugar de votación. Cada condado también abre centros de votación hasta las 8 p. m. del Día de las Elecciones, donde puedes registrarte, recoger una boleta de reemplazo o usar una unidad de votación accesible.",
+   "src": "https://www.sos.wa.gov/elections/voters/helpful-information/frequently-asked-questions-about-elections",
+   "checked": "2026-10-21",
+   "quote": "available until 8 p.m. on Election Day.",
+   "status": "verified"
+  },
+  "first_time": {
+   "status": "missing"
+  }
+ },
+ "where": {
+  "locator_url": "https://voter.votewa.gov/WhereToVote.aspx",
+  "locator_label": "VoteWA.gov drop boxes and voting centers",
+  "local_offices_url": "https://www.sos.wa.gov/elections/voters/voter-registration/county-elections-offices",
+  "rule": {
+   "status": "missing"
+  }
+ },
+ "id": {
+  "accepted": {
+   "status": "missing",
+   "notes": "No ID is needed to return a mail ballot; the signature on the envelope is the check. The existing FAQ answer covers it."
+  },
+  "expired": {
+   "status": "missing"
+  },
+  "without": {
+   "status": "missing"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "Every registered voter gets a ballot in the mail; they went out on October 16. If yours hasn't arrived, contact your county elections office or print a replacement at VoteWA.gov. Your county counts only one ballot from you.",
+   "es": "Todos los votantes registrados reciben su boleta por correo; se enviaron el 16 de octubre. Si la tuya no ha llegado, comunícate con la oficina electoral de tu condado o imprime una de reemplazo en VoteWA.gov. Tu condado cuenta solo una boleta tuya.",
+   "src": "https://www.sos.wa.gov/elections/voters/helpful-information/frequently-asked-questions-voting-mail",
+   "checked": "2026-10-21",
+   "quote": "If you are a registered voter and do not receive your ballot, contact your county elections office.",
+   "status": "verified"
+  },
+  "witness": {
+   "en": "Sign the return envelope. Your county compares it with the signature on your registration. If you can't sign, make a mark in front of two witnesses and have them sign in the spaces on the envelope.",
+   "es": "Firma el sobre de devolución. Tu condado la compara con la firma de tu registro. Si no puedes firmar, haz una marca frente a dos testigos y pídeles que firmen en los espacios del sobre.",
+   "src": "https://www.sos.wa.gov/elections/voters/helpful-information/frequently-asked-questions-voting-mail",
+   "checked": "2026-10-21",
+   "quote": "make a mark in front of two witnesses and have them sign in the designated spaces.",
+   "status": "verified"
+  },
+  "track_url": "https://voter.votewa.gov/WhereToVote.aspx",
+  "cure": {
+   "en": "If your signature is missing or doesn't match, your county auditor has to contact you, so watch your mail and email after you send the ballot back.",
+   "es": "Si tu firma falta o no coincide, el auditor de tu condado tiene que comunicarse contigo, así que revisa tu correo postal y tu correo electrónico después de devolver la boleta.",
+   "src": "https://www.sos.wa.gov/elections/voters/helpful-information/frequently-asked-questions-about-elections",
+   "checked": "2026-10-21",
+   "quote": "County auditors must contact voters if their ballot signature does not match the voter's registration signature.",
+   "status": "verified"
+  },
+  "dropbox": {
+   "en": "Official drop boxes are open until 8 p.m. on Election Day. Sign in to VoteWA.gov for the ones near you, or download the statewide list from the Secretary of State.",
+   "es": "Los buzones oficiales están abiertos hasta las 8 p. m. del Día de las Elecciones. Entra a VoteWA.gov para ver los que te quedan cerca, o descarga la lista estatal de la Secretaría de Estado.",
+   "src": "https://www.sos.wa.gov/elections/voters/voter-registration/drop-box-and-voting-center-locations",
+   "checked": "2026-10-21",
+   "quote": "Sign in to VoteWA.gov for a personalized list of drop boxes and voting center locations (mobile-friendly).",
+   "status": "verified"
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "status": "missing"
+  },
+  "phone": {
+   "status": "missing"
+  },
+  "line": {
+   "status": "missing"
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "status": "missing"
+  }
+ },
+ "faq": {
+  "provisional": {
+   "status": "missing"
+  },
+  "line": {
+   "status": "missing"
+  },
+  "track": {
+   "en": "Sign in to VoteWA.gov and check your ballot status, or text VOTE to 868392 for updates by text message.",
+   "es": "Entra a VoteWA.gov y revisa el estado de tu boleta, o manda VOTE por mensaje de texto al 868392 para recibir avisos.",
+   "src": "https://www.sos.wa.gov/elections/voters/helpful-information/frequently-asked-questions-voting-mail",
+   "checked": "2026-10-21",
+   "quote": "Sign in to VoteWA.gov to check your ballot status.",
+   "status": "verified"
+  }
+ },
+ "notes": "Read October 21, 2026 on sos.wa.gov. The postmark rule for mailed ballots is not stated on the FAQ pages read (only the drop box deadline and the advice to mail a week early), so the page gives the drop box deadline and the advice. Electioneering distance, voting center hours and the signature cure deadline were not found; left missing."
+}

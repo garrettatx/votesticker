@@ -46,7 +46,7 @@ FACTS = {
     'where.locator_url': 'url', 'where.locator_label': 'label', 'where.local_offices_url': 'url',
     'where.sample_ballot_url': 'url', 'where.rule': 'text',
     'id.rule': 'rule', 'id.accepted': 'list', 'id.expired': 'text', 'id.without': 'text',
-    'mail.who': 'text', 'mail.track_url': 'url', 'mail.cure': 'text', 'mail.dropbox': 'text', 'mail.witness': 'text',
+    'mail.who': 'text', 'mail.who_list': 'list', 'mail.track_url': 'url', 'mail.cure': 'text', 'mail.dropbox': 'text', 'mail.witness': 'text',
     'polls_rules.gear': 'text', 'polls_rules.phone': 'text', 'polls_rules.line': 'text',
     'sticker.tradition': 'text',
     'faq.provisional': 'text', 'faq.line': 'text', 'faq.track': 'text',
@@ -70,6 +70,8 @@ def check(abbr, d, today):
         errs.append(f'election is {d.get("election")!r}, this season is {ELECTION}')
     known = set(FACTS)
     for group, body in d.items():
+        if group == 'sources':
+            continue
         if isinstance(body, dict):
             for k in body:
                 if f'{group}.{k}' not in known:
@@ -127,6 +129,16 @@ def check(abbr, d, today):
                 errs.append(f'{path}: checked {c} is in the future')
         except ValueError:
             errs.append(f'{path}: checked must be YYYY-MM-DD')
+    # Every source host needs a readable name in both languages ("the Texas Secretary of State").
+    names = d.get('sources') or {}
+    for path, kind in FACTS.items():
+        v = get(d, path)
+        src = v.get('src') if isinstance(v, dict) else None
+        if src:
+            host = re.sub(r'^https://([^/]+).*', r'\1', src).lower()
+            n = names.get(host) or names.get(host.removeprefix('www.'))
+            if not isinstance(n, dict) or not n.get('en') or not n.get('es'):
+                errs.append(f'{path}: add sources[{host!r}] with en and es names')
     if get(d, 'where.locator_url') and not get(d, 'where.locator_label'):
         errs.append('where.locator_label is required with locator_url')
     return errs
@@ -189,7 +201,7 @@ def main():
     # Keep verified facts only; the template never sees a missing one.
     out = {}
     for abbr, d in data.items():
-        st = {'election': d['election']}
+        st = {'election': d['election'], 'sources': d.get('sources') or {}}
         for path, kind in FACTS.items():
             v = get(d, path)
             if v in (None, ''):

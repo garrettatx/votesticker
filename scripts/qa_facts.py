@@ -61,12 +61,9 @@ for abbr, slug in slugs.items():
         g = ''.join(guide)
         if '—' in g:
             fails.append(f'{lang}{slug}: em dash in the guide')
-        for para in re.findall(r'<p>(?!<a)(.*?)</p>', g, re.S):
-            if 'class="cite"' not in para and 'class="guide__' not in para and 'Bring one' not in para and 'Lleva una' not in para:
-                fails.append(f'{lang}{slug}: a guide paragraph has no source: {re.sub("<[^>]+>", "", para)[:60]}')
-        for td in re.findall(r'<td>(.*?)</td>', g, re.S):
-            if 'class="cite"' not in td and ('Election Day' not in td and '3 de noviembre de 2026' not in td and 'November 3, 2026' not in td):
-                fails.append(f'{lang}{slug}: a dates row has no source')
+        for sec in guide:
+            if sec.count('class="cite"') != 1:
+                fails.append(f'{lang}{slug}: a guide section has {sec.count(chr(99)+"lass=")} source lines, not one: {re.sub("<[^>]+>", " ", sec)[:50]}')
     # FAQ schema must match the visible state questions, both languages.
     if abbr in facts:
         for lang in ('', 'es/'):

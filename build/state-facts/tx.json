@@ -4,8 +4,8 @@
  "election_name": "November 3, 2026 general election",
  "dates": {
   "reg_deadline": {
-   "en": "October 5, 2026. That deadline has passed for the November 3 election.",
-   "es": "El 5 de octubre de 2026. Esa fecha ya pasó para la elección del 3 de noviembre.",
+   "en": "Registration closed October 5, 2026. Texas has no same-day or Election Day registration.",
+   "es": "El registro cerró el 5 de octubre de 2026. Texas no tiene registro el mismo día ni el Día de las Elecciones.",
    "src": "https://www.sos.state.tx.us/elections/voter/important-election-dates.shtml",
    "checked": "2026-10-21",
    "quote": "Last Day to Register to Vote: Monday, October 5, 2026",
@@ -52,8 +52,8 @@
   "locator_label": "My Voter Portal (Texas Secretary of State)",
   "local_offices_url": "https://www.sos.state.tx.us/elections/voter/county.shtml",
   "rule": {
-   "en": "Election Day polls are open 7 a.m. to 7 p.m. at every polling place in Texas. My Voter Portal shows your registration and where you can vote; your county elections office lists early voting sites and hours.",
-   "es": "El Día de las Elecciones, todos los lugares de votación de Texas abren de 7 a. m. a 7 p. m. My Voter Portal muestra tu registro y dónde puedes votar; la oficina electoral de tu condado publica los lugares y horarios de la votación anticipada.",
+   "en": "My Voter Portal shows your registration and where you can vote. Your county elections office lists early voting sites and their hours.",
+   "es": "My Voter Portal muestra tu registro y dónde puedes votar. La oficina electoral de tu condado publica los lugares de votación anticipada y sus horarios.",
    "src": "https://www.votetexas.gov/voting/where.html",
    "checked": "2026-10-21",
    "quote": "Election Day voting hours are 7:00 a.m. to 7:00 p.m. at all polling places statewide.",
@@ -95,8 +95,8 @@
    "status": "verified"
   },
   "without": {
-   "en": "If you can't reasonably get one of the seven, you can still vote a regular ballot: show a supporting document with your name, such as your voter registration certificate, a current utility bill, a bank statement, a paycheck, a government check or a certified birth certificate, and sign a Reasonable Impediment Declaration.",
-   "es": "Si no puedes conseguir una de las siete por una razón válida, igual puedes votar con una boleta regular: muestra un documento de apoyo con tu nombre, como tu certificado de registro de votante, un recibo de servicios reciente, un estado de cuenta bancario, un talón de pago, un cheque del gobierno o un acta de nacimiento certificada, y firma una declaración de impedimento razonable (Reasonable Impediment Declaration).",
+   "en": "Don't have one of these? You can still vote a regular ballot. Bring a document with your name on it, such as your voter registration certificate, a current utility bill, a bank statement, a paycheck, a government check or a certified birth certificate, and sign a short form called a Reasonable Impediment Declaration.",
+   "es": "¿No tienes ninguna de estas? Igual puedes votar con una boleta regular. Lleva un documento con tu nombre, como tu certificado de registro de votante, un recibo de servicios reciente, un estado de cuenta bancario, un talón de pago, un cheque del gobierno o un acta de nacimiento certificada, y firma un formulario corto llamado Reasonable Impediment Declaration (declaración de impedimento razonable).",
    "src": "https://www.votetexas.gov/voting/need-id.html",
    "checked": "2026-10-21",
    "quote": "copy of or original current utility bill;",
@@ -105,8 +105,8 @@
  },
  "mail": {
   "who": {
-   "en": "You can vote by mail in Texas if you are 65 or older on Election Day, sick or disabled, expected to give birth within three weeks before or after Election Day, away from your county on Election Day and during early voting hours, or confined in jail or involuntary civil commitment.",
-   "es": "Puedes votar por correo en Texas si tienes 65 años o más el Día de las Elecciones, si estás enfermo o tienes una discapacidad, si esperas dar a luz en las tres semanas antes o después del Día de las Elecciones, si vas a estar fuera de tu condado el Día de las Elecciones y durante el horario de la votación anticipada, o si estás en la cárcel o bajo internamiento civil involuntario.",
+   "en": "You can vote by mail in Texas if you:",
+   "es": "Puedes votar por correo en Texas si:",
    "src": "https://www.votetexas.gov/faq/index.html",
    "checked": "2026-10-21",
    "quote": "are 65 years of age or older on Election Day; or",
@@ -126,20 +126,40 @@
    "checked": "2026-10-21",
    "quote": "your helper's name and address must be on the carrier envelope",
    "status": "verified"
+  },
+  "who_list": {
+   "en": [
+    "are 65 or older on Election Day",
+    "are sick or disabled",
+    "are expected to give birth within three weeks before or after Election Day",
+    "will be away from your county on Election Day and during early voting hours",
+    "are confined in jail or involuntary civil commitment but otherwise eligible"
+   ],
+   "es": [
+    "tienes 65 años o más el Día de las Elecciones",
+    "estás enfermo o tienes una discapacidad",
+    "esperas dar a luz en las tres semanas antes o después del Día de las Elecciones",
+    "vas a estar fuera de tu condado el Día de las Elecciones y durante el horario de votación anticipada",
+    "estás en la cárcel o bajo internamiento civil involuntario pero puedes votar"
+   ],
+   "src": "https://www.votetexas.gov/faq/index.html",
+   "checked": "2026-10-21",
+   "quote": "are 65 years of age or older on Election Day; or",
+   "status": "verified"
   }
  },
  "polls_rules": {
   "gear": {
-   "en": "Within 100 feet of any outside door to the polling place, no one may wear a badge, insignia or emblem about a candidate, measure or party on the ballot, or about the conduct of the election. Electioneering, which includes political signs and literature, is banned in the same 100 feet and within 20 feet of curbside voting spaces.",
-   "es": "A menos de 100 pies de cualquier puerta exterior del lugar de votación, nadie puede llevar una insignia, emblema o distintivo sobre un candidato, una propuesta o un partido que aparezca en la boleta, ni sobre la conducción de la elección. Hacer campaña, lo que incluye letreros y folletos políticos, está prohibido en esos mismos 100 pies y a menos de 20 pies de los espacios para votar desde el auto (curbside voting).",
+   "en": "Leave the campaign shirts and hats at home. Within 100 feet of any outside door to the polling place, you can't wear a badge, button or anything else about a candidate, party or measure on the ballot. Political signs and handouts are out in that zone too, and within 20 feet of curbside voting spaces.",
+   "es": "Deja en casa las camisetas y gorras de campaña. A menos de 100 pies de cualquier puerta exterior del lugar de votación no puedes llevar una insignia, un botón ni nada sobre un candidato, un partido o una propuesta que aparezca en la boleta. Los letreros y folletos políticos también están prohibidos en esa zona, y a menos de 20 pies de los espacios para votar desde el auto.",
    "src": "https://statutes.capitol.texas.gov/Docs/EL/htm/EL.61.htm",
    "checked": "2026-10-21",
    "quote": "a person may not wear a badge, insignia, emblem, or other similar communicative device relating to a candidate, measure, or political party appearing on the ballot, or to the conduct of the election, in the polling place or within 100 feet of any outside door",
    "status": "verified"
   },
   "phone": {
-   "en": "You can't use a phone or other wireless device in the room where voting is taking place, and no one may record images or sound within 100 feet of a voting station.",
-   "es": "No puedes usar un teléfono ni otro aparato inalámbrico en el cuarto donde se está votando, y nadie puede grabar imágenes ni sonido a menos de 100 pies de una cabina de votación.",
+   "en": "Keep your phone put away in the room where voting happens, and take your sticker selfie outside: Texas bans recording images or sound within 100 feet of a voting station.",
+   "es": "Guarda el teléfono en el cuarto donde se vota, y tómate la selfie con tu sticker afuera: Texas prohíbe grabar imágenes o sonido a menos de 100 pies de una cabina de votación.",
    "src": "https://statutes.capitol.texas.gov/Docs/EL/htm/EL.61.htm",
    "checked": "2026-10-21",
    "quote": "a person may not use a wireless communication device within a room in which voting is taking place.",
@@ -170,5 +190,19 @@
    "status": "missing"
   }
  },
- "notes": "Read October 21, 2026. Early voting minimum hours (Election Code 85.005), the cure deadline, the ballot tracker URL and the in-line-at-closing rule were not confirmed on an official page; left missing. Williamson County's sticker contest page blocks automated reading. The ID rule class follows docs/faq-sources.json (photo_requested: a Reasonable Impediment Declaration lets a voter without photo ID vote a regular ballot)."
+ "notes": "Read October 21, 2026. Early voting minimum hours (Election Code 85.005), the cure deadline, the ballot tracker URL and the in-line-at-closing rule were not confirmed on an official page; left missing. Williamson County's sticker contest page blocks automated reading. The ID rule class follows docs/faq-sources.json (photo_requested: a Reasonable Impediment Declaration lets a voter without photo ID vote a regular ballot).",
+ "sources": {
+  "www.sos.state.tx.us": {
+   "en": "the Texas Secretary of State",
+   "es": "la Secretaría de Estado de Texas"
+  },
+  "www.votetexas.gov": {
+   "en": "VoteTexas.gov",
+   "es": "VoteTexas.gov"
+  },
+  "statutes.capitol.texas.gov": {
+   "en": "the Texas Election Code",
+   "es": "el Código Electoral de Texas"
+  }
+ }
 }
