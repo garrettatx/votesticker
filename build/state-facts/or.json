@@ -1,0 +1,197 @@
+{
+ "abbr": "OR",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "sos.oregon.gov": {
+   "en": "the Oregon Secretary of State",
+   "es": "la Secretaría de Estado de Oregon"
+  },
+  "www.oregonlegislature.gov": {
+   "en": "Oregon law",
+   "es": "la ley de Oregon"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "Registration closed October 13, 2026. Not sure you're registered or active? Check My Vote, because ballots aren't mailed to inactive voters.",
+   "es": "El registro cerró el 13 de octubre de 2026. ¿No sabes si estás registrado o activo? Revisa My Vote, porque no se envían boletas a los votantes inactivos.",
+   "src": "https://sos.oregon.gov/elections/pages/current-election.aspx",
+   "checked": "2026-10-21",
+   "quote": "Ballots are not mailed to voters with an inactive status.",
+   "status": "verified"
+  },
+  "mail_request": {
+   "status": "missing",
+   "notes": "Every active registered voter is mailed a ballot; there is no request deadline."
+  },
+  "mail_return": {
+   "en": "Drop box: by 8 p.m. on Tuesday, November 3. Mail: send it by Tuesday, October 27, a week before Election Day. It has to be postmarked by November 3 and reach your county within 7 days after.",
+   "es": "Buzón: a más tardar a las 8 p. m. del martes 3 de noviembre. Correo: mándala a más tardar el martes 27 de octubre, una semana antes del Día de las Elecciones. Tiene que llevar matasellos del 3 de noviembre o antes y llegar a tu condado en los 7 días siguientes.",
+   "src": "https://sos.oregon.gov/elections/pages/current-election.aspx",
+   "checked": "2026-10-21",
+   "quote": "USPS delivery times may vary, so if you return your ballot by mail, please do so by October 27, a week before election day.",
+   "status": "verified",
+   "until": "2026-10-27",
+   "en_after": "Drop box: by 8 p.m. on Tuesday, November 3. Mailing it now? Ask the post office counter to hand-stamp the postmark. It has to be postmarked by November 3.",
+   "es_after": "Buzón: a más tardar a las 8 p. m. del martes 3 de noviembre. ¿La mandas por correo ahora? Pide en el mostrador de la oficina postal que le pongan el matasellos a mano. Tiene que llevar matasellos del 3 de noviembre o antes."
+  },
+  "early_hours": {
+   "status": "missing"
+  },
+  "cure": {
+   "status": "missing",
+   "notes": "The cure deadline is relative (21 days after the election); it is in mail.cure rather than as a computed date here."
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "There's no polling place to find. Your ballot comes to you. Need help in person or a replacement ballot? County elections offices are open 7 a.m. to 8 p.m. on Election Day.",
+   "es": "No tienes que buscar un lugar de votación: tu boleta te llega a ti. ¿Necesitas ayuda en persona o una boleta de reemplazo? Las oficinas electorales de condado abren de 7 a. m. a 8 p. m. el Día de las Elecciones.",
+   "src": "https://sos.oregon.gov/elections/pages/current-election.aspx",
+   "checked": "2026-10-21",
+   "quote": "County elections offices are open 7 am - 8 pm on Election Day.",
+   "status": "verified"
+  },
+  "first_time": {
+   "status": "missing"
+  }
+ },
+ "where": {
+  "locator_url": "https://sos.oregon.gov/elections/Pages/drop-box-locator.aspx",
+  "locator_label": {
+   "en": "Oregon Drop Box Locator (Oregon Secretary of State)",
+   "es": "Oregon Drop Box Locator (Secretaría de Estado de Oregon)"
+  },
+  "locator_cta": {
+   "en": "Find a drop box",
+   "es": "Buscar un buzón"
+  },
+  "local_offices_url": "https://sos.oregon.gov/elections/Pages/county-officials.aspx",
+  "rule": {
+   "en": "Enter your address in the state's drop box locator to find the nearest official drop sites and their hours. You can use any official drop site in Oregon.",
+   "es": "Escribe tu dirección en el buscador de buzones del estado para encontrar los lugares oficiales de entrega más cercanos y sus horarios. Puedes usar cualquier lugar oficial de entrega en Oregon.",
+   "src": "https://sos.oregon.gov/elections/Pages/drop-box-locator.aspx",
+   "checked": "2026-10-21",
+   "quote": "Ballots can be delivered to any Oregon Official Ballot Drop Site during the 20 day voting period until 8:00 PM on Election Day.",
+   "status": "verified"
+  }
+ },
+ "id": {
+  "accepted": {
+   "status": "missing",
+   "notes": "No ID is shown to vote by mail; the signature on the return envelope is the check. The existing FAQ answer covers it."
+  },
+  "expired": {
+   "status": "missing"
+  },
+  "without": {
+   "status": "missing"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "Ballots started going out October 14. Didn't get one, or yours got lost or damaged? Call your county elections office for a replacement.",
+   "es": "Las boletas se empezaron a enviar el 14 de octubre. ¿No te llegó, o la tuya se perdió o se dañó? Llama a la oficina electoral de tu condado para pedir una de reemplazo.",
+   "src": "https://sos.oregon.gov/elections/pages/current-election.aspx",
+   "checked": "2026-10-21",
+   "quote": "If your ballot has been lost, destroyed, or damaged in a way that stops you from voting, call your county elections office to request a replacement ballot.",
+   "status": "verified"
+  },
+  "witness": {
+   "en": "Sign the return envelope yourself. No one else can sign it, and your county compares it with the signatures in your registration record.",
+   "es": "Firma tú mismo el sobre de devolución. Nadie más puede firmarlo, y tu condado compara la firma con las de tu registro de votante.",
+   "src": "https://sos.oregon.gov/elections/pages/current-election.aspx",
+   "checked": "2026-10-21",
+   "quote": "You are the only person who can sign your ballot return identification envelope.",
+   "status": "verified"
+  },
+  "track_url": "https://sos.oregon.gov/elections/Pages/track-your-ballot.aspx",
+  "cure": {
+   "en": "Forgot to sign, or your signature doesn't match? Your county will send you a challenge notice with instructions. You have until 21 days after the election to fix it with your county elections office.",
+   "es": "¿Se te olvidó firmar o tu firma no coincide? Tu condado te mandará un aviso de impugnación (challenge notice) con instrucciones. Tienes hasta 21 días después de la elección para corregirlo con la oficina electoral de tu condado.",
+   "src": "https://sos.oregon.gov/elections/pages/current-election.aspx",
+   "checked": "2026-10-21",
+   "quote": "If your signature does not match, or you forgot to sign your envelope, the county will send you a challenge notice with instructions.",
+   "status": "verified"
+  },
+  "dropbox": {
+   "en": "Official drop boxes stay open until 8 p.m. on Election Day, and you can use any one in Oregon. In line at 8 p.m.? You can still drop off your ballot.",
+   "es": "Los buzones oficiales están abiertos hasta las 8 p. m. del Día de las Elecciones, y puedes usar cualquiera en Oregon. ¿Estás en la fila a las 8 p. m.? Todavía puedes dejar tu boleta.",
+   "src": "https://sos.oregon.gov/elections/Pages/drop-box-locator.aspx",
+   "checked": "2026-10-21",
+   "quote": "Voters who are in line at 8:00 PM may drop off their ballot.",
+   "status": "verified"
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "en": "Keep the campaigning away from where ballots are turned in. No electioneering, handing out cards or handbills, or gathering petition signatures inside a building with an elections office that takes ballots, or within 100 feet of its entrances, from the day ballots go out until 8 p.m. on Election Day.",
+   "es": "Mantén la campaña lejos de donde se entregan las boletas. No se permite hacer campaña, repartir tarjetas o volantes ni juntar firmas para peticiones dentro de un edificio con una oficina electoral que recibe boletas, ni a menos de 100 pies de sus entradas, desde el día en que se envían las boletas hasta las 8 p. m. del Día de las Elecciones.",
+   "src": "https://www.oregonlegislature.gov/bills_laws/ors/ors260.html",
+   "checked": "2026-10-21",
+   "quote": "A person may not do any electioneering, including circulating any cards or handbills, or soliciting of signatures to any petition, within any building in which any state or local government elections office designated for the deposit of ballots under ORS 254.470 is located, or within 100 feet measured radially from any entrance to the building.",
+   "status": "verified"
+  },
+  "phone": {
+   "status": "missing"
+  },
+  "line": {
+   "en": "In line at a drop site at 8 p.m.? Stay in line. You can still drop off your ballot.",
+   "es": "¿Estás en la fila de un lugar de entrega a las 8 p. m.? Quédate en la fila. Todavía puedes dejar tu boleta.",
+   "src": "https://sos.oregon.gov/elections/Pages/drop-box-locator.aspx",
+   "checked": "2026-10-21",
+   "quote": "Voters who are in line at 8:00 PM may drop off their ballot.",
+   "status": "verified"
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "en": "Oregon votes by mail, so the Secretary of State offers virtual I Voted stickers to share instead, with lines like \"I Voted (By Mail)\" and \"I Voted (The Oregon Way)\".",
+   "es": "Oregon vota por correo, así que la Secretaría de Estado ofrece stickers virtuales de I Voted para compartir, con frases como \"I Voted (By Mail)\" y \"I Voted (The Oregon Way)\".",
+   "src": "https://sos.oregon.gov/Pages/media-resources.aspx",
+   "checked": "2026-10-21",
+   "quote": "I Voted (virtual sticker)",
+   "status": "verified"
+  }
+ },
+ "faq": {
+  "provisional": {
+   "status": "missing"
+  },
+  "line": {
+   "en": "You can still turn in your ballot. Voters in line at a drop site at 8 p.m. may drop it off.",
+   "es": "Todavía puedes entregar tu boleta. Los votantes que estén en la fila de un lugar de entrega a las 8 p. m. pueden dejarla.",
+   "src": "https://sos.oregon.gov/elections/Pages/drop-box-locator.aspx",
+   "checked": "2026-10-21",
+   "quote": "Voters who are in line at 8:00 PM may drop off their ballot.",
+   "status": "verified"
+  },
+  "track": {
+   "en": "Sign up for BallotTrax at oregonvotes.gov/track to get updates by email, text or phone when your ballot is sent, received and accepted. It's free.",
+   "es": "Inscríbete en BallotTrax en oregonvotes.gov/track para recibir avisos por email, mensaje de texto o llamada cuando tu boleta se envíe, se reciba y se acepte. Es gratis.",
+   "src": "https://sos.oregon.gov/elections/Pages/track-your-ballot.aspx",
+   "checked": "2026-10-21",
+   "quote": "BallotTrax is a free service that notifies Oregon voters about the status of their mail ballot by phone, email, or text from the time their county elections official mails the outgoing ballot to when their mailed ballot is received and accepted.",
+   "status": "verified"
+  },
+  "unsigned": {
+   "en": "Your county will send you a challenge notice with instructions. You have until 21 days after the election to fix it, and BallotTrax will also tell you if there's a signature problem you can fix.",
+   "es": "Tu condado te mandará un aviso de impugnación (challenge notice) con instrucciones. Tienes hasta 21 días después de la elección para corregirlo, y BallotTrax también te avisa si hay un problema con tu firma que se puede corregir.",
+   "src": "https://sos.oregon.gov/elections/pages/current-election.aspx",
+   "checked": "2026-10-21",
+   "quote": "You will have until 21 days after the election to resolve the challenge with your County Elections Office.",
+   "status": "verified"
+  },
+  "late_mail": {
+   "en": "A mailed ballot counts if it's postmarked by November 3 and reaches your county within 7 days after Election Day. Mailing after October 27? Ask a post office staff member to hand-stamp the postmark, or use a drop box.",
+   "es": "Una boleta por correo cuenta si tiene matasellos del 3 de noviembre o antes y llega a tu condado en los 7 días siguientes al Día de las Elecciones. ¿La mandas después del 27 de octubre? Pide a alguien de la oficina postal que le ponga el matasellos a mano, o usa un buzón.",
+   "src": "https://sos.oregon.gov/elections/pages/current-election.aspx",
+   "checked": "2026-10-21",
+   "quote": "If you’re returning your ballot by mail after October 27, ask a USPS staff member to postmark the ballot by hand at your local branch.",
+   "status": "verified"
+  }
+ },
+ "notes": "Read October 21, 2026 on sos.oregon.gov (curl worked): General Election – November 3, 2026 (current-election), Elections FAQ, Oregon Drop Box Locator, Track Your Ballot, Media Resources (virtual I Voted stickers); and ORS 260.695(3) on oregonlegislature.gov. states.js matches: ballots mailed starting October 14 ('Counties begin mailing ballots to active voters in Oregon : October 14'), recommended mail-by date October 27, drop box deadline 'November 3 at 8 p.m.'. The 21-day cure deadline is stated relative to the election and was not converted to a date. Provisional ballots, phone rules and first-time voter ID (HAVA) were not found on an Oregon page; left missing. The selfie stays out (faq-sources.json has no official source)."
+}

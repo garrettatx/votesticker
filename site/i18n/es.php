@@ -60,7 +60,7 @@ return array(
 		'NJ' => array( 'note' => 'Abren de 10 a. m. a 8 p. m. de lunes a sábado, y de 10 a. m. a 6 p. m. el domingo.' ),
 		'NY' => array( 'note' => 'La junta electoral de tu condado (county board of elections) fija los lugares y horarios de votación anticipada.' ),
 		'NC' => array( 'note' => 'La votación anticipada termina a las 3 p. m. del sábado 31 de octubre. Vota en cualquier centro de votación anticipada de tu condado.' ),
-		'OK' => array( 'note' => 'Jueves y viernes de 8 a. m. a 6 p. m., y sábado de 8 a. m. a 2 p. m., en el condado donde te registraste.' ),
+		'OK' => array( 'note' => 'De miércoles a viernes de 8 a. m. a 6 p. m., y sábado de 8 a. m. a 2 p. m., en el condado donde te registraste.' ),
 		'OR' => array( 'ribbon' => 'BUZÓN HASTA LAS 8 P. M. DEL 3 NOV', 'note' => 'Las boletas se envían a partir del 14 de octubre. Para no correr riesgos, envía la tuya por correo a más tardar el 27 de octubre, o déjala en un buzón de entrega de boletas antes de las 8 p. m. del Día de las Elecciones.' ),
 		'PA' => array(
 			'summary' => 'En Pennsylvania puedes pedir, llenar y entregar una boleta por correo en una sola visita a la oficina electoral de tu condado, hasta las 5 p. m. del martes 27 de octubre.',

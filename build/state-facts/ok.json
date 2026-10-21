@@ -1,0 +1,207 @@
+{
+ "abbr": "OK",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "oklahoma.gov": {
+   "en": "the Oklahoma State Election Board",
+   "es": "la Junta Electoral del Estado de Oklahoma"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "Registration closed October 9, 2026. Already registered? Check your registration on the OK Voter Portal.",
+   "es": "El registro cerró el 9 de octubre de 2026. ¿Ya estás registrado? Revisa tu registro en el OK Voter Portal.",
+   "src": "https://oklahoma.gov/elections/voters/voting-101.html",
+   "checked": "2026-10-21",
+   "quote": "Voter registration is closed for 24 days prior to an election. Applications must be postmarked no later than 25 days prior to the election.",
+   "status": "verified"
+  },
+  "mail_request": {
+   "en": "Requests closed at 5 p.m. on Monday, October 19, 2026. You can still vote early in person or on Election Day.",
+   "es": "Las solicitudes cerraron a las 5 p. m. del lunes 19 de octubre de 2026. Todavía puedes votar por anticipado en persona o el Día de las Elecciones.",
+   "src": "https://oklahoma.gov/elections/voters/absentee-voting.html",
+   "checked": "2026-10-21",
+   "quote": "The deadline to request an absentee ballot is 5:00 p.m., the third Monday (15 days) prior to an election.",
+   "status": "verified"
+  },
+  "mail_return": {
+   "en": "By mail, your County Election Board must receive it by 7 p.m. on Tuesday, November 3. Hand-delivering it? Get it there by close of business on Monday, November 2.",
+   "es": "Por correo, la junta electoral de tu condado (County Election Board) debe recibirla a más tardar a las 7 p. m. del martes 3 de noviembre. ¿La vas a entregar en persona? Llévala antes del cierre de oficina del lunes 2 de noviembre.",
+   "src": "https://oklahoma.gov/elections/voters/absentee-voting.html",
+   "checked": "2026-10-21",
+   "quote": "Hand-delivered absentee ballots must be received by the County Election Board no later than the close of business, the Monday before the election.",
+   "status": "verified"
+  },
+  "early_hours": {
+   "en": "Wednesday through Friday, 8 a.m. to 6 p.m. Saturday, 8 a.m. to 2 p.m. Vote at your county's designated early voting location.",
+   "es": "De miércoles a viernes, de 8 a. m. a 6 p. m. El sábado, de 8 a. m. a 2 p. m. Vota en el centro de votación anticipada designado de tu condado.",
+   "src": "https://oklahoma.gov/elections/voters/early-voting.html",
+   "checked": "2026-10-21",
+   "quote": "Early voting is also available from 8 a.m. to 6 p.m. the Wednesday preceding the General Election.",
+   "status": "verified",
+   "until": "2026-10-31",
+   "en_after": "Early voting ended October 31. Vote at your assigned polling place on Election Day, 7 a.m. to 7 p.m.",
+   "es_after": "La votación anticipada terminó el 31 de octubre. Vota en el lugar de votación que te corresponde el Día de las Elecciones, de 7 a. m. a 7 p. m."
+  },
+  "cure": {
+   "status": "missing"
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "Any voter can vote early, no excuse needed, at the early voting location in the county where you're registered. On Election Day, vote at your assigned polling place, or your ballot won't count.",
+   "es": "Cualquier votante puede votar por anticipado, sin dar una razón, en el centro de votación anticipada del condado donde estás registrado. El Día de las Elecciones, vota en el lugar de votación que te corresponde, o tu boleta no contará.",
+   "src": "https://oklahoma.gov/elections/voters/voting-101.html",
+   "checked": "2026-10-21",
+   "quote": "In Oklahoma, if you vote on Election Day, you must vote at your assigned polling place in order for your ballot to count.",
+   "status": "verified"
+  },
+  "first_time": {
+   "status": "missing"
+  }
+ },
+ "where": {
+  "locator_url": "https://okvoterportal.okelections.us/",
+  "locator_label": {
+   "en": "OK Voter Portal (Oklahoma State Election Board)",
+   "es": "OK Voter Portal (Junta Electoral del Estado de Oklahoma)"
+  },
+  "locator_cta": {
+   "en": "Find my polling place",
+   "es": "Buscar mi lugar de votación"
+  },
+  "local_offices_url": "https://oklahoma.gov/elections/about-us/county-election-boards.html",
+  "rule": {
+   "en": "The OK Voter Portal shows your polling place, your early voting location and your sample ballot. All you need is your name and date of birth.",
+   "es": "El OK Voter Portal muestra tu lugar de votación, tu centro de votación anticipada y tu boleta de muestra. Solo necesitas tu nombre y tu fecha de nacimiento.",
+   "src": "https://oklahoma.gov/elections/voters/voting-101.html",
+   "checked": "2026-10-21",
+   "quote": "All you need is your name (as it appears on your registration) and your date of birth to access the portal.",
+   "status": "verified"
+  }
+ },
+ "id": {
+  "rule": "id_nonphoto",
+  "accepted": {
+   "en": [
+    "A photo ID from the U.S. government, the State of Oklahoma or a federally recognized tribe, with your name, your photo and an expiration date after Election Day",
+    "The free voter identification card your County Election Board mailed you when you registered"
+   ],
+   "es": [
+    "Una identificación con foto del gobierno de EE. UU., del estado de Oklahoma o de una tribu reconocida por el gobierno federal, con tu nombre, tu foto y una fecha de vencimiento posterior al Día de las Elecciones",
+    "La tarjeta gratuita de identificación de votante que te envió por correo la junta electoral de tu condado (County Election Board) cuando te registraste"
+   ],
+   "src": "https://oklahoma.gov/elections/voters/proof-of-identity.html",
+   "checked": "2026-10-21",
+   "quote": "A document used for proof of identity for voting must have been issued by the United States government, the State of Oklahoma, or a federally recognized tribal government.",
+   "status": "verified"
+  },
+  "expired": {
+   "en": "A photo ID can't expire before Election Day, unless it's valid indefinitely. The voter ID card from your county has no photo and still counts.",
+   "es": "Una identificación con foto no puede vencer antes del Día de las Elecciones, a menos que sea válida por tiempo indefinido. La tarjeta de votante de tu condado no tiene foto y aun así sirve.",
+   "src": "https://oklahoma.gov/elections/voters/proof-of-identity.html",
+   "checked": "2026-10-21",
+   "quote": "An expiration date that is after the date of the election, unless the identification is valid indefinitely",
+   "status": "verified"
+  },
+  "without": {
+   "en": "Don't leave. Ask for a provisional ballot and sign a sworn affidavit. After Election Day, your county checks your name, address, date of birth and license number or last four Social Security digits against your registration, and your ballot counts if they match.",
+   "es": "No te vayas. Pide una boleta provisional y firma una declaración jurada. Después del Día de las Elecciones, tu condado compara tu nombre, dirección, fecha de nacimiento y número de licencia o los últimos cuatro dígitos de tu Seguro Social con tu registro, y tu boleta cuenta si coinciden.",
+   "src": "https://oklahoma.gov/elections/voters/proof-of-identity.html",
+   "checked": "2026-10-21",
+   "quote": "If you do not have or if you refuse to show proof of identity, you may vote by provisional ballot and prove your identity by signing a sworn affidavit.",
+   "status": "verified"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "Any registered Oklahoma voter can vote absentee by mail. You don't need a reason.",
+   "es": "Cualquier votante registrado en Oklahoma puede votar en ausencia por correo. No necesitas dar una razón.",
+   "src": "https://oklahoma.gov/elections/voters/absentee-voting.html",
+   "checked": "2026-10-21",
+   "quote": "Any registered voter in Oklahoma may vote by absentee ballot. It is not necessary to give a reason, although some voters may qualify for special conditions.",
+   "status": "verified"
+  },
+  "witness": {
+   "en": "Get the affidavit on a standard absentee ballot notarized. Notaries can't charge for it, and many banks, credit unions and libraries do it free. Physically incapacitated and blind voters need two witnesses instead.",
+   "es": "Pide que notaricen la declaración jurada (affidavit) de tu boleta en ausencia estándar. Los notarios no pueden cobrarte por eso, y muchos bancos, cooperativas de crédito y bibliotecas lo hacen gratis. Los votantes con incapacidad física y los votantes ciegos necesitan dos testigos en su lugar.",
+   "src": "https://oklahoma.gov/elections/voters/absentee-voting.html",
+   "checked": "2026-10-21",
+   "quote": "By law, “standard” absentee ballot affidavits are required to be notarized.",
+   "status": "verified"
+  },
+  "track_url": "https://okvoterportal.okelections.us/",
+  "cure": {
+   "status": "missing"
+  },
+  "dropbox": {
+   "status": "missing",
+   "notes": "No drop boxes mentioned on oklahoma.gov/elections; hand delivery to the County Election Board is in dates.mail_return."
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "en": "Leave the campaign gear at home. Don't wear or bring anything that advocates for or against a candidate or issue on the ballot: electioneering within 300 feet of a polling place or early voting entrance, or of anyone in line outside, is a crime. Notes and a marked sample ballot are fine if you keep them out of view until you're in the booth.",
+   "es": "Deja en casa todo lo de campaña. No lleves puesto ni traigas nada a favor o en contra de un candidato o una propuesta de la boleta: hacer campaña a menos de 300 pies de la entrada de un lugar de votación o de votación anticipada, o de alguien que está en la fila afuera, es un delito. Puedes llevar notas o una boleta de muestra marcada si las mantienes fuera de la vista hasta que estés en la cabina.",
+   "src": "https://oklahoma.gov/elections/voters/voting-101.html",
+   "checked": "2026-10-21",
+   "quote": "Do not wear or bring anything to vote that could be considered “electioneering.”",
+   "status": "verified"
+  },
+  "phone": {
+   "en": "Wait to post. You can take a picture of your marked ballot, but don't share it until you're outside the election enclosure, the area where voters check in, get ballots and vote.",
+   "es": "Espera para publicar. Puedes tomarle foto a tu boleta marcada, pero no la compartas hasta que salgas del área electoral (election enclosure), donde los votantes se registran, reciben su boleta y votan.",
+   "src": "https://oklahoma.gov/elections/voters/voting-101.html",
+   "checked": "2026-10-21",
+   "quote": "Feel free to take a picture of your marked ballot – but don’t post your picture to social media or share it with anyone until you are outside of the election enclosure.",
+   "status": "verified"
+  },
+  "line": {
+   "en": "In line at 7 p.m.? Stay in line. Every eligible voter in line by 7 p.m. gets to vote.",
+   "es": "¿Estás en la fila a las 7 p. m.? Quédate en la fila. Todos los votantes elegibles que estén en la fila a las 7 p. m. pueden votar.",
+   "src": "https://oklahoma.gov/elections/newsroom/2026/august/state-election-board-offers-tips-and-reminders-ahead-of-august-2.html",
+   "checked": "2026-10-21",
+   "quote": "All eligible voters in line by 7 p.m. will be permitted to vote.",
+   "status": "verified"
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "en": "Ask for your I Voted sticker before you leave the election enclosure. The State Election Board's tip: wear it to encourage others to vote.",
+   "es": "Pide tu sticker de I Voted antes de salir del área electoral (election enclosure). El consejo de la Junta Electoral del Estado: llévalo puesto para animar a otros a votar.",
+   "src": "https://oklahoma.gov/elections/voters/voting-101.html",
+   "checked": "2026-10-21",
+   "quote": "Be sure to get an \"I Voted\" sticker before you leave the election enclosure and wear it to encourage others to get out and vote!",
+   "status": "verified"
+  }
+ },
+ "faq": {
+  "provisional": {
+   "en": "You can ask for a provisional ballot if you don't have a valid ID, your name isn't in the precinct registry, or you think your voter information is wrong. Before results are certified, your County Election Board checks your registration, and your ballot counts if your eligibility is verified.",
+   "es": "Puedes pedir una boleta provisional si no tienes una identificación válida, tu nombre no aparece en el registro del precinto o crees que tu información de votante está mal. Antes de que se certifiquen los resultados, la junta electoral de tu condado revisa tu registro, y tu boleta cuenta si se verifica que puedes votar.",
+   "src": "https://oklahoma.gov/elections/voters/voting-101.html",
+   "checked": "2026-10-21",
+   "quote": "After the election and before results are certified, the Secretary of the County Election Board will research your voter registration information. If your eligibility can be verified – your ballot will be counted.",
+   "status": "verified"
+  },
+  "line": {
+   "en": "You can still vote. Every eligible voter in line by 7 p.m. gets to vote.",
+   "es": "Todavía puedes votar. Todos los votantes elegibles que estén en la fila a las 7 p. m. pueden votar.",
+   "src": "https://oklahoma.gov/elections/newsroom/2026/august/state-election-board-offers-tips-and-reminders-ahead-of-august-2.html",
+   "checked": "2026-10-21",
+   "quote": "All eligible voters in line by 7 p.m. will be permitted to vote.",
+   "status": "verified"
+  },
+  "track": {
+   "en": "Track your absentee ballot on the OK Voter Portal.",
+   "es": "Sigue tu boleta en ausencia en el OK Voter Portal.",
+   "src": "https://oklahoma.gov/elections/newsroom/2026/august/state-election-board-offers-tips-and-reminders-ahead-of-august-2.html",
+   "checked": "2026-10-21",
+   "quote": "You can also use the portal to find your polling place and track the status of your absentee ballot.",
+   "status": "verified"
+  }
+ },
+ "notes": "Read October 21, 2026 on oklahoma.gov/elections (curl worked): Early Voting, How to Vote, Voting 101, Proof of Identity, Absentee Voting, Dates and Deadlines, the 2026 Voter Information Calendar, FAQs, and the August 24, 2026 news release. EARLY VOTING DIFFERS FROM states.js: states.js has start 2026-10-29 and the note 'Thursday and Friday 8 a.m. to 6 p.m., Saturday 8 a.m. to 2 p.m.'. The 2026 Voter Information Calendar row for the November 3 General Elections lists Early Voting Dates and Hours 'October 28 - 30 (8 A.M. – 6 P.M.)' and 'October 31 (8 A.M. – 2 P.M.)', and the Early Voting page says 'Early voting is also available from 8 a.m. to 6 p.m. the Wednesday preceding the General Election.' So early voting starts Wednesday, October 28. The calendar also lists the registration deadline October 9 and the absentee ballot deadline October 19. The mail return date for hand delivery (Monday, November 2) is 'the Monday before the election' on the absentee page. The I Voted sticker line is the Election Board's current Voting 101 tip, not a contest. Drop boxes, ballot cure and first-time voter rules not found; left missing."
+}

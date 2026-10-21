@@ -1,0 +1,223 @@
+{
+ "abbr": "NE",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "sos.nebraska.gov": {
+   "en": "the Nebraska Secretary of State",
+   "es": "la Secretaría de Estado de Nebraska"
+  },
+  "nebraskalegislature.gov": {
+   "en": "Nebraska law",
+   "es": "la ley de Nebraska"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "Online and mail registration closed October 16. You can still register in person at your county election office until 6 p.m. on Friday, October 23, 2026.",
+   "es": "El registro en línea y por correo cerró el 16 de octubre. Todavía puedes registrarte en persona en la oficina electoral de tu condado hasta las 6 p. m. del viernes 23 de octubre de 2026.",
+   "src": "https://sos.nebraska.gov/sites/default/files/doc/elections/2026/2026_Election_Calendar.pdf",
+   "checked": "2026-10-21",
+   "quote": "At 6 PM - last day for in-person voter registration. §32-302",
+   "status": "verified",
+   "until": "2026-10-23",
+   "en_after": "Registration closed at 6 p.m. on October 23, 2026. Not sure you're registered? Check Votercheck.",
+   "es_after": "El registro cerró a las 6 p. m. del 23 de octubre de 2026. ¿No sabes si estás registrado? Revisa Votercheck."
+  },
+  "mail_request": {
+   "en": "Your county election office must receive your early voting application by 6 p.m. on Friday, October 23, 2026. Mail, fax or email a photo of the signed form.",
+   "es": "La oficina electoral de tu condado debe recibir tu solicitud para votar por anticipado a más tardar a las 6 p. m. del viernes 23 de octubre de 2026. Mándala por correo, por fax o por email con una foto del formulario firmado.",
+   "src": "https://sos.nebraska.gov/sites/default/files/doc/elections/2026/2026_Election_Calendar.pdf",
+   "checked": "2026-10-21",
+   "quote": "At 6 PM - last day to receive an application for early voting ballots to be mailed out to a specific address. §32-941",
+   "status": "verified",
+   "until": "2026-10-23",
+   "en_after": "Applications for a mailed ballot closed at 6 p.m. on October 23, 2026. You can still vote early in person at your county election office through Monday, November 2.",
+   "es_after": "Las solicitudes de boleta por correo cerraron a las 6 p. m. del 23 de octubre de 2026. Todavía puedes votar por anticipado en persona en la oficina electoral de tu condado hasta el lunes 2 de noviembre."
+  },
+  "mail_return": {
+   "en": "Get it to your county election office by 8 p.m. Central (7 p.m. Mountain) on Tuesday, November 3. A postmark isn't enough: it has to arrive by then, so if time is short, use a drop box in your county or bring it in.",
+   "es": "Hazla llegar a la oficina electoral de tu condado a más tardar a las 8 p. m. hora del Centro (7 p. m. hora de la Montaña) del martes 3 de noviembre. No basta con el matasellos: tiene que llegar para esa hora, así que si tienes poco tiempo, usa un buzón de entrega de tu condado o llévala en persona.",
+   "src": "https://sos.nebraska.gov/elections/early-voting",
+   "checked": "2026-10-21",
+   "quote": "All Early Voting ballots, whether personally delivered, delivered by agent, delivered by mail or other carriers must arrive at the county election official's office by the closing of the polls on Election Day (8:00 pm Central Time / 7:00 pm Mountain Time).",
+   "status": "verified"
+  },
+  "early_hours": {
+   "en": "Each county election office sets its own hours for early voting. Call yours before you go.",
+   "es": "Cada oficina electoral de condado fija su propio horario de votación anticipada. Llama a la tuya antes de ir.",
+   "src": "https://sos.nebraska.gov/elections/early-voting",
+   "checked": "2026-10-21",
+   "quote": "Contact your County Clerk or Election Commissioner for information on their office hours.",
+   "status": "verified"
+  },
+  "cure": {
+   "status": "missing",
+   "notes": "No mail ballot signature cure process or deadline found on sos.nebraska.gov. The Tuesday-after deadline (November 10) is for showing photo ID after a provisional ballot; it is in id.without."
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "On Election Day, vote at your assigned polling place. Eleven counties vote entirely by mail: Boone, Cedar, Cherry, Clay, Dawes, Dixon, Garden, Knox, Merrick, Morrill and Stanton. There your ballot comes in the mail, and you can still vote in person at the county election office on Election Day.",
+   "es": "El Día de las Elecciones, vota en el lugar de votación que te corresponde. Once condados votan solo por correo: Boone, Cedar, Cherry, Clay, Dawes, Dixon, Garden, Knox, Merrick, Morrill y Stanton. Ahí tu boleta te llega por correo, y todavía puedes votar en persona en la oficina electoral del condado el Día de las Elecciones.",
+   "src": "https://sos.nebraska.gov/elections/election-day-faq",
+   "checked": "2026-10-21",
+   "quote": "Voters in by-mail precincts who wish to vote in-person may vote at their county election official's office on Election Day.",
+   "status": "verified"
+  },
+  "first_time": {
+   "status": "missing"
+  }
+ },
+ "where": {
+  "locator_url": "https://www.votercheck.necvr.ne.gov/voterview/",
+  "locator_label": {
+   "en": "Votercheck (Nebraska Secretary of State)",
+   "es": "Votercheck (Secretaría de Estado de Nebraska)"
+  },
+  "locator_cta": {
+   "en": "Find my polling place",
+   "es": "Buscar mi lugar de votación"
+  },
+  "local_offices_url": "https://sos.nebraska.gov/elections/election-officials-contact-information",
+  "rule": {
+   "en": "Votercheck shows your assigned polling place. You can also ask your county clerk or election commissioner. Early voting in person happens at your county election office.",
+   "es": "Votercheck muestra el lugar de votación que te corresponde. También puedes preguntarle al secretario o comisionado electoral de tu condado (county clerk o election commissioner). La votación anticipada en persona se hace en la oficina electoral de tu condado.",
+   "src": "https://sos.nebraska.gov/elections/election-day-faq",
+   "checked": "2026-10-21",
+   "quote": "Each voter must cast his/her ballot at his/her assigned polling place.",
+   "status": "verified"
+  }
+ },
+ "id": {
+  "rule": "photo_required",
+  "accepted": {
+   "en": [
+    "Nebraska driver's license",
+    "Nebraska state ID from the DMV",
+    "Nebraska college ID, public or private",
+    "ID from a Nebraska state, county, city, public school or other political subdivision",
+    "U.S. passport",
+    "Military ID",
+    "Tribal ID",
+    "A hospital, assisted-living, nursing home, hospice or care facility record with your name and photo"
+   ],
+   "es": [
+    "Licencia de conducir de Nebraska",
+    "Identificación estatal de Nebraska del DMV",
+    "Identificación de un colegio o universidad de Nebraska, público o privado",
+    "Identificación del estado, un condado, una ciudad, una escuela pública u otra subdivisión política de Nebraska",
+    "Pasaporte de EE. UU.",
+    "Identificación militar",
+    "Identificación tribal",
+    "Un registro de un hospital, residencia asistida, asilo de ancianos, hospicio o centro de cuidado con tu nombre y foto"
+   ],
+   "src": "https://sos.nebraska.gov/elections/voter-id",
+   "checked": "2026-10-21",
+   "quote": "ID must have your name and photo. ID can be expired. Acceptable forms of photo ID are:",
+   "status": "verified"
+  },
+  "expired": {
+   "en": "Your ID can be expired. It needs your name and photo, but not an address or an expiration date.",
+   "es": "Tu identificación puede estar vencida. Debe tener tu nombre y tu foto, pero no necesita dirección ni fecha de vencimiento.",
+   "src": "https://sos.nebraska.gov/elections/voter-id",
+   "checked": "2026-10-21",
+   "quote": "ID must have your name and photo. ID can be expired.",
+   "status": "verified"
+  },
+  "without": {
+   "en": "Forgot it? Go home and get it before polls close, or vote a provisional ballot and show your ID in person at your county election office by the Tuesday after the election. If a disability, illness, missing documents or a religious objection keeps you from getting an ID, fill out a Reasonable Impediment Certification.",
+   "es": "¿Se te olvidó? Ve a tu casa por ella antes de que cierren los lugares de votación, o vota con una boleta provisional y muestra tu identificación en persona en la oficina electoral de tu condado a más tardar el martes después de la elección. Si una discapacidad, una enfermedad, la falta de documentos o una objeción religiosa te impide conseguir una identificación, llena una certificación de impedimento razonable (Reasonable Impediment Certification).",
+   "src": "https://sos.nebraska.gov/elections/voter-id",
+   "checked": "2026-10-21",
+   "quote": "The voter will still be able to cast their vote, but their ballot will only count if the voter presents an acceptable form of ID to their county election office, in person, on or before the Tuesday following the election.",
+   "status": "verified"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "Any registered Nebraska voter can vote early by mail. You don't need a reason.",
+   "es": "Cualquier votante registrado en Nebraska puede votar por anticipado por correo. No necesitas dar una razón.",
+   "src": "https://sos.nebraska.gov/elections/early-voting",
+   "checked": "2026-10-21",
+   "quote": "Nebraska is a “no-excuse” state, meaning any registered voter may request an early-voting (absentee) ballot, and is not required to provide a reason.",
+   "status": "verified"
+  },
+  "witness": {
+   "en": "Seal and sign the return envelope. If someone helped you mark your ballot, that person signs it too.",
+   "es": "Cierra y firma el sobre de devolución. Si alguien te ayudó a marcar tu boleta, esa persona también lo firma.",
+   "src": "https://sos.nebraska.gov/elections/early-voting",
+   "checked": "2026-10-21",
+   "quote": "The envelope must be sealed and signed (or their mark made) by the voter and if assistance was provided by the person providing assistance.",
+   "status": "verified"
+  },
+  "track_url": "https://www.votercheck.necvr.ne.gov/voterview/",
+  "cure": {
+   "status": "missing"
+  },
+  "dropbox": {
+   "en": "Every Nebraska county has at least one secure drop box. Use one in your own county by 8 p.m. Central (7 p.m. Mountain) on Election Day.",
+   "es": "Cada condado de Nebraska tiene al menos un buzón de entrega seguro. Usa uno de tu propio condado a más tardar a las 8 p. m. hora del Centro (7 p. m. hora de la Montaña) del Día de las Elecciones.",
+   "src": "https://sos.nebraska.gov/elections/nebraska-drop-box-locator",
+   "checked": "2026-10-21",
+   "quote": "If you wish to return your early voting ballot via drop box, you must use a drop box located within your county.",
+   "status": "verified"
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "en": "Leave the campaign buttons, hats and shirts at home. Bringing anything with a candidate's name, likeness or logo, or a ballot measure's number or title, into the polling place on Election Day is against the law. No campaigning or handing out political literature within 200 feet, either.",
+   "es": "Deja en casa los botones, gorras y camisetas de campaña. Es ilegal llevar al lugar de votación el Día de las Elecciones cualquier cosa con el nombre, la imagen o el logo de un candidato, o con el número o el título de una propuesta de la boleta. Tampoco se permite hacer campaña ni repartir propaganda política a menos de 200 pies.",
+   "src": "https://sos.nebraska.gov/elections/election-day-faq",
+   "checked": "2026-10-21",
+   "quote": "Bringing buttons, hats, pencils, pens, shirts, signs, or stickers containing a candidate's name, likeness, logo, symbol or a ballot measure's number, title, subject matter, logo, or symbol into the polling place on Election Day is against the law.",
+   "status": "verified"
+  },
+  "phone": {
+   "status": "missing",
+   "notes": "No phone or device rule found on sos.nebraska.gov. Statute 32-1527 lets a voter photograph and share their own marked ballot; that answer is already in the selfie FAQ."
+  },
+  "line": {
+   "en": "In line when polls close? Stay in line. Anyone at the polling place or in line at closing time gets to vote.",
+   "es": "¿Estás en la fila cuando cierran? Quédate en la fila. Cualquier persona que esté en el lugar de votación o en la fila a la hora del cierre puede votar.",
+   "src": "https://nebraskalegislature.gov/laws/statutes.php?statute=32-908",
+   "checked": "2026-10-21",
+   "quote": "If at the hour of closing there are any persons desiring to vote who are in the polling place or in a line at the polling place and who have not been able to vote since appearing at the polling place, the polls shall be kept open reasonably long enough after the hour for closing to allow those present at that hour to vote.",
+   "status": "verified"
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "status": "missing",
+   "notes": "No statewide sticker or contest on sos.nebraska.gov. Lancaster County ran its first I Voted sticker contest in 2025 (winner's meadowlark design used from the May 12, 2026 primary), but the county's announcement is a DocumentCenter PDF (lancaster.ne.gov/DocumentCenter/View/30852) that returns 403 and downloads in the browser; not read, so left out."
+  }
+ },
+ "faq": {
+  "provisional": {
+   "en": "If you moved within your county or changed your name, you may be asked to vote a provisional ballot. Seven business days after the election, check whether it counted on Votercheck or by calling 1-888-727-0007.",
+   "es": "Si te mudaste dentro de tu condado o te cambiaste el nombre, te pueden pedir que votes con una boleta provisional. Siete días hábiles después de la elección, revisa si se contó en Votercheck o llamando gratis al 1-888-727-0007.",
+   "src": "https://sos.nebraska.gov/elections/election-day-faq",
+   "checked": "2026-10-21",
+   "quote": "They can check seven business days after the election by visiting Votercheck or calling toll free 1-888-727-0007.",
+   "status": "verified"
+  },
+  "line": {
+   "en": "You can still vote. Anyone at the polling place or in line when polls close gets to vote. Anyone who arrives after closing can't.",
+   "es": "Todavía puedes votar. Cualquier persona que esté en el lugar de votación o en la fila cuando cierran puede votar. Quien llegue después del cierre ya no puede.",
+   "src": "https://nebraskalegislature.gov/laws/statutes.php?statute=32-908",
+   "checked": "2026-10-21",
+   "quote": "No person arriving after the hour when the polls have officially closed shall be entitled to vote.",
+   "status": "verified"
+  },
+  "track": {
+   "en": "Look yourself up on Votercheck to see when your ballot was sent, when it came back and its status.",
+   "es": "Búscate en Votercheck para ver cuándo se envió tu boleta, cuándo la recibieron y en qué estado está.",
+   "src": "https://sos.nebraska.gov/elections/early-voting",
+   "checked": "2026-10-21",
+   "quote": "Check the Voter Information Center to track the status of your ballot including when your ballot was sent, returned and its status.",
+   "status": "verified"
+  }
+ },
+ "notes": "Read October 21, 2026 on sos.nebraska.gov (curl worked): Early Voting, Election Day FAQ, Voter ID, Nebraska Drop Box Locator, the 2026 Official Election Calendar PDF; and nebraskalegislature.gov statutes 32-908 (hours, line), 32-1524 (electioneering, 200 feet), 32-1527 (ballot photo), 32-950.01 (drop boxes). EARLY VOTING vs states.js: states.js has end 2026-11-02 and no start. The calendar gives the start: '5-Oct First day for early voting - in person - at the county clerk or election commissioner office.' and '2-Nov Last day for early voting - in person - at the county clerk or election commissioner office. §32-942'. The provisional photo ID deadline is November 10 per the calendar ('Deadline to present valid photographic identification ... on or before the Tuesday after the election'); id.without says 'the Tuesday after the election'. Phone rule, mail ballot cure, first-time voter rules and a sticker tradition on an official page were not found; left missing."
+}

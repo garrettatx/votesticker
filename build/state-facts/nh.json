@@ -1,0 +1,176 @@
+{
+ "abbr": "NH",
+ "live": true,
+ "election": "2026-11-03",
+ "election_name": "November 3, 2026 general election",
+ "sources": {
+  "gc.nh.gov": {
+   "en": "New Hampshire law",
+   "es": "la ley de New Hampshire"
+  }
+ },
+ "dates": {
+  "reg_deadline": {
+   "en": "You can register at your polling place on Election Day, Tuesday, November 3, and vote the same day. Whenever you register, bring proof of your citizenship, age, domicile and identity.",
+   "es": "Puedes registrarte en tu lugar de votación el Día de las Elecciones, el martes 3 de noviembre, y votar ese mismo día. Siempre que te registres, lleva comprobantes de tu ciudadanía, tu edad, tu domicilio y tu identidad.",
+   "src": "https://gc.nh.gov/rsa/html/LXIII/654/654-12.htm",
+   "checked": "2026-10-21",
+   "quote": "When determining the qualifications of an applicant desiring to register to vote, whether the applicant seeks to register before election day or on election day, the supervisors of the checklist, or the town or city clerk, shall require the applicant to present proof of citizenship, age, domicile, and identity as provided in the following categories:",
+   "status": "verified"
+  },
+  "mail_request": {
+   "status": "missing",
+   "notes": "No request deadline found in RSA 657; sos.nh.gov/elections/absentee-ballots returns 403 to curl and WebFetch, and Chrome has no permission for sos.nh.gov."
+  },
+  "mail_return": {
+   "en": "Your town or city clerk must receive it by 5 p.m. on Tuesday, November 3. Mail it with a stamp, bring it in yourself, or have a close family member deliver it with a signed form and photo ID. A postmark isn't enough.",
+   "es": "La oficina del secretario de tu municipio o ciudad (town or city clerk) debe recibirla a más tardar a las 5 p. m. del martes 3 de noviembre. Mándala por correo con estampilla, llévala tú mismo, o pide a un familiar cercano que la entregue con un formulario firmado y una identificación con foto. No basta con el matasellos.",
+   "src": "https://gc.nh.gov/rsa/html/LXIII/657/657-17.htm",
+   "checked": "2026-10-21",
+   "quote": "Absentee ballots delivered through the mail or by the voter's delivery agent shall be received by the town, city, or ward clerk no later than 5:00 p.m. on the day of the election.",
+   "status": "verified"
+  },
+  "early_hours": {
+   "status": "missing",
+   "notes": "New Hampshire has no early voting (states.js kind 'none')."
+  },
+  "cure": {
+   "status": "missing"
+  }
+ },
+ "how": {
+  "in_person": {
+   "en": "Vote at your town or city polling place on Election Day. If you'll be away, can't get there during polling hours because of work or caring for someone, have a disability, or can't appear in public because of a religious commitment, you can vote absentee instead.",
+   "es": "Vota en el lugar de votación de tu municipio o ciudad el Día de las Elecciones. Si vas a estar fuera, no puedes llegar durante el horario de votación por el trabajo o por cuidar a alguien, tienes una discapacidad, o no puedes salir en público por un compromiso religioso, puedes votar en ausencia.",
+   "src": "https://gc.nh.gov/rsa/html/LXIII/657/657-1.htm",
+   "checked": "2026-10-21",
+   "quote": "A person who is unable to appear at any time during polling hours at his or her polling place because of an employment obligation shall be considered absent for purposes of this chapter.",
+   "status": "verified"
+  },
+  "first_time": {
+   "status": "missing"
+  }
+ },
+ "where": {
+  "rule": {
+   "status": "missing",
+   "notes": "The SOS voter lookup (app.sos.nh.gov) and sos.nh.gov return 403; the locator URL could not be confirmed, so no locator is set."
+  }
+ },
+ "id": {
+  "rule": "photo_required",
+  "accepted": {
+   "en": [
+    "Driver's license from any state or the federal government",
+    "New Hampshire ID card, or a non-driver ID card from another state",
+    "U.S. armed services ID card",
+    "U.S. passport or passport card"
+   ],
+   "es": [
+    "Licencia de conducir de cualquier estado o del gobierno federal",
+    "Tarjeta de identificación de New Hampshire, o tarjeta de identificación para no conductores de otro estado",
+    "Tarjeta de identificación de las fuerzas armadas de EE. UU.",
+    "Pasaporte o tarjeta pasaporte de EE. UU."
+   ],
+   "src": "https://gc.nh.gov/rsa/html/LXIII/659/659-13.htm",
+   "checked": "2026-10-21",
+   "quote": "Only the following forms of identification bearing a photograph of the voter shall satisfy the identification requirements of paragraph I:",
+   "status": "verified"
+  },
+  "expired": {
+   "en": "Your ID can be expired up to five years. If you're 65 or older, the expiration date doesn't matter.",
+   "es": "Tu identificación puede tener hasta cinco años de vencida. Si tienes 65 años o más, la fecha de vencimiento no importa.",
+   "src": "https://gc.nh.gov/rsa/html/LXIII/659/659-13.htm",
+   "checked": "2026-10-21",
+   "quote": "The photo identification shall also have an expiration date that has not been exceeded by a period of more than 5 years, except that a voter 65 years of age or older may use an otherwise qualified form of identification without regard to expiration date.",
+   "status": "verified"
+  },
+  "without": {
+   "en": "No photo ID? You'll see the supervisor of the checklist, who decides whether your identity can be verified. A moderator, clerk, supervisor or selectman who knows you personally can vouch for you. If your identity isn't established, you can't vote, but you can appeal right away to the superior court.",
+   "es": "¿No tienes identificación con foto? Te mandarán con el supervisor del padrón (supervisor of the checklist), que decide si se puede verificar tu identidad. Un moderador, secretario, supervisor o concejal (moderator, clerk, supervisor o selectman) que te conozca personalmente puede responder por ti. Si no se establece tu identidad, no puedes votar, pero puedes apelar de inmediato ante el tribunal superior (superior court).",
+   "src": "https://gc.nh.gov/rsa/html/LXIII/659/659-13.htm",
+   "checked": "2026-10-21",
+   "quote": "A moderator, clerk, supervisor, or selectman may verify a voter's identity if such moderator, clerk, supervisor, or selectman personally knows the voter.",
+   "status": "verified"
+  }
+ },
+ "mail": {
+  "who": {
+   "en": "You can vote absentee in New Hampshire if you:",
+   "es": "Puedes votar en ausencia en New Hampshire si:",
+   "src": "https://gc.nh.gov/rsa/html/LXIII/657/657-1.htm",
+   "checked": "2026-10-21",
+   "quote": "Any person who will be absent on the day of any state election from the city, town, or unincorporated place in which he or she is registered to vote or who cannot appear in public on any election day because of his or her observance of a religious commitment or who is unable to vote there in person by reason of physical disability may vote at such elections as provided in this chapter.",
+   "status": "verified"
+  },
+  "who_list": {
+   "en": [
+    "will be away from your town or city on Election Day",
+    "can't get to your polling place at any time during polling hours because of work, including caring for children or infirm adults",
+    "can't appear in public on Election Day because of a religious commitment",
+    "can't vote in person because of a physical disability"
+   ],
+   "es": [
+    "vas a estar fuera de tu municipio o ciudad el Día de las Elecciones",
+    "no puedes llegar a tu lugar de votación en ningún momento del horario de votación por el trabajo, incluido el cuidado de niños o adultos enfermos",
+    "no puedes salir en público el Día de las Elecciones por un compromiso religioso",
+    "no puedes votar en persona por una discapacidad física"
+   ],
+   "src": "https://gc.nh.gov/rsa/html/LXIII/657/657-1.htm",
+   "checked": "2026-10-21",
+   "quote": "For the purposes of this section, the term \"employment\" shall include the care of children and infirm adults, with or without compensation.",
+   "status": "verified"
+  },
+  "witness": {
+   "en": "Seal your ballot in the inner envelope and sign the affidavit on it. If someone helps you because you're blind or have a disability, that person signs a statement on the envelope too.",
+   "es": "Cierra tu boleta en el sobre interior y firma la declaración jurada (affidavit) que viene en él. Si alguien te ayuda porque eres ciego o tienes una discapacidad, esa persona también firma una declaración en el sobre.",
+   "src": "https://gc.nh.gov/rsa/html/LXIII/657/657-17.htm",
+   "checked": "2026-10-21",
+   "quote": "The voter shall execute the affidavit on the envelope.",
+   "status": "verified"
+  },
+  "cure": {
+   "status": "missing"
+  },
+  "dropbox": {
+   "status": "missing",
+   "notes": "RSA 657:17 lists mail, personal delivery and a delivery agent (close family, or nursing or residential care staff); no drop boxes are mentioned. Not stated as 'no drop boxes' because the SOS page was unreadable."
+  }
+ },
+ "polls_rules": {
+  "gear": {
+   "en": "Save the campaigning for outside. Electioneering isn't allowed inside the polling place building, and the moderator sets up a no-electioneering corridor at least 10 feet wide from each entrance, where handing out or posting signs, pins, stickers or campaign clothing is banned.",
+   "es": "Deja la campaña para afuera. No se permite hacer campaña dentro del edificio del lugar de votación, y el moderador marca un pasillo sin propaganda de al menos 10 pies de ancho desde cada entrada, donde está prohibido repartir o colocar letreros, pines, stickers o ropa de campaña.",
+   "src": "https://gc.nh.gov/rsa/html/LXIII/659/659-43.htm",
+   "checked": "2026-10-21",
+   "quote": "The distribution or posting of electioneering communications, including but not limited to posters, cards, handbills, placards, pictures, pins, stickers, circulars, or articles of clothing, is prohibited within any no-electioneering corridor established outside the polling place by the moderator.",
+   "status": "verified"
+  },
+  "phone": {
+   "status": "missing",
+   "notes": "RSA 659:45-a bars photos inside the guardrail that capture another voter or another voter's ballot. Left out because it sits next to the ballot-selfie question, which is deliberately blank for New Hampshire (RSA 659:35 vs. Rideout v. Gardner)."
+  },
+  "line": {
+   "status": "missing",
+   "notes": "RSA 654:7-a II only covers people waiting to register at closing time ('shall be allowed to vote if determined to be qualified to register'); no general in-line rule was found in RSA 659."
+  }
+ },
+ "sticker": {
+  "tradition": {
+   "status": "missing",
+   "notes": "The Secretary of State runs an I Voted sticker contest (2025 winners reported by the Nashua Telegraph), but sos.nh.gov returns 403 and Chrome has no permission there, so no official page was read."
+  }
+ },
+ "faq": {
+  "provisional": {
+   "status": "missing"
+  },
+  "line": {
+   "status": "missing"
+  },
+  "track": {
+   "status": "missing"
+  }
+ },
+ "notes": "Read October 21, 2026 on gc.nh.gov (RSA 654:7-a, 654:8, 654:12, 657:1, 657:4, 657:17, 657:22, 659:4, 659:13, 659:35, 659:43, 659:45-a). sos.nh.gov and app.sos.nh.gov return 403 to curl and WebFetch, and Claude in Chrome reports 'Permission denied for reading page content on this domain', so nothing on the SOS site was read: locator URL, ballot tracker, absentee request deadline, drop boxes and the sticker contest are left missing. Selfie kept out on purpose. The ID text uses the version of RSA 659:13 I(c) effective September 8, 2026 (personal-knowledge attestation). Registration before Election Day closes at the supervisors' last session, set by each town (RSA 654:8 II); the FAQ already says so, so reg_deadline leads with Election Day registration."
+}
