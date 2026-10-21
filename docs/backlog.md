@@ -6,15 +6,20 @@ Open items, newest first. Started October 21, 2026. Move an item to `docs/histor
 
 | Item | Why | Notes |
 |---|---|---|
-| **Daily rebuild and deploy** | Three things only change at build time: "Early voting is open today in N states" on the home page, facts with an `until` date (Washington registration switches to past tense October 27), and any ribbon or lead that should flip when a state's early voting ends. | A launchd job or a scheduled run of `build_static.py` + `wrangler pages deploy` + QA at 6 a.m. Central from October 23. See `docs/content-strategy-state-pages.md`, Phase 3. |
-| **ivotedsticker.org redirect** | Garrett bought it October 21. | Waiting on the Cloudflare plugin sign-in (`/mcp`). Plan, for his OK: in the ivotedsticker.org zone only, proxied placeholder records `@` and `www` (AAAA `100::`) and one redirect rule, every path on both hosts 301 to `https://votesticker.org/`. Nothing changes on votesticker.org. |
-| **Facts files for the other 49 states** | Texas and Washington are done and reviewed. | Per-state prompt in the content plan, Section 8.2; brand brief in `docs/brand-brief.md`. Tier 1 order in Section 8.4. |
+| **Facts files for the remaining 39 states** | 12 live (TX, WA, GA, VA, FL, NC, MD, PA, NV, NJ, NY, MI). Batches C (OH, TN, IN, SC, WI) and D (IL, CA, MA, AZ, CO) running. | Agents write files without `"live"`; review, then mark live. Open calls: NJ cure deadline (Nov 14 timeline vs. 48 hours before certification), MI photo rule (two SOS pages disagree), GA selfie FAQ could cite the stronger SOS "No." |
 | **"Early voting has ended" family** | Texas ends October 30, others sooner. A page that still says "early voting runs" after it closes is wrong. | Plan Section 5.1 (`early_over`). Depends on the daily rebuild. |
+
+## Done October 21
+
+- Daily rebuild: `.github/workflows/daily-build.yml`, 11:05 UTC, first run passed every step. Secrets set from the environment.
+- ivotedsticker.org: A records to 192.0.2.1 (proxied) and one dynamic redirect rule, all paths 301 to votesticker.org. HTTPS verified.
+- Per-state mail ribbons (CA, CO, HI, OR, WA) and sticker date lines; per-image alt text for all 369 ready-mades (`site/assets/states/alts.json`).
 
 ## Content and Copy
 
-- **Mail-state ribbon with real dates.** Washington's ribbon reads "VOTE BY MAIL, DUE NOV 3"; the review suggested "DROP BOX BY 8 P.M. NOV 3". The ribbon comes from `states.js` for every mail state, and return rules differ (postmark vs. received), so this needs a per-state ribbon field, not a blanket change.
-- **Per-image alt text for the ready-made sets** ("Plum circle sticker reading VOTE EARLY, Texas, Oct. 19–30"). Needs the printed text per image; the Codex prompt files list it for the Codex sets.
+- ~~Mail-state ribbon with real dates~~ (done).
+- **Old mail-ribbon note.** Washington's ribbon reads "VOTE BY MAIL, DUE NOV 3"; the review suggested "DROP BOX BY 8 P.M. NOV 3". The ribbon comes from `states.js` for every mail state, and return rules differ (postmark vs. received), so this needs a per-state ribbon field, not a blanket change.
+- ~~Per-image alt text~~ (done). Old note: ("Plum circle sticker reading VOTE EARLY, Texas, Oct. 19–30"). Needs the printed text per image; the Codex prompt files list it for the Codex sets.
 - **Mail-state default date line.** Washington's maker starts on "DUE NOV 3"; "BY 8 P.M. NOV 3" fits better. Same per-state field as the ribbon.
 - **"Signed, sealed, delivered" headline:** declined. Three lines over the 10-character limit, and it's a song title. "MY BALLOT / IS IN" shipped instead.
 
