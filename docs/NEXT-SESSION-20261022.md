@@ -35,10 +35,10 @@ done.
 
 ## Open Items, in Order
 
-1. **After Nov 3:** the countdown hides itself, but the home hero copy and the H1 still talk about
-   voting; plan the post-election version.
-2. **"Early voting has ended" copy** before each state's window closes (Texas ends Oct 30). Plan
+1. **"Early voting has ended" copy** before each state's window closes (Texas ends Oct 30). Plan
    Section 5.1 in `docs/content-strategy-state-pages.md`; the daily build makes date logic safe.
+2. **After Nov 3:** the countdown hides itself, but the home hero copy and the H1 still talk about
+   voting; plan the post-election version.
 3. **Maker ideas** in `docs/backlog.md`: "First time voter" message, 48 px profile preview, copy alt
    text, cut-out PNG, 1080 x 1350.
 4. **History page, later:** Alaska and Maine ranked-choice Resist Now link; more state and county
