@@ -1,7 +1,7 @@
 # Vote Sticker: Resume Here (October 22, 2026)
 
-Election Day is Tuesday, November 3. Everything below is live, committed and pushed (last commit
-`e36712f`). Nothing is half done.
+Election Day is Tuesday, November 3. Everything below is live, committed and pushed. Nothing is half
+done.
 
 ## Where Things Stand
 
@@ -20,6 +20,13 @@ Election Day is Tuesday, November 3. Everything below is live, committed and pus
 - **Footer (every page, both languages):** "Vote Sticker is independent and nonpartisan…", link row
   (Make a sticker, State stickers, Sticker History, About, Share a source or correction), and the
   Garrett Digital line "…for businesses and nonprofits. Let's talk."
+- **Home polish (Oct 22, evening, `4362e8a`):** shorter hero and lead ("Make an I voted sticker or
+  share your state's voting dates…"), "Type your state" picker with "Free, no account.", no copy-link
+  button on the home hero, Election Day countdown ("Election Day: Tuesday, Nov. 3" plus a muted gold
+  "12 days away" pill) on the home page and every state page (`vote_countdown()` in
+  `site/index.php`; build sets the count, a footer script recounts by the visitor's date and hides
+  it after Nov 3), plainer How It Works, home FAQ reordered (profile picture first). Kept on purpose:
+  the H1, no hero caption, no state-preview swap, the trust band.
 - **Resist Now:** three Learn-guide links on state pages (registration, voter ID, mail voting);
   rule in `docs/brand-brief.md`.
 - **IndexNow:** all 108 URLs submitted October 22 (200).
@@ -28,14 +35,16 @@ Election Day is Tuesday, November 3. Everything below is live, committed and pus
 
 ## Open Items, in Order
 
-1. **"Early voting has ended" copy** before each state's window closes (Texas ends Oct 30). Plan
+1. **After Nov 3:** the countdown hides itself, but the home hero copy and the H1 still talk about
+   voting; plan the post-election version.
+2. **"Early voting has ended" copy** before each state's window closes (Texas ends Oct 30). Plan
    Section 5.1 in `docs/content-strategy-state-pages.md`; the daily build makes date logic safe.
-2. **Maker ideas** in `docs/backlog.md`: "First time voter" message, 48 px profile preview, copy alt
+3. **Maker ideas** in `docs/backlog.md`: "First time voter" message, 48 px profile preview, copy alt
    text, cut-out PNG, 1080 x 1350.
-3. **History page, later:** Alaska and Maine ranked-choice Resist Now link; more state and county
+4. **History page, later:** Alaska and Maine ranked-choice Resist Now link; more state and county
    stories (blank states are fine as "No featured story yet"); records requests and interviews
    (Boudreau, Rowan, Michigan, Ulster) need a person to send them.
-4. **After the election:** privacy and accessibility section on About; "Submit a sticker" needs a
+5. **After the election:** privacy and accessibility section on About; "Submit a sticker" needs a
    rights plan.
 
 ## How To Build and Ship
