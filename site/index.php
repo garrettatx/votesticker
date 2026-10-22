@@ -412,11 +412,13 @@ function vote_guide( $st ) {
 	if ( $p ) { $out .= $p[0] . vote_sources_line( $st, $p[1] ) . '</section>'; }
 	$sticker = vote_fact( $st, 'sticker.tradition' );
 	if ( $sticker ) {
-		$out .= '<section class="guide" aria-labelledby="sticker-h">' . $h( 'sticker-h', t( '%s and the I Voted Sticker', $name ) ) . '<p>' . vote_e( $sticker['text'] ) . '</p>'
+		$out .= '<section class="guide" aria-labelledby="sticker-h">' . $h( 'sticker-h', t( '%s and the I Voted Sticker', $name ) ) . '<p>' . vote_e( $sticker['text'] ) . '</p>' . vote_history_more( $st )
 			. '<p><a href="#maker-h">' . vote_e( t( 'Make your own %s I voted sticker', $name ) ) . '</a></p>' . vote_sources_line( $st, array( $sticker['src'] ) ) . '</section>';
 	}
 	return $out;
 }
+
+require __DIR__ . '/history.php';
 
 // The About page (/about/, /es/about/): who makes the site, where its facts come from, how to send a
 // correction. Written for people first; the AboutPage schema in the head names the publisher.
@@ -661,11 +663,14 @@ if ( ! defined( 'VOTE_SLUG' ) && isset( $_GET['state'] ) ) {
 $vote_abbr = defined( 'VOTE_SLUG' ) ? ( $vote_by_slug[ VOTE_SLUG ] ?? '' ) : '';
 // Pages that aren't a state: /about/ (site/about/index.php sets VOTE_PAGE). Same template, no maker.
 $vote_about = defined( 'VOTE_PAGE' ) && 'about' === VOTE_PAGE;
+// /history/ (site/history.php): the sourced history of the sticker.
+$vote_history = defined( 'VOTE_PAGE' ) && 'history' === VOTE_PAGE;
+$vote_doc = $vote_about || $vote_history; // pages with no maker, finder or state
 $vote_path = (string) parse_url( $_SERVER['REQUEST_URI'] ?? VOTE_BASE, PHP_URL_PATH );
 // Unknown addresses get a real 404 with the finder, popular states, and the full state list
 // (Nielsen Norman Group's error-page guidance: say it plainly, keep the site's navigation, offer search
 // and the most useful links). build/build_static.py writes the same page to dist/404.html.
-$vote_404 = ! $vote_about && ( defined( 'VOTE_404' ) || ( defined( 'VOTE_SLUG' ) && ! $vote_abbr ) || ( ! defined( 'VOTE_SLUG' ) && ! in_array( $vote_path, array( vote_pbase(), vote_pbase() . 'index.php' ), true ) ) );
+$vote_404 = ! $vote_doc && ( defined( 'VOTE_404' ) || ( defined( 'VOTE_SLUG' ) && ! $vote_abbr ) || ( ! defined( 'VOTE_SLUG' ) && ! in_array( $vote_path, array( vote_pbase(), vote_pbase() . 'index.php' ), true ) ) );
 if ( $vote_404 ) {
 	http_response_code( 404 );
 	$vote_abbr = '';
@@ -689,6 +694,7 @@ if ( $vote_about ) {
 		'index' => ! vote_es() || VOTE_ES_INDEX,
 	);
 }
+if ( $vote_history ) { $vote_page = vote_history_meta(); }
 if ( $vote_404 ) {
 	$vote_page = array(
 		'title' => t( 'Page Not Found | Vote Sticker' ),
@@ -699,7 +705,7 @@ if ( $vote_404 ) {
 		'index' => false,
 	);
 }
-$vote_tail = $vote_st ? $vote_page['slug'] . '/' : ( $vote_about ? 'about/' : '' );
+$vote_tail = $vote_st ? $vote_page['slug'] . '/' : ( $vote_about ? 'about/' : ( $vote_history ? VOTE_HISTORY_SLUG . '/' : '' ) );
 $vote_url = VOTE_SITE . vote_pbase() . $vote_tail;
 // The same page in each language, for hreflang and the language switch.
 $vote_alt = array( 'en' => VOTE_SITE . VOTE_BASE . $vote_tail, 'es' => VOTE_SITE . VOTE_BASE . 'es/' . $vote_tail );
@@ -715,6 +721,7 @@ $vote_og_alt = vote_es()
 $vote_crumbs = array( array( VOTE_BRAND, VOTE_SITE . vote_pbase() ) );
 if ( $vote_st ) { $vote_crumbs[] = array( $vote_page['crumb'], $vote_url ); }
 if ( $vote_about ) { $vote_crumbs[] = array( t( 'About' ), $vote_url ); }
+if ( $vote_history ) { $vote_crumbs[] = array( t( 'Sticker History' ), $vote_url ); }
 $vote_share = '<p class="share"><button type="button" class="share__btn" id="share-link" data-url="' . vote_e( $vote_url ) . '" data-title="' . vote_e( $vote_page['title'] ) . '"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7L12 19"/></svg><span id="share-label">' . ( $vote_st ? vote_e( t( 'Copy link to this %s page', vote_lname( $vote_st ) ) ) : vote_e( t( 'Copy page link' ) ) ) . '</span></button></p>';
 
 // The state finder: a type-ahead box (app.js fills the suggestions). Without JavaScript the full list of
@@ -777,7 +784,8 @@ $vote_ld = array(
 		'address' => array( '@type' => 'PostalAddress', 'addressLocality' => 'Austin', 'addressRegion' => 'TX', 'addressCountry' => 'US' ),
 		'founder' => array( '@type' => 'Person', 'name' => 'Garrett Nafzinger' ) ) ) ); ?></script><?php echo "\n"; endif; ?>
 <?php if ( $vote_st && ( $vote_faq_ld = vote_state_faq( $vote_st ) ) ) : ?><script type="application/ld+json"><?php echo vote_json( array( '@context' => 'https://schema.org', '@type' => 'FAQPage', 'inLanguage' => $vote_lang, 'mainEntity' => array_map( function ( $q ) { return array( '@type' => 'Question', 'name' => $q[0], 'acceptedAnswer' => array( '@type' => 'Answer', 'text' => $q[1] ) ); }, $vote_faq_ld ) ) ); ?></script><?php echo "\n"; endif; ?>
-<?php if ( ! $vote_st && ! $vote_404 ) : ?><script type="application/ld+json"><?php echo vote_json( array( '@context' => 'https://schema.org', '@type' => 'WebSite', 'name' => VOTE_BRAND, 'alternateName' => 'VoteSticker.org', 'url' => VOTE_SITE . vote_pbase(), 'inLanguage' => $vote_lang ) ); ?></script><?php echo "\n"; endif; ?>
+<?php if ( $vote_history ) : ?><script type="application/ld+json"><?php echo vote_json( vote_history_ld( $vote_page, $vote_url ) ); ?></script><?php echo "\n"; endif; ?>
+<?php if ( ! $vote_st && ! $vote_404 && ! $vote_history ) : ?><script type="application/ld+json"><?php echo vote_json( array( '@context' => 'https://schema.org', '@type' => 'WebSite', 'name' => VOTE_BRAND, 'alternateName' => 'VoteSticker.org', 'url' => VOTE_SITE . vote_pbase(), 'inLanguage' => $vote_lang ) ); ?></script><?php echo "\n"; endif; ?>
 <!-- Google tag (gtag.js) -->
 <script src="https://analytics.ahrefs.com/analytics.js" data-key="JWFR/FwEHfD5yA/gz1K/Jg" async></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PZWZTXDSDE"></script>
@@ -790,7 +798,7 @@ $vote_ld = array(
 </script>
 </head>
 <body>
-<?php if ( ! vote_es() && ! $vote_st && ! $vote_404 && ! $vote_about ) : ?>
+<?php if ( ! vote_es() && ! $vote_st && ! $vote_404 && ! $vote_doc ) : ?>
 <div class="lang-suggest" id="lang-suggest" lang="es" hidden><div class="wrap"><p>¿Prefieres ver esta página en español?</p><a class="btn btn--gold" href="<?php echo vote_e( $vote_alt['es'] ); ?>" data-lang-choice="es">Ver en español</a><button type="button" class="btn btn--quiet" id="lang-suggest-no">No, gracias</button></div></div>
 <?php endif; ?>
 <header class="top<?php echo $vote_st ? "" : " top--hub"; ?>">
@@ -804,7 +812,7 @@ $vote_ld = array(
 		</a>
 		<a class="lang-switch" href="<?php echo vote_e( $vote_404 ? VOTE_SITE . ( vote_es() ? VOTE_BASE : VOTE_BASE . 'es/' ) : $vote_alt[ $vote_other ] ); ?>" hreflang="<?php echo $vote_other; ?>" lang="<?php echo $vote_other; ?>" data-lang-choice="<?php echo $vote_other; ?>"><?php echo vote_es() ? 'English' : 'Español'; ?></a>
 		</div>
-		<?php if ( $vote_st || $vote_about ) : ?>
+		<?php if ( $vote_st || $vote_doc ) : ?>
 		<nav class="crumbs" aria-label="<?php echo vote_e( t( 'Breadcrumb' ) ); ?>"><ol>
 			<?php foreach ( $vote_crumbs as $i => $c ) : $last = $i === count( $vote_crumbs ) - 1; ?>
 			<li><?php if ( $last ) : ?><span aria-current="page" id="crumb-last"><?php echo vote_e( $c[0] ); ?></span><?php else : ?><a href="<?php echo vote_e( $c[1] ); ?>"><?php echo vote_e( $c[0] ); ?></a><?php endif; ?></li>
@@ -832,15 +840,15 @@ $vote_ld = array(
 		<?php else : ?>
 		<div class="hero">
 			<div class="hero__text">
-				<p class="<?php echo $vote_404 ? 'ribbon ribbon--err' : 'eyebrow'; ?>"><?php echo vote_e( $vote_page['eyebrow'] ); ?></p>
+				<?php if ( $vote_page['eyebrow'] ) : ?><p class="<?php echo $vote_404 ? 'ribbon ribbon--err' : 'eyebrow'; ?>"><?php echo vote_e( $vote_page['eyebrow'] ); ?></p><?php endif; ?>
 				<h1 id="page-h1"><?php
 				// One line per sentence, so no line ends mid-thought ("MAKE A VOTING / PLAN. SHARE").
 				$vote_h1 = preg_split( '/(?<=\.)\s+/', $vote_page['h1'] );
 				echo count( $vote_h1 ) > 1 ? implode( ' ', array_map( function ( $x ) { return '<span class="h1__line">' . vote_e( $x ) . '</span>'; }, $vote_h1 ) ) : vote_e( $vote_page['h1'] );
 				?></h1>
 				<p class="lead" id="page-lead"><?php echo vote_e( $vote_page['lead'] ); ?></p>
-				<?php if ( ! $vote_about ) { echo vote_finder( 'Your state', 'Texas or TX', $vote_404 ? 'Find' : 'Get my sticker' ); } ?>
-				<?php if ( ! $vote_about && ! $vote_404 ) : $vote_today = date( 'Y-m-d' ); $vote_open = 0; foreach ( $vote_rows as $vote_r ) { if ( vote_verified( $vote_r ) && 'in-person' === ( $vote_r['kind'] ?? '' ) && ! empty( $vote_r['start'] ) && $vote_r['start'] <= $vote_today && $vote_today <= $vote_r['end'] ) { $vote_open++; } } ?>
+				<?php if ( ! $vote_doc ) { echo vote_finder( 'Your state', 'Texas or TX', $vote_404 ? 'Find' : 'Get my sticker' ); } ?>
+				<?php if ( ! $vote_doc && ! $vote_404 ) : $vote_today = date( 'Y-m-d' ); $vote_open = 0; foreach ( $vote_rows as $vote_r ) { if ( vote_verified( $vote_r ) && 'in-person' === ( $vote_r['kind'] ?? '' ) && ! empty( $vote_r['start'] ) && $vote_r['start'] <= $vote_today && $vote_today <= $vote_r['end'] ) { $vote_open++; } } ?>
 				<p class="hero__today"><?php echo vote_e( t( 'Election Day is Tuesday, Nov. 3.' ) ); ?> <?php if ( $vote_open > 1 ) { echo vote_e( t( 'Early voting is open today in %s states.', $vote_open ) ); } elseif ( 1 === $vote_open ) { echo vote_e( t( 'Early voting is open today in one state.' ) ); } ?></p>
 				<?php endif; ?>
 				<?php if ( $vote_404 ) : ?>
@@ -852,10 +860,11 @@ $vote_ld = array(
 						<li><a href="<?php echo vote_pbase(); ?>#faq-h"><?php echo vote_e( t( 'Common Questions' ) ); ?></a></li>
 					</ul>
 				</nav>
-				<?php else : ?><?php echo $vote_share; ?><?php endif; ?>
+				<?php else : ?><?php echo $vote_history ? vote_history_jump() : ''; ?><?php echo $vote_share; ?><?php endif; ?>
 			</div>
 			<?php if ( $vote_404 ) : ?>
 			<div class="err-sticker" aria-hidden="true"><span>404</span><small><?php echo vote_e( t( 'Page not found' ) ); ?></small></div>
+			<?php elseif ( $vote_history ) : echo vote_history_art(); ?>
 			<?php elseif ( ! $vote_about ) : ?>
 			<div class="hero__art" aria-hidden="true">
 				<?php
@@ -872,7 +881,7 @@ $vote_ld = array(
 </header>
 
 <main class="wrap">
-<?php if ( $vote_about ) : echo vote_about(); else : ?>
+<?php if ( $vote_about ) : echo vote_about(); elseif ( $vote_history ) : echo vote_history(); else : ?>
 
 	<?php
 	// Landing showcase (October 19): one polished ready-made design per state, most populous first,
@@ -951,6 +960,7 @@ $vote_ld = array(
 					<a class="link-quiet" id="open" href="#" target="_blank" rel="noopener"><?php echo vote_e( t( 'Open full image' ) ); ?></a>
 				</div>
 				<p class="hint" id="tip"></p>
+				<p class="hint after-save" id="after-save" hidden><?php echo vote_e( t( 'Curious where the I voted sticker came from?' ) ); ?> <a href="<?php echo vote_pbase() . VOTE_HISTORY_SLUG; ?>/"><?php echo vote_e( t( 'Read its history' ) ); ?></a></p>
 				<details class="post" open>
 					<summary><?php echo vote_e( t( 'Suggested post text' ) ); ?></summary>
 					<div class="post-picks" id="post-picks" role="group" aria-label="<?php echo vote_e( t( 'Post versions' ) ); ?>"><?php foreach ( VOTE_POST_VARIANTS as $vk => $vl ) : ?><button type="button" class="pick-chip" data-variant="<?php echo $vk; ?>" aria-pressed="<?php echo 'plan' === $vk ? 'true' : 'false'; ?>"><?php echo vote_e( t( $vl ) ); ?></button><?php endforeach; ?></div>
@@ -1031,6 +1041,7 @@ $vote_ld = array(
 	<section class="why" aria-labelledby="why-h">
 		<h2 id="why-h" class="display-h"><?php echo vote_e( t( 'Why This Exists' ) ); ?></h2>
 		<p><?php echo vote_e( t( 'The paper I voted sticker is a small way of saying you showed up. These days more people see your profile picture than your shirt, so Vote Sticker puts that reminder where people look.' ) ); ?> <?php echo vote_e( t( 'Garrett Digital in Austin built it.' ) ); ?> <?php echo vote_e( t( "It's free, nonpartisan, and sells nothing." ) ); ?> <a href="<?php echo vote_pbase(); ?>about/"><?php echo vote_e( t( 'More about Vote Sticker' ) ); ?></a></p>
+		<?php echo vote_history_why(); ?>
 	</section>
 	<?php endif; ?>
 	<?php if ( ! $vote_404 ) : ?>
@@ -1060,8 +1071,8 @@ $vote_ld = array(
 
 <footer class="foot">
 	<div class="wrap">
-		<p><b><?php echo vote_e( t( 'This tool is nonpartisan.' ) ); ?></b> <?php echo vote_e( t( 'Voting dates and links come from official state election sources.' ) ); ?> <?php echo vote_e( t( $vote_st && vote_verified( $vote_st ) && 'mail' === $vote_st['kind'] ? 'Before you vote, check your registration, ballot status, and drop box locations with your county elections office.' : 'Before you vote, check your registration, polling place, hours, and ID rules with your state or local election office.' ) ); ?> <a href="<?php echo vote_e( t( 'https://www.usa.gov/state-election-office' ) ); ?>"><?php echo vote_e( t( 'Find your state or local election office' ) ); ?></a>.</p>
-		<p class="foot__links"><a href="<?php echo vote_pbase(); ?>about/"<?php echo $vote_about ? ' aria-current="page"' : ''; ?>><?php echo vote_e( t( 'About Vote Sticker' ) ); ?></a></p>
+		<p><b><?php echo vote_e( t( 'Vote Sticker is independent and nonpartisan.' ) ); ?></b> <?php echo vote_e( t( "It isn't affiliated with any government office, campaign or party." ) ); ?> <?php echo vote_e( t( 'Voting dates and links come from official election sources.' ) ); ?> <?php echo vote_e( t( $vote_st && vote_verified( $vote_st ) && 'mail' === $vote_st['kind'] ? 'Before you vote, check your registration, ballot status, and drop box locations with your county elections office.' : 'Before you vote, confirm your registration, polling place, hours, and ID requirements with your state or local election office.' ) ); ?> <a href="<?php echo vote_e( t( 'https://www.usa.gov/state-election-office' ) ); ?>"><?php echo vote_e( t( 'Find your election office' ) ); ?></a>.</p>
+		<nav class="foot__links" aria-label="<?php echo vote_e( t( 'Site' ) ); ?>"><a href="<?php echo vote_pbase(); ?>#state-find"><?php echo vote_e( t( 'Make a sticker' ) ); ?></a> <a href="<?php echo vote_pbase(); ?>#states-h"><?php echo vote_e( t( 'State stickers' ) ); ?></a> <a href="<?php echo vote_pbase() . VOTE_HISTORY_SLUG; ?>/"<?php echo $vote_history ? ' aria-current="page"' : ''; ?>><?php echo vote_e( t( 'Sticker History' ) ); ?></a> <a href="<?php echo vote_pbase(); ?>about/"<?php echo $vote_about ? ' aria-current="page"' : ''; ?>><?php echo vote_e( t( 'About Vote Sticker' ) ); ?></a> <a href="<?php echo vote_pbase(); ?>about/#fix-h"><?php echo vote_e( t( 'Share a source or correction' ) ); ?></a></nav>
 		<p class="foot__made"><span><?php echo vote_e( t( 'Built in Austin by' ) ); ?></span> <a class="foot__gd" href="https://www.garrettdigital.com/"><img src="<?php echo vote_v( 'assets/gd-logo.svg' ); ?>" alt="Garrett Digital" width="152" height="40"></a></p>
 		<p class="foot__gd-line"><?php echo vote_e( t( 'An SEO and search marketing consultancy that builds useful websites, tools and measurement.' ) ); ?> <a href="https://www.garrettdigital.com/contact/"><?php echo vote_e( t( "Let's talk." ) ); ?></a></p>
 	</div>

@@ -106,7 +106,7 @@ def main():
         fail(f'states.js has {len(rows)} rows')
 
     pages, titles, descs = {}, {}, {}
-    for p in paths + ['about/']:  # about: a page, not a state (no prev/next, hub share image)
+    for p in paths + ['about/', 'history/']:  # pages, not states (no prev/next, hub share image)
         status, _, html = fetch(urljoin(base, p))
         if status != 200:
             fail(f'/{p}: HTTP {status}')
@@ -141,7 +141,7 @@ def main():
         if '?state=' in html:
             fail(f'/{p}: has a ?state= link')
         og = pg.meta.get('og:image', '')
-        want_og = f'{PROD}assets/og/{p[:-1]}.jpg' if p and p != 'about/' else f'{PROD}assets/og-hub.jpg'
+        want_og = f'{PROD}assets/og/{p[:-1]}.jpg' if p and p not in ('about/', 'history/') else f'{PROD}assets/og-hub.jpg'
         if not og.startswith(want_og + '?v='):
             fail(f'/{p}: og:image {og}')
         elif fetch(urljoin(base, og.replace(PROD, '')))[0] != 200:
@@ -215,7 +215,7 @@ def main():
     if status != 200 or locs != want:
         fail(f'sitemap: HTTP {status}, extra {sorted(locs - want)[:3]}, missing {sorted(want - locs)[:3]}')
 
-    print(f'{len(pages)} pages, {len(internal)} internal links, {len([p for p in pages if p and p != "about/"])} indexable states')
+    print(f'{len(pages)} pages, {len(internal)} internal links, {len([p for p in pages if p and p not in ("about/", "history/")])} indexable states')
     for f in fails[:40]:
         print('  FAIL ' + f)
     print('FAILED (%d)' % len(fails) if fails else 'PASS')

@@ -1,0 +1,2130 @@
+{
+ "checked": "2026-10-22",
+ "sources": {
+  "www.aarp.org": {
+   "en": "AARP"
+  },
+  "time.com": {
+   "en": "Time"
+  },
+  "apnews.com": {
+   "en": "the Associated Press"
+  },
+  "www.coloradopolitics.com": {
+   "en": "the Washington Examiner (via Colorado Politics)"
+  },
+  "www.vox.com": {
+   "en": "Vox"
+  },
+  "hyperallergic.com": {
+   "en": "Hyperallergic"
+  },
+  "web.archive.org": {
+   "en": "The Arizona Republic (archived)"
+  },
+  "www.azcentral.com": {
+   "en": "The Arizona Republic"
+  },
+  "fronterasdesk.org": {
+   "en": "KJZZ Fronteras Desk"
+  },
+  "americanhistory.si.edu": {
+   "en": "the Smithsonian's National Museum of American History"
+  },
+  "www.newspapers.com": {
+   "en": "The Miami Herald (Newspapers.com)"
+  },
+  "en.wikipedia.org": {
+   "en": "Wikipedia"
+  },
+  "www.intab.net": {
+   "en": "Intab"
+  },
+  "www.npr.org": {
+   "en": "NPR"
+  },
+  "www.refinery29.com": {
+   "en": "Refinery29"
+  },
+  "www.law.cornell.edu": {
+   "en": "U.S. Code (Cornell Legal Information Institute)"
+  },
+  "www.justice.gov": {
+   "en": "the U.S. Department of Justice"
+  },
+  "elections.wi.gov": {
+   "en": "the Wisconsin Elections Commission"
+  },
+  "www.ilga.gov": {
+   "en": "the Illinois Election Code"
+  },
+  "www.wglt.org": {
+   "en": "WGLT"
+  },
+  "sparq.stanford.edu": {
+   "en": "Bond et al., Nature (2012)"
+  },
+  "doi.org": {
+   "en": "the journal of record (DOI)"
+  },
+  "www.povertyactionlab.org": {
+   "en": "J-PAL"
+  },
+  "fomh.org": {
+   "en": "the Friends of Mount Hope Cemetery"
+  },
+  "www.usatoday.com": {
+   "en": "the Rochester Democrat and Chronicle (USA Today)"
+  },
+  "www.smithsonianmag.com": {
+   "en": "Smithsonian Magazine"
+  },
+  "muse.jhu.edu": {
+   "en": "the Journal of Feminist Studies in Religion"
+  },
+  "electionline.org": {
+   "en": "electionline Weekly"
+  },
+  "www.marketplace.org": {
+   "en": "Marketplace"
+  },
+  "calmatters.org": {
+   "en": "CalMatters"
+  },
+  "www.metroartsnashville.gov": {
+   "en": "Metro Arts Nashville"
+  },
+  "www.eac.gov": {
+   "en": "the U.S. Election Assistance Commission"
+  },
+  "legislature.ulstercountyny.gov": {
+   "en": "the Ulster County Legislature"
+  },
+  "hudsonvalleyone.com": {
+   "en": "Hudson Valley One"
+  },
+  "spectrumlocalnews.com": {
+   "en": "Spectrum News"
+  },
+  "www2.census.gov": {
+   "en": "the U.S. Census Bureau"
+  },
+  "www.michigan.gov": {
+   "en": "the Michigan Department of State"
+  },
+  "www.thehenryford.org": {
+   "en": "The Henry Ford museum"
+  },
+  "www.bridgemi.com": {
+   "en": "Bridge Michigan"
+  },
+  "www.michiganpublic.org": {
+   "en": "Michigan Public"
+  },
+  "www.nyccfb.info": {
+   "en": "the NYC Campaign Finance Board"
+  },
+  "wnyc.org": {
+   "en": "WNYC"
+  },
+  "www.dnainfo.com": {
+   "en": "DNAinfo"
+  },
+  "sf.gov": {
+   "en": "the San Francisco Department of Elections"
+  },
+  "windnewspaper.com": {
+   "en": "World Journal (Wind Newspaper)"
+  },
+  "sos.ga.gov": {
+   "en": "the Georgia Secretary of State"
+  },
+  "www.everycrsreport.com": {
+   "en": "the Congressional Research Service (via EveryCRSReport)"
+  },
+  "recorder.pima.gov": {
+   "en": "the Pima County Recorder"
+  },
+  "app.chicagoelections.gov": {
+   "en": "the Chicago Board of Election Commissioners"
+  },
+  "chicagoelections.gov": {
+   "en": "the Chicago Board of Election Commissioners"
+  },
+  "www.clickondetroit.com": {
+   "en": "the Associated Press (via WDIV ClickOnDetroit)"
+  },
+  "www.whec.com": {
+   "en": "News10NBC (WHEC Rochester)"
+  },
+  "abc7chicago.com": {
+   "en": "ABC7 Chicago"
+  },
+  "vote.phila.gov": {
+   "en": "the Philadelphia City Commissioners"
+  },
+  "sos.oregon.gov": {
+   "en": "the Oregon Secretary of State"
+  },
+  "extcontent.stlouisco.com": {
+   "en": "the St. Louis County Board of Elections"
+  },
+  "www.wkar.org": {
+   "en": "WKAR"
+  },
+  "sentinelcolorado.com": {
+   "en": "the Associated Press (via Sentinel Colorado)"
+  },
+  "www.fvap.gov": {
+   "en": "the Federal Voting Assistance Program"
+  },
+  "portal.ct.gov": {
+   "en": "the Connecticut Secretary of the State"
+  },
+  "boe.cuyahogacounty.gov": {
+   "en": "the Cuyahoga County Board of Elections"
+  }
+ },
+ "events": [
+  {
+   "id": "secret-ballot-1888",
+   "year": 1888,
+   "date": "1888",
+   "place": "United States",
+   "claim": "Through most of the 1800s, many Americans voted with party-printed tickets that were easy to tell apart, often by color, and handed them in where others could see. Louisville and Massachusetts first adopted the government-printed secret Australian ballot in 1888.",
+   "evidence": "secondary",
+   "status": "verified",
+   "src": "https://www.everycrsreport.com/reports/IN12389.html",
+   "quote": "Parties’ ticket s were typically readily distinguishable from each other, such as by color, and handed to election officials in public view.",
+   "also": [
+    {
+     "src": "https://www.everycrsreport.com/reports/IN12389.html",
+     "quote": "Louisville, KY, and the State of Massachusetts were the first to adopt it, in 18 88."
+    }
+   ],
+   "notes": "Congressional Research Service Insight IN12389 (July 5, 2024), read via EveryCRSReport mirror; spacing artifacts ('ticket s', '18 88') are in the mirror text. Low priority item; 99% Invisible not read."
+  },
+  {
+   "id": "nmah-1920-first-vote-badge",
+   "year": 1920,
+   "date": "1920-11-02",
+   "place": "Pennsylvania",
+   "claim": "The Smithsonian's National Museum of American History holds a 1920 ribbon badge marking a woman's first vote under the 19th Amendment, for the Harding and Coolidge ticket. Its curator calls it the oldest Election Day keepsake in the museum's collection.",
+   "evidence": "artifact",
+   "status": "verified",
+   "src": "https://americanhistory.si.edu/collections/object/nmah_1051247",
+   "quote": "Badge, Nineteenth Amendment ... ID Number 1986.0640.001 ... overall: 6 1/4 in x 2 1/4 in; 15.875 cm x 5.715 cm",
+   "also": [
+    {
+     "src": "https://hyperallergic.com/777730/a-brief-history-of-the-i-voted-sticker/",
+     "quote": "Ribbon badge, 1920, \"Under the 19th Amendment I Cast My First Vote - Harding/Coolidge.\" 1986.0640.001. (image courtesy The National Museum of American History)"
+    },
+    {
+     "src": "https://hyperallergic.com/777730/a-brief-history-of-the-i-voted-sticker/",
+     "quote": "“We have a button with a ribbon extending down that says ‘I cast my first vote on November 2nd, 1920.’"
+    },
+    {
+     "src": "https://americanhistory.si.edu/collections/object/nmah_522863",
+     "quote": "Badge worn by women supporting Republican presidential candidate Warren G. Harding. The 1920 presidential election was the first in which women from all states could vote after the Nineteenth Amendment enfranchising women was ratified in August, 1920."
+    }
+   ],
+   "notes": "Record read through the Smithsonian Open Access API (edanmdm:nmah_1051247) because americanhistory.si.edu returned a Cloudflare 500 all session. The record gives title, catalog number 1986.0640.001, yellow textile, and size, but NOT the inscription text and NOT Lancaster. The inscription comes from the Hyperallergic caption and curator Claire Jerry's quote. 'Lancaster, PA' appears only in Wikipedia, which cites Hyperallergic, and Hyperallergic does not say Lancaster: do not use Lancaster. A second NMAH object, nmah_522863 'First Vote Badge' (1980.0606.183, 5 x 2 1/4 in, Pennsylvania, Harding), is a related Republican first-vote badge; its record also lacks inscription text. Metadata is CC0; image rights not stated in the API."
+  },
+  {
+   "id": "miami-herald-1950",
+   "year": 1950,
+   "date": "1950-10-27",
+   "place": "Miami, Florida",
+   "claim": "A 1950 Miami Herald page is cited as an early mention of \"I Have Voted\" stickers handed out at Miami polls.",
+   "evidence": "secondary",
+   "status": "unverified",
+   "src": "https://www.coloradopolitics.com/2024/11/04/the-history-behind-the-i-voted-sticker-478cdd9f-04a0-56fd-aac9-8af069f9df5a/",
+   "quote": "The Miami Herald mentioned the distribution of an “I Have Voted” sticker at Miami polls as early as 1950 .",
+   "also": [
+    {
+     "src": "https://www.newspapers.com/image/618114799/",
+     "quote": "Oct 27, 1950, page 25 - The Miami Herald at Newspapers.com"
+    }
+   ],
+   "notes": "The Washington Examiner piece (republished by Colorado Politics, Nov 4, 2024, Annabella Rosciglione) links its '1950' to Newspapers.com image 618114799; the page title in Chrome confirms it is The Miami Herald, Oct 27, 1950, page 25. The page text is behind Newspapers.com's paywall and was not read. The hospital bond vote and time-off-to-vote details from the research appear in no source read: do not use them. Safe wording: 'a 1950 Miami Herald page mentions...', attributed."
+  },
+  {
+   "id": "fort-lauderdale-1982",
+   "year": 1982,
+   "date": "1982-10-29",
+   "place": "Fort Lauderdale, Florida",
+   "claim": "An October 29, 1982, Miami Herald article described Fort Lauderdale businesses offering discounts to people wearing a voting sticker. Time called it possibly the earliest mention of such a sticker.",
+   "evidence": "secondary",
+   "status": "verified",
+   "src": "https://time.com/4541760/i-voted-sticker-history-origins/",
+   "quote": "An Oct. 29, 1982, Miami Herald article may contain the earliest mention of such a sticker",
+   "also": [
+    {
+     "src": "https://www.aarp.org/events-history/i-voted-sticker-2024.html",
+     "quote": "One of the first mentions of a sticker that advertised voting can be found in a 1982 Miami Herald article, which noted how small businesses in Fort Lauderdale used the stickers to offer discounts to customers, Time Magazine reported."
+    }
+   ],
+   "notes": "Time (Olivia B. Waxman, Nov 7, 2016) is the source the others copy. Herald itself not read. Time wrote 'may contain the earliest mention'; it predates the 1950 citation surfacing later, so do not call 1982 'the first'."
+  },
+  {
+   "id": "bush-houston-1984",
+   "year": 1984,
+   "date": "1984-11-06",
+   "place": "Houston, Texas",
+   "claim": "Voting in Houston in the 1984 presidential election, Vice President George H. W. Bush was given a sticker reading \"I Voted Today, Have You?\", according to a UPI report that day. Teachers' unions also handed stickers to members that year.",
+   "evidence": "secondary",
+   "status": "verified",
+   "src": "https://www.vox.com/presidential-election/2016/11/8/13553112/i-voted-sticker",
+   "quote": "The same year, Vice President George H. W. Bush got a sticker that said “I Voted Today — Have You?” in Houston when he cast his ballot in the presidential election in 1984, according to a report that day from the United Press International wire service.",
+   "also": [
+    {
+     "src": "https://www.vox.com/presidential-election/2016/11/8/13553112/i-voted-sticker",
+     "quote": "Teachers unions offered them to members in 1984 to encourage coworkers to vote."
+    }
+   ],
+   "notes": "Vox (Libby Nelson, Nov 8, 2016) cites UPI but gives no link; the UPI item was not found in upi.com/Archives searches. The teachers' union line has no cited source. Both are secondary; attribute to Vox citing UPI. Sticker text contains an em dash in the source; on the page write it with a comma or as two lines."
+  },
+  {
+   "id": "phoenix-realtors-1985",
+   "year": 1985,
+   "date": "1985",
+   "place": "Phoenix and Maricopa County, Arizona",
+   "claim": "In 1985 the Phoenix Board of Realtors made \"I voted today\" stickers to remind people to vote while a freeway bond issue was on the ballot. Skip Rimsza, the board's president and later Phoenix mayor, and operations director Dennis M. Burke came up with the idea, and Rimsza later claimed they were the first in the country.",
+   "evidence": "contemporary report",
+   "status": "verified",
+   "src": "https://web.archive.org/web/20180209130609/http://archive.azcentral.com/specials/special36/articles/1108ELECT-VOTERVOICES.html",
+   "quote": "Rimsza and Dennis M. Burke, the board's operations director then, brainstormed the sticker to spark voter interest. Morning voter turnout at most elections was strong, but the afternoon was always the weakest.",
+   "also": [
+    {
+     "src": "https://web.archive.org/web/20180209130609/http://archive.azcentral.com/specials/special36/articles/1108ELECT-VOTERVOICES.html",
+     "quote": "Back then, there was a bond issue on the ballot to expand the freeway system."
+    },
+    {
+     "src": "https://web.archive.org/web/20180209130609/http://archive.azcentral.com/specials/special36/articles/1108ELECT-VOTERVOICES.html",
+     "quote": "\"We were absolutely the first ones in the country,\" Rimsza said."
+    },
+    {
+     "src": "https://time.com/4541760/i-voted-sticker-history-origins/",
+     "quote": "The Phoenix Realtors Association says it started distributing such stickers in Phoenix and Maricopa County"
+    },
+    {
+     "src": "https://fronterasdesk.org/content/3310/election-day-sticker-brought-you",
+     "quote": "The Phoenix Association of Realtors says 25 million “I Voted” stickers have been distributed since 1985."
+    }
+   ],
+   "notes": "Source is the Arizona Republic, Nov 8, 2006 (Angela Cara Pancrazio), read via the Wayback Machine. It says 'bond issue'; the research's 'half-cent sales tax' is not in anything read (the 1985 Maricopa freeway vote was a sales tax measure, but no source here says so: don't state it). 'First in the country' is Rimsza's claim and is contradicted by the 1950 and 1982 Herald mentions; present it as a claim. The 2025 azcentral story (Mary Jo Pitzl, Sept 23, 2025) is paywalled; only its first two paragraphs were readable, so designer 'Nikylla Lue Celine' is UNVERIFIED (no search hit anywhere). KJZZ (March 12, 2013) adds the 25 million figure, which is the association's own claim."
+  },
+  {
+   "id": "national-campaign-supply-1986",
+   "year": 1986,
+   "date": "1986",
+   "place": "Florida",
+   "claim": "National Campaign Supply, a Florida company, says it began selling voting stickers in 1986.",
+   "evidence": "secondary",
+   "status": "verified",
+   "src": "https://time.com/4541760/i-voted-sticker-history-origins/",
+   "quote": "National Campaign Supply claims it started selling them in 1986.",
+   "also": [
+    {
+     "src": "https://en.wikipedia.org/wiki/I_Voted_sticker",
+     "quote": "Florida-based National Campaign Supply claims to have started selling them in 1986."
+    }
+   ],
+   "notes": "Company claim relayed by Time; the company's own site returned an empty page to curl. Keep 'says' or 'claims'."
+  },
+  {
+   "id": "boudreau-1987",
+   "year": 1987,
+   "date": "1987",
+   "place": "Seattle, Washington",
+   "claim": "Janet Boudreau drew the oval \"I Voted\" sticker with a rippling American flag in 1987, soon after she bought the election supply company Intab from her father for a dollar. It became one of Intab's best sellers.",
+   "evidence": "creator interview",
+   "status": "verified",
+   "src": "https://www.aarp.org/events-history/i-voted-sticker-2024.html",
+   "quote": "Boudreau created her “I Voted” design in 1987, soon after becoming president and owner of Intab, an election supply business she purchased from her father for a single dollar.",
+   "also": [
+    {
+     "src": "https://www.aarp.org/events-history/i-voted-sticker-2024.html",
+     "quote": "At the time, the business was based in Seattle"
+    },
+    {
+     "src": "https://www.aarp.org/events-history/i-voted-sticker-2024.html",
+     "quote": "Little did she know, the hand-drawn “I Voted sticker” — one of the first five products Boudreau created — would go on to become a top seller for all 28 years she ran the company."
+    },
+    {
+     "src": "https://time.com/4541760/i-voted-sticker-history-origins/",
+     "quote": "\"I wanted them to see people with an 'I Voted' sticker and think, 'Oh, I should do that,'\" she says."
+    },
+    {
+     "src": "https://apnews.com/article/i-voted-election-stickers-werewolf-5d3ea40f572a18967273dbf5c9119f81",
+     "quote": "She designed the iconic sticker that has been a polling place staple for decades: a simple ellipse featuring a rippling red, white and blue American flag."
+    }
+   ],
+   "notes": "AARP (Grace Dickinson, Oct 23, 2024). PATENT: no record. Google Patents returns nothing for inventor Janet Boudreau (only an unrelated 2005 staple extractor by Wendy Janet Boudreau) or assignee Intab / Independent Tabulation. Never say 'patented'. COPYRIGHT: Boudreau is quoted, 'Others claim to have created that design, but I copyrighted it long ago' (Washington Examiner, 2024), and Hyperallergic says she 'had the design copyrighted'; no Copyright Office record was checked. Say 'Boudreau says she copyrighted it' if used. Place: AARP says Intab was then in Seattle; Intab today lists P.O. Box 186, Morrisville, NC. She sold Intab in 2015 to two employees (AARP). Also her earlier sighting: AARP says she had seen only one earlier sticker, black-and-white with a checkmark and an X."
+  },
+  {
+   "id": "sticker-spread-1988",
+   "year": 1988,
+   "date": "1988",
+   "place": "United States",
+   "claim": "Boudreau remembers first seeing her flag sticker everywhere in 1988. By 2000, she says, Intab was selling more than 100 million \"I Voted\" stickers in each even-numbered election year, to nearly all 50 states.",
+   "evidence": "creator interview",
+   "status": "conflict",
+   "src": "https://www.aarp.org/events-history/i-voted-sticker-2024.html",
+   "quote": "By 2000, Intab was selling more than 100 million “I Voted” stickers in every midterm and general election year, and distributed them to nearly, if not all, 50 states, Boudreau says.",
+   "also": [
+    {
+     "src": "https://www.aarp.org/events-history/i-voted-sticker-2024.html",
+     "quote": "Janet Boudreau remembers back in 1988 when she first started seeing the rippling flag “I Voted” sticker popping up at election time."
+    },
+    {
+     "src": "https://hyperallergic.com/777730/a-brief-history-of-the-i-voted-sticker/",
+     "quote": "Boudreau had the design copyrighted , and by late 1988, the stickers were available in all 50 states."
+    },
+    {
+     "src": "https://www.coloradopolitics.com/2024/11/04/the-history-behind-the-i-voted-sticker-478cdd9f-04a0-56fd-aac9-8af069f9df5a/",
+     "quote": "The company sells more than 30 million stickers per year, according to the San Jose Mercury News ."
+    }
+   ],
+   "notes": "SALES CONFLICT: AARP (her own account) says >100 million 'in every midterm and general election year' by 2000. Midterm and presidential years alternate, so that is per even year, i.e. roughly every two years, NOT 'annually'. The research's 'over 100 million annually by 2000' is wrong. A separate 2014 San Jose Mercury News figure (via the Examiner) says >30 million per year, a different era and owner; don't merge the two. 50 STATES CONFLICT: 'all 50 states by (late) 1988' is in Hyperallergic, citing a WFMY page that blocked every tool; Boudreau herself (AARP) says only 'nearly, if not all, 50 states' by 2000. Use AARP's wording."
+  },
+  {
+   "id": "social-pressure-2006",
+   "year": 2006,
+   "date": "2006-08",
+   "place": "Michigan",
+   "claim": "In a 2006 Michigan primary experiment, a mailer listing whether the recipient and their neighbors had voted raised turnout by 8.1 percentage points over households that got no mail, where turnout was 29.7 percent.",
+   "evidence": "study",
+   "status": "verified",
+   "src": "https://www.povertyactionlab.org/evaluation/social-pressure-and-voter-turnout-united-states",
+   "quote": "Mailing a household’s own voting record resulted in a 4.9 percentage point increase and listing neighbors’ voting records resulted in an 8.1 percentage point increase in turnout among registered voters.",
+   "also": [
+    {
+     "src": "https://www.povertyactionlab.org/evaluation/social-pressure-and-voter-turnout-united-states",
+     "quote": "The other three treatment groups also voted at a higher rate than the comparison group, where turnout was 29.7 percent."
+    },
+    {
+     "src": "https://doi.org/10.1017/S000305540808009X",
+     "quote": "Substantially higher turnout was observed among those who received mailings promising to publicize their turnout to their household or their neighbors."
+    }
+   ],
+   "notes": "Gerber, Green & Larimer, 'Social Pressure and Voter Turnout: Evidence from a Large-Scale Field Experiment', American Political Science Review 102(1):33-48, Feb 2008 (Crossref; abstract read). The paper's full text was not read (Yale ISPS PDF link serves an HTML page); the 8.1-point and 29.7% figures come from J-PAL's summary of the study, a research organization, so the number is near-primary. Study is about mailers, not stickers; use only as context for social pressure."
+  },
+  {
+   "id": "freebies-2008",
+   "year": 2008,
+   "date": "2008-11-04",
+   "place": "United States",
+   "claim": "In 2008 Starbucks and Ben & Jerry's dropped plans to give free coffee and ice cream only to people with an \"I voted\" sticker and offered them to everyone, after a reminder that election laws bar rewarding people for voting. Krispy Kreme kept its sticker offer.",
+   "evidence": "contemporary report",
+   "status": "verified",
+   "src": "https://www.npr.org/transcripts/96557573",
+   "quote": "Election laws say you cannot give people free stuff to encourage them or dissuade them from voting, and a Washington state official made that point yesterday. So some other companies, Starbucks and Ben and Jerry's, modified their offers.",
+   "also": [
+    {
+     "src": "https://www.npr.org/transcripts/96557573",
+     "quote": "And if you're still hungry, then you can go to Krispy Kreme."
+    },
+    {
+     "src": "https://www.refinery29.com/2016/11/128960/free-krispy-kreme-election-2016",
+     "quote": "On Tuesday November 8, participating locations will be doling out free doughnuts to all visitors sporting their 'I Voted' stickers."
+    }
+   ],
+   "notes": "NPR Morning Edition, Nov 4, 2008 (Steve Inskeep). The research's claim that Krispy Kreme also changed its offer in 2008 is NOT supported: NPR says Krispy Kreme was offering doughnuts to sticker wearers and sends listeners there. In 2016 Krispy Kreme again offered free doughnuts to sticker wearers (Refinery29, secondary). In 2020 news reports say Krispy Kreme gave a doughnut to anyone, no sticker needed (not read directly). The 'Washington state official' is not named in the transcript."
+  },
+  {
+   "id": "facebook-2010",
+   "year": 2010,
+   "date": "2010-11-02",
+   "place": "United States",
+   "claim": "On Election Day 2010, Facebook showed 61 million U.S. users a message with an \"I Voted\" button and photos of friends who had clicked it. The researchers estimated it brought out about 60,000 voters directly and 280,000 more through friends, about 340,000 in all, and close friends did most of the spreading.",
+   "evidence": "study",
+   "status": "verified",
+   "src": "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/bond_et_al._2012_-_a_61-million-person_experiment_in_social_influence_political_mobilization.pdf",
+   "quote": "Our results suggest that the Facebook social message increased turnout directly by about 60,000 voters and indirectly through social contagion by another 280,000 voters, for a total of 340,000 additional votes.",
+   "also": [
+    {
+     "src": "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/bond_et_al._2012_-_a_61-million-person_experiment_in_social_influence_political_mobilization.pdf",
+     "quote": "The effect of social transmission on real-world voting was greater than the direct effect of the messages themselves, and nearly all the transmission occurred between ‘close friends’ who were more likely to have a face-to-face relationship."
+    },
+    {
+     "src": "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/bond_et_al._2012_-_a_61-million-person_experiment_in_social_influence_political_mobilization.pdf",
+     "quote": "Finally, we used a group-level process to study the validated voting behaviour of 6.3 million users matched to publicly available voter records (see Supplementary Information)."
+    },
+    {
+     "src": "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/bond_et_al._2012_-_a_61-million-person_experiment_in_social_influence_political_mobilization.pdf",
+     "quote": "Similarly, the difference in voting between those who received the social message and those who received the informational message was 0.39%"
+    }
+   ],
+   "notes": "Bond, Fariss, Jones, Kramer, Marlow, Settle & Fowler, 'A 61-million-person experiment in social influence and political mobilization', Nature 489(7415):295-298, published online Sept 12, 2012, doi:10.1038/nature11421 (confirmed via Crossref). Effect is measured on validated votes in a 6.3 million-user matched sample, then scaled. The share of 'I Voted' clickers who did not actually vote is NOT in the main paper text (probably the Supplementary Information, not read): leave it out. Nature's news piece was not found. The Examiner's 'turnout increased by 0.6%' is a garble; don't use it. The 0.39% is social vs informational message, not informational vs control."
+  },
+  {
+   "id": "anthony-grave-stickers",
+   "year": 2014,
+   "date": "2014",
+   "place": "Rochester, New York",
+   "claim": "Since at least 2014, voters have left \"I Voted\" stickers on Susan B. Anthony's grave in Mount Hope Cemetery. As many as 12,000 people visited on Election Day 2016.",
+   "evidence": "contemporary report",
+   "status": "verified",
+   "src": "https://www.usatoday.com/story/news/politics/elections/2020/10/26/susan-b-anthonys-headstone-gets-plastic-cover-i-voted-stickers/6038655002/",
+   "quote": "On Election Day 2016, as many as 12,000 people made the trek to Anthony’s final resting place to honor the work she did to win women the right to vote, and to mark the first time people could cast a vote for a female major-party presidential candidate, Hillary Clinton.",
+   "also": [
+    {
+     "src": "https://www.smithsonianmag.com/smart-news/why-women-bring-their-i-voted-stickers-susan-b-anthonys-grave-180958847/",
+     "quote": "Rochester women have been coming to Anthony’s grave with flowers and stickers since at least 2014."
+    },
+    {
+     "src": "https://fomh.org/tips-for-visiting-mount-hope-cemetery-on-election-day/",
+     "quote": "Potential for over 10,000 visitors on November 5, 2024 (there will be a line to visit Susan B. Anthony’s grave)"
+    }
+   ],
+   "notes": "Rochester Democrat and Chronicle via USA Today, Marcia Greenwood, Oct 26, 2020 (read in Chrome; curl blocked). Smithsonian Magazine (Erin Blakemore, April 20, 2016, updated Oct 28, 2020) read through the Wayback Machine because smithsonianmag.com returned 403. '12,000' is 'as many as', not a count."
+  },
+  {
+   "id": "chicago-wristbands-2016",
+   "year": 2016,
+   "date": "2016-10",
+   "place": "Chicago, Illinois",
+   "claim": "Chicago had stopped giving out stickers about a decade earlier because voters stuck them on water fountains, windows and doors at polling places, and custodians spent hours scraping them off. For 2016 it ordered a million Tyvek wristbands reading \"I Voted! Did You?\" for about $19,000, or 1.9 cents each.",
+   "evidence": "contemporary report",
+   "status": "verified",
+   "src": "https://electionline.org/electionline-weekly/2016/10-13/",
+   "quote": "The bands cost the city about $19,000 or 1.9 cents each for the million they ordered.",
+   "also": [
+    {
+     "src": "https://electionline.org/electionline-weekly/2016/10-13/",
+     "quote": "They stuck stickers to water fountains, to windows, to doors, to door frames."
+    },
+    {
+     "src": "https://electionline.org/electionline-weekly/2016/10-13/",
+     "quote": "The slogan is also printed—in smaller point size—in Spanish, Chinese and Hindi, the three languages required in Chicago by Section. 203 of the Voting Rights Act."
+    }
+   ],
+   "notes": "electionline Weekly, Oct 13, 2016 (Mindy Moretti), quoting Chicago board spokesman James P. Allen. Before the wristbands Chicago handed out a paper receipt. Chicago's return to stickers: board minutes show the switch began in 2021 (see mail-stickers-chicago-2022 and chicago-2021-sticker-contract). The Chicago Tribune 2024-03-15 story was not read."
+  },
+  {
+   "id": "nyc-2017-subway",
+   "year": 2017,
+   "date": "2017-05-11",
+   "place": "New York City",
+   "claim": "In 2017 New York City's Campaign Finance Board picked a new sticker by public ranked vote. Marie Dagata and Scott Heinz of Bronxville won with colored subway lines crossing the O in I Voted, chosen from more than 700 entries and nearly 10,000 ballots, and it debuted at the September 12 primary.",
+   "evidence": "contemporary report",
+   "status": "verified",
+   "src": "https://www.dnainfo.com/new-york/20170511/downtown-brooklyn/i-voted-sticker-design-winner-contest-voting",
+   "quote": "The winning sticker features multi-colored subway lines crossing over the “O” in “I Voted.” The image, designed by Marie Dagata and Scott Heinz of Bronxville, N.Y., won out over nine other finalists in the “I Voted” sticker contest run by the NYC Campaign Finance Board, the group announced Thursday.",
+   "also": [
+    {
+     "src": "https://wnyc.org/story/heres-winning-i-voted-sticker-design/",
+     "quote": "The CFB received more than 700 submissions in April and wrote on their site that \"nearly 10,000 'ballots' were cast via phones, computers or tablets.\""
+    },
+    {
+     "src": "https://www.nyccfb.info/media/blog/i-voted-sticker-finalists/",
+     "quote": "\"All the people of the boroughs meet together, pass each other, need each other in the subway and the voting booth.\" - Marie Dagata, 59, and Scott Heinz, 56, from Bronxville, NY"
+    }
+   ],
+   "notes": "Research phrase 'subway-line circles' is loose; sources describe subway lines crossing the O. NYC's first contest (2013) was won by 10-year-old Zoe Markman with a Statue of Liberty design (WNYC). Spell Dagata (one outlet has 'Dagarta')."
+  },
+  {
+   "id": "alaska-2018-animals",
+   "year": 2018,
+   "date": "2018",
+   "place": "Alaska",
+   "claim": "For the 2018 elections, Alaska's Division of Elections worked with an Alaskan artist on stickers showing Alaskan animals, including a moose, walrus, raven, crab, eagle, caribou and beaver. The stickers were also produced in Alaska Native languages, and the set won a 2019 EAC award.",
+   "evidence": "official record",
+   "status": "verified",
+   "src": "https://www.eac.gov/news/2020/01/22/five-winners-announced-eacs-first-annual-national-award-creative-and-original-i",
+   "quote": "Inspired, the elections office worked with an Alaskan artist to produce stickers for the 2018 elections with various Alaskan animals. Stickers included the moose, walrus, raven, Dungeness crab, king crab, eagle, caribou, and beaver.",
+   "also": [],
+   "notes": "The release says 'Alaska’s Native Language' (singular) without naming languages; do not list specific languages for 2018. Artist not named on this page. The EAC's individual 2019 Alaska award page now returns 404."
+  },
+  {
+   "id": "washoe-2018-sierra",
+   "year": 2018,
+   "date": "2018",
+   "place": "Washoe County, Nevada",
+   "claim": "Washoe County updated its sticker in 2018 alongside new voting machines. The design shows the Sierra mountains behind the city skyline, and it won a 2019 EAC award.",
+   "evidence": "official record",
+   "status": "verified",
+   "src": "https://www.eac.gov/clearinghouse-awards/2019-winner-creative-and-original-i-voted-stickers-nevada-72126",
+   "quote": "The sticker features the Sierra mountains in the background and the city skyline to celebrate civic pride and the countys picturesque landscape.",
+   "also": [
+    {
+     "src": "https://www.eac.gov/clearinghouse-awards/2019-winner-creative-and-original-i-voted-stickers-nevada-72126",
+     "quote": "In 2018, in conjunction with the introduction of new county-wide election machinery, Washoe County updated their I Voted sticker."
+    }
+   ],
+   "notes": "Research said Washoe won 'in 2019' for a Sierra design: correct for the award (2019 Clearies), but the sticker itself dates to 2018."
+  },
+  {
+   "id": "eac-clearie-sticker-2019",
+   "year": 2019,
+   "date": "2019-10-22",
+   "place": "United States",
+   "claim": "In 2019 the U.S. Election Assistance Commission added a category for original and creative I Voted stickers to its annual Clearie awards, judged on creativity, originality, artistry and local flair. The first five winners, announced in January 2020, were Alaska, Clark County NV, Douglas County NV, Louisiana and Washoe County NV.",
+   "evidence": "official record",
+   "status": "verified",
+   "src": "https://www.eac.gov/blogs/honoring-elections-tradition-eac-2019-i-voted-sticker-clearie-awards",
+   "quote": "This year’s EAC Clearinghouse Awards competition will accept submissions for a special new category: original and creative “I voted” stickers.",
+   "also": [
+    {
+     "src": "https://www.eac.gov/news/2020/01/22/five-winners-announced-eacs-first-annual-national-award-creative-and-original-i",
+     "quote": "Alaska; Clark County, NV; Douglas County, NV; Louisiana; and Washoe County, NV were recognized for their civic-minded and patriotic renditions of the “I Voted” sticker."
+    }
+   ],
+   "notes": "The EAC blog also says the sticker 'Started in the early 1980s'; that is the EAC's own framing, not a sourced origin date. The press release calls stickers 'an inexpensive way' to show pride but gives no price."
+  },
+  {
+   "id": "mail-stickers-sanmateo-2019",
+   "year": 2019,
+   "date": "2019-11-05",
+   "place": "San Mateo County, California",
+   "claim": "San Mateo County found that mail voters were dropping off ballots in person just to get a sticker. In November 2019 it piloted putting an I Voted sticker in every mailed ballot package, repeated it in 2020, and added a shareable digital sticker.",
+   "evidence": "official record",
+   "status": "verified",
+   "src": "https://www.eac.gov/sites/default/files/clearinghouseawards/2020/San_Mateo_County_Registration_and_Elections_Division_Sticker.pdf",
+   "quote": "“I Voted” stickers are so popular that many of our permanent Vote by Mail voters were dropping their ballots off at Vote Centers just to obtain their stickers.",
+   "also": [
+    {
+     "src": "https://www.eac.gov/clearinghouse-awards/2020-winner-creative-and-original-i-voted-stickers-california-72211",
+     "quote": "The Elections Division for San Mateo County, California conducted a pilot program in November 2019 to include an I Voted sticker inside the Official Ballot package sent to all registered voters."
+    }
+   ],
+   "notes": "The PDF is the county's own award submission hosted by the EAC."
+  },
+  {
+   "id": "alaska-2020-lavallee",
+   "year": 2020,
+   "date": "2020",
+   "place": "Alaska",
+   "claim": "Alaska's 2020 stickers used four designs by Alaskan artist Barbara Lavallee showing Alaskan women, in English, Spanish, Tagalog and seven Alaska Native languages. Voters who voted from home could download digital versions.",
+   "evidence": "official record",
+   "status": "verified",
+   "src": "https://www.eac.gov/clearinghouse-awards/2020-honorable-mention-creative-and-original-i-voted-stickers-alaska-72856",
+   "quote": "The stickerswereavailable in English, Spanish, Koyukon, Gwichin, Aleut, Tagalog, Alutiiq, Northern Inupiaq, Nunivak Cupig, and Yup'ik. For those who votedfrom home, digital stickerswereavailable for download on the Divisions website so voters could display that they exercised their right to vote.",
+   "also": [
+    {
+     "src": "https://www.eac.gov/clearinghouse-awards/2020-honorable-mention-creative-and-original-i-voted-stickers-alaska-72856",
+     "quote": "Created by beloved Alaskan artist, Barbara Lavallee, the stickers feature her stylized depiction of the diversity, strength, and power of Alaskanwomen.Thefour uniquestickerdesignswere colorful and well received."
+    }
+   ],
+   "notes": "Ten languages confirmed: English, Spanish, Koyukon, Gwich'in, Aleut, Tagalog, Alutiiq, Northern Inupiaq, Nunivak Cup'ig, Yup'ik. The EAC page drops spaces and apostrophes (quoted as rendered); spell Gwich'in and Cup'ig correctly in page copy. This was an Honorable Mention, not a winner. elections.alaska.gov/Core/ElectionStickers.php returned a human-verification wall (curl 405) and a TLS error to WebFetch; not read."
+  },
+  {
+   "id": "anthony-grave-cover-2020",
+   "year": 2020,
+   "date": "2020-10",
+   "place": "Rochester, New York",
+   "claim": "In October 2020 the Friends of Mount Hope Cemetery put clear plastic sleeves over the headstones of Susan B. Anthony and her sister, after a spring restoration showed sticker glue and the solvents used to remove it had damaged the marble. Visitors now put their stickers on the cover.",
+   "evidence": "contemporary report",
+   "status": "verified",
+   "src": "https://www.usatoday.com/story/news/politics/elections/2020/10/26/susan-b-anthonys-headstone-gets-plastic-cover-i-voted-stickers/6038655002/",
+   "quote": "During a springtime restoration project, it became clear that the fragile marble marker had sustained damage from a combination of adhesive residue and the solvents and methods needed to remove it, Patricia Corcoran, president of nonprofit Friends of Mount Hope Cemetery, wrote in an email.",
+   "also": [
+    {
+     "src": "https://www.usatoday.com/story/news/politics/elections/2020/10/26/susan-b-anthonys-headstone-gets-plastic-cover-i-voted-stickers/6038655002/",
+     "quote": "As a result, the group had clear plastic sleeves made for Anthony’s headstone and that of her sister, Mary S. Anthony, for use during election season, and people can put their \"I Voted\" stickers on the sleeves."
+    },
+    {
+     "src": "https://fomh.org/tips-for-visiting-mount-hope-cemetery-on-election-day/",
+     "quote": "Susan B. Anthony’s grave marker has a clear cover to prevent damage. “I voted” stickers may be placed on the cover."
+    }
+   ],
+   "notes": "Damage-related: yes, per the cemetery group's president. Sleeves were in place by the first day of early voting in 2020 (late October). The cover is seasonal ('for use during election season'), not permanent. FOMH page dated Oct 29, 2024."
+  },
+  {
+   "id": "conley-2020-votive",
+   "year": 2020,
+   "date": "2020",
+   "place": "Rochester, New York",
+   "claim": "A 2020 paper by religious-studies scholar Jordan Conley in the Journal of Feminist Studies in Religion compares the stickers left at Anthony's grave to votive offerings.",
+   "evidence": "study",
+   "status": "verified",
+   "src": "https://muse.jhu.edu/article/764904",
+   "quote": "Voting, Votive, Devotion: “I Voted” Stickers and Ritualization at Susan B. Anthony's Grave",
+   "also": [
+    {
+     "src": "https://doi.org/10.2979/JFEMISTUDRELI.36.2.05",
+     "quote": "Journal of Feminist Studies in Religion, vol. 36, no. 2, pp. 43-62 (2020)"
+    }
+   ],
+   "notes": "Bibliographic details confirmed via Crossref and Wikidata (Q128267120); the article text (Project MUSE, paywalled) was not read, so describe only its title and topic. Wikipedia's summary (Asclepius comparison, 2016 and 2018 elections) is unread secondary: don't repeat it."
+  },
+  {
+   "id": "digital-stickers",
+   "year": 2020,
+   "date": "2020",
+   "place": "United States",
+   "claim": "Voters who vote from home or abroad can often get a digital sticker instead. Alaska made its 2020 stickers downloadable, Oregon offers virtual stickers such as I Voted (The Oregon Way), Cuyahoga County, Ohio posts one for mail voters, and the federal FVAP site makes I Voted From stickers for overseas voters by country.",
+   "evidence": "official record",
+   "status": "verified",
+   "src": "https://www.eac.gov/clearinghouse-awards/2020-honorable-mention-creative-and-original-i-voted-stickers-alaska-72856",
+   "quote": "For those who votedfrom home, digital stickerswereavailable for download on the Divisions website so voters could display that they exercised their right to vote.",
+   "also": [
+    {
+     "src": "https://sos.oregon.gov/Pages/media-resources.aspx",
+     "quote": "I Voted (virtual sticker)"
+    },
+    {
+     "src": "https://www.fvap.gov/IVotedSticker",
+     "quote": "If you're voting in U.S. elections from another country, let your friends and family know with your very own \"I Voted From\" sticker."
+    },
+    {
+     "src": "https://boe.cuyahogacounty.gov/i-voted-sticker",
+     "quote": "Click the I Voted! sticker below, save it, and share it on your social media to show your fellow Ohioans that you voted by mail and made your voice heard!"
+    },
+    {
+     "src": "https://portal.ct.gov/sots/education/suffrage-centennial/digital-i-voted-stickers",
+     "quote": "Commemorative Suffragist Digital \"I Voted\" Stickers Click on the image to read, download or print."
+    }
+   ],
+   "notes": "Oregon quote is from build/state-facts/or.json (verified there), not re-read today. San Mateo also made a digital sticker (see mail-stickers-sanmateo-2019). Colorado runs a digital sticker contest shown in BallotTrax messages (co.json). Connecticut's suffrage-centennial digital stickers were started by Wilton designer Pamela Hovland (Yale faculty)."
+  },
+  {
+   "id": "nashville-runout-2020",
+   "year": 2020,
+   "date": "2020-08-06",
+   "place": "Nashville, Tennessee",
+   "claim": "Several Nashville polling places ran out of a special sticker for the August 6, 2020 election, designed by high school senior Milka Negasi for the women's suffrage centennial. Metro Arts posted a free downloadable version for non-commercial use.",
+   "evidence": "official record",
+   "status": "verified",
+   "src": "https://www.metroartsnashville.gov/vote",
+   "quote": "During the August 6 election, several polling locations ran out of the popular sticker, designed by Hume-Fogg Academic Magnet High School senior Milka Negasi to commemorate the Women's Suffrage Centennial.",
+   "also": [
+    {
+     "src": "https://www.metroartsnashville.gov/vote",
+     "quote": "Until then, we're offering a downloadable version for you to print and enjoy—non-commercially—in celebration of voting rights."
+    },
+    {
+     "src": "https://www.metroartsnashville.gov/vote",
+     "quote": "The contest received 75 entries, which a citizen selection panel narrowed down to 8 finalists. More than 2,300 Nashvillians voted for their favorite sticker."
+    }
+   ],
+   "notes": "Metro Arts Nashville with the Davidson County Election Commission; contest open to Davidson County students in grades 7 to 12."
+  },
+  {
+   "id": "mail-stickers-stlcounty-2021",
+   "year": 2021,
+   "date": "2021",
+   "place": "St. Louis County, Missouri",
+   "claim": "St. Louis County's first sticker contest, run with the county library in 2021, produced three new stickers plus a bonus I Voted at Home sticker drawn by 11-year-old Julia Boren, whose entry included a mailbox. It goes out with absentee ballots and was first used in the April 5, 2022 election.",
+   "evidence": "official record",
+   "status": "verified",
+   "src": "https://extcontent.stlouisco.com/BOE/biennial/2022Biennial.pdf",
+   "quote": "As a bonus, the BOE also got a new \"I Voted at Home\" sticker when the artwork from eleven-year-old Julia Boren included a mailbox in the design in her hand drawn entry. The design is now included with absentee ballots mailed to St. Louis County voters.",
+   "also": [
+    {
+     "src": "https://www.eac.gov/clearinghouse-awards/2021-honorable-mention-creative-and-original-i-voted-stickers-missouri-72946",
+     "quote": "The contest, by design, resulted in three new I Voted stickers for 2022; a bonus sticker for voters voting by absentee ballot; and a new social media campaign featuring the stickers targeted to voters under age 35."
+    }
+   ],
+   "notes": "Source: Board of Elections 2021-2022 Biennial Report, pp. 11-12. Other winners: Mariam Rana (grade 6), Tara Wang (Pattonville High), Kathryn Owens (adult). The report says the county's first sticker debuted in 2006 and off-the-shelf stickers were used from 2016."
+  },
+  {
+   "id": "jerry-hyperallergic-2022",
+   "year": 2022,
+   "date": "2022-11-07",
+   "place": "Washington, DC",
+   "claim": "Smithsonian political history curator Claire Jerry said the museum's oldest Election Day item is a 1920 button and ribbon reading I cast my first vote on November 2nd, 1920. She doubted stickers still drive turnout but noted parents sharing stickers with their children.",
+   "evidence": "secondary",
+   "status": "verified",
+   "src": "https://hyperallergic.com/777730/a-brief-history-of-the-i-voted-sticker/",
+   "quote": "“I don't think it mobilizes people to go vote anymore — I don't know if we could ever measure if it actually had that effect,” she said.",
+   "also": [
+    {
+     "src": "https://hyperallergic.com/777730/a-brief-history-of-the-i-voted-sticker/",
+     "quote": "“The oldest Election day paraphernalia we have is from 1920, during the women’s suffrage movement,” Jerry told Hyperallergic."
+    },
+    {
+     "src": "https://currentpub.com/2022/11/08/a-history-of-the-i-voted-sticker/",
+     "quote": "“The oldest Election day paraphernalia we have is from 1920, during the women’s suffrage movement,” Jerry told Hyperallergic."
+    }
+   ],
+   "notes": "The 'Current, 2022' piece in the research is a reprint of Hyperallergic (Nov 7, 2022); it still says 'told Hyperallergic'. Cite Hyperallergic. Her quote contains an em dash; render without it if paraphrasing. Hyperallergic is an interview with the curator, so it is near-primary for her words but secondary for facts."
+  },
+  {
+   "id": "mail-stickers-chicago-2022",
+   "year": 2022,
+   "date": "2022-02-22",
+   "place": "Chicago",
+   "claim": "Chicago dropped stickers around 2016 for paper wristbands. In 2021 its board switched an existing wristband contract to I Voted stickers, and in 2022 a commissioner put on record that stickers were chosen because they fit into vote-by-mail envelopes more easily.",
+   "evidence": "official record",
+   "status": "verified",
+   "src": "https://chicagoelections.gov/sites/default/files/documents/Board-Meeting-Minutes---February-22%252C-2022.pdf",
+   "quote": "Commissioner Kresse wanted to put on the record that we are not going with wristbands, but with the “I Voted” stickers because the stickers can be inserted into Vote-by-Mail envelopes much easier.",
+   "also": [
+    {
+     "src": "https://app.chicagoelections.gov/documents/general/BoardMeetingMinutes-2021-06-08.pdf",
+     "quote": "Executive Director explained that the contracted product would now be “I Voted” stickers, not wristbands as was the product originally under this contract."
+    },
+    {
+     "src": "https://chicagoelections.gov/sites/default/files/documents/Board-Meeting-Minutes---March-8%252C-2022.pdf",
+     "quote": "Second, we finalized our design for this year’s “I Voted” stickers."
+    }
+   ],
+   "notes": "This dates Chicago's return to stickers to 2021-2022, earlier than the March 2024 Tribune story suggests; the 2024 piece covers a redesign (artist Jane Ignacio per secondary Hoodline, which is AI-assisted and not used). Parent has the 2016 wristband sources."
+  },
+  {
+   "id": "mail-stickers-pima-2022",
+   "year": 2022,
+   "date": "2022-07-13",
+   "place": "Pima County, Arizona",
+   "claim": "Pima County had put English I Voted Early stickers in ballot-by-mail packets before 2021. In 2022 it introduced one trilingual sticker in English, Tohono O'odham and Spanish for early voters by mail or in person.",
+   "evidence": "official record",
+   "status": "verified",
+   "src": "https://recorder.pima.gov/PressRelease/2022/Sticker%20Write-up%20memo%207.13.22.pdf",
+   "quote": "Before 2021, the Pima County Recorder’s Office included only the English “I Voted Early” stickers in ballot-by-mail packets.",
+   "also": [
+    {
+     "src": "https://recorder.pima.gov/PressRelease/2022/Sticker%20Write-up%20memo%207.13.22.pdf",
+     "quote": "The sticker reads “I voted” in English, “A:ñi ‘ant wodalt” in Tohono O’odham and “Yo Voté” in Spanish."
+    }
+   ],
+   "notes": "recorder.pima.gov/IVotedSticker returned 403; the July 13, 2022 memo PDF was read."
+  },
+  {
+   "id": "paper-2022-stickers",
+   "year": 2022,
+   "date": "2022",
+   "place": "United States",
+   "claim": "In 2022 election officials were warned that a tight paper supply could affect everything from ballots to I Voted stickers. An EAC paper supply alert told offices to order stickers at least four months ahead, and Chicago's 2022 printing renewal, which included stickers, cost about 20 percent more because of raw material prices.",
+   "evidence": "official record",
+   "status": "verified",
+   "src": "https://www.eac.gov/sites/default/files/electionofficials/SupplyChain/Paper_Supply_Chain_Risk_Management_EAC_508.pdf",
+   "quote": "Order “I Voted” stickers at least 4 months in advance of the election",
+   "also": [
+    {
+     "src": "https://www.clickondetroit.com/news/politics/2022/07/19/elections-officials-urged-to-prepare-for-shortages-delays/",
+     "quote": "elections officials from across the country meeting under heightened security in swing state Wisconsin were urged to prepare for supply chain issues that could lead to shortages in paper used for everything from ballots to I voted stickers for years to come."
+    },
+    {
+     "src": "https://chicagoelections.gov/sites/default/files/documents/Board-Meeting-Minutes---February-22%252C-2022.pdf",
+     "quote": "Ms. Walls mentioned that there is a twenty-percent increase in the contract amount over the last amount due to increases in the cost of raw materials, for example, paper, the, toner and ink."
+    }
+   ],
+   "notes": "AP story body talks about ballots, inserts and envelopes; stickers appear only in the AP photo caption (quoted). The EAC alert PDF is dated March 30, 2022 (PDF metadata) and is advice, not a report of an actual shortage. No source read reports a jurisdiction that actually ran short of stickers or changed size because of the 2022 paper crunch (Monroe County NY's smaller 2023 stickers were an ordering error). A Stateline story reportedly quoting Jim Suver on stickers was blocked (403) and not read."
+  },
+  {
+   "id": "ulster-dittus-2022",
+   "year": 2022,
+   "date": "2022-11-02",
+   "place": "Ulster County, New York",
+   "claim": "Ulster County Election Commissioner Ashley Dittus opened Rowan's emailed entry first and championed it. For the 2022 midterm the Board of Elections had 100,000 of his stickers for about 90,000 expected voters and told poll workers to give one per person.",
+   "evidence": "contemporary report",
+   "status": "verified",
+   "src": "https://spectrumlocalnews.com/nys/hudson-valley/politics/2022/11/02/ulster-county-viral-i-voted-sticker",
+   "quote": "The Ulster County Board of Elections is expecting 90,000 voters this election season Each voter will go home with one \"I Voted\" sticker designed by Hudson Rowan The BOE has 100,000 stickers waiting for those participating in the midterm elections",
+   "also": [
+    {
+     "src": "https://spectrumlocalnews.com/nys/hudson-valley/politics/2022/11/02/ulster-county-viral-i-voted-sticker",
+     "quote": "“We’re telling the election inspectors ‘one per person!’ We have to make sure we control the sticker distribution so that we don’t run out and that everybody will have their chance to have it,” said Dittus."
+    },
+    {
+     "src": "https://hudsonvalleyone.com/2022/10/20/fourteen-year-old-marbletown-youth-is-awarded-the-pride-of-ulster-county-award",
+     "quote": "Recently, our office was contacted by the U.S. Election Assistance Commission to partner on a collaboration to encourage other election officials across the country to launch similar programs of their own, all thanks to you and your colorful creation.”"
+    }
+   ],
+   "notes": "Dittus (D) and John Quigley (R) are the two Ulster County election commissioners (HV1). Spectrum's 'What You Need To Know' bullets are run together in the page text; quote as bullets if used."
+  },
+  {
+   "id": "ulster-rowan-2022",
+   "year": 2022,
+   "date": "2022",
+   "place": "Ulster County, New York",
+   "claim": "In 2022, 14-year-old Hudson Rowan of Marbletown won Ulster County's second annual I Voted sticker contest, open to 13 to 18 year olds, with a wild-eyed head on spidery legs. His design drew more than 228,200 public votes, 93 percent of the total and more than the county's population, and the Legislature gave him its Pride of Ulster County Award on October 18, 2022.",
+   "evidence": "official record",
+   "status": "verified",
+   "src": "https://legislature.ulstercountyny.gov/news/lawmakers-to-present-hudson-rowan-with-a-pride-of-ulster-county-award-at-legislative-session-on-oct-18/",
+   "quote": "Hudson’s unconventional design has won international acclaim and amassed over 228,200 votes worldwide.",
+   "also": [
+    {
+     "src": "https://legislature.ulstercountyny.gov/news/lawmakers-to-present-hudson-rowan-with-a-pride-of-ulster-county-award-at-legislative-session-on-oct-18/",
+     "quote": "By the close of the contest, votes for Hudson’s design far surpassed the total population of Ulster County and garnered 93% of the total votes cast in the competition."
+    },
+    {
+     "src": "https://www.npr.org/transcripts/1114613201",
+     "quote": "HUDSON: When people go to vote, it's very chaotic. Everything's going on at once."
+    },
+    {
+     "src": "https://www.npr.org/transcripts/1114613201",
+     "quote": "Hudson Rowan, age 14, was doodling away on his iPad when a creature appeared."
+    }
+   ],
+   "notes": "Vote conflict resolved: the county legislature (official, Oct 18 2022) says over 228,200 and 93%. NPR on July 29 2022 said 'nearly 230,000 votes. That is 94% of the total.' Use the county's 228,200 / 93%. The '~94% of ~243,000' version was not found in any source read. Hudson Valley One says polls on 'Tuesday, November 9'; the 2022 general election was November 8, so do not copy that date. Procreate not found in any source read (NPR says iPad only); do not name the app. USA Today lead returned 402 (paywall); not read."
+  },
+  {
+   "id": "unv-ulster-procreate",
+   "year": 2022,
+   "date": "2022",
+   "place": "Ulster County, New York",
+   "claim": "Research claim: Hudson Rowan sketched the design and then drew it in Procreate.",
+   "evidence": "secondary",
+   "status": "unverified",
+   "src": "",
+   "quote": "",
+   "also": [],
+   "notes": "NPR says he was doodling on his iPad; no source read names Procreate (USA Today paywalled, 402). Say 'drew it on an iPad' if anything."
+  },
+  {
+   "id": "denver-confined-2023",
+   "year": 2023,
+   "date": "2023",
+   "place": "Denver, Colorado",
+   "claim": "Denver's Elections Division ran an I Voted sticker design competition in Denver jails through its Confined Voting Program. Two winning designs went into the November 2024 general election mail ballot packets, and the program won the EAC's 2023 sticker award.",
+   "evidence": "official record",
+   "status": "verified",
+   "src": "https://www.eac.gov/clearinghouse-awards/2023-winner-creative-and-original-i-voted-stickers-colorado-71551",
+   "quote": "Through collaborative efforts with city and community partners, the competition highlighted the important role of civic rights and responsibilities and resulted in two unique and vibrant designs appearing in the November 2024 general election mail ballot packets.",
+   "also": [
+    {
+     "src": "https://sentinelcolorado.com/nation-world/creative-i-voted-stickers-branch-out-beyond-the-familiar-flag-design/",
+     "quote": "In Denver, incarcerated individuals designed two stickers, one featuring the Colorado flag with a brick building, sun and purple mountains comprising the “D” in “voted.”"
+    }
+   ],
+   "notes": "Designers are not named on the EAC page. One design: Colorado flag on yellow with 'I voted 2024', the D as a brick building with sun and mountains; the other: sunset over purple mountains with a yellow flower as the O."
+  },
+  {
+   "id": "sf-2023-hollis",
+   "year": 2023,
+   "date": "2023-10-26",
+   "place": "San Francisco",
+   "claim": "San Francisco's first sticker design contest in 2023 drew more than 650 designs. The public picked a design by Hollis C. with 3,174 of 9,331 selections, and it was issued for the 2024 elections, including in vote-by-mail packets.",
+   "evidence": "official record",
+   "status": "verified",
+   "src": "https://sf.gov/reports/october-2023/i-voted-sticker-design-contest-results",
+   "quote": "Finalist Selections Received Hollis C. 3,174 Alice L. 1,247",
+   "also": [
+    {
+     "src": "https://sf.gov/san-francisco-i-voted-sticker-design-contest",
+     "quote": "Between August 21 and September 22, San Franciscans submitted more than 650 designs!"
+    },
+    {
+     "src": "https://windnewspaper.com/article/the-winner-of-i-voted-sticker-design-contest-announced",
+     "quote": "The Department of Elections will start distributing the winning sticker to over 500,000 vote-by-mail ballot packets and hand them out to in-person voters at the City Hall Voting Center as well as the polling places citywide on each election day for the March and November Presidential elections in 2024."
+    }
+   ],
+   "notes": "Official pages give only 'Hollis C.'; the surname Callas was not found in any source read, so print 'Hollis C.'. Year is 2023 (for 2024 use), not 2025. Submission count conflict: sf.gov says more than 650; World Journal says 501. Use sf.gov. Total selections 9,331 (sf.gov also says 'nearly 10,000'). Rules required the Department's circular template whose border carries Chinese, Spanish and Filipino translations plus 'San Francisco Elections'; entrants may not use AI art generators."
+  },
+  {
+   "id": "unv-sf-hollis-callas",
+   "year": 2023,
+   "date": "2023",
+   "place": "San Francisco",
+   "claim": "Research claim: the 2023 San Francisco winner is Hollis Callas.",
+   "evidence": "secondary",
+   "status": "unverified",
+   "src": "",
+   "quote": "",
+   "also": [],
+   "notes": "sf.gov and World Journal give only 'Hollis C.' (World Journal also misspells 'Hollie C'). Print 'Hollis C.'."
+  },
+  {
+   "id": "who-pays",
+   "year": 2023,
+   "date": "2023-11-08",
+   "place": "United States",
+   "claim": "Stickers are bought by local or state election offices, not supplied nationally. New York's state board says counties may buy them if they choose and can afford it, Chicago bid out 2 million stickers for its 2023 elections, and suburban Cook County paid about a third of a cent per sticker in 2015.",
+   "evidence": "official record",
+   "status": "verified",
+   "src": "https://www.whec.com/?p=410339",
+   "quote": "The New York State Board of Elections says: “County boards of elections have the discretion to purchase ‘I voted’ stickers for their voters if they wish (and are able to based on budgetary constraints).”",
+   "also": [
+    {
+     "src": "https://app.chicagoelections.gov/documents/general/IFB%20Printing%202023.pdf",
+     "quote": "SIZE: Each Sticker to be 5” width x 4” height card; sticker die-cut circle - 3” diameter; 2 colors - Pantone 293 & Pantone 485."
+    },
+    {
+     "src": "https://abc7chicago.com/post/new-i-voted-stickers-win-over-suburban-voters/638402/",
+     "quote": "The new multicolored stickers cost $ 0.0035 each, which the Clerk's office estimates may end up being slightly cheaper than the old stickers."
+    }
+   ],
+   "notes": "WHEC quote is the state board's statement relayed by a TV station. Chicago bid has no per-unit price; the Feb 2022 renewal ($105,600, Elk Grove) does not state quantity, so no unit cost can be derived. Marketplace cost figures are in the parent's item 14."
+  },
+  {
+   "id": "alaska-2024-johnson",
+   "year": 2024,
+   "date": "2024",
+   "place": "Alaska",
+   "claim": "For 2024, Alaska's Division of Elections commissioned artist James Johnson for a set themed Five Regions One State, with a raven and an eagle for the two main Tlingit clans. Each sticker says I Voted in Yupik, Inupiaq, Aleut and English. The set won the EAC's 2024 sticker award.",
+   "evidence": "official record",
+   "status": "verified",
+   "src": "https://www.eac.gov/clearinghouse-awards/2024-winner-creative-and-original-i-voted-stickers-alaska-72846",
+   "quote": "The Alaska Division of Elections commissioned artist James Johnson for its sticker design, themed Five Regions One State. His design honors indigenous artistic traditions, featuring a raven and an eagle abstractly arranged within a designated space, representing the two primary clans of the Tlingit people.",
+   "also": [
+    {
+     "src": "https://www.eac.gov/clearinghouse-awards/2024-winner-creative-and-original-i-voted-stickers-alaska-72846",
+     "quote": "Around an abstract figure, each sticker bears the text I Voted in Yupik, Inupiaq, Aleut, and English in a font that matches the stickers border."
+    }
+   ],
+   "notes": "Four languages in 2024 (not ten). Three designs: eagle, seated human figure, raven. Consistent with ak.json (2022 youth contest is a different year)."
+  },
+  {
+   "id": "boudreau-adhesive",
+   "year": 2024,
+   "date": "2024-11-01",
+   "place": "United States",
+   "claim": "Boudreau told the AP that a sticker meant for clothing needs garment-safe adhesive, or it can ruin leather, silk and fine wool. Intab still lists its classic sticker with garment-safe adhesive.",
+   "evidence": "creator interview",
+   "status": "verified",
+   "src": "https://apnews.com/article/i-voted-election-stickers-werewolf-5d3ea40f572a18967273dbf5c9119f81",
+   "quote": "“Garment-safe adhesive, it’s incredibly important,” said Janet Boudreau, one sticker designer. “You can ruin leather, silk, fine wool if you don’t use garment-safe adhesive on any sticker that goes on fabric.”",
+   "also": [
+    {
+     "src": "https://www.intab.net/I-Voted-Stickers-1-3_4-Rolls-No-Dispenser-Box-Included/productinfo/01-1101/",
+     "quote": "Garment safe adhesive"
+    }
+   ],
+   "notes": "AP, Holly Ramer, Nov 1, 2024. apnews.com blocks curl/WebFetch; read in Chrome. The research's AP short URL redirects to this article."
+  },
+  {
+   "id": "mi-contest-2024",
+   "year": 2024,
+   "date": "2024-09-04",
+   "place": "Michigan",
+   "claim": "Michigan held its first statewide I Voted sticker contest in 2024, suggested by the Secretary of State's Collegiate Student Advisory Task Force. More than 480 designs came in, more than 57,700 public votes picked nine winners, three per age category, and clerks could order the winning stickers for the November election.",
+   "evidence": "official record",
+   "status": "verified",
+   "src": "https://www.michigan.gov/sos/resources/news/2024/09/04/secretary-benson-announces-2024-i-voted-sticker-design-contest-winners",
+   "quote": "After the sticker design contest was launched by Secretary Benson in May, more than 480 designs were submitted and over 57,700 public votes were cast for the winners.",
+   "also": [
+    {
+     "src": "https://www.michigan.gov/sos/resources/news/2024/08/01/more-than-57000-votes-cast-in-michigans-first-ever-i-voted-sticker-contest",
+     "quote": "At the close of the public online voting period, more than 57,000 votes were cast to select Michigan’s official 2024 Presidential Election \"I Voted\" sticker designs."
+    },
+    {
+     "src": "https://www.michigan.gov/sos/resources/news/2024/09/04/secretary-benson-announces-2024-i-voted-sticker-design-contest-winners",
+     "quote": "The nine winning designs will be available for clerks to order and give out to voters this fall as the state’s official 2024 Presidential Election stickers."
+    },
+    {
+     "src": "https://www.wkar.org/election-2026/2026-10-16/michigans-quirky-i-voted-stickers-are-a-hit-with-voters",
+     "quote": "“In 2024, the wolf ripping his shirt off was, by far, the most popular sticker,” Hope said."
+    }
+   ],
+   "notes": "Aug 1 release says 'more than 57,000'; Sept 4 release refines to 'over 57,700'. Both consistent. Matches mi.json (CSATF came up with the idea). Statewide print count NOT found: '4 million printed' is unverified; a '1 million' / '1.17 million' figure appeared only in an unreliable aggregator (enjoyer.com) and is not used. The claim that the werewolf was one of nine in each sequence so clerks ran short (Fox 17) was not found in any readable Fox 17 text (only a video page). WKAR (Oct 16, 2026) gives no print totals either; it notes some clerks put more generic stickers in mail ballots."
+  },
+  {
+   "id": "mi-henryford-2024",
+   "year": 2024,
+   "date": "2024",
+   "place": "Dearborn, Michigan",
+   "claim": "The Henry Ford museum collected a sheet of 12 of Michigan's 2024 contest stickers (object 2025.22.1), an 8.5 by 11 inch paper sheet, for its presidential campaigns and elections collection.",
+   "evidence": "artifact",
+   "status": "verified",
+   "src": "https://www.thehenryford.org/collections/explore/artifact/575708",
+   "quote": "Designs included a werewolf, lighthouse, rainbow trout, and the simple statement \"I voted yay.\" The nine winning designs were available to voters for the 2024 November election.",
+   "also": [],
+   "notes": "Record: THF723258, Object ID 2025.22.1, Height 11 in, Width 8.5 in, paper with adhesive, not on exhibit."
+  },
+  {
+   "id": "mi-werewolf-2024",
+   "year": 2024,
+   "date": "2024",
+   "place": "Michigan",
+   "claim": "The best-known 2024 Michigan winner, by 12-year-old Jane Hynous of Grosse Pointe, shows a werewolf tearing open its shirt in front of an American flag, howling upward under the words I Voted.",
+   "evidence": "official record",
+   "status": "verified",
+   "src": "https://www.michigan.gov/sos/resources/news/2024/09/04/secretary-benson-announces-2024-i-voted-sticker-design-contest-winners",
+   "quote": "Elementary / Middle School Winner - Created by Jane Hynous of Grosse Pointe, a student at Brownell Middle School",
+   "also": [
+    {
+     "src": "https://www.bridgemi.com/michigan-government/michiganders-get-nine-new-i-voted-stickers-november-election",
+     "quote": "The sticker has a werewolf tearing its shirt. There's an American flag in the back. On top says \"I Voted\""
+    },
+    {
+     "src": "https://www.michiganpublic.org/politics-government/2026-08-19/michigan-i-voted-sticker-contest-winners-chosen",
+     "quote": "The first contest produced the iconic werewolf ripping its shirt off with the U.S. flag in the background by then-12-year-old Jane Hynous."
+    }
+   ],
+   "notes": "Official image alt text is only 'Werewolf I voted sticker'. Image itself (michigan.gov 2024-winners/Werewolf.jpg) checked: werewolf ripping its shirt open, flag behind, head tilted up with mouth open. No moon appears, so 'howling at the moon' is wrong. Age 12 comes from Michigan Public, not michigan.gov."
+  },
+  {
+   "id": "unv-mi-2024-print-run",
+   "year": 2024,
+   "date": "2024",
+   "place": "Michigan",
+   "claim": "Research claim: about 4 million 2024 stickers were printed across nine designs, and because the werewolf was one of nine in each sequence clerks ran short and asked for more.",
+   "evidence": "secondary",
+   "status": "unverified",
+   "src": "",
+   "quote": "",
+   "also": [],
+   "notes": "No michigan.gov, WKAR, Bridge, Michigan Public or Fox 17 text read gives a print total or describes sequence-based shortages. Fox 17 hits were a video page and a resale story. Do not publish."
+  },
+  {
+   "id": "ga-penley-2026",
+   "year": 2026,
+   "date": "2026-09-29",
+   "place": "Georgia",
+   "claim": "Georgia introduced a statewide sticker for 2026 by Georgia artist Steve Penley, with five million printed for all 159 counties.",
+   "evidence": "official record",
+   "status": "verified",
+   "src": "https://sos.ga.gov/news/georgia-debuts-new-i-voted-sticker-2026-midterm-elections",
+   "quote": "Five million stickers featuring the unique design have been printed and will be distributed to all 159 counties across Georgia.",
+   "also": [],
+   "notes": "Quote and URL as recorded in build/state-facts/ga.json (checked 2026-10-21). Today sos.ga.gov returned 403 to curl and WebFetch, so not re-read; search results show the same URL and the same five million / 159 counties figures. Design descriptions conflict between outlets (Georgia flag vs American flag behind the Capitol); do not describe the flag."
+  },
+  {
+   "id": "mail-stickers-mi-2026",
+   "year": 2026,
+   "date": "2026-10-16",
+   "place": "Michigan",
+   "claim": "Not every mail voter gets the special design: in Michigan some clerks put more generic stickers in mail-in ballots.",
+   "evidence": "contemporary report",
+   "status": "verified",
+   "src": "https://www.wkar.org/election-2026/2026-10-16/michigans-quirky-i-voted-stickers-are-a-hit-with-voters",
+   "quote": "Some clerks included more generic stickers with mail-in ballots.",
+   "also": [],
+   "notes": "Shows that what goes in mail packets is a local clerk decision."
+  },
+  {
+   "id": "mi-contest-2026",
+   "year": 2026,
+   "date": "2026",
+   "place": "Michigan",
+   "claim": "Michigan's second contest drew 2,095 entries by the May 1, 2026 deadline, about four times the 2024 count. Entries had to be original and not AI-generated, each qualifying design was screened for AI and copyrighted material, and final art is scaled to a 2-inch circle. Nine winners include a space bunny, construction barrels and the Edmund Fitzgerald.",
+   "evidence": "official record",
+   "status": "verified",
+   "src": "https://www.michigan.gov/sos/resources/news/2026/05/04/i-voted-sticker-design-contest-grows-to-over-2000-submissions",
+   "quote": "The Michigan Department of State (MDOS) received 2,095 submissions to its “I Voted” sticker design contest by the May 1 deadline, four times the number of entries from the first contest in the 2024 presidential election year.",
+   "also": [
+    {
+     "src": "https://www.michigan.gov/sos/elections/voting/i-voted-sticker-contest",
+     "quote": "Each qualifying design was screened for AI and copyrighted material before public voting."
+    },
+    {
+     "src": "https://www.michigan.gov/sos/elections/voting/i-voted-sticker-contest",
+     "quote": "*Final artwork will be scaled down to a 2” circle"
+    },
+    {
+     "src": "https://www.michigan.gov/sos/resources/news/2026/08/18/secretary-benson-announces-2026-i-voted-sticker-design-contest-winners",
+     "quote": "Thanks to the Collegiate Student Advisory Task Force, who came up with this contest and sorted through thousands of entries, to every person who submitted a design, and to everyone who voted for their favorite sticker – this year, we had over 53,000 votes."
+    }
+   ],
+   "notes": "Winner image alts on michigan.gov: Let me sleep, Frog, Space bunny (K-8); Michigan license plate, Michigan landscape, Edmund Fitzgerald (high school); No yeah, Superman ice cream, Construction barrels (general). Semifinalist count: the May 4 release planned 75 (25 per category); the Aug 18 winners release and contest page say 30 per category were chosen. Use 30. Public votes: over 53,000 (Aug 18 release), fewer than 2024's 57,700. The claim that the Department 'may clean, recolor or recreate' art was NOT found on the contest page or the March 3 release; the full rules/entry form were not available. Unverified. Rules PDF link supplied (EntryForm.pdf) returned 404 with and without query string."
+  },
+  {
+   "id": "unv-mi-2026-recolor",
+   "year": 2026,
+   "date": "2026",
+   "place": "Michigan",
+   "claim": "Research claim: 2026 rules let the Department clean, recolor or recreate winning art.",
+   "evidence": "secondary",
+   "status": "unverified",
+   "src": "",
+   "quote": "",
+   "also": [],
+   "notes": "Contest page confirms only that final art is scaled to a 2-inch circle. The supplied EntryForm.pdf link returns 404. Do not publish the recolor clause."
+  },
+  {
+   "id": "miami-herald-1950-cited",
+   "year": 1950,
+   "date": "1950-10-27",
+   "place": "Miami, Florida",
+   "claim": "Later histories cite a 1950 Miami Herald page as an early mention of \"I Have Voted\" stickers at Miami polls. We could not read the page itself.",
+   "evidence": "secondary",
+   "status": "verified",
+   "src": "https://www.coloradopolitics.com/2024/11/04/the-history-behind-the-i-voted-sticker-478cdd9f-04a0-56fd-aac9-8af069f9df5a/",
+   "quote": "The Miami Herald mentioned the distribution of an “I Have Voted” sticker at Miami polls as early as 1950 .",
+   "also": [
+    {
+     "src": "https://www.newspapers.com/image/618114799/",
+     "quote": "Oct 27, 1950, page 25 - The Miami Herald at Newspapers.com"
+    }
+   ],
+   "notes": "Editor, Oct 22: narrower claim than miami-herald-1950 (what later histories say, not what the Herald says). The page exists (Oct 27, 1950, p. 25, Newspapers.com) but is paywalled."
+  },
+  {
+   "id": "boudreau-sales-2000",
+   "year": 1988,
+   "date": "1988",
+   "place": "United States",
+   "claim": "By 2000, Boudreau says, Intab was selling more than 100 million I Voted stickers in each even-numbered election year, to nearly all 50 states.",
+   "evidence": "creator interview",
+   "status": "verified",
+   "src": "https://www.aarp.org/events-history/i-voted-sticker-2024.html",
+   "quote": "By 2000, Intab was selling more than 100 million “I Voted” stickers in every midterm and general election year, and distributed them to nearly, if not all, 50 states, Boudreau says.",
+   "also": [
+    {
+     "src": "https://www.aarp.org/events-history/i-voted-sticker-2024.html",
+     "quote": "Janet Boudreau remembers back in 1988 when she first started seeing the rippling flag “I Voted” sticker popping up at election time."
+    },
+    {
+     "src": "https://hyperallergic.com/777730/a-brief-history-of-the-i-voted-sticker/",
+     "quote": "Boudreau had the design copyrighted , and by late 1988, the stickers were available in all 50 states."
+    },
+    {
+     "src": "https://www.coloradopolitics.com/2024/11/04/the-history-behind-the-i-voted-sticker-478cdd9f-04a0-56fd-aac9-8af069f9df5a/",
+     "quote": "The company sells more than 30 million stickers per year, according to the San Jose Mercury News ."
+    }
+   ],
+   "notes": "Editor, Oct 22: her own words from the AARP interview. The conflict was with the research summary (\"100 million annually\"), which is wrong; this wording follows her."
+  }
+ ],
+ "numbers": [
+  {
+   "id": "intab-classic-price",
+   "value": 5.49,
+   "unit": "US dollars per roll of 1,000",
+   "label": "Intab classic 'I Voted' sticker roll, sale price (list $6.95)",
+   "src": "https://www.intab.net/I-Voted-Stickers-1-3_4-Rolls-No-Dispenser-Box-Included/productinfo/01-1101/",
+   "quote": "Unit Price: $6.95 Unit = 1 roll of 1,000 stickers only ... $5.49",
+   "status": "verified",
+   "notes": "Checked 2026-10-22. Displayed as list $6.95 with a $5.49 sale tag; about half a cent per sticker. Size 1-3/4 x 7/8 inches. Intab's 'I Voted By Mail' product URL (01-1150) now redirects to the home page."
+  },
+  {
+   "id": "intab-classic-size",
+   "value": "1-3/4 x 7/8",
+   "unit": "inches",
+   "label": "Intab classic sticker size",
+   "src": "https://www.intab.net/I-Voted-Stickers-1-3_4-Rolls-No-Dispenser-Box-Included/productinfo/01-1101/",
+   "quote": "Dimensions: 1-3/4\" x 7/8\"",
+   "status": "verified"
+  },
+  {
+   "id": "intab-sales-2000",
+   "value": 100000000,
+   "unit": "stickers per even-numbered election year",
+   "label": "Intab sales by 2000, per Boudreau",
+   "src": "https://www.aarp.org/events-history/i-voted-sticker-2024.html",
+   "quote": "By 2000, Intab was selling more than 100 million “I Voted” stickers in every midterm and general election year",
+   "status": "conflict",
+   "notes": "Per election year (every two years), not annually. Boudreau's own estimate."
+  },
+  {
+   "id": "phoenix-realtors-25m",
+   "value": 25000000,
+   "unit": "stickers since 1985",
+   "label": "Phoenix Association of Realtors stickers distributed, its own claim (2013)",
+   "src": "https://fronterasdesk.org/content/3310/election-day-sticker-brought-you",
+   "quote": "The Phoenix Association of Realtors says 25 million “I Voted” stickers have been distributed since 1985.",
+   "status": "verified",
+   "notes": "Association's claim, March 2013."
+  },
+  {
+   "id": "fb-2010-users",
+   "value": 61000000,
+   "unit": "Facebook users",
+   "label": "Users in the 2010 Facebook experiment",
+   "src": "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/bond_et_al._2012_-_a_61-million-person_experiment_in_social_influence_political_mobilization.pdf",
+   "quote": "Here we report results from a randomized controlled trial of political mobilization messages delivered to 61 million Facebook users during the 2010 US congressional elections.",
+   "status": "verified"
+  },
+  {
+   "id": "fb-2010-direct",
+   "value": 60000,
+   "unit": "votes",
+   "label": "Estimated added votes, direct effect",
+   "src": "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/bond_et_al._2012_-_a_61-million-person_experiment_in_social_influence_political_mobilization.pdf",
+   "quote": "increased turnout directly by about 60,000 voters",
+   "status": "verified"
+  },
+  {
+   "id": "fb-2010-indirect",
+   "value": 280000,
+   "unit": "votes",
+   "label": "Estimated added votes through friends",
+   "src": "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/bond_et_al._2012_-_a_61-million-person_experiment_in_social_influence_political_mobilization.pdf",
+   "quote": "indirectly through social contagion by another 280,000 voters",
+   "status": "verified"
+  },
+  {
+   "id": "fb-2010-total",
+   "value": 340000,
+   "unit": "votes",
+   "label": "Estimated added votes, total",
+   "src": "https://sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/bond_et_al._2012_-_a_61-million-person_experiment_in_social_influence_political_mobilization.pdf",
+   "quote": "for a total of 340,000 additional votes",
+   "status": "verified"
+  },
+  {
+   "id": "ggl-neighbors-effect",
+   "value": 8.1,
+   "unit": "percentage points",
+   "label": "Turnout gain from the 'Neighbors' mailer vs. no mail",
+   "src": "https://www.povertyactionlab.org/evaluation/social-pressure-and-voter-turnout-united-states",
+   "quote": "listing neighbors’ voting records resulted in an 8.1 percentage point increase in turnout among registered voters",
+   "status": "verified"
+  },
+  {
+   "id": "ggl-control-turnout",
+   "value": 29.7,
+   "unit": "percent",
+   "label": "Turnout in the no-mail comparison group",
+   "src": "https://www.povertyactionlab.org/evaluation/social-pressure-and-voter-turnout-united-states",
+   "quote": "the comparison group, where turnout was 29.7 percent",
+   "status": "verified"
+  },
+  {
+   "id": "anthony-2016-visitors",
+   "value": 12000,
+   "unit": "visitors (as many as)",
+   "label": "Visitors to Anthony's grave, Election Day 2016",
+   "src": "https://www.usatoday.com/story/news/politics/elections/2020/10/26/susan-b-anthonys-headstone-gets-plastic-cover-i-voted-stickers/6038655002/",
+   "quote": "On Election Day 2016, as many as 12,000 people made the trek to Anthony’s final resting place",
+   "status": "verified"
+  },
+  {
+   "id": "chicago-2016-wristbands",
+   "value": 1000000,
+   "unit": "wristbands",
+   "label": "Chicago wristbands ordered for 2016",
+   "src": "https://electionline.org/electionline-weekly/2016/10-13/",
+   "quote": "The bands cost the city about $19,000 or 1.9 cents each for the million they ordered.",
+   "status": "verified"
+  },
+  {
+   "id": "chicago-2016-wristband-cost",
+   "value": 19000,
+   "unit": "US dollars (about)",
+   "label": "Cost of Chicago's 2016 wristbands",
+   "src": "https://electionline.org/electionline-weekly/2016/10-13/",
+   "quote": "The bands cost the city about $19,000 or 1.9 cents each for the million they ordered.",
+   "status": "verified"
+  },
+  {
+   "id": "marketplace-sf-unit-cost",
+   "value": 0.07,
+   "unit": "US dollars per sticker (around)",
+   "label": "San Francisco's last sticker order, 2020",
+   "src": "https://www.marketplace.org/story/2020/11/02/are-i-voted-stickers-worth-the-cost",
+   "quote": "the last set of stickers her department ordered cost around 7 cents apiece",
+   "status": "verified",
+   "notes": "Marketplace, Janet Nguyen, Nov 2, 2020, quoting Eve Peña of the San Francisco Department of Elections."
+  },
+  {
+   "id": "marketplace-bulk-cost",
+   "value": 0.01,
+   "unit": "US dollars per sticker (as little as)",
+   "label": "Generic stickers bought in bulk, 2020",
+   "src": "https://www.marketplace.org/story/2020/11/02/are-i-voted-stickers-worth-the-cost",
+   "quote": "Purchased in bulk, the cost goes down to as little as 1 cent each.",
+   "status": "verified",
+   "notes": "'About 1 cent' is the floor for bulk generic stickers, not a typical price. Same piece: a roll of 500 from LabelValue was just under $14 (almost 3 cents each)."
+  },
+  {
+   "id": "marketplace-santaclara-2012",
+   "value": 90000,
+   "unit": "US dollars saved (more than)",
+   "label": "Santa Clara County savings from leaving stickers out of mail packets, 2012",
+   "src": "https://www.marketplace.org/story/2020/11/02/are-i-voted-stickers-worth-the-cost",
+   "quote": "Santa Clara County in California said it saved more than $90,000 in 2012 by not including them in mail-in packets",
+   "status": "verified"
+  },
+  {
+   "id": "marketplace-sf-mail-2020",
+   "value": 541200,
+   "unit": "mail ballots with stickers (more than)",
+   "label": "San Francisco mail ballots sent with stickers, 2020",
+   "src": "https://www.marketplace.org/story/2020/11/02/are-i-voted-stickers-worth-the-cost",
+   "quote": "For this presidential election, San Francisco has sent out more than 541,200 mail-in ballots with stickers.",
+   "status": "verified"
+  },
+  {
+   "id": "kings-county-2020-stickers",
+   "value": 60000,
+   "unit": "stickers",
+   "label": "Kings County, CA stickers bought for 2020, one per registered voter",
+   "src": "https://calmatters.org/politics/2020/10/small-county-money-election-supplies/",
+   "quote": "For sixty thousand of them—one for each registered voter—Villa paid $2,858.41.",
+   "status": "verified",
+   "notes": "CalMatters/Votebeat, Robin Estrin, Oct 29, 2020; Registrar of Voters Lupe Villa. Article says everyone who votes 'regardless of how they vote' gets one; it does not say stickers go in mail packets, so don't claim that."
+  },
+  {
+   "id": "kings-county-2020-cost",
+   "value": 2858.41,
+   "unit": "US dollars",
+   "label": "Kings County, CA sticker cost, 2020 (about 4.8 cents each)",
+   "src": "https://calmatters.org/politics/2020/10/small-county-money-election-supplies/",
+   "quote": "For sixty thousand of them—one for each registered voter—Villa paid $2,858.41.",
+   "status": "verified",
+   "notes": "$2,858.41 / 60,000 = $0.0476, computed, not stated."
+  },
+  {
+   "id": "nmah-2008-sticker-size",
+   "value": "3/4 x 1 1/4",
+   "unit": "inches",
+   "label": "NMAH 2008 'I Voted' stickers (nmah_1357423, _1357425, _1357428)",
+   "src": "https://americanhistory.si.edu/collections/object/nmah_1357425",
+   "quote": "overall: 3/4 in x 1 1/4 in; 1.905 cm x 3.175 cm",
+   "status": "verified"
+  },
+  {
+   "id": "ulster-rowan-votes",
+   "value": 228200,
+   "unit": "contest votes",
+   "label": "Votes for Hudson Rowan's design (over)",
+   "src": "https://legislature.ulstercountyny.gov/news/lawmakers-to-present-hudson-rowan-with-a-pride-of-ulster-county-award-at-legislative-session-on-oct-18/",
+   "quote": "Hudson’s unconventional design has won international acclaim and amassed over 228,200 votes worldwide.",
+   "status": "verified"
+  },
+  {
+   "id": "ulster-rowan-share",
+   "value": 93,
+   "unit": "percent of contest votes",
+   "label": "Rowan's share of all contest votes",
+   "src": "https://legislature.ulstercountyny.gov/news/lawmakers-to-present-hudson-rowan-with-a-pride-of-ulster-county-award-at-legislative-session-on-oct-18/",
+   "quote": "garnered 93% of the total votes cast in the competition.",
+   "status": "conflict",
+   "notes": "NPR (July 29, 2022) said 94% of nearly 230,000. County legislature's 93% is the later, official figure."
+  },
+  {
+   "id": "ulster-population-2022",
+   "value": 182357,
+   "unit": "residents",
+   "label": "Ulster County population estimate, July 1, 2022 (Vintage 2024)",
+   "src": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2024/counties/totals/co-est2024-alldata.csv",
+   "quote": "050,1,2,36,111,New York,Ulster County,181833,181277,183487,182357,182906,182977",
+   "status": "verified"
+  },
+  {
+   "id": "ulster-voters-dittus",
+   "value": 125000,
+   "unit": "voters",
+   "label": "Ulster County voters, as stated by Commissioner Dittus (July 2022)",
+   "src": "https://www.npr.org/transcripts/1114613201",
+   "quote": "DITTUS: I mean, we only have 125,000 voters. There's 180,000 residents.",
+   "status": "unverified",
+   "notes": "Dittus's own round number on NPR, not an official enrollment count. NY State Board of Elections enrollment pages returned 403; official registered-voter figure not obtained. Do not chart."
+  },
+  {
+   "id": "ulster-stickers-2022",
+   "value": 100000,
+   "unit": "stickers",
+   "label": "Rowan stickers on hand for the 2022 midterm",
+   "src": "https://spectrumlocalnews.com/nys/hudson-valley/politics/2022/11/02/ulster-county-viral-i-voted-sticker",
+   "quote": "The BOE has 100,000 stickers waiting for those participating in the midterm elections",
+   "status": "verified"
+  },
+  {
+   "id": "ulster-expected-voters-2022",
+   "value": 90000,
+   "unit": "voters",
+   "label": "Expected Ulster County voters, 2022 midterm",
+   "src": "https://spectrumlocalnews.com/nys/hudson-valley/politics/2022/11/02/ulster-county-viral-i-voted-sticker",
+   "quote": "The Ulster County Board of Elections is expecting 90,000 voters this election season",
+   "status": "verified"
+  },
+  {
+   "id": "mi-2024-submissions",
+   "value": 480,
+   "unit": "designs (more than)",
+   "label": "Michigan 2024 contest entries",
+   "src": "https://www.michigan.gov/sos/resources/news/2024/09/04/secretary-benson-announces-2024-i-voted-sticker-design-contest-winners",
+   "quote": "more than 480 designs were submitted",
+   "status": "verified"
+  },
+  {
+   "id": "mi-2024-votes",
+   "value": 57700,
+   "unit": "public votes (over)",
+   "label": "Michigan 2024 contest votes",
+   "src": "https://www.michigan.gov/sos/resources/news/2024/09/04/secretary-benson-announces-2024-i-voted-sticker-design-contest-winners",
+   "quote": "over 57,700 public votes were cast for the winners",
+   "status": "verified"
+  },
+  {
+   "id": "mi-2024-printed",
+   "value": null,
+   "unit": "stickers",
+   "label": "Michigan 2024 stickers printed",
+   "src": "",
+   "quote": "",
+   "status": "unverified",
+   "notes": "'4 million printed' not found in any source read; '1 million / 1.17 million' only in an unreliable aggregator. No statewide figure. One student paper cites FOX17 for 60,000 ordered by Ottawa County alone (not read at source)."
+  },
+  {
+   "id": "mi-2026-submissions",
+   "value": 2095,
+   "unit": "entries",
+   "label": "Michigan 2026 contest entries",
+   "src": "https://www.michigan.gov/sos/resources/news/2026/05/04/i-voted-sticker-design-contest-grows-to-over-2000-submissions",
+   "quote": "received 2,095 submissions to its “I Voted” sticker design contest by the May 1 deadline",
+   "status": "verified"
+  },
+  {
+   "id": "sf-2023-entries",
+   "value": 650,
+   "unit": "designs (more than)",
+   "label": "San Francisco 2023 contest entries",
+   "src": "https://sf.gov/san-francisco-i-voted-sticker-design-contest",
+   "quote": "San Franciscans submitted more than 650 designs!",
+   "status": "conflict",
+   "notes": "World Journal says 501 submissions; sf.gov says more than 650. Use sf.gov."
+  },
+  {
+   "id": "sf-2023-winner-votes",
+   "value": 3174,
+   "unit": "selections",
+   "label": "Selections for the winning San Francisco design (of 9,331)",
+   "src": "https://sf.gov/reports/october-2023/i-voted-sticker-design-contest-results",
+   "quote": "Hollis C. 3,174",
+   "status": "verified"
+  },
+  {
+   "id": "nyc-2017-entries",
+   "value": 700,
+   "unit": "submissions (more than)",
+   "label": "NYC 2017 contest entries",
+   "src": "https://wnyc.org/story/heres-winning-i-voted-sticker-design/",
+   "quote": "The CFB received more than 700 submissions in April",
+   "status": "verified"
+  },
+  {
+   "id": "ga-2026-printed",
+   "value": 5000000,
+   "unit": "stickers",
+   "label": "Georgia 2026 Penley stickers printed",
+   "src": "https://sos.ga.gov/news/georgia-debuts-new-i-voted-sticker-2026-midterm-elections",
+   "quote": "Five million stickers featuring the unique design have been printed and will be distributed to all 159 counties across Georgia.",
+   "status": "verified"
+  },
+  {
+   "id": "chicago-2023-sticker-order",
+   "value": 2000000,
+   "unit": "stickers",
+   "label": "Chicago sticker quantity in its bid for the 2023 elections",
+   "src": "https://app.chicagoelections.gov/documents/general/IFB%20Printing%202023.pdf",
+   "quote": "QUANTITY: 2,000,000 Stickers. Separate deliveries for each election: 1,195,000 to be delivered by December 30, 2022; and 805,000 to be delivered in February 2023.",
+   "status": "verified",
+   "notes": "Bid issued Oct 27, 2022 for the 2023 elections (not a 2023 solicitation). Spec: 3-inch die-cut circle on a 5 x 4 inch card, Pantone 293 and 485, bundles of 250."
+  },
+  {
+   "id": "chicago-2022-sticker-contract",
+   "value": 105600,
+   "unit": "US dollars",
+   "label": "Chicago 2022 contract renewal for I Voted stickers (Elk Grove)",
+   "src": "https://chicagoelections.gov/sites/default/files/documents/Board-Meeting-Minutes---February-22%252C-2022.pdf",
+   "quote": "Elk Grove (for the “I-Voted” stickers) in the amount of $105,600.00",
+   "status": "verified",
+   "notes": "Minutes say the overall printing renewal rose about 20 percent because of raw material costs including paper."
+  },
+  {
+   "id": "chicago-2021-sticker-contract",
+   "value": 35428.25,
+   "unit": "US dollars",
+   "label": "Chicago 2021 extension, wristband contract switched to stickers",
+   "src": "https://app.chicagoelections.gov/documents/general/BoardMeetingMinutes-2021-06-08.pdf",
+   "quote": "Before Commissioner Kresse moved to approve the extension with Elk Grove, Inc for wristbands in the amount of $35,428.25, Executive Director explained that the contracted product would now be “I Voted” stickers, not wristbands as was the product originally under this contract.",
+   "status": "verified"
+  },
+  {
+   "id": "cook-suburban-sticker-price-2015",
+   "value": 0.0035,
+   "unit": "US dollars per sticker",
+   "label": "Suburban Cook County sticker price, 2015",
+   "src": "https://abc7chicago.com/post/new-i-voted-stickers-win-over-suburban-voters/638402/",
+   "quote": "The new multicolored stickers cost $ 0.0035 each, which the Clerk's office estimates may end up being slightly cheaper than the old stickers.",
+   "status": "verified",
+   "notes": "2015 report; suburban Cook County (Clerk David Orr), not the City of Chicago."
+  },
+  {
+   "id": "stl-county-2021-contest",
+   "value": 200,
+   "unit": "entries (more than)",
+   "label": "St. Louis County 2021 contest entries (7,000 public votes)",
+   "src": "https://www.eac.gov/clearinghouse-awards/2021-honorable-mention-creative-and-original-i-voted-stickers-missouri-72946",
+   "quote": "Response to the contest exceeded expectations with more than 200 entries and 7,000 public votes.",
+   "status": "verified"
+  },
+  {
+   "id": "mi-2026-votes",
+   "value": 53000,
+   "unit": "public votes (over)",
+   "label": "Michigan 2026 contest votes",
+   "src": "https://www.michigan.gov/sos/resources/news/2026/08/18/secretary-benson-announces-2026-i-voted-sticker-design-contest-winners",
+   "quote": "this year, we had over 53,000 votes.",
+   "status": "verified"
+  }
+ ],
+ "people": [
+  {
+   "id": "janet-boudreau",
+   "name": "Janet Boudreau",
+   "role": "Designer of the 1987 oval flag 'I Voted' sticker; president and owner of Intab until 2015",
+   "src": "https://www.aarp.org/events-history/i-voted-sticker-2024.html",
+   "quote": "Boudreau created her “I Voted” design in 1987, soon after becoming president and owner of Intab"
+  },
+  {
+   "id": "skip-rimsza",
+   "name": "Skip Rimsza",
+   "role": "1985 president of the Phoenix Board of Realtors; later Phoenix mayor",
+   "src": "https://web.archive.org/web/20180209130609/http://archive.azcentral.com/specials/special36/articles/1108ELECT-VOTERVOICES.html",
+   "quote": "Real estate agents such as Rimsza, then president of the Phoenix Board of Realtors (now the Phoenix Association of Realtors) wanted the bond to pass."
+  },
+  {
+   "id": "dennis-burke",
+   "name": "Dennis M. Burke",
+   "role": "1985 operations director, Phoenix Board of Realtors; co-originator of its sticker",
+   "src": "https://web.archive.org/web/20180209130609/http://archive.azcentral.com/specials/special36/articles/1108ELECT-VOTERVOICES.html",
+   "quote": "Rimsza and Dennis M. Burke, the board's operations director then, brainstormed the sticker to spark voter interest."
+  },
+  {
+   "id": "milka-negasi",
+   "name": "Milka Negasi",
+   "role": "Hume-Fogg Academic Magnet High School senior; designed Nashville's 2020 suffrage-centennial sticker",
+   "src": "https://www.metroartsnashville.gov/vote",
+   "quote": "The winning design, by Hume-Fogg Academic Magnet High School senior Milka Negasi, was printed on stickers for distribution at every early voting location and election day precinct in Davidson County for the August and November 2020 elections."
+  },
+  {
+   "id": "jordan-conley",
+   "name": "Jordan Conley",
+   "role": "Religious-studies author of the 2020 paper on stickers at Anthony's grave",
+   "src": "https://doi.org/10.2979/JFEMISTUDRELI.36.2.05",
+   "quote": "Voting, Votive, Devotion: “I Voted” Stickers and Ritualization at Susan B. Anthony's Grave"
+  },
+  {
+   "id": "lupe-villa",
+   "name": "Lupe Villa",
+   "role": "Kings County, California Registrar of Voters (2020)",
+   "src": "https://calmatters.org/politics/2020/10/small-county-money-election-supplies/",
+   "quote": "These price tags, provided to CalMatters by Kings County Registrar of Voters Lupe Villa"
+  },
+  {
+   "id": "patricia-corcoran",
+   "name": "Patricia Corcoran",
+   "role": "President, Friends of Mount Hope Cemetery (2020)",
+   "src": "https://www.usatoday.com/story/news/politics/elections/2020/10/26/susan-b-anthonys-headstone-gets-plastic-cover-i-voted-stickers/6038655002/",
+   "quote": "Patricia Corcoran, president of nonprofit Friends of Mount Hope Cemetery, wrote in an email."
+  },
+  {
+   "id": "barbara-lavallee",
+   "name": "Barbara Lavallee",
+   "role": "Alaskan artist; 2020 Alaska sticker designs",
+   "src": "https://www.eac.gov/clearinghouse-awards/2020-honorable-mention-creative-and-original-i-voted-stickers-alaska-72856",
+   "quote": "Created by beloved Alaskan artist, Barbara Lavallee, the stickers feature her stylized depiction of the diversity, strength, and power of Alaskanwomen."
+  },
+  {
+   "id": "james-johnson",
+   "name": "James Johnson",
+   "role": "Artist commissioned for Alaska's 2024 Five Regions One State stickers",
+   "src": "https://www.eac.gov/clearinghouse-awards/2024-winner-creative-and-original-i-voted-stickers-alaska-72846",
+   "quote": "The Alaska Division of Elections commissioned artist James Johnson for its sticker design, themed Five Regions One State."
+  },
+  {
+   "id": "hudson-rowan",
+   "name": "Hudson Rowan",
+   "role": "Marbletown, NY teen, age 14, designer of Ulster County's 2022 sticker",
+   "src": "https://legislature.ulstercountyny.gov/news/lawmakers-to-present-hudson-rowan-with-a-pride-of-ulster-county-award-at-legislative-session-on-oct-18/",
+   "quote": "I am excited to present the Pride of Ulster Award to 14-year-old Hudson Rowan of Stone Ridge for his quirky and maniacal winning entry in the Ulster County Board of Elections’ 2nd Annual “I Voted” sticker contest."
+  },
+  {
+   "id": "ashley-dittus",
+   "name": "Ashley Dittus",
+   "role": "Ulster County Board of Elections commissioner (Democratic)",
+   "src": "https://www.npr.org/transcripts/1114613201",
+   "quote": "That's Ashley Dittus. She's a commissioner of the Ulster County Board of Elections."
+  },
+  {
+   "id": "jane-hynous",
+   "name": "Jane Hynous",
+   "role": "Grosse Pointe student, age 12, designer of Michigan's 2024 werewolf sticker",
+   "src": "https://www.michigan.gov/sos/resources/news/2024/09/04/secretary-benson-announces-2024-i-voted-sticker-design-contest-winners",
+   "quote": "Jane Hynous of Grosse Pointe, student at Brownell Middle School"
+  },
+  {
+   "id": "marie-dagata-scott-heinz",
+   "name": "Marie Dagata and Scott Heinz",
+   "role": "Bronxville, NY designers of NYC's 2017 subway sticker",
+   "src": "https://www.nyccfb.info/media/blog/i-voted-sticker-finalists/",
+   "quote": "- Marie Dagata, 59, and Scott Heinz, 56, from Bronxville, NY"
+  },
+  {
+   "id": "hollis-c",
+   "name": "Hollis C.",
+   "role": "Winner of San Francisco's 2023 sticker contest (surname not published by the city)",
+   "src": "https://sf.gov/reports/october-2023/i-voted-sticker-design-contest-results",
+   "quote": "Hollis C. 3,174"
+  },
+  {
+   "id": "steve-penley",
+   "name": "Steve Penley",
+   "role": "Georgia artist, 2026 statewide sticker",
+   "src": "https://sos.ga.gov/news/georgia-debuts-new-i-voted-sticker-2026-midterm-elections",
+   "quote": "Five million stickers featuring the unique design have been printed and will be distributed to all 159 counties across Georgia."
+  },
+  {
+   "id": "claire-jerry",
+   "name": "Claire Jerry",
+   "role": "Political history curator, Smithsonian National Museum of American History",
+   "src": "https://hyperallergic.com/777730/a-brief-history-of-the-i-voted-sticker/",
+   "quote": "“The oldest Election day paraphernalia we have is from 1920, during the women’s suffrage movement,” Jerry told Hyperallergic."
+  },
+  {
+   "id": "jose-husi-cazares",
+   "name": "Jose \"Husi\" Cázares",
+   "role": "Tohono O'odham language instructor; translated Pima County's 2022 sticker",
+   "src": "https://recorder.pima.gov/PressRelease/2022/Sticker%20Write-up%20memo%207.13.22.pdf",
+   "quote": "The stickers were designed by graphics designer, Jenni Pagano of Riveted and translated into Tohono O’odham by Jose “Husi” Cázares, a Tohono O’odham language instructor."
+  },
+  {
+   "id": "katie-fish",
+   "name": "Katie Fish",
+   "role": "Temple University Tyler School of Art student; Philadelphia 2020 sticker contest winner",
+   "src": "https://vote.phila.gov/archive/home/item/1787-2020-sticker-contest.html",
+   "quote": "The winner of the online voting was the design by Katie Fish of Temple University’s Tyler School of Art and Architecture, which garnered 18.48% of the votes."
+  },
+  {
+   "id": "khara-garcia",
+   "name": "Khara Garcia",
+   "role": "City Council graphic designer who made the Spanish versions of Philadelphia's 2020 stickers",
+   "src": "https://vote.phila.gov/archive/home/item/1787-2020-sticker-contest.html",
+   "quote": "Khara Garcia, Graphic Designer and Art Director for City Council, translated the designs into Spanish."
+  },
+  {
+   "id": "julia-boren",
+   "name": "Julia Boren",
+   "role": "St. Louis County student, age 11, designer of the I Voted at Home absentee sticker",
+   "src": "https://extcontent.stlouisco.com/BOE/biennial/2022Biennial.pdf",
+   "quote": "the BOE also got a new \"I Voted at Home\" sticker when the artwork from eleven-year-old Julia Boren included a mailbox in the design in her hand drawn entry."
+  }
+ ],
+ "law": [
+  {
+   "id": "law-18usc597",
+   "year": 1948,
+   "date": "1948-06-25",
+   "place": "United States",
+   "claim": "Federal law makes it a crime to make or offer an expenditure to anyone to vote or not vote, or to vote for or against a candidate.",
+   "evidence": "statute",
+   "status": "verified",
+   "src": "https://www.law.cornell.edu/uscode/text/18/597",
+   "quote": "Whoever makes or offers to make an expenditure to any person, either to vote or withhold his vote, or to vote for or against any candidate; and Whoever solicits, accepts, or receives any such expenditure in consideration of his vote or the withholding of his vote—",
+   "also": [
+    {
+     "src": "https://www.law.cornell.edu/uscode/text/18/597",
+     "quote": "Shall be fined under this title or imprisoned not more than one year, or both; and if the violation was willful, shall be fined under this title or imprisoned not more than two years, or both."
+    },
+    {
+     "src": "https://www.law.cornell.edu/uscode/text/52/10307",
+     "quote": "or pays or offers to pay or accepts payment either for registration to vote or for voting shall be fined not more than $10,000 or imprisoned not more than five years, or both"
+    }
+   ],
+   "notes": "Text from Cornell LII (uscode.house.gov returned a stub page to curl). 52 U.S.C. 10307(c) applies only to elections with a federal candidate on the ballot. Neither statute mentions stickers; the link to freebies is the DOJ and state guidance below."
+  },
+  {
+   "id": "law-doj-fact-sheet",
+   "year": 2022,
+   "date": "2022-10-31",
+   "place": "United States",
+   "claim": "The Justice Department lists paying voters to vote in elections with a federal candidate on the ballot as a federal election crime, citing both laws above.",
+   "evidence": "official record",
+   "status": "verified",
+   "src": "https://www.justice.gov/d9/pages/attachments/2022/10/31/election_fraud_fact_sheet.wdla_.pdf",
+   "quote": "Paying voters to register to vote, or to vote in elections where a federal candidate’s name is on the ballot (52 U.S.C. § 10307(c), 18 U.S.C. § 597)",
+   "also": [
+    {
+     "src": "https://www.justice.gov/usao-nh/pr/federal-election-fraud-fact-sheet",
+     "quote": "Paying voters to register to vote, or to vote in elections where a federal candidate's name is on the ballot (52 U.S.C. § 10307(c), 18 U.S.C. § 597)"
+    }
+   ],
+   "notes": "Read in the U.S. Attorney's Office, Western District of Louisiana fact sheet PDF (justice.gov, Oct 31, 2022). The New Hampshire office's version (requested in the research) returned no readable text to curl or WebFetch; its matching wording comes from a search extract only. DOJ's manual 'Federal Prosecution of Election Offenses' (8th ed., Dec 2017) was not read. Neither source mentions stickers."
+  },
+  {
+   "id": "law-wisconsin-2020",
+   "year": 2020,
+   "date": "2020-10-29",
+   "place": "Wisconsin",
+   "claim": "Wisconsin's Elections Commission says businesses that give food or discounts to people with an \"I Voted\" sticker are breaking the state's election bribery law, which bars offering anything worth more than $1 to get someone to vote. Giveaways near polls must be open to everyone, voted or not.",
+   "evidence": "official record",
+   "status": "verified",
+   "src": "https://elections.wi.gov/sites/default/files/legacy/2020-10/NR%2520Elections%2520-%2520Rules%2520about%2520Voting%2520Incentives%252010-29-20.pdf",
+   "quote": "“Every election, well-meaning businesses or groups offer discounts or free food and drinks to people who come into their establishment with an I Voted sticker,” said Meagan Wolfe, Wisconsin’s chief election official. “However, that is against the law.”",
+   "also": [
+    {
+     "src": "https://elections.wi.gov/sites/default/files/legacy/2020-10/NR%2520Elections%2520-%2520Rules%2520about%2520Voting%2520Incentives%252010-29-20.pdf",
+     "quote": "According to state law against election bribery, it is illegal to offer someone an item worth more than $1.00 to induce a person to vote, not vote, vote for a particular candidate, not vote for a particular candidate, or vote a specific way in a referendum."
+    },
+    {
+     "src": "https://elections.wi.gov/sites/default/files/legacy/2020-10/NR%2520Elections%2520-%2520Rules%2520about%2520Voting%2520Incentives%252010-29-20.pdf",
+     "quote": "Any items being given away must be available to everyone whether they have voted or not."
+    }
+   ],
+   "notes": "Commission news release, Oct 29, 2020. No newer version found; check elections.wi.gov before publishing if describing current policy."
+  },
+  {
+   "id": "law-illinois-17-8",
+   "year": 2015,
+   "date": "2015-06-01",
+   "place": "Illinois",
+   "claim": "Illinois law says that if an election authority gives polling places stickers to hand to voters, no one who has voted can be denied one. The rule took effect June 1, 2015, and at least one election office stopped giving stickers rather than risk running out.",
+   "evidence": "statute",
+   "status": "verified",
+   "src": "https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=001000050K17-8",
+   "quote": "If an election authority provides each polling place with stickers or emblems to be given to voters indicating that the person has voted, no person who has voted shall be denied such sticker or emblem.",
+   "also": [
+    {
+     "src": "https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=001000050K17-8",
+     "quote": "(Source: P.A. 98-1171, eff. 6-1-15.)"
+    },
+    {
+     "src": "https://www.wglt.org/politics-and-government/2016-03-15/who-knew-i-voted-stickers-matter",
+     "quote": "So we chose not to give 'I Voted' stickers thinking that if we would accidentally run out, we would actually be breaking that new law,\" she said."
+    }
+   ],
+   "notes": "10 ILCS 5/17-8, last sentence; added by Public Act 98-1171, effective June 1, 2015. Read in the full Election Code on ilga.gov in Chrome (ilga.gov blocks curl); 17-8 is the only section of the Code that mentions stickers. WGLT (March 15, 2016) quotes Cathie Haab, Bloomington Election Commission. A 2025 bill (SB1576) to create an 'I Voted' Sticker Commission was re-referred to Assignments and is not law."
+  }
+ ],
+ "designs": [
+  {
+   "id": "design-intab-1987",
+   "year": 1987,
+   "place": "United States (sold nationally)",
+   "designer": "Janet Boudreau",
+   "designer_age": null,
+   "how": "commercial",
+   "motifs": [
+    "rippling American flag",
+    "white oval"
+   ],
+   "languages": [
+    "English",
+    "Spanish"
+   ],
+   "distribution": "polling place",
+   "selected_vs_distributed": "Stock product sold to election offices; rolls of 1,000",
+   "image_page": "https://www.intab.net/I-Voted-Stickers-1-3_4-Rolls-No-Dispenser-Box-Included/productinfo/01-1101/",
+   "rights": "not stated",
+   "src": "https://www.aarp.org/events-history/i-voted-sticker-2024.html",
+   "quote": "That red, white and blue sticker — in both English and Spanish — is now one of the most recognized symbols of voting.",
+   "notes": "Intab product page shows the current classic sticker; Boudreau says she copyrighted the design (Washington Examiner)."
+  },
+  {
+   "id": "design-phoenix-1985",
+   "year": 1985,
+   "place": "Phoenix and Maricopa County, Arizona",
+   "designer": "Phoenix Board of Realtors (individual designer unverified)",
+   "designer_age": null,
+   "how": "commercial",
+   "motifs": [],
+   "languages": [
+    "English"
+   ],
+   "distribution": "polling place",
+   "selected_vs_distributed": "Printed by the Realtors association, which still printed them in 2006",
+   "image_page": "",
+   "rights": "not stated",
+   "src": "https://web.archive.org/web/20180209130609/http://archive.azcentral.com/specials/special36/articles/1108ELECT-VOTERVOICES.html",
+   "quote": "The association still prints the stickers.",
+   "notes": "Sticker wording was 'I voted today' (Arizona Republic 2006). Designer 'Nikylla Lue Celine' unverified."
+  },
+  {
+   "id": "design-nashville-2020",
+   "year": 2020,
+   "place": "Nashville (Davidson County), Tennessee",
+   "designer": "Milka Negasi",
+   "designer_age": null,
+   "how": "contest",
+   "motifs": [
+    "women's suffrage centennial"
+   ],
+   "languages": [
+    "English"
+   ],
+   "distribution": "polling place; digital download",
+   "selected_vs_distributed": "One winner from 75 entries and 8 finalists; printed for every early voting site and Election Day precinct, August and November 2020",
+   "image_page": "https://www.metroartsnashville.gov/vote",
+   "rights": "Downloadable version offered to print 'non-commercially'",
+   "src": "https://www.metroartsnashville.gov/vote",
+   "quote": "More than 2,300 Nashvillians voted for their favorite sticker.",
+   "notes": "Age not stated; she was a high school senior."
+  },
+  {
+   "id": "design-chicago-wristband-2016",
+   "year": 2016,
+   "place": "Chicago, Illinois",
+   "designer": "Chicago Board of Election Commissioners (staff)",
+   "designer_age": null,
+   "how": "staff",
+   "motifs": [
+    "Board logo",
+    "Tyvek wristband"
+   ],
+   "languages": [
+    "English",
+    "Spanish",
+    "Chinese",
+    "Hindi"
+   ],
+   "distribution": "polling place",
+   "selected_vs_distributed": "1 million ordered for 2016",
+   "image_page": "https://electionline.org/electionline-weekly/2016/10-13/",
+   "rights": "not stated",
+   "src": "https://electionline.org/electionline-weekly/2016/10-13/",
+   "quote": "In addition to “I Voted! Did you?”, the wrist bands also feature the Board’s logo.",
+   "notes": "A wristband, not a sticker; staff design is inferred, not stated."
+  },
+  {
+   "id": "design-alaska-2020",
+   "year": 2020,
+   "place": "Alaska",
+   "designer": "Barbara Lavallee",
+   "designer_age": null,
+   "how": "commissioned",
+   "motifs": [
+    "Alaskan women"
+   ],
+   "languages": [
+    "English",
+    "Spanish",
+    "Koyukon",
+    "Gwich'in",
+    "Aleut",
+    "Tagalog",
+    "Alutiiq",
+    "Northern Inupiaq",
+    "Nunivak Cup'ig",
+    "Yup'ik"
+   ],
+   "distribution": "polling place; digital download for home voters",
+   "selected_vs_distributed": "Four designs, available in all voting locations",
+   "image_page": "https://www.eac.gov/clearinghouse-awards/2020-honorable-mention-creative-and-original-i-voted-stickers-alaska-72856",
+   "rights": "not stated",
+   "src": "https://www.eac.gov/clearinghouse-awards/2020-honorable-mention-creative-and-original-i-voted-stickers-alaska-72856",
+   "quote": "They were available in all voting locations across the state."
+  },
+  {
+   "id": "design-alaska-2024",
+   "year": 2024,
+   "place": "Alaska",
+   "designer": "James Johnson",
+   "designer_age": null,
+   "how": "commissioned",
+   "motifs": [
+    "raven",
+    "eagle",
+    "human figure",
+    "Tlingit clan imagery"
+   ],
+   "languages": [
+    "Yupik",
+    "Inupiaq",
+    "Aleut",
+    "English"
+   ],
+   "distribution": "polling place",
+   "selected_vs_distributed": "Three designs",
+   "image_page": "https://www.eac.gov/sites/default/files/2025-04/Cleaires24_IVotedSticker_AK_State_5RegionsFlyer_508.pdf",
+   "rights": "not stated",
+   "src": "https://www.eac.gov/clearinghouse-awards/2024-winner-creative-and-original-i-voted-stickers-alaska-72846",
+   "quote": "Around an abstract figure, each sticker bears the text I Voted in Yupik, Inupiaq, Aleut, and English in a font that matches the stickers border."
+  },
+  {
+   "id": "design-washoe-2018",
+   "year": 2018,
+   "place": "Washoe County, Nevada",
+   "designer": "not stated",
+   "designer_age": null,
+   "how": "staff",
+   "motifs": [
+    "Sierra mountains",
+    "city skyline"
+   ],
+   "languages": [
+    "English"
+   ],
+   "distribution": "polling place",
+   "selected_vs_distributed": "not stated",
+   "image_page": "https://www.eac.gov/clearinghouse-awards/2019-winner-creative-and-original-i-voted-stickers-nevada-72126",
+   "rights": "not stated",
+   "src": "https://www.eac.gov/clearinghouse-awards/2019-winner-creative-and-original-i-voted-stickers-nevada-72126",
+   "quote": "The sticker features the Sierra mountains in the background and the city skyline to celebrate civic pride and the countys picturesque landscape."
+  },
+  {
+   "id": "design-ulster-2022",
+   "year": 2022,
+   "place": "Ulster County, New York",
+   "designer": "Hudson Rowan",
+   "designer_age": 14,
+   "how": "contest",
+   "motifs": [
+    "wild-eyed head",
+    "spider legs",
+    "psychedelic colors"
+   ],
+   "languages": [
+    "English"
+   ],
+   "distribution": "polling place",
+   "selected_vs_distributed": "100,000 printed for about 90,000 expected voters, one per voter",
+   "image_page": "https://legislature.ulstercountyny.gov/news/lawmakers-to-present-hudson-rowan-with-a-pride-of-ulster-county-award-at-legislative-session-on-oct-18/",
+   "rights": "not stated",
+   "src": "https://spectrumlocalnews.com/nys/hudson-valley/politics/2022/11/02/ulster-county-viral-i-voted-sticker",
+   "quote": "Each voter will go home with one \"I Voted\" sticker designed by Hudson Rowan"
+  },
+  {
+   "id": "design-mi-2024-werewolf",
+   "year": 2024,
+   "place": "Michigan",
+   "designer": "Jane Hynous",
+   "designer_age": 12,
+   "how": "contest",
+   "motifs": [
+    "werewolf tearing its shirt",
+    "American flag"
+   ],
+   "languages": [
+    "English"
+   ],
+   "distribution": "polling place (clerks order)",
+   "selected_vs_distributed": "One of nine winners; clerks chose whether to order; statewide quantity not published",
+   "image_page": "https://www.michigan.gov/sos/resources/news/2024/09/04/secretary-benson-announces-2024-i-voted-sticker-design-contest-winners",
+   "rights": "not stated",
+   "src": "https://www.michigan.gov/sos/resources/news/2024/09/04/secretary-benson-announces-2024-i-voted-sticker-design-contest-winners",
+   "quote": "The nine winning designs will be available for clerks to order and give out to voters this fall as the state’s official 2024 Presidential Election stickers."
+  },
+  {
+   "id": "design-mi-2026",
+   "year": 2026,
+   "place": "Michigan",
+   "designer": "Nine winners incl. Naia Montgomery (space bunny), Keirsten Sturm-Richmond (Edmund Fitzgerald), Hilarie Williams (construction barrels)",
+   "designer_age": null,
+   "how": "contest",
+   "motifs": [
+    "space bunny",
+    "Edmund Fitzgerald",
+    "construction barrels",
+    "frog",
+    "Michigan license plate",
+    "Superman ice cream"
+   ],
+   "languages": [
+    "English"
+   ],
+   "distribution": "polling place (clerks order)",
+   "selected_vs_distributed": "2,095 entries, 30 semifinalists per category, over 53,000 public votes, nine winners",
+   "image_page": "https://www.michigan.gov/sos/elections/voting/i-voted-sticker-contest",
+   "rights": "not stated on contest page",
+   "src": "https://www.michigan.gov/sos/elections/voting/i-voted-sticker-contest",
+   "quote": "Winning stickers will be available for election clerks to order for the November election."
+  },
+  {
+   "id": "design-nyc-2017",
+   "year": 2017,
+   "place": "New York City",
+   "designer": "Marie Dagata and Scott Heinz",
+   "designer_age": null,
+   "how": "contest",
+   "motifs": [
+    "subway lines",
+    "borough names"
+   ],
+   "languages": [
+    "English"
+   ],
+   "distribution": "polling place",
+   "selected_vs_distributed": "10 finalists from more than 700 entries",
+   "image_page": "https://www.nyccfb.info/media/blog/i-voted-sticker-finalists/",
+   "rights": "not stated",
+   "src": "https://www.dnainfo.com/new-york/20170511/downtown-brooklyn/i-voted-sticker-design-winner-contest-voting",
+   "quote": "The winning sticker features multi-colored subway lines crossing over the “O” in “I Voted.”"
+  },
+  {
+   "id": "design-sf-2023",
+   "year": 2023,
+   "place": "San Francisco",
+   "designer": "Hollis C.",
+   "designer_age": null,
+   "how": "contest",
+   "motifs": [
+    "San Francisco landmarks"
+   ],
+   "languages": [
+    "English",
+    "Chinese",
+    "Spanish",
+    "Filipino"
+   ],
+   "distribution": "polling place and vote-by-mail packets",
+   "selected_vs_distributed": "9 finalists from 650+ entries",
+   "image_page": "https://sf.gov/reports/october-2023/i-voted-sticker-design-contest-results",
+   "rights": "Entrants grant the Department an exclusive, irrevocable, perpetual, worldwide license",
+   "src": "https://sf.gov/2023-i-voted-sticker-contest-faq",
+   "quote": "Yes, you may add as many “I Voted!” translations as you’d like, as long as you maintain the Chinese, Spanish, and Filipino translations as well as “San Francisco Elections” in the border of the required Template."
+  },
+  {
+   "id": "design-denver-confined-2024",
+   "year": 2024,
+   "place": "Denver, Colorado",
+   "designer": "Incarcerated participants in the Confined Voting Program (not named)",
+   "designer_age": null,
+   "how": "contest",
+   "motifs": [
+    "Colorado flag",
+    "mountains",
+    "sun",
+    "flower"
+   ],
+   "languages": [
+    "English"
+   ],
+   "distribution": "mail",
+   "selected_vs_distributed": "Two winning designs in November 2024 mail ballot packets",
+   "image_page": "https://www.eac.gov/clearinghouse-awards/2023-winner-creative-and-original-i-voted-stickers-colorado-71551",
+   "rights": "not stated",
+   "src": "https://www.eac.gov/clearinghouse-awards/2023-winner-creative-and-original-i-voted-stickers-colorado-71551",
+   "quote": "resulted in two unique and vibrant designs appearing in the November 2024 general election mail ballot packets."
+  },
+  {
+   "id": "design-pima-2022",
+   "year": 2022,
+   "place": "Pima County, Arizona",
+   "designer": "Jenni Pagano (design); Jose \"Husi\" Cázares (translation)",
+   "designer_age": null,
+   "how": "commissioned",
+   "motifs": [
+    "trilingual text"
+   ],
+   "languages": [
+    "English",
+    "Tohono O'odham",
+    "Spanish"
+   ],
+   "distribution": "mail and early in-person voting",
+   "selected_vs_distributed": "Early voters only; Election Day voters got the standard oval sticker",
+   "image_page": "https://recorder.pima.gov/PressRelease/2022/Sticker%20Write-up%20memo%207.13.22.pdf",
+   "rights": "not stated",
+   "src": "https://recorder.pima.gov/PressRelease/2022/Sticker%20Write-up%20memo%207.13.22.pdf",
+   "quote": "These stickers are exclusively available for Early Voters who cast an Early Ballot via mail or in person at any of the Recorder’s 15 Early Voting Sites."
+  },
+  {
+   "id": "design-philadelphia-2020",
+   "year": 2020,
+   "place": "Philadelphia",
+   "designer": "Katie Fish; Spanish versions by Khara Garcia",
+   "designer_age": null,
+   "how": "contest",
+   "motifs": [
+    "not described on source page"
+   ],
+   "languages": [
+    "English",
+    "Spanish"
+   ],
+   "distribution": "polling place",
+   "selected_vs_distributed": "Online vote winner with 18.48%",
+   "image_page": "https://vote.phila.gov/archive/home/item/1787-2020-sticker-contest.html",
+   "rights": "not stated",
+   "src": "https://vote.phila.gov/archive/home/item/1787-2020-sticker-contest.html",
+   "quote": "Khara Garcia, Graphic Designer and Art Director for City Council, translated the designs into Spanish."
+  },
+  {
+   "id": "design-stlcounty-athome-2022",
+   "year": 2022,
+   "place": "St. Louis County, Missouri",
+   "designer": "Julia Boren",
+   "designer_age": 11,
+   "how": "contest",
+   "motifs": [
+    "mailbox"
+   ],
+   "languages": [
+    "English"
+   ],
+   "distribution": "mail (absentee ballots)",
+   "selected_vs_distributed": "Bonus design from the 2021 contest; printed December 2021, first used April 5, 2022",
+   "image_page": "https://extcontent.stlouisco.com/BOE/biennial/2022Biennial.pdf",
+   "rights": "not stated",
+   "src": "https://extcontent.stlouisco.com/BOE/biennial/2022Biennial.pdf",
+   "quote": "The newly minted stickers were printed in December 2021 and were first distributed in St. Louis County's April 5, 2022 election."
+  }
+ ]
+}

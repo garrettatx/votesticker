@@ -6,6 +6,7 @@
  *   php build/render.php texas      one state, by its folder name
  *   php build/render.php 404        the not-found page
  *   php build/render.php about      the About page (also: es/about)
+ *   php build/render.php history    the sticker history page (also: es/history)
  *   php build/render.php es/texas   the Spanish page (also: es, es/404)
  *
  * Same code path as the live PHP pages: index.php only sees VOTE_SLUG, as a state folder's stub sets it.
@@ -17,8 +18,8 @@ if ( 'es' === $arg || 0 === strpos( $arg, 'es/' ) ) {
 }
 if ( '404' === $arg ) {
 	define( 'VOTE_404', true );
-} elseif ( 'about' === $arg ) {
-	define( 'VOTE_PAGE', 'about' );
+} elseif ( 'about' === $arg || 'history' === $arg ) {
+	define( 'VOTE_PAGE', $arg );
 } elseif ( '' !== $arg ) {
 	define( 'VOTE_SLUG', $arg );
 }

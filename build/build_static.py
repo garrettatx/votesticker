@@ -67,6 +67,11 @@ def main():
         pages['es/' + s + '/'] = render('es/' + s)
     pages['about/'] = render('about')
     pages['es/about/'] = render('es/about')
+    hist = SITE / 'history-data.php'
+    if not hist.exists() or '"draft":true' in hist.read_text():
+        raise SystemExit('site/history-data.php is missing or a draft: run build/history_text.py once the facts are checked')
+    pages['history/'] = render('history')
+    pages['es/history/'] = render('es/history')
     for path, html in pages.items():
         d = DIST / path
         d.mkdir(parents=True, exist_ok=True)

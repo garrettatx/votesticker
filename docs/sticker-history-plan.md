@@ -21,7 +21,7 @@ earns its place another way:
 
 ## The Page
 
-- **URL:** `/i-voted-sticker-history/` and `/es/i-voted-sticker-history/`. Evergreen, no year, the
+- **URL:** `/history/` and `/es/history/`. Evergreen, no year, the
   same slug pattern as `/about/` and `/es/about/`.
 - **Title and H1:** carry "I Voted Sticker" and "History" (search wins in the title and H1, per the
   brand brief). Working H1: "Where the I Voted Sticker Came From".
@@ -93,3 +93,43 @@ The FAQ answer follows the same rule as the state FAQs: the visible answer and t
 - Is a facts file for the history page worth it, or is a source list at the bottom enough? A facts
   file keeps season-to-season updates clean; a list is faster.
 - Does the history page get a hero sticker of its own (a vintage-style design from the maker)?
+
+## Decisions, October 22 (After Garrett's Second Round of Research)
+
+- **URL:** `/history/` and `/es/history/`. The domain already says "vote sticker", so
+  `votesticker.org/history/` reads as "vote sticker history"; shorter to say and share, and no year.
+- **Closing section: From Your Shirt to Your Profile Picture.** Three scenes, a sticker on a shirt, a
+  community-made design, a Vote Sticker in a profile circle, shown as traditions that overlap. What Vote
+  Sticker adds: something to share before you vote, with your state's dates, and something to switch
+  to after. Ends with "Make your state's sticker".
+- **Home page "Why This Exists":** the same shirt-to-profile picture, small, with a plain text link
+  ("How the I voted sticker became a tradition"). No button, banner or carousel.
+- **State pages:** the link text fits the state's story and lands on the matching section of the
+  history page (Michigan to the contests section, Minnesota to the ways states mark a vote, Hawaii to
+  shirt-to-profile, Georgia to the makers). One link, after the state's paragraph.
+- **Collection cards:** each design or artifact as a card with date, place, maker and source, and a
+  "See the evidence" disclosure with the supporting sentence.
+- **Fewer charts, more people and objects.** Keep the timeline, the state map and two small charts
+  (the Facebook study, Ulster County); the rest is people and designs.
+- **Logistics section** (from v3): who pays, stickers in mail-ballot packets, running out.
+- **Later (backlog):** a "Classic print" maker layout inspired by the oval badge style, labeled as
+  inspired by, never as a historical design; history share cards with one sourced fact each, kept
+  apart from the voting-reminder post text.
+
+## History Writing Rules (October 22, From Garrett's Review)
+
+- Say "the earliest example we found", never "the first", unless the proof is unusually strong.
+  "One of the earliest organized campaigns we could document", not "the first on record".
+- Put uncertainty in the sentence ("reported", "one account says", "by 2014, news reports described"),
+  not in a badge. The public page never shows "Being checked"; that tag exists only in the local
+  draft, and the build refuses a draft.
+- Three public states for a claim: verified (publish), qualified (publish with careful wording),
+  in research (don't publish).
+- Name the place exactly: county, city or state. A county contest is a county story.
+- Separate when art was submitted, chosen, printed and handed out.
+- Don't call an image "official" without a source showing an election authority issued it. Don't say a
+  design "went viral" without saying what happened (votes, coverage, demand).
+- Never say stickers, digital or paper, raise turnout. The studies tested visible voting among
+  friends and neighbors, not stickers.
+- No artist's work in the maker or a download without documented permission. Label illustrations.
+- When the evidence falls apart, cut the claim, however good the story.

@@ -33,7 +33,9 @@ ALLOWED = ['Vote Sticker', 'VoteSticker.org', 'League of Women Voters', 'Supervi
            # Official program and office names kept in English on purpose (docs/spanish-style.md).
            'Department of Highway Safety and Motor Vehicles', 'Vote-by-Mail Ballot Information and Status Lookup',
            # Titles of state sticker designs and contests, quoted as named.
-           'You Betcha I Voted', 'Civics in the 605 Statewide Sticker Showcase']
+           'You Betcha I Voted', 'Civics in the 605 Statewide Sticker Showcase',
+           # Museum and program names on the sticker history page.
+           'The Henry Ford']
 FUNCTION_WORDS = re.compile(r"\b(the|and|your|with|from|for|this|that|you|are|vote early|by mail)\b", re.I)
 
 
@@ -59,6 +61,7 @@ class Page(HTMLParser):
         self.ld = []
         self.counts = {'faq': 0, 'near': 0, 'pager': 0, 'states': 0}
         self._skip = 0
+        self._en = []
         self._in_ld = False
         self._zone = []
 
@@ -67,6 +70,10 @@ class Page(HTMLParser):
         cls = a.get('class') or ''
         if tag == 'html':
             self.lang = a.get('lang', '')
+        # Text marked lang="en" is English on purpose (verbatim source quotes, publication names).
+        if a.get('lang') == 'en' and tag != 'html':
+            self._en.append(tag)
+            self._skip += 1
         if tag in ('script', 'style'):
             self._skip += 1
             self._in_ld = a.get('type') == 'application/ld+json'
@@ -98,6 +105,9 @@ class Page(HTMLParser):
                 self.text.append(a[attr])
 
     def handle_endtag(self, tag):
+        if self._en and tag == self._en[-1]:
+            self._en.pop()
+            self._skip -= 1
         if tag in ('script', 'style'):
             self._skip -= 1
             self._in_ld = False
@@ -126,7 +136,7 @@ def main():
     _, js = fetch(urljoin(base, 'states.js'))
     rows = [json.loads(l.strip().rstrip(',')) for l in js.splitlines() if l.strip().startswith('{"abbr"')]
     slug = lambda n: re.sub(r'[^a-z]+', '-', n.lower()).strip('-')
-    paths = [''] + [slug(r['name']) + '/' for r in rows] + ['about/']
+    paths = [''] + [slug(r['name']) + '/' for r in rows] + ['about/', 'history/']
     gated = None
     links = set()
     for p in paths:
@@ -174,6 +184,8 @@ def main():
             text = text.replace(a, '')
         # English official names sit in parentheses after their Spanish rendering (docs/spanish-style.md).
         text = re.sub(r'\([^()]*\)', '', text)
+        # Sticker wording quoted as printed: “I Voted Today, Have You?”, “You Betcha I Voted”.
+        text = re.sub(r'“[^”]{1,60}”', '', text)
         left = [s for s in SENTINELS if s in text] + sorted(set(m.group(0) for m in FUNCTION_WORDS.finditer(text)))
         if left:
             fail(f'/es/{p}: English left: {left[:6]}')

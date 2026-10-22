@@ -150,3 +150,25 @@ and mail-in voting (under the mail section). Spanish pages mark them "(en inglé
 factual reference pages only; nothing from issue hubs, briefs or action pages, and nothing whose framing
 argues a position, because Vote Sticker's own copy stays nonpartisan. Ranked-choice voting is a
 candidate for Alaska and Maine once their guides exist.
+
+## Writing Rules From the History Page Reviews (October 22)
+
+These apply sitewide, not just to /history/.
+
+- **One claim, one detail, one reason it matters.** Split a sentence that stacks three facts.
+- **Concrete verbs.** "Order" beats "buy," "handed out" beats "made," "visited" beats "came."
+  Avoid vague connectors like "went the other way" or "point to"; say what happened.
+- **Put uncertainty in the sentence**, calmly: "the earliest reference located so far," "the original
+  page hasn't been available to review," "documented so far." Never a badge, never an apology, and
+  never the word "first" without unusually strong proof.
+- **No status notes in public copy.** Words like "source check," "being checked," "will not be
+  published" belong in the build, not on the page.
+- **Don't undercut your own facts.** Cut "even" in lines like "has even written about."
+- **Say who and where.** Name the person in each card, the county for a county story, and the
+  program by its name (Clearie Award, Federal Voting Assistance Program).
+- **Style:** "I Voted" in quotes when it means the phrase or a sticker's wording; Election Day
+  capitalized; "polling place" for the location; "mail ballot" or "absentee ballot" as the state
+  says it; "$1" not "a dollar"; Title Case headings; no em dashes.
+- **Trust lines:** "Last reviewed [date] · Suggest a correction." Invite, don't defend.
+- The page should sound like someone who went down an archive rabbit hole and is showing you the
+  best parts, not an institution defending a white paper.

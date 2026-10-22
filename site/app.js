@@ -625,6 +625,9 @@
 	function wireSave(link) {
 		link.addEventListener('click', function (e) {
 			if (!current.blob) { e.preventDefault(); return; }
+			// After the picture is on its way, one quiet line about the sticker's history (never before).
+			var more = $('after-save');
+			if (more) { setTimeout(function () { more.hidden = false; }, 600); }
 			if (!SHARE_TO_PHOTOS) { return; }
 			e.preventDefault();
 			var file = new File([current.blob], current.name, { type: 'image/png' });
