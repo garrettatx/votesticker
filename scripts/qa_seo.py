@@ -146,7 +146,8 @@ def main():
             fail(f'/{p}: og:image {og}')
         elif fetch(urljoin(base, og.replace(PROD, '')))[0] != 200:
             fail(f'/{p}: og:image does not load')
-        if 'id="share-link"' not in html or f'data-url="{PROD}{p}"' not in html:
+        # Every page but the home page has a copy-link button (removed from the home hero October 22).
+        if p and ('id="share-link"' not in html or f'data-url="{PROD}{p}"' not in html):
             fail(f'/{p}: copy-link button missing or wrong url')
         old = [h for h in pg.links if 'garrettn.com' in h]
         if old:

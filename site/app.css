@@ -672,3 +672,17 @@ nav.foot__links a + a { margin-left: 0; }
 .smap__preview p { margin: 0 0 var(--s2); }
 .smap__pname { font-weight: 700; color: var(--ink); font-size: var(--fs-lg); }
 #smap-go { font-weight: 700; }
+
+/* Election Day countdown (October 22): the date as text, the count in a quiet gold pill. Solid gold
+   stays reserved for "Get my sticker". */
+.countdown { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s2) 10px; margin: var(--s4) 0 0; color: var(--cream); font-size: var(--fs-sm); line-height: 1.5; }
+.countdown time { font-weight: 700; }
+.countdown__rel { display: inline-flex; align-items: center; padding: 3px 10px; border: 1px solid rgba(242, 193, 78, 0.45); border-radius: 999px; background: rgba(242, 193, 78, 0.12); color: var(--gold); font-size: var(--fs-xs); font-weight: 700; line-height: 1.25; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.countdown__rel[hidden] { display: none; }
+.countdown--state { margin: var(--s3) 0 0; }
+.hero__today { margin-top: var(--s2); font-weight: 400; color: var(--band-text); font-size: var(--fs-sm); }
+/* Home hero, a little shorter (October 22 polish): less padding, a smaller sticker cluster. */
+@media (min-width: 860px) { .top--hub { padding: var(--s5) 0 var(--s7); } .hero__art { max-width: 360px; } }
+.how__more { margin: var(--s4) 0 0; font-size: var(--fs-sm); }
+.how__more a { font-weight: 700; }
+.top .finder__free { color: var(--cream); font-weight: 600; }

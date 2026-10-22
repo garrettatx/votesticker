@@ -420,6 +420,24 @@ function vote_guide( $st ) {
 
 require __DIR__ . '/history.php';
 
+// Election Day countdown (October 22): "Election Day: Tuesday, Nov. 3 · 12 days away". The build writes
+// the count for its own date (it runs daily); a small script in the footer recounts by the visitor's
+// calendar date, says Tomorrow and Today, and drops the count after Election Day.
+const VOTE_ELECTION_DAY = '2026-11-03';
+function vote_countdown_text( $days ) {
+	if ( $days < 0 ) { return ''; }
+	if ( 0 === $days ) { return t( 'Today' ); }
+	if ( 1 === $days ) { return t( 'Tomorrow' ); }
+	return t( '%s days away', $days );
+}
+function vote_countdown( $class = '' ) {
+	$days = (int) round( ( strtotime( VOTE_ELECTION_DAY ) - strtotime( date( 'Y-m-d' ) ) ) / 86400 );
+	$rel = vote_countdown_text( $days );
+	return '<p class="countdown' . ( $class ? ' ' . $class : '' ) . '" data-countdown data-today="' . vote_e( t( 'Today' ) ) . '" data-tomorrow="' . vote_e( t( 'Tomorrow' ) ) . '" data-away="' . vote_e( t( '%s days away' ) ) . '">'
+		. '<span>' . vote_e( t( 'Election Day:' ) ) . ' <time datetime="' . VOTE_ELECTION_DAY . '">' . vote_e( t( 'Tuesday, Nov. 3' ) ) . '</time></span>'
+		. '<span class="countdown__rel"' . ( $rel ? '' : ' hidden' ) . '><span data-countdown-label>' . vote_e( $rel ) . '</span></span></p>';
+}
+
 // The About page (/about/, /es/about/): who makes the site, where its facts come from, how to send a
 // correction. Written for people first; the AboutPage schema in the head names the publisher.
 function vote_about() {
@@ -680,7 +698,7 @@ $vote_page = $vote_st ? $vote_meta[ $vote_abbr ] : array(
 	'title' => t( 'I Voted Sticker Maker: Free Vote Stickers by State' ),
 	'h1' => t( 'Make a voting plan. Share the sticker.' ),
 	'eyebrow' => t( 'Free I voted and vote early stickers for every state' ),
-	'lead' => t( 'Pick your state and make a profile-picture sticker with the date that matters where you live, so your friends remember theirs. Every state page links to its official election office.' ),
+	'lead' => t( 'Make an I voted sticker or share your state’s voting dates, sized for your profile picture or a post.' ),
 	'desc' => t( 'Make a free I voted sticker or vote sticker for your profile picture. Pick your state and a design, download a PNG, and check official links for early voting, vote by mail, or Election Day.' ),
 	'index' => ! vote_es() || VOTE_ES_INDEX,
 );
@@ -731,7 +749,7 @@ function vote_finder( $label, $placeholder, $button = 'Find' ) {
 		. '<div class="finder__box"><input id="state-find" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="state-options" autocomplete="off" autocapitalize="words" spellcheck="false" placeholder="' . vote_e( t( $placeholder ) ) . '">'
 		. '<button type="button" class="btn btn--gold" id="state-go">' . vote_e( t( $button ) ) . '</button>'
 		. '<ul id="state-options" role="listbox" aria-label="' . vote_e( t( 'Matching states' ) ) . '" hidden></ul></div>'
-		. '<p class="help" id="state-help"><a href="#states-h">' . vote_e( t( 'Or browse the full list of states' ) ) . '</a></p></div>';
+		. '<p class="help" id="state-help">' . ( 'Get my sticker' === $button ? '<span class="finder__free">' . vote_e( t( 'Free, no account.' ) ) . '</span> ' : '' ) . '<a href="#states-h">' . vote_e( t( 'Or browse the full list of states' ) ) . '</a></p></div>';
 }
 
 $vote_ld = array(
@@ -825,6 +843,7 @@ $vote_ld = array(
 				<h1 id="page-h1"><?php echo vote_e( $vote_page['h1'] ); ?></h1>
 				<p class="ribbon"><?php echo vote_e( $vote_page['ribbon'] ); ?></p>
 				<p class="lead" id="page-lead"><?php echo vote_e( $vote_page['lead'] ); ?></p>
+				<?php echo vote_countdown( 'countdown--state' ); ?>
 				<p class="jump">
 					<?php if ( $vote_lead_img ) : ?><a class="btn btn--gold" href="#gallery"><?php echo vote_e( t( 'See %s stickers', vote_lname( $vote_st ) ) ); ?> <span aria-hidden="true">↓</span></a><?php endif; ?>
 					<a class="btn <?php echo $vote_lead_img ? 'btn--line' : 'btn--gold'; ?>" href="#maker-h"><?php echo vote_e( t( $vote_lead_img ? 'Make your own' : 'Make your sticker' ) ); ?> <span aria-hidden="true">↓</span></a>
@@ -847,9 +866,10 @@ $vote_ld = array(
 				echo count( $vote_h1 ) > 1 ? implode( ' ', array_map( function ( $x ) { return '<span class="h1__line">' . vote_e( $x ) . '</span>'; }, $vote_h1 ) ) : vote_e( $vote_page['h1'] );
 				?></h1>
 				<p class="lead" id="page-lead"><?php echo vote_e( $vote_page['lead'] ); ?></p>
-				<?php if ( ! $vote_doc ) { echo vote_finder( 'Your state', 'Texas or TX', $vote_404 ? 'Find' : 'Get my sticker' ); } ?>
+				<?php if ( ! $vote_doc ) { echo vote_finder( 'Your state', 'Type your state', $vote_404 ? 'Find' : 'Get my sticker' ); } ?>
 				<?php if ( ! $vote_doc && ! $vote_404 ) : $vote_today = date( 'Y-m-d' ); $vote_open = 0; foreach ( $vote_rows as $vote_r ) { if ( vote_verified( $vote_r ) && 'in-person' === ( $vote_r['kind'] ?? '' ) && ! empty( $vote_r['start'] ) && $vote_r['start'] <= $vote_today && $vote_today <= $vote_r['end'] ) { $vote_open++; } } ?>
-				<p class="hero__today"><?php echo vote_e( t( 'Election Day is Tuesday, Nov. 3.' ) ); ?> <?php if ( $vote_open > 1 ) { echo vote_e( t( 'Early voting is open today in %s states.', $vote_open ) ); } elseif ( 1 === $vote_open ) { echo vote_e( t( 'Early voting is open today in one state.' ) ); } ?></p>
+				<?php echo vote_countdown(); ?>
+				<?php if ( $vote_open ) : ?><p class="hero__today"><?php echo vote_e( $vote_open > 1 ? t( 'Early voting is open today in %s states.', $vote_open ) : t( 'Early voting is open today in one state.' ) ); ?></p><?php endif; ?>
 				<?php endif; ?>
 				<?php if ( $vote_404 ) : ?>
 				<nav class="err-links" aria-labelledby="err-links-h">
@@ -860,7 +880,7 @@ $vote_ld = array(
 						<li><a href="<?php echo vote_pbase(); ?>#faq-h"><?php echo vote_e( t( 'Common Questions' ) ); ?></a></li>
 					</ul>
 				</nav>
-				<?php else : ?><?php echo $vote_history ? vote_history_jump() : ''; ?><?php echo $vote_share; ?><?php endif; ?>
+				<?php else : ?><?php echo $vote_history ? vote_history_jump() : ''; ?><?php echo $vote_doc ? $vote_share : ''; ?><?php endif; ?>
 			</div>
 			<?php if ( $vote_404 ) : ?>
 			<div class="err-sticker" aria-hidden="true"><span>404</span><small><?php echo vote_e( t( 'Page not found' ) ); ?></small></div>
@@ -891,8 +911,8 @@ $vote_ld = array(
 	?>
 	<?php if ( $vote_showcase && ! $vote_st ) : ?>
 	<section class="showcase" id="showcase" aria-labelledby="showcase-h">
-		<h2 id="showcase-h" class="display-h"><?php echo vote_e( t( $vote_404 ? 'Popular States' : 'See What They Look Like' ) ); ?></h2>
-		<p class="section-intro"><?php echo vote_e( t( $vote_404 ? 'Ready-made stickers from the most populous states. Tap one to see that state’s page.' : 'Tap a sticker to see every design for that state.' ) ); ?></p>
+		<h2 id="showcase-h" class="display-h"><?php echo vote_e( t( $vote_404 ? 'Popular States' : 'Find a Sticker You Like' ) ); ?></h2>
+		<p class="section-intro"><?php echo vote_e( t( $vote_404 ? 'Ready-made stickers from the most populous states. Tap one to see that state’s page.' : 'Tap one to see every design for that state.' ) ); ?></p>
 		<div class="grid grid--showcase">
 			<?php foreach ( $vote_showcase as $abbr => $n ) : ?>
 			<a class="pick" href="<?php echo vote_pbase() . $vote_meta[ strtoupper( $abbr ) ]['slug']; ?>/">
@@ -906,10 +926,11 @@ $vote_ld = array(
 	<section class="how-wrap" aria-labelledby="how-h">
 		<h2 id="how-h" class="display-h"><?php echo vote_e( t( 'How It Works' ) ); ?></h2>
 		<ol class="how">
-			<li><b><?php echo vote_e( t( 'Pick your state' ) ); ?></b> <?php echo vote_e( t( 'We fill in your real voting dates, whether your state votes early, by mail, or on Election Day.' ) ); ?></li>
-			<li><b><?php echo vote_e( t( 'Save your sticker' ) ); ?></b> <?php echo vote_e( t( 'Grab a ready-made design or make your own. The words stay inside the circle, so nothing gets cut off.' ) ); ?></li>
-			<li><b><?php echo vote_e( t( 'Check the official link' ) ); ?></b> <?php echo vote_e( t( 'Your election office has the details on where to vote, hours, and ID.' ) ); ?></li>
+			<li><b><?php echo vote_e( t( 'Pick your state' ) ); ?></b> <?php echo vote_e( t( 'See its voting dates and sticker designs.' ) ); ?></li>
+			<li><b><?php echo vote_e( t( 'Make it yours' ) ); ?></b> <?php echo vote_e( t( 'Choose a ready-made sticker or make your own.' ) ); ?></li>
+			<li><b><?php echo vote_e( t( 'Save and share' ) ); ?></b> <?php echo vote_e( t( 'Download it for your profile picture or a post.' ) ); ?></li>
 		</ol>
+		<p class="how__more"><?php echo vote_e( t( 'Need polling places, hours or ID rules?' ) ); ?> <a href="<?php echo vote_e( t( 'https://www.usa.gov/state-election-office' ) ); ?>"><?php echo vote_e( t( 'Find your election office' ) ); ?></a>.</p>
 	</section>
 	<section class="trust">
 		<svg aria-hidden="true" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#F2C14E" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M3 9l9-5 9 5"/><path d="M5 9v9M10 9v9M14 9v9M19 9v9M3 21h18"/></svg>
@@ -1050,20 +1071,25 @@ $vote_ld = array(
 		<?php if ( $vote_st && vote_state_faq( $vote_st ) ) : ?><p class="help"><?php echo vote_e( t( 'Answers come from official %s sources.', vote_lname( $vote_st ) ) ); ?> <?php echo vote_e( t( 'Last checked %s.', vote_checked( vote_page_checked( $vote_st ) ) ) ); ?></p><?php endif; ?>
 		<?php if ( $vote_st ) : foreach ( vote_state_faq( $vote_st ) as $vote_q ) : ?>
 		<details class="faq__state"><summary><?php echo vote_e( $vote_q[0] ); ?></summary><p><?php echo vote_e( $vote_q[1] ); ?></p><p class="faq__src"><?php echo vote_es() ? 'Fuente: ' : 'From '; ?><a href="<?php echo vote_e( $vote_q[2] ); ?>" target="_blank" rel="noopener"><?php echo vote_e( vote_src_name( $vote_st, $vote_q[2] ) ); ?></a>.</p></details>
-		<?php endforeach; else : ?>
-		<details><summary><?php echo vote_e( t( 'Can I post a photo of my ballot?' ) ); ?></summary><p><?php echo vote_e( t( 'It depends on the state. Some states allow a picture of your own marked ballot, and some make it illegal to show one. Each state page says what that state allows, where we could confirm it. The stickers made here show no ballot.' ) ); ?></p></details>
-		<details><summary><?php echo vote_e( t( 'Is it really free?' ) ); ?></summary><p><?php echo vote_e( t( "Yes. There's nothing to buy, no account and no email list. Garrett Digital built it as a public service and pays for the hosting." ) ); ?></p></details>
-		<details><summary><?php echo vote_e( t( 'Who made this?' ) ); ?></summary><p><?php echo vote_e( t( 'Garrett Digital, an SEO and search marketing consultancy in Austin, Texas.' ) ); ?> <a href="<?php echo vote_pbase(); ?>about/"><?php echo vote_e( t( 'More on the About page' ) ); ?></a>.</p></details>
-		<?php endif; ?>
-		<details><summary><?php echo vote_e( t( 'When should I switch to I voted?' ) ); ?></summary><p><?php echo vote_e( t( 'After you vote. Choose I voted in the Main message menu, or I voted early or I voted by mail if that fits.' ) ); ?></p></details>
+		<?php endforeach; endif; ?>
 		<details><summary><?php echo vote_e( t( 'How do I make it my profile picture?' ) ); ?></summary><p><?php echo vote_e( t( 'Tap Download picture, then open your profile settings in the app and choose the saved image as your photo. The design stays inside the circle that profile photos are cropped to.' ) ); ?></p></details>
+		<details><summary><?php echo vote_e( t( 'When should I switch to I voted?' ) ); ?></summary><p><?php echo vote_e( t( 'After you vote. Choose I voted in the Main message menu, or I voted early or I voted by mail if that fits.' ) ); ?></p></details>
+		<?php if ( ! $vote_st ) : ?>
+		<details><summary><?php echo vote_e( t( 'Is it really free?' ) ); ?></summary><p><?php echo vote_e( t( "Yes. There's nothing to buy, no account and no email list. Garrett Digital built it as a public service and pays for the hosting." ) ); ?></p></details>
+		<details><summary><?php echo vote_e( t( 'Do you keep my information?' ) ); ?></summary><p><?php echo vote_e( t( 'No. Your sticker is created in your browser and never uploaded.' ) ); ?></p></details>
+		<?php endif; ?>
 		<details><summary><?php echo vote_e( t( 'Is this an official election site?' ) ); ?></summary><p><?php echo vote_e( t( 'No. Vote Sticker is an independent, nonpartisan tool made by one person. For registration, polling places, and deadlines, go to your state or local election office. Each state page links to it.' ) ); ?></p></details>
 		<details><summary><?php echo vote_e( t( 'Where do the dates come from?' ) ); ?></summary><p><?php echo vote_e( t( "From official state sources: the election office's own pages or state law, checked and dated. Until a state's dates are confirmed, its stickers say Election Day." ) ); ?></p></details>
 		<?php $vote_mailst = $vote_st && vote_verified( $vote_st ) && 'mail' === $vote_st['kind']; if ( ! $vote_mailst ) : ?>
 		<details><summary><?php echo vote_e( t( 'Why do some states say hours or start dates vary?' ) ); ?></summary><p><?php echo vote_e( t( 'In some states, counties or towns set their own early voting days, hours, and locations. Your local election office has the final details.' ) ); ?></p></details>
 		<details><summary><?php echo vote_e( t( "What if my state doesn't have early voting?" ) ); ?></summary><p><?php echo vote_e( t( "Your sticker says VOTE NOV 3. If you can't vote in person on Election Day, you may qualify for an absentee ballot. Your state's page links to the rules." ) ); ?></p></details>
 		<?php endif; ?>
+		<?php if ( $vote_st ) : ?>
 		<details><summary><?php echo vote_e( t( 'Do you keep my information?' ) ); ?></summary><p><?php echo vote_e( t( 'No. Your sticker is created in your browser and never uploaded.' ) ); ?></p></details>
+		<?php else : ?>
+		<details><summary><?php echo vote_e( t( 'Can I post a photo of my ballot?' ) ); ?></summary><p><?php echo vote_e( t( 'It depends on the state. Some states allow a picture of your own marked ballot, and some make it illegal to show one. Each state page says what that state allows, where we could confirm it. The stickers made here show no ballot.' ) ); ?></p></details>
+		<details><summary><?php echo vote_e( t( 'Who made this?' ) ); ?></summary><p><?php echo vote_e( t( 'Garrett Digital, an SEO and search marketing consultancy in Austin, Texas.' ) ); ?> <a href="<?php echo vote_pbase(); ?>about/"><?php echo vote_e( t( 'More on the About page' ) ); ?></a>.</p></details>
+		<?php endif; ?>
 	</section>
 	<?php endif; ?>
 <?php endif; ?>
@@ -1095,6 +1121,9 @@ foreach ( array( 'Tap Save to Photos, then Save Image. Then set it as your profi
 echo vote_json( $vote_js ); ?>;
 window.VOTE_ASSETS = <?php echo vote_json( VOTE_BASE . 'assets/' ); ?>;
 window.VOTE_PAGE_STATE = <?php echo vote_json( $vote_abbr ); ?>;</script>
+<script>(function(){var D=864e5;function n(d){return Date.UTC(d.getFullYear(),d.getMonth(),d.getDate())/D;}
+document.querySelectorAll('[data-countdown]').forEach(function(el){var t=el.querySelector('time'),r=el.querySelector('.countdown__rel'),l=el.querySelector('[data-countdown-label]'),m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(t?t.getAttribute('datetime'):'');if(!m||!r||!l){return;}
+var e=new Date(+m[1],+m[2]-1,+m[3]);function u(){var d=n(e)-n(new Date());r.hidden=d<0;l.textContent=d<0?'':d===0?el.dataset.today:d===1?el.dataset.tomorrow:el.dataset.away.replace('%s',d);}u();setInterval(u,6e4);});})();</script>
 <script src="<?php echo vote_v( 'states.js' ); ?>"></script>
 <script src="<?php echo vote_v( 'state-shapes.js' ); ?>"></script>
 <script src="<?php echo vote_v( 'app.js' ); ?>"></script>
