@@ -1,8 +1,10 @@
 # Vote Sticker: Resume Here (Updated October 23, 2026)
 
 Election Day is Tuesday, November 3. Everything is committed and pushed. **The October 22 late
-session (iPhone save fix, three new designs, small-phone finder fix) is NOT deployed yet**: it passed
-every QA locally and waits for Garrett's OK to deploy. Start there.
+session (iPhone save fix, three new designs, small-phone finder fix) is committed to main but not
+deployed by hand**. It passed every QA locally. The daily Action (`.github/workflows/daily-build.yml`)
+deploys main at 6:05 a.m. CDT, so it goes live on its own October 24 unless deployed sooner or
+reverted. Start there.
 
 ## Where Things Stand
 
@@ -45,7 +47,7 @@ every QA locally and waits for Garrett's OK to deploy. Start there.
 
 ## Open Items, in Order
 
-1. **Deploy the October 22 late work (needs Garrett's OK).** Build, deploy, live QA (all five
+1. **Deploy the October 22 late work** (Garrett's OK, or the October 24 daily build does it). Build, deploy, live QA (all five
    scripts, including `qa_save.mjs` without `--base`), IndexNow for all 108 URLs (the maker and
    finder are on every state page), then Garrett checks on his iPhone: tap a Texas ready-made, Save
    Image, confirm it lands in Photos. Local QA on October 23: cards PASS (53,760 per browser, page
@@ -83,6 +85,9 @@ Then live QA (same scripts without `--base`), IndexNow for changed URLs, commit 
 server is `php -S 127.0.0.1:8791 -t site`.
 
 ## Standing Rules
+
+- Anything committed to main is live by the next 6:05 a.m. CDT daily build. Treat a push to main as a
+  scheduled deploy.
 
 - No DNS or Cloudflare change without a summary and Garrett's OK. No Firecrawl unless he asks.
 - Max two agents; one when his usage is low.
