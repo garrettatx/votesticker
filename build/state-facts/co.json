@@ -38,8 +38,12 @@
    "status": "verified"
   },
   "early_hours": {
-   "status": "missing",
-   "notes": "Voter service and polling center hours are set by each county."
+   "en": "Every county's required voter service and polling centers are open from October 19 through Election Day. Each county sets its hours.",
+   "es": "Los centros de votación y servicio al votante que exige la ley en cada condado abren del 19 de octubre al Día de las Elecciones. Cada condado fija su horario.",
+   "src": "https://www.sos.state.co.us/pubs/newsRoom/pressReleases/2026/PR20260923GeneralElection.html",
+   "checked": "2026-10-23",
+   "quote": "October 19 - The minimum number of required voter centers must be open.",
+   "status": "verified"
   },
   "cure": {
    "status": "missing",

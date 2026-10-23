@@ -570,6 +570,12 @@ return array(
 			'src' => 'https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026/key-dates-deadlines',
 			'checked' => '2026-10-21',
 		),
+		'dates.early_hours' => array(
+			'en' => 'Early voting sites opened October 5, and vote centers in Voter\'s Choice Act counties open October 24. Each county sets its hours.',
+			'es' => 'Los lugares de votación anticipada abrieron el 5 de octubre, y los centros de votación de los condados de la Voter\'s Choice Act abren el 24 de octubre. Cada condado fija su horario.',
+			'src' => 'https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026/key-dates-deadlines',
+			'checked' => '2026-10-23',
+		),
 		'dates.cure' => array(
 			'en' => 'Forgot to sign your ballot envelope, or your signature doesn\'t match? Your county must receive the signature statement by 5 p.m. on Wednesday, November 25, 2026.',
 			'es' => '¿Se te olvidó firmar el sobre de tu boleta o tu firma no coincide? Tu condado debe recibir la declaración de firma a más tardar a las 5 p. m. del miércoles 25 de noviembre de 2026.',
@@ -705,6 +711,12 @@ return array(
 			'es' => 'Buzón o centro de votación: a más tardar a las 7 p. m. del martes 3 de noviembre. Correo: el 26 de octubre es el último día sugerido para enviarla. A partir del 27 de octubre, mejor llévala en tu sobre firmado a un buzón o a un centro de votación.',
 			'src' => 'https://www.sos.state.co.us/pubs/newsRoom/pressReleases/2026/PR20260923GeneralElection.html',
 			'checked' => '2026-10-21',
+		),
+		'dates.early_hours' => array(
+			'en' => 'Every county\'s required voter service and polling centers are open from October 19 through Election Day. Each county sets its hours.',
+			'es' => 'Los centros de votación y servicio al votante que exige la ley en cada condado abren del 19 de octubre al Día de las Elecciones. Cada condado fija su horario.',
+			'src' => 'https://www.sos.state.co.us/pubs/newsRoom/pressReleases/2026/PR20260923GeneralElection.html',
+			'checked' => '2026-10-23',
 		),
 		'how.in_person' => array(
 			'en' => 'Rather vote in person? Go to any voter service and polling center in your county with ID, until 7 p.m. on Election Day. If you vote at a center outside your home county, you only get the statewide races.',

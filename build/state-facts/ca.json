@@ -35,8 +35,12 @@
    "status": "verified"
   },
   "early_hours": {
-   "status": "missing",
-   "notes": "Early voting site and vote center hours are set by each county; no statewide hours found."
+   "en": "Early voting sites opened October 5, and vote centers in Voter's Choice Act counties open October 24. Each county sets its hours.",
+   "es": "Los lugares de votación anticipada abrieron el 5 de octubre, y los centros de votación de los condados de la Voter's Choice Act abren el 24 de octubre. Cada condado fija su horario.",
+   "src": "https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026/key-dates-deadlines",
+   "checked": "2026-10-23",
+   "quote": "Early Voting sites open October 5, 2026",
+   "status": "verified"
   },
   "cure": {
    "en": "Forgot to sign your ballot envelope, or your signature doesn't match? Your county must receive the signature statement by 5 p.m. on Wednesday, November 25, 2026.",

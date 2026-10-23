@@ -21,7 +21,19 @@ return array(
 	'states' => array(
 		'WY' => array( 'note' => 'Vota en ausencia en persona en la oficina del secretario de tu condado (county clerk), sin necesidad de excusa, hasta el día antes de la elección.' ),
 		'WV' => array( 'note' => 'Vota por anticipado en el juzgado del condado, un anexo o un lugar de votación comunitario en horario de oficina, y de 9 a. m. a 5 p. m. los dos últimos sábados.' ),
-		'UT' => array( 'note' => 'Todos los condados tienen votación anticipada; los horarios y lugares cambian. Utah también envía una boleta por correo a cada votante.' ),
+		'UT' => array( 'note' => 'Todos los condados tienen votación anticipada; los horarios y lugares cambian, y un condado puede extenderla hasta el lunes 2 de noviembre. Utah también envía una boleta por correo a cada votante.' ),
+		'SD' => array(
+			'summary' => 'En South Dakota, cualquier votante inscrito puede votar con una boleta de voto en ausencia en persona en la oficina del auditor del condado (county auditor), del viernes 18 de septiembre al lunes 2 de noviembre.',
+			'note' => 'El 2 de noviembre, la oficina abre hasta las 5 p. m. o hasta su hora de cierre habitual, lo que sea más tarde.',
+		),
+		'WI' => array(
+			'summary' => 'En Wisconsin, puedes votar con una boleta de voto en ausencia en persona en la oficina del secretario (clerk) de tu ciudad, villa o pueblo, desde el martes 20 de octubre y a más tardar el domingo 1 de noviembre.',
+			'note' => 'Cada ciudad, villa y pueblo fija sus propios días y horarios, y algunos terminan antes. Consulta con tu secretario antes de ir.',
+		),
+		'VT' => array(
+			'summary' => 'En Vermont, puedes votar por anticipado en la oficina del secretario (town clerk) de tu pueblo o ciudad en horario de oficina, hasta que cierre el lunes 2 de noviembre.',
+			'note' => 'La votación anticipada empezó 45 días antes de la elección, o en cuanto tu pueblo tuvo boletas.',
+		),
 		'NM' => array( 'note' => 'La votación anticipada empieza en las oficinas del secretario del condado (County Clerk). Más lugares abren en todo el estado el 17 de octubre.' ),
 		'KY' => array( 'note' => 'La votación anticipada sin excusa es de jueves a sábado. Cada condado fija sus horarios y lugares.' ),
 		'LA' => array( 'note' => 'De 8:30 a. m. a 6 p. m.; no hay votación anticipada el domingo 25 de octubre.' ),
