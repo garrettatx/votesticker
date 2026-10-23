@@ -134,3 +134,22 @@ history section, and contest and artist background. Ballotpedia: [press release]
    with named counties only.
 4. A gallery of each state's official 2026 design and its story, which is what the outranking roundups
    have and our pages don't. Images need rights: link out or describe unless the office allows reuse.
+
+## 7. Early Voting Dates and Hours, 21 States (Later Run)
+
+Checked against `site/states.js` on October 23. **No conflicts:** AZ, CT, DE, GA, KY, LA, MD, MI, MN,
+MO, NV, NJ, NM, NY and NC match the verified dates on the site. Colorado is a mail state on the site;
+the run adds that vote centers opened October 19 (Boulder County example), which fits the mail note.
+
+Where it could fill gaps (each needs the official page read before it goes in the facts files):
+
+| State | Site now | Research says | Source to confirm |
+|---|---|---|---|
+| ME | unchecked | In-person no-excuse absentee through close of business Oct 29; opening days set by each town | [Maine SOS](https://www1.maine.gov/sos/news/maine-voters-can-request-absentee-ballots-nov-3-election-starting-today-ballots-will-be-mailed), [maine.vote/early](https://www.maine.vote/early) |
+| MT | unchecked | In-person absentee Oct 5 to Nov 2; request deadline noon Nov 2 | [Montana SOS absentee](https://sosmt.gov/elections/absentee/) (research cited U.S. Vote Foundation and counties) |
+| NE | start not set ("30 days before") | Opens Oct 5, closes Nov 2, at the county election office | [Nebraska SOS](https://sos.nebraska.gov/elections-division) |
+| DE | dates only | Oct 22 to 24 and 26 to 27, 7 a.m. to 7 p.m.; Oct 28 to Nov 1, 11 a.m. to 7 p.m. | [Delaware news release](https://news.delaware.gov/2026/10/19/voting-alert-10-day-early-voting-period-for-the-2026-general-election-starts-thurs-october-22nd/) |
+| MS | none (restricted absentee) | Ends noon Oct 31; weekdays 8 to 5, Saturdays Oct 24 and 31 until noon; official sources disagree on Sept 19 vs 21 start | [MS SOS](https://www.sos.ms.gov/news/saturday-person-absentee-voting-begins-upcoming-deadlines-2026-general-election) |
+
+County hours (Fulton, Washoe, Hennepin, NYC, Johnston and others) stay off the state pages: they are
+examples, not statewide hours. They could feed a "hours vary; for example" line only with the county named.
