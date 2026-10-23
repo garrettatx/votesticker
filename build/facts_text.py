@@ -51,7 +51,7 @@ FACTS = {
     'id.rule': 'rule', 'id.accepted': 'list', 'id.expired': 'text', 'id.without': 'text',
     'mail.who': 'text', 'mail.who_list': 'list', 'mail.track_url': 'url', 'mail.cure': 'text', 'mail.dropbox': 'text', 'mail.witness': 'text',
     'polls_rules.gear': 'text', 'polls_rules.phone': 'text', 'polls_rules.line': 'text',
-    'sticker.tradition': 'text',
+    'sticker.tradition': 'text', 'sticker.early': 'text', 'sticker.mail': 'text',
     'faq.provisional': 'text', 'faq.line': 'text', 'faq.track': 'text', 'faq.unsigned': 'text', 'faq.late_mail': 'text',
 }
 RULES = ('photo_required', 'photo_requested', 'id_nonphoto', 'no_id')

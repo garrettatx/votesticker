@@ -15,6 +15,10 @@
   "www.dcovotes.dconc.gov": {
    "en": "the Durham County Board of Elections",
    "es": "la junta electoral del condado de Durham (Board of Elections)"
+  },
+  "www.guilfordcountync.gov": {
+   "en": "the Guilford County Board of Elections",
+   "es": "la junta electoral del condado de Guilford (Board of Elections)"
   }
  },
  "dates": {
@@ -197,6 +201,14 @@
    "src": "https://www.dcovotes.dconc.gov/Home/Components/News/News/10867/4100",
    "checked": "2026-10-21",
    "quote": "Following that round, the top three designs will be presented to the Durham County Board of Elections for selection of the winning design.",
+   "status": "verified"
+  },
+  "early": {
+   "en": "In Guilford County, early voting officials hand you an \"I Voted Early\" sticker once your ballot has gone through the tabulator, and curbside voters get one at the car. Other counties choose their own stickers.",
+   "es": "En el condado de Guilford, el personal de votación anticipada te da un sticker de \"I Voted Early\" cuando tu boleta pasa por la máquina tabuladora, y a quienes votan desde el auto se lo llevan al carro. Los demás condados eligen sus propios stickers.",
+   "src": "https://www.guilfordcountync.gov/media/2742/open",
+   "checked": "2026-10-23",
+   "quote": "Stickers should be handed out after the ballot has been successfully tabulated.",
    "status": "verified"
   }
  },

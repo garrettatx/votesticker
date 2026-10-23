@@ -7,6 +7,10 @@
   "scvotes.gov": {
    "en": "the South Carolina Election Commission",
    "es": "la Comisión Electoral de South Carolina (South Carolina Election Commission)"
+  },
+  "charlestoncounty.gov": {
+   "en": "the Charleston County Board of Voter Registration and Elections",
+   "es": "la oficina electoral del condado de Charleston (Board of Voter Registration and Elections)"
   }
  },
  "dates": {
@@ -206,6 +210,14 @@
   "tradition": {
    "status": "missing",
    "notes": "No sticker page found on scvotes.gov. The U.S. Election Assistance Commission's Clearinghouse Awards pages (eac.gov, 2022 winner and 2023 honorable mention for South Carolina I Voted stickers) and news coverage describe a 2022 statewide redesign with palmetto tree and state-outline stickers; eac.gov is federal, not a state or county source, so not used."
+  },
+  "early": {
+   "en": "Each county picks its own sticker. In Charleston County, the 2026 student contest winners go to early voters at every early voting center, and to absentee voters, for a limited time.",
+   "es": "Cada condado elige su propio sticker. En el condado de Charleston, los diseños ganadores del concurso estudiantil de 2026 se entregan por tiempo limitado en todos los centros de votación anticipada y a quienes votan en ausencia.",
+   "src": "https://charlestoncounty.gov/departments/bevr/outreach.php",
+   "checked": "2026-10-23",
+   "quote": "Winning designs will be distributed for a limited time at all early voting centers and to our absentee voters this fall.",
+   "status": "verified"
   }
  },
  "faq": {

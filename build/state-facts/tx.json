@@ -176,6 +176,14 @@
  "sticker": {
   "tradition": {
    "status": "missing"
+  },
+  "early": {
+   "en": "Each Texas county picks its own sticker. In Gaines County, the 2026 sticker is a student's design, handed out at every early voting location and Election Day vote center.",
+   "es": "Cada condado de Texas elige su propio sticker. En el condado de Gaines, el sticker de 2026 es el diseño de un estudiante y se entrega en todos los lugares de votación anticipada y centros de votación del Día de las Elecciones.",
+   "src": "https://newtools.cira.state.tx.us/page/gaines.ElectionsStickerpage",
+   "checked": "2026-10-23",
+   "quote": "The sticker will be distributed to voters at all Early Voting Locations and Election Day Vote Centers during the 2026 elections.",
+   "status": "verified"
   }
  },
  "faq": {
@@ -207,6 +215,10 @@
   "statutes.capitol.texas.gov": {
    "en": "the Texas Election Code",
    "es": "el Código Electoral de Texas"
+  },
+  "newtools.cira.state.tx.us": {
+   "en": "Gaines County",
+   "es": "el condado de Gaines"
   }
  }
 }

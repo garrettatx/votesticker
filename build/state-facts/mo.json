@@ -15,6 +15,10 @@
   "www.lincolncomo.gov": {
    "en": "Lincoln County, Missouri",
    "es": "el condado de Lincoln, Missouri"
+  },
+  "www.stlouis-mo.gov": {
+   "en": "the St. Louis City Board of Election Commissioners",
+   "es": "la junta electoral de la ciudad de St. Louis (Board of Election Commissioners)"
   }
  },
  "dates": {
@@ -204,6 +208,14 @@
    "src": "https://www.lincolncomo.gov/vote-now-for-the-i-voted-sticker-design-contest",
    "checked": "2026-10-21",
    "quote": "There will be a winner from each category resulting in 3 new \"I Voted\" sticker designs for the 2026/2027 Lincoln County elections.",
+   "status": "verified"
+  },
+  "early": {
+   "en": "In the City of St. Louis, every in-person voter can pick up an \"I Voted\" sticker on the way out, absentee voters included. Other election authorities set their own practice.",
+   "es": "En la ciudad de St. Louis, toda persona que vota en persona puede llevarse un sticker de \"I Voted\" al salir, incluidas las que votan en ausencia. Las demás autoridades electorales deciden por su cuenta.",
+   "src": "https://www.stlouis-mo.gov/government/departments/board-election-commissioners/voter/absentee/no-excuse-absentee.cfm",
+   "checked": "2026-10-23",
+   "quote": "No matter what method you use to vote, you can pick up an \"I Voted\" sticker on your way out.",
    "status": "verified"
   }
  },

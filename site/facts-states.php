@@ -3193,6 +3193,10 @@ return array(
 				'en' => 'Lincoln County, Missouri',
 				'es' => 'el condado de Lincoln, Missouri',
 			),
+			'www.stlouis-mo.gov' => array(
+				'en' => 'the St. Louis City Board of Election Commissioners',
+				'es' => 'la junta electoral de la ciudad de St. Louis (Board of Election Commissioners)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Registration closed Wednesday, October 7, 2026. Missouri has no same-day or Election Day registration.',
@@ -3297,6 +3301,12 @@ return array(
 			'es' => 'En el condado de Lincoln, los estudiantes diseñan los stickers. El concurso de la oficina del condado recibió 151 propuestas de estudiantes de 6.º a 12.º grado, para tres nuevos diseños de "I voted" para las elecciones del condado de 2026 y 2027.',
 			'src' => 'https://www.lincolncomo.gov/vote-now-for-the-i-voted-sticker-design-contest',
 			'checked' => '2026-10-21',
+		),
+		'sticker.early' => array(
+			'en' => 'In the City of St. Louis, every in-person voter can pick up an "I Voted" sticker on the way out, absentee voters included. Other election authorities set their own practice.',
+			'es' => 'En la ciudad de St. Louis, toda persona que vota en persona puede llevarse un sticker de "I Voted" al salir, incluidas las que votan en ausencia. Las demás autoridades electorales deciden por su cuenta.',
+			'src' => 'https://www.stlouis-mo.gov/government/departments/board-election-commissioners/voter/absentee/no-excuse-absentee.cfm',
+			'checked' => '2026-10-23',
 		),
 		'faq.provisional' => array(
 			'en' => 'If you vote a provisional ballot, you\'ll get a stub from the envelope with instructions on how to check that your ballot was counted.',
@@ -3589,6 +3599,10 @@ return array(
 				'en' => 'the Durham County Board of Elections',
 				'es' => 'la junta electoral del condado de Durham (Board of Elections)',
 			),
+			'www.guilfordcountync.gov' => array(
+				'en' => 'the Guilford County Board of Elections',
+				'es' => 'la junta electoral del condado de Guilford (Board of Elections)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'The regular deadline was 5 p.m. on Friday, October 9, 2026. You can still register and vote at the same time at any early voting site in your county until early voting ends. Same-day registration isn\'t available for most voters on Election Day.',
@@ -3693,6 +3707,12 @@ return array(
 			'es' => 'Algunos condados de North Carolina dejan que los residentes ayuden a elegir el sticker. El concurso de 2026 del condado de Durham empezó con una votación pública, y los tres diseños con más votos pasan a la junta electoral del condado (Board of Elections), que elige al ganador.',
 			'src' => 'https://www.dcovotes.dconc.gov/Home/Components/News/News/10867/4100',
 			'checked' => '2026-10-21',
+		),
+		'sticker.early' => array(
+			'en' => 'In Guilford County, early voting officials hand you an "I Voted Early" sticker once your ballot has gone through the tabulator, and curbside voters get one at the car. Other counties choose their own stickers.',
+			'es' => 'En el condado de Guilford, el personal de votación anticipada te da un sticker de "I Voted Early" cuando tu boleta pasa por la máquina tabuladora, y a quienes votan desde el auto se lo llevan al carro. Los demás condados eligen sus propios stickers.',
+			'src' => 'https://www.guilfordcountync.gov/media/2742/open',
+			'checked' => '2026-10-23',
 		),
 		'faq.provisional' => array(
 			'en' => 'You vote a provisional ballot when there\'s a question about your registration or address, you\'re at the wrong precinct, or you can\'t show photo ID. Your county board researches it and counts it if you\'re eligible. Check its status online with your PIN, starting 10 days after the election.',
@@ -5257,6 +5277,10 @@ return array(
 				'en' => 'the South Carolina Election Commission',
 				'es' => 'la Comisión Electoral de South Carolina (South Carolina Election Commission)',
 			),
+			'charlestoncounty.gov' => array(
+				'en' => 'the Charleston County Board of Voter Registration and Elections',
+				'es' => 'la oficina electoral del condado de Charleston (Board of Voter Registration and Elections)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Registration closed on Sunday, October 4, 2026 online and on Monday, October 5 by mail. Not sure you\'re registered? Check MyscVOTES.',
@@ -5364,6 +5388,12 @@ return array(
 			'es' => 'Los lugares de votación cierran a las 7 p. m. Si estás en la fila a esa hora, no te salgas. Te dejarán votar.',
 			'src' => 'https://scvotes.gov/voters/how-to-vote/',
 			'checked' => '2026-10-21',
+		),
+		'sticker.early' => array(
+			'en' => 'Each county picks its own sticker. In Charleston County, the 2026 student contest winners go to early voters at every early voting center, and to absentee voters, for a limited time.',
+			'es' => 'Cada condado elige su propio sticker. En el condado de Charleston, los diseños ganadores del concurso estudiantil de 2026 se entregan por tiempo limitado en todos los centros de votación anticipada y a quienes votan en ausencia.',
+			'src' => 'https://charlestoncounty.gov/departments/bevr/outreach.php',
+			'checked' => '2026-10-23',
 		),
 		'faq.provisional' => array(
 			'en' => 'You vote one if you forgot your photo ID, or if you can\'t get one and sign a reasonable impediment affidavit. If you forgot it, show your ID at the county office before certification. County boards decide which provisional ballots count on the Friday after the election.',
@@ -5637,6 +5667,10 @@ return array(
 				'en' => 'the Texas Election Code',
 				'es' => 'el Código Electoral de Texas',
 			),
+			'newtools.cira.state.tx.us' => array(
+				'en' => 'Gaines County',
+				'es' => 'el condado de Gaines',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Registration closed October 5, 2026. Texas has no same-day or Election Day registration.',
@@ -5722,6 +5756,12 @@ return array(
 			'es' => 'Guarda el teléfono en el cuarto donde se vota, y tómate la selfie con tu sticker afuera: Texas prohíbe grabar imágenes o sonido a menos de 100 pies de una cabina de votación.',
 			'src' => 'https://statutes.capitol.texas.gov/Docs/EL/htm/EL.61.htm',
 			'checked' => '2026-10-21',
+		),
+		'sticker.early' => array(
+			'en' => 'Each Texas county picks its own sticker. In Gaines County, the 2026 sticker is a student\'s design, handed out at every early voting location and Election Day vote center.',
+			'es' => 'Cada condado de Texas elige su propio sticker. En el condado de Gaines, el sticker de 2026 es el diseño de un estudiante y se entrega en todos los lugares de votación anticipada y centros de votación del Día de las Elecciones.',
+			'src' => 'https://newtools.cira.state.tx.us/page/gaines.ElectionsStickerpage',
+			'checked' => '2026-10-23',
 		),
 		'faq.provisional' => array(
 			'en' => 'You vote a provisional ballot when poll workers can\'t verify your registration. You\'ll get a notice in the mail by the 10th day after the local canvass telling you whether it counted.',
@@ -6166,6 +6206,10 @@ return array(
 				'en' => 'the Washington Secretary of State',
 				'es' => 'la Secretaría de Estado de Washington',
 			),
+			'www.thurstoncountywa.gov' => array(
+				'en' => 'the Thurston County Auditor\'s Office',
+				'es' => 'la oficina del auditor del condado de Thurston (Auditor\'s Office)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Online or by mail: must be received by Monday, October 26. In person: at any county elections office until 8 p.m. on Election Day.',
@@ -6222,6 +6266,12 @@ return array(
 			'es' => 'Firma el sobre. Tu condado compara la firma con la que tiene en tu registro. ¿No puedes firmar? Haz una marca frente a dos testigos y pídeles que firmen en los espacios del sobre.',
 			'src' => 'https://www.sos.wa.gov/elections/voters/helpful-information/frequently-asked-questions-voting-mail',
 			'checked' => '2026-10-21',
+		),
+		'sticker.mail' => array(
+			'en' => 'Check your ballot packet first, since some counties put a sticker in it. Thurston County includes its "I Voted" sticker, by local artist Alexis Trono, in every ballot packet through the 2027 primary, this election included.',
+			'es' => 'Primero revisa el paquete de tu boleta, porque algunos condados incluyen un sticker. El condado de Thurston pone su sticker de "I Voted", obra de la artista local Alexis Trono, en todos los paquetes de boletas hasta las primarias de 2027, incluida esta elección.',
+			'src' => 'https://www.thurstoncountywa.gov/news/thurston-county-auditors-office-unveils-new-i-voted-sticker-and-celebrates-national-voter-registration-day',
+			'checked' => '2026-10-23',
 		),
 		'faq.track' => array(
 			'en' => 'Sign in to VoteWA.gov and check your ballot status, or text VOTE to 868392 for updates by text message.',

@@ -7,6 +7,10 @@
   "www.sos.wa.gov": {
    "en": "the Washington Secretary of State",
    "es": "la Secretaría de Estado de Washington"
+  },
+  "www.thurstoncountywa.gov": {
+   "en": "the Thurston County Auditor's Office",
+   "es": "la oficina del auditor del condado de Thurston (Auditor's Office)"
   }
  },
  "dates": {
@@ -130,6 +134,14 @@
  "sticker": {
   "tradition": {
    "status": "missing"
+  },
+  "mail": {
+   "en": "Check your ballot packet first, since some counties put a sticker in it. Thurston County includes its \"I Voted\" sticker, by local artist Alexis Trono, in every ballot packet through the 2027 primary, this election included.",
+   "es": "Primero revisa el paquete de tu boleta, porque algunos condados incluyen un sticker. El condado de Thurston pone su sticker de \"I Voted\", obra de la artista local Alexis Trono, en todos los paquetes de boletas hasta las primarias de 2027, incluida esta elección.",
+   "src": "https://www.thurstoncountywa.gov/news/thurston-county-auditors-office-unveils-new-i-voted-sticker-and-celebrates-national-voter-registration-day",
+   "checked": "2026-10-23",
+   "quote": "be included in every ballot packet through the 2027 Primary Election, including the 2026 federal midterms",
+   "status": "verified"
   }
  },
  "faq": {

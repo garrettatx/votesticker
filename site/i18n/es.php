@@ -360,6 +360,8 @@ return array(
 		'Returning Your Ballot' => 'Cómo devolver tu boleta', 'Drop Boxes and Voting Centers' => 'Buzones y centros de votación', 'How to Get Your Ballot In' => 'Cómo entregar tu boleta',
 		'What if I forgot to sign my ballot envelope in %s?' => '¿Qué pasa si se me olvidó firmar el sobre de mi boleta en %s?',
 		'Is it too late to mail my ballot in %s?' => '¿Ya es tarde para mandar mi boleta por correo en %s?',
+		'Do I get an I voted sticker if I vote early in %s?' => '¿Me dan un sticker de "I Voted" si voto por anticipado en %s?',
+		'I voted by mail in %s. How do I get a sticker?' => 'Voté por correo en %s. ¿Cómo consigo un sticker?',
 		'Voting dates and links come from official state election sources.' => 'Las fechas y los enlaces vienen de fuentes electorales oficiales de cada estado.',
 		'Before you vote, check your registration, ballot status, and drop box locations with your county elections office.' => 'Antes de votar, revisa tu registro, el estado de tu boleta y los buzones con la oficina electoral de tu condado.',
 		'Before you vote, check your registration, polling place, hours, and ID rules with your state or local election office.' => 'Antes de votar, verifica tu registro de votante, tu lugar de votación, los horarios y los requisitos de identificación con la oficina electoral de tu estado o localidad.',

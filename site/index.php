@@ -410,10 +410,19 @@ function vote_guide( $st ) {
 	// Rules at the polls, then the state's own sticker tradition, which leads back to the maker.
 	$p = $section( 'polls-h', t( 'Phones, Photos, and Campaign Gear' ), array( 'polls_rules.gear', 'polls_rules.phone', 'polls_rules.line' ) );
 	if ( $p ) { $out .= $p[0] . vote_sources_line( $st, $p[1] ) . '</section>'; }
-	$sticker = vote_fact( $st, 'sticker.tradition' );
+	// The tradition, then where to get a sticker when you vote early or by mail (October 23). Each answer
+	// names the county or city it comes from; a state gets one only with an official source for it.
+	$sticker = '';
+	$ssrc = array();
+	foreach ( array( 'sticker.tradition' => '', 'sticker.early' => 'Do I get an I voted sticker if I vote early in %s?', 'sticker.mail' => 'I voted by mail in %s. How do I get a sticker?' ) as $k => $q ) {
+		$f = vote_fact( $st, $k );
+		if ( ! $f ) { continue; }
+		$sticker .= ( $q ? '<h3>' . vote_e( t( $q, $name ) ) . '</h3>' : '' ) . '<p>' . vote_e( $f['text'] ) . '</p>';
+		$ssrc[] = $f['src'];
+	}
 	if ( $sticker ) {
-		$out .= '<section class="guide" aria-labelledby="sticker-h">' . $h( 'sticker-h', t( '%s and the I Voted Sticker', $name ) ) . '<p>' . vote_e( $sticker['text'] ) . '</p>' . vote_history_more( $st )
-			. '<p><a href="#maker-h">' . vote_e( t( 'Make your own %s I voted sticker', $name ) ) . '</a></p>' . vote_sources_line( $st, array( $sticker['src'] ) ) . '</section>';
+		$out .= '<section class="guide" aria-labelledby="sticker-h">' . $h( 'sticker-h', t( '%s and the I Voted Sticker', $name ) ) . $sticker . vote_history_more( $st )
+			. '<p><a href="#maker-h">' . vote_e( t( 'Make your own %s I voted sticker', $name ) ) . '</a></p>' . vote_sources_line( $st, $ssrc ) . '</section>';
 	}
 	return $out;
 }
