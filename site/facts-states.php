@@ -5279,6 +5279,12 @@ return array(
 			'src' => 'https://scvotes.gov/wp-content/uploads/2026/09/Absentee-Statewide-General-Election-Go-To-Guide.pdf',
 			'checked' => '2026-10-21',
 		),
+		'dates.early_hours' => array(
+			'en' => 'Early voting centers are open 8:30 a.m. to 6 p.m., Monday to Saturday, October 19 to 31. They\'re closed Sunday, October 25.',
+			'es' => 'Los centros de votación anticipada abren de 8:30 a. m. a 6 p. m., de lunes a sábado, del 19 al 31 de octubre. Cierran el domingo 25 de octubre.',
+			'src' => 'https://scvotes.gov/voters/early-voting/',
+			'checked' => '2026-10-23',
+		),
 		'how.in_person' => array(
 			'en' => 'Vote early at any early voting center in your county, no reason needed, with your photo ID. On Election Day, vote at the polling place for your precinct.',
 			'es' => 'Vota por anticipado en cualquier centro de votación anticipada de tu condado, sin dar una razón, con tu identificación con foto. El Día de las Elecciones, vota en el lugar de votación de tu precinto.',

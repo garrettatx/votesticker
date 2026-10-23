@@ -38,8 +38,12 @@
    "status": "verified"
   },
   "early_hours": {
-   "status": "missing",
-   "notes": "Conflict on one official page. scvotes.gov/voters/early-voting/ says for 2026: 'Early voting centers are open 8:30 a.m.- 6:00 p.m. (Monday-Saturday)', and further down, in its general schedule: 'Statewide General Elections Monday, 15 days prior to election day, through Saturday, three days prior to election day. 8:30 a.m. – 5:00 p.m. Closed Sundays and state holidays.' The 6 p.m. close is also on the 2026prep page and the Voter Go-To Guide, and S.C. Code 7-13-25(F)(1) says 'for statewide general elections, the early voting centers must be open from 8:30 a.m. until 6:00 p.m. on each day of the early voting period'. Left missing until Garrett picks; 6 p.m. has the statute behind it."
+   "en": "Early voting centers are open 8:30 a.m. to 6 p.m., Monday to Saturday, October 19 to 31. They're closed Sunday, October 25.",
+   "es": "Los centros de votación anticipada abren de 8:30 a. m. a 6 p. m., de lunes a sábado, del 19 al 31 de octubre. Cierran el domingo 25 de octubre.",
+   "src": "https://scvotes.gov/voters/early-voting/",
+   "checked": "2026-10-23",
+   "quote": "Early voting centers are open 8:30 a.m.- 6:00 p.m. (Monday-Saturday)",
+   "status": "verified"
   },
   "cure": {
    "status": "missing",

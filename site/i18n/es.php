@@ -79,7 +79,7 @@ return array(
 			'note' => 'Esta boleta por correo en persona es la forma en que los votantes de Pennsylvania votan por anticipado.',
 		),
 		'RI' => array( 'note' => 'Vota en el ayuntamiento de tu ciudad o pueblo, o en un lugar designado, en horario regular de oficina.' ),
-		'SC' => array( 'note' => 'De lunes a sábado; cerrado el domingo 25 de octubre. Vota en cualquier centro de votación anticipada de tu condado.' ),
+		'SC' => array( 'note' => 'De 8:30 a. m. a 6 p. m., de lunes a sábado; cerrado el domingo 25 de octubre. Vota en cualquier centro de votación anticipada de tu condado.' ),
 		'TX' => array( 'note' => 'Vota en cualquier lugar de votación anticipada del condado donde te registraste.' ),
 		'VA' => array( 'note' => 'Todas las localidades ofrecen votación anticipada. Vota en la localidad donde te registraste.' ),
 		'WA' => array( 'ribbon' => 'BUZÓN HASTA LAS 8 P. M. DEL 3 NOV', 'note' => 'Las boletas se enviaron por correo a más tardar el 16 de octubre. Devuelve la tuya antes de las 8 p. m. del Día de las Elecciones, por correo o en un buzón de entrega de boletas.' ),

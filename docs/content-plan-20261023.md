@@ -130,9 +130,25 @@ official I voted sticker per state?" (No. Many are chosen by counties, and some 
   2028 starting point. Re-read every fact against the next season's sources (the facts files fail on
   stale check dates by design).
 
-## Decisions for You
+## Decisions (October 23)
 
-1. South Carolina early voting closes at 6 p.m. (statute) or 5 p.m. (older block on the same page)?
-2. Link the Portland volunteer who mails stickers, yes or no?
-3. Official-design gallery: a section of `/history/` or its own page?
-4. Run the title test on five pages first, or change all 51 at once?
+Garrett asked for recommendations; these are the calls, with the reason.
+
+1. **South Carolina closes at 6 p.m.** S.C. Code 7-13-25(F)(1), the 2026 early voting block on
+   scvotes.gov and the Voter Go-To Guide all say 6; only an older general block on the same page says 5.
+   Shipped October 23 (facts file and card note).
+2. **No link to the Portland volunteer.** The site links official sources only, and a private person's
+   inbox can't be checked or kept current. The Oregon answer names the state's virtual sticker and
+   Deschutes County's physical one, then the maker.
+3. **The official-design gallery gets its own page** (working URL `/official-stickers/`, Spanish
+   `/es/official-stickers/` once reviewed). One page per search intent: the home page is the maker,
+   `/history/` answers where the sticker came from, and the gallery answers "what does each state's
+   sticker look like." The home page and every state page link to it; it links back to both.
+4. **Change titles on every state page at once, inside the early-voting-ended work (1.1).** Each title
+   has to change when its window closes anyway, so one change per page beats two, and a five-page test
+   can't produce a readable result before November 3. Log each state's change date in
+   `docs/change-log.csv` and compare by state in BigQuery afterward.
+
+Later research to fold in: `docs/early-sticker-research-2026-10-23.md` (exact "I Voted Early" wording
+in Guilford County NC, Minneapolis and Milwaukee from official pages; 19 states unresolved). It feeds
+Phase 2.1, starting with Texas and North Carolina.
