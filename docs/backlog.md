@@ -10,6 +10,20 @@ Open items, newest first. Started October 21, 2026. Move an item to `docs/histor
 | **History of the I Voted sticker** | A sourced history page at `/history/`, linked from the state sticker sections, the home FAQ and About. | Plan: `docs/sticker-history-plan.md`. Waiting on Garrett's research and data; data visualization after. |
 | **"Early voting has ended" family** | Texas ends October 30, others sooner. A page that still says "early voting runs" after it closes is wrong. | Plan Section 5.1 (`early_over`). Depends on the daily rebuild. |
 
+## Analytics (October 23)
+
+Events, the share loop and the BigQuery archive are built (`docs/analytics.md`). These are Garrett's
+clicks in the GA4 and Search Console admin screens:
+
+| Item | Where | Notes |
+|---|---|---|
+| **Data retention to 14 months** | GA4 Admin, Data collection and modification, Data retention | The default is 2 months for explorations, so October's detail is gone by January. Not retroactive, so the sooner the better. |
+| **Register custom dimensions** | GA4 Admin, Custom definitions, event scope | `state`, `sticker_source`, `design`, `palette`, `message`, `save_method`, `post_variant`, `post_edited`, `search_term`, `method`. Parameters only show in reports after this, and not retroactively. |
+| **Mark `sticker_save` as a key event** | GA4 Admin, Events | After it has fired once on the live site (October 24 build). |
+| **Link GA4 to BigQuery** | GA4 Admin, Product links, BigQuery | Project `seo-command-ctr`, daily export, location US. Raw events, kept indefinitely. Not retroactive. |
+| **Search Console bulk export** | Search Console Settings, Bulk data export | Both service accounts are users already. Project `seo-command-ctr`, dataset suffix `votesticker`, location US. Adds totals, country and device for the hidden-query impressions, which the API drops. Starts within 48 hours; not retroactive. |
+| **Index snapshots through Election Day** | `python3 scripts/archive_search.py --index` | Weekly by hand (about 10 minutes); the Sunday job skips it to stay short. |
+
 ## Done October 21
 
 - Daily rebuild: `.github/workflows/daily-build.yml`, 11:05 UTC, first run passed every step. Secrets set from the environment.

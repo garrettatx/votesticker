@@ -492,8 +492,10 @@ function vote_post( $st, $kind = null, $variant = 'plan' ) {
 		? array( 'pre_mail' => '¿Cuándo vas a devolver tu boleta?', 'post' => '¿Y tú, ya tienes tu plan para votar?', 'default' => '¿Ya tienes tu plan para votar?' )
 		: array( 'pre_mail' => 'When are you sending yours back?', 'post' => "What's your plan to vote?", 'default' => "What's your plan to vote?" );
 	$question = $ask[ $after ? 'post' : $kind ] ?? $ask['default'];
-	// Full https:// URL so it links everywhere, LinkedIn and email included.
-	$link = 'https://votesticker.org/' . ( $es ? 'es/' : '' ) . vote_slug( $st['name'] );
+	// Full https:// URL so it links everywhere, LinkedIn and email included. /go/ is a short redirect to the
+	// state page with UTM tags (written into dist/_redirects by the build), so a friend who taps the
+	// link in someone's post shows in GA4 as source sticker_post, with the post version as utm_content.
+	$link = 'https://votesticker.org/' . ( $es ? 'es/' : '' ) . 'go/' . vote_slug( $st['name'] ) . '/' . $variant;
 	$invite = $es
 		? '¿Quieres uno? Haz gratis tu sticker para votar en ' . $name . ': ' . $link
 		: 'Want one? Make your own free ' . $name . ' vote sticker: ' . $link;
@@ -804,15 +806,20 @@ $vote_ld = array(
 <?php if ( $vote_st && ( $vote_faq_ld = vote_state_faq( $vote_st ) ) ) : ?><script type="application/ld+json"><?php echo vote_json( array( '@context' => 'https://schema.org', '@type' => 'FAQPage', 'inLanguage' => $vote_lang, 'mainEntity' => array_map( function ( $q ) { return array( '@type' => 'Question', 'name' => $q[0], 'acceptedAnswer' => array( '@type' => 'Answer', 'text' => $q[1] ) ); }, $vote_faq_ld ) ) ); ?></script><?php echo "\n"; endif; ?>
 <?php if ( $vote_history ) : ?><script type="application/ld+json"><?php echo vote_json( vote_history_ld( $vote_page, $vote_url ) ); ?></script><?php echo "\n"; endif; ?>
 <?php if ( ! $vote_st && ! $vote_404 && ! $vote_history ) : ?><script type="application/ld+json"><?php echo vote_json( array( '@context' => 'https://schema.org', '@type' => 'WebSite', 'name' => VOTE_BRAND, 'alternateName' => 'VoteSticker.org', 'url' => VOTE_SITE . vote_pbase(), 'inLanguage' => $vote_lang ) ); ?></script><?php echo "\n"; endif; ?>
-<!-- Google tag (gtag.js) -->
-<script src="https://analytics.ahrefs.com/analytics.js" data-key="JWFR/FwEHfD5yA/gz1K/Jg" async></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PZWZTXDSDE"></script>
+<!-- Google tag (gtag.js) and Ahrefs analytics: only on votesticker.org, and never in an automated browser
+     (navigator.webdriver), so local previews and the QA scripts don't count as visits (October 23). -->
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-PZWZTXDSDE');
+  if (location.hostname === 'votesticker.org' && !navigator.webdriver) {
+    (function (d) {
+      var add = function (src, key) { var s = d.createElement('script'); s.async = true; s.src = src; if (key) { s.setAttribute('data-key', key); } d.head.appendChild(s); };
+      add('https://analytics.ahrefs.com/analytics.js', 'JWFR/FwEHfD5yA/gz1K/Jg');
+      add('https://www.googletagmanager.com/gtag/js?id=G-PZWZTXDSDE');
+    })(document);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { dataLayer.push(arguments); };
+    gtag('js', new Date());
+    gtag('config', 'G-PZWZTXDSDE');
+  }
 </script>
 </head>
 <body>

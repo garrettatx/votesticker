@@ -60,17 +60,23 @@ reverted. Start there.
    Priorities and research topics: `docs/search-console-priorities-20261023.html`; Garrett is
    running Perplexity research on those topics, then plan content per page (Texas, home, and the
    high-impression, low-click pages first).
-3. **"Early voting has ended" copy** before each state's window closes (Texas ends Oct 30). Plan
+3. **Analytics live check (October 24, after the build).** On the live site: save a ready-made and a
+   maker sticker, copy post text, open a `/go/texas/plan` link; confirm GA4 Realtime shows
+   `sticker_save`, `post_text_copy` and a `sticker_post` source. Then Garrett's GA4 and Search Console
+   admin items in `docs/backlog.md` under Analytics. Spec: `docs/analytics.md`; QA `scripts/qa_events.mjs`;
+   archive `scripts/archive_search.py` (Sunday weekly job). Research digest for the content plan:
+   `docs/research/perplexity-20261023.md`.
+4. **"Early voting has ended" copy** before each state's window closes (Texas ends Oct 30). Plan
    Section 5.1 in `docs/content-strategy-state-pages.md`; the daily build makes date logic safe.
-4. **After Nov 3:** the countdown hides itself, but the home hero copy and the H1 still talk about
+5. **After Nov 3:** the countdown hides itself, but the home hero copy and the H1 still talk about
    voting; plan the post-election version.
-5. **Maker ideas** in `docs/backlog.md`: "First time voter" message, 48 px profile preview, copy alt
+6. **Maker ideas** in `docs/backlog.md`: "First time voter" message, 48 px profile preview, copy alt
    text, cut-out PNG, 1080 x 1350. Design follow-ons (tilt control, Stack as a fix to Big type,
    cover photo) are under Sticker Designs in the same file.
-6. **History page, later:** Alaska and Maine ranked-choice Resist Now link; more state and county
+7. **History page, later:** Alaska and Maine ranked-choice Resist Now link; more state and county
    stories (blank states are fine as "No featured story yet"); records requests and interviews
    (Boudreau, Rowan, Michigan, Ulster) need a person to send them.
-7. **After the election:** privacy and accessibility section on About; "Submit a sticker" needs a
+8. **After the election:** privacy and accessibility section on About; "Submit a sticker" needs a
    rights plan.
 
 ## How To Build and Ship
@@ -85,6 +91,7 @@ python3 -I scripts/qa_es.py --base http://127.0.0.1:8792/
 python3 -I scripts/qa_facts.py --base http://127.0.0.1:8792/
 node scripts/qa_cards.mjs http://127.0.0.1:8792/                   # slow; run in the background
 node scripts/qa_save.mjs --base http://127.0.0.1:8792/             # saving on iPhone, Android, desktop
+node scripts/qa_events.mjs --base http://127.0.0.1:8792/           # GA4 events, share links, no analytics in QA
 wrangler pages deploy dist --project-name votesticker --branch main --commit-dirty=true
 ```
 

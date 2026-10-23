@@ -1,0 +1,17 @@
+date,area,change,commit
+2026-10-19,launch,"VoteSticker.org live on Cloudflare Pages; garrettn.com/vote/ 301s to it",d3fc871
+2026-10-19,seo,"Every state page indexable; I voted sticker titles; sitemap; IndexNow",22cf482
+2026-10-19,spanish,"Spanish site at /es/ (52 pages), indexing on, sitemap language pairs",54876bc
+2026-10-19,content,"State FAQs on all 51 pages (180 answers)",8de7835
+2026-10-19,indexing,"Sitemap submitted in Search Console",
+2026-10-20,design,"Codex ready-made sets replace the earlier sets, state by state (Oct 20 to 21)",8ca40ac
+2026-10-21,design,"Maker rebuilt: one tile per design, color swatches, seven new layouts",3a32bdc
+2026-10-21,content,"Post text: four versions per message (Plan, Short, Friends, Official info)",15a0c1b
+2026-10-21,seo,"OG share cards show each state's hero sticker and two more from its set",4191a6a
+2026-10-21,content,"State voting guides with sources and FAQPage schema, Texas first; all 51 live by end of day",d7dca6d
+2026-10-21,ops,"Daily build: GitHub Action rebuilds, QAs and deploys main at 6:05 a.m. Central, with IndexNow",5c8d31e
+2026-10-22,content,"Sticker history page (/history/, /es/history/) and links to it",4f665ae
+2026-10-22,design,"Home: shorter hero, Election Day countdown on home and state pages",4362e8a
+2026-10-23,indexing,"Request Indexing for 11 unindexed URLs (CO, ND, 9 Spanish); /es/wyoming/ left for quota",42ef280
+2026-10-24,maker,"Save to Photos on iPhone (share sheet, press and hold); Shadow, Ring and Half designs; small-phone finder",c4fce1f
+2026-10-24,analytics,"GA4 events (sticker_save, post_text_copy, share, state_search_miss); analytics off in automated browsers; post links through /go/ with UTM tags",

@@ -109,6 +109,12 @@ def main():
     (DIST / '404.html').write_text(render('404'))
     (DIST / 'es' / '404.html').write_text(render('es/404'))  # Pages serves the nearest 404.html
     (DIST / 'robots.txt').write_text(f'User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}sitemap.xml\n')
+    # Share loop (October 23): the link in the suggested post text is /go/<state>/<version>, which lands
+    # on the state page tagged as a friend arriving from someone's post. 302 so the tags can change later.
+    utm = 'utm_source=sticker_post&utm_medium=social&utm_campaign=vote_2026'
+    (DIST / '_redirects').write_text(''.join(
+        f'{p}go/:state/:version /{p[1:]}:state/?{utm}&utm_content=:version 302\n{p}go/:state /{p[1:]}:state/?{utm} 302\n'
+        for p in ('/es/', '/')))
     print(f'dist/: {copied} files copied, {len(pages)} pages rendered, sitemap {len(urls)} URLs')
 
 

@@ -1078,6 +1078,14 @@
 		} catch (e) { return false; }
 	}
 	var SHARE_TO_PHOTOS = DEVICE === 'ios' && canShareFile('image/png');
+
+	// Analytics (October 23): a few GA4 events, one per thing someone finishes, never per click on a
+	// tile or swatch. Names and parameters are listed in docs/analytics.md; values are short preset ids,
+	// never free text. window.gtag exists only on votesticker.org outside automated browsers (index.php).
+	function track(name, params) {
+		if (typeof window.gtag !== 'function') { return; }
+		try { window.gtag('event', name, params); } catch (e) { /* analytics never breaks a save */ }
+	}
 	var TIPS = {
 		ios: SHARE_TO_PHOTOS ? T('Tap Save to Photos, then Save Image. Then set it as your profile picture from Photos.') : T('Press and hold the picture, then tap Save to Photos.'),
 		android: T('The picture saves to your Downloads. Set it as your profile picture from there.'),
@@ -1112,19 +1120,31 @@
 
 	// Save a picture on iOS: the share sheet when it can take the file, else press and hold. `blob` may be
 	// null when the file isn't in hand yet (a ready-made still loading); the share sheet needs it within
-	// the tap, so then it goes straight to press and hold. Returns how it saved, for QA.
-	function saveOnIOS(blob, name, src, alt) {
+	// the tap, so then it goes straight to press and hold. `done(method)` reports how it ended: share_sheet,
+	// press_hold, or cancelled (the sheet closed). Returns how it started, for QA.
+	function saveOnIOS(blob, name, src, alt, done) {
+		done = done || function () {};
 		if (blob && canShareFile(blob.type)) {
 			var file = new File([blob], name, { type: blob.type });
-			navigator.share({ files: [file] }).catch(function (err) {
+			navigator.share({ files: [file] }).then(function () { done('share_sheet'); }, function (err) {
 				// Closing the share sheet is not an error; anything else gets press and hold.
-				if (err && err.name === 'AbortError') { return; }
+				if (err && err.name === 'AbortError') { done('cancelled'); return; }
 				holdToSave(src, alt);
+				done('press_hold');
 			});
 			return 'share';
 		}
 		holdToSave(src, alt);
+		done('press_hold');
 		return 'hold';
+	}
+	// One sticker_save per picture someone saved. On iPhone a closed share sheet is sticker_save_cancel
+	// instead, so the save count stays real and the cancel rate shows whether the share sheet works.
+	function saved(params) {
+		return function (method) {
+			params.save_method = method;
+			track(method === 'cancelled' ? 'sticker_save_cancel' : 'sticker_save', params);
+		};
 	}
 	function afterSave() {
 		// After the picture is on its way, one quiet line about the sticker's history (never before).
@@ -1137,9 +1157,10 @@
 		link.addEventListener('click', function (e) {
 			if (!current.blob) { e.preventDefault(); return; }
 			afterSave();
-			if (DEVICE !== 'ios') { return; }
+			var done = saved({ state: state.state, sticker_source: 'maker', design: state.design, palette: state.palette, message: state.headline });
+			if (DEVICE !== 'ios') { done('download'); return; }
 			e.preventDefault();
-			window.VOTE_LAST_SAVE = saveOnIOS(current.blob, current.name, current.url, $('preview').alt);
+			window.VOTE_LAST_SAVE = saveOnIOS(current.blob, current.name, current.url, $('preview').alt, done);
 		});
 	}
 
@@ -1160,10 +1181,11 @@
 			var a = e.target.closest ? e.target.closest('a.tile') : null;
 			if (!a) { return; }
 			afterSave();
-			if (DEVICE !== 'ios') { return; }
+			var done = saved({ state: state.state, sticker_source: 'ready_made', design: 'ready_' + (a.dataset.n || '0') });
+			if (DEVICE !== 'ios') { done('download'); return; }
 			e.preventDefault();
 			var src = a.getAttribute('href'), b = readyBlobs[src], img = a.querySelector('img');
-			window.VOTE_LAST_SAVE = saveOnIOS(b && b !== 'loading' ? b : null, a.getAttribute('download') || 'vote-sticker.jpg', src, img ? img.alt : '');
+			window.VOTE_LAST_SAVE = saveOnIOS(b && b !== 'loading' ? b : null, a.getAttribute('download') || 'vote-sticker.jpg', src, img ? img.alt : '', done);
 		});
 		if (DEVICE !== 'ios') { return; }
 		var watch = function () {
@@ -1331,6 +1353,7 @@
 			a.className = 'tile';
 			a.href = src;
 			a.download = name;
+			a.dataset.n = String(i + 1);
 			var img = document.createElement('img');
 			img.src = src;
 			img.alt = (window.VOTE_ALTS || [])[i] || T('%s vote sticker, ready-made design %s', nameOf(st), i + 1);
@@ -1466,6 +1489,7 @@
 		// No call on load: the server already wrote the version for the state's default message.
 		$('copy').addEventListener('click', function () {
 			var t = $('post-text');
+			track('post_text_copy', { state: state.state, message: state.headline, post_variant: postVariant, post_edited: postEdited ? 'yes' : 'no' });
 			var done = function () { $('copy').textContent = T('Copied'); setTimeout(function () { $('copy').textContent = T('Copy post text'); }, 2000); };
 			if (navigator.clipboard && navigator.clipboard.writeText) {
 				navigator.clipboard.writeText(t.value).then(done, function () { t.select(); document.execCommand('copy'); done(); });
@@ -1479,11 +1503,13 @@
 			var shareUrl = shareBtn.dataset.url, shareTitle = shareBtn.dataset.title, shareLabel = $('share-label').textContent;
 			var said = function (t) { $('share-label').textContent = t; setTimeout(function () { $('share-label').textContent = shareLabel; }, 2200); };
 			shareBtn.addEventListener('click', function () {
+				// GA4's recommended share event; content_type page tells it apart from a saved sticker.
+				var shared = function (method) { track('share', { method: method, content_type: 'page', item_id: state.state || 'hub' }); };
 				if (navigator.share && /Android|iPhone|iPad/.test(navigator.userAgent)) {
-					navigator.share({ title: shareTitle, url: shareUrl }).catch(function () {});
+					navigator.share({ title: shareTitle, url: shareUrl }).then(function () { shared('share_sheet'); }, function () {});
 					return;
 				}
-				var copied = function () { said(T('Link copied')); };
+				var copied = function () { said(T('Link copied')); shared('copy_link'); };
 				var fallback = function () {
 					var t = document.createElement('textarea');
 					t.value = shareUrl; t.setAttribute('readonly', ''); t.style.position = 'fixed'; t.style.left = '-9999px';
@@ -1517,6 +1543,14 @@
 				return [nameOf(s), s.name, (meta[s.abbr] || {}).alias || ''].some(function (nm) { var n = fold(nm); return n.indexOf(q) === 0 || n.indexOf(' ' + q) > 0; });
 			});
 			return code.concat(words.filter(function (s) { return code.indexOf(s) < 0; })).slice(0, 8);
+		};
+		// A search that matched nothing, once per term per page: what people call their state that we don't.
+		var missed = {};
+		var miss = function () {
+			var q = fold(input.value.trim()).slice(0, 30);
+			if (q.length < 2 || find(q).length || missed[q]) { return; }
+			missed[q] = true;
+			track('state_search_miss', { search_term: q });
 		};
 		var close = function () { list.hidden = true; input.setAttribute('aria-expanded', 'false'); input.removeAttribute('aria-activedescendant'); active = -1; };
 		var mark = function (i) {
@@ -1557,11 +1591,11 @@
 		input.addEventListener('keydown', function (e) {
 			if (e.key === 'ArrowDown' && matches.length) { e.preventDefault(); if (list.hidden) { draw(); } else { mark(Math.min(active + 1, matches.length - 1)); } }
 			else if (e.key === 'ArrowUp' && matches.length) { e.preventDefault(); mark(Math.max(active - 1, 0)); }
-			else if (e.key === 'Enter') { e.preventDefault(); if (matches[active]) { visit(matches[active].abbr); } else if (matches[0]) { visit(matches[0].abbr); } }
+			else if (e.key === 'Enter') { e.preventDefault(); miss(); if (matches[active]) { visit(matches[active].abbr); } else if (matches[0]) { visit(matches[0].abbr); } }
 			else if (e.key === 'Escape') { close(); }
 		});
-		input.addEventListener('blur', function () { setTimeout(close, 120); });
-		go.addEventListener('click', function () { draw(); if (matches[0]) { visit(matches[active >= 0 ? active : 0].abbr); } else { input.focus(); } });
+		input.addEventListener('blur', function () { miss(); setTimeout(close, 120); });
+		go.addEventListener('click', function () { draw(); miss(); if (matches[0]) { visit(matches[active >= 0 ? active : 0].abbr); } else { input.focus(); } });
 	}
 
 	function fonts() {
