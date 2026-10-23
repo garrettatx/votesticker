@@ -15,3 +15,4 @@ date,area,change,commit
 2026-10-23,indexing,"Request Indexing for 11 unindexed URLs (CO, ND, 9 Spanish); /es/wyoming/ left for quota",42ef280
 2026-10-24,maker,"Save to Photos on iPhone (share sheet, press and hold); Shadow, Ring and Half designs; small-phone finder",c4fce1f
 2026-10-24,analytics,"GA4 events (sticker_save, post_text_copy, share, state_search_miss); analytics off in automated browsers; post links through /go/ with UTM tags",
+2026-10-24,content,"Maine early voting Oct 5 to 29 (was Election Day only); Nebraska start date Oct 5",

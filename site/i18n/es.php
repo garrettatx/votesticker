@@ -52,6 +52,10 @@ return array(
 			'note' => 'Consulta con la oficina electoral de tu condado la fecha de inicio, los horarios y los lugares.',
 		),
 		'MD' => array( 'note' => 'Los centros de votación anticipada abren de 7 a. m. a 8 p. m.' ),
+		'ME' => array(
+			'summary' => 'En Maine, puedes votar con una boleta de voto en ausencia en persona en la oficina del secretario de tu pueblo o ciudad (town or city clerk), por cualquier motivo, del lunes 5 de octubre al jueves 29 de octubre.',
+			'note' => 'No necesitas solicitud. El horario es el de la oficina del secretario, que fija cada pueblo.',
+		),
 		'MI' => array( 'note' => 'Todas las comunidades abren al menos estos días; algunas agregan más. Busca tu lugar en mi.gov/earlyvoting.' ),
 		'MN' => array( 'note' => 'Vota en la oficina electoral de tu condado o ciudad; el último día es el lunes 2 de noviembre, hasta las 5 p. m.' ),
 		'MS' => array( 'note' => 'El voto en ausencia, en persona o por correo, está disponible para votantes que cumplan ciertas condiciones.' ),
@@ -60,8 +64,8 @@ return array(
 			'note' => 'Vota en el lugar que indique tu autoridad electoral local (local election authority).',
 		),
 		'NE' => array(
-			'summary' => 'Puedes votar por anticipado en persona en la oficina electoral de tu condado hasta el lunes 2 de noviembre.',
-			'note' => 'La votación anticipada en persona abre 30 días antes de la elección; llama a la oficina de tu condado para saber los horarios.',
+			'summary' => 'Puedes votar por anticipado en persona en la oficina electoral de tu condado del lunes 5 de octubre al lunes 2 de noviembre.',
+			'note' => 'Cada oficina electoral de condado fija su propio horario; llama a la tuya antes de ir.',
 		),
 		'NV' => array( 'note' => 'Busca los centros de votación anticipada de tu condado a través de la Secretaría de Estado (Secretary of State).' ),
 		'NH' => array( 'note' => 'Si no puedes votar en persona el Día de las Elecciones, es posible que cumplas los requisitos para votar con una boleta de voto en ausencia.' ),
