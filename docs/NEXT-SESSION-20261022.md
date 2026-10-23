@@ -1,7 +1,8 @@
-# Vote Sticker: Resume Here (October 22, 2026)
+# Vote Sticker: Resume Here (Updated October 23, 2026)
 
-Election Day is Tuesday, November 3. Everything below is live, committed and pushed. Nothing is half
-done.
+Election Day is Tuesday, November 3. Everything is committed and pushed. **The October 22 late
+session (iPhone save fix, three new designs, small-phone finder fix) is NOT deployed yet**: it passed
+every QA locally and waits for Garrett's OK to deploy. Start there.
 
 ## Where Things Stand
 
@@ -27,6 +28,15 @@ done.
   `site/index.php`; build sets the count, a footer script recounts by the visitor's date and hides
   it after Nov 3), plainer How It Works, home FAQ reordered (profile picture first). Kept on purpose:
   the H1, no hero caption, no state-preview swap, the trust band.
+- **Saving on iPhone (Oct 22, late):** ready-made stickers went to Files instead of Photos on iOS 27
+  (a plain `download` link). Both ready-mades and the maker now use the share sheet (Save Image) on
+  iOS and fall back to a full-screen press-and-hold view, never `download`. `scripts/qa_save.mjs`
+  checks every branch. The share sheet itself can't run headless, so check once on a real iPhone.
+- **Home finder at 320 to 374 px (Oct 22, late):** the box was 118 px wide beside its button on the
+  smallest phones; the button now goes under it. The earlier "card QA passed" report was wrong: the
+  run had printed FAILED for this, and it was live from the home polish until this deploy.
+- **Designs (Oct 22, late):** Shadow, Ring and Half replaced Poster and Stamp; history and the rejected
+  sketches are in `docs/backlog.md` under Sticker Designs.
 - **Resist Now:** three Learn-guide links on state pages (registration, voter ID, mail voting);
   rule in `docs/brand-brief.md`.
 - **IndexNow:** all 108 URLs submitted October 22 (200).
@@ -35,16 +45,22 @@ done.
 
 ## Open Items, in Order
 
-1. **"Early voting has ended" copy** before each state's window closes (Texas ends Oct 30). Plan
+1. **Deploy the October 22 late work (needs Garrett's OK).** Build, deploy, live QA (all five
+   scripts, including `qa_save.mjs` without `--base`), IndexNow for all 108 URLs (the maker and
+   finder are on every state page), then Garrett checks on his iPhone: tap a Texas ready-made, Save
+   Image, confirm it lands in Photos. Local QA on October 23: cards PASS (53,760 per browser, page
+   shots 320 to 1440), save PASS, SEO, Spanish and facts PASS.
+2. **"Early voting has ended" copy** before each state's window closes (Texas ends Oct 30). Plan
    Section 5.1 in `docs/content-strategy-state-pages.md`; the daily build makes date logic safe.
-2. **After Nov 3:** the countdown hides itself, but the home hero copy and the H1 still talk about
+3. **After Nov 3:** the countdown hides itself, but the home hero copy and the H1 still talk about
    voting; plan the post-election version.
-3. **Maker ideas** in `docs/backlog.md`: "First time voter" message, 48 px profile preview, copy alt
-   text, cut-out PNG, 1080 x 1350.
-4. **History page, later:** Alaska and Maine ranked-choice Resist Now link; more state and county
+4. **Maker ideas** in `docs/backlog.md`: "First time voter" message, 48 px profile preview, copy alt
+   text, cut-out PNG, 1080 x 1350. Design follow-ons (tilt control, Stack as a fix to Big type,
+   cover photo) are under Sticker Designs in the same file.
+5. **History page, later:** Alaska and Maine ranked-choice Resist Now link; more state and county
    stories (blank states are fine as "No featured story yet"); records requests and interviews
    (Boudreau, Rowan, Michigan, Ulster) need a person to send them.
-5. **After the election:** privacy and accessibility section on About; "Submit a sticker" needs a
+6. **After the election:** privacy and accessibility section on About; "Submit a sticker" needs a
    rights plan.
 
 ## How To Build and Ship
@@ -58,6 +74,7 @@ python3 -I scripts/qa_seo.py --base http://127.0.0.1:8792/ --no-legacy
 python3 -I scripts/qa_es.py --base http://127.0.0.1:8792/
 python3 -I scripts/qa_facts.py --base http://127.0.0.1:8792/
 node scripts/qa_cards.mjs http://127.0.0.1:8792/                   # slow; run in the background
+node scripts/qa_save.mjs --base http://127.0.0.1:8792/             # saving on iPhone, Android, desktop
 wrangler pages deploy dist --project-name votesticker --branch main --commit-dirty=true
 ```
 

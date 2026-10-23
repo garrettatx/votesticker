@@ -223,6 +223,8 @@ select:hover, input:hover, textarea:hover { border-color: #A79D86; }
 .finder input { flex: 1; min-width: 0; min-height: 56px; padding-inline: var(--s4); border: 2px solid #9AA6C4; font-size: 1.06rem; font-weight: 600; color: var(--ink); }
 .finder input:hover, .finder input:focus { border-color: var(--ink); }
 .finder .btn { min-height: 56px; padding-inline: 22px; }
+/* Small phones (320 to 374 px): the button goes under the box so the box keeps room to type. */
+@media (max-width: 374px) { .finder__box { flex-wrap: wrap; } .finder input { flex-basis: 100%; } .finder .btn { flex: 1; } }
 .finder ul { position: absolute; z-index: 5; left: 0; right: 0; top: calc(100% + 6px); margin: 0; padding: 6px; list-style: none; background: #fff; border: 1.5px solid var(--ink); border-radius: var(--radius); box-shadow: 0 14px 30px rgba(20, 41, 94, 0.22); color: var(--text); }
 .finder li[role="option"] { display: flex; justify-content: space-between; gap: var(--s3); align-items: baseline; padding: 11px 12px; border-radius: 8px; cursor: pointer; font-weight: 700; }
 .finder li[aria-selected="true"], .finder li[role="option"]:hover { background: #FBF0D2; }
@@ -686,3 +688,10 @@ nav.foot__links a + a { margin-left: 0; }
 .how__more { margin: var(--s4) 0 0; font-size: var(--fs-sm); }
 .how__more a { font-weight: 700; }
 .top .finder__free { color: var(--cream); font-weight: 600; }
+
+/* iOS press-and-hold saver (October 22): the picture full screen, for Save to Photos. */
+.hold-save { position: fixed; inset: 0; z-index: 50; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--s4); padding: var(--s5) 16px; background: rgba(10, 18, 40, 0.94); color: var(--cream); text-align: center; }
+.hold-save[hidden] { display: none; }
+.hold-save__h { margin: 0; max-width: 32ch; font-weight: 700; font-size: 1.05rem; line-height: 1.35; }
+.hold-save__img { display: block; width: min(86vw, 62vh, 520px); height: auto; aspect-ratio: auto; border-radius: 12px; -webkit-touch-callout: default; user-select: auto; }
+body.is-holding { overflow: hidden; }

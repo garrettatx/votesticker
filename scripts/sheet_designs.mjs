@@ -22,7 +22,7 @@ async function sheet(url, spec, file, pre) {
   }, spec);
   fs.writeFileSync(file, Buffer.from(data.split(',')[1], 'base64'));
 }
-const designs = ['tilt','type','brush','side','arch','plate','split','below','sticker','poster','stamp'];
+const designs = ['tilt','type','brush','side','arch','plate','split','below','sticker','shadow','ringtext','half'];
 const pals = ['state','cream','navy','forest','cobalt','maroon','plum','teal','rust','charcoal'];
 await sheet('http://127.0.0.1:8791/texas/', { rows: designs, cols: pals.map((x) => ({ state: 'TX', palette: x })) }, OUT + '/sheet-palettes.png');
 const cols = [

@@ -12,7 +12,8 @@
 	'use strict';
 
 	var SIZE = 1080, STORY_H = 1920, SAFE = 500;
-	var DISPLAY = '"Vote Display"', DATE = '"Vote Date"', BRUSH = '"Vote Brush"';
+	// SCRIPT is only for the Script layout under review (not in the row); sheets load a face with setScript.
+	var DISPLAY = '"Vote Display"', DATE = '"Vote Date"', BRUSH = '"Vote Brush"', SCRIPT = '"Vote Script"';
 
 	// October 21: the pale palettes (sand, sky, sage) went; a light disc has no edge on a white feed. The six
 	// new ones are the colors Garrett picked from the Codex sets: chartreuse on cobalt, gold on maroon, cream
@@ -87,8 +88,25 @@
 		{ id: 'split', name: 'Split', palette: 'cobalt' },
 		{ id: 'below', name: 'Map below', palette: 'forest' },
 		{ id: 'sticker', name: 'Sticker', palette: 'state' },
-		{ id: 'poster', name: 'Poster', palette: 'cream' },
-		{ id: 'stamp', name: 'Stamp', palette: 'navy' }
+		// October 22: Poster and Stamp retired (Poster was Big type with rules, Stamp was Plate with round
+		// corners). Three from Garrett's review of twelve sketches, picked for what no other tile does: a
+		// hard offset shadow, type set around a disc, and a color field with the state knocked out.
+		{ id: 'shadow', name: 'Shadow', palette: 'cream' },
+		{ id: 'ringtext', name: 'Ring', palette: 'maroon' },
+		{ id: 'half', name: 'Half', palette: 'cream' }
+	];
+	// October 22: layouts under review, rendered by scripts/sheet_new.mjs and not in the tile row. The
+	// first four mimic a printed sticker (a kiss-cut edge, a scalloped seal, script lettering, a vertical
+	// name); Garrett passed on them because these are stickers people save, not print. The twelve after
+	// them are flat lockups in the ready-made sets' spirit; Shadow, Ring and Half went into the row.
+	var REVIEW = [
+		{ id: 'cut', name: 'Die cut', palette: 'cream' }, { id: 'seal', name: 'Seal', palette: 'maroon' },
+		{ id: 'script', name: 'Script', palette: 'teal' }, { id: 'vert', name: 'Vertical', palette: 'navy' },
+		{ id: 'band', name: 'Band', palette: 'navy' }, { id: 'tone', name: 'Watermark', palette: 'forest' },
+		{ id: 'stack', name: 'Stack', palette: 'plum' }, { id: 'check', name: 'Check', palette: 'teal' },
+		{ id: 'label', name: 'Label', palette: 'charcoal' }, { id: 'diag', name: 'Diagonal', palette: 'cobalt' },
+		{ id: 'pills', name: 'Pills', palette: 'rust' }, { id: 'hollow', name: 'Hollow', palette: 'navy' },
+		{ id: 'mono', name: 'Monogram', palette: 'teal' }
 	];
 	function designOf(id) { return DESIGNS.filter(function (d) { return d.id === id; })[0]; }
 	// Short lines only, at most 10 characters each (POR CORREO), so a card reads at 40 px in a comment thread
@@ -231,17 +249,35 @@
 	/* ------------------------------------------------------------------ */
 	var measureCtx = document.createElement('canvas').getContext('2d');
 
-	// Text sized so its widest line's ink is `width` wide, capped at `maxAsc` tall.
-	function textBlock(lines, family, width, maxAsc) {
+	// Text sized so its widest line's ink is `width` wide, capped at `maxAsc` tall. `opts.track` is letter
+	// spacing as a share of the size (sticker type runs tight on big lines and wide on small caps lines);
+	// `opts.leading` is the gap between lines as a share of the cap height (0.12 unless set).
+	var HAS_TRACK = 'letterSpacing' in measureCtx;
+	function textBlock(lines, family, width, maxAsc, opts) {
+		opts = opts || {};
+		var track = HAS_TRACK ? (opts.track || 0) : 0;
 		measureCtx.font = '200px ' + family;
 		measureCtx.textBaseline = 'alphabetic';
+		if (HAS_TRACK) { measureCtx.letterSpacing = (200 * track) + 'px'; }
 		var ms = lines.map(function (l) { return measureCtx.measureText(l); });
+		if (HAS_TRACK) { measureCtx.letterSpacing = '0px'; }
 		var widest = Math.max.apply(null, ms.map(function (m) { return m.actualBoundingBoxLeft + m.actualBoundingBoxRight; }));
 		var asc = Math.max.apply(null, ms.map(function (m) { return m.actualBoundingBoxAscent; }));
+		var desc = Math.max.apply(null, ms.map(function (m) { return m.actualBoundingBoxDescent || 0; }));
 		var k = width / widest;
 		if (maxAsc && asc * k > maxAsc) { k = maxAsc / asc; }
+		if (opts.justify) {
+			// Every line sized to the same width (the ready-mades' stack); each line carries its own size.
+			var ls = lines.map(function (l, i) {
+				var m = ms[i], wi = m.actualBoundingBoxLeft + m.actualBoundingBoxRight, ki = width / wi;
+				if (maxAsc && m.actualBoundingBoxAscent * ki > maxAsc) { ki = maxAsc / m.actualBoundingBoxAscent; }
+				return { s: l, w: wi * ki, left: m.actualBoundingBoxLeft * ki, size: 200 * ki, asc: m.actualBoundingBoxAscent * ki, desc: (m.actualBoundingBoxDescent || 0) * ki, ls: 200 * ki * track };
+			});
+			var a0 = Math.max.apply(null, ls.map(function (l) { return l.asc; }));
+			return { family: family, size: 200 * k, asc: a0, desc: Math.max.apply(null, ls.map(function (l) { return l.desc; })), gap: a0 * (opts.leading == null ? 0.12 : opts.leading), ls: 200 * k * track, lines: ls };
+		}
 		return {
-			family: family, size: 200 * k, asc: asc * k, gap: asc * k * 0.12,
+			family: family, size: 200 * k, asc: asc * k, desc: desc * k, gap: asc * k * (opts.leading == null ? 0.12 : opts.leading), ls: 200 * k * track,
 			lines: lines.map(function (l, i) {
 				var m = ms[i];
 				return { s: l, w: (m.actualBoundingBoxLeft + m.actualBoundingBoxRight) * k, left: m.actualBoundingBoxLeft * k };
@@ -250,13 +286,14 @@
 	}
 
 	// Place a text block centered on cx with its top at `top`. Returns the items and the bottom.
+	// The box reaches the descender (script faces hang below the baseline), the bottom is the baseline.
 	function placeText(block, cx, top, color) {
 		var items = [], y = top;
 		block.lines.forEach(function (l, i) {
 			if (i) { y += block.gap; }
-			var base = y + block.asc;
-			items.push({ t: 'text', s: l.s, font: block.size + 'px ' + block.family, color: color,
-				x: cx - l.w / 2 + l.left, base: base, box: [cx - l.w / 2, y, cx + l.w / 2, base] });
+			var asc = l.asc || block.asc, size = l.size || block.size, base = y + asc;
+			items.push({ t: 'text', s: l.s, font: size + 'px ' + block.family, color: color, ls: (l.ls == null ? block.ls : l.ls) || 0,
+				x: cx - l.w / 2 + l.left, base: base, box: [cx - l.w / 2, y, cx + l.w / 2, base + ((l.desc == null ? block.desc : l.desc) || 0)] });
 			y = base;
 		});
 		return { items: items, bottom: y };
@@ -291,9 +328,11 @@
 		var b = bounds(items), pv = [(b[0] + b[2]) / 2, (b[1] + b[3]) / 2];
 		items.forEach(function (it) { it.rot = rot; it.pivot = pv; });
 	}
+	// Items marked `nofit` are decoration (a band across the whole card, a watermark): drawn with the
+	// content's transform but never counted when the content is fitted to the safe circle.
 	function bounds(items) {
 		var pts = [];
-		items.forEach(function (it) { pts = pts.concat(itemPoints(it)); });
+		items.forEach(function (it) { if (!it.nofit) { pts = pts.concat(itemPoints(it)); } });
 		var xs = pts.map(function (q) { return q[0]; }), ys = pts.map(function (q) { return q[1]; });
 		return [Math.min.apply(null, xs), Math.min.apply(null, ys), Math.max.apply(null, xs), Math.max.apply(null, ys)];
 	}
@@ -316,8 +355,69 @@
 		});
 		return { items: items, bottom: R - R * Math.cos(theta / 2) + asc, asc: asc, size: size };
 	}
+	// A line of small capitals following a circle of radius `r` around (cx, cy), centered on the angle
+	// `at` (radians, -PI/2 is the top). On the top half the letters stand on the circle; on the bottom
+	// half (`flip`) they hang from it and still read left to right, as on a seal.
+	function arcItems(text, family, size, cx, cy, r, at, flip, color, track) {
+		measureCtx.font = size + 'px ' + family;
+		var chars = text.split(''), ws = chars.map(function (c) { return measureCtx.measureText(c).width; });
+		var asc = measureCtx.measureText('M').actualBoundingBoxAscent, tr = size * (track || 0);
+		var total = ws.reduce(function (a, b) { return a + b; }, 0) + tr * (chars.length - 1), theta = total / r;
+		var items = [], cum = 0, dir = flip ? -1 : 1;
+		chars.forEach(function (c, i) {
+			var a = at + dir * (-theta / 2 + (cum + ws[i] / 2) / r);
+			var px = cx + r * Math.cos(a), py = cy + r * Math.sin(a), rot = a + Math.PI / 2 + (flip ? Math.PI : 0);
+			if (c !== ' ') {
+				items.push({ t: 'text', s: c, font: size + 'px ' + family, color: color, x: px - ws[i] / 2, base: py,
+					box: [px - ws[i] / 2, py - asc, px + ws[i] / 2, py], rot: rot, pivot: [px, py] });
+			}
+			cum += ws[i] + tr;
+		});
+		return items;
+	}
 	// A text block with just some of another block's lines, at the same size.
-	function linesOf(block, from, to) { return { family: block.family, size: block.size, asc: block.asc, gap: block.gap, lines: block.lines.slice(from, to) }; }
+	function linesOf(block, from, to) { return { family: block.family, size: block.size, asc: block.asc, desc: block.desc, gap: block.gap, ls: block.ls, lines: block.lines.slice(from, to) }; }
+
+	// Sticker lettering: a halo around each letter in one color and a thin rim around that in another
+	// (drawn widest first, then the letter on top). The boxes grow by the two widths so fit() sees them.
+	function outline(items, haloColor, haloW, rimColor, rimW) {
+		items.forEach(function (it) {
+			if (it.t !== 'text') { return; }
+			it.halo = haloW ? { color: haloColor, w: haloW } : null;
+			it.rim = rimW ? { color: rimColor, w: rimW } : null;
+			var g = (haloW || 0) + (rimW || 0);
+			it.box = [it.box[0] - g, it.box[1] - g, it.box[2] + g, it.box[3] + g];
+		});
+		return items;
+	}
+	// Move items of any kind by (dx, dy).
+	function shift(items, dx, dy) {
+		items.forEach(function (it) {
+			if (it.t === 'shape') { it.x += dx; it.y += dy; }
+			else if (it.t === 'star' || it.t === 'seal' || it.t === 'ring') { it.cx += dx; it.cy += dy; }
+			else if (it.t === 'poly') { it.pts = it.pts.map(function (q) { return [q[0] + dx, q[1] + dy]; }); }
+			else if (it.t === 'text') { it.x += dx; it.base += dy; }
+			if (it.box) { it.box = [it.box[0] + dx, it.box[1] + dy, it.box[2] + dx, it.box[3] + dy]; }
+			if (it.pivot) { it.pivot = [it.pivot[0] + dx, it.pivot[1] + dy]; }
+		});
+		return items;
+	}
+	// Script case for a headline line: "VOTE" to "Vote", "I VOTED" to "I voted", "YA VOTÉ" to "Ya voté".
+	function scriptCase(s) { return s.charAt(0) + s.slice(1).toLowerCase(); }
+	// The darker and lighter of a palette's two base colors.
+	function darkOf(p) { return luminance(p.bg) < luminance(p.ink) ? p.bg : p.ink; }
+	function lightOf(p) { return luminance(p.bg) < luminance(p.ink) ? p.ink : p.bg; }
+	// A scalloped seal: `bumps` half-discs around a disc, so the edge reaches r. Returns the item and the
+	// radius of the flat disc inside the bumps.
+	function sealItem(cx, cy, r, bumps, color) {
+		var rho = r * Math.PI / bumps * 0.62, r0 = r - rho;
+		return { t: 'seal', cx: cx, cy: cy, r: r, r0: r0, rho: rho, bumps: bumps, color: color };
+	}
+	// A ribbon with swallowtail ends: a band from x0 to x1 (the tails cut into the ends), `h` tall.
+	function ribbonItem(x0, x1, top, h, color, notch) {
+		var n = notch == null ? h * 0.42 : notch;
+		return { t: 'poly', color: color, pts: [[x0, top], [x1, top], [x1 - n, top + h / 2], [x1, top + h], [x0, top + h], [x0 + n, top + h / 2]] };
+	}
 
 	var LAYOUTS = {
 		// The ready-made look: a disc with a heavy ring and a thin inner ring, the state on top, a big
@@ -329,31 +429,6 @@
 			var date = dateItems(dateText, 0, placed.bottom + head.asc * 0.26, 640, Math.min(head.asc * 0.5, 120), p.onAccent, p.accent);
 			tilt(date.items, -0.05);
 			return { items: icon.items.concat(placed.items, date.items), safe: 420, disc: { fill: p.bg, outer: shade(p.bg, 0.16), rings: [[506, 16, p.ink], [470, 4, p.ink]] } };
-		},
-		// Two-tone poster: the first line in ink, the second in the accent when it reads, dates between rules.
-		poster: function (st, p, lines, dateText) {
-			var icon = iconItem(st, 0, 0, 190, 340, p.ink, p.accent);
-			var head = textBlock(lines, DISPLAY, 820, 300);
-			var placed = placeText(head, 0, icon.bottom + 40, p.ink);
-			if (lines.length > 1 && contrast(p.accent, p.bg) >= 3) { placed.items[placed.items.length - 1].color = p.accent; }
-			var date = dateItems(dateText, 0, placed.bottom + head.asc * 0.34, 600, Math.min(head.asc * 0.44, 110), p.ink);
-			var db = date.items[0].box, cy = (db[1] + db[3]) / 2, rw = 70, gap = 26, th = Math.max(6, (db[3] - db[1]) * 0.12);
-			var rules = [
-				{ t: 'box', box: [db[0] - gap - rw, cy - th / 2, db[0] - gap, cy + th / 2], color: p.ink },
-				{ t: 'box', box: [db[2] + gap, cy - th / 2, db[2] + gap + rw, cy + th / 2], color: p.ink }
-			];
-			return { items: icon.items.concat(placed.items, date.items, rules), safe: SAFE };
-		},
-		// Stamp: the headline knocked out of a solid ink block with rounded corners, the state above.
-		stamp: function (st, p, lines, dateText) {
-			var icon = iconItem(st, 0, 0, 180, 320, p.ink, p.accent);
-			var head = textBlock(lines, DISPLAY, 700, 280);
-			var padX = head.asc * 0.32, padY = head.asc * 0.26;
-			var placed = placeText(head, 0, icon.bottom + 34 + padY, p.bg);
-			var w = Math.max.apply(null, head.lines.map(function (l) { return l.w; }));
-			var block = { t: 'box', box: [-w / 2 - padX, icon.bottom + 34, w / 2 + padX, placed.bottom + padY], color: p.ink, radius: head.asc * 0.22 };
-			var date = dateItems(dateText, 0, block.box[3] + head.asc * 0.28, w + padX * 2, head.asc * 0.42, contrast(p.accent, p.bg) >= 3 ? p.accent : p.ink);
-			return { items: icon.items.concat([block], placed.items, date.items), safe: SAFE };
 		},
 		// A small state on top, the headline as big as it goes, dates in the accent color.
 		type: function (st, p, lines, dateText) {
@@ -470,15 +545,304 @@
 				items = items.concat(date.items);
 			}
 			return { items: items, safe: SAFE };
+		},
+		// Die cut (October 22): the state, a tight stack of capitals and the date on a pill, cut out as one
+		// kiss-cut sticker: a white keyline, a thin dark rim and a soft shadow on the background. The pieces
+		// sit close enough that the keyline joins them into one shape.
+		cut: function (st, p, lines, dateText) {
+			var key = '#FFFDF7', dark = darkOf(p);
+			// The print has to stand off the white keyline: ink where it is dark enough (navy on cream), else
+			// the accent (red on navy), else the dark base color itself (green on forest: the letters are the
+			// surface showing through a white sticker).
+			var letter = contrast(p.ink, key) >= 2.5 ? p.ink : contrast(p.accent, key) >= 2.5 ? p.accent : dark;
+			var star = letter === p.ink ? starOf(p) : (letter !== p.accent && contrast(p.accent, letter) >= 2 ? p.accent : p.ink);
+			var icon = iconItem(st, 0, 0, 150, 300, letter, star);
+			var head = textBlock(lines, DISPLAY, 760, 280, { leading: 0.05, track: -0.01 });
+			var placed = placeText(head, 0, icon.bottom + 22, letter);
+			var pill = dateItems(dateText, 0, placed.bottom + head.asc * 0.16, 560, Math.min(head.asc * 0.42, 100), p.onAccent, p.accent);
+			pill.items[0].radius = 999;
+			var keyline = 24, rim = 4, drop = 10, blur = 16;
+			return { items: icon.items.concat(placed.items, pill.items), safe: SAFE - keyline - rim - drop - blur,
+				cut: { keyline: keyline, keylineColor: key, rim: rim, rimColor: dark, shadow: '#000', drop: drop, blur: blur } };
+		},
+		// Seal (October 22): a scalloped disc in ink with the headline knocked out, a thin inner ring, the
+		// state at the top and the date on an accent ribbon whose swallowtails reach past the edge.
+		seal: function (st, p, lines, dateText) {
+			var R = 500, body = p.ink, onBody = p.bg;
+			var sl = sealItem(0, 0, R, 30, body);
+			// The band between the scallops and the inner ring carries the state name across the top and the
+			// election year across the bottom, as on a real seal; the inner ring marks it off.
+			var bandSize = 44, bandR = sl.r0 - 16 - bandSize, ri = bandR - 34;
+			var year = ELECTION.day.slice(0, 4), bottom = (LANG === 'es' ? 'ELECCIONES ' : 'ELECTION ') + year;
+			// Top letters stand on the band's inner edge; bottom letters hang from its outer edge.
+			var band = arcItems(st.name.toUpperCase(), DATE, bandSize, 0, 0, bandR, -Math.PI / 2, false, onBody, 0.12)
+				.concat(arcItems(bottom, DATE, bandSize, 0, 0, bandR + bandSize * 0.72, Math.PI / 2, true, onBody, 0.12));
+			var ring = { t: 'ring', cx: 0, cy: 0, r: ri + 12, w: 5, color: onBody };
+			// The ribbon and the state take whichever of the accent and the background reads on the body.
+			var pop = contrast(p.accent, body) >= 2.5 ? p.accent : onBody;
+			var icon = iconItem(st, 0, -ri + 40, 92, 180, pop, pop === p.accent ? onBody : starOf(p));
+			var width = 560, head, placed, far, n;
+			// Fit the stack inside the inner disc: shrink until every corner of every line is within it.
+			for (n = 0; n < 3; n++) {
+				head = textBlock(lines, DISPLAY, width, 170, { leading: 0.08, track: -0.01 });
+				placed = placeText(head, 0, icon.bottom + 16 + (lines.length > 1 ? 0 : 24), onBody);
+				var pts = [];
+				placed.items.forEach(function (it) { pts = pts.concat(itemPoints(it)); });
+				far = Math.max.apply(null, pts.map(function (q) { return Math.hypot(q[0], q[1]); }));
+				if (far <= ri - 6) { break; }
+				width *= (ri - 6) / far;
+			}
+			var rh = Math.min(head.asc * 0.5, 96), rtop = placed.bottom + head.asc * 0.3;
+			var ribbon = ribbonItem(-R - 30, R + 30, rtop, rh, pop, rh * 0.4);
+			var date = dateItems(dateText, 0, rtop + rh * 0.2, 2 * Math.sqrt(Math.max(0, ri * ri - Math.pow(rtop + rh / 2, 2))) - 80, rh * 0.6, pop === p.accent ? p.onAccent : body);
+			// Center the date on the ribbon, then the whole group (state, stack, ribbon) in the seal.
+			var db = date.items[0].box;
+			shift(date.items, 0, (rtop + rh / 2) - (db[1] + db[3]) / 2);
+			var group = icon.items.concat(placed.items, [ribbon], date.items), gb = bounds(group);
+			shift(group, 0, -(gb[1] + gb[3]) / 2 + 6);
+			return { items: [sl, ring].concat(band, group), safe: SAFE };
+		},
+		// Script (October 22): the first line hand-lettered in the accent, tipped up and overlapping a block
+		// second line with sticker lettering (a background halo and an ink rim). A one-line headline
+		// ("I VOTED") puts the state and year line in the block instead. The date runs small and wide
+		// under it, with the state beside it.
+		script: function (st, p, lines, dateText) {
+			var first = scriptCase(lines[0]), sc = contrast(p.accent, p.bg) >= 3 ? p.accent : p.ink;
+			var block, bp, s, sp, items;
+			// The script line sits clear above the block (Garrett, October 22: overlapping lines fuse at 40 px).
+			var sb;
+			if (lines.length > 1) {
+				block = textBlock([lines[1]], DISPLAY, 780, 270, { track: 0.01 });
+				s = textBlock([first], SCRIPT, Math.min(640, block.lines[0].w * 0.92), block.asc * 1.0);
+				sp = placeText(s, 0, 0, sc);
+				outline(sp.items, p.bg, s.asc * 0.05, null, 0);
+				tiltAll(sp.items, -0.05);
+				sb = bounds(sp.items);
+				bp = placeText(block, 0, sb[3] + block.asc * 0.1, p.ink);
+				outline(bp.items, p.bg, block.asc * 0.06, p.ink, block.asc * 0.022);
+				items = sp.items.concat(bp.items);
+				var d = textBlock([dateText], DATE, 520, block.asc * 0.26, { track: 0.14 });
+				var ih = d.asc * 1.5, sh = shape(st.abbr), k = Math.min(ih / sh.h, 120 / sh.w), iw = sh.w * k;
+				var total = iw + 26 + d.lines[0].w, top = bp.bottom + block.asc * 0.34;
+				var icon = iconItem(st, -total / 2 + iw / 2, top + (d.asc - sh.h * k) / 2, ih, 120, dateColor(p), null);
+				var dp = placeText(d, -total / 2 + iw + 26 + d.lines[0].w / 2, top, dateColor(p));
+				items = items.concat(icon.items, dp.items);
+			} else {
+				// "I voted" leads; the state and year line sits under it in small block capitals.
+				s = textBlock([first], SCRIPT, 720, 300);
+				sp = placeText(s, 0, 0, sc);
+				outline(sp.items, p.bg, s.asc * 0.05, null, 0);
+				tiltAll(sp.items, -0.05);
+				sb = bounds(sp.items);
+				block = textBlock([dateText], DISPLAY, Math.min(440, (sb[2] - sb[0]) * 0.62), s.asc * 0.34, { track: 0.06 });
+				bp = placeText(block, 0, sb[3] + s.asc * 0.12, p.ink);
+				outline(bp.items, p.bg, block.asc * 0.08, p.ink, block.asc * 0.03);
+				items = sp.items.concat(bp.items);
+			}
+			return { items: items, safe: SAFE };
+		},
+		// Vertical (October 22, from the Arkansas and Louisiana ready-mades): the state name runs up a
+		// plate on the left, knocked out of the accent; the headline stacks beside it with the date under.
+		// Every headline works, so no menu changes; a long name just makes a taller, narrower column.
+		vert: function (st, p, lines, dateText) {
+			var year = ELECTION.day.slice(0, 4), name = st.name.length > 14 ? st.abbr : st.name.toUpperCase();
+			// "I VOTED" cards carry the state in the date line; next to the vertical name, the year is enough.
+			if (dateText === st.name.toUpperCase() + ' ' + year || dateText === st.abbr + ' ' + year) { dateText = year; }
+			var head = textBlock(lines, DISPLAY, 640, 300, { leading: 0.08, track: -0.01 });
+			var th = head.asc * lines.length + head.gap * (lines.length - 1);
+			var date = dateItems(dateText, 0, 0, 520, head.asc * 0.4, dateColor(p));
+			var dh = date.items[0].box[3] - date.items[0].box[1], colH = th + head.asc * 0.22 + dh;
+			var plateOn = contrast(p.accent, p.bg) >= 2 ? p.accent : p.ink, onPlate = plateOn === p.accent ? p.onAccent : p.bg;
+			var nb = textBlock([name], DISPLAY, colH - 56, 120, { track: 0.06 });
+			var np = placeText(nb, 0, 0, onPlate);
+			tiltAll(np.items, -Math.PI / 2);
+			var b = bounds(np.items), pad = nb.asc * 0.28, plateW = (b[2] - b[0]) + pad * 2, gap = 44;
+			var tw = Math.max.apply(null, head.lines.map(function (l) { return l.w; }));
+			var total = plateW + gap + Math.max(tw, date.items[0].box[2] - date.items[0].box[0]), x0 = -total / 2;
+			shift(np.items, x0 + pad - b[0], (colH - (b[3] - b[1])) / 2 - b[1]);
+			var plate = { t: 'box', box: [x0, 0, x0 + plateW, colH], color: plateOn, radius: 14 };
+			var cx = x0 + plateW + gap + (total - plateW - gap) / 2;
+			var placed = placeText(head, cx, 0, p.ink);
+			shift(date.items, cx, placed.bottom + head.asc * 0.22);
+			return { items: [plate].concat(np.items, placed.items, date.items), safe: SAFE };
+		},
+
+		/* Twelve flat lockups for review (October 22). Full-bleed pieces are `nofit` decoration. */
+
+		// Band: the first line knocked out of an accent band that runs edge to edge, the rest below.
+		band: function (st, p, lines, dateText) {
+			var bc = contrast(p.accent, p.bg) >= 1.6 ? p.accent : p.ink, ob = bc === p.accent ? p.onAccent : p.bg;
+			var head = textBlock(lines, DISPLAY, 740, 300, { justify: true, leading: 0.16, track: -0.01 });
+			var first = placeText(linesOf(head, 0, 1), 0, 0, ob), a = head.lines[0].asc, pad = a * 0.2;
+			var band = { t: 'box', box: [-4000, -pad, 4000, first.bottom + pad], color: bc, nofit: true };
+			var icon = iconItem(st, 0, -pad - 26 - 120, 120, 220, p.ink, starOf(p));
+			var items = [band].concat(icon.items, first.items), y = first.bottom + pad + a * 0.14;
+			if (lines.length > 1) { var rest = placeText(linesOf(head, 1), 0, y, p.ink); items = items.concat(rest.items); y = rest.bottom + a * 0.22; } else { y += a * 0.1; }
+			var date = dateItems(dateText, 0, y, 600, a * 0.36, dateColor(p));
+			return { items: items.concat(date.items), safe: SAFE };
+		},
+		// Watermark: the state huge and tone on tone behind a justified stack, its capital star in the accent.
+		tone: function (st, p, lines, dateText) {
+			var head = textBlock(lines, DISPLAY, 760, 300, { justify: true, leading: 0.1, track: -0.01 });
+			var placed = placeText(head, 0, 0, p.ink);
+			var date = dateItems(dateText, 0, placed.bottom + head.asc * 0.24, 640, head.asc * 0.42, p.onAccent, p.accent);
+			var content = placed.items.concat(date.items), b = bounds(content), cy = (b[1] + b[3]) / 2;
+			var wm = iconItem(st, 0, cy - 580, 1160, 1500, shade(p.bg, 0.09), null), sh = shape(st.abbr), w = wm.items[0];
+			wm.items.push({ t: 'star', cx: w.x + sh.cap[0] * w.k, cy: w.y + sh.cap[1] * w.k, r: 34, color: p.accent });
+			wm.items.forEach(function (it) { it.nofit = true; });
+			return { items: wm.items.concat(content), safe: SAFE };
+		},
+		// Shadow: the headline with a hard offset copy in the accent behind it, a thin gap between.
+		shadow: function (st, p, lines, dateText) {
+			var icon = iconItem(st, 0, 0, 140, 260, p.ink, starOf(p));
+			var head = textBlock(lines, DISPLAY, 760, 300, { justify: true, leading: 0.18 });
+			var placed = placeText(head, 0, icon.bottom + 40, p.ink), off = head.asc * 0.08;
+			var sc = contrast(p.accent, p.bg) >= 1.8 ? p.accent : shade(p.bg, 0.3);
+			var under = placed.items.map(function (it) { return { t: 'text', s: it.s, font: it.font, color: sc, ls: it.ls, x: it.x + off, base: it.base + off, box: [it.box[0] + off, it.box[1] + off, it.box[2] + off, it.box[3] + off] }; });
+			outline(placed.items, p.bg, head.asc * 0.03, null, 0);
+			var date = dateItems(dateText, 0, placed.bottom + off + head.asc * 0.3, 600, head.asc * 0.36, dateColor(p));
+			return { items: icon.items.concat(under, placed.items, date.items), safe: SAFE };
+		},
+		// Stack: a justified stack, tight, with the date on a bar the full width of the stack.
+		stack: function (st, p, lines, dateText) {
+			var w = 780, head = textBlock(lines, DISPLAY, w, 300, { justify: true, leading: 0.08, track: -0.015 });
+			var placed = placeText(head, 0, 0, p.ink);
+			var icon = iconItem(st, 0, -150 - 28, 150, 300, p.ink, starOf(p));
+			var date = dateItems(dateText, 0, placed.bottom + head.asc * 0.18, w - 120, head.asc * 0.4, p.onAccent, p.accent);
+			var bx = date.items[0].box;
+			date.items[0].box = [-w / 2, bx[1], w / 2, bx[3]];
+			return { items: icon.items.concat(placed.items, date.items), safe: SAFE };
+		},
+		// Ring text: an ink disc with the state name curved over the top, the election year under the
+		// bottom, a thin ring, and the stack centered. Stars mark the sides.
+		ringtext: function (st, p, lines, dateText) {
+			var R = 500, body = p.ink, onBody = p.bg, pop = contrast(p.accent, body) >= 2.5 ? p.accent : onBody;
+			var bandSize = 46, bandR = R - 28 - bandSize, ri = bandR - 38;
+			var year = ELECTION.day.slice(0, 4), bottom = (LANG === 'es' ? 'ELECCIONES ' : 'ELECTION ') + year;
+			var disc = { t: 'disc', cx: 0, cy: 0, r: R, color: body };
+			var band = arcItems(st.name.toUpperCase(), DATE, bandSize, 0, 0, bandR, -Math.PI / 2, false, onBody, 0.14)
+				.concat(arcItems(bottom, DATE, bandSize, 0, 0, bandR + bandSize * 0.72, Math.PI / 2, true, onBody, 0.14));
+			var stars = [{ t: 'star', cx: -bandR - 14, cy: 0, r: 20, color: pop }, { t: 'star', cx: bandR + 14, cy: 0, r: 20, color: pop }];
+			var ring = { t: 'ring', cx: 0, cy: 0, r: ri + 14, w: 4, color: onBody };
+			// The stack as big as the inner ring allows: grow or shrink until its farthest corner sits just
+			// inside the ring (a 40 px profile picture shows the stack, not the ring text).
+			var width = 620, group, n, far;
+			for (n = 0; n < 4; n++) {
+				var head = textBlock(lines, DISPLAY, width, 260, { justify: true, leading: 0.1, track: -0.01 });
+				var placed = placeText(head, 0, 0, onBody);
+				var date = dateItems(dateText, 0, placed.bottom + head.asc * 0.26, width * 0.84, head.asc * 0.36, pop);
+				group = placed.items.concat(date.items);
+				var gb = bounds(group);
+				shift(group, 0, -(gb[1] + gb[3]) / 2);
+				var pts = [];
+				group.forEach(function (it) { pts = pts.concat(itemPoints(it)); });
+				far = Math.max.apply(null, pts.map(function (q) { return Math.hypot(q[0], q[1]); }));
+				if (Math.abs(far - (ri - 10)) < 6) { break; }
+				width *= (ri - 10) / far;
+			}
+			return { items: [disc, ring].concat(band, stars, group), safe: SAFE };
+		},
+		// Check: a big check mark in the accent beside the stack, the state small by the date.
+		check: function (st, p, lines, dateText) {
+			var cc = contrast(p.accent, p.bg) >= 2 ? p.accent : p.ink;
+			var head = textBlock(lines, DISPLAY, 560, 260, { justify: true, leading: 0.1, track: -0.01 });
+			var th = head.lines.reduce(function (s, l) { return s + l.asc; }, 0) + head.gap * (lines.length - 1), h = th * 0.92, cw = h * 1.15, gap = 40;
+			var tw = Math.max.apply(null, head.lines.map(function (l) { return l.w; })), total = cw + gap + tw, x0 = -total / 2;
+			var cx = x0 + cw / 2, cy = th / 2;
+			var chk = { t: 'poly', color: cc, pts: [[-0.5, 0.08], [-0.32, -0.1], [-0.14, 0.14], [0.36, -0.5], [0.52, -0.34], [-0.14, 0.5]].map(function (q) { return [cx + q[0] * cw, cy + q[1] * h]; }) };
+			var placed = placeText(head, x0 + cw + gap + tw / 2, 0, p.ink);
+			var d = textBlock([dateText], DATE, 520, head.asc * 0.3, { track: 0.12 });
+			var ih = d.asc * 1.5, sh = shape(st.abbr), k = Math.min(ih / sh.h, 120 / sh.w), iw = sh.w * k;
+			var dt = iw + 24 + d.lines[0].w, top = th + head.asc * 0.3;
+			var icon = iconItem(st, -dt / 2 + iw / 2, top + (d.asc - sh.h * k) / 2, ih, 120, dateColor(p), null);
+			var dp = placeText(d, -dt / 2 + iw + 24 + d.lines[0].w / 2, top, dateColor(p));
+			return { items: [chk].concat(placed.items, icon.items, dp.items), safe: SAFE };
+		},
+		// Label: two accent rules edge to edge above and below the stack, the state over the top rule.
+		label: function (st, p, lines, dateText) {
+			var head = textBlock(lines, DISPLAY, 760, 300, { justify: true, leading: 0.1, track: -0.01 });
+			var placed = placeText(head, 0, 0, p.ink), rc = contrast(p.accent, p.bg) >= 1.6 ? p.accent : p.ink, th = 14, g = 34;
+			var top = { t: 'box', box: [-4000, -g - th, 4000, -g], color: rc, nofit: true };
+			var bot = { t: 'box', box: [-4000, placed.bottom + g, 4000, placed.bottom + g + th], color: rc, nofit: true };
+			var icon = iconItem(st, 0, -g - th - 22 - 120, 120, 220, p.ink, starOf(p));
+			var date = dateItems(dateText, 0, placed.bottom + g + th + 26, 600, head.asc * 0.34, dateColor(p));
+			return { items: [top, bot].concat(icon.items, placed.items, date.items), safe: SAFE };
+		},
+		// Diagonal: the first line knocked out of a band tipped across the card, the rest straight.
+		diag: function (st, p, lines, dateText) {
+			var bc = contrast(p.accent, p.bg) >= 1.6 ? p.accent : p.ink, ob = bc === p.accent ? p.onAccent : p.bg;
+			var head = textBlock(lines, DISPLAY, 700, 280, { justify: true, leading: 0.16, track: -0.01 });
+			var first = placeText(linesOf(head, 0, 1), 0, 0, ob), a = head.lines[0].asc, pad = a * 0.2;
+			var band = { t: 'box', box: [-4000, -pad, 4000, first.bottom + pad], color: bc, nofit: true };
+			tiltAll([band].concat(first.items), -0.16);
+			var icon = iconItem(st, 0, -pad - 110 - 120, 120, 220, p.ink, starOf(p));
+			var items = [band].concat(icon.items, first.items), y = first.bottom + pad + 100;
+			if (lines.length > 1) { var rest = placeText(linesOf(head, 1), 0, y, p.ink); items = items.concat(rest.items); y = rest.bottom + a * 0.22; }
+			var date = dateItems(dateText, 0, y, 600, a * 0.36, dateColor(p));
+			return { items: items.concat(date.items), safe: SAFE };
+		},
+		// Pills: each line in its own pill, accent then ink, the date plain under them.
+		pills: function (st, p, lines, dateText) {
+			var icon = iconItem(st, 0, 0, 130, 240, p.ink, starOf(p));
+			var head = textBlock(lines, DISPLAY, 640, 230, { track: 0.01 }), items = icon.items, y = icon.bottom + 30;
+			var padX = head.asc * 0.3, padY = head.asc * 0.16, gap = head.asc * 0.14, accentOk = contrast(p.accent, p.bg) >= 1.6;
+			head.lines.forEach(function (l, i) {
+				var onAccent = accentOk && i % 2 === 0, fill = onAccent ? p.accent : p.ink, on = onAccent ? p.onAccent : p.bg;
+				var t = placeText(linesOf(head, i, i + 1), 0, y + padY, on);
+				items.push({ t: 'box', box: [-l.w / 2 - padX, y, l.w / 2 + padX, t.bottom + padY], color: fill, radius: 999 });
+				items = items.concat(t.items);
+				y = t.bottom + padY + gap;
+			});
+			var date = dateItems(dateText, 0, y + head.asc * 0.1, 600, head.asc * 0.36, dateColor(p));
+			return { items: items.concat(date.items), safe: SAFE };
+		},
+		// Hollow: the first line in outline letters, the second solid, the date in the accent.
+		hollow: function (st, p, lines, dateText) {
+			var icon = iconItem(st, 0, 0, 140, 260, p.ink, starOf(p));
+			var head = textBlock(lines, DISPLAY, 760, 300, { justify: true, leading: 0.12, track: 0.01 });
+			var placed = placeText(head, 0, icon.bottom + 40, p.ink);
+			var f = placed.items[0];
+			f.color = p.bg; f.stroke = p.ink; f.strokeWidth = (f.box[3] - f.box[1]) * 0.05;
+			var date = dateItems(dateText, 0, placed.bottom + head.asc * 0.26, 600, head.asc * 0.38, dateColor(p));
+			return { items: icon.items.concat(placed.items, date.items), safe: SAFE };
+		},
+		// Half: the top of the card in the accent with the state knocked out, the stack on the lower half.
+		half: function (st, p, lines, dateText) {
+			var ac = contrast(p.accent, p.bg) >= 1.6 ? p.accent : p.ink, on = ac === p.accent ? p.onAccent : p.bg;
+			var icon = iconItem(st, 0, -330, 260, 460, on, ac === p.accent ? p.ink : p.accent);
+			var top = { t: 'box', box: [-4000, -4000, 4000, -36], color: ac, nofit: true };
+			var head = textBlock(lines, DISPLAY, 760, 260, { justify: true, leading: 0.1, track: -0.01 });
+			var placed = placeText(head, 0, 0, p.ink);
+			var date = dateItems(dateText, 0, placed.bottom + head.asc * 0.22, 600, head.asc * 0.36, dateColor(p));
+			return { items: [top].concat(icon.items, placed.items, date.items), safe: SAFE };
+		},
+		// Monogram: the postal code huge and tone on tone behind the stack.
+		mono: function (st, p, lines, dateText) {
+			var head = textBlock(lines, DISPLAY, 760, 300, { justify: true, leading: 0.1, track: -0.01 });
+			var placed = placeText(head, 0, 0, p.ink);
+			var date = dateItems(dateText, 0, placed.bottom + head.asc * 0.24, 640, head.asc * 0.42, p.onAccent, p.accent);
+			var content = placed.items.concat(date.items), b = bounds(content), cy = (b[1] + b[3]) / 2;
+			var m = textBlock([st.abbr], DISPLAY, 1100, 980, { track: -0.06 });
+			var mp = placeText(m, 0, cy - m.asc / 2, shade(p.bg, 0.09));
+			mp.items.forEach(function (it) { it.nofit = true; });
+			return { items: mp.items.concat(content), safe: SAFE };
 		}
 	};
 
 	function itemPoints(it) {
+		var pts, i;
 		if (it.t === 'shape') {
-			return shape(it.abbr).pts.map(function (q) { return [it.x + q[0] * it.k, it.y + q[1] * it.k]; });
+			pts = shape(it.abbr).pts.map(function (q) { return [it.x + q[0] * it.k, it.y + q[1] * it.k]; });
+		} else if (it.t === 'seal' || it.t === 'ring' || it.t === 'disc') {
+			var rr = it.t === 'ring' ? it.r + it.w / 2 : it.r;
+			pts = [];
+			for (i = 0; i < 36; i++) { pts.push([it.cx + rr * Math.cos(i * Math.PI / 18), it.cy + rr * Math.sin(i * Math.PI / 18)]); }
+		} else if (it.t === 'poly') {
+			pts = it.pts.slice();
+		} else {
+			var b = it.t === 'star' ? [it.cx - it.r, it.cy - it.r, it.cx + it.r, it.cy + it.r] : it.box;
+			pts = [[b[0], b[1]], [b[2], b[1]], [b[0], b[3]], [b[2], b[3]]];
 		}
-		var b = it.t === 'star' ? [it.cx - it.r, it.cy - it.r, it.cx + it.r, it.cy + it.r] : it.box;
-		var pts = [[b[0], b[1]], [b[2], b[1]], [b[0], b[3]], [b[2], b[3]]];
 		if (!it.rot) { return pts; }
 		var c = Math.cos(it.rot), s = Math.sin(it.rot), pv = it.pivot;
 		return pts.map(function (q) { var dx = q[0] - pv[0], dy = q[1] - pv[1]; return [pv[0] + dx * c - dy * s, pv[1] + dx * s + dy * c]; });
@@ -487,7 +851,7 @@
 	// Scale and center so the farthest point of any item lands on the safe circle.
 	function fit(layout) {
 		var pts = [];
-		layout.items.forEach(function (it) { pts = pts.concat(itemPoints(it)); });
+		layout.items.forEach(function (it) { if (!it.nofit) { pts = pts.concat(itemPoints(it)); } });
 		var xs = pts.map(function (q) { return q[0]; }), ys = pts.map(function (q) { return q[1]; });
 		var cx = (Math.min.apply(null, xs) + Math.max.apply(null, xs)) / 2;
 		var cy = (Math.min.apply(null, ys) + Math.max.apply(null, ys)) / 2;
@@ -518,11 +882,14 @@
 
 	function drawItem(ctx, it) {
 		if (it.rot) {
+			// Draw the same item unrotated inside a turned frame (any kind: shapes turn too).
+			var flat = {}, key;
+			for (key in it) { if (key !== 'rot' && key !== 'pivot') { flat[key] = it[key]; } }
 			ctx.save();
 			ctx.translate(it.pivot[0], it.pivot[1]);
 			ctx.rotate(it.rot);
 			ctx.translate(-it.pivot[0], -it.pivot[1]);
-			drawItem(ctx, { t: it.t, s: it.s, font: it.font, color: it.color, x: it.x, base: it.base, box: it.box, radius: it.radius, stroke: it.stroke, strokeWidth: it.strokeWidth });
+			drawItem(ctx, flat);
 			ctx.restore();
 			return;
 		}
@@ -535,9 +902,54 @@
 			ctx.fill();
 			return;
 		}
+		if (it.t === 'seal') {
+			// A disc plus a half-disc per bump, all one path, so the nonzero fill makes the scalloped edge.
+			var i, a;
+			ctx.beginPath();
+			ctx.arc(it.cx, it.cy, it.r0, 0, Math.PI * 2);
+			for (i = 0; i < it.bumps; i++) {
+				a = i * Math.PI * 2 / it.bumps;
+				ctx.moveTo(it.cx + it.r0 * Math.cos(a), it.cy + it.r0 * Math.sin(a));
+				ctx.arc(it.cx + it.r0 * Math.cos(a), it.cy + it.r0 * Math.sin(a), it.rho, a - Math.PI / 2, a + Math.PI / 2);
+				ctx.closePath();
+			}
+			ctx.fill();
+			return;
+		}
+		if (it.t === 'disc') {
+			ctx.beginPath();
+			ctx.arc(it.cx, it.cy, it.r, 0, Math.PI * 2);
+			ctx.fill();
+			return;
+		}
+		if (it.t === 'ring') {
+			ctx.strokeStyle = it.color;
+			ctx.lineWidth = it.w;
+			if (it.dash) { ctx.setLineDash(it.dash); }
+			ctx.beginPath();
+			ctx.arc(it.cx, it.cy, it.r, 0, Math.PI * 2);
+			ctx.stroke();
+			ctx.setLineDash([]);
+			return;
+		}
+		if (it.t === 'poly') {
+			ctx.beginPath();
+			it.pts.forEach(function (q, n) { if (n) { ctx.lineTo(q[0], q[1]); } else { ctx.moveTo(q[0], q[1]); } });
+			ctx.closePath();
+			ctx.fill();
+			return;
+		}
 		ctx.font = it.font;
 		ctx.textBaseline = 'alphabetic';
 		ctx.textAlign = 'left';
+		if (HAS_TRACK) { ctx.letterSpacing = (it.ls || 0) + 'px'; }
+		if (it.rim || it.halo) {
+			// Sticker lettering: the rim is the widest stroke, the halo sits inside it, the letter on top.
+			ctx.lineJoin = 'round';
+			var hw = it.halo ? it.halo.w : 0;
+			if (it.rim) { ctx.lineWidth = (hw + it.rim.w) * 2; ctx.strokeStyle = it.rim.color; ctx.strokeText(it.s, it.x, it.base); }
+			if (it.halo) { ctx.lineWidth = hw * 2; ctx.strokeStyle = it.halo.color; ctx.strokeText(it.s, it.x, it.base); }
+		}
 		if (it.stroke) {
 			// Background-colored letters with an ink outline: over the state the outline melts into
 			// the fill, outside it the letter is outlined, so a ragged coastline never cuts a letter.
@@ -554,6 +966,8 @@
 	function render(canvas, px, opts) {
 		var st = byAbbr[opts.state], p = paletteFor(opts.palette, st);
 		var layout = LAYOUTS[opts.design](st, p, headlineLines(opts.headline, st), opts.dateText);
+		// An optional tilt of the whole card (radians), on top of whatever the design does.
+		if (opts.tilt) { tiltAll(layout.items, opts.tilt); }
 		var f = fit(layout);
 		var tall = opts.story ? STORY_H : SIZE;
 		canvas.width = px;
@@ -591,12 +1005,57 @@
 			ctx.closePath();
 			ctx.fill();
 		}
-		if (opts.decorOnly) { return fit(layout); }
 		ctx.translate(SIZE / 2, SIZE / 2);
 		ctx.scale(f.s, f.s);
 		ctx.translate(-f.cx, -f.cy);
-		layout.items.forEach(function (it) { drawItem(ctx, it); });
+		// Decoration first (it may run past the safe circle), then the content.
+		layout.items.forEach(function (it) { if (it.nofit) { drawItem(ctx, it); } });
+		if (opts.decorOnly) { return f; }
+		if (layout.cut) { drawCut(ctx, canvas, layout, f, px); }
+		layout.items.forEach(function (it) { if (!it.nofit) { drawItem(ctx, it); } });
 		return f;
+	}
+
+	// The die-cut edge: every item drawn on a spare canvas, turned into one silhouette, and laid down
+	// under the art as a thin rim, a keyline inside it, and a soft shadow, each a dilation of the
+	// silhouette (the silhouette drawn at 24 offsets around a circle). Widths are in card units.
+	function drawCut(ctx, canvas, layout, f, px) {
+		var cut = layout.cut, k = px / SIZE, tf = ctx.getTransform();
+		var art = document.createElement('canvas');
+		art.width = canvas.width; art.height = canvas.height;
+		var a = art.getContext('2d');
+		a.setTransform(tf);
+		layout.items.forEach(function (it) { drawItem(a, it); });
+		function mask(color) {
+			var m = document.createElement('canvas');
+			m.width = art.width; m.height = art.height;
+			var g = m.getContext('2d');
+			g.drawImage(art, 0, 0);
+			g.globalCompositeOperation = 'source-in';
+			g.fillStyle = color;
+			g.fillRect(0, 0, m.width, m.height);
+			return m;
+		}
+		function dilate(img, r) {
+			var i, n = 24;
+			for (i = 0; i < n; i++) { ctx.drawImage(img, r * Math.cos(i * Math.PI * 2 / n), r * Math.sin(i * Math.PI * 2 / n)); }
+			ctx.drawImage(img, 0, 0);
+		}
+		ctx.save();
+		ctx.setTransform(1, 0, 0, 1, 0, 0);
+		var total = (cut.keyline + cut.rim) * f.s * k;
+		if (cut.shadow) {
+			var sh = mask(cut.shadow);
+			ctx.save();
+			ctx.globalAlpha = 0.22;
+			ctx.filter = 'blur(' + Math.round(cut.blur * f.s * k) + 'px)';
+			ctx.translate(0, cut.drop * f.s * k);
+			dilate(sh, total);
+			ctx.restore();
+		}
+		if (cut.rim) { dilate(mask(cut.rimColor), total); }
+		dilate(mask(cut.keylineColor), cut.keyline * f.s * k);
+		ctx.restore();
 	}
 
 	/* ------------------------------------------------------------------ */
@@ -608,35 +1067,117 @@
 		if (/Android/i.test(ua)) { return 'android'; }
 		return 'desktop';
 	})();
-	var SHARE_TO_PHOTOS = (function () {
-		if (DEVICE !== 'ios') { return false; }
+	// iPhone and iPad (October 22): a `download` link sends a picture to Files, not Photos, so on iOS no
+	// save ever uses one, for the ready-made sets or the maker. The share sheet, which offers Save Image,
+	// comes first; where it can't take a file (in-app browsers, or a share refused), the picture opens full
+	// screen to press and hold, which offers Save to Photos in every iOS browser.
+	function canShareFile(type) {
 		try {
-			var probe = new File([new Blob(['x'], { type: 'image/png' })], 'probe.png', { type: 'image/png' });
-			return !!navigator.canShare && navigator.canShare({ files: [probe] });
+			var probe = new File([new Blob(['x'], { type: type })], 'probe', { type: type });
+			return !!navigator.share && !!navigator.canShare && navigator.canShare({ files: [probe] });
 		} catch (e) { return false; }
-	})();
+	}
+	var SHARE_TO_PHOTOS = DEVICE === 'ios' && canShareFile('image/png');
 	var TIPS = {
-		ios: SHARE_TO_PHOTOS ? T('Tap Save to Photos, then Save Image. Then set it as your profile picture from Photos.') : T('Tap Open image, press and hold the picture, and choose Save to Photos.'),
+		ios: SHARE_TO_PHOTOS ? T('Tap Save to Photos, then Save Image. Then set it as your profile picture from Photos.') : T('Press and hold the picture, then tap Save to Photos.'),
 		android: T('The picture saves to your Downloads. Set it as your profile picture from there.'),
 		desktop: T('The picture saves to your Downloads folder.')
 	};
+
+	// The picture full screen, for press and hold. One overlay, reused.
+	function holdToSave(src, alt) {
+		var box = $('hold-save');
+		if (!box) {
+			box = document.createElement('div');
+			box.id = 'hold-save';
+			box.className = 'hold-save';
+			box.setAttribute('role', 'dialog');
+			box.setAttribute('aria-modal', 'true');
+			box.setAttribute('aria-labelledby', 'hold-save-h');
+			box.innerHTML = '<p class="hold-save__h" id="hold-save-h"></p><img class="hold-save__img" alt=""><button type="button" class="btn hold-save__close"></button>';
+			box.querySelector('.hold-save__h').textContent = T('Press and hold the picture, then tap Save to Photos.');
+			box.querySelector('.hold-save__close').textContent = T('Done');
+			var close = function () { box.hidden = true; document.body.classList.remove('is-holding'); };
+			box.querySelector('.hold-save__close').addEventListener('click', close);
+			document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !box.hidden) { close(); } });
+			document.body.appendChild(box);
+		}
+		var img = box.querySelector('.hold-save__img');
+		img.src = src;
+		img.alt = alt || '';
+		box.hidden = false;
+		document.body.classList.add('is-holding');
+		box.querySelector('.hold-save__close').focus();
+	}
+
+	// Save a picture on iOS: the share sheet when it can take the file, else press and hold. `blob` may be
+	// null when the file isn't in hand yet (a ready-made still loading); the share sheet needs it within
+	// the tap, so then it goes straight to press and hold. Returns how it saved, for QA.
+	function saveOnIOS(blob, name, src, alt) {
+		if (blob && canShareFile(blob.type)) {
+			var file = new File([blob], name, { type: blob.type });
+			navigator.share({ files: [file] }).catch(function (err) {
+				// Closing the share sheet is not an error; anything else gets press and hold.
+				if (err && err.name === 'AbortError') { return; }
+				holdToSave(src, alt);
+			});
+			return 'share';
+		}
+		holdToSave(src, alt);
+		return 'hold';
+	}
+	function afterSave() {
+		// After the picture is on its way, one quiet line about the sticker's history (never before).
+		var more = $('after-save');
+		if (more) { setTimeout(function () { more.hidden = false; }, 600); }
+	}
 
 	var current = { blob: null, url: null, name: '' };
 	function wireSave(link) {
 		link.addEventListener('click', function (e) {
 			if (!current.blob) { e.preventDefault(); return; }
-			// After the picture is on its way, one quiet line about the sticker's history (never before).
-			var more = $('after-save');
-			if (more) { setTimeout(function () { more.hidden = false; }, 600); }
-			if (!SHARE_TO_PHOTOS) { return; }
+			afterSave();
+			if (DEVICE !== 'ios') { return; }
 			e.preventDefault();
-			var file = new File([current.blob], current.name, { type: 'image/png' });
-			navigator.share({ files: [file] }).catch(function (err) {
-				// Closing the share sheet is not an error; anything else falls back to the download.
-				if (err && err.name === 'AbortError') { return; }
-				window.location.href = current.url;
-			});
+			window.VOTE_LAST_SAVE = saveOnIOS(current.blob, current.name, current.url, $('preview').alt);
 		});
+	}
+
+	// The ready-made sets: on iOS each picture is fetched as soon as its tile loads (from the browser's
+	// cache, since the tile just showed it), so the share sheet has the file within the tap.
+	var readyBlobs = {};
+	function keepBlob(src) {
+		if (readyBlobs[src] || !window.fetch) { return; }
+		readyBlobs[src] = 'loading';
+		fetch(src).then(function (r) { if (!r.ok) { throw new Error(r.status); } return r.blob(); })
+			.then(function (b) { readyBlobs[src] = b.type ? b : new Blob([b], { type: 'image/jpeg' }); })
+			.catch(function () { delete readyBlobs[src]; });
+	}
+	function wireGallery() {
+		var grid = $('gallery-grid');
+		if (!grid) { return; }
+		grid.addEventListener('click', function (e) {
+			var a = e.target.closest ? e.target.closest('a.tile') : null;
+			if (!a) { return; }
+			afterSave();
+			if (DEVICE !== 'ios') { return; }
+			e.preventDefault();
+			var src = a.getAttribute('href'), b = readyBlobs[src], img = a.querySelector('img');
+			window.VOTE_LAST_SAVE = saveOnIOS(b && b !== 'loading' ? b : null, a.getAttribute('download') || 'vote-sticker.jpg', src, img ? img.alt : '');
+		});
+		if (DEVICE !== 'ios') { return; }
+		var watch = function () {
+			Array.prototype.forEach.call(grid.querySelectorAll('a.tile'), function (a) {
+				var img = a.querySelector('img'), src = a.getAttribute('href');
+				if (!img || img.dataset.keep) { return; }
+				img.dataset.keep = '1';
+				if (img.complete && img.naturalWidth) { keepBlob(src); } else { img.addEventListener('load', function () { keepBlob(src); }); }
+				// A tap that lands before the picture has loaded still gets a head start.
+				a.addEventListener('touchstart', function () { keepBlob(src); }, { passive: true });
+			});
+		};
+		watch();
+		new MutationObserver(watch).observe(grid, { childList: true });
 	}
 
 	/* ------------------------------------------------------------------ */
@@ -846,10 +1387,11 @@
 		$('circle').checked = state.circle;
 		document.body.classList.toggle('as-circle', state.circle);
 		$('tip').textContent = TIPS[DEVICE];
-		$('save').textContent = SHARE_TO_PHOTOS ? T('Save to Photos') : T('Download picture');
+		$('save').textContent = DEVICE === 'ios' ? T('Save to Photos') : T('Download picture');
 		wireSave($('save'));
+		wireGallery();
 		// A design or palette remembered from an earlier version of the maker may be gone.
-		if (!LAYOUTS[state.design]) { state.design = 'tilt'; }
+		if (!designOf(state.design)) { state.design = 'tilt'; }
 		if (!PALETTES.some(function (p) { return p.id === state.palette; })) { state.palette = designOf(state.design).palette; }
 		buildGrid();
 		buildSwatches();
@@ -1032,8 +1574,10 @@
 	}
 
 	// For the QA script: draw any card and report how far its content reaches from the center.
-	window.VOTE_CARDS = { stateHeadline: stateHeadline, paletteFor: paletteFor, render: render, fit: fit, LAYOUTS: LAYOUTS, PALETTES: PALETTES, DESIGNS: DESIGNS, HEADLINES: HEADLINES, headlinesFor: headlinesFor, defaultHeadline: defaultHeadline, defaultDateLine: defaultDateLine, SAFE: SAFE,
-		setBrush: function (family, url) { return new FontFace(family, 'url(' + url + ')').load().then(function (l) { document.fonts.add(l); BRUSH = '"' + family + '"'; }); } };
+	window.VOTE_CARDS = { stateHeadline: stateHeadline, paletteFor: paletteFor, render: render, fit: fit, LAYOUTS: LAYOUTS, PALETTES: PALETTES, DESIGNS: DESIGNS, REVIEW: REVIEW, HEADLINES: HEADLINES, headlinesFor: headlinesFor, defaultHeadline: defaultHeadline, defaultDateLine: defaultDateLine, SAFE: SAFE,
+		setBrush: function (family, url) { return new FontFace(family, 'url(' + url + ')').load().then(function (l) { document.fonts.add(l); BRUSH = '"' + family + '"'; }); },
+		readyCount: function () { return Object.keys(readyBlobs).filter(function (k) { return readyBlobs[k] !== 'loading'; }).length; },
+		setScript: function (family, url) { return new FontFace(family, 'url(' + url + ')').load().then(function (l) { document.fonts.add(l); SCRIPT = '"' + family + '"'; }); } };
 
 	fonts().then(init, function () { init(); });
 })();

@@ -45,6 +45,36 @@ I'm voting messages, Spanish. Worth adding, in rough order of value before Novem
 Not doing: counters, event tracking, stickers-made maps, uploads or AR filters. They add tracking or
 moderation, and the brand promise is that nothing you make leaves your device.
 
+## Sticker Designs (October 22)
+
+**Shipped:** Shadow, Ring and Half replaced Poster and Stamp, so the row is twelve tiles (four even
+rows of three). Garrett chose them from twelve flat sketches; they were picked for what no other tile
+does: a hard offset shadow, type set around a disc (state name over the top, ELECTION 2026 under the
+bottom), and a color field with the state knocked out. Ring sizes its stack to fill the inner ring so
+it reads at 40 px.
+
+**Rejected, and why:** a first round imitating printed stickers (Die cut with a kiss-cut keyline,
+a scalloped Seal, Script lettering over block capitals, a Vertical state name). Garrett: these are
+stickers people save, not print, so paper effects read as a pin or a label; overlapping script and
+block lines fused at small sizes. Their layouts, and the other nine sketches (Band, Watermark, Stack,
+Check, Label, Diagonal, Pills, Hollow, Monogram), stay in `site/app.js` under `REVIEW`, out of the
+row. Render any of them with `node scripts/sheet_new.mjs <out> band,stack,...`.
+
+**Renderer additions, usable by any design:** letter spacing, leading and justified stacks in
+`textBlock`; outline lettering; type on a circle (`arcItems`); rotation for every item kind; items
+marked `nofit` (full-bleed bands and watermarks, drawn but not fitted to the safe circle); a `tilt`
+option on `render`.
+
+Next, if wanted:
+
+- **Tilt control.** `render` already takes `tilt` for any design. A three-way control under the
+  swatches (Straight, Left, Right at about 7 degrees).
+- **Stack (sketch 4)** as a fix to Big type: every line the same width is what makes the ready-made
+  lockups look designed.
+- **Cover photo (nice to have).** A 1584 x 396 canvas with a 640 x 312 safe center (LinkedIn full
+  width, Facebook's phone crop), the Side by side lockup fitted to a rectangle (`fit` needs a
+  rectangular mode). Save as `vote-...-cover.png`.
+
 ## After the Election
 
 - **Privacy and accessibility statements.** A footer review suggested Privacy, Terms and Accessibility links. Today the About page covers privacy in one line ("Your sticker is made on your device and is never uploaded"). After November 3, consider one short "Privacy and Accessibility" section on About rather than new thin pages.
