@@ -15,6 +15,10 @@
   "elections.ulstercountyny.gov": {
    "en": "the Ulster County Board of Elections",
    "es": "la Junta Electoral del condado de Ulster"
+  },
+  "portal.311.nyc.gov": {
+   "en": "NYC311, the City of New York",
+   "es": "NYC311, la ciudad de Nueva York"
   }
  },
  "dates": {
@@ -198,6 +202,14 @@
    "src": "https://elections.ulstercountyny.gov/i-voted-contest",
    "checked": "2026-10-21",
    "quote": "The design with the most votes will be produced and distributed to all voters at the November 3, 2026 General Election.",
+   "status": "verified"
+  },
+  "early": {
+   "en": "In New York City, the city's 2026 general election guide tells voters at early voting and Election Day poll sites to pick up an official \"I Voted\" sticker before they leave. Other counties set their own practice.",
+   "es": "En la ciudad de Nueva York, la guía de la ciudad para las elecciones generales de 2026 les dice a quienes votan en persona, por anticipado o el Día de las Elecciones, que recojan un sticker oficial de \"I Voted\" antes de salir. Los demás condados deciden por su cuenta.",
+   "src": "https://portal.311.nyc.gov/article/?kanumber=KA-03114",
+   "checked": "2026-10-23",
+   "quote": "Don't forget to pick up an official \"I Voted\" sticker before you leave!",
    "status": "verified"
   }
  },

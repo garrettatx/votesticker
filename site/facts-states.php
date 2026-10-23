@@ -696,6 +696,10 @@ return array(
 				'en' => 'the Colorado Secretary of State',
 				'es' => 'la Secretaría de Estado de Colorado',
 			),
+			'www.garfieldcountyco.gov' => array(
+				'en' => 'the Garfield County Clerk and Recorder',
+				'es' => 'la oficina del secretario del condado de Garfield (Clerk and Recorder)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Register by Monday, October 26, 2026 to still be mailed a ballot. After that, register and vote in person at a voter service and polling center, through Election Day.',
@@ -782,6 +786,12 @@ return array(
 			'es' => 'Colorado tiene un concurso de stickers digitales de "I Voted" para estudiantes de preparatoria. El personal de la Secretaría de Estado elige al ganador por voto popular, y el diseño ganador aparece en los mensajes de BallotTrax y en un comunicado de prensa estatal.',
 			'src' => 'https://www.coloradosos.gov/pubs/elections/votedSticker/contest.html',
 			'checked' => '2026-10-21',
+		),
+		'sticker.mail' => array(
+			'en' => 'In Garfield County, a limited special edition "I Voted" sticker for the nation\'s 250th and Colorado\'s 150th anniversaries is at ballot drop boxes and vote centers while supplies last.',
+			'es' => 'En el condado de Garfield, hay un sticker de "I Voted" de edición especial limitada por los 250 años del país y los 150 de Colorado en los buzones de entrega de boletas y los centros de votación, hasta agotar existencias.',
+			'src' => 'https://www.garfieldcountyco.gov/news/vote-and-return-both-ballot-pages-in-2026-general-election/',
+			'checked' => '2026-10-23',
 		),
 		'faq.provisional' => array(
 			'en' => 'If you register on Election Day but don\'t have ID that can be verified, you can vote a provisional ballot. After Election Day, election officials check that you\'re eligible, and if you are, it\'s counted.',
@@ -1184,6 +1194,10 @@ return array(
 				'en' => 'the Sarasota County Supervisor of Elections',
 				'es' => 'el Supervisor de Elecciones del condado de Sarasota (Supervisor of Elections)',
 			),
+			'clayelections.gov' => array(
+				'en' => 'the Clay County Supervisor of Elections',
+				'es' => 'la oficina electoral del condado de Clay (Supervisor of Elections)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Registration closed Monday, October 5, 2026.',
@@ -1291,6 +1305,12 @@ return array(
 			'es' => 'Algunos condados de Florida eligen sus stickers en concursos para estudiantes. En el condado de Sarasota, un flamenco rosa dibujado por un estudiante de séptimo grado, elegido entre más de 175 propuestas, es el sticker del 3 de noviembre, y se le ofrece a todo el que vote por correo, por anticipado o el Día de las Elecciones.',
 			'src' => 'https://www.sarasotavotes.gov/CivicAlerts.aspx?AID=31',
 			'checked' => '2026-10-21',
+		),
+		'sticker.early' => array(
+			'en' => 'Each county picks its own sticker. In Clay County, the winning design from the county\'s contest is handed out during early voting and on Election Day in 2026.',
+			'es' => 'Cada condado elige su propio sticker. En el condado de Clay, el diseño ganador del concurso del condado se entrega durante la votación anticipada y el Día de las Elecciones en 2026.',
+			'src' => 'https://clayelections.gov/your-elections-office/i-voted-sticker-contest/',
+			'checked' => '2026-10-23',
 		),
 		'faq.provisional' => array(
 			'en' => 'You vote a provisional ballot if your eligibility is challenged at the polls or you don\'t have ID. You have until 5 p.m. local time on the second day after the election to show more proof that you\'re eligible. It counts if your signature matches your registration and you\'re eligible.',
@@ -1411,6 +1431,12 @@ return array(
 			'es' => 'Georgia tiene un nuevo sticker estatal de "I voted" para 2026, diseñado por el artista de Georgia Steve Penley. Se imprimieron cinco millones y se mandaron a los 159 condados, así que puedes llevarte uno cuando votes.',
 			'src' => 'https://sos.ga.gov/news/georgia-debuts-new-i-voted-sticker-2026-midterm-elections',
 			'checked' => '2026-10-21',
+		),
+		'sticker.early' => array(
+			'en' => 'Yes. The Secretary of State sent the 2026 sticker to all 159 counties, and voters could get it from the first day of early voting, October 13.',
+			'es' => 'Sí. La Secretaría de Estado envió el sticker de 2026 a los 159 condados, y se entrega desde el primer día de la votación anticipada, el 13 de octubre.',
+			'src' => 'https://sos.ga.gov/news/georgia-debuts-new-i-voted-sticker-2026-midterm-elections',
+			'checked' => '2026-10-23',
 		),
 		'faq.provisional' => array(
 			'en' => 'You vote a provisional ballot when your eligibility can\'t be confirmed at the polling place, for example if your name isn\'t on the list. It counts if your county registrar\'s office can confirm your eligibility within three days after Election Day.',
@@ -2898,6 +2924,10 @@ return array(
 				'en' => 'Michigan Election Law',
 				'es' => 'la Ley Electoral de Michigan',
 			),
+			'www.cityofnorthvillemi.gov' => array(
+				'en' => 'the City of Northville',
+				'es' => 'la ciudad de Northville',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Online and by mail: closed 15 days before Election Day, on October 19, 2026. In person: register at your city or township clerk\'s office through 8 p.m. on Election Day, and bring proof of residency.',
@@ -3016,6 +3046,12 @@ return array(
 			'es' => 'Michigan tiene un concurso estatal de stickers de I Voted, que empezó en 2024 por idea del grupo asesor de estudiantes universitarios de la Secretaría de Estado. Este año llegaron más de 2,000 diseños, el público votó por los finalistas y se eligieron nueve ganadores en tres categorías. Los secretarios locales pueden pedir los stickers ganadores para noviembre.',
 			'src' => 'https://www.michigan.gov/sos/elections/voting/i-voted-sticker-contest',
 			'checked' => '2026-10-21',
+		),
+		'sticker.mail' => array(
+			'en' => 'Look in your ballot envelope. In the City of Northville, every absentee ballot comes with voting instructions and an "I Voted" sticker. Other clerks decide for themselves.',
+			'es' => 'Revisa el sobre de tu boleta. En la ciudad de Northville, cada boleta de voto en ausencia llega con instrucciones y un sticker de "I Voted". Los demás secretarios municipales deciden por su cuenta.',
+			'src' => 'https://www.cityofnorthvillemi.gov/m/faq',
+			'checked' => '2026-10-23',
 		),
 		'faq.provisional' => array(
 			'en' => 'You may get one if your name isn\'t on the list, you\'re at the wrong polling place, or you\'re a first-time voter without the required ID. You then have 6 days to bring ID to your city or township clerk. It counts if officials confirm you\'re registered in the right place.',
@@ -4477,6 +4513,10 @@ return array(
 				'en' => 'the Ulster County Board of Elections',
 				'es' => 'la Junta Electoral del condado de Ulster',
 			),
+			'portal.311.nyc.gov' => array(
+				'en' => 'NYC311, the City of New York',
+				'es' => 'NYC311, la ciudad de Nueva York',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Your application must reach a board of elections by Saturday, October 24, 2026, by mail or in person. New York has no Election Day registration.',
@@ -4593,6 +4633,12 @@ return array(
 			'es' => 'La Junta Electoral del condado de Ulster organiza un concurso de stickers de I Voted para estudiantes, que ya va en su sexto año. Estudiantes de 9 a 18 años mandan sus diseños, el público vota por los finalistas, y el sticker ganador se le da a cada votante del condado el 3 de noviembre de 2026.',
 			'src' => 'https://elections.ulstercountyny.gov/i-voted-contest',
 			'checked' => '2026-10-21',
+		),
+		'sticker.early' => array(
+			'en' => 'In New York City, the city\'s 2026 general election guide tells voters at early voting and Election Day poll sites to pick up an official "I Voted" sticker before they leave. Other counties set their own practice.',
+			'es' => 'En la ciudad de Nueva York, la guía de la ciudad para las elecciones generales de 2026 les dice a quienes votan en persona, por anticipado o el Día de las Elecciones, que recojan un sticker oficial de "I Voted" antes de salir. Los demás condados deciden por su cuenta.',
+			'src' => 'https://portal.311.nyc.gov/article/?kanumber=KA-03114',
+			'checked' => '2026-10-23',
 		),
 		'faq.provisional' => array(
 			'en' => 'New York calls it an affidavit ballot. You vote one when your record is missing from the poll book at your correct polling place, or you moved within the state and didn\'t update your address. You sign a sworn statement that you\'re registered and still qualified to vote there.',
@@ -4910,6 +4956,10 @@ return array(
 				'en' => 'Oregon law',
 				'es' => 'la ley de Oregon',
 			),
+			'multco.us' => array(
+				'en' => 'Multnomah County Elections',
+				'es' => 'la oficina electoral del condado de Multnomah',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Registration closed October 13, 2026. Not sure you\'re registered or active? Check My Vote, because ballots aren\'t mailed to inactive voters.',
@@ -4990,6 +5040,12 @@ return array(
 			'es' => 'Oregon vota por correo, así que la Secretaría de Estado ofrece stickers virtuales de I Voted para compartir, con frases como "I Voted (By Mail)" y "I Voted (The Oregon Way)".',
 			'src' => 'https://sos.oregon.gov/Pages/media-resources.aspx',
 			'checked' => '2026-10-21',
+		),
+		'sticker.mail' => array(
+			'en' => 'In Multnomah County, sign up for ballot tracking at BallotTrax and you get a virtual "I Voted" sticker to share once your ballot is in. Other counties decide for themselves.',
+			'es' => 'En el condado de Multnomah, si te inscribes para rastrear tu boleta en BallotTrax, recibes un sticker virtual de "I Voted" para compartir cuando tu boleta llegue. Los demás condados deciden por su cuenta.',
+			'src' => 'https://multco.us/news/oct-22-2026-all-registered-voters-should-have-received-their-ballots',
+			'checked' => '2026-10-23',
 		),
 		'faq.line' => array(
 			'en' => 'You can still turn in your ballot. Voters in line at a drop site at 8 p.m. may drop it off.',
@@ -5947,6 +6003,10 @@ return array(
 				'en' => 'Virginia law',
 				'es' => 'la ley de Virginia',
 			),
+			'www.roanokeva.gov' => array(
+				'en' => 'the City of Roanoke',
+				'es' => 'la ciudad de Roanoke',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Register or update your registration by Friday, October 23, 2026. After that, you can still register in person and vote a provisional ballot through Election Day.',
@@ -6054,6 +6114,12 @@ return array(
 			'es' => 'Puedes usar tu teléfono dentro del lugar de votación. Los funcionarios electorales pueden detener el uso del teléfono si retrasa o interrumpe la votación, o si intenta influir en otro votante.',
 			'src' => 'https://law.lis.virginia.gov/admincode/title1/agency20/chapter60/section30/',
 			'checked' => '2026-10-21',
+		),
+		'sticker.early' => array(
+			'en' => 'Each locality picks its own sticker. In the City of Roanoke, limited America 250 "I Voted" stickers are handed out during early voting and at each precinct on Election Day.',
+			'es' => 'Cada localidad elige su propio sticker. En la ciudad de Roanoke, se entregan stickers de "I Voted" de America 250, en cantidad limitada, durante la votación anticipada y en cada precinto el Día de las Elecciones.',
+			'src' => 'https://www.roanokeva.gov/m/newsflash/home/detail/2459',
+			'checked' => '2026-10-23',
 		),
 		'faq.provisional' => array(
 			'en' => 'If you come without an acceptable ID and don\'t sign an ID Confirmation Statement, you vote a provisional ballot. It counts if your ID copy or signed statement reaches your local electoral board by noon on the Friday after the election. A Friday postmark isn\'t enough.',

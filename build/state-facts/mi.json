@@ -11,6 +11,10 @@
   "www.legislature.mi.gov": {
    "en": "Michigan Election Law",
    "es": "la Ley Electoral de Michigan"
+  },
+  "www.cityofnorthvillemi.gov": {
+   "en": "the City of Northville",
+   "es": "la ciudad de Northville"
   }
  },
  "dates": {
@@ -198,6 +202,14 @@
    "src": "https://www.michigan.gov/sos/elections/voting/i-voted-sticker-contest",
    "checked": "2026-10-21",
    "quote": "Winning stickers will be available for election clerks to order for the November election.",
+   "status": "verified"
+  },
+  "mail": {
+   "en": "Look in your ballot envelope. In the City of Northville, every absentee ballot comes with voting instructions and an \"I Voted\" sticker. Other clerks decide for themselves.",
+   "es": "Revisa el sobre de tu boleta. En la ciudad de Northville, cada boleta de voto en ausencia llega con instrucciones y un sticker de \"I Voted\". Los demás secretarios municipales deciden por su cuenta.",
+   "src": "https://www.cityofnorthvillemi.gov/m/faq",
+   "checked": "2026-10-23",
+   "quote": "Your ballot comes with complete voting instructions and an \"I Voted\" sticker.",
    "status": "verified"
   }
  },

@@ -11,6 +11,10 @@
   "law.lis.virginia.gov": {
    "en": "Virginia law",
    "es": "la ley de Virginia"
+  },
+  "www.roanokeva.gov": {
+   "en": "the City of Roanoke",
+   "es": "la ciudad de Roanoke"
   }
  },
  "dates": {
@@ -204,6 +208,14 @@
   "tradition": {
    "status": "missing",
    "notes": "No statewide sticker or contest found on elections.virginia.gov. Prince William County ran a 2024 design contest (pwcva.gov news release) and rotates four winning designs; the 2026 design was read only in news coverage, not on the county page."
+  },
+  "early": {
+   "en": "Each locality picks its own sticker. In the City of Roanoke, limited America 250 \"I Voted\" stickers are handed out during early voting and at each precinct on Election Day.",
+   "es": "Cada localidad elige su propio sticker. En la ciudad de Roanoke, se entregan stickers de \"I Voted\" de America 250, en cantidad limitada, durante la votación anticipada y en cada precinto el Día de las Elecciones.",
+   "src": "https://www.roanokeva.gov/m/newsflash/home/detail/2459",
+   "checked": "2026-10-23",
+   "quote": "Limited quantities of America 250 \"I Voted\" stickers will be distributed during early voting and at each precinct on Election Day.",
+   "status": "verified"
   }
  },
  "faq": {

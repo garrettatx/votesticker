@@ -1,0 +1,174 @@
+{
+ "items": [
+  {
+   "q": 1,
+   "state": "SD",
+   "answer": "In-person absentee voting at the county auditor's office runs Friday, September 18, 2026 through Monday, November 2, 2026. Last day: regular office hours or until 5 p.m. local time, whichever is later.",
+   "quote": "Absentee voting for the General Election begins on this date (SDCL 12-19-1.2).",
+   "url": "https://sdsos.gov/elections-voting/upcoming-elections/general-information/2026%20Election%20Information/2026%20Election%20Assets/Election%20Information/updated2026electioncalendar.pdf",
+   "page_date_or_election": "2026 South Dakota Election Calendar, Last Updated: July 14, 2026; entry dated September 18 under the general election",
+   "confidence": "confirmed",
+   "notes": "More quotes. Same calendar, November 2: \"A voter must request an absentee ballot before 5:00 p.m. local time on this date (SDCL 12-19-2.1).\" Where (https://sdsos.gov/elections-voting/voting/absentee-voting.aspx, a general page, not dated): \"Registered voters can vote in-person once Absentee Voting begins at their County Auditor's office by bringing along a valid photo identification card (ID).\" Last-day time, same page: \"...in person at the office of and to the person in charge of the election during regular office hours or until five p.m. on the day before the election, whichever is later.\" The 2026 Election Information page also says \"Absentee Voting Begins: September 18, 2026\" under General Election. County auditor directory: https://vip.sdsos.gov/CountyAuditors.aspx (not re-read here)."
+  },
+  {
+   "q": 2,
+   "state": "WI",
+   "answer": "By statute, in-person absentee voting can run from 14 days before the election (Tuesday, October 20, 2026) through the Sunday before it (November 1, 2026). Each municipality sets its own days and hours and can end earlier.",
+   "quote": "If application is made in person, the application shall be made no earlier than 14 days preceding the election and no later than the Sunday preceding the election. No application may be received on a legal holiday. A municipality shall specify the hours in the notice under s. 10.01 (2) (e) .",
+   "url": "https://docs.legis.wisconsin.gov/document/statutes/6.86(1)(b)",
+   "page_date_or_election": "Wis. Stat. 6.86(1)(b), current statute; not tied to a specific election. The Oct 20 and Nov 1 dates are worked out from the rule.",
+   "confidence": "partial",
+   "notes": "BLOCKED: myvote.wi.gov/en-us/Vote-Absentee-In-Person and elections.wi.gov/voters/absentee both return 403 to curl and WebFetch. Claude in Chrome was not connected. A municipal page shows local variation for 2026. City of Menomonie (https://menomonie-wi.gov/534/Elections): \"Early in-person voting (officially called in-person absentee voting in Wisconsin) begins two weeks before Election Day and ends the Friday before Election Day.\" It lists \"Dates and Hours: Tuesday, October 20 – Friday, October 30, 2026\". So the site should say 'up to Oct 20 to Nov 1; check your municipal clerk'. The Town of Lebanon (townoflebanon.wi.gov) also has a 2026 in-person absentee schedule."
+  },
+  {
+   "q": 3,
+   "state": "UT",
+   "answer": "Yes. Early voting runs October 20 to Friday, October 30, 2026 (ending 5 p.m.), and a county may extend it through Monday, November 2. Counties can also shorten it. Current site row (end 2026-10-30, varies:false) should be qualified.",
+   "quote": "October 30, 2026 (5:00 p.m.) General Election in-person early voting ends (a county may extend early voting until November 2nd)",
+   "url": "https://vote.utah.gov/wp-content/uploads/2026/01/2026-Candidate-Manual.pdf",
+   "page_date_or_election": "2026 Candidate Manual (Utah Lt. Governor), general election calendar",
+   "confidence": "confirmed",
+   "notes": "Same manual: \"October 20, 2026 General Election in-person early voting can begin, contact county clerk for specific dates\". Statute, Utah Code 20A-3a-601(3)(a) (Effective 5/7/2025, https://le.utah.gov/xcode/Title20A/Chapter3A/C20A-3a-S601_2025050720250507.html): \"An election officer may extend the end of the early voting period to the day before the election date if the election officer provides notice of the extension in accordance with Section 20A-3a-604 .\" 601(3)(c) also lets a county clerk shorten the period."
+  },
+  {
+   "q": 4,
+   "state": "CA",
+   "answer": "Early voting sites open October 5, 2026. Voter's Choice Act counties open vote centers October 24, 2026.",
+   "quote": "Early Voting sites open October 5, 2026",
+   "url": "https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026/key-dates-deadlines",
+   "page_date_or_election": "Key Dates and Deadlines, General Election November 3, 2026",
+   "confidence": "confirmed",
+   "notes": "The page is a two-column list; the quote joins the label and its date. Same page: \"Voter's Choice Act counties to open Vote Centers October 24, 2026*\". The footnote reads \"*Date falls on a weekend or state holiday; it does not move forward to the next business day.\" The page lists the Oct 24 date as the opening date and does not say these are the minimum vote centers. Ballot drop-off locations open by Oct 5; finder https://caearlyvoting.sos.ca.gov/."
+  },
+  {
+   "q": 4,
+   "state": "CO",
+   "answer": "The minimum required voter service and polling centers open October 19, 2026. Mail ballots went out October 2 to 9.",
+   "quote": "October 19 - The minimum number of required voter centers must be open.",
+   "url": "https://www.sos.state.co.us/pubs/newsRoom/pressReleases/2026/PR20260923GeneralElection.html",
+   "page_date_or_election": "Colorado SOS press release, Denver, September 23, 2026, 2026 General Election",
+   "confidence": "confirmed",
+   "notes": "The release also says: \"Colorado's County Clerks will mail ballots via the Postal Service to every active voter between October 2 and October 9, and voters may cast their ballot at a drop box, voter center, by mail, or may vote in person, as they would in any other election.\" Some counties may open centers earlier; the release gives Oct 19 as the required minimum. The locator https://www.coloradosos.gov/pubs/elections/VIP.html is JavaScript-rendered; curl got only the title \"Where do I drop off my ballot or vote in person?\"."
+  },
+  {
+   "q": 4,
+   "state": "HI",
+   "answer": "Voter service centers offering in-person voting and same-day registration are open October 20 to November 3, 2026 (7 p.m. on Election Day).",
+   "quote": "Voter service centers are open October 20 – November 3, 2026.",
+   "url": "https://elections.hawaii.gov/news-release/voter-service-centers-open-october-20/",
+   "page_date_or_election": "Office of Elections news release 'Voter Service Centers Open October 20', 2026 General Election",
+   "confidence": "confirmed",
+   "notes": "Same release: \"Pearl City – From October 20 through November 3, voter service centers will be open to provide in-person election services, including voter registration and accessible voting.\" It also says: \"you must be in line at a voter service center by 7:00 PM\". Directory: https://elections.hawaii.gov/voter-service-centers-and-places-of-deposit/ (not re-read)."
+  },
+  {
+   "q": 5,
+   "state": "MS",
+   "answer": "Excuse-required in-person absentee voting at the circuit clerk's office. The FAQ says it begins September 19, 2026 (a Saturday, with weekday-only hours). The SOS announced ballots available on Monday, September 21, 2026. Hours are weekdays 8 a.m. to 5 p.m., plus Saturdays October 24 and 31, 8 a.m. to noon. The last day is Saturday, October 31, 2026, ending at noon.",
+   "quote": "You may vote absentee in person from 8:00 a.m. to 5:00 p.m., Monday through Friday, beginning September 19, 2026, at the circuit Clerk’s office, through October 31, 2026.",
+   "url": "https://www.sos.ms.gov/yall-vote/absentee-voting-information",
+   "page_date_or_election": "Absentee Voting Information FAQ, 2026 dates (general election)",
+   "confidence": "conflict",
+   "notes": "Sept 21 release (https://www.sos.ms.gov/news/absentee-ballots-now-available-2026-general-election, Monday, September 21, 2026): \"In-person and mail-in absentee ballots are now available in Circuit Clerk's Offices for the 2026 General Election to be held on Tuesday, November 3, 2026 .\" The FAQ continues: \"In addition, the circuit Clerk's Office will be open for in -person absentee voting from 8:00 a.m. to noon on October 24, 2026, and October 31, 2026. The deadline to vote in-person absentee will be October 31, 2026.\" Oct 22 release (https://www.sos.ms.gov/news/saturday-person-absentee-voting-begins-upcoming-deadlines-2026-general-election): \"The last day to vote in-person absentee is Saturday, October 31. Circuit Clerk's Offices will be open from 8:00 a.m. until noon.\" Sept 19 is the legal availability date and a Saturday; offices were open weekdays only. The first day a voter could actually vote was most likely Monday, Sept 21. No source answers this directly. The FAQ also says \"Mail-in Absentee ballots will be available no later than September 19, 2026.\" Not no-excuse; site kind:none stays correct."
+  },
+  {
+   "q": 6,
+   "state": "MT",
+   "answer": "By statute, in-person absentee voting at the county election administrator's office opens when ballots are available, 30 days before Election Day. For Nov 3 that is Oct 4, a Sunday, so in practice Monday Oct 5. It runs through the day before the election (Nov 2; requests due by noon per third-party sources only).",
+   "quote": "(1) As soon as the official ballots are available for in-person absentee voting under 13-13-205 (1)(a)(i), the election administrator shall permit an elector to apply for, receive, and mark an absentee ballot before election day by appearing in person at the office of the election administrator and marking the ballot in a voting station area designated by the election administrator.",
+   "url": "https://archive.legmt.gov/bills/mca/title_0130/chapter_0130/part_0020/section_0220/0130-0130-0020-0220.html",
+   "page_date_or_election": "MCA 13-13-222, Montana Code Annotated 2025; not election-specific",
+   "confidence": "partial",
+   "notes": "MCA 13-13-205(1)(a)(i) (https://archive.legmt.gov/bills/mca/title_0130/chapter_0130/part_0020/section_0050/0130-0130-0020-0050.html, MCA 2025): \"30 days prior to election day for absentee voting in person;\". BLOCKED: sosmt.gov/elections/absentee/ and sosmt.gov/elections/vote/ return 403 to curl and WebFetch; Chrome not connected. No official county page with 2026 dates found; only aggregators (US Vote Foundation, 866ourvote) give Oct 5 to Nov 2, which is not allowed as a source. The noon Nov 2 request deadline is unconfirmed on an official page in this pass."
+  },
+  {
+   "q": 6,
+   "state": "ND",
+   "answer": "North Dakota has no statewide early voting. Each county commission decides; a county that offers it must run it during the 15 days before Election Day, with days and hours set by the county auditor. The SOS 'Early Voting Available Counties' list shows which counties offer it and their 2026 schedules. Examples: Burleigh (Bismarck Event Center) Oct 22 to Nov 2; Cass (Fargo Ramada, Casselton) Oct 27 to 31.",
+   "quote": "Some communities offer early voting at certain dates and times prior to Election Day.",
+   "url": "https://www.sos.nd.gov/elections/voter/voting-north-dakota/how-do-i-vote",
+   "page_date_or_election": "How Do I Vote, ND Secretary of State; general page, not dated",
+   "confidence": "confirmed",
+   "notes": "Same page: \"Check if your county offers early voting at Early Voting Available Counties .\" Statute NDCC 16.1-07-15(2)(a) (https://ndlegis.gov/cencode/t16-1c07.pdf): \"Early voting must be authorized during the fifteen days immediately before the day of the election. The county auditor shall designate the business days and times during which the early voting election precinct will be open...\" 2026 general schedule portal: https://vip.sos.nd.gov/Precincts.aspx?eid=348. It lists 2026 dates, e.g. Burleigh \"Oct 22 2026 12:00PM-Oct 22 2026 5:30PM ... Nov 2 2026 9:00AM-Nov 2 2026 5:00PM\". Do not use eid=346, which is the primary."
+  },
+  {
+   "q": 6,
+   "state": "VT",
+   "answer": "Vote early in person at your town or city clerk's office during business hours. For the general election this starts 45 days before (Sept 19, 2026, a Saturday) or as soon as ballots are available. It ends when the clerk's office closes on the day before the election. Each clerk's hours differ.",
+   "quote": "Vote early at your town clerk’s office during business hours. Early voting for the General Election begins 45 days before the election or as soon as ballots are available.",
+   "url": "https://sos.vermont.gov/elections/voters/early-absentee-voting",
+   "page_date_or_election": "Early & Absentee Voting, VT Secretary of State; general rule, not 2026-specific",
+   "confidence": "confirmed",
+   "notes": "Same page: \"You can vote early in person at your town or city clerk's office or by mail.\" Also: \"Return your ballot to your town clerk's office before the office closes on the day before the election, or bring it to your polling place before 7 p.m. on Election Day.\" Sept 19 is worked out from the rule (45 days before Nov 3) and is not printed on the page. Clerk lookup: https://map.vermont.gov/voting-info-lookup/ (not re-read)."
+  },
+  {
+   "q": 7,
+   "state": "AK",
+   "answer": "site/states.js officialUrl is already the early directory: https://www.elections.alaska.gov/avo/. The Election Day lookup is build/state-facts/ak.json where.locator_url = https://www.elections.alaska.gov/election-polls/ (title 'Polling Place Locations - Division of Elections'). Use /avo/ for early voting.",
+   "quote": "EARLY & ABSENTEE IN-PERSON VOTING LOCATIONS 2026 General Election",
+   "url": "https://www.elections.alaska.gov/avo/",
+   "page_date_or_election": "Page title 'Early and Absentee In-Person Voting Locations - Division of Elections'; heading '2026 General Election'; 'Page last updated: October 22, 2026 at 3:45 pm'",
+   "confidence": "confirmed",
+   "notes": "Rows give city, location, address, dates and hours, e.g. Adak City Office, Monday – Friday, October 19 – November 2, 9:00am – 5:00pm."
+  },
+  {
+   "q": 7,
+   "state": "MA",
+   "answer": "site/states.js officialUrl = https://www.sec.state.ma.us/divisions/elections/voting-information/vote-early.htm (the Vote Early page, fine). Election Day lookup is state-facts ma.json where.locator_url = https://www.sec.state.ma.us/WhereDoIVoteMA/WhereDoIVote. The early schedule search to use is https://www.sec.state.ma.us/EarlyVotingWeb/EarlyVotingSearch.aspx.",
+   "quote": "",
+   "url": "https://www.sec.state.ma.us/EarlyVotingWeb/EarlyVotingSearch.aspx",
+   "page_date_or_election": "not read",
+   "confidence": "blocked",
+   "notes": "curl returned a 10-byte block page; ma.json notes say sec.state.ma.us needs Chrome, and Chrome was not connected. The page title is not confirmed. URL comes from the 50-state report."
+  },
+  {
+   "q": 7,
+   "state": "PA",
+   "answer": "site/states.js officialUrl = https://www.pa.gov/agencies/vote/voter-support/mail-in-and-absentee-ballot/mail-ballot-before-election-day (the on-demand page, fine). Election Day lookup is state-facts pa.json where.locator_url = https://www.pavoterservices.pa.gov/Pages/PollingPlaceInfo.aspx. Replace that with https://www.pa.gov/agencies/vote/voter-support/ballot-availability, which has county-by-county on-demand availability.",
+   "quote": "On-Demand Voting Available by County",
+   "url": "https://www.pa.gov/agencies/vote/voter-support/ballot-availability",
+   "page_date_or_election": "Title 'Mail Ballot Availability | Voting & Election Information | Commonwealth of Pennsylvania'; no explicit 2026 election label in the text read; county entries are current-cycle",
+   "confidence": "partial",
+   "notes": "County entries read e.g. Adams County: 'If you are interested in on demand voting at your county election office, your county can now accept requests.' The page does not name the Nov 3, 2026 election in the scraped text."
+  },
+  {
+   "q": 7,
+   "state": "WV",
+   "answer": "site/states.js officialUrl = https://sos.wv.gov/govotewv. Election Day lookup is state-facts wv.json where.locator_url = https://apps.sos.wv.gov/Elections/Voter/FindMyPollingPlace. The early directory is https://sos.wv.gov/early-voting-locations.",
+   "quote": "Early voting locations are listed below for all 55 West Virginia counties.",
+   "url": "https://sos.wv.gov/early-voting-locations",
+   "page_date_or_election": "Title 'Early Voting Locations | WV Secretary of State'; page says 'Early Voting Dates: October 21–31, 2026'",
+   "confidence": "confirmed",
+   "notes": "The site's sourceUrl already uses this page; only officialUrl/locator need to change."
+  },
+  {
+   "q": 7,
+   "state": "WY",
+   "answer": "site/states.js officialUrl = https://sos.wyo.gov/Elections/Default.aspx (general elections home). Election Day lookup is state-facts wy.json where.locator_url = https://myelectionday.sos.wyo.gov/WYVOTES/Pages/VOSearch.aspx. No statewide early-site directory exists; early voting is in person at the county clerk. Best replacement: https://sos.wyo.gov/Elections/State/AbsenteeVoting.aspx.",
+   "quote": "In Person – Request an absentee ballot in person at your county clerk’s office",
+   "url": "https://sos.wyo.gov/Elections/State/AbsenteeVoting.aspx",
+   "page_date_or_election": "HTML title is just 'Wyoming Secretary of State' (page heading: Absentee Voting); general page, not 2026-specific",
+   "confidence": "partial",
+   "notes": "County clerk addresses are in the 2026 Voter Guide PDF already cited in wy.json (https://sos.wyo.gov/Elections/Docs/2026/2026_Voter_Guide.pdf; not re-read)."
+  },
+  {
+   "q": 7,
+   "state": "CT",
+   "answer": "site/states.js officialUrl = https://portal.ct.gov/sots/election-services/early-voting/early-voting (fine). Election Day lookup is state-facts ct.json where.locator_url = https://portaldir.ct.gov/sots/LookUp.aspx. The town-by-town early list is https://portal.ct.gov/sots/election-services/early-voting/early-voting-locations---november-2026.",
+   "quote": "Find your Early Voting Locations here .",
+   "url": "https://portal.ct.gov/sots/election-services/early-voting/early-voting-locations---november-2026",
+   "page_date_or_election": "Title 'Early Voting Location - November 2026'",
+   "confidence": "confirmed",
+   "notes": "The quote is on the Early Voting page, linking to the locations page."
+  },
+  {
+   "q": 7,
+   "state": "NC",
+   "answer": "site/states.js officialUrl = https://www.ncsbe.gov/voting/vote-early-person (fine). Election Day/registration lookup is state-facts nc.json where.locator_url = https://vt.ncsbe.gov/RegLkup/. The early site search is https://vt.ncsbe.gov/EVSite/, plus the PDF list https://s3.amazonaws.com/dl.ncsbe.gov/One-Stop_Early_Voting/2026/Early_Voting_Site_List_November_2026.pdf.",
+   "quote": "Find early voting sites and schedules in your county: Use the Early Voting Site Search , or",
+   "url": "https://www.ncsbe.gov/voting/vote-early-person",
+   "page_date_or_election": "Section 'November 2026 General Election'; EVSite page title 'Early Voting Sites'",
+   "confidence": "confirmed",
+   "notes": "Next line on the page: 'View the Early Voting Sites for the Nov. 3, 2026 General Election (PDF) .' The PDF is on s3.amazonaws.com, linked from ncsbe.gov; QA may reject that host, so prefer vt.ncsbe.gov/EVSite/."
+  }
+ ]
+}

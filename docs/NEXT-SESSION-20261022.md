@@ -54,6 +54,11 @@ reverted. Start there.
    NC, SC, MO and WA (`sticker.early`, `sticker.mail` in the facts files), and the early-voting-ended
    switch (`vote_close_early()`; LA and PA flip October 28). Plan: `docs/content-plan-20261023.md`;
    open research questions: `docs/perplexity-prompts.md` Round 3.
+   Loop batch 1 (two agents, Oct 23 night) applied. Still to apply from
+   `scratchpad/loop/batch1-stickers.json` (copied to `docs/research/loop-batch1-stickers.json`): CA San Diego
+   and IL Champaign (hosts countynewscenter.com and champaigncountyclerk.com need ALLOW_HOSTS entries),
+   NV Clark (PDF quote to confirm), WA Snohomish pickup (second source for WA mail), and the 7 partials.
+   Batch 2 next: early voting directory links (handle with the early-voting-ended switch), remaining states.
 2. **Deploy the October 22 late work** (Garrett's OK, or the October 24 daily build does it). Build, deploy, live QA (all five
    scripts, including `qa_save.mjs` without `--base`), IndexNow for all 108 URLs (the maker and
    finder are on every state page), then Garrett checks on his iPhone: tap a Texas ready-made, Save

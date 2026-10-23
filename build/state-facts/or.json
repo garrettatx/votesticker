@@ -11,6 +11,10 @@
   "www.oregonlegislature.gov": {
    "en": "Oregon law",
    "es": "la ley de Oregon"
+  },
+  "multco.us": {
+   "en": "Multnomah County Elections",
+   "es": "la oficina electoral del condado de Multnomah"
   }
  },
  "dates": {
@@ -153,6 +157,14 @@
    "src": "https://sos.oregon.gov/Pages/media-resources.aspx",
    "checked": "2026-10-21",
    "quote": "I Voted (virtual sticker)",
+   "status": "verified"
+  },
+  "mail": {
+   "en": "In Multnomah County, sign up for ballot tracking at BallotTrax and you get a virtual \"I Voted\" sticker to share once your ballot is in. Other counties decide for themselves.",
+   "es": "En el condado de Multnomah, si te inscribes para rastrear tu boleta en BallotTrax, recibes un sticker virtual de \"I Voted\" para compartir cuando tu boleta llegue. Los demás condados deciden por su cuenta.",
+   "src": "https://multco.us/news/oct-22-2026-all-registered-voters-should-have-received-their-ballots",
+   "checked": "2026-10-23",
+   "quote": "You'll even receive a virtual \"I Voted\" sticker that's ready to share on social media.",
    "status": "verified"
   }
  },

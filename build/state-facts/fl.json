@@ -15,6 +15,10 @@
   "www.sarasotavotes.gov": {
    "en": "the Sarasota County Supervisor of Elections",
    "es": "el Supervisor de Elecciones del condado de Sarasota (Supervisor of Elections)"
+  },
+  "clayelections.gov": {
+   "en": "the Clay County Supervisor of Elections",
+   "es": "la oficina electoral del condado de Clay (Supervisor of Elections)"
   }
  },
  "dates": {
@@ -203,6 +207,14 @@
    "src": "https://www.sarasotavotes.gov/CivicAlerts.aspx?AID=31",
    "checked": "2026-10-21",
    "quote": "This year, a pink flamingo is at the center of the sticker, and I think the voters are going to love this design as much as they did the previous one.",
+   "status": "verified"
+  },
+  "early": {
+   "en": "Each county picks its own sticker. In Clay County, the winning design from the county's contest is handed out during early voting and on Election Day in 2026.",
+   "es": "Cada condado elige su propio sticker. En el condado de Clay, el diseño ganador del concurso del condado se entrega durante la votación anticipada y el Día de las Elecciones en 2026.",
+   "src": "https://clayelections.gov/your-elections-office/i-voted-sticker-contest/",
+   "checked": "2026-10-23",
+   "quote": "One original sticker design will be chosen and reproduced for distribution during Early Voting and Election Day for both the Primary and General Elections in 2026.",
    "status": "verified"
   }
  },
