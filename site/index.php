@@ -42,7 +42,7 @@ function vote_pbase() { return vote_es() ? VOTE_BASE . 'es/' : VOTE_BASE; }
 function vote_lname( $st ) { return $st['name']; }
 // A state's name in titles and headings: English writes Washington, DC for the District.
 function vote_name( $st ) { return 'DC' === $st['abbr'] ? 'Washington, DC' : $st['name']; }
-function vote_sfield( $st, $key ) { return vote_es() ? ( $GLOBALS['vote_i18n']['states'][ $st['abbr'] ][ $key ] ?? '' ) : ( $st[ $key ] ?? '' ); }
+function vote_sfield( $st, $key ) { if ( 'ended' === ( $st['kind'] ?? '' ) && in_array( $key, array( 'summary', 'note' ), true ) ) { return ''; } return vote_es() ? ( $GLOBALS['vote_i18n']['states'][ $st['abbr'] ][ $key ] ?? '' ) : ( $st[ $key ] ?? '' ); }
 const VOTE_MESES = array( 'enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre' );
 const VOTE_MES = array( 'ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sept', 'oct', 'nov', 'dic' );
 const VOTE_DIAS = array( 'domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado' );
@@ -51,9 +51,22 @@ function vote_states() {
 	$rows = array();
 	foreach ( file( __DIR__ . '/states.js' ) as $line ) {
 		$row = json_decode( rtrim( trim( $line ), ',' ), true );
-		if ( isset( $row['abbr'] ) ) { $rows[ $row['abbr'] ] = $row; }
+		if ( isset( $row['abbr'] ) ) { $rows[ $row['abbr'] ] = vote_close_early( $row ); }
 	}
 	return $rows;
+}
+// Early voting that has closed (October 23): from the day after a state's last early voting day through
+// Election Day, the row's kind becomes 'ended'. Titles, ribbons, summaries, post text and the default
+// sticker then point to Election Day; the dates table still lists the window. The date is the build's
+// (the daily build runs at 6:05 a.m. Central), or VOTE_TODAY=YYYY-MM-DD for QA.
+function vote_today() { return getenv( 'VOTE_TODAY' ) ?: date( 'Y-m-d' ); }
+function vote_close_early( $row ) {
+	$today = vote_today();
+	if ( 'verified' === ( $row['status'] ?? '' ) && 'in-person' === ( $row['kind'] ?? '' ) && ! empty( $row['end'] ) && $row['end'] < $today && $today <= '2026-11-03' ) {
+		$row['kind'] = 'ended';
+		unset( $row['summary'], $row['note'], $row['dateLine'] );
+	}
+	return $row;
 }
 
 function vote_slug( $name ) { return trim( preg_replace( '/[^a-z]+/', '-', strtolower( $name ) ), '-' ); }
@@ -137,6 +150,13 @@ function vote_meta( $st ) {
 		$lead = 'Your ballot came in the mail. Pick a day to send it back, then grab a sticker so your friends remember theirs.';
 		$status = 'Votes by mail';
 		$family = 'mail';
+	} elseif ( 'ended' === $kind ) {
+		$tag = 'Vote on Election Day, Nov 3';
+		$ribbon = 'EARLY VOTING HAS ENDED. VOTE NOV 3';
+		$fact = 'Early voting in ' . $name . ' ended ' . vote_day( $st['end'] ) . '. Election Day is Tuesday, November 3.';
+		$lead = $grab . ' Early voting ended ' . vote_long( $st['end'] ) . '; vote on Election Day, Tuesday, November 3.';
+		$status = 'Election Day · Nov 3';
+		$family = 'early_over';
 	} elseif ( 'in-person' === $kind && ! empty( $st['start'] ) && empty( $st['dateLine'] ) ) {
 		$same = date( 'n', strtotime( $st['start'] ) ) === date( 'n', strtotime( $st['end'] ) );
 		$range = vote_range( $st['start'], $st['end'] );
@@ -200,6 +220,12 @@ function vote_meta_es( $st ) {
 		$fact = $name . ' vota por correo y las boletas deben entregarse a más tardar el ' . vote_long( $st['end'] ) . '.';
 		$lead = 'Tu boleta te llegó por correo. Escoge un día para devolverla y luego toma un sticker para que tus amigos se acuerden de la suya.';
 		$status = 'Vota por correo';
+	} elseif ( 'ended' === $kind ) {
+		$tag = 'vota el Día de las Elecciones, 3 nov';
+		$ribbon = 'TERMINÓ LA VOTACIÓN ANTICIPADA. VOTA EL 3 NOV';
+		$fact = 'La votación anticipada en ' . $name . ' terminó el ' . vote_day( $st['end'] ) . '. El Día de las Elecciones es el martes 3 de noviembre.';
+		$lead = $grab . ' La votación anticipada terminó el ' . vote_long( $st['end'] ) . '; vota el Día de las Elecciones, martes 3 de noviembre.';
+		$status = 'Día de las Elecciones · 3 nov';
 	} elseif ( 'in-person' === $kind && ! empty( $st['start'] ) && empty( $st['dateLine'] ) ) {
 		$range = vote_range( $st['start'], $st['end'] );
 		$same = date( 'n', strtotime( $st['start'] ) ) === date( 'n', strtotime( $st['end'] ) );
@@ -236,7 +262,7 @@ function vote_meta_es( $st ) {
 		'lead' => $lead,
 		'desc' => $fact . ' ' . $save . ', del tamaño del círculo de la foto de perfil. Gratis y no partidista.',
 		'status' => $status,
-		'family' => $kind,
+		'family' => 'ended' === $kind ? 'early_over' : $kind,
 		'name' => $name,
 		'index' => VOTE_ES_INDEX,
 	);
@@ -350,8 +376,8 @@ function vote_guide( $st ) {
 	$add = function ( $label, $f, $extra = '' ) use ( &$rows, &$srcs ) { if ( $f ) { $rows[] = '<tr><th scope="row">' . vote_e( t( $label ) ) . '</th><td>' . vote_e( $f['text'] ) . $extra . '</td></tr>'; $srcs[] = $f['src']; } };
 	$loc = vote_fact( $st, 'where.locator_url' );
 	$add( 'Register to vote by', vote_fact( $st, 'dates.reg_deadline' ), $loc ? ' <a href="' . vote_e( $loc ) . '" target="_blank" rel="noopener">' . vote_e( t( 'Already registered? Check here' ) ) . '</a>.' : '' );
-	if ( vote_verified( $st ) && 'in-person' === $st['kind'] && ! empty( $st['start'] ) ) {
-		$rows[] = '<tr><th scope="row">' . vote_e( t( 'Early voting' ) ) . '</th><td>' . vote_e( vote_es() ? 'Del ' . vote_day( $st['start'] ) . ' al ' . vote_day( $st['end'] ) . ' de 2026.' : vote_day( $st['start'] ) . ' to ' . vote_day( $st['end'] ) . ', 2026.' ) . '</td></tr>';
+	if ( vote_verified( $st ) && in_array( $st['kind'], array( 'in-person', 'ended' ), true ) && ! empty( $st['start'] ) ) {
+		$rows[] = '<tr><th scope="row">' . vote_e( t( 'ended' === $st['kind'] ? 'Early voting (ended)' : 'Early voting' ) ) . '</th><td>' . vote_e( vote_es() ? 'Del ' . vote_day( $st['start'] ) . ' al ' . vote_day( $st['end'] ) . ' de 2026.' : vote_day( $st['start'] ) . ' to ' . vote_day( $st['end'] ) . ', 2026.' ) . '</td></tr>';
 		$srcs[] = $st['sourceUrl'] ?? $st['officialUrl'];
 	}
 	$add( 'Early voting hours', vote_fact( $st, 'dates.early_hours' ) );
@@ -613,6 +639,7 @@ function vote_post_body( $st ) {
 			$same = date( 'n', strtotime( $st['start'] ) ) === date( 'n', strtotime( $st['end'] ) );
 			return 'La votación anticipada en ' . $name . ' es del ' . ( $same ? date( 'j', strtotime( $st['start'] ) ) : vote_long( $st['start'] ) ) . ' al ' . vote_long( $st['end'] ) . '. Busca tu lugar de votación en ' . $label . '.';
 		}
+		if ( vote_verified( $st ) && 'ended' === $st['kind'] ) { return 'La votación anticipada en ' . $name . ' terminó el ' . vote_long( $st['end'] ) . '. El Día de las Elecciones es el martes 3 de noviembre de 2026. Busca tu lugar de votación en ' . $label . '.'; }
 		if ( vote_verified( $st ) && 'none' === $st['kind'] ) { return 'El Día de las Elecciones en ' . $name . ' es el martes 3 de noviembre de 2026. Haz tu plan para votar. Los lugares de votación y las reglas del voto en ausencia están en ' . $label . '.'; }
 		return 'El Día de las Elecciones es el martes 3 de noviembre de 2026. Haz tu plan para votar y revisa en vote411.org si puedes votar por anticipado en ' . $name . '.';
 	}
@@ -622,6 +649,7 @@ function vote_post_body( $st ) {
 		$same = date( 'n', strtotime( $st['start'] ) ) === date( 'n', strtotime( $st['end'] ) );
 		return 'Early voting in ' . $name . ' runs ' . vote_long( $st['start'] ) . ' to ' . ( $same ? date( 'j', strtotime( $st['end'] ) ) : vote_long( $st['end'] ) ) . '. Find your polling place at ' . $label . '.';
 	}
+	if ( vote_verified( $st ) && 'ended' === $st['kind'] ) { return 'Early voting in ' . $name . ' ended ' . vote_long( $st['end'] ) . '. Election Day is Tuesday, November 3, 2026. Find your polling place at ' . $label . '.'; }
 	if ( vote_verified( $st ) && 'none' === $st['kind'] ) { return 'Election Day in ' . $name . ' is Tuesday, November 3, 2026. Make a plan to vote. Polling places and absentee rules are at ' . $label . '.'; }
 	return 'Election Day is Tuesday, November 3, 2026. Make a plan to vote, and check whether you can vote early in ' . $name . ' at vote411.org.';
 }
@@ -639,10 +667,11 @@ function vote_info( $st ) {
 			: '<h2>Vote by Nov 3</h2><p>We haven’t checked ' . vote_e( $name ) . '’s early voting dates yet, so these stickers say Election Day. Look up your dates and polling place at <a href="https://www.vote411.org/' . vote_slug( $st['name'] ) . '" target="_blank" rel="noopener">Vote411</a> (League of Women Voters) or your state election office.</p><p>' . $eday . '</p>';
 	}
 	$kind = $st['kind'];
-	$head = $es ? ( 'mail' === $kind ? 'Vota por correo' : ( 'none' === $kind ? 'Vota el Día de las Elecciones' : 'Vota temprano' ) ) : ( 'mail' === $kind ? 'Vote by mail' : ( 'none' === $kind ? 'Vote on Election Day' : 'Vote early' ) );
+	$head = $es ? ( 'mail' === $kind ? 'Vota por correo' : ( in_array( $kind, array( 'none', 'ended' ), true ) ? 'Vota el Día de las Elecciones' : 'Vota temprano' ) ) : ( 'mail' === $kind ? 'Vote by mail' : ( in_array( $kind, array( 'none', 'ended' ), true ) ? 'Vote on Election Day' : 'Vote early' ) );
 	$sum = $es ? vote_sfield( $st, 'summary' ) : ( $st['summary'] ?? '' );
 	if ( $sum ) { $fact = vote_e( $sum ); }
 	elseif ( 'mail' === $kind ) { $fact = $es ? vote_e( $name ) . ' vota por correo. Devuelve tu boleta a más tardar el ' . vote_day( $st['end'] ) . '.' : vote_e( $name ) . ' votes by mail. Return your ballot by ' . vote_day( $st['end'] ) . '.'; }
+	elseif ( 'ended' === $kind ) { $fact = $es ? 'La votación anticipada en ' . vote_e( $name ) . ' terminó el ' . vote_day( $st['end'] ) . '.' : 'Early voting in ' . vote_e( $name ) . ' ended ' . vote_day( $st['end'] ) . '.'; }
 	elseif ( 'none' === $kind ) { $fact = $es ? vote_e( $name ) . ' no tiene votación anticipada abierta a todos. La mayoría de los votantes vota el Día de las Elecciones, martes 3 de noviembre de 2026.' : vote_e( $name ) . ' doesn’t have early voting open to everyone. Most voters vote on Election Day, Tuesday, November 3, 2026.'; }
 	else { $fact = $es ? 'La votación anticipada en ' . vote_e( $name ) . ' es del ' . vote_day( $st['start'] ) . ' al ' . vote_day( $st['end'] ) . '.' : 'Early voting in ' . vote_e( $name ) . ' runs ' . vote_day( $st['start'] ) . ' to ' . vote_day( $st['end'] ) . '.'; }
 	$srcs = array( $st['sourceUrl'] ?? $st['officialUrl'] );
@@ -1023,7 +1052,7 @@ $vote_ld = array(
 			if ( 'in-person' === $vote_st['kind'] && ( empty( $vote_st['start'] ) || ( $row['start'] ?? '' ) !== $vote_st['start'] ) ) { continue; }
 			$vote_same[] = $abbr;
 		}
-		$vote_same_h = array( 'mail' => t( 'Other States That Vote by Mail' ), 'none' => t( 'Other States Without Early Voting for Everyone' ) )[ $vote_st['kind'] ]
+		$vote_same_h = array( 'mail' => t( 'Other States That Vote by Mail' ), 'none' => t( 'Other States Without Early Voting for Everyone' ), 'ended' => t( 'Other States Where Early Voting Has Ended' ) )[ $vote_st['kind'] ]
 			?? ( ! empty( $vote_st['start'] ) ? t( 'Other States Where Early Voting Opens %s', vote_long( $vote_st['start'] ) ) : '' );
 	}
 	$vote_near = $vote_st && isset( VOTE_NEIGHBORS[ $vote_abbr ] ) ? explode( ' ', VOTE_NEIGHBORS[ $vote_abbr ] ) : array();

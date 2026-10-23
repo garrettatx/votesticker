@@ -44,9 +44,9 @@ research text alone.
 
 | # | Change | Pages | Source status |
 |---|---|---|---|
-| 1.1 | **"Early voting has ended" copy** (Plan Section 5.1). Titles, cards and summaries switch the day after each state's window closes. Louisiana closes October 27, Texas October 30. | All in-person states | Logic exists in the daily build; copy and QA still to write |
+| 1.1 | **"Early voting has ended" copy** (Plan Section 5.1). Titles, cards and summaries switch the day after each state's window closes. Louisiana closes October 27, Texas October 30. | All in-person states | **Built October 23**: `vote_close_early()` in `site/index.php`; test any date with `VOTE_TODAY=2026-10-31 python3 build/build_static.py` |
 | 1.2 | Maine Oct 5 to 29 and Nebraska Oct 5 start | ME, NE | **Done October 23** (`0e1c9fc`) |
-| 1.3 | South Carolina hours, 8:30 a.m. to 6 p.m. | SC | Statute and the 2026 page say 6 p.m.; one older block on the same page says 5. **Your call** (held since October 21) |
+| 1.3 | South Carolina hours, 8:30 a.m. to 6 p.m. | SC | **Done October 23** |
 | 1.4 | South Dakota: in-person absentee from September 18 | SD | SOS page confirms the start only; end date and hours still need an official read |
 | 1.5 | Wisconsin: October 20 to November 1, each town sets its days | WI | myvote.wi.gov blocks automated reads; read it in Chrome |
 | 1.6 | Utah and Michigan: say counties or communities can add days | UT, MI | Michigan's note already says so; Utah's needs the line |

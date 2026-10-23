@@ -147,16 +147,21 @@
 	function nameOf(st) { return ((window.VOTE_META || {})[st.abbr] || {}).name || st.name; }
 
 	function hasEarly(st) { return st.status === 'verified' && st.kind !== 'none'; }
+	// After a state's early voting closes the page's family is early_over (index.php vote_close_early):
+	// the default message becomes Vote Nov 3 and "Vote early" leaves the list; "I voted early" stays.
+	function earlyOver(st) { return ((window.VOTE_META || {})[st.abbr] || {}).family === 'early_over'; }
+	var FUTURE_EARLY = { early: true, votatemprano: true };
 	function headlinesFor(st) {
 		var keys = Object.keys(HEADLINES).filter(function (k) {
 			var h = HEADLINES[k];
+			if (FUTURE_EARLY[k] && earlyOver(st)) { return false; }
 			return (!h.early || hasEarly(st)) && (!h.mail || (hasEarly(st) && st.kind === 'mail'));
 		});
 		// Spanish pages list the Spanish messages first.
 		return LANG === 'es' ? keys.filter(function (k) { return HEADLINES[k].es; }).concat(keys.filter(function (k) { return !HEADLINES[k].es; })) : keys;
 	}
 	// The state's own message (VOTE EARLY, VOTE BY MAIL, VOTE NOV 3): share images and the ready-made sets.
-	function stateHeadline(st) { return !hasEarly(st) ? 'nov3' : st.kind === 'mail' ? 'mail' : 'early'; }
+	function stateHeadline(st) { return !hasEarly(st) || earlyOver(st) ? 'nov3' : st.kind === 'mail' ? 'mail' : 'early'; }
 	function defaultHeadline(st) {
 		var k = stateHeadline(st);
 		return LANG === 'es' ? { early: 'votatemprano', mail: 'votacorreo', nov3: 'vota3nov' }[k] : k;
