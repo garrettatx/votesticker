@@ -70,3 +70,69 @@ Do not guess. Use null for anything you cannot find. Return a JSON array only.
 
 Verified in Chrome after round 1 (October 19): TX, KS, MO, NY, WA, CA, CO, VA, DC, NC, PA, AK, DE,
 FL, NV, OR, RI, SC. Record of what each official page said: `build/verified-20261019.json`.
+
+## Round 3: Open Questions (October 23, 2026)
+
+Questions the October 23 research left open, or whose only answer is a page we can't read
+(automated reads blocked) or a news report. Run them over time; paste each answer back. A fact goes on a
+page only once its official source is read. Every prompt below includes this line; keep it:
+
+> Use only official sources (state or county election office, state statute) and quote the sentence
+> that answers the question, with its URL and the date the page shows. Use news only to find the
+> official page. No Firecrawl. If no official page answers it, say so.
+
+**Dates and hours (Phase 1)**
+
+1. South Dakota, November 3, 2026: last day and hours of in-person absentee voting at the county
+   auditor's office. The SOS 2026 page gives only "Absentee Voting Begins: September 18, 2026."
+2. Wisconsin, November 3, 2026: the official MyVote or Wisconsin Elections Commission wording for the
+   in-person absentee window (October 20 to November 1?), and that each municipality sets its own
+   days and hours.
+3. Utah, November 3, 2026: may counties hold early voting past Friday, October 30, through Monday,
+   November 2? Quote the Utah Code section or the Lieutenant Governor's page.
+4. California, Colorado and Hawaii, November 3, 2026: first day of in-person voting at a county
+   office or vote center (California October 5 and vote centers October 24; Colorado October 19;
+   Hawaii voter service centers October 20). One quote per state.
+5. Mississippi, November 3, 2026: did in-person absentee voting begin September 19 or September 21?
+   Official sources disagree.
+6. Montana, North Dakota and Vermont, November 3, 2026: the official sentence that tells a voter where
+   and from when they can vote before Election Day (county or town clerk), even without one statewide
+   first day.
+
+**Stickers for early voters (Phase 2.1)**
+
+7. For each of these states, a county or city election office page from 2026 that says early voters get
+   an "I Voted" sticker, and what it says: Texas (Williamson County; the wilcotx.gov page blocks automated
+   reads), Georgia (the Secretary of State's 2026 sticker announcement; sos.ga.gov blocks automated reads),
+   Oklahoma (State Election Board), Michigan (any clerk), New York (any county board), Indiana, Florida,
+   Virginia, Arizona, Nevada.
+8. Minnesota: Minnesota Statutes 204B.49 says a sticker may contain the words "I VOTED," and nothing
+   more. Minneapolis's early voting page promises an "I Voted Early" sticker. Is there an official
+   explanation (statute amendment, SOS guidance, or a city page) that reconciles them?
+9. Harris County, Texas: an official Harris County Clerk or harrisvotes.com page about the 2026 early
+   voting astronaut "Mission accomplished!" sticker.
+
+**Stickers for mail voters (Phase 2.1 and 2.2)**
+
+10. Washington: official 2026 pages for King County (stickers mailed with ballots; the July 2025 release
+    has it only in the headline), Pierce County (Mt. Rainier sticker with every ballot) and Snohomish
+    County (pickup at the Auditor's Office, Sno-Isle Libraries and accessible voting sites).
+11. Utah: Salt Lake County Clerk and Utah County Clerk pages saying the 2026 sticker comes in every mail
+    ballot, and where to get a replacement.
+12. Colorado: Douglas, Larimer and Gilpin County pages for the November 2026 general (sticker on the
+    instruction sheet; Gilpin also at the polling center).
+13. California: Santa Clara and Orange County Registrar pages for the November 2026 ballot packet sticker,
+    and Merced County's "I Voted Early" mail sticker.
+14. Nevada (Clark County), DC (Board of Elections) and Hawaii: the 2026 mail-ballot instruction text that
+    mentions the "I Voted" sticker, or the official digital sticker.
+15. Oregon: does any county besides Deschutes hand out a physical sticker for 2026, and where (counter,
+    city hall)? Quote the county page.
+
+**Official designs for the gallery (Phase 3)**
+
+16. For each state that issues one statewide 2026 "I Voted" sticker: the state, the designer, how it was
+    chosen, the official announcement URL and date, and whether the office allows the image to be
+    reproduced (license or permission line). Start with Michigan, North Dakota, Kentucky, New Hampshire,
+    Alaska, Alabama, Ohio, Montana, West Virginia, Louisiana, Georgia and Colorado.
+17. Wikimedia Commons: which "I voted" sticker files from 2024 to 2026 have a free license, with the
+    file's license line and the issuing office.
