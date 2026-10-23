@@ -52,17 +52,25 @@ reverted. Start there.
    finder are on every state page), then Garrett checks on his iPhone: tap a Texas ready-made, Save
    Image, confirm it lands in Photos. Local QA on October 23: cards PASS (53,760 per browser, page
    shots 320 to 1440), save PASS, SEO, Spanish and facts PASS.
-2. **"Early voting has ended" copy** before each state's window closes (Texas ends Oct 30). Plan
+2. **Indexing follow-up.** On October 23, 11 of the 12 unindexed URLs had Request Indexing submitted
+   (Colorado, North Dakota, and Spanish Arkansas, Connecticut, Georgia, Kentucky, Louisiana, Vermont,
+   Washington, West Virginia, Wisconsin). The daily quota ran out before **`/es/wyoming/`**: submit it
+   unless the IndexNow run or a recrawl has already picked it up. Around October 27, re-run
+   `python3 -u scripts/gsc_inspect.py` (all 108 URLs, about 10 minutes) to confirm.
+   Priorities and research topics: `docs/search-console-priorities-20261023.html`; Garrett is
+   running Perplexity research on those topics, then plan content per page (Texas, home, and the
+   high-impression, low-click pages first).
+3. **"Early voting has ended" copy** before each state's window closes (Texas ends Oct 30). Plan
    Section 5.1 in `docs/content-strategy-state-pages.md`; the daily build makes date logic safe.
-3. **After Nov 3:** the countdown hides itself, but the home hero copy and the H1 still talk about
+4. **After Nov 3:** the countdown hides itself, but the home hero copy and the H1 still talk about
    voting; plan the post-election version.
-4. **Maker ideas** in `docs/backlog.md`: "First time voter" message, 48 px profile preview, copy alt
+5. **Maker ideas** in `docs/backlog.md`: "First time voter" message, 48 px profile preview, copy alt
    text, cut-out PNG, 1080 x 1350. Design follow-ons (tilt control, Stack as a fix to Big type,
    cover photo) are under Sticker Designs in the same file.
-5. **History page, later:** Alaska and Maine ranked-choice Resist Now link; more state and county
+6. **History page, later:** Alaska and Maine ranked-choice Resist Now link; more state and county
    stories (blank states are fine as "No featured story yet"); records requests and interviews
    (Boudreau, Rowan, Michigan, Ulster) need a person to send them.
-6. **After the election:** privacy and accessibility section on About; "Submit a sticker" needs a
+7. **After the election:** privacy and accessibility section on About; "Submit a sticker" needs a
    rights plan.
 
 ## How To Build and Ship
