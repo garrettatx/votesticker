@@ -47,13 +47,15 @@ research text alone.
 | 1.1 | **"Early voting has ended" copy** (Plan Section 5.1). Titles, cards and summaries switch the day after each state's window closes. Louisiana closes October 27, Texas October 30. | All in-person states | **Built October 23**: `vote_close_early()` in `site/index.php`; test any date with `VOTE_TODAY=2026-10-31 python3 build/build_static.py` |
 | 1.2 | Maine Oct 5 to 29 and Nebraska Oct 5 start | ME, NE | **Done October 23** (`0e1c9fc`) |
 | 1.3 | South Carolina hours, 8:30 a.m. to 6 p.m. | SC | **Done October 23** |
-| 1.4 | South Dakota: in-person absentee from September 18 | SD | SOS page confirms the start only; end date and hours still need an official read |
-| 1.5 | Wisconsin: October 20 to November 1, each town sets its days | WI | myvote.wi.gov blocks automated reads; read it in Chrome |
-| 1.6 | Utah and Michigan: say counties or communities can add days | UT, MI | Michigan's note already says so; Utah's needs the line |
+| 1.4 | South Dakota: in-person absentee from September 18 | SD | **Done October 23** (Sep 18 to Nov 2; SDCL 12-19-1 makes it open to any registered voter) |
+| 1.5 | Wisconsin: October 20 to November 1, each town sets its days | WI | **Done October 23** from Wis. Stat. 6.86(1)(b) |
+| 1.6 | Utah and Michigan: say counties or communities can add days | UT, MI | **Done October 23** |
 | 1.7 | California, Colorado and Hawaii: add in-person dates beside the mail dates (CA Oct 5 and vote centers Oct 24; CO centers Oct 19; HI service centers Oct 20) | CA, CO, HI | From the 50-state report; confirm each |
 | 1.8 | Early voting links that go to Election Day lookups: point them at the early voting directory | AK, PA and others flagged in the report | Report lists them |
 
-## Phase 2: Answer the Sticker Questions on Every State Page (October 26 to 30)
+## Phase 2: Answer the Sticker Questions
+
+**Progress, October 24:** answers live for TX, NC, SC, MO, FL, NY, VA, GA, IL, NV (early) and WA, OR, MI, CO, CA (mail). Loop batch 2 is researching the remaining states; results land in `docs/research/loop-batch2-*.json`. on Every State Page (October 26 to 30)
 
 Search Console shows these queries on page one with few clicks: "i voted early sticker" (about 110
 impressions across 15 states), "[state] i voted sticker" (every state) and "how to get i voted sticker"
