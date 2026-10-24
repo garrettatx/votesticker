@@ -11,6 +11,10 @@
   "www.ilga.gov": {
    "en": "the Illinois Election Code",
    "es": "el Código Electoral de Illinois"
+  },
+  "champaigncountyclerk.com": {
+   "en": "the Champaign County Clerk",
+   "es": "la secretaría del condado de Champaign (County Clerk)"
   }
  },
  "dates": {
@@ -161,6 +165,14 @@
  "sticker": {
   "tradition": {
    "status": "missing"
+  },
+  "early": {
+   "en": "Each county picks its own sticker. In Champaign County, the clerk's early voting steps end with taking an \"I Voted\" sticker once your ballot is cast.",
+   "es": "Cada condado elige su propio sticker. En el condado de Champaign, los pasos de votación anticipada del secretario del condado terminan con tomar un sticker de \"I Voted\" después de emitir tu boleta.",
+   "src": "https://champaigncountyclerk.com/elections/many-ways-vote/early-voting-information",
+   "checked": "2026-10-24",
+   "quote": "Take an \"I Voted\" sticker and you're done!",
+   "status": "verified"
   }
  },
  "faq": {

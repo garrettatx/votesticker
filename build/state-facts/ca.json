@@ -11,6 +11,10 @@
   "elections.cdn.sos.ca.gov": {
    "en": "the California Secretary of State",
    "es": "la Secretaría de Estado de California"
+  },
+  "www.countynewscenter.com": {
+   "en": "San Diego County",
+   "es": "el condado de San Diego"
   }
  },
  "dates": {
@@ -167,6 +171,14 @@
  "sticker": {
   "tradition": {
    "status": "missing"
+  },
+  "mail": {
+   "en": "Look in your ballot packet. In San Diego County, the November 3 packet includes an \"I Voted\" sticker with the voting instructions and the two-card ballot. Other counties decide for themselves.",
+   "es": "Revisa el paquete de tu boleta. En el condado de San Diego, el paquete del 3 de noviembre incluye un sticker de \"I Voted\" junto con las instrucciones y la boleta de dos tarjetas. Los demás condados deciden por su cuenta.",
+   "src": "https://www.countynewscenter.com/county-mails-ballots-and-opens-more-than-150-ballot-drop-boxes-for-november-general-election/",
+   "checked": "2026-10-24",
+   "quote": "The official ballot packet will include voting instructions, a two-card ballot and an \"I Voted\" sticker.",
+   "status": "verified"
   }
  },
  "faq": {

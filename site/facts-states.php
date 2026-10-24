@@ -557,6 +557,10 @@ return array(
 				'en' => 'the California Secretary of State',
 				'es' => 'la Secretaría de Estado de California',
 			),
+			'www.countynewscenter.com' => array(
+				'en' => 'San Diego County',
+				'es' => 'el condado de San Diego',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Online registration closed October 19. You can still register and vote the same day, through Election Day, at your county elections office or any in-person voting location in your county.',
@@ -653,6 +657,12 @@ return array(
 			'es' => 'Los lugares de votación cierran a las 8 p. m. Si todavía estás en la fila a esa hora, no te salgas. Tienes derecho a votar.',
 			'src' => 'https://www.sos.ca.gov/elections/voter-bill-rights',
 			'checked' => '2026-10-21',
+		),
+		'sticker.mail' => array(
+			'en' => 'Look in your ballot packet. In San Diego County, the November 3 packet includes an "I Voted" sticker with the voting instructions and the two-card ballot. Other counties decide for themselves.',
+			'es' => 'Revisa el paquete de tu boleta. En el condado de San Diego, el paquete del 3 de noviembre incluye un sticker de "I Voted" junto con las instrucciones y la boleta de dos tarjetas. Los demás condados deciden por su cuenta.',
+			'src' => 'https://www.countynewscenter.com/county-mails-ballots-and-opens-more-than-150-ballot-drop-boxes-for-november-general-election/',
+			'checked' => '2026-10-24',
 		),
 		'faq.provisional' => array(
 			'en' => 'If your name isn\'t on the list, you can still vote with a provisional ballot. It counts if elections officials find you\'re eligible. Registering the same day also means voting a provisional ballot.',
@@ -1856,6 +1866,10 @@ return array(
 				'en' => 'the Illinois Election Code',
 				'es' => 'el Código Electoral de Illinois',
 			),
+			'champaigncountyclerk.com' => array(
+				'en' => 'the Champaign County Clerk',
+				'es' => 'la secretaría del condado de Champaign (County Clerk)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Regular registration closed October 6, and online registration closed October 18. You can still register and vote at the same visit, in person at a grace period site, through Election Day.',
@@ -1944,6 +1958,12 @@ return array(
 			'es' => 'Busca conos o banderitas a unos 100 pies de la entrada. Dentro de esa línea hay una zona libre de campaña: nadie puede hacer campaña ni pedir votos. La misma zona aplica en los lugares de votación anticipada.',
 			'src' => 'https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=001000050K17-29',
 			'checked' => '2026-10-21',
+		),
+		'sticker.early' => array(
+			'en' => 'Each county picks its own sticker. In Champaign County, the clerk\'s early voting steps end with taking an "I Voted" sticker once your ballot is cast.',
+			'es' => 'Cada condado elige su propio sticker. En el condado de Champaign, los pasos de votación anticipada del secretario del condado terminan con tomar un sticker de "I Voted" después de emitir tu boleta.',
+			'src' => 'https://champaigncountyclerk.com/elections/many-ways-vote/early-voting-information',
+			'checked' => '2026-10-24',
 		),
 		'faq.provisional' => array(
 			'en' => 'You vote a provisional ballot if, for example, your name isn\'t on the precinct list, your eligibility is challenged, or you registered by mail without ID and still can\'t show it. You can bring more proof to your election authority by close of business on the Tuesday after the election, November 10. The election authority decides within 14 days whether it counts.',
@@ -4356,6 +4376,10 @@ return array(
 				'en' => 'Nevada election law (NRS chapter 293)',
 				'es' => 'la ley electoral de Nevada (capítulo 293 de los NRS)',
 			),
+			'www.clarkcountynv.gov' => array(
+				'en' => 'the Clark County Election Department',
+				'es' => 'el Departamento Electoral del condado de Clark (Election Department)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'By mail or at the county clerk: closed October 6, 2026. Online: through Election Day, November 3. You can also register in person at an early voting site or at a polling place on Election Day.',
@@ -4466,6 +4490,12 @@ return array(
 			'es' => '¿Estás en la fila cuando cierran los lugares de votación a las 7 p. m.? Quédate en la fila. Tienes derecho a votar, tanto en la votación anticipada como el Día de las Elecciones.',
 			'src' => 'https://www.leg.state.nv.us/nrs/nrs-293.html',
 			'checked' => '2026-10-21',
+		),
+		'sticker.early' => array(
+			'en' => 'In Clark County, the 2026 voter guide\'s in-person steps, for early voting October 17 to 30 and on Election Day, end with getting your "I Voted" sticker at the tabulator. Other counties set their own practice.',
+			'es' => 'En el condado de Clark, los pasos para votar en persona de la guía de 2026, para la votación anticipada del 17 al 30 de octubre y el Día de las Elecciones, terminan con recibir tu sticker de "I Voted" en la máquina tabuladora. Los demás condados deciden por su cuenta.',
+			'src' => 'https://www.clarkcountynv.gov/adobe/assets/urn:aaid:aem:62013096-adbe-425d-b324-ce5f4717b513/original/as/election-guide-26g.pdf',
+			'checked' => '2026-10-24',
 		),
 		'faq.provisional' => array(
 			'en' => 'It\'s a ballot you vote when something can\'t be confirmed at the polls. It counts if your county clerk confirms you\'re registered and eligible. If it was for missing ID, bring the ID to the clerk by 5 p.m. on Friday, November 6.',
