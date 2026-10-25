@@ -10,6 +10,18 @@ Open items, newest first. Started October 21, 2026. Move an item to `docs/histor
 | **History of the I Voted sticker** | A sourced history page at `/history/`, linked from the state sticker sections, the home FAQ and About. | Plan: `docs/sticker-history-plan.md`. Waiting on Garrett's research and data; data visualization after. |
 | **"Early voting has ended" family** | Texas ends October 30, others sooner. A page that still says "early voting runs" after it closes is wrong. | Plan Section 5.1 (`early_over`). Depends on the daily rebuild. |
 
+## Election Lifecycle and Collection (October 25)
+
+| Item | Why | Notes |
+|---|---|---|
+| **Election Day banner** | November 3 visitors need the polling place lookup and hours first | `docs/election-lifecycle-plan-20261025.md`. Needs verified poll hours (loop batch 3 running). Build before November 2. |
+| **Voted mode** | From November 4, lead with "Voted? Get your sticker"; retire "still time to vote" post text | Same plan. Build before November 3. |
+| **Between elections mode** | Evergreen intro, past dates collapsed, official upcoming-elections link | About December 1. |
+| **Sticker collection and 2026 archive** | One page of official and VoteSticker designs with credits, distribution and permissions; replaces the Phase 3 gallery | `docs/sticker-archive-spec.md`. After November 3; data collection can start now. |
+| **Snohomish County pickup** | Second Washington mail source: stickers at the Auditor's Office, Sno-Isle Libraries and voter service sites (Oct 7, 2026 release) | Washington's mail answer holds one source (Thurston). Decide whether pickup sites or packet inclusion leads, or allow two sources per answer. |
+| **Descriptive image filenames** | `tx-vote-1.jpg` says nothing to image search | Only with redirects from the old URLs; after the election. |
+| **Designer interviews, election office questions** | Original reporting no other site has | Outreach is Garrett's call. |
+
 ## Analytics (October 23)
 
 Events, the share loop and the BigQuery archive are built (`docs/analytics.md`). These are Garrett's
