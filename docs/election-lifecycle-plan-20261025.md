@@ -81,6 +81,39 @@ Time note, one of:
 Home page: "November 3, 2026 · Election Day. Find your state's voting locations, hours and ballot
 return rules." pointing at the existing state picker, no second selector.
 
+## The November 2 Build
+
+Publishes the Election Day version ahead of time. Same layout; it changes the banner, the order of the
+voting section, the featured stickers, the post text and the descriptions.
+
+- **States still voting early on November 2** (about a dozen end that day: AK, AR, IA, IL, IN, KS, MN,
+  MO, MT, NE, RI, SD, VT, WY; check against `states.js`): the banner appears, and the page keeps its
+  early voting answer for November 2. Nothing says early voting has ended until the November 3 build.
+- **Voting section order:** Election Day location and hours first; any early voting still open; mail
+  return rules where they apply. Request deadlines already past drop out of the recommendations. A
+  finished early window is labeled "Ended" with its dates. Individual past deadlines are labeled; the
+  table as a whole is not "past dates" yet.
+- **Featured stickers:** I voted, I voted early, I voted by mail where offered, then a dated
+  "Vote Nov 3" reminder. "Vote early" is never the default once the state's window has closed.
+- **Post text:** planning version "I'm making my voting plan for November 3. Check where to vote, hours
+  and ballot return rules for [State]: [link]"; already voted version "I voted. Get a sticker or find
+  official voting information for [State]: [link]". None of the banned relative phrases. Sharing never
+  implies someone voted.
+- **Descriptions:** "Download free [State] voting stickers, make your own, and find official
+  information for the November 3, 2026 election."
+- **Home page:** the dated banner pointing at the state picker; state cards drop "early voting open"
+  badges for states whose window has closed and show neutral labels (Election Day information, Ballot
+  return rules). No national poll hours summary.
+- **Images:** no regeneration unless the content needs it; expired reminders leave featured spots; the
+  share image must not contradict the page.
+- **Prepared, not switched on:** the `post-election` build and its command, previewed with
+  `VOTE_TODAY=2026-11-04`, switching gallery, maker, post text and dates together.
+
+Test cases for the November 2 preview (`VOTE_TODAY=2026-11-02`), English and Spanish: Texas (early voting
+ended), Iowa (early voting through November 2), Washington (mail), Indiana or Florida (two time zones),
+New Hampshire (towns set hours), Alabama (no early voting open to everyone), and a state with no
+verified tracker.
+
 ## Links, One Per Task
 
 `where.locator_url` is a polling place lookup in some states and a general portal in others. The
