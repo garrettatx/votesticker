@@ -102,8 +102,13 @@ def main():
         return (f'\n    <xhtml:link rel="alternate" hreflang="en" href="{en}"/>'
                 f'\n    <xhtml:link rel="alternate" hreflang="es" href="{es}"/>'
                 f'\n    <xhtml:link rel="alternate" hreflang="x-default" href="{en}"/>')
-    xml = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">']
-    xml += [f'  <url>\n    <loc>{u}</loc>\n    <lastmod>{m}</lastmod>{alts(u)}\n  </url>' for u, m in urls]
+    # Each page also lists the sticker images it shows (Google's image sitemap), by the exact src on the page.
+    def imgs(u):
+        html = pages[u[len(SITE_URL):]]
+        srcs = dict.fromkeys(s for s in re.findall(r'<img[^>]+src="(/assets/[^"]+)"', html) if 'logo' not in s)
+        return ''.join(f'\n    <image:image><image:loc>{SITE_URL}{s[1:].replace("&", "&amp;")}</image:loc></image:image>' for s in srcs)
+    xml = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">']
+    xml += [f'  <url>\n    <loc>{u}</loc>\n    <lastmod>{m}</lastmod>{alts(u)}{imgs(u)}\n  </url>' for u, m in urls]
     xml.append('</urlset>')
     (DIST / 'sitemap.xml').write_text('\n'.join(xml) + '\n')
     (DIST / '404.html').write_text(render('404'))
