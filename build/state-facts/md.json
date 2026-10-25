@@ -7,6 +7,10 @@
   "elections.maryland.gov": {
    "en": "the Maryland State Board of Elections",
    "es": "la Junta Electoral del Estado de Maryland (State Board of Elections)"
+  },
+  "mgaleg.maryland.gov": {
+   "en": "Maryland law",
+   "es": "la ley de Maryland"
   }
  },
  "dates": {
@@ -174,5 +178,15 @@
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026 on elections.maryland.gov (curl worked). Early voting dates in states.js (Oct. 22 to 29, 7 a.m. to 8 p.m.) match elections.maryland.gov/elections/2026/index.html: 'early voting centers will be open from Thursday, October 22, 2026 through Thursday, October 29, 2026 from 7:00 am until 8:00 pm, including Saturday and Sunday.' The 2026 page says 'Mail-in ballots must be postmarked or placed in a designated ballot drop box by 8:00 pm on November 03, 2026'; the mail-in FAQ says only 'postmarked on or before election day'; no receipt deadline for postmarked ballots was found, so none is stated. The ID list for first-time voters (current photo ID, or a utility bill, bank statement, government check, paycheck or government document dated within 3 months) is on election_day_questions.html; left out of id.accepted because most voters need no ID. Not found: mail-in cure process, witness rule (the page mentions only a signed oath), in-line-at-closing rule. The sticker designs are named from the download links' alt text on the 2026 page, not from a news release; no designer or contest is named there."
+ "notes": "Read October 21, 2026 on elections.maryland.gov (curl worked). Early voting dates in states.js (Oct. 22 to 29, 7 a.m. to 8 p.m.) match elections.maryland.gov/elections/2026/index.html: 'early voting centers will be open from Thursday, October 22, 2026 through Thursday, October 29, 2026 from 7:00 am until 8:00 pm, including Saturday and Sunday.' The 2026 page says 'Mail-in ballots must be postmarked or placed in a designated ballot drop box by 8:00 pm on November 03, 2026'; the mail-in FAQ says only 'postmarked on or before election day'; no receipt deadline for postmarked ballots was found, so none is stated. The ID list for first-time voters (current photo ID, or a utility bill, bank statement, government check, paycheck or government document dated within 3 months) is on election_day_questions.html; left out of id.accepted because most voters need no ID. Not found: mail-in cure process, witness rule (the page mentions only a signed oath), in-line-at-closing rule. The sticker designs are named from the download links' alt text on the 2026 page, not from a news release; no designer or contest is named there.",
+ "election_day": {
+  "hours": {
+   "en": "Polling places are open 7 a.m. to 8 p.m. local time.",
+   "es": "Los lugares de votación abren de 7 a. m. a 8 p. m., hora local.",
+   "src": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gel&section=10-301&enactments=false",
+   "checked": "2026-10-25",
+   "quote": "(a) On an election day, a polling place shall be open from 7 a.m. until 8 p.m.",
+   "status": "verified"
+  }
+ }
 }

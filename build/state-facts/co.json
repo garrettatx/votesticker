@@ -15,6 +15,10 @@
   "www.garfieldcountyco.gov": {
    "en": "the Garfield County Clerk and Recorder",
    "es": "la oficina del secretario del condado de Garfield (Clerk and Recorder)"
+  },
+  "coloradosos.gov": {
+   "en": "the Colorado Secretary of State",
+   "es": "la Secretaría de Estado de Colorado"
   }
  },
  "dates": {
@@ -228,5 +232,15 @@
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026 on coloradosos.gov and sos.state.co.us with curl: September 23, 2026 general election press release (ballots mailed October 2 to 9, drop boxes open by October 12, voter centers by October 19, October 26 registration-by-mail and suggested mail-back date, October 27 hand-delivery advice), Election Day FAQ, Mail Ballots FAQ, Acceptable Forms of Identification, Know Your Voting Rights booklet (updated July 20, 2026), GoVoteColorado home, Where do I drop off my ballot (VIP), I Voted digital sticker contest. faq.late_mail says 'in the last week' to match the press release's October 27 advice. The ID list is condensed from the SOS list (pilot's license, Division of Youth Services ID and facility verifications left off); IDs issued under Part 5 of Article 2 of Title 42 are not accepted. Not found on a current official page: signature cure deadline, electioneering and clothing rule, phone rule, voter center hours, a statewide county clerk directory URL. mail.who's 'Ballots went out October 2 to 9' is from the press release ('Colorado's County Clerks will mail ballots via the Postal Service to every active voter between October 2 and October 9'); the rest of that fact is from the Mail Ballots FAQ."
+ "notes": "Read October 21, 2026 on coloradosos.gov and sos.state.co.us with curl: September 23, 2026 general election press release (ballots mailed October 2 to 9, drop boxes open by October 12, voter centers by October 19, October 26 registration-by-mail and suggested mail-back date, October 27 hand-delivery advice), Election Day FAQ, Mail Ballots FAQ, Acceptable Forms of Identification, Know Your Voting Rights booklet (updated July 20, 2026), GoVoteColorado home, Where do I drop off my ballot (VIP), I Voted digital sticker contest. faq.late_mail says 'in the last week' to match the press release's October 27 advice. The ID list is condensed from the SOS list (pilot's license, Division of Youth Services ID and facility verifications left off); IDs issued under Part 5 of Article 2 of Title 42 are not accepted. Not found on a current official page: signature cure deadline, electioneering and clothing rule, phone rule, voter center hours, a statewide county clerk directory URL. mail.who's 'Ballots went out October 2 to 9' is from the press release ('Colorado's County Clerks will mail ballots via the Postal Service to every active voter between October 2 and October 9'); the rest of that fact is from the Mail Ballots FAQ.",
+ "election_day": {
+  "hours": {
+   "en": "In-person voting is open 7 a.m. to 7 p.m. local time.",
+   "es": "Puedes votar en persona de 7 a. m. a 7 p. m., hora local.",
+   "src": "https://coloradosos.gov/pubs/newsRoom/pressReleases/2026/PR20261019InPersonVoting.html",
+   "checked": "2026-10-25",
+   "quote": "In-person voting on Election Day, Tuesday, November 3, will be available from 7:00 AM - 7:00 PM.",
+   "status": "verified"
+  }
+ }
 }

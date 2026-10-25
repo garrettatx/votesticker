@@ -148,7 +148,7 @@
    "quote": "Voters casting a ballot by mail who are unable to sign their name may be aided by a Voter Assistant, who must complete the Voter Assistant Certification.",
    "status": "verified"
   },
-  "track_url": "https://vote.sos.ri.gov/",
+  "track_url": "https://ballottrax.sos.ri.gov/voter/",
   "cure": {
    "status": "missing"
   },
@@ -234,5 +234,16 @@
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026. vote.sos.ri.gov and elections.ri.gov HTML pages return 403 to curl; the 2026 Rhode Island Voter Information Handbook PDF (vote.sos.ri.gov/Forms/Elections/Guides/VoterRef26.pdf, read with pdftotext) and RI General Laws on webserver.rilegislature.gov (17-9.1-3, 17-18-11, 17-19-24.2, 17-19-24.3, 17-19-49) were used. vote.ri.gov 301-redirects to vote.sos.ri.gov. Early voting dates match states.js (October 14 to November 2); the handbook adds that early voting ends at 4 p.m. on November 2 ('Early voting will begin on October 14 and end at 4 p.m. on November 2.') and elsewhere says 'during their regular business hours'. Registration: October 4, 2026 is a Sunday and 17-9.1-3 says local boards don't take registrations on Sundays; the file states the 30-day rule and date, as the FAQ does. The October 27 mail-by date is the handbook's 'at least seven days before Election Day', not a separate official date. Mail ballot cure, phone rules, first-time voter rules and a sticker contest on an official page were not found; left missing. The Board of Elections' sticker contest (reported by ABC6) is on elections.ri.gov, which returns 403. No county or town office list URL was confirmed online (the handbook lists local boards of canvassers on page 17)."
+ "notes": "Read October 21, 2026. vote.sos.ri.gov and elections.ri.gov HTML pages return 403 to curl; the 2026 Rhode Island Voter Information Handbook PDF (vote.sos.ri.gov/Forms/Elections/Guides/VoterRef26.pdf, read with pdftotext) and RI General Laws on webserver.rilegislature.gov (17-9.1-3, 17-18-11, 17-19-24.2, 17-19-24.3, 17-19-49) were used. vote.ri.gov 301-redirects to vote.sos.ri.gov. Early voting dates match states.js (October 14 to November 2); the handbook adds that early voting ends at 4 p.m. on November 2 ('Early voting will begin on October 14 and end at 4 p.m. on November 2.') and elsewhere says 'during their regular business hours'. Registration: October 4, 2026 is a Sunday and 17-9.1-3 says local boards don't take registrations on Sundays; the file states the 30-day rule and date, as the FAQ does. The October 27 mail-by date is the handbook's 'at least seven days before Election Day', not a separate official date. Mail ballot cure, phone rules, first-time voter rules and a sticker contest on an official page were not found; left missing. The Board of Elections' sticker contest (reported by ABC6) is on elections.ri.gov, which returns 403. No county or town office list URL was confirmed online (the handbook lists local boards of canvassers on page 17).",
+ "election_day": {
+  "hours": {
+   "en": "Polling places are open 7 a.m. to 8 p.m.; New Shoreham opens at 9 a.m.",
+   "es": "Los lugares de votación abren de 7 a. m. a 8 p. m.; New Shoreham abre a las 9 a. m.",
+   "src": "https://vote.sos.ri.gov/Elections/PollingPlaceHours",
+   "checked": "2026-10-25",
+   "quote": "All polling places in the state open at 7:00 a.m. and close at 8 p.m., with the exception of New Shoreham, which opens at 9 a.m.",
+   "status": "verified",
+   "varies": true
+  }
+ }
 }

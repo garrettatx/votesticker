@@ -129,7 +129,8 @@
    "checked": "2026-10-21",
    "quote": "Drop your voted ballot at a ballot drop box location within your county.",
    "status": "verified"
-  }
+  },
+  "track_url": "https://hawaii.ballottrax.net/voter/"
  },
  "polls_rules": {
   "gear": {

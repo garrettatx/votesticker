@@ -203,5 +203,15 @@
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026 on oklahoma.gov/elections (curl worked): Early Voting, How to Vote, Voting 101, Proof of Identity, Absentee Voting, Dates and Deadlines, the 2026 Voter Information Calendar, FAQs, and the August 24, 2026 news release. EARLY VOTING DIFFERS FROM states.js: states.js has start 2026-10-29 and the note 'Thursday and Friday 8 a.m. to 6 p.m., Saturday 8 a.m. to 2 p.m.'. The 2026 Voter Information Calendar row for the November 3 General Elections lists Early Voting Dates and Hours 'October 28 - 30 (8 A.M. – 6 P.M.)' and 'October 31 (8 A.M. – 2 P.M.)', and the Early Voting page says 'Early voting is also available from 8 a.m. to 6 p.m. the Wednesday preceding the General Election.' So early voting starts Wednesday, October 28. The calendar also lists the registration deadline October 9 and the absentee ballot deadline October 19. The mail return date for hand delivery (Monday, November 2) is 'the Monday before the election' on the absentee page. The I Voted sticker line is the Election Board's current Voting 101 tip, not a contest. Drop boxes, ballot cure and first-time voter rules not found; left missing."
+ "notes": "Read October 21, 2026 on oklahoma.gov/elections (curl worked): Early Voting, How to Vote, Voting 101, Proof of Identity, Absentee Voting, Dates and Deadlines, the 2026 Voter Information Calendar, FAQs, and the August 24, 2026 news release. EARLY VOTING DIFFERS FROM states.js: states.js has start 2026-10-29 and the note 'Thursday and Friday 8 a.m. to 6 p.m., Saturday 8 a.m. to 2 p.m.'. The 2026 Voter Information Calendar row for the November 3 General Elections lists Early Voting Dates and Hours 'October 28 - 30 (8 A.M. – 6 P.M.)' and 'October 31 (8 A.M. – 2 P.M.)', and the Early Voting page says 'Early voting is also available from 8 a.m. to 6 p.m. the Wednesday preceding the General Election.' So early voting starts Wednesday, October 28. The calendar also lists the registration deadline October 9 and the absentee ballot deadline October 19. The mail return date for hand delivery (Monday, November 2) is 'the Monday before the election' on the absentee page. The I Voted sticker line is the Election Board's current Voting 101 tip, not a contest. Drop boxes, ballot cure and first-time voter rules not found; left missing.",
+ "election_day": {
+  "hours": {
+   "en": "Polling places are open 7 a.m. to 7 p.m. local time.",
+   "es": "Los lugares de votación abren de 7 a. m. a 7 p. m., hora local.",
+   "src": "https://oklahoma.gov/elections.html",
+   "checked": "2026-10-25",
+   "quote": "Polls Open 7 a.m. - 7 p.m.",
+   "status": "verified"
+  }
+ }
 }

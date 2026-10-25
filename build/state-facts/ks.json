@@ -230,5 +230,16 @@
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026 on sos.ks.gov (curl worked), kansasvoterinfo.gov and ksrevisor.gov (K.S.A. 25-1122, 25-2430). EARLY VOTING: states.js (October 14 start, varies by county, ends noon Monday November 2) matches the SOS dates page ('October 14 First day of advance voting... In-person advance voting may begin', 'October 27 In-person advance voting must begin for all counties') and K.S.A. 25-1122(g)(1) ('until no later than 12:00 noon on the day preceding such election'). MAIL RETURN CONFLICT: see dates.mail_return notes; the advance voting page reports a Douglas County injunction (postmarked by Election Day, received by the Friday after) that the Court of Appeals declined to stay for the General Election, and in the next paragraph says all 2026 mail ballots must arrive by close of polls. The lead should decide before any return deadline goes on the page. Mail request deadline: statute only gives 'the Tuesday of the week preceding' the election (reads as October 27); not computed. The drop box and advance voting location lists say 'Will Be Available Soon'; the drop box list is an xlsx download, not opened. Election Day hours stay in faq_text.py (7 a.m. to 7 p.m., counties may run 6 a.m. to 8 p.m.)."
+ "notes": "Read October 21, 2026 on sos.ks.gov (curl worked), kansasvoterinfo.gov and ksrevisor.gov (K.S.A. 25-1122, 25-2430). EARLY VOTING: states.js (October 14 start, varies by county, ends noon Monday November 2) matches the SOS dates page ('October 14 First day of advance voting... In-person advance voting may begin', 'October 27 In-person advance voting must begin for all counties') and K.S.A. 25-1122(g)(1) ('until no later than 12:00 noon on the day preceding such election'). MAIL RETURN CONFLICT: see dates.mail_return notes; the advance voting page reports a Douglas County injunction (postmarked by Election Day, received by the Friday after) that the Court of Appeals declined to stay for the General Election, and in the next paragraph says all 2026 mail ballots must arrive by close of polls. The lead should decide before any return deadline goes on the page. Mail request deadline: statute only gives 'the Tuesday of the week preceding' the election (reads as October 27); not computed. The drop box and advance voting location lists say 'Will Be Available Soon'; the drop box list is an xlsx download, not opened. Election Day hours stay in faq_text.py (7 a.m. to 7 p.m., counties may run 6 a.m. to 8 p.m.).",
+ "election_day": {
+  "hours": {
+   "en": "Polling places are open at least 7 a.m. to 7 p.m. local time, and a county can open as early as 6 a.m. and close as late as 8 p.m.",
+   "es": "Los lugares de votación abren por lo menos de 7 a. m. a 7 p. m., hora local, y un condado puede abrir desde las 6 a. m. y cerrar hasta las 8 p. m.",
+   "src": "https://sos.ks.gov/elections/voter-information.html",
+   "checked": "2026-10-25",
+   "quote": "State law requires polling places to open at 7:00 a.m. and close at 7:00 p.m. on election day.",
+   "status": "verified",
+   "varies": true
+  }
+ }
 }

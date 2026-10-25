@@ -244,5 +244,15 @@
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026 on elections.virginia.gov (curl worked) and law.lis.virginia.gov. Early voting dates in states.js (Sept. 18 to Oct. 31) match the upcoming-elections page: 'Friday, September 18, 2026 through 5:00 p.m., Saturday, October 31, 2026.' Code 24.2-709.1 has two versions on the page; the one 'Effective until January 1, 2027' (cure by noon on the third day after the election, for ballots received by the Friday before) is used; the 2027 version moves it to 5 p.m. on the Monday after. The mail return and cure deadlines are stated relative to the election; no official page states them as calendar dates, so none is computed. Campaign gear: Code 24.2-604(D) lets voters wear campaign apparel, buttons and stickers, so Virginia is the opposite of Texas and Georgia here. Witness: the envelope statement is required (24.2-707); an ELECT summary of 2023 law changes reportedly removed the witness signature, not read directly, so the file doesn't say 'no witness'. No sticker tradition on an official page."
+ "notes": "Read October 21, 2026 on elections.virginia.gov (curl worked) and law.lis.virginia.gov. Early voting dates in states.js (Sept. 18 to Oct. 31) match the upcoming-elections page: 'Friday, September 18, 2026 through 5:00 p.m., Saturday, October 31, 2026.' Code 24.2-709.1 has two versions on the page; the one 'Effective until January 1, 2027' (cure by noon on the third day after the election, for ballots received by the Friday before) is used; the 2027 version moves it to 5 p.m. on the Monday after. The mail return and cure deadlines are stated relative to the election; no official page states them as calendar dates, so none is computed. Campaign gear: Code 24.2-604(D) lets voters wear campaign apparel, buttons and stickers, so Virginia is the opposite of Texas and Georgia here. Witness: the envelope statement is required (24.2-707); an ELECT summary of 2023 law changes reportedly removed the witness signature, not read directly, so the file doesn't say 'no witness'. No sticker tradition on an official page.",
+ "election_day": {
+  "hours": {
+   "en": "Polling places are open 6 a.m. to 7 p.m. local time.",
+   "es": "Los lugares de votación abren de 6 a. m. a 7 p. m., hora local.",
+   "src": "https://law.lis.virginia.gov/vacode/title24.2/chapter6/section24.2-603/",
+   "checked": "2026-10-25",
+   "quote": "At all elections, the polls shall be open at each polling place at 6:00 a.m. on the day of the election and closed at 7:00 p.m. on the same day",
+   "status": "verified"
+  }
+ }
 }

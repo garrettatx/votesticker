@@ -235,5 +235,15 @@
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026 on sos.ca.gov (November 3, 2026 General Election page, Key Dates and Deadlines, Voter Bill of Rights, Where's My Ballot?) and elections.cdn.sos.ca.gov PDFs (Quick Facts for the November 3, 2026 General Election, Vote-by-Mail FAQ, How to Fix a Missing or Noncomparable Signature, the November 3, 2026 combined signature statement, Voter ID & Registration Requirements, CCROV memo #21118 on electioneering, August 9, 2021). leginfo.legislature.ca.gov returned 403 to curl and an empty page in Chrome, so the Elections Code was read only as quoted in the SOS memo. Key dates: ballots mailed by October 5; early voting sites and drop-off locations open October 5; Voter's Choice Act vote centers open October 24; mailed ballots must arrive by November 10. Cure: the combined statement and the signature fact sheet both give 5 p.m. November 25, 2026; the VBM FAQ states the rule as two days before the county certifies, which the statewide date reflects. Electioneering: the SOS memo measures 100 feet from the entrance, while Elections Code 18370 and 18541 as quoted measure from the room where voters sign in and vote; the page says only 'within 100 feet of a polling place'. The memo also says campaign or movement slogans are not electioneering; left off the page. No early voting hours, phone rule or sticker tradition found."
+ "notes": "Read October 21, 2026 on sos.ca.gov (November 3, 2026 General Election page, Key Dates and Deadlines, Voter Bill of Rights, Where's My Ballot?) and elections.cdn.sos.ca.gov PDFs (Quick Facts for the November 3, 2026 General Election, Vote-by-Mail FAQ, How to Fix a Missing or Noncomparable Signature, the November 3, 2026 combined signature statement, Voter ID & Registration Requirements, CCROV memo #21118 on electioneering, August 9, 2021). leginfo.legislature.ca.gov returned 403 to curl and an empty page in Chrome, so the Elections Code was read only as quoted in the SOS memo. Key dates: ballots mailed by October 5; early voting sites and drop-off locations open October 5; Voter's Choice Act vote centers open October 24; mailed ballots must arrive by November 10. Cure: the combined statement and the signature fact sheet both give 5 p.m. November 25, 2026; the VBM FAQ states the rule as two days before the county certifies, which the statewide date reflects. Electioneering: the SOS memo measures 100 feet from the entrance, while Elections Code 18370 and 18541 as quoted measure from the room where voters sign in and vote; the page says only 'within 100 feet of a polling place'. The memo also says campaign or movement slogans are not electioneering; left off the page. No early voting hours, phone rule or sticker tradition found.",
+ "election_day": {
+  "hours": {
+   "en": "Polling places are open 7 a.m. to 8 p.m. local time.",
+   "es": "Los lugares de votación abren de 7 a. m. a 8 p. m., hora local.",
+   "src": "https://www.sos.ca.gov/elections/voting-info/ways-vote",
+   "checked": "2026-10-25",
+   "quote": "Polling locations are established by county elections officials and are open from 7:00 a.m. to 8:00 p.m. on Election Day, Tuesday, November 3, 2026.",
+   "status": "verified"
+  }
+ }
 }

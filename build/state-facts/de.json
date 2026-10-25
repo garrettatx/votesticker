@@ -249,5 +249,15 @@
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026 on elections.delaware.gov (General Election, Ways to Vote and Voting Locations by curl; the Absentee page in Chrome, because the site's firewall rejected curl and WebFetch after a few requests; the 2026 Election Calendar PDF and the FAQ page were also rejected and not read) and delcode.delaware.gov (Title 15, ch. 49 subch. II: 4937 ID, 4942 electioneering, 4947 closing and line, 4948 provisional; ch. 55: 5502 eligibility, 5507 envelope, 5508 return, 5509A cure). Early voting dates in states.js (October 22 to November 1, no early voting Sunday, October 25) match the Voting Locations page. 'A postmark isn't enough' rests on 5508(b) and the received-by wording; no page says 'postmark' outright. The waystovote page links to a 2024 election calendar PDF; the general page links the 2026 one. Delaware absentee voting needs a reason (5502; the Absentee page says permanent absentee status 'is affirmed by the Delaware Supreme Court'). Provisional ballots under 4948 are for federal offices only. No phone rule, expired-ID rule or sticker tradition found."
+ "notes": "Read October 21, 2026 on elections.delaware.gov (General Election, Ways to Vote and Voting Locations by curl; the Absentee page in Chrome, because the site's firewall rejected curl and WebFetch after a few requests; the 2026 Election Calendar PDF and the FAQ page were also rejected and not read) and delcode.delaware.gov (Title 15, ch. 49 subch. II: 4937 ID, 4942 electioneering, 4947 closing and line, 4948 provisional; ch. 55: 5502 eligibility, 5507 envelope, 5508 return, 5509A cure). Early voting dates in states.js (October 22 to November 1, no early voting Sunday, October 25) match the Voting Locations page. 'A postmark isn't enough' rests on 5508(b) and the received-by wording; no page says 'postmark' outright. The waystovote page links to a 2024 election calendar PDF; the general page links the 2026 one. Delaware absentee voting needs a reason (5502; the Absentee page says permanent absentee status 'is affirmed by the Delaware Supreme Court'). Provisional ballots under 4948 are for federal offices only. No phone rule, expired-ID rule or sticker tradition found.",
+ "election_day": {
+  "hours": {
+   "en": "Polling places are open 7 a.m. to 8 p.m. local time.",
+   "es": "Los lugares de votación abren de 7 a. m. a 8 p. m., hora local.",
+   "src": "https://elections.delaware.gov/elections/general/general.html",
+   "checked": "2026-10-25",
+   "quote": "Polling Places are open from 7 a.m. until 8 p.m. on General Election Day, November 3, 2026.",
+   "status": "verified"
+  }
+ }
 }

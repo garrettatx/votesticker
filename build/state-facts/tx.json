@@ -116,7 +116,7 @@
    "quote": "are 65 years of age or older on Election Day; or",
    "status": "verified"
   },
-  "track_url": "",
+  "track_url": "https://goelect.txelections.civixapps.com/ivis-oab-ui/#/login",
   "cure": {
    "status": "missing"
   },
@@ -219,6 +219,20 @@
   "newtools.cira.state.tx.us": {
    "en": "Gaines County",
    "es": "el condado de Gaines"
+  },
+  "www.sos.texas.gov": {
+   "en": "the Texas Secretary of State",
+   "es": "la Secretaría de Estado de Texas"
+  }
+ },
+ "election_day": {
+  "hours": {
+   "en": "Polling places are open 7 a.m. to 7 p.m. local time.",
+   "es": "Los lugares de votación abren de 7 a. m. a 7 p. m., hora local.",
+   "src": "https://www.sos.texas.gov/elections/laws/advisory2026-21-november-3-election-law-calendar.shtml",
+   "checked": "2026-10-25",
+   "quote": "Tuesday, November 3, 2026 (Election Day) 7:00 a.m. – 7:00 p.m. Polls open. (Sec. 41.031).",
+   "status": "verified"
   }
  }
 }

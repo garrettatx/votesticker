@@ -219,5 +219,15 @@
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026 on pa.gov (the vote.pa.gov pages): Upcoming Elections, Mail-in and Absentee Ballot, On-Demand Mail Ballot Voting, Ballot Return Locations, Rules at the Polls, Provisional Ballot, First Time Voters (new-voters), FAQ. Pennsylvania has no early voting; the in-person mail ballot (states.js) is the early option, and county office hours are listed per county, not statewide, so early_hours is missing. No statewide cure process or deadline, no phone or photo rule, and no ballot selfie rule were found. Ballot tracking and polling place lookup are on pavoterservices.pa.gov, linked from pa.gov. No official I voted sticker program was found. ID rule follows docs/faq-sources.json (no_id: only first-time voters at a polling place show ID, photo or non-photo)."
+ "notes": "Read October 21, 2026 on pa.gov (the vote.pa.gov pages): Upcoming Elections, Mail-in and Absentee Ballot, On-Demand Mail Ballot Voting, Ballot Return Locations, Rules at the Polls, Provisional Ballot, First Time Voters (new-voters), FAQ. Pennsylvania has no early voting; the in-person mail ballot (states.js) is the early option, and county office hours are listed per county, not statewide, so early_hours is missing. No statewide cure process or deadline, no phone or photo rule, and no ballot selfie rule were found. Ballot tracking and polling place lookup are on pavoterservices.pa.gov, linked from pa.gov. No official I voted sticker program was found. ID rule follows docs/faq-sources.json (no_id: only first-time voters at a polling place show ID, photo or non-photo).",
+ "election_day": {
+  "hours": {
+   "en": "Polling places are open 7 a.m. to 8 p.m. local time.",
+   "es": "Los lugares de votación abren de 7 a. m. a 8 p. m., hora local.",
+   "src": "https://www.pa.gov/agencies/vote/voter-support/rules-at-the-polls",
+   "checked": "2026-10-25",
+   "quote": "Polls are open from 7 a.m. to 8 p.m. on Election Day.",
+   "status": "verified"
+  }
+ }
 }

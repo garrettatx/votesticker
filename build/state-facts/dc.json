@@ -11,6 +11,10 @@
   "www.dcboe.org": {
    "en": "the DC Board of Elections",
    "es": "la Junta de Elecciones de DC (Board of Elections)"
+  },
+  "dcboe.org": {
+   "en": "the DC Board of Elections",
+   "es": "la Junta de Elecciones de DC (Board of Elections)"
   }
  },
  "dates": {
@@ -103,7 +107,8 @@
    "checked": "2026-10-21",
    "quote": "In a ballot drop box or at a Vote Center; or",
    "status": "verified"
-  }
+  },
+  "track_url": "https://votedc.ballottrax.net/voter"
  },
  "polls_rules": {
   "gear": {
@@ -167,5 +172,15 @@
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026 on code.dccouncil.gov (D.C. Code 1-1001.05, .07, .09, .10). VALIDATOR HOST: dcboe.org and earlyvoting.dcboe.org, the DC Board of Elections' own domains, fail the OFFICIAL pattern in build/facts_text.py, so nothing is cited from them and no where.locator_url, track_url or local_offices_url is set. Facts that only DCBOE states are missing: the mail request (every voter is mailed a ballot), early voting hours, the cure process and deadline, the in-line rule, witness, phone rule and sticker. The Early Vote Centers page (read in Chrome) says 'Early Vote Centers open from Monday, October 26 through Sunday, November 1, between 8:30 a.m. and 7:00 p.m.', matching states.js. Mail return: the Code gives the 10th day after Election Day; faq-sources.json records DCBOE's calendar as November 13, 2026. No calendar date is computed here. 1-1001.05(a)(10A) has a separate 7th-day rule for absentee ballots (UOCAVA context); mail-in ballots follow (10B). Provisional (special) ballot hearing: 8 to 10 days after the election, 1-1001.09(e)."
+ "notes": "Read October 21, 2026 on code.dccouncil.gov (D.C. Code 1-1001.05, .07, .09, .10). VALIDATOR HOST: dcboe.org and earlyvoting.dcboe.org, the DC Board of Elections' own domains, fail the OFFICIAL pattern in build/facts_text.py, so nothing is cited from them and no where.locator_url, track_url or local_offices_url is set. Facts that only DCBOE states are missing: the mail request (every voter is mailed a ballot), early voting hours, the cure process and deadline, the in-line rule, witness, phone rule and sticker. The Early Vote Centers page (read in Chrome) says 'Early Vote Centers open from Monday, October 26 through Sunday, November 1, between 8:30 a.m. and 7:00 p.m.', matching states.js. Mail return: the Code gives the 10th day after Election Day; faq-sources.json records DCBOE's calendar as November 13, 2026. No calendar date is computed here. 1-1001.05(a)(10A) has a separate 7th-day rule for absentee ballots (UOCAVA context); mail-in ballots follow (10B). Provisional (special) ballot hearing: 8 to 10 days after the election, 1-1001.09(e).",
+ "election_day": {
+  "hours": {
+   "en": "Election Day Vote Centers are open 7 a.m. to 8 p.m.",
+   "es": "Los centros de votación (Vote Centers) del Día de las Elecciones abren de 7 a. m. a 8 p. m.",
+   "src": "https://dcboe.org/getmedia/e076a79c-6f32-41fe-81a0-7f33c549b957/Time-Off-to-Vote-2026-General-STUDENTS.pdf",
+   "checked": "2026-10-25",
+   "quote": "Election Day Vote Centers are open from 7:00 A.M. to 8:00 P.M.",
+   "status": "verified"
+  }
+ }
 }

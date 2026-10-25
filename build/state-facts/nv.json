@@ -245,5 +245,15 @@
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026. nvsos.gov blocks automated fetching, so its pages (2026 Election Information, 2026 Polling Locations, Mail Ballot Voting, Elections FAQ) were read in Chrome; everything else is NRS chapter 293 on leg.state.nv.us (includes 2025 amendments): 293.560 registration, 293.269911 mail ballots to all active voters, 293.269919 assistance, 293.269921 return and drop boxes, 293.269927 signature cure (5 p.m. sixth day = Nov. 9), 293.3568 early voting hours, 293.3072 vote centers, 293.2725 first-time ID, 293.3085 provisional (ID by Friday = Nov. 6), 293.740 electioneering, 293.274 photography, 293.2546 line rule, 293.5837 online registrants inside 14 days. Day-of-week math: fourth day after Nov. 3 = Saturday Nov. 7; sixth = Monday Nov. 9. The SOS FAQ also says postmarked ballots may arrive until 5 p.m. on the fourth day (citing NRS 293.317). Sticker tradition not found on an official page."
+ "notes": "Read October 21, 2026. nvsos.gov blocks automated fetching, so its pages (2026 Election Information, 2026 Polling Locations, Mail Ballot Voting, Elections FAQ) were read in Chrome; everything else is NRS chapter 293 on leg.state.nv.us (includes 2025 amendments): 293.560 registration, 293.269911 mail ballots to all active voters, 293.269919 assistance, 293.269921 return and drop boxes, 293.269927 signature cure (5 p.m. sixth day = Nov. 9), 293.3568 early voting hours, 293.3072 vote centers, 293.2725 first-time ID, 293.3085 provisional (ID by Friday = Nov. 6), 293.740 electioneering, 293.274 photography, 293.2546 line rule, 293.5837 online registrants inside 14 days. Day-of-week math: fourth day after Nov. 3 = Saturday Nov. 7; sixth = Monday Nov. 9. The SOS FAQ also says postmarked ballots may arrive until 5 p.m. on the fourth day (citing NRS 293.317). Sticker tradition not found on an official page.",
+ "election_day": {
+  "hours": {
+   "en": "Polling places are open 7 a.m. to 7 p.m. local time.",
+   "es": "Los lugares de votación abren de 7 a. m. a 7 p. m., hora local.",
+   "src": "https://www.leg.state.nv.us/nrs/nrs-293.html",
+   "checked": "2026-10-25",
+   "quote": "1. Except as otherwise provided in NRS 293.305, at all elections held under the provisions of this title, the polls must open at 7 a.m. and close at 7 p.m.",
+   "status": "verified"
+  }
+ }
 }

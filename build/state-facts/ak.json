@@ -237,5 +237,15 @@
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026 on elections.alaska.gov (curl worked): early and absentee in-person locations (avo), the election calendar, Absentee and Early Voting, Polling Place Locations, the 2026 General Election media packet PDF (V3), and the 2022 youth sticker contest release; and akleg.gov print view for AS 15.15.170, 15.15.225, 15.15.320, 15.20.081 and 15.20.203. Early voting start, Monday, October 19, matches states.js (calendar: 'Absentee In Person, EV, electronic transmission and Special Needs voting begins.'); the avo page lists most sites through November 2. November 13 is the 10th day after the election (AS 15.20.081(e), media packet). Weekend regional office hours are Division policy, not law (calendar). The precinct map is on akelections.maps.arcgis.com, which the validator would reject, so locator_url points at the Polling Place Locations page that links to it. myvoterportal.alaska.gov returned 403 to curl; it is linked from the Absentee and Early Voting page and the media packet. Return envelopes need postage (media packet: 'Is return postage pre-paid for absentee by-mail ballots? No.'). The Division does not verify signatures (media packet). Sticker: the only official contest page found is for 2022; no 2026 sticker page found. Expired ID rule and a voter phone rule not found."
+ "notes": "Read October 21, 2026 on elections.alaska.gov (curl worked): early and absentee in-person locations (avo), the election calendar, Absentee and Early Voting, Polling Place Locations, the 2026 General Election media packet PDF (V3), and the 2022 youth sticker contest release; and akleg.gov print view for AS 15.15.170, 15.15.225, 15.15.320, 15.20.081 and 15.20.203. Early voting start, Monday, October 19, matches states.js (calendar: 'Absentee In Person, EV, electronic transmission and Special Needs voting begins.'); the avo page lists most sites through November 2. November 13 is the 10th day after the election (AS 15.20.081(e), media packet). Weekend regional office hours are Division policy, not law (calendar). The precinct map is on akelections.maps.arcgis.com, which the validator would reject, so locator_url points at the Polling Place Locations page that links to it. myvoterportal.alaska.gov returned 403 to curl; it is linked from the Absentee and Early Voting page and the media packet. Return envelopes need postage (media packet: 'Is return postage pre-paid for absentee by-mail ballots? No.'). The Division does not verify signatures (media packet). Sticker: the only official contest page found is for 2022; no 2026 sticker page found. Expired ID rule and a voter phone rule not found.",
+ "election_day": {
+  "hours": {
+   "en": "Polling places are open 7 a.m. to 8 p.m. local time.",
+   "es": "Los lugares de votación abren de 7 a. m. a 8 p. m., hora local.",
+   "src": "https://www.elections.alaska.gov/doc/mp/2026/MediaPacket-2026-General.%20V3.pdf",
+   "checked": "2026-10-25",
+   "quote": "General Election Day – Polling Places are open from 7am to 8pm.",
+   "status": "verified"
+  }
+ }
 }

@@ -166,7 +166,7 @@
    "quote": "Any person who is temporarily residing outside of their county of residence, and the ballot must be mailed to an address outside the municipality.",
    "status": "verified"
   },
-  "track_url": "",
+  "track_url": "https://myelectionday.sos.state.ms.us/VoterOutreach/Pages/VOSearch.aspx",
   "witness": {
    "en": "Mark your ballot in front of a notary or another official who can give oaths, then sign the affidavit on the back of the envelope and have them sign too. If you have a temporary or permanent physical disability, any witness 18 or older can sign instead. The application needs the same kind of witness.",
    "es": "Marca tu boleta frente a un notario u otro funcionario autorizado para tomar juramentos, luego firma la declaración al reverso del sobre y pídele que firme también. Si tienes una discapacidad física temporal o permanente, puede firmar cualquier testigo de 18 años o más. La solicitud necesita el mismo tipo de testigo.",
@@ -233,5 +233,15 @@
    "notes": "No absentee ballot tracker found on sos.ms.gov."
   }
  },
- "notes": "Read October 21, 2026 on sos.ms.gov (curl worked): Absentee Voting Information, Election FAQs, Elections 101, Voter ID pages, the 2026 Elections Calendar PDF (last revised 9/8/2026), My Election Day, and the October 21, 2025 sticker contest release. EARLY VOTING vs states.js: states.js has kind 'none'. Mississippi does have in-person absentee voting for voters who meet an excuse, ending at noon on Saturday, October 31, 2026. START DATE CONFLICT: the SOS absentee FAQ says 'You may vote absentee in person from 8:00 a.m. to 5:00 p.m., Monday through Friday, beginning September 19, 2026, at the circuit Clerk’s office, through October 31, 2026.' The SOS 2026 Elections Calendar says '21st Absentee Ballots Available: Earliest day to vote by an absentee ballot in the Circuit Clerk’s Office in the General Election.' (September 21; September 19 is a Saturday). The file leaves out the start date. End time: the calendar says '31st In-Person Absentee Voting Deadline, 12:00 p.m. (General): Circuit Clerk’s Offices MUST remain open from 8 a.m. until noon'; the FAQ agrees on noon for October 24 and 31. Mail return: the FAQ ('received on or within five (5) business days of the election, or November 10, 2026') and the calendar (5 p.m. November 10) agree. In-person absentee eligibility is a longer list than mail (it adds working during poll hours and being away from home on Election Day); how.in_person names three examples. Sticker: the contest release is from 2025; no winner announcement was found on sos.ms.gov. Mail request deadline, drop boxes, ballot tracker, cure, phone rule and general provisional rules not found; left missing."
+ "notes": "Read October 21, 2026 on sos.ms.gov (curl worked): Absentee Voting Information, Election FAQs, Elections 101, Voter ID pages, the 2026 Elections Calendar PDF (last revised 9/8/2026), My Election Day, and the October 21, 2025 sticker contest release. EARLY VOTING vs states.js: states.js has kind 'none'. Mississippi does have in-person absentee voting for voters who meet an excuse, ending at noon on Saturday, October 31, 2026. START DATE CONFLICT: the SOS absentee FAQ says 'You may vote absentee in person from 8:00 a.m. to 5:00 p.m., Monday through Friday, beginning September 19, 2026, at the circuit Clerk’s office, through October 31, 2026.' The SOS 2026 Elections Calendar says '21st Absentee Ballots Available: Earliest day to vote by an absentee ballot in the Circuit Clerk’s Office in the General Election.' (September 21; September 19 is a Saturday). The file leaves out the start date. End time: the calendar says '31st In-Person Absentee Voting Deadline, 12:00 p.m. (General): Circuit Clerk’s Offices MUST remain open from 8 a.m. until noon'; the FAQ agrees on noon for October 24 and 31. Mail return: the FAQ ('received on or within five (5) business days of the election, or November 10, 2026') and the calendar (5 p.m. November 10) agree. In-person absentee eligibility is a longer list than mail (it adds working during poll hours and being away from home on Election Day); how.in_person names three examples. Sticker: the contest release is from 2025; no winner announcement was found on sos.ms.gov. Mail request deadline, drop boxes, ballot tracker, cure, phone rule and general provisional rules not found; left missing.",
+ "election_day": {
+  "hours": {
+   "en": "Polling places are open 7 a.m. to 7 p.m. local time.",
+   "es": "Los lugares de votación abren de 7 a. m. a 7 p. m., hora local.",
+   "src": "https://www.sos.ms.gov/node/1859",
+   "checked": "2026-10-25",
+   "quote": "Polls will open at 7:00 a.m. and close at 7:00 p.m.",
+   "status": "verified"
+  }
+ }
 }

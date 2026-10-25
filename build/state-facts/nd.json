@@ -7,6 +7,10 @@
   "www.sos.nd.gov": {
    "en": "the North Dakota Secretary of State",
    "es": "la Secretaría de Estado de North Dakota"
+  },
+  "ndlegis.gov": {
+   "en": "North Dakota law",
+   "es": "la ley de North Dakota"
   }
  },
  "dates": {
@@ -202,5 +206,17 @@
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026 with curl on sos.nd.gov (Voting in North Dakota, Forms of Voter ID, How Do I Vote, Absentee Voting, Where Do I Vote, Elections - Current/Past, I Voted Sticker Design Contest) and vip.sos.nd.gov (Precincts.aspx?eid=348, page 1 of the early voting list). Weekday for November 2 is the calendar weekday. NO VOTER REGISTRATION: the file uses the SOS sentence 'North Dakota does not require voter registration, but you do need to have a valid form of identification that can be used for voting.' and 'North Dakota is the only state without voter registration as our Voter ID Law requires a valid form of ID to vote.' Polls close between 7 and 9 p.m. local time depending on the county (faq_text.py), so mail_return says 'close of polls' as the SOS does. EARLY VOTING FOR THE LEAD (states.js has ND unchecked): no statewide window. 'Some communities offer early voting at certain dates and times prior to Election Day.' (https://www.sos.nd.gov/elections/voter/voting-north-dakota/how-do-i-vote), with the county list at https://vip.sos.nd.gov/Precincts.aspx?eid=348 ('Early Voting Available Counties'). Page 1 of that list (page 2 needs a postback and was not opened) shows: Burleigh (Bismarck Event Center) Oct 22 to Nov 2, 2026, with 'Oct 22 2026 12:00PM-Oct 22 2026 5:30PM' first and 'Nov 2 2026 9:00AM-Nov 2 2026 5:00PM' last; Cass (five Fargo-area sites) Oct 27 to Oct 31, 'Oct 27 2026 11:00AM-Oct 27 2026 7:00PM'; Grand Forks (Alerus Center) Oct 27 to Oct 31; Morton (Mandan Public Library) Oct 27 to Nov 2; Sioux County one-evening absentee voting days Oct 28 and Oct 30. Absentee voting began 'September 24, 2026 - Absentee Begins' (elections-currentpast). Suggested states.js note: 'Early voting in some counties only; dates vary. Check your county.' Not found: statewide early voting hours, cure process, expired-ID rule, phone and line rules."
+ "notes": "Read October 21, 2026 with curl on sos.nd.gov (Voting in North Dakota, Forms of Voter ID, How Do I Vote, Absentee Voting, Where Do I Vote, Elections - Current/Past, I Voted Sticker Design Contest) and vip.sos.nd.gov (Precincts.aspx?eid=348, page 1 of the early voting list). Weekday for November 2 is the calendar weekday. NO VOTER REGISTRATION: the file uses the SOS sentence 'North Dakota does not require voter registration, but you do need to have a valid form of identification that can be used for voting.' and 'North Dakota is the only state without voter registration as our Voter ID Law requires a valid form of ID to vote.' Polls close between 7 and 9 p.m. local time depending on the county (faq_text.py), so mail_return says 'close of polls' as the SOS does. EARLY VOTING FOR THE LEAD (states.js has ND unchecked): no statewide window. 'Some communities offer early voting at certain dates and times prior to Election Day.' (https://www.sos.nd.gov/elections/voter/voting-north-dakota/how-do-i-vote), with the county list at https://vip.sos.nd.gov/Precincts.aspx?eid=348 ('Early Voting Available Counties'). Page 1 of that list (page 2 needs a postback and was not opened) shows: Burleigh (Bismarck Event Center) Oct 22 to Nov 2, 2026, with 'Oct 22 2026 12:00PM-Oct 22 2026 5:30PM' first and 'Nov 2 2026 9:00AM-Nov 2 2026 5:00PM' last; Cass (five Fargo-area sites) Oct 27 to Oct 31, 'Oct 27 2026 11:00AM-Oct 27 2026 7:00PM'; Grand Forks (Alerus Center) Oct 27 to Oct 31; Morton (Mandan Public Library) Oct 27 to Nov 2; Sioux County one-evening absentee voting days Oct 28 and Oct 30. Absentee voting began 'September 24, 2026 - Absentee Begins' (elections-currentpast). Suggested states.js note: 'Early voting in some counties only; dates vary. Check your county.' Not found: statewide early voting hours, cure process, expired-ID rule, phone and line rules.",
+ "election_day": {
+  "hours": {
+   "en": "Your city or county sets the hours: polls open between 7 and 9 a.m. and close between 7 and 9 p.m. local time.",
+   "es": "Tu ciudad o condado fija el horario: se abre entre las 7 y las 9 a. m. y se cierra entre las 7 y las 9 p. m., hora local.",
+   "src": "https://ndlegis.gov/cencode/t16-1c01.pdf",
+   "checked": "2026-10-25",
+   "quote": "The polls at all primary, general, and special elections must be opened at nine a.m. or earlier, but not earlier than seven a.m., as designated for any precinct by resolution of the governing body of the city or county in which the precinct is located. The polls must remain open continuously until seven p.m. or a later hour, not later than nine p.m.",
+   "status": "verified",
+   "quote2": "The polls must remain open continuously until seven p.m. or a later hour, not later than nine p.m.",
+   "varies": true
+  }
+ }
 }

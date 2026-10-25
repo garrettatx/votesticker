@@ -219,5 +219,15 @@
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026 on sos.nebraska.gov (curl worked): Early Voting, Election Day FAQ, Voter ID, Nebraska Drop Box Locator, the 2026 Official Election Calendar PDF; and nebraskalegislature.gov statutes 32-908 (hours, line), 32-1524 (electioneering, 200 feet), 32-1527 (ballot photo), 32-950.01 (drop boxes). EARLY VOTING vs states.js: states.js has end 2026-11-02 and no start. The calendar gives the start: '5-Oct First day for early voting - in person - at the county clerk or election commissioner office.' and '2-Nov Last day for early voting - in person - at the county clerk or election commissioner office. §32-942'. The provisional photo ID deadline is November 10 per the calendar ('Deadline to present valid photographic identification ... on or before the Tuesday after the election'); id.without says 'the Tuesday after the election'. Phone rule, mail ballot cure, first-time voter rules and a sticker tradition on an official page were not found; left missing."
+ "notes": "Read October 21, 2026 on sos.nebraska.gov (curl worked): Early Voting, Election Day FAQ, Voter ID, Nebraska Drop Box Locator, the 2026 Official Election Calendar PDF; and nebraskalegislature.gov statutes 32-908 (hours, line), 32-1524 (electioneering, 200 feet), 32-1527 (ballot photo), 32-950.01 (drop boxes). EARLY VOTING vs states.js: states.js has end 2026-11-02 and no start. The calendar gives the start: '5-Oct First day for early voting - in person - at the county clerk or election commissioner office.' and '2-Nov Last day for early voting - in person - at the county clerk or election commissioner office. §32-942'. The provisional photo ID deadline is November 10 per the calendar ('Deadline to present valid photographic identification ... on or before the Tuesday after the election'); id.without says 'the Tuesday after the election'. Phone rule, mail ballot cure, first-time voter rules and a sticker tradition on an official page were not found; left missing.",
+ "election_day": {
+  "hours": {
+   "en": "Polls are open 8 a.m. to 8 p.m. in Central time and 7 a.m. to 7 p.m. in Mountain time.",
+   "es": "Se vota de 8 a. m. a 8 p. m. en la hora del Centro y de 7 a. m. a 7 p. m. en la hora de la Montaña.",
+   "src": "https://nebraskalegislature.gov/laws/statutes.php?statute=32-908",
+   "checked": "2026-10-25",
+   "quote": "At all elections in the area of this state lying within the Mountain Standard or Mountain Daylight time zone, the polls shall open at 7 a.m. and close at 7 p.m. of the same day, and in the area lying within the Central Standard or Central Daylight time zone, the polls shall open at 8 a.m. and close at 8 p.m. of the same day.",
+   "status": "verified"
+  }
+ }
 }

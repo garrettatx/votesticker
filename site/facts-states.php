@@ -118,6 +118,12 @@ return array(
 			'src' => 'https://www.elections.alaska.gov/2022-i-voted-sticker-and-official-election-pamphlet-youth-artwork-contest/',
 			'checked' => '2026-10-21',
 		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 7 a.m. to 8 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 7 a. m. a 8 p. m., hora local.',
+			'src' => 'https://www.elections.alaska.gov/doc/mp/2026/MediaPacket-2026-General.%20V3.pdf',
+			'checked' => '2026-10-25',
+		),
 		'faq.provisional' => array(
 			'en' => 'Alaska calls it a questioned ballot. You vote one if your name isn\'t on the precinct list, or if you have no ID and no poll worker knows you. You fill out an oath and affidavit envelope, and a review board checks it before counting.',
 			'es' => 'En Alaska se llama boleta cuestionada (questioned ballot). Votas con una si tu nombre no está en la lista del precinto, o si no traes identificación y ningún trabajador electoral te conoce. Llenas un sobre con juramento y declaración jurada, y una junta lo revisa antes de contarlo.',
@@ -273,6 +279,12 @@ return array(
 			'src' => 'https://www.sos.alabama.gov/sites/default/files/election-2026/2026-VoterGuide.pdf',
 			'checked' => '2026-10-21',
 		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 7 a.m. to 7 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 7 a. m. a 7 p. m., hora local.',
+			'src' => 'https://www.sos.alabama.gov/newsroom/secretary-state-wes-allen-reminds-alabamians-register-vote-ahead-november-3-general',
+			'checked' => '2026-10-25',
+		),
 		'faq.provisional' => array(
 			'en' => 'If your name isn\'t on the voter list and the county can\'t confirm your registration, you can vote a provisional ballot. It counts if your county Board of Registrars confirms you\'re qualified to vote at that polling place.',
 			'es' => 'Si tu nombre no aparece en la lista de votantes y el condado no puede confirmar tu registro, puedes votar con una boleta provisional. Cuenta si la junta de registro de tu condado (Board of Registrars) confirma que puedes votar en ese lugar de votación.',
@@ -378,6 +390,7 @@ return array(
 			'src' => 'https://www.sos.arkansas.gov/elections/voter-information/absentee-voting',
 			'checked' => '2026-10-21',
 		),
+		'mail.track_url' => 'https://www.voterview.ar-nova.org/voterview',
 		'polls_rules.gear' => array(
 			'en' => 'Leave the campaign shirts, caps and buttons at home. Electioneering isn\'t allowed inside the polls or within 100 feet of the main entrance voters use, and that includes wearing campaign articles. Poll workers will ask you to take them off or cover them up.',
 			'es' => 'Deja en casa las camisetas, gorras y botones de campaña. No se permite hacer campaña dentro del lugar de votación ni a menos de 100 pies de la entrada principal que usan los votantes, y eso incluye llevar artículos de campaña. Los trabajadores electorales te pedirán que te los quites o que los tapes.',
@@ -389,6 +402,12 @@ return array(
 			'es' => 'Si estás en la fila a las 7:30 p. m., todavía puedes votar.',
 			'src' => 'https://sbec.arkansas.gov/wp-content/uploads/2026-Poll-Worker-Guide-CLEAN-10-28-25.pdf',
 			'checked' => '2026-10-21',
+		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 7:30 a.m. to 7:30 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 7:30 a. m. a 7:30 p. m., hora local.',
+			'src' => 'https://sbec.arkansas.gov/wp-content/uploads/2026-Election-Coordinator-Manual.pdf',
+			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
 			'en' => 'If your name isn\'t on the list, you can\'t meet the ID rules, or a poll watcher challenges your vote, you can vote a provisional ballot after signing a statement that you\'re eligible. You\'ll be told in writing whether it counted, and why if it didn\'t.',
@@ -514,6 +533,12 @@ return array(
 			'es' => 'Los lugares de votación cierran a las 7 p. m. Si estás en la fila cuando cierran, no te salgas. Te dejarán votar.',
 			'src' => 'https://www.azleg.gov/ars/16/00565.htm',
 			'checked' => '2026-10-21',
+		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 6 a.m. to 7 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 6 a. m. a 7 p. m., hora local.',
+			'src' => 'https://www.azleg.gov/ars/16/00565.htm',
+			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
 			'en' => 'You may get one if you were sent an early ballot, your name isn\'t on the roster, you\'re on inactive status, or you changed your name or moved within the county without updating your registration. It counts once the county confirms you\'re registered and eligible. In counties without vote centers, you also need to be in the right precinct.',
@@ -674,6 +699,12 @@ return array(
 			'src' => 'https://www.countynewscenter.com/county-mails-ballots-and-opens-more-than-150-ballot-drop-boxes-for-november-general-election/',
 			'checked' => '2026-10-24',
 		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 7 a.m. to 8 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 7 a. m. a 8 p. m., hora local.',
+			'src' => 'https://www.sos.ca.gov/elections/voting-info/ways-vote',
+			'checked' => '2026-10-25',
+		),
 		'faq.provisional' => array(
 			'en' => 'If your name isn\'t on the list, you can still vote with a provisional ballot. It counts if elections officials find you\'re eligible. Registering the same day also means voting a provisional ballot.',
 			'es' => 'Si tu nombre no está en la lista, igual puedes votar con una boleta provisional. Se cuenta si los funcionarios electorales confirman que tienes derecho a votar. Si te registras el mismo día, también votas con una boleta provisional.',
@@ -719,6 +750,10 @@ return array(
 			'www.garfieldcountyco.gov' => array(
 				'en' => 'the Garfield County Clerk and Recorder',
 				'es' => 'la oficina del secretario del condado de Garfield (Clerk and Recorder)',
+			),
+			'coloradosos.gov' => array(
+				'en' => 'the Colorado Secretary of State',
+				'es' => 'la Secretaría de Estado de Colorado',
 			),
 		),
 		'dates.reg_deadline' => array(
@@ -812,6 +847,12 @@ return array(
 			'es' => 'En el condado de Garfield, hay un sticker de "I Voted" de edición especial limitada por los 250 años del país y los 150 de Colorado en los buzones de entrega de boletas y los centros de votación, hasta agotar existencias.',
 			'src' => 'https://www.garfieldcountyco.gov/news/vote-and-return-both-ballot-pages-in-2026-general-election/',
 			'checked' => '2026-10-23',
+		),
+		'election_day.hours' => array(
+			'en' => 'In-person voting is open 7 a.m. to 7 p.m. local time.',
+			'es' => 'Puedes votar en persona de 7 a. m. a 7 p. m., hora local.',
+			'src' => 'https://coloradosos.gov/pubs/newsRoom/pressReleases/2026/PR20261019InPersonVoting.html',
+			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
 			'en' => 'If you register on Election Day but don\'t have ID that can be verified, you can vote a provisional ballot. After Election Day, election officials check that you\'re eligible, and if you are, it\'s counted.',
@@ -956,6 +997,12 @@ return array(
 			'src' => 'https://www.cga.ct.gov/current/pub/chap_146.htm',
 			'checked' => '2026-10-21',
 		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 6 a.m. to 8 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 6 a. m. a 8 p. m., hora local.',
+			'src' => 'https://www.cga.ct.gov/current/pub/chap_146.htm',
+			'checked' => '2026-10-25',
+		),
 		'faq.provisional' => array(
 			'en' => 'If you registered to vote but your name isn\'t on the voter list, you can vote a provisional ballot. You\'ll sign a statement at the polling place saying you\'re qualified to vote there and haven\'t already voted in this election.',
 			'es' => 'Si te registraste para votar pero tu nombre no aparece en la lista de votantes, puedes votar con una boleta provisional. Firmarás una declaración en el lugar de votación de que puedes votar ahí y de que no has votado ya en esta elección.',
@@ -983,6 +1030,10 @@ return array(
 				'es' => 'el Código del Distrito de Columbia (D.C. Code)',
 			),
 			'www.dcboe.org' => array(
+				'en' => 'the DC Board of Elections',
+				'es' => 'la Junta de Elecciones de DC (Board of Elections)',
+			),
+			'dcboe.org' => array(
 				'en' => 'the DC Board of Elections',
 				'es' => 'la Junta de Elecciones de DC (Board of Elections)',
 			),
@@ -1018,6 +1069,7 @@ return array(
 			'src' => 'https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.09',
 			'checked' => '2026-10-21',
 		),
+		'mail.track_url' => 'https://votedc.ballottrax.net/voter',
 		'mail.dropbox' => array(
 			'en' => 'Put it in a ballot drop box or bring it to a Vote Center by 8 p.m. on Election Day.',
 			'es' => 'Déjala en un buzón de entrega de boletas o llévala a un centro de votación a más tardar a las 8 p. m. del Día de las Elecciones.',
@@ -1035,6 +1087,12 @@ return array(
 			'es' => 'Revisa tu paquete de boleta por correo. La Junta de Elecciones de DC incluye una hoja de instrucciones con un sticker de "I Voted" entre los artículos que debe traer.',
 			'src' => 'https://www.dcboe.org/voters/casting-your-vote/mail-ballot-instructions',
 			'checked' => '2026-10-24',
+		),
+		'election_day.hours' => array(
+			'en' => 'Election Day Vote Centers are open 7 a.m. to 8 p.m.',
+			'es' => 'Los centros de votación (Vote Centers) del Día de las Elecciones abren de 7 a. m. a 8 p. m.',
+			'src' => 'https://dcboe.org/getmedia/e076a79c-6f32-41fe-81a0-7f33c549b957/Time-Off-to-Vote-2026-General-STUDENTS.pdf',
+			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
 			'en' => 'DC calls it a special ballot. If your name is missing from the list, or your name or address is wrong, you can still vote one. The Board reviews it, you can call a toll-free line to hear its decision, and you get a hearing 8 to 10 days after the election if it says no.',
@@ -1177,6 +1235,12 @@ return array(
 			'es' => 'Los lugares de votación cierran a las 8 p. m. Si estás en la fila a esa hora, no te salgas. Te dejarán votar.',
 			'src' => 'https://delcode.delaware.gov/title15/c049/sc02/index.html',
 			'checked' => '2026-10-21',
+		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 7 a.m. to 8 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 7 a. m. a 8 p. m., hora local.',
+			'src' => 'https://elections.delaware.gov/elections/general/general.html',
+			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
 			'en' => 'If your eligibility can\'t be confirmed at the polls, you can vote a provisional ballot for the federal offices on the ballot. The Department reviews provisional ballots the day after the election.',
@@ -1342,6 +1406,12 @@ return array(
 			'src' => 'https://clayelections.gov/your-elections-office/i-voted-sticker-contest/',
 			'checked' => '2026-10-23',
 		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 7 a.m. to 7 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 7 a. m. a 7 p. m., hora local.',
+			'src' => 'https://dos.fl.gov/elections/contacts/frequently-asked-questions/faq-voting/',
+			'checked' => '2026-10-25',
+		),
 		'faq.provisional' => array(
 			'en' => 'You vote a provisional ballot if your eligibility is challenged at the polls or you don\'t have ID. You have until 5 p.m. local time on the second day after the election to show more proof that you\'re eligible. It counts if your signature matches your registration and you\'re eligible.',
 			'es' => 'Votas con una boleta provisional si cuestionan en el lugar de votación si puedes votar o si no tienes identificación. Tienes hasta las 5 p. m., hora local, del segundo día después de la elección para mostrar más pruebas de que puedes votar. Cuenta si tu firma coincide con la de tu registro y puedes votar.',
@@ -1468,6 +1538,12 @@ return array(
 			'src' => 'https://sos.ga.gov/news/georgia-debuts-new-i-voted-sticker-2026-midterm-elections',
 			'checked' => '2026-10-23',
 		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 7 a.m. to 7 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 7 a. m. a 7 p. m., hora local.',
+			'src' => 'https://georgia.gov/vote-in-person-election-day',
+			'checked' => '2026-10-25',
+		),
 		'faq.provisional' => array(
 			'en' => 'You vote a provisional ballot when your eligibility can\'t be confirmed at the polling place, for example if your name isn\'t on the list. It counts if your county registrar\'s office can confirm your eligibility within three days after Election Day.',
 			'es' => 'Votas con una boleta provisional cuando no pueden confirmar en el lugar de votación que puedes votar, por ejemplo si tu nombre no aparece en la lista. Cuenta si la oficina de registro de tu condado (County Registrar) puede confirmarlo dentro de los tres días después del Día de las Elecciones.',
@@ -1551,6 +1627,7 @@ return array(
 			'src' => 'https://elections.hawaii.gov/wp-content/uploads/VoterGuide_2026_General_English.pdf',
 			'checked' => '2026-10-21',
 		),
+		'mail.track_url' => 'https://hawaii.ballottrax.net/voter/',
 		'mail.cure' => array(
 			'en' => 'Your county compares the signature on your envelope with the one on file. If they can\'t confirm a match, they\'ll notify you, and you have five business days after Election Day to fix it.',
 			'es' => 'Tu condado compara la firma del sobre con la que tiene en tu registro. Si no pueden confirmar que coincide, te avisarán, y tienes cinco días hábiles después del Día de las Elecciones para corregirlo.',
@@ -1731,6 +1808,12 @@ return array(
 			'src' => 'https://johnsoncountyiowa.gov/node/16546',
 			'checked' => '2026-10-24',
 		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 7 a.m. to 8 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 7 a. m. a 8 p. m., hora local.',
+			'src' => 'https://www.legis.iowa.gov/docs/code/49.73.pdf',
+			'checked' => '2026-10-25',
+		),
 		'faq.provisional' => array(
 			'en' => 'You\'re offered a provisional ballot if you were already sent an absentee ballot, don\'t show ID when it\'s required, or are challenged by another voter. You get a notice that day saying why and whether you need to bring more documents.',
 			'es' => 'Te ofrecen una boleta provisional si ya te habían mandado una boleta de voto en ausencia, si no muestras identificación cuando se requiere o si otro votante te impugna. Ese mismo día recibes un aviso que dice por qué y si necesitas llevar más documentos.',
@@ -1829,7 +1912,7 @@ return array(
 			'src' => 'https://voteidaho.gov/casting-your-ballot/',
 			'checked' => '2026-10-21',
 		),
-		'mail.track_url' => 'https://votertools.voteidaho.gov/TEDElectionLink/VoterServices/voter-search/ovr-voter-search?returnUrl=VoterServices%2Fvoter%2Fvoter-profile',
+		'mail.track_url' => 'https://votertools.voteidaho.gov/TEDElectionLink/VoterServices/voter-search/ovr-voter-search?returnUrl=VoterServices%2Ftimeline%2Ftrack-my-vote-by-mail',
 		'mail.dropbox' => array(
 			'en' => 'Use an official elections drop box or take it to your county elections office by 8 p.m. on Election Day.',
 			'es' => 'Usa un buzón electoral oficial o llévala a la oficina electoral de tu condado a más tardar a las 8 p. m. del Día de las Elecciones.',
@@ -1859,6 +1942,12 @@ return array(
 			'es' => 'La propia guía para votar de Idaho termina con un sticker: después de entregar tu boleta, toma un sticker de I Voted y llévalo con orgullo.',
 			'src' => 'https://voteidaho.gov/guide-to-vote-in-person/',
 			'checked' => '2026-10-21',
+		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 8 a.m. to 8 p.m. local time, and a county can choose to open at 7 a.m.',
+			'es' => 'Los lugares de votación abren de 8 a. m. a 8 p. m., hora local, y un condado puede abrir desde las 7 a. m.',
+			'src' => 'https://voteidaho.gov/idaho-general-election/',
+			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
 			'en' => 'Idaho doesn\'t use provisional ballots. If you\'re not registered, register at early voting or at your polling place on Election Day with a photo ID and proof of residence.',
@@ -1994,6 +2083,12 @@ return array(
 			'es' => 'Cada condado elige su propio sticker. En el condado de Champaign, los pasos de votación anticipada del secretario del condado terminan con tomar un sticker de "I Voted" después de emitir tu boleta.',
 			'src' => 'https://champaigncountyclerk.com/elections/many-ways-vote/early-voting-information',
 			'checked' => '2026-10-24',
+		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 6 a.m. to 7 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 6 a. m. a 7 p. m., hora local.',
+			'src' => 'https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=001000050K17-1',
+			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
 			'en' => 'You vote a provisional ballot if, for example, your name isn\'t on the precinct list, your eligibility is challenged, or you registered by mail without ID and still can\'t show it. You can bring more proof to your election authority by close of business on the Tuesday after the election, November 10. The election authority decides within 14 days whether it counts.',
@@ -2142,6 +2237,12 @@ return array(
 			'src' => 'https://www.in.gov/dA/a8ee46432d/2026-Election-Day-Handbook.pdf',
 			'checked' => '2026-10-21',
 		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 6 a.m. to 6 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 6 a. m. a 6 p. m., hora local.',
+			'src' => 'https://www.in.gov/sos/elections/files/2026-Calendar-Brochure.FINAL-VERSION.pdf',
+			'checked' => '2026-10-25',
+		),
 		'faq.provisional' => array(
 			'en' => 'You may get one if you don\'t have the required photo ID or your eligibility at the precinct is challenged. After Election Day, the county election board decides whether it counts. Without ID, you have until noon 10 days after the election to follow up.',
 			'es' => 'Te la pueden dar si no tienes la identificación con foto requerida o si se cuestiona tu derecho a votar en el precinto. Después del Día de las Elecciones, la junta electoral del condado decide si se cuenta. Si no tenías identificación, tienes hasta el mediodía del décimo día después de la elección para completar el trámite.',
@@ -2273,6 +2374,12 @@ return array(
 			'es' => 'En el condado de Sedgwick, sí. La oficina electoral del condado dice que puedes usar los stickers de 2026 que recibes en las urnas o con tu boleta por correo anticipada (advance by mail), así que revisa tu sobre.',
 			'src' => 'https://www.sedgwick.gov/communications/news-releases/sedgwick-county-election-office-announces-winners-of-2026-voting-sticker-contests/',
 			'checked' => '2026-10-24',
+		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open at least 7 a.m. to 7 p.m. local time, and a county can open as early as 6 a.m. and close as late as 8 p.m.',
+			'es' => 'Los lugares de votación abren por lo menos de 7 a. m. a 7 p. m., hora local, y un condado puede abrir desde las 6 a. m. y cerrar hasta las 8 p. m.',
+			'src' => 'https://sos.ks.gov/elections/voter-information.html',
+			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
 			'en' => 'You vote a provisional ballot if you don\'t show a valid photo ID, or if you asked for a mail ballot but vote in person instead. A missing-ID provisional ballot counts once you get your photo ID to the county election office before the county canvass.',
@@ -2421,6 +2528,12 @@ return array(
 			'es' => 'Para 2026, el tercer concurso anual de stickers de "I voted" de la Secretaría de Estado está abierto a estudiantes de Kentucky desde kínder hasta 12.º grado. El diseño ganador se va a entregar a los votantes de los condados participantes durante la elección general de 2026.',
 			'src' => 'https://www.sos.ky.gov/civic-initiatives/Pages/i-voted-sticker-contest.aspx',
 			'checked' => '2026-10-21',
+		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 6 a.m. to 6 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 6 a. m. a 6 p. m., hora local.',
+			'src' => 'https://elect.ky.gov/Frequently-Asked-Questions/Pages/Election-Day-Information.aspx',
+			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
 			'en' => 'If there\'s a problem at your polling place, you can vote a provisional ballot.',
@@ -2579,6 +2692,12 @@ return array(
 			'src' => 'https://www.sos.la.gov/news-events/secretary-landry-unveils-2026-i-voted-sticker-design',
 			'checked' => '2026-10-21',
 		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 6 a.m. to 8 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 6 a. m. a 8 p. m., hora local.',
+			'src' => 'https://www.sos.la.gov/elections-voting/election-dates',
+			'checked' => '2026-10-25',
+		),
 		'faq.provisional' => array(
 			'en' => 'If your name isn\'t on the voter list, you can vote a paper provisional ballot for federal offices only, after certifying in writing that you\'re eligible. It counts only if you\'re registered in that parish. Check whether it counted with the provisional voter search, at least seven days after the election.',
 			'es' => 'Si tu nombre no aparece en la lista de votantes, puedes votar con una boleta provisional de papel solo para cargos federales, después de certificar por escrito que puedes votar. Cuenta solo si estás registrado en esa parroquia. Revisa si se contó en el buscador oficial de boletas provisionales (provisional voter search), por lo menos siete días después de la elección.',
@@ -2712,6 +2831,12 @@ return array(
 			'src' => 'https://www.somervillema.gov/print-your-i-voted-sticker',
 			'checked' => '2026-10-24',
 		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 7 a.m. to 8 p.m., and your city or town can open as early as 5:45 a.m.',
+			'es' => 'Los lugares de votación abren de 7 a. m. a 8 p. m., y tu ciudad o pueblo puede abrir desde las 5:45 a. m.',
+			'src' => 'https://www.sec.state.ma.us/divisions/elections/voting-information/polling-hours.htm',
+			'checked' => '2026-10-25',
+		),
 		'faq.provisional' => array(
 			'en' => 'You vote a provisional ballot if you\'re not on the voter list, your information on it is wrong, or you\'re a first-time voter without ID. It counts if your local election office confirms you\'re registered, and it has 12 days after the election to decide. Call 1-800-462-VOTE after Election Day to see if yours counted.',
 			'es' => 'Votas con una boleta provisional si no estás en la lista de votantes, si tu información en la lista está mal o si votas por primera vez sin identificación. Se cuenta si tu oficina electoral local confirma que estás registrado, y tiene 12 días después de la elección para decidirlo. Llama al 1-800-462-VOTE después del Día de las Elecciones para saber si se contó la tuya.',
@@ -2743,6 +2868,10 @@ return array(
 			'elections.maryland.gov' => array(
 				'en' => 'the Maryland State Board of Elections',
 				'es' => 'la Junta Electoral del Estado de Maryland (State Board of Elections)',
+			),
+			'mgaleg.maryland.gov' => array(
+				'en' => 'Maryland law',
+				'es' => 'la ley de Maryland',
 			),
 		),
 		'dates.reg_deadline' => array(
@@ -2827,6 +2956,12 @@ return array(
 			'es' => 'La Junta Electoral del Estado tiene diseños de stickers de "I voted" que puedes descargar, incluidos dos que lo dicen en inglés y en español. Uno pone una oropéndola (oriole), un cangrejo, un caballo de carreras y una flor black-eyed Susan sobre la bandera del estado. Otro muestra el puente de la bahía (Bay Bridge) con una garza abajo.',
 			'src' => 'https://elections.maryland.gov/elections/2026/index.html',
 			'checked' => '2026-10-21',
+		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 7 a.m. to 8 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 7 a. m. a 8 p. m., hora local.',
+			'src' => 'https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gel&section=10-301&enactments=false',
+			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
 			'en' => 'You vote a provisional ballot if your name isn\'t on the list, you moved without updating your address, or you need to prove where you live or show ID. It counts if you\'re registered and eligible and meet any extra steps. Check it on Voter Look-up 10 days after the election.',
@@ -2951,6 +3086,12 @@ return array(
 			'es' => 'Las urnas cierran a las 8 p. m. Si estás en el lugar de votación a la hora del cierre, te dan la oportunidad de votar. Quien llega después de las 8 p. m. ya no puede.',
 			'src' => 'https://legislature.maine.gov/statutes/21-A/title21-Asec626.html',
 			'checked' => '2026-10-21',
+		),
+		'election_day.hours' => array(
+			'en' => 'Your town sets its opening time, between 6 and 8 a.m. (by 10 a.m. in towns under 500 people), and polls close at 8 p.m.',
+			'es' => 'Tu pueblo fija la hora de apertura, entre las 6 y las 8 a. m. (a más tardar a las 10 a. m. en pueblos de menos de 500 habitantes), y se cierra a las 8 p. m.',
+			'src' => 'https://legislature.maine.gov/statutes/21-A/title21-Asec626.html',
+			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
 			'en' => 'Maine calls it a challenged ballot. It\'s used when someone questions your eligibility on Election Day, and you can\'t be turned away. Challenged ballots are counted like regular ballots, and they\'re only reviewed if a recount could turn on them.',
@@ -3123,6 +3264,12 @@ return array(
 			'src' => 'https://www.cityofnorthvillemi.gov/m/faq',
 			'checked' => '2026-10-23',
 		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 7 a.m. to 8 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 7 a. m. a 8 p. m., hora local.',
+			'src' => 'https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-168-720',
+			'checked' => '2026-10-25',
+		),
 		'faq.provisional' => array(
 			'en' => 'You may get one if your name isn\'t on the list, you\'re at the wrong polling place, or you\'re a first-time voter without the required ID. You then have 6 days to bring ID to your city or township clerk. It counts if officials confirm you\'re registered in the right place.',
 			'es' => 'Te la pueden dar si tu nombre no está en la lista, si estás en el lugar de votación equivocado o si votas por primera vez y no tienes la identificación requerida. Luego tienes 6 días para llevar tu identificación al secretario de tu ciudad o municipio. Se cuenta si confirman que estás registrado en el lugar correcto.',
@@ -3283,6 +3430,12 @@ return array(
 			'src' => 'https://www.revisor.mn.gov/statutes/cite/204B.49',
 			'checked' => '2026-10-21',
 		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 7 a.m. to 8 p.m., and some small towns can open later, as late as 10 a.m.',
+			'es' => 'Los lugares de votación abren de 7 a. m. a 8 p. m., y algunos pueblos pequeños pueden abrir más tarde, hasta las 10 a. m.',
+			'src' => 'https://www.revisor.mn.gov/statutes/cite/204C.05',
+			'checked' => '2026-10-25',
+		),
 		'faq.line' => array(
 			'en' => 'You can still vote. If you\'re in line by 8 p.m., you get to vote, even if you reach the front after 8.',
 			'es' => 'Todavía puedes votar. Si estás en la fila a las 8 p. m., puedes votar, aunque llegues al frente después de las 8.',
@@ -3426,6 +3579,12 @@ return array(
 			'src' => 'https://www.stlouis-mo.gov/government/departments/board-election-commissioners/voter/absentee/no-excuse-absentee.cfm',
 			'checked' => '2026-10-23',
 		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 6 a.m. to 7 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 6 a. m. a 7 p. m., hora local.',
+			'src' => 'https://www.sos.mo.gov/elections/goVoteMissouri/electionday',
+			'checked' => '2026-10-25',
+		),
 		'faq.provisional' => array(
 			'en' => 'If you vote a provisional ballot, you\'ll get a stub from the envelope with instructions on how to check that your ballot was counted.',
 			'es' => 'Si votas con una boleta provisional, te darán un talón del sobre con instrucciones para revisar si tu boleta se contó.',
@@ -3531,6 +3690,7 @@ return array(
 			'src' => 'https://www.sos.ms.gov/yall-vote/absentee-voting-information',
 			'checked' => '2026-10-21',
 		),
+		'mail.track_url' => 'https://myelectionday.sos.state.ms.us/VoterOutreach/Pages/VOSearch.aspx',
 		'mail.witness' => array(
 			'en' => 'Mark your ballot in front of a notary or another official who can give oaths, then sign the affidavit on the back of the envelope and have them sign too. If you have a temporary or permanent physical disability, any witness 18 or older can sign instead. The application needs the same kind of witness.',
 			'es' => 'Marca tu boleta frente a un notario u otro funcionario autorizado para tomar juramentos, luego firma la declaración al reverso del sobre y pídele que firme también. Si tienes una discapacidad física temporal o permanente, puede firmar cualquier testigo de 18 años o más. La solicitud necesita el mismo tipo de testigo.',
@@ -3555,6 +3715,12 @@ return array(
 			'src' => 'https://www.sos.ms.gov/news/i-voted-sticker-contest-submission-deadline-1031',
 			'checked' => '2026-10-21',
 		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 7 a.m. to 7 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 7 a. m. a 7 p. m., hora local.',
+			'src' => 'https://www.sos.ms.gov/node/1859',
+			'checked' => '2026-10-25',
+		),
 		'faq.line' => array(
 			'en' => 'You can still vote. If you\'re in line at 7 p.m., you have the right to cast your ballot.',
 			'es' => 'Todavía puedes votar. Si estás en la fila a las 7 p. m., tienes derecho a votar.',
@@ -3574,6 +3740,10 @@ return array(
 				'es' => 'la Secretaría de Estado de Montana',
 			),
 			'mca.legmt.gov' => array(
+				'en' => 'the Montana Code',
+				'es' => 'el código de leyes de Montana (Montana Code Annotated)',
+			),
+			'archive.legmt.gov' => array(
 				'en' => 'the Montana Code',
 				'es' => 'el código de leyes de Montana (Montana Code Annotated)',
 			),
@@ -3682,6 +3852,12 @@ return array(
 			'es' => 'Montana tiene un nuevo sticker de "I Voted" para 2026, hecho por la Secretaría de Estado con funcionarios electorales de los 56 condados. Es rojo, blanco y azul, con la silueta del estado y sus montañas. Te lo dan en los lugares de votación y en las oficinas electorales de los condados.',
 			'src' => 'https://sosmt.gov/secretary-christi-jacobsen-unveils-new-i-voted-sticker-ahead-of-montanas-2026-elections/',
 			'checked' => '2026-10-21',
+		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 7 a.m. to 8 p.m., and one with fewer than 400 voters can open as late as noon.',
+			'es' => 'Los lugares de votación abren de 7 a. m. a 8 p. m., y uno con menos de 400 votantes puede abrir hasta el mediodía.',
+			'src' => 'https://archive.legmt.gov/bills/mca/title_0130/chapter_0010/part_0010/section_0060/0130-0010-0010-0060.html',
+			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
 			'en' => 'You vote a provisional ballot if you can\'t show the required ID, your name isn\'t in the register, or your registration can\'t be confirmed at the polls. Bring ID or eligibility information to your county by 5 p.m. the day after the election, and it counts once your county verifies you.',
@@ -3795,7 +3971,7 @@ return array(
 			'src' => 'https://www.ncsbe.gov/voting/upcoming-election',
 			'checked' => '2026-10-21',
 		),
-		'mail.track_url' => 'https://vt.ncsbe.gov/RegLkup/',
+		'mail.track_url' => 'https://northcarolina.ballottrax.net/voter/',
 		'mail.dropbox' => array(
 			'en' => 'Bring your mail ballot to your county board of elections office or to an early voting site in your county. Only you, a near relative or a legal guardian can mail or drop it off, unless you need help because of a disability.',
 			'es' => 'Lleva tu boleta por correo a la oficina de la junta electoral de tu condado o a un centro de votación anticipada de tu condado. Solo tú, un familiar cercano o tu tutor legal pueden enviarla o entregarla, salvo que necesites ayuda por una discapacidad.',
@@ -3832,6 +4008,12 @@ return array(
 			'src' => 'https://www.guilfordcountync.gov/media/2742/open',
 			'checked' => '2026-10-23',
 		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 6:30 a.m. to 7:30 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 6:30 a. m. a 7:30 p. m., hora local.',
+			'src' => 'https://www.ncsbe.gov/voting/vote-person-election-day',
+			'checked' => '2026-10-25',
+		),
 		'faq.provisional' => array(
 			'en' => 'You vote a provisional ballot when there\'s a question about your registration or address, you\'re at the wrong precinct, or you can\'t show photo ID. Your county board researches it and counts it if you\'re eligible. Check its status online with your PIN, starting 10 days after the election.',
 			'es' => 'Votas con una boleta provisional cuando hay dudas sobre tu registro o tu dirección, estás en el precinto equivocado o no puedes mostrar una identificación con foto. La junta de tu condado lo revisa y la cuenta si puedes votar. Revisa su estado en línea con tu PIN a partir de 10 días después de la elección.',
@@ -3851,6 +4033,10 @@ return array(
 			'www.sos.nd.gov' => array(
 				'en' => 'the North Dakota Secretary of State',
 				'es' => 'la Secretaría de Estado de North Dakota',
+			),
+			'ndlegis.gov' => array(
+				'en' => 'North Dakota law',
+				'es' => 'la ley de North Dakota',
 			),
 		),
 		'dates.reg_deadline' => array(
@@ -3946,6 +4132,12 @@ return array(
 			'es' => 'North Dakota hizo su primer concurso estatal de stickers de "I Voted" para 2026. Ganó Haylee Senger, de Bottineau, con "You Betcha I Voted", elegido por 4,792 personas de North Dakota entre las propuestas de 478 artistas. Se estrenó en la elección primaria del 9 de junio.',
 			'src' => 'https://www.sos.nd.gov/elections/civic-engagement-initiative/i-voted-sticker-design-contest',
 			'checked' => '2026-10-21',
+		),
+		'election_day.hours' => array(
+			'en' => 'Your city or county sets the hours: polls open between 7 and 9 a.m. and close between 7 and 9 p.m. local time.',
+			'es' => 'Tu ciudad o condado fija el horario: se abre entre las 7 y las 9 a. m. y se cierra entre las 7 y las 9 p. m., hora local.',
+			'src' => 'https://ndlegis.gov/cencode/t16-1c01.pdf',
+			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
 			'en' => 'North Dakota uses a set-aside ballot if you don\'t have a valid ID with you. Show your ID to the county auditor within 13 days after the election, before the County Canvassing Board meets, and your ballot will be counted.',
@@ -4080,6 +4272,12 @@ return array(
 			'src' => 'https://nebraskalegislature.gov/laws/statutes.php?statute=32-908',
 			'checked' => '2026-10-21',
 		),
+		'election_day.hours' => array(
+			'en' => 'Polls are open 8 a.m. to 8 p.m. in Central time and 7 a.m. to 7 p.m. in Mountain time.',
+			'es' => 'Se vota de 8 a. m. a 8 p. m. en la hora del Centro y de 7 a. m. a 7 p. m. en la hora de la Montaña.',
+			'src' => 'https://nebraskalegislature.gov/laws/statutes.php?statute=32-908',
+			'checked' => '2026-10-25',
+		),
 		'faq.provisional' => array(
 			'en' => 'If you moved within your county or changed your name, you may be asked to vote a provisional ballot. Seven business days after the election, check whether it counted on Votercheck or by calling 1-888-727-0007.',
 			'es' => 'Si te mudaste dentro de tu condado o te cambiaste el nombre, te pueden pedir que votes con una boleta provisional. Siete días hábiles después de la elección, revisa si se contó en Votercheck o llamando gratis al 1-888-727-0007.',
@@ -4156,6 +4354,7 @@ return array(
 			'src' => 'https://gc.nh.gov/rsa/html/LXIII/657/657-1.htm',
 			'checked' => '2026-10-21',
 		),
+		'mail.track_url' => 'https://app.sos.nh.gov/',
 		'mail.witness' => array(
 			'en' => 'Seal your ballot in the inner envelope and sign the affidavit on it. If someone helps you because you\'re blind or have a disability, that person signs a statement on the envelope too.',
 			'es' => 'Cierra tu boleta en el sobre interior y firma la declaración jurada (affidavit) que viene en él. Si alguien te ayuda porque eres ciego o tienes una discapacidad, esa persona también firma una declaración en el sobre.',
@@ -4168,6 +4367,12 @@ return array(
 			'src' => 'https://gc.nh.gov/rsa/html/LXIII/659/659-43.htm',
 			'checked' => '2026-10-21',
 		),
+		'election_day.hours' => array(
+			'en' => 'Your town or city sets the hours: polls open by 11 a.m. and close no earlier than 7 p.m.',
+			'es' => 'Tu pueblo o ciudad fija el horario: se abre a más tardar a las 11 a. m. y se cierra no antes de las 7 p. m.',
+			'src' => 'https://gc.nh.gov/rsa/html/LXIII/659/659-4.htm',
+			'checked' => '2026-10-25',
+		),
 	),
 	'NJ' => array(
 		'election' => '2026-11-03',
@@ -4175,6 +4380,10 @@ return array(
 			'www.nj.gov' => array(
 				'en' => 'the New Jersey Division of Elections',
 				'es' => 'la División de Elecciones de New Jersey',
+			),
+			'nj.gov' => array(
+				'en' => 'the New Jersey Division of Elections',
+				'es' => 'la División de Elecciones de New Jersey (Division of Elections)',
 			),
 		),
 		'dates.reg_deadline' => array(
@@ -4283,6 +4492,12 @@ return array(
 			'es' => 'Los lugares de votación cierran a las 8 p. m. Si estás en la fila a esa hora, no te salgas. Te tienen que dejar votar.',
 			'src' => 'https://www.nj.gov/state/elections/assets/pdf/posters-bill-of-rights/2026-11-bill-of-rights-poster-english.pdf',
 			'checked' => '2026-10-21',
+		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 6 a.m. to 8 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 6 a. m. a 8 p. m., hora local.',
+			'src' => 'https://nj.gov/state/elections/assets/pdf/flyer-how-to-vote/2026-11-how-to-vote-english.pdf',
+			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
 			'en' => 'It\'s a paper ballot you vote when, for example, you moved within your county without updating your address, your poll book entry is incomplete, or you\'re a "Need ID" voter without ID. It\'s counted after your county verifies it, and you can check its status online after the election.',
@@ -4411,6 +4626,12 @@ return array(
 			'es' => 'En el condado de Los Alamos, sí. El concurso estudiantil 2026 del condado tiene un diseño de "I Voted Early", además de "I Voted" y "Future Voter", y los ganadores se entregan en todos los lugares de votación del condado este año.',
 			'src' => 'https://www.losalamosnm.gov/Home/Tabs/Whats-Happening/2026-Vote-Sticker-Contest-WH',
 			'checked' => '2026-10-24',
+		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 7 a.m. to 7 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 7 a. m. a 7 p. m., hora local.',
+			'src' => 'https://www.sos.nm.gov/wp-content/uploads/2026/01/2026-Primary-Candidate-Guide-Updated.pdf',
+			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
 			'en' => 'You get a provisional ballot if your name isn\'t on the roster at your polling place, or if you\'re a first-time voter who registered by mail and doesn\'t bring the required ID. Check its status after the election in the state\'s provisional ballot lookup.',
@@ -4556,6 +4777,12 @@ return array(
 			'es' => 'En el condado de Clark, los pasos para votar en persona de la guía de 2026, para la votación anticipada del 17 al 30 de octubre y el Día de las Elecciones, terminan con recibir tu sticker de "I Voted" en la máquina tabuladora. Los demás condados deciden por su cuenta.',
 			'src' => 'https://www.clarkcountynv.gov/adobe/assets/urn:aaid:aem:62013096-adbe-425d-b324-ce5f4717b513/original/as/election-guide-26g.pdf',
 			'checked' => '2026-10-24',
+		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 7 a.m. to 7 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 7 a. m. a 7 p. m., hora local.',
+			'src' => 'https://www.leg.state.nv.us/nrs/nrs-293.html',
+			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
 			'en' => 'It\'s a ballot you vote when something can\'t be confirmed at the polls. It counts if your county clerk confirms you\'re registered and eligible. If it was for missing ID, bring the ID to the clerk by 5 p.m. on Friday, November 6.',
@@ -4730,6 +4957,12 @@ return array(
 			'src' => 'https://portal.311.nyc.gov/article/?kanumber=KA-03114',
 			'checked' => '2026-10-23',
 		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 6 a.m. to 9 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 6 a. m. a 9 p. m., hora local.',
+			'src' => 'https://www.nysenate.gov/legislation/laws/ELN/8-100',
+			'checked' => '2026-10-25',
+		),
 		'faq.provisional' => array(
 			'en' => 'New York calls it an affidavit ballot. You vote one when your record is missing from the poll book at your correct polling place, or you moved within the state and didn\'t update your address. You sign a sworn statement that you\'re registered and still qualified to vote there.',
 			'es' => 'En New York se llama boleta de declaración jurada (affidavit ballot). La votas cuando tu registro no aparece en el libro de votantes de tu lugar de votación correcto, o cuando te mudaste dentro del estado y no actualizaste tu dirección. Firmas una declaración jurada de que estás registrado y todavía tienes derecho a votar ahí.',
@@ -4890,6 +5123,12 @@ return array(
 			'src' => 'https://www.ohiosos.gov/office/media-center/categories/press-releases/2026-06-12',
 			'checked' => '2026-10-24',
 		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 6:30 a.m. to 7:30 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 6:30 a. m. a 7:30 p. m., hora local.',
+			'src' => 'https://www.ohiosos.gov/elections/voters/absentee-voting/',
+			'checked' => '2026-10-25',
+		),
 		'faq.provisional' => array(
 			'en' => 'You may get one if your name isn\'t in the pollbook, you don\'t have a valid photo ID, you already asked for an absentee ballot, or you moved without updating your registration. It counts once officials confirm you\'re eligible. Without ID, bring one to your county board of elections within four days.',
 			'es' => 'Te la pueden dar si tu nombre no está en el padrón, si no tienes una identificación con foto válida, si ya pediste una boleta de voto en ausencia o si te mudaste sin actualizar tu registro. Se cuenta cuando confirman que tienes derecho a votar. Si no llevaste identificación, preséntala en la junta electoral de tu condado dentro de cuatro días.',
@@ -5021,6 +5260,12 @@ return array(
 			'es' => 'Pide tu sticker de I Voted antes de salir del área electoral (election enclosure). El consejo de la Junta Electoral del Estado: llévalo puesto para animar a otros a votar.',
 			'src' => 'https://oklahoma.gov/elections/voters/voting-101.html',
 			'checked' => '2026-10-21',
+		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 7 a.m. to 7 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 7 a. m. a 7 p. m., hora local.',
+			'src' => 'https://oklahoma.gov/elections.html',
+			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
 			'en' => 'You can ask for a provisional ballot if you don\'t have a valid ID, your name isn\'t in the precinct registry, or you think your voter information is wrong. Before results are certified, your County Election Board checks your registration, and your ballot counts if your eligibility is verified.',
@@ -5271,6 +5516,12 @@ return array(
 			'src' => 'https://www.pa.gov/agencies/vote/voter-support/rules-at-the-polls',
 			'checked' => '2026-10-21',
 		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 7 a.m. to 8 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 7 a. m. a 8 p. m., hora local.',
+			'src' => 'https://www.pa.gov/agencies/vote/voter-support/rules-at-the-polls',
+			'checked' => '2026-10-25',
+		),
 		'faq.provisional' => array(
 			'en' => 'It\'s a ballot you vote when your eligibility isn\'t clear at the polls, for example if your name isn\'t in the poll book. Your county decides within 7 days after the election, and you can look up whether it counted starting 7 days after.',
 			'es' => 'Es una boleta que votas cuando no está claro en el lugar de votación si tienes derecho a votar, por ejemplo si tu nombre no aparece en el registro. Tu condado decide en los 7 días después de la elección, y puedes consultar si se contó a partir de 7 días después.',
@@ -5384,7 +5635,7 @@ return array(
 			'src' => 'https://vote.sos.ri.gov/Forms/Elections/Guides/VoterRef26.pdf',
 			'checked' => '2026-10-21',
 		),
-		'mail.track_url' => 'https://vote.sos.ri.gov/',
+		'mail.track_url' => 'https://ballottrax.sos.ri.gov/voter/',
 		'mail.dropbox' => array(
 			'en' => 'Drop it in a 24-hour elections drop box by 8 p.m. on Election Day. Every polling place also has a drop box for mail ballots.',
 			'es' => 'Déjala en un buzón electoral abierto las 24 horas a más tardar a las 8 p. m. del Día de las Elecciones. Cada lugar de votación también tiene un buzón para boletas por correo.',
@@ -5427,6 +5678,12 @@ return array(
 			'src' => 'https://vote.sos.ri.gov/Voter/VoteByMail',
 			'checked' => '2026-10-24',
 		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 7 a.m. to 8 p.m.; New Shoreham opens at 9 a.m.',
+			'es' => 'Los lugares de votación abren de 7 a. m. a 8 p. m.; New Shoreham abre a las 9 a. m.',
+			'src' => 'https://vote.sos.ri.gov/Elections/PollingPlaceHours',
+			'checked' => '2026-10-25',
+		),
 		'faq.provisional' => array(
 			'en' => 'You vote a provisional ballot if your name isn\'t on the voter list, you don\'t have an acceptable photo ID, you applied for a mail ballot, or there\'s another question about your eligibility. Your local board of canvassers decides after Election Day whether it counts. Check the result at elections.ri.gov or by calling 401-222-2345.',
 			'es' => 'Votas con una boleta provisional si tu nombre no está en la lista de votantes, no tienes una identificación con foto aceptada, pediste una boleta por correo o hay otra duda sobre si puedes votar. La junta de escrutinio local (local board of canvassers) decide después del Día de las Elecciones si cuenta. Revisa el resultado en elections.ri.gov o llamando al 401-222-2345.',
@@ -5456,6 +5713,10 @@ return array(
 			'charlestoncounty.gov' => array(
 				'en' => 'the Charleston County Board of Voter Registration and Elections',
 				'es' => 'la oficina electoral del condado de Charleston (Board of Voter Registration and Elections)',
+			),
+			'www.scstatehouse.gov' => array(
+				'en' => 'South Carolina law',
+				'es' => 'la ley de South Carolina',
 			),
 		),
 		'dates.reg_deadline' => array(
@@ -5571,6 +5832,12 @@ return array(
 			'src' => 'https://charlestoncounty.gov/departments/bevr/outreach.php',
 			'checked' => '2026-10-23',
 		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 7 a.m. to 7 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 7 a. m. a 7 p. m., hora local.',
+			'src' => 'https://www.scstatehouse.gov/code/t07c013.php',
+			'checked' => '2026-10-25',
+		),
 		'faq.provisional' => array(
 			'en' => 'You vote one if you forgot your photo ID, or if you can\'t get one and sign a reasonable impediment affidavit. If you forgot it, show your ID at the county office before certification. County boards decide which provisional ballots count on the Friday after the election.',
 			'es' => 'Votas con una si se te olvidó tu identificación con foto, o si no puedes conseguir una y firmas una declaración de impedimento razonable. Si se te olvidó, muestra tu identificación en la oficina del condado antes de la certificación. Las juntas de los condados deciden qué boletas provisionales se cuentan el viernes después de la elección.',
@@ -5664,6 +5931,7 @@ return array(
 			'src' => 'https://sdsos.gov/elections-voting/voting/default.aspx',
 			'checked' => '2026-10-21',
 		),
+		'mail.track_url' => 'https://vip.sdsos.gov/VIPLogin.aspx',
 		'polls_rules.gear' => array(
 			'en' => 'Leave the campaign signs and posters at home. Within 100 feet of any entrance to a polling place, including where people vote absentee, no one may display campaign posters, signs or other campaign materials or ask for votes.',
 			'es' => 'Deja en casa los letreros y carteles de campaña. A menos de 100 pies de cualquier entrada a un lugar de votación, incluso donde se vota en ausencia, nadie puede mostrar carteles, letreros u otros materiales de campaña ni pedir votos.',
@@ -5681,6 +5949,12 @@ return array(
 			'es' => 'Para la elección general de 2026, la Secretaría de Estado invitó a estudiantes de South Dakota a diseñar el próximo sticker de "I Voted", con el concurso estatal Civics in the 605 Statewide Sticker Showcase. Participaron desde kínder hasta 12.º grado, en cuatro grupos de edad.',
 			'src' => 'https://sdsos.gov/Information/sos-awards.aspx',
 			'checked' => '2026-10-21',
+		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 7 a.m. to 7 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 7 a. m. a 7 p. m., hora local.',
+			'src' => 'https://sdsos.gov/elections-voting/voting/default.aspx',
+			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
 			'en' => 'A provisional ballot counts only if your county finds you registered in that precinct before the registration deadline. The county checks before the official canvass.',
@@ -5809,6 +6083,12 @@ return array(
 			'src' => 'https://sos.tn.gov/elections/press-releases/secretary-of-state-tre-hargett-announces-commemorative-america-250-i-voted',
 			'checked' => '2026-10-21',
 		),
+		'election_day.hours' => array(
+			'en' => 'Each county sets its opening time, and all polls close at 8 p.m. Eastern and 7 p.m. Central.',
+			'es' => 'Cada condado fija su hora de apertura, y todos los lugares de votación cierran a las 8 p. m. hora del Este y a las 7 p. m. hora del Centro.',
+			'src' => 'https://sos.tn.gov/newsroom/press-releases/everything-voters-need-to-know-for-the-august-6-election-this-thursday',
+			'checked' => '2026-10-25',
+		),
 		'faq.provisional' => array(
 			'en' => 'If you don\'t bring a photo ID, you vote a provisional ballot. To have it reviewed, show a valid photo ID at your county election commission office within two business days after Election Day and sign an affidavit there.',
 			'es' => 'Si no llevas una identificación con foto, votas con una boleta provisional. Para que la revisen, muestra una identificación con foto válida en la oficina de la comisión electoral de tu condado dentro de los dos días hábiles después del Día de las Elecciones y firma ahí una declaración jurada.',
@@ -5846,6 +6126,10 @@ return array(
 			'newtools.cira.state.tx.us' => array(
 				'en' => 'Gaines County',
 				'es' => 'el condado de Gaines',
+			),
+			'www.sos.texas.gov' => array(
+				'en' => 'the Texas Secretary of State',
+				'es' => 'la Secretaría de Estado de Texas',
 			),
 		),
 		'dates.reg_deadline' => array(
@@ -5915,6 +6199,7 @@ return array(
 			'src' => 'https://www.votetexas.gov/faq/index.html',
 			'checked' => '2026-10-21',
 		),
+		'mail.track_url' => 'https://goelect.txelections.civixapps.com/ivis-oab-ui/#/login',
 		'mail.witness' => array(
 			'en' => 'If someone helps you with your mail ballot, their name and address go on the carrier envelope and they sign it.',
 			'es' => 'Si alguien te ayuda con tu boleta por correo, su nombre y dirección van en el sobre de envío y esa persona lo firma.',
@@ -5938,6 +6223,12 @@ return array(
 			'es' => 'Cada condado de Texas elige su propio sticker. En el condado de Gaines, el sticker de 2026 es el diseño de un estudiante y se entrega en todos los lugares de votación anticipada y centros de votación del Día de las Elecciones.',
 			'src' => 'https://newtools.cira.state.tx.us/page/gaines.ElectionsStickerpage',
 			'checked' => '2026-10-23',
+		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 7 a.m. to 7 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 7 a. m. a 7 p. m., hora local.',
+			'src' => 'https://www.sos.texas.gov/elections/laws/advisory2026-21-november-3-election-law-calendar.shtml',
+			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
 			'en' => 'You vote a provisional ballot when poll workers can\'t verify your registration. You\'ll get a notice in the mail by the 10th day after the local canvass telling you whether it counted.',
@@ -6074,6 +6365,12 @@ return array(
 			'es' => 'En 2020, vote.utah.gov publicó cuatro stickers de "Ya voté" (I Voted) para descargar e imprimir en casa.',
 			'src' => 'https://vote.utah.gov/stickers/',
 			'checked' => '2026-10-21',
+		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 7 a.m. to 8 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 7 a. m. a 8 p. m., hora local.',
+			'src' => 'https://le.utah.gov/xcode/Title20A/Chapter1/C20A-1-S302_1800010118000101.html',
+			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
 			'en' => 'If you register after October 23, you vote a provisional ballot. If you vote a provisional ballot without showing ID, you have until Monday, November 9, 2026, to show it to your county clerk.',
@@ -6229,6 +6526,12 @@ return array(
 			'src' => 'https://www.roanokeva.gov/m/newsflash/home/detail/2459',
 			'checked' => '2026-10-23',
 		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 6 a.m. to 7 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 6 a. m. a 7 p. m., hora local.',
+			'src' => 'https://law.lis.virginia.gov/vacode/title24.2/chapter6/section24.2-603/',
+			'checked' => '2026-10-25',
+		),
 		'faq.provisional' => array(
 			'en' => 'If you come without an acceptable ID and don\'t sign an ID Confirmation Statement, you vote a provisional ballot. It counts if your ID copy or signed statement reaches your local electoral board by noon on the Friday after the election. A Friday postmark isn\'t enough.',
 			'es' => 'Si llegas sin una identificación aceptada y no firmas una declaración de confirmación de identidad (ID Confirmation Statement), votas con una boleta provisional. Cuenta si la copia de tu identificación o la declaración firmada llega a la junta electoral de tu localidad (electoral board) a más tardar al mediodía del viernes después de la elección. El matasellos del viernes no basta.',
@@ -6365,6 +6668,12 @@ return array(
 			'es' => 'Cada año, la Secretaría de Estado apoya un concurso en el que estudiantes de kínder a 8.º grado diseñan un sticker alternativo de "I Voted", y los diseños ganadores se entregan a los votantes del distrito del estudiante. Este año los ganadores son de Burlington, así que quienes votan en Burlington los reciben el Día de las Elecciones.',
 			'src' => 'https://sos.vermont.gov/secretarys-desk/commentary-press/sticker-contest-winners',
 			'checked' => '2026-10-24',
+		),
+		'election_day.hours' => array(
+			'en' => 'Your town sets its opening time, between 5 and 10 a.m., and polls close at 7 p.m.',
+			'es' => 'Tu pueblo fija la hora de apertura, entre las 5 y las 10 a. m., y se cierra a las 7 p. m.',
+			'src' => 'https://sos.vermont.gov/elections/voters/',
+			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
 			'en' => 'Vermont rarely uses them. If you\'re not on the checklist, you can register and vote that day. If you say you registered on time, you sign an affidavit and vote.',
@@ -6579,7 +6888,7 @@ return array(
 			'src' => 'https://myvote.wi.gov/en-us/Voter-Deadlines',
 			'checked' => '2026-10-21',
 		),
-		'mail.track_url' => 'https://myvote.wi.gov/en-us/',
+		'mail.track_url' => 'https://myvote.wi.gov/en-us/Track-My-Ballot',
 		'mail.cure' => array(
 			'en' => 'If the certificate on your envelope is filled out wrong or missing, your clerk may send the ballot back to you to fix, when there\'s time to correct it and return it by 8 p.m. on Election Day.',
 			'es' => 'Si el certificado de tu sobre está mal llenado o falta, el secretario puede devolverte la boleta para que lo corrijas, cuando haya tiempo de corregirlo y entregarla a más tardar a las 8 p. m. del Día de las Elecciones.',
@@ -6609,6 +6918,12 @@ return array(
 			'es' => 'Los lugares de votación cierran a las 8 p. m. Si estás en la fila a esa hora, no te salgas. Te dejarán votar.',
 			'src' => 'https://docs.legis.wisconsin.gov/statutes/statutes/6/iii/78',
 			'checked' => '2026-10-21',
+		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 7 a.m. to 8 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 7 a. m. a 8 p. m., hora local.',
+			'src' => 'https://docs.legis.wisconsin.gov/document/statutes/6.78',
+			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
 			'en' => 'If you don\'t have a photo ID, you can vote a provisional ballot. Bring your ID to the polling place by 8 p.m., or to your municipal clerk by 4 p.m. the Friday after the election, and it counts. Miss the deadline and it doesn\'t.',
@@ -6746,6 +7061,12 @@ return array(
 			'src' => 'https://sos.wv.gov/article/warner-announces-raleigh-countys-reese-childers-statewide-winner-west-virginias-first-ever',
 			'checked' => '2026-10-21',
 		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 6:30 a.m. to 7:30 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 6:30 a. m. a 7:30 p. m., hora local.',
+			'src' => 'https://code.wvlegislature.gov/3-1-31/',
+			'checked' => '2026-10-25',
+		),
 		'faq.provisional' => array(
 			'en' => 'If poll workers can\'t find your name in the poll book, or there\'s another question about whether you can vote, they must offer you a provisional ballot. It counts if the Board of Canvassers finds you\'re eligible and registered.',
 			'es' => 'Si los trabajadores electorales no encuentran tu nombre en el registro de votantes, o hay otra duda sobre si puedes votar, tienen que ofrecerte una boleta provisional. Cuenta si la junta de escrutinio (Board of Canvassers) determina que tienes derecho a votar y estás registrado.',
@@ -6868,6 +7189,12 @@ return array(
 			'es' => 'En 2019, por el 150 aniversario del voto de las mujeres en Wyoming, la Secretaría de Estado organizó un concurso de diseño de stickers de "Ya voté" (I Voted) para estudiantes de los dos últimos años de preparatoria y de universidad. Los secretarios de condado iban a repartir los stickers ganadores en los lugares de votación.',
 			'src' => 'https://sos.wyo.gov/Elections/Docs/2020/150th_I_Voted_Sticker_Contest.pdf',
 			'checked' => '2026-10-21',
+		),
+		'election_day.hours' => array(
+			'en' => 'Polling places are open 7 a.m. to 7 p.m. local time.',
+			'es' => 'Los lugares de votación abren de 7 a. m. a 7 p. m., hora local.',
+			'src' => 'https://sos.wyo.gov/faqs.aspx?root=ELEC',
+			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
 			'en' => 'If you\'re turned away or can\'t prove you\'re eligible, you can vote a provisional ballot. For it to count, bring proof that you\'re eligible to your county clerk by close of business on Wednesday, November 4.',

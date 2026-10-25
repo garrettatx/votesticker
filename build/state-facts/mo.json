@@ -241,5 +241,15 @@
    "notes": "No absentee ballot tracker found on sos.mo.gov."
   }
  },
- "notes": "Read October 21, 2026 on sos.mo.gov (curl worked; the Voter Outreach Portal returns 403 to curl and was opened in Chrome), revisor.mo.gov (RSMo 115.291, 115.293, 115.637) and lincolncomo.gov. EARLY VOTING: the SOS states the rule only in relative terms ('From the second Tuesday before an election to the day before the election, you may vote a no-excuse absentee ballot in person'; office voting 'until 5:00 p.m. the night before the election'). That reads as Tuesday, October 20 to Monday, November 2, matching states.js; no SOS page states the 2026 calendar dates. Mail request deadline is relative too ('5:00 p.m. on the second Wednesday prior to any election', which reads as October 21, today); left missing. Missouri absentee voting before the second Tuesday, and any absentee ballot by mail, needs one of the listed reasons (mail.who_list). Sticker: Lincoln County is one county's student contest, not statewide; the page doesn't give its year, so the file says only what it states. Phone rule, cure, tracker and first-time rules not found; left missing."
+ "notes": "Read October 21, 2026 on sos.mo.gov (curl worked; the Voter Outreach Portal returns 403 to curl and was opened in Chrome), revisor.mo.gov (RSMo 115.291, 115.293, 115.637) and lincolncomo.gov. EARLY VOTING: the SOS states the rule only in relative terms ('From the second Tuesday before an election to the day before the election, you may vote a no-excuse absentee ballot in person'; office voting 'until 5:00 p.m. the night before the election'). That reads as Tuesday, October 20 to Monday, November 2, matching states.js; no SOS page states the 2026 calendar dates. Mail request deadline is relative too ('5:00 p.m. on the second Wednesday prior to any election', which reads as October 21, today); left missing. Missouri absentee voting before the second Tuesday, and any absentee ballot by mail, needs one of the listed reasons (mail.who_list). Sticker: Lincoln County is one county's student contest, not statewide; the page doesn't give its year, so the file says only what it states. Phone rule, cure, tracker and first-time rules not found; left missing.",
+ "election_day": {
+  "hours": {
+   "en": "Polling places are open 6 a.m. to 7 p.m. local time.",
+   "es": "Los lugares de votación abren de 6 a. m. a 7 p. m., hora local.",
+   "src": "https://www.sos.mo.gov/elections/goVoteMissouri/electionday",
+   "checked": "2026-10-25",
+   "quote": "Polling places open at 6:00 a.m. and remain open until 7:00 p.m.",
+   "status": "verified"
+  }
+ }
 }

@@ -221,5 +221,16 @@
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026. sos.iowa.gov and voterready.iowa.gov return 403 to curl and WebFetch; read in Chrome. EARLY VOTING DATES match states.js (October 14 to November 2): the SOS release of September 15, 2026 says 'Iowans can begin casting ballots for the 2026 General Election on Wednesday, October 14' and 'In-person absentee voting at the county auditor’s office is available through November 2, the day before the election.' Voter Ready's calendar adds 'Monday, November 2 – Absentee Ballot In-Person Deadline' and says in-person absentee 'runs up to 5 p.m. the day prior to the election.' Registration: the existing faq_text.py says preregistration closes October 19, which the Voter Ready calendar now confirms. ID: the SOS Election Day page lists more photo IDs (out-of-state license, employer ID, Iowa student ID) as proof of identity for Election Day registration; the file uses the six IDs Voter Ready and the SOS Voter ID FAQ list for registered voters. Drop boxes, cure, ballot witness rule, the in-line-at-closing rule and a sticker tradition were not found on an official page; left missing."
+ "notes": "Read October 21, 2026. sos.iowa.gov and voterready.iowa.gov return 403 to curl and WebFetch; read in Chrome. EARLY VOTING DATES match states.js (October 14 to November 2): the SOS release of September 15, 2026 says 'Iowans can begin casting ballots for the 2026 General Election on Wednesday, October 14' and 'In-person absentee voting at the county auditor’s office is available through November 2, the day before the election.' Voter Ready's calendar adds 'Monday, November 2 – Absentee Ballot In-Person Deadline' and says in-person absentee 'runs up to 5 p.m. the day prior to the election.' Registration: the existing faq_text.py says preregistration closes October 19, which the Voter Ready calendar now confirms. ID: the SOS Election Day page lists more photo IDs (out-of-state license, employer ID, Iowa student ID) as proof of identity for Election Day registration; the file uses the six IDs Voter Ready and the SOS Voter ID FAQ list for registered voters. Drop boxes, cure, ballot witness rule, the in-line-at-closing rule and a sticker tradition were not found on an official page; left missing.",
+ "election_day": {
+  "hours": {
+   "en": "Polling places are open 7 a.m. to 8 p.m. local time.",
+   "es": "Los lugares de votación abren de 7 a. m. a 8 p. m., hora local.",
+   "src": "https://www.legis.iowa.gov/docs/code/49.73.pdf",
+   "checked": "2026-10-25",
+   "quote": "At all elections, except as otherwise permitted by this section, the polls shall be opened at 7:00 a.m.",
+   "status": "verified",
+   "quote2": "The polling places shall be closed at 8:00 p.m. for all elections."
+  }
+ }
 }

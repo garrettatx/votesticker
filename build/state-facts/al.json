@@ -249,5 +249,15 @@
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026 with curl on sos.alabama.gov: the 2026 Voter Guide PDF, Absentee Voting Information, the Alabama Votes FAQ, the Photo Voter ID page, and myinfo.alabamavotes.gov/voterview (page labeled VoterView; the Voter Guide calls the tool 'My Voting Information'). The Voter Guide's deadline chart labels the mail ballot row 'must be postmarked no later than noon', but its text, its dates list ('Absentee ballots returned by mail must be received by noon') and the SOS absentee page all say received by noon; the file uses received. Absentee voting starts 'no later than' September 9 per the guide's chart. Photo rule: the FAQ says camera phones can't take photos or video inside, but in the same FAQ voters may take a picture 'of or with their ballot'; polls_rules.phone keeps both. Sticker tradition not found. States.js has AL verified as kind 'none'; nothing here contradicts it."
+ "notes": "Read October 21, 2026 with curl on sos.alabama.gov: the 2026 Voter Guide PDF, Absentee Voting Information, the Alabama Votes FAQ, the Photo Voter ID page, and myinfo.alabamavotes.gov/voterview (page labeled VoterView; the Voter Guide calls the tool 'My Voting Information'). The Voter Guide's deadline chart labels the mail ballot row 'must be postmarked no later than noon', but its text, its dates list ('Absentee ballots returned by mail must be received by noon') and the SOS absentee page all say received by noon; the file uses received. Absentee voting starts 'no later than' September 9 per the guide's chart. Photo rule: the FAQ says camera phones can't take photos or video inside, but in the same FAQ voters may take a picture 'of or with their ballot'; polls_rules.phone keeps both. Sticker tradition not found. States.js has AL verified as kind 'none'; nothing here contradicts it.",
+ "election_day": {
+  "hours": {
+   "en": "Polling places are open 7 a.m. to 7 p.m. local time.",
+   "es": "Los lugares de votación abren de 7 a. m. a 7 p. m., hora local.",
+   "src": "https://www.sos.alabama.gov/newsroom/secretary-state-wes-allen-reminds-alabamians-register-vote-ahead-november-3-general",
+   "checked": "2026-10-25",
+   "quote": "On Election Day, polls will be open 7 am to 7 pm.",
+   "status": "verified"
+  }
+ }
 }

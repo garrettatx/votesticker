@@ -132,7 +132,7 @@
    "status": "missing",
    "notes": "No return-envelope witness or notary rule found on the SOS absentee page. Mailed applications must be the original, signed form."
   },
-  "track_url": "",
+  "track_url": "https://vip.sdsos.gov/VIPLogin.aspx",
   "cure": {
    "status": "missing"
   },
@@ -191,5 +191,15 @@
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026 with curl on sdsos.gov (Voting, Absentee Voting, 2026 Election Information, Information/sos-awards) and the sdlegislature.gov statutes API (12-18-3, 12-18-27, 12-19-2.1, 12-19-12, 12-20-5.1), cited by their public URLs (https://sdlegislature.gov/Statutes/<section>), as faq-sources.json does. The phone fact rests on 12-18-27, the same section the existing FAQ selfie answer cites. 12-18-3 also bars using 'any communication or photographic device in a manner which repeatedly distracts, interrupts, or intimidates any voter or election worker' within 100 feet; not used on the page. Weekday for November 2 is the calendar weekday. EARLY VOTING FOR THE LEAD (states.js has SD unchecked): in-person absentee voting at the County Auditor's office, Friday, September 18, 2026 through 5 p.m. Monday, November 2, 2026 (or later if regular office hours run later). Sources: (1) https://sdsos.gov/elections-voting/upcoming-elections/general-information/2026%20Election%20Information/2026-Election-Information.aspx: 'Absentee Voting Begins: September 18, 2026' under 'General Election Date: November 3, 2026'. (2) https://sdsos.gov/elections-voting/voting/absentee-voting.aspx: 'Registered voters can vote in-person once Absentee Voting begins at their County Auditor's office by bringing along a valid photo identification card (ID).' and 'At any time prior to an election, a voter may apply for an absentee ballot in person at the office of and to the person in charge of the election during regular office hours or until five p.m. on the day before the election, whichever is later.' Hours: county office hours. Suggested states.js note: 'Vote absentee in person at your County Auditor's office through Mon., Nov. 2.' Not found: absentee eligibility stated plainly, ballot tracking, drop boxes, witness rule, cure, expired-ID rule, line rule."
+ "notes": "Read October 21, 2026 with curl on sdsos.gov (Voting, Absentee Voting, 2026 Election Information, Information/sos-awards) and the sdlegislature.gov statutes API (12-18-3, 12-18-27, 12-19-2.1, 12-19-12, 12-20-5.1), cited by their public URLs (https://sdlegislature.gov/Statutes/<section>), as faq-sources.json does. The phone fact rests on 12-18-27, the same section the existing FAQ selfie answer cites. 12-18-3 also bars using 'any communication or photographic device in a manner which repeatedly distracts, interrupts, or intimidates any voter or election worker' within 100 feet; not used on the page. Weekday for November 2 is the calendar weekday. EARLY VOTING FOR THE LEAD (states.js has SD unchecked): in-person absentee voting at the County Auditor's office, Friday, September 18, 2026 through 5 p.m. Monday, November 2, 2026 (or later if regular office hours run later). Sources: (1) https://sdsos.gov/elections-voting/upcoming-elections/general-information/2026%20Election%20Information/2026-Election-Information.aspx: 'Absentee Voting Begins: September 18, 2026' under 'General Election Date: November 3, 2026'. (2) https://sdsos.gov/elections-voting/voting/absentee-voting.aspx: 'Registered voters can vote in-person once Absentee Voting begins at their County Auditor's office by bringing along a valid photo identification card (ID).' and 'At any time prior to an election, a voter may apply for an absentee ballot in person at the office of and to the person in charge of the election during regular office hours or until five p.m. on the day before the election, whichever is later.' Hours: county office hours. Suggested states.js note: 'Vote absentee in person at your County Auditor's office through Mon., Nov. 2.' Not found: absentee eligibility stated plainly, ballot tracking, drop boxes, witness rule, cure, expired-ID rule, line rule.",
+ "election_day": {
+  "hours": {
+   "en": "Polling places are open 7 a.m. to 7 p.m. local time.",
+   "es": "Los lugares de votación abren de 7 a. m. a 7 p. m., hora local.",
+   "src": "https://sdsos.gov/elections-voting/voting/default.aspx",
+   "checked": "2026-10-25",
+   "quote": "Polls are open from 7 a.m. to 7 p.m. local time.",
+   "status": "verified"
+  }
+ }
 }

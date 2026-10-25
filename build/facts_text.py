@@ -40,7 +40,8 @@ ALLOW_HOSTS = {'goelect.txelections.civixapps.com',
                'dcboe.org', 'www.dcboe.org', 'earlyvoting.dcboe.org',
                'nmonesource.com',
                'www.countynewscenter.com',     # San Diego County's own news site (County News Center)
-               'champaigncountyclerk.com'}     # the Champaign County Clerk, who runs elections there  # New Mexico's official statutes (NMSA), published by the NM Compilation Commission  # DC Board of Elections, the District's election office  # Texas My Voter Portal, linked from votetexas.gov/voting/where.html
+               'champaigncountyclerk.com',
+               'hawaii.ballottrax.net', 'northcarolina.ballottrax.net'}  # BallotTrax tracker run for the state election office, linked from its own page     # the Champaign County Clerk, who runs elections there  # New Mexico's official statutes (NMSA), published by the NM Compilation Commission  # DC Board of Elections, the District's election office  # Texas My Voter Portal, linked from votetexas.gov/voting/where.html
 
 # Every fact the template knows, with its kind: text (en/es strings), list (en/es lists), url (a bare
 # string), rule (one of RULES).
@@ -54,6 +55,7 @@ FACTS = {
     'mail.who': 'text', 'mail.who_list': 'list', 'mail.track_url': 'url', 'mail.cure': 'text', 'mail.dropbox': 'text', 'mail.witness': 'text',
     'polls_rules.gear': 'text', 'polls_rules.phone': 'text', 'polls_rules.line': 'text',
     'sticker.tradition': 'text', 'sticker.early': 'text', 'sticker.mail': 'text',
+    'election_day.hours': 'text',
     'faq.provisional': 'text', 'faq.line': 'text', 'faq.track': 'text', 'faq.unsigned': 'text', 'faq.late_mail': 'text',
 }
 RULES = ('photo_required', 'photo_requested', 'id_nonphoto', 'no_id')

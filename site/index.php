@@ -430,7 +430,8 @@ function vote_guide( $st ) {
 	if ( $wlist ) { $mail .= '<ul class="guide__list guide__list--one">'; foreach ( $wlist as $item ) { $mail .= '<li>' . vote_e( $item ) . '</li>'; } $mail .= '</ul>'; $srcs[] = $wl['src']; }
 	foreach ( array( 'mail.witness', 'mail.dropbox', 'mail.cure' ) as $k ) { $f = vote_fact( $st, $k ); if ( $f ) { $mail .= '<p>' . vote_e( $f['text'] ) . '</p>'; $srcs[] = $f['src']; } }
 	$track = vote_fact( $st, 'mail.track_url' );
-	if ( $track ) { $mail .= '<p class="guide__more"><a href="' . vote_e( $track ) . '" target="_blank" rel="noopener">' . vote_e( t( 'Track your %s mail ballot', $name ) ) . '</a></p>'; }
+	// The tracker joins a section that has something to say; on its own it waits for the Election Day banner.
+	if ( $track && $mail ) { $mail .= '<p class="guide__more"><a href="' . vote_e( $track ) . '" target="_blank" rel="noopener">' . vote_e( t( 'Track your %s mail ballot', $name ) ) . '</a></p>'; }
 	if ( $mail ) { $out .= '<section class="guide" aria-labelledby="mail-h">' . $h( 'mail-h', t( 'mail' === ( $st['kind'] ?? '' ) && vote_verified( $st ) ? 'Returning Your Ballot' : 'Who Can Vote by Mail' ) ) . $mail . vote_sources_line( $st, $srcs ) . vote_rn( 'mail-in-voting', 'Why mail ballots get rejected, and how to fix a signature problem:', 'the mail voting guide' ) . '</section>'; }
 
 	// Rules at the polls, then the state's own sticker tradition, which leads back to the maker.

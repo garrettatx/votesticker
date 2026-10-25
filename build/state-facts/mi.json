@@ -255,5 +255,15 @@
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026 on michigan.gov/sos (Vote on Election Day, Register to Vote, Absentee Voting, Early In-Person Voting, Ballot Tracking, I Voted Sticker Contest) and legislature.mi.gov (MCL 168.720 hours and line, 168.720a early voting minimums, 168.766 cure deadline, 168.766a cure notice). The October 19 registration date is 15 days before November 3, per the SOS 15-day rule and the existing FAQ. Cure deadline: 5 p.m. on the third day after the election = Friday, November 6. Mail application deadline: 5 p.m. the Friday before = October 30. CONFLICT on photos: the Election Day page says not to take a photo within the voting area, while the early voting page and the SOS FAQ say voters may photograph their own ballot in the booth, so polls_rules.phone is missing. Detroit absentee voters can't tabulate at Election Day polling places (stated on the absentee page). No county offices list URL used; the clerk lookup is inside the Voter Information Center."
+ "notes": "Read October 21, 2026 on michigan.gov/sos (Vote on Election Day, Register to Vote, Absentee Voting, Early In-Person Voting, Ballot Tracking, I Voted Sticker Contest) and legislature.mi.gov (MCL 168.720 hours and line, 168.720a early voting minimums, 168.766 cure deadline, 168.766a cure notice). The October 19 registration date is 15 days before November 3, per the SOS 15-day rule and the existing FAQ. Cure deadline: 5 p.m. on the third day after the election = Friday, November 6. Mail application deadline: 5 p.m. the Friday before = October 30. CONFLICT on photos: the Election Day page says not to take a photo within the voting area, while the early voting page and the SOS FAQ say voters may photograph their own ballot in the booth, so polls_rules.phone is missing. Detroit absentee voters can't tabulate at Election Day polling places (stated on the absentee page). No county offices list URL used; the clerk lookup is inside the Voter Information Center.",
+ "election_day": {
+  "hours": {
+   "en": "Polling places are open 7 a.m. to 8 p.m. local time.",
+   "es": "Los lugares de votación abren de 7 a. m. a 8 p. m., hora local.",
+   "src": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-168-720",
+   "checked": "2026-10-25",
+   "quote": "On the day of any election, the polls shall be opened at 7 o'clock in the forenoon, and shall be continuously open until 8 o'clock in the afternoon and no longer.",
+   "status": "verified"
+  }
+ }
 }

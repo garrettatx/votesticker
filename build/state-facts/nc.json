@@ -160,7 +160,7 @@
    "quote": "Mark your ballot in the presence of a notary public or two witnesses. Your notary public or two witnesses should observe that you mark the ballot, not how you vote.",
    "status": "verified"
   },
-  "track_url": "https://vt.ncsbe.gov/RegLkup/",
+  "track_url": "https://northcarolina.ballottrax.net/voter/",
   "cure": {
    "status": "missing"
   },
@@ -234,5 +234,15 @@
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026 on ncsbe.gov and ncleg.gov (curl worked); dcovotes.dconc.gov through Chrome. Early voting dates in states.js (Oct. 15 to Oct. 31, ending 3 p.m.) match ncsbe.gov/voting/vote-early-person: 'Starts: Thursday, Oct. 15.' and 'Ends: 3 p.m. Saturday, Oct. 31.' The registration deadline is now stated on ncsbe.gov ('Oct. 9: Voter registration deadline (5 p.m.)'), replacing the computed date in faq-sources.json. mail.track_url is the Voter Search because BallotTrax (northcarolina.ballottrax.net) is a vendor host the validator doesn't allow; add it to ALLOW_HOSTS if you want the direct link. The ID exception form path gives the provisional ballot a different deadline from the 'bring your ID' path; both are from ncsbe.gov/voting/voter-id. No official page says whether a voter may wear campaign clothing; gear rule covers the buffer zone only. Durham County's winning design was not announced on the county page as read; Jackson County's winner was found only in news (WLOS). Cure deadline not found."
+ "notes": "Read October 21, 2026 on ncsbe.gov and ncleg.gov (curl worked); dcovotes.dconc.gov through Chrome. Early voting dates in states.js (Oct. 15 to Oct. 31, ending 3 p.m.) match ncsbe.gov/voting/vote-early-person: 'Starts: Thursday, Oct. 15.' and 'Ends: 3 p.m. Saturday, Oct. 31.' The registration deadline is now stated on ncsbe.gov ('Oct. 9: Voter registration deadline (5 p.m.)'), replacing the computed date in faq-sources.json. mail.track_url is the Voter Search because BallotTrax (northcarolina.ballottrax.net) is a vendor host the validator doesn't allow; add it to ALLOW_HOSTS if you want the direct link. The ID exception form path gives the provisional ballot a different deadline from the 'bring your ID' path; both are from ncsbe.gov/voting/voter-id. No official page says whether a voter may wear campaign clothing; gear rule covers the buffer zone only. Durham County's winning design was not announced on the county page as read; Jackson County's winner was found only in news (WLOS). Cure deadline not found.",
+ "election_day": {
+  "hours": {
+   "en": "Polling places are open 6:30 a.m. to 7:30 p.m. local time.",
+   "es": "Los lugares de votación abren de 6:30 a. m. a 7:30 p. m., hora local.",
+   "src": "https://www.ncsbe.gov/voting/vote-person-election-day",
+   "checked": "2026-10-25",
+   "quote": "Polling places will be open from 6:30 a.m. to 7:30 p.m. on Election Day.",
+   "status": "verified"
+  }
+ }
 }

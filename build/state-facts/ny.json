@@ -247,5 +247,15 @@
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026 in Chrome (elections.ny.gov and nysenate.gov return 403 to curl and WebFetch): Early Voting, Registration and Voting Deadlines, Request a Ballot, Ways to Vote; Election Law 8-104 (electioneering, line rule), 8-302 (affidavit ballots), 8-303 (first-time voter ID). The 2026 Political Calendar is a PDF that could not be read in this session, so the cure deadline was not found; the Board's cure page redirects to a 2021 guidance PDF. The early mail ballot in-person deadline ('no later than the day before the election') is November 2. No phone rule found. Sticker tradition is Ulster County's official contest page; the winner is named only in news reports, so it is not stated."
+ "notes": "Read October 21, 2026 in Chrome (elections.ny.gov and nysenate.gov return 403 to curl and WebFetch): Early Voting, Registration and Voting Deadlines, Request a Ballot, Ways to Vote; Election Law 8-104 (electioneering, line rule), 8-302 (affidavit ballots), 8-303 (first-time voter ID). The 2026 Political Calendar is a PDF that could not be read in this session, so the cure deadline was not found; the Board's cure page redirects to a 2021 guidance PDF. The early mail ballot in-person deadline ('no later than the day before the election') is November 2. No phone rule found. Sticker tradition is Ulster County's official contest page; the winner is named only in news reports, so it is not stated.",
+ "election_day": {
+  "hours": {
+   "en": "Polling places are open 6 a.m. to 9 p.m. local time.",
+   "es": "Los lugares de votación abren de 6 a. m. a 9 p. m., hora local.",
+   "src": "https://www.nysenate.gov/legislation/laws/ELN/8-100",
+   "checked": "2026-10-25",
+   "quote": "the general election from six o'clock in the morning until nine o'clock in the evening",
+   "status": "verified"
+  }
+ }
 }

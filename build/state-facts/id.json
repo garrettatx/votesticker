@@ -138,7 +138,7 @@
    "quote": "Remember to sign the outside of the return envelope. All signatures will be verified by elections staff.",
    "status": "verified"
   },
-  "track_url": "https://votertools.voteidaho.gov/TEDElectionLink/VoterServices/voter-search/ovr-voter-search?returnUrl=VoterServices%2Fvoter%2Fvoter-profile",
+  "track_url": "https://votertools.voteidaho.gov/TEDElectionLink/VoterServices/voter-search/ovr-voter-search?returnUrl=VoterServices%2Ftimeline%2Ftrack-my-vote-by-mail",
   "cure": {
    "status": "missing",
    "notes": "See dates.cure."
@@ -220,5 +220,16 @@
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026 on voteidaho.gov (Casting Your Ballot, Guide to Voting in Person, Registering To Vote, FAQ, 2026 Idaho General Election, Preregistration Deadline event) and the 2026 Election Calendar PDF on archive.voteidaho.gov. Early voting end in states.js (Friday, October 30) matches: the calendar says it ends at 5 p.m., and Casting Your Ballot says 'Visit an early voting or in-person absentee location until October 30.' The calendar also says early voting 'may begin' October 13 in counties that choose to offer it. legislature.idaho.gov (Idaho Code) failed to connect from curl and WebFetch, and Claude in Chrome has no permission for that domain, so no statute was read. Electioneering distance: the VoteIdaho FAQ says 'In Idaho, electioneering is prohibited within 250 feet of a voting location. See Idaho Code, 18-2318.' The statute could not be read to confirm, so the gear fact uses the clothing rule from the in-person guide and leaves the distance off. The 2026 General Election page shows a sticker image with alt text 'I Voted. America 250 in Idaho. 1776-2026.' (file 2026-vote-sticker.png); not used because no sentence says how it is distributed. No cure process, phone rule or expired-ID rule found."
+ "notes": "Read October 21, 2026 on voteidaho.gov (Casting Your Ballot, Guide to Voting in Person, Registering To Vote, FAQ, 2026 Idaho General Election, Preregistration Deadline event) and the 2026 Election Calendar PDF on archive.voteidaho.gov. Early voting end in states.js (Friday, October 30) matches: the calendar says it ends at 5 p.m., and Casting Your Ballot says 'Visit an early voting or in-person absentee location until October 30.' The calendar also says early voting 'may begin' October 13 in counties that choose to offer it. legislature.idaho.gov (Idaho Code) failed to connect from curl and WebFetch, and Claude in Chrome has no permission for that domain, so no statute was read. Electioneering distance: the VoteIdaho FAQ says 'In Idaho, electioneering is prohibited within 250 feet of a voting location. See Idaho Code, 18-2318.' The statute could not be read to confirm, so the gear fact uses the clothing rule from the in-person guide and leaves the distance off. The 2026 General Election page shows a sticker image with alt text 'I Voted. America 250 in Idaho. 1776-2026.' (file 2026-vote-sticker.png); not used because no sentence says how it is distributed. No cure process, phone rule or expired-ID rule found.",
+ "election_day": {
+  "hours": {
+   "en": "Polling places are open 8 a.m. to 8 p.m. local time, and a county can choose to open at 7 a.m.",
+   "es": "Los lugares de votación abren de 8 a. m. a 8 p. m., hora local, y un condado puede abrir desde las 7 a. m.",
+   "src": "https://voteidaho.gov/idaho-general-election/",
+   "checked": "2026-10-25",
+   "quote": "Vote in person on Election Day, November 3. Polling locations are open from 8:00 a.m. – 8:00 p.m.",
+   "status": "verified",
+   "varies": true
+  }
+ }
 }

@@ -135,7 +135,8 @@
   "dropbox": {
    "status": "missing",
    "notes": "RSA 657:17 lists mail, personal delivery and a delivery agent (close family, or nursing or residential care staff); no drop boxes are mentioned. Not stated as 'no drop boxes' because the SOS page was unreadable."
-  }
+  },
+  "track_url": "https://app.sos.nh.gov/"
  },
  "polls_rules": {
   "gear": {
@@ -172,5 +173,16 @@
    "status": "missing"
   }
  },
- "notes": "Read October 21, 2026 on gc.nh.gov (RSA 654:7-a, 654:8, 654:12, 657:1, 657:4, 657:17, 657:22, 659:4, 659:13, 659:35, 659:43, 659:45-a). sos.nh.gov and app.sos.nh.gov return 403 to curl and WebFetch, and Claude in Chrome reports 'Permission denied for reading page content on this domain', so nothing on the SOS site was read: locator URL, ballot tracker, absentee request deadline, drop boxes and the sticker contest are left missing. Selfie kept out on purpose. The ID text uses the version of RSA 659:13 I(c) effective September 8, 2026 (personal-knowledge attestation). Registration before Election Day closes at the supervisors' last session, set by each town (RSA 654:8 II); the FAQ already says so, so reg_deadline leads with Election Day registration."
+ "notes": "Read October 21, 2026 on gc.nh.gov (RSA 654:7-a, 654:8, 654:12, 657:1, 657:4, 657:17, 657:22, 659:4, 659:13, 659:35, 659:43, 659:45-a). sos.nh.gov and app.sos.nh.gov return 403 to curl and WebFetch, and Claude in Chrome reports 'Permission denied for reading page content on this domain', so nothing on the SOS site was read: locator URL, ballot tracker, absentee request deadline, drop boxes and the sticker contest are left missing. Selfie kept out on purpose. The ID text uses the version of RSA 659:13 I(c) effective September 8, 2026 (personal-knowledge attestation). Registration before Election Day closes at the supervisors' last session, set by each town (RSA 654:8 II); the FAQ already says so, so reg_deadline leads with Election Day registration.",
+ "election_day": {
+  "hours": {
+   "en": "Your town or city sets the hours: polls open by 11 a.m. and close no earlier than 7 p.m.",
+   "es": "Tu pueblo o ciudad fija el horario: se abre a más tardar a las 11 a. m. y se cierra no antes de las 7 p. m.",
+   "src": "https://gc.nh.gov/rsa/html/LXIII/659/659-4.htm",
+   "checked": "2026-10-25",
+   "quote": "At all state elections in towns and cities the polls shall open not later than 11 o'clock in the morning and shall close not earlier than 7 o'clock in the evening. In cities, the city council shall determine the polling hours no later than 30 days prior to a state election.",
+   "status": "verified",
+   "varies": true
+  }
+ }
 }

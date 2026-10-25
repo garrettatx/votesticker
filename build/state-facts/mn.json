@@ -208,5 +208,16 @@
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026. sos.mn.gov blocks curl (Radware bot check); read in Chrome. revisor.mn.gov read by curl (204B.49, 211B.11). EARLY VOTING DATES match states.js (September 18 to November 2): the voting locations page says 'Absentee voting will begin on September 18 (Fri)' and lists 'Open until 5:00 p.m. on November 2 (Mon)'; the vote early page lists 'Last day to vote early in person: Monday, November 2'. New for 2026: ballot-counter 'Early Voting' starts Friday, October 16. Registration: the SOS calendar says 'Register in advance by October 13', which confirms the date faq_text.py computed. Mail request: Minnesota gives only a recommended date (October 20), not a deadline. Selfie: the SOS polling place rules page says 'There is no law that strictly prohibits taking photos or videos in the polling place to record your own voting experience' but discourages it; consistent with the current faq_text.py answer ('Not at the polls' because showing a marked ballot spoils it). Cities and towns that vote by mail have an 8 p.m. drop-off; left out of mail_return for length. Provisional ballot and a cure deadline not found; left missing."
+ "notes": "Read October 21, 2026. sos.mn.gov blocks curl (Radware bot check); read in Chrome. revisor.mn.gov read by curl (204B.49, 211B.11). EARLY VOTING DATES match states.js (September 18 to November 2): the voting locations page says 'Absentee voting will begin on September 18 (Fri)' and lists 'Open until 5:00 p.m. on November 2 (Mon)'; the vote early page lists 'Last day to vote early in person: Monday, November 2'. New for 2026: ballot-counter 'Early Voting' starts Friday, October 16. Registration: the SOS calendar says 'Register in advance by October 13', which confirms the date faq_text.py computed. Mail request: Minnesota gives only a recommended date (October 20), not a deadline. Selfie: the SOS polling place rules page says 'There is no law that strictly prohibits taking photos or videos in the polling place to record your own voting experience' but discourages it; consistent with the current faq_text.py answer ('Not at the polls' because showing a marked ballot spoils it). Cities and towns that vote by mail have an 8 p.m. drop-off; left out of mail_return for length. Provisional ballot and a cure deadline not found; left missing.",
+ "election_day": {
+  "hours": {
+   "en": "Polling places are open 7 a.m. to 8 p.m., and some small towns can open later, as late as 10 a.m.",
+   "es": "Los lugares de votación abren de 7 a. m. a 8 p. m., y algunos pueblos pequeños pueden abrir más tarde, hasta las 10 a. m.",
+   "src": "https://www.revisor.mn.gov/statutes/cite/204C.05",
+   "checked": "2026-10-25",
+   "quote": "Except as otherwise provided in this section, at the state primary and the state general election the hours for voting in every precinct in the state shall begin at 7:00 a.m. and shall extend continuously until 8:00 p.m.",
+   "status": "verified",
+   "varies": true
+  }
+ }
 }

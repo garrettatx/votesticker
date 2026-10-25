@@ -261,5 +261,15 @@
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026 with curl on sos.la.gov: Election Dates (November 3 block), Ways to Vote, Absentee Voting FAQs, Voting Early FAQs, the July 28, 2026 sticker release, and voterportal.sos.la.gov. The sos.la.gov pages link the Voter Portal as 'voterportal.--environment--.sos.la.gov' (an unfilled template placeholder); the file uses https://voterportal.sos.la.gov/, which loads the Voter Portal: Search page. EARLY VOTING DATES FOR THE LEAD (states.js has LA unchecked): Tuesday, October 20 to Tuesday, October 27, 2026, no voting Sunday, October 25, 8:30 a.m. to 6 p.m. Sources: (1) https://www.sos.la.gov/elections-voting/election-dates: 'Early voting is October 20-27 (excluding Sunday, October 25) from 8:30 a.m.-6 p.m.' (2) https://www.sos.la.gov/elections-voting/ways-to-vote, same sentence under 'November 3, 2026', and 'The registrars of voters will open their offices from 8:30 a.m. to 6 p.m. for each day of early voting.' Suggested states.js note: 'Vote early at a designated site in your parish. No early voting Sunday, Oct. 25.' The November 3 ballot is the U.S. Senate general and the open primary; a December 12, 2026 election follows. Expired-ID and phone rules not found."
+ "notes": "Read October 21, 2026 with curl on sos.la.gov: Election Dates (November 3 block), Ways to Vote, Absentee Voting FAQs, Voting Early FAQs, the July 28, 2026 sticker release, and voterportal.sos.la.gov. The sos.la.gov pages link the Voter Portal as 'voterportal.--environment--.sos.la.gov' (an unfilled template placeholder); the file uses https://voterportal.sos.la.gov/, which loads the Voter Portal: Search page. EARLY VOTING DATES FOR THE LEAD (states.js has LA unchecked): Tuesday, October 20 to Tuesday, October 27, 2026, no voting Sunday, October 25, 8:30 a.m. to 6 p.m. Sources: (1) https://www.sos.la.gov/elections-voting/election-dates: 'Early voting is October 20-27 (excluding Sunday, October 25) from 8:30 a.m.-6 p.m.' (2) https://www.sos.la.gov/elections-voting/ways-to-vote, same sentence under 'November 3, 2026', and 'The registrars of voters will open their offices from 8:30 a.m. to 6 p.m. for each day of early voting.' Suggested states.js note: 'Vote early at a designated site in your parish. No early voting Sunday, Oct. 25.' The November 3 ballot is the U.S. Senate general and the open primary; a December 12, 2026 election follows. Expired-ID and phone rules not found.",
+ "election_day": {
+  "hours": {
+   "en": "Polling places are open 6 a.m. to 8 p.m. local time.",
+   "es": "Los lugares de votación abren de 6 a. m. a 8 p. m., hora local.",
+   "src": "https://www.sos.la.gov/elections-voting/election-dates",
+   "checked": "2026-10-25",
+   "quote": "On election day, the polls are open from 6 a.m.-8 p.m.",
+   "status": "verified"
+  }
+ }
 }

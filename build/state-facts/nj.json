@@ -7,6 +7,10 @@
   "www.nj.gov": {
    "en": "the New Jersey Division of Elections",
    "es": "la División de Elecciones de New Jersey"
+  },
+  "nj.gov": {
+   "en": "the New Jersey Division of Elections",
+   "es": "la División de Elecciones de New Jersey (Division of Elections)"
   }
  },
  "dates": {
@@ -231,5 +235,15 @@
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026 on nj.gov/state/elections: Vote-By-Mail, In-Person Early Voting, Voter Registration, Polling Location, Secure Drop Boxes, Track My Ballot, County Election Officials, the 2026 General Election Timeline PDF (updated January 9, 2026) and the November 2026 Voters' Bill of Rights poster PDF. CONFLICT on the cure deadline (timeline: November 14, within 11 days, N.J.S.A. 19:63-17; poster: 48 hours before certification), so dates.cure is missing and mail.cure gives the process without a date. The early voting page also carries a stale line ('General Election In-Person Early Voting Polling period has passed.') next to the 2026 dates; the 2026 dates and hours match the poster. Mail return: the Vote-By-Mail page says received 'on or before 6 days after Election Day' in one place and 'by 8 pm on the sixth day after the close of the polls' in another; the poster and timeline both give 8 p.m. November 9, used here. No phone rule and no official sticker program found."
+ "notes": "Read October 21, 2026 on nj.gov/state/elections: Vote-By-Mail, In-Person Early Voting, Voter Registration, Polling Location, Secure Drop Boxes, Track My Ballot, County Election Officials, the 2026 General Election Timeline PDF (updated January 9, 2026) and the November 2026 Voters' Bill of Rights poster PDF. CONFLICT on the cure deadline (timeline: November 14, within 11 days, N.J.S.A. 19:63-17; poster: 48 hours before certification), so dates.cure is missing and mail.cure gives the process without a date. The early voting page also carries a stale line ('General Election In-Person Early Voting Polling period has passed.') next to the 2026 dates; the 2026 dates and hours match the poster. Mail return: the Vote-By-Mail page says received 'on or before 6 days after Election Day' in one place and 'by 8 pm on the sixth day after the close of the polls' in another; the poster and timeline both give 8 p.m. November 9, used here. No phone rule and no official sticker program found.",
+ "election_day": {
+  "hours": {
+   "en": "Polling places are open 6 a.m. to 8 p.m. local time.",
+   "es": "Los lugares de votación abren de 6 a. m. a 8 p. m., hora local.",
+   "src": "https://nj.gov/state/elections/assets/pdf/flyer-how-to-vote/2026-11-how-to-vote-english.pdf",
+   "checked": "2026-10-25",
+   "quote": "Vote in person at your polling place, from 6:00 a.m. to 8:00 p.m. on Election Day, Tuesday,",
+   "status": "verified"
+  }
+ }
 }
