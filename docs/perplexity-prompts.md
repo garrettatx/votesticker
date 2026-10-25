@@ -136,3 +136,22 @@ page only once its official source is read. Every prompt below includes this lin
     Alaska, Alabama, Ohio, Montana, West Virginia, Louisiana, Georgia and Colorado.
 17. Wikimedia Commons: which "I voted" sticker files from 2024 to 2026 have a free license, with the
     file's license line and the issuing office.
+
+## Round 4: Sticker Answers Still Missing (October 25, 2026)
+
+Loop batch 2 found no official 2026 source for these. Each answer needs an official state or county page
+(URL, date, and the exact sentence), for the November 3, 2026 general election, not a primary.
+
+18. Early voting stickers: for each of Alaska, Alabama, Arkansas, Connecticut, Delaware, Hawaii, Idaho,
+    Indiana, Kentucky, Louisiana, Maryland, Maine, Mississippi, North Dakota, New Hampshire, Pennsylvania,
+    South Dakota, Tennessee, West Virginia and Wyoming: does the state or its largest county say voters
+    get an "I Voted" or "I Voted Early" sticker at early or in-person absentee voting in 2026? Quote it.
+19. Mail ballot stickers: for Arizona (Maricopa, Pima), New Jersey (any county), North Carolina, Texas,
+    Virginia, Utah (Salt Lake, Utah County), Wisconsin and Nevada (Clark): does the November 2026 mail
+    ballot packet include a sticker? Quote the packet insert or the county page.
+20. Oklahoma: has the State Election Board said whether the America 250 sticker is at November 2026 early
+    voting (from October 28)? Its only release found so far is for the June primary.
+21. Milwaukee (Wisconsin) and Lancaster County (Nebraska): their "I Voted Early" sticker documents return
+    403. Is there another official page that says early voters get one in 2026?
+22. California early voting: does San Luis Obispo County (or Los Angeles, Orange, Santa Clara) say its
+    sticker is given at vote centers or the elections office during November 2026 early voting?
