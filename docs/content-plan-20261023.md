@@ -14,8 +14,9 @@ slot into Phases 2 and 3.
   early sticker", "how to get i voted sticker".
 - The pages already on page one get clicked more. Most sit at positions 5 to 8 with a 5 to 10% click rate.
 
-Measure each change against `docs/change-log.csv` and the BigQuery archive: impressions, clicks and
-position for the changed pages, two weeks before and after.
+Measure each change against `docs/change-log.csv` and the BigQuery archive, counted from Google's recrawl
+of the page rather than the deploy date. It's an observational comparison, not a controlled test
+(see Measurement in `docs/election-lifecycle-plan-20261025.md`).
 
 ## Writing Standard for Every Page
 
@@ -53,9 +54,9 @@ research text alone.
 | 1.7 | California, Colorado and Hawaii: add in-person dates beside the mail dates (CA Oct 5 and vote centers Oct 24; CO centers Oct 19; HI service centers Oct 20) | CA, CO, HI | From the 50-state report; confirm each |
 | 1.8 | Early voting links that go to Election Day lookups: point them at the early voting directory | AK, PA and others flagged in the report | Report lists them |
 
-## Phase 2: Answer the Sticker Questions
+## Phase 2: Answer the Sticker Questions on Every State Page (October 26 to 30)
 
-**Progress, October 24:** answers live for TX, NC, SC, MO, FL, NY, VA, GA, IL, NV, IA, NM, OH, RI (early) and WA, OR, MI, CO, CA, KS, DC, MA, RI (mail), plus Vermont's contest story (batch 2, October 25). No official 2026 source yet for AK, AL, AR, CT, DE, HI, ID, IN, KY, LA, MD, ME, MS, ND, NH, PA, SD, TN, WV, WY; held partials are in `docs/research/loop-batch2-*.json`. on Every State Page (October 26 to 30)
+**Progress, October 25:** answers live for TX, NC, SC, MO, FL, NY, VA, GA, IL, NV, IA, NM, OH, RI, CA (early) and WA, OR, MI, CO, CA, KS, DC, MA, RI (mail), plus Vermont's contest story (batch 2, October 25). No official 2026 source yet for AK, AL, AR, CT, DE, HI, ID, IN, KY, LA, MD, ME, MS, ND, NH, PA, SD, TN, WV, WY; held partials are in `docs/research/loop-batch2-*.json`.
 
 Search Console shows these queries on page one with few clicks: "i voted early sticker" (about 110
 impressions across 15 states), "[state] i voted sticker" (every state) and "how to get i voted sticker"
@@ -87,10 +88,10 @@ Voted"), Kentucky, New Hampshire, Alaska, Alabama and Ohio (America 250), Montan
 Louisiana (Terrance Osborne) and Georgia (Steve Penley). Name designs and adult artists; leave out
 minors' names unless an official release prints them.
 
-**2.4 Titles and descriptions for the page-one pages.** Today: "Texas I Voted and Vote Stickers: Early
+**2.4 Titles and descriptions for the page-one pages.** Superseded: titles now follow `docs/election-lifecycle-plan-20261025.md` (stable sticker titles after early voting ends). The original idea, kept for the record: Today: "Texas I Voted and Vote Stickers: Early
 Voting Oct 19–30." Test the searched phrase on five pages first (TX, NC, CA, WA, OR): for example
 "Texas I Voted Early Sticker, Free: Early Voting Oct 19–30" during early voting, then "Texas I Voted
-Sticker" after it closes. Compare click rate after 7 days with the other states as the control. The
+Sticker" after it closes. Compare click rate after 7 days with the other states. The
 65-character limit and `qa_seo.py` still apply.
 
 Writing order for 2.1 to 2.3: Texas, North Carolina, Washington, Oregon, California, Maryland, New York,
@@ -127,9 +128,9 @@ official I voted sticker per state?" (No. Many are chosen by counties, and some 
 
 ## After November 3
 
-- Post-election copy (resume doc item 5) and a "results and recap" page are out of scope here.
+- Post-election copy: `docs/election-lifecycle-plan-20261025.md`. A "results and recap" page is out of scope.
 - Keep the gallery and the state sticker stories; they stay useful between elections and become the
-  2028 starting point. Re-read every fact against the next season's sources (the facts files fail on
+  starting point for the next election. Re-read every fact against the next season's sources (the facts files fail on
   stale check dates by design).
 
 ## Decisions (October 23)

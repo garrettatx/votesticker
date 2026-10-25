@@ -68,7 +68,7 @@ Kept in a data file beside the facts files, checked like them (official source, 
 
 ## Starting Data (Perplexity, October 25, Unverified Until Read)
 
-Designs to verify on the official pages before they go in. Permission: none found for any of them.
+Thirteen state records (several hold more than one design, some only partial evidence) to verify on the official pages before they go in. Permission: none found for any of them.
 
 | State | Design | Who and how | Announcement |
 |---|---|---|---|
