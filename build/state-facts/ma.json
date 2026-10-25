@@ -11,6 +11,10 @@
   "malegislature.gov": {
    "en": "the Massachusetts General Laws",
    "es": "las Leyes Generales de Massachusetts"
+  },
+  "www.somervillema.gov": {
+   "en": "the City of Somerville Elections Division",
+   "es": "la División de Elecciones de la ciudad de Somerville (Elections Division)"
   }
  },
  "dates": {
@@ -163,6 +167,14 @@
  "sticker": {
   "tradition": {
    "status": "missing"
+  },
+  "mail": {
+   "en": "In Somerville, the city's Elections Division posts an \"I Voted\" sticker image for early and mail voters to print at home or share online.",
+   "es": "En Somerville, la División de Elecciones de la ciudad publica una imagen del sticker de \"I Voted\" para que quienes votan temprano o por correo la impriman en casa o la compartan en línea.",
+   "src": "https://www.somervillema.gov/print-your-i-voted-sticker",
+   "checked": "2026-10-24",
+   "quote": "Early and mail-in voters can have stickers too",
+   "status": "verified"
   }
  },
  "faq": {

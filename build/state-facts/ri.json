@@ -190,6 +190,22 @@
    "checked": "2026-10-21",
    "quote": "Wear your “I VOTED” sticker!",
    "status": "verified"
+  },
+  "early": {
+   "en": "Yes. The Department of State's early voting steps end with returning the empty secrecy folder and wearing your \"I voted\" sticker.",
+   "es": "Sí. Los pasos de la votación anticipada del Departamento de Estado terminan con devolver la carpeta de privacidad vacía y ponerte tu sticker de \"I voted\".",
+   "src": "https://vote.sos.ri.gov/Voter/PersonVotingPage",
+   "checked": "2026-10-24",
+   "quote": "proudly wear your “I voted” sticker!",
+   "status": "verified"
+  },
+  "mail": {
+   "en": "Look in your mail ballot packet. The Department of State lists an \"I Voted by Mail\" sticker among the items it includes.",
+   "es": "Revisa tu paquete de boleta por correo. El Departamento de Estado incluye un sticker de \"I Voted by Mail\" entre los artículos del paquete.",
+   "src": "https://vote.sos.ri.gov/Voter/VoteByMail",
+   "checked": "2026-10-24",
+   "quote": "I Voted by Mail sticker",
+   "status": "verified"
   }
  },
  "faq": {

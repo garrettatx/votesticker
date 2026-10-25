@@ -171,8 +171,12 @@
  },
  "sticker": {
   "tradition": {
-   "status": "missing",
-   "notes": "Seven Days and Vermont Public report a 2024 SOS student I Voted sticker contest (winner Kezia Warfisch of Wolcott), but no sos.vermont.gov page about it was found."
+   "en": "Each year the Secretary of State's office supports a contest where K-8 students design an alternative \"I Voted\" sticker, and the winning designs go to voters in the student's home district. This year's winners are from Burlington, so Burlington voters get them on Election Day.",
+   "es": "Cada año, la Secretaría de Estado apoya un concurso en el que estudiantes de kínder a 8.º grado diseñan un sticker alternativo de \"I Voted\", y los diseños ganadores se entregan a los votantes del distrito del estudiante. Este año los ganadores son de Burlington, así que quienes votan en Burlington los reciben el Día de las Elecciones.",
+   "src": "https://sos.vermont.gov/secretarys-desk/commentary-press/sticker-contest-winners",
+   "checked": "2026-10-24",
+   "quote": "The winning designs are distributed in the student’s home district.",
+   "status": "verified"
   }
  },
  "faq": {

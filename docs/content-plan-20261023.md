@@ -55,7 +55,7 @@ research text alone.
 
 ## Phase 2: Answer the Sticker Questions
 
-**Progress, October 24:** answers live for TX, NC, SC, MO, FL, NY, VA, GA, IL, NV (early) and WA, OR, MI, CO, CA (mail). Loop batch 2 is researching the remaining states; results land in `docs/research/loop-batch2-*.json`. on Every State Page (October 26 to 30)
+**Progress, October 24:** answers live for TX, NC, SC, MO, FL, NY, VA, GA, IL, NV, IA, NM, OH, RI (early) and WA, OR, MI, CO, CA, KS, DC, MA, RI (mail), plus Vermont's contest story (batch 2, October 25). No official 2026 source yet for AK, AL, AR, CT, DE, HI, ID, IN, KY, LA, MD, ME, MS, ND, NH, PA, SD, TN, WV, WY; held partials are in `docs/research/loop-batch2-*.json`. on Every State Page (October 26 to 30)
 
 Search Console shows these queries on page one with few clicks: "i voted early sticker" (about 110
 impressions across 15 states), "[state] i voted sticker" (every state) and "how to get i voted sticker"

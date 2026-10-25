@@ -7,6 +7,10 @@
   "code.dccouncil.gov": {
    "en": "the D.C. Code",
    "es": "el Código del Distrito de Columbia (D.C. Code)"
+  },
+  "www.dcboe.org": {
+   "en": "the DC Board of Elections",
+   "es": "la Junta de Elecciones de DC (Board of Elections)"
   }
  },
  "dates": {
@@ -121,6 +125,14 @@
  "sticker": {
   "tradition": {
    "status": "missing"
+  },
+  "mail": {
+   "en": "Check your mail ballot packet. The DC Board of Elections lists an instruction sheet with an \"I Voted\" sticker as one of the items it should have.",
+   "es": "Revisa tu paquete de boleta por correo. La Junta de Elecciones de DC incluye una hoja de instrucciones con un sticker de \"I Voted\" entre los artículos que debe traer.",
+   "src": "https://www.dcboe.org/voters/casting-your-vote/mail-ballot-instructions",
+   "checked": "2026-10-24",
+   "quote": "An Instruction Sheet with “I Voted” Sticker",
+   "status": "verified"
   }
  },
  "faq": {

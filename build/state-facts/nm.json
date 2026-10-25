@@ -11,6 +11,10 @@
   "www.santafecountynm.gov": {
    "en": "the Santa Fe County Clerk",
    "es": "la oficina de la secretaria del condado de Santa Fe (Santa Fe County Clerk)"
+  },
+  "www.losalamosnm.gov": {
+   "en": "the Los Alamos County Clerk's Office",
+   "es": "la oficina de la secretaria del condado de Los Alamos (County Clerk's Office)"
   }
  },
  "dates": {
@@ -153,6 +157,14 @@
    "src": "https://www.santafecountynm.gov/clerk/community-outreach/i-voted-sticker-contest",
    "checked": "2026-10-21",
    "quote": "The winning 3 designs will be printed and shared with voters during this election cycle.",
+   "status": "verified"
+  },
+  "early": {
+   "en": "In Los Alamos County, yes. The county's 2026 student contest has an \"I Voted Early\" design along with \"I Voted\" and \"Future Voter,\" and the winners go to every county voting location this year.",
+   "es": "En el condado de Los Alamos, sí. El concurso estudiantil 2026 del condado tiene un diseño de \"I Voted Early\", además de \"I Voted\" y \"Future Voter\", y los ganadores se entregan en todos los lugares de votación del condado este año.",
+   "src": "https://www.losalamosnm.gov/Home/Tabs/Whats-Happening/2026-Vote-Sticker-Contest-WH",
+   "checked": "2026-10-24",
+   "quote": "will be printed and distributed as official stickers at all Los Alamos County voting locations for the 2026 elections",
    "status": "verified"
   }
  },

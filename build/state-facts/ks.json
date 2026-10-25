@@ -15,6 +15,10 @@
   "www.ksrevisor.gov": {
    "en": "Kansas law",
    "es": "la ley de Kansas"
+  },
+  "www.sedgwick.gov": {
+   "en": "the Sedgwick County Election Office",
+   "es": "la oficina electoral del condado de Sedgwick (Election Office)"
   }
  },
  "dates": {
@@ -189,6 +193,14 @@
    "src": "https://sos.ks.gov/elections/election-faq.html",
    "checked": "2026-10-21",
    "quote": "Exit the polling place (don’t forget your sticker)",
+   "status": "verified"
+  },
+  "mail": {
+   "en": "In Sedgwick County, yes. The county election office says voters can wear the 2026 stickers they get at the polls or in an advance by mail ballot, so check your envelope.",
+   "es": "En el condado de Sedgwick, sí. La oficina electoral del condado dice que puedes usar los stickers de 2026 que recibes en las urnas o con tu boleta por correo anticipada (advance by mail), así que revisa tu sobre.",
+   "src": "https://www.sedgwick.gov/communications/news-releases/sedgwick-county-election-office-announces-winners-of-2026-voting-sticker-contests/",
+   "checked": "2026-10-24",
+   "quote": "wear stickers they get at the polls or in an advance by mail ballot",
    "status": "verified"
   }
  },

@@ -972,6 +972,10 @@ return array(
 				'en' => 'the D.C. Code',
 				'es' => 'el Código del Distrito de Columbia (D.C. Code)',
 			),
+			'www.dcboe.org' => array(
+				'en' => 'the DC Board of Elections',
+				'es' => 'la Junta de Elecciones de DC (Board of Elections)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Missed the deadline? Register and vote the same day at any Vote Center during early voting or on Election Day. Bring proof of where you live, like a current government photo ID or a copy of a utility bill.',
@@ -1015,6 +1019,12 @@ return array(
 			'es' => 'Mantén la campaña a 50 pies de distancia. Nadie puede pedir votos, hacer campaña, circular peticiones ni poner material de campaña dentro de un centro de votación ni a menos de 50 pies de su entrada y su salida.',
 			'src' => 'https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.10',
 			'checked' => '2026-10-21',
+		),
+		'sticker.mail' => array(
+			'en' => 'Check your mail ballot packet. The DC Board of Elections lists an instruction sheet with an "I Voted" sticker as one of the items it should have.',
+			'es' => 'Revisa tu paquete de boleta por correo. La Junta de Elecciones de DC incluye una hoja de instrucciones con un sticker de "I Voted" entre los artículos que debe traer.',
+			'src' => 'https://www.dcboe.org/voters/casting-your-vote/mail-ballot-instructions',
+			'checked' => '2026-10-24',
 		),
 		'faq.provisional' => array(
 			'en' => 'DC calls it a special ballot. If your name is missing from the list, or your name or address is wrong, you can still vote one. The Board reviews it, you can call a toll-free line to hear its decision, and you get a hearing 8 to 10 days after the election if it says no.',
@@ -1607,6 +1617,10 @@ return array(
 				'en' => 'the Iowa Code',
 				'es' => 'el Código de Iowa',
 			),
+			'johnsoncountyiowa.gov' => array(
+				'en' => 'the Johnson County Auditor & Elections Office',
+				'es' => 'la oficina del auditor y de elecciones del condado de Johnson (Auditor & Elections Office)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Preregistration closed Monday, October 19, 2026. You can still register and vote at your polling place on Election Day.',
@@ -1700,6 +1714,12 @@ return array(
 			'es' => 'Tómate la selfie con tu sticker sin estorbar a otros votantes. Iowa prohíbe las fotos y mostrar tu boleta votada solo cuando es con un fin ilegal o cuando interfiere con otros votantes o con el lugar de votación.',
 			'src' => 'https://www.legis.iowa.gov/docs/code/49.88.pdf',
 			'checked' => '2026-10-21',
+		),
+		'sticker.early' => array(
+			'en' => 'In Johnson County, yes. The county\'s 2026 "I Voted" stickers, chosen in its design contest, are handed out during early voting and on Election Day.',
+			'es' => 'En el condado de Johnson, sí. Los stickers de "I Voted" de 2026 del condado, elegidos en su concurso de diseño, se entregan durante la votación anticipada y el Día de las Elecciones.',
+			'src' => 'https://johnsoncountyiowa.gov/node/16546',
+			'checked' => '2026-10-24',
 		),
 		'faq.provisional' => array(
 			'en' => 'You\'re offered a provisional ballot if you were already sent an absentee ballot, don\'t show ID when it\'s required, or are challenged by another voter. You get a notice that day saying why and whether you need to bring more documents.',
@@ -2140,6 +2160,10 @@ return array(
 				'en' => 'Kansas law',
 				'es' => 'la ley de Kansas',
 			),
+			'www.sedgwick.gov' => array(
+				'en' => 'the Sedgwick County Election Office',
+				'es' => 'la oficina electoral del condado de Sedgwick (Election Office)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Registration closed Tuesday, October 13, 2026. Kansas has no same-day or Election Day registration.',
@@ -2233,6 +2257,12 @@ return array(
 			'es' => 'La propia lista de la Secretaría de Estado sobre qué esperar cuando votas termina con salir del lugar de votación, y un recordatorio de no olvidar tu sticker.',
 			'src' => 'https://sos.ks.gov/elections/election-faq.html',
 			'checked' => '2026-10-21',
+		),
+		'sticker.mail' => array(
+			'en' => 'In Sedgwick County, yes. The county election office says voters can wear the 2026 stickers they get at the polls or in an advance by mail ballot, so check your envelope.',
+			'es' => 'En el condado de Sedgwick, sí. La oficina electoral del condado dice que puedes usar los stickers de 2026 que recibes en las urnas o con tu boleta por correo anticipada (advance by mail), así que revisa tu sobre.',
+			'src' => 'https://www.sedgwick.gov/communications/news-releases/sedgwick-county-election-office-announces-winners-of-2026-voting-sticker-contests/',
+			'checked' => '2026-10-24',
 		),
 		'faq.provisional' => array(
 			'en' => 'You vote a provisional ballot if you don\'t show a valid photo ID, or if you asked for a mail ballot but vote in person instead. A missing-ID provisional ballot counts once you get your photo ID to the county election office before the county canvass.',
@@ -2569,6 +2599,10 @@ return array(
 				'en' => 'the Massachusetts General Laws',
 				'es' => 'las Leyes Generales de Massachusetts',
 			),
+			'www.somervillema.gov' => array(
+				'en' => 'the City of Somerville Elections Division',
+				'es' => 'la División de Elecciones de la ciudad de Somerville (Elections Division)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Register by Saturday, October 24, 2026: online until 11:59 p.m., by mail with a form postmarked that day, or in person by 5 p.m.',
@@ -2661,6 +2695,12 @@ return array(
 			'es' => 'Los lugares de votación cierran a las 8 p. m. Si estás en la fila de tu lugar de votación a esa hora, no te salgas. Igual puedes votar.',
 			'src' => 'https://www.sec.state.ma.us/divisions/elections/research-and-statistics/2026-Information-for-voters/2026-voting-options.htm',
 			'checked' => '2026-10-21',
+		),
+		'sticker.mail' => array(
+			'en' => 'In Somerville, the city\'s Elections Division posts an "I Voted" sticker image for early and mail voters to print at home or share online.',
+			'es' => 'En Somerville, la División de Elecciones de la ciudad publica una imagen del sticker de "I Voted" para que quienes votan temprano o por correo la impriman en casa o la compartan en línea.',
+			'src' => 'https://www.somervillema.gov/print-your-i-voted-sticker',
+			'checked' => '2026-10-24',
 		),
 		'faq.provisional' => array(
 			'en' => 'You vote a provisional ballot if you\'re not on the voter list, your information on it is wrong, or you\'re a first-time voter without ID. It counts if your local election office confirms you\'re registered, and it has 12 days after the election to decide. Call 1-800-462-VOTE after Election Day to see if yours counted.',
@@ -4276,6 +4316,10 @@ return array(
 				'en' => 'the Santa Fe County Clerk',
 				'es' => 'la oficina de la secretaria del condado de Santa Fe (Santa Fe County Clerk)',
 			),
+			'www.losalamosnm.gov' => array(
+				'en' => 'the Los Alamos County Clerk\'s Office',
+				'es' => 'la oficina de la secretaria del condado de Los Alamos (County Clerk\'s Office)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Registration by mail, through a registration agent and online closed October 6, 2026. You can still register in person and vote the same day at your County Clerk\'s office, at some early voting sites, and at any polling place in your county on Election Day.',
@@ -4351,6 +4395,12 @@ return array(
 			'es' => 'En el condado de Santa Fe, los estudiantes diseñan el sticker de "I Voted". El concurso 2026 de la secretaría del condado cerró el 8 de septiembre, y los tres diseños ganadores se imprimen para los votantes en esta elección.',
 			'src' => 'https://www.santafecountynm.gov/clerk/community-outreach/i-voted-sticker-contest',
 			'checked' => '2026-10-21',
+		),
+		'sticker.early' => array(
+			'en' => 'In Los Alamos County, yes. The county\'s 2026 student contest has an "I Voted Early" design along with "I Voted" and "Future Voter," and the winners go to every county voting location this year.',
+			'es' => 'En el condado de Los Alamos, sí. El concurso estudiantil 2026 del condado tiene un diseño de "I Voted Early", además de "I Voted" y "Future Voter", y los ganadores se entregan en todos los lugares de votación del condado este año.',
+			'src' => 'https://www.losalamosnm.gov/Home/Tabs/Whats-Happening/2026-Vote-Sticker-Contest-WH',
+			'checked' => '2026-10-24',
 		),
 		'faq.provisional' => array(
 			'en' => 'You get a provisional ballot if your name isn\'t on the roster at your polling place, or if you\'re a first-time voter who registered by mail and doesn\'t bring the required ID. Check its status after the election in the state\'s provisional ballot lookup.',
@@ -4823,6 +4873,12 @@ return array(
 			'es' => 'En 2019 la Secretaría de Estado organizó un concurso para que estudiantes de 6.º a 12.º grado diseñaran el sticker de I Voted de Ohio. Llegaron más de 2,000 diseños, y más de 15,000 votos eligieron a la ganadora: Emily Legg, de 12.º grado en Teays Valley High School, en el condado de Pickaway.',
 			'src' => 'https://www.ohiosos.gov/office/media-center/categories/press-releases/2019-05-21',
 			'checked' => '2026-10-21',
+		),
+		'sticker.early' => array(
+			'en' => 'Yes, while supplies last. The Secretary of State sent every county board of elections a limited supply of America 250 "I Voted" stickers for voters who vote in person, early or on Election Day.',
+			'es' => 'Sí, mientras haya. La Secretaría de Estado envió a cada junta electoral de condado una cantidad limitada de stickers de "I Voted" de America 250 para quienes votan en persona, de forma anticipada o el Día de las Elecciones.',
+			'src' => 'https://www.ohiosos.gov/office/media-center/categories/press-releases/2026-06-12',
+			'checked' => '2026-10-24',
 		),
 		'faq.provisional' => array(
 			'en' => 'You may get one if your name isn\'t in the pollbook, you don\'t have a valid photo ID, you already asked for an absentee ballot, or you moved without updating your registration. It counts once officials confirm you\'re eligible. Without ID, bring one to your county board of elections within four days.',
@@ -5348,6 +5404,18 @@ return array(
 			'es' => 'Después de meter tu boleta en la máquina de votación, ponte tu sticker de I Voted. Lo dice el manual del votante 2026 del Departamento de Estado.',
 			'src' => 'https://vote.sos.ri.gov/Forms/Elections/Guides/VoterRef26.pdf',
 			'checked' => '2026-10-21',
+		),
+		'sticker.early' => array(
+			'en' => 'Yes. The Department of State\'s early voting steps end with returning the empty secrecy folder and wearing your "I voted" sticker.',
+			'es' => 'Sí. Los pasos de la votación anticipada del Departamento de Estado terminan con devolver la carpeta de privacidad vacía y ponerte tu sticker de "I voted".',
+			'src' => 'https://vote.sos.ri.gov/Voter/PersonVotingPage',
+			'checked' => '2026-10-24',
+		),
+		'sticker.mail' => array(
+			'en' => 'Look in your mail ballot packet. The Department of State lists an "I Voted by Mail" sticker among the items it includes.',
+			'es' => 'Revisa tu paquete de boleta por correo. El Departamento de Estado incluye un sticker de "I Voted by Mail" entre los artículos del paquete.',
+			'src' => 'https://vote.sos.ri.gov/Voter/VoteByMail',
+			'checked' => '2026-10-24',
 		),
 		'faq.provisional' => array(
 			'en' => 'You vote a provisional ballot if your name isn\'t on the voter list, you don\'t have an acceptable photo ID, you applied for a mail ballot, or there\'s another question about your eligibility. Your local board of canvassers decides after Election Day whether it counts. Check the result at elections.ri.gov or by calling 401-222-2345.',
@@ -6281,6 +6349,12 @@ return array(
 			'es' => '¿Llevas una camiseta o un botón de un candidato? Cúbrelo mientras estés dentro del edificio donde votas. Ahí no se puede mostrar ningún sticker, botón ni folleto de campaña, y lo mismo aplica en la oficina del secretario del municipio durante la votación anticipada.',
 			'src' => 'https://sos.vermont.gov/elections/voters/voter-faqs/',
 			'checked' => '2026-10-21',
+		),
+		'sticker.tradition' => array(
+			'en' => 'Each year the Secretary of State\'s office supports a contest where K-8 students design an alternative "I Voted" sticker, and the winning designs go to voters in the student\'s home district. This year\'s winners are from Burlington, so Burlington voters get them on Election Day.',
+			'es' => 'Cada año, la Secretaría de Estado apoya un concurso en el que estudiantes de kínder a 8.º grado diseñan un sticker alternativo de "I Voted", y los diseños ganadores se entregan a los votantes del distrito del estudiante. Este año los ganadores son de Burlington, así que quienes votan en Burlington los reciben el Día de las Elecciones.',
+			'src' => 'https://sos.vermont.gov/secretarys-desk/commentary-press/sticker-contest-winners',
+			'checked' => '2026-10-24',
 		),
 		'faq.provisional' => array(
 			'en' => 'Vermont rarely uses them. If you\'re not on the checklist, you can register and vote that day. If you say you registered on time, you sign an affidavit and vote.',

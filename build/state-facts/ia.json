@@ -15,6 +15,10 @@
   "www.legis.iowa.gov": {
    "en": "the Iowa Code",
    "es": "el Código de Iowa"
+  },
+  "johnsoncountyiowa.gov": {
+   "en": "the Johnson County Auditor & Elections Office",
+   "es": "la oficina del auditor y de elecciones del condado de Johnson (Auditor & Elections Office)"
   }
  },
  "dates": {
@@ -186,6 +190,14 @@
   "tradition": {
    "status": "missing",
    "notes": "No statewide or county I voted sticker page found on an official host."
+  },
+  "early": {
+   "en": "In Johnson County, yes. The county's 2026 \"I Voted\" stickers, chosen in its design contest, are handed out during early voting and on Election Day.",
+   "es": "En el condado de Johnson, sí. Los stickers de \"I Voted\" de 2026 del condado, elegidos en su concurso de diseño, se entregan durante la votación anticipada y el Día de las Elecciones.",
+   "src": "https://johnsoncountyiowa.gov/node/16546",
+   "checked": "2026-10-24",
+   "quote": "The winning designs will become the official stickers distributed during early voting and on Election Day in 2026 and 2027.",
+   "status": "verified"
   }
  },
  "faq": {
