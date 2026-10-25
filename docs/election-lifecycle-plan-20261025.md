@@ -86,8 +86,8 @@ return rules." pointing at the existing state picker, no second selector.
 Publishes the Election Day version ahead of time. Same layout; it changes the banner, the order of the
 voting section, the featured stickers, the post text and the descriptions.
 
-- **States still voting early on November 2** (about a dozen end that day: AK, AR, IA, IL, IN, KS, MN,
-  MO, MT, NE, RI, SD, VT, WY; check against `states.js`): the banner appears, and the page keeps its
+- **States still voting early on November 2** (15 end that day in `states.js`: AK, AR, IA, IL, IN, KS, MN,
+  MO, MT, ND, NE, RI, SD, VT, WY): the banner appears, and the page keeps its
   early voting answer for November 2. Nothing says early voting has ended until the November 3 build.
 - **Voting section order:** Election Day location and hours first; any early voting still open; mail
   return rules where they apply. Request deadlines already past drop out of the recommendations. A
