@@ -141,8 +141,10 @@ def main():
         if '?state=' in html:
             fail(f'/{p}: has a ?state= link')
         og = pg.meta.get('og:image', '')
-        want_og = f'{PROD}assets/og/{p[:-1]}.jpg' if p and p not in ('about/', 'history/') else f'{PROD}assets/og-hub.jpg'
-        if not og.startswith(want_og + '?v='):
+        # The card can come from the phase's set (index.php: og/ended/, og/post/, og-hub-post.jpg).
+        want_og = (rf'{PROD}assets/og/((ended|post)/)?{re.escape(p[:-1])}\.jpg\?v=' if p and p not in ('about/', 'history/')
+                   else rf'{PROD}assets/og-hub(-post)?\.jpg\?v=')
+        if not re.match(want_og, og):
             fail(f'/{p}: og:image {og}')
         elif fetch(urljoin(base, og.replace(PROD, '')))[0] != 200:
             fail(f'/{p}: og:image does not load')

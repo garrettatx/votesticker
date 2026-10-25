@@ -11,7 +11,11 @@ const BASE = process.argv[2] || 'http://127.0.0.1:8791/';
 const LANG = process.argv[3] === 'es' ? 'es' : 'en';
 const ES = LANG === 'es';
 const SITE = path.join(path.dirname(new URL(import.meta.url).pathname), '../site');
-const OGDIR = path.join(SITE, ES ? 'assets/og/es' : 'assets/og');
+// OG_SET=ended or OG_SET=post writes the phase's set (index.php picks it): serve a build made with
+// VOTE_TODAY=2026-11-03 for 'ended' and VOTE_TODAY=2026-11-04 for 'post'. The hub card is redrawn only
+// for 'post' (og-hub-post.jpg); 'ended' cards cover only states whose early voting has closed.
+const SET = ['ended', 'post'].includes(process.env.OG_SET) ? process.env.OG_SET : '';
+const OGDIR = path.join(SITE, ES ? 'assets/og/es' : 'assets/og', SET);
 fs.mkdirSync(OGDIR, { recursive: true });
 const b = await chromium.launch(); const p = await b.newPage();
 await p.goto(BASE + (ES ? 'es/' : '') + 'texas/', { waitUntil: 'networkidle' }); await p.waitForTimeout(800);
@@ -38,7 +42,7 @@ const setup = () => {
 await p.evaluate(setup);
 
 // State cards.
-const states = await p.evaluate(() => Object.entries(window.VOTE_META).map(([abbr, m]) => ({ abbr, ...m })));
+const states = (await p.evaluate(() => Object.entries(window.VOTE_META).map(([abbr, m]) => ({ abbr, ...m })))).filter((st) => SET !== 'ended' || st.family === 'early_over');
 for (const st of states) {
 	const url = await p.evaluate(async (st) => {
 		const V = window.VOTE_CARDS, row = window.VOTE_STATES.find((s) => s.abbr === st.abbr);
@@ -77,7 +81,8 @@ for (const st of states) {
 		g.fillStyle = '#fff'; g.textBaseline = 'middle'; g.fillText(st.ribbon, 598, 336);
 		await og.sign(g, 580, 460, false);
 		g.textAlign = 'left'; g.fillStyle = '#3A4562'; g.font = '600 24px system-ui, sans-serif';
-		g.fillText(window.VOTE_LANG === 'es' ? 'Muéstrales a tus amigos que vas a votar.' : "Show your friends you're voting.", 580, 512);
+		const post = window.VOTE_PHASE === 'post';
+		g.fillText(window.VOTE_LANG === 'es' ? (post ? 'Muéstrales a tus amigos que ya votaste.' : 'Muéstrales a tus amigos que vas a votar.') : (post ? 'Show your friends you voted.' : "Show your friends you're voting."), 580, 512);
 		g.fillStyle = '#6B7280'; g.font = '500 22px system-ui, sans-serif';
 		g.fillText(window.VOTE_LANG === 'es' ? 'Gratis y no partidista. 50 estados y DC.' : 'Free and nonpartisan. 50 states and DC.', 580, 548);
 		return out.toDataURL('image/jpeg', 0.86);
@@ -85,7 +90,8 @@ for (const st of states) {
 	fs.writeFileSync(path.join(OGDIR, st.slug + '.jpg'), Buffer.from(url.split(',')[1], 'base64'));
 }
 
-// Hub card.
+// Hub card (the early voting one, or og-hub-post.jpg for the post set).
+if (SET !== 'ended') {
 const hub = await p.evaluate(async () => {
 	const out = document.createElement('canvas'); out.width = 1200; out.height = 630;
 	const g = out.getContext('2d');
@@ -93,8 +99,9 @@ const hub = await p.evaluate(async () => {
 	await og.sign(g, 64, 92, true);
 	g.textAlign = 'left'; g.textBaseline = 'alphabetic'; g.fillStyle = '#FBF6E8';
 	const es = window.VOTE_LANG === 'es';
-	const lines = es ? ['MUÉSTRALES', 'A TUS AMIGOS', 'QUE VAS A VOTAR.'] : ['SHOW YOUR', 'FRIENDS', "YOU'RE VOTING."];
-	og.fit(g, es ? 'QUE VAS A VOTAR.' : "YOU'RE VOTING.", 92, '"Vote Display"', 560);
+	const post = window.VOTE_PHASE === 'post';
+	const lines = post ? (es ? ['¿YA VOTASTE?', 'CONSIGUE', 'TU STICKER.'] : ['VOTED?', 'GET YOUR', 'STICKER.']) : es ? ['MUÉSTRALES', 'A TUS AMIGOS', 'QUE VAS A VOTAR.'] : ['SHOW YOUR', 'FRIENDS', "YOU'RE VOTING."];
+	og.fit(g, post ? (es ? '¿YA VOTASTE?' : 'GET YOUR') : es ? 'QUE VAS A VOTAR.' : "YOU'RE VOTING.", 92, '"Vote Display"', 560);
 	lines.forEach((t, i) => g.fillText(t, 64, 250 + i * 98));
 	g.fillStyle = '#F2C14E'; g.font = '700 28px system-ui, sans-serif';
 	g.fillText(es ? 'Stickers para votar en los 50 estados y DC' : 'Voting stickers for all 50 states and DC', 64, 560);
@@ -108,6 +115,7 @@ const hub = await p.evaluate(async () => {
 	[[835, 190, 135, -9], [1060, 170, 120, 7], [855, 450, 128, 5], [1075, 430, 115, -6]].forEach(([x, y, r, d], i) => og.sticker(g, ims[i], x, y, r, d));
 	return out.toDataURL('image/jpeg', 0.86);
 });
-fs.writeFileSync(path.join(SITE, ES ? 'assets/og-hub-es.jpg' : 'assets/og-hub.jpg'), Buffer.from(hub.split(',')[1], 'base64'));
-console.log(`${states.length} state cards and the hub card written`);
+fs.writeFileSync(path.join(SITE, (ES ? 'assets/og-hub-es' : 'assets/og-hub') + (SET === 'post' ? '-post' : '') + '.jpg'), Buffer.from(hub.split(',')[1], 'base64'));
+}
+console.log(`${states.length} state cards${SET === 'ended' ? '' : ' and the hub card'} written`);
 await b.close();

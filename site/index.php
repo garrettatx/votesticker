@@ -891,11 +891,20 @@ $vote_url = VOTE_SITE . vote_pbase() . $vote_tail;
 $vote_alt = array( 'en' => VOTE_SITE . VOTE_BASE . $vote_tail, 'es' => VOTE_SITE . VOTE_BASE . 'es/' . $vote_tail );
 $vote_other = vote_es() ? 'en' : 'es';
 // Share image: one per state from build/og_states.mjs, the hub's from build/og_image.mjs.
+// Cards come in three sets (October 25), drawn by build/og_cards.mjs from a build of that phase, so a shared
+// link never shows a reminder that has expired: the early voting set, 'ended' (the state's early voting has
+// closed) and 'post' (after Election Day). A missing card falls back to the set before it.
+$vote_og_set = 'post' === vote_phase() ? 'post/' : ( $vote_st && 'ended' === ( $vote_st['kind'] ?? '' ) ? 'ended/' : '' );
 $vote_og_dir = vote_es() ? 'assets/og/es/' : 'assets/og/';
-$vote_og = $vote_st && is_file( __DIR__ . '/' . $vote_og_dir . $vote_page['slug'] . '.jpg' ) ? $vote_og_dir . $vote_page['slug'] . '.jpg' : ( vote_es() && is_file( __DIR__ . '/assets/og-hub-es.jpg' ) ? 'assets/og-hub-es.jpg' : 'assets/og-hub.jpg' );
+$vote_og = null;
+foreach ( array_unique( array( $vote_og_set, '' ) ) as $vote_set ) {
+	if ( $vote_st && is_file( __DIR__ . '/' . $vote_og_dir . $vote_set . $vote_page['slug'] . '.jpg' ) ) { $vote_og = $vote_og_dir . $vote_set . $vote_page['slug'] . '.jpg'; break; }
+}
+$vote_hub_og = ( vote_es() ? 'assets/og-hub-es' : 'assets/og-hub' ) . ( 'post' === vote_phase() ? '-post' : '' ) . '.jpg';
+$vote_og = $vote_og ?: ( is_file( __DIR__ . '/' . $vote_hub_og ) ? $vote_hub_og : ( vote_es() && is_file( __DIR__ . '/assets/og-hub-es.jpg' ) ? 'assets/og-hub-es.jpg' : 'assets/og-hub.jpg' ) );
 $vote_og_alt = vote_es()
 	? ( $vote_st ? $vote_page['h1'] . ': ' . $vote_page['status'] . '. Un sticker para votar de ' . $vote_page['crumb'] . ' sobre papel color crema.' : 'Vote Sticker: muéstrales a tus amigos que vas a votar. Stickers para votar en los 50 estados y DC.' )
-	: ( $vote_st ? $vote_page['h1'] . ': ' . $vote_page['status'] . '. A ' . $vote_page['crumb'] . ' voting sticker on cream paper.' : "Vote Sticker: show your friends you're voting. Voting stickers for all 50 states and DC, with ready-made designs from Texas, Washington, Pennsylvania, and California." );
+	: ( $vote_st ? $vote_page['h1'] . ': ' . $vote_page['status'] . '. A ' . $vote_page['crumb'] . ' voting sticker on cream paper.' : ( 'post' === vote_phase() ? 'Vote Sticker: voted? Get your sticker. Voting stickers for all 50 states and DC.' : "Vote Sticker: show your friends you're voting. Voting stickers for all 50 states and DC, with ready-made designs from Texas, Washington, Pennsylvania, and California." ) );
 
 // Breadcrumbs start at the tool's hub, never the WordPress site (Garrett: no links back to the root).
 $vote_crumbs = array( array( VOTE_BRAND, VOTE_SITE . vote_pbase() ) );

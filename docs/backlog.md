@@ -16,6 +16,7 @@ Open items, newest first. Started October 21, 2026. Move an item to `docs/histor
 |---|---|---|
 | **Election Day banner** | November 3 visitors need the polling place lookup and hours first | `docs/election-lifecycle-plan-20261025.md`. Needs verified poll hours (loop batch 3 running). Build before November 2. |
 | **Voted mode** | From November 4, lead with "Voted? Get your sticker"; retire "still time to vote" post text | Same plan. Build before November 3. |
+| **Remove the November 4 cron** | `30 6 4 11 *` in `.github/workflows/daily-build.yml` would fire again in 2027 with `VOTE_TODAY=2026-11-04` | After November 4, 2026. |
 | **Between elections mode** | Evergreen intro, past dates collapsed, official upcoming-elections link | About December 1. |
 | **Sticker collection and 2026 archive** | One page of official and VoteSticker designs with credits, distribution and permissions; replaces the Phase 3 gallery | `docs/sticker-archive-spec.md`. After November 3; data collection can start now. |
 | **Snohomish County pickup** | Second Washington mail source: stickers at the Auditor's Office, Sno-Isle Libraries and voter service sites (Oct 7, 2026 release) | Washington's mail answer holds one source (Thurston). Decide whether pickup sites or packet inclusion leads, or allow two sources per answer. |

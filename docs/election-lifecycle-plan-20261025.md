@@ -195,3 +195,21 @@ The stickers are plain `<img>` tags with alt text, so Google can index them now:
 impressions October 20 to 25, mostly at positions 30 to 100, no clicks. The image sitemap (393 images
 on 108 pages, each image shown on the page that lists it) adds discovery signals; indexing isn't
 guaranteed. Treat the count as a QA inventory, not a target.
+
+## Built October 25
+
+- `vote_phase()` in `site/index.php`: `pre` to November 1, `eday` November 2 and 3, `post` from November 4,
+  from `vote_today()` (`VOTE_TODAY` for previews). `window.VOTE_PHASE` tells the maker.
+- Election Day banner (`vote_eday_banner`, `vote_eday_banner_hub`), from `election_day.hours` (48 states,
+  official sources, loop batch 3), `dates.mail_return`, `where.locator_url` and `mail.track_url`.
+- Post-election: titles and H1s, lead, info panel with tracker and official link, maker defaults and
+  message list, post text, home copy, past-dates heading. The countdown loses Today/Tomorrow on
+  November 2 and disappears November 4.
+- Fixed: in-person states reverted to "Early voting runs Oct 19–30" after November 3; they stay `ended`.
+- Galleries hide ready-mades whose message expired (`vote_file_current`, from the alt text). 27 states
+  with few left got four maker-drawn ready-mades each (`scripts/render_readymades.mjs`).
+- Share cards: `assets/og/ended/` (43), `assets/og/post/` (51), Spanish sets, `og-hub-post.jpg`;
+  `build/og_cards.mjs` with `OG_SET=ended|post` against a build of that date.
+- Workflow: `30 6 4 11 *` runs the build as November 4; a manual run takes a `vote_today` date.
+- QA, run for today, November 2 and November 4: SEO, Spanish, facts, cards (51 of 51), GA4 events.
+  `qa_seo.py` and `qa_es.py` check the live site unless given `--base http://127.0.0.1:8792/`.

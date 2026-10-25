@@ -11,7 +11,15 @@ name: Daily build
 on:
   schedule:
     - cron: '5 11 * * *'   # 11:05 UTC: 6:05 a.m. CDT through November 1, 5:05 a.m. CST after
+    # Post-election switch (docs/election-lifecycle-plan-20261025.md): 06:30 UTC November 4, after the last
+    # scheduled poll closing (Alaska's Aleutians, 8 p.m. HST = 06:00 UTC). Remove after the 2026 election.
+    - cron: '30 6 4 11 *'
   workflow_dispatch:
+    inputs:
+      vote_today:
+        description: 'Build as this date (YYYY-MM-DD), e.g. 2026-11-04 to publish the post-election pages by hand'
+        required: false
+        default: ''
 
 permissions:
   contents: write   # commit build/lastmod.json and build/indexnow-sent.json back
@@ -26,6 +34,8 @@ jobs:
     timeout-minutes: 20
     env:
       TZ: America/Chicago
+      # index.php vote_today(): the post-election run builds as November 4 by name, not by clock.
+      VOTE_TODAY: ${{ github.event.inputs.vote_today || (github.event.schedule == '30 6 4 11 *' && '2026-11-04') || '' }}
     steps:
       - uses: actions/checkout@v4
 
