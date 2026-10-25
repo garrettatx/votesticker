@@ -695,3 +695,13 @@ nav.foot__links a + a { margin-left: 0; }
 .hold-save__h { margin: 0; max-width: 32ch; font-weight: 700; font-size: 1.05rem; line-height: 1.35; }
 .hold-save__img { display: block; width: min(86vw, 62vh, 520px); height: auto; aspect-ratio: auto; border-radius: 12px; -webkit-touch-callout: default; user-select: auto; }
 body.is-holding { overflow: hidden; }
+
+/* Election Day banner (November 2 and 3; index.php vote_eday_banner). A dated card in the page flow, above
+   the state heading: cream on the navy header, a full border, no countdown and no warning red. */
+.eday { margin: 0 0 var(--s5); padding: var(--s4) var(--s5); background: var(--cream); color: var(--text); border: 2px solid var(--gold); border-radius: var(--radius); }
+.eday__eyebrow { margin: 0 0 var(--s1); font-weight: 800; font-size: var(--fs-xs); letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink); }
+.eday__h { margin: 0 0 var(--s2); font-size: var(--fs-h3); line-height: 1.25; color: var(--ink); }
+.eday__line { margin: 0 0 var(--s3); max-width: 62ch; }
+.eday__links { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s3) var(--s5); margin: 0; }
+.eday__more { color: var(--ink); font-weight: 700; text-decoration: underline; text-underline-offset: 0.16em; min-height: 44px; display: inline-flex; align-items: center; }
+@media (max-width: 560px) { .eday { padding: var(--s4); } .eday__links .btn { width: 100%; justify-content: center; } }

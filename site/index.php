@@ -42,7 +42,7 @@ function vote_pbase() { return vote_es() ? VOTE_BASE . 'es/' : VOTE_BASE; }
 function vote_lname( $st ) { return $st['name']; }
 // A state's name in titles and headings: English writes Washington, DC for the District.
 function vote_name( $st ) { return 'DC' === $st['abbr'] ? 'Washington, DC' : $st['name']; }
-function vote_sfield( $st, $key ) { if ( 'ended' === ( $st['kind'] ?? '' ) && in_array( $key, array( 'summary', 'note' ), true ) ) { return ''; } return vote_es() ? ( $GLOBALS['vote_i18n']['states'][ $st['abbr'] ][ $key ] ?? '' ) : ( $st[ $key ] ?? '' ); }
+function vote_sfield( $st, $key ) { if ( ( 'ended' === ( $st['kind'] ?? '' ) || 'post' === vote_phase() ) && in_array( $key, array( 'summary', 'note', 'ribbon' ), true ) ) { return ''; } return vote_es() ? ( $GLOBALS['vote_i18n']['states'][ $st['abbr'] ][ $key ] ?? '' ) : ( $st[ $key ] ?? '' ); }
 const VOTE_MESES = array( 'enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre' );
 const VOTE_MES = array( 'ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sept', 'oct', 'nov', 'dic' );
 const VOTE_DIAS = array( 'domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado' );
@@ -60,12 +60,17 @@ function vote_states() {
 // sticker then point to Election Day; the dates table still lists the window. The date is the build's
 // (the daily build runs at 6:05 a.m. Central), or VOTE_TODAY=YYYY-MM-DD for QA.
 function vote_today() { return getenv( 'VOTE_TODAY' ) ?: date( 'Y-m-d' ); }
+// The election's phase (docs/election-lifecycle-plan-20261025.md): 'pre' until November 1, 'eday' on
+// November 2 and 3 (the dated Election Day banner goes out a day early so no midnight build is needed),
+// 'post' from November 4. Pages say dates, never "today" or "open now".
+function vote_phase() { $d = vote_today(); return $d >= '2026-11-04' ? 'post' : ( $d >= '2026-11-02' ? 'eday' : 'pre' ); }
 function vote_close_early( $row ) {
 	$today = vote_today();
-	if ( 'verified' === ( $row['status'] ?? '' ) && 'in-person' === ( $row['kind'] ?? '' ) && ! empty( $row['end'] ) && $row['end'] < $today && $today <= '2026-11-03' ) {
+	if ( 'verified' === ( $row['status'] ?? '' ) && 'in-person' === ( $row['kind'] ?? '' ) && ! empty( $row['end'] ) && $row['end'] < $today ) {
 		$row['kind'] = 'ended';
 		unset( $row['summary'], $row['note'], $row['dateLine'] );
 	}
+	if ( 'post' === vote_phase() ) { unset( $row['summary'], $row['note'], $row['dateLine'], $row['ribbon'] ); }
 	return $row;
 }
 
@@ -91,7 +96,22 @@ function vote_files( $abbr ) {
 	if ( vote_es() ) { return array(); }
 	$files = array_map( 'basename', glob( __DIR__ . '/assets/states/' . strtolower( $abbr ) . '/*.jpg' ) ?: array() );
 	natsort( $files );
-	return array_map( function ( $f ) use ( $abbr ) { return vote_v( 'assets/states/' . strtolower( $abbr ) . '/' . $f ); }, array_values( $files ) );
+	$files = array_values( array_filter( $files, function ( $f ) use ( $abbr ) { return vote_file_current( $abbr, $f ); } ) );
+	return array_map( function ( $f ) use ( $abbr ) { return vote_v( 'assets/states/' . strtolower( $abbr ) . '/' . $f ); }, $files );
+}
+// Whether a ready-made still says something true (October 25). Its alt text records the message: after a
+// state's early voting closes, "Vote early" leaves the gallery; after Election Day only the I voted family
+// and "[State] votes" stay. The files keep their URLs; they just aren't shown.
+function vote_file_current( $abbr, $file ) {
+	static $alts = null, $rows = null;
+	if ( null === $alts ) { $f = __DIR__ . '/assets/states/alts.json'; $alts = is_file( $f ) ? json_decode( file_get_contents( $f ), true ) : array(); }
+	if ( null === $rows ) { $rows = vote_states(); }
+	$alt = $alts[ preg_replace( '/\.jpg$/', '', $file ) ] ?? '';
+	if ( ! preg_match( '/reading (.*)$/i', $alt, $m ) ) { return true; }
+	$says = strtolower( $m[1] );
+	if ( 'post' === vote_phase() ) { return (bool) preg_match( '/^(i voted|my ballot is in|[a-z. ]+ votes\b)/', $says ); }
+	if ( 'ended' === ( $rows[ strtoupper( $abbr ) ]['kind'] ?? '' ) ) { return 0 !== strpos( $says, 'vote early' ); }
+	return true;
 }
 
 // The state hero shows one standout ready-made, tilted (October 20, Garrett): the design named here,
@@ -112,7 +132,7 @@ function vote_status_html( $status ) {
 function vote_hero_file( $abbr ) {
 	$n = VOTE_HERO[ $abbr ] ?? 0;
 	$k = strtolower( $abbr );
-	if ( $n && is_file( __DIR__ . "/assets/states/$k/$k-vote-$n.jpg" ) && ! vote_es() ) { return vote_v( "assets/states/$k/$k-vote-$n.jpg" ); }
+	if ( $n && is_file( __DIR__ . "/assets/states/$k/$k-vote-$n.jpg" ) && ! vote_es() && vote_file_current( $abbr, "$k-vote-$n.jpg" ) ) { return vote_v( "assets/states/$k/$k-vote-$n.jpg" ); }
 	return vote_files( $abbr )[0] ?? '';
 }
 
@@ -142,6 +162,25 @@ function vote_meta( $st ) {
 	$save = $n ? 'Save a ready-made I voted sticker or make your own' : 'Make your own I voted or vote sticker';
 	// The lead says what to do and the one date that matters (Garrett's review, October 21): no counts, no repeats.
 	$grab = $n ? 'Grab a ready-made sticker or make your own, then set it as your profile picture.' : 'Make your sticker, then set it as your profile picture.';
+	// After Election Day the page is about the sticker (docs/post-election-release.md). The title keeps the
+	// voting method's own sticker ("I voted early" is a search that outlives early voting).
+	if ( 'post' === vote_phase() ) {
+		$also = 'mail' === $kind ? 'I Voted by Mail' : ( 'ended' === $kind ? 'I Voted Early' : '' );
+		$also_l = 'mail' === $kind ? ' and I voted by mail' : ( 'ended' === $kind ? ' and I voted early' : '' );
+		return array(
+			'slug' => vote_slug( $st['name'] ),
+			'title' => $name . ( $also ? ' I Voted and ' . $also . ' Stickers' : ' I Voted Stickers' ),
+			'h1' => $name . ' I Voted Stickers',
+			'crumb' => $name,
+			'ribbon' => 'FREE I VOTED STICKERS',
+			'lead' => $n ? 'Voted? Get your sticker. Pick a design below and save it, or make your own.' : 'Voted? Make your ' . $name . ' sticker, then save it and share it.',
+			'desc' => 'Download free ' . $name . ' I voted' . $also_l . ' stickers, or make your own. Find official ballot resources for ' . $name . '.',
+			'status' => 'I voted stickers',
+			'family' => 'post',
+			'name' => $st['name'],
+			'index' => true,
+		);
+	}
 	if ( 'mail' === $kind ) {
 		$tag = 'Vote by Mail, Due ' . vote_short( $st['end'] );
 		// The state's own return rule where it's verified (drop box by 8 p.m., received by 7 p.m.): states.js `ribbon`.
@@ -191,7 +230,9 @@ function vote_meta( $st ) {
 	return array(
 		'slug' => vote_slug( $st['name'] ),
 		// "I voted sticker" is the term people search (Ahrefs, October 19); long names drop "and Vote" to fit.
-		'title' => strlen( $name . ' I Voted and Vote Stickers: ' . $tag ) > 62 ? $name . ' I Voted Stickers: ' . $tag : $name . ' I Voted and Vote Stickers: ' . $tag,
+		// Once early voting closes the title names the sticker people still look for (October 25 review).
+		'title' => 'ended' === $kind ? ( strlen( $name . ' I Voted and I Voted Early Stickers: Vote Nov 3' ) > 65 ? $name . ' I Voted Early Stickers: Vote Nov 3' : $name . ' I Voted and I Voted Early Stickers: Vote Nov 3' )
+			: ( strlen( $name . ' I Voted and Vote Stickers: ' . $tag ) > 62 ? $name . ' I Voted Stickers: ' . $tag : $name . ' I Voted and Vote Stickers: ' . $tag ),
 		'h1' => $name . ' I Voted and Vote Stickers',
 		'crumb' => $name,
 		'ribbon' => $ribbon,
@@ -214,6 +255,22 @@ function vote_meta_es( $st ) {
 	$n = count( vote_files( $st['abbr'] ) );
 	$save = $n ? 'Guarda un sticker listo para usar o crea el tuyo' : 'Crea tu propio sticker';
 	$grab = $n ? 'Toma un sticker listo para usar o crea el tuyo, y ponlo de foto de perfil.' : 'Crea tu sticker y ponlo de foto de perfil.';
+	if ( 'post' === vote_phase() ) {
+		$also = 'mail' === $kind ? ' y Ya voté por correo' : ( 'ended' === $kind ? ' y Ya voté temprano' : '' );
+		return array(
+			'slug' => vote_slug( $st['name'] ),
+			'title' => 'Stickers de Ya voté' . $also . ' en ' . $name,
+			'h1' => 'Stickers de Ya voté en ' . $name,
+			'crumb' => $name,
+			'ribbon' => 'STICKERS DE YA VOTÉ, GRATIS',
+			'lead' => '¿Ya votaste? Consigue tu sticker. Crea el tuyo para ' . $name . ', guárdalo y compártelo.',
+			'desc' => 'Crea gratis tu sticker de Ya voté para ' . $name . '. Encuentra también los recursos oficiales sobre tu boleta en ' . $name . '.',
+			'status' => 'Stickers de Ya voté',
+			'family' => 'post',
+			'name' => $name,
+			'index' => VOTE_ES_INDEX,
+		);
+	}
 	if ( 'mail' === $kind ) {
 		$tag = 'vota por correo hasta el ' . vote_short( $st['end'] );
 		$ribbon = vote_sfield( $st, 'ribbon' ) ?: 'VOTA POR CORREO, HASTA EL ' . vote_upper( vote_short( $st['end'] ) );
@@ -255,7 +312,7 @@ function vote_meta_es( $st ) {
 	}
 	return array(
 		'slug' => vote_slug( $st['name'] ),
-		'title' => 'Stickers para votar en ' . $name . ': ' . $tag,
+		'title' => 'ended' === $kind ? 'Stickers de Ya voté y Ya voté temprano en ' . $name . ': vota el 3 nov' : 'Stickers para votar en ' . $name . ': ' . $tag,
 		'h1' => 'Stickers para votar en ' . $name,
 		'crumb' => $name,
 		'ribbon' => $ribbon,
@@ -377,7 +434,7 @@ function vote_guide( $st ) {
 	$loc = vote_fact( $st, 'where.locator_url' );
 	$add( 'Register to vote by', vote_fact( $st, 'dates.reg_deadline' ), $loc ? ' <a href="' . vote_e( $loc ) . '" target="_blank" rel="noopener">' . vote_e( t( 'Already registered? Check here' ) ) . '</a>.' : '' );
 	if ( vote_verified( $st ) && in_array( $st['kind'], array( 'in-person', 'ended' ), true ) && ! empty( $st['start'] ) ) {
-		$rows[] = '<tr><th scope="row">' . vote_e( t( 'ended' === $st['kind'] ? 'Early voting (ended)' : 'Early voting' ) ) . '</th><td>' . vote_e( vote_es() ? 'Del ' . vote_day( $st['start'] ) . ' al ' . vote_day( $st['end'] ) . ' de 2026.' : vote_day( $st['start'] ) . ' to ' . vote_day( $st['end'] ) . ', 2026.' ) . '</td></tr>';
+		$rows[] = '<tr><th scope="row">' . vote_e( t( 'ended' === $st['kind'] && 'post' !== vote_phase() ? 'Early voting (ended)' : 'Early voting' ) ) . '</th><td>' . vote_e( vote_es() ? 'Del ' . vote_day( $st['start'] ) . ' al ' . vote_day( $st['end'] ) . ' de 2026.' : vote_day( $st['start'] ) . ' to ' . vote_day( $st['end'] ) . ', 2026.' ) . '</td></tr>';
 		$srcs[] = $st['sourceUrl'] ?? $st['officialUrl'];
 	}
 	$add( 'Early voting hours', vote_fact( $st, 'dates.early_hours' ) );
@@ -386,7 +443,7 @@ function vote_guide( $st ) {
 	$add( 'Fix a problem with a mail ballot by', vote_fact( $st, 'dates.cure' ) );
 	$rows[] = '<tr><th scope="row">' . vote_e( t( 'Election Day' ) ) . '</th><td>' . vote_e( vote_es() ? 'Martes 3 de noviembre de 2026.' : 'Tuesday, November 3, 2026.' ) . '</td></tr>';
 	if ( count( $rows ) > 1 ) {
-		$out .= '<section class="guide" aria-labelledby="dates-h">' . $h( 'dates-h', t( 'Key Dates for Nov. 3' ) )
+		$out .= '<section class="guide" aria-labelledby="dates-h">' . $h( 'dates-h', t( 'post' === vote_phase() ? 'November 3, 2026 Election: Past Voting Dates' : 'Key Dates for Nov. 3' ) )
 			. '<table class="dates"><caption class="sr-only">' . vote_e( t( '%s voting dates and deadlines for the November 3, 2026 election', $name ) ) . '</caption><tbody>' . implode( '', $rows ) . '</tbody></table>' . vote_sources_line( $st, $srcs )
 			. ( vote_fact( $st, 'dates.reg_deadline' ) ? vote_rn( 'voter-registration', 'Missed a registration deadline?', 'What you can still do, state by state' ) : '' ) . '</section>';
 	}
@@ -467,6 +524,9 @@ function vote_countdown_text( $days ) {
 	return t( '%s days away', $days );
 }
 function vote_countdown( $class = '' ) {
+	// From November 2 the line keeps the date and drops "Today" and "Tomorrow"; after Election Day it goes.
+	if ( 'post' === vote_phase() ) { return ''; }
+	if ( 'eday' === vote_phase() ) { return '<p class="countdown' . ( $class ? ' ' . $class : '' ) . '"><span>' . vote_e( t( 'Election Day:' ) ) . ' <time datetime="' . VOTE_ELECTION_DAY . '">' . vote_e( t( 'Tuesday, Nov. 3' ) ) . '</time></span></p>'; }
 	$days = (int) round( ( strtotime( VOTE_ELECTION_DAY ) - strtotime( vote_today() ) ) / 86400 );
 	$rel = vote_countdown_text( $days );
 	return '<p class="countdown' . ( $class ? ' ' . $class : '' ) . '" data-countdown data-today="' . vote_e( t( 'Today' ) ) . '" data-tomorrow="' . vote_e( t( 'Tomorrow' ) ) . '" data-away="' . vote_e( t( '%s days away' ) ) . '">'
@@ -511,6 +571,7 @@ const VOTE_POST_VARIANTS = array( 'plan' => 'Plan', 'short' => 'Short', 'friends
 
 // The version that matches the state's default sticker (app.js stateHeadline()).
 function vote_post_default( $st ) {
+	if ( 'post' === vote_phase() ) { return 'post'; }
 	if ( ! vote_verified( $st ) || ! in_array( $st['kind'], array( 'in-person', 'mail' ), true ) ) { return 'pre_day'; }
 	return 'mail' === $st['kind'] ? 'pre_mail' : 'pre_early';
 }
@@ -528,6 +589,18 @@ function vote_post( $st, $kind = null, $variant = 'plan' ) {
 		? array( 'pre_mail' => '¿Cuándo vas a devolver tu boleta?', 'post' => '¿Y tú, ya tienes tu plan para votar?', 'default' => '¿Ya tienes tu plan para votar?' )
 		: array( 'pre_mail' => 'When are you sending yours back?', 'post' => "What's your plan to vote?", 'default' => "What's your plan to vote?" );
 	$question = $ask[ $after ? 'post' : $kind ] ?? $ask['default'];
+	// After Election Day: what the person did and where the sticker is. No plan question, no "haven't voted
+	// yet" (docs/post-election-release.md).
+	if ( 'post' === vote_phase() ) {
+		$link = 'https://votesticker.org/' . ( $es ? 'es/' : '' ) . 'go/' . vote_slug( $st['name'] ) . '/' . $variant;
+		$tags = vote_hashtags( $st, $kind, $variant );
+		$lines = $es
+			? array( 'plan' => 'Consigue gratis un sticker para ' . $name . ' o crea el tuyo: ' . $link, 'short' => 'Stickers gratis para ' . $name . ': ' . $link,
+				'friends' => 'Amigos en ' . $name . ', un sticker como el mío, gratis: ' . $link, 'official' => 'Haz el tuyo gratis en un minuto, sin cuenta: ' . $link )
+			: array( 'plan' => 'Get a free ' . $name . ' sticker or make your own: ' . $link, 'short' => 'Free ' . $name . ' stickers: ' . $link,
+				'friends' => $name . ' friends, a sticker like mine, free: ' . $link, 'official' => 'Make yours free in about a minute, no account: ' . $link );
+		return $open[ $kind ] . ' ' . ( $lines[ $variant ] ?? $lines['plan'] ) . "\n" . $tags;
+	}
 	// Full https:// URL so it links everywhere, LinkedIn and email included. /go/ is a short redirect to the
 	// state page with UTM tags (written into dist/_redirects by the build), so a friend who taps the
 	// link in someone's post shows in GA4 as source sticker_post, with the post version as utm_content.
@@ -581,7 +654,7 @@ function vote_post_fact( $st, $after, $named = true ) {
 	if ( $es ) {
 		if ( 'in-person' === $kind ) {
 			$same = date( 'n', strtotime( $st['start'] ) ) === date( 'n', strtotime( $st['end'] ) );
-			$f = $after ? ( $named ? 'Todavía hay tiempo: la' : 'la' ) . ' votación anticipada' . $in . ' sigue hasta el ' . vote_long( $st['end'] ) . ', y el 3 de noviembre abren las casillas.'
+			$f = $after ? ( $named && 'pre' === vote_phase() ? 'Todavía hay tiempo: la' : 'la' ) . ' votación anticipada' . $in . ' sigue hasta el ' . vote_long( $st['end'] ) . ', y el 3 de noviembre abren las casillas.'
 				: 'la votación anticipada' . $in . ' es del ' . ( $same ? date( 'j', strtotime( $st['start'] ) ) : vote_long( $st['start'] ) ) . ' al ' . vote_long( $st['end'] ) . '.';
 		} elseif ( 'mail' === $kind ) {
 			$f = $after ? ( $named ? 'Si todavía no has entregado la tuya,' . $in . ' la' : 'la' ) . ' boleta se recibe a más tardar el ' . vote_long( $st['end'] ) . '.'
@@ -592,7 +665,7 @@ function vote_post_fact( $st, $after, $named = true ) {
 		}
 	} elseif ( 'in-person' === $kind ) {
 		$same = date( 'n', strtotime( $st['start'] ) ) === date( 'n', strtotime( $st['end'] ) );
-		$f = $after ? ( $named ? "There's still time: early" : 'early' ) . ' voting' . $in . ' runs through ' . vote_long( $st['end'] ) . ', and polls are open November 3.'
+		$f = $after ? ( $named && 'pre' === vote_phase() ? "There's still time: early" : 'early' ) . ' voting' . $in . ' runs through ' . vote_long( $st['end'] ) . ', and polls are open November 3.'
 			: 'early voting' . $in . ' runs ' . vote_long( $st['start'] ) . ' to ' . ( $same ? date( 'j', strtotime( $st['end'] ) ) : vote_long( $st['end'] ) ) . '.';
 	} elseif ( 'mail' === $kind ) {
 		$f = $after ? ( $named ? "If yours isn't in yet, " . $name . ' ballots' : 'ballots' ) . ' are due ' . vote_long( $st['end'] ) . '.'
@@ -623,6 +696,7 @@ function vote_hashtags( $st, $kind, $variant = 'plan' ) {
 function vote_post_all( $st ) {
 	$out = array();
 	foreach ( VOTE_POST_KINDS as $k ) {
+		if ( 'post' === vote_phase() && 0 !== strpos( $k, 'post' ) ) { continue; }  // no plan posts after Election Day
 		$out[ $k ] = array();
 		foreach ( array_keys( VOTE_POST_VARIANTS ) as $v ) { $out[ $k ][ $v ] = vote_post( $st, $k, $v ); }
 	}
@@ -655,6 +729,42 @@ function vote_post_body( $st ) {
 	return 'Election Day is Tuesday, November 3, 2026. Make a plan to vote, and check whether you can vote early in ' . $name . ' at vote411.org.';
 }
 
+// The Election Day banner (November 2 and 3; docs/election-lifecycle-plan-20261025.md). Dated, in the page
+// flow, no countdown and no "today": it says the schedule, links the official lookup, and points people
+// who already voted at the stickers. Mail states lead with their verified return rule.
+function vote_eday_banner( $st ) {
+	if ( 'eday' !== vote_phase() ) { return ''; }
+	$loc = vote_fact( $st, 'where.locator_url' );
+	$track = vote_fact( $st, 'mail.track_url' );
+	$off = vote_verified( $st ) ? $st['officialUrl'] : 'https://www.vote411.org/' . vote_slug( $st['name'] );
+	$mail = vote_verified( $st ) && 'mail' === ( $st['kind'] ?? '' );
+	$ret = $mail ? vote_fact( $st, 'dates.mail_return' ) : null;
+	$hours = vote_fact( $st, 'election_day.hours' );
+	$varies = ! empty( ( vote_facts( $st['abbr'] )['election_day.hours'] ?? array() )['varies'] );
+	$sticker = count( vote_files( $st['abbr'] ) ) ? '#gallery' : '#maker-h';
+	if ( $ret ) {
+		$eyebrow = t( 'November 3, 2026 · Ballot return deadline' );
+		$head = t( 'Still have your ballot? Check how to return it.' );
+		$line = $ret['text'];
+		$go = $loc ?: $off; $go_label = $loc ? ( vote_fact( $st, 'where.locator_cta' ) ?: t( 'Find a drop box or voting location' ) ) : t( 'Official election information' );
+		$second = $track ? array( $track, t( 'Already returned it? Track your ballot.' ), true ) : array( $sticker, t( 'Already voted? Get your sticker.' ), false );
+	} else {
+		$eyebrow = t( 'November 3, 2026 · Election Day' );
+		$head = t( 'Find your Election Day voting location and hours.' );
+		$line = $hours ? ( $varies ? $hours['text'] . ' ' . t( "Check your location's official hours before you go." ) : t( 'Scheduled voting hours:' ) . ' ' . $hours['text'] ) : t( "Check your location's official hours before you go." );
+		$go = $loc ?: $off; $go_label = $loc ? t( 'Find my voting location' ) : t( 'Official election information' );
+		$second = array( $sticker, t( 'Already voted? Get your sticker.' ), false );
+	}
+	return '<section class="eday" aria-labelledby="eday-h"><p class="eday__eyebrow">' . vote_e( $eyebrow ) . '</p><h2 class="eday__h" id="eday-h">' . vote_e( $head ) . '</h2><p class="eday__line">' . vote_e( $line ) . '</p>'
+		. '<p class="eday__links"><a class="btn btn--gold" href="' . vote_e( $go ) . '" target="_blank" rel="noopener">' . vote_e( $go_label ) . ' <span aria-hidden="true">↗</span></a> <a class="eday__more" href="' . vote_e( $second[0] ) . '"' . ( $second[2] ? ' target="_blank" rel="noopener"' : '' ) . '>' . vote_e( $second[1] ) . '</a></p></section>';
+}
+// The home page's version points at the state picker; no national hours.
+function vote_eday_banner_hub() {
+	if ( 'eday' !== vote_phase() ) { return ''; }
+	return '<section class="eday" aria-labelledby="eday-h"><p class="eday__eyebrow">' . vote_e( t( 'November 3, 2026 · Election Day' ) ) . '</p><h2 class="eday__h" id="eday-h">' . vote_e( t( "Find your state's voting locations, hours and ballot return rules." ) ) . '</h2>'
+		. '<p class="eday__links"><a class="btn btn--gold" href="#state-find">' . vote_e( t( 'Choose your state' ) ) . '</a> <a class="eday__more" href="#states-h">' . vote_e( t( 'Already voted? Get your sticker.' ) ) . '</a></p></section>';
+}
+
 // The state panel, server-rendered; app.js infoHtml() draws the same markup when the menu changes.
 // The summary box under the maker (id="info"; the card QA compares it with the page's own copy): the dates,
 // Election Day hours, ID in one line, and where to vote. Most people need only this; the guide has the rest.
@@ -662,6 +772,16 @@ function vote_info( $st ) {
 	$es = vote_es();
 	$name = $es ? vote_lname( $st ) : $st['name'];
 	$eday = $es ? 'El Día de las Elecciones es el martes 3 de noviembre de 2026.' : 'Election Day is Tuesday, November 3, 2026.';
+	if ( 'post' === vote_phase() ) {
+		// After Election Day: the sticker, a ballot tracker only where the state has a verified one, and the
+		// state's official election page (docs/post-election-release.md). Nothing says a vote was counted.
+		$html = '<h2>' . vote_e( t( 'Voted? Get your sticker.' ) ) . '</h2><p>' . vote_e( t( 'Pick a design and save it, or make your own.' ) ) . '</p>';
+		$track = vote_fact( $st, 'mail.track_url' );
+		if ( $track ) { $html .= '<p>' . vote_e( t( 'Returned a mail ballot? Check its status with your election office.' ) ) . ' <a href="' . vote_e( $track ) . '" target="_blank" rel="noopener">' . vote_e( t( 'Check my ballot status' ) ) . '</a></p>'; }
+		$off = vote_verified( $st ) ? $st['officialUrl'] : t( 'https://www.usa.gov/state-election-office' );
+		$html .= '<p><a class="official" href="' . vote_e( $off ) . '" target="_blank" rel="noopener"><span><b>' . vote_e( t( 'Official %s election information', $name ) ) . '</b><small>' . vote_e( vote_verified( $st ) ? $st['officialLabel'] : 'usa.gov' ) . '</small></span></a></p>';
+		return $html;
+	}
 	if ( ! vote_verified( $st ) ) {
 		return $es
 			? '<h2>Vota a más tardar el 3 de nov</h2><p>Aún no hemos verificado las fechas de votación anticipada de ' . vote_e( $name ) . ', así que estos stickers dicen Día de las Elecciones. Busca tus fechas y tu lugar de votación en <a href="https://www.vote411.org/' . vote_slug( $st['name'] ) . '" target="_blank" rel="noopener">Vote411</a> (League of Women Voters) o en la oficina electoral de tu estado.</p><p>' . $eday . '</p>'
@@ -737,10 +857,11 @@ if ( $vote_404 ) {
 $vote_st = $vote_abbr ? $vote_rows[ $vote_abbr ] : null;
 $vote_page = $vote_st ? $vote_meta[ $vote_abbr ] : array(
 	'title' => t( 'I Voted Sticker Maker: Free Vote Stickers by State' ),
-	'h1' => t( 'Make a voting plan. Share the sticker.' ),
-	'eyebrow' => t( 'Free I voted and vote early stickers for every state' ),
-	'lead' => t( 'Make an I voted sticker or share your state’s voting dates, sized for your profile picture or a post.' ),
-	'desc' => t( 'Make a free I voted sticker or vote sticker for your profile picture. Pick your state and a design, download a PNG, and check official links for early voting, vote by mail, or Election Day.' ),
+	// After Election Day the home page leads with the sticker (docs/post-election-release.md); the title stays.
+	'h1' => t( 'post' === vote_phase() ? 'Voted? Get your sticker.' : 'Make a voting plan. Share the sticker.' ),
+	'eyebrow' => t( 'post' === vote_phase() ? 'Free voting stickers by state' : 'Free I voted and vote early stickers for every state' ),
+	'lead' => t( 'post' === vote_phase() ? 'Pick your state, choose a design and save it. Get an I voted, I voted early or I voted by mail sticker, or make your own.' : 'Make an I voted sticker or share your state’s voting dates, sized for your profile picture or a post.' ),
+	'desc' => t( 'post' === vote_phase() ? 'Get a free I voted, I voted early or I voted by mail sticker. Choose your state, save a design or make your own.' : 'Make a free I voted sticker or vote sticker for your profile picture. Pick your state and a design, download a PNG, and check official links for early voting, vote by mail, or Election Day.' ),
 	'index' => ! vote_es() || VOTE_ES_INDEX,
 );
 if ( $vote_about ) {
@@ -884,6 +1005,7 @@ $vote_ld = array(
 		</ol></nav>
 		<?php endif; ?>
 		<?php if ( $vote_st ) : $vote_lead_img = vote_hero_file( $vote_abbr ); $vote_art = vote_es() ? 'data:image/gif;base64,R0lGODlhAQABAAAAACw=' : $vote_lead_img; ?>
+		<?php echo vote_eday_banner( $vote_st ); ?>
 		<div class="state-hero<?php echo $vote_art ? ' state-hero--art' : ''; ?>">
 			<div>
 				<h1 id="page-h1"><?php echo vote_e( $vote_page['h1'] ); ?></h1>
@@ -903,6 +1025,7 @@ $vote_ld = array(
 			<?php if ( $vote_art ) : ?><img class="state-hero__sticker" src="<?php echo vote_e( $vote_art ); ?>" alt="" width="1080" height="1080" aria-hidden="true"<?php echo vote_es() ? ' data-es-state="' . $vote_abbr . '"' : ''; ?>><?php endif; ?>
 		</div>
 		<?php else : ?>
+		<?php echo ( ! $vote_doc && ! $vote_404 ) ? vote_eday_banner_hub() : ''; ?>
 		<div class="hero">
 			<div class="hero__text">
 				<?php if ( $vote_page['eyebrow'] ) : ?><p class="<?php echo $vote_404 ? 'ribbon ribbon--err' : 'eyebrow'; ?>"><?php echo vote_e( $vote_page['eyebrow'] ); ?></p><?php endif; ?>
@@ -913,9 +1036,9 @@ $vote_ld = array(
 				?></h1>
 				<p class="lead" id="page-lead"><?php echo vote_e( $vote_page['lead'] ); ?></p>
 				<?php if ( ! $vote_doc ) { echo vote_finder( 'Your state', 'Type your state', $vote_404 ? 'Find' : 'Get my sticker' ); } ?>
-				<?php if ( ! $vote_doc && ! $vote_404 ) : $vote_today = date( 'Y-m-d' ); $vote_open = 0; foreach ( $vote_rows as $vote_r ) { if ( vote_verified( $vote_r ) && 'in-person' === ( $vote_r['kind'] ?? '' ) && ! empty( $vote_r['start'] ) && $vote_r['start'] <= $vote_today && $vote_today <= $vote_r['end'] ) { $vote_open++; } } ?>
+				<?php if ( ! $vote_doc && ! $vote_404 ) : $vote_today = vote_today(); $vote_open = 0; foreach ( $vote_rows as $vote_r ) { if ( vote_verified( $vote_r ) && 'in-person' === ( $vote_r['kind'] ?? '' ) && ! empty( $vote_r['start'] ) && $vote_r['start'] <= $vote_today && $vote_today <= $vote_r['end'] ) { $vote_open++; } } ?>
 				<?php echo vote_countdown(); ?>
-				<?php if ( $vote_open ) : ?><p class="hero__today"><?php echo vote_e( $vote_open > 1 ? t( 'Early voting is open today in %s states.', $vote_open ) : t( 'Early voting is open today in one state.' ) ); ?></p><?php endif; ?>
+				<?php if ( $vote_open && 'pre' === vote_phase() ) : ?><p class="hero__today"><?php echo vote_e( $vote_open > 1 ? t( 'Early voting is open today in %s states.', $vote_open ) : t( 'Early voting is open today in one state.' ) ); ?></p><?php endif; ?>
 				<?php endif; ?>
 				<?php if ( $vote_404 ) : ?>
 				<nav class="err-links" aria-labelledby="err-links-h">
@@ -1160,6 +1283,7 @@ window.VOTE_META = <?php echo vote_json( $vote_meta ); ?>;
 window.VOTE_ALTS = <?php echo vote_json( $vote_st ? array_map( function ( $f, $i ) use ( $vote_st ) { return vote_alt( $f, $vote_st, $i ); }, vote_files( $vote_abbr ), array_keys( vote_files( $vote_abbr ) ) ) : array() ); ?>;
 window.VOTE_BASE = <?php echo vote_json( vote_pbase() ); ?>;
 window.VOTE_LANG = <?php echo vote_json( $vote_lang ); ?>;
+window.VOTE_PHASE = <?php echo vote_json( vote_phase() ); ?>;
 window.VOTE_T = <?php
 // Maker strings, from the same dictionary as the page.
 $vote_js = array();

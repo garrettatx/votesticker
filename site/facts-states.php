@@ -1948,6 +1948,7 @@ return array(
 			'es' => 'Los lugares de votación abren de 8 a. m. a 8 p. m., hora local, y un condado puede abrir desde las 7 a. m.',
 			'src' => 'https://voteidaho.gov/idaho-general-election/',
 			'checked' => '2026-10-25',
+			'varies' => true,
 		),
 		'faq.provisional' => array(
 			'en' => 'Idaho doesn\'t use provisional ballots. If you\'re not registered, register at early voting or at your polling place on Election Day with a photo ID and proof of residence.',
@@ -2380,6 +2381,7 @@ return array(
 			'es' => 'Los lugares de votación abren por lo menos de 7 a. m. a 7 p. m., hora local, y un condado puede abrir desde las 6 a. m. y cerrar hasta las 8 p. m.',
 			'src' => 'https://sos.ks.gov/elections/voter-information.html',
 			'checked' => '2026-10-25',
+			'varies' => true,
 		),
 		'faq.provisional' => array(
 			'en' => 'You vote a provisional ballot if you don\'t show a valid photo ID, or if you asked for a mail ballot but vote in person instead. A missing-ID provisional ballot counts once you get your photo ID to the county election office before the county canvass.',
@@ -2836,6 +2838,7 @@ return array(
 			'es' => 'Los lugares de votación abren de 7 a. m. a 8 p. m., y tu ciudad o pueblo puede abrir desde las 5:45 a. m.',
 			'src' => 'https://www.sec.state.ma.us/divisions/elections/voting-information/polling-hours.htm',
 			'checked' => '2026-10-25',
+			'varies' => true,
 		),
 		'faq.provisional' => array(
 			'en' => 'You vote a provisional ballot if you\'re not on the voter list, your information on it is wrong, or you\'re a first-time voter without ID. It counts if your local election office confirms you\'re registered, and it has 12 days after the election to decide. Call 1-800-462-VOTE after Election Day to see if yours counted.',
@@ -3092,6 +3095,7 @@ return array(
 			'es' => 'Tu pueblo fija la hora de apertura, entre las 6 y las 8 a. m. (a más tardar a las 10 a. m. en pueblos de menos de 500 habitantes), y se cierra a las 8 p. m.',
 			'src' => 'https://legislature.maine.gov/statutes/21-A/title21-Asec626.html',
 			'checked' => '2026-10-25',
+			'varies' => true,
 		),
 		'faq.provisional' => array(
 			'en' => 'Maine calls it a challenged ballot. It\'s used when someone questions your eligibility on Election Day, and you can\'t be turned away. Challenged ballots are counted like regular ballots, and they\'re only reviewed if a recount could turn on them.',
@@ -3435,6 +3439,7 @@ return array(
 			'es' => 'Los lugares de votación abren de 7 a. m. a 8 p. m., y algunos pueblos pequeños pueden abrir más tarde, hasta las 10 a. m.',
 			'src' => 'https://www.revisor.mn.gov/statutes/cite/204C.05',
 			'checked' => '2026-10-25',
+			'varies' => true,
 		),
 		'faq.line' => array(
 			'en' => 'You can still vote. If you\'re in line by 8 p.m., you get to vote, even if you reach the front after 8.',
@@ -3858,6 +3863,7 @@ return array(
 			'es' => 'Los lugares de votación abren de 7 a. m. a 8 p. m., y uno con menos de 400 votantes puede abrir hasta el mediodía.',
 			'src' => 'https://archive.legmt.gov/bills/mca/title_0130/chapter_0010/part_0010/section_0060/0130-0010-0010-0060.html',
 			'checked' => '2026-10-25',
+			'varies' => true,
 		),
 		'faq.provisional' => array(
 			'en' => 'You vote a provisional ballot if you can\'t show the required ID, your name isn\'t in the register, or your registration can\'t be confirmed at the polls. Bring ID or eligibility information to your county by 5 p.m. the day after the election, and it counts once your county verifies you.',
@@ -4138,6 +4144,7 @@ return array(
 			'es' => 'Tu ciudad o condado fija el horario: se abre entre las 7 y las 9 a. m. y se cierra entre las 7 y las 9 p. m., hora local.',
 			'src' => 'https://ndlegis.gov/cencode/t16-1c01.pdf',
 			'checked' => '2026-10-25',
+			'varies' => true,
 		),
 		'faq.provisional' => array(
 			'en' => 'North Dakota uses a set-aside ballot if you don\'t have a valid ID with you. Show your ID to the county auditor within 13 days after the election, before the County Canvassing Board meets, and your ballot will be counted.',
@@ -4372,6 +4379,7 @@ return array(
 			'es' => 'Tu pueblo o ciudad fija el horario: se abre a más tardar a las 11 a. m. y se cierra no antes de las 7 p. m.',
 			'src' => 'https://gc.nh.gov/rsa/html/LXIII/659/659-4.htm',
 			'checked' => '2026-10-25',
+			'varies' => true,
 		),
 	),
 	'NJ' => array(
@@ -5683,6 +5691,7 @@ return array(
 			'es' => 'Los lugares de votación abren de 7 a. m. a 8 p. m.; New Shoreham abre a las 9 a. m.',
 			'src' => 'https://vote.sos.ri.gov/Elections/PollingPlaceHours',
 			'checked' => '2026-10-25',
+			'varies' => true,
 		),
 		'faq.provisional' => array(
 			'en' => 'You vote a provisional ballot if your name isn\'t on the voter list, you don\'t have an acceptable photo ID, you applied for a mail ballot, or there\'s another question about your eligibility. Your local board of canvassers decides after Election Day whether it counts. Check the result at elections.ri.gov or by calling 401-222-2345.',
@@ -6088,6 +6097,7 @@ return array(
 			'es' => 'Cada condado fija su hora de apertura, y todos los lugares de votación cierran a las 8 p. m. hora del Este y a las 7 p. m. hora del Centro.',
 			'src' => 'https://sos.tn.gov/newsroom/press-releases/everything-voters-need-to-know-for-the-august-6-election-this-thursday',
 			'checked' => '2026-10-25',
+			'varies' => true,
 		),
 		'faq.provisional' => array(
 			'en' => 'If you don\'t bring a photo ID, you vote a provisional ballot. To have it reviewed, show a valid photo ID at your county election commission office within two business days after Election Day and sign an affidavit there.',
@@ -6674,6 +6684,7 @@ return array(
 			'es' => 'Tu pueblo fija la hora de apertura, entre las 5 y las 10 a. m., y se cierra a las 7 p. m.',
 			'src' => 'https://sos.vermont.gov/elections/voters/',
 			'checked' => '2026-10-25',
+			'varies' => true,
 		),
 		'faq.provisional' => array(
 			'en' => 'Vermont rarely uses them. If you\'re not on the checklist, you can register and vote that day. If you say you registered on time, you sign an affidavit and vote.',

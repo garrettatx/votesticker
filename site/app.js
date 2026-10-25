@@ -151,9 +151,14 @@
 	// the default message becomes Vote Nov 3 and "Vote early" leaves the list; "I voted early" stays.
 	function earlyOver(st) { return ((window.VOTE_META || {})[st.abbr] || {}).family === 'early_over'; }
 	var FUTURE_EARLY = { early: true, votatemprano: true };
+	// After Election Day (index.php vote_phase() 'post') the maker offers only what someone did: I voted,
+	// I voted early, I voted by mail, My ballot is in. Plan messages leave the list; I voted is the default.
+	var PHASE = window.VOTE_PHASE || 'pre';
+	var PLAN = { early: true, mail: true, nov3: true, votatemprano: true, votacorreo: true, vota3nov: true, voyavotar: true };
 	function headlinesFor(st) {
 		var keys = Object.keys(HEADLINES).filter(function (k) {
 			var h = HEADLINES[k];
+			if (PHASE === 'post' && PLAN[k]) { return false; }
 			if (FUTURE_EARLY[k] && earlyOver(st)) { return false; }
 			return (!h.early || hasEarly(st)) && (!h.mail || (hasEarly(st) && st.kind === 'mail'));
 		});
@@ -161,10 +166,10 @@
 		return LANG === 'es' ? keys.filter(function (k) { return HEADLINES[k].es; }).concat(keys.filter(function (k) { return !HEADLINES[k].es; })) : keys;
 	}
 	// The state's own message (VOTE EARLY, VOTE BY MAIL, VOTE NOV 3): share images and the ready-made sets.
-	function stateHeadline(st) { return !hasEarly(st) || earlyOver(st) ? 'nov3' : st.kind === 'mail' ? 'mail' : 'early'; }
+	function stateHeadline(st) { return PHASE === 'post' ? 'ivoted' : !hasEarly(st) || earlyOver(st) ? 'nov3' : st.kind === 'mail' ? 'mail' : 'early'; }
 	function defaultHeadline(st) {
 		var k = stateHeadline(st);
-		return LANG === 'es' ? { early: 'votatemprano', mail: 'votacorreo', nov3: 'vota3nov' }[k] : k;
+		return LANG === 'es' ? { early: 'votatemprano', mail: 'votacorreo', nov3: 'vota3nov', ivoted: 'yavote' }[k] : k;
 	}
 	function headlineLines(key, st) {
 		var h = HEADLINES[key] || HEADLINES.nov3;
