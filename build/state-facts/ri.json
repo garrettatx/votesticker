@@ -201,7 +201,7 @@
   },
   "mail": {
    "en": "Look in your mail ballot packet. The Department of State lists an \"I Voted by Mail\" sticker among the items it includes.",
-   "es": "Revisa tu paquete de boleta por correo. El Departamento de Estado incluye un sticker de \"I Voted by Mail\" entre los artículos del paquete.",
+   "es": "Revisa tu paquete de boleta por correo. El Departamento de Estado incluye un sticker de “I Voted by Mail” entre los artículos del paquete.",
    "src": "https://vote.sos.ri.gov/Voter/VoteByMail",
    "checked": "2026-10-24",
    "quote": "I Voted by Mail sticker",

@@ -26,6 +26,14 @@ return array(
 			'summary' => 'En South Dakota, cualquier votante inscrito puede votar con una boleta de voto en ausencia en persona en la oficina del auditor del condado (county auditor), del viernes 18 de septiembre al lunes 2 de noviembre.',
 			'note' => 'El 2 de noviembre, la oficina abre hasta las 5 p. m. o hasta su hora de cierre habitual, lo que sea más tarde.',
 		),
+		'MT' => array(
+			'summary' => 'En Montana, puedes votar con una boleta de voto en ausencia en persona en la oficina electoral de tu condado (county election office), desde el lunes 5 de octubre hasta el mediodía del lunes 2 de noviembre.',
+			'note' => 'Puedes solicitar y recoger tu boleta en la misma visita. El horario de la oficina cambia según el condado, así que consulta el tuyo antes de ir.',
+		),
+		'ND' => array(
+			'summary' => 'En North Dakota, cada condado decide si ofrece votación anticipada. En esta elección la ofrecen los condados de Burleigh, Cass, Grand Forks, Morton, Stark, Stutsman y Ward.',
+			'note' => 'Un condado puede abrir la votación anticipada hasta 15 días antes del Día de las Elecciones. La página de precintos de la Secretaría de Estado publica las fechas, los lugares y los horarios de cada condado. Lleva una identificación válida.',
+		),
 		'WI' => array(
 			'summary' => 'En Wisconsin, puedes votar con una boleta de voto en ausencia en persona en la oficina del secretario (clerk) de tu ciudad, villa o pueblo, desde el martes 20 de octubre y a más tardar el domingo 1 de noviembre.',
 			'note' => 'Cada ciudad, villa y pueblo fija sus propios días y horarios, y algunos terminan antes. Consulta con tu secretario antes de ir.',

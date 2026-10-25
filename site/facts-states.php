@@ -561,6 +561,10 @@ return array(
 				'en' => 'San Diego County',
 				'es' => 'el condado de San Diego',
 			),
+			'www.slocounty.ca.gov' => array(
+				'en' => 'the San Luis Obispo County Clerk-Recorder',
+				'es' => 'la oficina de la secretaria-registradora del condado de San Luis Obispo (Clerk-Recorder)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Online registration closed October 19. You can still register and vote the same day, through Election Day, at your county elections office or any in-person voting location in your county.',
@@ -657,6 +661,12 @@ return array(
 			'es' => 'Los lugares de votación cierran a las 8 p. m. Si todavía estás en la fila a esa hora, no te salgas. Tienes derecho a votar.',
 			'src' => 'https://www.sos.ca.gov/elections/voter-bill-rights',
 			'checked' => '2026-10-21',
+		),
+		'sticker.early' => array(
+			'en' => 'In San Luis Obispo County, yes. The county\'s 2026 student-designed stickers are handed out at both of its elections offices, where you can vote early, and at polling locations during the November election.',
+			'es' => 'En el condado de San Luis Obispo, sí. Los stickers de 2026 diseñados por estudiantes se entregan en sus dos oficinas electorales, donde puedes votar por anticipado, y en los lugares de votación durante la elección de noviembre.',
+			'src' => 'https://www.slocounty.ca.gov/departments/clerk-recorder/news-announcements/slo-elections-office-calls-for-young-artists-to-submit-i-voted-sticker-designs',
+			'checked' => '2026-10-25',
 		),
 		'sticker.mail' => array(
 			'en' => 'Look in your ballot packet. In San Diego County, the November 3 packet includes an "I Voted" sticker with the voting instructions and the two-card ballot. Other counties decide for themselves.',
@@ -5413,7 +5423,7 @@ return array(
 		),
 		'sticker.mail' => array(
 			'en' => 'Look in your mail ballot packet. The Department of State lists an "I Voted by Mail" sticker among the items it includes.',
-			'es' => 'Revisa tu paquete de boleta por correo. El Departamento de Estado incluye un sticker de "I Voted by Mail" entre los artículos del paquete.',
+			'es' => 'Revisa tu paquete de boleta por correo. El Departamento de Estado incluye un sticker de “I Voted by Mail” entre los artículos del paquete.',
 			'src' => 'https://vote.sos.ri.gov/Voter/VoteByMail',
 			'checked' => '2026-10-24',
 		),

@@ -15,6 +15,10 @@
   "www.countynewscenter.com": {
    "en": "San Diego County",
    "es": "el condado de San Diego"
+  },
+  "www.slocounty.ca.gov": {
+   "en": "the San Luis Obispo County Clerk-Recorder",
+   "es": "la oficina de la secretaria-registradora del condado de San Luis Obispo (Clerk-Recorder)"
   }
  },
  "dates": {
@@ -178,6 +182,14 @@
    "src": "https://www.countynewscenter.com/county-mails-ballots-and-opens-more-than-150-ballot-drop-boxes-for-november-general-election/",
    "checked": "2026-10-24",
    "quote": "The official ballot packet will include voting instructions, a two-card ballot and an \"I Voted\" sticker.",
+   "status": "verified"
+  },
+  "early": {
+   "en": "In San Luis Obispo County, yes. The county's 2026 student-designed stickers are handed out at both of its elections offices, where you can vote early, and at polling locations during the November election.",
+   "es": "En el condado de San Luis Obispo, sí. Los stickers de 2026 diseñados por estudiantes se entregan en sus dos oficinas electorales, donde puedes votar por anticipado, y en los lugares de votación durante la elección de noviembre.",
+   "src": "https://www.slocounty.ca.gov/departments/clerk-recorder/news-announcements/slo-elections-office-calls-for-young-artists-to-submit-i-voted-sticker-designs",
+   "checked": "2026-10-25",
+   "quote": "The winning designs will be printed and distributed at both SLO County Elections Offices and at polling locations during the June and November 2026 elections.",
    "status": "verified"
   }
  },
