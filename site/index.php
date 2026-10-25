@@ -466,7 +466,7 @@ function vote_countdown_text( $days ) {
 	return t( '%s days away', $days );
 }
 function vote_countdown( $class = '' ) {
-	$days = (int) round( ( strtotime( VOTE_ELECTION_DAY ) - strtotime( date( 'Y-m-d' ) ) ) / 86400 );
+	$days = (int) round( ( strtotime( VOTE_ELECTION_DAY ) - strtotime( vote_today() ) ) / 86400 );
 	$rel = vote_countdown_text( $days );
 	return '<p class="countdown' . ( $class ? ' ' . $class : '' ) . '" data-countdown data-today="' . vote_e( t( 'Today' ) ) . '" data-tomorrow="' . vote_e( t( 'Tomorrow' ) ) . '" data-away="' . vote_e( t( '%s days away' ) ) . '">'
 		. '<span>' . vote_e( t( 'Election Day:' ) ) . ' <time datetime="' . VOTE_ELECTION_DAY . '">' . vote_e( t( 'Tuesday, Nov. 3' ) ) . '</time></span>'

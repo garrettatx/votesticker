@@ -86,7 +86,9 @@ def main():
         canon = re.search(r'<link rel="canonical" href="([^"]+)"', html)
         if re.search(r'<meta name="robots" content="[^"]*noindex', html) or not canon or canon.group(1) != url:
             continue
-        h = hashlib.sha256(re.sub(r'\?v=\d+', '', html).encode()).hexdigest()[:16]
+        # The countdown label ("12 days away") changes every day; it isn't a content change, so it
+        # stays out of the hash along with the asset version stamps.
+        h = hashlib.sha256(re.sub(r'<span data-countdown-label>[^<]*</span>', '', re.sub(r'\?v=\d+', '', html)).encode()).hexdigest()[:16]
         prev = old.get(path)
         new[path] = [h, prev[1] if prev and prev[0] == h else today]
         urls.append((url, new[path][1]))
