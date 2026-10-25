@@ -90,6 +90,35 @@ Wikimedia Commons had two freely licensed 2024 to 2026 photos (an early voting s
 Cass County, MN election judge with sticker rolls, CC BY 4.0). They license the photos, not the
 designs, and neither names the issuing office. Not enough to build on.
 
+## Election Context
+
+The test for any fact: without it, would the reader understand the sticker or its history less well?
+If not, it belongs in an election guide, not here.
+
+**Include when documented:** the specific election (primary, general, special, local), the issuing
+office, who could get the sticker (early, Election Day, mail voters), the occasion or theme (America
+250), how it was chosen, a change in distribution (first year in mail packets, new pickup sites),
+languages and accessibility versions, and its relation to other editions (new design, reprint, reused
+across elections).
+
+**Numbers only when they answer a sticker question:** designs submitted, contest votes, stickers
+printed or ordered, packets meant to include one, locations offering it. Each keeps its own meaning:
+"printed 100,000" is not "100,000 voters received one". Turnout is optional background and never
+presented as caused by a sticker.
+
+**Context box, same on every collection:** election name, date, issuing office, sticker use, links to
+official election information and certified results. One extra sentence only when it earns its place
+("Used for both the primary and the general election, not made for November").
+
+**Leave out:** candidates, platforms, endorsements, predictions, results tables, campaign controversy,
+political analysis, generic state description, and any claim about voter enthusiasm from photos or
+downloads. The one exception: a documented design change because it looked like campaign material,
+told as a design decision.
+
+**Length:** a card gets one or two sentences; a state or year collection gets the context box and one
+paragraph on what makes it distinctive; a feature story gets more only with original reporting. No
+word counts.
+
 ## Later, If It Proves Useful
 
 - "Meet the designer": five questions (first sketch, the local detail, what was hard at sticker size,
