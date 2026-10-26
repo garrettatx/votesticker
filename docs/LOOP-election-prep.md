@@ -180,3 +180,13 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
 - **Oct 26, push 1 of the day (07:50 CDT):** 10 commits to main after card QA passed (68,880 cards in
   Chromium and WebKit, 0 outside the safe circle). They deploy at today's scheduled build; the dated live
   check follows it.
+- **Oct 26, dated check (daily build).** GitHub hadn't started the 11:05 UTC scheduled run by 16:34
+  UTC, the latest all week, so I dispatched it by hand (run 40360397551, success, deployed 16:35 UTC).
+  IndexNow took 108 URLs (HTTP 200). Live: no PHP warnings on ID, ND, PA or VT in either language,
+  and their post data parses; Texas has the Early voting ends line, the calendar link (`/cal/texas.ics`
+  served as text/calendar, noindex), the in-line rule, the tilt, portrait, copy-description and small
+  previews, and the El Paso sticker story; About has Privacy and Accessibility in both languages; the
+  TX hero still reads EARLY VOTING OCT 19-30. No state's early voting has ended yet (LA and PA end
+  Oct 27, so the Oct 28 build is their first ended day). WA and CO ribbons read DROP BOX BY 8 P.M. NOV
+  3 and TURN IN BY 7 P.M. NOV 3. Next: Oct 27 daily check (dispatch by hand by 7 a.m. if the cron
+  hasn't run), Oct 29 Search Console look.
