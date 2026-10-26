@@ -2382,6 +2382,12 @@ return array(
 			'src' => 'https://sos.ks.gov/elections/important-election-dates.html',
 			'checked' => '2026-10-21',
 		),
+		'dates.mail_return' => array(
+			'en' => 'Drop your ballot at your county election office, an authorized drop box or a polling place before polls close on Tuesday, November 3, and it counts. Mailing it? The Secretary of State says a court order covers this election: mailed ballots postmarked by Election Day count if they arrive by the last mail delivery on Friday, November 6. Kansas law without that order requires arrival by the close of polls, so mail it early.',
+			'es' => 'Deja tu boleta en la oficina electoral de tu condado, en un buzón autorizado o en un lugar de votación antes de que cierren las casillas el martes 3 de noviembre, y cuenta. ¿La vas a mandar por correo? La Secretaría de Estado dice que una orden judicial cubre esta elección: las boletas por correo con matasellos del Día de las Elecciones cuentan si llegan con la última entrega de correo del viernes 6 de noviembre. Sin esa orden, la ley de Kansas exige que llegue antes del cierre de las casillas, así que mándala con tiempo.',
+			'src' => 'https://sos.ks.gov/elections/advance-voting-information.html',
+			'checked' => '2026-10-26',
+		),
 		'dates.early_hours' => array(
 			'en' => 'Each county sets its own advance voting times and places, so check with your county election office. Every county must start in-person advance voting by Tuesday, October 27, and it ends at noon on Monday, November 2.',
 			'es' => 'Cada condado decide sus horarios y lugares de votación anticipada, así que consulta con la oficina electoral de tu condado. Todos los condados deben empezar la votación anticipada en persona a más tardar el martes 27 de octubre, y termina al mediodía del lunes 2 de noviembre.',

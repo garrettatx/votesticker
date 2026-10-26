@@ -62,3 +62,9 @@ Measure each change in Search Console from its recrawl date.
   safe circle, so no words are trimmed. Pixel probe on Texas, every design: corners alpha 0, center and
   top edge 255; Story size hides the option and keeps a solid background; unchecking restores it.
   Save, event and Spanish QA pass.
+- **Oct 26, open fact call: Kansas mail deadline.** The SOS advance-voting page (read Oct 26) gives the
+  statute (close of polls) and the Douglas County injunction (postmarked by Election Day, arriving by
+  the last mail delivery Friday, Nov 6), and says the Court of Appeals denied a stay for the general
+  election. The page now says both, attributed to the Secretary of State, with drop-off before polls
+  close as the sure route and "mail it early." The page's "Beginning in 2026" sentence states the
+  statute the order overrides. Re-read added to the Nov 2 dated check. Facts and Spanish QA pass.
