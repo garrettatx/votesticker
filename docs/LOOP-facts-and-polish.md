@@ -23,7 +23,7 @@ edit files, and every quote is re-read before it goes on a page.
 | 1 | **"In line when polls close" for the 19 states without it** (`polls_rules.line`: DC FL GA IA IL MD MT NC ND NH NM SD TX UT VA VT WA WV WY) | The most useful Election Day sentence, and missing for TX, FL, GA and NC | |
 | 2 | **Keyboard-only walkthrough of the maker and state pages** | About now says the controls work with a keyboard; prove it or fix it | Done Oct 26: passes, no change |
 | 3 | **Sticker story for the 18 states without one** (`sticker.tradition`: AR AZ CA DC DE IA IL IN MA ME NE NJ NV PA SC TX VA WI), official sources only | The sticker is the brand, and the big states have nothing | |
-| 4 | **Tilt control** (Straight, Left, Right) under the swatches; `render` already takes `tilt` | Cheap design range from the October 22 work | |
+| 4 | **Tilt control** (Straight, Left, Right) under the swatches; `render` already takes `tilt` | Cheap design range from the October 22 work | Done Oct 26 |
 | 5 | **"Future voter"** message for kids and families, EN and ES | Useful on Election Day and after it | |
 | 6 | **Guide type:** body text 17 px, line height about 1.6, in the guide sections | Backlog review item; long FAQ answers on phones | |
 
@@ -36,3 +36,11 @@ edit files, and every quote is re-read before it goes on a page.
   text, calendar link, share), and every one shows a focus outline or ring. Enter selects a design
   tile, Space a swatch, and the preview redraws. On the home page, typing "ohi", Down and Enter opens
   /ohio/. No change needed. Not tested here: a real screen reader (VoiceOver), which needs a person.
+- **Oct 26, item 4 (Tilt control).** Straight, Left and Right (Recto, Izquierda, Derecha; full names
+  as aria-labels) under the color name, remembered in the browser, added to the file name
+  (`...-left.png`). The renderer's old `tilt` option overwrote each item's own rotation, which would
+  have flattened the Tilt design and broken Ring; now the fitted content turns about the canvas center
+  (about 7 degrees), so it stays inside the safe circle and designs keep their own angles. Hidden for
+  Half, whose full-bleed bands would show their ends. Checked by pixel hash (three different images
+  per design for Map below, Ring and Sticker) and screenshots; buttons 91 x 44 at 320 px with no
+  sideways scroll. Spanish, SEO and event QA pass.

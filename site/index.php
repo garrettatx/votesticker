@@ -1288,6 +1288,11 @@ $vote_ld = array(
 					<div class="swatches" id="swatches" role="group" aria-label="<?php echo vote_e( t( 'Colors' ) ); ?>"></div>
 					<p class="swatch-name" id="swatch-name" aria-live="polite"></p>
 				</div>
+				<div class="sizes tilts" id="tilts" role="group" aria-label="<?php echo vote_e( t( 'Angle' ) ); ?>">
+					<button type="button" class="size" data-tilt="straight" aria-pressed="true"><?php echo vote_e( t( 'Straight' ) ); ?></button>
+					<button type="button" class="size" data-tilt="left" aria-pressed="false" aria-label="<?php echo vote_e( t( 'Tilt left' ) ); ?>"><?php echo vote_e( t( 'Left' ) ); ?></button>
+					<button type="button" class="size" data-tilt="right" aria-pressed="false" aria-label="<?php echo vote_e( t( 'Tilt right' ) ); ?>"><?php echo vote_e( t( 'Right' ) ); ?></button>
+				</div>
 				<p class="summary" id="summary"></p>
 				<label class="check" id="circle-check"><input type="checkbox" id="circle"> <?php echo vote_e( t( 'Preview circle crop' ) ); ?></label>
 				<div class="actions">

@@ -342,6 +342,9 @@
 		items.forEach(function (it) { it.rot = rot; it.pivot = pv; });
 	}
 	// Tip a group about the center of everything in it (text and boxes only: a rotated shape loses its path).
+	function hasDecor(layout) { return layout.items.some(function (it) { return it.nofit; }); }
+	// The maker's angle control (October 26): about 7 degrees either way.
+	var TILTS = { straight: 0, left: -0.12, right: 0.12 };
 	function tiltAll(items, rot) {
 		var b = bounds(items), pv = [(b[0] + b[2]) / 2, (b[1] + b[3]) / 2];
 		items.forEach(function (it) { it.rot = rot; it.pivot = pv; });
@@ -984,8 +987,11 @@
 	function render(canvas, px, opts) {
 		var st = byAbbr[opts.state], p = paletteFor(opts.palette, st);
 		var layout = LAYOUTS[opts.design](st, p, headlineLines(opts.headline, st), opts.dateText);
-		// An optional tilt of the whole card (radians), on top of whatever the design does.
-		if (opts.tilt) { tiltAll(layout.items, opts.tilt); }
+		// An optional tilt of the whole card (radians), on top of whatever the design does (October 26:
+		// the content turns about the canvas center after fitting, so it stays inside the safe circle and
+		// a design's own rotations survive). Designs with full-bleed decoration (Half) don't tilt: their
+		// bands' ends would show.
+		var turn = opts.tilt && !hasDecor(layout) ? opts.tilt : 0;
 		var f = fit(layout);
 		var tall = opts.tall || (opts.story ? STORY_H : SIZE);
 		canvas.width = px;
@@ -1024,6 +1030,7 @@
 			ctx.fill();
 		}
 		ctx.translate(SIZE / 2, SIZE / 2);
+		if (turn) { ctx.rotate(turn); }
 		ctx.scale(f.s, f.s);
 		ctx.translate(-f.cx, -f.cy);
 		// Decoration first (it may run past the safe circle), then the content.
@@ -1231,6 +1238,7 @@
 		headline: 'nov3',
 		dateEdited: false,
 		design: load('design3', 'tilt'),
+		tilt: load('tilt', 'straight'),
 		palette: load('palette3', 'plum'),
 		dateText: '',
 		circle: load('circle', true),
@@ -1239,7 +1247,7 @@
 	var previewSeq = 0;
 
 	function opts() {
-		return { state: state.state, design: state.design, palette: state.palette, headline: state.headline, dateText: state.dateText.toUpperCase() };
+		return { state: state.state, design: state.design, palette: state.palette, headline: state.headline, dateText: state.dateText.toUpperCase(), tilt: TILTS[state.tilt] || 0 };
 	}
 
 	// The state panel and suggested post text are rendered by index.php in the page's language (October 19);
@@ -1289,6 +1297,13 @@
 			row.appendChild(b);
 		});
 	}
+	function setTilts() {
+		var box = $('tilts');
+		if (!box || !state.state) { return; }
+		var st = byAbbr[state.state];
+		box.hidden = hasDecor(LAYOUTS[state.design](st, paletteFor(state.palette, st), headlineLines(state.headline, st), ''));
+		Array.prototype.forEach.call(box.querySelectorAll('[data-tilt]'), function (x) { x.setAttribute('aria-pressed', String(x.dataset.tilt === state.tilt)); });
+	}
 	function drawSwatches() {
 		var st = byAbbr[state.state];
 		Array.prototype.forEach.call(document.querySelectorAll('#swatches .swatch'), function (b) {
@@ -1298,6 +1313,7 @@
 		});
 		var pal = paletteFor(state.palette, st);
 		$('swatch-name').textContent = pal.id === 'state' ? T('%s colors', nameOf(st)) : T(pal.name);  // "Colores de Texas" in Spanish
+		setTilts();
 	}
 
 	function drawPreview() {
@@ -1313,7 +1329,7 @@
 			if (current.url) { URL.revokeObjectURL(current.url); }
 			current.blob = blob;
 			current.url = URL.createObjectURL(blob);
-			current.name = 'vote-early-' + state.state.toLowerCase() + '-' + state.design + '-' + state.palette + (state.size === 'square' ? '' : '-' + state.size) + '.png';
+			current.name = 'vote-early-' + state.state.toLowerCase() + '-' + state.design + '-' + state.palette + (state.tilt === 'straight' ? '' : '-' + state.tilt) + (state.size === 'square' ? '' : '-' + state.size) + '.png';
 			$('preview').src = current.url;
 			Array.prototype.forEach.call(document.querySelectorAll('#tiny img'), function (img) { img.src = current.url; });
 			link.href = current.url;
@@ -1479,6 +1495,15 @@
 			drawPreview();
 			var top = $('preview').getBoundingClientRect().top;
 			if (top < 0 || top > window.innerHeight * 0.6) { $('preview-wrap').scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' }); }
+		});
+		// Angle: Straight, Left, Right. Hidden for a design that can't tilt (setTilts).
+		Array.prototype.forEach.call(document.querySelectorAll('[data-tilt]'), function (b) {
+			b.addEventListener('click', function () {
+				state.tilt = b.dataset.tilt;
+				save('tilt', state.tilt);
+				setTilts();
+				redraw();
+			});
 		});
 		$('swatches').addEventListener('click', function (e) {
 			var b = e.target.closest('.swatch');

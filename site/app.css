@@ -730,3 +730,8 @@ button.link-quiet:hover { text-decoration: underline; }
 .near li a { display: block; padding: 12px 0 7px; }
 .near li span { margin-top: -4px; padding-bottom: var(--s2); }
 .foot__links a, .hero-meta__official { display: inline-block; padding: 11px 0; margin: -11px 0; }
+
+/* Angle control (October 26): the size buttons' look, a little space above. */
+.tilts { margin: var(--s3) 0 0; }
+.tilts .size { padding-inline: 8px; white-space: nowrap; }
+.tilts[hidden] { display: none; }
