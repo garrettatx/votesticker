@@ -48,6 +48,9 @@ return array(
 			'es' => 'Vota por anticipado desde el lunes 19 de octubre en un lugar de votación anticipada (Early Voting) o de voto en ausencia en persona (Absentee In-Person). Cada uno tiene su propio horario y sus boletas. El Día de las Elecciones, vota en el lugar de votación de tu precinto de 7 a. m. a 8 p. m.',
 			'src' => 'https://www.elections.alaska.gov/voter-information/absentee-and-early-voting/',
 			'checked' => '2026-10-21',
+			'until' => '2026-11-02',
+			'en_after' => 'Early voting ended November 2. On Election Day, vote at your precinct\'s polling place from 7 a.m. to 8 p.m.',
+			'es_after' => 'La votación anticipada terminó el 2 de noviembre. El Día de las Elecciones, vota en el lugar de votación de tu precinto de 7 a. m. a 8 p. m.',
 		),
 		'where.locator_url' => 'https://www.elections.alaska.gov/election-polls/',
 		'where.locator_label' => array(
@@ -458,6 +461,9 @@ return array(
 			'es' => 'Entrégala en cualquier lugar de votación de tu condado a más tardar a las 7 p. m. del martes 3 de noviembre. Por correo, el registrador de tu condado debe recibirla a más tardar a las 7 p. m. de ese día, así que envíala a más tardar el martes 27 de octubre.',
 			'src' => 'https://www.azleg.gov/ars/16/00548.htm',
 			'checked' => '2026-10-21',
+			'until' => '2026-10-27',
+			'en_after' => 'Drop it off at any polling place or voting location in your county by 7 p.m. on Tuesday, November 3. By mail, your county recorder must receive it by 7 p.m. that day, so it\'s too late to count on the mail now.',
+			'es_after' => 'Entrégala en cualquier lugar de votación de tu condado a más tardar a las 7 p. m. del martes 3 de noviembre. Por correo, el registrador de tu condado debe recibirla a más tardar a las 7 p. m. de ese día, así que ya es tarde para confiar en el correo.',
 		),
 		'dates.cure' => array(
 			'en' => 'Signature doesn\'t match? You can fix it until the 5th business day after the election. Forgot to sign? You have until 7 p.m. on Election Day.',
@@ -620,6 +626,9 @@ return array(
 			'es' => 'Tu boleta te llega por correo, y también puedes votar en persona. Los lugares de votación anticipada y, en los condados de la Voter\'s Choice Act, los centros de votación abren antes del Día de las Elecciones, y los lugares de votación anticipada en persona de todo el estado abren el sábado 31 de octubre. El Día de las Elecciones, los lugares de votación abren de 7 a. m. a 8 p. m.',
 			'src' => 'https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026',
 			'checked' => '2026-10-21',
+			'until' => '2026-10-31',
+			'en_after' => 'Your ballot comes to you by mail, and you can vote in person instead. On Election Day, polls are open 7 a.m. to 8 p.m.',
+			'es_after' => 'Tu boleta te llega por correo, y también puedes votar en persona. El Día de las Elecciones, los lugares de votación abren de 7 a. m. a 8 p. m.',
 		),
 		'how.first_time' => array(
 			'en' => 'Missed the deadline? Go to your county elections office, a vote center or a polling place to register conditionally and vote a provisional ballot, through Election Day. It\'s often called Same Day Voter Registration.',
@@ -1625,8 +1634,8 @@ return array(
 		),
 		'id.rule' => 'no_id',
 		'mail.who' => array(
-			'en' => 'Every registered voter gets a ballot in the mail, no request needed. Ballots arrive by Friday, October 16. Didn\'t get yours, or made a mistake? Ask your County Elections Division for a replacement.',
-			'es' => 'Cada votante registrado recibe una boleta por correo, sin tener que pedirla. Las boletas llegan a más tardar el viernes 16 de octubre. ¿No te llegó o te equivocaste? Pide una de reemplazo a la División de Elecciones de tu condado.',
+			'en' => 'Every registered voter gets a ballot in the mail, no request needed. Ballots were mailed to arrive by Friday, October 16. Didn\'t get yours, or made a mistake? Ask your County Elections Division for a replacement.',
+			'es' => 'Cada votante registrado recibe una boleta por correo, sin tener que pedirla. Las boletas se enviaron para llegar a más tardar el viernes 16 de octubre. ¿No te llegó o te equivocaste? Pide una de reemplazo a la División de Elecciones de tu condado.',
 			'src' => 'https://elections.hawaii.gov/wp-content/uploads/VoterGuide_2026_General_English.pdf',
 			'checked' => '2026-10-21',
 		),
@@ -1877,6 +1886,9 @@ return array(
 			'es' => 'Vota por anticipado en un lugar de votación anticipada o de voto en ausencia en persona de tu condado hasta el 30 de octubre. El Día de las Elecciones, ve al lugar de votación que te corresponde según tu domicilio, de 8 a. m. a 8 p. m.',
 			'src' => 'https://voteidaho.gov/casting-your-ballot/',
 			'checked' => '2026-10-21',
+			'until' => '2026-10-30',
+			'en_after' => 'Early voting ended October 30. On Election Day, go to your assigned voting location, based on your home address, from 8 a.m. to 8 p.m.',
+			'es_after' => 'La votación anticipada terminó el 30 de octubre. El Día de las Elecciones, ve al lugar de votación que te corresponde según tu domicilio, de 8 a. m. a 8 p. m.',
 		),
 		'how.first_time' => array(
 			'en' => 'Registering at the polls? Bring a current photo ID and proof of residence, such as a lease, mortgage or rental agreement. Register using your main Idaho home address.',
@@ -3352,6 +3364,9 @@ return array(
 			'es' => 'Vota por anticipado en persona desde el viernes 18 de septiembre. Desde el viernes 16 de octubre, la votación anticipada funciona como el Día de las Elecciones: metes tu boleta directo en la máquina contadora. Cada condado tiene por lo menos un lugar de votación anticipada.',
 			'src' => 'https://www.sos.mn.gov/elections-voting/other-ways-to-vote/vote-early-in-person/',
 			'checked' => '2026-10-21',
+			'until' => '2026-11-02',
+			'en_after' => 'Early voting in person ended Monday, November 2.',
+			'es_after' => 'La votación anticipada en persona terminó el lunes 2 de noviembre.',
 		),
 		'how.first_time' => array(
 			'en' => 'Not registered? Register at your polling place on Election Day. Bring a Minnesota driver\'s license or ID with your current address, or a photo ID plus a bill or lease with your current address. A registered voter from your precinct can also go with you and vouch for your address.',
@@ -4429,6 +4444,9 @@ return array(
 			'es' => 'Del 24 de octubre al 1 de noviembre, escoge el centro de votación anticipada de tu condado que te quede mejor y vota en una máquina. El Día de las Elecciones, vota en tu propio lugar de votación, que viene impreso en la boleta de muestra que te envía tu condado.',
 			'src' => 'https://www.nj.gov/state/elections/vote-early-voting.shtml',
 			'checked' => '2026-10-21',
+			'until' => '2026-11-01',
+			'en_after' => 'Early voting ended November 1. On Election Day, vote at your own polling place, which is printed on the sample ballot your county mails you.',
+			'es_after' => 'La votación anticipada terminó el 1 de noviembre. El Día de las Elecciones, vota en tu propio lugar de votación, que viene impreso en la boleta de muestra que te envía tu condado.',
 		),
 		'how.first_time' => array(
 			'en' => 'Not sure you\'re registered or that your address is current? Look yourself up with Voter Search before you go.',
@@ -4583,6 +4601,9 @@ return array(
 			'es' => 'Vota por anticipado en persona en la oficina de la secretaría de tu condado (County Clerk) desde el 6 de octubre. El 17 de octubre abren más centros de votación anticipada en todo el estado, y la votación anticipada termina el sábado 31 de octubre. Consulta con la secretaría de tu condado los lugares y horarios.',
 			'src' => 'https://www.sos.nm.gov/voting-and-elections/voting-faqs/early-voting-in-person/',
 			'checked' => '2026-10-21',
+			'until' => '2026-10-31',
+			'en_after' => 'Early voting ended Saturday, October 31. Check your County Clerk for Election Day sites and hours.',
+			'es_after' => 'La votación anticipada terminó el sábado 31 de octubre. Consulta con la secretaría de tu condado (County Clerk) los lugares y horarios del Día de las Elecciones.',
 		),
 		'how.first_time' => array(
 			'en' => 'Registering or updating your registration the same day you vote? Bring a photo ID from the federal government, a state, a tribe, nation or pueblo, or a school. If it doesn\'t show your current address, also bring a utility bill, bank statement, paycheck or similar document from the last 90 days with your name and address.',
@@ -4869,6 +4890,9 @@ return array(
 			'es' => 'Por correo: con matasellos del martes 3 de noviembre o antes, y recibida a más tardar el martes 10 de noviembre de 2026. En persona: en la junta electoral de tu condado o en cualquier lugar de votación de tu condado a más tardar a las 9 p. m. del 3 de noviembre, o en un centro de votación anticipada de tu condado del 24 de octubre al 1 de noviembre.',
 			'src' => 'https://elections.ny.gov/request-ballot',
 			'checked' => '2026-10-21',
+			'until' => '2026-11-01',
+			'en_after' => 'Mail: postmarked by Tuesday, November 3, and received by Tuesday, November 10, 2026. In person: at your county board of elections or any poll site in your county by 9 p.m. on November 3.',
+			'es_after' => 'Por correo: con matasellos del martes 3 de noviembre o antes, y recibida a más tardar el martes 10 de noviembre de 2026. En persona: en la junta electoral de tu condado o en cualquier lugar de votación de tu condado a más tardar a las 9 p. m. del 3 de noviembre.',
 		),
 		'dates.early_hours' => array(
 			'en' => 'Hours are set by your county board of elections. Check your county\'s schedule before you go.',
@@ -4881,6 +4905,9 @@ return array(
 			'es' => 'Durante la votación anticipada, del 24 de octubre al 1 de noviembre, puedes ir a cualquiera de los centros de votación anticipada que te asignaron en tu condado. En la ciudad de New York te asignan un solo centro de votación anticipada. Marcas y escaneas tu boleta igual que el Día de las Elecciones.',
 			'src' => 'https://elections.ny.gov/early-voting',
 			'checked' => '2026-10-21',
+			'until' => '2026-11-01',
+			'en_after' => 'Early voting ran October 24 to November 1.',
+			'es_after' => 'La votación anticipada fue del 24 de octubre al 1 de noviembre.',
 		),
 		'how.first_time' => array(
 			'en' => 'Use the Board of Elections\' poll site and voter lookup to confirm you\'re registered and to find both your early voting site and your Election Day polling place.',
@@ -4937,6 +4964,9 @@ return array(
 			'es' => 'Puedes entregar tu boleta en cualquier centro de votación anticipada de tu condado del 24 de octubre al 1 de noviembre, o en cualquier lugar de votación de tu condado o en la junta electoral de tu condado a más tardar a las 9 p. m. del 3 de noviembre.',
 			'src' => 'https://elections.ny.gov/request-ballot',
 			'checked' => '2026-10-21',
+			'until' => '2026-11-01',
+			'en_after' => 'You can hand in your ballot at any poll site in your county or your county board of elections by 9 p.m. on November 3.',
+			'es_after' => 'Puedes entregar tu boleta en cualquier lugar de votación de tu condado o en la junta electoral de tu condado a más tardar a las 9 p. m. del 3 de noviembre.',
 		),
 		'mail.witness' => array(
 			'en' => 'Put your ballot in the Security Envelope, then sign and date the outside of that envelope and seal it. It goes in the prepaid Return Envelope, so no stamp needed.',
@@ -6300,6 +6330,9 @@ return array(
 			'es' => 'Tu boleta te llega por correo, pero también puedes votar en persona: por anticipado del 20 al 30 de octubre, o el Día de las Elecciones de 7 a. m. a 8 p. m. Cada condado tiene por lo menos un lugar de votación el Día de las Elecciones.',
 			'src' => 'https://vote.utah.gov/wp-content/uploads/2026/09/2026-Voter-Information-Pamphlet.pdf',
 			'checked' => '2026-10-21',
+			'until' => '2026-10-30',
+			'en_after' => 'Your ballot comes in the mail, but you can also vote in person on Election Day from 7 a.m. to 8 p.m. Every county has at least one Election Day polling location.',
+			'es_after' => 'Tu boleta te llega por correo, pero también puedes votar en persona el Día de las Elecciones de 7 a. m. a 8 p. m. Cada condado tiene por lo menos un lugar de votación el Día de las Elecciones.',
 		),
 		'how.first_time' => array(
 			'en' => 'Registering for the first time and voting by mail? Your county clerk may ask you to put a copy of your ID in the return envelope with your ballot. Check the instructions that come with it.',
@@ -6646,8 +6679,8 @@ return array(
 		),
 		'id.rule' => 'no_id',
 		'mail.who' => array(
-			'en' => 'Every active, registered voter gets a general election ballot in the mail without asking. The state mails them by October 1. Moved, or didn\'t get yours? Ask your town clerk for another; you\'ll sign an Affidavit of No Ballot Cast.',
-			'es' => 'Cada votante activo y registrado recibe por correo una boleta para la elección general sin pedirla. El estado las envía a más tardar el 1 de octubre. ¿Te mudaste o no te llegó? Pide otra al secretario de tu municipio; vas a firmar una declaración jurada de que no has votado (Affidavit of No Ballot Cast).',
+			'en' => 'Every active, registered voter gets a general election ballot in the mail without asking. The state mailed them by October 1. Moved, or didn\'t get yours? Ask your town clerk for another; you\'ll sign an Affidavit of No Ballot Cast.',
+			'es' => 'Cada votante activo y registrado recibe por correo una boleta para la elección general sin pedirla. El estado las envió a más tardar el 1 de octubre. ¿Te mudaste o no te llegó? Pide otra al secretario de tu municipio; vas a firmar una declaración jurada de que no has votado (Affidavit of No Ballot Cast).',
 			'src' => 'https://sos.vermont.gov/elections/voters/',
 			'checked' => '2026-10-21',
 		),

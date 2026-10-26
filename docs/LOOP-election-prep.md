@@ -24,8 +24,8 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
 | 3 | Post-election checklist (`docs/post-election-release.md`) checked against the build; build what's missing (post-election home FAQ) | FAQ done Oct 25; rest of checklist next |
 | 4 | "Build and QA, no deploy" input on the daily workflow, so the Nov 4 run can be tested once ahead | Built Oct 25 |
 | 5 | "First time voter" message in the maker (English and Spanish) | Done Oct 25 |
-| 6 | Ballot trackers: confirm IN; look for IL, MO, WY | |
-| 7 | Open fact calls that touch the Nov 2 banner (NJ, MI, KS, VT, WY, MT) | |
+| 6 | Ballot trackers: confirm IN; look for IL, MO, WY | Checked Oct 25: none to add |
+| 7 | Open fact calls that touch the Nov 2 banner (NJ, MI, KS, VT, WY, MT) | Banner scan clean Oct 25; expired-date sweep done |
 | 8 | Mail-state ribbon and date line field (WA "BY 8 P.M. NOV 3") | |
 
 ## Dated Checks
@@ -71,3 +71,12 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
 - **Oct 25, item 5:** "FIRST TIME / VOTER" (English) and "MI PRIMER / VOTO" (Spanish, natural "my first vote"; "PRIMERA VEZ"
   runs over the 10-character line) in the maker, with the state name and year on the date bar; post text uses the I voted
   version. Stays after Election Day. Card QA: 68,880 cards, none outside the safe circle.
+- **Oct 25, item 6:** No tracker to add. IN: in.gov's absentee page names none (the portal shows registration and
+  applications); IL: no statewide tracker (SB 60 and earlier bills didn't pass as far as found); MO: none, ask the local
+  election authority; WY: sos.wyo.gov sends voters to the county clerk. Pages keep no tracker link for these four.
+- **Oct 25, item 7:** All 103 Nov 2 banners scanned: no October dates, no today/tomorrow. New `scripts/qa_stale.py` flags
+  forward phrases with a past date. It found 15 already-wrong "Can I still register?" answers (AL, PA, SD, NY, MA, NE as
+  "No"; CA, IA, ID, IL, MI, UT, VA, WY past tense) and fixed them now; CO, WA, WI, NC get `until` after-wording in
+  `build/faq_text.py` (new optional third item, `vote_faq_text()` in index.php). Early-voting text with after-wording: AK,
+  CA, MN, NJ, NM, NY (3 facts), UT, AZ mail return; HI and VT past tense; IL note drops "now"; related-states heading says
+  "Began" once the date passes. Scan after: Nov 3 and Nov 4 clean apart from VT's past-tense line (scan false positive).

@@ -61,7 +61,10 @@
    "src": "https://www.sos.nm.gov/voting-and-elections/voting-faqs/early-voting-in-person/",
    "checked": "2026-10-21",
    "quote": "Early voting ends the Saturday before the election.",
-   "status": "verified"
+   "status": "verified",
+   "until": "2026-10-31",
+   "en_after": "Early voting ended Saturday, October 31. Check your County Clerk for Election Day sites and hours.",
+   "es_after": "La votación anticipada terminó el sábado 31 de octubre. Consulta con la secretaría de tu condado (County Clerk) los lugares y horarios del Día de las Elecciones."
   },
   "first_time": {
    "en": "Registering or updating your registration the same day you vote? Bring a photo ID from the federal government, a state, a tribe, nation or pueblo, or a school. If it doesn't show your current address, also bring a utility bill, bank statement, paycheck or similar document from the last 90 days with your name and address.",

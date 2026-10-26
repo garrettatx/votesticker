@@ -23,8 +23,8 @@ A = {
                   "Los lugares de votación abren de 7 a. m. a 7 p. m. Algunos lugares de votación en la zona horaria del Este usan ese horario en hora del Este."),
         'id': ("Yes. Bring a photo ID, such as an Alabama driver's license, a U.S. passport, or a free Alabama Photo Voter ID card. Without one, you can vote a regular ballot if two poll workers can identify you.",
                "Sí. Lleva una identificación con foto, como una licencia de conducir de Alabama, un pasaporte de EE. UU. o la credencial gratuita Alabama Photo Voter ID. Si no tienes una, puedes votar con una boleta regular si dos trabajadores electorales te identifican."),
-        'reg': ("Only through October 19, 2026, online, by mail, or in person. Alabama has no Election Day registration.",
-                "Solo hasta el 19 de octubre de 2026, en línea, por correo o en persona. Alabama no tiene registro el Día de las Elecciones."),
+        'reg': ("No, not for the November 3 election. The deadline was October 19, 2026, and Alabama has no Election Day registration.",
+                "No para la elección del 3 de noviembre. La fecha límite fue el 19 de octubre de 2026, y Alabama no tiene registro el Día de las Elecciones."),
         'selfie': ("Yes, you can take a photo of your own ballot. Other photos inside the polling place are not allowed.",
                    "Sí, puedes tomarle foto a tu propia boleta. No se permiten otras fotos dentro del lugar de votación."),
     },
@@ -61,8 +61,8 @@ A = {
                  "Todos los votantes reciben una boleta por correo. Envíala con matasellos del 3 de noviembre o antes para que llegue en un plazo de siete días, o entrégala a más tardar a las 8 p. m. de ese día. Los lugares y centros de votación abren de 7 a. m. a 8 p. m. el 3 de noviembre."),
         'id': ("Usually not. Most California voters don't show ID. Some first-time voters who registered without an ID number may be asked for one, such as a driver's license, passport, or utility bill.",
                "Por lo general, no. La mayoría de los votantes de California no muestran identificación. A algunos votantes nuevos que se registraron sin un número de identificación se les puede pedir una, como una licencia de conducir, un pasaporte o un recibo de servicios."),
-        'reg': ("Yes. The regular deadline is October 19, 2026. After that, you can register and vote the same day at your county elections office, a vote center, or a polling place, through Election Day.",
-                "Sí. La fecha límite regular es el 19 de octubre de 2026. Después, puedes registrarte y votar el mismo día en la oficina electoral de tu condado, en un centro de votación o en un lugar de votación, hasta el Día de las Elecciones."),
+        'reg': ("Yes. The regular deadline was October 19, 2026. You can still register and vote the same day at your county elections office, a vote center, or a polling place, through Election Day.",
+                "Sí. La fecha límite regular fue el 19 de octubre de 2026. Todavía puedes registrarte y votar el mismo día en la oficina electoral de tu condado, en un centro de votación o en un lugar de votación, hasta el Día de las Elecciones."),
         'selfie': ("Yes. Since 2017, California law lets you photograph your own ballot and share it. You can't photograph other voters going in or out.",
                    "Sí. Desde 2017, la ley de California te permite tomarle foto a tu propia boleta y compartirla. No puedes tomar fotos de otros votantes al entrar o salir."),
     },
@@ -72,7 +72,10 @@ A = {
         'id': ("If you vote in person, yes. Most people bring a Colorado driver's license or ID card, and many other IDs are accepted.",
                "Si votas en persona, sí. La mayoría lleva una licencia de conducir o una identificación de Colorado, y se aceptan muchas otras identificaciones."),
         'reg': ("Yes. Register online or by mail by October 26, 2026 to get a ballot by mail. After that, you can register and vote in person at a voter service and polling center through Election Day.",
-                "Sí. Regístrate en línea o por correo a más tardar el 26 de octubre de 2026 para recibir una boleta por correo. Después, puedes registrarte y votar en persona en un centro de votación y servicio al votante hasta el Día de las Elecciones."),
+                "Sí. Regístrate en línea o por correo a más tardar el 26 de octubre de 2026 para recibir una boleta por correo. Después, puedes registrarte y votar en persona en un centro de votación y servicio al votante hasta el Día de las Elecciones.",
+                # After the date passes (October 25): what the page says instead.
+                {'until': '2026-10-26', 'en': "Yes, in person. Online and mail registration to get a ballot by mail closed October 26, 2026. You can still register and vote in person at a voter service and polling center through Election Day.",
+                 'es': "Sí, en persona. El registro en línea y por correo para recibir una boleta por correo cerró el 26 de octubre de 2026. Todavía puedes registrarte y votar en persona en un centro de votación y servicio al votante hasta el Día de las Elecciones."}),
         'selfie': ("Yes. A 2017 law lets you show your voted ballot to others, including in a photo. County clerks can set reasonable limits on photos at voting centers.",
                    "Sí. Una ley de 2017 te permite mostrar tu boleta votada a otras personas, también en una foto. Las oficinas electorales de los condados pueden poner límites razonables a las fotos en los centros de votación."),
     },
@@ -125,8 +128,8 @@ A = {
                   "Los lugares de votación abren de 8 a. m. a 8 p. m. en la zona horaria del Centro y de 7 a. m. a 7 p. m. en la zona horaria de la Montaña."),
         'id': ("Yes. Show a photo ID with your name and photo, such as a Nebraska driver's license, a state ID, or a U.S. passport. Without one, you vote a provisional ballot.",
                "Sí. Muestra una identificación con tu nombre y foto, como una licencia de conducir de Nebraska, una identificación estatal o un pasaporte de EE. UU. Si no tienes una, votas con una boleta provisional."),
-        'reg': ("Only in person at your county election office, until 6 p.m. on October 23, 2026. Online and mail registration closed October 16, and Nebraska has no Election Day registration.",
-                "Solo en persona en la oficina electoral de tu condado, hasta las 6 p. m. del 23 de octubre de 2026. El registro en línea y por correo cerró el 16 de octubre, y Nebraska no tiene registro el Día de las Elecciones."),
+        'reg': ("No, not for the November 3 election. In-person registration at county election offices closed at 6 p.m. on October 23, 2026, online and mail registration closed October 16, and Nebraska has no Election Day registration.",
+                "No para la elección del 3 de noviembre. El registro en persona en las oficinas electorales de los condados cerró a las 6 p. m. del 23 de octubre de 2026, el registro en línea y por correo cerró el 16 de octubre, y Nebraska no tiene registro el Día de las Elecciones."),
         'selfie': ("Yes. Nebraska law lets you photograph your own marked ballot and share the photo. No one may pressure you to show your ballot.",
                    "Sí. La ley de Nebraska te permite tomarle foto a tu propia boleta marcada y compartir la foto. Nadie puede presionarte para que muestres tu boleta."),
     },
@@ -171,8 +174,8 @@ A = {
                   "Los lugares de votación abren de 6 a. m. a 9 p. m. La votación anticipada es del 24 de octubre al 1 de noviembre, con horarios que fija cada condado."),
         'id': ("Usually not; you sign the poll book. Some first-time voters who registered by mail may need a photo ID, a utility bill, a bank statement, or a paycheck.",
                "Por lo general, no; firmas el registro de votantes. Algunos votantes nuevos que se registraron por correo podrían necesitar una identificación con foto, un recibo de servicios, un estado de cuenta bancario o un talón de pago."),
-        'reg': ("Until October 24, 2026. Your application must reach your county board of elections by then, and New York has no Election Day registration.",
-                "Hasta el 24 de octubre de 2026. Tu solicitud debe llegar a la junta electoral de tu condado (county board of elections) a más tardar ese día, y New York no tiene registro el Día de las Elecciones."),
+        'reg': ("No, not for the November 3 election. Your application had to reach your county board of elections by October 24, 2026, and New York has no Election Day registration.",
+                "No para la elección del 3 de noviembre. Tu solicitud tenía que llegar a la junta electoral de tu condado (county board of elections) a más tardar el 24 de octubre de 2026, y New York no tiene registro el Día de las Elecciones."),
         'selfie': ("No. New York law makes it a misdemeanor to show your marked ballot to anyone in a way that reveals your votes, and that includes a ballot selfie.",
                    "No. En New York es un delito menor mostrar tu boleta marcada a cualquier persona de una forma que revele tus votos, y eso incluye una selfie con tu boleta."),
     },
@@ -182,7 +185,10 @@ A = {
         'id': ("You'll be asked for a photo ID, such as a North Carolina driver's license, a U.S. passport, or a free voter photo ID card. If you can't show one, you can still vote by filling out an ID Exception Form.",
                "Te pedirán una identificación con foto, como una licencia de conducir de North Carolina, un pasaporte de EE. UU. o una credencial gratuita de votante con foto. Si no puedes mostrar una, todavía puedes votar si llenas un formulario de excepción de identificación (ID Exception Form)."),
         'reg': ("Yes, during early voting, through October 31. You can register and vote at the same time at an early voting site, but not on Election Day.",
-                "Sí, durante la votación anticipada, hasta el 31 de octubre. Puedes registrarte y votar al mismo tiempo en un centro de votación anticipada, pero no el Día de las Elecciones."),
+                "Sí, durante la votación anticipada, hasta el 31 de octubre. Puedes registrarte y votar al mismo tiempo en un centro de votación anticipada, pero no el Día de las Elecciones.",
+                # After the date passes (October 25): what the page says instead.
+                {'until': '2026-10-31', 'en': "No, not for the November 3 election. Same-day registration ended with early voting on October 31, and North Carolina has no Election Day registration.",
+                 'es': "No para la elección del 3 de noviembre. El registro el mismo día terminó con la votación anticipada el 31 de octubre, y North Carolina no tiene registro el Día de las Elecciones."}),
         'selfie': ("No. North Carolina law bars photographing a voted ballot. It also bars photographing voters in the voting area without their permission and the chief judge's.",
                    "No. La ley de North Carolina prohíbe tomarle foto a una boleta votada. También prohíbe tomar fotos de los votantes en el área de votación sin su permiso y el del juez principal (chief judge)."),
     },
@@ -245,16 +251,16 @@ A.update({
                   "Los lugares de votación abren de 8 a. m. a 8 p. m., hora local, y algunos condados abren a las 7 a. m. Idaho tiene dos zonas horarias."),
         'id': ("You'll be asked for a photo ID, such as an Idaho driver's license, a U.S. passport, or a tribal ID. If you don't have one, you can sign an identity affidavit instead.",
                "Te pedirán una identificación con foto, como una licencia de conducir de Idaho, un pasaporte de EE. UU. o una identificación tribal. Si no tienes una, puedes firmar una declaración jurada de identidad en su lugar."),
-        'reg': ("Yes. Preregistration is open until October 23, 2026. After that, you can register and vote in person during early voting or on Election Day with a photo ID and proof of where you live.",
-                "Sí. El registro previo está abierto hasta el 23 de octubre de 2026. Después, puedes registrarte y votar en persona durante la votación anticipada o el Día de las Elecciones con una identificación con foto y un comprobante de domicilio."),
+        'reg': ("Yes. Preregistration closed October 23, 2026. You can still register and vote in person during early voting or on Election Day with a photo ID and proof of where you live.",
+                "Sí. El registro previo cerró el 23 de octubre de 2026. Todavía puedes registrarte y votar en persona durante la votación anticipada o el Día de las Elecciones con una identificación con foto y un comprobante de domicilio."),
     },
     'IL': {
         'polls': ("Polls are open 6 a.m. to 7 p.m.",
                   "Los lugares de votación abren de 6 a. m. a 7 p. m."),
         'id': ("Usually not; most voters give their name and sign in. If you first registered by mail and haven't proven your identity yet, you may need to show ID.",
                "Por lo general, no; la mayoría de los votantes dan su nombre y firman. Si te registraste por primera vez por correo y todavía no has comprobado tu identidad, es posible que tengas que mostrar una identificación."),
-        'reg': ("Yes. Online registration is open through October 18, 2026. After that, you can register and vote in person at grace period sites through Election Day.",
-                "Sí. El registro en línea está abierto hasta el 18 de octubre de 2026. Después, puedes registrarte y votar en persona en los lugares del periodo de gracia (grace period) hasta el Día de las Elecciones."),
+        'reg': ("Yes. Online registration closed October 18, 2026. You can still register and vote in person at grace period sites through Election Day.",
+                "Sí. El registro en línea cerró el 18 de octubre de 2026. Todavía puedes registrarte y votar en persona en los lugares del periodo de gracia (grace period) hasta el Día de las Elecciones."),
     },
     'IN': {
         'polls': ("Polls are open 6 a.m. to 6 p.m. local time. Indiana has two time zones.",
@@ -268,8 +274,8 @@ A.update({
                   "Los lugares de votación abren de 7 a. m. a 8 p. m."),
         'id': ("Yes. Show an ID such as an Iowa driver's license, a U.S. passport, or the free Iowa Voter ID Card. Without one, another registered voter can vouch for you.",
                "Sí. Muestra una identificación, como una licencia de conducir de Iowa, un pasaporte de EE. UU. o la credencial gratuita Iowa Voter ID Card. Si no tienes una, otro votante registrado puede dar fe de quién eres."),
-        'reg': ("Yes. Preregistration closes October 19, 2026. After that, you can register and vote at your polling place on Election Day with ID and proof of where you live.",
-                "Sí. El registro previo cierra el 19 de octubre de 2026. Después, puedes registrarte y votar en tu lugar de votación el Día de las Elecciones con una identificación y un comprobante de domicilio."),
+        'reg': ("Yes. Preregistration closed October 19, 2026. You can still register and vote at your polling place on Election Day with ID and proof of where you live.",
+                "Sí. El registro previo cerró el 19 de octubre de 2026. Todavía puedes registrarte y votar en tu lugar de votación el Día de las Elecciones con una identificación y un comprobante de domicilio."),
         'selfie': ("Yes, with limits. Iowa bans photos and showing your voted ballot only when it's for an illegal purpose or it interferes with other voters or the polling place.",
                    "Sí, con límites. Iowa prohíbe las fotos y mostrar tu boleta votada solo cuando es con un fin ilegal o cuando interfiere con otros votantes o con el lugar de votación."),
     },
@@ -318,8 +324,8 @@ A.update({
                   "Los lugares de votación cierran a las 8 p. m. Abren a más tardar a las 7 a. m., y algunas ciudades y municipios abren desde las 5:45 a. m."),
         'id': ("Usually not. Some first-time voters who registered by mail must show a photo ID or a document like a utility bill, and poll workers may ask anyone for ID.",
                "Por lo general, no. Algunos votantes nuevos que se registraron por correo deben mostrar una identificación con foto o un documento como un recibo de servicios, y los trabajadores electorales pueden pedirle una identificación a cualquier votante."),
-        'reg': ("Until October 24, 2026, at 5 p.m., or by mail postmarked that day. Massachusetts has no Election Day registration.",
-                "Hasta el 24 de octubre de 2026 a las 5 p. m., o por correo con matasellos de ese día. Massachusetts no tiene registro el Día de las Elecciones."),
+        'reg': ("No, not for the November 3 election. The deadline was 5 p.m. on October 24, 2026 (or a mailed form postmarked that day), and Massachusetts has no Election Day registration.",
+                "No para la elección del 3 de noviembre. La fecha límite fue el 24 de octubre de 2026 a las 5 p. m. (o un formulario enviado por correo con matasellos de ese día), y Massachusetts no tiene registro el Día de las Elecciones."),
         'selfie': ("No. Massachusetts law makes it a crime to let anyone see how you marked your ballot for a purpose the law doesn't allow, and a photo you share would show it.",
                    "No. En Massachusetts es un delito dejar que alguien vea cómo marcaste tu boleta con un fin que la ley no permite, y una foto que compartas lo mostraría."),
     },
@@ -328,8 +334,8 @@ A.update({
                   "Los lugares de votación abren de 7 a. m. a 8 p. m., hora local."),
         'id': ("If you have a photo ID, such as a driver's license, a U.S. passport, or a student ID, you'll be asked to show it. If you don't have one, you can sign an affidavit and vote.",
                "Si tienes una identificación con foto, como una licencia de conducir, un pasaporte de EE. UU. o una identificación de estudiante, te pedirán que la muestres. Si no tienes una, puedes firmar una declaración jurada y votar."),
-        'reg': ("Yes. Online and mail registration closes October 19, 2026. After that, you can register in person at your city or township clerk's office through 8 p.m. on Election Day, with proof of residency.",
-                "Sí. El registro en línea y por correo cierra el 19 de octubre de 2026. Después, puedes registrarte en persona en la oficina del secretario de tu ciudad o municipio (clerk) hasta las 8 p. m. del Día de las Elecciones, con un comprobante de domicilio."),
+        'reg': ("Yes. Online and mail registration closed October 19, 2026. You can still register in person at your city or township clerk's office through 8 p.m. on Election Day, with proof of residency.",
+                "Sí. El registro en línea y por correo cerró el 19 de octubre de 2026. Todavía puedes registrarte en persona en la oficina del secretario de tu ciudad o municipio (clerk) hasta las 8 p. m. del Día de las Elecciones, con un comprobante de domicilio."),
     },
     'MN': {
         'polls': ("Polls are open 7 a.m. to 8 p.m. Some small towns open later, but no later than 10 a.m.",
@@ -369,8 +375,8 @@ A.update({
                   "Los lugares de votación abren de 7 a. m. a 8 p. m."),
         'id': ("Usually not. If it's your first time voting at your polling place, bring an ID, such as a driver's license or a utility bill.",
                "Por lo general, no. Si es la primera vez que votas en tu lugar de votación, lleva una identificación, como una licencia de conducir o un recibo de servicios."),
-        'reg': ("Only through October 19, 2026, online, by mail, or in person. Pennsylvania has no Election Day registration.",
-                "Solo hasta el 19 de octubre de 2026, en línea, por correo o en persona. Pennsylvania no tiene registro el Día de las Elecciones."),
+        'reg': ("No, not for the November 3 election. The deadline was October 19, 2026, and Pennsylvania has no Election Day registration.",
+                "No para la elección del 3 de noviembre. La fecha límite fue el 19 de octubre de 2026, y Pennsylvania no tiene registro el Día de las Elecciones."),
     },
     'RI': {
         'polls': ("Polls are open 7 a.m. to 8 p.m. In New Shoreham, on Block Island, they open at 9 a.m.",
@@ -394,8 +400,8 @@ A.update({
                   "Los lugares de votación abren de 7 a. m. a 7 p. m., hora local. South Dakota tiene dos zonas horarias."),
         'id': ("You'll be asked for a photo ID, such as a South Dakota driver's license. Without one, you can sign an affidavit and still vote a regular ballot.",
                "Te pedirán una identificación con foto, como una licencia de conducir de South Dakota. Si no tienes una, puedes firmar una declaración jurada y votar con una boleta regular."),
-        'reg': ("Only through October 19, 2026. Your signed form must reach your county auditor by then, and South Dakota has no Election Day registration.",
-                "Solo hasta el 19 de octubre de 2026. Tu formulario firmado debe llegar al auditor de tu condado (county auditor) a más tardar ese día, y South Dakota no tiene registro el Día de las Elecciones."),
+        'reg': ("No, not for the November 3 election. Your signed form had to reach your county auditor by October 19, 2026, and South Dakota has no Election Day registration.",
+                "No para la elección del 3 de noviembre. Tu formulario firmado tenía que llegar al auditor de tu condado (county auditor) a más tardar el 19 de octubre de 2026, y South Dakota no tiene registro el Día de las Elecciones."),
         'selfie': ("No. South Dakota law bars making a marked ballot public in a way that reveals the votes on it, and a photo you share would do that.",
                    "No. La ley de South Dakota prohíbe hacer pública una boleta marcada de una forma que revele sus votos, y una foto que compartas lo haría."),
     },
@@ -422,8 +428,8 @@ A.update({
                   "Los lugares de votación abren de 7 a. m. a 8 p. m. Utah también envía boletas por correo a los votantes. Tu boleta por correo debe llegar a la oficina del secretario del condado (county clerk) a más tardar a las 8 p. m. del 3 de noviembre, y el matasellos no basta."),
         'id': ("Yes, to vote in person. Show one photo ID, such as a Utah driver's license or a U.S. passport, or two documents that together prove your name and address.",
                "Sí, para votar en persona. Muestra una identificación con foto, como una licencia de conducir de Utah o un pasaporte de EE. UU., o dos documentos que juntos comprueben tu nombre y tu dirección."),
-        'reg': ("Yes. Your registration must reach your county clerk by 5 p.m. on October 23, 2026. After that, you can register in person during early voting or on Election Day with two forms of ID.",
-                "Sí. Tu registro debe llegar a la oficina del secretario de tu condado a más tardar a las 5 p. m. del 23 de octubre de 2026. Después, puedes registrarte en persona durante la votación anticipada o el Día de las Elecciones con dos formas de identificación."),
+        'reg': ("Yes. The regular deadline, for registrations to reach your county clerk, was 5 p.m. on October 23, 2026. You can still register in person during early voting or on Election Day with two forms of ID.",
+                "Sí. La fecha límite regular para que tu registro llegara a la oficina del secretario de tu condado fue a las 5 p. m. del 23 de octubre de 2026. Todavía puedes registrarte en persona durante la votación anticipada o el Día de las Elecciones con dos formas de identificación."),
         'selfie': ("Yes. Utah law lets you photograph your own ballot and share it. Photographing someone else's ballot at a polling place is a misdemeanor.",
                    "Sí. La ley de Utah te permite tomarle foto a tu propia boleta y compartirla. Tomarle foto a la boleta de otra persona en un lugar de votación es un delito menor."),
     },
@@ -440,8 +446,8 @@ A.update({
                   "Los lugares de votación abren de 6 a. m. a 7 p. m. Si estás en la fila a las 7 p. m., puedes votar."),
         'id': ("Show an acceptable ID, which doesn't need a photo. If you don't have one, you can sign an ID Confirmation Statement and vote a regular ballot.",
                "Muestra una identificación aceptada, que no necesita tener foto. Si no tienes una, puedes firmar una declaración de confirmación de identidad (ID Confirmation Statement) y votar con una boleta regular."),
-        'reg': ("Yes. Register by October 23, 2026. After that, you can register in person and vote a provisional ballot through Election Day.",
-                "Sí. Regístrate a más tardar el 23 de octubre de 2026. Después, puedes registrarte en persona y votar con una boleta provisional hasta el Día de las Elecciones."),
+        'reg': ("Yes. The regular deadline was October 23, 2026. You can still register in person and vote a provisional ballot through Election Day.",
+                "Sí. La fecha límite regular fue el 23 de octubre de 2026. Todavía puedes registrarte en persona y votar con una boleta provisional hasta el Día de las Elecciones."),
     },
     'WA': {
         'mail': ("Washington votes by mail. Put your ballot in an official drop box by 8 p.m. on Election Day, or mail it with a postmark dated Election Day or earlier. The state recommends mailing it a week early.",
@@ -449,7 +455,10 @@ A.update({
         'id': ("No. Washington votes by mail and checks your signature. At a voting center, staff check your signature or ID before you use an accessible voting unit.",
                "No. Washington vota por correo y revisa tu firma. En un centro de votación, el personal revisa tu firma o tu identificación antes de que uses un equipo de votación accesible."),
         'reg': ("Yes. Online and mail registrations must arrive by October 26, 2026, and you can register in person until 8 p.m. on Election Day.",
-                "Sí. Los registros en línea y por correo deben llegar a más tardar el 26 de octubre de 2026, y puedes registrarte en persona hasta las 8 p. m. del Día de las Elecciones."),
+                "Sí. Los registros en línea y por correo deben llegar a más tardar el 26 de octubre de 2026, y puedes registrarte en persona hasta las 8 p. m. del Día de las Elecciones.",
+                # After the date passes (October 25): what the page says instead.
+                {'until': '2026-10-26', 'en': "Yes, in person. Online and mail registrations had to arrive by October 26, 2026. You can still register in person until 8 p.m. on Election Day.",
+                 'es': "Sí, en persona. Los registros en línea y por correo tenían que llegar a más tardar el 26 de octubre de 2026. Todavía puedes registrarte en persona hasta las 8 p. m. del Día de las Elecciones."}),
         'selfie': ("Yes. Washington doesn't prohibit ballot selfies. It's illegal to view someone else's ballot for a purpose such as vote buying.",
                    "Sí. Washington no prohíbe las selfies con la boleta. Es ilegal ver la boleta de otra persona con un fin como comprar votos."),
     },
@@ -468,7 +477,10 @@ A.update({
         'id': ("Yes. Show an acceptable photo ID, such as a Wisconsin driver's license, a free state ID card, or a U.S. passport. Without one, you vote a provisional ballot and must show ID afterward.",
                "Sí. Muestra una identificación con foto aceptada, como una licencia de conducir de Wisconsin, una tarjeta de identificación estatal gratuita o un pasaporte de EE. UU. Si no tienes una, votas con una boleta provisional y debes mostrar tu identificación después."),
         'reg': ("Yes. Online and mail registration closed October 14, 2026. You can register at your clerk's office until 5 p.m. on October 30, or at your polling place on Election Day. Bring proof of where you live.",
-                "Sí. El registro en línea y por correo cerró el 14 de octubre de 2026. Puedes registrarte en la oficina del secretario municipal hasta las 5 p. m. del 30 de octubre, o en tu lugar de votación el Día de las Elecciones. Lleva un comprobante de domicilio."),
+                "Sí. El registro en línea y por correo cerró el 14 de octubre de 2026. Puedes registrarte en la oficina del secretario municipal hasta las 5 p. m. del 30 de octubre, o en tu lugar de votación el Día de las Elecciones. Lleva un comprobante de domicilio.",
+                # After the date passes (October 25): what the page says instead.
+                {'until': '2026-10-30', 'en': "Yes, at your polling place on Election Day. Online and mail registration closed October 14, 2026, and registration at your clerk's office ended at 5 p.m. on October 30. Bring proof of where you live.",
+                 'es': "Sí, en tu lugar de votación el Día de las Elecciones. El registro en línea y por correo cerró el 14 de octubre de 2026, y el registro en la oficina del secretario municipal terminó a las 5 p. m. del 30 de octubre. Lleva un comprobante de domicilio."}),
         'selfie': ("No. Wisconsin law makes it an offense to show your marked ballot to anyone, and a photo you share would do that.",
                    "No. En Wisconsin es un delito mostrarle tu boleta marcada a cualquier persona, y una foto que compartas lo haría."),
     },
@@ -477,8 +489,8 @@ A.update({
                   "Los lugares de votación abren de 7 a. m. a 7 p. m. Si estás en la fila a las 7 p. m., todavía puedes votar."),
         'id': ("Yes. Show an acceptable ID, such as a Wyoming driver's license or ID card, a U.S. passport, a tribal ID, or a Medicare or Medicaid card.",
                "Sí. Muestra una identificación aceptada, como una licencia de conducir o tarjeta de identificación de Wyoming, un pasaporte de EE. UU., una identificación tribal o una tarjeta de Medicare o Medicaid."),
-        'reg': ("Yes. Regular registration closes October 20, 2026, but you can register and vote at the same time during early absentee voting or on Election Day. Bring proof of identity, citizenship, and residence.",
-                "Sí. El registro regular cierra el 20 de octubre de 2026, pero puedes registrarte y votar al mismo tiempo durante la votación anticipada en ausencia o el Día de las Elecciones. Lleva comprobantes de identidad, ciudadanía y domicilio."),
+        'reg': ("Yes. Regular registration closed October 20, 2026, but you can register and vote at the same time during early absentee voting or on Election Day. Bring proof of identity, citizenship, and residence.",
+                "Sí. El registro regular cerró el 20 de octubre de 2026, pero puedes registrarte y votar al mismo tiempo durante la votación anticipada en ausencia o el Día de las Elecciones. Lleva comprobantes de identidad, ciudadanía y domicilio."),
     },
 })
 
@@ -497,15 +509,22 @@ def main(research_dir):
         if p.exists():
             for r in json.loads(p.read_text()):
                 research[r['abbr']] = r
+    if not research:
+        # The raw research files aren't kept in the repo; docs/faq-sources.json holds the same source
+        # fields per state (written by the last full run).
+        research = json.loads((ROOT / 'docs' / 'faq-sources.json').read_text())
     lines = ['<?php', '// Generated by build/faq_text.py from verified research (docs/faq-sources.json). Edit faq_text.py, not this file.', 'return array(']
     sources = {}
     for abbr, qs in A.items():
         r = research[abbr]
         lines.append(f"\t'{abbr}' => array(")
-        for key, (en, es) in qs.items():
+        for key, (en, es, *after) in qs.items():
             src = r[KEYMAP[key]]['source']
-            assert '—' not in en + es and '–' not in en + es, (abbr, key)
-            lines.append(f"\t\t'{key}' => array( 'en' => {php(en)}, 'es' => {php(es)}, 'src' => {php(src)} ),")
+            # An optional third item: {'until': date, 'en', 'es'}, the answer once that date has passed.
+            aft = after[0] if after else {}
+            assert '—' not in en + es + aft.get('en', '') + aft.get('es', '') and '–' not in en + es + aft.get('en', '') + aft.get('es', ''), (abbr, key)
+            extra = f", 'until' => {php(aft['until'])}, 'en_after' => {php(aft['en'])}, 'es_after' => {php(aft['es'])}" if aft else ''
+            lines.append(f"\t\t'{key}' => array( 'en' => {php(en)}, 'es' => {php(es)}, 'src' => {php(src)}{extra} ),")
         lines.append('\t),')
         sources[abbr] = {k: r.get(k) for k in ('polls', 'id', 'registration', 'selfie', 'notes')}
     lines.append(');')

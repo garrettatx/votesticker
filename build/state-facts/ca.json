@@ -66,7 +66,10 @@
    "src": "https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026",
    "checked": "2026-10-21",
    "quote": "In-person early voting locations throughout California will be open on Saturday, October 31.",
-   "status": "verified"
+   "status": "verified",
+   "until": "2026-10-31",
+   "en_after": "Your ballot comes to you by mail, and you can vote in person instead. On Election Day, polls are open 7 a.m. to 8 p.m.",
+   "es_after": "Tu boleta te llega por correo, y también puedes votar en persona. El Día de las Elecciones, los lugares de votación abren de 7 a. m. a 8 p. m."
   },
   "first_time": {
    "en": "Missed the deadline? Go to your county elections office, a vote center or a polling place to register conditionally and vote a provisional ballot, through Election Day. It's often called Same Day Voter Registration.",

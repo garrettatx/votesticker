@@ -61,7 +61,10 @@
    "src": "https://www.sos.mn.gov/elections-voting/other-ways-to-vote/vote-early-in-person/",
    "checked": "2026-10-21",
    "quote": "Start of Early Voting*: Friday, October 16",
-   "status": "verified"
+   "status": "verified",
+   "until": "2026-11-02",
+   "en_after": "Early voting in person ended Monday, November 2.",
+   "es_after": "La votación anticipada en persona terminó el lunes 2 de noviembre."
   },
   "first_time": {
    "en": "Not registered? Register at your polling place on Election Day. Bring a Minnesota driver's license or ID with your current address, or a photo ID plus a bill or lease with your current address. A registered voter from your precinct can also go with you and vouch for your address.",

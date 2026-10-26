@@ -50,7 +50,10 @@
    "src": "https://elections.ny.gov/request-ballot",
    "checked": "2026-10-21",
    "quote": "Put it in the mail ensuring it receives a postmark no later than November 3rd. Must be received by the County Board of Elections no later than November 10th.",
-   "status": "verified"
+   "status": "verified",
+   "until": "2026-11-01",
+   "en_after": "Mail: postmarked by Tuesday, November 3, and received by Tuesday, November 10, 2026. In person: at your county board of elections or any poll site in your county by 9 p.m. on November 3.",
+   "es_after": "Por correo: con matasellos del martes 3 de noviembre o antes, y recibida a más tardar el martes 10 de noviembre de 2026. En persona: en la junta electoral de tu condado o en cualquier lugar de votación de tu condado a más tardar a las 9 p. m. del 3 de noviembre."
   },
   "early_hours": {
    "en": "Hours are set by your county board of elections. Check your county's schedule before you go.",
@@ -72,7 +75,10 @@
    "src": "https://elections.ny.gov/early-voting",
    "checked": "2026-10-21",
    "quote": "Voters may visit any of their assigned Early Voting Centers in their county, except in New York City, where voters are assigned to one early voting site.",
-   "status": "verified"
+   "status": "verified",
+   "until": "2026-11-01",
+   "en_after": "Early voting ran October 24 to November 1.",
+   "es_after": "La votación anticipada fue del 24 de octubre al 1 de noviembre."
   },
   "first_time": {
    "en": "Use the Board of Elections' poll site and voter lookup to confirm you're registered and to find both your early voting site and your Election Day polling place.",
@@ -170,7 +176,10 @@
    "src": "https://elections.ny.gov/request-ballot",
    "checked": "2026-10-21",
    "quote": "Bringing it to an early voting poll site in your county between October 24th and November 1st.",
-   "status": "verified"
+   "status": "verified",
+   "until": "2026-11-01",
+   "en_after": "You can hand in your ballot at any poll site in your county or your county board of elections by 9 p.m. on November 3.",
+   "es_after": "Puedes entregar tu boleta en cualquier lugar de votación de tu condado o en la junta electoral de tu condado a más tardar a las 9 p. m. del 3 de noviembre."
   }
  },
  "polls_rules": {

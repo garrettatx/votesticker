@@ -64,7 +64,10 @@
    "src": "https://www.elections.alaska.gov/voter-information/absentee-and-early-voting/",
    "checked": "2026-10-21",
    "quote": "Absentee In-Person and Early Voting locations are open for voting starting 15 days prior and through Election Day. Each location has different hours and district ballots available.",
-   "status": "verified"
+   "status": "verified",
+   "until": "2026-11-02",
+   "en_after": "Early voting ended November 2. On Election Day, vote at your precinct's polling place from 7 a.m. to 8 p.m.",
+   "es_after": "La votación anticipada terminó el 2 de noviembre. El Día de las Elecciones, vota en el lugar de votación de tu precinto de 7 a. m. a 8 p. m."
   },
   "first_time": {
    "status": "missing",

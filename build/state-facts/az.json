@@ -43,7 +43,10 @@
    "src": "https://www.azleg.gov/ars/16/00548.htm",
    "checked": "2026-10-21",
    "quote": "In order to be counted and valid, the ballot must be received by the county recorder or other officer in charge of elections or deposited at any polling place in the county no later than 7:00 p.m. on election day.",
-   "status": "verified"
+   "status": "verified",
+   "until": "2026-10-27",
+   "en_after": "Drop it off at any polling place or voting location in your county by 7 p.m. on Tuesday, November 3. By mail, your county recorder must receive it by 7 p.m. that day, so it's too late to count on the mail now.",
+   "es_after": "Entrégala en cualquier lugar de votación de tu condado a más tardar a las 7 p. m. del martes 3 de noviembre. Por correo, el registrador de tu condado debe recibirla a más tardar a las 7 p. m. de ese día, así que ya es tarde para confiar en el correo."
   },
   "early_hours": {
    "status": "missing",

@@ -67,7 +67,10 @@
    "src": "https://vote.utah.gov/wp-content/uploads/2026/09/2026-Voter-Information-Pamphlet.pdf",
    "checked": "2026-10-21",
    "quote": "Eligible voters can vote in-person on Election Day. All counties must have at least one polling location.",
-   "status": "verified"
+   "status": "verified",
+   "until": "2026-10-30",
+   "en_after": "Your ballot comes in the mail, but you can also vote in person on Election Day from 7 a.m. to 8 p.m. Every county has at least one Election Day polling location.",
+   "es_after": "Tu boleta te llega por correo, pero también puedes votar en persona el Día de las Elecciones de 7 a. m. a 8 p. m. Cada condado tiene por lo menos un lugar de votación el Día de las Elecciones."
   },
   "first_time": {
    "en": "Registering for the first time and voting by mail? Your county clerk may ask you to put a copy of your ID in the return envelope with your ballot. Check the instructions that come with it.",

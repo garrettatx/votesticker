@@ -99,8 +99,8 @@
  },
  "mail": {
   "who": {
-   "en": "Every registered voter gets a ballot in the mail, no request needed. Ballots arrive by Friday, October 16. Didn't get yours, or made a mistake? Ask your County Elections Division for a replacement.",
-   "es": "Cada votante registrado recibe una boleta por correo, sin tener que pedirla. Las boletas llegan a más tardar el viernes 16 de octubre. ¿No te llegó o te equivocaste? Pide una de reemplazo a la División de Elecciones de tu condado.",
+   "en": "Every registered voter gets a ballot in the mail, no request needed. Ballots were mailed to arrive by Friday, October 16. Didn't get yours, or made a mistake? Ask your County Elections Division for a replacement.",
+   "es": "Cada votante registrado recibe una boleta por correo, sin tener que pedirla. Las boletas se enviaron para llegar a más tardar el viernes 16 de octubre. ¿No te llegó o te equivocaste? Pide una de reemplazo a la División de Elecciones de tu condado.",
    "src": "https://elections.hawaii.gov/wp-content/uploads/VoterGuide_2026_General_English.pdf",
    "checked": "2026-10-21",
    "quote": "If you do not receive your ballot, contact your County Elections Division and they will issue you a replacement ballot.",

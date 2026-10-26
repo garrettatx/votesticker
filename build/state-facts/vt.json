@@ -118,8 +118,8 @@
  },
  "mail": {
   "who": {
-   "en": "Every active, registered voter gets a general election ballot in the mail without asking. The state mails them by October 1. Moved, or didn't get yours? Ask your town clerk for another; you'll sign an Affidavit of No Ballot Cast.",
-   "es": "Cada votante activo y registrado recibe por correo una boleta para la elección general sin pedirla. El estado las envía a más tardar el 1 de octubre. ¿Te mudaste o no te llegó? Pide otra al secretario de tu municipio; vas a firmar una declaración jurada de que no has votado (Affidavit of No Ballot Cast).",
+   "en": "Every active, registered voter gets a general election ballot in the mail without asking. The state mailed them by October 1. Moved, or didn't get yours? Ask your town clerk for another; you'll sign an Affidavit of No Ballot Cast.",
+   "es": "Cada votante activo y registrado recibe por correo una boleta para la elección general sin pedirla. El estado las envió a más tardar el 1 de octubre. ¿Te mudaste o no te llegó? Pide otra al secretario de tu municipio; vas a firmar una declaración jurada de que no has votado (Affidavit of No Ballot Cast).",
    "src": "https://sos.vermont.gov/elections/voters/",
    "checked": "2026-10-21",
    "quote": "Vermont automatically mails ballots to all qualified voters by October 1 of each even-numbered year.",

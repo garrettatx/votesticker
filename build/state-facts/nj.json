@@ -61,7 +61,10 @@
    "src": "https://www.nj.gov/state/elections/vote-early-voting.shtml",
    "checked": "2026-10-21",
    "quote": "Find the most convenient early voting site in your county and pick the day that works for you.",
-   "status": "verified"
+   "status": "verified",
+   "until": "2026-11-01",
+   "en_after": "Early voting ended November 1. On Election Day, vote at your own polling place, which is printed on the sample ballot your county mails you.",
+   "es_after": "La votación anticipada terminó el 1 de noviembre. El Día de las Elecciones, vota en tu propio lugar de votación, que viene impreso en la boleta de muestra que te envía tu condado."
   },
   "first_time": {
    "en": "Not sure you're registered or that your address is current? Look yourself up with Voter Search before you go.",

@@ -64,7 +64,10 @@
    "src": "https://voteidaho.gov/casting-your-ballot/",
    "checked": "2026-10-21",
    "quote": "Visit your voting location (polling place) on Election Day between 8 a.m. to 8 p.m. You are assigned a specific voting location based on your physical address.",
-   "status": "verified"
+   "status": "verified",
+   "until": "2026-10-30",
+   "en_after": "Early voting ended October 30. On Election Day, go to your assigned voting location, based on your home address, from 8 a.m. to 8 p.m.",
+   "es_after": "La votación anticipada terminó el 30 de octubre. El Día de las Elecciones, ve al lugar de votación que te corresponde según tu domicilio, de 8 a. m. a 8 p. m."
   },
   "first_time": {
    "en": "Registering at the polls? Bring a current photo ID and proof of residence, such as a lease, mortgage or rental agreement. Register using your main Idaho home address.",

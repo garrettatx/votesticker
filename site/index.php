@@ -334,6 +334,12 @@ const VOTE_FAQ_Q = array(
 	'reg'    => 'Can I still register to vote in %s?',
 	'selfie' => 'Can I take a picture of my ballot in %s?',
 );
+// A state FAQ answer in the page language, or its after-wording once its `until` date has passed
+// (build/faq_text.py; "Can I still register?" in CO, NC, WA, WI).
+function vote_faq_text( $a ) {
+	$lang = vote_es() ? 'es' : 'en';
+	return ! empty( $a['until'] ) && vote_today() > $a['until'] && ! empty( $a[ $lang . '_after' ] ) ? $a[ $lang . '_after' ] : ( $a[ $lang ] ?? '' );
+}
 // The verified state questions for this page, in VOTE_FAQ_Q order: [question, answer, source URL].
 function vote_state_faq( $st ) {
 	static $all = null;
@@ -347,7 +353,7 @@ function vote_state_faq( $st ) {
 		if ( in_array( $key, $gone, true ) ) { continue; }
 		$a = $all[ $st['abbr'] ][ $key ] ?? null;
 		if ( ! $a || empty( $a['src'] ) || empty( $a[ vote_es() ? 'es' : 'en' ] ) ) { continue; }
-		$out[] = array( t( $q, vote_name( $st ) ), $a[ vote_es() ? 'es' : 'en' ], $a['src'], VOTE_FAQ_CHECKED );
+		$out[] = array( t( $q, vote_name( $st ) ), vote_faq_text( $a ), $a['src'], VOTE_FAQ_CHECKED );
 	}
 	// Extra questions answered in the state's facts file (build/state-facts/), each with its own check date.
 	foreach ( VOTE_FACT_Q as $path => $q ) {
@@ -416,7 +422,7 @@ function vote_faq_raw( $st, $key ) {
 	static $all = null;
 	if ( null === $all ) { $all = require __DIR__ . '/faq-states.php'; }
 	$a = $all[ $st['abbr'] ][ $key ] ?? null;
-	return $a && ! empty( $a['src'] ) && ! empty( $a[ vote_es() ? 'es' : 'en' ] ) ? array( $a[ vote_es() ? 'es' : 'en' ], $a['src'] ) : null;
+	return $a && ! empty( $a['src'] ) && ! empty( $a[ vote_es() ? 'es' : 'en' ] ) ? array( vote_faq_text( $a ), $a['src'] ) : null;
 }
 
 // One "go deeper" line to a Resist Now Learn guide (Garrett, October 21): only where the guide answers the next
@@ -1193,7 +1199,7 @@ $vote_ld = array(
 			$vote_same[] = $abbr;
 		}
 		$vote_same_h = array( 'mail' => t( 'Other States That Vote by Mail' ), 'none' => t( 'Other States Without Early Voting for Everyone' ), 'ended' => t( 'Other States Where Early Voting Has Ended' ) )[ $vote_st['kind'] ]
-			?? ( ! empty( $vote_st['start'] ) ? t( 'Other States Where Early Voting Opens %s', vote_long( $vote_st['start'] ) ) : '' );
+			?? ( ! empty( $vote_st['start'] ) ? t( vote_today() >= $vote_st['start'] ? 'Other States Where Early Voting Began %s' : 'Other States Where Early Voting Opens %s', vote_long( $vote_st['start'] ) ) : '' );
 	}
 	$vote_near = $vote_st && isset( VOTE_NEIGHBORS[ $vote_abbr ] ) ? explode( ' ', VOTE_NEIGHBORS[ $vote_abbr ] ) : array();
 	$vote_keys = array_keys( $vote_rows );
