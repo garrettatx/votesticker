@@ -24,7 +24,7 @@ preview builds, then restore `build/lastmod.json`.
 | 2 | **"Early voting ends in N days"** on state pages with a verified end date, recounted by the visitor's calendar like the Election Day countdown; gone after the end date | The most useful line in the last week, and the one most likely to go stale if hand-written | Done Oct 26 |
 | 3 | **Profile-picture size preview.** A 48 px circle beside the big preview in the maker | People can check the sticker reads where friends will see it | Done Oct 26 |
 | 4 | **Copy alt text.** A button that copies a plain description of the current sticker | For people who add alt text to posts; the About page now promises accessibility | Done Oct 26 |
-| 5 | **"Send this to someone who hasn't voted yet."** After an I voted sticker is saved, a share-link line (the page link only, no tracking beyond the existing `share` event) | Turns a saved sticker into one more reminder | |
+| 5 | **"Send this to someone who hasn't voted yet."** After an I voted sticker is saved, a share-link line (the page link only, no tracking beyond the existing `share` event) | Turns a saved sticker into one more reminder | Done Oct 26 |
 | 6 | **Contrast and tap-target check.** `--muted` on cream against WCAG AA; every control 44 px or larger | Backlog review item; the About page claims keyboard and focus support | |
 | 7 | **Portrait 1080 x 1350** beside square and story | Instagram feed posts crop square stickers less well | |
 
@@ -61,3 +61,9 @@ preview builds, then restore `build/lastmod.json`.
   NOV."). Checked in a browser after a color change. Found and fixed on the way: the Spanish maker
   named the state palette in English ("Texas colors"); it now says "Colores de Texas". Facts,
   Spanish, SEO and event QA pass.
+- **Oct 26, item 5 (Send this to someone).** After a maker save with an I voted message (any of the
+  nine, both languages), a line appears under the history line: "Send this page to someone who hasn't
+  voted yet." with a "Share the page" button that presses the page's own share button (share sheet on
+  phones, copy link elsewhere; the existing `share` event, nothing new tracked). Not shown for
+  planning messages; not rendered from Nov 4. Browser check: VOTE EARLY save, no line; I VOTED and YA
+  VOTÉ saves, line shown and "Link copied" / "Enlace copiado". Spanish, SEO and event QA pass.

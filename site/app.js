@@ -1166,6 +1166,9 @@
 		// After the picture is on its way, one quiet line about the sticker's history (never before).
 		var more = $('after-save');
 		if (more) { setTimeout(function () { more.hidden = false; }, 600); }
+		// An I voted message (any language): ask them to pass the page on (index.php leaves #nudge out after Nov 3).
+		var nudge = $('nudge');
+		if (nudge && /^(ivoted|yavote|voted|yavotetemprano|mailed|ballotin|yavotecorreo|firsttime|miprimervoto)$/.test(state.headline)) { setTimeout(function () { nudge.hidden = false; }, 600); }
 	}
 
 	var current = { blob: null, url: null, name: '' };
@@ -1532,6 +1535,7 @@
 		// the share sheet instead; the clipboard is the fallback everywhere.
 		var shareBtn = $('share-link');
 		if (shareBtn) {
+			if ($('nudge-share')) { $('nudge-share').addEventListener('click', function () { shareBtn.click(); }); }
 			var shareUrl = shareBtn.dataset.url, shareTitle = shareBtn.dataset.title, shareLabel = $('share-label').textContent;
 			var said = function (t) { $('share-label').textContent = t; setTimeout(function () { $('share-label').textContent = shareLabel; }, 2200); };
 			shareBtn.addEventListener('click', function () {

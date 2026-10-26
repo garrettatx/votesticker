@@ -1297,6 +1297,8 @@ $vote_ld = array(
 				</div>
 				<p class="hint" id="tip"></p>
 				<p class="hint after-save" id="after-save" hidden><?php echo vote_e( t( 'Curious where the I voted sticker came from?' ) ); ?> <a href="<?php echo vote_pbase() . VOTE_HISTORY_SLUG; ?>/"><?php echo vote_e( t( 'Read its history' ) ); ?></a></p>
+				<?php // After an I voted sticker is saved (final-week item 5): one more reminder to someone else. The button reuses the page's share link and its share event; not after Election Day. ?>
+				<?php if ( 'post' !== vote_phase() ) : ?><p class="hint after-save" id="nudge" hidden><?php echo vote_e( t( "Send this page to someone who hasn't voted yet." ) ); ?> <button type="button" class="link-quiet" id="nudge-share"><?php echo vote_e( t( 'Share the page' ) ); ?></button></p><?php endif; ?>
 				<details class="post" open>
 					<summary><?php echo vote_e( t( 'Suggested post text' ) ); ?></summary>
 					<div class="post-picks" id="post-picks" role="group" aria-label="<?php echo vote_e( t( 'Post versions' ) ); ?>"><?php foreach ( VOTE_POST_VARIANTS as $vk => $vl ) : ?><button type="button" class="pick-chip" data-variant="<?php echo $vk; ?>" aria-pressed="<?php echo 'plan' === $vk ? 'true' : 'false'; ?>"><?php echo vote_e( t( $vl ) ); ?></button><?php endforeach; ?></div>
