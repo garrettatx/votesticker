@@ -15,7 +15,7 @@
 	// Picture heights by size (portrait 4:5 added October 26 for Instagram feed posts).
 	var HEIGHTS = { square: SIZE, portrait: 1350, story: STORY_H };
 	// SCRIPT is only for the Script layout under review (not in the row); sheets load a face with setScript.
-	var DISPLAY = '"Vote Display"', DATE = '"Vote Date"', BRUSH = '"Vote Brush"', SCRIPT = '"Vote Script"';
+	var DISPLAY = '"Vote Display"', DATE = '"Vote Date"', BRUSH = '"Vote Brush"', SCRIPT = '"Vote Script"', SLAB = '"Vote Slab"';
 
 	// October 21: the pale palettes (sand, sky, sage) went; a light disc has no edge on a white feed. The six
 	// new ones are the colors Garrett picked from the Codex sets: chartreuse on cobalt, gold on maroon, cream
@@ -108,7 +108,11 @@
 		{ id: 'stack', name: 'Stack', palette: 'plum' }, { id: 'check', name: 'Check', palette: 'teal' },
 		{ id: 'label', name: 'Label', palette: 'charcoal' }, { id: 'diag', name: 'Diagonal', palette: 'cobalt' },
 		{ id: 'pills', name: 'Pills', palette: 'rust' }, { id: 'hollow', name: 'Hollow', palette: 'navy' },
-		{ id: 'mono', name: 'Monogram', palette: 'teal' }
+		{ id: 'mono', name: 'Monogram', palette: 'teal' },
+		// October 26: six candidates for one more tile (rendered by scripts/sheet_new.mjs).
+		{ id: 'bubble', name: 'Ballot bubble', palette: 'cream' }, { id: 'varsity', name: 'Varsity', palette: 'navy' },
+		{ id: 'rays', name: 'Rays', palette: 'maroon' }, { id: 'tricolor', name: 'Tricolor', palette: 'state' },
+		{ id: 'spotlight', name: 'Spotlight', palette: 'plum' }, { id: 'slab', name: 'Slab', palette: 'cream' }
 	];
 	function designOf(id) { return DESIGNS.filter(function (d) { return d.id === id; })[0]; }
 	// Short lines only, at most 10 characters each (POR CORREO), so a card reads at 40 px in a comment thread
@@ -851,6 +855,93 @@
 			var mp = placeText(m, 0, cy - m.asc / 2, shade(p.bg, 0.09));
 			mp.items.forEach(function (it) { it.nofit = true; });
 			return { items: mp.items.concat(content), safe: SAFE };
+		},
+		// October 26 sketches (review only): six designs for one more tile.
+		// Ballot bubble: the filled-in oval from a ballot beside the stack. Filled when the message says it's
+		// done (I VOTED, YA VOTÉ, MY BALLOT IS IN), an empty keyline when it's a plan.
+		bubble: function (st, p, lines, dateText) {
+			var done = /^(I VOTED|YA VOT|MY BALLOT|FIRST TIME)/.test(lines[0]);
+			var head = textBlock(lines, DISPLAY, 560, 260, { justify: true, leading: 0.1, track: -0.01 });
+			var th = head.asc * lines.length + head.gap * (lines.length - 1);
+			var ry = Math.min(th * 0.42, 150), rx = ry * 1.55, gap = 64;
+			var tw = Math.max.apply(null, head.lines.map(function (l) { return l.w; }));
+			var oval = done ? { t: 'oval', cx: rx, cy: th / 2, rx: rx, ry: ry, color: p.accent === p.bg ? p.ink : starOf(p) }
+				: { t: 'oval', cx: rx, cy: th / 2, rx: rx - 9, ry: ry - 9, w: 18, color: p.ink };
+			var placed = placeText(head, 2 * rx + gap + tw / 2, 0, p.ink);
+			var total = 2 * rx + gap + tw;
+			var date = dateItems(dateText, total / 2, th + head.asc * 0.32, Math.min(total, 720), head.asc * 0.42, dateColor(p));
+			var icon = iconItem(st, total / 2, -150, 110, 220, p.ink, starOf(p));
+			return { items: icon.items.concat([oval], placed.items, date.items), safe: SAFE };
+		},
+		// Varsity: jersey lettering with a deep diagonal extrusion in the accent and a hairline of the
+		// background between letter and extrusion.
+		varsity: function (st, p, lines, dateText) {
+			var icon = iconItem(st, 0, 0, 130, 240, p.ink, starOf(p));
+			var head = textBlock(lines, DISPLAY, 740, 300, { justify: true, leading: 0.2 });
+			var placed = placeText(head, 0, icon.bottom + 44, p.ink), depth = head.asc * 0.16, n = 14;
+			var ex = contrast(p.accent, p.bg) >= 1.6 ? p.accent : shade(p.bg, 0.35), under = [], i;
+			for (i = n; i >= 1; i--) {
+				var o = depth * i / n;
+				placed.items.forEach(function (it) { under.push({ t: 'text', s: it.s, font: it.font, color: i === n ? shade(ex, 0.25) : ex, ls: it.ls, x: it.x + o * 0.6, base: it.base + o, box: [it.box[0] + o * 0.6, it.box[1] + o, it.box[2] + o * 0.6, it.box[3] + o] }); });
+			}
+			outline(placed.items, p.bg, head.asc * 0.025, null, 0);
+			var date = dateItems(dateText, depth * 0.3, placed.bottom + depth + head.asc * 0.28, 600, head.asc * 0.36, dateColor(p));
+			return { items: icon.items.concat(under, placed.items, date.items), safe: SAFE };
+		},
+		// Rays: a sunburst of low-contrast rays behind a coin that holds the state and the stack.
+		rays: function (st, p, lines, dateText) {
+			var icon = iconItem(st, 0, 0, 120, 220, p.ink, starOf(p));
+			var head = textBlock(lines, DISPLAY, 600, 240, { justify: true, leading: 0.1, track: -0.01 });
+			var placed = placeText(head, 0, icon.bottom + 34, p.ink);
+			var date = dateItems(dateText, 0, placed.bottom + head.asc * 0.26, 520, head.asc * 0.38, p.onAccent, p.accent);
+			var group = icon.items.concat(placed.items, date.items), gb = bounds(group);
+			shift(group, 0, -(gb[1] + gb[3]) / 2);
+			var pts = []; group.forEach(function (it) { pts = pts.concat(itemPoints(it)); });
+			var far = Math.max.apply(null, pts.map(function (q) { return Math.hypot(q[0], q[1]); }));
+			var R = far * 1.1, rays = [], k, w = Math.PI / 24;
+			for (k = 0; k < 24; k++) {
+				var a = k * Math.PI / 12;
+				rays.push({ t: 'poly', pts: [[0, 0], [3000 * Math.cos(a - w), 3000 * Math.sin(a - w)], [3000 * Math.cos(a + w), 3000 * Math.sin(a + w)]], color: shade(p.bg, 0.2), nofit: true });
+			}
+			var coin = [{ t: 'disc', cx: 0, cy: 0, r: R, color: p.bg }, { t: 'ring', cx: 0, cy: 0, r: R - R * 0.035, w: R * 0.022, color: p.ink }];
+			return { items: rays.concat(coin, group), safe: 470 };
+		},
+		// Tricolor: three bands in the state's colors, the words on the middle band, the state in a coin
+		// on the top band, the date on the bottom one.
+		tricolor: function (st, p, lines, dateText) {
+			var mid = p.ink, onMid = p.bg, top = contrast(p.accent, p.ink) >= 1.4 ? p.accent : shade(p.ink, 0.3);
+			var head = textBlock(lines, DISPLAY, 720, 240, { justify: true, leading: 0.1, track: -0.01 });
+			var placed = placeText(head, 0, 0, onMid), pad = head.asc * 0.34;
+			var band = { t: 'box', box: [-4000, -pad, 4000, placed.bottom + pad], color: mid, nofit: true };
+			var cr = 112, coin = { t: 'disc', cx: 0, cy: -pad - 40 - cr, r: cr, color: p.bg };
+			var icon = iconItem(st, 0, coin.cy - cr * 0.62, cr * 1.24, cr * 1.5, p.ink, p.accent);
+			var topBand = { t: 'box', box: [-4000, -4000, 4000, -pad], color: top, nofit: true };
+			var date = dateItems(dateText, 0, placed.bottom + pad + 42, 560, head.asc * 0.36, dateColor(p));
+			return { items: [topBand, band, coin].concat(icon.items, placed.items, date.items), safe: SAFE };
+		},
+		// Spotlight: a soft radial glow behind the stack, the state as a faint watermark, nothing else.
+		spotlight: function (st, p, lines, dateText) {
+			var head = textBlock(lines, DISPLAY, 760, 300, { justify: true, leading: 0.1, track: -0.01 });
+			var placed = placeText(head, 0, 0, p.ink);
+			var date = dateItems(dateText, 0, placed.bottom + head.asc * 0.26, 560, head.asc * 0.38, dateColor(p));
+			var content = placed.items.concat(date.items), b = bounds(content), cy = (b[1] + b[3]) / 2;
+			var wm = iconItem(st, 0, cy - 470, 940, 1200, shade(p.bg, 0.07), null);
+			wm.items.forEach(function (it) { it.nofit = true; });
+			var glow = { t: 'glow', cx: 0, cy: cy, r: 900, inner: shade(p.bg, 0.2), outer: p.bg, nofit: true };
+			return { items: [glow].concat(wm.items, content), safe: SAFE };
+		},
+		// Slab: a heavy slab serif, a courthouse and masthead voice, with hairline rules around a tracked
+		// date line and a small state on top.
+		slab: function (st, p, lines, dateText) {
+			var icon = iconItem(st, 0, 0, 120, 220, p.ink, starOf(p));
+			var head = textBlock(lines, SLAB, 760, 260, { justify: true, leading: 0.16 });
+			var placed = placeText(head, 0, icon.bottom + 48, p.ink);
+			var dt = textBlock([dateText], DATE, 520, head.asc * 0.3, { track: 0.16 });
+			var y = placed.bottom + head.asc * 0.34, rule = 6, gap = dt.asc * 0.55;
+			var r1 = { t: 'box', box: [-380, y, 380, y + rule], color: p.ink };
+			var date = placeText(dt, 0, y + rule + gap, dateColor(p));
+			var r2 = { t: 'box', box: [-380, date.bottom + gap, 380, date.bottom + gap + rule], color: p.ink };
+			return { items: icon.items.concat(placed.items, [r1], date.items, [r2]), safe: SAFE };
 		}
 	};
 
@@ -862,6 +953,12 @@
 			var rr = it.t === 'ring' ? it.r + it.w / 2 : it.r;
 			pts = [];
 			for (i = 0; i < 36; i++) { pts.push([it.cx + rr * Math.cos(i * Math.PI / 18), it.cy + rr * Math.sin(i * Math.PI / 18)]); }
+		} else if (it.t === 'oval') {
+			var ow = (it.w || 0) / 2;
+			pts = [];
+			for (i = 0; i < 36; i++) { pts.push([it.cx + (it.rx + ow) * Math.cos(i * Math.PI / 18), it.cy + (it.ry + ow) * Math.sin(i * Math.PI / 18)]); }
+		} else if (it.t === 'glow') {
+			pts = [[it.cx, it.cy]];
 		} else if (it.t === 'poly') {
 			pts = it.pts.slice();
 		} else {
@@ -962,6 +1059,20 @@
 			it.pts.forEach(function (q, n) { if (n) { ctx.lineTo(q[0], q[1]); } else { ctx.moveTo(q[0], q[1]); } });
 			ctx.closePath();
 			ctx.fill();
+			return;
+		}
+		// October 26 sketches: an oval (a ballot bubble, filled or as a keyline) and a radial glow.
+		if (it.t === 'oval') {
+			ctx.beginPath();
+			ctx.ellipse(it.cx, it.cy, it.rx, it.ry, 0, 0, Math.PI * 2);
+			if (it.w) { ctx.strokeStyle = it.color; ctx.lineWidth = it.w; ctx.stroke(); } else { ctx.fill(); }
+			return;
+		}
+		if (it.t === 'glow') {
+			var g = ctx.createRadialGradient(it.cx, it.cy, 0, it.cx, it.cy, it.r);
+			g.addColorStop(0, it.inner); g.addColorStop(1, it.outer);
+			ctx.fillStyle = g;
+			ctx.fillRect(it.cx - 4000, it.cy - 4000, 8000, 8000);
 			return;
 		}
 		ctx.font = it.font;
