@@ -26,6 +26,8 @@ Measure each change in Search Console from its recrawl date.
 | 9 | Transparent cut-out PNG for disc designs (backlog maker idea) | Sticker people can lay over a photo; "i voted sticker png" searches | Done Oct 26 |
 | 10 | Official state plan pages into `where.plan_url` (item 5 part 2) | | Done Oct 26: MD, ND; rest VOTE411 |
 | 11 | Two new maker designs from six sketches: Varsity and Masthead (Garrett's picks Oct 26; Tricolor cut for its crop) | Garrett: "really make us shine" | Done Oct 26 |
+| 12 | Bespoke sets: 11 maker-drawn stickers per state, English and Spanish, on every state page; best picks on the home page | Garrett: variety, more indexed images, Spanish too | Done Oct 26 |
+| 13 | Clearer maker labels; 12 tiles (Shadow, Map below, Split out; Check back) | Garrett: outside review of the maker; "aiming for 12 for a good grid" | Done Oct 26 |
 
 ## Log
 
@@ -120,3 +122,47 @@ Measure each change in Search Console from its recrawl date.
   and DC ↓" to the state list (`#states-h`). "First time voter" is now "First-time voter" (sticker
   line FIRST-TIME, 10 characters; message id unchanged). Copy scan: Election Day capitalized all 129
   times, "drop box" two words wherever a voter reads it. Spanish and SEO QA pass.
+- **Oct 26, item 12 (bespoke sets).** How to rebuild: `python3 -I build/build_static.py`, serve `dist` on
+  8792, then `node scripts/render_bespoke.mjs` (all 51, or `TX,NC`). It writes 11 JPGs per state into
+  `site/assets/states/<abbr>/`, named `<state-name>-<message>-<design>-sticker.jpg`, deletes that
+  state's earlier bespoke files first, writes alt text to `alts.json` (Spanish as `<stem>@es`) and the
+  recipe of every file to `assets/states/bespoke.json` (lang, slot, design, palette, headline, tilt,
+  rays). Recipe: states sorted by name, index i; design for slot j is DESIGNS[(i + 2j) mod 13] (13
+  designs, no Shadow), so a state's 11 are all different and neighbors shift; palettes rotate, slot 0
+  and the Spanish early/mail slot use state colors. English slots: I VOTED (state colors), FIRST-TIME
+  VOTER, FUTURE VOTER, YA VOTÉ (shared with the Spanish page), I VOTED EARLY or BY MAIL or I VOTED,
+  a tilted I VOTED. Spanish slots: MI PRIMER VOTO, YO TAMBIÉN VOTARÉ, YA VOTÉ TEMPRANO or POR CORREO or
+  YA VOTÉ, a tilted YA VOTÉ, a sunburst YA VOTÉ. Sunburst and tilt alternate by state. Totals: 561
+  (255 English, 255 Spanish, 51 shared); the image sitemap lists 1,121 images. JPEG 0.86, about 100
+  KB each; `site/assets/states` is 55 MB.
+  Pages: English galleries list the state's own ready-mades first, then its six; Spanish pages get a
+  gallery for the first time (six Spanish stickers, Spanish alt text). After Election Day the state
+  hero becomes slot 0 (I VOTED in state colors), and FIRST-TIME VOTER, FUTURE VOTER, YA VOTÉ, MI
+  PRIMER VOTO and YO TAMBIÉN VOTARÉ stay in galleries (`vote_file_current`). Home: the showcase and
+  I Voted Early sections and two of four hero stickers are hand-picked bespoke files (from a contact
+  sheet of all candidates), eight designs and five messages; the Spanish home showcase picks one
+  Spanish sticker per state, never repeating a design.
+  Guards: `build/bespoke_check.py` runs in the build and stops it if voted-early appears outside a
+  verified early-voting state, by-mail outside an all-mail state, a Spanish message on an English
+  sticker or the reverse, a design repeats in a state, Shadow appears, a file or alt is missing, or a
+  file isn't in the manifest (three planted errors, all caught). `image_names.py` skips files already
+  named for people. GA4: gallery saves of bespoke stickers send `sticker_source: bespoke` and the
+  design (event QA checks it), so ready-made, bespoke and maker saves can be compared.
+  QA: facts, Spanish, SEO, event, save pass; Nov 4 preview checked (Texas: 9 in the English gallery,
+  6 Spanish, hero is the bespoke I VOTED); stale scan at 27. Alt text fixed to avoid "slanted
+  headline, tilted". Card QA below.
+- **Oct 26, item 13 (labels and the 12 tiles).** Labels, EN and ES: What should it say? (¿Qué quieres que
+  diga?), Dates or extra text, Reset dates, Choose a Layout, Profile picture / Post / Story (Foto de
+  perfil / Publicación / Historia), Level / Tilt left / Tilt right, Show the profile-picture crop, Round
+  sticker, no background (PNG), Caption to share with your sticker, Copy caption and link; the two FAQ
+  answers that named "the Main message menu" now point to What should it say?. Size buttons are equal
+  width with smaller text under 400 px (91 x 62 at 320 px in both languages, one line from 390).
+  Design names under the thumbnails unchanged. Kept on iPhone: Save to Photos (it is the share sheet).
+  Tiles: Garrett agreed to trim the look-alikes and asked for 12 for even rows. Shadow (Varsity does it
+  better), Map below (Side by side) and Split (Half) moved to REVIEW; they still draw for saved links and
+  their bespoke stickers stay. A Ballot bubble rework (a ballot card, then with a check in the oval) was
+  rendered and sent; Garrett ruled it out as not profile-picture friendly, and its code was removed. Of
+  six candidates rendered at full size and 40 px (Check, Pills, Spotlight, Monogram, Hollow, Stack), Check
+  came back: the only design built on a symbol, readable as a check at 40 px; Spanish name Palomita.
+  A design saved in the browser that left the row falls back to Tilt (tested with Shadow saved).
+  The pre-made sets are not re-rendered for Check (Garrett: not every pre-made needs it).

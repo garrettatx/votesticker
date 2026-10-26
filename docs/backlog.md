@@ -2,9 +2,15 @@
 
 Open items, newest first. Started October 21, 2026. Move an item to `docs/history.md` when it ships.
 
+## Cover Photos and Maker Copy (October 26)
+
+Specs in `backlog/cover-photo-and-maker-copy/README.md`, not approved: a Cover photo output with
+per-platform presets and safe areas (LinkedIn, X, Facebook Page and profile), purpose-led size labels
+and copy fixes from an outside review, and the photo-upload question for Garrett.
+
 ## Maker: More Bespoke Stickers (October 26)
 
-Specs and mockups in `backlog/maker-bespoke/README.md`, not approved: a background finish picker
+Specs and mockups in `backlog/maker-bespoke/README.md`. Item 2 (bespoke sets per state) shipped Oct 26; the rest not approved: a background finish picker
 (Sunburst built; Glow, Dots, Watermark), pre-built bespoke sets on each state page with descriptive
 image names, retiring Shadow for a tightened Ballot bubble, WE VOTED / YA VOTAMOS, a keyline border,
 and renaming the Tilt tile to Slant.

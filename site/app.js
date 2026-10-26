@@ -87,19 +87,20 @@
 		{ id: 'side', name: 'Side by side', palette: 'teal' },
 		{ id: 'arch', name: 'Arch', palette: 'maroon' },
 		{ id: 'plate', name: 'Plate', palette: 'charcoal' },
-		{ id: 'split', name: 'Split', palette: 'cobalt' },
-		{ id: 'below', name: 'Map below', palette: 'forest' },
 		{ id: 'sticker', name: 'Sticker', palette: 'state' },
 		// October 22: Poster and Stamp retired (Poster was Big type with rules, Stamp was Plate with round
 		// corners). Three from Garrett's review of twelve sketches, picked for what no other tile does: a
 		// hard offset shadow, type set around a disc, and a color field with the state knocked out.
-		{ id: 'shadow', name: 'Shadow', palette: 'cream' },
 		{ id: 'ringtext', name: 'Ring', palette: 'maroon' },
 		{ id: 'half', name: 'Half', palette: 'cream' },
 		// October 26: Garrett picked these two from six sketches (Tricolor cut: its bands crop badly in the
 		// profile circle). Varsity is jersey lettering with a deep extrusion, Masthead a heavy slab serif.
 		{ id: 'varsity', name: 'Varsity', palette: 'navy' },
-		{ id: 'slab', name: 'Masthead', palette: 'cream' }
+		{ id: 'slab', name: 'Masthead', palette: 'cream' },
+		// October 26, evening (Garrett): twelve tiles, four even rows. Shadow, Map below and Split left the row
+		// (Varsity, Side by side and Half do the same jobs; they stay in REVIEW and in the bespoke sets), and
+		// Check came back: the only design built on a symbol, and it reads as a check at 40 px.
+		{ id: 'check', name: 'Check', palette: 'teal' }
 	];
 	// October 22: layouts under review, rendered by scripts/sheet_new.mjs and not in the tile row. The
 	// first four mimic a printed sticker (a kiss-cut edge, a scalloped seal, script lettering, a vertical
@@ -109,13 +110,16 @@
 		{ id: 'cut', name: 'Die cut', palette: 'cream' }, { id: 'seal', name: 'Seal', palette: 'maroon' },
 		{ id: 'script', name: 'Script', palette: 'teal' }, { id: 'vert', name: 'Vertical', palette: 'navy' },
 		{ id: 'band', name: 'Band', palette: 'navy' }, { id: 'tone', name: 'Watermark', palette: 'forest' },
-		{ id: 'stack', name: 'Stack', palette: 'plum' }, { id: 'check', name: 'Check', palette: 'teal' },
+		{ id: 'stack', name: 'Stack', palette: 'plum' },
 		{ id: 'label', name: 'Label', palette: 'charcoal' }, { id: 'diag', name: 'Diagonal', palette: 'cobalt' },
 		{ id: 'pills', name: 'Pills', palette: 'rust' }, { id: 'hollow', name: 'Hollow', palette: 'navy' },
 		{ id: 'mono', name: 'Monogram', palette: 'teal' },
 		// October 26: six candidates for one more tile (rendered by scripts/sheet_new.mjs).
 		{ id: 'bubble', name: 'Ballot bubble', palette: 'cream' }, { id: 'rays', name: 'Rays', palette: 'maroon' },
-		{ id: 'tricolor', name: 'Tricolor', palette: 'state' }, { id: 'spotlight', name: 'Spotlight', palette: 'plum' }
+		{ id: 'tricolor', name: 'Tricolor', palette: 'state' }, { id: 'spotlight', name: 'Spotlight', palette: 'plum' },
+		// Retired from the row October 26: kept so saved links and the bespoke renderer still draw them.
+		{ id: 'shadow', name: 'Shadow', palette: 'cream' }, { id: 'below', name: 'Map below', palette: 'forest' },
+		{ id: 'split', name: 'Split', palette: 'cobalt' }
 	];
 	function designOf(id) { return DESIGNS.filter(function (d) { return d.id === id; })[0]; }
 	// Short lines only, at most 10 characters each (POR CORREO), so a card reads at 40 px in a comment thread
@@ -1335,7 +1339,14 @@
 			var a = e.target.closest ? e.target.closest('a.tile') : null;
 			if (!a) { return; }
 			afterSave();
-			var done = saved({ state: state.state, sticker_source: 'ready_made', design: 'ready_' + (a.dataset.n || '0') });
+			// Bespoke sets (October 26) are named <state-name>-<message>-<design>-sticker.jpg; the state's own
+			// ready-mades start with its postal code. Bespoke saves report the design (a short preset id), so
+			// GA4 can compare ready-made, bespoke and maker saves.
+			var file = (a.getAttribute('href') || '').split('?')[0].split('/').pop().replace(/\.jpg$/, '');
+			var bespoke = file.indexOf(state.state.toLowerCase() + '-') !== 0 && /-sticker(-2)?$/.test(file);
+			var done = saved(bespoke
+				? { state: state.state, sticker_source: 'bespoke', design: file.replace(/-sticker(-2)?$/, '').split('-').pop() }
+				: { state: state.state, sticker_source: 'ready_made', design: 'ready_' + (a.dataset.n || '0') });
 			if (DEVICE !== 'ios') { done('download'); return; }
 			e.preventDefault();
 			var src = a.getAttribute('href'), b = readyBlobs[src], img = a.querySelector('img');
@@ -1363,7 +1374,8 @@
 		state: null,
 		headline: 'nov3',
 		dateEdited: false,
-		design: load('design3', 'tilt'),
+		// A design saved before it left the row falls back to the default (October 26).
+		design: DESIGNS.some(function (d) { return d.id === load('design3', 'tilt'); }) ? load('design3', 'tilt') : 'tilt',
 		tilt: load('tilt', 'straight'),
 		palette: load('palette3', 'plum'),
 		dateText: '',
@@ -1718,7 +1730,7 @@
 		$('copy').addEventListener('click', function () {
 			var t = $('post-text');
 			track('post_text_copy', { state: state.state, message: state.headline, post_variant: postVariant, post_edited: postEdited ? 'yes' : 'no' });
-			var done = function () { $('copy').textContent = T('Copied'); setTimeout(function () { $('copy').textContent = T('Copy post text'); }, 2000); };
+			var done = function () { $('copy').textContent = T('Copied'); setTimeout(function () { $('copy').textContent = T('Copy caption and link'); }, 2000); };
 			if (navigator.clipboard && navigator.clipboard.writeText) {
 				navigator.clipboard.writeText(t.value).then(done, function () { t.select(); document.execCommand('copy'); done(); });
 			} else { t.select(); document.execCommand('copy'); done(); }

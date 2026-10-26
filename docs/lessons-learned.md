@@ -20,6 +20,17 @@ Started October 26, 2026. One line of what happened, then the rule. Newest first
   browser, so a returning visitor's previews start with them on. Make the saved state visible in the
   controls (it is) and never let a saved option hide a design.
 
+- **Make generated sets reproducible from a manifest.** The bespoke renderer writes the full recipe of
+  every file (design, palette, message, tilt, sunburst, language) to `bespoke.json`; the homepage
+  picks, the post-election hero and the rule check all read it instead of guessing from file names.
+- **Turn the rules into a build check, then plant a violation.** "Voted early only where verified" is
+  easy to say and easy to break in a rotation; `bespoke_check.py` catches it, and three planted errors
+  proved it does.
+- **Pick showcase images from a contact sheet, not from the recipe.** The rotation makes good variety
+  on average; the home page needs the best eight, chosen by looking at all of them.
+- **Count files, not matches.** A gallery count doubled because the regex hit each image's link and
+  its img; parse one element per file before raising an alarm.
+
 ## Facts and Content
 
 - **Agents report; we re-read.** Every quote from a research agent was re-fetched and matched word

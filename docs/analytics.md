@@ -27,7 +27,7 @@ Search Console `sc-domain:votesticker.org`. Both are read by the shared service 
 
 | Event | When | Parameters |
 |---|---|---|
-| `sticker_save` | A sticker was saved: download started (Android, desktop), share sheet completed or press-and-hold shown (iPhone) | `state`, `sticker_source` (`ready_made` or `maker`), `design` (maker design id, or `ready_1` to `ready_10` for the set), `palette` and `message` (maker only), `save_method` (`download`, `share_sheet`, `press_hold`) |
+| `sticker_save` | A sticker was saved: download started (Android, desktop), share sheet completed or press-and-hold shown (iPhone) | `state`, `sticker_source` (`ready_made`, `bespoke` from Oct 26, or `maker`), `design` (maker design id; `ready_1` and up for the state's own set, by gallery position; for bespoke, the design from the file name: `varsity`, `masthead`, `ring`, `type`, ...), `palette` and `message` (maker only), `save_method` (`download`, `share_sheet`, `press_hold`) |
 | `sticker_save_cancel` | iPhone share sheet closed without saving | same as `sticker_save`, `save_method` `cancelled` |
 | `post_text_copy` | Copy post text | `state`, `message`, `post_variant` (`plan`, `short`, `friends`, `official`), `post_edited` (`yes`, `no`) |
 | `share` | Page link shared or copied | `method` (`share_sheet`, `copy_link`), `content_type` `page`, `item_id` (state or `hub`) |

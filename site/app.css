@@ -749,3 +749,8 @@ button.link-quiet:hover { text-decoration: underline; }
 /* Home showcases (October 26): a jump to the full state list under each grid. */
 .showcase__more { margin: var(--s4) 0 0; }
 .showcase__more a { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; font-weight: 700; }
+
+/* Size buttons (October 26): purpose labels ("Profile picture", "Foto de perfil") wrap on small phones;
+   equal widths, and smaller text under 400 px so each stays on one or two lines. */
+.sizes .size { flex: 1 1 0; min-width: 0; }
+@media (max-width: 400px) { .sizes .size, .tilts .size { font-size: var(--fs-xs); padding-inline: 6px; } }

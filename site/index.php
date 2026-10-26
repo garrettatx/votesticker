@@ -96,10 +96,48 @@ function vote_cols( $n ) { return $n <= 6 ? max( $n, 1 ) : ( $n <= 8 ? 4 : 5 ); 
 function vote_verified( $st ) { return 'verified' === ( $st['status'] ?? '' ); }
 // Ready-made sets are English images, so Spanish pages show none (Garrett, October 19); the Spanish
 // maker draws its own Spanish stickers.
+// Which language each bespoke sticker is for (assets/states/bespoke.json, written by scripts/render_bespoke.mjs):
+// lang 'en', 'es' or 'both', plus the recipe. Files not listed are the English ready-made sets.
+function vote_bespoke_lang( $stem ) {
+	static $m = null;
+	if ( null === $m ) { $f = __DIR__ . '/assets/states/bespoke.json'; $m = is_file( $f ) ? json_decode( file_get_contents( $f ), true ) : array(); }
+	return $m[ $stem ]['lang'] ?? null;
+}
+// The Spanish home page showcase: each state's Spanish bespoke stickers, one per state, never repeating a design.
+function vote_showcase_es( $abbrs ) {
+	$used = array(); $out = array();
+	foreach ( $abbrs as $abbr ) {
+		$files = glob( __DIR__ . "/assets/states/$abbr/*.jpg" ) ?: array();
+		natsort( $files );
+		foreach ( $files as $f ) {
+			$stem = basename( $f, '.jpg' ); $b = vote_bespoke( $stem );
+			if ( ! $b || 'es' !== $b['lang'] || isset( $used[ $b['design'] ] ) ) { continue; }
+			$out[ $abbr ] = $stem; $used[ $b['design'] ] = true; break;
+		}
+	}
+	return $out;
+}
+// The recipe a bespoke sticker was drawn with (design, palette, headline, slot ...), or null.
+function vote_bespoke( $stem ) {
+	vote_bespoke_lang( $stem );
+	$f = __DIR__ . '/assets/states/bespoke.json';
+	static $m = null;
+	if ( null === $m ) { $m = is_file( $f ) ? json_decode( file_get_contents( $f ), true ) : array(); }
+	return $m[ $stem ] ?? null;
+}
 function vote_files( $abbr ) {
-	if ( vote_es() ) { return array(); }
 	$files = array_map( 'basename', glob( __DIR__ . '/assets/states/' . strtolower( $abbr ) . '/*.jpg' ) ?: array() );
+	// Spanish pages show the Spanish bespoke set only (October 26; before that, no gallery at all, since the
+	// ready-mades are in English). English pages show everything not marked Spanish-only.
+	$es = vote_es();
+	$files = array_values( array_filter( $files, function ( $f ) use ( $es ) {
+		$l = vote_bespoke_lang( preg_replace( '/\.jpg$/', '', $f ) );
+		return $es ? in_array( $l, array( 'es', 'both' ), true ) : 'es' !== $l;
+	} ) );
 	natsort( $files );
+	// The state's own ready-mades (<abbr>-...) first, then the bespoke set (<state-name>-..., October 26).
+	$own = strtolower( $abbr ) . '-';
+	usort( $files, function ( $a, $b ) use ( $own ) { $x = 0 === strpos( $a, $own ) ? 0 : 1; $y = 0 === strpos( $b, $own ) ? 0 : 1; return $x === $y ? strnatcmp( $a, $b ) : $x - $y; } );
 	$files = array_values( array_filter( $files, function ( $f ) use ( $abbr ) { return vote_file_current( $abbr, $f ); } ) );
 	return array_map( function ( $f ) use ( $abbr ) { return vote_v( 'assets/states/' . strtolower( $abbr ) . '/' . $f ); }, $files );
 }
@@ -113,7 +151,8 @@ function vote_file_current( $abbr, $file ) {
 	$alt = $alts[ preg_replace( '/\.jpg$/', '', $file ) ] ?? '';
 	if ( ! preg_match( '/reading (.*)$/i', $alt, $m ) ) { return true; }
 	$says = strtolower( $m[1] );
-	if ( 'post' === vote_phase() ) { return (bool) preg_match( '/^(i voted|my ballot is in|[a-z. ]+ votes\b)/', $says ); }
+	// First-time voter, Future voter and Ya voté (the bespoke sets, October 26) stay true after Election Day too.
+	if ( 'post' === vote_phase() ) { return (bool) preg_match( '/^(i voted|my ballot is in|first-time voter|future voter|ya voté|mi primer voto|yo también votaré|[a-z. ]+ votes\b)/u', $says ); }
 	if ( 'ended' === ( $rows[ strtoupper( $abbr ) ]['kind'] ?? '' ) ) { return 0 !== strpos( $says, 'vote early' ); }
 	return true;
 }
@@ -126,6 +165,7 @@ function vote_alt( $src, $st, $i ) {
 	static $alts = null;
 	if ( null === $alts ) { $f = __DIR__ . '/assets/states/alts.json'; $alts = is_file( $f ) ? json_decode( file_get_contents( $f ), true ) : array(); }
 	$key = preg_replace( '#^.*/|\.jpg.*$#', '', $src );
+	if ( vote_es() && isset( $alts[ $key . '@es' ] ) ) { return $alts[ $key . '@es' ]; }
 	return $alts[ $key ] ?? t( '%s vote sticker, ready-made design %s', vote_lname( $st ), $i + 1 );
 }
 // A state's status line as label + date ("Early voting" muted, "Oct 24–31" darker).
@@ -136,6 +176,13 @@ function vote_status_html( $status ) {
 function vote_hero_file( $abbr ) {
 	$n = VOTE_HERO[ $abbr ] ?? 0;
 	$k = strtolower( $abbr );
+	// After Election Day the hero is the state's bespoke I VOTED in its own colors (slot 0, October 26).
+	if ( 'post' === vote_phase() && ! vote_es() ) {
+		foreach ( glob( __DIR__ . "/assets/states/$k/*.jpg" ) ?: array() as $f ) {
+			$b = vote_bespoke( basename( $f, '.jpg' ) );
+			if ( $b && 0 === $b['slot'] ) { return vote_v( "assets/states/$k/" . basename( $f ) ); }
+		}
+	}
 	if ( $n && is_file( __DIR__ . "/assets/states/$k/$k-vote-$n.jpg" ) && ! vote_es() && vote_file_current( $abbr, "$k-vote-$n.jpg" ) ) { return vote_v( "assets/states/$k/$k-vote-$n.jpg" ); }
 	return vote_files( $abbr )[0] ?? '';
 }
@@ -1216,10 +1263,12 @@ $vote_ld = array(
 			<?php elseif ( ! $vote_about ) : ?>
 			<div class="hero__art" aria-hidden="true">
 				<?php
-				// Four messages, four colors (October 21): vote early, I voted, my ballot is in, make a plan.
-				// Spanish pages draw the same four messages in Spanish (app.js spanishArt()).
-				foreach ( array( array( 'tx', 2, 'type', 'votatemprano', 'forest' ), array( 'ga', 7, 'type', 'yavote', 'maroon' ), array( 'or', 8, 'tilt', 'yavotecorreo', 'cobalt' ), array( 'az', 9, 'side', 'voyavotar', 'plum' ) ) as $k => $h ) : if ( is_file( __DIR__ . "/assets/states/{$h[0]}/{$h[0]}-vote-{$h[1]}.jpg" ) ) : ?>
-				<img class="hero__sticker hero__sticker--<?php echo $k + 1; ?>" src="<?php echo vote_v( "assets/states/{$h[0]}/{$h[0]}-vote-{$h[1]}.jpg" ); ?>" alt="" width="1080" height="1080"<?php echo $k ? ' loading="lazy"' : ''; ?><?php echo vote_es() ? ' data-es-state="' . strtoupper( $h[0] ) . '" data-es-design="' . $h[2] . '" data-es-headline="' . $h[3] . '" data-es-palette="' . $h[4] . '"' : ''; ?>>
+				// Four messages, four colors (October 21): vote early, I voted, I voted by mail, make a plan. October 26:
+				// the middle two are bespoke (an arched I VOTED on a sunburst, Varsity by mail) for range.
+				// Spanish pages draw the same four messages in Spanish (app.js spanishArt()). Values: state, file stem,
+				// then the design, Spanish message and palette spanishArt() redraws with.
+				foreach ( array( array( 'tx', 'tx-vote-2', 'type', 'votatemprano', 'forest' ), array( 'nc', 'north-carolina-i-voted-arch-sticker', 'arch', 'yavote', 'navy' ), array( 'co', 'colorado-i-voted-by-mail-varsity-sticker', 'varsity', 'yavotecorreo', 'plum' ), array( 'az', 'az-vote-9', 'side', 'voyavotar', 'plum' ) ) as $k => $h ) : if ( is_file( __DIR__ . "/assets/states/{$h[0]}/{$h[1]}.jpg" ) ) : ?>
+				<img class="hero__sticker hero__sticker--<?php echo $k + 1; ?>" src="<?php echo vote_v( "assets/states/{$h[0]}/{$h[1]}.jpg" ); ?>" alt="" width="1080" height="1080"<?php echo $k ? ' loading="lazy"' : ''; ?><?php echo vote_es() ? ' data-es-state="' . strtoupper( $h[0] ) . '" data-es-design="' . $h[2] . '" data-es-headline="' . $h[3] . '" data-es-palette="' . $h[4] . '"' : ''; ?>>
 				<?php endif; endforeach; ?>
 			</div>
 			<?php endif; ?>
@@ -1232,10 +1281,16 @@ $vote_ld = array(
 <?php if ( $vote_about ) : echo vote_about(); elseif ( $vote_history ) : echo vote_history(); else : ?>
 
 	<?php
-	// Landing showcase (October 19): one polished ready-made design per state, most populous first,
-	// mixing early dates, "by" dates and vote by mail. Shown in the circle a profile picture gets.
-	$vote_showcase = array( 'ca' => 4, 'tx' => 2, 'ny' => 2, 'pa' => 4, 'nc' => 2, 'va' => 5, 'wa' => 6, 'co' => 7 );
-	$vote_showcase = array_filter( $vote_showcase, function ( $n, $abbr ) { return is_file( __DIR__ . "/assets/states/$abbr/$abbr-vote-$n.jpg" ); }, ARRAY_FILTER_USE_BOTH );
+	// Landing showcase: one sticker per state, linking to its page. October 26 (Garrett: "highlight our highest
+	// quality ... a feel for our variety"): hand-picked bespoke stickers, eight different designs and messages,
+	// from a contact sheet of every candidate. The Spanish home page takes each state's Spanish set, a
+	// different design per state. Values are file stems in assets/states/<abbr>/.
+	$vote_showcase = vote_es() ? vote_showcase_es( array( 'ca', 'tx', 'ny', 'pa', 'nc', 'va', 'wa', 'co' ) ) : array(
+		'ca' => 'california-i-voted-by-mail-split-sticker', 'co' => 'colorado-i-voted-by-mail-varsity-sticker',
+		'ny' => 'new-york-i-voted-ring-sticker', 'nc' => 'north-carolina-i-voted-arch-sticker',
+		'pa' => 'pennsylvania-ya-vote-tilt-sticker', 'tx' => 'texas-first-time-voter-brush-sticker',
+		'va' => 'virginia-future-voter-half-sticker', 'wa' => 'washington-i-voted-plate-sticker' );
+	$vote_showcase = array_filter( $vote_showcase, function ( $f, $abbr ) { return is_file( __DIR__ . "/assets/states/$abbr/$f.jpg" ); }, ARRAY_FILTER_USE_BOTH );
 	// Alphabetical by the state's name in the page language (Garrett, October 26): easier to scan for your own.
 	$vote_by_name = function ( $a, $b ) use ( $vote_rows ) { return strcmp( vote_lname( $vote_rows[ strtoupper( $a ) ] ), vote_lname( $vote_rows[ strtoupper( $b ) ] ) ); };
 	uksort( $vote_showcase, $vote_by_name );
@@ -1247,7 +1302,7 @@ $vote_ld = array(
 		<div class="grid grid--showcase">
 			<?php foreach ( $vote_showcase as $abbr => $n ) : ?>
 			<a class="pick" href="<?php echo vote_pbase() . $vote_meta[ strtoupper( $abbr ) ]['slug']; ?>/">
-				<img src="<?php echo vote_v( "assets/states/$abbr/$abbr-vote-$n.jpg" ); ?>" alt="<?php echo vote_e( t( '%s vote sticker example', vote_lname( $vote_rows[ strtoupper( $abbr ) ] ) ) ); ?>" width="1080" height="1080" loading="lazy"<?php echo vote_es() ? ' data-es-state="' . strtoupper( $abbr ) . '"' : ''; ?>>
+				<img src="<?php echo vote_v( "assets/states/$abbr/$n.jpg" ); ?>" alt="<?php echo vote_e( vote_alt( "$n.jpg", $vote_rows[ strtoupper( $abbr ) ], 0 ) ); ?>" width="1080" height="1080" loading="lazy">
 				<span class="pick__name"><?php echo vote_e( vote_lname( $vote_rows[ strtoupper( $abbr ) ] ) ); ?></span>
 			</a>
 			<?php endforeach; ?>
@@ -1259,7 +1314,7 @@ $vote_ld = array(
 	// spread over five state pages with no page made for it. Ready-made designs that exist in each state's own
 	// gallery, linking there. English home page only: the images carry English text.
 	// States not already in Find a Sticker You Like, so the two sections together show sixteen (October 26).
-	$vote_early_picks = array( 'fl' => 'fl-vote-8', 'md' => 'md-i-voted-early', 'mi' => 'mi-vote-8', 'mn' => 'mn-i-voted-early', 'nj' => 'nj-vote-8', 'oh' => 'oh-i-voted-early', 'sc' => 'sc-i-voted-early', 'wi' => 'wi-i-voted-early' );
+	$vote_early_picks = array( 'fl' => 'florida-i-voted-early-arch-sticker', 'md' => 'maryland-i-voted-early-round-sticker', 'mi' => 'mi-vote-8', 'mn' => 'minnesota-i-voted-early-tilt-sticker', 'nj' => 'new-jersey-i-voted-early-split-sticker', 'oh' => 'oh-i-voted-early', 'sc' => 'south-carolina-i-voted-early-side-sticker', 'wi' => 'wi-i-voted-early' );
 	$vote_early_alts = json_decode( (string) file_get_contents( __DIR__ . '/assets/states/alts.json' ), true );
 	$vote_early_picks = array_filter( $vote_early_picks, function ( $f, $abbr ) { return is_file( __DIR__ . "/assets/states/$abbr/$f.jpg" ); }, ARRAY_FILTER_USE_BOTH );
 	uksort( $vote_early_picks, $vote_by_name );
@@ -1306,24 +1361,24 @@ $vote_ld = array(
 		<?php $vote_maker_first = ! $vote_files; ?>
 		<h2 class="maker-h display-h<?php echo $vote_maker_first ? ' maker-h--first' : ''; ?>" id="maker-h"><?php echo vote_e( $vote_maker_first ? t( 'Make Your %s Sticker', $vote_st ? vote_lname( $vote_st ) : '' ) : t( 'Or Make Your Own' ) ); ?></h2>
 		<div class="controls controls--maker">
-			<label><?php echo vote_e( t( 'Main message' ) ); ?>
+			<label><?php echo vote_e( t( 'What should it say?' ) ); ?>
 				<select id="headline"></select>
 			</label>
-			<label><?php echo vote_e( t( 'Date text' ) ); ?>
-				<span class="date-row"><input id="date" maxlength="24" autocomplete="off" spellcheck="false"><button type="button" class="btn btn--quiet" id="date-reset"><?php echo vote_e( t( 'Reset' ) ); ?></button></span>
+			<label><?php echo vote_e( t( 'Dates or extra text' ) ); ?>
+				<span class="date-row"><input id="date" maxlength="24" autocomplete="off" spellcheck="false"><button type="button" class="btn btn--quiet" id="date-reset"><?php echo vote_e( t( 'Reset dates' ) ); ?></button></span>
 			</label>
 		</div>
 
 		<div class="maker">
 			<section class="maker__designs" aria-labelledby="designs-h">
-				<h2 id="designs-h"><?php echo vote_e( t( 'Pick a Design' ) ); ?></h2>
+				<h2 id="designs-h"><?php echo vote_e( t( 'Choose a Layout' ) ); ?></h2>
 				<p class="help designs-help"><?php echo vote_e( t( 'Every design fits inside a profile-picture circle.' ) ); ?></p>
 				<div class="grid" id="grid"></div>
 			</section>
 			<div class="maker__preview" id="preview-wrap">
 				<div class="sizes" role="group" aria-label="<?php echo vote_e( t( 'Picture size' ) ); ?>">
-					<button type="button" class="size" data-size="square" aria-pressed="true"><?php echo vote_e( t( 'Square' ) ); ?></button>
-					<button type="button" class="size" data-size="portrait" aria-pressed="false"><?php echo vote_e( t( 'Portrait' ) ); ?></button>
+					<button type="button" class="size" data-size="square" aria-pressed="true"><?php echo vote_e( t( 'Profile picture' ) ); ?></button>
+					<button type="button" class="size" data-size="portrait" aria-pressed="false"><?php echo vote_e( t( 'Post' ) ); ?></button>
 					<button type="button" class="size" data-size="story" aria-pressed="false"><?php echo vote_e( t( 'Story' ) ); ?></button>
 				</div>
 				<div class="frame"><img id="preview" alt="<?php echo vote_e( t( 'Your profile picture' ) ); ?>" width="1080" height="1080"></div>
@@ -1335,13 +1390,13 @@ $vote_ld = array(
 					<label class="check" id="rays-check"><input type="checkbox" id="rays"> <?php echo vote_e( t( 'Sunburst background' ) ); ?></label>
 				</div>
 				<div class="sizes tilts" id="tilts" role="group" aria-label="<?php echo vote_e( t( 'Angle' ) ); ?>">
-					<button type="button" class="size" data-tilt="straight" aria-pressed="true"><?php echo vote_e( t( 'Straight' ) ); ?></button>
-					<button type="button" class="size" data-tilt="left" aria-pressed="false" aria-label="<?php echo vote_e( t( 'Tilt left' ) ); ?>"><?php echo vote_e( t( 'Left' ) ); ?></button>
-					<button type="button" class="size" data-tilt="right" aria-pressed="false" aria-label="<?php echo vote_e( t( 'Tilt right' ) ); ?>"><?php echo vote_e( t( 'Right' ) ); ?></button>
+					<button type="button" class="size" data-tilt="straight" aria-pressed="true"><?php echo vote_e( t( 'Level' ) ); ?></button>
+					<button type="button" class="size" data-tilt="left" aria-pressed="false" aria-label="<?php echo vote_e( t( 'Tilt left' ) ); ?>"><?php echo vote_e( t( 'Tilt left' ) ); ?></button>
+					<button type="button" class="size" data-tilt="right" aria-pressed="false" aria-label="<?php echo vote_e( t( 'Tilt right' ) ); ?>"><?php echo vote_e( t( 'Tilt right' ) ); ?></button>
 				</div>
 				<p class="summary" id="summary"></p>
-				<label class="check" id="circle-check"><input type="checkbox" id="circle"> <?php echo vote_e( t( 'Preview circle crop' ) ); ?></label>
-				<label class="check" id="round-check"><input type="checkbox" id="round"> <?php echo vote_e( t( 'Round sticker with a see-through background (PNG)' ) ); ?></label>
+				<label class="check" id="circle-check"><input type="checkbox" id="circle"> <?php echo vote_e( t( 'Show the profile-picture crop' ) ); ?></label>
+				<label class="check" id="round-check"><input type="checkbox" id="round"> <?php echo vote_e( t( 'Round sticker, no background (PNG)' ) ); ?></label>
 				<div class="actions">
 					<a class="btn" id="save" href="#" download aria-disabled="true"><?php echo vote_e( t( 'Download picture' ) ); ?></a>
 					<a class="link-quiet" id="open" href="#" target="_blank" rel="noopener"><?php echo vote_e( t( 'Open full image' ) ); ?></a>
@@ -1353,10 +1408,10 @@ $vote_ld = array(
 				<?php // After an I voted sticker is saved (final-week item 5): one more reminder to someone else. The button reuses the page's share link and its share event; not after Election Day. ?>
 				<?php if ( 'post' !== vote_phase() ) : ?><p class="hint after-save" id="nudge" hidden><?php echo vote_e( t( "Send this page to someone who hasn't voted yet." ) ); ?> <button type="button" class="link-quiet" id="nudge-share"><?php echo vote_e( t( 'Share the page' ) ); ?></button></p><?php endif; ?>
 				<details class="post" open>
-					<summary><?php echo vote_e( t( 'Suggested post text' ) ); ?></summary>
+					<summary><?php echo vote_e( t( 'Caption to share with your sticker' ) ); ?></summary>
 					<div class="post-picks" id="post-picks" role="group" aria-label="<?php echo vote_e( t( 'Post versions' ) ); ?>"><?php foreach ( VOTE_POST_VARIANTS as $vk => $vl ) : ?><button type="button" class="pick-chip" data-variant="<?php echo $vk; ?>" aria-pressed="<?php echo 'plan' === $vk ? 'true' : 'false'; ?>"><?php echo vote_e( t( $vl ) ); ?></button><?php endforeach; ?></div>
-					<textarea id="post-text" rows="7"<?php if ( $vote_st ) : ?> data-posts="<?php echo vote_e( vote_json( vote_post_all( $vote_st ) ) ); ?>"<?php endif; ?> aria-label="<?php echo vote_e( t( 'Suggested post text' ) ); ?>"><?php echo $vote_st ? vote_e( vote_post( $vote_st ) ) : ''; ?></textarea>
-					<button type="button" class="btn btn--quiet" id="copy"><?php echo vote_e( t( 'Copy post text' ) ); ?></button>
+					<textarea id="post-text" rows="7"<?php if ( $vote_st ) : ?> data-posts="<?php echo vote_e( vote_json( vote_post_all( $vote_st ) ) ); ?>"<?php endif; ?> aria-label="<?php echo vote_e( t( 'Caption to share with your sticker' ) ); ?>"><?php echo $vote_st ? vote_e( vote_post( $vote_st ) ) : ''; ?></textarea>
+					<button type="button" class="btn btn--quiet" id="copy"><?php echo vote_e( t( 'Copy caption and link' ) ); ?></button>
 				</details>
 			</div>
 		</div>
@@ -1445,9 +1500,9 @@ $vote_ld = array(
 		<details><summary><?php echo vote_e( t( 'How do I make it my profile picture?' ) ); ?></summary><p><?php echo vote_e( t( 'Tap Download picture, then open your profile settings in the app and choose the saved image as your photo. The design stays inside the circle that profile photos are cropped to.' ) ); ?></p></details>
 		<?php if ( 'post' === vote_phase() ) : ?>
 		<details><summary><?php echo vote_e( t( 'Can I still get an I voted sticker after the election?' ) ); ?></summary><p><?php echo vote_e( t( 'Yes. Save a free sticker, or make one with your own picture. The designs stay up after Election Day.' ) ); ?></p></details>
-		<details><summary><?php echo vote_e( t( 'I voted early or by mail. Which sticker should I use?' ) ); ?></summary><p><?php echo vote_e( t( 'Pick the one that fits: I voted, I voted early or I voted by mail. They are all in the Main message menu.' ) ); ?></p></details>
+		<details><summary><?php echo vote_e( t( 'I voted early or by mail. Which sticker should I use?' ) ); ?></summary><p><?php echo vote_e( t( 'Pick the one that fits: I voted, I voted early or I voted by mail. They are all under What should it say?' ) ); ?></p></details>
 		<?php else : ?>
-		<details><summary><?php echo vote_e( t( 'When should I switch to I voted?' ) ); ?></summary><p><?php echo vote_e( t( 'After you vote. Choose I voted in the Main message menu, or I voted early or I voted by mail if that fits.' ) ); ?></p></details>
+		<details><summary><?php echo vote_e( t( 'When should I switch to I voted?' ) ); ?></summary><p><?php echo vote_e( t( 'After you vote. Under What should it say?, choose I voted, or I voted early or I voted by mail if that fits.' ) ); ?></p></details>
 		<?php endif; ?>
 		<?php if ( ! $vote_st ) : ?>
 		<details><summary><?php echo vote_e( t( 'Is it really free?' ) ); ?></summary><p><?php echo vote_e( t( "Yes. There's nothing to buy, no account and no email list. Garrett Digital built it as a public service and pays for the hosting." ) ); ?></p></details>
@@ -1493,7 +1548,7 @@ window.VOTE_PHASE = <?php echo vote_json( vote_phase() ); ?>;
 window.VOTE_T = <?php
 // Maker strings, from the same dictionary as the page.
 $vote_js = array();
-foreach ( array( 'Tap Save to Photos, then Save Image. Then set it as your profile picture from Photos.', 'Tap Open image, press and hold the picture, and choose Save to Photos.', 'The picture saves to your Downloads. Set it as your profile picture from there.', 'The picture saves to your Downloads folder.', 'Save to Photos', 'Press and hold the picture, then tap Save to Photos.', 'Done', 'Download picture', 'Copied', 'Copy post text', 'Link copied', 'Copy this: ', 'No state matches. Try the full name.', 'Official info: ', 'Profile picture: ', 'Election Day is %s.', 'Tuesday, November 3, 2026', 'Pick a %s Sticker', 'Or Make Your Own', 'Make Your %s Sticker', '%s vote sticker, ready-made design %s', 'Sticker', 'Poster', 'Stamp', 'Big type', 'Tilt', 'Brush', 'Side by side', 'Arch', 'Plate', 'Split', 'Map below', 'Shadow', 'Ring', 'Half', 'Varsity', 'Masthead', 'State colors', 'Cream and navy', 'Navy and red', 'Forest and gold', 'Cobalt and chartreuse', 'Maroon and gold', 'Plum and cream', 'Teal and gold', 'Burnt orange and cream', 'Charcoal and gold', 'Vote early', 'Vote by mail', 'Vote Nov 3', 'I voted', 'I voted by mail', 'My ballot is in', 'I voted early', 'Vota temprano (español)', 'Vota por correo (español)', 'Vota 3 de nov (español)', 'Ya voté (español)', 'Ya voté temprano (español)', 'Ya voté por correo (español)', 'Voy a votar (español)', 'First-time voter', 'Mi primer voto (español)', 'Future voter', 'Yo también votaré (español)', 'Copy image description', 'Sticker in %s for %s reading %s.', 'Sticker in %s state colors reading %s.', '%s colors' ) as $k ) { $vote_js[ $k ] = t( $k ); }
+foreach ( array( 'Tap Save to Photos, then Save Image. Then set it as your profile picture from Photos.', 'Tap Open image, press and hold the picture, and choose Save to Photos.', 'The picture saves to your Downloads. Set it as your profile picture from there.', 'The picture saves to your Downloads folder.', 'Save to Photos', 'Press and hold the picture, then tap Save to Photos.', 'Done', 'Download picture', 'Copied', 'Copy caption and link', 'Link copied', 'Copy this: ', 'No state matches. Try the full name.', 'Official info: ', 'Profile picture: ', 'Election Day is %s.', 'Tuesday, November 3, 2026', 'Pick a %s Sticker', 'Or Make Your Own', 'Make Your %s Sticker', '%s vote sticker, ready-made design %s', 'Sticker', 'Poster', 'Stamp', 'Big type', 'Tilt', 'Brush', 'Side by side', 'Arch', 'Plate', 'Split', 'Map below', 'Shadow', 'Ring', 'Half', 'Varsity', 'Masthead', 'Check', 'State colors', 'Cream and navy', 'Navy and red', 'Forest and gold', 'Cobalt and chartreuse', 'Maroon and gold', 'Plum and cream', 'Teal and gold', 'Burnt orange and cream', 'Charcoal and gold', 'Vote early', 'Vote by mail', 'Vote Nov 3', 'I voted', 'I voted by mail', 'My ballot is in', 'I voted early', 'Vota temprano (español)', 'Vota por correo (español)', 'Vota 3 de nov (español)', 'Ya voté (español)', 'Ya voté temprano (español)', 'Ya voté por correo (español)', 'Voy a votar (español)', 'First-time voter', 'Mi primer voto (español)', 'Future voter', 'Yo también votaré (español)', 'Copy image description', 'Sticker in %s for %s reading %s.', 'Sticker in %s state colors reading %s.', '%s colors' ) as $k ) { $vote_js[ $k ] = t( $k ); }
 echo vote_json( $vote_js ); ?>;
 window.VOTE_ASSETS = <?php echo vote_json( VOTE_BASE . 'assets/' ); ?>;
 window.VOTE_PAGE_STATE = <?php echo vote_json( $vote_abbr ); ?>;</script>

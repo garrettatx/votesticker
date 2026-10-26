@@ -65,6 +65,9 @@ console.log('Desktop Chrome, Texas');
 	await tile.scrollIntoViewIfNeeded();
 	await Promise.all([page.waitForEvent('download', { timeout: 5000 }).catch(() => null), tile.click()]);
 	one(await events(page), 'sticker_save', { state: 'TX', sticker_source: 'ready_made', design: 'ready_1', save_method: 'download' }, 'ready-made save');
+	// A bespoke sticker (October 26): its own source value and the design from its file name.
+	await page.click('#gallery-grid a.tile[href*="/texas-i-voted-masthead-sticker"]');
+	one(await events(page), 'sticker_save', { state: 'TX', sticker_source: 'bespoke', design: 'masthead', save_method: 'download' }, 'bespoke save');
 
 	const want = await page.evaluate(() => ({ design: document.querySelector('#grid .tile[aria-pressed="true"]').dataset.design, message: document.getElementById('headline').value }));
 	await page.locator('#save').scrollIntoViewIfNeeded();
