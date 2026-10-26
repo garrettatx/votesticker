@@ -571,8 +571,15 @@ function vote_about() {
 		. $p( vote_e( t( "If we can't confirm a detail from an official source, we leave it out. States we're still checking show Election Day only." ) ) )
 		. $p( vote_e( t( 'Rules change, and counties often set their own locations and hours. Vote Sticker is a reminder. Your state or local election office is the final authority.' ) ) . ' <a href="' . vote_e( t( 'https://www.usa.gov/state-election-office' ) ) . '" target="_blank" rel="noopener">' . vote_e( t( 'Find your state or local election office' ) ) . '</a>.' ) . '</section>';
 	$out .= '<section class="guide" aria-labelledby="nonpartisan-h">' . $h( 'nonpartisan-h', 'Free and Nonpartisan' )
-		. $p( vote_e( t( "Vote Sticker doesn't support any candidate, party, ballot measure or position, and it never will. There are no accounts, no email list and nothing to buy." ) ) )
-		. $p( vote_e( t( 'Your sticker is made on your device and is never uploaded. We use basic, anonymous page analytics to see which state pages people visit.' ) ) ) . '</section>';
+		. $p( vote_e( t( "Vote Sticker doesn't support any candidate, party, ballot measure or position, and it never will. There are no accounts, no email list and nothing to buy." ) ) ) . '</section>';
+	// Privacy and accessibility (loop item 13, October 26): what the code does, nothing more. Analytics
+	// and events are listed in docs/analytics.md; the remembered choices are app.js load()/save().
+	$out .= '<section class="guide" aria-labelledby="privacy-h">' . $h( 'privacy-h', 'Privacy and Accessibility' )
+		. $p( vote_e( t( "Your sticker is drawn in your browser, on your own device. The picture is never uploaded, and the site never asks for a photo, a name or an email address." ) ) )
+		. $p( vote_e( t( "To see which state pages and designs people use, the site runs Google Analytics and Ahrefs Web Analytics. Google Analytics sets cookies to tell new visits from repeat ones. When you save a sticker or copy the post text, it records the state, design and message you picked, never the words of your post. If the state finder can't match what you typed, that search is logged so we can add the spelling." ) ) )
+		. $p( vote_e( t( 'Your browser remembers the last design and color you picked, and your language choice, so they are there next time. That stays on your device.' ) ) )
+		. $p( vote_e( t( 'Every ready-made sticker has a text description for screen readers. The state finder, the design and color choices and the save buttons work with a keyboard and show a visible focus outline, and motion effects turn off when your device is set to reduce motion.' ) ) )
+		. $p( vote_e( t( "If part of the site doesn't work with your screen reader, keyboard or other tool," ) ) . ' <a href="https://www.garrettdigital.com/contact/">' . vote_e( t( 'tell us through the Garrett Digital contact page' ) ) . '</a> ' . vote_e( t( "and we'll fix it." ) ) ) . '</section>';
 	$out .= '<section class="guide" aria-labelledby="who-h">' . $h( 'who-h', 'Who Made It' )
 		. $p( vote_e( t( 'Vote Sticker is an independent public-service project built and maintained by' ) ) . ' <a href="https://www.garrettdigital.com/">Garrett Digital</a>, ' . vote_e( t( 'an SEO and search marketing consultancy in Austin, Texas.' ) ) )
 		. $p( vote_e( t( "I'm Garrett Nafzinger. I built Vote Sticker in October 2026 because a clear voting reminder that people can share seemed like a useful thing to put into the world. It isn't affiliated with any government office, campaign or party." ) ) )
@@ -675,11 +682,15 @@ function vote_post_fact( $st, $after, $named = true ) {
 	$ok = vote_verified( $st );
 	$kind = $ok ? $st['kind'] : '';
 	$in = $named ? ( $es ? ' en ' . $name : ' in ' . $name ) : '';
+	// ID, ND, PA and VT have no single start date (already open, or set by county): "through <end>" only.
+	// Before October 26 a missing start printed PHP warnings into data-posts and "January 1" into the text.
+	$start = $st['start'] ?? '';
 	if ( $es ) {
 		if ( 'in-person' === $kind ) {
-			$same = date( 'n', strtotime( $st['start'] ) ) === date( 'n', strtotime( $st['end'] ) );
+			$same = $start && date( 'n', strtotime( $start ) ) === date( 'n', strtotime( $st['end'] ) );
 			$f = $after ? ( $named && 'pre' === vote_phase() ? 'Todavía hay tiempo: la' : 'la' ) . ' votación anticipada' . $in . ' sigue hasta el ' . vote_long( $st['end'] ) . ', y el 3 de noviembre abren las casillas.'
-				: 'la votación anticipada' . $in . ' es del ' . ( $same ? date( 'j', strtotime( $st['start'] ) ) : vote_long( $st['start'] ) ) . ' al ' . vote_long( $st['end'] ) . '.';
+				: ( $start ? 'la votación anticipada' . $in . ' es del ' . ( $same ? date( 'j', strtotime( $start ) ) : vote_long( $start ) ) . ' al ' . vote_long( $st['end'] ) . '.'
+					: 'la votación anticipada' . $in . ' sigue hasta el ' . vote_long( $st['end'] ) . '.' );
 		} elseif ( 'mail' === $kind ) {
 			$f = $after ? ( $named ? 'Si todavía no has entregado la tuya,' . $in . ' la' : 'la' ) . ' boleta se recibe a más tardar el ' . vote_long( $st['end'] ) . '.'
 				: ( $named ? $name . ' vota por correo. La' : 'la' ) . ' boleta se entrega a más tardar el ' . vote_long( $st['end'] ) . '.';
@@ -688,9 +699,10 @@ function vote_post_fact( $st, $after, $named = true ) {
 				: 'el Día de las Elecciones' . $in . ' es el martes 3 de noviembre.';
 		}
 	} elseif ( 'in-person' === $kind ) {
-		$same = date( 'n', strtotime( $st['start'] ) ) === date( 'n', strtotime( $st['end'] ) );
+		$same = $start && date( 'n', strtotime( $start ) ) === date( 'n', strtotime( $st['end'] ) );
 		$f = $after ? ( $named && 'pre' === vote_phase() ? "There's still time: early" : 'early' ) . ' voting' . $in . ' runs through ' . vote_long( $st['end'] ) . ', and polls are open November 3.'
-			: 'early voting' . $in . ' runs ' . vote_long( $st['start'] ) . ' to ' . ( $same ? date( 'j', strtotime( $st['end'] ) ) : vote_long( $st['end'] ) ) . '.';
+			: ( $start ? 'early voting' . $in . ' runs ' . vote_long( $start ) . ' to ' . ( $same ? date( 'j', strtotime( $st['end'] ) ) : vote_long( $st['end'] ) ) . '.'
+				: 'early voting' . $in . ' runs through ' . vote_long( $st['end'] ) . '.' );
 	} elseif ( 'mail' === $kind ) {
 		$f = $after ? ( $named ? "If yours isn't in yet, " . $name . ' ballots' : 'ballots' ) . ' are due ' . vote_long( $st['end'] ) . '.'
 			: ( $named ? $name . ' votes by mail. Ballots' : 'ballots' ) . ' are due ' . vote_long( $st['end'] ) . '.';

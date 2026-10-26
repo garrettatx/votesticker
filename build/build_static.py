@@ -40,6 +40,11 @@ def render(slug_name=''):
     out = subprocess.run(cmd, capture_output=True, text=True, check=True).stdout
     if '</html>' not in out or '<h1' not in out:  # the 404 render exits with status 0 too
         raise SystemExit(f'empty render for {slug_name or "hub"}: {out[:200]!r}')
+    # PHP prints warnings into the page (October 26: 15,000 characters of them inside ID, ND, PA and VT
+    # data-posts, live since Oct 21). Any of them stops the build.
+    m = re.search(r'(?m)^(Warning|Deprecated|Notice|Fatal error|Parse error): .*', out)
+    if m:
+        raise SystemExit(f'PHP {m.group(1).lower()} in the render for {slug_name or "hub"}: {m.group(0)[:200]}')
     return out
 
 

@@ -47,7 +47,7 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
 | 10 | Sticker collection and 2026 archive (`docs/sticker-archive-spec.md`): data first | Data built Oct 25; all 51 office records reviewed Oct 26 |
 | 11 | Descriptive image filenames with 301s from the old URLs | Map built Oct 26; switch after Nov 5 |
 | 12 | Snohomish County as a second Washington sticker source | Done Oct 26 |
-| 13 | Privacy and accessibility section on About | |
+| 13 | Privacy and accessibility section on About | Done Oct 26 |
 
 ## Log
 
@@ -158,3 +158,22 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
   checked in a Nov 4 preview build in both languages. The release names no drop boxes, so the page
   doesn't either. Collection: `wa-office` is Snohomish, Thurston split out as `wa-mail` (52 records).
   Facts, Spanish and SEO QA pass; the stale scan is unchanged at 27.
+- **Oct 26, item 13 (About: Privacy and Accessibility).** New section on `/about/` and `/es/about/`,
+  written from what the code does: the sticker is drawn on the device and never uploaded, no photo,
+  name or email asked for; Google Analytics (cookies) and Ahrefs Web Analytics; events carry the state,
+  design and message, never post words; a state-finder search that matches nothing is logged; the
+  browser remembers design, color and language. Accessibility: alt text on every ready-made, keyboard
+  controls with a focus outline, reduce-motion honored, and a contact link for problems. The old
+  "basic, anonymous page analytics" line came out: GA4 sets cookies, so "anonymous" overstated it.
+  To make the reduce-motion line true, the maker's scroll to the preview now skips smooth scrolling
+  when the device asks for less motion (`app.js`).
+- **Oct 26, bug found during item 13: PHP warnings on ID, ND, PA and VT (EN and ES), live since Oct 21.**
+  These four states have no single start date, and `vote_post_fact()` read `$st['start']` anyway.
+  PHP printed about 15,000 characters of warnings, with the server path, into the `data-posts`
+  attribute, so `JSON.parse` failed and the Short, Friends and Official post versions did nothing on
+  those eight pages. Under the warnings, those versions read "runs January 1 to October 30". Fixed:
+  no start date means "runs through <end>" ("sigue hasta el <end>"), the same wording as the sticker's
+  THROUGH line. New guard in `build/build_static.py`: any PHP Warning, Deprecated, Notice or error in
+  a render stops the build (mutation-tested against the old code; it stopped on Idaho). Builds for
+  Oct 31, Nov 2 and Nov 4 render clean. Chip switching checked in a browser on Idaho and Spanish
+  Vermont. Facts, Spanish, SEO and event QA pass; the stale scan is unchanged at 27.

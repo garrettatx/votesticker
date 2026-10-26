@@ -1471,7 +1471,7 @@
 			drawGrid();
 			drawPreview();
 			var top = $('preview').getBoundingClientRect().top;
-			if (top < 0 || top > window.innerHeight * 0.6) { $('preview-wrap').scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+			if (top < 0 || top > window.innerHeight * 0.6) { $('preview-wrap').scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' }); }
 		});
 		$('swatches').addEventListener('click', function (e) {
 			var b = e.target.closest('.swatch');
