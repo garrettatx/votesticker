@@ -33,9 +33,9 @@ Search Console `sc-domain:votesticker.org`. Both are read by the shared service 
 | `share` | Page link shared or copied | `method` (`share_sheet`, `copy_link`), `content_type` `page`, `item_id` (state or `hub`) |
 | `state_search_miss` | The state finder matched nothing (on Enter, Go or leaving the box; once per term per page) | `search_term` |
 
-Message ids are per language: English `early`, `nov3`, `ivoted`, `voted`, `mail`, `mailed`, `ballotin`;
-Spanish `votatemprano`, `vota3nov`, `voyavotar`, `yavote`, `yavotetemprano`, `votacorreo`,
-`yavotecorreo`. The page path tells the language.
+Message ids are per language: English `early`, `nov3`, `ivoted`, `voted`, `mail`, `mailed`, `ballotin`,
+`firsttime`, `futurevoter`; Spanish `votatemprano`, `vota3nov`, `voyavotar`, `yavote`, `yavotetemprano`,
+`votacorreo`, `yavotecorreo`, `miprimervoto`, `yotambien`. The page path tells the language.
 
 `press_hold` counts the picture being shown full screen. iOS doesn't report whether the person then
 saved it, so it is the closest available signal.

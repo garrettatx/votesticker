@@ -24,7 +24,7 @@ edit files, and every quote is re-read before it goes on a page.
 | 2 | **Keyboard-only walkthrough of the maker and state pages** | About now says the controls work with a keyboard; prove it or fix it | Done Oct 26: passes, no change |
 | 3 | **Sticker story for the 18 states without one** (`sticker.tradition`: AR AZ CA DC DE IA IL IN MA ME NE NJ NV PA SC TX VA WI), official sources only | The sticker is the brand, and the big states have nothing | |
 | 4 | **Tilt control** (Straight, Left, Right) under the swatches; `render` already takes `tilt` | Cheap design range from the October 22 work | Done Oct 26 |
-| 5 | **"Future voter"** message for kids and families, EN and ES | Useful on Election Day and after it | |
+| 5 | **"Future voter"** message for kids and families, EN and ES | Useful on Election Day and after it | Done Oct 26 |
 | 6 | **Guide type:** body text 17 px, line height about 1.6, in the guide sections | Backlog review item; long FAQ answers on phones | |
 
 ## Log
@@ -44,3 +44,13 @@ edit files, and every quote is re-read before it goes on a page.
   Half, whose full-bleed bands would show their ends. Checked by pixel hash (three different images
   per design for Map below, Ring and Sticker) and screenshots; buttons 91 x 44 at 320 px with no
   sideways scroll. Spanish, SEO and event QA pass.
+- **Oct 26, item 5 (Future voter).** New maker messages: FUTURE / VOTER and, in Spanish, YO TAMBIÉN /
+  VOTARÉ ("I'll vote too"), both with the state and year on the date bar. Spanish avoids FUTURO or
+  FUTURA VOTANTE, which would pick a gender for the child. Offered in every phase, after Election
+  Day included; no "send to someone who hasn't voted" line after saving one. Message ids added to
+  `docs/analytics.md` (which also lacked `firsttime` and `miprimervoto`). Rendered for Ohio and
+  Spanish Texas; Spanish and event QA pass.
+- **Oct 26, build timing:** GitHub has started the 11:05 UTC cron 3 to 4.5 hours late every day this
+  week (done 9:25 a.m. to 10:50 a.m. Central; Oct 26 still not started at 10:09). On Nov 2 and Nov 4,
+  don't wait for it: dispatch the build by hand early (Actions, Daily build, Run workflow) if the
+  scheduled run hasn't landed by 7 a.m.

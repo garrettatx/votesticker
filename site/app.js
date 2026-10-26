@@ -128,6 +128,9 @@
 		voted: { early: true, past: true, label: 'I voted early', lines: ['I VOTED', 'EARLY'] },
 		// The history research's strongest new message (October 22); true in any state, before or after voting.
 		firsttime: { label: 'First time voter', lines: ['FIRST TIME', 'VOTER'], stateLine: true },
+		// For kids and families (October 26): true before, on and after Election Day. Spanish says "I'll vote
+		// too" because FUTURO/FUTURA VOTANTE would pick a gender.
+		futurevoter: { label: 'Future voter', lines: ['FUTURE', 'VOTER'], stateLine: true },
 		// Spanish (October 19): tú, per the project glossary (docs/spanish-style.md); "Ya voté" is the
 		// everyday Mexican phrasing for "I voted". Date bars
 		// put the day first ("19–30 OCT", "HASTA EL 27 OCT").
@@ -139,6 +142,7 @@
 		yavotecorreo: { mail: true, es: true, label: 'Ya voté por correo (español)', lines: ['YA VOTÉ', 'POR CORREO'], stateLine: true },
 		miprimervoto: { es: true, label: 'Mi primer voto (español)', lines: ['MI PRIMER', 'VOTO'], stateLine: true },
 		voyavotar: { es: true, label: 'Voy a votar (español)', lines: ['VOY A', 'VOTAR'], stateLine: true },
+		yotambien: { es: true, label: 'Yo también votaré (español)', lines: ['YO TAMBIÉN', 'VOTARÉ'], stateLine: true },
 	};
 
 	// Language (October 19): the page sets VOTE_LANG and VOTE_T (maker strings from the same dictionary as

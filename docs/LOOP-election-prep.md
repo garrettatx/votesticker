@@ -35,8 +35,8 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
 | Daily Oct 26 to Nov 1 | After the 6:05 a.m. build (5:05 from Nov 2): states whose early voting ended show the ended title, gallery and share image live; IndexNow for changed pages |
 | Oct 29 | First impact look: Search Console impressions for the 21 pages updated Oct 24, from each page's recrawl date |
 | Nov 1 (Sunday) | Index snapshot, `archive_search.py --index` |
-| Nov 2 | Banner live: hours, lookups, mail return lines; the 15 states still voting early that day keep their early-voting lines |
-| Nov 4 | 06:30 UTC run deployed post-election mode; spot-check EN and ES; rerun from Actions with `2026-11-04` if not |
+| Nov 2 | GitHub runs the cron hours late: if no build by 7 a.m., dispatch it by hand. Banner live: hours, lookups, mail return lines; the 15 states still voting early that day keep their early-voting lines |
+| Nov 4 | 06:30 UTC run deployed post-election mode (GitHub may start it hours late; dispatch with `2026-11-04` by 7 a.m. if not); spot-check EN and ES; rerun from Actions with `2026-11-04` if not |
 | Nov 5 | Remove the `30 6 4 11 *` cron; log the release in `docs/change-log.csv` |
 
 ## After the Election

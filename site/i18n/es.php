@@ -480,6 +480,6 @@ return array(
 		'I voted' => 'I voted (en inglés)', 'Voy a votar (español)' => 'Voy a votar', 'I voted by mail' => 'I voted by mail (en inglés)', 'I voted early' => 'I voted early (en inglés)',
 		'Vota temprano (español)' => 'Vota temprano', 'Vota por correo (español)' => 'Vota por correo', 'Vota 3 de nov (español)' => 'Vota 3 de nov',
 		'Ya voté (español)' => 'Ya voté', 'Ya voté temprano (español)' => 'Ya voté temprano', 'Ya voté por correo (español)' => 'Ya voté por correo',
-		'First time voter' => 'First time voter (en inglés)', 'Mi primer voto (español)' => 'Mi primer voto',
+		'First time voter' => 'First time voter (en inglés)', 'Mi primer voto (español)' => 'Mi primer voto', 'Future voter' => 'Future voter (en inglés)', 'Yo también votaré (español)' => 'Yo también votaré',
 	),
 );
