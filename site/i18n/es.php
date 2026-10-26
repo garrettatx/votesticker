@@ -449,6 +449,7 @@ return array(
 		'Make a voting plan' => 'Haz tu plan para votar',
 		'Round sticker with a see-through background (PNG)' => 'Sticker redondo con fondo transparente (PNG)',
 		'Sunburst background' => 'Fondo con rayos de sol',
+		'Don’t see your state? See all 50 states and DC' => '¿No ves tu estado? Ver los 50 estados y DC',
 		'Planning help on VOTE411, from the nonpartisan League of Women Voters Education Fund.' => 'Ayuda para planear en VOTE411, de la organización no partidista League of Women Voters Education Fund (en inglés).',
 		'Planning help from %s.' => 'Ayuda para planear de %s.',
 		'How it looks as a profile picture' => 'Así se ve como foto de perfil',
@@ -490,6 +491,6 @@ return array(
 		'I voted' => 'I voted (en inglés)', 'Voy a votar (español)' => 'Voy a votar', 'I voted by mail' => 'I voted by mail (en inglés)', 'I voted early' => 'I voted early (en inglés)',
 		'Vota temprano (español)' => 'Vota temprano', 'Vota por correo (español)' => 'Vota por correo', 'Vota 3 de nov (español)' => 'Vota 3 de nov',
 		'Ya voté (español)' => 'Ya voté', 'Ya voté temprano (español)' => 'Ya voté temprano', 'Ya voté por correo (español)' => 'Ya voté por correo',
-		'First time voter' => 'First time voter (en inglés)', 'Mi primer voto (español)' => 'Mi primer voto', 'Future voter' => 'Future voter (en inglés)', 'Yo también votaré (español)' => 'Yo también votaré',
+		'First-time voter' => 'First-time voter (en inglés)', 'Mi primer voto (español)' => 'Mi primer voto', 'Future voter' => 'Future voter (en inglés)', 'Yo también votaré (español)' => 'Yo también votaré',
 	),
 );

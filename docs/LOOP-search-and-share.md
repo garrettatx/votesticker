@@ -114,3 +114,9 @@ Measure each change in Search Console from its recrawl date.
   `-sunburst`. Card QA 94,640 cards, 0 outside the safe circle; save, event, Spanish and SEO QA pass.
   Grid stays at 14 (Garrett: the short desktop row isn't a big deal). LAN preview for Garrett:
   http://192.168.1.252:8793/ (python http.server on dist, this session only).
+- **Oct 26, homepage showcases and copy (Garrett).** Find a Sticker You Like and I Voted Early Stickers
+  now show different states (16 in all: CA CO NY NC PA TX VA WA, then FL MD MI MN NJ OH SC WI),
+  alphabetical by the name in the page language, each with "Don't see your state? See all 50 states
+  and DC ↓" to the state list (`#states-h`). "First time voter" is now "First-time voter" (sticker
+  line FIRST-TIME, 10 characters; message id unchanged). Copy scan: Election Day capitalized all 129
+  times, "drop box" two words wherever a voter reads it. Spanish and SEO QA pass.

@@ -134,7 +134,7 @@
 		ballotin: { mail: true, label: 'My ballot is in', lines: ['MY BALLOT', 'IS IN'], stateLine: true },
 		voted: { early: true, past: true, label: 'I voted early', lines: ['I VOTED', 'EARLY'] },
 		// The history research's strongest new message (October 22); true in any state, before or after voting.
-		firsttime: { label: 'First time voter', lines: ['FIRST TIME', 'VOTER'], stateLine: true },
+		firsttime: { label: 'First-time voter', lines: ['FIRST-TIME', 'VOTER'], stateLine: true },  // hyphenated: it modifies VOTER (Oct 26)
 		// For kids and families (October 26): true before, on and after Election Day. Spanish says "I'll vote
 		// too" because FUTURO/FUTURA VOTANTE would pick a gender.
 		futurevoter: { label: 'Future voter', lines: ['FUTURE', 'VOTER'], stateLine: true },
@@ -863,7 +863,7 @@
 		// Ballot bubble: the filled-in oval from a ballot beside the stack. Filled when the message says it's
 		// done (I VOTED, YA VOTÉ, MY BALLOT IS IN), an empty keyline when it's a plan.
 		bubble: function (st, p, lines, dateText) {
-			var done = /^(I VOTED|YA VOT|MY BALLOT|FIRST TIME)/.test(lines[0]);
+			var done = /^(I VOTED|YA VOT|MY BALLOT|FIRST-TIME)/.test(lines[0]);
 			var head = textBlock(lines, DISPLAY, 560, 260, { justify: true, leading: 0.1, track: -0.01 });
 			var th = head.asc * lines.length + head.gap * (lines.length - 1);
 			var ry = Math.min(th * 0.42, 150), rx = ry * 1.55, gap = 64;

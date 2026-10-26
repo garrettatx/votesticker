@@ -1236,6 +1236,9 @@ $vote_ld = array(
 	// mixing early dates, "by" dates and vote by mail. Shown in the circle a profile picture gets.
 	$vote_showcase = array( 'ca' => 4, 'tx' => 2, 'ny' => 2, 'pa' => 4, 'nc' => 2, 'va' => 5, 'wa' => 6, 'co' => 7 );
 	$vote_showcase = array_filter( $vote_showcase, function ( $n, $abbr ) { return is_file( __DIR__ . "/assets/states/$abbr/$abbr-vote-$n.jpg" ); }, ARRAY_FILTER_USE_BOTH );
+	// Alphabetical by the state's name in the page language (Garrett, October 26): easier to scan for your own.
+	$vote_by_name = function ( $a, $b ) use ( $vote_rows ) { return strcmp( vote_lname( $vote_rows[ strtoupper( $a ) ] ), vote_lname( $vote_rows[ strtoupper( $b ) ] ) ); };
+	uksort( $vote_showcase, $vote_by_name );
 	?>
 	<?php if ( $vote_showcase && ! $vote_st ) : ?>
 	<section class="showcase" id="showcase" aria-labelledby="showcase-h">
@@ -1249,14 +1252,17 @@ $vote_ld = array(
 			</a>
 			<?php endforeach; ?>
 		</div>
+		<?php if ( ! $vote_404 ) : ?><p class="showcase__more"><a href="#states-h"><?php echo vote_e( t( 'Don’t see your state? See all 50 states and DC' ) ); ?> <span aria-hidden="true">↓</span></a></p><?php endif; ?>
 	</section>
 	<?php
 	// I voted early (search-and-share loop item 2, October 26): the top search query, "i voted early sticker", was
 	// spread over five state pages with no page made for it. Ready-made designs that exist in each state's own
 	// gallery, linking there. English home page only: the images carry English text.
-	$vote_early_picks = array( 'tx' => 'tx-i-voted-early', 'nc' => 'nc-i-voted-early', 'ny' => 'ny-i-voted-early', 'fl' => 'fl-vote-8', 'oh' => 'oh-i-voted-early', 'md' => 'md-i-voted-early', 'pa' => 'pa-i-voted-early', 'va' => 'va-i-voted-early' );
+	// States not already in Find a Sticker You Like, so the two sections together show sixteen (October 26).
+	$vote_early_picks = array( 'fl' => 'fl-vote-8', 'md' => 'md-i-voted-early', 'mi' => 'mi-vote-8', 'mn' => 'mn-i-voted-early', 'nj' => 'nj-vote-8', 'oh' => 'oh-i-voted-early', 'sc' => 'sc-i-voted-early', 'wi' => 'wi-i-voted-early' );
 	$vote_early_alts = json_decode( (string) file_get_contents( __DIR__ . '/assets/states/alts.json' ), true );
 	$vote_early_picks = array_filter( $vote_early_picks, function ( $f, $abbr ) { return is_file( __DIR__ . "/assets/states/$abbr/$f.jpg" ); }, ARRAY_FILTER_USE_BOTH );
+	uksort( $vote_early_picks, $vote_by_name );
 	if ( $vote_early_picks && ! $vote_404 && ! vote_es() && ! vote_between() ) : ?>
 	<section class="showcase showcase--early" id="i-voted-early" aria-labelledby="early-h">
 		<h2 id="early-h" class="display-h"><?php echo vote_e( t( 'I Voted Early Stickers' ) ); ?></h2>
@@ -1269,6 +1275,7 @@ $vote_ld = array(
 			</a>
 			<?php endforeach; ?>
 		</div>
+		<?php if ( ! $vote_404 ) : ?><p class="showcase__more"><a href="#states-h"><?php echo vote_e( t( 'Don’t see your state? See all 50 states and DC' ) ); ?> <span aria-hidden="true">↓</span></a></p><?php endif; ?>
 	</section>
 	<?php endif; ?>
 	<?php if ( ! $vote_404 ) : ?>
@@ -1486,7 +1493,7 @@ window.VOTE_PHASE = <?php echo vote_json( vote_phase() ); ?>;
 window.VOTE_T = <?php
 // Maker strings, from the same dictionary as the page.
 $vote_js = array();
-foreach ( array( 'Tap Save to Photos, then Save Image. Then set it as your profile picture from Photos.', 'Tap Open image, press and hold the picture, and choose Save to Photos.', 'The picture saves to your Downloads. Set it as your profile picture from there.', 'The picture saves to your Downloads folder.', 'Save to Photos', 'Press and hold the picture, then tap Save to Photos.', 'Done', 'Download picture', 'Copied', 'Copy post text', 'Link copied', 'Copy this: ', 'No state matches. Try the full name.', 'Official info: ', 'Profile picture: ', 'Election Day is %s.', 'Tuesday, November 3, 2026', 'Pick a %s Sticker', 'Or Make Your Own', 'Make Your %s Sticker', '%s vote sticker, ready-made design %s', 'Sticker', 'Poster', 'Stamp', 'Big type', 'Tilt', 'Brush', 'Side by side', 'Arch', 'Plate', 'Split', 'Map below', 'Shadow', 'Ring', 'Half', 'Varsity', 'Masthead', 'State colors', 'Cream and navy', 'Navy and red', 'Forest and gold', 'Cobalt and chartreuse', 'Maroon and gold', 'Plum and cream', 'Teal and gold', 'Burnt orange and cream', 'Charcoal and gold', 'Vote early', 'Vote by mail', 'Vote Nov 3', 'I voted', 'I voted by mail', 'My ballot is in', 'I voted early', 'Vota temprano (español)', 'Vota por correo (español)', 'Vota 3 de nov (español)', 'Ya voté (español)', 'Ya voté temprano (español)', 'Ya voté por correo (español)', 'Voy a votar (español)', 'First time voter', 'Mi primer voto (español)', 'Future voter', 'Yo también votaré (español)', 'Copy image description', 'Sticker in %s for %s reading %s.', 'Sticker in %s state colors reading %s.', '%s colors' ) as $k ) { $vote_js[ $k ] = t( $k ); }
+foreach ( array( 'Tap Save to Photos, then Save Image. Then set it as your profile picture from Photos.', 'Tap Open image, press and hold the picture, and choose Save to Photos.', 'The picture saves to your Downloads. Set it as your profile picture from there.', 'The picture saves to your Downloads folder.', 'Save to Photos', 'Press and hold the picture, then tap Save to Photos.', 'Done', 'Download picture', 'Copied', 'Copy post text', 'Link copied', 'Copy this: ', 'No state matches. Try the full name.', 'Official info: ', 'Profile picture: ', 'Election Day is %s.', 'Tuesday, November 3, 2026', 'Pick a %s Sticker', 'Or Make Your Own', 'Make Your %s Sticker', '%s vote sticker, ready-made design %s', 'Sticker', 'Poster', 'Stamp', 'Big type', 'Tilt', 'Brush', 'Side by side', 'Arch', 'Plate', 'Split', 'Map below', 'Shadow', 'Ring', 'Half', 'Varsity', 'Masthead', 'State colors', 'Cream and navy', 'Navy and red', 'Forest and gold', 'Cobalt and chartreuse', 'Maroon and gold', 'Plum and cream', 'Teal and gold', 'Burnt orange and cream', 'Charcoal and gold', 'Vote early', 'Vote by mail', 'Vote Nov 3', 'I voted', 'I voted by mail', 'My ballot is in', 'I voted early', 'Vota temprano (español)', 'Vota por correo (español)', 'Vota 3 de nov (español)', 'Ya voté (español)', 'Ya voté temprano (español)', 'Ya voté por correo (español)', 'Voy a votar (español)', 'First-time voter', 'Mi primer voto (español)', 'Future voter', 'Yo también votaré (español)', 'Copy image description', 'Sticker in %s for %s reading %s.', 'Sticker in %s state colors reading %s.', '%s colors' ) as $k ) { $vote_js[ $k ] = t( $k ); }
 echo vote_json( $vote_js ); ?>;
 window.VOTE_ASSETS = <?php echo vote_json( VOTE_BASE . 'assets/' ); ?>;
 window.VOTE_PAGE_STATE = <?php echo vote_json( $vote_abbr ); ?>;</script>
