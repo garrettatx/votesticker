@@ -1291,7 +1291,8 @@
 			b.firstChild.style.background = 'linear-gradient(135deg, ' + p.bg + ' 0 56%, ' + p.ink + ' 56% 80%, ' + p.accent + ' 80%)';
 			b.setAttribute('aria-pressed', String(b.dataset.palette === state.palette));
 		});
-		$('swatch-name').textContent = T(paletteFor(state.palette, st).name);
+		var pal = paletteFor(state.palette, st);
+		$('swatch-name').textContent = pal.id === 'state' ? T('%s colors', nameOf(st)) : T(pal.name);  // "Colores de Texas" in Spanish
 	}
 
 	function drawPreview() {
@@ -1503,6 +1504,19 @@
 			Array.prototype.forEach.call(document.querySelectorAll('#post-picks .pick-chip'), function (x) { x.setAttribute('aria-pressed', String(x === b)); });
 			postEdited = false;
 			setPost();
+		});
+		// Image description (October 26): the colors, the state and the words the sticker shows, for the alt
+		// text field when someone posts it. Same words as the picture, so it changes with every redraw.
+		function altText() {
+			var st = byAbbr[state.state], o = opts();
+			var words = [headlineLines(state.headline, st).join(' ')].concat(o.dateText ? [o.dateText] : []).join(', ');
+			if (state.palette === 'state') { return T('Sticker in %s state colors reading %s.', nameOf(st), words); }
+			return T('Sticker in %s for %s reading %s.', T(paletteFor(state.palette, st).name).toLowerCase(), nameOf(st), words);
+		}
+		$('copy-alt').addEventListener('click', function () {
+			var text = altText(), b = $('copy-alt');
+			var done = function () { b.textContent = T('Copied'); setTimeout(function () { b.textContent = T('Copy image description'); }, 2000); };
+			if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done, function () {}); }
 		});
 		// No call on load: the server already wrote the version for the state's default message.
 		$('copy').addEventListener('click', function () {
