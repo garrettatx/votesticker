@@ -95,7 +95,11 @@
 		// hard offset shadow, type set around a disc, and a color field with the state knocked out.
 		{ id: 'shadow', name: 'Shadow', palette: 'cream' },
 		{ id: 'ringtext', name: 'Ring', palette: 'maroon' },
-		{ id: 'half', name: 'Half', palette: 'cream' }
+		{ id: 'half', name: 'Half', palette: 'cream' },
+		// October 26: Garrett picked these two from six sketches (Tricolor cut: its bands crop badly in the
+		// profile circle). Varsity is jersey lettering with a deep extrusion, Masthead a heavy slab serif.
+		{ id: 'varsity', name: 'Varsity', palette: 'navy' },
+		{ id: 'slab', name: 'Masthead', palette: 'cream' }
 	];
 	// October 22: layouts under review, rendered by scripts/sheet_new.mjs and not in the tile row. The
 	// first four mimic a printed sticker (a kiss-cut edge, a scalloped seal, script lettering, a vertical
@@ -110,9 +114,8 @@
 		{ id: 'pills', name: 'Pills', palette: 'rust' }, { id: 'hollow', name: 'Hollow', palette: 'navy' },
 		{ id: 'mono', name: 'Monogram', palette: 'teal' },
 		// October 26: six candidates for one more tile (rendered by scripts/sheet_new.mjs).
-		{ id: 'bubble', name: 'Ballot bubble', palette: 'cream' }, { id: 'varsity', name: 'Varsity', palette: 'navy' },
-		{ id: 'rays', name: 'Rays', palette: 'maroon' }, { id: 'tricolor', name: 'Tricolor', palette: 'state' },
-		{ id: 'spotlight', name: 'Spotlight', palette: 'plum' }, { id: 'slab', name: 'Slab', palette: 'cream' }
+		{ id: 'bubble', name: 'Ballot bubble', palette: 'cream' }, { id: 'rays', name: 'Rays', palette: 'maroon' },
+		{ id: 'tricolor', name: 'Tricolor', palette: 'state' }, { id: 'spotlight', name: 'Spotlight', palette: 'plum' }
 	];
 	function designOf(id) { return DESIGNS.filter(function (d) { return d.id === id; })[0]; }
 	// Short lines only, at most 10 characters each (POR CORREO), so a card reads at 40 px in a comment thread
@@ -878,14 +881,14 @@
 		varsity: function (st, p, lines, dateText) {
 			var icon = iconItem(st, 0, 0, 130, 240, p.ink, starOf(p));
 			var head = textBlock(lines, DISPLAY, 740, 300, { justify: true, leading: 0.2 });
-			var placed = placeText(head, 0, icon.bottom + 44, p.ink), depth = head.asc * 0.16, n = 14;
+			var placed = placeText(head, 0, icon.bottom + 44, p.ink), depth = head.asc * 0.2, n = 18;
 			var ex = contrast(p.accent, p.bg) >= 1.6 ? p.accent : shade(p.bg, 0.35), under = [], i;
 			for (i = n; i >= 1; i--) {
 				var o = depth * i / n;
-				placed.items.forEach(function (it) { under.push({ t: 'text', s: it.s, font: it.font, color: i === n ? shade(ex, 0.25) : ex, ls: it.ls, x: it.x + o * 0.6, base: it.base + o, box: [it.box[0] + o * 0.6, it.box[1] + o, it.box[2] + o * 0.6, it.box[3] + o] }); });
+				placed.items.forEach(function (it) { under.push({ t: 'text', s: it.s, font: it.font, color: i === n ? shade(ex, 0.3) : ex, ls: it.ls, x: it.x + o, base: it.base + o, box: [it.box[0] + o, it.box[1] + o, it.box[2] + o, it.box[3] + o] }); });
 			}
 			outline(placed.items, p.bg, head.asc * 0.025, null, 0);
-			var date = dateItems(dateText, depth * 0.3, placed.bottom + depth + head.asc * 0.28, 600, head.asc * 0.36, dateColor(p));
+			var date = dateItems(dateText, depth * 0.5, placed.bottom + depth + head.asc * 0.28, 600, head.asc * 0.36, dateColor(p));
 			return { items: icon.items.concat(under, placed.items, date.items), safe: SAFE };
 		},
 		// Rays: a sunburst of low-contrast rays behind a coin that holds the state and the stack.
@@ -937,10 +940,11 @@
 			var head = textBlock(lines, SLAB, 760, 260, { justify: true, leading: 0.16 });
 			var placed = placeText(head, 0, icon.bottom + 48, p.ink);
 			var dt = textBlock([dateText], DATE, 520, head.asc * 0.3, { track: 0.16 });
-			var y = placed.bottom + head.asc * 0.34, rule = 6, gap = dt.asc * 0.55;
-			var r1 = { t: 'box', box: [-380, y, 380, y + rule], color: p.ink };
+			var sw = Math.max.apply(null, head.lines.map(function (l) { return l.w; })) / 2;
+			var y = placed.bottom + head.asc * 0.34, rule = Math.max(6, head.asc * 0.035), gap = dt.asc * 0.55;
+			var r1 = { t: 'box', box: [-sw, y, sw, y + rule], color: p.ink };
 			var date = placeText(dt, 0, y + rule + gap, dateColor(p));
-			var r2 = { t: 'box', box: [-380, date.bottom + gap, 380, date.bottom + gap + rule], color: p.ink };
+			var r2 = { t: 'box', box: [-sw, date.bottom + gap, sw, date.bottom + gap + rule], color: p.ink };
 			return { items: icon.items.concat(placed.items, [r1], date.items, [r2]), safe: SAFE };
 		}
 	};
@@ -1801,7 +1805,8 @@
 		return Promise.all([
 			new FontFace(DISPLAY.replace(/"/g, ''), 'url(' + base + 'anton.woff2)'),
 			new FontFace(DATE.replace(/"/g, ''), 'url(' + base + 'archivo-black.woff2)'),
-			new FontFace(BRUSH.replace(/"/g, ''), 'url(' + base + 'luckiest-guy.woff2)')
+			new FontFace(BRUSH.replace(/"/g, ''), 'url(' + base + 'luckiest-guy.woff2)'),
+			new FontFace(SLAB.replace(/"/g, ''), 'url(' + base + 'alfa-slab-one.woff2)')  // Masthead (October 26)
 		].map(function (f) { return f.load().then(function (l) { document.fonts.add(l); }); }));
 	}
 

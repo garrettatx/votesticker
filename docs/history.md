@@ -17,7 +17,7 @@ ChatGPT images as ready-made downloads. Modeled on the Softball Austin card make
 | `site/app.js` | Layouts, drawing, saving |
 | `site/states.js` | One row per state plus DC. **The only file to edit for dates** |
 | `site/state-shapes.js` | Generated outlines; do not edit |
-| `site/assets/fonts/` | Anton (headline) and Archivo Black (date line), both SIL Open Font License |
+| `site/assets/fonts/` | Anton (headline), Archivo Black (date line), Alfa Slab One (Masthead, added Oct 26, latin subset), SIL Open Font License; Luckiest Guy (Brush), Apache License 2.0 |
 | `site/assets/states/<abbr>/` | Ready-made images per state (`tx`, `ks`, `mo`, `wa`, `ny`, `ca`, `co`, `va`, `pa`, `dc`, `nc`), 1080 px JPG. Any folder here shows as "Ready-Made [State] Designs" above the customizer for that state; index.php lists them, no code change |
 | `site/assets/icons/` | Favicon set (V with a red star on navy), from `build/favicon.mjs` + `build/favicon_sizes.py` |
 | `site/assets/og-vote.jpg` | 1200 x 630 link preview (headline + one ready-made design each from TX, KS, MO, WA), from `build/og_image.mjs`; also the photo and featured image of the garrettn.com post. Rename the file when it changes, so Facebook fetches the new one |

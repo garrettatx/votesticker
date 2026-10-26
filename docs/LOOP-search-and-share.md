@@ -25,6 +25,7 @@ Measure each change in Search Console from its recrawl date.
 | 8 | Mail-ballot fix ("cure") rules for the 25 states without them (AL AR CO DC GA IA ID KY MD MO MS NC ND NE NH NM OK PA RI SC SD TN TX WV WY), official sources | Mail voters need it Nov 3-10; kept on the page after Election Day | Done Oct 26: 15 of 25 |
 | 9 | Transparent cut-out PNG for disc designs (backlog maker idea) | Sticker people can lay over a photo; "i voted sticker png" searches | Done Oct 26 |
 | 10 | Official state plan pages into `where.plan_url` (item 5 part 2) | | Done Oct 26: MD, ND; rest VOTE411 |
+| 11 | Two new maker designs from six sketches: Varsity and Masthead (Garrett's picks Oct 26; Tricolor cut for its crop) | Garrett: "really make us shine" | Done Oct 26 |
 
 ## Log
 
@@ -93,3 +94,15 @@ Measure each change in Search Console from its recrawl date.
 - **Oct 26, push 4 (14:01 CDT), at Garrett's request:** the homepage search changes, planning link,
   round cut-out, Kansas mail deadline and 15 states' mail-ballot fixes, after card (81,120 cards),
   save, event, facts, Spanish and SEO QA. Build dispatched by hand once so it's live today.
+- **Oct 26, item 11 (two new designs).** Six sketches rendered on review sheets (ballot bubble,
+  varsity, rays, tricolor, spotlight, slab; every message, palette, Spanish, 60 and 40 px). Garrett
+  picked Varsity, Tricolor and Slab and leaned toward dropping Tricolor; the 40 px sheet agreed (its
+  bands crop to slivers in the circle), so the maker gets two: **Varsity** (Deportivo), jersey lettering
+  with an 18-step 45-degree extrusion in the accent and a hairline of the background, deepened after a
+  side-by-side showed it too close to Shadow; and **Masthead** (Periódico), Alfa Slab One with a tracked
+  date line between hairline rules as wide as the stack. Alfa Slab One self-hosted
+  (`assets/fonts/alfa-slab-one.woff2`, latin subset, 11.6 KB, OFL; noted in docs/history.md) and loaded
+  with the other faces; with the file blocked the maker still loads all 14 tiles, no errors. Rays,
+  Ballot bubble, Tricolor and Spotlight stay in REVIEW. Card QA 94,640 cards in Chromium and WebKit, 0
+  outside the safe circle; save, event, facts, Spanish and SEO QA pass. Desktop shows 14 tiles in rows of
+  three (last row two). Next, if Garrett wants it: Rays as an optional background in the color picker.

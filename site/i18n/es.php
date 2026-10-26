@@ -366,7 +366,7 @@ return array(
 		'Tuesday, November 3, 2026' => 'martes 3 de noviembre de 2026',
 		'Sticker' => 'Sticker', 'Poster' => 'Póster', 'Stamp' => 'Sello', 'Big type' => 'Letra grande', 'Tilt' => 'Inclinado',
 		'Brush' => 'Pincel', 'Side by side' => 'Lado a lado', 'Arch' => 'Arco', 'Plate' => 'Placa', 'Split' => 'Dividido', 'Map below' => 'Mapa abajo',
-		'Shadow' => 'Sombra', 'Ring' => 'Anillo', 'Half' => 'Mitad',
+		'Shadow' => 'Sombra', 'Ring' => 'Anillo', 'Half' => 'Mitad', 'Varsity' => 'Deportivo', 'Masthead' => 'Periódico',
 		'Colors' => 'Colores',
 		// About page (October 21).
 		'About' => 'Acerca de', 'About Vote Sticker' => 'Acerca de Vote Sticker',

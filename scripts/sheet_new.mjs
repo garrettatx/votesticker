@@ -13,9 +13,6 @@ const errs = []; p.on('pageerror', (e) => errs.push(String(e)));
 async function sheet(url, spec, file, pre) {
   await p.goto(url, { waitUntil: 'networkidle' });
   await p.waitForFunction(() => document.querySelector('#save')?.getAttribute('aria-disabled') !== 'true');
-  // The Slab sketch (October 26) draws in Alfa Slab One, loaded here only; the site never loads it.
-  await p.evaluate((u) => new FontFace('Vote Slab', 'url(' + u + ')').load().then((f) => document.fonts.add(f)).catch(() => {}),
-    'https://fonts.gstatic.com/s/alfaslabone/v21/6NUQ8FmMKwSEKjnm5-4v-4Jh2dJhe_escmA.woff2');
   if (pre) { await p.evaluate(pre[0], pre[1]); }
   const data = await p.evaluate((spec) => {
     const V = window.VOTE_CARDS, t = spec.t || 220, lab = spec.label ? 150 : 0; const rows = spec.rows, cols = spec.cols;
