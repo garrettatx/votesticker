@@ -1,10 +1,14 @@
 {
  "_note": "Hand fields for office records, keyed by id. Only what the record's verified story or distribution quote says; minors by first name and school. Review: Oct 26, 2026, against the verified sticker facts (each checked on the official page Oct 21 to 24).",
  "ak-office": {
-  "title": "2022 youth I Voted sticker contest",
-  "year": 2022,
+  "title": "Under One Aurora",
+  "year": 2026,
+  "designer": "Amanda Rose Warren",
   "office": "Alaska Division of Elections",
-  "selection": "Youth contest (ages 5 to 13), one winner per region, public ranked choice vote",
+  "selection": "Featured artist, recommended by the Fairbanks Region III supervisor",
+  "elections": [
+   "2026 November general"
+  ],
   "reviewed": true
  },
  "co-office": {

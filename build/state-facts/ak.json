@@ -190,11 +190,12 @@
  },
  "sticker": {
   "tradition": {
-   "en": "Alaska's Division of Elections has put kids' art on its stickers. For 2022 it held a youth contest for the I Voted sticker, open to ages 5 to 13, with one winner from each of the state's five regions, picked by a public ranked choice vote.",
-   "es": "La División de Elecciones de Alaska ha puesto arte de niños en sus stickers. Para 2022 organizó un concurso juvenil para el sticker de I Voted, abierto a niños de 5 a 13 años, con un ganador de cada una de las cinco regiones del estado, elegido por el público con voto por orden de preferencia.",
-   "src": "https://www.elections.alaska.gov/2022-i-voted-sticker-and-official-election-pamphlet-youth-artwork-contest/",
-   "checked": "2026-10-21",
-   "quote": "“I Voted” sticker submissions are open to youth ages 5-13 years and there will be one winner in each of the five regions.",
+   "en": "Alaska's 2026 I Voted stickers carry art by Anchorage artist Amanda Rose Warren, the Division of Elections' featured artist this year. Her \"Under One Aurora\" designs show five animals for the state's five regions (a humpback whale, moose, fox, musk ox and bear) under the same aurora, with the American and Alaska flags.",
+   "es": "Los stickers de I Voted de Alaska para 2026 llevan arte de Amanda Rose Warren, artista de Anchorage y la artista invitada de la División de Elecciones este año. Sus diseños \"Under One Aurora\" muestran cinco animales por las cinco regiones del estado (una ballena jorobada, un alce, un zorro, un buey almizclero y un oso) bajo la misma aurora, con las banderas de Estados Unidos y de Alaska.",
+   "src": "https://www.elections.alaska.gov/division-of-elections-unveils-cover-art-and-stickers-for-2026-election/",
+   "checked": "2026-10-26",
+   "quote": "Additionally, her artwork will be featured on the Division of Elections' \"I Voted\" stickers for the 2026 election.",
+   "notes": "Quote is from the release image (Cover-Art-and-Stickers-791x1024.png, Sept 10, 2026), read in Chrome. Replaced the 2022 youth contest story (https://www.elections.alaska.gov/2022-i-voted-sticker-and-official-election-pamphlet-youth-artwork-contest/).",
    "status": "verified"
   }
  },

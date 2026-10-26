@@ -121,3 +121,10 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
   story for the first time, plus `nh-office`. The page says four winners and the spec's Perplexity row said six
   (from a Nov 2025 PDF, unread), so neither page nor record gives a count. QA passes. Left from the spec table:
   AK's 2026 pamphlet artist. Next: that, then the 28 distribution-only records.
+- **Oct 26, item 10 (review, part 4):** Alaska's Sept 10 release ("Division of Elections unveils cover art and
+  stickers for 2026 election") is two images with no page text; read the first in Chrome. Anchorage artist
+  Amanda Rose Warren's "Under One Aurora" (humpback whale, moose, fox, musk ox, bear for the five regions, one
+  aurora, US and Alaska flags) is on the 2026 "I Voted" stickers. The Alaska page's sticker story now says that
+  (EN and ES) instead of the 2022 youth contest; `ak-office` is now the 2026 record. The quote's source image is
+  named in the fact's notes. QA passes. Spec table done: all 13 states have a record or a page fact. Next: the
+  28 distribution-only records, then item 11.
