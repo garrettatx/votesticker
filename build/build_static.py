@@ -21,6 +21,7 @@ import json
 import re
 import shutil
 import subprocess
+import sys
 from datetime import date
 from pathlib import Path
 
@@ -51,6 +52,8 @@ def render(slug_name=''):
 def main():
     rows = [json.loads(l.strip().rstrip(',')) for l in (SITE / 'states.js').read_text().splitlines() if l.strip().startswith('{"abbr"')]
     assert len(rows) == 51, len(rows)
+    # Bespoke sets follow the state rules (October 26): voted early only where verified, by mail only in mail states.
+    subprocess.run([sys.executable, '-I', str(ROOT / 'build' / 'bespoke_check.py')], check=True, stdout=subprocess.DEVNULL)
     if DIST.exists():
         shutil.rmtree(DIST)
     copied = 0

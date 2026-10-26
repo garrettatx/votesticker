@@ -62,6 +62,8 @@ def build():
             bad.append(f'{d.name}: no state name in site/states.js')
             continue
         for f in sorted(d.glob('*.jpg'), key=lambda p: [int(t) if t.isdigit() else t for t in re.split(r'(\d+)', p.stem)]):
+            if f.stem.startswith(slug(state) + '-'):
+                continue  # already named for people (scripts/render_bespoke.mjs, October 26)
             new = name_for(alts.get(f.stem, ''), state, d.name.upper())
             if not new:
                 bad.append(f'{f.stem}: alt text does not parse ({alts.get(f.stem)!r})')

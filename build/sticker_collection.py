@@ -32,7 +32,7 @@ def message(alt):
     """already-voted, planning or deadline-reminder, from the words the sticker shows."""
     m = re.search(r'reading (.*)$', alt or '', re.I)
     says = (m.group(1) if m else '').lower()
-    if re.match(r'(i voted|my ballot is in)', says):
+    if re.match(r'(i voted|my ballot is in|first-time voter|ya voté|mi primer voto)', says):
         return 'already-voted', says
     if re.match(r'[a-z. ]+ votes\b', says):  # "Ohio votes, Nov 3 2026": a state's own election, true after it too
         return 'planning', says
@@ -53,7 +53,7 @@ def ours(alts):
                 'message': kind, 'year': 2026, 'elections': ['2026 November general'],
                 # Dated reminders leave the active gallery after their date; the collection keeps them.
                 # Same test as index.php vote_file_current() after Election Day.
-                'placement': 'both' if re.match(r'(i voted|my ballot is in|[a-z. ]+ votes\b)', says) else 'collection',
+                'placement': 'both' if re.match(r'(i voted|my ballot is in|first-time voter|future voter|ya voté|mi primer voto|yo también votaré|[a-z. ]+ votes\b)', says) else 'collection',
             })
     return rows
 
