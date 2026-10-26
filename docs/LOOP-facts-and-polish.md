@@ -27,6 +27,20 @@ edit files, and every quote is re-read before it goes on a page.
 | 5 | **"Future voter"** message for kids and families, EN and ES | Useful on Election Day and after it | Done Oct 26 |
 | 6 | **Guide type:** body text 17 px, line height about 1.6, in the guide sections | Backlog review item; long FAQ answers on phones | Done Oct 26 |
 
+## Proposed Oct 26, Waiting for Garrett's OK
+
+From Search Console (Oct 19-24) and a review of outside proposals. Not built.
+
+| # | Item | Evidence |
+|---|---|---|
+| P1 | Homepage title, description and a short section for "I voted early sticker" linking each state's set | Top query, 184 impressions a week, split across five state pages at positions 5-7 |
+| P2 | Homepage text fixes: space in "Nov. 3" + "8 days away" (reads "Nov. 38"); "underway in 37 states" instead of "open today" | Snippet and screen-reader text; Sunday closures |
+| P3 | Homepage FAQ "Do you keep my information?" to match About (never uploaded; analytics named) | Flat "No" overstates it |
+| P4 | Planning: a "Make a voting plan" link beside the calendar button, to the state's own plan page where one exists, else VOTE411's make-your-plan page (League of Women Voters Education Fund). No planner. | Garrett, Oct 26: link out to a reputable nonpartisan resource |
+| P5 | Homepage H1 with "I voted stickers" wording (brand line, Garrett decides) | Homepage at position 7.1 for "i voted stickers by state" |
+
+After Nov 5: image file names (map built) with `ImageObject` once reuse terms are decided; "send this design" links.
+
 ## Log
 
 - **Oct 26:** loop written. Items 1 and 3 research started with two agents; item 2 runs meanwhile.
