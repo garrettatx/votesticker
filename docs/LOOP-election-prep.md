@@ -177,3 +177,6 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
   a render stops the build (mutation-tested against the old code; it stopped on Idaho). Builds for
   Oct 31, Nov 2 and Nov 4 render clean. Chip switching checked in a browser on Idaho and Spanish
   Vermont. Facts, Spanish, SEO and event QA pass; the stale scan is unchanged at 27.
+- **Oct 26, push 1 of the day (07:50 CDT):** 10 commits to main after card QA passed (68,880 cards in
+  Chromium and WebKit, 0 outside the safe circle). They deploy at today's scheduled build; the dated live
+  check follows it.
