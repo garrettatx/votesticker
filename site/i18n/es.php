@@ -497,6 +497,6 @@ return array(
 	'Red, white and blue I voted stickers for any state: I voted, I voted today, I voted early, I voted by mail, first-time voter, and future voter for kids who came along. Tap one to save it as a round PNG with no background, ready to post or send.' => 'Stickers de Yo voté en rojo, blanco y azul para cualquier estado: Yo voté, Yo voté hoy, Yo voté temprano, Yo voté por correo, Mi primer voto y Yo también votaré, para los niños que te acompañaron. Toca uno para guardarlo como PNG redondo sin fondo, listo para publicar o mandar.',
 	'(download PNG)' => '(descargar PNG)',
 	'Show %d more stickers' => 'Mostrar %d stickers más',
-	'Want your state’s name and dates on it? Choose your state' => '¿Lo quieres con el nombre y las fechas de tu estado? Elige tu estado',
+	'Want your state’s name and dates on it?' => '¿Lo quieres con el nombre y las fechas de tu estado?',
 	),
 );

@@ -218,3 +218,14 @@ Measure each change in Search Console from its recrawl date.
   (was 28 to 46), ring clearance 45 to 63 px (was 34 to 53). Before/after sheets at 360, 160, 96 and 48
   px in `backlog/classic-national-stickers/polish-20261027/`. QA: qa_seo, qa_es, qa_events pass; home
   page 6 then 18, downloads and one sticker_save per tap, EN and ES.
+- **October 27, classic set round 2 (not pushed).** Garrett: short messages get custom treatment, not the
+  long-text rules; no outline (a same-color outline was tested at 2.5 and 4 percent and turned off; the
+  code stays, `CT.bold = 0`). The white band is now set per message: words as large as the circle allows
+  (up to `CT.bandMax`), the band built around them with 22 percent padding (70 to 110 units), so I VOTED
+  is large in a tall band and FIRST-TIME gets a slimmer band. Round letters' overshoot counts in the ink;
+  an accent counts at 75 percent (in full it left too much white above YO VOTÉ). Red-base word 150 cap,
+  placed so the space above equals the average space below across its width. Star ring disc clearance
+  1.10, outer ring 1.28. Measured on all 36: band white above and below within 2 px for English, accent
+  tips 43 to 50 px from the navy against 59 to 60 below (by design); side margins 76 px or more; ring words
+  within 15 px of center. The closing link became "Want your state's name and dates on it?" plus a Make
+  your sticker button (the site's own wording; Spanish Crea tu sticker).

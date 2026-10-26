@@ -373,6 +373,7 @@ select:hover, input:hover, textarea:hover { border-color: #A79D86; }
 .pick--classic img { border-radius: 0; box-shadow: none; filter: drop-shadow(0 3px 8px rgba(20, 41, 94, 0.22)); }
 .classic__all { margin: var(--s5) 0 0; text-align: center; }
 .classic__all[hidden] { display: none; }
+.classic__make { margin: var(--s6) 0 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: var(--s3) var(--s4); text-align: center; font-weight: 700; }
 .pick { display: flex; flex-direction: column; align-items: center; gap: 10px; color: var(--ink); }
 .pick img { width: 100%; height: auto; aspect-ratio: 1; border-radius: 50%; box-shadow: 0 3px 12px rgba(20, 41, 94, 0.16); transition: transform 0.15s ease; }
 .pick:hover img { transform: scale(1.03) rotate(-2deg); }

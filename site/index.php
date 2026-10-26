@@ -1320,7 +1320,7 @@ $vote_ld = array(
 		</div>
 		<noscript><style>.grid--classic .is-extra { display: flex; } .classic__all { display: none; }</style></noscript>
 		<p class="classic__all"><button type="button" class="btn btn--quiet" id="classic-all" aria-controls="classic-grid" aria-expanded="false"><?php echo vote_e( t( 'Show %d more stickers', count( $vote_classic ) - 6 ) ); ?></button></p>
-		<p class="showcase__more"><a href="#state-find"><?php echo vote_e( t( 'Want your state’s name and dates on it? Choose your state' ) ); ?> <span aria-hidden="true">↑</span></a></p>
+		<p class="classic__make"><?php echo vote_e( t( 'Want your state’s name and dates on it?' ) ); ?> <a class="btn btn--gold" href="#state-find"><?php echo vote_e( t( 'Make your sticker' ) ); ?></a></p>
 	</section>
 	<?php endif; ?>
 	<?php if ( $vote_showcase && ! $vote_st ) : ?>
