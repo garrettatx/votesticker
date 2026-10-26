@@ -183,8 +183,13 @@
    "status": "verified"
   },
   "cure": {
-   "status": "missing",
-   "notes": "No cure process found on the SOS absentee page or the 2026 Voter Guide."
+   "en": "Check the affidavit envelope before you seal it: your signature, and two witnesses or a notary. Alabama has no way to count a ballot with a deficient envelope.",
+   "es": "Revisa el sobre con la declaración jurada antes de cerrarlo: tu firma, y dos testigos o un notario. Alabama no tiene forma de contar una boleta con un sobre incompleto.",
+   "src": "https://www.sos.alabama.gov/sites/default/files/election-2024/AbsenteeElectionManagerGuide.pdf",
+   "checked": "2026-10-26",
+   "quote": "There is no statutory authority by which the board of registrars can approve the counting of an absentee ballot with a deficient affidavit envelope.",
+   "status": "verified",
+   "notes": "Guide sits in the election-2024 folder; the 2026 Voter Guide repeats the witness rule."
   },
   "dropbox": {
    "en": "Send your ballot by U.S. Mail or a commercial carrier, or hand it yourself to your county's Absentee Election Manager. Those are the only legal ways to return it.",

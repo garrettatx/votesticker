@@ -134,7 +134,12 @@
   },
   "track_url": "https://vip.sdsos.gov/VIPLogin.aspx",
   "cure": {
-   "status": "missing"
+   "en": "Sign your absentee ballot envelope before you return it. In South Dakota, an unsigned envelope means the ballot can't be counted.",
+   "es": "Firma el sobre de tu boleta de voto en ausencia antes de devolverlo. En South Dakota, si el sobre no está firmado, la boleta no se puede contar.",
+   "src": "https://sdsos.gov/elections-voting/assets/2026%20Documents/2026AuditorAbsenteeVotingGuide.pdf",
+   "checked": "2026-10-26",
+   "quote": "If the absentee ballot envelope does not contain the signature of the voter, the ballot cannot be counted.",
+   "status": "verified"
   },
   "dropbox": {
    "status": "missing",

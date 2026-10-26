@@ -150,8 +150,12 @@
   },
   "track_url": "https://www.pavoterservices.pa.gov/Pages/BallotTracking.aspx",
   "cure": {
-   "status": "missing",
-   "notes": "No statewide cure process or deadline on the pages read."
+   "en": "Each county decides whether you can fix a mistake on a returned envelope. Ask your county election office. If yours can't be fixed, you can still vote a provisional ballot at your polling place on Election Day.",
+   "es": "Cada condado decide si puedes corregir un error en un sobre ya devuelto. Pregunta en la oficina electoral de tu condado. Si no se puede corregir, todavía puedes votar con una boleta provisional en tu lugar de votación el Día de las Elecciones.",
+   "src": "https://www.pa.gov/agencies/dos/contact-us/covering-pa-elections-101",
+   "checked": "2026-10-26",
+   "quote": "Under Pennsylvania law, counties are not required to allow voters to address errors on envelopes that have been returned to their county, but they are permitted to do so.",
+   "status": "verified"
   },
   "dropbox": {
    "en": "Return it by mail, at a drop box, at your county election office or at another official location your county lists. You have to return your own ballot, unless you have a disability and named someone in writing to deliver it.",

@@ -19,6 +19,10 @@
   "www.guilfordcountync.gov": {
    "en": "the Guilford County Board of Elections",
    "es": "la junta electoral del condado de Guilford (Board of Elections)"
+  },
+  "ncleg.gov": {
+   "en": "the North Carolina General Assembly",
+   "es": "la Asamblea General de North Carolina (North Carolina General Assembly)"
   }
  },
  "dates": {
@@ -61,8 +65,16 @@
    "status": "verified"
   },
   "cure": {
-   "status": "missing",
-   "notes": "No mail ballot cure deadline found on ncsbe.gov vote-by-mail pages."
+   "en": "Missing signature or ID copy? Return the cure form by noon on Tuesday, November 10, 2026.",
+   "es": "¿Te faltó la firma o la copia de tu identificación? Devuelve el formulario de corrección a más tardar al mediodía del martes 10 de noviembre de 2026.",
+   "until": "2026-11-10",
+   "en_after": "The deadline to return a cure form was noon on Tuesday, November 10, 2026.",
+   "es_after": "La fecha límite para devolver el formulario de corrección fue el mediodía del martes 10 de noviembre de 2026.",
+   "src": "https://ncleg.gov/EnactedLegislation/SessionLaws/PDF/2025-2026/SL2026-60.pdf",
+   "checked": "2026-10-26",
+   "quote": "The voter shall be given the opportunity to complete the form and return it to the county board at least by 12:00 P.M. on the third fifth business day after the election.",
+   "status": "verified",
+   "notes": "S.L. 2026-60 (signed Aug 11, 2026) changed third to fifth business day: Nov 4, 5, 6, 9, 10. The codified G.S. 163 PDF still says third; do not use it. Witness identification is not curable (same law)."
   }
  },
  "how": {
@@ -162,7 +174,16 @@
   },
   "track_url": "https://northcarolina.ballottrax.net/voter/",
   "cure": {
-   "status": "missing"
+   "en": "Missing signature, signed in the wrong place or no ID copy? Your county board will notify you. Return the cure form by noon on Tuesday, November 10. A problem with the witness information can't be fixed.",
+   "es": "¿Te faltó la firma, firmaste en el lugar equivocado o no incluiste copia de tu identificación? La junta electoral de tu condado te avisará. Devuelve el formulario de corrección a más tardar al mediodía del martes 10 de noviembre. Un problema con los datos del testigo no se puede corregir.",
+   "src": "https://ncleg.gov/EnactedLegislation/SessionLaws/PDF/2025-2026/SL2026-60.pdf",
+   "checked": "2026-10-26",
+   "quote": "The voter shall be given the opportunity to complete the form and return it to the county board at least by 12:00 P.M. on the third fifth business day after the election.",
+   "status": "verified",
+   "notes": "S.L. 2026-60 (signed Aug 11, 2026) changed third to fifth business day: Nov 4, 5, 6, 9, 10. The codified G.S. 163 PDF still says third; do not use it. Witness identification is not curable (same law).",
+   "until": "2026-11-10",
+   "en_after": "The deadline to return a cure form was noon on Tuesday, November 10, 2026.",
+   "es_after": "La fecha límite para devolver el formulario de corrección fue el mediodía del martes 10 de noviembre de 2026."
   },
   "dropbox": {
    "en": "Bring your mail ballot to your county board of elections office or to an early voting site in your county. Only you, a near relative or a legal guardian can mail or drop it off, unless you need help because of a disability.",

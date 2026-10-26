@@ -136,7 +136,13 @@
   },
   "track_url": "https://mvp.sos.ga.gov/s/",
   "cure": {
-   "status": "missing"
+   "en": "If your absentee ballot is rejected, your county elections office will contact you with a form to fix (\"cure\") your ballot envelope.",
+   "es": "Si rechazan tu boleta de voto en ausencia, la oficina electoral de tu condado te contactará con un formulario para corregir el sobre de tu boleta.",
+   "src": "https://georgia.gov/vote-absentee-ballot",
+   "checked": "2026-10-26",
+   "quote": "If your ballot was rejected, your county elections office will contact you with a document to “cure” or correct your ballot envelope.",
+   "status": "verified",
+   "notes": "Deadline not read (sos.ga.gov returns 403); process only."
   },
   "dropbox": {
    "en": "Drop boxes are inside early voting locations and open only during early voting hours. On Election Day, bring your ballot to your county registrar's office by 7 p.m.",

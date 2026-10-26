@@ -32,7 +32,16 @@
    "status": "missing"
   },
   "cure": {
-   "status": "missing"
+   "en": "Got a notice of a defect on your mail ballot? Correct it by Monday, November 9, 2026.",
+   "es": "¿Recibiste un aviso de un error en tu boleta por correo? Corrígelo a más tardar el lunes 9 de noviembre de 2026.",
+   "until": "2026-11-09",
+   "en_after": "The deadline to correct a mail ballot defect was Monday, November 9, 2026.",
+   "es_after": "La fecha límite para corregir un error en la boleta por correo fue el lunes 9 de noviembre de 2026.",
+   "src": "https://www.votetexas.gov/voting-by-mail/corrective-action.html",
+   "checked": "2026-10-26",
+   "quote": "You have until the 6th day after Election Day to correct the defect in order for your ballot to be counted.",
+   "status": "verified",
+   "notes": "Sixth day after Nov 3."
   }
  },
  "how": {
@@ -118,7 +127,16 @@
   },
   "track_url": "https://goelect.txelections.civixapps.com/ivis-oab-ui/#/login",
   "cure": {
-   "status": "missing"
+   "en": "Missing signature, a signature that doesn't match, or missing ID or witness information? You'll get a notice with a corrective action form on the back. Return it by mail or in person, or fix an ID number online in the Ballot by Mail Tracker, by Monday, November 9.",
+   "es": "¿Te faltó la firma, no coincide, o faltan datos de identificación o del testigo? Recibirás un aviso con un formulario de corrección al reverso. Devuélvelo por correo o en persona, o corrige el número de identificación en línea con el rastreador de boletas por correo de la Secretaría de Estado, a más tardar el lunes 9 de noviembre.",
+   "src": "https://www.votetexas.gov/voting-by-mail/corrective-action.html",
+   "checked": "2026-10-26",
+   "quote": "You have until the 6th day after Election Day to correct the defect in order for your ballot to be counted.",
+   "status": "verified",
+   "notes": "Sixth day after Nov 3.",
+   "until": "2026-11-09",
+   "en_after": "The deadline to correct a mail ballot defect was Monday, November 9, 2026.",
+   "es_after": "La fecha límite para corregir un error en la boleta por correo fue el lunes 9 de noviembre de 2026."
   },
   "dropbox": {
    "status": "missing"

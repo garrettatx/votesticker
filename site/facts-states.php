@@ -252,6 +252,12 @@ return array(
 			'checked' => '2026-10-21',
 		),
 		'mail.track_url' => 'https://myinfo.alabamavotes.gov/voterview',
+		'mail.cure' => array(
+			'en' => 'Check the affidavit envelope before you seal it: your signature, and two witnesses or a notary. Alabama has no way to count a ballot with a deficient envelope.',
+			'es' => 'Revisa el sobre con la declaración jurada antes de cerrarlo: tu firma, y dos testigos o un notario. Alabama no tiene forma de contar una boleta con un sobre incompleto.',
+			'src' => 'https://www.sos.alabama.gov/sites/default/files/election-2024/AbsenteeElectionManagerGuide.pdf',
+			'checked' => '2026-10-26',
+		),
 		'mail.dropbox' => array(
 			'en' => 'Send your ballot by U.S. Mail or a commercial carrier, or hand it yourself to your county\'s Absentee Election Manager. Those are the only legal ways to return it.',
 			'es' => 'Manda tu boleta por el Servicio Postal de EE. UU. o por una empresa de mensajería, o entrégala tú mismo en la oficina de voto en ausencia de tu condado (Absentee Election Manager). Esas son las únicas formas legales de devolverla.',
@@ -808,6 +814,15 @@ return array(
 			'src' => 'https://www.sos.state.co.us/pubs/newsRoom/pressReleases/2026/PR20260923GeneralElection.html',
 			'checked' => '2026-10-23',
 		),
+		'dates.cure' => array(
+			'en' => 'Signature missing or doesn\'t match, or an ID copy missing? Fix it by 11:59 p.m. on Thursday, November 12, 2026.',
+			'es' => '¿Te faltó la firma, no coincide o falta la copia de tu identificación? Corrígelo a más tardar a las 11:59 p. m. del jueves 12 de noviembre de 2026.',
+			'src' => 'https://www.coloradosos.gov/pubs/elections/FAQs/rejectedBallots.html',
+			'checked' => '2026-10-26',
+			'until' => '2026-11-12',
+			'en_after' => 'The deadline to fix a mail ballot problem was 11:59 p.m. on Thursday, November 12, 2026.',
+			'es_after' => 'La fecha límite para corregir un problema con la boleta por correo fue a las 11:59 p. m. del jueves 12 de noviembre de 2026.',
+		),
 		'how.in_person' => array(
 			'en' => 'Rather vote in person? Go to any voter service and polling center in your county with ID, until 7 p.m. on Election Day. If you vote at a center outside your home county, you only get the statewide races.',
 			'es' => '¿Prefieres votar en persona? Ve a cualquier centro de votación y servicio al votante de tu condado con tu identificación, hasta las 7 p. m. del Día de las Elecciones. Si votas en un centro fuera de tu condado, solo recibes las contiendas estatales.',
@@ -849,6 +864,15 @@ return array(
 			'checked' => '2026-10-21',
 		),
 		'mail.track_url' => 'https://ballottrax.coloradosos.gov/voter/',
+		'mail.cure' => array(
+			'en' => 'Signature missing or doesn\'t match, or an ID copy missing? Your county will send a letter. Fix it by following the letter, or on your phone with Colorado BallotCure, by 11:59 p.m. on Thursday, November 12.',
+			'es' => '¿Te faltó la firma, no coincide o falta la copia de tu identificación? Tu condado te enviará una carta. Corrígelo siguiendo la carta, o desde tu teléfono con Colorado BallotCure, a más tardar a las 11:59 p. m. del jueves 12 de noviembre.',
+			'src' => 'https://www.coloradosos.gov/pubs/elections/FAQs/rejectedBallots.html',
+			'checked' => '2026-10-26',
+			'until' => '2026-11-12',
+			'en_after' => 'The deadline to fix a mail ballot problem was 11:59 p.m. on Thursday, November 12, 2026.',
+			'es_after' => 'La fecha límite para corregir un problema con la boleta por correo fue a las 11:59 p. m. del jueves 12 de noviembre de 2026.',
+		),
 		'mail.dropbox' => array(
 			'en' => 'Drop boxes are open 24/7 and under video surveillance. A team of election judges from both parties collects the ballots regularly. Get yours in by 7 p.m. on Election Day.',
 			'es' => 'Los buzones están abiertos las 24 horas, todos los días, y tienen vigilancia por video. Un equipo de jueces electorales de ambos partidos recoge las boletas con regularidad. Deja la tuya a más tardar a las 7 p. m. del Día de las Elecciones.',
@@ -1105,6 +1129,12 @@ return array(
 			'checked' => '2026-10-21',
 		),
 		'mail.track_url' => 'https://votedc.ballottrax.net/voter',
+		'mail.cure' => array(
+			'en' => 'If there\'s a problem with your mail ballot, such as a signature that doesn\'t match, the DC Board of Elections will send you a letter, and BallotTrax will alert you if you signed up. Return the signed certificate from the letter by email, by mail or in person by the deadline the letter gives.',
+			'es' => 'Si hay un problema con tu boleta por correo, como una firma que no coincide, la Junta de Elecciones de DC te enviará una carta, y BallotTrax te avisará si te inscribiste. Devuelve el certificado firmado que viene con la carta por correo electrónico, por correo o en persona antes de la fecha límite que indique la carta.',
+			'src' => 'https://dcboe.org/faqs/early-voting-and-election-day',
+			'checked' => '2026-10-26',
+		),
 		'mail.dropbox' => array(
 			'en' => 'Put it in a ballot drop box or bring it to a Vote Center by 8 p.m. on Election Day.',
 			'es' => 'Déjala en un buzón de entrega de boletas o llévala a un centro de votación a más tardar a las 8 p. m. del Día de las Elecciones.',
@@ -1561,6 +1591,12 @@ return array(
 			'checked' => '2026-10-21',
 		),
 		'mail.track_url' => 'https://mvp.sos.ga.gov/s/',
+		'mail.cure' => array(
+			'en' => 'If your absentee ballot is rejected, your county elections office will contact you with a form to fix ("cure") your ballot envelope.',
+			'es' => 'Si rechazan tu boleta de voto en ausencia, la oficina electoral de tu condado te contactará con un formulario para corregir el sobre de tu boleta.',
+			'src' => 'https://georgia.gov/vote-absentee-ballot',
+			'checked' => '2026-10-26',
+		),
 		'mail.dropbox' => array(
 			'en' => 'Drop boxes are inside early voting locations and open only during early voting hours. On Election Day, bring your ballot to your county registrar\'s office by 7 p.m.',
 			'es' => 'Los buzones de entrega están dentro de los centros de votación anticipada y solo se pueden usar durante el horario de votación anticipada. El Día de las Elecciones, lleva tu boleta a la oficina de registro de tu condado (County Board of Registrars) a más tardar a las 7 p. m.',
@@ -1853,6 +1889,12 @@ return array(
 			'checked' => '2026-10-21',
 		),
 		'mail.track_url' => 'https://apps.sos.iowa.gov/elections/absenteeballotstatus/absentee/search',
+		'mail.cure' => array(
+			'en' => 'If your county auditor finds a problem with your returned envelope, they\'ll let you know. You can fix the affidavit in person at the auditor\'s office, ask for a replacement ballot or vote at the polls, until polls close on Election Day.',
+			'es' => 'Si el auditor de tu condado encuentra un problema con el sobre que devolviste, te avisará. Puedes corregir la declaración en persona en la oficina del auditor, pedir una boleta de reemplazo o votar en las casillas, hasta que cierren el Día de las Elecciones.',
+			'src' => 'https://www.legis.iowa.gov/docs/code/53.18.pdf',
+			'checked' => '2026-10-26',
+		),
 		'polls_rules.gear' => array(
 			'en' => 'Keep campaigning at least 300 feet from the polling place door. On Election Day, Iowa law bans electioneering, posting signs and asking for votes on polling place grounds or within 300 feet of an outside door that leads to the polls.',
 			'es' => 'Mantén cualquier campaña a por lo menos 300 pies de la puerta del lugar de votación. El Día de las Elecciones, la ley de Iowa prohíbe hacer campaña, poner letreros y pedir votos en el terreno del lugar de votación o a menos de 300 pies de una puerta exterior que lleve a donde se vota.',
@@ -2606,6 +2648,12 @@ return array(
 			'checked' => '2026-10-21',
 		),
 		'mail.track_url' => 'https://govote.ky.gov/',
+		'mail.cure' => array(
+			'en' => 'Sign the outer envelope: an unsigned one is rejected automatically. If your signature doesn\'t match, your county clerk will try to reach you, and you must fix it before polls close on Election Day.',
+			'es' => 'Firma el sobre exterior: si no está firmado, se rechaza automáticamente. Si tu firma no coincide, la oficina del secretario de tu condado tratará de contactarte, y debes corregirlo antes de que cierren las casillas el Día de las Elecciones.',
+			'src' => 'https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=52130',
+			'checked' => '2026-10-26',
+		),
 		'mail.dropbox' => array(
 			'en' => 'Every county has a drop box where you can hand deliver your ballot. Find yours on the State Board of Elections site, and don\'t wait until Election Day.',
 			'es' => 'Cada condado tiene un buzón de entrega donde puedes dejar tu boleta en persona. Busca el tuyo en el sitio de la Junta Estatal de Elecciones, y no esperes al Día de las Elecciones.',
@@ -3022,6 +3070,15 @@ return array(
 			'src' => 'https://elections.maryland.gov/elections/2026/index.html',
 			'checked' => '2026-10-21',
 		),
+		'dates.cure' => array(
+			'en' => 'Forgot to sign the oath? Send a signed oath by 10 a.m. on Friday, November 13, 2026.',
+			'es' => '¿Olvidaste firmar el juramento? Envía el juramento firmado a más tardar a las 10 a. m. del viernes 13 de noviembre de 2026.',
+			'src' => 'https://elections.maryland.gov/voting/canvassing.html',
+			'checked' => '2026-10-26',
+			'until' => '2026-11-13',
+			'en_after' => 'The deadline to send a signed oath was 10 a.m. on Friday, November 13, 2026.',
+			'es_after' => 'La fecha límite para enviar el juramento firmado fue a las 10 a. m. del viernes 13 de noviembre de 2026.',
+		),
 		'how.in_person' => array(
 			'en' => 'During early voting, you can vote at any early voting center in the county where you live. On Election Day, vote at your assigned polling place.',
 			'es' => 'Durante la votación anticipada puedes votar en cualquier centro de votación anticipada del condado donde vives. El Día de las Elecciones, vota en el lugar de votación que te corresponde.',
@@ -3049,6 +3106,15 @@ return array(
 			'checked' => '2026-10-21',
 		),
 		'mail.track_url' => 'https://voterservices.elections.maryland.gov/votersearch',
+		'mail.cure' => array(
+			'en' => 'Forgot to sign the oath on your mail ballot envelope? Your local board will contact you by email, mail or phone. Send back a signed oath by 10 a.m. on Friday, November 13.',
+			'es' => '¿Olvidaste firmar el juramento en el sobre de tu boleta por correo? Tu junta electoral local te contactará por correo electrónico, correo o teléfono. Envía el juramento firmado a más tardar a las 10 a. m. del viernes 13 de noviembre.',
+			'src' => 'https://elections.maryland.gov/voting/canvassing.html',
+			'checked' => '2026-10-26',
+			'until' => '2026-11-13',
+			'en_after' => 'The deadline to send a signed oath was 10 a.m. on Friday, November 13, 2026.',
+			'es_after' => 'La fecha límite para enviar el juramento firmado fue a las 10 a. m. del viernes 13 de noviembre de 2026.',
+		),
 		'mail.dropbox' => array(
 			'en' => 'Drop boxes are open until 8 p.m. on Election Day. The locations come with your ballot. You can also hand it in at a polling place, an early voting center or your local board by 8 p.m.',
 			'es' => 'Los buzones de entrega están abiertos hasta las 8 p. m. del Día de las Elecciones. Las ubicaciones vienen con tu boleta. También puedes entregarla en un lugar de votación, un centro de votación anticipada o la junta electoral de tu condado a más tardar a las 8 p. m.',
@@ -3682,6 +3748,12 @@ return array(
 			'src' => 'https://www.sos.mo.gov/elections/goVoteMissouri/howtovote',
 			'checked' => '2026-10-21',
 		),
+		'mail.cure' => array(
+			'en' => 'Fill out every statement on your ballot envelope before you send it. Missouri rejects an absentee ballot whose envelope statements aren\'t completed.',
+			'es' => 'Llena todas las declaraciones del sobre de tu boleta antes de enviarla. Missouri rechaza una boleta de voto en ausencia si las declaraciones del sobre no están completas.',
+			'src' => 'https://revisor.mo.gov/main/OneSection.aspx?section=115.295',
+			'checked' => '2026-10-26',
+		),
 		'mail.dropbox' => array(
 			'en' => 'Missouri doesn\'t use drop boxes for absentee ballots. Mail yours, or bring it back in person yourself or have a close relative bring it.',
 			'es' => 'Missouri no usa buzones de entrega para las boletas de voto en ausencia. Mándala por correo, o entrégala tú en persona o con un familiar cercano.',
@@ -4043,6 +4115,10 @@ return array(
 				'en' => 'the Guilford County Board of Elections',
 				'es' => 'la junta electoral del condado de Guilford (Board of Elections)',
 			),
+			'ncleg.gov' => array(
+				'en' => 'the North Carolina General Assembly',
+				'es' => 'la Asamblea General de North Carolina (North Carolina General Assembly)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'The regular deadline was 5 p.m. on Friday, October 9, 2026. You can still register and vote at the same time at any early voting site in your county until early voting ends. Same-day registration isn\'t available for most voters on Election Day.',
@@ -4073,6 +4149,15 @@ return array(
 			'es' => 'Cada condado decide sus propios centros y horarios de votación anticipada. Encuentra los tuyos con la búsqueda de centros de votación anticipada del estado (Early Voting Site Search).',
 			'src' => 'https://www.ncsbe.gov/voting/upcoming-election',
 			'checked' => '2026-10-21',
+		),
+		'dates.cure' => array(
+			'en' => 'Missing signature or ID copy? Return the cure form by noon on Tuesday, November 10, 2026.',
+			'es' => '¿Te faltó la firma o la copia de tu identificación? Devuelve el formulario de corrección a más tardar al mediodía del martes 10 de noviembre de 2026.',
+			'src' => 'https://ncleg.gov/EnactedLegislation/SessionLaws/PDF/2025-2026/SL2026-60.pdf',
+			'checked' => '2026-10-26',
+			'until' => '2026-11-10',
+			'en_after' => 'The deadline to return a cure form was noon on Tuesday, November 10, 2026.',
+			'es_after' => 'La fecha límite para devolver el formulario de corrección fue el mediodía del martes 10 de noviembre de 2026.',
 		),
 		'how.in_person' => array(
 			'en' => 'During early voting, you can vote at any early voting site in your county. On Election Day, you vote at your assigned polling place.',
@@ -4118,6 +4203,15 @@ return array(
 			'checked' => '2026-10-21',
 		),
 		'mail.track_url' => 'https://northcarolina.ballottrax.net/voter/',
+		'mail.cure' => array(
+			'en' => 'Missing signature, signed in the wrong place or no ID copy? Your county board will notify you. Return the cure form by noon on Tuesday, November 10. A problem with the witness information can\'t be fixed.',
+			'es' => '¿Te faltó la firma, firmaste en el lugar equivocado o no incluiste copia de tu identificación? La junta electoral de tu condado te avisará. Devuelve el formulario de corrección a más tardar al mediodía del martes 10 de noviembre. Un problema con los datos del testigo no se puede corregir.',
+			'src' => 'https://ncleg.gov/EnactedLegislation/SessionLaws/PDF/2025-2026/SL2026-60.pdf',
+			'checked' => '2026-10-26',
+			'until' => '2026-11-10',
+			'en_after' => 'The deadline to return a cure form was noon on Tuesday, November 10, 2026.',
+			'es_after' => 'La fecha límite para devolver el formulario de corrección fue el mediodía del martes 10 de noviembre de 2026.',
+		),
 		'mail.dropbox' => array(
 			'en' => 'Bring your mail ballot to your county board of elections office or to an early voting site in your county. Only you, a near relative or a legal guardian can mail or drop it off, unless you need help because of a disability.',
 			'es' => 'Lleva tu boleta por correo a la oficina de la junta electoral de tu condado o a un centro de votación anticipada de tu condado. Solo tú, un familiar cercano o tu tutor legal pueden enviarla o entregarla, salvo que necesites ayuda por una discapacidad.',
@@ -4218,6 +4312,15 @@ return array(
 			'src' => 'https://www.sos.nd.gov/elections/voter/voting-north-dakota/how-do-i-vote/absentee-voting',
 			'checked' => '2026-10-21',
 		),
+		'dates.cure' => array(
+			'en' => 'Signature missing or doesn\'t match? Confirm it with your county auditor before the canvassing board meets on Monday, November 16, 2026.',
+			'es' => '¿Te faltó la firma o no coincide? Confírmala con el auditor de tu condado antes de que se reúna la junta de escrutinio el lunes 16 de noviembre de 2026.',
+			'src' => 'https://ndlegis.gov/cencode/t16-1c07.pdf',
+			'checked' => '2026-10-26',
+			'until' => '2026-11-16',
+			'en_after' => 'The deadline to confirm a mail ballot signature was the county canvassing board meeting on Monday, November 16, 2026.',
+			'es_after' => 'La fecha límite para confirmar la firma de una boleta por correo fue la reunión de la junta de escrutinio del condado el lunes 16 de noviembre de 2026.',
+		),
 		'how.in_person' => array(
 			'en' => 'Some counties offer early voting on set dates and times before Election Day; check whether yours does. On Election Day, vote at the polling location for your precinct, or at any vote center in your county if your county uses them. Either way, a poll worker checks your ID and asks if you\'re 18, a U.S. citizen and have lived in North Dakota for the last 30 days.',
 			'es' => 'Algunos condados ofrecen votación anticipada en fechas y horarios fijos antes del Día de las Elecciones; revisa si el tuyo la tiene. El Día de las Elecciones, vota en el lugar de votación de tu precinto, o en cualquier centro de votación de tu condado si tu condado los usa. En los dos casos, un trabajador electoral revisa tu identificación y te pregunta si tienes 18 años, si eres ciudadano de EE. UU. y si has vivido en North Dakota los últimos 30 días.',
@@ -4268,6 +4371,15 @@ return array(
 			'checked' => '2026-10-21',
 		),
 		'mail.track_url' => 'https://vip.sos.nd.gov/AbsenteeTracker.aspx',
+		'mail.cure' => array(
+			'en' => 'If your signature is missing or doesn\'t match, your county auditor will contact you. Confirm it\'s yours in person with your ID, or by letter or email with a copy of the ID you used to apply, before the county canvassing board meets on Monday, November 16.',
+			'es' => 'Si te faltó la firma o no coincide, el auditor de tu condado te contactará. Confirma que es tuya en persona con tu identificación, o por carta o correo electrónico con una copia de la identificación que usaste al solicitarla, antes de que se reúna la junta de escrutinio del condado el lunes 16 de noviembre.',
+			'src' => 'https://ndlegis.gov/cencode/t16-1c07.pdf',
+			'checked' => '2026-10-26',
+			'until' => '2026-11-16',
+			'en_after' => 'The deadline to confirm a mail ballot signature was the county canvassing board meeting on Monday, November 16, 2026.',
+			'es_after' => 'La fecha límite para confirmar la firma de una boleta por correo fue la reunión de la junta de escrutinio del condado el lunes 16 de noviembre de 2026.',
+		),
 		'mail.dropbox' => array(
 			'en' => 'Every county has secure absentee ballot drop boxes. Get your ballot in one by the close of polls on Election Day, or hand it to your county auditor.',
 			'es' => 'Cada condado tiene buzones de entrega seguros para boletas de voto en ausencia. Deja tu boleta en uno antes de que cierren las urnas el Día de las Elecciones, o entrégala al auditor de tu condado.',
@@ -5710,6 +5822,12 @@ return array(
 			'checked' => '2026-10-21',
 		),
 		'mail.track_url' => 'https://www.pavoterservices.pa.gov/Pages/BallotTracking.aspx',
+		'mail.cure' => array(
+			'en' => 'Each county decides whether you can fix a mistake on a returned envelope. Ask your county election office. If yours can\'t be fixed, you can still vote a provisional ballot at your polling place on Election Day.',
+			'es' => 'Cada condado decide si puedes corregir un error en un sobre ya devuelto. Pregunta en la oficina electoral de tu condado. Si no se puede corregir, todavía puedes votar con una boleta provisional en tu lugar de votación el Día de las Elecciones.',
+			'src' => 'https://www.pa.gov/agencies/dos/contact-us/covering-pa-elections-101',
+			'checked' => '2026-10-26',
+		),
 		'mail.dropbox' => array(
 			'en' => 'Return it by mail, at a drop box, at your county election office or at another official location your county lists. You have to return your own ballot, unless you have a disability and named someone in writing to deliver it.',
 			'es' => 'Devuélvela por correo, en un buzón de entrega, en la oficina electoral de tu condado o en otro lugar oficial que indique tu condado. Tienes que entregar tu propia boleta, a menos que tengas una discapacidad y hayas nombrado por escrito a alguien para que la entregue.',
@@ -5785,6 +5903,10 @@ return array(
 				'en' => 'Rhode Island law',
 				'es' => 'la ley de Rhode Island',
 			),
+			'rules.sos.ri.gov' => array(
+				'en' => 'the Rhode Island Secretary of State (election rules)',
+				'es' => 'la Secretaría de Estado de Rhode Island (reglamento electoral)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Registration for November 3 closed 30 days before the election, on October 4, 2026. Not sure you\'re registered? Check the Voter Information Center at vote.ri.gov.',
@@ -5815,6 +5937,15 @@ return array(
 			'until' => '2026-11-02',
 			'en_after' => 'Early voting ended at 4 p.m. on November 2. Vote at your polling place on Election Day, 7 a.m. to 8 p.m. (9 a.m. to 8 p.m. in New Shoreham).',
 			'es_after' => 'La votación anticipada terminó a las 4 p. m. del 2 de noviembre. Vota en tu lugar de votación el Día de las Elecciones, de 7 a. m. a 8 p. m. (de 9 a. m. a 8 p. m. en New Shoreham).',
+		),
+		'dates.cure' => array(
+			'en' => 'Problem with your mail ballot envelope? The attestation form must reach the Board of Elections by 4 p.m. on Tuesday, November 10, 2026.',
+			'es' => '¿Hay un problema con el sobre de tu boleta por correo? El formulario debe llegar a la Junta de Elecciones a más tardar a las 4 p. m. del martes 10 de noviembre de 2026.',
+			'src' => 'https://rules.sos.ri.gov/regulations/Part/410-20-00-23',
+			'checked' => '2026-10-26',
+			'until' => '2026-11-10',
+			'en_after' => 'The deadline for the attestation form was 4 p.m. on Tuesday, November 10, 2026.',
+			'es_after' => 'La fecha límite para el formulario fue a las 4 p. m. del martes 10 de noviembre de 2026.',
 		),
 		'how.in_person' => array(
 			'en' => 'Vote early at the location your city or town designates, or at your polling place on Election Day. Already applied for a mail ballot? If you go to a polling place on Election Day, you\'ll vote a provisional ballot.',
@@ -5863,6 +5994,15 @@ return array(
 			'checked' => '2026-10-21',
 		),
 		'mail.track_url' => 'https://ballottrax.sos.ri.gov/voter/',
+		'mail.cure' => array(
+			'en' => 'If there\'s a problem with your mail ballot envelope, you\'ll be notified by phone, text or mail. The Deficient Mail Ballot Attestation Form must reach the Board of Elections, not just be postmarked, by 4 p.m. on Tuesday, November 10.',
+			'es' => 'Si hay un problema con el sobre de tu boleta por correo, te avisarán por teléfono, mensaje de texto o correo. El formulario Deficient Mail Ballot Attestation debe llegar a la Junta de Elecciones, no solo tener matasellos, a más tardar a las 4 p. m. del martes 10 de noviembre.',
+			'src' => 'https://rules.sos.ri.gov/regulations/Part/410-20-00-23',
+			'checked' => '2026-10-26',
+			'until' => '2026-11-10',
+			'en_after' => 'The deadline for the attestation form was 4 p.m. on Tuesday, November 10, 2026.',
+			'es_after' => 'La fecha límite para el formulario fue a las 4 p. m. del martes 10 de noviembre de 2026.',
+		),
 		'mail.dropbox' => array(
 			'en' => 'Drop it in a 24-hour elections drop box by 8 p.m. on Election Day. Every polling place also has a drop box for mail ballots.',
 			'es' => 'Déjala en un buzón electoral abierto las 24 horas a más tardar a las 8 p. m. del Día de las Elecciones. Cada lugar de votación también tiene un buzón para boletas por correo.',
@@ -6030,6 +6170,12 @@ return array(
 			'checked' => '2026-10-21',
 		),
 		'mail.track_url' => 'https://vrems.scvotes.sc.gov/Voter/Login?PageMode=AbsenteeInfo',
+		'mail.cure' => array(
+			'en' => 'Sign the oath and have it witnessed before you return your ballot. South Carolina can\'t count a ballot unless the oath is properly signed and witnessed.',
+			'es' => 'Firma el juramento y consigue la firma de un testigo antes de devolver tu boleta. Carolina del Sur no puede contar una boleta si el juramento no está bien firmado y atestiguado.',
+			'src' => 'https://www.scstatehouse.gov/code/t07c015.php',
+			'checked' => '2026-10-26',
+		),
 		'mail.dropbox' => array(
 			'en' => 'Bring your ballot to your county voter registration office, or to an early voting center during early voting, and show your photo ID. A family member or authorized representative can return it for you with an Authorized Returnee form.',
 			'es' => 'Lleva tu boleta a la oficina de registro de votantes de tu condado, o a un centro de votación anticipada durante la votación anticipada, y muestra tu identificación con foto. Un familiar directo o un representante autorizado puede devolverla por ti con el formulario Authorized Returnee.',
@@ -6160,6 +6306,12 @@ return array(
 			'checked' => '2026-10-21',
 		),
 		'mail.track_url' => 'https://vip.sdsos.gov/VIPLogin.aspx',
+		'mail.cure' => array(
+			'en' => 'Sign your absentee ballot envelope before you return it. In South Dakota, an unsigned envelope means the ballot can\'t be counted.',
+			'es' => 'Firma el sobre de tu boleta de voto en ausencia antes de devolverlo. En South Dakota, si el sobre no está firmado, la boleta no se puede contar.',
+			'src' => 'https://sdsos.gov/elections-voting/assets/2026%20Documents/2026AuditorAbsenteeVotingGuide.pdf',
+			'checked' => '2026-10-26',
+		),
 		'polls_rules.gear' => array(
 			'en' => 'Leave the campaign signs and posters at home. Within 100 feet of any entrance to a polling place, including where people vote absentee, no one may display campaign posters, signs or other campaign materials or ask for votes.',
 			'es' => 'Deja en casa los letreros y carteles de campaña. A menos de 100 pies de cualquier entrada a un lugar de votación, incluso donde se vota en ausencia, nadie puede mostrar carteles, letreros u otros materiales de campaña ni pedir votos.',
@@ -6393,6 +6545,15 @@ return array(
 			'src' => 'https://www.sos.state.tx.us/elections/voter/important-election-dates.shtml',
 			'checked' => '2026-10-21',
 		),
+		'dates.cure' => array(
+			'en' => 'Got a notice of a defect on your mail ballot? Correct it by Monday, November 9, 2026.',
+			'es' => '¿Recibiste un aviso de un error en tu boleta por correo? Corrígelo a más tardar el lunes 9 de noviembre de 2026.',
+			'src' => 'https://www.votetexas.gov/voting-by-mail/corrective-action.html',
+			'checked' => '2026-10-26',
+			'until' => '2026-11-09',
+			'en_after' => 'The deadline to correct a mail ballot defect was Monday, November 9, 2026.',
+			'es_after' => 'La fecha límite para corregir un error en la boleta por correo fue el lunes 9 de noviembre de 2026.',
+		),
 		'how.in_person' => array(
 			'en' => 'During early voting you can vote at any early voting location in the county where you live. On Election Day, it depends on your county: counties in the Countywide Polling Place Program let you vote at any location in the county, and the rest send you to your assigned precinct.',
 			'es' => 'Durante la votación anticipada puedes votar en cualquier lugar de votación anticipada del condado donde vives. El Día de las Elecciones depende de tu condado: los condados del programa de lugares de votación en todo el condado (Countywide Polling Place Program) te dejan votar en cualquier lugar del condado, y los demás te asignan tu precinto.',
@@ -6443,6 +6604,15 @@ return array(
 			'checked' => '2026-10-21',
 		),
 		'mail.track_url' => 'https://goelect.txelections.civixapps.com/ivis-oab-ui/#/login',
+		'mail.cure' => array(
+			'en' => 'Missing signature, a signature that doesn\'t match, or missing ID or witness information? You\'ll get a notice with a corrective action form on the back. Return it by mail or in person, or fix an ID number online in the Ballot by Mail Tracker, by Monday, November 9.',
+			'es' => '¿Te faltó la firma, no coincide, o faltan datos de identificación o del testigo? Recibirás un aviso con un formulario de corrección al reverso. Devuélvelo por correo o en persona, o corrige el número de identificación en línea con el rastreador de boletas por correo de la Secretaría de Estado, a más tardar el lunes 9 de noviembre.',
+			'src' => 'https://www.votetexas.gov/voting-by-mail/corrective-action.html',
+			'checked' => '2026-10-26',
+			'until' => '2026-11-09',
+			'en_after' => 'The deadline to correct a mail ballot defect was Monday, November 9, 2026.',
+			'es_after' => 'La fecha límite para corregir un error en la boleta por correo fue el lunes 9 de noviembre de 2026.',
+		),
 		'mail.witness' => array(
 			'en' => 'If someone helps you with your mail ballot, their name and address go on the carrier envelope and they sign it.',
 			'es' => 'Si alguien te ayuda con tu boleta por correo, su nombre y dirección van en el sobre de envío y esa persona lo firma.',

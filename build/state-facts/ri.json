@@ -11,6 +11,10 @@
   "webserver.rilegislature.gov": {
    "en": "Rhode Island law",
    "es": "la ley de Rhode Island"
+  },
+  "rules.sos.ri.gov": {
+   "en": "the Rhode Island Secretary of State (election rules)",
+   "es": "la Secretaría de Estado de Rhode Island (reglamento electoral)"
   }
  },
  "dates": {
@@ -53,7 +57,16 @@
    "es_after": "La votación anticipada terminó a las 4 p. m. del 2 de noviembre. Vota en tu lugar de votación el Día de las Elecciones, de 7 a. m. a 8 p. m. (de 9 a. m. a 8 p. m. en New Shoreham)."
   },
   "cure": {
-   "status": "missing"
+   "en": "Problem with your mail ballot envelope? The attestation form must reach the Board of Elections by 4 p.m. on Tuesday, November 10, 2026.",
+   "es": "¿Hay un problema con el sobre de tu boleta por correo? El formulario debe llegar a la Junta de Elecciones a más tardar a las 4 p. m. del martes 10 de noviembre de 2026.",
+   "until": "2026-11-10",
+   "en_after": "The deadline for the attestation form was 4 p.m. on Tuesday, November 10, 2026.",
+   "es_after": "La fecha límite para el formulario fue a las 4 p. m. del martes 10 de noviembre de 2026.",
+   "src": "https://rules.sos.ri.gov/regulations/Part/410-20-00-23",
+   "checked": "2026-10-26",
+   "quote": "The Deficient Mail Ballot Attestation Form must be received (not just postmarked) by the Board no later than 4:00 p.m. either three (3) days following a primary, or seven (7) days following an election.",
+   "status": "verified",
+   "notes": "Nov 10 computed: seven days after Nov 3, 4 p.m., received not postmarked."
   }
  },
  "how": {
@@ -150,7 +163,16 @@
   },
   "track_url": "https://ballottrax.sos.ri.gov/voter/",
   "cure": {
-   "status": "missing"
+   "en": "If there's a problem with your mail ballot envelope, you'll be notified by phone, text or mail. The Deficient Mail Ballot Attestation Form must reach the Board of Elections, not just be postmarked, by 4 p.m. on Tuesday, November 10.",
+   "es": "Si hay un problema con el sobre de tu boleta por correo, te avisarán por teléfono, mensaje de texto o correo. El formulario Deficient Mail Ballot Attestation debe llegar a la Junta de Elecciones, no solo tener matasellos, a más tardar a las 4 p. m. del martes 10 de noviembre.",
+   "src": "https://rules.sos.ri.gov/regulations/Part/410-20-00-23",
+   "checked": "2026-10-26",
+   "quote": "The Deficient Mail Ballot Attestation Form must be received (not just postmarked) by the Board no later than 4:00 p.m. either three (3) days following a primary, or seven (7) days following an election.",
+   "status": "verified",
+   "notes": "Nov 10 computed: seven days after Nov 3, 4 p.m., received not postmarked.",
+   "until": "2026-11-10",
+   "en_after": "The deadline for the attestation form was 4 p.m. on Tuesday, November 10, 2026.",
+   "es_after": "La fecha límite para el formulario fue a las 4 p. m. del martes 10 de noviembre de 2026."
   },
   "dropbox": {
    "en": "Drop it in a 24-hour elections drop box by 8 p.m. on Election Day. Every polling place also has a drop box for mail ballots.",

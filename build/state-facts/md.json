@@ -50,8 +50,16 @@
    "status": "verified"
   },
   "cure": {
-   "status": "missing",
-   "notes": "No mail-in ballot cure process or deadline on elections.maryland.gov's mail-in voting FAQ or 2026 page."
+   "en": "Forgot to sign the oath? Send a signed oath by 10 a.m. on Friday, November 13, 2026.",
+   "es": "¿Olvidaste firmar el juramento? Envía el juramento firmado a más tardar a las 10 a. m. del viernes 13 de noviembre de 2026.",
+   "until": "2026-11-13",
+   "en_after": "The deadline to send a signed oath was 10 a.m. on Friday, November 13, 2026.",
+   "es_after": "La fecha límite para enviar el juramento firmado fue a las 10 a. m. del viernes 13 de noviembre de 2026.",
+   "src": "https://elections.maryland.gov/voting/canvassing.html",
+   "checked": "2026-10-26",
+   "quote": "The deadline for a voter to provide a signed oath is 10 am on the 2nd Friday after election day.",
+   "status": "verified",
+   "notes": "Second Friday after Nov 3: Nov 6, then Nov 13."
   }
  },
  "how": {
@@ -116,7 +124,16 @@
   },
   "track_url": "https://voterservices.elections.maryland.gov/votersearch",
   "cure": {
-   "status": "missing"
+   "en": "Forgot to sign the oath on your mail ballot envelope? Your local board will contact you by email, mail or phone. Send back a signed oath by 10 a.m. on Friday, November 13.",
+   "es": "¿Olvidaste firmar el juramento en el sobre de tu boleta por correo? Tu junta electoral local te contactará por correo electrónico, correo o teléfono. Envía el juramento firmado a más tardar a las 10 a. m. del viernes 13 de noviembre.",
+   "src": "https://elections.maryland.gov/voting/canvassing.html",
+   "checked": "2026-10-26",
+   "quote": "The deadline for a voter to provide a signed oath is 10 am on the 2nd Friday after election day.",
+   "status": "verified",
+   "notes": "Second Friday after Nov 3: Nov 6, then Nov 13.",
+   "until": "2026-11-13",
+   "en_after": "The deadline to send a signed oath was 10 a.m. on Friday, November 13, 2026.",
+   "es_after": "La fecha límite para enviar el juramento firmado fue a las 10 a. m. del viernes 13 de noviembre de 2026."
   },
   "dropbox": {
    "en": "Drop boxes are open until 8 p.m. on Election Day. The locations come with your ballot. You can also hand it in at a polling place, an early voting center or your local board by 8 p.m.",

@@ -168,7 +168,12 @@
    "status": "verified"
   },
   "cure": {
-   "status": "missing"
+   "en": "Fill out every statement on your ballot envelope before you send it. Missouri rejects an absentee ballot whose envelope statements aren't completed.",
+   "es": "Llena todas las declaraciones del sobre de tu boleta antes de enviarla. Missouri rechaza una boleta de voto en ausencia si las declaraciones del sobre no están completas.",
+   "src": "https://revisor.mo.gov/main/OneSection.aspx?section=115.295",
+   "checked": "2026-10-26",
+   "quote": "If the statements on any ballot envelope have not been completed, the absentee ballot in the envelope shall be rejected.",
+   "status": "verified"
   },
   "dropbox": {
    "en": "Missouri doesn't use drop boxes for absentee ballots. Mail yours, or bring it back in person yourself or have a close relative bring it.",

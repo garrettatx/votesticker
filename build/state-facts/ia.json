@@ -156,8 +156,12 @@
   },
   "track_url": "https://apps.sos.iowa.gov/elections/absenteeballotstatus/absentee/search",
   "cure": {
-   "status": "missing",
-   "notes": "Not found on sos.iowa.gov or voterready.iowa.gov."
+   "en": "If your county auditor finds a problem with your returned envelope, they'll let you know. You can fix the affidavit in person at the auditor's office, ask for a replacement ballot or vote at the polls, until polls close on Election Day.",
+   "es": "Si el auditor de tu condado encuentra un problema con el sobre que devolviste, te avisará. Puedes corregir la declaración en persona en la oficina del auditor, pedir una boleta de reemplazo o votar en las casillas, hasta que cierren el Día de las Elecciones.",
+   "src": "https://www.legis.iowa.gov/docs/code/53.18.pdf",
+   "checked": "2026-10-26",
+   "quote": "or complete the affidavit in person at the office of the commissioner not later than the time polls close on election day",
+   "status": "verified"
   },
   "dropbox": {
    "status": "missing",

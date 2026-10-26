@@ -176,8 +176,12 @@
   },
   "track_url": "https://vrems.scvotes.sc.gov/Voter/Login?PageMode=AbsenteeInfo",
   "cure": {
-   "status": "missing",
-   "notes": "No absentee cure process found on scvotes.gov."
+   "en": "Sign the oath and have it witnessed before you return your ballot. South Carolina can't count a ballot unless the oath is properly signed and witnessed.",
+   "es": "Firma el juramento y consigue la firma de un testigo antes de devolver tu boleta. Carolina del Sur no puede contar una boleta si el juramento no está bien firmado y atestiguado.",
+   "src": "https://www.scstatehouse.gov/code/t07c015.php",
+   "checked": "2026-10-26",
+   "quote": "A ballot may not be counted unless the oath is properly signed and witnessed nor may any ballot be counted which is received by the county board of voter registration and elections after time for closing of the polls.",
+   "status": "verified"
   },
   "dropbox": {
    "en": "Bring your ballot to your county voter registration office, or to an early voting center during early voting, and show your photo ID. A family member or authorized representative can return it for you with an Authorized Returnee form.",

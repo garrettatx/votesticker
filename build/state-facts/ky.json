@@ -174,7 +174,12 @@
    "notes": "No witness rule for mail ballots found. Only the medical emergency application must be notarized (KRS 117.077 on the absentee page)."
   },
   "cure": {
-   "status": "missing"
+   "en": "Sign the outer envelope: an unsigned one is rejected automatically. If your signature doesn't match, your county clerk will try to reach you, and you must fix it before polls close on Election Day.",
+   "es": "Firma el sobre exterior: si no está firmado, se rechaza automáticamente. Si tu firma no coincide, la oficina del secretario de tu condado tratará de contactarte, y debes corregirlo antes de que cierren las casillas el Día de las Elecciones.",
+   "src": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=52130",
+   "checked": "2026-10-26",
+   "quote": "All signature cures shall be completed before the closing of the polls on the day of a primary or an election;",
+   "status": "verified"
   },
   "dropbox": {
    "en": "Every county has a drop box where you can hand deliver your ballot. Find yours on the State Board of Elections site, and don't wait until Election Day.",

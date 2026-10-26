@@ -22,7 +22,7 @@ Measure each change in Search Console from its recrawl date.
 | 5 | "Make a voting plan" link beside the calendar button: state's official plan page, else VOTE411 | Garrett, Oct 26: link out, don't build | Done Oct 26 |
 | 6 | GA4 admin, walked through with Garrett: custom dimensions, 14-month retention, `sticker_save` key event | Event details invisible in reports since Oct 23 | Done Oct 26 |
 | 7 | Search Console read of items 1-3 from their recrawl date (with the Oct 29 dated check) | | |
-| 8 | Mail-ballot fix ("cure") rules for the 25 states without them (AL AR CO DC GA IA ID KY MD MO MS NC ND NE NH NM OK PA RI SC SD TN TX WV WY), official sources | Mail voters need it Nov 3-10; kept on the page after Election Day | |
+| 8 | Mail-ballot fix ("cure") rules for the 25 states without them (AL AR CO DC GA IA ID KY MD MO MS NC ND NE NH NM OK PA RI SC SD TN TX WV WY), official sources | Mail voters need it Nov 3-10; kept on the page after Election Day | Done Oct 26: 15 of 25 |
 | 9 | Transparent cut-out PNG for disc designs (backlog maker idea) | Sticker people can lay over a photo; "i voted sticker png" searches | Done Oct 26 |
 | 10 | Official state plan pages into `where.plan_url` (item 5 part 2) | | Done Oct 26: MD, ND; rest VOTE411 |
 
@@ -77,3 +77,16 @@ Measure each change in Search Console from its recrawl date.
   Idaho ("Make A Plan To Vote" is only a pamphlet chapter title), South Carolina (an early-voting press
   release that ages out Oct 31), New York, Ohio and Arizona (403 to curl; unverified). Every other
   state keeps VOTE411. Facts and Spanish QA pass.
+- **Oct 26, item 8 (mail ballot fixes).** 15 states added, EN and ES, every quote re-fetched and matched
+  word for word: fix processes with deadlines for CO (11:59 p.m. Nov 12, moved from Nov 11 by the
+  Veterans Day rule), MD (10 a.m. Nov 13), NC (noon Nov 10, under S.L. 2026-60, which changed third to
+  fifth business day; witness errors can't be fixed), ND (before the Nov 16 canvass), RI (4 p.m. Nov
+  10, received not postmarked) and TX (Nov 9, with the corrective action form); process without a date
+  for DC (the letter's deadline; the calendar and FAQ disagree), GA (deadline unread, sos.ga.gov 403),
+  PA (county by county, provisional ballot as fallback); narrow ones for KY (signature mismatch, before
+  polls close; unsigned envelopes rejected) and IA (until polls close); and "check your envelope, no
+  fix" for AL, MO, SC and SD. The six dated ones carry past-tense text after their deadline (checked
+  in a Nov 17 preview: no present-tense deadline left). Left out: AR (ID-only 2023 rule), MS (rule in
+  a "proposed" folder), NM (no date), WV (guidance, not statute), NE, NH, OK, TN, ID, WY (no official
+  statement either way). The Spanish check caught "Ballot by Mail Tracker" in the TX text; reworded.
+  Facts, Spanish and SEO QA pass; stale scan at 27.

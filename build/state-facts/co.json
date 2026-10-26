@@ -57,8 +57,16 @@
    "status": "verified"
   },
   "cure": {
-   "status": "missing",
-   "notes": "The eight-day signature cure period appears only on an archived 2017 SOS press release (PR20171115CuringBallots); no current SOS page with the 2026 deadline was found. GoVoteColorado links a 'Cure my ballot' app at myballot.coloradosos.gov/ecure. The Larimer County signature page returned 403."
+   "en": "Signature missing or doesn't match, or an ID copy missing? Fix it by 11:59 p.m. on Thursday, November 12, 2026.",
+   "es": "¿Te faltó la firma, no coincide o falta la copia de tu identificación? Corrígelo a más tardar a las 11:59 p. m. del jueves 12 de noviembre de 2026.",
+   "until": "2026-11-12",
+   "en_after": "The deadline to fix a mail ballot problem was 11:59 p.m. on Thursday, November 12, 2026.",
+   "es_after": "La fecha límite para corregir un problema con la boleta por correo fue a las 11:59 p. m. del jueves 12 de noviembre de 2026.",
+   "src": "https://www.coloradosos.gov/pubs/elections/FAQs/rejectedBallots.html",
+   "checked": "2026-10-26",
+   "quote": "The deadline for you to submit the necessary information is 11:59 PM MT on the eighth day after Election Day. If the eighth day falls on a state or federal holiday, the deadline moves to the following day.",
+   "status": "verified",
+   "notes": "Nov 12 computed: the eighth day after Nov 3 is Nov 11, Veterans Day (federal holiday), so the source moves it to the next day."
   }
  },
  "how": {
@@ -155,7 +163,16 @@
   },
   "track_url": "https://ballottrax.coloradosos.gov/voter/",
   "cure": {
-   "status": "missing"
+   "en": "Signature missing or doesn't match, or an ID copy missing? Your county will send a letter. Fix it by following the letter, or on your phone with Colorado BallotCure, by 11:59 p.m. on Thursday, November 12.",
+   "es": "¿Te faltó la firma, no coincide o falta la copia de tu identificación? Tu condado te enviará una carta. Corrígelo siguiendo la carta, o desde tu teléfono con Colorado BallotCure, a más tardar a las 11:59 p. m. del jueves 12 de noviembre.",
+   "src": "https://www.coloradosos.gov/pubs/elections/FAQs/rejectedBallots.html",
+   "checked": "2026-10-26",
+   "quote": "The deadline for you to submit the necessary information is 11:59 PM MT on the eighth day after Election Day. If the eighth day falls on a state or federal holiday, the deadline moves to the following day.",
+   "status": "verified",
+   "notes": "Nov 12 computed: the eighth day after Nov 3 is Nov 11, Veterans Day (federal holiday), so the source moves it to the next day.",
+   "until": "2026-11-12",
+   "en_after": "The deadline to fix a mail ballot problem was 11:59 p.m. on Thursday, November 12, 2026.",
+   "es_after": "La fecha límite para corregir un problema con la boleta por correo fue a las 11:59 p. m. del jueves 12 de noviembre de 2026."
   },
   "dropbox": {
    "en": "Drop boxes are open 24/7 and under video surveillance. A team of election judges from both parties collects the ballots regularly. Get yours in by 7 p.m. on Election Day.",

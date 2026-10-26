@@ -46,8 +46,16 @@
    "notes": "Early voting is offered only in some counties, on dates and hours each county sets (listed by county on vip.sos.nd.gov/Precincts.aspx?eid=348). No statewide hours."
   },
   "cure": {
-   "status": "missing",
-   "notes": "No absentee cure process found on the SOS absentee page."
+   "en": "Signature missing or doesn't match? Confirm it with your county auditor before the canvassing board meets on Monday, November 16, 2026.",
+   "es": "¿Te faltó la firma o no coincide? Confírmala con el auditor de tu condado antes de que se reúna la junta de escrutinio el lunes 16 de noviembre de 2026.",
+   "until": "2026-11-16",
+   "en_after": "The deadline to confirm a mail ballot signature was the county canvassing board meeting on Monday, November 16, 2026.",
+   "es_after": "La fecha límite para confirmar la firma de una boleta por correo fue la reunión de la junta de escrutinio del condado el lunes 16 de noviembre de 2026.",
+   "src": "https://ndlegis.gov/cencode/t16-1c07.pdf",
+   "checked": "2026-10-26",
+   "quote": "verification must be completed by the absent voter before close of the meeting of the canvassing board occurring thirteen days after the election",
+   "status": "verified",
+   "notes": "Canvassing board date Nov 16, 2026 from the SOS 2026 general election media guide."
   }
  },
  "how": {
@@ -142,7 +150,16 @@
   },
   "track_url": "https://vip.sos.nd.gov/AbsenteeTracker.aspx",
   "cure": {
-   "status": "missing"
+   "en": "If your signature is missing or doesn't match, your county auditor will contact you. Confirm it's yours in person with your ID, or by letter or email with a copy of the ID you used to apply, before the county canvassing board meets on Monday, November 16.",
+   "es": "Si te faltó la firma o no coincide, el auditor de tu condado te contactará. Confirma que es tuya en persona con tu identificación, o por carta o correo electrónico con una copia de la identificación que usaste al solicitarla, antes de que se reúna la junta de escrutinio del condado el lunes 16 de noviembre.",
+   "src": "https://ndlegis.gov/cencode/t16-1c07.pdf",
+   "checked": "2026-10-26",
+   "quote": "verification must be completed by the absent voter before close of the meeting of the canvassing board occurring thirteen days after the election",
+   "status": "verified",
+   "notes": "Canvassing board date Nov 16, 2026 from the SOS 2026 general election media guide.",
+   "until": "2026-11-16",
+   "en_after": "The deadline to confirm a mail ballot signature was the county canvassing board meeting on Monday, November 16, 2026.",
+   "es_after": "La fecha límite para confirmar la firma de una boleta por correo fue la reunión de la junta de escrutinio del condado el lunes 16 de noviembre de 2026."
   },
   "dropbox": {
    "en": "Every county has secure absentee ballot drop boxes. Get your ballot in one by the close of polls on Election Day, or hand it to your county auditor.",

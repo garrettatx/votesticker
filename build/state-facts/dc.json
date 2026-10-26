@@ -101,8 +101,13 @@
    "status": "missing"
   },
   "cure": {
-   "status": "missing",
-   "notes": "See dates.cure."
+   "en": "If there's a problem with your mail ballot, such as a signature that doesn't match, the DC Board of Elections will send you a letter, and BallotTrax will alert you if you signed up. Return the signed certificate from the letter by email, by mail or in person by the deadline the letter gives.",
+   "es": "Si hay un problema con tu boleta por correo, como una firma que no coincide, la Junta de Elecciones de DC te enviará una carta, y BallotTrax te avisará si te inscribiste. Devuelve el certificado firmado que viene con la carta por correo electrónico, por correo o en persona antes de la fecha límite que indique la carta.",
+   "src": "https://dcboe.org/faqs/early-voting-and-election-day",
+   "checked": "2026-10-26",
+   "quote": "The voter will have until the applicable deadline listed in their letter to resolve the issue (cure the ballot).",
+   "status": "verified",
+   "notes": "DCBOE 2026 calendar lists Nov 19 as the cure deadline; the FAQ says seven days and the letter governs, so no date is given."
   },
   "dropbox": {
    "en": "Put it in a ballot drop box or bring it to a Vote Center by 8 p.m. on Election Day.",
