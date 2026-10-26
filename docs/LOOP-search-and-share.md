@@ -19,12 +19,12 @@ Measure each change in Search Console from its recrawl date.
 | 2 | Homepage "I Voted Early Stickers" section: ready-made I voted early designs linking their states | "i voted early sticker", 184 impressions a week, split across five state pages at positions 5-7 |Done Oct 26 |
 | 3 | Homepage text: a space between "Nov. 3" and "8 days away"; "underway in 37 states" instead of "open today" | Snippet and screen-reader text read "Nov. 38"; Sunday closures |Done Oct 26 |
 | 4 | Homepage FAQ "Do you keep my information?" matches About | Flat "No" overstates it with analytics on |Done Oct 26 |
-| 5 | "Make a voting plan" link beside the calendar button: state's official plan page, else VOTE411 | Garrett, Oct 26: link out, don't build | Built Oct 26 (VOTE411 for all); official pages next |
+| 5 | "Make a voting plan" link beside the calendar button: state's official plan page, else VOTE411 | Garrett, Oct 26: link out, don't build | Done Oct 26 |
 | 6 | GA4 admin, walked through with Garrett: custom dimensions, 14-month retention, `sticker_save` key event | Event details invisible in reports since Oct 23 | Done Oct 26 |
 | 7 | Search Console read of items 1-3 from their recrawl date (with the Oct 29 dated check) | | |
 | 8 | Mail-ballot fix ("cure") rules for the 25 states without them (AL AR CO DC GA IA ID KY MD MO MS NC ND NE NH NM OK PA RI SC SD TN TX WV WY), official sources | Mail voters need it Nov 3-10; kept on the page after Election Day | |
 | 9 | Transparent cut-out PNG for disc designs (backlog maker idea) | Sticker people can lay over a photo; "i voted sticker png" searches | Done Oct 26 |
-| 10 | Official state plan pages into `where.plan_url` (item 5 part 2) | | |
+| 10 | Official state plan pages into `where.plan_url` (item 5 part 2) | | Done Oct 26: MD, ND; rest VOTE411 |
 
 ## Log
 
@@ -68,3 +68,12 @@ Measure each change in Search Console from its recrawl date.
   election. The page now says both, attributed to the Secretary of State, with drop-off before polls
   close as the sure route and "mail it early." The page's "Beginning in 2026" sentence states the
   statute the order overrides. Re-read added to the Nov 2 dated check. Facts and Spanish QA pass.
+- **Oct 26, item 10 (official plan pages).** An agent checked all 51 election offices; none has a
+  current page built only for planning. Re-read and added two: Maryland's 2026 "My Election Checklist"
+  PDF ("There are three ways to vote (early, by mail, or on Election Day), so use this checklist to
+  start making your plan.") and North Dakota's voter page with its current "Prepare - Plan -
+  Participate!" block ("This printable handout explains how you can make your plan to vote").
+  Turned down: California (`make-plan-vote` is now "Vote Early, California!" with no planning text),
+  Idaho ("Make A Plan To Vote" is only a pamphlet chapter title), South Carolina (an early-voting press
+  release that ages out Oct 31), New York, Ohio and Arizona (403 to curl; unverified). Every other
+  state keeps VOTE411. Facts and Spanish QA pass.

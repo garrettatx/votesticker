@@ -3034,6 +3034,7 @@ return array(
 			'es' => 'Polling Place Search (Junta Electoral del Estado de Maryland)',
 		),
 		'where.local_offices_url' => 'https://elections.maryland.gov/about/county_boards.html',
+		'where.plan_url' => 'https://elections.maryland.gov/elections/2026/vote2026/assets/pdf/2026_My-Election-Checklist_GENERAL.pdf',
 		'id.rule' => 'no_id',
 		'id.without' => array(
 			'en' => 'Most voters don\'t show ID. If you\'re a first-time voter who\'s asked and can\'t show it, you vote a provisional ballot. It counts if you get ID to your local board of elections before 10 a.m. on the second Wednesday after Election Day.',
@@ -4246,6 +4247,7 @@ return array(
 			'src' => 'https://www.sos.nd.gov/elections/voter/voting-north-dakota/how-do-i-vote',
 			'checked' => '2026-10-21',
 		),
+		'where.plan_url' => 'https://www.sos.nd.gov/elections/voter',
 		'id.rule' => 'id_nonphoto',
 		'id.accepted' => array(
 			'en' => array( 'North Dakota driver\'s license', 'North Dakota non-driver ID', 'Tribal ID or tribal letter', 'Long-term care certificate from a North Dakota facility you live in' ),

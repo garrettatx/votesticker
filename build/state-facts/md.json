@@ -76,7 +76,8 @@
   "local_offices_url": "https://elections.maryland.gov/about/county_boards.html",
   "rule": {
    "status": "missing"
-  }
+  },
+  "plan_url": "https://elections.maryland.gov/elections/2026/vote2026/assets/pdf/2026_My-Election-Checklist_GENERAL.pdf"
  },
  "id": {
   "rule": "no_id",

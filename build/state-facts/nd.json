@@ -87,7 +87,8 @@
    "checked": "2026-10-21",
    "quote": "You can enter your address into the My Voting Info portal to find out where you can go to vote based on where you live.",
    "status": "verified"
-  }
+  },
+  "plan_url": "https://www.sos.nd.gov/elections/voter"
  },
  "id": {
   "rule": "id_nonphoto",
