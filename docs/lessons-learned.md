@@ -48,5 +48,8 @@ Started October 26, 2026. One line of what happened, then the rule. Newest first
 
 - **Guard what the build can't see.** PHP warnings sat in a data attribute on four state pages for
   five days. The build now stops on any PHP warning, and on a calendar file without its links.
+- **A date is too coarse to detect a change.** IndexNow compared sitemap dates, so a second deploy on
+  the same day looked unchanged and sent nothing. Compare content fingerprints, and read the build log's
+  "to submit" count after every deploy.
 - **GitHub's scheduled runs start hours late.** The 6:05 a.m. build ran 3 to 5 hours late all week;
   on days that matter (Nov 2, Nov 4), dispatch by hand by 7 a.m.

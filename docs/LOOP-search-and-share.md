@@ -177,3 +177,11 @@ Measure each change in Search Console from its recrawl date.
   Check, bespoke sets in both languages, home and hero picks, colorway fix. Card QA 81,120 cards in Chromium
   and WebKit, 0 outside the safe circle; facts, Spanish, SEO, event, save, bespoke rules, collection and
   name checks pass. Build dispatched by hand; IndexNow runs in it.
+- **Oct 26, push 5 live check.** Run 40405846560 deployed 21:37 UTC. Live: Texas gallery 19 stickers,
+  Spanish Texas and Alabama 6 each, Washington 20; home hero, 16 showcase picks and the I Voted Early
+  section; Check in the maker; new labels; sitemap 1,121 images; a bespoke JPG answers 200. The build's
+  IndexNow step sent nothing ("0 to submit"): it compared sitemap dates, and every page already had
+  today's date from the morning build. Submitted all 108 by hand (`indexnow.py --all`, HTTP 200). Fixed
+  the cause: `indexnow.py` now compares each page's content fingerprint from `build/lastmod.json`, so a
+  second deploy the same day still sends what changed (dry run 0 after recording today's fingerprints;
+  changing Texas's fingerprint queued exactly Texas). Ships with the next push.

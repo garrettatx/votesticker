@@ -43,7 +43,12 @@ def main():
     if not live:
         sys.exit('no URLs with lastmod found in the sitemap')
     sent = json.loads(STATE.read_text()) if STATE.exists() else {}
-    todo = sorted(live) if a.all else sorted(u for u, m in live.items() if sent.get(u) != m)
+    # Compare each page's content fingerprint from the build (build/lastmod.json), not the sitemap date:
+    # a date only changes once a day, so a second deploy the same day sent nothing (October 26). Pages the
+    # build record doesn't know fall back to the date.
+    lm = json.loads((ROOT / 'build' / 'lastmod.json').read_text()) if (ROOT / 'build' / 'lastmod.json').exists() else {}
+    mark = {u: (lm.get(u[len(SITE):]) or [m])[0] for u, m in live.items()}
+    todo = sorted(live) if a.all else sorted(u for u in live if sent.get(u) != mark[u])
     print(f'{len(live)} sitemap URLs, {len(todo)} to submit')
     if not todo or a.dry_run:
         for u in todo[:20]:
@@ -58,7 +63,7 @@ def main():
         sys.exit(f'IndexNow answered HTTP {e.code}: {e.read().decode("utf-8", "replace")[:300]}')
     print(f'IndexNow answered HTTP {code}')  # 200 = accepted, 202 = accepted, key check pending
     if code in (200, 202):
-        sent.update({u: live[u] for u in todo})
+        sent.update({u: mark[u] for u in todo})
         STATE.write_text(json.dumps(sent, indent=1, sort_keys=True) + '\n')
 
 
