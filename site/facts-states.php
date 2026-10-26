@@ -282,6 +282,12 @@ return array(
 			'src' => 'https://www.sos.alabama.gov/sites/default/files/election-2026/2026-VoterGuide.pdf',
 			'checked' => '2026-10-21',
 		),
+		'sticker.tradition' => array(
+			'en' => 'For the November 3, 2026 general election, Alabama\'s Secretary of State released newly designed America 250 I Voted stickers, marking the country\'s 250th anniversary.',
+			'es' => 'Para la elección general del 3 de noviembre de 2026, la Secretaría de Estado de Alabama sacó stickers de I Voted con un diseño nuevo de America 250, por los 250 años del país.',
+			'src' => 'https://www.sos.alabama.gov/newsroom/secretary-state-wes-allen-announces-release-america-250-i-voted-stickers-november-3',
+			'checked' => '2026-10-26',
+		),
 		'election_day.hours' => array(
 			'en' => 'Polling places are open 7 a.m. to 7 p.m. local time.',
 			'es' => 'Los lugares de votación abren de 7 a. m. a 7 p. m., hora local.',

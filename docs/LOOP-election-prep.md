@@ -44,7 +44,7 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
 | # | Item | Status |
 |---|---|---|
 | 9 | Between-elections mode built behind a phase flag, ready for the Dec 1 review | Built Oct 25 (off) |
-| 10 | Sticker collection and 2026 archive (`docs/sticker-archive-spec.md`): data first | Data built Oct 25; 12 of 40 office records reviewed Oct 26 |
+| 10 | Sticker collection and 2026 archive (`docs/sticker-archive-spec.md`): data first | Data built Oct 25; 13 of 41 office records reviewed Oct 26 |
 | 11 | Descriptive image filenames with 301s from the old URLs | |
 | 12 | Snohomish County as a second Washington sticker source | |
 | 13 | Privacy and accessibility section on About | |
@@ -108,3 +108,9 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
   notes and skipped; the three hand-file guards re-tested and fire. Spec states with no verified story yet: NH
   and AL (sos.nh.gov PDF, sos.alabama.gov) need reading on the official pages before a record exists; AK's 2026
   pamphlet artist is also unread. Next: those three, then the 28 records with distribution facts only.
+- **Oct 26, item 10 (review, part 2):** Alabama: new official release (sos.alabama.gov; no date on the page, search listing says Oct 21) on
+  "newly designed America 250 \"I Voted\" stickers" for the Nov 3 general. Added as a verified sticker fact
+  (EN and ES), so the Alabama page now has a sticker story, plus the `al-office` record (41 records). The
+  release doesn't say who designed it or where voters pick it up, so the page and record say neither.
+  Facts, SEO and Spanish QA pass locally; the stale scan's 27 hits are open windows that started earlier
+  (same as before the change). New Hampshire's site returns 403 to fetch tools; read it in Chrome next.

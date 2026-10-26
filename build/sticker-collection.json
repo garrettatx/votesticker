@@ -7182,6 +7182,33 @@
    "reviewed": true
   },
   {
+   "id": "al-office",
+   "state": "AL",
+   "county": null,
+   "origin": "office",
+   "title": "America 250 I Voted sticker",
+   "designer": null,
+   "office": "Alabama Secretary of State",
+   "selection": null,
+   "year": 2026,
+   "elections": [
+    "2026 November general"
+   ],
+   "story": {
+    "en": "For the November 3, 2026 general election, Alabama's Secretary of State released newly designed America 250 I Voted stickers, marking the country's 250th anniversary.",
+    "es": "Para la elección general del 3 de noviembre de 2026, la Secretaría de Estado de Alabama sacó stickers de I Voted con un diseño nuevo de America 250, por los 250 años del país.",
+    "src": "https://www.sos.alabama.gov/newsroom/secretary-state-wes-allen-announces-release-america-250-i-voted-stickers-november-3",
+    "quote": "Wes Allen, Alabama's Secretary of State is announcing the release of newly designed America 250 \"I Voted\" stickers",
+    "checked": "2026-10-26"
+   },
+   "distribution": [],
+   "image": null,
+   "image_permission": "none",
+   "permission_note": null,
+   "placement": "collection",
+   "reviewed": true
+  },
+  {
    "id": "ca-office",
    "state": "CA",
    "county": null,
