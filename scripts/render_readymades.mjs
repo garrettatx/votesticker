@@ -47,7 +47,8 @@ for (const abbr of STATES) {
     const base = `${k}-${o.file}`;
     fs.writeFileSync(path.join(DIR, k, base + '.jpg'), Buffer.from(o.data.split(',')[1], 'base64'));
     // The date bar in title case ("OCT 19–NOV 2" to "Oct 19–Nov 2", "ELECTION DAY" to "Election Day").
-    const when = o.date ? ', ' + o.date.toLowerCase().replace(/(^|[\s–-])([a-z])/g, (m, a, c) => a + c.toUpperCase()) : '';
+    // A postal code stays in capitals ("PA 2026").
+    const when = /^[A-Z]{2} \d{4}$/.test(o.date) ? ', ' + o.date : o.date ? ', ' + o.date.toLowerCase().replace(/(^|[\s–-])([a-z])/g, (m, a, c) => a + c.toUpperCase()) : '';
     alts[base] = `${o.palette === 'state' ? 'Sticker in ' + name + ' colors' : o.palette.charAt(0).toUpperCase() + o.palette.slice(1) + ' sticker'} reading ${o.says}${when}`;
     n++;
   }

@@ -123,7 +123,7 @@
 		ivoted: { label: 'I voted', lines: ['I VOTED'], stateLine: true },
 		mailed: { mail: true, label: 'I voted by mail', lines: ['I VOTED', 'BY MAIL'], stateLine: true },
 		ballotin: { mail: true, label: 'My ballot is in', lines: ['MY BALLOT', 'IS IN'], stateLine: true },
-		voted: { early: true, label: 'I voted early', lines: ['I VOTED', 'EARLY'] },
+		voted: { early: true, past: true, label: 'I voted early', lines: ['I VOTED', 'EARLY'] },
 		// Spanish (October 19): tú, per the project glossary (docs/spanish-style.md); "Ya voté" is the
 		// everyday Mexican phrasing for "I voted". Date bars
 		// put the day first ("19–30 OCT", "HASTA EL 27 OCT").
@@ -131,7 +131,7 @@
 		votacorreo: { mail: true, es: true, label: 'Vota por correo (español)', lines: ['VOTA', 'POR CORREO'] },
 		vota3nov: { dated: true, es: true, label: 'Vota 3 de nov (español)', lines: ['VOTA', '3 DE NOV'] },
 		yavote: { es: true, label: 'Ya voté (español)', lines: ['YA VOTÉ'], stateLine: true },
-		yavotetemprano: { early: true, es: true, label: 'Ya voté temprano (español)', lines: ['YA VOTÉ', 'TEMPRANO'] },
+		yavotetemprano: { early: true, past: true, es: true, label: 'Ya voté temprano (español)', lines: ['YA VOTÉ', 'TEMPRANO'] },
 		yavotecorreo: { mail: true, es: true, label: 'Ya voté por correo (español)', lines: ['YA VOTÉ', 'POR CORREO'], stateLine: true },
 		voyavotar: { es: true, label: 'Voy a votar (español)', lines: ['VOY A', 'VOTAR'], stateLine: true },
 	};
@@ -209,10 +209,13 @@
 	// date (VOTE NOV 3) gets ELECTION DAY under it.
 	function defaultDateLine(st, headline) {
 		var hd = headline && HEADLINES[headline];
-		if (hd && hd.es && !hd.stateLine) { return spanishDateLine(st, hd); }
+		// "I voted early, through Oct 27" doesn't read: past-tense messages name the state when the state's date
+		// is only a deadline (PA, KS; October 25).
+		var stateLine = hd && (hd.stateLine || (hd.past && /^THROUGH /.test(st.dateLine || '')));
+		if (hd && hd.es && !stateLine) { return spanishDateLine(st, hd); }
 		if (hd && hd.dated) { return 'ELECTION DAY'; }
 		// Short enough to read in a thumbnail: the name up to 10 letters, else the postal code (NC 2026).
-		if (headline && HEADLINES[headline] && HEADLINES[headline].stateLine) { var nm = HEADLINES[headline].es ? nameOf(st) : st.name; return (nm.length <= 10 ? nm.toUpperCase() : st.abbr) + ' ' + ELECTION.day.slice(0, 4); }
+		if (stateLine) { var nm = hd.es ? nameOf(st) : st.name; return (nm.length <= 10 ? nm.toUpperCase() : st.abbr) + ' ' + ELECTION.day.slice(0, 4); }
 		if (!hasEarly(st)) { return electionLine(); }
 		if (st.dateLine) { return st.dateLine; }
 		if (st.kind === 'mail') { return st.dateLineMail || 'DUE ' + shortDate(day(st.end)); }
@@ -226,7 +229,7 @@
 	function spanishDateLine(st, hd) {
 		if (hd.dated || !hasEarly(st)) { return 'DÍA DE LAS ELECCIONES'; }
 		if (st.kind === 'mail') { return 'HASTA EL ' + day(st.end).getDate() + ' ' + mes(day(st.end)); }
-		var by = /^BY ([A-Z]{3}) (\d+)$/.exec(st.dateLine || '');
+		var by = /^THROUGH ([A-Z]{3}) (\d+)$/.exec(st.dateLine || '');
 		if (by) { return 'HASTA EL ' + by[2] + ' ' + (MESES[by[1]] || by[1]); }
 		if (!st.start || !st.end) { return 'DÍA DE LAS ELECCIONES'; }
 		var a = day(st.start), b = day(st.end);
