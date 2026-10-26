@@ -950,7 +950,22 @@ function vote_ics( $st ) {
 function vote_cal_link( $st ) {
 	if ( ! vote_ics_events( $st ) ) { return ''; }
 	return '<p class="cal"><a class="btn btn--quiet" href="' . vote_pbase() . 'cal/' . vote_slug( $st['name'] ) . '.ics">' . vote_e( t( 'Add to my calendar' ) ) . '</a>'
-		. '<small>' . vote_e( t( 'Your voting dates in %s, with a reminder the day before. Opens in your phone or computer calendar.', vote_lname( $st ) ) ) . '</small></p>';
+		. '<small>' . vote_e( t( 'Your voting dates in %s, with a reminder the day before. Opens in your phone or computer calendar.', vote_lname( $st ) ) ) . '</small></p>'
+		. vote_plan_link( $st );
+}
+// "Make a voting plan" (search-and-share loop item 5, October 26): a link out, never a planner here (Garrett).
+// The state election office's own plan page when its facts file has a verified where.plan_url, otherwise
+// VOTE411's, from the League of Women Voters Education Fund (nonpartisan). Gone after Election Day with
+// the calendar link.
+const VOTE_PLAN_FALLBACK = 'https://www.vote411.org/make-your-plan';
+function vote_plan_link( $st ) {
+	$own = vote_fact( $st, 'where.plan_url' );
+	$url = is_string( $own ) && $own ? $own : VOTE_PLAN_FALLBACK;
+	$from = $url === VOTE_PLAN_FALLBACK
+		? t( 'Planning help on VOTE411, from the nonpartisan League of Women Voters Education Fund.' )
+		: t( 'Planning help from %s.', vote_src_name( $st, $url ) );
+	return '<p class="cal cal--plan"><a class="btn btn--quiet" href="' . vote_e( $url ) . '" target="_blank" rel="noopener">' . vote_e( t( 'Make a voting plan' ) ) . ' <span aria-hidden="true">↗</span></a>'
+		. '<small>' . vote_e( $from ) . '</small></p>';
 }
 
 $vote_rows = vote_states();

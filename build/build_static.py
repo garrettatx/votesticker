@@ -135,6 +135,10 @@ def main():
             d.mkdir(parents=True, exist_ok=True)
             (d / f'{slug(r["name"])}.ics').write_bytes(ics.encode())
             cals += 1
+            # The page that offers this file also offers the planning link beside it (vote_plan_link()).
+            page = pages.get(f'{p}{slug(r["name"])}/', '')
+            if f'cal/{slug(r["name"])}.ics' not in page or 'cal--plan' not in page:
+                raise SystemExit(f'{p}{slug(r["name"])}/ has a calendar file but no calendar or planning link on the page')
     (DIST / 'es' / '404.html').write_text(render('es/404'))  # Pages serves the nearest 404.html
     (DIST / 'robots.txt').write_text(f'User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}sitemap.xml\n')
     # Share loop (October 23): the link in the suggested post text is /go/<state>/<version>, which lands

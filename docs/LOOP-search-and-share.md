@@ -19,7 +19,7 @@ Measure each change in Search Console from its recrawl date.
 | 2 | Homepage "I Voted Early Stickers" section: ready-made I voted early designs linking their states | "i voted early sticker", 184 impressions a week, split across five state pages at positions 5-7 |Done Oct 26 |
 | 3 | Homepage text: a space between "Nov. 3" and "8 days away"; "underway in 37 states" instead of "open today" | Snippet and screen-reader text read "Nov. 38"; Sunday closures |Done Oct 26 |
 | 4 | Homepage FAQ "Do you keep my information?" matches About | Flat "No" overstates it with analytics on |Done Oct 26 |
-| 5 | "Make a voting plan" link beside the calendar button: state's official plan page, else VOTE411 | Garrett, Oct 26: link out, don't build | |
+| 5 | "Make a voting plan" link beside the calendar button: state's official plan page, else VOTE411 | Garrett, Oct 26: link out, don't build | Built Oct 26 (VOTE411 for all); official pages next |
 | 6 | GA4 admin, walked through with Garrett: custom dimensions, 14-month retention, `sticker_save` key event | Event details invisible in reports since Oct 23 | Done Oct 26 |
 | 7 | Search Console read of items 1-3 from their recrawl date (with the Oct 29 dated check) | | |
 
@@ -44,3 +44,11 @@ Measure each change in Search Console from its recrawl date.
   `method` use GA4's built-in Search term and Method dimensions. Retention can't be read without the
   Admin API (not enabled on the service account); Garrett saved it. Dimensions fill from Oct 26 on,
   not backward. Still open in the backlog: GA4 to BigQuery link and Search Console bulk export.
+- **Oct 26, item 5 (planning link), part 1.** "Make a voting plan ↗" ("Haz tu plan para votar") under
+  the calendar button on every state page, both languages, opening in a new tab. Default:
+  VOTE411's make-your-plan page ("Planning help on VOTE411, from the nonpartisan League of Women Voters
+  Education Fund"; Spanish notes it's in English). A state's facts file can name its own election
+  office's page as `where.plan_url` (new url fact, official hosts only); then the line reads "Planning
+  help from <the office>". Gone from Nov 4 with the calendar link. Build guard: a state page that gets
+  a calendar file must carry both links (mutation-tested; it stopped on Alabama). 102 of 102 state
+  pages have it; Nov 4 preview has none. Facts, Spanish and SEO QA pass.

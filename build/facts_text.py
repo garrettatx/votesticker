@@ -51,6 +51,7 @@ FACTS = {
     'how.in_person': 'text', 'how.first_time': 'text',
     'where.locator_url': 'url', 'where.locator_label': 'label', 'where.locator_cta': 'label', 'where.local_offices_url': 'url',
     'where.sample_ballot_url': 'url', 'where.rule': 'text',
+    'where.plan_url': 'url',  # the state election office's own make-a-plan page; VOTE411 otherwise (index.php)
     'id.rule': 'rule', 'id.accepted': 'list', 'id.expired': 'text', 'id.without': 'text',
     'mail.who': 'text', 'mail.who_list': 'list', 'mail.track_url': 'url', 'mail.cure': 'text', 'mail.dropbox': 'text', 'mail.witness': 'text',
     'polls_rules.gear': 'text', 'polls_rules.phone': 'text', 'polls_rules.line': 'text',

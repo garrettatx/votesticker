@@ -715,6 +715,7 @@ body.is-holding { overflow: hidden; }
 /* Add to calendar (October 26): a quiet button and one line saying what it adds. */
 .info .cal { display: flex; flex-direction: column; align-items: flex-start; gap: var(--s2); margin: var(--s5) 0 var(--s5); }
 .info .cal small { color: var(--muted); font-size: var(--fs-sm); }
+.info .cal + .cal--plan { margin-top: calc(-1 * var(--s2)); }  /* calendar and plan read as one pair */
 
 /* Tap targets (final-week item 6, October 26): every control 44 px tall or more on a phone. A 390 px audit
    found footer links and the hero's official link at 23 px (under WCAG 2.2's 24 px minimum) and chips,
