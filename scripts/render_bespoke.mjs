@@ -55,7 +55,9 @@ for (const [i, st] of all.entries()) {
   // Six slots. Design: step 2 through the 13 designs, so a state's six are all different and the next
   // state starts one further along. Palette: state colors first, then a rotation.
   const d = (j) => DESIGNS[(i + j * 2) % DESIGNS.length];
-  const pal = (j) => PALETTES[(i * 2 + j * 3) % PALETTES.length];
+  // Step 1 through the 9 palettes (step 3 repeated every third slot: 4 colorways in 6 English stickers,
+  // 3 in the Spanish six, Garrett caught it Oct 26). Now each set of six has six colorways.
+  const pal = (j) => PALETTES[(i * 2 + j) % PALETTES.length];
   const plan = [
     { headline: 'ivoted', design: d(0), palette: 'state' },
     { headline: 'firsttime', design: d(1), palette: pal(1), rays: i % 2 === 1 },

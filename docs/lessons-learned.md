@@ -26,6 +26,9 @@ Started October 26, 2026. One line of what happened, then the rule. Newest first
 - **Turn the rules into a build check, then plant a violation.** "Voted early only where verified" is
   easy to say and easy to break in a rotation; `bespoke_check.py` catches it, and three planted errors
   proved it does.
+- **Check a rotation's cycle against the list length.** A step of 3 through 9 palettes repeats every
+  third slot; the sets looked varied in one contact sheet and weren't. Use a step that's coprime with
+  the list length, and put the variety rule in the build check.
 - **Pick showcase images from a contact sheet, not from the recipe.** The rotation makes good variety
   on average; the home page needs the best eight, chosen by looking at all of them.
 - **Count files, not matches.** A gallery count doubled because the regex hit each image's link and

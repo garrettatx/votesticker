@@ -7,6 +7,7 @@ The build runs this; any problem stops it. Rules:
   mail / Ya voté por correo only in verified all-mail states (site/states.js);
 - Spanish messages only on Spanish or shared stickers, English messages only on English ones;
 - eleven per state, eleven different designs, never Shadow (retired for these sets);
+- six different colorways on each page: the English six and the Spanish six (the shared YA VOTÉ counts on both);
 - file names lowercase-hyphen, starting with the state's name, 80 characters or fewer.
 
   python3 -I build/bespoke_check.py
@@ -67,6 +68,10 @@ def main():
             bad.append(f'{r["name"]}: {len(got)} bespoke stickers, want 11')
         if len({b['design'] for b in got}) != len(got):
             bad.append(f'{r["name"]}: a design repeats in its set')
+        for lang in ('en', 'es'):
+            pals = [b['palette'] for b in got if b['lang'] in (lang, 'both')]
+            if len(set(pals)) != len(pals):
+                bad.append(f'{r["name"]}: {lang} set repeats a colorway ({", ".join(sorted(pals))})')
         files = {f.stem for f in (STATES / abbr).glob(slug(r['name']) + '-*.jpg')}
         bad += [f'{s}: file not in the manifest' for s in sorted(files - set(m))]
     for b in bad:

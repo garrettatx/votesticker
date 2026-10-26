@@ -166,3 +166,10 @@ Measure each change in Search Console from its recrawl date.
   came back: the only design built on a symbol, readable as a check at 40 px; Spanish name Palomita.
   A design saved in the browser that left the row falls back to Tilt (tested with Shadow saved).
   The pre-made sets are not re-rendered for Check (Garrett: not every pre-made needs it).
+- **Oct 26, bespoke colorways (Garrett: "a variety of color schemes ... on the state pages").** The
+  palette step of 3 through 9 palettes repeated every third slot: every English set had 4 colorways in
+  6 stickers and every Spanish set 3. Now step 1 (`PALETTES[(2i + j) mod 9]`): six colorways in each
+  English six and each Spanish six, all 51 states; whole English state pages show 10 to 12 colorways
+  with the state's own ready-mades (TX 10, WA 12, AL 10, NE 10). New rule in `bespoke_check.py`: a
+  repeated colorway in either language's six stops the build (it flagged all 51 before the fix).
+  Re-rendered all 561; the 18 home-page stickers re-checked on a contact sheet after the color change.
