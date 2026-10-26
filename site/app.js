@@ -124,6 +124,8 @@
 		mailed: { mail: true, label: 'I voted by mail', lines: ['I VOTED', 'BY MAIL'], stateLine: true },
 		ballotin: { mail: true, label: 'My ballot is in', lines: ['MY BALLOT', 'IS IN'], stateLine: true },
 		voted: { early: true, past: true, label: 'I voted early', lines: ['I VOTED', 'EARLY'] },
+		// The history research's strongest new message (October 22); true in any state, before or after voting.
+		firsttime: { label: 'First time voter', lines: ['FIRST TIME', 'VOTER'], stateLine: true },
 		// Spanish (October 19): tú, per the project glossary (docs/spanish-style.md); "Ya voté" is the
 		// everyday Mexican phrasing for "I voted". Date bars
 		// put the day first ("19–30 OCT", "HASTA EL 27 OCT").
@@ -133,6 +135,7 @@
 		yavote: { es: true, label: 'Ya voté (español)', lines: ['YA VOTÉ'], stateLine: true },
 		yavotetemprano: { early: true, past: true, es: true, label: 'Ya voté temprano (español)', lines: ['YA VOTÉ', 'TEMPRANO'] },
 		yavotecorreo: { mail: true, es: true, label: 'Ya voté por correo (español)', lines: ['YA VOTÉ', 'POR CORREO'], stateLine: true },
+		miprimervoto: { es: true, label: 'Mi primer voto (español)', lines: ['MI PRIMER', 'VOTO'], stateLine: true },
 		voyavotar: { es: true, label: 'Voy a votar (español)', lines: ['VOY A', 'VOTAR'], stateLine: true },
 	};
 
@@ -1481,7 +1484,8 @@
 		});
 		// The suggested post follows the sticker's message until the person edits the text themselves.
 		var POST_KIND = { early: 'pre_early', votatemprano: 'pre_early', mail: 'pre_mail', votacorreo: 'pre_mail', nov3: 'pre_day', vota3nov: 'pre_day', voyavotar: 'pre_day',
-			ivoted: 'post', yavote: 'post', voted: 'post_early', yavotetemprano: 'post_early', mailed: 'post_mail', ballotin: 'post_mail', yavotecorreo: 'post_mail' };
+			ivoted: 'post', yavote: 'post', voted: 'post_early', yavotetemprano: 'post_early', mailed: 'post_mail', ballotin: 'post_mail', yavotecorreo: 'post_mail',
+			firsttime: 'post', miprimervoto: 'post' };
 		var postBox = $('post-text'), postEdited = false, posts = {}, postVariant = 'plan';
 		try { posts = JSON.parse(postBox.dataset.posts || '{}'); } catch (e) { posts = {}; }
 		postBox.addEventListener('input', function () { postEdited = true; });

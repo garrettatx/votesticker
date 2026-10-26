@@ -23,7 +23,7 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
 | 2 | Previews of the Nov 2 and Nov 4 builds (TX, WA, KS, Spanish home) sent to Garrett | Done Oct 25 |
 | 3 | Post-election checklist (`docs/post-election-release.md`) checked against the build; build what's missing (post-election home FAQ) | FAQ done Oct 25; rest of checklist next |
 | 4 | "Build and QA, no deploy" input on the daily workflow, so the Nov 4 run can be tested once ahead | Built Oct 25 |
-| 5 | "First time voter" message in the maker (English and Spanish) | |
+| 5 | "First time voter" message in the maker (English and Spanish) | Done Oct 25 |
 | 6 | Ballot trackers: confirm IN; look for IL, MO, WY | |
 | 7 | Open fact calls that touch the Nov 2 banner (NJ, MI, KS, VT, WY, MT) | |
 | 8 | Mail-state ribbon and date line field (WA "BY 8 P.M. NOV 3") | |
@@ -66,3 +66,8 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
   copy deck (EN and ES). Hours-vary and no-early-voting questions hidden after Election Day.
 - **Oct 25, item 4:** `dry_run` input on the daily workflow (build and QA, no deploy, IndexNow or commit) and a step that
   fails the run if the pages weren't built for the expected phase.
+- **Oct 25, item 4 check:** Dry run dispatched as 2026-11-04 (run 40258878715): build, local QA and phase check passed ("phase
+  post"); deploy, live QA, IndexNow and commit skipped.
+- **Oct 25, item 5:** "FIRST TIME / VOTER" (English) and "MI PRIMER / VOTO" (Spanish, natural "my first vote"; "PRIMERA VEZ"
+  runs over the 10-character line) in the maker, with the state name and year on the date bar; post text uses the I voted
+  version. Stays after Election Day. Card QA: 68,880 cards, none outside the safe circle.
