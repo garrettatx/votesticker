@@ -25,7 +25,7 @@ edit files, and every quote is re-read before it goes on a page.
 | 3 | **Sticker story for the 18 states without one** (`sticker.tradition`: AR AZ CA DC DE IA IL IN MA ME NE NJ NV PA SC TX VA WI), official sources only | The sticker is the brand, and the big states have nothing | |
 | 4 | **Tilt control** (Straight, Left, Right) under the swatches; `render` already takes `tilt` | Cheap design range from the October 22 work | Done Oct 26 |
 | 5 | **"Future voter"** message for kids and families, EN and ES | Useful on Election Day and after it | Done Oct 26 |
-| 6 | **Guide type:** body text 17 px, line height about 1.6, in the guide sections | Backlog review item; long FAQ answers on phones | |
+| 6 | **Guide type:** body text 17 px, line height about 1.6, in the guide sections | Backlog review item; long FAQ answers on phones | Done Oct 26 |
 
 ## Log
 
@@ -54,3 +54,7 @@ edit files, and every quote is re-read before it goes on a page.
   week (done 9:25 a.m. to 10:50 a.m. Central; Oct 26 still not started at 10:09). On Nov 2 and Nov 4,
   don't wait for it: dispatch the build by hand early (Actions, Daily build, Run workflow) if the
   scheduled run hasn't landed by 7 a.m.
+- **Oct 26, item 6 (guide type).** Body text was already 17 px from 600 px up (16 px below) at a 1.55
+  line height. Guide and FAQ prose is now 17 px at 1.6 on every screen, and paragraphs stop at 34rem:
+  the longest Texas paragraph went from about 87 characters a line at 1280 px to about 74 (49 on a
+  390 px phone). Source lines keep their small size. SEO QA passes.

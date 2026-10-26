@@ -735,3 +735,11 @@ button.link-quiet:hover { text-decoration: underline; }
 .tilts { margin: var(--s3) 0 0; }
 .tilts .size { padding-inline: 8px; white-space: nowrap; }
 .tilts[hidden] { display: none; }
+
+/* Guide type (October 26): the state guides and FAQ answers are the longest reading on the site, mostly
+   on phones. 17 px with a 1.6 line height everywhere (body text is 16 px under 600 px), and paragraphs
+   capped near 75 characters a line on desktop instead of about 85. */
+.guide p, .guide__list li, .faq details p { font-size: 17px; line-height: 1.6; }
+.guide p, .faq details p { max-width: 34rem; }  /* about 75 characters of 17 px system text */
+.guide .cite, .faq .faq__src { font-size: var(--fs-xs); line-height: 1.5; }
+.faq .faq__src { font-size: var(--fs-sm); }
