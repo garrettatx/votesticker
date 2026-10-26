@@ -21,12 +21,12 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
 |---|---|---|
 | 1 | PA and KS "I voted early" stickers: replace the "BY" date line with the state name | Done Oct 25 |
 | 2 | Previews of the Nov 2 and Nov 4 builds (TX, WA, KS, Spanish home) sent to Garrett | Done Oct 25 |
-| 3 | Post-election checklist (`docs/post-election-release.md`) checked against the build; build what's missing (post-election home FAQ) | FAQ done Oct 25; rest of checklist next |
+| 3 | Post-election checklist (`docs/post-election-release.md`) checked against the build; build what's missing (post-election home FAQ) | Done Oct 25 |
 | 4 | "Build and QA, no deploy" input on the daily workflow, so the Nov 4 run can be tested once ahead | Built Oct 25 |
 | 5 | "First time voter" message in the maker (English and Spanish) | Done Oct 25 |
 | 6 | Ballot trackers: confirm IN; look for IL, MO, WY | Checked Oct 25: none to add |
 | 7 | Open fact calls that touch the Nov 2 banner (NJ, MI, KS, VT, WY, MT) | Banner scan clean Oct 25; expired-date sweep done |
-| 8 | Mail-state ribbon and date line field (WA "BY 8 P.M. NOV 3") | |
+| 8 | Mail-state ribbon and date line field (WA "BY 8 P.M. NOV 3") | Already done (ribbon field and `dateLineMail`) |
 
 ## Dated Checks
 
@@ -80,3 +80,9 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
   `build/faq_text.py` (new optional third item, `vote_faq_text()` in index.php). Early-voting text with after-wording: AK,
   CA, MN, NJ, NM, NY (3 facts), UT, AZ mail return; HI and VT past tense; IL note drops "now"; related-states heading says
   "Began" once the date passes. Scan after: Nov 3 and Nov 4 clean apart from VT's past-tense line (scan false positive).
+- **Oct 25, item 3 (rest):** Nov 4 phrase search found voting instructions still on state pages. From Nov 4 the guide keeps
+  the past-dates table (no registration help link), "Check or Fix Your Mail Ballot" (cure fact and tracker only) and the
+  state's sticker section; Where You Can Vote, What ID to Bring, Phones/Photos/Gear and who-can-vote-by-mail leave. The
+  section heading becomes "Official Election Information". Image sitemap on Nov 4 lists only the shown stickers. Left as
+  is: after-wording inside the past-dates table (AL "Plan to vote...") and sticker-history answers about early voting.
+- **Oct 25, item 8:** Already in place: WA ribbon "DROP BOX BY 8 P.M. NOV 3" and mail-state `dateLineMail` in the maker.

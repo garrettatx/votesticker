@@ -116,6 +116,8 @@ return array(
 		'Still have your ballot? Check how to return it.' => '¿Todavía tienes tu boleta? Revisa cómo devolverla.',
 		'Find a drop box or voting location' => 'Buscar un buzón o lugar de votación',
 		'Official election information' => 'Información electoral oficial',
+		'Official Election Information' => 'Información electoral oficial',
+		'Check or Fix Your Mail Ballot' => 'Revisa o corrige tu boleta por correo',
 		'Already returned it? Track your ballot.' => '¿Ya la devolviste? Sigue tu boleta.',
 		'Already voted? Get your sticker.' => '¿Ya votaste? Consigue tu sticker.',
 		'November 3, 2026 · Election Day' => '3 de noviembre de 2026 · Día de las Elecciones',

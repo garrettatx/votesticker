@@ -457,7 +457,7 @@ function vote_guide( $st ) {
 	if ( count( $rows ) > 1 ) {
 		$out .= '<section class="guide" aria-labelledby="dates-h">' . $h( 'dates-h', t( 'post' === vote_phase() ? 'November 3, 2026 Election: Past Voting Dates' : 'Key Dates for Nov. 3' ) )
 			. '<table class="dates"><caption class="sr-only">' . vote_e( t( '%s voting dates and deadlines for the November 3, 2026 election', $name ) ) . '</caption><tbody>' . implode( '', $rows ) . '</tbody></table>' . vote_sources_line( $st, $srcs )
-			. ( vote_fact( $st, 'dates.reg_deadline' ) ? vote_rn( 'voter-registration', 'Missed a registration deadline?', 'What you can still do, state by state' ) : '' ) . '</section>';
+			. ( vote_fact( $st, 'dates.reg_deadline' ) && 'post' !== vote_phase() ? vote_rn( 'voter-registration', 'Missed a registration deadline?', 'What you can still do, state by state' ) : '' ) . '</section>';
 	}
 
 	// A section is a list of facts; each adds its source to the section's line.
@@ -468,9 +468,14 @@ function vote_guide( $st ) {
 		return array( '<section class="guide" aria-labelledby="' . $id . '">' . $h( $id, $heading ) . $body, $srcs );
 	};
 
+	// After Election Day (docs/post-election-release.md) the guide keeps what can still apply: the past
+	// dates above, fixing and tracking a mail ballot, and the state's sticker tradition. Where to vote, ID
+	// and the rules at the polls are instructions for a vote that's over.
+	$post = 'post' === vote_phase();
+
 	// Where to vote.
-	$w = $section( 'where-h', t( 'mail' === ( $st['kind'] ?? '' ) && vote_verified( $st ) ? 'Drop Boxes and Voting Centers' : 'Where You Can Vote' ), array( 'how.in_person', 'where.rule', 'how.first_time' ) );
-	if ( $w || $loc ) {
+	$w = $post ? '' : $section( 'where-h', t( 'mail' === ( $st['kind'] ?? '' ) && vote_verified( $st ) ? 'Drop Boxes and Voting Centers' : 'Where You Can Vote' ), array( 'how.in_person', 'where.rule', 'how.first_time' ) );
+	if ( ! $post && ( $w || $loc ) ) {
 		list( $html, $srcs ) = $w ?: array( '<section class="guide" aria-labelledby="where-h">' . $h( 'where-h', t( 'mail' === ( $st['kind'] ?? '' ) && vote_verified( $st ) ? 'Drop Boxes and Voting Centers' : 'Where You Can Vote' ) ), array() );
 		// The locator card sits in the summary box above; here only the county offices link.
 		$offices = vote_fact( $st, 'where.local_offices_url' );
@@ -482,29 +487,29 @@ function vote_guide( $st ) {
 	$ids = vote_facts( $st['abbr'] )['id.accepted'] ?? null;
 	$list = $ids ? ( vote_es() ? $ids['es'] : $ids['en'] ) : array();
 	$id = ''; $srcs = array();
-	if ( $list ) {
+	if ( $list && ! $post ) {
 		$id .= '<p>' . vote_e( t( 'Bring one of these:' ) ) . '</p><ul class="guide__list">';
 		foreach ( $list as $item ) { $id .= '<li>' . vote_e( $item ) . '</li>'; }
 		$id .= '</ul>'; $srcs[] = $ids['src'];
 	}
-	foreach ( array( 'id.expired', 'id.without' ) as $k ) { $f = vote_fact( $st, $k ); if ( $f ) { $id .= '<p>' . vote_e( $f['text'] ) . '</p>'; $srcs[] = $f['src']; } }
+	foreach ( $post ? array() : array( 'id.expired', 'id.without' ) as $k ) { $f = vote_fact( $st, $k ); if ( $f ) { $id .= '<p>' . vote_e( $f['text'] ) . '</p>'; $srcs[] = $f['src']; } }
 	if ( $id ) { $out .= '<section class="guide" aria-labelledby="id-h">' . $h( 'id-h', t( 'What ID to Bring' ) ) . $id . vote_sources_line( $st, $srcs ) . vote_rn( 'voter-id-laws', 'Forgot your ID, or want to see how other states compare?', 'Voter ID rules in every state' ) . '</section>'; }
 
 	// Voting by mail: who qualifies (a list where the state has conditions), then the rest.
 	$mail = ''; $srcs = array();
-	$who = vote_fact( $st, 'mail.who' );
+	$who = $post ? null : vote_fact( $st, 'mail.who' );
 	if ( $who ) { $mail .= '<p>' . vote_e( $who['text'] ) . '</p>'; $srcs[] = $who['src']; }
-	$wl = vote_facts( $st['abbr'] )['mail.who_list'] ?? null;
+	$wl = $post ? null : ( vote_facts( $st['abbr'] )['mail.who_list'] ?? null );
 	$wlist = $wl ? ( vote_es() ? $wl['es'] : $wl['en'] ) : array();
 	if ( $wlist ) { $mail .= '<ul class="guide__list guide__list--one">'; foreach ( $wlist as $item ) { $mail .= '<li>' . vote_e( $item ) . '</li>'; } $mail .= '</ul>'; $srcs[] = $wl['src']; }
-	foreach ( array( 'mail.witness', 'mail.dropbox', 'mail.cure' ) as $k ) { $f = vote_fact( $st, $k ); if ( $f ) { $mail .= '<p>' . vote_e( $f['text'] ) . '</p>'; $srcs[] = $f['src']; } }
+	foreach ( $post ? array( 'mail.cure' ) : array( 'mail.witness', 'mail.dropbox', 'mail.cure' ) as $k ) { $f = vote_fact( $st, $k ); if ( $f ) { $mail .= '<p>' . vote_e( $f['text'] ) . '</p>'; $srcs[] = $f['src']; } }
 	$track = vote_fact( $st, 'mail.track_url' );
 	// The tracker joins a section that has something to say; on its own it waits for the Election Day banner.
 	if ( $track && $mail ) { $mail .= '<p class="guide__more"><a href="' . vote_e( $track ) . '" target="_blank" rel="noopener">' . vote_e( t( 'Track your %s mail ballot', $name ) ) . '</a></p>'; }
-	if ( $mail ) { $out .= '<section class="guide" aria-labelledby="mail-h">' . $h( 'mail-h', t( 'mail' === ( $st['kind'] ?? '' ) && vote_verified( $st ) ? 'Returning Your Ballot' : 'Who Can Vote by Mail' ) ) . $mail . vote_sources_line( $st, $srcs ) . vote_rn( 'mail-in-voting', 'Why mail ballots get rejected, and how to fix a signature problem:', 'the mail voting guide' ) . '</section>'; }
+	if ( $mail ) { $out .= '<section class="guide" aria-labelledby="mail-h">' . $h( 'mail-h', t( $post ? 'Check or Fix Your Mail Ballot' : ( 'mail' === ( $st['kind'] ?? '' ) && vote_verified( $st ) ? 'Returning Your Ballot' : 'Who Can Vote by Mail' ) ) ) . $mail . vote_sources_line( $st, $srcs ) . vote_rn( 'mail-in-voting', 'Why mail ballots get rejected, and how to fix a signature problem:', 'the mail voting guide' ) . '</section>'; }
 
 	// Rules at the polls, then the state's own sticker tradition, which leads back to the maker.
-	$p = $section( 'polls-h', t( 'Phones, Photos, and Campaign Gear' ), array( 'polls_rules.gear', 'polls_rules.phone', 'polls_rules.line' ) );
+	$p = $post ? '' : $section( 'polls-h', t( 'Phones, Photos, and Campaign Gear' ), array( 'polls_rules.gear', 'polls_rules.phone', 'polls_rules.line' ) );
 	if ( $p ) { $out .= $p[0] . vote_sources_line( $st, $p[1] ) . '</section>'; }
 	// The tradition, then where to get a sticker when you vote early or by mail (October 23). Each answer
 	// names the county or city it comes from; a state gets one only with an official source for it.
@@ -1182,7 +1187,7 @@ $vote_ld = array(
 			</div>
 		</div>
 
-		<h2 class="display-h before-h" id="before-h"><?php echo vote_e( t( $vote_st && vote_verified( $vote_st ) && 'mail' === $vote_st['kind'] ? 'How to Get Your Ballot In' : 'When, Where, and What to Bring' ) ); ?></h2>
+		<h2 class="display-h before-h" id="before-h"><?php echo vote_e( t( 'post' === vote_phase() ? 'Official Election Information' : ( $vote_st && vote_verified( $vote_st ) && 'mail' === $vote_st['kind'] ? 'How to Get Your Ballot In' : 'When, Where, and What to Bring' ) ) ); ?></h2>
 		<section class="info" id="info" aria-live="polite" aria-labelledby="before-h"><?php echo $vote_st ? vote_info( $vote_st ) : ''; ?></section>
 		<?php echo $vote_st ? vote_guide( $vote_st ) : ''; ?>
 	</div>
