@@ -210,7 +210,7 @@ function vote_meta( $st ) {
 	$name = vote_name( $st );
 	$kind = vote_verified( $st ) ? ( $st['kind'] ?? 'none' ) : 'unchecked';
 	$n = count( vote_files( $st['abbr'] ) );
-	$save = $n ? 'Save a ready-made I voted sticker or make your own' : 'Make your own I voted or vote sticker';
+	$save = $n ? ( vote_early_now( $st ) ? 'Save a ready-made I voted or I voted early sticker, or make your own' : 'Save a ready-made I voted sticker or make your own' ) : 'Make your own I voted or vote sticker';
 	// The lead says what to do and the one date that matters (Garrett's review, October 21): no counts, no repeats.
 	$grab = $n ? 'Grab a ready-made sticker or make your own, then set it as your profile picture.' : 'Make your sticker, then set it as your profile picture.';
 	// After Election Day the page is about the sticker (docs/post-election-release.md). The title keeps the
@@ -609,6 +609,27 @@ function vote_countdown( $class = '' ) {
 // state page whose verified early voting is still open or ahead. Same markup and footer script as the
 // Election Day countdown; data-hide-after hides the whole line once the visitor's date passes the end,
 // and the next daily build drops it (the state's kind turns 'ended').
+// Early voting open today in a verified in-person state (before Election Day). Pages say "I voted early"
+// in the gallery heading and description only then (visibility loop, Oct 26: "i voted early" + state).
+function vote_early_now( $st ) {
+	return $st && 'pre' === vote_phase() && vote_verified( $st ) && 'in-person' === ( $st['kind'] ?? '' )
+		&& ! empty( $st['start'] ) && ! empty( $st['end'] ) && $st['start'] <= vote_today() && vote_today() <= $st['end'];
+}
+// One line under the state gallery linking the home page's classic set (Oct 26, Garrett: anchors, not a
+// strip of images, so the state's own stickers stay first). The wording varies by state so the links
+// read naturally rather than as one repeated phrase.
+function vote_classic_link( $st ) {
+	if ( ! $st || ! is_file( __DIR__ . '/assets/classic/classic.json' ) ) { return ''; }
+	$anchors = vote_es()
+		? array( 'los stickers clásicos de Yo voté', 'los stickers de Yo voté en rojo, blanco y azul', 'los stickers de Yo voté para cualquier estado' )
+		: array( 'classic I voted stickers', 'red, white and blue I voted stickers', 'I voted stickers for any state' );
+	static $order = null;
+	if ( null === $order ) { $order = array_flip( array_keys( vote_states() ) ); }
+	$a = $anchors[ ( $order[ $st['abbr'] ] ?? 0 ) % count( $anchors ) ];
+	return '<p class="gallery__classic">' . vote_e( t( 'Prefer something traditional?' ) ) . ' <a href="' . vote_pbase() . '#ready-to-share">'
+		. vote_e( ( vote_es() ? 'Mira ' : 'See the ' ) . $a ) . '</a>.</p>';
+}
+
 function vote_early_countdown( $st ) {
 	if ( ! $st || 'post' === vote_phase() || ! vote_verified( $st ) || 'in-person' !== $st['kind'] || empty( $st['end'] ) || $st['end'] < vote_today() ) { return ''; }
 	$t = strtotime( $st['end'] );
@@ -1381,9 +1402,10 @@ $vote_ld = array(
 	<?php $vote_files = $vote_st ? vote_files( $vote_abbr ) : array(); ?>
 	<div id="maker"<?php echo $vote_st ? '' : ' hidden'; ?>>
 		<section class="gallery" id="gallery"<?php echo $vote_files ? '' : ' hidden'; ?> aria-labelledby="gallery-h">
-			<h2 id="gallery-h" class="display-h"><?php echo vote_e( $vote_st ? t( 'Pick a %s Sticker', vote_lname( $vote_st ) ) : t( 'Ready-Made Stickers' ) ); ?></h2>
+			<h2 id="gallery-h" class="display-h"><?php echo vote_e( $vote_st ? ( vote_early_now( $vote_st ) ? t( '%s I Voted and I Voted Early Stickers', vote_lname( $vote_st ) ) : t( preg_match( '/^[AEIOU]/', vote_lname( $vote_st ) ) ? 'Pick an %s Sticker' : 'Pick a %s Sticker', vote_lname( $vote_st ) ) ) : t( 'Ready-Made Stickers' ) ); ?></h2>
 			<p><?php echo vote_e( t( 'Tap a sticker to save it. The words stay inside the circle, so nothing gets cut off in your profile photo.' ) ); ?></p>
 			<div class="grid grid--gallery" id="gallery-grid" style="--cols: <?php echo vote_cols( count( $vote_files ) ); ?>"><?php foreach ( $vote_files as $i => $src ) : ?><a class="tile" href="<?php echo vote_e( $src ); ?>" download="vote-<?php echo strtolower( $vote_abbr ) . '-' . ( $i + 1 ); ?>.jpg"><img src="<?php echo vote_e( $src ); ?>" alt="<?php echo vote_e( vote_alt( $src, $vote_st, $i ) ); ?>" width="1080" height="1080" loading="lazy"></a><?php endforeach; ?></div>
+			<?php echo vote_classic_link( $vote_st ); ?>
 		</section>
 
 		<?php $vote_maker_first = ! $vote_files; ?>
@@ -1469,30 +1491,6 @@ $vote_ld = array(
 	$vote_prev = false !== $vote_pos && $vote_pos > 0 ? $vote_keys[ $vote_pos - 1 ] : '';
 	$vote_next = false !== $vote_pos && $vote_pos < count( $vote_keys ) - 1 ? $vote_keys[ $vote_pos + 1 ] : '';
 	?>
-	<?php
-	// Classic stickers on state pages (October 26, Garrett: national phrases rank on state pages, so link the
-	// home page's classic set from each one). Three of the set in the page's language, each linking to it;
-	// the third message fits the state: I voted early only with verified in-person early voting, I voted by
-	// mail only in verified all-mail states, else Future voter. Home page section: #ready-to-share.
-	$vote_classic_st = array();
-	if ( $vote_st && is_file( __DIR__ . '/assets/classic/classic.json' ) ) {
-		$es = vote_es();
-		$third = vote_verified( $vote_st ) && 'in-person' === ( $vote_st['kind'] ?? '' ) ? ( $es ? 'yovotetemprano' : 'voted' )
-			: ( vote_verified( $vote_st ) && 'mail' === ( $vote_st['kind'] ?? '' ) ? ( $es ? 'yovotecorreo' : 'mailed' ) : ( $es ? 'yotambien' : 'futurevoter' ) );
-		$want = array( array( 'cring', $es ? 'yovote' : 'ivoted' ), array( 'cflag', $es ? 'yovotehoy' : 'ivotedtoday' ), array( 'cband', $third ) );
-		$all = json_decode( (string) file_get_contents( __DIR__ . '/assets/classic/classic.json' ), true );
-		foreach ( $want as $w ) { foreach ( $all as $c ) { if ( $c['layout'] === $w[0] && $c['headline'] === $w[1] ) { $vote_classic_st[] = $c; } } }
-	}
-	if ( $vote_classic_st ) : ?>
-	<section class="classic-strip" aria-labelledby="classic-strip-h">
-		<h2 id="classic-strip-h"><?php echo vote_e( t( 'Classic I Voted Stickers' ) ); ?></h2>
-		<p><?php echo vote_e( t( 'Prefer the traditional red, white and blue? These work in any state.' ) ); ?></p>
-		<div class="classic-strip__row">
-			<?php foreach ( $vote_classic_st as $c ) : ?><a class="pick pick--classic" href="<?php echo vote_pbase(); ?>#ready-to-share"><img src="<?php echo vote_v( "assets/classic/{$c['stem']}.png" ); ?>" alt="<?php echo vote_e( $c['alt'] ); ?>" width="1080" height="1080" loading="lazy"></a><?php endforeach; ?>
-		</div>
-		<p class="showcase__more"><a href="<?php echo vote_pbase(); ?>#ready-to-share"><?php echo vote_e( t( 'See all 18 classic I voted stickers' ) ); ?></a></p>
-	</section>
-	<?php endif; ?>
 	<div class="discover">
 	<?php if ( $vote_st ) : ?><div class="discover__find"><?php echo vote_finder( 'Looking for another state?', 'Type a state name' ); ?></div><?php endif; ?>
 	<?php if ( $vote_same && $vote_same_h ) : ?>

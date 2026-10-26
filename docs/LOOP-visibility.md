@@ -29,7 +29,7 @@ save and event QA; official sources only; Spanish per `docs/spanish-style.md`. O
 | # | Item | Evidence | Status |
 |---|---|---|---|
 | 1 | Classic I Voted Stickers on the home page | "i voted sticker" 6,300 a month, KD 1, home not visible for it; "i voted early sticker" split over 23 pages | Done Oct 26 (live) |
-| 2 | Three classic stickers on every state page, linking to the home set ("See all 18 classic I voted stickers"); the third fits the state's rules | National queries land on state pages (Texas takes 79 of 199 "i voted early sticker" impressions); one consistent link tells Google which page is the national one | Built Oct 26, ships with the next push |
+| 2 | One line under each state gallery linking the home set, with three anchor wordings spread evenly (classic / red, white and blue / for any state). Replaced the three-sticker strip the same evening: Garrett felt it competed with the state's own stickers | National queries land on state pages (Texas takes 79 of 199 "i voted early sticker" impressions); one consistent link tells Google which page is the national one | Built Oct 26, ships with the next push |
 | 3 | Home page FAQ: "Where can I get an I voted sticker?" (polling places hand them out after you vote; voted by mail or missed one, save a free one here) | "how to get i voted sticker" pos 9.3 and "where can i get an i voted sticker" pos 10.7 land on Oregon and Washington | Built Oct 26 (home page only, EN and ES), ships with the next push |
 | 4 | Sticker stories for the eight states without one: AR, AZ, DE, IN, ME, NE, NJ, WI (state or county sources only; NE and IL need a person to read them) | "[state] i voted sticker" is the top query on every state page; stories are what the strongest pages have and these lack | Open |
 | 5 | Georgia: 15 impressions at position 7.9 for a state of 11 million. Read Georgia's queries; the Secretary of State released a new 2026 sticker, so make sure the page names it and links the announcement | Lowest impressions per voter of any large state | Open |
@@ -46,3 +46,11 @@ save and event QA; official sources only; Spanish per `docs/spanish-style.md`. O
   Spanish Oregon (desktop) checked. Not pushed: today's pushes are done; it ships with the morning push.
 - **October 26, evening.** Item 3: home page FAQ "Where can I get an I voted sticker?" in English and
   Spanish, home page only (state pages unchanged). Facts, SEO, Spanish and stale-text QA pass. Not pushed.
+- **October 26, late.** Garrett's search for Texas "I voted early" showed the Texas page on page 2. Search
+  Console has Texas at 7.2 on average for "i voted early sticker" (best 6, worst 8) and no impressions
+  for "i voted early texas" without "sticker", so his search was likely a different, broader query, and
+  personal results vary by location. Texas "early" impressions fell from 21 a day to 7 by Oct 25, as
+  early voting runs out Oct 30. Change: while a state's early voting is open, its gallery heading reads
+  "Texas I Voted and I Voted Early Stickers" and the description says "I voted or I voted early sticker";
+  both revert when early voting ends (Nov 4 preview checked). Also fixed "Pick a Oregon Sticker" (an
+  before vowels). Item 2 became a text link (above). QA: SEO, Spanish pass.

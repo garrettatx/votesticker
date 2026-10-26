@@ -236,6 +236,7 @@ return array(
 		'checked %s.' => 'consultada el %s.',
 		// Garrett's Texas review (October 21): headings the way people search, one source line per section.
 		'Pick a %s Sticker' => 'Elige un sticker de %s',
+		'Pick an %s Sticker' => 'Elige un sticker de %s',
 		'Tap a sticker to save it. The words stay inside the circle, so nothing gets cut off in your profile photo.' => 'Toca un sticker para guardarlo. El texto queda dentro del círculo, así que nada se corta en tu foto de perfil.',
 		'%s vote sticker, ready-made design %s' => 'Sticker para votar de %s, diseño %s',
 		'When, Where, and What to Bring' => 'Cuándo, dónde y qué llevar',
@@ -498,8 +499,8 @@ return array(
 	'(download PNG)' => '(descargar PNG)',
 	'Where can I get an I voted sticker?' => '¿Dónde consigo un sticker de Yo voté?',
 	'Most polling places hand one out after you vote. Each state or county picks its own design, so they vary from place to place. Voted by mail, or didn’t get one? Save a free digital sticker here: a classic one above, or one made for your state.' => 'En la mayoría de los lugares de votación te dan uno después de votar. Cada estado o condado elige su propio diseño, así que cambian de un lugar a otro. ¿Votaste por correo o no te dieron uno? Guarda gratis un sticker digital aquí: uno clásico de arriba o uno hecho para tu estado.',
-	'Prefer the traditional red, white and blue? These work in any state.' => '¿Prefieres el clásico rojo, blanco y azul? Estos sirven en cualquier estado.',
-	'See all 18 classic I voted stickers' => 'Ver los 18 stickers clásicos de Yo voté',
+	'Prefer something traditional?' => '¿Prefieres algo tradicional?',
+	'%s I Voted and I Voted Early Stickers' => 'Stickers de Ya voté y Ya voté temprano en %s',
 	'Show %d more stickers' => 'Mostrar %d stickers más',
 	'Want your state’s name and dates on it?' => '¿Lo quieres con el nombre y las fechas de tu estado?',
 	),
