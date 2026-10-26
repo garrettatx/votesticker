@@ -44,7 +44,7 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
 | # | Item | Status |
 |---|---|---|
 | 9 | Between-elections mode built behind a phase flag, ready for the Dec 1 review | Built Oct 25 (off) |
-| 10 | Sticker collection and 2026 archive (`docs/sticker-archive-spec.md`): data first | |
+| 10 | Sticker collection and 2026 archive (`docs/sticker-archive-spec.md`): data first | Data built Oct 25; review of office records open |
 | 11 | Descriptive image filenames with 301s from the old URLs | |
 | 12 | Snohomish County as a second Washington sticker source | |
 | 13 | Privacy and accessibility section on About | |
@@ -93,3 +93,11 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
   `VOTE_BETWEEN=1` keeps it on for the daily runs; the phase check expects post. Fact QA allows a page down to the
   official link in this mode. For the Dec 1 review: some `officialUrl` links point to 2026-specific pages (WI goes to
   in-person absentee voting); each state needs an evergreen official link before the switch.
+- **Oct 25, item 10 (data):** `build/sticker_collection.py` writes `build/sticker-collection.json`: 477 VoteSticker
+  designs (168 already voted, 27 planning, 282 dated reminders; placement follows the same test as the gallery
+  after Election Day) and 40 election office records built from the verified sticker facts (story plus early-voting
+  and mail-packet pickup, each with source, quote and checked date). Designer, office, selection, year and image
+  permission are blank until filled in by hand in `build/sticker-offices.json`; every record says no permission and
+  no image. `--check` fails on unknown hand fields, hand records with no verified facts, and permission without its
+  grant (mutation-tested). Not used by any page yet. Next: review the 40 office records against the spec's 13-state
+  starting table (MI, ND, KY, NH, AL, MT, CO not yet matched to a design record).
