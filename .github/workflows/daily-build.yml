@@ -25,6 +25,11 @@ on:
         type: boolean
         required: false
         default: false
+      between:
+        description: 'Build between-elections pages (VOTE_BETWEEN=1). To keep it on for the daily runs, set the repository variable VOTE_BETWEEN to 1'
+        type: boolean
+        required: false
+        default: false
 
 permissions:
   contents: write   # commit build/lastmod.json and build/indexnow-sent.json back
@@ -42,6 +47,8 @@ jobs:
       # index.php vote_today(): the post-election run builds as November 4 by name, not by clock.
       VOTE_TODAY: ${{ github.event.inputs.vote_today || (github.event.schedule == '30 6 4 11 *' && '2026-11-04') || '' }}
       DRY_RUN: ${{ github.event.inputs.dry_run == 'true' }}
+      # Between elections (index.php vote_between()): off until the December 1 review turns it on.
+      VOTE_BETWEEN: ${{ (github.event.inputs.between == 'true' && '1') || vars.VOTE_BETWEEN || '' }}
     steps:
       - uses: actions/checkout@v4
 
@@ -74,7 +81,7 @@ jobs:
         run: |
           # The phase index.php vote_phase() gives VOTE_TODAY (or today), and what the Texas page says.
           d="${VOTE_TODAY:-$(date +%F)}"
-          if [[ "$d" > "2026-11-03" ]]; then want=post; elif [[ "$d" > "2026-11-01" ]]; then want=eday; else want=pre; fi
+          if [ "$VOTE_BETWEEN" = "1" ] || [[ "$d" > "2026-11-03" ]]; then want=post; elif [[ "$d" > "2026-11-01" ]]; then want=eday; else want=pre; fi
           got=$(grep -o 'window.VOTE_PHASE = "[a-z]*"' dist/texas/index.html | grep -o '"[a-z]*"' | tr -d '"')
           echo "Built as $d: phase $got (expected $want)"
           [ "$got" = "$want" ]

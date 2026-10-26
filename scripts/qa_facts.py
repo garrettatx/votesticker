@@ -10,6 +10,7 @@ dashes in the guide. States without a facts file must render no guide.
 """
 import html
 import json
+import os
 import re
 import subprocess
 import sys
@@ -56,7 +57,8 @@ for abbr, slug in slugs.items():
                 fails.append(f'{lang}{slug}: renders a guide without a facts file')
             continue
         checked += 1
-        if not guide:
+        # Between elections (VOTE_BETWEEN=1) a state can be down to the summary box's official link.
+        if not guide and os.environ.get('VOTE_BETWEEN') != '1':
             fails.append(f'{lang}{slug}: facts file but no guide sections')
         g = ''.join(guide)
         if '—' in g:

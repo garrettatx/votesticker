@@ -43,7 +43,7 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
 
 | # | Item | Status |
 |---|---|---|
-| 9 | Between-elections mode built behind a phase flag, ready for the Dec 1 review | |
+| 9 | Between-elections mode built behind a phase flag, ready for the Dec 1 review | Built Oct 25 (off) |
 | 10 | Sticker collection and 2026 archive (`docs/sticker-archive-spec.md`): data first | |
 | 11 | Descriptive image filenames with 301s from the old URLs | |
 | 12 | Snohomish County as a second Washington sticker source | |
@@ -86,3 +86,10 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
   section heading becomes "Official Election Information". Image sitemap on Nov 4 lists only the shown stickers. Left as
   is: after-wording inside the past-dates table (AL "Plan to vote...") and sticker-history answers about early voting.
 - **Oct 25, item 8:** Already in place: WA ribbon "DROP BOX BY 8 P.M. NOV 3" and mail-state `dateLineMail` in the maker.
+- **Oct 25, item 9:** Between-elections mode behind `VOTE_BETWEEN=1` (off). It keeps the post pages and drops the 2026
+  past-dates table, the mail ballot fix and tracker section, the tracker line in the summary box, and the tracking,
+  unsigned-envelope and provisional FAQ answers. Intro reads "Free Texas I voted stickers..." and the home H1 "Free I
+  voted stickers for every state" (ES too). Workflow: `between` dispatch input, and the repository variable
+  `VOTE_BETWEEN=1` keeps it on for the daily runs; the phase check expects post. Fact QA allows a page down to the
+  official link in this mode. For the Dec 1 review: some `officialUrl` links point to 2026-specific pages (WI goes to
+  in-person absentee voting); each state needs an evergreen official link before the switch.

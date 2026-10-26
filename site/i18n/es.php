@@ -118,6 +118,8 @@ return array(
 		'Official election information' => 'Información electoral oficial',
 		'Official Election Information' => 'Información electoral oficial',
 		'Check or Fix Your Mail Ballot' => 'Revisa o corrige tu boleta por correo',
+		'Free I voted stickers' => 'Stickers de Ya voté, gratis',
+		'Free I voted stickers for every state' => 'Stickers de Ya voté gratis para cada estado',
 		'Already returned it? Track your ballot.' => '¿Ya la devolviste? Sigue tu boleta.',
 		'Already voted? Get your sticker.' => '¿Ya votaste? Consigue tu sticker.',
 		'November 3, 2026 · Election Day' => '3 de noviembre de 2026 · Día de las Elecciones',
