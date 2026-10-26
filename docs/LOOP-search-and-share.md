@@ -90,3 +90,6 @@ Measure each change in Search Console from its recrawl date.
   a "proposed" folder), NM (no date), WV (guidance, not statute), NE, NH, OK, TN, ID, WY (no official
   statement either way). The Spanish check caught "Ballot by Mail Tracker" in the TX text; reworded.
   Facts, Spanish and SEO QA pass; stale scan at 27.
+- **Oct 26, push 4 (14:01 CDT), at Garrett's request:** the homepage search changes, planning link,
+  round cut-out, Kansas mail deadline and 15 states' mail-ballot fixes, after card (81,120 cards),
+  save, event, facts, Spanish and SEO QA. Build dispatched by hand once so it's live today.
