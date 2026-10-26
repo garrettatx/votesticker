@@ -207,8 +207,12 @@
    "notes": "The only device rule found is W. Va. Code 3-4A-23 (no recording device in the voting booth), already in the existing selfie FAQ."
   },
   "line": {
-   "status": "missing",
-   "notes": "W. Va. Code 3-1-31 sets 6:30 a.m. to 7:30 p.m. but says nothing about voters in line at closing; no SOS page found that does."
+   "en": "If you're in line when the polls close, stay in line. You can still vote.",
+   "es": "Si estás en la fila cuando cierran las casillas, no te salgas. Todavía puedes votar.",
+   "src": "https://code.wvlegislature.gov/3-1-32/",
+   "checked": "2026-10-26",
+   "quote": "The election commissioner shall permit those electors to vote who are present at the polling place prior to the hour specified for the closing of the polls: Provided, That at that time they are in a line awaiting their turn to vote within the voting room itself or, if the line extends outside of the voting room itself, within that line.",
+   "status": "verified"
   }
  },
  "sticker": {
@@ -231,7 +235,12 @@
    "status": "verified"
   },
   "line": {
-   "status": "missing"
+   "en": "You can still vote. Anyone in line at the polling place when the polls close gets to vote, even if the line runs outside.",
+   "es": "Igual puedes votar. Toda persona que esté en la fila del lugar de votación cuando cierran las casillas puede votar, aunque la fila llegue hasta afuera.",
+   "src": "https://code.wvlegislature.gov/3-1-32/",
+   "checked": "2026-10-26",
+   "quote": "The election commissioner shall permit those electors to vote who are present at the polling place prior to the hour specified for the closing of the polls: Provided, That at that time they are in a line awaiting their turn to vote within the voting room itself or, if the line extends outside of the voting room itself, within that line.",
+   "status": "verified"
   },
   "track": {
    "en": "Look up your absentee ballot's status with the Secretary of State's absentee ballot tracker.",

@@ -20,7 +20,7 @@ edit files, and every quote is re-read before it goes on a page.
 
 | # | Item | Why | Status |
 |---|---|---|---|
-| 1 | **"In line when polls close" for the 19 states without it** (`polls_rules.line`: DC FL GA IA IL MD MT NC ND NH NM SD TX UT VA VT WA WV WY) | The most useful Election Day sentence, and missing for TX, FL, GA and NC | |
+| 1 | **"In line when polls close" for the 19 states without it** (`polls_rules.line`: DC FL GA IA IL MD MT NC ND NH NM SD TX UT VA VT WA WV WY) | The most useful Election Day sentence, and missing for TX, FL, GA and NC | Done Oct 26: all 19 |
 | 2 | **Keyboard-only walkthrough of the maker and state pages** | About now says the controls work with a keyboard; prove it or fix it | Done Oct 26: passes, no change |
 | 3 | **Sticker story for the 18 states without one** (`sticker.tradition`: AR AZ CA DC DE IA IL IN MA ME NE NJ NV PA SC TX VA WI), official sources only | The sticker is the brand, and the big states have nothing | |
 | 4 | **Tilt control** (Straight, Left, Right) under the swatches; `render` already takes `tilt` | Cheap design range from the October 22 work | Done Oct 26 |
@@ -58,3 +58,16 @@ edit files, and every quote is re-read before it goes on a page.
   line height. Guide and FAQ prose is now 17 px at 1.6 on every screen, and paragraphs stop at 34rem:
   the longest Texas paragraph went from about 87 characters a line at 1280 px to about 74 (49 on a
   390 px phone). Source lines keep their small size. SEO QA passes.
+- **Oct 26, item 1 (in line when polls close).** All 19 now have the rule, EN and ES, from official
+  sources (statutes for most; georgia.gov, the ISBE precinct manual, the Montana SOS directive, the NM
+  SOS bill of rights, the WA SOS voting-center guidance and the WY SOS release). Each quote was
+  re-fetched with curl and matched word for word (DC from the downloaded DCMR 3-703 rule file, since
+  the regulations site serves it through a form). Wording follows each source's scope: "on the
+  premises" in Iowa, "inside or waiting to enter" in Texas, voting centers and drop boxes in
+  Washington and Utah, the registration line in New Hampshire, "people who arrive later can't" only
+  where the source says so (IL, ND, VA). Times only where the source gives them. The FAQ answer "What
+  if I am in line when the polls close?" was also missing for DC, IA, IL, MD, NC, NH, TX, WA and WV,
+  and comes from the same sources. Caveats: Illinois uses the 2025 manual (the 2026 URL is a 404);
+  Montana's directive dates from 2008 (updated 2016), so the page leaves out its late-registration
+  clause. New source names for DC, NM and TX. Facts, Spanish and SEO QA pass; stale scan at 27. The
+  rules leave the page from Nov 4 with the rest of the polls section.

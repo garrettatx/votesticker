@@ -156,8 +156,12 @@
    "notes": "RSA 659:45-a bars photos inside the guardrail that capture another voter or another voter's ballot. Left out because it sits next to the ballot-selfie question, which is deliberately blank for New Hampshire (RSA 659:35 vs. Rideout v. Gardner)."
   },
   "line": {
-   "status": "missing",
-   "notes": "RSA 654:7-a II only covers people waiting to register at closing time ('shall be allowed to vote if determined to be qualified to register'); no general in-line rule was found in RSA 659."
+   "en": "If you're in line when the polls close, including the line to register, stay in it. You can still register and vote.",
+   "es": "Si estás en la fila cuando cierran las casillas, incluida la fila para registrarte, no te salgas. Todavía puedes registrarte y votar.",
+   "src": "https://gc.nh.gov/rsa/html/LXIII/659/659-12.htm",
+   "checked": "2026-10-26",
+   "quote": "At the time set for closing the polls to voting, if a line of voters waiting to check in or of people seeking to register to vote and then vote exists, all people who join that line by the moment when the polls close to voting and all who are in line shall be permitted to apply for registration and, if registered, to vote.",
+   "status": "verified"
   }
  },
  "sticker": {
@@ -175,7 +179,12 @@
    "status": "missing"
   },
   "line": {
-   "status": "missing"
+   "en": "You can still vote. Everyone in line when the polls close, including the line to register, gets to register if needed and vote.",
+   "es": "Igual puedes votar. Toda persona que esté en la fila cuando cierran las casillas, incluida la fila para registrarse, puede registrarse si hace falta y votar.",
+   "src": "https://gc.nh.gov/rsa/html/LXIII/659/659-12.htm",
+   "checked": "2026-10-26",
+   "quote": "At the time set for closing the polls to voting, if a line of voters waiting to check in or of people seeking to register to vote and then vote exists, all people who join that line by the moment when the polls close to voting and all who are in line shall be permitted to apply for registration and, if registered, to vote.",
+   "status": "verified"
   },
   "track": {
    "status": "missing"

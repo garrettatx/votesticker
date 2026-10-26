@@ -170,7 +170,12 @@
    "status": "verified"
   },
   "line": {
-   "status": "missing"
+   "en": "Inside or in line at your polling place at 7 p.m.? Stay. You can still vote.",
+   "es": "¿Estás adentro o en la fila de tu lugar de votación a las 7 p. m.? Quédate. Todavía puedes votar.",
+   "src": "https://tcss.legis.texas.gov/resources/EL/htm/EL.41.htm",
+   "checked": "2026-10-26",
+   "quote": "(a) A voter who has not voted before the time for closing the polls is entitled to vote after that time if the voter is inside or waiting to enter the polling place at 7 p.m.",
+   "status": "verified"
   }
  },
  "sticker": {
@@ -196,7 +201,12 @@
    "status": "verified"
   },
   "line": {
-   "status": "missing"
+   "en": "You can still vote. Anyone inside or waiting to enter their polling place at 7 p.m. gets to vote.",
+   "es": "Igual puedes votar. Toda persona que esté adentro o esperando para entrar a su lugar de votación a las 7 p. m. puede votar.",
+   "src": "https://tcss.legis.texas.gov/resources/EL/htm/EL.41.htm",
+   "checked": "2026-10-26",
+   "quote": "(a) A voter who has not voted before the time for closing the polls is entitled to vote after that time if the voter is inside or waiting to enter the polling place at 7 p.m.",
+   "status": "verified"
   },
   "track": {
    "status": "missing"
@@ -223,6 +233,10 @@
   "www.sos.texas.gov": {
    "en": "the Texas Secretary of State",
    "es": "la Secretaría de Estado de Texas"
+  },
+  "tcss.legis.texas.gov": {
+   "en": "the Texas Election Code",
+   "es": "el Código Electoral de Texas"
   }
  },
  "election_day": {

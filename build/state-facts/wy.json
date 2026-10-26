@@ -177,8 +177,12 @@
    "status": "missing"
   },
   "line": {
-   "status": "missing",
-   "notes": "Covered by faq.line."
+   "en": "Waiting to vote at 7 p.m.? Stay. You can still vote.",
+   "es": "¿Estás esperando para votar a las 7 p. m.? Quédate. Todavía puedes votar.",
+   "src": "https://sos.wyo.gov/Media/2026/SoS_Release_2026-08-18.pdf",
+   "checked": "2026-10-26",
+   "quote": "Any eligible elector present and waiting to vote at the polls at 7:00 p.m. shall be allowed to vote.",
+   "status": "verified"
   }
  },
  "sticker": {

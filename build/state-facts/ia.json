@@ -182,8 +182,12 @@
    "status": "verified"
   },
   "line": {
-   "status": "missing",
-   "notes": "Iowa Code 49.73 sets the 8 p.m. close but says nothing about voters in line; no SOS page found that states the in-line rule."
+   "en": "If you're at your precinct's polling place when it closes, stay. You can still vote.",
+   "es": "Si estás en el lugar de votación de tu distrito cuando cierra, quédate. Todavía puedes votar.",
+   "src": "https://www.legis.iowa.gov/docs/code/49.74.pdf",
+   "checked": "2026-10-26",
+   "quote": "Every voter who is on the premises of the voter's precinct polling place at the time the polling place is to be closed for any election shall be permitted to vote in that election.",
+   "status": "verified"
   }
  },
  "sticker": {
@@ -210,7 +214,12 @@
    "status": "verified"
   },
   "line": {
-   "status": "missing"
+   "en": "You can still vote. Every voter who is at their precinct's polling place when it closes gets to vote.",
+   "es": "Igual puedes votar. Toda persona que esté en el lugar de votación de su distrito cuando cierra puede votar.",
+   "src": "https://www.legis.iowa.gov/docs/code/49.74.pdf",
+   "checked": "2026-10-26",
+   "quote": "Every voter who is on the premises of the voter's precinct polling place at the time the polling place is to be closed for any election shall be permitted to vote in that election.",
+   "status": "verified"
   },
   "track": {
    "en": "Once your county auditor has your request, you can track your absentee ballot on the Secretary of State's Track Your Absentee Ballot page.",

@@ -15,6 +15,10 @@
   "dcboe.org": {
    "en": "the DC Board of Elections",
    "es": "la Junta de Elecciones de DC (Board of Elections)"
+  },
+  "dcregs.dc.gov": {
+   "en": "the DC Municipal Regulations",
+   "es": "el reglamento municipal de DC (DC Municipal Regulations)"
   }
  },
  "dates": {
@@ -123,8 +127,12 @@
    "status": "missing"
   },
   "line": {
-   "status": "missing",
-   "notes": "The D.C. Code sets polls at 7 a.m. to 8 p.m. (1-1001.10(b)(1)) but no in-line-at-closing rule was found in the sections read."
+   "en": "If you're in line at a vote center when the polls close, stay in line. You can still vote.",
+   "es": "Si estás en la fila de un centro de votación cuando cierran las casillas, no te salgas. Todavía puedes votar.",
+   "src": "https://dcregs.dc.gov/Common/DCMR/SectionList.aspx?SectionNumber=3-703",
+   "checked": "2026-10-26",
+   "quote": "All persons standing in line at a vote center at the close of polls shall be permitted to vote, if otherwise qualified.",
+   "status": "verified"
   }
  },
  "sticker": {
@@ -150,7 +158,12 @@
    "status": "verified"
   },
   "line": {
-   "status": "missing"
+   "en": "You can still vote. Anyone in line at a vote center when the polls close gets to vote.",
+   "es": "Igual puedes votar. Toda persona que esté en la fila de un centro de votación cuando cierran las casillas puede votar.",
+   "src": "https://dcregs.dc.gov/Common/DCMR/SectionList.aspx?SectionNumber=3-703",
+   "checked": "2026-10-26",
+   "quote": "All persons standing in line at a vote center at the close of polls shall be permitted to vote, if otherwise qualified.",
+   "status": "verified"
   },
   "track": {
    "en": "Track your mail-in ballot on the Board of Elections website, from the day it's mailed to you to when it's received and accepted.",

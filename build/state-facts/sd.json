@@ -159,8 +159,12 @@
    "status": "verified"
   },
   "line": {
-   "status": "missing",
-   "notes": "No in-line-at-closing rule found on sdsos.gov or in the statutes read."
+   "en": "If you're at your polling place, inside or outside, before the polls close, stay. You can still vote.",
+   "es": "Si estás en tu lugar de votación, adentro o afuera, antes de que cierren las casillas, quédate. Todavía puedes votar.",
+   "src": "https://sdlegislature.gov/api/Statutes/12-2-3.html",
+   "checked": "2026-10-26",
+   "quote": "However, no polling place may be closed at any election until all the voters who have presented themselves at the polling place inside or outside for the purpose of voting prior to the time of the closing of the polls have had time to cast their ballots.",
+   "status": "verified"
   }
  },
  "sticker": {

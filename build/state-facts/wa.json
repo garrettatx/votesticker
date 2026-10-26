@@ -135,7 +135,12 @@
    "status": "missing"
   },
   "line": {
-   "status": "missing"
+   "en": "In line at a voting center or ballot drop box at 8 p.m.? Stay in line. You can still vote and drop off your ballot.",
+   "es": "¿Estás en la fila de un centro de votación o de un buzón a las 8 p. m.? No te salgas. Todavía puedes votar y dejar tu boleta.",
+   "src": "https://www.sos.wa.gov/sites/default/files/2023-05/21-02%20voting%20centers%20and%20ballot%20deposit%20sites%20with%20chart.pdf",
+   "checked": "2026-10-26",
+   "quote": "Any voter who is in line at 8:00 p.m. may vote and deposit their ballot.",
+   "status": "verified"
   }
  },
  "sticker": {
@@ -165,7 +170,12 @@
    "status": "missing"
   },
   "line": {
-   "status": "missing"
+   "en": "You can still vote. Anyone in line at a voting center or ballot drop box at 8 p.m. can vote and drop off their ballot.",
+   "es": "Igual puedes votar. Toda persona que esté en la fila de un centro de votación o de un buzón a las 8 p. m. puede votar y dejar su boleta.",
+   "src": "https://www.sos.wa.gov/sites/default/files/2023-05/21-02%20voting%20centers%20and%20ballot%20deposit%20sites%20with%20chart.pdf",
+   "checked": "2026-10-26",
+   "quote": "Any voter who is in line at 8:00 p.m. may vote and deposit their ballot.",
+   "status": "verified"
   },
   "track": {
    "en": "Sign in to VoteWA.gov and check your ballot status, or text VOTE to 868392 for updates by text message.",

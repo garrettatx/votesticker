@@ -201,7 +201,12 @@
    "status": "verified"
   },
   "line": {
-   "status": "missing"
+   "en": "In line at your polling place at 7 p.m.? Stay in line. You can still vote; people who arrive later can't.",
+   "es": "¿Estás en la fila de tu lugar de votación a las 7 p. m.? No te salgas. Todavía puedes votar; quien llegue después ya no puede.",
+   "src": "https://law.lis.virginia.gov/vacode/title24.2/chapter6/section24.2-603/",
+   "checked": "2026-10-26",
+   "quote": "The officers of election shall list the names of all qualified voters in line before the polling place at 7:00 p.m. and permit those voters and no others to vote after 7:00 p.m.",
+   "status": "verified"
   }
  },
  "sticker": {

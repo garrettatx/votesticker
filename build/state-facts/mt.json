@@ -188,8 +188,12 @@
    "notes": "No phone or polling-place photo rule found on votemt.gov or sosmt.gov pages read. The ballot-selfie FAQ answer (COPP 2018 advisory opinion, a PDF) is already in faq_text.py and was not re-read."
   },
   "line": {
-   "status": "missing",
-   "notes": "No in-line-at-closing rule found in MCA 13-1-106 or on votemt.gov."
+   "en": "In line at 8 p.m. at your polling place or the election office? Stay in line. You can still vote.",
+   "es": "¿Estás en la fila a las 8 p. m. en tu lugar de votación o en la oficina electoral? No te salgas. Todavía puedes votar.",
+   "src": "https://sosmt.gov/Portals/142/Elections/Documents/Officials/DIR-4-08.pdf",
+   "checked": "2026-10-26",
+   "quote": "Any person in line at 8:00 p.m. at the polling place or at the election office or designated location must be allowed to stay in line and register and vote.",
+   "status": "verified"
   }
  },
  "sticker": {

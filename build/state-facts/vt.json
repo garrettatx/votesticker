@@ -165,8 +165,12 @@
    "notes": "No phone or photo rule found on the SOS voter pages or in 17 V.S.A. 2508; the existing FAQ also found no selfie provision."
   },
   "line": {
-   "status": "missing",
-   "notes": "Covered by faq.line."
+   "en": "If you're at the polling place when it closes and haven't voted yet, stay. The polls stay open long enough for you to vote.",
+   "es": "Si estás en el lugar de votación cuando cierra y todavía no has votado, quédate. Las casillas siguen abiertas el tiempo suficiente para que votes.",
+   "src": "https://legislature.vermont.gov/statutes/section/17/051/02561",
+   "checked": "2026-10-26",
+   "quote": "If at the hour of closing there are any qualified voters at the polling place desiring to vote, who have been unable to do so since appearing there, the polls shall be kept open long enough after the hour of closing to allow those present a reasonable opportunity to vote.",
+   "status": "verified"
   }
  },
  "sticker": {

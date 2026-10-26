@@ -191,7 +191,12 @@
    "status": "verified"
   },
   "line": {
-   "status": "missing"
+   "en": "If you're in line when the polls close, stay in line. You can still vote.",
+   "es": "Si estás en la fila cuando cierran las casillas, no te salgas. Todavía puedes votar.",
+   "src": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_163/GS_163-166.25.html",
+   "checked": "2026-10-26",
+   "quote": "If any voter is in line to vote at the time the polls are closed, that voter shall be permitted to vote.",
+   "status": "verified"
   }
  },
  "sticker": {
@@ -222,8 +227,12 @@
    "status": "verified"
   },
   "line": {
-   "status": "missing",
-   "notes": "Already in the polls FAQ answer ('If you're in line at 7:30 p.m., you can still vote')."
+   "en": "You can still vote. Anyone in line when the polls close gets to vote.",
+   "es": "Igual puedes votar. Toda persona que esté en la fila cuando cierran las casillas puede votar.",
+   "src": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_163/GS_163-166.25.html",
+   "checked": "2026-10-26",
+   "quote": "If any voter is in line to vote at the time the polls are closed, that voter shall be permitted to vote.",
+   "status": "verified"
   },
   "track": {
    "en": "Sign up for BallotTrax to follow your mail ballot from printed to accepted, or look it up in the Voter Search.",

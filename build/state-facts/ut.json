@@ -191,8 +191,12 @@
    "notes": "No phone-use rule found in 20A-3a-501 or 20A-3a-204. The ballot photo rule (20A-3a-504) is in the existing selfie FAQ."
   },
   "line": {
-   "status": "missing",
-   "notes": "Covered by faq.line."
+   "en": "In line at 8 p.m.? Stay in line. At a polling place you can still vote, and at a ballot drop box you can still drop off your sealed ballot.",
+   "es": "¿Estás en la fila a las 8 p. m.? No te salgas. En un lugar de votación todavía puedes votar, y en un buzón todavía puedes dejar tu boleta en su sobre cerrado.",
+   "src": "https://le.utah.gov/xcode/Title20A/Chapter3A/C20A-3a-S204_2025050720250507.html",
+   "checked": "2026-10-26",
+   "quote": "in line at a polling place, is allowed to vote.",
+   "status": "verified"
   }
  },
  "sticker": {

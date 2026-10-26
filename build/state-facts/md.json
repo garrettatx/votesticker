@@ -144,7 +144,12 @@
    "status": "verified"
   },
   "line": {
-   "status": "missing"
+   "en": "If you get to your polling place by closing time, stay. You can still vote.",
+   "es": "Si llegas a tu lugar de votación antes de la hora de cierre, quédate. Todavía puedes votar.",
+   "src": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gel&section=10-301&enactments=false",
+   "checked": "2026-10-26",
+   "quote": "(b) A voter who has appeared at a polling place by the closing hour to cast a ballot shall be allowed to vote.",
+   "status": "verified"
   }
  },
  "sticker": {
@@ -167,7 +172,12 @@
    "status": "verified"
   },
   "line": {
-   "status": "missing"
+   "en": "You can still vote. Anyone who gets to their polling place by closing time gets to vote.",
+   "es": "Igual puedes votar. Toda persona que llegue a su lugar de votación antes de la hora de cierre puede votar.",
+   "src": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gel&section=10-301&enactments=false",
+   "checked": "2026-10-26",
+   "quote": "(b) A voter who has appeared at a polling place by the closing hour to cast a ballot shall be allowed to vote.",
+   "status": "verified"
   },
   "track": {
    "en": "Use the Voter Look-up to see whether your local board got your request and where your mail-in ballot stands.",

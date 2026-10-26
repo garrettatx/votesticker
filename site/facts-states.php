@@ -1055,6 +1055,10 @@ return array(
 				'en' => 'the DC Board of Elections',
 				'es' => 'la Junta de Elecciones de DC (Board of Elections)',
 			),
+			'dcregs.dc.gov' => array(
+				'en' => 'the DC Municipal Regulations',
+				'es' => 'el reglamento municipal de DC (DC Municipal Regulations)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Missed the deadline? Register and vote the same day at any Vote Center during early voting or on Election Day. Bring proof of where you live, like a current government photo ID or a copy of a utility bill.',
@@ -1100,6 +1104,12 @@ return array(
 			'src' => 'https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.10',
 			'checked' => '2026-10-21',
 		),
+		'polls_rules.line' => array(
+			'en' => 'If you\'re in line at a vote center when the polls close, stay in line. You can still vote.',
+			'es' => 'Si estás en la fila de un centro de votación cuando cierran las casillas, no te salgas. Todavía puedes votar.',
+			'src' => 'https://dcregs.dc.gov/Common/DCMR/SectionList.aspx?SectionNumber=3-703',
+			'checked' => '2026-10-26',
+		),
 		'sticker.mail' => array(
 			'en' => 'Check your mail ballot packet. The DC Board of Elections lists an instruction sheet with an "I Voted" sticker as one of the items it should have.',
 			'es' => 'Revisa tu paquete de boleta por correo. La Junta de Elecciones de DC incluye una hoja de instrucciones con un sticker de "I Voted" entre los artículos que debe traer.',
@@ -1117,6 +1127,12 @@ return array(
 			'es' => 'En DC se llama boleta especial (special ballot). Si tu nombre no aparece en la lista, o tu nombre o dirección están mal, igual puedes votar con una. La Junta la revisa, puedes llamar a una línea gratuita para saber su decisión, y si la rechaza tienes una audiencia entre 8 y 10 días después de la elección.',
 			'src' => 'https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.09',
 			'checked' => '2026-10-21',
+		),
+		'faq.line' => array(
+			'en' => 'You can still vote. Anyone in line at a vote center when the polls close gets to vote.',
+			'es' => 'Igual puedes votar. Toda persona que esté en la fila de un centro de votación cuando cierran las casillas puede votar.',
+			'src' => 'https://dcregs.dc.gov/Common/DCMR/SectionList.aspx?SectionNumber=3-703',
+			'checked' => '2026-10-26',
 		),
 		'faq.track' => array(
 			'en' => 'Track your mail-in ballot on the Board of Elections website, from the day it\'s mailed to you to when it\'s received and accepted.',
@@ -1412,6 +1428,12 @@ return array(
 			'src' => 'https://www.flsenate.gov/Laws/Statutes/2026/102.031',
 			'checked' => '2026-10-21',
 		),
+		'polls_rules.line' => array(
+			'en' => 'If you\'re in line when the polls close, stay in line. You can still vote.',
+			'es' => 'Si estás en la fila cuando cierran las casillas, no te salgas. Todavía puedes votar.',
+			'src' => 'https://www.flsenate.gov/Laws/Statutes/2025/100.011',
+			'checked' => '2026-10-26',
+		),
 		'sticker.tradition' => array(
 			'en' => 'Some Florida counties pick their stickers in student contests. In Sarasota County, a seventh grader\'s pink flamingo, chosen from more than 175 student entries, is the sticker for November 3, offered to everyone who votes by mail, early or on Election Day.',
 			'es' => 'Algunos condados de Florida eligen sus stickers en concursos para estudiantes. En el condado de Sarasota, un flamenco rosa dibujado por un estudiante de séptimo grado, elegido entre más de 175 propuestas, es el sticker del 3 de noviembre, y se le ofrece a todo el que vote por correo, por anticipado o el Día de las Elecciones.',
@@ -1543,6 +1565,12 @@ return array(
 			'es' => 'Tómate la selfie con tu sticker fuera del área de votación. Georgia no permite fotos de tu boleta, ni siquiera de una boleta de voto en ausencia, pero las fotos fuera del área de votación están bien.',
 			'src' => 'https://sos.ga.gov/page/elections-faq',
 			'checked' => '2026-10-21',
+		),
+		'polls_rules.line' => array(
+			'en' => 'In line by 7 p.m.? Stay put. You can still vote.',
+			'es' => '¿Estás en la fila a las 7 p. m.? No te salgas. Todavía puedes votar.',
+			'src' => 'https://georgia.gov/vote-in-person-election-day',
+			'checked' => '2026-10-26',
 		),
 		'sticker.tradition' => array(
 			'en' => 'Georgia has a new statewide I voted sticker for 2026, designed by Georgia artist Steve Penley. Five million were printed and sent to all 159 counties, so you can pick one up when you vote.',
@@ -1820,6 +1848,12 @@ return array(
 			'src' => 'https://www.legis.iowa.gov/docs/code/49.88.pdf',
 			'checked' => '2026-10-21',
 		),
+		'polls_rules.line' => array(
+			'en' => 'If you\'re at your precinct\'s polling place when it closes, stay. You can still vote.',
+			'es' => 'Si estás en el lugar de votación de tu distrito cuando cierra, quédate. Todavía puedes votar.',
+			'src' => 'https://www.legis.iowa.gov/docs/code/49.74.pdf',
+			'checked' => '2026-10-26',
+		),
 		'sticker.early' => array(
 			'en' => 'In Johnson County, yes. The county\'s 2026 "I Voted" stickers, chosen in its design contest, are handed out during early voting and on Election Day.',
 			'es' => 'En el condado de Johnson, sí. Los stickers de "I Voted" de 2026 del condado, elegidos en su concurso de diseño, se entregan durante la votación anticipada y el Día de las Elecciones.',
@@ -1837,6 +1871,12 @@ return array(
 			'es' => 'Te ofrecen una boleta provisional si ya te habían mandado una boleta de voto en ausencia, si no muestras identificación cuando se requiere o si otro votante te impugna. Ese mismo día recibes un aviso que dice por qué y si necesitas llevar más documentos.',
 			'src' => 'https://sos.iowa.gov/voters/voter-id-faq',
 			'checked' => '2026-10-21',
+		),
+		'faq.line' => array(
+			'en' => 'You can still vote. Every voter who is at their precinct\'s polling place when it closes gets to vote.',
+			'es' => 'Igual puedes votar. Toda persona que esté en el lugar de votación de su distrito cuando cierra puede votar.',
+			'src' => 'https://www.legis.iowa.gov/docs/code/49.74.pdf',
+			'checked' => '2026-10-26',
 		),
 		'faq.track' => array(
 			'en' => 'Once your county auditor has your request, you can track your absentee ballot on the Secretary of State\'s Track Your Absentee Ballot page.',
@@ -2100,6 +2140,12 @@ return array(
 			'src' => 'https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=001000050K17-29',
 			'checked' => '2026-10-21',
 		),
+		'polls_rules.line' => array(
+			'en' => 'Polls close at 7 p.m. If you\'re in line then, stay in line. You can still vote.',
+			'es' => 'Las casillas cierran a las 7 p. m. Si estás en la fila a esa hora, no te salgas. Todavía puedes votar.',
+			'src' => 'https://www.elections.il.gov/agencyforms/1%20PRECINCT%20ELECTION%20PUBLICATIONS/2025%20Precinct%20Election%20Manual.pdf',
+			'checked' => '2026-10-26',
+		),
 		'sticker.early' => array(
 			'en' => 'Each county picks its own sticker. In Champaign County, the clerk\'s early voting steps end with taking an "I Voted" sticker once your ballot is cast.',
 			'es' => 'Cada condado elige su propio sticker. En el condado de Champaign, los pasos de votación anticipada del secretario del condado terminan con tomar un sticker de "I Voted" después de emitir tu boleta.',
@@ -2117,6 +2163,12 @@ return array(
 			'es' => 'Votas con una boleta provisional si, por ejemplo, tu nombre no aparece en la lista del precinto, cuestionan tu derecho a votar o te registraste por correo sin identificación y todavía no puedes mostrarla. Puedes llevar más pruebas a tu autoridad electoral a más tardar al cierre del día hábil del martes después de la elección, el 10 de noviembre. La autoridad electoral decide en un plazo de 14 días si se cuenta.',
 			'src' => 'https://www.elections.il.gov/NewDocDisplay.aspx?%2fM0cs48zOKVZyk9eAbpEoxjoGz9b5YaGE%2bEuf7JVd2Tlx2Mybp2RbacEJVh848tnFOLoTd3G4cRsCxSj%2bcrL1MmhG9QsYgJ9wLcsNnM%2fXIuUHd1t%2b364AGqaMSnCpJ4Q%2bBr6S8vrv9k2jo5dDGVArA%3d%3d',
 			'checked' => '2026-10-21',
+		),
+		'faq.line' => array(
+			'en' => 'You can still vote. Polls close at 7 p.m., and everyone in line at that time gets to vote. People who arrive after 7 p.m. can\'t.',
+			'es' => 'Igual puedes votar. Las casillas cierran a las 7 p. m., y toda persona que esté en la fila a esa hora puede votar. Quien llegue después de las 7 p. m. ya no puede.',
+			'src' => 'https://www.elections.il.gov/agencyforms/1%20PRECINCT%20ELECTION%20PUBLICATIONS/2025%20Precinct%20Election%20Manual.pdf',
+			'checked' => '2026-10-26',
 		),
 		'faq.unsigned' => array(
 			'en' => 'Your election authority will mail you a notice within two days with steps to fix it. You have until Tuesday, November 17, 2026 to resolve it, so check your mail after you send your ballot back.',
@@ -2975,6 +3027,12 @@ return array(
 			'src' => 'https://elections.maryland.gov/voting/election_day_questions.html',
 			'checked' => '2026-10-21',
 		),
+		'polls_rules.line' => array(
+			'en' => 'If you get to your polling place by closing time, stay. You can still vote.',
+			'es' => 'Si llegas a tu lugar de votación antes de la hora de cierre, quédate. Todavía puedes votar.',
+			'src' => 'https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gel&section=10-301&enactments=false',
+			'checked' => '2026-10-26',
+		),
 		'sticker.tradition' => array(
 			'en' => 'The State Board of Elections has I voted sticker designs you can download, including two that say it in English and Spanish. One puts an oriole, a crab, a racehorse and a black-eyed Susan on the state flag. Another shows the Bay Bridge with a heron underneath.',
 			'es' => 'La Junta Electoral del Estado tiene diseños de stickers de "I voted" que puedes descargar, incluidos dos que lo dicen en inglés y en español. Uno pone una oropéndola (oriole), un cangrejo, un caballo de carreras y una flor black-eyed Susan sobre la bandera del estado. Otro muestra el puente de la bahía (Bay Bridge) con una garza abajo.',
@@ -2992,6 +3050,12 @@ return array(
 			'es' => 'Votas con una boleta provisional si tu nombre no aparece en la lista, te mudaste sin actualizar tu dirección, o necesitas comprobar dónde vives o mostrar una identificación. Cuenta si estás registrado, puedes votar y cumples cualquier paso adicional. Revísala en Voter Look-up 10 días después de la elección.',
 			'src' => 'https://elections.maryland.gov/voting/provisional_voting.html',
 			'checked' => '2026-10-21',
+		),
+		'faq.line' => array(
+			'en' => 'You can still vote. Anyone who gets to their polling place by closing time gets to vote.',
+			'es' => 'Igual puedes votar. Toda persona que llegue a su lugar de votación antes de la hora de cierre puede votar.',
+			'src' => 'https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gel&section=10-301&enactments=false',
+			'checked' => '2026-10-26',
 		),
 		'faq.track' => array(
 			'en' => 'Use the Voter Look-up to see whether your local board got your request and where your mail-in ballot stands.',
@@ -3876,6 +3940,12 @@ return array(
 			'src' => 'https://mca.legmt.gov/bills/mca/title_0130/chapter_0350/part_0020/section_0110/0130-0350-0020-0110.html',
 			'checked' => '2026-10-21',
 		),
+		'polls_rules.line' => array(
+			'en' => 'In line at 8 p.m. at your polling place or the election office? Stay in line. You can still vote.',
+			'es' => '¿Estás en la fila a las 8 p. m. en tu lugar de votación o en la oficina electoral? No te salgas. Todavía puedes votar.',
+			'src' => 'https://sosmt.gov/Portals/142/Elections/Documents/Officials/DIR-4-08.pdf',
+			'checked' => '2026-10-26',
+		),
 		'sticker.tradition' => array(
 			'en' => 'Montana has a new I Voted sticker for 2026, made by the Secretary of State with election officials from all 56 counties. It\'s red, white and blue, with an outline of the state and its mountains. You\'ll get one at polling places and county election offices.',
 			'es' => 'Montana tiene un nuevo sticker de "I Voted" para 2026, hecho por la Secretaría de Estado con funcionarios electorales de los 56 condados. Es rojo, blanco y azul, con la silueta del estado y sus montañas. Te lo dan en los lugares de votación y en las oficinas electorales de los condados.',
@@ -4026,6 +4096,12 @@ return array(
 			'src' => 'https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_163/GS_163-166.3.html',
 			'checked' => '2026-10-21',
 		),
+		'polls_rules.line' => array(
+			'en' => 'If you\'re in line when the polls close, stay in line. You can still vote.',
+			'es' => 'Si estás en la fila cuando cierran las casillas, no te salgas. Todavía puedes votar.',
+			'src' => 'https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_163/GS_163-166.25.html',
+			'checked' => '2026-10-26',
+		),
 		'sticker.tradition' => array(
 			'en' => 'Some North Carolina counties let residents help pick the sticker. Durham County\'s 2026 contest opened with public voting, and the top three designs go to the county Board of Elections, which picks the winner.',
 			'es' => 'Algunos condados de North Carolina dejan que los residentes ayuden a elegir el sticker. El concurso de 2026 del condado de Durham empezó con una votación pública, y los tres diseños con más votos pasan a la junta electoral del condado (Board of Elections), que elige al ganador.',
@@ -4049,6 +4125,12 @@ return array(
 			'es' => 'Votas con una boleta provisional cuando hay dudas sobre tu registro o tu dirección, estás en el precinto equivocado o no puedes mostrar una identificación con foto. La junta de tu condado lo revisa y la cuenta si puedes votar. Revisa su estado en línea con tu PIN a partir de 10 días después de la elección.',
 			'src' => 'https://www.ncsbe.gov/voting/provisional-voting',
 			'checked' => '2026-10-21',
+		),
+		'faq.line' => array(
+			'en' => 'You can still vote. Anyone in line when the polls close gets to vote.',
+			'es' => 'Igual puedes votar. Toda persona que esté en la fila cuando cierran las casillas puede votar.',
+			'src' => 'https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_163/GS_163-166.25.html',
+			'checked' => '2026-10-26',
 		),
 		'faq.track' => array(
 			'en' => 'Sign up for BallotTrax to follow your mail ballot from printed to accepted, or look it up in the Voter Search.',
@@ -4156,6 +4238,12 @@ return array(
 			'es' => 'Deja en casa los botones y gorras de campaña. A menos de 100 pies de la entrada del lugar de votación, y adentro, no puedes llevar insignias, botones ni distintivos políticos, ni tratar de influir en el voto de nadie.',
 			'src' => 'https://www.sos.nd.gov/elections/voter/voting-north-dakota',
 			'checked' => '2026-10-21',
+		),
+		'polls_rules.line' => array(
+			'en' => 'If you\'re in line when the polls close, stay in line. You can still vote. People who arrive after closing can\'t.',
+			'es' => 'Si estás en la fila cuando cierran las casillas, no te salgas. Todavía puedes votar. Quien llegue después del cierre ya no puede.',
+			'src' => 'https://ndlegis.gov/cencode/t16-1c01.pdf',
+			'checked' => '2026-10-26',
 		),
 		'sticker.tradition' => array(
 			'en' => 'North Dakota held its first statewide I Voted sticker contest for 2026. Haylee Senger of Bottineau won with "You Betcha I Voted," picked by 4,792 North Dakotans from 478 artists\' entries. It debuted at the June 9 primary.',
@@ -4402,6 +4490,12 @@ return array(
 			'src' => 'https://gc.nh.gov/rsa/html/LXIII/659/659-43.htm',
 			'checked' => '2026-10-21',
 		),
+		'polls_rules.line' => array(
+			'en' => 'If you\'re in line when the polls close, including the line to register, stay in it. You can still register and vote.',
+			'es' => 'Si estás en la fila cuando cierran las casillas, incluida la fila para registrarte, no te salgas. Todavía puedes registrarte y votar.',
+			'src' => 'https://gc.nh.gov/rsa/html/LXIII/659/659-12.htm',
+			'checked' => '2026-10-26',
+		),
 		'sticker.tradition' => array(
 			'en' => 'New Hampshire\'s Secretary of State ran an I Voted sticker contest for fourth and fifth graders, with the theme "Celebrating 250 Years of New Hampshire History!" A panel of local election officials picks the winning designs, which are handed out as stickers to voters in the 2026 state elections.',
 			'es' => 'La Secretaría de Estado de New Hampshire hizo un concurso de stickers de I Voted para estudiantes de cuarto y quinto grado, con el tema "Celebrating 250 Years of New Hampshire History!" Un panel de funcionarios electorales locales elige los diseños ganadores, que se reparten como stickers a los votantes en las elecciones estatales de 2026.',
@@ -4414,6 +4508,12 @@ return array(
 			'src' => 'https://gc.nh.gov/rsa/html/LXIII/659/659-4.htm',
 			'checked' => '2026-10-25',
 			'varies' => true,
+		),
+		'faq.line' => array(
+			'en' => 'You can still vote. Everyone in line when the polls close, including the line to register, gets to register if needed and vote.',
+			'es' => 'Igual puedes votar. Toda persona que esté en la fila cuando cierran las casillas, incluida la fila para registrarse, puede registrarse si hace falta y votar.',
+			'src' => 'https://gc.nh.gov/rsa/html/LXIII/659/659-12.htm',
+			'checked' => '2026-10-26',
 		),
 	),
 	'NJ' => array(
@@ -4590,6 +4690,10 @@ return array(
 				'en' => 'the Los Alamos County Clerk\'s Office',
 				'es' => 'la oficina de la secretaria del condado de Los Alamos (County Clerk\'s Office)',
 			),
+			'sos.state.nm.us' => array(
+				'en' => 'the New Mexico Secretary of State',
+				'es' => 'la Secretaría de Estado de New Mexico',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Registration by mail, through a registration agent and online closed October 6, 2026. You can still register in person and vote the same day at your County Clerk\'s office, at some early voting sites, and at any polling place in your county on Election Day.',
@@ -4662,6 +4766,12 @@ return array(
 			'es' => 'Devuélvela por correo, con el envío ya pagado, o entrégala en la oficina de la secretaría de tu condado (County Clerk). Solo tú, la persona que te cuida o un familiar directo (cónyuge, hijo, padre o madre, hermano o hermana) pueden entregarla.',
 			'src' => 'https://www.sos.nm.gov/voting-and-elections/voting-faqs/voting/',
 			'checked' => '2026-10-21',
+		),
+		'polls_rules.line' => array(
+			'en' => 'If you\'re in line when the polls close, stay in line. You can still vote.',
+			'es' => 'Si estás en la fila cuando cierran las casillas, no te salgas. Todavía puedes votar.',
+			'src' => 'https://sos.state.nm.us/voting-and-elections/voter-information/voter-bill-of-rights',
+			'checked' => '2026-10-26',
 		),
 		'sticker.tradition' => array(
 			'en' => 'In Santa Fe County, students design the I Voted sticker. The county clerk\'s 2026 contest closed September 8, and the three winning designs are being printed for voters this election.',
@@ -6002,6 +6112,12 @@ return array(
 			'src' => 'https://sdlegislature.gov/Statutes/12-18-27',
 			'checked' => '2026-10-21',
 		),
+		'polls_rules.line' => array(
+			'en' => 'If you\'re at your polling place, inside or outside, before the polls close, stay. You can still vote.',
+			'es' => 'Si estás en tu lugar de votación, adentro o afuera, antes de que cierren las casillas, quédate. Todavía puedes votar.',
+			'src' => 'https://sdlegislature.gov/api/Statutes/12-2-3.html',
+			'checked' => '2026-10-26',
+		),
 		'sticker.tradition' => array(
 			'en' => 'For the 2026 general election, the Secretary of State asked South Dakota students to design the next I Voted sticker, through the Civics in the 605 Statewide Sticker Showcase. Entries came in from kindergarten through 12th grade, in four age groups.',
 			'es' => 'Para la elección general de 2026, la Secretaría de Estado invitó a estudiantes de South Dakota a diseñar el próximo sticker de "I Voted", con el concurso estatal Civics in the 605 Statewide Sticker Showcase. Participaron desde kínder hasta 12.º grado, en cuatro grupos de edad.',
@@ -6190,6 +6306,10 @@ return array(
 				'en' => 'the Texas Secretary of State',
 				'es' => 'la Secretaría de Estado de Texas',
 			),
+			'tcss.legis.texas.gov' => array(
+				'en' => 'the Texas Election Code',
+				'es' => 'el Código Electoral de Texas',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Registration closed October 5, 2026. Texas has no same-day or Election Day registration.',
@@ -6277,6 +6397,12 @@ return array(
 			'src' => 'https://statutes.capitol.texas.gov/Docs/EL/htm/EL.61.htm',
 			'checked' => '2026-10-21',
 		),
+		'polls_rules.line' => array(
+			'en' => 'Inside or in line at your polling place at 7 p.m.? Stay. You can still vote.',
+			'es' => '¿Estás adentro o en la fila de tu lugar de votación a las 7 p. m.? Quédate. Todavía puedes votar.',
+			'src' => 'https://tcss.legis.texas.gov/resources/EL/htm/EL.41.htm',
+			'checked' => '2026-10-26',
+		),
 		'sticker.early' => array(
 			'en' => 'Each Texas county picks its own sticker. In Gaines County, the 2026 sticker is a student\'s design, handed out at every early voting location and Election Day vote center.',
 			'es' => 'Cada condado de Texas elige su propio sticker. En el condado de Gaines, el sticker de 2026 es el diseño de un estudiante y se entrega en todos los lugares de votación anticipada y centros de votación del Día de las Elecciones.',
@@ -6294,6 +6420,12 @@ return array(
 			'es' => 'Votas con una boleta provisional cuando los trabajadores electorales no pueden verificar tu registro. Recibirás un aviso por correo a más tardar 10 días después del escrutinio local que te dirá si se contó.',
 			'src' => 'https://www.votetexas.gov/faq/index.html',
 			'checked' => '2026-10-21',
+		),
+		'faq.line' => array(
+			'en' => 'You can still vote. Anyone inside or waiting to enter their polling place at 7 p.m. gets to vote.',
+			'es' => 'Igual puedes votar. Toda persona que esté adentro o esperando para entrar a su lugar de votación a las 7 p. m. puede votar.',
+			'src' => 'https://tcss.legis.texas.gov/resources/EL/htm/EL.41.htm',
+			'checked' => '2026-10-26',
 		),
 	),
 	'UT' => array(
@@ -6421,6 +6553,12 @@ return array(
 			'es' => 'Deja la campaña para después. A menos de 150 pies del edificio donde votas, o de donde hay un buzón de entrega de boletas, nadie puede tratar de influir en el voto de palabra o por escrito, repartir tarjetas o volantes, ni juntar firmas para peticiones.',
 			'src' => 'https://le.utah.gov/xcode/Title20A/Chapter3A/20A-3a-S501.html',
 			'checked' => '2026-10-21',
+		),
+		'polls_rules.line' => array(
+			'en' => 'In line at 8 p.m.? Stay in line. At a polling place you can still vote, and at a ballot drop box you can still drop off your sealed ballot.',
+			'es' => '¿Estás en la fila a las 8 p. m.? No te salgas. En un lugar de votación todavía puedes votar, y en un buzón todavía puedes dejar tu boleta en su sobre cerrado.',
+			'src' => 'https://le.utah.gov/xcode/Title20A/Chapter3A/C20A-3a-S204_2025050720250507.html',
+			'checked' => '2026-10-26',
 		),
 		'sticker.tradition' => array(
 			'en' => 'In 2020, vote.utah.gov posted four I Voted stickers you could download and print at home.',
@@ -6582,6 +6720,12 @@ return array(
 			'src' => 'https://law.lis.virginia.gov/admincode/title1/agency20/chapter60/section30/',
 			'checked' => '2026-10-21',
 		),
+		'polls_rules.line' => array(
+			'en' => 'In line at your polling place at 7 p.m.? Stay in line. You can still vote; people who arrive later can\'t.',
+			'es' => '¿Estás en la fila de tu lugar de votación a las 7 p. m.? No te salgas. Todavía puedes votar; quien llegue después ya no puede.',
+			'src' => 'https://law.lis.virginia.gov/vacode/title24.2/chapter6/section24.2-603/',
+			'checked' => '2026-10-26',
+		),
 		'sticker.early' => array(
 			'en' => 'Each locality picks its own sticker. In the City of Roanoke, limited America 250 "I Voted" stickers are handed out during early voting and at each precinct on Election Day.',
 			'es' => 'Cada localidad elige su propio sticker. En la ciudad de Roanoke, se entregan stickers de "I Voted" de America 250, en cantidad limitada, durante la votación anticipada y en cada precinto el Día de las Elecciones.',
@@ -6725,6 +6869,12 @@ return array(
 			'src' => 'https://sos.vermont.gov/elections/voters/voter-faqs/',
 			'checked' => '2026-10-21',
 		),
+		'polls_rules.line' => array(
+			'en' => 'If you\'re at the polling place when it closes and haven\'t voted yet, stay. The polls stay open long enough for you to vote.',
+			'es' => 'Si estás en el lugar de votación cuando cierra y todavía no has votado, quédate. Las casillas siguen abiertas el tiempo suficiente para que votes.',
+			'src' => 'https://legislature.vermont.gov/statutes/section/17/051/02561',
+			'checked' => '2026-10-26',
+		),
 		'sticker.tradition' => array(
 			'en' => 'Each year the Secretary of State\'s office supports a contest where K-8 students design an alternative "I Voted" sticker, and the winning designs go to voters in the student\'s home district. This year\'s winners are from Burlington, so Burlington voters get them on Election Day.',
 			'es' => 'Cada año, la Secretaría de Estado apoya un concurso en el que estudiantes de kínder a 8.º grado diseñan un sticker alternativo de "I Voted", y los diseños ganadores se entregan a los votantes del distrito del estudiante. Este año los ganadores son de Burlington, así que quienes votan en Burlington los reciben el Día de las Elecciones.',
@@ -6838,6 +6988,12 @@ return array(
 			'src' => 'https://www.sos.wa.gov/elections/voters/helpful-information/frequently-asked-questions-voting-mail',
 			'checked' => '2026-10-21',
 		),
+		'polls_rules.line' => array(
+			'en' => 'In line at a voting center or ballot drop box at 8 p.m.? Stay in line. You can still vote and drop off your ballot.',
+			'es' => '¿Estás en la fila de un centro de votación o de un buzón a las 8 p. m.? No te salgas. Todavía puedes votar y dejar tu boleta.',
+			'src' => 'https://www.sos.wa.gov/sites/default/files/2023-05/21-02%20voting%20centers%20and%20ballot%20deposit%20sites%20with%20chart.pdf',
+			'checked' => '2026-10-26',
+		),
 		'sticker.tradition' => array(
 			'en' => 'Snohomish County has seven new I Voted designs for the November 3 election, showing the county\'s landscapes, industries and cultures. One was made with the Tulalip Tribes and reflects Coast Salish heritage. Once you\'ve returned your ballot, you can get one at the Auditor\'s Office in Everett, any Sno-Isle Libraries location or an accessible voter services site, during their open hours.',
 			'es' => 'El condado de Snohomish tiene siete diseños nuevos de sticker de "I Voted" para las elecciones del 3 de noviembre, con paisajes, industrias y culturas del condado. Uno se hizo junto con las Tribus Tulalip (Tulalip Tribes) y refleja la herencia cultural Coast Salish. Cuando ya hayas entregado tu boleta, puedes conseguir uno en la oficina del auditor en Everett (Auditor\'s Office), en cualquier biblioteca de Sno-Isle Libraries o en un centro accesible de servicios para votantes, en su horario de atención.',
@@ -6852,6 +7008,12 @@ return array(
 			'es' => 'Primero revisa el paquete de tu boleta, porque algunos condados incluyen un sticker. El condado de Thurston pone su sticker de "I Voted", obra de la artista local Alexis Trono, en todos los paquetes de boletas hasta las primarias de 2027, incluida esta elección.',
 			'src' => 'https://www.thurstoncountywa.gov/news/thurston-county-auditors-office-unveils-new-i-voted-sticker-and-celebrates-national-voter-registration-day',
 			'checked' => '2026-10-23',
+		),
+		'faq.line' => array(
+			'en' => 'You can still vote. Anyone in line at a voting center or ballot drop box at 8 p.m. can vote and drop off their ballot.',
+			'es' => 'Igual puedes votar. Toda persona que esté en la fila de un centro de votación o de un buzón a las 8 p. m. puede votar y dejar su boleta.',
+			'src' => 'https://www.sos.wa.gov/sites/default/files/2023-05/21-02%20voting%20centers%20and%20ballot%20deposit%20sites%20with%20chart.pdf',
+			'checked' => '2026-10-26',
 		),
 		'faq.track' => array(
 			'en' => 'Sign in to VoteWA.gov and check your ballot status, or text VOTE to 868392 for updates by text message.',
@@ -7134,6 +7296,12 @@ return array(
 			'src' => 'https://code.wvlegislature.gov/3-9-9/',
 			'checked' => '2026-10-21',
 		),
+		'polls_rules.line' => array(
+			'en' => 'If you\'re in line when the polls close, stay in line. You can still vote.',
+			'es' => 'Si estás en la fila cuando cierran las casillas, no te salgas. Todavía puedes votar.',
+			'src' => 'https://code.wvlegislature.gov/3-1-32/',
+			'checked' => '2026-10-26',
+		),
 		'sticker.tradition' => array(
 			'en' => 'West Virginia held its first statewide I Voted! sticker contest for eighth graders in 2026. Reese Childers of Shady Spring Middle School in Raleigh County won, and Raleigh County handed 11,000 of her stickers to in-person voters in the May primary.',
 			'es' => 'West Virginia hizo en 2026 su primer concurso estatal de stickers de "¡Ya voté!" (I Voted!) para estudiantes de octavo grado. Ganó Reese Childers, de la secundaria Shady Spring del condado de Raleigh, y el condado de Raleigh repartió 11,000 de sus stickers a quienes votaron en persona en las primarias de mayo.',
@@ -7151,6 +7319,12 @@ return array(
 			'es' => 'Si los trabajadores electorales no encuentran tu nombre en el registro de votantes, o hay otra duda sobre si puedes votar, tienen que ofrecerte una boleta provisional. Cuenta si la junta de escrutinio (Board of Canvassers) determina que tienes derecho a votar y estás registrado.',
 			'src' => 'https://sos.wv.gov/elections/voter-information/elections-frequently-asked-questions-faqs',
 			'checked' => '2026-10-21',
+		),
+		'faq.line' => array(
+			'en' => 'You can still vote. Anyone in line at the polling place when the polls close gets to vote, even if the line runs outside.',
+			'es' => 'Igual puedes votar. Toda persona que esté en la fila del lugar de votación cuando cierran las casillas puede votar, aunque la fila llegue hasta afuera.',
+			'src' => 'https://code.wvlegislature.gov/3-1-32/',
+			'checked' => '2026-10-26',
 		),
 		'faq.track' => array(
 			'en' => 'Look up your absentee ballot\'s status with the Secretary of State\'s absentee ballot tracker.',
@@ -7262,6 +7436,12 @@ return array(
 			'es' => 'Deja la campaña para lejos del lugar de votación. El Día de las Elecciones no se permite ningún tipo de campaña, incluidos letreros y reparto de folletos, a menos de 100 yardas de cualquier entrada pública del edificio donde votas. En los lugares de votación en ausencia, los demás días, son 100 pies. Una calcomanía pequeña por candidato en la defensa de tu auto estacionado sí se permite mientras votas.',
 			'src' => 'https://wyoleg.gov/statutes/compress/title22.pdf',
 			'checked' => '2026-10-21',
+		),
+		'polls_rules.line' => array(
+			'en' => 'Waiting to vote at 7 p.m.? Stay. You can still vote.',
+			'es' => '¿Estás esperando para votar a las 7 p. m.? Quédate. Todavía puedes votar.',
+			'src' => 'https://sos.wyo.gov/Media/2026/SoS_Release_2026-08-18.pdf',
+			'checked' => '2026-10-26',
 		),
 		'sticker.tradition' => array(
 			'en' => 'In 2019, for the 150th anniversary of women\'s suffrage in Wyoming, the Secretary of State\'s office ran an I Voted sticker design contest for high school juniors and seniors and college students. County clerks were to hand out the winning stickers at polling places.',

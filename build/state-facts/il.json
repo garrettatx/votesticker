@@ -158,8 +158,12 @@
    "notes": "No State Board of Elections page or statute read this session on phones or photos at the polls. 10 ILCS 5/29-9 bans marking a ballot so another person can see it; it does not mention photographs (same gap as the selfie FAQ)."
   },
   "line": {
-   "status": "missing",
-   "notes": "10 ILCS 5/17-1 sets 6 a.m. to 7 p.m. but says nothing about voters in line at closing; no official page found."
+   "en": "Polls close at 7 p.m. If you're in line then, stay in line. You can still vote.",
+   "es": "Las casillas cierran a las 7 p. m. Si estás en la fila a esa hora, no te salgas. Todavía puedes votar.",
+   "src": "https://www.elections.il.gov/agencyforms/1%20PRECINCT%20ELECTION%20PUBLICATIONS/2025%20Precinct%20Election%20Manual.pdf",
+   "checked": "2026-10-26",
+   "quote": "All persons in line at that time must be allowed to vote.",
+   "status": "verified"
   }
  },
  "sticker": {
@@ -185,7 +189,12 @@
    "status": "verified"
   },
   "line": {
-   "status": "missing"
+   "en": "You can still vote. Polls close at 7 p.m., and everyone in line at that time gets to vote. People who arrive after 7 p.m. can't.",
+   "es": "Igual puedes votar. Las casillas cierran a las 7 p. m., y toda persona que esté en la fila a esa hora puede votar. Quien llegue después de las 7 p. m. ya no puede.",
+   "src": "https://www.elections.il.gov/agencyforms/1%20PRECINCT%20ELECTION%20PUBLICATIONS/2025%20Precinct%20Election%20Manual.pdf",
+   "checked": "2026-10-26",
+   "quote": "All persons in line at that time must be allowed to vote.",
+   "status": "verified"
   },
   "track": {
    "status": "missing",

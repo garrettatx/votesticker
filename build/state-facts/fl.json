@@ -197,7 +197,12 @@
    "status": "verified"
   },
   "line": {
-   "status": "missing"
+   "en": "If you're in line when the polls close, stay in line. You can still vote.",
+   "es": "Si estás en la fila cuando cierran las casillas, no te salgas. Todavía puedes votar.",
+   "src": "https://www.flsenate.gov/Laws/Statutes/2025/100.011",
+   "checked": "2026-10-26",
+   "quote": "Any elector who is in line at the time of the official closing of the polls shall be allowed to cast a vote in the election.",
+   "status": "verified"
   }
  },
  "sticker": {

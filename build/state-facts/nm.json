@@ -15,6 +15,10 @@
   "www.losalamosnm.gov": {
    "en": "the Los Alamos County Clerk's Office",
    "es": "la oficina de la secretaria del condado de Los Alamos (County Clerk's Office)"
+  },
+  "sos.state.nm.us": {
+   "en": "the New Mexico Secretary of State",
+   "es": "la Secretaría de Estado de New Mexico"
   }
  },
  "dates": {
@@ -149,8 +153,12 @@
    "notes": "No official phone or ballot photo rule found on sos.nm.gov; faq-sources.json also left the NM selfie answer null."
   },
   "line": {
-   "status": "missing",
-   "notes": "No in-line-at-closing rule found on sos.nm.gov; the statute host nmonesource.com is not accepted by the validator."
+   "en": "If you're in line when the polls close, stay in line. You can still vote.",
+   "es": "Si estás en la fila cuando cierran las casillas, no te salgas. Todavía puedes votar.",
+   "src": "https://sos.state.nm.us/voting-and-elections/voter-information/voter-bill-of-rights",
+   "checked": "2026-10-26",
+   "quote": "Cast a ballot if you are in line to vote when the polls close",
+   "status": "verified"
   }
  },
  "sticker": {

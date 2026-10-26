@@ -165,7 +165,12 @@
    "status": "verified"
   },
   "line": {
-   "status": "missing"
+   "en": "In line by 7 p.m.? Stay put. You can still vote.",
+   "es": "¿Estás en la fila a las 7 p. m.? No te salgas. Todavía puedes votar.",
+   "src": "https://georgia.gov/vote-in-person-election-day",
+   "checked": "2026-10-26",
+   "quote": "If you are in line by 7:00 p.m., you are allowed to cast your ballot.",
+   "status": "verified"
   }
  },
  "sticker": {

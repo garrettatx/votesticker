@@ -166,8 +166,12 @@
    "notes": "No phone or photo rule found on sos.nd.gov; faq-sources.json found none in NDCC either."
   },
   "line": {
-   "status": "missing",
-   "notes": "No in-line-at-closing rule found on sos.nd.gov pages read."
+   "en": "If you're in line when the polls close, stay in line. You can still vote. People who arrive after closing can't.",
+   "es": "Si estás en la fila cuando cierran las casillas, no te salgas. Todavía puedes votar. Quien llegue después del cierre ya no puede.",
+   "src": "https://ndlegis.gov/cencode/t16-1c01.pdf",
+   "checked": "2026-10-26",
+   "quote": "All electors standing in line to vote at the time the polls are set to close must be allowed to vote, but electors arriving after closing time may not be allowed to vote.",
+   "status": "verified"
   }
  },
  "sticker": {
