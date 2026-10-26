@@ -308,6 +308,10 @@ select:hover, input:hover, textarea:hover { border-color: #A79D86; }
 .size[aria-pressed="true"] { background: var(--ink); color: #fff; }
 .summary { margin: var(--s3) 0 0; font-size: var(--fs-sm); }
 .is-story .frame img { border-radius: 0 !important; max-height: 70vh; width: auto; margin: 0 auto; }
+.tiny { display: flex; align-items: center; gap: var(--s3); margin: var(--s3) 0 0; color: var(--muted); font-size: var(--fs-sm); }
+.tiny img { border-radius: 50%; flex: none; box-shadow: 0 0 0 1px var(--line); }
+.tiny img[src="data:,"] { visibility: hidden; }
+.is-story .tiny { display: none; }
 .is-story #circle-check { display: none; }
 
 .check { display: flex; gap: 10px; align-items: center; margin: var(--s3) 0; font-size: var(--fs-sm); }

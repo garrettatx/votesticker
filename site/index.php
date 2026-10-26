@@ -1281,6 +1281,8 @@ $vote_ld = array(
 					<button type="button" class="size" data-size="story" aria-pressed="false"><?php echo vote_e( t( 'Story' ) ); ?></button>
 				</div>
 				<div class="frame"><img id="preview" alt="<?php echo vote_e( t( 'Your profile picture' ) ); ?>" width="1080" height="1080"></div>
+				<?php // Profile-picture size (final-week item 3): the same image at 48 and 32 px, where friends see it in a feed and in comments. A visual duplicate, so hidden from screen readers. ?>
+				<div class="tiny" id="tiny"><img src="data:," alt="" width="48" height="48" aria-hidden="true"><img src="data:," alt="" width="32" height="32" aria-hidden="true"><span><?php echo vote_e( t( 'How it looks as a profile picture' ) ); ?></span></div>
 				<div class="colors">
 					<div class="swatches" id="swatches" role="group" aria-label="<?php echo vote_e( t( 'Colors' ) ); ?>"></div>
 					<p class="swatch-name" id="swatch-name" aria-live="polite"></p>

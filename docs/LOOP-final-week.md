@@ -22,7 +22,7 @@ preview builds, then restore `build/lastmod.json`.
 |---|---|---|---|
 | 1 | **Add to calendar.** A per-state `.ics` file written by the daily build for the voter's days: Election Day, or the last day of early voting or the mail deadline where verified. Official link in the event; no poll hours unless verified for the whole state. Nothing stored or sent. | A plan with a date on it is the step people skip | Done Oct 26 |
 | 2 | **"Early voting ends in N days"** on state pages with a verified end date, recounted by the visitor's calendar like the Election Day countdown; gone after the end date | The most useful line in the last week, and the one most likely to go stale if hand-written | Done Oct 26 |
-| 3 | **Profile-picture size preview.** A 48 px circle beside the big preview in the maker | People can check the sticker reads where friends will see it | |
+| 3 | **Profile-picture size preview.** A 48 px circle beside the big preview in the maker | People can check the sticker reads where friends will see it | Done Oct 26 |
 | 4 | **Copy alt text.** A button that copies a plain description of the current sticker | For people who add alt text to posts; the About page now promises accessibility | |
 | 5 | **"Send this to someone who hasn't voted yet."** After an I voted sticker is saved, a share-link line (the page link only, no tracking beyond the existing `share` event) | Turns a saved sticker into one more reminder | |
 | 6 | **Contrast and tap-target check.** `--muted` on cream against WCAG AA; every control 44 px or larger | Backlog review item; the About page claims keyboard and focus support | |
@@ -50,3 +50,7 @@ preview builds, then restore `build/lastmod.json`.
   the visitor's date passes the end, before the next build drops it. Checked with a faked browser
   clock: Oct 30 says Today, Oct 31 hides it. Previews: Texas loses the line on Oct 31, Vermont keeps
   it through Nov 2, none on Nov 4. Facts, Spanish and SEO QA pass; stale scan unchanged at 27.
+- **Oct 26, item 3 (profile-picture size).** Under the maker preview, the same image at 48 and 32 px
+  in circles ("How it looks as a profile picture" / "Así se ve como foto de perfil"), refreshed with
+  every redraw from the same blob, hidden in Story mode and from screen readers (a visual duplicate).
+  No page errors in a browser check.

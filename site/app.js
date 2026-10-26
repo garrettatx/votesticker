@@ -1309,6 +1309,7 @@
 			current.url = URL.createObjectURL(blob);
 			current.name = 'vote-early-' + state.state.toLowerCase() + '-' + state.design + '-' + state.palette + (state.story ? '-story' : '') + '.png';
 			$('preview').src = current.url;
+			Array.prototype.forEach.call(document.querySelectorAll('#tiny img'), function (img) { img.src = current.url; });
 			link.href = current.url;
 			link.download = current.name;
 			$('open').href = current.url;
