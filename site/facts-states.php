@@ -4335,6 +4335,10 @@ return array(
 				'en' => 'New Hampshire law',
 				'es' => 'la ley de New Hampshire',
 			),
+			'www.sos.nh.gov' => array(
+				'en' => 'the New Hampshire Secretary of State',
+				'es' => 'la Secretaría de Estado de New Hampshire',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'You can register at your polling place on Election Day, Tuesday, November 3, and vote the same day. Whenever you register, bring proof of your citizenship, age, domicile and identity.',
@@ -4397,6 +4401,12 @@ return array(
 			'es' => 'Deja la campaña para afuera. No se permite hacer campaña dentro del edificio del lugar de votación, y el moderador marca un pasillo sin propaganda de al menos 10 pies de ancho desde cada entrada, donde está prohibido repartir o colocar letreros, pines, stickers o ropa de campaña.',
 			'src' => 'https://gc.nh.gov/rsa/html/LXIII/659/659-43.htm',
 			'checked' => '2026-10-21',
+		),
+		'sticker.tradition' => array(
+			'en' => 'New Hampshire\'s Secretary of State ran an I Voted sticker contest for fourth and fifth graders, with the theme "Celebrating 250 Years of New Hampshire History!" A panel of local election officials picks the winning designs, which are handed out as stickers to voters in the 2026 state elections.',
+			'es' => 'La Secretaría de Estado de New Hampshire hizo un concurso de stickers de I Voted para estudiantes de cuarto y quinto grado, con el tema "Celebrating 250 Years of New Hampshire History!" Un panel de funcionarios electorales locales elige los diseños ganadores, que se reparten como stickers a los votantes en las elecciones estatales de 2026.',
+			'src' => 'https://www.sos.nh.gov/4th-and-5th-grade-new-hampshire-i-voted-sticker-contest',
+			'checked' => '2026-10-26',
 		),
 		'election_day.hours' => array(
 			'en' => 'Your town or city sets the hours: polls open by 11 a.m. and close no earlier than 7 p.m.',

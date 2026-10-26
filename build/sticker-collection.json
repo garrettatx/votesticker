@@ -7857,6 +7857,33 @@
    "reviewed": true
   },
   {
+   "id": "nh-office",
+   "state": "NH",
+   "county": null,
+   "origin": "office",
+   "title": "Fourth and fifth grade I Voted sticker contest",
+   "designer": null,
+   "office": "New Hampshire Secretary of State",
+   "selection": "Student contest (grades 4 and 5); finalists chosen by the Secretary of State's office, winners by a panel of local election officials",
+   "year": 2026,
+   "elections": [
+    "2026 state elections"
+   ],
+   "story": {
+    "en": "New Hampshire's Secretary of State ran an I Voted sticker contest for fourth and fifth graders, with the theme \"Celebrating 250 Years of New Hampshire History!\" A panel of local election officials picks the winning designs, which are handed out as stickers to voters in the 2026 state elections.",
+    "es": "La Secretaría de Estado de New Hampshire hizo un concurso de stickers de I Voted para estudiantes de cuarto y quinto grado, con el tema \"Celebrating 250 Years of New Hampshire History!\" Un panel de funcionarios electorales locales elige los diseños ganadores, que se reparten como stickers a los votantes en las elecciones estatales de 2026.",
+    "src": "https://www.sos.nh.gov/4th-and-5th-grade-new-hampshire-i-voted-sticker-contest",
+    "quote": "A panel of local election officials will choose four winning designs, which will be distributed as stickers to all voters during the 2026 state elections.",
+    "checked": "2026-10-26"
+   },
+   "distribution": [],
+   "image": null,
+   "image_permission": "none",
+   "permission_note": null,
+   "placement": "collection",
+   "reviewed": true
+  },
+  {
    "id": "nm-office",
    "state": "NM",
    "county": null,
