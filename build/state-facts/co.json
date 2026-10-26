@@ -43,7 +43,10 @@
    "src": "https://www.sos.state.co.us/pubs/newsRoom/pressReleases/2026/PR20260923GeneralElection.html",
    "checked": "2026-10-21",
    "quote": "October 27 - Voters who have not yet returned their mail ballot by this date should physically deliver their ballot within their signed return envelope to a ballot drop box or vote center or vote in person at a vote center.",
-   "status": "verified"
+   "status": "verified",
+   "until": "2026-10-26",
+   "en_after": "Drop box or voter center: by 7 p.m. on Tuesday, November 3. Don't mail it now: take it in your signed envelope to a drop box or voter center.",
+   "es_after": "Buzón o centro de votación: a más tardar a las 7 p. m. del martes 3 de noviembre. Ya no la mandes por correo: llévala en tu sobre firmado a un buzón o a un centro de votación."
   },
   "early_hours": {
    "en": "Every county's required voter service and polling centers are open from October 19 through Election Day. Each county sets its hours.",

@@ -35,7 +35,10 @@
    "src": "https://www.sos.wa.gov/about-office/news/2026/us-supreme-court-rules-favor-accepting-ballots-postmarked-time-received-after-election-day",
    "checked": "2026-10-21",
    "quote": "if the ballot was postmarked on or before Election Day.",
-   "status": "verified"
+   "status": "verified",
+   "until": "2026-10-27",
+   "en_after": "Drop box: by 8 p.m. on Tuesday, November 3. Mail: postmarked on or before November 3, and no stamp needed. Postmarks aren't guaranteed on the day you mail, so use a drop box now.",
+   "es_after": "Buzón: a más tardar a las 8 p. m. del martes 3 de noviembre. Correo: con matasellos del 3 de noviembre o antes, y no necesita estampilla. El matasellos no está garantizado el mismo día que la envías, así que ahora mejor usa un buzón."
   },
   "early_hours": {
    "status": "missing"

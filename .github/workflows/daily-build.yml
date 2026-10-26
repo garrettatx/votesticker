@@ -20,6 +20,11 @@ on:
         description: 'Build as this date (YYYY-MM-DD), e.g. 2026-11-04 to publish the post-election pages by hand'
         required: false
         default: ''
+      dry_run:
+        description: 'Build and QA only: no deploy, IndexNow or commit (to test a date ahead, e.g. 2026-11-04)'
+        type: boolean
+        required: false
+        default: false
 
 permissions:
   contents: write   # commit build/lastmod.json and build/indexnow-sent.json back
@@ -36,6 +41,7 @@ jobs:
       TZ: America/Chicago
       # index.php vote_today(): the post-election run builds as November 4 by name, not by clock.
       VOTE_TODAY: ${{ github.event.inputs.vote_today || (github.event.schedule == '30 6 4 11 *' && '2026-11-04') || '' }}
+      DRY_RUN: ${{ github.event.inputs.dry_run == 'true' }}
     steps:
       - uses: actions/checkout@v4
 
@@ -64,7 +70,17 @@ jobs:
           python3 -I scripts/qa_es.py --base http://127.0.0.1:8792/
           python3 -I scripts/qa_facts.py --base http://127.0.0.1:8792/
 
+      - name: Check the phase the pages were built for
+        run: |
+          # The phase index.php vote_phase() gives VOTE_TODAY (or today), and what the Texas page says.
+          d="${VOTE_TODAY:-$(date +%F)}"
+          if [[ "$d" > "2026-11-03" ]]; then want=post; elif [[ "$d" > "2026-11-01" ]]; then want=eday; else want=pre; fi
+          got=$(grep -o 'window.VOTE_PHASE = "[a-z]*"' dist/texas/index.html | grep -o '"[a-z]*"' | tr -d '"')
+          echo "Built as $d: phase $got (expected $want)"
+          [ "$got" = "$want" ]
+
       - name: Deploy to Cloudflare Pages
+        if: env.DRY_RUN != 'true'
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -72,6 +88,7 @@ jobs:
           command: pages deploy dist --project-name votesticker --branch main --commit-dirty=true
 
       - name: QA live
+        if: env.DRY_RUN != 'true'
         run: |
           sleep 10
           python3 -I scripts/qa_seo.py --no-legacy
@@ -79,9 +96,11 @@ jobs:
           python3 -I scripts/qa_facts.py --base https://votesticker.org/
 
       - name: Tell search engines what changed
+        if: env.DRY_RUN != 'true'
         run: python3 -I scripts/indexnow.py
 
       - name: Commit build records
+        if: env.DRY_RUN != 'true'
         run: |
           git config user.name "votesticker-daily"
           git config user.email "actions@users.noreply.github.com"

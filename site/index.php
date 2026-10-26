@@ -339,13 +339,19 @@ function vote_state_faq( $st ) {
 	static $all = null;
 	if ( null === $all ) { $all = require __DIR__ . '/faq-states.php'; }
 	$out = array();
+	// After Election Day (post phase), questions about voting that's over leave the page and the FAQ
+	// markup: poll hours, ballot and registration deadlines, lines, late mail. ID, ballot photos,
+	// provisional ballots, tracking and envelope fixes can still apply (docs/post-election-release.md).
+	$gone = 'post' === vote_phase() ? array( 'polls', 'mail', 'reg', 'dates.mail_return', 'faq.line', 'faq.late_mail' ) : array();
 	foreach ( VOTE_FAQ_Q as $key => $q ) {
+		if ( in_array( $key, $gone, true ) ) { continue; }
 		$a = $all[ $st['abbr'] ][ $key ] ?? null;
 		if ( ! $a || empty( $a['src'] ) || empty( $a[ vote_es() ? 'es' : 'en' ] ) ) { continue; }
 		$out[] = array( t( $q, vote_name( $st ) ), $a[ vote_es() ? 'es' : 'en' ], $a['src'], VOTE_FAQ_CHECKED );
 	}
 	// Extra questions answered in the state's facts file (build/state-facts/), each with its own check date.
 	foreach ( VOTE_FACT_Q as $path => $q ) {
+		if ( in_array( $path, $gone, true ) ) { continue; }
 		if ( 'dates.mail_return' === $path && ( $all[ $st['abbr'] ]['mail'] ?? null ) ) { continue; }  // same question as the mail FAQ
 		$f = vote_fact( $st, $path );
 		if ( $f ) { $out[] = array( t( $q, vote_name( $st ) ), $f['text'], $f['src'], $f['checked'] ); }
@@ -376,7 +382,7 @@ function vote_fact( $st, $path ) {
 	if ( ! isset( $f['src'] ) ) { return $f[ vote_es() ? 'es' : 'en' ] ?: $f['en']; }  // a label in both languages
 	$lang = vote_es() ? 'es' : 'en';
 	// A fact with "until" switches to its after-text the day after that date (the build runs daily).
-	$text = ! empty( $f['until'] ) && date( 'Y-m-d' ) > $f['until'] && ! empty( $f[ $lang . '_after' ] ) ? $f[ $lang . '_after' ] : ( $f[ $lang ] ?? '' );
+	$text = ! empty( $f['until'] ) && vote_today() > $f['until'] && ! empty( $f[ $lang . '_after' ] ) ? $f[ $lang . '_after' ] : ( $f[ $lang ] ?? '' );
 	return $text ? array( 'text' => $text, 'src' => $f['src'], 'checked' => $f['checked'] ) : null;
 }
 function vote_host( $url ) { return preg_replace( '#^www\.#', '', (string) parse_url( $url, PHP_URL_HOST ) ); }
@@ -1017,7 +1023,8 @@ $vote_ld = array(
 		<?php echo vote_eday_banner( $vote_st ); ?>
 		<div class="state-hero<?php echo $vote_art ? ' state-hero--art' : ''; ?>">
 			<div>
-				<h1 id="page-h1"><?php echo vote_e( $vote_page['h1'] ); ?></h1>
+				<?php // "I Voted" and "Ya voté" never split across lines ("Washington I / Voted Stickers" on phones). ?>
+				<h1 id="page-h1"><?php echo str_replace( array( 'I Voted', 'Ya voté' ), array( 'I&nbsp;Voted', 'Ya&nbsp;voté' ), vote_e( $vote_page['h1'] ) ); ?></h1>
 				<p class="ribbon"><?php echo vote_e( $vote_page['ribbon'] ); ?></p>
 				<p class="lead" id="page-lead"><?php echo vote_e( $vote_page['lead'] ); ?></p>
 				<?php echo vote_countdown( 'countdown--state' ); ?>
@@ -1251,14 +1258,19 @@ $vote_ld = array(
 		<details class="faq__state"><summary><?php echo vote_e( $vote_q[0] ); ?></summary><p><?php echo vote_e( $vote_q[1] ); ?></p><p class="faq__src"><?php echo vote_es() ? 'Fuente: ' : 'From '; ?><a href="<?php echo vote_e( $vote_q[2] ); ?>" target="_blank" rel="noopener"><?php echo vote_e( vote_src_name( $vote_st, $vote_q[2] ) ); ?></a>.</p></details>
 		<?php endforeach; endif; ?>
 		<details><summary><?php echo vote_e( t( 'How do I make it my profile picture?' ) ); ?></summary><p><?php echo vote_e( t( 'Tap Download picture, then open your profile settings in the app and choose the saved image as your photo. The design stays inside the circle that profile photos are cropped to.' ) ); ?></p></details>
+		<?php if ( 'post' === vote_phase() ) : ?>
+		<details><summary><?php echo vote_e( t( 'Can I still get an I voted sticker after the election?' ) ); ?></summary><p><?php echo vote_e( t( 'Yes. Save a free sticker, or make one with your own picture. The designs stay up after Election Day.' ) ); ?></p></details>
+		<details><summary><?php echo vote_e( t( 'I voted early or by mail. Which sticker should I use?' ) ); ?></summary><p><?php echo vote_e( t( 'Pick the one that fits: I voted, I voted early or I voted by mail. They are all in the Main message menu.' ) ); ?></p></details>
+		<?php else : ?>
 		<details><summary><?php echo vote_e( t( 'When should I switch to I voted?' ) ); ?></summary><p><?php echo vote_e( t( 'After you vote. Choose I voted in the Main message menu, or I voted early or I voted by mail if that fits.' ) ); ?></p></details>
+		<?php endif; ?>
 		<?php if ( ! $vote_st ) : ?>
 		<details><summary><?php echo vote_e( t( 'Is it really free?' ) ); ?></summary><p><?php echo vote_e( t( "Yes. There's nothing to buy, no account and no email list. Garrett Digital built it as a public service and pays for the hosting." ) ); ?></p></details>
 		<details><summary><?php echo vote_e( t( 'Do you keep my information?' ) ); ?></summary><p><?php echo vote_e( t( 'No. Your sticker is created in your browser and never uploaded.' ) ); ?></p></details>
 		<?php endif; ?>
 		<details><summary><?php echo vote_e( t( 'Is this an official election site?' ) ); ?></summary><p><?php echo vote_e( t( 'No. Vote Sticker is an independent, nonpartisan tool made by one person. For registration, polling places, and deadlines, go to your state or local election office. Each state page links to it.' ) ); ?></p></details>
 		<details><summary><?php echo vote_e( t( 'Where do the dates come from?' ) ); ?></summary><p><?php echo vote_e( t( "From official state sources: the election office's own pages or state law, checked and dated. Until a state's dates are confirmed, its stickers say Election Day." ) ); ?></p></details>
-		<?php $vote_mailst = $vote_st && vote_verified( $vote_st ) && 'mail' === $vote_st['kind']; if ( ! $vote_mailst ) : ?>
+		<?php $vote_mailst = $vote_st && vote_verified( $vote_st ) && 'mail' === $vote_st['kind']; if ( ! $vote_mailst && 'post' !== vote_phase() ) : ?>
 		<details><summary><?php echo vote_e( t( 'Why do some states say hours or start dates vary?' ) ); ?></summary><p><?php echo vote_e( t( 'In some states, counties or towns set their own early voting days, hours, and locations. Your local election office has the final details.' ) ); ?></p></details>
 		<details><summary><?php echo vote_e( t( "What if my state doesn't have early voting?" ) ); ?></summary><p><?php echo vote_e( t( "Your sticker says VOTE NOV 3. If you can't vote in person on Election Day, you may qualify for an absentee ballot. Your state's page links to the rules." ) ); ?></p></details>
 		<?php endif; ?>

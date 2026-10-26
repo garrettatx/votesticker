@@ -770,6 +770,9 @@ return array(
 			'es' => 'Buzón o centro de votación: a más tardar a las 7 p. m. del martes 3 de noviembre. Correo: el 26 de octubre es el último día sugerido para enviarla. A partir del 27 de octubre, mejor llévala en tu sobre firmado a un buzón o a un centro de votación.',
 			'src' => 'https://www.sos.state.co.us/pubs/newsRoom/pressReleases/2026/PR20260923GeneralElection.html',
 			'checked' => '2026-10-21',
+			'until' => '2026-10-26',
+			'en_after' => 'Drop box or voter center: by 7 p.m. on Tuesday, November 3. Don\'t mail it now: take it in your signed envelope to a drop box or voter center.',
+			'es_after' => 'Buzón o centro de votación: a más tardar a las 7 p. m. del martes 3 de noviembre. Ya no la mandes por correo: llévala en tu sobre firmado a un buzón o a un centro de votación.',
 		),
 		'dates.early_hours' => array(
 			'en' => 'Every county\'s required voter service and polling centers are open from October 19 through Election Day. Each county sets its hours.',
@@ -6737,6 +6740,9 @@ return array(
 			'es' => 'Buzón: a más tardar a las 8 p. m. del martes 3 de noviembre. Correo: con matasellos del 3 de noviembre o antes, y no necesita estampilla. El matasellos no está garantizado el mismo día que la envías, así que mándala una semana antes, a más tardar el martes 27 de octubre, o después de esa fecha usa un buzón.',
 			'src' => 'https://www.sos.wa.gov/about-office/news/2026/us-supreme-court-rules-favor-accepting-ballots-postmarked-time-received-after-election-day',
 			'checked' => '2026-10-21',
+			'until' => '2026-10-27',
+			'en_after' => 'Drop box: by 8 p.m. on Tuesday, November 3. Mail: postmarked on or before November 3, and no stamp needed. Postmarks aren\'t guaranteed on the day you mail, so use a drop box now.',
+			'es_after' => 'Buzón: a más tardar a las 8 p. m. del martes 3 de noviembre. Correo: con matasellos del 3 de noviembre o antes, y no necesita estampilla. El matasellos no está garantizado el mismo día que la envías, así que ahora mejor usa un buzón.',
 		),
 		'how.in_person' => array(
 			'en' => 'There\'s no polling place to find. Your ballot comes to you. Need help in person? Every county has a voting center open until 8 p.m. on Election Day, where you can register, get a replacement ballot or use an accessible voting machine.',

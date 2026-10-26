@@ -20,9 +20,9 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
 | # | Item | Status |
 |---|---|---|
 | 1 | PA and KS "I voted early" stickers: replace the "BY" date line with the state name | Done Oct 25 |
-| 2 | Previews of the Nov 2 and Nov 4 builds (TX, WA, KS, Spanish home) sent to Garrett | |
-| 3 | Post-election checklist (`docs/post-election-release.md`) checked against the build; build what's missing (post-election home FAQ) | |
-| 4 | "Build and QA, no deploy" input on the daily workflow, so the Nov 4 run can be tested once ahead | |
+| 2 | Previews of the Nov 2 and Nov 4 builds (TX, WA, KS, Spanish home) sent to Garrett | Done Oct 25 |
+| 3 | Post-election checklist (`docs/post-election-release.md`) checked against the build; build what's missing (post-election home FAQ) | FAQ done Oct 25; rest of checklist next |
+| 4 | "Build and QA, no deploy" input on the daily workflow, so the Nov 4 run can be tested once ahead | Built Oct 25 |
 | 5 | "First time voter" message in the maker (English and Spanish) | |
 | 6 | Ballot trackers: confirm IN; look for IL, MO, WY | |
 | 7 | Open fact calls that touch the Nov 2 banner (NJ, MI, KS, VT, WY, MT) | |
@@ -58,3 +58,11 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
   27 OCT", which Lake County's Spanish page uses ("hasta el lunes, 2 de noviembre"). Past-tense messages (I voted early, Ya
   voté temprano) show the state name and year instead of a deadline. Postal codes in alt text keep capitals (PA 2026).
   Hand-made "Vote early, by Oct 27" pictures stay; the gallery hides them once early voting ends.
+- **Oct 25, item 2:** Previews of the Nov 2 and Nov 4 builds sent. Fixed what they showed: WA and CO Nov 2 banners still said
+  to mail by Oct 27 (now `until` + after-wording, like OR); `vote_fact()` used the clock instead of `vote_today()`, so preview
+  builds never showed after-wording; "Washington I / Voted" and "Ya / voté" headings now keep those words together.
+- **Oct 25, item 3 (part):** From Nov 4, state FAQs drop poll hours, ballot and registration deadlines, lines and late mail
+  (page and FAQPage markup); ID, ballot photos, provisional, tracking and envelope questions stay. Two new questions from the
+  copy deck (EN and ES). Hours-vary and no-early-voting questions hidden after Election Day.
+- **Oct 25, item 4:** `dry_run` input on the daily workflow (build and QA, no deploy, IndexNow or commit) and a step that
+  fails the run if the pages weren't built for the expected phase.
