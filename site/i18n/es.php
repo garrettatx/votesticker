@@ -274,7 +274,7 @@ return array(
 		'This tool is nonpartisan.' => 'Esta herramienta no es partidista.',
 		'Vote Sticker is nonpartisan.' => 'Vote Sticker no es partidista.',
 		'Election Day:' => 'Día de las Elecciones:', 'Tuesday, Nov. 3' => 'martes 3 de noviembre',
-		'Today' => 'Hoy', 'Tomorrow' => 'Mañana', '%s days away' => 'faltan %s días',
+		'Today' => 'Hoy', 'Tomorrow' => 'Mañana', '%s days away' => 'faltan %s días', 'Early voting ends:' => 'La votación anticipada termina:',
 		'Free, no account.' => 'Gratis, sin cuenta.', 'Type your state' => 'Escribe tu estado',
 		'Make an I voted sticker or share your state’s voting dates, sized for your profile picture or a post.' => 'Haz un sticker de “Ya voté” o comparte las fechas para votar en tu estado, del tamaño ideal para tu foto de perfil o una publicación.',
 		'Find a Sticker You Like' => 'Encuentra un sticker que te guste', 'Tap one to see every design for that state.' => 'Toca uno para ver todos los diseños de ese estado.',

@@ -682,6 +682,8 @@ nav.foot__links a + a { margin-left: 0; }
 .countdown__rel { display: inline-flex; align-items: center; padding: 3px 10px; border: 1px solid rgba(242, 193, 78, 0.45); border-radius: 999px; background: rgba(242, 193, 78, 0.12); color: var(--gold); font-size: var(--fs-xs); font-weight: 700; line-height: 1.25; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .countdown__rel[hidden] { display: none; }
 .countdown--state { margin: var(--s3) 0 0; }
+.countdown[hidden] { display: none; }
+.countdown--early + .countdown { margin-top: var(--s2); }  /* the two date lines read as a pair */
 .hero__today { margin-top: var(--s2); font-weight: 400; color: var(--band-text); font-size: var(--fs-sm); }
 /* Home hero, a little shorter (October 22 polish): less padding, a smaller sticker cluster. */
 @media (min-width: 860px) { .top--hub { padding: var(--s5) 0 var(--s7); } .hero__art { max-width: 360px; } }

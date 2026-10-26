@@ -558,6 +558,21 @@ function vote_countdown( $class = '' ) {
 		. '<span class="countdown__rel"' . ( $rel ? '' : ' hidden' ) . '><span data-countdown-label>' . vote_e( $rel ) . '</span></span></p>';
 }
 
+// "Early voting ends" countdown (final-week loop item 2, October 26): above the Election Day line on a
+// state page whose verified early voting is still open or ahead. Same markup and footer script as the
+// Election Day countdown; data-hide-after hides the whole line once the visitor's date passes the end,
+// and the next daily build drops it (the state's kind turns 'ended').
+function vote_early_countdown( $st ) {
+	if ( ! $st || 'post' === vote_phase() || ! vote_verified( $st ) || 'in-person' !== $st['kind'] || empty( $st['end'] ) || $st['end'] < vote_today() ) { return ''; }
+	$t = strtotime( $st['end'] );
+	$day = vote_es() ? VOTE_DIAS[ date( 'w', $t ) ] . ' ' . date( 'j', $t ) . ' de ' . VOTE_MESES[ date( 'n', $t ) - 1 ] : date( 'l, M. j', $t );
+	$days = (int) round( ( $t - strtotime( vote_today() ) ) / 86400 );
+	$rel = vote_countdown_text( $days );
+	return '<p class="countdown countdown--state countdown--early" data-countdown data-hide-after data-today="' . vote_e( t( 'Today' ) ) . '" data-tomorrow="' . vote_e( t( 'Tomorrow' ) ) . '" data-away="' . vote_e( t( '%s days away' ) ) . '">'
+		. '<span>' . vote_e( t( 'Early voting ends:' ) ) . ' <time datetime="' . vote_e( $st['end'] ) . '">' . vote_e( $day ) . '</time></span>'
+		. '<span class="countdown__rel"' . ( $rel ? '' : ' hidden' ) . '><span data-countdown-label>' . vote_e( $rel ) . '</span></span></p>';
+}
+
 // The About page (/about/, /es/about/): who makes the site, where its facts come from, how to send a
 // correction. Written for people first; the AboutPage schema in the head names the publisher.
 function vote_about() {
@@ -1137,6 +1152,7 @@ $vote_ld = array(
 				<h1 id="page-h1"><?php echo str_replace( array( 'I Voted', 'Ya voté' ), array( 'I&nbsp;Voted', 'Ya&nbsp;voté' ), vote_e( $vote_page['h1'] ) ); ?></h1>
 				<p class="ribbon"><?php echo vote_e( $vote_page['ribbon'] ); ?></p>
 				<p class="lead" id="page-lead"><?php echo vote_e( $vote_page['lead'] ); ?></p>
+				<?php echo vote_early_countdown( $vote_st ); ?>
 				<?php echo vote_countdown( 'countdown--state' ); ?>
 				<p class="jump">
 					<?php if ( $vote_lead_img ) : ?><a class="btn btn--gold" href="#gallery"><?php echo vote_e( t( 'See %s stickers', vote_lname( $vote_st ) ) ); ?> <span aria-hidden="true">↓</span></a><?php endif; ?>
@@ -1424,7 +1440,7 @@ window.VOTE_ASSETS = <?php echo vote_json( VOTE_BASE . 'assets/' ); ?>;
 window.VOTE_PAGE_STATE = <?php echo vote_json( $vote_abbr ); ?>;</script>
 <script>(function(){var D=864e5;function n(d){return Date.UTC(d.getFullYear(),d.getMonth(),d.getDate())/D;}
 document.querySelectorAll('[data-countdown]').forEach(function(el){var t=el.querySelector('time'),r=el.querySelector('.countdown__rel'),l=el.querySelector('[data-countdown-label]'),m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(t?t.getAttribute('datetime'):'');if(!m||!r||!l){return;}
-var e=new Date(+m[1],+m[2]-1,+m[3]);function u(){var d=n(e)-n(new Date());r.hidden=d<0;l.textContent=d<0?'':d===0?el.dataset.today:d===1?el.dataset.tomorrow:el.dataset.away.replace('%s',d);}u();setInterval(u,6e4);});})();</script>
+var e=new Date(+m[1],+m[2]-1,+m[3]);function u(){var d=n(e)-n(new Date());r.hidden=d<0;if(el.hasAttribute('data-hide-after')){el.hidden=d<0;}l.textContent=d<0?'':d===0?el.dataset.today:d===1?el.dataset.tomorrow:el.dataset.away.replace('%s',d);}u();setInterval(u,6e4);});})();</script>
 <script src="<?php echo vote_v( 'states.js' ); ?>"></script>
 <script src="<?php echo vote_v( 'state-shapes.js' ); ?>"></script>
 <script src="<?php echo vote_v( 'app.js' ); ?>"></script>
