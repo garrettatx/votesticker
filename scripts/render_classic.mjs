@@ -86,7 +86,9 @@ const b = await chromium.launch();
 const p = await b.newPage({ viewport: { width: 1280, height: 900 } });
 const errs = []; p.on('pageerror', (e) => errs.push(String(e)));
 await p.goto(BASE + 'texas/', { waitUntil: 'networkidle' });
-await p.waitForFunction(() => window.VOTE_CARDS && document.fonts.status === 'loaded');
+// Wait for the two faces themselves: document.fonts.status can read 'loaded' before app.js has added them,
+// and a render then would measure and draw a fallback font.
+await p.waitForFunction(() => window.VOTE_CARDS && ['Vote Display', 'Vote Date'].every((f) => [...document.fonts].some((x) => x.family.replace(/"/g, '') === f && x.status === 'loaded')));
 const out = await p.evaluate(({ plan, SIZE }) => plan.map((x) => {
   const V = window.VOTE_CARDS, c = document.createElement('canvas');
   V.render(c, SIZE, { state: 'DC', design: x.layout, palette: 'navy', headline: x.headline, dateText: '', tilt: 0 });

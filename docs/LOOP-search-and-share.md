@@ -201,3 +201,20 @@ Measure each change in Search Console from its recrawl date.
   fill transparent); the cut now sets an opaque fill. QA: qa_seo, qa_es, qa_facts, qa_events pass;
   Playwright: 6 then 18 visible, download name and one sticker_save per tap, EN and ES, 390 and 1280 px;
   sitemap lists all 36 images.
+- **October 27, classic set typography polish (not pushed).** Diagnosis: the Star ring forced every
+  line to one width, so short supporting words (VOTER, EARLY, HOY) blew up to 1.5 to 2 times the
+  primary and long ones shrank; its five red stars counted fully in centering, dropping the words 28 to
+  46 px below the disc's middle. Stars and stripes held the supporting line at 48 percent of a
+  primary that long words (FIRST-TIME, YO TAMBIÉN) had already shrunk, with 0.10 tracking and a width
+  cap, so POR CORREO and TEMPRANO came out tiny and spaced. Banded's lower word changed size with its
+  length. No horizontal distortion anywhere (all fitting is uniform font size). The export waited on
+  `document.fonts.status`, which can read loaded before the faces are added; it now waits for both
+  faces. Changes, all in one token object (`CT` in `site/app.js`): supporting line 52 to 62 percent of
+  the primary (more when the primary is width-limited and the band has room), at most 1.1 times its
+  width, tracking 0.05; Stars and stripes band 320 to 350; Star ring lines sized each on their own with
+  the shorter growing to at most 1.3 times the longer, leading 0.2, star gap 0.24, stars 0.12, star row
+  weighted 0.3 in centering, disc clearance 1.14; Banded lower word one cap height (132). Measured on
+  all 36 exports: band white above and below within 2 px; ring words within 14 px of the disc's middle
+  (was 28 to 46), ring clearance 45 to 63 px (was 34 to 53). Before/after sheets at 360, 160, 96 and 48
+  px in `backlog/classic-national-stickers/polish-20261027/`. QA: qa_seo, qa_es, qa_events pass; home
+  page 6 then 18, downloads and one sticker_save per tap, EN and ES.

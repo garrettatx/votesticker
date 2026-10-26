@@ -504,26 +504,63 @@
 	// The white band of Stars and stripes and Banded: the same size on every sticker, the words centered in
 	// it on their capitals with at least BAND_PAD above and below, as large as the band and circle allow.
 	var BAND = 320, BAND_PAD = 92;
-	function bandText(lines, mainColor, subColor) {
-		var room = 2 * (BAND - BAND_PAD), items;
+	// Type tokens for the classic set (polish pass, October 27). Sizes are cap heights in layout units
+	// (the visible circle's radius is CR = 1000); ratios are against the primary line's cap height.
+	var CT = {
+		reach: 850,          // no corner of a text line farther than this from the center (circle edge 1000)
+		subTrack: 0.05,      // Archivo Black tracking on supporting words: readable by size, not by spacing
+		subMin: 0.52,        // a supporting line is at least half the primary's cap height...
+		subMax: 0.62,        // ...and up to 62 percent when the primary is held back by its width
+		subWidth: 1.1,       // ...and never wider than 1.1x the primary line
+		lineGap: 0.2,        // between stacked lines, plus any accent on the lower line
+		baseCap: 132,        // Banded: supporting word's cap height in the red base
+		ringRatio: 1.3,      // Star ring: the shorter line grows to at most 1.3x the longer line's size
+		ringLeading: 0.2,
+		ringStarGap: 0.24,   // Star ring: space between the red star row and the message (x primary cap)
+		ringClear: 1.14,     // Star ring: white disc radius as a multiple of the message's farthest corner
+		ringStar: 0.12,      // Star ring: red star radius (x primary cap); big enough to read at 96 px
+		ringStarWeight: 0.3, // Star ring: how much the light star row counts when centering the composition
+		flagBand: 350        // Stars and stripes: a taller white band than Banded's, for two-line messages
+	};
+	function bandText(lines, mainColor, subColor, band) {
+		var room = 2 * ((band || BAND) - BAND_PAD);
 		if (lines.length < 2) {
-			// Capped below the band's full height so an accent (YO VOTÉ) clears the navy edge (Oct 26).
-			// Equal white above and below the ink: an accent counts as part of the word's height.
-			var one = classicText([lines[0]], DISPLAY, 850, room * 0.84), a1 = one.lines[0].acc;
+			// Capped below the band's full height so an accent (YO VOTÉ) clears the navy edge; the white
+			// above and below the ink is equal, an accent counting as part of the word's height.
+			var one = classicText([lines[0]], DISPLAY, CT.reach, room * 0.84), a1 = one.lines[0].acc;
 			return placeText(one, 0, -(one.asc - a1) / 2, mainColor).items;
 		}
-		// Two lines (Stars and stripes, October 26: "size up the secondary line"): the second at 48 percent of
-		// the first's cap height, the pair centered on their capitals so the white above the first line equals
-		// the white below the second.
-		for (var cap = room / 1.66; ; cap *= 0.96) {
-			var main = classicText([lines[0]], DISPLAY, 850, cap);
-			var sub = capBlock([lines.slice(1).join(' ')], DATE, Math.min(main.lines[0].w * 0.94, 1300), main.asc * 0.48, { track: 0.1 });
-			var gap = main.asc * 0.18 + sub.lines[0].acc, h = main.asc + gap + sub.asc, y0 = -(h - main.lines[0].acc) / 2;
-			var sw = sub.lines[0].w / 2, mw = main.lines[0].w / 2;
-			if ((Math.hypot(sw, h / 2) <= 850 && Math.hypot(mw, h / 2) <= 850) || cap < 120) {
-				return placeText(main, 0, y0, mainColor).items.concat(placeText(sub, 0, y0 + main.asc + gap, subColor).items);
+		// Two lines (Stars and stripes). The primary fills the band's height or the circle's width, whichever
+		// comes first; the supporting line takes half its cap height, or up to 62 percent when the primary
+		// was held back by its width (FIRST-TIME, YO TAMBIÉN) and the band has height to spare. The pair is
+		// centered as one block on its ink.
+		for (var cap = room / (1 + CT.lineGap + CT.subMin); cap > 60; cap *= 0.97) {
+			var main = classicText([lines[0]], DISPLAY, CT.reach, cap), m = main.asc;
+			var subCap = Math.max(m * CT.subMin, Math.min(m * CT.subMax, room - m * (1 + CT.lineGap)));
+			// No wider than 1.1x the primary, so a long supporting word (TEMPRANO, POR CORREO) doesn't outgrow it.
+			var sub = capBlock([lines.slice(1).join(' ')], DATE, main.lines[0].w * CT.subWidth, subCap, { track: CT.subTrack });
+			var gap = m * CT.lineGap + sub.lines[0].acc, h = m + gap + sub.asc, y0 = -(h - main.lines[0].acc) / 2;
+			var fits = [main.lines[0].w / 2, sub.lines[0].w / 2].every(function (hw) { return Math.hypot(hw, h / 2) <= CT.reach; });
+			if (fits && h <= room + 1) {
+				return placeText(main, 0, y0, mainColor).items.concat(placeText(sub, 0, y0 + m + gap, subColor).items);
 			}
 		}
+		return [];
+	}
+	// Star ring message: each line its own size. The longer line fills the width; the shorter grows to at
+	// most CT.ringRatio times the longer line's size, so FIRST-TIME / VOTER keeps a hierarchy instead of a
+	// giant VOTER (the old justified block forced every line to the same width).
+	function ringBlock(lines) {
+		measureCtx.font = '200px ' + DISPLAY;
+		var W = 560, ms = lines.map(function (s) { return capBlock([s], DISPLAY, W, 0, {}); });
+		var ks = ms.map(function (b) { return b.size / 200; }), kmin = Math.min.apply(null, ks);
+		var ls = ms.map(function (b, i) {
+			var r = Math.min(ks[i], kmin * CT.ringRatio) / ks[i], l = b.lines[0];
+			return { s: l.s, w: l.w * r, left: l.left * r, size: b.size * r, asc: b.asc * r, desc: b.desc * r, acc: l.acc * r, ls: 0 };
+		});
+		var minAsc = Math.min.apply(null, ls.map(function (l) { return l.asc; }));
+		var gap = minAsc * CT.ringLeading + (ls[1] ? ls[1].acc : 0);
+		return { family: DISPLAY, size: ls[0].size, asc: ls[0].asc, desc: 0, gap: gap, ls: 0, lines: ls };
 	}
 	// Two staggered rows of stars centered at height cy, as many as the circle's chord there holds.
 	function classicStars(cy, R, color) {
@@ -968,27 +1005,31 @@
 		// the profile-picture circle exactly. The white band is centered on the sticker; star rows sit in the
 		// middle of the visible navy cap, a second word in the middle of the visible red base.
 		cflag: function (st, p, lines) {
-			var C = CLASSIC, items = bandText(lines, C.red, C.navy);
-			var deco = [{ t: 'box', box: [-4000, -4000, 4000, 4000], color: C.white, nofit: true }, { t: 'box', box: [-4000, -4000, 4000, -BAND], color: C.navy, nofit: true }];
+			var C = CLASSIC, FB = CT.flagBand, items = bandText(lines, C.red, C.navy, FB);
+			var deco = [{ t: 'box', box: [-4000, -4000, 4000, 4000], color: C.white, nofit: true }, { t: 'box', box: [-4000, -4000, 4000, -FB], color: C.navy, nofit: true }];
 			// The first red stripe starts at the band's edge, so the white band reads as exactly the band (a white
 			// gap above the stripes made the words look high, October 26).
-			for (var k = 0; k < 8; k++) { var y = BAND + k * 150; deco.push({ t: 'box', box: [-4000, y, 4000, y + 75], color: C.red, nofit: true }); }
-			return { items: deco.concat(classicStars(-(BAND + CR) / 2, CR, C.white), items, classicFrame()), safe: SAFE };
+			for (var k = 0; k < 8; k++) { var y = FB + k * 150; deco.push({ t: 'box', box: [-4000, y, 4000, y + 75], color: C.red, nofit: true }); }
+			return { items: deco.concat(classicStars(-(FB + CR) / 2, CR, C.white), items, classicFrame()), safe: SAFE };
 		},
 		cring: function (st, p, lines) {
-			var C = CLASSIC, big = capBlock(lines, DISPLAY, 560, 230, { justify: true, leading: 0.12 });
-			// Room for accents, which hang above the capitals: under the star row, and between the lines.
-			var acc = function (i) { return /[À-ÿ]/.test(lines[i] || '') ? big.lines[i].asc * 0.26 : 0; };
-			if (big.lines[1]) { big.gap = Math.max(big.gap, acc(1) + big.asc * 0.08); }
+			// Stars, message and ring as one composition: the red star row sits a set gap above the message
+			// (above any accent), the group is centered on its bounds, and the white disc clears the farthest
+			// corner by CT.ringClear.
+			var C = CLASSIC, big = ringBlock(lines), l0 = big.lines[0];
 			var head = placeText(big, 0, 0, C.navy);
 			head.items[0].color = C.red;
-			var row = [], k, sr = big.asc * 0.1;
-			for (k = -2; k <= 2; k++) { row.push({ t: 'star', cx: k * sr * 3, cy: -sr * 2.6 - acc(0), r: sr, color: C.red }); }
-			var group = row.concat(head.items), b = bounds(group);
-			shift(group, 0, -(b[1] + b[3]) / 2);
+			var row = [], k, sr = l0.asc * CT.ringStar, cy = -(l0.acc + l0.asc * CT.ringStarGap + sr);
+			for (k = -2; k <= 2; k++) { row.push({ t: 'star', cx: k * sr * 3, cy: cy, r: sr, color: C.red }); }
+			// Optical centering (Garrett, October 27: more white above than below): the five small stars weigh
+			// far less than the words, so centering the full bounds dropped the words 28 to 46 px below the
+			// disc's middle at export size. The star row now counts for CT.ringStarWeight of its height.
+			var group = row.concat(head.items), b = bounds(group), wb = bounds(head.items), starBlock = wb[1] - b[1];
+			shift(group, 0, -(b[1] + b[3]) / 2 - starBlock * (1 - CT.ringStarWeight) / 2);
 			var pts = []; group.forEach(function (it) { pts = pts.concat(itemPoints(it)); });
+			// The disc is sized from the center, so it still clears every corner, stars included.
 			var far = Math.max.apply(null, pts.map(function (q) { return Math.hypot(q[0], q[1]); }));
-			var ri = far * 1.1, R = ri * 1.32, ring = [{ t: 'disc', cx: 0, cy: 0, r: R, color: C.navy }, { t: 'disc', cx: 0, cy: 0, r: ri, color: C.white }];
+			var ri = far * CT.ringClear, R = ri * 1.32, ring = [{ t: 'disc', cx: 0, cy: 0, r: R, color: C.navy }, { t: 'disc', cx: 0, cy: 0, r: ri, color: C.white }];
 			for (k = 0; k < 16; k++) { var a = k * Math.PI / 8; ring.push({ t: 'star', cx: Math.cos(a) * (R + ri) / 2, cy: Math.sin(a) * (R + ri) / 2, r: (R - ri) * 0.26, color: C.white }); }
 			return { items: ring.concat(group), safe: SAFE };
 		},
@@ -997,9 +1038,11 @@
 			var C = CLASSIC, items = bandText([lines[0]], C.navy);
 			var deco = [{ t: 'box', box: [-4000, -4000, 4000, 4000], color: C.white, nofit: true }, { t: 'box', box: [-4000, -4000, 4000, -BAND], color: C.navy, nofit: true }, { t: 'box', box: [-4000, BAND, 4000, 4000], color: C.red, nofit: true }];
 			if (lines.length > 1) {
-				var yc = (BAND + CR) / 2 - 10, cap = Math.min(150, (CR - BAND) * 0.3), half = Math.sqrt(CR * CR - Math.pow(yc + cap / 2, 2)) - 70;
-				var sb = capBlock([lines.slice(1).join(' ')], DATE, 2 * half, cap, { track: 0.1 });
-				items = items.concat(placeText(sb, 0, yc - sb.asc / 2, C.white).items);
+				// One cap height for every supporting word (CT.baseCap) unless the base's width at that height
+				// can't hold it; centered a little above the base's geometric middle, where it is widest.
+				var yc = (BAND + CR) / 2 - 16, cap = CT.baseCap, half = Math.sqrt(CR * CR - Math.pow(yc + cap / 2, 2)) - 80;
+				var sb = capBlock([lines.slice(1).join(' ')], DATE, 2 * half, cap, { track: CT.subTrack });
+				items = items.concat(placeText(sb, 0, yc - (sb.asc - sb.lines[0].acc) / 2, C.white).items);
 			}
 			return { items: deco.concat(classicStars(-(BAND + CR) / 2, CR, C.white), items, classicFrame()), safe: SAFE };
 		},
