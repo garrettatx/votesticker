@@ -1469,6 +1469,30 @@ $vote_ld = array(
 	$vote_prev = false !== $vote_pos && $vote_pos > 0 ? $vote_keys[ $vote_pos - 1 ] : '';
 	$vote_next = false !== $vote_pos && $vote_pos < count( $vote_keys ) - 1 ? $vote_keys[ $vote_pos + 1 ] : '';
 	?>
+	<?php
+	// Classic stickers on state pages (October 26, Garrett: national phrases rank on state pages, so link the
+	// home page's classic set from each one). Three of the set in the page's language, each linking to it;
+	// the third message fits the state: I voted early only with verified in-person early voting, I voted by
+	// mail only in verified all-mail states, else Future voter. Home page section: #ready-to-share.
+	$vote_classic_st = array();
+	if ( $vote_st && is_file( __DIR__ . '/assets/classic/classic.json' ) ) {
+		$es = vote_es();
+		$third = vote_verified( $vote_st ) && 'in-person' === ( $vote_st['kind'] ?? '' ) ? ( $es ? 'yovotetemprano' : 'voted' )
+			: ( vote_verified( $vote_st ) && 'mail' === ( $vote_st['kind'] ?? '' ) ? ( $es ? 'yovotecorreo' : 'mailed' ) : ( $es ? 'yotambien' : 'futurevoter' ) );
+		$want = array( array( 'cring', $es ? 'yovote' : 'ivoted' ), array( 'cflag', $es ? 'yovotehoy' : 'ivotedtoday' ), array( 'cband', $third ) );
+		$all = json_decode( (string) file_get_contents( __DIR__ . '/assets/classic/classic.json' ), true );
+		foreach ( $want as $w ) { foreach ( $all as $c ) { if ( $c['layout'] === $w[0] && $c['headline'] === $w[1] ) { $vote_classic_st[] = $c; } } }
+	}
+	if ( $vote_classic_st ) : ?>
+	<section class="classic-strip" aria-labelledby="classic-strip-h">
+		<h2 id="classic-strip-h"><?php echo vote_e( t( 'Classic I Voted Stickers' ) ); ?></h2>
+		<p><?php echo vote_e( t( 'Prefer the traditional red, white and blue? These work in any state.' ) ); ?></p>
+		<div class="classic-strip__row">
+			<?php foreach ( $vote_classic_st as $c ) : ?><a class="pick pick--classic" href="<?php echo vote_pbase(); ?>#ready-to-share"><img src="<?php echo vote_v( "assets/classic/{$c['stem']}.png" ); ?>" alt="<?php echo vote_e( $c['alt'] ); ?>" width="1080" height="1080" loading="lazy"></a><?php endforeach; ?>
+		</div>
+		<p class="showcase__more"><a href="<?php echo vote_pbase(); ?>#ready-to-share"><?php echo vote_e( t( 'See all 18 classic I voted stickers' ) ); ?></a></p>
+	</section>
+	<?php endif; ?>
 	<div class="discover">
 	<?php if ( $vote_st ) : ?><div class="discover__find"><?php echo vote_finder( 'Looking for another state?', 'Type a state name' ); ?></div><?php endif; ?>
 	<?php if ( $vote_same && $vote_same_h ) : ?>
