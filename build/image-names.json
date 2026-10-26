@@ -1,0 +1,2868 @@
+{
+ "built_from": "build/image_names.py",
+ "status": "map only; not switched",
+ "images": [
+  {
+   "old": "/assets/states/ak/ak-i-voted-1.jpg",
+   "new": "/assets/states/ak/alaska-i-voted-sticker-state-colors.jpg",
+   "order": 1,
+   "redirect": "/assets/states/ak/ak-i-voted-1.jpg /assets/states/ak/alaska-i-voted-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/ak/ak-i-voted-2.jpg",
+   "new": "/assets/states/ak/alaska-i-voted-sticker-navy.jpg",
+   "order": 2,
+   "redirect": "/assets/states/ak/ak-i-voted-2.jpg /assets/states/ak/alaska-i-voted-sticker-navy.jpg 301"
+  },
+  {
+   "old": "/assets/states/ak/ak-i-voted-early.jpg",
+   "new": "/assets/states/ak/alaska-i-voted-early-sticker-state-colors.jpg",
+   "order": 3,
+   "redirect": "/assets/states/ak/ak-i-voted-early.jpg /assets/states/ak/alaska-i-voted-early-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/ak/ak-vote-1.jpg",
+   "new": "/assets/states/ak/alaska-vote-early-sticker-plum-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/ak/ak-vote-1.jpg /assets/states/ak/alaska-vote-early-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ak/ak-vote-2.jpg",
+   "new": "/assets/states/ak/alaska-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/ak/ak-vote-2.jpg /assets/states/ak/alaska-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ak/ak-vote-nov-3.jpg",
+   "new": "/assets/states/ak/alaska-vote-election-day-sticker-cream.jpg",
+   "order": 6,
+   "redirect": "/assets/states/ak/ak-vote-nov-3.jpg /assets/states/ak/alaska-vote-election-day-sticker-cream.jpg 301"
+  },
+  {
+   "old": "/assets/states/al/al-vote-1.jpg",
+   "new": "/assets/states/al/alabama-vote-election-day-sticker-cream-outline.jpg",
+   "order": 1,
+   "redirect": "/assets/states/al/al-vote-1.jpg /assets/states/al/alabama-vote-election-day-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/al/al-vote-2.jpg",
+   "new": "/assets/states/al/alabama-vote-election-day-sticker-navy-outline.jpg",
+   "order": 2,
+   "redirect": "/assets/states/al/al-vote-2.jpg /assets/states/al/alabama-vote-election-day-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/al/al-vote-3.jpg",
+   "new": "/assets/states/al/alabama-vote-election-day-sticker-forest-green-outline.jpg",
+   "order": 3,
+   "redirect": "/assets/states/al/al-vote-3.jpg /assets/states/al/alabama-vote-election-day-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/al/al-vote-4.jpg",
+   "new": "/assets/states/al/alabama-vote-election-day-sticker-maroon-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/al/al-vote-4.jpg /assets/states/al/alabama-vote-election-day-sticker-maroon-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/al/al-vote-5.jpg",
+   "new": "/assets/states/al/alabama-vote-election-day-sticker-cobalt-blue-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/al/al-vote-5.jpg /assets/states/al/alabama-vote-election-day-sticker-cobalt-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/al/al-vote-6.jpg",
+   "new": "/assets/states/al/alabama-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/al/al-vote-6.jpg /assets/states/al/alabama-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/al/al-vote-7.jpg",
+   "new": "/assets/states/al/alabama-i-voted-sticker-plum-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/al/al-vote-7.jpg /assets/states/al/alabama-i-voted-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/al/al-vote-8.jpg",
+   "new": "/assets/states/al/alabama-i-voted-sticker-mustard-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/al/al-vote-8.jpg /assets/states/al/alabama-i-voted-sticker-mustard-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/al/al-vote-9.jpg",
+   "new": "/assets/states/al/alabama-make-a-plan-vote-sticker-maroon-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/al/al-vote-9.jpg /assets/states/al/alabama-make-a-plan-vote-sticker-maroon-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/al/al-vote-10.jpg",
+   "new": "/assets/states/al/alabama-votes-sticker-teal-outline.jpg",
+   "order": 10,
+   "redirect": "/assets/states/al/al-vote-10.jpg /assets/states/al/alabama-votes-sticker-teal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ar/ar-vote-1.jpg",
+   "new": "/assets/states/ar/arkansas-vote-election-day-sticker-cream-outline.jpg",
+   "order": 1,
+   "redirect": "/assets/states/ar/ar-vote-1.jpg /assets/states/ar/arkansas-vote-election-day-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ar/ar-vote-2.jpg",
+   "new": "/assets/states/ar/arkansas-vote-election-day-sticker-navy-outline.jpg",
+   "order": 2,
+   "redirect": "/assets/states/ar/ar-vote-2.jpg /assets/states/ar/arkansas-vote-election-day-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ar/ar-vote-3.jpg",
+   "new": "/assets/states/ar/arkansas-vote-election-day-sticker-forest-green-outline.jpg",
+   "order": 3,
+   "redirect": "/assets/states/ar/ar-vote-3.jpg /assets/states/ar/arkansas-vote-election-day-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ar/ar-vote-4.jpg",
+   "new": "/assets/states/ar/arkansas-vote-election-day-sticker-dark-green-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/ar/ar-vote-4.jpg /assets/states/ar/arkansas-vote-election-day-sticker-dark-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ar/ar-vote-5.jpg",
+   "new": "/assets/states/ar/arkansas-vote-election-day-sticker-cobalt-blue-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/ar/ar-vote-5.jpg /assets/states/ar/arkansas-vote-election-day-sticker-cobalt-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ar/ar-vote-6.jpg",
+   "new": "/assets/states/ar/arkansas-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/ar/ar-vote-6.jpg /assets/states/ar/arkansas-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ar/ar-vote-7.jpg",
+   "new": "/assets/states/ar/arkansas-i-voted-sticker-maroon-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/ar/ar-vote-7.jpg /assets/states/ar/arkansas-i-voted-sticker-maroon-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ar/ar-vote-8.jpg",
+   "new": "/assets/states/ar/arkansas-i-voted-sticker-plum-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/ar/ar-vote-8.jpg /assets/states/ar/arkansas-i-voted-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ar/ar-vote-9.jpg",
+   "new": "/assets/states/ar/arkansas-make-a-plan-vote-sticker-teal-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/ar/ar-vote-9.jpg /assets/states/ar/arkansas-make-a-plan-vote-sticker-teal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ar/ar-vote-10.jpg",
+   "new": "/assets/states/ar/arkansas-votes-sticker-mustard-outline.jpg",
+   "order": 10,
+   "redirect": "/assets/states/ar/ar-vote-10.jpg /assets/states/ar/arkansas-votes-sticker-mustard-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/az/az-vote-1.jpg",
+   "new": "/assets/states/az/arizona-vote-election-day-sticker-cream-outline.jpg",
+   "order": 1,
+   "redirect": "/assets/states/az/az-vote-1.jpg /assets/states/az/arizona-vote-election-day-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/az/az-vote-2.jpg",
+   "new": "/assets/states/az/arizona-vote-election-day-sticker-navy-outline.jpg",
+   "order": 2,
+   "redirect": "/assets/states/az/az-vote-2.jpg /assets/states/az/arizona-vote-election-day-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/az/az-vote-3.jpg",
+   "new": "/assets/states/az/arizona-vote-election-day-sticker-forest-green-outline.jpg",
+   "order": 3,
+   "redirect": "/assets/states/az/az-vote-3.jpg /assets/states/az/arizona-vote-election-day-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/az/az-vote-4.jpg",
+   "new": "/assets/states/az/arizona-vote-election-day-sticker-dark-blue-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/az/az-vote-4.jpg /assets/states/az/arizona-vote-election-day-sticker-dark-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/az/az-vote-5.jpg",
+   "new": "/assets/states/az/arizona-vote-election-day-sticker-cobalt-blue-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/az/az-vote-5.jpg /assets/states/az/arizona-vote-election-day-sticker-cobalt-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/az/az-vote-6.jpg",
+   "new": "/assets/states/az/arizona-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/az/az-vote-6.jpg /assets/states/az/arizona-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/az/az-vote-7.jpg",
+   "new": "/assets/states/az/arizona-i-voted-sticker-maroon-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/az/az-vote-7.jpg /assets/states/az/arizona-i-voted-sticker-maroon-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/az/az-vote-8.jpg",
+   "new": "/assets/states/az/arizona-i-voted-sticker-teal-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/az/az-vote-8.jpg /assets/states/az/arizona-i-voted-sticker-teal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/az/az-vote-9.jpg",
+   "new": "/assets/states/az/arizona-make-a-plan-vote-sticker-plum-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/az/az-vote-9.jpg /assets/states/az/arizona-make-a-plan-vote-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/az/az-vote-10.jpg",
+   "new": "/assets/states/az/arizona-votes-sticker-charcoal-outline.jpg",
+   "order": 10,
+   "redirect": "/assets/states/az/az-vote-10.jpg /assets/states/az/arizona-votes-sticker-charcoal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ca/ca-i-voted-1.jpg",
+   "new": "/assets/states/ca/california-i-voted-sticker-state-colors.jpg",
+   "order": 1,
+   "redirect": "/assets/states/ca/ca-i-voted-1.jpg /assets/states/ca/california-i-voted-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/ca/ca-i-voted-2.jpg",
+   "new": "/assets/states/ca/california-i-voted-sticker-navy.jpg",
+   "order": 2,
+   "redirect": "/assets/states/ca/ca-i-voted-2.jpg /assets/states/ca/california-i-voted-sticker-navy.jpg 301"
+  },
+  {
+   "old": "/assets/states/ca/ca-i-voted-by-mail.jpg",
+   "new": "/assets/states/ca/california-i-voted-by-mail-sticker-state-colors.jpg",
+   "order": 3,
+   "redirect": "/assets/states/ca/ca-i-voted-by-mail.jpg /assets/states/ca/california-i-voted-by-mail-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/ca/ca-vote-1.jpg",
+   "new": "/assets/states/ca/california-vote-by-mail-sticker-dark-blue-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/ca/ca-vote-1.jpg /assets/states/ca/california-vote-by-mail-sticker-dark-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ca/ca-vote-2.jpg",
+   "new": "/assets/states/ca/california-vote-by-mail-sticker-navy-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/ca/ca-vote-2.jpg /assets/states/ca/california-vote-by-mail-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ca/ca-vote-3.jpg",
+   "new": "/assets/states/ca/california-vote-by-mail-sticker-sand-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/ca/ca-vote-3.jpg /assets/states/ca/california-vote-by-mail-sticker-sand-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ca/ca-vote-4.jpg",
+   "new": "/assets/states/ca/california-vote-by-mail-sticker-dark-blue-outline-2.jpg",
+   "order": 7,
+   "redirect": "/assets/states/ca/ca-vote-4.jpg /assets/states/ca/california-vote-by-mail-sticker-dark-blue-outline-2.jpg 301"
+  },
+  {
+   "old": "/assets/states/ca/ca-vote-5.jpg",
+   "new": "/assets/states/ca/california-vote-by-mail-sticker-cream-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/ca/ca-vote-5.jpg /assets/states/ca/california-vote-by-mail-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ca/ca-vote-6.jpg",
+   "new": "/assets/states/ca/california-vote-by-mail-sticker-light-blue-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/ca/ca-vote-6.jpg /assets/states/ca/california-vote-by-mail-sticker-light-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ca/ca-vote-nov-3.jpg",
+   "new": "/assets/states/ca/california-vote-election-day-sticker-cream.jpg",
+   "order": 10,
+   "redirect": "/assets/states/ca/ca-vote-nov-3.jpg /assets/states/ca/california-vote-election-day-sticker-cream.jpg 301"
+  },
+  {
+   "old": "/assets/states/co/co-i-voted-1.jpg",
+   "new": "/assets/states/co/colorado-i-voted-sticker-state-colors.jpg",
+   "order": 1,
+   "redirect": "/assets/states/co/co-i-voted-1.jpg /assets/states/co/colorado-i-voted-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/co/co-i-voted-2.jpg",
+   "new": "/assets/states/co/colorado-i-voted-sticker-navy.jpg",
+   "order": 2,
+   "redirect": "/assets/states/co/co-i-voted-2.jpg /assets/states/co/colorado-i-voted-sticker-navy.jpg 301"
+  },
+  {
+   "old": "/assets/states/co/co-i-voted-by-mail.jpg",
+   "new": "/assets/states/co/colorado-i-voted-by-mail-sticker-state-colors.jpg",
+   "order": 3,
+   "redirect": "/assets/states/co/co-i-voted-by-mail.jpg /assets/states/co/colorado-i-voted-by-mail-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/co/co-vote-1.jpg",
+   "new": "/assets/states/co/colorado-vote-by-mail-sticker-navy-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/co/co-vote-1.jpg /assets/states/co/colorado-vote-by-mail-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/co/co-vote-2.jpg",
+   "new": "/assets/states/co/colorado-vote-by-mail-sticker-forest-green-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/co/co-vote-2.jpg /assets/states/co/colorado-vote-by-mail-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/co/co-vote-3.jpg",
+   "new": "/assets/states/co/colorado-vote-by-mail-sticker-navy-outline-2.jpg",
+   "order": 6,
+   "redirect": "/assets/states/co/co-vote-3.jpg /assets/states/co/colorado-vote-by-mail-sticker-navy-outline-2.jpg 301"
+  },
+  {
+   "old": "/assets/states/co/co-vote-4.jpg",
+   "new": "/assets/states/co/colorado-vote-by-mail-sticker-dark-blue-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/co/co-vote-4.jpg /assets/states/co/colorado-vote-by-mail-sticker-dark-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/co/co-vote-5.jpg",
+   "new": "/assets/states/co/colorado-vote-by-mail-sticker-cream-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/co/co-vote-5.jpg /assets/states/co/colorado-vote-by-mail-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/co/co-vote-6.jpg",
+   "new": "/assets/states/co/colorado-vote-by-mail-sticker-forest-green-outline-2.jpg",
+   "order": 9,
+   "redirect": "/assets/states/co/co-vote-6.jpg /assets/states/co/colorado-vote-by-mail-sticker-forest-green-outline-2.jpg 301"
+  },
+  {
+   "old": "/assets/states/co/co-vote-7.jpg",
+   "new": "/assets/states/co/colorado-vote-by-mail-sticker-sand-outline.jpg",
+   "order": 10,
+   "redirect": "/assets/states/co/co-vote-7.jpg /assets/states/co/colorado-vote-by-mail-sticker-sand-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/co/co-vote-nov-3.jpg",
+   "new": "/assets/states/co/colorado-vote-election-day-sticker-cream.jpg",
+   "order": 11,
+   "redirect": "/assets/states/co/co-vote-nov-3.jpg /assets/states/co/colorado-vote-election-day-sticker-cream.jpg 301"
+  },
+  {
+   "old": "/assets/states/ct/ct-vote-1.jpg",
+   "new": "/assets/states/ct/connecticut-vote-election-day-sticker-cream-outline.jpg",
+   "order": 1,
+   "redirect": "/assets/states/ct/ct-vote-1.jpg /assets/states/ct/connecticut-vote-election-day-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ct/ct-vote-2.jpg",
+   "new": "/assets/states/ct/connecticut-vote-election-day-sticker-navy-outline.jpg",
+   "order": 2,
+   "redirect": "/assets/states/ct/ct-vote-2.jpg /assets/states/ct/connecticut-vote-election-day-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ct/ct-vote-3.jpg",
+   "new": "/assets/states/ct/connecticut-vote-election-day-sticker-forest-green-outline.jpg",
+   "order": 3,
+   "redirect": "/assets/states/ct/ct-vote-3.jpg /assets/states/ct/connecticut-vote-election-day-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ct/ct-vote-4.jpg",
+   "new": "/assets/states/ct/connecticut-vote-election-day-sticker-dark-blue-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/ct/ct-vote-4.jpg /assets/states/ct/connecticut-vote-election-day-sticker-dark-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ct/ct-vote-5.jpg",
+   "new": "/assets/states/ct/connecticut-vote-election-day-sticker-cobalt-blue-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/ct/ct-vote-5.jpg /assets/states/ct/connecticut-vote-election-day-sticker-cobalt-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ct/ct-vote-6.jpg",
+   "new": "/assets/states/ct/connecticut-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/ct/ct-vote-6.jpg /assets/states/ct/connecticut-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ct/ct-vote-7.jpg",
+   "new": "/assets/states/ct/connecticut-i-voted-sticker-maroon-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/ct/ct-vote-7.jpg /assets/states/ct/connecticut-i-voted-sticker-maroon-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ct/ct-vote-8.jpg",
+   "new": "/assets/states/ct/connecticut-i-voted-sticker-teal-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/ct/ct-vote-8.jpg /assets/states/ct/connecticut-i-voted-sticker-teal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ct/ct-vote-9.jpg",
+   "new": "/assets/states/ct/connecticut-make-a-plan-vote-sticker-plum-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/ct/ct-vote-9.jpg /assets/states/ct/connecticut-make-a-plan-vote-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ct/ct-vote-10.jpg",
+   "new": "/assets/states/ct/connecticut-vote-election-day-sticker-dark-green-outline.jpg",
+   "order": 10,
+   "redirect": "/assets/states/ct/ct-vote-10.jpg /assets/states/ct/connecticut-vote-election-day-sticker-dark-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/dc/dc-i-voted-1.jpg",
+   "new": "/assets/states/dc/district-of-columbia-i-voted-sticker-state-colors.jpg",
+   "order": 1,
+   "redirect": "/assets/states/dc/dc-i-voted-1.jpg /assets/states/dc/district-of-columbia-i-voted-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/dc/dc-i-voted-2.jpg",
+   "new": "/assets/states/dc/district-of-columbia-i-voted-sticker-navy.jpg",
+   "order": 2,
+   "redirect": "/assets/states/dc/dc-i-voted-2.jpg /assets/states/dc/district-of-columbia-i-voted-sticker-navy.jpg 301"
+  },
+  {
+   "old": "/assets/states/dc/dc-i-voted-early.jpg",
+   "new": "/assets/states/dc/district-of-columbia-i-voted-early-sticker-state-colors.jpg",
+   "order": 3,
+   "redirect": "/assets/states/dc/dc-i-voted-early.jpg /assets/states/dc/district-of-columbia-i-voted-early-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/dc/dc-vote-1.jpg",
+   "new": "/assets/states/dc/district-of-columbia-vote-early-sticker-cream-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/dc/dc-vote-1.jpg /assets/states/dc/district-of-columbia-vote-early-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/dc/dc-vote-2.jpg",
+   "new": "/assets/states/dc/district-of-columbia-vote-early-sticker-navy-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/dc/dc-vote-2.jpg /assets/states/dc/district-of-columbia-vote-early-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/dc/dc-vote-3.jpg",
+   "new": "/assets/states/dc/district-of-columbia-vote-early-sticker-cream-outline-2.jpg",
+   "order": 6,
+   "redirect": "/assets/states/dc/dc-vote-3.jpg /assets/states/dc/district-of-columbia-vote-early-sticker-cream-outline-2.jpg 301"
+  },
+  {
+   "old": "/assets/states/dc/dc-vote-4.jpg",
+   "new": "/assets/states/dc/district-of-columbia-vote-early-sticker-cream-outline-3.jpg",
+   "order": 7,
+   "redirect": "/assets/states/dc/dc-vote-4.jpg /assets/states/dc/district-of-columbia-vote-early-sticker-cream-outline-3.jpg 301"
+  },
+  {
+   "old": "/assets/states/dc/dc-vote-5.jpg",
+   "new": "/assets/states/dc/district-of-columbia-vote-early-sticker-dark-blue-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/dc/dc-vote-5.jpg /assets/states/dc/district-of-columbia-vote-early-sticker-dark-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/dc/dc-vote-6.jpg",
+   "new": "/assets/states/dc/district-of-columbia-vote-early-sticker-sand-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/dc/dc-vote-6.jpg /assets/states/dc/district-of-columbia-vote-early-sticker-sand-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/dc/dc-vote-7.jpg",
+   "new": "/assets/states/dc/district-of-columbia-vote-early-sticker-forest-green-outline.jpg",
+   "order": 10,
+   "redirect": "/assets/states/dc/dc-vote-7.jpg /assets/states/dc/district-of-columbia-vote-early-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/dc/dc-vote-8.jpg",
+   "new": "/assets/states/dc/district-of-columbia-vote-early-sticker-light-blue-outline.jpg",
+   "order": 11,
+   "redirect": "/assets/states/dc/dc-vote-8.jpg /assets/states/dc/district-of-columbia-vote-early-sticker-light-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/dc/dc-vote-9.jpg",
+   "new": "/assets/states/dc/district-of-columbia-vote-early-sticker-sand-outline-2.jpg",
+   "order": 12,
+   "redirect": "/assets/states/dc/dc-vote-9.jpg /assets/states/dc/district-of-columbia-vote-early-sticker-sand-outline-2.jpg 301"
+  },
+  {
+   "old": "/assets/states/dc/dc-vote-10.jpg",
+   "new": "/assets/states/dc/district-of-columbia-vote-early-sticker-dark-blue-outline-2.jpg",
+   "order": 13,
+   "redirect": "/assets/states/dc/dc-vote-10.jpg /assets/states/dc/district-of-columbia-vote-early-sticker-dark-blue-outline-2.jpg 301"
+  },
+  {
+   "old": "/assets/states/dc/dc-vote-nov-3.jpg",
+   "new": "/assets/states/dc/district-of-columbia-vote-election-day-sticker-cream.jpg",
+   "order": 14,
+   "redirect": "/assets/states/dc/dc-vote-nov-3.jpg /assets/states/dc/district-of-columbia-vote-election-day-sticker-cream.jpg 301"
+  },
+  {
+   "old": "/assets/states/de/de-vote-1.jpg",
+   "new": "/assets/states/de/delaware-vote-early-sticker-cream-outline.jpg",
+   "order": 1,
+   "redirect": "/assets/states/de/de-vote-1.jpg /assets/states/de/delaware-vote-early-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/de/de-vote-2.jpg",
+   "new": "/assets/states/de/delaware-vote-early-sticker-navy-outline.jpg",
+   "order": 2,
+   "redirect": "/assets/states/de/de-vote-2.jpg /assets/states/de/delaware-vote-early-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/de/de-vote-3.jpg",
+   "new": "/assets/states/de/delaware-vote-early-sticker-forest-green-outline.jpg",
+   "order": 3,
+   "redirect": "/assets/states/de/de-vote-3.jpg /assets/states/de/delaware-vote-early-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/de/de-vote-4.jpg",
+   "new": "/assets/states/de/delaware-vote-early-sticker-dark-blue-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/de/de-vote-4.jpg /assets/states/de/delaware-vote-early-sticker-dark-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/de/de-vote-5.jpg",
+   "new": "/assets/states/de/delaware-vote-early-sticker-cobalt-blue-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/de/de-vote-5.jpg /assets/states/de/delaware-vote-early-sticker-cobalt-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/de/de-vote-6.jpg",
+   "new": "/assets/states/de/delaware-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/de/de-vote-6.jpg /assets/states/de/delaware-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/de/de-vote-7.jpg",
+   "new": "/assets/states/de/delaware-i-voted-sticker-maroon-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/de/de-vote-7.jpg /assets/states/de/delaware-i-voted-sticker-maroon-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/de/de-vote-8.jpg",
+   "new": "/assets/states/de/delaware-i-voted-early-sticker-plum-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/de/de-vote-8.jpg /assets/states/de/delaware-i-voted-early-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/de/de-vote-9.jpg",
+   "new": "/assets/states/de/delaware-make-a-plan-vote-early-sticker-teal-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/de/de-vote-9.jpg /assets/states/de/delaware-make-a-plan-vote-early-sticker-teal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/de/de-vote-10.jpg",
+   "new": "/assets/states/de/delaware-votes-sticker-charcoal-outline.jpg",
+   "order": 10,
+   "redirect": "/assets/states/de/de-vote-10.jpg /assets/states/de/delaware-votes-sticker-charcoal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/fl/fl-vote-1.jpg",
+   "new": "/assets/states/fl/florida-vote-early-sticker-cream-outline.jpg",
+   "order": 1,
+   "redirect": "/assets/states/fl/fl-vote-1.jpg /assets/states/fl/florida-vote-early-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/fl/fl-vote-2.jpg",
+   "new": "/assets/states/fl/florida-vote-early-sticker-navy-outline.jpg",
+   "order": 2,
+   "redirect": "/assets/states/fl/fl-vote-2.jpg /assets/states/fl/florida-vote-early-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/fl/fl-vote-3.jpg",
+   "new": "/assets/states/fl/florida-vote-early-sticker-forest-green-outline.jpg",
+   "order": 3,
+   "redirect": "/assets/states/fl/fl-vote-3.jpg /assets/states/fl/florida-vote-early-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/fl/fl-vote-4.jpg",
+   "new": "/assets/states/fl/florida-vote-early-sticker-teal-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/fl/fl-vote-4.jpg /assets/states/fl/florida-vote-early-sticker-teal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/fl/fl-vote-5.jpg",
+   "new": "/assets/states/fl/florida-vote-early-sticker-cobalt-blue-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/fl/fl-vote-5.jpg /assets/states/fl/florida-vote-early-sticker-cobalt-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/fl/fl-vote-6.jpg",
+   "new": "/assets/states/fl/florida-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/fl/fl-vote-6.jpg /assets/states/fl/florida-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/fl/fl-vote-7.jpg",
+   "new": "/assets/states/fl/florida-i-voted-sticker-maroon-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/fl/fl-vote-7.jpg /assets/states/fl/florida-i-voted-sticker-maroon-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/fl/fl-vote-8.jpg",
+   "new": "/assets/states/fl/florida-i-voted-early-sticker-plum-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/fl/fl-vote-8.jpg /assets/states/fl/florida-i-voted-early-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/fl/fl-vote-9.jpg",
+   "new": "/assets/states/fl/florida-make-a-plan-vote-early-sticker-teal-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/fl/fl-vote-9.jpg /assets/states/fl/florida-make-a-plan-vote-early-sticker-teal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/fl/fl-vote-10.jpg",
+   "new": "/assets/states/fl/florida-votes-sticker-mustard-outline.jpg",
+   "order": 10,
+   "redirect": "/assets/states/fl/fl-vote-10.jpg /assets/states/fl/florida-votes-sticker-mustard-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ga/ga-vote-1.jpg",
+   "new": "/assets/states/ga/georgia-vote-election-day-sticker-cream-outline.jpg",
+   "order": 1,
+   "redirect": "/assets/states/ga/ga-vote-1.jpg /assets/states/ga/georgia-vote-election-day-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ga/ga-vote-2.jpg",
+   "new": "/assets/states/ga/georgia-vote-election-day-sticker-navy-outline.jpg",
+   "order": 2,
+   "redirect": "/assets/states/ga/ga-vote-2.jpg /assets/states/ga/georgia-vote-election-day-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ga/ga-vote-3.jpg",
+   "new": "/assets/states/ga/georgia-vote-election-day-sticker-forest-green-outline.jpg",
+   "order": 3,
+   "redirect": "/assets/states/ga/ga-vote-3.jpg /assets/states/ga/georgia-vote-election-day-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ga/ga-vote-4.jpg",
+   "new": "/assets/states/ga/georgia-vote-election-day-sticker-charcoal-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/ga/ga-vote-4.jpg /assets/states/ga/georgia-vote-election-day-sticker-charcoal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ga/ga-vote-5.jpg",
+   "new": "/assets/states/ga/georgia-vote-election-day-sticker-cobalt-blue-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/ga/ga-vote-5.jpg /assets/states/ga/georgia-vote-election-day-sticker-cobalt-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ga/ga-vote-6.jpg",
+   "new": "/assets/states/ga/georgia-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/ga/ga-vote-6.jpg /assets/states/ga/georgia-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ga/ga-vote-7.jpg",
+   "new": "/assets/states/ga/georgia-i-voted-sticker-maroon-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/ga/ga-vote-7.jpg /assets/states/ga/georgia-i-voted-sticker-maroon-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ga/ga-vote-8.jpg",
+   "new": "/assets/states/ga/georgia-i-voted-sticker-plum-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/ga/ga-vote-8.jpg /assets/states/ga/georgia-i-voted-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ga/ga-vote-9.jpg",
+   "new": "/assets/states/ga/georgia-make-a-plan-vote-sticker-teal-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/ga/ga-vote-9.jpg /assets/states/ga/georgia-make-a-plan-vote-sticker-teal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ga/ga-vote-10.jpg",
+   "new": "/assets/states/ga/georgia-votes-sticker-charcoal-outline.jpg",
+   "order": 10,
+   "redirect": "/assets/states/ga/ga-vote-10.jpg /assets/states/ga/georgia-votes-sticker-charcoal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/hi/hi-vote-1.jpg",
+   "new": "/assets/states/hi/hawaii-vote-by-mail-sticker-cream-outline.jpg",
+   "order": 1,
+   "redirect": "/assets/states/hi/hi-vote-1.jpg /assets/states/hi/hawaii-vote-by-mail-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/hi/hi-vote-2.jpg",
+   "new": "/assets/states/hi/hawaii-vote-by-mail-sticker-navy-outline.jpg",
+   "order": 2,
+   "redirect": "/assets/states/hi/hi-vote-2.jpg /assets/states/hi/hawaii-vote-by-mail-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/hi/hi-vote-3.jpg",
+   "new": "/assets/states/hi/hawaii-vote-by-mail-sticker-forest-green-outline.jpg",
+   "order": 3,
+   "redirect": "/assets/states/hi/hi-vote-3.jpg /assets/states/hi/hawaii-vote-by-mail-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/hi/hi-vote-4.jpg",
+   "new": "/assets/states/hi/hawaii-vote-by-mail-sticker-dark-blue-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/hi/hi-vote-4.jpg /assets/states/hi/hawaii-vote-by-mail-sticker-dark-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/hi/hi-vote-5.jpg",
+   "new": "/assets/states/hi/hawaii-vote-by-mail-sticker-cobalt-blue-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/hi/hi-vote-5.jpg /assets/states/hi/hawaii-vote-by-mail-sticker-cobalt-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/hi/hi-vote-6.jpg",
+   "new": "/assets/states/hi/hawaii-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/hi/hi-vote-6.jpg /assets/states/hi/hawaii-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/hi/hi-vote-7.jpg",
+   "new": "/assets/states/hi/hawaii-i-voted-sticker-maroon-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/hi/hi-vote-7.jpg /assets/states/hi/hawaii-i-voted-sticker-maroon-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/hi/hi-vote-8.jpg",
+   "new": "/assets/states/hi/hawaii-my-ballot-is-in-sticker-plum-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/hi/hi-vote-8.jpg /assets/states/hi/hawaii-my-ballot-is-in-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/hi/hi-vote-9.jpg",
+   "new": "/assets/states/hi/hawaii-make-a-plan-vote-sticker-teal-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/hi/hi-vote-9.jpg /assets/states/hi/hawaii-make-a-plan-vote-sticker-teal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/hi/hi-vote-10.jpg",
+   "new": "/assets/states/hi/hawaii-votes-sticker-charcoal-outline.jpg",
+   "order": 10,
+   "redirect": "/assets/states/hi/hi-vote-10.jpg /assets/states/hi/hawaii-votes-sticker-charcoal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ia/ia-vote-1.jpg",
+   "new": "/assets/states/ia/iowa-vote-early-sticker-cream-outline.jpg",
+   "order": 1,
+   "redirect": "/assets/states/ia/ia-vote-1.jpg /assets/states/ia/iowa-vote-early-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ia/ia-vote-2.jpg",
+   "new": "/assets/states/ia/iowa-vote-early-sticker-navy-outline.jpg",
+   "order": 2,
+   "redirect": "/assets/states/ia/ia-vote-2.jpg /assets/states/ia/iowa-vote-early-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ia/ia-vote-3.jpg",
+   "new": "/assets/states/ia/iowa-vote-early-sticker-forest-green-outline.jpg",
+   "order": 3,
+   "redirect": "/assets/states/ia/ia-vote-3.jpg /assets/states/ia/iowa-vote-early-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ia/ia-vote-4.jpg",
+   "new": "/assets/states/ia/iowa-vote-early-sticker-dark-blue-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/ia/ia-vote-4.jpg /assets/states/ia/iowa-vote-early-sticker-dark-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ia/ia-vote-5.jpg",
+   "new": "/assets/states/ia/iowa-vote-early-sticker-cobalt-blue-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/ia/ia-vote-5.jpg /assets/states/ia/iowa-vote-early-sticker-cobalt-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ia/ia-vote-6.jpg",
+   "new": "/assets/states/ia/iowa-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/ia/ia-vote-6.jpg /assets/states/ia/iowa-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ia/ia-vote-7.jpg",
+   "new": "/assets/states/ia/iowa-i-voted-sticker-maroon-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/ia/ia-vote-7.jpg /assets/states/ia/iowa-i-voted-sticker-maroon-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ia/ia-vote-8.jpg",
+   "new": "/assets/states/ia/iowa-i-voted-early-sticker-plum-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/ia/ia-vote-8.jpg /assets/states/ia/iowa-i-voted-early-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ia/ia-vote-9.jpg",
+   "new": "/assets/states/ia/iowa-make-a-plan-vote-early-sticker-teal-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/ia/ia-vote-9.jpg /assets/states/ia/iowa-make-a-plan-vote-early-sticker-teal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ia/ia-vote-10.jpg",
+   "new": "/assets/states/ia/iowa-votes-sticker-charcoal-outline.jpg",
+   "order": 10,
+   "redirect": "/assets/states/ia/ia-vote-10.jpg /assets/states/ia/iowa-votes-sticker-charcoal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/id/id-vote-1.jpg",
+   "new": "/assets/states/id/idaho-vote-early-sticker-cream-outline.jpg",
+   "order": 1,
+   "redirect": "/assets/states/id/id-vote-1.jpg /assets/states/id/idaho-vote-early-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/id/id-vote-2.jpg",
+   "new": "/assets/states/id/idaho-vote-early-sticker-navy-outline.jpg",
+   "order": 2,
+   "redirect": "/assets/states/id/id-vote-2.jpg /assets/states/id/idaho-vote-early-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/id/id-vote-3.jpg",
+   "new": "/assets/states/id/idaho-vote-early-sticker-forest-green-outline.jpg",
+   "order": 3,
+   "redirect": "/assets/states/id/id-vote-3.jpg /assets/states/id/idaho-vote-early-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/id/id-vote-4.jpg",
+   "new": "/assets/states/id/idaho-vote-early-sticker-dark-blue-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/id/id-vote-4.jpg /assets/states/id/idaho-vote-early-sticker-dark-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/id/id-vote-5.jpg",
+   "new": "/assets/states/id/idaho-vote-early-sticker-cobalt-blue-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/id/id-vote-5.jpg /assets/states/id/idaho-vote-early-sticker-cobalt-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/id/id-vote-6.jpg",
+   "new": "/assets/states/id/idaho-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/id/id-vote-6.jpg /assets/states/id/idaho-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/id/id-vote-7.jpg",
+   "new": "/assets/states/id/idaho-i-voted-sticker-plum-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/id/id-vote-7.jpg /assets/states/id/idaho-i-voted-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/id/id-vote-8.jpg",
+   "new": "/assets/states/id/idaho-i-voted-early-sticker-forest-green-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/id/id-vote-8.jpg /assets/states/id/idaho-i-voted-early-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/id/id-vote-9.jpg",
+   "new": "/assets/states/id/idaho-make-a-plan-vote-early-sticker-plum-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/id/id-vote-9.jpg /assets/states/id/idaho-make-a-plan-vote-early-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/id/id-vote-10.jpg",
+   "new": "/assets/states/id/idaho-votes-sticker-mustard-outline.jpg",
+   "order": 10,
+   "redirect": "/assets/states/id/id-vote-10.jpg /assets/states/id/idaho-votes-sticker-mustard-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/il/il-vote-1.jpg",
+   "new": "/assets/states/il/illinois-vote-election-day-sticker-cream-outline.jpg",
+   "order": 1,
+   "redirect": "/assets/states/il/il-vote-1.jpg /assets/states/il/illinois-vote-election-day-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/il/il-vote-2.jpg",
+   "new": "/assets/states/il/illinois-vote-election-day-sticker-navy-outline.jpg",
+   "order": 2,
+   "redirect": "/assets/states/il/il-vote-2.jpg /assets/states/il/illinois-vote-election-day-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/il/il-vote-3.jpg",
+   "new": "/assets/states/il/illinois-vote-election-day-sticker-forest-green-outline.jpg",
+   "order": 3,
+   "redirect": "/assets/states/il/il-vote-3.jpg /assets/states/il/illinois-vote-election-day-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/il/il-vote-4.jpg",
+   "new": "/assets/states/il/illinois-vote-election-day-sticker-dark-blue-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/il/il-vote-4.jpg /assets/states/il/illinois-vote-election-day-sticker-dark-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/il/il-vote-5.jpg",
+   "new": "/assets/states/il/illinois-vote-election-day-sticker-cobalt-blue-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/il/il-vote-5.jpg /assets/states/il/illinois-vote-election-day-sticker-cobalt-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/il/il-vote-6.jpg",
+   "new": "/assets/states/il/illinois-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/il/il-vote-6.jpg /assets/states/il/illinois-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/il/il-vote-7.jpg",
+   "new": "/assets/states/il/illinois-i-voted-sticker-maroon-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/il/il-vote-7.jpg /assets/states/il/illinois-i-voted-sticker-maroon-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/il/il-vote-8.jpg",
+   "new": "/assets/states/il/illinois-i-voted-sticker-plum-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/il/il-vote-8.jpg /assets/states/il/illinois-i-voted-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/il/il-vote-9.jpg",
+   "new": "/assets/states/il/illinois-make-a-plan-vote-sticker-teal-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/il/il-vote-9.jpg /assets/states/il/illinois-make-a-plan-vote-sticker-teal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/il/il-vote-10.jpg",
+   "new": "/assets/states/il/illinois-votes-sticker-charcoal-outline.jpg",
+   "order": 10,
+   "redirect": "/assets/states/il/il-vote-10.jpg /assets/states/il/illinois-votes-sticker-charcoal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/in/in-vote-1.jpg",
+   "new": "/assets/states/in/indiana-vote-election-day-sticker-cream-outline.jpg",
+   "order": 1,
+   "redirect": "/assets/states/in/in-vote-1.jpg /assets/states/in/indiana-vote-election-day-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/in/in-vote-2.jpg",
+   "new": "/assets/states/in/indiana-vote-election-day-sticker-navy-outline.jpg",
+   "order": 2,
+   "redirect": "/assets/states/in/in-vote-2.jpg /assets/states/in/indiana-vote-election-day-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/in/in-vote-3.jpg",
+   "new": "/assets/states/in/indiana-vote-election-day-sticker-forest-green-outline.jpg",
+   "order": 3,
+   "redirect": "/assets/states/in/in-vote-3.jpg /assets/states/in/indiana-vote-election-day-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/in/in-vote-4.jpg",
+   "new": "/assets/states/in/indiana-vote-election-day-sticker-dark-blue-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/in/in-vote-4.jpg /assets/states/in/indiana-vote-election-day-sticker-dark-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/in/in-vote-5.jpg",
+   "new": "/assets/states/in/indiana-vote-election-day-sticker-cobalt-blue-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/in/in-vote-5.jpg /assets/states/in/indiana-vote-election-day-sticker-cobalt-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/in/in-vote-6.jpg",
+   "new": "/assets/states/in/indiana-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/in/in-vote-6.jpg /assets/states/in/indiana-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/in/in-vote-7.jpg",
+   "new": "/assets/states/in/indiana-i-voted-sticker-maroon-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/in/in-vote-7.jpg /assets/states/in/indiana-i-voted-sticker-maroon-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/in/in-vote-8.jpg",
+   "new": "/assets/states/in/indiana-i-voted-sticker-plum-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/in/in-vote-8.jpg /assets/states/in/indiana-i-voted-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/in/in-vote-9.jpg",
+   "new": "/assets/states/in/indiana-make-a-plan-vote-sticker-teal-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/in/in-vote-9.jpg /assets/states/in/indiana-make-a-plan-vote-sticker-teal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/in/in-vote-10.jpg",
+   "new": "/assets/states/in/indiana-votes-sticker-charcoal-outline.jpg",
+   "order": 10,
+   "redirect": "/assets/states/in/in-vote-10.jpg /assets/states/in/indiana-votes-sticker-charcoal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ks/ks-i-voted-1.jpg",
+   "new": "/assets/states/ks/kansas-i-voted-sticker-state-colors.jpg",
+   "order": 1,
+   "redirect": "/assets/states/ks/ks-i-voted-1.jpg /assets/states/ks/kansas-i-voted-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/ks/ks-i-voted-2.jpg",
+   "new": "/assets/states/ks/kansas-i-voted-sticker-navy.jpg",
+   "order": 2,
+   "redirect": "/assets/states/ks/ks-i-voted-2.jpg /assets/states/ks/kansas-i-voted-sticker-navy.jpg 301"
+  },
+  {
+   "old": "/assets/states/ks/ks-i-voted-early.jpg",
+   "new": "/assets/states/ks/kansas-i-voted-early-sticker-state-colors.jpg",
+   "order": 3,
+   "redirect": "/assets/states/ks/ks-i-voted-early.jpg /assets/states/ks/kansas-i-voted-early-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/ks/ks-vote-1.jpg",
+   "new": "/assets/states/ks/kansas-vote-early-sticker-cream-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/ks/ks-vote-1.jpg /assets/states/ks/kansas-vote-early-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ks/ks-vote-2.jpg",
+   "new": "/assets/states/ks/kansas-vote-early-sticker-navy-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/ks/ks-vote-2.jpg /assets/states/ks/kansas-vote-early-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ks/ks-vote-3.jpg",
+   "new": "/assets/states/ks/kansas-vote-early-sticker-sand-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/ks/ks-vote-3.jpg /assets/states/ks/kansas-vote-early-sticker-sand-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ks/ks-vote-4.jpg",
+   "new": "/assets/states/ks/kansas-vote-early-sticker-forest-green-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/ks/ks-vote-4.jpg /assets/states/ks/kansas-vote-early-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ks/ks-vote-5.jpg",
+   "new": "/assets/states/ks/kansas-vote-early-sticker-dark-blue-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/ks/ks-vote-5.jpg /assets/states/ks/kansas-vote-early-sticker-dark-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ks/ks-vote-6.jpg",
+   "new": "/assets/states/ks/kansas-vote-early-sticker-light-blue-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/ks/ks-vote-6.jpg /assets/states/ks/kansas-vote-early-sticker-light-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ks/ks-vote-7.jpg",
+   "new": "/assets/states/ks/kansas-vote-early-sticker-sand-outline-2.jpg",
+   "order": 10,
+   "redirect": "/assets/states/ks/ks-vote-7.jpg /assets/states/ks/kansas-vote-early-sticker-sand-outline-2.jpg 301"
+  },
+  {
+   "old": "/assets/states/ks/ks-vote-8.jpg",
+   "new": "/assets/states/ks/kansas-vote-early-sticker-sage-green-outline.jpg",
+   "order": 11,
+   "redirect": "/assets/states/ks/ks-vote-8.jpg /assets/states/ks/kansas-vote-early-sticker-sage-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ks/ks-vote-9.jpg",
+   "new": "/assets/states/ks/kansas-vote-early-sticker-dark-blue-outline-2.jpg",
+   "order": 12,
+   "redirect": "/assets/states/ks/ks-vote-9.jpg /assets/states/ks/kansas-vote-early-sticker-dark-blue-outline-2.jpg 301"
+  },
+  {
+   "old": "/assets/states/ks/ks-vote-10.jpg",
+   "new": "/assets/states/ks/kansas-vote-early-sticker-sand-outline-3.jpg",
+   "order": 13,
+   "redirect": "/assets/states/ks/ks-vote-10.jpg /assets/states/ks/kansas-vote-early-sticker-sand-outline-3.jpg 301"
+  },
+  {
+   "old": "/assets/states/ks/ks-vote-nov-3.jpg",
+   "new": "/assets/states/ks/kansas-vote-election-day-sticker-cream.jpg",
+   "order": 14,
+   "redirect": "/assets/states/ks/ks-vote-nov-3.jpg /assets/states/ks/kansas-vote-election-day-sticker-cream.jpg 301"
+  },
+  {
+   "old": "/assets/states/ky/ky-vote-1.jpg",
+   "new": "/assets/states/ky/kentucky-vote-election-day-sticker-cream-outline.jpg",
+   "order": 1,
+   "redirect": "/assets/states/ky/ky-vote-1.jpg /assets/states/ky/kentucky-vote-election-day-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ky/ky-vote-2.jpg",
+   "new": "/assets/states/ky/kentucky-vote-election-day-sticker-navy-outline.jpg",
+   "order": 2,
+   "redirect": "/assets/states/ky/ky-vote-2.jpg /assets/states/ky/kentucky-vote-election-day-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ky/ky-vote-3.jpg",
+   "new": "/assets/states/ky/kentucky-vote-election-day-sticker-forest-green-outline.jpg",
+   "order": 3,
+   "redirect": "/assets/states/ky/ky-vote-3.jpg /assets/states/ky/kentucky-vote-election-day-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ky/ky-vote-4.jpg",
+   "new": "/assets/states/ky/kentucky-vote-election-day-sticker-forest-green-outline-2.jpg",
+   "order": 4,
+   "redirect": "/assets/states/ky/ky-vote-4.jpg /assets/states/ky/kentucky-vote-election-day-sticker-forest-green-outline-2.jpg 301"
+  },
+  {
+   "old": "/assets/states/ky/ky-vote-5.jpg",
+   "new": "/assets/states/ky/kentucky-vote-election-day-sticker-cobalt-blue-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/ky/ky-vote-5.jpg /assets/states/ky/kentucky-vote-election-day-sticker-cobalt-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ky/ky-vote-6.jpg",
+   "new": "/assets/states/ky/kentucky-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/ky/ky-vote-6.jpg /assets/states/ky/kentucky-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ky/ky-vote-7.jpg",
+   "new": "/assets/states/ky/kentucky-i-voted-sticker-maroon-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/ky/ky-vote-7.jpg /assets/states/ky/kentucky-i-voted-sticker-maroon-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ky/ky-vote-8.jpg",
+   "new": "/assets/states/ky/kentucky-i-voted-sticker-plum-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/ky/ky-vote-8.jpg /assets/states/ky/kentucky-i-voted-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ky/ky-vote-9.jpg",
+   "new": "/assets/states/ky/kentucky-make-a-plan-vote-sticker-forest-green-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/ky/ky-vote-9.jpg /assets/states/ky/kentucky-make-a-plan-vote-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ky/ky-vote-10.jpg",
+   "new": "/assets/states/ky/kentucky-votes-sticker-charcoal-outline.jpg",
+   "order": 10,
+   "redirect": "/assets/states/ky/ky-vote-10.jpg /assets/states/ky/kentucky-votes-sticker-charcoal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/la/la-vote-1.jpg",
+   "new": "/assets/states/la/louisiana-vote-election-day-sticker-cream-outline.jpg",
+   "order": 1,
+   "redirect": "/assets/states/la/la-vote-1.jpg /assets/states/la/louisiana-vote-election-day-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/la/la-vote-2.jpg",
+   "new": "/assets/states/la/louisiana-vote-election-day-sticker-navy-outline.jpg",
+   "order": 2,
+   "redirect": "/assets/states/la/la-vote-2.jpg /assets/states/la/louisiana-vote-election-day-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/la/la-vote-3.jpg",
+   "new": "/assets/states/la/louisiana-vote-election-day-sticker-forest-green-outline.jpg",
+   "order": 3,
+   "redirect": "/assets/states/la/la-vote-3.jpg /assets/states/la/louisiana-vote-election-day-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/la/la-vote-4.jpg",
+   "new": "/assets/states/la/louisiana-vote-election-day-sticker-dark-blue-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/la/la-vote-4.jpg /assets/states/la/louisiana-vote-election-day-sticker-dark-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/la/la-vote-5.jpg",
+   "new": "/assets/states/la/louisiana-vote-election-day-sticker-cobalt-blue-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/la/la-vote-5.jpg /assets/states/la/louisiana-vote-election-day-sticker-cobalt-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/la/la-vote-6.jpg",
+   "new": "/assets/states/la/louisiana-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/la/la-vote-6.jpg /assets/states/la/louisiana-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/la/la-vote-7.jpg",
+   "new": "/assets/states/la/louisiana-i-voted-sticker-maroon-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/la/la-vote-7.jpg /assets/states/la/louisiana-i-voted-sticker-maroon-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/la/la-vote-8.jpg",
+   "new": "/assets/states/la/louisiana-i-voted-sticker-plum-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/la/la-vote-8.jpg /assets/states/la/louisiana-i-voted-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/la/la-vote-9.jpg",
+   "new": "/assets/states/la/louisiana-make-a-plan-vote-sticker-teal-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/la/la-vote-9.jpg /assets/states/la/louisiana-make-a-plan-vote-sticker-teal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/la/la-vote-10.jpg",
+   "new": "/assets/states/la/louisiana-vote-election-day-sticker-charcoal-outline.jpg",
+   "order": 10,
+   "redirect": "/assets/states/la/la-vote-10.jpg /assets/states/la/louisiana-vote-election-day-sticker-charcoal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ma/ma-vote-1.jpg",
+   "new": "/assets/states/ma/massachusetts-vote-election-day-sticker-cream-outline.jpg",
+   "order": 1,
+   "redirect": "/assets/states/ma/ma-vote-1.jpg /assets/states/ma/massachusetts-vote-election-day-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ma/ma-vote-2.jpg",
+   "new": "/assets/states/ma/massachusetts-vote-election-day-sticker-navy-outline.jpg",
+   "order": 2,
+   "redirect": "/assets/states/ma/ma-vote-2.jpg /assets/states/ma/massachusetts-vote-election-day-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ma/ma-vote-3.jpg",
+   "new": "/assets/states/ma/massachusetts-vote-election-day-sticker-forest-green-outline.jpg",
+   "order": 3,
+   "redirect": "/assets/states/ma/ma-vote-3.jpg /assets/states/ma/massachusetts-vote-election-day-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ma/ma-vote-4.jpg",
+   "new": "/assets/states/ma/massachusetts-vote-election-day-sticker-navy-outline-2.jpg",
+   "order": 4,
+   "redirect": "/assets/states/ma/ma-vote-4.jpg /assets/states/ma/massachusetts-vote-election-day-sticker-navy-outline-2.jpg 301"
+  },
+  {
+   "old": "/assets/states/ma/ma-vote-5.jpg",
+   "new": "/assets/states/ma/massachusetts-vote-election-day-sticker-cobalt-blue-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/ma/ma-vote-5.jpg /assets/states/ma/massachusetts-vote-election-day-sticker-cobalt-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ma/ma-vote-6.jpg",
+   "new": "/assets/states/ma/massachusetts-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/ma/ma-vote-6.jpg /assets/states/ma/massachusetts-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ma/ma-vote-7.jpg",
+   "new": "/assets/states/ma/massachusetts-i-voted-sticker-maroon-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/ma/ma-vote-7.jpg /assets/states/ma/massachusetts-i-voted-sticker-maroon-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ma/ma-vote-8.jpg",
+   "new": "/assets/states/ma/massachusetts-i-voted-sticker-plum-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/ma/ma-vote-8.jpg /assets/states/ma/massachusetts-i-voted-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ma/ma-vote-9.jpg",
+   "new": "/assets/states/ma/massachusetts-make-a-plan-vote-sticker-teal-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/ma/ma-vote-9.jpg /assets/states/ma/massachusetts-make-a-plan-vote-sticker-teal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ma/ma-vote-10.jpg",
+   "new": "/assets/states/ma/massachusetts-vote-election-day-sticker-charcoal-outline.jpg",
+   "order": 10,
+   "redirect": "/assets/states/ma/ma-vote-10.jpg /assets/states/ma/massachusetts-vote-election-day-sticker-charcoal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/md/md-i-voted-1.jpg",
+   "new": "/assets/states/md/maryland-i-voted-sticker-state-colors.jpg",
+   "order": 1,
+   "redirect": "/assets/states/md/md-i-voted-1.jpg /assets/states/md/maryland-i-voted-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/md/md-i-voted-2.jpg",
+   "new": "/assets/states/md/maryland-i-voted-sticker-navy.jpg",
+   "order": 2,
+   "redirect": "/assets/states/md/md-i-voted-2.jpg /assets/states/md/maryland-i-voted-sticker-navy.jpg 301"
+  },
+  {
+   "old": "/assets/states/md/md-i-voted-early.jpg",
+   "new": "/assets/states/md/maryland-i-voted-early-sticker-state-colors.jpg",
+   "order": 3,
+   "redirect": "/assets/states/md/md-i-voted-early.jpg /assets/states/md/maryland-i-voted-early-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/md/md-vote-1.jpg",
+   "new": "/assets/states/md/maryland-vote-early-sticker-teal-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/md/md-vote-1.jpg /assets/states/md/maryland-vote-early-sticker-teal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/md/md-vote-2.jpg",
+   "new": "/assets/states/md/maryland-vote-early-sticker-sand-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/md/md-vote-2.jpg /assets/states/md/maryland-vote-early-sticker-sand-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/md/md-vote-3.jpg",
+   "new": "/assets/states/md/maryland-vote-early-sticker-navy-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/md/md-vote-3.jpg /assets/states/md/maryland-vote-early-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/md/md-vote-4.jpg",
+   "new": "/assets/states/md/maryland-vote-early-sticker-forest-green-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/md/md-vote-4.jpg /assets/states/md/maryland-vote-early-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/md/md-vote-5.jpg",
+   "new": "/assets/states/md/maryland-vote-early-sticker-black-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/md/md-vote-5.jpg /assets/states/md/maryland-vote-early-sticker-black-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/md/md-vote-6.jpg",
+   "new": "/assets/states/md/maryland-vote-early-sticker-maroon-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/md/md-vote-6.jpg /assets/states/md/maryland-vote-early-sticker-maroon-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/md/md-vote-nov-3.jpg",
+   "new": "/assets/states/md/maryland-vote-election-day-sticker-cream.jpg",
+   "order": 10,
+   "redirect": "/assets/states/md/md-vote-nov-3.jpg /assets/states/md/maryland-vote-election-day-sticker-cream.jpg 301"
+  },
+  {
+   "old": "/assets/states/me/me-vote-1.jpg",
+   "new": "/assets/states/me/maine-vote-election-day-sticker-cream-outline.jpg",
+   "order": 1,
+   "redirect": "/assets/states/me/me-vote-1.jpg /assets/states/me/maine-vote-election-day-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/me/me-vote-2.jpg",
+   "new": "/assets/states/me/maine-vote-election-day-sticker-navy-outline.jpg",
+   "order": 2,
+   "redirect": "/assets/states/me/me-vote-2.jpg /assets/states/me/maine-vote-election-day-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/me/me-vote-3.jpg",
+   "new": "/assets/states/me/maine-vote-election-day-sticker-forest-green-outline.jpg",
+   "order": 3,
+   "redirect": "/assets/states/me/me-vote-3.jpg /assets/states/me/maine-vote-election-day-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/me/me-vote-4.jpg",
+   "new": "/assets/states/me/maine-vote-election-day-sticker-forest-green-outline-2.jpg",
+   "order": 4,
+   "redirect": "/assets/states/me/me-vote-4.jpg /assets/states/me/maine-vote-election-day-sticker-forest-green-outline-2.jpg 301"
+  },
+  {
+   "old": "/assets/states/me/me-vote-5.jpg",
+   "new": "/assets/states/me/maine-vote-election-day-sticker-cobalt-blue-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/me/me-vote-5.jpg /assets/states/me/maine-vote-election-day-sticker-cobalt-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/me/me-vote-6.jpg",
+   "new": "/assets/states/me/maine-i-voted-sticker-plum-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/me/me-vote-6.jpg /assets/states/me/maine-i-voted-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/me/me-vote-7.jpg",
+   "new": "/assets/states/me/maine-i-voted-sticker-maroon-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/me/me-vote-7.jpg /assets/states/me/maine-i-voted-sticker-maroon-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/me/me-vote-8.jpg",
+   "new": "/assets/states/me/maine-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/me/me-vote-8.jpg /assets/states/me/maine-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/me/me-vote-9.jpg",
+   "new": "/assets/states/me/maine-make-a-plan-vote-sticker-teal-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/me/me-vote-9.jpg /assets/states/me/maine-make-a-plan-vote-sticker-teal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/me/me-vote-10.jpg",
+   "new": "/assets/states/me/maine-votes-sticker-charcoal-outline.jpg",
+   "order": 10,
+   "redirect": "/assets/states/me/me-vote-10.jpg /assets/states/me/maine-votes-sticker-charcoal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mi/mi-vote-1.jpg",
+   "new": "/assets/states/mi/michigan-vote-early-sticker-cream-outline.jpg",
+   "order": 1,
+   "redirect": "/assets/states/mi/mi-vote-1.jpg /assets/states/mi/michigan-vote-early-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mi/mi-vote-2.jpg",
+   "new": "/assets/states/mi/michigan-vote-early-sticker-navy-outline.jpg",
+   "order": 2,
+   "redirect": "/assets/states/mi/mi-vote-2.jpg /assets/states/mi/michigan-vote-early-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mi/mi-vote-3.jpg",
+   "new": "/assets/states/mi/michigan-vote-early-sticker-forest-green-outline.jpg",
+   "order": 3,
+   "redirect": "/assets/states/mi/mi-vote-3.jpg /assets/states/mi/michigan-vote-early-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mi/mi-vote-4.jpg",
+   "new": "/assets/states/mi/michigan-vote-early-sticker-navy-outline-2.jpg",
+   "order": 4,
+   "redirect": "/assets/states/mi/mi-vote-4.jpg /assets/states/mi/michigan-vote-early-sticker-navy-outline-2.jpg 301"
+  },
+  {
+   "old": "/assets/states/mi/mi-vote-5.jpg",
+   "new": "/assets/states/mi/michigan-vote-early-sticker-plum-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/mi/mi-vote-5.jpg /assets/states/mi/michigan-vote-early-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mi/mi-vote-6.jpg",
+   "new": "/assets/states/mi/michigan-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/mi/mi-vote-6.jpg /assets/states/mi/michigan-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mi/mi-vote-7.jpg",
+   "new": "/assets/states/mi/michigan-i-voted-sticker-cobalt-blue-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/mi/mi-vote-7.jpg /assets/states/mi/michigan-i-voted-sticker-cobalt-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mi/mi-vote-8.jpg",
+   "new": "/assets/states/mi/michigan-i-voted-early-sticker-maroon-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/mi/mi-vote-8.jpg /assets/states/mi/michigan-i-voted-early-sticker-maroon-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mi/mi-vote-9.jpg",
+   "new": "/assets/states/mi/michigan-make-a-plan-vote-early-sticker-mustard-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/mi/mi-vote-9.jpg /assets/states/mi/michigan-make-a-plan-vote-early-sticker-mustard-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mi/mi-vote-10.jpg",
+   "new": "/assets/states/mi/michigan-votes-sticker-teal-outline.jpg",
+   "order": 10,
+   "redirect": "/assets/states/mi/mi-vote-10.jpg /assets/states/mi/michigan-votes-sticker-teal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mn/mn-i-voted-1.jpg",
+   "new": "/assets/states/mn/minnesota-i-voted-sticker-state-colors.jpg",
+   "order": 1,
+   "redirect": "/assets/states/mn/mn-i-voted-1.jpg /assets/states/mn/minnesota-i-voted-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/mn/mn-i-voted-2.jpg",
+   "new": "/assets/states/mn/minnesota-i-voted-sticker-navy.jpg",
+   "order": 2,
+   "redirect": "/assets/states/mn/mn-i-voted-2.jpg /assets/states/mn/minnesota-i-voted-sticker-navy.jpg 301"
+  },
+  {
+   "old": "/assets/states/mn/mn-i-voted-early.jpg",
+   "new": "/assets/states/mn/minnesota-i-voted-early-sticker-state-colors.jpg",
+   "order": 3,
+   "redirect": "/assets/states/mn/mn-i-voted-early.jpg /assets/states/mn/minnesota-i-voted-early-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/mn/mn-vote-1.jpg",
+   "new": "/assets/states/mn/minnesota-vote-early-sticker-cream-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/mn/mn-vote-1.jpg /assets/states/mn/minnesota-vote-early-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mn/mn-vote-2.jpg",
+   "new": "/assets/states/mn/minnesota-vote-early-sticker-navy-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/mn/mn-vote-2.jpg /assets/states/mn/minnesota-vote-early-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mn/mn-vote-3.jpg",
+   "new": "/assets/states/mn/minnesota-vote-early-sticker-forest-green-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/mn/mn-vote-3.jpg /assets/states/mn/minnesota-vote-early-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mn/mn-vote-4.jpg",
+   "new": "/assets/states/mn/minnesota-vote-early-sticker-dark-blue-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/mn/mn-vote-4.jpg /assets/states/mn/minnesota-vote-early-sticker-dark-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mn/mn-vote-5.jpg",
+   "new": "/assets/states/mn/minnesota-vote-early-sticker-mustard-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/mn/mn-vote-5.jpg /assets/states/mn/minnesota-vote-early-sticker-mustard-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mn/mn-vote-6.jpg",
+   "new": "/assets/states/mn/minnesota-i-voted-sticker-plum-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/mn/mn-vote-6.jpg /assets/states/mn/minnesota-i-voted-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mn/mn-vote-7.jpg",
+   "new": "/assets/states/mn/minnesota-i-voted-early-sticker-burnt-orange-outline.jpg",
+   "order": 10,
+   "redirect": "/assets/states/mn/mn-vote-7.jpg /assets/states/mn/minnesota-i-voted-early-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mn/mn-vote-8.jpg",
+   "new": "/assets/states/mn/minnesota-make-a-plan-vote-early-sticker-navy-outline.jpg",
+   "order": 11,
+   "redirect": "/assets/states/mn/mn-vote-8.jpg /assets/states/mn/minnesota-make-a-plan-vote-early-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mn/mn-vote-9.jpg",
+   "new": "/assets/states/mn/minnesota-vote-early-sticker-brown-outline.jpg",
+   "order": 12,
+   "redirect": "/assets/states/mn/mn-vote-9.jpg /assets/states/mn/minnesota-vote-early-sticker-brown-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mn/mn-vote-nov-3.jpg",
+   "new": "/assets/states/mn/minnesota-vote-election-day-sticker-cream.jpg",
+   "order": 13,
+   "redirect": "/assets/states/mn/mn-vote-nov-3.jpg /assets/states/mn/minnesota-vote-election-day-sticker-cream.jpg 301"
+  },
+  {
+   "old": "/assets/states/mo/mo-i-voted-1.jpg",
+   "new": "/assets/states/mo/missouri-i-voted-sticker-state-colors.jpg",
+   "order": 1,
+   "redirect": "/assets/states/mo/mo-i-voted-1.jpg /assets/states/mo/missouri-i-voted-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/mo/mo-i-voted-2.jpg",
+   "new": "/assets/states/mo/missouri-i-voted-sticker-navy.jpg",
+   "order": 2,
+   "redirect": "/assets/states/mo/mo-i-voted-2.jpg /assets/states/mo/missouri-i-voted-sticker-navy.jpg 301"
+  },
+  {
+   "old": "/assets/states/mo/mo-i-voted-early.jpg",
+   "new": "/assets/states/mo/missouri-i-voted-early-sticker-state-colors.jpg",
+   "order": 3,
+   "redirect": "/assets/states/mo/mo-i-voted-early.jpg /assets/states/mo/missouri-i-voted-early-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/mo/mo-vote-1.jpg",
+   "new": "/assets/states/mo/missouri-vote-early-sticker-cream-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/mo/mo-vote-1.jpg /assets/states/mo/missouri-vote-early-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mo/mo-vote-2.jpg",
+   "new": "/assets/states/mo/missouri-vote-early-sticker-navy-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/mo/mo-vote-2.jpg /assets/states/mo/missouri-vote-early-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mo/mo-vote-3.jpg",
+   "new": "/assets/states/mo/missouri-vote-early-sticker-sand-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/mo/mo-vote-3.jpg /assets/states/mo/missouri-vote-early-sticker-sand-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mo/mo-vote-4.jpg",
+   "new": "/assets/states/mo/missouri-vote-early-sticker-light-blue-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/mo/mo-vote-4.jpg /assets/states/mo/missouri-vote-early-sticker-light-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mo/mo-vote-5.jpg",
+   "new": "/assets/states/mo/missouri-vote-early-sticker-dark-blue-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/mo/mo-vote-5.jpg /assets/states/mo/missouri-vote-early-sticker-dark-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mo/mo-vote-6.jpg",
+   "new": "/assets/states/mo/missouri-vote-early-sticker-sand-outline-2.jpg",
+   "order": 9,
+   "redirect": "/assets/states/mo/mo-vote-6.jpg /assets/states/mo/missouri-vote-early-sticker-sand-outline-2.jpg 301"
+  },
+  {
+   "old": "/assets/states/mo/mo-vote-7.jpg",
+   "new": "/assets/states/mo/missouri-vote-early-sticker-forest-green-outline.jpg",
+   "order": 10,
+   "redirect": "/assets/states/mo/mo-vote-7.jpg /assets/states/mo/missouri-vote-early-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mo/mo-vote-8.jpg",
+   "new": "/assets/states/mo/missouri-vote-early-sticker-light-blue-outline-2.jpg",
+   "order": 11,
+   "redirect": "/assets/states/mo/mo-vote-8.jpg /assets/states/mo/missouri-vote-early-sticker-light-blue-outline-2.jpg 301"
+  },
+  {
+   "old": "/assets/states/mo/mo-vote-9.jpg",
+   "new": "/assets/states/mo/missouri-vote-early-sticker-sand-outline-3.jpg",
+   "order": 12,
+   "redirect": "/assets/states/mo/mo-vote-9.jpg /assets/states/mo/missouri-vote-early-sticker-sand-outline-3.jpg 301"
+  },
+  {
+   "old": "/assets/states/mo/mo-vote-10.jpg",
+   "new": "/assets/states/mo/missouri-vote-early-sticker-dark-blue-outline-2.jpg",
+   "order": 13,
+   "redirect": "/assets/states/mo/mo-vote-10.jpg /assets/states/mo/missouri-vote-early-sticker-dark-blue-outline-2.jpg 301"
+  },
+  {
+   "old": "/assets/states/mo/mo-vote-nov-3.jpg",
+   "new": "/assets/states/mo/missouri-vote-election-day-sticker-cream.jpg",
+   "order": 14,
+   "redirect": "/assets/states/mo/mo-vote-nov-3.jpg /assets/states/mo/missouri-vote-election-day-sticker-cream.jpg 301"
+  },
+  {
+   "old": "/assets/states/ms/ms-vote-1.jpg",
+   "new": "/assets/states/ms/mississippi-vote-election-day-sticker-cream-outline.jpg",
+   "order": 1,
+   "redirect": "/assets/states/ms/ms-vote-1.jpg /assets/states/ms/mississippi-vote-election-day-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ms/ms-vote-2.jpg",
+   "new": "/assets/states/ms/mississippi-vote-election-day-sticker-navy-outline.jpg",
+   "order": 2,
+   "redirect": "/assets/states/ms/ms-vote-2.jpg /assets/states/ms/mississippi-vote-election-day-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ms/ms-vote-3.jpg",
+   "new": "/assets/states/ms/mississippi-vote-election-day-sticker-forest-green-outline.jpg",
+   "order": 3,
+   "redirect": "/assets/states/ms/ms-vote-3.jpg /assets/states/ms/mississippi-vote-election-day-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ms/ms-vote-4.jpg",
+   "new": "/assets/states/ms/mississippi-vote-election-day-sticker-mint-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/ms/ms-vote-4.jpg /assets/states/ms/mississippi-vote-election-day-sticker-mint-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ms/ms-vote-5.jpg",
+   "new": "/assets/states/ms/mississippi-vote-election-day-sticker-plum-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/ms/ms-vote-5.jpg /assets/states/ms/mississippi-vote-election-day-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ms/ms-vote-6.jpg",
+   "new": "/assets/states/ms/mississippi-i-voted-sticker-cream-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/ms/ms-vote-6.jpg /assets/states/ms/mississippi-i-voted-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ms/ms-vote-7.jpg",
+   "new": "/assets/states/ms/mississippi-i-voted-sticker-mustard-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/ms/ms-vote-7.jpg /assets/states/ms/mississippi-i-voted-sticker-mustard-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ms/ms-vote-8.jpg",
+   "new": "/assets/states/ms/mississippi-i-voted-sticker-plum-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/ms/ms-vote-8.jpg /assets/states/ms/mississippi-i-voted-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ms/ms-vote-9.jpg",
+   "new": "/assets/states/ms/mississippi-make-a-plan-vote-sticker-burnt-orange-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/ms/ms-vote-9.jpg /assets/states/ms/mississippi-make-a-plan-vote-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ms/ms-vote-10.jpg",
+   "new": "/assets/states/ms/mississippi-votes-sticker-dark-blue-outline.jpg",
+   "order": 10,
+   "redirect": "/assets/states/ms/ms-vote-10.jpg /assets/states/ms/mississippi-votes-sticker-dark-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mt/mt-vote-1.jpg",
+   "new": "/assets/states/mt/montana-vote-election-day-sticker-cream-outline.jpg",
+   "order": 1,
+   "redirect": "/assets/states/mt/mt-vote-1.jpg /assets/states/mt/montana-vote-election-day-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mt/mt-vote-2.jpg",
+   "new": "/assets/states/mt/montana-vote-election-day-sticker-navy-outline.jpg",
+   "order": 2,
+   "redirect": "/assets/states/mt/mt-vote-2.jpg /assets/states/mt/montana-vote-election-day-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mt/mt-vote-3.jpg",
+   "new": "/assets/states/mt/montana-vote-election-day-sticker-forest-green-outline.jpg",
+   "order": 3,
+   "redirect": "/assets/states/mt/mt-vote-3.jpg /assets/states/mt/montana-vote-election-day-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mt/mt-vote-4.jpg",
+   "new": "/assets/states/mt/montana-vote-election-day-sticker-navy-outline-2.jpg",
+   "order": 4,
+   "redirect": "/assets/states/mt/mt-vote-4.jpg /assets/states/mt/montana-vote-election-day-sticker-navy-outline-2.jpg 301"
+  },
+  {
+   "old": "/assets/states/mt/mt-vote-5.jpg",
+   "new": "/assets/states/mt/montana-vote-election-day-sticker-cobalt-blue-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/mt/mt-vote-5.jpg /assets/states/mt/montana-vote-election-day-sticker-cobalt-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mt/mt-vote-6.jpg",
+   "new": "/assets/states/mt/montana-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/mt/mt-vote-6.jpg /assets/states/mt/montana-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mt/mt-vote-7.jpg",
+   "new": "/assets/states/mt/montana-i-voted-sticker-maroon-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/mt/mt-vote-7.jpg /assets/states/mt/montana-i-voted-sticker-maroon-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mt/mt-vote-8.jpg",
+   "new": "/assets/states/mt/montana-i-voted-sticker-plum-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/mt/mt-vote-8.jpg /assets/states/mt/montana-i-voted-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mt/mt-vote-9.jpg",
+   "new": "/assets/states/mt/montana-make-a-plan-vote-sticker-teal-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/mt/mt-vote-9.jpg /assets/states/mt/montana-make-a-plan-vote-sticker-teal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/mt/mt-vote-10.jpg",
+   "new": "/assets/states/mt/montana-votes-sticker-dark-green-outline.jpg",
+   "order": 10,
+   "redirect": "/assets/states/mt/mt-vote-10.jpg /assets/states/mt/montana-votes-sticker-dark-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nc/nc-i-voted-1.jpg",
+   "new": "/assets/states/nc/north-carolina-i-voted-sticker-state-colors.jpg",
+   "order": 1,
+   "redirect": "/assets/states/nc/nc-i-voted-1.jpg /assets/states/nc/north-carolina-i-voted-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/nc/nc-i-voted-2.jpg",
+   "new": "/assets/states/nc/north-carolina-i-voted-sticker-navy.jpg",
+   "order": 2,
+   "redirect": "/assets/states/nc/nc-i-voted-2.jpg /assets/states/nc/north-carolina-i-voted-sticker-navy.jpg 301"
+  },
+  {
+   "old": "/assets/states/nc/nc-i-voted-early.jpg",
+   "new": "/assets/states/nc/north-carolina-i-voted-early-sticker-state-colors.jpg",
+   "order": 3,
+   "redirect": "/assets/states/nc/nc-i-voted-early.jpg /assets/states/nc/north-carolina-i-voted-early-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/nc/nc-vote-1.jpg",
+   "new": "/assets/states/nc/north-carolina-vote-early-sticker-mint-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/nc/nc-vote-1.jpg /assets/states/nc/north-carolina-vote-early-sticker-mint-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nc/nc-vote-2.jpg",
+   "new": "/assets/states/nc/north-carolina-vote-early-sticker-navy-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/nc/nc-vote-2.jpg /assets/states/nc/north-carolina-vote-early-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nc/nc-vote-3.jpg",
+   "new": "/assets/states/nc/north-carolina-vote-early-sticker-sage-green-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/nc/nc-vote-3.jpg /assets/states/nc/north-carolina-vote-early-sticker-sage-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nc/nc-vote-4.jpg",
+   "new": "/assets/states/nc/north-carolina-vote-early-sticker-dark-blue-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/nc/nc-vote-4.jpg /assets/states/nc/north-carolina-vote-early-sticker-dark-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nc/nc-vote-5.jpg",
+   "new": "/assets/states/nc/north-carolina-vote-early-sticker-sand-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/nc/nc-vote-5.jpg /assets/states/nc/north-carolina-vote-early-sticker-sand-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nc/nc-vote-6.jpg",
+   "new": "/assets/states/nc/north-carolina-vote-early-sticker-cream-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/nc/nc-vote-6.jpg /assets/states/nc/north-carolina-vote-early-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nc/nc-vote-nov-3.jpg",
+   "new": "/assets/states/nc/north-carolina-vote-election-day-sticker-cream.jpg",
+   "order": 10,
+   "redirect": "/assets/states/nc/nc-vote-nov-3.jpg /assets/states/nc/north-carolina-vote-election-day-sticker-cream.jpg 301"
+  },
+  {
+   "old": "/assets/states/nd/nd-i-voted-1.jpg",
+   "new": "/assets/states/nd/north-dakota-i-voted-sticker-state-colors.jpg",
+   "order": 1,
+   "redirect": "/assets/states/nd/nd-i-voted-1.jpg /assets/states/nd/north-dakota-i-voted-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/nd/nd-i-voted-2.jpg",
+   "new": "/assets/states/nd/north-dakota-i-voted-sticker-navy.jpg",
+   "order": 2,
+   "redirect": "/assets/states/nd/nd-i-voted-2.jpg /assets/states/nd/north-dakota-i-voted-sticker-navy.jpg 301"
+  },
+  {
+   "old": "/assets/states/nd/nd-i-voted-early.jpg",
+   "new": "/assets/states/nd/north-dakota-i-voted-early-sticker-state-colors.jpg",
+   "order": 3,
+   "redirect": "/assets/states/nd/nd-i-voted-early.jpg /assets/states/nd/north-dakota-i-voted-early-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/nd/nd-vote-1.jpg",
+   "new": "/assets/states/nd/north-dakota-vote-election-day-sticker-plum-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/nd/nd-vote-1.jpg /assets/states/nd/north-dakota-vote-election-day-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nd/nd-vote-2.jpg",
+   "new": "/assets/states/nd/north-dakota-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/nd/nd-vote-2.jpg /assets/states/nd/north-dakota-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nd/nd-vote-nov-3.jpg",
+   "new": "/assets/states/nd/north-dakota-vote-election-day-sticker-cream.jpg",
+   "order": 6,
+   "redirect": "/assets/states/nd/nd-vote-nov-3.jpg /assets/states/nd/north-dakota-vote-election-day-sticker-cream.jpg 301"
+  },
+  {
+   "old": "/assets/states/ne/ne-vote-1.jpg",
+   "new": "/assets/states/ne/nebraska-vote-early-sticker-cream-outline.jpg",
+   "order": 1,
+   "redirect": "/assets/states/ne/ne-vote-1.jpg /assets/states/ne/nebraska-vote-early-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ne/ne-vote-2.jpg",
+   "new": "/assets/states/ne/nebraska-vote-early-sticker-navy-outline.jpg",
+   "order": 2,
+   "redirect": "/assets/states/ne/ne-vote-2.jpg /assets/states/ne/nebraska-vote-early-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ne/ne-vote-3.jpg",
+   "new": "/assets/states/ne/nebraska-vote-early-sticker-forest-green-outline.jpg",
+   "order": 3,
+   "redirect": "/assets/states/ne/ne-vote-3.jpg /assets/states/ne/nebraska-vote-early-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ne/ne-vote-4.jpg",
+   "new": "/assets/states/ne/nebraska-vote-early-sticker-charcoal-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/ne/ne-vote-4.jpg /assets/states/ne/nebraska-vote-early-sticker-charcoal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ne/ne-vote-5.jpg",
+   "new": "/assets/states/ne/nebraska-vote-early-sticker-plum-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/ne/ne-vote-5.jpg /assets/states/ne/nebraska-vote-early-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ne/ne-vote-6.jpg",
+   "new": "/assets/states/ne/nebraska-i-voted-sticker-cobalt-blue-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/ne/ne-vote-6.jpg /assets/states/ne/nebraska-i-voted-sticker-cobalt-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ne/ne-vote-7.jpg",
+   "new": "/assets/states/ne/nebraska-i-voted-early-sticker-teal-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/ne/ne-vote-7.jpg /assets/states/ne/nebraska-i-voted-early-sticker-teal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ne/ne-vote-8.jpg",
+   "new": "/assets/states/ne/nebraska-make-a-plan-vote-early-sticker-maroon-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/ne/ne-vote-8.jpg /assets/states/ne/nebraska-make-a-plan-vote-early-sticker-maroon-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ne/ne-vote-9.jpg",
+   "new": "/assets/states/ne/nebraska-votes-sticker-black-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/ne/ne-vote-9.jpg /assets/states/ne/nebraska-votes-sticker-black-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nh/nh-vote-1.jpg",
+   "new": "/assets/states/nh/new-hampshire-vote-election-day-sticker-cream-outline.jpg",
+   "order": 1,
+   "redirect": "/assets/states/nh/nh-vote-1.jpg /assets/states/nh/new-hampshire-vote-election-day-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nh/nh-vote-2.jpg",
+   "new": "/assets/states/nh/new-hampshire-vote-election-day-sticker-navy-outline.jpg",
+   "order": 2,
+   "redirect": "/assets/states/nh/nh-vote-2.jpg /assets/states/nh/new-hampshire-vote-election-day-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nh/nh-vote-3.jpg",
+   "new": "/assets/states/nh/new-hampshire-vote-election-day-sticker-forest-green-outline.jpg",
+   "order": 3,
+   "redirect": "/assets/states/nh/nh-vote-3.jpg /assets/states/nh/new-hampshire-vote-election-day-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nh/nh-vote-4.jpg",
+   "new": "/assets/states/nh/new-hampshire-vote-election-day-sticker-forest-green-outline-2.jpg",
+   "order": 4,
+   "redirect": "/assets/states/nh/nh-vote-4.jpg /assets/states/nh/new-hampshire-vote-election-day-sticker-forest-green-outline-2.jpg 301"
+  },
+  {
+   "old": "/assets/states/nh/nh-vote-5.jpg",
+   "new": "/assets/states/nh/new-hampshire-vote-election-day-sticker-cobalt-blue-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/nh/nh-vote-5.jpg /assets/states/nh/new-hampshire-vote-election-day-sticker-cobalt-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nh/nh-vote-6.jpg",
+   "new": "/assets/states/nh/new-hampshire-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/nh/nh-vote-6.jpg /assets/states/nh/new-hampshire-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nh/nh-vote-7.jpg",
+   "new": "/assets/states/nh/new-hampshire-i-voted-sticker-maroon-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/nh/nh-vote-7.jpg /assets/states/nh/new-hampshire-i-voted-sticker-maroon-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nh/nh-vote-8.jpg",
+   "new": "/assets/states/nh/new-hampshire-i-voted-sticker-plum-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/nh/nh-vote-8.jpg /assets/states/nh/new-hampshire-i-voted-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nh/nh-vote-9.jpg",
+   "new": "/assets/states/nh/new-hampshire-make-a-plan-vote-sticker-teal-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/nh/nh-vote-9.jpg /assets/states/nh/new-hampshire-make-a-plan-vote-sticker-teal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nh/nh-vote-10.jpg",
+   "new": "/assets/states/nh/new-hampshire-vote-election-day-sticker-brown-outline.jpg",
+   "order": 10,
+   "redirect": "/assets/states/nh/nh-vote-10.jpg /assets/states/nh/new-hampshire-vote-election-day-sticker-brown-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nj/nj-vote-1.jpg",
+   "new": "/assets/states/nj/new-jersey-vote-early-sticker-cream-outline.jpg",
+   "order": 1,
+   "redirect": "/assets/states/nj/nj-vote-1.jpg /assets/states/nj/new-jersey-vote-early-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nj/nj-vote-2.jpg",
+   "new": "/assets/states/nj/new-jersey-vote-early-sticker-navy-outline.jpg",
+   "order": 2,
+   "redirect": "/assets/states/nj/nj-vote-2.jpg /assets/states/nj/new-jersey-vote-early-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nj/nj-vote-3.jpg",
+   "new": "/assets/states/nj/new-jersey-vote-early-sticker-forest-green-outline.jpg",
+   "order": 3,
+   "redirect": "/assets/states/nj/nj-vote-3.jpg /assets/states/nj/new-jersey-vote-early-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nj/nj-vote-4.jpg",
+   "new": "/assets/states/nj/new-jersey-vote-early-sticker-dark-blue-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/nj/nj-vote-4.jpg /assets/states/nj/new-jersey-vote-early-sticker-dark-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nj/nj-vote-5.jpg",
+   "new": "/assets/states/nj/new-jersey-vote-early-sticker-cobalt-blue-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/nj/nj-vote-5.jpg /assets/states/nj/new-jersey-vote-early-sticker-cobalt-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nj/nj-vote-6.jpg",
+   "new": "/assets/states/nj/new-jersey-i-voted-sticker-plum-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/nj/nj-vote-6.jpg /assets/states/nj/new-jersey-i-voted-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nj/nj-vote-7.jpg",
+   "new": "/assets/states/nj/new-jersey-i-voted-sticker-dark-blue-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/nj/nj-vote-7.jpg /assets/states/nj/new-jersey-i-voted-sticker-dark-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nj/nj-vote-8.jpg",
+   "new": "/assets/states/nj/new-jersey-i-voted-early-sticker-burnt-orange-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/nj/nj-vote-8.jpg /assets/states/nj/new-jersey-i-voted-early-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nj/nj-vote-9.jpg",
+   "new": "/assets/states/nj/new-jersey-make-a-plan-vote-early-sticker-black-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/nj/nj-vote-9.jpg /assets/states/nj/new-jersey-make-a-plan-vote-early-sticker-black-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nj/nj-vote-10.jpg",
+   "new": "/assets/states/nj/new-jersey-vote-early-sticker-navy-outline-2.jpg",
+   "order": 10,
+   "redirect": "/assets/states/nj/nj-vote-10.jpg /assets/states/nj/new-jersey-vote-early-sticker-navy-outline-2.jpg 301"
+  },
+  {
+   "old": "/assets/states/nm/nm-i-voted-1.jpg",
+   "new": "/assets/states/nm/new-mexico-i-voted-sticker-state-colors.jpg",
+   "order": 1,
+   "redirect": "/assets/states/nm/nm-i-voted-1.jpg /assets/states/nm/new-mexico-i-voted-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/nm/nm-i-voted-2.jpg",
+   "new": "/assets/states/nm/new-mexico-i-voted-sticker-navy.jpg",
+   "order": 2,
+   "redirect": "/assets/states/nm/nm-i-voted-2.jpg /assets/states/nm/new-mexico-i-voted-sticker-navy.jpg 301"
+  },
+  {
+   "old": "/assets/states/nm/nm-i-voted-early.jpg",
+   "new": "/assets/states/nm/new-mexico-i-voted-early-sticker-state-colors.jpg",
+   "order": 3,
+   "redirect": "/assets/states/nm/nm-i-voted-early.jpg /assets/states/nm/new-mexico-i-voted-early-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/nm/nm-vote-1.jpg",
+   "new": "/assets/states/nm/new-mexico-vote-early-sticker-plum-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/nm/nm-vote-1.jpg /assets/states/nm/new-mexico-vote-early-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nm/nm-vote-2.jpg",
+   "new": "/assets/states/nm/new-mexico-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/nm/nm-vote-2.jpg /assets/states/nm/new-mexico-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nm/nm-vote-nov-3.jpg",
+   "new": "/assets/states/nm/new-mexico-vote-election-day-sticker-cream.jpg",
+   "order": 6,
+   "redirect": "/assets/states/nm/nm-vote-nov-3.jpg /assets/states/nm/new-mexico-vote-election-day-sticker-cream.jpg 301"
+  },
+  {
+   "old": "/assets/states/nv/nv-vote-1.jpg",
+   "new": "/assets/states/nv/nevada-vote-early-sticker-cream-outline.jpg",
+   "order": 1,
+   "redirect": "/assets/states/nv/nv-vote-1.jpg /assets/states/nv/nevada-vote-early-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nv/nv-vote-2.jpg",
+   "new": "/assets/states/nv/nevada-vote-early-sticker-navy-outline.jpg",
+   "order": 2,
+   "redirect": "/assets/states/nv/nv-vote-2.jpg /assets/states/nv/nevada-vote-early-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nv/nv-vote-3.jpg",
+   "new": "/assets/states/nv/nevada-vote-early-sticker-forest-green-outline.jpg",
+   "order": 3,
+   "redirect": "/assets/states/nv/nv-vote-3.jpg /assets/states/nv/nevada-vote-early-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nv/nv-vote-4.jpg",
+   "new": "/assets/states/nv/nevada-vote-early-sticker-dark-blue-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/nv/nv-vote-4.jpg /assets/states/nv/nevada-vote-early-sticker-dark-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nv/nv-vote-5.jpg",
+   "new": "/assets/states/nv/nevada-vote-early-sticker-cobalt-blue-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/nv/nv-vote-5.jpg /assets/states/nv/nevada-vote-early-sticker-cobalt-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nv/nv-vote-6.jpg",
+   "new": "/assets/states/nv/nevada-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/nv/nv-vote-6.jpg /assets/states/nv/nevada-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nv/nv-vote-7.jpg",
+   "new": "/assets/states/nv/nevada-i-voted-sticker-maroon-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/nv/nv-vote-7.jpg /assets/states/nv/nevada-i-voted-sticker-maroon-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nv/nv-vote-8.jpg",
+   "new": "/assets/states/nv/nevada-i-voted-early-sticker-plum-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/nv/nv-vote-8.jpg /assets/states/nv/nevada-i-voted-early-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/nv/nv-vote-9.jpg",
+   "new": "/assets/states/nv/nevada-make-a-plan-vote-early-sticker-teal-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/nv/nv-vote-9.jpg /assets/states/nv/nevada-make-a-plan-vote-early-sticker-teal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ny/ny-i-voted-1.jpg",
+   "new": "/assets/states/ny/new-york-i-voted-sticker-state-colors.jpg",
+   "order": 1,
+   "redirect": "/assets/states/ny/ny-i-voted-1.jpg /assets/states/ny/new-york-i-voted-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/ny/ny-i-voted-2.jpg",
+   "new": "/assets/states/ny/new-york-i-voted-sticker-navy.jpg",
+   "order": 2,
+   "redirect": "/assets/states/ny/ny-i-voted-2.jpg /assets/states/ny/new-york-i-voted-sticker-navy.jpg 301"
+  },
+  {
+   "old": "/assets/states/ny/ny-i-voted-early.jpg",
+   "new": "/assets/states/ny/new-york-i-voted-early-sticker-state-colors.jpg",
+   "order": 3,
+   "redirect": "/assets/states/ny/ny-i-voted-early.jpg /assets/states/ny/new-york-i-voted-early-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/ny/ny-vote-1.jpg",
+   "new": "/assets/states/ny/new-york-vote-early-sticker-navy-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/ny/ny-vote-1.jpg /assets/states/ny/new-york-vote-early-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ny/ny-vote-2.jpg",
+   "new": "/assets/states/ny/new-york-vote-early-sticker-light-blue-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/ny/ny-vote-2.jpg /assets/states/ny/new-york-vote-early-sticker-light-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ny/ny-vote-3.jpg",
+   "new": "/assets/states/ny/new-york-vote-early-sticker-black-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/ny/ny-vote-3.jpg /assets/states/ny/new-york-vote-early-sticker-black-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ny/ny-vote-4.jpg",
+   "new": "/assets/states/ny/new-york-vote-early-sticker-dark-blue-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/ny/ny-vote-4.jpg /assets/states/ny/new-york-vote-early-sticker-dark-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ny/ny-vote-5.jpg",
+   "new": "/assets/states/ny/new-york-vote-early-sticker-forest-green-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/ny/ny-vote-5.jpg /assets/states/ny/new-york-vote-early-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ny/ny-vote-6.jpg",
+   "new": "/assets/states/ny/new-york-vote-early-sticker-cream-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/ny/ny-vote-6.jpg /assets/states/ny/new-york-vote-early-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ny/ny-vote-7.jpg",
+   "new": "/assets/states/ny/new-york-vote-early-sticker-sage-green-outline.jpg",
+   "order": 10,
+   "redirect": "/assets/states/ny/ny-vote-7.jpg /assets/states/ny/new-york-vote-early-sticker-sage-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ny/ny-vote-nov-3.jpg",
+   "new": "/assets/states/ny/new-york-vote-election-day-sticker-cream.jpg",
+   "order": 11,
+   "redirect": "/assets/states/ny/ny-vote-nov-3.jpg /assets/states/ny/new-york-vote-election-day-sticker-cream.jpg 301"
+  },
+  {
+   "old": "/assets/states/oh/oh-i-voted-1.jpg",
+   "new": "/assets/states/oh/ohio-i-voted-sticker-state-colors.jpg",
+   "order": 1,
+   "redirect": "/assets/states/oh/oh-i-voted-1.jpg /assets/states/oh/ohio-i-voted-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/oh/oh-i-voted-2.jpg",
+   "new": "/assets/states/oh/ohio-i-voted-sticker-navy.jpg",
+   "order": 2,
+   "redirect": "/assets/states/oh/oh-i-voted-2.jpg /assets/states/oh/ohio-i-voted-sticker-navy.jpg 301"
+  },
+  {
+   "old": "/assets/states/oh/oh-i-voted-early.jpg",
+   "new": "/assets/states/oh/ohio-i-voted-early-sticker-state-colors.jpg",
+   "order": 3,
+   "redirect": "/assets/states/oh/oh-i-voted-early.jpg /assets/states/oh/ohio-i-voted-early-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/oh/oh-vote-1.jpg",
+   "new": "/assets/states/oh/ohio-vote-early-sticker-plum-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/oh/oh-vote-1.jpg /assets/states/oh/ohio-vote-early-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/oh/oh-vote-2.jpg",
+   "new": "/assets/states/oh/ohio-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/oh/oh-vote-2.jpg /assets/states/oh/ohio-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/oh/oh-vote-nov-3.jpg",
+   "new": "/assets/states/oh/ohio-vote-election-day-sticker-cream.jpg",
+   "order": 6,
+   "redirect": "/assets/states/oh/oh-vote-nov-3.jpg /assets/states/oh/ohio-vote-election-day-sticker-cream.jpg 301"
+  },
+  {
+   "old": "/assets/states/ok/ok-i-voted-1.jpg",
+   "new": "/assets/states/ok/oklahoma-i-voted-sticker-state-colors.jpg",
+   "order": 1,
+   "redirect": "/assets/states/ok/ok-i-voted-1.jpg /assets/states/ok/oklahoma-i-voted-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/ok/ok-i-voted-2.jpg",
+   "new": "/assets/states/ok/oklahoma-i-voted-sticker-navy.jpg",
+   "order": 2,
+   "redirect": "/assets/states/ok/ok-i-voted-2.jpg /assets/states/ok/oklahoma-i-voted-sticker-navy.jpg 301"
+  },
+  {
+   "old": "/assets/states/ok/ok-i-voted-early.jpg",
+   "new": "/assets/states/ok/oklahoma-i-voted-early-sticker-state-colors.jpg",
+   "order": 3,
+   "redirect": "/assets/states/ok/ok-i-voted-early.jpg /assets/states/ok/oklahoma-i-voted-early-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/ok/ok-vote-1.jpg",
+   "new": "/assets/states/ok/oklahoma-vote-early-sticker-plum-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/ok/ok-vote-1.jpg /assets/states/ok/oklahoma-vote-early-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ok/ok-vote-2.jpg",
+   "new": "/assets/states/ok/oklahoma-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/ok/ok-vote-2.jpg /assets/states/ok/oklahoma-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ok/ok-vote-nov-3.jpg",
+   "new": "/assets/states/ok/oklahoma-vote-election-day-sticker-cream.jpg",
+   "order": 6,
+   "redirect": "/assets/states/ok/ok-vote-nov-3.jpg /assets/states/ok/oklahoma-vote-election-day-sticker-cream.jpg 301"
+  },
+  {
+   "old": "/assets/states/or/or-vote-1.jpg",
+   "new": "/assets/states/or/oregon-vote-by-mail-sticker-cream-outline.jpg",
+   "order": 1,
+   "redirect": "/assets/states/or/or-vote-1.jpg /assets/states/or/oregon-vote-by-mail-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/or/or-vote-2.jpg",
+   "new": "/assets/states/or/oregon-vote-by-mail-sticker-navy-outline.jpg",
+   "order": 2,
+   "redirect": "/assets/states/or/or-vote-2.jpg /assets/states/or/oregon-vote-by-mail-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/or/or-vote-3.jpg",
+   "new": "/assets/states/or/oregon-vote-by-mail-sticker-forest-green-outline.jpg",
+   "order": 3,
+   "redirect": "/assets/states/or/or-vote-3.jpg /assets/states/or/oregon-vote-by-mail-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/or/or-vote-4.jpg",
+   "new": "/assets/states/or/oregon-vote-by-mail-sticker-dark-green-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/or/or-vote-4.jpg /assets/states/or/oregon-vote-by-mail-sticker-dark-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/or/or-vote-5.jpg",
+   "new": "/assets/states/or/oregon-vote-by-mail-sticker-plum-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/or/or-vote-5.jpg /assets/states/or/oregon-vote-by-mail-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/or/or-vote-6.jpg",
+   "new": "/assets/states/or/oregon-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/or/or-vote-6.jpg /assets/states/or/oregon-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/or/or-vote-7.jpg",
+   "new": "/assets/states/or/oregon-i-voted-sticker-dark-blue-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/or/or-vote-7.jpg /assets/states/or/oregon-i-voted-sticker-dark-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/or/or-vote-8.jpg",
+   "new": "/assets/states/or/oregon-my-ballot-is-in-sticker-cobalt-blue-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/or/or-vote-8.jpg /assets/states/or/oregon-my-ballot-is-in-sticker-cobalt-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/or/or-vote-9.jpg",
+   "new": "/assets/states/or/oregon-make-a-plan-vote-sticker-charcoal-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/or/or-vote-9.jpg /assets/states/or/oregon-make-a-plan-vote-sticker-charcoal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/or/or-vote-10.jpg",
+   "new": "/assets/states/or/oregon-votes-sticker-charcoal-outline.jpg",
+   "order": 10,
+   "redirect": "/assets/states/or/or-vote-10.jpg /assets/states/or/oregon-votes-sticker-charcoal-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/pa/pa-i-voted-1.jpg",
+   "new": "/assets/states/pa/pennsylvania-i-voted-sticker-state-colors.jpg",
+   "order": 1,
+   "redirect": "/assets/states/pa/pa-i-voted-1.jpg /assets/states/pa/pennsylvania-i-voted-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/pa/pa-i-voted-2.jpg",
+   "new": "/assets/states/pa/pennsylvania-i-voted-sticker-navy.jpg",
+   "order": 2,
+   "redirect": "/assets/states/pa/pa-i-voted-2.jpg /assets/states/pa/pennsylvania-i-voted-sticker-navy.jpg 301"
+  },
+  {
+   "old": "/assets/states/pa/pa-i-voted-early.jpg",
+   "new": "/assets/states/pa/pennsylvania-i-voted-early-sticker-state-colors.jpg",
+   "order": 3,
+   "redirect": "/assets/states/pa/pa-i-voted-early.jpg /assets/states/pa/pennsylvania-i-voted-early-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/pa/pa-vote-1.jpg",
+   "new": "/assets/states/pa/pennsylvania-vote-early-sticker-navy-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/pa/pa-vote-1.jpg /assets/states/pa/pennsylvania-vote-early-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/pa/pa-vote-2.jpg",
+   "new": "/assets/states/pa/pennsylvania-vote-early-sticker-forest-green-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/pa/pa-vote-2.jpg /assets/states/pa/pennsylvania-vote-early-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/pa/pa-vote-3.jpg",
+   "new": "/assets/states/pa/pennsylvania-vote-early-sticker-dark-blue-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/pa/pa-vote-3.jpg /assets/states/pa/pennsylvania-vote-early-sticker-dark-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/pa/pa-vote-4.jpg",
+   "new": "/assets/states/pa/pennsylvania-vote-early-sticker-sand-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/pa/pa-vote-4.jpg /assets/states/pa/pennsylvania-vote-early-sticker-sand-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/pa/pa-vote-5.jpg",
+   "new": "/assets/states/pa/pennsylvania-vote-early-sticker-forest-green-outline-2.jpg",
+   "order": 8,
+   "redirect": "/assets/states/pa/pa-vote-5.jpg /assets/states/pa/pennsylvania-vote-early-sticker-forest-green-outline-2.jpg 301"
+  },
+  {
+   "old": "/assets/states/pa/pa-vote-6.jpg",
+   "new": "/assets/states/pa/pennsylvania-vote-early-sticker-cream-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/pa/pa-vote-6.jpg /assets/states/pa/pennsylvania-vote-early-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/pa/pa-vote-7.jpg",
+   "new": "/assets/states/pa/pennsylvania-vote-early-sticker-dark-blue-outline-2.jpg",
+   "order": 10,
+   "redirect": "/assets/states/pa/pa-vote-7.jpg /assets/states/pa/pennsylvania-vote-early-sticker-dark-blue-outline-2.jpg 301"
+  },
+  {
+   "old": "/assets/states/pa/pa-vote-nov-3.jpg",
+   "new": "/assets/states/pa/pennsylvania-vote-election-day-sticker-cream.jpg",
+   "order": 11,
+   "redirect": "/assets/states/pa/pa-vote-nov-3.jpg /assets/states/pa/pennsylvania-vote-election-day-sticker-cream.jpg 301"
+  },
+  {
+   "old": "/assets/states/ri/ri-i-voted-1.jpg",
+   "new": "/assets/states/ri/rhode-island-i-voted-sticker-state-colors.jpg",
+   "order": 1,
+   "redirect": "/assets/states/ri/ri-i-voted-1.jpg /assets/states/ri/rhode-island-i-voted-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/ri/ri-i-voted-2.jpg",
+   "new": "/assets/states/ri/rhode-island-i-voted-sticker-navy.jpg",
+   "order": 2,
+   "redirect": "/assets/states/ri/ri-i-voted-2.jpg /assets/states/ri/rhode-island-i-voted-sticker-navy.jpg 301"
+  },
+  {
+   "old": "/assets/states/ri/ri-i-voted-early.jpg",
+   "new": "/assets/states/ri/rhode-island-i-voted-early-sticker-state-colors.jpg",
+   "order": 3,
+   "redirect": "/assets/states/ri/ri-i-voted-early.jpg /assets/states/ri/rhode-island-i-voted-early-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/ri/ri-vote-1.jpg",
+   "new": "/assets/states/ri/rhode-island-vote-early-sticker-plum-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/ri/ri-vote-1.jpg /assets/states/ri/rhode-island-vote-early-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ri/ri-vote-2.jpg",
+   "new": "/assets/states/ri/rhode-island-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/ri/ri-vote-2.jpg /assets/states/ri/rhode-island-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ri/ri-vote-nov-3.jpg",
+   "new": "/assets/states/ri/rhode-island-vote-election-day-sticker-cream.jpg",
+   "order": 6,
+   "redirect": "/assets/states/ri/ri-vote-nov-3.jpg /assets/states/ri/rhode-island-vote-election-day-sticker-cream.jpg 301"
+  },
+  {
+   "old": "/assets/states/sc/sc-i-voted-1.jpg",
+   "new": "/assets/states/sc/south-carolina-i-voted-sticker-state-colors.jpg",
+   "order": 1,
+   "redirect": "/assets/states/sc/sc-i-voted-1.jpg /assets/states/sc/south-carolina-i-voted-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/sc/sc-i-voted-2.jpg",
+   "new": "/assets/states/sc/south-carolina-i-voted-sticker-navy.jpg",
+   "order": 2,
+   "redirect": "/assets/states/sc/sc-i-voted-2.jpg /assets/states/sc/south-carolina-i-voted-sticker-navy.jpg 301"
+  },
+  {
+   "old": "/assets/states/sc/sc-i-voted-early.jpg",
+   "new": "/assets/states/sc/south-carolina-i-voted-early-sticker-state-colors.jpg",
+   "order": 3,
+   "redirect": "/assets/states/sc/sc-i-voted-early.jpg /assets/states/sc/south-carolina-i-voted-early-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/sc/sc-vote-1.jpg",
+   "new": "/assets/states/sc/south-carolina-vote-early-sticker-plum-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/sc/sc-vote-1.jpg /assets/states/sc/south-carolina-vote-early-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/sc/sc-vote-2.jpg",
+   "new": "/assets/states/sc/south-carolina-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/sc/sc-vote-2.jpg /assets/states/sc/south-carolina-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/sc/sc-vote-nov-3.jpg",
+   "new": "/assets/states/sc/south-carolina-vote-election-day-sticker-cream.jpg",
+   "order": 6,
+   "redirect": "/assets/states/sc/sc-vote-nov-3.jpg /assets/states/sc/south-carolina-vote-election-day-sticker-cream.jpg 301"
+  },
+  {
+   "old": "/assets/states/sd/sd-i-voted-1.jpg",
+   "new": "/assets/states/sd/south-dakota-i-voted-sticker-state-colors.jpg",
+   "order": 1,
+   "redirect": "/assets/states/sd/sd-i-voted-1.jpg /assets/states/sd/south-dakota-i-voted-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/sd/sd-i-voted-2.jpg",
+   "new": "/assets/states/sd/south-dakota-i-voted-sticker-navy.jpg",
+   "order": 2,
+   "redirect": "/assets/states/sd/sd-i-voted-2.jpg /assets/states/sd/south-dakota-i-voted-sticker-navy.jpg 301"
+  },
+  {
+   "old": "/assets/states/sd/sd-i-voted-early.jpg",
+   "new": "/assets/states/sd/south-dakota-i-voted-early-sticker-state-colors.jpg",
+   "order": 3,
+   "redirect": "/assets/states/sd/sd-i-voted-early.jpg /assets/states/sd/south-dakota-i-voted-early-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/sd/sd-vote-1.jpg",
+   "new": "/assets/states/sd/south-dakota-vote-election-day-sticker-plum-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/sd/sd-vote-1.jpg /assets/states/sd/south-dakota-vote-election-day-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/sd/sd-vote-2.jpg",
+   "new": "/assets/states/sd/south-dakota-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/sd/sd-vote-2.jpg /assets/states/sd/south-dakota-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/sd/sd-vote-nov-3.jpg",
+   "new": "/assets/states/sd/south-dakota-vote-election-day-sticker-cream.jpg",
+   "order": 6,
+   "redirect": "/assets/states/sd/sd-vote-nov-3.jpg /assets/states/sd/south-dakota-vote-election-day-sticker-cream.jpg 301"
+  },
+  {
+   "old": "/assets/states/tn/tn-i-voted-1.jpg",
+   "new": "/assets/states/tn/tennessee-i-voted-sticker-state-colors.jpg",
+   "order": 1,
+   "redirect": "/assets/states/tn/tn-i-voted-1.jpg /assets/states/tn/tennessee-i-voted-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/tn/tn-i-voted-2.jpg",
+   "new": "/assets/states/tn/tennessee-i-voted-sticker-navy.jpg",
+   "order": 2,
+   "redirect": "/assets/states/tn/tn-i-voted-2.jpg /assets/states/tn/tennessee-i-voted-sticker-navy.jpg 301"
+  },
+  {
+   "old": "/assets/states/tn/tn-i-voted-early.jpg",
+   "new": "/assets/states/tn/tennessee-i-voted-early-sticker-state-colors.jpg",
+   "order": 3,
+   "redirect": "/assets/states/tn/tn-i-voted-early.jpg /assets/states/tn/tennessee-i-voted-early-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/tn/tn-vote-1.jpg",
+   "new": "/assets/states/tn/tennessee-vote-early-sticker-plum-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/tn/tn-vote-1.jpg /assets/states/tn/tennessee-vote-early-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/tn/tn-vote-2.jpg",
+   "new": "/assets/states/tn/tennessee-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/tn/tn-vote-2.jpg /assets/states/tn/tennessee-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/tn/tn-vote-nov-3.jpg",
+   "new": "/assets/states/tn/tennessee-vote-election-day-sticker-cream.jpg",
+   "order": 6,
+   "redirect": "/assets/states/tn/tn-vote-nov-3.jpg /assets/states/tn/tennessee-vote-election-day-sticker-cream.jpg 301"
+  },
+  {
+   "old": "/assets/states/tx/tx-i-voted-1.jpg",
+   "new": "/assets/states/tx/texas-i-voted-sticker-state-colors.jpg",
+   "order": 1,
+   "redirect": "/assets/states/tx/tx-i-voted-1.jpg /assets/states/tx/texas-i-voted-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/tx/tx-i-voted-2.jpg",
+   "new": "/assets/states/tx/texas-i-voted-sticker-navy.jpg",
+   "order": 2,
+   "redirect": "/assets/states/tx/tx-i-voted-2.jpg /assets/states/tx/texas-i-voted-sticker-navy.jpg 301"
+  },
+  {
+   "old": "/assets/states/tx/tx-i-voted-early.jpg",
+   "new": "/assets/states/tx/texas-i-voted-early-sticker-state-colors.jpg",
+   "order": 3,
+   "redirect": "/assets/states/tx/tx-i-voted-early.jpg /assets/states/tx/texas-i-voted-early-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/tx/tx-vote-1.jpg",
+   "new": "/assets/states/tx/texas-vote-early-sticker-cream-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/tx/tx-vote-1.jpg /assets/states/tx/texas-vote-early-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/tx/tx-vote-2.jpg",
+   "new": "/assets/states/tx/texas-vote-early-sticker-forest-green-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/tx/tx-vote-2.jpg /assets/states/tx/texas-vote-early-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/tx/tx-vote-3.jpg",
+   "new": "/assets/states/tx/texas-vote-early-sticker-cream-outline-2.jpg",
+   "order": 6,
+   "redirect": "/assets/states/tx/tx-vote-3.jpg /assets/states/tx/texas-vote-early-sticker-cream-outline-2.jpg 301"
+  },
+  {
+   "old": "/assets/states/tx/tx-vote-4.jpg",
+   "new": "/assets/states/tx/texas-vote-early-sticker-sand-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/tx/tx-vote-4.jpg /assets/states/tx/texas-vote-early-sticker-sand-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/tx/tx-vote-5.jpg",
+   "new": "/assets/states/tx/texas-vote-early-sticker-dark-blue-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/tx/tx-vote-5.jpg /assets/states/tx/texas-vote-early-sticker-dark-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/tx/tx-vote-6.jpg",
+   "new": "/assets/states/tx/texas-vote-early-sticker-navy-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/tx/tx-vote-6.jpg /assets/states/tx/texas-vote-early-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/tx/tx-vote-7.jpg",
+   "new": "/assets/states/tx/texas-vote-early-sticker-light-blue-outline.jpg",
+   "order": 10,
+   "redirect": "/assets/states/tx/tx-vote-7.jpg /assets/states/tx/texas-vote-early-sticker-light-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/tx/tx-vote-8.jpg",
+   "new": "/assets/states/tx/texas-vote-early-sticker-navy-outline-2.jpg",
+   "order": 11,
+   "redirect": "/assets/states/tx/tx-vote-8.jpg /assets/states/tx/texas-vote-early-sticker-navy-outline-2.jpg 301"
+  },
+  {
+   "old": "/assets/states/tx/tx-vote-9.jpg",
+   "new": "/assets/states/tx/texas-vote-early-sticker-sage-green-outline.jpg",
+   "order": 12,
+   "redirect": "/assets/states/tx/tx-vote-9.jpg /assets/states/tx/texas-vote-early-sticker-sage-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/tx/tx-vote-nov-3.jpg",
+   "new": "/assets/states/tx/texas-vote-election-day-sticker-cream.jpg",
+   "order": 13,
+   "redirect": "/assets/states/tx/tx-vote-nov-3.jpg /assets/states/tx/texas-vote-election-day-sticker-cream.jpg 301"
+  },
+  {
+   "old": "/assets/states/ut/ut-i-voted-1.jpg",
+   "new": "/assets/states/ut/utah-i-voted-sticker-state-colors.jpg",
+   "order": 1,
+   "redirect": "/assets/states/ut/ut-i-voted-1.jpg /assets/states/ut/utah-i-voted-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/ut/ut-i-voted-2.jpg",
+   "new": "/assets/states/ut/utah-i-voted-sticker-navy.jpg",
+   "order": 2,
+   "redirect": "/assets/states/ut/ut-i-voted-2.jpg /assets/states/ut/utah-i-voted-sticker-navy.jpg 301"
+  },
+  {
+   "old": "/assets/states/ut/ut-i-voted-early.jpg",
+   "new": "/assets/states/ut/utah-i-voted-early-sticker-state-colors.jpg",
+   "order": 3,
+   "redirect": "/assets/states/ut/ut-i-voted-early.jpg /assets/states/ut/utah-i-voted-early-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/ut/ut-vote-1.jpg",
+   "new": "/assets/states/ut/utah-vote-early-sticker-plum-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/ut/ut-vote-1.jpg /assets/states/ut/utah-vote-early-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ut/ut-vote-2.jpg",
+   "new": "/assets/states/ut/utah-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/ut/ut-vote-2.jpg /assets/states/ut/utah-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/ut/ut-vote-nov-3.jpg",
+   "new": "/assets/states/ut/utah-vote-election-day-sticker-cream.jpg",
+   "order": 6,
+   "redirect": "/assets/states/ut/ut-vote-nov-3.jpg /assets/states/ut/utah-vote-election-day-sticker-cream.jpg 301"
+  },
+  {
+   "old": "/assets/states/va/va-i-voted-1.jpg",
+   "new": "/assets/states/va/virginia-i-voted-sticker-state-colors.jpg",
+   "order": 1,
+   "redirect": "/assets/states/va/va-i-voted-1.jpg /assets/states/va/virginia-i-voted-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/va/va-i-voted-2.jpg",
+   "new": "/assets/states/va/virginia-i-voted-sticker-navy.jpg",
+   "order": 2,
+   "redirect": "/assets/states/va/va-i-voted-2.jpg /assets/states/va/virginia-i-voted-sticker-navy.jpg 301"
+  },
+  {
+   "old": "/assets/states/va/va-i-voted-early.jpg",
+   "new": "/assets/states/va/virginia-i-voted-early-sticker-state-colors.jpg",
+   "order": 3,
+   "redirect": "/assets/states/va/va-i-voted-early.jpg /assets/states/va/virginia-i-voted-early-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/va/va-vote-1.jpg",
+   "new": "/assets/states/va/virginia-vote-early-sticker-dark-blue-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/va/va-vote-1.jpg /assets/states/va/virginia-vote-early-sticker-dark-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/va/va-vote-2.jpg",
+   "new": "/assets/states/va/virginia-vote-early-sticker-navy-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/va/va-vote-2.jpg /assets/states/va/virginia-vote-early-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/va/va-vote-3.jpg",
+   "new": "/assets/states/va/virginia-vote-early-sticker-forest-green-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/va/va-vote-3.jpg /assets/states/va/virginia-vote-early-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/va/va-vote-4.jpg",
+   "new": "/assets/states/va/virginia-vote-early-sticker-dark-blue-outline-2.jpg",
+   "order": 7,
+   "redirect": "/assets/states/va/va-vote-4.jpg /assets/states/va/virginia-vote-early-sticker-dark-blue-outline-2.jpg 301"
+  },
+  {
+   "old": "/assets/states/va/va-vote-5.jpg",
+   "new": "/assets/states/va/virginia-vote-early-sticker-sand-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/va/va-vote-5.jpg /assets/states/va/virginia-vote-early-sticker-sand-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/va/va-vote-6.jpg",
+   "new": "/assets/states/va/virginia-vote-early-sticker-sand-outline-2.jpg",
+   "order": 9,
+   "redirect": "/assets/states/va/va-vote-6.jpg /assets/states/va/virginia-vote-early-sticker-sand-outline-2.jpg 301"
+  },
+  {
+   "old": "/assets/states/va/va-vote-nov-3.jpg",
+   "new": "/assets/states/va/virginia-vote-election-day-sticker-cream.jpg",
+   "order": 10,
+   "redirect": "/assets/states/va/va-vote-nov-3.jpg /assets/states/va/virginia-vote-election-day-sticker-cream.jpg 301"
+  },
+  {
+   "old": "/assets/states/vt/vt-i-voted-1.jpg",
+   "new": "/assets/states/vt/vermont-i-voted-sticker-state-colors.jpg",
+   "order": 1,
+   "redirect": "/assets/states/vt/vt-i-voted-1.jpg /assets/states/vt/vermont-i-voted-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/vt/vt-i-voted-2.jpg",
+   "new": "/assets/states/vt/vermont-i-voted-sticker-navy.jpg",
+   "order": 2,
+   "redirect": "/assets/states/vt/vt-i-voted-2.jpg /assets/states/vt/vermont-i-voted-sticker-navy.jpg 301"
+  },
+  {
+   "old": "/assets/states/vt/vt-i-voted-early.jpg",
+   "new": "/assets/states/vt/vermont-i-voted-early-sticker-state-colors.jpg",
+   "order": 3,
+   "redirect": "/assets/states/vt/vt-i-voted-early.jpg /assets/states/vt/vermont-i-voted-early-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/vt/vt-vote-1.jpg",
+   "new": "/assets/states/vt/vermont-vote-election-day-sticker-plum-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/vt/vt-vote-1.jpg /assets/states/vt/vermont-vote-election-day-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/vt/vt-vote-2.jpg",
+   "new": "/assets/states/vt/vermont-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/vt/vt-vote-2.jpg /assets/states/vt/vermont-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/vt/vt-vote-nov-3.jpg",
+   "new": "/assets/states/vt/vermont-vote-election-day-sticker-cream.jpg",
+   "order": 6,
+   "redirect": "/assets/states/vt/vt-vote-nov-3.jpg /assets/states/vt/vermont-vote-election-day-sticker-cream.jpg 301"
+  },
+  {
+   "old": "/assets/states/wa/wa-i-voted-1.jpg",
+   "new": "/assets/states/wa/washington-i-voted-sticker-state-colors.jpg",
+   "order": 1,
+   "redirect": "/assets/states/wa/wa-i-voted-1.jpg /assets/states/wa/washington-i-voted-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/wa/wa-i-voted-2.jpg",
+   "new": "/assets/states/wa/washington-i-voted-sticker-navy.jpg",
+   "order": 2,
+   "redirect": "/assets/states/wa/wa-i-voted-2.jpg /assets/states/wa/washington-i-voted-sticker-navy.jpg 301"
+  },
+  {
+   "old": "/assets/states/wa/wa-i-voted-by-mail.jpg",
+   "new": "/assets/states/wa/washington-i-voted-by-mail-sticker-state-colors.jpg",
+   "order": 3,
+   "redirect": "/assets/states/wa/wa-i-voted-by-mail.jpg /assets/states/wa/washington-i-voted-by-mail-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/wa/wa-vote-1.jpg",
+   "new": "/assets/states/wa/washington-vote-by-mail-sticker-forest-green-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/wa/wa-vote-1.jpg /assets/states/wa/washington-vote-by-mail-sticker-forest-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/wa/wa-vote-2.jpg",
+   "new": "/assets/states/wa/washington-vote-by-mail-sticker-navy-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/wa/wa-vote-2.jpg /assets/states/wa/washington-vote-by-mail-sticker-navy-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/wa/wa-vote-3.jpg",
+   "new": "/assets/states/wa/washington-vote-by-mail-sticker-sage-green-outline.jpg",
+   "order": 6,
+   "redirect": "/assets/states/wa/wa-vote-3.jpg /assets/states/wa/washington-vote-by-mail-sticker-sage-green-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/wa/wa-vote-4.jpg",
+   "new": "/assets/states/wa/washington-vote-by-mail-sticker-mint-outline.jpg",
+   "order": 7,
+   "redirect": "/assets/states/wa/wa-vote-4.jpg /assets/states/wa/washington-vote-by-mail-sticker-mint-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/wa/wa-vote-5.jpg",
+   "new": "/assets/states/wa/washington-vote-by-mail-sticker-dark-blue-outline.jpg",
+   "order": 8,
+   "redirect": "/assets/states/wa/wa-vote-5.jpg /assets/states/wa/washington-vote-by-mail-sticker-dark-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/wa/wa-vote-6.jpg",
+   "new": "/assets/states/wa/washington-vote-by-mail-sticker-cream-outline.jpg",
+   "order": 9,
+   "redirect": "/assets/states/wa/wa-vote-6.jpg /assets/states/wa/washington-vote-by-mail-sticker-cream-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/wa/wa-vote-7.jpg",
+   "new": "/assets/states/wa/washington-vote-by-mail-sticker-dark-blue-outline-2.jpg",
+   "order": 10,
+   "redirect": "/assets/states/wa/wa-vote-7.jpg /assets/states/wa/washington-vote-by-mail-sticker-dark-blue-outline-2.jpg 301"
+  },
+  {
+   "old": "/assets/states/wa/wa-vote-8.jpg",
+   "new": "/assets/states/wa/washington-vote-by-mail-sticker-sand-outline.jpg",
+   "order": 11,
+   "redirect": "/assets/states/wa/wa-vote-8.jpg /assets/states/wa/washington-vote-by-mail-sticker-sand-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/wa/wa-vote-9.jpg",
+   "new": "/assets/states/wa/washington-vote-by-mail-sticker-light-blue-outline.jpg",
+   "order": 12,
+   "redirect": "/assets/states/wa/wa-vote-9.jpg /assets/states/wa/washington-vote-by-mail-sticker-light-blue-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/wa/wa-vote-10.jpg",
+   "new": "/assets/states/wa/washington-vote-by-mail-sticker-forest-green-outline-2.jpg",
+   "order": 13,
+   "redirect": "/assets/states/wa/wa-vote-10.jpg /assets/states/wa/washington-vote-by-mail-sticker-forest-green-outline-2.jpg 301"
+  },
+  {
+   "old": "/assets/states/wa/wa-vote-nov-3.jpg",
+   "new": "/assets/states/wa/washington-vote-election-day-sticker-cream.jpg",
+   "order": 14,
+   "redirect": "/assets/states/wa/wa-vote-nov-3.jpg /assets/states/wa/washington-vote-election-day-sticker-cream.jpg 301"
+  },
+  {
+   "old": "/assets/states/wi/wi-i-voted-1.jpg",
+   "new": "/assets/states/wi/wisconsin-i-voted-sticker-state-colors.jpg",
+   "order": 1,
+   "redirect": "/assets/states/wi/wi-i-voted-1.jpg /assets/states/wi/wisconsin-i-voted-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/wi/wi-i-voted-2.jpg",
+   "new": "/assets/states/wi/wisconsin-i-voted-sticker-navy.jpg",
+   "order": 2,
+   "redirect": "/assets/states/wi/wi-i-voted-2.jpg /assets/states/wi/wisconsin-i-voted-sticker-navy.jpg 301"
+  },
+  {
+   "old": "/assets/states/wi/wi-i-voted-early.jpg",
+   "new": "/assets/states/wi/wisconsin-i-voted-early-sticker-state-colors.jpg",
+   "order": 3,
+   "redirect": "/assets/states/wi/wi-i-voted-early.jpg /assets/states/wi/wisconsin-i-voted-early-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/wi/wi-vote-1.jpg",
+   "new": "/assets/states/wi/wisconsin-vote-election-day-sticker-plum-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/wi/wi-vote-1.jpg /assets/states/wi/wisconsin-vote-election-day-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/wi/wi-vote-2.jpg",
+   "new": "/assets/states/wi/wisconsin-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/wi/wi-vote-2.jpg /assets/states/wi/wisconsin-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/wi/wi-vote-nov-3.jpg",
+   "new": "/assets/states/wi/wisconsin-vote-election-day-sticker-cream.jpg",
+   "order": 6,
+   "redirect": "/assets/states/wi/wi-vote-nov-3.jpg /assets/states/wi/wisconsin-vote-election-day-sticker-cream.jpg 301"
+  },
+  {
+   "old": "/assets/states/wv/wv-i-voted-1.jpg",
+   "new": "/assets/states/wv/west-virginia-i-voted-sticker-state-colors.jpg",
+   "order": 1,
+   "redirect": "/assets/states/wv/wv-i-voted-1.jpg /assets/states/wv/west-virginia-i-voted-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/wv/wv-i-voted-2.jpg",
+   "new": "/assets/states/wv/west-virginia-i-voted-sticker-navy.jpg",
+   "order": 2,
+   "redirect": "/assets/states/wv/wv-i-voted-2.jpg /assets/states/wv/west-virginia-i-voted-sticker-navy.jpg 301"
+  },
+  {
+   "old": "/assets/states/wv/wv-i-voted-early.jpg",
+   "new": "/assets/states/wv/west-virginia-i-voted-early-sticker-state-colors.jpg",
+   "order": 3,
+   "redirect": "/assets/states/wv/wv-i-voted-early.jpg /assets/states/wv/west-virginia-i-voted-early-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/wv/wv-vote-1.jpg",
+   "new": "/assets/states/wv/west-virginia-vote-early-sticker-plum-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/wv/wv-vote-1.jpg /assets/states/wv/west-virginia-vote-early-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/wv/wv-vote-2.jpg",
+   "new": "/assets/states/wv/west-virginia-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/wv/wv-vote-2.jpg /assets/states/wv/west-virginia-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/wv/wv-vote-nov-3.jpg",
+   "new": "/assets/states/wv/west-virginia-vote-election-day-sticker-cream.jpg",
+   "order": 6,
+   "redirect": "/assets/states/wv/wv-vote-nov-3.jpg /assets/states/wv/west-virginia-vote-election-day-sticker-cream.jpg 301"
+  },
+  {
+   "old": "/assets/states/wy/wy-i-voted-1.jpg",
+   "new": "/assets/states/wy/wyoming-i-voted-sticker-state-colors.jpg",
+   "order": 1,
+   "redirect": "/assets/states/wy/wy-i-voted-1.jpg /assets/states/wy/wyoming-i-voted-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/wy/wy-i-voted-2.jpg",
+   "new": "/assets/states/wy/wyoming-i-voted-sticker-navy.jpg",
+   "order": 2,
+   "redirect": "/assets/states/wy/wy-i-voted-2.jpg /assets/states/wy/wyoming-i-voted-sticker-navy.jpg 301"
+  },
+  {
+   "old": "/assets/states/wy/wy-i-voted-early.jpg",
+   "new": "/assets/states/wy/wyoming-i-voted-early-sticker-state-colors.jpg",
+   "order": 3,
+   "redirect": "/assets/states/wy/wy-i-voted-early.jpg /assets/states/wy/wyoming-i-voted-early-sticker-state-colors.jpg 301"
+  },
+  {
+   "old": "/assets/states/wy/wy-vote-1.jpg",
+   "new": "/assets/states/wy/wyoming-vote-early-sticker-plum-outline.jpg",
+   "order": 4,
+   "redirect": "/assets/states/wy/wy-vote-1.jpg /assets/states/wy/wyoming-vote-early-sticker-plum-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/wy/wy-vote-2.jpg",
+   "new": "/assets/states/wy/wyoming-i-voted-sticker-burnt-orange-outline.jpg",
+   "order": 5,
+   "redirect": "/assets/states/wy/wy-vote-2.jpg /assets/states/wy/wyoming-i-voted-sticker-burnt-orange-outline.jpg 301"
+  },
+  {
+   "old": "/assets/states/wy/wy-vote-nov-3.jpg",
+   "new": "/assets/states/wy/wyoming-vote-election-day-sticker-cream.jpg",
+   "order": 6,
+   "redirect": "/assets/states/wy/wy-vote-nov-3.jpg /assets/states/wy/wyoming-vote-election-day-sticker-cream.jpg 301"
+  }
+ ]
+}

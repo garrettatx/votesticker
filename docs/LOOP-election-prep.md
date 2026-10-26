@@ -45,7 +45,7 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
 |---|---|---|
 | 9 | Between-elections mode built behind a phase flag, ready for the Dec 1 review | Built Oct 25 (off) |
 | 10 | Sticker collection and 2026 archive (`docs/sticker-archive-spec.md`): data first | Data built Oct 25; all 51 office records reviewed Oct 26 |
-| 11 | Descriptive image filenames with 301s from the old URLs | |
+| 11 | Descriptive image filenames with 301s from the old URLs | Map built Oct 26; switch after Nov 5 |
 | 12 | Snohomish County as a second Washington sticker source | |
 | 13 | Privacy and accessibility section on About | |
 
@@ -139,3 +139,13 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
   a split use other than early or mail fails, and a forgotten split leaves its hand record orphaned,
   which fails too (both fired). Facts QA passes; no page reads the file yet. Next: item 11 after the
   build check.
+- **Oct 26, item 11 (map):** `build/image_names.py` writes `build/image-names.json`: all 477 ready-made
+  stickers get a name from their alt text, state, message, color and outline (`tx-vote-7.jpg` becomes
+  `texas-vote-early-sticker-light-blue-outline.jpg`), with each state's gallery order and its
+  `_redirects` 301 line. Dates, years and postal codes stay out of the names, since the files outlive
+  the election; repeats get -2, -3. Ten messages across the set (i-voted 130, vote-early 128,
+  vote-election-day 105). `--check` fails on a duplicate, a date, a non-lowercase name or an unchanged
+  name (all four fired). Nothing renamed: index.php builds `<abbr>-vote-<n>.jpg` in the share image,
+  hero and showcase, sorts the gallery by the number in the name and keys alts.json by the old stem;
+  history.php, the collection ids and render_readymades.mjs use the old names too. The docstring lists
+  each. The switch waits until after Nov 5, as the backlog says. 477 static redirects fit Pages' 2,000.
