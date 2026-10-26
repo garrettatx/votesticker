@@ -1278,6 +1278,7 @@ $vote_ld = array(
 			<div class="maker__preview" id="preview-wrap">
 				<div class="sizes" role="group" aria-label="<?php echo vote_e( t( 'Picture size' ) ); ?>">
 					<button type="button" class="size" data-size="square" aria-pressed="true"><?php echo vote_e( t( 'Square' ) ); ?></button>
+					<button type="button" class="size" data-size="portrait" aria-pressed="false"><?php echo vote_e( t( 'Portrait' ) ); ?></button>
 					<button type="button" class="size" data-size="story" aria-pressed="false"><?php echo vote_e( t( 'Story' ) ); ?></button>
 				</div>
 				<div class="frame"><img id="preview" alt="<?php echo vote_e( t( 'Your profile picture' ) ); ?>" width="1080" height="1080"></div>

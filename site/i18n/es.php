@@ -191,6 +191,7 @@ return array(
 		'Picture size' => 'Tamaño de la imagen',
 		'Square' => 'Cuadrado',
 		'Story' => 'Historia',
+		'Portrait' => 'Vertical',
 		'Your profile picture' => 'Tu foto de perfil',
 		'Preview circle crop' => 'Ver el recorte circular',
 		'Download picture' => 'Descargar imagen',

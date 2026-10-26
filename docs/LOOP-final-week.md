@@ -26,7 +26,7 @@ preview builds, then restore `build/lastmod.json`.
 | 4 | **Copy alt text.** A button that copies a plain description of the current sticker | For people who add alt text to posts; the About page now promises accessibility | Done Oct 26 |
 | 5 | **"Send this to someone who hasn't voted yet."** After an I voted sticker is saved, a share-link line (the page link only, no tracking beyond the existing `share` event) | Turns a saved sticker into one more reminder | Done Oct 26 |
 | 6 | **Contrast and tap-target check.** `--muted` on cream against WCAG AA; every control 44 px or larger | Backlog review item; the About page claims keyboard and focus support | Done Oct 26 |
-| 7 | **Portrait 1080 x 1350** beside square and story | Instagram feed posts crop square stickers less well | |
+| 7 | **Portrait 1080 x 1350** beside square and story | Instagram feed posts crop square stickers less well | Done Oct 26 |
 
 ## Log
 
@@ -75,3 +75,10 @@ preview builds, then restore `build/lastmod.json`.
   (padding with negative margins where the text shouldn't move). Left at 40 px: the logo link and the
   Garrett Digital footer logo, both well over 24 px and wide. Screenshots of the maker, near-states,
   FAQ and footer look unchanged apart from spacing.
+- **Oct 26, item 7 (Portrait 4:5).** A third size button, Portrait / Vertical, between Square and
+  Story: 1080 x 1350 with the card centered, saved as `...-portrait.png`. `render()` takes `opts.tall`
+  (heights in `HEIGHTS`), and the maker keeps `state.size`. Found on the way: the Story preview ran
+  14 px past a 390 px screen (sideways scroll, live); the tall preview now also caps at the column
+  width. Checked at 320, 390 and 1280 px in all three sizes: no overflow, natural sizes 1080 x 1080,
+  1350 and 1920. Facts, Spanish, SEO and event QA pass; stale scan unchanged at 27.
+- **Oct 26: all seven items done.** Card QA next, then push 2 of the day.

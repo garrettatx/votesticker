@@ -12,6 +12,8 @@
 	'use strict';
 
 	var SIZE = 1080, STORY_H = 1920, SAFE = 500;
+	// Picture heights by size (portrait 4:5 added October 26 for Instagram feed posts).
+	var HEIGHTS = { square: SIZE, portrait: 1350, story: STORY_H };
 	// SCRIPT is only for the Script layout under review (not in the row); sheets load a face with setScript.
 	var DISPLAY = '"Vote Display"', DATE = '"Vote Date"', BRUSH = '"Vote Brush"', SCRIPT = '"Vote Script"';
 
@@ -978,21 +980,21 @@
 	}
 
 	// Draw one card on a canvas `px` pixels wide: square, or a 9:16 Story with the same card in the
-	// middle. No site address on any image (Garrett, October 19).
+	// middle (or a 4:5 portrait, opts.tall 1350). No site address on any image (Garrett, October 19).
 	function render(canvas, px, opts) {
 		var st = byAbbr[opts.state], p = paletteFor(opts.palette, st);
 		var layout = LAYOUTS[opts.design](st, p, headlineLines(opts.headline, st), opts.dateText);
 		// An optional tilt of the whole card (radians), on top of whatever the design does.
 		if (opts.tilt) { tiltAll(layout.items, opts.tilt); }
 		var f = fit(layout);
-		var tall = opts.story ? STORY_H : SIZE;
+		var tall = opts.tall || (opts.story ? STORY_H : SIZE);
 		canvas.width = px;
 		canvas.height = Math.round(px * tall / SIZE);
 		var ctx = canvas.getContext('2d');
 		ctx.setTransform(px / SIZE, 0, 0, px / SIZE, 0, 0);
 		ctx.fillStyle = layout.disc ? layout.disc.outer : p.bg;
 		ctx.fillRect(0, 0, SIZE, tall);
-		if (opts.story) {
+		if (tall !== SIZE) {
 			ctx.translate(0, (tall - SIZE) / 2);
 		}
 		if (layout.disc) {
@@ -1232,7 +1234,7 @@
 		palette: load('palette3', 'plum'),
 		dateText: '',
 		circle: load('circle', true),
-		story: false
+		size: 'square'
 	};
 	var previewSeq = 0;
 
@@ -1302,7 +1304,7 @@
 		var seq = ++previewSeq;
 		var canvas = document.createElement('canvas');
 		var o = opts();
-		o.story = state.story;
+		o.tall = HEIGHTS[state.size];
 		render(canvas, SIZE, o);
 		var link = $('save');
 		link.setAttribute('aria-disabled', 'true');
@@ -1311,7 +1313,7 @@
 			if (current.url) { URL.revokeObjectURL(current.url); }
 			current.blob = blob;
 			current.url = URL.createObjectURL(blob);
-			current.name = 'vote-early-' + state.state.toLowerCase() + '-' + state.design + '-' + state.palette + (state.story ? '-story' : '') + '.png';
+			current.name = 'vote-early-' + state.state.toLowerCase() + '-' + state.design + '-' + state.palette + (state.size === 'square' ? '' : '-' + state.size) + '.png';
 			$('preview').src = current.url;
 			Array.prototype.forEach.call(document.querySelectorAll('#tiny img'), function (img) { img.src = current.url; });
 			link.href = current.url;
@@ -1452,9 +1454,9 @@
 		$('date-reset').addEventListener('click', function () { showState(state.state); });
 		Array.prototype.forEach.call(document.querySelectorAll('[data-size]'), function (b) {
 			b.addEventListener('click', function () {
-				state.story = b.dataset.size === 'story';
+				state.size = b.dataset.size;
 				Array.prototype.forEach.call(document.querySelectorAll('[data-size]'), function (x) { x.setAttribute('aria-pressed', String(x === b)); });
-				document.body.classList.toggle('is-story', state.story);
+				document.body.classList.toggle('is-story', state.size !== 'square');  // any tall size: no circle crop
 				drawPreview();
 			});
 		});
