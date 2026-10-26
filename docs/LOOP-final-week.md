@@ -82,3 +82,5 @@ preview builds, then restore `build/lastmod.json`.
   width. Checked at 320, 390 and 1280 px in all three sizes: no overflow, natural sizes 1080 x 1080,
   1350 and 1920. Facts, Spanish, SEO and event QA pass; stale scan unchanged at 27.
 - **Oct 26: all seven items done.** Card QA next, then push 2 of the day.
+- **Oct 26, push 2 of the day (09:17 CDT):** the seven loop 2 items after card QA (68,880 cards in
+  Chromium and WebKit, 0 outside the safe circle) and save QA (iPhone, Android, desktop) passed.
