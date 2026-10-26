@@ -185,3 +185,19 @@ Measure each change in Search Console from its recrawl date.
   the cause: `indexnow.py` now compares each page's content fingerprint from `build/lastmod.json`, so a
   second deploy the same day still sends what changed (dry run 0 after recording today's fingerprints;
   changing Texas's fingerprint queued exactly Texas). Ships with the next push.
+- **October 26, Classic I Voted Stickers (home page, not pushed).** Garrett picked three of five classic
+  layouts from a 30-sticker sheet (Stars and stripes, Star ring, Banded; Starburst and Ballot box cut).
+  `scripts/render_classic.mjs` draws 18 per language (six messages x three layouts) as 1080 px round PNGs
+  with transparent corners into `site/assets/classic/`, with `classic.json` (order, alt text). Spanish
+  says YO VOTÉ, as on US counties' bilingual stickers (Gwinnett GA, Jefferson CO, Doña Ana NM, Pima AZ);
+  the maker keeps YA VOTÉ. Layout fixes from Garrett's review: the white band is one fixed size on every
+  sticker and the words are centered on it, measured in pixels on all 36 files (white above and below
+  within 2 px, accents counted); the first red stripe starts at the band edge (a white gap made words
+  look high); accents hang above the capitals instead of shrinking the word; the second line is 48
+  percent of the first. Page: "Classic I Voted Stickers" under the hero, six shown (one per message, two
+  per layout), "Show 12 more stickers" opens the rest; the order keeps the same layout or message from
+  sitting next to itself in 3 and 6 columns. Downloads report `sticker_source: classic` with the layout
+  and message. Bug caught: the round cut erased every PNG (the layouts' invisible frame marks left the
+  fill transparent); the cut now sets an opaque fill. QA: qa_seo, qa_es, qa_facts, qa_events pass;
+  Playwright: 6 then 18 visible, download name and one sticker_save per tap, EN and ES, 390 and 1280 px;
+  sitemap lists all 36 images.

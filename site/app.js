@@ -123,8 +123,7 @@
 		{ id: 'shadow', name: 'Shadow', palette: 'cream' }, { id: 'below', name: 'Map below', palette: 'forest' },
 		{ id: 'split', name: 'Split', palette: 'cobalt' },
 		{ id: 'cflag', name: 'Classic stars and stripes', palette: 'navy' }, { id: 'cring', name: 'Classic star ring', palette: 'navy' },
-		{ id: 'cburst', name: 'Classic starburst', palette: 'navy' }, { id: 'cband', name: 'Classic banded', palette: 'navy' },
-		{ id: 'cbox', name: 'Classic ballot box', palette: 'navy' }
+		{ id: 'cband', name: 'Classic banded', palette: 'navy' }
 	];
 	function designOf(id) { return DESIGNS.filter(function (d) { return d.id === id; })[0]; }
 	// Short lines only, at most 10 characters each (POR CORREO), so a card reads at 40 px in a comment thread
@@ -149,6 +148,12 @@
 		futurevoter: { label: 'Future voter', lines: ['FUTURE', 'VOTER'], stateLine: true },
 		// Classic national set (October 26, sketches): drawn by the classic layouts only, never in the message list.
 		ivotedtoday: { hidden: true, label: 'I voted today', lines: ['I VOTED', 'TODAY'] },
+		// Spanish classics say YO VOTÉ, what US counties print on their bilingual stickers (Gwinnett, GA;
+		// Jefferson, CO; Doña Ana, NM; Pima, AZ). The maker keeps YA VOTÉ (docs/spanish-style.md).
+		yovote: { hidden: true, es: true, label: 'Yo voté', lines: ['YO VOTÉ'] },
+		yovotehoy: { hidden: true, es: true, label: 'Yo voté hoy', lines: ['YO VOTÉ', 'HOY'] },
+		yovotetemprano: { hidden: true, es: true, label: 'Yo voté temprano', lines: ['YO VOTÉ', 'TEMPRANO'] },
+		yovotecorreo: { hidden: true, es: true, label: 'Yo voté por correo', lines: ['YO VOTÉ', 'POR CORREO'] },
 		// Spanish (October 19): tú, per the project glossary (docs/spanish-style.md); "Ya voté" is the
 		// everyday Mexican phrasing for "I voted". Date bars
 		// put the day first ("19–30 OCT", "HASTA EL 27 OCT").
@@ -461,6 +466,73 @@
 	function ribbonItem(x0, x1, top, h, color, notch) {
 		var n = notch == null ? h * 0.42 : notch;
 		return { t: 'poly', color: color, pts: [[x0, top], [x1, top], [x1 - n, top + h / 2], [x1, top + h], [x0, top + h], [x0 + n, top + h / 2]] };
+	}
+
+	// Classic set helpers (October 26). CR: the visible circle's radius in layout units; classicFrame() puts
+	// invisible marks at the safe radius so fit() scales CR to the canvas edge.
+	var CR = 1000;
+	function classicFrame() {
+		var r = CR * SAFE / (SIZE / 2), clear = 'rgba(0,0,0,0)';
+		return [[0, -r], [0, r], [-r, 0], [r, 0]].map(function (q) { return { t: 'box', box: [q[0] - 0.5, q[1] - 0.5, q[0] + 0.5, q[1] + 0.5], color: clear }; });
+	}
+	// Text measured on its capitals: an accent (YO VOTÉ, VOTARÉ) hangs above the cap height instead of
+	// shrinking the word and pushing it down, so Spanish lines center and size like English ones (Oct 26).
+	function capBlock(lines, family, width, maxAsc, opts) {
+		var b = textBlock(lines.map(function (s) { return s.normalize('NFD').replace(/[\u0300-\u036f]/g, ''); }), family, width, maxAsc, opts);
+		// How far each line's accents rise above its capitals, at the block's size.
+		measureCtx.font = '200px ' + family;
+		b.lines.forEach(function (l, i) {
+			var real = measureCtx.measureText(lines[i]).actualBoundingBoxAscent, cap = measureCtx.measureText(l.s).actualBoundingBoxAscent;
+			l.acc = Math.max(0, real - cap) * (l.size || b.size) / 200;
+			l.s = lines[i];
+		});
+		return b;
+	}
+	// As large as fits: capped at maxAsc, and no corner of any line beyond maxR from the center.
+	function classicText(lines, family, maxR, maxAsc, opts) {
+		var w = 1800, b;
+		opts = opts || { justify: lines.length > 1, leading: 0.12 };
+		for (var n = 0; n < 16; n++) {
+			b = capBlock(lines, family, w, maxAsc, opts);
+			var hw = Math.max.apply(null, b.lines.map(function (l) { return l.w; })) / 2, hh = (b.asc * b.lines.length + b.gap * (b.lines.length - 1)) / 2;
+			var d = Math.hypot(hw, hh);
+			if (d <= maxR) { break; }
+			w = Math.max.apply(null, b.lines.map(function (l) { return l.w; })) * maxR / d * 0.995;
+		}
+		return b;
+	}
+	// The white band of Stars and stripes and Banded: the same size on every sticker, the words centered in
+	// it on their capitals with at least BAND_PAD above and below, as large as the band and circle allow.
+	var BAND = 320, BAND_PAD = 92;
+	function bandText(lines, mainColor, subColor) {
+		var room = 2 * (BAND - BAND_PAD), items;
+		if (lines.length < 2) {
+			// Capped below the band's full height so an accent (YO VOTÉ) clears the navy edge (Oct 26).
+			// Equal white above and below the ink: an accent counts as part of the word's height.
+			var one = classicText([lines[0]], DISPLAY, 850, room * 0.84), a1 = one.lines[0].acc;
+			return placeText(one, 0, -(one.asc - a1) / 2, mainColor).items;
+		}
+		// Two lines (Stars and stripes, October 26: "size up the secondary line"): the second at 48 percent of
+		// the first's cap height, the pair centered on their capitals so the white above the first line equals
+		// the white below the second.
+		for (var cap = room / 1.66; ; cap *= 0.96) {
+			var main = classicText([lines[0]], DISPLAY, 850, cap);
+			var sub = capBlock([lines.slice(1).join(' ')], DATE, Math.min(main.lines[0].w * 0.94, 1300), main.asc * 0.48, { track: 0.1 });
+			var gap = main.asc * 0.18 + sub.lines[0].acc, h = main.asc + gap + sub.asc, y0 = -(h - main.lines[0].acc) / 2;
+			var sw = sub.lines[0].w / 2, mw = main.lines[0].w / 2;
+			if ((Math.hypot(sw, h / 2) <= 850 && Math.hypot(mw, h / 2) <= 850) || cap < 120) {
+				return placeText(main, 0, y0, mainColor).items.concat(placeText(sub, 0, y0 + main.asc + gap, subColor).items);
+			}
+		}
+	}
+	// Two staggered rows of stars centered at height cy, as many as the circle's chord there holds.
+	function classicStars(cy, R, color) {
+		var out = [], sr = 40, step = 128;
+		[cy - 52, cy + 52].forEach(function (y, row) {
+			var half = Math.sqrt(Math.max(0, R * R - Math.pow(Math.abs(y) + sr, 2))) - sr * 1.6, off = row ? step / 2 : 0;
+			for (var x = -Math.floor(half / step) * step + off; x <= half; x += step) { out.push({ t: 'star', cx: x, cy: y, r: sr, color: color, nofit: true }); }
+		});
+		return out;
 	}
 
 	var LAYOUTS = {
@@ -890,23 +962,28 @@
 		},
 		// Classic national stickers (October 26, review sketches for a home page set): red, white and blue,
 		// no state shape, original compositions on the conventions of polling-place stickers (stars,
-		// stripes, rays, a ring of stars, a ballot box). The last line of a two-line message is the small one.
+		// stripes, a ring of stars; Garrett kept these three of five). The last line of a two-line message is the small one.
+		// Stars and stripes and Banded (rebuilt October 26, Garrett: "imagine it cropped to a circle"): drawn on
+		// a fixed circle, radius CR, with invisible markers at the safe radius so fit() maps that circle onto
+		// the profile-picture circle exactly. The white band is centered on the sticker; star rows sit in the
+		// middle of the visible navy cap, a second word in the middle of the visible red base.
 		cflag: function (st, p, lines) {
-			var C = CLASSIC, big = textBlock([lines[0]], DISPLAY, 760, 240), sub = lines.length > 1 ? textBlock([lines.slice(1).join(' ')], DATE, 420, 90, { track: 0.12 }) : null;
-			var head = placeText(big, 0, 0, C.red), items = head.items, bottom = head.bottom;
-			if (sub) { var s = placeText(sub, 0, bottom + big.asc * 0.2, C.navy); items = items.concat(s.items); bottom = s.bottom; }
-			var top = -big.asc * 0.42, low = bottom + big.asc * 0.42, deco = [{ t: 'box', box: [-4000, -4000, 4000, 4000], color: C.white, nofit: true }, { t: 'box', box: [-4000, -4000, 4000, top], color: C.navy, nofit: true }];
-			var k, j, sr = big.asc * 0.13;
-			for (j = 0; j < 2; j++) { for (k = -4; k <= 4; k++) { deco.push({ t: 'star', cx: k * sr * 3.2 + (j ? sr * 1.6 : 0), cy: top - sr * 1.8 - j * sr * 2.6, r: sr, color: C.white, nofit: true }); } }
-			for (k = 0; k < 6; k++) { deco.push({ t: 'box', box: [-4000, low + k * big.asc * 0.34, 4000, low + k * big.asc * 0.34 + big.asc * 0.17], color: C.red, nofit: true }); }
-			return { items: deco.concat(items), safe: SAFE };
+			var C = CLASSIC, items = bandText(lines, C.red, C.navy);
+			var deco = [{ t: 'box', box: [-4000, -4000, 4000, 4000], color: C.white, nofit: true }, { t: 'box', box: [-4000, -4000, 4000, -BAND], color: C.navy, nofit: true }];
+			// The first red stripe starts at the band's edge, so the white band reads as exactly the band (a white
+			// gap above the stripes made the words look high, October 26).
+			for (var k = 0; k < 8; k++) { var y = BAND + k * 150; deco.push({ t: 'box', box: [-4000, y, 4000, y + 75], color: C.red, nofit: true }); }
+			return { items: deco.concat(classicStars(-(BAND + CR) / 2, CR, C.white), items, classicFrame()), safe: SAFE };
 		},
 		cring: function (st, p, lines) {
-			var C = CLASSIC, big = textBlock(lines, DISPLAY, 560, 230, { justify: true, leading: 0.12 });
+			var C = CLASSIC, big = capBlock(lines, DISPLAY, 560, 230, { justify: true, leading: 0.12 });
+			// Room for accents, which hang above the capitals: under the star row, and between the lines.
+			var acc = function (i) { return /[À-ÿ]/.test(lines[i] || '') ? big.lines[i].asc * 0.26 : 0; };
+			if (big.lines[1]) { big.gap = Math.max(big.gap, acc(1) + big.asc * 0.08); }
 			var head = placeText(big, 0, 0, C.navy);
 			head.items[0].color = C.red;
 			var row = [], k, sr = big.asc * 0.1;
-			for (k = -2; k <= 2; k++) { row.push({ t: 'star', cx: k * sr * 3, cy: -sr * 2.6, r: sr, color: C.red }); }
+			for (k = -2; k <= 2; k++) { row.push({ t: 'star', cx: k * sr * 3, cy: -sr * 2.6 - acc(0), r: sr, color: C.red }); }
 			var group = row.concat(head.items), b = bounds(group);
 			shift(group, 0, -(b[1] + b[3]) / 2);
 			var pts = []; group.forEach(function (it) { pts = pts.concat(itemPoints(it)); });
@@ -915,42 +992,16 @@
 			for (k = 0; k < 16; k++) { var a = k * Math.PI / 8; ring.push({ t: 'star', cx: Math.cos(a) * (R + ri) / 2, cy: Math.sin(a) * (R + ri) / 2, r: (R - ri) * 0.26, color: C.white }); }
 			return { items: ring.concat(group), safe: SAFE };
 		},
-		cburst: function (st, p, lines) {
-			var C = CLASSIC, big = textBlock(lines, DISPLAY, 520, 220, { justify: true, leading: 0.14 });
-			var head = placeText(big, 0, 0, C.red);
-			if (head.items[1]) { head.items[1].color = C.navy; }
-			var row = [], k, sr = big.asc * 0.09;
-			for (k = -3; k <= 3; k++) { row.push({ t: 'star', cx: k * sr * 2.8, cy: head.bottom + sr * 2.4, r: sr, color: C.navy }); }
-			var group = head.items.concat(row), b = bounds(group);
-			shift(group, 0, -(b[1] + b[3]) / 2);
-			var pts = []; group.forEach(function (it) { pts = pts.concat(itemPoints(it)); });
-			var far = Math.max.apply(null, pts.map(function (q) { return Math.hypot(q[0], q[1]); }));
-			var ri = far * 1.08, R = ri * 1.4, w = Math.PI / 28, rays = [{ t: 'disc', cx: 0, cy: 0, r: R, color: C.white }];
-			for (k = 0; k < 28; k++) { var a = k * Math.PI / 14; rays.push({ t: 'poly', color: k % 2 ? C.red : C.navy, pts: [[0, 0], [R * Math.cos(a - w * 0.7), R * Math.sin(a - w * 0.7)], [R * Math.cos(a + w * 0.7), R * Math.sin(a + w * 0.7)]] }); }
-			rays.push({ t: 'disc', cx: 0, cy: 0, r: ri, color: C.white }, { t: 'ring', cx: 0, cy: 0, r: ri - 6, w: 8, color: C.red }, { t: 'ring', cx: 0, cy: 0, r: R - 4, w: 8, color: C.navy });
-			return { items: rays.concat(group), safe: SAFE };
-		},
 		cband: function (st, p, lines) {
-			var C = CLASSIC, big = textBlock([lines[0]], DISPLAY, 760, 230), head = placeText(big, 0, 0, C.navy);
-			var pad = big.asc * 0.3, top = -pad, low = head.bottom + pad, deco = [{ t: 'box', box: [-4000, -4000, 4000, 4000], color: C.white, nofit: true }];
-			deco.push({ t: 'box', box: [-4000, -4000, 4000, top], color: C.navy, nofit: true }, { t: 'box', box: [-4000, low, 4000, 4000], color: C.red, nofit: true });
-			var k, j, sr = big.asc * 0.12;
-			for (j = 0; j < 3; j++) { for (k = -5; k <= 5; k++) { deco.push({ t: 'star', cx: k * sr * 3 + (j % 2 ? sr * 1.5 : 0), cy: top - sr * 2 - j * sr * 2.5, r: sr, color: C.white, nofit: true }); } }
-			var items = head.items;
-			if (lines.length > 1) { var sb = textBlock([lines.slice(1).join(' ')], DATE, 520, big.asc * 0.42, { track: 0.1 }); items = items.concat(placeText(sb, 0, low + big.asc * 0.32, C.white).items); }
-			return { items: deco.concat(items), safe: SAFE };
-		},
-		cbox: function (st, p, lines) {
-			var C = CLASSIC, big = textBlock(lines, DISPLAY, 600, 200, { justify: true, leading: 0.12 });
-			var bw = 360, bh = 200, boxTop = 120;
-			var env = { t: 'poly', color: C.red, pts: [[-120, boxTop - 150], [120, boxTop - 150], [120, boxTop + 10], [-120, boxTop + 10]] };
-			var flap = { t: 'poly', color: C.white, pts: [[-120, boxTop - 150], [120, boxTop - 150], [0, boxTop - 70]] };
-			var star = { t: 'star', cx: 0, cy: boxTop - 40, r: 30, color: C.white };
-			var box = { t: 'box', box: [-bw / 2, boxTop, bw / 2, boxTop + bh], color: C.navy, radius: 14 };
-			var slot = { t: 'box', box: [-150, boxTop + 18, 150, boxTop + 34], color: C.white, radius: 6 };
-			var head = placeText(big, 0, boxTop + bh + 50, C.navy);
-			head.items[0].color = C.red;
-			return { items: [{ t: 'box', box: [-4000, -4000, 4000, 4000], color: C.white, nofit: true }, env, flap, star, box, slot].concat(head.items), safe: SAFE };
+			// One line in the white band; a second in the middle of the red base as the circle shows it.
+			var C = CLASSIC, items = bandText([lines[0]], C.navy);
+			var deco = [{ t: 'box', box: [-4000, -4000, 4000, 4000], color: C.white, nofit: true }, { t: 'box', box: [-4000, -4000, 4000, -BAND], color: C.navy, nofit: true }, { t: 'box', box: [-4000, BAND, 4000, 4000], color: C.red, nofit: true }];
+			if (lines.length > 1) {
+				var yc = (BAND + CR) / 2 - 10, cap = Math.min(150, (CR - BAND) * 0.3), half = Math.sqrt(CR * CR - Math.pow(yc + cap / 2, 2)) - 70;
+				var sb = capBlock([lines.slice(1).join(' ')], DATE, 2 * half, cap, { track: 0.1 });
+				items = items.concat(placeText(sb, 0, yc - sb.asc / 2, C.white).items);
+			}
+			return { items: deco.concat(classicStars(-(BAND + CR) / 2, CR, C.white), items, classicFrame()), safe: SAFE };
 		},
 		// Varsity: jersey lettering with a deep diagonal extrusion in the accent and a hairline of the
 		// background between letter and extrusion.
@@ -1404,6 +1455,36 @@
 			.then(function (b) { readyBlobs[src] = b.type ? b : new Blob([b], { type: 'image/jpeg' }); })
 			.catch(function () { delete readyBlobs[src]; });
 	}
+	// Ready-to-share stickers on the home page (October 26): See all opens the rest; each tile downloads its
+	// PNG (the share sheet on iPhone, as in the state galleries) and reports sticker_source classic.
+	function wireClassic() {
+		var grid = $('classic-grid'), all = $('classic-all');
+		if (!grid) { return; }
+		if (all) {
+			all.addEventListener('click', function () {
+				grid.removeAttribute('data-collapsed');
+				all.setAttribute('aria-expanded', 'true');
+				all.parentNode.hidden = true;
+				var first = grid.querySelector('.is-extra');
+				if (first) { first.focus(); }
+			});
+		}
+		grid.addEventListener('click', function (e) {
+			var a = e.target.closest ? e.target.closest('a.pick') : null;
+			if (!a) { return; }
+			var done = saved({ sticker_source: 'classic', design: a.dataset.layout, message: a.dataset.message });
+			if (DEVICE !== 'ios') { done('download'); return; }
+			e.preventDefault();
+			var src = a.getAttribute('href'), b = readyBlobs[src], img = a.querySelector('img');
+			window.VOTE_LAST_SAVE = saveOnIOS(b && b !== 'loading' ? b : null, a.getAttribute('download') || 'vote-sticker.png', src, img ? img.alt : '', done);
+		});
+		if (DEVICE !== 'ios') { return; }
+		Array.prototype.forEach.call(grid.querySelectorAll('a.pick'), function (a) {
+			var img = a.querySelector('img'), src = a.getAttribute('href');
+			if (img.complete && img.naturalWidth) { keepBlob(src); } else { img.addEventListener('load', function () { keepBlob(src); }); }
+			a.addEventListener('touchstart', function () { keepBlob(src); }, { passive: true });
+		});
+	}
 	function wireGallery() {
 		var grid = $('gallery-grid');
 		if (!grid) { return; }
@@ -1682,6 +1763,7 @@
 		language();
 		spanishArt();
 		finder();
+		wireClassic();
 		if (!$('maker')) { return; }  // the About page: header and footer only
 		var headSel = $('headline');
 		$('circle').checked = state.circle;

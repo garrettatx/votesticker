@@ -492,5 +492,11 @@ return array(
 		'Vota temprano (español)' => 'Vota temprano', 'Vota por correo (español)' => 'Vota por correo', 'Vota 3 de nov (español)' => 'Vota 3 de nov',
 		'Ya voté (español)' => 'Ya voté', 'Ya voté temprano (español)' => 'Ya voté temprano', 'Ya voté por correo (español)' => 'Ya voté por correo',
 		'First-time voter' => 'First-time voter (en inglés)', 'Mi primer voto (español)' => 'Mi primer voto', 'Future voter' => 'Future voter (en inglés)', 'Yo también votaré (español)' => 'Yo también votaré',
+	// Ready-to-share stickers (October 26).
+	'Classic I Voted Stickers' => 'Stickers clásicos de Yo voté',
+	'Red, white and blue I voted stickers for any state: I voted, I voted today, I voted early, I voted by mail, first-time voter, and future voter for kids who came along. Tap one to save it as a round PNG with no background, ready to post or send.' => 'Stickers de Yo voté en rojo, blanco y azul para cualquier estado: Yo voté, Yo voté hoy, Yo voté temprano, Yo voté por correo, Mi primer voto y Yo también votaré, para los niños que te acompañaron. Toca uno para guardarlo como PNG redondo sin fondo, listo para publicar o mandar.',
+	'(download PNG)' => '(descargar PNG)',
+	'Show %d more stickers' => 'Mostrar %d stickers más',
+	'Want your state’s name and dates on it? Choose your state' => '¿Lo quieres con el nombre y las fechas de tu estado? Elige tu estado',
 	),
 );

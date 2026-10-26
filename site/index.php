@@ -1295,6 +1295,34 @@ $vote_ld = array(
 	$vote_by_name = function ( $a, $b ) use ( $vote_rows ) { return strcmp( vote_lname( $vote_rows[ strtoupper( $a ) ] ), vote_lname( $vote_rows[ strtoupper( $b ) ] ) ); };
 	uksort( $vote_showcase, $vote_by_name );
 	?>
+	<?php
+	// Ready-to-share stickers (October 26, Garrett: classic red, white and blue, "no state needed"): 18 per
+	// language from scripts/render_classic.mjs, round PNGs with no background, each a direct download. The
+	// order keeps look-alikes apart in 3 and 6 columns; the first six are the six messages. Home page only.
+	$vote_classic = array();
+	if ( ! $vote_st && ! $vote_404 && is_file( __DIR__ . '/assets/classic/classic.json' ) ) {
+		foreach ( json_decode( (string) file_get_contents( __DIR__ . '/assets/classic/classic.json' ), true ) as $c ) {
+			if ( $c['lang'] === ( vote_es() ? 'es' : 'en' ) && is_file( __DIR__ . "/assets/classic/{$c['stem']}.png" ) ) { $vote_classic[ $c['pos'] ] = $c; }
+		}
+		ksort( $vote_classic );
+	}
+	if ( $vote_classic ) : ?>
+	<section class="showcase showcase--classic" id="ready-to-share" aria-labelledby="classic-h">
+		<h2 id="classic-h" class="display-h"><?php echo vote_e( t( 'Classic I Voted Stickers' ) ); ?></h2>
+		<p class="section-intro"><?php echo vote_e( t( 'Red, white and blue I voted stickers for any state: I voted, I voted today, I voted early, I voted by mail, first-time voter, and future voter for kids who came along. Tap one to save it as a round PNG with no background, ready to post or send.' ) ); ?></p>
+		<div class="grid grid--classic" id="classic-grid" data-collapsed>
+			<?php $vote_ci = 0; foreach ( $vote_classic as $c ) : ?>
+			<a class="pick pick--classic<?php echo $vote_ci++ >= 6 ? ' is-extra' : ''; ?>" href="<?php echo vote_v( "assets/classic/{$c['stem']}.png" ); ?>" download="<?php echo vote_e( $c['stem'] ); ?>.png" data-layout="<?php echo vote_e( $c['layout'] ); ?>" data-message="<?php echo vote_e( $c['headline'] ); ?>">
+				<img src="<?php echo vote_v( "assets/classic/{$c['stem']}.png" ); ?>" alt="<?php echo vote_e( $c['alt'] ); ?>" width="1080" height="1080" loading="lazy">
+				<span class="sr-only"><?php echo vote_e( t( '(download PNG)' ) ); ?></span>
+			</a>
+			<?php endforeach; ?>
+		</div>
+		<noscript><style>.grid--classic .is-extra { display: flex; } .classic__all { display: none; }</style></noscript>
+		<p class="classic__all"><button type="button" class="btn btn--quiet" id="classic-all" aria-controls="classic-grid" aria-expanded="false"><?php echo vote_e( t( 'Show %d more stickers', count( $vote_classic ) - 6 ) ); ?></button></p>
+		<p class="showcase__more"><a href="#state-find"><?php echo vote_e( t( 'Want your state’s name and dates on it? Choose your state' ) ); ?> <span aria-hidden="true">↑</span></a></p>
+	</section>
+	<?php endif; ?>
 	<?php if ( $vote_showcase && ! $vote_st ) : ?>
 	<section class="showcase" id="showcase" aria-labelledby="showcase-h">
 		<h2 id="showcase-h" class="display-h"><?php echo vote_e( t( $vote_404 ? 'Popular States' : 'Find a Sticker You Like' ) ); ?></h2>

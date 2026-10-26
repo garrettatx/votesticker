@@ -25,7 +25,7 @@ Built with the global `es-mx-localization` skill. This file is the project overr
 | Vote by mail | VOTA POR CORREO | votar por correo; boleta por correo |
 | Election Day | DÍA DE LAS ELECCIONES | el Día de las Elecciones |
 | Vote Nov 3 | VOTA 3 DE NOV | el martes 3 de noviembre |
-| I voted | YA VOTÉ | |
+| I voted | YA VOTÉ (maker, state sets); YO VOTÉ (classic set: what US counties print) | |
 | I'm voting | VOY A VOTAR | |
 | Absentee ballot | | boleta de voto en ausencia; votar en ausencia |
 | Polling place | | lugar de votación |
