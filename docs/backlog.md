@@ -2,6 +2,13 @@
 
 Open items, newest first. Started October 21, 2026. Move an item to `docs/history.md` when it ships.
 
+## Maker: More Bespoke Stickers (October 26)
+
+Specs and mockups in `backlog/maker-bespoke/README.md`, not approved: a background finish picker
+(Sunburst built; Glow, Dots, Watermark), pre-built bespoke sets on each state page with descriptive
+image names, retiring Shadow for a tightened Ballot bubble, WE VOTED / YA VOTAMOS, a keyline border,
+and renaming the Tilt tile to Slant.
+
 ## Needed Before Election Day
 
 | Item | Why | Notes |
