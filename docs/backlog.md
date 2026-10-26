@@ -30,9 +30,9 @@ clicks in the GA4 and Search Console admin screens:
 
 | Item | Where | Notes |
 |---|---|---|
-| **Data retention to 14 months** | GA4 Admin, Data collection and modification, Data retention | The default is 2 months for explorations, so October's detail is gone by January. Not retroactive, so the sooner the better. |
-| **Register custom dimensions** | GA4 Admin, Custom definitions, event scope | `state`, `sticker_source`, `design`, `palette`, `message`, `save_method`, `post_variant`, `post_edited`, `search_term`, `method`. Parameters only show in reports after this, and not retroactively. |
-| **Mark `sticker_save` as a key event** | GA4 Admin, Events | After it has fired once on the live site (October 24 build). |
+| **Done Oct 26:** **Data retention to 14 months** | GA4 Admin, Data collection and modification, Data retention | The default is 2 months for explorations, so October's detail is gone by January. Not retroactive, so the sooner the better. |
+| **Done Oct 26:** **Register custom dimensions** | GA4 Admin, Custom definitions, event scope | `state`, `sticker_source`, `design`, `palette`, `message`, `save_method`, `post_variant`, `post_edited`, `search_term`, `method`. Parameters only show in reports after this, and not retroactively. |
+| **Done Oct 26:** **Mark `sticker_save` as a key event** | GA4 Admin, Events | After it has fired once on the live site (October 24 build). |
 | **Link GA4 to BigQuery** | GA4 Admin, Product links, BigQuery | Project `seo-command-ctr`, daily export, location US. Raw events, kept indefinitely. Not retroactive. |
 | **Search Console bulk export** | Search Console Settings, Bulk data export | Both service accounts are users already. Project `seo-command-ctr`, dataset suffix `votesticker`, location US. Adds totals, country and device for the hidden-query impressions, which the API drops. Starts within 48 hours; not retroactive. |
 | **Index snapshots through Election Day** | `python3 scripts/archive_search.py --index` | Weekly by hand (about 10 minutes); the Sunday job skips it to stay short. |
