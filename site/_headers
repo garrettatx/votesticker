@@ -6,3 +6,12 @@
 
 /assets/*
   Cache-Control: public, max-age=86400
+
+# Calendar files (October 26): opened by the phone's calendar, kept out of search.
+/cal/*
+  Content-Type: text/calendar; charset=utf-8
+  X-Robots-Tag: noindex
+
+/es/cal/*
+  Content-Type: text/calendar; charset=utf-8
+  X-Robots-Tag: noindex

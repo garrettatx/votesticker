@@ -1,0 +1,45 @@
+# Loop: The Final Week
+
+Started October 26, 2026, after the election prep loop (`docs/LOOP-election-prep.md`) finished its
+numbered items. That file keeps its dated checks (daily builds through Nov 1, Oct 29 Search Console,
+Nov 1 index snapshot, Nov 2 banner, Nov 4 post mode, Nov 5 cron removal); run them first when their
+date comes. This loop takes the backlog items that help a voter before November 3, in order of value.
+One item per pass; log each pass at the bottom.
+
+**Goal of every item:** a voter who lands on a page gets something true and useful for that day.
+Nothing expired, nothing invented, nothing uploaded, nothing partisan.
+
+**Rules** are the election prep loop's: two or three pushes a day at most, after facts, SEO, Spanish
+(`--base http://127.0.0.1:8792/`), card and event QA; official sources only; no DNS, Cloudflare, social
+posts or outreach without Garrett's OK; no Firecrawl; Spanish follows `docs/spanish-style.md`; the
+build fails on any PHP warning. A feature that only works before Election Day must switch off or
+change by itself in the Nov 2 (`eday`) and Nov 4 (`post`) phases; check both with `VOTE_TODAY`
+preview builds, then restore `build/lastmod.json`.
+
+## Items
+
+| # | Item | Why | Status |
+|---|---|---|---|
+| 1 | **Add to calendar.** An `.ics` file built in the browser for the voter's day: Election Day, or the last day of early voting or the mail deadline where verified. Official link in the event; no poll hours unless verified for the whole state. Nothing stored or sent. | A plan with a date on it is the step people skip | Done Oct 26 |
+| 2 | **"Early voting ends in N days"** on state pages with a verified end date, recounted by the visitor's calendar like the Election Day countdown; gone after the end date | The most useful line in the last week, and the one most likely to go stale if hand-written | |
+| 3 | **Profile-picture size preview.** A 48 px circle beside the big preview in the maker | People can check the sticker reads where friends will see it | |
+| 4 | **Copy alt text.** A button that copies a plain description of the current sticker | For people who add alt text to posts; the About page now promises accessibility | |
+| 5 | **"Send this to someone who hasn't voted yet."** After an I voted sticker is saved, a share-link line (the page link only, no tracking beyond the existing `share` event) | Turns a saved sticker into one more reminder | |
+| 6 | **Contrast and tap-target check.** `--muted` on cream against WCAG AA; every control 44 px or larger | Backlog review item; the About page claims keyboard and focus support | |
+| 7 | **Portrait 1080 x 1350** beside square and story | Instagram feed posts crop square stickers less well | |
+
+## Log
+
+- **Oct 26:** loop written. Next: item 1, then the dated live check once today's build lands.
+- **Oct 26, item 1 (Add to calendar).** Every state panel (EN and ES) has an "Add to my calendar"
+  button linking to `/cal/<state>.ics` (`/es/cal/`), written by the build for its own date through a
+  new `render.php cal/<state>` mode (`vote_ics()` in `index.php`). All-day events with a reminder at
+  9 a.m. the day before: the last day of early voting (43 states), or the mail deadline with the
+  verified return text (CA, CO, HI, OR, WA), and Election Day with the polling-place lookup link (left
+  out where the mail deadline is Election Day). No poll hours in the files, since they vary. An early
+  event drops the day after its date (Texas has only Election Day in the Oct 31 preview); the Nov 4
+  build writes no files and no button. Plain link, no `download` attribute, so iPhone opens its Add
+  to Calendar sheet; `_headers` serves `text/calendar` with `X-Robots-Tag: noindex`. The build checks
+  each file (CRLF, VCALENDAR wrapper, lines of 75 octets or fewer; mutation-tested) and stops on PHP
+  warnings in it. Facts, Spanish, SEO and event QA pass; stale scan unchanged at 27. Every state page
+  gets today's lastmod, which is true (the button is new on each).

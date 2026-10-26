@@ -705,3 +705,7 @@ body.is-holding { overflow: hidden; }
 .eday__links { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s3) var(--s5); margin: 0; }
 .eday__more { color: var(--ink); font-weight: 700; text-decoration: underline; text-underline-offset: 0.16em; min-height: 44px; display: inline-flex; align-items: center; }
 @media (max-width: 560px) { .eday { padding: var(--s4); } .eday__links .btn { width: 100%; justify-content: center; } }
+
+/* Add to calendar (October 26): a quiet button and one line saying what it adds. */
+.info .cal { display: flex; flex-direction: column; align-items: flex-start; gap: var(--s2); margin: var(--s5) 0 var(--s5); }
+.info .cal small { color: var(--muted); font-size: var(--fs-sm); }

@@ -119,6 +119,22 @@ def main():
     xml.append('</urlset>')
     (DIST / 'sitemap.xml').write_text('\n'.join(xml) + '\n')
     (DIST / '404.html').write_text(render('404'))
+    # Calendar files (final-week loop item 1): one per state and language, for the build's date. The
+    # Nov 4 post-election build writes none, and the state panel drops the link with them.
+    cals = 0
+    for p in ('', 'es/'):
+        for r in rows:
+            ics = subprocess.run(['php', str(ROOT / 'build' / 'render.php'), f'{p}cal/{slug(r["name"])}'], capture_output=True, check=True).stdout.decode()  # bytes: text mode would turn CRLF into LF
+            if re.search(r'(?m)^(Warning|Deprecated|Notice|Fatal error|Parse error): ', ics):
+                raise SystemExit(f'PHP warning in the calendar for {p}{r["name"]}')
+            if 'BEGIN:VEVENT' not in ics:
+                continue
+            if not ics.startswith('BEGIN:VCALENDAR\r\n') or not ics.endswith('END:VCALENDAR\r\n') or any(len(l.encode()) > 75 for l in ics.split('\r\n')):
+                raise SystemExit(f'bad calendar file for {p}{r["name"]}')
+            d = DIST / p / 'cal'
+            d.mkdir(parents=True, exist_ok=True)
+            (d / f'{slug(r["name"])}.ics').write_bytes(ics.encode())
+            cals += 1
     (DIST / 'es' / '404.html').write_text(render('es/404'))  # Pages serves the nearest 404.html
     (DIST / 'robots.txt').write_text(f'User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}sitemap.xml\n')
     # Share loop (October 23): the link in the suggested post text is /go/<state>/<version>, which lands
@@ -130,7 +146,7 @@ def main():
         ''.join(f'{p}go/:state/{v} /{p[1:]}:state/?{utm}&utm_content={v} 302\n' for v in ('plan', 'short', 'friends', 'official'))
         + f'{p}go/:state/* /{p[1:]}:state/?{utm} 302\n{p}go/:state /{p[1:]}:state/?{utm} 302\n'
         for p in ('/es/', '/')))
-    print(f'dist/: {copied} files copied, {len(pages)} pages rendered, sitemap {len(urls)} URLs')
+    print(f'dist/: {copied} files copied, {len(pages)} pages rendered, sitemap {len(urls)} URLs, {cals} calendar files')
 
 
 if __name__ == '__main__':

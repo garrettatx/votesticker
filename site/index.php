@@ -820,8 +820,8 @@ function vote_info( $st ) {
 	}
 	if ( ! vote_verified( $st ) ) {
 		return $es
-			? '<h2>Vota a más tardar el 3 de nov</h2><p>Aún no hemos verificado las fechas de votación anticipada de ' . vote_e( $name ) . ', así que estos stickers dicen Día de las Elecciones. Busca tus fechas y tu lugar de votación en <a href="https://www.vote411.org/' . vote_slug( $st['name'] ) . '" target="_blank" rel="noopener">Vote411</a> (League of Women Voters) o en la oficina electoral de tu estado.</p><p>' . $eday . '</p>'
-			: '<h2>Vote by Nov 3</h2><p>We haven’t checked ' . vote_e( $name ) . '’s early voting dates yet, so these stickers say Election Day. Look up your dates and polling place at <a href="https://www.vote411.org/' . vote_slug( $st['name'] ) . '" target="_blank" rel="noopener">Vote411</a> (League of Women Voters) or your state election office.</p><p>' . $eday . '</p>';
+			? '<h2>Vota a más tardar el 3 de nov</h2><p>Aún no hemos verificado las fechas de votación anticipada de ' . vote_e( $name ) . ', así que estos stickers dicen Día de las Elecciones. Busca tus fechas y tu lugar de votación en <a href="https://www.vote411.org/' . vote_slug( $st['name'] ) . '" target="_blank" rel="noopener">Vote411</a> (League of Women Voters) o en la oficina electoral de tu estado.</p><p>' . $eday . '</p>' . vote_cal_link( $st )
+			: '<h2>Vote by Nov 3</h2><p>We haven’t checked ' . vote_e( $name ) . '’s early voting dates yet, so these stickers say Election Day. Look up your dates and polling place at <a href="https://www.vote411.org/' . vote_slug( $st['name'] ) . '" target="_blank" rel="noopener">Vote411</a> (League of Women Voters) or your state election office.</p><p>' . $eday . '</p>' . vote_cal_link( $st );
 	}
 	$kind = $st['kind'];
 	$head = $es ? ( 'mail' === $kind ? 'Vota por correo' : ( in_array( $kind, array( 'none', 'ended' ), true ) ? 'Vota el Día de las Elecciones' : 'Vota temprano' ) ) : ( 'mail' === $kind ? 'Vote by mail' : ( in_array( $kind, array( 'none', 'ended' ), true ) ? 'Vote on Election Day' : 'Vote early' ) );
@@ -854,9 +854,88 @@ function vote_info( $st ) {
 	} else {
 		$html .= '<p><a class="official" href="' . vote_e( $st['officialUrl'] ) . '" target="_blank" rel="noopener"><span><b>' . ( $es ? 'Información oficial para votar en ' . vote_e( $name ) : 'Official ' . vote_e( $name ) . ' voting information' ) . '</b><small>' . ( $es ? ( 'none' === $kind ? 'Reglas del voto en ausencia y lugares de votación en ' : 'Lugares y horarios de votación en ' ) : ( 'none' === $kind ? 'Absentee rules and polling places at ' : 'Polling places and hours at ' ) ) . vote_e( $st['officialLabel'] ) . '</small></span></a></p>';
 	}
+	$html .= vote_cal_link( $st );
 	$html .= vote_sources_line( $st, $srcs );
 	if ( $es ) { $html .= '<p class="source">Algunos sitios oficiales están solo en inglés.</p>'; }
 	return $html;
+}
+
+// Add to calendar (final-week loop item 1, October 26): /cal/<state>.ics and /es/cal/<state>.ics, written
+// by the build for its own date. All-day events only, each with a reminder at 9 a.m. the day before:
+// the last day of early voting or the mail deadline where verified and still ahead, and Election Day
+// (left out for a mail state whose deadline is Election Day, which the mail event already covers).
+// No poll hours: they differ by state and county, so each event links to the official page instead.
+// Nothing is stored or sent; the file is the same for everyone who opens it.
+function vote_ics_events( $st ) {
+	if ( 'post' === vote_phase() ) { return array(); }
+	$es = vote_es();
+	$name = vote_name( $st );
+	$ok = vote_verified( $st );
+	$kind = $ok ? $st['kind'] : '';
+	$off = $ok ? $st['officialUrl'] : 'https://www.vote411.org/' . vote_slug( $st['name'] );
+	$loc = $ok ? ( vote_fact( $st, 'where.locator_url' ) ?: $off ) : $off;
+	$ev = array();
+	$ahead = $ok && ! empty( $st['end'] ) && $st['end'] >= vote_today();
+	if ( 'in-person' === $kind && $ahead ) {
+		$ev[] = array( 'early', $st['end'], $es ? 'Último día de votación anticipada en ' . $name : 'Last day of early voting in ' . $name,
+			$es ? 'La votación anticipada en ' . $name . ' sigue hasta el ' . vote_day( $st['end'] ) . '. Lugares y horarios: ' . $off
+				: 'Early voting in ' . $name . ' runs through ' . vote_day( $st['end'] ) . '. Places and hours: ' . $off );
+	}
+	if ( 'mail' === $kind && $ahead ) {
+		$ret = vote_fact( $st, 'dates.mail_return' );
+		$ev[] = array( 'mail', $st['end'], $es ? 'Fecha límite de la boleta por correo en ' . $name : 'Mail ballot deadline in ' . $name,
+			( $ret ? $ret['text'] : ( $es ? 'La boleta se entrega a más tardar el ' . vote_day( $st['end'] ) . '.' : 'Ballots are due ' . vote_day( $st['end'] ) . '.' ) )
+				. ( $es ? ' Cómo devolverla: ' : ' How to return it: ' ) . $off );
+	}
+	if ( ! ( 'mail' === $kind && $ahead && VOTE_ELECTION_DAY === $st['end'] ) ) {
+		$ev[] = array( 'eday', VOTE_ELECTION_DAY, $es ? 'Día de las Elecciones en ' . $name : 'Election Day in ' . $name,
+			$es ? 'Las casillas abren el martes 3 de noviembre. Busca tu lugar de votación y el horario: ' . $loc
+				: 'Polls are open Tuesday, November 3. Find your polling place and hours: ' . $loc );
+	}
+	return $ev;
+}
+function vote_ics( $st ) {
+	$esc = function ( $t ) { return str_replace( array( '\\', ';', ',', "\n" ), array( '\\\\', '\;', '\,', '\n' ), $t ); };
+	// RFC 5545 folds lines at 75 octets, never inside a UTF-8 character.
+	$fold = function ( $line ) {
+		$out = '';
+		$max = 75;  // the first line; continuations start with a space, so 74 more
+		while ( strlen( $line ) > $max ) {
+			$cut = $max;
+			while ( $cut > 0 && ( ord( $line[ $cut ] ) & 0xC0 ) === 0x80 ) { $cut--; }
+			$out .= substr( $line, 0, $cut ) . "\r\n ";
+			$line = substr( $line, $cut );
+			$max = 74;
+		}
+		return $out . $line;
+	};
+	$stamp = gmdate( 'Ymd\THis\Z', strtotime( vote_today() . ' 12:00:00 UTC' ) );
+	$lines = array( 'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//votesticker.org//Vote Sticker//' . ( vote_es() ? 'ES' : 'EN' ), 'CALSCALE:GREGORIAN', 'METHOD:PUBLISH' );
+	foreach ( vote_ics_events( $st ) as $e ) {
+		list( $id, $day, $title, $desc ) = $e;
+		$lines = array_merge( $lines, array(
+			'BEGIN:VEVENT',
+			'UID:' . strtolower( $st['abbr'] ) . '-' . $id . '-2026' . ( vote_es() ? '-es' : '' ) . '@votesticker.org',
+			'DTSTAMP:' . $stamp,
+			'DTSTART;VALUE=DATE:' . str_replace( '-', '', $day ),
+			'DTEND;VALUE=DATE:' . date( 'Ymd', strtotime( $day . ' +1 day' ) ),
+			'SUMMARY:' . $esc( $title ),
+			'DESCRIPTION:' . $esc( $desc ),
+			'URL:' . VOTE_SITE . vote_pbase() . vote_slug( $st['name'] ) . '/',
+			'TRANSP:TRANSPARENT',
+			'BEGIN:VALARM', 'ACTION:DISPLAY', 'DESCRIPTION:' . $esc( $title ), 'TRIGGER:-PT15H', 'END:VALARM',
+			'END:VEVENT',
+		) );
+	}
+	$lines[] = 'END:VCALENDAR';
+	return implode( "\r\n", array_map( $fold, $lines ) ) . "\r\n";
+}
+// The state panel's calendar link. No `download` attribute: iPhone opens a text/calendar file in its
+// Add to Calendar sheet only as a plain link; with `download` it goes to Files.
+function vote_cal_link( $st ) {
+	if ( ! vote_ics_events( $st ) ) { return ''; }
+	return '<p class="cal"><a class="btn btn--quiet" href="' . vote_pbase() . 'cal/' . vote_slug( $st['name'] ) . '.ics">' . vote_e( t( 'Add to my calendar' ) ) . '</a>'
+		. '<small>' . vote_e( t( 'Your voting dates in %s, with a reminder the day before. Opens in your phone or computer calendar.', vote_lname( $st ) ) ) . '</small></p>';
 }
 
 $vote_rows = vote_states();
@@ -891,6 +970,7 @@ if ( $vote_404 ) {
 	$vote_abbr = '';
 }
 $vote_st = $vote_abbr ? $vote_rows[ $vote_abbr ] : null;
+if ( defined( 'VOTE_CAL' ) ) { if ( $vote_st ) { echo vote_ics( $vote_st ); } return; }  // build/render.php cal/<state>
 $vote_page = $vote_st ? $vote_meta[ $vote_abbr ] : array(
 	'title' => t( 'I Voted Sticker Maker: Free Vote Stickers by State' ),
 	// After Election Day the home page leads with the sticker (docs/post-election-release.md); the title stays.
