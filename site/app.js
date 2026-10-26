@@ -12,6 +12,8 @@
 	'use strict';
 
 	var SIZE = 1080, STORY_H = 1920, SAFE = 500;
+	// The classic national set's red, white and blue (October 26 sketches).
+	var CLASSIC = { navy: '#1B3A7A', red: '#C8102E', white: '#FFFFFF' };
 	// Picture heights by size (portrait 4:5 added October 26 for Instagram feed posts).
 	var HEIGHTS = { square: SIZE, portrait: 1350, story: STORY_H };
 	// SCRIPT is only for the Script layout under review (not in the row); sheets load a face with setScript.
@@ -119,7 +121,10 @@
 		{ id: 'tricolor', name: 'Tricolor', palette: 'state' }, { id: 'spotlight', name: 'Spotlight', palette: 'plum' },
 		// Retired from the row October 26: kept so saved links and the bespoke renderer still draw them.
 		{ id: 'shadow', name: 'Shadow', palette: 'cream' }, { id: 'below', name: 'Map below', palette: 'forest' },
-		{ id: 'split', name: 'Split', palette: 'cobalt' }
+		{ id: 'split', name: 'Split', palette: 'cobalt' },
+		{ id: 'cflag', name: 'Classic stars and stripes', palette: 'navy' }, { id: 'cring', name: 'Classic star ring', palette: 'navy' },
+		{ id: 'cburst', name: 'Classic starburst', palette: 'navy' }, { id: 'cband', name: 'Classic banded', palette: 'navy' },
+		{ id: 'cbox', name: 'Classic ballot box', palette: 'navy' }
 	];
 	function designOf(id) { return DESIGNS.filter(function (d) { return d.id === id; })[0]; }
 	// Short lines only, at most 10 characters each (POR CORREO), so a card reads at 40 px in a comment thread
@@ -142,6 +147,8 @@
 		// For kids and families (October 26): true before, on and after Election Day. Spanish says "I'll vote
 		// too" because FUTURO/FUTURA VOTANTE would pick a gender.
 		futurevoter: { label: 'Future voter', lines: ['FUTURE', 'VOTER'], stateLine: true },
+		// Classic national set (October 26, sketches): drawn by the classic layouts only, never in the message list.
+		ivotedtoday: { hidden: true, label: 'I voted today', lines: ['I VOTED', 'TODAY'] },
 		// Spanish (October 19): tú, per the project glossary (docs/spanish-style.md); "Ya voté" is the
 		// everyday Mexican phrasing for "I voted". Date bars
 		// put the day first ("19–30 OCT", "HASTA EL 27 OCT").
@@ -178,6 +185,7 @@
 	function headlinesFor(st) {
 		var keys = Object.keys(HEADLINES).filter(function (k) {
 			var h = HEADLINES[k];
+			if (h.hidden) { return false; }  // classic-set messages, not offered in the maker
 			if (PHASE === 'post' && PLAN[k]) { return false; }
 			if (FUTURE_EARLY[k] && earlyOver(st)) { return false; }
 			return (!h.early || hasEarly(st)) && (!h.mail || (hasEarly(st) && st.kind === 'mail'));
@@ -879,6 +887,70 @@
 			var date = dateItems(dateText, total / 2, th + head.asc * 0.32, Math.min(total, 720), head.asc * 0.42, dateColor(p));
 			var icon = iconItem(st, total / 2, -150, 110, 220, p.ink, starOf(p));
 			return { items: icon.items.concat([oval], placed.items, date.items), safe: SAFE };
+		},
+		// Classic national stickers (October 26, review sketches for a home page set): red, white and blue,
+		// no state shape, original compositions on the conventions of polling-place stickers (stars,
+		// stripes, rays, a ring of stars, a ballot box). The last line of a two-line message is the small one.
+		cflag: function (st, p, lines) {
+			var C = CLASSIC, big = textBlock([lines[0]], DISPLAY, 760, 240), sub = lines.length > 1 ? textBlock([lines.slice(1).join(' ')], DATE, 420, 90, { track: 0.12 }) : null;
+			var head = placeText(big, 0, 0, C.red), items = head.items, bottom = head.bottom;
+			if (sub) { var s = placeText(sub, 0, bottom + big.asc * 0.2, C.navy); items = items.concat(s.items); bottom = s.bottom; }
+			var top = -big.asc * 0.42, low = bottom + big.asc * 0.42, deco = [{ t: 'box', box: [-4000, -4000, 4000, 4000], color: C.white, nofit: true }, { t: 'box', box: [-4000, -4000, 4000, top], color: C.navy, nofit: true }];
+			var k, j, sr = big.asc * 0.13;
+			for (j = 0; j < 2; j++) { for (k = -4; k <= 4; k++) { deco.push({ t: 'star', cx: k * sr * 3.2 + (j ? sr * 1.6 : 0), cy: top - sr * 1.8 - j * sr * 2.6, r: sr, color: C.white, nofit: true }); } }
+			for (k = 0; k < 6; k++) { deco.push({ t: 'box', box: [-4000, low + k * big.asc * 0.34, 4000, low + k * big.asc * 0.34 + big.asc * 0.17], color: C.red, nofit: true }); }
+			return { items: deco.concat(items), safe: SAFE };
+		},
+		cring: function (st, p, lines) {
+			var C = CLASSIC, big = textBlock(lines, DISPLAY, 560, 230, { justify: true, leading: 0.12 });
+			var head = placeText(big, 0, 0, C.navy);
+			head.items[0].color = C.red;
+			var row = [], k, sr = big.asc * 0.1;
+			for (k = -2; k <= 2; k++) { row.push({ t: 'star', cx: k * sr * 3, cy: -sr * 2.6, r: sr, color: C.red }); }
+			var group = row.concat(head.items), b = bounds(group);
+			shift(group, 0, -(b[1] + b[3]) / 2);
+			var pts = []; group.forEach(function (it) { pts = pts.concat(itemPoints(it)); });
+			var far = Math.max.apply(null, pts.map(function (q) { return Math.hypot(q[0], q[1]); }));
+			var ri = far * 1.1, R = ri * 1.32, ring = [{ t: 'disc', cx: 0, cy: 0, r: R, color: C.navy }, { t: 'disc', cx: 0, cy: 0, r: ri, color: C.white }];
+			for (k = 0; k < 16; k++) { var a = k * Math.PI / 8; ring.push({ t: 'star', cx: Math.cos(a) * (R + ri) / 2, cy: Math.sin(a) * (R + ri) / 2, r: (R - ri) * 0.26, color: C.white }); }
+			return { items: ring.concat(group), safe: SAFE };
+		},
+		cburst: function (st, p, lines) {
+			var C = CLASSIC, big = textBlock(lines, DISPLAY, 520, 220, { justify: true, leading: 0.14 });
+			var head = placeText(big, 0, 0, C.red);
+			if (head.items[1]) { head.items[1].color = C.navy; }
+			var row = [], k, sr = big.asc * 0.09;
+			for (k = -3; k <= 3; k++) { row.push({ t: 'star', cx: k * sr * 2.8, cy: head.bottom + sr * 2.4, r: sr, color: C.navy }); }
+			var group = head.items.concat(row), b = bounds(group);
+			shift(group, 0, -(b[1] + b[3]) / 2);
+			var pts = []; group.forEach(function (it) { pts = pts.concat(itemPoints(it)); });
+			var far = Math.max.apply(null, pts.map(function (q) { return Math.hypot(q[0], q[1]); }));
+			var ri = far * 1.08, R = ri * 1.4, w = Math.PI / 28, rays = [{ t: 'disc', cx: 0, cy: 0, r: R, color: C.white }];
+			for (k = 0; k < 28; k++) { var a = k * Math.PI / 14; rays.push({ t: 'poly', color: k % 2 ? C.red : C.navy, pts: [[0, 0], [R * Math.cos(a - w * 0.7), R * Math.sin(a - w * 0.7)], [R * Math.cos(a + w * 0.7), R * Math.sin(a + w * 0.7)]] }); }
+			rays.push({ t: 'disc', cx: 0, cy: 0, r: ri, color: C.white }, { t: 'ring', cx: 0, cy: 0, r: ri - 6, w: 8, color: C.red }, { t: 'ring', cx: 0, cy: 0, r: R - 4, w: 8, color: C.navy });
+			return { items: rays.concat(group), safe: SAFE };
+		},
+		cband: function (st, p, lines) {
+			var C = CLASSIC, big = textBlock([lines[0]], DISPLAY, 760, 230), head = placeText(big, 0, 0, C.navy);
+			var pad = big.asc * 0.3, top = -pad, low = head.bottom + pad, deco = [{ t: 'box', box: [-4000, -4000, 4000, 4000], color: C.white, nofit: true }];
+			deco.push({ t: 'box', box: [-4000, -4000, 4000, top], color: C.navy, nofit: true }, { t: 'box', box: [-4000, low, 4000, 4000], color: C.red, nofit: true });
+			var k, j, sr = big.asc * 0.12;
+			for (j = 0; j < 3; j++) { for (k = -5; k <= 5; k++) { deco.push({ t: 'star', cx: k * sr * 3 + (j % 2 ? sr * 1.5 : 0), cy: top - sr * 2 - j * sr * 2.5, r: sr, color: C.white, nofit: true }); } }
+			var items = head.items;
+			if (lines.length > 1) { var sb = textBlock([lines.slice(1).join(' ')], DATE, 520, big.asc * 0.42, { track: 0.1 }); items = items.concat(placeText(sb, 0, low + big.asc * 0.32, C.white).items); }
+			return { items: deco.concat(items), safe: SAFE };
+		},
+		cbox: function (st, p, lines) {
+			var C = CLASSIC, big = textBlock(lines, DISPLAY, 600, 200, { justify: true, leading: 0.12 });
+			var bw = 360, bh = 200, boxTop = 120;
+			var env = { t: 'poly', color: C.red, pts: [[-120, boxTop - 150], [120, boxTop - 150], [120, boxTop + 10], [-120, boxTop + 10]] };
+			var flap = { t: 'poly', color: C.white, pts: [[-120, boxTop - 150], [120, boxTop - 150], [0, boxTop - 70]] };
+			var star = { t: 'star', cx: 0, cy: boxTop - 40, r: 30, color: C.white };
+			var box = { t: 'box', box: [-bw / 2, boxTop, bw / 2, boxTop + bh], color: C.navy, radius: 14 };
+			var slot = { t: 'box', box: [-150, boxTop + 18, 150, boxTop + 34], color: C.white, radius: 6 };
+			var head = placeText(big, 0, boxTop + bh + 50, C.navy);
+			head.items[0].color = C.red;
+			return { items: [{ t: 'box', box: [-4000, -4000, 4000, 4000], color: C.white, nofit: true }, env, flap, star, box, slot].concat(head.items), safe: SAFE };
 		},
 		// Varsity: jersey lettering with a deep diagonal extrusion in the accent and a hairline of the
 		// background between letter and extrusion.
