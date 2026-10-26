@@ -7,6 +7,10 @@
   "www.pa.gov": {
    "en": "the Pennsylvania Department of State",
    "es": "el Departamento de Estado de Pennsylvania"
+  },
+  "www.alleghenycounty.us": {
+   "en": "Allegheny County Elections",
+   "es": "la oficina electoral del condado de Allegheny (Allegheny County Elections)"
   }
  },
  "dates": {
@@ -182,7 +186,16 @@
  },
  "sticker": {
   "tradition": {
-   "status": "missing"
+   "en": "Allegheny County's first I Voted sticker contest drew more than 13,000 public votes. The winner, I Voted N'at, by Molly, a 10th grader at Mt. Lebanon High School, is the county's sticker for the 2025 and 2026 elections.",
+   "es": "El primer concurso de stickers I Voted del condado de Allegheny recibió más de 13,000 votos del público. El diseño ganador, I Voted N'at, de Molly, estudiante de 10.º grado de Mt. Lebanon High School, es el sticker del condado para las elecciones de 2025 y 2026.",
+   "until": "2026-11-03",
+   "en_after": "Allegheny County's I Voted N'at sticker, by Molly, a 10th grader at Mt. Lebanon High School, won the county's first sticker contest with more than 13,000 public votes and was its sticker for the 2025 and 2026 elections.",
+   "es_after": "El sticker I Voted N'at del condado de Allegheny, de Molly, estudiante de 10.º grado de Mt. Lebanon High School, ganó el primer concurso de stickers del condado con más de 13,000 votos del público y fue su sticker para las elecciones de 2025 y 2026.",
+   "src": "https://www.alleghenycounty.us/Government/Elections/I-Voted-Sticker-Contest/I-Voted-Sticker-Contest-Past-Winners",
+   "checked": "2026-10-26",
+   "quote": "I Voted N'at design of \"balancing civic duty and Pittsburgh pride\" was printed for the 2025 and 2026 elections cycles in Allegheny County.",
+   "notes": "Quote is the end of the sentence, which names the student by surname; the page gives first name, grade and school. Read in Chrome (curl 403). A contest for 2027 is open.",
+   "status": "verified"
   }
  },
  "faq": {

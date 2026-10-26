@@ -180,7 +180,16 @@
  },
  "sticker": {
   "tradition": {
-   "status": "missing"
+   "en": "El Paso County's sticker contest drew 162 student designs. The first-place winners, an I Voted sticker by Novalie, a 10th grader at Eastwood High School, and a Future Voter sticker by Sophia, a 4th grader at Coach Wally Hartley PK-8 School, go to voters during the 2026 elections.",
+   "es": "El concurso de stickers del condado de El Paso recibió 162 diseños de estudiantes. Los primeros lugares, un sticker I Voted de Novalie, estudiante de 10.º grado de Eastwood High School, y un sticker Future Voter de Sophia, estudiante de 4.º grado de Coach Wally Hartley PK-8 School, se reparten a los votantes durante las elecciones de 2026.",
+   "until": "2026-11-03",
+   "en_after": "For the 2026 elections, El Paso County handed out student-designed stickers: an I Voted sticker by Novalie, a 10th grader at Eastwood High School, and a Future Voter sticker by Sophia, a 4th grader at Coach Wally Hartley PK-8 School, picked from 162 entries.",
+   "es_after": "En las elecciones de 2026, el condado de El Paso repartió stickers diseñados por estudiantes: un sticker I Voted de Novalie, estudiante de 10.º grado de Eastwood High School, y un sticker Future Voter de Sophia, estudiante de 4.º grado de Coach Wally Hartley PK-8 School, elegidos entre 162 diseños.",
+   "src": "https://epcountyvotestx.gov/see-more/news-and-press-releases/elections-department-announces-2025-sticker-design-contest-winners",
+   "checked": "2026-10-26",
+   "quote": "First-place winning designs will be distributed to voters during the 2026 election season.",
+   "notes": "Release dated November 14, 2025 (2025 contest, designs used in 2026). Full names on the page; first name, grade and school here.",
+   "status": "verified"
   },
   "early": {
    "en": "Each Texas county picks its own sticker. In Gaines County, the 2026 sticker is a student's design, handed out at every early voting location and Election Day vote center.",
@@ -237,6 +246,10 @@
   "tcss.legis.texas.gov": {
    "en": "the Texas Election Code",
    "es": "el Código Electoral de Texas"
+  },
+  "epcountyvotestx.gov": {
+   "en": "the El Paso County Elections Department",
+   "es": "el Departamento de Elecciones del condado de El Paso (El Paso County Elections Department)"
   }
  },
  "election_day": {

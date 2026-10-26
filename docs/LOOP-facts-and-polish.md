@@ -22,7 +22,7 @@ edit files, and every quote is re-read before it goes on a page.
 |---|---|---|---|
 | 1 | **"In line when polls close" for the 19 states without it** (`polls_rules.line`: DC FL GA IA IL MD MT NC ND NH NM SD TX UT VA VT WA WV WY) | The most useful Election Day sentence, and missing for TX, FL, GA and NC | Done Oct 26: all 19 |
 | 2 | **Keyboard-only walkthrough of the maker and state pages** | About now says the controls work with a keyboard; prove it or fix it | Done Oct 26: passes, no change |
-| 3 | **Sticker story for the 18 states without one** (`sticker.tradition`: AR AZ CA DC DE IA IL IN MA ME NE NJ NV PA SC TX VA WI), official sources only | The sticker is the brand, and the big states have nothing | |
+| 3 | **Sticker story for the 18 states without one** (`sticker.tradition`: AR AZ CA DC DE IA IL IN MA ME NE NJ NV PA SC TX VA WI), official sources only | The sticker is the brand, and the big states have nothing | 5 of 18 done Oct 26 (CA IA MA PA TX); rest in the log |
 | 4 | **Tilt control** (Straight, Left, Right) under the swatches; `render` already takes `tilt` | Cheap design range from the October 22 work | Done Oct 26 |
 | 5 | **"Future voter"** message for kids and families, EN and ES | Useful on Election Day and after it | Done Oct 26 |
 | 6 | **Guide type:** body text 17 px, line height about 1.6, in the guide sections | Backlog review item; long FAQ answers on phones | Done Oct 26 |
@@ -71,3 +71,21 @@ edit files, and every quote is re-read before it goes on a page.
   Montana's directive dates from 2008 (updated 2016), so the page leaves out its late-registration
   clause. New source names for DC, NM and TX. Facts, Spanish and SEO QA pass; stale scan at 27. The
   rules leave the page from Nov 4 with the rest of the polls section.
+- **Oct 26, item 3 (sticker stories), first pass.** Five new stories, EN and ES, each with past-tense
+  text after its date: Santa Clara County's first student contest, six winners in more than one million
+  mail packets (CA); Johnson County's I Voted After Dark sticker for early voters after 5 p.m., past
+  tense from Oct 29 (IA); Middleborough's four young winners (MA); Allegheny County's I Voted N'at by
+  Molly, Mt. Lebanon High School (PA); El Paso County's I Voted and Future Voter winners, Novalie and
+  Sophia with their schools (TX). Minors by first name and school only; the Allegheny quote is cut so
+  it doesn't carry the student's surname. Every quote was re-read: curl for Johnson and El Paso, Chrome
+  for Santa Clara, Middleborough and Allegheny (curl gets 403). Collection: Massachusetts and Texas
+  split like Washington (`ma-mail` Somerville, `tx-early` Gaines), hand records for CA and PA; 56
+  office records, all reviewed. Checked in Oct 29 and Nov 4 previews. Facts, Spanish and SEO QA pass;
+  stale scan at 27.
+  Left off, with reasons: VA (Roanoke) and SC (Charleston) were already the pickup answers, so a
+  story would repeat them. WI (Milwaukee's cow sticker by Haysham, Bay View High School) has only
+  the school district's article; the City Election Commission's release isn't on a city page. NE
+  (Lancaster County) and IL (Lake County) are an image and a PDF flyer Chrome couldn't read here;
+  a person can confirm them. AZ (Pima, 2022), DC (2020), IN (2024), NV (Clark, since 2016): official
+  but not confirmed for 2026. NJ (Camden) contest has no winners posted. AR (Washington County) is a
+  heading only. DE and ME: nothing official found.

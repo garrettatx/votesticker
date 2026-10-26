@@ -602,6 +602,10 @@ return array(
 				'en' => 'the San Luis Obispo County Clerk-Recorder',
 				'es' => 'la oficina de la secretaria-registradora del condado de San Luis Obispo (Clerk-Recorder)',
 			),
+			'vote.santaclaracounty.gov' => array(
+				'en' => 'the Santa Clara County Registrar of Voters',
+				'es' => 'la oficina electoral del condado de Santa Clara (Registrar of Voters)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Online registration closed October 19. You can still register and vote the same day, through Election Day, at your county elections office or any in-person voting location in your county.',
@@ -701,6 +705,15 @@ return array(
 			'es' => 'Los lugares de votación cierran a las 8 p. m. Si todavía estás en la fila a esa hora, no te salgas. Tienes derecho a votar.',
 			'src' => 'https://www.sos.ca.gov/elections/voter-bill-rights',
 			'checked' => '2026-10-21',
+		),
+		'sticker.tradition' => array(
+			'en' => 'Santa Clara County\'s first I Voted sticker contest drew 203 student designs, and more than 10,000 public votes picked six winners. More than one million vote-by-mail packets for November 3 include one of the six, and all six are handed out at the county\'s Vote Centers.',
+			'es' => 'El primer concurso de stickers I Voted del condado de Santa Clara recibió 203 diseños de estudiantes, y más de 10,000 votos del público eligieron seis ganadores. Más de un millón de paquetes de voto por correo para el 3 de noviembre traen uno de los seis, y los seis se reparten en los centros de votación (Vote Centers) del condado.',
+			'src' => 'https://vote.santaclaracounty.gov/santa-clara-county-announces-winners-first-ever-i-voted-sticker-design-contest',
+			'checked' => '2026-10-26',
+			'until' => '2026-11-03',
+			'en_after' => 'For the November 3, 2026 election, Santa Clara County mailed one of six student-designed I Voted stickers, picked by more than 10,000 public votes from 203 entries, in more than one million vote-by-mail packets, and handed all six out at its Vote Centers.',
+			'es_after' => 'Para la elección del 3 de noviembre de 2026, el condado de Santa Clara envió uno de seis stickers I Voted diseñados por estudiantes, elegidos con más de 10,000 votos del público entre 203 diseños, en más de un millón de paquetes de voto por correo, y repartió los seis en sus centros de votación (Vote Centers).',
 		),
 		'sticker.early' => array(
 			'en' => 'In San Luis Obispo County, yes. The county\'s 2026 student-designed stickers are handed out at both of its elections offices, where you can vote early, and at polling locations during the November election.',
@@ -1754,6 +1767,10 @@ return array(
 				'en' => 'the Johnson County Auditor & Elections Office',
 				'es' => 'la oficina del auditor y de elecciones del condado de Johnson (Auditor & Elections Office)',
 			),
+			'www.johnsoncountyiowa.gov' => array(
+				'en' => 'the Johnson County Auditor',
+				'es' => 'la oficina del Auditor del condado de Johnson (Johnson County Auditor)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Preregistration closed Monday, October 19, 2026. You can still register and vote at your polling place on Election Day.',
@@ -1853,6 +1870,15 @@ return array(
 			'es' => 'Si estás en el lugar de votación de tu distrito cuando cierra, quédate. Todavía puedes votar.',
 			'src' => 'https://www.legis.iowa.gov/docs/code/49.74.pdf',
 			'checked' => '2026-10-26',
+		),
+		'sticker.tradition' => array(
+			'en' => 'In Johnson County, people who vote early after 5 p.m. during the Auditor\'s Voting After Dark evening hours get a special I Voted After Dark sticker. The evening hours run at the Auditor\'s Office and the Iowa City Public Library through October 28.',
+			'es' => 'En el condado de Johnson, quienes votan por anticipado después de las 5 p. m., durante el horario nocturno Voting After Dark de la oficina del Auditor, reciben un sticker especial I Voted After Dark. El horario nocturno es en la oficina del Auditor y en la Biblioteca Pública de Iowa City hasta el 28 de octubre.',
+			'src' => 'https://www.johnsoncountyiowa.gov/news/auditor/2026-10-05/johnson-county-auditors-office-announces-voting-after-dark-extended-evening',
+			'checked' => '2026-10-26',
+			'until' => '2026-10-28',
+			'en_after' => 'For the November 3, 2026 election, Johnson County gave people who voted early after 5 p.m. during its Voting After Dark evening hours a special I Voted After Dark sticker.',
+			'es_after' => 'Para la elección del 3 de noviembre de 2026, el condado de Johnson les dio un sticker especial I Voted After Dark a quienes votaron por anticipado después de las 5 p. m. durante su horario nocturno Voting After Dark.',
 		),
 		'sticker.early' => array(
 			'en' => 'In Johnson County, yes. The county\'s 2026 "I Voted" stickers, chosen in its design contest, are handed out during early voting and on Election Day.',
@@ -2807,6 +2833,10 @@ return array(
 				'en' => 'the City of Somerville Elections Division',
 				'es' => 'la División de Elecciones de la ciudad de Somerville (Elections Division)',
 			),
+			'www.middleboroughma.gov' => array(
+				'en' => 'the Middleborough Town Clerk',
+				'es' => 'la oficina del secretario municipal de Middleborough (Town Clerk)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Register by Saturday, October 24, 2026: online until 11:59 p.m., by mail with a form postmarked that day, or in person by 5 p.m.',
@@ -2899,6 +2929,15 @@ return array(
 			'es' => 'Los lugares de votación cierran a las 8 p. m. Si estás en la fila de tu lugar de votación a esa hora, no te salgas. Igual puedes votar.',
 			'src' => 'https://www.sec.state.ma.us/divisions/elections/research-and-statistics/2026-Information-for-voters/2026-voting-options.htm',
 			'checked' => '2026-10-21',
+		),
+		'sticker.tradition' => array(
+			'en' => 'In Middleborough, four young artists, Nolan, Abby, Calleigh and Colette, won the Town Clerk\'s 2026 I Voted sticker contest. The Board of Registrars picked their designs, and voters get them in November.',
+			'es' => 'En Middleborough, cuatro artistas jóvenes, Nolan, Abby, Calleigh y Colette, ganaron el concurso de stickers I Voted 2026 de la oficina del secretario municipal (Town Clerk). La junta de registradores eligió sus diseños, y los votantes los reciben en noviembre.',
+			'src' => 'https://www.middleboroughma.gov/1107/I-Voted-Sticker-Contest',
+			'checked' => '2026-10-26',
+			'until' => '2026-11-03',
+			'en_after' => 'For the November 3, 2026 election, Middleborough handed out I Voted stickers designed by four young artists, Nolan, Abby, Calleigh and Colette, winners of the Town Clerk\'s 2026 contest.',
+			'es_after' => 'Para la elección del 3 de noviembre de 2026, Middleborough repartió stickers I Voted diseñados por cuatro artistas jóvenes, Nolan, Abby, Calleigh y Colette, ganadores del concurso 2026 de la oficina del secretario municipal (Town Clerk).',
 		),
 		'sticker.mail' => array(
 			'en' => 'In Somerville, the city\'s Elections Division posts an "I Voted" sticker image for early and mail voters to print at home or share online.',
@@ -5587,6 +5626,10 @@ return array(
 				'en' => 'the Pennsylvania Department of State',
 				'es' => 'el Departamento de Estado de Pennsylvania',
 			),
+			'www.alleghenycounty.us' => array(
+				'en' => 'Allegheny County Elections',
+				'es' => 'la oficina electoral del condado de Allegheny (Allegheny County Elections)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Registration closed October 19, 2026. Pennsylvania has no Election Day registration.',
@@ -5682,6 +5725,15 @@ return array(
 			'es' => 'Los lugares de votación cierran a las 8 p. m. Si estás en la fila para esa hora, quédate en la fila. Puedes votar.',
 			'src' => 'https://www.pa.gov/agencies/vote/voter-support/rules-at-the-polls',
 			'checked' => '2026-10-21',
+		),
+		'sticker.tradition' => array(
+			'en' => 'Allegheny County\'s first I Voted sticker contest drew more than 13,000 public votes. The winner, I Voted N\'at, by Molly, a 10th grader at Mt. Lebanon High School, is the county\'s sticker for the 2025 and 2026 elections.',
+			'es' => 'El primer concurso de stickers I Voted del condado de Allegheny recibió más de 13,000 votos del público. El diseño ganador, I Voted N\'at, de Molly, estudiante de 10.º grado de Mt. Lebanon High School, es el sticker del condado para las elecciones de 2025 y 2026.',
+			'src' => 'https://www.alleghenycounty.us/Government/Elections/I-Voted-Sticker-Contest/I-Voted-Sticker-Contest-Past-Winners',
+			'checked' => '2026-10-26',
+			'until' => '2026-11-03',
+			'en_after' => 'Allegheny County\'s I Voted N\'at sticker, by Molly, a 10th grader at Mt. Lebanon High School, won the county\'s first sticker contest with more than 13,000 public votes and was its sticker for the 2025 and 2026 elections.',
+			'es_after' => 'El sticker I Voted N\'at del condado de Allegheny, de Molly, estudiante de 10.º grado de Mt. Lebanon High School, ganó el primer concurso de stickers del condado con más de 13,000 votos del público y fue su sticker para las elecciones de 2025 y 2026.',
 		),
 		'election_day.hours' => array(
 			'en' => 'Polling places are open 7 a.m. to 8 p.m. local time.',
@@ -6310,6 +6362,10 @@ return array(
 				'en' => 'the Texas Election Code',
 				'es' => 'el Código Electoral de Texas',
 			),
+			'epcountyvotestx.gov' => array(
+				'en' => 'the El Paso County Elections Department',
+				'es' => 'el Departamento de Elecciones del condado de El Paso (El Paso County Elections Department)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Registration closed October 5, 2026. Texas has no same-day or Election Day registration.',
@@ -6402,6 +6458,15 @@ return array(
 			'es' => '¿Estás adentro o en la fila de tu lugar de votación a las 7 p. m.? Quédate. Todavía puedes votar.',
 			'src' => 'https://tcss.legis.texas.gov/resources/EL/htm/EL.41.htm',
 			'checked' => '2026-10-26',
+		),
+		'sticker.tradition' => array(
+			'en' => 'El Paso County\'s sticker contest drew 162 student designs. The first-place winners, an I Voted sticker by Novalie, a 10th grader at Eastwood High School, and a Future Voter sticker by Sophia, a 4th grader at Coach Wally Hartley PK-8 School, go to voters during the 2026 elections.',
+			'es' => 'El concurso de stickers del condado de El Paso recibió 162 diseños de estudiantes. Los primeros lugares, un sticker I Voted de Novalie, estudiante de 10.º grado de Eastwood High School, y un sticker Future Voter de Sophia, estudiante de 4.º grado de Coach Wally Hartley PK-8 School, se reparten a los votantes durante las elecciones de 2026.',
+			'src' => 'https://epcountyvotestx.gov/see-more/news-and-press-releases/elections-department-announces-2025-sticker-design-contest-winners',
+			'checked' => '2026-10-26',
+			'until' => '2026-11-03',
+			'en_after' => 'For the 2026 elections, El Paso County handed out student-designed stickers: an I Voted sticker by Novalie, a 10th grader at Eastwood High School, and a Future Voter sticker by Sophia, a 4th grader at Coach Wally Hartley PK-8 School, picked from 162 entries.',
+			'es_after' => 'En las elecciones de 2026, el condado de El Paso repartió stickers diseñados por estudiantes: un sticker I Voted de Novalie, estudiante de 10.º grado de Eastwood High School, y un sticker Future Voter de Sophia, estudiante de 4.º grado de Coach Wally Hartley PK-8 School, elegidos entre 162 diseños.',
 		),
 		'sticker.early' => array(
 			'en' => 'Each Texas county picks its own sticker. In Gaines County, the 2026 sticker is a student\'s design, handed out at every early voting location and Election Day vote center.',

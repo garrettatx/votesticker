@@ -15,6 +15,10 @@
   "www.somervillema.gov": {
    "en": "the City of Somerville Elections Division",
    "es": "la División de Elecciones de la ciudad de Somerville (Elections Division)"
+  },
+  "www.middleboroughma.gov": {
+   "en": "the Middleborough Town Clerk",
+   "es": "la oficina del secretario municipal de Middleborough (Town Clerk)"
   }
  },
  "dates": {
@@ -166,7 +170,16 @@
  },
  "sticker": {
   "tradition": {
-   "status": "missing"
+   "en": "In Middleborough, four young artists, Nolan, Abby, Calleigh and Colette, won the Town Clerk's 2026 I Voted sticker contest. The Board of Registrars picked their designs, and voters get them in November.",
+   "es": "En Middleborough, cuatro artistas jóvenes, Nolan, Abby, Calleigh y Colette, ganaron el concurso de stickers I Voted 2026 de la oficina del secretario municipal (Town Clerk). La junta de registradores eligió sus diseños, y los votantes los reciben en noviembre.",
+   "until": "2026-11-03",
+   "en_after": "For the November 3, 2026 election, Middleborough handed out I Voted stickers designed by four young artists, Nolan, Abby, Calleigh and Colette, winners of the Town Clerk's 2026 contest.",
+   "es_after": "Para la elección del 3 de noviembre de 2026, Middleborough repartió stickers I Voted diseñados por cuatro artistas jóvenes, Nolan, Abby, Calleigh y Colette, ganadores del concurso 2026 de la oficina del secretario municipal (Town Clerk).",
+   "src": "https://www.middleboroughma.gov/1107/I-Voted-Sticker-Contest",
+   "checked": "2026-10-26",
+   "quote": "After carefully reviewing all entries, the Board of Registrars selected the winning designs that will be proudly distributed to voters during the November election.",
+   "notes": "Page lists winners with ages 6 to 12; first names only here. Read in Chrome (curl 403).",
+   "status": "verified"
   },
   "mail": {
    "en": "In Somerville, the city's Elections Division posts an \"I Voted\" sticker image for early and mail voters to print at home or share online.",

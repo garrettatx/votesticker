@@ -19,6 +19,10 @@
   "www.slocounty.ca.gov": {
    "en": "the San Luis Obispo County Clerk-Recorder",
    "es": "la oficina de la secretaria-registradora del condado de San Luis Obispo (Clerk-Recorder)"
+  },
+  "vote.santaclaracounty.gov": {
+   "en": "the Santa Clara County Registrar of Voters",
+   "es": "la oficina electoral del condado de Santa Clara (Registrar of Voters)"
   }
  },
  "dates": {
@@ -177,7 +181,16 @@
  },
  "sticker": {
   "tradition": {
-   "status": "missing"
+   "en": "Santa Clara County's first I Voted sticker contest drew 203 student designs, and more than 10,000 public votes picked six winners. More than one million vote-by-mail packets for November 3 include one of the six, and all six are handed out at the county's Vote Centers.",
+   "es": "El primer concurso de stickers I Voted del condado de Santa Clara recibió 203 diseños de estudiantes, y más de 10,000 votos del público eligieron seis ganadores. Más de un millón de paquetes de voto por correo para el 3 de noviembre traen uno de los seis, y los seis se reparten en los centros de votación (Vote Centers) del condado.",
+   "until": "2026-11-03",
+   "en_after": "For the November 3, 2026 election, Santa Clara County mailed one of six student-designed I Voted stickers, picked by more than 10,000 public votes from 203 entries, in more than one million vote-by-mail packets, and handed all six out at its Vote Centers.",
+   "es_after": "Para la elección del 3 de noviembre de 2026, el condado de Santa Clara envió uno de seis stickers I Voted diseñados por estudiantes, elegidos con más de 10,000 votos del público entre 203 diseños, en más de un millón de paquetes de voto por correo, y repartió los seis en sus centros de votación (Vote Centers).",
+   "src": "https://vote.santaclaracounty.gov/santa-clara-county-announces-winners-first-ever-i-voted-sticker-design-contest",
+   "checked": "2026-10-26",
+   "quote": "Beginning in October, more than one million registered voters will receive one of the six winning stickers in their Vote by Mail packets for the November 3rd General Election.",
+   "notes": "Release dated July 28, 2026. ROV received 203 submissions, 30 finalists, more than 10,000 public votes; six winners across elementary/middle, high school and college/trade school. Read in Chrome (curl gets a 403).",
+   "status": "verified"
   },
   "mail": {
    "en": "Look in your ballot packet. In San Diego County, the November 3 packet includes an \"I Voted\" sticker with the voting instructions and the two-card ballot. Other counties decide for themselves.",

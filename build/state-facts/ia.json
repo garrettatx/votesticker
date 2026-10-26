@@ -19,6 +19,10 @@
   "johnsoncountyiowa.gov": {
    "en": "the Johnson County Auditor & Elections Office",
    "es": "la oficina del auditor y de elecciones del condado de Johnson (Auditor & Elections Office)"
+  },
+  "www.johnsoncountyiowa.gov": {
+   "en": "the Johnson County Auditor",
+   "es": "la oficina del Auditor del condado de Johnson (Johnson County Auditor)"
   }
  },
  "dates": {
@@ -192,8 +196,16 @@
  },
  "sticker": {
   "tradition": {
-   "status": "missing",
-   "notes": "No statewide or county I voted sticker page found on an official host."
+   "en": "In Johnson County, people who vote early after 5 p.m. during the Auditor's Voting After Dark evening hours get a special I Voted After Dark sticker. The evening hours run at the Auditor's Office and the Iowa City Public Library through October 28.",
+   "es": "En el condado de Johnson, quienes votan por anticipado después de las 5 p. m., durante el horario nocturno Voting After Dark de la oficina del Auditor, reciben un sticker especial I Voted After Dark. El horario nocturno es en la oficina del Auditor y en la Biblioteca Pública de Iowa City hasta el 28 de octubre.",
+   "until": "2026-10-28",
+   "en_after": "For the November 3, 2026 election, Johnson County gave people who voted early after 5 p.m. during its Voting After Dark evening hours a special I Voted After Dark sticker.",
+   "es_after": "Para la elección del 3 de noviembre de 2026, el condado de Johnson les dio un sticker especial I Voted After Dark a quienes votaron por anticipado después de las 5 p. m. durante su horario nocturno Voting After Dark.",
+   "src": "https://www.johnsoncountyiowa.gov/news/auditor/2026-10-05/johnson-county-auditors-office-announces-voting-after-dark-extended-evening",
+   "checked": "2026-10-26",
+   "quote": "Special \"I Voted After Dark\" stickers will be available only after 5:00 PM.",
+   "notes": "County news item published Oct 5, 2026. Evening hours: Auditor's Office Oct 26-27 until 6 p.m., Oct 28 until 8 p.m.; Iowa City Public Library Oct 17, 26, 27 until 6 p.m., Oct 28 until 8 p.m.; Solon High School Oct 23.",
+   "status": "verified"
   },
   "early": {
    "en": "In Johnson County, yes. The county's 2026 \"I Voted\" stickers, chosen in its design contest, are handed out during early voting and on Election Day.",

@@ -367,7 +367,16 @@
   "split": [
    "early",
    "mail"
-  ]
+  ],
+  "county": "Santa Clara",
+  "title": "Six student-designed I Voted stickers",
+  "year": 2026,
+  "office": "Santa Clara County Registrar of Voters",
+  "selection": "Student contest, public vote",
+  "elections": [
+   "2026 November general"
+  ],
+  "reviewed": true
  },
  "ca-early": {
   "county": "San Luis Obispo",
@@ -398,17 +407,12 @@
   "elections": [
    "2026 and 2027 elections"
   ],
-  "reviewed": true
+  "reviewed": true,
+  "title": "County contest stickers; I Voted After Dark for evening early voters"
  },
  "il-office": {
   "county": "Champaign",
   "office": "Champaign County Clerk",
-  "reviewed": true
- },
- "ma-office": {
-  "county": "City of Somerville",
-  "title": "Printable I Voted sticker for early and mail voters",
-  "office": "Somerville Elections Division",
   "reviewed": true
  },
  "nv-office": {
@@ -425,15 +429,6 @@
   "selection": "Student contest",
   "elections": [
    "2026 November general"
-  ],
-  "reviewed": true
- },
- "tx-office": {
-  "county": "Gaines",
-  "year": 2026,
-  "selection": "A student's design",
-  "elections": [
-   "2026 elections"
   ],
   "reviewed": true
  },
@@ -466,6 +461,60 @@
   ],
   "split": [
    "mail"
+  ],
+  "reviewed": true
+ },
+ "ma-mail": {
+  "county": "City of Somerville",
+  "title": "Printable I Voted sticker for early and mail voters",
+  "office": "Somerville Elections Division",
+  "reviewed": true
+ },
+ "ma-office": {
+  "split": [
+   "mail"
+  ],
+  "county": "Town of Middleborough",
+  "title": "Four young artists' 2026 I Voted designs",
+  "year": 2026,
+  "office": "Middleborough Town Clerk",
+  "selection": "Youth contest, chosen by the Board of Registrars",
+  "elections": [
+   "2026 November general"
+  ],
+  "reviewed": true
+ },
+ "tx-early": {
+  "county": "Gaines",
+  "year": 2026,
+  "selection": "A student's design",
+  "elections": [
+   "2026 elections"
+  ],
+  "reviewed": true
+ },
+ "tx-office": {
+  "split": [
+   "early"
+  ],
+  "county": "El Paso",
+  "title": "I Voted and Future Voter student designs",
+  "year": 2025,
+  "office": "El Paso County Elections Department",
+  "selection": "Student contest (2025), first place in each category",
+  "elections": [
+   "2026 elections"
+  ],
+  "reviewed": true
+ },
+ "pa-office": {
+  "county": "Allegheny",
+  "title": "I Voted N'at",
+  "year": 2025,
+  "office": "Allegheny County Elections",
+  "selection": "Student contest, public vote",
+  "elections": [
+   "2025 and 2026 elections"
   ],
   "reviewed": true
  }

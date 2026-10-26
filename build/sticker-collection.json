@@ -7211,6 +7211,33 @@
    "reviewed": true
   },
   {
+   "id": "ca-office",
+   "state": "CA",
+   "county": "Santa Clara",
+   "origin": "office",
+   "title": "Six student-designed I Voted stickers",
+   "designer": null,
+   "office": "Santa Clara County Registrar of Voters",
+   "selection": "Student contest, public vote",
+   "year": 2026,
+   "elections": [
+    "2026 November general"
+   ],
+   "story": {
+    "en": "Santa Clara County's first I Voted sticker contest drew 203 student designs, and more than 10,000 public votes picked six winners. More than one million vote-by-mail packets for November 3 include one of the six, and all six are handed out at the county's Vote Centers.",
+    "es": "El primer concurso de stickers I Voted del condado de Santa Clara recibió 203 diseños de estudiantes, y más de 10,000 votos del público eligieron seis ganadores. Más de un millón de paquetes de voto por correo para el 3 de noviembre traen uno de los seis, y los seis se reparten en los centros de votación (Vote Centers) del condado.",
+    "src": "https://vote.santaclaracounty.gov/santa-clara-county-announces-winners-first-ever-i-voted-sticker-design-contest",
+    "quote": "Beginning in October, more than one million registered voters will receive one of the six winning stickers in their Vote by Mail packets for the November 3rd General Election.",
+    "checked": "2026-10-26"
+   },
+   "distribution": [],
+   "image": null,
+   "image_permission": "none",
+   "permission_note": null,
+   "placement": "collection",
+   "reviewed": true
+  },
+  {
    "id": "ca-early",
    "state": "CA",
    "county": "San Luis Obispo",
@@ -7484,7 +7511,7 @@
    "state": "IA",
    "county": "Johnson",
    "origin": "office",
-   "title": null,
+   "title": "County contest stickers; I Voted After Dark for evening early voters",
    "designer": null,
    "office": null,
    "selection": "County design contest",
@@ -7492,7 +7519,13 @@
    "elections": [
     "2026 and 2027 elections"
    ],
-   "story": null,
+   "story": {
+    "en": "In Johnson County, people who vote early after 5 p.m. during the Auditor's Voting After Dark evening hours get a special I Voted After Dark sticker. The evening hours run at the Auditor's Office and the Iowa City Public Library through October 28.",
+    "es": "En el condado de Johnson, quienes votan por anticipado después de las 5 p. m., durante el horario nocturno Voting After Dark de la oficina del Auditor, reciben un sticker especial I Voted After Dark. El horario nocturno es en la oficina del Auditor y en la Biblioteca Pública de Iowa City hasta el 28 de octubre.",
+    "src": "https://www.johnsoncountyiowa.gov/news/auditor/2026-10-05/johnson-county-auditors-office-announces-voting-after-dark-extended-evening",
+    "quote": "Special \"I Voted After Dark\" stickers will be available only after 5:00 PM.",
+    "checked": "2026-10-26"
+   },
    "distribution": [
     {
      "use": "early voting",
@@ -7671,6 +7704,33 @@
   },
   {
    "id": "ma-office",
+   "state": "MA",
+   "county": "Town of Middleborough",
+   "origin": "office",
+   "title": "Four young artists' 2026 I Voted designs",
+   "designer": null,
+   "office": "Middleborough Town Clerk",
+   "selection": "Youth contest, chosen by the Board of Registrars",
+   "year": 2026,
+   "elections": [
+    "2026 November general"
+   ],
+   "story": {
+    "en": "In Middleborough, four young artists, Nolan, Abby, Calleigh and Colette, won the Town Clerk's 2026 I Voted sticker contest. The Board of Registrars picked their designs, and voters get them in November.",
+    "es": "En Middleborough, cuatro artistas jóvenes, Nolan, Abby, Calleigh y Colette, ganaron el concurso de stickers I Voted 2026 de la oficina del secretario municipal (Town Clerk). La junta de registradores eligió sus diseños, y los votantes los reciben en noviembre.",
+    "src": "https://www.middleboroughma.gov/1107/I-Voted-Sticker-Contest",
+    "quote": "After carefully reviewing all entries, the Board of Registrars selected the winning designs that will be proudly distributed to voters during the November election.",
+    "checked": "2026-10-26"
+   },
+   "distribution": [],
+   "image": null,
+   "image_permission": "none",
+   "permission_note": null,
+   "placement": "collection",
+   "reviewed": true
+  },
+  {
+   "id": "ma-mail",
    "state": "MA",
    "county": "City of Somerville",
    "origin": "office",
@@ -8264,6 +8324,33 @@
    "reviewed": true
   },
   {
+   "id": "pa-office",
+   "state": "PA",
+   "county": "Allegheny",
+   "origin": "office",
+   "title": "I Voted N'at",
+   "designer": null,
+   "office": "Allegheny County Elections",
+   "selection": "Student contest, public vote",
+   "year": 2025,
+   "elections": [
+    "2025 and 2026 elections"
+   ],
+   "story": {
+    "en": "Allegheny County's first I Voted sticker contest drew more than 13,000 public votes. The winner, I Voted N'at, by Molly, a 10th grader at Mt. Lebanon High School, is the county's sticker for the 2025 and 2026 elections.",
+    "es": "El primer concurso de stickers I Voted del condado de Allegheny recibió más de 13,000 votos del público. El diseño ganador, I Voted N'at, de Molly, estudiante de 10.º grado de Mt. Lebanon High School, es el sticker del condado para las elecciones de 2025 y 2026.",
+    "src": "https://www.alleghenycounty.us/Government/Elections/I-Voted-Sticker-Contest/I-Voted-Sticker-Contest-Past-Winners",
+    "quote": "I Voted N'at design of \"balancing civic duty and Pittsburgh pride\" was printed for the 2025 and 2026 elections cycles in Allegheny County.",
+    "checked": "2026-10-26"
+   },
+   "distribution": [],
+   "image": null,
+   "image_permission": "none",
+   "permission_note": null,
+   "placement": "collection",
+   "reviewed": true
+  },
+  {
    "id": "ri-office",
    "state": "RI",
    "county": null,
@@ -8415,6 +8502,33 @@
   },
   {
    "id": "tx-office",
+   "state": "TX",
+   "county": "El Paso",
+   "origin": "office",
+   "title": "I Voted and Future Voter student designs",
+   "designer": null,
+   "office": "El Paso County Elections Department",
+   "selection": "Student contest (2025), first place in each category",
+   "year": 2025,
+   "elections": [
+    "2026 elections"
+   ],
+   "story": {
+    "en": "El Paso County's sticker contest drew 162 student designs. The first-place winners, an I Voted sticker by Novalie, a 10th grader at Eastwood High School, and a Future Voter sticker by Sophia, a 4th grader at Coach Wally Hartley PK-8 School, go to voters during the 2026 elections.",
+    "es": "El concurso de stickers del condado de El Paso recibió 162 diseños de estudiantes. Los primeros lugares, un sticker I Voted de Novalie, estudiante de 10.º grado de Eastwood High School, y un sticker Future Voter de Sophia, estudiante de 4.º grado de Coach Wally Hartley PK-8 School, se reparten a los votantes durante las elecciones de 2026.",
+    "src": "https://epcountyvotestx.gov/see-more/news-and-press-releases/elections-department-announces-2025-sticker-design-contest-winners",
+    "quote": "First-place winning designs will be distributed to voters during the 2026 election season.",
+    "checked": "2026-10-26"
+   },
+   "distribution": [],
+   "image": null,
+   "image_permission": "none",
+   "permission_note": null,
+   "placement": "collection",
+   "reviewed": true
+  },
+  {
+   "id": "tx-early",
    "state": "TX",
    "county": "Gaines",
    "origin": "office",
