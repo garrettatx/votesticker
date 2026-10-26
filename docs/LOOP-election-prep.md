@@ -46,7 +46,7 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
 | 9 | Between-elections mode built behind a phase flag, ready for the Dec 1 review | Built Oct 25 (off) |
 | 10 | Sticker collection and 2026 archive (`docs/sticker-archive-spec.md`): data first | Data built Oct 25; all 51 office records reviewed Oct 26 |
 | 11 | Descriptive image filenames with 301s from the old URLs | Map built Oct 26; switch after Nov 5 |
-| 12 | Snohomish County as a second Washington sticker source | |
+| 12 | Snohomish County as a second Washington sticker source | Done Oct 26 |
 | 13 | Privacy and accessibility section on About | |
 
 ## Log
@@ -149,3 +149,12 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
   hero and showcase, sorts the gallery by the number in the name and keys alts.json by the old stem;
   history.php, the collection ids and render_readymades.mjs use the old names too. The docstring lists
   each. The switch waits until after Nov 5, as the backlog says. 477 static redirects fit Pages' 2,000.
+- **Oct 26, item 12:** Snohomish County's Oct 7 release (read from the page's own text) is now
+  Washington's sticker story, which was empty: seven new I Voted designs of the county's landscapes,
+  industries and cultures, one made with the Tulalip Tribes, at the Auditor's Office in Everett,
+  Sno-Isle Libraries and accessible voter services sites once your ballot is in (EN and ES). It took
+  the story slot, so the mail answer keeps one source (Thurston) and no answer needs two. `until`
+  Nov 3 with past-tense after-text ("For the November 3, 2026 election, Snohomish County offered..."),
+  checked in a Nov 4 preview build in both languages. The release names no drop boxes, so the page
+  doesn't either. Collection: `wa-office` is Snohomish, Thurston split out as `wa-mail` (52 records).
+  Facts, Spanish and SEO QA pass; the stale scan is unchanged at 27.

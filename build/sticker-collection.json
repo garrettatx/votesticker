@@ -8528,6 +8528,33 @@
   {
    "id": "wa-office",
    "state": "WA",
+   "county": "Snohomish",
+   "origin": "office",
+   "title": "Seven new I Voted designs, one made with the Tulalip Tribes",
+   "designer": null,
+   "office": "Snohomish County Auditor's Office",
+   "selection": null,
+   "year": 2026,
+   "elections": [
+    "2026 November general"
+   ],
+   "story": {
+    "en": "Snohomish County has seven new I Voted designs for the November 3 election, showing the county's landscapes, industries and cultures. One was made with the Tulalip Tribes and reflects Coast Salish heritage. Once you've returned your ballot, you can get one at the Auditor's Office in Everett, any Sno-Isle Libraries location or an accessible voter services site, during their open hours.",
+    "es": "El condado de Snohomish tiene siete diseños nuevos de sticker de \"I Voted\" para las elecciones del 3 de noviembre, con paisajes, industrias y culturas del condado. Uno se hizo junto con las Tribus Tulalip (Tulalip Tribes) y refleja la herencia cultural Coast Salish. Cuando ya hayas entregado tu boleta, puedes conseguir uno en la oficina del auditor en Everett (Auditor's Office), en cualquier biblioteca de Sno-Isle Libraries o en un centro accesible de servicios para votantes, en su horario de atención.",
+    "src": "https://snohomishcountywa.gov/CivicAlerts.aspx?AID=3268",
+    "quote": "one of Snohomish County’s new “I Voted” stickers, available at the Auditor’s Office in Everett, all Sno-Isle Libraries locations",
+    "checked": "2026-10-26"
+   },
+   "distribution": [],
+   "image": null,
+   "image_permission": "none",
+   "permission_note": null,
+   "placement": "collection",
+   "reviewed": true
+  },
+  {
+   "id": "wa-mail",
+   "state": "WA",
    "county": "Thurston",
    "origin": "office",
    "title": null,

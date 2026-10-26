@@ -446,13 +446,26 @@
   ],
   "reviewed": true
  },
- "wa-office": {
+ "wa-mail": {
   "county": "Thurston",
   "designer": "Alexis Trono, local artist",
   "office": "Thurston County Auditor's Office",
   "elections": [
    "2026 November general",
    "2027 primary"
+  ],
+  "reviewed": true
+ },
+ "wa-office": {
+  "county": "Snohomish",
+  "title": "Seven new I Voted designs, one made with the Tulalip Tribes",
+  "year": 2026,
+  "office": "Snohomish County Auditor's Office",
+  "elections": [
+   "2026 November general"
+  ],
+  "split": [
+   "mail"
   ],
   "reviewed": true
  }
