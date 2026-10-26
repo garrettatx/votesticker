@@ -1333,6 +1333,7 @@ $vote_ld = array(
 				</div>
 				<p class="summary" id="summary"></p>
 				<label class="check" id="circle-check"><input type="checkbox" id="circle"> <?php echo vote_e( t( 'Preview circle crop' ) ); ?></label>
+				<label class="check" id="round-check"><input type="checkbox" id="round"> <?php echo vote_e( t( 'Round sticker with a see-through background (PNG)' ) ); ?></label>
 				<div class="actions">
 					<a class="btn" id="save" href="#" download aria-disabled="true"><?php echo vote_e( t( 'Download picture' ) ); ?></a>
 					<a class="link-quiet" id="open" href="#" target="_blank" rel="noopener"><?php echo vote_e( t( 'Open full image' ) ); ?></a>

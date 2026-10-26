@@ -1246,6 +1246,7 @@
 		palette: load('palette3', 'plum'),
 		dateText: '',
 		circle: load('circle', true),
+		round: load('round', false),
 		size: 'square'
 	};
 	var previewSeq = 0;
@@ -1320,12 +1321,25 @@
 		setTilts();
 	}
 
+	function cutRound(canvas) {
+		var ctx = canvas.getContext('2d');
+		ctx.setTransform(1, 0, 0, 1, 0, 0);
+		ctx.globalCompositeOperation = 'destination-in';
+		ctx.beginPath();
+		ctx.arc(canvas.width / 2, canvas.height / 2, canvas.width / 2, 0, Math.PI * 2);
+		ctx.fill();
+		ctx.globalCompositeOperation = 'source-over';
+	}
 	function drawPreview() {
 		var seq = ++previewSeq;
 		var canvas = document.createElement('canvas');
 		var o = opts();
 		o.tall = HEIGHTS[state.size];
 		render(canvas, SIZE, o);
+		// Round cut-out (October 26): square size only; every design's content sits inside the safe circle, so
+		// cutting the canvas to the full circle never trims words. Corners become transparent in the PNG.
+		var round = state.round && state.size === 'square';
+		if (round) { cutRound(canvas); }
 		var link = $('save');
 		link.setAttribute('aria-disabled', 'true');
 		canvas.toBlob(function (blob) {
@@ -1333,7 +1347,7 @@
 			if (current.url) { URL.revokeObjectURL(current.url); }
 			current.blob = blob;
 			current.url = URL.createObjectURL(blob);
-			current.name = 'vote-early-' + state.state.toLowerCase() + '-' + state.design + '-' + state.palette + (state.tilt === 'straight' ? '' : '-' + state.tilt) + (state.size === 'square' ? '' : '-' + state.size) + '.png';
+			current.name = 'vote-early-' + state.state.toLowerCase() + '-' + state.design + '-' + state.palette + (state.tilt === 'straight' ? '' : '-' + state.tilt) + (state.size === 'square' ? (round ? '-round' : '') : '-' + state.size) + '.png';
 			$('preview').src = current.url;
 			Array.prototype.forEach.call(document.querySelectorAll('#tiny img'), function (img) { img.src = current.url; });
 			link.href = current.url;
@@ -1451,6 +1465,7 @@
 		if (!$('maker')) { return; }  // the About page: header and footer only
 		var headSel = $('headline');
 		$('circle').checked = state.circle;
+		$('round').checked = state.round;
 		document.body.classList.toggle('as-circle', state.circle);
 		$('tip').textContent = TIPS[DEVICE];
 		$('save').textContent = DEVICE === 'ios' ? T('Save to Photos') : T('Download picture');
@@ -1479,6 +1494,11 @@
 				document.body.classList.toggle('is-story', state.size !== 'square');  // any tall size: no circle crop
 				drawPreview();
 			});
+		});
+		$('round').addEventListener('change', function () {
+			state.round = $('round').checked;
+			save('round', state.round);
+			drawPreview();
 		});
 		$('circle').addEventListener('change', function () {
 			state.circle = $('circle').checked;

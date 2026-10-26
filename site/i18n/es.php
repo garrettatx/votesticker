@@ -447,6 +447,7 @@ return array(
 		'Your sticker is made in your browser and never uploaded, and the site never asks for a photo, a name or an email address. Google Analytics and Ahrefs Web Analytics count visits; the About page lists exactly what they record.' => 'Tu sticker se hace en tu navegador y nunca se sube, y el sitio nunca te pide una foto, un nombre ni un correo electrónico. Google Analytics y Ahrefs Web Analytics cuentan las visitas; la página Acerca de explica exactamente qué registran.',
 		'Add to my calendar' => 'Agregar a mi calendario',
 		'Make a voting plan' => 'Haz tu plan para votar',
+		'Round sticker with a see-through background (PNG)' => 'Sticker redondo con fondo transparente (PNG)',
 		'Planning help on VOTE411, from the nonpartisan League of Women Voters Education Fund.' => 'Ayuda para planear en VOTE411, de la organización no partidista League of Women Voters Education Fund (en inglés).',
 		'Planning help from %s.' => 'Ayuda para planear de %s.',
 		'How it looks as a profile picture' => 'Así se ve como foto de perfil',

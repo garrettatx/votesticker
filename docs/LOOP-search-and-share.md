@@ -22,6 +22,9 @@ Measure each change in Search Console from its recrawl date.
 | 5 | "Make a voting plan" link beside the calendar button: state's official plan page, else VOTE411 | Garrett, Oct 26: link out, don't build | Built Oct 26 (VOTE411 for all); official pages next |
 | 6 | GA4 admin, walked through with Garrett: custom dimensions, 14-month retention, `sticker_save` key event | Event details invisible in reports since Oct 23 | Done Oct 26 |
 | 7 | Search Console read of items 1-3 from their recrawl date (with the Oct 29 dated check) | | |
+| 8 | Mail-ballot fix ("cure") rules for the 25 states without them (AL AR CO DC GA IA ID KY MD MO MS NC ND NE NH NM OK PA RI SC SD TN TX WV WY), official sources | Mail voters need it Nov 3-10; kept on the page after Election Day | |
+| 9 | Transparent cut-out PNG for disc designs (backlog maker idea) | Sticker people can lay over a photo; "i voted sticker png" searches | Done Oct 26 |
+| 10 | Official state plan pages into `where.plan_url` (item 5 part 2) | | |
 
 ## Log
 
@@ -52,3 +55,10 @@ Measure each change in Search Console from its recrawl date.
   help from <the office>". Gone from Nov 4 with the calendar link. Build guard: a state page that gets
   a calendar file must carry both links (mutation-tested; it stopped on Alabama). 102 of 102 state
   pages have it; Nov 4 preview has none. Facts, Spanish and SEO QA pass.
+- **Oct 26, item 9 (round cut-out).** New maker option under Preview circle crop: "Round sticker with a
+  see-through background (PNG)" ("Sticker redondo con fondo transparente (PNG)"), square size only,
+  remembered in the browser, file name ends `-round.png`. Works for all 12 designs, not only the disc
+  one: the canvas is cut to the full circle after drawing, and every design's content sits inside the
+  safe circle, so no words are trimmed. Pixel probe on Texas, every design: corners alpha 0, center and
+  top edge 255; Story size hides the option and keeps a solid background; unchecking restores it.
+  Save, event and Spanish QA pass.

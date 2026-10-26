@@ -312,7 +312,8 @@ select:hover, input:hover, textarea:hover { border-color: #A79D86; }
 .tiny img { border-radius: 50%; flex: none; box-shadow: 0 0 0 1px var(--line); }
 .tiny img[src="data:,"] { visibility: hidden; }
 .is-story .tiny { display: none; }
-.is-story #circle-check { display: none; }
+.is-story #circle-check, .is-story #round-check { display: none; }
+#round-check { margin-top: calc(-1 * var(--s2)); }
 
 .check { display: flex; gap: 10px; align-items: center; margin: var(--s3) 0; font-size: var(--fs-sm); }
 .check input { width: 20px; height: 20px; min-height: 0; }
