@@ -1,0 +1,15 @@
+{
+ "_note": "Hand fields for office records, keyed by id. Only what the record's verified story or distribution quote says; minors by first name and school. Review: Oct 26, 2026, against the verified sticker facts (each checked on the official page Oct 21 to 24).",
+ "ak-office": {"title": "2022 youth I Voted sticker contest", "year": 2022, "office": "Alaska Division of Elections", "selection": "Youth contest (ages 5 to 13), one winner per region, public ranked choice vote", "reviewed": true},
+ "co-office": {"title": "High school I Voted digital sticker contest", "office": "Colorado Secretary of State", "selection": "High school contest; winner picked by popular vote", "reviewed": true},
+ "ga-office": {"title": "2026 statewide I voted sticker", "year": 2026, "designer": "Steve Penley", "office": "Georgia Secretary of State", "elections": ["2026 midterm elections"], "reviewed": true},
+ "ky-office": {"title": "2026 I voted sticker contest", "year": 2026, "office": "Kentucky Secretary of State", "selection": "Third annual contest for K-12 students", "elections": ["2026 November general"], "reviewed": true},
+ "la-office": {"title": "2026 I voted sticker, artist series", "year": 2026, "designer": "Terrance Osborne", "office": "Louisiana Secretary of State", "selection": "Artist series (sixth sticker since 2016)", "reviewed": true},
+ "mi-office": {"title": "2026 I Voted sticker contest winners", "year": 2026, "office": "Michigan Secretary of State", "selection": "Statewide contest; public vote on finalists; nine winners in three categories", "elections": ["2026 November general"], "reviewed": true},
+ "mt-office": {"title": "2026 I Voted sticker", "year": 2026, "office": "Montana Secretary of State, with election officials from all 56 counties", "elections": ["2026 primary", "2026 November general"], "reviewed": true},
+ "nd-office": {"title": "You Betcha I Voted", "year": 2026, "designer": "Haylee Senger, Bottineau", "office": "North Dakota Secretary of State", "selection": "First statewide contest; 478 entries; public vote", "elections": ["2026 primary (June 9)", "2026 November general"], "reviewed": true},
+ "oh-office": {"title": "2019 student I Voted sticker", "year": 2019, "designer": "Emily, Teays Valley High School", "office": "Ohio Secretary of State", "selection": "Contest for grades 6 to 12; three finalists; public vote", "reviewed": true},
+ "tn-office": {"title": "America 250 I Voted sticker", "year": 2026, "office": "Tennessee Secretary of State", "elections": ["2026 elections"], "reviewed": true},
+ "vt-office": {"title": "Student alternative I Voted sticker", "office": "Vermont Secretary of State (supports the contest)", "selection": "Yearly K-8 student contest; designs go to the winner's home district", "reviewed": true},
+ "wv-office": {"title": "First statewide I Voted! sticker", "year": 2026, "county": "Raleigh", "designer": "Reese, Shady Spring Middle School", "office": "West Virginia Secretary of State", "selection": "First statewide contest for eighth graders", "elections": ["2026 primary"], "reviewed": true}
+}

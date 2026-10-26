@@ -116,7 +116,7 @@ def check(rows, hand):
 
 def main():
     alts = json.loads((STATES / 'alts.json').read_text())
-    hand = json.loads(HAND.read_text()) if HAND.is_file() else {}
+    hand = {k: v for k, v in (json.loads(HAND.read_text()) if HAND.is_file() else {}).items() if not k.startswith('_')}
     rows = ours(alts) + offices(hand)
     bad = check(rows, hand)
     for b in bad:

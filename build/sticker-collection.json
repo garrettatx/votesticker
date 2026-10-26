@@ -7161,11 +7161,11 @@
    "state": "AK",
    "county": null,
    "origin": "office",
-   "title": null,
+   "title": "2022 youth I Voted sticker contest",
    "designer": null,
-   "office": null,
-   "selection": null,
-   "year": null,
+   "office": "Alaska Division of Elections",
+   "selection": "Youth contest (ages 5 to 13), one winner per region, public ranked choice vote",
+   "year": 2022,
    "elections": null,
    "story": {
     "en": "Alaska's Division of Elections has put kids' art on its stickers. For 2022 it held a youth contest for the I Voted sticker, open to ages 5 to 13, with one winner from each of the state's five regions, picked by a public ranked choice vote.",
@@ -7179,7 +7179,7 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "ca-office",
@@ -7222,10 +7222,10 @@
    "state": "CO",
    "county": null,
    "origin": "office",
-   "title": null,
+   "title": "High school I Voted digital sticker contest",
    "designer": null,
-   "office": null,
-   "selection": null,
+   "office": "Colorado Secretary of State",
+   "selection": "High school contest; winner picked by popular vote",
    "year": null,
    "elections": null,
    "story": {
@@ -7249,7 +7249,7 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "ct-office",
@@ -7343,12 +7343,14 @@
    "state": "GA",
    "county": null,
    "origin": "office",
-   "title": null,
-   "designer": null,
-   "office": null,
+   "title": "2026 statewide I voted sticker",
+   "designer": "Steve Penley",
+   "office": "Georgia Secretary of State",
    "selection": null,
-   "year": null,
-   "elections": null,
+   "year": 2026,
+   "elections": [
+    "2026 midterm elections"
+   ],
    "story": {
     "en": "Georgia has a new statewide I voted sticker for 2026, designed by Georgia artist Steve Penley. Five million were printed and sent to all 159 counties, so you can pick one up when you vote.",
     "es": "Georgia tiene un nuevo sticker estatal de \"I voted\" para 2026, diseñado por el artista de Georgia Steve Penley. Se imprimieron cinco millones y se mandaron a los 159 condados, así que puedes llevarte uno cuando votes.",
@@ -7370,7 +7372,7 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "hi-office",
@@ -7517,12 +7519,14 @@
    "state": "KY",
    "county": null,
    "origin": "office",
-   "title": null,
+   "title": "2026 I voted sticker contest",
    "designer": null,
-   "office": null,
-   "selection": null,
-   "year": null,
-   "elections": null,
+   "office": "Kentucky Secretary of State",
+   "selection": "Third annual contest for K-12 students",
+   "year": 2026,
+   "elections": [
+    "2026 November general"
+   ],
    "story": {
     "en": "For 2026, the Secretary of State's third annual I voted sticker contest is open to Kentucky students in kindergarten through 12th grade. The winning design will be handed to voters in participating counties during the 2026 general election.",
     "es": "Para 2026, el tercer concurso anual de stickers de \"I voted\" de la Secretaría de Estado está abierto a estudiantes de Kentucky desde kínder hasta 12.º grado. El diseño ganador se va a entregar a los votantes de los condados participantes durante la elección general de 2026.",
@@ -7535,18 +7539,18 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "la-office",
    "state": "LA",
    "county": null,
    "origin": "office",
-   "title": null,
-   "designer": null,
-   "office": null,
-   "selection": null,
-   "year": null,
+   "title": "2026 I voted sticker, artist series",
+   "designer": "Terrance Osborne",
+   "office": "Louisiana Secretary of State",
+   "selection": "Artist series (sixth sticker since 2016)",
+   "year": 2026,
    "elections": null,
    "story": {
     "en": "Louisiana's 2026 I voted sticker was painted by New Orleans artist Terrance Osborne. It's the state's sixth artist-designed sticker, a series that started in 2016 with George Rodrigue's Blue Dog.",
@@ -7560,7 +7564,7 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "ma-office",
@@ -7620,12 +7624,14 @@
    "state": "MI",
    "county": null,
    "origin": "office",
-   "title": null,
+   "title": "2026 I Voted sticker contest winners",
    "designer": null,
-   "office": null,
-   "selection": null,
-   "year": null,
-   "elections": null,
+   "office": "Michigan Secretary of State",
+   "selection": "Statewide contest; public vote on finalists; nine winners in three categories",
+   "year": 2026,
+   "elections": [
+    "2026 November general"
+   ],
    "story": {
     "en": "Michigan has a statewide I Voted sticker contest, started in 2024 by the Secretary of State's college student advisory task force. This year more than 2,000 designs came in, the public voted on finalists, and nine winners were picked in three categories. Local clerks can order the winning stickers for November.",
     "es": "Michigan tiene un concurso estatal de stickers de I Voted, que empezó en 2024 por idea del grupo asesor de estudiantes universitarios de la Secretaría de Estado. Este año llegaron más de 2,000 diseños, el público votó por los finalistas y se eligieron nueve ganadores en tres categorías. Los secretarios locales pueden pedir los stickers ganadores para noviembre.",
@@ -7647,7 +7653,7 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "mn-office",
@@ -7738,12 +7744,15 @@
    "state": "MT",
    "county": null,
    "origin": "office",
-   "title": null,
+   "title": "2026 I Voted sticker",
    "designer": null,
-   "office": null,
+   "office": "Montana Secretary of State, with election officials from all 56 counties",
    "selection": null,
-   "year": null,
-   "elections": null,
+   "year": 2026,
+   "elections": [
+    "2026 primary",
+    "2026 November general"
+   ],
    "story": {
     "en": "Montana has a new I Voted sticker for 2026, made by the Secretary of State with election officials from all 56 counties. It's red, white and blue, with an outline of the state and its mountains. You'll get one at polling places and county election offices.",
     "es": "Montana tiene un nuevo sticker de \"I Voted\" para 2026, hecho por la Secretaría de Estado con funcionarios electorales de los 56 condados. Es rojo, blanco y azul, con la silueta del estado y sus montañas. Te lo dan en los lugares de votación y en las oficinas electorales de los condados.",
@@ -7756,7 +7765,7 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "nc-office",
@@ -7797,12 +7806,15 @@
    "state": "ND",
    "county": null,
    "origin": "office",
-   "title": null,
-   "designer": null,
-   "office": null,
-   "selection": null,
-   "year": null,
-   "elections": null,
+   "title": "You Betcha I Voted",
+   "designer": "Haylee Senger, Bottineau",
+   "office": "North Dakota Secretary of State",
+   "selection": "First statewide contest; 478 entries; public vote",
+   "year": 2026,
+   "elections": [
+    "2026 primary (June 9)",
+    "2026 November general"
+   ],
    "story": {
     "en": "North Dakota held its first statewide I Voted sticker contest for 2026. Haylee Senger of Bottineau won with \"You Betcha I Voted,\" picked by 4,792 North Dakotans from 478 artists' entries. It debuted at the June 9 primary.",
     "es": "North Dakota hizo su primer concurso estatal de stickers de \"I Voted\" para 2026. Ganó Haylee Senger, de Bottineau, con \"You Betcha I Voted\", elegido por 4,792 personas de North Dakota entre las propuestas de 478 artistas. Se estrenó en la elección primaria del 9 de junio.",
@@ -7815,7 +7827,7 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "nm-office",
@@ -7918,11 +7930,11 @@
    "state": "OH",
    "county": null,
    "origin": "office",
-   "title": null,
-   "designer": null,
-   "office": null,
-   "selection": null,
-   "year": null,
+   "title": "2019 student I Voted sticker",
+   "designer": "Emily, Teays Valley High School",
+   "office": "Ohio Secretary of State",
+   "selection": "Contest for grades 6 to 12; three finalists; public vote",
+   "year": 2019,
    "elections": null,
    "story": {
     "en": "In 2019 the Secretary of State ran a contest for students in grades 6 to 12 to design Ohio's I Voted sticker. Over 2,000 entries came in, and more than 15,000 votes picked the winner: Emily Legg, a 12th grader at Teays Valley High School in Pickaway County.",
@@ -7945,7 +7957,7 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "ok-office",
@@ -8106,12 +8118,14 @@
    "state": "TN",
    "county": null,
    "origin": "office",
-   "title": null,
+   "title": "America 250 I Voted sticker",
    "designer": null,
-   "office": null,
+   "office": "Tennessee Secretary of State",
    "selection": null,
-   "year": null,
-   "elections": null,
+   "year": 2026,
+   "elections": [
+    "2026 elections"
+   ],
    "story": {
     "en": "Tennessee's 2026 I Voted sticker is a special America 250 edition from the Secretary of State, with patriotic artwork for the country's 250th anniversary. It's handed out at polling places during this year's elections.",
     "es": "El sticker de I Voted de Tennessee para 2026 es una edición especial de America 250 de la Secretaría de Estado, con arte patriótico por los 250 años del país. Se reparte en los lugares de votación durante las elecciones de este año.",
@@ -8124,7 +8138,7 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "tx-office",
@@ -8212,10 +8226,10 @@
    "state": "VT",
    "county": null,
    "origin": "office",
-   "title": null,
+   "title": "Student alternative I Voted sticker",
    "designer": null,
-   "office": null,
-   "selection": null,
+   "office": "Vermont Secretary of State (supports the contest)",
+   "selection": "Yearly K-8 student contest; designs go to the winner's home district",
    "year": null,
    "elections": null,
    "story": {
@@ -8230,7 +8244,7 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "wa-office",
@@ -8263,14 +8277,16 @@
   {
    "id": "wv-office",
    "state": "WV",
-   "county": null,
+   "county": "Raleigh",
    "origin": "office",
-   "title": null,
-   "designer": null,
-   "office": null,
-   "selection": null,
-   "year": null,
-   "elections": null,
+   "title": "First statewide I Voted! sticker",
+   "designer": "Reese, Shady Spring Middle School",
+   "office": "West Virginia Secretary of State",
+   "selection": "First statewide contest for eighth graders",
+   "year": 2026,
+   "elections": [
+    "2026 primary"
+   ],
    "story": {
     "en": "West Virginia held its first statewide I Voted! sticker contest for eighth graders in 2026. Reese Childers of Shady Spring Middle School in Raleigh County won, and Raleigh County handed 11,000 of her stickers to in-person voters in the May primary.",
     "es": "West Virginia hizo en 2026 su primer concurso estatal de stickers de \"¡Ya voté!\" (I Voted!) para estudiantes de octavo grado. Ganó Reese Childers, de la secundaria Shady Spring del condado de Raleigh, y el condado de Raleigh repartió 11,000 de sus stickers a quienes votaron en persona en las primarias de mayo.",
@@ -8283,7 +8299,7 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "wy-office",

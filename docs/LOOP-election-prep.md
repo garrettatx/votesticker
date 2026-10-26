@@ -44,7 +44,7 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
 | # | Item | Status |
 |---|---|---|
 | 9 | Between-elections mode built behind a phase flag, ready for the Dec 1 review | Built Oct 25 (off) |
-| 10 | Sticker collection and 2026 archive (`docs/sticker-archive-spec.md`): data first | Data built Oct 25; review of office records open |
+| 10 | Sticker collection and 2026 archive (`docs/sticker-archive-spec.md`): data first | Data built Oct 25; 12 of 40 office records reviewed Oct 26 |
 | 11 | Descriptive image filenames with 301s from the old URLs | |
 | 12 | Snohomish County as a second Washington sticker source | |
 | 13 | Privacy and accessibility section on About | |
@@ -101,3 +101,10 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
   no image. `--check` fails on unknown hand fields, hand records with no verified facts, and permission without its
   grant (mutation-tested). Not used by any page yet. Next: review the 40 office records against the spec's 13-state
   starting table (MI, ND, KY, NH, AL, MT, CO not yet matched to a design record).
+- **Oct 26, item 10 (review, part 1):** `build/sticker-offices.json` added: hand fields (title, year, designer,
+  office, selection, elections) for 12 office records, taken only from each record's verified story (checked on
+  the official page Oct 21 to 24): AK (2022 contest), CO, GA, KY, LA, MI, MT, ND, OH (2019), TN, VT, WV. Minors
+  by first name and school (WV, OH), per the spec. Permission stays none on all. Keys starting with `_` are
+  notes and skipped; the three hand-file guards re-tested and fire. Spec states with no verified story yet: NH
+  and AL (sos.nh.gov PDF, sos.alabama.gov) need reading on the official pages before a record exists; AK's 2026
+  pamphlet artist is also unread. Next: those three, then the 28 records with distribution facts only.
