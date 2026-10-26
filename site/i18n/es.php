@@ -448,6 +448,7 @@ return array(
 		'Add to my calendar' => 'Agregar a mi calendario',
 		'Make a voting plan' => 'Haz tu plan para votar',
 		'Round sticker with a see-through background (PNG)' => 'Sticker redondo con fondo transparente (PNG)',
+		'Sunburst background' => 'Fondo con rayos de sol',
 		'Planning help on VOTE411, from the nonpartisan League of Women Voters Education Fund.' => 'Ayuda para planear en VOTE411, de la organización no partidista League of Women Voters Education Fund (en inglés).',
 		'Planning help from %s.' => 'Ayuda para planear de %s.',
 		'How it looks as a profile picture' => 'Así se ve como foto de perfil',

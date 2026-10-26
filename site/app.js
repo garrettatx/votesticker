@@ -1119,6 +1119,11 @@
 		ctx.setTransform(px / SIZE, 0, 0, px / SIZE, 0, 0);
 		ctx.fillStyle = layout.disc ? layout.disc.outer : p.bg;
 		ctx.fillRect(0, 0, SIZE, tall);
+		// Sunburst (October 26, the Rays sketch as an option): 24 soft rays from the card's center in a shade
+		// of its own background, behind everything else, so any design and palette can take it.
+		// Softer on light backgrounds, where a 13 percent shade reads as gray and busy behind the type.
+		var rayAmt = function (hex) { return luminance(hex) > 0.6 ? 0.06 : 0.13; };
+		if (opts.rays) { drawRays(ctx, SIZE / 2, tall / 2, shade(layout.disc ? layout.disc.outer : p.bg, rayAmt(layout.disc ? layout.disc.outer : p.bg))); }
 		if (tall !== SIZE) {
 			ctx.translate(0, (tall - SIZE) / 2);
 		}
@@ -1128,6 +1133,8 @@
 			ctx.beginPath();
 			ctx.arc(SIZE / 2, SIZE / 2, SIZE / 2, 0, Math.PI * 2);
 			ctx.fill();
+			// The disc covers the background, so a sunburst goes on the disc too, kept inside it.
+			if (opts.rays) { ctx.save(); ctx.clip(); drawRays(ctx, SIZE / 2, SIZE / 2, shade(layout.disc.fill, rayAmt(layout.disc.fill))); ctx.restore(); }
 			layout.disc.rings.forEach(function (r) {
 				ctx.strokeStyle = r[2];
 				ctx.lineWidth = r[1];
@@ -1362,12 +1369,13 @@
 		dateText: '',
 		circle: load('circle', true),
 		round: load('round', false),
+		rays: load('rays', false),
 		size: 'square'
 	};
 	var previewSeq = 0;
 
 	function opts() {
-		return { state: state.state, design: state.design, palette: state.palette, headline: state.headline, dateText: state.dateText.toUpperCase(), tilt: TILTS[state.tilt] || 0 };
+		return { state: state.state, design: state.design, palette: state.palette, headline: state.headline, dateText: state.dateText.toUpperCase(), tilt: TILTS[state.tilt] || 0, rays: state.rays };
 	}
 
 	// The state panel and suggested post text are rendered by index.php in the page's language (October 19);
@@ -1436,6 +1444,19 @@
 		setTilts();
 	}
 
+	function drawRays(ctx, cx, cy, color) {
+		var n = 24, w = Math.PI / n, k, a, R = 3000;
+		ctx.fillStyle = color;
+		ctx.beginPath();
+		for (k = 0; k < n; k++) {
+			a = k * 2 * Math.PI / n;
+			ctx.moveTo(cx, cy);
+			ctx.lineTo(cx + R * Math.cos(a - w / 2), cy + R * Math.sin(a - w / 2));
+			ctx.lineTo(cx + R * Math.cos(a + w / 2), cy + R * Math.sin(a + w / 2));
+			ctx.closePath();
+		}
+		ctx.fill();
+	}
 	function cutRound(canvas) {
 		var ctx = canvas.getContext('2d');
 		ctx.setTransform(1, 0, 0, 1, 0, 0);
@@ -1462,7 +1483,7 @@
 			if (current.url) { URL.revokeObjectURL(current.url); }
 			current.blob = blob;
 			current.url = URL.createObjectURL(blob);
-			current.name = 'vote-early-' + state.state.toLowerCase() + '-' + state.design + '-' + state.palette + (state.tilt === 'straight' ? '' : '-' + state.tilt) + (state.size === 'square' ? (round ? '-round' : '') : '-' + state.size) + '.png';
+			current.name = 'vote-early-' + state.state.toLowerCase() + '-' + state.design + '-' + state.palette + (state.tilt === 'straight' ? '' : '-' + state.tilt) + (state.rays ? '-sunburst' : '') + (state.size === 'square' ? (round ? '-round' : '') : '-' + state.size) + '.png';
 			$('preview').src = current.url;
 			Array.prototype.forEach.call(document.querySelectorAll('#tiny img'), function (img) { img.src = current.url; });
 			link.href = current.url;
@@ -1581,6 +1602,7 @@
 		var headSel = $('headline');
 		$('circle').checked = state.circle;
 		$('round').checked = state.round;
+		$('rays').checked = state.rays;
 		document.body.classList.toggle('as-circle', state.circle);
 		$('tip').textContent = TIPS[DEVICE];
 		$('save').textContent = DEVICE === 'ios' ? T('Save to Photos') : T('Download picture');
@@ -1609,6 +1631,11 @@
 				document.body.classList.toggle('is-story', state.size !== 'square');  // any tall size: no circle crop
 				drawPreview();
 			});
+		});
+		$('rays').addEventListener('change', function () {
+			state.rays = $('rays').checked;
+			save('rays', state.rays);
+			redraw();
 		});
 		$('round').addEventListener('change', function () {
 			state.round = $('round').checked;

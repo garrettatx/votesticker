@@ -1325,6 +1325,7 @@ $vote_ld = array(
 				<div class="colors">
 					<div class="swatches" id="swatches" role="group" aria-label="<?php echo vote_e( t( 'Colors' ) ); ?>"></div>
 					<p class="swatch-name" id="swatch-name" aria-live="polite"></p>
+					<label class="check" id="rays-check"><input type="checkbox" id="rays"> <?php echo vote_e( t( 'Sunburst background' ) ); ?></label>
 				</div>
 				<div class="sizes tilts" id="tilts" role="group" aria-label="<?php echo vote_e( t( 'Angle' ) ); ?>">
 					<button type="button" class="size" data-tilt="straight" aria-pressed="true"><?php echo vote_e( t( 'Straight' ) ); ?></button>

@@ -106,3 +106,11 @@ Measure each change in Search Console from its recrawl date.
   Ballot bubble, Tricolor and Spotlight stay in REVIEW. Card QA 94,640 cards in Chromium and WebKit, 0
   outside the safe circle; save, event, facts, Spanish and SEO QA pass. Desktop shows 14 tiles in rows of
   three (last row two). Next, if Garrett wants it: Rays as an optional background in the color picker.
+- **Oct 26, item 11b (sunburst background).** The Rays sketch became an option, per Garrett: "Sunburst
+  background" ("Fondo con rayos de sol") under the color name. 24 rays from the card's center in a
+  shade of its own background (13 percent; 6 on light backgrounds, where 13 read gray and busy),
+  behind everything, in Square, Portrait and Story, with the round cut-out too; on Sticker the rays
+  also go inside its disc. Ring's own disc covers them. Remembered in the browser; file name gets
+  `-sunburst`. Card QA 94,640 cards, 0 outside the safe circle; save, event, Spanish and SEO QA pass.
+  Grid stays at 14 (Garrett: the short desktop row isn't a big deal). LAN preview for Garrett:
+  http://192.168.1.252:8793/ (python http.server on dist, this session only).
