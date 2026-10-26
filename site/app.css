@@ -715,3 +715,18 @@ body.is-holding { overflow: hidden; }
 /* Add to calendar (October 26): a quiet button and one line saying what it adds. */
 .info .cal { display: flex; flex-direction: column; align-items: flex-start; gap: var(--s2); margin: var(--s5) 0 var(--s5); }
 .info .cal small { color: var(--muted); font-size: var(--fs-sm); }
+
+/* Tap targets (final-week item 6, October 26): every control 44 px tall or more on a phone. A 390 px audit
+   found footer links and the hero's official link at 23 px (under WCAG 2.2's 24 px minimum) and chips,
+   summaries and the near-states list at 25 to 43. Padding with matching negative margins keeps the
+   text where it was. */
+.lang-switch, .pick-chip, .link-quiet, .check { min-height: 44px; }
+.link-quiet { display: inline-flex; align-items: center; }
+button.link-quiet { background: none; border: 0; color: var(--ink); font: inherit; font-size: var(--fs-sm); font-weight: 700; cursor: pointer; }
+button.link-quiet:hover { text-decoration: underline; }
+.post summary, .states__all summary, .faq summary { min-height: 44px; padding: 8px 0; box-sizing: border-box; }
+.faq summary { padding: 0; }
+.near li { padding: 0; }
+.near li a { display: block; padding: 12px 0 7px; }
+.near li span { margin-top: -4px; padding-bottom: var(--s2); }
+.foot__links a, .hero-meta__official { display: inline-block; padding: 11px 0; margin: -11px 0; }

@@ -25,7 +25,7 @@ preview builds, then restore `build/lastmod.json`.
 | 3 | **Profile-picture size preview.** A 48 px circle beside the big preview in the maker | People can check the sticker reads where friends will see it | Done Oct 26 |
 | 4 | **Copy alt text.** A button that copies a plain description of the current sticker | For people who add alt text to posts; the About page now promises accessibility | Done Oct 26 |
 | 5 | **"Send this to someone who hasn't voted yet."** After an I voted sticker is saved, a share-link line (the page link only, no tracking beyond the existing `share` event) | Turns a saved sticker into one more reminder | Done Oct 26 |
-| 6 | **Contrast and tap-target check.** `--muted` on cream against WCAG AA; every control 44 px or larger | Backlog review item; the About page claims keyboard and focus support | |
+| 6 | **Contrast and tap-target check.** `--muted` on cream against WCAG AA; every control 44 px or larger | Backlog review item; the About page claims keyboard and focus support | Done Oct 26 |
 | 7 | **Portrait 1080 x 1350** beside square and story | Instagram feed posts crop square stickers less well | |
 
 ## Log
@@ -67,3 +67,11 @@ preview builds, then restore `build/lastmod.json`.
   phones, copy link elsewhere; the existing `share` event, nothing new tracked). Not shown for
   planning messages; not rendered from Nov 4. Browser check: VOTE EARLY save, no line; I VOTED and YA
   VOTÉ saves, line shown and "Link copied" / "Enlace copiado". Spanish, SEO and event QA pass.
+- **Oct 26, item 6 (contrast and tap targets).** A 390 px browser audit of home, Texas, Spanish
+  Washington and About computed the contrast of every text element against its painted background:
+  no failures, `--muted` on cream included. Targets: the footer links and the hero's "Official info"
+  link were 23 px tall, under WCAG 2.2's 24 px minimum; post chips, the language switch, summaries,
+  the near-states list, Open full image and the circle-crop row ran 25 to 43 px. All are now 44 px
+  (padding with negative margins where the text shouldn't move). Left at 40 px: the logo link and the
+  Garrett Digital footer logo, both well over 24 px and wide. Screenshots of the maker, near-states,
+  FAQ and footer look unchanged apart from spacing.
