@@ -1549,6 +1549,9 @@ $vote_ld = array(
 		<?php if ( $vote_st ) : foreach ( vote_state_faq( $vote_st ) as $vote_q ) : ?>
 		<details class="faq__state"><summary><?php echo vote_e( $vote_q[0] ); ?></summary><p><?php echo vote_e( $vote_q[1] ); ?></p><p class="faq__src"><?php echo vote_es() ? 'Fuente: ' : 'From '; ?><a href="<?php echo vote_e( $vote_q[2] ); ?>" target="_blank" rel="noopener"><?php echo vote_e( vote_src_name( $vote_st, $vote_q[2] ) ); ?></a>.</p></details>
 		<?php endforeach; endif; ?>
+		<?php if ( ! $vote_st ) : // Home page only (visibility loop item 3, Oct 26): "how to get i voted sticker" sat at 9.3 on state pages. ?>
+		<details><summary><?php echo vote_e( t( 'Where can I get an I voted sticker?' ) ); ?></summary><p><?php echo vote_e( t( 'Most polling places hand one out after you vote. Each state or county picks its own design, so they vary from place to place. Voted by mail, or didn’t get one? Save a free digital sticker here: a classic one above, or one made for your state.' ) ); ?></p></details>
+		<?php endif; ?>
 		<details><summary><?php echo vote_e( t( 'How do I make it my profile picture?' ) ); ?></summary><p><?php echo vote_e( t( 'Tap Download picture, then open your profile settings in the app and choose the saved image as your photo. The design stays inside the circle that profile photos are cropped to.' ) ); ?></p></details>
 		<?php if ( 'post' === vote_phase() ) : ?>
 		<details><summary><?php echo vote_e( t( 'Can I still get an I voted sticker after the election?' ) ); ?></summary><p><?php echo vote_e( t( 'Yes. Save a free sticker, or make one with your own picture. The designs stay up after Election Day.' ) ); ?></p></details>
