@@ -1,5 +1,5 @@
 {
- "_note": "Hand fields for office records, keyed by id. Only what the record's verified story or distribution quote says; minors by first name and school. Review: Oct 26, 2026, against the verified sticker facts (each checked on the official page Oct 21 to 24).",
+ "_note": "Hand fields for office records, keyed by id. Only what the record's verified story or distribution quote says; minors by first name and school. Review: Oct 26, 2026, against the verified sticker facts (each checked on the official page Oct 21 to 24). Oct 26 part 5: the rest, from each record's quote; a pickup fact about a different county's sticker is split into <state>-<use>. Office left blank where the quote names none.",
  "ak-office": {
   "title": "Under One Aurora",
   "year": 2026,
@@ -128,6 +128,331 @@
   "selection": "Student contest (grades 4 and 5); finalists chosen by the Secretary of State's office, winners by a panel of local election officials",
   "elections": [
    "2026 state elections"
+  ],
+  "reviewed": true
+ },
+ "ct-office": {
+  "title": "I Voted Today",
+  "office": "Connecticut registrars of voters (state law, chapter 146)",
+  "reviewed": true
+ },
+ "hi-office": {
+  "title": "Virtual I Voted sticker",
+  "year": 2022,
+  "office": "Hawaii Office of Elections",
+  "selection": "Download after your ballot is accepted for counting",
+  "elections": [
+   "2022 elections"
+  ],
+  "reviewed": true
+ },
+ "id-office": {
+  "office": "Idaho Secretary of State (voteidaho.gov guide)",
+  "reviewed": true
+ },
+ "md-office": {
+  "title": "Downloadable I Voted stickers, two in English and Spanish",
+  "year": 2026,
+  "office": "Maryland State Board of Elections",
+  "elections": [
+   "2026 elections"
+  ],
+  "reviewed": true
+ },
+ "mn-office": {
+  "title": "I VOTED",
+  "office": "Minnesota election officials (Minn. Stat. 204B.49)",
+  "reviewed": true
+ },
+ "ms-office": {
+  "title": "2026 I Voted sticker contest",
+  "year": 2026,
+  "office": "Mississippi Secretary of State",
+  "selection": "Contest open to registered voters 18 and older; for all 82 counties",
+  "elections": [
+   "2026 election cycle"
+  ],
+  "reviewed": true
+ },
+ "ok-office": {
+  "office": "Oklahoma State Election Board",
+  "reviewed": true
+ },
+ "sd-office": {
+  "title": "Civics in the 605 Statewide Sticker Showcase",
+  "year": 2026,
+  "office": "South Dakota Secretary of State",
+  "selection": "Student contest, kindergarten through 12th grade, four age groups",
+  "elections": [
+   "2026 November general"
+  ],
+  "reviewed": true
+ },
+ "ut-office": {
+  "title": "Four downloadable 2020 I Voted stickers",
+  "year": 2020,
+  "office": "vote.utah.gov",
+  "elections": [
+   "2020 elections"
+  ],
+  "reviewed": true
+ },
+ "wy-office": {
+  "title": "150th anniversary of women's suffrage I Voted sticker",
+  "year": 2019,
+  "office": "Wyoming Secretary of State",
+  "selection": "Contest for high school juniors and seniors and college students; county clerks to hand out the winners",
+  "reviewed": true
+ },
+ "fl-office": {
+  "county": "Sarasota",
+  "title": "Pink flamingo",
+  "year": 2026,
+  "office": "Sarasota County Supervisor of Elections",
+  "selection": "A seventh grader's design, from more than 175 student entries",
+  "elections": [
+   "2026 November general"
+  ],
+  "split": [
+   "early"
+  ],
+  "reviewed": true
+ },
+ "fl-early": {
+  "county": "Clay",
+  "year": 2026,
+  "selection": "County design contest",
+  "elections": [
+   "2026 primary",
+   "2026 November general"
+  ],
+  "reviewed": true
+ },
+ "ks-office": {
+  "office": "Kansas Secretary of State",
+  "split": [
+   "mail"
+  ],
+  "reviewed": true
+ },
+ "ks-mail": {
+  "county": "Sedgwick",
+  "title": "2026 voting sticker contest winners",
+  "year": 2026,
+  "office": "Sedgwick County Election Office",
+  "selection": "County contest",
+  "elections": [
+   "2026 November general"
+  ],
+  "reviewed": true
+ },
+ "mo-office": {
+  "county": "Lincoln",
+  "title": "Three new I Voted designs",
+  "year": 2026,
+  "office": "Lincoln County Clerk",
+  "selection": "Student contest, grades 6 to 12, 151 entries, one winner per category",
+  "elections": [
+   "2026 and 2027 Lincoln County elections"
+  ],
+  "split": [
+   "early"
+  ],
+  "reviewed": true
+ },
+ "mo-early": {
+  "county": "City of St. Louis",
+  "office": "St. Louis Board of Election Commissioners",
+  "reviewed": true
+ },
+ "nc-office": {
+  "county": "Durham",
+  "year": 2026,
+  "office": "Durham County Board of Elections",
+  "selection": "Public vote, then the Board picks from the top three",
+  "reviewed": true,
+  "split": [
+   "early"
+  ]
+ },
+ "nc-early": {
+  "county": "Guilford",
+  "title": "I Voted Early",
+  "elections": [
+   "2026 November general"
+  ],
+  "reviewed": true
+ },
+ "nm-office": {
+  "county": "Santa Fe",
+  "title": "Three winning designs",
+  "year": 2026,
+  "office": "Santa Fe County Clerk",
+  "selection": "Student contest, closed September 8",
+  "elections": [
+   "2026 election cycle"
+  ],
+  "reviewed": true,
+  "split": [
+   "early"
+  ]
+ },
+ "nm-early": {
+  "county": "Los Alamos",
+  "title": "I Voted Early, I Voted and Future Voter",
+  "year": 2026,
+  "selection": "Student contest",
+  "elections": [
+   "2026 elections"
+  ],
+  "reviewed": true
+ },
+ "ny-office": {
+  "county": "Ulster",
+  "year": 2026,
+  "office": "Ulster County Board of Elections",
+  "selection": "Student contest, ages 9 to 18, sixth year; public vote on finalists",
+  "elections": [
+   "2026 November general"
+  ],
+  "reviewed": true,
+  "split": [
+   "early"
+  ]
+ },
+ "ny-early": {
+  "county": "New York City",
+  "elections": [
+   "2026 November general"
+  ],
+  "reviewed": true
+ },
+ "or-office": {
+  "title": "Virtual I Voted stickers",
+  "office": "Oregon Secretary of State",
+  "split": [
+   "mail"
+  ],
+  "reviewed": true
+ },
+ "or-mail": {
+  "county": "Multnomah",
+  "title": "Virtual I Voted sticker with BallotTrax tracking",
+  "elections": [
+   "2026 November general"
+  ],
+  "reviewed": true
+ },
+ "ri-office": {
+  "title": "I VOTED",
+  "year": 2026,
+  "office": "Rhode Island Department of State",
+  "elections": [
+   "2026 November general"
+  ],
+  "split": [
+   "mail"
+  ],
+  "reviewed": true
+ },
+ "ri-mail": {
+  "title": "I Voted by Mail",
+  "office": "Rhode Island Department of State",
+  "elections": [
+   "2026 November general"
+  ],
+  "reviewed": true
+ },
+ "ca-office": {
+  "split": [
+   "early",
+   "mail"
+  ]
+ },
+ "ca-early": {
+  "county": "San Luis Obispo",
+  "year": 2026,
+  "office": "SLO County Elections Office",
+  "selection": "Student design contest",
+  "elections": [
+   "2026 June primary",
+   "2026 November general"
+  ],
+  "reviewed": true
+ },
+ "ca-mail": {
+  "county": "San Diego",
+  "elections": [
+   "2026 November general"
+  ],
+  "reviewed": true
+ },
+ "dc-office": {
+  "office": "DC Board of Elections",
+  "reviewed": true
+ },
+ "ia-office": {
+  "county": "Johnson",
+  "year": 2026,
+  "selection": "County design contest",
+  "elections": [
+   "2026 and 2027 elections"
+  ],
+  "reviewed": true
+ },
+ "il-office": {
+  "county": "Champaign",
+  "office": "Champaign County Clerk",
+  "reviewed": true
+ },
+ "ma-office": {
+  "county": "City of Somerville",
+  "title": "Printable I Voted sticker for early and mail voters",
+  "office": "Somerville Elections Division",
+  "reviewed": true
+ },
+ "nv-office": {
+  "county": "Clark",
+  "elections": [
+   "2026 November general"
+  ],
+  "reviewed": true
+ },
+ "sc-office": {
+  "county": "Charleston",
+  "year": 2026,
+  "office": "Charleston County Board of Voter Registration and Elections",
+  "selection": "Student contest",
+  "elections": [
+   "2026 November general"
+  ],
+  "reviewed": true
+ },
+ "tx-office": {
+  "county": "Gaines",
+  "year": 2026,
+  "selection": "A student's design",
+  "elections": [
+   "2026 elections"
+  ],
+  "reviewed": true
+ },
+ "va-office": {
+  "county": "City of Roanoke",
+  "title": "America 250 I Voted",
+  "year": 2026,
+  "elections": [
+   "2026 November general"
+  ],
+  "reviewed": true
+ },
+ "wa-office": {
+  "county": "Thurston",
+  "designer": "Alexis Trono, local artist",
+  "office": "Thurston County Auditor's Office",
+  "elections": [
+   "2026 November general",
+   "2027 primary"
   ],
   "reviewed": true
  }

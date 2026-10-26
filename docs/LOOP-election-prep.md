@@ -44,7 +44,7 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
 | # | Item | Status |
 |---|---|---|
 | 9 | Between-elections mode built behind a phase flag, ready for the Dec 1 review | Built Oct 25 (off) |
-| 10 | Sticker collection and 2026 archive (`docs/sticker-archive-spec.md`): data first | Data built Oct 25; 14 of 42 office records reviewed Oct 26 |
+| 10 | Sticker collection and 2026 archive (`docs/sticker-archive-spec.md`): data first | Data built Oct 25; all 51 office records reviewed Oct 26 |
 | 11 | Descriptive image filenames with 301s from the old URLs | |
 | 12 | Snohomish County as a second Washington sticker source | |
 | 13 | Privacy and accessibility section on About | |
@@ -128,3 +128,14 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
   (EN and ES) instead of the 2022 youth contest; `ak-office` is now the 2026 record. The quote's source image is
   named in the fact's notes. QA passes. Spec table done: all 13 states have a record or a page fact. Next: the
   28 distribution-only records, then item 11.
+- **Oct 26, item 10 (review, part 5):** The other 28 office records reviewed from their own quotes. Ten
+  records held two different stickers (a state or county story plus another county's pickup fact: FL
+  Sarasota and Clay, MO Lincoln and St. Louis, NC Durham and Guilford, NM Santa Fe and Los Alamos, NY
+  Ulster and NYC, KS state and Sedgwick, OR state and Multnomah, RI in person and "I Voted by Mail", CA
+  San Luis Obispo and San Diego). A `split` list in the hand file now makes each such fact its own
+  record (`fl-early`, `ks-mail`); 51 records, all reviewed, 23 with a county. Office stays blank where
+  the quote names none (NYC, San Diego, Clark, Johnson, Gaines, Roanoke, Los Alamos, Guilford, Multnomah).
+  Rule-only records (CT and MN law, the ID, KS, OK and RI voting steps) keep no design fields. New guard:
+  a split use other than early or mail fails, and a forgotten split leaves its hand record orphaned,
+  which fails too (both fired). Facts QA passes; no page reads the file yet. Next: item 11 after the
+  build check.

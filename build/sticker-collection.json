@@ -7211,16 +7211,19 @@
    "reviewed": true
   },
   {
-   "id": "ca-office",
+   "id": "ca-early",
    "state": "CA",
-   "county": null,
+   "county": "San Luis Obispo",
    "origin": "office",
    "title": null,
    "designer": null,
-   "office": null,
-   "selection": null,
-   "year": null,
-   "elections": null,
+   "office": "SLO County Elections Office",
+   "selection": "Student design contest",
+   "year": 2026,
+   "elections": [
+    "2026 June primary",
+    "2026 November general"
+   ],
    "story": null,
    "distribution": [
     {
@@ -7230,7 +7233,29 @@
      "src": "https://www.slocounty.ca.gov/departments/clerk-recorder/news-announcements/slo-elections-office-calls-for-young-artists-to-submit-i-voted-sticker-designs",
      "quote": "The winning designs will be printed and distributed at both SLO County Elections Offices and at polling locations during the June and November 2026 elections.",
      "checked": "2026-10-25"
-    },
+    }
+   ],
+   "image": null,
+   "image_permission": "none",
+   "permission_note": null,
+   "placement": "collection",
+   "reviewed": true
+  },
+  {
+   "id": "ca-mail",
+   "state": "CA",
+   "county": "San Diego",
+   "origin": "office",
+   "title": null,
+   "designer": null,
+   "office": null,
+   "selection": null,
+   "year": null,
+   "elections": [
+    "2026 November general"
+   ],
+   "story": null,
+   "distribution": [
     {
      "use": "mail packet",
      "election": "2026 November general",
@@ -7244,7 +7269,7 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "co-office",
@@ -7285,9 +7310,9 @@
    "state": "CT",
    "county": null,
    "origin": "office",
-   "title": null,
+   "title": "I Voted Today",
    "designer": null,
-   "office": null,
+   "office": "Connecticut registrars of voters (state law, chapter 146)",
    "selection": null,
    "year": null,
    "elections": null,
@@ -7303,7 +7328,7 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "dc-office",
@@ -7312,7 +7337,7 @@
    "origin": "office",
    "title": null,
    "designer": null,
-   "office": null,
+   "office": "DC Board of Elections",
    "selection": null,
    "year": null,
    "elections": null,
@@ -7331,19 +7356,21 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "fl-office",
    "state": "FL",
-   "county": null,
+   "county": "Sarasota",
    "origin": "office",
-   "title": null,
+   "title": "Pink flamingo",
    "designer": null,
-   "office": null,
-   "selection": null,
-   "year": null,
-   "elections": null,
+   "office": "Sarasota County Supervisor of Elections",
+   "selection": "A seventh grader's design, from more than 175 student entries",
+   "year": 2026,
+   "elections": [
+    "2026 November general"
+   ],
    "story": {
     "en": "Some Florida counties pick their stickers in student contests. In Sarasota County, a seventh grader's pink flamingo, chosen from more than 175 student entries, is the sticker for November 3, offered to everyone who votes by mail, early or on Election Day.",
     "es": "Algunos condados de Florida eligen sus stickers en concursos para estudiantes. En el condado de Sarasota, un flamenco rosa dibujado por un estudiante de séptimo grado, elegido entre más de 175 propuestas, es el sticker del 3 de noviembre, y se le ofrece a todo el que vote por correo, por anticipado o el Día de las Elecciones.",
@@ -7351,6 +7378,28 @@
     "quote": "This year, a pink flamingo is at the center of the sticker, and I think the voters are going to love this design as much as they did the previous one.",
     "checked": "2026-10-21"
    },
+   "distribution": [],
+   "image": null,
+   "image_permission": "none",
+   "permission_note": null,
+   "placement": "collection",
+   "reviewed": true
+  },
+  {
+   "id": "fl-early",
+   "state": "FL",
+   "county": "Clay",
+   "origin": "office",
+   "title": null,
+   "designer": null,
+   "office": null,
+   "selection": "County design contest",
+   "year": 2026,
+   "elections": [
+    "2026 primary",
+    "2026 November general"
+   ],
+   "story": null,
    "distribution": [
     {
      "use": "early voting",
@@ -7365,7 +7414,7 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "ga-office",
@@ -7408,12 +7457,14 @@
    "state": "HI",
    "county": null,
    "origin": "office",
-   "title": null,
+   "title": "Virtual I Voted sticker",
    "designer": null,
-   "office": null,
-   "selection": null,
-   "year": null,
-   "elections": null,
+   "office": "Hawaii Office of Elections",
+   "selection": "Download after your ballot is accepted for counting",
+   "year": 2022,
+   "elections": [
+    "2022 elections"
+   ],
    "story": {
     "en": "Hawaii tied its sticker to ballot tracking: in 2022, once your ballot was accepted for counting, you could download a virtual I Voted sticker.",
     "es": "Hawaii unió su sticker al seguimiento de boletas: en 2022, una vez que aceptaban tu boleta para contarla, podías descargar un sticker virtual de I Voted.",
@@ -7426,19 +7477,21 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "ia-office",
    "state": "IA",
-   "county": null,
+   "county": "Johnson",
    "origin": "office",
    "title": null,
    "designer": null,
    "office": null,
-   "selection": null,
-   "year": null,
-   "elections": null,
+   "selection": "County design contest",
+   "year": 2026,
+   "elections": [
+    "2026 and 2027 elections"
+   ],
    "story": null,
    "distribution": [
     {
@@ -7454,7 +7507,7 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "id-office",
@@ -7463,7 +7516,7 @@
    "origin": "office",
    "title": null,
    "designer": null,
-   "office": null,
+   "office": "Idaho Secretary of State (voteidaho.gov guide)",
    "selection": null,
    "year": null,
    "elections": null,
@@ -7479,16 +7532,16 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "il-office",
    "state": "IL",
-   "county": null,
+   "county": "Champaign",
    "origin": "office",
    "title": null,
    "designer": null,
-   "office": null,
+   "office": "Champaign County Clerk",
    "selection": null,
    "year": null,
    "elections": null,
@@ -7507,7 +7560,7 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "ks-office",
@@ -7516,7 +7569,7 @@
    "origin": "office",
    "title": null,
    "designer": null,
-   "office": null,
+   "office": "Kansas Secretary of State",
    "selection": null,
    "year": null,
    "elections": null,
@@ -7527,6 +7580,27 @@
     "quote": "Exit the polling place (don’t forget your sticker)",
     "checked": "2026-10-21"
    },
+   "distribution": [],
+   "image": null,
+   "image_permission": "none",
+   "permission_note": null,
+   "placement": "collection",
+   "reviewed": true
+  },
+  {
+   "id": "ks-mail",
+   "state": "KS",
+   "county": "Sedgwick",
+   "origin": "office",
+   "title": "2026 voting sticker contest winners",
+   "designer": null,
+   "office": "Sedgwick County Election Office",
+   "selection": "County contest",
+   "year": 2026,
+   "elections": [
+    "2026 November general"
+   ],
+   "story": null,
    "distribution": [
     {
      "use": "mail packet",
@@ -7541,7 +7615,7 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "ky-office",
@@ -7598,11 +7672,11 @@
   {
    "id": "ma-office",
    "state": "MA",
-   "county": null,
+   "county": "City of Somerville",
    "origin": "office",
-   "title": null,
+   "title": "Printable I Voted sticker for early and mail voters",
    "designer": null,
-   "office": null,
+   "office": "Somerville Elections Division",
    "selection": null,
    "year": null,
    "elections": null,
@@ -7621,19 +7695,21 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "md-office",
    "state": "MD",
    "county": null,
    "origin": "office",
-   "title": null,
+   "title": "Downloadable I Voted stickers, two in English and Spanish",
    "designer": null,
-   "office": null,
+   "office": "Maryland State Board of Elections",
    "selection": null,
-   "year": null,
-   "elections": null,
+   "year": 2026,
+   "elections": [
+    "2026 elections"
+   ],
    "story": {
     "en": "The State Board of Elections has I voted sticker designs you can download, including two that say it in English and Spanish. One puts an oriole, a crab, a racehorse and a black-eyed Susan on the state flag. Another shows the Bay Bridge with a heron underneath.",
     "es": "La Junta Electoral del Estado tiene diseños de stickers de \"I voted\" que puedes descargar, incluidos dos que lo dicen en inglés y en español. Uno pone una oropéndola (oriole), un cangrejo, un caballo de carreras y una flor black-eyed Susan sobre la bandera del estado. Otro muestra el puente de la bahía (Bay Bridge) con una garza abajo.",
@@ -7646,7 +7722,7 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "mi-office",
@@ -7689,9 +7765,9 @@
    "state": "MN",
    "county": null,
    "origin": "office",
-   "title": null,
+   "title": "I VOTED",
    "designer": null,
-   "office": null,
+   "office": "Minnesota election officials (Minn. Stat. 204B.49)",
    "selection": null,
    "year": null,
    "elections": null,
@@ -7707,19 +7783,21 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "mo-office",
    "state": "MO",
-   "county": null,
+   "county": "Lincoln",
    "origin": "office",
-   "title": null,
+   "title": "Three new I Voted designs",
    "designer": null,
-   "office": null,
-   "selection": null,
-   "year": null,
-   "elections": null,
+   "office": "Lincoln County Clerk",
+   "selection": "Student contest, grades 6 to 12, 151 entries, one winner per category",
+   "year": 2026,
+   "elections": [
+    "2026 and 2027 Lincoln County elections"
+   ],
    "story": {
     "en": "In Lincoln County, students design the stickers. The county clerk's contest drew 151 entries from students in grades 6 to 12, for three new I voted designs for the county's 2026 and 2027 elections.",
     "es": "En el condado de Lincoln, los estudiantes diseñan los stickers. El concurso de la oficina del condado recibió 151 propuestas de estudiantes de 6.º a 12.º grado, para tres nuevos diseños de \"I voted\" para las elecciones del condado de 2026 y 2027.",
@@ -7727,6 +7805,25 @@
     "quote": "There will be a winner from each category resulting in 3 new \"I Voted\" sticker designs for the 2026/2027 Lincoln County elections.",
     "checked": "2026-10-21"
    },
+   "distribution": [],
+   "image": null,
+   "image_permission": "none",
+   "permission_note": null,
+   "placement": "collection",
+   "reviewed": true
+  },
+  {
+   "id": "mo-early",
+   "state": "MO",
+   "county": "City of St. Louis",
+   "origin": "office",
+   "title": null,
+   "designer": null,
+   "office": "St. Louis Board of Election Commissioners",
+   "selection": null,
+   "year": null,
+   "elections": null,
+   "story": null,
    "distribution": [
     {
      "use": "early voting",
@@ -7741,19 +7838,21 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "ms-office",
    "state": "MS",
    "county": null,
    "origin": "office",
-   "title": null,
+   "title": "2026 I Voted sticker contest",
    "designer": null,
-   "office": null,
-   "selection": null,
-   "year": null,
-   "elections": null,
+   "office": "Mississippi Secretary of State",
+   "selection": "Contest open to registered voters 18 and older; for all 82 counties",
+   "year": 2026,
+   "elections": [
+    "2026 election cycle"
+   ],
    "story": {
     "en": "For 2026, the Secretary of State ran a contest for Mississippi voters to design the I voted sticker for all 82 counties.",
     "es": "Para 2026, la Secretaría de Estado organizó un concurso para que los votantes de Mississippi diseñaran el sticker de \"I voted\" para los 82 condados.",
@@ -7766,7 +7865,7 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "mt-office",
@@ -7799,13 +7898,13 @@
   {
    "id": "nc-office",
    "state": "NC",
-   "county": null,
+   "county": "Durham",
    "origin": "office",
    "title": null,
    "designer": null,
-   "office": null,
-   "selection": null,
-   "year": null,
+   "office": "Durham County Board of Elections",
+   "selection": "Public vote, then the Board picks from the top three",
+   "year": 2026,
    "elections": null,
    "story": {
     "en": "Some North Carolina counties let residents help pick the sticker. Durham County's 2026 contest opened with public voting, and the top three designs go to the county Board of Elections, which picks the winner.",
@@ -7814,6 +7913,27 @@
     "quote": "Following that round, the top three designs will be presented to the Durham County Board of Elections for selection of the winning design.",
     "checked": "2026-10-21"
    },
+   "distribution": [],
+   "image": null,
+   "image_permission": "none",
+   "permission_note": null,
+   "placement": "collection",
+   "reviewed": true
+  },
+  {
+   "id": "nc-early",
+   "state": "NC",
+   "county": "Guilford",
+   "origin": "office",
+   "title": "I Voted Early",
+   "designer": null,
+   "office": null,
+   "selection": null,
+   "year": null,
+   "elections": [
+    "2026 November general"
+   ],
+   "story": null,
    "distribution": [
     {
      "use": "early voting",
@@ -7828,7 +7948,7 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "nd-office",
@@ -7888,14 +8008,16 @@
   {
    "id": "nm-office",
    "state": "NM",
-   "county": null,
+   "county": "Santa Fe",
    "origin": "office",
-   "title": null,
+   "title": "Three winning designs",
    "designer": null,
-   "office": null,
-   "selection": null,
-   "year": null,
-   "elections": null,
+   "office": "Santa Fe County Clerk",
+   "selection": "Student contest, closed September 8",
+   "year": 2026,
+   "elections": [
+    "2026 election cycle"
+   ],
    "story": {
     "en": "In Santa Fe County, students design the I Voted sticker. The county clerk's 2026 contest closed September 8, and the three winning designs are being printed for voters this election.",
     "es": "En el condado de Santa Fe, los estudiantes diseñan el sticker de \"I Voted\". El concurso 2026 de la secretaría del condado cerró el 8 de septiembre, y los tres diseños ganadores se imprimen para los votantes en esta elección.",
@@ -7903,6 +8025,27 @@
     "quote": "The winning 3 designs will be printed and shared with voters during this election cycle.",
     "checked": "2026-10-21"
    },
+   "distribution": [],
+   "image": null,
+   "image_permission": "none",
+   "permission_note": null,
+   "placement": "collection",
+   "reviewed": true
+  },
+  {
+   "id": "nm-early",
+   "state": "NM",
+   "county": "Los Alamos",
+   "origin": "office",
+   "title": "I Voted Early, I Voted and Future Voter",
+   "designer": null,
+   "office": null,
+   "selection": "Student contest",
+   "year": 2026,
+   "elections": [
+    "2026 elections"
+   ],
+   "story": null,
    "distribution": [
     {
      "use": "early voting",
@@ -7917,19 +8060,21 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "nv-office",
    "state": "NV",
-   "county": null,
+   "county": "Clark",
    "origin": "office",
    "title": null,
    "designer": null,
    "office": null,
    "selection": null,
    "year": null,
-   "elections": null,
+   "elections": [
+    "2026 November general"
+   ],
    "story": null,
    "distribution": [
     {
@@ -7945,19 +8090,21 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "ny-office",
    "state": "NY",
-   "county": null,
+   "county": "Ulster",
    "origin": "office",
    "title": null,
    "designer": null,
-   "office": null,
-   "selection": null,
-   "year": null,
-   "elections": null,
+   "office": "Ulster County Board of Elections",
+   "selection": "Student contest, ages 9 to 18, sixth year; public vote on finalists",
+   "year": 2026,
+   "elections": [
+    "2026 November general"
+   ],
    "story": {
     "en": "Ulster County's Board of Elections runs a student I Voted sticker contest, now in its sixth year. Students ages 9 to 18 send in designs, the public votes on the finalists, and the winning sticker goes to every voter in the county on November 3, 2026.",
     "es": "La Junta Electoral del condado de Ulster organiza un concurso de stickers de I Voted para estudiantes, que ya va en su sexto año. Estudiantes de 9 a 18 años mandan sus diseños, el público vota por los finalistas, y el sticker ganador se le da a cada votante del condado el 3 de noviembre de 2026.",
@@ -7965,6 +8112,27 @@
     "quote": "The design with the most votes will be produced and distributed to all voters at the November 3, 2026 General Election.",
     "checked": "2026-10-21"
    },
+   "distribution": [],
+   "image": null,
+   "image_permission": "none",
+   "permission_note": null,
+   "placement": "collection",
+   "reviewed": true
+  },
+  {
+   "id": "ny-early",
+   "state": "NY",
+   "county": "New York City",
+   "origin": "office",
+   "title": null,
+   "designer": null,
+   "office": null,
+   "selection": null,
+   "year": null,
+   "elections": [
+    "2026 November general"
+   ],
+   "story": null,
    "distribution": [
     {
      "use": "early voting",
@@ -7979,7 +8147,7 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "oh-office",
@@ -8022,7 +8190,7 @@
    "origin": "office",
    "title": null,
    "designer": null,
-   "office": null,
+   "office": "Oklahoma State Election Board",
    "selection": null,
    "year": null,
    "elections": null,
@@ -8038,16 +8206,16 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "or-office",
    "state": "OR",
    "county": null,
    "origin": "office",
-   "title": null,
+   "title": "Virtual I Voted stickers",
    "designer": null,
-   "office": null,
+   "office": "Oregon Secretary of State",
    "selection": null,
    "year": null,
    "elections": null,
@@ -8058,6 +8226,27 @@
     "quote": "I Voted (virtual sticker)",
     "checked": "2026-10-21"
    },
+   "distribution": [],
+   "image": null,
+   "image_permission": "none",
+   "permission_note": null,
+   "placement": "collection",
+   "reviewed": true
+  },
+  {
+   "id": "or-mail",
+   "state": "OR",
+   "county": "Multnomah",
+   "origin": "office",
+   "title": "Virtual I Voted sticker with BallotTrax tracking",
+   "designer": null,
+   "office": null,
+   "selection": null,
+   "year": null,
+   "elections": [
+    "2026 November general"
+   ],
+   "story": null,
    "distribution": [
     {
      "use": "mail packet",
@@ -8072,19 +8261,21 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "ri-office",
    "state": "RI",
    "county": null,
    "origin": "office",
-   "title": null,
+   "title": "I VOTED",
    "designer": null,
-   "office": null,
+   "office": "Rhode Island Department of State",
    "selection": null,
-   "year": null,
-   "elections": null,
+   "year": 2026,
+   "elections": [
+    "2026 November general"
+   ],
    "story": {
     "en": "After you put your ballot in the voting machine, wear your I Voted sticker. The Department of State's 2026 voter handbook says so.",
     "es": "Después de meter tu boleta en la máquina de votación, ponte tu sticker de I Voted. Lo dice el manual del votante 2026 del Departamento de Estado.",
@@ -8100,7 +8291,29 @@
      "src": "https://vote.sos.ri.gov/Voter/PersonVotingPage",
      "quote": "proudly wear your “I voted” sticker!",
      "checked": "2026-10-24"
-    },
+    }
+   ],
+   "image": null,
+   "image_permission": "none",
+   "permission_note": null,
+   "placement": "collection",
+   "reviewed": true
+  },
+  {
+   "id": "ri-mail",
+   "state": "RI",
+   "county": null,
+   "origin": "office",
+   "title": "I Voted by Mail",
+   "designer": null,
+   "office": "Rhode Island Department of State",
+   "selection": null,
+   "year": null,
+   "elections": [
+    "2026 November general"
+   ],
+   "story": null,
+   "distribution": [
     {
      "use": "mail packet",
      "election": "2026 November general",
@@ -8114,19 +8327,21 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "sc-office",
    "state": "SC",
-   "county": null,
+   "county": "Charleston",
    "origin": "office",
    "title": null,
    "designer": null,
-   "office": null,
-   "selection": null,
-   "year": null,
-   "elections": null,
+   "office": "Charleston County Board of Voter Registration and Elections",
+   "selection": "Student contest",
+   "year": 2026,
+   "elections": [
+    "2026 November general"
+   ],
    "story": null,
    "distribution": [
     {
@@ -8142,19 +8357,21 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "sd-office",
    "state": "SD",
    "county": null,
    "origin": "office",
-   "title": null,
+   "title": "Civics in the 605 Statewide Sticker Showcase",
    "designer": null,
-   "office": null,
-   "selection": null,
-   "year": null,
-   "elections": null,
+   "office": "South Dakota Secretary of State",
+   "selection": "Student contest, kindergarten through 12th grade, four age groups",
+   "year": 2026,
+   "elections": [
+    "2026 November general"
+   ],
    "story": {
     "en": "For the 2026 general election, the Secretary of State asked South Dakota students to design the next I Voted sticker, through the Civics in the 605 Statewide Sticker Showcase. Entries came in from kindergarten through 12th grade, in four age groups.",
     "es": "Para la elección general de 2026, la Secretaría de Estado invitó a estudiantes de South Dakota a diseñar el próximo sticker de \"I Voted\", con el concurso estatal Civics in the 605 Statewide Sticker Showcase. Participaron desde kínder hasta 12.º grado, en cuatro grupos de edad.",
@@ -8167,7 +8384,7 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "tn-office",
@@ -8199,14 +8416,16 @@
   {
    "id": "tx-office",
    "state": "TX",
-   "county": null,
+   "county": "Gaines",
    "origin": "office",
    "title": null,
    "designer": null,
    "office": null,
-   "selection": null,
-   "year": null,
-   "elections": null,
+   "selection": "A student's design",
+   "year": 2026,
+   "elections": [
+    "2026 elections"
+   ],
    "story": null,
    "distribution": [
     {
@@ -8222,19 +8441,21 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "ut-office",
    "state": "UT",
    "county": null,
    "origin": "office",
-   "title": null,
+   "title": "Four downloadable 2020 I Voted stickers",
    "designer": null,
-   "office": null,
+   "office": "vote.utah.gov",
    "selection": null,
-   "year": null,
-   "elections": null,
+   "year": 2020,
+   "elections": [
+    "2020 elections"
+   ],
    "story": {
     "en": "In 2020, vote.utah.gov posted four I Voted stickers you could download and print at home.",
     "es": "En 2020, vote.utah.gov publicó cuatro stickers de \"Ya voté\" (I Voted) para descargar e imprimir en casa.",
@@ -8247,19 +8468,21 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "va-office",
    "state": "VA",
-   "county": null,
+   "county": "City of Roanoke",
    "origin": "office",
-   "title": null,
+   "title": "America 250 I Voted",
    "designer": null,
    "office": null,
    "selection": null,
-   "year": null,
-   "elections": null,
+   "year": 2026,
+   "elections": [
+    "2026 November general"
+   ],
    "story": null,
    "distribution": [
     {
@@ -8275,7 +8498,7 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "vt-office",
@@ -8305,14 +8528,17 @@
   {
    "id": "wa-office",
    "state": "WA",
-   "county": null,
+   "county": "Thurston",
    "origin": "office",
    "title": null,
-   "designer": null,
-   "office": null,
+   "designer": "Alexis Trono, local artist",
+   "office": "Thurston County Auditor's Office",
    "selection": null,
    "year": null,
-   "elections": null,
+   "elections": [
+    "2026 November general",
+    "2027 primary"
+   ],
    "story": null,
    "distribution": [
     {
@@ -8328,7 +8554,7 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   },
   {
    "id": "wv-office",
@@ -8362,11 +8588,11 @@
    "state": "WY",
    "county": null,
    "origin": "office",
-   "title": null,
+   "title": "150th anniversary of women's suffrage I Voted sticker",
    "designer": null,
-   "office": null,
-   "selection": null,
-   "year": null,
+   "office": "Wyoming Secretary of State",
+   "selection": "Contest for high school juniors and seniors and college students; county clerks to hand out the winners",
+   "year": 2019,
    "elections": null,
    "story": {
     "en": "In 2019, for the 150th anniversary of women's suffrage in Wyoming, the Secretary of State's office ran an I Voted sticker design contest for high school juniors and seniors and college students. County clerks were to hand out the winning stickers at polling places.",
@@ -8380,7 +8606,7 @@
    "image_permission": "none",
    "permission_note": null,
    "placement": "collection",
-   "reviewed": false
+   "reviewed": true
   }
  ]
 }

@@ -23,7 +23,8 @@ HAND = ROOT / 'build' / 'sticker-offices.json'
 OUT = ROOT / 'build' / 'sticker-collection.json'
 
 # Hand-kept fields an office record may carry (spec, Record Fields). Anything else in the hand file is an error.
-HAND_FIELDS = {'title', 'county', 'year', 'designer', 'office', 'selection', 'elections', 'image_permission', 'permission_note', 'reviewed'}
+HAND_FIELDS = {'title', 'county', 'year', 'designer', 'office', 'selection', 'elections', 'image_permission', 'permission_note', 'reviewed', 'split'}
+USES = {'early': 'early voting', 'mail': 'mail packet'}
 PERMISSIONS = {'none', 'confirmed', 'license'}
 
 
@@ -57,34 +58,43 @@ def ours(alts):
     return rows
 
 
+def office_row(rid, abbr, story, dist):
+    return {
+        'id': rid, 'state': abbr, 'county': None, 'origin': 'office', 'title': None,
+        'designer': None, 'office': None, 'selection': None, 'year': None, 'elections': None,
+        'story': story, 'distribution': dist,
+        # "Published" on an official site is not permission (spec, Rules): no image until a grant is recorded.
+        'image': None, 'image_permission': 'none', 'permission_note': None,
+        'placement': 'collection', 'reviewed': False,
+    }
+
+
 def offices(hand):
     rows = []
     for f in sorted(FACTS.glob('*.json')):
         abbr = f.stem.upper()
         st = json.loads(f.read_text()).get('sticker', {})
         trad = st.get('tradition') or {}
-        dist = []
-        for use in ('early', 'mail'):
+        rid = f'{f.stem}-office'
+        # A pickup fact about a different sticker (another county's, say) becomes its own record,
+        # <state>-<use>, when the hand record lists that use under "split".
+        split = set(hand.get(rid, {}).get('split', []))
+        dist, own = [], []
+        for use, label in USES.items():
             fact = st.get(use) or {}
             if fact.get('status') == 'verified':
-                dist.append({'use': 'early voting' if use == 'early' else 'mail packet', 'election': '2026 November general',
-                             'en': fact.get('en'), 'src': fact.get('src'), 'quote': fact.get('quote'), 'checked': fact.get('checked')})
-        if trad.get('status') != 'verified' and not dist:
-            continue
-        # One record per state's office sticker story for now; the year and any split by design come at review
-        # (Alaska's verified story is its 2022 contest, not a 2026 design).
-        rid = f'{f.stem}-office'
-        row = {
-            'id': rid, 'state': abbr, 'county': None, 'origin': 'office', 'title': None,
-            'designer': None, 'office': None, 'selection': None, 'year': None, 'elections': None,
-            'story': {k: trad.get(k) for k in ('en', 'es', 'src', 'quote', 'checked')} if trad.get('status') == 'verified' else None,
-            'distribution': dist,
-            # "Published" on an official site is not permission (spec, Rules): no image until a grant is recorded.
-            'image': None, 'image_permission': 'none', 'permission_note': None,
-            'placement': 'collection', 'reviewed': False,
-        }
-        row.update(hand.get(rid, {}))
-        rows.append(row)
+                ev = {'use': label, 'election': '2026 November general',
+                      'en': fact.get('en'), 'src': fact.get('src'), 'quote': fact.get('quote'), 'checked': fact.get('checked')}
+                (own if use in split else dist).append((use, ev))
+        story = {k: trad.get(k) for k in ('en', 'es', 'src', 'quote', 'checked')} if trad.get('status') == 'verified' else None
+        if story or dist:
+            row = office_row(rid, abbr, story, [ev for _, ev in dist])
+            row.update({k: v for k, v in hand.get(rid, {}).items() if k != 'split'})
+            rows.append(row)
+        for use, ev in own:
+            row = office_row(f'{f.stem}-{use}', abbr, None, [ev])
+            row.update(hand.get(row['id'], {}))
+            rows.append(row)
     return rows
 
 
@@ -93,10 +103,13 @@ def check(rows, hand):
     ids = [r['id'] for r in rows]
     bad += [f'duplicate id {i}' for i in sorted({i for i in ids if ids.count(i) > 1})]
     known = {r['id'] for r in rows if r['origin'] == 'office'}
+    # A record whose every fact is split out has nothing left but its split list.
+    known |= {rid for rid, fields in hand.items() if set(fields) == {'split'}}
     for rid, fields in hand.items():
         if rid not in known:
             bad.append(f'{rid}: hand record has no verified facts behind it')
         bad += [f'{rid}: unknown field {k}' for k in fields if k not in HAND_FIELDS]
+        bad += [f'{rid}: split use {u!r} is not early or mail' for u in fields.get('split', []) if u not in USES]
     for r in rows:
         if r['origin'] == 'votesticker':
             if not r['alt']:
