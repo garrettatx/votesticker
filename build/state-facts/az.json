@@ -15,6 +15,10 @@
   "www.azcleanelections.gov": {
    "en": "the Arizona Citizens Clean Elections Commission",
    "es": "la Comisión de Elecciones Limpias de Arizona (Citizens Clean Elections Commission)"
+  },
+  "elections.maricopa.gov": {
+   "en": "Maricopa County Elections",
+   "es": "la oficina electoral del condado de Maricopa (Maricopa County Elections)"
   }
  },
  "dates": {
@@ -179,7 +183,12 @@
  },
  "sticker": {
   "tradition": {
-   "status": "missing"
+   "en": "Maricopa County held its first I Voted sticker contests in 2024 and used four winning designs that year, among them “Vote in the Desert” by Jake, a 17-year-old junior at Brophy College Preparatory in Phoenix.",
+   "es": "El condado de Maricopa organizó en 2024 sus primeros concursos de stickers de “I Voted” y usó cuatro diseños ganadores ese año, entre ellos “Vote in the Desert”, de Jake, un estudiante de 17 años de Brophy College Preparatory en Phoenix.",
+   "src": "https://elections.maricopa.gov/news-and-information/elections-news/StickerContestWinners.html",
+   "quote": "These designs will be utilized in Maricopa County's upcoming July 30 primary and November 5 general election.",
+   "checked": "2026-10-26",
+   "status": "verified"
   }
  },
  "faq": {

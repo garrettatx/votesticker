@@ -15626,6 +15626,34 @@
    "reviewed": true
   },
   {
+   "id": "az-office",
+   "state": "AZ",
+   "county": "Maricopa",
+   "origin": "office",
+   "title": "Vote in the Desert",
+   "designer": "Jake, Brophy College Preparatory",
+   "office": "Maricopa County Recorder",
+   "selection": "County's first youth and adult contests; four winning designs",
+   "year": 2024,
+   "elections": [
+    "2024 July primary",
+    "2024 November general"
+   ],
+   "story": {
+    "en": "Maricopa County held its first I Voted sticker contests in 2024 and used four winning designs that year, among them “Vote in the Desert” by Jake, a 17-year-old junior at Brophy College Preparatory in Phoenix.",
+    "es": "El condado de Maricopa organizó en 2024 sus primeros concursos de stickers de “I Voted” y usó cuatro diseños ganadores ese año, entre ellos “Vote in the Desert”, de Jake, un estudiante de 17 años de Brophy College Preparatory en Phoenix.",
+    "src": "https://elections.maricopa.gov/news-and-information/elections-news/StickerContestWinners.html",
+    "quote": "These designs will be utilized in Maricopa County's upcoming July 30 primary and November 5 general election.",
+    "checked": "2026-10-26"
+   },
+   "distribution": [],
+   "image": null,
+   "image_permission": "none",
+   "permission_note": null,
+   "placement": "collection",
+   "reviewed": true
+  },
+  {
    "id": "ca-office",
    "state": "CA",
    "county": "Santa Clara",
@@ -16004,6 +16032,33 @@
      "checked": "2026-10-24"
     }
    ],
+   "image": null,
+   "image_permission": "none",
+   "permission_note": null,
+   "placement": "collection",
+   "reviewed": true
+  },
+  {
+   "id": "in-office",
+   "state": "IN",
+   "county": null,
+   "origin": "office",
+   "title": null,
+   "designer": null,
+   "office": "Indiana Secretary of State",
+   "selection": "Student contest, grades K-12, first place in each grade group",
+   "year": 2024,
+   "elections": [
+    "2024 November general"
+   ],
+   "story": {
+    "en": "In 2024 the Indiana Secretary of State held an I Voted sticker contest for students in kindergarten through 12th grade. The first-place design from each grade group was set to go on the stickers handed out on Election Day, November 5, 2024.",
+    "es": "En 2024, la Secretaría de Estado de Indiana organizó un concurso de stickers de “I Voted” para estudiantes de kínder a 12.º grado. El diseño ganador de cada grupo de grados iba a aparecer en los stickers del Día de las Elecciones, el 5 de noviembre de 2024.",
+    "src": "https://events.in.gov/event/secretary-of-state-diego-morales-announces-i-voted-sticker-contest-for-hoosier-youth",
+    "quote": "will be featured on stickers distributed to voters on Election Day, November 5.",
+    "checked": "2026-10-26"
+   },
+   "distribution": [],
    "image": null,
    "image_permission": "none",
    "permission_note": null,
@@ -16445,6 +16500,34 @@
     "src": "https://www.sos.nd.gov/elections/civic-engagement-initiative/i-voted-sticker-design-contest",
     "quote": "Haylee Senger from Bottineau submitted the winning “You Betcha I Voted” sticker design, which debuted at the polls during the 2026 Primary Election on June 9.",
     "checked": "2026-10-21"
+   },
+   "distribution": [],
+   "image": null,
+   "image_permission": "none",
+   "permission_note": null,
+   "placement": "collection",
+   "reviewed": true
+  },
+  {
+   "id": "ne-office",
+   "state": "NE",
+   "county": "Lancaster",
+   "origin": "office",
+   "title": null,
+   "designer": "Katie Nieland",
+   "office": "Lancaster County Election Commissioner",
+   "selection": "County's first I Voted and Future Voter sticker contest",
+   "year": 2026,
+   "elections": [
+    "2026 May primary",
+    "2026 November general"
+   ],
+   "story": {
+    "en": "Lancaster County held its first “I Voted” and “Future Voter” sticker contest. Katie Nieland’s winning “I Voted” design has been handed out since the May 12, 2026 primary, when voters put their ballots in the ballot box.",
+    "es": "El condado de Lancaster organizó su primer concurso de stickers de “I Voted” y “Future Voter”. El diseño ganador de “I Voted”, de Katie Nieland, se entrega desde la primaria del 12 de mayo de 2026, cuando los votantes depositan su boleta en la urna.",
+    "src": "https://www.lancaster.ne.gov/DocumentCenter/View/30852",
+    "quote": "Both stickers will be available beginning with the May 12, 2026, Primary Election.",
+    "checked": "2026-10-26"
    },
    "distribution": [],
    "image": null,
@@ -17106,6 +17189,33 @@
      "checked": "2026-10-23"
     }
    ],
+   "image": null,
+   "image_permission": "none",
+   "permission_note": null,
+   "placement": "collection",
+   "reviewed": true
+  },
+  {
+   "id": "wi-office",
+   "state": "WI",
+   "county": "Washington",
+   "origin": "office",
+   "title": null,
+   "designer": null,
+   "office": "Washington County Clerk",
+   "selection": "Student contest, grades K-12; top four designs",
+   "year": 2026,
+   "elections": [
+    "2026 November general"
+   ],
+   "story": {
+    "en": "Washington County’s clerk asked students in kindergarten through 12th grade to design the 2026 “I Voted” sticker. The top four designs were picked for the stickers at the November 3, 2026 general election.",
+    "es": "La secretaría del condado de Washington invitó a estudiantes de kínder a 12.º grado a diseñar el sticker de “I Voted” de 2026. Los cuatro mejores diseños se eligieron para los stickers de la elección general del 3 de noviembre de 2026.",
+    "src": "https://www.washcowisco.gov/news/i_voted_sticker_contest",
+    "quote": "printed and distributed to voters during the November 3, 2026 General Election",
+    "checked": "2026-10-26"
+   },
+   "distribution": [],
    "image": null,
    "image_permission": "none",
    "permission_note": null,

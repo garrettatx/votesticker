@@ -11,6 +11,10 @@
   "nebraskalegislature.gov": {
    "en": "Nebraska law",
    "es": "la ley de Nebraska"
+  },
+  "lancaster.ne.gov": {
+   "en": "the Lancaster County Election Commissioner",
+   "es": "la Comisión Electoral del Condado de Lancaster (Election Commissioner)"
   }
  },
  "dates": {
@@ -189,8 +193,12 @@
  },
  "sticker": {
   "tradition": {
-   "status": "missing",
-   "notes": "No statewide sticker or contest on sos.nebraska.gov. Lancaster County ran its first I Voted sticker contest in 2025 (winner's meadowlark design used from the May 12, 2026 primary), but the county's announcement is a DocumentCenter PDF (lancaster.ne.gov/DocumentCenter/View/30852) that returns 403 and downloads in the browser; not read, so left out."
+   "en": "Lancaster County held its first “I Voted” and “Future Voter” sticker contest. Katie Nieland’s winning “I Voted” design has been handed out since the May 12, 2026 primary, when voters put their ballots in the ballot box.",
+   "es": "El condado de Lancaster organizó su primer concurso de stickers de “I Voted” y “Future Voter”. El diseño ganador de “I Voted”, de Katie Nieland, se entrega desde la primaria del 12 de mayo de 2026, cuando los votantes depositan su boleta en la urna.",
+   "src": "https://www.lancaster.ne.gov/DocumentCenter/View/30852",
+   "quote": "Both stickers will be available beginning with the May 12, 2026, Primary Election.",
+   "checked": "2026-10-26",
+   "status": "verified"
   }
  },
  "faq": {

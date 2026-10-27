@@ -15,6 +15,10 @@
   "docs.legis.wisconsin.gov": {
    "en": "Wisconsin law",
    "es": "la ley de Wisconsin"
+  },
+  "www.washcowisco.gov": {
+   "en": "the Washington County Clerk",
+   "es": "la secretaría del condado de Washington (Washington County Clerk)"
   }
  },
  "dates": {
@@ -201,8 +205,12 @@
  },
  "sticker": {
   "tradition": {
-   "status": "missing",
-   "notes": "No statewide sticker or contest found on elections.wi.gov; not searched further at county level."
+   "en": "Washington County’s clerk asked students in kindergarten through 12th grade to design the 2026 “I Voted” sticker. The top four designs were picked for the stickers at the November 3, 2026 general election.",
+   "es": "La secretaría del condado de Washington invitó a estudiantes de kínder a 12.º grado a diseñar el sticker de “I Voted” de 2026. Los cuatro mejores diseños se eligieron para los stickers de la elección general del 3 de noviembre de 2026.",
+   "src": "https://www.washcowisco.gov/news/i_voted_sticker_contest",
+   "quote": "printed and distributed to voters during the November 3, 2026 General Election",
+   "checked": "2026-10-26",
+   "status": "verified"
   }
  },
  "faq": {

@@ -452,6 +452,10 @@ return array(
 				'en' => 'the Arizona Citizens Clean Elections Commission',
 				'es' => 'la Comisión de Elecciones Limpias de Arizona (Citizens Clean Elections Commission)',
 			),
+			'elections.maricopa.gov' => array(
+				'en' => 'Maricopa County Elections',
+				'es' => 'la oficina electoral del condado de Maricopa (Maricopa County Elections)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Registration closed at 11:59 p.m. on Monday, October 5, 2026. Not sure you\'re registered? Call your county recorder.',
@@ -551,6 +555,12 @@ return array(
 			'es' => 'Los lugares de votación cierran a las 7 p. m. Si estás en la fila cuando cierran, no te salgas. Te dejarán votar.',
 			'src' => 'https://www.azleg.gov/ars/16/00565.htm',
 			'checked' => '2026-10-21',
+		),
+		'sticker.tradition' => array(
+			'en' => 'Maricopa County held its first I Voted sticker contests in 2024 and used four winning designs that year, among them “Vote in the Desert” by Jake, a 17-year-old junior at Brophy College Preparatory in Phoenix.',
+			'es' => 'El condado de Maricopa organizó en 2024 sus primeros concursos de stickers de “I Voted” y usó cuatro diseños ganadores ese año, entre ellos “Vote in the Desert”, de Jake, un estudiante de 17 años de Brophy College Preparatory en Phoenix.',
+			'src' => 'https://elections.maricopa.gov/news-and-information/elections-news/StickerContestWinners.html',
+			'checked' => '2026-10-26',
 		),
 		'election_day.hours' => array(
 			'en' => 'Polling places are open 6 a.m. to 7 p.m. local time.',
@@ -2258,6 +2268,10 @@ return array(
 				'en' => 'the Indiana Election Division',
 				'es' => 'la División Electoral de Indiana (Indiana Election Division)',
 			),
+			'events.in.gov' => array(
+				'en' => 'the Indiana Secretary of State',
+				'es' => 'la Secretaría de Estado de Indiana',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Registration closed on Monday, October 5, 2026. Not sure you\'re registered? Check IndianaVoters.in.gov.',
@@ -2378,6 +2392,12 @@ return array(
 			'es' => 'Los lugares de votación cierran a las 6 p. m., hora local. Si estás en la fila a esa hora, no te salgas. Te dejarán votar con una boleta regular.',
 			'src' => 'https://www.in.gov/dA/a8ee46432d/2026-Election-Day-Handbook.pdf',
 			'checked' => '2026-10-21',
+		),
+		'sticker.tradition' => array(
+			'en' => 'In 2024 the Indiana Secretary of State held an I Voted sticker contest for students in kindergarten through 12th grade. The first-place design from each grade group was set to go on the stickers handed out on Election Day, November 5, 2024.',
+			'es' => 'En 2024, la Secretaría de Estado de Indiana organizó un concurso de stickers de “I Voted” para estudiantes de kínder a 12.º grado. El diseño ganador de cada grupo de grados iba a aparecer en los stickers del Día de las Elecciones, el 5 de noviembre de 2024.',
+			'src' => 'https://events.in.gov/event/secretary-of-state-diego-morales-announces-i-voted-sticker-contest-for-hoosier-youth',
+			'checked' => '2026-10-26',
 		),
 		'election_day.hours' => array(
 			'en' => 'Polling places are open 6 a.m. to 6 p.m. local time.',
@@ -4447,6 +4467,10 @@ return array(
 				'en' => 'Nebraska law',
 				'es' => 'la ley de Nebraska',
 			),
+			'lancaster.ne.gov' => array(
+				'en' => 'the Lancaster County Election Commissioner',
+				'es' => 'la Comisión Electoral del Condado de Lancaster (Election Commissioner)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Online and mail registration closed October 16. You can still register in person at your county election office until 6 p.m. on Friday, October 23, 2026.',
@@ -4549,6 +4573,12 @@ return array(
 			'es' => '¿Estás en la fila cuando cierran? Quédate en la fila. Cualquier persona que esté en el lugar de votación o en la fila a la hora del cierre puede votar.',
 			'src' => 'https://nebraskalegislature.gov/laws/statutes.php?statute=32-908',
 			'checked' => '2026-10-21',
+		),
+		'sticker.tradition' => array(
+			'en' => 'Lancaster County held its first “I Voted” and “Future Voter” sticker contest. Katie Nieland’s winning “I Voted” design has been handed out since the May 12, 2026 primary, when voters put their ballots in the ballot box.',
+			'es' => 'El condado de Lancaster organizó su primer concurso de stickers de “I Voted” y “Future Voter”. El diseño ganador de “I Voted”, de Katie Nieland, se entrega desde la primaria del 12 de mayo de 2026, cuando los votantes depositan su boleta en la urna.',
+			'src' => 'https://www.lancaster.ne.gov/DocumentCenter/View/30852',
+			'checked' => '2026-10-26',
 		),
 		'election_day.hours' => array(
 			'en' => 'Polls are open 8 a.m. to 8 p.m. in Central time and 7 a.m. to 7 p.m. in Mountain time.',
@@ -7292,6 +7322,10 @@ return array(
 				'en' => 'Wisconsin law',
 				'es' => 'la ley de Wisconsin',
 			),
+			'www.washcowisco.gov' => array(
+				'en' => 'the Washington County Clerk',
+				'es' => 'la secretaría del condado de Washington (Washington County Clerk)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Online and by mail: closed October 14, 2026. At your municipal clerk\'s office: until 5 p.m. on Friday, October 30. Or register at your polling place on Election Day. Bring proof of residence either way.',
@@ -7402,6 +7436,12 @@ return array(
 			'es' => 'Los lugares de votación cierran a las 8 p. m. Si estás en la fila a esa hora, no te salgas. Te dejarán votar.',
 			'src' => 'https://docs.legis.wisconsin.gov/statutes/statutes/6/iii/78',
 			'checked' => '2026-10-21',
+		),
+		'sticker.tradition' => array(
+			'en' => 'Washington County’s clerk asked students in kindergarten through 12th grade to design the 2026 “I Voted” sticker. The top four designs were picked for the stickers at the November 3, 2026 general election.',
+			'es' => 'La secretaría del condado de Washington invitó a estudiantes de kínder a 12.º grado a diseñar el sticker de “I Voted” de 2026. Los cuatro mejores diseños se eligieron para los stickers de la elección general del 3 de noviembre de 2026.',
+			'src' => 'https://www.washcowisco.gov/news/i_voted_sticker_contest',
+			'checked' => '2026-10-26',
 		),
 		'election_day.hours' => array(
 			'en' => 'Polling places are open 7 a.m. to 8 p.m. local time.',

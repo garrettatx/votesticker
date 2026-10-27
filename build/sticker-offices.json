@@ -1,5 +1,5 @@
 {
- "_note": "Hand fields for office records, keyed by id. Only what the record's verified story or distribution quote says; minors by first name and school. Review: Oct 26, 2026, against the verified sticker facts (each checked on the official page Oct 21 to 24). Oct 26 part 5: the rest, from each record's quote; a pickup fact about a different county's sticker is split into <state>-<use>. Office left blank where the quote names none.",
+ "_note": "Hand fields for office records, keyed by id. Only what the record's verified story or distribution quote says; minors by first name and school. Review: Oct 26, 2026, against the verified sticker facts (each checked on the official page Oct 21 to 24). Oct 26 part 5: the rest, from each record's quote; a pickup fact about a different county's sticker is split into <state>-<use>. Office left blank where the quote names none. Oct 26 evening: NE, IN, AZ, WI added from the visibility loop's sticker stories (each official page read that day).",
  "ak-office": {
   "title": "Under One Aurora",
   "year": 2026,
@@ -515,6 +515,50 @@
   "selection": "Student contest, public vote",
   "elections": [
    "2025 and 2026 elections"
+  ],
+  "reviewed": true
+ },
+ "ne-office": {
+  "county": "Lancaster",
+  "designer": "Katie Nieland",
+  "office": "Lancaster County Election Commissioner",
+  "selection": "County's first I Voted and Future Voter sticker contest",
+  "year": 2026,
+  "elections": [
+   "2026 May primary",
+   "2026 November general"
+  ],
+  "reviewed": true
+ },
+ "in-office": {
+  "year": 2024,
+  "office": "Indiana Secretary of State",
+  "selection": "Student contest, grades K-12, first place in each grade group",
+  "elections": [
+   "2024 November general"
+  ],
+  "reviewed": true
+ },
+ "az-office": {
+  "county": "Maricopa",
+  "title": "Vote in the Desert",
+  "designer": "Jake, Brophy College Preparatory",
+  "office": "Maricopa County Recorder",
+  "selection": "County's first youth and adult contests; four winning designs",
+  "year": 2024,
+  "elections": [
+   "2024 July primary",
+   "2024 November general"
+  ],
+  "reviewed": true
+ },
+ "wi-office": {
+  "county": "Washington",
+  "office": "Washington County Clerk",
+  "selection": "Student contest, grades K-12; top four designs",
+  "year": 2026,
+  "elections": [
+   "2026 November general"
   ],
   "reviewed": true
  }

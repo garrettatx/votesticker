@@ -7,6 +7,10 @@
   "www.in.gov": {
    "en": "the Indiana Election Division",
    "es": "la División Electoral de Indiana (Indiana Election Division)"
+  },
+  "events.in.gov": {
+   "en": "the Indiana Secretary of State",
+   "es": "la Secretaría de Estado de Indiana"
   }
  },
  "dates": {
@@ -217,8 +221,12 @@
  },
  "sticker": {
   "tradition": {
-   "status": "missing",
-   "notes": "The only official page found is the call for entries to the 2024 Secretary of State I Voted Sticker Design Competition for K-12 students (https://www.in.gov/sos/2024-i-voted-sticker-design-competition: 'Compete to have YOUR sticker design used on Election Day!'). It doesn't name winners or say whether those designs are used in 2026, and no 2026 contest or sticker was found on in.gov."
+   "en": "In 2024 the Indiana Secretary of State held an I Voted sticker contest for students in kindergarten through 12th grade. The first-place design from each grade group was set to go on the stickers handed out on Election Day, November 5, 2024.",
+   "es": "En 2024, la Secretaría de Estado de Indiana organizó un concurso de stickers de “I Voted” para estudiantes de kínder a 12.º grado. El diseño ganador de cada grupo de grados iba a aparecer en los stickers del Día de las Elecciones, el 5 de noviembre de 2024.",
+   "src": "https://events.in.gov/event/secretary-of-state-diego-morales-announces-i-voted-sticker-contest-for-hoosier-youth",
+   "quote": "will be featured on stickers distributed to voters on Election Day, November 5.",
+   "checked": "2026-10-26",
+   "status": "verified"
   }
  },
  "faq": {
