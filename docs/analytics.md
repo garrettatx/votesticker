@@ -27,8 +27,10 @@ Search Console `sc-domain:votesticker.org`. Both are read by the shared service 
 
 | Event | When | Parameters |
 |---|---|---|
-| `sticker_save` | A sticker was saved: download started (Android, desktop), share sheet completed or press-and-hold shown (iPhone) | `state`, `sticker_source` (`ready_made`, `bespoke` from Oct 26, or `maker`), `design` (maker design id; `ready_1` and up for the state's own set, by gallery position; for bespoke, the design from the file name: `varsity`, `masthead`, `ring`, `type`, ...), `palette` and `message` (maker only), `save_method` (`download`, `share_sheet`, `press_hold`) |
-| `sticker_save_cancel` | iPhone share sheet closed without saving | same as `sticker_save`, `save_method` `cancelled` |
+| `sticker_builder_start` | First deliberate change to the maker on a page (from Oct 27): message, date line, layout, color, size or another option. Once per page load; rendering, defaults and remembered choices never send it | `state`, `first_action` (`message`, `date`, `layout`, `color`, `size`, `option`) |
+| `sticker_save` | A sticker was handed off: a download started (Android, desktop) or the iPhone share sheet's promise resolved. Not a confirmed save to Photos: the page can't see what the person picks in the sheet | `state`, `sticker_source` (`ready_made`, `bespoke` from Oct 26, `maker`, or `classic` on the home page), `design` (maker design id; `ready_1` and up for the state's own set, by gallery position; for bespoke, the design from the file name: `varsity`, `masthead`, `ring`, `type`, ...), `palette` and `message` (maker only), `save_method` (`download`, `share_sheet`), `attempt`, `prev_result` |
+| `sticker_save_cancel` | iPhone share sheet closed (AbortError) | same as `sticker_save`, `save_method` `cancelled` |
+| `sticker_hold_open` | The press-and-hold view opened instead (from Oct 27; before that it counted as `sticker_save`). Not a save | same as `sticker_save`, `save_method` `press_hold` (no file ready, or no file sharing) or `share_error` (the share sheet failed for a reason other than closing) |
 | `post_text_copy` | Copy post text | `state`, `message`, `post_variant` (`plan`, `short`, `friends`, `official`), `post_edited` (`yes`, `no`) |
 | `share` | Page link shared or copied | `method` (`share_sheet`, `copy_link`), `content_type` `page`, `item_id` (state or `hub`) |
 | `state_search_miss` | The state finder matched nothing (on Enter, Go or leaving the box; once per term per page) | `search_term` |
@@ -37,8 +39,23 @@ Message ids are per language: English `early`, `nov3`, `ivoted`, `voted`, `mail`
 `firsttime`, `futurevoter`; Spanish `votatemprano`, `vota3nov`, `voyavotar`, `yavote`, `yavotetemprano`,
 `votacorreo`, `yavotecorreo`, `miprimervoto`, `yotambien`. The page path tells the language.
 
-`press_hold` counts the picture being shown full screen. iOS doesn't report whether the person then
-saved it, so it is the closest available signal.
+### Measurement v2 (October 27, 2026)
+
+Compare saves before and after this date with care: from October 27, press and hold is its own event
+instead of a save, a second tap while the share sheet is open sends nothing (Safari rejected that second
+share, which used to count as a save), and a double click on a download within 1.5 seconds is one attempt.
+
+- **`attempt`** is `first`, `second` or `third_plus`: which save attempt this is on the current page load.
+- **`prev_result`** is the outcome of the previous attempt on the same page load: `none`, `download`,
+  `resolved` (share sheet resolved), `aborted` (sheet closed) or `hold` (press and hold shown). It answers
+  "how often does a cancel come before another try?" It does not show that the later try ended in Photos.
+- Both live in page memory only, reset on every load, and are never stored or sent anywhere else.
+- **What the site can't see:** what someone picks in the iPhone share sheet, whether a download reached
+  Photos or Files, and whether a press-and-hold ended in Save to Photos. Report these numbers as save
+  handoffs and attempts, never as confirmed saves.
+- **QA:** `scripts/qa_events.mjs` covers ready-made, bespoke and maker saves, a double click, share
+  resolved, closed, failed and unavailable, a cancel followed by a retry, a second tap while the sheet is
+  open, and saving with analytics blocked.
 
 ## The Share Loop
 
@@ -70,5 +87,6 @@ one row per change that could move traffic; add a row when something ships).
 
 ## Not Done Yet (Garrett, in GA4 and Search Console)
 
-In `docs/backlog.md` under Analytics: register the custom dimensions, mark `sticker_save` as a key
+Register the three October 27 parameters as event-scoped custom dimensions: `attempt`, `prev_result`,
+`first_action`. In `docs/backlog.md` under Analytics: register the custom dimensions, mark `sticker_save` as a key
 event, set data retention to 14 months, link GA4 to BigQuery, and turn on Search Console bulk export.

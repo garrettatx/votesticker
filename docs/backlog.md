@@ -2,6 +2,32 @@
 
 Open items, newest first. Started October 21, 2026. Move an item to `docs/history.md` when it ships.
 
+## Outside UX Reads, Deferred (October 27)
+
+Garrett shared four outside reads (home page, state page, picker, state switcher). Built Oct 27: maker
+grouped (preview, message, layout row, colors, Save; the rest under More options), one Tilt checkbox,
+"Election Day hours:" label, softer crop wording, FAQ save wording, a jump link to the voting facts,
+measurement v2 (`docs/analytics.md`). Deferred, each to be judged against GA4 and Search Console first:
+
+- **One picker for gallery and maker.** Pick a sticker, then Save or Customize it in one workspace.
+  Ready-made JPGs can't be edited (only the maker-drawn bespoke ones could open in the maker), and today
+  a gallery tap saves in one step; an inline reveal adds a tap. Revisit for 2028 with `sticker_builder_start` data.
+- **A message filter on the galleries** (I voted, I voted early, by mail) and four to six designs with
+  Show more. Gallery images are image-search assets; keep them in the HTML if collapsed.
+- **Home page order:** stickers first, one state path. Hold until the Oct 26 title and I Voted Early
+  section have two weeks of data (visibility loop item 1).
+- **Voting facts in expandable sections.** Not now: hours, ID and dates are what voters search for and
+  need at a glance this week. Consider for the post-election page.
+- **Fewer state-link groups at the bottom** of state pages. Measure clicks before cutting; they're
+  internal links.
+- **State switcher:** a labeled native select with a Go button above the state H1, preserving the
+  message. The finder near the bottom already does this by typing.
+- **Countdown hardening:** recompute "N days away" in the browser so a late daily build can't leave it a
+  day off.
+- **Wording the reads suggested and we kept:** Save to Photos (iPhone) over "Save or Share Image";
+  color swatches over a dropdown; the nudge "Send this page to someone who hasn't voted yet"; two hero
+  countdowns while early voting is open.
+
 ## Cover Photos and Maker Copy (October 26)
 
 Specs in `backlog/cover-photo-and-maker-copy/README.md`, not approved: a Cover photo output with

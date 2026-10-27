@@ -894,7 +894,7 @@ function vote_info( $st ) {
 	if ( 'post' === vote_phase() ) {
 		// After Election Day: the sticker, a ballot tracker only where the state has a verified one, and the
 		// state's official election page (docs/post-election-release.md). Nothing says a vote was counted.
-		$html = '<h2>' . vote_e( t( vote_between() ? 'Free I voted stickers' : 'Voted? Get your sticker.' ) ) . '</h2><p>' . vote_e( t( 'Pick a design and save it, or make your own.' ) ) . '</p>';
+		$html = '<h2>' . vote_e( t( vote_between() ? 'Free I Voted Stickers' : 'Voted? Get Your Sticker.' ) ) . '</h2><p>' . vote_e( t( 'Pick a design and save it, or make your own.' ) ) . '</p>';
 		$track = vote_between() ? null : vote_fact( $st, 'mail.track_url' );
 		if ( $track ) { $html .= '<p>' . vote_e( t( 'Returned a mail ballot? Check its status with your election office.' ) ) . ' <a href="' . vote_e( $track ) . '" target="_blank" rel="noopener">' . vote_e( t( 'Check my ballot status' ) ) . '</a></p>'; }
 		$off = vote_verified( $st ) ? $st['officialUrl'] : t( 'https://www.usa.gov/state-election-office' );
@@ -907,7 +907,7 @@ function vote_info( $st ) {
 			: '<h2>Vote by Nov 3</h2><p>We haven’t checked ' . vote_e( $name ) . '’s early voting dates yet, so these stickers say Election Day. Look up your dates and polling place at <a href="https://www.vote411.org/' . vote_slug( $st['name'] ) . '" target="_blank" rel="noopener">Vote411</a> (League of Women Voters) or your state election office.</p><p>' . $eday . '</p>' . vote_cal_link( $st );
 	}
 	$kind = $st['kind'];
-	$head = $es ? ( 'mail' === $kind ? 'Vota por correo' : ( in_array( $kind, array( 'none', 'ended' ), true ) ? 'Vota el Día de las Elecciones' : 'Vota temprano' ) ) : ( 'mail' === $kind ? 'Vote by mail' : ( in_array( $kind, array( 'none', 'ended' ), true ) ? 'Vote on Election Day' : 'Vote early' ) );
+	$head = $es ? ( 'mail' === $kind ? 'Vota por correo' : ( in_array( $kind, array( 'none', 'ended' ), true ) ? 'Vota el Día de las Elecciones' : 'Vota temprano' ) ) : ( 'mail' === $kind ? 'Vote by Mail' : ( in_array( $kind, array( 'none', 'ended' ), true ) ? 'Vote on Election Day' : 'Vote Early' ) );  // Title Case headings (Oct 27)
 	$sum = $es ? vote_sfield( $st, 'summary' ) : ( $st['summary'] ?? '' );
 	if ( $sum ) { $fact = vote_e( $sum ); }
 	elseif ( 'mail' === $kind ) { $fact = $es ? vote_e( $name ) . ' vota por correo. Devuelve tu boleta a más tardar el ' . vote_day( $st['end'] ) . '.' : vote_e( $name ) . ' votes by mail. Return your ballot by ' . vote_day( $st['end'] ) . '.'; }
@@ -918,7 +918,7 @@ function vote_info( $st ) {
 	$ret = 'mail' === $kind ? vote_fact( $st, 'dates.mail_return' ) : null;
 	if ( $ret ) {
 		// All-mail state with a verified return rule: the action first, said once (Washington review).
-		$html = '<h2>' . ( $es ? 'Firma el sobre y devuélvela' : 'Sign the envelope, then send it back' ) . '</h2><p>' . vote_e( $ret['text'] ) . '</p>';
+		$html = '<h2>' . ( $es ? 'Firma el sobre y devuélvela' : 'Sign the Envelope, Then Send It Back' ) . '</h2><p>' . vote_e( $ret['text'] ) . '</p>';
 		$srcs[] = $ret['src'];
 	} else {
 		$html = '<h2>' . $head . '</h2><p><b>' . $fact . '</b> ' . ( 'none' === $kind ? '' : $eday ) . '</p>';
@@ -927,7 +927,7 @@ function vote_info( $st ) {
 	}
 	// Hours and ID from the verified FAQ answers, as two short labeled lines.
 	$polls = vote_faq_raw( $st, 'polls' );
-	if ( $polls ) { $html .= '<p><b>' . vote_e( t( 'Hours:' ) ) . '</b> ' . vote_e( $polls[0] ) . '</p>'; $srcs[] = $polls[1]; }
+	if ( $polls ) { $html .= '<p><b>' . vote_e( t( 'Election Day hours:' ) ) . '</b> ' . vote_e( $polls[0] ) . '</p>'; $srcs[] = $polls[1]; }
 	$id = vote_faq_raw( $st, 'id' );
 	if ( $id ) { $html .= '<p><b>' . vote_e( t( 'ID:' ) ) . '</b> ' . vote_e( $id[0] ) . '</p>'; $srcs[] = $id[1]; }
 	$loc = vote_fact( $st, 'where.locator_url' );
@@ -1246,6 +1246,8 @@ $vote_ld = array(
 				<div class="hero-meta">
 					<?php if ( vote_verified( $vote_st ) ) : ?><a class="hero-meta__official" href="<?php echo vote_e( $vote_st['officialUrl'] ); ?>" target="_blank" rel="noopener"><?php echo vote_e( t( 'Official info: %s', $vote_st['officialLabel'] ) ); ?> <span aria-hidden="true">↗</span></a>
 					<?php else : ?><a class="hero-meta__official" href="https://www.vote411.org/<?php echo vote_slug( $vote_st['name'] ); ?>" target="_blank" rel="noopener"><?php echo vote_e( t( 'Check your dates at Vote411' ) ); ?> <span aria-hidden="true">↗</span></a><?php endif; ?>
+					<?php // A quiet jump to the voting facts (October 27): the link reads like the section heading it lands on. ?>
+					<a class="hero-meta__jump" href="#before-h"><?php echo vote_e( t( 'post' === vote_phase() ? 'Official Election Information' : ( vote_verified( $vote_st ) && 'mail' === $vote_st['kind'] ? 'How to Get Your Ballot In' : 'When, Where, and What to Bring' ) ) ); ?> <span aria-hidden="true">↓</span></a>
 					<?php echo $vote_share; ?>
 				</div>
 			</div>
@@ -1403,64 +1405,71 @@ $vote_ld = array(
 	<div id="maker"<?php echo $vote_st ? '' : ' hidden'; ?>>
 		<section class="gallery" id="gallery"<?php echo $vote_files ? '' : ' hidden'; ?> aria-labelledby="gallery-h">
 			<h2 id="gallery-h" class="display-h"><?php echo vote_e( $vote_st ? ( vote_early_now( $vote_st ) ? t( '%s I Voted and I Voted Early Stickers', vote_lname( $vote_st ) ) : t( preg_match( '/^[AEIOU]/', vote_lname( $vote_st ) ) ? 'Pick an %s Sticker' : 'Pick a %s Sticker', vote_lname( $vote_st ) ) ) : t( 'Ready-Made Stickers' ) ); ?></h2>
-			<p><?php echo vote_e( t( 'Tap a sticker to save it. The words stay inside the circle, so nothing gets cut off in your profile photo.' ) ); ?></p>
+			<p><?php echo vote_e( t( 'Tap a sticker to save it. The words stay inside the circle, so they fit a round profile photo.' ) ); ?></p>
 			<div class="grid grid--gallery" id="gallery-grid" style="--cols: <?php echo vote_cols( count( $vote_files ) ); ?>"><?php foreach ( $vote_files as $i => $src ) : ?><a class="tile" href="<?php echo vote_e( $src ); ?>" download="vote-<?php echo strtolower( $vote_abbr ) . '-' . ( $i + 1 ); ?>.jpg"><img src="<?php echo vote_e( $src ); ?>" alt="<?php echo vote_e( vote_alt( $src, $vote_st, $i ) ); ?>" width="1080" height="1080" loading="lazy"></a><?php endforeach; ?></div>
 			<?php echo vote_classic_link( $vote_st ); ?>
 		</section>
 
 		<?php $vote_maker_first = ! $vote_files; ?>
 		<h2 class="maker-h display-h<?php echo $vote_maker_first ? ' maker-h--first' : ''; ?>" id="maker-h"><?php echo vote_e( $vote_maker_first ? t( 'Make Your %s Sticker', $vote_st ? vote_lname( $vote_st ) : '' ) : t( 'Or Make Your Own' ) ); ?></h2>
-		<div class="controls controls--maker">
-			<label><?php echo vote_e( t( 'What should it say?' ) ); ?>
-				<select id="headline"></select>
-			</label>
-			<label><?php echo vote_e( t( 'Dates or extra text' ) ); ?>
-				<span class="date-row"><input id="date" maxlength="24" autocomplete="off" spellcheck="false"><button type="button" class="btn btn--quiet" id="date-reset"><?php echo vote_e( t( 'Reset dates' ) ); ?></button></span>
-			</label>
-		</div>
-
+		<?php // The maker, grouped (October 27, Garrett's call after two outside reads): preview, message, layout, colors and Save always show; the date line, size, finishes, angle, crop and file options sit under More options. On phones the layouts are one sideways row under the message. ?>
 		<div class="maker">
+			<div class="maker__preview" id="preview-wrap">
+				<div class="frame"><img id="preview" alt="<?php echo vote_e( t( 'Your profile picture' ) ); ?>" width="1080" height="1080"></div>
+				<?php // Profile-picture size (final-week item 3): the same image at 48 px, where friends see it in a feed (the 32 px copy left October 27, Garrett). A visual duplicate, so hidden from screen readers. ?>
+				<div class="tiny" id="tiny"><img src="data:," alt="" width="48" height="48" aria-hidden="true"><span><?php echo vote_e( t( 'How it appears as a profile picture' ) ); ?></span></div>
+			</div>
+			<div class="controls controls--maker maker__message">
+				<label><?php echo vote_e( t( 'What should it say?' ) ); ?>
+					<select id="headline"></select>
+				</label>
+			</div>
 			<section class="maker__designs" aria-labelledby="designs-h">
 				<h2 id="designs-h"><?php echo vote_e( t( 'Choose a Layout' ) ); ?></h2>
 				<p class="help designs-help"><?php echo vote_e( t( 'Every design fits inside a profile-picture circle.' ) ); ?></p>
 				<div class="grid" id="grid"></div>
 			</section>
-			<div class="maker__preview" id="preview-wrap">
-				<div class="sizes" role="group" aria-label="<?php echo vote_e( t( 'Picture size' ) ); ?>">
-					<button type="button" class="size" data-size="square" aria-pressed="true"><?php echo vote_e( t( 'Profile picture' ) ); ?></button>
-					<button type="button" class="size" data-size="portrait" aria-pressed="false"><?php echo vote_e( t( 'Post' ) ); ?></button>
-					<button type="button" class="size" data-size="story" aria-pressed="false"><?php echo vote_e( t( 'Story' ) ); ?></button>
-				</div>
-				<div class="frame"><img id="preview" alt="<?php echo vote_e( t( 'Your profile picture' ) ); ?>" width="1080" height="1080"></div>
-				<?php // Profile-picture size (final-week item 3): the same image at 48 and 32 px, where friends see it in a feed and in comments. A visual duplicate, so hidden from screen readers. ?>
-				<div class="tiny" id="tiny"><img src="data:," alt="" width="48" height="48" aria-hidden="true"><img src="data:," alt="" width="32" height="32" aria-hidden="true"><span><?php echo vote_e( t( 'How it looks as a profile picture' ) ); ?></span></div>
+			<div class="maker__finish">
 				<div class="colors">
-					<div class="swatches" id="swatches" role="group" aria-label="<?php echo vote_e( t( 'Colors' ) ); ?>"></div>
+					<p class="maker-label" id="colors-h"><?php echo vote_e( t( 'Colors' ) ); ?></p>
+					<div class="swatches" id="swatches" role="group" aria-labelledby="colors-h"></div>
 					<p class="swatch-name" id="swatch-name" aria-live="polite"></p>
-					<label class="check" id="rays-check"><input type="checkbox" id="rays"> <?php echo vote_e( t( 'Sunburst background' ) ); ?></label>
-				</div>
-				<div class="sizes tilts" id="tilts" role="group" aria-label="<?php echo vote_e( t( 'Angle' ) ); ?>">
-					<button type="button" class="size" data-tilt="straight" aria-pressed="true"><?php echo vote_e( t( 'Level' ) ); ?></button>
-					<button type="button" class="size" data-tilt="left" aria-pressed="false" aria-label="<?php echo vote_e( t( 'Tilt left' ) ); ?>"><?php echo vote_e( t( 'Tilt left' ) ); ?></button>
-					<button type="button" class="size" data-tilt="right" aria-pressed="false" aria-label="<?php echo vote_e( t( 'Tilt right' ) ); ?>"><?php echo vote_e( t( 'Tilt right' ) ); ?></button>
 				</div>
 				<p class="summary" id="summary"></p>
-				<label class="check" id="circle-check"><input type="checkbox" id="circle"> <?php echo vote_e( t( 'Show the profile-picture crop' ) ); ?></label>
-				<label class="check" id="round-check"><input type="checkbox" id="round"> <?php echo vote_e( t( 'Round sticker, no background (PNG)' ) ); ?></label>
 				<div class="actions">
 					<a class="btn" id="save" href="#" download aria-disabled="true"><?php echo vote_e( t( 'Download picture' ) ); ?></a>
 					<a class="link-quiet" id="open" href="#" target="_blank" rel="noopener"><?php echo vote_e( t( 'Open full image' ) ); ?></a>
-					<?php // Image description (final-week item 4): for people who add alt text when they post. ?>
-					<button type="button" class="link-quiet" id="copy-alt"><?php echo vote_e( t( 'Copy image description' ) ); ?></button>
 				</div>
 				<p class="hint" id="tip"></p>
 				<p class="hint after-save" id="after-save" hidden><?php echo vote_e( t( 'Curious where the I voted sticker came from?' ) ); ?> <a href="<?php echo vote_pbase() . VOTE_HISTORY_SLUG; ?>/"><?php echo vote_e( t( 'Read its history' ) ); ?></a></p>
 				<?php // After an I voted sticker is saved (final-week item 5): one more reminder to someone else. The button reuses the page's share link and its share event; not after Election Day. ?>
 				<?php if ( 'post' !== vote_phase() ) : ?><p class="hint after-save" id="nudge" hidden><?php echo vote_e( t( "Send this page to someone who hasn't voted yet." ) ); ?> <button type="button" class="link-quiet" id="nudge-share"><?php echo vote_e( t( 'Share the page' ) ); ?></button></p><?php endif; ?>
+				<details class="more" id="more">
+					<summary><?php echo vote_e( t( 'More options' ) ); ?></summary>
+					<?php // Oct 27, Garrett: on a phone the preview is out of view here, so a small live copy sticks to the corner while the options scroll. A visual duplicate, hidden from screen readers. ?>
+					<img class="more__thumb" id="more-thumb" src="data:," alt="" width="108" height="108" aria-hidden="true">
+					<label class="more__field"><?php echo vote_e( t( 'Dates or extra text' ) ); ?>
+						<span class="date-row"><input id="date" maxlength="24" autocomplete="off" spellcheck="false"><button type="button" class="btn btn--quiet" id="date-reset"><?php echo vote_e( t( 'Reset dates' ) ); ?></button></span>
+					</label>
+					<p class="maker-label" id="sizes-h"><?php echo vote_e( t( 'Picture size' ) ); ?></p>
+					<div class="sizes" role="group" aria-labelledby="sizes-h">
+						<button type="button" class="size" data-size="square" aria-pressed="true"><?php echo vote_e( t( 'Profile picture' ) ); ?></button>
+						<button type="button" class="size" data-size="portrait" aria-pressed="false"><?php echo vote_e( t( 'Post' ) ); ?></button>
+						<button type="button" class="size" data-size="story" aria-pressed="false"><?php echo vote_e( t( 'Story' ) ); ?></button>
+					</div>
+					<label class="check" id="rays-check"><input type="checkbox" id="rays"> <?php echo vote_e( t( 'Sunburst background' ) ); ?></label>
+					<?php // Angle (October 27): one checkbox, tilted left. Tilt right looked odd and was dropped. Hidden for designs that can't tilt. ?>
+					<label class="check" id="tilt-check"><input type="checkbox" id="tilt"> <?php echo vote_e( t( 'Tilt the sticker' ) ); ?></label>
+					<label class="check" id="circle-check"><input type="checkbox" id="circle"> <?php echo vote_e( t( 'Show the profile-picture crop' ) ); ?></label>
+					<?php // Oct 27, Garrett: "Round sticker, no background (PNG)" didn't say what it was for. ?>
+					<label class="check" id="round-check"><input type="checkbox" id="round"> <span><?php echo vote_e( t( 'Cut out the circle' ) ); ?><small><?php echo vote_e( t( 'See-through corners, so you can place it on a photo or story. Saves as a PNG.' ) ); ?></small></span></label>
+					<?php // Image description (final-week item 4): for people who add alt text when they post. ?>
+					<button type="button" class="link-quiet" id="copy-alt"><?php echo vote_e( t( 'Copy image description' ) ); ?></button>
+				</details>
 				<details class="post" open>
 					<summary><?php echo vote_e( t( 'Caption to share with your sticker' ) ); ?></summary>
 					<div class="post-picks" id="post-picks" role="group" aria-label="<?php echo vote_e( t( 'Post versions' ) ); ?>"><?php foreach ( VOTE_POST_VARIANTS as $vk => $vl ) : ?><button type="button" class="pick-chip" data-variant="<?php echo $vk; ?>" aria-pressed="<?php echo 'plan' === $vk ? 'true' : 'false'; ?>"><?php echo vote_e( t( $vl ) ); ?></button><?php endforeach; ?></div>
-					<textarea id="post-text" rows="7"<?php if ( $vote_st ) : ?> data-posts="<?php echo vote_e( vote_json( vote_post_all( $vote_st ) ) ); ?>"<?php endif; ?> aria-label="<?php echo vote_e( t( 'Caption to share with your sticker' ) ); ?>"><?php echo $vote_st ? vote_e( vote_post( $vote_st ) ) : ''; ?></textarea>
+					<textarea id="post-text" rows="5"<?php if ( $vote_st ) : ?> data-posts="<?php echo vote_e( vote_json( vote_post_all( $vote_st ) ) ); ?>"<?php endif; ?> aria-label="<?php echo vote_e( t( 'Caption to share with your sticker' ) ); ?>"><?php echo $vote_st ? vote_e( vote_post( $vote_st ) ) : ''; ?></textarea>
 					<button type="button" class="btn btn--quiet" id="copy"><?php echo vote_e( t( 'Copy caption and link' ) ); ?></button>
 				</details>
 			</div>
@@ -1522,7 +1531,7 @@ $vote_ld = array(
 	<?php endif; ?>
 
 	<nav class="states" aria-labelledby="states-h">
-		<h2 id="states-h"><?php echo vote_e( t( $vote_st ? 'All States' : 'Browse All States' ) ); ?></h2>
+		<h2 id="states-h"><?php echo vote_e( t( $vote_st ? 'All States' : 'I Voted Stickers by State' ) ); ?></h2>
 		<details class="states__all"<?php echo $vote_st ? '' : ' open'; ?>><summary><?php echo vote_e( t( 'Show all 50 states and DC' ) ); ?></summary>
 		<ul>
 			<?php foreach ( $vote_rows as $abbr => $row ) : ?>
@@ -1550,7 +1559,7 @@ $vote_ld = array(
 		<?php if ( ! $vote_st ) : // Home page only (visibility loop item 3, Oct 26): "how to get i voted sticker" sat at 9.3 on state pages. ?>
 		<details><summary><?php echo vote_e( t( 'Where can I get an I voted sticker?' ) ); ?></summary><p><?php echo vote_e( t( 'Most polling places hand one out after you vote. Each state or county picks its own design, so they vary from place to place. Voted by mail, or didn’t get one? Save a free digital sticker here: a classic one above, or one made for your state.' ) ); ?></p></details>
 		<?php endif; ?>
-		<details><summary><?php echo vote_e( t( 'How do I make it my profile picture?' ) ); ?></summary><p><?php echo vote_e( t( 'Tap Download picture, then open your profile settings in the app and choose the saved image as your photo. The design stays inside the circle that profile photos are cropped to.' ) ); ?></p></details>
+		<details><summary><?php echo vote_e( t( 'How do I make it my profile picture?' ) ); ?></summary><p><?php echo vote_e( t( 'Save your sticker (Save to Photos on iPhone, Download picture elsewhere), then open your profile settings in the app and choose the saved image as your photo. The design stays inside the circle that profile photos are cropped to.' ) ); ?></p></details>
 		<?php if ( 'post' === vote_phase() ) : ?>
 		<details><summary><?php echo vote_e( t( 'Can I still get an I voted sticker after the election?' ) ); ?></summary><p><?php echo vote_e( t( 'Yes. Save a free sticker, or make one with your own picture. The designs stay up after Election Day.' ) ); ?></p></details>
 		<details><summary><?php echo vote_e( t( 'I voted early or by mail. Which sticker should I use?' ) ); ?></summary><p><?php echo vote_e( t( 'Pick the one that fits: I voted, I voted early or I voted by mail. They are all under What should it say?' ) ); ?></p></details>

@@ -199,3 +199,16 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
   under each state gallery; the home FAQ is up; NE, IN, AZ and WI show their stories. LA ("Early Voting
   Oct 20–27") and PA ("Through Oct 27") still read open today as they should; tomorrow's build is their
   first ended day. Next: Oct 28 check for LA and PA, Oct 29 Search Console look.
+- **Oct 27, afternoon: maker, measurement and content fixes (push 2 of the day).** From Garrett's questions
+  and four outside UX reads (deferred ideas and pushback in `docs/backlog.md`). GA4 (Oct 26 to 27, after
+  source tagging began): about 2 to 3 percent of visits save a maker sticker, about 8 percent a ready-made.
+  Built: the grouped maker (preview, message, a sideways layout row on phones, colors, Save; the rest under
+  More options with a sticky live thumbnail on phones), one Tilt checkbox, "Cut out the circle" with a
+  plain explanation, measurement v2 (`docs/analytics.md`), "Election Day hours:" on every state's info
+  block (it sat under "Vote early" as if it were early voting hours), the vote-by-mail summary bug (CA, CO,
+  HI, OR, WA showed "ID: Official info" above Save and in the preview alt text), Title Case info headings,
+  spacing fixes found by a gap audit at 390, 820 and 1024 px (a 514 px blank under the caption at 1024),
+  the home "I Voted Stickers by State" heading. QA: facts, Spanish, SEO, events (new cases: double click,
+  retry after cancel, open-sheet tap, share error, analytics blocked), save, devices (one WebKit prefetch
+  flake on iPad Mini, passed on rerun), cards (0 outside the safe circle); the download stays the full
+  1080 square. Garrett to register `attempt`, `prev_result`, `first_action` in GA4.

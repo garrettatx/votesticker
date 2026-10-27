@@ -107,7 +107,7 @@ return array(
 	// Page and maker strings, keyed by the English. %s marks a value filled in by the code.
 	't' => array(
 		// Election Day banner and post-election copy (October 25).
-		'Voted? Get your sticker.' => '¿Ya votaste? Consigue tu sticker.',
+		'Voted? Get your sticker.' => '¿Ya votaste? Consigue tu sticker.', 'Voted? Get Your Sticker.' => '¿Ya votaste? Consigue tu sticker.',
 		'Pick a design and save it, or make your own.' => 'Escoge un diseño y guárdalo, o crea el tuyo.',
 		'Returned a mail ballot? Check its status with your election office.' => '¿Devolviste una boleta por correo? Revisa su estado con tu oficina electoral.',
 		'Check my ballot status' => 'Revisar el estado de mi boleta',
@@ -118,7 +118,7 @@ return array(
 		'Official election information' => 'Información electoral oficial',
 		'Official Election Information' => 'Información electoral oficial',
 		'Check or Fix Your Mail Ballot' => 'Revisa o corrige tu boleta por correo',
-		'Free I voted stickers' => 'Stickers de Ya voté, gratis',
+		'Free I voted stickers' => 'Stickers de Ya voté, gratis', 'Free I Voted Stickers' => 'Stickers de Ya voté, gratis',
 		'Free I voted stickers for every state' => 'Stickers de Ya voté gratis para cada estado',
 		'Already returned it? Track your ballot.' => '¿Ya la devolviste? Sigue tu boleta.',
 		'Already voted? Get your sticker.' => '¿Ya votaste? Consigue tu sticker.',
@@ -193,6 +193,10 @@ return array(
 		'Story' => 'Historia',
 		'Post' => 'Publicación',
 		'Angle' => 'Ángulo',
+		'More options' => 'Más opciones',
+		'Cut out the circle' => 'Recortar el círculo',
+		'See-through corners, so you can place it on a photo or story. Saves as a PNG.' => 'Esquinas transparentes, para ponerlo sobre una foto o historia. Se guarda como PNG.',
+		'Tilt the sticker' => 'Inclinar el sticker',
 		'Level' => 'Recto',
 		'Tilt left' => 'Inclinar a la izquierda',
 		'Tilt right' => 'Inclinar a la derecha',
@@ -221,6 +225,7 @@ return array(
 		'Next state' => 'Estado siguiente',
 		'All States' => 'Todos los estados',
 		'Browse All States' => 'Explora todos los estados',
+		'I Voted Stickers by State' => 'Stickers de Ya voté por estado',
 		// FAQ
 		'Common Questions' => 'Preguntas frecuentes',
 		'Is this an official election site?' => '¿Es un sitio electoral oficial?',
@@ -237,14 +242,14 @@ return array(
 		// Garrett's Texas review (October 21): headings the way people search, one source line per section.
 		'Pick a %s Sticker' => 'Elige un sticker de %s',
 		'Pick an %s Sticker' => 'Elige un sticker de %s',
-		'Tap a sticker to save it. The words stay inside the circle, so nothing gets cut off in your profile photo.' => 'Toca un sticker para guardarlo. El texto queda dentro del círculo, así que nada se corta en tu foto de perfil.',
+		'Tap a sticker to save it. The words stay inside the circle, so they fit a round profile photo.' => 'Toca un sticker para guardarlo. El texto queda dentro del círculo, así que cabe en una foto de perfil redonda.',
 		'%s vote sticker, ready-made design %s' => 'Sticker para votar de %s, diseño %s',
 		'When, Where, and What to Bring' => 'Cuándo, dónde y qué llevar',
 		'Key Dates for Nov. 3' => 'Fechas clave para el 3 de nov',
 		'Where You Can Vote' => 'Dónde puedes votar', 'What ID to Bring' => 'Qué identificación llevar', 'Who Can Vote by Mail' => 'Quién puede votar por correo',
 		'Phones, Photos, and Campaign Gear' => 'Teléfonos, fotos y propaganda', 'Questions People Ask' => 'Preguntas que hace la gente',
 		'Last checked %s.' => 'Última revisión: %s.', 'Answers come from official %s sources.' => 'Las respuestas vienen de fuentes oficiales de %s.',
-		'Already registered? Check here' => '¿Ya estás registrado? Revísalo aquí', 'Find my polling place' => 'Buscar mi lugar de votación', 'Hours:' => 'Horario:', 'ID:' => 'Identificación:',
+		'Already registered? Check here' => '¿Ya estás registrado? Revísalo aquí', 'Find my polling place' => 'Buscar mi lugar de votación', 'Hours:' => 'Horario:', 'Election Day hours:' => 'Horario el Día de las Elecciones:', 'ID:' => 'Identificación:',
 		'Show all 50 states and DC' => 'Ver los 50 estados y DC',
 		'Need a fast, useful tool for your business?' => '¿Necesitas una herramienta rápida y útil para tu negocio?', 'Garrett Digital builds them.' => 'Garrett Digital las construye.',
 		// Voting guide sections (October 21; build/state-facts/).
@@ -276,7 +281,7 @@ return array(
 		'Pick the one that fits: I voted, I voted early or I voted by mail. They are all under What should it say?' => 'El que te quede: Ya voté, Ya voté temprano o Ya voté por correo. Todos están en ¿Qué quieres que diga?',
 		'After you vote. Under What should it say?, choose I voted, or I voted early or I voted by mail if that fits.' => 'Después de votar. En ¿Qué quieres que diga?, elige Ya voté, o Ya voté temprano o Ya voté por correo, según cómo hayas votado.',
 		'How do I make it my profile picture?' => '¿Cómo uso mi sticker como foto de perfil?',
-		'Tap Download picture, then open your profile settings in the app and choose the saved image as your photo. The design stays inside the circle that profile photos are cropped to.' => 'Toca Descargar imagen, abre la configuración de tu perfil en la app y elige la imagen guardada como tu foto. El diseño queda dentro del círculo al que se recortan las fotos de perfil.',
+		'Save your sticker (Save to Photos on iPhone, Download picture elsewhere), then open your profile settings in the app and choose the saved image as your photo. The design stays inside the circle that profile photos are cropped to.' => 'Guarda tu sticker (Guardar en Fotos en iPhone, Descargar imagen en otros equipos), luego abre la configuración de tu perfil en la app y elige la imagen guardada como tu foto. El diseño queda dentro del círculo al que se recortan las fotos de perfil.',
 		'No. Your sticker is created in your browser and never uploaded.' => 'No. Tu sticker se crea en tu navegador y nunca se sube.',
 		// Footer
 		'This tool is nonpartisan.' => 'Esta herramienta no es partidista.',
@@ -453,7 +458,7 @@ return array(
 		'Don’t see your state? See all 50 states and DC' => '¿No ves tu estado? Ver los 50 estados y DC',
 		'Planning help on VOTE411, from the nonpartisan League of Women Voters Education Fund.' => 'Ayuda para planear en VOTE411, de la organización no partidista League of Women Voters Education Fund (en inglés).',
 		'Planning help from %s.' => 'Ayuda para planear de %s.',
-		'How it looks as a profile picture' => 'Así se ve como foto de perfil',
+		'How it appears as a profile picture' => 'Así se ve como foto de perfil',
 		'Copy image description' => 'Copiar descripción de la imagen',
 		'Sticker in %s for %s reading %s.' => 'Sticker en %s para %s que dice: %s.',
 		'Sticker in %s state colors reading %s.' => 'Sticker con los colores de %s que dice: %s.',

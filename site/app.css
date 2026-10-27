@@ -136,8 +136,8 @@ h2 { margin: 0 0 var(--s3); color: var(--ink); font-size: var(--fs-h3); line-hei
 .jump .btn--line:hover { background: var(--cream); border-color: var(--cream); color: var(--ink); }
 .hero-meta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s2) var(--s4); margin-top: var(--s4); }
 .hero-meta .share { margin: 0; }
-.hero-meta__official { color: var(--band-text); font-size: var(--fs-sm); font-weight: 600; text-decoration: none; }
-.hero-meta__official:hover { color: var(--cream); text-decoration: underline; }
+.hero-meta__official, .hero-meta__jump { color: var(--band-text); font-size: var(--fs-sm); font-weight: 600; text-decoration: none; }
+.hero-meta__official:hover, .hero-meta__jump:hover { color: var(--cream); text-decoration: underline; }
 
 /* Copy-link button: outline that fills on hover. */
 .share { margin: var(--s5) 0 0; }
@@ -191,6 +191,7 @@ select, input, textarea {
 select:hover, input:hover, textarea:hover { border-color: #A79D86; }
 .date-row { display: flex; gap: var(--s2); }
 .date-row input { flex: 1; min-width: 0; text-transform: uppercase; }
+@media (max-width: 400px) { .date-row { flex-wrap: wrap; } .date-row input { flex-basis: 100%; } }  /* the Spanish Reset button squeezed the dates to "19–30 OC" at 320 px */
 
 .btn {
 	display: inline-flex;
@@ -280,6 +281,7 @@ select:hover, input:hover, textarea:hover { border-color: #A79D86; }
 /* ------------------------------------------------------------------ */
 .gallery { margin: 0 0 var(--s7); }
 .gallery p { margin: 0 0 var(--s4); }
+.gallery p.gallery__classic { margin: var(--s4) 0 0; }  /* Garrett, Oct 27: a bit more room above the classic link, less below */
 .grid.grid--gallery { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: var(--s4); }
 @media (min-width: 860px) { .grid.grid--gallery { grid-template-columns: repeat(var(--cols, 5), minmax(0, 1fr)); gap: 20px; } }
 
@@ -288,13 +290,42 @@ select:hover, input:hover, textarea:hover { border-color: #A79D86; }
 #gallery { padding-top: var(--s6); scroll-margin-top: var(--s4); }
 .before-h { margin: var(--s7) 0 var(--s4); padding-top: var(--s6); border-top: 1px solid var(--line); }
 .discover__find { padding-bottom: var(--s5); border-bottom: 1px solid var(--line-strong); }
-.controls--maker { margin: 0 0 var(--s5); }
-.maker { display: grid; gap: var(--s6); }
-@media (min-width: 860px) {
-	.maker { grid-template-columns: minmax(320px, 420px) 1fr; align-items: start; }
-	.maker__preview { position: sticky; top: var(--s4); order: 1; }
-	.maker__designs { order: 2; }
+/* The maker (October 27): phones read preview, message, a sideways row of layouts, then colors and Save.
+   Desktop keeps the preview column on the left and the layout grid on the right. */
+.controls--maker { margin: 0; display: block; }
+.maker { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s5); }  /* minmax(0): the sideways layout row must not widen the page */
+.maker__finish .colors { margin-top: 0; }
+@media (max-width: 859px) {
+	.maker__preview .frame { max-width: 300px; margin: 0 auto; }
+	.maker__preview .tiny { justify-content: center; }
+	.maker__designs .designs-help { margin-bottom: var(--s2); }
+	/* About three and a half layouts in view, so the row reads as one you can scroll. */
+	#grid { display: flex; overflow-x: auto; gap: 10px; padding: 2px 2px var(--s2); scroll-snap-type: x proximity; -webkit-overflow-scrolling: touch; }
+	#grid .tile { flex: 0 0 30%; scroll-snap-align: start; }
 }
+@media (min-width: 600px) and (max-width: 859px) { #grid .tile { flex-basis: 20%; } .maker__preview .frame { max-width: 340px; } }  /* tablets: five in view, not three oversized */
+@media (min-width: 860px) {
+	.maker { grid-template-columns: minmax(320px, 420px) 1fr; grid-template-rows: auto auto 1fr; grid-template-areas: "preview designs" "message designs" "finish designs"; align-items: start; column-gap: var(--s6); }
+	.maker__preview { grid-area: preview; }
+	.maker__message { grid-area: message; }
+	.maker__finish { grid-area: finish; }
+	.maker__designs { grid-area: designs; }
+	/* Three layouts a row from 860 px, so the grid isn't twice as tall as the preview column (514 px of blank under the caption at 1024 before Oct 27). */
+	#grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+}
+.maker-label { margin: 0 0 var(--s2); font-weight: 700; font-size: var(--fs-sm); color: var(--ink); }
+.more { margin-top: var(--s4); border-top: 1px solid var(--line); padding-top: var(--s3); }
+.more + .post { margin-top: var(--s3); }  /* Oct 27: less air under a closed More options */
+.more summary { cursor: pointer; font-weight: 700; color: var(--ink); }
+.more[open] summary { margin-bottom: var(--s3); }
+.more__thumb { float: right; position: sticky; top: var(--s3); width: 108px; height: auto; margin: 0 0 var(--s3) var(--s3); background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 4px; }
+.as-circle:not(.is-story) .more__thumb { border-radius: 50%; }
+.more__thumb[src="data:,"] { visibility: hidden; }
+.more::after { content: ""; display: block; clear: both; }
+@media (min-width: 860px) { .more__thumb { display: none; } }  /* desktop keeps the preview column in view */
+.more__field { display: flex; flex-direction: column; gap: var(--s2); margin: 0 0 var(--s4); font-weight: 700; font-size: var(--fs-sm); }
+.more .link-quiet { padding-left: 0; }
+.check[hidden] { display: none; }
 .maker__designs h2 { font-size: var(--fs-h3); }
 .has-gallery .maker__designs h2 { font-size: var(--fs-lg); }
 .designs-help { margin: calc(var(--s2) * -1) 0 var(--s3); }
@@ -306,17 +337,18 @@ select:hover, input:hover, textarea:hover { border-color: #A79D86; }
 .sizes { display: flex; gap: var(--s2); margin-bottom: var(--s3); flex-wrap: wrap; }
 .size { flex: 1; min-height: 44px; padding: 8px 12px; border: 2px solid var(--ink); border-radius: var(--radius); background: transparent; color: var(--ink); font: inherit; font-weight: 700; font-size: var(--fs-sm); cursor: pointer; }
 .size[aria-pressed="true"] { background: var(--ink); color: #fff; }
-.summary { margin: var(--s3) 0 0; font-size: var(--fs-sm); }
+.summary { margin: var(--s3) 0 var(--s4); font-size: var(--fs-sm); }  /* Oct 27: the state line sat flush on the Save button */
 .is-story .frame img { border-radius: 0 !important; max-height: 70vh; max-width: 100%; width: auto; margin: 0 auto; }  /* max-width: Story ran 14 px past a 390 px screen before October 26 */
 .tiny { display: flex; align-items: center; gap: var(--s3); margin: var(--s3) 0 0; color: var(--muted); font-size: var(--fs-sm); }
 .tiny img { border-radius: 50%; flex: none; box-shadow: 0 0 0 1px var(--line); }
 .tiny img[src="data:,"] { visibility: hidden; }
 .is-story .tiny { display: none; }
 .is-story #circle-check, .is-story #round-check { display: none; }
-#round-check { margin-top: calc(-1 * var(--s2)); }
 
 .check { display: flex; gap: 10px; align-items: center; margin: var(--s3) 0; font-size: var(--fs-sm); }
 .check input { width: 20px; height: 20px; min-height: 0; }
+.check small { display: block; color: var(--muted); font-size: var(--fs-xs); line-height: 1.4; margin-top: 2px; }
+#round-check { align-items: flex-start; } #round-check input { margin-top: 2px; }
 
 .actions { display: flex; flex-wrap: wrap; gap: 10px; }
 .hint { color: var(--muted); font-size: var(--fs-sm); margin: var(--s3) 0 0; }
@@ -326,8 +358,8 @@ select:hover, input:hover, textarea:hover { border-color: #A79D86; }
 .post { margin-top: var(--s5); border-top: 1px solid var(--line); padding-top: var(--s4); }
 .post summary { cursor: pointer; font-weight: 700; color: var(--ink); min-height: 28px; }
 .post[open] { display: flex; flex-direction: column; gap: var(--s2); }
-.post .btn { align-self: flex-start; }
-.post-picks { display: flex; flex-wrap: wrap; gap: 6px; }
+.post .btn { align-self: flex-start; margin-top: var(--s2); }
+.post-picks { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: var(--s2); }  /* Garrett, Oct 27: more room before the caption box */
 .pick-chip { min-height: 40px; padding: 6px 14px; border: 2px solid var(--line-strong); border-radius: 999px; background: transparent; color: var(--ink); font: inherit; font-size: var(--fs-sm); font-weight: 700; cursor: pointer; }
 .pick-chip:hover { border-color: var(--ink); }
 .pick-chip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: #fff; }
@@ -441,8 +473,11 @@ select:hover, input:hover, textarea:hover { border-color: #A79D86; }
 .guide__list li { margin: 0 0 6px; break-inside: avoid; }
 .guide__src { margin-top: 0; }
 .guide__more a { font-weight: 700; }
+.info p.guide__more { margin-top: var(--s3); }  /* Oct 27: it sat flush under the polling-place card */
 .cite { display: block; margin: var(--s2) 0 0; font-size: var(--fs-xs); color: var(--muted); }
 .guide .cite { margin-top: 0; }
+.guide .dates + .cite { margin-top: var(--s2); }  /* Oct 27: the source line sat flush under the dates table */
+.hint:empty { display: none; }
 .cite a { color: var(--muted); }
 .dates { width: 100%; border-collapse: collapse; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden; }
 .dates th, .dates td { padding: 16px 18px; text-align: left; vertical-align: top; border-top: 1px solid var(--line); }
@@ -737,17 +772,14 @@ body.is-holding { overflow: hidden; }
 .link-quiet { display: inline-flex; align-items: center; }
 button.link-quiet { background: none; border: 0; color: var(--ink); font: inherit; font-size: var(--fs-sm); font-weight: 700; cursor: pointer; }
 button.link-quiet:hover { text-decoration: underline; }
-.post summary, .states__all summary, .faq summary { min-height: 44px; padding: 8px 0; box-sizing: border-box; }
+.post summary, .more summary, .states__all summary, .faq summary { min-height: 44px; padding: 8px 0; box-sizing: border-box; }
 .faq summary { padding: 0; }
 .near li { padding: 0; }
 .near li a { display: block; padding: 12px 0 7px; }
 .near li span { margin-top: -4px; padding-bottom: var(--s2); }
-.foot__links a, .hero-meta__official { display: inline-block; padding: 11px 0; margin: -11px 0; }
+.foot__links a, .hero-meta__official, .hero-meta__jump { display: inline-block; padding: 11px 0; margin: -11px 0; }
 
 /* Angle control (October 26): the size buttons' look, a little space above. */
-.tilts { margin: var(--s3) 0 0; }
-.tilts .size { padding-inline: 8px; white-space: nowrap; }
-.tilts[hidden] { display: none; }
 
 /* Guide type (October 26): the state guides and FAQ answers are the longest reading on the site, mostly
    on phones. 17 px with a 1.6 line height everywhere (body text is 16 px under 600 px), and paragraphs
@@ -764,4 +796,4 @@ button.link-quiet:hover { text-decoration: underline; }
 /* Size buttons (October 26): purpose labels ("Profile picture", "Foto de perfil") wrap on small phones;
    equal widths, and smaller text under 400 px so each stays on one or two lines. */
 .sizes .size { flex: 1 1 0; min-width: 0; }
-@media (max-width: 400px) { .sizes .size, .tilts .size { font-size: var(--fs-xs); padding-inline: 6px; } }
+@media (max-width: 400px) { .sizes .size { font-size: var(--fs-xs); padding-inline: 6px; } }

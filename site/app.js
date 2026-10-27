@@ -1453,7 +1453,7 @@
 	var TIPS = {
 		ios: SHARE_TO_PHOTOS ? T('Tap Save to Photos, then Save Image. Then set it as your profile picture from Photos.') : T('Press and hold the picture, then tap Save to Photos.'),
 		android: T('The picture saves to your Downloads. Set it as your profile picture from there.'),
-		desktop: T('The picture saves to your Downloads folder.')
+		desktop: ''  // Oct 27: browsers can ask where to save or use another folder, so no promise about Downloads
 	};
 
 	// The picture full screen, for press and hold. One overlay, reused.
@@ -1484,31 +1484,61 @@
 
 	// Save a picture on iOS: the share sheet when it can take the file, else press and hold. `blob` may be
 	// null when the file isn't in hand yet (a ready-made still loading); the share sheet needs it within
-	// the tap, so then it goes straight to press and hold. `done(method)` reports how it ended: share_sheet,
-	// press_hold, or cancelled (the sheet closed). Returns how it started, for QA.
+	// the tap, so then it goes straight to press and hold. `done(method)` reports how it ended: share_sheet
+	// (the sheet's promise resolved), cancelled (AbortError), share_error (any other failure; press and hold
+	// opens) or press_hold (no file or no sharing). Returns how it started, for QA: share, hold, or busy when
+	// a sheet is already open (Safari rejects a second share() then, which used to count as a save).
+	var sharing = false;
 	function saveOnIOS(blob, name, src, alt, done) {
 		done = done || function () {};
+		if (sharing) { return 'busy'; }
 		if (blob && canShareFile(blob.type)) {
 			var file = new File([blob], name, { type: blob.type });
-			navigator.share({ files: [file] }).then(function () { done('share_sheet'); }, function (err) {
-				// Closing the share sheet is not an error; anything else gets press and hold.
+			var fallback = function (err) {
+				sharing = false;
+				// Closing the share sheet is not an error and gets nothing more; anything else gets press and hold.
 				if (err && err.name === 'AbortError') { done('cancelled'); return; }
 				holdToSave(src, alt);
-				done('press_hold');
-			});
+				done('share_error');
+			};
+			sharing = true;
+			try {
+				navigator.share({ files: [file] }).then(function () { sharing = false; done('share_sheet'); }, fallback);
+			} catch (err) { fallback(err); }
 			return 'share';
 		}
 		holdToSave(src, alt);
 		done('press_hold');
 		return 'hold';
 	}
-	// One sticker_save per picture someone saved. On iPhone a closed share sheet is sticker_save_cancel
-	// instead, so the save count stays real and the cancel rate shows whether the share sheet works.
+	// Measurement v2 (October 27): what the page can see, never a confirmed save to Photos. sticker_save is
+	// the picture handed off (a download started, or the iPhone share sheet's promise resolved);
+	// sticker_save_cancel the sheet closed; sticker_hold_open the press-and-hold view shown, which is not a
+	// save. Each carries attempt (first, second, third_plus on this page) and prev_result (the last attempt's
+	// outcome on this page: none, download, resolved, aborted, hold), kept in memory only.
+	var tries = 0, lastResult = 'none', lastDownload = { key: '', at: 0 };
+	var RESULT = { download: 'download', share_sheet: 'resolved', cancelled: 'aborted', share_error: 'hold', press_hold: 'hold' };
 	function saved(params) {
 		return function (method) {
+			// A double click on a download link starts the same file twice: one attempt.
+			var key = [params.sticker_source, params.design, params.palette, params.message].join('|');
+			if (method === 'download' && key === lastDownload.key && Date.now() - lastDownload.at < 1500) { return; }
+			lastDownload = method === 'download' ? { key: key, at: Date.now() } : { key: '', at: 0 };
+			tries++;
 			params.save_method = method;
-			track(method === 'cancelled' ? 'sticker_save_cancel' : 'sticker_save', params);
+			params.attempt = tries === 1 ? 'first' : tries === 2 ? 'second' : 'third_plus';
+			params.prev_result = lastResult;
+			lastResult = RESULT[method] || 'hold';
+			track(method === 'cancelled' ? 'sticker_save_cancel' : RESULT[method] === 'hold' ? 'sticker_hold_open' : 'sticker_save', params);
 		};
+	}
+	// The first deliberate change to the maker on this page (message, date, layout, color, size or another
+	// option), once per page load. Rendering, defaults and remembered choices never send it.
+	var builderStarted = false;
+	function builderStart(action) {
+		if (builderStarted) { return; }
+		builderStarted = true;
+		track('sticker_builder_start', { state: state.state, first_action: action });
 	}
 	function afterSave() {
 		// After the picture is on its way, one quiet line about the sticker's history (never before).
@@ -1615,7 +1645,7 @@
 		dateEdited: false,
 		// A design saved before it left the row falls back to the default (October 26).
 		design: DESIGNS.some(function (d) { return d.id === load('design3', 'tilt'); }) ? load('design3', 'tilt') : 'tilt',
-		tilt: load('tilt', 'straight'),
+		tilt: load('tilt', 'straight') === 'straight' ? 'straight' : 'left',  // Tilt right left the maker October 27
 		palette: load('palette3', 'plum'),
 		dateText: '',
 		circle: load('circle', true),
@@ -1677,11 +1707,11 @@
 		});
 	}
 	function setTilts() {
-		var box = $('tilts');
+		var box = $('tilt-check');
 		if (!box || !state.state) { return; }
 		var st = byAbbr[state.state];
 		box.hidden = hasDecor(LAYOUTS[state.design](st, paletteFor(state.palette, st), headlineLines(state.headline, st), ''));
-		Array.prototype.forEach.call(box.querySelectorAll('[data-tilt]'), function (x) { x.setAttribute('aria-pressed', String(x.dataset.tilt === state.tilt)); });
+		$('tilt').checked = state.tilt !== 'straight';
 	}
 	function drawSwatches() {
 		var st = byAbbr[state.state];
@@ -1736,7 +1766,7 @@
 			current.url = URL.createObjectURL(blob);
 			current.name = 'vote-early-' + state.state.toLowerCase() + '-' + state.design + '-' + state.palette + (state.tilt === 'straight' ? '' : '-' + state.tilt) + (state.rays ? '-sunburst' : '') + (state.size === 'square' ? (round ? '-round' : '') : '-' + state.size) + '.png';
 			$('preview').src = current.url;
-			Array.prototype.forEach.call(document.querySelectorAll('#tiny img'), function (img) { img.src = current.url; });
+			Array.prototype.forEach.call(document.querySelectorAll('#tiny img, #more-thumb'), function (img) { img.src = current.url; });
 			link.href = current.url;
 			link.download = current.name;
 			$('open').href = current.url;
@@ -1767,8 +1797,13 @@
 		headSel.value = state.headline;
 		if (!keepDate) { state.dateText = defaultDateLine(st, state.headline); state.dateEdited = false; }
 		$('date').value = state.dateText;
-		var lead = $('info').querySelector('b');
-		var plain = st.status === 'verified' && lead ? lead.textContent + ' ' + T('Official info: ') + st.officialLabel : nameOf(st) + ': ' + T('Election Day is %s.', T(ELECTION.label));
+		// The state's lead fact is the bold sentence opening the info block. Vote-by-mail states have none, and
+		// their first bold text is the "ID:" label, which read "ID: Official info: sos.oregon.gov" here and in
+		// the preview's alt text until October 27 (CA, CO, HI, OR, WA).
+		var lead = $('info').querySelector('h2 + p > b:first-child');
+		if (lead && /:\s*$/.test(lead.textContent)) { lead = null; }
+		var plain = st.status === 'verified' && lead ? lead.textContent + ' ' + T('Official info: ') + st.officialLabel
+			: nameOf(st) + ': ' + T('Election Day is %s.', T(ELECTION.label)) + (st.status === 'verified' ? ' ' + T('Official info: ') + st.officialLabel : '');
 		$('summary').textContent = plain;
 		setAlt();
 		showGallery(st);
@@ -1867,6 +1902,7 @@
 		buildSwatches();
 
 		headSel.addEventListener('change', function () {
+			builderStart('message');
 			state.headline = headSel.value;
 			setPost();
 			// The date line follows the headline until someone types their own.
@@ -1874,10 +1910,11 @@
 			setAlt();
 			redraw();
 		});
-		$('date').addEventListener('input', function () { state.dateText = $('date').value; state.dateEdited = true; redraw(); });
+		$('date').addEventListener('input', function () { builderStart('date'); state.dateText = $('date').value; state.dateEdited = true; redraw(); });
 		$('date-reset').addEventListener('click', function () { showState(state.state); });
 		Array.prototype.forEach.call(document.querySelectorAll('[data-size]'), function (b) {
 			b.addEventListener('click', function () {
+				builderStart('size');
 				state.size = b.dataset.size;
 				Array.prototype.forEach.call(document.querySelectorAll('[data-size]'), function (x) { x.setAttribute('aria-pressed', String(x === b)); });
 				document.body.classList.toggle('is-story', state.size !== 'square');  // any tall size: no circle crop
@@ -1885,16 +1922,19 @@
 			});
 		});
 		$('rays').addEventListener('change', function () {
+			builderStart('option');
 			state.rays = $('rays').checked;
 			save('rays', state.rays);
 			redraw();
 		});
 		$('round').addEventListener('change', function () {
+			builderStart('option');
 			state.round = $('round').checked;
 			save('round', state.round);
 			drawPreview();
 		});
 		$('circle').addEventListener('change', function () {
+			builderStart('option');
 			state.circle = $('circle').checked;
 			save('circle', state.circle);
 			document.body.classList.toggle('as-circle', state.circle);
@@ -1902,6 +1942,7 @@
 		$('grid').addEventListener('click', function (e) {
 			var b = e.target.closest('.tile');
 			if (!b) { return; }
+			builderStart('layout');
 			// What the tile shows is what you get: the design in its own palette. The swatches recolor it.
 			state.design = b.dataset.design;
 			state.palette = designOf(state.design).palette;
@@ -1914,18 +1955,17 @@
 			var top = $('preview').getBoundingClientRect().top;
 			if (top < 0 || top > window.innerHeight * 0.6) { $('preview-wrap').scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' }); }
 		});
-		// Angle: Straight, Left, Right. Hidden for a design that can't tilt (setTilts).
-		Array.prototype.forEach.call(document.querySelectorAll('[data-tilt]'), function (b) {
-			b.addEventListener('click', function () {
-				state.tilt = b.dataset.tilt;
-				save('tilt', state.tilt);
-				setTilts();
-				redraw();
-			});
+		// Angle (October 27): one checkbox that tilts the sticker left. Hidden for a design that can't tilt (setTilts).
+		$('tilt').addEventListener('change', function () {
+			builderStart('option');
+			state.tilt = $('tilt').checked ? 'left' : 'straight';
+			save('tilt', state.tilt);
+			redraw();
 		});
 		$('swatches').addEventListener('click', function (e) {
 			var b = e.target.closest('.swatch');
 			if (!b) { return; }
+			builderStart('color');
 			state.palette = b.dataset.palette;
 			save('palette3', state.palette);
 			drawSwatches();
