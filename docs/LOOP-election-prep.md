@@ -190,3 +190,12 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
   Oct 27, so the Oct 28 build is their first ended day). WA and CO ribbons read DROP BOX BY 8 P.M. NOV
   3 and TURN IN BY 7 P.M. NOV 3. Next: Oct 27 daily check (dispatch by hand by 7 a.m. if the cron
   hasn't run), Oct 29 Search Console look.
+- **Oct 27, dated check and push 1 of the day (06:32 CDT).** The 11:05 UTC scheduled build hadn't
+  started by 11:31, so I pushed the six local commits (visibility loop, home FAQ, classic text link on
+  state pages, I voted early heading, four sticker stories, item 6 log) and dispatched run 40496940990:
+  success, local and live QA PASS, IndexNow HTTP 200. Before the push: facts, Spanish, SEO, events and
+  save QA pass; 27 stale sentences as expected; card QA not rerun (no renderer change since the last
+  pass). Live: Texas gallery reads "Texas I Voted and I Voted Early Stickers"; the classic link shows
+  under each state gallery; the home FAQ is up; NE, IN, AZ and WI show their stories. LA ("Early Voting
+  Oct 20–27") and PA ("Through Oct 27") still read open today as they should; tomorrow's build is their
+  first ended day. Next: Oct 28 check for LA and PA, Oct 29 Search Console look.
