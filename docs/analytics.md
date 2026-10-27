@@ -87,6 +87,8 @@ one row per change that could move traffic; add a row when something ships).
 
 ## Not Done Yet (Garrett, in GA4 and Search Console)
 
-Register the three October 27 parameters as event-scoped custom dimensions: `attempt`, `prev_result`,
-`first_action`. In `docs/backlog.md` under Analytics: register the custom dimensions, mark `sticker_save` as a key
+Done October 27: `attempt` (Save attempt), `prev_result` (Previous save result) and `first_action` (First
+builder action) registered as event-scoped custom dimensions through the Admin API; the service account
+has Editor on the property for that. Reports show them from October 27 on; GA4 doesn't backfill. In
+`docs/backlog.md` under Analytics: register the custom dimensions, mark `sticker_save` as a key
 event, set data retention to 14 months, link GA4 to BigQuery, and turn on Search Console bulk export.
