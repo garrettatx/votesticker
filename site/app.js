@@ -2336,7 +2336,7 @@
 		var files = (window.VOTE_GALLERY || {})[st.abbr] || [];
 		$('gallery').hidden = !files.length;
 		// States with ready-made pictures lead with them; the maker follows as "Or Make Your Own" (October 19).
-		$('gallery-h').textContent = T('Pick a %s Sticker', nameOf(st));
+		$('gallery-h').textContent = T(/^[AEIOU]/.test(nameOf(st)) ? 'Pick an %s Sticker' : 'Pick a %s Sticker', nameOf(st));
 		var first = !files.length;
 		$('maker-h').textContent = first ? T('Make Your %s Sticker', nameOf(st)) : T('Or Make Your Own');
 		$('maker-h').classList.toggle('maker-h--first', first);

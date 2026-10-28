@@ -266,7 +266,7 @@ return array(
 		'When is the mail ballot deadline in %s?' => '¿Cuál es el plazo de la boleta por correo en %s?',
 		'What is a provisional ballot in %s, and does it count?' => '¿Qué es una boleta provisional en %s y cuenta?',
 		'What if I am in line when the polls close in %s?' => '¿Qué pasa si estoy en la fila cuando cierran las casillas en %s?',
-		'How do I check that my mail ballot was counted in %s?' => '¿Cómo reviso que mi boleta por correo se contó en %s?',
+		'How do I track my mail ballot in %s?' => '¿Cómo sigo el estado de mi boleta por correo en %s?',
 		'When are polls open in %s on Election Day?' => '¿En qué horario puedo votar en %s el Día de las Elecciones?',
 		'When is the ballot deadline in %s?' => '¿Cuál es la fecha límite para entregar tu boleta en %s?',
 		'Do I need ID to vote in %s?' => '¿Necesito identificación para votar en %s?',
