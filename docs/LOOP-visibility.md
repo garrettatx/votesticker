@@ -119,3 +119,7 @@ leads in Chrome, official verification, copy made plain, two agents at a time.
   https://www.clearscope.io/garrettdigital/drafts/fba219da313974ae/editor?p=b8e694de . Clearscope returned
   "Too many requests" twice at about 5:40 p.m.; retry on a later pass. Use it as a gap check on the home page
   (terms fitted only where they read naturally; rankings are regional, so GSC by query stays the measure).
+- Clearscope report for "michigan i voted sticker" (Garrett, Oct 28):
+  https://www.clearscope.io/garrettdigital/drafts/01f61e95c7dc6fa5/editor?p=b8e694de . Queued after the batch 4
+  Michigan facts land: read terms, research and outline; add whole topics to the Michigan page (2026 contest
+  winners, digital sticker, history) only where they help a Michigan voter.

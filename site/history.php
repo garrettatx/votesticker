@@ -327,7 +327,7 @@ function vote_history_jump() {
 
 function vote_history_why() {
 	return '<p class="why__hist"><span class="why__pic" aria-hidden="true"><svg viewBox="0 0 160 140" width="56" height="49"><path d="M50 14 L20 30 L6 62 L30 72 L36 58 L36 132 L124 132 L124 58 L130 72 L154 62 L140 30 L110 14 Q80 34 50 14Z" fill="#DCE3F2" stroke="#14295E" stroke-width="5" stroke-linejoin="round"/><ellipse cx="104" cy="64" rx="19" ry="12" fill="#FBF6E8" stroke="#C1272D" stroke-width="4"/></svg><span class="why__arrow">→</span><img src="' . vote_v( 'assets/states/tx/tx-vote-2.jpg' ) . '" alt="" width="48" height="48" loading="lazy"></span>'
-		. '<span>' . vote_e( t( 'Who started the I voted sticker? Nobody knows for sure, but the people behind the designs are worth meeting.' ) ) . ' <a href="' . vote_pbase() . VOTE_HISTORY_SLUG . '/">' . vote_e( t( 'How the I voted sticker became a tradition' ) ) . '</a></span></p>';
+		. '<span>' . vote_e( t( 'Who started the I voted sticker? Nobody knows for sure. The waving American flag oval many people picture was drawn in 1987 by Janet Boudreau for Intab, an election supply company. The Smithsonian\'s National Museum of American History keeps a 1920 ribbon that marked a woman\'s first vote.' ) ) . ' <a href="' . vote_pbase() . VOTE_HISTORY_SLUG . '/">' . vote_e( t( 'How the I voted sticker became a tradition' ) ) . '</a></span></p>';
 }
 
 function vote_history() {
