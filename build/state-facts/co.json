@@ -19,6 +19,10 @@
   "coloradosos.gov": {
    "en": "the Colorado Secretary of State",
    "es": "la Secretaría de Estado de Colorado"
+  },
+  "leg.colorado.gov": {
+   "en": "the Colorado General Assembly",
+   "es": "la Asamblea General de Colorado (Colorado General Assembly)"
   }
  },
  "dates": {
@@ -40,20 +44,20 @@
   "mail_return": {
    "en": "Drop box or voter center: by 7 p.m. on Tuesday, November 3. Mail: October 26 is the last suggested day to mail it. From October 27 on, take it in your signed envelope to a drop box or voter center instead.",
    "es": "Buzón o centro de votación: a más tardar a las 7 p. m. del martes 3 de noviembre. Correo: el 26 de octubre es el último día sugerido para enviarla. A partir del 27 de octubre, mejor llévala en tu sobre firmado a un buzón o a un centro de votación.",
-   "src": "https://www.sos.state.co.us/pubs/newsRoom/pressReleases/2026/PR20260923GeneralElection.html",
-   "checked": "2026-10-21",
-   "quote": "October 27 - Voters who have not yet returned their mail ballot by this date should physically deliver their ballot within their signed return envelope to a ballot drop box or vote center or vote in person at a vote center.",
+   "src": "https://coloradosos.gov/pubs/newsRoom/pressReleases/2026/PR20261019InPersonVoting.html",
+   "checked": "2026-10-28",
+   "quote": "Beginning October 27, voters should only return their ballot to a drop box or voter center, or vote in-person.",
    "status": "verified",
    "until": "2026-10-26",
-   "en_after": "Drop box or voter center: by 7 p.m. on Tuesday, November 3. Don't mail it now: take it in your signed envelope to a drop box or voter center.",
-   "es_after": "Buzón o centro de votación: a más tardar a las 7 p. m. del martes 3 de noviembre. Ya no la mandes por correo: llévala en tu sobre firmado a un buzón o a un centro de votación."
+   "en_after": "Drop box or voter center: by 7 p.m. on Tuesday, November 3. Don't mail it now. Take it in your signed envelope to a drop box or voter center. A postmark doesn't count. Military and overseas voters have a later deadline.",
+   "es_after": "Buzón o centro de votación: a más tardar a las 7 p. m. del martes 3 de noviembre. Ya no la mandes por correo. Llévala en tu sobre firmado a un buzón o a un centro de votación. El matasellos no cuenta. Los votantes militares y en el extranjero tienen una fecha límite más tarde."
   },
   "early_hours": {
-   "en": "Every county's required voter service and polling centers are open from October 19 through Election Day. Each county sets its hours.",
-   "es": "Los centros de votación y servicio al votante que exige la ley en cada condado abren del 19 de octubre al Día de las Elecciones. Cada condado fija su horario.",
-   "src": "https://www.sos.state.co.us/pubs/newsRoom/pressReleases/2026/PR20260923GeneralElection.html",
-   "checked": "2026-10-23",
-   "quote": "October 19 - The minimum number of required voter centers must be open.",
+   "en": "Voter service and polling centers are open for in-person voting through 7 p.m. on Election Day, but each location sets its own days and hours. Look yours up at GoVoteColorado.gov before you go.",
+   "es": "Los centros de votación y servicio al votante están abiertos para votar en persona hasta las 7 p. m. del Día de las Elecciones, pero cada lugar fija sus propios días y horarios. Búscalo en GoVoteColorado.gov antes de ir.",
+   "src": "https://coloradosos.gov/pubs/newsRoom/pressReleases/2026/PR20261019InPersonVoting.html",
+   "checked": "2026-10-28",
+   "quote": "Voters can look up their locations and hours at GoVoteColorado.gov .",
    "status": "verified"
   },
   "cure": {
@@ -137,8 +141,12 @@
    "status": "verified"
   },
   "expired": {
-   "status": "missing",
-   "notes": "The SOS list says 'valid' for most IDs but doesn't say how expiration is treated. It does say any ID that shows an address must show a Colorado address, and the Election Day FAQ says it doesn't have to match your registration."
+   "en": "Your ID doesn't have to have a photo. If it shows an address, the address must be in Colorado, but it doesn't have to match your voter registration.",
+   "es": "Tu identificación no tiene que llevar foto. Si muestra una dirección, tiene que ser de Colorado, pero no tiene que coincidir con tu registro de votante.",
+   "src": "https://www.coloradosos.gov/pubs/elections/FAQs/ElectionDay.html",
+   "checked": "2026-10-28",
+   "quote": "If you show ID that has an address on it, the address must be in Colorado but it does not have to match your voter registration",
+   "status": "verified"
   },
   "without": {
    "status": "missing"
@@ -189,7 +197,13 @@
    "notes": "The 100-foot electioneering rule (C.R.S. 1-13-714) was seen only on a Douglas County page and secondary sources; no SOS page or statute text was read."
   },
   "phone": {
-   "status": "missing"
+   "en": "Colorado law lets you show your own voted ballot to anyone, including in a photo you post, as long as it isn't part of an election crime. That covers a mail ballot at home. At a voter center, the county clerk can limit photos, so ask an election judge before you take one there.",
+   "es": "La ley de Colorado te permite mostrar tu propia boleta votada a cualquier persona, también en una foto que publiques, siempre que no sea parte de un delito electoral. Eso incluye una boleta por correo en casa. En un centro de votación, la oficina electoral del condado (county clerk) puede limitar las fotos, así que pregunta a un juez electoral antes de tomar una ahí.",
+   "src": "https://leg.colorado.gov/sites/default/files/documents/2017A/bills/sl/2017a_sl_042.pdf",
+   "checked": "2026-10-28",
+   "quote": "ANY VOTER MAY SHOW HIS OR HER VOTED BALLOT TO ANY OTHER PERSON AS LONG AS THE DISCLOSURE IS NOT UNDERTAKEN IN FURTHERANCE OF ANY ELECTION VIOLATION PROSCRIBED IN THIS ARTICLE 13.",
+   "status": "verified",
+   "notes": "HB17-1014 session law, amending C.R.S. 1-13-712(1). Same act, (1)(d) and the 31-10-1517 twin: disclosure at a voter service and polling center is subject to the clerk's power to place 'REASONABLE RESTRICTIONS ON THE USE OF PHOTOGRAPHY'. Read 2026-10-28."
   },
   "line": {
    "en": "In line at a voter center or a drop box by 7 p.m. on Election Day? Stay put. You can vote, and your ballot will be counted.",
@@ -202,16 +216,25 @@
  },
  "sticker": {
   "tradition": {
-   "en": "Colorado has an \"I Voted\" digital sticker contest for high school students. The Secretary of State's staff pick the winner by popular vote, and the winning design shows up in BallotTrax messages and a statewide press release.",
-   "es": "Colorado tiene un concurso de stickers digitales de \"I Voted\" para estudiantes de preparatoria. El personal de la Secretaría de Estado elige al ganador por voto popular, y el diseño ganador aparece en los mensajes de BallotTrax y en un comunicado de prensa estatal.",
-   "src": "https://www.coloradosos.gov/pubs/elections/votedSticker/contest.html",
-   "checked": "2026-10-21",
-   "quote": "The creator of the winning design will be featured in a statewide press release, media coverage, and BallotTrax messages.",
-   "status": "verified"
+   "en": "Colorado's Secretary of State runs a digital \"I Voted\" sticker contest for high school students. The 2026 winner is Halle, a senior at Pine Creek High School in Colorado Springs. Her design shows Blucifer, the blue mustang sculpture by Luis A. Jimenez, Jr. outside Denver International Airport.",
+   "es": "La Secretaría de Estado de Colorado organiza un concurso de stickers digitales de \"I Voted\" para estudiantes de preparatoria. La ganadora de 2026 es Halle, estudiante de último año en Pine Creek High School, en Colorado Springs. Su diseño muestra a Blucifer, la escultura del mustang azul de Luis A. Jimenez, Jr. que está afuera del Aeropuerto Internacional de Denver.",
+   "src": "https://www.sos.state.co.us/pubs/newsRoom/pressReleases/2026/PR20261012StickerContest.html",
+   "checked": "2026-10-28",
+   "quote": "Today, Secretary of State Jena Griswold announced Pine Creek High School Senior Halle G. as the winner of Colorado's 2026 \"I Voted\" Digital Sticker Design Contest.",
+   "status": "verified",
+   "notes": "Student: first name, school and town only. The release gives 'Halle G.' and 'Halle lives in Colorado Springs'; the surname initial is dropped here. The old 'staff pick the winner by popular vote' line was removed; not rechecked against the contest rules."
   },
   "mail": {
-   "en": "In Garfield County, a limited special edition \"I Voted\" sticker for the nation's 250th and Colorado's 150th anniversaries is at ballot drop boxes and vote centers while supplies last.",
-   "es": "En el condado de Garfield, hay un sticker de \"I Voted\" de edición especial limitada por los 250 años del país y los 150 de Colorado en los buzones de entrega de boletas y los centros de votación, hasta agotar existencias.",
+   "en": "Sign up for BallotTrax. Once your ballot is accepted, it sends you the 2026 Blucifer \"I Voted\" digital sticker to share.",
+   "es": "Inscríbete en BallotTrax. Cuando acepten tu boleta, te envía el sticker digital de \"I Voted\" de Blucifer de 2026 para compartir.",
+   "src": "https://www.sos.state.co.us/pubs/newsRoom/pressReleases/2026/PR20261012StickerContest.html",
+   "checked": "2026-10-28",
+   "quote": "Voters who get updates via BallotTrax will receive this special Blucifer 'I Voted' digital sticker after their ballot has been accepted.",
+   "status": "verified"
+  },
+  "early": {
+   "en": "In Garfield County, yes, while supplies last: a limited special edition \"I Voted\" sticker for the nation's 250th and Colorado's 150th anniversaries is at ballot drop boxes and vote centers.",
+   "es": "En el condado de Garfield, sí, mientras haya: un sticker especial de edición limitada de \"I Voted\" por los 250 años del país y los 150 de Colorado está en los buzones de entrega y los centros de votación.",
    "src": "https://www.garfieldcountyco.gov/news/vote-and-return-both-ballot-pages-in-2026-general-election/",
    "checked": "2026-10-23",
    "quote": "available at ballot drop boxes and vote centers while supplies last",

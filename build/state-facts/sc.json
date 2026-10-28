@@ -30,28 +30,32 @@
    "en": "Return your absentee application to your county voter registration office by 5 p.m. on Friday, October 23, 2026, by U.S. mail or in person. Applications can't be emailed or faxed.",
    "es": "Entrega tu solicitud de voto en ausencia en la oficina de registro de votantes de tu condado (county voter registration office) a más tardar a las 5 p. m. del viernes 23 de octubre de 2026, por correo postal o en persona. Las solicitudes no se pueden enviar por correo electrónico ni por fax.",
    "src": "https://scvotes.gov/wp-content/uploads/2026/09/Absentee-Statewide-General-Election-Go-To-Guide.pdf",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "The deadline to return your application is 5:00 p.m. on Friday, October 23.",
    "status": "verified",
    "until": "2026-10-23",
-   "en_after": "Absentee applications closed at 5 p.m. on October 23. You can still vote early in person through Saturday, October 31, or at your polling place on Election Day.",
-   "es_after": "Las solicitudes de voto en ausencia cerraron a las 5 p. m. del 23 de octubre. Todavía puedes votar por anticipado en persona hasta el sábado 31 de octubre, o en tu lugar de votación el Día de las Elecciones."
+   "en_after": "Absentee applications closed at 5 p.m. on October 23. Admitted to a hospital as an emergency patient on Election Day or in the four days before? A member of your immediate family can still apply for a ballot and bring it to you. Otherwise, vote early in person through Saturday, October 31, or at your polling place on Election Day.",
+   "es_after": "Las solicitudes de voto en ausencia cerraron a las 5 p. m. del 23 de octubre. ¿Te internaron en un hospital como paciente de emergencia el Día de las Elecciones o en los cuatro días antes? Un familiar directo todavía puede pedir una boleta y llevártela. Si no, vota por anticipado en persona hasta el sábado 31 de octubre, o en tu lugar de votación el Día de las Elecciones.",
+   "notes": "Hospital route: S.C. Code 7-15-330(D) (https://www.scstatehouse.gov/code/t07c015.php) 'if an elector is admitted to a hospital as an emergency patient on the day of an election or within a four-day period before the election, then a member of the elector's immediate family may obtain an application from the board on the day of an election, complete it, receive the ballot, deliver it personally to the patient who shall vote, and personally carry the ballot back'. Also on https://scvotes.gov/voters/absentee-voting/. Read 2026-10-28."
   },
   "mail_return": {
-   "en": "Your county voter registration office must receive it by 7 p.m. on Tuesday, November 3, 2026. Mail it at least a week before Election Day, or bring it in person with your photo ID.",
-   "es": "La oficina de registro de votantes de tu condado debe recibirla a más tardar a las 7 p. m. del martes 3 de noviembre de 2026. Envíala por correo por lo menos una semana antes del Día de las Elecciones, o llévala en persona con tu identificación con foto.",
-   "src": "https://scvotes.gov/wp-content/uploads/2026/09/Absentee-Statewide-General-Election-Go-To-Guide.pdf",
-   "checked": "2026-10-21",
-   "quote": "Ballots must be received by your county voter registration office by 7:00 p.m. on Tuesday, November 3.",
+   "en": "Your county voter registration office must receive it by 7 p.m. on Tuesday, November 3, 2026. A postmark isn't enough. Still have your ballot this week? The Election Commission says to consider bringing it in person, with your photo ID, to your county voter registration office, or to an early voting center through Saturday, October 31.",
+   "es": "La oficina de registro de votantes de tu condado debe recibirla a más tardar a las 7 p. m. del martes 3 de noviembre de 2026. El matasellos no basta. ¿Todavía tienes tu boleta esta semana? La Comisión Electoral recomienda considerar llevarla en persona, con tu identificación con foto, a la oficina de registro de votantes de tu condado, o a un centro de votación anticipada hasta el sábado 31 de octubre.",
+   "src": "https://scvotes.gov/voters/voter-faq/",
+   "checked": "2026-10-28",
+   "quote": "If you still have your ballot within a week prior to Election Day, consider returning the ballot in person.",
    "status": "verified"
   },
   "early_hours": {
-   "en": "Early voting centers are open 8:30 a.m. to 6 p.m., Monday to Saturday, October 19 to 31. They're closed Sunday, October 25.",
-   "es": "Los centros de votación anticipada abren de 8:30 a. m. a 6 p. m., de lunes a sábado, del 19 al 31 de octubre. Cierran el domingo 25 de octubre.",
+   "en": "Early voting centers are open 8:30 a.m. to 6 p.m., Monday to Saturday, through Saturday, October 31. Use any early voting center in your county.",
+   "es": "Los centros de votación anticipada abren de 8:30 a. m. a 6 p. m., de lunes a sábado, hasta el sábado 31 de octubre. Puedes usar cualquier centro de votación anticipada de tu condado.",
    "src": "https://scvotes.gov/voters/early-voting/",
-   "checked": "2026-10-23",
+   "checked": "2026-10-28",
    "quote": "Early voting centers are open 8:30 a.m.- 6:00 p.m. (Monday-Saturday)",
-   "status": "verified"
+   "status": "verified",
+   "until": "2026-10-31",
+   "en_after": "Early voting ended Saturday, October 31. Vote at your polling place on Election Day, 7 a.m. to 7 p.m.",
+   "es_after": "La votación anticipada terminó el sábado 31 de octubre. Vota en tu lugar de votación el Día de las Elecciones, de 7 a. m. a 7 p. m."
   },
   "cure": {
    "status": "missing",
@@ -144,26 +148,26 @@
    "en": [
     "are 65 or older",
     "have a physical disability",
-    "can't vote during early voting hours or on Election Day because of work",
-    "are caring for someone sick or physically disabled and can't vote during early voting or on Election Day",
+    "can't vote during early voting hours for the whole early voting period, or while polls are open on Election Day, because of work",
+    "are caring for someone sick or physically disabled and can't vote during early voting hours for the whole early voting period, or while polls are open on Election Day",
     "will be out of your county for all of early voting and while polls are open on Election Day",
-    "are confined to a jail or pretrial facility awaiting arrest or trial and can't vote during early voting or on Election Day",
+    "are confined to a jail or pretrial facility pending disposition of an arrest or trial and can't vote during early voting or on Election Day",
     "are in the U.S. Armed Forces or Merchant Marines, or their spouse or dependent living with them",
     "are admitted to a hospital as an emergency patient on Election Day or within four days before it"
    ],
    "es": [
     "tienes 65 años o más",
     "tienes una discapacidad física",
-    "no puedes votar durante el horario de votación anticipada ni el Día de las Elecciones por tu trabajo",
-    "cuidas a una persona enferma o con discapacidad física y no puedes votar durante la votación anticipada ni el Día de las Elecciones",
-    "vas a estar fuera de tu condado durante toda la votación anticipada y mientras abren las urnas el Día de las Elecciones",
-    "estás en una cárcel o centro de detención esperando que se resuelva tu arresto o juicio y no puedes votar durante la votación anticipada ni el Día de las Elecciones",
-    "eres miembro de las Fuerzas Armadas o de la Marina Mercante de EE. UU., o su cónyuge o dependiente que vive con esa persona",
-    "te internan en un hospital como paciente de emergencia el Día de las Elecciones o en los cuatro días anteriores"
+    "no puedes votar en el horario de votación anticipada durante todo el periodo de votación anticipada, ni mientras están abiertos los lugares de votación el Día de las Elecciones, por tu trabajo",
+    "cuidas a una persona enferma o con discapacidad física y no puedes votar en el horario de votación anticipada durante todo ese periodo, ni mientras están abiertos los lugares de votación el Día de las Elecciones",
+    "vas a estar fuera de tu condado durante toda la votación anticipada y mientras estén abiertos los lugares de votación el Día de las Elecciones",
+    "estás en una cárcel o centro de detención preventiva mientras se resuelve un arresto o juicio, y no puedes votar por anticipado ni el Día de las Elecciones",
+    "estás en las Fuerzas Armadas o la Marina Mercante de EE. UU., o eres su cónyuge o dependiente y vives con esa persona",
+    "te internan en un hospital como paciente de emergencia el Día de las Elecciones o en los cuatro días antes"
    ],
    "src": "https://scvotes.gov/voters/absentee-voting/",
-   "checked": "2026-10-21",
-   "quote": "Persons with physical disabilities.",
+   "checked": "2026-10-28",
+   "quote": "Persons confined to a jail or pretrial facility pending disposition of arrest or trial which prevents them from voting during early voting hours for the duration of the early voting period, and during the hours the polls are open on election day.",
    "status": "verified"
   },
   "witness": {
@@ -184,11 +188,11 @@
    "status": "verified"
   },
   "dropbox": {
-   "en": "Bring your ballot to your county voter registration office, or to an early voting center during early voting, and show your photo ID. A family member or authorized representative can return it for you with an Authorized Returnee form.",
-   "es": "Lleva tu boleta a la oficina de registro de votantes de tu condado, o a un centro de votación anticipada durante la votación anticipada, y muestra tu identificación con foto. Un familiar directo o un representante autorizado puede devolverla por ti con el formulario Authorized Returnee.",
+   "en": "Bring your ballot to your county voter registration office, or to an early voting center in your county during early voting, and show your photo ID. An immediate family member or authorized representative can return it for you in person with an Authorized Returnee form and photo ID. One person can return up to five ballots besides their own.",
+   "es": "Lleva tu boleta a la oficina de registro de votantes de tu condado, o a un centro de votación anticipada de tu condado durante la votación anticipada, y muestra tu identificación con foto. Un familiar directo o un representante autorizado puede devolverla por ti en persona, con el formulario Authorized Returnee y una identificación con foto. Una persona puede devolver hasta cinco boletas además de la suya.",
    "src": "https://scvotes.gov/voters/absentee-voting/",
-   "checked": "2026-10-21",
-   "quote": "Return your ballot to your county voter registration office or an early voting center either by mail or personal delivery.",
+   "checked": "2026-10-28",
+   "quote": "Returnees are limited to five returns in addition to their own per election.",
    "status": "verified"
   }
  },
@@ -202,8 +206,13 @@
    "status": "verified"
   },
   "phone": {
-   "status": "missing",
-   "notes": "No phone rule for voters found on scvotes.gov. The existing FAQ answer (no ballot selfies) rests on S.C. Code 7-25-100."
+   "en": "No photos or recordings inside a polling place, during early voting or on Election Day. State law also bars letting anyone see your ballot, and a 2012 Attorney General opinion says that covers copying it with a phone or camera. For a photo of an absentee ballot at home, we found no official guidance, so ask your county voter registration office.",
+   "es": "No se permiten fotos ni grabaciones dentro de un lugar de votación, ni en la votación anticipada ni el Día de las Elecciones. La ley estatal también prohíbe dejar que alguien vea tu boleta, y una opinión de la Fiscalía General (Attorney General) de 2012 dice que eso incluye copiarla con un celular o una cámara. Sobre fotos de una boleta de voto en ausencia en casa no encontramos ninguna guía oficial, así que pregunta a la oficina de registro de votantes de tu condado.",
+   "src": "https://scvotes.gov/wp-content/uploads/2026/04/2026-Poll-Manager-Handbook-FINAL-Digital.pdf",
+   "checked": "2026-10-28",
+   "quote": "This poster clearly outlines that taking pictures or recordings inside polling places is strictly prohibited during both Early Voting and on Election Day.",
+   "status": "verified",
+   "notes": "2026 Poll Manager Handbook, 'No Recording Devices Allowed Sign': 'In accordance with state law (§7-25-100), voters may not allow their ballot to be seen, remove a ballot from the polling place, use recording devices in the voting booth ... A South Carolina Attorney General Opinion (May 8, 2012) further confirms that this law prohibits reproducing a ballot using devices including, and not limited to, cell phones, cameras, tablets, or video equipment.' Read 2026-10-28."
   },
   "line": {
    "en": "Polls close at 7 p.m. If you're in line by then, stay put. You'll be allowed to vote.",
@@ -216,16 +225,22 @@
  },
  "sticker": {
   "tradition": {
-   "status": "missing",
-   "notes": "No sticker page found on scvotes.gov. The U.S. Election Assistance Commission's Clearinghouse Awards pages (eac.gov, 2022 winner and 2023 honorable mention for South Carolina I Voted stickers) and news coverage describe a 2022 statewide redesign with palmetto tree and state-outline stickers; eac.gov is federal, not a state or county source, so not used."
+   "en": "South Carolina's State Election Commission introduced two new statewide \"I Voted\" sticker designs for the 2022 elections, and they won a national Clearie Award from the U.S. Election Assistance Commission. Some counties add their own: Charleston County's 2026 stickers come from a student design contest.",
+   "es": "La Comisión Electoral Estatal de South Carolina presentó dos nuevos diseños estatales de stickers de \"I Voted\" para las elecciones de 2022, y ganaron un premio nacional Clearie de la Comisión de Asistencia Electoral de EE. UU. (U.S. Election Assistance Commission). Algunos condados agregan los suyos: los stickers de 2026 del condado de Charleston salen de un concurso de diseño para estudiantes.",
+   "src": "https://scvotes.gov/south-carolina-recognized-for-excellence-in-election-administration/",
+   "checked": "2026-10-28",
+   "quote": "The SEC’s new “I Voted” stickers also won a Clearie Award for exemplifying outreach and community flair.",
+   "status": "verified",
+   "notes": "SEC release (posted May 23, 2023) on awards for the 2022 midterms. Design details (palmetto tree, state outline) are only on eac.gov, which is not an allowed source, so the page doesn't describe them. Whether those designs are still in use in 2026 is not confirmed."
   },
   "early": {
-   "en": "Each county picks its own sticker. In Charleston County, the 2026 student contest winners go to early voters at every early voting center, and to absentee voters, for a limited time.",
-   "es": "Cada condado elige su propio sticker. En el condado de Charleston, los diseños ganadores del concurso estudiantil de 2026 se entregan por tiempo limitado en todos los centros de votación anticipada y a quienes votan en ausencia.",
+   "en": "In Charleston County, yes, for a limited time. Early voting centers and absentee voters get the 2026 student contest designs, by Emmeline (grades K to 5), Adalyn (6 to 8) and Katherine (9 to 12).",
+   "es": "En el condado de Charleston, sí, por tiempo limitado. Los centros de votación anticipada y los votantes en ausencia reciben los diseños del concurso estudiantil de 2026, de Emmeline (kínder a 5.º grado), Adalyn (6.º a 8.º) y Katherine (9.º a 12.º).",
    "src": "https://charlestoncounty.gov/departments/bevr/outreach.php",
-   "checked": "2026-10-23",
+   "checked": "2026-10-28",
    "quote": "Winning designs will be distributed for a limited time at all early voting centers and to our absentee voters this fall.",
-   "status": "verified"
+   "status": "verified",
+   "notes": "Winners as listed: 'K-5 Winner Emmeline S.', '6-8 Winner Adalyn D.', '9-12 Winner Katherine C.' Students, so first names only; surname initials removed. Read 2026-10-28."
   }
  },
  "faq": {
@@ -251,6 +266,14 @@
    "src": "https://scvotes.gov/voters/absentee-voting/",
    "checked": "2026-10-21",
    "quote": "Check the status of your absentee request and track your ballot online or contact your county voter registration office.",
+   "status": "verified"
+  },
+  "late_mail": {
+   "en": "Mailing now is risky. Your county office must receive it by 7 p.m. on November 3, and a postmark doesn't count. The Election Commission says to consider returning it in person this week. You can also vote a provisional ballot in person, and it counts as long as your absentee ballot isn't returned before the polls close.",
+   "es": "Mandarla por correo ahora es arriesgado. La oficina de tu condado debe recibirla a más tardar a las 7 p. m. del 3 de noviembre, y el matasellos no cuenta. La Comisión Electoral recomienda considerar devolverla en persona esta semana. También puedes votar en persona con una boleta provisional, y cuenta siempre que tu boleta de voto en ausencia no se devuelva antes de que cierren los lugares de votación.",
+   "src": "https://scvotes.gov/voters/voter-faq/",
+   "checked": "2026-10-28",
+   "quote": "You may also vote a provisional ballot in person that will count as long as your absentee ballot is not returned before the polls close on Election Day.",
    "status": "verified"
   }
  },

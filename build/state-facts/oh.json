@@ -11,6 +11,10 @@
   "codes.ohio.gov": {
    "en": "the Ohio Revised Code",
    "es": "el Código Revisado de Ohio (Ohio Revised Code)"
+  },
+  "boe.cuyahogacounty.gov": {
+   "en": "the Cuyahoga County Board of Elections",
+   "es": "la Junta Electoral del Condado de Cuyahoga (Cuyahoga County Board of Elections)"
   }
  },
  "dates": {
@@ -34,23 +38,23 @@
    "es_after": "Las solicitudes cerraron a las 8:30 p. m. del 27 de octubre. Todavía puedes votar por anticipado en persona hasta el domingo 1 de noviembre, o en tu lugar de votación el Día de las Elecciones."
   },
   "mail_return": {
-   "en": "Your county board of elections must receive it by 7:30 p.m. on Tuesday, November 3, 2026. A postmark isn't enough, so mail it early or drop it off. Military and overseas deadlines differ.",
-   "es": "La junta electoral de tu condado debe recibirla a más tardar a las 7:30 p. m. del martes 3 de noviembre de 2026. No basta con el matasellos, así que envíala con tiempo o llévala en persona. Los plazos para votantes militares y en el extranjero son distintos.",
+   "en": "Your county board of elections must receive it by 7:30 p.m. on Tuesday, November 3, 2026. A postmark isn't enough. Military and overseas deadlines differ.",
+   "es": "La junta electoral de tu condado debe recibirla a más tardar a las 7:30 p. m. del martes 3 de noviembre de 2026. No basta con el matasellos. Los plazos para votantes militares y en el extranjero son distintos.",
    "src": "https://www.ohiosos.gov/elections/voting-schedule-text-only",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "November 3: Non-UOCAVA absentee ballots must be received by your board of elections by 7:30PM.",
    "status": "verified"
   },
   "early_hours": {
-   "en": "Through Friday, October 23: 8 a.m. to 5 p.m. Saturday, October 24: 8 a.m. to 4 p.m. October 26 to 30: 7:30 a.m. to 7:30 p.m., and until 8:30 p.m. on Tuesday, October 27. Saturday, October 31: 8 a.m. to 4 p.m. Sunday, November 1: 1 p.m. to 5 p.m.",
-   "es": "Hasta el viernes 23 de octubre: de 8 a. m. a 5 p. m. Sábado 24 de octubre: de 8 a. m. a 4 p. m. Del 26 al 30 de octubre: de 7:30 a. m. a 7:30 p. m., y hasta las 8:30 p. m. el martes 27 de octubre. Sábado 31 de octubre: de 8 a. m. a 4 p. m. Domingo 1 de noviembre: de 1 p. m. a 5 p. m.",
+   "en": "Wednesday, October 28 to Friday, October 30: 7:30 a.m. to 7:30 p.m. Saturday, October 31: 8 a.m. to 4 p.m. Sunday, November 1: 1 p.m. to 5 p.m. There's no early voting on Monday, November 2.",
+   "es": "Del miércoles 28 al viernes 30 de octubre: de 7:30 a. m. a 7:30 p. m. Sábado 31 de octubre: de 8 a. m. a 4 p. m. Domingo 1 de noviembre: de 1 p. m. a 5 p. m. No hay votación anticipada el lunes 2 de noviembre.",
    "src": "https://www.ohiosos.gov/elections/voting-schedule-text-only",
-   "checked": "2026-10-21",
-   "quote": "October 27: 7:30 a.m. to 8:30 p.m.",
+   "checked": "2026-10-28",
+   "quote": "October 28 to 30: 7:30 a.m. to 7:30 p.m. October 31: 8 a.m. to 4 p.m. November 1: 1 p.m. to 5 p.m.",
    "status": "verified",
-   "until": "2026-10-24",
-   "en_after": "October 26 to 30: 7:30 a.m. to 7:30 p.m., and until 8:30 p.m. on Tuesday, October 27. Saturday, October 31: 8 a.m. to 4 p.m. Sunday, November 1: 1 p.m. to 5 p.m.",
-   "es_after": "Del 26 al 30 de octubre: de 7:30 a. m. a 7:30 p. m., y hasta las 8:30 p. m. el martes 27 de octubre. Sábado 31 de octubre: de 8 a. m. a 4 p. m. Domingo 1 de noviembre: de 1 p. m. a 5 p. m."
+   "until": "2026-10-31",
+   "en_after": "Sunday, November 1: 1 p.m. to 5 p.m. That's the last day of early voting. There's no early voting on Monday, November 2.",
+   "es_after": "Domingo 1 de noviembre: de 1 p. m. a 5 p. m. Es el último día de votación anticipada. No hay votación anticipada el lunes 2 de noviembre."
   },
   "cure": {
    "status": "missing",
@@ -59,36 +63,36 @@
  },
  "how": {
   "in_person": {
-   "en": "Vote early at your county board of elections, starting the day after registration closed. On Election Day, vote at your assigned polling place between 6:30 a.m. and 7:30 p.m.",
-   "es": "Vota por anticipado en la junta electoral de tu condado, a partir del día después del cierre del registro. El Día de las Elecciones, vota en el lugar de votación que te corresponde entre las 6:30 a. m. y las 7:30 p. m.",
+   "en": "Vote early at your county board of elections or the early vote center it lists, through Sunday, November 1. On Election Day, vote at your assigned polling place between 6:30 a.m. and 7:30 p.m.",
+   "es": "Vota por anticipado en la junta electoral de tu condado o en el centro de votación anticipada que indique, hasta el domingo 1 de noviembre. El Día de las Elecciones, vota en el lugar de votación que te corresponde entre las 6:30 a. m. y las 7:30 p. m.",
    "src": "https://www.ohiosos.gov/directories/early-voting-locations",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "Starting the day after the close of voter registration, registered voters may cast an early in-person ballot at their county board of elections.",
    "status": "verified"
   },
   "first_time": {
-   "en": "Check your registration and polling location online before you go. When you vote in person, the only thing you need to bring is an accepted photo ID.",
-   "es": "Revisa en línea tu registro y tu lugar de votación antes de ir. Cuando votas en persona, lo único que necesitas llevar es una identificación con foto aceptada.",
+   "en": "Check your registration and polling place online before you go. Bring an accepted, unexpired photo ID. Changed your name? Bring proof of the change too.",
+   "es": "Revisa en línea tu registro y tu lugar de votación antes de ir. Lleva una identificación con foto aceptada y vigente. ¿Te cambiaste el nombre? Lleva también un comprobante del cambio.",
    "src": "https://www.ohiosos.gov/elections/frequently-asked-questions",
-   "checked": "2026-10-21",
-   "quote": "When you vote in person in Ohio, the only item you need is an acceptable form of identification.",
+   "checked": "2026-10-28",
+   "quote": "If your name has changed but your address hasn’t, you can vote a regular ballot by showing proof of your legal name change, such as a marriage license or court order.",
    "status": "verified"
   }
  },
  "where": {
   "locator_url": "https://voterlookup.ohiosos.gov/voterlookup.aspx",
   "locator_label": {
-   "en": "Voter Lookup (Ohio Secretary of State)",
-   "es": "Voter Lookup (Secretaría de Estado de Ohio)"
+   "en": "Check your registration and polling place (Ohio Secretary of State)",
+   "es": "Revisa tu registro y tu lugar de votación (Secretaría de Estado de Ohio)"
   },
   "local_offices_url": "https://www.ohiosos.gov/directories/county-boards-of-elections",
   "sample_ballot_url": "https://www.ohiosos.gov/directories/sample-ballot",
   "rule": {
-   "en": "Early voting is at your county board of elections. On Election Day, go to the polling place for your precinct. At the wrong polling place, you'll be asked to vote a provisional ballot.",
-   "es": "La votación anticipada es en la junta electoral de tu condado. El Día de las Elecciones, ve al lugar de votación de tu precinto. Si vas al lugar equivocado, te pedirán que votes con una boleta provisional.",
-   "src": "https://www.ohiosos.gov/elections/frequently-asked-questions",
-   "checked": "2026-10-21",
-   "quote": "If you arrive at the wrong polling location, you’ll be asked to vote using a provisional ballot.",
+   "en": "On Election Day, vote at the polling place for your precinct. At the wrong one, a poll worker will tell you where to go. If you vote a provisional ballot at the wrong polling place instead, it won't be counted.",
+   "es": "El Día de las Elecciones, vota en el lugar de votación de tu precinto. Si vas al equivocado, un trabajador electoral te dirá adónde ir. Si en vez de eso votas con una boleta provisional en el lugar equivocado, no se contará.",
+   "src": "https://codes.ohio.gov/ohio-revised-code/section-3505.183",
+   "checked": "2026-10-28",
+   "quote": "If an individual cast a provisional ballot in a precinct in which the individual is not registered and eligible to vote and in the incorrect polling location for the precinct in which the individual is registered and eligible to vote, the provisional ballot envelope shall not be opened, and the ballot shall not be counted.",
    "status": "verified"
   }
  },
@@ -119,37 +123,37 @@
    "status": "verified"
   },
   "expired": {
-   "en": "Your photo ID can't be expired. A driver's license or ID from another state doesn't count, and neither does the Ohio Mobile ID.",
-   "es": "Tu identificación con foto no puede estar vencida. No sirve una licencia de conducir ni una identificación de otro estado, y tampoco la Ohio Mobile ID.",
+   "en": "Your photo ID can't be expired. These don't count: a license or ID from another state, the Ohio Mobile ID, or an Ohio ID marked NON RENEWABLE/NON TRANSFERABLE. An ID marked NONCITIZEN works only with extra proof of citizenship.",
+   "es": "Tu identificación con foto no puede estar vencida. No sirven: una licencia o identificación de otro estado, la Ohio Mobile ID, ni una identificación de Ohio marcada NON RENEWABLE/NON TRANSFERABLE. Una identificación marcada NONCITIZEN solo sirve junto con otro comprobante de ciudadanía.",
    "src": "https://www.ohiosos.gov/elections/voter-ID-requirements",
-   "checked": "2026-10-21",
-   "quote": "To vote, voters must show a valid form of photo identification (ID) that has the voter’s name and photograph, and the identification must not be expired.",
+   "checked": "2026-10-28",
+   "quote": "Driver license or photo identification that contains a “NONCITIZEN” identifier may be used only in conjunction with additional proof of citizenship.",
    "status": "verified"
   },
   "without": {
-   "en": "No photo ID? You vote a provisional ballot. For it to count, show an accepted ID at your county board of elections within four days after Election Day.",
-   "es": "¿No tienes identificación con foto? Votas con una boleta provisional. Para que cuente, muestra una identificación aceptada en la junta electoral de tu condado dentro de los cuatro días después del Día de las Elecciones.",
+   "en": "No photo ID? You vote a provisional ballot. For it to count, show an accepted ID at your county board of elections within four days after Election Day. If you have no photo ID because of a religious objection, you can sign an affidavit (Form 12-O) instead.",
+   "es": "¿No tienes identificación con foto? Votas con una boleta provisional. Para que cuente, muestra una identificación aceptada en la junta electoral de tu condado dentro de los cuatro días después del Día de las Elecciones. Si no tienes identificación con foto por una objeción religiosa, puedes firmar una declaración jurada (Form 12-O).",
    "src": "https://www.ohiosos.gov/elections/voter-ID-requirements",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "In order for the provisional ballot to be eligible to be counted, the voter must present one of the acceptable forms of identification to the board office within four days after Election Day.",
    "status": "verified"
   }
  },
  "mail": {
   "who": {
-   "en": "Any registered Ohio voter can vote absentee, no reason needed. You have to ask for a ballot, with a separate application for each election.",
-   "es": "Cualquier votante registrado en Ohio puede votar en ausencia, sin dar una razón. Tienes que pedir la boleta, con una solicitud aparte para cada elección.",
+   "en": "Any registered Ohio voter can vote absentee. You don't need a reason. You have to ask for a ballot, with a separate application for each election.",
+   "es": "Cualquier votante registrado en Ohio puede votar en ausencia. No necesitas dar una razón. Tienes que pedir la boleta, con una solicitud aparte para cada elección.",
    "src": "https://www.ohiosos.gov/elections/frequently-asked-questions",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "Any registered Ohio voter with up-to-date information can vote absentee. No reason is required to vote absentee in Ohio.",
    "status": "verified"
   },
   "witness": {
-   "en": "Sign the identification envelope and give one form of ID: your Ohio driver's license or state ID number, the last four digits of your Social Security number, or a copy of your photo ID.",
-   "es": "Firma el sobre de identificación (identification envelope) y da una forma de identificación: el número de tu licencia de conducir o identificación estatal de Ohio, los últimos cuatro dígitos de tu número de Seguro Social o una copia de tu identificación con foto.",
-   "src": "https://www.ohiosos.gov/elections/frequently-asked-questions",
-   "checked": "2026-10-21",
-   "quote": "Print your name and address, provide acceptable ID (driver license number, last four digits of SSN, or copy of ID), and sign the envelope.",
+   "en": "Fill in your name and address on the identification envelope, sign it, and give one form of ID: your Ohio driver's license or state ID number, the last four digits of your Social Security number, or a copy of your photo ID. A copy of your ID goes in the return envelope, next to the identification envelope.",
+   "es": "Escribe tu nombre y dirección en el sobre de identificación (identification envelope), fírmalo y da una forma de identificación: el número de tu licencia de conducir o identificación estatal de Ohio, los últimos cuatro dígitos de tu número de Seguro Social o una copia de tu identificación con foto. La copia de tu identificación va en el sobre de devolución, junto al sobre de identificación.",
+   "src": "https://codes.ohio.gov/ohio-revised-code/section-3509.05",
+   "checked": "2026-10-28",
+   "quote": "(3) A copy of the elector's photo identification in the return envelope with the identification envelope.",
    "status": "verified"
   },
   "track_url": "https://www.ohiosos.gov/directories/ballot-tracking",
@@ -162,12 +166,13 @@
    "status": "verified"
   },
   "dropbox": {
-   "en": "Bring it to your county board of elections, or use the secure drop box most boards have, by 7:30 p.m. on Election Day. The drop box is open 24/7 until polls close.",
-   "es": "Llévala a la junta electoral de tu condado, o usa el buzón de entrega seguro que tienen la mayoría de las juntas, a más tardar a las 7:30 p. m. del Día de las Elecciones. El buzón está abierto las 24 horas hasta que cierran las urnas.",
-   "src": "https://www.ohiosos.gov/elections/request-an-absentee-ballot",
-   "checked": "2026-10-21",
-   "quote": "Most counties provide a secure drop box, available 24/7 until polls close on Election Day.",
-   "status": "verified"
+   "en": "Mail it, or hand it in at your county board of elections office or the drop box outside it, by 7:30 p.m. on Election Day. The drop box is open around the clock until then. Don't bring it to a polling place. A near relative can deliver it for you inside the board office and signs a form there (Form 12-P).",
+   "es": "Mándala por correo, o entrégala en la oficina de la junta electoral de tu condado o en el buzón de entrega que está afuera, a más tardar a las 7:30 p. m. del Día de las Elecciones. El buzón está abierto a toda hora hasta entonces. No la lleves a un lugar de votación. Un familiar cercano puede entregarla por ti dentro de la oficina de la junta y firma ahí un formulario (Form 12-P).",
+   "src": "https://codes.ohio.gov/ohio-revised-code/section-3509.05",
+   "checked": "2026-10-28",
+   "quote": "The return envelope shall be returned by no other person, in no other manner, and to no other location, except as otherwise provided in section 3509.08 of the Revised Code.",
+   "status": "verified",
+   "notes": "Statute (effective March 20, 2026, SB 293): mail, deliver to the board office, or listed relatives deliver to the office; (C)(3)(a)-(b) one secure receptacle outside the board office, open at all times from the day after registration closes to 7:30 p.m. Election Day. Form 12-P: Hancock County BOE copy of the SOS form (https://hancockcountyohioelections.gov/wp-content/uploads/2024/09/12-p1.pdf), 'deliver this with the ballot to a board of elections official in the board of elections office.' Lake County BOE (https://www.lakecountyohio.gov/boe/absentee-voting-information/): 'If you are assisting another voter with the return of a ballot, you MUST see a board of elections official.' Drop box for the voter's own ballot only: SOS FAQ 'Only the voter may use the dropbox to return their personal absentee ballot.' Read 2026-10-28."
   }
  },
  "polls_rules": {
@@ -180,8 +185,13 @@
    "status": "verified"
   },
   "phone": {
-   "status": "missing",
-   "notes": "No voter-facing phone or photo rule found on ohiosos.gov. The FAQ's phone and photo limits are written for election observers only. The 2026 Election Official Manual (Directive 2026-08, Chapter 6 PDF) may address it but returned the security page to curl and wasn't read."
+   "en": "Ohio law makes it a felony to let someone see your ballot with the apparent intent of showing how you're about to vote. No Ohio rule speaks directly to taking a photo of your own ballot, at the polls or at home. Ask a poll worker before you take any photo inside the polling place.",
+   "es": "La ley de Ohio castiga como delito grave (felony) dejar que alguien vea tu boleta con la intención aparente de mostrar cómo vas a votar. Ninguna regla de Ohio habla directamente de tomarle foto a tu propia boleta, ni en el lugar de votación ni en casa. Pregunta a un trabajador electoral antes de tomar cualquier foto dentro del lugar de votación.",
+   "src": "https://codes.ohio.gov/ohio-revised-code/section-3599.20",
+   "checked": "2026-10-28",
+   "quote": "being an elector, allow the elector's ballot to be seen by another, except as provided by section 3505.24 of the Revised Code, with the apparent intention of letting it be known how the elector is about to vote",
+   "status": "verified",
+   "notes": "Searched ohiosos.gov FAQ (phone and photo limits there are for observers only). Statute read 2026-10-28; penalty line: 'Whoever violates this section is guilty of a felony of the fifth degree.'"
   },
   "line": {
    "en": "Polls close at 7:30 p.m. If you're in line by then, stay put. You have the right to vote.",
@@ -194,29 +204,38 @@
  },
  "sticker": {
   "tradition": {
-   "en": "In 2019 the Secretary of State ran a contest for students in grades 6 to 12 to design Ohio's I Voted sticker. Over 2,000 entries came in, and more than 15,000 votes picked the winner: Emily Legg, a 12th grader at Teays Valley High School in Pickaway County.",
-   "es": "En 2019 la Secretaría de Estado organizó un concurso para que estudiantes de 6.º a 12.º grado diseñaran el sticker de I Voted de Ohio. Llegaron más de 2,000 diseños, y más de 15,000 votos eligieron a la ganadora: Emily Legg, de 12.º grado en Teays Valley High School, en el condado de Pickaway.",
-   "src": "https://www.ohiosos.gov/office/media-center/categories/press-releases/2019-05-21",
-   "checked": "2026-10-21",
-   "quote": "Secretary LaRose selected the three finalists and more than 15,000 votes were cast for the winner -- Emily Legg, a 12th grader from Teays Valley High School in Pickaway County.",
-   "status": "verified"
+   "en": "For 2026, the Secretary of State unveiled a limited-edition America 250 \"I Voted\" sticker for the nation's 250th birthday. Each of Ohio's 88 county boards of elections gets a limited supply for this election. Ohio's earlier sticker came from a 2019 contest for students, won by Emily, a senior at Teays Valley High School in Pickaway County.",
+   "es": "Para 2026, la Secretaría de Estado presentó un sticker de \"I Voted\" de edición limitada de America 250 por los 250 años del país. Cada una de las 88 juntas electorales de condado de Ohio recibe una cantidad limitada para esta elección. El sticker anterior de Ohio salió de un concurso para estudiantes en 2019, que ganó Emily, estudiante de último año en Teays Valley High School, en el condado de Pickaway.",
+   "src": "https://www.ohiosos.gov/office/media-center/categories/press-releases/2026-06-12",
+   "checked": "2026-10-28",
+   "quote": "Each of Ohio's 88 county boards of elections will receive a limited supply of the new stickers for use during the 2026 General Election.",
+   "status": "verified",
+   "notes": "2019 winner from https://www.ohiosos.gov/office/media-center/categories/press-releases/2019-05-21 ('more than 15,000 votes were cast for the winner -- Emily Legg, a 12th grader from Teays Valley High School'). She was a high school student when named, so the page uses her first name and school only; surname removed. Votes wording dropped: 15,000 were cast in the vote, not all for her."
   },
   "early": {
-   "en": "Yes, while supplies last. The Secretary of State sent every county board of elections a limited supply of America 250 \"I Voted\" stickers for voters who vote in person, early or on Election Day.",
-   "es": "Sí, mientras haya. La Secretaría de Estado envió a cada junta electoral de condado una cantidad limitada de stickers de \"I Voted\" de America 250 para quienes votan en persona, de forma anticipada o el Día de las Elecciones.",
+   "en": "Yes, while supplies last. If you vote in person, early or on Election Day, you get the America 250 \"I Voted\" sticker from your county's limited supply.",
+   "es": "Sí, mientras haya. Si votas en persona, por anticipado o el Día de las Elecciones, recibes el sticker de \"I Voted\" de America 250 de la cantidad limitada de tu condado.",
    "src": "https://www.ohiosos.gov/office/media-center/categories/press-releases/2026-06-12",
-   "checked": "2026-10-24",
+   "checked": "2026-10-28",
    "quote": "Voters who cast a ballot in person during early voting or on Election Day will receive the commemorative sticker while supplies last.",
+   "status": "verified"
+  },
+  "mail": {
+   "en": "Cuyahoga County's board of elections offers a digital I Voted! sticker for people who voted by mail. Save it and share it.",
+   "es": "La junta electoral del condado de Cuyahoga ofrece un sticker digital de I Voted! para quienes votaron por correo. Guárdalo y compártelo.",
+   "src": "https://boe.cuyahogacounty.gov/i-voted-sticker",
+   "checked": "2026-10-28",
+   "quote": "Click the I Voted! sticker below, save it, and share it on your social media to show your fellow Ohioans that you voted by mail and made your voice heard!",
    "status": "verified"
   }
  },
  "faq": {
   "provisional": {
-   "en": "You may get one if your name isn't in the pollbook, you don't have a valid photo ID, you already asked for an absentee ballot, or you moved without updating your registration. It counts once officials confirm you're eligible. Without ID, bring one to your county board of elections within four days.",
-   "es": "Te la pueden dar si tu nombre no está en el padrón, si no tienes una identificación con foto válida, si ya pediste una boleta de voto en ausencia o si te mudaste sin actualizar tu registro. Se cuenta cuando confirman que tienes derecho a votar. Si no llevaste identificación, preséntala en la junta electoral de tu condado dentro de cuatro días.",
+   "en": "You may get one if your name isn't in the pollbook, you don't have a valid photo ID, you already asked for an absentee ballot, or you moved without updating your registration. It counts once officials confirm you're eligible and voted in the right precinct. Without ID, show one at your county board of elections within four days.",
+   "es": "Te la pueden dar si tu nombre no está en el padrón, si no tienes una identificación con foto válida, si ya pediste una boleta de voto en ausencia o si te mudaste sin actualizar tu registro. Se cuenta cuando confirman que tienes derecho a votar y que votaste en el precinto correcto. Si no llevaste identificación, preséntala en la junta electoral de tu condado dentro de cuatro días.",
    "src": "https://www.ohiosos.gov/elections/frequently-asked-questions",
-   "checked": "2026-10-21",
-   "quote": "If you did not show ID, you must present an approved form of identification to your county board of elections within four days after Election Day for your vote to count.",
+   "checked": "2026-10-28",
+   "quote": "it’s set aside until election officials confirm that you’re eligible to vote and voted in the correct precinct.",
    "status": "verified"
   },
   "line": {
@@ -228,11 +247,19 @@
    "status": "verified"
   },
   "track": {
-   "en": "Your absentee ballot comes with a tracking number. Track it through your county board of elections or the state's tracking system.",
-   "es": "Tu boleta de voto en ausencia trae un número de rastreo. Síguela con la junta electoral de tu condado o con el sistema de rastreo del estado.",
-   "src": "https://www.ohiosos.gov/elections/request-an-absentee-ballot",
-   "checked": "2026-10-21",
-   "quote": "You’ll receive a tracking number with your absentee ballot. Track your ballot status through your county board of elections or the state tracking system.",
+   "en": "Use the Secretary of State's Track Your Ballot page. Pick your county, and it sends you to that county's tracker.",
+   "es": "Usa la página Track Your Ballot de la Secretaría de Estado. Elige tu condado y te lleva a la herramienta de rastreo de ese condado.",
+   "src": "https://www.ohiosos.gov/directories/ballot-tracking",
+   "checked": "2026-10-28",
+   "quote": "To track your ballot, please either use the clickable map below or the list of Ohio counties to find the county in which you live.",
+   "status": "verified"
+  },
+  "late_mail": {
+   "en": "Yes, if it can't reach your county board of elections by 7:30 p.m. on November 3. A postmark doesn't count. Hand it in at the board office or its drop box instead. You can't turn it in at a polling place.",
+   "es": "Sí, si no puede llegar a la junta electoral de tu condado antes de las 7:30 p. m. del 3 de noviembre. El matasellos no cuenta. Mejor entrégala en la oficina de la junta o en su buzón de entrega. No puedes entregarla en un lugar de votación.",
+   "src": "https://codes.ohio.gov/ohio-revised-code/section-3509.05",
+   "checked": "2026-10-28",
+   "quote": "The return envelope shall be returned by no other person, in no other manner, and to no other location, except as otherwise provided in section 3509.08 of the Revised Code.",
    "status": "verified"
   }
  },

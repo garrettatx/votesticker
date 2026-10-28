@@ -155,7 +155,8 @@
    "rule": "id_nonphoto",
    "summary": "If you vote in person, you must show ID. Most voters use a Colorado driver's license or Colorado ID, but many other forms are accepted.",
    "source": "https://www.coloradosos.gov/pubs/elections/FAQs/ElectionDay.html",
-   "quote": "All voters who vote in-person must provide identification. While there are many forms of acceptable identification, most voters find it convenient to bring their Colorado driver's license or Colorado ID."
+   "quote": "All voters who vote in-person must provide identification. While there are many forms of acceptable identification, most voters find it convenient to bring their Colorado driver's license or Colorado ID.",
+   "checked": "2026-10-28"
   },
   "registration": {
    "rule": "yes",
@@ -550,8 +551,9 @@
   "id": {
    "rule": "photo_required",
    "summary": "You must show an unexpired photo ID, such as an Ohio driver's license, state ID card, U.S. passport, or military ID. Without one, you vote a provisional ballot.",
-   "source": "https://www.ohiosos.gov/elections",
-   "quote": "Ohio law requires voters to present a valid, unexpired photo ID that includes their name and photograph."
+   "source": "https://www.ohiosos.gov/elections/voter-ID-requirements",
+   "quote": "Ohio law requires voters to present a valid, unexpired photo ID that includes their name and photograph.",
+   "checked": "2026-10-28"
   },
   "registration": {
    "rule": "no",
@@ -564,7 +566,8 @@
    "rule": "limited",
    "summary": "State law bars letting others see your ballot to show how you are about to vote. No official guidance was found on sharing a ballot photo after voting.",
    "source": "https://codes.ohio.gov/ohio-revised-code/section-3599.20",
-   "quote": "being an elector, allow the elector's ballot to be seen by another, except as provided by section 3505.24 of the Revised Code, with the apparent intention of letting it be known how the elector is about to vote"
+   "quote": "being an elector, allow the elector's ballot to be seen by another, except as provided by section 3505.24 of the Revised Code, with the apparent intention of letting it be known how the elector is about to vote",
+   "checked": "2026-10-28"
   },
   "notes": "ohiosos.gov blocks curl (403); read in Chrome. Photo ID law HB 458 took effect April 2023; provisional voters without ID must show ID at the board of elections within four days (not quoted from the page). Oct 5 is computed from the 30-day rule. Selfie: R.C. 3599.20 wording is about a ballot 'about to' be voted; whether it reaches a post-voting selfie is unclear, and no SOS FAQ addresses it. Consider null if 'limited' overstates it."
  },
@@ -984,14 +987,16 @@
    "rule": "yes",
    "deadline": "Tuesday, October 13, 2026 (registration closes during the 20 days before the election). After that, register at your polling place on Election Day with proof of residence.",
    "summary": "Pre-registration closed October 13, 2026. You can still register at your polling place on Election Day if you bring proof of where you live.",
-   "source": "https://www.revisor.mn.gov/statutes/cite/201.061",
-   "quote": "At any time except during the 20 days immediately preceding any regularly scheduled election, an eligible voter ... may register or update a registration to vote"
+   "source": "https://www.sos.mn.gov/elections-voting/register-to-vote/register-on-election-day/",
+   "quote": "At any time except during the 20 days immediately preceding any regularly scheduled election, an eligible voter ... may register or update a registration to vote",
+   "checked": "2026-10-28"
   },
   "selfie": {
    "rule": "limited",
    "summary": "In the polling place, you may not reveal your vote or show your marked ballot to anyone. If you do, election judges set your ballot aside as spoiled.",
-   "source": "https://www.revisor.mn.gov/statutes/cite/204C.17",
-   "quote": "If a voter, after marking a ballot, shows it to anyone except as authorized by law, the election judges shall refuse to deposit the ballot in any ballot box and shall place it among the spoiled ballots."
+   "source": "https://www.sos.mn.gov/elections-voting/election-day-voting/polling-place-rules/",
+   "quote": "If a voter, after marking a ballot, shows it to anyone except as authorized by law, the election judges shall refuse to deposit the ballot in any ballot box and shall place it among the spoiled ballots.",
+   "checked": "2026-10-28"
   },
   "notes": "sos.mn.gov blocked all fetches (CAPTCHA), so answers rest on Minnesota Statutes at revisor.mn.gov. The Oct. 13 date is computed (last day before the 20-day closed period). The revisor flags that 201.061 subd. 3 (Election Day registration proof) was amended in the 2026 session; check effective dates. Selfie: 204C.17 does not mention photos; 'limited' reflects that it bars showing a marked ballot or revealing your vote inside the polling place, and says nothing about mail ballots. The SOS has said in past years that ballot photos aren't allowed at the polls; not confirmed on an official page this session."
  },
@@ -1145,8 +1150,9 @@
   "id": {
    "rule": "photo_requested",
    "summary": "You will be asked for a photo ID, such as a SC driver's license or U.S. passport. If you cannot get one, show your voter card and sign an impediment affidavit.",
-   "source": "https://scvotes.gov/voters/voter-faq/",
-   "quote": "If you cannot get a photo ID , bring your non-photo voter registration card with you to the polling place."
+   "source": "https://scvotes.gov/voters/photo-id-requirements/",
+   "quote": "If you cannot get a photo ID , bring your non-photo voter registration card with you to the polling place.",
+   "checked": "2026-10-28"
   },
   "registration": {
    "rule": "no",
@@ -1158,8 +1164,9 @@
   "selfie": {
    "rule": "not_allowed",
    "summary": "State law makes it unlawful for a voter to let anyone see their ballot. State law enforcement has warned this includes taking or sharing ballot photos.",
-   "source": "https://www.scstatehouse.gov/code/t07c025.php",
-   "quote": "It is unlawful in any election for a voter to: (1) allow his ballot to be seen by a person, except as provided by law"
+   "source": "https://scvotes.gov/wp-content/uploads/2026/04/2026-Poll-Manager-Handbook-FINAL-Digital.pdf",
+   "quote": "It is unlawful in any election for a voter to: (1) allow his ballot to be seen by a person, except as provided by law",
+   "checked": "2026-10-28"
   },
   "notes": "ID: if you forget a photo ID you have, you vote provisionally and must show it to the county office before certification; the reasonable impediment affidavit route is for voters who could not obtain one. The selfie classification relies on SC Code 7-25-100 plus a 2024 SLED warning reported by news outlets (SLED's own release not opened). Polls quote also appears on the 2026prep page. Registration quote applies to the Nov 3, 2026 general (2026prep page)."
  },
@@ -1271,14 +1278,16 @@
    "rule": "yes",
    "deadline": "Your county clerk must receive your registration by 5 p.m. Friday, October 23, 2026. After that, you can register in person at an early voting location or on Election Day with two forms of ID.",
    "summary": "Register by 5 p.m. October 23, 2026. After that, you can still register in person during early voting or on Election Day with two forms of ID.",
-   "source": "https://vote.utah.gov/current-election-information/",
-   "quote": "Registration must be received by the county clerk by the deadline above. Voters may register in-person on Election Day with two forms of valid ID."
+   "source": "https://vote.utah.gov/voter-id-requirements/",
+   "quote": "Registration must be received by the county clerk by the deadline above. Voters may register in-person on Election Day with two forms of valid ID.",
+   "checked": "2026-10-28"
   },
   "selfie": {
    "rule": "allowed",
    "summary": "State law lets you photograph your own ballot and share the photo. Photographing someone else's ballot at a polling place is a misdemeanor.",
-   "source": "https://le.utah.gov/xcode/Title20A/Chapter3a/20A-3a-S504.html",
-   "quote": "Subsection (1) does not prohibit an individual from transferring a photograph of the individual's own ballot in a manner that allows the photograph to be viewed by the individual or another."
+   "source": "https://le.utah.gov/xcode/Title20A/Chapter3A/20A-3a-S504.html",
+   "quote": "Subsection (1) does not prohibit an individual from transferring a photograph of the individual's own ballot in a manner that allows the photograph to be viewed by the individual or another.",
+   "checked": "2026-10-28"
   },
   "notes": "Changed recently: Utah used to count mail ballots postmarked before Election Day; a 2025 law (HB 300, per general knowledge) changed this, and the 2026 vote.utah.gov page confirms ballots must be received by 8 p.m. In-person poll hours are from Utah Code 20A-1-302 ('Polls at all elections on the date of the election shall open at 7 a.m. and shall remain open until 8 p.m.'). Same-day registrants vote a provisional ballot. The ID page also accepts a tribal ID without a photo."
  },

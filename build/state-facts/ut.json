@@ -11,6 +11,14 @@
   "le.utah.gov": {
    "en": "the Utah Election Code",
    "es": "el Código Electoral de Utah"
+  },
+  "vote.utahcounty.gov": {
+   "en": "Utah County Elections",
+   "es": "la oficina electoral del condado de Utah (Utah County Elections)"
+  },
+  "www.weberelections.gov": {
+   "en": "Weber County Elections",
+   "es": "la oficina electoral del condado de Weber (Weber County Elections)"
   }
  },
  "dates": {
@@ -33,8 +41,8 @@
    "quote": "Request Ballot By October 27, 2026 by 5pm",
    "status": "verified",
    "until": "2026-10-27",
-   "en_after": "Requests closed at 5 p.m. on October 27. You can still vote in person, early through October 30 or on Election Day.",
-   "es_after": "Las solicitudes cerraron a las 5 p. m. del 27 de octubre. Todavía puedes votar en persona, por anticipado hasta el 30 de octubre o el Día de las Elecciones."
+   "en_after": "Requests closed at 5 p.m. on October 27. You can still vote in person, early on the days your county sets or on Election Day.",
+   "es_after": "Las solicitudes cerraron a las 5 p. m. del 27 de octubre. Todavía puedes votar en persona, por anticipado en los días que fije tu condado o el Día de las Elecciones."
   },
   "mail_return": {
    "en": "Drop box or polling place: by 8 p.m. on Tuesday, November 3. Mail: your county clerk must receive it by 8 p.m. that day. A postmark isn't enough, and ballots that arrive after November 3 don't count.",
@@ -45,15 +53,16 @@
    "status": "verified"
   },
   "early_hours": {
-   "en": "Early voting runs Tuesday, October 20 to Friday, October 30, 2026. Every county holds it, but times and locations vary, so look yours up at vote.utah.gov.",
-   "es": "La votación anticipada va del martes 20 al viernes 30 de octubre de 2026. Todos los condados la ofrecen, pero los horarios y lugares cambian, así que busca los tuyos en vote.utah.gov.",
-   "src": "https://vote.utah.gov/wp-content/uploads/2026/09/2026-Voter-Information-Pamphlet.pdf",
-   "checked": "2026-10-21",
-   "quote": "All counties conduct early voting, although times and locations vary. Visit vote.utah.gov to find early voting locations and times.",
+   "en": "Each county sets its own early voting days, hours and places, and some keep going after Friday, October 30. Utah County, for example, votes early October 26 to 30 and on Monday, November 2, 8 a.m. to 5 p.m., at the Health and Justice Building in Provo. Look up your county's schedule at vote.utah.gov.",
+   "es": "Cada condado fija sus propios días, horarios y lugares de votación anticipada, y algunos siguen después del viernes 30 de octubre. El condado de Utah, por ejemplo, tiene votación anticipada del 26 al 30 de octubre y el lunes 2 de noviembre, de 8 a. m. a 5 p. m., en el Health and Justice Building de Provo. Busca el horario de tu condado en vote.utah.gov.",
+   "src": "https://vote.utahcounty.gov/voter-information",
+   "checked": "2026-10-28",
+   "quote": "Early Voting will be available at the Health and Justice Building located at 151 S University Ave, Ste 2500, Provo, UT 84606 from 8AM to 5PM on Monday, October 26th to Friday, October 30th, as well as on Monday, November 2nd.",
    "status": "verified",
-   "until": "2026-10-30",
-   "en_after": "Early voting ended October 30. On Election Day, polling locations are open 7 a.m. to 8 p.m.",
-   "es_after": "La votación anticipada terminó el 30 de octubre. El Día de las Elecciones, los lugares de votación abren de 7 a. m. a 8 p. m."
+   "until": "2026-11-02",
+   "en_after": "Early voting has ended. On Election Day, polling locations are open 7 a.m. to 8 p.m.",
+   "es_after": "La votación anticipada terminó. El Día de las Elecciones, los lugares de votación abren de 7 a. m. a 8 p. m.",
+   "notes": "Utah Code 20A-3a-601 (read 2026-10-28): the default period runs from 14 days before through the Friday before; '(3)(a) An election officer may extend the end of the early voting period to the day before the election date' and (3)(c) a county clerk may reduce it to at least four days. Other county schedules seen: Salt Lake County Government Center adds Saturday, October 31, 10 a.m. to 2 p.m. (saltlakecounty.gov early voting page, via search, not opened); Summit County October 28 to 31 (utah.gov public notice, via search, not opened)."
   },
   "cure": {
    "status": "missing",
@@ -62,13 +71,13 @@
  },
  "how": {
   "in_person": {
-   "en": "Your ballot comes in the mail, but you can also vote in person: early from October 20 to 30, or on Election Day from 7 a.m. to 8 p.m. Every county has at least one Election Day polling location.",
-   "es": "Tu boleta te llega por correo, pero también puedes votar en persona: por anticipado del 20 al 30 de octubre, o el Día de las Elecciones de 7 a. m. a 8 p. m. Cada condado tiene por lo menos un lugar de votación el Día de las Elecciones.",
+   "en": "Your ballot comes in the mail, but you can also vote in person: early, on the days and at the places your county sets, or on Election Day from 7 a.m. to 8 p.m. Every county has at least one Election Day polling location.",
+   "es": "Tu boleta llega por correo, pero también puedes votar en persona: por anticipado, en los días y lugares que fije tu condado, o el Día de las Elecciones de 7 a. m. a 8 p. m. Cada condado tiene al menos un lugar de votación el Día de las Elecciones.",
    "src": "https://vote.utah.gov/wp-content/uploads/2026/09/2026-Voter-Information-Pamphlet.pdf",
    "checked": "2026-10-21",
    "quote": "Eligible voters can vote in-person on Election Day. All counties must have at least one polling location.",
    "status": "verified",
-   "until": "2026-10-30",
+   "until": "2026-11-02",
    "en_after": "Your ballot comes in the mail, but you can also vote in person on Election Day from 7 a.m. to 8 p.m. Every county has at least one Election Day polling location.",
    "es_after": "Tu boleta te llega por correo, pero también puedes votar en persona el Día de las Elecciones de 7 a. m. a 8 p. m. Cada condado tiene por lo menos un lugar de votación el Día de las Elecciones."
   },
@@ -109,20 +118,20 @@
     "ID card issued by the state of Utah or the U.S. government",
     "Utah concealed carry permit",
     "U.S. passport",
-    "U.S. military ID card",
-    "Tribal ID card, Bureau of Indian Affairs card or tribal treaty card (no photo needed)"
+    "Currently valid U.S. military ID card",
+    "Tribal ID card (no photo needed)"
    ],
    "es": [
     "Licencia de conducir de Utah",
-    "Tarjeta de identificación del estado de Utah o del gobierno de EE. UU.",
-    "Permiso de Utah para portar armas ocultas (concealed carry permit)",
+    "Tarjeta de identificación emitida por el estado de Utah o el gobierno de EE. UU.",
+    "Permiso de portación oculta de armas de Utah (concealed carry permit)",
     "Pasaporte de EE. UU.",
-    "Tarjeta de identificación militar de EE. UU.",
-    "Identificación tribal, tarjeta de la Oficina de Asuntos Indígenas (Bureau of Indian Affairs) o tarjeta de tratado tribal (no necesita foto)"
+    "Identificación militar de EE. UU. vigente",
+    "Tarjeta de identificación tribal (no necesita foto)"
    ],
-   "src": "https://le.utah.gov/xcode/Title20A/Chapter1/20A-1-S102.html",
-   "checked": "2026-10-21",
-   "quote": "a form of identification that bears the name and photograph of the voter which may include:",
+   "src": "https://vote.utah.gov/voter-id-requirements/",
+   "checked": "2026-10-28",
+   "quote": "ONE primary form of ID that is valid (not expired), has your name, and has your photograph.",
    "status": "verified"
   },
   "expired": {
@@ -134,11 +143,11 @@
    "status": "verified"
   },
   "without": {
-   "en": "No photo ID? Bring two documents with your name that together show where you live, such as a birth certificate, a Social Security card, a government check or paycheck from the last 90 days, a Medicaid or Medicare card, or your current Utah vehicle registration.",
-   "es": "¿No tienes identificación con foto? Lleva dos documentos con tu nombre que juntos muestren dónde vives, como un acta de nacimiento, una tarjeta del Seguro Social, un cheque del gobierno o un talón de pago de los últimos 90 días, una tarjeta de Medicaid o Medicare, o el registro vigente de tu vehículo en Utah.",
-   "src": "https://le.utah.gov/xcode/Title20A/Chapter1/20A-1-S102.html",
-   "checked": "2026-10-21",
-   "quote": "two forms of identification not listed under Subsection (84)(a) or (b) but that bear the name of the voter and provide evidence that the voter resides in the voting precinct, which may include:",
+   "en": "No photo ID? Bring two documents that together prove your name and where you live now, such as a certified birth certificate, a valid Social Security card, a government check, a Medicaid, Medicare or EBT card, or your current Utah vehicle registration. Registering when you vote? You need two IDs: one that proves who you are and one that proves where you live.",
+   "es": "¿No tienes identificación con foto? Lleva dos documentos que juntos comprueben tu nombre y dónde vives ahora, como un acta de nacimiento certificada, una tarjeta de Seguro Social válida, un cheque del gobierno, una tarjeta de Medicaid, Medicare o EBT, o el registro vigente de tu vehículo en Utah. ¿Te vas a registrar al votar? Necesitas dos identificaciones: una que compruebe quién eres y otra que compruebe dónde vives.",
+   "src": "https://vote.utah.gov/voter-id-requirements/",
+   "checked": "2026-10-28",
+   "quote": "If you are not already registered to vote and are voting with a provisional ballot, you will need to show TWO acceptable forms of ID: one that verifies identity AND one for proof of residence.",
    "status": "verified"
   }
  },
@@ -187,8 +196,13 @@
    "status": "verified"
   },
   "phone": {
-   "status": "missing",
-   "notes": "No phone-use rule found in 20A-3a-501 or 20A-3a-204. The ballot photo rule (20A-3a-504) is in the existing selfie FAQ."
+   "en": "Utah law lets you photograph your own ballot and share the photo, whether you vote by mail or at a polling place. Taking a photo of anyone else's ballot at a polling place is a misdemeanor, and so is interfering with someone who is marking a ballot.",
+   "es": "La ley de Utah te permite tomarle foto a tu propia boleta y compartir la foto, ya sea que votes por correo o en un lugar de votación. Tomarle foto a la boleta de otra persona en un lugar de votación es un delito menor (misdemeanor), igual que interferir con alguien que está marcando su boleta.",
+   "src": "https://le.utah.gov/xcode/Title20A/Chapter3A/20A-3a-S504.html",
+   "checked": "2026-10-28",
+   "quote": "Subsection (1) does not prohibit an individual from transferring a photograph of the individual's own ballot in a manner that allows the photograph to be viewed by the individual or another.",
+   "status": "verified",
+   "notes": "Same section (1)(e): class C misdemeanor to take 'a photograph of a ballot, other than the individual's own ballot, at a polling place'; (1)(c) interfering with an individual inside the voting booth or marking a ballot. Read 2026-10-28 in Chrome."
   },
   "line": {
    "en": "In line at 8 p.m.? Stay in line. At a polling place you can still vote, and at a ballot drop box you can still drop off your sealed ballot.",
@@ -201,12 +215,13 @@
  },
  "sticker": {
   "tradition": {
-   "en": "In 2020, vote.utah.gov posted four I Voted stickers you could download and print at home.",
-   "es": "En 2020, vote.utah.gov publicó cuatro stickers de \"Ya voté\" (I Voted) para descargar e imprimir en casa.",
-   "src": "https://vote.utah.gov/stickers/",
-   "checked": "2026-10-21",
-   "quote": "Click here to download all four 2020 “I Voted” stickers",
-   "status": "verified"
+   "en": "For 2026, Weber County Elections held an America 250 \"I Voted\" sticker contest for local high school students. The winner is Hailey, a 10th grader at Ben Lomond High School, and her design goes to voters through the 2026 election cycle. Statewide, vote.utah.gov still offers four printable 2020 \"I Voted\" stickers.",
+   "es": "Para 2026, la oficina electoral del condado de Weber organizó un concurso de stickers de \"I Voted\" de America 250 para estudiantes de preparatoria. Quien ganó es Hailey, de 10.º grado en Ben Lomond High School, y su diseño se entrega a los votantes durante el ciclo electoral de 2026. A nivel estatal, vote.utah.gov todavía ofrece cuatro stickers de \"I Voted\" de 2020 para imprimir.",
+   "src": "https://www.weberelections.gov/250sticker",
+   "checked": "2026-10-28",
+   "quote": "Congratulations to Hailey, a 10th-grade student at Ben Lomond High School, whose design was chosen as this year's winning \"I Voted\" sticker!",
+   "status": "verified",
+   "notes": "Weber's page gives first name and school only. The 2020 printable stickers: https://vote.utah.gov/stickers/ ('Click here to download all four 2020 “I Voted” stickers', read 2026-10-21). Utah County's 2026 America 250 student winner was not found on vote.utahcounty.gov or utahcounty.gov (only in news), so it is left out. Spanish avoids a gendered word for the winner."
   }
  },
  "faq": {
