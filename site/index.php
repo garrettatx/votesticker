@@ -1576,6 +1576,19 @@ $vote_ld = array(
 			<?php echo $vote_li( 'In Sedgwick County, a high school sophomore drew the I voted sticker and a third grader drew the first Future Voter sticker.', 'https://www.sedgwick.gov/communications/news-releases/sedgwick-county-election-office-announces-winners-of-2026-voting-sticker-contests/', 'Kansas', 'kansas' ); ?>
 		</ul>
 		<p><?php echo vote_e( t( 'Not every new sticker comes from a contest.' ) ); ?> <a href="<?php echo vote_pbase(); ?>georgia/"><?php echo vote_e( t( 'Georgia’s 2026 sticker' ) ); ?></a> <?php echo vote_e( t( 'uses art by Georgia artist Steve Penley.' ) ); ?> <?php echo vote_e( t( 'Running a contest at your election office?' ) ); ?> <a href="https://www.eac.gov/blogs/best-practices-i-voted-sticker-contests" target="_blank" rel="noopener"><?php echo vote_e( t( 'The U.S. Election Assistance Commission has tips' ) ); ?></a>.</p>
+		<?php
+		// Every state's verified sticker story, first sentence, linked to its page (October 28). Same facts and
+		// sources as the state pages; a state shows here only once its story is verified.
+		$vote_stories = array();
+		foreach ( $vote_rows as $abbr => $row ) {
+			$f = vote_fact( $row, 'sticker.tradition' );
+			if ( ! $f ) { continue; }
+			$first = preg_split( '/(?<=[.!?])\s+(?=[A-Z"“¿])/u', $f['text'] )[0];
+			$vote_stories[] = '<li><a href="' . vote_pbase() . $vote_meta[ $abbr ]['slug'] . '/">' . vote_e( vote_lname( $row ) ) . '</a>: ' . vote_e( $first ) . '</li>';
+		}
+		if ( $vote_stories ) : ?>
+		<details class="stories"><summary><?php echo vote_e( t( 'Sticker stories from %s states', count( $vote_stories ) ) ); ?></summary><ul><?php echo implode( '', $vote_stories ); ?></ul></details>
+		<?php endif; ?>
 	</section>
 	<section class="why" aria-labelledby="why-h">
 		<h2 id="why-h" class="display-h"><?php echo vote_e( t( 'Why This Exists' ) ); ?></h2>
@@ -1600,7 +1613,7 @@ $vote_ld = array(
 		<?php else : ?>
 		<details><summary><?php echo vote_e( t( 'When should I switch to I voted?' ) ); ?></summary><p><?php echo vote_e( t( 'After you vote. Under What should it say?, choose I voted, or I voted early or I voted by mail if that fits.' ) ); ?></p></details>
 		<?php // Turnout (October 28): only what the studies show, with their limits; no claim that a sticker makes anyone vote. ?>
-		<details><summary><?php echo vote_e( t( 'Do I voted stickers get more people to vote?' ) ); ?></summary><p><?php echo vote_e( t( 'The research gives no simple yes or no.' ) ); ?> <a href="https://www.annenbergpublicpolicycenter.org/i-will-vote-using-future-oriented-frames-to-motivate-voters/" target="_blank" rel="noopener"><?php echo vote_e( t( 'A 2025 study' ) ); ?></a> <?php echo vote_e( t( 'found that seeing an "I Will Vote" sticker raised people’s plans to vote more than an "I Voted" sticker did, but it measured plans, not votes.' ) ); ?> <a href="https://www.nature.com/articles/nature11421" target="_blank" rel="noopener"><?php echo vote_e( t( 'A 2010 Facebook experiment' ) ); ?></a> <?php echo vote_e( t( 'with 61 million people found a small rise in turnout when people saw friends who said they had voted. That was a message inside Facebook, not a profile picture. That’s why the maker has messages for before you vote, like Vote early and Vote Nov 3, as well as I voted for after.' ) ); ?></p></details>
+		<details><summary><?php echo vote_e( t( 'Do I voted stickers get more people to vote?' ) ); ?></summary><p><?php echo vote_e( t( 'The research gives no simple yes or no.' ) ); ?> <a href="https://www.annenbergpublicpolicycenter.org/i-will-vote-using-future-oriented-frames-to-motivate-voters/" target="_blank" rel="noopener"><?php echo vote_e( t( 'A 2025 study' ) ); ?></a> <?php echo vote_e( t( 'found that seeing an "I Will Vote" sticker raised people’s plans to vote more than an "I Voted" sticker did, but it measured plans, not votes.' ) ); ?> <a href="https://www.nature.com/articles/nature11421" target="_blank" rel="noopener"><?php echo vote_e( t( 'A 2010 Facebook experiment' ) ); ?></a> <?php echo vote_e( t( 'with 61 million people found a small rise in voter turnout when people saw friends who said they had voted. That was a message inside Facebook, not a profile picture. That’s why the maker has messages for before you vote, like Vote early and Vote Nov 3, as well as I voted for after.' ) ); ?></p></details>
 		<?php endif; ?>
 		<?php if ( ! $vote_st ) : ?>
 		<details><summary><?php echo vote_e( t( 'Is it really free?' ) ); ?></summary><p><?php echo vote_e( t( "Yes. There's nothing to buy, no account and no email list. Garrett Digital built it as a public service and pays for the hosting." ) ); ?></p></details>
