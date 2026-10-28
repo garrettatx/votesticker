@@ -123,3 +123,10 @@ leads in Chrome, official verification, copy made plain, two agents at a time.
   https://www.clearscope.io/garrettdigital/drafts/01f61e95c7dc6fa5/editor?p=b8e694de . Queued after the batch 4
   Michigan facts land: read terms, research and outline; add whole topics to the Michigan page (2026 contest
   winners, digital sticker, history) only where they help a Michigan voter.
+- Localized results (Garrett, Oct 28): "i voted sticker" with no state shows state pages to searchers in that
+  state. GSC Oct 21 to 28: 405 impressions on state pages from queries with no state name, nearly all "i voted
+  early sticker" / "early voting sticker" (TX 115 imp 2 clicks at 7.3; NC 59 imp 0 clicks at 5.0; NY 41; FL 32).
+  So each state page also answers the generic query: sticker first, an early-voting version, where to get the
+  paper one. Open question for Garrett: put "I Voted Early Stickers" in titles while a state's early voting is
+  open (they switch to it after early voting ends). Garrett is running a Clearscope report for "i voted sticker"
+  from a Dallas location to compare.
