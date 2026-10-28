@@ -130,3 +130,16 @@ leads in Chrome, official verification, copy made plain, two agents at a time.
   paper one. Open question for Garrett: put "I Voted Early Stickers" in titles while a state's early voting is
   open (they switch to it after early voting ends). Garrett is running a Clearscope report for "i voted sticker"
   from a Dallas location to compare.
+
+### October 28, Night: Clearscope Reports Read With Perplexity; Next Steps
+
+Four Clearscope reports (national, Dallas, Michigan, Kansas from Overland Park) and Perplexity's read of them
+with GSC are in `docs/research/low-pages-20261028/` (clearscope-*-read, interpret-20261028.md). Kansas page is 6
+on desktop for "i voted sticker kansas", among county contest pages. Queue, in order:
+1. KS, TX, MI sticker stories (agent running): county stickers and the 2026 Michigan winners, sticker first.
+2. Mail-voter sticker answers missing on NC, NY, FL (sticker.mail); early answers exist for all three. OR, WA,
+   CA already answer mail; OR and WA have no early answer (mostly mail, so lower value).
+3. Michigan page order: official 2026 designs right after the gallery, trim repeated voting facts.
+4. Optional disclosure line: our stickers aren't proof of voting; official designs belong to their creators.
+5. "I Voted Early Stickers" in titles while early voting is open: waiting on Garrett.
+6. After Nov 3: localization test (same query, device and time across locations), archive with rights register.
