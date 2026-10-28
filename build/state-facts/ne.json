@@ -22,23 +22,26 @@
    "en": "Online and mail registration closed October 16. You can still register in person at your county election office until 6 p.m. on Friday, October 23, 2026.",
    "es": "El registro en línea y por correo cerró el 16 de octubre. Todavía puedes registrarte en persona en la oficina electoral de tu condado hasta las 6 p. m. del viernes 23 de octubre de 2026.",
    "src": "https://sos.nebraska.gov/sites/default/files/doc/elections/2026/2026_Election_Calendar.pdf",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "At 6 PM - last day for in-person voter registration. §32-302",
    "status": "verified",
    "until": "2026-10-23",
-   "en_after": "Registration closed at 6 p.m. on October 23, 2026. Not sure you're registered? Check Votercheck.",
-   "es_after": "El registro cerró a las 6 p. m. del 23 de octubre de 2026. ¿No sabes si estás registrado? Revisa Votercheck."
+   "en_after": "Registration closed at 6 p.m. on October 23, 2026. Became a U.S. citizen after that? You can still register and vote at your county election office until 7 p.m. Central (6 p.m. Mountain) on Election Day. Not sure you're registered? Check Votercheck.",
+   "es_after": "El registro cerró a las 6 p. m. del 23 de octubre de 2026. ¿Te hiciste ciudadano de EE. UU. después de esa fecha? Todavía puedes registrarte y votar en la oficina electoral de tu condado hasta las 7 p. m., hora del Centro (6 p. m., hora de la Montaña), el Día de las Elecciones. ¿No sabes si estás registrado? Revisa en Votercheck.",
+   "quote2": "7 PM CT (6 PM MT) - Deadline for a person who becomes a naturalized citizen after the close of voter registration to register to vote and subsequently vote. §32-942.01"
   },
   "mail_request": {
    "en": "Your county election office must receive your early voting application by 6 p.m. on Friday, October 23, 2026. Mail, fax or email a photo of the signed form.",
    "es": "La oficina electoral de tu condado debe recibir tu solicitud para votar por anticipado a más tardar a las 6 p. m. del viernes 23 de octubre de 2026. Mándala por correo, por fax o por email con una foto del formulario firmado.",
    "src": "https://sos.nebraska.gov/sites/default/files/doc/elections/2026/2026_Election_Calendar.pdf",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "At 6 PM - last day to receive an application for early voting ballots to be mailed out to a specific address. §32-941",
    "status": "verified",
    "until": "2026-10-23",
-   "en_after": "Applications for a mailed ballot closed at 6 p.m. on October 23, 2026. You can still vote early in person at your county election office through Monday, November 2.",
-   "es_after": "Las solicitudes de boleta por correo cerraron a las 6 p. m. del 23 de octubre de 2026. Todavía puedes votar por anticipado en persona en la oficina electoral de tu condado hasta el lunes 2 de noviembre."
+   "en_after": "Applications for a mailed ballot closed at 6 p.m. on October 23, 2026. You can still vote early in person at your county election office through Monday, November 2. Can't get there? Someone you name as your agent can pick up a ballot for you until 7 p.m. Central (6 p.m. Mountain) on Election Day.",
+   "es_after": "Las solicitudes de boleta por correo cerraron a las 6 p. m. del 23 de octubre de 2026. Todavía puedes votar por anticipado en persona en la oficina electoral de tu condado hasta el lunes 2 de noviembre. ¿No puedes ir? Una persona que nombres como tu agente puede recoger una boleta por ti hasta las 7 p. m., hora del Centro (6 p. m., hora de la Montaña), el Día de las Elecciones.",
+   "quote2": "7 PM CT (6 PM MT) - Deadline for agent to pick up early voting ballot. §32-943 Before 1 hour prior to the closing of the polls",
+   "notes": "Neb. Rev. Stat. 32-943: the agent requests the ballot in writing with the voter's ID, may act for no more than two voters, and the ballot must be returned by the time polls close."
   },
   "mail_return": {
    "en": "Get it to your county election office by 8 p.m. Central (7 p.m. Mountain) on Tuesday, November 3. A postmark isn't enough: it has to arrive by then, so if time is short, use a drop box in your county or bring it in.",
@@ -105,7 +108,7 @@
     "U.S. passport",
     "Military ID",
     "Tribal ID",
-    "A hospital, assisted-living, nursing home, hospice or care facility record with your name and photo"
+    "A record with your name and photo from a hospital, assisted-living facility, nursing home, hospice, developmental disabilities services agency or intermediate care facility"
    ],
    "es": [
     "Licencia de conducir de Nebraska",
@@ -115,11 +118,11 @@
     "Pasaporte de EE. UU.",
     "Identificación militar",
     "Identificación tribal",
-    "Un registro de un hospital, residencia asistida, asilo de ancianos, hospicio o centro de cuidado con tu nombre y foto"
+    "Un registro con tu nombre y foto de un hospital, un centro de vida asistida, un asilo de ancianos (nursing home), un hospicio, una agencia de servicios para discapacidades del desarrollo o un centro de cuidados intermedios"
    ],
    "src": "https://sos.nebraska.gov/elections/voter-id",
-   "checked": "2026-10-21",
-   "quote": "ID must have your name and photo. ID can be expired. Acceptable forms of photo ID are:",
+   "checked": "2026-10-28",
+   "quote": "Hospital, assisted-living facility, nursing home, hospice, home and community-based developmental disabilities services agency, or intermediate skilled care facility record that contains the voter’s name and photo.",
    "status": "verified"
   },
   "expired": {
@@ -131,12 +134,13 @@
    "status": "verified"
   },
   "without": {
-   "en": "Forgot it? Go home and get it before polls close, or vote a provisional ballot and show your ID in person at your county election office by the Tuesday after the election. If a disability, illness, missing documents or a religious objection keeps you from getting an ID, fill out a Reasonable Impediment Certification.",
-   "es": "¿Se te olvidó? Ve a tu casa por ella antes de que cierren los lugares de votación, o vota con una boleta provisional y muestra tu identificación en persona en la oficina electoral de tu condado a más tardar el martes después de la elección. Si una discapacidad, una enfermedad, la falta de documentos o una objeción religiosa te impide conseguir una identificación, llena una certificación de impedimento razonable (Reasonable Impediment Certification).",
+   "en": "Bring the ID itself. A photo of it on your phone or a photocopy won't work at the polls. Forgot it? Go home and get it before polls close, or vote a provisional ballot and show your ID in person at your county election office by Tuesday, November 10. If a disability, illness, a religious objection to being photographed, or documents you can't get without real difficulty or expense keep you from getting an ID, fill out a Reasonable Impediment Certification.",
+   "es": "Lleva la identificación original. Una foto en tu teléfono o una fotocopia no sirve en el lugar de votación. ¿Se te olvidó? Ve a casa por ella antes de que cierren las casillas, o vota con una boleta provisional y muestra tu identificación en persona en la oficina electoral de tu condado a más tardar el martes 10 de noviembre. Si una discapacidad, una enfermedad, una objeción religiosa a que te tomen fotos o documentos que no puedes conseguir sin mucha dificultad o gasto te impiden obtener una identificación, llena una certificación de impedimento razonable (Reasonable Impediment Certification).",
    "src": "https://sos.nebraska.gov/elections/voter-id",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "The voter will still be able to cast their vote, but their ballot will only count if the voter presents an acceptable form of ID to their county election office, in person, on or before the Tuesday following the election.",
-   "status": "verified"
+   "status": "verified",
+   "quote2": "Can a voter show a photocopy or an image of their photo ID on their phone to an election official in person rather than presenting the original photo ID? No, the voter must present the original photo ID to vote, whether that’s at the polls, early in person at the election office"
   }
  },
  "mail": {
@@ -149,12 +153,13 @@
    "status": "verified"
   },
   "witness": {
-   "en": "Seal and sign the return envelope. If someone helped you mark your ballot, that person signs it too.",
-   "es": "Cierra y firma el sobre de devolución. Si alguien te ayudó a marcar tu boleta, esa persona también lo firma.",
+   "en": "Seal and sign the return envelope. If someone helped you mark your ballot, that person signs it too. In a vote-by-mail county, also write your Nebraska driver's license or state ID number on the envelope, or put a copy of your photo ID or Reasonable Impediment Certification inside.",
+   "es": "Cierra y firma el sobre de devolución. Si alguien te ayudó a marcar tu boleta, esa persona también lo firma. En un condado que vota por correo, escribe también en el sobre el número de tu licencia de conducir o identificación estatal de Nebraska, o mete una copia de tu identificación con foto o de tu certificación de impedimento razonable (Reasonable Impediment Certification).",
    "src": "https://sos.nebraska.gov/elections/early-voting",
    "checked": "2026-10-21",
    "quote": "The envelope must be sealed and signed (or their mark made) by the voter and if assistance was provided by the person providing assistance.",
-   "status": "verified"
+   "status": "verified",
+   "quote2": "Voting in by-mail precincts or by-mail special elections : Write driver's license or state ID number on the ballot return envelope OR enclose a photocopy of acceptable form of ID OR enclose a photocopy of reasonable impediment certification (sos.nebraska.gov/elections/voter-id, read 2026-10-28)"
   },
   "track_url": "https://www.votercheck.necvr.ne.gov/voterview/",
   "cure": {
@@ -193,8 +198,8 @@
  },
  "sticker": {
   "tradition": {
-   "en": "Lancaster County held its first “I Voted” and “Future Voter” sticker contest. Katie Nieland’s winning “I Voted” design has been handed out since the May 12, 2026 primary, when voters put their ballots in the ballot box.",
-   "es": "El condado de Lancaster organizó su primer concurso de stickers de “I Voted” y “Future Voter”. El diseño ganador de “I Voted”, de Katie Nieland, se entrega desde la primaria del 12 de mayo de 2026, cuando los votantes depositan su boleta en la urna.",
+   "en": "Lancaster County picked new “I Voted” and “Future Voter” stickers in its first sticker contest. Katie Nieland’s winning “I Voted” design has been available since the May 12, 2026 primary.",
+   "es": "El condado de Lancaster eligió nuevos stickers de “I Voted” y “Future Voter” en su primer concurso de stickers. El diseño ganador de “I Voted”, de Katie Nieland, está disponible desde la primaria del 12 de mayo de 2026.",
    "src": "https://www.lancaster.ne.gov/DocumentCenter/View/30852",
    "quote": "Both stickers will be available beginning with the May 12, 2026, Primary Election.",
    "checked": "2026-10-26",

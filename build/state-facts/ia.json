@@ -13,8 +13,8 @@
    "es": "Voter Ready Iowa"
   },
   "www.legis.iowa.gov": {
-   "en": "the Iowa Code",
-   "es": "el Código de Iowa"
+   "en": "Iowa law (Iowa Code and Iowa Administrative Code)",
+   "es": "la ley de Iowa (Iowa Code e Iowa Administrative Code)"
   },
   "johnsoncountyiowa.gov": {
    "en": "the Johnson County Auditor & Elections Office",
@@ -96,8 +96,8 @@
   },
   "local_offices_url": "https://sos.iowa.gov/auditors",
   "rule": {
-   "en": "Iowa law says you vote at the polling place for the precinct where you live. Not sure where that is? Look it up by ZIP code or ask your county auditor.",
-   "es": "La ley de Iowa dice que votas en el lugar de votación del precinto donde vives. ¿No sabes cuál es? Búscalo con tu código postal o pregúntale al auditor de tu condado (County Auditor).",
+   "en": "Iowa law says you vote at the polling place for the precinct where you live. Not sure where that is? Look it up online or ask your county auditor.",
+   "es": "La ley de Iowa dice que votas en el lugar de votación del precinto donde vives. ¿No sabes cuál es? Búscalo en línea o pregúntale al auditor de tu condado (County Auditor).",
    "src": "https://voterready.iowa.gov/voting-at-the-polls/",
    "checked": "2026-10-21",
    "quote": "Iowa law requires each voter to vote in the polling place for the precinct where the voter lives. Voters with questions about where to vote may contact the county auditor or find their precinct online.",
@@ -137,12 +137,13 @@
    "status": "verified"
   },
   "without": {
-   "en": "No ID from the list? You can prove who you are and where you live with the documents used for Election Day registration. Otherwise you'll be offered a provisional ballot, and you can bring ID until the county canvass, the Monday after Election Day.",
-   "es": "¿No tienes una identificación de la lista? Puedes comprobar quién eres y dónde vives con los documentos que se usan para registrarse el Día de las Elecciones. Si no, te ofrecerán una boleta provisional, y puedes llevar tu identificación hasta el escrutinio del condado, el lunes después del Día de las Elecciones.",
-   "src": "https://sos.iowa.gov/voters/voter-id-faq",
-   "checked": "2026-10-21",
-   "quote": "Voters without the necessary ID will be offered a provisional ballot and can provide ID up until the time of the county canvass of votes (Monday after election day for Primary and General Elections).",
-   "status": "verified"
+   "en": "No ID from the list? A registered voter from your precinct can sign an oath at the polls swearing who you are and that you live in the precinct, and then you vote a regular ballot. You can also use the documents accepted for Election Day registration. If none of that works, you vote a provisional ballot.",
+   "es": "¿No tienes una identificación de la lista? Un votante registrado de tu precinto puede firmar un juramento en el lugar de votación que diga quién eres y que vives en el precinto, y entonces votas con una boleta regular. También puedes usar los documentos que se aceptan para registrarse el Día de las Elecciones. Si nada de eso funciona, votas con una boleta provisional.",
+   "src": "https://www.legis.iowa.gov/docs/code/49.78.pdf",
+   "checked": "2026-10-28",
+   "quote": "A person who is registered to vote but is unable to present a form of identification under subsection 2 or 3 may establish identity and residency in the precinct by written oath of a person who is also registered to vote in the precinct. ... A registered voter who fails to establish the voter’s identity under this section shall be permitted to cast a provisional ballot under section 49.81.",
+   "status": "verified",
+   "notes": "49.78(6): a voter who establishes identity under subsection 2, 3 or 4 'shall be furnished a ballot'. The SOS Voter ID FAQ adds that provisional voters can bring ID until the county canvass (the Monday after Election Day)."
   }
  },
  "mail": {
@@ -156,16 +157,21 @@
   },
   "track_url": "https://apps.sos.iowa.gov/elections/absenteeballotstatus/absentee/search",
   "cure": {
-   "en": "If your county auditor finds a problem with your returned envelope, they'll let you know. You can fix the affidavit in person at the auditor's office, ask for a replacement ballot or vote at the polls, until polls close on Election Day.",
-   "es": "Si el auditor de tu condado encuentra un problema con el sobre que devolviste, te avisará. Puedes corregir la declaración en persona en la oficina del auditor, pedir una boleta de reemplazo o votar en las casillas, hasta que cierren el Día de las Elecciones.",
+   "en": "If your county auditor gets your ballot by 5 p.m. on Saturday, October 31, and you forgot to sign the envelope, they'll contact you within 24 hours. You can then sign it in person at the auditor's office, vote a replacement ballot or vote at the polls, by the time polls close on Election Day. If your signature doesn't seem to match, the only fix is a replacement ballot that reaches the auditor before polls close.",
+   "es": "Si el auditor de tu condado recibe tu boleta a más tardar a las 5 p. m. del sábado 31 de octubre y se te olvidó firmar el sobre, te contactará en un plazo de 24 horas. Entonces puedes firmarlo en persona en la oficina del auditor, votar con una boleta de reemplazo o votar en tu lugar de votación, antes de que cierren las casillas el Día de las Elecciones. Si tu firma no parece coincidir, la única forma de corregirlo es una boleta de reemplazo que llegue al auditor antes de que cierren las casillas.",
    "src": "https://www.legis.iowa.gov/docs/code/53.18.pdf",
-   "checked": "2026-10-26",
-   "quote": "or complete the affidavit in person at the office of the commissioner not later than the time polls close on election day",
-   "status": "verified"
+   "checked": "2026-10-28",
+   "quote": "If the commissioner receives the return envelope containing the completed absentee ballot by 5:00 p.m. on the Saturday before the election for general elections ... If the affidavit lacks the signature of the registered voter, the commissioner shall, within twenty-four hours of the receipt of the envelope, notify the voter ... the voter may vote a replacement ballot as provided in subsection 3, cast a ballot as provided in section 53.19, subsection 3, or complete the affidavit in person at the office of the commissioner not later than the time polls close on election day.",
+   "status": "verified",
+   "notes": "53.18(3): a signature that appears to be signed by someone else is a defect; the ballot is not counted 'unless the voter requests and returns a replacement ballot in the time permitted under section 53.17, subsection 2' (received before the polls close)."
   },
   "dropbox": {
-   "status": "missing",
-   "notes": "The SOS and Voter Ready pages list only mail and hand delivery to the county auditor; neither page mentions drop boxes."
+   "en": "Some counties have one ballot drop box at the county auditor's office or on the county grounds around it. Counties don't have to offer one, so check with your auditor. The drop box closes when polls close on Election Day.",
+   "es": "Algunos condados tienen un buzón de entrega de boletas en la oficina del auditor del condado o en el terreno del condado que la rodea. Los condados no están obligados a tener uno, así que pregúntale a tu auditor. El buzón de entrega cierra cuando cierran las casillas el Día de las Elecciones.",
+   "src": "https://www.legis.iowa.gov/docs/code/53.17.pdf",
+   "checked": "2026-10-28",
+   "quote": "A commissioner is not required to establish a ballot drop box. ... A commissioner shall not establish more than one ballot drop box, which shall be located at the office of the commissioner, or on property owned and maintained by the county that directly surrounds the building where the office is located.",
+   "status": "verified"
   },
   "witness": {
    "status": "missing",
@@ -182,12 +188,13 @@
    "status": "verified"
   },
   "phone": {
-   "en": "Take your sticker selfie without getting in other voters' way. Iowa bans photos and showing your voted ballot only when it's for an illegal purpose or it interferes with other voters or the polling place.",
-   "es": "Tómate la selfie con tu sticker sin estorbar a otros votantes. Iowa prohíbe las fotos y mostrar tu boleta votada solo cuando es con un fin ilegal o cuando interfiere con otros votantes o con el lugar de votación.",
-   "src": "https://www.legis.iowa.gov/docs/code/49.88.pdf",
-   "checked": "2026-10-21",
-   "quote": "The use of photographic devices and the display of voted ballots is prohibited if such use or display is for purposes prohibited under chapter 39A, interferes with other voters, or interferes with the orderly operation of the polling place.",
-   "status": "verified"
+   "en": "You can take a photo of your own voted ballot, but only you and your ballot can be in it. It's against the rules if it gets in other voters' way, disrupts the polling place or is for an illegal purpose. Save the sticker selfie for after you vote.",
+   "es": "Puedes tomarle una foto a tu propia boleta votada, pero en la foto solo pueden salir tú y tu boleta. Está prohibido si estorba a otros votantes, interrumpe el lugar de votación o tiene un fin ilegal. Deja la selfie con tu sticker para después de votar.",
+   "src": "https://www.legis.iowa.gov/docs/iac/chapter/721.21.pdf",
+   "checked": "2026-10-28",
+   "quote": "A voter may not use a photographic device to display a voted ballot if doing so interferes with other voters or the orderly operation of the polling location or violates any part of Iowa Code chapter 39A. The display shall only include the voter and the voter’s ballot.",
+   "status": "verified",
+   "notes": "Iowa Administrative Code 721-21.77, implementing Iowa Code 49.88."
   },
   "line": {
    "en": "If you're at your precinct's polling place when it closes, stay. You can still vote.",

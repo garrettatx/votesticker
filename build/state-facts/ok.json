@@ -19,20 +19,23 @@
    "status": "verified"
   },
   "mail_request": {
-   "en": "Requests closed at 5 p.m. on Monday, October 19, 2026. You can still vote early in person or on Election Day.",
-   "es": "Las solicitudes cerraron a las 5 p. m. del lunes 19 de octubre de 2026. Todavía puedes votar por anticipado en persona o el Día de las Elecciones.",
+   "en": "Regular requests closed at 5 p.m. on Monday, October 19, 2026. Became physically incapacitated after that, for example from a hospital stay or childbirth, and can't vote in person? Ask your County Election Board about an emergency absentee ballot. Everyone else can still vote early in person or on Election Day.",
+   "es": "Las solicitudes regulares cerraron a las 5 p. m. del lunes 19 de octubre de 2026. ¿Quedaste físicamente incapacitado después de esa fecha, por ejemplo por una hospitalización o un parto, y no puedes votar en persona? Pregunta en la junta electoral de tu condado (County Election Board) por una boleta de voto en ausencia de emergencia. Los demás todavía pueden votar por anticipado en persona o el Día de las Elecciones.",
    "src": "https://oklahoma.gov/elections/voters/absentee-voting.html",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "The deadline to request an absentee ballot is 5:00 p.m., the third Monday (15 days) prior to an election.",
-   "status": "verified"
+   "status": "verified",
+   "quote2": "Emergency Incapacitated Voters Voters who become physically incapacitated after 5 p.m. on the third Monday (15 days) preceding an election and are unable to vote in person at the approppriate precinct on the day of the election may be eligible to apply.",
+   "notes": "Emergency page (oklahoma.gov/elections/voters/absentee-voting/emergency-incapacitated-voters.html, read 2026-10-28): written request plus a doctor's statement, hand-delivered by an agent (16 or older, one voter per election); two witnesses; 'Emergency Incapacitated Absentee Ballots must be received no later than 7 p.m. (CST) on Election Day.'"
   },
   "mail_return": {
-   "en": "By mail, your County Election Board must receive it by 7 p.m. on Tuesday, November 3. Hand-delivering it? Get it there by close of business on Monday, November 2.",
-   "es": "Por correo, la junta electoral de tu condado (County Election Board) debe recibirla a más tardar a las 7 p. m. del martes 3 de noviembre. ¿La vas a entregar en persona? Llévala antes del cierre de oficina del lunes 2 de noviembre.",
-   "src": "https://oklahoma.gov/elections/voters/absentee-voting.html",
-   "checked": "2026-10-21",
-   "quote": "Hand-delivered absentee ballots must be received by the County Election Board no later than the close of business, the Monday before the election.",
-   "status": "verified"
+   "en": "By mail, your County Election Board must receive it by 7 p.m. on Tuesday, November 3. A postmark isn't enough. Hand-delivering it? Bring your own ballot to the board by the end of business hours on Monday, November 2, and show the same ID you'd use at the polls. Either way, the affidavit must be notarized.",
+   "es": "Por correo, la junta electoral de tu condado (County Election Board) debe recibirla a más tardar a las 7 p. m. del martes 3 de noviembre. El matasellos no basta. ¿La vas a entregar en persona? Lleva tu propia boleta a la junta antes de que termine su horario del lunes 2 de noviembre y muestra la misma identificación que usarías para votar en persona. En los dos casos, la declaración debe estar notariada.",
+   "src": "https://oklahoma.gov/elections/voters/absentee-voting/standard-absentee-voters.html",
+   "checked": "2026-10-28",
+   "quote": "Hand-delivered ballots must be returned no later than the end of business hours on the day before the election, and the voter must show the same proof of identity required for in-person voting. Absentee ballots returned by mail or private delivery service must be received by the County Election Board by 7 p.m. (CST) on Election Day to be counted.",
+   "status": "verified",
+   "quote2": "Standard Absentee Ballot affidavits must be notarized, regardless of whether they are hand-delivered or mailed to the County Election Board."
   },
   "early_hours": {
    "en": "Wednesday through Friday, 8 a.m. to 6 p.m. Saturday, 8 a.m. to 2 p.m. Vote at your county's designated early voting location.",
@@ -99,16 +102,16 @@
    "status": "verified"
   },
   "expired": {
-   "en": "A photo ID can't expire before Election Day, unless it's valid indefinitely. The voter ID card from your county has no photo and still counts.",
-   "es": "Una identificación con foto no puede vencer antes del Día de las Elecciones, a menos que sea válida por tiempo indefinido. La tarjeta de votante de tu condado no tiene foto y aun así sirve.",
+   "en": "A photo ID needs an expiration date after Election Day, unless it's valid indefinitely. The voter ID card from your county has no photo and still counts.",
+   "es": "Una identificación con foto debe tener una fecha de vencimiento posterior al Día de las Elecciones, a menos que sea válida por tiempo indefinido. La tarjeta de votante de tu condado no tiene foto y aun así sirve.",
    "src": "https://oklahoma.gov/elections/voters/proof-of-identity.html",
    "checked": "2026-10-21",
    "quote": "An expiration date that is after the date of the election, unless the identification is valid indefinitely",
    "status": "verified"
   },
   "without": {
-   "en": "Don't leave. Ask for a provisional ballot and sign a sworn affidavit. After Election Day, your county checks your name, address, date of birth and license number or last four Social Security digits against your registration, and your ballot counts if they match.",
-   "es": "No te vayas. Pide una boleta provisional y firma una declaración jurada. Después del Día de las Elecciones, tu condado compara tu nombre, dirección, fecha de nacimiento y número de licencia o los últimos cuatro dígitos de tu Seguro Social con tu registro, y tu boleta cuenta si coinciden.",
+   "en": "Don't leave. Ask for a provisional ballot and sign a sworn affidavit. After Election Day, your county checks your name, address, date of birth and license number or last four Social Security digits against your registration. If they match and you're eligible, your ballot counts.",
+   "es": "No te vayas. Pide una boleta provisional y firma una declaración jurada. Después del Día de las Elecciones, tu condado compara tu nombre, dirección, fecha de nacimiento y número de licencia o los últimos cuatro dígitos de tu Seguro Social con tu registro. Si coinciden y cumples los requisitos, tu boleta cuenta.",
    "src": "https://oklahoma.gov/elections/voters/proof-of-identity.html",
    "checked": "2026-10-21",
    "quote": "If you do not have or if you refuse to show proof of identity, you may vote by provisional ballot and prove your identity by signing a sworn affidavit.",
@@ -169,12 +172,14 @@
  },
  "sticker": {
   "tradition": {
-   "en": "Ask for your I Voted sticker before you leave the election enclosure. The State Election Board's tip: wear it to encourage others to vote.",
-   "es": "Pide tu sticker de I Voted antes de salir del área electoral (election enclosure). El consejo de la Junta Electoral del Estado: llévalo puesto para animar a otros a votar.",
-   "src": "https://oklahoma.gov/elections/voters/voting-101.html",
-   "checked": "2026-10-21",
-   "quote": "Be sure to get an \"I Voted\" sticker before you leave the election enclosure and wear it to encourage others to get out and vote!",
-   "status": "verified"
+   "en": "For America's 250th birthday, the State Election Board brought out two limited-edition I Voted sticker designs for the June 16, 2026 election, at early voting sites and polling places across the state while supplies lasted. Ask your voting location which stickers it has, and get yours before you leave the election enclosure.",
+   "es": "Por el cumpleaños 250 de Estados Unidos, la Junta Electoral del Estado (State Election Board) sacó dos diseños de edición limitada del sticker de \"I Voted\" para la elección del 16 de junio de 2026, en los lugares de votación anticipada y de votación de todo el estado mientras hubo. Pregunta en tu lugar de votación qué stickers tiene, y pide el tuyo antes de salir del área de votación.",
+   "src": "https://oklahoma.gov/elections/newsroom/2026/june/early-voting-begins-thursday-for-june-16-election.html",
+   "checked": "2026-10-28",
+   "quote": "State Election Board Secretary Paul Ziriax announced that, “In honor of America’s 250th birthday, limited-edition ‘I Voted’ stickers will be available at early voting locations and polling places across the state, while supplies last.” There are two different designs.",
+   "status": "verified",
+   "quote2": "Voting 101: get an \"I Voted\" sticker before you leave the election enclosure and wear it to encourage others to get out and vote!",
+   "notes": "Release dated June 8, 2026, for the June 16 election. No November release confirms the designs are still stocked; 'while supplies last' kept."
   }
  },
  "faq": {
@@ -195,11 +200,11 @@
    "status": "verified"
   },
   "track": {
-   "en": "Track your absentee ballot on the OK Voter Portal.",
-   "es": "Sigue tu boleta en ausencia en el OK Voter Portal.",
-   "src": "https://oklahoma.gov/elections/newsroom/2026/august/state-election-board-offers-tips-and-reminders-ahead-of-august-2.html",
-   "checked": "2026-10-21",
-   "quote": "You can also use the portal to find your polling place and track the status of your absentee ballot.",
+   "en": "The OK Voter Portal shows when your absentee ballot was sent and when your County Election Board received it. It doesn't show whether it was counted. If your ballot is rejected, the board sends you a letter after the election explaining why.",
+   "es": "El OK Voter Portal muestra cuándo se envió tu boleta de voto en ausencia y cuándo la recibió la junta electoral de tu condado (County Election Board). No muestra si se contó. Si rechazan tu boleta, la junta te manda una carta después de la elección que explica por qué.",
+   "src": "https://oklahoma.gov/elections/voters/absentee-voting/standard-absentee-voters.html",
+   "checked": "2026-10-28",
+   "quote": "The OK Voter Portal provides information on your absentee ballot. You can see when your absentee ballot was sent. You can see when your absentee ballot is received by the County Election Board. If your absentee ballot was rejected, you will receive a letter from the County Election Board following the election. ... NOTE: The OK Voter Portal is a voter information system only, it does not “count” ballots or “tally” votes.",
    "status": "verified"
   }
  },

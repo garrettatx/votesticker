@@ -313,14 +313,16 @@
    "rule": "photo_required",
    "summary": "You must show a photo ID with your name and photo, such as a Nebraska driver's license, state ID, or U.S. passport. Expired IDs work. Without one, you vote provisionally.",
    "source": "https://sos.nebraska.gov/elections/voter-id",
-   "quote": "Yes, voters must present an acceptable form of photo ID before casting a ballot in every primary, general and special election."
+   "quote": "Yes, voters must present an acceptable form of photo ID before casting a ballot in every primary, general and special election.",
+   "checked": "2026-10-28"
   },
   "registration": {
    "rule": "no",
    "deadline": "Online by midnight and mail postmarked by Friday, October 16, 2026. In person at your county election office by 6 p.m. Friday, October 23, 2026.",
    "summary": "Register online or by mail by October 16, or in person at your county election office by 6 p.m. October 23. Nebraska has no Election Day registration.",
-   "source": "https://sos.nebraska.gov/sites/default/files/doc/elections/2026/2026_Election_Calendar.pdf",
-   "quote": "23-Oct At 6 PM - last day for in-person voter registration. §32-302"
+   "source": "https://nebraskalegislature.gov/laws/statutes.php?statute=32-942.01",
+   "quote": "23-Oct At 6 PM - last day for in-person voter registration. §32-302",
+   "checked": "2026-10-28"
   },
   "selfie": {
    "rule": "allowed",
@@ -645,8 +647,9 @@
   "id": {
    "rule": "photo_requested",
    "summary": "You'll be asked for a photo ID, such as an Idaho driver's license, U.S. passport, or tribal ID. If you don't have one, you can sign an identity affidavit.",
-   "source": "https://voteidaho.gov/guide-to-vote-in-person/",
-   "quote": "A registered voter may sign a Personal Identification Affidavit instead of presenting photo identification."
+   "source": "https://legislature.idaho.gov/statutesrules/idstat/title34/t34ch11/sect34-1114/",
+   "quote": "A registered voter may sign a Personal Identification Affidavit instead of presenting photo identification.",
+   "checked": "2026-10-28"
   },
   "registration": {
    "rule": "yes",
@@ -655,7 +658,10 @@
    "source": "https://voteidaho.gov/voter-registration/",
    "quote": "The deadline to register to vote online is 11 days before an election. You may also register when you vote in person at early voting or on Election Day."
   },
-  "selfie": null,
+  "selfie": {
+   "source": "https://legislature.idaho.gov/statutesrules/idstat/title34/t34ch11/sect34-1107/",
+   "checked": "2026-10-28"
+  },
   "notes": "Oct. 23 date and 5 p.m. local time are from the VoteIdaho calendar event 'Preregistration Deadline' (voteidaho.gov/event/preregistration-deadline-2/), citing Idaho Code 34-408 and 34-410. Idaho has two time zones (Mountain and, in the northern panhandle, Pacific); the 'local time' wording is mine, based on the statute's reference to county clerks. ID list also includes a concealed weapons license; Idaho does not use provisional ballots (VoteIdaho FAQ). Selfie: no provision found in Idaho Code Title 34 ch. 11 or Title 18 ch. 23 section titles, and no VoteIdaho guidance."
  },
  "IL": {
@@ -717,8 +723,9 @@
   "id": {
    "rule": "id_nonphoto",
    "summary": "You must show ID, such as an Iowa driver's license, U.S. passport, or the free Iowa Voter ID Card. Without it, another registered voter can attest for you.",
-   "source": "https://sos.iowa.gov/voters/voter-id-faq",
-   "quote": "Iowa voters are required to show an Iowa driver’s license or non-operator ID, U.S. passport, U.S. military ID or veteran’s ID, tribal ID/document, or Iowa voter ID card at the polls before they vote."
+   "source": "https://www.legis.iowa.gov/docs/code/49.78.pdf",
+   "quote": "Iowa voters are required to show an Iowa driver’s license or non-operator ID, U.S. passport, U.S. military ID or veteran’s ID, tribal ID/document, or Iowa voter ID card at the polls before they vote.",
+   "checked": "2026-10-28"
   },
   "registration": {
    "rule": "yes",
@@ -730,8 +737,9 @@
   "selfie": {
    "rule": "allowed",
    "summary": "Iowa law bans photos and showing your voted ballot only if done for an illegal purpose, or if it interferes with other voters or the polling place.",
-   "source": "https://www.legis.iowa.gov/docs/code/49.pdf",
-   "quote": "The use of photographic devices and the display of voted ballots is prohibited if such use or display is for purposes prohibited under chapter 39A, interferes with other voters, or interferes with the orderly operation of the polling place."
+   "source": "https://www.legis.iowa.gov/docs/iac/chapter/721.21.pdf",
+   "quote": "The use of photographic devices and the display of voted ballots is prohibited if such use or display is for purposes prohibited under chapter 39A, interferes with other voters, or interferes with the orderly operation of the polling place.",
+   "checked": "2026-10-28"
   },
   "notes": "The Oct. 19 date is computed from the SOS rule 'Pre-Registration Deadlines 15 days before the election' (Nov. 3 minus 15 days); no 2026 calendar was checked. The Iowa Voter ID Card has no photo, which is why this is id_nonphoto; Iowa Code chapter 49 lists the accepted IDs; tribal IDs need a photo, signature, and expiration date. Iowa Code 49.73 lets some polling places open later than 7 a.m. for some elections based on turnout; the 7 a.m. opening is the default. Selfie rule is a judgment call: Iowa Code 49.88(1) does not ban ballot photos outright, only for prohibited purposes or when disruptive. The Election Day FAQ says the media may not photograph how a voter marks a ballot."
  },
@@ -973,7 +981,10 @@
    "source": "https://www.sos.ms.gov/content/documents/elections/2026%20Elections%20Calendar.pdf",
    "quote": "5th Voter Registration Deadline (General): Applicants who register in-person in the Circuit Clerk’s office or Municipal Clerk’s office today, and those who mail registration applications post-marked no later than today are eligible to vote in the General Election."
   },
-  "selfie": null,
+  "selfie": {
+   "source": "https://www.sos.ms.gov/news/election-day-reminders-2026-general-election",
+   "checked": "2026-10-28"
+  },
   "notes": "Calendar is the SOS 2026 Elections Calendar (last revised 9/8/2026). The calendar lists only in-person and mail registration for this deadline; I did not see an online option. A runoff, if needed, is Dec. 1, 2026, with a Nov. 2 registration deadline. msvoterid.ms.gov is the Secretary of State's voter ID site. Selfie: no statute or SOS guidance on voters photographing ballots found; the 2026 County Election Handbook only cites an AG opinion that ballots should not be photographed during a ballot box examination."
  },
  "MO": {

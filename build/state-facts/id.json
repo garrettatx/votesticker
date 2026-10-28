@@ -11,6 +11,10 @@
   "archive.voteidaho.gov": {
    "en": "the Idaho Secretary of State (VoteIdaho.gov)",
    "es": "la Secretaría de Estado de Idaho (VoteIdaho.gov)"
+  },
+  "legislature.idaho.gov": {
+   "en": "Idaho law (Idaho Code)",
+   "es": "la ley de Idaho (Idaho Code)"
   }
  },
  "dates": {
@@ -22,19 +26,20 @@
    "quote": "Pre-registration Deadline: Voter registrations must be received by the county clerk by 5 p.m. local time — for the Nov. 3 election.",
    "status": "verified",
    "until": "2026-10-23",
-   "en_after": "Preregistration closed October 23. You can still register in person at your polling place on Election Day with a photo ID and proof of residence.",
-   "es_after": "El registro previo cerró el 23 de octubre. Todavía puedes registrarte en persona en tu lugar de votación el Día de las Elecciones con una identificación con foto y un comprobante de domicilio."
+   "en_after": "Preregistration closed October 23. You can still register and vote in person at early voting through October 30, or at your polling place on Election Day. Bring a photo ID and proof of residence.",
+   "es_after": "El registro previo cerró el 23 de octubre. Todavía puedes registrarte y votar en persona durante la votación anticipada hasta el 30 de octubre, o en tu lugar de votación el Día de las Elecciones. Lleva una identificación con foto y un comprobante de domicilio."
   },
   "mail_request": {
    "en": "Your county clerk must receive your absentee ballot request by 5 p.m. on Friday, October 23, 2026.",
    "es": "El secretario de tu condado (county clerk) debe recibir tu solicitud de boleta de voto en ausencia a más tardar a las 5 p. m. del viernes 23 de octubre de 2026.",
    "src": "https://archive.voteidaho.gov/download/2026-election-calendar.pdf",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "Absentee Ballot Application Deadline: Applications must be received by the county clerk by 5 p.m. — for the Nov. 3 election.",
    "status": "verified",
    "until": "2026-10-23",
-   "en_after": "Absentee requests closed at 5 p.m. on October 23. You can still vote in person on Election Day, 8 a.m. to 8 p.m.",
-   "es_after": "Las solicitudes de boleta de voto en ausencia cerraron a las 5 p. m. del 23 de octubre. Todavía puedes votar en persona el Día de las Elecciones, de 8 a. m. a 8 p. m."
+   "en_after": "Requests for a mailed ballot closed at 5 p.m. on October 23. In the hospital since after that? Your county clerk takes emergency absentee requests until 5 p.m. on Monday, November 2. Everyone else can vote early in person through Friday, October 30, or at the polls on Election Day.",
+   "es_after": "Las solicitudes de boleta por correo cerraron a las 5 p. m. del 23 de octubre. ¿Estás en el hospital desde después de esa fecha? La oficina del secretario de tu condado (county clerk) recibe solicitudes de emergencia de boleta de voto en ausencia hasta las 5 p. m. del lunes 2 de noviembre. Los demás pueden votar por anticipado en persona hasta el viernes 30 de octubre o en su lugar de votación el Día de las Elecciones.",
+   "quote2": "OCT. 29 Emergency Absentee Ballots: County clerks may receive emergency absentee ballot applications through 5 p.m. on November 2 from those who cannot be present for voting due to hospitalization if hospitalization began after 5 p.m. on October 23. [§34-1002A, Idaho Code]"
   },
   "mail_return": {
    "en": "Mail it with a stamp, drop it in an official elections drop box, or bring it to your county elections office. Your county clerk must receive it by 8 p.m. on Tuesday, November 3, 2026.",
@@ -100,28 +105,31 @@
    "en": [
     "Idaho driver's license or ID card",
     "U.S. passport or federal photo ID card",
+    "Tribal ID card",
     "Concealed weapons license issued by an Idaho county sheriff"
    ],
    "es": [
     "Licencia de conducir o tarjeta de identificación de Idaho",
     "Pasaporte de EE. UU. o identificación federal con foto",
+    "Tarjeta de identificación tribal",
     "Licencia para portar armas ocultas (concealed weapons license) expedida por un sheriff de condado de Idaho"
    ],
    "src": "https://voteidaho.gov/guide-to-vote-in-person/",
-   "checked": "2026-10-21",
-   "quote": "Concealed weapons license issued by a county sheriff in Idaho",
+   "checked": "2026-10-28",
+   "quote": "Idaho driver’s license or identification card U.S. Passport or Federal photo Identification card Tribal Identification card Concealed weapons license issued by a county sheriff in Idaho",
    "status": "verified"
   },
   "expired": {
    "status": "missing"
   },
   "without": {
-   "en": "No photo ID? If you're registered, sign a Personal Identification Affidavit with your name and address, swearing to who you are. You then get a regular ballot, counted with all the others.",
-   "es": "¿No tienes identificación con foto? Si estás registrado, firma una declaración jurada de identidad (Personal Identification Affidavit) con tu nombre y dirección, en la que juras quién eres. Luego recibes una boleta regular, que se cuenta con todas las demás.",
-   "src": "https://voteidaho.gov/guide-to-vote-in-person/",
-   "checked": "2026-10-21",
-   "quote": "After signing the Affidavit, the voter will be issued a ballot to be tabulated with all other ballots.",
-   "status": "verified"
+   "en": "No photo ID? If you're registered, sign a Personal Identification Affidavit instead. You give your name, your address and either your date of birth or your Idaho driver's license or ID card number. Poll workers check it against your registration, then give you a regular ballot.",
+   "es": "¿No tienes identificación con foto? Si estás registrado, firma en su lugar una declaración jurada de identidad (Personal Identification Affidavit). Das tu nombre, tu dirección y tu fecha de nacimiento o el número de tu licencia de conducir o identificación de Idaho. Los trabajadores electorales lo revisan contra tu registro y luego te dan una boleta regular.",
+   "src": "https://legislature.idaho.gov/statutesrules/idstat/title34/t34ch11/sect34-1114/",
+   "checked": "2026-10-28",
+   "quote": "The affidavit shall be on a form prescribed by the secretary of state and shall require the voter to provide the voter’s name, address, and either the voter’s date of birth or the voter’s Idaho driver’s license or identification card number. The voter shall sign the affidavit. The judges of election shall verify the information against the voter registration records prior to issuing a ballot.",
+   "status": "verified",
+   "notes": "Idaho Code 34-1114 as amended by 2026 Idaho Sess. Laws ch. 240. The VoteIdaho in-person guide still describes the older form (name and address) and says the ballot is 'tabulated with all other ballots'."
   }
  },
  "mail": {
@@ -157,15 +165,21 @@
  },
  "polls_rules": {
   "gear": {
-   "en": "Leave the campaign gear at home. Voting locations are neutral spaces, so don't wear or bring anything that promotes a candidate, issue or party on the ballot.",
-   "es": "Deja en casa lo de campaña. Los lugares de votación son espacios neutrales, así que no lleves puesto ni traigas nada que promueva a un candidato, una propuesta o un partido de la boleta.",
-   "src": "https://voteidaho.gov/guide-to-vote-in-person/",
-   "checked": "2026-10-21",
-   "quote": "Voting locations are neutral, non-partisan spaces, so do not wear or bring anything to vote that promotes a candidate, issue, or party on the ballot.",
+   "en": "Leave the campaign gear at home. Don't wear or bring anything that promotes a candidate, issue or party on the ballot. Campaigning and asking for votes are banned inside the building and within 250 feet of the voters' entrance.",
+   "es": "Deja en casa la ropa y los artículos de campaña. No uses ni lleves nada que promueva a un candidato, una propuesta o un partido de la boleta. Está prohibido hacer campaña y pedir votos dentro del edificio y a menos de 250 pies de la entrada que usan los votantes.",
+   "src": "https://legislature.idaho.gov/statutesrules/idstat/title18/t18ch23/sect18-2318/",
+   "checked": "2026-10-28",
+   "quote": "No person may, within a polling place, within any building in which an election is being held, or within two hundred fifty (250) feet of the primary entrance and exit used by voters at a polling place or other voting location: (i) Do any electioneering; ... (iv) Advocate for or against any candidate or measure; (v) Solicit votes in any manner or by any means;",
    "status": "verified"
   },
   "phone": {
-   "status": "missing"
+   "en": "Idaho law has no rule on phones or ballot photos at the polls. Ask a poll worker before you take a picture inside, and take your sticker selfie once you're done voting.",
+   "es": "La ley de Idaho no tiene una regla sobre teléfonos o fotos de la boleta en el lugar de votación. Pregúntale a un trabajador electoral antes de tomar una foto adentro, y tómate la selfie con tu sticker cuando termines de votar.",
+   "src": "https://legislature.idaho.gov/statutesrules/idstat/title34/t34ch11/sect34-1107/",
+   "checked": "2026-10-28",
+   "quote": "On receipt of his ballot the elector shall retire to a vacant voting booth and mark his ballot according to the instructions provided by law.",
+   "status": "verified",
+   "notes": "Read every section of Idaho Code title 18 chapter 23 (election crimes) and title 34 chapter 11 (conduct of elections) on 2026-10-28; none mentions phones, cameras, photographs or showing a marked ballot. 34-1107 (manner of voting) is the closest rule. VoteIdaho guide and FAQ have no phone rule."
   },
   "line": {
    "en": "Polls close at 8 p.m. If you're in line by then, stay put. You can still vote.",

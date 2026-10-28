@@ -168,8 +168,8 @@
   },
   "track_url": "https://myelectionday.sos.state.ms.us/VoterOutreach/Pages/VOSearch.aspx",
   "witness": {
-   "en": "Mark your ballot in front of a notary or another official who can give oaths, then sign the affidavit on the back of the envelope and have them sign too. If you have a temporary or permanent physical disability, any witness 18 or older can sign instead. The application needs the same kind of witness.",
-   "es": "Marca tu boleta frente a un notario u otro funcionario autorizado para tomar juramentos, luego firma la declaración al reverso del sobre y pídele que firme también. Si tienes una discapacidad física temporal o permanente, puede firmar cualquier testigo de 18 años o más. La solicitud necesita el mismo tipo de testigo.",
+   "en": "Your ballot envelope needs a witness: a notary or another official who can give oaths signs the affidavit on the back with you. If you have a temporary or permanent physical disability, any witness 18 or older can sign instead. The application needs the same kind of witness.",
+   "es": "El sobre de tu boleta necesita un testigo: un notario u otro funcionario autorizado para tomar juramentos firma contigo la declaración al reverso. Si tienes una discapacidad física temporal o permanente, puede firmar cualquier testigo de 18 años o más. La solicitud necesita el mismo tipo de testigo.",
    "src": "https://www.sos.ms.gov/yall-vote/absentee-voting-information",
    "checked": "2026-10-21",
    "quote": "All absentee ballot envelopes must be witnessed/signed by an official authorized to administer oath, such as a notary public, unless the voter is temporary or permanently physically disabled.",
@@ -185,16 +185,22 @@
  },
  "polls_rules": {
   "gear": {
-   "en": "Leave the campaign shirts and buttons at home. It's against the law to post or hand out campaign literature within 150 feet of the polling place, unless it's on private property, and that includes T-shirts, buttons and the like with a candidate's name or likeness. Loitering within 30 feet is out too.",
-   "es": "Deja en casa las camisetas y botones de campaña. Está prohibido por ley poner o repartir propaganda de campaña a menos de 150 pies del lugar de votación, a menos que sea en propiedad privada, y eso incluye camisetas, botones y cosas parecidas con el nombre o la imagen de un candidato. Tampoco se permite quedarse merodeando a menos de 30 pies.",
+   "en": "Leave the campaign shirts and buttons at home. Campaigning for a candidate within 150 feet of any polling place entrance is against the law, unless it's on private property, and that includes T-shirts and buttons with a candidate's name or likeness. The first 30 feet from each entrance stays clear for everyone except election officials, voters waiting to vote and authorized poll watchers.",
+   "es": "Deja en casa las camisetas y botones de campaña. La ley prohíbe hacer campaña por un candidato a menos de 150 pies de cualquier entrada del lugar de votación, salvo en propiedad privada, y eso incluye camisetas y botones con el nombre o la imagen de un candidato. Los primeros 30 pies desde cada entrada deben quedar libres para todos, excepto los funcionarios electorales, los votantes que esperan para votar y los observadores autorizados.",
    "src": "https://www.sos.ms.gov/yall-vote/elections-101",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "It is unlawful to post or distribute any campaign literature within 150 feet of the polling place unless on private property. This includes wearing any T-shirts, buttons, etc. with a candidate’s name or likeness as well.",
-   "status": "verified"
+   "status": "verified",
+   "quote2": "Campaigning: It is unlawful to campaign for any candidate within 150 feet of any entrance to a polling place, unless on private property. Loitering: The polling places should be clear for 30 feet from every entrance of all people except election officials, voters waiting to vote, or authorized poll watchers. (SOS Election Day reminders, October 26, 2026)"
   },
   "phone": {
-   "status": "missing",
-   "notes": "No statute or SOS guidance on phones or ballot photos found (same finding as docs/faq-sources.json)."
+   "en": "Don't take a picture of your marked ballot. Mississippi's Secretary of State says voters can't photograph their marked ballot. Take your sticker selfie after you vote instead.",
+   "es": "No le tomes foto a tu boleta marcada. La Secretaría de Estado de Mississippi dice que los votantes no pueden fotografiar su boleta marcada. Mejor tómate la selfie con tu sticker después de votar.",
+   "src": "https://www.sos.ms.gov/news/election-day-reminders-2026-general-election",
+   "checked": "2026-10-28",
+   "quote": "Camera Phones: Voters are prohibited from taking pictures of their marked ballot.",
+   "status": "verified",
+   "notes": "SOS Election Day reminders, October 26, 2026. The release cites no statute; no Mississippi Code section on ballot photos was found."
   },
   "line": {
    "en": "If you're in line at 7 p.m., you have the right to vote.",
@@ -207,12 +213,13 @@
  },
  "sticker": {
   "tradition": {
-   "en": "For 2026, the Secretary of State ran a contest for Mississippi voters to design the I voted sticker for all 82 counties.",
-   "es": "Para 2026, la Secretaría de Estado organizó un concurso para que los votantes de Mississippi diseñaran el sticker de \"I voted\" para los 82 condados.",
+   "en": "In 2025, Mississippi's Secretary of State held a contest for registered voters 18 and older to design the I Voted sticker for all 82 counties to use during the 2026 election cycle. Entries closed October 31, 2025.",
+   "es": "En 2025, la Secretaría de Estado de Mississippi hizo un concurso para que los votantes registrados de 18 años o más diseñaran el sticker de \"I Voted\" que los 82 condados usarían durante el ciclo electoral de 2026. La inscripción cerró el 31 de octubre de 2025.",
    "src": "https://www.sos.ms.gov/news/i-voted-sticker-contest-submission-deadline-1031",
-   "checked": "2026-10-21",
-   "quote": "Anyone 18 years and older who is registered to vote in Mississippi is encouraged to design and submit artwork to be used as the \"I Voted\" sticker for all 82 counties during the 2026 election cycle .",
-   "status": "verified"
+   "checked": "2026-10-28",
+   "quote": "All submissions are due by 5:00 p.m. on Friday, October 31, 2025. ... Anyone 18 years and older who is registered to vote in Mississippi is encouraged to design and submit artwork to be used as the \"I Voted\" sticker for all 82 counties during the 2026 election cycle .",
+   "status": "verified",
+   "notes": "Release dated October 21, 2025. No winner announcement found on sos.ms.gov (news archive checked October 28, 2026). Harrison County's student contest (WLOX, Dec 10, 2025) has no county-government source; not used."
   }
  },
  "faq": {
