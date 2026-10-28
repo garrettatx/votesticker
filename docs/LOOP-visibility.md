@@ -115,3 +115,7 @@ leads in Chrome, official verification, copy made plain, two agents at a time.
   the order moved.
 - Batch 4 (after 3 wraps up): TN, NM, IL, AZ, MI, OH, CO, MN, SC, UT. Batch 5: AK, NJ, LA, MD, WA, OR, NC, NY,
   FL, CA, TX (the strongest pages; same method, care not to disturb what ranks).
+- Clearscope report for "i voted sticker" (home page target), Garrett Oct 28:
+  https://www.clearscope.io/garrettdigital/drafts/fba219da313974ae/editor?p=b8e694de . Clearscope returned
+  "Too many requests" twice at about 5:40 p.m.; retry on a later pass. Use it as a gap check on the home page
+  (terms fitted only where they read naturally; rankings are regional, so GSC by query stays the measure).
