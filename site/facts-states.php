@@ -2588,6 +2588,10 @@ return array(
 				'en' => 'GoVoteKY.gov (Kentucky State Board of Elections)',
 				'es' => 'el portal oficial para votantes de Kentucky (GoVoteKY.gov)',
 			),
+			'www.kentucky.gov' => array(
+				'en' => 'the Kentucky Secretary of State (Kentucky.gov)',
+				'es' => 'la Secretaría de Estado de Kentucky (Kentucky.gov)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Registration closed Monday, October 5, 2026.',
@@ -2605,10 +2609,10 @@ return array(
 			'es_after' => 'Las solicitudes de boleta por correo cerraron el 20 de octubre de 2026. Todavía puedes votar por anticipado en persona o en tu lugar de votación el Día de las Elecciones.',
 		),
 		'dates.mail_return' => array(
-			'en' => 'Your county clerk must receive your ballot by 6 p.m. local time on Tuesday, November 3, 2026. Mail it as soon as you get it, or use your county\'s drop box.',
-			'es' => 'La oficina del secretario de tu condado (county clerk) debe recibir tu boleta a más tardar a las 6 p. m., hora local, del martes 3 de noviembre de 2026. Mándala en cuanto la recibas, o usa el buzón de entrega de tu condado.',
+			'en' => 'Your county clerk must receive your ballot by 6 p.m. local time on Tuesday, November 3, 2026. A postmark isn\'t enough, so mail it today or hand it in at your county\'s drop box.',
+			'es' => 'La oficina del secretario de tu condado (county clerk) debe recibir tu boleta a más tardar a las 6 p. m., hora local, del martes 3 de noviembre de 2026. El matasellos no basta, así que mándala hoy o entrégala en el buzón de entrega de tu condado.',
 			'src' => 'https://elect.ky.gov/Voters/Pages/Voting-In-Person-and-By-Mail.aspx',
-			'checked' => '2026-10-21',
+			'checked' => '2026-10-28',
 		),
 		'dates.early_hours' => array(
 			'en' => 'Each county sets its own early voting hours. Find yours on GoVoteKY.gov or call your county clerk\'s office.',
@@ -2620,10 +2624,13 @@ return array(
 			'es_after' => 'La votación anticipada terminó el 31 de octubre. Vota en tu lugar de votación el Día de las Elecciones, de 6 a. m. a 6 p. m., hora local.',
 		),
 		'how.in_person' => array(
-			'en' => 'Anyone can vote early in person on the Thursday, Friday and Saturday before Election Day, no excuse needed. If you have an approved excuse, such as surgery, the last trimester of pregnancy or a work schedule that covers every voting hour, you can also vote excused in-person absentee on set days before that.',
-			'es' => 'Cualquier persona puede votar por anticipado en persona el jueves, viernes y sábado antes del Día de las Elecciones, sin dar una razón. Si tienes una razón aceptada, como una cirugía, el último trimestre de embarazo o un horario de trabajo que cubre todas las horas de votación, también puedes votar en ausencia en persona con excusa en ciertos días antes de esos.',
-			'src' => 'https://www.sos.ky.gov/Documents/2026%20Kentucky%20Election%20Guide.pdf',
-			'checked' => '2026-10-21',
+			'en' => 'Registered Kentucky voters can vote early in person Thursday to Saturday, October 29 to 31, no excuse needed. Voters with an approved excuse, such as surgery, the last trimester of pregnancy or a work schedule that covers every voting hour, can also vote in person October 21 to 23 and 26 to 28.',
+			'es' => 'Los votantes registrados en Kentucky pueden votar por anticipado en persona de jueves a sábado, del 29 al 31 de octubre, sin dar una razón. Si tienes una razón aceptada, como una cirugía, el último trimestre de embarazo o un horario de trabajo que cubre todas las horas de votación, también puedes votar en persona del 21 al 23 y del 26 al 28 de octubre.',
+			'src' => 'https://elect.ky.gov/Voters/Pages/Voting-In-Person-and-By-Mail.aspx',
+			'checked' => '2026-10-28',
+			'until' => '2026-10-28',
+			'en_after' => 'Registered Kentucky voters can vote early in person Thursday to Saturday, October 29 to 31, no excuse needed. Hours and places are set by each county.',
+			'es_after' => 'Los votantes registrados en Kentucky pueden votar por anticipado en persona de jueves a sábado, del 29 al 31 de octubre, sin dar una razón. Cada condado fija los horarios y lugares.',
 		),
 		'how.first_time' => array(
 			'en' => 'Registered but never got your confirmation card? Call your county clerk\'s office to check the status of your registration.',
@@ -2687,10 +2694,10 @@ return array(
 			'checked' => '2026-10-21',
 		),
 		'polls_rules.phone' => array(
-			'en' => 'Photographing a voter inside the voting room isn\'t allowed, so save your sticker selfie for after you step out.',
-			'es' => 'No se permite tomarle fotos a un votante dentro del cuarto de votación, así que guarda la selfie con tu sticker para cuando salgas.',
-			'src' => 'https://www.sos.ky.gov/Documents/2026%20Kentucky%20Election%20Guide.pdf',
-			'checked' => '2026-10-21',
+			'en' => 'Kentucky lets you photograph yourself and your own ballot in the voting room. Don\'t photograph other voters, and don\'t use the picture to campaign within 100 feet of an entrance voters use.',
+			'es' => 'En Kentucky puedes tomarte una foto a ti y a tu propia boleta en la sala de votación. No les tomes fotos a otros votantes, y no uses la foto para hacer campaña a menos de 100 pies de una entrada que usen los votantes.',
+			'src' => 'https://apps.legislature.ky.gov/law/kar/titles/031/004/170/',
+			'checked' => '2026-10-28',
 		),
 		'polls_rules.line' => array(
 			'en' => 'If you\'re in line at 6 p.m., you\'ll be allowed to vote.',
@@ -2699,10 +2706,10 @@ return array(
 			'checked' => '2026-10-21',
 		),
 		'sticker.tradition' => array(
-			'en' => 'For 2026, the Secretary of State\'s third annual I voted sticker contest is open to Kentucky students in kindergarten through 12th grade. The winning design will be handed to voters in participating counties during the 2026 general election.',
-			'es' => 'Para 2026, el tercer concurso anual de stickers de "I voted" de la Secretaría de Estado está abierto a estudiantes de Kentucky desde kínder hasta 12.º grado. El diseño ganador se va a entregar a los votantes de los condados participantes durante la elección general de 2026.',
-			'src' => 'https://www.sos.ky.gov/civic-initiatives/Pages/i-voted-sticker-contest.aspx',
-			'checked' => '2026-10-21',
+			'en' => 'Kentucky\'s 2026 I voted sticker is a smiling sun over rolling Kentucky pasture with a blue outline of the state, drawn by Ryker, a student at Bush Elementary in Laurel County. Voters picked it from the finalists with more than 3,500 ballots at the Kentucky State Fair. Laurel County gets the stickers from the Secretary of State\'s Office, and other county clerks can request them for November, so not every polling place will have one.',
+			'es' => 'El sticker "I Voted" de Kentucky para 2026 es un sol sonriente sobre los pastizales de Kentucky con el contorno del estado en azul. Lo dibujó Ryker, estudiante de la escuela primaria Bush en el condado de Laurel. Los votantes lo eligieron entre los finalistas con más de 3,500 votos en la Feria Estatal de Kentucky. El condado de Laurel recibe los stickers de la Secretaría de Estado, y otros condados pueden pedirlos para noviembre, así que no todos los lugares de votación los tendrán.',
+			'src' => 'https://www.kentucky.gov/Pages/Activity-stream.aspx?n=SOS&prId=569',
+			'checked' => '2026-10-28',
 		),
 		'election_day.hours' => array(
 			'en' => 'Polling places are open 6 a.m. to 6 p.m. local time.',
