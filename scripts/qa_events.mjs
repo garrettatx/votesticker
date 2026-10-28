@@ -11,7 +11,7 @@ import { webkit, chromium, devices } from 'playwright';
 
 const args = process.argv.slice(2);
 const BASE = (() => { const i = args.indexOf('--base'); return i >= 0 ? args[i + 1] : 'http://127.0.0.1:8791/'; })();
-const ALLOWED = ['sticker_save', 'sticker_save_cancel', 'sticker_hold_open', 'sticker_builder_start', 'post_text_copy', 'share', 'state_search_miss'];
+const ALLOWED = ['sticker_save', 'sticker_save_cancel', 'sticker_hold_open', 'sticker_builder_start', 'post_text_copy', 'share', 'state_search_miss', 'save_hint_open'];
 let failed = 0;
 const fail = (m) => { failed++; console.log('  FAIL ' + m); };
 const ok = (m) => console.log('  ok   ' + m);
@@ -168,6 +168,38 @@ console.log('iPhone, retry and double tap (texas/)');
 	await page.click('#save', { force: true });
 	await page.waitForTimeout(300);
 	check((await events(page)).length === 0 && (await page.evaluate(() => window.VOTE_LAST_SAVE)) === 'busy', 'a second tap while the sheet is open sends nothing');
+	check(errors.length === 0, `no page errors ${errors.join(' | ')}`);
+	await browser.close();
+}
+
+// October 28: after a closed share sheet, one line under what was tapped (the maker's Save, or the gallery),
+// in the page's language; its button opens press and hold and sends save_hint_open; the next try hides it.
+for (const [url, word] of [['texas/', "Didn't save?"], ['es/texas/', '¿No se guardó?']]) {
+	console.log(`iPhone, hint after a closed share sheet (${url})`);
+	const { browser, page, errors } = await open(webkit, devices['iPhone 15'], url, 'abort');
+	await page.waitForFunction(() => document.querySelector('#save')?.getAttribute('aria-disabled') !== 'true');
+	await page.locator('#save').scrollIntoViewIfNeeded();
+	await page.click('#save');
+	await page.waitForTimeout(300);
+	await events(page);
+	const h = await page.evaluate(() => { const p = document.getElementById('save-cancel'); return p && { shown: !p.hidden && p.offsetHeight > 0, text: p.textContent, after: p.previousElementSibling && p.previousElementSibling.id }; });
+	check(h && h.shown && h.text.startsWith(word) && h.after === 'tip', `maker: hint shown after #tip in the page language ${JSON.stringify(h)}`);
+	await page.click('#save-cancel button');
+	await page.waitForTimeout(200);
+	check(await page.evaluate(() => { const b = document.getElementById('hold-save'); return !!(b && !b.hidden); }), 'hint button opens press and hold');
+	one(await events(page), 'save_hint_open', {}, 'hint button event');
+	await page.click('.hold-save__close');
+	const tile = page.locator('#gallery-grid a.tile').first();
+	await tile.scrollIntoViewIfNeeded();
+	await page.waitForTimeout(500);
+	await tile.click();
+	await page.waitForTimeout(300);
+	const g = await page.evaluate(() => { const p = document.getElementById('save-cancel'); return p && { shown: !p.hidden, after: p.previousElementSibling && p.previousElementSibling.id }; });
+	check(g && g.shown && g.after === 'gallery-grid', `gallery: hint moves under the gallery ${JSON.stringify(g)}`);
+	await page.evaluate(() => { window.__share = 'ok'; });
+	await tile.click();
+	await page.waitForTimeout(300);
+	check(await page.evaluate(() => document.getElementById('save-cancel').hidden), 'the next try hides the hint');
 	check(errors.length === 0, `no page errors ${errors.join(' | ')}`);
 	await browser.close();
 }

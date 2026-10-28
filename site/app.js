@@ -1983,15 +1983,39 @@
 	// opens) or press_hold (no file or no sharing). Returns how it started, for QA: share, hold, or busy when
 	// a sheet is already open (Safari rejects a second share() then, which used to count as a save).
 	var sharing = false;
-	function saveOnIOS(blob, name, src, alt, done) {
+	// After a closed share sheet (October 28: about half of iPhone attempts on Oct 27, few tried again), one
+	// line under what was tapped: tap again for Save Image, or open the press-and-hold view. Hidden on the
+	// next attempt. `where` is the element the line goes after.
+	function cancelHint(where, src, alt) {
+		var p = $('save-cancel');
+		if (!p) {
+			p = document.createElement('p');
+			p.id = 'save-cancel';
+			p.className = 'hint';
+			p.setAttribute('role', 'status');
+			p.appendChild(document.createTextNode(T("Didn't save? Tap it again and choose Save Image, or") + ' '));
+			var b = document.createElement('button');
+			b.type = 'button';
+			b.className = 'link-quiet';
+			b.textContent = T('open it to press and hold');
+			b.addEventListener('click', function () { p.hidden = true; holdToSave(p.dataset.src, p.dataset.alt); track('save_hint_open', {}); });
+			p.appendChild(b);
+		}
+		p.dataset.src = src;
+		p.dataset.alt = alt || '';
+		if (where && where.parentNode) { where.parentNode.insertBefore(p, where.nextSibling); }
+		p.hidden = false;
+	}
+	function saveOnIOS(blob, name, src, alt, done, where) {
 		done = done || function () {};
 		if (sharing) { return 'busy'; }
+		if ($('save-cancel')) { $('save-cancel').hidden = true; }
 		if (blob && canShareFile(blob.type)) {
 			var file = new File([blob], name, { type: blob.type });
 			var fallback = function (err) {
 				sharing = false;
 				// Closing the share sheet is not an error and gets nothing more; anything else gets press and hold.
-				if (err && err.name === 'AbortError') { done('cancelled'); return; }
+				if (err && err.name === 'AbortError') { done('cancelled'); cancelHint(where, src, alt); return; }
 				holdToSave(src, alt);
 				done('share_error');
 			};
@@ -2051,7 +2075,7 @@
 			var done = saved({ state: state.state, sticker_source: 'maker', design: state.design, palette: state.palette, message: state.headline });
 			if (DEVICE !== 'ios') { done('download'); return; }
 			e.preventDefault();
-			window.VOTE_LAST_SAVE = saveOnIOS(current.blob, current.name, current.url, $('preview').alt, done);
+			window.VOTE_LAST_SAVE = saveOnIOS(current.blob, current.name, current.url, $('preview').alt, done, $('tip'));
 		});
 	}
 
@@ -2086,7 +2110,7 @@
 			if (DEVICE !== 'ios') { done('download'); return; }
 			e.preventDefault();
 			var src = a.getAttribute('href'), b = readyBlobs[src], img = a.querySelector('img');
-			window.VOTE_LAST_SAVE = saveOnIOS(b && b !== 'loading' ? b : null, a.getAttribute('download') || 'vote-sticker.png', src, img ? img.alt : '', done);
+			window.VOTE_LAST_SAVE = saveOnIOS(b && b !== 'loading' ? b : null, a.getAttribute('download') || 'vote-sticker.png', src, img ? img.alt : '', done, grid);
 		});
 		if (DEVICE !== 'ios') { return; }
 		Array.prototype.forEach.call(grid.querySelectorAll('a.pick'), function (a) {
@@ -2113,7 +2137,7 @@
 			if (DEVICE !== 'ios') { done('download'); return; }
 			e.preventDefault();
 			var src = a.getAttribute('href'), b = readyBlobs[src], img = a.querySelector('img');
-			window.VOTE_LAST_SAVE = saveOnIOS(b && b !== 'loading' ? b : null, a.getAttribute('download') || 'vote-sticker.jpg', src, img ? img.alt : '', done);
+			window.VOTE_LAST_SAVE = saveOnIOS(b && b !== 'loading' ? b : null, a.getAttribute('download') || 'vote-sticker.jpg', src, img ? img.alt : '', done, grid);
 		});
 		if (DEVICE !== 'ios') { return; }
 		var watch = function () {
