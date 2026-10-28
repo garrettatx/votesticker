@@ -22,7 +22,7 @@ edit files, and every quote is re-read before it goes on a page.
 |---|---|---|---|
 | 1 | **"In line when polls close" for the 19 states without it** (`polls_rules.line`: DC FL GA IA IL MD MT NC ND NH NM SD TX UT VA VT WA WV WY) | The most useful Election Day sentence, and missing for TX, FL, GA and NC | Done Oct 26: all 19 |
 | 2 | **Keyboard-only walkthrough of the maker and state pages** | About now says the controls work with a keyboard; prove it or fix it | Done Oct 26: passes, no change |
-| 3 | **Sticker story for the 18 states without one** (`sticker.tradition`: AR AZ CA DC DE IA IL IN MA ME NE NJ NV PA SC TX VA WI), official sources only | The sticker is the brand, and the big states have nothing | 5 of 18 done Oct 26 (CA IA MA PA TX); rest in the log |
+| 3 | **Sticker story for the 18 states without one** (`sticker.tradition`: AR AZ CA DC DE IA IL IN MA ME NE NJ NV PA SC TX VA WI), official sources only | The sticker is the brand, and the big states have nothing | 9 of 18 done Oct 26 (CA IA MA PA TX, then AZ IN NE WI); SC and VA left off on purpose; AR DC DE IL ME NJ NV open, see the Oct 28 log |
 | 4 | **Tilt control** (Straight, Left, Right) under the swatches; `render` already takes `tilt` | Cheap design range from the October 22 work | Done Oct 26 |
 | 5 | **"Future voter"** message for kids and families, EN and ES | Useful on Election Day and after it | Done Oct 26 |
 | 6 | **Guide type:** body text 17 px, line height about 1.6, in the guide sections | Backlog review item; long FAQ answers on phones | Done Oct 26 |
@@ -106,3 +106,10 @@ After Nov 5: image file names (map built) with `ImageObject` once reuse terms ar
 - **Oct 26, push 3 of the day (10:32 CDT):** loop 3 after card QA (81,120 cards with the two new
   messages, Chromium and WebKit, 0 outside the safe circle), save and event QA passed. No more pushes
   today; today's scheduled build (not started at 10:32) will ship all three loops.
+- **Oct 28, item 3 (sticker stories), status.** The table said 5 of 18; commit `b0b8c92` (Oct 26 evening)
+  added AZ, IN, NE and WI, so it is 9. Searched the open seven again. NE re-read in Chrome: Lancaster County's
+  release (DocumentCenter/View/30852) matches the live story. IL: Lake County's 2026 contest winner isn't
+  posted on lakecountyil.gov. NJ: Camden County has a contest call, no winners. NV: the only 2026 item is a
+  limited "I Voted at Allegiant Stadium" sticker for Election Day voters at that vote center; the source is a
+  Raiders release that quotes Registrar Lorena Portillo, and Clark County's own pages don't mention it, so it
+  stays off the page until the county posts it. AR, DC, DE, ME: nothing new.
