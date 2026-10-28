@@ -237,3 +237,6 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
   `047cb58` and dispatched run 40678514466 (success, 3m36s). Live Louisiana and Pennsylvania: the summary, banner
   and FAQ say early voting ended October 27, the share image is `og/ended/<state>.jpg` (200), and the gallery keeps
   its I voted early stickers for those who voted early. First push of the day.
+- **Oct 28, 6:30 a.m.:** BigQuery: no `analytics_559738937` dataset yet in `seo-command-ctr` (14 datasets, none
+  analytics; read with the service account, gcloud user auth has lapsed). GA4 creates it on the first daily export,
+  which can take up to a day after the Oct 27 link. Re-check this afternoon, then read the dataset's expiry.
