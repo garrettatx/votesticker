@@ -31,8 +31,15 @@
    "status": "verified"
   },
   "mail_request": {
-   "status": "missing",
-   "notes": "K.S.A. 25-1122(f)(1)(B) says mail applications for the general election are filed 'between 90 days prior to such election and the Tuesday of the week preceding such general election' (that reads as Tuesday, October 27, 2026). No official page states the 2026 calendar date, so it is not computed here."
+   "en": "Applications for a ballot by mail had to reach your county election office by Tuesday, October 27. You can still vote early in person at your county election office or a satellite site until noon Monday, November 2.",
+   "es": "Las solicitudes de boleta por correo tenían que llegar a la oficina electoral de tu condado a más tardar el martes 27 de octubre. Todavía puedes votar por anticipado en persona en la oficina electoral de tu condado o en un lugar satélite hasta el mediodía del lunes 2 de noviembre.",
+   "src": "https://www.ksrevisor.gov/statutes/chapters/ch25/025_011_0022.html",
+   "checked": "2026-10-28",
+   "quote": "for the general election occurring on the Tuesday following the first Monday in November in both even-numbered and odd-numbered years, between 90 days prior to such election and the Tuesday of the week preceding such general election",
+   "status": "verified",
+   "until": "2026-11-02",
+   "en_after": "Applications for a ballot by mail are closed. Vote at your polling place on Election Day.",
+   "es_after": "Las solicitudes de boleta por correo ya cerraron. Vota en tu lugar de votación el Día de las Elecciones."
   },
   "mail_return": {
    "en": "Drop your ballot at your county election office, an authorized drop box or a polling place before polls close on Tuesday, November 3, and it counts. Mailing it? The Secretary of State says a court order covers this election: mailed ballots postmarked by Election Day count if they arrive by the last mail delivery on Friday, November 6. Kansas law without that order requires arrival by the close of polls, so mail it early.",
@@ -85,8 +92,8 @@
   },
   "local_offices_url": "https://sos.ks.gov/elections/county_election_officers.aspx",
   "rule": {
-   "en": "Look up your polling place on VoterView by entering your address. You can also check your registration and the status of your mail ballot there.",
-   "es": "Busca tu lugar de votación en VoterView con tu dirección. Ahí también puedes revisar tu registro y el estado de tu boleta por correo.",
+   "en": "Use VoterView to find your polling place, check your registration and track your mail ballot.",
+   "es": "Usa VoterView para encontrar tu lugar de votación, revisar tu registro y dar seguimiento a tu boleta por correo.",
    "src": "https://kansasvoterinfo.gov/VoterView",
    "checked": "2026-10-21",
    "quote": "Confirm your address, party association, mail-in ballot statuses, and polling place locations.",
@@ -130,21 +137,21 @@
    "status": "verified"
   },
   "without": {
-   "en": "Forgot your ID? You'll vote a provisional ballot, and it counts once you get your photo ID to the county election office before the county canvass. Don't have a photo ID? You can get a free nondriver ID card from the Kansas Division of Motor Vehicles.",
-   "es": "¿Olvidaste tu identificación? Votarás con una boleta provisional, y cuenta cuando lleves tu identificación con foto a la oficina electoral del condado antes del escrutinio del condado. ¿No tienes identificación con foto? Puedes sacar gratis una identificación para no conductores en la División de Vehículos Motorizados de Kansas (Kansas Division of Motor Vehicles).",
-   "src": "https://sos.ks.gov/elections/election-faq.html",
-   "checked": "2026-10-21",
-   "quote": "Registered voters who do not have an approved government-issued photo ID and would like one to vote may apply for a free nondriver identification card with the Kansas Division of Motor Vehicles.",
+   "en": "Forgot your ID? You'll vote a provisional ballot. It's only valid once you get your photo ID to the county election office before the county canvass, so ask your county for that date. Some voters don't need a photo ID: permanent advance voters, military and overseas voters and their families, and voters with a religious objection who sign a Declaration of Religious Objection.",
+   "es": "¿Olvidaste tu identificación? Votarás con una boleta provisional. Solo es válida cuando llevas tu identificación con foto a la oficina electoral de tu condado antes del escrutinio del condado (county canvass), así que pregunta en tu condado cuál es esa fecha. Algunos votantes no necesitan identificación con foto: los votantes anticipados permanentes, los votantes militares y en el extranjero y sus familias, y quienes tienen una objeción religiosa y firman una Declaración de Objeción Religiosa (Declaration of Religious Objection).",
+   "src": "https://sos.ks.gov/elections/voter-information.html",
+   "checked": "2026-10-28",
+   "quote": "The provisional ballot will not be considered valid until the voter submits their photographic identification to before the county canvass. ... Exemptions from photo ID requirements exist for: permanent advance voters (voters with illness or disabilities); military and overseas voters and their spouses and dependents; and voter with religious objections who sign a Declaration of Religious Objection (Form DRO).",
    "status": "verified"
   }
  },
  "mail": {
   "who": {
-   "en": "Any Kansas voter can vote by mail, no excuse needed. You have to apply for a mail ballot for each election, with your driver's license number or a copy of your photo ID.",
-   "es": "Cualquier votante de Kansas puede votar por correo, sin dar una razón. Tienes que pedir una boleta por correo para cada elección, con el número de tu licencia de conducir o una copia de tu identificación con foto.",
-   "src": "https://sos.ks.gov/elections/election-faq.html",
-   "checked": "2026-10-21",
-   "quote": "You do not need an excuse to advance vote by mail ballot. However, you do need to apply to have an advanced by mail ballot mailed to you for each election",
+   "en": "Any Kansas voter can vote by mail, no excuse needed. Most voters apply for a mail ballot for each election, with a driver's license number or a copy of a photo ID. If you have a permanent disability or a permanent illness, you can apply once for permanent advance voting status.",
+   "es": "Cualquier votante de Kansas puede votar por correo sin dar una razón. La mayoría pide una boleta por correo para cada elección, con el número de su licencia de conducir o una copia de una identificación con foto. Si tienes una discapacidad permanente o una enfermedad permanente, puedes pedir una sola vez el estatus de votante anticipado permanente (permanent advance voting status).",
+   "src": "https://www.ksrevisor.gov/statutes/chapters/ch25/025_011_0022.html",
+   "checked": "2026-10-28",
+   "quote": "Any person having a permanent disability or an illness that has been diagnosed as a permanent illness is hereby authorized to make an application for permanent advance voting status.",
    "status": "verified"
   },
   "track_url": "https://kansasvoterinfo.gov/VoterView",
@@ -179,8 +186,12 @@
    "status": "verified"
   },
   "phone": {
-   "status": "missing",
-   "notes": "No statute or SOS guidance on phones or ballot photos found (same finding as docs/faq-sources.json)."
+   "en": "Kansas's ballot secrecy law covers election workers, who can't reveal your ballot or push you to show it. We found no state law or Secretary of State rule on phones or photos at the polls, so ask a poll worker before you take a photo inside, and keep other voters' ballots out of it.",
+   "es": "La ley de Kansas sobre el secreto del voto se aplica a los trabajadores electorales, que no pueden revelar tu boleta ni presionarte para que la muestres. No encontramos ninguna ley estatal ni regla de la Secretaría de Estado sobre celulares o fotos en el lugar de votación, así que pregunta a un trabajador electoral antes de tomar una foto adentro, y no saques las boletas de otros votantes.",
+   "src": "https://www.ksrevisor.gov/statutes/chapters/ch25/025_024_0022.html",
+   "checked": "2026-10-28",
+   "quote": "Unauthorized voting disclosure is, while being charged with any election duty, intentionally: (1) Disclosing or exposing the contents of any ballot, whether cast in a regular or provisional manner, or the name of any voter who cast such ballot ... or (2) inducing or attempting to induce any voter to show how the voter marks or has marked the voter's ballot.",
+   "status": "verified"
   },
   "line": {
    "en": "Stay in line. Everyone in line when the polls close gets to vote.",
@@ -193,18 +204,18 @@
  },
  "sticker": {
   "tradition": {
-   "en": "The Secretary of State's own list of what to expect when you vote ends with leaving the polling place, and a reminder not to forget your sticker.",
-   "es": "La propia lista de la Secretaría de Estado sobre qué esperar cuando votas termina con salir del lugar de votación, y un recordatorio de no olvidar tu sticker.",
-   "src": "https://sos.ks.gov/elections/election-faq.html",
-   "checked": "2026-10-21",
-   "quote": "Exit the polling place (don’t forget your sticker)",
+   "en": "In Sedgwick County, students design the stickers. Rylin, a sophomore at Maize South High School, drew the 2026 \"I Voted\" sticker, with a Western Meadowlark, wheat, a sunflower and the State Capitol. Penelope, a third grader at Colwich Elementary, drew the county's first \"Future Voter\" sticker. Judges picked them from 305 and 163 entries.",
+   "es": "En el condado de Sedgwick, estudiantes diseñan los stickers. Rylin, estudiante de segundo año de Maize South High School, dibujó el sticker de \"I Voted\" de 2026, con un pradero occidental (Western Meadowlark), trigo, un girasol y el Capitolio del estado. Penelope, estudiante de tercer grado de Colwich Elementary, dibujó el primer sticker de \"Future Voter\" del condado. Los jueces los eligieron entre 305 y 163 propuestas.",
+   "src": "https://www.sedgwick.gov/communications/news-releases/sedgwick-county-election-office-announces-winners-of-2026-voting-sticker-contests/",
+   "checked": "2026-10-28",
+   "quote": "Rylin, a sophomore at Maize South High School, won the contest for the \"I Voted\" sticker, which was open to students in grades 6-12. ... Penelope, a third-grade student at Colwich Elementary, is the winner of the first \"Future Voter\" sticker contest. ... A panel of judges from the community picked the winning artwork from 305 \"I Voted\" sticker entries and 163 \"Future Voter\" designs",
    "status": "verified"
   },
   "mail": {
-   "en": "In Sedgwick County, yes. The county election office says voters can wear the 2026 stickers they get at the polls or in an advance by mail ballot, so check your envelope.",
-   "es": "En el condado de Sedgwick, sí. La oficina electoral del condado dice que puedes usar los stickers de 2026 que recibes en las urnas o con tu boleta por correo anticipada (advance by mail), así que revisa tu sobre.",
+   "en": "In Sedgwick County, yes. The county election office says voters can wear the 2026 stickers they get at the polls or in a mail ballot, so check your envelope.",
+   "es": "En el condado de Sedgwick, sí. La oficina electoral del condado dice que los votantes pueden usar los stickers de 2026 que reciben en el lugar de votación o en su boleta por correo, así que revisa tu sobre.",
    "src": "https://www.sedgwick.gov/communications/news-releases/sedgwick-county-election-office-announces-winners-of-2026-voting-sticker-contests/",
-   "checked": "2026-10-24",
+   "checked": "2026-10-28",
    "quote": "wear stickers they get at the polls or in an advance by mail ballot",
    "status": "verified"
   }
@@ -235,16 +246,15 @@
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026 on sos.ks.gov (curl worked), kansasvoterinfo.gov and ksrevisor.gov (K.S.A. 25-1122, 25-2430). EARLY VOTING: states.js (October 14 start, varies by county, ends noon Monday November 2) matches the SOS dates page ('October 14 First day of advance voting... In-person advance voting may begin', 'October 27 In-person advance voting must begin for all counties') and K.S.A. 25-1122(g)(1) ('until no later than 12:00 noon on the day preceding such election'). MAIL RETURN CONFLICT: see dates.mail_return notes; the advance voting page reports a Douglas County injunction (postmarked by Election Day, received by the Friday after) that the Court of Appeals declined to stay for the General Election, and in the next paragraph says all 2026 mail ballots must arrive by close of polls. The lead should decide before any return deadline goes on the page. Mail request deadline: statute only gives 'the Tuesday of the week preceding' the election (reads as October 27); not computed. The drop box and advance voting location lists say 'Will Be Available Soon'; the drop box list is an xlsx download, not opened. Election Day hours stay in faq_text.py (7 a.m. to 7 p.m., counties may run 6 a.m. to 8 p.m.).",
+ "notes": "Read October 21, 2026 on sos.ks.gov (curl worked), kansasvoterinfo.gov and ksrevisor.gov (K.S.A. 25-1122, 25-2430). EARLY VOTING: states.js (October 14 start, varies by county, ends noon Monday November 2) matches the SOS dates page ('October 14 First day of advance voting... In-person advance voting may begin', 'October 27 In-person advance voting must begin for all counties') and K.S.A. 25-1122(g)(1) ('until no later than 12:00 noon on the day preceding such election'). MAIL RETURN CONFLICT: see dates.mail_return notes; the advance voting page reports a Douglas County injunction (postmarked by Election Day, received by the Friday after) that the Court of Appeals declined to stay for the General Election, and in the next paragraph says all 2026 mail ballots must arrive by close of polls. The lead should decide before any return deadline goes on the page. Mail request deadline: statute only gives 'the Tuesday of the week preceding' the election (reads as October 27); not computed. The drop box and advance voting location lists say 'Will Be Available Soon'; the drop box list is an xlsx download, not opened. Election Day hours stay in faq_text.py (7 a.m. to 7 p.m., counties may run 6 a.m. to 8 p.m.). Oct 28 pass: read sos.ks.gov voter information, FAQ and advance voting pages (mail return wording unchanged: injunction still described, motion to stay denied), K.S.A. 25-106 (Central and Mountain Time hours), 25-1122(f) and (h), 25-2422, and the Sedgwick County sticker release (305 I Voted and 163 Future Voter entries, not 528; winners are students, first name and school only). sticker.tradition moved from the SOS checklist line to the Sedgwick contest.",
  "election_day": {
   "hours": {
-   "en": "Polling places are open at least 7 a.m. to 7 p.m. local time, and a county can open as early as 6 a.m. and close as late as 8 p.m.",
-   "es": "Los lugares de votación abren por lo menos de 7 a. m. a 7 p. m., hora local, y un condado puede abrir desde las 6 a. m. y cerrar hasta las 8 p. m.",
-   "src": "https://sos.ks.gov/elections/voter-information.html",
-   "checked": "2026-10-25",
-   "quote": "State law requires polling places to open at 7:00 a.m. and close at 7:00 p.m. on election day.",
-   "status": "verified",
-   "varies": true
+   "en": "Polling places are open 7 a.m. to 7 p.m. Central Time unless your county sets other hours. A county can open as early as 6 a.m. and close as late as 8 p.m. In the western Kansas counties on Mountain Time, the polls are open 6 a.m. to 6 p.m. Mountain Time unless the county sets other hours.",
+   "es": "Los lugares de votación abren de 7 a. m. a 7 p. m., hora del Centro, salvo que tu condado fije otro horario. Un condado puede abrir desde las 6 a. m. y cerrar hasta las 8 p. m. En los condados del oeste de Kansas que usan la hora de la Montaña, abren de 6 a. m. a 6 p. m., hora de la Montaña, salvo que el condado fije otro horario.",
+   "src": "https://www.ksrevisor.gov/statutes/chapters/ch25/025_001_0006.html",
+   "checked": "2026-10-28",
+   "quote": "(a) The provisions of this subsection shall apply to all counties in Kansas located in the central time zone. At all national, state, county and township primary and general elections the polls shall open at 7:00 a.m. and close at 7:00 p.m., unless different hours are set and publicly announced by the county election officer. If different hours are set, the polls shall be open at least 12 continuous hours commencing not earlier than 6:00 a.m. and ending not later than 8:00 p.m. ... (b) The provisions of this subsection shall apply to all counties in Kansas located in the mountain time zone. At all national, state, county and township primary and general elections the polls shall open at 6:00 a.m. and close at 6:00 p.m., unless different hours are set and publicly announced by the county election officer.",
+   "status": "verified"
   }
  }
 }

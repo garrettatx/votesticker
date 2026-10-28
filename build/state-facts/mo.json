@@ -19,26 +19,40 @@
   "www.stlouis-mo.gov": {
    "en": "the St. Louis City Board of Election Commissioners",
    "es": "la junta electoral de la ciudad de St. Louis (Board of Election Commissioners)"
+  },
+  "www.boonemo.gov": {
+   "en": "the Boone County Clerk",
+   "es": "la oficina del secretario del condado de Boone (Boone County Clerk)"
   }
  },
  "dates": {
   "reg_deadline": {
-   "en": "Registration closed Wednesday, October 7, 2026. Missouri has no same-day or Election Day registration.",
-   "es": "El registro cerró el miércoles 7 de octubre de 2026. Missouri no tiene registro el mismo día ni el Día de las Elecciones.",
-   "src": "https://www.sos.mo.gov/elections/calendar/2026cal",
-   "checked": "2026-10-21",
-   "quote": "November 3, 2026 General Election October 7, 2026",
-   "status": "verified"
+   "en": "Registration closed Wednesday, October 7, 2026. Missouri has no Election Day registration. One exception: if you're a military or overseas voter who left the service, came home from deployment or left a job abroad after October 7, you can register in person at your election office until 5 p.m. Friday, October 30. Bring proof.",
+   "es": "El registro cerró el miércoles 7 de octubre de 2026. Missouri no tiene registro el Día de las Elecciones. Hay una excepción: si eres votante militar o en el extranjero y dejaste el servicio, regresaste de un despliegue o dejaste un trabajo fuera del país después del 7 de octubre, puedes registrarte en persona en tu oficina electoral hasta las 5 p. m. del viernes 30 de octubre. Lleva un comprobante.",
+   "src": "https://revisor.mo.gov/main/OneSection.aspx?section=115.135",
+   "checked": "2026-10-28",
+   "quote": "a person must be registered to vote in the state of Missouri no later than 5:00 p.m. ... on the fourth Wednesday prior to the election ... A covered voter as defined in section 115.275 who has been discharged from military service, has returned from a military deployment or activation, or has separated from employment outside the territorial limits of the United States after the deadline to register to vote, and who is otherwise qualified to register to vote, may register to vote in an election in person before the election authority until 5:00 p.m. on the Friday before such election. Such persons shall produce sufficient documentation showing evidence of qualifying for late registration pursuant to this section.",
+   "status": "verified",
+   "until": "2026-10-30",
+   "en_after": "Registration closed Wednesday, October 7, 2026. Missouri has no Election Day registration.",
+   "es_after": "El registro cerró el miércoles 7 de octubre de 2026. Missouri no tiene registro el Día de las Elecciones."
   },
   "mail_request": {
-   "status": "missing",
-   "notes": "The SOS how-to-vote page gives the rule, not the date: 'Mail in or faxed absentee ballot requests must be received by the election authority no later than the 5:00 p.m. on the second Wednesday prior to any election.' That reads as 5 p.m. Wednesday, October 21, 2026 (today); not computed."
+   "en": "Requests by mail, fax or email had to reach your election office by 5 p.m. Wednesday, October 21. You can still apply and vote absentee in person at your local election authority's office until 5 p.m. Monday, November 2.",
+   "es": "Las solicitudes por correo, fax o correo electrónico tenían que llegar a tu oficina electoral a más tardar a las 5 p. m. del miércoles 21 de octubre. Todavía puedes pedir tu boleta y votar en ausencia en persona en la oficina de tu autoridad electoral local hasta las 5 p. m. del lunes 2 de noviembre.",
+   "src": "https://revisor.mo.gov/main/OneSection.aspx?section=115.279",
+   "checked": "2026-10-28",
+   "quote": "No application for an absentee ballot received in the office of the election authority by mail, by facsimile transmission, by electronic mail, or by a guardian or relative after 5:00 p.m. on the second Wednesday immediately prior to the election shall be accepted by any election authority. No application for an absentee ballot submitted by the applicant in person after 5:00 p.m. on the day before the election shall be accepted by any election authority",
+   "status": "verified",
+   "until": "2026-11-02",
+   "en_after": "Absentee requests are closed. Vote at your polling place on Election Day, 6 a.m. to 7 p.m.",
+   "es_after": "Las solicitudes de boleta de voto en ausencia ya cerraron. Vota en tu lugar de votación el Día de las Elecciones, de 6 a. m. a 7 p. m."
   },
   "mail_return": {
-   "en": "Your local election authority must receive your absentee ballot by the time the polls close at 7 p.m. on Election Day, Tuesday, November 3. Ballots that arrive later don't count.",
-   "es": "La autoridad electoral local debe recibir tu boleta de voto en ausencia a más tardar a la hora en que cierran las urnas, a las 7 p. m. del Día de las Elecciones, el martes 3 de noviembre. Las boletas que llegan después no cuentan.",
+   "en": "Your local election authority must receive your absentee ballot by the time the polls close at 7 p.m. on Election Day, Tuesday, November 3.",
+   "es": "La autoridad electoral local debe recibir tu boleta de voto en ausencia a más tardar a la hora en que cierran las urnas, a las 7 p. m. del Día de las Elecciones, el martes 3 de noviembre.",
    "src": "https://revisor.mo.gov/main/OneSection.aspx?section=115.293",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "All proper votes on each absentee ballot received by an election authority at or before the time fixed by law for the closing of the polls on election day shall be counted.",
    "status": "verified"
   },
@@ -60,11 +74,11 @@
  },
  "how": {
   "in_person": {
-   "en": "From the second Tuesday before Election Day through the day before, anyone can vote absentee in person with no excuse, at a location your local election authority sets. Bring a photo ID.",
-   "es": "Desde el segundo martes antes del Día de las Elecciones hasta el día anterior, cualquier persona puede votar en ausencia en persona sin dar una razón, en el lugar que decida la autoridad electoral local. Lleva una identificación con foto.",
-   "src": "https://www.sos.mo.gov/elections/goVoteMissouri/howtovote",
-   "checked": "2026-10-21",
-   "quote": "From the second Tuesday before an election to the day before the election, you may vote a no-excuse absentee ballot in person at a location designated by your local election authority.",
+   "en": "Registered voters can vote absentee in person with no excuse from Tuesday, October 20 to Monday, November 2, at a place your local election authority sets. Bring a photo ID.",
+   "es": "Los votantes registrados pueden votar en ausencia en persona sin dar una razón del martes 20 de octubre al lunes 2 de noviembre, en el lugar que decida la autoridad electoral local. Lleva una identificación con foto.",
+   "src": "https://revisor.mo.gov/main/OneSection.aspx?section=115.277",
+   "checked": "2026-10-28",
+   "quote": "A registered voter casting a ballot under the provisions of this subsection shall provide a form of personal photo identification that is consistent with subsection 1 of section 115.427 . Beginning on the second Tuesday prior to an election, a reason listed under subsection 3 of this section shall not be required",
    "status": "verified"
   },
   "first_time": {
@@ -96,20 +110,20 @@
   "rule": "photo_required",
   "accepted": {
    "en": [
-    "Missouri driver or non-driver license, not expired",
-    "Military ID, including a veteran's ID card, not expired",
-    "U.S. passport, not expired",
-    "Another photo ID from the United States or the state of Missouri, not expired or expired after the most recent general election"
+    "Missouri driver's license, not expired",
+    "Missouri nondriver's license, not expired or with no expiration date",
+    "Another photo ID from the U.S. or Missouri government, such as a U.S. passport, not expired or expired after the most recent general election",
+    "Military, Missouri National Guard or Veterans Affairs photo ID, not expired or with no expiration date"
    ],
    "es": [
-    "Licencia de conducir o identificación para no conductores de Missouri, vigente",
-    "Identificación militar, incluida la tarjeta de identificación de veterano, vigente",
-    "Pasaporte de EE. UU., vigente",
-    "Otra identificación con foto de Estados Unidos o del estado de Missouri, vigente o vencida después de la elección general más reciente"
+    "Licencia de conducir de Missouri, vigente",
+    "Identificación para no conductores de Missouri (nondriver's license), vigente o sin fecha de vencimiento",
+    "Otra identificación con foto del gobierno de EE. UU. o de Missouri, como un pasaporte de EE. UU., vigente o vencida después de la elección general más reciente",
+    "Identificación con foto militar, de la Guardia Nacional de Missouri o de Asuntos de Veteranos (Veterans Affairs), vigente o sin fecha de vencimiento"
    ],
-   "src": "https://www.sos.mo.gov/elections/goVoteMissouri/howtovote",
-   "checked": "2026-10-21",
-   "quote": "Show one of the forms of acceptable identification and sign the poll book to obtain your ballot:",
+   "src": "https://revisor.mo.gov/main/OneSection.aspx?section=115.427",
+   "checked": "2026-10-28",
+   "quote": "(1) Nonexpired Missouri driver's license; (2) Nonexpired or nonexpiring Missouri nondriver's license; (3) A document that satisfies all of the following requirements: ... (c) The document includes an expiration date, and the document is not expired, or, if expired, the document expired after the date of the most recent general election; and (d) The document was issued by the United States or the state of Missouri; or (4) Any identification containing a photograph of the individual which is issued by the Missouri National Guard, the United States Armed Forces, including the Space Force, or the United States Department of Veteran Affairs ... and that is not expired or does not have an expiration date.",
    "status": "verified"
   },
   "expired": {
@@ -121,11 +135,11 @@
    "status": "verified"
   },
   "without": {
-   "en": "No photo ID? If you're registered, you can vote a provisional ballot. It counts if you come back to your polling place on Election Day with a photo ID, or if your signature on the envelope matches your registration.",
-   "es": "¿No tienes identificación con foto? Si estás registrado, puedes votar con una boleta provisional. Cuenta si regresas a tu lugar de votación el Día de las Elecciones con una identificación con foto, o si tu firma en el sobre coincide con la de tu registro.",
-   "src": "https://www.sos.mo.gov/elections/goVoteMissouri/howtovote",
-   "checked": "2026-10-21",
-   "quote": "Your ballot will count if: (1) you return to your polling place on Election Day with a photo ID (return to your local election authority's office if you voted an absentee ballot); or (2) the signature on your provisional ballot envelope is determined by your local election authority to match the signature on your voter registration record.",
+   "en": "No photo ID? If you're registered, you can vote a provisional ballot, on Election Day or when you vote absentee in person. It counts if you bring an accepted ID back by 7 p.m. on Election Day, to your polling place or to the election office where you voted absentee, or if your election office matches your signature to the one on file. The ballot also has to meet Missouri's other rules for counting.",
+   "es": "¿No tienes identificación con foto? Si estás registrado, puedes votar con una boleta provisional, el Día de las Elecciones o cuando votas en ausencia en persona. Cuenta si regresas con una identificación aceptada a más tardar a las 7 p. m. del Día de las Elecciones, a tu lugar de votación o a la oficina electoral donde votaste en ausencia, o si tu oficina electoral confirma que tu firma coincide con la de tu registro. La boleta también tiene que cumplir las demás reglas de Missouri para contarse.",
+   "src": "https://revisor.mo.gov/main/OneSection.aspx?section=115.427",
+   "checked": "2026-10-28",
+   "quote": "An individual who appears at a polling place or, if voting absentee in person pursuant to section 115.277 , at the office of the election authority or other authorized location designated by the election authority without a form of personal identification described in subsection 1 of this section and who is otherwise qualified to vote at that location shall be allowed to cast a provisional ballot. ... The provisional ballot cast by such voter shall not be counted unless: (1) (a) The voter returns to the polling place during the uniform polling hours established by section 115.407 or, if voting by absentee ballot in person, the voter returns to the election authority's office by 7:00 p.m. on election day and provides a form of personal identification ... or (b) The election authority verifies the identity of the individual by comparing that individual's signature to the signature on file with the election authority ... and (2) The provisional ballot otherwise qualifies to be counted under section 115.430 .",
    "status": "verified"
   }
  },
@@ -133,69 +147,75 @@
   "who": {
    "en": "To vote absentee by mail in Missouri, you need one of these reasons:",
    "es": "Para votar en ausencia por correo en Missouri, necesitas una de estas razones:",
-   "src": "https://www.sos.mo.gov/elections/goVoteMissouri/howtovote",
-   "checked": "2026-10-21",
-   "quote": "Prior to the second Tuesday before an election, or at any time when requesting an absentee ballot to return by mail, absentee voters must provide one of the following reasons for voting absentee:",
+   "src": "https://revisor.mo.gov/main/OneSection.aspx?section=115.277",
+   "checked": "2026-10-28",
+   "quote": "A voter may request an absentee ballot for any of the following reasons:",
    "status": "verified"
   },
   "who_list": {
    "en": [
     "you'll be away from your election authority's area on Election Day",
-    "you're sick or physically disabled on Election Day, or you're the main caregiver for someone at your address who is",
+    "illness or a physical disability will keep you from the polls, or you're the main caregiver for someone at your address in that situation",
+    "your religious belief or practice",
     "you work for an election authority somewhere other than your polling place, or you're a first responder, a health care worker or in law enforcement",
     "you're incarcerated but still qualified to vote",
-    "you're in the state's address confidentiality program for safety reasons"
+    "you're a certified participant in Missouri's address confidentiality program for safety reasons"
    ],
    "es": [
     "vas a estar fuera del área de tu autoridad electoral el Día de las Elecciones",
-    "estás enfermo o tienes una discapacidad física el Día de las Elecciones, o eres el cuidador principal de alguien en tu domicilio que lo está",
+    "una enfermedad o una discapacidad física te impide ir a votar, o eres el cuidador principal de alguien en tu domicilio en esa situación",
+    "tus creencias o prácticas religiosas",
     "trabajas para una autoridad electoral en un lugar distinto a tu lugar de votación, o eres socorrista, trabajador de la salud o agente de la ley",
     "estás encarcelado pero todavía cumples los requisitos para votar",
-    "estás en el programa estatal de confidencialidad de domicilio por razones de seguridad"
+    "participas, con certificación, en el programa de confidencialidad de domicilio de Missouri por razones de seguridad"
    ],
-   "src": "https://www.sos.mo.gov/elections/goVoteMissouri/howtovote",
-   "checked": "2026-10-21",
-   "quote": "Absence on Election Day from the jurisdiction of the election authority in which such voter is registered to vote;",
+   "src": "https://revisor.mo.gov/main/OneSection.aspx?section=115.277",
+   "checked": "2026-10-28",
+   "quote": "(1) Absence on election day from the jurisdiction of the election authority in which such voter is registered to vote; (2) Incapacity or confinement due to illness or physical disability on election day, including a person who is primarily responsible for the physical care of a person who is incapacitated or confined due to illness or disability and resides at the same address; (3) Religious belief or practice; (4) Employment as: (a) An election authority, as a member of an election authority, or by an election authority at a location other than such voter's polling place; (b) A first responder; (c) A health care worker; or (d) A member of law enforcement; (5) Incarceration, provided all qualifications for voting are retained; (6) Certified participation in the address confidentiality program established under sections 589.660 to 589.681 because of safety concerns.",
    "status": "verified"
   },
   "track_url": "",
   "witness": {
-   "en": "Sign the affidavit on your ballot envelope in front of a notary, the election official who takes your ballot, or another officer who can give oaths. You can skip the notary if you're voting absentee because of illness, physical disability or confinement.",
-   "es": "Firma la declaración jurada del sobre de tu boleta frente a un notario, el funcionario electoral que recibe tu boleta u otro funcionario autorizado para tomar juramentos. No necesitas notario si votas en ausencia por enfermedad, discapacidad física o confinamiento.",
-   "src": "https://revisor.mo.gov/main/OneSection.aspx?section=115.291",
-   "checked": "2026-10-21",
-   "quote": "The affidavit of each person voting an absentee ballot shall be subscribed and sworn to before the election official receiving the ballot, a notary public or other officer authorized by law to administer oaths, unless the voter is voting absentee due to incapacity or confinement due to the provisions of section 115.284 , illness or physical disability on election day, or the voter is a covered voter as defined in section 115.902 .",
+   "en": "Most mailed absentee ballots need the envelope statement signed in front of a notary. You can skip the notary if you're voting absentee because of illness or disability, you're on your election office's permanent disability list, or you're a military or overseas voter. A notary can't charge you to notarize an absentee ballot.",
+   "es": "La mayoría de las boletas de voto en ausencia por correo necesitan que firmes la declaración del sobre frente a un notario. No necesitas notario si votas en ausencia por enfermedad o discapacidad, si estás en la lista de discapacidad permanente de tu oficina electoral o si eres votante militar o en el extranjero. Un notario no te puede cobrar por notarizar una boleta de voto en ausencia.",
+   "src": "https://revisor.mo.gov/main/OneSection.aspx?section=115.283",
+   "checked": "2026-10-28",
+   "quote": "6. Notwithstanding any other provision of this section, any covered voter as defined in section 115.902 or persons who have declared themselves to be permanently disabled pursuant to section 115.284 , otherwise entitled to vote, shall not be required to obtain a notary seal or signature on his or her absentee ballot. 7. ... the subscription, signature and seal of a notary or other officer authorized to administer oaths shall not be required on any ballot, ballot envelope, or statement required by this section if the reason for the voter voting absentee is due to the reasons established pursuant to subdivision (2) of subsection 3 of section 115.277 . 8. No notary shall charge or collect a fee for notarizing the signature on any absentee ballot or absentee voter registration.",
    "status": "verified"
   },
   "cure": {
-   "en": "Fill out every statement on your ballot envelope before you send it. Missouri rejects an absentee ballot whose envelope statements aren't completed.",
-   "es": "Llena todas las declaraciones del sobre de tu boleta antes de enviarla. Missouri rechaza una boleta de voto en ausencia si las declaraciones del sobre no están completas.",
+   "en": "Fill out every statement on your ballot envelope before you send it. An absentee ballot with an unfinished envelope statement is rejected.",
+   "es": "Llena todas las declaraciones del sobre de tu boleta antes de enviarla. Se rechaza una boleta de voto en ausencia si las declaraciones del sobre no están completas.",
    "src": "https://revisor.mo.gov/main/OneSection.aspx?section=115.295",
    "checked": "2026-10-26",
    "quote": "If the statements on any ballot envelope have not been completed, the absentee ballot in the envelope shall be rejected.",
    "status": "verified"
   },
   "dropbox": {
-   "en": "Missouri doesn't use drop boxes for absentee ballots. Mail yours, or bring it back in person yourself or have a close relative bring it.",
-   "es": "Missouri no usa buzones de entrega para las boletas de voto en ausencia. Mándala por correo, o entrégala tú en persona o con un familiar cercano.",
+   "en": "Missouri law bans drop boxes for absentee ballots. Mail yours, bring it back yourself, or have a relative bring it in person. The law allows a parent, child, sibling, grandparent or grandchild, or one of those relatives by marriage.",
+   "es": "La ley de Missouri prohíbe los buzones de entrega para las boletas de voto en ausencia. Mándala por correo, entrégala tú o pide a un familiar que la entregue en persona. La ley permite a tu padre o madre, hijo o hija, hermano o hermana, abuelo o abuela, nieto o nieta, o a esos mismos familiares por matrimonio.",
    "src": "https://revisor.mo.gov/main/OneSection.aspx?section=115.291",
-   "checked": "2026-10-21",
-   "quote": "No absentee ballot shall be delivered through a drop box and no election authority shall establish or use a drop box for the purpose of collecting absentee ballots.",
+   "checked": "2026-10-28",
+   "quote": "shall only be returned by the voter in person, or in person by a relative of the voter who is within the second degree of consanguinity or affinity, by mail or registered carrier or by a team of deputy election authorities ... No absentee ballot shall be delivered through a drop box and no election authority shall establish or use a drop box for the purpose of collecting absentee ballots.",
    "status": "verified"
   }
  },
  "polls_rules": {
   "gear": {
-   "en": "Keep campaigning outside the zone. On Election Day and during absentee voting, Missouri bans electioneering, handing out election literature and posting signs inside the polling place building or within 25 feet of its door. Your local election authority can widen that to 50 feet.",
-   "es": "Haz cualquier campaña fuera de la zona. El Día de las Elecciones y durante la votación en ausencia, Missouri prohíbe hacer campaña, repartir propaganda electoral y poner letreros dentro del edificio del lugar de votación o a menos de 25 pies de su puerta. La autoridad electoral local puede ampliar esa distancia a 50 pies.",
+   "en": "Keep campaign gear away from the door. On Election Day and during absentee voting, Missouri bans electioneering, handing out campaign literature and posting signs inside the building with the polling place or within 25 feet of its door. Your election office can post notice widening the zone to 50 feet, but signs and candidates can still be 25 feet away.",
+   "es": "Mantén la propaganda lejos de la puerta. El Día de las Elecciones y durante la votación en ausencia, Missouri prohíbe hacer campaña, repartir propaganda electoral y poner letreros dentro del edificio del lugar de votación o a menos de 25 pies de su puerta. Tu oficina electoral puede publicar un aviso para ampliar la zona a 50 pies, pero los letreros y los candidatos pueden seguir a 25 pies.",
    "src": "https://revisor.mo.gov/main/OneSection.aspx?section=115.637",
-   "checked": "2026-10-21",
-   "quote": "electioneering, distributing election literature, posting signs, petitioning, or placing vehicles bearing signs with respect to any candidate or question to be voted on at a current or future election on election day or during the absentee voting period inside the building in which a polling place is located or within twenty-five feet of the building's outer door closest to the polling place",
+   "checked": "2026-10-28",
+   "quote": "an election authority may, upon notice publicly posted at the office of the election authority not later than six weeks prior to the election, provide that exit polling, surveying, sampling, electioneering, distributing election literature, petitioning, or placing vehicles bearing signs ... may not take place within fifty feet of the building's outer door closest to the polling place ... provided that a candidate who is not seeking to vote shall be allowed to be up to twenty-five feet from the building's outer door closest to the polling place and may distribute election literature; and provided further that campaign signs shall be permitted to be placed up to twenty-five feet from the building's outer door closest to the polling place",
    "status": "verified"
   },
   "phone": {
-   "status": "missing",
-   "notes": "No SOS guidance on phones or ballot photos found. faq_text.py's selfie answer is an inference from RSMo 115.637(14), noted in docs/faq-sources.json."
+   "en": "Missouri law doesn't address phones or photos at the polls, and we found no Secretary of State rule on them. The law does make it an offense to let anyone see your ballot so they know how you voted, so don't share a photo of your marked ballot. Ask a poll worker before you take any photo inside.",
+   "es": "La ley de Missouri no habla de celulares ni de fotos en el lugar de votación, y no encontramos ninguna regla de la Secretaría de Estado sobre eso. La ley sí castiga dejar que alguien vea tu boleta para que sepa cómo votaste, así que no compartas una foto de tu boleta marcada. Pregunta a un trabajador electoral antes de tomar cualquier foto adentro.",
+   "src": "https://revisor.mo.gov/main/OneSection.aspx?section=115.637",
+   "checked": "2026-10-28",
+   "quote": "On the part of any voter, except as otherwise provided by law, allowing his or her ballot to be seen by any person with the intent of letting it be known how he or she is about to vote or has voted",
+   "status": "verified"
   },
   "line": {
    "en": "If you're in line at 7 p.m. when the polls close, you have the right to vote.",
@@ -208,16 +228,16 @@
  },
  "sticker": {
   "tradition": {
-   "en": "In Lincoln County, students design the stickers. The county clerk's contest drew 151 entries from students in grades 6 to 12, for three new I voted designs for the county's 2026 and 2027 elections.",
-   "es": "En el condado de Lincoln, los estudiantes diseñan los stickers. El concurso de la oficina del condado recibió 151 propuestas de estudiantes de 6.º a 12.º grado, para tres nuevos diseños de \"I voted\" para las elecciones del condado de 2026 y 2027.",
-   "src": "https://www.lincolncomo.gov/vote-now-for-the-i-voted-sticker-design-contest",
-   "checked": "2026-10-21",
-   "quote": "There will be a winner from each category resulting in 3 new \"I Voted\" sticker designs for the 2026/2027 Lincoln County elections.",
+   "en": "In Boone County, high school students design the sticker. More than 40 students sent in over 70 designs. The one picked for the 2026 and 2027 elections is by Grace, an 11th grader at Rock Bridge High School.",
+   "es": "En el condado de Boone, estudiantes de preparatoria diseñan el sticker. Más de 40 estudiantes enviaron más de 70 diseños. El elegido para las elecciones de 2026 y 2027 es de Grace, estudiante de 11.º grado de Rock Bridge High School.",
+   "src": "https://www.boonemo.gov/clerk/contest.asp",
+   "checked": "2026-10-28",
+   "quote": "Over 40 high school students from across Boone County submitted over 70 designs, which were narrowed down to 5 finalists. ... The \"I Voted\" sticker design selected for the 2026-2027 elections was submitted by Grace, 11th Grade, Rock Bridge High School.",
    "status": "verified"
   },
   "early": {
-   "en": "In the City of St. Louis, every in-person voter can pick up an \"I Voted\" sticker on the way out, absentee voters included. Other election authorities set their own practice.",
-   "es": "En la ciudad de St. Louis, toda persona que vota en persona puede llevarse un sticker de \"I Voted\" al salir, incluidas las que votan en ausencia. Las demás autoridades electorales deciden por su cuenta.",
+   "en": "In the City of St. Louis, you can pick up an \"I Voted\" sticker on your way out, however you vote. Elsewhere, each election office sets its own practice.",
+   "es": "En la ciudad de St. Louis, puedes llevarte un sticker de \"I Voted\" al salir, sin importar cómo votes. En otros lugares, cada oficina electoral decide.",
    "src": "https://www.stlouis-mo.gov/government/departments/board-election-commissioners/voter/absentee/no-excuse-absentee.cfm",
    "checked": "2026-10-23",
    "quote": "No matter what method you use to vote, you can pick up an \"I Voted\" sticker on your way out.",
@@ -244,9 +264,17 @@
   "track": {
    "status": "missing",
    "notes": "No absentee ballot tracker found on sos.mo.gov."
+  },
+  "late_mail": {
+   "en": "The postmark doesn't count in Missouri. Your election office must have your ballot by 7 p.m. on Election Day, and there are no drop boxes. In the last days, bring it in yourself or have a relative the law allows bring it.",
+   "es": "En Missouri el matasellos no cuenta. Tu oficina electoral debe tener tu boleta a más tardar a las 7 p. m. del Día de las Elecciones, y no hay buzones de entrega. En los últimos días, entrégala tú o pide a un familiar que la ley permite que la entregue.",
+   "src": "https://revisor.mo.gov/main/OneSection.aspx?section=115.291",
+   "checked": "2026-10-28",
+   "quote": "shall only be returned by the voter in person, or in person by a relative of the voter who is within the second degree of consanguinity or affinity, by mail or registered carrier or by a team of deputy election authorities ... No absentee ballot shall be delivered through a drop box",
+   "status": "verified"
   }
  },
- "notes": "Read October 21, 2026 on sos.mo.gov (curl worked; the Voter Outreach Portal returns 403 to curl and was opened in Chrome), revisor.mo.gov (RSMo 115.291, 115.293, 115.637) and lincolncomo.gov. EARLY VOTING: the SOS states the rule only in relative terms ('From the second Tuesday before an election to the day before the election, you may vote a no-excuse absentee ballot in person'; office voting 'until 5:00 p.m. the night before the election'). That reads as Tuesday, October 20 to Monday, November 2, matching states.js; no SOS page states the 2026 calendar dates. Mail request deadline is relative too ('5:00 p.m. on the second Wednesday prior to any election', which reads as October 21, today); left missing. Missouri absentee voting before the second Tuesday, and any absentee ballot by mail, needs one of the listed reasons (mail.who_list). Sticker: Lincoln County is one county's student contest, not statewide; the page doesn't give its year, so the file says only what it states. Phone rule, cure, tracker and first-time rules not found; left missing.",
+ "notes": "Read October 21, 2026 on sos.mo.gov (curl worked; the Voter Outreach Portal returns 403 to curl and was opened in Chrome), revisor.mo.gov (RSMo 115.291, 115.293, 115.637) and lincolncomo.gov. EARLY VOTING: the SOS states the rule only in relative terms ('From the second Tuesday before an election to the day before the election, you may vote a no-excuse absentee ballot in person'; office voting 'until 5:00 p.m. the night before the election'). That reads as Tuesday, October 20 to Monday, November 2, matching states.js; no SOS page states the 2026 calendar dates. Mail request deadline is relative too ('5:00 p.m. on the second Wednesday prior to any election', which reads as October 21, today); left missing. Missouri absentee voting before the second Tuesday, and any absentee ballot by mail, needs one of the listed reasons (mail.who_list). Sticker: Lincoln County is one county's student contest, not statewide; the page doesn't give its year, so the file says only what it states. Phone rule, cure, tracker and first-time rules not found; left missing. Oct 28 pass: sos.mo.gov returned a Cloudflare check to curl, WebFetch and Chrome, so this pass used RSMo on revisor.mo.gov (115.135, 115.277, 115.279, 115.283, 115.291, 115.427, 115.637, all read Oct 28) and the Boone County Clerk. HB 1871 (effective Aug 28, 2026) changed 115.427: in-person absentee voters without ID can now vote provisionally (the 2022 text covered polling places only). Sticker tradition moved from Lincoln County to Boone County, which names its selected design; the winner is a high school student, so first name and school only. Military and overseas ballots count if received by noon Friday, November 6 (RSMo 115.920); not on the page.",
  "election_day": {
   "hours": {
    "en": "Polling places are open 6 a.m. to 7 p.m. local time.",

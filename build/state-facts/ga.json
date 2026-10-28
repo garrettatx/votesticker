@@ -34,16 +34,23 @@
    "es_after": "Las solicitudes cerraron el 23 de octubre de 2026. Todavía puedes votar en persona."
   },
   "mail_return": {
-   "en": "Your county must receive it by 7 p.m. on Tuesday, November 3. You can mail it, use a drop box at an early voting location during early voting hours, or bring it to your county registrar's office by 7 p.m. on Election Day.",
-   "es": "Tu condado debe recibirla a más tardar a las 7 p. m. del martes 3 de noviembre. Puedes mandarla por correo, dejarla en un buzón de entrega en un centro de votación anticipada durante el horario de votación anticipada, o llevarla a la oficina de registro de tu condado (County Board of Registrars) a más tardar a las 7 p. m. del Día de las Elecciones.",
+   "en": "Your county must receive it by 7 p.m. on Tuesday, November 3. A postmark isn't enough. Mail it, use a drop box inside an early voting site during early voting hours, or bring it to your county registrar's office by 7 p.m. on Election Day.",
+   "es": "Tu condado debe recibirla a más tardar a las 7 p. m. del martes 3 de noviembre. El matasellos no basta. Mándala por correo, usa un buzón de entrega dentro de un centro de votación anticipada durante el horario de votación anticipada, o llévala a la oficina de registro de tu condado (county registrar) a más tardar a las 7 p. m. del Día de las Elecciones.",
    "src": "https://georgia.gov/georgia-election-guide",
-   "checked": "2026-10-21",
-   "quote": "You can return your ballot by mail. It must be received by 7 p.m. on Election Day.",
+   "checked": "2026-10-28",
+   "quote": "You can return your ballot by mail. It must be received by 7 p.m. on Election Day. You can return your ballot by drop boxes available inside early voting locations during early voting hours only. You can delivery your ballot directly to your County Board of Registrar's Office by 7 p.m. on Election Day.",
    "status": "verified"
   },
   "early_hours": {
-   "status": "missing",
-   "notes": "sos.ga.gov and georgia.gov give the dates but not statewide hours; My Voter Page lists hours per site. The advance voting hours statute (O.C.G.A. 21-2-385) is only on LexisNexis, not an official host."
+   "en": "Early voting runs through Friday, October 30. You can vote at any early voting site in your county. Hours and locations vary by county, so check My Voter Page before you go.",
+   "es": "La votación anticipada sigue hasta el viernes 30 de octubre. Puedes votar en cualquier centro de votación anticipada de tu condado. Los horarios y lugares cambian según el condado, así que revisa My Voter Page antes de ir.",
+   "src": "https://georgia.gov/vote-early-person",
+   "checked": "2026-10-28",
+   "quote": "Early voting for the November 3 General Election runs from October 13 - 30. Early voting hours and locations vary by county. Find voting locations and hours in your area on your My Voter Page .",
+   "status": "verified",
+   "until": "2026-10-30",
+   "en_after": "Early voting ended October 30. Vote at your assigned polling place on Election Day, 7 a.m. to 7 p.m.",
+   "es_after": "La votación anticipada terminó el 30 de octubre. Vota en el lugar de votación que te corresponde el Día de las Elecciones, de 7 a. m. a 7 p. m."
   },
   "cure": {
    "status": "missing",
@@ -114,21 +121,21 @@
    "status": "verified"
   },
   "without": {
-   "en": "Forgot your ID or can't be verified? You can ask for a provisional ballot. It counts if you resolve the problem within three days after Election Day. No photo ID at all? Your county registrar's office issues a free voter ID card.",
-   "es": "¿Olvidaste tu identificación o no pueden verificar tus datos? Puedes pedir una boleta provisional. Cuenta si resuelves el problema dentro de los tres días después del Día de las Elecciones. ¿No tienes ninguna identificación con foto? La oficina de registro de tu condado (County Board of Registrars) da una credencial de votante gratuita.",
+   "en": "Forgot your ID or can't be verified? You can ask for a provisional ballot. It counts if you settle the problem with your county registrar within three days after Election Day, for example by showing your photo ID. No photo ID at all? Your county registrar's office issues a free voter ID card.",
+   "es": "¿Olvidaste tu identificación o no pueden verificar tus datos? Puedes pedir una boleta provisional. Cuenta si resuelves el problema con la oficina de registro de tu condado (county registrar) dentro de los tres días después del Día de las Elecciones, por ejemplo mostrando tu identificación con foto. ¿No tienes ninguna identificación con foto? La oficina de registro de tu condado da una credencial de votante gratuita.",
    "src": "https://georgia.gov/vote-in-person-election-day",
-   "checked": "2026-10-21",
-   "quote": "If you show up to your polling place but have not met all the requirements listed above, you have the right to request a provisional ballot. Your vote will count as long as you resolve the eligibility issues within three days after Election Day.",
+   "checked": "2026-10-28",
+   "quote": "If you show up to your polling place but have not met all the requirements listed above, you have the right to request a provisional ballot. Your vote will count as long as you resolve the eligibility issues within three days after Election Day. ... The State of Georgia also offers a free voter ID card , which can be issued at any County Board of Registrar's Office and can be used to vote.",
    "status": "verified"
   }
  },
  "mail": {
   "who": {
-   "en": "Any Georgia voter can vote absentee by mail, for any election. You don't need to be away from your county. Request it online or by mail, then return it by mail or in a drop box.",
-   "es": "Cualquier votante de Georgia puede votar en ausencia por correo, en cualquier elección. No necesitas estar fuera de tu condado. Pídela en línea o por correo, y devuélvela por correo o en un buzón de entrega.",
-   "src": "https://sos.ga.gov/how-to-guide/how-guide-voting",
-   "checked": "2026-10-21",
-   "quote": "In Georgia, you can cast an absentee ballot for any election, even if you won’t be absent from the county on Election Day.",
+   "en": "Any registered Georgia voter can vote absentee, no excuse needed. Requested a ballot that never came? Contact your county registrar. You can still vote in person after signing a form that says you're voting only once. Once you send your absentee ballot back, you've voted and can't switch to voting in person.",
+   "es": "Cualquier votante registrado en Georgia puede votar en ausencia sin dar una razón. ¿Pediste una boleta y nunca llegó? Comunícate con la oficina de registro de tu condado (county registrar). Todavía puedes votar en persona después de firmar un documento que dice que solo votas una vez. Cuando devuelves tu boleta de voto en ausencia, ya votaste y no puedes cambiar a votar en persona.",
+   "src": "https://georgia.gov/vote-absentee-ballot",
+   "checked": "2026-10-28",
+   "quote": "You do not need an excuse to request an absentee ballot. ... If you do not receive your absentee ballot after submitting your application, contact your county registrar to assess your options. If there is not enough time to receive a new absentee ballot, or if for any reason you cannot have another sent to you, you may vote in person. If you attempt to vote in person because you never received a requested absentee ballot, you will have to sign a document attesting that you are only voting once. If you request and return an absentee ballot, you cannot change your mind and vote in person.",
    "status": "verified"
   },
   "witness": {
@@ -136,11 +143,11 @@
   },
   "track_url": "https://mvp.sos.ga.gov/s/",
   "cure": {
-   "en": "If your absentee ballot is rejected, your county elections office will contact you with a form to fix (\"cure\") your ballot envelope.",
-   "es": "Si rechazan tu boleta de voto en ausencia, la oficina electoral de tu condado te contactará con un formulario para corregir el sobre de tu boleta.",
+   "en": "Check your ballot's status on My Voter Page, under Absentee Ballot Request Information. If your ballot is rejected, your county elections office will contact you with a form to fix (\"cure\") your ballot envelope.",
+   "es": "Revisa el estado de tu boleta en My Voter Page, en la sección Absentee Ballot Request Information. Si rechazan tu boleta, la oficina electoral de tu condado se comunicará contigo con un formulario para corregir (\"cure\") el sobre de tu boleta.",
    "src": "https://georgia.gov/vote-absentee-ballot",
-   "checked": "2026-10-26",
-   "quote": "If your ballot was rejected, your county elections office will contact you with a document to “cure” or correct your ballot envelope.",
+   "checked": "2026-10-28",
+   "quote": "Verify that your ballot was accepted by visiting the Georgia My Voter Page . Log in and look for the section labeled \"Absentee Ballot Request Information\" to learn more about your absentee ballot status. If your ballot was rejected, your county elections office will contact you with a document to \"cure\" or correct your ballot envelope.",
    "status": "verified",
    "notes": "Deadline not read (sos.ga.gov returns 403); process only."
   },
@@ -158,16 +165,16 @@
    "en": "Leave the campaign shirts and hats at home. Campaigning is against the law within 150 feet of a polling place, and that includes shirts, hats, jackets or other clothing with a candidate's name, a party or a slogan, and signs on your car.",
    "es": "Deja en casa las camisetas y gorras de campaña. Hacer campaña está prohibido por ley a menos de 150 pies de un lugar de votación, y eso incluye camisetas, gorras, chamarras u otra ropa con el nombre de un candidato, un partido o un lema, y letreros en tu carro.",
    "src": "https://sos.ga.gov/page/elections-faq",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "That means you cannot have signs on your vehicle in that area and you cannot wear shirts, hats, jackets or other clothing with the name of a candidate, political party or slogan.",
    "status": "verified"
   },
   "phone": {
-   "en": "Take your sticker selfie outside the polling area. Georgia doesn't allow photos of your ballot, including an absentee ballot, but pictures outside the polling area are fine.",
-   "es": "Tómate la selfie con tu sticker fuera del área de votación. Georgia no permite fotos de tu boleta, ni siquiera de una boleta de voto en ausencia, pero las fotos fuera del área de votación están bien.",
+   "en": "Don't photograph your ballot, including an absentee ballot. Georgia bans ballot photos to prevent vote buying. Take your sticker selfie outside the polling area instead. The Secretary of State encourages that.",
+   "es": "No le tomes foto a tu boleta, ni siquiera a una boleta de voto en ausencia. Georgia prohíbe las fotos de boletas para evitar la compra de votos. Mejor tómate la selfie con tu sticker fuera del área de votación. La Secretaría de Estado lo recomienda.",
    "src": "https://sos.ga.gov/page/elections-faq",
-   "checked": "2026-10-21",
-   "quote": "No. You can take pictures outside of the polling area. We encourage it and hope you’re proud of your vote.",
+   "checked": "2026-10-28",
+   "quote": "No. You can take pictures outside of the polling area. We encourage it and hope you're proud of your vote. The reason for the prohibition against ballot copies, receipts and photography of ballots – including absentee ballots – is to prevent vote buying.",
    "status": "verified"
   },
   "line": {
@@ -181,18 +188,18 @@
  },
  "sticker": {
   "tradition": {
-   "en": "Georgia has a new statewide I voted sticker for 2026, designed by Georgia artist Steve Penley. Five million were printed and sent to all 159 counties, so you can pick one up when you vote.",
-   "es": "Georgia tiene un nuevo sticker estatal de \"I voted\" para 2026, diseñado por el artista de Georgia Steve Penley. Se imprimieron cinco millones y se mandaron a los 159 condados, así que puedes llevarte uno cuando votes.",
+   "en": "Georgia has a new statewide \"I Voted\" sticker for 2026, designed by Georgia artist Steve Penley. The Secretary of State printed five million and is sending them to all 159 counties.",
+   "es": "Georgia tiene un nuevo sticker estatal de \"I Voted\" para 2026, diseñado por el artista georgiano Steve Penley. La Secretaría de Estado imprimió cinco millones y los está enviando a los 159 condados.",
    "src": "https://sos.ga.gov/news/georgia-debuts-new-i-voted-sticker-2026-midterm-elections",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "Five million stickers featuring the unique design have been printed and will be distributed to all 159 counties across Georgia.",
    "status": "verified"
   },
   "early": {
-   "en": "Yes. The Secretary of State sent the 2026 sticker to all 159 counties, and voters could get it from the first day of early voting, October 13.",
-   "es": "Sí. La Secretaría de Estado envió el sticker de 2026 a los 159 condados, y se entrega desde el primer día de la votación anticipada, el 13 de octubre.",
+   "en": "Yes. The Secretary of State said voters could get the 2026 sticker starting the first day of early voting, October 13.",
+   "es": "Sí. La Secretaría de Estado dijo que los votantes podían recibir el sticker de 2026 desde el primer día de votación anticipada, el 13 de octubre.",
    "src": "https://sos.ga.gov/news/georgia-debuts-new-i-voted-sticker-2026-midterm-elections",
-   "checked": "2026-10-23",
+   "checked": "2026-10-28",
    "quote": "Voters can get the stickers when early voting starts on October 13.",
    "status": "verified"
   }
@@ -221,9 +228,17 @@
    "checked": "2026-10-21",
    "quote": "If you voted by absentee ballot, you can check the status on My Voter Page.",
    "status": "verified"
+  },
+  "late_mail": {
+   "en": "Your county must receive it by 7 p.m. on Election Day, and a postmark isn't enough. This close, hand-deliver it to your county registrar or use a drop box at an early voting site during early voting hours. Military or overseas voter? If you post it on Election Day, it has to arrive within 3 days.",
+   "es": "Tu condado debe recibirla a más tardar a las 7 p. m. del Día de las Elecciones, y el matasellos no basta. A estas alturas, entrégala en persona en la oficina de registro de tu condado (county registrar) o usa un buzón de entrega en un centro de votación anticipada durante el horario de votación anticipada. ¿Eres votante militar o en el extranjero? Si la envías el Día de las Elecciones, tiene que llegar dentro de 3 días.",
+   "src": "https://georgia.gov/vote-absentee-ballot",
+   "checked": "2026-10-28",
+   "quote": "For voters within the country, all absentee ballots must arrive at your county election office by Election Day. Allow extra time for postal and election office processing. You can also hand-deliver your absentee ballot to your county registrar. ... If you're currently a military or overseas voter and you post your absentee ballot on Election Day, make sure it arrives within 3 days. Bring your ballot to your county's drop box . Each county has a minimum of one drop box, located indoors and available to voters only during operating hours.",
+   "status": "verified"
   }
  },
- "notes": "Read October 21, 2026. sos.ga.gov blocks WebFetch; read through Chrome. EARLY VOTING DATES FOR THE LEAD (states.js has GA unchecked): October 13 to October 30, 2026. Sources: (1) https://sos.ga.gov/news/georgia-debuts-new-i-voted-sticker-2026-midterm-elections (Sept. 29, 2026): 'Early voting for the 2026 General Election starts October 13 and runs through October 30. Election day is November 3.' (2) https://georgia.gov/georgia-election-guide table: 'Early Voting Period April 27 - May 15 October 13 - 30'. (3) https://sos.ga.gov/how-to-guide/how-guide-voting: 'Georgia voters have three weeks before Election Day for early voting, including two Saturdays. Your county can also offer voting on Sunday.' and 'You can vote at any early voting location in your county.' Hours are per site on My Voter Page; no statewide hours found. Suggested states.js note: 'Vote at any early voting site in your county. Your county may add Sunday voting.' FAQ selfie: the SOS Elections FAQ answers 'Can I take a photo of my ballot or get a receipt?' with 'No.' and says the ban covers absentee ballots too; the current faq_text.py answer ('Not at the polls ... unless a poll manager allows it') is softer than the SOS and could be upgraded to this sos.ga.gov source. Chatham County's media policy PDF also quotes O.C.G.A. 21-2-568.2(a)(2), which makes it illegal to 'Photograph or record a voted ballot.' Registration: the SOS FAQ says 'You must be registered at least 30 days before an election'; the 2026 calendar on georgia.gov says October 5 (29 days); the file uses the calendar date. ID page wording: it says 'Bring one of these seven forms' and, a line later, 'one of the six acceptable forms of photo ID'; the list has seven bullets, used as-is. Cure deadline, witness rule, early voting hours and the in-line rule outside Election Day were not found; left missing.",
+ "notes": "Read October 21, 2026. sos.ga.gov blocks WebFetch; read through Chrome. EARLY VOTING DATES FOR THE LEAD (states.js has GA unchecked): October 13 to October 30, 2026. Sources: (1) https://sos.ga.gov/news/georgia-debuts-new-i-voted-sticker-2026-midterm-elections (Sept. 29, 2026): 'Early voting for the 2026 General Election starts October 13 and runs through October 30. Election day is November 3.' (2) https://georgia.gov/georgia-election-guide table: 'Early Voting Period April 27 - May 15 October 13 - 30'. (3) https://sos.ga.gov/how-to-guide/how-guide-voting: 'Georgia voters have three weeks before Election Day for early voting, including two Saturdays. Your county can also offer voting on Sunday.' and 'You can vote at any early voting location in your county.' Hours are per site on My Voter Page; no statewide hours found. Suggested states.js note: 'Vote at any early voting site in your county. Your county may add Sunday voting.' FAQ selfie: the SOS Elections FAQ answers 'Can I take a photo of my ballot or get a receipt?' with 'No.' and says the ban covers absentee ballots too; the current faq_text.py answer ('Not at the polls ... unless a poll manager allows it') is softer than the SOS and could be upgraded to this sos.ga.gov source. Chatham County's media policy PDF also quotes O.C.G.A. 21-2-568.2(a)(2), which makes it illegal to 'Photograph or record a voted ballot.' Registration: the SOS FAQ says 'You must be registered at least 30 days before an election'; the 2026 calendar on georgia.gov says October 5 (29 days); the file uses the calendar date. ID page wording: it says 'Bring one of these seven forms' and, a line later, 'one of the six acceptable forms of photo ID'; the list has seven bullets, used as-is. Cure deadline, witness rule, early voting hours and the in-line rule outside Election Day were not found; left missing. Oct 28 pass: sos.ga.gov FAQ and sticker release read in Chrome (curl gets a Cloudflare check); georgia.gov election guide, early voting, Election Day and absentee pages read with curl. The sticker release does not say every polling place hands out the Penley design; a news report says counties may choose it or the peach sticker, not confirmed on an official page, so the copy now says only what the release says. The 25-foot line buffer in O.C.G.A. 21-2-414 was not read (code is on LexisNexis only).",
  "election_day": {
   "hours": {
    "en": "Polling places are open 7 a.m. to 7 p.m. local time.",

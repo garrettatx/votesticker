@@ -7,39 +7,47 @@
   "elections.hawaii.gov": {
    "en": "the Hawaii Office of Elections",
    "es": "la Oficina de Elecciones de Hawaii (Office of Elections)"
+  },
+  "www.honolulu.gov": {
+   "en": "the Honolulu Elections Division",
+   "es": "la División de Elecciones de Honolulu (Honolulu Elections Division)"
+  },
+  "data.capitol.hawaii.gov": {
+   "en": "Hawaii law",
+   "es": "la ley de Hawaii"
   }
  },
  "dates": {
   "reg_deadline": {
-   "en": "Not registered yet? Register online any time, or register and vote the same day at a voter service center, open through Election Day. Paper applications must reach your County Elections Division by Monday, October 26.",
-   "es": "¿Todavía no estás registrado? Regístrate en línea en cualquier momento, o regístrate y vota el mismo día en un centro de servicio al votante (voter service center), abierto hasta el Día de las Elecciones. Las solicitudes en papel deben llegar a la División de Elecciones de tu condado (County Elections Division) a más tardar el lunes 26 de octubre.",
-   "src": "https://elections.hawaii.gov/voting/",
-   "checked": "2026-10-21",
-   "quote": "Voters may register online at any time or in-person at a voter service center.",
-   "status": "verified",
-   "until": "2026-10-26",
-   "en_after": "Not registered yet? Register online any time, or register and vote the same day at a voter service center, open through Election Day. Paper applications closed October 26.",
-   "es_after": "¿Todavía no estás registrado? Regístrate en línea en cualquier momento, o regístrate y vota el mismo día en un centro de servicio al votante, abierto hasta el Día de las Elecciones. Las solicitudes en papel cerraron el 26 de octubre."
+   "en": "Not registered yet? You can register and vote the same day at a voter service center, open through Election Day. Online registration needs a Hawaii driver's license or state ID. Paper applications closed October 26.",
+   "es": "¿Todavía no estás registrado? Puedes registrarte y votar el mismo día en un centro de servicio al votante (voter service center), abierto hasta el Día de las Elecciones. Para registrarte en línea necesitas una licencia de conducir o identificación estatal de Hawaii. Las solicitudes en papel cerraron el 26 de octubre.",
+   "src": "https://elections.hawaii.gov/wp-content/uploads/VoterGuide_2026_General_English.pdf",
+   "checked": "2026-10-28",
+   "quote": "Online! With your Hawaii Driver License or Hawaii State ID, get registered in a matter of minutes at elections.hawaii.gov. ... VOTER SERVICE CENTERS For same day registration and voting, and accessible voting",
+   "status": "verified"
   },
   "mail_request": {
    "status": "missing",
    "notes": "Every registered voter is mailed a ballot; there is no request deadline. Away from home? The deadline to have the ballot sent to an alternate address is October 27, 2026 (voting page)."
   },
   "mail_return": {
-   "en": "Drop it at a ballot drop box in your county, or mail it in the postage-paid return envelope. Either way it must arrive by 7 p.m. on Tuesday, November 3, so give the mail plenty of time.",
-   "es": "Déjala en un buzón de entrega de boletas de tu condado, o envíala por correo en el sobre de devolución con porte pagado. De cualquier forma debe llegar a más tardar a las 7 p. m. del martes 3 de noviembre, así que dale al correo tiempo de sobra.",
+   "en": "Drop it at a ballot drop box in your county, or mail it in the postage-paid return envelope. Your county must receive it by 7 p.m. on Tuesday, November 3. A postmark isn't enough, so this close to the deadline a drop box is the surer choice.",
+   "es": "Déjala en un buzón de entrega de boletas de tu condado, o envíala por correo en el sobre de devolución con porte pagado. Tu condado debe recibirla a más tardar a las 7 p. m. del martes 3 de noviembre. El matasellos no basta, así que a estas alturas un buzón de entrega es lo más seguro.",
    "src": "https://elections.hawaii.gov/wp-content/uploads/VoterGuide_2026_General_English.pdf",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "Voted ballots must be received by your County Elections Divisions by 7:00 PM on Election Day to be counted.",
    "status": "verified"
   },
   "early_hours": {
-   "en": "The main voter service centers in each county are open Monday to Saturday, 8 a.m. to 4:30 p.m., from October 20 to November 2, and 7 a.m. to 7 p.m. on Election Day. Some smaller sites keep shorter days, so check the list.",
-   "es": "Los principales centros de servicio al votante de cada condado abren de lunes a sábado, de 8 a. m. a 4:30 p. m., del 20 de octubre al 2 de noviembre, y de 7 a. m. a 7 p. m. el Día de las Elecciones. Algunos lugares más pequeños abren menos días, así que revisa la lista.",
+   "en": "The main voter service centers in each county are open Monday to Saturday, 8 a.m. to 4:30 p.m., from October 20 to November 2, and 7 a.m. to 7 p.m. on Election Day. Some sites keep shorter schedules. On Oahu, Kaneohe and Wahiawa are open only October 27 to 31, 9 a.m. to 5 p.m. In Maui County, Lanai City, Lahaina and Kaunakakai open October 31.",
+   "es": "Los principales centros de servicio al votante de cada condado abren de lunes a sábado, de 8 a. m. a 4:30 p. m., del 20 de octubre al 2 de noviembre, y de 7 a. m. a 7 p. m. el Día de las Elecciones. Algunos lugares tienen horarios más cortos. En Oahu, Kaneohe y Wahiawa abren solo del 27 al 31 de octubre, de 9 a. m. a 5 p. m. En el condado de Maui, Lanai City, Lahaina y Kaunakakai abren el 31 de octubre.",
    "src": "https://elections.hawaii.gov/voter-service-centers-and-places-of-deposit/",
-   "checked": "2026-10-21",
-   "quote": "October 20, 2026, through November 2, 2026",
-   "status": "verified"
+   "checked": "2026-10-28",
+   "quote": "General Election October 20, 2026, through November 2, 2026 Monday through Saturday 8:00 a.m. to 4:30 p.m. November 3, 2026 7:00 a.m. to 7:00 p.m. ... General Election October 31, 2026, through November 2, 2026 Daily except Sunday 8:00 a.m. to 4:30 p.m. November 3, 2026 7:00 a.m. to 7:00 p.m. County of Maui Old Youth Center 717 Fraser Avenue Lanai City, HI 96763 Lahaina Civic Center 1840 Honoapiilani Highway Lahaina, HI 96761 Mitchell Pau'ole Center Conference Room 90 Ainoa Street Kaunakakai, HI 96748 ... General Election October 27, 2026, through October 31, 2026 Tuesday through Saturday 9:00 a.m. to 5:00 p.m. George Fred Wright Wahiawa District Park (Ceramics Room) 1129 Kilani Avenue Wahiawa, HI 96786 Kaneohe District Park (Meeting Room) 45-660 Keaahala Road Kaneohe, HI 96744",
+   "status": "verified",
+   "until": "2026-10-31",
+   "en_after": "The main voter service centers in each county are open Monday to Saturday, 8 a.m. to 4:30 p.m., through November 2, and 7 a.m. to 7 p.m. on Election Day. In Maui County, Lanai City, Lahaina and Kaunakakai are open November 2 and Election Day.",
+   "es_after": "Los principales centros de servicio al votante de cada condado abren de lunes a sábado, de 8 a. m. a 4:30 p. m., hasta el 2 de noviembre, y de 7 a. m. a 7 p. m. el Día de las Elecciones. En el condado de Maui, Lanai City, Lahaina y Kaunakakai abren el 2 de noviembre y el Día de las Elecciones."
   },
   "cure": {
    "status": "missing",
@@ -94,7 +102,12 @@
    "status": "missing"
   },
   "without": {
-   "status": "missing"
+   "en": "Voting in person in Honolulu? Bring an ID. A state driver's license or ID card or a passport works, and so does a current utility bill, bank statement, government check, government document or paycheck with your name and address. No ID? Staff will ask you more questions to confirm who you are, which takes longer.",
+   "es": "¿Vas a votar en persona en Honolulu? Lleva una identificación. Sirve una licencia de conducir o identificación estatal o un pasaporte, y también un recibo de servicios, estado de cuenta bancario, cheque del gobierno, documento del gobierno o talón de pago reciente con tu nombre y dirección. ¿No tienes? El personal te hará más preguntas para confirmar quién eres, y eso toma más tiempo.",
+   "src": "https://www.honolulu.gov/elections/voter-service-centers/",
+   "checked": "2026-10-28",
+   "quote": "To facilitate the voting process, please remember to bring an ID to the Voter Service Center. Acceptable forms of ID include: State issued drivers license; State issued identification card; Valid Passport; or a current utility bill, bank statement, government check, government document, or paycheck bearing your name and current address. ... If you do not have acceptable identification, we will ask you for additional information to confirm your identity. This process will take additional time.",
+   "status": "verified"
   }
  },
  "mail": {
@@ -107,11 +120,11 @@
    "status": "verified"
   },
   "witness": {
-   "en": "Read the affirmation statement and sign the return envelope. Your ballot can't be counted without your signature. Can't sign on your own? Someone you trust can be your witness, but not your employer or union agent.",
-   "es": "Lee la declaración de afirmación y firma el sobre de devolución. Tu boleta no se puede contar sin tu firma. ¿No puedes firmar por tu cuenta? Una persona de confianza puede ser tu testigo, pero no tu empleador ni un agente de tu sindicato.",
+   "en": "Read the statement on your return envelope and sign it. Your ballot can't be counted without your signature. Can't sign on your own? Someone you're comfortable with can help and be your witness, but not your employer, your union agent or a candidate on the ballot.",
+   "es": "Lee la declaración del sobre de devolución y fírmalo. Tu boleta no se puede contar sin tu firma. ¿No puedes firmar por tu cuenta? Una persona de confianza puede ayudarte y ser tu testigo, pero no tu empleador, un agente de tu sindicato ni un candidato que aparezca en la boleta.",
    "src": "https://elections.hawaii.gov/wp-content/uploads/VoterGuide_2026_General_English.pdf",
-   "checked": "2026-10-21",
-   "quote": "You must sign the return envelope for your ballot to be counted.",
+   "checked": "2026-10-28",
+   "quote": "You're permitted to ask someone you feel comfortable with to help read through your ballot, mark your choices, and be your witness if you cannot sign the return envelope independently. Your employer or your union agent is prohibited from helping. ... you are prohibited from receiving assistance from a candidate on the ballot, or your employer or union agent.",
    "status": "verified"
   },
   "cure": {
@@ -134,11 +147,20 @@
  },
  "polls_rules": {
   "gear": {
-   "status": "missing",
-   "notes": "HRS 11-132 (electioneering) is on capitol.hawaii.gov, which blocked curl with a Cloudflare 403 and showed a bot check in Chrome; not read, not bypassed. elections.hawaii.gov has no electioneering page found."
+   "en": "No campaigning within 200 feet of a voter service center or ballot drop box, including its parking lot and walkways. Wearing a campaign shirt or button? Cover it or take it off before you go in.",
+   "es": "No se permite hacer campaña a menos de 200 pies de un centro de servicio al votante o de un buzón de entrega, incluidos su estacionamiento y sus accesos. ¿Llevas una camiseta o un botón de campaña? Cúbrelo o quítatelo antes de entrar.",
+   "src": "https://data.capitol.hawaii.gov/hrscurrent/Vol01_Ch0001-0042F/HRS0011/HRS_0011-0132.htm",
+   "checked": "2026-10-28",
+   "quote": "a map designating an area of two hundred feet from the perimeter of any voter service center, place of deposit, and its appurtenances. Any person who remains or loiters within this specified area for the purpose of campaigning shall be guilty of a misdemeanor. ... Any voter who displays campaign material in the voter service center, place of deposit, or its appurtenances shall remove or cover that material before entering",
+   "status": "verified"
   },
   "phone": {
-   "status": "missing"
+   "en": "Hawaii law lets you share a photo of your own marked ballot, on social media or anywhere else. It doesn't cover taking photos inside a voter service center, so ask staff first and keep other voters and their ballots out of the frame.",
+   "es": "La ley de Hawaii te permite compartir una foto de tu propia boleta marcada, en redes sociales o en cualquier otro lugar. No dice nada sobre tomar fotos dentro de un centro de servicio al votante, así que pregunta primero al personal y no saques a otros votantes ni sus boletas en la foto.",
+   "src": "https://data.capitol.hawaii.gov/hrscurrent/Vol01_Ch0001-0042F/HRS0011/HRS_0011-0121.htm",
+   "checked": "2026-10-28",
+   "quote": "A voter shall not be prohibited from distributing or sharing an electronic or digital image of the voter's own marked ballot via social media or other means regardless of how the voter acquired the image; provided that this section shall not be a defense for any election offenses under chapter 19 or related offenses under the Penal Code.",
+   "status": "verified"
   },
   "line": {
    "en": "Voting closes at 7 p.m. on Election Day. If you're in line at a voter service center or a ballot drop box by then, stay in line. You'll be allowed to vote or drop off your ballot. Leave the line and you can't rejoin.",
@@ -151,8 +173,8 @@
  },
  "sticker": {
   "tradition": {
-   "en": "Hawaii tied its sticker to ballot tracking: in 2022, once your ballot was accepted for counting, you could download a virtual I Voted sticker.",
-   "es": "Hawaii unió su sticker al seguimiento de boletas: en 2022, una vez que aceptaban tu boleta para contarla, podías descargar un sticker virtual de I Voted.",
+   "en": "Hawaii tied its sticker to ballot tracking. In 2022, once your ballot was accepted for counting, you could download a virtual \"I Voted\" sticker.",
+   "es": "Hawaii unió su sticker al seguimiento de boletas. En 2022, cuando aceptaban tu boleta para contarla, podías descargar un sticker virtual de \"I Voted\".",
    "src": "https://elections.hawaii.gov/news-release/ballot-tracking-service-available-for-hawaii-voters/",
    "checked": "2026-10-21",
    "quote": "“Once your ballot has been accepted for counting, voters can also download their virtual ‘I Voted’ sticker,” he added.",
@@ -193,13 +215,13 @@
    "status": "verified"
   },
   "late_mail": {
-   "en": "It won't count. Ballots must be received, not postmarked, by 7 p.m. on November 3. If it's getting close, use a ballot drop box instead of the mail.",
-   "es": "No se cuenta. Las boletas deben recibirse, no basta el matasellos, a más tardar a las 7 p. m. del 3 de noviembre. Si ya está cerca la fecha, usa un buzón de entrega en lugar del correo.",
-   "src": "https://elections.hawaii.gov/news-release/hawaii-voters-to-receive-general-election-ballots-by-october-16/",
-   "checked": "2026-10-21",
-   "quote": "Ballots received after the deadline cannot be counted.",
+   "en": "It counts only if your county receives it by 7 p.m. on November 3. A postmark isn't enough. This close to the deadline, use a ballot drop box in your county instead of the mail.",
+   "es": "Solo cuenta si tu condado la recibe a más tardar a las 7 p. m. del 3 de noviembre. El matasellos no basta. A estas alturas, usa un buzón de entrega de tu condado en lugar del correo.",
+   "src": "https://elections.hawaii.gov/wp-content/uploads/VoterGuide_2026_General_English.pdf",
+   "checked": "2026-10-28",
+   "quote": "Voted ballots must be received by your County Elections Divisions by 7:00 PM on Election Day to be counted.",
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026 on elections.hawaii.gov (curl worked): Voting, Voter Service Centers and Ballot Drop Boxes, Voting in Hawaii, Provisional Voting, Replacement Ballot, County Elections Divisions, the October 16 ballot news release, the 2022 ballot tracking release, and the 2026 General Election Voter Guide PDF. states.js treats Hawaii as all-mail (ballots by October 16, received by 7 p.m. November 3); both match. Voter service centers run October 20 to November 3, excluding Sundays (voting page); smaller sites (Lanai, Molokai, Hana, Wahiawa, Kaneohe) have shorter schedules. capitol.hawaii.gov (HRS) returned a Cloudflare 403 to curl and a bot check in Chrome, so the electioneering distance (HRS 11-132) was not read. No tracking URL is set: the sign-up link is not on the pages read (BallotTrax is named on Voting in Hawaii). The October 27 alternate-address deadline is on the voting page. Sticker: the virtual sticker is from a 2022 release; no 2026 page confirms it."
+ "notes": "Read October 21, 2026 on elections.hawaii.gov (curl worked): Voting, Voter Service Centers and Ballot Drop Boxes, Voting in Hawaii, Provisional Voting, Replacement Ballot, County Elections Divisions, the October 16 ballot news release, the 2022 ballot tracking release, and the 2026 General Election Voter Guide PDF. states.js treats Hawaii as all-mail (ballots by October 16, received by 7 p.m. November 3); both match. Voter service centers run October 20 to November 3, excluding Sundays (voting page); smaller sites (Lanai, Molokai, Hana, Wahiawa, Kaneohe) have shorter schedules. capitol.hawaii.gov (HRS) returned a Cloudflare 403 to curl and a bot check in Chrome, so the electioneering distance (HRS 11-132) was not read. No tracking URL is set: the sign-up link is not on the pages read (BallotTrax is named on Voting in Hawaii). The October 27 alternate-address deadline is on the voting page. Sticker: the virtual sticker is from a 2022 release; no 2026 page confirms it. Oct 28 pass: HRS read on data.capitol.hawaii.gov (the capitol.hawaii.gov mirror; www host still blocks): 11-121 ballot images, 11-132 200-foot zone, 11-106 cure (five business days, which computes to Tuesday, November 10, 2026; no official page found stating that date, so not on the page). Honolulu Elections Division voter service center page read for ID. Voter service center schedules re-read on elections.hawaii.gov."
 }

@@ -15,31 +15,34 @@
  },
  "dates": {
   "reg_deadline": {
-   "en": "Registration closed Monday, October 5, 2026. Arkansas has no same-day or Election Day registration.",
-   "es": "El registro cerró el lunes 5 de octubre de 2026. Arkansas no tiene registro el mismo día ni el Día de las Elecciones.",
+   "en": "Registration closed Monday, October 5, 2026. Arkansas has no same-day or Election Day registration. Already registered in Arkansas and moved to another county? Contact your county clerk. Transfers of registered voters can be received until the polls close on November 3.",
+   "es": "El registro cerró el lunes 5 de octubre de 2026. Arkansas no tiene registro el mismo día ni el Día de las Elecciones. ¿Ya estás registrado en Arkansas y te mudaste a otro condado? Comunícate con el secretario de tu condado (county clerk). Los traslados de votantes registrados se pueden recibir hasta que cierren las urnas el 3 de noviembre.",
    "src": "https://www.sos.arkansas.gov/uploads/elections/2026_Election_Calendar_Rev._6-2025_.pdf",
-   "checked": "2026-10-21",
-   "quote": "Deadline to apply to register to vote – Sunday, October 4, 2026* o Actual deadline is Monday, October 5, 2026",
+   "checked": "2026-10-28",
+   "quote": "NO LATER THAN POLLS CLOSE Deadline for the county clerk to receive county to county transfer of registered voters allowed to vote in the election. Arkansas Constitution, Amendment 51 § 10(b)(2)(B); Act 372 of 2025",
    "status": "verified"
   },
   "mail_request": {
-   "en": "Applying by mail, fax or email? Your county clerk must receive your absentee application by Tuesday, October 27, 2026.",
-   "es": "¿Vas a mandar tu solicitud por correo, fax o correo electrónico? La oficina del secretario de tu condado (county clerk) debe recibir tu solicitud de voto en ausencia a más tardar el martes 27 de octubre de 2026.",
+   "en": "Mail, fax and email applications closed Tuesday, October 27. If you qualify to vote absentee, you, a designated bearer or a care facility administrator can still hand in an application at your county clerk's office until close of business Friday, October 30. Or vote early in person through 5 p.m. Monday, November 2.",
+   "es": "Las solicitudes por correo, fax y correo electrónico cerraron el martes 27 de octubre. Si cumples los requisitos para votar en ausencia, tú, un portador designado (designated bearer) o el administrador de un centro de cuidado todavía pueden entregar una solicitud en la oficina del secretario de tu condado (county clerk) hasta el cierre de oficina del viernes 30 de octubre. O vota por anticipado en persona hasta las 5 p. m. del lunes 2 de noviembre.",
    "src": "https://www.sos.arkansas.gov/uploads/elections/2026_Election_Calendar_Rev._6-2025_.pdf",
-   "checked": "2026-10-21",
-   "quote": "Deadline for county clerk to receive absentee ballot applications by mail, fax, or electronic mail for the General Election.",
+   "checked": "2026-10-28",
+   "quote": "Deadline for county clerk to receive in-person applications for absentee ballots for the General Election from the voter, designated bearer, or administrator is no later than the close of regular business hours on the Friday before the election.",
    "status": "verified",
-   "until": "2026-10-27",
-   "en_after": "Mail, fax and email applications closed October 27, 2026. You can still vote early in person through 5 p.m. on Monday, November 2, or at the polls on Election Day.",
-   "es_after": "Las solicitudes por correo, fax y correo electrónico cerraron el 27 de octubre de 2026. Todavía puedes votar por anticipado en persona hasta las 5 p. m. del lunes 2 de noviembre, o en tu lugar de votación el Día de las Elecciones."
+   "until": "2026-10-30",
+   "en_after": "Absentee applications by mail and in person are closed. Vote early in person through 5 p.m. on Monday, November 2, or at the polls on Election Day. A voter who is medically unable to get to the polls can still apply through an authorized agent until 1:30 p.m. on Election Day.",
+   "es_after": "Las solicitudes de boleta de voto en ausencia por correo y en persona ya cerraron. Vota por anticipado en persona hasta las 5 p. m. del lunes 2 de noviembre, o en tu lugar de votación el Día de las Elecciones. Un votante que por razones médicas no puede ir a votar todavía puede pedir su boleta por medio de un agente autorizado (authorized agent) hasta la 1:30 p. m. del Día de las Elecciones."
   },
   "mail_return": {
-   "en": "A mailed ballot must reach your county clerk's office by 7:30 p.m. on Tuesday, November 3, 2026. You can't fax or email it.",
-   "es": "Una boleta enviada por correo debe llegar a la oficina del secretario de tu condado (county clerk) a más tardar a las 7:30 p. m. del martes 3 de noviembre de 2026. No se puede mandar por fax ni por correo electrónico.",
-   "src": "https://www.sos.arkansas.gov/elections/voter-information/absentee-voting",
-   "checked": "2026-10-21",
-   "quote": "By Mail: received at clerks office by 7:30 p.m. ON election day",
-   "status": "verified"
+   "en": "A mailed ballot must reach your county clerk's office by 7:30 p.m. on Tuesday, November 3, 2026. Delivering it yourself or by a designated bearer? That deadline is close of business Friday, October 30. You can't fax or email a ballot. Military and overseas ballots count if the clerk gets them by 5 p.m. Friday, November 13.",
+   "es": "Una boleta por correo debe llegar a la oficina del secretario de tu condado (county clerk) a más tardar a las 7:30 p. m. del martes 3 de noviembre de 2026. ¿La entregas tú o un portador designado (designated bearer)? El plazo es el cierre de oficina del viernes 30 de octubre. No puedes mandar la boleta por fax ni por correo electrónico. Las boletas militares y del extranjero cuentan si el secretario las recibe a más tardar a las 5 p. m. del viernes 13 de noviembre.",
+   "src": "https://www.sos.arkansas.gov/uploads/elections/2026_Election_Calendar_Rev._6-2025_.pdf",
+   "checked": "2026-10-28",
+   "quote": "Deadline for the voter, designated bearer or administrator to personally deliver absentee ballots to the county clerk is no later than the close of regular business hours on the Friday before the election. ... 7:30 pm – Deadline for county clerk to receive absentee ballots by mail (excluding military and overseas) ... Must be received by the county clerk by 5:00 pm, ten (10) calendar days after the election.",
+   "status": "verified",
+   "until": "2026-10-30",
+   "en_after": "A mailed ballot must reach your county clerk's office by 7:30 p.m. on Tuesday, November 3, 2026. You can't fax or email a ballot. Military and overseas ballots count if the clerk gets them by 5 p.m. Friday, November 13.",
+   "es_after": "Una boleta por correo debe llegar a la oficina del secretario de tu condado (county clerk) a más tardar a las 7:30 p. m. del martes 3 de noviembre de 2026. No puedes mandar la boleta por fax ni por correo electrónico. Las boletas militares y del extranjero cuentan si el secretario las recibe a más tardar a las 5 p. m. del viernes 13 de noviembre."
   },
   "early_hours": {
    "en": "Vote early Monday to Friday from 8 a.m. to 6 p.m., or Saturday from 10 a.m. to 4 p.m. Early voting ends at 5 p.m. on Monday, November 2. Off-site early voting hours can vary by county, so check with your county clerk.",
@@ -90,28 +93,26 @@
   "rule": "photo_required",
   "accepted": {
    "en": [
-    "Driver's license",
-    "Photo ID card",
-    "Concealed handgun carry license",
+    "Arkansas driver's license or photo ID card, including the digital version in the Arkansas Mobile ID app",
+    "Concealed carry handgun license",
     "U.S. passport",
-    "Employee badge or ID from an accredited college or university in Arkansas",
     "U.S. military ID",
+    "Student or employee ID from a college, university or trade school in Arkansas",
     "Public assistance ID card with your photo",
-    "Voter verification card from your county clerk"
+    "Voter ID card with your photo from your county clerk"
    ],
    "es": [
-    "Licencia de conducir",
-    "Tarjeta de identificación con foto",
-    "Licencia para portar armas ocultas (concealed handgun carry license)",
+    "Licencia de conducir o tarjeta de identificación con foto de Arkansas, incluida la versión digital en la app Arkansas Mobile ID",
+    "Licencia para portar armas ocultas (concealed carry handgun license)",
     "Pasaporte de EE. UU.",
-    "Credencial o identificación de empleado de una universidad acreditada de Arkansas",
     "Identificación militar de EE. UU.",
+    "Identificación de estudiante o empleado de una universidad o escuela técnica (trade school) de Arkansas",
     "Tarjeta de asistencia pública con tu foto",
-    "Tarjeta de verificación de votante (voter verification card) de la oficina del secretario de tu condado"
+    "Tarjeta de votante con foto de la oficina del secretario de tu condado (county clerk)"
    ],
-   "src": "https://www.sos.arkansas.gov/frequently-asked-questions/71",
-   "checked": "2026-10-21",
-   "quote": "Documents and identification cards that will be accepted as verification of voter registration include without limitation: A driver’s license; A photo identification card; A concealed handgun carry license; A United States passport; An employee badge or identification document issued by an accredited post-secondary education institution in the State of Arkansas; A United States military identification document; A public assistance identification card if the card shows a photograph of the person to whom the document or identification card was issued; A voter verification card as provided under Ark. Code § 7-5-324.",
+   "src": "https://sbec.arkansas.gov/wp-content/uploads/2026-Poll-Worker-Guide-CLEAN-10-28-25.pdf",
+   "checked": "2026-10-28",
+   "quote": "An Arkansas driver's license or photo identification card (may be in digital form through the Arkansas Mobile ID app); A concealed carry handgun license; A U.S. passport; A U.S. military ID document; A student or employee ID card issued by a postsecondary educational institution, or issued by a trade school in the State of Arkansas; A public assistance ID card with photo; or A voter ID card, with photo, issued by the county clerk.",
    "status": "verified"
   },
   "expired": {
@@ -123,11 +124,11 @@
    "status": "verified"
   },
   "without": {
-   "en": "No ID with you? You can vote a provisional ballot. It counts if you bring an accepted ID to your county election commission or county clerk by noon on Monday, November 9, 2026. Don't have one at all? Your county clerk gives out a free voter verification card.",
-   "es": "¿No traes identificación? Puedes votar con una boleta provisional. Cuenta si llevas una identificación aceptada a la comisión electoral de tu condado o a la oficina del secretario del condado (county clerk) a más tardar al mediodía del lunes 9 de noviembre de 2026. ¿No tienes ninguna? La oficina del secretario de tu condado da gratis una tarjeta de verificación de votante (voter verification card).",
+   "en": "No ID with you? You can vote a provisional ballot. To have it counted, bring an accepted ID to your county election commission or county clerk by noon on Monday, November 9, 2026. Don't have an ID at all? Ask your county clerk for a free voter verification card. You'll sign a statement that you don't have an ID and bring papers that show your full legal name, birth date and home address.",
+   "es": "¿No traes identificación? Puedes votar con una boleta provisional. Para que cuente, lleva una identificación aceptada a la comisión electoral de tu condado o al secretario de tu condado (county clerk) a más tardar al mediodía del lunes 9 de noviembre de 2026. ¿No tienes ninguna identificación? Pide al secretario de tu condado una tarjeta gratuita de verificación de votante (voter verification card). Firmarás una declaración de que no tienes identificación y llevarás documentos con tu nombre legal completo, tu fecha de nacimiento y tu domicilio.",
    "src": "https://www.sos.arkansas.gov/frequently-asked-questions/71",
-   "checked": "2026-10-21",
-   "quote": "The voter returns to the county board of election commissioners or the county clerk by 12:00 noon on the Monday following the election and presents a document or identification card meeting the requirements described above",
+   "checked": "2026-10-28",
+   "quote": "The voter returns to the county board of election commissioners or the county clerk by 12:00 noon on the Monday following the election and presents a document or identification card meeting the requirements described above ... To obtain this voter verification card, voters will be required to complete an affidavit stating they do not possess such identification, and must provide documentation containing their full legal name and date of birth, as well as documentation containing their name and residential address.",
    "status": "verified"
   }
  },
@@ -173,16 +174,20 @@
  },
  "polls_rules": {
   "gear": {
-   "en": "Leave the campaign shirts, caps and buttons at home. Electioneering isn't allowed inside the polls or within 100 feet of the main entrance voters use, and that includes wearing campaign articles. Poll workers will ask you to take them off or cover them up.",
-   "es": "Deja en casa las camisetas, gorras y botones de campaña. No se permite hacer campaña dentro del lugar de votación ni a menos de 100 pies de la entrada principal que usan los votantes, y eso incluye llevar artículos de campaña. Los trabajadores electorales te pedirán que te los quites o que los tapes.",
+   "en": "Leave the campaign shirts, caps and buttons at home. Electioneering isn't allowed inside the polls or within 100 feet of the main entrance voters use, and that includes wearing campaign items. Poll workers will ask you to take them off or cover them.",
+   "es": "Deja en casa las camisetas, gorras y botones de campaña. No se permite hacer campaña dentro del lugar de votación ni a menos de 100 pies de la entrada principal que usan los votantes, y eso incluye llevar artículos de campaña. Los trabajadores electorales te pedirán que te los quites o los cubras.",
    "src": "https://sbec.arkansas.gov/wp-content/uploads/2026-Poll-Worker-Guide-CLEAN-10-28-25.pdf",
    "checked": "2026-10-21",
    "quote": "Electioneering includes 1) handing out literature on any candidate or issue on the ballot, 2) soliciting signatures on any petition, 3) soliciting contributions, and 4) attempting to win votes by wearing or displaying campaign buttons, caps, shirts, signs, or other articles of influence",
    "status": "verified"
   },
   "phone": {
-   "status": "missing",
-   "notes": "No rule on phones or ballot photos found on sos.arkansas.gov or in the SBEC 2026 Poll Worker Guide (same finding as docs/faq-sources.json)."
+   "en": "Neither the state poll worker guide nor the Secretary of State's pages we read say anything about phones or photos at the polls. Arkansas does keep a 6-foot privacy zone around voting booths, so don't photograph other voters or their ballots, and ask a poll worker before you take any photo inside.",
+   "es": "Ni la guía estatal para trabajadores electorales ni las páginas de la Secretaría de Estado que leímos dicen nada sobre celulares o fotos en el lugar de votación. Arkansas sí mantiene una zona de privacidad de 6 pies alrededor de las cabinas de votación, así que no les tomes fotos a otros votantes ni a sus boletas, y pregunta a un trabajador electoral antes de tomar cualquier foto adentro.",
+   "src": "https://sbec.arkansas.gov/wp-content/uploads/2026-Poll-Worker-Guide-CLEAN-10-28-25.pdf",
+   "checked": "2026-10-28",
+   "quote": "A 6-foot privacy zone around voting booths be observed [A.C.A. § 7-5- 310(a)(2)(C)].",
+   "status": "verified"
   },
   "line": {
    "en": "If you're in line at 7:30 p.m., you can still vote.",
@@ -221,7 +226,7 @@
    "notes": "The SOS links Voter View for polling place lookups but no page found says it tracks absentee ballots."
   }
  },
- "notes": "Read October 21, 2026 with curl: sos.arkansas.gov Voting in Arkansas, Absentee Voting, FAQ categories 65, 67, 71 and 72, the 2026 Election Calendar (Rev. June 2025, still the one linked from sos.arkansas.gov/elections), the 2020 Voter Rights PDF, and the SBEC 2026 Poll Worker Guide (10-28-25). EARLY VOTING DATES FOR THE LEAD (states.js has AR unchecked): Monday, October 19 to Monday, November 2, 2026. Weekdays 8 a.m. to 6 p.m., Saturdays 10 a.m. to 4 p.m., ending 5 p.m. Monday, November 2. Sources: (1) https://www.sos.arkansas.gov/uploads/elections/2026_Election_Calendar_Rev._6-2025_.pdf: 'October 19, 2026 – Monday 15 DAYS PRIOR TO THE GENERAL ELECTION Early voting begins for General Election between the hours of 8:00 am and 6:00 pm, Monday through Friday, and 10:00 am to 4:00 pm on Saturday. Early voting ends at 5:00 pm on the Monday prior to the election.' and 'November 2, 2026 – Monday ... Last day for voter to participate in early voting. Early voting closes at 5:00 pm on the Monday before the election.' (2) https://www.sos.arkansas.gov/elections/voter-information/voter-registration-information/voting-in-arkansas: the hours quote in dates.early_hours. Suggested states.js note: 'Most counties hold early voting at the county clerk's office.' LOCATOR HOST REJECTED: the SOS links its polling place lookup ('Arkansas Voter View', shown as www.voterview.org) to https://www.voterview.ar-nova.org/voterview; the validator does not accept www.voterview.ar-nova.org, so where.locator_url and mail.track_url are left out. CONFLICTS (left out of the file): (a) in-person absentee APPLICATION deadline: the SOS Absentee Voting page says 'In Person: by close of business the Friday BEFORE the election.' and the 2026 calendar says 'Deadline for county clerk to receive in-person applications for absentee ballots ... no later than the close of regular business hours on the Friday before the election.' (October 30), but SOS FAQ 67 says 'What is the In-Person application deadline for Absentee Voting? By the close of the business day before the election.' (b) in-person BALLOT delivery: the Absentee page says 'In Person: by close of business the Friday BEFORE the election.' and the calendar agrees (October 30), but SOS FAQ 72 says 'What is the In-Person deadline for Delivery of Voted Ballot to County Clerk? By close of business the day before the election.' (c) designated bearer ballot delivery: Absentee page 'By Designated Bearer: by close of business the Friday BEFORE the election.' vs FAQ 67 'By 7:30 p.m. on election day.' The FAQ pages carry internal editing notes ('Mentions “Administrator” here. Can we define?'), so they read as unfinished, but they are live official pages; the file states only the mail deadlines, where all three sources agree. Provisional ID: the Voting in Arkansas page says 'until the Monday after the election'; FAQ 71 and the calendar say noon on that Monday (November 9); the file uses noon. Phone rule, witness rule, drop boxes, cure, tracker and sticker tradition not found.",
+ "notes": "Read October 21, 2026 with curl: sos.arkansas.gov Voting in Arkansas, Absentee Voting, FAQ categories 65, 67, 71 and 72, the 2026 Election Calendar (Rev. June 2025, still the one linked from sos.arkansas.gov/elections), the 2020 Voter Rights PDF, and the SBEC 2026 Poll Worker Guide (10-28-25). EARLY VOTING DATES FOR THE LEAD (states.js has AR unchecked): Monday, October 19 to Monday, November 2, 2026. Weekdays 8 a.m. to 6 p.m., Saturdays 10 a.m. to 4 p.m., ending 5 p.m. Monday, November 2. Sources: (1) https://www.sos.arkansas.gov/uploads/elections/2026_Election_Calendar_Rev._6-2025_.pdf: 'October 19, 2026 – Monday 15 DAYS PRIOR TO THE GENERAL ELECTION Early voting begins for General Election between the hours of 8:00 am and 6:00 pm, Monday through Friday, and 10:00 am to 4:00 pm on Saturday. Early voting ends at 5:00 pm on the Monday prior to the election.' and 'November 2, 2026 – Monday ... Last day for voter to participate in early voting. Early voting closes at 5:00 pm on the Monday before the election.' (2) https://www.sos.arkansas.gov/elections/voter-information/voter-registration-information/voting-in-arkansas: the hours quote in dates.early_hours. Suggested states.js note: 'Most counties hold early voting at the county clerk's office.' LOCATOR HOST REJECTED: the SOS links its polling place lookup ('Arkansas Voter View', shown as www.voterview.org) to https://www.voterview.ar-nova.org/voterview; the validator does not accept www.voterview.ar-nova.org, so where.locator_url and mail.track_url are left out. CONFLICTS (left out of the file): (a) in-person absentee APPLICATION deadline: the SOS Absentee Voting page says 'In Person: by close of business the Friday BEFORE the election.' and the 2026 calendar says 'Deadline for county clerk to receive in-person applications for absentee ballots ... no later than the close of regular business hours on the Friday before the election.' (October 30), but SOS FAQ 67 says 'What is the In-Person application deadline for Absentee Voting? By the close of the business day before the election.' (b) in-person BALLOT delivery: the Absentee page says 'In Person: by close of business the Friday BEFORE the election.' and the calendar agrees (October 30), but SOS FAQ 72 says 'What is the In-Person deadline for Delivery of Voted Ballot to County Clerk? By close of business the day before the election.' (c) designated bearer ballot delivery: Absentee page 'By Designated Bearer: by close of business the Friday BEFORE the election.' vs FAQ 67 'By 7:30 p.m. on election day.' The FAQ pages carry internal editing notes ('Mentions “Administrator” here. Can we define?'), so they read as unfinished, but they are live official pages; the file states only the mail deadlines, where all three sources agree. Provisional ID: the Voting in Arkansas page says 'until the Monday after the election'; FAQ 71 and the calendar say noon on that Monday (November 9); the file uses noon. Phone rule, witness rule, drop boxes, cure, tracker and sticker tradition not found. Oct 28 pass: re-read the 2026 calendar (Rev. June 2025, statute-cited) for the Friday, October 30 in-person application and hand-delivery deadlines, the 1:30 p.m. Election Day authorized-agent application deadline, the November 13 military and overseas receipt deadline and county-to-county transfers through close of polls; FAQ 67 and 72 still say 'the day before the election' for in-person deadlines, so the calendar's statute citations (Ark. Code 7-5-404(a)(3)(A), 7-5-411(a)(1)(C)) were followed. ID list from the SBEC 2026 Poll Worker Guide (adds Mobile ID and trade school IDs). Washington County sticker contest page (washingtoncountyar.gov) returned 403 to curl and WebFetch and is blocked for Chrome reading; sticker.tradition stays missing.",
  "election_day": {
   "hours": {
    "en": "Polling places are open 7:30 a.m. to 7:30 p.m. local time.",

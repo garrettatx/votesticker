@@ -97,8 +97,9 @@
   "id": {
    "rule": "photo_required",
    "summary": "You must show a photo ID, such as an Arkansas driver's license or U.S. passport. Without one, you vote provisionally and must show ID by the following Monday.",
-   "source": "https://www.sos.arkansas.gov/elections/voter-information/voter-registration-information/voting-in-arkansas",
-   "quote": "Provisional ID - If you voted provisional because of not having sufficient identification, you will have until the Monday after the election to provide identification to the County Clerkto have your vote counted"
+   "source": "https://sbec.arkansas.gov/wp-content/uploads/2026-Poll-Worker-Guide-CLEAN-10-28-25.pdf",
+   "quote": "Provisional ID - If you voted provisional because of not having sufficient identification, you will have until the Monday after the election to provide identification to the County Clerkto have your vote counted",
+   "checked": "2026-10-28"
   },
   "registration": {
    "rule": "no",
@@ -614,8 +615,9 @@
   "selfie": {
    "rule": "limited",
    "summary": "State law bars using cameras or cell phones in a polling place while voting is going on, unless a poll manager allows it. Mail ballots are not addressed.",
-   "source": "https://cms.chathamcountyga.gov/api/assets/elections-website/a69d420c-4fdc-4a21-9b81-f541ae59a167/media-photography-policy.pdf?version=0",
-   "quote": "O.C.G.A. §21-2-413: (e) No person shall use photographic or other electronic monitoring or recording devices, cameras, or cellular telephones while such person is in a polling place while voting is taking place"
+   "source": "https://sos.ga.gov/page/elections-faq",
+   "quote": "O.C.G.A. §21-2-413: (e) No person shall use photographic or other electronic monitoring or recording devices, cameras, or cellular telephones while such person is in a polling place while voting is taking place",
+   "checked": "2026-10-28"
   },
   "notes": "sos.ga.gov blocks curl and WebFetch (Cloudflare 403); the hours and ID pages were read through Chrome. Registration and selfie sources are county election offices, not the state: the Oct. 5 date is from Liberty County's reproduction of the SOS '2026 State Election Comprehensive Calendar' (row: election date, advance voting window, registration deadline); the selfie quote is O.C.G.A. 21-2-413(e) as quoted in Chatham County Elections' media policy, because the official Georgia Code (LexisNexis) could not be fetched. The 21-2-413(e) text also lets a poll manager allow photography and, per search summaries, bars photographing a ballot being voted; I did not read that clause directly. Upgrade both sources to sos.ga.gov if possible."
  },
@@ -630,8 +632,9 @@
   "id": {
    "rule": "no_id",
    "summary": "Most voters don't need to show ID. At a voter service center, you may confirm who you are with your license or Social Security digits, or show ID if asked.",
-   "source": "https://elections.hawaii.gov/wp-content/uploads/HAR-Office-of-Elections-1.pdf",
-   "quote": "A clerk may choose to verify a voter's identity, without the above application. As such, the voter may be asked for one of the following: (1) The provision of a current and valid photo identification"
+   "source": "https://www.honolulu.gov/elections/voter-service-centers/",
+   "quote": "A clerk may choose to verify a voter's identity, without the above application. As such, the voter may be asked for one of the following: (1) The provision of a current and valid photo identification",
+   "checked": "2026-10-28"
   },
   "registration": {
    "rule": "yes",
@@ -640,7 +643,10 @@
    "source": "https://elections.hawaii.gov/voters/registration/",
    "quote": "If you miss the registration deadline, same day voter registration is available at voter service centers, to register and vote in-person, beginning 10 days prior and through election day."
   },
-  "selfie": null,
+  "selfie": {
+   "source": "https://data.capitol.hawaii.gov/hrscurrent/Vol01_Ch0001-0042F/HRS0011/HRS_0011-0121.htm",
+   "checked": "2026-10-28"
+  },
   "notes": "Ballots arrive by mail about 18 days before the election and must be received (not postmarked) by 7:00 p.m. on Election Day. The Office of Elections page also says 'Voters may register online at any time or in-person at a voter service center,' which does not state an online cutoff; only the paper deadline is confirmed. ID rule is from Hawaii Administrative Rules ch. 3-177 (Office of Elections PDF): identity is verified mainly through an application using a driver license, state ID, or SSN4, or the clerk may ask for photo ID, a utility bill, oral recitation of record details, or a vouching witness; quote's OCR typos ('piovision') were corrected to 'provision'. First-time mail registrants without HAVA ID vote provisionally. capitol.hawaii.gov (HRS) blocked fetching, so no statute on ballot photos could be checked; selfie is null."
  },
  "ID": {
@@ -760,14 +766,16 @@
    "open": "7 a.m.",
    "close": "7 p.m.",
    "summary": "Polls are open at least 7 a.m. to 7 p.m. Counties may open as early as 6 a.m. and close as late as 8 p.m., so check your county's hours.",
-   "source": "https://sos.ks.gov/elections/voter-information.html",
-   "quote": "State law requires polling places to open at 7:00 a.m. and close at 7:00 p.m. on election day. State law allow counties to open polling locations as early as 6:00 a.m. and close as late as 8:00 p.m."
+   "source": "https://www.ksrevisor.gov/statutes/chapters/ch25/025_001_0006.html",
+   "quote": "State law requires polling places to open at 7:00 a.m. and close at 7:00 p.m. on election day. State law allow counties to open polling locations as early as 6:00 a.m. and close as late as 8:00 p.m.",
+   "checked": "2026-10-28"
   },
   "id": {
    "rule": "photo_required",
    "summary": "You must show a photo ID, such as a driver's license, U.S. passport, or Kansas college student ID. Without one, you vote a provisional ballot.",
-   "source": "https://sos.ks.gov/elections/election-faq.html",
-   "quote": "State law requires Kansas voters to show photographic identification when casting a vote in person, this includes voting advance in-person. If the voter does not provide identification or it is not valid, the voter will be issued a provisional ballot."
+   "source": "https://sos.ks.gov/elections/voter-information.html",
+   "quote": "State law requires Kansas voters to show photographic identification when casting a vote in person, this includes voting advance in-person. If the voter does not provide identification or it is not valid, the voter will be issued a provisional ballot.",
+   "checked": "2026-10-28"
   },
   "registration": {
    "rule": "no",
@@ -1012,21 +1020,24 @@
   "id": {
    "rule": "photo_required",
    "summary": "You must show a photo ID, such as a Missouri driver's license or U.S. passport. Without one, you vote provisionally; it counts if you bring ID or your signature matches.",
-   "source": "https://www.sos.mo.gov/elections/goVoteMissouri/howtovote",
-   "quote": "If you do not possess any of these forms of identification, but are a registered voter, you may cast a provisional ballot."
+   "source": "https://revisor.mo.gov/main/OneSection.aspx?section=115.427",
+   "quote": "If you do not possess any of these forms of identification, but are a registered voter, you may cast a provisional ballot.",
+   "checked": "2026-10-28"
   },
   "registration": {
    "rule": "no",
    "deadline": "Wednesday, October 7, 2026 (4th Wednesday before the election); mailed forms must be postmarked by then. Online registration is also available.",
    "summary": "The deadline to register for the November 3 election was October 7, 2026. Missouri does not offer same-day or Election Day registration.",
-   "source": "https://www.sos.mo.gov/elections/calendar/2026cal",
-   "quote": "November 3, 2026 General Election October 7, 2026"
+   "source": "https://revisor.mo.gov/main/OneSection.aspx?section=115.135",
+   "quote": "November 3, 2026 General Election October 7, 2026",
+   "checked": "2026-10-28"
   },
   "selfie": {
    "rule": "not_allowed",
    "summary": "State law makes it an election offense to let anyone see your ballot to show how you voted, which would cover sharing a photo of it.",
    "source": "https://revisor.mo.gov/main/OneSection.aspx?section=115.637",
-   "quote": "allowing his or her ballot to be seen by any person with the intent of letting it be known how he or she is about to vote or has voted"
+   "quote": "allowing his or her ballot to be seen by any person with the intent of letting it be known how he or she is about to vote or has voted",
+   "checked": "2026-10-28"
   },
   "notes": "Changed recently: Missouri's photo ID requirement took effect in 2022 (HB 1878); the SOS page reflects it, including that a provisional ballot counts if you return with photo ID on Election Day or your signature matches. The calendar quote is from a table whose columns are 'Official Election Day, Style of Election, Last Day to Register to Vote...'; the SOS register page says forms must be 'POSTMARKED by the 4th Wednesday before the election.' Selfie: RSMo 115.637(14) does not mention photos; 'not_allowed' is an inference from the intent-based ban on letting your ballot be seen. No SOS guidance on ballot selfies found."
  },
