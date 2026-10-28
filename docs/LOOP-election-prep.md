@@ -305,3 +305,17 @@ look for a county or state fallback to name beside it. No change, no push.
   2 post_text_copy. Measurement v2 shipped partway through Oct 27, so the first full day is Oct 28; the
   first read of the v2 fields stays on Oct 29 (or Oct 30, when the Oct 28 table lands). A test query
   billed 10 MB, the minimum.
+
+### October 28, Evening: State Pages Re-Verified, Home Page Topics, Push Queued for Oct 29
+
+- Pushed (push 3 of Oct 28): KY plus the ten lowest-impression states, and the iPhone save hint. Live checked.
+- Committed, not pushed (goes out with the Oct 29 morning push after the daily build and full QA): batches
+  2 to 4 (30 more states re-verified from Perplexity leads against official sources), KS, TX and MI sticker
+  stories, FL mail-voter sticker answer, template fixes ("Pick an" before vowel states, "track" not
+  "counted"), the not-official line under every state gallery, and home page sections (official digital
+  stickers, contests with 2026 winners, a sticker stories list from 44 states, sourced history teaser,
+  turnout FAQ). Facts, Spanish, SEO, events and save QA pass on the last build.
+- Research and method: `docs/research/low-pages-20261028/` and `docs/LOOP-visibility.md`. Batch 5 (the 11
+  strongest pages) Perplexity reads are running.
+- Oct 29 morning: confirm the daily build, check ME shows early voting ended on Oct 30's build, push the
+  queued commits, verify live, IndexNow for changed pages.
