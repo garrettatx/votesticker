@@ -250,3 +250,16 @@ offered. Maine's in-person absentee window ends October 29, Utah and Texas Octob
 switch handles each on the next morning's build. Backlog: countdown hardening was already built (the
 browser recomputes "N days away" every minute), marked done. No push.
 
+### October 28, 9:25 a.m.: Link Check, Two Dead Official Links Fixed
+
+BigQuery: `analytics_559738937` still not created; re-check this afternoon. New `scripts/qa_links.py` fetched
+all 649 external links on the 102 state pages. Most non-200s are 403s and TLS refusals from government
+sites that block scripts (Ohio, Missouri, Iowa, New York and others); not dead. Tennessee's DNS error was
+transient (200 on retry). Two were real 404s, confirmed with curl:
+- **Louisiana** official link `sos.la.gov/ElectionsAndVoting/Pages/default.aspx` (the site moved): now
+  `https://www.sos.la.gov/elections-voting` ("Elections and Voting", 200).
+- **South Dakota** source, the 2026 election calendar PDF: the state dropped a folder from the path. Same
+  PDF at `.../general-information/2026%20Election%20Assets/Election%20Information/updated2026electioncalendar.pdf`
+  (200, still lists absentee voting from September 18).
+Rebuilt; `qa_facts`, `qa_es`, `qa_seo --no-legacy` PASS. Second push of the day.
+
