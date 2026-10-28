@@ -233,3 +233,7 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
 - **Oct 27, 7:57 p.m.:** Garrett said push. Third push of the day; run 40612079150 succeeded, live QA PASS,
   IndexNow 200 (108 URLs). Live home shows the four new classic layouts; state pages show Postmark, Marquee and
   Pixel state.
+- **Oct 28, 6:15 a.m.:** dated check. The 6:05 cron had not started (it ran at 11:25 a.m. yesterday), so pushed
+  `047cb58` and dispatched run 40678514466 (success, 3m36s). Live Louisiana and Pennsylvania: the summary, banner
+  and FAQ say early voting ended October 27, the share image is `og/ended/<state>.jpg` (200), and the gallery keeps
+  its I voted early stickers for those who voted early. First push of the day.
