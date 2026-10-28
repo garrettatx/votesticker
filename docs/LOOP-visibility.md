@@ -143,3 +143,9 @@ on desktop for "i voted sticker kansas", among county contest pages. Queue, in o
 4. Optional disclosure line: our stickers aren't proof of voting; official designs belong to their creators.
 5. "I Voted Early Stickers" in titles while early voting is open: waiting on Garrett.
 6. After Nov 3: localization test (same query, device and time across locations), archive with rights register.
+- Batch 5 (11 strong pages) Perplexity reads saved (`*-b5.md`); two agents verifying (AK NJ LA MD WA OR; NC NY
+  FL CA TX). Template fixes from them committed: Key Dates topic labels, "Check your registration status".
+  The double calendar line and "Source . Last checked" were cached-page or extraction artifacts, not real.
+- Idea every b5 answer led with: a short "Still need to vote? / Already voted?" panel right under the sticker
+  downloads (this week's next step and official link on one side; the I voted sticker and ballot tracker on the
+  other), built from facts we already verify. Candidate for Oct 29, before the Nov 2 banner.
