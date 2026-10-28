@@ -203,8 +203,9 @@
   "id": {
    "rule": "id_nonphoto",
    "summary": "You must show proof of identity, such as a photo ID, utility bill, or bank statement. If you don't have it with you, you can sign an affidavit and vote.",
-   "source": "https://delcode.delaware.gov/title15/c049/index.html",
-   "quote": "In the event the voter does not have proof of identity with them, the voter shall sign an affidavit of affirmation that the voter is the person listed on the election district record."
+   "source": "https://elections.delaware.gov/voter/VotingFAQ.html",
+   "quote": "In the event the voter does not have proof of identity with them, the voter shall sign an affidavit of affirmation that the voter is the person listed on the election district record.",
+   "checked": "2026-10-28"
   },
   "registration": {
    "rule": "no",
@@ -287,14 +288,16 @@
    "rule": "yes",
    "deadline": "Regular registration closed October 5, 2026 (mail postmarked by then is accepted). Late registration at your county election office runs from October 6 through noon on Election Day, November 3, 2026.",
    "summary": "Regular registration closed October 5. You can still register late at your county election office and vote there, up to noon on Election Day.",
-   "source": "https://archive.legmt.gov/bills/mca/title_0130/chapter_0020/part_0030/section_0040/0130-0020-0030-0040.html",
-   "quote": "In a federal election, an elector may register or change the elector's voter registration information after the close of regular registration ... (c) prior to noon on the day of the election."
+   "source": "https://votemt.gov/same-weekend-registration/",
+   "quote": "In a federal election, an elector may register or change the elector's voter registration information after the close of regular registration ... (c) prior to noon on the day of the election.",
+   "checked": "2026-10-28"
   },
   "selfie": {
    "rule": "allowed",
    "summary": "Montana's Commissioner of Political Practices says taking a selfie with your own marked ballot and sharing it does not break state law.",
    "source": "https://politicalpractices.mt.gov/_docs/2018-Advisory-Opinions/2018-AO-002-Ballot-Selfies-Final.pdf",
-   "quote": "Voluntarily taking a picture of yourself (a “selfie”) with your marked ballot and sharing the image on social media or with family and friends does not violate the prohibitions of Mont. Code Ann.§ 13-35-201."
+   "quote": "Voluntarily taking a picture of yourself (a “selfie”) with your marked ballot and sharing the image on social media or with family and friends does not violate the prohibitions of Mont. Code Ann.§ 13-35-201.",
+   "checked": "2026-10-28"
   },
   "notes": "2025 law (Ch. 409) moved the Election Day late-registration cutoff to noon. SB 490 Saturday registration is blocked by court order per votemt.gov. sosmt.gov returned 403; statutes used. Selfie source is a 2018 advisory opinion (COPP), not a statute; polling-place photo policy beyond that not found. Online registration options were not checked."
  },
@@ -367,17 +370,22 @@
   "id": {
    "rule": "photo_required",
    "summary": "You must show a valid photo ID, such as a driver's license, state ID card, military ID, or U.S. passport. Without one, an election official must verify who you are.",
-   "source": "https://gc.nh.gov/rsa/html/LXIII/659/659-13.htm",
-   "quote": "If the supervisor of the checklist determines that the voter's qualifications and identity have not been established, the voter shall not be allowed to vote."
+   "source": "https://www.sos.nh.gov/sites/g/files/ehbemt561/files/inline-documents/sonh/10-23-26-student-id-press-release.pdf",
+   "quote": "If the supervisor of the checklist determines that the voter's qualifications and identity have not been established, the voter shall not be allowed to vote.",
+   "checked": "2026-10-28"
   },
   "registration": {
    "rule": "yes",
    "deadline": "Register with your town or city clerk before the supervisors of the checklist's last session, held 6 to 13 days before the election (about October 21 to 28, 2026, set by each town). You can also register at your polling place on Election Day, November 3, 2026.",
    "summary": "Register with your town or city clerk before the last checklist session, 6 to 13 days before the election, or at your polling place on Election Day. You must bring proof of citizenship.",
-   "source": "https://gc.nh.gov/rsa/html/LXIII/654/654-7-a.htm",
-   "quote": "Any person whose name is not on the checklist but who is otherwise a qualified voter shall be entitled to vote by requesting to be registered to vote at the polling place on election day."
+   "source": "https://www.sos.nh.gov/elections/register-vote",
+   "quote": "Any person whose name is not on the checklist but who is otherwise a qualified voter shall be entitled to vote by requesting to be registered to vote at the polling place on election day.",
+   "checked": "2026-10-28"
   },
-  "selfie": null,
+  "selfie": {
+   "source": "https://media.ca1.uscourts.gov/pdf.opinions/15-2021P-01A.pdf",
+   "checked": "2026-10-28"
+  },
   "notes": "sos.nh.gov blocks automated fetching (Akamai 403), so answers use RSA text. ID: 2024 law (Ch. 378, eff. Nov 11, 2024) removed the affidavit options; as of Sept 8, 2026 an official who personally knows you can attest to your identity. Registration now requires proof of citizenship (RSA 654:12), e.g., birth certificate, passport, or naturalization papers. Selfie: RSA 659:35 still says a voter may not photograph and share a marked ballot, but the First Circuit struck that ban down in Rideout v. Gardner (2016); no official SOS page confirming current enforcement was reachable, so left null. Do not publish 'not allowed' from the statute text alone."
  },
  "NJ": {
@@ -1056,17 +1064,22 @@
   "id": {
    "rule": "photo_requested",
    "summary": "Bring a photo ID, such as a RI driver's license, free RI voter ID card, or U.S. passport. Without one, your provisional ballot counts if your signature matches.",
-   "source": "http://webserver.rilegislature.gov/Statutes/TITLE17/17-19/17-19-24.3.htm",
-   "quote": "The local board shall examine each provisional ballot application to determine if the signature matches the signature on the voter’s registration. If the local board determines that the signatures match, the provisional ballot shall count."
+   "source": "https://vote.sos.ri.gov/Voter/PersonVotingPage",
+   "quote": "The local board shall examine each provisional ballot application to determine if the signature matches the signature on the voter’s registration. If the local board determines that the signatures match, the provisional ballot shall count.",
+   "checked": "2026-10-28"
   },
   "registration": {
    "rule": "no",
    "deadline": "Registration closes on the 30th day before the election, which is Sunday, October 4, 2026.",
    "summary": "Registration closes 30 days before the election, on October 4, 2026. You cannot register on Election Day for this election.",
-   "source": "http://webserver.rilegislature.gov/Statutes/TITLE17/17-9.1/17-9.1-3.htm",
-   "quote": "Registration for any election shall close on the thirtieth (30th) day preceding an election"
+   "source": "https://vote.sos.ri.gov/Voter/VoteByMail",
+   "quote": "Registration for any election shall close on the thirtieth (30th) day preceding an election",
+   "checked": "2026-10-28"
   },
-  "selfie": null,
+  "selfie": {
+   "source": "https://elections.ri.gov/sites/g/files/xkgbur756/files/2024-08/Poll%20worker%20Manual%20Updated%20July%202024.pdf",
+   "checked": "2026-10-28"
+  },
   "notes": "vote.ri.gov / vote.sos.ri.gov HTML pages block curl; the 2026 Voter Information Handbook PDF and RI General Laws were used. ID statute 17-19-24.2 lists photo IDs; a voter without one votes provisionally under 17-19-24.3 (signature match). The Oct 4 date falls on a Sunday; statute says local boards don't take registrations Sundays, so in-person may effectively end Friday Oct 2 while online may run through Oct 4; not confirmed on an official 2026 page. RI allows an emergency presidential-only ballot for late registrants in presidential years (general knowledge, not verified); not relevant in 2026. Selfie: nothing found in chapters 17-19 or 17-23."
  },
  "SC": {
@@ -1123,7 +1136,8 @@
    "rule": "not_allowed",
    "summary": "State law says no one may publicize a marked ballot in a way that reveals the votes on it, which would include sharing a ballot photo.",
    "source": "https://sdlegislature.gov/Statutes/12-18-27",
-   "quote": "No person may publicize an official ballot after it is marked to any person in such a way as to reveal the contents of the official ballot"
+   "quote": "No person may publicize an official ballot after it is marked to any person in such a way as to reveal the contents of the official ballot",
+   "checked": "2026-10-28"
   },
   "notes": "Oct 19 computed from the 15-day rule. Statute was read through the legislature API (https://sdlegislature.gov/api/Statutes/12-18-27.html); the public page URL is given as source. Selfie classification is a reading of 12-18-27; no SOS FAQ on selfies found. Check whether 2026 legislation changed the ID affidavit; the sdsos page as fetched still describes it."
  },
@@ -1219,8 +1233,9 @@
    "open": "Between 5 a.m. and 10 a.m. (set by each town)",
    "close": "7 p.m.",
    "summary": "Vermont mails a general election ballot to every active voter. Return it to your town clerk before the office closes the day before the election, or to your polling place by 7 p.m. on Election Day. Polls open between 5 and 10 a.m., depending on the town.",
-   "source": "https://sos.vermont.gov/elections/voters/early-absentee-voting/",
-   "quote": "Return your ballot to your town clerk’s office before the office closes on the day before the election, or bring it to your polling place before 7 p.m. on Election Day."
+   "source": "https://legislature.vermont.gov/statutes/section/17/051/02543",
+   "quote": "Return your ballot to your town clerk’s office before the office closes on the day before the election, or bring it to your polling place before 7 p.m. on Election Day.",
+   "checked": "2026-10-28"
   },
   "id": {
    "rule": "no_id",
@@ -1308,7 +1323,8 @@
    "rule": "photo_required",
    "summary": "You must show an unexpired photo ID, such as a WV driver's license, U.S. passport, or WV student ID. Without one, you vote provisionally and show ID before canvass.",
    "source": "https://sos.wv.gov/be-registered-and-ready",
-   "quote": "West Virginia voters must show an approved form of photo identification at the polls during early voting or on Election Day. All forms of ID must be valid and not expired."
+   "quote": "West Virginia voters must show an approved form of photo identification at the polls during early voting or on Election Day. All forms of ID must be valid and not expired.",
+   "checked": "2026-10-28"
   },
   "registration": {
    "rule": "no",
@@ -1372,8 +1388,9 @@
    "rule": "yes",
    "deadline": "Registration closes 14 days before the election (Tuesday, October 20, 2026), but you can register and vote at the same time during the absentee voting period or at your polling place on Election Day, November 3, 2026.",
    "summary": "The regular deadline is 14 days before the election, October 20. You can still register and vote the same day during early absentee voting or on Election Day. Bring proof of identity, citizenship, and residency.",
-   "source": "https://sos.wyo.gov/faqs.aspx?root=ELEC",
-   "quote": "The deadline for voter registration is 14 days before an election. However, you may register and vote at the same time -- during the absentee voting period or on Election Day."
+   "source": "https://sos.wyo.gov/Elections/Docs/2026/2026_Key_Election_Dates.pdf",
+   "quote": "The deadline for voter registration is 14 days before an election. However, you may register and vote at the same time -- during the absentee voting period or on Election Day.",
+   "checked": "2026-10-28"
   },
   "selfie": null,
   "notes": "Voter ID law took effect 2022. Medicare/Medicaid cards (non-photo) are accepted for now; the SOS FAQ says they will no longer be accepted after December 31, 2029, so classed id_nonphoto. Poll hours also in W.S. 22-13-101 ('Polls shall be open at seven (7:00) a.m. and close at seven (7:00) p.m., local time'). Registration now requires proof of U.S. citizenship per the SOS registration page. Oct 20 computed from the 14-day rule. Selfie: no provision found in Title 22 (searched for photograph, exhibit, reveal, secrecy) and no SOS guidance found."

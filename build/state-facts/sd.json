@@ -23,10 +23,10 @@
    "status": "verified"
   },
   "mail_request": {
-   "en": "Apply in person at your county election office by 5 p.m. on Monday, November 2, 2026, or until the office closes that day if it's later. Bring your photo ID or sign the affidavit.",
-   "es": "Solicítala en persona en la oficina electoral de tu condado a más tardar a las 5 p. m. del lunes 2 de noviembre de 2026, o hasta que cierre la oficina ese día si es más tarde. Lleva tu identificación con foto o firma la declaración jurada.",
+   "en": "In person, apply at your county election office until 5 p.m. on Monday, November 2, or until the office closes that day if later. Bring your photo ID or sign the affidavit.",
+   "es": "En persona, haz tu solicitud en la oficina electoral de tu condado hasta las 5 p. m. del lunes 2 de noviembre, o hasta que cierre la oficina ese día si es más tarde. Lleva tu identificación con foto o firma la declaración jurada.",
    "src": "https://sdlegislature.gov/Statutes/12-19-2.1",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "At any time prior to an election, a voter may apply for an absentee ballot in person at the office of and to the person in charge of the election during regular office hours or until five p.m. on the day before the election, whichever is later.",
    "status": "verified",
    "until": "2026-11-02",
@@ -52,12 +52,15 @@
  },
  "how": {
   "in_person": {
-   "en": "Want to vote before Election Day? Go to your County Auditor's office once absentee voting begins and vote in person. Bring a photo ID, or sign a personal identification affidavit and vote a regular ballot.",
-   "es": "¿Quieres votar antes del Día de las Elecciones? Ve a la oficina del auditor de tu condado (County Auditor) cuando empiece el voto en ausencia y vota en persona. Lleva una identificación con foto, o firma una declaración jurada de identificación personal y vota con una boleta regular.",
+   "en": "Vote early in person at your county auditor's office during its office hours, through Monday, November 2. On that last day it stays open until at least 5 p.m. Bring a photo ID, or sign a personal identification affidavit and vote a regular ballot.",
+   "es": "Vota por anticipado en persona en la oficina del auditor de tu condado (county auditor) en su horario de oficina, hasta el lunes 2 de noviembre. Ese último día está abierta por lo menos hasta las 5 p. m. Lleva una identificación con foto, o firma una declaración jurada de identificación personal y vota con una boleta regular.",
    "src": "https://sdsos.gov/elections-voting/voting/absentee-voting.aspx",
-   "checked": "2026-10-21",
-   "quote": "Registered voters can vote in-person once Absentee Voting begins at their County Auditor's office by bringing along a valid photo identification card (ID). If a voter does not have a photo ID, they must be given the option to sign a personal identification affidavit and vote a regular ballot.",
-   "status": "verified"
+   "checked": "2026-10-28",
+   "quote": "At any time prior to an election, a voter may apply for an absentee ballot in person at the office of and to the person in charge of the election during regular office hours or until five p.m. on the day before the election, whichever is later. ... Registered voters can vote in-person once Absentee Voting begins at their County Auditor's office by bringing along a valid photo identification card (ID). If a voter does not have a photo ID, they must be given the option to sign a personal identification affidavit and vote a regular ballot.",
+   "status": "verified",
+   "until": "2026-11-02",
+   "en_after": "Early voting ended November 2. Vote at your polling place on Election Day, 7 a.m. to 7 p.m. local time. Bring a photo ID, or sign a personal identification affidavit and vote a regular ballot.",
+   "es_after": "La votación anticipada terminó el 2 de noviembre. Vota en tu lugar de votación el Día de las Elecciones, de 7 a. m. a 7 p. m., hora local. Lleva una identificación con foto, o firma una declaración jurada de identificación personal y vota con una boleta regular."
   },
   "first_time": {
    "en": "You're not registered until your county election official accepts your application and sends you an acknowledgement notice. That notice also lists your polling place. No notice within 15 days? Contact your county election official.",
@@ -125,8 +128,12 @@
  },
  "mail": {
   "who": {
-   "status": "missing",
-   "notes": "The SOS absentee page says only 'If you are unable to attend your polling place in person on Election Day, you may be eligible to vote by absentee ballot.' and 'At any time prior to an election, a voter may apply for an absentee ballot'. It never says plainly whether a reason is needed, so eligibility is not stated."
+   "en": "Any registered voter can apply to vote by mail. Sign your application, and either have it notarized or send a copy of your photo ID with it. Your ballot has to reach your county election official on Election Day in time to get to your precinct before polls close.",
+   "es": "Cualquier votante registrado puede pedir votar por correo. Firma tu solicitud y notarízala o manda con ella una copia de tu identificación con foto. Tu boleta tiene que llegar a la oficina electoral de tu condado el Día de las Elecciones a tiempo para enviarla a tu precinto antes del cierre de las urnas.",
+   "src": "https://sdlegislature.gov/api/Statutes/12-19-2.html",
+   "checked": "2026-10-28",
+   "quote": "A voter desiring to vote by mail may apply to the person in charge of the election for an absentee ballot. The application or request must be made in writing, signed by the applicant, and must contain the applicant's voter registration address. ... The oath must be administered by a notary public or other officer authorized by this state to administer an oath or administered by an out-of-state notary public. If the application or request does not contain an oath, the application or request must be accompanied by a copy of the voter's identification card as required by § 12-18-6.1 .",
+   "status": "verified"
   },
   "witness": {
    "status": "missing",
@@ -148,18 +155,18 @@
  },
  "polls_rules": {
   "gear": {
-   "en": "Leave the campaign signs and posters at home. Within 100 feet of any entrance to a polling place, including where people vote absentee, no one may display campaign posters, signs or other campaign materials or ask for votes.",
-   "es": "Deja en casa los letreros y carteles de campaña. A menos de 100 pies de cualquier entrada a un lugar de votación, incluso donde se vota en ausencia, nadie puede mostrar carteles, letreros u otros materiales de campaña ni pedir votos.",
+   "en": "Within 100 feet of any entrance to a polling place, including where people vote absentee, no one may display campaign posters, signs or other campaign materials, or ask for votes. Using a phone or camera there in a way that keeps distracting or intimidating voters or poll workers is also banned.",
+   "es": "A menos de 100 pies de cualquier entrada a un lugar de votación, incluidos los lugares donde se vota en ausencia, nadie puede mostrar carteles, letreros u otros materiales de campaña, ni pedir votos. También está prohibido usar un teléfono o una cámara de una forma que distraiga o intimide una y otra vez a votantes o trabajadores electorales.",
    "src": "https://sdlegislature.gov/Statutes/12-18-3",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "Except for sample ballots and materials and supplies necessary for the conduct of the election, no person may, in any polling place or within or on any building in which a polling place is located or within one hundred feet from any entrance leading into a polling place, maintain a campaign office or public address system, or use any communication or photographic device in a manner which repeatedly distracts, interrupts, or intimidates any voter or election worker, or display campaign posters, signs, or other campaign materials or by any like means solicit any votes for or against any person or political party or position on a question submitted or which may be submitted.",
    "status": "verified"
   },
   "phone": {
-   "en": "Take your sticker selfie, not a ballot selfie. South Dakota law bars showing anyone your marked ballot in a way that reveals your votes.",
-   "es": "Tómate la selfie con tu sticker, no con tu boleta. La ley de South Dakota prohíbe mostrarle a alguien tu boleta marcada de forma que se vea por quién votaste.",
+   "en": "Don't share a photo of your marked ballot. South Dakota law bars showing anyone your marked ballot in a way that reveals your votes. The law doesn't address other photos, so ask a poll worker before you take one inside.",
+   "es": "No compartas una foto de tu boleta marcada. La ley de South Dakota prohíbe mostrarle a cualquier persona tu boleta marcada de una forma que revele tus votos. La ley no habla de otras fotos, así que pregunta a un trabajador electoral antes de tomar una adentro.",
    "src": "https://sdlegislature.gov/Statutes/12-18-27",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "No person may publicize an official ballot after it is marked to any person in such a way as to reveal the contents of the official ballot, or the name of any candidate for whom the person has marked a vote.",
    "status": "verified"
   },
@@ -174,11 +181,11 @@
  },
  "sticker": {
   "tradition": {
-   "en": "For the 2026 general election, the Secretary of State asked South Dakota students to design the next I Voted sticker, through the Civics in the 605 Statewide Sticker Showcase. Entries came in from kindergarten through 12th grade, in four age groups.",
-   "es": "Para la elección general de 2026, la Secretaría de Estado invitó a estudiantes de South Dakota a diseñar el próximo sticker de \"I Voted\", con el concurso estatal Civics in the 605 Statewide Sticker Showcase. Participaron desde kínder hasta 12.º grado, en cuatro grupos de edad.",
-   "src": "https://sdsos.gov/Information/sos-awards.aspx",
-   "checked": "2026-10-21",
-   "quote": "The Secretary of State's Office invited students to design the next “I Voted” sticker for use during the 2026 General Election.",
+   "en": "South Dakota students designed the 2026 I Voted stickers through the Secretary of State's Civics in the 605 Statewide Sticker Showcase. On February 17, 2026, the office named four winners from hundreds of entries: Owen of Vermillion Elementary School, Guenevere of Creekside Elementary in Spearfish, Allie of Rapid City Christian and Ashtyn of McCook Central High School. Their designs are handed out across the state for the November 3 election.",
+   "es": "Estudiantes de South Dakota diseñaron los stickers \"I Voted\" de 2026 en el concurso Civics in the 605 Statewide Sticker Showcase de la Secretaría de Estado. El 17 de febrero de 2026, la oficina eligió a cuatro ganadores entre cientos de participantes: Owen, de Vermillion Elementary School; Guenevere, de Creekside Elementary en Spearfish; Allie, de Rapid City Christian; y Ashtyn, de McCook Central High School. Sus diseños se reparten en todo el estado para la elección del 3 de noviembre.",
+   "src": "https://sdsos.gov/about-the-office/assets/Press%20Releases/2026StickerPressRelease.pdf",
+   "checked": "2026-10-28",
+   "quote": "Out of hundreds of entries from around South Dakota, the following students were selected as winners ... Grades K-2: Owen W. from Vermillion Elementary School • Grades 3-5: Guenevere W. from Creekside Elementary in Spearfish • Grades 6-8: Allie H. from Rapid City Christian • Grades 9-12: Ashtyn D. from McCook Central High School ... The winning entries will also be placed on stickers that will be handed out across South Dakota during the 2026 General Election on November 3rd, 2026.",
    "status": "verified"
   }
  },

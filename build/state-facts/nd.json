@@ -15,19 +15,19 @@
  },
  "dates": {
   "reg_deadline": {
-   "en": "There's nothing to register for. North Dakota doesn't require voter registration, but you do need a valid ID to vote, so have yours ready before you go.",
-   "es": "No hay nada que registrar. North Dakota no exige registro de votantes, pero sí necesitas una identificación válida para votar, así que tenla lista antes de ir.",
+   "en": "North Dakota doesn't require voter registration. You do need a valid ID to vote, so have it ready before you go.",
+   "es": "North Dakota no exige registro de votantes. Sí necesitas una identificación válida para votar, así que tenla lista antes de ir.",
    "src": "https://www.sos.nd.gov/elections/voter/voting-north-dakota",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "North Dakota does not require voter registration, but you do need to have a valid form of identification that can be used for voting.",
    "status": "verified"
   },
   "mail_request": {
-   "en": "Get your absentee ballot application to your county auditor by Monday, November 2, 2026. You'll need to give your ID information on it.",
-   "es": "Entrega tu solicitud de boleta de voto en ausencia al auditor de tu condado (county auditor) a más tardar el lunes 2 de noviembre de 2026. Tienes que poner los datos de tu identificación en ella.",
+   "en": "Get your absentee ballot application to your county auditor by Monday, November 2, 2026. Your ballot still has to reach the auditor by the close of polls on November 3, so apply now.",
+   "es": "Entrega tu solicitud de boleta de voto en ausencia al auditor de tu condado (county auditor) a más tardar el lunes 2 de noviembre de 2026. Tu boleta tiene que llegar al auditor antes del cierre de las urnas el 3 de noviembre, así que pídela ya.",
    "src": "https://www.sos.nd.gov/elections/voter/elections-currentpast",
-   "checked": "2026-10-21",
-   "quote": "November 2, 2026 - Absentee Application Submission Deadline",
+   "checked": "2026-10-28",
+   "quote": "November 2, 2026 - Absentee Application Submission Deadline November 3, 2026 - Absentee Ballots Must Be Returned by Close of Polls",
    "status": "verified",
    "until": "2026-11-02",
    "en_after": "Absentee applications closed November 2, 2026. Vote in person on Election Day with your ID.",
@@ -42,8 +42,15 @@
    "status": "verified"
   },
   "early_hours": {
-   "status": "missing",
-   "notes": "Early voting is offered only in some counties, on dates and hours each county sets (listed by county on vip.sos.nd.gov/Precincts.aspx?eid=348). No statewide hours."
+   "en": "Only seven counties offer early voting this year: Burleigh, Cass, Grand Forks, Morton, Stark, Stutsman and Ward. Each sets its own dates and hours, and some end before Monday, November 2. Enter your address in My Voting Information to see yours.",
+   "es": "Solo siete condados ofrecen votación anticipada este año: Burleigh, Cass, Grand Forks, Morton, Stark, Stutsman y Ward. Cada uno fija sus fechas y horarios, y algunos terminan antes del lunes 2 de noviembre. Pon tu dirección en My Voting Information para ver los tuyos.",
+   "src": "https://www.sos.nd.gov/sites/default/files/documents/news/2026-general-election-media-info-aug26.pdf",
+   "quote": "Early voting is available in the following counties for the 2026 General Election: Burleigh, Cass, Grand Forks, Morton, Stark, Stutsman, Ward",
+   "until": "2026-11-02",
+   "en_after": "Early voting has ended. Vote at your polling place on Election Day with your ID.",
+   "es_after": "La votación anticipada terminó. Vota en tu lugar de votación el Día de las Elecciones con tu identificación.",
+   "checked": "2026-10-28",
+   "status": "verified"
   },
   "cure": {
    "en": "Signature missing or doesn't match? Confirm it with your county auditor before the canvassing board meets on Monday, November 16, 2026.",
@@ -60,11 +67,11 @@
  },
  "how": {
   "in_person": {
-   "en": "Some counties offer early voting on set dates and times before Election Day; check whether yours does. On Election Day, vote at the polling location for your precinct, or at any vote center in your county if your county uses them. Either way, a poll worker checks your ID and asks if you're 18, a U.S. citizen and have lived in North Dakota for the last 30 days.",
-   "es": "Algunos condados ofrecen votación anticipada en fechas y horarios fijos antes del Día de las Elecciones; revisa si el tuyo la tiene. El Día de las Elecciones, vota en el lugar de votación de tu precinto, o en cualquier centro de votación de tu condado si tu condado los usa. En los dos casos, un trabajador electoral revisa tu identificación y te pregunta si tienes 18 años, si eres ciudadano de EE. UU. y si has vivido en North Dakota los últimos 30 días.",
-   "src": "https://www.sos.nd.gov/elections/voter/voting-north-dakota/how-do-i-vote",
-   "checked": "2026-10-21",
-   "quote": "Some communities offer early voting at certain dates and times prior to Election Day.",
+   "en": "Seven counties offer early voting: Burleigh, Cass, Grand Forks, Morton, Stark, Stutsman and Ward. On Election Day, vote at the polling location for your precinct, or at any vote center in your county if it uses them. You must have lived in your precinct for 30 days before the election. If you moved within 30 days, vote in the precinct where you lived before.",
+   "es": "Siete condados ofrecen votación anticipada: Burleigh, Cass, Grand Forks, Morton, Stark, Stutsman y Ward. El Día de las Elecciones, vota en el lugar de votación de tu precinto, o en cualquier centro de votación de tu condado si tu condado los usa. Debes haber vivido en tu precinto 30 días antes de la elección. Si te mudaste en los últimos 30 días, vota en el precinto donde vivías antes.",
+   "src": "https://www.sos.nd.gov/sites/default/files/documents/news/2026-general-election-media-info-aug26.pdf",
+   "checked": "2026-10-28",
+   "quote": "Early voting is available in the following counties for the 2026 General Election: Burleigh, Cass, Grand Forks, Morton, Stark, Stutsman, Ward ... Voters must reside in their precinct for at least 30 days prior to the election. If they have moved within 30 days of election day, they must vote in the precinct where they lived previously.",
    "status": "verified"
   },
   "first_time": {
@@ -133,10 +140,10 @@
  },
  "mail": {
   "who": {
-   "en": "Any eligible voter can vote absentee, but you have to ask first: no one is mailed a ballot without an application. In vote-by-mail counties, the county auditor mails you the application.",
-   "es": "Cualquier persona con derecho a votar puede votar en ausencia, pero primero tienes que pedirlo: a nadie le mandan una boleta sin una solicitud. En los condados que votan por correo, el auditor del condado te manda la solicitud por correo.",
+   "en": "Any eligible voter can vote absentee. No one gets a ballot without applying first. In vote-by-mail counties, the county auditor mails you the application.",
+   "es": "Cualquier votante con derecho puede votar en ausencia. Nadie recibe una boleta sin pedirla antes. En los condados que votan por correo, el auditor del condado te manda la solicitud por correo.",
    "src": "https://www.sos.nd.gov/elections/voter/voting-north-dakota/how-do-i-vote/absentee-voting",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "In vote by mail counties, voting age residents are mailed an absentee ballot application by their county auditor.",
    "status": "verified"
   },
@@ -180,8 +187,12 @@
    "status": "verified"
   },
   "phone": {
-   "status": "missing",
-   "notes": "No phone or photo rule found on sos.nd.gov; faq-sources.json found none in NDCC either."
+   "en": "North Dakota's election law doesn't address photos of your ballot or phones in the voting booth. The Secretary of State notes that photography in a polling place can intimidate voters. Ask a poll worker before you take a picture inside, and keep other voters out of it.",
+   "es": "La ley electoral de North Dakota no dice nada sobre fotos de tu boleta ni sobre teléfonos en la cabina de votación. La Secretaría de Estado advierte que tomar fotos en un lugar de votación puede intimidar a los votantes. Pregunta a un trabajador electoral antes de tomar una foto adentro, y no incluyas a otros votantes.",
+   "src": "https://www.sos.nd.gov/sites/default/files/documents/news/2026-general-election-media-info-aug26.pdf",
+   "quote": "Recognize that filming and photography in a polling location may be intimidating to voters who are voting.",
+   "checked": "2026-10-28",
+   "status": "verified"
   },
   "line": {
    "en": "If you're in line when the polls close, stay in line. You can still vote. People who arrive after closing can't.",
@@ -194,11 +205,11 @@
  },
  "sticker": {
   "tradition": {
-   "en": "North Dakota held its first statewide I Voted sticker contest for 2026. Haylee Senger of Bottineau won with \"You Betcha I Voted,\" picked by 4,792 North Dakotans from 478 artists' entries. It debuted at the June 9 primary.",
-   "es": "North Dakota hizo su primer concurso estatal de stickers de \"I Voted\" para 2026. Ganó Haylee Senger, de Bottineau, con \"You Betcha I Voted\", elegido por 4,792 personas de North Dakota entre las propuestas de 478 artistas. Se estrenó en la elección primaria del 9 de junio.",
+   "en": "For 2026, the North Dakota Secretary of State's office held its first I Voted sticker contest. Haylee Senger of Bottineau designed the winner, \"You Betcha I Voted.\" The contest drew 478 artists, and 4,792 North Dakotans voted to pick the winner. The sticker debuted at the June 9 primary.",
+   "es": "Para 2026, la Secretaría de Estado de North Dakota hizo su primer concurso de stickers \"I Voted\". Haylee Senger, de Bottineau, diseñó el ganador, \"You Betcha I Voted\". Participaron 478 artistas, y 4,792 personas de North Dakota votaron para elegir al ganador. El sticker se estrenó en las primarias del 9 de junio.",
    "src": "https://www.sos.nd.gov/elections/civic-engagement-initiative/i-voted-sticker-design-contest",
-   "checked": "2026-10-21",
-   "quote": "Haylee Senger from Bottineau submitted the winning “You Betcha I Voted” sticker design, which debuted at the polls during the 2026 Primary Election on June 9.",
+   "checked": "2026-10-28",
+   "quote": "For the first time, the North Dakota Office of the Secretary of State held a contest to select a new “I Voted” sticker for the state. Haylee Senger from Bottineau submitted the winning “You Betcha I Voted” sticker design, which debuted at the polls during the 2026 Primary Election on June 9. ... Designs were submitted by 478 artists of all ages and skill levels from all corners of the state. Four finalists were selected and then 4,792 North Dakotans voted to decide the winner.",
    "status": "verified"
   }
  },

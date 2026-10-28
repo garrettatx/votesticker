@@ -11,28 +11,42 @@
   "www.sos.nh.gov": {
    "en": "the New Hampshire Secretary of State",
    "es": "la Secretaría de Estado de New Hampshire"
+  },
+  "media.ca1.uscourts.gov": {
+   "en": "the U.S. Court of Appeals for the First Circuit",
+   "es": "la Corte de Apelaciones de Estados Unidos para el Primer Circuito"
   }
  },
  "dates": {
   "reg_deadline": {
-   "en": "You can register at your polling place on Election Day, Tuesday, November 3, and vote the same day. Whenever you register, bring proof of your citizenship, age, domicile and identity.",
-   "es": "Puedes registrarte en tu lugar de votación el Día de las Elecciones, el martes 3 de noviembre, y votar ese mismo día. Siempre que te registres, lleva comprobantes de tu ciudadanía, tu edad, tu domicilio y tu identidad.",
-   "src": "https://gc.nh.gov/rsa/html/LXIII/654/654-12.htm",
-   "checked": "2026-10-21",
-   "quote": "When determining the qualifications of an applicant desiring to register to vote, whether the applicant seeks to register before election day or on election day, the supervisors of the checklist, or the town or city clerk, shall require the applicant to present proof of citizenship, age, domicile, and identity as provided in the following categories:",
+   "en": "You can register at your polling place on Election Day, Tuesday, November 3, and vote the same day. Your town or city clerk also takes registrations until 6 to 13 days before the election; the date varies, so ask your clerk. Bring proof of your identity, age, U.S. citizenship and domicile.",
+   "es": "Puedes registrarte en tu lugar de votación el Día de las Elecciones, el martes 3 de noviembre, y votar ese mismo día. El secretario de tu municipio o ciudad (town or city clerk) también acepta registros hasta 6 a 13 días antes de la elección; la fecha cambia, así que pregúntale. Lleva comprobantes de tu identidad, edad, ciudadanía estadounidense y domicilio.",
+   "src": "https://www.sos.nh.gov/elections/register-vote",
+   "checked": "2026-10-28",
+   "quote": "You can register to vote up to 6-13 days before the election with your local town/city clerk or at a local supervisors of the checklist meeting. ... If you miss the deadline to register before the election, you can register at your polling location on election day. ... You will also need to provide proof of your identity, age, U.S. citizenship and domicile (primary residence address).",
    "status": "verified"
   },
   "mail_request": {
-   "status": "missing",
-   "notes": "No request deadline found in RSA 657; sos.nh.gov/elections/absentee-ballots returns 403 to curl and WebFetch, and Chrome has no permission for sos.nh.gov."
+   "en": "If you qualify to vote absentee, your clerk must receive a mailed application by noon on Monday, November 2. In person at the clerk's office, you can request and return a ballot until 5 p.m. that day. Include the proof of identity the form asks for.",
+   "es": "Si puedes votar en ausencia, el secretario debe recibir tu solicitud por correo a más tardar al mediodía del lunes 2 de noviembre. En persona, en la oficina del secretario, puedes pedir y entregar tu boleta hasta las 5 p. m. de ese día. Incluye el comprobante de identidad que pide el formulario.",
+   "src": "https://www.sos.nh.gov/elections/absentee-ballots",
+   "checked": "2026-10-28",
+   "quote": "The deadline to request an absentee ballot by mail is 12:00 p.m. the day before the election. The deadline to request and return an absentee ballot in person is 5:00 p.m. the day before the election.",
+   "status": "verified",
+   "until": "2026-11-02",
+   "en_after": "Absentee ballot requests closed November 2. Vote at your polling place on Election Day.",
+   "es_after": "Las solicitudes de boleta de voto en ausencia cerraron el 2 de noviembre. Vota en tu lugar de votación el Día de las Elecciones."
   },
   "mail_return": {
-   "en": "Your town or city clerk must receive it by 5 p.m. on Tuesday, November 3. Mail it with a stamp, bring it in yourself, or have a close family member deliver it with a signed form and photo ID. A postmark isn't enough.",
-   "es": "La oficina del secretario de tu municipio o ciudad (town or city clerk) debe recibirla a más tardar a las 5 p. m. del martes 3 de noviembre. Mándala por correo con estampilla, llévala tú mismo, o pide a un familiar cercano que la entregue con un formulario firmado y una identificación con foto. No basta con el matasellos.",
-   "src": "https://gc.nh.gov/rsa/html/LXIII/657/657-17.htm",
-   "checked": "2026-10-21",
-   "quote": "Absentee ballots delivered through the mail or by the voter's delivery agent shall be received by the town, city, or ward clerk no later than 5:00 p.m. on the day of the election.",
-   "status": "verified"
+   "en": "Returning it yourself? Get it to your town or city clerk by 5 p.m. on Monday, November 2. Ballots sent by mail or brought by a delivery agent, such as a close family member with a signed form and photo ID, must arrive by 5 p.m. on Tuesday, November 3. A postmark isn't enough.",
+   "es": "¿La entregas tú? Llévala al secretario de tu municipio o ciudad (town or city clerk) a más tardar a las 5 p. m. del lunes 2 de noviembre. Las boletas por correo o las que entrega un agente, como un familiar cercano con un formulario firmado e identificación con foto, deben llegar a más tardar a las 5 p. m. del martes 3 de noviembre. El matasellos no basta.",
+   "src": "https://www.sos.nh.gov/elections/absentee-ballots",
+   "checked": "2026-10-28",
+   "quote": "The deadline to request and return an absentee ballot in person is 5:00 p.m. the day before the election. Absentee ballots delivered through the mail or by the voter's delivery agent shall be received by the town, city, or ward clerk no later than 5:00 p.m. on the day of the election.",
+   "status": "verified",
+   "until": "2026-11-02",
+   "en_after": "Ballots sent by mail or brought by a delivery agent, such as a close family member with a signed form and photo ID, must reach your town or city clerk by 5 p.m. on Tuesday, November 3. A postmark isn't enough.",
+   "es_after": "Las boletas por correo o las que entrega un agente, como un familiar cercano con un formulario firmado e identificación con foto, deben llegar al secretario de tu municipio o ciudad (town or city clerk) a más tardar a las 5 p. m. del martes 3 de noviembre. El matasellos no basta."
   },
   "early_hours": {
    "status": "missing",
@@ -52,13 +66,31 @@
    "status": "verified"
   },
   "first_time": {
-   "status": "missing"
+   "en": "Registering for the first time? No citizenship papers? You can sign a qualified voter affidavit swearing you're a U.S. citizen. Student IDs can't be used to prove who you are when you register, vote absentee or check in, after an October 22 U.S. Supreme Court order.",
+   "es": "¿Te registras por primera vez? ¿No tienes documentos de ciudadanía? Puedes firmar una declaración jurada (qualified voter affidavit) de que eres ciudadano de EE. UU. Las identificaciones de estudiante no sirven para probar quién eres al registrarte, votar en ausencia o presentarte a votar, por una orden de la Corte Suprema de EE. UU. del 22 de octubre.",
+   "src": "https://www.sos.nh.gov/elections/register-vote",
+   "checked": "2026-10-28",
+   "quote": "Your citizenship may also be proven by completing a qualified voter affidavit attesting, subject to the penalties for voter fraud, that you are a United States citizen but do not possess some or all of the documents necessary to prove your citizenship. ... Note: effective October 22, 2026, registrants cannot use student identification cards to prove identity.",
+   "status": "verified"
   }
  },
  "where": {
   "rule": {
-   "status": "missing",
-   "notes": "The SOS voter lookup (app.sos.nh.gov) and sos.nh.gov return 403; the locator URL could not be confirmed, so no locator is set."
+   "en": "Vote at the polling place for your town or ward. The Secretary of State's Voter Information Lookup shows where it is, and your clerk's contact information and hours.",
+   "es": "Vota en el lugar de votación de tu municipio o distrito (ward). El buscador oficial de la Secretaría de Estado (Voter Information Lookup) te muestra dónde está, y los datos de contacto y el horario del secretario de tu municipio.",
+   "src": "https://www.sos.nh.gov/elections/register-vote/registration-deadlines",
+   "checked": "2026-10-28",
+   "quote": "You can find your clerk’s contact information and hours using the Secretary of State’s Voter Information Lookup.",
+   "status": "verified"
+  },
+  "locator_url": "https://app.sos.nh.gov/",
+  "locator_label": {
+   "en": "Voter Information Lookup (New Hampshire Secretary of State)",
+   "es": "Buscador oficial de información para votantes (Secretaría de Estado de New Hampshire)"
+  },
+  "locator_cta": {
+   "en": "Find my polling place",
+   "es": "Buscar mi lugar de votación"
   }
  },
  "id": {
@@ -144,16 +176,20 @@
  },
  "polls_rules": {
   "gear": {
-   "en": "Save the campaigning for outside. Electioneering isn't allowed inside the polling place building, and the moderator sets up a no-electioneering corridor at least 10 feet wide from each entrance, where handing out or posting signs, pins, stickers or campaign clothing is banned.",
-   "es": "Deja la campaña para afuera. No se permite hacer campaña dentro del edificio del lugar de votación, y el moderador marca un pasillo sin propaganda de al menos 10 pies de ancho desde cada entrada, donde está prohibido repartir o colocar letreros, pines, stickers o ropa de campaña.",
+   "en": "No campaigning inside the polling place building. The moderator also sets up a no-electioneering corridor at least 10 feet wide outside each entrance, where posting or handing out signs, pins, stickers or campaign clothing is banned.",
+   "es": "No se permite hacer campaña dentro del edificio del lugar de votación. El moderador también marca un pasillo sin propaganda electoral de al menos 10 pies de ancho afuera de cada entrada, donde está prohibido poner o repartir letreros, pines, stickers o ropa de campaña.",
    "src": "https://gc.nh.gov/rsa/html/LXIII/659/659-43.htm",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "The distribution or posting of electioneering communications, including but not limited to posters, cards, handbills, placards, pictures, pins, stickers, circulars, or articles of clothing, is prohibited within any no-electioneering corridor established outside the polling place by the moderator.",
    "status": "verified"
   },
   "phone": {
-   "status": "missing",
-   "notes": "RSA 659:45-a bars photos inside the guardrail that capture another voter or another voter's ballot. Left out because it sits next to the ballot-selfie question, which is deliberately blank for New Hampshire (RSA 659:35 vs. Rideout v. Gardner)."
+   "en": "You can photograph your own marked ballot and share it. A federal appeals court struck down New Hampshire's ban in 2016, though the old wording is still in RSA 659:35. Inside the voting area, state law bars any photo that captures another voter or their ballot.",
+   "es": "Puedes tomarle una foto a tu propia boleta marcada y compartirla. Una corte federal de apelaciones anuló la prohibición de New Hampshire en 2016, aunque el texto viejo sigue en la ley RSA 659:35. Dentro del área de votación, la ley estatal prohíbe cualquier foto que muestre a otro votante o su boleta.",
+   "src": "https://media.ca1.uscourts.gov/pdf.opinions/15-2021P-01A.pdf",
+   "checked": "2026-10-28",
+   "quote": "In 2014, New Hampshire amended a statute meant to avoid vote buying and voter intimidation by newly forbidding citizens from photographing their marked ballots and publicizing such photographs. ... We affirm on the narrower ground that the statute as amended fails to meet the test for intermediate scrutiny under the First Amendment and that the statute's purposes cannot justify the restrictions it imposes on speech.",
+   "status": "verified"
   },
   "line": {
    "en": "If you're in line when the polls close, including the line to register, stay in it. You can still register and vote.",
@@ -166,11 +202,11 @@
  },
  "sticker": {
   "tradition": {
-   "en": "New Hampshire's Secretary of State ran an I Voted sticker contest for fourth and fifth graders, with the theme \"Celebrating 250 Years of New Hampshire History!\" A panel of local election officials picks the winning designs, which are handed out as stickers to voters in the 2026 state elections.",
-   "es": "La Secretaría de Estado de New Hampshire hizo un concurso de stickers de I Voted para estudiantes de cuarto y quinto grado, con el tema \"Celebrating 250 Years of New Hampshire History!\" Un panel de funcionarios electorales locales elige los diseños ganadores, que se reparten como stickers a los votantes en las elecciones estatales de 2026.",
-   "src": "https://www.sos.nh.gov/4th-and-5th-grade-new-hampshire-i-voted-sticker-contest",
-   "checked": "2026-10-26",
-   "quote": "A panel of local election officials will choose four winning designs, which will be distributed as stickers to all voters during the 2026 state elections.",
+   "en": "New Hampshire's 2026 I Voted stickers were drawn by six fourth- and fifth-grade students from Milford, Windham, Lebanon, Chester, Etna and Nottingham. More than 2,800 students entered the Secretary of State's contest. The winners were announced November 13, 2025, and the designs are handed out statewide during the 2026 state elections.",
+   "es": "Los stickers \"I Voted\" de New Hampshire para 2026 los dibujaron seis estudiantes de cuarto y quinto grado de Milford, Windham, Lebanon, Chester, Etna y Nottingham. Más de 2,800 estudiantes participaron en el concurso de la Secretaría de Estado. Los ganadores se anunciaron el 13 de noviembre de 2025, y los diseños se reparten en todo el estado durante las elecciones estatales de 2026.",
+   "src": "https://www.sos.nh.gov/sites/g/files/ehbemt561/files/inline-documents/sonh/11-13-25-secretary-announces-2025-i-voted-sticker-winners.pdf",
+   "checked": "2026-10-28",
+   "quote": "New Hampshire Secretary of State David Scanlan and Deputy Secretary of State Erin Hennessey are excited to announce the six winners of the 2025 “I Voted” Sticker Contest. The winning designs will be distributed statewide during the 2026 state elections. ... Over 2,800 fourth- and fifth-grade students participated in the contest, making it nearly impossible to choose just four winners, so the Secretary of State’s Office chose two additional winners.",
    "status": "verified"
   }
  },
@@ -187,7 +223,12 @@
    "status": "verified"
   },
   "track": {
-   "status": "missing"
+   "en": "Use the Secretary of State's Voter Information Lookup. It shows when your clerk got your request, when your ballot was sent and when your clerk received it back.",
+   "es": "Usa el buscador oficial de la Secretaría de Estado (Voter Information Lookup). Te muestra cuándo recibió tu solicitud el secretario, cuándo te mandaron la boleta y cuándo la recibió de vuelta.",
+   "src": "https://www.sos.nh.gov/elections/absentee-ballots",
+   "checked": "2026-10-28",
+   "quote": "After you have applied for an absentee ballot, you can use the Voter Information Lookup to find out if your clerk has received your request, when the absentee ballot was sent to you, and when your clerk received your completed absentee ballot.",
+   "status": "verified"
   }
  },
  "notes": "Read October 21, 2026 on gc.nh.gov (RSA 654:7-a, 654:8, 654:12, 657:1, 657:4, 657:17, 657:22, 659:4, 659:13, 659:35, 659:43, 659:45-a). sos.nh.gov and app.sos.nh.gov return 403 to curl and WebFetch, and Claude in Chrome reports 'Permission denied for reading page content on this domain', so nothing on the SOS site was read: locator URL, ballot tracker, absentee request deadline, drop boxes and the sticker contest are left missing. Selfie kept out on purpose. The ID text uses the version of RSA 659:13 I(c) effective September 8, 2026 (personal-knowledge attestation). Registration before Election Day closes at the supervisors' last session, set by each town (RSA 654:8 II); the FAQ already says so, so reg_deadline leads with Election Day registration.",
