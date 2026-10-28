@@ -212,3 +212,13 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
   retry after cancel, open-sheet tap, share error, analytics blocked), save, devices (one WebKit prefetch
   flake on iPad Mini, passed on rerun), cards (0 outside the safe circle); the download stays the full
   1080 square. Garrett to register `attempt`, `prev_result`, `first_action` in GA4.
+- **Oct 27, evening (Garrett's request, ideation):** 24 sticker ideas for the ready-made sets: 12 with the state
+  (Postmark, Marquee, Ribbon, Arcs, Speech bubble, Stencil, Orbit, Horizon, Pixel state, Scoreboard, Neon,
+  Blueprint) and 12 general (Ballot box, Wave, Fireworks, Confetti, Calendar, Megaphone, Done, Echo, Pixel
+  check, Chrome, Dusk, Broadcast), built as review layouts in `site/app.js` (`IDEAS`, listed under `REVIEW`,
+  none in the tile row) plus four review palettes. Rendered by `scripts/sheet_ideas.mjs` to
+  `incoming/ideas-20261027/` (sheets at 240, 60 and 40 px, one 1080 render each, an index page), copied to
+  `dist/ideas-20261027/` for the LAN. Ranked with reasons in `docs/sticker-ideas-20261027.md`; awaiting
+  Garrett's picks. Two fix rounds from the 40 px sheets (type too small in Marquee and Broadcast, Orbit
+  rings through the letters, a cursor mark on Pixel state, Dusk's clipped sun, Scoreboard dots too coarse).
+  QA after a dist rebuild: events PASS, save PASS. Committed, not pushed: goes with the morning deploy.

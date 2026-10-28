@@ -2,6 +2,15 @@
 
 Open items, newest first. Started October 21, 2026. Move an item to `docs/history.md` when it ships.
 
+## Sticker Ideas for the Sets (October 27)
+
+Garrett asked for 12 state and 12 general designs, classic and futuristic, to pick about six of each.
+Built as review layouts (`IDEAS` in `site/app.js`), rendered by `scripts/sheet_ideas.mjs`, ranked with
+the reasons in `docs/sticker-ideas-20261027.md`. Awaiting Garrett's picks; then the chosen ones go into
+`render_bespoke.mjs` (state sets) and the classic set or a second home set (general). Four review-only
+color combinations (`EXTRA_PALETTES`) came with them. The builder row stays as it is until the `design`
+dimension has two weeks of data.
+
 ## Outside UX Reads, Deferred (October 27)
 
 Garrett shared four outside reads (home page, state page, picker, state switcher). Built Oct 27: maker

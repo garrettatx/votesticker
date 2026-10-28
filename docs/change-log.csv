@@ -28,3 +28,4 @@ date,area,change,commit
 2026-10-27,content,"Info block 'Hours:' relabeled 'Election Day hours:' in every state; Title Case info headings; vote-by-mail summary and preview alt text fixed (CA, CO, HI, OR, WA read 'ID: Official info'); FAQ save wording names Save to Photos; crop line softened; hero jump link to the voting facts",
 2026-10-27,seo,"Home h2 'Browse All States' to 'I Voted Stickers by State' (92 impressions at position 7 for 'i voted stickers by state' over 14 days)",
 2026-10-27,analytics,"Measurement v2: sticker_builder_start, sticker_hold_open (press and hold no longer a save), attempt and prev_result, double-tap and open-sheet guards",
+2026-10-27,design,"24 sticker ideas (12 state, 12 general) as review layouts with sheets at 240, 60 and 40 px; four review palettes; renderer gains gradients, outlined shapes, polylines, glow, pixel sampler",

@@ -4,6 +4,13 @@ Started October 26, 2026. One line of what happened, then the rule. Newest first
 
 ## Design and the Maker
 
+- **Dot-matrix type needs at least 16 dot rows.** At 11 rows the condensed capitals lost their counters
+  and EARLY read as EABLY in the Scoreboard sketch; 16 rows for two lines, 19 for one, and look at the
+  full-size render, not the sheet.
+- **Decoration has to live inside the visible circle.** `nofit` items are drawn but never fitted, and the
+  visible canvas is only about 540 units from the content's center once it is scaled to the safe circle;
+  arcs and waves placed below the date line were simply not there. Attach decoration to the content's
+  bounds, or let it count toward the fit.
 - **Render at 40 px before recommending a design.** Rays and Tricolor looked strong as described and
   as squares; at 40 px Rays read like our existing Sticker and Ring, and Tricolor's bands cropped to
   slivers. Every design proposal now comes with a 40 px sheet (`scripts/sheet_new.mjs`).

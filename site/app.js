@@ -35,6 +35,14 @@
 		{ id: 'rust', name: 'Burnt orange and cream', bg: '#AD431E', ink: '#FFF0D5', accent: '#EFC05B', onAccent: '#AD431E', star: '#AD431E', split: '#7E2F12' },
 		{ id: 'charcoal', name: 'Charcoal and gold', bg: '#2A2D2A', ink: '#FFF0D3', accent: '#D4A531', onAccent: '#2A2D2A', star: '#2A2D2A', split: '#3E4A3C' }
 	];
+	// October 27 ideation (review only, not in the swatch row): four more combinations for the sheets.
+	// Dark grounds, as the rule says; two lean futuristic (midnight, black), two classic (olive, indigo).
+	var EXTRA_PALETTES = [
+		{ id: 'midnight', name: 'Midnight and mint', bg: '#0B1F3A', ink: '#9EF2D4', accent: '#FFD166', onAccent: '#0B1F3A', star: '#0B1F3A', split: '#143157' },
+		{ id: 'black', name: 'Black and lime', bg: '#121212', ink: '#C6F43A', accent: '#F4F4F0', onAccent: '#121212', star: '#121212', split: '#262626' },
+		{ id: 'olive', name: 'Olive and sand', bg: '#4A5320', ink: '#F4EBD0', accent: '#E0A526', onAccent: '#4A5320', star: '#4A5320', split: '#5E6A2A' },
+		{ id: 'indigo', name: 'Indigo and coral', bg: '#2B2D7A', ink: '#FFE9E2', accent: '#FF7F6E', onAccent: '#2B2D7A', star: '#2B2D7A', split: '#3A3D96' }
+	];
 	function starOf(p) { return p.star || p.accent; }
 	// The date line in the accent where it reads on the background, else in ink.
 	function dateColor(p) { return contrast(p.accent, p.bg) >= 3 ? p.accent : p.ink; }
@@ -60,7 +68,7 @@
 		WV: ['#EEF1EA', '#1F2E3D', '#C4961F'], WI: ['#EEF2F6', '#14213D', '#C9473A'], WY: ['#F2EFE6', '#2B2D42', '#B5652B']
 	};
 	function paletteFor(id, st) {
-		if (id !== 'state') { return PALETTES.filter(function (x) { return x.id === id; })[0] || PALETTES[1]; }
+		if (id !== 'state') { return PALETTES.concat(EXTRA_PALETTES).filter(function (x) { return x.id === id; })[0] || PALETTES[1]; }
 		var c = STATE_COLORS[st.abbr] || ['#0F2558', '#FBF6E8', '#B3262C'];
 		// Text on the accent bar takes whichever of the two base colors reads better on it.
 		return { id: 'state', name: st.name + ' colors', bg: c[0], ink: c[1], accent: c[2], onAccent: contrast(c[2], c[0]) > contrast(c[2], c[1]) ? c[0] : c[1] };
@@ -125,6 +133,35 @@
 		{ id: 'cflag', name: 'Classic stars and stripes', palette: 'navy' }, { id: 'cring', name: 'Classic star ring', palette: 'navy' },
 		{ id: 'cband', name: 'Classic banded', palette: 'navy' }
 	];
+	// October 27 ideation: twelve state designs and twelve general ones (no state shape) for Garrett to pick
+	// from, rendered by scripts/sheet_ideas.mjs. Classic and futuristic on purpose; none in the tile row.
+	var IDEAS = [
+		{ id: 'postmark', name: 'Postmark', palette: 'cream', group: 'state', style: 'classic' },
+		{ id: 'marquee', name: 'Marquee', palette: 'maroon', group: 'state', style: 'classic' },
+		{ id: 'ribbon', name: 'Ribbon', palette: 'forest', group: 'state', style: 'classic' },
+		{ id: 'arcs', name: 'Arcs', palette: 'rust', group: 'state', style: 'classic' },
+		{ id: 'speech', name: 'Speech bubble', palette: 'teal', group: 'state', style: 'modern' },
+		{ id: 'stencil', name: 'Stencil', palette: 'olive', group: 'state', style: 'classic' },
+		{ id: 'orbit', name: 'Orbit', palette: 'indigo', group: 'state', style: 'futuristic' },
+		{ id: 'horizon', name: 'Horizon', palette: 'plum', group: 'state', style: 'futuristic' },
+		{ id: 'pixel', name: 'Pixel state', palette: 'black', group: 'state', style: 'futuristic' },
+		{ id: 'scoreboard', name: 'Scoreboard', palette: 'charcoal', group: 'state', style: 'futuristic' },
+		{ id: 'neon', name: 'Neon', palette: 'midnight', group: 'state', style: 'futuristic' },
+		{ id: 'blueprint', name: 'Blueprint', palette: 'cobalt', group: 'state', style: 'futuristic' },
+		{ id: 'ballotbox', name: 'Ballot box', palette: 'cream', group: 'general', style: 'classic' },
+		{ id: 'wave', name: 'Wave', palette: 'navy', group: 'general', style: 'classic' },
+		{ id: 'fireworks', name: 'Fireworks', palette: 'midnight', group: 'general', style: 'classic' },
+		{ id: 'confetti', name: 'Confetti', palette: 'cream', group: 'general', style: 'modern' },
+		{ id: 'calendar', name: 'Calendar', palette: 'forest', group: 'general', style: 'classic' },
+		{ id: 'megaphone', name: 'Megaphone', palette: 'rust', group: 'general', style: 'classic' },
+		{ id: 'done', name: 'Done', palette: 'teal', group: 'general', style: 'modern' },
+		{ id: 'echo', name: 'Echo', palette: 'maroon', group: 'general', style: 'modern' },
+		{ id: 'pixelcheck', name: 'Pixel check', palette: 'black', group: 'general', style: 'futuristic' },
+		{ id: 'chrome', name: 'Chrome', palette: 'midnight', group: 'general', style: 'futuristic' },
+		{ id: 'dusk', name: 'Dusk', palette: 'indigo', group: 'general', style: 'futuristic' },
+		{ id: 'broadcast', name: 'Broadcast', palette: 'charcoal', group: 'general', style: 'futuristic' }
+	];
+	REVIEW = REVIEW.concat(IDEAS);
 	function designOf(id) { return DESIGNS.filter(function (d) { return d.id === id; })[0]; }
 	// Short lines only, at most 10 characters each (POR CORREO), so a card reads at 40 px in a comment thread
 	// (Garrett, October 19; QA enforces the limit).
@@ -444,7 +481,9 @@
 		items.forEach(function (it) {
 			if (it.t === 'shape') { it.x += dx; it.y += dy; }
 			else if (it.t === 'star' || it.t === 'seal' || it.t === 'ring') { it.cx += dx; it.cy += dy; }
-			else if (it.t === 'poly') { it.pts = it.pts.map(function (q) { return [q[0] + dx, q[1] + dy]; }); }
+			else if (it.t === 'poly' || it.t === 'line') { it.pts = it.pts.map(function (q) { return [q[0] + dx, q[1] + dy]; }); }
+			else if (it.t === 'oval' || it.t === 'disc' || it.t === 'glow') { it.cx += dx; it.cy += dy; }
+			if (it.grad) { it.grad = { stops: it.grad.stops, from: [it.grad.from[0] + dx, it.grad.from[1] + dy], to: [it.grad.to[0] + dx, it.grad.to[1] + dy] }; }
 			else if (it.t === 'text') { it.x += dx; it.base += dy; }
 			if (it.box) { it.box = [it.box[0] + dx, it.box[1] + dy, it.box[2] + dx, it.box[3] + dy]; }
 			if (it.pivot) { it.pivot = [it.pivot[0] + dx, it.pivot[1] + dy]; }
@@ -466,6 +505,60 @@
 	function ribbonItem(x0, x1, top, h, color, notch) {
 		var n = notch == null ? h * 0.42 : notch;
 		return { t: 'poly', color: color, pts: [[x0, top], [x1, top], [x1 - n, top + h / 2], [x1, top + h], [x0, top + h], [x0 + n, top + h / 2]] };
+	}
+	// October 27 ideation helpers.
+	// A stroked polyline (fireworks, sound lines, dimension ticks): `pts` in card units, `w` the stroke width.
+	function lineItem(pts, w, color) { return { t: 'line', pts: pts, w: w, color: color }; }
+	// A four-point sparkle (the Space Age twinkle), as a polygon.
+	function sparkle(cx, cy, r, color) {
+		var k = r * 0.22;
+		return { t: 'poly', color: color, pts: [[cx, cy - r], [cx + k, cy - k], [cx + r, cy], [cx + k, cy + k], [cx, cy + r], [cx - k, cy + k], [cx - r, cy], [cx - k, cy - k]] };
+	}
+	// A seeded, repeatable random number in [0, 1), so a sticker draws the same way every time.
+	function rng(seed) { var s = seed % 2147483647; if (s <= 0) { s += 2147483646; } return function () { s = s * 16807 % 2147483647; return (s - 1) / 2147483646; }; }
+	// Pixelate: draw something into a cols x rows grid and return one square (or dot) per filled cell,
+	// in card units, `cell` wide, with the grid's top left at (x, y). `draw(ctx, w, h)` paints at the
+	// grid's own resolution, so each pixel is one cell. Used by Pixel state, Scoreboard and Pixel check.
+	function pixelate(draw, cols, rows, x, y, cell, color, dots, dim) {
+		var c = document.createElement('canvas');
+		c.width = cols; c.height = rows;
+		var g = c.getContext('2d');
+		g.fillStyle = '#000';
+		draw(g, cols, rows);
+		var d = g.getImageData(0, 0, cols, rows).data, items = [], i, j;
+		for (j = 0; j < rows; j++) {
+			for (i = 0; i < cols; i++) {
+				var on = d[(j * cols + i) * 4 + 3] >= 110;
+				if (on || dim) {
+					// Unlit cells (`dim`) are decoration: they never count toward the fit.
+					if (dots) { items.push({ t: 'disc', cx: x + (i + 0.5) * cell, cy: y + (j + 0.5) * cell, r: cell * 0.4, color: on ? color : dim, nofit: !on }); }
+					else { items.push({ t: 'box', box: [x + i * cell, y + j * cell, x + (i + 1) * cell + 0.5, y + (j + 1) * cell + 0.5], color: on ? color : dim, nofit: !on }); }
+				}
+			}
+		}
+		return items;
+	}
+	// A state outline as pixels: `w` cells across, the capital as a 2 x 2 accent block.
+	function pixelState(st, cx, top, w, cell, color, star) {
+		var sh = shape(st.abbr), cols = w, rows = Math.ceil(sh.h / sh.w * w), k = cols / sh.w, x = cx - cols * cell / 2;
+		var items = pixelate(function (g) { g.scale(k, k); g.fill(sh.path); }, cols, rows, x, top, cell, color, false);
+		if (star) {
+			var sx = Math.floor(sh.cap[0] * k), sy = Math.floor(sh.cap[1] * k);
+			items.push({ t: 'box', box: [x + (sx - 1) * cell, top + (sy - 1) * cell, x + (sx + 1) * cell, top + (sy + 1) * cell], color: star });
+		}
+		return { items: items, bottom: top + rows * cell, cols: cols, rows: rows };
+	}
+	// A headline as a dot matrix: each line `rows` dots tall in DISPLAY, centered on cx, stacked from `top`.
+	function dotText(lines, rows, cx, top, cell, color, dim) {
+		var items = [], y = top, gap = Math.round(rows * 0.3), widest = 0;
+		var ms = lines.map(function (s) { measureCtx.font = rows + 'px ' + DISPLAY; var m = measureCtx.measureText(s); var k = rows / m.actualBoundingBoxAscent; return { m: m, k: k, cols: Math.ceil((m.actualBoundingBoxLeft + m.actualBoundingBoxRight) * k) + 2 }; });
+		ms.forEach(function (q) { widest = Math.max(widest, q.cols); });
+		lines.forEach(function (s, i) {
+			var q = ms[i], m = q.m, k = q.k, cols = widest, left = (widest - q.cols) / 2;
+			items = items.concat(pixelate(function (g) { g.font = rows * k + 'px ' + DISPLAY; g.textBaseline = 'alphabetic'; g.fillText(s, left + 1 + m.actualBoundingBoxLeft * k, rows); }, cols, rows + 1, cx - cols * cell / 2, y, cell, color, true, dim));
+			y += (rows + 1) * cell + gap * cell;
+		});
+		return { items: items, bottom: y - gap * cell };
 	}
 
 	// Classic set helpers (October 26). CR: the visible circle's radius in layout units; classicFrame() puts
@@ -1159,6 +1252,356 @@
 			var date = placeText(dt, 0, y + rule + gap, dateColor(p));
 			var r2 = { t: 'box', box: [-sw, date.bottom + gap, sw, date.bottom + gap + rule], color: p.ink };
 			return { items: icon.items.concat(placed.items, [r1], date.items, [r2]), safe: SAFE };
+		},
+
+		/* ---- October 27 ideation, state designs (review only; scripts/sheet_ideas.mjs) ---- */
+		// Postmark: a hand stamp in one ink. A dashed outer ring, a thin inner ring, the state name curved over
+		// the top and the election year under the bottom, the stack in the middle. No filled disc (that is Ring).
+		postmark: function (st, p, lines, dateText) {
+			var R = 480, ink = p.ink, pop = contrast(p.accent, p.bg) >= 2.5 ? p.accent : ink;
+			var year = ELECTION.day.slice(0, 4), bottom = (LANG === 'es' ? 'ELECCIONES ' : 'ELECTION ') + year;
+			var outer = { t: 'ring', cx: 0, cy: 0, r: R, w: 16, color: ink, dash: [34, 22] };
+			var inner = { t: 'ring', cx: 0, cy: 0, r: R - 62, w: 5, color: ink };
+			var bandR = R - 124;
+			var band = arcItems(st.name.toUpperCase(), DATE, 52, 0, 0, bandR, -Math.PI / 2, false, ink, 0.16)
+				.concat(arcItems(bottom, DATE, 52, 0, 0, bandR + 52 * 0.72, Math.PI / 2, true, ink, 0.16));
+			var stars = [{ t: 'star', cx: -bandR - 6, cy: 0, r: 22, color: pop }, { t: 'star', cx: bandR + 6, cy: 0, r: 22, color: pop }];
+			var head = textBlock(lines, DISPLAY, 500, 190, { justify: true, leading: 0.1, track: -0.01 });
+			var placed = placeText(head, 0, 0, ink);
+			var date = dateItems(dateText, 0, placed.bottom + head.asc * 0.26, 420, head.asc * 0.34, pop);
+			var group = placed.items.concat(date.items), gb = bounds(group);
+			shift(group, 0, -(gb[1] + gb[3]) / 2);
+			return { items: [outer, inner].concat(band, stars, group), safe: SAFE };
+		},
+		// Marquee: the stack knocked out of an ink panel ringed with bulbs, like a theater sign. The state above,
+		// the date below.
+		marquee: function (st, p, lines, dateText) {
+			var W = 480, H = 270, panel = { t: 'box', box: [-W, -H, W, H], color: p.ink, radius: 70 };
+			var head = textBlock(lines, DISPLAY, 740, lines.length > 1 ? 180 : 250, { justify: true, leading: 0.1, track: -0.01 });
+			var th = head.lines.reduce(function (s, l) { return s + l.asc; }, 0) + head.gap * (lines.length - 1);
+			var placed = placeText(head, 0, -th / 2, p.bg);
+			var bulbs = [], inset = 40, r = 16, bx = W - inset, by = H - inset, nx = 12, ny = 7, i;
+			var bulb = contrast(p.accent, p.ink) >= 2 ? p.accent : p.bg;
+			for (i = 0; i < nx; i++) { var x = -bx + i * 2 * bx / (nx - 1); bulbs.push({ t: 'disc', cx: x, cy: -by, r: r, color: bulb }, { t: 'disc', cx: x, cy: by, r: r, color: bulb }); }
+			for (i = 1; i < ny - 1; i++) { var y = -by + i * 2 * by / (ny - 1); bulbs.push({ t: 'disc', cx: -bx, cy: y, r: r, color: bulb }, { t: 'disc', cx: bx, cy: y, r: r, color: bulb }); }
+			var icon = iconItem(st, 0, -H - 40 - 150, 150, 280, p.ink, starOf(p));
+			var date = dateItems(dateText, 0, H + 40, 560, 80, dateColor(p));
+			return { items: [panel].concat(bulbs, icon.items, placed.items, date.items), safe: SAFE };
+		},
+		// Ribbon: the first line knocked out of a swallowtail ribbon in the accent, the state above, the rest
+		// of the headline and the date below (the collegiate pennant voice).
+		ribbon: function (st, p, lines, dateText) {
+			var rc = contrast(p.accent, p.bg) >= 1.6 ? p.accent : p.ink, on = rc === p.accent ? p.onAccent : p.bg;
+			var icon = iconItem(st, 0, 0, 230, 400, p.ink, starOf(p));
+			var head = textBlock([lines[0]], DISPLAY, 620, 210);
+			var h = head.asc * 1.6, notch = h * 0.42, padX = head.asc * 0.5, top = icon.bottom + 50;
+			var w = head.lines[0].w / 2 + padX + notch;
+			var band = ribbonItem(-w, w, top, h, rc);
+			var first = placeText(head, 0, top + (h - head.asc) / 2, on);
+			var items = icon.items.concat([band], first.items), y = top + h + head.asc * 0.3;
+			if (lines.length > 1) {
+				var rest = textBlock(lines.slice(1), DISPLAY, 760, 250), rp = placeText(rest, 0, y, p.ink);
+				items = items.concat(rp.items); y = rp.bottom + rest.asc * 0.22;
+			}
+			var date = dateItems(dateText, 0, y, 560, head.asc * 0.5, dateColor(p));
+			return { items: items.concat(date.items), safe: SAFE };
+		},
+		// Arcs: three bands rising over the state like a sun (the 1970s civic poster), the stack under them.
+		arcs: function (st, p, lines, dateText) {
+			var icon = iconItem(st, 0, -170, 170, 320, p.ink, starOf(p)), cy = icon.bottom + 10;
+			var cols = [shade(p.bg, 0.12), p.split || shade(p.bg, 0.22), p.accent], arcs = [];
+			cols.forEach(function (c, i) {
+				var r = 415 - i * 90, pts = [], k;
+				for (k = 0; k <= 40; k++) { var a = Math.PI + k * Math.PI / 40; pts.push([r * Math.cos(a), cy + r * Math.sin(a)]); }
+				arcs.push({ t: 'line', pts: pts, w: 80, color: c, cap: 'butt' });
+			});
+			var head = textBlock(lines, DISPLAY, 760, 270, { justify: true, leading: 0.1, track: -0.01 });
+			var placed = placeText(head, 0, cy + 50, p.ink);
+			var date = dateItems(dateText, 0, placed.bottom + head.asc * 0.24, 600, head.asc * 0.4, dateColor(p));
+			return { items: arcs.concat(icon.items, placed.items, date.items), safe: SAFE };
+		},
+		// Speech bubble: the stack inside a bubble, because the sticker is a message to friends. The state
+		// above, the date beside the tail.
+		speech: function (st, p, lines, dateText) {
+			var W = 470, H = 250, bub = { t: 'box', box: [-W, -H, W, H], color: p.ink, radius: 110 };
+			var tail = { t: 'poly', color: p.ink, pts: [[-300, H - 20], [-180, H - 20], [-360, H + 140]] };
+			var head = textBlock(lines, DISPLAY, 720, lines.length > 1 ? 160 : 220, { justify: true, leading: 0.1, track: -0.01 });
+			var th = head.lines.reduce(function (s, l) { return s + l.asc; }, 0) + head.gap * (lines.length - 1);
+			var placed = placeText(head, 0, -th / 2, p.bg);
+			var icon = iconItem(st, 0, -H - 40 - 140, 140, 260, p.ink, starOf(p));
+			var date = dateItems(dateText, 140, H + 40, 520, 76, dateColor(p));
+			return { items: [bub, tail].concat(icon.items, placed.items, date.items), safe: SAFE };
+		},
+		// Stencil: the stack with two bridges cut through every line, as on a shipping crate.
+		stencil: function (st, p, lines, dateText) {
+			var icon = iconItem(st, 0, 0, 170, 320, p.ink, starOf(p));
+			var head = textBlock(lines, DISPLAY, 780, 290, { justify: true, leading: 0.14, track: 0.02 });
+			var placed = placeText(head, 0, icon.bottom + 50, p.ink), bridges = [];
+			head.lines.forEach(function (l, i) {
+				var b = placed.items[i].box, a = l.asc || head.asc, t = a * 0.055;
+				[0.36, 0.68].forEach(function (f) { bridges.push({ t: 'box', box: [b[0] - 12, b[1] + a * f - t / 2, b[2] + 12, b[1] + a * f + t / 2], color: p.bg }); });
+			});
+			var date = dateItems(dateText, 0, placed.bottom + head.asc * 0.24, 560, head.asc * 0.4, dateColor(p));
+			return { items: icon.items.concat(placed.items, bridges, date.items), safe: SAFE };
+		},
+		// Orbit: two tipped orbits around the stack, a planet on each, three sparkles (the Space Age).
+		orbit: function (st, p, lines, dateText) {
+			var icon = iconItem(st, 0, 0, 150, 280, p.ink, starOf(p));
+			var head = textBlock(lines, DISPLAY, 560, 230, { justify: true, leading: 0.1, track: -0.01 });
+			var placed = placeText(head, 0, icon.bottom + 36, p.ink);
+			var date = dateItems(dateText, 0, placed.bottom + head.asc * 0.26, 480, head.asc * 0.36, dateColor(p));
+			var group = icon.items.concat(placed.items, date.items), gb = bounds(group);
+			shift(group, 0, -(gb[1] + gb[3]) / 2);
+			var hw = (gb[2] - gb[0]) / 2, hh = (gb[3] - gb[1]) / 2, rx = hw * 1.5, ry = hh * 1.3;
+			outline(placed.items, p.bg, head.asc * 0.05, null, 0);
+			var ringA = { t: 'oval', cx: 0, cy: 0, rx: rx, ry: ry * 0.62, w: 14, color: p.accent, rot: -0.45, pivot: [0, 0] };
+			var ringB = { t: 'oval', cx: 0, cy: 0, rx: rx * 0.96, ry: ry * 0.62, w: 8, color: shade(p.bg, 0.3), rot: 0.5, pivot: [0, 0] };
+			function on(r, t, rot) { var x = r.rx * Math.cos(t), y = r.ry * Math.sin(t), c = Math.cos(rot), s = Math.sin(rot); return [x * c - y * s, x * s + y * c]; }
+			var pa = on(ringA, 0.9, -0.45), pb = on(ringB, 3.6, 0.5);
+			var planets = [{ t: 'disc', cx: pa[0], cy: pa[1], r: 26, color: p.accent }, { t: 'disc', cx: pb[0], cy: pb[1], r: 16, color: p.ink }];
+			var sp = [sparkle(-hw * 1.1, -hh * 0.9, 34, p.ink), sparkle(hw * 1.05, hh * 0.75, 26, p.accent), sparkle(hw * 0.9, -hh * 1.15, 20, p.ink)];
+			return { items: [ringA, ringB].concat(sp, planets, group), safe: SAFE };
+		},
+		// Horizon: a setting sun with slats cut through it over a perspective grid, the stack across the horizon.
+		horizon: function (st, p, lines, dateText) {
+			var sunR = 360, sunC = -120, light = p.ink;
+			var sun = { t: 'disc', cx: 0, cy: sunC, r: sunR, color: p.accent, grad: { stops: [[0, light], [1, p.accent]], from: [0, sunC - sunR], to: [0, sunC + sunR] } };
+			var slats = [], k, y = sunC + 40, t = 10;
+			for (k = 0; k < 7; k++) { slats.push({ t: 'box', box: [-sunR - 4, y, sunR + 4, y + t], color: p.bg }); y += t + 44 - k * 3; t += 9; }
+			var gc = shade(p.bg, 0.18), grid = [], hy = sunC + sunR - 20;
+			for (k = -6; k <= 6; k++) { grid.push({ t: 'line', pts: [[k * 90, hy], [k * 420, hy + 900]], w: 4, color: gc, nofit: true }); }
+			[40, 110, 220, 380, 600].forEach(function (d) { grid.push({ t: 'line', pts: [[-3000, hy + d], [3000, hy + d]], w: 4, color: gc, nofit: true }); });
+			var head = textBlock(lines, DISPLAY, 760, 250, { justify: true, leading: 0.1, track: -0.01 });
+			var placed = placeText(head, 0, hy - 160, p.ink);
+			outline(placed.items, p.bg, head.asc * 0.05, null, 0);
+			var date = dateItems(dateText, 0, placed.bottom + head.asc * 0.26, 560, head.asc * 0.36, p.ink);
+			var icon = iconItem(st, 0, sunC - sunR + 70, 130, 240, p.bg, null);
+			return { items: grid.concat([sun], slats, icon.items, placed.items, date.items), safe: SAFE };
+		},
+		// Pixel state: the outline as pixels, the capital a block in the accent, a tracked date with a cursor.
+		pixel: function (st, p, lines, dateText) {
+			var ps = pixelState(st, 0, 0, 22, 14, p.ink, contrast(p.accent, p.bg) >= 1.6 ? p.accent : p.bg);
+			var head = textBlock(lines, DISPLAY, 760, 260, { justify: true, leading: 0.14, track: 0.02 });
+			var placed = placeText(head, 0, ps.bottom + 50, p.ink);
+			var dt = textBlock([dateText], DATE, 520, head.asc * 0.34, { track: 0.3 });
+			var date = placeText(dt, 0, placed.bottom + head.asc * 0.26, dateColor(p));
+			return { items: ps.items.concat(placed.items, date.items), safe: SAFE };
+		},
+		// Scoreboard: the headline as lit dots on a dark board, unlit dots showing through, the state above.
+		scoreboard: function (st, p, lines, dateText) {
+			var cell = 14, rows = lines.length > 1 ? 16 : 19, dark = luminance(p.bg) < 0.2;
+			var panel = dark ? shade(p.bg, 0.1) : darkOf(p), dim = shade(panel, 0.06);
+			var dot = contrast(p.accent, panel) >= 2.5 ? p.accent : lightOf(p);
+			var dots = dotText(lines, rows, 0, 0, cell, dot, dim);
+			var b = bounds(dots.items), pad = 40;
+			var board = { t: 'box', box: [b[0] - pad, b[1] - pad, b[2] + pad, b[3] + pad], color: panel, radius: 18 };
+			var icon = iconItem(st, 0, b[1] - pad - 36 - 130, 130, 240, p.ink, starOf(p));
+			var dt = textBlock([dateText], DATE, 520, 70, { track: 0.24 });
+			var date = placeText(dt, 0, b[3] + pad + 40, p.ink);
+			return { items: [board].concat(dots.items, icon.items, date.items), safe: SAFE };
+		},
+		// Neon: hollow letters as glowing tubes, the state an outlined tube in the accent.
+		neon: function (st, p, lines, dateText) {
+			var glowW = 28;
+			var icon = iconItem(st, 0, 0, 230, 400, p.accent, null);
+			icon.items[0].stroke = 9; icon.items[0].glow = { w: glowW };
+			var head = textBlock(lines, DISPLAY, 760, 270, { justify: true, leading: 0.16, track: 0.03 });
+			var placed = placeText(head, 0, icon.bottom + 60, p.ink);
+			placed.items.forEach(function (it) { it.hollow = true; it.stroke = p.ink; it.strokeWidth = head.asc * 0.055; it.glow = { w: glowW, color: p.ink }; });
+			var dt = textBlock([dateText], DATE, 520, head.asc * 0.32, { track: 0.2 });
+			var date = placeText(dt, 0, placed.bottom + head.asc * 0.3, p.accent);
+			date.items.forEach(function (it) { it.glow = { w: 18 }; });
+			return { items: icon.items.concat(placed.items, date.items), safe: SAFE };
+		},
+		// Blueprint: a drafting grid, the state as an outline with a crosshair on the capital, a dimension
+		// line under the date.
+		blueprint: function (st, p, lines, dateText) {
+			var gc = shade(p.bg, luminance(p.bg) > 0.6 ? 0.08 : 0.14), grid = [], k;
+			for (k = -12; k <= 12; k++) { grid.push({ t: 'line', pts: [[k * 90, -3000], [k * 90, 3000]], w: 2, color: gc, nofit: true }, { t: 'line', pts: [[-3000, k * 90], [3000, k * 90]], w: 2, color: gc, nofit: true }); }
+			var icon = iconItem(st, 0, 0, 260, 440, p.ink, null), it0 = icon.items[0], sh = shape(st.abbr);
+			it0.stroke = 7;
+			var ac = contrast(p.accent, p.bg) >= 1.6 ? p.accent : p.ink, cx = it0.x + sh.cap[0] * it0.k, cy = it0.y + sh.cap[1] * it0.k, cr = 22;
+			var cross = [{ t: 'ring', cx: cx, cy: cy, r: cr, w: 5, color: ac }, lineItem([[cx - cr * 1.8, cy], [cx + cr * 1.8, cy]], 5, ac), lineItem([[cx, cy - cr * 1.8], [cx, cy + cr * 1.8]], 5, ac)];
+			var head = textBlock(lines, DISPLAY, 760, 270, { justify: true, leading: 0.12, track: 0.01 });
+			var placed = placeText(head, 0, icon.bottom + 56, p.ink);
+			var dt = textBlock([dateText], DATE, 520, head.asc * 0.3, { track: 0.22 });
+			var date = placeText(dt, 0, placed.bottom + head.asc * 0.3, ac);
+			var dw = dt.lines[0].w / 2 + 40, dy = date.bottom + 26;
+			var dim = [lineItem([[-dw, dy], [dw, dy]], 4, ac), lineItem([[-dw, dy - 14], [-dw, dy + 14]], 4, ac), lineItem([[dw, dy - 14], [dw, dy + 14]], 4, ac)];
+			return { items: grid.concat(icon.items, cross, placed.items, date.items, dim), safe: SAFE };
+		},
+
+		/* ---- October 27 ideation, general designs (no state shape) ---- */
+		// Ballot box: a box with a lid, a ballot going into the slot, the stack below.
+		ballotbox: function (st, p, lines, dateText) {
+			var bodyC = contrast(p.accent, p.bg) >= 1.6 ? p.accent : shade(p.bg, 0.3);
+			var body = { t: 'box', box: [-190, -40, 190, 170], color: bodyC, radius: 18 };
+			var lid = { t: 'box', box: [-220, -100, 220, -34], color: p.ink, radius: 14 };
+			var slot = { t: 'box', box: [-80, -80, 80, -58], color: p.bg, radius: 6 };
+			var bOut = { t: 'box', box: [-78, -262, 78, -70], color: darkOf(p), radius: 8 };
+			var paper = { t: 'box', box: [-68, -252, 68, -78], color: lightOf(p), radius: 6 };
+			var chk = { t: 'poly', color: darkOf(p), pts: [[-38, -170], [-24, -184], [-8, -166], [26, -212], [40, -198], [-8, -138]] };
+			tilt([bOut, paper, chk], -0.1);
+			var head = textBlock(lines, DISPLAY, 760, 240, { justify: true, leading: 0.1, track: -0.01 });
+			var placed = placeText(head, 0, 220, p.ink);
+			var date = dateItems(dateText, 0, placed.bottom + head.asc * 0.24, 560, head.asc * 0.38, dateColor(p));
+			return { items: [body, bOut, paper, chk, lid, slot].concat(placed.items, date.items), safe: SAFE };
+		},
+		// Wave: five stars over the stack, three rippling bands under it (the flag's motion, no flag).
+		wave: function (st, p, lines, dateText) {
+			var sc = contrast(p.accent, p.bg) >= 1.6 ? p.accent : p.ink, stars = [], k;
+			for (k = -2; k <= 2; k++) { stars.push({ t: 'star', cx: k * 100, cy: -76, r: 26, color: sc }); }
+			var head = textBlock(lines, DISPLAY, 760, 270, { justify: true, leading: 0.1, track: -0.01 });
+			var placed = placeText(head, 0, 0, p.ink);
+			var waves = [], y0 = placed.bottom + 60, amp = 22, thick = 40, colors = [sc, shade(p.bg, 0.22), sc], x;
+			colors.forEach(function (c, i) {
+				var top = [];
+				for (x = -400; x <= 400; x += 25) { top.push([x, y0 + i * (thick + 22) + Math.sin(x / 130 + i * 0.9) * amp]); }
+				var poly = top.concat(top.slice().reverse().map(function (q) { return [q[0], q[1] + thick]; }));
+				waves.push({ t: 'poly', color: c, pts: poly });
+			});
+			var wb = bounds(waves);
+			var date = dateItems(dateText, 0, wb[3] + 50, 560, head.asc * 0.38, dateColor(p));
+			return { items: waves.concat(stars, placed.items, date.items), safe: SAFE };
+		},
+		// Fireworks: four bursts around the stack, the biggest in the accent.
+		fireworks: function (st, p, lines, dateText) {
+			var head = textBlock(lines, DISPLAY, 700, 250, { justify: true, leading: 0.1, track: -0.01 });
+			var placed = placeText(head, 0, 0, p.ink);
+			var date = dateItems(dateText, 0, placed.bottom + head.asc * 0.24, 560, head.asc * 0.38, dateColor(p));
+			function burst(cx, cy, r, n, c, w) {
+				var items = [], k;
+				for (k = 0; k < n; k++) {
+					var a = k * Math.PI * 2 / n + 0.2, x = cx + Math.cos(a) * r, y = cy + Math.sin(a) * r;
+					items.push(lineItem([[cx + Math.cos(a) * r * 0.35, cy + Math.sin(a) * r * 0.35], [x, y]], w, c), { t: 'disc', cx: x, cy: y, r: w * 1.1, color: c });
+				}
+				return items;
+			}
+			var b = bounds(placed.items.concat(date.items)), ac = contrast(p.accent, p.bg) >= 1.6 ? p.accent : p.ink;
+			var fw = burst(-300, b[1] - 200, 190, 12, ac, 10).concat(burst(330, b[1] - 130, 140, 10, p.ink, 8), burst(360, b[3] + 90, 120, 10, ac, 7), burst(-370, b[3] + 40, 90, 8, shade(p.bg, 0.4), 6));
+			return { items: fw.concat(placed.items, date.items), safe: SAFE };
+		},
+		// Confetti: the stack with a halo, bits of paper falling around it (seeded, so it draws the same each time).
+		confetti: function (st, p, lines, dateText) {
+			var head = textBlock(lines, DISPLAY, 740, 270, { justify: true, leading: 0.1, track: -0.01 });
+			var placed = placeText(head, 0, 0, p.ink);
+			var date = dateItems(dateText, 0, placed.bottom + head.asc * 0.24, 560, head.asc * 0.38, p.onAccent, p.accent);
+			outline(placed.items, p.bg, head.asc * 0.045, null, 0);
+			var r = rng(7), cols = [p.accent, p.split || shade(p.bg, 0.25), lightOf(p) === p.ink ? p.ink : darkOf(p)], bits = [], k;
+			var b = bounds(placed.items.concat(date.items)), cy = (b[1] + b[3]) / 2;
+			for (k = 0; k < 38; k++) {
+				var a = r() * Math.PI * 2, d = 330 + r() * 130, x = Math.cos(a) * d, y = cy + Math.sin(a) * d, s = 14 + r() * 22, c = cols[k % 3];
+				if (k % 4 === 0) { bits.push({ t: 'disc', cx: x, cy: y, r: s * 0.55, color: c, nofit: true }); }
+				else { bits.push({ t: 'box', box: [x - s, y - s * 0.4, x + s, y + s * 0.4], color: c, rot: r() * Math.PI, pivot: [x, y], nofit: true, radius: 4 }); }
+			}
+			return { items: bits.concat(placed.items, date.items), safe: SAFE };
+		},
+		// Calendar: a page with Election Day circled in the big numeral, the stack below.
+		calendar: function (st, p, lines, dateText) {
+			var d = day(ELECTION.day), dnum = String(d.getDate()), mon = (LANG === 'es' ? mes(d) : MONTHS[d.getMonth()]).toUpperCase();
+			var W = 170, H = 190, top = -H, pageC = lightOf(p), inkC = darkOf(p);
+			var pageOut = { t: 'box', box: [-W - 8, top - 8, W + 8, top + 2 * H + 8], color: inkC, radius: 32 };
+			var page = { t: 'box', box: [-W, top, W, top + 2 * H], color: pageC, radius: 26 };
+			var header = { t: 'box', box: [-W, top, W, top + 90], color: p.accent, radius: 26 };
+			var headerSq = { t: 'box', box: [-W, top + 50, W, top + 90], color: p.accent };
+			var rings = [-90, 90].map(function (x) { return { t: 'ring', cx: x, cy: top + 2, r: 16, w: 10, color: inkC }; });
+			var mb = textBlock([mon], DATE, 200, 50, { track: 0.18 }), mp = placeText(mb, 0, top + 45 - mb.asc / 2, p.onAccent);
+			var nb = textBlock([dnum], DISPLAY, 200, 190), np = placeText(nb, 0, top + 90 + (2 * H - 90 - nb.asc) / 2, inkC);
+			var head = textBlock(lines, DISPLAY, 760, 240, { justify: true, leading: 0.1, track: -0.01 });
+			var placed = placeText(head, 0, H + 56, p.ink);
+			var date = dateItems(dateText, 0, placed.bottom + head.asc * 0.24, 560, head.asc * 0.38, dateColor(p));
+			return { items: [pageOut, page, header, headerSq].concat(rings, mp.items, np.items, placed.items, date.items), safe: SAFE };
+		},
+		// Megaphone: tell a friend. A megaphone with three sound lines above the stack.
+		megaphone: function (st, p, lines, dateText) {
+			var mc = contrast(p.accent, p.bg) >= 1.6 ? p.accent : p.ink;
+			var cone = { t: 'poly', color: mc, pts: [[-150, -50], [60, -150], [60, 150], [-150, 50]] };
+			var mouth = { t: 'box', box: [-200, -60, -140, 60], color: mc, radius: 14 };
+			var handle = { t: 'box', box: [-120, 40, -40, 140], color: mc, radius: 14 };
+			var rim = { t: 'box', box: [50, -160, 90, 160], color: p.ink, radius: 12 };
+			var snd = [1, 2, 3].map(function (i) { var pts = [], a, R = 110 + i * 60; for (a = -0.9; a <= 0.91; a += 0.15) { pts.push([80 + Math.cos(a) * R, Math.sin(a) * R]); } return lineItem(pts, 12, i === 2 ? mc : p.ink); });
+			var icon = [cone, mouth, handle, rim].concat(snd);
+			tiltAll(icon, -0.25);
+			var ib = bounds(icon);
+			shift(icon, -(ib[0] + ib[2]) / 2, 0);
+			var head = textBlock(lines, DISPLAY, 760, 250, { justify: true, leading: 0.1, track: -0.01 });
+			var placed = placeText(head, 0, ib[3] + 50, p.ink);
+			var date = dateItems(dateText, 0, placed.bottom + head.asc * 0.24, 560, head.asc * 0.38, dateColor(p));
+			return { items: icon.concat(placed.items, date.items), safe: SAFE };
+		},
+		// Done: a check in a disc, the way an app says a thing is finished, over the stack.
+		done: function (st, p, lines, dateText) {
+			var dc = contrast(p.accent, p.bg) >= 1.6 ? p.accent : p.ink, on = dc === p.accent ? p.onAccent : p.bg, R = 150;
+			var halo = { t: 'ring', cx: 0, cy: 0, r: R + 26, w: 6, color: dc };
+			var disc = { t: 'disc', cx: 0, cy: 0, r: R, color: dc };
+			var chk = lineItem([[-62, 4], [-18, 50], [66, -52]], 30, on);
+			var head = textBlock(lines, DISPLAY, 760, 250, { justify: true, leading: 0.1, track: -0.01 });
+			var placed = placeText(head, 0, R + 26 + 50, p.ink);
+			var date = dateItems(dateText, 0, placed.bottom + head.asc * 0.24, 560, head.asc * 0.38, dateColor(p));
+			return { items: [halo, disc, chk].concat(placed.items, date.items), safe: SAFE };
+		},
+		// Echo: VOTE repeated faintly across the card behind the stack.
+		echo: function (st, p, lines, dateText) {
+			var word = LANG === 'es' ? 'VOTA' : 'VOTE', row = [word, word, word, word, word, word, word, word].join('  '), pat = [], j;
+			var pb = textBlock([row], DISPLAY, 2600, 130, { track: 0.04 }), faint = shade(p.bg, luminance(p.bg) > 0.6 ? 0.07 : 0.1);
+			for (j = -6; j <= 6; j++) { var pp = placeText(pb, (j % 2) * 160, j * 175, faint); pp.items.forEach(function (it) { it.nofit = true; }); pat = pat.concat(pp.items); }
+			tiltAll(pat, -0.2);
+			pat.forEach(function (it) { it.pivot = [0, 0]; });
+			var head = textBlock(lines, DISPLAY, 740, 270, { justify: true, leading: 0.1, track: -0.01 });
+			var placed = placeText(head, 0, 0, p.ink);
+			outline(placed.items, p.bg, head.asc * 0.06, null, 0);
+			var date = dateItems(dateText, 0, placed.bottom + head.asc * 0.26, 560, head.asc * 0.38, p.onAccent, p.accent);
+			var content = placed.items.concat(date.items), cb = bounds(content);
+			shift(pat, 0, (cb[1] + cb[3]) / 2);
+			return { items: pat.concat(content), safe: SAFE };
+		},
+		// Pixel check: an 8-bit check mark over the stack, the date tracked wide.
+		pixelcheck: function (st, p, lines, dateText) {
+			var cell = 22, cols = 16, rows = 13, cc = contrast(p.accent, p.bg) >= 1.6 ? p.accent : p.ink;
+			var px = pixelate(function (g) { g.lineWidth = 3.2; g.lineCap = 'butt'; g.lineJoin = 'miter'; g.strokeStyle = '#000'; g.beginPath(); g.moveTo(2, 7); g.lineTo(6, 11); g.lineTo(14, 2); g.stroke(); }, cols, rows, -cols * cell / 2, 0, cell, cc, false);
+			var head = textBlock(lines, DISPLAY, 760, 250, { justify: true, leading: 0.14, track: 0.02 });
+			var placed = placeText(head, 0, rows * cell + 50, p.ink);
+			var dt = textBlock([dateText], DATE, 560, head.asc * 0.34, { track: 0.3 });
+			var date = placeText(dt, 0, placed.bottom + head.asc * 0.26, dateColor(p));
+			return { items: px.concat(placed.items, date.items), safe: SAFE };
+		},
+		// Chrome: the stack in polished metal with a dark edge, a chrome bar under it (the Y2K badge).
+		chrome: function (st, p, lines, dateText) {
+			var head = textBlock(lines, DISPLAY, 780, 300, { justify: true, leading: 0.14, track: 0.01 });
+			var placed = placeText(head, 0, 0, p.ink);
+			var stops = [[0, '#F7F9FC'], [0.42, '#BCC6D3'], [0.5, '#4F5D6E'], [0.56, '#EEF2F6'], [0.8, '#9AA7B6'], [1, '#F2F5F8']];
+			placed.items.forEach(function (it) { var b = it.box, a = b[3] - b[1]; it.grad = { stops: stops, from: [0, b[1]], to: [0, b[1] + a] }; it.stroke = '#1A2230'; it.strokeWidth = a * 0.03; });
+			var by = placed.bottom + 24, bar = { t: 'box', box: [-390, by, 390, by + 16], color: '#BCC6D3', grad: { stops: stops, from: [0, by], to: [0, by + 16] } };
+			var dt = textBlock([dateText], DATE, 560, head.asc * 0.3, { track: 0.2 });
+			var date = placeText(dt, 0, by + 16 + head.asc * 0.22, p.accent);
+			var b0 = placed.items[0].box, sp = sparkle(b0[0] + 14, b0[1] + 10, 30, '#FFFFFF');
+			return { items: placed.items.concat([bar], date.items, [sp]), safe: SAFE };
+		},
+		// Dusk: a gradient from the accent at the top into the background, the stack on the dark half.
+		dusk: function (st, p, lines, dateText) {
+			var head = textBlock(lines, DISPLAY, 760, 270, { justify: true, leading: 0.1, track: -0.01 });
+			var placed = placeText(head, 0, 0, p.ink);
+			outline(placed.items, p.bg, head.asc * 0.04, null, 0);
+			var date = dateItems(dateText, 0, placed.bottom + head.asc * 0.26, 560, head.asc * 0.38, dateColor(p));
+			var content = placed.items.concat(date.items), cb = bounds(content), cy = (cb[1] + cb[3]) / 2;
+			var field = { t: 'box', box: [-4000, -4000, 4000, 4000], color: p.bg, nofit: true,
+				grad: { stops: [[0, p.accent], [0.3, p.accent], [0.58, p.bg], [1, shade(p.bg, 0.12)]], from: [0, cy - 650], to: [0, cy + 650] } };
+			return { items: [field].concat(content), safe: SAFE };
+		},
+		// Broadcast: the stack on a CRT screen with scanlines, a bezel, rabbit ears and feet.
+		broadcast: function (st, p, lines, dateText) {
+			var W = 470, H = 300, bez = contrast(p.accent, p.bg) >= 1.6 ? p.accent : p.ink, scr = darkOf(p) === bez ? shade(bez, 0.5) : darkOf(p), on = lightOf(p);
+			var bezel = { t: 'box', box: [-W - 28, -H - 28, W + 28, H + 28], color: bez, radius: 70 };
+			var screen = { t: 'box', box: [-W, -H, W, H], color: scr, radius: 50 };
+			var head = textBlock(lines, DISPLAY, 760, lines.length > 1 ? 200 : 270, { justify: true, leading: 0.1, track: -0.01 });
+			var th = head.lines.reduce(function (s, l) { return s + l.asc; }, 0) + head.gap * (lines.length - 1);
+			var placed = placeText(head, 0, -th / 2, on);
+			var scan = [], y, sc = shade(scr, 0.09);
+			for (y = -H + 24; y < H - 10; y += 22) { scan.push({ t: 'box', box: [-W + 20, y, W - 20, y + 5], color: sc }); }
+			var ears = [lineItem([[-90, -H - 28], [-230, -H - 230]], 12, p.ink), lineItem([[90, -H - 28], [230, -H - 230]], 12, p.ink), { t: 'disc', cx: -230, cy: -H - 230, r: 18, color: p.ink }, { t: 'disc', cx: 230, cy: -H - 230, r: 18, color: p.ink }];
+			var feet = [{ t: 'box', box: [-W + 40, H + 28, -W + 120, H + 70], color: p.ink, radius: 8 }, { t: 'box', box: [W - 120, H + 28, W - 40, H + 70], color: p.ink, radius: 8 }];
+			var date = dateItems(dateText, 0, H + 100, 560, 76, dateColor(p));
+			return { items: [bezel, screen].concat(placed.items, scan, ears, feet, date.items), safe: SAFE };
 		}
 	};
 
@@ -1178,6 +1621,10 @@
 			pts = [[it.cx, it.cy]];
 		} else if (it.t === 'poly') {
 			pts = it.pts.slice();
+		} else if (it.t === 'line') {
+			var hw = (it.w || 0) / 2;
+			pts = [];
+			it.pts.forEach(function (q) { pts.push([q[0] - hw, q[1] - hw], [q[0] + hw, q[1] + hw]); });
 		} else {
 			var b = it.t === 'star' ? [it.cx - it.r, it.cy - it.r, it.cx + it.r, it.cy + it.r] : it.box;
 			pts = [[b[0], b[1]], [b[2], b[1]], [b[0], b[3]], [b[2], b[3]]];
@@ -1215,8 +1662,22 @@
 		ctx.save();
 		ctx.translate(it.x, it.y);
 		ctx.scale(it.k, it.k);
-		ctx.fill(shape(it.abbr).path);
+		if (it.stroke) {
+			// An outlined state (Neon, Blueprint): the stroke width is in card units, so undo the scale.
+			ctx.strokeStyle = it.color;
+			ctx.lineWidth = it.stroke / it.k;
+			ctx.lineJoin = 'round';
+			ctx.stroke(shape(it.abbr).path);
+		} else {
+			ctx.fill(shape(it.abbr).path);
+		}
 		ctx.restore();
+	}
+	// A linear gradient fill for any item (`grad: { stops: [[0, color], ...], from: [x, y], to: [x, y] }`).
+	function gradOf(ctx, it) {
+		var g = ctx.createLinearGradient(it.grad.from[0], it.grad.from[1], it.grad.to[0], it.grad.to[1]);
+		it.grad.stops.forEach(function (s) { g.addColorStop(s[0], s[1]); });
+		return g;
 	}
 
 	function drawItem(ctx, it) {
@@ -1232,9 +1693,32 @@
 			ctx.restore();
 			return;
 		}
-		ctx.fillStyle = it.color;
+		ctx.fillStyle = it.grad ? gradOf(ctx, it) : it.color;
+		if (it.glow) {
+			// Neon: a soft glow in the item's own color behind the stroke or fill (shadow blur is in device
+			// pixels, so it reads as a glow at every export size).
+			ctx.save();
+			ctx.shadowColor = it.glow.color || it.color;
+			ctx.shadowBlur = it.glow.w;
+			var flat2 = {}, k2;
+			for (k2 in it) { if (k2 !== 'glow') { flat2[k2] = it[k2]; } }
+			drawItem(ctx, flat2);
+			drawItem(ctx, flat2);
+			ctx.restore();
+			return;
+		}
 		if (it.t === 'shape') { drawShape(ctx, it); return; }
 		if (it.t === 'star') { drawStar(ctx, it.cx, it.cy, it.r); return; }
+		if (it.t === 'line') {
+			ctx.strokeStyle = it.grad ? gradOf(ctx, it) : it.color;
+			ctx.lineWidth = it.w;
+			ctx.lineCap = it.cap || 'round';
+			ctx.lineJoin = 'round';
+			ctx.beginPath();
+			it.pts.forEach(function (q, n) { if (n) { ctx.lineTo(q[0], q[1]); } else { ctx.moveTo(q[0], q[1]); } });
+			ctx.stroke();
+			return;
+		}
 		if (it.t === 'box') {
 			ctx.beginPath();
 			if (it.radius && ctx.roundRect) { ctx.roundRect(it.box[0], it.box[1], it.box[2] - it.box[0], it.box[3] - it.box[1], it.radius); } else { ctx.rect(it.box[0], it.box[1], it.box[2] - it.box[0], it.box[3] - it.box[1]); }
@@ -1311,7 +1795,8 @@
 			ctx.strokeStyle = it.stroke;
 			ctx.strokeText(it.s, it.x, it.base);
 		}
-		ctx.fillText(it.s, it.x, it.base);
+		if (it.grad) { ctx.fillStyle = gradOf(ctx, it); }
+		if (!it.hollow) { ctx.fillText(it.s, it.x, it.base); }
 	}
 
 	// Draw one card on a canvas `px` pixels wide: square, or a 9:16 Story with the same card in the
@@ -2130,7 +2615,7 @@
 	}
 
 	// For the QA script: draw any card and report how far its content reaches from the center.
-	window.VOTE_CARDS = { CT: CT, stateHeadline: stateHeadline, paletteFor: paletteFor, render: render, fit: fit, LAYOUTS: LAYOUTS, PALETTES: PALETTES, DESIGNS: DESIGNS, REVIEW: REVIEW, HEADLINES: HEADLINES, headlinesFor: headlinesFor, defaultHeadline: defaultHeadline, defaultDateLine: defaultDateLine, SAFE: SAFE,
+	window.VOTE_CARDS = { CT: CT, stateHeadline: stateHeadline, paletteFor: paletteFor, render: render, fit: fit, LAYOUTS: LAYOUTS, PALETTES: PALETTES, EXTRA_PALETTES: EXTRA_PALETTES, DESIGNS: DESIGNS, REVIEW: REVIEW, IDEAS: IDEAS, HEADLINES: HEADLINES, headlinesFor: headlinesFor, defaultHeadline: defaultHeadline, defaultDateLine: defaultDateLine, SAFE: SAFE,
 		setBrush: function (family, url) { return new FontFace(family, 'url(' + url + ')').load().then(function (l) { document.fonts.add(l); BRUSH = '"' + family + '"'; }); },
 		readyCount: function () { return Object.keys(readyBlobs).filter(function (k) { return readyBlobs[k] !== 'loading'; }).length; },
 		setScript: function (family, url) { return new FontFace(family, 'url(' + url + ')').load().then(function (l) { document.fonts.add(l); SCRIPT = '"' + family + '"'; }); } };
