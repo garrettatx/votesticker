@@ -286,3 +286,12 @@ look for a county or state fallback to name beside it. No change, no push.
   has Tilt. `docs/backlog.md` now says so, so a later pass doesn't rebuild them.
 - No site change, no push. Every loop table item is done; what's left are the dated checks (Oct 29 Search
   Console look and GA4 fields, the daily ended-state check, Nov 1, 2, 4, 5).
+
+### October 28, 12:40 p.m.: Preview Builds for October 29 to 31
+
+- Built with `VOTE_TODAY` set to Oct 29, 30 and 31 and read the titles. Maine keeps "Early Voting Oct 5–29"
+  through its last day and turns to "I Voted Early Stickers: Vote Nov 3" on Oct 30; Utah and Texas keep
+  their Oct 30 window through the 30th and turn on Oct 31. Spanish Maine and Texas turn on the same days.
+- Rebuilt for today afterward; facts and Spanish QA pass. No push.
+- Next: the Oct 29 dated checks (Search Console look for the Oct 24 pages, first GA4 read, AR and NE
+  VoterView, BigQuery).
