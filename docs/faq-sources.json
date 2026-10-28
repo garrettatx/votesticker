@@ -69,8 +69,9 @@
   "id": {
    "rule": "id_nonphoto",
    "summary": "You must show one photo ID with your name and address, such as an Arizona driver license or tribal ID, or two documents like a utility bill and bank statement.",
-   "source": "https://www.azleg.gov/ars/16/00579.htm",
-   "quote": "A valid form of identification that bears the photograph, name and address of the elector that reasonably appear to be the same as the name and address in the precinct register, including an Arizona driver license"
+   "source": "https://azsos.gov/elections/voters/voting-elections",
+   "quote": "A valid form of identification that bears the photograph, name and address of the elector that reasonably appear to be the same as the name and address in the precinct register, including an Arizona driver license",
+   "checked": "2026-10-28"
   },
   "registration": {
    "rule": "no",
@@ -83,7 +84,8 @@
    "rule": "limited",
    "summary": "Posting an image of your own ballot isn't a crime, but no one may take photos or videos within 75 feet of a polling place. Mail ballot photos are fine.",
    "source": "https://www.azleg.gov/ars/16/00515.htm",
-   "quote": "Notwithstanding section 16-1018, a person may not take photographs or videos while within the seventy-five foot limit."
+   "quote": "Notwithstanding section 16-1018, a person may not take photographs or videos while within the seventy-five foot limit.",
+   "checked": "2026-10-28"
   },
   "notes": "azsos.gov returned 403 to fetches, so all four answers rest on Arizona Revised Statutes at azleg.gov. Selfie: ARS 16-1018(4) bans showing ANOTHER voter's ballot and says a voter who posts an image of their own ballot consents to retransmittal; ARS 16-515(G) bans photos within the 75-foot limit. Without qualifying ID you vote a provisional or conditional provisional ballot (ARS 16-579). The registration date was computed from the 29-day rule (Nov 3 minus 29 days = Oct 5); azsos.gov could not be checked for a published date. Arizona does not observe daylight saving time, but the Navajo Nation does; the statute does not address time zones."
  },
@@ -449,7 +451,10 @@
    "source": "https://www.sos.nm.gov/voting-and-elections/voting-faqs/same-day-voter-registration-faq/",
    "quote": "Any eligible voter in New Mexico can register to vote or update their voter registration and then vote on the same day at their County Clerk’s office or at any polling location in their county on Election Day"
   },
-  "selfie": null,
+  "selfie": {
+   "source": "https://www.nmlegis.gov/Sessions/19%20Regular/final/HB0407.pdf",
+   "checked": "2026-10-28"
+  },
   "notes": "Same-day registration requires a physical ID (government, tribal, or school photo ID; plus a recent document if the address differs). The SOS voter registration FAQ still says late applications are held until after the election, which predates same-day registration; the SDR FAQ and the 2026 dates sheet both confirm Election Day SDR. The Oct 6 date comes from the 28-day rule and the SOS candidate guide summary; the dates PDF lost its date graphics in text extraction. Selfie: no official SOS or statute text found; news reports conflict (2016 'technically illegal', 2020 'allowed')."
  },
  "NY": {
@@ -699,7 +704,10 @@
    "source": "https://www.elections.il.gov/NewDocDisplay.aspx?%2fM0cs48zOKVZyk9eAbpEoxjoGz9b5YaGE%2bEuf7JVd2Tlx2Mybp2RbacEJVh848tnFOLoTd3G4cRsCxSj%2bcrL1MmhG9QsYgJ9XEPk5RBnskXetvBKqlqFjTKgx7qP9eeYvjYVE4PHXwpZnTFFeskkj9bQfLeonJZF",
    "quote": "Regular registration is open all year except the 27 day period prior to Election Day. Online registration is open until 16 days before Election Day. Grace period registration and voting begins the 27th day prior to Election Day"
   },
-  "selfie": null,
+  "selfie": {
+   "source": "https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=001000050K29-9",
+   "checked": "2026-10-28"
+  },
   "notes": "Dates are computed from the State Board's rules (closes 28 days before = Oct. 6; online until 16 days before = Oct. 18); no 2026 calendar page with the dates was fetched (the SBE calendar page returned almost no content). Grace period voting details: elections.il.gov grace period document (10 ILCS 5/4-50, 5-50, 6-100). Selfie: 10 ILCS 5/29-9 makes it a Class 4 felony to knowingly mark a ballot 'so that it can be observed by another person'; it does not mention photographs, and no State Board guidance on ballot photos was found, so this is left null rather than inferred. The first-time mail registrant ID rule is from the SBE 'Registering to Vote in Illinois' document."
  },
  "IN": {
@@ -938,8 +946,9 @@
   "id": {
    "rule": "photo_requested",
    "summary": "If you have a photo ID, such as a driver's license, U.S. passport, or student ID, you must show it. If you don't, you can sign an affidavit and vote.",
-   "source": "https://www.michigan.gov/sos/elections/voting/vote-on-election-day",
-   "quote": "Voters are not required to possess a photo ID to vote in Michigan. Voters without a photo ID may sign an affidavit and will be issued a ballot."
+   "source": "https://www.michigan.gov/sos/elections/voting/early-in-person-voting",
+   "quote": "Voters are not required to possess a photo ID to vote in Michigan. Voters without a photo ID may sign an affidavit and will be issued a ballot.",
+   "checked": "2026-10-28"
   },
   "registration": {
    "rule": "yes",
@@ -952,7 +961,8 @@
    "rule": "limited",
    "summary": "You may photograph your own ballot in the voting booth, but you can't hold it up for a selfie. Take selfies outside the polling place.",
    "source": "https://www.michigan.gov/sos/faqs/elections-and-campaign-finance/elections-and-voting",
-   "quote": "Voters can take a picture of their own ballot in the voting booth. For the privacy and security of neighboring voters, voters are prohibited from holding their ballot up for a selfie and/or photo."
+   "quote": "Voters can take a picture of their own ballot in the voting booth. For the privacy and security of neighboring voters, voters are prohibited from holding their ballot up for a selfie and/or photo.",
+   "checked": "2026-10-28"
   },
   "notes": "CONTRADICTION: the SOS 'Vote on Election Day' page lists 'Do take a selfie outside the voting area' and 'Do not take a photo within the voting area,' while the SOS Elections FAQ says voters can photograph their own ballot in the voting booth. 'Limited' tries to cover both; recheck before publishing. The Oct. 19 date is computed from the 15-day rule (Nov. 3 minus 15). Same-day registrants vote at the clerk's office (absentee ballot) or take the receipt to their polling place or an Election Day Vote Center."
  },
@@ -1188,14 +1198,16 @@
    "open": "Varies by county",
    "close": "8 p.m. Eastern / 7 p.m. Central",
    "summary": "Opening times vary by county. All polls close at 8 p.m. Eastern or 7 p.m. Central time. If you are in line at closing, you can vote. Check GoVoteTN for your polling place hours.",
-   "source": "https://sos.tn.gov/newsroom/press-releases/everything-voters-need-to-know-for-the-august-6-election-this-thursday",
-   "quote": "On Election Day, poll opening times vary by county. Voters should check their polling location and hours before heading to the polls. All polls close at 8 p.m. EDT / 7 p.m. CDT."
+   "source": "https://sos.tn.gov/elections/guides/how-to-early-vote-in-person",
+   "quote": "On Election Day, poll opening times vary by county. Voters should check their polling location and hours before heading to the polls. All polls close at 8 p.m. EDT / 7 p.m. CDT.",
+   "checked": "2026-10-28"
   },
   "id": {
    "rule": "photo_required",
    "summary": "You must show a federal or Tennessee photo ID, such as a Tennessee driver's license, U.S. passport, or military ID. Expired IDs work. College IDs do not.",
    "source": "https://sos.tn.gov/elections/voter-id-requirements",
-   "quote": "All voters must present a federal or Tennessee state ID containing the voter’s name and photograph when voting at the polls, whether voting early or on Election Day unless an exemption below applies."
+   "quote": "All voters must present a federal or Tennessee state ID containing the voter’s name and photograph when voting at the polls, whether voting early or on Election Day unless an exemption below applies.",
+   "checked": "2026-10-28"
   },
   "registration": {
    "rule": "no",

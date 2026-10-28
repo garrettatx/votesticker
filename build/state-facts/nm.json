@@ -19,6 +19,14 @@
   "sos.state.nm.us": {
    "en": "the New Mexico Secretary of State",
    "es": "la Secretaría de Estado de New Mexico"
+  },
+  "www.nmlegis.gov": {
+   "en": "New Mexico law (as passed by the Legislature)",
+   "es": "la ley de New Mexico (aprobada por la Legislatura)"
+  },
+  "www.berncoclerk.gov": {
+   "en": "the Bernalillo County Clerk",
+   "es": "la oficina de la secretaria del condado de Bernalillo (Bernalillo County Clerk)"
   }
  },
  "dates": {
@@ -42,12 +50,13 @@
    "es_after": "Las solicitudes de boleta por correo cerraron el 20 de octubre de 2026. Vota por anticipado en persona hasta el sábado 31 de octubre, o en un lugar de votación el Día de las Elecciones, de 7 a. m. a 7 p. m."
   },
   "mail_return": {
-   "en": "Your ballot must reach your County Clerk, or your precinct, by 7 p.m. on Tuesday, November 3, 2026. Return postage is prepaid, but leave enough time for it to arrive.",
-   "es": "Tu boleta debe llegar a la oficina de la secretaría de tu condado (County Clerk), o a tu precinto, a más tardar a las 7 p. m. del martes 3 de noviembre de 2026. El envío de regreso ya está pagado, pero deja tiempo suficiente para que llegue.",
-   "src": "https://www.sos.nm.gov/voting-and-elections/voting-faqs/absentee-voting-by-mail/",
-   "checked": "2026-10-21",
-   "quote": "Ballots must be returned to the county clerk or voter’s precinct by 7:00 p.m. on Election Day to be counted (Section 1-6-10 (B), NMSA 1978).",
-   "status": "verified"
+   "en": "Your ballot must reach your County Clerk by 7 p.m. on Tuesday, November 3, 2026. A postmark isn't enough. Mail it in the prepaid envelope, or hand it in at your County Clerk's office, any early voting or Election Day voting location, or an official drop box in your county.",
+   "es": "Tu boleta debe llegar a la oficina de la secretaría de tu condado (County Clerk) a más tardar a las 7 p. m. del martes 3 de noviembre de 2026. El matasellos no basta. Envíala por correo en el sobre con envío pagado, o entrégala en la oficina de la secretaría de tu condado, en cualquier lugar de votación anticipada o del Día de las Elecciones, o en un buzón de entrega oficial de tu condado.",
+   "src": "https://www.sos.nm.gov/voting-and-elections/voter-information-portal-nmvote-org/returning-your-absentee-ballot/",
+   "checked": "2026-10-28",
+   "quote": "All absentee ballots must include the required information and be received by 7:00PM on Election Day ... You may deliver it to your County Clerk's Office, any Early Voting or Election Day voting location ... any official election drop box in your county.",
+   "status": "verified",
+   "notes": "Replaces the absentee FAQ line 'returned to the county clerk or voter's precinct', which undersold the return options. Read with WebFetch Oct 28."
   },
   "early_hours": {
    "status": "missing",
@@ -60,8 +69,8 @@
  },
  "how": {
   "in_person": {
-   "en": "Vote early in person at your County Clerk's office starting October 6. More early voting sites open across the state on October 17, and early voting ends Saturday, October 31. Check your County Clerk for sites and hours.",
-   "es": "Vota por anticipado en persona en la oficina de la secretaría de tu condado (County Clerk) desde el 6 de octubre. El 17 de octubre abren más centros de votación anticipada en todo el estado, y la votación anticipada termina el sábado 31 de octubre. Consulta con la secretaría de tu condado los lugares y horarios.",
+   "en": "You can vote early in person through Saturday, October 31. County Clerk offices opened October 6, and more sites opened October 17. Check your County Clerk for sites and hours.",
+   "es": "Puedes votar por anticipado en persona hasta el sábado 31 de octubre. Las oficinas de la secretaría del condado (County Clerk) abrieron el 6 de octubre, y más centros abrieron el 17 de octubre. Consulta con la secretaría de tu condado los lugares y horarios.",
    "src": "https://www.sos.nm.gov/voting-and-elections/voting-faqs/early-voting-in-person/",
    "checked": "2026-10-21",
    "quote": "Early voting ends the Saturday before the election.",
@@ -71,11 +80,11 @@
    "es_after": "La votación anticipada terminó el sábado 31 de octubre. Consulta con la secretaría de tu condado (County Clerk) los lugares y horarios del Día de las Elecciones."
   },
   "first_time": {
-   "en": "Registering or updating your registration the same day you vote? Bring a photo ID from the federal government, a state, a tribe, nation or pueblo, or a school. If it doesn't show your current address, also bring a utility bill, bank statement, paycheck or similar document from the last 90 days with your name and address.",
-   "es": "¿Te vas a registrar o vas a actualizar tu registro el mismo día que votas? Lleva una identificación con foto del gobierno federal, de un estado, de una nación, tribu o pueblo indígena, o de una escuela. Si no muestra tu dirección actual, lleva también un recibo de servicios, un estado de cuenta bancario, un talón de pago o un documento parecido de los últimos 90 días con tu nombre y dirección.",
+   "en": "Registering or updating your registration the same day you vote? Bring a physical photo ID from the federal government, a state, a federally recognized tribe, nation or pueblo, or a school. It can be expired. If it doesn't show your registration address, also bring a utility bill, bank statement, government check, paycheck, or a school or government document from the last 90 days with your name and that address.",
+   "es": "¿Te vas a registrar o vas a actualizar tu registro el mismo día que votas? Lleva una identificación física con foto del gobierno federal, de un estado, de una nación, tribu o pueblo indígena reconocido por el gobierno federal, o de una escuela. Puede estar vencida. Si no muestra la dirección de tu registro, lleva también un recibo de servicios, un estado de cuenta bancario, un cheque del gobierno, un talón de pago o un documento de una escuela o del gobierno de los últimos 90 días con tu nombre y esa dirección.",
    "src": "https://www.sos.nm.gov/voting-and-elections/voting-faqs/same-day-voter-registration-faq/",
-   "checked": "2026-10-21",
-   "quote": "A physical form of identification that is issued by the federal government, a state government, a federally recognized Indian nation, tribe or pueblo or an educational institution and that:",
+   "checked": "2026-10-28",
+   "quote": "A physical form of identification that is issued by the federal government, a state government, a federally recognized Indian nation, tribe or pueblo or an educational institution and that: ... (3) need not contain an expiration date, and if it does, the expiration date is not required to be a date on or after the date of the election",
    "status": "verified"
   }
  },
@@ -109,22 +118,23 @@
    "status": "missing"
   },
   "without": {
-   "en": "Most voters don't show ID. You state your name, year of birth and registered address. If you registered by mail for the first time and didn't send ID, bring a photo ID or a document with your name and current address, or you'll vote a provisional ballot.",
-   "es": "La mayoría de los votantes no muestra identificación. Dices tu nombre, tu año de nacimiento y tu dirección registrada. Si te registraste por correo por primera vez y no mandaste identificación, lleva una identificación con foto o un documento con tu nombre y dirección actual, o votarás con una boleta provisional.",
+   "en": "Most voters don't show ID. You give your name, year of birth and registered address, out loud or in writing. If you registered by mail for the first time and didn't send ID, bring a photo ID or a document with your name and current address, or you'll vote a provisional ballot.",
+   "es": "La mayoría de los votantes no muestra identificación. Dices tu nombre, tu año de nacimiento y tu dirección registrada, en voz alta o por escrito. Si te registraste por correo por primera vez y no mandaste identificación, lleva una identificación con foto o un documento con tu nombre y dirección actual, o votarás con una boleta provisional.",
    "src": "https://www.sos.nm.gov/voting-and-elections/voting-faqs/voting/",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "Otherwise, you will be asked to provide a verbal or written statement of identification including your name, year of birth, and registered address.",
    "status": "verified"
   }
  },
  "mail": {
   "who": {
-   "en": "Any registered voter can ask for a mailed ballot. You can also join the permanent absentee list and get one for every statewide election.",
-   "es": "Cualquier votante registrado puede pedir una boleta por correo. También puedes entrar a la lista permanente de voto en ausencia y recibir una en cada elección estatal.",
+   "en": "Any registered voter can ask for a mailed ballot, and you can join the permanent absentee list for future statewide elections. Got a mailed ballot but want to vote in person? You can. Sign an affidavit at the voting site saying you didn't and won't vote the mailed ballot.",
+   "es": "Cualquier votante registrado puede pedir una boleta por correo, y puedes entrar a la lista permanente de voto en ausencia para futuras elecciones estatales. ¿Te llegó una boleta por correo pero quieres votar en persona? Puedes hacerlo. Firma en el lugar de votación una declaración jurada de que no votaste ni vas a votar con la boleta por correo.",
    "src": "https://www.sos.nm.gov/voting-and-elections/voting-faqs/absentee-voting-by-mail/",
-   "checked": "2026-10-21",
-   "quote": "Eligible voters can now opt-in to the permanent absentee list to automatically be sent an absentee (mail-in) ballot for each statewide election by their county clerk.",
-   "status": "verified"
+   "checked": "2026-10-28",
+   "quote": "Eligible voters can now opt-in to the permanent absentee list to automatically be sent an absentee (mail-in) ballot for each statewide election by their county clerk. ... Yes, but must execute an affidavit stating that the person did not and will not vote the mailed ballot that was issued.",
+   "status": "verified",
+   "notes": "In-person after a mailed ballot: SOS absentee FAQ citing 1-6-16(A). Under 2023 SB 180 the voter gets a regular replacement ballot where the county has real-time synchronization, otherwise a provisional ballot; not stated on the page because it varies by county."
   },
   "witness": {
    "status": "missing",
@@ -135,12 +145,13 @@
    "status": "missing"
   },
   "dropbox": {
-   "en": "Mail it back, postage prepaid, or hand it in at your County Clerk's office. Only you, a caregiver or an immediate family member (spouse, child, parent, brother or sister) can deliver it.",
-   "es": "Devuélvela por correo, con el envío ya pagado, o entrégala en la oficina de la secretaría de tu condado (County Clerk). Solo tú, la persona que te cuida o un familiar directo (cónyuge, hijo, padre o madre, hermano o hermana) pueden entregarla.",
-   "src": "https://www.sos.nm.gov/voting-and-elections/voting-faqs/voting/",
-   "checked": "2026-10-21",
-   "quote": "Pursuant to NMSA 1978, Section 1-6-10.1, a voter, caregiver to that voter or member of that voter’s “immediate family” defined as a person’s spouse, children, parents, brothers and sisters may deliver a voter’s absentee ballot to the county clerk in person or by mail.",
-   "status": "verified"
+   "en": "You, your caregiver, or a member of your immediate family or household can deliver your ballot. Immediate family means your spouse, children, parents, domestic partner, grandchildren, grandparents, siblings, or someone you have a continuing personal relationship with. Sign your ballot envelope first. Anyone who delivers it for you must sign the envelope too.",
+   "es": "Tú, la persona que te cuida o un familiar directo o alguien de tu hogar pueden entregar tu boleta. Familiar directo es tu cónyuge, tus hijos, tus padres, tu pareja de hecho, tus nietos, tus abuelos, tus hermanos o alguien con quien tienes una relación personal continua. Primero firma el sobre de tu boleta. Quien la entregue por ti también tiene que firmar el sobre.",
+   "src": "https://www.nmlegis.gov/Sessions/23%20Regular/final/SB0180.pdf",
+   "checked": "2026-10-28",
+   "quote": "A voter, caregiver to that voter or member of that voter's immediate family or household may deliver that voter's absentee ballot to the county clerk in person or by mail; provided that the voter has subscribed the official mailing envelope of the absentee ballot. B. As used in this section, \"immediate family\" means the spouse, children, parents, domestic partner, grandchildren, grandparents or siblings of a voter or a person with whom the voter has a continuing personal relationship.",
+   "status": "verified",
+   "notes": "NMSA 1-6-10.1 as amended by 2023 SB 180 (Section 31). The old fact quoted the SOS Voting FAQ, which still gives the pre-2023 list (spouse, children, parents, brothers and sisters); the SOS 'Returning Your Absentee Ballot' page has the same old list. The Los Alamos County Clerk's absentee page quotes the 2023 text. The helper signature line is from the SOS returning page: 'If any one of these authorized people returns the mailed ballot of the voter, they must sign the official return envelope.' nmonesource.com (current NMSA) blocked the Chrome extension, so the compiled text could not be read; no later amendment found."
   }
  },
  "polls_rules": {
@@ -149,8 +160,13 @@
    "notes": "The electioneering rule (NMSA 1-20-16, 100 feet) is on nmonesource.com, the state's official statutes host, which the validator does not accept; no sos.nm.gov page states it."
   },
   "phone": {
-   "status": "missing",
-   "notes": "No official phone or ballot photo rule found on sos.nm.gov; faq-sources.json also left the NM selfie answer null."
+   "en": "New Mexico law lets you share how you marked your own ballot, on your own choice and in any form or media. That covers posting a photo of your own ballot, mailed or at the polls. Inside the polling place, don't show your marked ballot to anyone in a way that reveals your votes, and no one may ask to see it. For any other photo inside, ask a poll worker first.",
+   "es": "La ley de New Mexico te permite compartir cómo marcaste tu propia boleta, si así lo decides y en cualquier forma o medio. Eso incluye publicar una foto de tu propia boleta, sea por correo o en el lugar de votación. Dentro del lugar de votación, no le muestres tu boleta marcada a nadie de forma que se vean tus votos, y nadie puede pedirte que se la enseñes. Para cualquier otra foto adentro, pregunta antes a un trabajador electoral.",
+   "src": "https://www.nmlegis.gov/Sessions/19%20Regular/final/HB0407.pdf",
+   "checked": "2026-10-28",
+   "quote": "A voter may, on the voter's own initiative and using whatever form of communication or media chosen by the voter, voluntarily communicate any information regarding: ... (3) any other information regarding the manner in which a voter marked a paper ballot in an election. B. No person shall solicit a voter to show the voter's marked paper ballot",
+   "status": "verified",
+   "notes": "NMSA 1-12-59 as amended by 2019 HB 407 (Section 116). Same bill, Section 115, 1-12-57: after marking, the voter 'shall not show it to any person in the polling place in such a way as to reveal its contents'. 'Photo' is our reading of 'whatever form of communication or media'; no SOS page addresses ballot photos. Current compiled NMSA (nmonesource.com) could not be read to confirm no later amendment; 2023 SB 180 does not touch 1-12-57 or 1-12-59."
   },
   "line": {
    "en": "If you're in line when the polls close, stay in line. You can still vote.",
@@ -163,16 +179,17 @@
  },
  "sticker": {
   "tradition": {
-   "en": "In Santa Fe County, students design the I Voted sticker. The county clerk's 2026 contest closed September 8, and the three winning designs are being printed for voters this election.",
-   "es": "En el condado de Santa Fe, los estudiantes diseñan el sticker de \"I Voted\". El concurso 2026 de la secretaría del condado cerró el 8 de septiembre, y los tres diseños ganadores se imprimen para los votantes en esta elección.",
-   "src": "https://www.santafecountynm.gov/clerk/community-outreach/i-voted-sticker-contest",
-   "checked": "2026-10-21",
-   "quote": "The winning 3 designs will be printed and shared with voters during this election cycle.",
-   "status": "verified"
+   "en": "In Bernalillo County, students drew this year's I Voted stickers. The County Clerk and Albuquerque Public Schools asked K to 12 students for art on the theme \"Voting Is Your Superpower.\" Out of 500 entries, 12 designs were picked, from elementary, middle and high school. They're the official stickers handed out across the county for the November 3 election.",
+   "es": "En el condado de Bernalillo, estudiantes dibujaron los stickers de I Voted de este año. La secretaría del condado (County Clerk) y Albuquerque Public Schools pidieron a estudiantes de kínder a 12.º grado arte con el tema \"Voting Is Your Superpower\" (votar es tu superpoder). De 500 propuestas, se eligieron 12 diseños de primaria, secundaria y preparatoria. Son los stickers oficiales que se reparten en todo el condado para la elección del 3 de noviembre.",
+   "src": "https://www.berncoclerk.gov/2026/08/24/aps-student-designs-selected-for-2026-i-voted-stickers/",
+   "checked": "2026-10-28",
+   "quote": "The contest drew 500 submissions from APS students in grades K–12, with original artwork inspired by the theme \"Voting Is Your Superpower.\" Twelve designs were selected, with four winners from each grade division. ... The twelve winning designs will serve as the official \"I Voted\" stickers for the 2026 General Election and will be distributed to voters throughout Bernalillo County.",
+   "status": "verified",
+   "notes": "Read with curl (browser UA) Oct 28; same text on bernco.gov/blog/2026/08/24/. The release names all 12 student artists with surnames; none are used here. Replaces the Santa Fe County story (santafecountynm.gov/clerk/community-outreach/i-voted-sticker-contest, 'The winning 3 designs will be printed and shared with voters during this election cycle', checked Oct 21), which is still true but no winners announcement was found and its gallery is labeled 2025."
   },
   "early": {
-   "en": "In Los Alamos County, yes. The county's 2026 student contest has an \"I Voted Early\" design along with \"I Voted\" and \"Future Voter,\" and the winners go to every county voting location this year.",
-   "es": "En el condado de Los Alamos, sí. El concurso estudiantil 2026 del condado tiene un diseño de \"I Voted Early\", además de \"I Voted\" y \"Future Voter\", y los ganadores se entregan en todos los lugares de votación del condado este año.",
+   "en": "In Los Alamos County, yes. The county's 2026 student contest included an \"I Voted Early\" sticker along with \"I Voted\" and \"Future Voter.\" The county said the winners would be handed out at every county voting location this year.",
+   "es": "En el condado de Los Alamos, sí. El concurso estudiantil 2026 del condado incluyó un sticker de \"I Voted Early\", además de \"I Voted\" y \"Future Voter\". El condado dijo que los ganadores se entregarían en todos sus lugares de votación este año.",
    "src": "https://www.losalamosnm.gov/Home/Tabs/Whats-Happening/2026-Vote-Sticker-Contest-WH",
    "checked": "2026-10-24",
    "quote": "will be printed and distributed as official stickers at all Los Alamos County voting locations for the 2026 elections",
@@ -181,20 +198,29 @@
  },
  "faq": {
   "provisional": {
-   "en": "You get a provisional ballot if your name isn't on the roster at your polling place, or if you're a first-time voter who registered by mail and doesn't bring the required ID. Check its status after the election in the state's provisional ballot lookup.",
-   "es": "Te dan una boleta provisional si tu nombre no está en la lista de tu lugar de votación, o si votas por primera vez, te registraste por correo y no llevas la identificación requerida. Revisa su estado después de la elección en el buscador oficial de boletas provisionales del estado.",
+   "en": "You get a provisional ballot if your name isn't on the roster at your polling place, or if you're a first-time voter who registered by mail and doesn't bring the required ID. After the election, look it up in the state's provisional ballot lookup to see whether it counted.",
+   "es": "Te dan una boleta provisional si tu nombre no está en la lista de tu lugar de votación, o si votas por primera vez, te registraste por correo y no llevas la identificación requerida. Después de la elección, búscala en el buscador oficial de boletas provisionales del estado para ver si contó.",
    "src": "https://www.sos.nm.gov/voting-and-elections/voting-faqs/provisional-voting/",
-   "checked": "2026-10-21",
-   "quote": "You will be issued a provisional ballot if your name does not appear on the roster at your polling place or if you are a first time voter who registered by mail and do not provide the required identification.",
+   "checked": "2026-10-28",
+   "quote": "You will be issued a provisional ballot if your name does not appear on the roster at your polling place or if you are a first time voter who registered by mail and do not provide the required identification. ... You can check the status of your provisional ballot after the election here.",
    "status": "verified"
   },
   "track": {
-   "en": "Check the status of your absentee application and ballot with the Secretary of State's ballot tracker, or contact your County Clerk's office.",
-   "es": "Revisa el estado de tu solicitud y de tu boleta de voto en ausencia en el buscador oficial de la Secretaría de Estado para seguir tu boleta (Track My Ballot), o comunícate con la oficina de la secretaría de tu condado.",
+   "en": "Check your absentee application and ballot with the Secretary of State's ballot tracker, or call your County Clerk's office.",
+   "es": "Revisa tu solicitud y tu boleta de voto en ausencia en el buscador oficial de la Secretaría de Estado para seguir tu boleta (Track My Ballot), o llama a la oficina de la secretaría de tu condado.",
    "src": "https://www.sos.nm.gov/voting-and-elections/voting-faqs/absentee-voting-by-mail/",
    "checked": "2026-10-21",
    "quote": "To check the status of your Absentee Application, go HERE or contact your County Clerk’s Office .",
    "status": "verified"
+  },
+  "late_mail": {
+   "en": "It's getting close. Your ballot has to reach your County Clerk by 7 p.m. on November 3, and a postmark doesn't count. Instead of mailing it, you can hand it in at your County Clerk's office, any early voting or Election Day voting location, or an official drop box in your county.",
+   "es": "Ya queda poco tiempo. Tu boleta tiene que llegar a la oficina de la secretaría de tu condado (County Clerk) a más tardar a las 7 p. m. del 3 de noviembre, y el matasellos no cuenta. En vez de enviarla por correo, puedes entregarla en la oficina de la secretaría de tu condado, en cualquier lugar de votación anticipada o del Día de las Elecciones, o en un buzón de entrega oficial de tu condado.",
+   "src": "https://www.sos.nm.gov/voting-and-elections/voter-information-portal-nmvote-org/returning-your-absentee-ballot/",
+   "checked": "2026-10-28",
+   "quote": "All absentee ballots must include the required information and be received by 7:00PM on Election Day ... You may deliver it to your County Clerk's Office, any Early Voting or Election Day voting location ... any official election drop box in your county.",
+   "status": "verified",
+   "notes": "'Postmark doesn't count' follows from the receipt rule; the Los Alamos County Clerk page says so outright."
   }
  },
  "notes": "Read October 21, 2026 with curl on sos.nm.gov (Voting FAQ, Same Day Voter Registration FAQ, Absentee Voting by Mail, Early Voting in Person, Provisional Voting) and the 2026 Important General Election Dates PDF (read through WebFetch, which kept the file in the session's tool-results; its text layer drops the dates, the page image shows them: OCT 6, OCT 17, OCT 20, OCT 31, NOV 3). Weekdays come from the calendar. Sticker from the Santa Fe County Clerk's contest page (county program, no statewide sticker found). VALIDATOR HOST: nmonesource.com (New Mexico's official statute site, NMSA 1978) is not in OFFICIAL or ALLOW_HOSTS, so the electioneering distance (1-20-16), the line-at-closing rule and the cure statute were not cited; polls_rules.gear and .line are missing. EARLY VOTING DATES FOR THE LEAD (states.js has NM unchecked): Tuesday, October 6 to Saturday, October 31, 2026, at County Clerk offices from October 6, with more sites from Saturday, October 17. Sources: (1) https://www.sos.nm.gov/wp-content/uploads/2026/06/2026-Important-General-Election-Dates.pdf: OCT 6 'Early voting begins at County Clerk Offices. In-person same day voter registration is available.'; OCT 17 'More early voting sites open across the state. Check with your County Clerk for a list of alternate early voting sites and their hours of operation.'; OCT 31 'Early Voting ends.' (2) https://www.sos.nm.gov/voting-and-elections/voting-faqs/early-voting-in-person/: 'You may go to your county clerk’s office beginning the 28th day before the election and vote.' 'Expanded early voting is available in many counties beginning on the third Saturday before the election.' 'Early voting ends the Saturday before the election.' Hours set by each county. Suggested states.js note: 'Vote early at your County Clerk's office; more sites from Oct. 17. Same-day registration available.' Not found: early voting hours, cure process, mail witness/signing rule, drop box rule on a state page (county pages list drop boxes), phone and line rules.",
