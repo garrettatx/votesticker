@@ -263,3 +263,15 @@ transient (200 on retry). Two were real 404s, confirmed with curl:
   (200, still lists absentee voting from September 18).
 Rebuilt; `qa_facts`, `qa_es`, `qa_seo --no-legacy` PASS. Second push of the day.
 
+### October 28, 10:35 a.m.: Lookup Links Opened in Chrome
+
+The 403s from the 9:25 link check, re-read in Chrome for the lookups voters use on Election Day. Load fine:
+Arizona BallotTrax, Rhode Island Voter Information Center, New York Poll Site Search, Ohio voter lookup,
+ballot tracking and early voting locations, Iowa Voting at the Polls, Alaska Polling Place Locations, New
+Hampshire Absentee Ballots. Missouri (voter portal, How to Vote) shows a Cloudflare security check that a
+person passes; not bypassed, link kept. **Arkansas and Nebraska VoterView** (`voterview.ar-nova.org/voterview`,
+`votercheck.necvr.ne.gov/voterview/`) refuse the TLS connection from here, from Chrome and from WebFetch; no
+outage reported in a search. Both Secretary of State sites still link those exact addresses, so ours are
+right. Likely a block on VPN or data-center traffic, or a short outage. Re-check October 29; if still down,
+look for a county or state fallback to name beside it. No change, no push.
+
