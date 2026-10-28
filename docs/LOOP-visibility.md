@@ -63,3 +63,23 @@ save and event QA; official sources only; Spanish per `docs/spanish-style.md`. O
   All but DE and ME carry an official story (ND's "You Betcha I Voted," WV's eighth-grade winner, Montana's
   2026 design); titles name the state and its early voting or Election Day. Ahrefs: "[state] i voted sticker"
   is 0 a month for nine of them, KY 10, against Georgia's 60. The gap is demand, not content, so nothing changed.
+
+### October 28, Afternoon: Search Console and GA4 Read (Garrett's Ask)
+
+- **Search Console, Oct 21 to 28 against Oct 14 to 20:** about 8,800 impressions and 1,010 clicks (11.5%
+  CTR, average position 5.3), up from roughly 1,700 impressions. Daily impressions went 838 (Oct 21) to 2,105
+  (Oct 27). 75% mobile.
+- **CTR follows position, not the title.** Every state title uses the same pattern; Maryland (3.4) gets
+  21%, New Jersey (3.0) 29%, Texas (6.0) 5%. Texas's own queries sit at 6 to 8 with almost no clicks ("i voted
+  sticker texas" 44 impressions, 0 clicks, 7.8). No title changes: the early-voting titles flip on their
+  own dates this week, and a change now would muddy the Oct 24 measurement.
+- **"i voted early sticker"** (256 impressions) is still split over five pages, Texas 75 at 7.1, home 27 at
+  7.2. The home link line (item 2) went live Oct 26; read it in the Nov 2 Monday pass.
+- **"i voted stickers by state"** and its variants (113 impressions) land on the home page at about 6. Right page.
+- **GA4, Oct 21 to 28:** 1,282 sessions, 80% organic search. 154 sticker_save, 79 sticker_save_cancel.
+  Direct is 204 sessions at 18% engaged (likely app link previews or bots); home landing 205 sessions at
+  39% engaged, the lowest of the top pages.
+- **iPhone cancels (BigQuery, Oct 27):** 18 iOS Safari sessions closed the share sheet; 2 saved afterward.
+  iOS had 14 share-sheet saves that day, so about half of iPhone share attempts end in a cancel. One day,
+  small numbers; read Oct 28 when it lands. Candidate fix: after a cancel, a one-line hint under the Save
+  button pointing to Save Image in the menu or press and hold.
