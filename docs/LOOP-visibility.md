@@ -83,3 +83,25 @@ save and event QA; official sources only; Spanish per `docs/spanish-style.md`. O
   iOS had 14 share-sheet saves that day, so about half of iPhone share attempts end in a cancel. One day,
   small numbers; read Oct 28 when it lands. Candidate fix: after a cancel, a one-line hint under the Save
   button pointing to Save Image in the menu or press and hold.
+
+### October 28, Evening: Ten Lowest-Impression State Pages (Perplexity Leads, Official Verification)
+
+- The ten state pages with the fewest impressions Oct 21 to 28: ND 2, NH 8, KY 8, WY 10, SD 11, WV 16, DE 24,
+  VT 28, MT 31, RI 32. Most rank on page one already; demand is small, so the work was accuracy and usefulness.
+- Method: one Perplexity prompt per state, run in Garrett's Chrome (`docs/research/low-pages-20261028/`,
+  template and saved answers). Three tabs in parallel worked. Every claim was then checked against the state
+  election office, statute, regulation, court ruling or county source before any page changed. Perplexity
+  was wrong or out of date on several points (KY ID list from the old primary guide; PHP warnings and a
+  "Nov. 38 days away" countdown read from an older cached copy).
+- Shipped (push 3 of Oct 28): KY sticker winner, ballot selfie rule (31 KAR 4:170), excused in-person dates;
+  NH Nov 2 hand-delivery deadline, selfie (Rideout v. Gardner), sticker winners by town; WY registration
+  Oct 19; SD mail request and photo answer, sticker winners; WV no-ID vouching, mail return timing; ND seven
+  early-voting counties; DE ID is not photo ID, district 36-01 polling place move; VT mail return per
+  17 V.S.A. 2543, sticker winners; MT late registration through Election Day, selfie opinion; RI no-ID in
+  early voting, emergency mail ballots, Cranston stickers. Students by first name only.
+- Follow-ups: (1) the "Early Voting Through Nov 2" title and description for states whose dates vary by county
+  (ND and seven others) should say dates vary; template change in EN and ES. (2) "ID: Yes" is the first word
+  of the FAQ id answer; check AK, AZ, IA, ND, OK, WY for affidavit routes like Delaware's. (3) Ballot photo
+  rules: poll worker manuals and ethics opinions settle questions voter pages skip; fill missing
+  `polls_rules.phone` facts from them. (4) Emergency mail ballot routes after the request deadline (MT, RI)
+  may exist elsewhere. (5) Read these ten pages' queries again Nov 11, 14 days from the recrawl.
