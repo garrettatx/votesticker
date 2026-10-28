@@ -498,15 +498,15 @@ function vote_guide( $st ) {
 	$rows = array(); $srcs = array();
 	$add = function ( $label, $f, $extra = '' ) use ( &$rows, &$srcs ) { if ( $f ) { $rows[] = '<tr><th scope="row">' . vote_e( t( $label ) ) . '</th><td>' . vote_e( $f['text'] ) . $extra . '</td></tr>'; $srcs[] = $f['src']; } };
 	$loc = vote_fact( $st, 'where.locator_url' );
-	$add( 'Register to vote by', vote_fact( $st, 'dates.reg_deadline' ), $loc ? ' <a href="' . vote_e( $loc ) . '" target="_blank" rel="noopener">' . vote_e( t( 'Already registered? Check here' ) ) . '</a>.' : '' );
+	$add( 'Voter registration', vote_fact( $st, 'dates.reg_deadline' ), $loc ? ' <a href="' . vote_e( $loc ) . '" target="_blank" rel="noopener">' . vote_e( t( 'Check your registration status' ) ) . '</a>.' : '' );
 	if ( vote_verified( $st ) && in_array( $st['kind'], array( 'in-person', 'ended' ), true ) && ! empty( $st['start'] ) ) {
 		$rows[] = '<tr><th scope="row">' . vote_e( t( 'ended' === $st['kind'] && 'post' !== vote_phase() ? 'Early voting (ended)' : 'Early voting' ) ) . '</th><td>' . vote_e( vote_es() ? 'Del ' . vote_day( $st['start'] ) . ' al ' . vote_day( $st['end'] ) . ' de 2026.' : vote_day( $st['start'] ) . ' to ' . vote_day( $st['end'] ) . ', 2026.' ) . '</td></tr>';
 		$srcs[] = $st['sourceUrl'] ?? $st['officialUrl'];
 	}
 	$add( 'Early voting hours', vote_fact( $st, 'dates.early_hours' ) );
-	$add( 'Request a mail ballot by', vote_fact( $st, 'dates.mail_request' ) );
-	if ( 'mail' !== ( $st['kind'] ?? '' ) ) { $add( 'Return a mail ballot by', vote_fact( $st, 'dates.mail_return' ) ); }  // mail states lead the summary box with it
-	$add( 'Fix a problem with a mail ballot by', vote_fact( $st, 'dates.cure' ) );
+	$add( 'Mail ballot requests', vote_fact( $st, 'dates.mail_request' ) );
+	if ( 'mail' !== ( $st['kind'] ?? '' ) ) { $add( 'Mail ballot return', vote_fact( $st, 'dates.mail_return' ) ); }  // mail states lead the summary box with it
+	$add( 'Fixing a mail ballot problem', vote_fact( $st, 'dates.cure' ) );
 	$rows[] = '<tr><th scope="row">' . vote_e( t( 'Election Day' ) ) . '</th><td>' . vote_e( vote_es() ? 'Martes 3 de noviembre de 2026.' : 'Tuesday, November 3, 2026.' ) . '</td></tr>';
 	if ( count( $rows ) > 1 && ! vote_between() ) {
 		$out .= '<section class="guide" aria-labelledby="dates-h">' . $h( 'dates-h', t( 'post' === vote_phase() ? 'November 3, 2026 Election: Past Voting Dates' : 'Key Dates for Nov. 3' ) )
