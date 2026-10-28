@@ -236,6 +236,10 @@
    "checked": "2026-10-23",
    "quote": "Stickers should be handed out after the ballot has been successfully tabulated.",
    "status": "verified"
+  },
+  "mail": {
+   "status": "missing",
+   "notes": "Checked 2026-10-28, no official statement found on stickers for absentee-by-mail voters: ncsbe.gov (Vote by Mail pages, BallotTrax tracker info; no virtual sticker mentioned), Mecklenburg (vote.mecknc.gov Absentee Voting page), Wake (wake.gov Absentee by Mail page; its contest sticker is 'I Voted Early'), Guilford (absentee page; 2026 Early Voting Officials handbook hands 'I Voted Early' stickers only to voters whose ballot was tabulated, and its absentee in-person return steps give none), Durham (2026 contest release, no mail mention), Union (2024 contest page). A 2020 Route Fifty article said Durham mail voters might get a sticker with the ballot; news only, not used."
   }
  },
  "faq": {

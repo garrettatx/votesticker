@@ -220,6 +220,10 @@
    "checked": "2026-10-23",
    "quote": "Don't forget to pick up an official \"I Voted\" sticker before you leave!",
    "status": "verified"
+  },
+  "mail": {
+   "status": "missing",
+   "notes": "Checked 2026-10-28, no official statement found on stickers for early mail or absentee voters: NYC311 general election guide (sticker only at poll sites), Ulster County contest page ('distributed to all voters at the November 3, 2026 General Election', no word on how mail voters get one), elections.ny.gov, Monroe, Erie and Westchester board sites (no sticker pages found), Genesee, Albany and Tioga contests (polling sites). WHEC news quotes the State Board saying counties may buy stickers at their discretion; news only, not used."
   }
  },
  "faq": {

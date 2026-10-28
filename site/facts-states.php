@@ -760,8 +760,8 @@ return array(
 			'checked' => '2026-10-25',
 		),
 		'sticker.mail' => array(
-			'en' => 'Look in your ballot packet. In San Diego County, the November 3 packet includes an "I Voted" sticker with the voting instructions and the two-card ballot. Other counties decide for themselves.',
-			'es' => 'Revisa el paquete de tu boleta. En el condado de San Diego, el paquete del 3 de noviembre incluye un sticker de "I Voted" junto con las instrucciones y la boleta de dos tarjetas. Los demás condados deciden por su cuenta.',
+			'en' => 'Look in your ballot packet. In San Diego County, the November 3 packet includes an "I Voted" sticker with the voting instructions and the two-card ballot. In another county? Check your own ballot packet.',
+			'es' => 'Revisa el paquete de tu boleta. En el condado de San Diego, el paquete del 3 de noviembre incluye un sticker de "I Voted" junto con las instrucciones y la boleta de dos tarjetas. ¿Vives en otro condado? Revisa el paquete de tu boleta.',
 			'src' => 'https://www.countynewscenter.com/county-mails-ballots-and-opens-more-than-150-ballot-drop-boxes-for-november-general-election/',
 			'checked' => '2026-10-24',
 		),
@@ -1608,10 +1608,16 @@ return array(
 			'checked' => '2026-10-21',
 		),
 		'sticker.early' => array(
-			'en' => 'Each county picks its own sticker. In Clay County, the winning design from the county\'s contest is handed out during early voting and on Election Day in 2026.',
-			'es' => 'Cada condado elige su propio sticker. En el condado de Clay, el diseño ganador del concurso del condado se entrega durante la votación anticipada y el Día de las Elecciones en 2026.',
+			'en' => 'In Clay County, yes. The winning design from the county\'s student sticker contest is handed out during early voting and on Election Day in 2026.',
+			'es' => 'En el condado de Clay, sí. El diseño ganador del concurso de stickers del condado se entrega durante la votación anticipada y el Día de las Elecciones en 2026.',
 			'src' => 'https://clayelections.gov/your-elections-office/i-voted-sticker-contest/',
 			'checked' => '2026-10-23',
+		),
+		'sticker.mail' => array(
+			'en' => 'In Sarasota County, yes. The Supervisor of Elections says anyone who votes by mail will be offered the county\'s 2026 "I Voted" sticker, the pink flamingo design. Ask the Supervisor of Elections office how to get yours.',
+			'es' => 'En el condado de Sarasota, sí. El Supervisor de Elecciones (Supervisor of Elections) dice que a todo el que vote por correo se le ofrecerá el sticker de "I Voted" de 2026 del condado, el del flamenco rosa. Pregunta en la oficina del Supervisor de Elecciones cómo conseguir el tuyo.',
+			'src' => 'https://www.sarasotavotes.gov/CivicAlerts.aspx?AID=31',
+			'checked' => '2026-10-28',
 		),
 		'election_day.hours' => array(
 			'en' => 'Polling places are open 7 a.m. to 7 p.m. local time.',
@@ -6158,8 +6164,8 @@ return array(
 			'checked' => '2026-10-21',
 		),
 		'sticker.mail' => array(
-			'en' => 'In Multnomah County, sign up for ballot tracking at BallotTrax and you get a virtual "I Voted" sticker to share once your ballot is in. Other counties decide for themselves.',
-			'es' => 'En el condado de Multnomah, si te inscribes para rastrear tu boleta en BallotTrax, recibes un sticker virtual de "I Voted" para compartir cuando tu boleta llegue. Los demás condados deciden por su cuenta.',
+			'en' => 'In Multnomah County, sign up for ballot tracking at BallotTrax and you get a virtual "I Voted" sticker to share once your ballot is in. In another county? Ask your county elections office.',
+			'es' => 'En el condado de Multnomah, si te inscribes para rastrear tu boleta en BallotTrax, recibes un sticker virtual de "I Voted" para compartir cuando tu boleta llegue. ¿Vives en otro condado? Pregunta en la oficina electoral de tu condado.',
 			'src' => 'https://multco.us/news/oct-22-2026-all-registered-voters-should-have-received-their-ballots',
 			'checked' => '2026-10-23',
 		),

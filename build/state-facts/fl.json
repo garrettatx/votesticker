@@ -215,11 +215,20 @@
    "status": "verified"
   },
   "early": {
-   "en": "Each county picks its own sticker. In Clay County, the winning design from the county's contest is handed out during early voting and on Election Day in 2026.",
-   "es": "Cada condado elige su propio sticker. En el condado de Clay, el diseño ganador del concurso del condado se entrega durante la votación anticipada y el Día de las Elecciones en 2026.",
+   "en": "In Clay County, yes. The winning design from the county's student sticker contest is handed out during early voting and on Election Day in 2026.",
+   "es": "En el condado de Clay, sí. El diseño ganador del concurso de stickers del condado se entrega durante la votación anticipada y el Día de las Elecciones en 2026.",
    "src": "https://clayelections.gov/your-elections-office/i-voted-sticker-contest/",
    "checked": "2026-10-23",
    "quote": "One original sticker design will be chosen and reproduced for distribution during Early Voting and Election Day for both the Primary and General Elections in 2026.",
+   "status": "verified"
+  },
+  "mail": {
+   "en": "In Sarasota County, yes. The Supervisor of Elections says anyone who votes by mail will be offered the county's 2026 \"I Voted\" sticker, the pink flamingo design. Ask the Supervisor of Elections office how to get yours.",
+   "es": "En el condado de Sarasota, sí. El Supervisor de Elecciones (Supervisor of Elections) dice que a todo el que vote por correo se le ofrecerá el sticker de \"I Voted\" de 2026 del condado, el del flamenco rosa. Pregunta en la oficina del Supervisor de Elecciones cómo conseguir el tuyo.",
+   "src": "https://www.sarasotavotes.gov/CivicAlerts.aspx?AID=31",
+   "checked": "2026-10-28",
+   "quote": "Anyone who votes by mail (absentee), early in-person or on election day will be offered an “I Voted” sticker.",
+   "notes": "Release posted April 9, 2026, read in Chrome (WebFetch gets a 403). It does not say how mail voters receive the sticker (packet, office or drop-off). Vote-by-Mail team number 941.861.8618 is from the same site's Notice of Elections and driver license posts. Checked Oct 28 with no official mail-sticker statement found: Orange (voteorangefl.gov; an undated older page said stickers went in vote-by-mail packets but it now 404s and the site search shows nothing current), Pinellas (votepinellas.gov/IVoted digital sticker page now 404s), Hillsborough (2026 contest sticker 'given to voters', no mail mention), Palm Beach (2026 contest stickers for polling locations), Miami-Dade and Broward (nothing found).",
    "status": "verified"
   }
  },
