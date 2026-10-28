@@ -113,3 +113,5 @@ leads in Chrome, official verification, copy made plain, two agents at a time.
 - Batch 2 (running): IA, ID, MS, NE, OK, DC, IN, ME, NV, CT.
 - Batch 3 (next): MO, HI, KS, AR, GA, WI, AL, VA, PA, MA. Re-pull Search Console before starting in case
   the order moved.
+- Batch 4 (after 3 wraps up): TN, NM, IL, AZ, MI, OH, CO, MN, SC, UT. Batch 5: AK, NJ, LA, MD, WA, OR, NC, NY,
+  FL, CA, TX (the strongest pages; same method, care not to disturb what ranks).
