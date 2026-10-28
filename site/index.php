@@ -1546,6 +1546,37 @@ $vote_ld = array(
 	</div>
 
 	<?php if ( ! $vote_st && ! $vote_404 ) : ?>
+	<?php
+	// Two topics searchers of "i voted sticker" look for (Clearscope competitors, October 28): official
+	// digital stickers from election offices, and sticker contests. Every entry links to the office's own
+	// page, read October 28; contest entries also link our state page. Minors by first name only.
+	$vote_li = function ( $text, $url, $label, $slug = '' ) {
+		return '<li>' . ( $slug ? '<a href="' . vote_pbase() . $slug . '/">' . vote_e( t( $label ) ) . '</a>: ' : '' ) . vote_e( t( $text ) ) . ' <a href="' . vote_e( $url ) . '" target="_blank" rel="noopener">' . vote_e( t( $slug ? 'Announcement' : $label ) ) . '</a></li>';
+	};
+	?>
+	<section class="why" aria-labelledby="official-h">
+		<h2 id="official-h" class="display-h"><?php echo vote_e( t( 'Official Digital Stickers From Election Offices' ) ); ?></h2>
+		<p><?php echo vote_e( t( 'A few election offices post their own I voted sticker for you to share online. If yours does, use it. These are ones we found:' ) ); ?></p>
+		<ul>
+			<?php echo $vote_li( "Washington's Secretary of State has eight I voted images to use as a profile picture.", 'https://www.sos.wa.gov/i-voted-downloadable-sticker', 'Get Washington’s sticker' ); ?>
+			<?php echo $vote_li( 'Multnomah County, Oregon, has a virtual sticker in 11 languages.', 'https://multco.us/info/virtual-i-voted-sticker', 'Get Multnomah County’s sticker' ); ?>
+			<?php echo $vote_li( 'Voting from another country? The Federal Voting Assistance Program has an "I Voted From" sticker for each country.', 'https://www.fvap.gov/IVotedSticker', 'Find your country' ); ?>
+		</ul>
+		<p><?php echo vote_e( t( "Don't see one for your state? Make your own above, sized for your profile picture." ) ); ?></p>
+	</section>
+	<section class="why" aria-labelledby="contest-h">
+		<h2 id="contest-h" class="display-h"><?php echo vote_e( t( 'I Voted Sticker Contests' ) ); ?></h2>
+		<p><?php echo vote_e( t( 'Many states and counties let students or voters design the sticker. People vote on the finalists, and the winner goes out at the polls. Some 2026 winners, from the offices that ran the contests:' ) ); ?></p>
+		<ul>
+			<?php echo $vote_li( 'Ryker, a student at Bush Elementary in Laurel County, drew a smiling sun over Kentucky pasture. Voters at the State Fair picked it.', 'https://www.kentucky.gov/Pages/Activity-stream.aspx?n=SOS&prId=569', 'Kentucky', 'kentucky' ); ?>
+			<?php echo $vote_li( 'Six fourth and fifth graders drew the stickers, chosen from more than 2,800 entries.', 'https://www.sos.nh.gov/sites/g/files/ehbemt561/files/inline-documents/sonh/11-13-25-secretary-announces-2025-i-voted-sticker-winners.pdf', 'New Hampshire', 'new-hampshire' ); ?>
+			<?php echo $vote_li( '"You Betcha I Voted" won the Secretary of State’s first sticker contest.', 'https://www.sos.nd.gov/elections/civic-engagement-initiative/i-voted-sticker-design-contest', 'North Dakota', 'north-dakota' ); ?>
+			<?php echo $vote_li( 'More than 1,100 eighth graders entered the state’s first contest.', 'https://sos.wv.gov/article/warner-announces-raleigh-countys-reese-childers-statewide-winner-west-virginias-first-ever', 'West Virginia', 'west-virginia' ); ?>
+			<?php echo $vote_li( 'Students designed this year’s stickers through the Civics in the 605 showcase.', 'https://sdsos.gov/about-the-office/assets/Press%20Releases/2026StickerPressRelease.pdf', 'South Dakota', 'south-dakota' ); ?>
+			<?php echo $vote_li( 'In Sedgwick County, a high school sophomore drew the I voted sticker and a third grader drew the first Future Voter sticker.', 'https://www.sedgwick.gov/communications/news-releases/sedgwick-county-election-office-announces-winners-of-2026-voting-sticker-contests/', 'Kansas', 'kansas' ); ?>
+		</ul>
+		<p><?php echo vote_e( t( 'Not every new sticker comes from a contest.' ) ); ?> <a href="<?php echo vote_pbase(); ?>georgia/"><?php echo vote_e( t( 'Georgia’s 2026 sticker' ) ); ?></a> <?php echo vote_e( t( 'uses art by Georgia artist Steve Penley.' ) ); ?> <?php echo vote_e( t( 'Running a contest at your election office?' ) ); ?> <a href="https://www.eac.gov/blogs/best-practices-i-voted-sticker-contests" target="_blank" rel="noopener"><?php echo vote_e( t( 'The U.S. Election Assistance Commission has tips' ) ); ?></a>.</p>
+	</section>
 	<section class="why" aria-labelledby="why-h">
 		<h2 id="why-h" class="display-h"><?php echo vote_e( t( 'Why This Exists' ) ); ?></h2>
 		<p><?php echo vote_e( t( 'The paper I voted sticker is a small way of saying you showed up. These days more people see your profile picture than your shirt, so Vote Sticker puts that reminder where people look.' ) ); ?> <?php echo vote_e( t( 'Garrett Digital in Austin built it.' ) ); ?> <?php echo vote_e( t( "It's free, nonpartisan, and sells nothing." ) ); ?> <a href="<?php echo vote_pbase(); ?>about/"><?php echo vote_e( t( 'More about Vote Sticker' ) ); ?></a></p>
