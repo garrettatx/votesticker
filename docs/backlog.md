@@ -32,8 +32,8 @@ measurement v2 (`docs/analytics.md`). Deferred, each to be judged against GA4 an
   internal links.
 - **State switcher:** a labeled native select with a Go button above the state H1, preserving the
   message. The finder near the bottom already does this by typing.
-- **Countdown hardening:** recompute "N days away" in the browser so a late daily build can't leave it a
-  day off.
+- **Countdown hardening:** already built; the countdown script in `site/index.php` recomputes "N days
+  away" every minute from the visitor's clock (checked October 28).
 - **Wording the reads suggested and we kept:** Save to Photos (iPhone) over "Save or Share Image";
   color swatches over a dropdown; the nudge "Send this page to someone who hasn't voted yet"; two hero
   countdowns while early voting is open.

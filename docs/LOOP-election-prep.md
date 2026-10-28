@@ -240,3 +240,13 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
 - **Oct 28, 6:30 a.m.:** BigQuery: no `analytics_559738937` dataset yet in `seo-command-ctr` (14 datasets, none
   analytics; read with the service account, gcloud user auth has lapsed). GA4 creates it on the first daily export,
   which can take up to a day after the Oct 27 link. Re-check this afternoon, then read the dataset's expiry.
+
+### October 28, 8:25 a.m.: Stale-Date Sweep
+
+No open item before the afternoon BigQuery check, so a sweep of today's local build. `qa_facts.py`: PASS,
+51 states, 102 pages. `qa_stale.py 2026-10-28 dist`: 27 sentences, all ranges still open (start date past,
+end date ahead) or past tense (Vermont "mailed them by October 1"); no deadline that has passed is still
+offered. Maine's in-person absentee window ends October 29, Utah and Texas October 30; the `early_over`
+switch handles each on the next morning's build. Backlog: countdown hardening was already built (the
+browser recomputes "N days away" every minute), marked done. No push.
+
