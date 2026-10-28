@@ -10,8 +10,9 @@
   "id": {
    "rule": "photo_required",
    "summary": "You must show a photo ID, such as an Alabama driver's license, U.S. passport, or free Photo Voter ID card. Otherwise, two poll workers can vouch for you.",
-   "source": "https://www.sos.alabama.gov/sites/default/files/election-2026/2026-VoterGuide.pdf",
-   "quote": "A voter who does not have a valid form of photo ID on Election Day can vote a regular ballot only if ... they are positively identified by at least two election officials."
+   "source": "https://www.sos.alabama.gov/node/3642",
+   "quote": "A voter who does not have a valid form of photo ID on Election Day can vote a regular ballot only if ... they are positively identified by at least two election officials.",
+   "checked": "2026-10-28"
   },
   "registration": {
    "rule": "no",
@@ -906,15 +907,17 @@
   "id": {
    "rule": "no_id",
    "summary": "Most voters don't need ID. Some first-time voters who registered by mail must show a photo ID or a document like a utility bill. Poll workers may also ask.",
-   "source": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVIII/Chapter54/Section76B",
-   "quote": "a person desiring to vote, who fails to present suitable written identification when so requested by an election officer, shall be permitted to vote, but that person's right to vote may be challenged under section 85."
+   "source": "https://www.sec.state.ma.us/divisions/elections/voting-information/identification-requirements.htm",
+   "quote": "a person desiring to vote, who fails to present suitable written identification when so requested by an election officer, shall be permitted to vote, but that person's right to vote may be challenged under section 85.",
+   "checked": "2026-10-28"
   },
   "registration": {
    "rule": "no",
    "deadline": "Saturday, October 24, 2026 at 5 p.m. (10th day before the election). Mailed forms postmarked by midnight that day count.",
    "summary": "The deadline to register is October 24, 2026, at 5 p.m., or by mail postmarked that day. Massachusetts does not offer same-day or Election Day registration.",
-   "source": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVIII/Chapter51/Section26",
-   "quote": "registration for the next election shall take place no later than 5:00 p.m. on the tenth day preceding such election"
+   "source": "https://www.sec.state.ma.us/divisions/elections/voter-resources/registering-to-vote.htm",
+   "quote": "registration for the next election shall take place no later than 5:00 p.m. on the tenth day preceding such election",
+   "checked": "2026-10-28"
   },
   "selfie": {
    "rule": "not_allowed",
@@ -1086,7 +1089,10 @@
    "source": "https://www.pa.gov/agencies/vote/elections/upcoming-elections",
    "quote": "Last day to register to vote : Oct. 19, 2026"
   },
-  "selfie": null,
+  "selfie": {
+   "source": "https://www.attorneygeneral.gov/for-the-public/voting-and-elections/",
+   "checked": "2026-10-28"
+  },
   "notes": "Accepted first-time IDs include a PA driver's license or PennDOT ID, student ID, current utility bill, bank statement, or paycheck (pa.gov new-voters page). Selfie: no Department of State FAQ or rules-at-the-polls text addresses ballot photos; Election Code text was not checked on an official site. Leave null unless verified."
  },
  "RI": {
@@ -1307,14 +1313,16 @@
    "rule": "yes",
    "deadline": "Register or update by Friday, October 23, 2026. After that, you can register in person and vote a provisional ballot through Election Day.",
    "summary": "Register by October 23, 2026. After that, you can still register in person and vote a provisional ballot during early voting or at your polling place on Election Day.",
-   "source": "https://www.elections.virginia.gov/casting-a-ballot/calendars-schedules/upcoming-elections.html",
-   "quote": "Voters may register and vote using a provisional ballot In-Person after October 23, 2026, through Election Day."
+   "source": "https://www.elections.virginia.gov/registration/same-day-voter-registration/",
+   "quote": "Voters may register and vote using a provisional ballot In-Person after October 23, 2026, through Election Day.",
+   "checked": "2026-10-28"
   },
   "selfie": {
    "rule": "allowed",
    "summary": "You may generally use phones and other electronic devices inside the polling place. Election officers can stop use that disrupts voting or tries to influence other voters.",
-   "source": "https://law.lis.virginia.gov/admincode/title1/agency20/chapter60/section30/",
-   "quote": "The use of electronic devices inside the polling place is generally permitted."
+   "source": "https://www.oag.state.va.us/files/Opinions/2016/16-038_Bell_Lind_issued.pdf",
+   "quote": "The use of electronic devices inside the polling place is generally permitted.",
+   "checked": "2026-10-28"
   },
   "notes": "Registration deadline for Nov 3, 2026 is listed as 10/23/2026 on ELECT's upcoming-elections page, later than the 22-day rule some older pages show (the same-day registration FAQ still mentions an 'October 24' deadline from a past year). Verify before publishing. Accepted IDs include non-photo documents like a utility bill or voter card (ELECT list not opened). Selfie: regulation 1VAC20-60-30 (amended 2016) allows devices in polling places but does not mention ballot photos specifically; a 2016 AG opinion reportedly said voters may photograph their own ballots (not opened on oag.state.va.us)."
  },
@@ -1401,8 +1409,9 @@
   "selfie": {
    "rule": "not_allowed",
    "summary": "State law makes it an offense to show your marked ballot to anyone, which covers sharing a ballot selfie.",
-   "source": "https://docs.legis.wisconsin.gov/statutes/statutes/12/13",
-   "quote": "Shows his or her marked ballot to any person or places a mark upon the ballot so it is identifiable as his or her ballot."
+   "source": "https://elections.wi.gov/media/39611/download",
+   "quote": "Shows his or her marked ballot to any person or places a mark upon the ballot so it is identifiable as his or her ballot.",
+   "checked": "2026-10-28"
   },
   "notes": "elections.wi.gov / bringit.wi.gov / myvote.wi.gov block curl; read in Chrome. Provisional-ballot follow-up (show ID to the clerk by 4 p.m. the Friday after the election) is general knowledge, not quoted; the summary says only 'must show ID afterward'. Accepted ID examples (driver's license, state ID, passport) are standard WI list items; the bringit page fetched mentions the driver license and free state ID. Selfie: Wis. Stat. 12.13(1)(f) listed under election fraud; WEC guidance on selfies not opened."
  },

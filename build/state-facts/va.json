@@ -15,6 +15,10 @@
   "www.roanokeva.gov": {
    "en": "the City of Roanoke",
    "es": "la ciudad de Roanoke"
+  },
+  "www.oag.state.va.us": {
+   "en": "the Virginia Attorney General",
+   "es": "la Fiscalía General de Virginia (Attorney General)"
   }
  },
  "dates": {
@@ -41,12 +45,13 @@
    "es_after": "Las solicitudes cerraron a las 5 p. m. del 23 de octubre de 2026. Todavía puedes votar en persona."
   },
   "mail_return": {
-   "en": "Bring it to your general registrar's office by 7 p.m. on Tuesday, November 3, or use a drop-off location in your locality. By mail, it must be postmarked on or before November 3 and reach your registrar by noon on the third day after the election.",
-   "es": "Llévala a la oficina de registro de tu localidad (general registrar) a más tardar a las 7 p. m. del martes 3 de noviembre, o usa un lugar de entrega de tu localidad. Por correo, debe tener matasellos del 3 de noviembre o antes y llegar a la oficina de registro a más tardar al mediodía del tercer día después de la elección.",
+   "en": "Bring it to your general registrar's office by 7 p.m. on Tuesday, November 3, or use a drop-off location in your locality. By mail, it must be postmarked on or before November 3 and reach your registrar by noon on Friday, November 6.",
+   "es": "Llévala a la oficina de registro de tu localidad (general registrar) a más tardar a las 7 p. m. del martes 3 de noviembre, o usa un lugar de entrega de tu localidad. Por correo, debe tener matasellos del 3 de noviembre o antes y llegar a la oficina de registro a más tardar al mediodía del viernes 6 de noviembre.",
    "src": "https://www.elections.virginia.gov/casting-a-ballot/absentee-voting/",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "If you are returning your ballot by mail, it must be postmarked on or before election day and received by your general registrar's office by noon on the third day following the election (In the event that that day is a holiday, the deadline is moved to the following business day).",
-   "status": "verified"
+   "status": "verified",
+   "notes": "Friday, November 6 is the third day after November 3 (not a holiday), computed from the quoted rule."
   },
   "early_hours": {
    "en": "Early voting ends at 5 p.m. on Saturday, October 31. Registrar offices are also open for early voting on Saturday, October 24 and Sunday, October 25. Ask your registrar for hours and satellite sites.",
@@ -167,12 +172,13 @@
   },
   "track_url": "https://ballot.elections.virginia.gov/voter/va/bt/track",
   "cure": {
-   "en": "Made a mistake on the envelope? If your ballot reaches the registrar by the Friday before Election Day, the registrar will tell you by mail or email within three days, and you can fix it until noon on the third day after the election.",
-   "es": "¿Cometiste un error en el sobre? Si tu boleta llega a la oficina de registro a más tardar el viernes antes del Día de las Elecciones, te avisarán por correo postal o electrónico dentro de tres días, y puedes corregirlo hasta el mediodía del tercer día después de la elección.",
+   "en": "Made a mistake on the envelope that would void your ballot? If your ballot reached the registrar by Friday, October 30, the registrar must tell you by mail or email within three days of finding the problem and explain how to fix it. You have until noon on Friday, November 6.",
+   "es": "¿Cometiste en el sobre un error que anularía tu boleta? Si tu boleta llegó a la oficina de registro a más tardar el viernes 30 de octubre, deben avisarte por correo postal o electrónico dentro de los tres días después de encontrar el problema y explicarte cómo corregirlo. Tienes hasta el mediodía del viernes 6 de noviembre.",
    "src": "https://law.lis.virginia.gov/vacode/title24.2/chapter7/section24.2-709.1/",
-   "checked": "2026-10-21",
-   "quote": "The voter shall be entitled to make such necessary corrections before noon on the third day after the election, and his ballot shall then be counted pursuant to the procedures set forth in this chapter if he is found to be entitled to vote.",
-   "status": "verified"
+   "checked": "2026-10-28",
+   "quote": "For any absentee ballot received by the Friday immediately preceding the day of the election, if the general registrar finds during the examination of the ballot envelope that the required voter affirmation was not correctly or completely filled out ... and such error or failure would render the ballot void by law ... Within three days of such finding, the registrar shall notify the voter in writing or by email of the error or failure and shall provide information to the voter on how to correct the issue so his ballot may be counted. The voter shall be entitled to make such necessary corrections before noon on the third day after the election",
+   "status": "verified",
+   "notes": "Version effective until January 1, 2027. October 30 and November 6 are computed from 'the Friday immediately preceding' and 'the third day after' November 3."
   },
   "dropbox": {
    "en": "Drop-off locations are set by each locality. The instructions in your ballot mailing list the ones near you.",
@@ -185,19 +191,20 @@
  },
  "polls_rules": {
   "gear": {
-   "en": "You can wear your campaign shirt, hat, button or sticker when you go in to vote. What's not allowed within 40 feet of a polling place entrance: hanging around, handing out campaign material or trying to sway anyone's vote.",
-   "es": "Puedes llevar tu camiseta, gorra, botón o sticker de campaña cuando entres a votar. Lo que no se permite a menos de 40 pies de la entrada de un lugar de votación: quedarte ahí, repartir material de campaña o tratar de influir en el voto de alguien.",
+   "en": "You can wear your campaign shirt, hat, button or sticker when you go in to vote. Within 40 feet of a polling place entrance, no one may loiter, hand out campaign material or try to sway anyone's vote.",
+   "es": "Puedes llevar tu camiseta, gorra, botón o sticker de campaña cuando entres a votar. A menos de 40 pies de la entrada de un lugar de votación, nadie puede merodear, repartir material de campaña ni tratar de influir en el voto de alguien.",
    "src": "https://law.lis.virginia.gov/vacode/title24.2/chapter6/section24.2-604/",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "The provisions of subsections A and C shall not be construed to prohibit a person who approaches or enters the polling place for the purpose of voting from wearing a shirt, hat, or other apparel on which a candidate's name or a political slogan appears or from having a sticker or button attached to his apparel on which a candidate's name or a political slogan appears.",
    "status": "verified"
   },
   "phone": {
-   "en": "You can use your phone inside the polling place. Election officers can stop phone use that slows down or disrupts voting, or that tries to sway another voter.",
-   "es": "Puedes usar tu teléfono dentro del lugar de votación. Los funcionarios electorales pueden detener el uso del teléfono si retrasa o interrumpe la votación, o si intenta influir en otro votante.",
-   "src": "https://law.lis.virginia.gov/admincode/title1/agency20/chapter60/section30/",
-   "checked": "2026-10-21",
-   "quote": "The use of electronic devices inside the polling place is generally permitted.",
+   "en": "You can use your phone inside the polling place. In a 2016 opinion, Virginia's Attorney General said state law doesn't ban photographing your own ballot, and voters may take photos in the polling place when it doesn't break election law. You can't use your phone to get voting help from someone outside. No official source covers photos of a mail ballot, so ask your general registrar if you're unsure.",
+   "es": "Puedes usar tu teléfono dentro del lugar de votación. En una opinión de 2016, la Fiscalía General (Attorney General) de Virginia dijo que la ley estatal no prohíbe tomarle foto a tu propia boleta, y que los votantes pueden tomar fotos en el lugar de votación siempre que no violen la ley electoral. No puedes usar tu teléfono para que alguien de afuera te ayude a votar. Ninguna fuente oficial habla de fotos de una boleta por correo, así que si tienes dudas, pregunta en la oficina de registro de tu localidad (general registrar).",
+   "src": "https://www.oag.state.va.us/files/Opinions/2016/16-038_Bell_Lind_issued.pdf",
+   "checked": "2026-10-28",
+   "quote": "these prohibitions do not otherwise constitute a prohibition on photography of one's own ballot. ... a voter is not permitted to use cameras or audio or visual recording devices inside the polling place to communicate with individuals outside the polling place in violation of § 24.2-1006 of the Code of Virginia. Additionally, it is my opinion that pursuant to the regulatory amendments adopted by the Board on June 28, 2016, voters shall be permitted to take photographs or pictures within the polling place, where doing so does not constitute a violation of Title 24.2 of the Code of Virginia.",
+   "notes": "Official opinion 16-038 (Sept 29, 2016, Attorney General Herring). It construed the June 2016 text of 1VAC20-60-30, which said voters may use cameras; the current text (read Oct 28 on law.lis.virginia.gov) says only that 'The use of electronic devices inside the polling place is generally permitted' and that officers may restrict use that hinders, delays or disrupts voting, solicits or influences a voter, or intimidates. No later opinion or ELECT guidance on ballot photos was found. The earlier copy (officers can stop disruptive phone use) came from the regulation; it was dropped here because the fact can carry one source.",
    "status": "verified"
   },
   "line": {
@@ -225,11 +232,12 @@
  },
  "faq": {
   "provisional": {
-   "en": "If you come without an acceptable ID and don't sign an ID Confirmation Statement, you vote a provisional ballot. It counts if your ID copy or signed statement reaches your local electoral board by noon on the Friday after the election. A Friday postmark isn't enough.",
-   "es": "Si llegas sin una identificación aceptada y no firmas una declaración de confirmación de identidad (ID Confirmation Statement), votas con una boleta provisional. Cuenta si la copia de tu identificación o la declaración firmada llega a la junta electoral de tu localidad (electoral board) a más tardar al mediodía del viernes después de la elección. El matasellos del viernes no basta.",
-   "src": "https://www.elections.virginia.gov/casting-a-ballot/in-person-voting/",
-   "checked": "2026-10-21",
-   "quote": "Please note that the copy of the ID or signed ID Confirmation Statement must be delivered to the electoral board by noon on the Friday following the election, or the provisional ballot cannot be counted.",
+   "en": "A provisional ballot is for voters who aren't on the list at their polling place, including anyone who registers after the October 23 deadline. Your local electoral board reviews it before it's counted, and you get a notice saying when and where the board decides. Voted one because you had no ID? Your ID copy or signed ID Confirmation Statement must reach the board by noon on Friday, November 6.",
+   "es": "Una boleta provisional es para votantes que no aparecen en la lista de su lugar de votación, incluida cualquier persona que se registra después de la fecha límite del 23 de octubre. La junta electoral de tu localidad (electoral board) la revisa antes de contarla, y te dan un aviso con la fecha, la hora y el lugar en que la junta decide. ¿Votaste con una porque no tenías identificación? La copia de tu identificación o tu declaración de confirmación de identidad (ID Confirmation Statement) firmada debe llegar a la junta a más tardar al mediodía del viernes 6 de noviembre.",
+   "src": "https://www.elections.virginia.gov/registration/same-day-voter-registration/",
+   "checked": "2026-10-28",
+   "quote": "Provisional ballots are used by voters who do not appear on the list of registered voters at their polling location. Provisional ballots are not processed by a vote counting machine at the time of voting, but rather are subject to approval by the local electoral board prior to the ballot being counted. ... After you vote, you will be given a notice with the date, time, and place where the local electoral board will make a decision regarding your provisional ballot.",
+   "notes": "The ID sentence rests on https://www.elections.virginia.gov/casting-a-ballot/in-person-voting/: 'the copy of the ID or signed ID Confirmation Statement must be delivered to the electoral board by noon on the Friday following the election, or the provisional ballot cannot be counted.' The same-day page still says 'after the October 24 deadline'; the election calendar says October 23, used here.",
    "status": "verified"
   },
   "line": {
@@ -249,7 +257,7 @@
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026 on elections.virginia.gov (curl worked) and law.lis.virginia.gov. Early voting dates in states.js (Sept. 18 to Oct. 31) match the upcoming-elections page: 'Friday, September 18, 2026 through 5:00 p.m., Saturday, October 31, 2026.' Code 24.2-709.1 has two versions on the page; the one 'Effective until January 1, 2027' (cure by noon on the third day after the election, for ballots received by the Friday before) is used; the 2027 version moves it to 5 p.m. on the Monday after. The mail return and cure deadlines are stated relative to the election; no official page states them as calendar dates, so none is computed. Campaign gear: Code 24.2-604(D) lets voters wear campaign apparel, buttons and stickers, so Virginia is the opposite of Texas and Georgia here. Witness: the envelope statement is required (24.2-707); an ELECT summary of 2023 law changes reportedly removed the witness signature, not read directly, so the file doesn't say 'no witness'. No sticker tradition on an official page.",
+ "notes": "Read October 21, 2026 on elections.virginia.gov (curl worked) and law.lis.virginia.gov. Early voting dates in states.js (Sept. 18 to Oct. 31) match the upcoming-elections page: 'Friday, September 18, 2026 through 5:00 p.m., Saturday, October 31, 2026.' Code 24.2-709.1 has two versions on the page; the one 'Effective until January 1, 2027' (cure by noon on the third day after the election, for ballots received by the Friday before) is used; the 2027 version moves it to 5 p.m. on the Monday after. The mail return and cure deadlines are stated relative to the election; no official page states them as calendar dates, so none is computed. Campaign gear: Code 24.2-604(D) lets voters wear campaign apparel, buttons and stickers, so Virginia is the opposite of Texas and Georgia here. Witness: the envelope statement is required (24.2-707); an ELECT summary of 2023 law changes reportedly removed the witness signature, not read directly, so the file doesn't say 'no witness'. No sticker tradition on an official page. October 28: Perplexity review. Ballot photo answer from AG opinion 16-038 (2016); see polls_rules.phone notes on the later regulation change. Same-day registration provisional ballots from the ELECT same-day page (where: registrar or satellite during early voting, own precinct on Election Day). Cure notice runs from when the registrar finds the problem (Code 24.2-709.1 C). Not added: the emergency absentee routes (ELECT absentee page: hospitalization, illness or death in the family, request by 2 p.m. Nov 2; unexpected obligation after noon Oct 31, apply and vote in person by 2 p.m. Nov 2), since no fact here has that page as its source; see the report.",
  "election_day": {
   "hours": {
    "en": "Polling places are open 6 a.m. to 7 p.m. local time.",

@@ -25,19 +25,19 @@
   "mail_request": {
    "en": "Your county's Absentee Election Manager must receive your absentee application by Tuesday, October 27, 2026, if you mail it, or by Thursday, October 29, 2026, if you bring it in person.",
    "es": "La oficina de voto en ausencia de tu condado (Absentee Election Manager) debe recibir tu solicitud a más tardar el martes 27 de octubre de 2026 si la mandas por correo, o el jueves 29 de octubre de 2026 si la llevas en persona.",
-   "src": "https://www.sos.alabama.gov/sites/default/files/election-2026/2026-VoterGuide.pdf",
-   "checked": "2026-10-21",
-   "quote": "The absentee ballot application must be returned to the Absentee Election Manager by U.S. Mail or by commercial carrier no later than the seventh day prior to the election; or returned in person by the voter no later than the fifth day prior to the election.",
+   "src": "https://www.sos.alabama.gov/alabama-votes/voter/absentee-voting",
+   "checked": "2026-10-28",
+   "quote": "The absentee ballot application must be received by the Absentee Election Manager by the 7th day prior to the election if delivered by mail and the 5th day prior to the election if delivered by hand. EMERGENCY ABSENTEE VOTING applications can be made after the absentee deadline but no later than 5 PM on the day before the election, if the voter: is required by an employer under unforeseen circumstances to be unavailable at the polls on the day of the election is a caregiver of a person who requires emergency treatment by licensed physician within five days before an election has a family member to the second degree of kinship by affinity or consanguinity die within five days before an election MEDICAL EMERGENCY ABSENTEE VOTING applications can be made by a voter who has a medical emergency requiring treatment from a licensed physician within 5 days of an election. During that 5 day period, the medical emergency absentee ballot application and the voted absentee ballot must be returned no later than noon on the day the election is held.",
    "status": "verified",
    "until": "2026-10-29",
-   "en_after": "Absentee applications closed October 29, 2026. Plan to vote at your polling place on Election Day, 7 a.m. to 7 p.m.",
-   "es_after": "Las solicitudes de voto en ausencia cerraron el 29 de octubre de 2026. Planea votar en tu lugar de votación el Día de las Elecciones, de 7 a. m. a 7 p. m."
+   "en_after": "Regular absentee applications closed October 29, 2026. An emergency in the last five days? If your employer unexpectedly needs you at work, a close family member dies, or someone you care for needs emergency treatment, you can apply for an emergency absentee ballot until 5 p.m. on Monday, November 2. If you need emergency medical treatment yourself, your application and ballot are due by noon on Election Day. Everyone else votes at their polling place, 7 a.m. to 7 p.m.",
+   "es_after": "Las solicitudes regulares de voto en ausencia cerraron el 29 de octubre de 2026. ¿Tuviste una emergencia en los últimos cinco días? Si tu empleador de repente te necesita en el trabajo, muere un familiar cercano o alguien a quien cuidas necesita tratamiento de emergencia, puedes solicitar una boleta de emergencia para votar en ausencia hasta las 5 p. m. del lunes 2 de noviembre. Si tú necesitas tratamiento médico de emergencia, tu solicitud y tu boleta deben entregarse a más tardar al mediodía del Día de las Elecciones. Todos los demás votan en su lugar de votación, de 7 a. m. a 7 p. m."
   },
   "mail_return": {
-   "en": "A mailed ballot must reach your county's Absentee Election Manager by noon on Tuesday, November 3. Bringing it yourself? Get it to that office by 5 p.m. on Monday, November 2, 2026.",
-   "es": "Una boleta enviada por correo debe llegar a la oficina de voto en ausencia de tu condado (Absentee Election Manager) a más tardar al mediodía del martes 3 de noviembre. ¿La vas a llevar tú? Entrégala en esa oficina a más tardar a las 5 p. m. del lunes 2 de noviembre de 2026.",
+   "en": "A mailed ballot must reach your county's Absentee Election Manager by noon on Tuesday, November 3. A postmark isn't enough. Bringing it yourself? Get it to that office by closing time on Monday, November 2, 2026, and no later than 5 p.m.",
+   "es": "Una boleta enviada por correo debe llegar a la oficina de voto en ausencia de tu condado (Absentee Election Manager) a más tardar al mediodía del martes 3 de noviembre. El matasellos no basta. ¿La vas a llevar tú? Entrégala en esa oficina antes de que cierre el lunes 2 de noviembre de 2026, a más tardar a las 5 p. m.",
    "src": "https://www.sos.alabama.gov/alabama-votes/voter/absentee-voting",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "An absentee ballot returned by mail must be received by the Absentee Election Manager no later than noon on election day. If hand-delivered, the ballot must be in the office of the Absentee Election Manager by the close of business (but no later than 5 p.m.) on the day prior to the election.",
    "status": "verified"
   },
@@ -93,8 +93,8 @@
   "rule": "photo_required",
   "accepted": {
    "en": [
-    "Alabama driver's license, including the ALEA Digital Driver's License",
-    "Alabama non-driver ID, including the ALEA Digital Non-Driver ID",
+    "Alabama driver's license (the physical card)",
+    "Alabama non-driver ID (the physical card)",
     "Free Alabama Photo Voter ID card",
     "U.S. passport",
     "Military ID",
@@ -105,8 +105,8 @@
     "Any other federal or state-issued photo ID, such as a pistol permit with a photo"
    ],
    "es": [
-    "Licencia de conducir de Alabama, incluida la versión digital de ALEA (ALEA Digital Driver's License)",
-    "Identificación de Alabama para no conductores, incluida la versión digital de ALEA (ALEA Digital Non-Driver ID)",
+    "Licencia de conducir de Alabama (la tarjeta física)",
+    "Identificación de Alabama para no conductores (la tarjeta física)",
     "Credencial gratuita de votante con foto de Alabama (Alabama Photo Voter ID card)",
     "Pasaporte de EE. UU.",
     "Identificación militar",
@@ -117,17 +117,19 @@
     "Cualquier otra identificación con foto del gobierno federal o de un estado, como un permiso de pistola con foto"
    ],
    "src": "https://www.sos.alabama.gov/sites/default/files/election-2026/2026-VoterGuide.pdf",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "A voter must present one of the following forms of identification before they will be permitted to vote.",
-   "status": "verified"
+   "status": "verified",
+   "notes": "Digital license mention removed Oct 28: the SOS release (node 3642) says digital IDs are not accepted for voting; see id.expired notes."
   },
   "expired": {
-   "en": "An Alabama driver's license or non-driver ID still works if it expired less than 60 days ago. The other IDs on the list must be valid.",
-   "es": "La licencia de conducir o la identificación para no conductores de Alabama todavía sirve si se venció hace menos de 60 días. Las demás identificaciones de la lista deben estar vigentes.",
-   "src": "https://www.sos.alabama.gov/sites/default/files/election-2026/2026-VoterGuide.pdf",
-   "checked": "2026-10-21",
-   "quote": "Valid Alabama Driver’s License, including ALEA Digital Driver’s License (not expired or expired less than 60 days)",
-   "status": "verified"
+   "en": "Bring the physical card. The Secretary of State says digital driver's licenses and other electronic IDs aren't accepted for voting. An Alabama driver's license or non-driver ID still works if it expired less than 60 days ago.",
+   "es": "Lleva la tarjeta física. La Secretaría de Estado dice que las licencias de conducir digitales y otras identificaciones electrónicas no se aceptan para votar. La licencia de conducir o la identificación para no conductores de Alabama todavía sirve si se venció hace menos de 60 días.",
+   "src": "https://www.sos.alabama.gov/node/3642",
+   "checked": "2026-10-28",
+   "quote": "Valid Driver's License (not expired or has been expired less than 60 days) Valid Non-driver ID (not expired or has been expired less than 60 days) ... No Digital IDs: Digital driver licenses or other electronic forms of identification are not accepted for voting purposes. Voters must present a physical form of photo ID.",
+   "status": "verified",
+   "notes": "Conflict: the 2026 Voter Guide PDF, the 2026 Photo Voter ID Guide and the SOS valid-IDs page still list the ALEA Digital Driver's License. The SOS release (node 3642, undated) says digital IDs are not accepted, and HB110 (2026 RS, enrolled; passed House Jan 27 and concurred Mar 12, 2026; effective Oct 1, 2026) says a digital license may not be produced in place of a physical one as voter photo ID under Section 17-9-30. The page follows the release and the bill."
   },
   "without": {
    "en": "No photo ID? You can still vote a regular ballot if your name is on the voter list and two election officials identify you. If they can't, you vote a provisional ballot and have until 5 p.m. on Friday, November 6, 2026, to bring a photo ID to your county Board of Registrars. Need an ID? The Board of Registrars gives out the Alabama Photo Voter ID card for free.",
@@ -192,11 +194,11 @@
    "notes": "Guide sits in the election-2024 folder; the 2026 Voter Guide repeats the witness rule."
   },
   "dropbox": {
-   "en": "Send your ballot by U.S. Mail or a commercial carrier, or hand it yourself to your county's Absentee Election Manager. Those are the only legal ways to return it.",
-   "es": "Manda tu boleta por el Servicio Postal de EE. UU. o por una empresa de mensajería, o entrégala tú mismo en la oficina de voto en ausencia de tu condado (Absentee Election Manager). Esas son las únicas formas legales de devolverla.",
+   "en": "Send your ballot by U.S. Mail or a commercial carrier, or hand it in yourself at your county's Absentee Election Manager. With an emergency absentee ballot, someone you name can deliver it. No one else can return it for you.",
+   "es": "Manda tu boleta por el Servicio Postal de EE. UU. o por una empresa de mensajería, o entrégala en persona en la oficina de voto en ausencia de tu condado (Absentee Election Manager). Con una boleta de emergencia para votar en ausencia, una persona que tú designes puede entregarla. Nadie más puede devolverla por ti.",
    "src": "https://www.sos.alabama.gov/alabama-votes/voter/absentee-voting",
-   "checked": "2026-10-21",
-   "quote": "The voter has only the following legal ways to return the absentee ballot:",
+   "checked": "2026-10-28",
+   "quote": "The voter has only the following legal ways to return the absentee ballot: forwards the absentee ballot by U.S. Mail forwards the absentee ballot by commercial carrier personally hands their own absentee ballot to the absentee election manager (or delivers by a designee in the case of emergency absentee voting)",
    "status": "verified"
   }
  },
@@ -210,11 +212,11 @@
    "status": "verified"
   },
   "phone": {
-   "en": "Bring your phone, just don't disturb other voters. Inside, the only photo allowed is of or with your own ballot, so take your sticker selfie outside.",
-   "es": "Puedes llevar tu teléfono, solo no molestes a los demás votantes. Adentro, la única foto permitida es de tu propia boleta o contigo y tu boleta, así que tómate la selfie con tu sticker afuera.",
+   "en": "You can bring your phone if you don't disturb other voters. Inside, you can take a picture of your own ballot or of you with it, but no other photos or video, and never of another voter's ballot. Take your sticker selfie outside. Nothing official covers photos of an absentee ballot, so ask your county's Absentee Election Manager.",
+   "es": "Puedes llevar tu teléfono si no molestas a los demás votantes. Adentro puedes tomarle una foto a tu propia boleta o tomarte una foto con ella, pero ninguna otra foto ni video, y nunca de la boleta de otro votante. Tómate la selfie con tu sticker afuera. Ninguna fuente oficial habla de fotos de una boleta de voto en ausencia, así que pregunta en la oficina de voto en ausencia de tu condado (Absentee Election Manager).",
    "src": "https://www.sos.alabama.gov/alabama-votes/faqs",
-   "checked": "2026-10-21",
-   "quote": "However, voters are permitted to take a picture of or with their ballot, as long as they do not disclose the content of any other voter's ballot or disrupt the voting process.",
+   "checked": "2026-10-28",
+   "quote": "However, voters are permitted to take a picture of or with their ballot, as long as they do not disclose the content of any other voter's ballot or disrupt the voting process. ... If your cell phone has a camera, you cannot take photographs or film video inside the polling place.",
    "status": "verified"
   },
   "line": {
@@ -258,7 +260,7 @@
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026 with curl on sos.alabama.gov: the 2026 Voter Guide PDF, Absentee Voting Information, the Alabama Votes FAQ, the Photo Voter ID page, and myinfo.alabamavotes.gov/voterview (page labeled VoterView; the Voter Guide calls the tool 'My Voting Information'). The Voter Guide's deadline chart labels the mail ballot row 'must be postmarked no later than noon', but its text, its dates list ('Absentee ballots returned by mail must be received by noon') and the SOS absentee page all say received by noon; the file uses received. Absentee voting starts 'no later than' September 9 per the guide's chart. Photo rule: the FAQ says camera phones can't take photos or video inside, but in the same FAQ voters may take a picture 'of or with their ballot'; polls_rules.phone keeps both. Sticker tradition not found. States.js has AL verified as kind 'none'; nothing here contradicts it.",
+ "notes": "Read October 21, 2026 with curl on sos.alabama.gov: the 2026 Voter Guide PDF, Absentee Voting Information, the Alabama Votes FAQ, the Photo Voter ID page, and myinfo.alabamavotes.gov/voterview (page labeled VoterView; the Voter Guide calls the tool 'My Voting Information'). The Voter Guide's deadline chart labels the mail ballot row 'must be postmarked no later than noon', but its text, its dates list ('Absentee ballots returned by mail must be received by noon') and the SOS absentee page all say received by noon; the file uses received. Absentee voting starts 'no later than' September 9 per the guide's chart. Photo rule: the FAQ says camera phones can't take photos or video inside, but in the same FAQ voters may take a picture 'of or with their ballot'; polls_rules.phone keeps both. Sticker tradition not found. States.js has AL verified as kind 'none'; nothing here contradicts it. October 28: Perplexity review checked on sos.alabama.gov. Digital ID: the page now follows the SOS release that digital IDs are not accepted (HB110, effective Oct 1, 2026, says the same); the 2026 Voter Guide and valid-IDs page still list the digital license and conflict. Hand delivery is by close of business, no later than 5 p.m., Nov 2. Emergency and medical emergency absentee routes added after the Oct 29 deadline. Unverified: the two-official affidavit detail (not in the Voter Guide text read).",
  "election_day": {
   "hours": {
    "en": "Polling places are open 7 a.m. to 7 p.m. local time.",

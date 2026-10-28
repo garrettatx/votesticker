@@ -45,12 +45,13 @@
    "es_after": "Las solicitudes cerraron a las 5 p. m. del 27 de octubre. Todavía puedes votar en persona, por anticipado o el Día de las Elecciones."
   },
   "mail_return": {
-   "en": "Drop box or your local election office: by the close of polls at 8 p.m. on Tuesday, November 3. Mail: postmarked by November 3, with 3 extra days allowed for it to arrive. Haven't mailed it a week before Election Day? Use a drop box or hand it in.",
-   "es": "Buzón de entrega u oficina electoral local: antes del cierre de los lugares de votación a las 8 p. m. del martes 3 de noviembre. Correo: con matasellos del 3 de noviembre o antes, con 3 días extra para que llegue. ¿No la has enviado una semana antes del Día de las Elecciones? Usa un buzón de entrega o entrégala en persona.",
+   "en": "Drop box or your local election office: by 8 p.m. on Tuesday, November 3, when polls close. Mail: postmarked by November 3 and received by Friday, November 6. With less than a week to go, the state strongly recommends a drop box or returning it in person.",
+   "es": "Buzón de entrega u oficina electoral local: a más tardar a las 8 p. m. del martes 3 de noviembre, cuando cierran los lugares de votación. Correo: con matasellos del 3 de noviembre o antes y recibida a más tardar el viernes 6 de noviembre. A menos de una semana de la elección, el estado recomienda mucho usar un buzón de entrega o devolverla en persona.",
    "src": "https://www.sec.state.ma.us/divisions/elections/voting-information/vote-by-mail.htm",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "The only exception is for ballots returned by mail in the biennial state election in November, when 3 extra days are allowed for ballots postmarked by Election Day to arrive in the mail.",
-   "status": "verified"
+   "status": "verified",
+   "notes": "Friday, November 6 is three days after November 3, computed from the quoted rule. The drop box advice rests on the 2026 Voting Options page: 'If you have not mailed your ballot within one week of Election Day, it is strongly recommended that your return your ballot by drop box or in person'."
   },
   "early_hours": {
    "en": "Your city or town sets its own early voting hours, and every one has hours on both weekends, October 17 to 18 and October 24 to 25. Many towns have limited or no hours on Fridays, so check the schedule first.",
@@ -67,12 +68,16 @@
  },
  "how": {
   "in_person": {
-   "en": "Vote early at any early voting location in the city or town where you're registered. It may not be your Election Day polling place. On Election Day, go to your assigned polling place, open 7 a.m. to 8 p.m. Some towns open as early as 5:45 a.m.",
-   "es": "Vota por anticipado en cualquier lugar de votación anticipada de la ciudad o municipio donde estás registrado. Puede no ser tu lugar de votación del Día de las Elecciones. El Día de las Elecciones, ve a tu lugar de votación asignado, abierto de 7 a. m. a 8 p. m. Algunos municipios abren desde las 5:45 a. m.",
-   "src": "https://www.sec.state.ma.us/divisions/elections/voting-information/vote-early.htm",
-   "checked": "2026-10-21",
-   "quote": "During early voting, you can vote at any early voting location in the city or town where you are registered to vote.",
-   "status": "verified"
+   "en": "Vote early at any early voting location in the city or town where you're registered. It may not be your Election Day polling place. On Election Day, go to your assigned polling place, open 7 a.m. to 8 p.m. Your city or town may open as early as 5:45 a.m.",
+   "es": "Vota por anticipado en cualquier lugar de votación anticipada de la ciudad o municipio donde estás registrado. Puede no ser tu lugar de votación del Día de las Elecciones. El Día de las Elecciones, ve a tu lugar de votación asignado, abierto de 7 a. m. a 8 p. m. Tu ciudad o municipio puede abrir desde las 5:45 a. m.",
+   "src": "https://www.sec.state.ma.us/divisions/elections/voting-information/absentee-voting.htm",
+   "checked": "2026-10-28",
+   "quote": "You can vote by absentee ballot if: You will be away from your city or town on Election Day You have a religious belief that prevents you from voting at your polling location on Election Day You have a disability that prevents you from voting at your polling location ... You may arrange with your local election official to cast your absentee ballot in person at your local election office until 12 p.m. on the day before the election. ... If you have been admitted to a healthcare facility within 1 week of the election, you may use the absentee ballot application to designate someone of your choice to deliver a ballot to you. The person you designate to deliver your ballot will need to bring the signed application to your local election office, pick up your absentee ballot, bring it to you, and return it for you by the close of polls on Election Day.",
+   "status": "verified",
+   "until": "2026-10-30",
+   "en_after": "Early voting ended October 30. Will you be away from your city or town on Election Day, or does a disability or religious belief keep you from your polling place? You can arrange to vote absentee in person at your local election office until noon on Monday, November 2. Admitted to a healthcare facility in the last week? Someone you choose can bring you an emergency absentee ballot and return it by 8 p.m. on Election Day. Everyone else votes at their assigned polling place, 7 a.m. to 8 p.m.",
+   "es_after": "La votación anticipada terminó el 30 de octubre. ¿Vas a estar fuera de tu ciudad o municipio el Día de las Elecciones, o una discapacidad o una creencia religiosa te impide ir a tu lugar de votación? Puedes acordar votar en ausencia en persona en tu oficina electoral local hasta el mediodía del lunes 2 de noviembre. ¿Te internaron en un centro de salud en la última semana? Una persona que elijas puede llevarte una boleta de emergencia para votar en ausencia y devolverla a más tardar a las 8 p. m. del Día de las Elecciones. Todos los demás votan en su lugar de votación asignado, de 7 a. m. a 8 p. m.",
+   "notes": "The early voting sentence of en rests on https://www.sec.state.ma.us/divisions/elections/voting-information/vote-early.htm: 'During early voting, you can vote at any early voting location in the city or town where you are registered to vote.' Hours from the Polling Hours page. Read in Chrome Oct 28 (curl blocked)."
   },
   "first_time": {
    "en": "Voting for the first time in Massachusetts? Bring ID with your name and the address where you're registered, like a driver's license, a recent utility bill or a lease. Forgot it? Vote a provisional ballot and come back with ID before the polls close so it counts.",
@@ -102,8 +107,29 @@
  "id": {
   "rule": "no_id",
   "accepted": {
-   "status": "missing",
-   "notes": "ID is asked only of some voters (first time in Massachusetts, inactive list, provisional or challenged ballot); examples are in how.first_time."
+   "en": [
+    "A driver's license",
+    "A state ID card",
+    "A recent utility bill",
+    "A rent receipt or lease",
+    "A copy of a voter registration affidavit",
+    "A letter from a school dormitory or housing office",
+    "Any other printed ID with your name and address"
+   ],
+   "es": [
+    "Una licencia de conducir",
+    "Una tarjeta de identificación estatal",
+    "Un recibo de servicios reciente",
+    "Un recibo de renta o un contrato de arrendamiento",
+    "Una copia de tu declaración jurada de registro de votante (voter registration affidavit)",
+    "Una carta de la residencia estudiantil o de la oficina de vivienda de una escuela",
+    "Cualquier otra identificación impresa con tu nombre y dirección"
+   ],
+   "src": "https://www.sec.state.ma.us/divisions/elections/voting-information/identification-requirements.htm",
+   "checked": "2026-10-28",
+   "quote": "Identification needs to show your name and the address where you are registered to vote. Examples of acceptable identification are: A driver's license A state ID card A recent utility bill A rent receipt or lease. A copy of a voter registration affidavit A letter from a school dormitory or housing office Any other printed identification which contains your name and address",
+   "notes": "Only needed if you are voting for the first time in Massachusetts, are on the inactive list, are casting a provisional or challenged ballot, or a poll worker has a practical and legal reason to ask. Read in Chrome Oct 28.",
+   "status": "verified"
   },
   "expired": {
    "status": "missing"
@@ -122,9 +148,12 @@
    "en": "Any registered voter can vote by mail, no reason needed. Apply online at VoteInMA.com, with the application mailed to every voter, or by email or fax with your handwritten signature.",
    "es": "Cualquier votante registrado puede votar por correo, sin dar una razón. Solicítalo en línea en VoteInMA.com, con la solicitud que se le envió a cada votante, o por correo electrónico o fax con tu firma a mano.",
    "src": "https://www.sec.state.ma.us/divisions/elections/research-and-statistics/2026-Information-for-voters/2026-voting-options.htm",
-   "checked": "2026-10-21",
-   "quote": "State law allows you to cast your ballot by mail, without needing a reason to do so.",
-   "status": "verified"
+   "checked": "2026-10-28",
+   "quote": "State law allows you to cast your ballot by mail, without needing a reason to do so. ... Your Vote by Mail application will be honored as long as it reaches your local election office by 5 p.m. on Tuesday, October 27, 2026",
+   "status": "verified",
+   "until": "2026-10-27",
+   "en_after": "Any registered voter could vote by mail without giving a reason. Applications closed at 5 p.m. on October 27.",
+   "es_after": "Cualquier votante registrado podía votar por correo sin dar una razón. Las solicitudes cerraron a las 5 p. m. del 27 de octubre."
   },
   "witness": {
    "status": "missing"
@@ -157,7 +186,13 @@
    "status": "verified"
   },
   "phone": {
-   "status": "missing"
+   "en": "Massachusetts law makes it a crime to let anyone see how you marked your ballot for a purpose the law doesn't allow. So don't share a photo of your marked ballot, whether you voted at the polls or by mail. No official source says whether you can take a photo you keep to yourself, so ask a poll worker first. Share your sticker instead.",
+   "es": "En Massachusetts es un delito dejar que alguien vea cómo marcaste tu boleta con un fin que la ley no permite. Así que no compartas una foto de tu boleta marcada, ya sea que votaste en persona o por correo. Ninguna fuente oficial dice si puedes tomar una foto que guardes solo para ti, así que primero pregúntale a un trabajador electoral. Mejor comparte tu sticker.",
+   "src": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVIII/Chapter56/Section25",
+   "checked": "2026-10-28",
+   "quote": "Whoever, at a primary, caucus or election, places any distinguishing mark upon his ballot, ... or allows the marking of his ballot to be seen by any person for any purpose not authorized by law, ... shall be punished by imprisonment for not more than six months or by a fine of not more than one hundred dollars.",
+   "notes": "G.L. c. 56 s. 25 read by curl Oct 28. The Secretary's Election Advisory #20-09 (Oct 17, 2020, press access) says 'marked ballots may not be photographed', but it is press guidance, so it isn't the source here. No Secretary page on voter phones or photos was found.",
+   "status": "verified"
   },
   "line": {
    "en": "Polls close at 8 p.m. If you're in line at your polling place by then, stay put. You can still vote.",
@@ -176,9 +211,9 @@
    "en_after": "For the November 3, 2026 election, Middleborough handed out I Voted stickers designed by four young artists, Nolan, Abby, Calleigh and Colette, winners of the Town Clerk's 2026 contest.",
    "es_after": "Para la elección del 3 de noviembre de 2026, Middleborough repartió stickers I Voted diseñados por cuatro artistas jóvenes, Nolan, Abby, Calleigh y Colette, ganadores del concurso 2026 de la oficina del secretario municipal (Town Clerk).",
    "src": "https://www.middleboroughma.gov/1107/I-Voted-Sticker-Contest",
-   "checked": "2026-10-26",
+   "checked": "2026-10-28",
    "quote": "After carefully reviewing all entries, the Board of Registrars selected the winning designs that will be proudly distributed to voters during the November election.",
-   "notes": "Page lists winners with ages 6 to 12; first names only here. Read in Chrome (curl 403).",
+   "notes": "Page lists winners with ages 6 to 12; first names only here. Re-read in Chrome Oct 28: '2026 \"I Voted\" Sticker Contest', Board of Registrars selected the designs, 'distributed to voters during the November election'. Perplexity could not confirm these; the official page does.",
    "status": "verified"
   },
   "mail": {
@@ -216,15 +251,16 @@
    "status": "verified"
   },
   "late_mail": {
-   "en": "A mailed ballot postmarked by November 3 gets 3 extra days to arrive. Still, if you haven't mailed it a week before Election Day, use a drop box or hand it in so it counts.",
-   "es": "Una boleta enviada por correo con matasellos del 3 de noviembre o antes tiene 3 días extra para llegar. Aun así, si no la has enviado una semana antes del Día de las Elecciones, usa un buzón de entrega o entrégala en persona para que se cuente.",
+   "en": "A mailed ballot postmarked by November 3 counts if it arrives by Friday, November 6. With less than a week to go, the state strongly recommends a drop box or returning it in person so it can be counted.",
+   "es": "Una boleta enviada por correo con matasellos del 3 de noviembre o antes se cuenta si llega a más tardar el viernes 6 de noviembre. A menos de una semana de la elección, el estado recomienda mucho usar un buzón de entrega o devolverla en persona para que se pueda contar.",
    "src": "https://www.sec.state.ma.us/divisions/elections/research-and-statistics/2026-Information-for-voters/2026-voting-options.htm",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "If you have not mailed your ballot within one week of Election Day, it is strongly recommended that your return your ballot by drop box or in person, to ensure your ballot can be counted!",
-   "status": "verified"
+   "status": "verified",
+   "notes": "Friday, November 6 = three days after Election Day (vote-by-mail page: '3 extra days are allowed for ballots postmarked by Election Day')."
   }
  },
- "notes": "Read October 21, 2026 in Chrome on sec.state.ma.us (curl gets a 212-byte block page): 2026 Information for Voters (main page and Voting Options), Vote Early, Voting by Mail, Identification Requirements, Provisional Ballots, Polling Hours, Registering to Vote. malegislature.gov c. 54 s. 65 read with curl. EARLY VOTING DATES FOR states.js (status unchecked): Saturday, October 17 to Friday, October 30, 2026. Source https://www.sec.state.ma.us/divisions/elections/research-and-statistics/2026-Information-for-voters/2026-voting-options.htm : 'In-person early voting will begin on Saturday, October 17 and end on Friday, October 30.' Confirmed on https://www.sec.state.ma.us/divisions/elections/voting-information/vote-early.htm : 'Early voting for the November 3, 2026 State Election will be held October 17-30.' Hours vary by city or town (varies: true for hours, not days); officialUrl candidate https://www.sec.state.ma.us/EarlyVotingWeb/EarlyVotingSearch.aspx. The mail return rule gives '3 extra days' but no calendar date or hour, so no date is stated. The registration en_after rests on the Registering to Vote page: 'If you became a U.S. citizen after the voter registration deadline, you can register to vote in person at your local election office until 4 p.m. on the day before the election.' The 150-foot rule in c. 54 s. 65 covers posters, cards, handbills, placards, pictures and circulars; it does not name clothing or buttons, so the page doesn't say shirts are banned. Not found: signature cure deadline, witness rule, phone and photo rule, sticker tradition.",
+ "notes": "Read October 21, 2026 in Chrome on sec.state.ma.us (curl gets a 212-byte block page): 2026 Information for Voters (main page and Voting Options), Vote Early, Voting by Mail, Identification Requirements, Provisional Ballots, Polling Hours, Registering to Vote. malegislature.gov c. 54 s. 65 read with curl. EARLY VOTING DATES FOR states.js (status unchecked): Saturday, October 17 to Friday, October 30, 2026. Source https://www.sec.state.ma.us/divisions/elections/research-and-statistics/2026-Information-for-voters/2026-voting-options.htm : 'In-person early voting will begin on Saturday, October 17 and end on Friday, October 30.' Confirmed on https://www.sec.state.ma.us/divisions/elections/voting-information/vote-early.htm : 'Early voting for the November 3, 2026 State Election will be held October 17-30.' Hours vary by city or town (varies: true for hours, not days); officialUrl candidate https://www.sec.state.ma.us/EarlyVotingWeb/EarlyVotingSearch.aspx. The mail return rule gives '3 extra days' but no calendar date or hour, so no date is stated. The registration en_after rests on the Registering to Vote page: 'If you became a U.S. citizen after the voter registration deadline, you can register to vote in person at your local election office until 4 p.m. on the day before the election.' The 150-foot rule in c. 54 s. 65 covers posters, cards, handbills, placards, pictures and circulars; it does not name clothing or buttons, so the page doesn't say shirts are banned. Not found: signature cure deadline, witness rule, phone and photo rule, sticker tradition. October 28: Perplexity review checked in Chrome on sec.state.ma.us. Added in-person absentee until noon Nov 2 and the healthcare-facility emergency ballot (Absentee Voting page), the accepted ID examples (Identification Requirements), and the ballot photo rule from c. 56 s. 25. Mail arrival date stated as Friday, November 6. Middleborough sticker re-read and confirmed.",
  "election_day": {
   "hours": {
    "en": "Polling places are open 7 a.m. to 8 p.m., and your city or town can open as early as 5:45 a.m.",

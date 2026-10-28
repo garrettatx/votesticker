@@ -45,12 +45,15 @@
    "es_after": "Las solicitudes de boleta por correo cerraron a las 5 p. m. del 29 de octubre. Puede que todavía puedas votar en ausencia en persona en la oficina del secretario hasta el domingo 1 de noviembre, según tu ciudad o municipio."
   },
   "mail_return": {
-   "en": "Your municipal clerk must have it in hand by 8 p.m. on Tuesday, November 3, 2026. A postmark doesn't count. Mailing it? The Elections Commission says to send it at least 10 days before Election Day.",
-   "es": "El secretario de tu municipio debe tenerla en la mano a más tardar a las 8 p. m. del martes 3 de noviembre de 2026. El matasellos no cuenta. ¿La vas a enviar por correo? La Comisión Electoral recomienda mandarla por lo menos 10 días antes del Día de las Elecciones.",
+   "en": "Your municipal clerk must receive it by 8 p.m. on Tuesday, November 3, 2026. A postmark doesn't count. Mailing it? The Elections Commission recommends sending it at least 10 days before Election Day.",
+   "es": "El secretario de tu municipio (municipal clerk) debe recibirla a más tardar a las 8 p. m. del martes 3 de noviembre de 2026. El matasellos no cuenta. ¿La vas a enviar por correo? La Comisión Electoral recomienda mandarla por lo menos 10 días antes del Día de las Elecciones.",
    "src": "https://elections.wi.gov/news-events/wisconsins-election-faqs",
-   "checked": "2026-10-21",
-   "quote": "Absentee ballots must be in the hands of election officials by 8 p.m. on Election Day to be counted.",
-   "status": "verified"
+   "checked": "2026-10-28",
+   "quote": "Absentee ballots must be in the hands of election officials by 8 p.m. on Election Day to be counted. ... If you're planning to mail in your absentee ballot, the WEC recommends doing so at least 10 days before Election Day.",
+   "status": "verified",
+   "until": "2026-10-24",
+   "en_after": "Your municipal clerk must receive it by 8 p.m. on Tuesday, November 3, 2026. A postmark doesn't count. The Elections Commission recommends mailing it at least 10 days before Election Day, so this close to the election, ask your clerk where you can drop it off.",
+   "es_after": "El secretario de tu municipio (municipal clerk) debe recibirla a más tardar a las 8 p. m. del martes 3 de noviembre de 2026. El matasellos no cuenta. La Comisión Electoral recomienda mandarla por correo por lo menos 10 días antes del Día de las Elecciones, así que, a estas alturas, pregúntale a tu secretario municipal dónde puedes entregarla."
   },
   "early_hours": {
    "en": "Each city, village and town sets its own days and hours for in-person absentee voting, and some clerk's offices don't add extra hours. Check MyVote or call your municipal clerk.",
@@ -108,7 +111,7 @@
     "Military ID from a U.S. uniformed service",
     "U.S. passport",
     "ID from a federally recognized tribe in Wisconsin",
-    "Photo ID from a Wisconsin accredited college or university with issue date, signature and an expiration date no more than two years out",
+    "Photo ID from a Wisconsin accredited college or university with issue date, signature and an expiration date no more than two years out. If it's expired, also bring a document that shows you're enrolled now",
     "Veteran's photo ID from the Veterans Health Administration (unexpired)",
     "Certificate of naturalization issued in the last two years",
     "Wisconsin DOT driving receipt or ID card receipt (valid 45 days)"
@@ -119,14 +122,14 @@
     "Identificación militar de un servicio uniformado de EE. UU.",
     "Pasaporte de EE. UU.",
     "Identificación de una tribu reconocida a nivel federal en Wisconsin",
-    "Identificación con foto de un colegio o universidad acreditada de Wisconsin con fecha de emisión, firma y una fecha de vencimiento de no más de dos años",
+    "Identificación con foto de un colegio o universidad acreditada de Wisconsin con fecha de emisión, firma y una fecha de vencimiento de no más de dos años. Si está vencida, lleva también un documento que compruebe tu inscripción actual",
     "Identificación de veterano con foto de la Administración de Salud de Veteranos (Veterans Health Administration), vigente",
     "Certificado de naturalización emitido en los últimos dos años",
     "Recibo de licencia de conducir o de tarjeta de identificación del DOT de Wisconsin (válido por 45 días)"
    ],
    "src": "https://elections.wi.gov/photoid",
-   "checked": "2026-10-21",
-   "quote": "These are acceptable for voting purposes, and can be unexpired or expired after the date of the most recent general election:",
+   "checked": "2026-10-28",
+   "quote": "These are acceptable for voting purposes, and can be unexpired or expired after the date of the most recent general election: ... If the university or college ID is expired, the student ID must be accompanied by a separate document that proves current enrollment.",
    "status": "verified"
   },
   "expired": {
@@ -148,19 +151,19 @@
  },
  "mail": {
   "who": {
-   "en": "Any registered Wisconsin voter can vote absentee, for any reason. Include a copy of your photo ID with your request.",
-   "es": "Cualquier votante registrado en Wisconsin puede votar en ausencia, por cualquier razón. Incluye una copia de tu identificación con foto con tu solicitud.",
-   "src": "https://myvote.wi.gov/en-us/Voter-Deadlines",
-   "checked": "2026-10-21",
-   "quote": "All voters in Wisconsin can request an absentee ballot be mailed to them for any reason.",
+   "en": "Any registered Wisconsin voter can vote absentee, and you don't need a reason. To get a ballot by mail, you send a copy of your photo ID. Military voters, permanent overseas voters and some others don't have to.",
+   "es": "Cualquier votante registrado en Wisconsin puede votar en ausencia, y no necesitas dar una razón. Para recibir tu boleta por correo, mandas una copia de tu identificación con foto. Los votantes militares, los que viven permanentemente en el extranjero y algunos otros no tienen que hacerlo.",
+   "src": "https://elections.wi.gov/photoid",
+   "checked": "2026-10-28",
+   "quote": "You will also be required to provide a photocopy of your ID to cast an absentee ballot by mail, with certain exceptions for military and permanent overseas voters and permanent absentee voters.",
    "status": "verified"
   },
   "witness": {
-   "en": "Mark your ballot in front of one adult U.S. citizen witness, then sign the certificate on the envelope. Your witness signs and writes their address too. A ballot with the witness address missing can't be counted.",
-   "es": "Marca tu boleta frente a un testigo adulto que sea ciudadano de EE. UU. y luego firma el certificado del sobre. Tu testigo también firma y escribe su dirección. Una boleta sin la dirección del testigo no se puede contar.",
+   "en": "Show your blank ballot to one adult U.S. citizen witness, then mark it in front of them without showing how you vote. Sign the certificate on the envelope. Your witness signs and adds their printed name and address, and can't be a candidate in this election. A ballot missing the witness's address can't be counted.",
+   "es": "Muéstrale tu boleta en blanco a un testigo adulto que sea ciudadano de EE. UU. y luego márcala frente a esa persona sin mostrarle cómo votas. Firma el certificado del sobre. Tu testigo firma y agrega su nombre en letra de molde y su dirección, y no puede tener una candidatura en esta elección. Una boleta sin la dirección del testigo no se puede contar.",
    "src": "https://docs.legis.wisconsin.gov/statutes/statutes/6/iv/87",
-   "checked": "2026-10-21",
-   "quote": "If a certificate is missing the address of a witness, the ballot may not be counted.",
+   "checked": "2026-10-28",
+   "quote": "I certify that I exhibited the enclosed ballot unmarked to the witness, that I then in (his) (her) presence and in the presence of no other person marked the ballot ... (Printed name) ....(Address) ... The witness may not be a candidate. ... If a certificate is missing the address of a witness, the ballot may not be counted.",
    "status": "verified"
   },
   "track_url": "https://myvote.wi.gov/en-us/Track-My-Ballot",
@@ -191,8 +194,13 @@
    "status": "verified"
   },
   "phone": {
-   "status": "missing",
-   "notes": "No voter phone or photo rule found on elections.wi.gov. The October 21, 2026 'Media at the Polls' release bars photos and video in the voting area for media under Wis. Admin. Code EL 4.07, not for voters. The existing FAQ answer (no sharing a marked ballot) rests on Wis. Stat. 12.13(1)(f)."
+   "en": "You can use your phone at the polls if you don't disrupt voting. The Elections Commission says taking a photo of your own marked ballot for yourself isn't prohibited, but posting it on social media, sharing it with anyone or livestreaming how you vote is against state law. Don't photograph other voters or their ballots without their consent. The same law bars showing your marked absentee ballot to anyone.",
+   "es": "Puedes usar tu teléfono en el lugar de votación si no interrumpes la votación. La Comisión Electoral dice que no está prohibido tomarle una foto a tu propia boleta marcada para ti, pero publicarla en redes sociales, compartirla con alguien o transmitir en vivo cómo votas va contra la ley estatal. No les tomes fotos a otros votantes ni a sus boletas sin su permiso. La misma ley prohíbe mostrarle a cualquier persona tu boleta de voto en ausencia ya marcada.",
+   "src": "https://elections.wi.gov/media/39611/download",
+   "checked": "2026-10-28",
+   "quote": "Voters may use cell phones in the polling area if it is not disruptive. ... Voters should not be allowed to take photos or videos of other voters or other voters' ballots without their consent. ... Taking a photo of a market ballot for personal use is not prohibited. Posting that photo on social media, sharing it with someone else, or livestreaming voting choices is prohibited by state law.",
+   "notes": "WEC Election Law & Administration (ELAW) Manual, Part 14 Election Day, rev. October 2026, Sec. 14.14.2 Voter Cell Phones and Photography in Polling Area (page 14-102 to 14-103). 'market ballot' is the manual's typo. Its footnote says the prohibition may not be enforceable under certain circumstances. Absentee sentence rests on Wis. Stat. 12.13(1)(f), quoted in the same section: no elector may intentionally show his or her marked ballot to any person. Read in Chrome (curl gets a Cloudflare page).",
+   "status": "verified"
   },
   "line": {
    "en": "Polls close at 8 p.m. If you're in line by then, stay put. You'll be allowed to vote.",
@@ -239,7 +247,7 @@
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026 in Chrome (elections.wi.gov and myvote.wi.gov show a Cloudflare check to curl; accordion text read from the page source) and docs.legis.wisconsin.gov by curl. Pages: MyVote Voter Deadlines, WEC Voting Absentee, Photo ID, Election Day Voting, What Is In-Person Absentee Voting, Wisconsin's Election FAQs, October 21, 2026 Media at the Polls release; Wis. Stat. 6.78(4), 6.87(4)(b)1, (6d), (9), 12.03(2). EARLY VOTING DATES FOR states.js (Wisconsin is unchecked): in-person absentee voting October 20, 2026, possibly through Sunday, November 1, 2026, with dates and hours set by each municipality. Source https://myvote.wi.gov/en-us/Voter-Deadlines: 'October 20, 2026, possibly through November 1, 2026-In-Person Absentee Voting period- Voters can possibly request and vote an absentee ballot in-person in their municipal clerk’s office through November 1, 2026. Office hours vary by municipality. Some municipal offices may not offer additional in-person absentee hours Check MyVote or contact your municipal clerk for absentee voting hours.' WEC absentee page: 'The last possible day for a clerk to conduct in-person absentee voting is the Sunday before the election. Each municipal clerk's office sets its own schedule for in-person absentee voting.' The card would need varies: true (municipal schedules). The provisional deadline in id.without is 'by 4:00 p.m. the Friday after the Election' = Friday, November 6 (computed; faq.provisional keeps the relative wording). Witness rule from Wis. Stat. 6.87; the WEC Uniform Absentee Instructions (EL-128, elections.wi.gov/media/13784/download) are a PDF that downloaded instead of displaying in Chrome and weren't read; one copy was saved to the browser's Downloads folder. The WEC witness-address memo returned 'Access denied'. No statement on drop boxes beyond 'placed in a drop box' in the FAQ data note, so mail.dropbox doesn't promise one. Gear: 12.03 bans electioneering; no official page found on voters' campaign clothing, so gear doesn't tell voters what to wear.",
+ "notes": "Read October 21, 2026 in Chrome (elections.wi.gov and myvote.wi.gov show a Cloudflare check to curl; accordion text read from the page source) and docs.legis.wisconsin.gov by curl. Pages: MyVote Voter Deadlines, WEC Voting Absentee, Photo ID, Election Day Voting, What Is In-Person Absentee Voting, Wisconsin's Election FAQs, October 21, 2026 Media at the Polls release; Wis. Stat. 6.78(4), 6.87(4)(b)1, (6d), (9), 12.03(2). EARLY VOTING DATES FOR states.js (Wisconsin is unchecked): in-person absentee voting October 20, 2026, possibly through Sunday, November 1, 2026, with dates and hours set by each municipality. Source https://myvote.wi.gov/en-us/Voter-Deadlines: 'October 20, 2026, possibly through November 1, 2026-In-Person Absentee Voting period- Voters can possibly request and vote an absentee ballot in-person in their municipal clerk’s office through November 1, 2026. Office hours vary by municipality. Some municipal offices may not offer additional in-person absentee hours Check MyVote or contact your municipal clerk for absentee voting hours.' WEC absentee page: 'The last possible day for a clerk to conduct in-person absentee voting is the Sunday before the election. Each municipal clerk's office sets its own schedule for in-person absentee voting.' The card would need varies: true (municipal schedules). The provisional deadline in id.without is 'by 4:00 p.m. the Friday after the Election' = Friday, November 6 (computed; faq.provisional keeps the relative wording). Witness rule from Wis. Stat. 6.87; the WEC Uniform Absentee Instructions (EL-128, elections.wi.gov/media/13784/download) are a PDF that downloaded instead of displaying in Chrome and weren't read; one copy was saved to the browser's Downloads folder. The WEC witness-address memo returned 'Access denied'. No statement on drop boxes beyond 'placed in a drop box' in the FAQ data note, so mail.dropbox doesn't promise one. Gear: 12.03 bans electioneering; no official page found on voters' campaign clothing, so gear doesn't tell voters what to wear. October 28: Perplexity review. Ballot photo rule from the WEC ELAW manual Part 14 (Oct 2026). The 10-day mailing advice is still on the WEC FAQ page (Perplexity said it was gone); it now shows after a date with a drop-off pointer. Witness rules re-read in Wis. Stat. 6.87 (printed name, not a candidate). Mail photo ID copy and its exceptions from elections.wi.gov/photoid. Not verified: the DMV ID Petition Process receipt (60 days) and Perplexity's claim that a VA ID may have no expiration date; the WEC photo ID page lists the VHA card as must be unexpired.",
  "election_day": {
   "hours": {
    "en": "Polling places are open 7 a.m. to 8 p.m. local time.",

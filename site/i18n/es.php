@@ -362,6 +362,8 @@ return array(
 		'Save to Photos' => 'Guardar en Fotos',
 		'Press and hold the picture, then tap Save to Photos.' => 'Mantén presionada la imagen y toca Guardar en Fotos.',
 		'Done' => 'Listo',
+		'Free designs by Vote Sticker, not affiliated with any election office.' => 'Diseños gratis de Vote Sticker, sin relación con ninguna oficina electoral.',
+		'See the stickers election offices hand out' => 'Mira los stickers que reparten las oficinas electorales',
 		"Didn't save? Tap it again and choose Save Image, or" => '¿No se guardó? Tócalo otra vez y elige Guardar imagen, o',
 		'open it to press and hold' => 'ábrelo para mantenerlo presionado',
 		'Copied' => 'Copiado',

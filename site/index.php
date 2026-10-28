@@ -1409,6 +1409,8 @@ $vote_ld = array(
 			<p><?php echo vote_e( t( 'Tap a sticker to save it. The words stay inside the circle, so they fit a round profile photo.' ) ); ?></p>
 			<div class="grid grid--gallery" id="gallery-grid" style="--cols: <?php echo vote_cols( count( $vote_files ) ); ?>"><?php foreach ( $vote_files as $i => $src ) : ?><a class="tile" href="<?php echo vote_e( $src ); ?>" download="vote-<?php echo strtolower( $vote_abbr ) . '-' . ( $i + 1 ); ?>.jpg"><img src="<?php echo vote_e( $src ); ?>" alt="<?php echo vote_e( vote_alt( $src, $vote_st, $i ) ); ?>" width="1080" height="1080" loading="lazy"></a><?php endforeach; ?></div>
 			<?php echo vote_classic_link( $vote_st ); ?>
+			<?php // Not official (October 28, Garrett's OK): our designs are ours; where the state or a county hands out its own sticker, the story further down says which. ?>
+			<p class="hint gallery__note"><?php echo vote_e( t( 'Free designs by Vote Sticker, not affiliated with any election office.' ) ); ?><?php if ( $vote_st && vote_fact( $vote_st, 'sticker.tradition' ) ) : ?> <a href="#sticker-h"><?php echo vote_e( t( 'See the stickers election offices hand out' ) ); ?></a>.<?php endif; ?></p>
 		</section>
 
 		<?php $vote_maker_first = ! $vote_files; ?>
