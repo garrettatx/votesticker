@@ -295,3 +295,13 @@ look for a county or state fallback to name beside it. No change, no push.
 - Rebuilt for today afterward; facts and Spanish QA pass. No push.
 - Next: the Oct 29 dated checks (Search Console look for the Oct 24 pages, first GA4 read, AR and NE
   VoterView, BigQuery).
+
+### October 28, 1:37 p.m.: GA4 BigQuery Export Arrived
+
+- `seo-command-ctr.analytics_559738937` was created at 12:27 p.m. Central with its first table,
+  `events_20261027` (1,110 rows, 1.2 MB). The dataset has no default table expiration and the table has no
+  expiry, so the 60-day sandbox deletion doesn't apply to it. The billing question for Garrett is retired.
+- Oct 27 counts: 300 page_view, 53 sticker_save, 28 sticker_save_cancel, 13 sticker_builder_start, 3 share,
+  2 post_text_copy. Measurement v2 shipped partway through Oct 27, so the first full day is Oct 28; the
+  first read of the v2 fields stays on Oct 29 (or Oct 30, when the Oct 28 table lands). A test query
+  billed 10 MB, the minimum.
