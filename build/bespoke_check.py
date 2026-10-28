@@ -6,7 +6,7 @@ The build runs this; any problem stops it. Rules:
 - I voted early / Ya voté temprano only where the state has verified in-person early voting, I voted by
   mail / Ya voté por correo only in verified all-mail states (site/states.js);
 - Spanish messages only on Spanish or shared stickers, English messages only on English ones;
-- eleven per state, eleven different designs, never Shadow (retired for these sets);
+- fourteen per state (eleven, plus three added October 27), all different designs, never Shadow;
 - six different colorways on each page: the English six and the Spanish six (the shared YA VOTÉ counts on both);
 - file names lowercase-hyphen, starting with the state's name, 80 characters or fewer.
 
@@ -64,8 +64,8 @@ def main():
             bad.append(f'{stem}: file name not lowercase-hyphen or over 80 characters')
     for abbr, r in rows.items():
         got = per.get(abbr, [])
-        if len(got) != 11:
-            bad.append(f'{r["name"]}: {len(got)} bespoke stickers, want 11')
+        if len(got) != 14:
+            bad.append(f'{r["name"]}: {len(got)} bespoke stickers, want 14')
         if len({b['design'] for b in got}) != len(got):
             bad.append(f'{r["name"]}: a design repeats in its set')
         for lang in ('en', 'es'):

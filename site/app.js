@@ -41,7 +41,12 @@
 		{ id: 'midnight', name: 'Midnight and mint', bg: '#0B1F3A', ink: '#9EF2D4', accent: '#FFD166', onAccent: '#0B1F3A', star: '#0B1F3A', split: '#143157' },
 		{ id: 'black', name: 'Black and lime', bg: '#121212', ink: '#C6F43A', accent: '#F4F4F0', onAccent: '#121212', star: '#121212', split: '#262626' },
 		{ id: 'olive', name: 'Olive and sand', bg: '#4A5320', ink: '#F4EBD0', accent: '#E0A526', onAccent: '#4A5320', star: '#4A5320', split: '#5E6A2A' },
-		{ id: 'indigo', name: 'Indigo and coral', bg: '#2B2D7A', ink: '#FFE9E2', accent: '#FF7F6E', onAccent: '#2B2D7A', star: '#2B2D7A', split: '#3A3D96' }
+		{ id: 'indigo', name: 'Indigo and coral', bg: '#2B2D7A', ink: '#FFE9E2', accent: '#FF7F6E', onAccent: '#2B2D7A', star: '#2B2D7A', split: '#3A3D96' },
+		// October 27 (Garrett): the classic set's four new layouts stay red, white and blue, in the CLASSIC
+		// colors, on a navy ground or a white one so the set doesn't read as one color.
+		// A navy ground or a red one (a white disc has no edge on a white feed, and the first three are white-heavy).
+		{ id: 'classicnavy', name: 'Classic navy', bg: '#1B3A7A', ink: '#FFFFFF', accent: '#C8102E', onAccent: '#FFFFFF', star: '#1B3A7A', split: '#FFFFFF' },
+		{ id: 'classicred', name: 'Classic red', bg: '#C8102E', ink: '#FFFFFF', accent: '#1B3A7A', onAccent: '#FFFFFF', star: '#C8102E', split: '#FFFFFF' }
 	];
 	function starOf(p) { return p.star || p.accent; }
 	// The date line in the accent where it reads on the background, else in ink.
@@ -1380,10 +1385,13 @@
 		},
 		// Pixel state: the outline as pixels, the capital a block in the accent, a tracked date with a cursor.
 		pixel: function (st, p, lines, dateText) {
-			var ps = pixelState(st, 0, 0, 22, 14, p.ink, contrast(p.accent, p.bg) >= 1.6 ? p.accent : p.bg);
+			// 22 cells across, fewer for a tall state so the map stays under about 300 units (Illinois, New
+			// Hampshire drew 500 tall and shrank the words); never under 12 cells, or the outline breaks up.
+			var sh = shape(st.abbr), cells = Math.max(12, Math.min(22, Math.floor(300 / 14 * sh.w / sh.h)));
+			var ps = pixelState(st, 0, 0, cells, 14, p.ink, contrast(p.accent, p.bg) >= 1.6 ? p.accent : p.bg);
 			var head = textBlock(lines, DISPLAY, 760, 260, { justify: true, leading: 0.14, track: 0.02 });
 			var placed = placeText(head, 0, ps.bottom + 50, p.ink);
-			var dt = textBlock([dateText], DATE, 520, head.asc * 0.34, { track: 0.3 });
+			var dt = textBlock([dateText], DATE, 560, head.asc * 0.34, { track: 0.2 });
 			var date = placeText(dt, 0, placed.bottom + head.asc * 0.26, dateColor(p));
 			return { items: ps.items.concat(placed.items, date.items), safe: SAFE };
 		},
@@ -1453,7 +1461,8 @@
 			for (k = -2; k <= 2; k++) { stars.push({ t: 'star', cx: k * 100, cy: -76, r: 26, color: sc }); }
 			var head = textBlock(lines, DISPLAY, 760, 270, { justify: true, leading: 0.1, track: -0.01 });
 			var placed = placeText(head, 0, 0, p.ink);
-			var waves = [], y0 = placed.bottom + 60, amp = 22, thick = 40, colors = [sc, shade(p.bg, 0.22), sc], x;
+			var mid = p.split && contrast(p.split, p.bg) >= 1.6 ? p.split : shade(p.bg, 0.22);
+			var waves = [], y0 = placed.bottom + 60, amp = 22, thick = 40, colors = [sc, mid, sc], x;
 			colors.forEach(function (c, i) {
 				var top = [];
 				for (x = -400; x <= 400; x += 25) { top.push([x, y0 + i * (thick + 22) + Math.sin(x / 130 + i * 0.9) * amp]); }

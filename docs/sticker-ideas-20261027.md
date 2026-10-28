@@ -88,3 +88,25 @@ general design that still works with a state above it.
 3. Move any kept palette into `PALETTES` (it then shows in the swatch row) or leave it in
    `EXTRA_PALETTES` for the sets only.
 4. Rejected designs stay in `IDEAS` for a later look; the renderer additions stay either way.
+
+## Garrett's Picks and What Shipped (October 27, Evening)
+
+Garrett used the sheet numbers. State: 1 Postmark, 2 Marquee, 9 Pixel state. General: 2 Wave, 11 Dusk, 7 Done,
+5 Calendar, kept red, white and blue. His rules for the pass: vary color and style everywhere prebuilt
+stickers show, real variety from state to state, and keep every existing sticker.
+
+- **State sets:** each state keeps its eleven bespoke stickers byte for byte (all 561 checksummed before and
+  after) and gains three English ones in Postmark, Marquee and Pixel state (153 new, 714 total). Their order
+  and messages turn with the state; each takes a colorway the state's English page doesn't already show,
+  balanced across states (12 or 13 per colorway, Midnight, Indigo and Olive included). `bespoke_check.py`
+  now wants 14 per state, all different designs, no repeated colorway on a page.
+- **Classic set:** 42 per language (was 18). The four new layouts are in the classic red, navy and white, on
+  navy (Wave, Calendar), red (Done) and a red-to-navy sky (Dusk), with ELECTION 2026 or ELECCIONES 2026 as the
+  small line. No new white discs: lessons-learned says a light disc has no edge on a white feed, and the first
+  three layouts are already white-heavy. The first six on the page are six layouts with six messages.
+  The original 36 files are unchanged.
+- **Home showcase:** New York went from Ring (rust, a second rust beside Texas) to I Voted Early Marquee
+  (forest), Virginia from Half (plum) to Future Voter Pixel state (navy): eight designs, eight colors, and
+  the set gains an I voted early.
+- Pixel state: tall states drew a map 500 units tall and shrank the words; the map now stays under about
+  300 units, and the date line's tracking came down so long ranges read.

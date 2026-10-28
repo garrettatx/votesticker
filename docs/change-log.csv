@@ -29,3 +29,4 @@ date,area,change,commit
 2026-10-27,seo,"Home h2 'Browse All States' to 'I Voted Stickers by State' (92 impressions at position 7 for 'i voted stickers by state' over 14 days)",
 2026-10-27,analytics,"Measurement v2: sticker_builder_start, sticker_hold_open (press and hold no longer a save), attempt and prev_result, double-tap and open-sheet guards",
 2026-10-27,design,"24 sticker ideas (12 state, 12 general) as review layouts with sheets at 240, 60 and 40 px; four review palettes; renderer gains gradients, outlined shapes, polylines, glow, pixel sampler",
+2026-10-27,design,"Three added bespoke stickers per state (Postmark, Marquee, Pixel state; 153 new, existing 561 unchanged); classic set 18 to 42 per language (Wave, Dusk, Done, Calendar in red, white and blue); home showcase NY and VA swapped to new designs",

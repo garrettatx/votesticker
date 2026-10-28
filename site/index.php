@@ -1306,20 +1306,21 @@ $vote_ld = array(
 	<?php
 	// Landing showcase: one sticker per state, linking to its page. October 26 (Garrett: "highlight our highest
 	// quality ... a feel for our variety"): hand-picked bespoke stickers, eight different designs and messages,
-	// from a contact sheet of every candidate. The Spanish home page takes each state's Spanish set, a
+	// from a contact sheet of every candidate. October 27: New York and Virginia moved to two of the added designs
+	// (Marquee, Pixel state), so the eight are eight designs in eight colors with an I voted early among them. The Spanish home page takes each state's Spanish set, a
 	// different design per state. Values are file stems in assets/states/<abbr>/.
 	$vote_showcase = vote_es() ? vote_showcase_es( array( 'ca', 'tx', 'ny', 'pa', 'nc', 'va', 'wa', 'co' ) ) : array(
 		'ca' => 'california-i-voted-by-mail-split-sticker', 'co' => 'colorado-i-voted-by-mail-varsity-sticker',
-		'ny' => 'new-york-i-voted-ring-sticker', 'nc' => 'north-carolina-i-voted-arch-sticker',
+		'ny' => 'new-york-i-voted-early-marquee-sticker', 'nc' => 'north-carolina-i-voted-arch-sticker',
 		'pa' => 'pennsylvania-ya-vote-tilt-sticker', 'tx' => 'texas-first-time-voter-brush-sticker',
-		'va' => 'virginia-future-voter-half-sticker', 'wa' => 'washington-i-voted-plate-sticker' );
+		'va' => 'virginia-future-voter-pixel-state-sticker', 'wa' => 'washington-i-voted-plate-sticker' );
 	$vote_showcase = array_filter( $vote_showcase, function ( $f, $abbr ) { return is_file( __DIR__ . "/assets/states/$abbr/$f.jpg" ); }, ARRAY_FILTER_USE_BOTH );
 	// Alphabetical by the state's name in the page language (Garrett, October 26): easier to scan for your own.
 	$vote_by_name = function ( $a, $b ) use ( $vote_rows ) { return strcmp( vote_lname( $vote_rows[ strtoupper( $a ) ] ), vote_lname( $vote_rows[ strtoupper( $b ) ] ) ); };
 	uksort( $vote_showcase, $vote_by_name );
 	?>
 	<?php
-	// Ready-to-share stickers (October 26, Garrett: classic red, white and blue, "no state needed"): 18 per
+	// Ready-to-share stickers (October 26, Garrett: classic red, white and blue, "no state needed"; 42 per language since October 27): 18 per
 	// language from scripts/render_classic.mjs, round PNGs with no background, each a direct download. The
 	// order keeps look-alikes apart in 3 and 6 columns; the first six are the six messages. Home page only.
 	$vote_classic = array();

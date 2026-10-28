@@ -16,6 +16,11 @@ const ALTS = path.join(DIR, 'alts.json');
 const SIZE = 1080;
 // Shadow left out: Varsity does the same thing, better (backlog/maker-bespoke).
 const DESIGNS = ['varsity', 'slab', 'sticker', 'ringtext', 'arch', 'tilt', 'brush', 'type', 'plate', 'side', 'below', 'half', 'split'];
+// October 27 (Garrett picked three of twelve ideas): three more English stickers per state in these, added after
+// the first eleven so every existing file keeps its name and pixels (Garrett: keep the sets we have).
+const ADDED = ['postmark', 'marquee', 'pixel'];
+// Their colors come from what the state's English page doesn't use yet, the review palettes included.
+const MORE_PALETTES = ['midnight', 'indigo', 'olive'];
 const PALETTES = ['navy', 'forest', 'cobalt', 'maroon', 'plum', 'teal', 'rust', 'charcoal', 'cream'];
 // How each design looks, for alt text ("Navy sticker with 3D block letters, reading I voted, Texas 2026").
 const LOOK = {
@@ -23,6 +28,7 @@ const LOOK = {
   ringtext: 'with the state name around a ring', arch: 'with the first word arched over the state', tilt: 'with a slanted headline',
   brush: 'in brush lettering', type: 'in big block letters', plate: 'with one word on a color plate', side: 'with the state beside the words',
   below: 'with the state beside the second line', half: 'with a color field over the state', split: 'on a two-tone diagonal',
+  postmark: 'like a postmark, with the state name around a dashed ring', marquee: 'on a sign ringed with lights', pixel: 'with the state drawn in pixels',
 };
 const SLUG = { ivoted: 'i-voted', firsttime: 'first-time-voter', futurevoter: 'future-voter', yavote: 'ya-vote', voted: 'i-voted-early', mailed: 'i-voted-by-mail',
   miprimervoto: 'mi-primer-voto', yotambien: 'yo-tambien-votare', yavotetemprano: 'ya-vote-temprano', yavotecorreo: 'ya-vote-por-correo' };
@@ -34,8 +40,9 @@ const LOOK_ES = {
   ringtext: 'con el nombre del estado alrededor de un anillo', arch: 'con la primera palabra en arco sobre el estado', tilt: 'con el título inclinado',
   brush: 'con letras de pincel', type: 'con letras grandes', plate: 'con una palabra sobre una placa de color', side: 'con el estado junto a las palabras',
   below: 'con el estado junto a la segunda línea', half: 'con un campo de color sobre el estado', split: 'en dos tonos con una diagonal',
+  postmark: 'como un matasellos, con el nombre del estado alrededor de un anillo punteado', marquee: 'sobre un letrero con luces', pixel: 'con el estado dibujado en píxeles',
 };
-const COLOR_ES = { navy: 'azul marino', forest: 'verde bosque', cobalt: 'azul cobalto', maroon: 'guinda', plum: 'ciruela', teal: 'verde azulado', rust: 'naranja quemado', charcoal: 'gris carbón', cream: 'crema' };
+const COLOR_ES = { midnight: 'azul medianoche', indigo: 'índigo', olive: 'verde olivo', navy: 'azul marino', forest: 'verde bosque', cobalt: 'azul cobalto', maroon: 'guinda', plum: 'ciruela', teal: 'verde azulado', rust: 'naranja quemado', charcoal: 'gris carbón', cream: 'crema' };
 
 const b = await chromium.launch();
 const p = await b.newPage({ viewport: { width: 1280, height: 900 } });
@@ -50,6 +57,7 @@ const alts = JSON.parse(fs.readFileSync(ALTS, 'utf8'));
 const MANIFEST = path.join(DIR, 'bespoke.json');
 const langs = fs.existsSync(MANIFEST) ? JSON.parse(fs.readFileSync(MANIFEST, 'utf8')) : {};
 let n = 0;
+const addedUse = {};
 for (const [i, st] of all.entries()) {
   if (only && !only.includes(st.abbr)) { continue; }
   // Six slots. Design: step 2 through the 13 designs, so a state's six are all different and the next
@@ -73,6 +81,21 @@ for (const [i, st] of all.entries()) {
     { headline: 'yavote', design: d(9), palette: pal(9), tilt: i % 2 ? -0.12 : 0.12, lang: 'es' },
     { headline: 'yavote', design: d(10), palette: pal(10), rays: true, lang: 'es' },
   ];
+  // Slots 11 to 13: the three added designs, their order and messages turning with the state so neighbors
+  // differ, each in a colorway the English page doesn't show yet (the state's own colors stay with slot 0).
+  const past = st.early ? 'voted' : st.mail ? 'mailed' : 'ivoted';
+  const msgs = ['ivoted', 'firsttime', past, 'futurevoter'];
+  const usedEn = new Set(plan.filter((x) => x.lang !== 'es').map((x) => x.palette));
+  const free = PALETTES.concat(MORE_PALETTES).filter((x) => !usedEn.has(x));
+  // Of the free colorways, the one the added stickers have used least so far (alphabetical states), so no
+  // color takes over the new sets; ties go to the rotation.
+  ADDED.forEach((design, k) => {
+    const start = (i * 2 + k * 3) % free.length, order = free.slice(start).concat(free.slice(0, start));
+    const palette = order.reduce((best, x) => ((addedUse[x] || 0) < (addedUse[best] || 0) ? x : best), order[0]);
+    addedUse[palette] = (addedUse[palette] || 0) + 1;
+    plan.push({ headline: msgs[(i + k) % msgs.length], design: ADDED[(i + k) % ADDED.length], palette });
+    free.splice(free.indexOf(palette), 1);
+  });
   const out = await p.evaluate(({ abbr, plan, SIZE }) => {
     const V = window.VOTE_CARDS, s = window.VOTE_STATES.find((x) => x.abbr === abbr), c = document.createElement('canvas');
     return plan.map((x) => {
@@ -86,7 +109,7 @@ for (const [i, st] of all.entries()) {
   for (const f of fs.readdirSync(path.join(DIR, k))) { if (f.startsWith(slug + '-') && f.endsWith('.jpg')) { fs.unlinkSync(path.join(DIR, k, f)); delete alts[f.slice(0, -4)]; delete alts[f.slice(0, -4) + '@es']; delete langs[f.slice(0, -4)]; } }
   const used = new Set();
   plan.forEach((x, j) => {
-    let base = `${slug}-${SLUG[x.headline]}-${x.design === 'slab' ? 'masthead' : x.design === 'sticker' ? 'round' : x.design === 'ringtext' ? 'ring' : x.design === 'type' ? 'big-type' : x.design}-sticker`;
+    let base = `${slug}-${SLUG[x.headline]}-${x.design === 'slab' ? 'masthead' : x.design === 'sticker' ? 'round' : x.design === 'ringtext' ? 'ring' : x.design === 'type' ? 'big-type' : x.design === 'pixel' ? 'pixel-state' : x.design}-sticker`;
     if (used.has(base)) { base += '-2'; }
     used.add(base);
     fs.writeFileSync(path.join(DIR, k, base + '.jpg'), Buffer.from(out[j].data.split(',')[1], 'base64'));

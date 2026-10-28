@@ -18,58 +18,66 @@
   "alt": "Sticker redondo que dice Yo voté hoy, con letras rojas y azul marino sobre una franja blanca, estrellas blancas sobre azul marino arriba y franjas rojas abajo"
  },
  {
-  "stem": "i-voted-star-ring-sticker",
+  "stem": "i-voted-wave-sticker",
   "lang": "en",
   "pos": 1,
-  "layout": "cring",
+  "layout": "wave",
   "headline": "ivoted",
   "says": "I voted",
-  "alt": "Round sticker that says I voted, in red letters inside a navy ring of white stars"
+  "alt": "Round navy sticker that says I voted, Election 2026, in white letters, with five red stars above and red and white waves below",
+  "palette": "classicnavy",
+  "dateText": "ELECTION 2026"
  },
  {
-  "stem": "yo-vote-star-ring-sticker",
+  "stem": "yo-vote-wave-sticker",
   "lang": "es",
   "pos": 1,
-  "layout": "cring",
+  "layout": "wave",
   "headline": "yovote",
   "says": "Yo voté",
-  "alt": "Sticker redondo que dice Yo voté, con letras rojas dentro de un anillo azul marino con estrellas blancas"
+  "alt": "Sticker redondo azul marino que dice Yo voté, Elecciones 2026, con letras blancas, cinco estrellas rojas arriba y ondas rojas y blancas abajo",
+  "palette": "classicnavy",
+  "dateText": "ELECCIONES 2026"
  },
  {
-  "stem": "i-voted-early-stars-and-stripes-sticker",
+  "stem": "i-voted-early-star-ring-sticker",
   "lang": "en",
   "pos": 2,
-  "layout": "cflag",
+  "layout": "cring",
   "headline": "voted",
   "says": "I voted early",
-  "alt": "Round sticker that says I voted early, in red and navy letters on a white band, with white stars on navy above and red stripes below"
+  "alt": "Round sticker that says I voted early, in red and navy letters inside a navy ring of white stars"
  },
  {
-  "stem": "yo-vote-temprano-stars-and-stripes-sticker",
+  "stem": "yo-vote-temprano-star-ring-sticker",
   "lang": "es",
   "pos": 2,
-  "layout": "cflag",
+  "layout": "cring",
   "headline": "yovotetemprano",
   "says": "Yo voté temprano",
-  "alt": "Sticker redondo que dice Yo voté temprano, con letras rojas y azul marino sobre una franja blanca, estrellas blancas sobre azul marino arriba y franjas rojas abajo"
+  "alt": "Sticker redondo que dice Yo voté temprano, con letras rojas y azul marino dentro de un anillo azul marino con estrellas blancas"
  },
  {
-  "stem": "i-voted-by-mail-star-ring-sticker",
+  "stem": "i-voted-by-mail-check-mark-sticker",
   "lang": "en",
   "pos": 3,
-  "layout": "cring",
+  "layout": "done",
   "headline": "mailed",
   "says": "I voted by mail",
-  "alt": "Round sticker that says I voted by mail, in red and navy letters inside a navy ring of white stars"
+  "alt": "Round red sticker that says I voted by mail, Election 2026, in white letters under a white check mark in a navy circle",
+  "palette": "classicred",
+  "dateText": "ELECTION 2026"
  },
  {
-  "stem": "yo-vote-por-correo-star-ring-sticker",
+  "stem": "yo-vote-por-correo-check-mark-sticker",
   "lang": "es",
   "pos": 3,
-  "layout": "cring",
+  "layout": "done",
   "headline": "yovotecorreo",
   "says": "Yo voté por correo",
-  "alt": "Sticker redondo que dice Yo voté por correo, con letras rojas y azul marino dentro de un anillo azul marino con estrellas blancas"
+  "alt": "Sticker redondo rojo que dice Yo voté por correo, Elecciones 2026, con letras blancas debajo de una palomita blanca en un círculo azul marino",
+  "palette": "classicred",
+  "dateText": "ELECCIONES 2026"
  },
  {
   "stem": "first-time-voter-red-white-and-blue-band-sticker",
@@ -90,117 +98,71 @@
   "alt": "Sticker redondo que dice Mi primer voto: “Mi primer” en azul marino sobre una franja blanca y “voto” en blanco sobre la parte de abajo, que es roja, con estrellas blancas sobre azul marino arriba"
  },
  {
-  "stem": "future-voter-star-ring-sticker",
+  "stem": "future-voter-calendar-sticker",
   "lang": "en",
   "pos": 5,
-  "layout": "cring",
+  "layout": "calendar",
   "headline": "futurevoter",
   "says": "Future voter",
-  "alt": "Round sticker that says Future voter, in red and navy letters inside a navy ring of white stars"
+  "alt": "Round navy sticker that says Future voter, Election 2026, in white letters under a calendar page showing November 3",
+  "palette": "classicnavy",
+  "dateText": "ELECTION 2026"
  },
  {
-  "stem": "yo-tambien-votare-star-ring-sticker",
+  "stem": "yo-tambien-votare-calendar-sticker",
   "lang": "es",
   "pos": 5,
-  "layout": "cring",
+  "layout": "calendar",
   "headline": "yotambien",
   "says": "Yo también votaré",
-  "alt": "Sticker redondo que dice Yo también votaré, con letras rojas y azul marino dentro de un anillo azul marino con estrellas blancas"
+  "alt": "Sticker redondo azul marino que dice Yo también votaré, Elecciones 2026, con letras blancas debajo de una hoja de calendario con el 3 de noviembre",
+  "palette": "classicnavy",
+  "dateText": "ELECCIONES 2026"
  },
  {
-  "stem": "i-voted-red-white-and-blue-band-sticker",
+  "stem": "i-voted-star-ring-sticker",
   "lang": "en",
   "pos": 6,
-  "layout": "cband",
+  "layout": "cring",
   "headline": "ivoted",
   "says": "I voted",
-  "alt": "Round sticker that says I voted, in navy letters on a white band, with white stars on navy across the top and a red base"
+  "alt": "Round sticker that says I voted, in red letters inside a navy ring of white stars"
  },
  {
-  "stem": "yo-vote-red-white-and-blue-band-sticker",
+  "stem": "yo-vote-star-ring-sticker",
   "lang": "es",
   "pos": 6,
-  "layout": "cband",
+  "layout": "cring",
   "headline": "yovote",
   "says": "Yo voté",
-  "alt": "Sticker redondo que dice Yo voté, con letras azul marino sobre una franja blanca, estrellas blancas sobre azul marino arriba y la parte de abajo roja"
+  "alt": "Sticker redondo que dice Yo voté, con letras rojas dentro de un anillo azul marino con estrellas blancas"
  },
  {
-  "stem": "i-voted-by-mail-stars-and-stripes-sticker",
+  "stem": "i-voted-today-check-mark-sticker",
   "lang": "en",
   "pos": 7,
-  "layout": "cflag",
-  "headline": "mailed",
-  "says": "I voted by mail",
-  "alt": "Round sticker that says I voted by mail, in red and navy letters on a white band, with white stars on navy above and red stripes below"
+  "layout": "done",
+  "headline": "ivotedtoday",
+  "says": "I voted today",
+  "alt": "Round red sticker that says I voted today, Election 2026, in white letters under a white check mark in a navy circle",
+  "palette": "classicred",
+  "dateText": "ELECTION 2026"
  },
  {
-  "stem": "yo-vote-por-correo-stars-and-stripes-sticker",
+  "stem": "yo-vote-hoy-check-mark-sticker",
   "lang": "es",
   "pos": 7,
-  "layout": "cflag",
-  "headline": "yovotecorreo",
-  "says": "Yo voté por correo",
-  "alt": "Sticker redondo que dice Yo voté por correo, con letras rojas y azul marino sobre una franja blanca, estrellas blancas sobre azul marino arriba y franjas rojas abajo"
- },
- {
-  "stem": "i-voted-today-red-white-and-blue-band-sticker",
-  "lang": "en",
-  "pos": 8,
-  "layout": "cband",
-  "headline": "ivotedtoday",
-  "says": "I voted today",
-  "alt": "Round sticker that says I voted today: “I voted” in navy on a white band and “today” in white on a red base, with white stars on navy across the top"
- },
- {
-  "stem": "yo-vote-hoy-red-white-and-blue-band-sticker",
-  "lang": "es",
-  "pos": 8,
-  "layout": "cband",
+  "layout": "done",
   "headline": "yovotehoy",
   "says": "Yo voté hoy",
-  "alt": "Sticker redondo que dice Yo voté hoy: “Yo voté” en azul marino sobre una franja blanca y “hoy” en blanco sobre la parte de abajo, que es roja, con estrellas blancas sobre azul marino arriba"
- },
- {
-  "stem": "future-voter-stars-and-stripes-sticker",
-  "lang": "en",
-  "pos": 9,
-  "layout": "cflag",
-  "headline": "futurevoter",
-  "says": "Future voter",
-  "alt": "Round sticker that says Future voter, in red and navy letters on a white band, with white stars on navy above and red stripes below"
- },
- {
-  "stem": "yo-tambien-votare-stars-and-stripes-sticker",
-  "lang": "es",
-  "pos": 9,
-  "layout": "cflag",
-  "headline": "yotambien",
-  "says": "Yo también votaré",
-  "alt": "Sticker redondo que dice Yo también votaré, con letras rojas y azul marino sobre una franja blanca, estrellas blancas sobre azul marino arriba y franjas rojas abajo"
- },
- {
-  "stem": "i-voted-today-star-ring-sticker",
-  "lang": "en",
-  "pos": 10,
-  "layout": "cring",
-  "headline": "ivotedtoday",
-  "says": "I voted today",
-  "alt": "Round sticker that says I voted today, in red and navy letters inside a navy ring of white stars"
- },
- {
-  "stem": "yo-vote-hoy-star-ring-sticker",
-  "lang": "es",
-  "pos": 10,
-  "layout": "cring",
-  "headline": "yovotehoy",
-  "says": "Yo voté hoy",
-  "alt": "Sticker redondo que dice Yo voté hoy, con letras rojas y azul marino dentro de un anillo azul marino con estrellas blancas"
+  "alt": "Sticker redondo rojo que dice Yo voté hoy, Elecciones 2026, con letras blancas debajo de una palomita blanca en un círculo azul marino",
+  "palette": "classicred",
+  "dateText": "ELECCIONES 2026"
  },
  {
   "stem": "i-voted-stars-and-stripes-sticker",
   "lang": "en",
-  "pos": 11,
+  "pos": 8,
   "layout": "cflag",
   "headline": "ivoted",
   "says": "I voted",
@@ -209,70 +171,322 @@
  {
   "stem": "yo-vote-stars-and-stripes-sticker",
   "lang": "es",
-  "pos": 11,
+  "pos": 8,
   "layout": "cflag",
   "headline": "yovote",
   "says": "Yo voté",
   "alt": "Sticker redondo que dice Yo voté, con letras rojas sobre una franja blanca, estrellas blancas sobre azul marino arriba y franjas rojas abajo"
  },
  {
-  "stem": "i-voted-early-star-ring-sticker",
+  "stem": "i-voted-today-wave-sticker",
+  "lang": "en",
+  "pos": 9,
+  "layout": "wave",
+  "headline": "ivotedtoday",
+  "says": "I voted today",
+  "alt": "Round navy sticker that says I voted today, Election 2026, in white letters, with five red stars above and red and white waves below",
+  "palette": "classicnavy",
+  "dateText": "ELECTION 2026"
+ },
+ {
+  "stem": "yo-vote-hoy-wave-sticker",
+  "lang": "es",
+  "pos": 9,
+  "layout": "wave",
+  "headline": "yovotehoy",
+  "says": "Yo voté hoy",
+  "alt": "Sticker redondo azul marino que dice Yo voté hoy, Elecciones 2026, con letras blancas, cinco estrellas rojas arriba y ondas rojas y blancas abajo",
+  "palette": "classicnavy",
+  "dateText": "ELECCIONES 2026"
+ },
+ {
+  "stem": "i-voted-calendar-sticker",
+  "lang": "en",
+  "pos": 10,
+  "layout": "calendar",
+  "headline": "ivoted",
+  "says": "I voted",
+  "alt": "Round navy sticker that says I voted, Election 2026, in white letters under a calendar page showing November 3",
+  "palette": "classicnavy",
+  "dateText": "ELECTION 2026"
+ },
+ {
+  "stem": "yo-vote-calendar-sticker",
+  "lang": "es",
+  "pos": 10,
+  "layout": "calendar",
+  "headline": "yovote",
+  "says": "Yo voté",
+  "alt": "Sticker redondo azul marino que dice Yo voté, Elecciones 2026, con letras blancas debajo de una hoja de calendario con el 3 de noviembre",
+  "palette": "classicnavy",
+  "dateText": "ELECCIONES 2026"
+ },
+ {
+  "stem": "i-voted-today-star-ring-sticker",
+  "lang": "en",
+  "pos": 11,
+  "layout": "cring",
+  "headline": "ivotedtoday",
+  "says": "I voted today",
+  "alt": "Round sticker that says I voted today, in red and navy letters inside a navy ring of white stars"
+ },
+ {
+  "stem": "yo-vote-hoy-star-ring-sticker",
+  "lang": "es",
+  "pos": 11,
+  "layout": "cring",
+  "headline": "yovotehoy",
+  "says": "Yo voté hoy",
+  "alt": "Sticker redondo que dice Yo voté hoy, con letras rojas y azul marino dentro de un anillo azul marino con estrellas blancas"
+ },
+ {
+  "stem": "i-voted-early-stars-and-stripes-sticker",
   "lang": "en",
   "pos": 12,
-  "layout": "cring",
+  "layout": "cflag",
   "headline": "voted",
   "says": "I voted early",
-  "alt": "Round sticker that says I voted early, in red and navy letters inside a navy ring of white stars"
+  "alt": "Round sticker that says I voted early, in red and navy letters on a white band, with white stars on navy above and red stripes below"
  },
  {
-  "stem": "yo-vote-temprano-star-ring-sticker",
+  "stem": "yo-vote-temprano-stars-and-stripes-sticker",
   "lang": "es",
   "pos": 12,
-  "layout": "cring",
+  "layout": "cflag",
   "headline": "yovotetemprano",
   "says": "Yo voté temprano",
-  "alt": "Sticker redondo que dice Yo voté temprano, con letras rojas y azul marino dentro de un anillo azul marino con estrellas blancas"
+  "alt": "Sticker redondo que dice Yo voté temprano, con letras rojas y azul marino sobre una franja blanca, estrellas blancas sobre azul marino arriba y franjas rojas abajo"
  },
  {
-  "stem": "future-voter-red-white-and-blue-band-sticker",
+  "stem": "i-voted-by-mail-wave-sticker",
   "lang": "en",
   "pos": 13,
-  "layout": "cband",
-  "headline": "futurevoter",
-  "says": "Future voter",
-  "alt": "Round sticker that says Future voter: “Future” in navy on a white band and “voter” in white on a red base, with white stars on navy across the top"
+  "layout": "wave",
+  "headline": "mailed",
+  "says": "I voted by mail",
+  "alt": "Round navy sticker that says I voted by mail, Election 2026, in white letters, with five red stars above and red and white waves below",
+  "palette": "classicnavy",
+  "dateText": "ELECTION 2026"
  },
  {
-  "stem": "yo-tambien-votare-red-white-and-blue-band-sticker",
+  "stem": "yo-vote-por-correo-wave-sticker",
   "lang": "es",
   "pos": 13,
-  "layout": "cband",
-  "headline": "yotambien",
-  "says": "Yo también votaré",
-  "alt": "Sticker redondo que dice Yo también votaré: “Yo también” en azul marino sobre una franja blanca y “votaré” en blanco sobre la parte de abajo, que es roja, con estrellas blancas sobre azul marino arriba"
+  "layout": "wave",
+  "headline": "yovotecorreo",
+  "says": "Yo voté por correo",
+  "alt": "Sticker redondo azul marino que dice Yo voté por correo, Elecciones 2026, con letras blancas, cinco estrellas rojas arriba y ondas rojas y blancas abajo",
+  "palette": "classicnavy",
+  "dateText": "ELECCIONES 2026"
  },
  {
-  "stem": "first-time-voter-star-ring-sticker",
+  "stem": "i-voted-early-check-mark-sticker",
   "lang": "en",
   "pos": 14,
-  "layout": "cring",
-  "headline": "firsttime",
-  "says": "First-time voter",
-  "alt": "Round sticker that says First-time voter, in red and navy letters inside a navy ring of white stars"
+  "layout": "done",
+  "headline": "voted",
+  "says": "I voted early",
+  "alt": "Round red sticker that says I voted early, Election 2026, in white letters under a white check mark in a navy circle",
+  "palette": "classicred",
+  "dateText": "ELECTION 2026"
  },
  {
-  "stem": "mi-primer-voto-star-ring-sticker",
+  "stem": "yo-vote-temprano-check-mark-sticker",
   "lang": "es",
   "pos": 14,
+  "layout": "done",
+  "headline": "yovotetemprano",
+  "says": "Yo voté temprano",
+  "alt": "Sticker redondo rojo que dice Yo voté temprano, Elecciones 2026, con letras blancas debajo de una palomita blanca en un círculo azul marino",
+  "palette": "classicred",
+  "dateText": "ELECCIONES 2026"
+ },
+ {
+  "stem": "i-voted-red-white-and-blue-band-sticker",
+  "lang": "en",
+  "pos": 15,
+  "layout": "cband",
+  "headline": "ivoted",
+  "says": "I voted",
+  "alt": "Round sticker that says I voted, in navy letters on a white band, with white stars on navy across the top and a red base"
+ },
+ {
+  "stem": "yo-vote-red-white-and-blue-band-sticker",
+  "lang": "es",
+  "pos": 15,
+  "layout": "cband",
+  "headline": "yovote",
+  "says": "Yo voté",
+  "alt": "Sticker redondo que dice Yo voté, con letras azul marino sobre una franja blanca, estrellas blancas sobre azul marino arriba y la parte de abajo roja"
+ },
+ {
+  "stem": "i-voted-today-dusk-sticker",
+  "lang": "en",
+  "pos": 16,
+  "layout": "dusk",
+  "headline": "ivotedtoday",
+  "says": "I voted today",
+  "alt": "Round sticker that says I voted today, Election 2026, in white letters on a sky fading from red to navy",
+  "palette": "classicnavy",
+  "dateText": "ELECTION 2026"
+ },
+ {
+  "stem": "yo-vote-hoy-dusk-sticker",
+  "lang": "es",
+  "pos": 16,
+  "layout": "dusk",
+  "headline": "yovotehoy",
+  "says": "Yo voté hoy",
+  "alt": "Sticker redondo que dice Yo voté hoy, Elecciones 2026, con letras blancas sobre un cielo que pasa de rojo a azul marino",
+  "palette": "classicnavy",
+  "dateText": "ELECCIONES 2026"
+ },
+ {
+  "stem": "i-voted-by-mail-stars-and-stripes-sticker",
+  "lang": "en",
+  "pos": 17,
+  "layout": "cflag",
+  "headline": "mailed",
+  "says": "I voted by mail",
+  "alt": "Round sticker that says I voted by mail, in red and navy letters on a white band, with white stars on navy above and red stripes below"
+ },
+ {
+  "stem": "yo-vote-por-correo-stars-and-stripes-sticker",
+  "lang": "es",
+  "pos": 17,
+  "layout": "cflag",
+  "headline": "yovotecorreo",
+  "says": "Yo voté por correo",
+  "alt": "Sticker redondo que dice Yo voté por correo, con letras rojas y azul marino sobre una franja blanca, estrellas blancas sobre azul marino arriba y franjas rojas abajo"
+ },
+ {
+  "stem": "i-voted-today-calendar-sticker",
+  "lang": "en",
+  "pos": 18,
+  "layout": "calendar",
+  "headline": "ivotedtoday",
+  "says": "I voted today",
+  "alt": "Round navy sticker that says I voted today, Election 2026, in white letters under a calendar page showing November 3",
+  "palette": "classicnavy",
+  "dateText": "ELECTION 2026"
+ },
+ {
+  "stem": "yo-vote-hoy-calendar-sticker",
+  "lang": "es",
+  "pos": 18,
+  "layout": "calendar",
+  "headline": "yovotehoy",
+  "says": "Yo voté hoy",
+  "alt": "Sticker redondo azul marino que dice Yo voté hoy, Elecciones 2026, con letras blancas debajo de una hoja de calendario con el 3 de noviembre",
+  "palette": "classicnavy",
+  "dateText": "ELECCIONES 2026"
+ },
+ {
+  "stem": "i-voted-check-mark-sticker",
+  "lang": "en",
+  "pos": 19,
+  "layout": "done",
+  "headline": "ivoted",
+  "says": "I voted",
+  "alt": "Round red sticker that says I voted, Election 2026, in white letters under a white check mark in a navy circle",
+  "palette": "classicred",
+  "dateText": "ELECTION 2026"
+ },
+ {
+  "stem": "yo-vote-check-mark-sticker",
+  "lang": "es",
+  "pos": 19,
+  "layout": "done",
+  "headline": "yovote",
+  "says": "Yo voté",
+  "alt": "Sticker redondo rojo que dice Yo voté, Elecciones 2026, con letras blancas debajo de una palomita blanca en un círculo azul marino",
+  "palette": "classicred",
+  "dateText": "ELECCIONES 2026"
+ },
+ {
+  "stem": "i-voted-today-red-white-and-blue-band-sticker",
+  "lang": "en",
+  "pos": 20,
+  "layout": "cband",
+  "headline": "ivotedtoday",
+  "says": "I voted today",
+  "alt": "Round sticker that says I voted today: “I voted” in navy on a white band and “today” in white on a red base, with white stars on navy across the top"
+ },
+ {
+  "stem": "yo-vote-hoy-red-white-and-blue-band-sticker",
+  "lang": "es",
+  "pos": 20,
+  "layout": "cband",
+  "headline": "yovotehoy",
+  "says": "Yo voté hoy",
+  "alt": "Sticker redondo que dice Yo voté hoy: “Yo voté” en azul marino sobre una franja blanca y “hoy” en blanco sobre la parte de abajo, que es roja, con estrellas blancas sobre azul marino arriba"
+ },
+ {
+  "stem": "i-voted-early-wave-sticker",
+  "lang": "en",
+  "pos": 21,
+  "layout": "wave",
+  "headline": "voted",
+  "says": "I voted early",
+  "alt": "Round navy sticker that says I voted early, Election 2026, in white letters, with five red stars above and red and white waves below",
+  "palette": "classicnavy",
+  "dateText": "ELECTION 2026"
+ },
+ {
+  "stem": "yo-vote-temprano-wave-sticker",
+  "lang": "es",
+  "pos": 21,
+  "layout": "wave",
+  "headline": "yovotetemprano",
+  "says": "Yo voté temprano",
+  "alt": "Sticker redondo azul marino que dice Yo voté temprano, Elecciones 2026, con letras blancas, cinco estrellas rojas arriba y ondas rojas y blancas abajo",
+  "palette": "classicnavy",
+  "dateText": "ELECCIONES 2026"
+ },
+ {
+  "stem": "i-voted-by-mail-star-ring-sticker",
+  "lang": "en",
+  "pos": 22,
   "layout": "cring",
-  "headline": "miprimervoto",
-  "says": "Mi primer voto",
-  "alt": "Sticker redondo que dice Mi primer voto, con letras rojas y azul marino dentro de un anillo azul marino con estrellas blancas"
+  "headline": "mailed",
+  "says": "I voted by mail",
+  "alt": "Round sticker that says I voted by mail, in red and navy letters inside a navy ring of white stars"
+ },
+ {
+  "stem": "yo-vote-por-correo-star-ring-sticker",
+  "lang": "es",
+  "pos": 22,
+  "layout": "cring",
+  "headline": "yovotecorreo",
+  "says": "Yo voté por correo",
+  "alt": "Sticker redondo que dice Yo voté por correo, con letras rojas y azul marino dentro de un anillo azul marino con estrellas blancas"
+ },
+ {
+  "stem": "i-voted-dusk-sticker",
+  "lang": "en",
+  "pos": 23,
+  "layout": "dusk",
+  "headline": "ivoted",
+  "says": "I voted",
+  "alt": "Round sticker that says I voted, Election 2026, in white letters on a sky fading from red to navy",
+  "palette": "classicnavy",
+  "dateText": "ELECTION 2026"
+ },
+ {
+  "stem": "yo-vote-dusk-sticker",
+  "lang": "es",
+  "pos": 23,
+  "layout": "dusk",
+  "headline": "yovote",
+  "says": "Yo voté",
+  "alt": "Sticker redondo que dice Yo voté, Elecciones 2026, con letras blancas sobre un cielo que pasa de rojo a azul marino",
+  "palette": "classicnavy",
+  "dateText": "ELECCIONES 2026"
  },
  {
   "stem": "i-voted-by-mail-red-white-and-blue-band-sticker",
   "lang": "en",
-  "pos": 15,
+  "pos": 24,
   "layout": "cband",
   "headline": "mailed",
   "says": "I voted by mail",
@@ -281,16 +495,38 @@
  {
   "stem": "yo-vote-por-correo-red-white-and-blue-band-sticker",
   "lang": "es",
-  "pos": 15,
+  "pos": 24,
   "layout": "cband",
   "headline": "yovotecorreo",
   "says": "Yo voté por correo",
   "alt": "Sticker redondo que dice Yo voté por correo: “Yo voté” en azul marino sobre una franja blanca y “por correo” en blanco sobre la parte de abajo, que es roja, con estrellas blancas sobre azul marino arriba"
  },
  {
+  "stem": "i-voted-early-calendar-sticker",
+  "lang": "en",
+  "pos": 25,
+  "layout": "calendar",
+  "headline": "voted",
+  "says": "I voted early",
+  "alt": "Round navy sticker that says I voted early, Election 2026, in white letters under a calendar page showing November 3",
+  "palette": "classicnavy",
+  "dateText": "ELECTION 2026"
+ },
+ {
+  "stem": "yo-vote-temprano-calendar-sticker",
+  "lang": "es",
+  "pos": 25,
+  "layout": "calendar",
+  "headline": "yovotetemprano",
+  "says": "Yo voté temprano",
+  "alt": "Sticker redondo azul marino que dice Yo voté temprano, Elecciones 2026, con letras blancas debajo de una hoja de calendario con el 3 de noviembre",
+  "palette": "classicnavy",
+  "dateText": "ELECCIONES 2026"
+ },
+ {
   "stem": "first-time-voter-stars-and-stripes-sticker",
   "lang": "en",
-  "pos": 16,
+  "pos": 26,
   "layout": "cflag",
   "headline": "firsttime",
   "says": "First-time voter",
@@ -299,16 +535,162 @@
  {
   "stem": "mi-primer-voto-stars-and-stripes-sticker",
   "lang": "es",
-  "pos": 16,
+  "pos": 26,
   "layout": "cflag",
   "headline": "miprimervoto",
   "says": "Mi primer voto",
   "alt": "Sticker redondo que dice Mi primer voto, con letras rojas y azul marino sobre una franja blanca, estrellas blancas sobre azul marino arriba y franjas rojas abajo"
  },
  {
+  "stem": "future-voter-star-ring-sticker",
+  "lang": "en",
+  "pos": 27,
+  "layout": "cring",
+  "headline": "futurevoter",
+  "says": "Future voter",
+  "alt": "Round sticker that says Future voter, in red and navy letters inside a navy ring of white stars"
+ },
+ {
+  "stem": "yo-tambien-votare-star-ring-sticker",
+  "lang": "es",
+  "pos": 27,
+  "layout": "cring",
+  "headline": "yotambien",
+  "says": "Yo también votaré",
+  "alt": "Sticker redondo que dice Yo también votaré, con letras rojas y azul marino dentro de un anillo azul marino con estrellas blancas"
+ },
+ {
+  "stem": "first-time-voter-dusk-sticker",
+  "lang": "en",
+  "pos": 28,
+  "layout": "dusk",
+  "headline": "firsttime",
+  "says": "First-time voter",
+  "alt": "Round sticker that says First-time voter, Election 2026, in white letters on a sky fading from red to navy",
+  "palette": "classicnavy",
+  "dateText": "ELECTION 2026"
+ },
+ {
+  "stem": "mi-primer-voto-dusk-sticker",
+  "lang": "es",
+  "pos": 28,
+  "layout": "dusk",
+  "headline": "miprimervoto",
+  "says": "Mi primer voto",
+  "alt": "Sticker redondo que dice Mi primer voto, Elecciones 2026, con letras blancas sobre un cielo que pasa de rojo a azul marino",
+  "palette": "classicnavy",
+  "dateText": "ELECCIONES 2026"
+ },
+ {
+  "stem": "future-voter-wave-sticker",
+  "lang": "en",
+  "pos": 29,
+  "layout": "wave",
+  "headline": "futurevoter",
+  "says": "Future voter",
+  "alt": "Round navy sticker that says Future voter, Election 2026, in white letters, with five red stars above and red and white waves below",
+  "palette": "classicnavy",
+  "dateText": "ELECTION 2026"
+ },
+ {
+  "stem": "yo-tambien-votare-wave-sticker",
+  "lang": "es",
+  "pos": 29,
+  "layout": "wave",
+  "headline": "yotambien",
+  "says": "Yo también votaré",
+  "alt": "Sticker redondo azul marino que dice Yo también votaré, Elecciones 2026, con letras blancas, cinco estrellas rojas arriba y ondas rojas y blancas abajo",
+  "palette": "classicnavy",
+  "dateText": "ELECCIONES 2026"
+ },
+ {
+  "stem": "first-time-voter-wave-sticker",
+  "lang": "en",
+  "pos": 30,
+  "layout": "wave",
+  "headline": "firsttime",
+  "says": "First-time voter",
+  "alt": "Round navy sticker that says First-time voter, Election 2026, in white letters, with five red stars above and red and white waves below",
+  "palette": "classicnavy",
+  "dateText": "ELECTION 2026"
+ },
+ {
+  "stem": "mi-primer-voto-wave-sticker",
+  "lang": "es",
+  "pos": 30,
+  "layout": "wave",
+  "headline": "miprimervoto",
+  "says": "Mi primer voto",
+  "alt": "Sticker redondo azul marino que dice Mi primer voto, Elecciones 2026, con letras blancas, cinco estrellas rojas arriba y ondas rojas y blancas abajo",
+  "palette": "classicnavy",
+  "dateText": "ELECCIONES 2026"
+ },
+ {
+  "stem": "future-voter-stars-and-stripes-sticker",
+  "lang": "en",
+  "pos": 31,
+  "layout": "cflag",
+  "headline": "futurevoter",
+  "says": "Future voter",
+  "alt": "Round sticker that says Future voter, in red and navy letters on a white band, with white stars on navy above and red stripes below"
+ },
+ {
+  "stem": "yo-tambien-votare-stars-and-stripes-sticker",
+  "lang": "es",
+  "pos": 31,
+  "layout": "cflag",
+  "headline": "yotambien",
+  "says": "Yo también votaré",
+  "alt": "Sticker redondo que dice Yo también votaré, con letras rojas y azul marino sobre una franja blanca, estrellas blancas sobre azul marino arriba y franjas rojas abajo"
+ },
+ {
+  "stem": "i-voted-early-dusk-sticker",
+  "lang": "en",
+  "pos": 32,
+  "layout": "dusk",
+  "headline": "voted",
+  "says": "I voted early",
+  "alt": "Round sticker that says I voted early, Election 2026, in white letters on a sky fading from red to navy",
+  "palette": "classicnavy",
+  "dateText": "ELECTION 2026"
+ },
+ {
+  "stem": "yo-vote-temprano-dusk-sticker",
+  "lang": "es",
+  "pos": 32,
+  "layout": "dusk",
+  "headline": "yovotetemprano",
+  "says": "Yo voté temprano",
+  "alt": "Sticker redondo que dice Yo voté temprano, Elecciones 2026, con letras blancas sobre un cielo que pasa de rojo a azul marino",
+  "palette": "classicnavy",
+  "dateText": "ELECCIONES 2026"
+ },
+ {
+  "stem": "i-voted-by-mail-calendar-sticker",
+  "lang": "en",
+  "pos": 33,
+  "layout": "calendar",
+  "headline": "mailed",
+  "says": "I voted by mail",
+  "alt": "Round navy sticker that says I voted by mail, Election 2026, in white letters under a calendar page showing November 3",
+  "palette": "classicnavy",
+  "dateText": "ELECTION 2026"
+ },
+ {
+  "stem": "yo-vote-por-correo-calendar-sticker",
+  "lang": "es",
+  "pos": 33,
+  "layout": "calendar",
+  "headline": "yovotecorreo",
+  "says": "Yo voté por correo",
+  "alt": "Sticker redondo azul marino que dice Yo voté por correo, Elecciones 2026, con letras blancas debajo de una hoja de calendario con el 3 de noviembre",
+  "palette": "classicnavy",
+  "dateText": "ELECCIONES 2026"
+ },
+ {
   "stem": "i-voted-early-red-white-and-blue-band-sticker",
   "lang": "en",
-  "pos": 17,
+  "pos": 34,
   "layout": "cband",
   "headline": "voted",
   "says": "I voted early",
@@ -317,10 +699,156 @@
  {
   "stem": "yo-vote-temprano-red-white-and-blue-band-sticker",
   "lang": "es",
-  "pos": 17,
+  "pos": 34,
   "layout": "cband",
   "headline": "yovotetemprano",
   "says": "Yo voté temprano",
   "alt": "Sticker redondo que dice Yo voté temprano: “Yo voté” en azul marino sobre una franja blanca y “temprano” en blanco sobre la parte de abajo, que es roja, con estrellas blancas sobre azul marino arriba"
+ },
+ {
+  "stem": "first-time-voter-check-mark-sticker",
+  "lang": "en",
+  "pos": 35,
+  "layout": "done",
+  "headline": "firsttime",
+  "says": "First-time voter",
+  "alt": "Round red sticker that says First-time voter, Election 2026, in white letters under a white check mark in a navy circle",
+  "palette": "classicred",
+  "dateText": "ELECTION 2026"
+ },
+ {
+  "stem": "mi-primer-voto-check-mark-sticker",
+  "lang": "es",
+  "pos": 35,
+  "layout": "done",
+  "headline": "miprimervoto",
+  "says": "Mi primer voto",
+  "alt": "Sticker redondo rojo que dice Mi primer voto, Elecciones 2026, con letras blancas debajo de una palomita blanca en un círculo azul marino",
+  "palette": "classicred",
+  "dateText": "ELECCIONES 2026"
+ },
+ {
+  "stem": "future-voter-dusk-sticker",
+  "lang": "en",
+  "pos": 36,
+  "layout": "dusk",
+  "headline": "futurevoter",
+  "says": "Future voter",
+  "alt": "Round sticker that says Future voter, Election 2026, in white letters on a sky fading from red to navy",
+  "palette": "classicnavy",
+  "dateText": "ELECTION 2026"
+ },
+ {
+  "stem": "yo-tambien-votare-dusk-sticker",
+  "lang": "es",
+  "pos": 36,
+  "layout": "dusk",
+  "headline": "yotambien",
+  "says": "Yo también votaré",
+  "alt": "Sticker redondo que dice Yo también votaré, Elecciones 2026, con letras blancas sobre un cielo que pasa de rojo a azul marino",
+  "palette": "classicnavy",
+  "dateText": "ELECCIONES 2026"
+ },
+ {
+  "stem": "first-time-voter-calendar-sticker",
+  "lang": "en",
+  "pos": 37,
+  "layout": "calendar",
+  "headline": "firsttime",
+  "says": "First-time voter",
+  "alt": "Round navy sticker that says First-time voter, Election 2026, in white letters under a calendar page showing November 3",
+  "palette": "classicnavy",
+  "dateText": "ELECTION 2026"
+ },
+ {
+  "stem": "mi-primer-voto-calendar-sticker",
+  "lang": "es",
+  "pos": 37,
+  "layout": "calendar",
+  "headline": "miprimervoto",
+  "says": "Mi primer voto",
+  "alt": "Sticker redondo azul marino que dice Mi primer voto, Elecciones 2026, con letras blancas debajo de una hoja de calendario con el 3 de noviembre",
+  "palette": "classicnavy",
+  "dateText": "ELECCIONES 2026"
+ },
+ {
+  "stem": "future-voter-red-white-and-blue-band-sticker",
+  "lang": "en",
+  "pos": 38,
+  "layout": "cband",
+  "headline": "futurevoter",
+  "says": "Future voter",
+  "alt": "Round sticker that says Future voter: “Future” in navy on a white band and “voter” in white on a red base, with white stars on navy across the top"
+ },
+ {
+  "stem": "yo-tambien-votare-red-white-and-blue-band-sticker",
+  "lang": "es",
+  "pos": 38,
+  "layout": "cband",
+  "headline": "yotambien",
+  "says": "Yo también votaré",
+  "alt": "Sticker redondo que dice Yo también votaré: “Yo también” en azul marino sobre una franja blanca y “votaré” en blanco sobre la parte de abajo, que es roja, con estrellas blancas sobre azul marino arriba"
+ },
+ {
+  "stem": "first-time-voter-star-ring-sticker",
+  "lang": "en",
+  "pos": 39,
+  "layout": "cring",
+  "headline": "firsttime",
+  "says": "First-time voter",
+  "alt": "Round sticker that says First-time voter, in red and navy letters inside a navy ring of white stars"
+ },
+ {
+  "stem": "mi-primer-voto-star-ring-sticker",
+  "lang": "es",
+  "pos": 39,
+  "layout": "cring",
+  "headline": "miprimervoto",
+  "says": "Mi primer voto",
+  "alt": "Sticker redondo que dice Mi primer voto, con letras rojas y azul marino dentro de un anillo azul marino con estrellas blancas"
+ },
+ {
+  "stem": "future-voter-check-mark-sticker",
+  "lang": "en",
+  "pos": 40,
+  "layout": "done",
+  "headline": "futurevoter",
+  "says": "Future voter",
+  "alt": "Round red sticker that says Future voter, Election 2026, in white letters under a white check mark in a navy circle",
+  "palette": "classicred",
+  "dateText": "ELECTION 2026"
+ },
+ {
+  "stem": "yo-tambien-votare-check-mark-sticker",
+  "lang": "es",
+  "pos": 40,
+  "layout": "done",
+  "headline": "yotambien",
+  "says": "Yo también votaré",
+  "alt": "Sticker redondo rojo que dice Yo también votaré, Elecciones 2026, con letras blancas debajo de una palomita blanca en un círculo azul marino",
+  "palette": "classicred",
+  "dateText": "ELECCIONES 2026"
+ },
+ {
+  "stem": "i-voted-by-mail-dusk-sticker",
+  "lang": "en",
+  "pos": 41,
+  "layout": "dusk",
+  "headline": "mailed",
+  "says": "I voted by mail",
+  "alt": "Round sticker that says I voted by mail, Election 2026, in white letters on a sky fading from red to navy",
+  "palette": "classicnavy",
+  "dateText": "ELECTION 2026"
+ },
+ {
+  "stem": "yo-vote-por-correo-dusk-sticker",
+  "lang": "es",
+  "pos": 41,
+  "layout": "dusk",
+  "headline": "yovotecorreo",
+  "says": "Yo voté por correo",
+  "alt": "Sticker redondo que dice Yo voté por correo, Elecciones 2026, con letras blancas sobre un cielo que pasa de rojo a azul marino",
+  "palette": "classicnavy",
+  "dateText": "ELECCIONES 2026"
  }
 ]

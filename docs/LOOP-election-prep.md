@@ -222,3 +222,11 @@ the right sticker, the right dates, the official link. Nothing expired, nothing 
   Garrett's picks. Two fix rounds from the 40 px sheets (type too small in Marquee and Broadcast, Orbit
   rings through the letters, a cursor mark on Pixel state, Dusk's clipped sun, Scoreboard dots too coarse).
   QA after a dist rebuild: events PASS, save PASS. Committed, not pushed: goes with the morning deploy.
+- **Oct 27, night (Garrett's picks):** State: Postmark, Marquee, Pixel state, three more English stickers per state
+  (153 new, 714 total); every existing bespoke file checksummed before and after, 0 changed. Colorways taken from
+  what each state's English page doesn't show, balanced to 12 or 13 per colorway; `bespoke_check.py` now wants 14.
+  Classic: Wave, Calendar (navy), Done (red), Dusk (red to navy) in red, white and blue, 42 per language (was 18),
+  original 36 unchanged, first six = six layouts and six messages. Home showcase: NY to I voted early Marquee
+  (forest), VA to Future voter Pixel state (navy): eight designs, eight colors. Pixel state map capped for tall
+  states. QA: facts, Spanish, SEO, events, save PASS; cards PASS (80,640 per engine, 0 outside the safe circle);
+  no horizontal overflow on home or Texas at 390 and 1280. Committed, not pushed: goes with the Oct 28 morning deploy.
