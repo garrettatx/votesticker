@@ -105,3 +105,11 @@ save and event QA; official sources only; Spanish per `docs/spanish-style.md`. O
   rules: poll worker manuals and ethics opinions settle questions voter pages skip; fill missing
   `polls_rules.phone` facts from them. (4) Emergency mail ballot routes after the request deadline (MT, RI)
   may exist elsewhere. (5) Read these ten pages' queries again Nov 11, 14 days from the recrawl.
+
+### October 28, Late: Batches Queued (Garrett's Ask)
+
+Work the state pages in batches of ten, fewest impressions first (Oct 21 to 28), same method: Perplexity
+leads in Chrome, official verification, copy made plain, two agents at a time.
+- Batch 2 (running): IA, ID, MS, NE, OK, DC, IN, ME, NV, CT.
+- Batch 3 (next): MO, HI, KS, AR, GA, WI, AL, VA, PA, MA. Re-pull Search Console before starting in case
+  the order moved.
