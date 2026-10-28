@@ -15,24 +15,31 @@
  },
  "dates": {
   "reg_deadline": {
-   "en": "The regular deadline was Friday, October 16, 2026. Missed it? You can still register and vote the same day during early voting or on Election Day at your town's Same Day Registration location.",
-   "es": "La fecha límite regular fue el viernes 16 de octubre de 2026. ¿Se te pasó? Todavía puedes registrarte y votar el mismo día durante la votación anticipada o el Día de las Elecciones en el lugar de registro el mismo día (Same Day Registration) de tu municipio.",
-   "src": "https://portal.ct.gov/-/media/sots/electionservices/voterfactsheets/2026-voter-reg/voter-registration-deadlines-11-03-26pub.pdf",
-   "checked": "2026-10-21",
-   "quote": "If you miss the October 16 voter registration deadline, you can still register and vote through Same Day Registration.",
-   "status": "verified"
+   "en": "The regular deadline was Friday, October 16, 2026. Missed it? You can still register and vote the same day during early voting or on Election Day at your town's Same Day Registration location. Bring a birth certificate, driver's license or Social Security card. If it doesn't show your address in town, also bring something that does, such as a utility bill, lease or paycheck.",
+   "es": "La fecha límite regular fue el viernes 16 de octubre de 2026. ¿Se te pasó? Todavía puedes registrarte y votar el mismo día durante la votación anticipada o el Día de las Elecciones en el lugar de registro el mismo día (Same Day Registration) de tu municipio. Lleva tu acta de nacimiento, licencia de conducir o tarjeta del Seguro Social. Si no muestra tu dirección en el municipio, lleva también algo que sí la muestre, como un recibo de servicios, un contrato de arrendamiento o un talón de pago.",
+   "src": "https://portal.ct.gov/-/media/sots/electionservices/handbooks/2026/2026-sdr-handbook.pdf",
+   "checked": "2026-10-28",
+   "quote": "This means they must provide their birth certificate, driver’s license, or Social Security card. ... An applicant whose identification does not include proof of their residential address must also submit another form of identification showing their residential address in the municipality.",
+   "status": "verified",
+   "notes": "October 16 and Same Day Registration: https://portal.ct.gov/-/media/sots/electionservices/voterfactsheets/2026-voter-reg/voter-registration-deadlines-11-03-26pub.pdf, 'If you miss the October 16 voter registration deadline, you can still register and vote through Same Day Registration.' The SDR handbook also allows another elector's testimony or other satisfactory proof, and a college photo ID with current address."
   },
   "mail_request": {
-   "status": "missing",
-   "notes": "The 2026 Voter Guide says 'Submit your absentee ballot application at any time, but remember it needs to be returned back to you by mail' and sends voters applying six or fewer days before the election for illness, disability or a hospital stay to the paper Emergency Application. No regular application deadline is stated."
+   "en": "You can apply for an absentee ballot any time, but it comes back to you by mail, so this close to Election Day voting in person is safer. Six or fewer days before the election, if a sudden illness or disability keeps you from the polls, or you're in a hospital or nursing home, use the paper Emergency Application for Absentee Ballot.",
+   "es": "Puedes solicitar una boleta de voto en ausencia en cualquier momento, pero te llega por correo, así que a estas alturas es más seguro votar en persona. Seis días o menos antes de la elección, si una enfermedad o discapacidad repentina no te deja ir a votar, o estás en un hospital o un asilo de ancianos, usa la solicitud de emergencia en papel (Emergency Application for Absentee Ballot).",
+   "src": "https://portal.ct.gov/-/media/sots/early-voting/2026-voting-guide/2026_voter_guide-2-final-combined.pdf",
+   "checked": "2026-10-28",
+   "quote": "Submit your absentee ballot application at any time, but remember it needs to be returned back to you by mail. If you need to apply for an absentee ballot six or fewer days before an election because of an unforeseen illness or disability",
+   "status": "verified",
+   "notes": "Continues: 'or because you are a patient in a hospital or nursing home, you must use a paper Emergency Application for Absentee Ballot.' No fixed request deadline is printed in the 2026 guide (Perplexity's November 2 is not confirmed). 'Safer to vote in person' is the page's reading of 'it needs to be returned back to you by mail'."
   },
   "mail_return": {
-   "en": "Mailing it or using a drop box? Your Town Clerk must receive it by 8 p.m. on Tuesday, November 3. Bringing it to the Town Clerk yourself? Do it by close of business on Monday, November 2, 2026.",
-   "es": "¿La vas a mandar por correo o dejar en un buzón de entrega? La oficina del secretario municipal (Town Clerk) debe recibirla a más tardar a las 8 p. m. del martes 3 de noviembre. ¿La vas a llevar tú a esa oficina? Hazlo antes del cierre de oficina del lunes 2 de noviembre de 2026.",
+   "en": "Mailing it or using a drop box? Your Town Clerk must receive it by 8 p.m. on Tuesday, November 3. Bringing it to the Town Clerk yourself? Do it by close of business on Monday, November 2. A family member who lives with you, or the designee of an ill or disabled voter, can hand it in until 8 p.m. on Election Day.",
+   "es": "¿La mandas por correo o la dejas en un buzón de entrega? El secretario municipal (Town Clerk) debe recibirla a más tardar a las 8 p. m. del martes 3 de noviembre. ¿La llevas tú mismo al secretario municipal? Hazlo antes del cierre de la oficina el lunes 2 de noviembre. Un familiar que vive contigo, o la persona designada de un votante enfermo o con discapacidad, puede entregarla hasta las 8 p. m. del Día de las Elecciones.",
    "src": "https://portal.ct.gov/-/media/sots/early-voting/2026-voting-guide/2026_voter_guide-2-final-combined.pdf",
-   "checked": "2026-10-21",
-   "quote": "Absentee ballots which are mailed or returned via drop box must be received by the clerk no later than 8 p.m. on Election Day, Tuesday, November 3. Absentee ballots returned in person by the voter must be delivered by Monday, November 2.",
-   "status": "verified"
+   "checked": "2026-10-28",
+   "quote": "Returned in person by the voter to the Town Clerk: No later than the close of business on the day before Election Day, November 2, 2026. Returned in person by an authorized designee for an ill or disabled voter or by an immediate family member of the voter: No later than 8 p.m. on Election Day. Returned by mail or official ballot drop box: Must be received by the Town Clerk no later than 8 p.m. on Election Day.",
+   "status": "verified",
+   "notes": "The guide prints 'day before Election Day — November 2, 2026' with a dash; the quote uses a comma."
   },
   "early_hours": {
    "en": "Early voting runs 10 a.m. to 6 p.m. every day, weekends included, with longer hours, 8 a.m. to 8 p.m., on Tuesday, October 27, and Thursday, October 29. If you're in line by closing time, you can vote.",
@@ -46,12 +53,13 @@
    "es_after": "La votación anticipada terminó el 1 de noviembre. Vota en el lugar de votación que te corresponde el Día de las Elecciones, de 6 a. m. a 8 p. m."
   },
   "cure": {
-   "en": "Forgot to sign your absentee envelope? Your Town Clerk will try to reach you so you can fix it before the polls close at 8 p.m. on Tuesday, November 3, 2026.",
-   "es": "¿Se te olvidó firmar el sobre de tu boleta de voto en ausencia? La oficina del secretario municipal (Town Clerk) tratará de contactarte para que lo corrijas antes de que cierren las urnas a las 8 p. m. del martes 3 de noviembre de 2026.",
-   "src": "https://portal.ct.gov/-/media/sots/early-voting/2026-voting-guide/2026_voter_guide-2-final-combined.pdf",
-   "checked": "2026-10-21",
-   "quote": "If you forget to sign your envelope, your Town Clerk will make their best efforts to contact you, so you have an opportunity to correct the issue before the polls close on Election Day.",
-   "status": "verified"
+   "en": "Forgot to sign your absentee envelope? Your Town Clerk will try to reach you. You can sign it in person at the Town Clerk's office until the polls close at 8 p.m. on Tuesday, November 3, 2026.",
+   "es": "¿Se te olvidó firmar el sobre de tu boleta de voto en ausencia? El secretario municipal (Town Clerk) tratará de comunicarse contigo. Puedes firmarlo en persona en la oficina del secretario municipal hasta que cierren las casillas a las 8 p. m. del martes 3 de noviembre de 2026.",
+   "src": "https://portal.ct.gov/-/media/sots/electionservices/lead_communications/2026/july/20260720finalmoderatorshandbooksupplement.pdf",
+   "checked": "2026-10-28",
+   "quote": "Absentee ballots received without a signed voter certification can be cured with the voter's signature in the presence of the municipal clerk until polls close on election day.",
+   "status": "verified",
+   "notes": "Moderator's Handbook Supplement ED-701, 07/2026. Only a missing signature can be cured. Clerk's best efforts to contact: 2026 Voter Guide."
   }
  },
  "how": {
@@ -59,17 +67,18 @@
    "en": "Vote early at your town's designated early voting location, or at your assigned polling place on Election Day. Every town has at least one early voting site, and anyone registered in New Britain, Windham, New Haven, Mansfield or Danbury can also vote early at the state university campus site in that town.",
    "es": "Vota por anticipado en el lugar de votación anticipada que designó tu municipio, o en el lugar de votación que te corresponde el Día de las Elecciones. Cada municipio tiene por lo menos un lugar de votación anticipada, y cualquier persona registrada en New Britain, Windham, New Haven, Mansfield o Danbury también puede votar por anticipado en el campus de la universidad estatal de ese municipio.",
    "src": "https://portal.ct.gov/-/media/sots/early-voting/2026-voting-guide/2026_voter_guide-2-final-combined.pdf",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "All voters registered in the towns where these schools are located can vote on campus during the Early Voting period that runs from Monday, October 19, through Sunday, November 1.",
    "status": "verified"
   },
   "first_time": {
-   "en": "Voting for the first time in Connecticut after registering by mail? If there's a mark next to your name on the voter list, bring a current photo ID with your name and address, or a copy of a current utility bill, bank statement, government check, paycheck or government document that shows them.",
-   "es": "¿Vas a votar por primera vez en Connecticut después de registrarte por correo? Si hay una marca junto a tu nombre en la lista de votantes, lleva una identificación con foto vigente con tu nombre y dirección, o una copia de un recibo de servicios, un estado de cuenta bancario, un cheque del gobierno, un talón de pago o un documento del gobierno recientes que los muestren.",
-   "src": "https://portal.ct.gov/-/media/sots/early-voting/2026-voting-guide/2026_voter_guide-2-final-combined.pdf",
-   "checked": "2026-10-21",
-   "quote": "Copy of a current and valid photo ID that shows the voter’s name and address or copy of a current utility bill, bank, statement, government check, paycheck, or government document that shows the voter’s name and address.",
-   "status": "verified"
+   "en": "Voting for the first time in Connecticut after registering by mail? If there's a mark next to your name on the voter list, show one of these: a current photo ID with your name; a paper or digital copy of a current utility bill, bank statement, government check, paycheck or government document with your name and address; your Connecticut driver's license number; or the last four digits of your Social Security number.",
+   "es": "¿Votas por primera vez en Connecticut después de registrarte por correo? Si hay una marca junto a tu nombre en la lista de votantes, muestra una de estas: una identificación vigente con foto y tu nombre; una copia en papel o digital de un recibo de servicios, un estado de cuenta bancario, un cheque del gobierno, un talón de pago o un documento del gobierno actual con tu nombre y dirección; el número de tu licencia de conducir de Connecticut; o los últimos cuatro dígitos de tu número de Seguro Social.",
+   "src": "https://portal.ct.gov/-/media/sots/electionservices/lead_communications/2026/july/20260720finalmoderatorshandbooksupplement.pdf",
+   "checked": "2026-10-28",
+   "quote": "An Asterisk voter must present either (1) a current and valid photo ID with their name, or (2) a (digital or hard) copy of a current utility bill, bank statement, government check, paycheck or government document that shows the name and address of the voter, (3) a valid Connecticut motor vehicle operator's license number, or (4) the last four digits of the individual's Social Security number. The Asterisk voter cannot be required to show a photo ID with their name and address as indicated in C.G.S. § 9-261.",
+   "status": "verified",
+   "notes": "The supplement (ED-701, 07/2026, p. 14) notes a discrepancy between CGS 9-23r and 9-261 and tells moderators to follow 9-23r. The 2026 Voter Guide p. 11 still prints the narrower photo ID 'with name and address' wording."
   }
  },
  "where": {
@@ -137,19 +146,20 @@
    "notes": "The Voter Guide asks you to print and sign your name on the return envelope; no witness or notary rule found."
   },
   "cure": {
-   "en": "Forgot to sign the envelope? Your Town Clerk will try to contact you so you can fix it before the polls close on Election Day. Put your phone number and email on your application so they can reach you.",
-   "es": "¿Se te olvidó firmar el sobre? La oficina del secretario municipal (Town Clerk) tratará de contactarte para que lo corrijas antes de que cierren las urnas el Día de las Elecciones. Pon tu teléfono y tu correo electrónico en tu solicitud para que te puedan localizar.",
+   "en": "Only a missing signature can be fixed. Your Town Clerk will try to contact you, and you sign the envelope at the Town Clerk's office before the polls close on Election Day. Put your phone number and email on your application so they can reach you.",
+   "es": "Solo se puede corregir una firma que falta. El secretario municipal (Town Clerk) tratará de comunicarse contigo, y firmas el sobre en su oficina antes de que cierren las casillas el Día de las Elecciones. Pon tu número de teléfono y tu correo electrónico en tu solicitud para que puedan comunicarse contigo.",
    "src": "https://portal.ct.gov/-/media/sots/early-voting/2026-voting-guide/2026_voter_guide-2-final-combined.pdf",
-   "checked": "2026-10-21",
-   "quote": "Be sure to provide a phone number and email address on your absentee ballot application so your Town Clerk can contact you if necessary.",
-   "status": "verified"
+   "checked": "2026-10-28",
+   "quote": "Curing is the process for correcting a missing signature on an absentee ballot return envelope. ... Be sure to provide a phone number and email address on your absentee ballot application so your Town Clerk can contact you if necessary.",
+   "status": "verified",
+   "notes": "Signing at the clerk's office: Moderator's Handbook Supplement 07/2026 (dates.cure)."
   },
   "dropbox": {
-   "en": "You can return your ballot in an official ballot drop box. Only you, a spouse, child, parent or sibling who lives with you, your designee if you're ill or disabled, a police officer or a registrar of voters can mail it or put it in a drop box for you.",
-   "es": "Puedes devolver tu boleta en un buzón de entrega oficial. Solo tú, tu cónyuge, hijo, padre, madre, hermano o hermana que viva contigo, la persona que designaste si estás enfermo o tienes una discapacidad, un policía o un registrador de votantes (registrar of voters) pueden mandarla por correo o dejarla en un buzón de entrega por ti.",
+   "en": "You can return your ballot in an official ballot drop box. Only you, a spouse, child, parent or sibling who lives with you, a caregiver you named on your application because you're ill or disabled, a police officer, or a registrar, deputy registrar or assistant registrar of voters can mail it or put it in a drop box for you.",
+   "es": "Puedes devolver tu boleta en un buzón oficial de entrega de boletas. Solo tú, tu cónyuge, hijo, padre, madre, hermano o hermana que viva contigo, la persona que te cuida y que nombraste en tu solicitud porque estás enfermo o tienes una discapacidad, un policía, o un registrador de votantes (registrar), registrador adjunto (deputy registrar) o registrador asistente (assistant registrar) pueden enviarla por correo o dejarla en un buzón por ti.",
    "src": "https://portal.ct.gov/-/media/sots/early-voting/2026-voting-guide/2026_voter_guide-2-final-combined.pdf",
-   "checked": "2026-10-21",
-   "quote": "You can return your completed absentee ballot by mail, place it in an official ballot drop box, or return it in person to your Town Clerk.",
+   "checked": "2026-10-28",
+   "quote": "If mailing your ballot or placing it in an official drop box: You (the voter) An immediate family member who is a spouse, child, parent, or sibling and lives with you Your legal designee (such as a doctor, nurse, or family member) who is caring for you because of an illness or disability and who you designated in Section VI of your absentee ballot application A police officer Your Registrar of Voters, Deputy Registrar of Voters, or Assistant Registrar of Voters",
    "status": "verified"
   }
  },
@@ -163,8 +173,13 @@
    "status": "verified"
   },
   "phone": {
-   "status": "missing",
-   "notes": "The 2026 Voter Guide only says the press may not photograph or record how a voter marks a ballot. No rule for voters' phones or ballot photos found in the guide or CGS chapter 146 (same finding as docs/faq-sources.json)."
+   "en": "We found no Connecticut rule on voters taking photos or ballot selfies. The state's voter guide only says the press may not photograph how a voter marks a ballot. Ask the moderator at your polling place before you take a photo inside.",
+   "es": "No encontramos ninguna regla de Connecticut sobre fotos o selfies de votantes con su boleta. La guía estatal para votantes solo dice que la prensa no puede fotografiar cómo un votante marca su boleta. Pregúntale al moderador (moderator) de tu lugar de votación antes de tomar una foto adentro.",
+   "src": "https://portal.ct.gov/-/media/sots/early-voting/2026-voting-guide/2026_voter_guide-2-final-combined.pdf",
+   "checked": "2026-10-28",
+   "quote": "At election sites, including Early Voting locations, members of the media may not take photos or record video that show how a voter marks their ballot.",
+   "status": "verified",
+   "notes": "CGS chapter 146 has no voter photo rule. A 2016 AP report quoted SOTS saying no law bans ballot selfies; not an official 2026 source."
   },
   "line": {
    "en": "If you're in line by 8 p.m., you can vote, and your vote will be counted.",
@@ -177,12 +192,13 @@
  },
  "sticker": {
   "tradition": {
-   "en": "Connecticut law makes room for the I voted sticker: poll workers can hand out \"I Voted Today\" stickers right inside the 75-foot no-campaigning zone.",
-   "es": "La ley de Connecticut le hace espacio al sticker de \"I voted\": los trabajadores electorales pueden repartir stickers de \"I Voted Today\" dentro de la zona de 75 pies donde no se permite hacer campaña.",
-   "src": "https://www.cga.ct.gov/current/pub/chap_146.htm",
-   "checked": "2026-10-21",
-   "quote": "(2) the registrars of voters from directing the officials at a primary, referendum or election to distribute, within the restricted area, adhesive labels on which are imprinted the words “I Voted Today”",
-   "status": "verified"
+   "en": "For the 2020 election, the 100th anniversary of the 19th Amendment, Connecticut's Secretary of the State put out \"I Voted\" stickers honoring Connecticut women who fought for the vote. Wilton designer Pamela Hovland started the project, and the stickers won a 2020 U.S. Election Assistance Commission award. You can still download them from the Secretary of the State's site.",
+   "es": "Para la elección de 2020, en el centenario de la Enmienda 19, la Secretaría del Estado de Connecticut sacó stickers de \"I Voted\" en honor a las mujeres de Connecticut que lucharon por el voto. La diseñadora Pamela Hovland, de Wilton, inició el proyecto, y los stickers ganaron un premio de la Comisión de Asistencia Electoral de EE. UU. (U.S. Election Assistance Commission) en 2020. Todavía puedes descargarlos del sitio de la Secretaría del Estado.",
+   "src": "https://portal.ct.gov/sots/press-releases/previous-years/2021-press-releases/connecticuts-commemorative-suffragist-i-voted-stickers",
+   "checked": "2026-10-28",
+   "quote": "Connecticut Secretary of the State Denise Merrill announced today that Connecticut’s Commemorative Suffragist “I Voted” Stickers were named a 2020 Clearinghouse Award winner by the U.S. Election Assistance Commission for their depiction of Connecticut women who fought for women’s suffrage and voting rights. The project was initiated by Pamela Hovland, a Wilton resident, graphic designer, faculty member at Yale University and a long-time visual activist",
+   "status": "verified",
+   "notes": "SOTS press release, March 4, 2021. Download page: https://portal.ct.gov/SOTS/Education/Suffrage-Centennial/Digital-I-Voted-Stickers (linked from the release; not opened). The old tradition text (CGS 9-236 lets officials hand out 'I Voted Today' labels inside the 75-foot zone) still holds."
   }
  },
  "faq": {
@@ -211,7 +227,7 @@
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026 with curl: the SOTS 2026 General Election Guide PDF (portal.ct.gov), the November 3 registration deadlines PDF, the SOTS Early Voting page, the MyVote voter fact sheet page (which links 'Polling Place Locator' and 'Am I registered' to portaldir.ct.gov/sots/LookUp.aspx; that page shows a bot check to curl, so its text was not read), and CGS chapter 146 on cga.ct.gov (sections 9-174, 9-236, 9-236b, 9-237a). EARLY VOTING DATES FOR THE LEAD (states.js has CT unchecked): Monday, October 19 to Sunday, November 1, 2026, 14 days. Hours 10 a.m. to 6 p.m. daily, 8 a.m. to 8 p.m. on Tuesday, October 27, and Thursday, October 29. Sources: (1) https://portal.ct.gov/sots/election-services/early-voting/early-voting, table rows 'Monday, October 19 10:00 a.m. to 6:00 p.m.' through 'Sunday, November 1 10:00 a.m. to 6:00 p.m.', with 'Tuesday, October 27 8:00 a.m. to 8:00 p.m.' and 'Thursday, October 29 8:00 a.m. to 8:00 p.m.' (2) the 2026 Voter Guide: 'The 2026 in-person Early Voting period runs 14 days from Monday, October 19, through Sunday, November 1. Hours most days are 10 a.m. − 6 p.m. On Tuesday, October 27, and Thursday, October 29, there are extended hours from 8 a.m. to 8 p.m.' Suggested states.js note: 'Vote at your town's early voting location. Same Day Registration is open all 14 days.' Absentee: no-excuse absentee is new for 2026; no regular application deadline is stated. The guide's 'Fast Facts' says a designee of an ill or disabled voter can deliver to the Town Clerk by 8 p.m. on Election Day, and its FAQ adds immediate family members to that 8 p.m. in-person rule; the file states only the voter's own deadlines. Phone rule and expired-ID rule not found. Sticker: the 2026 Voter Guide's Election Day steps end with 'Receive your \"I Voted\" sticker! Yay!' after placing the ballot in the tabulator; no sticker design contest found.",
+ "notes": "Read October 21, 2026 with curl: the SOTS 2026 General Election Guide PDF (portal.ct.gov), the November 3 registration deadlines PDF, the SOTS Early Voting page, the MyVote voter fact sheet page (which links 'Polling Place Locator' and 'Am I registered' to portaldir.ct.gov/sots/LookUp.aspx; that page shows a bot check to curl, so its text was not read), and CGS chapter 146 on cga.ct.gov (sections 9-174, 9-236, 9-236b, 9-237a). EARLY VOTING DATES FOR THE LEAD (states.js has CT unchecked): Monday, October 19 to Sunday, November 1, 2026, 14 days. Hours 10 a.m. to 6 p.m. daily, 8 a.m. to 8 p.m. on Tuesday, October 27, and Thursday, October 29. Sources: (1) https://portal.ct.gov/sots/election-services/early-voting/early-voting, table rows 'Monday, October 19 10:00 a.m. to 6:00 p.m.' through 'Sunday, November 1 10:00 a.m. to 6:00 p.m.', with 'Tuesday, October 27 8:00 a.m. to 8:00 p.m.' and 'Thursday, October 29 8:00 a.m. to 8:00 p.m.' (2) the 2026 Voter Guide: 'The 2026 in-person Early Voting period runs 14 days from Monday, October 19, through Sunday, November 1. Hours most days are 10 a.m. − 6 p.m. On Tuesday, October 27, and Thursday, October 29, there are extended hours from 8 a.m. to 8 p.m.' Suggested states.js note: 'Vote at your town's early voting location. Same Day Registration is open all 14 days.' Absentee: no-excuse absentee is new for 2026; no regular application deadline is stated. The guide's 'Fast Facts' says a designee of an ill or disabled voter can deliver to the Town Clerk by 8 p.m. on Election Day, and its FAQ adds immediate family members to that 8 p.m. in-person rule; the file states only the voter's own deadlines. Phone rule and expired-ID rule not found. Sticker: the 2026 Voter Guide's Election Day steps end with 'Receive your \"I Voted\" sticker! Yay!' after placing the ballot in the tabulator; no sticker design contest found. UPDATE Oct 28, 2026: read the 2026 Moderator's Handbook Supplement (ED-701, 07/2026) and 2026 SDR Handbook from the SOTS Handbooks page; first-time ID corrected to CGS 9-23r per the supplement; cure in person at clerk; SDR documents; full drop-box returner list; late-return by family/designee; emergency absentee application; suffragist sticker story.",
  "election_day": {
   "hours": {
    "en": "Polling places are open 6 a.m. to 8 p.m. local time.",

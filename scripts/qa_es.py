@@ -28,7 +28,7 @@ SENTINELS = ['Vote Stickers', 'Early voting', 'early voting', 'Ready-Made', 'Mak
              'Election Day', 'Find your', 'Pick a', 'This tool', 'built by', 'Your sticker', 'Tap one', 'votes by mail',
              'Browse All', 'All States', 'Looking for', 'Type a state', 'Suggested post', 'Preview circle', 'Main message']
 # Proper nouns and bracketed official titles that stay in English on purpose.
-ALLOWED = ['Vote Sticker', 'VoteSticker.org', 'League of Women Voters', 'Supervisor of Elections', 'county board of elections',
+ALLOWED = ['Vote Sticker', 'The Queue', 'VoteSticker.org', 'League of Women Voters', 'Supervisor of Elections', 'county board of elections',
            'local election authority', 'county auditor', 'Secretary of State', 'Garrett Digital', 'English',
            # Official program and office names kept in English on purpose (docs/spanish-style.md).
            'Department of Highway Safety and Motor Vehicles', 'Vote-by-Mail Ballot Information and Status Lookup',

@@ -19,10 +19,10 @@
  },
  "dates": {
   "reg_deadline": {
-   "en": "By mail or at the county clerk: closed October 6, 2026. Online: through Election Day, November 3. You can also register in person at an early voting site or at a polling place on Election Day.",
-   "es": "Por correo o en la oficina del secretario del condado (county clerk): cerró el 6 de octubre de 2026. En línea: hasta el Día de las Elecciones, el 3 de noviembre. También puedes registrarte en persona en un centro de votación anticipada o en un lugar de votación el Día de las Elecciones.",
+   "en": "Standard registration by mail or at the county clerk closed October 6, 2026. You can still register online through Election Day, November 3, or in person at an early voting site or a polling place on Election Day.",
+   "es": "El registro regular por correo o en la oficina del secretario del condado (county clerk) cerró el 6 de octubre de 2026. Todavía puedes registrarte en línea hasta el Día de las Elecciones, el 3 de noviembre, o en persona en un lugar de votación anticipada o en un lugar de votación el Día de las Elecciones.",
    "src": "https://www.leg.state.nv.us/nrs/nrs-293.html",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "By computer using the system established by the Secretary of State pursuant to NRS 293.671 , is the day of the primary election, presidential preference primary election or general election.",
    "status": "verified"
   },
@@ -57,20 +57,22 @@
  },
  "how": {
   "in_person": {
-   "en": "Nevada mails you a ballot, but you can still vote in person during early voting or on Election Day. Your county may set up vote centers where anyone registered in the county can vote on Election Day. If you already have a mail ballot, bring it to surrender, or sign a statement that you haven't voted.",
-   "es": "Nevada te envía una boleta por correo, pero igual puedes votar en persona durante la votación anticipada o el Día de las Elecciones. Tu condado puede abrir centros de votación donde cualquier persona registrada en el condado puede votar el Día de las Elecciones. Si ya tienes una boleta por correo, llévala para entregarla, o firma una declaración de que no has votado.",
+   "en": "Nevada mails you a ballot, but you can still vote in person during early voting or on Election Day. If you already have a mail ballot, bring it to surrender, or sign a statement that you haven't voted. Registering at the polls? Bring a current Nevada driver's license or DMV ID card. If it doesn't show your current address, also bring a document that does, such as a utility bill or bank statement. You may vote a provisional ballot.",
+   "es": "Nevada te envía una boleta por correo, pero igual puedes votar en persona durante la votación anticipada o el Día de las Elecciones. Si ya tienes una boleta por correo, llévala para entregarla, o firma una declaración de que no has votado. ¿Te vas a registrar en el lugar de votación? Lleva una licencia de conducir o una tarjeta de identificación vigente del DMV de Nevada. Si no muestra tu dirección actual, lleva también un documento que sí la muestre, como un recibo de servicios o un estado de cuenta bancario. Es posible que votes con una boleta provisional.",
    "src": "https://www.leg.state.nv.us/nrs/nrs-293.html",
-   "checked": "2026-10-21",
-   "quote": "Any person entitled to vote in the county by personal appearance may do so at any polling place established pursuant to subsection 1.",
-   "status": "verified"
+   "checked": "2026-10-28",
+   "quote": "(c) Except as otherwise provided in subsection 3, provide his or her current and valid drivers license or identification card issued by the Department of Motor Vehicles which shows his or her physical address as proof of the electors identity and residency. 3. If the drivers license or identification card issued by the Department of Motor Vehicles to the elector does not have the electors current residential address, the following documents may be used to establish the residency of the elector ... (3) Must vote by casting a provisional ballot, unless it is verified, at that time, that the elector is qualified to register to vote and to cast a regular ballot in the election at that polling place.",
+   "status": "verified",
+   "notes": "NRS 293.5842 (early voting) and 293.5847 (Election Day). Dropped the vote-center sentence to keep the fact short; its old quote is NRS 293.3072. Clark County's 2026 guide also accepts a Nevada DMV interim document and a Nevada Tribal ID for same-day registration (2025 law the NRS page may lag)."
   },
   "first_time": {
-   "en": "Registered online in the last two weeks? You'll vote in person, at an early voting site or an Election Day polling place. Tell the poll worker you registered online before you came.",
-   "es": "¿Te registraste en línea en las últimas dos semanas? Vas a votar en persona, en un centro de votación anticipada o en un lugar de votación el Día de las Elecciones. Dile al trabajador electoral que te registraste en línea antes de llegar.",
+   "en": "Registered or updated your registration online on or after October 21? You'll vote in person, at an early voting site or an Election Day polling place. Tell the poll worker you registered online before you came.",
+   "es": "¿Te registraste o actualizaste tu registro en línea el 21 de octubre o después? Vas a votar en persona, en un lugar de votación anticipada o en un lugar de votación el Día de las Elecciones. Dile al trabajador electoral que te registraste en línea antes de llegar.",
    "src": "https://www.leg.state.nv.us/nrs/nrs-293.html",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "If an elector submits an application to register to vote pursuant to this section less than 14 days before the election, the elector may vote only in person:",
-   "status": "verified"
+   "status": "verified",
+   "notes": "Less than 14 days before the November 3 election means October 21 or later."
   }
  },
  "where": {
@@ -107,7 +109,7 @@
     "Un documento o cheque del gobierno con tu nombre y dirección (la tarjeta de registro de votante no cuenta)"
    ],
    "src": "https://www.leg.state.nv.us/nrs/nrs-293.html",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "A copy of a current utility bill, bank statement, paycheck, or document issued by a governmental entity, including a check which indicates the name and address of the person, but not including a voter registration card",
    "status": "verified"
   },
@@ -115,27 +117,28 @@
    "en": "Most voters just sign. ID is for some first-time voters who registered by mail or online and haven't voted for a federal office in Nevada before. A photo ID has to be current and valid.",
    "es": "La mayoría de los votantes solo firman. La identificación es para algunos votantes nuevos que se registraron por correo o en línea y que nunca han votado por un cargo federal en Nevada. Una identificación con foto debe estar vigente y ser válida.",
    "src": "https://www.leg.state.nv.us/nrs/nrs-293.html",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "A current and valid photo identification of the person, which shows his or her physical address",
    "status": "verified"
   },
   "without": {
-   "en": "If you're asked for ID and don't have it, you can vote a provisional ballot. It counts if you bring the ID to your county clerk by 5 p.m. on Friday, November 6, 2026.",
-   "es": "Si te piden identificación y no la tienes, puedes votar con una boleta provisional. Se cuenta si llevas la identificación al secretario de tu condado a más tardar a las 5 p. m. del viernes 6 de noviembre de 2026.",
+   "en": "If you're asked for ID and don't have it, you can vote a provisional ballot. To have it counted, give the ID to your county clerk by 5 p.m. on Friday, November 6, 2026.",
+   "es": "Si te piden una identificación y no la tienes, puedes votar con una boleta provisional. Para que cuente, entrega la identificación a la secretaría de tu condado (county clerk) a más tardar a las 5 p. m. del viernes 6 de noviembre de 2026.",
    "src": "https://www.leg.state.nv.us/nrs/nrs-293.html",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "A voter who failed to provide required identification at the polling place or with his or her mailed ballot provides the required identification to the county or city clerk not later than 5 p.m. on the Friday following election day",
    "status": "verified"
   }
  },
  "mail": {
   "who": {
-   "en": "Every registered voter gets a ballot in the mail. Rather vote in person only? Send your county clerk the Mail Ballot Preference Form to opt out.",
-   "es": "Cada votante registrado recibe una boleta por correo. ¿Prefieres votar solo en persona? Envía al secretario de tu condado el formulario Mail Ballot Preference Form (preferencia de boleta por correo) para darte de baja.",
-   "src": "https://www.nvsos.gov/elections/voters/mail-ballot-voting",
-   "checked": "2026-10-21",
-   "quote": "With the passage of Assembly Bill 321 during the 2021 Legislative Session, all registered voters will receive a ballot by mail.",
-   "status": "verified"
+   "en": "Nevada mails a ballot to every active registered voter, and to anyone who registered or updated their registration by October 20, unless they opted out. No request needed. In Clark County, if yours didn't come by October 16, call (702) 455-8683.",
+   "es": "Nevada envía por correo una boleta a cada votante registrado activo, y a quien se registró o actualizó su registro a más tardar el 20 de octubre, salvo que haya pedido no recibirla. No tienes que pedirla. En el condado de Clark, si no te llegó a más tardar el 16 de octubre, llama al (702) 455-8683.",
+   "src": "https://www.leg.state.nv.us/nrs/nrs-293.html",
+   "checked": "2026-10-28",
+   "quote": "the county clerk shall prepare and distribute to each active registered voter in the county and each person who registers to vote or updates his or her voter registration information not later than the 14 days before the election a mail ballot for every election.",
+   "status": "verified",
+   "notes": "Clark County 2026 guide: 'If you do not receive your mail ballot packet by October 16, 2026, and wish to vote by mail, immediately contact us at: (702) 455-VOTE (8683)'. Opt-out must be at least 60 days before Election Day (same guide), so it isn't an option for this election."
   },
   "witness": {
    "en": "If you have a disability, are 65 or older, or can't read or write, someone can help you mark and sign your ballot. They note next to the signature that they signed for you, or put their name, address and signature on the return envelope if they helped.",
@@ -147,20 +150,22 @@
   },
   "track_url": "https://myballot.nv.gov/",
   "cure": {
-   "en": "If you didn't sign, or your signature doesn't match, your county clerk will contact you by mail, by phone if they have your number, and by email if you gave it. Respond by 5 p.m. on Monday, November 9.",
-   "es": "Si no firmaste o tu firma no coincide, el secretario de tu condado se comunicará contigo por correo, por teléfono si tiene tu número y por correo electrónico si se lo diste. Responde a más tardar a las 5 p. m. del lunes 9 de noviembre.",
-   "src": "https://www.leg.state.nv.us/nrs/nrs-293.html",
-   "checked": "2026-10-21",
-   "quote": "the clerk shall contact the voter and advise the voter of the procedures to provide a signature or a confirmation that the signature used for the mail ballot belongs to the voter, as applicable.",
-   "status": "verified"
+   "en": "If you didn't sign, or your signature doesn't match, your county clerk will contact you by mail, by phone if they have your number, and by email if you gave it. Fix it by 5 p.m. on Monday, November 9. The Secretary of State's Signature Cure page links to each county's online cure tool.",
+   "es": "Si no firmaste, o tu firma no coincide, la secretaría de tu condado se comunicará contigo por correo, por teléfono si tiene tu número y por correo electrónico si lo diste. Corrígelo a más tardar a las 5 p. m. del lunes 9 de noviembre. La página de corrección de firmas (Signature Cure) de la Secretaría de Estado tiene el enlace a la herramienta en línea de cada condado.",
+   "src": "https://www.nvsos.gov/elections/election-information/2026-election-information/signature-cure",
+   "checked": "2026-10-28",
+   "quote": "Select your county below to access the approved online signature cure resource. The deadline to cure a mail ballot for the November 3, 2026, General Election is by 5 p.m. PT, November 9, 2026.",
+   "status": "verified",
+   "notes": "How the clerk contacts you: NRS 293.269927. Read in Chrome (nvsos.gov blocks curl)."
   },
   "dropbox": {
-   "en": "Every polling place, including early voting sites, has a ballot drop box. You can drop your ballot at any official drop box in your county until polls close on Election Day.",
-   "es": "Cada lugar de votación, incluidos los centros de votación anticipada, tiene un buzón de entrega de boletas. Puedes dejar tu boleta en cualquier buzón oficial de tu condado hasta que cierren los lugares de votación el Día de las Elecciones.",
+   "en": "Every early voting site and Election Day polling place takes mail ballots, but only while it's open. You can drop your ballot at any official drop box in your county until polls close at 7 p.m. on Election Day. Check your county's list for each location's hours.",
+   "es": "Todos los lugares de votación anticipada y del Día de las Elecciones reciben boletas por correo, pero solo mientras están abiertos. Puedes dejar tu boleta en cualquier buzón oficial de tu condado hasta que cierren los lugares de votación, a las 7 p. m. del Día de las Elecciones. Revisa la lista de tu condado para ver el horario de cada lugar.",
    "src": "https://www.nvsos.gov/elections/election-information/2026-election-information",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "Ballots can also be dropped off at any official dropbox in your county up to the close of polls on Election Day.",
-   "status": "verified"
+   "status": "verified",
+   "notes": "Clark County 2026 guide: 'Any early voting site, October 17-30, 2026, only during voting hours' and 'Any Election Day vote center, Tuesday, November 3, 2026, only 7am-7pm'."
   }
  },
  "polls_rules": {
@@ -173,12 +178,13 @@
    "status": "verified"
   },
   "phone": {
-   "en": "Take your sticker selfie outside. Nevada law bars the public from photographing or recording voting at a polling place.",
-   "es": "Tómate la selfie con tu sticker afuera. La ley de Nevada prohíbe que el público tome fotos o grabe la votación en un lugar de votación.",
+   "en": "Take your sticker selfie outside. Nevada law bars the public from photographing or recording voting at a polling place. At home, the law lets you show your own mail ballot to others.",
+   "es": "Tómate la selfie con tu sticker afuera. La ley de Nevada prohíbe que el público tome fotos o grabe la votación en un lugar de votación. En casa, la ley te permite mostrarles a otros tu propia boleta por correo.",
    "src": "https://www.leg.state.nv.us/nrs/nrs-293.html",
-   "checked": "2026-10-21",
-   "quote": "A member of the general public shall not photograph the conduct of voting at a polling place or record the conduct of voting on audiotape or any other means of sound or video reproduction.",
-   "status": "verified"
+   "checked": "2026-10-28",
+   "quote": "A member of the general public shall not photograph the conduct of voting at a polling place or record the conduct of voting on audiotape or any other means of sound or video reproduction. ... (e) Show his or her ballot to another person, after voting, so as to reveal any of his or her votes on the ballot, other than on his or her mail ballot or military-overseas ballot prepared by or on behalf of the voter with his or her authorization pursuant to this title.",
+   "status": "verified",
+   "notes": "NRS 293.274(2) and 293.730(1)(e)."
   },
   "line": {
    "en": "In line when polls close at 7 p.m.? Stay in line. You have the right to vote, during early voting and on Election Day.",
@@ -191,8 +197,13 @@
  },
  "sticker": {
   "tradition": {
-   "status": "missing",
-   "notes": "No 2026 Secretary of State or county clerk sticker page found. Carson City ran a contest for 2024 and Clark County hands out an Allegiant Stadium sticker, per news reports only; not confirmed on an official page."
+   "en": "For Election Day 2024, Allegiant Stadium was an official Clark County polling place, and voters who cast a ballot there got an \"I VOTED\" sticker made by the Las Vegas Raiders.",
+   "es": "El Día de las Elecciones de 2024, el Allegiant Stadium fue un lugar de votación oficial del condado de Clark, y quienes votaron ahí recibieron un sticker de \"I VOTED\" hecho por los Las Vegas Raiders.",
+   "src": "https://www.nvsos.gov/sos/Home/Components/News/News/3518/23",
+   "checked": "2026-10-28",
+   "quote": "Allegiant Stadium will serve as an official polling location for Clark County voters on Election Day, November 5th, 2024. The Las Vegas Raiders created an exclusive “I VOTED” sticker for voters who cast their ballot at Allegiant Stadium on Election Day.",
+   "status": "verified",
+   "notes": "Secretary of State news release, September 27, 2024 (read in Chrome). Not confirmed for 2026. EAC 2019 sticker awards to Clark, Douglas and Washoe are federal (eac.gov), not used."
   },
   "early": {
    "en": "In Clark County, the 2026 voter guide's in-person steps, for early voting October 17 to 30 and on Election Day, end with getting your \"I Voted\" sticker at the tabulator. Other counties set their own practice.",
@@ -205,10 +216,10 @@
  },
  "faq": {
   "provisional": {
-   "en": "It's a ballot you vote when something can't be confirmed at the polls. It counts if your county clerk confirms you're registered and eligible. If it was for missing ID, bring the ID to the clerk by 5 p.m. on Friday, November 6.",
-   "es": "Es una boleta que votas cuando algo no se puede confirmar en el lugar de votación. Se cuenta si el secretario de tu condado confirma que estás registrado y tienes derecho a votar. Si fue por falta de identificación, lleva la identificación al secretario a más tardar a las 5 p. m. del viernes 6 de noviembre.",
+   "en": "It's a ballot you vote when something can't be confirmed at the polls. Your county clerk counts it after checking that you're registered and eligible. If it was for missing ID, give the ID to the clerk by 5 p.m. on Friday, November 6.",
+   "es": "Es una boleta con la que votas cuando algo no se puede confirmar en el lugar de votación. La secretaría de tu condado la cuenta después de revisar que estás registrado y que puedes votar. Si fue por falta de identificación, entrega la identificación a la secretaría a más tardar a las 5 p. m. del viernes 6 de noviembre.",
    "src": "https://www.leg.state.nv.us/nrs/nrs-293.html",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "The county or city clerk determines that the person who cast the provisional ballot was registered to vote in the election, eligible to vote in the election and issued the appropriate ballot for the address at which the person resides",
    "status": "verified"
   },
@@ -229,10 +240,10 @@
    "status": "verified"
   },
   "unsigned": {
-   "en": "Your county clerk will contact you by mail, and by phone or email if they have them, so you can sign. Do it by 5 p.m. on Monday, November 9, or your ballot won't count.",
-   "es": "El secretario de tu condado se comunicará contigo por correo, y por teléfono o correo electrónico si los tiene, para que puedas firmar. Hazlo a más tardar a las 5 p. m. del lunes 9 de noviembre, o tu boleta no se cuenta.",
+   "en": "Your county clerk will contact you by mail, and by phone or email if they have them, so you can sign. Do it by 5 p.m. on Monday, November 9, or your ballot won't count. Your county's online cure tool is linked from the Secretary of State's Signature Cure page.",
+   "es": "La secretaría de tu condado se comunicará contigo por correo, y por teléfono o correo electrónico si los tiene, para que firmes. Hazlo a más tardar a las 5 p. m. del lunes 9 de noviembre, o tu boleta no contará. La herramienta en línea de tu condado está en la página de corrección de firmas (Signature Cure) de la Secretaría de Estado.",
    "src": "https://www.leg.state.nv.us/nrs/nrs-293.html",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "For the mail ballot to be counted, the voter must provide a signature or a confirmation, as applicable, not later than 5 p.m. on the sixth day following the election.",
    "status": "verified"
   },
@@ -245,7 +256,7 @@
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026. nvsos.gov blocks automated fetching, so its pages (2026 Election Information, 2026 Polling Locations, Mail Ballot Voting, Elections FAQ) were read in Chrome; everything else is NRS chapter 293 on leg.state.nv.us (includes 2025 amendments): 293.560 registration, 293.269911 mail ballots to all active voters, 293.269919 assistance, 293.269921 return and drop boxes, 293.269927 signature cure (5 p.m. sixth day = Nov. 9), 293.3568 early voting hours, 293.3072 vote centers, 293.2725 first-time ID, 293.3085 provisional (ID by Friday = Nov. 6), 293.740 electioneering, 293.274 photography, 293.2546 line rule, 293.5837 online registrants inside 14 days. Day-of-week math: fourth day after Nov. 3 = Saturday Nov. 7; sixth = Monday Nov. 9. The SOS FAQ also says postmarked ballots may arrive until 5 p.m. on the fourth day (citing NRS 293.317). Sticker tradition not found on an official page.",
+ "notes": "Read October 21, 2026. nvsos.gov blocks automated fetching, so its pages (2026 Election Information, 2026 Polling Locations, Mail Ballot Voting, Elections FAQ) were read in Chrome; everything else is NRS chapter 293 on leg.state.nv.us (includes 2025 amendments): 293.560 registration, 293.269911 mail ballots to all active voters, 293.269919 assistance, 293.269921 return and drop boxes, 293.269927 signature cure (5 p.m. sixth day = Nov. 9), 293.3568 early voting hours, 293.3072 vote centers, 293.2725 first-time ID, 293.3085 provisional (ID by Friday = Nov. 6), 293.740 electioneering, 293.274 photography, 293.2546 line rule, 293.5837 online registrants inside 14 days. Day-of-week math: fourth day after Nov. 3 = Saturday Nov. 7; sixth = Monday Nov. 9. The SOS FAQ also says postmarked ballots may arrive until 5 p.m. on the fourth day (citing NRS 293.317). Sticker tradition not found on an official page. UPDATE Oct 28, 2026: nvsos.gov blocks curl; read in Chrome. Mail ballot to active voters and anyone registered by Oct 20 (NRS 293.269911), same-day ID (NRS 293.5842), own mail ballot may be shown (NRS 293.730(1)(e)), cure page, Allegiant sticker. Elko County lists some sites (West Wendover, per Perplexity also Owyhee, Jackpot) on Mountain Time: not checked against Elko's own page.",
  "election_day": {
   "hours": {
    "en": "Polling places are open 7 a.m. to 7 p.m. local time.",

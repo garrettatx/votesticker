@@ -11,6 +11,10 @@
   "events.in.gov": {
    "en": "the Indiana Secretary of State",
    "es": "la Secretaría de Estado de Indiana"
+  },
+  "www.fjc.gov": {
+   "en": "the Federal Judicial Center",
+   "es": "el Centro Judicial Federal (Federal Judicial Center)"
   }
  },
  "dates": {
@@ -25,13 +29,14 @@
   "mail_request": {
    "en": "Your county must receive your application by 11:59 p.m. on Thursday, October 22, 2026. A postmark doesn't count. Apply online at IndianaVoters.in.gov, or by mail, email or in person.",
    "es": "Tu condado debe recibir tu solicitud a más tardar a las 11:59 p. m. del jueves 22 de octubre de 2026. El matasellos no cuenta. Solicítala en línea en IndianaVoters.in.gov, o por correo postal, correo electrónico o en persona.",
-   "src": "https://www.in.gov/dA/75f48e2c3b/2026-Indiana-Voter-Information-Guide-ENGLISH-PDF.pdf",
-   "checked": "2026-10-21",
-   "quote": "October 22, 2026: Deadline for absentee-by-mail applications to be received for the 2026 General Election",
+   "src": "https://www.in.gov/dA/a5aa6862f1/2026-Calendar-Brochure.FINAL-VERSION.pdf",
+   "checked": "2026-10-28",
+   "quote": "DEADLINE, by noon, for circuit court clerks to receive absentee ballot applications from confined voters or voters caring for a confined person requesting delivery of a ballot by absentee voter board.",
    "status": "verified",
    "until": "2026-10-22",
-   "en_after": "Mail ballot applications closed at 11:59 p.m. on October 22. You can still vote early in person until noon on Monday, November 2, or at the polls on Election Day.",
-   "es_after": "Las solicitudes de boleta por correo cerraron a las 11:59 p. m. del 22 de octubre. Todavía puedes votar por anticipado en persona hasta el mediodía del lunes 2 de noviembre, o en tu lugar de votación el Día de las Elecciones."
+   "en_after": "Mail ballot applications closed at 11:59 p.m. on October 22. Stuck at home by illness or injury, or caring for someone who is? Ask your county clerk by noon Monday, November 2 for a traveling board to bring you a ballot. Everyone else can vote early in person until noon November 2, or at the polls on Election Day.",
+   "es_after": "Las solicitudes de boleta por correo cerraron a las 11:59 p. m. del 22 de octubre. ¿No puedes salir de casa por una enfermedad o lesión, o cuidas a alguien en esa situación? Pide a la oficina del secretario de tu condado (circuit court clerk), a más tardar al mediodía del lunes 2 de noviembre, que una junta de votación en ausencia (absentee voter board) te lleve una boleta. Los demás pueden votar por anticipado en persona hasta el mediodía del 2 de noviembre, o en su lugar de votación el Día de las Elecciones.",
+   "notes": "October 22 (11:59 p.m., received): 2026 Indiana Voter Information Guide, 'October 22, 2026: Deadline for absentee-by-mail applications to be received for the 2026 General Election'. en_after's noon November 2 traveling board deadline: the calendar brochure quote."
   },
   "mail_return": {
    "en": "County election officials must have it by 6 p.m. local time on Tuesday, November 3, 2026. A postmark isn't enough, even one dated on or before Election Day.",
@@ -42,15 +47,15 @@
    "status": "verified"
   },
   "early_hours": {
-   "en": "Your county sets early voting days, hours and sites. Every county must offer early voting on Saturday, October 24 and Saturday, October 31, with the clerk's office open at least 7 hours (4 in counties under 20,000 people). Early voting ends at noon on Monday, November 2.",
-   "es": "Tu condado fija los días, horarios y lugares de votación anticipada. Todos los condados deben ofrecer votación anticipada el sábado 24 y el sábado 31 de octubre, con la oficina del secretario abierta por lo menos 7 horas (4 en condados de menos de 20,000 habitantes). La votación anticipada termina al mediodía del lunes 2 de noviembre.",
+   "en": "Your county sets early voting days, hours and sites. On Saturday, October 31, the clerk's office is open at least 7 hours. A county under 20,000 people may cut that to 4. Early voting ends at noon on Monday, November 2.",
+   "es": "Tu condado fija los días, horarios y lugares de votación anticipada. El sábado 31 de octubre, la oficina del secretario abre por lo menos 7 horas. Un condado de menos de 20,000 habitantes puede reducirlo a 4. La votación anticipada termina al mediodía del lunes 2 de noviembre.",
    "src": "https://www.in.gov/dA/a5aa6862f1/2026-Calendar-Brochure.FINAL-VERSION.pdf",
-   "checked": "2026-10-21",
-   "quote": "Office of the circuit court clerk must be open for at least seven (7) hours to permit early voting. However, in a county with a population of less than 20,000, the county election board may reduce hours to a minimum of four (4) hours on this date.",
+   "checked": "2026-10-28",
+   "quote": "Saturday, October 31, 2026 Office of the circuit court clerk must be open for at least seven (7) hours to permit early voting. However, in a county with a population of less than 20,000, the county election board may reduce hours to a minimum of four (4) hours on this date.",
    "status": "verified",
-   "until": "2026-10-24",
-   "en_after": "Your county sets early voting days, hours and sites. The clerk's office is open at least 7 hours on Saturday, October 31 (4 in counties under 20,000 people). Early voting ends at noon on Monday, November 2.",
-   "es_after": "Tu condado fija los días, horarios y lugares de votación anticipada. La oficina del secretario abre por lo menos 7 horas el sábado 31 de octubre (4 en condados de menos de 20,000 habitantes). La votación anticipada termina al mediodía del lunes 2 de noviembre."
+   "until": "2026-10-31",
+   "en_after": "Early voting ends at noon on Monday, November 2. Your county sets the hours and sites. After that, vote at the polls on Election Day, 6 a.m. to 6 p.m. local time.",
+   "es_after": "La votación anticipada termina al mediodía del lunes 2 de noviembre. Tu condado fija los horarios y lugares. Después, vota en tu lugar de votación el Día de las Elecciones, de 6 a. m. a 6 p. m., hora local."
   },
   "cure": {
    "status": "missing",
@@ -59,12 +64,15 @@
  },
  "how": {
   "in_person": {
-   "en": "Vote early in person at your circuit court clerk's office or a satellite office, no reason needed. On Election Day, polls are open 6 a.m. to 6 p.m. local time.",
-   "es": "Vota por anticipado en persona en la oficina del secretario del tribunal de circuito (circuit court clerk) o en una oficina satélite, sin dar una razón. El Día de las Elecciones, los lugares de votación abren de 6 a. m. a 6 p. m., hora local.",
+   "en": "Any registered voter can vote early in person at the circuit court clerk's office or a satellite office until noon Monday, November 2. No reason needed. On Election Day, polls are open 6 a.m. to 6 p.m. local time.",
+   "es": "Cualquier votante registrado puede votar por anticipado en persona en la oficina del secretario del tribunal de circuito (circuit court clerk) o en una oficina satélite hasta el mediodía del lunes 2 de noviembre. No necesitas dar una razón. El Día de las Elecciones, los lugares de votación abren de 6 a. m. a 6 p. m., hora local.",
    "src": "https://www.in.gov/dA/a5aa6862f1/2026-Calendar-Brochure.FINAL-VERSION.pdf",
-   "checked": "2026-10-21",
-   "quote": "First day that a voter may early vote in the office of the circuit court clerk or satellite office.",
-   "status": "verified"
+   "checked": "2026-10-28",
+   "quote": "DEADLINE, by noon, for a voter to vote an absentee ballot in the office of the circuit court clerk or satellite office.",
+   "status": "verified",
+   "until": "2026-11-02",
+   "en_after": "Early voting ended at noon on November 2. On Election Day, polls are open 6 a.m. to 6 p.m. local time.",
+   "es_after": "La votación anticipada terminó al mediodía del 2 de noviembre. El Día de las Elecciones, los lugares de votación abren de 6 a. m. a 6 p. m., hora local."
   },
   "first_time": {
    "en": "Registered by mail and voting for the first time? The poll list may say you need to show proof of where you live. If you can't before polls close, you vote a provisional ballot.",
@@ -113,20 +121,22 @@
    "status": "verified"
   },
   "expired": {
-   "en": "Your ID has to be current or have expired after November 5, 2024, and it must come from Indiana or the U.S. government. School and college IDs no longer count.",
-   "es": "Tu identificación debe estar vigente o haber vencido después del 5 de noviembre de 2024, y debe ser del estado de Indiana o del gobierno de EE. UU. Las credenciales escolares y universitarias ya no sirven.",
+   "en": "Your photo ID can be current or expired after November 5, 2024. It must come from Indiana or the U.S. government. School and college IDs don't count. The address on it doesn't have to match your registration.",
+   "es": "Tu identificación con foto puede estar vigente o haber vencido después del 5 de noviembre de 2024. Debe ser emitida por Indiana o por el gobierno de EE. UU. Las identificaciones escolares y universitarias no cuentan. La dirección no tiene que coincidir con la de tu registro.",
    "src": "https://www.in.gov/sos/elections/voter-information/photo-id-law/",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "Display an expiration date and either be current or have expired sometime after the date of the last General Election (November 5, 2024)",
-   "status": "verified"
+   "status": "verified",
+   "notes": "Address: 2026 Election Day Handbook, 'NOTE: The address on the voter's photo ID does NOT need to match the address on the voter registration record.'"
   },
   "without": {
-   "en": "No ID that meets the rules? You can vote a provisional ballot. Then you have until noon 10 days after the election to bring the ID to your county election board, or to sign an affidavit that an exemption applies to you.",
-   "es": "¿No tienes una identificación que cumpla las reglas? Puedes votar con una boleta provisional. Luego tienes hasta el mediodía del décimo día después de la elección para llevar la identificación a la junta electoral de tu condado (county election board), o para firmar una declaración de que te aplica una excepción.",
+   "en": "No ID that meets the rules? You can vote a provisional ballot. Then, by noon on Friday, November 13 (10 days after the election), bring the ID to your county election board or sign an affidavit that an exemption applies to you. Indiana photo ID cards are free at any BMV branch.",
+   "es": "¿No tienes una identificación que cumpla las reglas? Puedes votar con una boleta provisional. Después, a más tardar al mediodía del viernes 13 de noviembre (10 días después de la elección), lleva la identificación a la junta electoral de tu condado o firma una declaración jurada de que te aplica una excepción. La tarjeta de identificación con foto de Indiana es gratis en cualquier oficina del BMV.",
    "src": "https://www.in.gov/sos/elections/voter-information/photo-id-law/",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "If you cast a provisional ballot, you have until noon 10 days after the election to follow up with the county election board and either provide the necessary documentation or affirm one of the law’s exemptions applies to you.",
-   "status": "verified"
+   "status": "verified",
+   "notes": "Free BMV ID: 2026 Election Day Handbook, 'the voter can obtain an Indiana photo ID card free of charge from any Bureau of Motor Vehicles license branch.' Address need not match: Photo ID Law page."
   }
  },
  "mail": {
@@ -169,10 +179,10 @@
    "status": "verified"
   },
   "witness": {
-   "en": "Mark your ballot yourself and sign the ballot security envelope. No one can help you mark a mail ballot, but someone other than your employer or union representative can help you seal the envelope if they fill out the affidavit of assistance.",
-   "es": "Marca tu boleta tú mismo y firma el sobre de seguridad de la boleta. Nadie puede ayudarte a marcar una boleta por correo, pero alguien que no sea tu empleador ni tu representante sindical puede ayudarte a cerrar el sobre si llena la declaración de asistencia (affidavit of assistance).",
+   "en": "Mark your ballot yourself and sign the ballot security envelope. No one can help you mark a mail ballot. Someone other than your employer or union representative can help you seal the envelope if they fill out the affidavit of assistance. If you need help marking your ballot, ask your county about voting before a traveling board instead.",
+   "es": "Marca tu boleta tú mismo y firma el sobre de seguridad. Nadie puede ayudarte a marcar una boleta por correo. Alguien que no sea tu empleador ni tu representante sindical puede ayudarte a cerrar el sobre si llena la declaración de asistencia (affidavit of assistance). Si necesitas ayuda para marcar tu boleta, pregunta en tu condado por votar ante una junta de votación en ausencia (absentee voter board).",
    "src": "https://www.in.gov/sos/elections/voter-information/ways-to-vote/absentee-voting/",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "A voter may NOT have assistance completing their absentee ballot to vote by mail. However, the voter may have assistance sealing the envelope.",
    "status": "verified"
   },
@@ -185,69 +195,70 @@
    "status": "verified"
   },
   "dropbox": {
-   "en": "You can hand-deliver your finished ballot to your county election board, including at any early voting site, by 6 p.m. on Election Day. Only you, a household or family member, your attorney-in-fact or a bonded courier can drop it off, and anyone but you fills out an ABS-19 affidavit.",
-   "es": "Puedes entregar tu boleta ya llena en persona a la junta electoral de tu condado, incluso en cualquier centro de votación anticipada, a más tardar a las 6 p. m. del Día de las Elecciones. Solo tú, alguien de tu hogar o de tu familia, tu apoderado (attorney-in-fact) o un servicio de mensajería afianzado (bonded courier) puede entregarla, y cualquiera que no seas tú llena una declaración ABS-19.",
+   "en": "You can hand-deliver your finished ballot to your county election board, including at an early voting site, by 6 p.m. on Election Day. Only you, a household or family member, your attorney-in-fact or a bonded courier can drop it off. Anyone but you fills out an ABS-19 affidavit.",
+   "es": "Puedes entregar en persona tu boleta terminada a la junta electoral de tu condado, incluso en un lugar de votación anticipada, a más tardar a las 6 p. m. del Día de las Elecciones. Solo tú, alguien de tu hogar o de tu familia, tu apoderado (attorney-in-fact) o un mensajero con fianza (bonded courier) pueden entregarla. Cualquiera que no seas tú llena una declaración ABS-19.",
    "src": "https://www.in.gov/sos/elections/voter-information/ways-to-vote/absentee-voting/",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "Finally, pursuant to state law, only the voter, the voter’s attorney-in-fact, a bonded courier, or a member of the voter’s immediate household, or a member of the voter’s family may hand-deliver a completed absentee ballot to the county election board, including delivery to any early voting location.",
    "status": "verified"
   }
  },
  "polls_rules": {
   "gear": {
-   "en": "Leave the campaign shirts, buttons and signs at home. Clothing or buttons naming a party, a candidate or an elected official, or backing a ballot question, count as electioneering inside the polls and the 50-foot chute leading in. If you're asked to cover up and don't, you still get to vote.",
-   "es": "Deja en casa las camisetas, botones y letreros de campaña. La ropa o los botones con el nombre de un partido, un candidato o un funcionario electo, o a favor de una pregunta de la boleta, cuentan como propaganda electoral dentro del lugar de votación y en el pasillo de 50 pies (chute) que lleva a la entrada. Si te piden que lo tapes y no lo haces, igual puedes votar.",
+   "en": "Leave the campaign shirts, buttons and signs at home. Clothing or buttons naming a party, a candidate or an elected official, or backing a ballot question, count as electioneering inside the polls and the 50-foot chute leading in. A poll worker may ask you to cover up. If you don't, you still get to vote.",
+   "es": "Deja en casa las camisetas, botones y letreros de campaña. La ropa o los botones que nombran a un partido, a un candidato o a un funcionario electo, o que apoyan una pregunta de la boleta, cuentan como hacer campaña dentro del lugar de votación y en el pasillo de 50 pies que lleva a la entrada. Un trabajador electoral puede pedirte que los cubras. Si no lo haces, igual puedes votar.",
    "src": "https://www.in.gov/dA/a8ee46432d/2026-Election-Day-Handbook.pdf",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "While a poll worker may ask that a voter remove or cover-up the “electioneering” items, a voter who does not comply with the request does not lose their right to vote.",
    "status": "verified"
   },
   "phone": {
-   "en": "You can use your phone at the polls, as long as you don't campaign or have a loud, disruptive conversation.",
-   "es": "Puedes usar tu celular en el lugar de votación, siempre que no hagas campaña ni tengas una conversación ruidosa que moleste.",
-   "src": "https://www.in.gov/dA/a8ee46432d/2026-Election-Day-Handbook.pdf",
-   "checked": "2026-10-21",
-   "quote": "Voters may use cellular telephones and other electronic devices in the polls as long as electioneering or loud, disruptive conversations do not occur.",
-   "status": "verified"
+   "en": "A federal court blocked Indiana's ban on photos of your own ballot in 2017, and the state didn't appeal. You can use your phone at the polls as long as you don't campaign or have a loud, disruptive conversation.",
+   "es": "Un tribunal federal bloqueó en 2017 la prohibición de Indiana de tomarle fotos a tu propia boleta, y el estado no apeló. Puedes usar tu teléfono en el lugar de votación siempre que no hagas campaña ni tengas una conversación ruidosa que moleste.",
+   "src": "https://www.fjc.gov/sites/default/files/materials/09/EE-CO-1-16-cv-2627-Hill.pdf",
+   "checked": "2026-10-28",
+   "quote": "Southern District of Indiana District Judge Sarah Evans Barker issued a preliminary injunction against criminal penalties for ballot selfies in Indiana on October 19, 2015. Judge Barker made the injunction permanent by summary judgment on January 19, 2017. ... Indiana's secretary of state decided not to appeal the injunction.",
+   "status": "verified",
+   "notes": "Phone use: 2026 Election Day Handbook p. 5, 'Voters may use cellular telephones and other electronic devices in the polls as long as electioneering or loud, disruptive conversations do not occur.' Case: Indiana Civil Liberties Union Foundation v. Indiana Secretary of State, S.D. Ind. No. 1:15-cv-01356 (IC 3-11-8-17.5). FJC is the federal courts' research agency; the opinion itself was not read."
   },
   "line": {
-   "en": "Polls close at 6 p.m. local time. If you're in line by then, stay put. You'll be allowed to vote a regular ballot.",
-   "es": "Los lugares de votación cierran a las 6 p. m., hora local. Si estás en la fila a esa hora, no te salgas. Te dejarán votar con una boleta regular.",
+   "en": "Polls close at 6 p.m. local time. If you're in line by then, stay in line. You can still vote.",
+   "es": "Los lugares de votación cierran a las 6 p. m., hora local. Si estás en la fila a esa hora, no te salgas. Todavía puedes votar.",
    "src": "https://www.in.gov/dA/a8ee46432d/2026-Election-Day-Handbook.pdf",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "These voters must be permitted to vote a regular ballot, if otherwise qualified.",
    "status": "verified"
   }
  },
  "sticker": {
   "tradition": {
-   "en": "In 2024 the Indiana Secretary of State held an I Voted sticker contest for students in kindergarten through 12th grade. The first-place design from each grade group was set to go on the stickers handed out on Election Day, November 5, 2024.",
-   "es": "En 2024, la Secretaría de Estado de Indiana organizó un concurso de stickers de “I Voted” para estudiantes de kínder a 12.º grado. El diseño ganador de cada grupo de grados iba a aparecer en los stickers del Día de las Elecciones, el 5 de noviembre de 2024.",
+   "en": "In 2024 the Indiana Secretary of State held an I Voted sticker contest for students in kindergarten through 12th grade. The first-place design from each grade group was chosen for the stickers handed out on Election Day, November 5, 2024.",
+   "es": "En 2024, la Secretaría de Estado de Indiana organizó un concurso de stickers de I Voted para estudiantes de kínder a 12.º grado. El diseño ganador de cada grupo de grados se eligió para los stickers que se repartieron el Día de las Elecciones, el 5 de noviembre de 2024.",
    "src": "https://events.in.gov/event/secretary-of-state-diego-morales-announces-i-voted-sticker-contest-for-hoosier-youth",
    "quote": "will be featured on stickers distributed to voters on Election Day, November 5.",
-   "checked": "2026-10-26",
+   "checked": "2026-10-28",
    "status": "verified"
   }
  },
  "faq": {
   "provisional": {
-   "en": "You may get one if you don't have the required photo ID or your eligibility at the precinct is challenged. After Election Day, the county election board decides whether it counts. Without ID, you have until noon 10 days after the election to follow up.",
-   "es": "Te la pueden dar si no tienes la identificación con foto requerida o si se cuestiona tu derecho a votar en el precinto. Después del Día de las Elecciones, la junta electoral del condado decide si se cuenta. Si no tenías identificación, tienes hasta el mediodía del décimo día después de la elección para completar el trámite.",
+   "en": "You may get one if you don't have the required photo ID or your eligibility at the precinct is challenged. After Election Day, the county election board decides whether it counts. Without ID, you have until noon on Friday, November 13 to follow up.",
+   "es": "Puedes recibir una si no tienes la identificación con foto requerida o si cuestionan tu derecho a votar en el precinto. Después del Día de las Elecciones, la junta electoral del condado decide si cuenta. Si no tenías identificación, tienes hasta el mediodía del viernes 13 de noviembre para completar el trámite.",
    "src": "https://www.in.gov/sos/elections/voter-information/ways-to-vote/provisional-ballots/",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "After Election Day, the county election board will decide whether you were qualified to vote in that precinct and whether your ballot should be counted.",
    "status": "verified"
   },
   "line": {
-   "en": "You can still vote. Everyone in line when polls close at 6 p.m. local time gets to vote a regular ballot.",
-   "es": "Todavía puedes votar. Toda persona que esté en la fila cuando cierran las urnas a las 6 p. m., hora local, puede votar con una boleta regular.",
+   "en": "You can still vote. Everyone in line when polls close at 6 p.m. local time gets to vote.",
+   "es": "Igual puedes votar. Toda persona que esté en la fila cuando cierran las casillas a las 6 p. m., hora local, puede votar.",
    "src": "https://www.in.gov/dA/a8ee46432d/2026-Election-Day-Handbook.pdf",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "These voters must be permitted to vote a regular ballot, if otherwise qualified.",
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026 on in.gov by curl (Absentee Voting, Photo ID Law, Register to Vote, Provisional Ballots, Vote Centers) and three state PDFs: the 2026 Indiana Voter Information Guide, the 2026 Election Calendar brochure, and the 2026 Election Day Handbook (revised January 2026). PDF links drop the '?language_id=1' suffix; both forms load. EARLY VOTING DATES FOR states.js (Indiana is unchecked): Tuesday, October 6 to noon Monday, November 2, 2026. Sources: brochure https://www.in.gov/dA/a5aa6862f1/2026-Calendar-Brochure.FINAL-VERSION.pdf, 'Tuesday, October 6, 2026 First day that a voter may early vote in the office of the circuit court clerk or satellite office.' and 'Monday, November 2, 2026 ... DEADLINE, by noon, for a voter to vote an absentee ballot in the office of the circuit court clerk or satellite office.' Voter guide: 'October 6, 2026: First day to vote absentee in-person for the 2026 General Election'. Absentee page: 'State law requires counties to make in-person absentee voting available for 28-days before the election, ending at noon (local prevailing time), the day before the election.' Days and hours vary by county (indianavoters.in.gov); required Saturdays October 24 and 31. The brochure says it 'reflects Indiana law as of July 2025'. Mail application deadline: the absentee page says 11:59 p.m. 12 days before the election; the voter guide and brochure give October 22, 2026. Gear: 'Electioneering' in the handbook includes wearing clothing or a button naming a party or candidate or any currently elected official, within the polls or the 50-foot chute. Phone: phones allowed; ballot photos not addressed (docs/faq-sources.json notes the 2015 ballot-selfie ban was blocked in federal court). No track_url: the absentee page names no tracker (the provisional page says provisional status shows on the indianavoters.com portal). No local_offices_url found as a separate state page. Vote centers: the SOS Vote Centers page lists adopting counties by year but has no prose explaining where vote-center voters may vote, so where.rule doesn't describe it.",
+ "notes": "Read October 21, 2026 on in.gov by curl (Absentee Voting, Photo ID Law, Register to Vote, Provisional Ballots, Vote Centers) and three state PDFs: the 2026 Indiana Voter Information Guide, the 2026 Election Calendar brochure, and the 2026 Election Day Handbook (revised January 2026). PDF links drop the '?language_id=1' suffix; both forms load. EARLY VOTING DATES FOR states.js (Indiana is unchecked): Tuesday, October 6 to noon Monday, November 2, 2026. Sources: brochure https://www.in.gov/dA/a5aa6862f1/2026-Calendar-Brochure.FINAL-VERSION.pdf, 'Tuesday, October 6, 2026 First day that a voter may early vote in the office of the circuit court clerk or satellite office.' and 'Monday, November 2, 2026 ... DEADLINE, by noon, for a voter to vote an absentee ballot in the office of the circuit court clerk or satellite office.' Voter guide: 'October 6, 2026: First day to vote absentee in-person for the 2026 General Election'. Absentee page: 'State law requires counties to make in-person absentee voting available for 28-days before the election, ending at noon (local prevailing time), the day before the election.' Days and hours vary by county (indianavoters.in.gov); required Saturdays October 24 and 31. The brochure says it 'reflects Indiana law as of July 2025'. Mail application deadline: the absentee page says 11:59 p.m. 12 days before the election; the voter guide and brochure give October 22, 2026. Gear: 'Electioneering' in the handbook includes wearing clothing or a button naming a party or candidate or any currently elected official, within the polls or the 50-foot chute. Phone: phones allowed; ballot photos not addressed (docs/faq-sources.json notes the 2015 ballot-selfie ban was blocked in federal court). No track_url: the absentee page names no tracker (the provisional page says provisional status shows on the indianavoters.com portal). No local_offices_url found as a separate state page. Vote centers: the SOS Vote Centers page lists adopting counties by year but has no prose explaining where vote-center voters may vote, so where.rule doesn't describe it. UPDATE Oct 28, 2026: checked the calendar brochure (traveling board noon Nov 2, Saturday Oct 31 hours) and the Election Day Handbook (military extended registration, free BMV ID, care-facility exemption). Ballot photos: FJC case study of the 2017 permanent injunction. Sticker winners: named only in news (Lake Station, Zionsville, etc.); no official winners page found, and K-12 students are not named.",
  "election_day": {
   "hours": {
    "en": "Polling places are open 6 a.m. to 6 p.m. local time.",

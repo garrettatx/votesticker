@@ -186,8 +186,9 @@
    "rule": "yes",
    "deadline": "Friday, October 16, 2026 for in-person (registrar of voters, until 8 p.m.), mail (postmarked), and online (by 11:59 p.m.). After that, Same Day Registration during early voting (October 19 to November 1) and on Election Day at your town's designated location.",
    "summary": "The regular deadline was October 16, 2026. You can still register and vote the same day during early voting, October 19 to November 1, or on Election Day at your town's Same Day Registration location.",
-   "source": "https://portal.ct.gov/-/media/sots/electionservices/voterfactsheets/2026-voter-reg/voter-registration-deadlines-11-03-26pub.pdf",
-   "quote": "If you miss the October 16 voter registration deadline, you can still register and vote through Same Day Registration. Same Day Registration is available: • During all Early Voting hours (October 19 – November 1) • On Election Day"
+   "source": "https://portal.ct.gov/-/media/sots/electionservices/handbooks/2026/2026-sdr-handbook.pdf",
+   "quote": "If you miss the October 16 voter registration deadline, you can still register and vote through Same Day Registration. Same Day Registration is available: • During all Early Voting hours (October 19 – November 1) • On Election Day",
+   "checked": "2026-10-28"
   },
   "selfie": null,
   "notes": "Changed recently: P.A. 23-5 (effective Jan. 1, 2024) moved the regular registration deadline from 7 days to 18 days before the election and added same-day registration during early voting. ID: an affidavit (Form ED-681) is accepted instead of ID, so this is arguably closer to 'ID requested'; first-time voters who registered by mail without ID verification must show photo ID or a document with name and address. Selfie: the 2026 SOTS Voter Guide only says media may not photograph how a voter marks a ballot; no statute or SOTS guidance on voters photographing their own ballots was found in CGS Title 9 chapters 143 to 157. Hours: CGS 9-174 (chapter 146) also sets 6 a.m. to 8 p.m."
@@ -222,21 +223,24 @@
    "open": "7 a.m.",
    "close": "8 p.m.",
    "summary": "Every voter is mailed a ballot. On November 3, vote centers are open 7 a.m. to 8 p.m., and you can use any one. Mailed ballots must be postmarked by November 3.",
-   "source": "https://www.dcboe.org/voters/find-out-where-to-vote/election-day-vote-centers",
-   "quote": "2026 General Election Day Vote Centers Tuesday, November 3, 2026, from 7:00 a.m. to 8:00 p.m. Voters may cast their ballots AT ANY VOTE CENTER regardless of their residential address"
+   "source": "https://www.dcboe.org/getContentAsset/5a9ceeda-114c-4171-810d-1317c9e06b0e/5ebbd046-860b-4ee1-81c8-43d0e3bc446e/_-DCBOE-Voter-Guide-Web-Smaller-File.pdf?language=en",
+   "quote": "2026 General Election Day Vote Centers Tuesday, November 3, 2026, from 7:00 a.m. to 8:00 p.m. Voters may cast their ballots AT ANY VOTE CENTER regardless of their residential address",
+   "checked": "2026-10-28"
   },
   "id": {
    "rule": "no_id",
    "summary": "Most voters don't show ID. If you first registered by mail or online, you may need ID with your name and address, like a photo ID or utility bill.",
-   "source": "https://www.dcboe.org/voters/register-to-vote/register-update-voter-registration",
-   "quote": "If you are registering to vote in the District of Columbia for the first time and submit a voter registration application by mail or electronically, you may be required to provide identification that shows your name and current address"
+   "source": "https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.07",
+   "quote": "If you are registering to vote in the District of Columbia for the first time and submit a voter registration application by mail or electronically, you may be required to provide identification that shows your name and current address",
+   "checked": "2026-10-28"
   },
   "registration": {
    "rule": "yes",
    "deadline": "Tuesday, October 13, 2026 (21 days before the election) for online and mail applications to be received. After that, register in person with proof of residence at an Early Vote Center or an Election Day Vote Center.",
    "summary": "Online and mail registrations had to arrive by October 13, 2026. You can still register and vote the same day during early voting or on Election Day if you bring proof of residence.",
-   "source": "https://www.dcboe.org/getContentAsset/4d04f4a1-fb2a-4f8a-809f-d3f708f232df/5ebbd046-860b-4ee1-81c8-43d0e3bc446e/2026-General-Election-Calendar-Version-09292026.pdf?language=en",
-   "quote": "On Election Day, between the hours of 7:00 a.m. to 8:00 p.m., qualified electors may register to vote and cast full ballots in person at Vote Centers."
+   "source": "https://www.dcboe.org/voters/register-to-vote/register-update-voter-registration",
+   "quote": "On Election Day, between the hours of 7:00 a.m. to 8:00 p.m., qualified electors may register to vote and cast full ballots in person at Vote Centers.",
+   "checked": "2026-10-28"
   },
   "selfie": null,
   "notes": "The 2026 General Election Calendar (Rev. 10/1/2026) lists Oct. 13 as the 'Deadline for receipt of all voter registration applications ... except for those submitted in person at the Board or at voter registration agencies (21 days before the election)'. Mailed ballots must be postmarked by Election Day and received by Nov. 13, 2026. Selfie: no DC Code, DCMR, or DCBOE statement found; news reports quote a DCBOE spokesperson saying there is no ban, but that is not an official source."
@@ -344,20 +348,23 @@
    "rule": "no_id",
    "summary": "Most registered voters do not show ID; you sign to vote. Some first-time voters who registered by mail or online must show a photo ID or a utility bill.",
    "source": "https://www.leg.state.nv.us/nrs/nrs-293.html",
-   "quote": "May vote at a polling place only if the person presents to the election board officer at the polling place: (1) A current and valid photo identification of the person"
+   "quote": "May vote at a polling place only if the person presents to the election board officer at the polling place: (1) A current and valid photo identification of the person",
+   "checked": "2026-10-28"
   },
   "registration": {
    "rule": "yes",
    "deadline": "Mail and in person at the county clerk: Tuesday, October 6, 2026. Online: through Election Day, November 3, 2026. You can also register in person at an early voting site or at your polling place on Election Day.",
    "summary": "Register by mail or at the county clerk by October 6, or online through Election Day. You can also register and vote in person during early voting or on Election Day.",
    "source": "https://www.leg.state.nv.us/nrs/nrs-293.html",
-   "quote": "an elector may register to vote in person on the day of the election at any polling place in the county or city, as applicable, in which the elector is eligible to vote."
+   "quote": "an elector may register to vote in person on the day of the election at any polling place in the county or city, as applicable, in which the elector is eligible to vote.",
+   "checked": "2026-10-28"
   },
   "selfie": {
    "rule": "limited",
    "summary": "State law bars members of the public from photographing voting at a polling place. No state law found that addresses photos of your own mail ballot.",
    "source": "https://www.leg.state.nv.us/nrs/nrs-293.html",
-   "quote": "A member of the general public shall not photograph the conduct of voting at a polling place or record the conduct of voting on audiotape or any other means of sound or video reproduction."
+   "quote": "A member of the general public shall not photograph the conduct of voting at a polling place or record the conduct of voting on audiotape or any other means of sound or video reproduction.",
+   "checked": "2026-10-28"
   },
   "notes": "nvsos.gov blocked automated fetching (Incapsula), so all four answers come from NRS chapter 293 (page includes 2025 amendments). Mail ballot return quote is NRS 293.269921; registration deadlines NRS 293.560 (mail/in person fourth Tuesday before = Oct 6; online through Election Day). Voter ID: Question 7 (2024) passed once and is on the Nov 2026 ballot for a second vote; AB 499 (2025) was vetoed, so no ID rule applies for this election. Selfie rule is an inference from NRS 293.274; whether it applies to a voter's own ballot is not stated; SOS FAQ could not be checked."
  },
@@ -699,17 +706,22 @@
   "id": {
    "rule": "photo_required",
    "summary": "You must show a current photo ID from Indiana or the U.S. government, such as a driver's license or U.S. passport. Without one, you vote provisionally and must follow up.",
-   "source": "https://www.in.gov/sos/elections/voter-information/photo-id-law/",
-   "quote": "If you cast a provisional ballot, you have until noon 10 days after the election to follow up with the county election board and either provide the necessary documentation or affirm one of the law’s exemptions applies to you."
+   "source": "https://www.in.gov/dA/a8ee46432d/2026-Election-Day-Handbook.pdf",
+   "quote": "If you cast a provisional ballot, you have until noon 10 days after the election to follow up with the county election board and either provide the necessary documentation or affirm one of the law’s exemptions applies to you.",
+   "checked": "2026-10-28"
   },
   "registration": {
    "rule": "no",
    "deadline": "Monday, October 5, 2026 for online, mail (postmarked), and in-person registration.",
    "summary": "The deadline to register for the November 3 election was October 5, 2026. Indiana does not offer same-day or Election Day registration.",
-   "source": "https://www.in.gov/sos/elections/voter-information/register-to-vote/",
-   "quote": "On or before April 6, 2026 before the 2026 Primary Election, or on or before October 5, 2026 before the 2026 General Election."
+   "source": "https://www.in.gov/dA/a8ee46432d/2026-Election-Day-Handbook.pdf",
+   "quote": "On or before April 6, 2026 before the 2026 Primary Election, or on or before October 5, 2026 before the 2026 General Election.",
+   "checked": "2026-10-28"
   },
-  "selfie": null,
+  "selfie": {
+   "source": "https://www.fjc.gov/sites/default/files/materials/09/EE-CO-1-16-cv-2627-Hill.pdf",
+   "checked": "2026-10-28"
+  },
   "notes": "Changed recently: effective July 1, 2025, college and university IDs no longer count as voter ID (SOS Photo ID Law page). ID must show name, photo, and an expiration date that is current or after the last general election. The Oct. 5 quote is on the SOS registration page under mail and in-person registration; the page does not give a separate online date, so 'online' in the deadline is an assumption to recheck. Selfie: the 2026 Election Day Handbook lets voters use cell phones in the polls if they don't electioneer or disrupt, but says nothing about ballot photos. Indiana's 2015 ballot-selfie ban (IC 3-11-8-17.5) was blocked by a federal court; no current official guidance was found, so this is null."
  },
  "IA": {
@@ -826,8 +838,9 @@
   "id": {
    "rule": "no_id",
    "summary": "Registered voters don't need to show ID. You state your name and address to the election clerk. If you register in person, you must show proof of identity and residency.",
-   "source": "https://legislature.maine.gov/statutes/21-A/title21-Asec671.html",
-   "quote": "A voter who wishes to vote must state the voter's name and residence address to an election clerk, who shall announce the name in a loud, clear voice."
+   "source": "https://www.maine.gov/sos/elections-voting/your-right-to-vote-in-maine",
+   "quote": "A voter who wishes to vote must state the voter's name and residence address to an election clerk, who shall announce the name in a loud, clear voice.",
+   "checked": "2026-10-28"
   },
   "registration": {
    "rule": "yes",
@@ -839,8 +852,9 @@
   "selfie": {
    "rule": "limited",
    "summary": "Anyone taking photos in the voting place must stay outside the voting area and 15 feet from voters, but you may photograph only yourself. Ballot photos aren't addressed.",
-   "source": "https://legislature.maine.gov/statutes/21-A/title21-Asec683.html",
-   "quote": "A person video recording or engaging in still photography in the voting place ... must remain outside the guardrail enclosure ... except that a person may take a still photograph that depicts only the person taking the photograph."
+   "source": "https://www.maine.gov/sos/news/primary-election-one-week-away",
+   "quote": "A person video recording or engaging in still photography in the voting place ... must remain outside the guardrail enclosure ... except that a person may take a still photograph that depicts only the person taking the photograph.",
+   "checked": "2026-10-28"
   },
   "notes": "Changed recently: PL 2025, c. 397 rewrote the registration deadline (21-A §121-A) and added the photography rule (§683(5)). maine.gov/sos returned 403 to every fetch, so all answers rest on the Maine Revised Statutes (legislature.maine.gov). The Oct. 13 date is computed from the 21-day rule. Maine voters considered a photo ID citizen initiative in November 2025; the current §671 still has voters state name and address only, but I did not confirm the initiative's outcome on an official page. Selfie classification is a judgment call: §683(5) addresses where photography can happen and allows self-photos but does not mention photographing or sharing a marked ballot; no statute banning ballot display was found in §§671 to 683."
  },

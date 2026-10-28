@@ -23,22 +23,23 @@
    "status": "verified"
   },
   "mail_request": {
-   "en": "Your town or city clerk must get your request by close of business on Thursday, October 29, 2026. That's also the last day to vote absentee in person at the clerk's office.",
-   "es": "El secretario municipal de tu pueblo o ciudad (municipal clerk) debe recibir tu solicitud antes del cierre de la oficina el jueves 29 de octubre de 2026. Ese también es el último día para votar en ausencia en persona en la oficina del secretario.",
+   "en": "Your town or city clerk must get your request by close of business on Thursday, October 29, 2026. That's also the last day to vote absentee in person at the clerk's office, unless special circumstances apply.",
+   "es": "El secretario municipal de tu pueblo o ciudad (municipal clerk) debe recibir tu solicitud antes del cierre de la oficina el jueves 29 de octubre de 2026. Ese también es el último día para votar en ausencia en persona en la oficina del secretario, salvo que haya circunstancias especiales.",
    "src": "https://www.maine.gov/sos/elections-voting/absentee-guide",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "The deadline to request an absentee ballot or vote in the presence of the clerk is by close of business on the Thursday prior to the election.",
    "status": "verified",
    "until": "2026-10-29",
-   "en_after": "Absentee requests closed on Thursday, October 29, 2026. Vote at your town's polling place on Election Day. Polls close at 8 p.m.",
-   "es_after": "Las solicitudes de voto en ausencia cerraron el jueves 29 de octubre de 2026. Vota en el lugar de votación de tu pueblo el Día de las Elecciones. Las urnas cierran a las 8 p. m."
+   "en_after": "Regular absentee requests closed October 29. After that, you can still ask your clerk for a ballot if you sign a special application for one of these reasons: you'll be away from town all day on Election Day, you have a physical or mental disability, you live on an island and can't travel to the polls, or illness keeps you or your caregiver from the polls. Everyone else can vote at the polls until 8 p.m. on Election Day.",
+   "es_after": "Las solicitudes regulares de voto en ausencia cerraron el 29 de octubre. Después de esa fecha, todavía puedes pedirle una boleta a tu secretario municipal si firmas una solicitud especial por una de estas razones: vas a estar fuera de tu pueblo todo el Día de las Elecciones, tienes una discapacidad física o mental, vives en una isla y no puedes ir a votar, o una enfermedad te impide a ti o a quien te cuida ir a votar. Los demás pueden votar en su lugar de votación hasta las 8 p. m. del Día de las Elecciones.",
+   "notes": "Late reasons: 21-A §753-B(2)(D), 'unless the voter signs an application, designed by the Secretary of State, stating one of the following reasons for requesting an absentee ballot after the deadline' (unexpected absence, self-certified disability, island ward, incapacity or illness of the voter or caregiver)."
   },
   "mail_return": {
-   "en": "Your municipal clerk must receive your ballot by 8 p.m. on Tuesday, November 3, 2026. Mailing it? The Secretary of State suggests sending it at least 7 days before Election Day.",
-   "es": "El secretario municipal (municipal clerk) debe recibir tu boleta a más tardar a las 8 p. m. del martes 3 de noviembre de 2026. ¿La vas a mandar por correo? La Secretaría de Estado recomienda enviarla por lo menos 7 días antes del Día de las Elecciones.",
+   "en": "Your town or city clerk must receive your ballot by 8 p.m. on Tuesday, November 3, 2026. Mail sent by October 27 was guaranteed to arrive in time. Mailing it later? Drop it off at your town office or its drop box instead.",
+   "es": "El secretario de tu pueblo o ciudad debe recibir tu boleta a más tardar a las 8 p. m. del martes 3 de noviembre de 2026. El correo enviado a más tardar el 27 de octubre tenía garantizada la entrega a tiempo. ¿La vas a mandar después? Mejor déjala en la oficina de tu municipio o en su buzón de entrega.",
    "src": "https://www.maine.gov/sos/elections-voting/absentee-guide",
-   "checked": "2026-10-21",
-   "quote": "To be counted, voted absentee ballots must be received by the municipal clerk by 8:00 p.m. on Election Day.",
+   "checked": "2026-10-28",
+   "quote": "The USPS has assured us that all absentee ballots returned to your municipal clerk by mail at least 7 days prior to Election Day are guaranteed to be delivered in time to be cast and counted in the election. ... To be counted, voted absentee ballots must be received by the municipal clerk by 8:00 p.m. on Election Day.",
    "status": "verified"
   },
   "early_hours": {
@@ -52,18 +53,21 @@
  },
  "how": {
   "in_person": {
-   "en": "Want to vote before Election Day? Go to your town or city clerk's office and vote an absentee ballot right there, no application needed. Ballots are there 30 days before the election, and the last day is Thursday, October 29. On Election Day, vote at your town's polling place.",
-   "es": "¿Quieres votar antes del Día de las Elecciones? Ve a la oficina del secretario de tu pueblo o ciudad y vota ahí mismo con una boleta de voto en ausencia, sin llenar solicitud. Las boletas están ahí 30 días antes de la elección, y el último día es el jueves 29 de octubre. El Día de las Elecciones, vota en el lugar de votación de tu pueblo.",
+   "en": "Want to vote before Election Day? Go to your town or city clerk's office during its hours and vote an absentee ballot right there. No application needed. The last day is Thursday, October 29, unless special circumstances apply. On Election Day, vote at your town's polling place.",
+   "es": "¿Quieres votar antes del Día de las Elecciones? Ve a la oficina del secretario de tu pueblo o ciudad en su horario y vota ahí mismo con una boleta de voto en ausencia. No necesitas solicitud. El último día es el jueves 29 de octubre, salvo que haya circunstancias especiales. El Día de las Elecciones, vota en el lugar de votación de tu pueblo.",
    "src": "https://www.maine.gov/sos/elections-voting/state-of-maine-voter-guide",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "You do not need to complete an application if you vote in person at the clerk's office. The deadline for absentee voting in the presence of the clerk, unless special circumstances exist, is the Thursday before the election.",
-   "status": "verified"
+   "status": "verified",
+   "until": "2026-10-29",
+   "en_after": "In-person absentee voting at the clerk's office ended October 29. On Election Day, vote at your town's polling place.",
+   "es_after": "El voto en ausencia en persona en la oficina del secretario terminó el 29 de octubre. El Día de las Elecciones, vota en el lugar de votación de tu pueblo."
   },
   "first_time": {
-   "en": "Not registered yet? Register in person, even on Election Day at the polls. Bring an ID and proof of where you live, such as a driver's license, a passport, a utility bill or a bank statement. If you're in line at 8 p.m., you can still register and vote.",
-   "es": "¿Todavía no te registras? Regístrate en persona, incluso el Día de las Elecciones en el lugar de votación. Lleva una identificación y un comprobante de dónde vives, como una licencia de conducir, un pasaporte, un recibo de servicios o un estado de cuenta bancario. Si estás en la fila a las 8 p. m., todavía puedes registrarte y votar.",
+   "en": "Not registered yet? Register in person, even on Election Day at the polls. Bring proof of who you are, such as a driver's license or passport, and proof of where you live, such as a utility bill or bank statement. If you're in line at 8 p.m., you can still register and vote.",
+   "es": "¿Todavía no te registras? Regístrate en persona, incluso el Día de las Elecciones en el lugar de votación. Lleva un comprobante de quién eres, como una licencia de conducir o un pasaporte, y un comprobante de dónde vives, como un recibo de servicios o un estado de cuenta bancario. Si estás en la fila a las 8 p. m., todavía puedes registrarte y votar.",
    "src": "https://www.maine.gov/sos/elections-voting/your-right-to-vote-in-maine",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "If I am not registered to vote, I can register on Election Day and vote. (I must register in person and must show ID and proof of where I live.)",
    "status": "verified"
   }
@@ -80,10 +84,10 @@
   },
   "local_offices_url": "https://www.maine.gov/sos/elections-voting/find-a-municipal-clerk-or-registrar",
   "rule": {
-   "en": "Every town and city has its own polling place. Look yours up with your home address in the state's Voter Information Lookup Service, or call your town office or city hall. Opening times vary by town, but every polling place closes at 8 p.m.",
-   "es": "Cada pueblo y ciudad tiene su propio lugar de votación. Busca el tuyo con tu dirección en el buscador oficial del estado (Voter Information Lookup Service), o llama a la oficina de tu pueblo o al ayuntamiento. El horario de apertura cambia según el pueblo, pero todos los lugares de votación cierran a las 8 p. m.",
+   "en": "Every town and city has its own polling place. Look yours up with your home address in the state's Voter Information Lookup Service, or call your town office or city hall. Opening times vary by town.",
+   "es": "Cada pueblo y ciudad tiene su propio lugar de votación. Búscalo con tu dirección en el servicio estatal de consulta para votantes (Voter Information Lookup Service), o llama a la oficina de tu municipio o al ayuntamiento. El horario de apertura varía según el pueblo.",
    "src": "https://www.maine.gov/sos/elections-voting/state-of-maine-voter-guide",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "Every town and city has its own places where people vote, called voting places or \"the polls\". You can call your town office or city hall to find out where you vote.",
    "status": "verified"
   }
@@ -143,20 +147,21 @@
  },
  "polls_rules": {
   "gear": {
-   "en": "Leave the campaign shirts and signs at home. Maine bans campaign posters, literature, stickers and apparel with a candidate's name on public property within 250 feet of the polling place entrance. If you're only there to vote, a campaign button up to 3 inches across is allowed.",
-   "es": "Deja en casa las camisetas y los letreros de campaña. Maine prohíbe carteles, folletos, calcomanías y ropa de campaña con el nombre de un candidato en propiedad pública a menos de 250 pies de la entrada del lugar de votación. Si solo vas a votar, se permite un botón de campaña de hasta 3 pulgadas.",
+   "en": "Leave the campaign shirts and signs at home. Inside the polling place and on public property within 250 feet of its entrance, no one may try to sway a vote on a candidate or a ballot question. If you're only there to vote, a campaign button up to 3 inches across is allowed.",
+   "es": "Deja en casa las camisetas y letreros de campaña. Dentro del lugar de votación y en propiedad pública a menos de 250 pies de su entrada, nadie puede tratar de influir en el voto sobre un candidato o una pregunta de la boleta. Si solo vas a votar, puedes llevar un botón de campaña de hasta 3 pulgadas.",
    "src": "https://legislature.maine.gov/statutes/21-A/title21-Asec682.html",
-   "checked": "2026-10-21",
-   "quote": "It does not prohibit a person who is at the polls solely for the purpose of voting from wearing a campaign button when the longest dimension of the button does not exceed 3 inches.",
+   "checked": "2026-10-28",
+   "quote": "On public property within 250 feet of the entrance to the voting place as well as within the voting place itself, a person may not: A. Influence another person's decision regarding a candidate for an office that is on the ballot for the election that day, whether or not the candidate's name is on the ballot, or a question that is on the ballot for the election that day; ... It does not prohibit a person who is at the polls solely for the purpose of voting from wearing a campaign button when the longest dimension of the button does not exceed 3 inches.",
    "status": "verified"
   },
   "phone": {
-   "en": "A sticker selfie is fine: Maine law allows a still photo that shows only you. Anyone taking other photos or video in the voting place has to stay outside the guardrail enclosure and at least 15 feet from the voter.",
-   "es": "La selfie con tu sticker está bien: la ley de Maine permite una foto fija donde solo sales tú. Quien tome otras fotos o videos en el lugar de votación debe quedarse fuera del área cercada donde se vota y a por lo menos 15 pies del votante.",
-   "src": "https://legislature.maine.gov/statutes/21-A/title21-Asec683.html",
-   "checked": "2026-10-21",
-   "quote": "A person video recording or engaging in still photography in the voting place or in the location where voter registration is occurring must remain outside the guardrail enclosure and may not conduct video recording or still photography closer than 15 feet from a voter being video recorded or photographed, including when a voter is where a person is collecting voters' signatures, except that a person may take a still photograph that depicts only the person taking the photograph.",
-   "status": "verified"
+   "en": "Ballot selfies are allowed in Maine. Other photos or video of ballots are not. Anyone taking other photos or video in the polling place has to stay outside the guardrail and at least 15 feet from voters.",
+   "es": "En Maine se permiten las selfies con tu boleta. Otras fotos o videos de boletas no. Quien tome otras fotos o videos en el lugar de votación tiene que quedarse fuera de la barandilla (guardrail) y a por lo menos 15 pies de los votantes.",
+   "src": "https://www.maine.gov/sos/news/primary-election-one-week-away",
+   "checked": "2026-10-28",
+   "quote": "Photography and videography are allowed in and near polling places as long as the person recording remains outside the guardrail and isn't conducting video recording closer than 15 feet from a voter, including when a voter is where a person is collecting signatures. Voted ballots are not public records and voters have the right to a secret ballot; photographs and video of ballots are not allowed. The exception to this is ballot selfies which are allowed.",
+   "status": "verified",
+   "notes": "Secretary of State news release, June 2, 2026 (primary). Read in Chrome; maine.gov blocks curl and WebFetch (403). Same rule in 21-A §683 (still photo depicting only the photographer)."
   },
   "line": {
    "en": "Polls close at 8 p.m. If you're at the polling place at closing time, you get the chance to vote. Anyone who arrives after 8 p.m. can't.",
@@ -169,8 +174,13 @@
  },
  "sticker": {
   "tradition": {
-   "status": "missing",
-   "notes": "No I voted sticker design or contest found on maine.gov. The SOS runs student poster and essay contests, which are not stickers."
+   "en": "For its 2020 student mock election, the Maine Secretary of State gave schools two printable \"I Voted Today\" sticker designs, made for Avery 5160 mailing labels.",
+   "es": "Para su elección simulada estudiantil de 2020, la Secretaría de Estado de Maine les dio a las escuelas dos diseños de stickers \"I Voted Today\" para imprimir, hechos para etiquetas de correo Avery 5160.",
+   "src": "https://www.maine.gov/sos/kids/mockelection/ballots/index.html",
+   "checked": "2026-10-28",
+   "quote": "Pirnt your own \"I Voted Today\" stickers Choose from two, ready-to-print designs that utilize Avery 5160 mailing lables, 30 per sheet.",
+   "status": "verified",
+   "notes": "Quote keeps the page's own typos. Westbrook's 2024 artist-designed stickers (WGME) are news only; no Westbrook or SOS page found."
   }
  },
  "faq": {
@@ -215,14 +225,14 @@
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026 with curl on maine.gov/sos (Absentee Voting, Absentee Guide, State of Maine Voter Guide, Your Right to Vote in Maine, Information About Voting, Upcoming Elections, Early Voting Reports) and legislature.maine.gov (21-A §§626, 682, 683, 754-A, 756). maine.gov answered curl this time (faq-sources.json had recorded 403s). The October 29 date is the 'Thursday prior to the election' on the Absentee Guide and Voter Guide (the Voter Guide also says 'Received 3 business days before Election Day'); no page prints the calendar date. The October 13 registration date is printed on the Voter Guide. EARLY VOTING FOR THE LEAD (states.js has ME unchecked): Maine has no early voting by the SOS's own definition; it has no-excuse in-person absentee voting at the municipal clerk's office. Window: ballots available 30 days before the election (Sunday, October 4, 2026 by the calendar; most clerk offices are closed weekends) through Thursday, October 29, 2026. Quotes: (1) https://www.maine.gov/sos/elections-voting/state-of-maine-voter-guide: 'Absentee ballots are available 30 days before the election at the municipal clerk's office. You do not need to complete an application if you vote in person at the clerk's office. The deadline for absentee voting in the presence of the clerk, unless special circumstances exist, is the Thursday before the election.' (2) https://www.maine.gov/sos/elections-voting/voter-data/early-voting-reports: 'the Maine Secretary of State considers the term early voting to describe a time period before an election during which voters have the opportunity to cast a ballot at a designated voting place within their municipality, in the same manner as on Election Day. This is a different process than the in-person absentee voting that Maine currently allows.' Hours follow each town office; the SOS municipal office hours list is a download and was not opened. Suggested states.js note: 'Vote absentee in person at your town clerk's office through Thu., Oct. 29.' Not found: early voting hours, expired-ID rule (no ID needed), sticker tradition. Phone rule: 21-A §683(5) is new in PL 2025, c. 397; the file says only what the subsection says about self-photos and does not address photographing a marked ballot.",
+ "notes": "Read October 21, 2026 with curl on maine.gov/sos (Absentee Voting, Absentee Guide, State of Maine Voter Guide, Your Right to Vote in Maine, Information About Voting, Upcoming Elections, Early Voting Reports) and legislature.maine.gov (21-A §§626, 682, 683, 754-A, 756). maine.gov answered curl this time (faq-sources.json had recorded 403s). The October 29 date is the 'Thursday prior to the election' on the Absentee Guide and Voter Guide (the Voter Guide also says 'Received 3 business days before Election Day'); no page prints the calendar date. The October 13 registration date is printed on the Voter Guide. EARLY VOTING FOR THE LEAD (states.js has ME unchecked): Maine has no early voting by the SOS's own definition; it has no-excuse in-person absentee voting at the municipal clerk's office. Window: ballots available 30 days before the election (Sunday, October 4, 2026 by the calendar; most clerk offices are closed weekends) through Thursday, October 29, 2026. Quotes: (1) https://www.maine.gov/sos/elections-voting/state-of-maine-voter-guide: 'Absentee ballots are available 30 days before the election at the municipal clerk's office. You do not need to complete an application if you vote in person at the clerk's office. The deadline for absentee voting in the presence of the clerk, unless special circumstances exist, is the Thursday before the election.' (2) https://www.maine.gov/sos/elections-voting/voter-data/early-voting-reports: 'the Maine Secretary of State considers the term early voting to describe a time period before an election during which voters have the opportunity to cast a ballot at a designated voting place within their municipality, in the same manner as on Election Day. This is a different process than the in-person absentee voting that Maine currently allows.' Hours follow each town office; the SOS municipal office hours list is a download and was not opened. Suggested states.js note: 'Vote absentee in person at your town clerk's office through Thu., Oct. 29.' Not found: early voting hours, expired-ID rule (no ID needed), sticker tradition. Phone rule: 21-A §683(5) is new in PL 2025, c. 397; the file says only what the subsection says about self-photos and does not address photographing a marked ballot. UPDATE Oct 28, 2026: maine.gov now 403s curl and WebFetch; read in Chrome. Added late-request special circumstances (21-A §753-B(2)(D)), under-100 closing exception (§626), ballot-question advocacy (§682), ballot selfie rule (SOS June 2, 2026 release), 2020 mock election sticker. Absentee Guide: once the clerk accepts your absentee ballot, 'you will not be eligible to receive a ballot if you show up to vote in person.'",
  "election_day": {
   "hours": {
-   "en": "Your town sets its opening time, between 6 and 8 a.m. (by 10 a.m. in towns under 500 people), and polls close at 8 p.m.",
-   "es": "Tu pueblo fija la hora de apertura, entre las 6 y las 8 a. m. (a más tardar a las 10 a. m. en pueblos de menos de 500 habitantes), y se cierra a las 8 p. m.",
+   "en": "Your town sets its opening time, between 6 and 8 a.m. (by 10 a.m. in towns under 500 people). Polls close at 8 p.m. A town under 100 people may close once every registered voter has voted.",
+   "es": "Tu pueblo fija su hora de apertura, entre las 6 y las 8 a. m. (a más tardar a las 10 a. m. en pueblos de menos de 500 habitantes). Los lugares de votación cierran a las 8 p. m. Un pueblo de menos de 100 habitantes puede cerrar en cuanto hayan votado todos sus votantes registrados.",
    "src": "https://legislature.maine.gov/statutes/21-A/title21-Asec626.html",
-   "checked": "2026-10-25",
-   "quote": "The polls must be opened no earlier than 6 a.m. and no later than 8 a.m. on election day, except that in municipalities with a population of less than 500, the polls must be opened no later than 10:00 a.m.",
+   "checked": "2026-10-28",
+   "quote": "The polls must be opened no earlier than 6 a.m. and no later than 8 a.m. on election day, except that in municipalities with a population of less than 500, the polls must be opened no later than 10:00 a.m. ... The polls must be closed at 8 p.m. on election day, except in municipalities of population less than 100 which may close the polls after all registered voters have voted.",
    "status": "verified",
    "quote2": "The polls must be closed at 8 p.m. on election day",
    "varies": true
