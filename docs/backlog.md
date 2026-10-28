@@ -109,7 +109,9 @@ clicks in the GA4 and Search Console admin screens:
 ## Maker Ideas From the Sticker History Research (October 22)
 
 Already in the maker: square and story sizes, native share on phones, a free-text date line, I voted and
-I'm voting messages, Spanish. Worth adding, in rough order of value before November 3:
+I'm voting messages, Spanish. All six ideas below have shipped (checked October 28): First time voter and
+Future voter messages, the 48 px profile preview, Copy image description, Cut out the circle (PNG) and the
+4:5 Post size. The list stays as the record of what the research suggested.
 
 - **"First time voter" message** (FIRST TIME / VOTER, and PRIMERA VEZ / VOTÉ or similar after Spanish review). The research's strongest new message; fits the 10-character line rule.
 - **See it at profile-picture size.** A small 48 px circle preview next to the big one, so people can check it reads where friends will see it.
@@ -143,7 +145,7 @@ option on `render`.
 
 Next, if wanted:
 
-- **Tilt control.** `render` already takes `tilt` for any design. A three-way control under the
+- **Tilt control** (shipped October 27 as one Tilt checkbox). `render` already takes `tilt` for any design. A three-way control under the
   swatches (Straight, Left, Right at about 7 degrees).
 - **Stack (sketch 4)** as a fix to Big type: every line the same width is what makes the ready-made
   lockups look designed.

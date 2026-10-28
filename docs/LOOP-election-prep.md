@@ -275,3 +275,14 @@ outage reported in a search. Both Secretary of State sites still link those exac
 right. Likely a block on VPN or data-center traffic, or a short outage. Re-check October 29; if still down,
 look for a county or state fallback to name beside it. No change, no push.
 
+
+### October 28, 11:40 a.m.: BigQuery Re-Check, Backlog Tidy
+
+- **BigQuery:** `analytics_559738937` still returns Not found in `seo-command-ctr`. The link was made
+  October 27, and Google says the first export can take up to 24 hours or longer. Re-check tonight or at the
+  Oct 29 morning check. The billing question for Garrett stands.
+- **Backlog:** every maker idea from the October 22 history research has shipped (First time voter, Future
+  voter, the 48 px profile preview, Copy image description, Cut out the circle, the 4:5 Post size), and so
+  has Tilt. `docs/backlog.md` now says so, so a later pass doesn't rebuild them.
+- No site change, no push. Every loop table item is done; what's left are the dated checks (Oct 29 Search
+  Console look and GA4 fields, the daily ended-state check, Nov 1, 2, 4, 5).
