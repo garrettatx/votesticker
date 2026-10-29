@@ -319,3 +319,12 @@ look for a county or state fallback to name beside it. No change, no push.
   strongest pages) Perplexity reads are running.
 - Oct 29 morning: confirm the daily build, check ME shows early voting ended on Oct 30's build, push the
   queued commits, verify live, IndexNow for changed pages.
+
+### October 29, 5:50 a.m.: Push, VoterView, BigQuery
+- Push 1 of Oct 29 live (40 commits; see LOOP-state-pages.md); IndexNow 200.
+- Arkansas and Nebraska VoterView still refuse connections from this machine (DNS resolves: 66.206.201.11 and
+  vv-necvr-ne.essedge.com, an ES&S host). Both SOS sites still link these exact URLs, and our pages also link
+  county offices, so the links stay; a blocked tool is not a down site.
+- GA4 BigQuery: only events_20261027 so far; the Oct 28 table (first full day of measurement v2) usually lands
+  midday. Read it then.
+- Still due today: Search Console look for the 21 pages updated Oct 24 (data lags 2 to 3 days).
