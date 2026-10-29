@@ -54,3 +54,10 @@ check: 30 open-window start dates, down from 34). Every state page is now ready 
 Open from the agents: NJ cure deadline conflict (timeline vs poster), Camden County and Washington County MD
 sticker pages need ALLOW_HOSTS, the "county and local election offices" link label is wrong for Louisiana
 parishes, and Alaska shows a "fix a signature problem" link though it has no cure process.
+
+### October 29, 12:30 a.m.
+Built the "Still need to vote? / Already voted?" panel under the state gallery (Oct 29 to Nov 1; the Election
+Day banner takes over Nov 2), from verified facts, EN and ES; checked on a phone-size screenshot. Building it
+exposed a bug: app.js replaced the gallery heading on load, so the Oct 26 "I Voted and I Voted Early Stickers"
+heading never showed in a browser (likely not to Google's renderer either). Fixed: the page's own state keeps
+the server heading. Full QA passes. All of it ships in the 6:30 a.m. push.
