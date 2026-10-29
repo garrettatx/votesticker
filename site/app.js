@@ -2337,6 +2337,8 @@
 		$('gallery').hidden = !files.length;
 		// States with ready-made pictures lead with them; the maker follows as "Or Make Your Own" (October 19).
 		$('gallery-h').textContent = T(/^[AEIOU]/.test(nameOf(st)) ? 'Pick an %s Sticker' : 'Pick a %s Sticker', nameOf(st));
+		// The two-path panel is drawn for the page's own state; hide it once the gallery shows another state.
+		var paths = document.querySelector('.paths'); if (paths) { paths.hidden = true; }
 		var first = !files.length;
 		$('maker-h').textContent = first ? T('Make Your %s Sticker', nameOf(st)) : T('Or Make Your Own');
 		$('maker-h').classList.toggle('maker-h--first', first);

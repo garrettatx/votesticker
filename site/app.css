@@ -797,3 +797,9 @@ button.link-quiet:hover { text-decoration: underline; }
    equal widths, and smaller text under 400 px so each stays on one or two lines. */
 .sizes .size { flex: 1 1 0; min-width: 0; }
 @media (max-width: 400px) { .sizes .size { font-size: var(--fs-xs); padding-inline: 6px; } }
+
+/* Still need to vote / Already voted, under the state gallery (October 29). */
+.paths { margin: var(--s4) 0 0; padding: var(--s3) var(--s4); border: 2px solid var(--gold); border-radius: var(--radius); background: var(--cream); color: var(--text); }
+.paths p { margin: 0; }
+.paths p + p { margin-top: var(--s2); }
+.paths a { color: var(--ink); font-weight: 700; text-decoration: underline; text-underline-offset: 0.16em; }

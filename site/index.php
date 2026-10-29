@@ -851,6 +851,30 @@ function vote_post_body( $st ) {
 	return 'Election Day is Tuesday, November 3, 2026. Make a plan to vote, and check whether you can vote early in ' . $name . ' at vote411.org.';
 }
 
+// Two paths right under the sticker gallery (October 29; every strong-page Perplexity read led with it): what a
+// voter who hasn't voted can still do this week, with the official lookup, and what to do after voting. Only
+// before the Election Day banner takes over (Nov 2), and only from verified facts.
+function vote_paths( $st ) {
+	if ( 'pre' !== vote_phase() || ! vote_verified( $st ) ) { return ''; }
+	$loc = vote_fact( $st, 'where.locator_url' );
+	$track = vote_fact( $st, 'mail.track_url' );
+	$kind = $st['kind'] ?? '';
+	if ( 'mail' === $kind ) {
+		// One plain line for the five vote-by-mail states (each returns by Election Day; the rule is in the box below).
+		$need = t( 'Return your ballot by Election Day, Tuesday, November 3. The rules are below.' );
+	} elseif ( vote_early_now( $st ) ) {
+		$need = t( 'Early voting runs through %s, and Election Day is Tuesday, November 3.', vote_long( $st['end'] ) );
+	} else {
+		$need = t( 'Vote on Election Day, Tuesday, November 3.' );
+	}
+	$go = $loc ?: $st['officialUrl'];
+	$go_label = $loc ? ( vote_fact( $st, 'where.locator_cta' ) ?: t( 'Find where you vote' ) ) : t( 'Official election information' );
+	$out = '<div class="paths"><p><b>' . vote_e( t( 'Still need to vote?' ) ) . '</b> ' . vote_e( $need ) . ' <a href="' . vote_e( $go ) . '" target="_blank" rel="noopener">' . vote_e( $go_label ) . '</a></p>';
+	$out .= '<p><b>' . vote_e( t( 'Already voted?' ) ) . '</b> ' . vote_e( t( 'Pick a sticker above to save it.' ) );
+	if ( $track ) { $out .= ' <a href="' . vote_e( $track ) . '" target="_blank" rel="noopener">' . vote_e( t( 'Track your mail ballot' ) ) . '</a>'; }
+	return $out . '</p></div>';
+}
+
 // The Election Day banner (November 2 and 3; docs/election-lifecycle-plan-20261025.md). Dated, in the page
 // flow, no countdown and no "today": it says the schedule, links the official lookup, and points people
 // who already voted at the stickers. Mail states lead with their verified return rule.
@@ -1414,6 +1438,7 @@ $vote_ld = array(
 			<?php echo vote_classic_link( $vote_st ); ?>
 			<?php // Not official (October 28, Garrett's OK): our designs are ours; where the state or a county hands out its own sticker, the story further down says which. ?>
 			<p class="hint gallery__note"><?php echo vote_e( t( 'Free designs by Vote Sticker, not affiliated with any election office. They aren’t proof of voting.' ) ); ?><?php if ( $vote_st && vote_fact( $vote_st, 'sticker.tradition' ) ) : ?> <a href="#sticker-h"><?php echo vote_e( t( 'See the stickers election offices hand out' ) ); ?></a>.<?php endif; ?></p>
+			<?php echo $vote_st ? vote_paths( $vote_st ) : ''; ?>
 		</section>
 
 		<?php $vote_maker_first = ! $vote_files; ?>
