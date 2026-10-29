@@ -284,7 +284,10 @@ function vote_meta( $st ) {
 		// "I voted sticker" is the term people search (Ahrefs, October 19); long names drop "and Vote" to fit.
 		// Once early voting closes the title names the sticker people still look for (October 25 review).
 		'title' => 'ended' === $kind ? ( strlen( $name . ' I Voted and I Voted Early Stickers: Vote Nov 3' ) > 65 ? $name . ' I Voted Early Stickers: Vote Nov 3' : $name . ' I Voted and I Voted Early Stickers: Vote Nov 3' )
-			: ( strlen( $name . ' I Voted and Vote Stickers: ' . $tag ) > 62 ? $name . ' I Voted Stickers: ' . $tag : $name . ' I Voted and Vote Stickers: ' . $tag ),
+			// While early voting is open or coming, the title names the sticker people search for then: "i voted early
+			// sticker" lands on state pages without a state name (GSC Oct 21 to 28, ~400 a week; Garrett's OK Oct 28).
+			: ( 'early' === $family ? ( strlen( $name . ' I Voted and I Voted Early Stickers: ' . preg_replace( '/^Early Voting /', '', $tag ) ) > 62 ? $name . ' I Voted Early Stickers: ' . preg_replace( '/^Early Voting /', '', $tag ) : $name . ' I Voted and I Voted Early Stickers: ' . preg_replace( '/^Early Voting /', '', $tag ) )
+			: ( strlen( $name . ' I Voted and Vote Stickers: ' . $tag ) > 62 ? $name . ' I Voted Stickers: ' . $tag : $name . ' I Voted and Vote Stickers: ' . $tag ) ),
 		'h1' => $name . ' I Voted and Vote Stickers',
 		'crumb' => $name,
 		'ribbon' => $ribbon,
@@ -364,7 +367,7 @@ function vote_meta_es( $st ) {
 	}
 	return array(
 		'slug' => vote_slug( $st['name'] ),
-		'title' => 'ended' === $kind ? 'Stickers de Ya voté y Ya voté temprano en ' . $name . ': vota el 3 nov' : 'Stickers para votar en ' . $name . ': ' . $tag,
+		'title' => 'ended' === $kind ? 'Stickers de Ya voté y Ya voté temprano en ' . $name . ': vota el 3 nov' : ( 0 === strpos( $tag, 'votación anticipada' ) ? 'Stickers de Ya voté temprano en ' . $name . ': ' . $tag : 'Stickers para votar en ' . $name . ': ' . $tag ),
 		'h1' => 'Stickers para votar en ' . $name,
 		'crumb' => $name,
 		'ribbon' => $ribbon,
@@ -1410,7 +1413,7 @@ $vote_ld = array(
 			<div class="grid grid--gallery" id="gallery-grid" style="--cols: <?php echo vote_cols( count( $vote_files ) ); ?>"><?php foreach ( $vote_files as $i => $src ) : ?><a class="tile" href="<?php echo vote_e( $src ); ?>" download="vote-<?php echo strtolower( $vote_abbr ) . '-' . ( $i + 1 ); ?>.jpg"><img src="<?php echo vote_e( $src ); ?>" alt="<?php echo vote_e( vote_alt( $src, $vote_st, $i ) ); ?>" width="1080" height="1080" loading="lazy"></a><?php endforeach; ?></div>
 			<?php echo vote_classic_link( $vote_st ); ?>
 			<?php // Not official (October 28, Garrett's OK): our designs are ours; where the state or a county hands out its own sticker, the story further down says which. ?>
-			<p class="hint gallery__note"><?php echo vote_e( t( 'Free designs by Vote Sticker, not affiliated with any election office.' ) ); ?><?php if ( $vote_st && vote_fact( $vote_st, 'sticker.tradition' ) ) : ?> <a href="#sticker-h"><?php echo vote_e( t( 'See the stickers election offices hand out' ) ); ?></a>.<?php endif; ?></p>
+			<p class="hint gallery__note"><?php echo vote_e( t( 'Free designs by Vote Sticker, not affiliated with any election office. They aren’t proof of voting.' ) ); ?><?php if ( $vote_st && vote_fact( $vote_st, 'sticker.tradition' ) ) : ?> <a href="#sticker-h"><?php echo vote_e( t( 'See the stickers election offices hand out' ) ); ?></a>.<?php endif; ?></p>
 		</section>
 
 		<?php $vote_maker_first = ! $vote_files; ?>
