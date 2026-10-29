@@ -31,15 +31,13 @@ Official sources only; Perplexity and news are leads. Students by first name and
 (emergency absentee routes, photo vs. sharing, received vs. postmarked). Don't disturb what ranks on the
 strongest pages: change only what's wrong, stale, missing or unclear.
 
-## Status (October 28, 9 p.m.)
+## Status (October 28, late night)
 | States | Status |
 |---|---|
 | KY plus ND NH WY SD WV DE VT MT RI | Live Oct 28 |
-| IA ID MS NE OK DC IN ME NV CT; MO HI KS AR GA WI AL VA PA MA; TN NM IL AZ MI OH CO MN SC UT | Ready to ship (committed); KS TX MI sticker stories, FL mail sticker; home sections; titles; template fixes |
-| AK NJ LA MD WA OR | Almost ready: research saved (`*-b5.md`), checking agent running Oct 28 night |
-| NC NY FL CA TX | Almost ready: research saved (`*-b5.md`), checking agent running Oct 28 night |
+| All other 41 states and DC | Ready to ship (committed): batches 2 to 5 re-verified, sticker stories, titles, template fixes, home sections |
 
-## Next After the 11
+## Next
 - "Still need to vote? / Already voted?" panel under the sticker downloads (every b5 read led with it).
 - Michigan page order: official 2026 designs right after our gallery.
 - Re-read the ten lowest pages' queries Nov 11, 14 days after recrawl.
@@ -49,3 +47,10 @@ strongest pages: change only what's wrong, stale, missing or unclear.
 ### October 28, 9 p.m.
 Loop started. Early-voting titles and the proof-of-voting line committed (Garrett's OK). 32 commits wait for
 the Oct 29 6:30 a.m. push. Batch 5 checking restarted with two agents.
+
+### October 28, Late Night
+Batch 5 (AK NJ LA MD WA OR; NC NY FL CA TX) verified and committed with FAQ answers; full QA passes (stale
+check: 30 open-window start dates, down from 34). Every state page is now ready for the Oct 29 6:30 a.m. push.
+Open from the agents: NJ cure deadline conflict (timeline vs poster), Camden County and Washington County MD
+sticker pages need ALLOW_HOSTS, the "county and local election offices" link label is wrong for Louisiana
+parishes, and Alaska shows a "fix a signature problem" link though it has no cure process.
