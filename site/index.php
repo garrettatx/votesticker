@@ -536,7 +536,7 @@ function vote_guide( $st ) {
 		list( $html, $srcs ) = $w ?: array( '<section class="guide" aria-labelledby="where-h">' . $h( 'where-h', t( 'mail' === ( $st['kind'] ?? '' ) && vote_verified( $st ) ? 'Drop Boxes and Voting Centers' : 'Where You Can Vote' ) ), array() );
 		// The locator card sits in the summary box above; here only the county offices link.
 		$offices = vote_fact( $st, 'where.local_offices_url' );
-		if ( $offices ) { $html .= '<p class="guide__more"><a href="' . vote_e( $offices ) . '" target="_blank" rel="noopener">' . vote_e( t( '%s county and local election offices', $name ) ) . '</a></p>'; }
+		if ( $offices ) { $html .= '<p class="guide__more"><a href="' . vote_e( $offices ) . '" target="_blank" rel="noopener">' . vote_e( t( 'LA' === $st['abbr'] ? '%s parish election offices' : ( 'AK' === $st['abbr'] ? '%s regional election offices' : '%s county and local election offices' ), $name ) ) . '</a></p>'; }
 		$out .= $html . vote_sources_line( $st, $srcs ) . '</section>';
 	}
 
@@ -563,7 +563,7 @@ function vote_guide( $st ) {
 	$track = vote_fact( $st, 'mail.track_url' );
 	// The tracker joins a section that has something to say; on its own it waits for the Election Day banner.
 	if ( $track && $mail ) { $mail .= '<p class="guide__more"><a href="' . vote_e( $track ) . '" target="_blank" rel="noopener">' . vote_e( t( 'Track your %s mail ballot', $name ) ) . '</a></p>'; }
-	if ( $mail && ! vote_between() ) { $out .= '<section class="guide" aria-labelledby="mail-h">' . $h( 'mail-h', t( $post ? 'Check or Fix Your Mail Ballot' : ( 'mail' === ( $st['kind'] ?? '' ) && vote_verified( $st ) ? 'Returning Your Ballot' : 'Who Can Vote by Mail' ) ) ) . $mail . vote_sources_line( $st, $srcs ) . vote_rn( 'mail-in-voting', 'Why mail ballots get rejected, and how to fix a signature problem:', 'the mail voting guide' ) . '</section>'; }
+	if ( $mail && ! vote_between() ) { $out .= '<section class="guide" aria-labelledby="mail-h">' . $h( 'mail-h', t( $post ? 'Check or Fix Your Mail Ballot' : ( 'mail' === ( $st['kind'] ?? '' ) && vote_verified( $st ) ? 'Returning Your Ballot' : 'Who Can Vote by Mail' ) ) ) . $mail . vote_sources_line( $st, $srcs ) . vote_rn( 'mail-in-voting', vote_fact( $st, 'mail.cure' ) || vote_fact( $st, 'dates.cure' ) ? 'Why mail ballots get rejected, and how to fix a signature problem:' : 'Why mail ballots get rejected:', 'the mail voting guide' ) . '</section>'; }
 
 	// Rules at the polls, then the state's own sticker tradition, which leads back to the maker.
 	$p = $post ? '' : $section( 'polls-h', t( 'Phones, Photos, and Campaign Gear' ), array( 'polls_rules.gear', 'polls_rules.phone', 'polls_rules.line' ) );
