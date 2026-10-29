@@ -71,3 +71,10 @@ Spanish pages are `noindex`, out of the sitemap, and no page carries hreflang. F
 4. **"votación anticipada" vs "votación temprana"** in headings: we use anticipada.
 5. **State names:** decided, English everywhere (Garrett, October 19).
 6. **"Para no correr riesgos"** (Oregon's "to be safe"): natural enough?
+7. **"casillas" or "lugar de votación"** for polling place? The glossary says "lugar de votación", but "cierren las
+   casillas" is in about 20 state files and one FAQ question (natural Mexican Spanish; flagged Oct 29 review).
+8. **County clerk:** "secretario de tu condado (county clerk)" site-wide, but NM and IL use "la secretaría del
+   condado" consistently. Pick one.
+9. **Generic masculine "registrado"** ("si estás registrado") site-wide: keep, or rewrite neutrally?
+10. **Smaller terms:** "pareja de hecho" (NM; "pareja" or "unión libre" is more Mexican), "notarizar" (MO, SD),
+    "asilo de ancianos" for nursing home, Indiana's "junta de votación en ausencia" for traveling board.

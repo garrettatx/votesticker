@@ -74,3 +74,11 @@ Impact look for the Oct 24 pages logged in LOOP-election-prep (no lift yet; base
 right after Key Dates on every state page, also after the election; QA passes. Ships in the 1 p.m. push. Next:
 GA4 v2 read when the Oct 28 BigQuery table lands; the NJ cure deadline conflict; ALLOW_HOSTS for official county
 sites on .com and .org (Camden NJ, Washington County MD, Johnson County KS, Montgomery County KS).
+
+### October 29, 7:30 a.m.
+Spanish review (agent, es-mx-localization rules with the site's tú and glossary): ~695 new strings checked, 65
+fixed (Kansas entry counts read as a range, Montana "matasellos de esa hora", Minnesota "a una semana", Texas
+in-person return calque, gendered wording made neutral). QA passes; ships in the 1 p.m. push. Open Spanish calls,
+added to docs/spanish-style.md open questions: "casillas" (about 20 files) vs the glossary's "lugar de votación";
+county clerk rendering in NM and IL; generic masculine "registrado"; "pareja de hecho", "notarizar", "asilo de
+ancianos"; and the existing "Ya voté" vs "YO VOTÉ" question.
