@@ -15,39 +15,45 @@
  },
  "dates": {
   "reg_deadline": {
-   "en": "The advance deadline was Tuesday, October 13, 2026. You can still register and vote during early voting or at your polling place on Election Day. Bring a document that shows where you live.",
-   "es": "La fecha límite anticipada fue el martes 13 de octubre de 2026. Todavía puedes registrarte y votar durante la votación anticipada o en tu lugar de votación el Día de las Elecciones. Lleva un documento que muestre dónde vives.",
+   "en": "The advance deadline was Tuesday, October 13, 2026. You can still register and vote during early voting or at your polling place on Election Day. Bring proof of where you live, such as your MVA license or ID card, or a paycheck, bank statement, utility bill or other government document with your name and address.",
+   "es": "La fecha límite anticipada fue el martes 13 de octubre de 2026. Todavía puedes registrarte y votar durante la votación anticipada o en tu lugar de votación el Día de las Elecciones. Lleva un comprobante de domicilio, como tu licencia o tarjeta de identificación de la MVA, o un talón de pago, un estado de cuenta bancario, un recibo de servicios u otro documento del gobierno con tu nombre y dirección.",
    "src": "https://elections.maryland.gov/voting/election_day_questions.html",
-   "checked": "2026-10-21",
-   "quote": "For the 2026 Gubernatorial General Election, the advanced deadline to register to vote and update your information is Tuesday, October 13, 2026.",
-   "status": "verified"
+   "checked": "2026-10-28",
+   "quote": "For the 2026 Gubernatorial General Election, the advanced deadline to register to vote and update your information is Tuesday, October 13, 2026. ... If you can't register by the advanced deadline, go to an early voting center in the county where you live and bring a document that proves where you live. This document can be your MVA-issued license, ID card, or change of address card, or your paycheck, bank statement, utility bill, or other government document with your name and new address.",
+   "status": "verified",
+   "notes": "Election Day registration with proof of residency: Md. Election Law 3-306, https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gel&section=3-306&enactments=false (Oct 28): 'On election day, an individual may appear at a precinct polling place in the individual's county of residence and apply to register to vote.'"
   },
   "mail_request": {
    "en": "To get it by mail, request it by Tuesday, October 27, 2026. For a print-at-home ballot, by Friday, October 30. In person at your local board of elections, until 8 p.m. on November 3. Mailed or dropped-off requests must arrive by those dates.",
    "es": "Para recibirla por correo, pídela a más tardar el martes 27 de octubre de 2026. Para una boleta que imprimes en casa, a más tardar el viernes 30 de octubre. En persona en la junta electoral de tu condado (local board of elections), hasta las 8 p. m. del 3 de noviembre. Las solicitudes enviadas por correo o dejadas en un buzón deben llegar a más tardar en esas fechas.",
    "src": "https://elections.maryland.gov/elections/2026/index.html",
-   "checked": "2026-10-21",
-   "quote": "Your request must be received (not just mailed) by:",
+   "checked": "2026-10-28",
+   "quote": "Online The deadlines for requests submitted online are: Tuesday October 27, 2026 (if you want your ballot mailed to you) Friday October 30, 2026 (if you want to download and print your ballot) ... In Person The deadline is November 03, 2026 by 8:00 pm . Please visit your local board of elections' website for hours of operation.",
    "status": "verified",
    "until": "2026-10-27",
-   "en_after": "Requests to have a ballot mailed to you closed October 27, 2026. You can still request one in person at your local board of elections until 8 p.m. on November 3.",
-   "es_after": "Las solicitudes para recibir la boleta por correo cerraron el 27 de octubre de 2026. Todavía puedes pedirla en persona en la junta electoral de tu condado (local board of elections) hasta las 8 p. m. del 3 de noviembre."
+   "en_after": "Requests to have a ballot mailed to you closed October 27, 2026. You can still request a print-at-home ballot through Friday, October 30, or request a ballot in person at your local board of elections until 8 p.m. on November 3. Check the board's hours before you go.",
+   "es_after": "Las solicitudes para que te manden la boleta por correo cerraron el 27 de octubre de 2026. Todavía puedes pedir una boleta para imprimir en casa hasta el viernes 30 de octubre, o pedir una boleta en persona en la junta electoral de tu condado (local board of elections) hasta las 8 p. m. del 3 de noviembre. Revisa el horario de la junta antes de ir.",
+   "notes": "Was missing the October 30 print-at-home option after October 27. Mail, drop box or fax requests must be received (not just mailed) by the same dates."
   },
   "mail_return": {
-   "en": "By mail, it must be postmarked on or before Tuesday, November 3, and putting it in a mailbox that day doesn't mean it gets that day's postmark. Drop box, polling place, early voting center or local board: by 8 p.m. on November 3.",
-   "es": "Por correo, debe tener matasellos del martes 3 de noviembre o antes, y echarla al buzón ese día no significa que reciba el matasellos de ese día. En un buzón de entrega, un lugar de votación, un centro de votación anticipada o la junta electoral local: a más tardar a las 8 p. m. del 3 de noviembre.",
+   "en": "By mail, it must be postmarked on or before Tuesday, November 3, and arrive by Friday, November 13. Putting it in a mailbox that day doesn't mean it gets that day's postmark. Drop box, polling place, early voting center or local board: by 8 p.m. on November 3. Printed your ballot at home? Use your own envelope and postage.",
+   "es": "Por correo, debe tener matasellos del martes 3 de noviembre o antes, y llegar a más tardar el viernes 13 de noviembre. Echarla al buzón ese día no significa que reciba el matasellos de ese día. En un buzón de entrega, un lugar de votación, un centro de votación anticipada o la junta electoral local: a más tardar a las 8 p. m. del 3 de noviembre. ¿Imprimiste tu boleta en casa? Usa tu propio sobre y estampillas.",
    "src": "https://elections.maryland.gov/elections/2026/index.html",
-   "checked": "2026-10-21",
-   "quote": "Your mail-in ballot must be mailed, dropped in a ballot drop box location (PDF), or taken to a polling place, Early Voting Center or local board by 8:00 pm on Election Day.",
-   "status": "verified"
+   "checked": "2026-10-28",
+   "quote": "Your mail-in ballot must be mailed, dropped in a ballot drop box location (PDF) , or taken to a polling place, Early Voting Center or local board by 8:00 pm on Election Day . If you received your ballot by email, that email will contain a link to print and mail your ballot. You will need to provide your own envelope and postage to return the printed and marked ballot.",
+   "status": "verified",
+   "notes": "Receipt deadline: https://elections.maryland.gov/voting/canvassing.html (Oct 28) rejects a ballot 'postmarked after election day or received after the 2nd Friday after the election' (Nov 13). Postmark warning on the 2026 page: 'Putting your ballot in a mailbox on election day does not mean it is postmarked that day.'"
   },
   "early_hours": {
    "en": "Every early voting center is open 7 a.m. to 8 p.m. each day, including Saturday and Sunday.",
    "es": "Todos los centros de votación anticipada abren de 7 a. m. a 8 p. m. todos los días, incluidos el sábado y el domingo.",
    "src": "https://elections.maryland.gov/elections/2026/index.html",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "If you prefer to vote in person, for the Gubernatorial General Election, early voting centers will be open from Thursday, October 22, 2026 through Thursday, October 29, 2026 from 7:00 am until 8:00 pm, including Saturday and Sunday.",
-   "status": "verified"
+   "status": "verified",
+   "until": "2026-10-29",
+   "en_after": "Early voting ended October 29. Vote at your assigned polling place on Election Day, 7 a.m. to 8 p.m.",
+   "es_after": "La votación anticipada terminó el 29 de octubre. Vota en tu lugar de votación asignado el Día de las Elecciones, de 7 a. m. a 8 p. m."
   },
   "cure": {
    "en": "Forgot to sign the oath? Send a signed oath by 10 a.m. on Friday, November 13, 2026.",
@@ -67,9 +73,12 @@
    "en": "During early voting, you can vote at any early voting center in the county where you live. On Election Day, vote at your assigned polling place.",
    "es": "Durante la votación anticipada puedes votar en cualquier centro de votación anticipada del condado donde vives. El Día de las Elecciones, vota en el lugar de votación que te corresponde.",
    "src": "https://elections.maryland.gov/elections/2026/index.html",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "You may vote early at any early voting center in your county of residence.",
-   "status": "verified"
+   "status": "verified",
+   "until": "2026-10-29",
+   "en_after": "Early voting ended October 29. On Election Day, vote at your assigned polling place.",
+   "es_after": "La votación anticipada terminó el 29 de octubre. El Día de las Elecciones, vota en tu lugar de votación asignado."
   },
   "first_time": {
    "status": "missing"
@@ -97,12 +106,13 @@
    "status": "missing"
   },
   "without": {
-   "en": "Most voters don't show ID. If you're a first-time voter who's asked and can't show it, you vote a provisional ballot. It counts if you get ID to your local board of elections before 10 a.m. on the second Wednesday after Election Day.",
-   "es": "La mayoría de los votantes no muestran identificación. Si votas por primera vez, te la piden y no puedes mostrarla, votas con una boleta provisional. Cuenta si llevas una identificación a la junta electoral de tu condado (local board of elections) antes de las 10 a. m. del segundo miércoles después del Día de las Elecciones.",
+   "en": "Most voters don't show ID. If you're a first-time voter who's asked and can't show it, you vote a provisional ballot. For it to count, get ID to your local board of elections before 10 a.m. on Wednesday, November 11.",
+   "es": "La mayoría de los votantes no muestra identificación. Si votas por primera vez, te la piden y no puedes mostrarla, votas con una boleta provisional. Para que cuente, entrega tu identificación a la junta electoral de tu condado (local board of elections) antes de las 10 a. m. del miércoles 11 de noviembre.",
    "src": "https://elections.maryland.gov/voting/provisional_voting.html",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "For your ballot to count, provide ID to your local board of elections before 10 am on the 2nd Wednesday after election day.",
-   "status": "verified"
+   "status": "verified",
+   "notes": "Second Wednesday after Nov 3: Nov 4, then Nov 11."
   }
  },
  "mail": {
@@ -115,12 +125,13 @@
    "status": "verified"
   },
   "witness": {
-   "en": "Sign the oath that comes with your ballot, but don't sign or mark the ballot itself outside the ovals.",
-   "es": "Firma el juramento (oath) que viene con tu boleta, pero no firmes ni hagas marcas en la boleta fuera de los óvalos.",
+   "en": "Sign the oath that comes with your ballot, not the ballot. Don't sign your name or make any other mark on the ballot itself.",
+   "es": "Firma el juramento que viene con tu boleta, no la boleta. No firmes ni hagas ninguna otra marca en la boleta.",
    "src": "https://elections.maryland.gov/voting/absentee.html",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "Do not sign your name or make any other mark on your ballot.",
-   "status": "verified"
+   "status": "verified",
+   "notes": "Was 'don't sign or mark the ballot itself outside the ovals', which left out write-in spaces."
   },
   "track_url": "https://voterservices.elections.maryland.gov/votersearch",
   "cure": {
@@ -154,10 +165,10 @@
    "status": "verified"
   },
   "phone": {
-   "en": "You can take a photo of your own marked ballot before you cast it, for personal use. Otherwise, phones and cameras stay put away inside, so take your sticker selfie outside.",
-   "es": "Puedes tomarle foto a tu propia boleta marcada antes de depositarla, para uso personal. Fuera de eso, el teléfono y la cámara se quedan guardados adentro, así que tómate la selfie con tu sticker afuera.",
+   "en": "Inside a polling place or early voting center, you can use your phone only to translate, show proof of where you live or ID, look up election information, or take a photo of your own marked ballot before you cast it, for personal use. Take your sticker selfie outside.",
+   "es": "Dentro de un lugar de votación o un centro de votación anticipada, solo puedes usar tu celular para traducir, mostrar tu comprobante de domicilio o tu identificación, revisar información electoral o tomarle una foto a tu propia boleta marcada antes de depositarla, para uso personal. Tómate la selfie con tu sticker afuera.",
    "src": "https://elections.maryland.gov/voting/election_day_questions.html",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "You cannot use your cell phone, pager, camera, and computer equipment in an early voting center or at a polling place except to use as a translation device, provide proof of residency or ID, review election information, and to record a digital image of your marked ballot prior to casting for personal use.",
    "status": "verified"
   },

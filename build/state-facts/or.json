@@ -15,6 +15,10 @@
   "multco.us": {
    "en": "Multnomah County Elections",
    "es": "la oficina electoral del condado de Multnomah"
+  },
+  "apps.oregon.gov": {
+   "en": "the Oregon Secretary of State (Oregon Newsroom)",
+   "es": "la Secretaría de Estado de Oregon (Oregon Newsroom)"
   }
  },
  "dates": {
@@ -31,22 +35,28 @@
    "notes": "Every active registered voter is mailed a ballot; there is no request deadline."
   },
   "mail_return": {
-   "en": "Drop box: by 8 p.m. on Tuesday, November 3. Mail: send it by Tuesday, October 27, a week before Election Day. It has to be postmarked by November 3 and reach your county within 7 days after.",
-   "es": "Buzón: a más tardar a las 8 p. m. del martes 3 de noviembre. Correo: mándala a más tardar el martes 27 de octubre, una semana antes del Día de las Elecciones. Tiene que llevar matasellos del 3 de noviembre o antes y llegar a tu condado en los 7 días siguientes.",
-   "src": "https://sos.oregon.gov/elections/pages/current-election.aspx",
-   "checked": "2026-10-21",
-   "quote": "USPS delivery times may vary, so if you return your ballot by mail, please do so by October 27, a week before election day.",
+   "en": "Drop box: by 8 p.m. on Tuesday, November 3. Mail: send it by Tuesday, October 27, a week before Election Day. It has to be postmarked by November 3 and reach your county by Tuesday, November 10.",
+   "es": "Buzón de entrega: a más tardar a las 8 p. m. del martes 3 de noviembre. Por correo: envíala a más tardar el martes 27 de octubre, una semana antes del Día de las Elecciones. Tiene que tener matasellos del 3 de noviembre o antes y llegar a tu condado a más tardar el martes 10 de noviembre.",
+   "src": "https://apps.oregon.gov/oregon-newsroom/OR/SOS/Posts/Post/last-recommended-day-to-mail-ballots-october-27",
+   "checked": "2026-10-28",
+   "quote": "Today marks one week until Election Day for the November general election, and the Oregon Secretary of State’s office is recommending that, starting tomorrow, voters exclusively return their ballots via secure, official drop box. ... If mail is the only option, voters should go into their local post office and request a manual postmark be applied to their ballot envelope as soon as possible. To be counted, all ballots must either be put into a drop box by 8 p.m. on Election Day or postmarked by Election Day and received within the 7-day post-election grace period.",
    "status": "verified",
    "until": "2026-10-27",
-   "en_after": "Drop box: by 8 p.m. on Tuesday, November 3. Mailing it now? Ask the post office counter to hand-stamp the postmark. It has to be postmarked by November 3.",
-   "es_after": "Buzón: a más tardar a las 8 p. m. del martes 3 de noviembre. ¿La mandas por correo ahora? Pide en el mostrador de la oficina postal que le pongan el matasellos a mano. Tiene que llevar matasellos del 3 de noviembre o antes."
+   "en_after": "Use a drop box by 8 p.m. on Tuesday, November 3. Since October 28, the Secretary of State recommends drop boxes only. If mail is your only option, ask at the post office counter for a hand postmark. A mailed ballot has to be postmarked by November 3 and reach your county by Tuesday, November 10.",
+   "es_after": "Usa un buzón de entrega a más tardar a las 8 p. m. del martes 3 de noviembre. Desde el 28 de octubre, la Secretaría de Estado recomienda usar solo los buzones de entrega. Si el correo es tu única opción, pide en el mostrador de la oficina postal que le pongan el matasellos a mano. Una boleta por correo tiene que tener matasellos del 3 de noviembre o antes y llegar a tu condado a más tardar el martes 10 de noviembre.",
+   "notes": "Oct 27, 2026 SOS release, read Oct 28. Nov 10 from the 2026 Elections Calendar, https://sos.oregon.gov/elections/Documents/current-elections-calendar.pdf: 'November 10, 2026 Last day to receive valid postmarked ballots by mail.' Mail-by Oct 27 recommendation: current-election page (Oct 21)."
   },
   "early_hours": {
    "status": "missing"
   },
   "cure": {
-   "status": "missing",
-   "notes": "The cure deadline is relative (21 days after the election); it is in mail.cure rather than as a computed date here."
+   "en": "Signature problem? Fix it with your county elections office by Tuesday, November 24, 2026.",
+   "es": "¿Hay un problema con tu firma? Corrígelo con la oficina electoral de tu condado a más tardar el martes 24 de noviembre de 2026.",
+   "src": "https://sos.oregon.gov/elections/Documents/current-elections-calendar.pdf",
+   "checked": "2026-10-28",
+   "quote": "November 24, 2026 Last day to resolve ballot challenges.",
+   "status": "verified",
+   "notes": "2026 Elections Calendar (SOS), read Oct 28; ORS 254.426, 254.431. Matches 'You will have until 21 days after the election' on the current-election page."
   }
  },
  "how": {
@@ -96,12 +106,16 @@
  },
  "mail": {
   "who": {
-   "en": "Ballots started going out October 14. Didn't get one, or yours got lost or damaged? Call your county elections office for a replacement.",
-   "es": "Las boletas se empezaron a enviar el 14 de octubre. ¿No te llegó, o la tuya se perdió o se dañó? Llama a la oficina electoral de tu condado para pedir una de reemplazo.",
-   "src": "https://sos.oregon.gov/elections/pages/current-election.aspx",
-   "checked": "2026-10-21",
-   "quote": "If your ballot has been lost, destroyed, or damaged in a way that stops you from voting, call your county elections office to request a replacement ballot.",
-   "status": "verified"
+   "en": "Ballots started going out October 14. Didn't get one, or yours got lost or damaged? Call your county elections office for a replacement. Thursday, October 29, is the last day counties have to mail replacement ballots, so after that, ask your county how to pick one up.",
+   "es": "Las boletas empezaron a enviarse el 14 de octubre. ¿No te llegó la tuya, o se perdió o se dañó? Llama a la oficina electoral de tu condado para pedir una boleta de reemplazo. El jueves 29 de octubre es el último día en que los condados tienen que enviar boletas de reemplazo por correo, así que después de esa fecha, pregunta en tu condado cómo recoger una.",
+   "src": "https://sos.oregon.gov/elections/Documents/current-elections-calendar.pdf",
+   "checked": "2026-10-28",
+   "quote": "October 29, 2026 Last day counties required to mail absentee, reissued or replacement ballots.",
+   "status": "verified",
+   "until": "2026-10-29",
+   "en_after": "Ballots started going out October 14. Didn't get one, or yours got lost or damaged? Contact your county elections office for a replacement. Counties no longer have to mail one, so ask how to pick it up. Elections offices are open 7 a.m. to 8 p.m. on Election Day.",
+   "es_after": "Las boletas empezaron a enviarse el 14 de octubre. ¿No te llegó la tuya, o se perdió o se dañó? Comunícate con la oficina electoral de tu condado para pedir una boleta de reemplazo. Los condados ya no tienen que enviarla por correo, así que pregunta cómo recogerla. Las oficinas electorales abren de 7 a. m. a 8 p. m. el Día de las Elecciones.",
+   "notes": "Calendar also: 'November 3, 2026 Election Day. County Clerk's office open 7 am - 8 pm.' Replacement by calling the county: current-election page ('call your county elections office to request a replacement ballot') and the Oct 27 SOS release ('reach out to your county elections office for a replacement ballot')."
   },
   "witness": {
    "en": "Sign the return envelope yourself. No one else can sign it, and your county compares it with the signatures in your registration record.",
@@ -113,12 +127,13 @@
   },
   "track_url": "https://sos.oregon.gov/elections/Pages/track-your-ballot.aspx",
   "cure": {
-   "en": "Forgot to sign, or your signature doesn't match? Your county will send you a challenge notice with instructions. You have until 21 days after the election to fix it with your county elections office.",
-   "es": "¿Se te olvidó firmar o tu firma no coincide? Tu condado te mandará un aviso de impugnación (challenge notice) con instrucciones. Tienes hasta 21 días después de la elección para corregirlo con la oficina electoral de tu condado.",
+   "en": "Forgot to sign, or your signature doesn't match? Your county will send you a challenge notice with instructions. Fix it with your county elections office by Tuesday, November 24.",
+   "es": "¿Se te olvidó firmar o tu firma no coincide? Tu condado te mandará un aviso de impugnación (challenge notice) con instrucciones. Corrígelo con la oficina electoral de tu condado a más tardar el martes 24 de noviembre.",
    "src": "https://sos.oregon.gov/elections/pages/current-election.aspx",
-   "checked": "2026-10-21",
-   "quote": "If your signature does not match, or you forgot to sign your envelope, the county will send you a challenge notice with instructions.",
-   "status": "verified"
+   "checked": "2026-10-28",
+   "quote": "If your signature does not match, or you forgot to sign your envelope, the county will send you a challenge notice with instructions. You will have until 21 days after the election to resolve the challenge with your County Elections Office",
+   "status": "verified",
+   "notes": "Nov 24: SOS 2026 Elections Calendar, 'November 24, 2026 Last day to resolve ballot challenges.'"
   },
   "dropbox": {
    "en": "Official drop boxes stay open until 8 p.m. on Election Day, and you can use any one in Oregon. In line at 8 p.m.? You can still drop off your ballot.",
@@ -152,12 +167,13 @@
  },
  "sticker": {
   "tradition": {
-   "en": "Oregon votes by mail, so the Secretary of State offers virtual I Voted stickers to share instead, with lines like \"I Voted (By Mail)\" and \"I Voted (The Oregon Way)\".",
-   "es": "Oregon vota por correo, así que la Secretaría de Estado ofrece stickers virtuales de I Voted para compartir, con frases como \"I Voted (By Mail)\" y \"I Voted (The Oregon Way)\".",
+   "en": "Oregon votes by mail, so the Secretary of State offers two virtual stickers to download and share: \"I Voted,\" with a checked ballot box on an Oregon-shaped flag, and \"I Voted By Mail,\" with a signed ballot envelope.",
+   "es": "Oregon vota por correo, así que la Secretaría de Estado ofrece dos stickers virtuales para descargar y compartir: \"I Voted\", con una casilla marcada sobre una bandera con la forma de Oregon, e \"I Voted By Mail\", con un sobre de boleta firmado.",
    "src": "https://sos.oregon.gov/Pages/media-resources.aspx",
-   "checked": "2026-10-21",
-   "quote": "I Voted (virtual sticker)",
-   "status": "verified"
+   "checked": "2026-10-28",
+   "quote": "2026 Elections Toolkit I Voted (virtual sticker) I Voted I Voted By Mail",
+   "status": "verified",
+   "notes": "Media Resources page, read Oct 28. The two links go to /PublishingImages/media/Voted-Sticker-V2-1.jpg and -2.jpg; images viewed Oct 28. Removed \"I Voted (The Oregon Way)\": no current SOS asset or page uses that wording. No designer is named."
   },
   "mail": {
    "en": "In Multnomah County, sign up for ballot tracking at BallotTrax and you get a virtual \"I Voted\" sticker to share once your ballot is in. In another county? Ask your county elections office.",
@@ -189,20 +205,22 @@
    "status": "verified"
   },
   "unsigned": {
-   "en": "Your county will send you a challenge notice with instructions. You have until 21 days after the election to fix it, and BallotTrax will also tell you if there's a signature problem you can fix.",
-   "es": "Tu condado te mandará un aviso de impugnación (challenge notice) con instrucciones. Tienes hasta 21 días después de la elección para corregirlo, y BallotTrax también te avisa si hay un problema con tu firma que se puede corregir.",
+   "en": "Your county will send you a challenge notice with instructions. You have until Tuesday, November 24, to fix it, and BallotTrax will also tell you if there's a signature problem you can fix.",
+   "es": "Tu condado te mandará un aviso de impugnación (challenge notice) con instrucciones. Tienes hasta el martes 24 de noviembre para corregirlo, y BallotTrax también te avisará si hay un problema con tu firma que puedas corregir.",
    "src": "https://sos.oregon.gov/elections/pages/current-election.aspx",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "You will have until 21 days after the election to resolve the challenge with your County Elections Office.",
-   "status": "verified"
+   "status": "verified",
+   "notes": "Nov 24: SOS 2026 Elections Calendar, 'November 24, 2026 Last day to resolve ballot challenges.' (21 days after the election)."
   },
   "late_mail": {
-   "en": "A mailed ballot counts if it's postmarked by November 3 and reaches your county within 7 days after Election Day. Mailing after October 27? Ask a post office staff member to hand-stamp the postmark, or use a drop box.",
-   "es": "Una boleta por correo cuenta si tiene matasellos del 3 de noviembre o antes y llega a tu condado en los 7 días siguientes al Día de las Elecciones. ¿La mandas después del 27 de octubre? Pide a alguien de la oficina postal que le ponga el matasellos a mano, o usa un buzón.",
-   "src": "https://sos.oregon.gov/elections/pages/current-election.aspx",
-   "checked": "2026-10-21",
-   "quote": "If you’re returning your ballot by mail after October 27, ask a USPS staff member to postmark the ballot by hand at your local branch.",
-   "status": "verified"
+   "en": "A mailed ballot counts if it's postmarked by November 3 and reaches your county by November 10. Since October 28, the Secretary of State recommends a drop box. If you have to mail it, ask a post office staff member to hand-stamp the postmark.",
+   "es": "Una boleta por correo cuenta si tiene matasellos del 3 de noviembre o antes y llega a tu condado a más tardar el 10 de noviembre. Desde el 28 de octubre, la Secretaría de Estado recomienda usar un buzón de entrega. Si tienes que enviarla por correo, pide a un empleado de la oficina postal que le ponga el matasellos a mano.",
+   "src": "https://apps.oregon.gov/oregon-newsroom/OR/SOS/Posts/Post/last-recommended-day-to-mail-ballots-october-27",
+   "checked": "2026-10-28",
+   "quote": "the Oregon Secretary of State’s office is recommending that, starting tomorrow, voters exclusively return their ballots via secure, official drop box. ... If mail is the only option, voters should go into their local post office and request a manual postmark be applied to their ballot envelope as soon as possible. To be counted, all ballots must either be put into a drop box by 8 p.m. on Election Day or postmarked by Election Day and received within the 7-day post-election grace period.",
+   "status": "verified",
+   "notes": "Nov 10: SOS 2026 Elections Calendar."
   }
  },
  "notes": "Read October 21, 2026 on sos.oregon.gov (curl worked): General Election – November 3, 2026 (current-election), Elections FAQ, Oregon Drop Box Locator, Track Your Ballot, Media Resources (virtual I Voted stickers); and ORS 260.695(3) on oregonlegislature.gov. states.js matches: ballots mailed starting October 14 ('Counties begin mailing ballots to active voters in Oregon : October 14'), recommended mail-by date October 27, drop box deadline 'November 3 at 8 p.m.'. The 21-day cure deadline is stated relative to the election and was not converted to a date. Provisional ballots, phone rules and first-time voter ID (HAVA) were not found on an Oregon page; left missing. The selfie stays out (faq-sources.json has no official source)."

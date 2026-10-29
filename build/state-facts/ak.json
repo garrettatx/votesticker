@@ -23,23 +23,25 @@
    "status": "verified"
   },
   "mail_request": {
-   "en": "The Division of Elections must receive your by-mail application by Saturday, October 24, 2026. Too late for mail? You can apply for a ballot by fax or online delivery until 5 p.m. Alaska time on Monday, November 2.",
-   "es": "La División de Elecciones debe recibir tu solicitud de boleta por correo a más tardar el sábado 24 de octubre de 2026. ¿Ya es tarde para el correo? Puedes solicitar una boleta por fax o por entrega en línea hasta las 5 p. m., hora de Alaska, del lunes 2 de noviembre.",
-   "src": "https://www.elections.alaska.gov/calendar/",
-   "checked": "2026-10-21",
-   "quote": "Deadline to receive absentee by-mail applications.",
+   "en": "The Division of Elections must receive your by-mail application by Saturday, October 24, 2026. Too late for mail? You can apply for a ballot by fax or online delivery until 5 p.m. Alaska time on Monday, November 2. Online delivery needs an email address and a printer, and you return that ballot by mail or fax, not email.",
+   "es": "La División de Elecciones debe recibir tu solicitud de boleta por correo a más tardar el sábado 24 de octubre de 2026. ¿Ya es tarde para el correo? Puedes solicitar una boleta por fax o por entrega en línea hasta las 5 p. m., hora de Alaska, del lunes 2 de noviembre. La entrega en línea requiere un correo electrónico y una impresora, y esa boleta se devuelve por correo postal o por fax, no por correo electrónico.",
+   "src": "https://www.elections.alaska.gov/voter-information/absentee-and-early-voting/",
+   "checked": "2026-10-28",
+   "quote": "Vote Absentee By-Mail Applications Deadline Primary Election August 8th, 2026 General Election October 24th, 2026 ... You will need an email address and access to a computer and a printer. ... Your completed application must be received no later than 5:00pm Alaska Standard Time the day before Election Day. ... You may choose to return your ballot by mail or by fax. Ballots cannot be returned by email.",
    "status": "verified",
    "until": "2026-10-24",
-   "en_after": "By-mail applications closed October 24. You can still apply for a ballot by fax or online delivery until 5 p.m. Alaska time on Monday, November 2, or vote early in person.",
-   "es_after": "Las solicitudes de boleta por correo cerraron el 24 de octubre. Todavía puedes solicitar una boleta por fax o por entrega en línea hasta las 5 p. m., hora de Alaska, del lunes 2 de noviembre, o votar por anticipado en persona."
+   "en_after": "The deadline to request a ballot by mail was October 24. You can still vote in person, or apply for a ballot by fax or online delivery until 5 p.m. Alaska time on Monday, November 2. Online delivery needs an email address and a printer. Return that ballot by mail or by fax, not email. A faxed ballot must arrive by 8 p.m. on Election Day.",
+   "es_after": "La fecha límite para pedir una boleta por correo fue el 24 de octubre. Todavía puedes votar en persona, o solicitar una boleta por fax o por entrega en línea hasta las 5 p. m., hora de Alaska, del lunes 2 de noviembre. La entrega en línea requiere un correo electrónico y una impresora. Devuelve esa boleta por correo postal o por fax, no por correo electrónico. Una boleta enviada por fax debe llegar a más tardar a las 8 p. m. del Día de las Elecciones.",
+   "notes": "Fax return: 'The completed Voter Certificate, Identification sheet, and ballot must be received by fax on or before 8:00 p.m. Alaska Standard Time on Election Day.' Same page, read Oct 28."
   },
   "mail_return": {
-   "en": "Mail it with a stamp, postmarked by Tuesday, November 3, and ask the postal clerk to hand cancel it at the counter. It must arrive by Friday, November 13. Or drop it at a Division office or any voting location by 8 p.m. on Election Day.",
-   "es": "Envíala con estampilla y con matasellos del martes 3 de noviembre o antes, y pide en el mostrador de la oficina postal que le pongan el matasellos a mano. Debe llegar a más tardar el viernes 13 de noviembre. O entrégala en una oficina de la División o en cualquier lugar de votación a más tardar a las 8 p. m. del Día de las Elecciones.",
-   "src": "https://www.elections.alaska.gov/doc/mp/2026/MediaPacket-2026-General.%20V3.pdf",
-   "checked": "2026-10-21",
-   "quote": "10-day deadline to receive absentee ballots mailed from within the U.S.",
-   "status": "verified"
+   "en": "Put postage on the envelope, since return postage isn't prepaid, and get it postmarked by Tuesday, November 3. Ask the postal clerk to hand cancel it at the counter. It must arrive by Friday, November 13, or by Wednesday, November 18, if you mail it from outside the U.S. Or hand it in at a Division office or a voting location by 8 p.m. on Election Day. Check that location's hours first.",
+   "es": "Ponle estampillas al sobre, porque el envío de regreso no está pagado, y asegúrate de que tenga matasellos del martes 3 de noviembre o antes. Pide en el mostrador de la oficina postal que le pongan el matasellos a mano. Debe llegar a más tardar el viernes 13 de noviembre, o el miércoles 18 de noviembre si la envías desde fuera de EE. UU. O entrégala en una oficina de la División o en un lugar de votación a más tardar a las 8 p. m. del Día de las Elecciones. Revisa antes el horario de ese lugar.",
+   "src": "https://www.elections.alaska.gov/calendar/",
+   "checked": "2026-10-28",
+   "quote": "11/13/2026 Deadline to receive absentee ballots mailed from within the U.S., U.S. territories of Puerto Rico, Guam, the Virgin Islands, American Samoa. Ballots must be postmarked by 11/3/26 to be eligible. AS 15.20.081(e) 11/18/2026 Deadline to receive by-mail ballots mailed from overseas addresses. Ballots must be postmarked by 11/3/26 to be eligible.",
+   "status": "verified",
+   "notes": "Postage, hand cancel and the 8 p.m. in-person return are on https://www.elections.alaska.gov/voter-information/absentee-and-early-voting/ (Oct 28): 'Apply postage to the front of the envelope.' 'To ensure timely postmarks, the division recommends you have the USPS postal clerk hand cancel your ballot at the counter.' 'If returning your voted absentee ballot in person, it must be returned to a voting location by 8:00pm on Election Day.' Media packet: return postage is not prepaid. Replaced 'with a stamp' (the Division says postage, not one stamp) and added the Nov 18 overseas date."
   },
   "early_hours": {
    "en": "Hours differ by location, so check yours on the early voting list. Regional elections offices add weekend hours: 10 a.m. to 4 p.m. on Saturdays, October 24 and 31, and noon to 4 p.m. on Sundays, October 25 and November 1.",
@@ -225,20 +227,21 @@
    "status": "verified"
   },
   "unsigned": {
-   "en": "It can't be fixed. Alaska has no cure process, and once your ballot reaches the Division you can't change it. Check both signatures and your identifier before you mail it.",
-   "es": "No se puede corregir. Alaska no tiene proceso para corregir boletas, y una vez que tu boleta llega a la División no puedes cambiarla. Revisa las dos firmas y tu dato de identificación antes de enviarla.",
+   "en": "Once your ballot reaches the Division, it can't be fixed. Alaska has no cure process. Before you mail it, check your signature, your witness's signature and your identifier.",
+   "es": "Una vez que tu boleta llega a la División, no se puede corregir. Alaska no tiene proceso para corregir boletas. Antes de enviarla, revisa tu firma, la firma de tu testigo y tu dato de identificación.",
    "src": "https://www.elections.alaska.gov/doc/mp/2026/MediaPacket-2026-General.%20V3.pdf",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "State law does not provide for a cure process. Once a ballot is received by the division, no changes can be made by the voter.",
    "status": "verified"
   },
   "late_mail": {
-   "en": "A mailed ballot counts if it's postmarked by November 3 and arrives by November 13. Mailing it close to Election Day? Ask the postal clerk to hand cancel it at the counter, or hand it in at a voting location by 8 p.m. on November 3.",
-   "es": "Una boleta por correo cuenta si tiene matasellos del 3 de noviembre o antes y llega a más tardar el 13 de noviembre. ¿La envías cerca del Día de las Elecciones? Pide en el mostrador de la oficina postal que le pongan el matasellos a mano, o entrégala en un lugar de votación a más tardar a las 8 p. m. del 3 de noviembre.",
-   "src": "https://www.elections.alaska.gov/voter-information/absentee-and-early-voting/",
-   "checked": "2026-10-21",
-   "quote": "To ensure timely postmarks, the division recommends you have the USPS postal clerk hand cancel your ballot at the counter.",
-   "status": "verified"
+   "en": "A mailed ballot counts if it's postmarked by November 3 and arrives by November 13, or by November 18 if you mail it from outside the U.S. Mailing it close to Election Day? Ask the postal clerk to hand cancel it at the counter, or hand it in at a voting location by 8 p.m. on November 3.",
+   "es": "Una boleta por correo cuenta si tiene matasellos del 3 de noviembre o antes y llega a más tardar el 13 de noviembre, o el 18 de noviembre si la envías desde fuera de EE. UU. ¿La envías cerca del Día de las Elecciones? Pide en el mostrador de la oficina postal que le pongan el matasellos a mano, o entrégala en un lugar de votación a más tardar a las 8 p. m. del 3 de noviembre.",
+   "src": "https://www.elections.alaska.gov/calendar/",
+   "checked": "2026-10-28",
+   "quote": "11/13/2026 Deadline to receive absentee ballots mailed from within the U.S., U.S. territories of Puerto Rico, Guam, the Virgin Islands, American Samoa. Ballots must be postmarked by 11/3/26 to be eligible. AS 15.20.081(e) 11/18/2026 Deadline to receive by-mail ballots mailed from overseas addresses. Ballots must be postmarked by 11/3/26 to be eligible.",
+   "status": "verified",
+   "notes": "Hand cancel advice and the 8 p.m. in-person return: absentee-and-early-voting page, read Oct 28."
   }
  },
  "notes": "Read October 21, 2026 on elections.alaska.gov (curl worked): early and absentee in-person locations (avo), the election calendar, Absentee and Early Voting, Polling Place Locations, the 2026 General Election media packet PDF (V3), and the 2022 youth sticker contest release; and akleg.gov print view for AS 15.15.170, 15.15.225, 15.15.320, 15.20.081 and 15.20.203. Early voting start, Monday, October 19, matches states.js (calendar: 'Absentee In Person, EV, electronic transmission and Special Needs voting begins.'); the avo page lists most sites through November 2. November 13 is the 10th day after the election (AS 15.20.081(e), media packet). Weekend regional office hours are Division policy, not law (calendar). The precinct map is on akelections.maps.arcgis.com, which the validator would reject, so locator_url points at the Polling Place Locations page that links to it. myvoterportal.alaska.gov returned 403 to curl; it is linked from the Absentee and Early Voting page and the media packet. Return envelopes need postage (media packet: 'Is return postage pre-paid for absentee by-mail ballots? No.'). The Division does not verify signatures (media packet). Sticker: the only official contest page found is for 2022; no 2026 sticker page found. Expired ID rule and a voter phone rule not found.",

@@ -19,16 +19,28 @@
   "clayelections.gov": {
    "en": "the Clay County Supervisor of Elections",
    "es": "la oficina electoral del condado de Clay (Supervisor of Elections)"
+  },
+  "soe.dos.state.fl.us": {
+   "en": "the Florida Division of Elections",
+   "es": "la División de Elecciones de Florida (Division of Elections)"
+  },
+  "votegulf.gov": {
+   "en": "the Gulf County Supervisor of Elections",
+   "es": "la oficina del supervisor electoral del condado de Gulf (Supervisor of Elections)"
   }
  },
  "dates": {
   "reg_deadline": {
-   "en": "Registration closed Monday, October 5, 2026.",
-   "es": "El registro cerró el lunes 5 de octubre de 2026.",
-   "src": "https://dos.fl.gov/elections/for-voters/election-dates/",
-   "checked": "2026-10-21",
-   "quote": "Deadline to register to vote: October 5, 2026",
-   "status": "verified"
+   "en": "Registration closed Monday, October 5, 2026. One exception: if you, or a family member who came with you, left the military or the Merchant Marine, came back from a military deployment, or left a job outside the U.S. after October 5, you can still register in person at your Supervisor of Elections office until 5 p.m. on Friday, October 30. Bring papers that show it.",
+   "es": "El registro cerró el lunes 5 de octubre de 2026. Hay una excepción: si tú, o un familiar que vino contigo, dejaste el servicio militar o la Marina Mercante, regresaste de un despliegue militar o dejaste un trabajo fuera de EE. UU. después del 5 de octubre, todavía puedes registrarte en persona en la oficina del supervisor electoral (Supervisor of Elections) hasta las 5 p. m. del viernes 30 de octubre. Lleva documentos que lo demuestren.",
+   "src": "https://www.flsenate.gov/Laws/Statutes/2026/97.0555",
+   "checked": "2026-10-28",
+   "quote": "An individual or accompanying family member who has been discharged or separated from the uniformed services or the United States Merchant Marine, has returned from a military deployment or activation, or has separated from employment outside the territorial limits of the United States, after the book-closing date for an election pursuant to s. 97.055 and who is otherwise qualified may register to vote in such election until 5 p.m. on the Friday before that election in the office of the supervisor of elections.",
+   "status": "verified",
+   "until": "2026-10-30",
+   "en_after": "Registration closed Monday, October 5, 2026, and the late window for people back from military service or a job abroad closed October 30.",
+   "es_after": "El registro cerró el lunes 5 de octubre de 2026, y el plazo tardío para quienes regresaron del servicio militar o de un trabajo en el extranjero cerró el 30 de octubre.",
+   "notes": "Oct 5 is from dos.fl.gov/elections/for-voters/election-dates/ ('Deadline to register to vote: October 5, 2026'). Friday before Nov 3 = Oct 30 (computed)."
   },
   "mail_request": {
    "en": "Your county Supervisor of Elections must get your request by 5 p.m. on Thursday, October 22, 2026, for a ballot to be mailed to you.",
@@ -50,12 +62,16 @@
    "status": "verified"
   },
   "early_hours": {
-   "en": "Each early voting site is open at least 8 and no more than 12 hours a day. Check your county Supervisor of Elections for exact hours.",
-   "es": "Cada centro de votación anticipada abre por lo menos 8 y no más de 12 horas al día. Consulta el horario exacto con el Supervisor de Elecciones de tu condado (Supervisor of Elections).",
+   "en": "Every county offers early voting through Saturday, October 31. Some counties add days, as late as Sunday, November 1. Each site is open at least 8 and no more than 12 hours a day. Check your county Supervisor of Elections for exact days and hours.",
+   "es": "Todos los condados ofrecen votación anticipada hasta el sábado 31 de octubre. Algunos condados agregan días, hasta el domingo 1 de noviembre. Cada centro abre por lo menos 8 y no más de 12 horas al día. Consulta al supervisor electoral de tu condado (Supervisor of Elections) para los días y horarios exactos.",
    "src": "https://dos.fl.gov/elections/for-voters/voting/early-voting-and-secure-ballot-intake-stations/",
-   "checked": "2026-10-21",
-   "quote": "Early voting must hours must be at least 8 hours a day but no more than 12 hours per day at each site during the applicable period.",
-   "status": "verified"
+   "checked": "2026-10-28",
+   "quote": "At a minimum, early voting must be offered starting on the 10 th day before the election and ending on the 3 rd day before the election. Supervisors of Elections may offer more days starting as early as the 15 th day before the election and ending on the 2 nd day before an election. Early voting must hours must be at least 8 hours a day but no more than 12 hours per day at each site during the applicable period.",
+   "status": "verified",
+   "until": "2026-11-01",
+   "en_after": "Early voting is over. On Election Day, vote at your assigned precinct, 7 a.m. to 7 p.m.",
+   "es_after": "La votación anticipada terminó. El Día de las Elecciones, vota en tu precinto asignado, de 7 a. m. a 7 p. m.",
+   "notes": "3rd day before Nov 3 = Sat Oct 31; 2nd day before = Sun Nov 1 (computed). election-dates page: 'Early voting period (mandatory period): October 24 – 31, 2026 (Contact Supervisor of Elections for optional days of early voting)'."
   },
   "cure": {
    "status": "missing",
@@ -83,12 +99,13 @@
   },
   "local_offices_url": "https://dos.fl.gov/elections/contacts/supervisor-of-elections/",
   "rule": {
-   "en": "Pick your county on the state's Voter Precinct Lookup page to find your Election Day polling place.",
-   "es": "Elige tu condado en la página Voter Precinct Lookup del estado para encontrar tu lugar de votación del Día de las Elecciones.",
-   "src": "https://dos.fl.gov/elections/for-voters/voting/election-day-voting/",
-   "checked": "2026-10-21",
-   "quote": "To find your precinct or polling location, visit our webpage on Voter Precinct Lookup and select your county link.",
-   "status": "verified"
+   "en": "Pick your county on the state's Voter Precinct Lookup page to find your Election Day polling place. Moved within your county? You can update your address at your new precinct and vote there. Moved from another Florida county? Some counties let you do the same; elsewhere you vote a provisional ballot, so call your Supervisor of Elections first.",
+   "es": "Elige tu condado en la página Voter Precinct Lookup del estado para encontrar tu lugar de votación del Día de las Elecciones. ¿Te mudaste dentro de tu condado? Puedes actualizar tu dirección en tu nuevo precinto y votar ahí. ¿Te mudaste desde otro condado de Florida? Algunos condados te dejan hacer lo mismo; en los demás votas con una boleta provisional, así que llama primero al supervisor electoral (Supervisor of Elections).",
+   "src": "https://www.flsenate.gov/Laws/Statutes/2026/101.045",
+   "checked": "2026-10-28",
+   "quote": "An elector who moves from the precinct in which the elector is registered may vote in the precinct to which he or she has moved his or her legal residence, if the change of residence is within the same county or the precinct to which the elector has moved his or her legal residence is within a county that uses an electronic database as a precinct register at the polling place, and the elector completes an affirmation",
+   "status": "verified",
+   "notes": "Lookup sentence also on dos.fl.gov election-day-voting page (read 2026-10-21). 101.045(2)(b): a move from outside the county to a county without an electronic precinct register means a provisional ballot. Which counties use e-pollbooks isn't listed, so the copy says 'some counties'."
   }
  },
  "id": {
@@ -128,12 +145,13 @@
    "status": "verified"
   },
   "expired": {
-   "en": "Your photo ID must be current and valid. If it doesn't show your signature, bring a second ID that does.",
-   "es": "Tu identificación con foto debe estar vigente. Si no tiene tu firma, lleva otra identificación que sí la tenga.",
-   "src": "https://dos.fl.gov/elections/for-voters/voting/election-day-voting/",
-   "checked": "2026-10-21",
-   "quote": "If your photo ID does not include your signature, you will be asked to provide another ID that has your signature.",
-   "status": "verified"
+   "en": "Your photo ID must be current and valid. If it doesn't show your signature, bring a second ID that does. Student IDs and debit or credit cards with a photo still count on November 3. A new, shorter ID list starts January 1, 2027.",
+   "es": "Tu identificación con foto debe estar vigente y ser válida. Si no tiene tu firma, lleva una segunda identificación que la tenga. Las identificaciones de estudiante y las tarjetas de débito o crédito con foto todavía sirven el 3 de noviembre. Una lista nueva y más corta empieza el 1 de enero de 2027.",
+   "src": "https://soe.dos.state.fl.us/pdf/DE%20Guide%200006-Florida%20History-Voter%20ID%20at%20the%20polls%20Rev.%2020260601.pdf",
+   "checked": "2026-10-28",
+   "quote": "In 2026, the Florida Legislature revised the list of acceptable forms of IDs in 101.043, Florida Statutes, (ch. 2026-26, Laws of Florida(eff. January 1, 2027) ... If the photo ID does not contain the voter’s signature, the voter can provide another ID that includes the voter’s signature.",
+   "status": "verified",
+   "notes": "DE Reference Guide 0006, Rev. 2026-06-01, read by curl + pdftotext 2026-10-28. The 12-item 2026 list (with student and debit/credit card IDs) is on dos.fl.gov election-day-voting (updated Aug 7, 2026)."
   },
   "without": {
    "en": "Forgot your ID? You can still vote a provisional ballot. It counts if you're eligible, you voted in the right precinct and the signature on it matches your registration.",
@@ -146,12 +164,13 @@
  },
  "mail": {
   "who": {
-   "en": "Any Florida voter can vote by mail. Ask your county Supervisor of Elections for a ballot online, by mail, by phone or in person.",
-   "es": "Cualquier votante de Florida puede votar por correo. Pide tu boleta al Supervisor de Elecciones de tu condado (Supervisor of Elections) en línea, por correo, por teléfono o en persona.",
-   "src": "https://dos.fl.gov/elections/for-voters/voting/",
-   "checked": "2026-10-21",
-   "quote": "Florida voters can vote one of three convenient ways: Vote-by-mail upon request, vote during early voting, or vote on Election Day.",
-   "status": "verified"
+   "en": "Any Florida voter can vote by mail. Changed your mind? Bring your mail ballot, marked or not, to your polling place or an early voting site, turn it in and vote a regular ballot. Without it, staff check whether your ballot came in: if not, you vote a regular ballot; if they can't tell, you vote a provisional one. Since early voting began, picking up a mail ballot or having one delivered takes an emergency affidavit (Form DS-DE 162).",
+   "es": "Cualquier votante de Florida puede votar por correo. ¿Cambiaste de opinión? Lleva tu boleta por correo, marcada o no, a tu lugar de votación o a un centro de votación anticipada, entrégala y vota con una boleta regular. Si no la llevas, el personal revisa si tu boleta ya llegó: si no llegó, votas con una boleta regular; si no lo pueden saber, votas con una provisional. Desde que empezó la votación anticipada, recoger una boleta por correo o pedir que te la entreguen requiere una declaración jurada de emergencia (formulario DS-DE 162).",
+   "src": "https://dos.fl.gov/elections/for-voters/voting/vote-by-mail/",
+   "checked": "2026-10-28",
+   "quote": "The voter should bring the ballot (marked or unmarked) to the polls to turn the ballot in and vote a regular ballot. If the voter does not bring the ballot to the polls for whatever reason, the Supervisor of Elections' office will need to confirm that the ballot has not already been returned and received. If the ballot has not been received, the voter will be allowed to vote a regular ballot. If it cannot be determined if the ballot has been received, the voter will be allowed to vote a provisional ballot. ... If a voter or designee waits until the start of mandatory early voting or up through Election Day to pick up or have delivered a vote-by-mail ballot, a special affidavit must also be completed.",
+   "status": "verified",
+   "notes": "'Any Florida voter can vote by mail' was read on dos.fl.gov/elections/for-voters/voting/ (2026-10-21). If the ballot was already received, the voter is deemed to have voted (101.69(1)(a)); a voter who disagrees gets a provisional ballot."
   },
   "witness": {
    "en": "Sign the voter's certificate on the return envelope. Your county matches it against the signature on your voter record, so update your signature if it has changed.",
@@ -163,12 +182,16 @@
   },
   "track_url": "https://dos.fl.gov/elections/for-voters/check-your-voter-status-and-polling-place/vote-by-mail-ballot-information-and-status-lookup/",
   "cure": {
-   "en": "Signature missing or doesn't match? Your Supervisor of Elections will let you know. Send back a Vote-by-Mail Ballot Cure Affidavit with a copy of your ID by 5 p.m. local time on the second day after the election.",
-   "es": "¿Falta tu firma o no coincide? El Supervisor de Elecciones te avisará. Devuelve una declaración jurada para corregir la boleta (Vote-by-Mail Ballot Cure Affidavit) con una copia de tu identificación a más tardar a las 5 p. m., hora local, del segundo día después de la elección.",
+   "en": "Signature missing or doesn't match? Your Supervisor of Elections will let you know. Send back a Vote-by-Mail Ballot Cure Affidavit with a copy of your ID by 5 p.m. local time on Thursday, November 5, the second day after the election. You can return it by mail, email, fax or in person.",
+   "es": "¿Falta tu firma o no coincide? El supervisor electoral (Supervisor of Elections) te avisará. Devuelve la declaración jurada para corregir tu boleta por correo (Vote-by-Mail Ballot Cure Affidavit) con una copia de tu identificación a más tardar a las 5 p. m., hora local, del jueves 5 de noviembre, el segundo día después de la elección. Puedes devolverla por correo, email, fax o en persona.",
    "src": "https://dos.fl.gov/elections/for-voters/voting/vote-by-mail/",
-   "checked": "2026-10-21",
-   "quote": "The deadline to submit the form and the ID is no later than 5 p.m. (local time) on the 2nd day after an election.",
-   "status": "verified"
+   "checked": "2026-10-28",
+   "quote": "The form and copy of the ID can be returned by mail, email, fax, or in person. The deadline to submit the form and the ID is no later than 5 p.m. (local time) on the 2nd day after an election.",
+   "status": "verified",
+   "until": "2026-11-05",
+   "en_after": "The deadline to fix a mail ballot signature was 5 p.m. local time on Thursday, November 5, 2026.",
+   "es_after": "La fecha límite para corregir la firma de una boleta por correo fue a las 5 p. m., hora local, del jueves 5 de noviembre de 2026.",
+   "notes": "Second day after Nov 3 = Thu Nov 5 (computed)."
   },
   "dropbox": {
    "en": "Secure drop boxes are at your Supervisor of Elections' main and branch offices until 7 p.m. local time on Election Day, and at early voting sites. Your county's website lists the locations, days and hours.",
@@ -242,12 +265,13 @@
    "status": "verified"
   },
   "line": {
-   "en": "You can still vote. Anyone waiting in line at 7 p.m. local time on Election Day gets to cast a ballot.",
-   "es": "Todavía puedes votar. Cualquier persona que esté en la fila a las 7 p. m., hora local, del Día de las Elecciones puede votar.",
-   "src": "https://dos.fl.gov/elections/for-voters/voting/election-day-voting/",
-   "checked": "2026-10-21",
-   "quote": "Any voters waiting in line at 7:00 p.m. will have the opportunity to cast a ballot.",
-   "status": "verified"
+   "en": "You can still vote. Anyone waiting in line when the polls close on Election Day gets to cast a ballot.",
+   "es": "Igual puedes votar. Toda persona que esté en la fila cuando cierran las casillas el Día de las Elecciones puede votar.",
+   "src": "https://www.flsenate.gov/Laws/Statutes/2026/100.011",
+   "checked": "2026-10-28",
+   "quote": "Any elector who is in line at the time of the official closing of the polls shall be allowed to cast a vote in the election.",
+   "status": "verified",
+   "notes": "Was '7 p.m. local time', which misleads Gulf County voters on Central time (polls close 6 p.m. CT)."
   },
   "track": {
    "en": "Find your county's link on the state's Vote-by-Mail Ballot Information and Status Lookup page and check your ballot there.",
@@ -261,12 +285,13 @@
  "notes": "Read October 21, 2026 on dos.fl.gov (curl worked), flsenate.gov and sarasotavotes.gov (Chrome; WebFetch got 403). Early voting dates in states.js (Oct. 24 to 31) match dos.fl.gov/elections/for-voters/election-dates/: 'Early voting period (mandatory period): October 24 – 31, 2026'. ID CONFLICT, resolved: the 2026 Florida Statutes on flsenate.gov (s. 101.043, amended by ch. 2026-26) list seven IDs and drop debit/credit cards, student IDs, retirement center, neighborhood association and public assistance IDs, but the Division of Elections' 'Florida History of Voter Identification Requirements' guide (DE Reference Guide 0006, updated 06/2026, soe.dos.state.fl.us) says that list is 'eff. January 1, 2027'. The 12-item list on dos.fl.gov's Election Day Voting page (updated August 7, 2026) is the one for November 3, 2026, and is used here. Re-check before any 2027 election; the student ID change is also in federal litigation (complaint filed October 16, 2026, read only in search results). The 2026 statute page is cited only for 102.031 (no-solicitation zone and photography), which ch. 2026-26 did not touch (last amended 2022). Mail return, cure and provisional deadlines are relative to the election on the official pages; no calendar dates computed. Clothing: 102.031 bans solicitation within 150 feet but no official page says whether campaign clothing counts, so the gear fact doesn't mention clothing. No statewide sticker found; the sticker fact is Sarasota County only.",
  "election_day": {
   "hours": {
-   "en": "Polling places are open 7 a.m. to 7 p.m. local time.",
-   "es": "Los lugares de votación abren de 7 a. m. a 7 p. m., hora local.",
-   "src": "https://dos.fl.gov/elections/contacts/frequently-asked-questions/faq-voting/",
-   "checked": "2026-10-25",
-   "quote": "Polls on Election Day are open from 7 a.m. until 7 p.m. (local time). Florida has two time-zones – Central and Eastern.",
-   "status": "verified"
+   "en": "Polling places are open 7 a.m. to 7 p.m., on the time used in your county seat. In Gulf County, that's Eastern time, so polls in the county's Central time area open at 6 a.m. and close at 6 p.m. Central.",
+   "es": "Los lugares de votación abren de 7 a. m. a 7 p. m., según la hora que se usa en la cabecera de tu condado. En el condado de Gulf es la hora del Este, así que en la parte del condado con hora del Centro abren a las 6 a. m. y cierran a las 6 p. m., hora del Centro.",
+   "src": "https://www.flsenate.gov/Laws/Statutes/2026/100.011",
+   "checked": "2026-10-28",
+   "quote": "The polls shall be open at the voting places at 7:00 a.m., on the day of the election, and shall be kept open until 7:00 p.m., of the same day, and the time shall be regulated by the customary time in standard use in the county seat of the locality.",
+   "status": "verified",
+   "notes": "Gulf County Supervisor of Elections, votegulf.gov/voters/vote-on-election-day/ (read 2026-10-28): 'Polls open at 7:00 AM (ET), 6:00 AM (CT) Polls close at 7:00 PM (ET), 6:00 PM (CT)'. Gulf is the county split between time zones (Perplexity lead; split not checked against an official map)."
   }
  }
 }

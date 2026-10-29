@@ -27,15 +27,16 @@
  },
  "dates": {
   "reg_deadline": {
-   "en": "The regular deadline was 5 p.m. on Friday, October 9, 2026. You can still register and vote at the same time at any early voting site in your county until early voting ends. Same-day registration isn't available for most voters on Election Day.",
-   "es": "La fecha límite regular fue a las 5 p. m. del viernes 9 de octubre de 2026. Todavía puedes registrarte y votar al mismo tiempo en cualquier centro de votación anticipada de tu condado hasta que termine la votación anticipada. El registro el mismo día no está disponible para la mayoría de los votantes el Día de las Elecciones.",
-   "src": "https://www.ncsbe.gov/voting/upcoming-election",
-   "checked": "2026-10-21",
-   "quote": "Oct. 9: Voter registration deadline (5 p.m.).* For more, see How to Register.",
+   "en": "The regular deadline was 5 p.m. on Friday, October 9, 2026. You can still register and vote at the same time at any early voting site in your county until 3 p.m. on Saturday, October 31. You must have lived in the county at least 30 days before Election Day. Bring proof of your current address, such as a North Carolina driver's license, a current utility bill, bank statement, paycheck or government document, or a college document with your name and address. You'll also be asked for photo ID to vote, and one document can cover both if it's an accepted photo ID.",
+   "es": "La fecha límite regular fue a las 5 p. m. del viernes 9 de octubre de 2026. Todavía puedes registrarte y votar al mismo tiempo en cualquier centro de votación anticipada de tu condado hasta las 3 p. m. del sábado 31 de octubre. Debes haber vivido en el condado al menos 30 días antes del Día de las Elecciones. Lleva un comprobante de tu dirección actual, como una licencia de conducir de North Carolina, un recibo de servicios, un estado de cuenta bancario, un talón de pago o un documento del gobierno reciente, o un documento de tu colegio o universidad con tu nombre y dirección. También te pedirán una identificación con foto para votar, y un solo documento sirve para las dos cosas si es una identificación con foto aceptada.",
+   "src": "https://www.ncsbe.gov/registering/how-register/register-person-during-early-voting",
+   "checked": "2026-10-28",
+   "quote": "Voters registering during the early voting period must have resided in the county where they are registering for at least 30 days prior to Election Day. ... A copy of a current utility bill, bank statement, government check, paycheck, or other government document showing the voter’s name and address.",
    "status": "verified",
    "until": "2026-10-31",
    "en_after": "Registration closed. Same-day registration ended with early voting, and it isn't available for most voters on Election Day.",
-   "es_after": "El registro cerró. El registro el mismo día terminó con la votación anticipada, y no está disponible para la mayoría de los votantes el Día de las Elecciones."
+   "es_after": "El registro cerró. El registro el mismo día terminó con la votación anticipada, y no está disponible para la mayoría de los votantes el Día de las Elecciones.",
+   "notes": "Oct 9 deadline is from ncsbe.gov/voting/upcoming-election ('Oct. 9: Voter registration deadline (5 p.m.).'). Same-day rules, documents and the photo ID check are from the register-in-person page, read 2026-10-28. Private-college students need a school photo ID approved for voting along with the school document (same page); left off for length."
   },
   "mail_request": {
    "en": "Your county board of elections must receive your request by 5 p.m. on Tuesday, October 20, 2026.",
@@ -57,12 +58,15 @@
    "status": "verified"
   },
   "early_hours": {
-   "en": "Each county sets its own early voting sites and schedules. Find yours with the state's Early Voting Site Search.",
-   "es": "Cada condado decide sus propios centros y horarios de votación anticipada. Encuentra los tuyos con la búsqueda de centros de votación anticipada del estado (Early Voting Site Search).",
-   "src": "https://www.ncsbe.gov/voting/upcoming-election",
-   "checked": "2026-10-21",
-   "quote": "For in-person early voting locations and schedules in your county, see the Early Voting Site Search.",
-   "status": "verified"
+   "en": "Early voting ends at 3 p.m. on Saturday, October 31. Each county sets its own early voting sites and schedules. Find yours with the state's Early Voting Site Search.",
+   "es": "La votación anticipada termina a las 3 p. m. del sábado 31 de octubre. Cada condado decide sus propios centros y horarios de votación anticipada. Encuentra los tuyos con la búsqueda de centros de votación anticipada del estado (Early Voting Site Search).",
+   "src": "https://www.ncsbe.gov/voting/vote-early-person",
+   "checked": "2026-10-28",
+   "quote": "Ends: 3 p.m. Saturday, Oct. 31.",
+   "status": "verified",
+   "until": "2026-10-31",
+   "en_after": "Early voting ended at 3 p.m. on Saturday, October 31. On Election Day, vote at your assigned polling place.",
+   "es_after": "La votación anticipada terminó a las 3 p. m. del sábado 31 de octubre. El Día de las Elecciones, vota en el lugar de votación que te corresponde."
   },
   "cure": {
    "en": "Missing signature or ID copy? Return the cure form by noon on Tuesday, November 10, 2026.",
@@ -147,12 +151,13 @@
    "status": "verified"
   },
   "without": {
-   "en": "Left your ID at home? Go get it and come back, or vote a provisional ballot and bring your ID to your county elections office by noon on the fifth business day after Election Day. Can't show one at all? Fill out an ID Exception Form and vote a provisional ballot. It counts if the form is filled out truthfully.",
-   "es": "¿Dejaste tu identificación en casa? Ve por ella y regresa, o vota con una boleta provisional y lleva tu identificación a la oficina electoral de tu condado a más tardar al mediodía del quinto día hábil después del Día de las Elecciones. ¿No puedes mostrar ninguna? Llena un formulario de excepción de identificación (ID Exception Form) y vota con una boleta provisional. Cuenta si llenas el formulario con la verdad.",
+   "en": "Left your ID at home? Go get it and come back, or vote a provisional ballot and bring your ID to your county elections office by noon on the fifth business day after Election Day (Tuesday, November 10). Can't show an accepted photo ID? Vote a provisional ballot and fill out an ID Exception Form. It counts if the form is filled out truthfully. The address on your ID doesn't have to match your registration.",
+   "es": "¿Dejaste tu identificación en casa? Ve por ella y regresa, o vota con una boleta provisional y lleva tu identificación a la oficina electoral de tu condado a más tardar al mediodía del quinto día hábil después del Día de las Elecciones (martes 10 de noviembre). ¿No puedes mostrar una identificación con foto aceptada? Vota con una boleta provisional y llena un formulario de excepción de identificación (ID Exception Form). Cuenta si llenas el formulario con la verdad. La dirección de tu identificación no tiene que coincidir con la de tu registro.",
    "src": "https://www.ncsbe.gov/voting/voter-id",
-   "checked": "2026-10-21",
-   "quote": "County boards of elections must count provisional ballots with truthfully completed ID Exception Forms.",
-   "status": "verified"
+   "checked": "2026-10-28",
+   "quote": "bring an acceptable ID to your county elections office by noon on the fifth business day after Election Day. ... The address on the photo ID does not have to match the voter registration records.",
+   "status": "verified",
+   "notes": "Fifth business day after Nov 3 = Nov 4, 5, 6, 9, 10 (Nov 11 is Veterans Day, after the deadline). The date is computed; voter-id page gives no calendar date."
   }
  },
  "mail": {
@@ -165,32 +170,32 @@
    "status": "verified"
   },
   "witness": {
-   "en": "Mark your ballot in front of two witnesses or one notary. They watch that you mark it, not how you vote, then sign the envelope. Put a copy of your photo ID, or the yellow Photo ID Exception Form, in the clear sleeve on the back.",
-   "es": "Marca tu boleta frente a dos testigos o un notario. Ellos ven que la marques, no por quién votas, y luego firman el sobre. Pon una copia de tu identificación con foto, o el formulario amarillo de excepción (Photo ID Exception Form), en la funda transparente de atrás.",
+   "en": "Mark your ballot in front of two witnesses or one notary. They watch that you mark it, not how you vote. Sign the back of the envelope yourself. Each witness signs, prints their name and writes their full address there too. Put a copy of your photo ID, or the yellow Photo ID Exception Form, in the clear sleeve on the back.",
+   "es": "Marca tu boleta frente a dos testigos o un notario. Ellos ven que la marques, no por quién votas. Firma tú la parte de atrás del sobre. Cada testigo también firma, escribe su nombre en letra de molde y pone su dirección completa ahí. Pon una copia de tu identificación con foto, o el formulario amarillo de excepción (Photo ID Exception Form), en la funda transparente de atrás.",
    "src": "https://www.ncsbe.gov/voting/vote-mail/detailed-instructions-voting-mail",
-   "checked": "2026-10-21",
-   "quote": "Mark your ballot in the presence of a notary public or two witnesses. Your notary public or two witnesses should observe that you mark the ballot, not how you vote.",
+   "checked": "2026-10-28",
+   "quote": "Sign your name on the back of the envelope. Have your witnesses or notary public sign the envelope. Each witness will sign their name, print their name, and provide their full address on the back of the envelope.",
    "status": "verified"
   },
   "track_url": "https://northcarolina.ballottrax.net/voter/",
   "cure": {
-   "en": "Missing signature, signed in the wrong place or no ID copy? Your county board will notify you. Return the cure form by noon on Tuesday, November 10. A problem with the witness information can't be fixed.",
-   "es": "¿Te faltó la firma, firmaste en el lugar equivocado o no incluiste copia de tu identificación? La junta electoral de tu condado te avisará. Devuelve el formulario de corrección a más tardar al mediodía del martes 10 de noviembre. Un problema con los datos del testigo no se puede corregir.",
-   "src": "https://ncleg.gov/EnactedLegislation/SessionLaws/PDF/2025-2026/SL2026-60.pdf",
-   "checked": "2026-10-26",
-   "quote": "The voter shall be given the opportunity to complete the form and return it to the county board at least by 12:00 P.M. on the third fifth business day after the election.",
+   "en": "Missing signature, signed in the wrong place or no ID copy? Your county board will contact you. Return the cure form by noon on Tuesday, November 10. A witness problem, such as a missing witness signature or address, can't be fixed with the form. The county cancels that ballot and mails you a new one if there's time, and you can still vote in person.",
+   "es": "¿Te faltó la firma, firmaste en el lugar equivocado o no incluiste copia de tu identificación? La junta electoral de tu condado se comunicará contigo. Devuelve el formulario de corrección a más tardar al mediodía del martes 10 de noviembre. Un problema con el testigo, como que falte su firma o su dirección, no se corrige con el formulario. El condado anula esa boleta y te manda una nueva si hay tiempo, y todavía puedes votar en persona.",
+   "src": "https://www.ncsbe.gov/blog/2021/06/11/numbered-memo-2021-03-absentee-container-return-envelope-deficiencies",
+   "checked": "2026-10-28",
+   "quote": "The voter’s cure document or attestation must be received by the county board by noon on the fifth business day after Election Day to be timely and have their ballot counted. ... Those issues require the absentee ballot to be spoiled and the absentee ballot package reissued to the voter, when there remains time to do so.",
    "status": "verified",
-   "notes": "S.L. 2026-60 (signed Aug 11, 2026) changed third to fifth business day: Nov 4, 5, 6, 9, 10. The codified G.S. 163 PDF still says third; do not use it. Witness identification is not curable (same law).",
+   "notes": "Numbered Memo 2021-03, revised Sept 4, 2026 under S.L. 2026-60 (read 2026-10-28). Non-curable list includes witness did not sign, witness address not printed or undeterminable, witness name illegible and identity undeterminable; a missing ZIP alone is not a deficiency. If found on or after the Saturday before Election Day, the county contacts the voter to say there's no time to mail a new ballot and they may vote in person. Sealing rules are in federal litigation (M.D.N.C. Oct 19, 2026 opinion); not mentioned on the page.",
    "until": "2026-11-10",
    "en_after": "The deadline to return a cure form was noon on Tuesday, November 10, 2026.",
    "es_after": "La fecha límite para devolver el formulario de corrección fue el mediodía del martes 10 de noviembre de 2026."
   },
   "dropbox": {
-   "en": "Bring your mail ballot to your county board of elections office or to an early voting site in your county. Only you, a near relative or a legal guardian can mail or drop it off, unless you need help because of a disability.",
-   "es": "Lleva tu boleta por correo a la oficina de la junta electoral de tu condado o a un centro de votación anticipada de tu condado. Solo tú, un familiar cercano o tu tutor legal pueden enviarla o entregarla, salvo que necesites ayuda por una discapacidad.",
+   "en": "Hand your mail ballot to an election official at an early voting site in your county while it's open, or bring it to your county board of elections office by 7:30 p.m. on Election Day. You can't drop it off at a polling place on Election Day. Only you, a near relative or a legal guardian can mail or drop it off, unless you need help because of a disability.",
+   "es": "Entrega tu boleta por correo a un funcionario electoral en un centro de votación anticipada de tu condado mientras esté abierto, o llévala a la oficina de la junta electoral de tu condado a más tardar a las 7:30 p. m. del Día de las Elecciones. No puedes entregarla en un lugar de votación el Día de las Elecciones. Solo tú, un familiar cercano o tu tutor legal pueden enviarla o entregarla, salvo que necesites ayuda por una discapacidad.",
    "src": "https://www.ncsbe.gov/voting/vote-mail/detailed-instructions-voting-mail",
-   "checked": "2026-10-21",
-   "quote": "You can return your ballot to your county board of elections office or to an early voting site in your county.",
+   "checked": "2026-10-28",
+   "quote": "You can return your ballot to your county board of elections office or to an early voting site in your county. If returning to your county board of elections office on Election Day, it must be received by 7:30 p.m. You may not return your ballot to a polling place on Election Day.",
    "status": "verified"
   }
  },
@@ -222,12 +227,13 @@
  },
  "sticker": {
   "tradition": {
-   "en": "Some North Carolina counties let residents help pick the sticker. Durham County's 2026 contest opened with public voting, and the top three designs go to the county Board of Elections, which picks the winner.",
-   "es": "Algunos condados de North Carolina dejan que los residentes ayuden a elegir el sticker. El concurso de 2026 del condado de Durham empezó con una votación pública, y los tres diseños con más votos pasan a la junta electoral del condado (Board of Elections), que elige al ganador.",
-   "src": "https://www.dcovotes.dconc.gov/Home/Components/News/News/10867/4100",
-   "checked": "2026-10-21",
-   "quote": "Following that round, the top three designs will be presented to the Durham County Board of Elections for selection of the winning design.",
-   "status": "verified"
+   "en": "Some North Carolina counties let residents help pick the sticker. Durham County ran a public contest for its 2026 \"I Voted\" sticker: residents voted in two rounds, and the county Board of Elections picked the winner from the top three at its August 13 meeting. The county says voters get the new design at polling places starting with this election.",
+   "es": "Algunos condados de North Carolina dejan que los residentes ayuden a elegir el sticker. El condado de Durham hizo un concurso público para su sticker de \"I Voted\" de 2026: los residentes votaron en dos rondas, y la junta electoral del condado (Board of Elections) eligió al ganador entre los tres primeros en su reunión del 13 de agosto. El condado dice que los votantes reciben el nuevo diseño en los lugares de votación a partir de esta elección.",
+   "src": "https://www.dcovotes.dconc.gov/public-information/kids-future-voter-sticker-contest",
+   "checked": "2026-10-28",
+   "quote": "Artists and residents are invited to create a fresh design that voters will receive at polling locations, beginning with the 2026 Statewide General Election. ... Thurs., August 13th Winner Selected at Board Meeting",
+   "status": "verified",
+   "notes": "Read through Chrome 2026-10-28. The county pages give the schedule but no winner name. Perplexity's 'Mark Branly' comes only from the county's X account; not used. Wake's 2023 contest (Shannon, 6th grader, Neuse River Middle School, flying unicorn 'I Voted Early', for the 2024 elections) is on wake.gov/news/wake-county-6th-grader-wins-vote-community-election-sticker-contest; no official word that it is handed out in 2026, so not used."
   },
   "early": {
    "en": "In Guilford County, early voting officials hand you an \"I Voted Early\" sticker once your ballot has gone through the tabulator, and curbside voters get one at the car. Other counties choose their own stickers.",

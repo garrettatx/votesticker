@@ -11,6 +11,10 @@
   "voterportal.sos.la.gov": {
    "en": "the Louisiana Voter Portal (Louisiana Secretary of State)",
    "es": "el buscador oficial de la Secretaría de Estado de Louisiana"
+  },
+  "www.legis.la.gov": {
+   "en": "Louisiana law",
+   "es": "la ley de Louisiana"
   }
  },
  "dates": {
@@ -23,15 +27,16 @@
    "status": "verified"
   },
   "mail_request": {
-   "en": "Request your absentee ballot by 4:30 p.m. on Friday, October 30, 2026, online through the Voter Portal or in writing to your parish Registrar of Voters.",
-   "es": "Pide tu boleta de voto en ausencia a más tardar a las 4:30 p. m. del viernes 30 de octubre de 2026, en línea en el portal oficial para votantes (Voter Portal) o por escrito a la oficina del registro de votantes de tu parroquia (Registrar of Voters).",
-   "src": "https://www.sos.la.gov/elections-voting/election-dates",
-   "checked": "2026-10-21",
-   "quote": "The deadline to request an absentee ballot is October 30 by 4:30 p.m (other than military and overseas voters).",
+   "en": "Request your absentee ballot by 4:30 p.m. on Friday, October 30, 2026, online through the Voter Portal or in writing to your parish Registrar of Voters. Military and overseas voters, and voters who are in the hospital, have until 4:30 p.m. on Monday, November 2.",
+   "es": "Pide tu boleta de voto en ausencia a más tardar a las 4:30 p. m. del viernes 30 de octubre de 2026, en línea en el Voter Portal o por escrito al registrador de votantes de tu parroquia (Registrar of Voters). Los votantes militares y en el extranjero, y los votantes que están hospitalizados, tienen hasta las 4:30 p. m. del lunes 2 de noviembre.",
+   "src": "https://www.sos.la.gov/elections-voting/ways-to-vote",
+   "checked": "2026-10-28",
+   "quote": "General and Disabled Applications: Applicants must request a ballot by 4:30 p.m. CST on the 4th day before election day . Military, Overseas or Hospitalized Applications: Military personnel and/or their dependents; U.S. citizens residing outside the U.S.; or voters that are hospitalized must request their ballot by 4:30 p.m. CST on the day before election day .",
    "status": "verified",
    "until": "2026-10-30",
-   "en_after": "Absentee requests closed at 4:30 p.m. on October 30, 2026. Vote at your polling place on Election Day, 6 a.m. to 8 p.m.",
-   "es_after": "Las solicitudes de voto en ausencia cerraron a las 4:30 p. m. del 30 de octubre de 2026. Vota en tu lugar de votación el Día de las Elecciones, de 6 a. m. a 8 p. m."
+   "en_after": "Absentee requests closed at 4:30 p.m. on October 30, 2026. Military and overseas voters, and voters who are in the hospital, have until 4:30 p.m. on Monday, November 2. Everyone else votes at their polling place on Election Day, 6 a.m. to 8 p.m.",
+   "es_after": "Las solicitudes de boleta de voto en ausencia cerraron a las 4:30 p. m. del 30 de octubre de 2026. Los votantes militares y en el extranjero, y los votantes que están hospitalizados, tienen hasta las 4:30 p. m. del lunes 2 de noviembre. Todos los demás votan en su lugar de votación el Día de las Elecciones, de 6 a. m. a 8 p. m.",
+   "notes": "The 4th day before Nov 3 is Oct 30, matching https://www.sos.la.gov/elections-voting/election-dates ('The deadline to request an absentee ballot is October 30 by 4:30 p.m (other than military and overseas voters).'). Hospitalized applications need the documentation described on the application."
   },
   "mail_return": {
    "en": "Your parish Registrar of Voters must receive your voted ballot by 4:30 p.m. on Monday, November 2, 2026, the day before Election Day. Military, overseas and hospitalized voters have until 8 p.m. on Election Day.",
@@ -53,11 +58,11 @@
    "es_after": "La votación anticipada terminó el 27 de octubre. Vota en tu lugar de votación el Día de las Elecciones, de 6 a. m. a 8 p. m."
   },
   "cure": {
-   "en": "If your Registrar of Voters contacts you about a missing signature, witness signature or mother's maiden name on your absentee envelope, go to their office in person by 4:30 p.m. on Monday, November 2, 2026, to fix it.",
-   "es": "Si la oficina del registro de votantes (Registrar of Voters) te contacta por una firma, una firma de testigo o el apellido de soltera de tu mamá que falta en el sobre de tu boleta de voto en ausencia, ve en persona a esa oficina a más tardar a las 4:30 p. m. del lunes 2 de noviembre de 2026 para corregirlo.",
+   "en": "If your Registrar of Voters contacts you about a problem with your absentee envelope, such as a missing signature, witness signature or mother's maiden name, go to their office in person by 4:30 p.m. on Monday, November 2, 2026, to fix it. Or ask for a replacement ballot, which has to reach the registrar by that same deadline.",
+   "es": "Si el registrador de votantes (Registrar of Voters) te contacta por un problema con el sobre de tu boleta de voto en ausencia, como que falte tu firma, la firma del testigo o el apellido de soltera de tu madre, ve en persona a su oficina a más tardar a las 4:30 p. m. del lunes 2 de noviembre de 2026 para corregirlo. O pide una boleta de reemplazo, que tiene que llegarle al registrador antes de esa misma fecha límite.",
    "src": "https://www.sos.la.gov/elections-voting/ways-to-vote",
-   "checked": "2026-10-21",
-   "quote": "If you are contacted by the Registrar of Voters about a deficiency with your absentee by mail certificate, you must appear in person at their Registrar of Voters office by no later than 4:30 p.m. the day before the election to cure the certificate deficiency.",
+   "checked": "2026-10-28",
+   "quote": "If you are contacted by the Registrar of Voters about a deficiency with your absentee by mail certificate, you must appear in person at their Registrar of Voters office by no later than 4:30 p.m. the day before the election to cure the certificate deficiency. Alternatively, you may request a replacement ballot from the registrar. The same deadline applies for returning the replacement ballot.",
    "status": "verified"
   }
  },
@@ -71,12 +76,15 @@
    "status": "verified"
   },
   "first_time": {
-   "en": "Registered online or by mail and never voted in your parish? You have to vote in person the first time, during early voting or on Election Day. Exceptions include voters 65 and older, military and overseas voters, homebound voters with a disability, and students who send a copy of their student ID.",
-   "es": "¿Te registraste en línea o por correo y nunca has votado en tu parroquia? Tienes que votar en persona la primera vez, durante la votación anticipada o el Día de las Elecciones. Las excepciones incluyen a votantes de 65 años o más, votantes militares y en el extranjero, votantes con discapacidad que no pueden salir de casa y estudiantes que manden una copia de su identificación de estudiante.",
+   "en": "Registered online or by mail and never voted in your parish? You have to vote in person the first time, during early voting or on Election Day. Exceptions include voters 65 and older, military and overseas voters, homebound voters with a disability, students who send a copy of their student ID or fee bill, voters who verify their identity at the registrar's office before the election, and voters who already voted in another parish where they were registered.",
+   "es": "¿Te registraste en línea o por correo y nunca has votado en tu parroquia? Tienes que votar en persona la primera vez, durante la votación anticipada o el Día de las Elecciones. Las excepciones incluyen a votantes de 65 años o más, votantes militares y en el extranjero, votantes con una discapacidad que no pueden salir de casa, estudiantes que envían una copia de su identificación estudiantil o de su recibo de matrícula (fee bill), votantes que verifican su identidad en la oficina del registrador antes de la elección y votantes que ya votaron en otra parroquia donde estaban registrados.",
    "src": "https://www.sos.la.gov/elections-voting/absentee-voting-faqs",
-   "checked": "2026-10-21",
-   "quote": "If you registered to vote online or by mail and you have not previously voted in the parish, you are not eligible to vote absentee and must vote in person the first time, either during early voting or on election day.",
-   "status": "verified"
+   "checked": "2026-10-28",
+   "quote": "If you registered to vote online or by mail and you have not previously voted in the parish, you are not eligible to vote absentee and must vote in person the first time, either during early voting or on election day. Exceptions include: military or overseas citizens; senior citizens (65+); people who are homebound because of a disability; students, who submit a copy of student ID or fee bill with the request; citizens who appear in the registrar of voters office before the election to verify identity; participants in the state's address confidentiality program; and a person who was registered to vote in another parish and previously voted in the other parish",
+   "status": "verified",
+   "until": "2026-10-27",
+   "en_after": "Registered online or by mail and never voted in your parish? You have to vote in person the first time, so vote at your polling place on Election Day. Exceptions include voters 65 and older, military and overseas voters, homebound voters with a disability, students who send a copy of their student ID or fee bill, voters who verify their identity at the registrar's office before the election, and voters who already voted in another parish where they were registered.",
+   "es_after": "¿Te registraste en línea o por correo y nunca has votado en tu parroquia? Tienes que votar en persona la primera vez, así que vota en tu lugar de votación el Día de las Elecciones. Las excepciones incluyen a votantes de 65 años o más, votantes militares y en el extranjero, votantes con una discapacidad que no pueden salir de casa, estudiantes que envían una copia de su identificación estudiantil o de su recibo de matrícula (fee bill), votantes que verifican su identidad en la oficina del registrador antes de la elección y votantes que ya votaron en otra parroquia donde estaban registrados."
   }
  },
  "where": {
@@ -126,12 +134,13 @@
    "notes": "No rule on expired IDs found on sos.la.gov."
   },
   "without": {
-   "en": "No photo ID? You can still vote by signing a voter identification affidavit, though a voter who does can be challenged under the law. A free Louisiana Special ID is available at the Office of Motor Vehicles when you show your voter information card.",
-   "es": "¿No tienes identificación con foto? Igual puedes votar si firmas una declaración jurada de identificación de votante, aunque la ley permite impugnar a quien vota así. Puedes sacar gratis la tarjeta de identificación especial de Louisiana (Louisiana Special ID) en la Oficina de Vehículos Motorizados (OMV) si muestras tu tarjeta de información de votante.",
+   "en": "No photo ID? You can still vote. Answer questions that confirm who you are, then sign a voter identification affidavit. A voter who votes this way can be challenged under the law. A free Louisiana Special ID is available at the Office of Motor Vehicles when you show your voter information card.",
+   "es": "¿No tienes identificación con foto? Todavía puedes votar. Contesta las preguntas que confirman quién eres y luego firma una declaración jurada de identificación de votante (voter identification affidavit). Un votante que vota así puede ser impugnado según la ley. Puedes obtener gratis una Louisiana Special ID en la Oficina de Vehículos Motorizados (Office of Motor Vehicles) si muestras tu tarjeta de información de votante.",
    "src": "https://www.sos.la.gov/elections-voting/voting-early-faqs",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "A voter without photo ID may vote after completing the affidavit but is subject to challenge by law.",
-   "status": "verified"
+   "status": "verified",
+   "notes": "Identifying questions: https://www.sos.la.gov/elections-voting/ways-to-vote (Oct 28): 'or you may vote by affidavit after correctly answering identifying information before voting.'"
   }
  },
  "mail": {
@@ -179,12 +188,13 @@
   },
   "track_url": "https://voterportal.sos.la.gov/",
   "witness": {
-   "en": "Sign the certificate envelope and add your mother's maiden name (write \"unknown\" if you don't know it). A witness signs too and prints their name and address.",
-   "es": "Firma el sobre del certificado y escribe el apellido de soltera de tu mamá (escribe \"unknown\" si no lo sabes). Un testigo también firma y escribe su nombre y dirección.",
+   "en": "Sign the certificate envelope and add your mother's maiden name (write \"unknown\" if you don't know it). A witness signs too and prints their name and address. Unless they're your immediate family, a person can witness only one voter's envelope.",
+   "es": "Firma el sobre del certificado y agrega el apellido de soltera de tu madre (escribe \"unknown\" si no lo sabes). Un testigo también firma y escribe en letra de molde su nombre y dirección. Si no es de tu familia inmediata, una persona puede ser testigo del sobre de un solo votante.",
    "src": "https://www.sos.la.gov/elections-voting/absentee-voting-faqs",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "Section B on the back of the Certificate Envelope with the following information: voter’s signature, mother’s maiden name (if you do not know your mother’s maiden name, write “unknown”), witnesses' signature, witnesses' printed name, and the address of the witness.",
-   "status": "verified"
+   "status": "verified",
+   "notes": "Witness limit: R.S. 18:1306, https://www.legis.la.gov/Legis/Law.aspx?d=81340 (Oct 28): 'No person except the immediate family member of the voter, as defined in this Code, shall witness more than one certificate of a voter.' Military and overseas voters don't need a witness (same section)."
   },
   "cure": {
    "en": "Your Registrar of Voters checks each envelope for a missing voter signature, witness signature or mother's maiden name. If one is missing, they mail you a notice, and call or email if they have your contact details. Fix it in person at their office or ask for a replacement ballot.",
@@ -195,12 +205,13 @@
    "status": "verified"
   },
   "dropbox": {
-   "en": "Return your ballot by mail or commercial carrier, by fax if you ask the registrar, or by hand to the Registrar of Voters. Only you or an immediate family member can hand deliver it.",
-   "es": "Devuelve tu boleta por correo o por una empresa de mensajería, por fax si se lo pides a la oficina del registro, o en persona en la oficina del registro de votantes (Registrar of Voters). Solo tú o un familiar directo pueden entregarla en persona.",
-   "src": "https://www.sos.la.gov/elections-voting/ways-to-vote",
-   "checked": "2026-10-21",
-   "quote": "By Hand Delivery: A voter or immediate family member of the voter may deliver the ballot to the registrar of voters (a signed statement must be completed upon delivery by anyone other that the voter, certifying their relationship to the voter)",
-   "status": "verified"
+   "en": "Return your ballot by mail or commercial carrier, by fax if you ask the registrar, or by hand to your Registrar of Voters' office. Someone else can hand deliver it for you if they sign a statement that you allowed it. Except for immediate family, no one can turn in more than one voter's ballot.",
+   "es": "Devuelve tu boleta por correo o por un servicio de mensajería comercial, por fax si se lo pides al registrador, o en mano en la oficina del registrador de votantes (Registrar of Voters). Otra persona puede entregarla por ti si firma una declaración de que tú lo autorizaste. Salvo tu familia inmediata, nadie puede entregar la boleta de más de un votante.",
+   "src": "https://www.legis.la.gov/Legis/Law.aspx?d=81344",
+   "checked": "2026-10-28",
+   "quote": "If delivered by other than the voter, a commercial courier, or the United States Postal Service, the registrar shall require that the person making such delivery sign a statement, prepared by the secretary of state, certifying that the person has the authorization and consent of the voter to hand deliver the marked ballot. ... No person except the immediate family of the voter, as defined in this Code, shall submit by any means or send for delivery by the United States Postal Service or commercial courier more than one marked ballot per election to the registrar.",
+   "status": "verified",
+   "notes": "R.S. 18:1308(B), read Oct 28. Replaces 'Only you or an immediate family member can hand deliver it', which follows the SOS Ways to Vote summary ('A voter or immediate family member of the voter may deliver the ballot') but not the statute. Hand delivery goes to the registrar's principal or branch office, or an early voting site during early voting (18:1308(B)(2))."
   }
  },
  "polls_rules": {
@@ -227,12 +238,13 @@
  },
  "sticker": {
   "tradition": {
-   "en": "Louisiana's 2026 I voted sticker was painted by New Orleans artist Terrance Osborne. It's the state's sixth artist-designed sticker, a series that started in 2016 with George Rodrigue's Blue Dog.",
-   "es": "El sticker de \"I voted\" de Louisiana para 2026 lo pintó el artista de New Orleans Terrance Osborne. Es el sexto sticker del estado diseñado por artistas, una serie que empezó en 2016 con el Blue Dog de George Rodrigue.",
+   "en": "Louisiana's 2026 I voted sticker has art by New Orleans artist Terrance Osborne. He said he pictured what Louisiana would look like if you could see its sound. It's the state's sixth I voted sticker and the fifth Louisiana artist in a series that started in 2016 with George Rodrigue's Blue Dog.",
+   "es": "El sticker de I voted de Louisiana para 2026 tiene arte de Terrance Osborne, artista de New Orleans. Él dijo que imaginó cómo se vería Louisiana si se pudiera ver su sonido. Es el sexto sticker de I voted del estado y el quinto artista de Louisiana en una serie que empezó en 2016 con el Blue Dog de George Rodrigue.",
    "src": "https://www.sos.la.gov/news-events/secretary-landry-unveils-2026-i-voted-sticker-design",
-   "checked": "2026-10-21",
-   "quote": "The artwork for this year’s sticker was created by New Orleans artist Terrance Osborne, who also attended the unveiling.",
-   "status": "verified"
+   "checked": "2026-10-28",
+   "quote": "The artwork for this year’s sticker was created by New Orleans artist Terrance Osborne, who also attended the unveiling. Osborne said that his inspiration for the art was the imagery of what Louisiana would look like if you could see its sound. “Today’s unveiling marks Louisiana’s 6th ‘I Voted’ sticker and the 5th Louisiana artist featured as part of the series,” Secretary Landry said.",
+   "status": "verified",
+   "notes": "July 28, 2026 release, read Oct 28. Was 'sixth artist-designed sticker'; the release says sixth sticker, fifth Louisiana artist. 'Painted' changed to 'has art by' (release: 'created'). The release doesn't describe distribution."
   }
  },
  "faq": {

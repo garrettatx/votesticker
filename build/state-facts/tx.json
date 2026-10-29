@@ -5,12 +5,16 @@
  "election_name": "November 3, 2026 general election",
  "dates": {
   "reg_deadline": {
-   "en": "Registration closed October 5, 2026. Texas has no same-day or Election Day registration.",
-   "es": "El registro cerró el 5 de octubre de 2026. Texas no tiene registro el mismo día ni el Día de las Elecciones.",
-   "src": "https://www.sos.state.tx.us/elections/voter/important-election-dates.shtml",
-   "checked": "2026-10-21",
-   "quote": "Last Day to Register to Vote: Monday, October 5, 2026",
-   "status": "verified"
+   "en": "Registration closed October 5, 2026. Texas has no same-day or Election Day registration. Moved to a new Texas county and didn't register there? If you're still registered in your old county, you may be able to vote a limited ballot, with the races both counties share, at your new county's main early voting location through Friday, October 30. Not on Election Day.",
+   "es": "El registro cerró el 5 de octubre de 2026. Texas no tiene registro el mismo día ni el Día de las Elecciones. ¿Te mudaste a otro condado de Texas y no te registraste ahí? Si sigues registrado en tu condado anterior, quizás puedas votar con una boleta limitada (limited ballot), con las contiendas que comparten los dos condados, en el centro principal de votación anticipada de tu nuevo condado hasta el viernes 30 de octubre. No el Día de las Elecciones.",
+   "src": "https://www.votetexas.gov/faq/index.html",
+   "checked": "2026-10-28",
+   "quote": "If you have moved to a new county and have not re-registered in the new county by the October 5, 2026 deadline, you may be eligible to vote a limited ballot in your new county. A limited ballot means that you would be allowed to vote on any candidates and measures in common between your former and new county. This procedure is only available during the early voting period at the main early voting polling place ; you may NOT vote a limited ballot on election day.",
+   "status": "verified",
+   "until": "2026-10-30",
+   "en_after": "Registration closed October 5, 2026. Texas has no same-day or Election Day registration, and the limited ballot for voters who moved counties was only available during early voting.",
+   "es_after": "El registro cerró el 5 de octubre de 2026. Texas no tiene registro el mismo día ni el Día de las Elecciones, y la boleta limitada para quienes se mudaron de condado solo estaba disponible durante la votación anticipada.",
+   "notes": "Oct 5 deadline also on sos.state.tx.us important-election-dates (read 2026-10-21). Same FAQ: must be a current registered voter in the former county (or registered there when applying in the new county)."
   },
   "mail_request": {
    "en": "Your county's early voting clerk must receive your application by Friday, October 23, 2026.",
@@ -29,7 +33,16 @@
    "status": "verified"
   },
   "early_hours": {
-   "status": "missing"
+   "en": "Early voting ends Friday, October 30. Each county sets the hours for its sites. Through Friday, each county's main early voting location must be open at least 12 hours a day. Check your county elections office for times.",
+   "es": "La votación anticipada termina el viernes 30 de octubre. Cada condado fija el horario de sus centros. Hasta el viernes, el centro principal de votación anticipada de cada condado debe abrir por lo menos 12 horas al día. Consulta los horarios con la oficina electoral de tu condado.",
+   "src": "https://www.sos.texas.gov/elections/laws/advisory2026-21-november-3-election-law-calendar.shtml",
+   "checked": "2026-10-28",
+   "quote": "Early voting hours for the main early-voting polling place are as follows: ... October 25 26 27 28 29 30 31 At least 6 hours At least 12 hours At least 12 hours At least 12 hours At least 12 hours At least 12 hours None",
+   "status": "verified",
+   "until": "2026-10-30",
+   "en_after": "Early voting ended Friday, October 30. Vote on Election Day, November 3, 7 a.m. to 7 p.m. local time.",
+   "es_after": "La votación anticipada terminó el viernes 30 de octubre. Vota el Día de las Elecciones, 3 de noviembre, de 7 a. m. a 7 p. m., hora local.",
+   "notes": "Oct 30 end date also on sos.state.tx.us important-election-dates ('Last Day of Early Voting by Personal Appearance Friday, October 30, 2026'). Advisory table read by curl 2026-10-28."
   },
   "cure": {
    "en": "Got a notice of a defect on your mail ballot? Correct it by Monday, November 9, 2026.",
@@ -108,11 +121,11 @@
    "status": "verified"
   },
   "without": {
-   "en": "Don't have one of these? You can still vote a regular ballot. Bring a document with your name on it, such as your voter registration certificate, a current utility bill, a bank statement, a paycheck, a government check or a certified birth certificate, and sign a short form called a Reasonable Impediment Declaration.",
-   "es": "¿No tienes ninguna de estas? Igual puedes votar con una boleta regular. Lleva un documento con tu nombre, como tu certificado de registro de votante, un recibo de servicios reciente, un estado de cuenta bancario, un talón de pago, un cheque del gobierno o un acta de nacimiento certificada, y firma un formulario corto llamado Reasonable Impediment Declaration (declaración de impedimento razonable).",
+   "en": "Don't have one of these and can't reasonably get one? You can still vote a regular ballot. Bring one supporting document, such as your voter registration certificate, a certified birth certificate, or a current utility bill, bank statement, paycheck, government check or other government document with your name and an address. Then sign a short form called a Reasonable Impediment Declaration.",
+   "es": "¿No tienes una de estas y no puedes conseguirla por una razón válida? Todavía puedes votar con una boleta regular. Lleva un documento de apoyo, como tu certificado de registro de votante, un acta de nacimiento certificada, o un recibo de servicios reciente, un estado de cuenta bancario, un talón de pago, un cheque del gobierno u otro documento del gobierno con tu nombre y una dirección. Luego firma un formulario corto llamado declaración de impedimento razonable (Reasonable Impediment Declaration).",
    "src": "https://www.votetexas.gov/voting/need-id.html",
-   "checked": "2026-10-21",
-   "quote": "copy of or original current utility bill;",
+   "checked": "2026-10-28",
+   "quote": "Here is a list of the supporting forms of ID that can be presented if the voter does not possess one of the forms of acceptable photo ID and cannot reasonably obtain one: copy or original of a government document that shows the voter’s name and an address, including the voter’s voter registration certificate; copy of or original current utility bill; copy of or original bank statement; copy of or original government check; copy of or original paycheck; or copy of or original of (a) a certified domestic (from a U.S. state or territory) birth certificate",
    "status": "verified"
   }
  },
@@ -139,7 +152,13 @@
    "es_after": "La fecha límite para corregir un error en la boleta por correo fue el lunes 9 de noviembre de 2026."
   },
   "dropbox": {
-   "status": "missing"
+   "en": "Texas has no drop boxes. Your marked ballot can go back by mail, by a delivery company, or by you in person to the early voting clerk's office, only while polls are open on Election Day and with an accepted ID. No one else can drop it off for you. Changed your mind? Bring the mail ballot with you and hand it in at a polling place so you can vote in person. Without it, you can vote only a provisional ballot.",
+   "es": "Texas no tiene buzones de entrega. Tu boleta marcada se puede devolver por correo, por una compañía de mensajería, o en persona por ti en la oficina del secretario de votación anticipada (early voting clerk), solo mientras estén abiertas las casillas el Día de las Elecciones y con una identificación aceptada. Nadie más la puede entregar por ti. ¿Cambiaste de opinión? Lleva tu boleta por correo y entrégala en un lugar de votación para poder votar en persona. Sin ella, solo puedes votar con una boleta provisional.",
+   "src": "https://statutes.capitol.texas.gov/Docs/EL/htm/EL.86.htm",
+   "checked": "2026-10-28",
+   "quote": "The carrier envelope may be delivered in another envelope and must be transported and delivered only by: (1) mail; (2) common or contract carrier; or (3) subject to Subsections (a-1) and (a-2), in-person delivery by the voter who voted the ballot. (a-1) The voter may deliver a marked ballot in person to the early voting clerk's office only while the polls are open on election day. A voter who delivers a marked ballot in person must present an acceptable form of identification described by Section 63.0101.",
+   "status": "verified",
+   "notes": "Read via tcss.legis.texas.gov mirror 2026-10-28 (statutes.capitol.texas.gov serves a JS shell to curl). Cancel-and-vote-in-person rests on EL.84: 84.032(d) lets the voter return the mail ballot to the early voting clerk at an early voting site or the presiding judge on Election Day; 84.035(b) limits a voter who cancels without returning it to a provisional ballot. 84.032(c) also allows an affidavit if the ballot never arrived; not on page."
   },
   "witness": {
    "en": "If someone helps you with your mail ballot, their name and address go on the carrier envelope and they sign it.",
@@ -180,11 +199,11 @@
    "status": "verified"
   },
   "phone": {
-   "en": "Keep your phone put away in the room where voting happens, and take your sticker selfie outside: Texas bans recording images or sound within 100 feet of a voting station.",
-   "es": "Guarda el teléfono en el cuarto donde se vota, y tómate la selfie con tu sticker afuera: Texas prohíbe grabar imágenes o sonido a menos de 100 pies de una cabina de votación.",
+   "en": "Keep your phone put away in the room where voting happens. Texas bans recording images or sound within 100 feet of a voting station, so take your sticker selfie outside and well away from the door.",
+   "es": "Guarda tu teléfono en el cuarto donde se vota. Texas prohíbe grabar imágenes o sonido a menos de 100 pies de una cabina de votación, así que tómate la selfie con tu sticker afuera y lejos de la puerta.",
    "src": "https://statutes.capitol.texas.gov/Docs/EL/htm/EL.61.htm",
-   "checked": "2026-10-21",
-   "quote": "a person may not use a wireless communication device within a room in which voting is taking place.",
+   "checked": "2026-10-28",
+   "quote": "(a) Except as permitted by Sections 61.012 and 61.013, a person may not use a wireless communication device within a room in which voting is taking place. (b) A person may not use any mechanical or electronic means of recording images or sound within 100 feet of a voting station.",
    "status": "verified"
   },
   "line": {
@@ -198,11 +217,11 @@
  },
  "sticker": {
   "tradition": {
-   "en": "In El Paso County, voters get student-designed stickers during the 2026 elections. Novalie, a 10th grader at Eastwood High School, drew the I Voted sticker. Sophia, a 4th grader at Coach Wally Hartley PK-8 School, drew the Future Voter sticker. They won first place in the county's 2025 sticker contest, out of 162 entries.",
-   "es": "En el condado de El Paso, los votantes reciben stickers diseñados por estudiantes durante las elecciones de 2026. Novalie, estudiante de 10.º grado de Eastwood High School, dibujó el sticker I Voted. Sophia, estudiante de 4.º grado de Coach Wally Hartley PK-8 School, dibujó el sticker Future Voter. Ganaron el primer lugar en el concurso de stickers 2025 del condado, entre 162 diseños.",
+   "en": "In El Paso County, voters get student-designed stickers during the 2026 elections. Novalie, then a 10th grader at Eastwood High School, drew the I Voted sticker. Sophia, then a 4th grader at Coach Wally Hartley PK-8 School, drew the Future Voter sticker. They won first place in the county's 2025 sticker contest, out of 162 entries.",
+   "es": "En el condado de El Paso, los votantes reciben stickers diseñados por estudiantes durante las elecciones de 2026. Novalie, que entonces cursaba 10.º grado en Eastwood High School, dibujó el sticker I Voted. Sophia, que entonces cursaba 4.º grado en Coach Wally Hartley PK-8 School, dibujó el sticker Future Voter. Ganaron el primer lugar en el concurso de stickers 2025 del condado, entre 162 diseños.",
    "until": "2026-11-03",
-   "en_after": "For the 2026 elections, El Paso County handed out student-designed stickers. Novalie, a 10th grader at Eastwood High School, drew the I Voted sticker. Sophia, a 4th grader at Coach Wally Hartley PK-8 School, drew the Future Voter sticker. They won first place in the county's 2025 sticker contest, out of 162 entries.",
-   "es_after": "En las elecciones de 2026, el condado de El Paso repartió stickers diseñados por estudiantes. Novalie, estudiante de 10.º grado de Eastwood High School, dibujó el sticker I Voted. Sophia, estudiante de 4.º grado de Coach Wally Hartley PK-8 School, dibujó el sticker Future Voter. Ganaron el primer lugar en el concurso de stickers 2025 del condado, entre 162 diseños.",
+   "en_after": "For the 2026 elections, El Paso County handed out student-designed stickers. Novalie, then a 10th grader at Eastwood High School, drew the I Voted sticker. Sophia, then a 4th grader at Coach Wally Hartley PK-8 School, drew the Future Voter sticker. They won first place in the county's 2025 sticker contest, out of 162 entries.",
+   "es_after": "En las elecciones de 2026, el condado de El Paso repartió stickers diseñados por estudiantes. Novalie, que entonces cursaba 10.º grado en Eastwood High School, dibujó el sticker I Voted. Sophia, que entonces cursaba 4.º grado en Coach Wally Hartley PK-8 School, dibujó el sticker Future Voter. Ganaron el primer lugar en el concurso de stickers 2025 del condado, entre 162 diseños.",
    "src": "https://epcountyvotestx.gov/see-more/news-and-press-releases/elections-department-announces-2025-sticker-design-contest-winners",
    "checked": "2026-10-28",
    "quote": "First-place winning designs will be distributed to voters during the 2026 election season. ... “This year, we received 162 submissions compared to the 68 submissions for the last midterm election year.",
@@ -224,12 +243,13 @@
  },
  "faq": {
   "provisional": {
-   "en": "You vote a provisional ballot when poll workers can't verify your registration. You'll get a notice in the mail by the 10th day after the local canvass telling you whether it counted.",
-   "es": "Votas con una boleta provisional cuando los trabajadores electorales no pueden verificar tu registro. Recibirás un aviso por correo a más tardar 10 días después del escrutinio local que te dirá si se contó.",
-   "src": "https://www.votetexas.gov/faq/index.html",
-   "checked": "2026-10-21",
-   "quote": "Provisional voters will receive a notice in the mail by the 10th day after the local canvass",
-   "status": "verified"
+   "en": "You vote a provisional ballot when poll workers can't verify your registration, or when you have an accepted photo ID but didn't bring it. In that case, take the ID to your county voter registrar's office within six days after Election Day, by Monday, November 9, or your ballot won't count. You'll get a notice in the mail telling you whether it counted.",
+   "es": "Votas con una boleta provisional cuando el personal de casilla no puede verificar tu registro, o cuando tienes una identificación con foto aceptada pero no la llevaste. En ese caso, lleva la identificación a la oficina del registrador de votantes de tu condado (voter registrar) dentro de los seis días después del Día de las Elecciones, a más tardar el lunes 9 de noviembre, o tu boleta no contará. Te llegará un aviso por correo que te dice si contó.",
+   "src": "https://www.votetexas.gov/voting/need-id.html",
+   "checked": "2026-10-28",
+   "quote": "If a voter states that they (a) do not possess an acceptable form of photo identification listed above, and the voter can reasonably obtain one of these acceptable forms of identification or (b) possesses, but did not bring to the polling place, one of the seven forms of acceptable photo identification listed above, the voter may cast a provisional ballot at the polls. However, in order to have the provisional ballot counted, the voter will be required to visit the voter registrar’s office within six calendar days of the date of the election to present one of the above forms of photo ID",
+   "status": "verified",
+   "notes": "Sixth calendar day after Nov 3 = Mon Nov 9 (computed). Registration-verification reason and mailed notice are from votetexas.gov/faq (read 2026-10-21: notice 'by the 10th day after the local canvass'); 'by the 10th day' detail dropped for length."
   },
   "line": {
    "en": "You can still vote. Anyone inside or waiting to enter their polling place at 7 p.m. gets to vote.",

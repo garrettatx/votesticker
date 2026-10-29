@@ -15,6 +15,10 @@
   "snohomishcountywa.gov": {
    "en": "Snohomish County Elections",
    "es": "la oficina electoral del condado de Snohomish (Snohomish County Elections)"
+  },
+  "app.leg.wa.gov": {
+   "en": "Washington law",
+   "es": "la ley de Washington"
   }
  },
  "dates": {
@@ -48,18 +52,24 @@
    "status": "missing"
   },
   "cure": {
-   "status": "missing",
-   "notes": "The SOS FAQ says counties contact voters about signature problems but gives no deadline."
+   "en": "Signature problem on your envelope? Your county has to tell you within three business days of getting your ballot. Fix it by the close of business on Monday, November 23, the day before your county certifies the results.",
+   "es": "¿Hay un problema con la firma de tu sobre? Tu condado tiene que avisarte dentro de los tres días hábiles después de recibir tu boleta. Corrígelo antes del cierre de oficinas del lunes 23 de noviembre, el día antes de que tu condado certifique los resultados.",
+   "src": "https://app.leg.wa.gov/WAC/default.aspx?cite=434-261-053",
+   "checked": "2026-10-28",
+   "quote": "The voter identified on the ballot return envelope must be notified as soon as practicable, but no later than three business days following receipt, that the signature on the ballot declaration does not match the signature(s) in the voter registration record. ... (2) The voter may cure their ballot signature no later than the close of business the day before the election is certified.",
+   "status": "verified",
+   "notes": "WAC 434-261-053, adopted WSR 25-22-012, effective Nov 24, 2025. Certification date: RCW 29A.60.190, https://app.leg.wa.gov/RCW/default.aspx?cite=29A.60.190 (Oct 28): counties certify 'twenty-one days after a general election', so Tuesday, Nov 24, 2026; the day before is Monday, Nov 23. Replaces the 'missing' entry (the SOS FAQ gives no date)."
   }
  },
  "how": {
   "in_person": {
-   "en": "There's no polling place to find. Your ballot comes to you. Need help in person? Every county has a voting center open until 8 p.m. on Election Day, where you can register, get a replacement ballot or use an accessible voting machine.",
-   "es": "No tienes que buscar un lugar de votación: tu boleta te llega a ti. ¿Necesitas ayuda en persona? Cada condado tiene un centro de votación abierto hasta las 8 p. m. del Día de las Elecciones, donde puedes registrarte, conseguir una boleta de reemplazo o usar una máquina de votación accesible.",
+   "en": "There's no polling place to find. Your ballot comes to you. Need help in person? Every county has a voting center, open during business hours through 8 p.m. on Election Day, where you can register, get a replacement ballot or use an accessible voting machine.",
+   "es": "No tienes que buscar un lugar de votación. Tu boleta te llega a ti. ¿Necesitas ayuda en persona? Cada condado tiene un centro de votación, abierto en horario de oficina hasta las 8 p. m. del Día de las Elecciones, donde puedes registrarte, pedir una boleta de reemplazo o usar una máquina de votación accesible.",
    "src": "https://www.sos.wa.gov/elections/voters/helpful-information/frequently-asked-questions-about-elections",
-   "checked": "2026-10-21",
+   "checked": "2026-10-28",
    "quote": "available until 8 p.m. on Election Day.",
-   "status": "verified"
+   "status": "verified",
+   "notes": "Business hours through 8 p.m.: RCW 29A.40.160(1), https://app.leg.wa.gov/RCW/default.aspx?cite=29A.40.160 (Oct 28): 'The voting center shall be open during business hours during the voting period, which begins eighteen days before, and ends at 8:00 p.m. on the day of, the ... general election.'"
   },
   "first_time": {
    "status": "missing"
@@ -111,12 +121,13 @@
   },
   "track_url": "https://voter.votewa.gov/WhereToVote.aspx",
   "cure": {
-   "en": "Forgot to sign, or your signature looks different now? Your county will contact you so you can fix it. Watch your mail and email for a week or so after you send it.",
-   "es": "¿Se te olvidó firmar o tu firma se ve distinta ahora? Tu condado se comunicará contigo para que lo corrijas. Revisa tu correo postal y electrónico durante una semana más o menos después de enviarla.",
-   "src": "https://www.sos.wa.gov/elections/voters/helpful-information/frequently-asked-questions-about-elections",
-   "checked": "2026-10-21",
-   "quote": "County auditors must contact voters if their ballot signature does not match the voter's registration signature.",
-   "status": "verified"
+   "en": "Forgot to sign, or your signature looks different now? Your county will contact you by mail, and by phone, text or email if it has them, with a form to fix it. Send the form back by the close of business on Monday, November 23. Check your ballot status on VoteWA.gov.",
+   "es": "¿Se te olvidó firmar o tu firma se ve diferente ahora? Tu condado te contactará por correo, y por teléfono, mensaje de texto o correo electrónico si los tiene, con un formulario para corregirlo. Devuelve el formulario antes del cierre de oficinas del lunes 23 de noviembre. Revisa el estado de tu boleta en VoteWA.gov.",
+   "src": "https://app.leg.wa.gov/WAC/default.aspx?cite=434-261-053",
+   "checked": "2026-10-28",
+   "quote": "The county must notify the voter of the procedure for curing their signature by: (a) A notice letter package sent by first class mail with a signature update form or a missing signature form. ... (b) Telephone ... (c) Text message (if the voter has opted into text message notifications); and (d) Email ... (2) The voter may cure their ballot signature no later than the close of business the day before the election is certified.",
+   "status": "verified",
+   "notes": "Was 'Watch your mail and email for a week or so after you send it' (Oct 21, SOS FAQ). Nov 23 = day before the Nov 24 certification (RCW 29A.60.190, 21 days after the general election). Text messages go to voters who opted in."
   },
   "dropbox": {
    "en": "Drop boxes close at 8 p.m. on Election Day. Mailing it late? Take it to a post office counter and ask them to hand-stamp the postmark.",
@@ -129,7 +140,13 @@
  },
  "polls_rules": {
   "gear": {
-   "status": "missing"
+   "en": "No campaigning near voting. Within 100 feet of a voting center entrance, or 25 feet of a ballot drop box, no one may urge votes for or against a candidate or measure, hand out cards or fliers, or gather petition signatures.",
+   "es": "Nada de campaña cerca de donde se vota. A menos de 100 pies de la entrada de un centro de votación, o a menos de 25 pies de un buzón de entrega de boletas, nadie puede pedir el voto a favor o en contra de un candidato o una medida, repartir tarjetas o volantes, ni juntar firmas para peticiones.",
+   "src": "https://app.leg.wa.gov/RCW/default.aspx?cite=29A.84.510",
+   "checked": "2026-10-28",
+   "quote": "Within a voting center or student engagement hub or in any public street or room in any public manner within 100 feet measured radially from the entrance to a voting center or student engagement hub or 25 feet measured radially from a ballot drop box as described in RCW 29A.40.170 : (i) Suggest or persuade or attempt to suggest or persuade any voter to vote for or against any candidate or ballot measure; (ii) Circulate cards or handbills of any kind; (iii) Solicit signatures to any kind of petition;",
+   "status": "verified",
+   "notes": "RCW 29A.84.510(1)(a), read Oct 28. Applies during the 18-day voting period."
   },
   "phone": {
    "status": "missing"
@@ -186,12 +203,13 @@
    "status": "verified"
   },
   "unsigned": {
-   "en": "Your county will contact you so you can sign or fix it before your ballot is counted. Watch your mail and email after you send it back.",
-   "es": "Tu condado se comunicará contigo para que la firmes o la corrijas antes de contar tu boleta. Revisa tu correo postal y electrónico después de devolverla.",
-   "src": "https://www.sos.wa.gov/elections/voters/helpful-information/frequently-asked-questions-voting-mail",
-   "checked": "2026-10-21",
-   "quote": "They will contact you if there's a problem with your signature.",
-   "status": "verified"
+   "en": "Your county will contact you with a form to sign or fix it before your ballot is counted. Send it back by the close of business on Monday, November 23.",
+   "es": "Tu condado te contactará con un formulario para firmar o corregir tu sobre antes de contar tu boleta. Devuélvelo antes del cierre de oficinas del lunes 23 de noviembre.",
+   "src": "https://app.leg.wa.gov/WAC/default.aspx?cite=434-261-053",
+   "checked": "2026-10-28",
+   "quote": "If a ballot declaration signature is not accepted following secondary review, the voter used a mark or signature stamp but did not include witnesses, or if the ballot declaration was not signed, the ballot cannot be counted until the voter cures their signature. ... The voter may cure their ballot signature no later than the close of business the day before the election is certified.",
+   "status": "verified",
+   "notes": "Nov 23: see dates.cure."
   },
   "late_mail": {
    "en": "A mailed ballot counts if it's postmarked on or before November 3, but postmarks aren't guaranteed on the day you mail it. In the last week, use a drop box or ask the post office counter to hand-stamp it.",

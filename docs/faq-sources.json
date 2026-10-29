@@ -40,8 +40,9 @@
   "id": {
    "rule": "id_nonphoto",
    "summary": "You must show one ID, such as your voter ID card, a driver's license, or a passport. A utility bill or bank statement with your name and address also works.",
-   "source": "https://www.akleg.gov/basis/statutes.asp#15.15.225",
-   "quote": "each voter shall exhibit to an election official one form of identification, including (1) an official voter registration card, driver's license, state identification card, current and valid photo identification, birth certificate, passport, or hunting or fishing license"
+   "source": "https://www.akleg.gov/basis/statutes.asp?media=print&secStart=15.15.225&secEnd=15.15.225",
+   "quote": "each voter shall exhibit to an election official one form of identification, including (1) an official voter registration card, driver's license, state identification card, current and valid photo identification, birth certificate, passport, or hunting or fishing license",
+   "checked": "2026-10-28"
   },
   "registration": {
    "rule": "no",
@@ -53,8 +54,9 @@
   "selfie": {
    "rule": "not_allowed",
    "summary": "State law bars you from showing your marked ballot to anyone in a way that reveals how you voted, so sharing a photo of your ballot is not allowed.",
-   "source": "https://www.akleg.gov/basis/statutes.asp#15.15.280",
-   "quote": "a voter may not exhibit the voter's ballot to an election official or any other person so as to enable any person to ascertain how the voter marked the ballot."
+   "source": "https://www.akleg.gov/basis/statutes.asp?media=print&secStart=15.15.280&secEnd=15.15.280",
+   "quote": "a voter may not exhibit the voter's ballot to an election official or any other person so as to enable any person to ascertain how the voter marked the ballot.",
+   "checked": "2026-10-28"
   },
   "notes": "Statute text read via the akleg.gov print view (statutes.asp?media=print&secStart=...). Alaska spans two time zones (the western Aleutians use Hawaii-Aleutian time); the official calendar does not say local time, so the summary omits it. Without ID you may vote a questioned ballot (AS 15.15.225(c)); a poll worker who knows you may waive ID except for first-time mail registrants. AS 15.15.280 does not mention photos specifically; the not_allowed rule is an inference from the ban on exhibiting a marked ballot. Region 4 rural communities have special in-person absentee arrangements."
  },
@@ -119,8 +121,9 @@
    "open": "7 a.m.",
    "close": "8 p.m.",
    "summary": "Every voter gets a mail ballot. Polls and vote centers are open 7 a.m. to 8 p.m. on November 3. Drop off your ballot by 8 p.m., or mail it postmarked by November 3.",
-   "source": "https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026",
-   "quote": "November 3 is the last day to vote in-person or return a ballot by 8:00 p.m. Polls are open from 7:00 a.m. to 8:00 p.m."
+   "source": "https://elections.cdn.sos.ca.gov/pdfs/quick-facts-2026-general.pdf",
+   "quote": "November 3 is the last day to vote in-person or return a ballot by 8:00 p.m. Polls are open from 7:00 a.m. to 8:00 p.m.",
+   "checked": "2026-10-28"
   },
   "id": {
    "rule": "no_id",
@@ -255,21 +258,24 @@
    "open": "7 a.m.",
    "close": "7 p.m.",
    "summary": "Polls are open 7 a.m. to 7 p.m. local time (Florida has two time zones). If you are in line at closing, you can vote.",
-   "source": "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0100/Sections/0100.011.html",
-   "quote": "The polls shall be open at the voting places at 7:00 a.m., on the day of the election, and shall be kept open until 7:00 p.m., of the same day"
+   "source": "https://www.flsenate.gov/Laws/Statutes/2026/100.011",
+   "quote": "The polls shall be open at the voting places at 7:00 a.m., on the day of the election, and shall be kept open until 7:00 p.m., of the same day",
+   "checked": "2026-10-28"
   },
   "id": {
    "rule": "photo_required",
    "summary": "You must show a current photo ID with your signature, such as a Florida driver license, Florida ID card, or U.S. passport. Without one, you vote a provisional ballot.",
-   "source": "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0101/Sections/0101.043.html",
-   "quote": "The clerk or inspector shall require each elector, upon entering the polling place, to present one of the following current and valid picture identifications: 1. Florida driver license."
+   "source": "https://soe.dos.state.fl.us/pdf/DE%20Guide%200006-Florida%20History-Voter%20ID%20at%20the%20polls%20Rev.%2020260601.pdf",
+   "quote": "The clerk or inspector shall require each elector, upon entering the polling place, to present one of the following current and valid picture identifications: 1. Florida driver license.",
+   "checked": "2026-10-28"
   },
   "registration": {
    "rule": "no",
    "deadline": "Monday, October 5, 2026 (29 days before the election).",
    "summary": "The deadline to register for the November 3 election was October 5, 2026. Florida does not offer same-day or Election Day registration.",
-   "source": "https://dos.fl.gov/elections/for-voters/election-dates/",
-   "quote": "Deadline to register to vote: October 5, 2026"
+   "source": "https://www.flsenate.gov/Laws/Statutes/2026/97.0555",
+   "quote": "Deadline to register to vote: October 5, 2026",
+   "checked": "2026-10-28"
   },
   "selfie": {
    "rule": "allowed",
@@ -414,7 +420,8 @@
    "rule": "no_id",
    "summary": "Most voters do not show ID. Some first-time voters who registered by mail must show ID, such as a driver's license or utility bill, or vote provisionally.",
    "source": "https://www.nj.gov/state/elections/assets/pdf/posters-bill-of-rights/2026-11-bill-of-rights-poster-english.pdf",
-   "quote": "If you DO NOT show the board workers any identification you CANNOT vote on the voting machine. You MUST vote with a provisional paper ballot."
+   "quote": "If you DO NOT show the board workers any identification you CANNOT vote on the voting machine. You MUST vote with a provisional paper ballot.",
+   "checked": "2026-10-28"
   },
   "registration": {
    "rule": "no",
@@ -499,14 +506,16 @@
    "rule": "photo_requested",
    "summary": "You will be asked for a photo ID, such as a NC driver's license, U.S. passport, or free voter ID card. Without one, you can fill out an ID Exception Form.",
    "source": "https://www.ncsbe.gov/voting/voter-id",
-   "quote": "If a voter cannot show an acceptable photo ID when voting in person, they can still vote by filling out an ID Exception Form."
+   "quote": "If a voter cannot show an acceptable photo ID when voting in person, they can still vote by filling out an ID Exception Form.",
+   "checked": "2026-10-28"
   },
   "registration": {
    "rule": "early_only",
    "deadline": "Friday, October 9, 2026 (25 days before Election Day). After that, you can register and vote the same day only at an early voting site during the early voting period.",
    "summary": "The regular deadline is October 9, 2026. After that, you can register and vote at the same time during early voting, but not on Election Day.",
-   "source": "https://www.ncsbe.gov/registering/how-register",
-   "quote": "If you missed the voter registration deadline, you may still be able to register and vote or make changes (except for party affiliation) to your voter registration and vote during the early voting period."
+   "source": "https://www.ncsbe.gov/registering/how-register/register-person-during-early-voting",
+   "quote": "If you missed the voter registration deadline, you may still be able to register and vote or make changes (except for party affiliation) to your voter registration and vote during the early voting period.",
+   "checked": "2026-10-28"
   },
   "selfie": {
    "rule": "not_allowed",
@@ -835,7 +844,8 @@
    "rule": "photo_requested",
    "summary": "You'll be asked for a photo ID with your signature, such as a Louisiana driver's license or special ID card. Without one, you can sign a voter affidavit and vote.",
    "source": "https://www.sos.la.gov/elections-voting/ways-to-vote",
-   "quote": "Be prepared to show a photo identification card with your photo and signature or a United States military identification card that contains your name and picture when voting."
+   "quote": "Be prepared to show a photo identification card with your photo and signature or a United States military identification card that contains your name and picture when voting.",
+   "checked": "2026-10-28"
   },
   "registration": {
    "rule": "no",
@@ -844,7 +854,10 @@
    "source": "https://www.sos.la.gov/elections-voting/election-dates",
    "quote": "The deadline to register to vote in person, by mail, or at an OMV Office is October 5. The deadline to register to vote through the GeauxVote Online Registration System is October 13."
   },
-  "selfie": null,
+  "selfie": {
+   "source": "https://www.legis.la.gov/Legis/Law.aspx?d=726742",
+   "checked": "2026-10-28"
+  },
   "notes": "Nov. 3, 2026 in Louisiana is the U.S. Senate general and the open primary for several offices; a December 12, 2026 election follows for some races. Polls open at 6 a.m. for Tuesday elections and 7 a.m. for Saturday elections. The ID quote omits a middle clause about getting a free special ID card at the OMV. Selfie: NCSL cites La. R.S. 18:1461.7 (a voter may not allow a ballot to be seen) and news reports cite R.S. 18:1461.3 on recording devices, with conflicting SOS statements over the years; I could not open either section on legis.la.gov or find current SOS guidance, so this is null."
  },
  "ME": {
@@ -890,7 +903,8 @@
    "rule": "no_id",
    "summary": "Most voters don't show ID. Some first-time voters will be asked for ID, such as a Maryland driver's license, student ID, or a utility bill.",
    "source": "https://elections.maryland.gov/voting/election_day_questions.html",
-   "quote": "Some first time voters in Maryland will be asked to show ID before voting."
+   "quote": "Some first time voters in Maryland will be asked to show ID before voting.",
+   "checked": "2026-10-28"
   },
   "registration": {
    "rule": "yes",
@@ -903,7 +917,8 @@
    "rule": "allowed",
    "summary": "You may photograph your own marked ballot before casting it, for personal use. Otherwise, phones and cameras can't be used in polling places except for a few reasons.",
    "source": "https://elections.maryland.gov/voting/election_day_questions.html",
-   "quote": "You cannot use your cell phone, pager, camera, and computer equipment in an early voting center or at a polling place except to ... record a digital image of your marked ballot prior to casting for personal use."
+   "quote": "You cannot use your cell phone, pager, camera, and computer equipment in an early voting center or at a polling place except to ... record a digital image of your marked ballot prior to casting for personal use.",
+   "checked": "2026-10-28"
   },
   "notes": "Deadline quote: 'For the 2026 Gubernatorial General Election, the advanced deadline to register to vote and update your information is Tuesday, October 13, 2026' (Election Day Questions page). Selfie: the State Board allows a photo of your own marked ballot 'for personal use'; it doesn't say whether posting it publicly counts, so a stricter reader might call this 'limited.' The underlying rule is in COMAR/Election Law, not checked directly."
  },
@@ -1064,8 +1079,9 @@
    "open": "County elections offices: 7 a.m.",
    "close": "8 p.m. (drop box and in-person return deadline)",
    "summary": "Oregon votes by mail. Return your ballot to a drop box or county elections office by 8 p.m. on Election Day, or mail it postmarked by Election Day; it counts if it arrives within 7 days. County offices are open 7 a.m. to 8 p.m. on Election Day.",
-   "source": "https://sos.oregon.gov/elections/Pages/faq.aspx",
-   "quote": "Ballots that are mailed must be postmarked by Election Day. Ballots that are postmarked by Election Day can be received by local elections offices up to 7 days after Election Day and be counted."
+   "source": "https://apps.oregon.gov/oregon-newsroom/OR/SOS/Posts/Post/last-recommended-day-to-mail-ballots-october-27",
+   "quote": "Ballots that are mailed must be postmarked by Election Day. Ballots that are postmarked by Election Day can be received by local elections offices up to 7 days after Election Day and be counted.",
+   "checked": "2026-10-28"
   },
   "id": {
    "rule": "no_id",
@@ -1256,7 +1272,8 @@
    "rule": "limited",
    "summary": "You may not use a phone where voting happens or record images within 100 feet of a voting station, so no ballot selfies at the polls.",
    "source": "https://statutes.capitol.texas.gov/Docs/EL/htm/EL.61.htm",
-   "quote": "A person may not use any mechanical or electronic means of recording images or sound within 100 feet of a voting station."
+   "quote": "A person may not use any mechanical or electronic means of recording images or sound within 100 feet of a voting station.",
+   "checked": "2026-10-28"
   },
   "notes": "Statute page read in Chrome (Texas Election Code 61.014). Supporting-ID alternatives for the Reasonable Impediment Declaration also include a utility bill, bank statement, or birth certificate (not quoted). Texas does not offer full online registration (general knowledge, not verified)."
  },
@@ -1352,14 +1369,16 @@
    "open": "Voting centers open 18 days before Election Day",
    "close": "8 p.m. on Election Day",
    "summary": "Washington votes by mail. Put your ballot in an official drop box by 8 p.m. on Election Day, or mail it with a postmark dated on or before Election Day; mailing a week early is recommended. Voting centers stay open until 8 p.m.",
-   "source": "https://app.leg.wa.gov/RCW/default.aspx?cite=29A.60.190",
-   "quote": "each ballot bearing a postmark on or before the date of the special election, general election, primary, or presidential primary and received no later than the day before certification, must be included in the canvass report."
+   "source": "https://www.sos.wa.gov/about-office/news/2026/still-need-return-your-ballot-consider-using-ballot-drop-box",
+   "quote": "each ballot bearing a postmark on or before the date of the special election, general election, primary, or presidential primary and received no later than the day before certification, must be included in the canvass report.",
+   "checked": "2026-10-28"
   },
   "id": {
    "rule": "no_id",
    "summary": "Washington votes by mail and checks signatures rather than ID. At a voting center, staff compare your signature or check ID before you use an accessible voting unit.",
-   "source": "https://www.sos.wa.gov/elections/voters/helpful-information/frequently-asked-questions-about-elections",
-   "quote": "The county auditor must either compare the voter’s signature or check identification before voters may use these units."
+   "source": "https://app.leg.wa.gov/RCW/default.aspx?cite=29A.40.160",
+   "quote": "The county auditor must either compare the voter’s signature or check identification before voters may use these units.",
+   "checked": "2026-10-28"
   },
   "registration": {
    "rule": "yes",

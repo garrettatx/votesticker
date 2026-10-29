@@ -47,12 +47,13 @@
    "status": "verified"
   },
   "early_hours": {
-   "en": "Early voting sites opened October 5, and vote centers in Voter's Choice Act counties open October 24. Each county sets its hours.",
-   "es": "Los lugares de votación anticipada abrieron el 5 de octubre, y los centros de votación de los condados de la Voter's Choice Act abren el 24 de octubre. Cada condado fija su horario.",
-   "src": "https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026/key-dates-deadlines",
-   "checked": "2026-10-23",
-   "quote": "Early Voting sites open October 5, 2026",
-   "status": "verified"
+   "en": "Early voting sites opened October 5, and the first vote centers opened October 24 in the 30 Voter's Choice Act counties. More in-person voting locations open across the state on Saturday, October 31. Each county sets its hours.",
+   "es": "Los centros de votación anticipada abrieron el 5 de octubre, y los primeros centros de votación (vote centers) abrieron el 24 de octubre en los 30 condados del Voter's Choice Act. Más lugares de votación en persona abren en todo el estado el sábado 31 de octubre. Cada condado fija sus horarios.",
+   "src": "https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026",
+   "checked": "2026-10-28",
+   "quote": "The first vote centers opened for early in-person voting in all Voter’s Choice Act counties on October 24. In-person early voting locations throughout California will be open on Saturday, October 31.",
+   "status": "verified",
+   "notes": "Oct 5 is from the key dates page ('Early Voting sites open October 5, 2026'). '30 counties' is from SOS release PR26-132 (Oct 24, 2026). PR26-132 says more vote centers open 'four days before' Election Day, which would be Oct 30; the election page says Oct 31. The copy uses Oct 31 from the election page and doesn't give the four-day figure."
   },
   "cure": {
    "en": "Forgot to sign your ballot envelope, or your signature doesn't match? Your county must receive the signature statement by 5 p.m. on Wednesday, November 25, 2026.",
@@ -124,12 +125,13 @@
  },
  "mail": {
   "who": {
-   "en": "Every active registered voter gets a ballot in the mail with a postage-paid return envelope. Didn't get yours, or it got lost or damaged? Ask your county elections office for a replacement by phone, email or fax.",
-   "es": "Cada votante registrado activo recibe una boleta por correo con un sobre de devolución con porte pagado. ¿No te llegó, o se perdió o se dañó? Pide una de reemplazo a la oficina electoral de tu condado por teléfono, correo electrónico o fax.",
-   "src": "https://elections.cdn.sos.ca.gov/pdfs/quick-facts-2026-general.pdf",
-   "checked": "2026-10-21",
-   "quote": "All active registered voters will be mailed a ballot for the November 3, 2026, General Election.",
-   "status": "verified"
+   "en": "Every active registered voter gets a ballot in the mail with a postage-paid return envelope. Didn't get yours, or it got lost or damaged? In the 30 Voter's Choice Act counties, any vote center in your county can give you a replacement ballot. In other counties, ask your county elections office.",
+   "es": "Todo votante registrado activo recibe una boleta por correo con un sobre de devolución con franqueo pagado. ¿No te llegó, o se perdió o se dañó? En los 30 condados del Voter's Choice Act, cualquier centro de votación (vote center) de tu condado te puede dar una boleta de reemplazo. En los demás condados, pídela a la oficina electoral de tu condado.",
+   "src": "https://www.sos.ca.gov/administration/news-releases-and-advisories/2026-news-releases-and-advisories/california-secretary-state-shirley-n-weber-phd-announces-vote-centers-are-now-open-30-california-counties-1",
+   "checked": "2026-10-28",
+   "quote": "Vote centers are open ahead of Election Day to allow voters to vote in person, get a replacement ballot, register and vote the same day, or drop off their completed ballots.",
+   "status": "verified",
+   "notes": "Mailed-ballot and county replacement lines are in the SOS Quick Facts PDF ('All active registered voters will be mailed a ballot'; 'You may also request a replacement ballot from your county elections office by phone, email, fax, or other electronic means'). Perplexity's Oct 27 replacement-by-mail date was not found on an official page."
   },
   "witness": {
    "en": "Sign and date the outside of the return envelope, with a signature that matches your California driver's license, state ID or registration. Can't return it yourself? Fill out the authorization on the envelope and anyone can take it in for you, as long as they aren't paid per ballot.",
@@ -187,8 +189,8 @@
    "en_after": "For the November 3, 2026 election, Santa Clara County mailed one of six student-designed I Voted stickers, picked by more than 10,000 public votes from 203 entries, in more than one million vote-by-mail packets, and handed all six out at its Vote Centers.",
    "es_after": "Para la elección del 3 de noviembre de 2026, el condado de Santa Clara envió uno de seis stickers I Voted diseñados por estudiantes, elegidos con más de 10,000 votos del público entre 203 diseños, en más de un millón de paquetes de voto por correo, y repartió los seis en sus centros de votación (Vote Centers).",
    "src": "https://vote.santaclaracounty.gov/santa-clara-county-announces-winners-first-ever-i-voted-sticker-design-contest",
-   "checked": "2026-10-26",
-   "quote": "Beginning in October, more than one million registered voters will receive one of the six winning stickers in their Vote by Mail packets for the November 3rd General Election.",
+   "checked": "2026-10-28",
+   "quote": "The ROV received 203 submissions and selected 30 finalists for a public online vote. More than 10,000 votes were cast to help select the winning designs. ... Beginning in October, more than one million registered voters will receive one of the six winning stickers in their Vote by Mail packets for the November 3rd General Election. All six designs will also be available to voters casting their ballots in person at Santa Clara County Vote Centers.",
    "notes": "Release dated July 28, 2026. ROV received 203 submissions, 30 finalists, more than 10,000 public votes; six winners across elementary/middle, high school and college/trade school. Read in Chrome (curl gets a 403).",
    "status": "verified"
   },
