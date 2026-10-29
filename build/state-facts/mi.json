@@ -40,7 +40,7 @@
   },
   "mail_return": {
    "en": "Your local clerk must receive it by 8 p.m. on Tuesday, November 3, 2026. A postmark isn't enough, so this close to Election Day use a drop box or your clerk's office instead of the mail. Military and overseas ballots count if they're postmarked by Election Day and arrive within 6 days after.",
-   "es": "Tu secretario local (clerk) debe recibirla a más tardar a las 8 p. m. del martes 3 de noviembre de 2026. El matasellos no basta, así que a estas alturas usa un buzón de entrega o la oficina de tu secretario en vez del correo. Las boletas de militares y de votantes en el extranjero cuentan si tienen matasellos a más tardar del Día de las Elecciones y llegan dentro de los 6 días siguientes.",
+   "es": "Tu secretario local (clerk) debe recibirla a más tardar a las 8 p. m. del martes 3 de noviembre de 2026. El matasellos no basta, así que a estas alturas usa un buzón de entrega o la oficina de tu secretario en vez del correo. Las boletas de militares y de votantes en el extranjero cuentan si tienen matasellos del Día de las Elecciones o antes y llegan dentro de los 6 días siguientes.",
    "src": "https://www.michigan.gov/sos/elections/voting/absentee-voting",
    "checked": "2026-10-28",
    "quote": "Absentee ballots must be received by a voter's local clerk's office by 8 p.m. on Election Day to be counted, with the exception of military and overseas ballots which must be postmarked on or before Election Day and received by their local clerk within 6 days after the election in order to be counted.",
@@ -78,7 +78,7 @@
   },
   "first_time": {
    "en": "New to Michigan, or moved? Go to your city or township clerk's office with proof of residency, like a utility bill or bank statement, to register. You can vote an absentee ballot right there, or head to your polling place if there's time. If you're in line at the clerk's office by 8 p.m. on Election Day, you can still register and vote.",
-   "es": "¿Eres nuevo en Michigan o te mudaste? Ve a la oficina del secretario de tu ciudad o municipio (clerk) con un comprobante de domicilio, como un recibo de servicios o un estado de cuenta bancario, para registrarte. Ahí mismo puedes votar con una boleta de voto en ausencia, o ir a tu lugar de votación si te da tiempo. Si estás en la fila de la oficina del secretario a las 8 p. m. del Día de las Elecciones, todavía puedes registrarte y votar.",
+   "es": "¿Acabas de llegar a Michigan o te mudaste? Ve a la oficina del secretario de tu ciudad o municipio (clerk) con un comprobante de domicilio, como un recibo de servicios o un estado de cuenta bancario, para registrarte. Ahí mismo puedes votar con una boleta de voto en ausencia, o ir a tu lugar de votación si te da tiempo. Si estás en la fila de la oficina del secretario a las 8 p. m. del Día de las Elecciones, todavía puedes registrarte y votar.",
    "src": "https://www.michigan.gov/sos/elections/voting/vote-on-election-day",
    "checked": "2026-10-28",
    "quote": "To vote, they may either request an absentee ballot and vote at their clerk's office or go to their polling place to vote if time allows. So long as an eligible, unregistered resident is in line at their clerk's office by 8 p.m., they may register to vote and cast an absentee ballot.",

@@ -26,13 +26,13 @@
   },
   "votegulf.gov": {
    "en": "the Gulf County Supervisor of Elections",
-   "es": "la oficina del supervisor electoral del condado de Gulf (Supervisor of Elections)"
+   "es": "la oficina del Supervisor de Elecciones del condado de Gulf (Supervisor of Elections)"
   }
  },
  "dates": {
   "reg_deadline": {
    "en": "Registration closed Monday, October 5, 2026. One exception: if you, or a family member who came with you, left the military or the Merchant Marine, came back from a military deployment, or left a job outside the U.S. after October 5, you can still register in person at your Supervisor of Elections office until 5 p.m. on Friday, October 30. Bring papers that show it.",
-   "es": "El registro cerró el lunes 5 de octubre de 2026. Hay una excepción: si tú, o un familiar que vino contigo, dejaste el servicio militar o la Marina Mercante, regresaste de un despliegue militar o dejaste un trabajo fuera de EE. UU. después del 5 de octubre, todavía puedes registrarte en persona en la oficina del supervisor electoral (Supervisor of Elections) hasta las 5 p. m. del viernes 30 de octubre. Lleva documentos que lo demuestren.",
+   "es": "El registro cerró el lunes 5 de octubre de 2026. Hay una excepción: si tú, o un familiar que vino contigo, dejaste el servicio militar o la Marina Mercante, regresaste de un despliegue militar o dejaste un trabajo fuera de EE. UU. después del 5 de octubre, todavía puedes registrarte en persona en la oficina del Supervisor de Elecciones (Supervisor of Elections) hasta las 5 p. m. del viernes 30 de octubre. Lleva documentos que lo demuestren.",
    "src": "https://www.flsenate.gov/Laws/Statutes/2026/97.0555",
    "checked": "2026-10-28",
    "quote": "An individual or accompanying family member who has been discharged or separated from the uniformed services or the United States Merchant Marine, has returned from a military deployment or activation, or has separated from employment outside the territorial limits of the United States, after the book-closing date for an election pursuant to s. 97.055 and who is otherwise qualified may register to vote in such election until 5 p.m. on the Friday before that election in the office of the supervisor of elections.",
@@ -63,7 +63,7 @@
   },
   "early_hours": {
    "en": "Every county offers early voting through Saturday, October 31. Some counties add days, as late as Sunday, November 1. Each site is open at least 8 and no more than 12 hours a day. Check your county Supervisor of Elections for exact days and hours.",
-   "es": "Todos los condados ofrecen votación anticipada hasta el sábado 31 de octubre. Algunos condados agregan días, hasta el domingo 1 de noviembre. Cada centro abre por lo menos 8 y no más de 12 horas al día. Consulta al supervisor electoral de tu condado (Supervisor of Elections) para los días y horarios exactos.",
+   "es": "Todos los condados ofrecen votación anticipada hasta el sábado 31 de octubre. Algunos condados agregan días, hasta el domingo 1 de noviembre. Cada centro abre por lo menos 8 y no más de 12 horas al día. Consulta al Supervisor de Elecciones de tu condado (Supervisor of Elections) para los días y horarios exactos.",
    "src": "https://dos.fl.gov/elections/for-voters/voting/early-voting-and-secure-ballot-intake-stations/",
    "checked": "2026-10-28",
    "quote": "At a minimum, early voting must be offered starting on the 10 th day before the election and ending on the 3 rd day before the election. Supervisors of Elections may offer more days starting as early as the 15 th day before the election and ending on the 2 nd day before an election. Early voting must hours must be at least 8 hours a day but no more than 12 hours per day at each site during the applicable period.",
@@ -100,7 +100,7 @@
   "local_offices_url": "https://dos.fl.gov/elections/contacts/supervisor-of-elections/",
   "rule": {
    "en": "Pick your county on the state's Voter Precinct Lookup page to find your Election Day polling place. Moved within your county? You can update your address at your new precinct and vote there. Moved from another Florida county? Some counties let you do the same; elsewhere you vote a provisional ballot, so call your Supervisor of Elections first.",
-   "es": "Elige tu condado en la página Voter Precinct Lookup del estado para encontrar tu lugar de votación del Día de las Elecciones. ¿Te mudaste dentro de tu condado? Puedes actualizar tu dirección en tu nuevo precinto y votar ahí. ¿Te mudaste desde otro condado de Florida? Algunos condados te dejan hacer lo mismo; en los demás votas con una boleta provisional, así que llama primero al supervisor electoral (Supervisor of Elections).",
+   "es": "Elige tu condado en la página Voter Precinct Lookup del estado para encontrar tu lugar de votación del Día de las Elecciones. ¿Te mudaste dentro de tu condado? Puedes actualizar tu dirección en tu nuevo precinto y votar ahí. ¿Te mudaste desde otro condado de Florida? Algunos condados te dejan hacer lo mismo; en los demás votas con una boleta provisional, así que llama primero al Supervisor de Elecciones (Supervisor of Elections).",
    "src": "https://www.flsenate.gov/Laws/Statutes/2026/101.045",
    "checked": "2026-10-28",
    "quote": "An elector who moves from the precinct in which the elector is registered may vote in the precinct to which he or she has moved his or her legal residence, if the change of residence is within the same county or the precinct to which the elector has moved his or her legal residence is within a county that uses an electronic database as a precinct register at the polling place, and the elector completes an affirmation",
@@ -183,7 +183,7 @@
   "track_url": "https://dos.fl.gov/elections/for-voters/check-your-voter-status-and-polling-place/vote-by-mail-ballot-information-and-status-lookup/",
   "cure": {
    "en": "Signature missing or doesn't match? Your Supervisor of Elections will let you know. Send back a Vote-by-Mail Ballot Cure Affidavit with a copy of your ID by 5 p.m. local time on Thursday, November 5, the second day after the election. You can return it by mail, email, fax or in person.",
-   "es": "¿Falta tu firma o no coincide? El supervisor electoral (Supervisor of Elections) te avisará. Devuelve la declaración jurada para corregir tu boleta por correo (Vote-by-Mail Ballot Cure Affidavit) con una copia de tu identificación a más tardar a las 5 p. m., hora local, del jueves 5 de noviembre, el segundo día después de la elección. Puedes devolverla por correo, email, fax o en persona.",
+   "es": "¿Falta tu firma o no coincide? El Supervisor de Elecciones (Supervisor of Elections) te avisará. Devuelve la declaración jurada para corregir tu boleta por correo (Vote-by-Mail Ballot Cure Affidavit) con una copia de tu identificación a más tardar a las 5 p. m., hora local, del jueves 5 de noviembre, el segundo día después de la elección. Puedes devolverla por correo, email, fax o en persona.",
    "src": "https://dos.fl.gov/elections/for-voters/voting/vote-by-mail/",
    "checked": "2026-10-28",
    "quote": "The form and copy of the ID can be returned by mail, email, fax, or in person. The deadline to submit the form and the ID is no later than 5 p.m. (local time) on the 2nd day after an election.",
@@ -231,7 +231,7 @@
  "sticker": {
   "tradition": {
    "en": "Some Florida counties pick their stickers in student contests. In Sarasota County, a seventh grader's pink flamingo, chosen from more than 175 student entries, is the sticker for November 3, offered to everyone who votes by mail, early or on Election Day.",
-   "es": "Algunos condados de Florida eligen sus stickers en concursos para estudiantes. En el condado de Sarasota, un flamenco rosa dibujado por un estudiante de séptimo grado, elegido entre más de 175 propuestas, es el sticker del 3 de noviembre, y se le ofrece a todo el que vote por correo, por anticipado o el Día de las Elecciones.",
+   "es": "Algunos condados de Florida eligen sus stickers en concursos para estudiantes. En el condado de Sarasota, un flamenco rosa dibujado por un estudiante de séptimo grado, elegido entre más de 175 propuestas, es el sticker del 3 de noviembre, y se le ofrece a toda persona que vote por correo, por anticipado o el Día de las Elecciones.",
    "src": "https://www.sarasotavotes.gov/CivicAlerts.aspx?AID=31",
    "checked": "2026-10-21",
    "quote": "This year, a pink flamingo is at the center of the sticker, and I think the voters are going to love this design as much as they did the previous one.",
@@ -247,7 +247,7 @@
   },
   "mail": {
    "en": "In Sarasota County, yes. The Supervisor of Elections says anyone who votes by mail will be offered the county's 2026 \"I Voted\" sticker, the pink flamingo design. Ask the Supervisor of Elections office how to get yours.",
-   "es": "En el condado de Sarasota, sí. El Supervisor de Elecciones (Supervisor of Elections) dice que a todo el que vote por correo se le ofrecerá el sticker de \"I Voted\" de 2026 del condado, el del flamenco rosa. Pregunta en la oficina del Supervisor de Elecciones cómo conseguir el tuyo.",
+   "es": "En el condado de Sarasota, sí. El Supervisor de Elecciones (Supervisor of Elections) dice que a toda persona que vote por correo se le ofrecerá el sticker de \"I Voted\" de 2026 del condado, el del flamenco rosa. Pregunta en la oficina del Supervisor de Elecciones cómo conseguir el tuyo.",
    "src": "https://www.sarasotavotes.gov/CivicAlerts.aspx?AID=31",
    "checked": "2026-10-28",
    "quote": "Anyone who votes by mail (absentee), early in-person or on election day will be offered an “I Voted” sticker.",

@@ -163,10 +163,10 @@
    ],
    "es": [
     "vas a estar fuera del área de tu autoridad electoral el Día de las Elecciones",
-    "una enfermedad o una discapacidad física te impide ir a votar, o eres el cuidador principal de alguien en tu domicilio en esa situación",
+    "una enfermedad o una discapacidad física te impide ir a votar, o eres la persona que principalmente cuida a alguien en tu domicilio en esa situación",
     "tus creencias o prácticas religiosas",
-    "trabajas para una autoridad electoral en un lugar distinto a tu lugar de votación, o eres socorrista, trabajador de la salud o agente de la ley",
-    "estás encarcelado pero todavía cumples los requisitos para votar",
+    "trabajas para una autoridad electoral en un lugar distinto a tu lugar de votación, o trabajas como socorrista, en servicios de salud o en las fuerzas del orden",
+    "estás en prisión pero todavía cumples los requisitos para votar",
     "participas, con certificación, en el programa de confidencialidad de domicilio de Missouri por razones de seguridad"
    ],
    "src": "https://revisor.mo.gov/main/OneSection.aspx?section=115.277",
@@ -267,7 +267,7 @@
   },
   "late_mail": {
    "en": "The postmark doesn't count in Missouri. Your election office must have your ballot by 7 p.m. on Election Day, and there are no drop boxes. In the last days, bring it in yourself or have a relative the law allows bring it.",
-   "es": "En Missouri el matasellos no cuenta. Tu oficina electoral debe tener tu boleta a más tardar a las 7 p. m. del Día de las Elecciones, y no hay buzones de entrega. En los últimos días, entrégala tú o pide a un familiar que la ley permite que la entregue.",
+   "es": "En Missouri el matasellos no cuenta. Tu oficina electoral debe tener tu boleta a más tardar a las 7 p. m. del Día de las Elecciones, y no hay buzones de entrega. En los últimos días, entrégala tú o pide que la entregue un familiar autorizado por la ley.",
    "src": "https://revisor.mo.gov/main/OneSection.aspx?section=115.291",
    "checked": "2026-10-28",
    "quote": "shall only be returned by the voter in person, or in person by a relative of the voter who is within the second degree of consanguinity or affinity, by mail or registered carrier or by a team of deputy election authorities ... No absentee ballot shall be delivered through a drop box",

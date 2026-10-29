@@ -54,7 +54,7 @@
    "status": "verified",
    "until": "2026-10-27",
    "en_after": "Your ballot must reach your county election office or a polling place in your county by 8 p.m. on Tuesday, November 3, 2026. A postmark doesn't count. With less than a week to go, drop it off in person.",
-   "es_after": "Tu boleta debe llegar a la oficina electoral de tu condado o a un lugar de votación de tu condado a más tardar a las 8 p. m. del martes 3 de noviembre de 2026. El matasellos no cuenta. Con menos de una semana, mejor entrégala en persona."
+   "es_after": "Tu boleta debe llegar a la oficina electoral de tu condado o a un lugar de votación de tu condado a más tardar a las 8 p. m. del martes 3 de noviembre de 2026. El matasellos no cuenta. A menos de una semana de la elección, mejor entrégala en persona."
   },
   "early_hours": {
    "status": "missing",
@@ -220,7 +220,7 @@
  "faq": {
   "provisional": {
    "en": "You vote a provisional ballot if you can't show the required ID, your name isn't in the register, or your registration can't be confirmed at the polls. Get your ID or eligibility information to your county by 5 p.m. the day after the election. By mail, it must be postmarked by then and arrive by 3 p.m. on Monday, November 9. It counts once your county verifies you.",
-   "es": "Votas con una boleta provisional si no puedes mostrar la identificación requerida, si tu nombre no está en el registro o si no pueden confirmar tu registro en el lugar de votación. Haz llegar tu identificación o tus datos de elegibilidad a tu condado a más tardar a las 5 p. m. del día siguiente a la elección. Por correo, debe tener matasellos de esa hora y llegar a más tardar a las 3 p. m. del lunes 9 de noviembre. Se cuenta cuando tu condado te verifique.",
+   "es": "Votas con una boleta provisional si no puedes mostrar la identificación requerida, si tu nombre no está en el registro o si no pueden confirmar tu registro en el lugar de votación. Haz llegar tu identificación o tus datos de elegibilidad a tu condado a más tardar a las 5 p. m. del día siguiente a la elección. Por correo, debe tener matasellos de esa fecha o antes y llegar a más tardar a las 3 p. m. del lunes 9 de noviembre. Se cuenta cuando tu condado te verifique.",
    "src": "https://mca.legmt.gov/bills/mca/title_0130/chapter_0150/part_0010/section_0070/0130-0150-0010-0070.html",
    "checked": "2026-10-28",
    "quote": "(a) verified before 5 p.m. on the day after the election; or (b) postmarked by 5 p.m. on the day after election day and received and verified by 3 p.m. on the sixth day after the election.",

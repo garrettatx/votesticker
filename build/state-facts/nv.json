@@ -123,7 +123,7 @@
   },
   "without": {
    "en": "If you're asked for ID and don't have it, you can vote a provisional ballot. To have it counted, give the ID to your county clerk by 5 p.m. on Friday, November 6, 2026.",
-   "es": "Si te piden una identificación y no la tienes, puedes votar con una boleta provisional. Para que cuente, entrega la identificación a la secretaría de tu condado (county clerk) a más tardar a las 5 p. m. del viernes 6 de noviembre de 2026.",
+   "es": "Si te piden una identificación y no la tienes, puedes votar con una boleta provisional. Para que cuente, entrega la identificación al secretario de tu condado (county clerk) a más tardar a las 5 p. m. del viernes 6 de noviembre de 2026.",
    "src": "https://www.leg.state.nv.us/nrs/nrs-293.html",
    "checked": "2026-10-28",
    "quote": "A voter who failed to provide required identification at the polling place or with his or her mailed ballot provides the required identification to the county or city clerk not later than 5 p.m. on the Friday following election day",
@@ -151,7 +151,7 @@
   "track_url": "https://myballot.nv.gov/",
   "cure": {
    "en": "If you didn't sign, or your signature doesn't match, your county clerk will contact you by mail, by phone if they have your number, and by email if you gave it. Fix it by 5 p.m. on Monday, November 9. The Secretary of State's Signature Cure page links to each county's online cure tool.",
-   "es": "Si no firmaste, o tu firma no coincide, la secretaría de tu condado se comunicará contigo por correo, por teléfono si tiene tu número y por correo electrónico si lo diste. Corrígelo a más tardar a las 5 p. m. del lunes 9 de noviembre. La página de corrección de firmas (Signature Cure) de la Secretaría de Estado tiene el enlace a la herramienta en línea de cada condado.",
+   "es": "Si no firmaste, o tu firma no coincide, el secretario de tu condado se comunicará contigo por correo, por teléfono si tiene tu número y por correo electrónico si lo diste. Corrígelo a más tardar a las 5 p. m. del lunes 9 de noviembre. La página de corrección de firmas (Signature Cure) de la Secretaría de Estado tiene el enlace a la herramienta en línea de cada condado.",
    "src": "https://www.nvsos.gov/elections/election-information/2026-election-information/signature-cure",
    "checked": "2026-10-28",
    "quote": "Select your county below to access the approved online signature cure resource. The deadline to cure a mail ballot for the November 3, 2026, General Election is by 5 p.m. PT, November 9, 2026.",
@@ -160,7 +160,7 @@
   },
   "dropbox": {
    "en": "Every early voting site and Election Day polling place takes mail ballots, but only while it's open. You can drop your ballot at any official drop box in your county until polls close at 7 p.m. on Election Day. Check your county's list for each location's hours.",
-   "es": "Todos los lugares de votación anticipada y del Día de las Elecciones reciben boletas por correo, pero solo mientras están abiertos. Puedes dejar tu boleta en cualquier buzón oficial de tu condado hasta que cierren los lugares de votación, a las 7 p. m. del Día de las Elecciones. Revisa la lista de tu condado para ver el horario de cada lugar.",
+   "es": "Todos los lugares de votación anticipada y del Día de las Elecciones reciben boletas por correo, pero solo mientras están abiertos. Puedes dejar tu boleta en cualquier buzón de entrega oficial de tu condado hasta que cierren los lugares de votación, a las 7 p. m. del Día de las Elecciones. Revisa la lista de tu condado para ver el horario de cada lugar.",
    "src": "https://www.nvsos.gov/elections/election-information/2026-election-information",
    "checked": "2026-10-28",
    "quote": "Ballots can also be dropped off at any official dropbox in your county up to the close of polls on Election Day.",
@@ -217,7 +217,7 @@
  "faq": {
   "provisional": {
    "en": "It's a ballot you vote when something can't be confirmed at the polls. Your county clerk counts it after checking that you're registered and eligible. If it was for missing ID, give the ID to the clerk by 5 p.m. on Friday, November 6.",
-   "es": "Es una boleta con la que votas cuando algo no se puede confirmar en el lugar de votación. La secretaría de tu condado la cuenta después de revisar que estás registrado y que puedes votar. Si fue por falta de identificación, entrega la identificación a la secretaría a más tardar a las 5 p. m. del viernes 6 de noviembre.",
+   "es": "Es una boleta con la que votas cuando algo no se puede confirmar en el lugar de votación. El secretario de tu condado la cuenta después de revisar que estás registrado y que puedes votar. Si fue por falta de identificación, entrega la identificación al secretario a más tardar a las 5 p. m. del viernes 6 de noviembre.",
    "src": "https://www.leg.state.nv.us/nrs/nrs-293.html",
    "checked": "2026-10-28",
    "quote": "The county or city clerk determines that the person who cast the provisional ballot was registered to vote in the election, eligible to vote in the election and issued the appropriate ballot for the address at which the person resides",
@@ -241,7 +241,7 @@
   },
   "unsigned": {
    "en": "Your county clerk will contact you by mail, and by phone or email if they have them, so you can sign. Do it by 5 p.m. on Monday, November 9, or your ballot won't count. Your county's online cure tool is linked from the Secretary of State's Signature Cure page.",
-   "es": "La secretaría de tu condado se comunicará contigo por correo, y por teléfono o correo electrónico si los tiene, para que firmes. Hazlo a más tardar a las 5 p. m. del lunes 9 de noviembre, o tu boleta no contará. La herramienta en línea de tu condado está en la página de corrección de firmas (Signature Cure) de la Secretaría de Estado.",
+   "es": "El secretario de tu condado se comunicará contigo por correo, y por teléfono o correo electrónico si los tiene, para que firmes. Hazlo a más tardar a las 5 p. m. del lunes 9 de noviembre, o tu boleta no contará. La herramienta en línea de tu condado está en la página de corrección de firmas (Signature Cure) de la Secretaría de Estado.",
    "src": "https://www.leg.state.nv.us/nrs/nrs-293.html",
    "checked": "2026-10-28",
    "quote": "For the mail ballot to be counted, the voter must provide a signature or a confirmation, as applicable, not later than 5 p.m. on the sixth day following the election.",

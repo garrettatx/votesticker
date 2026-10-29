@@ -50,7 +50,7 @@
    "status": "verified",
    "until": "2026-10-26",
    "en_after": "Drop box or voter center: by 7 p.m. on Tuesday, November 3. Don't mail it now. Take it in your signed envelope to a drop box or voter center. A postmark doesn't count. Military and overseas voters have a later deadline.",
-   "es_after": "Buzón o centro de votación: a más tardar a las 7 p. m. del martes 3 de noviembre. Ya no la mandes por correo. Llévala en tu sobre firmado a un buzón o a un centro de votación. El matasellos no cuenta. Los votantes militares y en el extranjero tienen una fecha límite más tarde."
+   "es_after": "Buzón o centro de votación: a más tardar a las 7 p. m. del martes 3 de noviembre. Ya no la mandes por correo. Llévala en tu sobre firmado a un buzón o a un centro de votación. El matasellos no cuenta. Los votantes militares y en el extranjero tienen una fecha límite posterior."
   },
   "early_hours": {
    "en": "Voter service and polling centers are open for in-person voting through 7 p.m. on Election Day, but each location sets its own days and hours. Look yours up at GoVoteColorado.gov before you go.",
@@ -198,7 +198,7 @@
   },
   "phone": {
    "en": "Colorado law lets you show your own voted ballot to anyone, including in a photo you post, as long as it isn't part of an election crime. That covers a mail ballot at home. At a voter center, the county clerk can limit photos, so ask an election judge before you take one there.",
-   "es": "La ley de Colorado te permite mostrar tu propia boleta votada a cualquier persona, también en una foto que publiques, siempre que no sea parte de un delito electoral. Eso incluye una boleta por correo en casa. En un centro de votación, la oficina electoral del condado (county clerk) puede limitar las fotos, así que pregunta a un juez electoral antes de tomar una ahí.",
+   "es": "La ley de Colorado te permite mostrar tu propia boleta votada a cualquier persona, también en una foto que publiques, siempre que no sea parte de un delito electoral. Eso incluye una boleta por correo en casa. En un centro de votación, el secretario del condado (county clerk) puede limitar las fotos, así que pregunta a un juez electoral antes de tomar una ahí.",
    "src": "https://leg.colorado.gov/sites/default/files/documents/2017A/bills/sl/2017a_sl_042.pdf",
    "checked": "2026-10-28",
    "quote": "ANY VOTER MAY SHOW HIS OR HER VOTED BALLOT TO ANY OTHER PERSON AS LONG AS THE DISCLOSURE IS NOT UNDERTAKEN IN FURTHERANCE OF ANY ELECTION VIOLATION PROSCRIBED IN THIS ARTICLE 13.",
@@ -226,7 +226,7 @@
   },
   "mail": {
    "en": "Sign up for BallotTrax. Once your ballot is accepted, it sends you the 2026 Blucifer \"I Voted\" digital sticker to share.",
-   "es": "Inscríbete en BallotTrax. Cuando acepten tu boleta, te envía el sticker digital de \"I Voted\" de Blucifer de 2026 para compartir.",
+   "es": "Inscríbete en BallotTrax. Cuando acepten tu boleta, BallotTrax te envía el sticker digital de \"I Voted\" de Blucifer de 2026 para compartir.",
    "src": "https://www.sos.state.co.us/pubs/newsRoom/pressReleases/2026/PR20261012StickerContest.html",
    "checked": "2026-10-28",
    "quote": "Voters who get updates via BallotTrax will receive this special Blucifer 'I Voted' digital sticker after their ballot has been accepted.",
@@ -234,7 +234,7 @@
   },
   "early": {
    "en": "In Garfield County, yes, while supplies last: a limited special edition \"I Voted\" sticker for the nation's 250th and Colorado's 150th anniversaries is at ballot drop boxes and vote centers.",
-   "es": "En el condado de Garfield, sí, mientras haya: un sticker especial de edición limitada de \"I Voted\" por los 250 años del país y los 150 de Colorado está en los buzones de entrega y los centros de votación.",
+   "es": "En el condado de Garfield, sí, mientras haya: en los buzones de entrega y los centros de votación hay un sticker especial de edición limitada de \"I Voted\" por los 250 años del país y los 150 de Colorado.",
    "src": "https://www.garfieldcountyco.gov/news/vote-and-return-both-ballot-pages-in-2026-general-election/",
    "checked": "2026-10-23",
    "quote": "available at ballot drop boxes and vote centers while supplies last",

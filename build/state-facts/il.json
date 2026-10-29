@@ -43,7 +43,7 @@
   },
   "mail_return": {
    "en": "Mail: postmarked by November 3 and received by Tuesday, November 17, 2026. Drop box or your election authority's office: by 7 p.m. on Tuesday, November 3. Not every election authority has drop boxes, so check yours and its hours.",
-   "es": "Por correo: con matasellos a más tardar del 3 de noviembre y recibida a más tardar el martes 17 de noviembre de 2026. En un buzón de entrega o en la oficina de tu autoridad electoral: a más tardar a las 7 p. m. del martes 3 de noviembre. No todas las autoridades electorales tienen buzones, así que revisa si la tuya tiene y su horario.",
+   "es": "Por correo: con matasellos del 3 de noviembre o antes y recibida a más tardar el martes 17 de noviembre de 2026. En un buzón de entrega o en la oficina de tu autoridad electoral: a más tardar a las 7 p. m. del martes 3 de noviembre. No todas las autoridades electorales tienen buzones, así que revisa si la tuya tiene y su horario.",
    "src": "https://www.elections.il.gov/NewDocDisplay.aspx?%2fM0cs48zOKVZyk9eAbpEoxjoGz9b5YaGlSMHdiy2iXFAjyfyuQAf7RuSHGhmj4krBXKBjMHMC1kXG9lGcteFHxJG77yV2o99NE75AqeL5DThKkCHpaEu2oLSuh20w3EwQdWH71Ci9K32uwKewIazRSajZGQBVzmfzwlOzw4whnSWC4%2fbXhBNlQ%3d%3d",
    "checked": "2026-10-21",
    "quote": "All ballots must be postmarked by Election Day and received by November 17, 2026",
@@ -98,7 +98,7 @@
   "local_offices_url": "https://www.elections.il.gov/ElectionOperations/ElectionAuthorities.aspx",
   "rule": {
    "en": "You can vote early at any site your election authority sets up. Your election authority is your county clerk, or a city or county board of election commissioners in places like Chicago. It posts early voting sites, dates and hours.",
-   "es": "Puedes votar por anticipado en cualquier centro que abra tu autoridad electoral. Tu autoridad electoral es la secretaría de tu condado (county clerk) o una junta de comisionados electorales de la ciudad o del condado (board of election commissioners), como en Chicago. Publica los centros, las fechas y los horarios de votación anticipada.",
+   "es": "Puedes votar por anticipado en cualquier centro que abra tu autoridad electoral. Tu autoridad electoral es la secretaría de tu condado (county clerk) o una junta de comisionados electorales de la ciudad o del condado (board of election commissioners), como en Chicago. Esa autoridad publica los centros, las fechas y los horarios de votación anticipada.",
    "src": "https://www.elections.il.gov/NewDocDisplay.aspx?%2fM0cs48zOKVZyk9eAbpEoxjoGz9b5YaGE%2bEuf7JVd2Tlx2Mybp2RbacEJVh848tnFOLoTd3G4cRsCxSj%2bcrL1MmhG9QsYgJ9e5wE4tKLgaaopDaaWmFheIeWqmvhmfkWslmarqW5C0xuwyDgFhSttQ%3d%3d",
    "checked": "2026-10-21",
    "quote": "Each election authority shall determine and publish a list of the locations, dates, and hours of each early voting site in their jurisdiction.",
@@ -146,7 +146,7 @@
   },
   "dropbox": {
    "en": "Some election authorities have drop boxes, and you don't need a stamp. Use one by 7 p.m. on Election Day, and check its hours first. The State Board of Elections keeps a drop box list. You can also hand your ballot in at your election authority's office by 7 p.m.",
-   "es": "Algunas autoridades electorales tienen buzones de entrega, y no necesitas estampilla. Úsalo a más tardar a las 7 p. m. del Día de las Elecciones, y revisa antes su horario. La Junta Electoral del Estado tiene una lista de buzones. También puedes entregar tu boleta en la oficina de tu autoridad electoral a más tardar a las 7 p. m.",
+   "es": "Algunas autoridades electorales tienen buzones de entrega, y no necesitas estampilla. Usa uno a más tardar a las 7 p. m. del Día de las Elecciones, y revisa antes su horario. La Junta Electoral del Estado tiene una lista de buzones. También puedes entregar tu boleta en la oficina de tu autoridad electoral a más tardar a las 7 p. m.",
    "src": "https://www.elections.il.gov/NewDocDisplay.aspx?%2fM0cs48zOKVZyk9eAbpEoxjoGz9b5YaGlSMHdiy2iXFAjyfyuQAf7RuSHGhmj4krBXKBjMHMC1kXG9lGcteFHxJG77yV2o99NE75AqeL5DThKkCHpaEu2oLSuh20w3EwQdWH71Ci9K32uwKewIazRSajZGQBVzmfzwlOzw4whnSWC4%2fbXhBNlQ%3d%3d",
    "checked": "2026-10-21",
    "quote": "These are available until 7pm on Election Day",

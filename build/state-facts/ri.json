@@ -166,7 +166,7 @@
   },
   "witness": {
    "en": "Seal your ballot in the certificate envelope, then sign and date it. Put that envelope in the return envelope. Can't sign your name? An assistant fills out the Voter Assistant Certification.",
-   "es": "Cierra tu boleta en el sobre de certificado (Voter's Mail Ballot Certificate Envelope), y fírmalo y ponle la fecha. Mete ese sobre en el sobre de devolución. ¿No puedes firmar? Una persona que te ayude llena la certificación de asistente (Voter Assistant Certification).",
+   "es": "Mete tu boleta en el sobre de certificado (Voter's Mail Ballot Certificate Envelope), ciérralo, fírmalo y ponle la fecha. Mete ese sobre en el sobre de devolución. ¿No puedes firmar? Una persona que te ayude llena la certificación de asistente (Voter Assistant Certification).",
    "src": "https://vote.sos.ri.gov/Forms/Elections/Guides/VoterRef26.pdf",
    "checked": "2026-10-28",
    "quote": "If you are unable to sign your name, an assistant must complete the Voter Assistant Certification. Place the Voter’s Mail Ballot Certificate Envelope into the Return Envelope.",

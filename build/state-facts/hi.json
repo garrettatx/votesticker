@@ -103,7 +103,7 @@
   },
   "without": {
    "en": "Voting in person in Honolulu? Bring an ID. A state driver's license or ID card or a passport works, and so does a current utility bill, bank statement, government check, government document or paycheck with your name and address. No ID? Staff will ask you more questions to confirm who you are, which takes longer.",
-   "es": "¿Vas a votar en persona en Honolulu? Lleva una identificación. Sirve una licencia de conducir o identificación estatal o un pasaporte, y también un recibo de servicios, estado de cuenta bancario, cheque del gobierno, documento del gobierno o talón de pago reciente con tu nombre y dirección. ¿No tienes? El personal te hará más preguntas para confirmar quién eres, y eso toma más tiempo.",
+   "es": "¿Vas a votar en persona en Honolulu? Lleva una identificación. Sirve una licencia de conducir o identificación estatal o un pasaporte, y también un recibo de servicios, estado de cuenta bancario, cheque del gobierno, documento del gobierno o talón de pago reciente con tu nombre y dirección. ¿No tienes identificación? El personal te hará más preguntas para confirmar quién eres, y eso toma más tiempo.",
    "src": "https://www.honolulu.gov/elections/voter-service-centers/",
    "checked": "2026-10-28",
    "quote": "To facilitate the voting process, please remember to bring an ID to the Voter Service Center. Acceptable forms of ID include: State issued drivers license; State issued identification card; Valid Passport; or a current utility bill, bank statement, government check, government document, or paycheck bearing your name and current address. ... If you do not have acceptable identification, we will ask you for additional information to confirm your identity. This process will take additional time.",
@@ -121,7 +121,7 @@
   },
   "witness": {
    "en": "Read the statement on your return envelope and sign it. Your ballot can't be counted without your signature. Can't sign on your own? Someone you're comfortable with can help and be your witness, but not your employer, your union agent or a candidate on the ballot.",
-   "es": "Lee la declaración del sobre de devolución y fírmalo. Tu boleta no se puede contar sin tu firma. ¿No puedes firmar por tu cuenta? Una persona de confianza puede ayudarte y ser tu testigo, pero no tu empleador, un agente de tu sindicato ni un candidato que aparezca en la boleta.",
+   "es": "Lee la declaración del sobre de devolución y fírmala. Tu boleta no se puede contar sin tu firma. ¿No puedes firmar por tu cuenta? Una persona de confianza puede ayudarte y ser tu testigo, pero no tu empleador, un agente de tu sindicato ni un candidato que aparezca en la boleta.",
    "src": "https://elections.hawaii.gov/wp-content/uploads/VoterGuide_2026_General_English.pdf",
    "checked": "2026-10-28",
    "quote": "You're permitted to ask someone you feel comfortable with to help read through your ballot, mark your choices, and be your witness if you cannot sign the return envelope independently. Your employer or your union agent is prohibited from helping. ... you are prohibited from receiving assistance from a candidate on the ballot, or your employer or union agent.",

@@ -141,7 +141,7 @@
  "mail": {
   "who": {
    "en": "Any eligible voter can vote absentee. No one gets a ballot without applying first. In vote-by-mail counties, the county auditor mails you the application.",
-   "es": "Cualquier votante con derecho puede votar en ausencia. Nadie recibe una boleta sin pedirla antes. En los condados que votan por correo, el auditor del condado te manda la solicitud por correo.",
+   "es": "Cualquier votante que cumpla los requisitos puede votar en ausencia. Nadie recibe una boleta sin pedirla antes. En los condados que votan por correo, el auditor del condado te manda la solicitud por correo.",
    "src": "https://www.sos.nd.gov/elections/voter/voting-north-dakota/how-do-i-vote/absentee-voting",
    "checked": "2026-10-28",
    "quote": "In vote by mail counties, voting age residents are mailed an absentee ballot application by their county auditor.",

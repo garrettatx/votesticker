@@ -502,7 +502,7 @@ return array(
 		),
 		'how.in_person' => array(
 			'en' => 'Vote early in person at a county early voting location by 7 p.m. Friday, October 30. Bring ID. Then, if an unforeseen emergency between 7 p.m. Friday and 5 p.m. Monday, November 2, would keep you from the polls, ask your county about emergency voting. You show ID and sign a statement about the emergency.',
-			'es' => 'Vota por anticipado en persona en un centro de votación anticipada del condado a más tardar a las 7 p. m. del viernes 30 de octubre. Lleva identificación. Después, si una emergencia imprevista entre las 7 p. m. del viernes y las 5 p. m. del lunes 2 de noviembre te impediría ir a votar, pregunta a tu condado por la votación de emergencia. Muestras tu identificación y firmas una declaración sobre la emergencia.',
+			'es' => 'Vota por anticipado en persona en un centro de votación anticipada del condado a más tardar a las 7 p. m. del viernes 30 de octubre. Lleva identificación. Después, si una emergencia imprevista entre las 7 p. m. del viernes y las 5 p. m. del lunes 2 de noviembre te impidiera ir a votar, pregunta a tu condado por la votación de emergencia. Muestras tu identificación y firmas una declaración sobre la emergencia.',
 			'src' => 'https://www.azleg.gov/ars/16/00542.htm',
 			'checked' => '2026-10-28',
 			'until' => '2026-11-02',
@@ -842,7 +842,7 @@ return array(
 			'checked' => '2026-10-28',
 			'until' => '2026-10-26',
 			'en_after' => 'Drop box or voter center: by 7 p.m. on Tuesday, November 3. Don\'t mail it now. Take it in your signed envelope to a drop box or voter center. A postmark doesn\'t count. Military and overseas voters have a later deadline.',
-			'es_after' => 'Buzón o centro de votación: a más tardar a las 7 p. m. del martes 3 de noviembre. Ya no la mandes por correo. Llévala en tu sobre firmado a un buzón o a un centro de votación. El matasellos no cuenta. Los votantes militares y en el extranjero tienen una fecha límite más tarde.',
+			'es_after' => 'Buzón o centro de votación: a más tardar a las 7 p. m. del martes 3 de noviembre. Ya no la mandes por correo. Llévala en tu sobre firmado a un buzón o a un centro de votación. El matasellos no cuenta. Los votantes militares y en el extranjero tienen una fecha límite posterior.',
 		),
 		'dates.early_hours' => array(
 			'en' => 'Voter service and polling centers are open for in-person voting through 7 p.m. on Election Day, but each location sets its own days and hours. Look yours up at GoVoteColorado.gov before you go.',
@@ -929,7 +929,7 @@ return array(
 		),
 		'polls_rules.phone' => array(
 			'en' => 'Colorado law lets you show your own voted ballot to anyone, including in a photo you post, as long as it isn\'t part of an election crime. That covers a mail ballot at home. At a voter center, the county clerk can limit photos, so ask an election judge before you take one there.',
-			'es' => 'La ley de Colorado te permite mostrar tu propia boleta votada a cualquier persona, también en una foto que publiques, siempre que no sea parte de un delito electoral. Eso incluye una boleta por correo en casa. En un centro de votación, la oficina electoral del condado (county clerk) puede limitar las fotos, así que pregunta a un juez electoral antes de tomar una ahí.',
+			'es' => 'La ley de Colorado te permite mostrar tu propia boleta votada a cualquier persona, también en una foto que publiques, siempre que no sea parte de un delito electoral. Eso incluye una boleta por correo en casa. En un centro de votación, el secretario del condado (county clerk) puede limitar las fotos, así que pregunta a un juez electoral antes de tomar una ahí.',
 			'src' => 'https://leg.colorado.gov/sites/default/files/documents/2017A/bills/sl/2017a_sl_042.pdf',
 			'checked' => '2026-10-28',
 		),
@@ -947,13 +947,13 @@ return array(
 		),
 		'sticker.early' => array(
 			'en' => 'In Garfield County, yes, while supplies last: a limited special edition "I Voted" sticker for the nation\'s 250th and Colorado\'s 150th anniversaries is at ballot drop boxes and vote centers.',
-			'es' => 'En el condado de Garfield, sí, mientras haya: un sticker especial de edición limitada de "I Voted" por los 250 años del país y los 150 de Colorado está en los buzones de entrega y los centros de votación.',
+			'es' => 'En el condado de Garfield, sí, mientras haya: en los buzones de entrega y los centros de votación hay un sticker especial de edición limitada de "I Voted" por los 250 años del país y los 150 de Colorado.',
 			'src' => 'https://www.garfieldcountyco.gov/news/vote-and-return-both-ballot-pages-in-2026-general-election/',
 			'checked' => '2026-10-23',
 		),
 		'sticker.mail' => array(
 			'en' => 'Sign up for BallotTrax. Once your ballot is accepted, it sends you the 2026 Blucifer "I Voted" digital sticker to share.',
-			'es' => 'Inscríbete en BallotTrax. Cuando acepten tu boleta, te envía el sticker digital de "I Voted" de Blucifer de 2026 para compartir.',
+			'es' => 'Inscríbete en BallotTrax. Cuando acepten tu boleta, BallotTrax te envía el sticker digital de "I Voted" de Blucifer de 2026 para compartir.',
 			'src' => 'https://www.sos.state.co.us/pubs/newsRoom/pressReleases/2026/PR20261012StickerContest.html',
 			'checked' => '2026-10-28',
 		),
@@ -1014,7 +1014,7 @@ return array(
 		),
 		'dates.mail_return' => array(
 			'en' => 'Mailing it or using a drop box? Your Town Clerk must receive it by 8 p.m. on Tuesday, November 3. Bringing it to the Town Clerk yourself? Do it by close of business on Monday, November 2. A family member who lives with you, or the designee of an ill or disabled voter, can hand it in until 8 p.m. on Election Day.',
-			'es' => '¿La mandas por correo o la dejas en un buzón de entrega? El secretario municipal (Town Clerk) debe recibirla a más tardar a las 8 p. m. del martes 3 de noviembre. ¿La llevas tú mismo al secretario municipal? Hazlo antes del cierre de la oficina el lunes 2 de noviembre. Un familiar que vive contigo, o la persona designada de un votante enfermo o con discapacidad, puede entregarla hasta las 8 p. m. del Día de las Elecciones.',
+			'es' => '¿La mandas por correo o la dejas en un buzón de entrega? El secretario municipal (Town Clerk) debe recibirla a más tardar a las 8 p. m. del martes 3 de noviembre. ¿La llevas en persona al secretario municipal? Hazlo antes del cierre de la oficina el lunes 2 de noviembre. Un familiar que vive contigo, o la persona designada de un votante enfermo o con discapacidad, puede entregarla hasta las 8 p. m. del Día de las Elecciones.',
 			'src' => 'https://portal.ct.gov/-/media/sots/early-voting/2026-voting-guide/2026_voter_guide-2-final-combined.pdf',
 			'checked' => '2026-10-28',
 		),
@@ -1041,7 +1041,7 @@ return array(
 		),
 		'how.first_time' => array(
 			'en' => 'Voting for the first time in Connecticut after registering by mail? If there\'s a mark next to your name on the voter list, show one of these: a current photo ID with your name; a paper or digital copy of a current utility bill, bank statement, government check, paycheck or government document with your name and address; your Connecticut driver\'s license number; or the last four digits of your Social Security number.',
-			'es' => '¿Votas por primera vez en Connecticut después de registrarte por correo? Si hay una marca junto a tu nombre en la lista de votantes, muestra una de estas: una identificación vigente con foto y tu nombre; una copia en papel o digital de un recibo de servicios, un estado de cuenta bancario, un cheque del gobierno, un talón de pago o un documento del gobierno actual con tu nombre y dirección; el número de tu licencia de conducir de Connecticut; o los últimos cuatro dígitos de tu número de Seguro Social.',
+			'es' => '¿Votas por primera vez en Connecticut después de registrarte por correo? Si hay una marca junto a tu nombre en la lista de votantes, muestra una de estas: una identificación vigente con foto y tu nombre; una copia reciente, en papel o digital, de un recibo de servicios, un estado de cuenta bancario, un cheque del gobierno, un talón de pago o un documento del gobierno con tu nombre y dirección; el número de tu licencia de conducir de Connecticut; o los últimos cuatro dígitos de tu número de Seguro Social.',
 			'src' => 'https://portal.ct.gov/-/media/sots/electionservices/lead_communications/2026/july/20260720finalmoderatorshandbooksupplement.pdf',
 			'checked' => '2026-10-28',
 		),
@@ -1090,7 +1090,7 @@ return array(
 		),
 		'mail.dropbox' => array(
 			'en' => 'You can return your ballot in an official ballot drop box. Only you, a spouse, child, parent or sibling who lives with you, a caregiver you named on your application because you\'re ill or disabled, a police officer, or a registrar, deputy registrar or assistant registrar of voters can mail it or put it in a drop box for you.',
-			'es' => 'Puedes devolver tu boleta en un buzón oficial de entrega de boletas. Solo tú, tu cónyuge, hijo, padre, madre, hermano o hermana que viva contigo, la persona que te cuida y que nombraste en tu solicitud porque estás enfermo o tienes una discapacidad, un policía, o un registrador de votantes (registrar), registrador adjunto (deputy registrar) o registrador asistente (assistant registrar) pueden enviarla por correo o dejarla en un buzón por ti.',
+			'es' => 'Puedes devolver tu boleta en un buzón oficial de entrega de boletas. Solo tú, tu cónyuge, tu hijo o hija, tu padre o madre, o tu hermano o hermana que viva contigo, la persona que te cuida y que nombraste en tu solicitud porque tienes una enfermedad o discapacidad, un policía, o un registrador de votantes (registrar), registrador adjunto (deputy registrar) o registrador asistente (assistant registrar) pueden enviarla por correo o dejarla en un buzón por ti.',
 			'src' => 'https://portal.ct.gov/-/media/sots/early-voting/2026-voting-guide/2026_voter_guide-2-final-combined.pdf',
 			'checked' => '2026-10-28',
 		),
@@ -1281,7 +1281,7 @@ return array(
 		),
 		'faq.provisional' => array(
 			'en' => 'DC calls it a special ballot. If your name is missing from the list, your details are wrong, or you need to show ID you don\'t have, you can still vote one. Bring any proof the Board needs by Tuesday, November 10. That day, check its preliminary decision at dcboe.org or 1-866-328-6837. If it says no, the Board holds hearings November 12 and 13.',
-			'es' => 'En DC se llama boleta especial (special ballot). Si tu nombre no aparece en la lista, tus datos están mal o te piden una identificación que no tienes, igual puedes votar con una. Entrega cualquier comprobante que pida la Junta a más tardar el martes 10 de noviembre. Ese día, consulta su decisión preliminar en dcboe.org o al 1-866-328-6837. Si la rechaza, la Junta tiene audiencias el 12 y 13 de noviembre.',
+			'es' => 'En DC se llama boleta especial (special ballot). Si tu nombre no aparece en la lista, tus datos están mal o te piden una identificación que no tienes, igual puedes votar con una. Entrega cualquier comprobante que pida la Junta a más tardar el martes 10 de noviembre. Ese día, consulta su decisión preliminar en dcboe.org o al 1-866-328-6837. Si la decisión es negativa, la Junta tiene audiencias el 12 y el 13 de noviembre.',
 			'src' => 'https://www.dcboe.org/getContentAsset/4d04f4a1-fb2a-4f8a-809f-d3f708f232df/5ebbd046-860b-4ee1-81c8-43d0e3bc446e/2026-General-Election-Calendar-Version-09292026.pdf?language=en',
 			'checked' => '2026-10-28',
 		),
@@ -1403,7 +1403,7 @@ return array(
 		'mail.track_url' => 'https://ivote.de.gov/',
 		'mail.cure' => array(
 			'en' => 'Forgot to sign the oath or seal the envelope? The Department will try to reach you by phone or email so you can fix it. Fix it before the polls close at 8 p.m. on Election Day and it gets counted.',
-			'es' => '¿Se te olvidó firmar el juramento o cerrar el sobre? El Departamento intentará comunicarse contigo por teléfono o correo electrónico para que lo corrijas. Corrígelo antes de que cierren los lugares de votación a las 8 p. m. del Día de las Elecciones y se cuenta.',
+			'es' => '¿Se te olvidó firmar el juramento o cerrar el sobre? El Departamento intentará comunicarse contigo por teléfono o correo electrónico para que lo corrijas. Si lo corriges antes de que cierren los lugares de votación a las 8 p. m. del Día de las Elecciones, tu boleta se cuenta.',
 			'src' => 'https://delcode.delaware.gov/title15/c055/index.html',
 			'checked' => '2026-10-28',
 		),
@@ -1499,12 +1499,12 @@ return array(
 			),
 			'votegulf.gov' => array(
 				'en' => 'the Gulf County Supervisor of Elections',
-				'es' => 'la oficina del supervisor electoral del condado de Gulf (Supervisor of Elections)',
+				'es' => 'la oficina del Supervisor de Elecciones del condado de Gulf (Supervisor of Elections)',
 			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Registration closed Monday, October 5, 2026. One exception: if you, or a family member who came with you, left the military or the Merchant Marine, came back from a military deployment, or left a job outside the U.S. after October 5, you can still register in person at your Supervisor of Elections office until 5 p.m. on Friday, October 30. Bring papers that show it.',
-			'es' => 'El registro cerró el lunes 5 de octubre de 2026. Hay una excepción: si tú, o un familiar que vino contigo, dejaste el servicio militar o la Marina Mercante, regresaste de un despliegue militar o dejaste un trabajo fuera de EE. UU. después del 5 de octubre, todavía puedes registrarte en persona en la oficina del supervisor electoral (Supervisor of Elections) hasta las 5 p. m. del viernes 30 de octubre. Lleva documentos que lo demuestren.',
+			'es' => 'El registro cerró el lunes 5 de octubre de 2026. Hay una excepción: si tú, o un familiar que vino contigo, dejaste el servicio militar o la Marina Mercante, regresaste de un despliegue militar o dejaste un trabajo fuera de EE. UU. después del 5 de octubre, todavía puedes registrarte en persona en la oficina del Supervisor de Elecciones (Supervisor of Elections) hasta las 5 p. m. del viernes 30 de octubre. Lleva documentos que lo demuestren.',
 			'src' => 'https://www.flsenate.gov/Laws/Statutes/2026/97.0555',
 			'checked' => '2026-10-28',
 			'until' => '2026-10-30',
@@ -1528,7 +1528,7 @@ return array(
 		),
 		'dates.early_hours' => array(
 			'en' => 'Every county offers early voting through Saturday, October 31. Some counties add days, as late as Sunday, November 1. Each site is open at least 8 and no more than 12 hours a day. Check your county Supervisor of Elections for exact days and hours.',
-			'es' => 'Todos los condados ofrecen votación anticipada hasta el sábado 31 de octubre. Algunos condados agregan días, hasta el domingo 1 de noviembre. Cada centro abre por lo menos 8 y no más de 12 horas al día. Consulta al supervisor electoral de tu condado (Supervisor of Elections) para los días y horarios exactos.',
+			'es' => 'Todos los condados ofrecen votación anticipada hasta el sábado 31 de octubre. Algunos condados agregan días, hasta el domingo 1 de noviembre. Cada centro abre por lo menos 8 y no más de 12 horas al día. Consulta al Supervisor de Elecciones de tu condado (Supervisor of Elections) para los días y horarios exactos.',
 			'src' => 'https://dos.fl.gov/elections/for-voters/voting/early-voting-and-secure-ballot-intake-stations/',
 			'checked' => '2026-10-28',
 			'until' => '2026-11-01',
@@ -1549,7 +1549,7 @@ return array(
 		'where.local_offices_url' => 'https://dos.fl.gov/elections/contacts/supervisor-of-elections/',
 		'where.rule' => array(
 			'en' => 'Pick your county on the state\'s Voter Precinct Lookup page to find your Election Day polling place. Moved within your county? You can update your address at your new precinct and vote there. Moved from another Florida county? Some counties let you do the same; elsewhere you vote a provisional ballot, so call your Supervisor of Elections first.',
-			'es' => 'Elige tu condado en la página Voter Precinct Lookup del estado para encontrar tu lugar de votación del Día de las Elecciones. ¿Te mudaste dentro de tu condado? Puedes actualizar tu dirección en tu nuevo precinto y votar ahí. ¿Te mudaste desde otro condado de Florida? Algunos condados te dejan hacer lo mismo; en los demás votas con una boleta provisional, así que llama primero al supervisor electoral (Supervisor of Elections).',
+			'es' => 'Elige tu condado en la página Voter Precinct Lookup del estado para encontrar tu lugar de votación del Día de las Elecciones. ¿Te mudaste dentro de tu condado? Puedes actualizar tu dirección en tu nuevo precinto y votar ahí. ¿Te mudaste desde otro condado de Florida? Algunos condados te dejan hacer lo mismo; en los demás votas con una boleta provisional, así que llama primero al Supervisor de Elecciones (Supervisor of Elections).',
 			'src' => 'https://www.flsenate.gov/Laws/Statutes/2026/101.045',
 			'checked' => '2026-10-28',
 		),
@@ -1581,7 +1581,7 @@ return array(
 		'mail.track_url' => 'https://dos.fl.gov/elections/for-voters/check-your-voter-status-and-polling-place/vote-by-mail-ballot-information-and-status-lookup/',
 		'mail.cure' => array(
 			'en' => 'Signature missing or doesn\'t match? Your Supervisor of Elections will let you know. Send back a Vote-by-Mail Ballot Cure Affidavit with a copy of your ID by 5 p.m. local time on Thursday, November 5, the second day after the election. You can return it by mail, email, fax or in person.',
-			'es' => '¿Falta tu firma o no coincide? El supervisor electoral (Supervisor of Elections) te avisará. Devuelve la declaración jurada para corregir tu boleta por correo (Vote-by-Mail Ballot Cure Affidavit) con una copia de tu identificación a más tardar a las 5 p. m., hora local, del jueves 5 de noviembre, el segundo día después de la elección. Puedes devolverla por correo, email, fax o en persona.',
+			'es' => '¿Falta tu firma o no coincide? El Supervisor de Elecciones (Supervisor of Elections) te avisará. Devuelve la declaración jurada para corregir tu boleta por correo (Vote-by-Mail Ballot Cure Affidavit) con una copia de tu identificación a más tardar a las 5 p. m., hora local, del jueves 5 de noviembre, el segundo día después de la elección. Puedes devolverla por correo, email, fax o en persona.',
 			'src' => 'https://dos.fl.gov/elections/for-voters/voting/vote-by-mail/',
 			'checked' => '2026-10-28',
 			'until' => '2026-11-05',
@@ -1620,7 +1620,7 @@ return array(
 		),
 		'sticker.tradition' => array(
 			'en' => 'Some Florida counties pick their stickers in student contests. In Sarasota County, a seventh grader\'s pink flamingo, chosen from more than 175 student entries, is the sticker for November 3, offered to everyone who votes by mail, early or on Election Day.',
-			'es' => 'Algunos condados de Florida eligen sus stickers en concursos para estudiantes. En el condado de Sarasota, un flamenco rosa dibujado por un estudiante de séptimo grado, elegido entre más de 175 propuestas, es el sticker del 3 de noviembre, y se le ofrece a todo el que vote por correo, por anticipado o el Día de las Elecciones.',
+			'es' => 'Algunos condados de Florida eligen sus stickers en concursos para estudiantes. En el condado de Sarasota, un flamenco rosa dibujado por un estudiante de séptimo grado, elegido entre más de 175 propuestas, es el sticker del 3 de noviembre, y se le ofrece a toda persona que vote por correo, por anticipado o el Día de las Elecciones.',
 			'src' => 'https://www.sarasotavotes.gov/CivicAlerts.aspx?AID=31',
 			'checked' => '2026-10-21',
 		),
@@ -1632,7 +1632,7 @@ return array(
 		),
 		'sticker.mail' => array(
 			'en' => 'In Sarasota County, yes. The Supervisor of Elections says anyone who votes by mail will be offered the county\'s 2026 "I Voted" sticker, the pink flamingo design. Ask the Supervisor of Elections office how to get yours.',
-			'es' => 'En el condado de Sarasota, sí. El Supervisor de Elecciones (Supervisor of Elections) dice que a todo el que vote por correo se le ofrecerá el sticker de "I Voted" de 2026 del condado, el del flamenco rosa. Pregunta en la oficina del Supervisor de Elecciones cómo conseguir el tuyo.',
+			'es' => 'En el condado de Sarasota, sí. El Supervisor de Elecciones (Supervisor of Elections) dice que a toda persona que vote por correo se le ofrecerá el sticker de "I Voted" de 2026 del condado, el del flamenco rosa. Pregunta en la oficina del Supervisor de Elecciones cómo conseguir el tuyo.',
 			'src' => 'https://www.sarasotavotes.gov/CivicAlerts.aspx?AID=31',
 			'checked' => '2026-10-28',
 		),
@@ -1888,7 +1888,7 @@ return array(
 		'id.rule' => 'no_id',
 		'id.without' => array(
 			'en' => 'Voting in person in Honolulu? Bring an ID. A state driver\'s license or ID card or a passport works, and so does a current utility bill, bank statement, government check, government document or paycheck with your name and address. No ID? Staff will ask you more questions to confirm who you are, which takes longer.',
-			'es' => '¿Vas a votar en persona en Honolulu? Lleva una identificación. Sirve una licencia de conducir o identificación estatal o un pasaporte, y también un recibo de servicios, estado de cuenta bancario, cheque del gobierno, documento del gobierno o talón de pago reciente con tu nombre y dirección. ¿No tienes? El personal te hará más preguntas para confirmar quién eres, y eso toma más tiempo.',
+			'es' => '¿Vas a votar en persona en Honolulu? Lleva una identificación. Sirve una licencia de conducir o identificación estatal o un pasaporte, y también un recibo de servicios, estado de cuenta bancario, cheque del gobierno, documento del gobierno o talón de pago reciente con tu nombre y dirección. ¿No tienes identificación? El personal te hará más preguntas para confirmar quién eres, y eso toma más tiempo.',
 			'src' => 'https://www.honolulu.gov/elections/voter-service-centers/',
 			'checked' => '2026-10-28',
 		),
@@ -1913,7 +1913,7 @@ return array(
 		),
 		'mail.witness' => array(
 			'en' => 'Read the statement on your return envelope and sign it. Your ballot can\'t be counted without your signature. Can\'t sign on your own? Someone you\'re comfortable with can help and be your witness, but not your employer, your union agent or a candidate on the ballot.',
-			'es' => 'Lee la declaración del sobre de devolución y fírmalo. Tu boleta no se puede contar sin tu firma. ¿No puedes firmar por tu cuenta? Una persona de confianza puede ayudarte y ser tu testigo, pero no tu empleador, un agente de tu sindicato ni un candidato que aparezca en la boleta.',
+			'es' => 'Lee la declaración del sobre de devolución y fírmala. Tu boleta no se puede contar sin tu firma. ¿No puedes firmar por tu cuenta? Una persona de confianza puede ayudarte y ser tu testigo, pero no tu empleador, un agente de tu sindicato ni un candidato que aparezca en la boleta.',
 			'src' => 'https://elections.hawaii.gov/wp-content/uploads/VoterGuide_2026_General_English.pdf',
 			'checked' => '2026-10-28',
 		),
@@ -2179,7 +2179,7 @@ return array(
 			'checked' => '2026-10-28',
 			'until' => '2026-10-23',
 			'en_after' => 'Requests for a mailed ballot closed at 5 p.m. on October 23. In the hospital since after that? Your county clerk takes emergency absentee requests until 5 p.m. on Monday, November 2. Everyone else can vote early in person through Friday, October 30, or at the polls on Election Day.',
-			'es_after' => 'Las solicitudes de boleta por correo cerraron a las 5 p. m. del 23 de octubre. ¿Estás en el hospital desde después de esa fecha? La oficina del secretario de tu condado (county clerk) recibe solicitudes de emergencia de boleta de voto en ausencia hasta las 5 p. m. del lunes 2 de noviembre. Los demás pueden votar por anticipado en persona hasta el viernes 30 de octubre o en su lugar de votación el Día de las Elecciones.',
+			'es_after' => 'Las solicitudes de boleta por correo cerraron a las 5 p. m. del 23 de octubre. ¿Te internaron en el hospital después de esa fecha? La oficina del secretario de tu condado (county clerk) recibe solicitudes de emergencia de boleta de voto en ausencia hasta las 5 p. m. del lunes 2 de noviembre. Los demás pueden votar por anticipado en persona hasta el viernes 30 de octubre o en su lugar de votación el Día de las Elecciones.',
 		),
 		'dates.mail_return' => array(
 			'en' => 'Mail it with a stamp, drop it in an official elections drop box, or bring it to your county elections office. Your county clerk must receive it by 8 p.m. on Tuesday, November 3, 2026.',
@@ -2345,7 +2345,7 @@ return array(
 		),
 		'dates.mail_return' => array(
 			'en' => 'Mail: postmarked by November 3 and received by Tuesday, November 17, 2026. Drop box or your election authority\'s office: by 7 p.m. on Tuesday, November 3. Not every election authority has drop boxes, so check yours and its hours.',
-			'es' => 'Por correo: con matasellos a más tardar del 3 de noviembre y recibida a más tardar el martes 17 de noviembre de 2026. En un buzón de entrega o en la oficina de tu autoridad electoral: a más tardar a las 7 p. m. del martes 3 de noviembre. No todas las autoridades electorales tienen buzones, así que revisa si la tuya tiene y su horario.',
+			'es' => 'Por correo: con matasellos del 3 de noviembre o antes y recibida a más tardar el martes 17 de noviembre de 2026. En un buzón de entrega o en la oficina de tu autoridad electoral: a más tardar a las 7 p. m. del martes 3 de noviembre. No todas las autoridades electorales tienen buzones, así que revisa si la tuya tiene y su horario.',
 			'src' => 'https://www.elections.il.gov/NewDocDisplay.aspx?%2fM0cs48zOKVZyk9eAbpEoxjoGz9b5YaGlSMHdiy2iXFAjyfyuQAf7RuSHGhmj4krBXKBjMHMC1kXG9lGcteFHxJG77yV2o99NE75AqeL5DThKkCHpaEu2oLSuh20w3EwQdWH71Ci9K32uwKewIazRSajZGQBVzmfzwlOzw4whnSWC4%2fbXhBNlQ%3d%3d',
 			'checked' => '2026-10-21',
 		),
@@ -2384,7 +2384,7 @@ return array(
 		'where.local_offices_url' => 'https://www.elections.il.gov/ElectionOperations/ElectionAuthorities.aspx',
 		'where.rule' => array(
 			'en' => 'You can vote early at any site your election authority sets up. Your election authority is your county clerk, or a city or county board of election commissioners in places like Chicago. It posts early voting sites, dates and hours.',
-			'es' => 'Puedes votar por anticipado en cualquier centro que abra tu autoridad electoral. Tu autoridad electoral es la secretaría de tu condado (county clerk) o una junta de comisionados electorales de la ciudad o del condado (board of election commissioners), como en Chicago. Publica los centros, las fechas y los horarios de votación anticipada.',
+			'es' => 'Puedes votar por anticipado en cualquier centro que abra tu autoridad electoral. Tu autoridad electoral es la secretaría de tu condado (county clerk) o una junta de comisionados electorales de la ciudad o del condado (board of election commissioners), como en Chicago. Esa autoridad publica los centros, las fechas y los horarios de votación anticipada.',
 			'src' => 'https://www.elections.il.gov/NewDocDisplay.aspx?%2fM0cs48zOKVZyk9eAbpEoxjoGz9b5YaGE%2bEuf7JVd2Tlx2Mybp2RbacEJVh848tnFOLoTd3G4cRsCxSj%2bcrL1MmhG9QsYgJ9e5wE4tKLgaaopDaaWmFheIeWqmvhmfkWslmarqW5C0xuwyDgFhSttQ%3d%3d',
 			'checked' => '2026-10-21',
 		),
@@ -2403,7 +2403,7 @@ return array(
 		),
 		'mail.dropbox' => array(
 			'en' => 'Some election authorities have drop boxes, and you don\'t need a stamp. Use one by 7 p.m. on Election Day, and check its hours first. The State Board of Elections keeps a drop box list. You can also hand your ballot in at your election authority\'s office by 7 p.m.',
-			'es' => 'Algunas autoridades electorales tienen buzones de entrega, y no necesitas estampilla. Úsalo a más tardar a las 7 p. m. del Día de las Elecciones, y revisa antes su horario. La Junta Electoral del Estado tiene una lista de buzones. También puedes entregar tu boleta en la oficina de tu autoridad electoral a más tardar a las 7 p. m.',
+			'es' => 'Algunas autoridades electorales tienen buzones de entrega, y no necesitas estampilla. Usa uno a más tardar a las 7 p. m. del Día de las Elecciones, y revisa antes su horario. La Junta Electoral del Estado tiene una lista de buzones. También puedes entregar tu boleta en la oficina de tu autoridad electoral a más tardar a las 7 p. m.',
 			'src' => 'https://www.elections.il.gov/NewDocDisplay.aspx?%2fM0cs48zOKVZyk9eAbpEoxjoGz9b5YaGlSMHdiy2iXFAjyfyuQAf7RuSHGhmj4krBXKBjMHMC1kXG9lGcteFHxJG77yV2o99NE75AqeL5DThKkCHpaEu2oLSuh20w3EwQdWH71Ci9K32uwKewIazRSajZGQBVzmfzwlOzw4whnSWC4%2fbXhBNlQ%3d%3d',
 			'checked' => '2026-10-21',
 		),
@@ -2591,7 +2591,7 @@ return array(
 		),
 		'mail.witness' => array(
 			'en' => 'Mark your ballot yourself and sign the ballot security envelope. No one can help you mark a mail ballot. Someone other than your employer or union representative can help you seal the envelope if they fill out the affidavit of assistance. If you need help marking your ballot, ask your county about voting before a traveling board instead.',
-			'es' => 'Marca tu boleta tú mismo y firma el sobre de seguridad. Nadie puede ayudarte a marcar una boleta por correo. Alguien que no sea tu empleador ni tu representante sindical puede ayudarte a cerrar el sobre si llena la declaración de asistencia (affidavit of assistance). Si necesitas ayuda para marcar tu boleta, pregunta en tu condado por votar ante una junta de votación en ausencia (absentee voter board).',
+			'es' => 'Marca tu boleta por tu cuenta y firma el sobre de seguridad. Nadie puede ayudarte a marcar una boleta por correo. Alguien que no sea tu empleador ni tu representante sindical puede ayudarte a cerrar el sobre si llena la declaración de asistencia (affidavit of assistance). Si necesitas ayuda para marcar tu boleta, pregunta en tu condado por votar ante una junta de votación en ausencia (absentee voter board).',
 			'src' => 'https://www.in.gov/sos/elections/voter-information/ways-to-vote/absentee-voting/',
 			'checked' => '2026-10-28',
 		),
@@ -2768,7 +2768,7 @@ return array(
 		),
 		'sticker.tradition' => array(
 			'en' => 'Sedgwick County\'s 2026 I Voted sticker is a picture of Kansas: a Western Meadowlark, a barn, wheat, a sunflower, the state motto "Ad Astra Per Aspera" and a road across the prairie to the State Capitol. Rylin, a sophomore at Maize South High School, drew it. Penelope, a third grader at Colwich Elementary, drew the county\'s first Future Voter sticker, an American Buffalo in a field of sunflowers. Community judges picked them in the county\'s student design contest, from 305 and 163 entries. Voters get them at the polls.',
-			'es' => 'El sticker de I Voted 2026 del condado de Sedgwick es una imagen de Kansas: un pradero occidental (Western Meadowlark), un granero, trigo, un girasol, el lema del estado "Ad Astra Per Aspera" y un camino por la pradera hasta el Capitolio del estado. Lo dibujó Rylin, estudiante de segundo año de Maize South High School. Penelope, estudiante de tercer grado de Colwich Elementary, dibujó el primer sticker de Future Voter del condado: un bisonte americano (American Buffalo) en un campo de girasoles. Un jurado de la comunidad los eligió en el concurso de diseño para estudiantes del condado, entre 305 y 163 propuestas. Los votantes los reciben en su lugar de votación.',
+			'es' => 'El sticker de I Voted 2026 del condado de Sedgwick es una imagen de Kansas: un pradero occidental (Western Meadowlark), un granero, trigo, un girasol, el lema del estado "Ad Astra Per Aspera" y un camino por la pradera hasta el Capitolio del estado. Lo dibujó Rylin, estudiante de segundo año de Maize South High School. Penelope, estudiante de tercer grado de Colwich Elementary, dibujó el primer sticker de Future Voter del condado: un bisonte americano (American Buffalo) en un campo de girasoles. Un jurado de la comunidad los eligió en el concurso de diseño para estudiantes del condado, entre 305 y 163 propuestas, respectivamente. Los votantes los reciben en su lugar de votación.',
 			'src' => 'https://www.sedgwick.gov/communications/news-releases/sedgwick-county-election-office-announces-winners-of-2026-voting-sticker-contests/',
 			'checked' => '2026-10-28',
 		),
@@ -2941,7 +2941,7 @@ return array(
 		),
 		'sticker.tradition' => array(
 			'en' => 'Kentucky\'s 2026 I voted sticker is a smiling sun over rolling Kentucky pasture with a blue outline of the state, drawn by Ryker, a student at Bush Elementary in Laurel County. Voters picked it from the finalists with more than 3,500 ballots at the Kentucky State Fair. Laurel County gets the stickers from the Secretary of State\'s Office, and other county clerks can request them for November, so not every polling place will have one.',
-			'es' => 'El sticker "I Voted" de Kentucky para 2026 es un sol sonriente sobre los pastizales de Kentucky con el contorno del estado en azul. Lo dibujó Ryker, estudiante de la escuela primaria Bush en el condado de Laurel. Los votantes lo eligieron entre los finalistas con más de 3,500 votos en la Feria Estatal de Kentucky. El condado de Laurel recibe los stickers de la Secretaría de Estado, y otros condados pueden pedirlos para noviembre, así que no todos los lugares de votación los tendrán.',
+			'es' => 'El sticker "I Voted" de Kentucky para 2026 es un sol sonriente sobre los pastizales de Kentucky con el contorno del estado en azul. Lo dibujó Ryker, estudiante de la escuela primaria Bush en el condado de Laurel. Los votantes lo eligieron entre los finalistas con más de 3,500 votos en la Feria Estatal de Kentucky. El condado de Laurel recibe los stickers de la Secretaría de Estado, y los secretarios de otros condados pueden pedirlos para noviembre, así que no todos los lugares de votación los tendrán.',
 			'src' => 'https://www.kentucky.gov/Pages/Activity-stream.aspx?n=SOS&prId=569',
 			'checked' => '2026-10-28',
 		),
@@ -3659,7 +3659,7 @@ return array(
 		),
 		'dates.mail_return' => array(
 			'en' => 'Your local clerk must receive it by 8 p.m. on Tuesday, November 3, 2026. A postmark isn\'t enough, so this close to Election Day use a drop box or your clerk\'s office instead of the mail. Military and overseas ballots count if they\'re postmarked by Election Day and arrive within 6 days after.',
-			'es' => 'Tu secretario local (clerk) debe recibirla a más tardar a las 8 p. m. del martes 3 de noviembre de 2026. El matasellos no basta, así que a estas alturas usa un buzón de entrega o la oficina de tu secretario en vez del correo. Las boletas de militares y de votantes en el extranjero cuentan si tienen matasellos a más tardar del Día de las Elecciones y llegan dentro de los 6 días siguientes.',
+			'es' => 'Tu secretario local (clerk) debe recibirla a más tardar a las 8 p. m. del martes 3 de noviembre de 2026. El matasellos no basta, así que a estas alturas usa un buzón de entrega o la oficina de tu secretario en vez del correo. Las boletas de militares y de votantes en el extranjero cuentan si tienen matasellos del Día de las Elecciones o antes y llegan dentro de los 6 días siguientes.',
 			'src' => 'https://www.michigan.gov/sos/elections/voting/absentee-voting',
 			'checked' => '2026-10-28',
 		),
@@ -3686,7 +3686,7 @@ return array(
 		),
 		'how.first_time' => array(
 			'en' => 'New to Michigan, or moved? Go to your city or township clerk\'s office with proof of residency, like a utility bill or bank statement, to register. You can vote an absentee ballot right there, or head to your polling place if there\'s time. If you\'re in line at the clerk\'s office by 8 p.m. on Election Day, you can still register and vote.',
-			'es' => '¿Eres nuevo en Michigan o te mudaste? Ve a la oficina del secretario de tu ciudad o municipio (clerk) con un comprobante de domicilio, como un recibo de servicios o un estado de cuenta bancario, para registrarte. Ahí mismo puedes votar con una boleta de voto en ausencia, o ir a tu lugar de votación si te da tiempo. Si estás en la fila de la oficina del secretario a las 8 p. m. del Día de las Elecciones, todavía puedes registrarte y votar.',
+			'es' => '¿Acabas de llegar a Michigan o te mudaste? Ve a la oficina del secretario de tu ciudad o municipio (clerk) con un comprobante de domicilio, como un recibo de servicios o un estado de cuenta bancario, para registrarte. Ahí mismo puedes votar con una boleta de voto en ausencia, o ir a tu lugar de votación si te da tiempo. Si estás en la fila de la oficina del secretario a las 8 p. m. del Día de las Elecciones, todavía puedes registrarte y votar.',
 			'src' => 'https://www.michigan.gov/sos/elections/voting/vote-on-election-day',
 			'checked' => '2026-10-28',
 		),
@@ -3844,7 +3844,7 @@ return array(
 		),
 		'dates.early_hours' => array(
 			'en' => 'Most locations keep their usual hours plus 9 a.m. to 3 p.m. on Saturday, October 31 and Sunday, November 1, and until 5 p.m. on Monday, November 2, the last day. Some locations list other hours, so check yours on the Secretary of State\'s list.',
-			'es' => 'La mayoría de los lugares tiene su horario normal más de 9 a. m. a 3 p. m. el sábado 31 de octubre y el domingo 1 de noviembre, y hasta las 5 p. m. el lunes 2 de noviembre, el último día. Algunos lugares tienen otro horario, así que revisa el tuyo en la lista de la Secretaría de Estado.',
+			'es' => 'La mayoría de los lugares mantiene su horario normal y además abre de 9 a. m. a 3 p. m. el sábado 31 de octubre y el domingo 1 de noviembre, y hasta las 5 p. m. el lunes 2 de noviembre, el último día. Algunos lugares tienen otro horario, así que revisa el tuyo en la lista de la Secretaría de Estado.',
 			'src' => 'https://www.sos.mn.gov/elections-voting/other-ways-to-vote/voting-locations-before-election-day/',
 			'checked' => '2026-10-28',
 			'until' => '2026-11-02',
@@ -3853,7 +3853,7 @@ return array(
 		),
 		'how.in_person' => array(
 			'en' => 'Vote early in person through Monday, November 2. At most locations you put your ballot straight into a ballot counter, as on Election Day. A few locations still have you seal it in envelopes.',
-			'es' => 'Vota por anticipado en persona hasta el lunes 2 de noviembre. En la mayoría de los lugares metes tu boleta directo en una máquina contadora, como el Día de las Elecciones. En unos pocos lugares todavía la guardas en sobres.',
+			'es' => 'Vota por anticipado en persona hasta el lunes 2 de noviembre. En la mayoría de los lugares metes tu boleta directo en una máquina contadora, como el Día de las Elecciones. En unos pocos lugares todavía tienes que meterla en sobres y cerrarlos.',
 			'src' => 'https://www.sos.mn.gov/elections-voting/other-ways-to-vote/voting-locations-before-election-day/',
 			'checked' => '2026-10-28',
 			'until' => '2026-11-02',
@@ -3862,7 +3862,7 @@ return array(
 		),
 		'how.first_time' => array(
 			'en' => 'Not registered? Register when you vote, early in person or at your polling place on Election Day. Bring a Minnesota driver\'s license or ID with your current address, or a photo ID plus a bill dated within 30 days of the election or a lease valid through Election Day. The bill can be on your phone. A registered voter from your precinct can also go with you and vouch for your address.',
-			'es' => '¿No estás registrado? Regístrate cuando votes, por anticipado en persona o en tu lugar de votación el Día de las Elecciones. Lleva una licencia de conducir o identificación de Minnesota con tu dirección actual, o una identificación con foto más un recibo con fecha de los 30 días antes de la elección o un contrato de renta vigente hasta el Día de las Elecciones. Puedes mostrar el recibo en tu celular. Un votante registrado de tu precinto también puede acompañarte y dar fe de tu dirección.',
+			'es' => '¿No estás registrado? Regístrate cuando votes, por anticipado en persona o en tu lugar de votación el Día de las Elecciones. Lleva una licencia de conducir o identificación de Minnesota con tu dirección actual, o una identificación con foto más un recibo con fecha dentro de los 30 días antes de la elección o un contrato de renta vigente hasta el Día de las Elecciones. Puedes mostrar el recibo en tu celular. Un votante registrado de tu precinto también puede acompañarte y dar fe de tu dirección.',
 			'src' => 'https://www.sos.mn.gov/elections-voting/register-to-vote/register-on-election-day/',
 			'checked' => '2026-10-28',
 		),
@@ -3965,7 +3965,7 @@ return array(
 		),
 		'faq.late_mail' => array(
 			'en' => 'Within a week of Election Day, the Secretary of State says to drop it off instead. A mailed ballot must arrive by 8 p.m. on November 3, and a postmark doesn\'t count. Drop it at the office that sent it, or its drop box, by 5 p.m. that day.',
-			'es' => 'A una semana del Día de las Elecciones, la Secretaría de Estado recomienda entregarla en persona. Una boleta enviada por correo debe llegar a más tardar a las 8 p. m. del 3 de noviembre, y el matasellos no cuenta. Entrégala en la oficina que te la envió, o en su buzón de entrega, a más tardar a las 5 p. m. de ese día.',
+			'es' => 'A menos de una semana del Día de las Elecciones, la Secretaría de Estado recomienda entregarla en persona. Una boleta enviada por correo debe llegar a más tardar a las 8 p. m. del 3 de noviembre, y el matasellos no cuenta. Entrégala en la oficina que te la envió, o en su buzón de entrega, a más tardar a las 5 p. m. de ese día.',
 			'src' => 'https://www.sos.mn.gov/elections-voting/other-ways-to-vote/return-your-ballot/',
 			'checked' => '2026-10-28',
 		),
@@ -4076,7 +4076,7 @@ return array(
 		),
 		'mail.who_list' => array(
 			'en' => array( 'you\'ll be away from your election authority\'s area on Election Day', 'illness or a physical disability will keep you from the polls, or you\'re the main caregiver for someone at your address in that situation', 'your religious belief or practice', 'you work for an election authority somewhere other than your polling place, or you\'re a first responder, a health care worker or in law enforcement', 'you\'re incarcerated but still qualified to vote', 'you\'re a certified participant in Missouri\'s address confidentiality program for safety reasons' ),
-			'es' => array( 'vas a estar fuera del área de tu autoridad electoral el Día de las Elecciones', 'una enfermedad o una discapacidad física te impide ir a votar, o eres el cuidador principal de alguien en tu domicilio en esa situación', 'tus creencias o prácticas religiosas', 'trabajas para una autoridad electoral en un lugar distinto a tu lugar de votación, o eres socorrista, trabajador de la salud o agente de la ley', 'estás encarcelado pero todavía cumples los requisitos para votar', 'participas, con certificación, en el programa de confidencialidad de domicilio de Missouri por razones de seguridad' ),
+			'es' => array( 'vas a estar fuera del área de tu autoridad electoral el Día de las Elecciones', 'una enfermedad o una discapacidad física te impide ir a votar, o eres la persona que principalmente cuida a alguien en tu domicilio en esa situación', 'tus creencias o prácticas religiosas', 'trabajas para una autoridad electoral en un lugar distinto a tu lugar de votación, o trabajas como socorrista, en servicios de salud o en las fuerzas del orden', 'estás en prisión pero todavía cumples los requisitos para votar', 'participas, con certificación, en el programa de confidencialidad de domicilio de Missouri por razones de seguridad' ),
 			'src' => 'https://revisor.mo.gov/main/OneSection.aspx?section=115.277',
 			'checked' => '2026-10-28',
 		),
@@ -4148,7 +4148,7 @@ return array(
 		),
 		'faq.late_mail' => array(
 			'en' => 'The postmark doesn\'t count in Missouri. Your election office must have your ballot by 7 p.m. on Election Day, and there are no drop boxes. In the last days, bring it in yourself or have a relative the law allows bring it.',
-			'es' => 'En Missouri el matasellos no cuenta. Tu oficina electoral debe tener tu boleta a más tardar a las 7 p. m. del Día de las Elecciones, y no hay buzones de entrega. En los últimos días, entrégala tú o pide a un familiar que la ley permite que la entregue.',
+			'es' => 'En Missouri el matasellos no cuenta. Tu oficina electoral debe tener tu boleta a más tardar a las 7 p. m. del Día de las Elecciones, y no hay buzones de entrega. En los últimos días, entrégala tú o pide que la entregue un familiar autorizado por la ley.',
 			'src' => 'https://revisor.mo.gov/main/OneSection.aspx?section=115.291',
 			'checked' => '2026-10-28',
 		),
@@ -4335,7 +4335,7 @@ return array(
 			'checked' => '2026-10-28',
 			'until' => '2026-10-27',
 			'en_after' => 'Your ballot must reach your county election office or a polling place in your county by 8 p.m. on Tuesday, November 3, 2026. A postmark doesn\'t count. With less than a week to go, drop it off in person.',
-			'es_after' => 'Tu boleta debe llegar a la oficina electoral de tu condado o a un lugar de votación de tu condado a más tardar a las 8 p. m. del martes 3 de noviembre de 2026. El matasellos no cuenta. Con menos de una semana, mejor entrégala en persona.',
+			'es_after' => 'Tu boleta debe llegar a la oficina electoral de tu condado o a un lugar de votación de tu condado a más tardar a las 8 p. m. del martes 3 de noviembre de 2026. El matasellos no cuenta. A menos de una semana de la elección, mejor entrégala en persona.',
 		),
 		'dates.cure' => array(
 			'en' => 'If your county contacts you because your envelope signature is missing or can\'t be verified, fix it before 8 p.m. on Tuesday, November 3, 2026, by mail, electronically, by fax or in person.',
@@ -4442,7 +4442,7 @@ return array(
 		),
 		'faq.provisional' => array(
 			'en' => 'You vote a provisional ballot if you can\'t show the required ID, your name isn\'t in the register, or your registration can\'t be confirmed at the polls. Get your ID or eligibility information to your county by 5 p.m. the day after the election. By mail, it must be postmarked by then and arrive by 3 p.m. on Monday, November 9. It counts once your county verifies you.',
-			'es' => 'Votas con una boleta provisional si no puedes mostrar la identificación requerida, si tu nombre no está en el registro o si no pueden confirmar tu registro en el lugar de votación. Haz llegar tu identificación o tus datos de elegibilidad a tu condado a más tardar a las 5 p. m. del día siguiente a la elección. Por correo, debe tener matasellos de esa hora y llegar a más tardar a las 3 p. m. del lunes 9 de noviembre. Se cuenta cuando tu condado te verifique.',
+			'es' => 'Votas con una boleta provisional si no puedes mostrar la identificación requerida, si tu nombre no está en el registro o si no pueden confirmar tu registro en el lugar de votación. Haz llegar tu identificación o tus datos de elegibilidad a tu condado a más tardar a las 5 p. m. del día siguiente a la elección. Por correo, debe tener matasellos de esa fecha o antes y llegar a más tardar a las 3 p. m. del lunes 9 de noviembre. Se cuenta cuando tu condado te verifique.',
 			'src' => 'https://mca.legmt.gov/bills/mca/title_0130/chapter_0150/part_0010/section_0070/0130-0150-0010-0070.html',
 			'checked' => '2026-10-28',
 		),
@@ -4741,7 +4741,7 @@ return array(
 		),
 		'mail.who' => array(
 			'en' => 'Any eligible voter can vote absentee. No one gets a ballot without applying first. In vote-by-mail counties, the county auditor mails you the application.',
-			'es' => 'Cualquier votante con derecho puede votar en ausencia. Nadie recibe una boleta sin pedirla antes. En los condados que votan por correo, el auditor del condado te manda la solicitud por correo.',
+			'es' => 'Cualquier votante que cumpla los requisitos puede votar en ausencia. Nadie recibe una boleta sin pedirla antes. En los condados que votan por correo, el auditor del condado te manda la solicitud por correo.',
 			'src' => 'https://www.sos.nd.gov/elections/voter/voting-north-dakota/how-do-i-vote/absentee-voting',
 			'checked' => '2026-10-28',
 		),
@@ -4840,7 +4840,7 @@ return array(
 			'checked' => '2026-10-28',
 			'until' => '2026-10-23',
 			'en_after' => 'Registration closed at 6 p.m. on October 23, 2026. Became a U.S. citizen after that? You can still register and vote at your county election office until 7 p.m. Central (6 p.m. Mountain) on Election Day. Not sure you\'re registered? Check Votercheck.',
-			'es_after' => 'El registro cerró a las 6 p. m. del 23 de octubre de 2026. ¿Te hiciste ciudadano de EE. UU. después de esa fecha? Todavía puedes registrarte y votar en la oficina electoral de tu condado hasta las 7 p. m., hora del Centro (6 p. m., hora de la Montaña), el Día de las Elecciones. ¿No sabes si estás registrado? Revisa en Votercheck.',
+			'es_after' => 'El registro cerró a las 6 p. m. del 23 de octubre de 2026. ¿Obtuviste la ciudadanía de EE. UU. después de esa fecha? Todavía puedes registrarte y votar en la oficina electoral de tu condado hasta las 7 p. m., hora del Centro (6 p. m., hora de la Montaña), el Día de las Elecciones. ¿No sabes si estás registrado? Revisa en Votercheck.',
 		),
 		'dates.mail_request' => array(
 			'en' => 'Your county election office must receive your early voting application by 6 p.m. on Friday, October 23, 2026. Mail, fax or email a photo of the signed form.',
@@ -5014,7 +5014,7 @@ return array(
 		),
 		'how.first_time' => array(
 			'en' => 'Registering for the first time? No citizenship papers? You can sign a qualified voter affidavit swearing you\'re a U.S. citizen. Student IDs can\'t be used to prove who you are when you register, vote absentee or check in, after an October 22 U.S. Supreme Court order.',
-			'es' => '¿Te registras por primera vez? ¿No tienes documentos de ciudadanía? Puedes firmar una declaración jurada (qualified voter affidavit) de que eres ciudadano de EE. UU. Las identificaciones de estudiante no sirven para probar quién eres al registrarte, votar en ausencia o presentarte a votar, por una orden de la Corte Suprema de EE. UU. del 22 de octubre.',
+			'es' => '¿Te registras por primera vez? ¿No tienes documentos de ciudadanía? Puedes firmar una declaración jurada (qualified voter affidavit) de que tienes la ciudadanía de EE. UU. Las identificaciones de estudiante no sirven para probar quién eres al registrarte, votar en ausencia o presentarte a votar, por una orden de la Corte Suprema de EE. UU. del 22 de octubre.',
 			'src' => 'https://www.sos.nh.gov/elections/register-vote',
 			'checked' => '2026-10-28',
 		),
@@ -5502,7 +5502,7 @@ return array(
 		),
 		'id.without' => array(
 			'en' => 'If you\'re asked for ID and don\'t have it, you can vote a provisional ballot. To have it counted, give the ID to your county clerk by 5 p.m. on Friday, November 6, 2026.',
-			'es' => 'Si te piden una identificación y no la tienes, puedes votar con una boleta provisional. Para que cuente, entrega la identificación a la secretaría de tu condado (county clerk) a más tardar a las 5 p. m. del viernes 6 de noviembre de 2026.',
+			'es' => 'Si te piden una identificación y no la tienes, puedes votar con una boleta provisional. Para que cuente, entrega la identificación al secretario de tu condado (county clerk) a más tardar a las 5 p. m. del viernes 6 de noviembre de 2026.',
 			'src' => 'https://www.leg.state.nv.us/nrs/nrs-293.html',
 			'checked' => '2026-10-28',
 		),
@@ -5515,13 +5515,13 @@ return array(
 		'mail.track_url' => 'https://myballot.nv.gov/',
 		'mail.cure' => array(
 			'en' => 'If you didn\'t sign, or your signature doesn\'t match, your county clerk will contact you by mail, by phone if they have your number, and by email if you gave it. Fix it by 5 p.m. on Monday, November 9. The Secretary of State\'s Signature Cure page links to each county\'s online cure tool.',
-			'es' => 'Si no firmaste, o tu firma no coincide, la secretaría de tu condado se comunicará contigo por correo, por teléfono si tiene tu número y por correo electrónico si lo diste. Corrígelo a más tardar a las 5 p. m. del lunes 9 de noviembre. La página de corrección de firmas (Signature Cure) de la Secretaría de Estado tiene el enlace a la herramienta en línea de cada condado.',
+			'es' => 'Si no firmaste, o tu firma no coincide, el secretario de tu condado se comunicará contigo por correo, por teléfono si tiene tu número y por correo electrónico si lo diste. Corrígelo a más tardar a las 5 p. m. del lunes 9 de noviembre. La página de corrección de firmas (Signature Cure) de la Secretaría de Estado tiene el enlace a la herramienta en línea de cada condado.',
 			'src' => 'https://www.nvsos.gov/elections/election-information/2026-election-information/signature-cure',
 			'checked' => '2026-10-28',
 		),
 		'mail.dropbox' => array(
 			'en' => 'Every early voting site and Election Day polling place takes mail ballots, but only while it\'s open. You can drop your ballot at any official drop box in your county until polls close at 7 p.m. on Election Day. Check your county\'s list for each location\'s hours.',
-			'es' => 'Todos los lugares de votación anticipada y del Día de las Elecciones reciben boletas por correo, pero solo mientras están abiertos. Puedes dejar tu boleta en cualquier buzón oficial de tu condado hasta que cierren los lugares de votación, a las 7 p. m. del Día de las Elecciones. Revisa la lista de tu condado para ver el horario de cada lugar.',
+			'es' => 'Todos los lugares de votación anticipada y del Día de las Elecciones reciben boletas por correo, pero solo mientras están abiertos. Puedes dejar tu boleta en cualquier buzón de entrega oficial de tu condado hasta que cierren los lugares de votación, a las 7 p. m. del Día de las Elecciones. Revisa la lista de tu condado para ver el horario de cada lugar.',
 			'src' => 'https://www.nvsos.gov/elections/election-information/2026-election-information',
 			'checked' => '2026-10-28',
 		),
@@ -5569,7 +5569,7 @@ return array(
 		),
 		'faq.provisional' => array(
 			'en' => 'It\'s a ballot you vote when something can\'t be confirmed at the polls. Your county clerk counts it after checking that you\'re registered and eligible. If it was for missing ID, give the ID to the clerk by 5 p.m. on Friday, November 6.',
-			'es' => 'Es una boleta con la que votas cuando algo no se puede confirmar en el lugar de votación. La secretaría de tu condado la cuenta después de revisar que estás registrado y que puedes votar. Si fue por falta de identificación, entrega la identificación a la secretaría a más tardar a las 5 p. m. del viernes 6 de noviembre.',
+			'es' => 'Es una boleta con la que votas cuando algo no se puede confirmar en el lugar de votación. El secretario de tu condado la cuenta después de revisar que estás registrado y que puedes votar. Si fue por falta de identificación, entrega la identificación al secretario a más tardar a las 5 p. m. del viernes 6 de noviembre.',
 			'src' => 'https://www.leg.state.nv.us/nrs/nrs-293.html',
 			'checked' => '2026-10-28',
 		),
@@ -5587,7 +5587,7 @@ return array(
 		),
 		'faq.unsigned' => array(
 			'en' => 'Your county clerk will contact you by mail, and by phone or email if they have them, so you can sign. Do it by 5 p.m. on Monday, November 9, or your ballot won\'t count. Your county\'s online cure tool is linked from the Secretary of State\'s Signature Cure page.',
-			'es' => 'La secretaría de tu condado se comunicará contigo por correo, y por teléfono o correo electrónico si los tiene, para que firmes. Hazlo a más tardar a las 5 p. m. del lunes 9 de noviembre, o tu boleta no contará. La herramienta en línea de tu condado está en la página de corrección de firmas (Signature Cure) de la Secretaría de Estado.',
+			'es' => 'El secretario de tu condado se comunicará contigo por correo, y por teléfono o correo electrónico si los tiene, para que firmes. Hazlo a más tardar a las 5 p. m. del lunes 9 de noviembre, o tu boleta no contará. La herramienta en línea de tu condado está en la página de corrección de firmas (Signature Cure) de la Secretaría de Estado.',
 			'src' => 'https://www.leg.state.nv.us/nrs/nrs-293.html',
 			'checked' => '2026-10-28',
 		),
@@ -5766,7 +5766,7 @@ return array(
 		),
 		'faq.provisional' => array(
 			'en' => 'New York calls it an affidavit ballot. You vote one when your record is missing from the poll book at your correct polling place, or you moved within the state and didn\'t update your address. You sign a sworn statement that you\'re registered and still qualified to vote there. It counts only if the board finds you were entitled to vote, for example if your registration reached a board by October 24 but your name was left off the list. It doesn\'t register you for this election.',
-			'es' => 'En New York se llama boleta de declaración jurada (affidavit ballot). Votas con una cuando tu nombre no aparece en el registro de votantes de tu lugar de votación correcto, o te mudaste dentro del estado y no actualizaste tu dirección. Firmas una declaración jurada de que estás registrado y todavía puedes votar ahí. Cuenta solo si la junta encuentra que tenías derecho a votar, por ejemplo si tu registro llegó a una junta a más tardar el 24 de octubre pero tu nombre no salió en la lista. No te registra para esta elección.',
+			'es' => 'En New York se llama boleta de declaración jurada (affidavit ballot). Votas con una cuando tu nombre no aparece en el registro de votantes de tu lugar de votación correcto, o te mudaste dentro del estado y no actualizaste tu dirección. Firmas una declaración jurada de que estás registrado y todavía puedes votar ahí. Cuenta solo si la junta encuentra que tenías derecho a votar, por ejemplo si tu registro llegó a una junta a más tardar el 24 de octubre pero tu nombre no apareció en la lista. No te registra para esta elección.',
 			'src' => 'https://www.nysenate.gov/legislation/laws/ELN/9-209',
 			'checked' => '2026-10-28',
 		),
@@ -5987,7 +5987,7 @@ return array(
 		),
 		'dates.mail_request' => array(
 			'en' => 'Regular requests closed at 5 p.m. on Monday, October 19, 2026. Became physically incapacitated after that, for example from a hospital stay or childbirth, and can\'t vote in person? Ask your County Election Board about an emergency absentee ballot. Everyone else can still vote early in person or on Election Day.',
-			'es' => 'Las solicitudes regulares cerraron a las 5 p. m. del lunes 19 de octubre de 2026. ¿Quedaste físicamente incapacitado después de esa fecha, por ejemplo por una hospitalización o un parto, y no puedes votar en persona? Pregunta en la junta electoral de tu condado (County Election Board) por una boleta de voto en ausencia de emergencia. Los demás todavía pueden votar por anticipado en persona o el Día de las Elecciones.',
+			'es' => 'Las solicitudes regulares cerraron a las 5 p. m. del lunes 19 de octubre de 2026. ¿Después de esa fecha tuviste una incapacidad física, por ejemplo por una hospitalización o un parto, y no puedes votar en persona? Pregunta en la junta electoral de tu condado (County Election Board) por una boleta de voto en ausencia de emergencia. Los demás todavía pueden votar por anticipado en persona o el Día de las Elecciones.',
 			'src' => 'https://oklahoma.gov/elections/voters/absentee-voting.html',
 			'checked' => '2026-10-28',
 		),
@@ -6548,7 +6548,7 @@ return array(
 		),
 		'mail.witness' => array(
 			'en' => 'Seal your ballot in the certificate envelope, then sign and date it. Put that envelope in the return envelope. Can\'t sign your name? An assistant fills out the Voter Assistant Certification.',
-			'es' => 'Cierra tu boleta en el sobre de certificado (Voter\'s Mail Ballot Certificate Envelope), y fírmalo y ponle la fecha. Mete ese sobre en el sobre de devolución. ¿No puedes firmar? Una persona que te ayude llena la certificación de asistente (Voter Assistant Certification).',
+			'es' => 'Mete tu boleta en el sobre de certificado (Voter\'s Mail Ballot Certificate Envelope), ciérralo, fírmalo y ponle la fecha. Mete ese sobre en el sobre de devolución. ¿No puedes firmar? Una persona que te ayude llena la certificación de asistente (Voter Assistant Certification).',
 			'src' => 'https://vote.sos.ri.gov/Forms/Elections/Guides/VoterRef26.pdf',
 			'checked' => '2026-10-28',
 		),
@@ -6711,7 +6711,7 @@ return array(
 		),
 		'mail.who_list' => array(
 			'en' => array( 'are 65 or older', 'have a physical disability', 'can\'t vote during early voting hours for the whole early voting period, or while polls are open on Election Day, because of work', 'are caring for someone sick or physically disabled and can\'t vote during early voting hours for the whole early voting period, or while polls are open on Election Day', 'will be out of your county for all of early voting and while polls are open on Election Day', 'are confined to a jail or pretrial facility pending disposition of an arrest or trial and can\'t vote during early voting or on Election Day', 'are in the U.S. Armed Forces or Merchant Marines, or their spouse or dependent living with them', 'are admitted to a hospital as an emergency patient on Election Day or within four days before it' ),
-			'es' => array( 'tienes 65 años o más', 'tienes una discapacidad física', 'no puedes votar en el horario de votación anticipada durante todo el periodo de votación anticipada, ni mientras están abiertos los lugares de votación el Día de las Elecciones, por tu trabajo', 'cuidas a una persona enferma o con discapacidad física y no puedes votar en el horario de votación anticipada durante todo ese periodo, ni mientras están abiertos los lugares de votación el Día de las Elecciones', 'vas a estar fuera de tu condado durante toda la votación anticipada y mientras estén abiertos los lugares de votación el Día de las Elecciones', 'estás en una cárcel o centro de detención preventiva mientras se resuelve un arresto o juicio, y no puedes votar por anticipado ni el Día de las Elecciones', 'estás en las Fuerzas Armadas o la Marina Mercante de EE. UU., o eres su cónyuge o dependiente y vives con esa persona', 'te internan en un hospital como paciente de emergencia el Día de las Elecciones o en los cuatro días antes' ),
+			'es' => array( 'tienes 65 años o más', 'tienes una discapacidad física', 'no puedes votar en el horario de votación anticipada durante todo el periodo de votación anticipada, ni mientras están abiertos los lugares de votación el Día de las Elecciones, por tu trabajo', 'cuidas a una persona enferma o con discapacidad física y no puedes votar en el horario de votación anticipada durante todo ese periodo, ni mientras están abiertos los lugares de votación el Día de las Elecciones', 'vas a estar fuera de tu condado durante toda la votación anticipada y mientras estén abiertos los lugares de votación el Día de las Elecciones', 'estás en una cárcel o centro de detención preventiva mientras se resuelve un arresto o juicio, y no puedes votar por anticipado ni el Día de las Elecciones', 'estás en las Fuerzas Armadas o la Marina Mercante de EE. UU., o eres su cónyuge o dependiente económico y vives con esa persona', 'te internan en un hospital como paciente de emergencia el Día de las Elecciones o en los cuatro días antes' ),
 			'src' => 'https://scvotes.gov/voters/absentee-voting/',
 			'checked' => '2026-10-28',
 		),
@@ -6978,12 +6978,12 @@ return array(
 		),
 		'how.first_time' => array(
 			'en' => 'Moved within your county? Go to any early voting site in your county through Thursday, October 29. You can update your address and vote there. Moved to a different county? Your registration doesn\'t move with you. You had to register in your new county by October 5 to vote in this election.',
-			'es' => '¿Te mudaste dentro de tu condado? Ve a cualquier centro de votación anticipada de tu condado hasta el jueves 29 de octubre. Ahí puedes actualizar tu dirección y votar. ¿Te mudaste a otro condado? Tu registro no se pasa contigo. Tenías que registrarte en tu nuevo condado a más tardar el 5 de octubre para votar en esta elección.',
+			'es' => '¿Te mudaste dentro de tu condado? Ve a cualquier centro de votación anticipada de tu condado hasta el jueves 29 de octubre. Ahí puedes actualizar tu dirección y votar. ¿Te mudaste a otro condado? Tu registro no se traslada contigo. Tenías que registrarte en tu nuevo condado a más tardar el 5 de octubre para votar en esta elección.',
 			'src' => 'https://sos.tn.gov/elections/guides/how-to-update-your-voter-registration',
 			'checked' => '2026-10-28',
 			'until' => '2026-10-29',
 			'en_after' => 'Moved within your county and haven\'t updated your address? On Election Day, you sign an affidavit, then vote at your new polling place or a central site your county picks. Moved to a different county? Your registration doesn\'t move with you. You had to register in your new county by October 5 to vote in this election.',
-			'es_after' => '¿Te mudaste dentro de tu condado y no has actualizado tu dirección? El Día de las Elecciones firmas una declaración jurada y luego votas en tu nuevo lugar de votación o en un lugar central que elija tu condado. ¿Te mudaste a otro condado? Tu registro no se pasa contigo. Tenías que registrarte en tu nuevo condado a más tardar el 5 de octubre para votar en esta elección.',
+			'es_after' => '¿Te mudaste dentro de tu condado y no has actualizado tu dirección? El Día de las Elecciones firmas una declaración jurada y luego votas en tu nuevo lugar de votación o en un lugar central que elija tu condado. ¿Te mudaste a otro condado? Tu registro no se traslada contigo. Tenías que registrarte en tu nuevo condado a más tardar el 5 de octubre para votar en esta elección.',
 		),
 		'where.locator_url' => 'https://tnmap.tn.gov/voterlookup/',
 		'where.locator_label' => array(
@@ -7023,7 +7023,7 @@ return array(
 		),
 		'mail.who_list' => array(
 			'en' => array( 'are 60 or older', 'will be outside your county during all of early voting and all day on Election Day', 'are hospitalized, ill or physically disabled and can\'t get to your polling place', 'care for someone who is hospitalized, ill or disabled', 'or your spouse are a full-time student at an accredited college or university outside your county', 'live in a nursing home, assisted living facility or home for the aged outside your county', 'are a candidate in the election', 'observe a religious holiday that keeps you from voting in person during early voting and on Election Day', 'serve as an Election Day official or work for the election commission', 'can\'t vote in person because of jury duty', 'have a disability and an inaccessible polling place', 'or your spouse have a commercial driver license (CDL) or TWIC card, will be working outside your county or the state during early voting and Election Day hours, and have no address there to get mail', 'are in the military or a U.S. citizen living overseas', 'are on the permanent absentee list' ),
-			'es' => array( 'tienes 60 años o más', 'vas a estar fuera de tu condado durante toda la votación anticipada y todo el Día de las Elecciones', 'estás en el hospital, enfermo o tienes una discapacidad física y no puedes ir a tu lugar de votación', 'cuidas a una persona que está en el hospital, enferma o tiene una discapacidad', 'tú o tu cónyuge estudian tiempo completo en una universidad acreditada fuera de tu condado', 'vives en un asilo de ancianos, una residencia de vida asistida o un hogar para personas mayores fuera de tu condado', 'eres candidato o candidata en la elección', 'observas una festividad religiosa que te impide votar en persona durante la votación anticipada y el Día de las Elecciones', 'trabajas como funcionario electoral el Día de las Elecciones o para la comisión electoral', 'no puedes votar en persona por servir como jurado', 'tienes una discapacidad y tu lugar de votación no es accesible', 'tú o tu cónyuge tienen licencia de conducir comercial (CDL) o tarjeta TWIC, van a trabajar fuera de tu condado o del estado durante el horario de la votación anticipada y del Día de las Elecciones, y no tienen ahí una dirección donde recibir correo', 'eres militar o ciudadano de EE. UU. que vive en el extranjero', 'estás en la lista permanente de voto en ausencia' ),
+			'es' => array( 'tienes 60 años o más', 'vas a estar fuera de tu condado durante toda la votación anticipada y todo el Día de las Elecciones', 'estás en el hospital o tienes una enfermedad o una discapacidad física, y no puedes ir a tu lugar de votación', 'cuidas a una persona que está en el hospital, enferma o tiene una discapacidad', 'tú o tu cónyuge estudian tiempo completo en una universidad acreditada fuera de tu condado', 'vives en un asilo de ancianos, una residencia de vida asistida o un hogar para personas mayores fuera de tu condado', 'eres candidato o candidata en la elección', 'observas una festividad religiosa que te impide votar en persona durante la votación anticipada y el Día de las Elecciones', 'trabajas en la elección el Día de las Elecciones o para la comisión electoral', 'no puedes votar en persona por servir como jurado', 'tienes una discapacidad y tu lugar de votación no es accesible', 'tú o tu cónyuge tienen licencia de conducir comercial (CDL) o tarjeta TWIC, van a trabajar fuera de tu condado o del estado durante el horario de la votación anticipada y del Día de las Elecciones, y no tienen ahí una dirección donde recibir correo', 'eres militar, o tienes la ciudadanía de EE. UU. y vives en el extranjero', 'estás en la lista permanente de voto en ausencia' ),
 			'src' => 'https://sos.tn.gov/elections/guides/guide-to-absentee-voting',
 			'checked' => '2026-10-28',
 		),
@@ -7220,7 +7220,7 @@ return array(
 		),
 		'mail.dropbox' => array(
 			'en' => 'Texas has no drop boxes. Your marked ballot can go back by mail, by a delivery company, or by you in person to the early voting clerk\'s office, only while polls are open on Election Day and with an accepted ID. No one else can drop it off for you. Changed your mind? Bring the mail ballot with you and hand it in at a polling place so you can vote in person. Without it, you can vote only a provisional ballot.',
-			'es' => 'Texas no tiene buzones de entrega. Tu boleta marcada se puede devolver por correo, por una compañía de mensajería, o en persona por ti en la oficina del secretario de votación anticipada (early voting clerk), solo mientras estén abiertas las casillas el Día de las Elecciones y con una identificación aceptada. Nadie más la puede entregar por ti. ¿Cambiaste de opinión? Lleva tu boleta por correo y entrégala en un lugar de votación para poder votar en persona. Sin ella, solo puedes votar con una boleta provisional.',
+			'es' => 'Texas no tiene buzones de entrega. Puedes devolver tu boleta marcada por correo, por una compañía de mensajería o en persona en la oficina del secretario de votación anticipada (early voting clerk). En persona, solo mientras estén abiertos los lugares de votación el Día de las Elecciones y con una identificación aceptada. Nadie más la puede entregar por ti. ¿Cambiaste de opinión? Lleva tu boleta por correo y entrégala en un lugar de votación para poder votar en persona. Sin ella, solo puedes votar con una boleta provisional.',
 			'src' => 'https://statutes.capitol.texas.gov/Docs/EL/htm/EL.86.htm',
 			'checked' => '2026-10-28',
 		),
@@ -7238,7 +7238,7 @@ return array(
 		),
 		'polls_rules.phone' => array(
 			'en' => 'Keep your phone put away in the room where voting happens. Texas bans recording images or sound within 100 feet of a voting station, so take your sticker selfie outside and well away from the door.',
-			'es' => 'Guarda tu teléfono en el cuarto donde se vota. Texas prohíbe grabar imágenes o sonido a menos de 100 pies de una cabina de votación, así que tómate la selfie con tu sticker afuera y lejos de la puerta.',
+			'es' => 'En el cuarto donde se vota, mantén tu teléfono guardado. Texas prohíbe grabar imágenes o sonido a menos de 100 pies de una cabina de votación, así que tómate la selfie con tu sticker afuera y lejos de la puerta.',
 			'src' => 'https://statutes.capitol.texas.gov/Docs/EL/htm/EL.61.htm',
 			'checked' => '2026-10-28',
 		),
@@ -7274,7 +7274,7 @@ return array(
 		),
 		'faq.provisional' => array(
 			'en' => 'You vote a provisional ballot when poll workers can\'t verify your registration, or when you have an accepted photo ID but didn\'t bring it. In that case, take the ID to your county voter registrar\'s office within six days after Election Day, by Monday, November 9, or your ballot won\'t count. You\'ll get a notice in the mail telling you whether it counted.',
-			'es' => 'Votas con una boleta provisional cuando el personal de casilla no puede verificar tu registro, o cuando tienes una identificación con foto aceptada pero no la llevaste. En ese caso, lleva la identificación a la oficina del registrador de votantes de tu condado (voter registrar) dentro de los seis días después del Día de las Elecciones, a más tardar el lunes 9 de noviembre, o tu boleta no contará. Te llegará un aviso por correo que te dice si contó.',
+			'es' => 'Votas con una boleta provisional cuando los trabajadores electorales no pueden verificar tu registro, o cuando tienes una identificación con foto aceptada pero no la llevaste. En ese caso, lleva la identificación a la oficina del registrador de votantes de tu condado (voter registrar) dentro de los seis días después del Día de las Elecciones, a más tardar el lunes 9 de noviembre, o tu boleta no contará. Te llegará un aviso por correo que te dice si contó.',
 			'src' => 'https://www.votetexas.gov/voting/need-id.html',
 			'checked' => '2026-10-28',
 		),
@@ -7433,7 +7433,7 @@ return array(
 		),
 		'sticker.tradition' => array(
 			'en' => 'For 2026, Weber County Elections held an America 250 "I Voted" sticker contest for local high school students. The winner is Hailey, a 10th grader at Ben Lomond High School, and her design goes to voters through the 2026 election cycle. Statewide, vote.utah.gov still offers four printable 2020 "I Voted" stickers.',
-			'es' => 'Para 2026, la oficina electoral del condado de Weber organizó un concurso de stickers de "I Voted" de America 250 para estudiantes de preparatoria. Quien ganó es Hailey, de 10.º grado en Ben Lomond High School, y su diseño se entrega a los votantes durante el ciclo electoral de 2026. A nivel estatal, vote.utah.gov todavía ofrece cuatro stickers de "I Voted" de 2020 para imprimir.',
+			'es' => 'Para 2026, la oficina electoral del condado de Weber organizó un concurso de stickers de "I Voted" de America 250 para estudiantes de preparatoria. La ganadora es Hailey, estudiante de 10.º grado en Ben Lomond High School, y su diseño se entrega a los votantes durante el ciclo electoral de 2026. A nivel estatal, vote.utah.gov todavía ofrece cuatro stickers de "I Voted" de 2020 para imprimir.',
 			'src' => 'https://www.weberelections.gov/250sticker',
 			'checked' => '2026-10-28',
 		),
@@ -8017,7 +8017,7 @@ return array(
 		'id.rule' => 'photo_required',
 		'id.accepted' => array(
 			'en' => array( 'Wisconsin DOT driver\'s license, even if driving privileges are revoked or suspended', 'Wisconsin DOT ID card', 'Military ID from a U.S. uniformed service', 'U.S. passport', 'ID from a federally recognized tribe in Wisconsin', 'Photo ID from a Wisconsin accredited college or university with issue date, signature and an expiration date no more than two years out. If it\'s expired, also bring a document that shows you\'re enrolled now', 'Veteran\'s photo ID from the Veterans Health Administration (unexpired)', 'Certificate of naturalization issued in the last two years', 'Wisconsin DOT driving receipt or ID card receipt (valid 45 days)' ),
-			'es' => array( 'Licencia de conducir del DOT de Wisconsin, aunque tengas suspendido o revocado el permiso de manejar', 'Tarjeta de identificación del DOT de Wisconsin', 'Identificación militar de un servicio uniformado de EE. UU.', 'Pasaporte de EE. UU.', 'Identificación de una tribu reconocida a nivel federal en Wisconsin', 'Identificación con foto de un colegio o universidad acreditada de Wisconsin con fecha de emisión, firma y una fecha de vencimiento de no más de dos años. Si está vencida, lleva también un documento que compruebe tu inscripción actual', 'Identificación de veterano con foto de la Administración de Salud de Veteranos (Veterans Health Administration), vigente', 'Certificado de naturalización emitido en los últimos dos años', 'Recibo de licencia de conducir o de tarjeta de identificación del DOT de Wisconsin (válido por 45 días)' ),
+			'es' => array( 'Licencia de conducir del DOT de Wisconsin, aunque tengas suspendido o revocado el permiso de manejar', 'Tarjeta de identificación del DOT de Wisconsin', 'Identificación militar de un servicio uniformado de EE. UU.', 'Pasaporte de EE. UU.', 'Identificación de una tribu reconocida a nivel federal en Wisconsin', 'Identificación con foto de un colegio o universidad acreditada de Wisconsin con fecha de emisión, firma y una fecha de vencimiento a no más de dos años de la fecha de emisión. Si está vencida, lleva también un documento que compruebe tu inscripción actual', 'Identificación de veterano con foto de la Administración de Salud de Veteranos (Veterans Health Administration), vigente', 'Certificado de naturalización emitido en los últimos dos años', 'Recibo de licencia de conducir o de tarjeta de identificación del DOT de Wisconsin (válido por 45 días)' ),
 			'src' => 'https://elections.wi.gov/photoid',
 			'checked' => '2026-10-28',
 		),

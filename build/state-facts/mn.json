@@ -41,7 +41,7 @@
   },
   "early_hours": {
    "en": "Most locations keep their usual hours plus 9 a.m. to 3 p.m. on Saturday, October 31 and Sunday, November 1, and until 5 p.m. on Monday, November 2, the last day. Some locations list other hours, so check yours on the Secretary of State's list.",
-   "es": "La mayoría de los lugares tiene su horario normal más de 9 a. m. a 3 p. m. el sábado 31 de octubre y el domingo 1 de noviembre, y hasta las 5 p. m. el lunes 2 de noviembre, el último día. Algunos lugares tienen otro horario, así que revisa el tuyo en la lista de la Secretaría de Estado.",
+   "es": "La mayoría de los lugares mantiene su horario normal y además abre de 9 a. m. a 3 p. m. el sábado 31 de octubre y el domingo 1 de noviembre, y hasta las 5 p. m. el lunes 2 de noviembre, el último día. Algunos lugares tienen otro horario, así que revisa el tuyo en la lista de la Secretaría de Estado.",
    "src": "https://www.sos.mn.gov/elections-voting/other-ways-to-vote/voting-locations-before-election-day/",
    "checked": "2026-10-28",
    "quote": "Unless noted otherwise locations will be: Open during the stated days/times starting September 18 (Fri) Open these extended hours: Open 9:00 a.m.-3:00 p.m. on October 31 (Sat) Open 9:00 a.m.-3:00 p.m. on November 1 (Sun) Open until 5:00 p.m. on November 2 (Mon)",
@@ -58,7 +58,7 @@
  "how": {
   "in_person": {
    "en": "Vote early in person through Monday, November 2. At most locations you put your ballot straight into a ballot counter, as on Election Day. A few locations still have you seal it in envelopes.",
-   "es": "Vota por anticipado en persona hasta el lunes 2 de noviembre. En la mayoría de los lugares metes tu boleta directo en una máquina contadora, como el Día de las Elecciones. En unos pocos lugares todavía la guardas en sobres.",
+   "es": "Vota por anticipado en persona hasta el lunes 2 de noviembre. En la mayoría de los lugares metes tu boleta directo en una máquina contadora, como el Día de las Elecciones. En unos pocos lugares todavía tienes que meterla en sobres y cerrarlos.",
    "src": "https://www.sos.mn.gov/elections-voting/other-ways-to-vote/voting-locations-before-election-day/",
    "checked": "2026-10-28",
    "quote": "Early voting ballots are put directly into ballot counters A few locations have voters put ballots in envelopes instead",
@@ -69,7 +69,7 @@
   },
   "first_time": {
    "en": "Not registered? Register when you vote, early in person or at your polling place on Election Day. Bring a Minnesota driver's license or ID with your current address, or a photo ID plus a bill dated within 30 days of the election or a lease valid through Election Day. The bill can be on your phone. A registered voter from your precinct can also go with you and vouch for your address.",
-   "es": "¿No estás registrado? Regístrate cuando votes, por anticipado en persona o en tu lugar de votación el Día de las Elecciones. Lleva una licencia de conducir o identificación de Minnesota con tu dirección actual, o una identificación con foto más un recibo con fecha de los 30 días antes de la elección o un contrato de renta vigente hasta el Día de las Elecciones. Puedes mostrar el recibo en tu celular. Un votante registrado de tu precinto también puede acompañarte y dar fe de tu dirección.",
+   "es": "¿No estás registrado? Regístrate cuando votes, por anticipado en persona o en tu lugar de votación el Día de las Elecciones. Lleva una licencia de conducir o identificación de Minnesota con tu dirección actual, o una identificación con foto más un recibo con fecha dentro de los 30 días antes de la elección o un contrato de renta vigente hasta el Día de las Elecciones. Puedes mostrar el recibo en tu celular. Un votante registrado de tu precinto también puede acompañarte y dar fe de tu dirección.",
    "src": "https://www.sos.mn.gov/elections-voting/register-to-vote/register-on-election-day/",
    "checked": "2026-10-28",
    "quote": "Bill, account or start-of-service statement due or dated within 30 days of the election for:",
@@ -215,7 +215,7 @@
   },
   "late_mail": {
    "en": "Within a week of Election Day, the Secretary of State says to drop it off instead. A mailed ballot must arrive by 8 p.m. on November 3, and a postmark doesn't count. Drop it at the office that sent it, or its drop box, by 5 p.m. that day.",
-   "es": "A una semana del Día de las Elecciones, la Secretaría de Estado recomienda entregarla en persona. Una boleta enviada por correo debe llegar a más tardar a las 8 p. m. del 3 de noviembre, y el matasellos no cuenta. Entrégala en la oficina que te la envió, o en su buzón de entrega, a más tardar a las 5 p. m. de ese día.",
+   "es": "A menos de una semana del Día de las Elecciones, la Secretaría de Estado recomienda entregarla en persona. Una boleta enviada por correo debe llegar a más tardar a las 8 p. m. del 3 de noviembre, y el matasellos no cuenta. Entrégala en la oficina que te la envió, o en su buzón de entrega, a más tardar a las 5 p. m. de ese día.",
    "src": "https://www.sos.mn.gov/elections-voting/other-ways-to-vote/return-your-ballot/",
    "checked": "2026-10-28",
    "quote": "Within a week of Election Day, consider dropping off the ballot instead.",

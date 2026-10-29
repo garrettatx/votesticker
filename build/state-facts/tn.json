@@ -68,14 +68,14 @@
   },
   "first_time": {
    "en": "Moved within your county? Go to any early voting site in your county through Thursday, October 29. You can update your address and vote there. Moved to a different county? Your registration doesn't move with you. You had to register in your new county by October 5 to vote in this election.",
-   "es": "¿Te mudaste dentro de tu condado? Ve a cualquier centro de votación anticipada de tu condado hasta el jueves 29 de octubre. Ahí puedes actualizar tu dirección y votar. ¿Te mudaste a otro condado? Tu registro no se pasa contigo. Tenías que registrarte en tu nuevo condado a más tardar el 5 de octubre para votar en esta elección.",
+   "es": "¿Te mudaste dentro de tu condado? Ve a cualquier centro de votación anticipada de tu condado hasta el jueves 29 de octubre. Ahí puedes actualizar tu dirección y votar. ¿Te mudaste a otro condado? Tu registro no se traslada contigo. Tenías que registrarte en tu nuevo condado a más tardar el 5 de octubre para votar en esta elección.",
    "src": "https://sos.tn.gov/elections/guides/how-to-update-your-voter-registration",
    "checked": "2026-10-28",
    "quote": "The voter may go to any early voting location within their county to update their address and vote. ... If you move to a different county, it is not considered an update. Your registration does not transfer to other counties in Tennessee. ... the voter must register no later than thirty (30) days before the election.",
    "status": "verified",
    "until": "2026-10-29",
    "en_after": "Moved within your county and haven't updated your address? On Election Day, you sign an affidavit, then vote at your new polling place or a central site your county picks. Moved to a different county? Your registration doesn't move with you. You had to register in your new county by October 5 to vote in this election.",
-   "es_after": "¿Te mudaste dentro de tu condado y no has actualizado tu dirección? El Día de las Elecciones firmas una declaración jurada y luego votas en tu nuevo lugar de votación o en un lugar central que elija tu condado. ¿Te mudaste a otro condado? Tu registro no se pasa contigo. Tenías que registrarte en tu nuevo condado a más tardar el 5 de octubre para votar en esta elección.",
+   "es_after": "¿Te mudaste dentro de tu condado y no has actualizado tu dirección? El Día de las Elecciones firmas una declaración jurada y luego votas en tu nuevo lugar de votación o en un lugar central que elija tu condado. ¿Te mudaste a otro condado? Tu registro no se traslada contigo. Tenías que registrarte en tu nuevo condado a más tardar el 5 de octubre para votar en esta elección.",
    "notes": "Replaces the old line from how-to-early-vote-in-person ('change his or her address of registration and vote in the same voting location'), which didn't say it applies only to moves within the county. After-text from the same page: 'the voter must complete an affidavit before being allowed to vote. The voter will be required to vote either at their new polling location or at a central location designated by the county election commission office.' Read in Chrome."
   }
  },
@@ -165,17 +165,17 @@
    "es": [
     "tienes 60 años o más",
     "vas a estar fuera de tu condado durante toda la votación anticipada y todo el Día de las Elecciones",
-    "estás en el hospital, enfermo o tienes una discapacidad física y no puedes ir a tu lugar de votación",
+    "estás en el hospital o tienes una enfermedad o una discapacidad física, y no puedes ir a tu lugar de votación",
     "cuidas a una persona que está en el hospital, enferma o tiene una discapacidad",
     "tú o tu cónyuge estudian tiempo completo en una universidad acreditada fuera de tu condado",
     "vives en un asilo de ancianos, una residencia de vida asistida o un hogar para personas mayores fuera de tu condado",
     "eres candidato o candidata en la elección",
     "observas una festividad religiosa que te impide votar en persona durante la votación anticipada y el Día de las Elecciones",
-    "trabajas como funcionario electoral el Día de las Elecciones o para la comisión electoral",
+    "trabajas en la elección el Día de las Elecciones o para la comisión electoral",
     "no puedes votar en persona por servir como jurado",
     "tienes una discapacidad y tu lugar de votación no es accesible",
     "tú o tu cónyuge tienen licencia de conducir comercial (CDL) o tarjeta TWIC, van a trabajar fuera de tu condado o del estado durante el horario de la votación anticipada y del Día de las Elecciones, y no tienen ahí una dirección donde recibir correo",
-    "eres militar o ciudadano de EE. UU. que vive en el extranjero",
+    "eres militar, o tienes la ciudadanía de EE. UU. y vives en el extranjero",
     "estás en la lista permanente de voto en ausencia"
    ],
    "src": "https://sos.tn.gov/elections/guides/guide-to-absentee-voting",

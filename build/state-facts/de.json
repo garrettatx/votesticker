@@ -169,7 +169,7 @@
   "track_url": "https://ivote.de.gov/",
   "cure": {
    "en": "Forgot to sign the oath or seal the envelope? The Department will try to reach you by phone or email so you can fix it. Fix it before the polls close at 8 p.m. on Election Day and it gets counted.",
-   "es": "¿Se te olvidó firmar el juramento o cerrar el sobre? El Departamento intentará comunicarse contigo por teléfono o correo electrónico para que lo corrijas. Corrígelo antes de que cierren los lugares de votación a las 8 p. m. del Día de las Elecciones y se cuenta.",
+   "es": "¿Se te olvidó firmar el juramento o cerrar el sobre? El Departamento intentará comunicarse contigo por teléfono o correo electrónico para que lo corrijas. Si lo corriges antes de que cierren los lugares de votación a las 8 p. m. del Día de las Elecciones, tu boleta se cuenta.",
    "src": "https://delcode.delaware.gov/title15/c055/index.html",
    "checked": "2026-10-28",
    "quote": "The Department shall attempt to notify the voter by phone or email of the deficiency under subsection (a) of this section and of the action that the voter can take to correct the deficiency.",

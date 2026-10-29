@@ -153,7 +153,7 @@
   },
   "dropbox": {
    "en": "Texas has no drop boxes. Your marked ballot can go back by mail, by a delivery company, or by you in person to the early voting clerk's office, only while polls are open on Election Day and with an accepted ID. No one else can drop it off for you. Changed your mind? Bring the mail ballot with you and hand it in at a polling place so you can vote in person. Without it, you can vote only a provisional ballot.",
-   "es": "Texas no tiene buzones de entrega. Tu boleta marcada se puede devolver por correo, por una compañía de mensajería, o en persona por ti en la oficina del secretario de votación anticipada (early voting clerk), solo mientras estén abiertas las casillas el Día de las Elecciones y con una identificación aceptada. Nadie más la puede entregar por ti. ¿Cambiaste de opinión? Lleva tu boleta por correo y entrégala en un lugar de votación para poder votar en persona. Sin ella, solo puedes votar con una boleta provisional.",
+   "es": "Texas no tiene buzones de entrega. Puedes devolver tu boleta marcada por correo, por una compañía de mensajería o en persona en la oficina del secretario de votación anticipada (early voting clerk). En persona, solo mientras estén abiertos los lugares de votación el Día de las Elecciones y con una identificación aceptada. Nadie más la puede entregar por ti. ¿Cambiaste de opinión? Lleva tu boleta por correo y entrégala en un lugar de votación para poder votar en persona. Sin ella, solo puedes votar con una boleta provisional.",
    "src": "https://statutes.capitol.texas.gov/Docs/EL/htm/EL.86.htm",
    "checked": "2026-10-28",
    "quote": "The carrier envelope may be delivered in another envelope and must be transported and delivered only by: (1) mail; (2) common or contract carrier; or (3) subject to Subsections (a-1) and (a-2), in-person delivery by the voter who voted the ballot. (a-1) The voter may deliver a marked ballot in person to the early voting clerk's office only while the polls are open on election day. A voter who delivers a marked ballot in person must present an acceptable form of identification described by Section 63.0101.",
@@ -200,7 +200,7 @@
   },
   "phone": {
    "en": "Keep your phone put away in the room where voting happens. Texas bans recording images or sound within 100 feet of a voting station, so take your sticker selfie outside and well away from the door.",
-   "es": "Guarda tu teléfono en el cuarto donde se vota. Texas prohíbe grabar imágenes o sonido a menos de 100 pies de una cabina de votación, así que tómate la selfie con tu sticker afuera y lejos de la puerta.",
+   "es": "En el cuarto donde se vota, mantén tu teléfono guardado. Texas prohíbe grabar imágenes o sonido a menos de 100 pies de una cabina de votación, así que tómate la selfie con tu sticker afuera y lejos de la puerta.",
    "src": "https://statutes.capitol.texas.gov/Docs/EL/htm/EL.61.htm",
    "checked": "2026-10-28",
    "quote": "(a) Except as permitted by Sections 61.012 and 61.013, a person may not use a wireless communication device within a room in which voting is taking place. (b) A person may not use any mechanical or electronic means of recording images or sound within 100 feet of a voting station.",
@@ -244,7 +244,7 @@
  "faq": {
   "provisional": {
    "en": "You vote a provisional ballot when poll workers can't verify your registration, or when you have an accepted photo ID but didn't bring it. In that case, take the ID to your county voter registrar's office within six days after Election Day, by Monday, November 9, or your ballot won't count. You'll get a notice in the mail telling you whether it counted.",
-   "es": "Votas con una boleta provisional cuando el personal de casilla no puede verificar tu registro, o cuando tienes una identificación con foto aceptada pero no la llevaste. En ese caso, lleva la identificación a la oficina del registrador de votantes de tu condado (voter registrar) dentro de los seis días después del Día de las Elecciones, a más tardar el lunes 9 de noviembre, o tu boleta no contará. Te llegará un aviso por correo que te dice si contó.",
+   "es": "Votas con una boleta provisional cuando los trabajadores electorales no pueden verificar tu registro, o cuando tienes una identificación con foto aceptada pero no la llevaste. En ese caso, lleva la identificación a la oficina del registrador de votantes de tu condado (voter registrar) dentro de los seis días después del Día de las Elecciones, a más tardar el lunes 9 de noviembre, o tu boleta no contará. Te llegará un aviso por correo que te dice si contó.",
    "src": "https://www.votetexas.gov/voting/need-id.html",
    "checked": "2026-10-28",
    "quote": "If a voter states that they (a) do not possess an acceptable form of photo identification listed above, and the voter can reasonably obtain one of these acceptable forms of identification or (b) possesses, but did not bring to the polling place, one of the seven forms of acceptable photo identification listed above, the voter may cast a provisional ballot at the polls. However, in order to have the provisional ballot counted, the voter will be required to visit the voter registrar’s office within six calendar days of the date of the election to present one of the above forms of photo ID",
