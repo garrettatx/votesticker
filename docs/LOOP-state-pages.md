@@ -37,8 +37,7 @@ strongest pages: change only what's wrong, stale, missing or unclear.
 | All 50 states and DC | Live (Oct 28 and Oct 29 5:30 a.m. pushes) |
 
 ## Next
-- "Still need to vote? / Already voted?" panel under the sticker downloads (every b5 read led with it).
-- Michigan page order: official 2026 designs right after our gallery.
+- Done Oct 29: the two-path panel (live 5:30 a.m.); the sticker story right after Key Dates on every state (committed, ships 1 p.m.).
 - Re-read the ten lowest pages' queries Nov 11, 14 days after recrawl.
 
 ## Log
@@ -69,3 +68,9 @@ read "I Voted and I Voted Early Stickers", the two-path panel shows on Texas, Mi
 line. Every state page is now live with the re-verified facts.
 Next: Oct 29 dated checks (Search Console look for the Oct 24 pages, GA4 v2 read when the Oct 28 table lands,
 Arkansas and Nebraska VoterView), then Michigan page order and the open template items.
+
+### October 29, 6:20 a.m.
+Impact look for the Oct 24 pages logged in LOOP-election-prep (no lift yet; baseline). Sticker story moved up to
+right after Key Dates on every state page, also after the election; QA passes. Ships in the 1 p.m. push. Next:
+GA4 v2 read when the Oct 28 BigQuery table lands; the NJ cure deadline conflict; ALLOW_HOSTS for official county
+sites on .com and .org (Camden NJ, Washington County MD, Johnson County KS, Montgomery County KS).
