@@ -328,3 +328,21 @@ look for a county or state fallback to name beside it. No change, no push.
 - GA4 BigQuery: only events_20261027 so far; the Oct 28 table (first full day of measurement v2) usually lands
   midday. Read it then.
 - Still due today: Search Console look for the 21 pages updated Oct 24 (data lags 2 to 3 days).
+
+### October 29, 6 a.m.: First Impact Look, the 21 Pages Changed Oct 24
+Search Console, English state pages, impressions/clicks per day:
+
+| Date | 21 changed pages | Other state pages | Changed share |
+|---|---|---|---|
+| Oct 23 | 640 / 65 | 316 / 52 | 67% |
+| Oct 24 | 725 / 78 | 354 / 54 | 67% |
+| Oct 26 | 938 / 91 | 497 / 88 | 65% |
+| Oct 27 | 1,203 / 126 | 653 / 94 | 65% |
+| Oct 28 | 1,145 / 117 | 703 / 112 | 62% |
+
+Both groups roughly doubled since Oct 21 (election-week demand). The changed pages didn't outgrow the others; their
+share slipped from 67% to 62%. No lift attributable to the Oct 24 edits yet, and the comparison is now muddied:
+most other pages changed Oct 26 to 29. CTR runs about 10% on the changed group and 16% on the rest (smaller
+states rank higher). Use this as a baseline. The Oct 29 title and heading changes ship to every page at once,
+so the next read compares each page with itself, same weekdays, 14 days on (Nov 12), with post-election demand
+in mind.
