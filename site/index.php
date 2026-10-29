@@ -517,6 +517,22 @@ function vote_guide( $st ) {
 			. ( vote_fact( $st, 'dates.reg_deadline' ) && 'post' !== vote_phase() ? vote_rn( 'voter-registration', 'Missed a registration deadline?', 'What you can still do, state by state' ) : '' ) . '</section>';
 	}
 
+	// Right after the dates (October 29: "[state] i voted sticker" searchers want the official designs near the
+	// top; Michigan and Kansas Clearscope reads): the tradition, then where to get a sticker when you vote early or
+	// by mail (October 23). Each answer
+	// names the county or city it comes from; a state gets one only with an official source for it.
+	$sticker = '';
+	$ssrc = array();
+	foreach ( array( 'sticker.tradition' => '', 'sticker.early' => 'Do I get an I voted sticker if I vote early in %s?', 'sticker.mail' => 'I voted by mail in %s. How do I get a sticker?' ) as $k => $q ) {
+		$f = vote_fact( $st, $k );
+		if ( ! $f ) { continue; }
+		$sticker .= ( $q ? '<h3>' . vote_e( t( $q, $name ) ) . '</h3>' : '' ) . '<p>' . vote_e( $f['text'] ) . '</p>';
+		$ssrc[] = $f['src'];
+	}
+	if ( $sticker ) {
+		$out .= '<section class="guide" aria-labelledby="sticker-h">' . $h( 'sticker-h', t( '%s and the I Voted Sticker', $name ) ) . $sticker . vote_history_more( $st )
+			. '<p><a href="#maker-h">' . vote_e( t( 'Make your own %s I voted sticker', $name ) ) . '</a></p>' . vote_sources_line( $st, $ssrc ) . '</section>';
+	}
 	// A section is a list of facts; each adds its source to the section's line.
 	$section = function ( $id, $heading, $keys, $after = '' ) use ( $st, $h ) {
 		$body = ''; $srcs = array();
@@ -565,23 +581,9 @@ function vote_guide( $st ) {
 	if ( $track && $mail ) { $mail .= '<p class="guide__more"><a href="' . vote_e( $track ) . '" target="_blank" rel="noopener">' . vote_e( t( 'Track your %s mail ballot', $name ) ) . '</a></p>'; }
 	if ( $mail && ! vote_between() ) { $out .= '<section class="guide" aria-labelledby="mail-h">' . $h( 'mail-h', t( $post ? 'Check or Fix Your Mail Ballot' : ( 'mail' === ( $st['kind'] ?? '' ) && vote_verified( $st ) ? 'Returning Your Ballot' : 'Who Can Vote by Mail' ) ) ) . $mail . vote_sources_line( $st, $srcs ) . vote_rn( 'mail-in-voting', ( vote_fact( $st, 'mail.cure' ) || vote_fact( $st, 'dates.cure' ) ) && 'AK' !== $st['abbr'] /* Alaska: no cure once the Division has the ballot */ ? 'Why mail ballots get rejected, and how to fix a signature problem:' : 'Why mail ballots get rejected:', 'the mail voting guide' ) . '</section>'; }
 
-	// Rules at the polls, then the state's own sticker tradition, which leads back to the maker.
+	// Rules at the polls.
 	$p = $post ? '' : $section( 'polls-h', t( 'Phones, Photos, and Campaign Gear' ), array( 'polls_rules.gear', 'polls_rules.phone', 'polls_rules.line' ) );
 	if ( $p ) { $out .= $p[0] . vote_sources_line( $st, $p[1] ) . '</section>'; }
-	// The tradition, then where to get a sticker when you vote early or by mail (October 23). Each answer
-	// names the county or city it comes from; a state gets one only with an official source for it.
-	$sticker = '';
-	$ssrc = array();
-	foreach ( array( 'sticker.tradition' => '', 'sticker.early' => 'Do I get an I voted sticker if I vote early in %s?', 'sticker.mail' => 'I voted by mail in %s. How do I get a sticker?' ) as $k => $q ) {
-		$f = vote_fact( $st, $k );
-		if ( ! $f ) { continue; }
-		$sticker .= ( $q ? '<h3>' . vote_e( t( $q, $name ) ) . '</h3>' : '' ) . '<p>' . vote_e( $f['text'] ) . '</p>';
-		$ssrc[] = $f['src'];
-	}
-	if ( $sticker ) {
-		$out .= '<section class="guide" aria-labelledby="sticker-h">' . $h( 'sticker-h', t( '%s and the I Voted Sticker', $name ) ) . $sticker . vote_history_more( $st )
-			. '<p><a href="#maker-h">' . vote_e( t( 'Make your own %s I voted sticker', $name ) ) . '</a></p>' . vote_sources_line( $st, $ssrc ) . '</section>';
-	}
 	return $out;
 }
 
