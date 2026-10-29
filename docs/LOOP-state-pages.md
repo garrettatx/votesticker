@@ -34,8 +34,7 @@ strongest pages: change only what's wrong, stale, missing or unclear.
 ## Status (October 28, late night)
 | States | Status |
 |---|---|
-| KY plus ND NH WY SD WV DE VT MT RI | Live Oct 28 |
-| All other 41 states and DC | Ready to ship (committed): batches 2 to 5 re-verified, sticker stories, titles, template fixes, home sections |
+| All 50 states and DC | Live (Oct 28 and Oct 29 5:30 a.m. pushes) |
 
 ## Next
 - "Still need to vote? / Already voted?" panel under the sticker downloads (every b5 read led with it).
@@ -61,3 +60,12 @@ Day banner takes over Nov 2), from verified facts, EN and ES; checked on a phone
 exposed a bug: app.js replaced the gallery heading on load, so the Oct 26 "I Voted and I Voted Early Stickers"
 heading never showed in a browser (likely not to Google's renderer either). Fixed: the page's own state keeps
 the server heading. Full QA passes. All of it ships in the 6:30 a.m. push.
+
+### October 29, 5:30 a.m.: Push 1 of Oct 29
+Pulled, regenerated, full QA passed (facts, Spanish, SEO, events, save, cards; stale check 30 known open-window
+start dates). Pushed 40 commits; run 40858935741 succeeded; IndexNow 200. Live checks: Texas and Michigan titles
+read "I Voted and I Voted Early Stickers", the two-path panel shows on Texas, Michigan and Oregon, Michigan's
+2026 winners are up, home page sections live, Delaware shows the new Key Dates labels and the proof-of-voting
+line. Every state page is now live with the re-verified facts.
+Next: Oct 29 dated checks (Search Console look for the Oct 24 pages, GA4 v2 read when the Oct 28 table lands,
+Arkansas and Nebraska VoterView), then Michigan page order and the open template items.
