@@ -115,3 +115,20 @@ date and an em dash each fail `--check`.
 AR in EN and ES: no horizontal scroll, visible headings run 1, 2, 3, 2 (no skipped level), gallery height unchanged when the
 list scrolls into view. Screenshots looked at (phone CA EN, TX ES; desktop CA): spacing matches the paths panel, links
 underlined. Ohio (no entries) renders the same as live apart from whitespace.
+
+**Push 2 of Oct 30 (11:18 a.m.).** County stickers pushed after full QA; run 41088701829 succeeded, IndexNow 200 (the run
+submitted every page whose content hash changed, the 14 county-sticker pages EN and ES among them). Live: Texas, California,
+Arkansas EN and ES, and Spanish New York show the new heading and list.
+
+**Perplexity project housekeeping.** Moved into "VoteSticker.org Research" (move only, nothing renamed or deleted): the
+turnout Deep Research and turnout Search threads, the post-election (Nov 4 to 30) thread, the earliest-sticker history thread,
+the CA, FL, NY, NC and TX election-week Deep Research threads, the "i voted sticker / digital i voted sticker" thread, three "I
+run VoteSticker.org ..." Deep Research briefs, and one "one page per state" Search thread (22h ago). Today's four threads were
+created in the project. Not moved yet: about 15 more "I run VoteSticker.org ... one page per state" Search threads from Oct 28
+and 29 (each move takes four clicks; the Library has no bulk move; finish next pass). Left out on purpose: GoDaddy staging,
+catfish food, e-commerce outreach strategy, MVNO spam calls, piercing link building (not voting). The Chrome tab group dissolved
+at the end; a Perplexity Library tab and a local preview tab may still be open outside it.
+
+**Next.** NYC's 2026 specials if the Board posts them on vote.nyc (highest demand still unanswered); Pinellas digital sticker
+needs a person to read votepinellas.gov/ivoted; Hillsborough (Angelica) if the release comes back; more states (IL, MI, PA, OH,
+GA, VA by page impressions); item 2 mail answers.
