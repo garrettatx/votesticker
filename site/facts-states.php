@@ -1660,6 +1660,12 @@ return array(
 			'src' => 'https://dos.fl.gov/elections/for-voters/voting/vote-by-mail/',
 			'checked' => '2026-10-21',
 		),
+		'faq.late_mail' => array(
+			'en' => 'It may be. Your Supervisor of Elections must receive it by 7 p.m. local time on Tuesday, November 3, and a postmark doesn\'t count. You can still put it in a secure drop box at your Supervisor of Elections\' main or branch office until then.',
+			'es' => 'Puede que sí. El Supervisor de Elecciones (Supervisor of Elections) debe recibirla a más tardar a las 7 p. m., hora local, del martes 3 de noviembre, y el matasellos no cuenta. Todavía puedes dejarla en un buzón de entrega seguro en la oficina principal o en una sucursal del Supervisor de Elecciones hasta esa hora.',
+			'src' => 'https://dos.fl.gov/elections/for-voters/voting/vote-by-mail/',
+			'checked' => '2026-10-29',
+		),
 	),
 	'GA' => array(
 		'election' => '2026-11-03',
@@ -4644,6 +4650,12 @@ return array(
 			'src' => 'https://www.ncsbe.gov/voting/vote-mail',
 			'checked' => '2026-10-21',
 		),
+		'faq.late_mail' => array(
+			'en' => 'It may be. Your county board of elections must receive it by 7:30 p.m. on Tuesday, November 3, and a postmark doesn\'t count. You can still hand it in at your county board of elections office by then. You can\'t drop it off at a polling place on Election Day.',
+			'es' => 'Puede que sí. La junta electoral de tu condado debe recibirla a más tardar a las 7:30 p. m. del martes 3 de noviembre, y el matasellos no cuenta. Todavía puedes entregarla en la oficina de la junta electoral de tu condado antes de esa hora. No puedes entregarla en un lugar de votación el Día de las Elecciones.',
+			'src' => 'https://www.ncsbe.gov/voting/vote-mail/detailed-instructions-voting-mail',
+			'checked' => '2026-10-29',
+		),
 	),
 	'ND' => array(
 		'election' => '2026-11-03',
@@ -7266,6 +7278,12 @@ return array(
 			'en_after' => 'In Williamson County, the 2026 student-designed stickers were handed out in limited supply from the first day of early voting, October 19, through Election Day. Austin, an eighth grader at Santa Rita Ranch Middle School, and Brinda, a 12th grader at Rouse High School, won first place in the I Voted contest. Felicity, a second grader at Naumann Elementary School, won first place for the Future Voter sticker.',
 			'es_after' => 'En el condado de Williamson, los stickers de 2026 diseñados por estudiantes se repartieron, en cantidad limitada, desde el primer día de votación anticipada, el 19 de octubre, hasta el Día de las Elecciones. Austin, estudiante de 8.º grado de Santa Rita Ranch Middle School, y Brinda, estudiante de 12.º grado de Rouse High School, ganaron el primer lugar en el concurso de I Voted. Felicity, estudiante de 2.º grado de Naumann Elementary School, ganó el primer lugar con el sticker Future Voter.',
 		),
+		'sticker.mail' => array(
+			'en' => 'In El Paso County, save a digital one. The county elections department posts a free digital "I Voted" sticker for mail voters: save the image to your phone or computer. In another county? Ask your county elections office.',
+			'es' => 'En el condado de El Paso, guarda uno digital. El departamento electoral del condado tiene un sticker digital gratuito de "I Voted" para quienes votan por correo: guarda la imagen en tu teléfono o computadora. ¿Vives en otro condado? Pregunta en la oficina electoral de tu condado.',
+			'src' => 'https://www.epcountyvotestx.gov/voter-information/fpca-military-and-overseas',
+			'checked' => '2026-10-29',
+		),
 		'election_day.hours' => array(
 			'en' => 'Polling places are open 7 a.m. to 7 p.m. local time.',
 			'es' => 'Los lugares de votación abren de 7 a. m. a 7 p. m., hora local.',
@@ -7273,8 +7291,8 @@ return array(
 			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
-			'en' => 'You vote a provisional ballot when poll workers can\'t verify your registration, or when you have an accepted photo ID but didn\'t bring it. In that case, take the ID to your county voter registrar\'s office within six days after Election Day, by Monday, November 9, or your ballot won\'t count. You\'ll get a notice in the mail telling you whether it counted.',
-			'es' => 'Votas con una boleta provisional cuando los trabajadores electorales no pueden verificar tu registro, o cuando tienes una identificación con foto aceptada pero no la llevaste. En ese caso, lleva la identificación a la oficina del registrador de votantes de tu condado (voter registrar) dentro de los seis días después del Día de las Elecciones, a más tardar el lunes 9 de noviembre, o tu boleta no contará. Te llegará un aviso por correo que te dice si contó.',
+			'en' => 'You vote a provisional ballot when poll workers can\'t verify your registration, or when you have an accepted photo ID but didn\'t bring it. In that case, take the ID to your county voter registrar\'s office within six days after Election Day, by Monday, November 9, or your ballot won\'t count. You\'ll get a notice in the mail telling you whether it counted. Name not on the list? Your voter registration certificate and an accepted photo ID may let you vote a regular ballot instead.',
+			'es' => 'Votas con una boleta provisional cuando los trabajadores electorales no pueden verificar tu registro, o cuando tienes una identificación con foto aceptada pero no la llevaste. En ese caso, lleva la identificación a la oficina del registrador de votantes de tu condado (voter registrar) dentro de los seis días después del Día de las Elecciones, a más tardar el lunes 9 de noviembre, o tu boleta no contará. Te llegará un aviso por correo que te dice si contó. ¿Tu nombre no aparece en la lista? Tu certificado de registro de votante (voter registration certificate) y una identificación con foto aceptada pueden permitirte votar con una boleta regular.',
 			'src' => 'https://www.votetexas.gov/voting/need-id.html',
 			'checked' => '2026-10-28',
 		),
@@ -7283,6 +7301,18 @@ return array(
 			'es' => 'Igual puedes votar. Toda persona que esté adentro o esperando para entrar a su lugar de votación a las 7 p. m. puede votar.',
 			'src' => 'https://tcss.legis.texas.gov/resources/EL/htm/EL.41.htm',
 			'checked' => '2026-10-26',
+		),
+		'faq.track' => array(
+			'en' => 'Use the Ballot by Mail Tracker on the Texas Secretary of State\'s My Voter Portal once you\'ve sent your ballot back. You\'ll need your name, date of birth, the last 4 digits of your Social Security number, and your Texas driver\'s license or DPS personal ID number.',
+			'es' => 'Usa el rastreador de boletas por correo (Ballot by Mail Tracker) en el portal My Voter Portal de la Secretaría de Estado de Texas (Texas Secretary of State) después de enviar tu boleta. Necesitas tu nombre, tu fecha de nacimiento, los últimos 4 dígitos de tu número de Seguro Social y tu número de licencia de conducir de Texas o de identificación personal del DPS.',
+			'src' => 'https://www.votetexas.gov/voting-by-mail/track-my-ballot.html',
+			'checked' => '2026-10-29',
+		),
+		'faq.late_mail' => array(
+			'en' => 'Not if it\'s postmarked by 7 p.m. on Tuesday, November 3, and reaches your county\'s early voting clerk by 5 p.m. on Wednesday, November 4. Not sure it will make it? Hand it in yourself at the early voting clerk\'s office on Election Day while polls are open. Bring an accepted ID.',
+			'es' => 'No, si tiene matasellos de las 7 p. m. del martes 3 de noviembre o antes y llega al secretario de votación anticipada de tu condado (early voting clerk) a más tardar a las 5 p. m. del miércoles 4 de noviembre. ¿No sabes si llegará a tiempo? Entrégala tú en persona en la oficina del secretario de votación anticipada el Día de las Elecciones, mientras estén abiertos los lugares de votación. Lleva una identificación aceptada.',
+			'src' => 'https://www.sos.state.tx.us/elections/voter/important-election-dates.shtml',
+			'checked' => '2026-10-29',
 		),
 	),
 	'UT' => array(

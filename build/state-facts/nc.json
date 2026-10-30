@@ -272,6 +272,15 @@
    "checked": "2026-10-21",
    "quote": "Once you have requested your absentee ballot, you can track its status from printed to accepted by signing up online for status notifications through BallotTrax.",
    "status": "verified"
+  },
+  "late_mail": {
+   "en": "It may be. Your county board of elections must receive it by 7:30 p.m. on Tuesday, November 3, and a postmark doesn't count. You can still hand it in at your county board of elections office by then. You can't drop it off at a polling place on Election Day.",
+   "es": "Puede que sí. La junta electoral de tu condado debe recibirla a más tardar a las 7:30 p. m. del martes 3 de noviembre, y el matasellos no cuenta. Todavía puedes entregarla en la oficina de la junta electoral de tu condado antes de esa hora. No puedes entregarla en un lugar de votación el Día de las Elecciones.",
+   "src": "https://www.ncsbe.gov/voting/vote-mail/detailed-instructions-voting-mail",
+   "checked": "2026-10-29",
+   "quote": "Your ballot must be received by your county board of elections by 7:30 p.m. on Election Day. ... Return your ballot in person: You can return your ballot to your county board of elections office or to an early voting site in your county. ... You may not return your ballot to a polling place on Election Day.",
+   "status": "verified",
+   "notes": "Loop 1 election-week pass 2026-10-29; built from the state's verified return deadline and in-person return rule."
   }
  },
  "notes": "Read October 21, 2026 on ncsbe.gov and ncleg.gov (curl worked); dcovotes.dconc.gov through Chrome. Early voting dates in states.js (Oct. 15 to Oct. 31, ending 3 p.m.) match ncsbe.gov/voting/vote-early-person: 'Starts: Thursday, Oct. 15.' and 'Ends: 3 p.m. Saturday, Oct. 31.' The registration deadline is now stated on ncsbe.gov ('Oct. 9: Voter registration deadline (5 p.m.)'), replacing the computed date in faq-sources.json. mail.track_url is the Voter Search because BallotTrax (northcarolina.ballottrax.net) is a vendor host the validator doesn't allow; add it to ALLOW_HOSTS if you want the direct link. The ID exception form path gives the provisional ballot a different deadline from the 'bring your ID' path; both are from ncsbe.gov/voting/voter-id. No official page says whether a voter may wear campaign clothing; gear rule covers the buffer zone only. Durham County's winning design was not announced on the county page as read; Jackson County's winner was found only in news (WLOS). Cure deadline not found.",

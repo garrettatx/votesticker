@@ -239,17 +239,26 @@
    "quote": "Winning sticker designs will be available in limited supply during voting, beginning with the first day of early voting on Oct. 19 and continuing through Election Day on Nov. 3, 2026. ... First place: Felicity, second grade, Naumann Elementary School (Leander ISD) ... First place: Austin, eighth grade, Santa Rita Ranch Middle School (Liberty Hill ISD) ... First place: Brinda, 12th grade, Rouse High School (Leander ISD)",
    "notes": "Read Oct 28 in Chrome (curl and WebFetch get a 403). Linked from wilcotx.gov/2019/2026-Sticker-Contest, which says the middle and high school winners 'will become the official \"I Voted\" stickers for the upcoming election.' The page gives students' surnames; removed here and in the quote. The page shows the designs as images with no alt text, so no design descriptions. Replaces the Gaines County answer (newtools.cira.state.tx.us/page/gaines.ElectionsStickerpage, 'The sticker will be distributed to voters at all Early Voting Locations and Election Day Vote Centers during the 2026 elections.', checked Oct 23).",
    "status": "verified"
+  },
+  "mail": {
+   "en": "In El Paso County, save a digital one. The county elections department posts a free digital \"I Voted\" sticker for mail voters: save the image to your phone or computer. In another county? Ask your county elections office.",
+   "es": "En el condado de El Paso, guarda uno digital. El departamento electoral del condado tiene un sticker digital gratuito de \"I Voted\" para quienes votan por correo: guarda la imagen en tu teléfono o computadora. ¿Vives en otro condado? Pregunta en la oficina electoral de tu condado.",
+   "src": "https://www.epcountyvotestx.gov/voter-information/fpca-military-and-overseas",
+   "checked": "2026-10-29",
+   "quote": "Digital Stickers Thank you for voting by mail! We still wanted to make sure you're able to celebrate casting your vote, so we've created a digital \"I Voted\" sticker. Save one of the images below on your phone or computer.",
+   "status": "verified",
+   "notes": "Read by curl 2026-10-29. The section sits on the county's military and overseas voting page; the page is undated, so the copy doesn't say when the sticker started. Lead from the Oct 29 Perplexity Deep Research read (texas.md)."
   }
  },
  "faq": {
   "provisional": {
-   "en": "You vote a provisional ballot when poll workers can't verify your registration, or when you have an accepted photo ID but didn't bring it. In that case, take the ID to your county voter registrar's office within six days after Election Day, by Monday, November 9, or your ballot won't count. You'll get a notice in the mail telling you whether it counted.",
-   "es": "Votas con una boleta provisional cuando los trabajadores electorales no pueden verificar tu registro, o cuando tienes una identificación con foto aceptada pero no la llevaste. En ese caso, lleva la identificación a la oficina del registrador de votantes de tu condado (voter registrar) dentro de los seis días después del Día de las Elecciones, a más tardar el lunes 9 de noviembre, o tu boleta no contará. Te llegará un aviso por correo que te dice si contó.",
+   "en": "You vote a provisional ballot when poll workers can't verify your registration, or when you have an accepted photo ID but didn't bring it. In that case, take the ID to your county voter registrar's office within six days after Election Day, by Monday, November 9, or your ballot won't count. You'll get a notice in the mail telling you whether it counted. Name not on the list? Your voter registration certificate and an accepted photo ID may let you vote a regular ballot instead.",
+   "es": "Votas con una boleta provisional cuando los trabajadores electorales no pueden verificar tu registro, o cuando tienes una identificación con foto aceptada pero no la llevaste. En ese caso, lleva la identificación a la oficina del registrador de votantes de tu condado (voter registrar) dentro de los seis días después del Día de las Elecciones, a más tardar el lunes 9 de noviembre, o tu boleta no contará. Te llegará un aviso por correo que te dice si contó. ¿Tu nombre no aparece en la lista? Tu certificado de registro de votante (voter registration certificate) y una identificación con foto aceptada pueden permitirte votar con una boleta regular.",
    "src": "https://www.votetexas.gov/voting/need-id.html",
    "checked": "2026-10-28",
    "quote": "If a voter states that they (a) do not possess an acceptable form of photo identification listed above, and the voter can reasonably obtain one of these acceptable forms of identification or (b) possesses, but did not bring to the polling place, one of the seven forms of acceptable photo identification listed above, the voter may cast a provisional ballot at the polls. However, in order to have the provisional ballot counted, the voter will be required to visit the voter registrar’s office within six calendar days of the date of the election to present one of the above forms of photo ID",
    "status": "verified",
-   "notes": "Sixth calendar day after Nov 3 = Mon Nov 9 (computed). Registration-verification reason and mailed notice are from votetexas.gov/faq (read 2026-10-21: notice 'by the 10th day after the local canvass'); 'by the 10th day' detail dropped for length."
+   "notes": "Sixth calendar day after Nov 3 = Mon Nov 9 (computed). Registration-verification reason and mailed notice are from votetexas.gov/faq (read 2026-10-21: notice 'by the 10th day after the local canvass'); 'by the 10th day' detail dropped for length. Oct 29 (loop 1): last sentence from votetexas.gov/faq, read by WebFetch and matching the Perplexity quote: 'if your name does not appear on the official list of registered voters in the precinct, you may be able to cast a regular ballot by presenting your valid voter registration certificate along with an acceptable form of photo identification.'"
   },
   "line": {
    "en": "You can still vote. Anyone inside or waiting to enter their polling place at 7 p.m. gets to vote.",
@@ -260,7 +269,22 @@
    "status": "verified"
   },
   "track": {
-   "status": "missing"
+   "en": "Use the Ballot by Mail Tracker on the Texas Secretary of State's My Voter Portal once you've sent your ballot back. You'll need your name, date of birth, the last 4 digits of your Social Security number, and your Texas driver's license or DPS personal ID number.",
+   "es": "Usa el rastreador de boletas por correo (Ballot by Mail Tracker) en el portal My Voter Portal de la Secretaría de Estado de Texas (Texas Secretary of State) después de enviar tu boleta. Necesitas tu nombre, tu fecha de nacimiento, los últimos 4 dígitos de tu número de Seguro Social y tu número de licencia de conducir de Texas o de identificación personal del DPS.",
+   "src": "https://www.votetexas.gov/voting-by-mail/track-my-ballot.html",
+   "checked": "2026-10-29",
+   "quote": "Once you've sent your ballot by mail to your county's Early Voting Clerk, you can check the status of your mail-in ballot through our Ballot by Mail Tracker, available on the Texas Secretary of State's 'My Voter Portal.' To track your mail-in ballot, you must enter the following information: First Name Last Name Date of Birth The last 4 digits of your Social Security Number Your Driver's License or Department of Public Safety Personal ID number",
+   "status": "verified",
+   "notes": "Read in Chrome 2026-10-29 (votetexas.gov returns 403 to curl). Loop 1 election-week pass."
+  },
+  "late_mail": {
+   "en": "Not if it's postmarked by 7 p.m. on Tuesday, November 3, and reaches your county's early voting clerk by 5 p.m. on Wednesday, November 4. Not sure it will make it? Hand it in yourself at the early voting clerk's office on Election Day while polls are open. Bring an accepted ID.",
+   "es": "No, si tiene matasellos de las 7 p. m. del martes 3 de noviembre o antes y llega al secretario de votación anticipada de tu condado (early voting clerk) a más tardar a las 5 p. m. del miércoles 4 de noviembre. ¿No sabes si llegará a tiempo? Entrégala tú en persona en la oficina del secretario de votación anticipada el Día de las Elecciones, mientras estén abiertos los lugares de votación. Lleva una identificación aceptada.",
+   "src": "https://www.sos.state.tx.us/elections/voter/important-election-dates.shtml",
+   "checked": "2026-10-29",
+   "quote": "Wednesday, November 4, 2026 (next business day after Election Day) at 5:00 p.m. if carrier envelope is postmarked by 7:00 p.m. at the location of the election on Election Day (unless overseas or military voter deadlines apply)",
+   "status": "verified",
+   "notes": "Loop 1 election-week pass 2026-10-29; built from the state's verified return deadline and in-person return rule."
   }
  },
  "notes": "Read October 21, 2026. Early voting minimum hours (Election Code 85.005), the cure deadline, the ballot tracker URL and the in-line-at-closing rule were not confirmed on an official page; left missing. Williamson County's sticker contest page blocks automated reading. The ID rule class follows docs/faq-sources.json (photo_requested: a Reasonable Impediment Declaration lets a voter without photo ID vote a regular ballot).",
