@@ -82,3 +82,57 @@ in-person return calque, gendered wording made neutral). QA passes; ships in the
 added to docs/spanish-style.md open questions: "casillas" (about 20 files) vs the glossary's "lugar de votación";
 county clerk rendering in NM and IL; generic masculine "registrado"; "pareja de hecho", "notarizar", "asilo de
 ancianos"; and the existing "Ya voté" vs "YO VOTÉ" question.
+
+### October 29, Night: Loop 1, Perplexity Election-Week Research
+Goal (Garrett): what a voter landing Nov 1 to 4 needs that our pages and competitors don't give, for the home
+page plus TX, NC, NY, FL and CA. Perplexity Deep Research in Chrome, one prompt per target; reads and prompts in
+`docs/research/election-week-20261029/`. The first three long prompts stalled in Deep Research at about 6 minutes
+with no text; short prompts (`short-prompt-template.txt`) finished in 7 to 9 minutes each.
+
+Shipped (verified on the official page, EN and ES):
+- Texas: "How do I track my mail ballot?" (votetexas.gov tracker page, read in Chrome; it was missing); "Is it too
+  late to mail my ballot?" (SOS calendar: postmarked by 7 p.m. Nov 3 and received by 5 p.m. Nov 4, or hand it in
+  yourself on Election Day with ID); "I voted by mail. How do I get a sticker?" (El Paso County's digital "I Voted"
+  sticker for mail voters, epcountyvotestx.gov); provisional answer adds the regular-ballot route when your name
+  isn't on the list (registration certificate plus photo ID, votetexas.gov/faq).
+- North Carolina and Florida: "Is it too late to mail my ballot?" (receipt, not postmark: NC 7:30 p.m., hand it
+  to the county board office, not a polling place; FL 7 p.m., drop boxes at Supervisor offices until then).
+- Florida: provisional answer adds that a voter who voted provisionally only for lack of ID needs no more proof if
+  otherwise eligible (dos.fl.gov voting FAQ, question 8). Our answer implied everyone had to bring proof by Nov 5.
+- Home: three more official digital stickers: Oregon Secretary of State (I Voted, I Voted By Mail), Grand Rapids
+  (nine languages, Arabic to Kinyarwanda), Ann Arbor (eight languages).
+
+Verified but not shipped (needs a template change): more county sticker stories per state. The page has one
+`sticker.tradition` slot (plus `early` and `mail`), already filled on all five pages, and each fact carries one
+source. Deep Research found 25+ county stories; these I read on the office's own page Oct 29:
+- TX: Guadalupe County (first contest; Julianna's design on the 2025-2026 stickers); Gaines County (first high
+  school contest, stickers at all early voting and Election Day vote centers in 2026; winner named only in the image).
+- NC: Forsyth County (Paloma, The Arts Based School: hands spelling "Vote" in sign language, the stickers voters
+  get "this Fall"); Jackson County (Naomi's design at all county voting sites while supplies last).
+- FL: Seminole County (first student contest, printed for polling places in the 2026 cycle). Collier (Presley,
+  North Naples Middle School) and Pinellas ("I Voted...By Mail" digital sticker) block curl; read in Chrome first.
+- NY: Genesee (seven winners by school; page blocks curl), Madison (contest rules name Nov 3, 2026), Warren, Dutchess.
+- CA: Orange County (peel-off "I Voted" sticker in the Nov 3 vote-by-mail packet, read in the PDF); Foster City
+  (stickers at its vote centers Oct 31 to Nov 3).
+- MI (home lead): Grand Rapids and Ann Arbor multilingual digital stickers also fit Michigan's page.
+Proposal: an optional `sticker.more` list (en, es, src, quote, checked per entry) rendered as a short "More county
+stickers" list under the story, checked by the same QA. About 20 lines in facts_text.py and index.php. Not built;
+Garrett's call. Highest-value entries first: Orange County (CA's biggest mail-voter sticker after San Diego),
+Forsyth (sign language), Pinellas digital (mail voters).
+
+Rejected: Suffolk County NY "no stickers" and Nassau early-voting stickers (Newsday only); Humboldt CA
+multilingual sticker details (news only; county page confirms the program through 2027); Lassen CA (poster doesn't
+name Nov 3); Butte CA winner (news only); Lavaca County TX winners (only an agenda item and local news); Chatham County NC winner (news only);
+Denton County design talk and a Dallas sticker shortage (news and Reddit); Travis County bilingual sticker (2022);
+Jefferson County CO mailed stickers (Colorado page already has its statewide digital sticker story; CO not a target
+this loop); a 2025 sticker study (measures intention to vote, not turnout); EAC glossary "you can take photos"
+sample sentence (translated dialogue, not a rule).
+
+Open Fact Calls: none new. Note for later: the TX FAQ page still carries stale lines (a "2023" postmark, "Primary
+Election"); we cite the dated SOS calendar and advisories instead.
+
+Research files: `docs/research/election-week-20261029/` (home, texas, north-carolina, new-york, florida, california
+.md, prompts). Election-week facts in the reads for NY and CA were already on our pages (affidavit ballot, line at
+closing, hand postmark, Nov 10 receipt). Next: Garrett's call on `sticker.more`; if yes, Chrome reads for the
+curl-blocked pages, then build. Re-read these five pages' queries Nov 12.
+
