@@ -140,3 +140,54 @@ Push (9:49 p.m.): 11 commits (7 waiting plus 4 from this loop). Full QA passed f
 save; stale check 28 known open-window lines). Run 40993926526 succeeded, IndexNow 200. Live: Texas shows the
 tracker, too-late-to-mail, mail-voter sticker and regular-ballot lines; home shows Oregon, Grand Rapids and Ann
 Arbor; Spanish Florida shows the no-ID provisional line.
+
+### October 29, Late Night: Loop 2, History and Post-Election (Deep Research)
+Goal (Garrett): the definitive, sourced history of the "I Voted" sticker for "i voted sticker history" (133
+impressions at 8.7), and post-election mode for "i voted today sticker" and "i voted sticker png". Reads and
+prompts in `docs/research/history-postelection-20261029/`. Deep Research ran once (origin, 5m 47s); the second
+prompt hit Perplexity's monthly Deep Research limit, so turnout and post-election ran in standard mode, and the
+designs prompt was not run. The Chrome tab group dissolved mid-loop again; two Perplexity tabs (turnout,
+post-election) and a HathiTrust tab may still be open outside the group.
+
+Shipped (committed 1a80fe8, not pushed; goes with the Oct 30 6:30 a.m. push):
+- History, origin: Perplexity's lead (a 1926 Texas League of Women Voters "I have voted" tag, Reddit only) led to
+  a HathiTrust phrase search that found three primary sources no ranking page cites. St. Louis Board of Education
+  Annual Report 1920-21, p. 52: for a student election at Blewett on October 29, 1920, the print shop "printed
+  enough "I have voted" tags to give each student one as he voted" (now "the earliest example we found"). Book of
+  the Camp Fire Girls (1962): "Give out "I Have Voted" tags on election day." U.S. Commission on Civil Rights,
+  Political Participation (1968): at the Nov 15, 1966 Americus, Georgia city primary, all clerks and managers were
+  white while Black residents were "employed to pin "I have voted" tags on the voters as they left." Short Answer,
+  intro, "What We Still Don't Know" and three timeline entries updated; we still don't know who printed the first
+  adhesive sticker, and the page says so.
+- History, digital era: Facebook's Election Day button in 2008 (5.4 million users, Facebook newsroom 2012) and in
+  Spanish, Chinese and Korean by 2014 (newsroom 2014); Instagram's "I Voted" sticker with a "Yo Voté" version (Nov
+  1, 2018 announcement). Two timeline entries and a paragraph in "From Your Shirt to Your Profile Picture".
+- History, turnout: the only sticker-specific turnout test found, Vote.org's 2018 texting experiment (VoteAmerica
+  research page, Memo 004): a link to a digital "I Voted" sticker added nothing (0.25 vs 0.24 points), labeled as a
+  nonprofit memo, not peer-reviewed. The 2012 Facebook replication (Jones et al., PLOS ONE 2017) added as one
+  sentence. Closing line now says none of the studies tested a paper sticker.
+- Home, post-election only (`'post' === vote_phase()`, home page): "When are the election results official?"
+  from the EAC canvass and certification page ("even when those results say "100% Precincts Reporting," they are
+  still unofficial"), linked out, EN and ES. Checked in a `VOTE_TODAY=2026-11-04` build: shows on the home pages,
+  not on state pages, and not before Nov 4.
+- Post-election titles confirmed in the Nov 4 build: home "Free I Voted and I Voted Early Stickers by State",
+  Texas "Texas I Voted and I Voted Early Stickers", Washington "...I Voted and I Voted by Mail Stickers", Spanish
+  "Stickers de Ya voté...". The classic set ("I voted today", round PNGs) stays on the home page after Nov 3.
+
+Verified but not shipped: none.
+
+Proposal (not built): a per-state "Results become official" line in post-election mode (`dates.certify`: date,
+quote, official URL). Perplexity's 51-state table (`postelection.md`) is leads only: about 15 states unverified, and
+several dates are meeting starts or county deadlines. Each needs a read on the state's own calendar or statute.
+
+Rejected: 1926 Texas League tags (Reddit transcription only; the Portal to Texas History showed a "not a robot"
+check, skipped); Tempe History Museum "I have voted ... have you?" sticker and University of Delaware "I Voted"
+sticker (both undated); Calisphere "I voted! Did You?" badge (undated); Miami Herald 1950 page text (a public
+clipping titled "I have voted sticker" is listed on the page, but its text is behind Newspapers.com's trial wall;
+kept as "later histories cite"); Funk 2010 Swiss mail-voting study (lead, not read in the original); the other
+social-pressure studies (mechanism only, the page already carries the strongest).
+
+QA: history_text OK (26 timeline entries); facts, Spanish, SEO (local, --no-legacy), events and save pass; stale
+check 28 known open-window lines, unchanged. Garrett's call: the `dates.certify` proposal; whether Deep Research
+quota should be topped up (limit hit Oct 29). Next: Chrome read of the 1926 Texas tags on texashistory.unt.edu by a
+person; add "the earliest example we found" to the home sticker-history teaser after the push if Garrett wants.
