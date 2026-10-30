@@ -187,7 +187,9 @@ place, but you can surrender it there), RI (8 p.m.; any drop box, the polling-pl
 Cranston), NH (5 p.m. Nov 3 by mail or agent; in person by 5 p.m. Nov 2), MS (postmark Nov 3, Circuit Clerk by 5 p.m. Nov
 10). Name not on the list: KY (provisional; Provisional Voter Information link), HI (provisional; county or Office of
 Elections), DE (federal offices only; status by number). Track: MS My Election Day (absentee and affidavit ballots).
-`qa_es.py` allows "My Election Day" (tool name).
+`qa_es.py` allows "My Election Day" (tool name). Push 2 (about 1:10 p.m.): full QA passed (cards 79,920 WebKit cards in
+the circle); run 41098468157 succeeded; IndexNow HTTP 200, 14 URLs (7 states EN and ES). Live: Iowa and Kentucky EN and ES
+show the new answers.
 
 **Post-election and Nov 2 checks.** `VOTE_TODAY=2026-11-04` build: every "Is it too late to mail" answer drops (page and
 FAQPage markup) in MD, LA, KS, WA, WI, AR, ES Oklahoma; tracking and provisional answers stay, as set Oct 25 (they still
