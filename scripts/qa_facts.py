@@ -60,6 +60,24 @@ for abbr, slug in slugs.items():
         # Between elections (VOTE_BETWEEN=1) a state can be down to the summary box's official link.
         if not guide and os.environ.get('VOTE_BETWEEN') != '1':
             fails.append(f'{lang}{slug}: facts file but no guide sections')
+        # County and city stickers (sticker.more): one block, one item per entry, each linked to its source,
+        # an H3 that follows an H2 (no skipped level), and nothing on a state without entries.
+        more = (json.loads((ROOT / 'build' / 'state-facts' / f'{abbr.lower()}.json').read_text()).get('sticker') or {}).get('more') or []
+        blocks = re.findall(r'<div class="more-stickers">.*?</div>', h, re.S)
+        if not more and blocks:
+            fails.append(f'{lang}{slug}: county sticker block without sticker.more entries')
+        if more:
+            if len(blocks) != 1:
+                fails.append(f'{lang}{slug}: {len(blocks)} county sticker blocks, not one')
+            else:
+                hrefs = re.findall(r'<li><a href="([^"]+)"', blocks[0])
+                if [html.unescape(x) for x in hrefs] != [e['src'] for e in more]:
+                    fails.append(f'{lang}{slug}: county sticker links do not match the entries\' sources')
+                prev = re.findall(r'<h([1-6])\b', h[:h.index('<div class="more-stickers">')])
+                if not prev or prev[-1] not in ('2', '3'):
+                    fails.append(f'{lang}{slug}: county sticker H3 does not follow an H2 (last heading h{prev[-1] if prev else "none"})')
+                if '—' in blocks[0]:
+                    fails.append(f'{lang}{slug}: em dash in the county sticker block')
         g = ''.join(guide)
         if '—' in g:
             fails.append(f'{lang}{slug}: em dash in the guide')

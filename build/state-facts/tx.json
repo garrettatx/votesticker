@@ -248,7 +248,43 @@
    "quote": "Digital Stickers Thank you for voting by mail! We still wanted to make sure you're able to celebrate casting your vote, so we've created a digital \"I Voted\" sticker. Save one of the images below on your phone or computer.",
    "status": "verified",
    "notes": "Read by curl 2026-10-29. The section sits on the county's military and overseas voting page; the page is undated, so the copy doesn't say when the sticker started. Lead from the Oct 29 Perplexity Deep Research read (texas.md)."
-  }
+  },
+  "more": [
+   {
+    "place": {
+     "en": "Guadalupe County",
+     "es": "Condado de Guadalupe"
+    },
+    "kind": "county",
+    "en": "Julianna's hand-drawn bluebonnet won the county's first I Voted sticker contest, and Laila drew the Future Voter sticker. The first-place designs are on the county's stickers for the 2025 and 2026 elections.",
+    "es": "El bluebonnet dibujado a mano por Julianna ganó el primer concurso de stickers I Voted del condado, y Laila dibujó el sticker Future Voter. Los diseños ganadores están en los stickers del condado para las elecciones de 2025 y 2026.",
+    "src": "https://www.guadalupetx.gov/page/Elections.Sticker_Contest",
+    "quote": "The 1st place winning design in each category will be featured on stickers for the 2025-2026 election cycle.",
+    "checked": "2026-10-30",
+    "until": "2026-11-03",
+    "en_after": "Julianna's hand-drawn bluebonnet won the county's first I Voted sticker contest, and Laila drew the Future Voter sticker. The first-place designs were on the county's stickers for the 2025 and 2026 elections.",
+    "es_after": "El bluebonnet dibujado a mano por Julianna ganó el primer concurso de stickers I Voted del condado, y Laila dibujó el sticker Future Voter. Los diseños ganadores estuvieron en los stickers del condado para las elecciones de 2025 y 2026.",
+    "notes": "Full names on the page; bluebonnet seen in the first-place image (I Voted 1st Place _Julianna.jpg). Schools not named.",
+    "status": "verified"
+   },
+   {
+    "place": {
+     "en": "Gaines County",
+     "es": "Condado de Gaines"
+    },
+    "kind": "county",
+    "en": "Mattie, an 11th grader at Seminole High School, won the county's first high school sticker contest with a red I Voted! sticker and a row of stars. It is handed out at every early voting site and Election Day vote center in 2026.",
+    "es": "Mattie, estudiante de 11.º grado en Seminole High School, ganó el primer concurso de stickers para estudiantes de preparatoria del condado con un sticker rojo I Voted! y una fila de estrellas. Se reparte en todos los lugares de votación anticipada y centros de votación del Día de las Elecciones en 2026.",
+    "src": "https://www.co.gaines.tx.us/page/gaines.ElectionsStickerpage",
+    "quote": "The sticker will be distributed to voters at all Early Voting Locations and Election Day Vote Centers during the 2026 elections.",
+    "checked": "2026-10-30",
+    "until": "2026-11-03",
+    "en_after": "Mattie, an 11th grader at Seminole High School, won the county's first high school sticker contest with a red I Voted! sticker and a row of stars. It was handed out at every early voting site and Election Day vote center in 2026.",
+    "es_after": "Mattie, estudiante de 11.º grado en Seminole High School, ganó el primer concurso de stickers para estudiantes de preparatoria del condado con un sticker rojo I Voted! y una fila de estrellas. Se repartió en todos los lugares de votación anticipada y centros de votación del Día de las Elecciones en 2026.",
+    "notes": "Winner, grade and school read in the 1st place image on the same page (Designed by Mattie Hice, 11th, Seminole High).",
+    "status": "verified"
+   }
+  ]
  },
  "faq": {
   "provisional": {
@@ -320,6 +356,14 @@
   "www.wilcotx.gov": {
    "en": "Williamson County Elections",
    "es": "la oficina electoral del condado de Williamson (Williamson County Elections)"
+  },
+  "www.guadalupetx.gov": {
+   "en": "Guadalupe County Elections",
+   "es": "la oficina electoral del condado de Guadalupe"
+  },
+  "www.co.gaines.tx.us": {
+   "en": "the Gaines County Elections Department",
+   "es": "el Departamento Electoral del condado de Gaines"
   }
  },
  "election_day": {

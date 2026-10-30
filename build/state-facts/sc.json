@@ -15,6 +15,10 @@
   "www.scstatehouse.gov": {
    "en": "South Carolina law",
    "es": "la ley de South Carolina"
+  },
+  "vote.charlestoncounty.org": {
+   "en": "the Charleston County Board of Voter Registration and Elections",
+   "es": "la oficina electoral del condado de Charleston (Board of Voter Registration and Elections)"
   }
  },
  "dates": {
@@ -241,7 +245,26 @@
    "quote": "Winning designs will be distributed for a limited time at all early voting centers and to our absentee voters this fall.",
    "status": "verified",
    "notes": "Winners as listed: 'K-5 Winner Emmeline S.', '6-8 Winner Adalyn D.', '9-12 Winner Katherine C.' Students, so first names only; surname initials removed. Read 2026-10-28."
-  }
+  },
+  "more": [
+   {
+    "place": {
+     "en": "Charleston County",
+     "es": "Condado de Charleston"
+    },
+    "kind": "county",
+    "en": "Emmeline, Adalyn and Katherine drew the three winning designs in the county's fourth student sticker contest, picked with nearly 4,200 votes. One uses the colors of Rainbow Row. They are printed in a limited run and handed out during early voting, through October 31.",
+    "es": "Emmeline, Adalyn y Katherine dibujaron los tres diseños ganadores del cuarto concurso de stickers para estudiantes del condado, elegidos con casi 4,200 votos. Uno usa los colores de Rainbow Row. Se imprimen en cantidad limitada y se reparten durante la votación anticipada, hasta el 31 de octubre.",
+    "until": "2026-10-31",
+    "en_after": "Emmeline, Adalyn and Katherine drew the three winning designs in the county's fourth student sticker contest, picked with nearly 4,200 votes. One uses the colors of Rainbow Row. They were printed in a limited run and handed out during early voting in 2026.",
+    "es_after": "Emmeline, Adalyn y Katherine dibujaron los tres diseños ganadores del cuarto concurso de stickers para estudiantes del condado, elegidos con casi 4,200 votos. Uno usa los colores de Rainbow Row. Se imprimieron en cantidad limitada y se repartieron durante la votación anticipada de 2026.",
+    "src": "https://vote.charlestoncounty.org/files/bevr-newsletter.pdf",
+    "quote": "The designs will be printed on a limited run and distributed during the early voting period for the 2026 General Election.",
+    "checked": "2026-10-30",
+    "status": "verified",
+    "notes": "Board of Voter Registration and Elections fall newsletter PDF, p. 4, read with pdftotext. First name and last initial on the page."
+   }
+  ]
  },
  "faq": {
   "provisional": {

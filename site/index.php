@@ -461,6 +461,7 @@ function vote_src_name( $st, $url ) {
 function vote_page_checked( $st ) {
 	$d = array( $st['checked'] ?? '', VOTE_FAQ_CHECKED );
 	foreach ( vote_facts( $st['abbr'] ) as $f ) { if ( is_array( $f ) && ! empty( $f['checked'] ) ) { $d[] = $f['checked']; } }
+	foreach ( vote_facts( $st['abbr'] )['sticker.more'] ?? array() as $f ) { $d[] = $f['checked']; }
 	return max( $d );
 }
 // One line per section (Garrett's review, October 21): the sources it rests on, by name, and the page's
@@ -530,7 +531,7 @@ function vote_guide( $st ) {
 		$ssrc[] = $f['src'];
 	}
 	if ( $sticker ) {
-		$out .= '<section class="guide" aria-labelledby="sticker-h">' . $h( 'sticker-h', t( '%s and the I Voted Sticker', $name ) ) . $sticker . vote_history_more( $st )
+		$out .= '<section class="guide" aria-labelledby="sticker-h">' . $h( 'sticker-h', t( '%s and the I Voted Sticker', $name ) ) . $sticker . ( vote_files( $st['abbr'] ) ? '' : vote_more_stickers( $st ) ) . vote_history_more( $st )
 			. '<p><a href="#maker-h">' . vote_e( t( 'Make your own %s I voted sticker', $name ) ) . '</a></p>' . vote_sources_line( $st, $ssrc ) . '</section>';
 	}
 	// A section is a list of facts; each adds its source to the section's line.
@@ -851,6 +852,28 @@ function vote_post_body( $st ) {
 	if ( vote_verified( $st ) && 'ended' === $st['kind'] ) { return 'Early voting in ' . $name . ' ended ' . vote_long( $st['end'] ) . '. Election Day is Tuesday, November 3, 2026. Find your polling place at ' . $label . '.'; }
 	if ( vote_verified( $st ) && 'none' === $st['kind'] ) { return 'Election Day in ' . $name . ' is Tuesday, November 3, 2026. Make a plan to vote. Polling places and absentee rules are at ' . $label . '.'; }
 	return 'Election Day is Tuesday, November 3, 2026. Make a plan to vote, and check whether you can vote early in ' . $name . ' at vote411.org.';
+}
+
+// County and city stickers (October 30, Garrett: "a heading under state stickers with premade stickers"): the
+// official stickers some counties and cities hand out, each linked to the office that announced it. From
+// sticker.more in the facts file (each entry verified on the office's own page). Under the gallery; on a page
+// with no gallery (some Spanish pages), inside the state's sticker story section instead, so an H2 always leads.
+function vote_more_stickers( $st ) {
+	$list = vote_facts( $st['abbr'] )['sticker.more'] ?? array();
+	if ( ! $list ) { return ''; }
+	$es = vote_es(); $lang = $es ? 'es' : 'en';
+	$kinds = array_unique( array_column( $list, 'kind' ) );
+	$name = 'DC' === $st['abbr'] ? 'DC' : $st['name'];
+	$head = array( 'county' => array( 'County I Voted Stickers in %s', 'Stickers de los condados de %s' ), 'parish' => array( 'Parish I Voted Stickers in %s', 'Stickers de las parroquias de %s' ), 'city' => array( 'City I Voted Stickers in %s', 'Stickers de las ciudades de %s' ) );
+	$h = 1 === count( $kinds ) ? $head[ $kinds[0] ] : array( 'County and City I Voted Stickers in %s', 'Stickers de condados y ciudades de %s' );
+	$items = ''; $last = '';
+	foreach ( $list as $e ) {
+		$text = ! empty( $e['until'] ) && vote_today() > $e['until'] ? $e[ $lang . '_after' ] : $e[ $lang ];
+		$items .= '<li><a href="' . vote_e( $e['src'] ) . '" target="_blank" rel="noopener">' . vote_e( $e['place'][ $lang ] ) . '</a>: ' . vote_e( $text ) . '</li>';
+		$last = max( $last, $e['checked'] );
+	}
+	return '<div class="more-stickers"><h3 id="county-h">' . vote_e( sprintf( $h[ $es ? 1 : 0 ], $name ) ) . '</h3><ul>' . $items . '</ul><p class="hint">'
+		. vote_e( $es ? 'Cada enlace lleva a la oficina electoral que lo anunció. Revisado el ' . vote_checked( $last ) . '.' : 'Each link goes to the election office that announced it. Last checked ' . vote_checked( $last ) . '.' ) . '</p></div>';
 }
 
 // Two paths right under the sticker gallery (October 29; every strong-page Perplexity read led with it): what a
@@ -1441,6 +1464,7 @@ $vote_ld = array(
 			<?php // Not official (October 28, Garrett's OK): our designs are ours; where the state or a county hands out its own sticker, the story further down says which. ?>
 			<p class="hint gallery__note"><?php echo vote_e( t( 'Free designs by Vote Sticker, not affiliated with any election office. They aren’t proof of voting.' ) ); ?><?php if ( $vote_st && vote_fact( $vote_st, 'sticker.tradition' ) ) : ?> <a href="#sticker-h"><?php echo vote_e( t( 'See the stickers election offices hand out' ) ); ?></a>.<?php endif; ?></p>
 			<?php echo $vote_st ? vote_paths( $vote_st ) : ''; ?>
+			<?php echo $vote_st && $vote_files ? vote_more_stickers( $vote_st ) : ''; ?>
 		</section>
 
 		<?php $vote_maker_first = ! $vote_files; ?>

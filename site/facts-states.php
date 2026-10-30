@@ -324,6 +324,10 @@ return array(
 				'en' => 'the Arkansas State Board of Election Commissioners',
 				'es' => 'la Junta Estatal de Comisionados Electorales de Arkansas',
 			),
+			'www.washingtoncountyar.gov' => array(
+				'en' => 'the Washington County Election Commission',
+				'es' => 'la Comisión Electoral del condado de Washington (Election Commission)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Registration closed Monday, October 5, 2026. Arkansas has no same-day or Election Day registration. Already registered in Arkansas and moved to another county? Contact your county clerk. Transfers of registered voters can be received until the polls close on November 3.',
@@ -427,6 +431,20 @@ return array(
 			'src' => 'https://sbec.arkansas.gov/wp-content/uploads/2026-Poll-Worker-Guide-CLEAN-10-28-25.pdf',
 			'checked' => '2026-10-21',
 		),
+		'sticker.more' => array( array(
+			'place' => array(
+				'en' => 'Washington County',
+				'es' => 'Condado de Washington',
+			),
+			'kind' => 'county',
+			'en' => 'Two students drew the county\'s 2026 I Voted stickers: Madi, a 9th grader, and Russell, a 5th grader, whose sticker shows a singing bird on a blossoming branch.',
+			'es' => 'Dos estudiantes dibujaron los stickers I Voted 2026 del condado: Madi, de 9.º grado, y Russell, de 5.º grado, cuyo sticker muestra un pájaro que canta en una rama en flor.',
+			'src' => 'https://www.washingtoncountyar.gov/government/departments-a-e/election-commission',
+			'checked' => '2026-10-30',
+			'until' => '2026-11-03',
+			'en_after' => 'Two students drew the county\'s 2026 I Voted stickers: Madi, a 9th grader, and Russell, a 5th grader, whose sticker shows a singing bird on a blossoming branch.',
+			'es_after' => 'Dos estudiantes dibujaron los stickers I Voted 2026 del condado: Madi, de 9.º grado, y Russell, de 5.º grado, cuyo sticker muestra un pájaro que canta en una rama en flor.',
+		) ),
 		'election_day.hours' => array(
 			'en' => 'Polling places are open 7:30 a.m. to 7:30 p.m. local time.',
 			'es' => 'Los lugares de votación abren de 7:30 a. m. a 7:30 p. m., hora local.',
@@ -644,6 +662,22 @@ return array(
 				'en' => 'the Santa Clara County Registrar of Voters',
 				'es' => 'la oficina electoral del condado de Santa Clara (Registrar of Voters)',
 			),
+			'x.com' => array(
+				'en' => 'the Los Angeles County Registrar-Recorder/County Clerk on X',
+				'es' => 'la oficina electoral del condado de Los Ángeles (Registrar-Recorder/County Clerk) en X',
+			),
+			'ocvote.gov' => array(
+				'en' => 'the Orange County Registrar of Voters',
+				'es' => 'la oficina electoral del condado de Orange (Registrar of Voters)',
+			),
+			'www.fostercity.org' => array(
+				'en' => 'the City of Foster City',
+				'es' => 'la ciudad de Foster City',
+			),
+			'media.api.sf.gov' => array(
+				'en' => 'the San Francisco Department of Elections',
+				'es' => 'el Departamento de Elecciones de San Francisco',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Online registration closed October 19. You can still register and vote the same day, through Election Day, at your county elections office or any in-person voting location in your county.',
@@ -765,6 +799,59 @@ return array(
 			'src' => 'https://www.countynewscenter.com/county-mails-ballots-and-opens-more-than-150-ballot-drop-boxes-for-november-general-election/',
 			'checked' => '2026-10-24',
 		),
+		'sticker.more' => array( array(
+			'place' => array(
+				'en' => 'San Francisco',
+				'es' => 'San Francisco',
+			),
+			'kind' => 'city',
+			'en' => 'Look in your vote-by-mail packet. The Department of Elections mails every locally registered voter an "I Voted!" sticker with the ballot, instructions and a postage-paid return envelope.',
+			'es' => 'Busca en tu paquete de voto por correo. El Departamento de Elecciones envía a cada votante registrado en la ciudad un sticker "I Voted!" junto con la boleta, las instrucciones y un sobre de devolución con franqueo pagado.',
+			'src' => 'https://media.api.sf.gov/documents/N26_General_Brochure_EN.pdf',
+			'checked' => '2026-10-30',
+			'until' => '2026-11-03',
+			'en_after' => 'For November 3, 2026, the Department of Elections mailed every locally registered voter an "I Voted!" sticker with the ballot, instructions and a postage-paid return envelope.',
+			'es_after' => 'Para el 3 de noviembre de 2026, el Departamento de Elecciones envió a cada votante registrado en la ciudad un sticker "I Voted!" junto con la boleta, las instrucciones y un sobre de devolución con franqueo pagado.',
+		), array(
+			'place' => array(
+				'en' => 'Los Angeles County',
+				'es' => 'Condado de Los Ángeles',
+			),
+			'kind' => 'county',
+			'en' => 'Vote early at any of the county\'s 11-day Vote Centers on Saturday, October 31, to get a Halloween sticker while supplies last.',
+			'es' => 'Vota por anticipado en cualquiera de los Vote Centers de 11 días del condado el sábado 31 de octubre para recibir un sticker de Halloween mientras duren.',
+			'src' => 'https://x.com/LACountyRRCC/status/2116183414323745232',
+			'checked' => '2026-10-30',
+			'until' => '2026-10-31',
+			'en_after' => 'On October 31, voters at the county\'s 11-day Vote Centers got a Halloween sticker while supplies lasted.',
+			'es_after' => 'El 31 de octubre, quienes votaron en los Vote Centers de 11 días del condado recibieron un sticker de Halloween mientras duraron.',
+		), array(
+			'place' => array(
+				'en' => 'Orange County',
+				'es' => 'Condado de Orange',
+			),
+			'kind' => 'county',
+			'en' => 'Look in your vote-by-mail packet. The county\'s November 3 instructions include a peel-off I Voted sticker for voters who return their ballot.',
+			'es' => 'Busca en tu paquete de voto por correo. Las instrucciones del condado para el 3 de noviembre incluyen un sticker I Voted despegable para quienes devuelven su boleta.',
+			'src' => 'https://ocvote.gov/sites/default/files/elections/gen2026/11.3.26%20VBM%20Instructions%20v.267.pdf',
+			'checked' => '2026-10-30',
+			'until' => '2026-11-03',
+			'en_after' => 'The county\'s November 3, 2026 vote-by-mail packets included a peel-off I Voted sticker for voters who returned their ballot.',
+			'es_after' => 'Los paquetes de voto por correo del condado para el 3 de noviembre de 2026 incluían un sticker I Voted despegable para quienes devolvieron su boleta.',
+		), array(
+			'place' => array(
+				'en' => 'Foster City',
+				'es' => 'Foster City',
+			),
+			'kind' => 'city',
+			'en' => 'Residents picked the city\'s own sticker for November 3 in a contest shared with Burlingame, Hillsborough, Millbrae and San Mateo. Get it at City Hall, or at Foster City vote centers from October 31 through Election Day.',
+			'es' => 'Los residentes eligieron el sticker propio de la ciudad para el 3 de noviembre en un concurso compartido con Burlingame, Hillsborough, Millbrae y San Mateo. Recógelo en el ayuntamiento (City Hall) o en los centros de votación de Foster City del 31 de octubre al Día de las Elecciones.',
+			'src' => 'https://www.fostercity.org/1307/I-Voted-Sticker-Contest',
+			'checked' => '2026-10-30',
+			'until' => '2026-11-03',
+			'en_after' => 'Residents picked the city\'s own sticker for November 3, 2026, in a contest shared with Burlingame, Hillsborough, Millbrae and San Mateo. It was handed out at City Hall and at Foster City vote centers.',
+			'es_after' => 'Los residentes eligieron el sticker propio de la ciudad para el 3 de noviembre de 2026 en un concurso compartido con Burlingame, Hillsborough, Millbrae y San Mateo. Se repartió en el ayuntamiento (City Hall) y en los centros de votación de Foster City.',
+		) ),
 		'election_day.hours' => array(
 			'en' => 'Polling places are open 7 a.m. to 8 p.m. local time.',
 			'es' => 'Los lugares de votación abren de 7 a. m. a 8 p. m., hora local.',
@@ -1501,6 +1588,18 @@ return array(
 				'en' => 'the Gulf County Supervisor of Elections',
 				'es' => 'la oficina del Supervisor de Elecciones del condado de Gulf (Supervisor of Elections)',
 			),
+			'voteseminole.gov' => array(
+				'en' => 'the Seminole County Supervisor of Elections',
+				'es' => 'la Supervisora de Elecciones del condado de Seminole (Supervisor of Elections)',
+			),
+			'www.colliervotes.gov' => array(
+				'en' => 'the Collier County Supervisor of Elections',
+				'es' => 'la Supervisora de Elecciones del condado de Collier (Supervisor of Elections)',
+			),
+			'www.votepalmbeach.gov' => array(
+				'en' => 'the Palm Beach County Supervisor of Elections',
+				'es' => 'la Supervisora de Elecciones del condado de Palm Beach (Supervisor of Elections)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Registration closed Monday, October 5, 2026. One exception: if you, or a family member who came with you, left the military or the Merchant Marine, came back from a military deployment, or left a job outside the U.S. after October 5, you can still register in person at your Supervisor of Elections office until 5 p.m. on Friday, October 30. Bring papers that show it.',
@@ -1636,6 +1735,46 @@ return array(
 			'src' => 'https://www.sarasotavotes.gov/CivicAlerts.aspx?AID=31',
 			'checked' => '2026-10-28',
 		),
+		'sticker.more' => array( array(
+			'place' => array(
+				'en' => 'Seminole County',
+				'es' => 'Condado de Seminole',
+			),
+			'kind' => 'county',
+			'en' => 'Arwen, a 6th grader at Tuskawilla Middle School, won the county\'s first student sticker contest out of more than 50 entries. Her red, white and blue badge with a handwritten I Voted is printed for polling places across the county in 2026.',
+			'es' => 'Arwen, estudiante de 6.º grado en Tuskawilla Middle School, ganó el primer concurso de stickers para estudiantes del condado entre más de 50 dibujos. Su insignia roja, blanca y azul con I Voted escrito a mano se imprime para los lugares de votación de todo el condado en 2026.',
+			'src' => 'https://voteseminole.gov/news/seminole-elections-announces-winner-of-first-ever-student-i-voted-sticker-contest-unveils-2026-design/',
+			'checked' => '2026-10-30',
+			'until' => '2026-11-03',
+			'en_after' => 'Arwen, a 6th grader at Tuskawilla Middle School, won the county\'s first student sticker contest out of more than 50 entries. Her red, white and blue badge with a handwritten I Voted was printed for polling places across the county in 2026.',
+			'es_after' => 'Arwen, estudiante de 6.º grado en Tuskawilla Middle School, ganó el primer concurso de stickers para estudiantes del condado entre más de 50 dibujos. Su insignia roja, blanca y azul con I Voted escrito a mano se imprimió para los lugares de votación de todo el condado en 2026.',
+		), array(
+			'place' => array(
+				'en' => 'Collier County',
+				'es' => 'Condado de Collier',
+			),
+			'kind' => 'county',
+			'en' => 'Presley, a student at North Naples Middle School, drew the county\'s official 2026 I Voted sticker. It was picked from 253 entries in the county\'s Art for Democracy contest.',
+			'es' => 'Presley, estudiante de North Naples Middle School, dibujó el sticker I Voted oficial 2026 del condado. Fue elegido entre 253 dibujos del concurso Art for Democracy del condado.',
+			'src' => 'https://www.colliervotes.gov/m/newsflash/Home/Detail/62',
+			'checked' => '2026-10-30',
+			'until' => '2026-11-03',
+			'en_after' => 'Presley, a student at North Naples Middle School, drew the county\'s official 2026 I Voted sticker. It was picked from 253 entries in the county\'s Art for Democracy contest.',
+			'es_after' => 'Presley, estudiante de North Naples Middle School, dibujó el sticker I Voted oficial 2026 del condado. Fue elegido entre 253 dibujos del concurso Art for Democracy del condado.',
+		), array(
+			'place' => array(
+				'en' => 'Palm Beach County',
+				'es' => 'Condado de Palm Beach',
+			),
+			'kind' => 'county',
+			'en' => 'Giahna, a student at Independence Middle School, won first place in the county\'s 2026 I Voted sticker contest. Student-designed I Voted, Future Voter and America\'s 250th stickers are handed out at polling places in 2026.',
+			'es' => 'Giahna, estudiante de Independence Middle School, ganó el primer lugar del concurso de stickers I Voted 2026 del condado. Los stickers I Voted, Future Voter y del 250 aniversario de Estados Unidos, diseñados por estudiantes, se reparten en los lugares de votación en 2026.',
+			'src' => 'https://www.votepalmbeach.gov/CivicSend/ViewMessage/Message/290089',
+			'checked' => '2026-10-30',
+			'until' => '2026-11-03',
+			'en_after' => 'Giahna, a student at Independence Middle School, won first place in the county\'s 2026 I Voted sticker contest. Student-designed I Voted, Future Voter and America\'s 250th stickers were handed out at polling places in 2026.',
+			'es_after' => 'Giahna, estudiante de Independence Middle School, ganó el primer lugar del concurso de stickers I Voted 2026 del condado. Los stickers I Voted, Future Voter y del 250 aniversario de Estados Unidos, diseñados por estudiantes, se repartieron en los lugares de votación en 2026.',
+		) ),
 		'election_day.hours' => array(
 			'en' => 'Polling places are open 7 a.m. to 7 p.m., on the time used in your county seat. In Gulf County, that\'s Eastern time, so polls in the county\'s Central time area open at 6 a.m. and close at 6 p.m. Central.',
 			'es' => 'Los lugares de votación abren de 7 a. m. a 7 p. m., según la hora que se usa en la cabecera de tu condado. En el condado de Gulf es la hora del Este, así que en la parte del condado con hora del Centro abren a las 6 a. m. y cierran a las 6 p. m., hora del Centro.',
@@ -4488,6 +4627,14 @@ return array(
 				'en' => 'the North Carolina General Assembly',
 				'es' => 'la Asamblea General de North Carolina (North Carolina General Assembly)',
 			),
+			'www.forsythcountync.gov' => array(
+				'en' => 'Forsyth County',
+				'es' => 'el condado de Forsyth',
+			),
+			'jcncelections.org' => array(
+				'en' => 'the Jackson County Board of Elections',
+				'es' => 'la junta electoral del condado de Jackson (Board of Elections)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'The regular deadline was 5 p.m. on Friday, October 9, 2026. You can still register and vote at the same time at any early voting site in your county until 3 p.m. on Saturday, October 31. You must have lived in the county at least 30 days before Election Day. Bring proof of your current address, such as a North Carolina driver\'s license, a current utility bill, bank statement, paycheck or government document, or a college document with your name and address. You\'ll also be asked for photo ID to vote, and one document can cover both if it\'s an accepted photo ID.',
@@ -4626,6 +4773,33 @@ return array(
 			'src' => 'https://www.guilfordcountync.gov/media/2742/open',
 			'checked' => '2026-10-23',
 		),
+		'sticker.more' => array( array(
+			'place' => array(
+				'en' => 'Forsyth County',
+				'es' => 'Condado de Forsyth',
+			),
+			'kind' => 'county',
+			'en' => 'Paloma, an 11-year-old at The Arts Based School, drew the hand-lettered I Voted sticker voters get at the polls this fall. Under the words, a row of hands spells "Vote" in sign language.',
+			'es' => 'Paloma, de 11 años, estudiante de The Arts Based School, dibujó el sticker I Voted con letras a mano que reciben los votantes en las urnas este otoño. Debajo de las palabras, una fila de manos deletrea "Vote" en lengua de señas.',
+			'src' => 'https://www.forsythcountync.gov/newsletter/archive/6_26.aspx',
+			'checked' => '2026-10-30',
+			'until' => '2026-11-03',
+			'en_after' => 'Paloma, an 11-year-old at The Arts Based School, drew the hand-lettered I Voted sticker voters got at the polls in fall 2026. Under the words, a row of hands spells "Vote" in sign language.',
+			'es_after' => 'Paloma, de 11 años, estudiante de The Arts Based School, dibujó el sticker I Voted con letras a mano que recibieron los votantes en las urnas en el otoño de 2026. Debajo de las palabras, una fila de manos deletrea "Vote" en lengua de señas.',
+		), array(
+			'place' => array(
+				'en' => 'Jackson County',
+				'es' => 'Condado de Jackson',
+			),
+			'kind' => 'county',
+			'en' => 'Naomi, age 7, drew the county\'s 2026 I Voted sticker, picked from almost 40 youth entries. It is handed out at all Jackson County voting sites while supplies last.',
+			'es' => 'Naomi, de 7 años, dibujó el sticker I Voted 2026 del condado, elegido entre casi 40 dibujos de niños y jóvenes. Se reparte en todos los lugares de votación del condado de Jackson mientras duren.',
+			'src' => 'https://jcncelections.org/',
+			'checked' => '2026-10-30',
+			'until' => '2026-11-03',
+			'en_after' => 'Naomi, age 7, drew the county\'s 2026 I Voted sticker, picked from almost 40 youth entries. It was handed out at all Jackson County voting sites while supplies lasted.',
+			'es_after' => 'Naomi, de 7 años, dibujó el sticker I Voted 2026 del condado, elegido entre casi 40 dibujos de niños y jóvenes. Se repartió en todos los lugares de votación del condado de Jackson mientras duraron.',
+		) ),
 		'election_day.hours' => array(
 			'en' => 'Polling places are open 6:30 a.m. to 7:30 p.m. local time.',
 			'es' => 'Los lugares de votación abren de 6:30 a. m. a 7:30 p. m., hora local.',
@@ -5629,6 +5803,22 @@ return array(
 				'en' => 'NYC311, the City of New York',
 				'es' => 'NYC311, la ciudad de Nueva York',
 			),
+			'www.madisoncounty.ny.gov' => array(
+				'en' => 'the Madison County Board of Elections',
+				'es' => 'la junta electoral del condado de Madison (Board of Elections)',
+			),
+			'www.geneseeny.gov' => array(
+				'en' => 'the Genesee County Board of Elections',
+				'es' => 'la junta electoral del condado de Genesee (Board of Elections)',
+			),
+			'www.tompkinscountyny.gov' => array(
+				'en' => 'the Tompkins County Board of Elections',
+				'es' => 'la junta electoral del condado de Tompkins (Board of Elections)',
+			),
+			'elections.dutchessny.gov' => array(
+				'en' => 'the Dutchess County Board of Elections',
+				'es' => 'la junta electoral del condado de Dutchess (Board of Elections)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Your application must reach a board of elections by Saturday, October 24, 2026, by mail or in person. New York has no Election Day registration.',
@@ -5770,6 +5960,59 @@ return array(
 			'src' => 'https://portal.311.nyc.gov/article/?kanumber=KA-03114',
 			'checked' => '2026-10-23',
 		),
+		'sticker.more' => array( array(
+			'place' => array(
+				'en' => 'Madison County',
+				'es' => 'Condado de Madison',
+			),
+			'kind' => 'county',
+			'en' => 'Jeslyn, 15, of Morrisville won the county\'s 2026 sticker art contest. Her design shows a bald eagle flying with I Voted across its wings over the American flag, and it is handed out to voters at the November election.',
+			'es' => 'Jeslyn, de 15 años, de Morrisville, ganó el concurso de arte para el sticker 2026 del condado. Su diseño muestra un águila calva que vuela con I Voted en las alas sobre la bandera de Estados Unidos, y se reparte a los votantes en las elecciones de noviembre.',
+			'src' => 'https://www.madisoncounty.ny.gov/2968/I-Voted-Sticker-Art-Contest',
+			'checked' => '2026-10-30',
+			'until' => '2026-11-03',
+			'en_after' => 'Jeslyn, 15, of Morrisville won the county\'s 2026 sticker art contest. Her design shows a bald eagle flying with I Voted across its wings over the American flag, and it was handed out at the November 2026 election.',
+			'es_after' => 'Jeslyn, de 15 años, de Morrisville, ganó el concurso de arte para el sticker 2026 del condado. Su diseño muestra un águila calva que vuela con I Voted en las alas sobre la bandera de Estados Unidos, y se repartió en las elecciones de noviembre de 2026.',
+		), array(
+			'place' => array(
+				'en' => 'Genesee County',
+				'es' => 'Condado de Genesee',
+			),
+			'kind' => 'county',
+			'en' => 'Local students won the county\'s 2026 I Voted sticker contest. Their winning designs are turned into the stickers handed out at polling places.',
+			'es' => 'Estudiantes de la zona ganaron el concurso de stickers I Voted 2026 del condado. Sus diseños ganadores se convierten en los stickers que se reparten en los lugares de votación.',
+			'src' => 'https://www.geneseeny.gov/Department-Content/Board-of-Elections/I-Voted-Sticker-Contest',
+			'checked' => '2026-10-30',
+			'until' => '2026-11-03',
+			'en_after' => 'Local students won the county\'s 2026 I Voted sticker contest. Their winning designs were turned into the stickers handed out at polling places.',
+			'es_after' => 'Estudiantes de la zona ganaron el concurso de stickers I Voted 2026 del condado. Sus diseños ganadores se convirtieron en los stickers que se repartieron en los lugares de votación.',
+		), array(
+			'place' => array(
+				'en' => 'Tompkins County',
+				'es' => 'Condado de Tompkins',
+			),
+			'kind' => 'county',
+			'en' => 'Leo, a homeschooled 9th grader, drew the 2026 I Voted sticker: a lake and pine forest framed by flag stripes and stars. Addie and Fiona, 5th graders at Lansing Middle School, drew Future Voter stickers for kids who come along to the polls. The I Voted sticker goes to all general election voters.',
+			'es' => 'Leo, estudiante de 9.º grado que estudia en casa, dibujó el sticker I Voted 2026: un lago y un bosque de pinos enmarcados por franjas y estrellas de la bandera. Addie y Fiona, estudiantes de 5.º grado en Lansing Middle School, dibujaron los stickers Future Voter para los niños que acompañan a su familia a votar. El sticker I Voted se entrega a todos los votantes de las elecciones generales.',
+			'src' => 'https://www.tompkinscountyny.gov/All-Departments/Board-of-Elections/Election-Sticker-Design-Contest',
+			'checked' => '2026-10-30',
+			'until' => '2026-11-03',
+			'en_after' => 'Leo, a homeschooled 9th grader, drew the 2026 I Voted sticker: a lake and pine forest framed by flag stripes and stars. Addie and Fiona, 5th graders at Lansing Middle School, drew Future Voter stickers for kids who came along to the polls.',
+			'es_after' => 'Leo, estudiante de 9.º grado que estudia en casa, dibujó el sticker I Voted 2026: un lago y un bosque de pinos enmarcados por franjas y estrellas de la bandera. Addie y Fiona, estudiantes de 5.º grado en Lansing Middle School, dibujaron los stickers Future Voter para los niños que acompañaron a su familia a votar.',
+		), array(
+			'place' => array(
+				'en' => 'Dutchess County',
+				'es' => 'Condado de Dutchess',
+			),
+			'kind' => 'county',
+			'en' => 'The winner of the county\'s first student sticker contest, picked by a public vote from six finalists, is printed on the I Voted stickers handed out at polling places in 2026.',
+			'es' => 'El diseño ganador del primer concurso de stickers para estudiantes del condado, elegido por votación pública entre seis finalistas, se imprime en los stickers I Voted que se reparten en los lugares de votación en 2026.',
+			'src' => 'https://elections.dutchessny.gov/2026/07/09/dutchess-county-board-of-elections-announces-finalists-for-inaugural-i-voted-sticker-design-contest/',
+			'checked' => '2026-10-30',
+			'until' => '2026-11-03',
+			'en_after' => 'The winner of the county\'s first student sticker contest, picked by a public vote from six finalists, was printed on the I Voted stickers handed out at polling places in 2026.',
+			'es_after' => 'El diseño ganador del primer concurso de stickers para estudiantes del condado, elegido por votación pública entre seis finalistas, se imprimió en los stickers I Voted que se repartieron en los lugares de votación en 2026.',
+		) ),
 		'election_day.hours' => array(
 			'en' => 'Polling places are open 6 a.m. to 9 p.m. local time.',
 			'es' => 'Los lugares de votación abren de 6 a. m. a 9 p. m., hora local.',
@@ -6641,6 +6884,10 @@ return array(
 				'en' => 'South Carolina law',
 				'es' => 'la ley de South Carolina',
 			),
+			'vote.charlestoncounty.org' => array(
+				'en' => 'the Charleston County Board of Voter Registration and Elections',
+				'es' => 'la oficina electoral del condado de Charleston (Board of Voter Registration and Elections)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Registration closed on Sunday, October 4, 2026 online and on Monday, October 5 by mail. Not sure you\'re registered? Check MyscVOTES.',
@@ -6776,6 +7023,20 @@ return array(
 			'src' => 'https://charlestoncounty.gov/departments/bevr/outreach.php',
 			'checked' => '2026-10-28',
 		),
+		'sticker.more' => array( array(
+			'place' => array(
+				'en' => 'Charleston County',
+				'es' => 'Condado de Charleston',
+			),
+			'kind' => 'county',
+			'en' => 'Emmeline, Adalyn and Katherine drew the three winning designs in the county\'s fourth student sticker contest, picked with nearly 4,200 votes. One uses the colors of Rainbow Row. They are printed in a limited run and handed out during early voting, through October 31.',
+			'es' => 'Emmeline, Adalyn y Katherine dibujaron los tres diseños ganadores del cuarto concurso de stickers para estudiantes del condado, elegidos con casi 4,200 votos. Uno usa los colores de Rainbow Row. Se imprimen en cantidad limitada y se reparten durante la votación anticipada, hasta el 31 de octubre.',
+			'src' => 'https://vote.charlestoncounty.org/files/bevr-newsletter.pdf',
+			'checked' => '2026-10-30',
+			'until' => '2026-10-31',
+			'en_after' => 'Emmeline, Adalyn and Katherine drew the three winning designs in the county\'s fourth student sticker contest, picked with nearly 4,200 votes. One uses the colors of Rainbow Row. They were printed in a limited run and handed out during early voting in 2026.',
+			'es_after' => 'Emmeline, Adalyn y Katherine dibujaron los tres diseños ganadores del cuarto concurso de stickers para estudiantes del condado, elegidos con casi 4,200 votos. Uno usa los colores de Rainbow Row. Se imprimieron en cantidad limitada y se repartieron durante la votación anticipada de 2026.',
+		) ),
 		'election_day.hours' => array(
 			'en' => 'Polling places are open 7 a.m. to 7 p.m. local time.',
 			'es' => 'Los lugares de votación abren de 7 a. m. a 7 p. m., hora local.',
@@ -7131,6 +7392,14 @@ return array(
 				'en' => 'Williamson County Elections',
 				'es' => 'la oficina electoral del condado de Williamson (Williamson County Elections)',
 			),
+			'www.guadalupetx.gov' => array(
+				'en' => 'Guadalupe County Elections',
+				'es' => 'la oficina electoral del condado de Guadalupe',
+			),
+			'www.co.gaines.tx.us' => array(
+				'en' => 'the Gaines County Elections Department',
+				'es' => 'el Departamento Electoral del condado de Gaines',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Registration closed October 5, 2026. Texas has no same-day or Election Day registration. Moved to a new Texas county and didn\'t register there? If you\'re still registered in your old county, you may be able to vote a limited ballot, with the races both counties share, at your new county\'s main early voting location through Friday, October 30. Not on Election Day.',
@@ -7284,6 +7553,33 @@ return array(
 			'src' => 'https://www.epcountyvotestx.gov/voter-information/fpca-military-and-overseas',
 			'checked' => '2026-10-29',
 		),
+		'sticker.more' => array( array(
+			'place' => array(
+				'en' => 'Guadalupe County',
+				'es' => 'Condado de Guadalupe',
+			),
+			'kind' => 'county',
+			'en' => 'Julianna\'s hand-drawn bluebonnet won the county\'s first I Voted sticker contest, and Laila drew the Future Voter sticker. The first-place designs are on the county\'s stickers for the 2025 and 2026 elections.',
+			'es' => 'El bluebonnet dibujado a mano por Julianna ganó el primer concurso de stickers I Voted del condado, y Laila dibujó el sticker Future Voter. Los diseños ganadores están en los stickers del condado para las elecciones de 2025 y 2026.',
+			'src' => 'https://www.guadalupetx.gov/page/Elections.Sticker_Contest',
+			'checked' => '2026-10-30',
+			'until' => '2026-11-03',
+			'en_after' => 'Julianna\'s hand-drawn bluebonnet won the county\'s first I Voted sticker contest, and Laila drew the Future Voter sticker. The first-place designs were on the county\'s stickers for the 2025 and 2026 elections.',
+			'es_after' => 'El bluebonnet dibujado a mano por Julianna ganó el primer concurso de stickers I Voted del condado, y Laila dibujó el sticker Future Voter. Los diseños ganadores estuvieron en los stickers del condado para las elecciones de 2025 y 2026.',
+		), array(
+			'place' => array(
+				'en' => 'Gaines County',
+				'es' => 'Condado de Gaines',
+			),
+			'kind' => 'county',
+			'en' => 'Mattie, an 11th grader at Seminole High School, won the county\'s first high school sticker contest with a red I Voted! sticker and a row of stars. It is handed out at every early voting site and Election Day vote center in 2026.',
+			'es' => 'Mattie, estudiante de 11.º grado en Seminole High School, ganó el primer concurso de stickers para estudiantes de preparatoria del condado con un sticker rojo I Voted! y una fila de estrellas. Se reparte en todos los lugares de votación anticipada y centros de votación del Día de las Elecciones en 2026.',
+			'src' => 'https://www.co.gaines.tx.us/page/gaines.ElectionsStickerpage',
+			'checked' => '2026-10-30',
+			'until' => '2026-11-03',
+			'en_after' => 'Mattie, an 11th grader at Seminole High School, won the county\'s first high school sticker contest with a red I Voted! sticker and a row of stars. It was handed out at every early voting site and Election Day vote center in 2026.',
+			'es_after' => 'Mattie, estudiante de 11.º grado en Seminole High School, ganó el primer concurso de stickers para estudiantes de preparatoria del condado con un sticker rojo I Voted! y una fila de estrellas. Se repartió en todos los lugares de votación anticipada y centros de votación del Día de las Elecciones en 2026.',
+		) ),
 		'election_day.hours' => array(
 			'en' => 'Polling places are open 7 a.m. to 7 p.m. local time.',
 			'es' => 'Los lugares de votación abren de 7 a. m. a 7 p. m., hora local.',

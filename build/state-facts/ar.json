@@ -11,6 +11,10 @@
   "sbec.arkansas.gov": {
    "en": "the Arkansas State Board of Election Commissioners",
    "es": "la Junta Estatal de Comisionados Electorales de Arkansas"
+  },
+  "www.washingtoncountyar.gov": {
+   "en": "the Washington County Election Commission",
+   "es": "la Comisión Electoral del condado de Washington (Election Commission)"
   }
  },
  "dates": {
@@ -202,7 +206,26 @@
   "tradition": {
    "status": "missing",
    "notes": "No I voted sticker contest or statewide sticker found on sos.arkansas.gov."
-  }
+  },
+  "more": [
+   {
+    "place": {
+     "en": "Washington County",
+     "es": "Condado de Washington"
+    },
+    "kind": "county",
+    "en": "Two students drew the county's 2026 I Voted stickers: Madi, a 9th grader, and Russell, a 5th grader, whose sticker shows a singing bird on a blossoming branch.",
+    "es": "Dos estudiantes dibujaron los stickers I Voted 2026 del condado: Madi, de 9.º grado, y Russell, de 5.º grado, cuyo sticker muestra un pájaro que canta en una rama en flor.",
+    "until": "2026-11-03",
+    "en_after": "Two students drew the county's 2026 I Voted stickers: Madi, a 9th grader, and Russell, a 5th grader, whose sticker shows a singing bird on a blossoming branch.",
+    "es_after": "Dos estudiantes dibujaron los stickers I Voted 2026 del condado: Madi, de 9.º grado, y Russell, de 5.º grado, cuyo sticker muestra un pájaro que canta en una rama en flor.",
+    "src": "https://www.washingtoncountyar.gov/government/departments-a-e/election-commission",
+    "quote": "2026 \"I Voted\" Sticker Winners",
+    "checked": "2026-10-30",
+    "notes": "Table heading quoted; rows under it read \"Madi Brannan / 9th Grade\" and \"Russell Wollenzien / 5th Grade\" with both designs. Schools and the distribution sentence are on a contest page that now returns Page Not Found, so left out. Mockingbird and apple blossom per nwaonline Oct 28 (news only); described here from the image.",
+    "status": "verified"
+   }
+  ]
  },
  "faq": {
   "provisional": {

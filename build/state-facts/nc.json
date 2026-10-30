@@ -23,6 +23,14 @@
   "ncleg.gov": {
    "en": "the North Carolina General Assembly",
    "es": "la Asamblea General de North Carolina (North Carolina General Assembly)"
+  },
+  "www.forsythcountync.gov": {
+   "en": "Forsyth County",
+   "es": "el condado de Forsyth"
+  },
+  "jcncelections.org": {
+   "en": "the Jackson County Board of Elections",
+   "es": "la junta electoral del condado de Jackson (Board of Elections)"
   }
  },
  "dates": {
@@ -246,7 +254,43 @@
   "mail": {
    "status": "missing",
    "notes": "Checked 2026-10-28, no official statement found on stickers for absentee-by-mail voters: ncsbe.gov (Vote by Mail pages, BallotTrax tracker info; no virtual sticker mentioned), Mecklenburg (vote.mecknc.gov Absentee Voting page), Wake (wake.gov Absentee by Mail page; its contest sticker is 'I Voted Early'), Guilford (absentee page; 2026 Early Voting Officials handbook hands 'I Voted Early' stickers only to voters whose ballot was tabulated, and its absentee in-person return steps give none), Durham (2026 contest release, no mail mention), Union (2024 contest page). A 2020 Route Fifty article said Durham mail voters might get a sticker with the ballot; news only, not used."
-  }
+  },
+  "more": [
+   {
+    "place": {
+     "en": "Forsyth County",
+     "es": "Condado de Forsyth"
+    },
+    "kind": "county",
+    "en": "Paloma, an 11-year-old at The Arts Based School, drew the hand-lettered I Voted sticker voters get at the polls this fall. Under the words, a row of hands spells \"Vote\" in sign language.",
+    "es": "Paloma, de 11 años, estudiante de The Arts Based School, dibujó el sticker I Voted con letras a mano que reciben los votantes en las urnas este otoño. Debajo de las palabras, una fila de manos deletrea \"Vote\" en lengua de señas.",
+    "until": "2026-11-03",
+    "en_after": "Paloma, an 11-year-old at The Arts Based School, drew the hand-lettered I Voted sticker voters got at the polls in fall 2026. Under the words, a row of hands spells \"Vote\" in sign language.",
+    "es_after": "Paloma, de 11 años, estudiante de The Arts Based School, dibujó el sticker I Voted con letras a mano que recibieron los votantes en las urnas en el otoño de 2026. Debajo de las palabras, una fila de manos deletrea \"Vote\" en lengua de señas.",
+    "src": "https://www.forsythcountync.gov/newsletter/archive/6_26.aspx",
+    "quote": "Stickers that Forsyth voters receive at the polls this Fall will be a little different this year, since they were designed by a local student who won Forsyth County Board of Elections' \"I Voted\" Sticker Contest.",
+    "checked": "2026-10-30",
+    "status": "verified",
+    "notes": "County newsletter, June 2026, Vol. 21. Full name on the page."
+   },
+   {
+    "place": {
+     "en": "Jackson County",
+     "es": "Condado de Jackson"
+    },
+    "kind": "county",
+    "en": "Naomi, age 7, drew the county's 2026 I Voted sticker, picked from almost 40 youth entries. It is handed out at all Jackson County voting sites while supplies last.",
+    "es": "Naomi, de 7 años, dibujó el sticker I Voted 2026 del condado, elegido entre casi 40 dibujos de niños y jóvenes. Se reparte en todos los lugares de votación del condado de Jackson mientras duren.",
+    "src": "https://jcncelections.org/",
+    "quote": "Naomi's design will be available for voters at all Jackson Co. voting sites (while supplies last).",
+    "checked": "2026-10-30",
+    "until": "2026-11-03",
+    "en_after": "Naomi, age 7, drew the county's 2026 I Voted sticker, picked from almost 40 youth entries. It was handed out at all Jackson County voting sites while supplies lasted.",
+    "es_after": "Naomi, de 7 años, dibujó el sticker I Voted 2026 del condado, elegido entre casi 40 dibujos de niños y jóvenes. Se repartió en todos los lugares de votación del condado de Jackson mientras duraron.",
+    "notes": "Jackson County Board of Elections site, linked from jacksonnc.org. Full name on the page.",
+    "status": "verified"
+   }
+  ]
  },
  "faq": {
   "provisional": {

@@ -35,7 +35,9 @@ ALLOWED = ['Vote Sticker', 'I Voted By Mail', 'Vote in the Desert', 'Voting Is Y
            # Titles of state sticker designs and contests, quoted as named.
            'You Betcha I Voted', 'Civics in the 605 Statewide Sticker Showcase',
            # Museum and program names on the sticker history page.
-           'The Henry Ford']
+           'The Henry Ford',
+           # School and contest names in the county sticker lists (sticker.more, October 30).
+           'The Arts Based School', 'Art for Democracy']
 FUNCTION_WORDS = re.compile(r"\b(the|and|your|with|from|for|this|that|you|are|vote early|by mail)\b", re.I)
 
 

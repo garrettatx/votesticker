@@ -19,6 +19,22 @@
   "portal.311.nyc.gov": {
    "en": "NYC311, the City of New York",
    "es": "NYC311, la ciudad de Nueva York"
+  },
+  "www.madisoncounty.ny.gov": {
+   "en": "the Madison County Board of Elections",
+   "es": "la junta electoral del condado de Madison (Board of Elections)"
+  },
+  "www.geneseeny.gov": {
+   "en": "the Genesee County Board of Elections",
+   "es": "la junta electoral del condado de Genesee (Board of Elections)"
+  },
+  "www.tompkinscountyny.gov": {
+   "en": "the Tompkins County Board of Elections",
+   "es": "la junta electoral del condado de Tompkins (Board of Elections)"
+  },
+  "elections.dutchessny.gov": {
+   "en": "the Dutchess County Board of Elections",
+   "es": "la junta electoral del condado de Dutchess (Board of Elections)"
   }
  },
  "dates": {
@@ -235,7 +251,77 @@
   "mail": {
    "status": "missing",
    "notes": "Checked 2026-10-28, no official statement found on stickers for early mail or absentee voters: NYC311 general election guide (sticker only at poll sites), Ulster County contest page ('distributed to all voters at the November 3, 2026 General Election', no word on how mail voters get one), elections.ny.gov, Monroe, Erie and Westchester board sites (no sticker pages found), Genesee, Albany and Tioga contests (polling sites). WHEC news quotes the State Board saying counties may buy stickers at their discretion; news only, not used."
-  }
+  },
+  "more": [
+   {
+    "place": {
+     "en": "Madison County",
+     "es": "Condado de Madison"
+    },
+    "kind": "county",
+    "en": "Jeslyn, 15, of Morrisville won the county's 2026 sticker art contest. Her design shows a bald eagle flying with I Voted across its wings over the American flag, and it is handed out to voters at the November election.",
+    "es": "Jeslyn, de 15 años, de Morrisville, ganó el concurso de arte para el sticker 2026 del condado. Su diseño muestra un águila calva que vuela con I Voted en las alas sobre la bandera de Estados Unidos, y se reparte a los votantes en las elecciones de noviembre.",
+    "until": "2026-11-03",
+    "en_after": "Jeslyn, 15, of Morrisville won the county's 2026 sticker art contest. Her design shows a bald eagle flying with I Voted across its wings over the American flag, and it was handed out at the November 2026 election.",
+    "es_after": "Jeslyn, de 15 años, de Morrisville, ganó el concurso de arte para el sticker 2026 del condado. Su diseño muestra un águila calva que vuela con I Voted en las alas sobre la bandera de Estados Unidos, y se repartió en las elecciones de noviembre de 2026.",
+    "src": "https://www.madisoncounty.ny.gov/2968/I-Voted-Sticker-Art-Contest",
+    "quote": "Church’s design will be featured on a sticker to be given out to Madison County voters during the 2026 General Election in November.",
+    "checked": "2026-10-30",
+    "status": "verified",
+    "notes": "Full name and age on the page; first name and town here."
+   },
+   {
+    "place": {
+     "en": "Genesee County",
+     "es": "Condado de Genesee"
+    },
+    "kind": "county",
+    "en": "Local students won the county's 2026 I Voted sticker contest. Their winning designs are turned into the stickers handed out at polling places.",
+    "es": "Estudiantes de la zona ganaron el concurso de stickers I Voted 2026 del condado. Sus diseños ganadores se convierten en los stickers que se reparten en los lugares de votación.",
+    "src": "https://www.geneseeny.gov/Department-Content/Board-of-Elections/I-Voted-Sticker-Contest",
+    "quote": "The winning designs will be turned into stickers and distributed at polling locations, featured in Genesee County Board of Elections communications, and shared on the Genesee County Board of Elections website.",
+    "checked": "2026-10-30",
+    "until": "2026-11-03",
+    "en_after": "Local students won the county's 2026 I Voted sticker contest. Their winning designs were turned into the stickers handed out at polling places.",
+    "es_after": "Estudiantes de la zona ganaron el concurso de stickers I Voted 2026 del condado. Sus diseños ganadores se convirtieron en los stickers que se repartieron en los lugares de votación.",
+    "notes": "Read in Chrome by screenshot (curl and text reading blocked). Winner names and schools below the fold, not read today, so left out.",
+    "status": "verified"
+   },
+   {
+    "place": {
+     "en": "Tompkins County",
+     "es": "Condado de Tompkins"
+    },
+    "kind": "county",
+    "en": "Leo, a homeschooled 9th grader, drew the 2026 I Voted sticker: a lake and pine forest framed by flag stripes and stars. Addie and Fiona, 5th graders at Lansing Middle School, drew Future Voter stickers for kids who come along to the polls. The I Voted sticker goes to all general election voters.",
+    "es": "Leo, estudiante de 9.º grado que estudia en casa, dibujó el sticker I Voted 2026: un lago y un bosque de pinos enmarcados por franjas y estrellas de la bandera. Addie y Fiona, estudiantes de 5.º grado en Lansing Middle School, dibujaron los stickers Future Voter para los niños que acompañan a su familia a votar. El sticker I Voted se entrega a todos los votantes de las elecciones generales.",
+    "until": "2026-11-03",
+    "en_after": "Leo, a homeschooled 9th grader, drew the 2026 I Voted sticker: a lake and pine forest framed by flag stripes and stars. Addie and Fiona, 5th graders at Lansing Middle School, drew Future Voter stickers for kids who came along to the polls.",
+    "es_after": "Leo, estudiante de 9.º grado que estudia en casa, dibujó el sticker I Voted 2026: un lago y un bosque de pinos enmarcados por franjas y estrellas de la bandera. Addie y Fiona, estudiantes de 5.º grado en Lansing Middle School, dibujaron los stickers Future Voter para los niños que acompañaron a su familia a votar.",
+    "src": "https://www.tompkinscountyny.gov/All-Departments/Board-of-Elections/Election-Sticker-Design-Contest",
+    "quote": "Stickers with the winning design will be printed and distributed to all general election voters.",
+    "checked": "2026-10-30",
+    "notes": "Winners, grades and schools read in the 2026 Winners image on the page (Chrome screenshot; curl gets 403). Full names on the page.",
+    "status": "verified"
+   },
+   {
+    "place": {
+     "en": "Dutchess County",
+     "es": "Condado de Dutchess"
+    },
+    "kind": "county",
+    "en": "The winner of the county's first student sticker contest, picked by a public vote from six finalists, is printed on the I Voted stickers handed out at polling places in 2026.",
+    "es": "El diseño ganador del primer concurso de stickers para estudiantes del condado, elegido por votación pública entre seis finalistas, se imprime en los stickers I Voted que se reparten en los lugares de votación en 2026.",
+    "until": "2026-11-03",
+    "en_after": "The winner of the county's first student sticker contest, picked by a public vote from six finalists, was printed on the I Voted stickers handed out at polling places in 2026.",
+    "es_after": "El diseño ganador del primer concurso de stickers para estudiantes del condado, elegido por votación pública entre seis finalistas, se imprimió en los stickers I Voted que se repartieron en los lugares de votación en 2026.",
+    "src": "https://elections.dutchessny.gov/2026/07/09/dutchess-county-board-of-elections-announces-finalists-for-inaugural-i-voted-sticker-design-contest/",
+    "quote": "The winning design will be printed on official “I Voted” stickers and distributed to voters at polling locations throughout Dutchess County during the 2026 General Election.",
+    "checked": "2026-10-30",
+    "notes": "Release July 9, 2026 (55 entries, six finalists). Winner named only in news (Highlands Current Oct 26), so not named here.",
+    "status": "verified"
+   }
+  ]
  },
  "faq": {
   "provisional": {

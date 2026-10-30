@@ -23,6 +23,22 @@
   "vote.santaclaracounty.gov": {
    "en": "the Santa Clara County Registrar of Voters",
    "es": "la oficina electoral del condado de Santa Clara (Registrar of Voters)"
+  },
+  "x.com": {
+   "en": "the Los Angeles County Registrar-Recorder/County Clerk on X",
+   "es": "la oficina electoral del condado de Los Ángeles (Registrar-Recorder/County Clerk) en X"
+  },
+  "ocvote.gov": {
+   "en": "the Orange County Registrar of Voters",
+   "es": "la oficina electoral del condado de Orange (Registrar of Voters)"
+  },
+  "www.fostercity.org": {
+   "en": "the City of Foster City",
+   "es": "la ciudad de Foster City"
+  },
+  "media.api.sf.gov": {
+   "en": "the San Francisco Department of Elections",
+   "es": "el Departamento de Elecciones de San Francisco"
   }
  },
  "dates": {
@@ -209,7 +225,77 @@
    "checked": "2026-10-25",
    "quote": "The winning designs will be printed and distributed at both SLO County Elections Offices and at polling locations during the June and November 2026 elections.",
    "status": "verified"
-  }
+  },
+  "more": [
+   {
+    "place": {
+     "en": "San Francisco",
+     "es": "San Francisco"
+    },
+    "kind": "city",
+    "en": "Look in your vote-by-mail packet. The Department of Elections mails every locally registered voter an \"I Voted!\" sticker with the ballot, instructions and a postage-paid return envelope.",
+    "es": "Busca en tu paquete de voto por correo. El Departamento de Elecciones envía a cada votante registrado en la ciudad un sticker \"I Voted!\" junto con la boleta, las instrucciones y un sobre de devolución con franqueo pagado.",
+    "until": "2026-11-03",
+    "en_after": "For November 3, 2026, the Department of Elections mailed every locally registered voter an \"I Voted!\" sticker with the ballot, instructions and a postage-paid return envelope.",
+    "es_after": "Para el 3 de noviembre de 2026, el Departamento de Elecciones envió a cada votante registrado en la ciudad un sticker \"I Voted!\" junto con la boleta, las instrucciones y un sobre de devolución con franqueo pagado.",
+    "src": "https://media.api.sf.gov/documents/N26_General_Brochure_EN.pdf",
+    "quote": "In early October, the Department of Elections will send a vote-by-mail packet, with an official ballot, instructions, an “I Voted!” sticker, and a postage-paid return envelope to every locally registered voter.",
+    "checked": "2026-10-30",
+    "notes": "November 3, 2026 general election brochure (N26), read with pdftotext. sf.gov/vote-in-person also says: \"On your way out, pick up an ‘I Voted!’ sticker and wear it proudly!\" Whether the 2023 contest art is still used is not stated, so left out.",
+    "status": "verified"
+   },
+   {
+    "place": {
+     "en": "Los Angeles County",
+     "es": "Condado de Los Ángeles"
+    },
+    "kind": "county",
+    "en": "Vote early at any of the county's 11-day Vote Centers on Saturday, October 31, to get a Halloween sticker while supplies last.",
+    "es": "Vota por anticipado en cualquiera de los Vote Centers de 11 días del condado el sábado 31 de octubre para recibir un sticker de Halloween mientras duren.",
+    "until": "2026-10-31",
+    "en_after": "On October 31, voters at the county's 11-day Vote Centers got a Halloween sticker while supplies lasted.",
+    "es_after": "El 31 de octubre, quienes votaron en los Vote Centers de 11 días del condado recibieron un sticker de Halloween mientras duraron.",
+    "src": "https://x.com/LACountyRRCC/status/2116183414323745232",
+    "quote": "Visit any of our 11-day Vote Centers on October 31st to get an exclusive Halloween-themed sticker while supplies last.",
+    "checked": "2026-10-30",
+    "status": "verified",
+    "notes": "Official X post by the Registrar-Recorder/County Clerk, Oct 30, 2026, 10:00 a.m. Read in Chrome."
+   },
+   {
+    "place": {
+     "en": "Orange County",
+     "es": "Condado de Orange"
+    },
+    "kind": "county",
+    "en": "Look in your vote-by-mail packet. The county's November 3 instructions include a peel-off I Voted sticker for voters who return their ballot.",
+    "es": "Busca en tu paquete de voto por correo. Las instrucciones del condado para el 3 de noviembre incluyen un sticker I Voted despegable para quienes devuelven su boleta.",
+    "src": "https://ocvote.gov/sites/default/files/elections/gen2026/11.3.26%20VBM%20Instructions%20v.267.pdf",
+    "quote": "This \"I Voted\" peel-off sticker is included for those who return their ballot.",
+    "checked": "2026-10-30",
+    "until": "2026-11-03",
+    "en_after": "The county's November 3, 2026 vote-by-mail packets included a peel-off I Voted sticker for voters who returned their ballot.",
+    "es_after": "Los paquetes de voto por correo del condado para el 3 de noviembre de 2026 incluían un sticker I Voted despegable para quienes devolvieron su boleta.",
+    "notes": "Orange County Registrar of Voters, 11.3.26 VBM instructions PDF, read with pdftotext.",
+    "status": "verified"
+   },
+   {
+    "place": {
+     "en": "Foster City",
+     "es": "Foster City"
+    },
+    "kind": "city",
+    "en": "Residents picked the city's own sticker for November 3 in a contest shared with Burlingame, Hillsborough, Millbrae and San Mateo. Get it at City Hall, or at Foster City vote centers from October 31 through Election Day.",
+    "es": "Los residentes eligieron el sticker propio de la ciudad para el 3 de noviembre en un concurso compartido con Burlingame, Hillsborough, Millbrae y San Mateo. Recógelo en el ayuntamiento (City Hall) o en los centros de votación de Foster City del 31 de octubre al Día de las Elecciones.",
+    "until": "2026-11-03",
+    "en_after": "Residents picked the city's own sticker for November 3, 2026, in a contest shared with Burlingame, Hillsborough, Millbrae and San Mateo. It was handed out at City Hall and at Foster City vote centers.",
+    "es_after": "Los residentes eligieron el sticker propio de la ciudad para el 3 de noviembre de 2026 en un concurso compartido con Burlingame, Hillsborough, Millbrae y San Mateo. Se repartió en el ayuntamiento (City Hall) y en los centros de votación de Foster City.",
+    "src": "https://www.fostercity.org/1307/I-Voted-Sticker-Contest",
+    "quote": "Stickers will also be available at Foster City vote centers from Saturday, October 31, through Election Day on November 3, at the Emergency Operations Center (610 Foster City Blvd.) and the Community Center Annex, Wind Room (1000 E. Hillsdale Blvd.).",
+    "checked": "2026-10-30",
+    "status": "verified",
+    "notes": "City of Foster City (fostercity.org), the city's own site."
+   }
+  ]
  },
  "faq": {
   "provisional": {

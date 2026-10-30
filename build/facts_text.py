@@ -41,7 +41,12 @@ ALLOW_HOSTS = {'goelect.txelections.civixapps.com',
                'nmonesource.com',
                'www.countynewscenter.com',     # San Diego County's own news site (County News Center)
                'champaigncountyclerk.com',
-               'hawaii.ballottrax.net', 'northcarolina.ballottrax.net'}  # BallotTrax tracker run for the state election office, linked from its own page     # the Champaign County Clerk, who runs elections there  # New Mexico's official statutes (NMSA), published by the NM Compilation Commission  # DC Board of Elections, the District's election office  # Texas My Voter Portal, linked from votetexas.gov/voting/where.html
+               'hawaii.ballottrax.net', 'northcarolina.ballottrax.net',
+               'jcncelections.org',            # Jackson County NC Board of Elections, linked from jacksonnc.org
+               'www.fostercity.org'}           # the City of Foster City's own site (its city clerk runs the sticker contest)
+# An election office's own social account, for an announcement it posted only there (October 30: LA County's
+# Halloween sticker). The account, not the platform, is the source.
+ALLOW_ACCOUNTS = ('https://x.com/LACountyRRCC/',)  # BallotTrax tracker run for the state election office, linked from its own page     # the Champaign County Clerk, who runs elections there  # New Mexico's official statutes (NMSA), published by the NM Compilation Commission  # DC Board of Elections, the District's election office  # Texas My Voter Portal, linked from votetexas.gov/voting/where.html
 
 # Every fact the template knows, with its kind: text (en/es strings), list (en/es lists), url (a bare
 # string), rule (one of RULES).
@@ -56,6 +61,7 @@ FACTS = {
     'mail.who': 'text', 'mail.who_list': 'list', 'mail.track_url': 'url', 'mail.cure': 'text', 'mail.dropbox': 'text', 'mail.witness': 'text',
     'polls_rules.gear': 'text', 'polls_rules.phone': 'text', 'polls_rules.line': 'text',
     'sticker.tradition': 'text', 'sticker.early': 'text', 'sticker.mail': 'text',
+    'sticker.more': 'more',  # county or city sticker stories under the gallery: a list, each entry its own place, source and quote
     'election_day.hours': 'text',
     'faq.provisional': 'text', 'faq.line': 'text', 'faq.track': 'text', 'faq.unsigned': 'text', 'faq.late_mail': 'text',
 }
@@ -102,6 +108,12 @@ def check(abbr, d, today):
         if kind == 'rule':
             if v not in RULES:
                 errs.append(f'{path}: {v!r} is not one of {RULES}')
+            continue
+        if kind == 'more':
+            if not isinstance(v, list) or not v:
+                errs.append(f'{path}: must be a non-empty list'); continue
+            for i, e in enumerate(v):
+                errs += [f'{path}[{i}]: {x}' for x in more_errors(e, today)]
             continue
         if not isinstance(v, dict):
             errs.append(f'{path}: must be an object'); continue
@@ -153,14 +165,51 @@ def check(abbr, d, today):
     names = d.get('sources') or {}
     for path, kind in FACTS.items():
         v = get(d, path)
-        src = v.get('src') if isinstance(v, dict) else None
-        if src:
+        srcs = [e.get('src') for e in v if isinstance(e, dict)] if kind == 'more' and isinstance(v, list) else [v.get('src') if isinstance(v, dict) else None]
+        for src in filter(None, srcs):
             host = re.sub(r'^https://([^/]+).*', r'\1', src).lower()
             n = names.get(host) or names.get(host.removeprefix('www.'))
             if not isinstance(n, dict) or not n.get('en') or not n.get('es'):
                 errs.append(f'{path}: add sources[{host!r}] with en and es names')
     if get(d, 'where.locator_url') and not get(d, 'where.locator_label'):
         errs.append('where.locator_label is required with locator_url')
+    return errs
+
+
+PLACE_KINDS = ('county', 'city', 'parish')
+
+
+def more_errors(e, today):
+    """One county or city sticker entry: place (en, es), kind, text (en, es), src, quote, checked, status verified."""
+    if not isinstance(e, dict):
+        return ['must be an object']
+    errs = []
+    if e.get('status') != 'verified':
+        errs.append(f'status must be verified, not {e.get("status")!r}')
+    pl = e.get('place')
+    if not (isinstance(pl, dict) and pl.get('en') and pl.get('es')):
+        errs.append('place needs en and es names')
+    if e.get('kind') not in PLACE_KINDS:
+        errs.append(f'kind must be one of {PLACE_KINDS}')
+    for k in ('en', 'es'):
+        if not isinstance(e.get(k), str) or len(e[k]) < 12:
+            errs.append(f'{k} is missing or too short')
+    # Every entry says what it reads after the election (vote_phase() post): until plus past-tense text.
+    if not (e.get('until') and e.get('en_after') and e.get('es_after')):
+        errs.append('until, en_after and es_after are required (the entry after the election)')
+    for t in [e.get(k, '') for k in ('en', 'es', 'en_after', 'es_after')] + [(pl or {}).get('en', ''), (pl or {}).get('es', '')]:
+        m = BANNED_WORDS.search(t or '')
+        if m:
+            errs.append(f'banned word or mark {m.group(0)!r}')
+    errs += host_errors(e.get('src', ''))
+    if not e.get('quote') or len(e['quote']) < 12:
+        errs.append('quote (the source sentence) is required')
+    try:
+        c = date.fromisoformat(e.get('checked', ''))
+        if c < SEASON_START or (today - c).days > MAX_AGE_DAYS or c > today:
+            errs.append(f'checked {c} is outside this season, older than {MAX_AGE_DAYS} days, or in the future')
+    except ValueError:
+        errs.append('checked must be YYYY-MM-DD')
     return errs
 
 
@@ -171,7 +220,7 @@ def host_errors(url):
     if not m:
         return [f'{url}: must be an https:// URL']
     host = m.group(1).lower()
-    if host in ALLOW_HOSTS:
+    if host in ALLOW_HOSTS or url.startswith(ALLOW_ACCOUNTS):
         return []
     if any(host == b or host.endswith('.' + b) for b in BANNED_HOSTS):
         return [f'{host} is not an official source']
@@ -212,7 +261,8 @@ def main():
             print(f'{abbr.upper()}: {e}')
         bad += len(errs)
         if not errs and only_check:
-            n = sum(1 for p, k in FACTS.items() if k not in ('url', 'label', 'rule') and (get(d, p) or {}).get('status') == 'verified')
+            n = sum(1 for p, k in FACTS.items() if k not in ('url', 'label', 'rule', 'more') and (get(d, p) or {}).get('status') == 'verified')
+            n += len(get(d, 'sticker.more') or [])
             print(f'{abbr.upper()}: OK, {n} verified facts')
     if bad:
         print(f'{bad} problem(s)'); sys.exit(1)
@@ -230,6 +280,9 @@ def main():
                 continue
             if kind in ('url', 'label', 'rule'):
                 st[path] = v
+            elif kind == 'more':
+                st[path] = [{k: e[k] for k in ('place', 'kind', 'en', 'es', 'src', 'checked', 'until', 'en_after', 'es_after') if e.get(k)}
+                            for e in v if e.get('status') == 'verified']
             elif v.get('status') == 'verified':
                 st[path] = {k: v.get(k, '' if kind == 'text' else []) for k in ('en', 'es', 'src', 'checked')}
                 st[path].update({k: v[k] for k in ('until', 'en_after', 'es_after', 'varies') if v.get(k)})  # varies: the hours are set locally

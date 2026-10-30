@@ -803,3 +803,11 @@ button.link-quiet:hover { text-decoration: underline; }
 .paths p { margin: 0; }
 .paths p + p { margin-top: var(--s2); }
 .paths a { color: var(--ink); font-weight: 700; text-decoration: underline; text-underline-offset: 0.16em; }
+
+/* County and city stickers under the state gallery (October 30): a plain list, place names linked to the office. */
+.more-stickers { margin: var(--s5) 0 0; max-width: 46rem; }
+.more-stickers h3 { margin: 0 0 var(--s2); color: var(--ink); font-size: var(--fs-h3); line-height: 1.2; }
+.more-stickers ul { margin: 0; padding-left: 1.2em; }
+.more-stickers li + li { margin-top: var(--s2); }
+.more-stickers a { color: var(--ink); font-weight: 700; text-decoration: underline; text-underline-offset: 0.16em; }
+.more-stickers .hint { margin-top: var(--s2); }
