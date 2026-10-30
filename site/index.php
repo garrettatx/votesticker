@@ -1590,6 +1590,9 @@ $vote_ld = array(
 		<ul>
 			<?php echo $vote_li( "Washington's Secretary of State has eight I voted images to use as a profile picture.", 'https://www.sos.wa.gov/i-voted-downloadable-sticker', 'Get Washington’s sticker' ); ?>
 			<?php echo $vote_li( 'Multnomah County, Oregon, has a virtual sticker in 11 languages.', 'https://multco.us/info/virtual-i-voted-sticker', 'Get Multnomah County’s sticker' ); ?>
+			<?php echo $vote_li( "Oregon's Secretary of State has I Voted and I Voted By Mail virtual stickers.", 'https://results.oregonvotes.gov/Pages/media-resources.aspx', 'Get Oregon’s stickers' ); ?>
+			<?php echo $vote_li( 'Grand Rapids, Michigan, has digital I voted stickers in nine languages, including Arabic, Burmese, Kinyarwanda and Nepali.', 'https://www.grandrapidsmi.gov/departments/clerks-office/elections/grvotes/', 'Get Grand Rapids’ stickers' ); ?>
+			<?php echo $vote_li( 'Ann Arbor, Michigan, has digital I voted stickers in eight languages, from Arabic to Korean.', 'https://www.a2gov.org/city-clerk/elections/a2votes/', 'Get Ann Arbor’s stickers' ); ?>
 			<?php echo $vote_li( 'Voting from another country? The Federal Voting Assistance Program has an "I Voted From" sticker for each country.', 'https://www.fvap.gov/IVotedSticker', 'Find your country' ); ?>
 		</ul>
 		<p><?php echo vote_e( t( "Don't see one for your state? Make your own above, sized for your profile picture." ) ); ?></p>
