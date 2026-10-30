@@ -537,7 +537,8 @@
    "rule": "id_nonphoto",
    "summary": "You must show a North Dakota driver's license, nondriver ID, or tribal ID with your name, current address, and birth date. A utility bill can fill in missing details.",
    "source": "https://ndlegis.gov/cencode/t16-1c01.pdf",
-   "quote": "A qualified elector shall provide a valid form of identification to the proper election official before receiving a ballot for voting."
+   "quote": "A qualified elector shall provide a valid form of identification to the proper election official before receiving a ballot for voting.",
+   "quote2": "Within 13 days after the election, you must update or present your driver's license, non-driver ID, Tribal ID or documentation, or Long Term Care Certificate before the County Canvassing Board meets. You may submit your identification to the county auditor, in person or electronically, and your ballot will be counted. (sos.nd.gov/elections/voter/voting-north-dakota/forms-voter-id, read Oct 30, 2026)"
   },
   "registration": {
    "rule": "yes",
@@ -1466,8 +1467,8 @@
   "id": {
    "rule": "id_nonphoto",
    "summary": "You must show an acceptable ID, such as a Wyoming driver's license or ID card, U.S. passport, tribal ID, or a valid Medicare or Medicaid card.",
-   "source": "https://sos.wyo.gov/Elections/Docs/2026/2026_Voter_Guide.pdf",
-   "quote": "Voters are required to show an acceptable form of identification when voting in person."
+   "source": "https://wyoleg.gov/statutes/compress/title22.pdf",
+   "quote": "a person may vote only if the person is a qualified elector, only in the precinct in which the person resides and, if voting in person, only if the person presents acceptable identification immediately before voting at the polling place or absentee polling place. If a person is unable to present acceptable identification immediately before voting at the polling place or absentee polling place, the person may vote by provisional ballot pursuant to W.S. 22-15-105. [W.S. 22-2-119] ... A challenged voter may present information and documentation of his eligibility to register at the election or to vote to the county clerk until the close of business on the day following the election. [W.S. 22-15-105(d)] Read Oct 30, 2026."
   },
   "registration": {
    "rule": "yes",

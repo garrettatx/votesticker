@@ -135,12 +135,13 @@
    "notes": "The SOS list says 'Valid' for the passport, Medicare and Medicaid cards and firearm permit only; no general expired-ID rule found."
   },
   "without": {
-   "en": "Don't have one of these? You can get a free Wyoming ID card at your local Driver Services office.",
-   "es": "¿No tienes ninguna de estas? Puedes sacar gratis una tarjeta de identificación de Wyoming en la oficina local de servicios para conductores (Driver Services).",
-   "src": "https://sos.wyo.gov/Elections/VoterID/Default.aspx",
-   "checked": "2026-10-21",
-   "quote": "If you do not have one of the documents in the list above, you may obtain a free Wyoming Identification Card from your local Driver Services office.",
-   "status": "verified"
+   "en": "No acceptable ID with you? You can still vote a provisional ballot after signing an oath. For it to count, bring proof that you're eligible to your county clerk by close of business on Wednesday, November 4. If you don't have any ID on the list, you can get a free Wyoming ID card at your local Driver Services office.",
+   "es": "¿No traes una identificación aceptada? Aun así puedes votar con una boleta provisional después de firmar un juramento. Para que cuente, lleva un comprobante de que puedes votar al secretario de tu condado (county clerk) antes del cierre de oficina del miércoles 4 de noviembre. Si no tienes ninguna identificación de la lista, puedes sacar gratis una tarjeta de identificación de Wyoming en la oficina local de servicios para conductores (Driver Services).",
+   "src": "https://wyoleg.gov/statutes/compress/title22.pdf",
+   "checked": "2026-10-30",
+   "quote": "If a person is unable to present acceptable identification immediately before voting at the polling place or absentee polling place, the person may vote by provisional ballot pursuant to W.S. 22-15-105.",
+   "status": "verified",
+   "notes": "W.S. 22-2-119 (quote). 22-15-105(b) oath; 22-15-105(d): documentation to the county clerk 'until the close of business on the day following the election'. The free-ID line is from sos.wyo.gov/Elections/VoterID/Default.aspx: 'If you do not have one of the documents in the list above, you may obtain a free Wyoming Identification Card from your local Driver Services office.' Before Oct 30 this field said only the free-ID line, which read as no way to vote without ID. Read Oct 30, 2026 (wyoleg PDF by curl)."
   }
  },
  "mail": {

@@ -8807,10 +8807,10 @@ return array(
 			'checked' => '2026-10-28',
 		),
 		'id.without' => array(
-			'en' => 'Don\'t have one of these? You can get a free Wyoming ID card at your local Driver Services office.',
-			'es' => '¿No tienes ninguna de estas? Puedes sacar gratis una tarjeta de identificación de Wyoming en la oficina local de servicios para conductores (Driver Services).',
-			'src' => 'https://sos.wyo.gov/Elections/VoterID/Default.aspx',
-			'checked' => '2026-10-21',
+			'en' => 'No acceptable ID with you? You can still vote a provisional ballot after signing an oath. For it to count, bring proof that you\'re eligible to your county clerk by close of business on Wednesday, November 4. If you don\'t have any ID on the list, you can get a free Wyoming ID card at your local Driver Services office.',
+			'es' => '¿No traes una identificación aceptada? Aun así puedes votar con una boleta provisional después de firmar un juramento. Para que cuente, lleva un comprobante de que puedes votar al secretario de tu condado (county clerk) antes del cierre de oficina del miércoles 4 de noviembre. Si no tienes ninguna identificación de la lista, puedes sacar gratis una tarjeta de identificación de Wyoming en la oficina local de servicios para conductores (Driver Services).',
+			'src' => 'https://wyoleg.gov/statutes/compress/title22.pdf',
+			'checked' => '2026-10-30',
 		),
 		'mail.who' => array(
 			'en' => 'Any registered Wyoming voter can vote absentee, and you don\'t need to give a reason. Most people who mail their ballot don\'t need to send ID. The exception: if you registered by mail and this is your first federal election, include a copy of your ID.',
