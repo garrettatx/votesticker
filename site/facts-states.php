@@ -1643,8 +1643,8 @@ return array(
 			'checked' => '2026-10-28',
 		),
 		'faq.provisional' => array(
-			'en' => 'You vote a provisional ballot if your eligibility is challenged at the polls or you don\'t have ID. You have until 5 p.m. local time on the second day after the election to show more proof that you\'re eligible. It counts if your signature matches your registration and you\'re eligible.',
-			'es' => 'Votas con una boleta provisional si cuestionan en el lugar de votación si puedes votar o si no tienes identificación. Tienes hasta las 5 p. m., hora local, del segundo día después de la elección para mostrar más pruebas de que puedes votar. Cuenta si tu firma coincide con la de tu registro y puedes votar.',
+			'en' => 'You vote a provisional ballot if your eligibility is challenged at the polls or you don\'t have ID. You have until 5 p.m. local time on the second day after the election to show more proof that you\'re eligible. It counts if your signature matches your registration and you\'re eligible. Voted provisionally only because you didn\'t have ID? You don\'t need to bring more proof, as long as you\'re otherwise eligible.',
+			'es' => 'Votas con una boleta provisional si cuestionan en el lugar de votación si puedes votar o si no tienes identificación. Tienes hasta las 5 p. m., hora local, del segundo día después de la elección para mostrar más pruebas de que puedes votar. Cuenta si tu firma coincide con la de tu registro y puedes votar. ¿Votaste con una boleta provisional solo porque no tenías identificación? No necesitas llevar más pruebas, siempre que cumplas los demás requisitos para votar.',
 			'src' => 'https://dos.fl.gov/elections/for-voters/voting/election-day-voting/',
 			'checked' => '2026-10-21',
 		),
