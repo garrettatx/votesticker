@@ -10,22 +10,29 @@
    },
    "paras": [
     {
-     "en": "There's no settled origin story. But three dates come up again and again, and each tells a different part of it.",
-     "facts": [],
-     "es": "No hay una historia de origen definitiva. Pero tres fechas aparecen una y otra vez, y cada una cuenta una parte distinta."
+     "en": "There’s no settled origin story. Paper “I have voted” tags go back at least to 1920, and the sticker most people picture took shape in the 1980s. These dates each tell a different part of it.",
+     "facts": [
+      "stlouis-blewett-1920",
+      "phoenix-realtors-1985",
+      "boudreau-1987"
+     ],
+     "es": "No hay una historia de origen definitiva. Las etiquetas de papel de “I have voted” existen por lo menos desde 1920, y el sticker que la mayoría imagina tomó forma en los años ochenta. Cada una de estas fechas cuenta una parte distinta."
     }
    ],
    "answer": [
     {
      "q": {
-      "en": "Earliest references located so far",
-      "es": "Las referencias más antiguas encontradas hasta ahora"
+      "en": "The earliest examples we found",
+      "es": "Los ejemplos más antiguos que encontramos"
      },
      "a": {
-      "en": "Later histories cite a 1950 Miami Herald item about “I Have Voted” stickers at Miami polling places. A 1982 Miami Herald story described Fort Lauderdale shops offering discounts to people wearing voting stickers.",
-      "es": "Historias posteriores citan una nota del Miami Herald de 1950 sobre stickers de “I Have Voted” (Ya voté) en lugares de votación de Miami. Una nota del Miami Herald de 1982 describió tiendas de Fort Lauderdale que daban descuentos a quienes llevaban stickers de votación."
+      "en": "The earliest examples we found are paper tags. In October 1920, a St. Louis public school printed “I have voted” tags for a student election and gave one to each student as he voted. In 1962, a Camp Fire Girls handbook suggested handing them out on Election Day, and a federal report describes the tags being pinned on voters leaving a Georgia polling place in 1966. Later histories cite a 1950 Miami Herald item about “I Have Voted” stickers at Miami polls, and a 1982 Miami Herald story described Fort Lauderdale shops giving discounts to people wearing voting stickers.",
+      "es": "Los ejemplos más antiguos que encontramos son etiquetas de papel. En octubre de 1920, una escuela pública de St. Louis imprimió etiquetas de “I have voted” (ya voté) para una elección estudiantil y le dio una a cada estudiante al votar. En 1962, un manual de las Camp Fire Girls sugería repartirlas el Día de las Elecciones, y un informe federal describe cómo se las ponían a los votantes al salir de un lugar de votación de Georgia en 1966. Historias posteriores citan una nota del Miami Herald de 1950 sobre stickers de “I Have Voted” en lugares de votación de Miami, y una nota del Miami Herald de 1982 describió tiendas de Fort Lauderdale que daban descuentos a quienes llevaban stickers de votación."
      },
      "facts": [
+      "stlouis-blewett-1920",
+      "campfire-1962-tags",
+      "americus-1966-tags",
       "miami-herald-1950-cited",
       "fort-lauderdale-1982"
      ]
@@ -63,13 +70,14 @@
       "en": "What We Still Don't Know",
       "es": "Lo que todavía no sabemos"
      },
-     "en": "The 1950 page hasn't been available to review, so its details remain unclear. Phoenix's Realtors later called their sticker the first in the country, but the Miami references are older. No patent for Boudreau's flag oval has turned up; she has said she copyrighted the design.",
+     "en": "The 1950 page hasn’t been available to review, so its details remain unclear. The tags in the 1920 school report and the 1960s sources were paper tags, and we haven’t found who first printed an adhesive “I Voted” sticker. Phoenix’s Realtors later called their sticker the first in the country, but the Miami references are older. No patent for Boudreau’s flag oval has turned up; she has said she copyrighted the design.",
      "facts": [
       "miami-herald-1950-cited",
+      "stlouis-blewett-1920",
       "phoenix-realtors-1985",
       "boudreau-1987"
      ],
-     "es": "La página de 1950 no ha estado disponible para revisarla, así que sus detalles siguen sin estar claros. Los agentes inmobiliarios de Phoenix dijeron después que su sticker fue el primero del país, pero las referencias de Miami son más antiguas. No ha aparecido ninguna patente del óvalo de Boudreau; ella ha dicho que registró los derechos de autor del diseño."
+     "es": "La página de 1950 no ha estado disponible para revisarla, así que sus detalles siguen sin estar claros. Las etiquetas del informe escolar de 1920 y de las fuentes de los años sesenta eran de papel, y no hemos encontrado quién imprimió el primer sticker adhesivo de “I Voted”. Los agentes inmobiliarios de Phoenix dijeron después que su sticker fue el primero del país, pero las referencias de Miami son más antiguas. No ha aparecido ninguna patente del óvalo de Boudreau; ella ha dicho que registró los derechos de autor del diseño."
     }
    ]
   },
@@ -282,11 +290,23 @@
       "en": "Facebook, Election Day 2010",
       "es": "Facebook, Día de las Elecciones de 2010"
      },
-     "en": "On Election Day 2010, Facebook showed 61 million users a message with an “I Voted” button. Some also saw photos of friends who had already clicked it. Researchers estimated the message raised turnout a little directly, and more through friends: close friends accounted for most of the effect.",
+     "en": "On Election Day 2010, Facebook showed 61 million users a message with an “I Voted” button. Some also saw photos of friends who had already clicked it. Researchers estimated the message raised turnout a little directly, and more through friends: close friends accounted for most of the effect. A repeat test in the 2012 presidential election found a similar small rise.",
      "facts": [
-      "facebook-2010"
+      "facebook-2010",
+      "facebook-2012-replication"
      ],
-     "es": "El Día de las Elecciones de 2010, Facebook mostró a 61 millones de usuarios un mensaje con un botón de “I Voted”. Algunos también vieron fotos de amigos que ya lo habían presionado. Los investigadores estimaron que el mensaje aumentó un poco la participación de forma directa, y más a través de los amigos: los amigos cercanos explicaron la mayor parte del efecto."
+     "es": "El Día de las Elecciones de 2010, Facebook mostró a 61 millones de usuarios un mensaje con un botón de “I Voted”. Algunos también vieron fotos de amigos que ya lo habían presionado. Los investigadores estimaron que el mensaje aumentó un poco la participación de forma directa, y más a través de los amigos: los amigos cercanos explicaron la mayor parte del efecto. Una prueba repetida en la elección presidencial de 2012 encontró un aumento pequeño parecido."
+    },
+    {
+     "h3": {
+      "en": "A Digital Sticker Test, 2018",
+      "es": "Una prueba con un sticker digital, 2018"
+     },
+     "en": "In 2018, Vote.org sent texts reminding people to vote and checked who voted afterward. Some texts also linked to a digital “I Voted” sticker to post on Facebook. Both kinds of text raised turnout by about a quarter of a percentage point (0.25 with the sticker link, 0.24 without), so the sticker added no measurable effect. The results come from the group’s own research memo, not a peer-reviewed journal.",
+     "es": "En 2018, Vote.org mandó mensajes de texto para recordarle a la gente que votara y después revisó quién votó. Algunos mensajes también tenían un enlace a un sticker digital de “I Voted” para publicar en Facebook. Los dos tipos de mensaje subieron la participación cerca de un cuarto de punto porcentual (0.25 con el enlace al sticker, 0.24 sin él), así que el sticker no sumó un efecto medible. Los resultados vienen de un informe de investigación del propio grupo, no de una revista académica revisada por pares.",
+     "facts": [
+      "voteorg-2018-sticker-sms"
+     ]
     }
    ],
    "charts": [
@@ -294,12 +314,13 @@
    ],
    "after": [
     {
-     "en": "Neither study tested whether a paper “I Voted” sticker increases turnout. Both tested what happens when voting becomes visible to friends or neighbors. A sticker may carry a similar signal, but that specific effect hasn't been measured.",
+     "en": "None of these studies tested whether a paper “I Voted” sticker increases turnout. The mailer and Facebook studies tested what happens when voting becomes visible to neighbors or friends, and the one test of a digital sticker link found no extra effect. A paper sticker may carry a similar signal, but that specific effect hasn’t been measured.",
      "facts": [
       "facebook-2010",
-      "social-pressure-2006"
+      "social-pressure-2006",
+      "voteorg-2018-sticker-sms"
      ],
-     "es": "Ninguno de los dos estudios midió si un sticker de papel de “I Voted” aumenta la participación. Ambos midieron qué pasa cuando votar se vuelve visible para amigos o vecinos. Un sticker podría enviar una señal parecida, pero ese efecto específico no se ha medido."
+     "es": "Ninguno de estos estudios probó si un sticker de papel de “I Voted” aumenta la participación. Los estudios del correo y de Facebook probaron qué pasa cuando el voto se vuelve visible para los vecinos o los amigos, y la única prueba de un enlace a un sticker digital no encontró un efecto extra. Un sticker de papel puede mandar una señal parecida, pero ese efecto en particular no se ha medido."
     }
    ]
   },
@@ -491,6 +512,15 @@
      "en": "Polling places still hand out paper stickers. Now that same small signal can travel online.",
      "facts": [],
      "es": "Los lugares de votación siguen repartiendo stickers de papel. Ahora esa misma pequeña señal también puede viajar en línea."
+    },
+    {
+     "en": "Social apps took the signal online years ago. Facebook’s Election Day button ran in 2008, when more than 5.4 million people used it to say they voted, and by 2014 it came in Spanish, Chinese and Korean. In 2018 Instagram added an “I Voted” sticker for Stories, with a “Yo Voté” version.",
+     "es": "Las redes sociales llevaron esa señal a internet hace años. El botón del Día de las Elecciones de Facebook apareció en 2008, cuando más de 5.4 millones de personas lo usaron para decir que votaron, y para 2014 ya venía en español, chino y coreano. En 2018 Instagram agregó un sticker de “I Voted” para Stories, con una versión “Yo Voté”.",
+     "facts": [
+      "facebook-2008",
+      "facebook-2014-languages",
+      "instagram-2018"
+     ]
     }
    ],
    "scenes": [
@@ -1110,6 +1140,86 @@
    },
    "fact": "mi-contest-2026",
    "kind": "sticker"
+  },
+  {
+   "id": "facebook-2008",
+   "year": 2008,
+   "order": 1,
+   "title": {
+    "en": "A voting button on Facebook",
+    "es": "Un botón para votar en Facebook"
+   },
+   "body": {
+    "en": "Facebook adds an Election Day button so people can tell friends they voted. More than 5.4 million people use it.",
+    "es": "Facebook agrega un botón del Día de las Elecciones para que la gente les diga a sus amigos que ya votó. Más de 5.4 millones de personas lo usan."
+   },
+   "fact": "facebook-2008",
+   "mark": {
+    "en": "Facebook",
+    "es": "Facebook"
+   },
+   "kind": "digital"
+  },
+  {
+   "id": "instagram-2018",
+   "year": 2018,
+   "title": {
+    "en": "An I Voted sticker for Stories",
+    "es": "Un sticker de I Voted para Stories"
+   },
+   "body": {
+    "en": "Instagram adds an “I Voted” sticker to Stories, with a “Yo Voté” version for phones set to Spanish.",
+    "es": "Instagram agrega a Stories un sticker de “I Voted”, con una versión “Yo Voté” para los teléfonos en español."
+   },
+   "fact": "instagram-2018",
+   "mark": {
+    "en": "Instagram",
+    "es": "Instagram"
+   },
+   "kind": "digital"
+  },
+  {
+   "id": "blewett-1920",
+   "year": 1920,
+   "order": -1,
+   "title": {
+    "en": "“I have voted” tags at a St. Louis school",
+    "es": "Etiquetas de “I have voted” en una escuela de St. Louis"
+   },
+   "body": {
+    "en": "For a student election at Blewett, a St. Louis public school, the print shop makes “I have voted” tags, one for each student as he votes. It’s the earliest example we found.",
+    "es": "Para una elección estudiantil en Blewett, una escuela pública de St. Louis, el taller de imprenta hace etiquetas de “I have voted” (ya voté), una para cada estudiante al votar. Es el ejemplo más antiguo que encontramos."
+   },
+   "fact": "stlouis-blewett-1920",
+   "kind": "precursor"
+  },
+  {
+   "id": "campfire-1962",
+   "year": 1962,
+   "title": {
+    "en": "Tags as a citizenship project",
+    "es": "Etiquetas como proyecto cívico"
+   },
+   "body": {
+    "en": "The Book of the Camp Fire Girls suggests members give out “I Have Voted” tags on Election Day.",
+    "es": "El libro de las Camp Fire Girls sugiere que sus integrantes repartan etiquetas de “I Have Voted” el Día de las Elecciones."
+   },
+   "fact": "campfire-1962-tags",
+   "kind": "precursor"
+  },
+  {
+   "id": "americus-1966",
+   "year": 1966,
+   "title": {
+    "en": "Tags at a Georgia polling place",
+    "es": "Etiquetas en un lugar de votación de Georgia"
+   },
+   "body": {
+    "en": "At an Americus, Georgia city primary, Black residents pin “I have voted” tags on voters as they leave, while every clerk and manager is white, a 1968 U.S. Commission on Civil Rights report says.",
+    "es": "En una elección primaria municipal de Americus, Georgia, residentes afroamericanos les ponen etiquetas de “I have voted” a los votantes al salir, mientras todos los secretarios y encargados del lugar de votación son blancos, según un informe de 1968 de la Comisión de Derechos Civiles de EE. UU."
+   },
+   "fact": "americus-1966-tags",
+   "kind": "precursor"
   }
  ],
  "charts": {

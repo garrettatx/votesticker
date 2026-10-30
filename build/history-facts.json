@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-22",
+ "checked": "2026-10-29",
  "sources": {
   "www.aarp.org": {
    "en": "AARP"
@@ -183,6 +183,21 @@
   },
   "boe.cuyahogacounty.gov": {
    "en": "the Cuyahoga County Board of Elections"
+  },
+  "about.fb.com": {
+   "en": "Facebook (Meta newsroom)"
+  },
+  "about.instagram.com": {
+   "en": "Instagram"
+  },
+  "research.voteamerica.org": {
+   "en": "VoteAmerica Research Center"
+  },
+  "journals.plos.org": {
+   "en": "Jones et al., PLOS ONE (2017)"
+  },
+  "hdl.handle.net": {
+   "en": "HathiTrust Digital Library"
   }
  },
  "events": [
@@ -1157,6 +1172,148 @@
     }
    ],
    "notes": "Editor, Oct 22: her own words from the AARP interview. The conflict was with the research summary (\"100 million annually\"), which is wrong; this wording follows her."
+  },
+  {
+   "id": "facebook-2008",
+   "year": 2008,
+   "date": "2008-11-04",
+   "place": "United States",
+   "evidence": "official record",
+   "status": "verified",
+   "checked": "2026-10-29",
+   "claim": "Facebook's own 2012 Election Day post says more than 5.4 million people used Facebook to say they voted on Election Day 2008, and more than 12 million clicked the button in 2010.",
+   "src": "https://about.fb.com/news/2012/11/election-day-2012-on-facebook/",
+   "quote": "More than 5.4 million people indicated on Facebook that they voted on Election Day 2008 and more than 12 million people clicked the button during the 2010 midterm election.",
+   "notes": "Company record (Facebook newsroom, Nov 2012). The 2014 post confirms the button ran in 2008, 2010 and 2012."
+  },
+  {
+   "id": "facebook-2014-languages",
+   "year": 2014,
+   "date": "2014-11-04",
+   "place": "United States",
+   "evidence": "official record",
+   "status": "verified",
+   "checked": "2026-10-29",
+   "claim": "Facebook's 2014 Election Day button was its fourth in the US (after 2008, 2010 and 2012) and the first offered in other languages, including Spanish, Chinese and Korean.",
+   "src": "https://about.fb.com/news/2014/11/election-day-2014-on-facebook/",
+   "quote": "This is the fourth US Election Day megaphone – it was previously available for the 2008, 2010 and 2012 elections – and for the first time, it will be available in multiple languages including Spanish, Chinese and Korean.",
+   "notes": "Company record (Facebook newsroom, Nov 4, 2014). The button's label was \"I'm a Voter\" in 2014."
+  },
+  {
+   "id": "instagram-2018",
+   "year": 2018,
+   "date": "2018-11-01",
+   "place": "United States",
+   "evidence": "official record",
+   "status": "verified",
+   "checked": "2026-10-29",
+   "claim": "On November 1, 2018, Instagram announced an \"I Voted\" sticker for Stories, with a \"Yo Voté\" version for phones set to Spanish, and a \"We Voted!\" story that collected friends' posts on Election Day.",
+   "src": "https://about.instagram.com/blog/announcements/sharing-your-election-day-excitement-on-instagram",
+   "quote": "For Election Day, we’re introducing two new ways for people in the US to share their voting excitement on Instagram: an “I Voted” sticker and a “We Voted!” story at the front of your stories bar.",
+   "also": [
+    {
+     "src": "https://about.instagram.com/blog/announcements/sharing-your-election-day-excitement-on-instagram",
+     "quote": "If your phone language is set to Spanish, you’ll see the “Yo Voté” version."
+    }
+   ],
+   "notes": "Company record (Instagram, Nov 1, 2018)."
+  },
+  {
+   "id": "voteorg-2018-sticker-sms",
+   "year": 2018,
+   "date": "2018-11-06",
+   "place": "United States",
+   "evidence": "study",
+   "status": "verified",
+   "checked": "2026-10-29",
+   "claim": "In a 2018 randomized test of get-out-the-vote texts run by Vote.org, texts that linked to a digital \"I Voted\" sticker for Facebook raised turnout 0.25 percentage points; the standard text raised it 0.24 points. The two effects were indistinguishable.",
+   "src": "https://research.voteamerica.org/2018-cold-sms-overview/",
+   "quote": "The Digital Sticker treatment generated an increase in turnout of 0.25 percentage points at a cost per net vote of $89.12 (11.2 net votes/$1000).",
+   "also": [
+    {
+     "src": "https://research.voteamerica.org/2018-cold-sms-overview/",
+     "quote": "Both treatments generated significant increases in turnout, and the size of the treatment effects was indistinguishable."
+    },
+    {
+     "src": "https://research.voteamerica.org/2018-cold-sms-overview/",
+     "quote": "The Digital Sticker treatment allowed an easy link from the SMS message to posting a digital “I Voted” sticker on Facebook."
+    }
+   ],
+   "notes": "Memo 004 of Vote.org's 2018 cold SMS program, summarized by Debra Cleaver (VoteAmerica, Oct 1, 2019); evaluations by Christopher B. Mann (with Katherine Haenschen on some memos). A nonprofit research memo, not peer-reviewed; memo PDF itself not read. Sample size not confirmed: leave it out."
+  },
+  {
+   "id": "facebook-2012-replication",
+   "year": 2012,
+   "date": "2012-11-06",
+   "place": "United States",
+   "evidence": "study",
+   "status": "verified",
+   "checked": "2026-10-29",
+   "claim": "A repeat of the Facebook experiment in the 2012 presidential election (Jones et al., PLOS ONE, 2017) again found a small rise in voting, estimated at about 270,000 more voters including close friends.",
+   "src": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0173851",
+   "quote": "The treatment effects also spread through the network as in 2010, causing an additional 180,000 close friends of the treated to vote as well, for a total increase of 270,000 people voting in the 2012 U.S. Presidential Election.",
+   "also": [
+    {
+     "src": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0173851",
+     "quote": "This yields an estimated treatment effect of +0.24% (95% CI +0.03% to +0.44%) that is unlikely to be due to chance ( p = 0.0266)."
+    }
+   ],
+   "notes": "The unadjusted estimate (+0.17%) was not significant; the +0.24% adds 2010 vote history as a control. Say 'small', don't headline the number."
+  },
+  {
+   "id": "stlouis-blewett-1920",
+   "year": 1920,
+   "date": "1920-10-29",
+   "place": "St. Louis, Missouri",
+   "evidence": "official record",
+   "status": "verified",
+   "checked": "2026-10-29",
+   "claim": "For a student election at Blewett, a St. Louis public school, on October 29, 1920, the school print shop printed \"I have voted\" tags, enough to give each student one as he voted. 1,250 students registered and 1,170 (94%) voted, the St. Louis Board of Education reported.",
+   "src": "https://hdl.handle.net/2027/uc1.b2987052?urlappend=%3Bseq=60",
+   "quote": "the Printing Department printed enough \"I have voted\" tags to give each student one as he voted; and the study hall pupils cut into strips 1400 ballot sheets.",
+   "also": [
+    {
+     "src": "https://hdl.handle.net/2027/uc1.b2987052?urlappend=%3Bseq=60",
+     "quote": "All Blewett citizens under 21 years of age who had attended Blewett for at least six days on or before election day, October 29, were qualified voters."
+    },
+    {
+     "src": "https://hdl.handle.net/2027/uc1.b2987052?urlappend=%3Bseq=60",
+     "quote": "Out of 1250 who registered 1170 or 94% voted"
+    }
+   ],
+   "notes": "St. Louis Board of Education, Annual Report v. 67 (1920-21), p. 52 (HathiTrust uc1.b2987052, seq 60), read Oct 29, 2026 in HathiTrust full-text search snippets in Chrome (page images blocked to automation; OCR snippets read). A student mock election run with the city Board of Election Commissioners qualifying the student judges, not a public election. Year from the 1920-21 report and the Oct 28 Junior Life election issue. Earliest \"I have voted\" item found; say \"the earliest example we found\", a tag, not a sticker."
+  },
+  {
+   "id": "campfire-1962-tags",
+   "year": 1962,
+   "date": "1962",
+   "place": "United States",
+   "evidence": "official record",
+   "status": "verified",
+   "checked": "2026-10-29",
+   "claim": "The 1962 Book of the Camp Fire Girls suggested girls give out \"I Have Voted\" tags on Election Day as a citizenship project.",
+   "src": "https://hdl.handle.net/2027/uc1.31175021370898?urlappend=%3Bseq=235",
+   "quote": "Give out \"I Have Voted\" tags on election day.",
+   "notes": "Book of the Camp Fire Girls (1962 edition), p. 225, HathiTrust uc1.31175021370898 seq 235, search snippet read in Chrome Oct 29, 2026. Shows civic groups handing out the tags; does not say where or how widely."
+  },
+  {
+   "id": "americus-1966-tags",
+   "year": 1966,
+   "date": "1966-11-15",
+   "place": "Americus, Georgia",
+   "evidence": "official record",
+   "status": "verified",
+   "checked": "2026-10-29",
+   "claim": "At the November 15, 1966 Americus, Georgia municipal primary, every clerk and manager at the polling place was white, although Black residents were employed to pin \"I have voted\" tags on voters as they left, the U.S. Commission on Civil Rights reported in 1968.",
+   "src": "https://hdl.handle.net/2027/uiug.30112105087479?urlappend=%3Bseq=123",
+   "quote": "When the election was held, all clerks and managers at the polling place were white, although Negroes were employed to pin \"I have voted\" tags on the voters as they left the polling place.",
+   "also": [
+    {
+     "src": "https://hdl.handle.net/2027/uiug.30112105087479?urlappend=%3Bseq=123",
+     "quote": "Rev. J. R. Campbell, Negro candidate for alderman in the November 15, 1966 municipal primary election, asked the mayor of Americus to appoint Negroes as election officials."
+    }
+   ],
+   "notes": "U.S. Commission on Civil Rights, Political Participation (1968), p. 113 (HathiTrust uiug.30112105087479 seq 123), snippet read in Chrome Oct 29, 2026. A federal report; quote keeps the report's 1968 wording, page copy says Black residents. Neutral, factual use only."
   }
  ],
  "numbers": [
