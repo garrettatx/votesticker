@@ -225,3 +225,10 @@ so it wasn't used. More of the same Oct 28 to 29 threads remain below them (abou
 **States left.** All 51 have a late-mail answer except Indiana (its mail-deadline answer already says the 6 p.m.
 receipt rule). Missing tracker: IL, IN, MO, SD. Missing provisional: MN, MS, NH. Thin "name not on the list" lines:
 TN, SC, NJ, NE, NV, ME, IA, IN.
+
+### October 30: Garrett's Calls After Pass 2
+Garrett accepted Claude's recommendations ("I trust your recs"):
+- Illinois: list county ballot trackers for the biggest election authorities (Chicago, suburban Cook, DuPage, Lake, Will, Kane), each read on its own site.
+- Arkansas: where the state's own pages give different hand-delivery deadlines, show the earlier one and tell voters to check with the county clerk.
+- New Jersey cure deadline: leave "Return it as soon as you can"; no phone call.
+- Social posts as sources: allowed when the post is on the election office's own official account and the office has no web page saying the same. Record the post URL, date and exact quote. Prefer the web page when one exists.
