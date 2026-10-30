@@ -1,0 +1,8 @@
+[
+{"st":"OR","key":"provisional","checked":"2026-10-30",
+ "src":"https://sos.oregon.gov/elections/Voters-Pamphlet/Documents/VP_G26-Book1_web.pdf",
+ "quote":"Do I need a provisional ballot? If your eligibility to vote can’t be determined, you have the right to request a provisional ballot. To obtain a provisional ballot, go to your county elections office in person and fill out a Provisional Ballot Request Form. Your provisional ballot will only be counted if you are determined to be eligible to vote. ... You have the right to get a “provisional ballot,” even if you are told you are not registered to vote.",
+ "en":"If your eligibility to vote can't be confirmed, for example if you're told you aren't registered, you have the right to a provisional ballot. Go to your county elections office in person and fill out a Provisional Ballot Request Form. It counts only if you're found eligible, and you have the right to know whether it was accepted.",
+ "es":"Si no se puede confirmar que tienes derecho a votar, por ejemplo, si te dicen que no estás registrado, tienes derecho a una boleta provisional. Ve en persona a la oficina electoral de tu condado y llena un formulario de solicitud de boleta provisional (Provisional Ballot Request Form). Solo cuenta si se confirma que puedes votar, y tienes derecho a saber si fue aceptada.",
+ "notes":"Pass 2 Oct 30: Nov 3, 2026 State Voters' Pamphlet, FAQ page 11 and voter rights page, read in the PDF (pdftotext). Oregon's registration deadline was Oct 13; no Election Day registration (reg FAQ)."}
+]

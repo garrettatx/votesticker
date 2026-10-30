@@ -243,12 +243,13 @@
  },
  "faq": {
   "provisional": {
-   "en": "If you register on Election Day but don't have ID that can be verified, you can vote a provisional ballot. After Election Day, election officials check that you're eligible, and if you are, it's counted.",
-   "es": "Si te registras el Día de las Elecciones pero no tienes una identificación que se pueda verificar, puedes votar con una boleta provisional. Después del Día de las Elecciones, los funcionarios electorales revisan si tienes derecho a votar y, si es así, se cuenta.",
-   "src": "https://www.coloradosos.gov/pubs/elections/FAQs/ElectionDay.html",
-   "checked": "2026-10-21",
-   "quote": "If you try to register to vote on Election Day, but do not have verifiable identification, you may vote a provisional ballot.",
-   "status": "verified"
+   "en": "You vote one when your eligibility can't be confirmed, for example if you register on Election Day without ID that can be verified. Not on the list? You can register and vote at a voter service and polling center through Election Day. A provisional ballot counts once officials confirm you can vote, but not if you vote it in the wrong county. Your receipt tells you how to check it.",
+   "es": "Votas con una cuando no se puede confirmar si tienes derecho a votar, por ejemplo, si te registras el Día de las Elecciones sin una identificación que se pueda verificar. ¿No estás en la lista? Puedes registrarte y votar en un centro de votación y servicio al votante hasta el Día de las Elecciones. Una boleta provisional cuenta cuando los funcionarios confirman que puedes votar, pero no si la votas en el condado equivocado. Tu comprobante te dice cómo revisarla.",
+   "src": "https://www.coloradosos.gov/pubs/elections/FAQs/ProvisionalBallots.html",
+   "checked": "2026-10-30",
+   "quote": "Your provisional ballot is counted if you complete the provisional ballot affidavit and the election official confirms your eligibility to vote. Note: Your provisional ballot will NOT count if you vote in the wrong county, and choose to vote a provisional ballot rather than vote in the correct county. ... The election judge will give you a receipt when you cast a provisional ballot. This receipt specifies how you determine the status of your provisional ballot.",
+   "status": "verified",
+   "notes": "Pass 2 Oct 30, read by curl. Election Day registration and the ID case: coloradosos.gov/pubs/elections/FAQs/ElectionDay.html Q8 ('If you try to register to vote on Election Day, but do not have verifiable identification, you may vote a provisional ballot.') and the reg FAQ. Replaces: If you register on Election Day but don't have ID that can be verified, you can vote a provisional ballot. After Election Day, election officials check that you're eligible, and if you are, it's counted."
   },
   "line": {
    "en": "You can still vote. Everyone in line at their polling location by 7 p.m. gets to vote, no matter how long it takes.",

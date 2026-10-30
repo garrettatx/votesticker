@@ -15,6 +15,10 @@
   "www.washingtoncountyar.gov": {
    "en": "the Washington County Election Commission",
    "es": "la Comisión Electoral del condado de Washington (Election Commission)"
+  },
+  "www.voterview.ar-nova.org": {
+   "en": "the Arkansas Secretary of State's VoterView",
+   "es": "VoterView de la Secretaría de Estado de Arkansas"
   }
  },
  "dates": {
@@ -245,8 +249,25 @@
    "status": "verified"
   },
   "track": {
-   "status": "missing",
-   "notes": "The SOS links Voter View for polling place lookups but no page found says it tracks absentee ballots."
+   "en": "Look yourself up on VoterView, the Secretary of State's voter lookup. It shows your ballot statuses along with your address and polling place.",
+   "es": "Búscate en VoterView, la herramienta de consulta de votantes de la Secretaría de Estado. Muestra el estado de tus boletas, además de tu dirección y tu lugar de votación.",
+   "src": "https://www.voterview.ar-nova.org/",
+   "checked": "2026-10-30",
+   "quote": "Confirm your address, party association, ballot statuses, and polling place locations.",
+   "status": "verified",
+   "notes": "Pass 2 Oct 30, read by curl. Arkansas.gov service description names an 'Arkansas Absentee Ballot Search' (Perplexity lead, not read)."
+  },
+  "late_mail": {
+   "en": "It may be. Your county clerk must receive a mailed ballot by 7:30 p.m. on Tuesday, November 3, and a postmark doesn't count. Delivering it yourself or by a designated bearer? That deadline is close of business on Friday, October 30.",
+   "es": "Puede que sí. El secretario de tu condado (county clerk) debe recibir la boleta por correo a más tardar a las 7:30 p. m. del martes 3 de noviembre, y el matasellos no cuenta. ¿La vas a entregar tú o un portador designado (designated bearer)? La fecha límite es el cierre de la oficina el viernes 30 de octubre.",
+   "src": "https://www.sos.arkansas.gov/elections/voter-information/absentee-voting",
+   "checked": "2026-10-30",
+   "quote": "In Person: by close of business the Friday BEFORE the election. By Designated Bearer: by close of business the Friday BEFORE the election. By Mail: received at clerks office by 7:30 p.m. ON election day",
+   "status": "verified",
+   "until": "2026-10-30",
+   "en_after": "It may be. Your county clerk must receive a mailed ballot by 7:30 p.m. on Tuesday, November 3, and a postmark doesn't count. Delivery in person or by a designated bearer closed at close of business on Friday, October 30.",
+   "es_after": "Puede que sí. El secretario de tu condado (county clerk) debe recibir la boleta por correo a más tardar a las 7:30 p. m. del martes 3 de noviembre, y el matasellos no cuenta. La entrega en persona o por un portador designado (designated bearer) cerró al cierre de la oficina el viernes 30 de octubre.",
+   "notes": "Pass 2 Oct 30, read by curl. Conflict: the SOS general FAQ still says personal return by close of business the day before the election and designated bearer by 7:30 p.m. on Election Day (Perplexity lead); this page and the 2026 calendar (dates.mail_return) say Friday. Open Fact Call."
   }
  },
  "notes": "Read October 21, 2026 with curl: sos.arkansas.gov Voting in Arkansas, Absentee Voting, FAQ categories 65, 67, 71 and 72, the 2026 Election Calendar (Rev. June 2025, still the one linked from sos.arkansas.gov/elections), the 2020 Voter Rights PDF, and the SBEC 2026 Poll Worker Guide (10-28-25). EARLY VOTING DATES FOR THE LEAD (states.js has AR unchecked): Monday, October 19 to Monday, November 2, 2026. Weekdays 8 a.m. to 6 p.m., Saturdays 10 a.m. to 4 p.m., ending 5 p.m. Monday, November 2. Sources: (1) https://www.sos.arkansas.gov/uploads/elections/2026_Election_Calendar_Rev._6-2025_.pdf: 'October 19, 2026 – Monday 15 DAYS PRIOR TO THE GENERAL ELECTION Early voting begins for General Election between the hours of 8:00 am and 6:00 pm, Monday through Friday, and 10:00 am to 4:00 pm on Saturday. Early voting ends at 5:00 pm on the Monday prior to the election.' and 'November 2, 2026 – Monday ... Last day for voter to participate in early voting. Early voting closes at 5:00 pm on the Monday before the election.' (2) https://www.sos.arkansas.gov/elections/voter-information/voter-registration-information/voting-in-arkansas: the hours quote in dates.early_hours. Suggested states.js note: 'Most counties hold early voting at the county clerk's office.' LOCATOR HOST REJECTED: the SOS links its polling place lookup ('Arkansas Voter View', shown as www.voterview.org) to https://www.voterview.ar-nova.org/voterview; the validator does not accept www.voterview.ar-nova.org, so where.locator_url and mail.track_url are left out. CONFLICTS (left out of the file): (a) in-person absentee APPLICATION deadline: the SOS Absentee Voting page says 'In Person: by close of business the Friday BEFORE the election.' and the 2026 calendar says 'Deadline for county clerk to receive in-person applications for absentee ballots ... no later than the close of regular business hours on the Friday before the election.' (October 30), but SOS FAQ 67 says 'What is the In-Person application deadline for Absentee Voting? By the close of the business day before the election.' (b) in-person BALLOT delivery: the Absentee page says 'In Person: by close of business the Friday BEFORE the election.' and the calendar agrees (October 30), but SOS FAQ 72 says 'What is the In-Person deadline for Delivery of Voted Ballot to County Clerk? By close of business the day before the election.' (c) designated bearer ballot delivery: Absentee page 'By Designated Bearer: by close of business the Friday BEFORE the election.' vs FAQ 67 'By 7:30 p.m. on election day.' The FAQ pages carry internal editing notes ('Mentions “Administrator” here. Can we define?'), so they read as unfinished, but they are live official pages; the file states only the mail deadlines, where all three sources agree. Provisional ID: the Voting in Arkansas page says 'until the Monday after the election'; FAQ 71 and the calendar say noon on that Monday (November 9); the file uses noon. Phone rule, witness rule, drop boxes, cure, tracker and sticker tradition not found. Oct 28 pass: re-read the 2026 calendar (Rev. June 2025, statute-cited) for the Friday, October 30 in-person application and hand-delivery deadlines, the 1:30 p.m. Election Day authorized-agent application deadline, the November 13 military and overseas receipt deadline and county-to-county transfers through close of polls; FAQ 67 and 72 still say 'the day before the election' for in-person deadlines, so the calendar's statute citations (Ark. Code 7-5-404(a)(3)(A), 7-5-411(a)(1)(C)) were followed. ID list from the SBEC 2026 Poll Worker Guide (adds Mobile ID and trade school IDs). Washington County sticker contest page (washingtoncountyar.gov) returned 403 to curl and WebFetch and is blocked for Chrome reading; sticker.tradition stays missing.",

@@ -223,12 +223,13 @@
  },
  "faq": {
   "provisional": {
-   "en": "If you don't have a photo ID, you can vote a provisional ballot. Bring your ID to the polling place by 8 p.m., or to your municipal clerk by 4 p.m. the Friday after the election, and it counts. Miss the deadline and it doesn't.",
-   "es": "Si no tienes una identificación con foto, puedes votar con una boleta provisional. Lleva tu identificación al lugar de votación a más tardar a las 8 p. m., o al secretario de tu municipio a más tardar a las 4 p. m. del viernes después de la elección, y se cuenta. Si no lo haces a tiempo, no se cuenta.",
-   "src": "https://elections.wi.gov/election-day-voting",
-   "checked": "2026-10-21",
-   "quote": "If you provide photo ID by the deadline, the ballot will count. If you do not provide photo ID by the deadline, your ballot will not count.",
-   "status": "verified"
+   "en": "Wisconsin gives a provisional ballot mainly to voters who can't show photo ID. It counts if you bring your ID to the polling place by 8 p.m., or to your municipal clerk by 4 p.m. on Friday, November 6. Name not on the list? You won't get a provisional ballot for that. At the wrong polling place, you'll be sent to the right one, and you can register there with proof of where you live.",
+   "es": "Wisconsin da una boleta provisional sobre todo a quienes no pueden mostrar una identificación con foto. Cuenta si llevas tu identificación al lugar de votación a más tardar a las 8 p. m., o a la oficina del secretario de tu municipio (municipal clerk) a más tardar a las 4 p. m. del viernes 6 de noviembre. ¿Tu nombre no está en la lista? No te darán una boleta provisional por eso. Si estás en el lugar de votación equivocado, te mandarán al correcto, y ahí puedes registrarte con un comprobante de dónde vives.",
+   "src": "https://myvote.wi.gov/en-us/Provisional-Ballots",
+   "checked": "2026-10-30",
+   "quote": "A provisional ballot WILL NOT be issued if: ...you went to the wrong polling place. If you go to the wrong polling place, you will be directed to the correct location. ...you attempted to register in person at the polling place and did not provide the required proof of residence. ... A provisional ballot will not be counted unless the voter provides the required information to the poll workers by 8:00 p.m. on Election Day or the municipal clerk by 4:00 p.m. of the Friday following the election.",
+   "status": "verified",
+   "notes": "Pass 2 Oct 30, read in Chrome. Election Day registration at the polls: reg FAQ (faq_text.py). Provisional also for a voter unable to give a license number when registering (same page). Replaces: If you don't have a photo ID, you can vote a provisional ballot. Bring your ID to the polling place by 8 p.m., or to your municipal clerk by 4 p.m. the Friday after the election, and it counts. Miss the deadline and it doesn't."
   },
   "line": {
    "en": "You can still vote. Anyone waiting in line when polls close at 8 p.m. is allowed to vote.",
@@ -245,6 +246,15 @@
    "checked": "2026-10-21",
    "quote": "Already requested a ballot? Track your request to see that it's approved, your ballot is sent, and returned to be counted.",
    "status": "verified"
+  },
+  "late_mail": {
+   "en": "It may be. Your ballot must reach election officials by 8 p.m. on Tuesday, November 3, and the Elections Commission recommends mailing it at least 10 days ahead. Instead, drop it off yourself at your municipal clerk's office, or on Election Day at your polling place or absentee counting location.",
+   "es": "Puede que sí. Tu boleta debe llegar a los funcionarios electorales a más tardar a las 8 p. m. del martes 3 de noviembre, y la Comisión Electoral recomienda enviarla por correo al menos 10 días antes. Mejor llévala tú a la oficina del secretario de tu municipio (municipal clerk) o, el Día de las Elecciones, a tu lugar de votación o al centro de conteo de boletas en ausencia.",
+   "src": "https://elections.wi.gov/voters/voting-absentee",
+   "checked": "2026-10-30",
+   "quote": "With absentee voting, you can vote early at your municipal clerk’s office before Election Day, or receive your ballot by mail and either mail in your completed ballot or drop it off at your clerk’s office or polling place or absentee counting location.",
+   "status": "verified",
+   "notes": "Pass 2 Oct 30, read in Chrome (the site blocks curl). The 8 p.m. receipt and 10-day advice: elections.wi.gov/news-events/wisconsins-election-faqs (dates.mail_return, Oct 28)."
   }
  },
  "notes": "Read October 21, 2026 in Chrome (elections.wi.gov and myvote.wi.gov show a Cloudflare check to curl; accordion text read from the page source) and docs.legis.wisconsin.gov by curl. Pages: MyVote Voter Deadlines, WEC Voting Absentee, Photo ID, Election Day Voting, What Is In-Person Absentee Voting, Wisconsin's Election FAQs, October 21, 2026 Media at the Polls release; Wis. Stat. 6.78(4), 6.87(4)(b)1, (6d), (9), 12.03(2). EARLY VOTING DATES FOR states.js (Wisconsin is unchecked): in-person absentee voting October 20, 2026, possibly through Sunday, November 1, 2026, with dates and hours set by each municipality. Source https://myvote.wi.gov/en-us/Voter-Deadlines: 'October 20, 2026, possibly through November 1, 2026-In-Person Absentee Voting period- Voters can possibly request and vote an absentee ballot in-person in their municipal clerk’s office through November 1, 2026. Office hours vary by municipality. Some municipal offices may not offer additional in-person absentee hours Check MyVote or contact your municipal clerk for absentee voting hours.' WEC absentee page: 'The last possible day for a clerk to conduct in-person absentee voting is the Sunday before the election. Each municipal clerk's office sets its own schedule for in-person absentee voting.' The card would need varies: true (municipal schedules). The provisional deadline in id.without is 'by 4:00 p.m. the Friday after the Election' = Friday, November 6 (computed; faq.provisional keeps the relative wording). Witness rule from Wis. Stat. 6.87; the WEC Uniform Absentee Instructions (EL-128, elections.wi.gov/media/13784/download) are a PDF that downloaded instead of displaying in Chrome and weren't read; one copy was saved to the browser's Downloads folder. The WEC witness-address memo returned 'Access denied'. No statement on drop boxes beyond 'placed in a drop box' in the FAQ data note, so mail.dropbox doesn't promise one. Gear: 12.03 bans electioneering; no official page found on voters' campaign clothing, so gear doesn't tell voters what to wear. October 28: Perplexity review. Ballot photo rule from the WEC ELAW manual Part 14 (Oct 2026). The 10-day mailing advice is still on the WEC FAQ page (Perplexity said it was gone); it now shows after a date with a drop-off pointer. Witness rules re-read in Wis. Stat. 6.87 (printed name, not a candidate). Mail photo ID copy and its exceptions from elections.wi.gov/photoid. Not verified: the DMV ID Petition Process receipt (60 days) and Perplexity's claim that a VA ID may have no expiration date; the WEC photo ID page lists the VHA card as must be unexpired.",

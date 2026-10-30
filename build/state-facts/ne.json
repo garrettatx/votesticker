@@ -230,6 +230,15 @@
    "checked": "2026-10-21",
    "quote": "Check the Voter Information Center to track the status of your ballot including when your ballot was sent, returned and its status.",
    "status": "verified"
+  },
+  "late_mail": {
+   "en": "It may be. Your ballot must reach your county election office by 8 p.m. Central (7 p.m. Mountain) on Tuesday, November 3, and a postmark isn't enough. Instead, bring it to your county election office or put it in your county's secure drop box by then. An agent can deliver it for you.",
+   "es": "Puede que sí. Tu boleta debe llegar a la oficina electoral de tu condado a más tardar a las 8 p. m., hora del Centro (7 p. m., hora de la Montaña), del martes 3 de noviembre, y el matasellos no basta. Mejor llévala a la oficina electoral de tu condado o déjala en el buzón seguro de entrega de tu condado antes de esa hora. Un representante (agent) puede entregarla por ti.",
+   "src": "https://sos.nebraska.gov/elections/early-voting",
+   "checked": "2026-10-30",
+   "quote": "All Early Voting ballots, whether personally delivered, delivered by agent, delivered by mail or other carriers must arrive at the county election official's office by the closing of the polls on Election Day (8:00 pm Central Time / 7:00 pm Mountain Time). Where can I find my county's secure ballot drop box? Nebraska Drop Box Locator",
+   "status": "verified",
+   "notes": "Pass 2 Oct 30, read by curl. Postmark: SOS May 2026 reminder 'Ballots which are postmarked on or before Election Day but are not received until after polls close will not be accepted.' (Perplexity lead)."
   }
  },
  "notes": "Read October 21, 2026 on sos.nebraska.gov (curl worked): Early Voting, Election Day FAQ, Voter ID, Nebraska Drop Box Locator, the 2026 Official Election Calendar PDF; and nebraskalegislature.gov statutes 32-908 (hours, line), 32-1524 (electioneering, 200 feet), 32-1527 (ballot photo), 32-950.01 (drop boxes). EARLY VOTING vs states.js: states.js has end 2026-11-02 and no start. The calendar gives the start: '5-Oct First day for early voting - in person - at the county clerk or election commissioner office.' and '2-Nov Last day for early voting - in person - at the county clerk or election commissioner office. §32-942'. The provisional photo ID deadline is November 10 per the calendar ('Deadline to present valid photographic identification ... on or before the Tuesday after the election'); id.without says 'the Tuesday after the election'. Phone rule, mail ballot cure, first-time voter rules and a sticker tradition on an official page were not found; left missing.",

@@ -206,6 +206,15 @@
    "checked": "2026-10-28",
    "quote": "The OK Voter Portal provides information on your absentee ballot. You can see when your absentee ballot was sent. You can see when your absentee ballot is received by the County Election Board. If your absentee ballot was rejected, you will receive a letter from the County Election Board following the election. ... NOTE: The OK Voter Portal is a voter information system only, it does not “count” ballots or “tally” votes.",
    "status": "verified"
+  },
+  "late_mail": {
+   "en": "It may be. Your County Election Board must receive a mailed ballot by 7 p.m. on Tuesday, November 3, and a postmark doesn't count. You can hand-deliver your own ballot to the board until the end of business hours on Monday, November 2. Bring the same ID you'd show at the polls.",
+   "es": "Puede que sí. La junta electoral de tu condado (County Election Board) debe recibir la boleta por correo a más tardar a las 7 p. m. del martes 3 de noviembre, y el matasellos no cuenta. Puedes entregar tu propia boleta en persona en la junta hasta el final del horario de oficina del lunes 2 de noviembre. Lleva la misma identificación que mostrarías al votar.",
+   "src": "https://oklahoma.gov/elections/voters/absentee-voting/standard-absentee-voters.html",
+   "checked": "2026-10-30",
+   "quote": "Hand-delivered ballots must be returned no later than the end of business hours on the day before the election, and the voter must show the same proof of identity required for in-person voting. Absentee ballots returned by mail or private delivery service must be received by the County Election Board by 7 p.m. (CST) on Election Day to be counted.",
+   "status": "verified",
+   "notes": "Pass 2 Oct 30, read by curl. 'Except as permitted by law, only the voter may return his or her own absentee ballot.' (Election Security page, Perplexity lead)."
   }
  },
  "notes": "Read October 21, 2026 on oklahoma.gov/elections (curl worked): Early Voting, How to Vote, Voting 101, Proof of Identity, Absentee Voting, Dates and Deadlines, the 2026 Voter Information Calendar, FAQs, and the August 24, 2026 news release. EARLY VOTING DIFFERS FROM states.js: states.js has start 2026-10-29 and the note 'Thursday and Friday 8 a.m. to 6 p.m., Saturday 8 a.m. to 2 p.m.'. The 2026 Voter Information Calendar row for the November 3 General Elections lists Early Voting Dates and Hours 'October 28 - 30 (8 A.M. – 6 P.M.)' and 'October 31 (8 A.M. – 2 P.M.)', and the Early Voting page says 'Early voting is also available from 8 a.m. to 6 p.m. the Wednesday preceding the General Election.' So early voting starts Wednesday, October 28. The calendar also lists the registration deadline October 9 and the absentee ballot deadline October 19. The mail return date for hand delivery (Monday, November 2) is 'the Monday before the election' on the absentee page. The I Voted sticker line is the Election Board's current Voting 101 tip, not a contest. Drop boxes, ballot cure and first-time voter rules not found; left missing.",

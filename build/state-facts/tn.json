@@ -262,6 +262,15 @@
    "checked": "2026-10-21",
    "quote": "This tool allows voters to review their registration information, track absentee ballots, see early voting and Election Day information, and find their polling place.",
    "status": "verified"
+  },
+  "late_mail": {
+   "en": "It may be. Your county election commission must receive it by the time polls close on Tuesday, November 3, and a postmark doesn't count. You can only send it by mail or a carrier such as FedEx or UPS. You can't hand it in at the office or give it to a poll worker.",
+   "es": "Puede que sí. La comisión electoral de tu condado (county election commission) debe recibirla antes de que cierren los lugares de votación el martes 3 de noviembre, y el matasellos no cuenta. Solo puedes enviarla por correo o por una empresa de mensajería, como FedEx o UPS. No puedes entregarla en persona en la oficina ni dársela a un trabajador electoral.",
+   "src": "https://sos.tn.gov/elections/faqs",
+   "checked": "2026-10-30",
+   "quote": "You must mail your ballot in time for your county election commission to receive it no later than the close of polls on Election Day. You must return your ballot by mail (USPS, FedEx, UPS, etc.). Hand delivery or handing it to a poll worker during early voting or on Election Day is not permitted.",
+   "status": "verified",
+   "notes": "Pass 2 Oct 30, read by curl. Same rule on sos.tn.gov/elections/guides/guide-to-absentee-voting (dates.mail_return)."
   }
  },
  "notes": "Read October 21, 2026 in Chrome (sos.tn.gov returns a block page to curl). Pages: GoVoteTN voter page, 2026 Elections Calendar, Guide to Absentee Voting, Voter ID Requirements, FAQ node 149 (no photo ID), How to Early Vote In Person, August 4, 2026 'Everything Voters Need to Know' press release (polls close, line, 100-foot rule), July 15, 2026 America 250 sticker release. EARLY VOTING DATES FOR states.js (Tennessee is unchecked): Wednesday, October 14 to Thursday, October 29, 2026. Source https://sos.tn.gov/elections/calendar: 'Early Voting Wednesday, October 14 – Thursday, October 29, 2026'. Also on https://sos.tn.gov/govotetn: 'Early Voting for the November 3 Election: October 14 through October 29'. Sites and hours are set by each county election commission (GoVoteTN app, https://govote.tnsos.gov/). The polls and 100-foot rules come from the August 2026 election press release; no November release was found, and they describe state law, not that election alone. No local_offices_url: the SOS county commission list is on tnsos.org, which the validator's OFFICIAL pattern rejects (https://tnsos.org/elections/election_commissions.php, linked from sos.tn.gov/govotetn); add it to ALLOW_HOSTS if wanted. Mail return: by mail or carrier only, received by close of polls; no hand delivery, so no drop boxes. The early voting page also says early voting 'typically begins twenty (20) days before an election and ends five (5) days before'; not used, since the calendar gives the dates.",

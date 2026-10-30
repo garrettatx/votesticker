@@ -255,6 +255,15 @@
    "checked": "2026-10-21",
    "quote": "If you have submitted an absentee ballot application for a ballot to be sent by mail, you can track your ballot by logging into Ballot Scout.",
    "status": "verified"
+  },
+  "late_mail": {
+   "en": "Not if it's postmarked by Tuesday, November 3, and reaches your general registrar by noon on Friday, November 6. Mailing it this late is a risk. On Election Day, you can drop it off at a polling place in your locality or at your general registrar's office by 7 p.m.",
+   "es": "No, si tiene matasellos del martes 3 de noviembre o antes y llega a la oficina de registro de tu localidad (general registrar) a más tardar al mediodía del viernes 6 de noviembre. Mandarla por correo tan tarde es un riesgo. El Día de las Elecciones, puedes dejarla en un lugar de votación de tu localidad o en la oficina de registro a más tardar a las 7 p. m.",
+   "src": "https://law.lis.virginia.gov/vacode/title24.2/chapter7/section24.2-707.1/",
+   "checked": "2026-10-30",
+   "quote": "On the day of the election, there shall also be a drop-off location at each polling place in operation for the election.",
+   "status": "verified",
+   "notes": "Pass 2 Oct 30, read by curl. Postmark and noon Nov 6 receipt plus registrar by 7 p.m.: elections.virginia.gov/casting-a-ballot/absentee-voting/ (dates.mail_return, re-read Oct 30). The 5 p.m. receipt rule starts Jan 1, 2027 (2026 law summary), not this election."
   }
  },
  "notes": "Read October 21, 2026 on elections.virginia.gov (curl worked) and law.lis.virginia.gov. Early voting dates in states.js (Sept. 18 to Oct. 31) match the upcoming-elections page: 'Friday, September 18, 2026 through 5:00 p.m., Saturday, October 31, 2026.' Code 24.2-709.1 has two versions on the page; the one 'Effective until January 1, 2027' (cure by noon on the third day after the election, for ballots received by the Friday before) is used; the 2027 version moves it to 5 p.m. on the Monday after. The mail return and cure deadlines are stated relative to the election; no official page states them as calendar dates, so none is computed. Campaign gear: Code 24.2-604(D) lets voters wear campaign apparel, buttons and stickers, so Virginia is the opposite of Texas and Georgia here. Witness: the envelope statement is required (24.2-707); an ELECT summary of 2023 law changes reportedly removed the witness signature, not read directly, so the file doesn't say 'no witness'. No sticker tradition on an official page. October 28: Perplexity review. Ballot photo answer from AG opinion 16-038 (2016); see polls_rules.phone notes on the later regulation change. Same-day registration provisional ballots from the ELECT same-day page (where: registrar or satellite during early voting, own precinct on Election Day). Cure notice runs from when the registrar finds the problem (Code 24.2-709.1 C). Not added: the emergency absentee routes (ELECT absentee page: hospitalization, illness or death in the family, request by 2 p.m. Nov 2; unexpected obligation after noon Oct 31, apply and vote in person by 2 p.m. Nov 2), since no fact here has that page as its source; see the report.",

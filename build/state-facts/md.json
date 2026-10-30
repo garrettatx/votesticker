@@ -215,6 +215,15 @@
    "checked": "2026-10-21",
    "quote": "Visit the voter look-up website to verify if your local board of elections received your request for a ballot and the status of your mail-in ballot.",
    "status": "verified"
+  },
+  "late_mail": {
+   "en": "Not if it's postmarked by Tuesday, November 3, and arrives by Friday, November 13. But a ballot dropped in a mailbox on Election Day may not get that day's postmark. To be safe, take it to a ballot drop box, your local board of elections, or a polling place by 8 p.m. on November 3.",
+   "es": "No, si tiene matasellos del martes 3 de noviembre o antes y llega a más tardar el viernes 13 de noviembre. Pero una boleta que echas al buzón el Día de las Elecciones quizás no reciba el matasellos de ese día. Para no correr riesgos, llévala a un buzón de entrega de boletas, a la junta electoral local (local board of elections) o a un lugar de votación a más tardar a las 8 p. m. del 3 de noviembre.",
+   "src": "https://elections.maryland.gov/elections/2026/index.html",
+   "checked": "2026-10-30",
+   "quote": "Your mail-in ballot must be mailed, dropped in a ballot drop box location (PDF) , or taken to a polling place, Early Voting Center or local board by 8:00 pm on Election Day . ... Your ballot must be postmarked on or before each election day to be counted. Putting your ballot in a mailbox on election day does not mean it is postmarked that day.",
+   "status": "verified",
+   "notes": "Pass 2 Oct 30, read by curl. Nov 13 receipt: elections.maryland.gov/voting/canvassing.html (Oct 28) and the 2026 calendar. Ballot envelope: 'Drop off your ballot at any voting location in the county.' (Outgoing_Envelope-EN.pdf, Perplexity lead, not read). A 2014 page that bars polling-place return is superseded by the 2026 page."
   }
  },
  "notes": "Read October 21, 2026 on elections.maryland.gov (curl worked). Early voting dates in states.js (Oct. 22 to 29, 7 a.m. to 8 p.m.) match elections.maryland.gov/elections/2026/index.html: 'early voting centers will be open from Thursday, October 22, 2026 through Thursday, October 29, 2026 from 7:00 am until 8:00 pm, including Saturday and Sunday.' The 2026 page says 'Mail-in ballots must be postmarked or placed in a designated ballot drop box by 8:00 pm on November 03, 2026'; the mail-in FAQ says only 'postmarked on or before election day'; no receipt deadline for postmarked ballots was found, so none is stated. The ID list for first-time voters (current photo ID, or a utility bill, bank statement, government check, paycheck or government document dated within 3 months) is on election_day_questions.html; left out of id.accepted because most voters need no ID. Not found: mail-in cure process, witness rule (the page mentions only a signed oath), in-line-at-closing rule. The sticker designs are named from the download links' alt text on the 2026 page, not from a news release; no designer or contest is named there.",

@@ -186,7 +186,13 @@
  },
  "faq": {
   "provisional": {
-   "status": "missing"
+   "en": "If your eligibility to vote can't be confirmed, for example if you're told you aren't registered, you have the right to a provisional ballot. Go to your county elections office in person and fill out a Provisional Ballot Request Form. It counts only if you're found eligible, and you have the right to know whether it was accepted.",
+   "es": "Si no se puede confirmar que tienes derecho a votar, por ejemplo, si te dicen que no estás registrado, tienes derecho a una boleta provisional. Ve en persona a la oficina electoral de tu condado y llena un formulario de solicitud de boleta provisional (Provisional Ballot Request Form). Solo cuenta si se confirma que puedes votar, y tienes derecho a saber si fue aceptada.",
+   "src": "https://sos.oregon.gov/elections/Voters-Pamphlet/Documents/VP_G26-Book1_web.pdf",
+   "checked": "2026-10-30",
+   "quote": "Do I need a provisional ballot? If your eligibility to vote can’t be determined, you have the right to request a provisional ballot. To obtain a provisional ballot, go to your county elections office in person and fill out a Provisional Ballot Request Form. Your provisional ballot will only be counted if you are determined to be eligible to vote. ... You have the right to get a “provisional ballot,” even if you are told you are not registered to vote.",
+   "status": "verified",
+   "notes": "Pass 2 Oct 30: Nov 3, 2026 State Voters' Pamphlet, FAQ page 11 and voter rights page, read in the PDF (pdftotext). Oregon's registration deadline was Oct 13; no Election Day registration (reg FAQ)."
   },
   "line": {
    "en": "You can still turn in your ballot. Voters in line at a drop site at 8 p.m. may drop it off.",
@@ -214,13 +220,13 @@
    "notes": "Nov 24: SOS 2026 Elections Calendar, 'November 24, 2026 Last day to resolve ballot challenges.' (21 days after the election)."
   },
   "late_mail": {
-   "en": "A mailed ballot counts if it's postmarked by November 3 and reaches your county by November 10. Since October 28, the Secretary of State recommends a drop box. If you have to mail it, ask a post office staff member to hand-stamp the postmark.",
-   "es": "Una boleta por correo cuenta si tiene matasellos del 3 de noviembre o antes y llega a tu condado a más tardar el 10 de noviembre. Desde el 28 de octubre, la Secretaría de Estado recomienda usar un buzón de entrega. Si tienes que enviarla por correo, pide a un empleado de la oficina postal que le ponga el matasellos a mano.",
+   "en": "A mailed ballot counts if it's postmarked by November 3 and reaches your county by November 10. Since October 28, the Secretary of State recommends a drop box instead. Drop boxes take ballots until 8 p.m. on November 3. If you have to mail it, ask a post office staff member to hand-stamp the postmark.",
+   "es": "Una boleta por correo cuenta si tiene matasellos del 3 de noviembre o antes y llega a tu condado a más tardar el 10 de noviembre. Desde el 28 de octubre, la Secretaría de Estado recomienda usar un buzón de entrega. Los buzones reciben boletas hasta las 8 p. m. del 3 de noviembre. Si tienes que enviarla por correo, pide a un empleado de la oficina postal que le ponga el matasellos a mano.",
    "src": "https://apps.oregon.gov/oregon-newsroom/OR/SOS/Posts/Post/last-recommended-day-to-mail-ballots-october-27",
-   "checked": "2026-10-28",
-   "quote": "the Oregon Secretary of State’s office is recommending that, starting tomorrow, voters exclusively return their ballots via secure, official drop box. ... If mail is the only option, voters should go into their local post office and request a manual postmark be applied to their ballot envelope as soon as possible. To be counted, all ballots must either be put into a drop box by 8 p.m. on Election Day or postmarked by Election Day and received within the 7-day post-election grace period.",
+   "checked": "2026-10-30",
+   "quote": "To be counted, all ballots must either be put into a drop box by 8 p.m. on Election Day or postmarked by Election Day and received within the 7-day post-election grace period.",
    "status": "verified",
-   "notes": "Nov 10: SOS 2026 Elections Calendar."
+   "notes": "Pass 2 Oct 30, read by curl. Nov 10: SOS 2026 Elections Calendar. Drop Box Locator: sos.oregon.gov/elections/Pages/drop-box-locator.aspx. Replaces: A mailed ballot counts if it's postmarked by November 3 and reaches your county by November 10. Since October 28, the Secretary of State recommends a drop box. If you have to mail it, ask a post office staff member to hand-stamp the postmark."
   }
  },
  "notes": "Read October 21, 2026 on sos.oregon.gov (curl worked): General Election – November 3, 2026 (current-election), Elections FAQ, Oregon Drop Box Locator, Track Your Ballot, Media Resources (virtual I Voted stickers); and ORS 260.695(3) on oregonlegislature.gov. states.js matches: ballots mailed starting October 14 ('Counties begin mailing ballots to active voters in Oregon : October 14'), recommended mail-by date October 27, drop box deadline 'November 3 at 8 p.m.'. The 21-day cure deadline is stated relative to the election and was not converted to a date. Provisional ballots, phone rules and first-time voter ID (HAVA) were not found on an Oregon page; left missing. The selfie stays out (faq-sources.json has no official source)."

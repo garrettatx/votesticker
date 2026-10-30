@@ -312,6 +312,12 @@ return array(
 			'src' => 'https://myinfo.alabamavotes.gov/voterview',
 			'checked' => '2026-10-21',
 		),
+		'faq.late_mail' => array(
+			'en' => 'It may be. Your county\'s Absentee Election Manager must receive a mailed ballot by noon on Tuesday, November 3, and a postmark doesn\'t count. You can still hand your own ballot to that office by close of business, and no later than 5 p.m., on Monday, November 2. Mail, a commercial carrier, or your own hand delivery are the only legal ways to return it.',
+			'es' => 'Puede que sí. El administrador electoral de voto en ausencia de tu condado (Absentee Election Manager) debe recibir la boleta por correo a más tardar al mediodía del martes 3 de noviembre, y el matasellos no cuenta. Todavía puedes entregar tu propia boleta en esa oficina antes del cierre, y a más tardar a las 5 p. m., del lunes 2 de noviembre. El correo, una empresa de mensajería o tu entrega en persona son las únicas formas legales de devolverla.',
+			'src' => 'https://www.sos.alabama.gov/alabama-votes/voter/absentee-voting',
+			'checked' => '2026-10-30',
+		),
 	),
 	'AR' => array(
 		'election' => '2026-11-03',
@@ -327,6 +333,10 @@ return array(
 			'www.washingtoncountyar.gov' => array(
 				'en' => 'the Washington County Election Commission',
 				'es' => 'la Comisión Electoral del condado de Washington (Election Commission)',
+			),
+			'www.voterview.ar-nova.org' => array(
+				'en' => 'the Arkansas Secretary of State\'s VoterView',
+				'es' => 'VoterView de la Secretaría de Estado de Arkansas',
 			),
 		),
 		'dates.reg_deadline' => array(
@@ -462,6 +472,21 @@ return array(
 			'es' => 'Todavía puedes votar. Los trabajadores electorales dejan votar a todas las personas que ya están en la fila a las 7:30 p. m.',
 			'src' => 'https://sbec.arkansas.gov/wp-content/uploads/2026-Poll-Worker-Guide-CLEAN-10-28-25.pdf',
 			'checked' => '2026-10-21',
+		),
+		'faq.track' => array(
+			'en' => 'Look yourself up on VoterView, the Secretary of State\'s voter lookup. It shows your ballot statuses along with your address and polling place.',
+			'es' => 'Búscate en VoterView, la herramienta de consulta de votantes de la Secretaría de Estado. Muestra el estado de tus boletas, además de tu dirección y tu lugar de votación.',
+			'src' => 'https://www.voterview.ar-nova.org/',
+			'checked' => '2026-10-30',
+		),
+		'faq.late_mail' => array(
+			'en' => 'It may be. Your county clerk must receive a mailed ballot by 7:30 p.m. on Tuesday, November 3, and a postmark doesn\'t count. Delivering it yourself or by a designated bearer? That deadline is close of business on Friday, October 30.',
+			'es' => 'Puede que sí. El secretario de tu condado (county clerk) debe recibir la boleta por correo a más tardar a las 7:30 p. m. del martes 3 de noviembre, y el matasellos no cuenta. ¿La vas a entregar tú o un portador designado (designated bearer)? La fecha límite es el cierre de la oficina el viernes 30 de octubre.',
+			'src' => 'https://www.sos.arkansas.gov/elections/voter-information/absentee-voting',
+			'checked' => '2026-10-30',
+			'until' => '2026-10-30',
+			'en_after' => 'It may be. Your county clerk must receive a mailed ballot by 7:30 p.m. on Tuesday, November 3, and a postmark doesn\'t count. Delivery in person or by a designated bearer closed at close of business on Friday, October 30.',
+			'es_after' => 'Puede que sí. El secretario de tu condado (county clerk) debe recibir la boleta por correo a más tardar a las 7:30 p. m. del martes 3 de noviembre, y el matasellos no cuenta. La entrega en persona o por un portador designado (designated bearer) cerró al cierre de la oficina el viernes 30 de octubre.',
 		),
 	),
 	'AZ' => array(
@@ -1051,10 +1076,10 @@ return array(
 			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
-			'en' => 'If you register on Election Day but don\'t have ID that can be verified, you can vote a provisional ballot. After Election Day, election officials check that you\'re eligible, and if you are, it\'s counted.',
-			'es' => 'Si te registras el Día de las Elecciones pero no tienes una identificación que se pueda verificar, puedes votar con una boleta provisional. Después del Día de las Elecciones, los funcionarios electorales revisan si tienes derecho a votar y, si es así, se cuenta.',
-			'src' => 'https://www.coloradosos.gov/pubs/elections/FAQs/ElectionDay.html',
-			'checked' => '2026-10-21',
+			'en' => 'You vote one when your eligibility can\'t be confirmed, for example if you register on Election Day without ID that can be verified. Not on the list? You can register and vote at a voter service and polling center through Election Day. A provisional ballot counts once officials confirm you can vote, but not if you vote it in the wrong county. Your receipt tells you how to check it.',
+			'es' => 'Votas con una cuando no se puede confirmar si tienes derecho a votar, por ejemplo, si te registras el Día de las Elecciones sin una identificación que se pueda verificar. ¿No estás en la lista? Puedes registrarte y votar en un centro de votación y servicio al votante hasta el Día de las Elecciones. Una boleta provisional cuenta cuando los funcionarios confirman que puedes votar, pero no si la votas en el condado equivocado. Tu comprobante te dice cómo revisarla.',
+			'src' => 'https://www.coloradosos.gov/pubs/elections/FAQs/ProvisionalBallots.html',
+			'checked' => '2026-10-30',
 		),
 		'faq.line' => array(
 			'en' => 'You can still vote. Everyone in line at their polling location by 7 p.m. gets to vote, no matter how long it takes.',
@@ -1228,6 +1253,12 @@ return array(
 			'es' => 'Revisa el estado de tu boleta de voto en ausencia en el buscador de registro de votantes de la Secretaría del Estado (Voter Registration Lookup), o llama a la oficina del secretario municipal (Town Clerk).',
 			'src' => 'https://portal.ct.gov/-/media/sots/early-voting/2026-voting-guide/2026_voter_guide-2-final-combined.pdf',
 			'checked' => '2026-10-21',
+		),
+		'faq.late_mail' => array(
+			'en' => 'It may be. Your Town Clerk must receive a mailed ballot by 8 p.m. on Tuesday, November 3, and a postmark doesn\'t count. Use your town\'s official drop box by 8 p.m. that day instead. Handing it to the Town Clerk yourself? Do it by close of business on Monday, November 2.',
+			'es' => 'Puede que sí. El secretario de tu municipio (Town Clerk) debe recibir la boleta por correo a más tardar a las 8 p. m. del martes 3 de noviembre, y el matasellos no cuenta. Mejor usa el buzón oficial de entrega de tu municipio a más tardar a las 8 p. m. de ese día. ¿La vas a entregar tú en persona al Town Clerk? Hazlo antes del cierre de la oficina el lunes 2 de noviembre.',
+			'src' => 'https://portal.ct.gov/-/media/sots/early-voting/2026-voting-guide/2026_voter_guide-2-final-combined.pdf',
+			'checked' => '2026-10-30',
 		),
 	),
 	'DC' => array(
@@ -2947,6 +2978,12 @@ return array(
 			'src' => 'https://sos.ks.gov/elections/election-faq.html',
 			'checked' => '2026-10-21',
 		),
+		'faq.late_mail' => array(
+			'en' => 'Not if it\'s postmarked by Tuesday, November 3, and arrives by the last mail delivery on Friday, November 6. A court order requires that for this election, and the Secretary of State\'s request to pause it was denied. This close, it\'s safer to take it to your county election office, a drop box in your county, or any polling place in your county before polls close on November 3.',
+			'es' => 'No, si tiene matasellos del martes 3 de noviembre o antes y llega con el último reparto de correo del viernes 6 de noviembre. Una orden judicial lo exige para esta elección, y se negó la solicitud de la Secretaría de Estado de suspenderla. A estas alturas, es más seguro llevarla a la oficina electoral de tu condado, a un buzón de entrega de tu condado o a cualquier lugar de votación de tu condado antes del cierre de la votación el 3 de noviembre.',
+			'src' => 'https://sos.ks.gov/elections/advance-voting-information.html',
+			'checked' => '2026-10-30',
+		),
 	),
 	'KY' => array(
 		'election' => '2026-11-03',
@@ -3284,6 +3321,12 @@ return array(
 			'src' => 'https://www.sos.la.gov/elections-voting/ways-to-vote',
 			'checked' => '2026-10-21',
 		),
+		'faq.late_mail' => array(
+			'en' => 'It may be. Your parish Registrar of Voters must receive it by 4:30 p.m. on Monday, November 2, the day before Election Day, and a postmark doesn\'t count. You or an immediate family member can still hand it in at the registrar\'s office by then. Military, overseas and hospitalized voters have until 8 p.m. on Election Day.',
+			'es' => 'Puede que sí. El registrador de votantes de tu parroquia (parish Registrar of Voters) debe recibirla a más tardar a las 4:30 p. m. del lunes 2 de noviembre, el día antes de las elecciones, y el matasellos no cuenta. Tú o un familiar directo todavía pueden entregarla en la oficina del registrador antes de esa hora. Los votantes militares, en el extranjero u hospitalizados tienen hasta las 8 p. m. del Día de las Elecciones.',
+			'src' => 'https://www.sos.la.gov/elections-voting/ways-to-vote',
+			'checked' => '2026-10-30',
+		),
 	),
 	'MA' => array(
 		'election' => '2026-11-03',
@@ -3611,6 +3654,12 @@ return array(
 			'es' => 'Usa Voter Look-up para ver si la junta electoral de tu condado recibió tu solicitud y en qué estado va tu boleta por correo.',
 			'src' => 'https://elections.maryland.gov/voting/absentee.html',
 			'checked' => '2026-10-21',
+		),
+		'faq.late_mail' => array(
+			'en' => 'Not if it\'s postmarked by Tuesday, November 3, and arrives by Friday, November 13. But a ballot dropped in a mailbox on Election Day may not get that day\'s postmark. To be safe, take it to a ballot drop box, your local board of elections, or a polling place by 8 p.m. on November 3.',
+			'es' => 'No, si tiene matasellos del martes 3 de noviembre o antes y llega a más tardar el viernes 13 de noviembre. Pero una boleta que echas al buzón el Día de las Elecciones quizás no reciba el matasellos de ese día. Para no correr riesgos, llévala a un buzón de entrega de boletas, a la junta electoral local (local board of elections) o a un lugar de votación a más tardar a las 8 p. m. del 3 de noviembre.',
+			'src' => 'https://elections.maryland.gov/elections/2026/index.html',
+			'checked' => '2026-10-30',
 		),
 	),
 	'ME' => array(
@@ -5151,6 +5200,12 @@ return array(
 			'src' => 'https://sos.nebraska.gov/elections/early-voting',
 			'checked' => '2026-10-21',
 		),
+		'faq.late_mail' => array(
+			'en' => 'It may be. Your ballot must reach your county election office by 8 p.m. Central (7 p.m. Mountain) on Tuesday, November 3, and a postmark isn\'t enough. Instead, bring it to your county election office or put it in your county\'s secure drop box by then. An agent can deliver it for you.',
+			'es' => 'Puede que sí. Tu boleta debe llegar a la oficina electoral de tu condado a más tardar a las 8 p. m., hora del Centro (7 p. m., hora de la Montaña), del martes 3 de noviembre, y el matasellos no basta. Mejor llévala a la oficina electoral de tu condado o déjala en el buzón seguro de entrega de tu condado antes de esa hora. Un representante (agent) puede entregarla por ti.',
+			'src' => 'https://sos.nebraska.gov/elections/early-voting',
+			'checked' => '2026-10-30',
+		),
 	),
 	'NH' => array(
 		'election' => '2026-11-03',
@@ -6363,6 +6418,12 @@ return array(
 			'src' => 'https://oklahoma.gov/elections/voters/absentee-voting/standard-absentee-voters.html',
 			'checked' => '2026-10-28',
 		),
+		'faq.late_mail' => array(
+			'en' => 'It may be. Your County Election Board must receive a mailed ballot by 7 p.m. on Tuesday, November 3, and a postmark doesn\'t count. You can hand-deliver your own ballot to the board until the end of business hours on Monday, November 2. Bring the same ID you\'d show at the polls.',
+			'es' => 'Puede que sí. La junta electoral de tu condado (County Election Board) debe recibir la boleta por correo a más tardar a las 7 p. m. del martes 3 de noviembre, y el matasellos no cuenta. Puedes entregar tu propia boleta en persona en la junta hasta el final del horario de oficina del lunes 2 de noviembre. Lleva la misma identificación que mostrarías al votar.',
+			'src' => 'https://oklahoma.gov/elections/voters/absentee-voting/standard-absentee-voters.html',
+			'checked' => '2026-10-30',
+		),
 	),
 	'OR' => array(
 		'election' => '2026-11-03',
@@ -6479,6 +6540,12 @@ return array(
 			'src' => 'https://multco.us/news/oct-22-2026-all-registered-voters-should-have-received-their-ballots',
 			'checked' => '2026-10-23',
 		),
+		'faq.provisional' => array(
+			'en' => 'If your eligibility to vote can\'t be confirmed, for example if you\'re told you aren\'t registered, you have the right to a provisional ballot. Go to your county elections office in person and fill out a Provisional Ballot Request Form. It counts only if you\'re found eligible, and you have the right to know whether it was accepted.',
+			'es' => 'Si no se puede confirmar que tienes derecho a votar, por ejemplo, si te dicen que no estás registrado, tienes derecho a una boleta provisional. Ve en persona a la oficina electoral de tu condado y llena un formulario de solicitud de boleta provisional (Provisional Ballot Request Form). Solo cuenta si se confirma que puedes votar, y tienes derecho a saber si fue aceptada.',
+			'src' => 'https://sos.oregon.gov/elections/Voters-Pamphlet/Documents/VP_G26-Book1_web.pdf',
+			'checked' => '2026-10-30',
+		),
 		'faq.line' => array(
 			'en' => 'You can still turn in your ballot. Voters in line at a drop site at 8 p.m. may drop it off.',
 			'es' => 'Todavía puedes entregar tu boleta. Los votantes que estén en la fila de un lugar de entrega a las 8 p. m. pueden dejarla.',
@@ -6498,10 +6565,10 @@ return array(
 			'checked' => '2026-10-28',
 		),
 		'faq.late_mail' => array(
-			'en' => 'A mailed ballot counts if it\'s postmarked by November 3 and reaches your county by November 10. Since October 28, the Secretary of State recommends a drop box. If you have to mail it, ask a post office staff member to hand-stamp the postmark.',
-			'es' => 'Una boleta por correo cuenta si tiene matasellos del 3 de noviembre o antes y llega a tu condado a más tardar el 10 de noviembre. Desde el 28 de octubre, la Secretaría de Estado recomienda usar un buzón de entrega. Si tienes que enviarla por correo, pide a un empleado de la oficina postal que le ponga el matasellos a mano.',
+			'en' => 'A mailed ballot counts if it\'s postmarked by November 3 and reaches your county by November 10. Since October 28, the Secretary of State recommends a drop box instead. Drop boxes take ballots until 8 p.m. on November 3. If you have to mail it, ask a post office staff member to hand-stamp the postmark.',
+			'es' => 'Una boleta por correo cuenta si tiene matasellos del 3 de noviembre o antes y llega a tu condado a más tardar el 10 de noviembre. Desde el 28 de octubre, la Secretaría de Estado recomienda usar un buzón de entrega. Los buzones reciben boletas hasta las 8 p. m. del 3 de noviembre. Si tienes que enviarla por correo, pide a un empleado de la oficina postal que le ponga el matasellos a mano.',
 			'src' => 'https://apps.oregon.gov/oregon-newsroom/OR/SOS/Posts/Post/last-recommended-day-to-mail-ballots-october-27',
-			'checked' => '2026-10-28',
+			'checked' => '2026-10-30',
 		),
 	),
 	'PA' => array(
@@ -6671,6 +6738,12 @@ return array(
 			'es' => 'Firma la declaración del sobre exterior y escribe la fecha antes de enviarla. Una boleta sin firma no se cuenta. ¿Ya la enviaste? Llama a la oficina electoral de tu condado para preguntar qué puedes hacer.',
 			'src' => 'https://www.pa.gov/content/dam/copapwp-pagov/en/dos/resources/voting-and-elections/directives-and-guidance/2026/2026-09-30-guidance_civil-mail-ballot-procedures.pdf',
 			'checked' => '2026-10-28',
+		),
+		'faq.late_mail' => array(
+			'en' => 'It may be. Your county election office must receive it by 8 p.m. on Tuesday, November 3, and a postmark doesn\'t count. Return it yourself to your county election office or an official drop box or return site. Or bring the ballot and its outer envelope to your polling place to be voided, and vote a regular ballot there. Without them, you vote a provisional ballot.',
+			'es' => 'Puede que sí. La oficina electoral de tu condado debe recibirla a más tardar a las 8 p. m. del martes 3 de noviembre, y el matasellos no cuenta. Entrégala tú en la oficina electoral de tu condado o en un buzón o lugar oficial de entrega. O lleva la boleta y su sobre exterior a tu lugar de votación para anularla y vota ahí con una boleta regular. Si no los llevas, votas con una boleta provisional.',
+			'src' => 'https://www.pa.gov/agencies/vote/voter-support/mail-in-and-absentee-ballot',
+			'checked' => '2026-10-30',
 		),
 	),
 	'RI' => array(
@@ -7356,6 +7429,12 @@ return array(
 			'src' => 'https://sos.tn.gov/govotetn',
 			'checked' => '2026-10-21',
 		),
+		'faq.late_mail' => array(
+			'en' => 'It may be. Your county election commission must receive it by the time polls close on Tuesday, November 3, and a postmark doesn\'t count. You can only send it by mail or a carrier such as FedEx or UPS. You can\'t hand it in at the office or give it to a poll worker.',
+			'es' => 'Puede que sí. La comisión electoral de tu condado (county election commission) debe recibirla antes de que cierren los lugares de votación el martes 3 de noviembre, y el matasellos no cuenta. Solo puedes enviarla por correo o por una empresa de mensajería, como FedEx o UPS. No puedes entregarla en persona en la oficina ni dársela a un trabajador electoral.',
+			'src' => 'https://sos.tn.gov/elections/faqs',
+			'checked' => '2026-10-30',
+		),
 	),
 	'TX' => array(
 		'election' => '2026-11-03',
@@ -7788,10 +7867,10 @@ return array(
 			'checked' => '2026-10-21',
 		),
 		'faq.late_mail' => array(
-			'en' => 'A mailed ballot counts only if your county clerk receives it by 8 p.m. on November 3, whatever the postmark. If it\'s late, use a drop box or take it to a polling location instead.',
-			'es' => 'Una boleta por correo cuenta solo si la oficina del secretario de tu condado la recibe a más tardar a las 8 p. m. del 3 de noviembre, sin importar el matasellos. Si ya es tarde, usa un buzón de entrega o llévala a un lugar de votación.',
-			'src' => 'https://vote.utah.gov/wp-content/uploads/2026/09/2026-Voter-Information-Pamphlet.pdf',
-			'checked' => '2026-10-21',
+			'en' => 'It may be. Your county clerk must receive a mailed ballot by 8 p.m. on November 3, whatever the postmark, and ballots that arrive later don\'t count. Instead, put it in a drop box or take it to a polling location before 8 p.m. that day.',
+			'es' => 'Puede que sí. La oficina del secretario de tu condado debe recibir la boleta por correo a más tardar a las 8 p. m. del 3 de noviembre, sin importar el matasellos, y las que llegan después no cuentan. Mejor déjala en un buzón de entrega o llévala a un lugar de votación antes de las 8 p. m. de ese día.',
+			'src' => 'https://vote.utah.gov/learn-about-voting-by-mail-and-absentee-voting/',
+			'checked' => '2026-10-30',
 		),
 	),
 	'VA' => array(
@@ -7956,6 +8035,12 @@ return array(
 			'es' => 'Sigue tu boleta por correo en Ballot Scout. Los votantes de los condados de Fairfax y Prince William usan el sistema de su propio condado.',
 			'src' => 'https://www.elections.virginia.gov/casting-a-ballot/absentee-voting/',
 			'checked' => '2026-10-21',
+		),
+		'faq.late_mail' => array(
+			'en' => 'Not if it\'s postmarked by Tuesday, November 3, and reaches your general registrar by noon on Friday, November 6. Mailing it this late is a risk. On Election Day, you can drop it off at a polling place in your locality or at your general registrar\'s office by 7 p.m.',
+			'es' => 'No, si tiene matasellos del martes 3 de noviembre o antes y llega a la oficina de registro de tu localidad (general registrar) a más tardar al mediodía del viernes 6 de noviembre. Mandarla por correo tan tarde es un riesgo. El Día de las Elecciones, puedes dejarla en un lugar de votación de tu localidad o en la oficina de registro a más tardar a las 7 p. m.',
+			'src' => 'https://law.lis.virginia.gov/vacode/title24.2/chapter7/section24.2-707.1/',
+			'checked' => '2026-10-30',
 		),
 	),
 	'VT' => array(
@@ -8238,6 +8323,12 @@ return array(
 			'src' => 'https://www.thurstoncountywa.gov/news/thurston-county-auditors-office-unveils-new-i-voted-sticker-and-celebrates-national-voter-registration-day',
 			'checked' => '2026-10-23',
 		),
+		'faq.provisional' => array(
+			'en' => 'They\'re not common in Washington. Name not on the list, or need to update your address? You can register in person until 8 p.m. on Election Day at a county elections office or voting center and get a regular ballot. Counties give a provisional ballot only when they need to check whether you can vote.',
+			'es' => 'No son comunes en Washington. ¿Tu nombre no está en la lista o necesitas cambiar tu dirección? Puedes registrarte en persona hasta las 8 p. m. del Día de las Elecciones en la oficina electoral de tu condado o en un centro de votación y recibir una boleta regular. Los condados dan una boleta provisional solo cuando necesitan revisar si puedes votar.',
+			'src' => 'https://www.sos.wa.gov/elections/voters/helpful-information/frequently-asked-questions-voting-mail',
+			'checked' => '2026-10-30',
+		),
 		'faq.line' => array(
 			'en' => 'You can still vote. Anyone in line at a voting center or ballot drop box at 8 p.m. can vote and drop off their ballot.',
 			'es' => 'Igual puedes votar. Toda persona que esté en la fila de un centro de votación o de un buzón a las 8 p. m. puede votar y dejar su boleta.',
@@ -8257,10 +8348,10 @@ return array(
 			'checked' => '2026-10-28',
 		),
 		'faq.late_mail' => array(
-			'en' => 'A mailed ballot counts if it\'s postmarked on or before November 3, but postmarks aren\'t guaranteed on the day you mail it. In the last week, use a drop box or ask the post office counter to hand-stamp it.',
-			'es' => 'Una boleta por correo cuenta si tiene matasellos del 3 de noviembre o antes, pero el matasellos no está garantizado el mismo día que la envías. En la última semana, usa un buzón o pide en el mostrador de la oficina postal que le pongan el matasellos a mano.',
-			'src' => 'https://www.sos.wa.gov/about-office/news/2026/us-supreme-court-rules-favor-accepting-ballots-postmarked-time-received-after-election-day',
-			'checked' => '2026-10-21',
+			'en' => 'A mailed ballot still counts if it\'s postmarked by November 3, but a postmark isn\'t guaranteed the day you mail it. This close, the Secretary of State says to use a drop box instead. A ballot in an official drop box by 8 p.m. on November 3 is on time, and you can also hand it in at a county elections office or voting center. Find locations at VoteWA.gov.',
+			'es' => 'Una boleta por correo todavía cuenta si tiene matasellos del 3 de noviembre o antes, pero el matasellos no está garantizado el mismo día que la envías. A estas alturas, la Secretaría de Estado recomienda usar un buzón de entrega. Una boleta que está en un buzón oficial a más tardar a las 8 p. m. del 3 de noviembre llega a tiempo, y también puedes entregarla en la oficina electoral de tu condado o en un centro de votación. Busca los lugares en VoteWA.gov.',
+			'src' => 'https://www.sos.wa.gov/elections/voters/helpful-information/frequently-asked-questions-voting-mail',
+			'checked' => '2026-10-30',
 		),
 	),
 	'WI' => array(
@@ -8415,10 +8506,10 @@ return array(
 			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
-			'en' => 'If you don\'t have a photo ID, you can vote a provisional ballot. Bring your ID to the polling place by 8 p.m., or to your municipal clerk by 4 p.m. the Friday after the election, and it counts. Miss the deadline and it doesn\'t.',
-			'es' => 'Si no tienes una identificación con foto, puedes votar con una boleta provisional. Lleva tu identificación al lugar de votación a más tardar a las 8 p. m., o al secretario de tu municipio a más tardar a las 4 p. m. del viernes después de la elección, y se cuenta. Si no lo haces a tiempo, no se cuenta.',
-			'src' => 'https://elections.wi.gov/election-day-voting',
-			'checked' => '2026-10-21',
+			'en' => 'Wisconsin gives a provisional ballot mainly to voters who can\'t show photo ID. It counts if you bring your ID to the polling place by 8 p.m., or to your municipal clerk by 4 p.m. on Friday, November 6. Name not on the list? You won\'t get a provisional ballot for that. At the wrong polling place, you\'ll be sent to the right one, and you can register there with proof of where you live.',
+			'es' => 'Wisconsin da una boleta provisional sobre todo a quienes no pueden mostrar una identificación con foto. Cuenta si llevas tu identificación al lugar de votación a más tardar a las 8 p. m., o a la oficina del secretario de tu municipio (municipal clerk) a más tardar a las 4 p. m. del viernes 6 de noviembre. ¿Tu nombre no está en la lista? No te darán una boleta provisional por eso. Si estás en el lugar de votación equivocado, te mandarán al correcto, y ahí puedes registrarte con un comprobante de dónde vives.',
+			'src' => 'https://myvote.wi.gov/en-us/Provisional-Ballots',
+			'checked' => '2026-10-30',
 		),
 		'faq.line' => array(
 			'en' => 'You can still vote. Anyone waiting in line when polls close at 8 p.m. is allowed to vote.',
@@ -8431,6 +8522,12 @@ return array(
 			'es' => 'Sigue tu solicitud en MyVote.wi.gov para ver que la aprobaron, que te enviaron la boleta y que la recibieron para contarla.',
 			'src' => 'https://elections.wi.gov/voters/voting-absentee',
 			'checked' => '2026-10-21',
+		),
+		'faq.late_mail' => array(
+			'en' => 'It may be. Your ballot must reach election officials by 8 p.m. on Tuesday, November 3, and the Elections Commission recommends mailing it at least 10 days ahead. Instead, drop it off yourself at your municipal clerk\'s office, or on Election Day at your polling place or absentee counting location.',
+			'es' => 'Puede que sí. Tu boleta debe llegar a los funcionarios electorales a más tardar a las 8 p. m. del martes 3 de noviembre, y la Comisión Electoral recomienda enviarla por correo al menos 10 días antes. Mejor llévala tú a la oficina del secretario de tu municipio (municipal clerk) o, el Día de las Elecciones, a tu lugar de votación o al centro de conteo de boletas en ausencia.',
+			'src' => 'https://elections.wi.gov/voters/voting-absentee',
+			'checked' => '2026-10-30',
 		),
 	),
 	'WV' => array(
