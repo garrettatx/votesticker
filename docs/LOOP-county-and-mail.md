@@ -34,8 +34,8 @@ last-minute answer for their state, both from an official source.
 |---|---|---|---|
 | 0 | Push loop 2's waiting commits (history, post-election results answer), missed Oct 30 6:30 a.m. slot | 3 commits local | Done Oct 30 (run 41084630854) |
 | 1 | **County Stickers**: a heading under the state's premade sticker gallery listing official county sticker stories (design, who made it, where voters get it, paper or digital), each with its own official source and quote. Optional `sticker.more` list in `build/state-facts/<abbr>.json`, rendered by `facts_text.py` and `site/index.php`, checked by `qa_facts`. Order by search demand (Garrett, Oct 30): counties with Search Console queries on our pages first, then counties with Ahrefs volume for "[county] i voted sticker", then strong verified entries with no measured demand. Demand-backed counties go first in each state's list, and the log shows each county's number. The dozen verified Oct 29 (LOOP-state-pages.md, loop 1 entry) are candidates, not a given | "[state] i voted sticker" is the top query on every state page; county contest pages outrank us; check GSC queries with county names and Ahrefs "[county] i voted sticker" first | Built Oct 30: 17 entries in 7 states (pass 1); more states next |
-| 2 | **Last-minute mail answers for every state**: "Is it too late to mail my ballot?", "How do I track my mail ballot?", "My name isn't on the list" (provisional ballot). Done for TX, NC, FL Oct 29. Postmark vs. receipt, and where to hand it in, vary by state | Election-week searches Nov 1 to 3; a wrong generic answer can cost a vote | Open |
-| 3 | Open fact calls before the Nov 2 banner: NJ cure deadline (timeline vs. poster); ID affidavit routes AK AZ IA ND OK WY; ALLOW_HOSTS for official county sites on .com/.org (Camden NJ, Washington County MD, Johnson and Montgomery County KS) | Possible wrong answers on the busiest day | Open |
+| 2 | **Last-minute mail answers for every state**: "Is it too late to mail my ballot?", "How do I track my mail ballot?", "My name isn't on the list" (provisional ballot). Done for TX, NC, FL Oct 29. Postmark vs. receipt, and where to hand it in, vary by state | Election-week searches Nov 1 to 3; a wrong generic answer can cost a vote | Pass 2 Oct 30: 23 states filled or fixed (two pushes); late-mail answer on 50 of 51 pages; trackers missing IL IN MO SD; provisional missing MN MS NH; thin "not on the list" lines in Open Fact Calls |
+| 3 | Open fact calls before the Nov 2 banner: NJ cure deadline (timeline vs. poster); ID affidavit routes AK AZ IA ND OK WY; ALLOW_HOSTS for official county sites on .com/.org (Camden NJ, Washington County MD, Johnson and Montgomery County KS) | Possible wrong answers on the busiest day | Open (pass 2: NJ statute not readable; AR hand-delivery conflict added) |
 | 4 | Spanish wording decided by evidence: "lugar de votación" vs. "casilla"; "Ya voté" vs. "Yo voté" on stickers. What official U.S. Spanish election pages and stickers say, plus Spanish search volume (Ahrefs US, GSC). Recommendation to Garrett, then apply | Open questions in `docs/spanish-style.md` | Open |
 | 5 | Michigan page order: official 2026 designs right after our gallery; trim repeated voting facts | Clearscope Michigan read | Open |
 | 6 | After Nov 3: each state's official results page link and certification date where the state publishes one | Nov 4 to 10 searches | Nov 4 to 5 |
@@ -132,3 +132,94 @@ at the end; a Perplexity Library tab and a local preview tab may still be open o
 **Next.** NYC's 2026 specials if the Board posts them on vote.nyc (highest demand still unanswered); Pinellas digital sticker
 needs a person to read votepinellas.gov/ivoted; Hillsborough (Angelica) if the release comes back; more states (IL, MI, PA, OH,
 GA, VA by page impressions); item 2 mail answers.
+
+### October 30: Pass 2, Last-Minute Mail Answers
+
+**Order.** Search Console, Oct 23 to 29, page impressions with EN and ES summed: TX 823, CA 671, FL 606, NY 439, NC 425,
+OR 402, MD 365, WA 335, LA 328, NJ 231, CO 211, UT 200, AK 196, OH 195, TN 179, SC 178, MI 173, MN 172, IL 156, AZ 149,
+MA 142, GA 125, NM 122, PA 110, VA 108, WI 99, KS 94, CT 91, AL 81, HI 78, MO 75, AR 72, IN 68, OK 66, NV 65, ID 56, ME 55,
+DC 54, NE 44, MS 38, MT 38, VT 33, RI 29, KY 24, IA 23, WV 22, DE 22, SD 19, WY 18, NH 12, ND 3. Before this pass, 27
+states had all three answers from Oct 21 to 29 reads; 18 had no late-mail answer, 6 no tracker and 5 no provisional
+answer. Answers that still read right were left alone; the pass filled gaps and fixed thin answers, working down the list. In the facts files the three questions are `faq.late_mail`, `faq.track` and `faq.provisional`
+(the "name not on the list" route goes into the provisional answer, the way Texas does it).
+
+**Research.** Perplexity project "VoteSticker.org Research". Deep Research is still locked: picking it opens "Upgrade for
+advanced research capabilities. Upgrade to Max for enhanced access to Perplexity deep research." So five prompts ran in
+standard Search inside the project, 22 s to 1 m 44 s each, 61 to 432 sources: p0 (changes Oct 23 to 30, all states), b1
+(MD LA TN PA VA WI), b2 (OR WA CO UT NJ SC MN), b3 (KS CT AL AR IN OK NE), b4 (MS RI KY IA NH HI NV ME DE MO SD IL). The
+project's mode button defaults to Computer; each prompt was switched to Search before sending. get_page_text cuts off long
+answers; removing the earlier sections from the page and reading again gets the rest. Prompts and condensed reads in
+`docs/research/mail-answers-20261030/` (p0, b1 to b4 answer files; edits-*.json hold every shipped answer with its quote).
+
+**Past 7 days (p0, checked).** No deadline extension, emergency order or provisional rule change found. USPS began
+"extraordinary measures" Oct 24 (extra collections, hand postmarks from Oct 26; no deadline change). Watson v. RNC
+(24-1260): judgment reversed June 29, 2026, no new docket entry Oct 23 to 30, so postmark states stand. Boston closes all
+city drop boxes Oct 31 8 a.m. to Nov 1 2 p.m. (city page; not added, local). Kansas: the SOS page says the Court of Appeals
+denied the stay for the general, so postmarked-by-Election-Day ballots arriving by Friday Nov 6 count (undated; the Nov 2
+dated check stays). NH: on Oct 22 the U.S. Supreme Court stayed a district court decision on student IDs; the SOS says
+student IDs can't be used on Election Day (lead, not read; NH ID answer untouched).
+
+**Shipped, push 1: 16 states** (each answer read on the official page today, by curl or in Chrome, quote in the facts file):
+- Too late to mail (new): MD (postmark Nov 3, arrive Nov 13; drop box, local board or polling place by 8 p.m.), LA
+  (registrar must have it by 4:30 p.m. Monday Nov 2), TN (receipt by close of polls; mail or carrier only, no hand
+  delivery), PA (receipt 8 p.m.; county office or drop box; or surrender ballot and envelope at the polls), VA (postmark
+  Nov 3, noon Nov 6; drop-off at polling places on Election Day under Code 24.2-707.1), WI (8 p.m.; clerk, polling place or
+  absentee counting location), KS (court order: postmark Nov 3, arrive Fri Nov 6; any polling place in the county), CT
+  (Town Clerk 8 p.m. by mail or drop box; in person by close of business Nov 2), AL (noon Nov 3 by mail; in person by close
+  of business Nov 2; mail, carrier or own hand delivery only), AR (7:30 p.m. by mail; in person or bearer closed Fri Oct 30,
+  with past-tense after-text), OK (7 p.m. by mail; hand delivery by end of business Nov 2 with ID), NE (8 p.m. CT / 7 p.m. MT;
+  county office or drop box; agent allowed).
+- Too late to mail (fixed for all-mail states): WA (drop box 8 p.m., county office or voting center, VoteWA.gov), OR (drop
+  boxes until 8 p.m. Nov 3), UT (source moved to vote.utah.gov: received by 8 p.m., later ballots don't count).
+- Name not on the list (new or rewritten provisional answers): WI (no provisional for that; register at the polls; ID
+  provisional to Fri Nov 6 4 p.m.), WA (register in person until 8 p.m. and get a regular ballot), CO (register and vote at a
+  VSPC through Election Day; wrong-county provisional doesn't count; receipt explains status), OR (Provisional Ballot Request
+  Form at the county elections office, 2026 Voters' Pamphlet).
+- Track (new): AR VoterView ("ballot statuses").
+
+**Push 1 (12:03 p.m.).** Full QA passed (facts, Spanish, SEO local --no-legacy, events, save, cards; stale 28, unchanged).
+Run 41095490508 succeeded; IndexNow HTTP 200, 32 URLs (the 16 states EN and ES). A scheduled run (41094732990) that
+started on the old commit deployed first and failed only at its commit step (my push had landed); no harm. Live: Maryland
+and Kansas EN and ES show the new answers.
+
+**Shipped, push 2: 7 states.** Too late to mail: KY (6 p.m. local; county drop box), IA (auditor by 8 p.m.; not the polling
+place, but you can surrender it there), RI (8 p.m.; any drop box, the polling-place receptacle on Election Day, or the Board in
+Cranston), NH (5 p.m. Nov 3 by mail or agent; in person by 5 p.m. Nov 2), MS (postmark Nov 3, Circuit Clerk by 5 p.m. Nov
+10). Name not on the list: KY (provisional; Provisional Voter Information link), HI (provisional; county or Office of
+Elections), DE (federal offices only; status by number). Track: MS My Election Day (absentee and affidavit ballots).
+`qa_es.py` allows "My Election Day" (tool name).
+
+**Post-election and Nov 2 checks.** `VOTE_TODAY=2026-11-04` build: every "Is it too late to mail" answer drops (page and
+FAQPage markup) in MD, LA, KS, WA, WI, AR, ES Oklahoma; tracking and provisional answers stay, as set Oct 25 (they still
+apply to counting). `VOTE_TODAY=2026-11-02`: all present; Arkansas shows the after-text ("closed at close of business on
+Friday, October 30"). Note: the WA provisional answer says you can register "until 8 p.m. on Election Day"; after Nov 3 it
+reads as general information, not an instruction for this election.
+
+**Open Fact Calls.**
+- Arkansas hand delivery: the SOS absentee page and 2026 calendar say in person or by bearer by close of business Friday
+  before the election; the SOS general FAQ still says the day before (in person) and 7:30 p.m. Election Day (bearer). We
+  follow the absentee page.
+- Tennessee and South Carolina: no state page found saying what happens when your name isn't on the list (Shelby County
+  only for TN; SC FAQ covers moves and ID). Provisional answers left as they were.
+- Minnesota: no state page read that answers "What is a provisional ballot" (MN uses Election Day registration; the
+  Register on Election Day page is read and verified). Provisional answer still missing; the reg FAQ covers it.
+- New Hampshire provisional: the 2024 implementation memo ended affidavit ballots; current challenged-ballot route not
+  verified. Mississippi provisional (affidavit ballot): only a handbook URL from Perplexity; not read.
+- Iowa provisional and Maine, Nevada, Indiana and Nebraska "not on the list" lines: leads in b3 and b4, not shipped.
+- Track: no statewide tool for IL, IN, MO, SD. IL leads: Chicago, suburban Cook ("What Is My Mail Ballot Status", read),
+  DuPage BallotTrax, Lake Voter Power, Will County. Could ship as a county list after Garrett's OK on the format.
+- Mississippi hand delivery: an older county handbook says it is illegal to hand deliver absentee ballots (not read).
+- NJ cure deadline: still unresolved (timeline Nov 14 vs. poster "48 hours prior to certification"); the page keeps
+  "Return it as soon as you can." N.J.S.A. 19:63-17 could not be read on njleg (no plain statute URL found).
+- ID affidavit routes (AK AZ IA ND OK WY) and ALLOW_HOSTS (Camden NJ, Washington County MD, Johnson and Montgomery County
+  KS): not reached this pass.
+- Sticker lead: Rhode Island's mail packet includes an "I Voted by Mail sticker" (vote.sos.ri.gov/Voter/VoteByMail, read
+  in Chrome today).
+
+**Perplexity Library.** Moved 13 "I run VoteSticker.org ..." threads (Oct 29, one page per state and home page) into the
+project with each row's "..." menu, Add to project (move only). The bulk select bar offers only Mark as unread and Delete,
+so it wasn't used. More of the same Oct 28 to 29 threads remain below them (about 20 or more).
+
+**States left.** All 51 have a late-mail answer except Indiana (its mail-deadline answer already says the 6 p.m.
+receipt rule). Missing tracker: IL, IN, MO, SD. Missing provisional: MN, MS, NH. Thin "name not on the list" lines:
+TN, SC, NJ, NE, NV, ME, IA, IN.
