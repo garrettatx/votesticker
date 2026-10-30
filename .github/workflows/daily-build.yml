@@ -96,11 +96,19 @@ jobs:
 
       - name: QA live
         if: env.DRY_RUN != 'true'
+        # Up to three tries, a minute apart: on Oct 30 two runs failed here on "Remote end closed connection"
+        # from the runner while the same checks passed from a desk, and a failure here skips IndexNow and the
+        # build records commit. A real content failure still fails all three tries.
         run: |
           sleep 10
-          python3 -I scripts/qa_seo.py --no-legacy
-          python3 -I scripts/qa_es.py
-          python3 -I scripts/qa_facts.py --base https://votesticker.org/
+          for try in 1 2 3; do
+            python3 -I scripts/qa_seo.py --no-legacy \
+              && python3 -I scripts/qa_es.py \
+              && python3 -I scripts/qa_facts.py --base https://votesticker.org/ \
+              && exit 0
+            echo "QA live try $try failed"; [ "$try" -lt 3 ] && sleep 60
+          done
+          exit 1
 
       - name: Tell search engines what changed
         if: env.DRY_RUN != 'true'
