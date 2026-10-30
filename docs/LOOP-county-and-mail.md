@@ -34,8 +34,8 @@ last-minute answer for their state, both from an official source.
 |---|---|---|---|
 | 0 | Push loop 2's waiting commits (history, post-election results answer), missed Oct 30 6:30 a.m. slot | 3 commits local | Done Oct 30 (run 41084630854) |
 | 1 | **County Stickers**: a heading under the state's premade sticker gallery listing official county sticker stories (design, who made it, where voters get it, paper or digital), each with its own official source and quote. Optional `sticker.more` list in `build/state-facts/<abbr>.json`, rendered by `facts_text.py` and `site/index.php`, checked by `qa_facts`. Order by search demand (Garrett, Oct 30): counties with Search Console queries on our pages first, then counties with Ahrefs volume for "[county] i voted sticker", then strong verified entries with no measured demand. Demand-backed counties go first in each state's list, and the log shows each county's number. The dozen verified Oct 29 (LOOP-state-pages.md, loop 1 entry) are candidates, not a given | "[state] i voted sticker" is the top query on every state page; county contest pages outrank us; check GSC queries with county names and Ahrefs "[county] i voted sticker" first | Built Oct 30: 17 entries in 7 states (pass 1); more states next |
-| 2 | **Last-minute mail answers for every state**: "Is it too late to mail my ballot?", "How do I track my mail ballot?", "My name isn't on the list" (provisional ballot). Done for TX, NC, FL Oct 29. Postmark vs. receipt, and where to hand it in, vary by state | Election-week searches Nov 1 to 3; a wrong generic answer can cost a vote | Pass 2 Oct 30: 23 states filled or fixed (two pushes); late-mail answer on 50 of 51 pages; trackers missing IL IN MO SD; provisional missing MN MS NH; thin "not on the list" lines in Open Fact Calls |
-| 3 | Open fact calls before the Nov 2 banner: NJ cure deadline (timeline vs. poster); ID affidavit routes AK AZ IA ND OK WY; ALLOW_HOSTS for official county sites on .com/.org (Camden NJ, Washington County MD, Johnson and Montgomery County KS) | Possible wrong answers on the busiest day | Open (pass 2: NJ statute not readable; AR hand-delivery conflict added) |
+| 2 | **Last-minute mail answers for every state**: "Is it too late to mail my ballot?", "How do I track my mail ballot?", "My name isn't on the list" (provisional ballot). Done for TX, NC, FL Oct 29. Postmark vs. receipt, and where to hand it in, vary by state | Election-week searches Nov 1 to 3; a wrong generic answer can cost a vote | Pass 2 Oct 30: 23 states filled or fixed. Pass 3 Oct 30: name-not-on-the-list answers for MN MS NH (new) and TN SC NJ NE NV IA (stronger); trackers for IL (county list), IN and SD (statewide; pass 2 had them wrong as missing). Left: MO tracker (local only), ME and IN provisional lines |
+| 3 | Open fact calls before the Nov 2 banner: NJ cure deadline (timeline vs. poster); ID affidavit routes AK AZ IA ND OK WY; ALLOW_HOSTS for official county sites on .com/.org (Camden NJ, Washington County MD, Johnson and Montgomery County KS) | Possible wrong answers on the busiest day | Pass 3 Oct 30: ID routes fixed (WY was wrong, ND incomplete; AK AZ IA OK right); ALLOW_HOSTS added; AR conflict gone (SOS FAQ now agrees); NJ left as is (Garrett) |
 | 4 | Spanish wording decided by evidence: "lugar de votación" vs. "casilla"; "Ya voté" vs. "Yo voté" on stickers. What official U.S. Spanish election pages and stickers say, plus Spanish search volume (Ahrefs US, GSC). Recommendation to Garrett, then apply | Open questions in `docs/spanish-style.md` | Open |
 | 5 | Michigan page order: official 2026 designs right after our gallery; trim repeated voting facts | Clearscope Michigan read | Open |
 | 6 | After Nov 3: each state's official results page link and certification date where the state publishes one | Nov 4 to 10 searches | Nov 4 to 5 |
@@ -232,3 +232,99 @@ Garrett accepted Claude's recommendations ("I trust your recs"):
 - Arkansas: where the state's own pages give different hand-delivery deadlines, show the earlier one and tell voters to check with the county clerk.
 - New Jersey cure deadline: leave "Return it as soon as you can"; no phone call.
 - Social posts as sources: allowed when the post is on the election office's own official account and the office has no web page saying the same. Record the post URL, date and exact quote. Prefer the web page when one exists.
+
+### October 30: Pass 3, ID Routes, Provisional Answers, Fact Calls
+
+**Research.** Perplexity project "VoteSticker.org Research", four prompts, all in standard Search (28 s to 2 m 22 s,
+85 to 211 sources): A (ID routes), B (name not on the list), C (IL trackers, IN MO SD trackers, AR deadline, county
+sites, RI sticker), D (county sticker stories for the four ALLOW_HOSTS counties). Deep Research tried once first: the "+"
+menu now lists "Deep Research, Included in Pro", but picking it opened "Upgrade for advanced research capabilities.
+Upgrade to Max for enhanced access to Perplexity deep research." Not retried. One slip: prompt C's first send went out in
+Computer mode (the mode pill resets to Computer when the project page reloads, and a click before it finishes loading
+flips it back). Stopped after 7 s; the task's Usage panel read "Session usage: Included", so no purchased credits. Every
+later send was checked on a zoomed screenshot of the pill first. Answers and prompts in `docs/research/pass3-20261030/`.
+Past 7 days: no ID, provisional or deadline change found in any of the states asked about. Every fact below was read on the
+official page (curl, or Chrome where curl is blocked), quote in the facts file.
+
+**Push 1 (item 1, ID routes).** Delaware's answer is the model: what to do with no ID, in the ID answer itself.
+- Wyoming was wrong. The FAQ ID answer listed IDs only, and the "without ID" line said only "get a free Wyoming ID card",
+  which reads as no way to vote. W.S. 22-2-119: a voter who can't show ID "may vote by provisional ballot"; 22-15-105:
+  oath, and proof to the county clerk by close of business the day after. Both now say so (Nov 4 deadline). Statute read
+  in the Title 22 PDF on wyoleg.gov.
+- North Dakota was incomplete: the FAQ ID answer left out the set-aside ballot (the facts box had it). Added from the SOS
+  Forms of Voter ID page (13 days, county auditor, before the canvassing board).
+- Alaska (poll worker who knows you can waive ID; questioned ballot), Arizona (conditional provisional), Iowa (a registered
+  voter from the precinct vouches by oath; regular ballot), Oklahoma (sworn affidavit, provisional): already right.
+- The Election Day banner carries hours and lookups only, no ID text; checked.
+- Commit b64d718. Full QA passed (facts, Spanish, SEO local --no-legacy, events, save, cards; stale 28, unchanged). Run
+  41116072622 succeeded; IndexNow HTTP 200 in the run. Live: Wyoming and North Dakota, EN and ES, show the new lines.
+
+**Push 2 (items 2 to 6).**
+- Name not on the list (`faq.provisional`), new: MN (Election Day registration with one proof of residence, or a registered
+  voter from the precinct vouches; Chrome), MS (affidavit ballot when your name isn't in the poll book; written notice of how
+  to check; 2026 Voter Information Guide PDF), NH (register at your polling place with proof of identity, age, citizenship
+  and domicile; sos.nh.gov register page, in Chrome; it carries an Oct 22 notice on the Supreme Court's student-ID stay).
+- Strengthened: TN (claim you're registered in the county, registration form, proof of address, affidavit, provisional;
+  no Election Day registration; Tenn. Code 2-7-112(a)(3) in the General Assembly's code bill PDF; photo ID line kept),
+  SC (name not on the poll list leads; SEC voter information poster), NJ (1-877-NJVOTER after the election, from
+  vote-provisional-ballot.shtml; cure answer untouched per Garrett), NE (first line: the right to a provisional ballot if
+  your name isn't on the list), NV (register at any polling place in the county until close, or provisional; NRS
+  293.5847 and 293.3081), IA (name not on the list, notice, proof by noon Monday Nov 9, letter if not counted; Chrome).
+- Trackers (`faq.track`): IL county list, each read on its own site: Chicago Voter Information Lookup (Chrome),
+  suburban Cook "What Is My Mail Ballot Status" (curl), DuPage BallotTrax linked from the Clerk's Vote by Mail page (curl),
+  Will and Kane BallotTrax pages (Chrome; county clerk branding). Lake left out: its Voter Power page shows a lookup and VBM
+  request, no status wording we could read. IN: statewide after all, "Get Absentee Ballot Information" on
+  indianavoters.in.gov (2026 Election Administrators Manual); `mail.track_url` added, so the paths panel and banner link it.
+  SD: statewide Voter Information Portal ("ARE YOU ABLE TO TRACK YOUR ABSENTEE BALLOT USING THIS PORTAL: Yes"); the track
+  URL was already set, the answer was missing. Pass 2 logged both as having no tracker; that was wrong.
+- Arkansas (Garrett's call): the SOS FAQ now matches the absentee page and calendar (in person and bearer by close of
+  business Friday Oct 30), so the conflict is gone. Added the authorized-agent route (hospital or nursing home patients,
+  7:30 p.m. Election Day) and "Not sure? Check with your county clerk." to the answer and its after-text.
+- ALLOW_HOSTS: camdencounty.com, washco-md.net, jocoelection.org, jocogov.org, mgcountyks.org (with and without www), each
+  confirmed by its home page title. County links they had blocked: only Johnson County ships. Its contest packet says the
+  four winning designs go out "at Advance Voting locations, in Advance Mail Ballot envelopes and on Election Day at all
+  polling sites"; no winners are named, so none are named here (Kansas `sticker.more`, demand 0). Camden (March contest
+  announcement), Washington County MD (January public vote) and Montgomery KS (rules dated for a Dec 2025 judging): no 2026
+  winner or Nov 3 use announced; not shipped.
+- Rhode Island sticker: it was already in `sticker.mail` since Oct 24; reread in Chrome today ("Your mail ballot packet
+  includes: ... I Voted by Mail sticker") and rewritten to list what's in the packet.
+- Missouri tracker: no statewide tool for domestic voters (local election authority; the MOVE portal is military and
+  overseas only). Logged, not shipped.
+- Commit 5093238. Full QA passed (as above; stale 28). Nov 2 and Nov 4 builds checked for AR IL IN SD MN TN KS RI WY ND:
+  answers show on Nov 2; late-mail drops on Nov 4, tracking and provisional stay; Johnson County and Arkansas switch to
+  past tense. Run 41118194726 failed at its own QA step, before deploy: `qa_es.py --base` flagged "by Mail" on Spanish
+  Rhode Island (straight quotes around "I Voted by Mail"; qa_es only skips English inside curly quotes). My local qa_es ran
+  without `--base` and missed it, so local QA now runs it with `--base` like CI. Fixed with curly quotes (also in the IL
+  and IN Spanish tracker answers) in commit 88cd058, full QA again (all pass, stale 28). Runs 41119679191 and 41120367499 then built, passed local QA
+  and deployed, but failed at "QA live": the runner's requests to votesticker.org dropped (IncompleteRead, then
+  RemoteDisconnected), so their IndexNow and records steps were skipped. Live QA from here passed (qa_seo --no-legacy,
+  qa_es, qa_facts), and `scripts/indexnow.py` sent the 30 changed URLs (15 states, EN and ES): HTTP 200;
+  build/indexnow-sent.json committed. Live: Illinois and Minnesota EN and ES, Spanish Rhode Island and Kansas
+  (Johnson County) show the new text. Watch the Oct 31 6:05 a.m. run: if "QA live" fails again, it is the runner's
+  connection, not the pages.
+
+**Open Fact Calls.**
+- Arizona ID deadline: the SOS page says "the 5th business day" (Perplexity counts Nov 10); our page says Sunday Nov 8 from
+  the session law and the SOS Master Elections Calendar (read Oct 28). Kept Nov 8.
+- Lake County IL tracker: not on the page until a Lake County page says the lookup shows mail ballot status.
+- Missouri: no statewide tracker; county route only, not named.
+- Maine and Indiana "not on the list" lines: not reached (Maine needs a page that says what happens when your name is
+  missing; 21-A §122(4) Election Day registration is read and could go in).
+- NH: our ID answer already says student IDs aren't accepted; the Oct 22 Supreme Court stay notice on sos.nh.gov agrees.
+- Nevada's provisional status page (nvsos.gov) shows a CAPTCHA in Chrome; skipped, statute used.
+
+**Perplexity Library.** Moved 40 more "I run VoteSticker.org ..." Search threads (Oct 28 and 29, one page per state and
+home page) into the project, one at a time with each row's "..." menu, Add to project. Nothing renamed or deleted. Every
+voting thread in the Library now sits in the project; the non-voting ones (MVNO spam calls, piercing link building,
+GoDaddy staging, catfish food, outreach strategy, Freelance Finder work) stay where they are.
+
+**Next (after the Sunday Nov 1, 7 p.m. freeze: fact fixes and content inside existing slots only).**
+- Nov 1: index snapshot (`archive_search.py --index`); daily ended-early-voting check.
+- Nov 2: reread the Kansas advance voting page (court order); dispatch the build by hand if none by 7 a.m.; banner check.
+- Nov 4: post-election build deployed by 7 a.m. (dispatch with `2026-11-04` if not); spot-check EN and ES.
+- Nov 5: remove the `30 6 4 11 *` cron; log the release in `docs/change-log.csv`.
+- Item 4: Spanish wording ("lugar de votación" vs "casilla", "Ya voté" vs "Yo voté"), decided by evidence.
+- Item 5: Michigan page order (official 2026 designs after our gallery; trim repeated facts).
+- Item 6: results certification per state after Nov 3 (`dates.certify` proposal; each date read on the state's own page).
+- Item 7: history, notable designs prompt.
+- NYC's 2026 Halloween, Marathon and Future Voter stickers: recheck vote.nyc and the BOE for an official post.
