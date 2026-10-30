@@ -216,12 +216,13 @@
  },
  "faq": {
   "provisional": {
-   "en": "It's a ballot you vote when something can't be confirmed at the polls. Your county clerk counts it after checking that you're registered and eligible. If it was for missing ID, give the ID to the clerk by 5 p.m. on Friday, November 6.",
-   "es": "Es una boleta con la que votas cuando algo no se puede confirmar en el lugar de votación. El secretario de tu condado la cuenta después de revisar que estás registrado y que puedes votar. Si fue por falta de identificación, entrega la identificación al secretario a más tardar a las 5 p. m. del viernes 6 de noviembre.",
+   "en": "Name not on the list? You can register in person at any polling place in your county until the polls close and vote. If you say you're already registered, you can vote a provisional ballot instead. Your county clerk counts it after checking that you're registered and eligible. If it was for missing ID, give the ID to the clerk by 5 p.m. on Friday, November 6.",
+   "es": "¿Tu nombre no está en la lista? Puedes registrarte en persona en cualquier lugar de votación de tu condado hasta que cierren y votar. Si dices que ya estás registrado, puedes votar con una boleta provisional. El secretario de tu condado la cuenta después de revisar que estás registrado y que puedes votar. Si fue por falta de identificación, entrega la identificación al secretario a más tardar a las 5 p. m. del viernes 6 de noviembre.",
    "src": "https://www.leg.state.nv.us/nrs/nrs-293.html",
-   "checked": "2026-10-28",
-   "quote": "The county or city clerk determines that the person who cast the provisional ballot was registered to vote in the election, eligible to vote in the election and issued the appropriate ballot for the address at which the person resides",
-   "status": "verified"
+   "checked": "2026-10-30",
+   "quote": "an elector may register to vote in person on the day of the election at any polling place in the county or city, as applicable, in which the elector is eligible to vote. [NRS 293.5847] ... Declares that he or she has registered to vote and is eligible to vote at that election in that jurisdiction, but his or her name does not appear on a voter registration list [NRS 293.3081]",
+   "status": "verified",
+   "notes": "NRS 293.5847 and 293.3081 read by curl Oct 30; the ID deadline keeps the Oct 28 read. nvsos.gov provisional page showed a CAPTCHA in Chrome; skipped."
   },
   "line": {
    "en": "Stay in line. If you're waiting in line when polls close, you have the right to vote.",

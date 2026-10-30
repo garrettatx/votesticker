@@ -11,6 +11,10 @@
   "www.tn.gov": {
    "en": "the Tennessee Attorney General",
    "es": "la Fiscalía General (Attorney General) de Tennessee"
+  },
+  "www.capitol.tn.gov": {
+   "en": "the Tennessee General Assembly",
+   "es": "la Asamblea General de Tennessee (Tennessee General Assembly)"
   }
  },
  "dates": {
@@ -240,12 +244,13 @@
  },
  "faq": {
   "provisional": {
-   "en": "If you don't bring a photo ID, you vote a provisional ballot. To have it reviewed, bring a valid photo ID to your county election commission office by Thursday, November 5, two business days after Election Day, and sign an affidavit there.",
-   "es": "Si no llevas una identificación con foto, votas con una boleta provisional. Para que la revisen, lleva una identificación con foto válida a la oficina de la comisión electoral de tu condado a más tardar el jueves 5 de noviembre, dos días hábiles después del Día de las Elecciones, y firma ahí una declaración jurada.",
-   "src": "https://sos.tn.gov/node/149",
-   "checked": "2026-10-28",
-   "quote": "Upon returning to the election commission office, the voter will sign an affidavit and a copy of the voter’s photo ID will be made to be reviewed by the counting board.",
-   "status": "verified"
+   "en": "If you say you're registered in your county but your name isn't on the list, you can vote a provisional ballot. You fill out a voter registration form, show proof of your address and sign an affidavit. It counts if the county finds you should have been registered in that precinct. Tennessee doesn't have Election Day registration. No photo ID? You also vote a provisional ballot, and you have until Thursday, November 5, to show a valid photo ID at your county election commission office.",
+   "es": "Si dices que estás registrado en tu condado pero tu nombre no está en la lista, puedes votar con una boleta provisional. Llenas un formulario de registro de votante, muestras un comprobante de tu dirección y firmas una declaración jurada. Se cuenta si el condado determina que debías estar registrado en ese precinto. Tennessee no tiene registro el Día de las Elecciones. ¿No tienes identificación con foto? También votas con una boleta provisional, y tienes hasta el jueves 5 de noviembre para mostrar una identificación con foto válida en la oficina de la comisión electoral de tu condado.",
+   "src": "https://www.capitol.tn.gov/Archives/Joint/publications/TNCodeBills/2025/TNCodeBill_Volume1_2025.pdf",
+   "checked": "2026-10-30",
+   "quote": "A person shall be entitled to vote a provisional ballot under the procedures of this section if the voter claims to be properly registered in the county and eligible to vote at the precinct in the election, but whose eligibility cannot be determined by the computer signature list ... Nothing in this section shall be construed to allow election day voter registration.",
+   "status": "verified",
+   "notes": "Tenn. Code 2-7-112(a)(3), in the General Assembly's code bill (official reenactment, dated 11/15/24), read by curl Oct 30. sos.tn.gov blocks curl and has no name-not-on-the-list page we found. The photo ID line keeps the Oct 28 read of sos.tn.gov/node/149 ('two (2) business days after Election Day')."
   },
   "line": {
    "en": "You can still vote. If you're in line when polls close, at 8 p.m. Eastern or 7 p.m. Central depending on your county, you'll be allowed to vote.",

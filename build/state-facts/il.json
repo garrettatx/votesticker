@@ -19,6 +19,10 @@
   "www.lakecountyil.gov": {
    "en": "the Lake County Clerk",
    "es": "la secretaría del condado de Lake (Lake County Clerk)"
+  },
+  "chicagoelections.gov": {
+   "en": "the Chicago Board of Election Commissioners",
+   "es": "la Junta de Comisionados Electorales de Chicago (Chicago Board of Election Commissioners)"
   }
  },
  "dates": {
@@ -218,8 +222,13 @@
    "status": "verified"
   },
   "track": {
-   "status": "missing",
-   "notes": "No statewide ballot tracker found on elections.il.gov; tracking is run by each election authority."
+   "en": "Illinois has no statewide tracker; your local election authority runs one. Chicago: the Voter Information Lookup at chicagoelections.gov. Suburban Cook County: \"What Is My Mail Ballot Status\" at cookcountyclerkil.gov. DuPage, Will and Kane counties: BallotTrax at dupage.ballottrax.net, willcountyvotes.ballottrax.net and votekane.ballottrax.net. Anywhere else, check your county clerk's website.",
+   "es": "Illinois no tiene una herramienta estatal; la oficina electoral de tu localidad tiene la suya. Chicago: Voter Information Lookup en chicagoelections.gov. Los suburbios del condado de Cook: \"What Is My Mail Ballot Status\" en cookcountyclerkil.gov. Los condados de DuPage, Will y Kane: BallotTrax en dupage.ballottrax.net, willcountyvotes.ballottrax.net y votekane.ballottrax.net. En otros lugares, revisa el sitio web del secretario de tu condado (county clerk).",
+   "src": "https://chicagoelections.gov/voting/your-voter-information",
+   "checked": "2026-10-30",
+   "quote": "Voter Information Lookup ... Check the status of your Vote By Mail request & counted status",
+   "status": "verified",
+   "notes": "Each read Oct 30. Chicago Board (Chrome; curl 403): quote above. Suburban Cook, cookcountyclerkil.gov/elections/your-voter-information (curl): menu item 'What Is My Mail Ballot Status'. DuPage County Clerk Vote by Mail page (curl) links 'Sign Up for Ballot Tracking' to https://dupage.ballottrax.net/voter/. Will: willcountyvotes.ballottrax.net/voter/ (Chrome) is headed 'Will County Clerk / Track Your Vote' (willcountyclerk.gov blocked curl; Perplexity quotes its 'You can track your Applications and Ballots online'). Kane: votekane.ballottrax.net/voter/ (Chrome) shows the Kane County seal and 'Track the status of your mail-in ballot, from printed to accepted' (the Clerk's own page didn't load by curl; Perplexity quotes a Clerk newsletter with the URL). Lake left out: the Voter Power page (lakecountyil.gov/351) shows a registration lookup and Vote by Mail request, no status wording we could read, and lakevoterpower.info didn't load in Chrome. No statewide tracker on elections.il.gov (pass 2)."
   },
   "unsigned": {
    "en": "Your election authority will mail you a notice within two days of rejecting it, with steps to fix it. You have until Tuesday, November 17, 2026. Watch your mail after you send your ballot back.",

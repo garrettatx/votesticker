@@ -480,13 +480,13 @@ return array(
 			'checked' => '2026-10-30',
 		),
 		'faq.late_mail' => array(
-			'en' => 'It may be. Your county clerk must receive a mailed ballot by 7:30 p.m. on Tuesday, November 3, and a postmark doesn\'t count. Delivering it yourself or by a designated bearer? That deadline is close of business on Friday, October 30.',
-			'es' => 'Puede que sí. El secretario de tu condado (county clerk) debe recibir la boleta por correo a más tardar a las 7:30 p. m. del martes 3 de noviembre, y el matasellos no cuenta. ¿La vas a entregar tú o un portador designado (designated bearer)? La fecha límite es el cierre de la oficina el viernes 30 de octubre.',
+			'en' => 'It may be. Your county clerk must receive a mailed ballot by 7:30 p.m. on Tuesday, November 3, and a postmark doesn\'t count. Delivering it yourself or by a designated bearer? That deadline is close of business on Friday, October 30. If you\'re a patient in a hospital or nursing home, an authorized agent can deliver it by 7:30 p.m. on Election Day. Not sure? Check with your county clerk.',
+			'es' => 'Puede que sí. El secretario de tu condado (county clerk) debe recibir la boleta por correo a más tardar a las 7:30 p. m. del martes 3 de noviembre, y el matasellos no cuenta. ¿La vas a entregar tú o un portador designado (designated bearer)? La fecha límite es el cierre de la oficina el viernes 30 de octubre. Si estás internado en un hospital o en un centro de cuidado (nursing home), un agente autorizado (authorized agent) puede entregarla hasta las 7:30 p. m. del Día de las Elecciones. ¿Tienes dudas? Pregúntale al secretario de tu condado.',
 			'src' => 'https://www.sos.arkansas.gov/elections/voter-information/absentee-voting',
 			'checked' => '2026-10-30',
 			'until' => '2026-10-30',
-			'en_after' => 'It may be. Your county clerk must receive a mailed ballot by 7:30 p.m. on Tuesday, November 3, and a postmark doesn\'t count. Delivery in person or by a designated bearer closed at close of business on Friday, October 30.',
-			'es_after' => 'Puede que sí. El secretario de tu condado (county clerk) debe recibir la boleta por correo a más tardar a las 7:30 p. m. del martes 3 de noviembre, y el matasellos no cuenta. La entrega en persona o por un portador designado (designated bearer) cerró al cierre de la oficina el viernes 30 de octubre.',
+			'en_after' => 'It may be. Your county clerk must receive a mailed ballot by 7:30 p.m. on Tuesday, November 3, and a postmark doesn\'t count. Delivery in person or by a designated bearer closed at close of business on Friday, October 30. If you\'re a patient in a hospital or nursing home, an authorized agent can deliver it by 7:30 p.m. on Election Day. Not sure? Check with your county clerk.',
+			'es_after' => 'Puede que sí. El secretario de tu condado (county clerk) debe recibir la boleta por correo a más tardar a las 7:30 p. m. del martes 3 de noviembre, y el matasellos no cuenta. La entrega en persona o por un portador designado (designated bearer) cerró al cierre de la oficina el viernes 30 de octubre. Si estás internado en un hospital o en un centro de cuidado (nursing home), un agente autorizado (authorized agent) puede entregarla hasta las 7:30 p. m. del Día de las Elecciones. ¿Tienes dudas? Pregúntale al secretario de tu condado.',
 		),
 	),
 	'AZ' => array(
@@ -2305,10 +2305,10 @@ return array(
 			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
-			'en' => 'You\'re offered a provisional ballot if you were already sent an absentee ballot, don\'t show ID when it\'s required, or are challenged by another voter. You get a notice that day saying why and whether you need to bring more documents.',
-			'es' => 'Te ofrecen una boleta provisional si ya te habían mandado una boleta de voto en ausencia, si no muestras identificación cuando se requiere o si otro votante te impugna. Ese mismo día recibes un aviso que dice por qué y si necesitas llevar más documentos.',
-			'src' => 'https://sos.iowa.gov/voters/voter-id-faq',
-			'checked' => '2026-10-21',
+			'en' => 'If your name isn\'t on the list of registered voters, or someone challenges your right to vote, you can vote a provisional ballot. You get a notice that day saying what to bring and by when, which is noon on Monday, November 9. Bring it to the poll workers or your county auditor. If your ballot isn\'t counted, you get a letter saying why.',
+			'es' => 'Si tu nombre no está en la lista de votantes registrados, o si alguien impugna tu derecho a votar, puedes votar con una boleta provisional. Ese día recibes un aviso que dice qué llevar y para cuándo, que es al mediodía del lunes 9 de noviembre. Llévalo a los trabajadores electorales o al auditor de tu condado. Si tu boleta no se cuenta, recibes una carta que explica por qué.',
+			'src' => 'https://sos.iowa.gov/voters/election-day-faq',
+			'checked' => '2026-10-30',
 		),
 		'faq.line' => array(
 			'en' => 'You can still vote. Every voter who is at their precinct\'s polling place when it closes gets to vote.',
@@ -2509,6 +2509,10 @@ return array(
 				'en' => 'the Lake County Clerk',
 				'es' => 'la secretaría del condado de Lake (Lake County Clerk)',
 			),
+			'chicagoelections.gov' => array(
+				'en' => 'the Chicago Board of Election Commissioners',
+				'es' => 'la Junta de Comisionados Electorales de Chicago (Chicago Board of Election Commissioners)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Regular registration closed October 6, and online registration closed October 18. You can still register and vote at the same visit, in person at a grace period site, through Election Day.',
@@ -2643,6 +2647,12 @@ return array(
 			'src' => 'https://www.elections.il.gov/agencyforms/1%20PRECINCT%20ELECTION%20PUBLICATIONS/2025%20Precinct%20Election%20Manual.pdf',
 			'checked' => '2026-10-26',
 		),
+		'faq.track' => array(
+			'en' => 'Illinois has no statewide tracker; your local election authority runs one. Chicago: the Voter Information Lookup at chicagoelections.gov. Suburban Cook County: "What Is My Mail Ballot Status" at cookcountyclerkil.gov. DuPage, Will and Kane counties: BallotTrax at dupage.ballottrax.net, willcountyvotes.ballottrax.net and votekane.ballottrax.net. Anywhere else, check your county clerk\'s website.',
+			'es' => 'Illinois no tiene una herramienta estatal; la oficina electoral de tu localidad tiene la suya. Chicago: Voter Information Lookup en chicagoelections.gov. Los suburbios del condado de Cook: "What Is My Mail Ballot Status" en cookcountyclerkil.gov. Los condados de DuPage, Will y Kane: BallotTrax en dupage.ballottrax.net, willcountyvotes.ballottrax.net y votekane.ballottrax.net. En otros lugares, revisa el sitio web del secretario de tu condado (county clerk).',
+			'src' => 'https://chicagoelections.gov/voting/your-voter-information',
+			'checked' => '2026-10-30',
+		),
 		'faq.unsigned' => array(
 			'en' => 'Your election authority will mail you a notice within two days of rejecting it, with steps to fix it. You have until Tuesday, November 17, 2026. Watch your mail after you send your ballot back.',
 			'es' => 'Tu autoridad electoral te enviará por correo un aviso dentro de los dos días siguientes al rechazo, con los pasos para corregirla. Tienes hasta el martes 17 de noviembre de 2026. Revisa tu correo después de mandar tu boleta.',
@@ -2759,6 +2769,7 @@ return array(
 			'src' => 'https://www.in.gov/sos/elections/voter-information/ways-to-vote/absentee-voting/',
 			'checked' => '2026-10-21',
 		),
+		'mail.track_url' => 'https://indianavoters.in.gov/',
 		'mail.cure' => array(
 			'en' => 'Forgot to sign your envelope, made a mistake or got the wrong ballot? Before Election Day, file an ABS-5 form with your county election officials to fix it.',
 			'es' => '¿Se te olvidó firmar el sobre, te equivocaste o te llegó la boleta equivocada? Antes del Día de las Elecciones, presenta un formulario ABS-5 ante los funcionarios electorales de tu condado para corregirlo.',
@@ -2819,6 +2830,12 @@ return array(
 			'src' => 'https://www.in.gov/dA/a8ee46432d/2026-Election-Day-Handbook.pdf',
 			'checked' => '2026-10-28',
 		),
+		'faq.track' => array(
+			'en' => 'Use the Indiana Voter Portal at indianavoters.in.gov. Pick "Get Absentee Ballot Information" and enter your county, name and date of birth. It shows whether your county processed your application, the date your ballot was mailed, and whether it was received.',
+			'es' => 'Usa el portal de votantes de Indiana (Indiana Voter Portal) en indianavoters.in.gov. Elige "Get Absentee Ballot Information" y escribe tu condado, tu nombre y tu fecha de nacimiento. Te muestra si tu condado procesó tu solicitud, la fecha en que te enviaron la boleta y si ya la recibieron.',
+			'src' => 'https://www.in.gov/dA/0860f5ebaf/2026-Election-Administrators-Manual-Revised-Apr-2026.pdf',
+			'checked' => '2026-10-30',
+		),
 	),
 	'KS' => array(
 		'election' => '2026-11-03',
@@ -2838,6 +2855,10 @@ return array(
 			'www.sedgwick.gov' => array(
 				'en' => 'the Sedgwick County Election Office',
 				'es' => 'la oficina electoral del condado de Sedgwick (Election Office)',
+			),
+			'www.jocoelection.org' => array(
+				'en' => 'the Johnson County Election Office',
+				'es' => 'la Oficina Electoral del Condado de Johnson (Johnson County Election Office)',
 			),
 		),
 		'dates.reg_deadline' => array(
@@ -2960,6 +2981,20 @@ return array(
 			'src' => 'https://www.sedgwick.gov/communications/news-releases/sedgwick-county-election-office-announces-winners-of-2026-voting-sticker-contests/',
 			'checked' => '2026-10-28',
 		),
+		'sticker.more' => array( array(
+			'place' => array(
+				'en' => 'Johnson County',
+				'es' => 'Condado de Johnson',
+			),
+			'kind' => 'county',
+			'en' => 'The Election Office ran a 2026 I Voted sticker design contest for residents 5 and up. Its rules say four winning designs, one per age group, go out at random at advance voting sites, in advance mail ballot envelopes and at every polling site on Election Day.',
+			'es' => 'La oficina electoral organizó un concurso de diseño del sticker I Voted 2026 para residentes de 5 años en adelante. Sus reglas dicen que cuatro diseños ganadores, uno por grupo de edad, se reparten al azar en los lugares de votación anticipada, en los sobres de las boletas por correo y en todos los lugares de votación el Día de las Elecciones.',
+			'src' => 'https://www.jocoelection.org/voting-election-info/i-voted-sticker-design-contest-2026',
+			'checked' => '2026-10-30',
+			'until' => '2026-11-03',
+			'en_after' => 'The Election Office ran a 2026 I Voted sticker design contest for residents 5 and up. Its rules said four winning designs, one per age group, would go out at advance voting sites, in advance mail ballot envelopes and at every polling site on Election Day.',
+			'es_after' => 'La oficina electoral organizó un concurso de diseño del sticker I Voted 2026 para residentes de 5 años en adelante. Sus reglas decían que cuatro diseños ganadores, uno por grupo de edad, se repartirían en los lugares de votación anticipada, en los sobres de las boletas por correo y en todos los lugares de votación el Día de las Elecciones.',
+		) ),
 		'election_day.hours' => array(
 			'en' => 'Polling places are open 7 a.m. to 7 p.m. Central Time unless your county sets other hours. A county can open as early as 6 a.m. and close as late as 8 p.m. In the western Kansas counties on Mountain Time, the polls are open 6 a.m. to 6 p.m. Mountain Time unless the county sets other hours.',
 			'es' => 'Los lugares de votación abren de 7 a. m. a 7 p. m., hora del Centro, salvo que tu condado fije otro horario. Un condado puede abrir desde las 6 a. m. y cerrar hasta las 8 p. m. En los condados del oeste de Kansas que usan la hora de la Montaña, abren de 6 a. m. a 6 p. m., hora de la Montaña, salvo que el condado fije otro horario.',
@@ -4157,6 +4192,12 @@ return array(
 			'checked' => '2026-10-25',
 			'varies' => true,
 		),
+		'faq.provisional' => array(
+			'en' => 'Minnesota has Election Day registration instead. If your name isn\'t on the roster, you can register at your polling place on Election Day and vote. Bring one proof of where you live, such as a Minnesota driver\'s license or ID with your current address. No document? A registered voter from your precinct can go with you and sign an oath confirming your address.',
+			'es' => 'Minnesota tiene registro el Día de las Elecciones. Si tu nombre no está en la lista, puedes registrarte en tu lugar de votación el Día de las Elecciones y votar. Lleva un comprobante de dónde vives, como una licencia de conducir o identificación de Minnesota con tu dirección actual. ¿No tienes un documento? Un votante registrado de tu precinto puede ir contigo y firmar un juramento que confirme tu dirección.',
+			'src' => 'https://www.sos.mn.gov/elections-voting/register-to-vote/register-on-election-day',
+			'checked' => '2026-10-30',
+		),
 		'faq.line' => array(
 			'en' => 'You can still vote. If you\'re in line by 8 p.m., you get to vote, even if you reach the front after 8.',
 			'es' => 'Todavía puedes votar. Si estás en la fila a las 8 p. m., puedes votar, aunque llegues al frente después de las 8.',
@@ -4487,6 +4528,12 @@ return array(
 			'es' => 'Los lugares de votación abren de 7 a. m. a 7 p. m., hora local.',
 			'src' => 'https://www.sos.ms.gov/node/1859',
 			'checked' => '2026-10-25',
+		),
+		'faq.provisional' => array(
+			'en' => 'Mississippi calls it an affidavit ballot. You can vote one if your name isn\'t in the poll book or you don\'t have an acceptable photo ID. When you vote, you get written information on how to find out whether your ballot counted and, if not, why.',
+			'es' => 'En Mississippi se llama boleta con declaración jurada (affidavit ballot). Puedes votar con una si tu nombre no está en el registro de votantes del lugar de votación o si no tienes una identificación con foto aceptada. Al votar, recibes información por escrito sobre cómo saber si tu boleta se contó y, si no, por qué.',
+			'src' => 'https://www.sos.ms.gov/sites/default/files/elections/2026%20Mississippi%20Voter%20Information%20Guide.pdf',
+			'checked' => '2026-10-30',
 		),
 		'faq.line' => array(
 			'en' => 'You can still vote. If you\'re in line at 7 p.m., you have the right to cast your ballot.',
@@ -5207,10 +5254,10 @@ return array(
 			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
-			'en' => 'If you moved within your county or changed your name, you may be asked to vote a provisional ballot. Seven business days after the election, check whether it counted on Votercheck or by calling 1-888-727-0007.',
-			'es' => 'Si te mudaste dentro de tu condado o te cambiaste el nombre, te pueden pedir que votes con una boleta provisional. Siete días hábiles después de la elección, revisa si se contó en Votercheck o llamando gratis al 1-888-727-0007.',
+			'en' => 'If your name isn\'t on the list of registered voters, you have the right to vote a provisional ballot. You may also be asked to vote one if you moved within your county or changed your name. Seven business days after the election, check whether it counted on Votercheck or by calling 1-888-727-0007.',
+			'es' => 'Si tu nombre no está en la lista de votantes registrados, tienes derecho a votar con una boleta provisional. También te pueden pedir que votes con una si te mudaste dentro de tu condado o te cambiaste el nombre. Siete días hábiles después de la elección, revisa si se contó en Votercheck o llamando gratis al 1-888-727-0007.',
 			'src' => 'https://sos.nebraska.gov/elections/election-day-faq',
-			'checked' => '2026-10-21',
+			'checked' => '2026-10-30',
 		),
 		'faq.line' => array(
 			'en' => 'You can still vote. Anyone at the polling place or in line when polls close gets to vote. Anyone who arrives after closing can\'t.',
@@ -5367,6 +5414,12 @@ return array(
 			'checked' => '2026-10-25',
 			'varies' => true,
 		),
+		'faq.provisional' => array(
+			'en' => 'New Hampshire has Election Day registration instead. If your name isn\'t on the checklist, you can register at your polling place on Election Day. Bring proof of your identity, age, U.S. citizenship and where you live.',
+			'es' => 'New Hampshire tiene registro el Día de las Elecciones. Si tu nombre no está en la lista de votantes (checklist), puedes registrarte en tu lugar de votación el Día de las Elecciones. Lleva comprobantes de tu identidad, tu edad, tu ciudadanía estadounidense y dónde vives.',
+			'src' => 'https://www.sos.nh.gov/elections/register-vote',
+			'checked' => '2026-10-30',
+		),
 		'faq.line' => array(
 			'en' => 'You can still vote. Everyone in line when the polls close, including the line to register, gets to register if needed and vote.',
 			'es' => 'Igual puedes votar. Toda persona que esté en la fila cuando cierran las casillas, incluida la fila para registrarse, puede registrarse si hace falta y votar.',
@@ -5515,10 +5568,10 @@ return array(
 			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
-			'en' => 'It\'s a paper ballot you vote when, for example, you moved within your county without updating your address, your poll book entry is incomplete, or you\'re a "Need ID" voter without ID. It\'s counted after your county verifies it, and you can check its status online after the election.',
-			'es' => 'Es una boleta de papel que votas cuando, por ejemplo, te mudaste dentro de tu condado sin actualizar tu dirección, tus datos en el registro están incompletos o eres un votante "Need ID" sin identificación. Se cuenta después de que tu condado la verifica, y puedes revisar su estado en línea después de la elección.',
-			'src' => 'https://www.nj.gov/state/elections/assets/pdf/posters-bill-of-rights/2026-11-bill-of-rights-poster-english.pdf',
-			'checked' => '2026-10-21',
+			'en' => 'It\'s a paper ballot you vote when, for example, you moved within your county without updating your address, your poll book entry is incomplete, or you\'re a "Need ID" voter without ID. It\'s counted after your county verifies it. After the election, call 1-877-NJVOTER (1-877-658-6837) to find out whether it counted or why it didn\'t.',
+			'es' => 'Es una boleta de papel que votas cuando, por ejemplo, te mudaste dentro de tu condado sin actualizar tu dirección, tus datos en el registro están incompletos o eres un votante "Need ID" sin identificación. Se cuenta después de que tu condado la verifica. Después de la elección, llama al 1-877-NJVOTER (1-877-658-6837) para saber si se contó o por qué no.',
+			'src' => 'https://www.nj.gov/state/elections/vote-provisional-ballot.shtml',
+			'checked' => '2026-10-30',
 		),
 		'faq.line' => array(
 			'en' => 'You still get to vote. If you\'re in line when polls close at 8 p.m., you must be allowed to vote.',
@@ -5839,10 +5892,10 @@ return array(
 			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
-			'en' => 'It\'s a ballot you vote when something can\'t be confirmed at the polls. Your county clerk counts it after checking that you\'re registered and eligible. If it was for missing ID, give the ID to the clerk by 5 p.m. on Friday, November 6.',
-			'es' => 'Es una boleta con la que votas cuando algo no se puede confirmar en el lugar de votación. El secretario de tu condado la cuenta después de revisar que estás registrado y que puedes votar. Si fue por falta de identificación, entrega la identificación al secretario a más tardar a las 5 p. m. del viernes 6 de noviembre.',
+			'en' => 'Name not on the list? You can register in person at any polling place in your county until the polls close and vote. If you say you\'re already registered, you can vote a provisional ballot instead. Your county clerk counts it after checking that you\'re registered and eligible. If it was for missing ID, give the ID to the clerk by 5 p.m. on Friday, November 6.',
+			'es' => '¿Tu nombre no está en la lista? Puedes registrarte en persona en cualquier lugar de votación de tu condado hasta que cierren y votar. Si dices que ya estás registrado, puedes votar con una boleta provisional. El secretario de tu condado la cuenta después de revisar que estás registrado y que puedes votar. Si fue por falta de identificación, entrega la identificación al secretario a más tardar a las 5 p. m. del viernes 6 de noviembre.',
 			'src' => 'https://www.leg.state.nv.us/nrs/nrs-293.html',
-			'checked' => '2026-10-28',
+			'checked' => '2026-10-30',
 		),
 		'faq.line' => array(
 			'en' => 'Stay in line. If you\'re waiting in line when polls close, you have the right to vote.',
@@ -6941,10 +6994,10 @@ return array(
 			'checked' => '2026-10-24',
 		),
 		'sticker.mail' => array(
-			'en' => 'Look in your mail ballot packet. The Department of State lists an "I Voted by Mail" sticker among the items it includes.',
-			'es' => 'Revisa tu paquete de boleta por correo. El Departamento de Estado incluye un sticker de “I Voted by Mail” entre los artículos del paquete.',
-			'src' => 'https://vote.sos.ri.gov/Voter/VoteByMail',
-			'checked' => '2026-10-24',
+			'en' => 'Yes. Rhode Island puts an "I Voted by Mail" sticker in every mail ballot packet, along with your ballot, the certificate envelope, the instructions and a postage-paid return envelope.',
+			'es' => 'Sí. Rhode Island incluye un sticker de "I Voted by Mail" en cada paquete de boleta por correo, junto con tu boleta, el sobre del certificado, las instrucciones y un sobre de devolución con franqueo pagado.',
+			'src' => 'https://vote.sos.ri.gov/Voter/VotebyMail',
+			'checked' => '2026-10-30',
 		),
 		'election_day.hours' => array(
 			'en' => 'Polling places are open 7 a.m. to 8 p.m.; New Shoreham opens at 9 a.m.',
@@ -7153,10 +7206,10 @@ return array(
 			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
-			'en' => 'You vote one if you forgot your photo ID, or if you can\'t get one and sign a reasonable impediment affidavit. If you forgot it, show your ID at the county office before certification. County boards decide which provisional ballots count on the Friday after the election.',
-			'es' => 'Votas con una si se te olvidó tu identificación con foto, o si no puedes conseguir una y firmas una declaración de impedimento razonable. Si se te olvidó, muestra tu identificación en la oficina del condado antes de la certificación. Las juntas de los condados deciden qué boletas provisionales se cuentan el viernes después de la elección.',
-			'src' => 'https://scvotes.gov/voters/voter-faq/',
-			'checked' => '2026-10-21',
+			'en' => 'You vote a provisional ballot if your name isn\'t on the poll list or you don\'t have the right ID. When you vote, you get written information on how to find out whether it counted. Forgot your photo ID? Show it at the county office before the election is certified, which the State Election Commission says is often the Thursday or Friday after. Can\'t get one? Show your voter registration card and sign a reasonable impediment affidavit.',
+			'es' => 'Votas con una boleta provisional si tu nombre no está en la lista de votantes o no tienes la identificación correcta. Al votar, recibes información por escrito sobre cómo saber si se contó. ¿Se te olvidó tu identificación con foto? Muéstrala en la oficina del condado antes de que se certifique la elección, lo que según la Comisión Electoral Estatal suele ser el jueves o viernes después. ¿No puedes conseguir una? Muestra tu tarjeta de registro de votante y firma una declaración de impedimento razonable.',
+			'src' => 'https://scvotes.gov/wp-content/uploads/2025/02/SEC-BSL-2090-202308-SC-Voter-Info-Poster.pdf',
+			'checked' => '2026-10-30',
 		),
 		'faq.line' => array(
 			'en' => 'You can still vote. Anyone in line at 7 p.m. on Election Day will be allowed to vote.',
@@ -7187,6 +7240,10 @@ return array(
 			'sdlegislature.gov' => array(
 				'en' => 'South Dakota law',
 				'es' => 'la ley de South Dakota',
+			),
+			'vip.sdsos.gov' => array(
+				'en' => 'the South Dakota Secretary of State',
+				'es' => 'la Secretaría de Estado de South Dakota',
 			),
 		),
 		'dates.reg_deadline' => array(
@@ -7303,6 +7360,12 @@ return array(
 			'src' => 'https://sdlegislature.gov/Statutes/12-20-5.1',
 			'checked' => '2026-10-21',
 		),
+		'faq.track' => array(
+			'en' => 'Look yourself up on the Voter Information Portal at vip.sdsos.gov. It shows the date your county received your absentee ballot application, the date it sent your ballot, and the date it received your voted ballot.',
+			'es' => 'Búscate en el portal de información para votantes (Voter Information Portal) en vip.sdsos.gov. Te muestra la fecha en que tu condado recibió tu solicitud de boleta de voto en ausencia, la fecha en que te envió la boleta y la fecha en que recibió tu boleta votada.',
+			'src' => 'https://vip.sdsos.gov/VIPLogin.aspx',
+			'checked' => '2026-10-30',
+		),
 		'faq.late_mail' => array(
 			'en' => 'Running late? Hand it to your county election official on Election Day early enough for it to reach your precinct before 7 p.m. local time. Ballots delivered after the polls close aren\'t counted.',
 			'es' => '¿Se te hizo tarde? Entrégala al funcionario electoral de tu condado el Día de las Elecciones con tiempo para que llegue a tu precinto antes de las 7 p. m. hora local. Las boletas que llegan después del cierre no se cuentan.',
@@ -7320,6 +7383,10 @@ return array(
 			'www.tn.gov' => array(
 				'en' => 'the Tennessee Attorney General',
 				'es' => 'la Fiscalía General (Attorney General) de Tennessee',
+			),
+			'www.capitol.tn.gov' => array(
+				'en' => 'the Tennessee General Assembly',
+				'es' => 'la Asamblea General de Tennessee (Tennessee General Assembly)',
 			),
 		),
 		'dates.reg_deadline' => array(
@@ -7448,10 +7515,10 @@ return array(
 			'varies' => true,
 		),
 		'faq.provisional' => array(
-			'en' => 'If you don\'t bring a photo ID, you vote a provisional ballot. To have it reviewed, bring a valid photo ID to your county election commission office by Thursday, November 5, two business days after Election Day, and sign an affidavit there.',
-			'es' => 'Si no llevas una identificación con foto, votas con una boleta provisional. Para que la revisen, lleva una identificación con foto válida a la oficina de la comisión electoral de tu condado a más tardar el jueves 5 de noviembre, dos días hábiles después del Día de las Elecciones, y firma ahí una declaración jurada.',
-			'src' => 'https://sos.tn.gov/node/149',
-			'checked' => '2026-10-28',
+			'en' => 'If you say you\'re registered in your county but your name isn\'t on the list, you can vote a provisional ballot. You fill out a voter registration form, show proof of your address and sign an affidavit. It counts if the county finds you should have been registered in that precinct. Tennessee doesn\'t have Election Day registration. No photo ID? You also vote a provisional ballot, and you have until Thursday, November 5, to show a valid photo ID at your county election commission office.',
+			'es' => 'Si dices que estás registrado en tu condado pero tu nombre no está en la lista, puedes votar con una boleta provisional. Llenas un formulario de registro de votante, muestras un comprobante de tu dirección y firmas una declaración jurada. Se cuenta si el condado determina que debías estar registrado en ese precinto. Tennessee no tiene registro el Día de las Elecciones. ¿No tienes identificación con foto? También votas con una boleta provisional, y tienes hasta el jueves 5 de noviembre para mostrar una identificación con foto válida en la oficina de la comisión electoral de tu condado.',
+			'src' => 'https://www.capitol.tn.gov/Archives/Joint/publications/TNCodeBills/2025/TNCodeBill_Volume1_2025.pdf',
+			'checked' => '2026-10-30',
 		),
 		'faq.line' => array(
 			'en' => 'You can still vote. If you\'re in line when polls close, at 8 p.m. Eastern or 7 p.m. Central depending on your county, you\'ll be allowed to vote.',

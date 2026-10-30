@@ -208,12 +208,13 @@
  },
  "faq": {
   "provisional": {
-   "en": "If you moved within your county or changed your name, you may be asked to vote a provisional ballot. Seven business days after the election, check whether it counted on Votercheck or by calling 1-888-727-0007.",
-   "es": "Si te mudaste dentro de tu condado o te cambiaste el nombre, te pueden pedir que votes con una boleta provisional. Siete días hábiles después de la elección, revisa si se contó en Votercheck o llamando gratis al 1-888-727-0007.",
+   "en": "If your name isn't on the list of registered voters, you have the right to vote a provisional ballot. You may also be asked to vote one if you moved within your county or changed your name. Seven business days after the election, check whether it counted on Votercheck or by calling 1-888-727-0007.",
+   "es": "Si tu nombre no está en la lista de votantes registrados, tienes derecho a votar con una boleta provisional. También te pueden pedir que votes con una si te mudaste dentro de tu condado o te cambiaste el nombre. Siete días hábiles después de la elección, revisa si se contó en Votercheck o llamando gratis al 1-888-727-0007.",
    "src": "https://sos.nebraska.gov/elections/election-day-faq",
-   "checked": "2026-10-21",
+   "checked": "2026-10-30",
    "quote": "They can check seven business days after the election by visiting Votercheck or calling toll free 1-888-727-0007.",
-   "status": "verified"
+   "status": "verified",
+   "notes": "Name-not-on-the-list line: sos.nebraska.gov/accessible-voting, read by curl Oct 30: 'The right to cast a provisional ballot if your name does not appear on the list of registered voters.'"
   },
   "line": {
    "en": "You can still vote. Anyone at the polling place or in line when polls close gets to vote. Anyone who arrives after closing can't.",

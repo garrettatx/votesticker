@@ -201,12 +201,13 @@
  },
  "faq": {
   "provisional": {
-   "en": "It's a paper ballot you vote when, for example, you moved within your county without updating your address, your poll book entry is incomplete, or you're a \"Need ID\" voter without ID. It's counted after your county verifies it, and you can check its status online after the election.",
-   "es": "Es una boleta de papel que votas cuando, por ejemplo, te mudaste dentro de tu condado sin actualizar tu dirección, tus datos en el registro están incompletos o eres un votante \"Need ID\" sin identificación. Se cuenta después de que tu condado la verifica, y puedes revisar su estado en línea después de la elección.",
-   "src": "https://www.nj.gov/state/elections/assets/pdf/posters-bill-of-rights/2026-11-bill-of-rights-poster-english.pdf",
-   "checked": "2026-10-21",
-   "quote": "All provisional ballots are taken to the County Commissioner of Registration’s office after the close of the polls for verification and counting by the County Board of Election.",
-   "status": "verified"
+   "en": "It's a paper ballot you vote when, for example, you moved within your county without updating your address, your poll book entry is incomplete, or you're a \"Need ID\" voter without ID. It's counted after your county verifies it. After the election, call 1-877-NJVOTER (1-877-658-6837) to find out whether it counted or why it didn't.",
+   "es": "Es una boleta de papel que votas cuando, por ejemplo, te mudaste dentro de tu condado sin actualizar tu dirección, tus datos en el registro están incompletos o eres un votante \"Need ID\" sin identificación. Se cuenta después de que tu condado la verifica. Después de la elección, llama al 1-877-NJVOTER (1-877-658-6837) para saber si se contó o por qué no.",
+   "src": "https://www.nj.gov/state/elections/vote-provisional-ballot.shtml",
+   "checked": "2026-10-30",
+   "quote": "You MUST Vote by Provisional Ballot if: You are a registered voter in the County who moved within the County and did not notify the County Commissioner of Registration before election day of your current address; or Your registration information is not complete in the poll book ... All voters can call 1-877-NJVOTER (1-877-658-6837) after the election to find out whether their Vote by Mail or Provisional ballot was counted or the reason it was rejected.",
+   "status": "verified",
+   "notes": "Read by curl Oct 30."
   },
   "line": {
    "en": "You still get to vote. If you're in line when polls close at 8 p.m., you must be allowed to vote.",

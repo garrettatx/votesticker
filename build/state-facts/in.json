@@ -201,7 +201,8 @@
    "checked": "2026-10-28",
    "quote": "Finally, pursuant to state law, only the voter, the voter’s attorney-in-fact, a bonded courier, or a member of the voter’s immediate household, or a member of the voter’s family may hand-deliver a completed absentee ballot to the county election board, including delivery to any early voting location.",
    "status": "verified"
-  }
+  },
+  "track_url": "https://indianavoters.in.gov/"
  },
  "polls_rules": {
   "gear": {
@@ -256,6 +257,15 @@
    "checked": "2026-10-28",
    "quote": "These voters must be permitted to vote a regular ballot, if otherwise qualified.",
    "status": "verified"
+  },
+  "track": {
+   "en": "Use the Indiana Voter Portal at indianavoters.in.gov. Pick \"Get Absentee Ballot Information\" and enter your county, name and date of birth. It shows whether your county processed your application, the date your ballot was mailed, and whether it was received.",
+   "es": "Usa el portal de votantes de Indiana (Indiana Voter Portal) en indianavoters.in.gov. Elige \"Get Absentee Ballot Information\" y escribe tu condado, tu nombre y tu fecha de nacimiento. Te muestra si tu condado procesó tu solicitud, la fecha en que te enviaron la boleta y si ya la recibieron.",
+   "src": "https://www.in.gov/dA/0860f5ebaf/2026-Election-Administrators-Manual-Revised-Apr-2026.pdf",
+   "checked": "2026-10-30",
+   "quote": "An online absentee ballot status tool is available to all Indiana voters on www.indianavoters.gov. Voters may click the \"Get Absentee Ballot Information\" icon on the main landing page, which will prompt the individual to enter their county, first and last name, and date of birth as captured on their voter registration record. If a match is found, the voter can determine if the county has received and processed the voter's absentee ballot application, view the date the absentee ballot was mailed, and whether the ballot was received.",
+   "status": "verified",
+   "notes": "2026 Election Administrators Manual (Indiana Election Division), read by curl and pdftotext Oct 30. indianavoters.in.gov home page (curl) shows the 'GET ABSENTEE BALLOT INFORMATION' option. Pass 2 had logged Indiana as having no statewide tracker; that was wrong."
   }
  },
  "notes": "Read October 21, 2026 on in.gov by curl (Absentee Voting, Photo ID Law, Register to Vote, Provisional Ballots, Vote Centers) and three state PDFs: the 2026 Indiana Voter Information Guide, the 2026 Election Calendar brochure, and the 2026 Election Day Handbook (revised January 2026). PDF links drop the '?language_id=1' suffix; both forms load. EARLY VOTING DATES FOR states.js (Indiana is unchecked): Tuesday, October 6 to noon Monday, November 2, 2026. Sources: brochure https://www.in.gov/dA/a5aa6862f1/2026-Calendar-Brochure.FINAL-VERSION.pdf, 'Tuesday, October 6, 2026 First day that a voter may early vote in the office of the circuit court clerk or satellite office.' and 'Monday, November 2, 2026 ... DEADLINE, by noon, for a voter to vote an absentee ballot in the office of the circuit court clerk or satellite office.' Voter guide: 'October 6, 2026: First day to vote absentee in-person for the 2026 General Election'. Absentee page: 'State law requires counties to make in-person absentee voting available for 28-days before the election, ending at noon (local prevailing time), the day before the election.' Days and hours vary by county (indianavoters.in.gov); required Saturdays October 24 and 31. The brochure says it 'reflects Indiana law as of July 2025'. Mail application deadline: the absentee page says 11:59 p.m. 12 days before the election; the voter guide and brochure give October 22, 2026. Gear: 'Electioneering' in the handbook includes wearing clothing or a button naming a party or candidate or any currently elected official, within the polls or the 50-foot chute. Phone: phones allowed; ballot photos not addressed (docs/faq-sources.json notes the 2015 ballot-selfie ban was blocked in federal court). No track_url: the absentee page names no tracker (the provisional page says provisional status shows on the indianavoters.com portal). No local_offices_url found as a separate state page. Vote centers: the SOS Vote Centers page lists adopting counties by year but has no prose explaining where vote-center voters may vote, so where.rule doesn't describe it. UPDATE Oct 28, 2026: checked the calendar brochure (traveling board noon Nov 2, Saturday Oct 31 hours) and the Election Day Handbook (military extended registration, free BMV ID, care-facility exemption). Ballot photos: FJC case study of the 2017 permanent injunction. Sticker winners: named only in news (Lake Station, Zionsville, etc.); no official winners page found, and K-12 students are not named.",

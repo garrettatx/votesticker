@@ -43,7 +43,13 @@ ALLOW_HOSTS = {'goelect.txelections.civixapps.com',
                'champaigncountyclerk.com',
                'hawaii.ballottrax.net', 'northcarolina.ballottrax.net',
                'jcncelections.org',            # Jackson County NC Board of Elections, linked from jacksonnc.org
-               'www.fostercity.org'}           # the City of Foster City's own site (its city clerk runs the sticker contest)
+               'www.fostercity.org',           # the City of Foster City's own site (its city clerk runs the sticker contest)
+               # County governments on .com and .org, each checked Oct 30 by its own home page title ("The Official
+               # Website of Camden County, NJ", "Washington County, MD", "Johnson County Election Office", "Montgomery
+               # County, KS | Official Website"); Perplexity pass 3 confirmed the same.
+               'www.camdencounty.com', 'camdencounty.com', 'www.washco-md.net', 'washco-md.net',
+               'www.jocoelection.org', 'jocoelection.org', 'www.jocogov.org', 'jocogov.org',
+               'www.mgcountyks.org', 'mgcountyks.org'}
 # An election office's own social account, for an announcement it posted only there (October 30: LA County's
 # Halloween sticker). The account, not the platform, is the source.
 ALLOW_ACCOUNTS = ('https://x.com/LACountyRRCC/',)  # BallotTrax tracker run for the state election office, linked from its own page     # the Champaign County Clerk, who runs elections there  # New Mexico's official statutes (NMSA), published by the NM Compilation Commission  # DC Board of Elections, the District's election office  # Texas My Voter Portal, linked from votetexas.gov/voting/where.html

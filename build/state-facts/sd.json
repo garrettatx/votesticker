@@ -11,6 +11,10 @@
   "sdlegislature.gov": {
    "en": "South Dakota law",
    "es": "la ley de South Dakota"
+  },
+  "vip.sdsos.gov": {
+   "en": "the South Dakota Secretary of State",
+   "es": "la Secretaría de Estado de South Dakota"
   }
  },
  "dates": {
@@ -205,6 +209,15 @@
    "checked": "2026-10-21",
    "quote": "If an absentee ballot is delivered to a polling place, absentee counting board, or the office of the person in charge of the election after the polls are closed in the county or local jurisdiction, the absentee ballot may not be counted or opened.",
    "status": "verified"
+  },
+  "track": {
+   "en": "Look yourself up on the Voter Information Portal at vip.sdsos.gov. It shows the date your county received your absentee ballot application, the date it sent your ballot, and the date it received your voted ballot.",
+   "es": "Búscate en el portal de información para votantes (Voter Information Portal) en vip.sdsos.gov. Te muestra la fecha en que tu condado recibió tu solicitud de boleta de voto en ausencia, la fecha en que te envió la boleta y la fecha en que recibió tu boleta votada.",
+   "src": "https://vip.sdsos.gov/VIPLogin.aspx",
+   "checked": "2026-10-30",
+   "quote": "ARE YOU ABLE TO TRACK YOUR ABSENTEE BALLOT USING THIS PORTAL: Yes, you will be able to see the date your absentee ballot application was received, the date your absentee ballot was sent to you and the date your absentee ballot was received by the county for the Primary and General Election.",
+   "status": "verified",
+   "notes": "Read by curl Oct 30. mail.track_url already pointed here; the FAQ answer was missing (pass 2 logged SD as having no tracker)."
   }
  },
  "notes": "Read October 21, 2026 with curl on sdsos.gov (Voting, Absentee Voting, 2026 Election Information, Information/sos-awards) and the sdlegislature.gov statutes API (12-18-3, 12-18-27, 12-19-2.1, 12-19-12, 12-20-5.1), cited by their public URLs (https://sdlegislature.gov/Statutes/<section>), as faq-sources.json does. The phone fact rests on 12-18-27, the same section the existing FAQ selfie answer cites. 12-18-3 also bars using 'any communication or photographic device in a manner which repeatedly distracts, interrupts, or intimidates any voter or election worker' within 100 feet; not used on the page. Weekday for November 2 is the calendar weekday. EARLY VOTING FOR THE LEAD (states.js has SD unchecked): in-person absentee voting at the County Auditor's office, Friday, September 18, 2026 through 5 p.m. Monday, November 2, 2026 (or later if regular office hours run later). Sources: (1) https://sdsos.gov/elections-voting/upcoming-elections/general-information/2026%20Election%20Information/2026-Election-Information.aspx: 'Absentee Voting Begins: September 18, 2026' under 'General Election Date: November 3, 2026'. (2) https://sdsos.gov/elections-voting/voting/absentee-voting.aspx: 'Registered voters can vote in-person once Absentee Voting begins at their County Auditor's office by bringing along a valid photo identification card (ID).' and 'At any time prior to an election, a voter may apply for an absentee ballot in person at the office of and to the person in charge of the election during regular office hours or until five p.m. on the day before the election, whichever is later.' Hours: county office hours. Suggested states.js note: 'Vote absentee in person at your County Auditor's office through Mon., Nov. 2.' Not found: absentee eligibility stated plainly, ballot tracking, drop boxes, witness rule, cure, expired-ID rule, line rule.",

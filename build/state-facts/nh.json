@@ -212,7 +212,13 @@
  },
  "faq": {
   "provisional": {
-   "status": "missing"
+   "en": "New Hampshire has Election Day registration instead. If your name isn't on the checklist, you can register at your polling place on Election Day. Bring proof of your identity, age, U.S. citizenship and where you live.",
+   "es": "New Hampshire tiene registro el Día de las Elecciones. Si tu nombre no está en la lista de votantes (checklist), puedes registrarte en tu lugar de votación el Día de las Elecciones. Lleva comprobantes de tu identidad, tu edad, tu ciudadanía estadounidense y dónde vives.",
+   "src": "https://www.sos.nh.gov/elections/register-vote",
+   "checked": "2026-10-30",
+   "quote": "You will also need to provide proof of your identity, age, U.S. citizenship and domicile (primary residence address). ... If you miss the deadline to register before the election, you can register at your polling location on election day.",
+   "status": "verified",
+   "notes": "Read in Chrome Oct 30. The page carries a notice dated October 22, 2026 (U.S. Supreme Court stay on student IDs). Affidavit ballots ended Nov 11, 2024 (HB 1569 memo, lead; the PDF blocked curl), so the answer doesn't mention them."
   },
   "line": {
    "en": "You can still vote. Everyone in line when the polls close, including the line to register, gets to register if needed and vote.",

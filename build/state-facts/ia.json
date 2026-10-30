@@ -229,12 +229,13 @@
  },
  "faq": {
   "provisional": {
-   "en": "You're offered a provisional ballot if you were already sent an absentee ballot, don't show ID when it's required, or are challenged by another voter. You get a notice that day saying why and whether you need to bring more documents.",
-   "es": "Te ofrecen una boleta provisional si ya te habían mandado una boleta de voto en ausencia, si no muestras identificación cuando se requiere o si otro votante te impugna. Ese mismo día recibes un aviso que dice por qué y si necesitas llevar más documentos.",
-   "src": "https://sos.iowa.gov/voters/voter-id-faq",
-   "checked": "2026-10-21",
-   "quote": "Provisional voters receive a notice on Election Day with information about the reason for the challenge and whether they need to provide additional documentation regarding their eligibility.",
-   "status": "verified"
+   "en": "If your name isn't on the list of registered voters, or someone challenges your right to vote, you can vote a provisional ballot. You get a notice that day saying what to bring and by when, which is noon on Monday, November 9. Bring it to the poll workers or your county auditor. If your ballot isn't counted, you get a letter saying why.",
+   "es": "Si tu nombre no está en la lista de votantes registrados, o si alguien impugna tu derecho a votar, puedes votar con una boleta provisional. Ese día recibes un aviso que dice qué llevar y para cuándo, que es al mediodía del lunes 9 de noviembre. Llévalo a los trabajadores electorales o al auditor de tu condado. Si tu boleta no se cuenta, recibes una carta que explica por qué.",
+   "src": "https://sos.iowa.gov/voters/election-day-faq",
+   "checked": "2026-10-30",
+   "quote": "If your name is not on the list of registered voters or if someone challenges your right to vote on Election Day, you have the right to cast a provisional ballot. ... This is noon on the Monday following the election, unless that date is a holiday or it is a special election. If your ballot is not counted, you will receive a letter in the mail explaining why it was not counted.",
+   "status": "verified",
+   "notes": "Read in Chrome Oct 30 (curl gets a challenge page). Iowa Code 49.81(6) gives the same noon Monday deadline."
   },
   "line": {
    "en": "You can still vote. Every voter who is at their precinct's polling place when it closes gets to vote.",

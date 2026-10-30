@@ -194,8 +194,13 @@
  },
  "faq": {
   "provisional": {
-   "status": "missing",
-   "notes": "No provisional ballot page read on sos.mn.gov."
+   "en": "Minnesota has Election Day registration instead. If your name isn't on the roster, you can register at your polling place on Election Day and vote. Bring one proof of where you live, such as a Minnesota driver's license or ID with your current address. No document? A registered voter from your precinct can go with you and sign an oath confirming your address.",
+   "es": "Minnesota tiene registro el Día de las Elecciones. Si tu nombre no está en la lista, puedes registrarte en tu lugar de votación el Día de las Elecciones y votar. Lleva un comprobante de dónde vives, como una licencia de conducir o identificación de Minnesota con tu dirección actual. ¿No tienes un documento? Un votante registrado de tu precinto puede ir contigo y firmar un juramento que confirme tu dirección.",
+   "src": "https://www.sos.mn.gov/elections-voting/register-to-vote/register-on-election-day",
+   "checked": "2026-10-30",
+   "quote": "To register at your polling place on Election Day, bring one proof of residence listed below. ... A registered voter from your precinct can go with you to the polling place to sign an oath confirming your address. This is known as 'vouching.'",
+   "status": "verified",
+   "notes": "Read in Chrome Oct 30 (curl blocked). No provisional ballot page on sos.mn.gov; Minnesota offers Election Day registration."
   },
   "line": {
    "en": "You can still vote. If you're in line by 8 p.m., you get to vote, even if you reach the front after 8.",

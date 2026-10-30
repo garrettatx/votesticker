@@ -268,12 +268,13 @@
  },
  "faq": {
   "provisional": {
-   "en": "You vote one if you forgot your photo ID, or if you can't get one and sign a reasonable impediment affidavit. If you forgot it, show your ID at the county office before certification. County boards decide which provisional ballots count on the Friday after the election.",
-   "es": "Votas con una si se te olvidó tu identificación con foto, o si no puedes conseguir una y firmas una declaración de impedimento razonable. Si se te olvidó, muestra tu identificación en la oficina del condado antes de la certificación. Las juntas de los condados deciden qué boletas provisionales se cuentan el viernes después de la elección.",
-   "src": "https://scvotes.gov/voters/voter-faq/",
-   "checked": "2026-10-21",
-   "quote": "On Friday following the election, county election boards determine which provisional ballots to count, and those votes are added to the totals.",
-   "status": "verified"
+   "en": "You vote a provisional ballot if your name isn't on the poll list or you don't have the right ID. When you vote, you get written information on how to find out whether it counted. Forgot your photo ID? Show it at the county office before the election is certified, which the State Election Commission says is often the Thursday or Friday after. Can't get one? Show your voter registration card and sign a reasonable impediment affidavit.",
+   "es": "Votas con una boleta provisional si tu nombre no está en la lista de votantes o no tienes la identificación correcta. Al votar, recibes información por escrito sobre cómo saber si se contó. ¿Se te olvidó tu identificación con foto? Muéstrala en la oficina del condado antes de que se certifique la elección, lo que según la Comisión Electoral Estatal suele ser el jueves o viernes después. ¿No puedes conseguir una? Muestra tu tarjeta de registro de votante y firma una declaración de impedimento razonable.",
+   "src": "https://scvotes.gov/wp-content/uploads/2025/02/SEC-BSL-2090-202308-SC-Voter-Info-Poster.pdf",
+   "checked": "2026-10-30",
+   "quote": "Voters whose names do not appear on the poll list or do not have proper identification may vote by provisional ballot. ... Voters who cast a provisional ballot are entitled to written information at the time of voting that explains how to determine if the vote was counted and, if not, why. ... For your vote to be counted, you must provide a Photo ID to the county board of voter registrations and elections prior to certification of the election (usually Thursday or Friday after the election).",
+   "status": "verified",
+   "notes": "State Election Commission voter information poster PDF on scvotes.gov, read by curl Oct 30."
   },
   "line": {
    "en": "You can still vote. Anyone in line at 7 p.m. on Election Day will be allowed to vote.",

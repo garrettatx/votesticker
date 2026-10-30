@@ -224,8 +224,13 @@
  },
  "faq": {
   "provisional": {
-   "status": "missing",
-   "notes": "Only the voter ID affidavit ballot rule was found (in id.without); no general affidavit ballot page read."
+   "en": "Mississippi calls it an affidavit ballot. You can vote one if your name isn't in the poll book or you don't have an acceptable photo ID. When you vote, you get written information on how to find out whether your ballot counted and, if not, why.",
+   "es": "En Mississippi se llama boleta con declaración jurada (affidavit ballot). Puedes votar con una si tu nombre no está en el registro de votantes del lugar de votación o si no tienes una identificación con foto aceptada. Al votar, recibes información por escrito sobre cómo saber si tu boleta se contó y, si no, por qué.",
+   "src": "https://www.sos.ms.gov/sites/default/files/elections/2026%20Mississippi%20Voter%20Information%20Guide.pdf",
+   "checked": "2026-10-30",
+   "quote": "Voters whose names do not appear on the poll book or who do not have an acceptable form of photo ID are entitled to vote by affidavit ballot. ... Voters who cast an affidavit ballot are entitled to receive written information at the time of voting on how to determine if the vote was counted and, if not, why not.",
+   "status": "verified",
+   "notes": "2026 Voter Information Guide PDF, read by curl and pdftotext Oct 30."
   },
   "line": {
    "en": "You can still vote. If you're in line at 7 p.m., you have the right to cast your ballot.",
