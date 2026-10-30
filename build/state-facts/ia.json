@@ -251,6 +251,15 @@
    "checked": "2026-10-21",
    "quote": "Did you know you can track the status of your absentee ballot after your request form has been received by the county auditor?",
    "status": "verified"
+  },
+  "late_mail": {
+   "en": "It may be. Your county auditor must receive it by 8 p.m. on Tuesday, November 3, and a postmark doesn't count. Instead, take it to the county auditor's office before polls close. You can't drop it off at your polling place, but you can surrender it there and vote a regular ballot.",
+   "es": "Puede que sí. El auditor de tu condado (county auditor) debe recibirla a más tardar a las 8 p. m. del martes 3 de noviembre, y el matasellos no cuenta. Mejor llévala a la oficina del auditor del condado antes del cierre de la votación. No puedes dejarla en tu lugar de votación, pero ahí puedes entregarla para anularla y votar con una boleta regular.",
+   "src": "https://sos.iowa.gov/voters/absentee-voting",
+   "checked": "2026-10-30",
+   "quote": "Voted absentee ballots cannot be delivered to the polling place on election day. ... Deliver your voted absentee ballot to the county auditor's office before the polls close on election ... Surrender your voted absentee ballot at the polls and vote a regular ballot, or Vote a provisional ballot at the polls if you cannot surrender your voted absentee ballot.",
+   "status": "verified",
+   "notes": "Pass 2 Oct 30, read in Chrome (the site blocks scripted reads; text read with find and read_page). No ballot to surrender: vote a provisional ballot (same page)."
   }
  },
  "notes": "Read October 21, 2026. sos.iowa.gov and voterready.iowa.gov return 403 to curl and WebFetch; read in Chrome. EARLY VOTING DATES match states.js (October 14 to November 2): the SOS release of September 15, 2026 says 'Iowans can begin casting ballots for the 2026 General Election on Wednesday, October 14' and 'In-person absentee voting at the county auditor’s office is available through November 2, the day before the election.' Voter Ready's calendar adds 'Monday, November 2 – Absentee Ballot In-Person Deadline' and says in-person absentee 'runs up to 5 p.m. the day prior to the election.' Registration: the existing faq_text.py says preregistration closes October 19, which the Voter Ready calendar now confirms. ID: the SOS Election Day page lists more photo IDs (out-of-state license, employer ID, Iowa student ID) as proof of identity for Election Day registration; the file uses the six IDs Voter Ready and the SOS Voter ID FAQ list for registered voters. Drop boxes, cure, ballot witness rule, the in-line-at-closing rule and a sticker tradition were not found on an official page; left missing.",

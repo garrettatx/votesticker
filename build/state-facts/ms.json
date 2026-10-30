@@ -236,8 +236,22 @@
    "status": "verified"
   },
   "track": {
-   "status": "missing",
-   "notes": "No absentee ballot tracker found on sos.ms.gov."
+   "en": "Use My Election Day on the Secretary of State's Y'all Vote page. It tracks your absentee ballot, and an affidavit ballot too, and shows your polling place.",
+   "es": "Usa My Election Day en la página Y'all Vote de la Secretaría de Estado. Te permite rastrear tu boleta de voto en ausencia, y también una boleta declarada (affidavit ballot), y te muestra tu lugar de votación.",
+   "src": "https://www.sos.ms.gov/yall-vote",
+   "checked": "2026-10-30",
+   "quote": "Locate your polling place, view a sample ballot, track your absentee/affidavit ballot, and view your current officer holders with My Election Day.",
+   "status": "verified",
+   "notes": "Pass 2 Oct 30, read by curl. Oct 25 note said no tracker on sos.ms.gov; this page has one."
+  },
+  "late_mail": {
+   "en": "Not if it's postmarked by Tuesday, November 3, and your Circuit Clerk receives it by 5 p.m. on Tuesday, November 10. Mail it as soon as you can.",
+   "es": "No, si tiene matasellos del martes 3 de noviembre o antes y la oficina del secretario del tribunal de circuito (Circuit Clerk) la recibe a más tardar a las 5 p. m. del martes 10 de noviembre. Envíala lo antes posible.",
+   "src": "https://www.sos.ms.gov/content/documents/elections/2026%20Elections%20Calendar.pdf",
+   "checked": "2026-10-30",
+   "quote": "Absentee Ballots Returned by Mail Receipt Deadline, 5:00 p.m.: Circuit Clerk’s Offices must be in actual receipt of absentee ballots returned by mail for ballots to be timely. Ballots returned by mail must be postmarked on or before Election Day. (Miss. Code Ann.. §23-15-637).",
+   "status": "verified",
+   "notes": "Pass 2 Oct 30, calendar PDF read (pdftotext). SOS Oct 26 notice restates Nov 3 / Nov 10 (Perplexity lead). Hand delivery: an older county handbook says it is illegal to hand deliver absentee ballots (Perplexity lead, not read; left out)."
   }
  },
  "notes": "Read October 21, 2026 on sos.ms.gov (curl worked): Absentee Voting Information, Election FAQs, Elections 101, Voter ID pages, the 2026 Elections Calendar PDF (last revised 9/8/2026), My Election Day, and the October 21, 2025 sticker contest release. EARLY VOTING vs states.js: states.js has kind 'none'. Mississippi does have in-person absentee voting for voters who meet an excuse, ending at noon on Saturday, October 31, 2026. START DATE CONFLICT: the SOS absentee FAQ says 'You may vote absentee in person from 8:00 a.m. to 5:00 p.m., Monday through Friday, beginning September 19, 2026, at the circuit Clerk’s office, through October 31, 2026.' The SOS 2026 Elections Calendar says '21st Absentee Ballots Available: Earliest day to vote by an absentee ballot in the Circuit Clerk’s Office in the General Election.' (September 21; September 19 is a Saturday). The file leaves out the start date. End time: the calendar says '31st In-Person Absentee Voting Deadline, 12:00 p.m. (General): Circuit Clerk’s Offices MUST remain open from 8 a.m. until noon'; the FAQ agrees on noon for October 24 and 31. Mail return: the FAQ ('received on or within five (5) business days of the election, or November 10, 2026') and the calendar (5 p.m. November 10) agree. In-person absentee eligibility is a longer list than mail (it adds working during poll hours and being away from home on Election Day); how.in_person names three examples. Sticker: the contest release is from 2025; no winner announcement was found on sos.ms.gov. Mail request deadline, drop boxes, ballot tracker, cure, phone rule and general provisional rules not found; left missing.",

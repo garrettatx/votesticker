@@ -235,12 +235,13 @@
  },
  "faq": {
   "provisional": {
-   "en": "If there's a problem at your polling place, you can vote a provisional ballot.",
-   "es": "Si hay un problema en tu lugar de votación, puedes votar con una boleta provisional.",
-   "src": "https://www.sos.ky.gov/Documents/2026%20Kentucky%20Election%20Guide.pdf",
-   "checked": "2026-10-21",
-   "quote": "If there are problems at your polling place, you can vote a provisional bal- lot.",
-   "status": "verified"
+   "en": "You can vote a provisional ballot if your name isn't on the precinct roster and the precinct officer can't confirm your registration, or if you don't have ID. Afterward, use the State Board of Elections' Provisional Voter Information link to see whether it was counted.",
+   "es": "Puedes votar con una boleta provisional si tu nombre no está en la lista del precinto y el funcionario del precinto no puede confirmar tu registro, o si no tienes identificación. Después, usa el enlace Provisional Voter Information de la Junta Estatal de Elecciones para ver si se contó.",
+   "src": "https://elect.ky.gov/Voters/Pages/Voter-Rights.aspx",
+   "checked": "2026-10-30",
+   "quote": "Vote a provisional ballot if: Voter name does not appear on the precinct roster and whose registration status cannot be determined by the precinct officer Voter name does not appear on the precinct roster and who has been verified as ineligible to vote Voter does not have identification ... Provisional Voter Information link to determine if your provisional ballot was counted or not counted",
+   "status": "verified",
+   "notes": "Pass 2 Oct 30, read by curl. The 2026 officer guide says a provisional ballot covers federal offices only (Perplexity lead, not read; left out). Replaces: If there's a problem at your polling place, you can vote a provisional ballot."
   },
   "line": {
    "en": "You can still vote. If you're in line at 6 p.m. local time, you'll be allowed to vote.",
@@ -257,6 +258,15 @@
    "checked": "2026-10-21",
    "quote": "Review Your Registration or Absentee Ballot Status",
    "status": "verified"
+  },
+  "late_mail": {
+   "en": "It may be. Your county clerk must receive it by 6 p.m. local time on Tuesday, November 3, and a postmark doesn't count. Instead, hand it in at your county's drop box or your county clerk's office as soon as you can, and don't wait until Election Day.",
+   "es": "Puede que sí. El secretario de tu condado (county clerk) debe recibirla a más tardar a las 6 p. m., hora local, del martes 3 de noviembre, y el matasellos no cuenta. Mejor entrégala lo antes posible en el buzón de entrega de tu condado o en la oficina del secretario del condado, sin esperar al Día de las Elecciones.",
+   "src": "https://elect.ky.gov/Voters/Pages/Voting-In-Person-and-By-Mail.aspx",
+   "checked": "2026-10-30",
+   "quote": "Voters are highly encouraged not to wait until Election Day to hand deliver their absentee ballot. Cast your ballot as soon as you receive it. Do not delay! Drop boxes are available in each county to hand deliver your ballot.",
+   "status": "verified",
+   "notes": "Pass 2 Oct 30, read by curl. 6 p.m. receipt: dates.mail_return (same page, Oct 21)."
   }
  },
  "notes": "Read October 21, 2026. elect.ky.gov returned intermittent 504s and govote.ky.gov blocks curl as a bot; pages were read with curl on retry and in Chrome (govote.ky.gov redirects to vrsws.sos.ky.gov/ovrweb/govoteky/). Read: elect.ky.gov 2026 General Election Summary, Voter ID Requirements, Eligibility for Absentee Voting, Election Day FAQ; the SOS 2026 Kentucky Election Guide PDF (its dates are for the May primary, so only its general rules are used); the SOS I Voted Sticker Contest page; KRS 117.228 and 117.235 on apps.legislature.ky.gov. The SBE 2026 Election Calendar PDF returned 504. EARLY VOTING DATES FOR THE LEAD (states.js has KY unchecked): no-excuse in-person early voting Thursday, October 29, Friday, October 30, and Saturday, October 31, 2026; hours set by each county. Source https://elect.ky.gov/Voters/Pages/Voting-In-Person-and-By-Mail.aspx: 'Early in-person, no excuse absentee voting will take place Thursday, October 29, Friday, October 30, and Saturday, October 31, 2026.' and 'In-Person, No Excuse Absentee \"Early\" Voting October 29, 30, & 31, 2026'. Suggested states.js note: 'Hours vary by county. Check GoVoteKY.gov.' CONFLICT on excused in-person absentee days (left out of the file): the same summary page says 'In-person, excused absentee voting October 21, 22, 23, and October 26, 27, 28, 2026.' and 'October 21, 22, 23, 26, 27, & 28, 2026 (ONLY)', but the Election Day FAQ says 'excused in-person Wednesday – Friday, October 21 - October 23, 2026 and Monday – Wednesday, October 29 - October 31, 2026' (October 29 to 31 is Thursday to Saturday, the no-excuse days). The absentee page's rule ('the six (6) business days immediately before the last Thursday occurring before election day') matches October 21 to 23 and 26 to 28. CONFLICT on voting without photo ID (id.without left missing; quotes in its notes): the SOS guide's non-photo list (Social Security card, SNAP/EBT card) is not in KRS 117.228 as amended effective July 15, 2026. The faq_text.py KY id answer ('If you can't get one, you can sign an affirmation and vote') leaves out that the statute now also requires a county ID approved by the SBE or a card with the voter's photo and name; the lead may want to review it. Phone fact rests on a parenthetical in the SOS guide; no statute on ballot photos was read. Expired-ID rule, witness rule, cure and the general provisional-ballot rules were not found.",

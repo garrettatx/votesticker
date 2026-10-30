@@ -183,12 +183,13 @@
  },
  "faq": {
   "provisional": {
-   "en": "You can ask for a provisional ballot if your voter registration can't be confirmed. It's counted only if your County Elections Division confirms your registration. You can find out whether it counted by calling them or on the Office of Elections website.",
-   "es": "Puedes pedir una boleta provisional si no se puede confirmar tu registro de votante. Solo se cuenta si la División de Elecciones de tu condado confirma tu registro. Puedes saber si se contó llamando a esa oficina o en el sitio web de la Oficina de Elecciones.",
-   "src": "https://elections.hawaii.gov/wp-content/uploads/VoterGuide_2026_General_English.pdf",
-   "checked": "2026-10-21",
-   "quote": "You can request a provisional ballot if you cannot confirm your voter registration.",
-   "status": "verified"
+   "en": "You can vote a provisional ballot if your name isn't on the list of registered voters or an election official says you aren't eligible. It's counted only if your County Elections Division confirms your registration. Find out whether it counted, and why if not, by calling that office or on the Office of Elections website.",
+   "es": "Puedes votar con una boleta provisional si tu nombre no está en la lista de votantes registrados o si un funcionario electoral dice que no puedes votar. Solo se cuenta si la División de Elecciones de tu condado confirma tu registro. Puedes saber si se contó, y por qué no si no se contó, llamando a esa oficina o en el sitio web de la Oficina de Elecciones.",
+   "src": "https://elections.hawaii.gov/voters/provisional-voting/",
+   "checked": "2026-10-30",
+   "quote": "The Help America Vote Act of 2002 (HAVA) establishes the right for a voter to cast a provisional ballot if: Voter’s name does not appear on the official list of registered voters; or An election official asserts that the voter is not eligible to vote. ... The voter will be able to verify if the ballot did or did not count, and the reason why it was not counted by calling their County Elections Division or through the Office of Elections website.",
+   "status": "verified",
+   "notes": "Pass 2 Oct 30, read by curl. Counting rule: 2026 Voter Guide (former src). Same-day registration at voter service centers: reg FAQ. Replaces: You can ask for a provisional ballot if your voter registration can't be confirmed. It's counted only if your County Elections Division confirms your registration. You can find out whether it counted by calling them or on the Office of Elections website."
   },
   "line": {
    "en": "Stay in line. If you're in line at 7 p.m. at a voter service center or a drop box, you'll be allowed to vote or drop off your ballot.",

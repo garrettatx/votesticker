@@ -1,0 +1,20 @@
+[
+{"st":"IA","key":"late_mail","checked":"2026-10-30",
+ "src":"https://sos.iowa.gov/voters/absentee-voting",
+ "quote":"Voted absentee ballots cannot be delivered to the polling place on election day. ... Deliver your voted absentee ballot to the county auditor's office before the polls close on election ... Surrender your voted absentee ballot at the polls and vote a regular ballot, or Vote a provisional ballot at the polls if you cannot surrender your voted absentee ballot.",
+ "en":"It may be. Your county auditor must receive it by 8 p.m. on Tuesday, November 3, and a postmark doesn't count. Instead, take it to the county auditor's office before polls close. You can't drop it off at your polling place, but you can surrender it there and vote a regular ballot.",
+ "es":"Puede que sí. El auditor de tu condado (county auditor) debe recibirla a más tardar a las 8 p. m. del martes 3 de noviembre, y el matasellos no cuenta. Mejor llévala a la oficina del auditor del condado antes del cierre de la votación. No puedes dejarla en tu lugar de votación, pero ahí puedes entregarla para anularla y votar con una boleta regular.",
+ "notes":"Pass 2 Oct 30, read in Chrome (the site blocks scripted reads; text read with find and read_page). No ballot to surrender: vote a provisional ballot (same page)."},
+{"st":"RI","key":"late_mail","checked":"2026-10-30",
+ "src":"https://vote.sos.ri.gov/Voter/VoteByMail",
+ "quote":"Allow at least seven (7) mailing days to ensure your mail ballot arrives by 8 p.m. on Election Day. Option 2: Hand deliver the sealed envelope to any official elections drop box located around the state. Use the Drop Box locator or contact your local board of canvassers to find a drop box near you. On Election Day, all polling places also have a receptacle in which you can deposit your sealed ballot. Option 3: Hand deliver the sealed envelope to the Board of Elections: 2000 Plainfield Pike, Suite A Cranston, RI 02921 The Board of Elections must receive your mail ballot by 8 p.m. on Election Day",
+ "en":"It may be. The Board of Elections must receive it by 8 p.m. on Tuesday, November 3, and the state says to allow seven mailing days. Instead, put it in any official elections drop box, or on Election Day in the ballot box at any polling place. You can also hand it in at the Board of Elections in Cranston.",
+ "es":"Puede que sí. La Junta de Elecciones (Board of Elections) debe recibirla a más tardar a las 8 p. m. del martes 3 de noviembre, y el estado recomienda dejar siete días para el correo. Mejor déjala en cualquier buzón oficial de entrega o, el Día de las Elecciones, en el receptáculo para boletas de cualquier lugar de votación. También puedes entregarla en la Junta de Elecciones en Cranston.",
+ "notes":"Pass 2 Oct 30, read in Chrome (blocks curl). Same page: the mail ballot packet includes an 'I Voted by Mail sticker' (sticker lead for the RI page)."},
+{"st":"NH","key":"late_mail","checked":"2026-10-30",
+ "src":"https://www.sos.nh.gov/elections/absentee-ballots",
+ "quote":"The deadline to request and return an absentee ballot in person is 5:00 p.m. the day before the election. Absentee ballots delivered through the mail or by the voter's delivery agent shall be received by the town, city, or ward clerk no later than 5:00 p.m. on the day of the election.",
+ "en":"It may be. Your town or city clerk must receive it by 5 p.m. on Tuesday, November 3, and a postmark doesn't count. Returning it yourself? Get it to the clerk by 5 p.m. on Monday, November 2. A delivery agent, such as a close family member with the signed form, has until 5 p.m. on Election Day.",
+ "es":"Puede que sí. El secretario de tu municipio o ciudad (town or city clerk) debe recibirla a más tardar a las 5 p. m. del martes 3 de noviembre, y el matasellos no cuenta. ¿La vas a entregar tú? Llévala al secretario a más tardar a las 5 p. m. del lunes 2 de noviembre. Un representante de entrega (delivery agent), como un familiar cercano con el formulario firmado, tiene hasta las 5 p. m. del Día de las Elecciones.",
+ "notes":"Pass 2 Oct 30, read in Chrome (403 to curl). Agent example from dates.mail_return (same page, Oct 28)."}
+]

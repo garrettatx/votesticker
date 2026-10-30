@@ -1562,10 +1562,10 @@ return array(
 			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
-			'en' => 'If election officers can\'t confirm you\'re eligible, you can vote a provisional ballot for the federal offices on the ballot. The Department reviews provisional ballots the day after the election. A provisional ballot isn\'t counted if its affidavit is incomplete, if you didn\'t show identification, or if you aren\'t registered to vote in Delaware.',
-			'es' => 'Si los funcionarios electorales no pueden confirmar que tienes derecho a votar, puedes votar con una boleta provisional para los cargos federales de la boleta. El Departamento revisa las boletas provisionales el día después de la elección. Una boleta provisional no se cuenta si su declaración jurada está incompleta, si no mostraste identificación o si no estás registrado para votar en Delaware.',
-			'src' => 'https://delcode.delaware.gov/title15/c049/sc02/index.html',
-			'checked' => '2026-10-28',
+			'en' => 'If you say you\'re registered but your name isn\'t on the list, you can vote a provisional ballot for federal offices only, after signing a statement that you\'re registered and eligible. It isn\'t counted if you aren\'t registered in Delaware. Afterward, enter the number you\'re given on the Department of Elections\' provisional ballot page to see whether it counted, and why if not.',
+			'es' => 'Si dices que estás registrado pero tu nombre no está en la lista, puedes votar con una boleta provisional solo para cargos federales, después de firmar una declaración de que estás registrado y puedes votar. No se cuenta si no estás registrado en Delaware. Después, escribe el número que te den en la página de boletas provisionales del Departamento de Elecciones para ver si se contó y, si no, por qué.',
+			'src' => 'https://elections.delaware.gov/voter/hava/voting/provisional.html',
+			'checked' => '2026-10-30',
 		),
 		'faq.line' => array(
 			'en' => 'You can still vote. Anyone waiting in line by 8 p.m. on Election Day, inside or outside the voting room, is allowed to vote.',
@@ -2118,10 +2118,10 @@ return array(
 			'checked' => '2026-10-21',
 		),
 		'faq.provisional' => array(
-			'en' => 'You can ask for a provisional ballot if your voter registration can\'t be confirmed. It\'s counted only if your County Elections Division confirms your registration. You can find out whether it counted by calling them or on the Office of Elections website.',
-			'es' => 'Puedes pedir una boleta provisional si no se puede confirmar tu registro de votante. Solo se cuenta si la División de Elecciones de tu condado confirma tu registro. Puedes saber si se contó llamando a esa oficina o en el sitio web de la Oficina de Elecciones.',
-			'src' => 'https://elections.hawaii.gov/wp-content/uploads/VoterGuide_2026_General_English.pdf',
-			'checked' => '2026-10-21',
+			'en' => 'You can vote a provisional ballot if your name isn\'t on the list of registered voters or an election official says you aren\'t eligible. It\'s counted only if your County Elections Division confirms your registration. Find out whether it counted, and why if not, by calling that office or on the Office of Elections website.',
+			'es' => 'Puedes votar con una boleta provisional si tu nombre no está en la lista de votantes registrados o si un funcionario electoral dice que no puedes votar. Solo se cuenta si la División de Elecciones de tu condado confirma tu registro. Puedes saber si se contó, y por qué no si no se contó, llamando a esa oficina o en el sitio web de la Oficina de Elecciones.',
+			'src' => 'https://elections.hawaii.gov/voters/provisional-voting/',
+			'checked' => '2026-10-30',
 		),
 		'faq.line' => array(
 			'en' => 'Stay in line. If you\'re in line at 7 p.m. at a voter service center or a drop box, you\'ll be allowed to vote or drop off your ballot.',
@@ -2321,6 +2321,12 @@ return array(
 			'es' => 'Cuando el auditor de tu condado ya tiene tu solicitud, puedes seguir tu boleta de voto en ausencia en la página de seguimiento de la Secretaría de Estado (Track Your Absentee Ballot).',
 			'src' => 'https://voterready.iowa.gov/voting-absentee/',
 			'checked' => '2026-10-21',
+		),
+		'faq.late_mail' => array(
+			'en' => 'It may be. Your county auditor must receive it by 8 p.m. on Tuesday, November 3, and a postmark doesn\'t count. Instead, take it to the county auditor\'s office before polls close. You can\'t drop it off at your polling place, but you can surrender it there and vote a regular ballot.',
+			'es' => 'Puede que sí. El auditor de tu condado (county auditor) debe recibirla a más tardar a las 8 p. m. del martes 3 de noviembre, y el matasellos no cuenta. Mejor llévala a la oficina del auditor del condado antes del cierre de la votación. No puedes dejarla en tu lugar de votación, pero ahí puedes entregarla para anularla y votar con una boleta regular.',
+			'src' => 'https://sos.iowa.gov/voters/absentee-voting',
+			'checked' => '2026-10-30',
 		),
 	),
 	'ID' => array(
@@ -3134,10 +3140,10 @@ return array(
 			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
-			'en' => 'If there\'s a problem at your polling place, you can vote a provisional ballot.',
-			'es' => 'Si hay un problema en tu lugar de votación, puedes votar con una boleta provisional.',
-			'src' => 'https://www.sos.ky.gov/Documents/2026%20Kentucky%20Election%20Guide.pdf',
-			'checked' => '2026-10-21',
+			'en' => 'You can vote a provisional ballot if your name isn\'t on the precinct roster and the precinct officer can\'t confirm your registration, or if you don\'t have ID. Afterward, use the State Board of Elections\' Provisional Voter Information link to see whether it was counted.',
+			'es' => 'Puedes votar con una boleta provisional si tu nombre no está en la lista del precinto y el funcionario del precinto no puede confirmar tu registro, o si no tienes identificación. Después, usa el enlace Provisional Voter Information de la Junta Estatal de Elecciones para ver si se contó.',
+			'src' => 'https://elect.ky.gov/Voters/Pages/Voter-Rights.aspx',
+			'checked' => '2026-10-30',
 		),
 		'faq.line' => array(
 			'en' => 'You can still vote. If you\'re in line at 6 p.m. local time, you\'ll be allowed to vote.',
@@ -3150,6 +3156,12 @@ return array(
 			'es' => 'Revisa el estado de tu boleta de voto en ausencia en el portal oficial para votantes de Kentucky (GoVoteKY.gov).',
 			'src' => 'https://govote.ky.gov/',
 			'checked' => '2026-10-21',
+		),
+		'faq.late_mail' => array(
+			'en' => 'It may be. Your county clerk must receive it by 6 p.m. local time on Tuesday, November 3, and a postmark doesn\'t count. Instead, hand it in at your county\'s drop box or your county clerk\'s office as soon as you can, and don\'t wait until Election Day.',
+			'es' => 'Puede que sí. El secretario de tu condado (county clerk) debe recibirla a más tardar a las 6 p. m., hora local, del martes 3 de noviembre, y el matasellos no cuenta. Mejor entrégala lo antes posible en el buzón de entrega de tu condado o en la oficina del secretario del condado, sin esperar al Día de las Elecciones.',
+			'src' => 'https://elect.ky.gov/Voters/Pages/Voting-In-Person-and-By-Mail.aspx',
+			'checked' => '2026-10-30',
 		),
 	),
 	'LA' => array(
@@ -4482,6 +4494,18 @@ return array(
 			'src' => 'https://www.sos.ms.gov/yall-vote/elections-101',
 			'checked' => '2026-10-21',
 		),
+		'faq.track' => array(
+			'en' => 'Use My Election Day on the Secretary of State\'s Y\'all Vote page. It tracks your absentee ballot, and an affidavit ballot too, and shows your polling place.',
+			'es' => 'Usa My Election Day en la página Y\'all Vote de la Secretaría de Estado. Te permite rastrear tu boleta de voto en ausencia, y también una boleta declarada (affidavit ballot), y te muestra tu lugar de votación.',
+			'src' => 'https://www.sos.ms.gov/yall-vote',
+			'checked' => '2026-10-30',
+		),
+		'faq.late_mail' => array(
+			'en' => 'Not if it\'s postmarked by Tuesday, November 3, and your Circuit Clerk receives it by 5 p.m. on Tuesday, November 10. Mail it as soon as you can.',
+			'es' => 'No, si tiene matasellos del martes 3 de noviembre o antes y la oficina del secretario del tribunal de circuito (Circuit Clerk) la recibe a más tardar a las 5 p. m. del martes 10 de noviembre. Envíala lo antes posible.',
+			'src' => 'https://www.sos.ms.gov/content/documents/elections/2026%20Elections%20Calendar.pdf',
+			'checked' => '2026-10-30',
+		),
 	),
 	'MT' => array(
 		'election' => '2026-11-03',
@@ -5354,6 +5378,12 @@ return array(
 			'es' => 'Usa el buscador oficial de la Secretaría de Estado (Voter Information Lookup). Te muestra cuándo recibió tu solicitud el secretario, cuándo te mandaron la boleta y cuándo la recibió de vuelta.',
 			'src' => 'https://www.sos.nh.gov/elections/absentee-ballots',
 			'checked' => '2026-10-28',
+		),
+		'faq.late_mail' => array(
+			'en' => 'It may be. Your town or city clerk must receive it by 5 p.m. on Tuesday, November 3, and a postmark doesn\'t count. Returning it yourself? Get it to the clerk by 5 p.m. on Monday, November 2. A delivery agent, such as a close family member with the signed form, has until 5 p.m. on Election Day.',
+			'es' => 'Puede que sí. El secretario de tu municipio o ciudad (town or city clerk) debe recibirla a más tardar a las 5 p. m. del martes 3 de noviembre, y el matasellos no cuenta. ¿La vas a entregar tú? Llévala al secretario a más tardar a las 5 p. m. del lunes 2 de noviembre. Un representante de entrega (delivery agent), como un familiar cercano con el formulario firmado, tiene hasta las 5 p. m. del Día de las Elecciones.',
+			'src' => 'https://www.sos.nh.gov/elections/absentee-ballots',
+			'checked' => '2026-10-30',
 		),
 	),
 	'NJ' => array(
@@ -6940,6 +6970,12 @@ return array(
 			'es' => 'Inscríbete en vote.ri.gov para seguir tu boleta por correo. Recibirás avisos cuando te la envíen y cuando la reciba la Junta Electoral (Board of Elections).',
 			'src' => 'https://vote.sos.ri.gov/Forms/Elections/Guides/VoterRef26.pdf',
 			'checked' => '2026-10-21',
+		),
+		'faq.late_mail' => array(
+			'en' => 'It may be. The Board of Elections must receive it by 8 p.m. on Tuesday, November 3, and the state says to allow seven mailing days. Instead, put it in any official elections drop box, or on Election Day in the ballot box at any polling place. You can also hand it in at the Board of Elections in Cranston.',
+			'es' => 'Puede que sí. La Junta de Elecciones (Board of Elections) debe recibirla a más tardar a las 8 p. m. del martes 3 de noviembre, y el estado recomienda dejar siete días para el correo. Mejor déjala en cualquier buzón oficial de entrega o, el Día de las Elecciones, en el receptáculo para boletas de cualquier lugar de votación. También puedes entregarla en la Junta de Elecciones en Cranston.',
+			'src' => 'https://vote.sos.ri.gov/Voter/VoteByMail',
+			'checked' => '2026-10-30',
 		),
 	),
 	'SC' => array(

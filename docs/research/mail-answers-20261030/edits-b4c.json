@@ -1,0 +1,14 @@
+[
+{"st":"MS","key":"late_mail","checked":"2026-10-30",
+ "src":"https://www.sos.ms.gov/content/documents/elections/2026%20Elections%20Calendar.pdf",
+ "quote":"Absentee Ballots Returned by Mail Receipt Deadline, 5:00 p.m.: Circuit Clerk’s Offices must be in actual receipt of absentee ballots returned by mail for ballots to be timely. Ballots returned by mail must be postmarked on or before Election Day. (Miss. Code Ann.. §23-15-637).",
+ "en":"Not if it's postmarked by Tuesday, November 3, and your Circuit Clerk receives it by 5 p.m. on Tuesday, November 10. Mail it as soon as you can.",
+ "es":"No, si tiene matasellos del martes 3 de noviembre o antes y la oficina del secretario del tribunal de circuito (Circuit Clerk) la recibe a más tardar a las 5 p. m. del martes 10 de noviembre. Envíala lo antes posible.",
+ "notes":"Pass 2 Oct 30, calendar PDF read (pdftotext). SOS Oct 26 notice restates Nov 3 / Nov 10 (Perplexity lead). Hand delivery: an older county handbook says it is illegal to hand deliver absentee ballots (Perplexity lead, not read; left out)."},
+{"st":"DE","key":"provisional","checked":"2026-10-30",
+ "src":"https://elections.delaware.gov/voter/hava/voting/provisional.html",
+ "quote":"Individuals who claim to be registered to vote in a federal election in a jurisdiction but are not on the official list of registered voters can cast a provisional ballot for candidates for Federal Offices only. ... By entering a unique number the voter can learn whether or not the ballot was counted and, if not, why?",
+ "en":"If you say you're registered but your name isn't on the list, you can vote a provisional ballot for federal offices only, after signing a statement that you're registered and eligible. It isn't counted if you aren't registered in Delaware. Afterward, enter the number you're given on the Department of Elections' provisional ballot page to see whether it counted, and why if not.",
+ "es":"Si dices que estás registrado pero tu nombre no está en la lista, puedes votar con una boleta provisional solo para cargos federales, después de firmar una declaración de que estás registrado y puedes votar. No se cuenta si no estás registrado en Delaware. Después, escribe el número que te den en la página de boletas provisionales del Departamento de Elecciones para ver si se contó y, si no, por qué.",
+ "notes":"Pass 2 Oct 30, read by curl. Not counted if not registered: Delaware Code title 15, ch. 49 (former src)."}
+]

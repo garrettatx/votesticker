@@ -218,12 +218,13 @@
  },
  "faq": {
   "provisional": {
-   "en": "If election officers can't confirm you're eligible, you can vote a provisional ballot for the federal offices on the ballot. The Department reviews provisional ballots the day after the election. A provisional ballot isn't counted if its affidavit is incomplete, if you didn't show identification, or if you aren't registered to vote in Delaware.",
-   "es": "Si los funcionarios electorales no pueden confirmar que tienes derecho a votar, puedes votar con una boleta provisional para los cargos federales de la boleta. El Departamento revisa las boletas provisionales el día después de la elección. Una boleta provisional no se cuenta si su declaración jurada está incompleta, si no mostraste identificación o si no estás registrado para votar en Delaware.",
-   "src": "https://delcode.delaware.gov/title15/c049/sc02/index.html",
-   "checked": "2026-10-28",
-   "quote": "If the individual who voted by provisional ballot did not show suitable identification at the polling place, the ballot must be set aside, must not be opened, and the votes not tallied.",
-   "status": "verified"
+   "en": "If you say you're registered but your name isn't on the list, you can vote a provisional ballot for federal offices only, after signing a statement that you're registered and eligible. It isn't counted if you aren't registered in Delaware. Afterward, enter the number you're given on the Department of Elections' provisional ballot page to see whether it counted, and why if not.",
+   "es": "Si dices que estás registrado pero tu nombre no está en la lista, puedes votar con una boleta provisional solo para cargos federales, después de firmar una declaración de que estás registrado y puedes votar. No se cuenta si no estás registrado en Delaware. Después, escribe el número que te den en la página de boletas provisionales del Departamento de Elecciones para ver si se contó y, si no, por qué.",
+   "src": "https://elections.delaware.gov/voter/hava/voting/provisional.html",
+   "checked": "2026-10-30",
+   "quote": "Individuals who claim to be registered to vote in a federal election in a jurisdiction but are not on the official list of registered voters can cast a provisional ballot for candidates for Federal Offices only. ... By entering a unique number the voter can learn whether or not the ballot was counted and, if not, why?",
+   "status": "verified",
+   "notes": "Pass 2 Oct 30, read by curl. Not counted if not registered: Delaware Code title 15, ch. 49 (former src). Replaces: If election officers can't confirm you're eligible, you can vote a provisional ballot for the federal offices on the ballot. The Department reviews provisional ballots the day after the election. A provisional ballot isn't counted if its affidavit is incomplete, if you didn't show identification, or if you aren't registered to vote in Delaware."
   },
   "line": {
    "en": "You can still vote. Anyone waiting in line by 8 p.m. on Election Day, inside or outside the voting room, is allowed to vote.",
