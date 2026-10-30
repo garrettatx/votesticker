@@ -136,3 +136,7 @@ Research files: `docs/research/election-week-20261029/` (home, texas, north-caro
 closing, hand postmark, Nov 10 receipt). Next: Garrett's call on `sticker.more`; if yes, Chrome reads for the
 curl-blocked pages, then build. Re-read these five pages' queries Nov 12.
 
+Push (9:49 p.m.): 11 commits (7 waiting plus 4 from this loop). Full QA passed first (facts, Spanish, SEO, events,
+save; stale check 28 known open-window lines). Run 40993926526 succeeded, IndexNow 200. Live: Texas shows the
+tracker, too-late-to-mail, mail-voter sticker and regular-ballot lines; home shows Oregon, Grand Rapids and Ann
+Arbor; Spanish Florida shows the no-ID provisional line.
