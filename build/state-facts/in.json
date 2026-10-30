@@ -260,7 +260,7 @@
   },
   "track": {
    "en": "Use the Indiana Voter Portal at indianavoters.in.gov. Pick \"Get Absentee Ballot Information\" and enter your county, name and date of birth. It shows whether your county processed your application, the date your ballot was mailed, and whether it was received.",
-   "es": "Usa el portal de votantes de Indiana (Indiana Voter Portal) en indianavoters.in.gov. Elige \"Get Absentee Ballot Information\" y escribe tu condado, tu nombre y tu fecha de nacimiento. Te muestra si tu condado procesó tu solicitud, la fecha en que te enviaron la boleta y si ya la recibieron.",
+   "es": "Usa el portal de votantes de Indiana (Indiana Voter Portal) en indianavoters.in.gov. Elige “Get Absentee Ballot Information” y escribe tu condado, tu nombre y tu fecha de nacimiento. Te muestra si tu condado procesó tu solicitud, la fecha en que te enviaron la boleta y si ya la recibieron.",
    "src": "https://www.in.gov/dA/0860f5ebaf/2026-Election-Administrators-Manual-Revised-Apr-2026.pdf",
    "checked": "2026-10-30",
    "quote": "An online absentee ballot status tool is available to all Indiana voters on www.indianavoters.gov. Voters may click the \"Get Absentee Ballot Information\" icon on the main landing page, which will prompt the individual to enter their county, first and last name, and date of birth as captured on their voter registration record. If a match is found, the voter can determine if the county has received and processed the voter's absentee ballot application, view the date the absentee ballot was mailed, and whether the ballot was received.",

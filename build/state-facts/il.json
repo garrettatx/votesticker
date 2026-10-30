@@ -223,7 +223,7 @@
   },
   "track": {
    "en": "Illinois has no statewide tracker; your local election authority runs one. Chicago: the Voter Information Lookup at chicagoelections.gov. Suburban Cook County: \"What Is My Mail Ballot Status\" at cookcountyclerkil.gov. DuPage, Will and Kane counties: BallotTrax at dupage.ballottrax.net, willcountyvotes.ballottrax.net and votekane.ballottrax.net. Anywhere else, check your county clerk's website.",
-   "es": "Illinois no tiene una herramienta estatal; la oficina electoral de tu localidad tiene la suya. Chicago: Voter Information Lookup en chicagoelections.gov. Los suburbios del condado de Cook: \"What Is My Mail Ballot Status\" en cookcountyclerkil.gov. Los condados de DuPage, Will y Kane: BallotTrax en dupage.ballottrax.net, willcountyvotes.ballottrax.net y votekane.ballottrax.net. En otros lugares, revisa el sitio web del secretario de tu condado (county clerk).",
+   "es": "Illinois no tiene una herramienta estatal; la oficina electoral de tu localidad tiene la suya. Chicago: Voter Information Lookup en chicagoelections.gov. Los suburbios del condado de Cook: “What Is My Mail Ballot Status” en cookcountyclerkil.gov. Los condados de DuPage, Will y Kane: BallotTrax en dupage.ballottrax.net, willcountyvotes.ballottrax.net y votekane.ballottrax.net. En otros lugares, revisa el sitio web del secretario de tu condado (county clerk).",
    "src": "https://chicagoelections.gov/voting/your-voter-information",
    "checked": "2026-10-30",
    "quote": "Voter Information Lookup ... Check the status of your Vote By Mail request & counted status",

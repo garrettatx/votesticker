@@ -2649,7 +2649,7 @@ return array(
 		),
 		'faq.track' => array(
 			'en' => 'Illinois has no statewide tracker; your local election authority runs one. Chicago: the Voter Information Lookup at chicagoelections.gov. Suburban Cook County: "What Is My Mail Ballot Status" at cookcountyclerkil.gov. DuPage, Will and Kane counties: BallotTrax at dupage.ballottrax.net, willcountyvotes.ballottrax.net and votekane.ballottrax.net. Anywhere else, check your county clerk\'s website.',
-			'es' => 'Illinois no tiene una herramienta estatal; la oficina electoral de tu localidad tiene la suya. Chicago: Voter Information Lookup en chicagoelections.gov. Los suburbios del condado de Cook: "What Is My Mail Ballot Status" en cookcountyclerkil.gov. Los condados de DuPage, Will y Kane: BallotTrax en dupage.ballottrax.net, willcountyvotes.ballottrax.net y votekane.ballottrax.net. En otros lugares, revisa el sitio web del secretario de tu condado (county clerk).',
+			'es' => 'Illinois no tiene una herramienta estatal; la oficina electoral de tu localidad tiene la suya. Chicago: Voter Information Lookup en chicagoelections.gov. Los suburbios del condado de Cook: “What Is My Mail Ballot Status” en cookcountyclerkil.gov. Los condados de DuPage, Will y Kane: BallotTrax en dupage.ballottrax.net, willcountyvotes.ballottrax.net y votekane.ballottrax.net. En otros lugares, revisa el sitio web del secretario de tu condado (county clerk).',
 			'src' => 'https://chicagoelections.gov/voting/your-voter-information',
 			'checked' => '2026-10-30',
 		),
@@ -2832,7 +2832,7 @@ return array(
 		),
 		'faq.track' => array(
 			'en' => 'Use the Indiana Voter Portal at indianavoters.in.gov. Pick "Get Absentee Ballot Information" and enter your county, name and date of birth. It shows whether your county processed your application, the date your ballot was mailed, and whether it was received.',
-			'es' => 'Usa el portal de votantes de Indiana (Indiana Voter Portal) en indianavoters.in.gov. Elige "Get Absentee Ballot Information" y escribe tu condado, tu nombre y tu fecha de nacimiento. Te muestra si tu condado procesó tu solicitud, la fecha en que te enviaron la boleta y si ya la recibieron.',
+			'es' => 'Usa el portal de votantes de Indiana (Indiana Voter Portal) en indianavoters.in.gov. Elige “Get Absentee Ballot Information” y escribe tu condado, tu nombre y tu fecha de nacimiento. Te muestra si tu condado procesó tu solicitud, la fecha en que te enviaron la boleta y si ya la recibieron.',
 			'src' => 'https://www.in.gov/dA/0860f5ebaf/2026-Election-Administrators-Manual-Revised-Apr-2026.pdf',
 			'checked' => '2026-10-30',
 		),
@@ -6995,7 +6995,7 @@ return array(
 		),
 		'sticker.mail' => array(
 			'en' => 'Yes. Rhode Island puts an "I Voted by Mail" sticker in every mail ballot packet, along with your ballot, the certificate envelope, the instructions and a postage-paid return envelope.',
-			'es' => 'Sí. Rhode Island incluye un sticker de "I Voted by Mail" en cada paquete de boleta por correo, junto con tu boleta, el sobre del certificado, las instrucciones y un sobre de devolución con franqueo pagado.',
+			'es' => 'Sí. Rhode Island incluye un sticker de “I Voted by Mail” en cada paquete de boleta por correo, junto con tu boleta, el sobre del certificado, las instrucciones y un sobre de devolución con franqueo pagado.',
 			'src' => 'https://vote.sos.ri.gov/Voter/VotebyMail',
 			'checked' => '2026-10-30',
 		),
