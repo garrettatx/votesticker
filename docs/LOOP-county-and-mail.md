@@ -36,7 +36,7 @@ last-minute answer for their state, both from an official source.
 | 1 | **County Stickers**: a heading under the state's premade sticker gallery listing official county sticker stories (design, who made it, where voters get it, paper or digital), each with its own official source and quote. Optional `sticker.more` list in `build/state-facts/<abbr>.json`, rendered by `facts_text.py` and `site/index.php`, checked by `qa_facts`. Order by search demand (Garrett, Oct 30): counties with Search Console queries on our pages first, then counties with Ahrefs volume for "[county] i voted sticker", then strong verified entries with no measured demand. Demand-backed counties go first in each state's list, and the log shows each county's number. The dozen verified Oct 29 (LOOP-state-pages.md, loop 1 entry) are candidates, not a given | "[state] i voted sticker" is the top query on every state page; county contest pages outrank us; check GSC queries with county names and Ahrefs "[county] i voted sticker" first | Built Oct 30: 17 entries in 7 states (pass 1); more states next |
 | 2 | **Last-minute mail answers for every state**: "Is it too late to mail my ballot?", "How do I track my mail ballot?", "My name isn't on the list" (provisional ballot). Done for TX, NC, FL Oct 29. Postmark vs. receipt, and where to hand it in, vary by state | Election-week searches Nov 1 to 3; a wrong generic answer can cost a vote | Pass 2 Oct 30: 23 states filled or fixed. Pass 3 Oct 30: name-not-on-the-list answers for MN MS NH (new) and TN SC NJ NE NV IA (stronger); trackers for IL (county list), IN and SD (statewide; pass 2 had them wrong as missing). Left: MO tracker (local only), ME and IN provisional lines |
 | 3 | Open fact calls before the Nov 2 banner: NJ cure deadline (timeline vs. poster); ID affidavit routes AK AZ IA ND OK WY; ALLOW_HOSTS for official county sites on .com/.org (Camden NJ, Washington County MD, Johnson and Montgomery County KS) | Possible wrong answers on the busiest day | Pass 3 Oct 30: ID routes fixed (WY was wrong, ND incomplete; AK AZ IA OK right); ALLOW_HOSTS added; AR conflict gone (SOS FAQ now agrees); NJ left as is (Garrett) |
-| 4 | Spanish wording decided by evidence: "lugar de votación" vs. "casilla"; "Ya voté" vs. "Yo voté" on stickers. What official U.S. Spanish election pages and stickers say, plus Spanish search volume (Ahrefs US, GSC). Recommendation to Garrett, then apply | Open questions in `docs/spanish-style.md` | Open |
+| 4 | Spanish wording decided by evidence: "lugar de votación" vs. "casilla"; "Ya voté" vs. "Yo voté" on stickers. What official U.S. Spanish election pages and stickers say, plus Spanish search volume (Ahrefs US, GSC). Recommendation to Garrett, then apply | Open questions in `docs/spanish-style.md` | Done Oct 31 (pass 5): "lugar de votación" and "cierra la votación" (no "casillas"); "Yo voté" in text, titles and the maker. Left: the bespoke state images that still read YA VOTÉ (Garrett's call, after Nov 4) |
 | 5 | Michigan page order: official 2026 designs right after our gallery; trim repeated voting facts | Clearscope Michigan read | Done Oct 31 (pass 4): `sticker.lead`, story after the gallery, four repeats trimmed |
 | 6 | After Nov 3: each state's official results page link and certification date where the state publishes one | Nov 4 to 10 searches | Nov 4 to 5 |
 | 7 | History: notable designs prompt (not run Oct 29) | "i voted sticker history" 133 impressions at 8.7 | After Nov 3 |
@@ -448,6 +448,135 @@ designs, maker.
 - Nov 4: post-election build deployed by 7 a.m. (dispatch with `2026-11-04` if not); spot-check EN and ES, Michigan's
   lead section included.
 - Nov 5: remove the `30 6 4 11 *` cron; log the release in `docs/change-log.csv`.
-- Consider teaching `qa_stale.py` the clause split (it skips any sentence containing "closed", "was" or "ended").
-- Item 4: Spanish wording ("lugar de votación" vs "casilla", "Ya voté" vs "Yo voté"), decided by evidence.
+- Done in pass 5: the `qa_stale.py` clause split and item 4 (Spanish wording). Pass 5's Next list replaces this one.
 - Item 6: results certification per state after Nov 3. Item 7: history, notable designs prompt.
+
+### October 31: Pass 5, Spanish Wording and Stale-Text Check
+
+**Goal.** Settle item 4 with evidence and apply it; teach `qa_stale.py` to read clause by clause; close the Montana,
+South Dakota and Arizona calls from pass 4. Pulled first (up to date).
+
+**Research.** Perplexity project "VoteSticker.org Research", one prompt. Deep Research picked from the "+" menu, no
+lock this time; it "Finished 56s" with a full answer (143 sources). The mode pill sat on Computer when the page
+loaded; switched to Search and checked on a zoomed screenshot before sending. Nothing ran in Computer. Every claim
+used below was then read on the official page (curl or Chrome); table, quotes and search numbers in
+`docs/research/spanish-wording-20261031/evidence.md`. No Firecrawl.
+
+**Decision 1: "lugar de votación", and "cierra la votación" for polls closing.**
+- Federal and most state and county pages say "lugar de votación" or "centro de votación" and close with "urnas" or
+  "votación": vote.gov/es ("Encuentre su lugar de votación"; "Los horarios de apertura y cierre de los centros de
+  votación varían según la jurisdicción"), the EAC 2007 glossary ("in line when the polls close: en fila cuando
+  cierra la votación"), the EAC 2021 glossary ("Polling Location (Lugar de votación)"), California SOS ("Las urnas
+  están abiertas de 7:00 a.m. a 8:00 p.m."), San Francisco's 2024 pamphlet (38 "lugares de votación", no
+  "casilla"), Miami-Dade ("Las urnas cierran a las 7 p.m.; si está en la fila, podrá votar."), Harris County
+  ("Centros de Votación").
+- The EAC glossary files "casilla" under voting booth, by region: "casilla de votación (Cuba); casilla electoral
+  (PR)". Mexico's INE uses it for the polling station.
+- Texas is the exception: votetexas.gov/es/preguntas-frecuentes says "casilla electoral" 17 times and "antes de que
+  cierre la casilla el día de la elección". That is real U.S. usage, so "casilla" isn't wrong; it just isn't the
+  neutral national term.
+- Search (Ahrefs US): "lugar de votación" 150 and "lugar de votacion" 100 a month; "casilla electoral",
+  "casillas electorales" and "cierre de casillas" 0.
+- Applied: "cuando cierran las casillas" to "cuando cierra la votación", "antes de que cierren las casillas" to
+  "antes de que cierre la votación", "Las casillas cierran a las 7 p. m." to "Los lugares de votación cierran a las
+  7 p. m.", "las casillas abren" to "los lugares de votación abren", "antes del cierre de las casillas" to "antes del
+  cierre de la votación". 24 strings in 15 state files (CT DC FL IA IL IN KS KY NC ND NE NH NM SD WV), the FAQ question "¿Qué pasa si estoy en la fila cuando cierra la votación en %s?" (es.php) and three
+  template sentences (index.php). "Casilla" stays only where it means a checkbox (MI, OR).
+
+**Decision 2: "Yo voté".**
+- What offices print: Pima County AZ memo ("“Yo Voté” in Spanish" on its trilingual sticker), San Luis Obispo County
+  CA (a 2026 "Yo voté" design by Aurelia, Pacheco Elementary, "distributed at all polling locations throughout the
+  county on Election Day, June 2, and again on November 3"), Portage MI ("¡YO VOTÉ! - SPANISH STICKER"), Maricopa
+  ("la clásica calcomanía "Yo voté""), San Miguel County CO ("¡Yo Voté!"), San Francisco's contest page ("una nueva
+  calcomanía que dice “¡Yo voté!”"). Instagram's 2018 Spanish sticker said "Yo Voté".
+- The only official "Ya voté" found: San Francisco's November 2024 Spanish pamphlet ("tómese una selfie con el
+  sticker de “¡Ya voté!”"), the same office whose contest page says "¡Yo voté!".
+- Search (Ahrefs US): "yo vote sticker" 20, "yo vote" 30, "yo voté" 10; "ya vote" 10, "ya voté" 0, "ya vote
+  sticker" 0. Search Console: "i voted yo vote" (3 impressions); no "ya vote" query.
+- Applied: every "Ya voté" in `site/i18n/es.php` (titles, metas, FAQ, home and hub copy), the Spanish state titles,
+  H1, ribbon, lead and description in `index.php`, share text ("Yo voté."), the history page art, and the maker
+  (labels and the drawn sticker now read YO VOTÉ, same as the classic set). Titles before and after, Texas on Nov 2
+  as the example: "Stickers de Ya voté y Ya voté temprano en Texas: vota el 3 nov" to "Stickers de Yo voté y Yo
+  voté temprano en Texas: vota el 3 nov"; home "Stickers gratis de Ya voté y Ya voté temprano por estado" to "...
+  Yo voté y Yo voté temprano ...". Volume favors the change (20 vs 0 for the sticker phrase) and Spanish pages had
+  under 30 impressions in two months, so there was little ranking to lose.
+- Not changed: the bespoke state images (four per state, about 200 files named `<state>-ya-vote-...`) still read
+  YA VOTÉ, with alt text that says so. Re-rendering renames image URLs on English and Spanish pages three days
+  before the election; left for Garrett after Nov 4. Both phrasings are correct Spanish, so the mix is safe for now.
+  The history page keeps "I have voted" (ya voté) as the translation of the 1920 tag. The ballot-bubble design now
+  fills its oval for YO VOTÉ too (it only knew YA VOTÉ).
+- `docs/spanish-style.md` glossary and open questions 3 and 7 updated.
+
+**New county sticker: San Luis Obispo County, CA** (`sticker.more`, demand 0): the "Yo voté" design above, from the
+county's April 3 release, quote read by curl. California's FAQ already said SLO's 2026 stickers are at its offices
+and polling places; the list entry adds the Spanish design.
+
+**qa_stale.py, clause by clause.** Sentences now split at commas, semicolons, colons and "and"/"but" ("y"/"pero");
+a comma after a weekday or before a year stays inside the date. Past tense is checked per clause and knows more
+verbs (reached, mailed, ran, began, sent, didn't, and Spanish preterites such as llegó, envió, cerraron, tenías).
+Ranges ("October 29 to 31", "del 17 al 30 de octubre") are judged by their end date. A start date already past
+("from October 19", "desde el 28 de octubre") while voting is open prints as WINDOW, for reading, not failure;
+after Election Day it counts as STALE. STALE lines exit 1. The old version printed 28 to 30 "known" lines a day
+that had to be read by hand; the new one prints 0 STALE on clean builds.
+- Mutation test: planted "Absentee applications closed October 27, and you can register when you vote early in
+  person through November 2." (EN) and "Las solicitudes cerraron el 27 de octubre, pero puedes registrarte cuando
+  votes por anticipado en persona hasta el 2 de noviembre." (ES) in a Nov 3 build copy. Old script: missed the
+  English one (the sentence has "closed"); new script: both flagged, exit 1.
+- Real hits it found: Nevada's Clark County sticker line said "for early voting October 17 to 30", which the old
+  check missed (the "to 30" range had no month). Dates removed (EN and ES); the line describes the guide, not a
+  deadline. Kentucky's "Thursday to Saturday, October 29 to 31" and New York's "Early voting ran October 24 to
+  November 1" were false alarms in the first draft, fixed in the script (ranges; "ran").
+- Final: 0 STALE on 2026-10-31 (107 WINDOW), 11-01 (78), 11-02 (41), 11-03 (5) and 11-04 (0).
+
+**Election Day gaps.**
+- South Dakota line answer (`faq.line`) added: SDCL 12-2-3 on sdlegislature.gov, read by curl: "However, no polling
+  place may be closed at any election until all the voters who have presented themselves at the polling place
+  inside or outside for the purpose of voting prior to the time of the closing of the polls have had time to cast
+  their ballots." The SOS 2026 Precinct Manual agrees ("Polls are not to be closed until all voters, who are in line
+  at the polls, inside or outside, prior to 7:00 p.m., have had the opportunity to vote.").
+- Montana: not added. MCA 13-1-106 (hours), 13-13-101 (proclamation) and 13-2-304 (late registration), read on
+  mca.legmt.gov, say nothing about voters in line. The only text is SOS Election Directive #04-08 ("Any person in
+  line at 8:00 p.m. at the polling place or at the election office or designated location must be allowed to stay
+  in line and register and vote."), last updated October 5, 2016. It is still posted on sosmt.gov and already backs
+  the line in Montana's poll-rules box; a 2016 directive isn't the "current official page" the rule asks for, so no
+  FAQ answer.
+- Arizona ID cure date: **Sunday, November 8 is right.** The SOS 2025-2026 Election Calendar (revised 5/5/2026,
+  page 16, read in Chrome's PDF viewer) lists "11/8/2026 ... Last day for identification verification for
+  Conditional Provisional Ballots." with "Sunday." in the holiday column, and its footnote says "2024 Az Leg Session
+  Law changed signature cure to calendar days thru 2026. Sunday deadline does not move to next day." The SOS page's
+  "5th business day" is the permanent statute the session law overrides through 2026. Call closed; no change.
+
+**QA.** Full suite on the local build before the push (facts, Spanish `--base`, SEO `--no-legacy`, events, save,
+cards; stale above).
+QA passed: facts (51 states, 102 pages), Spanish (54 page pairs), SEO (54 pages, 1,049 internal links), events, save,
+and cards (78,240 cards each in Chromium and WebKit, 0 outside the circle; `dist/` left alone while it ran).
+
+**Push (commits 0f571f8 and b528661, about 1:35 p.m.).** The push didn't start a build, so I dispatched run 41230438351.
+It succeeded, live QA passed on the first try, and IndexNow returned HTTP 200 for all 108 URLs (app.js and es.php changed
+every page's hash). Live: Spanish Texas reads "Stickers de Yo voté y Yo voté temprano en Texas: vota el 3 nov", the
+Spanish home page reads "Stickers gratis de Yo voté y Yo voté temprano por estado", Spanish Florida says "cuando cierra
+la votación" with no "casillas", Spanish South Dakota has the line answer, California lists San Luis Obispo County,
+and the live app.js draws YO VOTÉ.
+
+**Open Fact Calls.**
+- Montana line at closing: the only text is a 2016 SOS directive. A current SOS page or a statute is still needed.
+- Bespoke YA VOTÉ images (about 200, named `<state>-ya-vote-...`): re-render as YO VOTÉ with redirects after Nov 4?
+  Garrett's call. The text now says Yo voté and the images still say Ya voté; both are correct Spanish.
+- Florida DOS Spanish hours line ("Las urnas de votación abren a las 7 a.m. y cierran a las 7 p.m."): the PDF was read
+  by curl, but only the "urnas" count was confirmed, not the whole sentence. It isn't on the page, only in the
+  evidence file.
+- Arizona ID cure date: closed (Nov 8, SOS calendar). New Hampshire lookup CAPTCHA, NYC 2026 stickers and time zone
+  county lists: unchanged from pass 4.
+
+**Next (after the Sunday Nov 1, 7 p.m. freeze: fact fixes and text inside existing slots only).**
+- Each day through Nov 4: `python3 -I scripts/qa_stale.py <date> dist` on a `VOTE_TODAY` build. Any STALE line is a
+  bug; WINDOW lines are for reading. Run it on the live pages too (pass 4's clause-scan item is now this script).
+- Nov 1: index snapshot (`archive_search.py --index`); confirm the Nov 1 build submits the pages whose after-text
+  turns on (OH, NJ, NY, CT, NC).
+- Nov 2: reread the Kansas advance voting page and Arizona's flooding notice; dispatch the build by hand if none by
+  7 a.m.; banner check on 5 states EN and ES.
+- Nov 3: spot-check AL, CT, LA, NH, OK late-mail answers and MN, MA registration answers.
+- Nov 4: post-election build by 7 a.m.; spot-check EN and ES, Michigan's lead section included.
+- Nov 5: remove the `30 6 4 11 *` cron; log the release in `docs/change-log.csv`.
+- After Nov 4, Garrett's call: re-render the bespoke YA VOTÉ images as YO VOTÉ (with 301s from the old names).
+- Item 6: results certification per state. Item 7: history, notable designs prompt.
