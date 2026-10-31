@@ -857,4 +857,12 @@ clauses; with VOTE_TODAY=2026-11-04: 0 stale, 0 open-window.
 **Screenshots.** `docs/research/history-timeline-20261031/shots/`: before-chart-en-375 and -1280; after-chart-en-375,
 -en-1280, -es-320, -es-768, -es-1024 (local build). Live shots: see the push note below.
 
-**Push.** One push, Oct 31 evening; workflow, live checks and IndexNow in the next note.
+**Push.** One push (a9ac2da, about 6:05 p.m.; 74071c3 had already gone up with the outreach-plan push). Workflow
+dispatched: run 41251069884 built, passed its QA, deployed to Cloudflare Pages, passed live QA, and IndexNow answered
+HTTP 200. Its last step ("Commit build records") was rejected because pass 8 pushed 66513ad during the run; pass 8's
+own run (41251428335) writes the build records. Live: `qa_history.mjs --base https://votesticker.org/` OK (EN and ES,
+320 to 1440); 26 overview links on each page; no sideways scroll at 375 or 1280. Live shots:
+`docs/research/history-timeline-20261031/shots/live-chart-{en,es}-{375,1280}.png`.
+
+**Open for Garrett.** Nothing blocking. Optional: whether phones should show short labels on more chips (now only the
+nine turning points carry a label), and the page and site-wide measure ideas above, after Nov 4.
