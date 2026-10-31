@@ -42,6 +42,9 @@ from other sites linking to and writing about this one.
     included or only distribution to AP; which USA TODAY and Nexstar sites, and what decides relevance; a recent
     report for a comparable nonpartisan public-service site; earliest publish time for a new, unverified account;
     the refund if it's rejected or late.
+  - **EIN rules (checked Oct 31):** no "you" outside quotes; contact name, phone and email are required; new
+    accounts can take up to two business days to verify, then about two hours of review. Texas targeting comes
+    from the location field. EIN-ready copy: `docs/press-release-ein.html`.
   - **Timing:** same-day is for verified accounts on business days, so nothing goes out this weekend. Best use:
     the Nov 4 to 15 history story, not a launch notice.
 - **A better hook than "we launched a site."** The history page has original research no one else has
