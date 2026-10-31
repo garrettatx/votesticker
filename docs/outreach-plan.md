@@ -29,6 +29,21 @@ from other sites linking to and writing about this one.
   $399 from eReleases) mostly republish on low-traffic news-feed sites. Those links usually carry no ranking
   weight, and republishing isn't a reporter writing a story. One free PRLog post is fine as a backstop. Spend
   money only if Garrett wants it, after the personal pitches.
+- **If Garrett buys one wire release** (second Perplexity review, Oct 31; published prices and reviews, not a
+  test purchase):
+  - **Choice:** EIN Presswire Basic, $149, one release, no credit bundle. It's the only budget option that names
+    general-news partners (AP News, Nexstar, USA TODAY Network sites "based on relevance"). Trustpilot 3.5 from
+    179 reviews: mixed. Fallback: PR Underground Basic, $74.99 (G2 4.3 from 107, Trustpilot 3.2 from 18),
+    whose named outlets are mostly aggregators. Skip PR Underground's $419.99 tier: its extras are finance
+    sites. Buy direct, never from a forum reseller.
+  - **What it buys:** distribution and syndicated copies, not a reporter's story. Both vendors disclaim pickups.
+    Count earned stories and real referral visits, not syndicated links.
+  - **Ask EIN before paying:** whether this topic qualifies for every partner; whether APNews.com publication is
+    included or only distribution to AP; which USA TODAY and Nexstar sites, and what decides relevance; a recent
+    report for a comparable nonpartisan public-service site; earliest publish time for a new, unverified account;
+    the refund if it's rejected or late.
+  - **Timing:** same-day is for verified accounts on business days, so nothing goes out this weekend. Best use:
+    the Nov 4 to 15 history story, not a launch notice.
 - **A better hook than "we launched a site."** The history page has original research no one else has
   published: "I have voted" tags back to a 1920 St. Louis Board of Education report, earlier than the 1980s
   stories most articles repeat. "Where the I voted sticker came from" is a story a reporter can write. "A website
