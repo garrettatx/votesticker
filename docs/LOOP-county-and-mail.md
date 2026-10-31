@@ -1050,3 +1050,13 @@ qa_events, qa_save, qa_cards, qa_history: PASS. qa_history now also checks the c
 no overflow, source link, timeline link lands); `--plant find` fails it as it should, and the overlap, overflow and dots
 plants still fail. qa_stale: 0 STALE on 10-31 (107 WINDOW), 11-02 (41), 11-04 (0). Screenshots:
 `docs/research/history-timeline-20261031/shots/history-callout-*.png` (EN and ES at 375 and 1280, overview chips at 375).
+
+**Push (commit 2cd2daf, about 7 p.m.).** Pulled three docs commits first (press release, outreach plan). One push;
+dispatched run 41254545724: every step passed, including live QA and "Commit build records" (b1a7284). IndexNow: "108
+sitemap URLs, 2 to submit", "IndexNow answered HTTP 200" (/history/ and /es/history/). Live curl: both titles, the new
+descriptions, the callout heading and the "Annual Report, vol. 67 (1920–21), p. 52" source line. qa_history against
+https://votesticker.org/: OK at all seven widths.
+
+**For Garrett.** The title now reads "From 1920 Tags to Today": it's the page's span, not an origin claim, but say if you'd
+rather keep "Where It Came From". The release could cite the source the way the page now does: "St. Louis Board of
+Education, Annual Report, vol. 67 (1920–21)".
