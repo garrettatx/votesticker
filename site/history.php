@@ -112,66 +112,97 @@ function vote_h_cite( $urls ) {
 // the build refuses a draft, so this never reaches the live site).
 function vote_h_pending( $item ) { return ! empty( $item['pending'] ) ? ' <span class="h-pending">' . vote_e( t( 'Being checked' ) ) . '</span>' : ''; }
 
-// The timeline: a track drawn to scale, with the three eras shaded (the long quiet stretch and the 1980s
-// burst are the story), each mark linking to its entry in the list below. The list is the real content.
+// The marker for one kind of moment, as a small inline SVG. The shape says the kind; the key names it in
+// words, so nothing rests on shape or color alone.
+function vote_h_shape( $kind, $size = 16 ) {
+	$c = $size / 2; $r = $size * 0.34;
+	switch ( $kind ) {
+		case 'precursor': $s = '<circle cx="' . $c . '" cy="' . $c . '" r="' . $r . '" class="tl-k tl-k--open"/>'; break;
+		case 'uncertain': $s = '<circle cx="' . $c . '" cy="' . $c . '" r="' . $r . '" class="tl-k tl-k--dash"/>'; break;
+		case 'digital': $d = round( $r * 1.25, 2 ); $s = '<rect x="' . ( $c - $d / 2 ) . '" y="' . ( $c - $d / 2 ) . '" width="' . $d . '" height="' . $d . '" transform="rotate(45 ' . $c . ' ' . $c . ')" class="tl-k"/>'; break;
+		default: $s = '<ellipse cx="' . $c . '" cy="' . $c . '" rx="' . round( $r * 1.3, 2 ) . '" ry="' . round( $r * 0.92, 2 ) . '" class="tl-k"/>';
+	}
+	return '<svg class="tl-shape" viewBox="0 0 ' . $size . ' ' . $size . '" width="' . $size . '" height="' . $size . '" aria-hidden="true" focusable="false">' . $s . '</svg>';
+}
+
+// The three eras the overview groups events into. Event years decide membership; the ranges printed come from
+// the events themselves, so a new entry moves them without an edit here.
+function vote_h_eras( $events ) {
+	$eras = array( array( 1981, 'Origins' ), array( 1990, 'The 1980s' ), array( 9999, 'Contests and the internet' ) );
+	$out = array();
+	foreach ( $eras as $i => $era ) { $out[ $i ] = array( 'name' => $era[1], 'events' => array() ); }
+	foreach ( $events as $e ) { foreach ( $eras as $i => $era ) { if ( $e['year'] < $era[0] ) { $out[ $i ]['events'][] = $e; break; } } }
+	return array_values( array_filter( $out, function ( $g ) { return $g['events']; } ) );
+}
+
+// Dot positions on an era's track, in percent: placed by year, then pushed apart so two events in the same
+// year (or a year apart) never sit on top of each other, then pulled back inside the track.
+function vote_h_track_x( $events ) {
+	$n = count( $events ); $lo = 5; $hi = 95;
+	if ( 1 === $n ) { return array( 50 ); }
+	$y0 = $events[0]['year']; $y1 = $events[ $n - 1 ]['year'];
+	$gap = min( 9, ( $hi - $lo ) / ( $n - 1 ) * 0.9 );
+	$x = array();
+	foreach ( $events as $i => $e ) { $x[ $i ] = $y1 > $y0 ? $lo + ( $e['year'] - $y0 ) / ( $y1 - $y0 ) * ( $hi - $lo ) : $lo + $i * $gap; }
+	for ( $i = 1; $i < $n; $i++ ) { $x[ $i ] = max( $x[ $i ], $x[ $i - 1 ] + $gap ); }
+	$x[ $n - 1 ] = min( $x[ $n - 1 ], $hi );
+	for ( $i = $n - 2; $i >= 0; $i-- ) { $x[ $i ] = min( $x[ $i ], $x[ $i + 1 ] - $gap ); }
+	return array_map( function ( $v ) { return round( $v, 1 ); }, $x );
+}
+
+// The timeline overview: three eras side by side on a wide screen and stacked below that, each with a
+// short track of dots (decoration; the shapes repeat in the list) and a list of links, one per event, to its
+// entry in the full timeline below. Long quiet stretches between eras are breaks with the gap in words, not
+// empty axis. Plain HTML, so labels wrap instead of colliding, in either language, at any width.
 function vote_h_timeline( $events ) {
 	if ( ! $events ) { return ''; }
-	$y0 = 1880; $y1 = 2030; $x0 = 20; $x1 = 940; $mid = 92;
-	$x = function ( $y ) use ( $y0, $y1, $x0, $x1 ) { return round( $x0 + ( $y - $y0 ) / ( $y1 - $y0 ) * ( $x1 - $x0 ), 1 ); };
-	// The marker's shape says what kind of moment it is; the legend under the track names them.
-	$shape = function ( $kind, $cx, $cy, $big ) {
-		$r = $big ? 7 : 4.6;
-		switch ( $kind ) {
-			case 'precursor': return '<circle cx="' . $cx . '" cy="' . $cy . '" r="' . $r . '" class="tl-k tl-k--open"/>';
-			case 'uncertain': return '<circle cx="' . $cx . '" cy="' . $cy . '" r="' . $r . '" class="tl-k tl-k--dash"/>';
-			case 'digital': return '<rect x="' . ( $cx - $r * 0.8 ) . '" y="' . ( $cy - $r * 0.8 ) . '" width="' . ( $r * 1.6 ) . '" height="' . ( $r * 1.6 ) . '" transform="rotate(45 ' . $cx . ' ' . $cy . ')" class="tl-k"/>';
-			default: return '<ellipse cx="' . $cx . '" cy="' . $cy . '" rx="' . ( $r * 1.35 ) . '" ry="' . $r . '" class="tl-k"/>';
+	$eras = vote_h_eras( $events );
+	$nav = '';
+	foreach ( $eras as $i => $g ) {
+		$ev = $g['events']; $first = $ev[0]['year']; $last = $ev[ count( $ev ) - 1 ]['year'];
+		if ( $i ) {
+			$prev = $eras[ $i - 1 ]['events'];
+			$nav .= '<li class="tl-gap" aria-hidden="true"><span class="tl-gap__mark"></span><span class="tl-gap__txt">' . vote_e( t( '%s years later', $first - $prev[ count( $prev ) - 1 ]['year'] ) ) . '</span></li>';
 		}
-	};
-	$svg = '<svg class="tl-track" viewBox="0 0 960 172" role="presentation" focusable="false">';
-	// Three chapters, shaded behind the axis and named along the bottom.
-	foreach ( array( array( 1880, 1981, 'Origins' ), array( 1981, 1989, 'The 1980s' ), array( 2004, 2030, 'Contests and the internet' ) ) as $i => $era ) {
-		$svg .= '<rect x="' . $x( $era[0] ) . '" y="58" width="' . ( $x( $era[1] ) - $x( $era[0] ) ) . '" height="68" class="tl-era tl-era--' . $i . '"/>'
-			. '<text x="' . round( ( $x( $era[0] ) + $x( $era[1] ) ) / 2 ) . '" y="164" text-anchor="middle" class="tl-era-label">' . vote_e( t( $era[2] ) ) . '</text>';
-	}
-	$svg .= '<line x1="' . $x0 . '" y1="' . $mid . '" x2="' . $x1 . '" y2="' . $mid . '" class="tl-axis"/>';
-	foreach ( array( 1880, 1900, 1920, 1940, 1960, 1980, 2000, 2020 ) as $tick ) {
-		$svg .= '<line x1="' . $x( $tick ) . '" y1="' . ( $mid + 34 ) . '" x2="' . $x( $tick ) . '" y2="' . ( $mid + 40 ) . '" class="tl-tick"/><text x="' . $x( $tick ) . '" y="' . ( $mid + 54 ) . '" text-anchor="middle" class="tl-tick-label">' . $tick . '</text>';
-	}
-	// Milestones (events with a `mark` label) get a big marker and a label on one of two rows above the
-	// axis, so neighbors like 1985 and 1987 don't collide; every other event is a small marker.
-	$row = 0;
-	foreach ( $events as $e ) {
-		$cx = $x( $e['year'] );
-		$kind = $e['kind'] ?? 'sticker';
-		$tip = '<title>' . vote_e( $e['year'] . ': ' . vote_h_tx( $e['title'] ) ) . '</title>';
-		if ( empty( $e['mark'] ) ) {
-			$svg .= '<a href="#t-' . vote_e( $e['id'] ) . '" class="tl-mark tl-mark--small">' . $tip . $shape( $kind, $cx, $mid, false ) . '</a>';
-			continue;
+		$dots = '';
+		foreach ( vote_h_track_x( $ev ) as $j => $x ) {
+			$dots .= '<span class="tl-dot' . ( ! empty( $ev[ $j ]['mark'] ) ? ' tl-dot--key' : '' ) . '" style="left:' . $x . '%">' . vote_h_shape( $ev[ $j ]['kind'] ?? 'sticker', 14 ) . '</span>';
 		}
-		$ly = $row ? 40 : 18; $row = 1 - $row;
-		$anchor = $cx < 90 ? 'start' : ( $cx > 880 ? 'end' : 'middle' );
-		$svg .= '<a href="#t-' . vote_e( $e['id'] ) . '" class="tl-mark">' . $tip . '<line x1="' . $cx . '" y1="' . ( $ly + 5 ) . '" x2="' . $cx . '" y2="' . ( $mid - 9 ) . '" class="tl-lead"/>'
-			. '<text x="' . $cx . '" y="' . $ly . '" text-anchor="' . $anchor . '" class="tl-mark-label">' . vote_e( $e['year'] . ' ' . vote_h_tx( $e['mark'] ) ) . '</text>'
-			. $shape( $kind, $cx, $mid, true ) . '</a>';
+		$items = '';
+		foreach ( $ev as $e ) {
+			$kind = $e['kind'] ?? 'sticker';
+			$items .= '<li><a class="tl-i' . ( ! empty( $e['mark'] ) ? ' tl-i--key' : '' ) . '" href="#t-' . vote_e( $e['id'] ) . '">' . vote_h_shape( $kind )
+				. '<span class="tl-i__y">' . vote_e( $e['year'] ) . '</span> '
+				. '<span class="tl-i__txt">' . ( ! empty( $e['mark'] ) ? '<span class="tl-i__m">' . vote_e( vote_h_tx( $e['mark'] ) ) . '</span>' : '' )
+				. '<span class="tl-i__t">' . vote_e( vote_h_tx( $e['title'] ) ) . '</span>'
+				. ( 'uncertain' === $kind ? ' <span class="tl-i__q">' . vote_e( t( 'Evidence incomplete' ) ) . '</span>' : '' )
+				. '</span></a></li>';
+		}
+		$nav .= '<li class="tl-era tl-era--' . $i . '"><p class="tl-era__h"><span class="tl-era__name">' . vote_e( t( $g['name'] ) ) . '</span> <span class="tl-era__span">' . $first . '–' . $last . ' · ' . vote_e( t( count( $ev ) > 1 ? '%s entries' : '%s entry', count( $ev ) ) ) . '</span></p>'
+			. '<div class="tl-era__track" aria-hidden="true">' . $dots . '</div><ul class="tl-era__list">' . $items . '</ul></li>';
 	}
-	$svg .= '</svg>';
-	$key = '<p class="tl-key" aria-hidden="true">'
-		. '<span><svg viewBox="0 0 16 16" width="14" height="14"><circle cx="8" cy="8" r="5.5" class="tl-k tl-k--open"/></svg>' . vote_e( t( 'Before stickers' ) ) . '</span>'
-		. '<span><svg viewBox="0 0 16 16" width="16" height="14"><ellipse cx="8" cy="8" rx="7" ry="5" class="tl-k"/></svg>' . vote_e( t( 'Sticker milestone' ) ) . '</span>'
-		. '<span><svg viewBox="0 0 16 16" width="14" height="14"><rect x="4" y="4" width="8" height="8" transform="rotate(45 8 8)" class="tl-k"/></svg>' . vote_e( t( 'Digital' ) ) . '</span>'
-		. '<span><svg viewBox="0 0 16 16" width="14" height="14"><circle cx="8" cy="8" r="5.5" class="tl-k tl-k--dash"/></svg>' . vote_e( t( 'Evidence incomplete' ) ) . '</span></p>';
+	$key = '<p class="tl-key"><span>' . vote_h_shape( 'precursor', 14 ) . vote_e( t( 'Before stickers' ) ) . '</span>'
+		. '<span>' . vote_h_shape( 'sticker', 14 ) . vote_e( t( 'Sticker' ) ) . '</span>'
+		. '<span>' . vote_h_shape( 'digital', 14 ) . vote_e( t( 'Digital' ) ) . '</span>'
+		. '<span>' . vote_h_shape( 'uncertain', 14 ) . vote_e( t( 'Evidence incomplete' ) ) . '</span>'
+		. '<span class="tl-key__note">' . vote_e( t( 'Bold: turning points. Dots sit roughly by year within each era.' ) ) . '</span></p>';
+	$out = '<figure class="tl-wrap"><nav aria-label="' . vote_e( t( 'Timeline overview' ) ) . '"><ol class="tl-eras">' . $nav . '</ol></nav><figcaption>' . $key . '</figcaption></figure>';
+	// The full timeline: every entry with its story and source, under the same three era names.
 	$list = '<ol class="tl">';
-	foreach ( $events as $e ) {
-		$ev = empty( $e['pending'] )
-			? '<a class="tl__badge" href="' . vote_e( $e['src'] ) . '" target="_blank" rel="noopener"' . ( vote_es() ? ' lang="en"' : '' ) . '>' . vote_e( ucfirst( preg_replace( '/^the /', '', vote_h_src_name( $e['src'] ) ) ) ) . '</a>' . ( 'secondary' === $e['evidence'] ? ' <span class="tl__kind">' . vote_e( t( 'a later account' ) ) . '</span>' : '' )
-			: vote_h_pending( $e );
-		$list .= '<li class="tl__item" id="t-' . vote_e( $e['id'] ) . '"><p class="tl__year">' . vote_e( $e['label'] ?? $e['year'] ) . '</p><div class="tl__body">'
-			. '<h3 class="tl__title">' . vote_e( vote_h_tx( $e['title'] ) ) . '</h3>'
-			. '<p>' . vote_h_md( vote_h_tx( $e['body'] ) ) . '</p>'
-			. '<p class="tl__ev">' . $ev . '</p></div></li>';
+	foreach ( $eras as $i => $g ) {
+		$ev = $g['events'];
+		$list .= '<li class="tl__era" id="tl-era-' . $i . '"><p>' . vote_e( t( $g['name'] ) ) . ' <span>' . $ev[0]['year'] . '–' . $ev[ count( $ev ) - 1 ]['year'] . '</span></p></li>';
+		foreach ( $ev as $e ) {
+			$evd = empty( $e['pending'] )
+				? '<a class="tl__badge" href="' . vote_e( $e['src'] ) . '" target="_blank" rel="noopener"' . ( vote_es() ? ' lang="en"' : '' ) . '>' . vote_e( ucfirst( preg_replace( '/^the /', '', vote_h_src_name( $e['src'] ) ) ) ) . '</a>' . ( 'secondary' === $e['evidence'] ? ' <span class="tl__kind">' . vote_e( t( 'a later account' ) ) . '</span>' : '' )
+				: vote_h_pending( $e );
+			$list .= '<li class="tl__item tl__item--' . vote_e( $e['kind'] ?? 'sticker' ) . '" id="t-' . vote_e( $e['id'] ) . '"><p class="tl__year">' . vote_e( $e['label'] ?? $e['year'] ) . '</p><div class="tl__body">'
+				. '<h3 class="tl__title">' . vote_e( vote_h_tx( $e['title'] ) ) . '</h3>'
+				. '<p>' . vote_h_md( vote_h_tx( $e['body'] ) ) . '</p>'
+				. '<p class="tl__ev">' . $evd . '</p></div></li>';
+		}
 	}
-	return '<div class="tl-wrap"><div class="tl-scroll">' . $svg . '</div>' . $key . '</div>' . $list . '</ol>';
+	return $out . $list . '</ol>';
 }
 
 function vote_h_num( $v ) { return number_format( $v ); }
@@ -351,7 +382,10 @@ function vote_history() {
 		if ( ! empty( $sec['scenes'] ) ) { $out .= vote_h_scenes( $sec['scenes'] ); }
 		foreach ( $sec['charts'] ?? array() as $c ) { $out .= vote_h_chart( $d['charts'][ $c ] ); }
 		if ( ! empty( $sec['map'] ) ) { $out .= vote_h_map(); }
-		$out .= vote_h_paras( $sec['after'] ?? array() );
+		// The answer section's follow-up ("What We Still Don't Know") is a set-apart note, so the open questions
+		// read as part of the evidence rather than more narrative.
+		$after = vote_h_paras( $sec['after'] ?? array() );
+		$out .= ( 'answer' === $sec['id'] && $after ) ? '<div class="hist-open">' . $after . '</div>' : $after;
 		$out .= vote_h_cite( $srcs );
 		if ( ! empty( $sec['cta'] ) ) { $out .= '<p class="jump"><a class="btn btn--gold" href="' . vote_pbase() . '#state-find">' . vote_e( t( 'Make a sticker for your state' ) ) . '</a></p>'; }
 		$out .= '</section>';
