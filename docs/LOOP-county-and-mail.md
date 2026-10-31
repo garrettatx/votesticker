@@ -36,7 +36,7 @@ last-minute answer for their state, both from an official source.
 | 1 | **County Stickers**: a heading under the state's premade sticker gallery listing official county sticker stories (design, who made it, where voters get it, paper or digital), each with its own official source and quote. Optional `sticker.more` list in `build/state-facts/<abbr>.json`, rendered by `facts_text.py` and `site/index.php`, checked by `qa_facts`. Order by search demand (Garrett, Oct 30): counties with Search Console queries on our pages first, then counties with Ahrefs volume for "[county] i voted sticker", then strong verified entries with no measured demand. Demand-backed counties go first in each state's list, and the log shows each county's number. The dozen verified Oct 29 (LOOP-state-pages.md, loop 1 entry) are candidates, not a given | "[state] i voted sticker" is the top query on every state page; county contest pages outrank us; check GSC queries with county names and Ahrefs "[county] i voted sticker" first | Built Oct 30: 17 entries in 7 states (pass 1); more states next |
 | 2 | **Last-minute mail answers for every state**: "Is it too late to mail my ballot?", "How do I track my mail ballot?", "My name isn't on the list" (provisional ballot). Done for TX, NC, FL Oct 29. Postmark vs. receipt, and where to hand it in, vary by state | Election-week searches Nov 1 to 3; a wrong generic answer can cost a vote | Pass 2 Oct 30: 23 states filled or fixed. Pass 3 Oct 30: name-not-on-the-list answers for MN MS NH (new) and TN SC NJ NE NV IA (stronger); trackers for IL (county list), IN and SD (statewide; pass 2 had them wrong as missing). Left: MO tracker (local only), ME and IN provisional lines |
 | 3 | Open fact calls before the Nov 2 banner: NJ cure deadline (timeline vs. poster); ID affidavit routes AK AZ IA ND OK WY; ALLOW_HOSTS for official county sites on .com/.org (Camden NJ, Washington County MD, Johnson and Montgomery County KS) | Possible wrong answers on the busiest day | Pass 3 Oct 30: ID routes fixed (WY was wrong, ND incomplete; AK AZ IA OK right); ALLOW_HOSTS added; AR conflict gone (SOS FAQ now agrees); NJ left as is (Garrett) |
-| 4 | Spanish wording decided by evidence: "lugar de votación" vs. "casilla"; "Ya voté" vs. "Yo voté" on stickers. What official U.S. Spanish election pages and stickers say, plus Spanish search volume (Ahrefs US, GSC). Recommendation to Garrett, then apply | Open questions in `docs/spanish-style.md` | Done Oct 31 (pass 5): "lugar de votación" and "cierra la votación" (no "casillas"); "Yo voté" in text, titles and the maker. Left: the bespoke state images that still read YA VOTÉ (Garrett's call, after Nov 4) |
+| 4 | Spanish wording decided by evidence: "lugar de votación" vs. "casilla"; "Ya voté" vs. "Yo voté" on stickers. What official U.S. Spanish election pages and stickers say, plus Spanish search volume (Ahrefs US, GSC). Recommendation to Garrett, then apply | Open questions in `docs/spanish-style.md` | Done Oct 31 (pass 5): "lugar de votación" and "cierra la votación" (no "casillas"); "Yo voté" in text, titles and the maker. Images: Done Oct 31 (pass 6): 204 bespoke stickers redrawn as YO VOTÉ, 204 301s, Spanish post-election share cards redrawn |
 | 5 | Michigan page order: official 2026 designs right after our gallery; trim repeated voting facts | Clearscope Michigan read | Done Oct 31 (pass 4): `sticker.lead`, story after the gallery, four repeats trimmed |
 | 6 | After Nov 3: each state's official results page link and certification date where the state publishes one | Nov 4 to 10 searches | Nov 4 to 5 |
 | 7 | History: notable designs prompt (not run Oct 29) | "i voted sticker history" 133 impressions at 8.7 | After Nov 3 |
@@ -560,8 +560,7 @@ and the live app.js draws YO VOTÉ.
 
 **Open Fact Calls.**
 - Montana line at closing: the only text is a 2016 SOS directive. A current SOS page or a statute is still needed.
-- Bespoke YA VOTÉ images (about 200, named `<state>-ya-vote-...`): re-render as YO VOTÉ with redirects after Nov 4?
-  Garrett's call. The text now says Yo voté and the images still say Ya voté; both are correct Spanish.
+- Bespoke YA VOTÉ images: done in pass 6 (Garrett approved the redraw with redirects, Oct 31).
 - Florida DOS Spanish hours line ("Las urnas de votación abren a las 7 a.m. y cierran a las 7 p.m."): the PDF was read
   by curl, but only the "urnas" count was confirmed, not the whole sentence. It isn't on the page, only in the
   evidence file.
@@ -578,5 +577,88 @@ and the live app.js draws YO VOTÉ.
 - Nov 3: spot-check AL, CT, LA, NH, OK late-mail answers and MN, MA registration answers.
 - Nov 4: post-election build by 7 a.m.; spot-check EN and ES, Michigan's lead section included.
 - Nov 5: remove the `30 6 4 11 *` cron; log the release in `docs/change-log.csv`.
-- After Nov 4, Garrett's call: re-render the bespoke YA VOTÉ images as YO VOTÉ (with 301s from the old names).
+- Done in pass 6: the bespoke YO VOTÉ redraw. Pass 6's Next list replaces this one.
+- Item 6: results certification per state. Item 7: history, notable designs prompt.
+
+### October 31: Pass 6, Yo Voté Sticker Images and Redirects
+
+**Goal.** Garrett, Oct 31: "Proceed with redirects where needed and push any high priority time sensitive items."
+Redraw the bespoke Spanish stickers that still printed YA VOTÉ, with a 301 from every old URL, live before the
+Sunday 7 p.m. freeze. Pulled first (up to date).
+
+**Redraw: 204 images.** Every state's `<state>-ya-vote-...` file (156 YA VOTÉ, 43 YA VOTÉ TEMPRANO, one per early
+voting state, and 5 YA VOTÉ POR CORREO in CA CO HI OR WA) is now `<state>-yo-vote-...` and reads YO VOTÉ, YO VOTÉ TEMPRANO or YO VOTÉ
+POR CORREO. `scripts/render_bespoke.mjs` has a new `--headlines=yavote,yavotetemprano,yavotecorreo` mode: it
+redraws only those slots, leaves the other 510 bespoke files and their pixels alone, and stops if a slot's recipe
+(design, palette, tilt, rays, language) differs from the old file's entry in `bespoke.json`. None did. Its file
+names and alt text now say yo-vote and "Yo voté"; the internal headline keys (`yavote`...) stay, since the maker
+already draws them as YO VOTÉ (pass 5).
+- Checks: `alts.json` and `bespoke.json` equal the old files with only the stem and "Ya voté" to "Yo voté" changed
+  (dates and colors identical; 408 alt lines, English "reading Yo voté" and Spanish "que dice: Yo voté"). Pixel diff
+  old vs new: 0.4% to 4% of pixels changed per image, all in the headline. Looked at old and new side by side for
+  DC (temprano, half), California (por correo, big type), North Carolina (temprano, below), DC (masthead), West
+  Virginia (temprano, split), Texas (temprano), Pennsylvania (tilt), Massachusetts (varsity), and new-only for
+  ring, round, arch, brush, plate, side, below, half, split, tilt and big type on the longest state names. All fit;
+  YO is a touch wider than YA and nothing crowds the edge. (The ballot-bubble oval from pass 5 is a maker design,
+  not in the bespoke sets.)
+- Built pages compared with the build from before the change, all 108 pages and the sitemap: no difference beyond
+  the file names, "Yo voté" in alt text and the version stamps. Gallery order is unchanged: `index.php`
+  `vote_file_cmp()` sorts the yo-vote files by their old name, otherwise "Yo también votaré" would have jumped ahead
+  of the Yo voté stickers on Spanish pages and the Spanish home showcase would have swapped six of its eight picks.
+  The English home showcase's Pennsylvania pick now names `pennsylvania-yo-vote-tilt-sticker`.
+- References: galleries, `VOTE_GALLERY`, the image sitemap (288 yo-vote image entries, 0 ya-vote) and alt text all
+  come from the files on disk and `alts.json`; og:image doesn't use these files. `build/sticker-collection.json`
+  regenerated (it was also behind on the county sticker facts from passes 1 to 5; data only, no page reads it).
+- Old files: deleted from the repo (`git rm` by path). The 301s cover them, and keeping them would let a stale
+  image keep serving under an old URL.
+
+**Redirects: 204 static 301s.** `build/image-renames.json` lists old to new; `build/build_static.py` writes one
+line each at the top of `dist/_redirects` and stops the build if an old file is still there, a new one is missing,
+or the count passes 2,000. A splat can't do it: Cloudflare Pages placeholders and splats match whole path segments,
+not part of a file name. `_redirects` now holds 204 static rules and the 12 dynamic `/go/` rules (limits 2,000 and
+100).
+
+**Found during the work: Spanish post-election share cards.** The Nov 4 set (`assets/og/es/post/*.jpg`, 51 states,
+and `og-hub-es-post.jpg`) still drew YA VOTÉ and the ribbon "STICKERS DE YA VOTÉ, GRATIS", from Oct 25. Redrawn
+from a `VOTE_TODAY=2026-11-04` build: YO VOTÉ and "STICKERS DE YO VOTÉ, GRATIS". Same URLs (they're versioned by
+hash), so no redirects. First attempt drew pre-election cards because port 8793 was already taken by an older
+server; caught on the contact sheet, restored, redrawn from port 8797. The early-voting-ended sets (EN, ES), used
+Nov 1 to 3, were redrawn from a Nov 3 build to compare: Spanish identical, English four cards differ only in a small
+background sticker, so the originals were kept.
+
+**QA.** Before the push, local on 8792: facts (51 states, 102 pages), Spanish (54 pairs), SEO `--no-legacy` (54
+pages, 1,049 links), events, save, cards (78,240 each in Chromium and WebKit, 0 outside the circle),
+`bespoke_check.py`, `image_names.py --check`, `sticker_collection.py --check`; `qa_stale.py` 0 STALE on 10-31 (107
+WINDOW), 11-02 (41), 11-03 (5), 11-04 (0).
+
+**Push (commit 83dc4e6, about 2:25 p.m.).** 468 files (204 deleted, 204 added, 52 share cards, 8 code and data).
+The push didn't start a build; dispatched run 41234314170: success, live QA passed, IndexNow HTTP 200 (108 URLs;
+build records commit 3aabd55).
+- Live: all 204 old URLs curled. 198 answer 301 to the right new URL; each new URL checked answers 200 image/jpeg
+  (Texas, Alaska, DC temprano, California por correo, Pennsylvania tilt). Six (AR side, HI arch, LA half, MN ring,
+  MO tilt, OH round) still answered 200 from Cloudflare's edge cache (`cf-cache-status: HIT`, `age: 84391`,
+  `max-age=86400`); the same URL with a query string returns the 301, so the rule is live and the cached copies age
+  out within a day. No purge (that's a dashboard action).
+- Spanish Texas lists the four `texas-yo-vote-...` images; the live sitemap has no ya-vote entry; the home page
+  shows `pennsylvania-yo-vote-tilt`; `/assets/og/es/post/texas.jpg` answers 200.
+
+**Task 2 (other time-sensitive items).** Nothing else qualified. The Next list is all dated checks (Nov 1 to 5),
+and the Open Fact Calls (Montana line, Florida Spanish hours line) need new research, not a fix. The Spanish
+post-election share cards above were the one time-sensitive find.
+
+**Open.**
+- Six old image URLs served from edge cache at check time; recheck after a day (expect 301).
+- Montana line at closing and the Florida DOS Spanish hours sentence: unchanged from pass 5.
+
+**Next (after the Sunday Nov 1, 7 p.m. freeze: fact fixes and text inside existing slots only).**
+- Each day through Nov 4: `python3 -I scripts/qa_stale.py <date> dist` on a `VOTE_TODAY` build. Any STALE line is a
+  bug; WINDOW lines are for reading. Run it on the live pages too.
+- Nov 1: index snapshot (`archive_search.py --index`); confirm the Nov 1 build submits the pages whose after-text
+  turns on (OH, NJ, NY, CT, NC); curl the six cached old image URLs (AR, HI, LA, MN, MO, OH) for 301.
+- Nov 2: reread the Kansas advance voting page and Arizona's flooding notice; dispatch the build by hand if none by
+  7 a.m.; banner check on 5 states EN and ES.
+- Nov 3: spot-check AL, CT, LA, NH, OK late-mail answers and MN, MA registration answers.
+- Nov 4: post-election build by 7 a.m.; spot-check EN and ES (Spanish share card should read YO VOTÉ), Michigan's
+  lead section included.
+- Nov 5: remove the `30 6 4 11 *` cron; log the release in `docs/change-log.csv`.
 - Item 6: results certification per state. Item 7: history, notable designs prompt.
