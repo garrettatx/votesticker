@@ -71,6 +71,7 @@ and renaming the Tilt tile to Slant.
 | **Snohomish County pickup** | Second Washington mail source: stickers at the Auditor's Office, Sno-Isle Libraries and voter service sites (Oct 7, 2026 release) | Washington's mail answer holds one source (Thurston). Decide whether pickup sites or packet inclusion leads, or allow two sources per answer. |
 | **Descriptive image filenames** | `tx-vote-1.jpg` says nothing to image search | Only with redirects from the old URLs; after the election. |
 | **Designer interviews, election office questions** | Original reporting no other site has | Outreach is Garrett's call. |
+| **Outreach and press** | ChatGPT and AI answers skip the site (Oct 31): it is new and has almost no links or mentions | `docs/outreach-plan.md`: personal pitches first, history angle, timing windows (election week roundups, Nov 4 to 15 features, 2028 run-up), paid wire last. Every send or spend is Garrett's call. |
 
 ## Analytics (October 23)
 
