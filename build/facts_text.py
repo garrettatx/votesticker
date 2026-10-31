@@ -67,6 +67,7 @@ FACTS = {
     'mail.who': 'text', 'mail.who_list': 'list', 'mail.track_url': 'url', 'mail.cure': 'text', 'mail.dropbox': 'text', 'mail.witness': 'text',
     'polls_rules.gear': 'text', 'polls_rules.phone': 'text', 'polls_rules.line': 'text',
     'sticker.tradition': 'text', 'sticker.early': 'text', 'sticker.mail': 'text',
+    'sticker.lead': 'flag',  # true: the sticker story sits right after the gallery (October 31, Michigan; Clearscope read)
     'sticker.more': 'more',  # county or city sticker stories under the gallery: a list, each entry its own place, source and quote
     'election_day.hours': 'text',
     'faq.provisional': 'text', 'faq.line': 'text', 'faq.track': 'text', 'faq.unsigned': 'text', 'faq.late_mail': 'text',
@@ -110,6 +111,10 @@ def check(abbr, d, today):
                 errs.append(f'{path}: must be a string')
             else:
                 errs += [f'{path}: {e}' for e in host_errors(v)]
+            continue
+        if kind == 'flag':
+            if v is not True:
+                errs.append(f'{path}: set it to true or leave it out')
             continue
         if kind == 'rule':
             if v not in RULES:
@@ -270,7 +275,7 @@ def main():
             print(f'{abbr.upper()}: {e}')
         bad += len(errs)
         if not errs and only_check:
-            n = sum(1 for p, k in FACTS.items() if k not in ('url', 'label', 'rule', 'more') and (get(d, p) or {}).get('status') == 'verified')
+            n = sum(1 for p, k in FACTS.items() if k not in ('url', 'label', 'rule', 'more', 'flag') and (get(d, p) or {}).get('status') == 'verified')
             n += len(get(d, 'sticker.more') or [])
             print(f'{abbr.upper()}: OK, {n} verified facts')
     if bad:
@@ -287,7 +292,7 @@ def main():
             v = get(d, path)
             if v in (None, ''):
                 continue
-            if kind in ('url', 'label', 'rule'):
+            if kind in ('url', 'label', 'rule', 'flag'):
                 st[path] = v
             elif kind == 'more':
                 st[path] = [{k: e[k] for k in ('place', 'kind', 'en', 'es', 'src', 'checked', 'until', 'en_after', 'es_after') if e.get(k)}

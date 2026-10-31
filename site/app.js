@@ -2340,7 +2340,7 @@
 		// voting, the searched words); only a state picked in the maker gets the short one (October 29 fix).
 		if (st.abbr !== window.VOTE_PAGE_STATE) { $('gallery-h').textContent = T(/^[AEIOU]/.test(nameOf(st)) ? 'Pick an %s Sticker' : 'Pick a %s Sticker', nameOf(st)); }
 		// The two-path panel is drawn for the page's own state; hide it once the gallery shows another state.
-		var paths = document.querySelector('.paths'); if (paths) { paths.hidden = st.abbr !== window.VOTE_PAGE_STATE; }
+		document.querySelectorAll('.paths, .guide--lead').forEach(function (el) { el.hidden = st.abbr !== window.VOTE_PAGE_STATE; });  // and the page state's own sticker story when it leads (October 31)
 		var first = !files.length;
 		$('maker-h').textContent = first ? T('Make Your %s Sticker', nameOf(st)) : T('Or Make Your Own');
 		$('maker-h').classList.toggle('maker-h--first', first);

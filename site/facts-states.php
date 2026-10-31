@@ -3953,8 +3953,8 @@ return array(
 			'checked' => '2026-10-28',
 		),
 		'dates.early_hours' => array(
-			'en' => 'Every early voting site is open at least 8 hours a day for the nine days. Your community sets the exact hours, and some add days.',
-			'es' => 'Cada centro de votación anticipada abre por lo menos 8 horas al día durante los nueve días. Tu comunidad fija el horario exacto, y algunas agregan días.',
+			'en' => 'Every early voting site is open at least 8 hours a day for the nine days. Your community sets the exact hours.',
+			'es' => 'Cada centro de votación anticipada abre por lo menos 8 horas al día durante los nueve días. Tu comunidad fija el horario exacto.',
 			'src' => 'https://www.legislature.mi.gov/Laws/MCL?objectName=MCL-168-720a',
 			'checked' => '2026-10-21',
 		),
@@ -3965,13 +3965,13 @@ return array(
 			'checked' => '2026-10-21',
 		),
 		'how.in_person' => array(
-			'en' => 'Vote early at your assigned early voting site, or one of several if your community has more. Every community offers early voting October 24 to November 1. Some add days, and starting in 2026 that can include Monday, November 2, so check your site. You put your ballot straight into the tabulator, like on Election Day. On Election Day, go to your assigned polling place between 7 a.m. and 8 p.m.',
-			'es' => 'Vota por anticipado en el centro de votación anticipada que te corresponde, o en uno de varios si tu comunidad tiene más. Todas las comunidades ofrecen votación anticipada del 24 de octubre al 1 de noviembre. Algunas agregan días, y desde 2026 eso puede incluir el lunes 2 de noviembre, así que revisa tu centro. Metes tu boleta directamente en la máquina de conteo, igual que el Día de las Elecciones. El Día de las Elecciones, ve al lugar de votación que te corresponde entre las 7 a. m. y las 8 p. m.',
+			'en' => 'Vote early at your assigned early voting site, or one of several if your community has more. Some communities add days, and starting in 2026 that can include Monday, November 2, so check your site. You put your ballot straight into the tabulator, like on Election Day. On Election Day, go to your assigned polling place.',
+			'es' => 'Vota por anticipado en el centro de votación anticipada que te corresponde, o en uno de varios si tu comunidad tiene más. Algunas comunidades agregan días, y desde 2026 eso puede incluir el lunes 2 de noviembre, así que revisa tu centro. Metes tu boleta directamente en la máquina de conteo, igual que el Día de las Elecciones. El Día de las Elecciones, ve al lugar de votación que te corresponde.',
 			'src' => 'https://www.michigan.gov/sos/elections/voting/early-in-person-voting',
 			'checked' => '2026-10-28',
 			'until' => '2026-11-02',
-			'en_after' => 'Early voting is over. On Election Day, go to your assigned polling place between 7 a.m. and 8 p.m. local time.',
-			'es_after' => 'La votación anticipada terminó. El Día de las Elecciones, ve al lugar de votación que te corresponde entre las 7 a. m. y las 8 p. m., hora local.',
+			'en_after' => 'Early voting is over. On Election Day, go to your assigned polling place. You put your ballot straight into the tabulator.',
+			'es_after' => 'La votación anticipada terminó. El Día de las Elecciones, ve al lugar de votación que te corresponde. Metes tu boleta directamente en la máquina de conteo.',
 		),
 		'how.first_time' => array(
 			'en' => 'New to Michigan, or moved? Go to your city or township clerk\'s office with proof of residency, like a utility bill or bank statement, to register. You can vote an absentee ballot right there, or head to your polling place if there\'s time. If you\'re in line at the clerk\'s office by 8 p.m. on Election Day, you can still register and vote.',
@@ -4017,8 +4017,8 @@ return array(
 		),
 		'mail.track_url' => 'https://mvic.sos.state.mi.us/Voter/Index',
 		'mail.cure' => array(
-			'en' => 'If your signature is missing or doesn\'t match, your clerk will reach you by phone, email or text, or by mail if they have no other way. Your clerk must get the cure form back, electronically, in person or by mail, by 5 p.m. on Friday, November 6.',
-			'es' => 'Si falta tu firma o no coincide, tu secretario (clerk) se comunicará contigo por teléfono, correo electrónico o mensaje de texto, o por correo postal si no tiene otra forma. Tu secretario debe recibir el formulario de corrección, por vía electrónica, en persona o por correo, a más tardar a las 5 p. m. del viernes 6 de noviembre.',
+			'en' => 'If your signature is missing or doesn\'t match, your clerk will reach you by phone, email or text, or by mail if they have no other way. Send the cure form back to your clerk electronically, in person or by mail.',
+			'es' => 'Si falta tu firma o no coincide, tu secretario (clerk) se comunicará contigo por teléfono, correo electrónico o mensaje de texto, o por correo postal si no tiene otra forma. Devuélvele el formulario de corrección a tu secretario por vía electrónica, en persona o por correo.',
 			'src' => 'https://www.legislature.mi.gov/Laws/MCL?objectName=MCL-168-766a',
 			'checked' => '2026-10-28',
 		),
@@ -4064,6 +4064,7 @@ return array(
 			'src' => 'https://www.cityofnorthvillemi.gov/m/faq',
 			'checked' => '2026-10-23',
 		),
+		'sticker.lead' => true,
 		'election_day.hours' => array(
 			'en' => 'Polling places are open 7 a.m. to 8 p.m. local time.',
 			'es' => 'Los lugares de votación abren de 7 a. m. a 8 p. m., hora local.',

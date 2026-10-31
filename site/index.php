@@ -495,6 +495,27 @@ function vote_rn( $path, $lead, $label ) {
 	return '<p class="guide__more">' . vote_e( t( $lead ) ) . ' <a href="https://resistnow.net/learn/' . $path . '/">' . vote_e( t( $label ) ) . '</a>' . ( vote_es() ? ' (en inglés)' : '' ) . '.</p>';
 }
 
+// The state's sticker story: the tradition, then where to get a sticker when you vote early or by mail (October 23).
+// Each answer names the county or city it comes from; a state gets one only with an official source for it.
+function vote_sticker_story( $st, $lead = false ) {
+	$name = 'DC' === $st['abbr'] ? 'DC' : $st['name'];
+	$sticker = '';
+	$ssrc = array();
+	foreach ( array( 'sticker.tradition' => '', 'sticker.early' => 'Do I get an I voted sticker if I vote early in %s?', 'sticker.mail' => 'I voted by mail in %s. How do I get a sticker?' ) as $k => $q ) {
+		$f = vote_fact( $st, $k );
+		if ( ! $f ) { continue; }
+		$sticker .= ( $q ? '<h3>' . vote_e( t( $q, $name ) ) . '</h3>' : '' ) . '<p>' . vote_e( $f['text'] ) . '</p>';
+		$ssrc[] = $f['src'];
+	}
+	if ( ! $sticker ) { return ''; }
+	return '<section class="guide' . ( $lead ? ' guide--lead' : '' ) . '" aria-labelledby="sticker-h"><h2 class="display-h guide__h" id="sticker-h">' . vote_e( t( '%s and the I Voted Sticker', $name ) ) . '</h2>' . $sticker . ( vote_files( $st['abbr'] ) ? '' : vote_more_stickers( $st ) ) . vote_history_more( $st )
+		. '<p><a href="#maker-h">' . vote_e( t( 'Make your own %s I voted sticker', $name ) ) . '</a></p>' . vote_sources_line( $st, $ssrc ) . '</section>';
+}
+// sticker.lead (October 31, Michigan): the official designs right after our gallery, when the page has one.
+function vote_sticker_lead( $st ) {
+	return ! empty( vote_facts( $st['abbr'] )['sticker.lead'] ) && count( vote_files( $st['abbr'] ) );
+}
+
 // The guide under the summary box: dates, where to vote, ID, mail voting, rules at the polls, the state's
 // sticker tradition. Headings read the way people search; each section ends with one source line.
 // Every block shows only when its facts are verified; a state without a facts file shows none of it.
@@ -525,21 +546,9 @@ function vote_guide( $st ) {
 	}
 
 	// Right after the dates (October 29: "[state] i voted sticker" searchers want the official designs near the
-	// top; Michigan and Kansas Clearscope reads): the tradition, then where to get a sticker when you vote early or
-	// by mail (October 23). Each answer
-	// names the county or city it comes from; a state gets one only with an official source for it.
-	$sticker = '';
-	$ssrc = array();
-	foreach ( array( 'sticker.tradition' => '', 'sticker.early' => 'Do I get an I voted sticker if I vote early in %s?', 'sticker.mail' => 'I voted by mail in %s. How do I get a sticker?' ) as $k => $q ) {
-		$f = vote_fact( $st, $k );
-		if ( ! $f ) { continue; }
-		$sticker .= ( $q ? '<h3>' . vote_e( t( $q, $name ) ) . '</h3>' : '' ) . '<p>' . vote_e( $f['text'] ) . '</p>';
-		$ssrc[] = $f['src'];
-	}
-	if ( $sticker ) {
-		$out .= '<section class="guide" aria-labelledby="sticker-h">' . $h( 'sticker-h', t( '%s and the I Voted Sticker', $name ) ) . $sticker . ( vote_files( $st['abbr'] ) ? '' : vote_more_stickers( $st ) ) . vote_history_more( $st )
-			. '<p><a href="#maker-h">' . vote_e( t( 'Make your own %s I voted sticker', $name ) ) . '</a></p>' . vote_sources_line( $st, $ssrc ) . '</section>';
-	}
+	// top; Michigan and Kansas Clearscope reads). A state whose facts set sticker.lead shows it right after the
+	// gallery instead (October 31, Michigan), so the guide skips it here.
+	if ( ! vote_sticker_lead( $st ) ) { $out .= vote_sticker_story( $st ); }
 	// A section is a list of facts; each adds its source to the section's line.
 	$section = function ( $id, $heading, $keys, $after = '' ) use ( $st, $h ) {
 		$body = ''; $srcs = array();
@@ -1472,6 +1481,7 @@ $vote_ld = array(
 			<?php echo $vote_st ? vote_paths( $vote_st ) : ''; ?>
 			<?php echo $vote_st && $vote_files ? vote_more_stickers( $vote_st ) : ''; ?>
 		</section>
+		<?php echo $vote_st && vote_sticker_lead( $vote_st ) ? vote_sticker_story( $vote_st, true ) : ''; ?>
 
 		<?php $vote_maker_first = ! $vote_files; ?>
 		<h2 class="maker-h display-h<?php echo $vote_maker_first ? ' maker-h--first' : ''; ?>" id="maker-h"><?php echo vote_e( $vote_maker_first ? t( 'Make Your %s Sticker', $vote_st ? vote_lname( $vote_st ) : '' ) : t( 'Or Make Your Own' ) ); ?></h2>
