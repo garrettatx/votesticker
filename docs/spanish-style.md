@@ -25,7 +25,7 @@ Built with the global `es-mx-localization` skill. This file is the project overr
 | Vote by mail | VOTA POR CORREO | votar por correo; boleta por correo |
 | Election Day | DÍA DE LAS ELECCIONES | el Día de las Elecciones |
 | Vote Nov 3 | VOTA 3 DE NOV | el martes 3 de noviembre |
-| I voted | YO VOTÉ (maker and classic set, since Oct 31; the bespoke state images still read YA VOTÉ until re-rendered) | Yo voté |
+| I voted | YO VOTÉ (maker, classic set and the bespoke state images, all since Oct 31; old `<state>-ya-vote-...` image URLs 301 to `<state>-yo-vote-...`) | Yo voté |
 | I'm voting | VOY A VOTAR | |
 | Absentee ballot | | boleta de voto en ausencia; votar en ausencia |
 | Polling place | | lugar de votación (centro de votación where the office calls it a vote center) |
@@ -68,7 +68,7 @@ Spanish pages are `noindex`, out of the sitemap, and no page carries hreflang. F
 
 1. **tú or usted** for the site's own voice? (Stickers stay tú either way.)
 2. **"sticker" or "calcomanía"** in body copy?
-3. **"Ya voté" or "Yo voté"** on the sticker? Decided Oct 31: **Yo voté** (official stickers and US search; evidence in `LOOP-county-and-mail.md`, pass 5).
+3. **"Ya voté" or "Yo voté"** on the sticker? Decided Oct 31: **Yo voté** (official stickers and US search; evidence in `LOOP-county-and-mail.md`, pass 5); images redrawn in pass 6).
 4. **"votación anticipada" vs "votación temprana"** in headings: we use anticipada.
 5. **State names:** decided, English everywhere (Garrett, October 19).
 6. **"Para no correr riesgos"** (Oregon's "to be safe"): natural enough?

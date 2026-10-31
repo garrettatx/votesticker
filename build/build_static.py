@@ -149,7 +149,16 @@ def main():
     # One rule per version: production Pages leaves a placeholder in the query string unfilled
     # (utm_content=%3Aversion live on October 24), though the path placeholder works.
     utm = 'utm_source=sticker_post&utm_medium=social&utm_campaign=vote_2026'
-    (DIST / '_redirects').write_text(''.join(
+    # Renamed sticker images (October 31: the Spanish bespoke stickers went from YA VOTÉ to YO VOTÉ, files
+    # <state>-ya-vote-... to <state>-yo-vote-...): one static 301 per old URL, from build/image-renames.json.
+    # Cloudflare Pages allows 2,000 static and 100 dynamic rules; a splat can't match part of a file name.
+    renames = json.loads((ROOT / 'build' / 'image-renames.json').read_text())['images'] if (ROOT / 'build' / 'image-renames.json').exists() else []
+    for r in renames:
+        if (DIST / r['old'][1:]).exists() or not (DIST / r['new'][1:]).exists():
+            raise SystemExit(f"bad image rename {r['old']} -> {r['new']}: old file still there or new file missing")
+    if len(renames) > 2000:
+        raise SystemExit(f'{len(renames)} static redirects; Cloudflare Pages allows 2,000')
+    (DIST / '_redirects').write_text(''.join(f"{r['old']} {r['new']} 301\n" for r in renames) + ''.join(
         ''.join(f'{p}go/:state/{v} /{p[1:]}:state/?{utm}&utm_content={v} 302\n' for v in ('plan', 'short', 'friends', 'official'))
         + f'{p}go/:state/* /{p[1:]}:state/?{utm} 302\n{p}go/:state /{p[1:]}:state/?{utm} 302\n'
         for p in ('/es/', '/')))

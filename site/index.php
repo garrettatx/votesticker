@@ -104,11 +104,17 @@ function vote_bespoke_lang( $stem ) {
 	return $m[ $stem ]['lang'] ?? null;
 }
 // The Spanish home page showcase: each state's Spanish bespoke stickers, one per state, never repeating a design.
+// File order for galleries and picks. The Spanish stickers were renamed from <state>-ya-vote-... to
+// <state>-yo-vote-... on October 31 (YA VOTÉ to YO VOTÉ); they sort by their old name so every gallery and the
+// Spanish showcase keep the order they had (Yo voté before Yo también votaré).
+function vote_file_cmp( $a, $b ) {
+	return strnatcmp( str_replace( '-yo-vote-', '-ya-vote-', $a ), str_replace( '-yo-vote-', '-ya-vote-', $b ) );
+}
 function vote_showcase_es( $abbrs ) {
 	$used = array(); $out = array();
 	foreach ( $abbrs as $abbr ) {
 		$files = glob( __DIR__ . "/assets/states/$abbr/*.jpg" ) ?: array();
-		natsort( $files );
+		usort( $files, 'vote_file_cmp' );
 		foreach ( $files as $f ) {
 			$stem = basename( $f, '.jpg' ); $b = vote_bespoke( $stem );
 			if ( ! $b || 'es' !== $b['lang'] || isset( $used[ $b['design'] ] ) ) { continue; }
@@ -134,10 +140,10 @@ function vote_files( $abbr ) {
 		$l = vote_bespoke_lang( preg_replace( '/\.jpg$/', '', $f ) );
 		return $es ? in_array( $l, array( 'es', 'both' ), true ) : 'es' !== $l;
 	} ) );
-	natsort( $files );
+	usort( $files, 'vote_file_cmp' );
 	// The state's own ready-mades (<abbr>-...) first, then the bespoke set (<state-name>-..., October 26).
 	$own = strtolower( $abbr ) . '-';
-	usort( $files, function ( $a, $b ) use ( $own ) { $x = 0 === strpos( $a, $own ) ? 0 : 1; $y = 0 === strpos( $b, $own ) ? 0 : 1; return $x === $y ? strnatcmp( $a, $b ) : $x - $y; } );
+	usort( $files, function ( $a, $b ) use ( $own ) { $x = 0 === strpos( $a, $own ) ? 0 : 1; $y = 0 === strpos( $b, $own ) ? 0 : 1; return $x === $y ? vote_file_cmp( $a, $b ) : $x - $y; } );
 	$files = array_values( array_filter( $files, function ( $f ) use ( $abbr ) { return vote_file_current( $abbr, $f ); } ) );
 	return array_map( function ( $f ) use ( $abbr ) { return vote_v( 'assets/states/' . strtolower( $abbr ) . '/' . $f ); }, $files );
 }
@@ -1379,7 +1385,7 @@ $vote_ld = array(
 	$vote_showcase = vote_es() ? vote_showcase_es( array( 'ca', 'tx', 'ny', 'pa', 'nc', 'va', 'wa', 'co' ) ) : array(
 		'ca' => 'california-i-voted-by-mail-split-sticker', 'co' => 'colorado-i-voted-by-mail-varsity-sticker',
 		'ny' => 'new-york-i-voted-early-marquee-sticker', 'nc' => 'north-carolina-i-voted-arch-sticker',
-		'pa' => 'pennsylvania-ya-vote-tilt-sticker', 'tx' => 'texas-first-time-voter-brush-sticker',
+		'pa' => 'pennsylvania-yo-vote-tilt-sticker', 'tx' => 'texas-first-time-voter-brush-sticker',
 		'va' => 'virginia-future-voter-pixel-state-sticker', 'wa' => 'washington-i-voted-plate-sticker' );
 	$vote_showcase = array_filter( $vote_showcase, function ( $f, $abbr ) { return is_file( __DIR__ . "/assets/states/$abbr/$f.jpg" ); }, ARRAY_FILTER_USE_BOTH );
 	// Alphabetical by the state's name in the page language (Garrett, October 26): easier to scan for your own.

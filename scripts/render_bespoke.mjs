@@ -6,6 +6,10 @@
 // Alt text goes into site/assets/states/alts.json in the format build/image_names.py reads.
 //   python3 -m http.server 8792 -d dist
 //   node scripts/render_bespoke.mjs [TX,NC,...]      (default: all 51)
+//   node scripts/render_bespoke.mjs --headlines=yavote,yavotetemprano,yavotecorreo
+//     redraws only the slots with those headlines and leaves every other file alone (October 31: the Spanish
+//     stickers went from YA VOTÉ to YO VOTÉ, files <state>-ya-vote-... to <state>-yo-vote-..., 301s in
+//     build/image-renames.json). Each redrawn slot must match its old recipe in bespoke.json, or it stops.
 import { chromium } from 'playwright';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -30,10 +34,10 @@ const LOOK = {
   below: 'with the state beside the second line', half: 'with a color field over the state', split: 'on a two-tone diagonal',
   postmark: 'like a postmark, with the state name around a dashed ring', marquee: 'on a sign ringed with lights', pixel: 'with the state drawn in pixels',
 };
-const SLUG = { ivoted: 'i-voted', firsttime: 'first-time-voter', futurevoter: 'future-voter', yavote: 'ya-vote', voted: 'i-voted-early', mailed: 'i-voted-by-mail',
-  miprimervoto: 'mi-primer-voto', yotambien: 'yo-tambien-votare', yavotetemprano: 'ya-vote-temprano', yavotecorreo: 'ya-vote-por-correo' };
-const SAYS = { ivoted: 'I voted', firsttime: 'First-time voter', futurevoter: 'Future voter', yavote: 'Ya voté', voted: 'I voted early', mailed: 'I voted by mail',
-  miprimervoto: 'Mi primer voto', yotambien: 'Yo también votaré', yavotetemprano: 'Ya voté temprano', yavotecorreo: 'Ya voté por correo' };
+const SLUG = { ivoted: 'i-voted', firsttime: 'first-time-voter', futurevoter: 'future-voter', yavote: 'yo-vote', voted: 'i-voted-early', mailed: 'i-voted-by-mail',
+  miprimervoto: 'mi-primer-voto', yotambien: 'yo-tambien-votare', yavotetemprano: 'yo-vote-temprano', yavotecorreo: 'yo-vote-por-correo' };
+const SAYS = { ivoted: 'I voted', firsttime: 'First-time voter', futurevoter: 'Future voter', yavote: 'Yo voté', voted: 'I voted early', mailed: 'I voted by mail',
+  miprimervoto: 'Mi primer voto', yotambien: 'Yo también votaré', yavotetemprano: 'Yo voté temprano', yavotecorreo: 'Yo voté por correo' };
 // Spanish alt text for the Spanish pages (tú register, docs/spanish-style.md), stored as "<stem>@es".
 const LOOK_ES = {
   varsity: 'con letras en bloque en 3D', slab: 'con letras de periódico', sticker: 'con anillos, como un sticker redondo',
@@ -51,7 +55,10 @@ await p.goto('http://127.0.0.1:8792/texas/', { waitUntil: 'networkidle' });
 await p.waitForFunction(() => window.VOTE_CARDS && document.fonts.status === 'loaded');
 const all = await p.evaluate(() => window.VOTE_STATES.map((s) => ({ abbr: s.abbr, name: s.name, early: s.status === 'verified' && s.kind === 'in-person', mail: s.status === 'verified' && s.kind === 'mail' })));
 all.sort((a, c) => a.name.localeCompare(c.name));
-const only = process.argv[2] ? process.argv[2].split(',') : null;
+const args = process.argv.slice(2);
+const only = args.find((a) => !a.startsWith('--'))?.split(',') || null;
+const HL = args.find((a) => a.startsWith('--headlines='))?.slice(12).split(',') || null;
+const renames = [];
 
 const alts = JSON.parse(fs.readFileSync(ALTS, 'utf8'));
 const MANIFEST = path.join(DIR, 'bespoke.json');
@@ -74,7 +81,7 @@ for (const [i, st] of all.entries()) {
     { headline: st.early ? 'voted' : st.mail ? 'mailed' : 'ivoted', design: d(4), palette: pal(4) },
     { headline: 'ivoted', design: d(5), palette: pal(5), tilt: i % 2 ? 0.12 : -0.12, rays: i % 3 === 0 },
     // Spanish set (Garrett, October 26: "across English and Spanish"): five more in designs the English six
-    // don't use, shown on the Spanish page with the shared YA VOTÉ above.
+    // don't use, shown on the Spanish page with the shared YO VOTÉ above.
     { headline: 'miprimervoto', design: d(6), palette: pal(6), lang: 'es' },
     { headline: 'yotambien', design: d(7), palette: pal(7), rays: true, lang: 'es' },
     { headline: st.early ? 'yavotetemprano' : st.mail ? 'yavotecorreo' : 'yavote', design: d(8), palette: 'state', lang: 'es' },
@@ -96,22 +103,40 @@ for (const [i, st] of all.entries()) {
     plan.push({ headline: msgs[(i + k) % msgs.length], design: ADDED[(i + k) % ADDED.length], palette });
     free.splice(free.indexOf(palette), 1);
   });
+  const k = st.abbr.toLowerCase(), slug = st.name.toLowerCase().replace(/[^a-z]+/g, '-').replace(/^-|-$/g, '');
+  const pick = (x) => !HL || HL.includes(x.headline);
+  // Headline mode: the old file for each slot being redrawn, by slot, and its recipe must not have moved.
+  const before = {};
+  if (HL) {
+    for (const [stem, r] of Object.entries(langs)) {
+      if (stem.startsWith(slug + '-') && HL.includes(r.headline) && fs.existsSync(path.join(DIR, k, stem + '.jpg'))) { before[r.slot] = stem; }
+    }
+    plan.forEach((x, j) => {
+      if (!pick(x)) { return; }
+      const r = langs[before[j]];
+      const same = r && r.design === x.design && r.palette === x.palette && r.headline === x.headline && r.tilt === (x.tilt || 0) && r.rays === !!x.rays && r.lang === (x.lang || 'en');
+      if (!same) { throw new Error(`${st.abbr} slot ${j}: no old file with the same recipe (${before[j] || 'none'})`); }
+    });
+  }
   const out = await p.evaluate(({ abbr, plan, SIZE }) => {
     const V = window.VOTE_CARDS, s = window.VOTE_STATES.find((x) => x.abbr === abbr), c = document.createElement('canvas');
     return plan.map((x) => {
+      if (!x) { return null; }
       const date = V.defaultDateLine(s, x.headline);
       V.render(c, SIZE, { state: abbr, design: x.design, palette: x.palette, headline: x.headline, dateText: date, tilt: x.tilt || 0, rays: !!x.rays });
       return { date, data: c.toDataURL('image/jpeg', 0.86) };
     });
-  }, { abbr: st.abbr, plan, SIZE });
-  const k = st.abbr.toLowerCase(), slug = st.name.toLowerCase().replace(/[^a-z]+/g, '-').replace(/^-|-$/g, '');
+  }, { abbr: st.abbr, plan: plan.map((x) => (pick(x) ? x : null)), SIZE });
   // Remove this state's earlier bespoke render first, so a changed plan never leaves an orphan file.
-  for (const f of fs.readdirSync(path.join(DIR, k))) { if (f.startsWith(slug + '-') && f.endsWith('.jpg')) { fs.unlinkSync(path.join(DIR, k, f)); delete alts[f.slice(0, -4)]; delete alts[f.slice(0, -4) + '@es']; delete langs[f.slice(0, -4)]; } }
+  // Headline mode removes only the slots it redraws.
+  for (const f of fs.readdirSync(path.join(DIR, k))) { if (HL && !Object.values(before).includes(f.slice(0, -4))) { continue; } if (f.startsWith(slug + '-') && f.endsWith('.jpg')) { fs.unlinkSync(path.join(DIR, k, f)); delete alts[f.slice(0, -4)]; delete alts[f.slice(0, -4) + '@es']; delete langs[f.slice(0, -4)]; } }
   const used = new Set();
   plan.forEach((x, j) => {
     let base = `${slug}-${SLUG[x.headline]}-${x.design === 'slab' ? 'masthead' : x.design === 'sticker' ? 'round' : x.design === 'ringtext' ? 'ring' : x.design === 'type' ? 'big-type' : x.design === 'pixel' ? 'pixel-state' : x.design}-sticker`;
     if (used.has(base)) { base += '-2'; }
     used.add(base);
+    if (!pick(x)) { return; }
+    if (HL && before[j] !== base) { renames.push({ old: `/assets/states/${k}/${before[j]}.jpg`, new: `/assets/states/${k}/${base}.jpg` }); }
     fs.writeFileSync(path.join(DIR, k, base + '.jpg'), Buffer.from(out[j].data.split(',')[1], 'base64'));
     const date = out[j].date;
     const when = /^[A-Z]{2} \d{4}$/.test(date) ? ', ' + date : date ? ', ' + date.toLowerCase().replace(/(^|[\s–-])([a-zà-ú])/g, (m, a, c) => a + c.toUpperCase()) : '';
@@ -129,6 +154,14 @@ for (const [i, st] of all.entries()) {
     }
     n++;
   });
+}
+if (HL) {
+  // The 301s from the old names (build/build_static.py writes them into dist/_redirects). Kept across runs.
+  const RN = path.join(ROOT, 'build', 'image-renames.json');
+  const had = fs.existsSync(RN) ? JSON.parse(fs.readFileSync(RN, 'utf8')).images : [];
+  const all301 = had.filter((r) => !renames.some((x) => x.old === r.old)).concat(renames).sort((a, c) => a.old.localeCompare(c.old));
+  fs.writeFileSync(RN, JSON.stringify({ built_from: 'scripts/render_bespoke.mjs --headlines', note: 'October 31, 2026: Spanish bespoke stickers YA VOTÉ to YO VOTÉ. Each old URL 301s to the new one.', images: all301 }, null, 1) + '\n');
+  console.log(`${renames.length} renamed; ${all301.length} redirects in build/image-renames.json`);
 }
 fs.writeFileSync(MANIFEST, '{\n' + Object.keys(langs).sort().map((k) => JSON.stringify(k) + ': ' + JSON.stringify(langs[k])).join(',\n') + '\n}\n');
 fs.writeFileSync(ALTS, '{\n' + Object.keys(alts).sort().map((k) => JSON.stringify(k) + ': ' + JSON.stringify(alts[k])).join(',\n') + '\n}\n');

@@ -1,0 +1,822 @@
+{
+ "built_from": "scripts/render_bespoke.mjs --headlines",
+ "note": "October 31, 2026: Spanish bespoke stickers YA VOTÉ to YO VOTÉ. Each old URL 301s to the new one.",
+ "images": [
+  {
+   "old": "/assets/states/ak/alaska-ya-vote-big-type-sticker.jpg",
+   "new": "/assets/states/ak/alaska-yo-vote-big-type-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ak/alaska-ya-vote-brush-sticker.jpg",
+   "new": "/assets/states/ak/alaska-yo-vote-brush-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ak/alaska-ya-vote-plate-sticker.jpg",
+   "new": "/assets/states/ak/alaska-yo-vote-plate-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ak/alaska-ya-vote-temprano-arch-sticker.jpg",
+   "new": "/assets/states/ak/alaska-yo-vote-temprano-arch-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/al/alabama-ya-vote-big-type-sticker.jpg",
+   "new": "/assets/states/al/alabama-yo-vote-big-type-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/al/alabama-ya-vote-brush-sticker.jpg",
+   "new": "/assets/states/al/alabama-yo-vote-brush-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/al/alabama-ya-vote-ring-sticker.jpg",
+   "new": "/assets/states/al/alabama-yo-vote-ring-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/al/alabama-ya-vote-tilt-sticker.jpg",
+   "new": "/assets/states/al/alabama-yo-vote-tilt-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ar/arkansas-ya-vote-below-sticker.jpg",
+   "new": "/assets/states/ar/arkansas-yo-vote-below-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ar/arkansas-ya-vote-plate-sticker.jpg",
+   "new": "/assets/states/ar/arkansas-yo-vote-plate-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ar/arkansas-ya-vote-side-sticker.jpg",
+   "new": "/assets/states/ar/arkansas-yo-vote-side-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ar/arkansas-ya-vote-temprano-brush-sticker.jpg",
+   "new": "/assets/states/ar/arkansas-yo-vote-temprano-brush-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/az/arizona-ya-vote-big-type-sticker.jpg",
+   "new": "/assets/states/az/arizona-yo-vote-big-type-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/az/arizona-ya-vote-plate-sticker.jpg",
+   "new": "/assets/states/az/arizona-yo-vote-plate-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/az/arizona-ya-vote-side-sticker.jpg",
+   "new": "/assets/states/az/arizona-yo-vote-side-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/az/arizona-ya-vote-temprano-tilt-sticker.jpg",
+   "new": "/assets/states/az/arizona-yo-vote-temprano-tilt-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ca/california-ya-vote-below-sticker.jpg",
+   "new": "/assets/states/ca/california-yo-vote-below-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ca/california-ya-vote-half-sticker.jpg",
+   "new": "/assets/states/ca/california-yo-vote-half-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ca/california-ya-vote-por-correo-big-type-sticker.jpg",
+   "new": "/assets/states/ca/california-yo-vote-por-correo-big-type-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ca/california-ya-vote-side-sticker.jpg",
+   "new": "/assets/states/ca/california-yo-vote-side-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/co/colorado-ya-vote-below-sticker.jpg",
+   "new": "/assets/states/co/colorado-yo-vote-below-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/co/colorado-ya-vote-half-sticker.jpg",
+   "new": "/assets/states/co/colorado-yo-vote-half-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/co/colorado-ya-vote-por-correo-plate-sticker.jpg",
+   "new": "/assets/states/co/colorado-yo-vote-por-correo-plate-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/co/colorado-ya-vote-split-sticker.jpg",
+   "new": "/assets/states/co/colorado-yo-vote-split-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ct/connecticut-ya-vote-half-sticker.jpg",
+   "new": "/assets/states/ct/connecticut-yo-vote-half-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ct/connecticut-ya-vote-split-sticker.jpg",
+   "new": "/assets/states/ct/connecticut-yo-vote-split-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ct/connecticut-ya-vote-temprano-side-sticker.jpg",
+   "new": "/assets/states/ct/connecticut-yo-vote-temprano-side-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ct/connecticut-ya-vote-varsity-sticker.jpg",
+   "new": "/assets/states/ct/connecticut-yo-vote-varsity-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/dc/district-of-columbia-ya-vote-masthead-sticker.jpg",
+   "new": "/assets/states/dc/district-of-columbia-yo-vote-masthead-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/dc/district-of-columbia-ya-vote-round-sticker.jpg",
+   "new": "/assets/states/dc/district-of-columbia-yo-vote-round-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/dc/district-of-columbia-ya-vote-temprano-half-sticker.jpg",
+   "new": "/assets/states/dc/district-of-columbia-yo-vote-temprano-half-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/dc/district-of-columbia-ya-vote-varsity-sticker.jpg",
+   "new": "/assets/states/dc/district-of-columbia-yo-vote-varsity-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/de/delaware-ya-vote-masthead-sticker.jpg",
+   "new": "/assets/states/de/delaware-yo-vote-masthead-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/de/delaware-ya-vote-split-sticker.jpg",
+   "new": "/assets/states/de/delaware-yo-vote-split-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/de/delaware-ya-vote-temprano-below-sticker.jpg",
+   "new": "/assets/states/de/delaware-yo-vote-temprano-below-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/de/delaware-ya-vote-varsity-sticker.jpg",
+   "new": "/assets/states/de/delaware-yo-vote-varsity-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/fl/florida-ya-vote-masthead-sticker.jpg",
+   "new": "/assets/states/fl/florida-yo-vote-masthead-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/fl/florida-ya-vote-ring-sticker.jpg",
+   "new": "/assets/states/fl/florida-yo-vote-ring-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/fl/florida-ya-vote-round-sticker.jpg",
+   "new": "/assets/states/fl/florida-yo-vote-round-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/fl/florida-ya-vote-temprano-split-sticker.jpg",
+   "new": "/assets/states/fl/florida-yo-vote-temprano-split-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ga/georgia-ya-vote-arch-sticker.jpg",
+   "new": "/assets/states/ga/georgia-yo-vote-arch-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ga/georgia-ya-vote-ring-sticker.jpg",
+   "new": "/assets/states/ga/georgia-yo-vote-ring-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ga/georgia-ya-vote-round-sticker.jpg",
+   "new": "/assets/states/ga/georgia-yo-vote-round-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ga/georgia-ya-vote-temprano-varsity-sticker.jpg",
+   "new": "/assets/states/ga/georgia-yo-vote-temprano-varsity-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/hi/hawaii-ya-vote-arch-sticker.jpg",
+   "new": "/assets/states/hi/hawaii-yo-vote-arch-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/hi/hawaii-ya-vote-por-correo-masthead-sticker.jpg",
+   "new": "/assets/states/hi/hawaii-yo-vote-por-correo-masthead-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/hi/hawaii-ya-vote-ring-sticker.jpg",
+   "new": "/assets/states/hi/hawaii-yo-vote-ring-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/hi/hawaii-ya-vote-tilt-sticker.jpg",
+   "new": "/assets/states/hi/hawaii-yo-vote-tilt-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ia/iowa-ya-vote-big-type-sticker.jpg",
+   "new": "/assets/states/ia/iowa-yo-vote-big-type-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ia/iowa-ya-vote-plate-sticker.jpg",
+   "new": "/assets/states/ia/iowa-yo-vote-plate-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ia/iowa-ya-vote-side-sticker.jpg",
+   "new": "/assets/states/ia/iowa-yo-vote-side-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ia/iowa-ya-vote-temprano-tilt-sticker.jpg",
+   "new": "/assets/states/ia/iowa-yo-vote-temprano-tilt-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/id/idaho-ya-vote-arch-sticker.jpg",
+   "new": "/assets/states/id/idaho-yo-vote-arch-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/id/idaho-ya-vote-brush-sticker.jpg",
+   "new": "/assets/states/id/idaho-yo-vote-brush-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/id/idaho-ya-vote-temprano-round-sticker.jpg",
+   "new": "/assets/states/id/idaho-yo-vote-temprano-round-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/id/idaho-ya-vote-tilt-sticker.jpg",
+   "new": "/assets/states/id/idaho-yo-vote-tilt-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/il/illinois-ya-vote-big-type-sticker.jpg",
+   "new": "/assets/states/il/illinois-yo-vote-big-type-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/il/illinois-ya-vote-brush-sticker.jpg",
+   "new": "/assets/states/il/illinois-yo-vote-brush-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/il/illinois-ya-vote-temprano-ring-sticker.jpg",
+   "new": "/assets/states/il/illinois-yo-vote-temprano-ring-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/il/illinois-ya-vote-tilt-sticker.jpg",
+   "new": "/assets/states/il/illinois-yo-vote-tilt-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/in/indiana-ya-vote-big-type-sticker.jpg",
+   "new": "/assets/states/in/indiana-yo-vote-big-type-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/in/indiana-ya-vote-brush-sticker.jpg",
+   "new": "/assets/states/in/indiana-yo-vote-brush-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/in/indiana-ya-vote-plate-sticker.jpg",
+   "new": "/assets/states/in/indiana-yo-vote-plate-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/in/indiana-ya-vote-temprano-arch-sticker.jpg",
+   "new": "/assets/states/in/indiana-yo-vote-temprano-arch-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ks/kansas-ya-vote-below-sticker.jpg",
+   "new": "/assets/states/ks/kansas-yo-vote-below-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ks/kansas-ya-vote-plate-sticker.jpg",
+   "new": "/assets/states/ks/kansas-yo-vote-plate-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ks/kansas-ya-vote-side-sticker.jpg",
+   "new": "/assets/states/ks/kansas-yo-vote-side-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ks/kansas-ya-vote-temprano-brush-sticker.jpg",
+   "new": "/assets/states/ks/kansas-yo-vote-temprano-brush-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ky/kentucky-ya-vote-below-sticker.jpg",
+   "new": "/assets/states/ky/kentucky-yo-vote-below-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ky/kentucky-ya-vote-half-sticker.jpg",
+   "new": "/assets/states/ky/kentucky-yo-vote-half-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ky/kentucky-ya-vote-side-sticker.jpg",
+   "new": "/assets/states/ky/kentucky-yo-vote-side-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ky/kentucky-ya-vote-temprano-big-type-sticker.jpg",
+   "new": "/assets/states/ky/kentucky-yo-vote-temprano-big-type-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/la/louisiana-ya-vote-below-sticker.jpg",
+   "new": "/assets/states/la/louisiana-yo-vote-below-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/la/louisiana-ya-vote-half-sticker.jpg",
+   "new": "/assets/states/la/louisiana-yo-vote-half-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/la/louisiana-ya-vote-split-sticker.jpg",
+   "new": "/assets/states/la/louisiana-yo-vote-split-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/la/louisiana-ya-vote-temprano-plate-sticker.jpg",
+   "new": "/assets/states/la/louisiana-yo-vote-temprano-plate-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ma/massachusetts-ya-vote-masthead-sticker.jpg",
+   "new": "/assets/states/ma/massachusetts-yo-vote-masthead-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ma/massachusetts-ya-vote-round-sticker.jpg",
+   "new": "/assets/states/ma/massachusetts-yo-vote-round-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ma/massachusetts-ya-vote-temprano-half-sticker.jpg",
+   "new": "/assets/states/ma/massachusetts-yo-vote-temprano-half-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ma/massachusetts-ya-vote-varsity-sticker.jpg",
+   "new": "/assets/states/ma/massachusetts-yo-vote-varsity-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/md/maryland-ya-vote-masthead-sticker.jpg",
+   "new": "/assets/states/md/maryland-yo-vote-masthead-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/md/maryland-ya-vote-split-sticker.jpg",
+   "new": "/assets/states/md/maryland-yo-vote-split-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/md/maryland-ya-vote-temprano-below-sticker.jpg",
+   "new": "/assets/states/md/maryland-yo-vote-temprano-below-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/md/maryland-ya-vote-varsity-sticker.jpg",
+   "new": "/assets/states/md/maryland-yo-vote-varsity-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/me/maine-ya-vote-half-sticker.jpg",
+   "new": "/assets/states/me/maine-yo-vote-half-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/me/maine-ya-vote-split-sticker.jpg",
+   "new": "/assets/states/me/maine-yo-vote-split-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/me/maine-ya-vote-temprano-side-sticker.jpg",
+   "new": "/assets/states/me/maine-yo-vote-temprano-side-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/me/maine-ya-vote-varsity-sticker.jpg",
+   "new": "/assets/states/me/maine-yo-vote-varsity-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/mi/michigan-ya-vote-masthead-sticker.jpg",
+   "new": "/assets/states/mi/michigan-yo-vote-masthead-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/mi/michigan-ya-vote-ring-sticker.jpg",
+   "new": "/assets/states/mi/michigan-yo-vote-ring-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/mi/michigan-ya-vote-round-sticker.jpg",
+   "new": "/assets/states/mi/michigan-yo-vote-round-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/mi/michigan-ya-vote-temprano-split-sticker.jpg",
+   "new": "/assets/states/mi/michigan-yo-vote-temprano-split-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/mn/minnesota-ya-vote-arch-sticker.jpg",
+   "new": "/assets/states/mn/minnesota-yo-vote-arch-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/mn/minnesota-ya-vote-ring-sticker.jpg",
+   "new": "/assets/states/mn/minnesota-yo-vote-ring-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/mn/minnesota-ya-vote-round-sticker.jpg",
+   "new": "/assets/states/mn/minnesota-yo-vote-round-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/mn/minnesota-ya-vote-temprano-varsity-sticker.jpg",
+   "new": "/assets/states/mn/minnesota-yo-vote-temprano-varsity-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/mo/missouri-ya-vote-arch-sticker.jpg",
+   "new": "/assets/states/mo/missouri-yo-vote-arch-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/mo/missouri-ya-vote-brush-sticker.jpg",
+   "new": "/assets/states/mo/missouri-yo-vote-brush-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/mo/missouri-ya-vote-temprano-round-sticker.jpg",
+   "new": "/assets/states/mo/missouri-yo-vote-temprano-round-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/mo/missouri-ya-vote-tilt-sticker.jpg",
+   "new": "/assets/states/mo/missouri-yo-vote-tilt-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ms/mississippi-ya-vote-arch-sticker.jpg",
+   "new": "/assets/states/ms/mississippi-yo-vote-arch-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ms/mississippi-ya-vote-masthead-sticker.jpg",
+   "new": "/assets/states/ms/mississippi-yo-vote-masthead-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ms/mississippi-ya-vote-ring-sticker.jpg",
+   "new": "/assets/states/ms/mississippi-yo-vote-ring-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ms/mississippi-ya-vote-tilt-sticker.jpg",
+   "new": "/assets/states/ms/mississippi-yo-vote-tilt-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/mt/montana-ya-vote-big-type-sticker.jpg",
+   "new": "/assets/states/mt/montana-yo-vote-big-type-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/mt/montana-ya-vote-brush-sticker.jpg",
+   "new": "/assets/states/mt/montana-yo-vote-brush-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/mt/montana-ya-vote-temprano-ring-sticker.jpg",
+   "new": "/assets/states/mt/montana-yo-vote-temprano-ring-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/mt/montana-ya-vote-tilt-sticker.jpg",
+   "new": "/assets/states/mt/montana-yo-vote-tilt-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/nc/north-carolina-ya-vote-masthead-sticker.jpg",
+   "new": "/assets/states/nc/north-carolina-yo-vote-masthead-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/nc/north-carolina-ya-vote-split-sticker.jpg",
+   "new": "/assets/states/nc/north-carolina-yo-vote-split-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/nc/north-carolina-ya-vote-temprano-below-sticker.jpg",
+   "new": "/assets/states/nc/north-carolina-yo-vote-temprano-below-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/nc/north-carolina-ya-vote-varsity-sticker.jpg",
+   "new": "/assets/states/nc/north-carolina-yo-vote-varsity-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/nd/north-dakota-ya-vote-masthead-sticker.jpg",
+   "new": "/assets/states/nd/north-dakota-yo-vote-masthead-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/nd/north-dakota-ya-vote-round-sticker.jpg",
+   "new": "/assets/states/nd/north-dakota-yo-vote-round-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/nd/north-dakota-ya-vote-temprano-half-sticker.jpg",
+   "new": "/assets/states/nd/north-dakota-yo-vote-temprano-half-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/nd/north-dakota-ya-vote-varsity-sticker.jpg",
+   "new": "/assets/states/nd/north-dakota-yo-vote-varsity-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ne/nebraska-ya-vote-big-type-sticker.jpg",
+   "new": "/assets/states/ne/nebraska-yo-vote-big-type-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ne/nebraska-ya-vote-brush-sticker.jpg",
+   "new": "/assets/states/ne/nebraska-yo-vote-brush-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ne/nebraska-ya-vote-plate-sticker.jpg",
+   "new": "/assets/states/ne/nebraska-yo-vote-plate-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ne/nebraska-ya-vote-temprano-arch-sticker.jpg",
+   "new": "/assets/states/ne/nebraska-yo-vote-temprano-arch-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/nh/new-hampshire-ya-vote-below-sticker.jpg",
+   "new": "/assets/states/nh/new-hampshire-yo-vote-below-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/nh/new-hampshire-ya-vote-brush-sticker.jpg",
+   "new": "/assets/states/nh/new-hampshire-yo-vote-brush-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/nh/new-hampshire-ya-vote-plate-sticker.jpg",
+   "new": "/assets/states/nh/new-hampshire-yo-vote-plate-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/nh/new-hampshire-ya-vote-side-sticker.jpg",
+   "new": "/assets/states/nh/new-hampshire-yo-vote-side-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/nj/new-jersey-ya-vote-below-sticker.jpg",
+   "new": "/assets/states/nj/new-jersey-yo-vote-below-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/nj/new-jersey-ya-vote-half-sticker.jpg",
+   "new": "/assets/states/nj/new-jersey-yo-vote-half-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/nj/new-jersey-ya-vote-side-sticker.jpg",
+   "new": "/assets/states/nj/new-jersey-yo-vote-side-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/nj/new-jersey-ya-vote-temprano-big-type-sticker.jpg",
+   "new": "/assets/states/nj/new-jersey-yo-vote-temprano-big-type-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/nm/new-mexico-ya-vote-below-sticker.jpg",
+   "new": "/assets/states/nm/new-mexico-yo-vote-below-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/nm/new-mexico-ya-vote-half-sticker.jpg",
+   "new": "/assets/states/nm/new-mexico-yo-vote-half-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/nm/new-mexico-ya-vote-split-sticker.jpg",
+   "new": "/assets/states/nm/new-mexico-yo-vote-split-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/nm/new-mexico-ya-vote-temprano-plate-sticker.jpg",
+   "new": "/assets/states/nm/new-mexico-yo-vote-temprano-plate-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/nv/nevada-ya-vote-big-type-sticker.jpg",
+   "new": "/assets/states/nv/nevada-yo-vote-big-type-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/nv/nevada-ya-vote-plate-sticker.jpg",
+   "new": "/assets/states/nv/nevada-yo-vote-plate-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/nv/nevada-ya-vote-side-sticker.jpg",
+   "new": "/assets/states/nv/nevada-yo-vote-side-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/nv/nevada-ya-vote-temprano-tilt-sticker.jpg",
+   "new": "/assets/states/nv/nevada-yo-vote-temprano-tilt-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ny/new-york-ya-vote-half-sticker.jpg",
+   "new": "/assets/states/ny/new-york-yo-vote-half-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ny/new-york-ya-vote-split-sticker.jpg",
+   "new": "/assets/states/ny/new-york-yo-vote-split-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ny/new-york-ya-vote-temprano-side-sticker.jpg",
+   "new": "/assets/states/ny/new-york-yo-vote-temprano-side-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ny/new-york-ya-vote-varsity-sticker.jpg",
+   "new": "/assets/states/ny/new-york-yo-vote-varsity-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/oh/ohio-ya-vote-masthead-sticker.jpg",
+   "new": "/assets/states/oh/ohio-yo-vote-masthead-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/oh/ohio-ya-vote-ring-sticker.jpg",
+   "new": "/assets/states/oh/ohio-yo-vote-ring-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/oh/ohio-ya-vote-round-sticker.jpg",
+   "new": "/assets/states/oh/ohio-yo-vote-round-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/oh/ohio-ya-vote-temprano-split-sticker.jpg",
+   "new": "/assets/states/oh/ohio-yo-vote-temprano-split-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ok/oklahoma-ya-vote-arch-sticker.jpg",
+   "new": "/assets/states/ok/oklahoma-yo-vote-arch-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ok/oklahoma-ya-vote-ring-sticker.jpg",
+   "new": "/assets/states/ok/oklahoma-yo-vote-ring-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ok/oklahoma-ya-vote-round-sticker.jpg",
+   "new": "/assets/states/ok/oklahoma-yo-vote-round-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ok/oklahoma-ya-vote-temprano-varsity-sticker.jpg",
+   "new": "/assets/states/ok/oklahoma-yo-vote-temprano-varsity-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/or/oregon-ya-vote-arch-sticker.jpg",
+   "new": "/assets/states/or/oregon-yo-vote-arch-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/or/oregon-ya-vote-por-correo-masthead-sticker.jpg",
+   "new": "/assets/states/or/oregon-yo-vote-por-correo-masthead-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/or/oregon-ya-vote-ring-sticker.jpg",
+   "new": "/assets/states/or/oregon-yo-vote-ring-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/or/oregon-ya-vote-tilt-sticker.jpg",
+   "new": "/assets/states/or/oregon-yo-vote-tilt-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/pa/pennsylvania-ya-vote-arch-sticker.jpg",
+   "new": "/assets/states/pa/pennsylvania-yo-vote-arch-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/pa/pennsylvania-ya-vote-brush-sticker.jpg",
+   "new": "/assets/states/pa/pennsylvania-yo-vote-brush-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/pa/pennsylvania-ya-vote-temprano-round-sticker.jpg",
+   "new": "/assets/states/pa/pennsylvania-yo-vote-temprano-round-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/pa/pennsylvania-ya-vote-tilt-sticker.jpg",
+   "new": "/assets/states/pa/pennsylvania-yo-vote-tilt-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ri/rhode-island-ya-vote-big-type-sticker.jpg",
+   "new": "/assets/states/ri/rhode-island-yo-vote-big-type-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ri/rhode-island-ya-vote-brush-sticker.jpg",
+   "new": "/assets/states/ri/rhode-island-yo-vote-brush-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ri/rhode-island-ya-vote-temprano-ring-sticker.jpg",
+   "new": "/assets/states/ri/rhode-island-yo-vote-temprano-ring-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ri/rhode-island-ya-vote-tilt-sticker.jpg",
+   "new": "/assets/states/ri/rhode-island-yo-vote-tilt-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/sc/south-carolina-ya-vote-big-type-sticker.jpg",
+   "new": "/assets/states/sc/south-carolina-yo-vote-big-type-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/sc/south-carolina-ya-vote-brush-sticker.jpg",
+   "new": "/assets/states/sc/south-carolina-yo-vote-brush-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/sc/south-carolina-ya-vote-plate-sticker.jpg",
+   "new": "/assets/states/sc/south-carolina-yo-vote-plate-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/sc/south-carolina-ya-vote-temprano-arch-sticker.jpg",
+   "new": "/assets/states/sc/south-carolina-yo-vote-temprano-arch-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/sd/south-dakota-ya-vote-big-type-sticker.jpg",
+   "new": "/assets/states/sd/south-dakota-yo-vote-big-type-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/sd/south-dakota-ya-vote-plate-sticker.jpg",
+   "new": "/assets/states/sd/south-dakota-yo-vote-plate-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/sd/south-dakota-ya-vote-side-sticker.jpg",
+   "new": "/assets/states/sd/south-dakota-yo-vote-side-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/sd/south-dakota-ya-vote-temprano-tilt-sticker.jpg",
+   "new": "/assets/states/sd/south-dakota-yo-vote-temprano-tilt-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/tn/tennessee-ya-vote-below-sticker.jpg",
+   "new": "/assets/states/tn/tennessee-yo-vote-below-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/tn/tennessee-ya-vote-plate-sticker.jpg",
+   "new": "/assets/states/tn/tennessee-yo-vote-plate-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/tn/tennessee-ya-vote-side-sticker.jpg",
+   "new": "/assets/states/tn/tennessee-yo-vote-side-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/tn/tennessee-ya-vote-temprano-brush-sticker.jpg",
+   "new": "/assets/states/tn/tennessee-yo-vote-temprano-brush-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/tx/texas-ya-vote-below-sticker.jpg",
+   "new": "/assets/states/tx/texas-yo-vote-below-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/tx/texas-ya-vote-half-sticker.jpg",
+   "new": "/assets/states/tx/texas-yo-vote-half-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/tx/texas-ya-vote-side-sticker.jpg",
+   "new": "/assets/states/tx/texas-yo-vote-side-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/tx/texas-ya-vote-temprano-big-type-sticker.jpg",
+   "new": "/assets/states/tx/texas-yo-vote-temprano-big-type-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ut/utah-ya-vote-below-sticker.jpg",
+   "new": "/assets/states/ut/utah-yo-vote-below-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ut/utah-ya-vote-half-sticker.jpg",
+   "new": "/assets/states/ut/utah-yo-vote-half-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ut/utah-ya-vote-split-sticker.jpg",
+   "new": "/assets/states/ut/utah-yo-vote-split-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/ut/utah-ya-vote-temprano-plate-sticker.jpg",
+   "new": "/assets/states/ut/utah-yo-vote-temprano-plate-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/va/virginia-ya-vote-masthead-sticker.jpg",
+   "new": "/assets/states/va/virginia-yo-vote-masthead-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/va/virginia-ya-vote-split-sticker.jpg",
+   "new": "/assets/states/va/virginia-yo-vote-split-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/va/virginia-ya-vote-temprano-below-sticker.jpg",
+   "new": "/assets/states/va/virginia-yo-vote-temprano-below-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/va/virginia-ya-vote-varsity-sticker.jpg",
+   "new": "/assets/states/va/virginia-yo-vote-varsity-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/vt/vermont-ya-vote-half-sticker.jpg",
+   "new": "/assets/states/vt/vermont-yo-vote-half-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/vt/vermont-ya-vote-split-sticker.jpg",
+   "new": "/assets/states/vt/vermont-yo-vote-split-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/vt/vermont-ya-vote-temprano-side-sticker.jpg",
+   "new": "/assets/states/vt/vermont-yo-vote-temprano-side-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/vt/vermont-ya-vote-varsity-sticker.jpg",
+   "new": "/assets/states/vt/vermont-yo-vote-varsity-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/wa/washington-ya-vote-masthead-sticker.jpg",
+   "new": "/assets/states/wa/washington-yo-vote-masthead-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/wa/washington-ya-vote-por-correo-half-sticker.jpg",
+   "new": "/assets/states/wa/washington-yo-vote-por-correo-half-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/wa/washington-ya-vote-round-sticker.jpg",
+   "new": "/assets/states/wa/washington-yo-vote-round-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/wa/washington-ya-vote-varsity-sticker.jpg",
+   "new": "/assets/states/wa/washington-yo-vote-varsity-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/wi/wisconsin-ya-vote-arch-sticker.jpg",
+   "new": "/assets/states/wi/wisconsin-yo-vote-arch-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/wi/wisconsin-ya-vote-ring-sticker.jpg",
+   "new": "/assets/states/wi/wisconsin-yo-vote-ring-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/wi/wisconsin-ya-vote-round-sticker.jpg",
+   "new": "/assets/states/wi/wisconsin-yo-vote-round-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/wi/wisconsin-ya-vote-temprano-varsity-sticker.jpg",
+   "new": "/assets/states/wi/wisconsin-yo-vote-temprano-varsity-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/wv/west-virginia-ya-vote-masthead-sticker.jpg",
+   "new": "/assets/states/wv/west-virginia-yo-vote-masthead-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/wv/west-virginia-ya-vote-ring-sticker.jpg",
+   "new": "/assets/states/wv/west-virginia-yo-vote-ring-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/wv/west-virginia-ya-vote-round-sticker.jpg",
+   "new": "/assets/states/wv/west-virginia-yo-vote-round-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/wv/west-virginia-ya-vote-temprano-split-sticker.jpg",
+   "new": "/assets/states/wv/west-virginia-yo-vote-temprano-split-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/wy/wyoming-ya-vote-arch-sticker.jpg",
+   "new": "/assets/states/wy/wyoming-yo-vote-arch-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/wy/wyoming-ya-vote-ring-sticker.jpg",
+   "new": "/assets/states/wy/wyoming-yo-vote-ring-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/wy/wyoming-ya-vote-temprano-masthead-sticker.jpg",
+   "new": "/assets/states/wy/wyoming-yo-vote-temprano-masthead-sticker.jpg"
+  },
+  {
+   "old": "/assets/states/wy/wyoming-ya-vote-tilt-sticker.jpg",
+   "new": "/assets/states/wy/wyoming-yo-vote-tilt-sticker.jpg"
+  }
+ ]
+}
