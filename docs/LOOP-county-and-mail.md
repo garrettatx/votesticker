@@ -772,3 +772,89 @@ stopped. No CAPTCHA.
 - DC, RI and SD open-window titles drop "I Voted" until their windows close (not changed, per the brief).
 
 **Next.** Pass 6's list stands, plus the two Request Indexing items above.
+
+### October 31: Pass 9, History Timeline Chart
+
+Garrett's screenshots showed the /history/ overview chart failing on desktop and phones: a linear 1880 to 2030 SVG
+axis left 1888 to 1980 empty and piled 2008 to 2024 on top of each other, labels overprinted (2010 Facebook over 2022
+Ulster County, 2008 Facebook over 2018 Instagram, 1985 Phoenix against 1987 Flag oval), a 640px minimum width scrolled
+sideways, and on a phone it shrank to an unreadable strip. Later he widened the brief: format the whole page as an
+editorial page, learn from resistnow, and list ideas for the other page types.
+
+**Design decision (delegated; reasons).** The chart's job is navigation: an at-a-glance overview whose marks jump to the
+26 entries below. Navigation needs readable, tappable labels more than a true time scale, so the overview is now an era
+index in plain HTML, not an SVG axis.
+- Three eras (Origins 1888 to 1966, The 1980s 1982 to 1987, Contests and the internet 2006 to 2026), each with its range
+  and entry count. Side by side at 960px and up (columns about 1.15 : 0.95 : 2, the busy era gets two list columns);
+  stacked below 960. Reason: width goes where the entries are, not where the years are; labels wrap instead of colliding,
+  in either language, so no collision engine to maintain.
+- Between eras a "//" break with the gap in words: "16 years later", "19 years later". Reason: the long quiet stretch is
+  part of the story (the old chart's only strength), and words say it without an empty axis. It avoids implying "nothing
+  happened" (the section already says gaps mean we haven't found a documented example).
+- Each era keeps a short decorative track of dots placed by year, then pushed apart so same-year entries never touch
+  (the key says "Dots sit roughly by year within each era"). Reason: it keeps the clustering visible (15 entries after
+  2006 vs 5 in the 1980s) at a glance. The dots are aria-hidden; the links are not.
+- One link per entry: shape, year, title. Turning points (entries with a `mark`) in bold. Phones (under 640px) get
+  wrapping 44px chips: year only, plus the short label on turning points ("1985 Phoenix"), with the full title kept
+  in the link's accessible name. Reason: 26 full titles would be a second copy of the list below; chips keep the phone
+  overview to about one screen.
+- Shapes kept (open circle, oval, diamond, dashed circle); the key now sits inside the panel and says "Sticker" for the
+  oval (bold carries "turning point"), so the key no longer mixes format and importance. The 1950 entry says "Evidence
+  incomplete" in words next to its dashed mark.
+- The full timeline list below gets the same era names as dividers.
+
+**Page layout.** Following resistnow's layout system (flush left, prose capped, exhibits fill the column): exhibits (the
+overview, maker cards, scenes) use the full 1088px column; paragraphs are capped at 36rem (the probe measured 87 to 98
+characters per line at 1280 before, 76 to 79 after); "What We Still Don't Know" is a set-apart note (paper background,
+no side border). Before/after design probe (visual-design-audit) at 375 and 1280: measure fixed; radius count unchanged
+at 6 (reused 6px and the 12px token); the remaining signals are the blockquote left rules (reported speech, allowed by
+the data-visualization emphasis rules) and the timeline list's rail (a real timeline rule). Home, Texas, /es/texas/ and
+about at 375 and 1280 are pixel-identical before and after (the CSS is scoped to `.hist` and the new `.tl-*` classes;
+the old SVG timeline rules were removed after a grep found no other users).
+
+**Borrowed from resistnow.** MilestoneTimeline: HTML rather than SVG, automatic vertical layout when narrow or dense,
+an era separator, no hover-only content. EventDensity: annotate a silence with its duration ("16 years" lands, a date
+range does not). layout-system.md: flush-left alignment, prose measure cap, components fill the column. Not borrowed:
+color-coded win/setback dots (our marks are kinds, said in words) and the sr-only duplicate (the visible links are the
+equivalent).
+
+**Perplexity** (VoteSticker.org Research project; Deep Research locked twice with "Upgrade for advanced research
+capabilities. Upgrade to Max for enhanced access to Perplexity deep research.", so regular Search). Prompt and answer:
+`docs/research/history-timeline-20261031/`. Used: era index instead of a squeezed axis; visible label on every link;
+per-era layout rule; breaks explained in words; key inside the panel and not mixing format with importance; don't
+aria-hide the navigation, hide only decorative marks; 44px targets; no animation. Rejected or deferred: dropping all
+year cues from the tracks (kept "roughly by year", stated in the key); same-year cluster headings (adjacent entries with
+their own years read fine); a "skip the overview" link (the overview is short; revisit if it grows); a density strip
+(counts per era do the job without implying popularity); the research-ledger table for "What We Still Don't Know" and a
+then/now table (both need new sourced content; ideas below). Its claim that the page had 21 entries was wrong (26).
+
+**Page ideas for later (not built; need sources or Garrett's call).** Split "who invented it" into four questions
+(earliest located reference, earliest surviving object, first organized distribution, origin of the familiar flag oval);
+"What this proves / what it doesn't" per early entry; a research ledger for the open questions (question, current
+evidence, missing evidence, what would settle it); ask readers for specific evidence (dated photo, object with
+provenance, newspaper scan, purchase record); a revision log shared by both languages; use date vs report date on
+entries.
+
+**Other page types (recommendations only; freeze, and pass 8 owns state pages and home).**
+- Home: paragraphs and FAQ list items measure 82 to 96 characters per line at 1280 (probe, local build); cap them
+  at about 36rem like the history page. The "3 days away" countdown sampled 1.57:1 contrast: a probe signal to check by
+  eye (it may sit on the dark band, a false positive), not a confirmed defect.
+- State pages (Texas probed): list items and paragraphs at 94 to 98 characters per line at 1280; same cap for the
+  sticker story and FAQ answers. Gallery and the two-path panel stay full width. Five box-shadow values at 1280; fold to
+  two tokens when convenient.
+- About: 77 characters at 1280, nearly fine; the same 36rem cap would settle it.
+- Site-wide: one shared "prose measure" rule (cap `p` and `li` in `.guide` and `.faq`, let tables, figures and grids
+  fill the column) instead of per-page caps; build it after Nov 4 and diff every page type before and after.
+
+**QA.** New `scripts/qa_history.mjs` (EN and ES at 320, 375, 414, 768, 1024, 1280, 1440): page and panel sideways
+scroll, overlapping label boxes, overlapping track dots, links under 44px below 960, overview links without an entry and
+entries without a link. Mutation-tested with `--plant overlap|overflow|dots` (each failed, 22 to 28 FAILs), and it
+caught two real defects on the first run (6px panel overflow from the hover inset, one touching dot pair at 320), fixed.
+Built from a clean worktree of the commit (keeps pass 8's uncommitted state edits out): qa_facts, qa_es, qa_seo
+--no-legacy, qa_events, qa_save, qa_cards, qa_history PASS (qa_cards: 78,240 cards, 0 outside the safe circle); qa_stale 2026-10-31: 0 stale, 107 open-window
+clauses; with VOTE_TODAY=2026-11-04: 0 stale, 0 open-window.
+
+**Screenshots.** `docs/research/history-timeline-20261031/shots/`: before-chart-en-375 and -1280; after-chart-en-375,
+-en-1280, -es-320, -es-768, -es-1024 (local build). Live shots: see the push note below.
+
+**Push.** One push, Oct 31 evening; workflow, live checks and IndexNow in the next note.
