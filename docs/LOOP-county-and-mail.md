@@ -952,3 +952,56 @@ the session's tab group, so it was in someone else's hands. Worth a look by Garr
   confirm the run commits the build records.
 - After Nov 4: an "Official 2026 designs" block on the home page with per-link labels (Perplexity idea); Georgia county
   sticker differences if a county office states them.
+
+### October 31: Pass 10, Digital Sticker Answer
+
+**Why.** On Oct 31 ChatGPT answered "where can I find a virtual I voted sticker" with Portage MI, the Washington SOS,
+Canva and FVAP, not us, though OAI-SearchBot can crawl the site. The home title, H1 and description never said "digital"
+or "virtual", and the "Official Digital Stickers" section lists other offices' stickers, not ours. Ahrefs: 0 Google
+volume for "virtual/digital i voted sticker", 150 for "i voted sticker png", so this is mostly for AI answers and
+natural-language questions. Title and H1 left alone (pass 7). Text in existing slots, shipped before the Sunday freeze.
+
+**New home FAQ (EN and ES, every phase; commit 480384b).** After "Where can I get an I voted sticker?":
+- "Is there a digital or virtual I voted sticker?" "Yes. Vote Sticker has free digital I voted stickers for every state
+  and DC, with no account needed. Each one saves as a PNG for Instagram, Facebook, a story or your profile picture. Turn
+  on Cut out the circle in the maker for see-through corners. Some election offices post their own digital stickers too.
+  The ones we found are under [Official Digital Stickers From Election Offices](#official-h)."
+- ES: "¿Hay un sticker de Yo voté digital o virtual?" "Sí. Vote Sticker tiene stickers digitales de Yo voté gratis para
+  cada estado y DC, sin crear una cuenta. Cada uno se guarda como PNG para Instagram, Facebook, una historia o tu foto de
+  perfil. En el creador de stickers, activa Recortar el círculo para tener esquinas transparentes. Algunas oficinas
+  electorales también publican sus propios stickers digitales. Los que encontramos están en [Stickers digitales oficiales
+  de las oficinas electorales]." The ES answer doesn't mention ready-made sets (Spanish pages open on the maker).
+- The home page has no FAQPage JSON-LD (only state pages do), so none was added.
+
+**Description and lead (EN; ES adds "digital"/"digitales" in the same place).**
+| Field, phase | Before | After |
+|---|---|---|
+| desc, pre and eday | Free I voted, I voted early and vote early stickers for every state. Pick yours, ... (213) | Free digital I voted, I voted early and vote early stickers for every state. Pick yours, ... (222) |
+| desc, post | Get a free I voted, I voted early or I voted by mail sticker. ... | Get a free digital I voted, I voted early or I voted by mail sticker. ... (120) |
+| lead, pre and eday | Make an I voted sticker or share your state's voting dates, ... | Make a digital I voted sticker or share your state's voting dates, ... |
+| lead, post | ... Get an I voted, I voted early or I voted by mail sticker, or make your own. | ... Get a digital I voted, I voted early or I voted by mail sticker, or make your own. |
+ES description: "Stickers digitales gratis de Yo voté, ..." (267 characters; it was 257, and qa_seo's 70 to 230 rule covers
+English pages only).
+
+**Portage, Michigan (official digital stickers list, after Ann Arbor).** Read with curl on the city's page,
+https://www.portagemi.gov/852/PortageVotes (HTTP 200): "Wish you could show off an "I Voted" sticker online? Now you can
+with a digital "I Voted!" sticker. Download a sticker below and post it to social media!" Tabs: English, Spanish, Chinese,
+Japanese, Hindi, Arabic, Korean, Filipino, with "I VOTED - ENGLISH STICKER", "¡YO VOTÉ! - SPANISH STICKER" and the rest,
+plus "(Looking for the "First-Time Voter" sticker? View First-Time Voter Sticker)". Entry: "Portage, Michigan, has
+#PortageVotes digital I voted stickers in eight languages, including a ¡YO VOTÉ! sticker in Spanish, plus a First-Time
+Voter sticker." Link label "Get Portage's stickers". Pass 8's Maryland and Colorado entries were already there; no
+duplicates.
+
+**QA (local, 8792).** qa_facts (51 states, 102 pages), qa_es (54 pairs), qa_seo --no-legacy (54 pages, 1,049 links),
+qa_events, qa_save, qa_history, qa_cards: PASS. Dated builds (worktree of 480384b): qa_stale 0 STALE on 10-31 (107
+WINDOW), 11-01 (78), 11-02 (41), 11-03 (5), 11-04 (0); the FAQ and Portage entry render on every date in EN and ES, and
+the post description from Nov 4. VOTE_BETWEEN=1: FAQ and the #official-h section both render. No em dashes.
+
+**Push.** Pulled two docs commits first (outreach plan, press release). One push; dispatched run 41252756978: every step
+passed, including "Commit build records" (3a4c234, records for passes 8, 9 and 10, so the Nov 1 6:05 a.m. build won't
+resend them). IndexNow: "108 sitemap URLs, 12 to submit", "IndexNow answered HTTP 200": home and /es/, plus pass 8 and 9's
+pages that had missed their records (AK, GA, LA, OH, /history/, each EN and ES). Live curl: home and /es/ show the new
+description, FAQ and Portage entry.
+
+**Read-back.** Nov 5: rerun "where can I find a virtual I voted sticker" (and "is there a digital I voted sticker") in
+ChatGPT and Perplexity; note whether votesticker.org is cited. Also check GSC for "digital"/"virtual" queries on the home.
