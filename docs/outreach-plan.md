@@ -129,3 +129,13 @@ sticker's history (tags back to 1920). Garrett
   sitemap and checks what Bing has indexed. ChatGPT search leans on Bing.
 - **Home page digital-sticker answer**: queued after pass 8 (Oct 31).
 - Read-back: rerun the ChatGPT question ("where can I find a virtual I voted sticker") on Nov 5 and monthly after.
+
+## EIN Release Status (October 31, 2026)
+
+- Bought EIN Presswire Basic ($149, one release). Draft saved: "VoteSticker.org Finds Record of 'I Have Voted' Tags
+  at a St. Louis School in 1920", Immediate, U.S. Politics, United States, image "VoteSticker I Voted stickers
+  (navy)" (option B2), caption and alt set, pull quote from Garrett's Texas early-voting line.
+- Shareable preview: https://www.einpresswire.com/shareable-preview/ZFO_2QPAd-kdeus-q3vBdw
+- Blocked on EIN's new-account review (up to two business days). When EIN emails approval: recheck the dateline and
+  the history page callout, then Garrett clicks Submit on the draft (editorial review about two hours).
+- Final copy: `docs/press-release-ein.html`. Spare image for pitches and social: the timeline graphic (option C).
