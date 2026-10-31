@@ -79,7 +79,10 @@
    "status": "verified",
    "until": "2026-10-28",
    "en_after": "Registered Kentucky voters can vote early in person Thursday to Saturday, October 29 to 31, no excuse needed. Hours and places are set by each county.",
-   "es_after": "Los votantes registrados en Kentucky pueden votar por anticipado en persona de jueves a sábado, del 29 al 31 de octubre, sin dar una razón. Cada condado fija los horarios y lugares."
+   "es_after": "Los votantes registrados en Kentucky pueden votar por anticipado en persona de jueves a sábado, del 29 al 31 de octubre, sin dar una razón. Cada condado fija los horarios y lugares.",
+   "until2": "2026-10-31",
+   "en_after2": "Early voting ended Saturday, October 31. On Election Day, polls are open 6 a.m. to 6 p.m. local time.",
+   "es_after2": "La votación anticipada terminó el sábado 31 de octubre. El Día de las Elecciones, los lugares de votación abren de 6 a. m. a 6 p. m., hora local."
   },
   "first_time": {
    "en": "Registered but never got your confirmation card? Call your county clerk's office to check the status of your registration.",

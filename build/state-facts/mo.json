@@ -79,7 +79,10 @@
    "src": "https://revisor.mo.gov/main/OneSection.aspx?section=115.277",
    "checked": "2026-10-28",
    "quote": "A registered voter casting a ballot under the provisions of this subsection shall provide a form of personal photo identification that is consistent with subsection 1 of section 115.427 . Beginning on the second Tuesday prior to an election, a reason listed under subsection 3 of this section shall not be required",
-   "status": "verified"
+   "status": "verified",
+   "until": "2026-11-02",
+   "en_after": "In-person absentee voting ended Monday, November 2. On Election Day, vote at your polling place. Bring a photo ID.",
+   "es_after": "El voto en ausencia en persona terminó el lunes 2 de noviembre. El Día de las Elecciones, vota en tu lugar de votación. Lleva una identificación con foto."
   },
   "first_time": {
    "status": "missing",

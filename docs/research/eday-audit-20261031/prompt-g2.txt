@@ -1,0 +1,9 @@
+For the November 3, 2026 general election, for each of these states: Idaho, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maine, Maryland
+
+1. Official Election Day poll hours (opening and closing), with the statute or state election office page that says so. Note any time zone split (which counties or areas are in which zone and whether hours are local time) and any local option to open earlier or later.
+2. Whether a voter in line at closing time can still vote, quoting the state's own wording.
+3. The official state polling place or vote center lookup URL, and whether voters must use an assigned precinct or may use any vote center in the county.
+4. Whether Election Day (same-day) registration exists, and where.
+5. Anything that changed in the past 7 days (October 24 to 31, 2026): court orders, extended hours, emergencies, polling place moves or consolidations, lookup tool outages, mail ballot deadline changes.
+
+Answer as one table per state plus a short "past 7 days" list. Cite only official state or county election office pages or statutes, with the URL for each fact. Say "not found" rather than guess.

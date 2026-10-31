@@ -90,12 +90,23 @@
  "where": {
   "local_offices_url": "https://azsos.gov/elections/about-elections/county-election-contact-info",
   "rule": {
-   "en": "Your county runs its own voting locations. In Maricopa County, look yours up at locations.maricopa.vote. In Pima County, use pima.gov. Anywhere else, check with your county election office.",
-   "es": "Tu condado tiene sus propios lugares de votación. En el condado de Maricopa, busca el tuyo en locations.maricopa.vote. En el condado de Pima, usa pima.gov. En cualquier otro condado, consulta con tu oficina electoral del condado.",
+   "en": "Your county runs its own voting locations. The Secretary of State lists every county's Election Day voting locations and drop boxes, and warns that flooding may affect roads and access to voting locations, so check for updates before you go. In Maricopa County, look yours up at locations.maricopa.vote. In Pima County, use pima.gov.",
+   "es": "Tu condado tiene sus propios lugares de votación. La Secretaría de Estado publica los lugares de votación del Día de las Elecciones y los buzones de entrega de cada condado, y advierte que las inundaciones pueden afectar los caminos y el acceso a los lugares de votación, así que revisa si hay cambios antes de ir. En el condado de Maricopa, busca el tuyo en locations.maricopa.vote. En el condado de Pima, usa pima.gov.",
    "src": "https://azsos.gov/elections",
-   "checked": "2026-10-21",
+   "checked": "2026-10-31",
    "quote": "If you're a Maricopa County voter, visit locations.maricopa.vote to find a voting location.",
-   "status": "verified"
+   "status": "verified",
+   "quote2": "2026 November 3rd General Election Voting Locations. Important: Flooding may affect roads and access to voting locations. Check for updates before traveling.",
+   "notes": "Oct 31 pass 4: quote2 read in Chrome on https://azsos.gov/elections/voting-locations (one link per county for Early Voting Locations, Drop Box Locations, Election Day Voting Locations). The Maricopa quote stays from azsos.gov/elections (read Oct 21)."
+  },
+  "locator_url": "https://azsos.gov/elections/voting-locations",
+  "locator_label": {
+   "en": "2026 Voting Locations by county (Arizona Secretary of State)",
+   "es": "2026 Voting Locations por condado (Secretaría de Estado de Arizona)"
+  },
+  "locator_cta": {
+   "en": "Find voting locations by county",
+   "es": "Busca lugares de votación por condado"
   }
  },
  "id": {

@@ -35,7 +35,10 @@
    "status": "verified",
    "until": "2026-10-27",
    "en_after": "Applications closed at 8:30 p.m. on October 27. You can still vote early in person through Sunday, November 1, or at your polling place on Election Day.",
-   "es_after": "Las solicitudes cerraron a las 8:30 p. m. del 27 de octubre. Todavía puedes votar por anticipado en persona hasta el domingo 1 de noviembre, o en tu lugar de votación el Día de las Elecciones."
+   "es_after": "Las solicitudes cerraron a las 8:30 p. m. del 27 de octubre. Todavía puedes votar por anticipado en persona hasta el domingo 1 de noviembre, o en tu lugar de votación el Día de las Elecciones.",
+   "until2": "2026-11-01",
+   "en_after2": "Applications closed at 8:30 p.m. on October 27. Vote at your polling place on Election Day.",
+   "es_after2": "Las solicitudes cerraron a las 8:30 p. m. del 27 de octubre. Vota en tu lugar de votación el Día de las Elecciones."
   },
   "mail_return": {
    "en": "Your county board of elections must receive it by 7:30 p.m. on Tuesday, November 3, 2026. A postmark isn't enough. Military and overseas deadlines differ.",
@@ -68,7 +71,10 @@
    "src": "https://www.ohiosos.gov/directories/early-voting-locations",
    "checked": "2026-10-28",
    "quote": "Starting the day after the close of voter registration, registered voters may cast an early in-person ballot at their county board of elections.",
-   "status": "verified"
+   "status": "verified",
+   "until": "2026-11-01",
+   "en_after": "Early voting ended Sunday, November 1. On Election Day, vote at your assigned polling place between 6:30 a.m. and 7:30 p.m.",
+   "es_after": "La votación anticipada terminó el domingo 1 de noviembre. El Día de las Elecciones, vota en el lugar de votación que te corresponde entre las 6:30 a. m. y las 7:30 p. m."
   },
   "first_time": {
    "en": "Check your registration and polling place online before you go. Bring an accepted, unexpired photo ID. Changed your name? Bring proof of the change too.",

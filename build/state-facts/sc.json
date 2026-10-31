@@ -48,7 +48,10 @@
    "src": "https://scvotes.gov/voters/voter-faq/",
    "checked": "2026-10-28",
    "quote": "If you still have your ballot within a week prior to Election Day, consider returning the ballot in person.",
-   "status": "verified"
+   "status": "verified",
+   "until": "2026-10-31",
+   "en_after": "Your county voter registration office must receive it by 7 p.m. on Tuesday, November 3, 2026. A postmark isn't enough. Still have your ballot? The Election Commission says to consider bringing it in person, with your photo ID, to your county voter registration office.",
+   "es_after": "La oficina de registro de votantes de tu condado debe recibirla a más tardar a las 7 p. m. del martes 3 de noviembre de 2026. El matasellos no basta. ¿Todavía tienes tu boleta? La Comisión Electoral recomienda considerar llevarla en persona, con tu identificación con foto, a la oficina de registro de votantes de tu condado."
   },
   "early_hours": {
    "en": "Early voting centers are open 8:30 a.m. to 6 p.m., Monday to Saturday, through Saturday, October 31. Use any early voting center in your county.",

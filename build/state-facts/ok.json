@@ -35,7 +35,10 @@
    "checked": "2026-10-28",
    "quote": "Hand-delivered ballots must be returned no later than the end of business hours on the day before the election, and the voter must show the same proof of identity required for in-person voting. Absentee ballots returned by mail or private delivery service must be received by the County Election Board by 7 p.m. (CST) on Election Day to be counted.",
    "status": "verified",
-   "quote2": "Standard Absentee Ballot affidavits must be notarized, regardless of whether they are hand-delivered or mailed to the County Election Board."
+   "quote2": "Standard Absentee Ballot affidavits must be notarized, regardless of whether they are hand-delivered or mailed to the County Election Board.",
+   "until": "2026-11-02",
+   "en_after": "By mail, your County Election Board must receive it by 7 p.m. on Tuesday, November 3. A postmark isn't enough. Hand delivery to the board ended at the end of business hours on Monday, November 2. The affidavit must be notarized.",
+   "es_after": "Por correo, la junta electoral de tu condado (County Election Board) debe recibirla a más tardar a las 7 p. m. del martes 3 de noviembre. El matasellos no basta. La entrega en persona en la junta terminó al final del horario del lunes 2 de noviembre. La declaración debe estar notariada."
   },
   "early_hours": {
    "en": "Wednesday through Friday, 8 a.m. to 6 p.m. Saturday, 8 a.m. to 2 p.m. Vote at your county's designated early voting location.",
@@ -214,7 +217,10 @@
    "checked": "2026-10-30",
    "quote": "Hand-delivered ballots must be returned no later than the end of business hours on the day before the election, and the voter must show the same proof of identity required for in-person voting. Absentee ballots returned by mail or private delivery service must be received by the County Election Board by 7 p.m. (CST) on Election Day to be counted.",
    "status": "verified",
-   "notes": "Pass 2 Oct 30, read by curl. 'Except as permitted by law, only the voter may return his or her own absentee ballot.' (Election Security page, Perplexity lead)."
+   "notes": "Pass 2 Oct 30, read by curl. 'Except as permitted by law, only the voter may return his or her own absentee ballot.' (Election Security page, Perplexity lead).",
+   "until": "2026-11-02",
+   "en_after": "Yes, by mail. Your County Election Board must receive a mailed ballot by 7 p.m. on Tuesday, November 3, and a postmark doesn't count. Hand delivery to the board ended at the end of business hours on Monday, November 2.",
+   "es_after": "Sí, por correo. La junta electoral de tu condado (County Election Board) debe recibir la boleta por correo a más tardar a las 7 p. m. del martes 3 de noviembre, y el matasellos no cuenta. La entrega en persona en la junta terminó al final del horario del lunes 2 de noviembre."
   }
  },
  "notes": "Read October 21, 2026 on oklahoma.gov/elections (curl worked): Early Voting, How to Vote, Voting 101, Proof of Identity, Absentee Voting, Dates and Deadlines, the 2026 Voter Information Calendar, FAQs, and the August 24, 2026 news release. EARLY VOTING DIFFERS FROM states.js: states.js has start 2026-10-29 and the note 'Thursday and Friday 8 a.m. to 6 p.m., Saturday 8 a.m. to 2 p.m.'. The 2026 Voter Information Calendar row for the November 3 General Elections lists Early Voting Dates and Hours 'October 28 - 30 (8 A.M. – 6 P.M.)' and 'October 31 (8 A.M. – 2 P.M.)', and the Early Voting page says 'Early voting is also available from 8 a.m. to 6 p.m. the Wednesday preceding the General Election.' So early voting starts Wednesday, October 28. The calendar also lists the registration deadline October 9 and the absentee ballot deadline October 19. The mail return date for hand delivery (Monday, November 2) is 'the Monday before the election' on the absentee page. The I Voted sticker line is the Election Board's current Voting 101 tip, not a contest. Drop boxes, ballot cure and first-time voter rules not found; left missing.",

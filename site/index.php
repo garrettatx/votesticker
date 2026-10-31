@@ -395,6 +395,10 @@ function vote_faq_text( $a ) {
 	$lang = vote_es() ? 'es' : 'en';
 	return ! empty( $a['until'] ) && vote_today() > $a['until'] && ! empty( $a[ $lang . '_after' ] ) ? $a[ $lang . '_after' ] : ( $a[ $lang ] ?? '' );
 }
+// The source for that answer: an after-text can rest on its own page (October 31, NC Election Day registration).
+function vote_faq_src( $a ) {
+	return ! empty( $a['src_after'] ) && ! empty( $a['until'] ) && vote_today() > $a['until'] ? $a['src_after'] : $a['src'];
+}
 // The verified state questions for this page, in VOTE_FAQ_Q order: [question, answer, source URL].
 function vote_state_faq( $st ) {
 	static $all = null;
@@ -410,7 +414,7 @@ function vote_state_faq( $st ) {
 		if ( in_array( $key, $gone, true ) ) { continue; }
 		$a = $all[ $st['abbr'] ][ $key ] ?? null;
 		if ( ! $a || empty( $a['src'] ) || empty( $a[ vote_es() ? 'es' : 'en' ] ) ) { continue; }
-		$out[] = array( t( $q, vote_name( $st ) ), vote_faq_text( $a ), $a['src'], VOTE_FAQ_CHECKED );
+		$out[] = array( t( $q, vote_name( $st ) ), vote_faq_text( $a ), vote_faq_src( $a ), VOTE_FAQ_CHECKED );
 	}
 	// Extra questions answered in the state's facts file (build/state-facts/), each with its own check date.
 	foreach ( VOTE_FACT_Q as $path => $q ) {
@@ -446,6 +450,8 @@ function vote_fact( $st, $path ) {
 	$lang = vote_es() ? 'es' : 'en';
 	// A fact with "until" switches to its after-text the day after that date (the build runs daily).
 	$text = ! empty( $f['until'] ) && vote_today() > $f['until'] && ! empty( $f[ $lang . '_after' ] ) ? $f[ $lang . '_after' ] : ( $f[ $lang ] ?? '' );
+	// A second stage (October 31) for after-text that names a later date, such as a Monday hand-delivery deadline.
+	if ( ! empty( $f['until2'] ) && vote_today() > $f['until2'] && ! empty( $f[ $lang . '_after2' ] ) ) { $text = $f[ $lang . '_after2' ]; }
 	return $text ? array( 'text' => $text, 'src' => $f['src'], 'checked' => $f['checked'] ) : null;
 }
 function vote_host( $url ) { return preg_replace( '#^www\.#', '', (string) parse_url( $url, PHP_URL_HOST ) ); }
@@ -480,7 +486,7 @@ function vote_faq_raw( $st, $key ) {
 	static $all = null;
 	if ( null === $all ) { $all = require __DIR__ . '/faq-states.php'; }
 	$a = $all[ $st['abbr'] ][ $key ] ?? null;
-	return $a && ! empty( $a['src'] ) && ! empty( $a[ vote_es() ? 'es' : 'en' ] ) ? array( vote_faq_text( $a ), $a['src'] ) : null;
+	return $a && ! empty( $a['src'] ) && ! empty( $a[ vote_es() ? 'es' : 'en' ] ) ? array( vote_faq_text( $a ), vote_faq_src( $a ) ) : null;
 }
 
 // One "go deeper" line to a Resist Now Learn guide (Garrett, October 21): only where the guide answers the next

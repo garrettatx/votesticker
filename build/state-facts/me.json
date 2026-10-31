@@ -185,12 +185,14 @@
  },
  "faq": {
   "provisional": {
-   "en": "Maine calls it a challenged ballot. It's used when someone questions your eligibility on Election Day, and you can't be turned away. Challenged ballots are counted like regular ballots, and they're only reviewed if a recount could turn on them.",
-   "es": "En Maine se llama boleta impugnada (challenged ballot). Se usa cuando alguien cuestiona tu derecho a votar el Día de las Elecciones, y no te pueden negar el voto. Las boletas impugnadas se cuentan igual que las regulares, y solo se revisan si podrían cambiar el resultado de un recuento.",
+   "en": "Name not on the voting list? You can still register in person until the polls close on Election Day, and then vote. Maine calls it a challenged ballot. It's used when someone questions your eligibility on Election Day, and you can't be turned away. Challenged ballots are counted like regular ballots, and they're only reviewed if a recount could turn on them.",
+   "es": "¿Tu nombre no está en la lista de votantes? Todavía puedes registrarte en persona hasta que cierren las urnas el Día de las Elecciones, y luego votar. En Maine se llama boleta impugnada (challenged ballot). Se usa cuando alguien cuestiona tu derecho a votar el Día de las Elecciones, y no te pueden negar el voto. Las boletas impugnadas se cuentan igual que las regulares, y solo se revisan si podrían cambiar el resultado de un recuento.",
    "src": "https://www.maine.gov/sos/elections-voting/information-about-voting",
-   "checked": "2026-10-21",
+   "checked": "2026-10-31",
    "quote": "All challenged ballots are initially counted in the same manner as regular ballots. No further determination is made on the challenge unless a recount occurs and it is determined that the challenged ballot could affect the outcome of the election.",
-   "status": "verified"
+   "status": "verified",
+   "quote2": "Is there a deadline for registering? Registering in person: Close of the polls on Election Day.",
+   "notes": "Oct 31 pass 4: quote2 read by curl on https://www.maine.gov/sos/elections-voting/state-of-maine-voter-guide. Also 21-A M.R.S. 122(4), read on legislature.maine.gov: 'The registrar shall accept registrations of applicants who appear in person on election day. The registrar shall issue to each of these applicants a certificate entitling the applicant to be placed on the incoming voting list at the voting place.'"
   },
   "line": {
    "en": "You can still vote. If you're in line at the polling place at 8 p.m., you can still register and vote.",

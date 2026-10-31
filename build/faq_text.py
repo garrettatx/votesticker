@@ -85,7 +85,9 @@ A = {
         'id': ("You'll be asked for ID, such as a Social Security card or another preprinted ID with your name and your address, signature, or photo. If you don't have one, you can sign a statement instead.",
                "Te pedirán una identificación, como tu tarjeta del Seguro Social u otra identificación impresa con tu nombre y tu dirección, firma o foto. Si no tienes una, puedes firmar una declaración en su lugar."),
         'reg': ("Yes. The regular deadline was October 16, 2026, but you can register and vote the same day during early voting, October 19 to November 1, or on Election Day at your town's Same Day Registration location. Bring a birth certificate, driver's license or Social Security card, plus proof of your address in town if it isn't on that ID.",
-                'Sí. La fecha límite regular fue el 16 de octubre de 2026, pero puedes registrarte y votar el mismo día durante la votación anticipada, del 19 de octubre al 1 de noviembre, o el Día de las Elecciones en el lugar de registro el mismo día (Same Day Registration) de tu municipio. Lleva tu acta de nacimiento, licencia de conducir o tarjeta del Seguro Social, y un comprobante de tu dirección en el municipio si no aparece en esa identificación.'),
+                'Sí. La fecha límite regular fue el 16 de octubre de 2026, pero puedes registrarte y votar el mismo día durante la votación anticipada, del 19 de octubre al 1 de noviembre, o el Día de las Elecciones en el lugar de registro el mismo día (Same Day Registration) de tu municipio. Lleva tu acta de nacimiento, licencia de conducir o tarjeta del Seguro Social, y un comprobante de tu dirección en el municipio si no aparece en esa identificación.',
+                {'until': '2026-11-01', 'en': "Yes, on Election Day. The regular deadline was October 16, 2026, but you can register and vote the same day at your town's Same Day Registration location. Bring a birth certificate, driver's license or Social Security card, plus proof of your address in town if it isn't on that ID.",
+                 'es': 'Sí, el Día de las Elecciones. La fecha límite regular fue el 16 de octubre de 2026, pero puedes registrarte y votar el mismo día en el lugar de registro el mismo día (Same Day Registration) de tu municipio. Lleva tu acta de nacimiento, licencia de conducir o tarjeta del Seguro Social, y un comprobante de tu dirección en el municipio si no aparece en esa identificación.'}),
     },
     'DE': {
         'polls': ("Polls are open 7 a.m. to 8 p.m., and you vote at your assigned polling place.",
@@ -157,7 +159,9 @@ A = {
     },
     'NJ': {
         'polls': ("Polls are open 6 a.m. to 8 p.m. In-person early voting runs October 24 to November 1.",
-                  "Los lugares de votación abren de 6 a. m. a 8 p. m. La votación anticipada en persona es del 24 de octubre al 1 de noviembre."),
+                  "Los lugares de votación abren de 6 a. m. a 8 p. m. La votación anticipada en persona es del 24 de octubre al 1 de noviembre.",
+                {'until': '2026-11-01', 'en': 'Polls are open 6 a.m. to 8 p.m.',
+                 'es': 'Los lugares de votación abren de 6 a. m. a 8 p. m.'}),
         'id': ('Usually not. You show ID only if you\'re a "Need ID" voter, for example if you registered by mail and haven\'t shown ID yet, or your driver\'s license or Social Security number couldn\'t be verified. A current photo ID or a document with your name and address, such as a utility bill, works. Without one, you vote a provisional ballot.',
                'Por lo general, no. Solo muestras identificación si eres un votante "Need ID", por ejemplo, si te registraste por correo y todavía no has mostrado identificación, o si no se pudo verificar tu número de licencia de conducir o de Seguro Social. Sirve una identificación con foto vigente o un documento con tu nombre y dirección, como un recibo de servicios. Si no tienes una, votas con una boleta provisional.'),
         'reg': ("No, not for the November 3 election. The deadline was October 13, 2026, and New Jersey has no Election Day registration.",
@@ -177,7 +181,9 @@ A = {
     },
     'NY': {
         'polls': ("Polls are open 6 a.m. to 9 p.m. Early voting runs October 24 to November 1, with hours set by each county.",
-                  "Los lugares de votación abren de 6 a. m. a 9 p. m. La votación anticipada es del 24 de octubre al 1 de noviembre, con horarios que fija cada condado."),
+                  "Los lugares de votación abren de 6 a. m. a 9 p. m. La votación anticipada es del 24 de octubre al 1 de noviembre, con horarios que fija cada condado.",
+                {'until': '2026-11-01', 'en': 'Polls are open 6 a.m. to 9 p.m.',
+                 'es': 'Los lugares de votación abren de 6 a. m. a 9 p. m.'}),
         'id': ("Usually not; you sign the poll book. Some first-time voters who registered by mail may need a photo ID, a utility bill, a bank statement, or a paycheck.",
                "Por lo general, no; firmas el registro de votantes. Algunos votantes nuevos que se registraron por correo podrían necesitar una identificación con foto, un recibo de servicios, un estado de cuenta bancario o un talón de pago."),
         'reg': ("No, not for the November 3 election. Your application had to reach your county board of elections by October 24, 2026, and New York has no Election Day registration.",
@@ -192,8 +198,10 @@ A = {
                'Te pedirán una identificación con foto, como una licencia de conducir de North Carolina, un pasaporte de EE. UU. o una credencial gratuita de votante con foto. Si no puedes mostrar una, todavía puedes votar con una boleta provisional si llenas un formulario de excepción de identificación (ID Exception Form). Cuenta si llenas el formulario con la verdad.'),
         'reg': ("Yes, during early voting, until 3 p.m. on Saturday, October 31. Register and vote at the same time at an early voting site in your county, and bring proof of your current address. You can't register on Election Day.",
                 'Sí, durante la votación anticipada, hasta las 3 p. m. del sábado 31 de octubre. Regístrate y vota al mismo tiempo en un centro de votación anticipada de tu condado, y lleva un comprobante de tu dirección actual. No puedes registrarte el Día de las Elecciones.',
-                {'until': '2026-10-31', 'en': 'No, not for the November 3 election. Same-day registration ended with early voting on October 31, and North Carolina has no Election Day registration.',
-                 'es': 'No para la elección del 3 de noviembre. El registro el mismo día terminó con la votación anticipada el 31 de octubre, y North Carolina no tiene registro el Día de las Elecciones.'}),
+                {'until': '2026-10-31', 'en': "Not for most voters. Same-day registration ended with early voting on October 31, and you can't register on Election Day. The exception: if you became eligible after the October 9 deadline because you became a U.S. citizen or had your rights restored after a felony conviction, you can register on Election Day.",
+                 'es': 'No para la mayoría de los votantes. El registro el mismo día terminó con la votación anticipada el 31 de octubre, y no puedes registrarte el Día de las Elecciones. La excepción: si cumpliste los requisitos después de la fecha límite del 9 de octubre porque obtuviste la ciudadanía de EE. UU. o te restituyeron tus derechos después de una condena por delito grave (felony), puedes registrarte el Día de las Elecciones.',
+                 'src': 'https://www.ncsbe.gov/news/press-releases/2026/10/30/10-tips-election-day-voters-2026-general-election',
+                 'quote': 'Voter registration is not permitted on Election Day. While that is the general rule, voters who become eligible after the regular voter registration deadline (Oct. 9), either due to becoming a U.S. citizen or having their rights restored following a felony conviction, are permitted to register on Election Day.'}),
         'selfie': ("No. North Carolina law bars photographing a voted ballot. It also bars photographing voters in the voting area without their permission and the chief judge's.",
                    "No. La ley de North Carolina prohíbe tomarle foto a una boleta votada. También prohíbe tomar fotos de los votantes en el área de votación sin su permiso y el del juez principal (chief judge)."),
     },
@@ -345,7 +353,9 @@ A.update({
         'id': ("Usually not. You may need ID if you're voting for the first time in Massachusetts, are on the inactive list, are casting a provisional or challenged ballot, or a poll worker has a practical and legal reason to ask. It needs your name and registered address. A photo isn't required.",
                'Por lo general, no. Puede que necesites identificación si votas por primera vez en Massachusetts, estás en la lista de votantes inactivos, votas con una boleta provisional o impugnada, o un trabajador electoral tiene una razón práctica y legal para pedirla. Debe tener tu nombre y la dirección donde estás registrado. No tiene que tener foto.'),
         'reg': ('Only if you became a U.S. citizen after the deadline. Registration closed October 24, 2026: 11:59 p.m. online, 5 p.m. in person, or a mailed form postmarked that day. New citizens can register in person at their local election office until 4 p.m. on Monday, November 2, with proof of their naturalization date.',
-                'Solo si obtuviste la ciudadanía de EE. UU. después de la fecha límite. El registro cerró el 24 de octubre de 2026: a las 11:59 p. m. en línea, a las 5 p. m. en persona, o con un formulario enviado por correo con matasellos de ese día. Quienes acaban de obtener la ciudadanía pueden registrarse en persona en su oficina electoral local hasta las 4 p. m. del lunes 2 de noviembre, con un comprobante de la fecha de su naturalización.'),
+                'Solo si obtuviste la ciudadanía de EE. UU. después de la fecha límite. El registro cerró el 24 de octubre de 2026: a las 11:59 p. m. en línea, a las 5 p. m. en persona, o con un formulario enviado por correo con matasellos de ese día. Quienes acaban de obtener la ciudadanía pueden registrarse en persona en su oficina electoral local hasta las 4 p. m. del lunes 2 de noviembre, con un comprobante de la fecha de su naturalización.',
+                {'until': '2026-11-02', 'en': 'No, not for the November 3 election. Registration closed October 24, 2026, and the extra window for new U.S. citizens ended at 4 p.m. on Monday, November 2.',
+                 'es': 'No, no para la elección del 3 de noviembre. El registro cerró el 24 de octubre de 2026, y el plazo extra para quienes acaban de obtener la ciudadanía de EE. UU. terminó a las 4 p. m. del lunes 2 de noviembre.'}),
         'selfie': ("No. Massachusetts law makes it a crime to let anyone see how you marked your ballot for a purpose the law doesn't allow, and a photo you share would show it.",
                    "No. En Massachusetts es un delito dejar que alguien vea cómo marcaste tu boleta con un fin que la ley no permite, y una foto que compartas lo mostraría."),
     },
@@ -365,7 +375,9 @@ A.update({
         'id': ("No, if you're already registered; you sign the polling place roster. If you register at the polls, you'll need proof of where you live.",
                "No, si ya estás registrado; firmas la lista de votantes del lugar de votación. Si te registras ahí, necesitarás un comprobante de domicilio."),
         'reg': ('Yes. Preregistration closed October 13, 2026, but you can register when you vote early in person through November 2 or at your polling place on Election Day. Bring proof of where you live.',
-                'Sí. El registro previo cerró el 13 de octubre de 2026, pero puedes registrarte cuando votes por anticipado en persona hasta el 2 de noviembre o en tu lugar de votación el Día de las Elecciones. Lleva un comprobante de domicilio.'),
+                'Sí. El registro previo cerró el 13 de octubre de 2026, pero puedes registrarte cuando votes por anticipado en persona hasta el 2 de noviembre o en tu lugar de votación el Día de las Elecciones. Lleva un comprobante de domicilio.',
+                {'until': '2026-11-02', 'en': 'Yes, at your polling place on Election Day. Preregistration closed October 13, 2026. Bring proof of where you live.',
+                 'es': 'Sí, en tu lugar de votación el Día de las Elecciones. El registro previo cerró el 13 de octubre de 2026. Lleva un comprobante de domicilio.'}),
         'selfie': ('Better not. No Minnesota law strictly bans photos of your own voting, but the Secretary of State discourages them, and a photo of your marked ballot could break the law against showing it to others. Take your sticker selfie outside.',
                    'Mejor no. Ninguna ley de Minnesota prohíbe del todo las fotos de tu propio voto, pero la Secretaría de Estado las desaconseja, y una foto de tu boleta marcada podría violar la ley que prohíbe mostrarla a otras personas. Tómate la selfie con tu sticker afuera.'),
     },
@@ -384,7 +396,9 @@ A.update({
         'id': ("Yes. Show a photo ID, such as a Missouri driver's license or a U.S. passport. Without one, you can vote a provisional ballot, on Election Day or when you vote absentee in person. It counts if you bring an accepted ID back by 7 p.m. on Election Day or your election office matches your signature.",
                'Sí. Muestra una identificación con foto, como una licencia de conducir de Missouri o un pasaporte de EE. UU. Si no tienes una, puedes votar con una boleta provisional, el Día de las Elecciones o cuando votas en ausencia en persona. Cuenta si regresas con una identificación aceptada a más tardar a las 7 p. m. del Día de las Elecciones o si tu oficina electoral confirma que tu firma coincide.'),
         'reg': ('No, not for the November 3 election. The deadline was October 7, 2026, and Missouri has no Election Day registration. Military and overseas voters who left the service, came home or left a job abroad after that date can register in person until 5 p.m. Friday, October 30.',
-                'No para la elección del 3 de noviembre. La fecha límite fue el 7 de octubre de 2026, y Missouri no tiene registro el Día de las Elecciones. Los votantes militares y en el extranjero que dejaron el servicio, regresaron o dejaron un trabajo fuera del país después de esa fecha pueden registrarse en persona hasta las 5 p. m. del viernes 30 de octubre.'),
+                'No para la elección del 3 de noviembre. La fecha límite fue el 7 de octubre de 2026, y Missouri no tiene registro el Día de las Elecciones. Los votantes militares y en el extranjero que dejaron el servicio, regresaron o dejaron un trabajo fuera del país después de esa fecha pueden registrarse en persona hasta las 5 p. m. del viernes 30 de octubre.',
+                {'until': '2026-10-30', 'en': 'No, not for the November 3 election. The deadline was October 7, 2026, and Missouri has no Election Day registration.',
+                 'es': 'No, no para la elección del 3 de noviembre. La fecha límite fue el 7 de octubre de 2026, y Missouri no tiene registro el Día de las Elecciones.'}),
         'selfie': ("Don't share a photo of your marked ballot. Missouri law makes it an offense to let anyone see your ballot so they know how you voted. No state rule we found covers other photos at the polls, so ask a poll worker.",
                    'No compartas una foto de tu boleta marcada. En Missouri es delito dejar que alguien vea tu boleta para que sepa cómo votaste. No encontramos ninguna regla estatal sobre otras fotos en el lugar de votación, así que pregunta a un trabajador electoral.'),
     },
@@ -556,6 +570,9 @@ def main(research_dir):
             aft = after[0] if after else {}
             assert '—' not in en + es + aft.get('en', '') + aft.get('es', '') and '–' not in en + es + aft.get('en', '') + aft.get('es', ''), (abbr, key)
             extra = f", 'until' => {php(aft['until'])}, 'en_after' => {php(aft['en'])}, 'es_after' => {php(aft['es'])}" if aft else ''
+            if aft.get('src'):  # the after-text's own official page (needs a quote beside it in this file)
+                assert aft.get('quote'), (abbr, key, 'src without quote')
+                extra += f", 'src_after' => {php(aft['src'])}"
             lines.append(f"\t\t'{key}' => array( 'en' => {php(en)}, 'es' => {php(es)}, 'src' => {php(src)}{extra} ),")
         lines.append('\t),')
         sources[abbr] = {k: r.get(k) for k in ('polls', 'id', 'registration', 'selfie', 'notes')}

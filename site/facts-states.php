@@ -190,6 +190,9 @@ return array(
 			'es' => 'Una boleta enviada por correo debe llegar a la oficina de voto en ausencia de tu condado (Absentee Election Manager) a más tardar al mediodía del martes 3 de noviembre. El matasellos no basta. ¿La vas a llevar tú? Entrégala en esa oficina antes de que cierre el lunes 2 de noviembre de 2026, a más tardar a las 5 p. m.',
 			'src' => 'https://www.sos.alabama.gov/alabama-votes/voter/absentee-voting',
 			'checked' => '2026-10-28',
+			'until' => '2026-11-02',
+			'en_after' => 'A mailed ballot must reach your county\'s Absentee Election Manager by noon on Tuesday, November 3. A postmark isn\'t enough. In-person return ended at closing time on Monday, November 2.',
+			'es_after' => 'Una boleta enviada por correo debe llegar a la oficina de voto en ausencia de tu condado (Absentee Election Manager) a más tardar al mediodía del martes 3 de noviembre. El matasellos no basta. La entrega en persona terminó al cierre del lunes 2 de noviembre.',
 		),
 		'how.in_person' => array(
 			'en' => 'Alabama has no early voting, so most people vote at their polling place on Election Day. If you qualify for an absentee ballot, you can also visit your county\'s Absentee Election Manager to ask for one. In most counties that\'s the circuit clerk.',
@@ -306,6 +309,12 @@ return array(
 			'src' => 'https://www.sos.alabama.gov/sites/default/files/election-2026/2026-VoterGuide.pdf',
 			'checked' => '2026-10-21',
 		),
+		'faq.line' => array(
+			'en' => 'You can still vote. Everyone in line at 7 p.m. gets to vote before the polling place closes. If you join the line after 7 p.m., you can\'t vote.',
+			'es' => 'Todavía puedes votar. Todas las personas que están en la fila a las 7 p. m. pueden votar antes de que cierre el lugar de votación. Si llegas a la fila después de las 7 p. m., ya no puedes votar.',
+			'src' => 'https://www.sos.alabama.gov/sites/default/files/election-2026/2026%20Poll%20Worker%20Guide%20Complete.pdf',
+			'checked' => '2026-10-31',
+		),
 		'faq.track' => array(
 			'en' => 'Check your absentee ballot\'s status with My Voting Information on the Secretary of State\'s site.',
 			'es' => 'Revisa el estado de tu boleta de voto en ausencia en el buscador oficial de la Secretaría de Estado (My Voting Information).',
@@ -317,6 +326,9 @@ return array(
 			'es' => 'Puede que sí. El administrador electoral de voto en ausencia de tu condado (Absentee Election Manager) debe recibir la boleta por correo a más tardar al mediodía del martes 3 de noviembre, y el matasellos no cuenta. Todavía puedes entregar tu propia boleta en esa oficina antes del cierre, y a más tardar a las 5 p. m., del lunes 2 de noviembre. El correo, una empresa de mensajería o tu entrega en persona son las únicas formas legales de devolverla.',
 			'src' => 'https://www.sos.alabama.gov/alabama-votes/voter/absentee-voting',
 			'checked' => '2026-10-30',
+			'until' => '2026-11-02',
+			'en_after' => 'Yes, by mail. Your county\'s Absentee Election Manager must receive a mailed ballot by noon on Tuesday, November 3, and a postmark doesn\'t count. Hand delivery ended at close of business on Monday, November 2.',
+			'es_after' => 'Sí, por correo. El administrador electoral de voto en ausencia de tu condado (Absentee Election Manager) debe recibir la boleta por correo a más tardar al mediodía del martes 3 de noviembre, y el matasellos no cuenta. La entrega en persona terminó al cierre del lunes 2 de noviembre.',
 		),
 	),
 	'AR' => array(
@@ -552,12 +564,21 @@ return array(
 			'en_after' => 'Early and emergency voting are over. Vote at the polls on Election Day, Tuesday, November 3. Bring ID.',
 			'es_after' => 'La votación anticipada y la de emergencia terminaron. Vota en tu lugar de votación el Día de las Elecciones, el martes 3 de noviembre. Lleva identificación.',
 		),
+		'where.locator_url' => 'https://azsos.gov/elections/voting-locations',
+		'where.locator_label' => array(
+			'en' => '2026 Voting Locations by county (Arizona Secretary of State)',
+			'es' => '2026 Voting Locations por condado (Secretaría de Estado de Arizona)',
+		),
+		'where.locator_cta' => array(
+			'en' => 'Find voting locations by county',
+			'es' => 'Busca lugares de votación por condado',
+		),
 		'where.local_offices_url' => 'https://azsos.gov/elections/about-elections/county-election-contact-info',
 		'where.rule' => array(
-			'en' => 'Your county runs its own voting locations. In Maricopa County, look yours up at locations.maricopa.vote. In Pima County, use pima.gov. Anywhere else, check with your county election office.',
-			'es' => 'Tu condado tiene sus propios lugares de votación. En el condado de Maricopa, busca el tuyo en locations.maricopa.vote. En el condado de Pima, usa pima.gov. En cualquier otro condado, consulta con tu oficina electoral del condado.',
+			'en' => 'Your county runs its own voting locations. The Secretary of State lists every county\'s Election Day voting locations and drop boxes, and warns that flooding may affect roads and access to voting locations, so check for updates before you go. In Maricopa County, look yours up at locations.maricopa.vote. In Pima County, use pima.gov.',
+			'es' => 'Tu condado tiene sus propios lugares de votación. La Secretaría de Estado publica los lugares de votación del Día de las Elecciones y los buzones de entrega de cada condado, y advierte que las inundaciones pueden afectar los caminos y el acceso a los lugares de votación, así que revisa si hay cambios antes de ir. En el condado de Maricopa, busca el tuyo en locations.maricopa.vote. En el condado de Pima, usa pima.gov.',
 			'src' => 'https://azsos.gov/elections',
-			'checked' => '2026-10-21',
+			'checked' => '2026-10-31',
 		),
 		'id.rule' => 'id_nonphoto',
 		'id.accepted' => array(
@@ -1129,6 +1150,9 @@ return array(
 			'es' => '¿La mandas por correo o la dejas en un buzón de entrega? El secretario municipal (Town Clerk) debe recibirla a más tardar a las 8 p. m. del martes 3 de noviembre. ¿La llevas en persona al secretario municipal? Hazlo antes del cierre de la oficina el lunes 2 de noviembre. Un familiar que vive contigo, o la persona designada de un votante enfermo o con discapacidad, puede entregarla hasta las 8 p. m. del Día de las Elecciones.',
 			'src' => 'https://portal.ct.gov/-/media/sots/early-voting/2026-voting-guide/2026_voter_guide-2-final-combined.pdf',
 			'checked' => '2026-10-28',
+			'until' => '2026-11-02',
+			'en_after' => 'Mailing it or using a drop box? Your Town Clerk must receive it by 8 p.m. on Tuesday, November 3. A family member who lives with you, or the designee of an ill or disabled voter, can hand it in until 8 p.m. on Election Day.',
+			'es_after' => '¿La mandas por correo o la dejas en un buzón de entrega? El secretario municipal (Town Clerk) debe recibirla a más tardar a las 8 p. m. del martes 3 de noviembre. Un familiar que vive contigo, o la persona designada de un votante enfermo o con discapacidad, puede entregarla hasta las 8 p. m. del Día de las Elecciones.',
 		),
 		'dates.early_hours' => array(
 			'en' => 'Early voting runs 10 a.m. to 6 p.m. every day, weekends included, with longer hours, 8 a.m. to 8 p.m., on Tuesday, October 27, and Thursday, October 29. If you\'re in line by closing time, you can vote.',
@@ -1259,6 +1283,9 @@ return array(
 			'es' => 'Puede que sí. El secretario de tu municipio (Town Clerk) debe recibir la boleta por correo a más tardar a las 8 p. m. del martes 3 de noviembre, y el matasellos no cuenta. Mejor usa el buzón oficial de entrega de tu municipio a más tardar a las 8 p. m. de ese día. ¿La vas a entregar tú en persona al Town Clerk? Hazlo antes del cierre de la oficina el lunes 2 de noviembre.',
 			'src' => 'https://portal.ct.gov/-/media/sots/early-voting/2026-voting-guide/2026_voter_guide-2-final-combined.pdf',
 			'checked' => '2026-10-30',
+			'until' => '2026-11-02',
+			'en_after' => 'Yes, by mail. Your Town Clerk must receive it by 8 p.m. on Tuesday, November 3, and a postmark doesn\'t count. Use your town\'s official drop box by 8 p.m. instead.',
+			'es_after' => 'Sí, por correo. El secretario de tu municipio (Town Clerk) debe recibirla a más tardar a las 8 p. m. del martes 3 de noviembre, y el matasellos no cuenta. Mejor usa el buzón oficial de entrega de tu municipio a más tardar a las 8 p. m.',
 		),
 	),
 	'DC' => array(
@@ -2819,10 +2846,10 @@ return array(
 			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
-			'en' => 'You may get one if you don\'t have the required photo ID or your eligibility at the precinct is challenged. After Election Day, the county election board decides whether it counts. Without ID, you have until noon on Friday, November 13 to follow up.',
-			'es' => 'Puedes recibir una si no tienes la identificación con foto requerida o si cuestionan tu derecho a votar en el precinto. Después del Día de las Elecciones, la junta electoral del condado decide si cuenta. Si no tenías identificación, tienes hasta el mediodía del viernes 13 de noviembre para completar el trámite.',
+			'en' => 'Not on the poll book? If a fail-safe procedure doesn\'t fix it and you believe you\'re qualified to vote in that precinct, you can vote a provisional ballot. You may get one if you don\'t have the required photo ID or your eligibility at the precinct is challenged. After Election Day, the county election board decides whether it counts. Without ID, you have until noon on Friday, November 13 to follow up.',
+			'es' => '¿No estás en el registro de votantes del precinto (poll book)? Si un procedimiento de respaldo (fail-safe) no lo resuelve y crees que tienes derecho a votar en ese precinto, puedes votar con una boleta provisional. Puedes recibir una si no tienes la identificación con foto requerida o si cuestionan tu derecho a votar en el precinto. Después del Día de las Elecciones, la junta electoral del condado decide si cuenta. Si no tenías identificación, tienes hasta el mediodía del viernes 13 de noviembre para completar el trámite.',
 			'src' => 'https://www.in.gov/sos/elections/voter-information/ways-to-vote/provisional-ballots/',
-			'checked' => '2026-10-28',
+			'checked' => '2026-10-31',
 		),
 		'faq.line' => array(
 			'en' => 'You can still vote. Everyone in line when polls close at 6 p.m. local time gets to vote.',
@@ -3088,6 +3115,9 @@ return array(
 			'until' => '2026-10-28',
 			'en_after' => 'Registered Kentucky voters can vote early in person Thursday to Saturday, October 29 to 31, no excuse needed. Hours and places are set by each county.',
 			'es_after' => 'Los votantes registrados en Kentucky pueden votar por anticipado en persona de jueves a sábado, del 29 al 31 de octubre, sin dar una razón. Cada condado fija los horarios y lugares.',
+			'until2' => '2026-10-31',
+			'en_after2' => 'Early voting ended Saturday, October 31. On Election Day, polls are open 6 a.m. to 6 p.m. local time.',
+			'es_after2' => 'La votación anticipada terminó el sábado 31 de octubre. El Día de las Elecciones, los lugares de votación abren de 6 a. m. a 6 p. m., hora local.',
 		),
 		'how.first_time' => array(
 			'en' => 'Registered but never got your confirmation card? Call your county clerk\'s office to check the status of your registration.',
@@ -3229,6 +3259,9 @@ return array(
 			'until' => '2026-10-30',
 			'en_after' => 'Absentee requests closed at 4:30 p.m. on October 30, 2026. Military and overseas voters, and voters who are in the hospital, have until 4:30 p.m. on Monday, November 2. Everyone else votes at their polling place on Election Day, 6 a.m. to 8 p.m.',
 			'es_after' => 'Las solicitudes de boleta de voto en ausencia cerraron a las 4:30 p. m. del 30 de octubre de 2026. Los votantes militares y en el extranjero, y los votantes que están hospitalizados, tienen hasta las 4:30 p. m. del lunes 2 de noviembre. Todos los demás votan en su lugar de votación el Día de las Elecciones, de 6 a. m. a 8 p. m.',
+			'until2' => '2026-11-02',
+			'en_after2' => 'Absentee requests closed at 4:30 p.m. on October 30, 2026, and at 4:30 p.m. on Monday, November 2 for military, overseas and hospitalized voters. Vote at your polling place on Election Day, 6 a.m. to 8 p.m.',
+			'es_after2' => 'Las solicitudes de boleta de voto en ausencia cerraron a las 4:30 p. m. del 30 de octubre de 2026, y a las 4:30 p. m. del lunes 2 de noviembre para los votantes militares, en el extranjero u hospitalizados. Vota en tu lugar de votación el Día de las Elecciones, de 6 a. m. a 8 p. m.',
 		),
 		'dates.mail_return' => array(
 			'en' => 'Your parish Registrar of Voters must receive your voted ballot by 4:30 p.m. on Monday, November 2, 2026, the day before Election Day. Military, overseas and hospitalized voters have until 8 p.m. on Election Day.',
@@ -3250,6 +3283,9 @@ return array(
 			'es' => 'Si el registrador de votantes (Registrar of Voters) te contacta por un problema con el sobre de tu boleta de voto en ausencia, como que falte tu firma, la firma del testigo o el apellido de soltera de tu madre, ve en persona a su oficina a más tardar a las 4:30 p. m. del lunes 2 de noviembre de 2026 para corregirlo. O pide una boleta de reemplazo, que tiene que llegarle al registrador antes de esa misma fecha límite.',
 			'src' => 'https://www.sos.la.gov/elections-voting/ways-to-vote',
 			'checked' => '2026-10-28',
+			'until' => '2026-11-02',
+			'en_after' => 'If your Registrar of Voters contacted you about a problem with your absentee envelope, such as a missing signature, witness signature or mother\'s maiden name, the deadline to fix it in person, or to get a replacement ballot to the registrar, was 4:30 p.m. on Monday, November 2, 2026.',
+			'es_after' => 'Si el registrador de votantes (Registrar of Voters) te contactó por un problema con el sobre de tu boleta de voto en ausencia, como que faltara tu firma, la firma del testigo o el apellido de soltera de tu madre, la fecha límite para corregirlo en persona, o para que le llegara una boleta de reemplazo, fue a las 4:30 p. m. del lunes 2 de noviembre de 2026.',
 		),
 		'how.in_person' => array(
 			'en' => 'You don\'t need a reason to vote early. Vote in person at a designated early voting location in your parish, just like on Election Day. On Election Day, vote at the polling place listed on your voter information card.',
@@ -3373,6 +3409,9 @@ return array(
 			'es' => 'Puede que sí. El registrador de votantes de tu parroquia (parish Registrar of Voters) debe recibirla a más tardar a las 4:30 p. m. del lunes 2 de noviembre, el día antes de las elecciones, y el matasellos no cuenta. Tú o un familiar directo todavía pueden entregarla en la oficina del registrador antes de esa hora. Los votantes militares, en el extranjero u hospitalizados tienen hasta las 8 p. m. del Día de las Elecciones.',
 			'src' => 'https://www.sos.la.gov/elections-voting/ways-to-vote',
 			'checked' => '2026-10-30',
+			'until' => '2026-11-02',
+			'en_after' => 'Yes, for most voters. Your parish Registrar of Voters had to receive it by 4:30 p.m. on Monday, November 2, and a postmark doesn\'t count. Military, overseas and hospitalized voters have until 8 p.m. on Election Day.',
+			'es_after' => 'Sí, para la mayoría de los votantes. El registrador de votantes de tu parroquia (parish Registrar of Voters) tenía que recibirla a más tardar a las 4:30 p. m. del lunes 2 de noviembre, y el matasellos no cuenta. Los votantes militares, en el extranjero u hospitalizados tienen hasta las 8 p. m. del Día de las Elecciones.',
 		),
 	),
 	'MA' => array(
@@ -3403,6 +3442,9 @@ return array(
 			'until' => '2026-10-24',
 			'en_after' => 'Registration closed October 24. Became a U.S. citizen after that? Register in person at your local election office until 4 p.m. on Monday, November 2, and bring proof of your naturalization date.',
 			'es_after' => 'El registro cerró el 24 de octubre. ¿Te hiciste ciudadano de EE. UU. después de esa fecha? Regístrate en persona en tu oficina electoral local hasta las 4 p. m. del lunes 2 de noviembre, y lleva un comprobante de la fecha de tu naturalización.',
+			'until2' => '2026-11-02',
+			'en_after2' => 'Registration closed October 24. The extra window for new U.S. citizens ended at 4 p.m. on Monday, November 2.',
+			'es_after2' => 'El registro cerró el 24 de octubre. El plazo extra para quienes acaban de obtener la ciudadanía de EE. UU. terminó a las 4 p. m. del lunes 2 de noviembre.',
 		),
 		'dates.mail_request' => array(
 			'en' => 'Your local election office must receive your Vote by Mail application by 5 p.m. on Tuesday, October 27, 2026. Apply sooner if you plan to mail your ballot back.',
@@ -3412,6 +3454,9 @@ return array(
 			'until' => '2026-10-27',
 			'en_after' => 'Applications closed at 5 p.m. on October 27. You can still vote in person, early or on Election Day.',
 			'es_after' => 'Las solicitudes cerraron a las 5 p. m. del 27 de octubre. Todavía puedes votar en persona, por anticipado o el Día de las Elecciones.',
+			'until2' => '2026-10-30',
+			'en_after2' => 'Applications closed at 5 p.m. on October 27. Vote in person on Election Day.',
+			'es_after2' => 'Las solicitudes cerraron a las 5 p. m. del 27 de octubre. Vota en persona el Día de las Elecciones.',
 		),
 		'dates.mail_return' => array(
 			'en' => 'Drop box or your local election office: by 8 p.m. on Tuesday, November 3, when polls close. Mail: postmarked by November 3 and received by Friday, November 6. With less than a week to go, the state strongly recommends a drop box or returning it in person.',
@@ -3433,6 +3478,9 @@ return array(
 			'until' => '2026-10-30',
 			'en_after' => 'Early voting ended October 30. Will you be away from your city or town on Election Day, or does a disability or religious belief keep you from your polling place? You can arrange to vote absentee in person at your local election office until noon on Monday, November 2. Admitted to a healthcare facility in the last week? Someone you choose can bring you an emergency absentee ballot and return it by 8 p.m. on Election Day. Everyone else votes at their assigned polling place, 7 a.m. to 8 p.m.',
 			'es_after' => 'La votación anticipada terminó el 30 de octubre. ¿Vas a estar fuera de tu ciudad o municipio el Día de las Elecciones, o una discapacidad o una creencia religiosa te impide ir a tu lugar de votación? Puedes acordar votar en ausencia en persona en tu oficina electoral local hasta el mediodía del lunes 2 de noviembre. ¿Te internaron en un centro de salud en la última semana? Una persona que elijas puede llevarte una boleta de emergencia para votar en ausencia y devolverla a más tardar a las 8 p. m. del Día de las Elecciones. Todos los demás votan en su lugar de votación asignado, de 7 a. m. a 8 p. m.',
+			'until2' => '2026-11-02',
+			'en_after2' => 'Early voting ended October 30, and in-person absentee voting ended at noon on Monday, November 2. Admitted to a healthcare facility in the last week? Someone you choose can bring you an emergency absentee ballot and return it by 8 p.m. on Election Day. Everyone else votes at their assigned polling place, 7 a.m. to 8 p.m.',
+			'es_after2' => 'La votación anticipada terminó el 30 de octubre, y el voto en ausencia en persona terminó al mediodía del lunes 2 de noviembre. ¿Te internaron en un centro de salud en la última semana? Una persona que elijas puede llevarte una boleta de emergencia para votar en ausencia y devolverla a más tardar a las 8 p. m. del Día de las Elecciones. Todos los demás votan en su lugar de votación asignado, de 7 a. m. a 8 p. m.',
 		),
 		'how.first_time' => array(
 			'en' => 'Voting for the first time in Massachusetts? Bring ID with your name and the address where you\'re registered, like a driver\'s license, a recent utility bill or a lease. Forgot it? Vote a provisional ballot and come back with ID before the polls close so it counts.',
@@ -3837,10 +3885,10 @@ return array(
 			'varies' => true,
 		),
 		'faq.provisional' => array(
-			'en' => 'Maine calls it a challenged ballot. It\'s used when someone questions your eligibility on Election Day, and you can\'t be turned away. Challenged ballots are counted like regular ballots, and they\'re only reviewed if a recount could turn on them.',
-			'es' => 'En Maine se llama boleta impugnada (challenged ballot). Se usa cuando alguien cuestiona tu derecho a votar el Día de las Elecciones, y no te pueden negar el voto. Las boletas impugnadas se cuentan igual que las regulares, y solo se revisan si podrían cambiar el resultado de un recuento.',
+			'en' => 'Name not on the voting list? You can still register in person until the polls close on Election Day, and then vote. Maine calls it a challenged ballot. It\'s used when someone questions your eligibility on Election Day, and you can\'t be turned away. Challenged ballots are counted like regular ballots, and they\'re only reviewed if a recount could turn on them.',
+			'es' => '¿Tu nombre no está en la lista de votantes? Todavía puedes registrarte en persona hasta que cierren las urnas el Día de las Elecciones, y luego votar. En Maine se llama boleta impugnada (challenged ballot). Se usa cuando alguien cuestiona tu derecho a votar el Día de las Elecciones, y no te pueden negar el voto. Las boletas impugnadas se cuentan igual que las regulares, y solo se revisan si podrían cambiar el resultado de un recuento.',
 			'src' => 'https://www.maine.gov/sos/elections-voting/information-about-voting',
-			'checked' => '2026-10-21',
+			'checked' => '2026-10-31',
 		),
 		'faq.line' => array(
 			'en' => 'You can still vote. If you\'re in line at the polling place at 8 p.m., you can still register and vote.',
@@ -4279,6 +4327,9 @@ return array(
 			'es' => 'Los votantes registrados pueden votar en ausencia en persona sin dar una razón del martes 20 de octubre al lunes 2 de noviembre, en el lugar que decida la autoridad electoral local. Lleva una identificación con foto.',
 			'src' => 'https://revisor.mo.gov/main/OneSection.aspx?section=115.277',
 			'checked' => '2026-10-28',
+			'until' => '2026-11-02',
+			'en_after' => 'In-person absentee voting ended Monday, November 2. On Election Day, vote at your polling place. Bring a photo ID.',
+			'es_after' => 'El voto en ausencia en persona terminó el lunes 2 de noviembre. El Día de las Elecciones, vota en tu lugar de votación. Lleva una identificación con foto.',
 		),
 		'where.locator_url' => 'https://voteroutreach.sos.mo.gov/portal/',
 		'where.locator_label' => array(
@@ -5110,6 +5161,12 @@ return array(
 			'src' => 'https://www.sos.nd.gov/elections/voter/voting-north-dakota/forms-voter-id',
 			'checked' => '2026-10-21',
 		),
+		'faq.line' => array(
+			'en' => 'You can still vote. Everyone standing in line when the polls are set to close gets to vote, but anyone who arrives after closing time can\'t. Your city or county sets closing time, between 7 p.m. and 9 p.m.',
+			'es' => 'Todavía puedes votar. Todas las personas que están en la fila a la hora de cierre pueden votar, pero quien llega después de esa hora no puede. Tu ciudad o condado fija la hora de cierre, entre las 7 p. m. y las 9 p. m.',
+			'src' => 'https://www.ndlegis.gov/cencode/t16-1c01.pdf',
+			'checked' => '2026-10-31',
+		),
 		'faq.track' => array(
 			'en' => 'Use the state\'s absentee ballot tracker to see whether your county received your ballot.',
 			'es' => 'Usa el buscador oficial del estado para seguir tu boleta de voto en ausencia (absentee ballot tracker) y ver si tu condado ya la recibió.',
@@ -5437,6 +5494,9 @@ return array(
 			'es' => 'Puede que sí. El secretario de tu municipio o ciudad (town or city clerk) debe recibirla a más tardar a las 5 p. m. del martes 3 de noviembre, y el matasellos no cuenta. ¿La vas a entregar tú? Llévala al secretario a más tardar a las 5 p. m. del lunes 2 de noviembre. Un representante de entrega (delivery agent), como un familiar cercano con el formulario firmado, tiene hasta las 5 p. m. del Día de las Elecciones.',
 			'src' => 'https://www.sos.nh.gov/elections/absentee-ballots',
 			'checked' => '2026-10-30',
+			'until' => '2026-11-02',
+			'en_after' => 'Yes, by mail. Your town or city clerk must receive it by 5 p.m. on Tuesday, November 3, and a postmark doesn\'t count. A delivery agent, such as a close family member with the signed form, has until 5 p.m. on Election Day.',
+			'es_after' => 'Sí, por correo. El secretario de tu municipio o ciudad (town or city clerk) debe recibirla a más tardar a las 5 p. m. del martes 3 de noviembre, y el matasellos no cuenta. Un representante de entrega (delivery agent), como un familiar cercano con el formulario firmado, tiene hasta las 5 p. m. del Día de las Elecciones.',
 		),
 	),
 	'NJ' => array(
@@ -5734,6 +5794,12 @@ return array(
 			'src' => 'https://www.sos.nm.gov/voting-and-elections/voting-faqs/provisional-voting/',
 			'checked' => '2026-10-28',
 		),
+		'faq.line' => array(
+			'en' => 'You can still vote. New Mexico\'s Voter Bill of Rights says you can cast a ballot if you\'re in line to vote when the polls close at 7 p.m.',
+			'es' => 'Todavía puedes votar. La Carta de Derechos del Votante de New Mexico (Voter Bill of Rights) dice que puedes votar si estás en la fila cuando cierran las urnas a las 7 p. m.',
+			'src' => 'https://www.sos.nm.gov/voting-and-elections/voter-information-portal-nmvote-org/voter-bill-of-rights/',
+			'checked' => '2026-10-31',
+		),
 		'faq.track' => array(
 			'en' => 'Check your absentee application and ballot with the Secretary of State\'s ballot tracker, or call your County Clerk\'s office.',
 			'es' => 'Revisa tu solicitud y tu boleta de voto en ausencia en el buscador oficial de la Secretaría de Estado para seguir tu boleta (Track My Ballot), o llama a la oficina de la secretaría de tu condado.',
@@ -5975,6 +6041,9 @@ return array(
 			'until' => '2026-10-24',
 			'en_after' => 'Applications to get a ballot by mail closed October 24. You can still apply in person at your county board of elections through Monday, November 2.',
 			'es_after' => 'Las solicitudes para recibir la boleta por correo cerraron el 24 de octubre. Todavía puedes solicitarla en persona en la junta electoral de tu condado hasta el lunes 2 de noviembre.',
+			'until2' => '2026-11-02',
+			'en_after2' => 'Applications closed October 24 by mail and Monday, November 2 in person. Vote at your polling place on Election Day.',
+			'es_after2' => 'Las solicitudes cerraron el 24 de octubre por correo y el lunes 2 de noviembre en persona. Vota en tu lugar de votación el Día de las Elecciones.',
 		),
 		'dates.mail_return' => array(
 			'en' => 'Mail: postmarked by Tuesday, November 3, and received by Tuesday, November 10, 2026. In person: at your county board of elections or any poll site in your county by 9 p.m. on November 3, or at an early voting site in your county from October 24 to November 1.',
@@ -6051,6 +6120,9 @@ return array(
 			'es' => 'Cualquier votante registrado puede pedir una boleta de votación anticipada por correo (early mail ballot), sin dar una razón. Pídela en persona en la junta electoral de tu condado hasta el lunes 2 de noviembre. ¿Ya te dieron una boleta por correo? No puedes votar en la máquina, pero puedes votar en persona con una boleta de declaración jurada (affidavit ballot). Cuenta solo si tu boleta por correo nunca llegó a la junta.',
 			'src' => 'https://elections.ny.gov/request-ballot',
 			'checked' => '2026-10-28',
+			'until' => '2026-11-02',
+			'en_after' => 'Any registered voter could apply for an early mail ballot, no reason needed. In-person applications closed Monday, November 2. Already got a mail ballot? You can\'t vote on a machine, but you can vote in person with an affidavit ballot. It counts only if your mail ballot never reached the board.',
+			'es_after' => 'Cualquier votante registrado podía pedir una boleta de votación anticipada por correo (early mail ballot), sin dar una razón. Las solicitudes en persona cerraron el lunes 2 de noviembre. ¿Ya te dieron una boleta por correo? No puedes votar en la máquina, pero puedes votar en persona con una boleta de declaración jurada (affidavit ballot). Cuenta solo si tu boleta por correo nunca llegó a la junta.',
 		),
 		'mail.track_url' => 'https://voterlookup.elections.ny.gov/',
 		'mail.cure' => array(
@@ -6212,6 +6284,9 @@ return array(
 			'until' => '2026-10-27',
 			'en_after' => 'Applications closed at 8:30 p.m. on October 27. You can still vote early in person through Sunday, November 1, or at your polling place on Election Day.',
 			'es_after' => 'Las solicitudes cerraron a las 8:30 p. m. del 27 de octubre. Todavía puedes votar por anticipado en persona hasta el domingo 1 de noviembre, o en tu lugar de votación el Día de las Elecciones.',
+			'until2' => '2026-11-01',
+			'en_after2' => 'Applications closed at 8:30 p.m. on October 27. Vote at your polling place on Election Day.',
+			'es_after2' => 'Las solicitudes cerraron a las 8:30 p. m. del 27 de octubre. Vota en tu lugar de votación el Día de las Elecciones.',
 		),
 		'dates.mail_return' => array(
 			'en' => 'Your county board of elections must receive it by 7:30 p.m. on Tuesday, November 3, 2026. A postmark isn\'t enough. Military and overseas deadlines differ.',
@@ -6233,6 +6308,9 @@ return array(
 			'es' => 'Vota por anticipado en la junta electoral de tu condado o en el centro de votación anticipada que indique, hasta el domingo 1 de noviembre. El Día de las Elecciones, vota en el lugar de votación que te corresponde entre las 6:30 a. m. y las 7:30 p. m.',
 			'src' => 'https://www.ohiosos.gov/directories/early-voting-locations',
 			'checked' => '2026-10-28',
+			'until' => '2026-11-01',
+			'en_after' => 'Early voting ended Sunday, November 1. On Election Day, vote at your assigned polling place between 6:30 a.m. and 7:30 p.m.',
+			'es_after' => 'La votación anticipada terminó el domingo 1 de noviembre. El Día de las Elecciones, vota en el lugar de votación que te corresponde entre las 6:30 a. m. y las 7:30 p. m.',
 		),
 		'how.first_time' => array(
 			'en' => 'Check your registration and polling place online before you go. Bring an accepted, unexpired photo ID. Changed your name? Bring proof of the change too.',
@@ -6389,6 +6467,9 @@ return array(
 			'es' => 'Por correo, la junta electoral de tu condado (County Election Board) debe recibirla a más tardar a las 7 p. m. del martes 3 de noviembre. El matasellos no basta. ¿La vas a entregar en persona? Lleva tu propia boleta a la junta antes de que termine su horario del lunes 2 de noviembre y muestra la misma identificación que usarías para votar en persona. En los dos casos, la declaración debe estar notariada.',
 			'src' => 'https://oklahoma.gov/elections/voters/absentee-voting/standard-absentee-voters.html',
 			'checked' => '2026-10-28',
+			'until' => '2026-11-02',
+			'en_after' => 'By mail, your County Election Board must receive it by 7 p.m. on Tuesday, November 3. A postmark isn\'t enough. Hand delivery to the board ended at the end of business hours on Monday, November 2. The affidavit must be notarized.',
+			'es_after' => 'Por correo, la junta electoral de tu condado (County Election Board) debe recibirla a más tardar a las 7 p. m. del martes 3 de noviembre. El matasellos no basta. La entrega en persona en la junta terminó al final del horario del lunes 2 de noviembre. La declaración debe estar notariada.',
 		),
 		'dates.early_hours' => array(
 			'en' => 'Wednesday through Friday, 8 a.m. to 6 p.m. Saturday, 8 a.m. to 2 p.m. Vote at your county\'s designated early voting location.',
@@ -6506,6 +6587,9 @@ return array(
 			'es' => 'Puede que sí. La junta electoral de tu condado (County Election Board) debe recibir la boleta por correo a más tardar a las 7 p. m. del martes 3 de noviembre, y el matasellos no cuenta. Puedes entregar tu propia boleta en persona en la junta hasta el final del horario de oficina del lunes 2 de noviembre. Lleva la misma identificación que mostrarías al votar.',
 			'src' => 'https://oklahoma.gov/elections/voters/absentee-voting/standard-absentee-voters.html',
 			'checked' => '2026-10-30',
+			'until' => '2026-11-02',
+			'en_after' => 'Yes, by mail. Your County Election Board must receive a mailed ballot by 7 p.m. on Tuesday, November 3, and a postmark doesn\'t count. Hand delivery to the board ended at the end of business hours on Monday, November 2.',
+			'es_after' => 'Sí, por correo. La junta electoral de tu condado (County Election Board) debe recibir la boleta por correo a más tardar a las 7 p. m. del martes 3 de noviembre, y el matasellos no cuenta. La entrega en persona en la junta terminó al final del horario del lunes 2 de noviembre.',
 		),
 	),
 	'OR' => array(
@@ -7071,6 +7155,9 @@ return array(
 			'es' => 'La oficina de registro de votantes de tu condado debe recibirla a más tardar a las 7 p. m. del martes 3 de noviembre de 2026. El matasellos no basta. ¿Todavía tienes tu boleta esta semana? La Comisión Electoral recomienda considerar llevarla en persona, con tu identificación con foto, a la oficina de registro de votantes de tu condado, o a un centro de votación anticipada hasta el sábado 31 de octubre.',
 			'src' => 'https://scvotes.gov/voters/voter-faq/',
 			'checked' => '2026-10-28',
+			'until' => '2026-10-31',
+			'en_after' => 'Your county voter registration office must receive it by 7 p.m. on Tuesday, November 3, 2026. A postmark isn\'t enough. Still have your ballot? The Election Commission says to consider bringing it in person, with your photo ID, to your county voter registration office.',
+			'es_after' => 'La oficina de registro de votantes de tu condado debe recibirla a más tardar a las 7 p. m. del martes 3 de noviembre de 2026. El matasellos no basta. ¿Todavía tienes tu boleta? La Comisión Electoral recomienda considerar llevarla en persona, con tu identificación con foto, a la oficina de registro de votantes de tu condado.',
 		),
 		'dates.early_hours' => array(
 			'en' => 'Early voting centers are open 8:30 a.m. to 6 p.m., Monday to Saturday, through Saturday, October 31. Use any early voting center in your county.',
@@ -8683,6 +8770,9 @@ return array(
 			'es' => 'Vota por anticipado en el juzgado de tu condado (county courthouse), en un anexo o en un centro de votación comunitario del 21 al 31 de octubre. El Día de las Elecciones tienes que votar en el lugar de votación que te corresponde.',
 			'src' => 'https://sos.wv.gov/elections/voter-information/elections-frequently-asked-questions-faqs',
 			'checked' => '2026-10-21',
+			'until' => '2026-10-31',
+			'en_after' => 'Early voting ended October 31. On Election Day, you must vote at your assigned polling place.',
+			'es_after' => 'La votación anticipada terminó el 31 de octubre. El Día de las Elecciones tienes que votar en el lugar de votación que te corresponde.',
 		),
 		'how.first_time' => array(
 			'en' => 'Voting for the first time in West Virginia or your county, and didn\'t show ID when you registered? Bring a document with your current name and address: a photo ID, a utility bill, a bank statement, a government check, a paycheck or another government document. Voting absentee? Put a copy in the return envelope, outside the secrecy envelope.',
@@ -8843,6 +8933,9 @@ return array(
 			'es' => 'Vota en ausencia en persona con el secretario de tu condado (county clerk) hasta el lunes 2 de noviembre, o en tu lugar de votación el Día de las Elecciones, de 7 a. m. a 7 p. m. En los condados con centros de votación, puedes votar en cualquier lugar de votación del condado. El secretario de tu condado te dice si el tuyo los tiene.',
 			'src' => 'https://sos.wyo.gov/faqs.aspx?root=ELEC',
 			'checked' => '2026-10-28',
+			'until' => '2026-11-02',
+			'en_after' => 'Vote at your polling place on Election Day, 7 a.m. to 7 p.m. In counties with vote centers, you can vote at any polling place in the county. Your county clerk can tell you if yours has them.',
+			'es_after' => 'Vota en tu lugar de votación el Día de las Elecciones, de 7 a. m. a 7 p. m. En los condados con centros de votación, puedes votar en cualquier lugar de votación del condado. El secretario de tu condado (county clerk) te dice si el tuyo los tiene.',
 		),
 		'how.first_time' => array(
 			'en' => 'Registered by mail and voting absentee in your first federal election? Put a copy of your photo ID, or a document with your name and home address, in the envelope with your ballot.',

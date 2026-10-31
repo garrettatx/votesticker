@@ -31,7 +31,10 @@
    "status": "verified",
    "until": "2026-10-24",
    "en_after": "Registration closed October 24. Became a U.S. citizen after that? Register in person at your local election office until 4 p.m. on Monday, November 2, and bring proof of your naturalization date.",
-   "es_after": "El registro cerró el 24 de octubre. ¿Te hiciste ciudadano de EE. UU. después de esa fecha? Regístrate en persona en tu oficina electoral local hasta las 4 p. m. del lunes 2 de noviembre, y lleva un comprobante de la fecha de tu naturalización."
+   "es_after": "El registro cerró el 24 de octubre. ¿Te hiciste ciudadano de EE. UU. después de esa fecha? Regístrate en persona en tu oficina electoral local hasta las 4 p. m. del lunes 2 de noviembre, y lleva un comprobante de la fecha de tu naturalización.",
+   "until2": "2026-11-02",
+   "en_after2": "Registration closed October 24. The extra window for new U.S. citizens ended at 4 p.m. on Monday, November 2.",
+   "es_after2": "El registro cerró el 24 de octubre. El plazo extra para quienes acaban de obtener la ciudadanía de EE. UU. terminó a las 4 p. m. del lunes 2 de noviembre."
   },
   "mail_request": {
    "en": "Your local election office must receive your Vote by Mail application by 5 p.m. on Tuesday, October 27, 2026. Apply sooner if you plan to mail your ballot back.",
@@ -42,7 +45,10 @@
    "status": "verified",
    "until": "2026-10-27",
    "en_after": "Applications closed at 5 p.m. on October 27. You can still vote in person, early or on Election Day.",
-   "es_after": "Las solicitudes cerraron a las 5 p. m. del 27 de octubre. Todavía puedes votar en persona, por anticipado o el Día de las Elecciones."
+   "es_after": "Las solicitudes cerraron a las 5 p. m. del 27 de octubre. Todavía puedes votar en persona, por anticipado o el Día de las Elecciones.",
+   "until2": "2026-10-30",
+   "en_after2": "Applications closed at 5 p.m. on October 27. Vote in person on Election Day.",
+   "es_after2": "Las solicitudes cerraron a las 5 p. m. del 27 de octubre. Vota en persona el Día de las Elecciones."
   },
   "mail_return": {
    "en": "Drop box or your local election office: by 8 p.m. on Tuesday, November 3, when polls close. Mail: postmarked by November 3 and received by Friday, November 6. With less than a week to go, the state strongly recommends a drop box or returning it in person.",
@@ -77,7 +83,10 @@
    "until": "2026-10-30",
    "en_after": "Early voting ended October 30. Will you be away from your city or town on Election Day, or does a disability or religious belief keep you from your polling place? You can arrange to vote absentee in person at your local election office until noon on Monday, November 2. Admitted to a healthcare facility in the last week? Someone you choose can bring you an emergency absentee ballot and return it by 8 p.m. on Election Day. Everyone else votes at their assigned polling place, 7 a.m. to 8 p.m.",
    "es_after": "La votación anticipada terminó el 30 de octubre. ¿Vas a estar fuera de tu ciudad o municipio el Día de las Elecciones, o una discapacidad o una creencia religiosa te impide ir a tu lugar de votación? Puedes acordar votar en ausencia en persona en tu oficina electoral local hasta el mediodía del lunes 2 de noviembre. ¿Te internaron en un centro de salud en la última semana? Una persona que elijas puede llevarte una boleta de emergencia para votar en ausencia y devolverla a más tardar a las 8 p. m. del Día de las Elecciones. Todos los demás votan en su lugar de votación asignado, de 7 a. m. a 8 p. m.",
-   "notes": "The early voting sentence of en rests on https://www.sec.state.ma.us/divisions/elections/voting-information/vote-early.htm: 'During early voting, you can vote at any early voting location in the city or town where you are registered to vote.' Hours from the Polling Hours page. Read in Chrome Oct 28 (curl blocked)."
+   "notes": "The early voting sentence of en rests on https://www.sec.state.ma.us/divisions/elections/voting-information/vote-early.htm: 'During early voting, you can vote at any early voting location in the city or town where you are registered to vote.' Hours from the Polling Hours page. Read in Chrome Oct 28 (curl blocked).",
+   "until2": "2026-11-02",
+   "en_after2": "Early voting ended October 30, and in-person absentee voting ended at noon on Monday, November 2. Admitted to a healthcare facility in the last week? Someone you choose can bring you an emergency absentee ballot and return it by 8 p.m. on Election Day. Everyone else votes at their assigned polling place, 7 a.m. to 8 p.m.",
+   "es_after2": "La votación anticipada terminó el 30 de octubre, y el voto en ausencia en persona terminó al mediodía del lunes 2 de noviembre. ¿Te internaron en un centro de salud en la última semana? Una persona que elijas puede llevarte una boleta de emergencia para votar en ausencia y devolverla a más tardar a las 8 p. m. del Día de las Elecciones. Todos los demás votan en su lugar de votación asignado, de 7 a. m. a 8 p. m."
   },
   "first_time": {
    "en": "Voting for the first time in Massachusetts? Bring ID with your name and the address where you're registered, like a driver's license, a recent utility bill or a lease. Forgot it? Vote a provisional ballot and come back with ID before the polls close so it counts.",

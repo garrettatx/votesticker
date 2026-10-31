@@ -67,7 +67,10 @@
    "src": "https://sos.wv.gov/elections/voter-information/elections-frequently-asked-questions-faqs",
    "checked": "2026-10-21",
    "quote": "Remember that on Election Day you must vote at your assigned polling location.",
-   "status": "verified"
+   "status": "verified",
+   "until": "2026-10-31",
+   "en_after": "Early voting ended October 31. On Election Day, you must vote at your assigned polling place.",
+   "es_after": "La votación anticipada terminó el 31 de octubre. El Día de las Elecciones tienes que votar en el lugar de votación que te corresponde."
   },
   "first_time": {
    "en": "Voting for the first time in West Virginia or your county, and didn't show ID when you registered? Bring a document with your current name and address: a photo ID, a utility bill, a bank statement, a government check, a paycheck or another government document. Voting absentee? Put a copy in the return envelope, outside the secrecy envelope.",

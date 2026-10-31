@@ -1,0 +1,13 @@
+# g2 (ID IL IN IA KS KY LA ME MD): Perplexity Search, Oct 31, 1m 6s, 271 sources
+Thread: https://www.perplexity.ai/search/a59c12ca-a36a-4649-bc0e-95495bb15459 (condensed read; leads only)
+
+- Idaho: 8 a.m. to 8 p.m.; county clerk may open at 7 a.m. (Idaho Code 34-1101). Two time zones; no county list found. In line: "Any elector who is in line at 8:00 P.M. shall be allowed to vote". Lookup given: elections.sos.idaho.gov/ElectionLink/ElectionLink/VoterSearch.aspx (ours: votertools.voteidaho.gov where-do-I-vote). Assigned location. EDR yes at polling location with photo ID and proof of residence.
+- Illinois: 6 a.m. to 7 p.m. (10 ILCS 5/17-1). Line: "only those voters who were in line at 7:00 p.m. may cast a ballot" (2016 SBE material). Lookup ova.elections.il.gov/PollingPlaceLookup.aspx (same as ours). Polling place or designated vote center. Grace-period registration at early sites or Election Day polling place.
+- Indiana: 6 a.m. to 6 p.m. prevailing local time (2026 handbook; Oct 27 SOS reminder). Lookup IndianaVoters.com. Precincts or vote centers by county. No general EDR; military exception to noon.
+- Iowa: 7 a.m. to 8 p.m. (Iowa Code 49.73); 49.74 "on the premises" rule. Lookup apps.sos.iowa.gov polling place search (ours). Precinct polling place. EDR yes with ID and proof of residence. Oct 28 security notice repeats hours.
+- Kansas: Central 7 to 7, Mountain 6 to 6 (K.S.A. 25-106), local option within limits (12 hours min). Mountain counties Greeley, Hamilton, Sherman, Wallace. In line: "Stay in line! All voters who are in line when polling locations close are allowed to vote." Lookup given: myvoteinfo.voteks.org/voterview (ours: kansasvoterinfo.gov/VoterView). No EDR.
+- Kentucky: 6 to 6 local time (State Board Election Day FAQ, summary updated Oct 27). Line: "If you are in line at 6:00 PM, you will be allowed to vote." Lookup govote.ky.gov (ours). Vote centers in some counties. No EDR.
+- Louisiana: 6 a.m. to 8 p.m. Tuesday elections. Line: "Voters in line at 8 p.m. will be allowed to vote." Lookup GeauxVote / Voter Portal (ours). Assigned precinct. No EDR.
+- Maine: 21-A 626 open 6 to 8 a.m. (under 500 people: 6 to 10 a.m.), close 8 p.m.; under 100 may close when all have voted. Line: "If I am in line at the voting place at 8:00 p.m. on Election Day, I still may register and vote." Lookup maine.gov voter_lookup (ours). EDR yes.
+- Maryland: 7 a.m. to 8 p.m. Line: "Anyone in line at 8 pm will be allowed to vote." Lookup voterservices PollingPlaceSearch (ours). Assigned polling place on Election Day. EDR yes at assigned polling place with proof of residence.
+- Past 7 days (Oct 24 to 31): no court order, extended hours, emergency, move, outage or deadline change found for any of the nine.

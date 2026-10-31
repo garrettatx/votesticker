@@ -243,7 +243,10 @@
    "checked": "2026-10-30",
    "quote": "The deadline to request and return an absentee ballot in person is 5:00 p.m. the day before the election. Absentee ballots delivered through the mail or by the voter's delivery agent shall be received by the town, city, or ward clerk no later than 5:00 p.m. on the day of the election.",
    "status": "verified",
-   "notes": "Pass 2 Oct 30, read in Chrome (403 to curl). Agent example from dates.mail_return (same page, Oct 28)."
+   "notes": "Pass 2 Oct 30, read in Chrome (403 to curl). Agent example from dates.mail_return (same page, Oct 28).",
+   "until": "2026-11-02",
+   "en_after": "Yes, by mail. Your town or city clerk must receive it by 5 p.m. on Tuesday, November 3, and a postmark doesn't count. A delivery agent, such as a close family member with the signed form, has until 5 p.m. on Election Day.",
+   "es_after": "Sí, por correo. El secretario de tu municipio o ciudad (town or city clerk) debe recibirla a más tardar a las 5 p. m. del martes 3 de noviembre, y el matasellos no cuenta. Un representante de entrega (delivery agent), como un familiar cercano con el formulario firmado, tiene hasta las 5 p. m. del Día de las Elecciones."
   }
  },
  "notes": "Read October 21, 2026 on gc.nh.gov (RSA 654:7-a, 654:8, 654:12, 657:1, 657:4, 657:17, 657:22, 659:4, 659:13, 659:35, 659:43, 659:45-a). sos.nh.gov and app.sos.nh.gov return 403 to curl and WebFetch, and Claude in Chrome reports 'Permission denied for reading page content on this domain', so nothing on the SOS site was read: locator URL, ballot tracker, absentee request deadline, drop boxes and the sticker contest are left missing. Selfie kept out on purpose. The ID text uses the version of RSA 659:13 I(c) effective September 8, 2026 (personal-knowledge attestation). Registration before Election Day closes at the supervisors' last session, set by each town (RSA 654:8 II); the FAQ already says so, so reg_deadline leads with Election Day registration.",

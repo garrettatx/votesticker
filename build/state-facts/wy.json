@@ -67,7 +67,10 @@
    "src": "https://sos.wyo.gov/faqs.aspx?root=ELEC",
    "checked": "2026-10-28",
    "quote": "Vote centers allow for residents in a county to vote at ANY polling place location in that county. ... Polls are open from 7 a.m. to 7 p.m., or until the last person in line at 7 p.m. has voted.",
-   "status": "verified"
+   "status": "verified",
+   "until": "2026-11-02",
+   "en_after": "Vote at your polling place on Election Day, 7 a.m. to 7 p.m. In counties with vote centers, you can vote at any polling place in the county. Your county clerk can tell you if yours has them.",
+   "es_after": "Vota en tu lugar de votación el Día de las Elecciones, de 7 a. m. a 7 p. m. En los condados con centros de votación, puedes votar en cualquier lugar de votación del condado. El secretario de tu condado (county clerk) te dice si el tuyo los tiene."
   },
   "first_time": {
    "en": "Registered by mail and voting absentee in your first federal election? Put a copy of your photo ID, or a document with your name and home address, in the envelope with your ballot.",

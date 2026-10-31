@@ -39,7 +39,10 @@
    "src": "https://www.sos.alabama.gov/alabama-votes/voter/absentee-voting",
    "checked": "2026-10-28",
    "quote": "An absentee ballot returned by mail must be received by the Absentee Election Manager no later than noon on election day. If hand-delivered, the ballot must be in the office of the Absentee Election Manager by the close of business (but no later than 5 p.m.) on the day prior to the election.",
-   "status": "verified"
+   "status": "verified",
+   "until": "2026-11-02",
+   "en_after": "A mailed ballot must reach your county's Absentee Election Manager by noon on Tuesday, November 3. A postmark isn't enough. In-person return ended at closing time on Monday, November 2.",
+   "es_after": "Una boleta enviada por correo debe llegar a la oficina de voto en ausencia de tu condado (Absentee Election Manager) a más tardar al mediodía del martes 3 de noviembre. El matasellos no basta. La entrega en persona terminó al cierre del lunes 2 de noviembre."
   },
   "early_hours": {
    "status": "missing",
@@ -248,8 +251,13 @@
    "status": "verified"
   },
   "line": {
-   "status": "missing",
-   "notes": "The Voter Guide says only that no one may join the line after 7 p.m. (in polls_rules.line); it does not say in writing that voters already in line at 7 p.m. may vote, so this answer is left out."
+   "en": "You can still vote. Everyone in line at 7 p.m. gets to vote before the polling place closes. If you join the line after 7 p.m., you can't vote.",
+   "es": "Todavía puedes votar. Todas las personas que están en la fila a las 7 p. m. pueden votar antes de que cierre el lugar de votación. Si llegas a la fila después de las 7 p. m., ya no puedes votar.",
+   "src": "https://www.sos.alabama.gov/sites/default/files/election-2026/2026%20Poll%20Worker%20Guide%20Complete.pdf",
+   "checked": "2026-10-31",
+   "quote": "Each polling place is open for voting from 7:00 am to 7:00 pm: All voters who are in line to vote at 7:00 pm shall be permitted to vote before closing the polling place. Anyone who attempts to join the voting line after 7:00 pm shall not be permitted to vote.",
+   "status": "verified",
+   "notes": "Oct 31 pass 4: read with pdftotext from the Secretary of State's Alabama Polling Official Guide 2026 (03/2026)."
   },
   "track": {
    "en": "Check your absentee ballot's status with My Voting Information on the Secretary of State's site.",
@@ -266,7 +274,10 @@
    "checked": "2026-10-30",
    "quote": "The voter has only the following legal ways to return the absentee ballot: forwards the absentee ballot by U.S. Mail forwards the absentee ballot by commercial carrier personally hands their own absentee ballot to the absentee election manager (or delivers by a designee in the case of emergency absentee voting) VOTING DEADLINE An absentee ballot returned by mail must be received by the Absentee Election Manager no later than noon on election day. If hand-delivered, the ballot must be in the office of the Absentee Election Manager by the close of business (but no later than 5 p.m.) on the day prior to the election.",
    "status": "verified",
-   "notes": "Pass 2 Oct 30, read by curl. Emergency absentee voters may use a designee (same page)."
+   "notes": "Pass 2 Oct 30, read by curl. Emergency absentee voters may use a designee (same page).",
+   "until": "2026-11-02",
+   "en_after": "Yes, by mail. Your county's Absentee Election Manager must receive a mailed ballot by noon on Tuesday, November 3, and a postmark doesn't count. Hand delivery ended at close of business on Monday, November 2.",
+   "es_after": "Sí, por correo. El administrador electoral de voto en ausencia de tu condado (Absentee Election Manager) debe recibir la boleta por correo a más tardar al mediodía del martes 3 de noviembre, y el matasellos no cuenta. La entrega en persona terminó al cierre del lunes 2 de noviembre."
   }
  },
  "notes": "Read October 21, 2026 with curl on sos.alabama.gov: the 2026 Voter Guide PDF, Absentee Voting Information, the Alabama Votes FAQ, the Photo Voter ID page, and myinfo.alabamavotes.gov/voterview (page labeled VoterView; the Voter Guide calls the tool 'My Voting Information'). The Voter Guide's deadline chart labels the mail ballot row 'must be postmarked no later than noon', but its text, its dates list ('Absentee ballots returned by mail must be received by noon') and the SOS absentee page all say received by noon; the file uses received. Absentee voting starts 'no later than' September 9 per the guide's chart. Photo rule: the FAQ says camera phones can't take photos or video inside, but in the same FAQ voters may take a picture 'of or with their ballot'; polls_rules.phone keeps both. Sticker tradition not found. States.js has AL verified as kind 'none'; nothing here contradicts it. October 28: Perplexity review checked on sos.alabama.gov. Digital ID: the page now follows the SOS release that digital IDs are not accepted (HB110, effective Oct 1, 2026, says the same); the 2026 Voter Guide and valid-IDs page still list the digital license and conflict. Hand delivery is by close of business, no later than 5 p.m., Nov 2. Emergency and medical emergency absentee routes added after the Oct 29 deadline. Unverified: the two-official affidavit detail (not in the Voter Guide text read).",

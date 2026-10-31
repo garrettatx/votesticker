@@ -243,12 +243,14 @@
  },
  "faq": {
   "provisional": {
-   "en": "You may get one if you don't have the required photo ID or your eligibility at the precinct is challenged. After Election Day, the county election board decides whether it counts. Without ID, you have until noon on Friday, November 13 to follow up.",
-   "es": "Puedes recibir una si no tienes la identificación con foto requerida o si cuestionan tu derecho a votar en el precinto. Después del Día de las Elecciones, la junta electoral del condado decide si cuenta. Si no tenías identificación, tienes hasta el mediodía del viernes 13 de noviembre para completar el trámite.",
+   "en": "Not on the poll book? If a fail-safe procedure doesn't fix it and you believe you're qualified to vote in that precinct, you can vote a provisional ballot. You may get one if you don't have the required photo ID or your eligibility at the precinct is challenged. After Election Day, the county election board decides whether it counts. Without ID, you have until noon on Friday, November 13 to follow up.",
+   "es": "¿No estás en el registro de votantes del precinto (poll book)? Si un procedimiento de respaldo (fail-safe) no lo resuelve y crees que tienes derecho a votar en ese precinto, puedes votar con una boleta provisional. Puedes recibir una si no tienes la identificación con foto requerida o si cuestionan tu derecho a votar en el precinto. Después del Día de las Elecciones, la junta electoral del condado decide si cuenta. Si no tenías identificación, tienes hasta el mediodía del viernes 13 de noviembre para completar el trámite.",
    "src": "https://www.in.gov/sos/elections/voter-information/ways-to-vote/provisional-ballots/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-31",
    "quote": "After Election Day, the county election board will decide whether you were qualified to vote in that precinct and whether your ballot should be counted.",
-   "status": "verified"
+   "status": "verified",
+   "quote2": "A provisional ballot allows you to cast a vote if: There is a question about your qualification to vote in the precinct (for example, you are not on the poll book), which is not resolved by a fail-safe procedure and you believe you are qualified to vote in the precinct",
+   "notes": "Oct 31 pass 4: quote2 read by curl on the same page."
   },
   "line": {
    "en": "You can still vote. Everyone in line when polls close at 6 p.m. local time gets to vote.",

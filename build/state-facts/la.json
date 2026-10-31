@@ -36,7 +36,10 @@
    "until": "2026-10-30",
    "en_after": "Absentee requests closed at 4:30 p.m. on October 30, 2026. Military and overseas voters, and voters who are in the hospital, have until 4:30 p.m. on Monday, November 2. Everyone else votes at their polling place on Election Day, 6 a.m. to 8 p.m.",
    "es_after": "Las solicitudes de boleta de voto en ausencia cerraron a las 4:30 p. m. del 30 de octubre de 2026. Los votantes militares y en el extranjero, y los votantes que están hospitalizados, tienen hasta las 4:30 p. m. del lunes 2 de noviembre. Todos los demás votan en su lugar de votación el Día de las Elecciones, de 6 a. m. a 8 p. m.",
-   "notes": "The 4th day before Nov 3 is Oct 30, matching https://www.sos.la.gov/elections-voting/election-dates ('The deadline to request an absentee ballot is October 30 by 4:30 p.m (other than military and overseas voters).'). Hospitalized applications need the documentation described on the application."
+   "notes": "The 4th day before Nov 3 is Oct 30, matching https://www.sos.la.gov/elections-voting/election-dates ('The deadline to request an absentee ballot is October 30 by 4:30 p.m (other than military and overseas voters).'). Hospitalized applications need the documentation described on the application.",
+   "until2": "2026-11-02",
+   "en_after2": "Absentee requests closed at 4:30 p.m. on October 30, 2026, and at 4:30 p.m. on Monday, November 2 for military, overseas and hospitalized voters. Vote at your polling place on Election Day, 6 a.m. to 8 p.m.",
+   "es_after2": "Las solicitudes de boleta de voto en ausencia cerraron a las 4:30 p. m. del 30 de octubre de 2026, y a las 4:30 p. m. del lunes 2 de noviembre para los votantes militares, en el extranjero u hospitalizados. Vota en tu lugar de votación el Día de las Elecciones, de 6 a. m. a 8 p. m."
   },
   "mail_return": {
    "en": "Your parish Registrar of Voters must receive your voted ballot by 4:30 p.m. on Monday, November 2, 2026, the day before Election Day. Military, overseas and hospitalized voters have until 8 p.m. on Election Day.",
@@ -63,7 +66,10 @@
    "src": "https://www.sos.la.gov/elections-voting/ways-to-vote",
    "checked": "2026-10-28",
    "quote": "If you are contacted by the Registrar of Voters about a deficiency with your absentee by mail certificate, you must appear in person at their Registrar of Voters office by no later than 4:30 p.m. the day before the election to cure the certificate deficiency. Alternatively, you may request a replacement ballot from the registrar. The same deadline applies for returning the replacement ballot.",
-   "status": "verified"
+   "status": "verified",
+   "until": "2026-11-02",
+   "en_after": "If your Registrar of Voters contacted you about a problem with your absentee envelope, such as a missing signature, witness signature or mother's maiden name, the deadline to fix it in person, or to get a replacement ballot to the registrar, was 4:30 p.m. on Monday, November 2, 2026.",
+   "es_after": "Si el registrador de votantes (Registrar of Voters) te contactó por un problema con el sobre de tu boleta de voto en ausencia, como que faltara tu firma, la firma del testigo o el apellido de soltera de tu madre, la fecha límite para corregirlo en persona, o para que le llegara una boleta de reemplazo, fue a las 4:30 p. m. del lunes 2 de noviembre de 2026."
   }
  },
  "how": {
@@ -279,7 +285,10 @@
    "checked": "2026-10-30",
    "quote": "General and Disabled Voters: Voted ballots must be received by your parish Registrar of Voters by 4:30 p.m. CST on the day before election day . ... By Hand Delivery: A voter or immediate family member of the voter may deliver the ballot to the registrar of voters (a signed statement must be completed upon delivery by anyone other that the voter, certifying their relationship to the voter)",
    "status": "verified",
-   "notes": "Pass 2 Oct 30, read by curl. Nov 2 date also on sos.la.gov/elections-voting/election-dates ('November 2 by 4:30 p.m.'). Hand delivery also in R.S. 18:1308(B) (mail.dropbox)."
+   "notes": "Pass 2 Oct 30, read by curl. Nov 2 date also on sos.la.gov/elections-voting/election-dates ('November 2 by 4:30 p.m.'). Hand delivery also in R.S. 18:1308(B) (mail.dropbox).",
+   "until": "2026-11-02",
+   "en_after": "Yes, for most voters. Your parish Registrar of Voters had to receive it by 4:30 p.m. on Monday, November 2, and a postmark doesn't count. Military, overseas and hospitalized voters have until 8 p.m. on Election Day.",
+   "es_after": "Sí, para la mayoría de los votantes. El registrador de votantes de tu parroquia (parish Registrar of Voters) tenía que recibirla a más tardar a las 4:30 p. m. del lunes 2 de noviembre, y el matasellos no cuenta. Los votantes militares, en el extranjero u hospitalizados tienen hasta las 8 p. m. del Día de las Elecciones."
   }
  },
  "notes": "Read October 21, 2026 with curl on sos.la.gov: Election Dates (November 3 block), Ways to Vote, Absentee Voting FAQs, Voting Early FAQs, the July 28, 2026 sticker release, and voterportal.sos.la.gov. The sos.la.gov pages link the Voter Portal as 'voterportal.--environment--.sos.la.gov' (an unfilled template placeholder); the file uses https://voterportal.sos.la.gov/, which loads the Voter Portal: Search page. EARLY VOTING DATES FOR THE LEAD (states.js has LA unchecked): Tuesday, October 20 to Tuesday, October 27, 2026, no voting Sunday, October 25, 8:30 a.m. to 6 p.m. Sources: (1) https://www.sos.la.gov/elections-voting/election-dates: 'Early voting is October 20-27 (excluding Sunday, October 25) from 8:30 a.m.-6 p.m.' (2) https://www.sos.la.gov/elections-voting/ways-to-vote, same sentence under 'November 3, 2026', and 'The registrars of voters will open their offices from 8:30 a.m. to 6 p.m. for each day of early voting.' Suggested states.js note: 'Vote early at a designated site in your parish. No early voting Sunday, Oct. 25.' The November 3 ballot is the U.S. Senate general and the open primary; a December 12, 2026 election follows. Expired-ID and phone rules not found.",

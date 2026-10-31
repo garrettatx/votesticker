@@ -58,7 +58,10 @@
    "status": "verified",
    "until": "2026-10-24",
    "en_after": "Applications to get a ballot by mail closed October 24. You can still apply in person at your county board of elections through Monday, November 2.",
-   "es_after": "Las solicitudes para recibir la boleta por correo cerraron el 24 de octubre. Todavía puedes solicitarla en persona en la junta electoral de tu condado hasta el lunes 2 de noviembre."
+   "es_after": "Las solicitudes para recibir la boleta por correo cerraron el 24 de octubre. Todavía puedes solicitarla en persona en la junta electoral de tu condado hasta el lunes 2 de noviembre.",
+   "until2": "2026-11-02",
+   "en_after2": "Applications closed October 24 by mail and Monday, November 2 in person. Vote at your polling place on Election Day.",
+   "es_after2": "Las solicitudes cerraron el 24 de octubre por correo y el lunes 2 de noviembre en persona. Vota en tu lugar de votación el Día de las Elecciones."
   },
   "mail_return": {
    "en": "Mail: postmarked by Tuesday, November 3, and received by Tuesday, November 10, 2026. In person: at your county board of elections or any poll site in your county by 9 p.m. on November 3, or at an early voting site in your county from October 24 to November 1.",
@@ -177,7 +180,10 @@
    "checked": "2026-10-28",
    "quote": "Voters who have already been issued a ballot can still vote in person using an affidavit ballot. ... If the voter’s ballot has been received, the affidavit ballot will not be counted. If the voter’s ballot has not been received, the affidavit ballot will be counted.",
    "status": "verified",
-   "notes": "Read in Chrome 2026-10-28. Nov 2 in-person deadline: 'applications must be received by your board no later than the day before the election' (same page)."
+   "notes": "Read in Chrome 2026-10-28. Nov 2 in-person deadline: 'applications must be received by your board no later than the day before the election' (same page).",
+   "until": "2026-11-02",
+   "en_after": "Any registered voter could apply for an early mail ballot, no reason needed. In-person applications closed Monday, November 2. Already got a mail ballot? You can't vote on a machine, but you can vote in person with an affidavit ballot. It counts only if your mail ballot never reached the board.",
+   "es_after": "Cualquier votante registrado podía pedir una boleta de votación anticipada por correo (early mail ballot), sin dar una razón. Las solicitudes en persona cerraron el lunes 2 de noviembre. ¿Ya te dieron una boleta por correo? No puedes votar en la máquina, pero puedes votar en persona con una boleta de declaración jurada (affidavit ballot). Cuenta solo si tu boleta por correo nunca llegó a la junta."
   },
   "witness": {
    "en": "Put your ballot in the Security Envelope, then sign and date the outside of that envelope and seal it. It goes in the prepaid Return Envelope, so no stamp needed.",
