@@ -12,9 +12,9 @@ no purchase. Prompt: `prompt-page-states.txt` (typed in as given there, with eac
 (`prompt-page-<state>.txt`, `prompt-page-home.txt`, 12,000 to 16,500 characters) but not sent: the clipboard paste was
 overwritten by another app's text, so the shorter combined prompt was typed instead.
 
-The home page review was not sent: with Deep Research locked and the freeze close, the time went to verifying the state
-gaps. Our own read of the home page against the Google results is in `google-serps.md` (it already answers "where can I
-get an I voted sticker", lists FVAP and the mail-voter stickers, and has 46 state sticker stories).
+Home page review: sent later in its own thread, regular Search,
+https://www.perplexity.ai/search/894e811d-b48f-43ab-afb5-b99e0af5499f (prompt typed: the page's sections, FAQ topics and
+the pages above it). Results and decisions are in the second table below.
 
 Garrett added a follow-up in this thread at 5:54 p.m. ("WHat should we do to improve the likelyhood we'll show up in AI
 Overviews and ChatGPT."); Perplexity's answer is in the thread. It matches this pass: a clear official-sticker answer on
@@ -39,3 +39,22 @@ each state page, scoped availability wording, checking that OAI-SearchBot isn't 
 | AK | "Do I get a sticker if I vote early?" from the Division's Facebook post | Used | Read the post (Oct 20, 2026) in Chrome |
 | AK | Dated official reference to tell 2026 art from the 2022 contest | Left | The page already names the 2026 artist and links the Sep 10 release |
 | AK | Soldotna city sticker contest | Rejected | Perplexity flagged mixed 2024 and 2026 dates; no Nov 3 availability statement |
+
+## Coordinator's Filter (Garrett's Shared Review, Oct 31 Evening)
+Garrett shared a Perplexity review; the coordinator passed on four items. Done: GA and LA link the official design
+("See the official 2026 Georgia I Voted sticker (shown by the Georgia Secretary of State). The stickers on this page are
+free Vote Sticker designs, not the official one."), linked, never hosted. Georgia links the SOS release (its "View the
+new I Voted Sticker here" link). Louisiana links the SOS's own Facebook post, because the sos.la.gov release has no image.
+Alaska's answer names the state, the election and the office, and reads true during and after early voting. Georgia's
+early answer now names the state and the sticker ("the new 2026 Steve Penley sticker"). Ohio unchanged apart from the
+design line already added (verified on the SOS release image).
+
+## Home Page Ideas, and What We Did
+
+| Perplexity's idea | Used? | Why |
+|---|---|---|
+| Add Colorado's BallotTrax "Blucifer" digital sticker to the official digital list | Used | Colorado SOS release, Oct 12: "Voters who get updates via BallotTrax will receive this special Blucifer 'I Voted' digital sticker after their ballot has been accepted." Worded as delivered in the notification, not a download |
+| Add Maryland's downloads to the official digital list | Used | elections.maryland.gov 2026 page: "Click to download the I VOTED sticker you like!" (America 250 design in English and Spanish, plus two state designs) |
+| A compact "Official 2026 sticker designs" block with previews | Rejected before the freeze | New section template; the 46 state stories and the state pages carry this now. Revisit after Nov 4 |
+| Labels on every link (free PNG, official digital, delivered after acceptance, physical in person, overseas) | Rejected before the freeze | Restructure; each line already says what you get |
+| More "where can I get a sticker" prose, history, turnout research, contest examples, a planner | Rejected | Padding (Perplexity agreed) |

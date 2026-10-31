@@ -41,6 +41,7 @@ last-minute answer for their state, both from an official source.
 | 6 | After Nov 3: each state's official results page link and certification date where the state publishes one | Nov 4 to 10 searches | Nov 4 to 5 |
 | 7 | History: notable designs prompt (not run Oct 29) | "i voted sticker history" 133 impressions at 8.7 | After Nov 3 |
 | 8 | Election Day readiness audit: every state's Nov 2 and Nov 3 banner, hours, line rule, lookup, ID, mail return and same-day registration, EN and ES, against official sources | Nov 2 to 3 is the busiest stretch; a wrong hour or a stale "through Nov 2" costs trust or a vote | Done Oct 31 (pass 4): 20 states fixed for Nov 2 and 3, AZ and NC content gaps, AL NM ND line answers, ME IN not-on-the-list lines |
+| 9 | SERP gaps for slipping states and Election Day queries | OH, LA, GA, AK slipped from about 6.7 to 8.6 on "[state] i voted sticker" since Oct 28; Election Day queries at 7.3 to 9.2 ("i voted sticker 2026" 79 impressions at 8.9) | Done Oct 31 (pass 8): official 2026 designs described on OH, LA, GA; GA and LA link the official design; AK early-voting sticker answer; GA Pickens County; home adds Maryland and Colorado official digital stickers |
 
 ## Log
 
@@ -866,3 +867,88 @@ own run (41251428335) writes the build records. Live: `qa_history.mjs --base htt
 
 **Open for Garrett.** Nothing blocking. Optional: whether phones should show short labels on more chips (now only the
 nine turning points carry a label), and the page and site-wide measure ideas above, after Nov 4.
+
+### October 31: Pass 8, SERP Gaps for Slipping States and Election Day Queries
+
+Logged after pass 9 because both ran this evening; pass 8 pushed first (commit 66513ad).
+
+**Goal.** Garrett: pages that beat what outranks us, evidence backed, for early and Election Day voters, shipped before
+the Sunday 7 p.m. freeze. Evidence: OH, LA, GA and AK slipped on their own "[state] i voted sticker" queries since Oct 28;
+Election Day queries sit at 7.3 to 9.2. Titles were left alone (pass 7). Files: `docs/research/serp-gaps-20261031/`.
+
+**What outranks us (Google in Chrome, about 5:45 to 6:05 p.m., Garrett's signed-in profile set to Austin; no CAPTCHA,
+no AI Overview on any query; we were not on page 1 in this view).** Perplexity Deep Research said twice it can't see
+live Google positions, so this part is our own read (`google-serps.md`).
+- Ohio: an image pack of the America 250 sticker, the SOS release, Cuyahoga's digital sticker, Top Stories (USA Today
+  roundup, the Oct 31 Boudreau story), Butler County BOE, Amazon, Ballotpedia. They have the picture; we had every fact.
+- Louisiana and New Orleans: the SOS's own Facebook post of the sticker, Illuminator, WAFB, WGNO (Osborne's poster
+  offer), a City of New Orleans video, the SOS release. They show and describe the trumpet, magnolias and beads; we didn't.
+- Georgia: an image pack, the SOS release, CBS, FOX 5, 11Alive, a 130-comment Reddit thread. They show the Capitol dome
+  and flag; we didn't.
+- Alaska: the Division's Facebook posts, The Alaska Story, Your Alaska Link, the 2022 contest page. Our story already
+  matched them; no early-voting sticker answer.
+- National: "i voted sticker 2026" is Top Stories and roundups (USA Today, Ballotpedia, KUT, a Substack); "where can i
+  get", "i voted by mail sticker" and "voting sticker" are mostly shops plus FVAP. Our home answers "where can I get" and
+  lists FVAP already. "chicago i voted sticker": old news and a March 2026 primary post on X; no Nov 3 statement.
+
+**Perplexity (project "VoteSticker.org Research").** Deep Research ran twice ("Included in Pro"): national queries and
+news (finished), and OH LA GA AK (7m 44s). After that the lock came back twice: "Upgrade for advanced research
+capabilities. Upgrade to Max for enhanced access to Perplexity deep research." The page reviews (four states, home) ran
+in regular Search. Computer was never used; its "Run task" offer was not clicked. No sticker shortages in the past week's
+news. Ideas used and rejected, with reasons: `perplexity-page-review.md`.
+
+**Added live (EN and ES, each read on the office's own page or image; `verification.md`).**
+- Ohio: "It's round, with a red outline of Ohio that reads OHIO VOTED, a gold America ribbon between 1776 and 2026, and a
+  big 250 at the bottom." From the image in the SOS release itself.
+- Louisiana: "It's round and turquoise, with a gold trumpet, yellow magnolias and Mardi Gras beads above the words I VOTED
+  in purple." From the SOS's own Facebook post (July 28), read logged out; plus a link to that post.
+- Georgia: the Capitol dome and flag, from the official image the release links ("View the new "I Voted" Sticker here."),
+  and Penley's line that it's a design Georgians "can take home with them from polls"; plus a link to the release. Early
+  answer now names the state and sticker.
+- GA and LA link line: "See the official 2026 Georgia I Voted sticker (shown by the Georgia Secretary of State). The
+  stickers on this page are free Vote Sticker designs, not the official one." Linked, never hosted. New optional facts
+  `sticker.official_url` and `sticker.official_by`, rendered inside the existing sticker section (no new section).
+- Alaska: "Do I get an I voted sticker if I vote early in Alaska? Yes. During early voting for the November 3, 2026
+  election, the Alaska Division of Elections told voters to find their early voting location, vote, and get their "I
+  Voted" sticker." Source: the Division's Facebook post of Oct 20, 2026 ("If you want to vote early, find your location on
+  our website, vote, and get your "I Voted" sticker."). `ALLOW_ACCOUNTS` adds facebook.com/akelections and
+  facebook.com/Louisianasos.
+- Georgia county entry: Pickens County (classes drew custom America 250 stickers, voters get one; Stormi, sixth grade,
+  Jasper Middle School), from the Board of Elections and Registration's own site ("Vote to receive one of these custom "I
+  Voted" Stickers!"). `ALLOW_HOSTS` adds pickensgaelections.com. Demand 0; past tense from Nov 4 (checked).
+- Home, "Official Digital Stickers": Maryland's 2026 downloads (America 250 design in English and Spanish) and Colorado's
+  BallotTrax Blucifer sticker, worded as arriving in the notification, not a download.
+
+**Left, and why.** Ohio mail voters (Cuyahoga is the only official route; no statewide SOS digital sticker for 2026).
+Louisiana: where voters get it and absentee voters (no office sentence). Georgia: mail voters; WJBF and GPB say counties
+may still hand out peach stickers (news only). Osborne's poster exchange (artist's offer, since changed). Soldotna's
+contest (mixed dates). Chicago (no Nov 3 statement). Home: an "Official 2026 designs" block and per-link labels (new
+structure before the freeze; revisit after Nov 4).
+
+**QA.** Built in clean worktrees (another session had uncommitted history files at the time), then again in the repo
+after their push. Local: facts (51 states, 102 pages), Spanish (54 pairs), SEO `--no-legacy` (54 pages, 1,049 links),
+events, save, cards (Chromium and WebKit): all pass. `qa_stale.py`: 0 STALE on 10-31 (107 WINDOW), 11-01 (78), 11-02 (41),
+11-03 (5), 11-04 (0). Port 8792 was held by an older server for the repo's dist; the worktree checks ran on 8798 and 8799
+and the final repo check on 8792.
+
+**Push (commit 66513ad, about 6:10 p.m.).** One push. The other session's run 41251069884 (dispatched 6:05) deployed
+and then failed only at "Commit build records", because this push landed mid-run. Dispatched run 41251428335: build,
+local QA, deploy, live QA and IndexNow passed ("12 to submit", "IndexNow answered HTTP 200": home, OH, LA, GA, AK in EN
+and ES, plus /history/ EN and ES). It too failed only at "Commit build records" (another push landed mid-run), so
+`build/lastmod.json` and `build/indexnow-sent.json` were not committed; the Nov 1 6:05 a.m. build commits them and may
+resubmit the same URLs. Curl, live: Georgia shows the dome, Pickens and the official link; Louisiana the trumpet and link;
+Alaska the early answer; Ohio "reads OHIO VOTED"; /es/georgia/ "Ver el sticker oficial de I Voted 2026 de Georgia";
+/es/alaska/ the Spanish answer; home shows Colorado and Maryland.
+
+**Request Indexing.** Tried once for /georgia/ about 6:25 p.m.: "Quota Exceeded. Sorry--we couldn't process this request
+because you've exceeded your daily quota. Please try submitting this again tomorrow."
+
+**Browser note.** On the Louisiana SOS Facebook post a password manager filled the Facebook login fields; nothing was
+submitted by this pass and the tab was left. A few minutes later that tab showed Garrett's logged-in Facebook and then left
+the session's tab group, so it was in someone else's hands. Worth a look by Garrett.
+
+**Next (added).**
+- Nov 1 (after the 6:05 a.m. build): Request Indexing for /georgia/, /louisiana/, /alaska/, /ohio/ (with pass 7's list);
+  confirm the run commits the build records.
+- After Nov 4: an "Official 2026 designs" block on the home page with per-link labels (Perplexity idea); Georgia county
+  sticker differences if a county office states them.
