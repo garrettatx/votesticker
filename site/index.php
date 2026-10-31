@@ -151,8 +151,8 @@ function vote_file_current( $abbr, $file ) {
 	$alt = $alts[ preg_replace( '/\.jpg$/', '', $file ) ] ?? '';
 	if ( ! preg_match( '/reading (.*)$/i', $alt, $m ) ) { return true; }
 	$says = strtolower( $m[1] );
-	// First-time voter, Future voter and Ya voté (the bespoke sets, October 26) stay true after Election Day too.
-	if ( 'post' === vote_phase() ) { return (bool) preg_match( '/^(i voted|my ballot is in|first-time voter|future voter|ya voté|mi primer voto|yo también votaré|[a-z. ]+ votes\b)/u', $says ); }
+	// First-time voter, Future voter and Ya voté or Yo voté (the bespoke sets, October 26) stay true after Election Day too.
+	if ( 'post' === vote_phase() ) { return (bool) preg_match( '/^(i voted|my ballot is in|first-time voter|future voter|ya voté|yo voté|mi primer voto|yo también votaré|[a-z. ]+ votes\b)/u', $says ); }
 	if ( 'ended' === ( $rows[ strtoupper( $abbr ) ]['kind'] ?? '' ) ) { return 0 !== strpos( $says, 'vote early' ); }
 	return true;
 }
@@ -311,16 +311,16 @@ function vote_meta_es( $st ) {
 	$save = $n ? 'Guarda un sticker listo para usar o crea el tuyo' : 'Crea tu propio sticker';
 	$grab = $n ? 'Toma un sticker listo para usar o crea el tuyo, y ponlo de foto de perfil.' : 'Crea tu sticker y ponlo de foto de perfil.';
 	if ( 'post' === vote_phase() ) {
-		$also = 'mail' === $kind ? ' y Ya voté por correo' : ( 'ended' === $kind ? ' y Ya voté temprano' : '' );
+		$also = 'mail' === $kind ? ' y Yo voté por correo' : ( 'ended' === $kind ? ' y Yo voté temprano' : '' );
 		return array(
 			'slug' => vote_slug( $st['name'] ),
-			'title' => 'Stickers de Ya voté' . $also . ' en ' . $name,
-			'h1' => 'Stickers de Ya voté en ' . $name,
+			'title' => 'Stickers de Yo voté' . $also . ' en ' . $name,
+			'h1' => 'Stickers de Yo voté en ' . $name,
 			'crumb' => $name,
-			'ribbon' => 'STICKERS DE YA VOTÉ, GRATIS',
-			'lead' => vote_between() ? 'Stickers de Ya voté gratis para ' . $name . '. Crea el tuyo, guárdalo y compártelo.' : '¿Ya votaste? Consigue tu sticker. Crea el tuyo para ' . $name . ', guárdalo y compártelo.',
-			'desc' => 'Crea gratis tu sticker de Ya voté para ' . $name . '. Encuentra también los recursos oficiales sobre tu boleta en ' . $name . '.',
-			'status' => 'Stickers de Ya voté',
+			'ribbon' => 'STICKERS DE YO VOTÉ, GRATIS',
+			'lead' => vote_between() ? 'Stickers de Yo voté gratis para ' . $name . '. Crea el tuyo, guárdalo y compártelo.' : '¿Ya votaste? Consigue tu sticker. Crea el tuyo para ' . $name . ', guárdalo y compártelo.',
+			'desc' => 'Crea gratis tu sticker de Yo voté para ' . $name . '. Encuentra también los recursos oficiales sobre tu boleta en ' . $name . '.',
+			'status' => 'Stickers de Yo voté',
 			'family' => 'post',
 			'name' => $name,
 			'index' => VOTE_ES_INDEX,
@@ -367,7 +367,7 @@ function vote_meta_es( $st ) {
 	}
 	return array(
 		'slug' => vote_slug( $st['name'] ),
-		'title' => 'ended' === $kind ? 'Stickers de Ya voté y Ya voté temprano en ' . $name . ': vota el 3 nov' : ( 0 === strpos( $tag, 'votación anticipada' ) ? 'Stickers de Ya voté temprano en ' . $name . ': ' . $tag : 'Stickers para votar en ' . $name . ': ' . $tag ),
+		'title' => 'ended' === $kind ? 'Stickers de Yo voté y Yo voté temprano en ' . $name . ': vota el 3 nov' : ( 0 === strpos( $tag, 'votación anticipada' ) ? 'Stickers de Yo voté temprano en ' . $name . ': ' . $tag : 'Stickers para votar en ' . $name . ': ' . $tag ),
 		'h1' => 'Stickers para votar en ' . $name,
 		'crumb' => $name,
 		'ribbon' => $ribbon,
@@ -718,7 +718,7 @@ function vote_post( $st, $kind = null, $variant = 'plan' ) {
 	$after = 0 === strpos( $kind, 'post' );
 	$label = $st['officialLabel'] ?? '';
 	$open = $es
-		? array( 'pre_early' => 'Voy a votar temprano.', 'pre_mail' => 'Voy a entregar mi boleta con tiempo.', 'pre_day' => 'Voy a votar el Día de las Elecciones.', 'post' => 'Ya voté.', 'post_early' => 'Ya voté temprano.', 'post_mail' => 'Ya entregué mi boleta.' )
+		? array( 'pre_early' => 'Voy a votar temprano.', 'pre_mail' => 'Voy a entregar mi boleta con tiempo.', 'pre_day' => 'Voy a votar el Día de las Elecciones.', 'post' => 'Yo voté.', 'post_early' => 'Yo voté temprano.', 'post_mail' => 'Ya entregué mi boleta.' )
 		: array( 'pre_early' => "I'm voting early.", 'pre_mail' => "I'm getting my ballot in early.", 'pre_day' => "I'm voting on Election Day.", 'post' => 'I voted.', 'post_early' => 'I voted early.', 'post_mail' => 'My ballot is in.' );
 	$ask = $es
 		? array( 'pre_mail' => '¿Cuándo vas a devolver tu boleta?', 'post' => '¿Y tú, ya tienes tu plan para votar?', 'default' => '¿Ya tienes tu plan para votar?' )
@@ -792,14 +792,14 @@ function vote_post_fact( $st, $after, $named = true ) {
 	if ( $es ) {
 		if ( 'in-person' === $kind ) {
 			$same = $start && date( 'n', strtotime( $start ) ) === date( 'n', strtotime( $st['end'] ) );
-			$f = $after ? ( $named && 'pre' === vote_phase() ? 'Todavía hay tiempo: la' : 'la' ) . ' votación anticipada' . $in . ' sigue hasta el ' . vote_long( $st['end'] ) . ', y el 3 de noviembre abren las casillas.'
+			$f = $after ? ( $named && 'pre' === vote_phase() ? 'Todavía hay tiempo: la' : 'la' ) . ' votación anticipada' . $in . ' sigue hasta el ' . vote_long( $st['end'] ) . ', y el 3 de noviembre abren los lugares de votación.'
 				: ( $start ? 'la votación anticipada' . $in . ' es del ' . ( $same ? date( 'j', strtotime( $start ) ) : vote_long( $start ) ) . ' al ' . vote_long( $st['end'] ) . '.'
 					: 'la votación anticipada' . $in . ' sigue hasta el ' . vote_long( $st['end'] ) . '.' );
 		} elseif ( 'mail' === $kind ) {
 			$f = $after ? ( $named ? 'Si todavía no has entregado la tuya,' . $in . ' la' : 'la' ) . ' boleta se recibe a más tardar el ' . vote_long( $st['end'] ) . '.'
 				: ( $named ? $name . ' vota por correo. La' : 'la' ) . ' boleta se entrega a más tardar el ' . vote_long( $st['end'] ) . '.';
 		} else {
-			$f = $after ? ( $named ? 'Si todavía no has votado,' . $in . ' las' : 'las' ) . ' casillas abren el martes 3 de noviembre.'
+			$f = $after ? ( $named ? 'Si todavía no has votado,' . $in . ' los' : 'los' ) . ' lugares de votación abren el martes 3 de noviembre.'
 				: 'el Día de las Elecciones' . $in . ' es el martes 3 de noviembre.';
 		}
 	} elseif ( 'in-person' === $kind ) {
@@ -1039,7 +1039,7 @@ function vote_ics_events( $st ) {
 	}
 	if ( ! ( 'mail' === $kind && $ahead && VOTE_ELECTION_DAY === $st['end'] ) ) {
 		$ev[] = array( 'eday', VOTE_ELECTION_DAY, $es ? 'Día de las Elecciones en ' . $name : 'Election Day in ' . $name,
-			$es ? 'Las casillas abren el martes 3 de noviembre. Busca tu lugar de votación y el horario: ' . $loc
+			$es ? 'Los lugares de votación abren el martes 3 de noviembre. Busca tu lugar de votación y el horario: ' . $loc
 				: 'Polls are open Tuesday, November 3. Find your polling place and hours: ' . $loc );
 	}
 	return $ev;
@@ -1300,8 +1300,8 @@ $vote_ld = array(
 		<?php echo vote_eday_banner( $vote_st ); ?>
 		<div class="state-hero<?php echo $vote_art ? ' state-hero--art' : ''; ?>">
 			<div>
-				<?php // "I Voted" and "Ya voté" never split across lines ("Washington I / Voted Stickers" on phones). ?>
-				<h1 id="page-h1"><?php echo str_replace( array( 'I Voted', 'Ya voté' ), array( 'I&nbsp;Voted', 'Ya&nbsp;voté' ), vote_e( $vote_page['h1'] ) ); ?></h1>
+				<?php // "I Voted" and "Yo voté" never split across lines ("Washington I / Voted Stickers" on phones). ?>
+				<h1 id="page-h1"><?php echo str_replace( array( 'I Voted', 'Yo voté' ), array( 'I&nbsp;Voted', 'Yo&nbsp;voté' ), vote_e( $vote_page['h1'] ) ); ?></h1>
 				<p class="ribbon"><?php echo vote_e( $vote_page['ribbon'] ); ?></p>
 				<p class="lead" id="page-lead"><?php echo vote_e( $vote_page['lead'] ); ?></p>
 				<?php echo vote_early_countdown( $vote_st ); ?>
@@ -1734,7 +1734,7 @@ window.VOTE_PHASE = <?php echo vote_json( vote_phase() ); ?>;
 window.VOTE_T = <?php
 // Maker strings, from the same dictionary as the page.
 $vote_js = array();
-foreach ( array( 'Tap Save to Photos, then Save Image. Then set it as your profile picture from Photos.', 'Tap Open image, press and hold the picture, and choose Save to Photos.', 'The picture saves to your Downloads. Set it as your profile picture from there.', 'The picture saves to your Downloads folder.', 'Save to Photos', 'Press and hold the picture, then tap Save to Photos.', 'Done', 'Download picture', 'Copied', 'Copy caption and link', 'Link copied', 'Copy this: ', 'No state matches. Try the full name.', 'Official info: ', 'Profile picture: ', 'Election Day is %s.', 'Tuesday, November 3, 2026', 'Pick a %s Sticker', 'Pick an %s Sticker', 'Or Make Your Own', 'Make Your %s Sticker', '%s vote sticker, ready-made design %s', 'Sticker', 'Poster', 'Stamp', 'Big type', 'Tilt', 'Brush', 'Side by side', 'Arch', 'Plate', 'Split', 'Map below', 'Shadow', 'Ring', 'Half', 'Varsity', 'Masthead', 'Check', 'State colors', 'Cream and navy', 'Navy and red', 'Forest and gold', 'Cobalt and chartreuse', 'Maroon and gold', 'Plum and cream', 'Teal and gold', 'Burnt orange and cream', 'Charcoal and gold', 'Vote early', 'Vote by mail', 'Vote Nov 3', 'I voted', 'I voted by mail', 'My ballot is in', 'I voted early', 'Vota temprano (español)', 'Vota por correo (español)', 'Vota 3 de nov (español)', 'Ya voté (español)', 'Ya voté temprano (español)', 'Ya voté por correo (español)', 'Voy a votar (español)', 'First-time voter', 'Mi primer voto (español)', 'Future voter', 'Yo también votaré (español)', 'Copy image description', "Didn't save? Tap it again and choose Save Image, or", 'open it to press and hold', 'Sticker in %s for %s reading %s.', 'Sticker in %s state colors reading %s.', '%s colors' ) as $k ) { $vote_js[ $k ] = t( $k ); }
+foreach ( array( 'Tap Save to Photos, then Save Image. Then set it as your profile picture from Photos.', 'Tap Open image, press and hold the picture, and choose Save to Photos.', 'The picture saves to your Downloads. Set it as your profile picture from there.', 'The picture saves to your Downloads folder.', 'Save to Photos', 'Press and hold the picture, then tap Save to Photos.', 'Done', 'Download picture', 'Copied', 'Copy caption and link', 'Link copied', 'Copy this: ', 'No state matches. Try the full name.', 'Official info: ', 'Profile picture: ', 'Election Day is %s.', 'Tuesday, November 3, 2026', 'Pick a %s Sticker', 'Pick an %s Sticker', 'Or Make Your Own', 'Make Your %s Sticker', '%s vote sticker, ready-made design %s', 'Sticker', 'Poster', 'Stamp', 'Big type', 'Tilt', 'Brush', 'Side by side', 'Arch', 'Plate', 'Split', 'Map below', 'Shadow', 'Ring', 'Half', 'Varsity', 'Masthead', 'Check', 'State colors', 'Cream and navy', 'Navy and red', 'Forest and gold', 'Cobalt and chartreuse', 'Maroon and gold', 'Plum and cream', 'Teal and gold', 'Burnt orange and cream', 'Charcoal and gold', 'Vote early', 'Vote by mail', 'Vote Nov 3', 'I voted', 'I voted by mail', 'My ballot is in', 'I voted early', 'Vota temprano (español)', 'Vota por correo (español)', 'Vota 3 de nov (español)', 'Yo voté (español)', 'Yo voté temprano (español)', 'Yo voté por correo (español)', 'Voy a votar (español)', 'First-time voter', 'Mi primer voto (español)', 'Future voter', 'Yo también votaré (español)', 'Copy image description', "Didn't save? Tap it again and choose Save Image, or", 'open it to press and hold', 'Sticker in %s for %s reading %s.', 'Sticker in %s state colors reading %s.', '%s colors' ) as $k ) { $vote_js[ $k ] = t( $k ); }
 echo vote_json( $vote_js ); ?>;
 window.VOTE_ASSETS = <?php echo vote_json( VOTE_BASE . 'assets/' ); ?>;
 window.VOTE_PAGE_STATE = <?php echo vote_json( $vote_abbr ); ?>;</script>

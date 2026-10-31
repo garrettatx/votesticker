@@ -294,6 +294,23 @@
     "checked": "2026-10-30",
     "status": "verified",
     "notes": "City of Foster City (fostercity.org), the city's own site."
+   },
+   {
+    "place": {
+     "en": "San Luis Obispo County",
+     "es": "Condado de San Luis Obispo"
+    },
+    "kind": "county",
+    "en": "The county's mayors picked four student stickers for 2026, among them a \"Yo voté\" design by Aurelia, a third grader at Pacheco Elementary. All four go out at every polling place on Election Day, November 3.",
+    "es": "Los alcaldes del condado eligieron cuatro stickers de estudiantes para 2026, entre ellos un diseño de \"Yo voté\" de Aurelia, alumna de tercer grado de Pacheco Elementary. Los cuatro se reparten en todos los lugares de votación el Día de las Elecciones, el 3 de noviembre.",
+    "until": "2026-11-03",
+    "en_after": "The county's mayors picked four student stickers for 2026, among them a \"Yo voté\" design by Aurelia, a third grader at Pacheco Elementary. All four went out at every polling place on Election Day, November 3.",
+    "es_after": "Los alcaldes del condado eligieron cuatro stickers de estudiantes para 2026, entre ellos un diseño de \"Yo voté\" de Aurelia, alumna de tercer grado de Pacheco Elementary. Los cuatro se repartieron en todos los lugares de votación el Día de las Elecciones, el 3 de noviembre.",
+    "src": "https://www.slocounty.ca.gov/departments/clerk-recorder/news-announcements/slo-county-elections-unveils-2026-sticker-design-contest-winners",
+    "quote": "All four of the new stickers will be available at both the San Luis Obispo and Atascadero Elections Offices beginning May 4, and they will be distributed at all polling locations throughout the county on Election Day, June 2, and again on November 3.",
+    "checked": "2026-10-31",
+    "status": "verified",
+    "notes": "San Luis Obispo County Clerk-Recorder (slocounty.ca.gov), news release April 3, 2026, read by curl Oct 31. Also: 'The mayors also selected a “Yo voté” design created by third grader Aurelia Shua of Pacheco Elementary'. Demand: 0 (no GSC query, no Ahrefs record)."
    }
   ]
  },

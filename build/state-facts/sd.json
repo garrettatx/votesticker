@@ -176,7 +176,7 @@
   },
   "line": {
    "en": "If you're at your polling place, inside or outside, before the polls close, stay. You can still vote.",
-   "es": "Si estás en tu lugar de votación, adentro o afuera, antes de que cierren las casillas, quédate. Todavía puedes votar.",
+   "es": "Si estás en tu lugar de votación, adentro o afuera, antes de que cierre la votación, quédate. Todavía puedes votar.",
    "src": "https://sdlegislature.gov/api/Statutes/12-2-3.html",
    "checked": "2026-10-26",
    "quote": "However, no polling place may be closed at any election until all the voters who have presented themselves at the polling place inside or outside for the purpose of voting prior to the time of the closing of the polls have had time to cast their ballots.",
@@ -218,6 +218,15 @@
    "quote": "ARE YOU ABLE TO TRACK YOUR ABSENTEE BALLOT USING THIS PORTAL: Yes, you will be able to see the date your absentee ballot application was received, the date your absentee ballot was sent to you and the date your absentee ballot was received by the county for the Primary and General Election.",
    "status": "verified",
    "notes": "Read by curl Oct 30. mail.track_url already pointed here; the FAQ answer was missing (pass 2 logged SD as having no tracker)."
+  },
+  "line": {
+   "en": "You can still vote. Polls are open 7 a.m. to 7 p.m. local time, and a polling place can't close until everyone who got there before closing, inside or outside, has had time to vote.",
+   "es": "Todavía puedes votar. La votación es de 7 a. m. a 7 p. m., hora local, y un lugar de votación no puede cerrar hasta que todas las personas que llegaron antes del cierre, adentro o afuera, hayan tenido tiempo de votar.",
+   "src": "https://sdlegislature.gov/api/Statutes/12-2-3.html",
+   "checked": "2026-10-31",
+   "quote": "However, no polling place may be closed at any election until all the voters who have presented themselves at the polling place inside or outside for the purpose of voting prior to the time of the closing of the polls have had time to cast their ballots.",
+   "status": "verified",
+   "notes": "Oct 31 pass 5: SDCL 12-2-3 on sdlegislature.gov, read by curl: 'the polls shall be opened at the hour of seven a.m. and remain continuously open until seven p.m.'. The SOS 2026 Precinct Manual agrees: 'Polls are not to be closed until all voters, who are in line at the polls, inside or outside, prior to 7:00 p.m., have had the opportunity to vote. (SDCL 12-2-3)'."
   }
  },
  "notes": "Read October 21, 2026 with curl on sdsos.gov (Voting, Absentee Voting, 2026 Election Information, Information/sos-awards) and the sdlegislature.gov statutes API (12-18-3, 12-18-27, 12-19-2.1, 12-19-12, 12-20-5.1), cited by their public URLs (https://sdlegislature.gov/Statutes/<section>), as faq-sources.json does. The phone fact rests on 12-18-27, the same section the existing FAQ selfie answer cites. 12-18-3 also bars using 'any communication or photographic device in a manner which repeatedly distracts, interrupts, or intimidates any voter or election worker' within 100 feet; not used on the page. Weekday for November 2 is the calendar weekday. EARLY VOTING FOR THE LEAD (states.js has SD unchecked): in-person absentee voting at the County Auditor's office, Friday, September 18, 2026 through 5 p.m. Monday, November 2, 2026 (or later if regular office hours run later). Sources: (1) https://sdsos.gov/elections-voting/upcoming-elections/general-information/2026%20Election%20Information/2026-Election-Information.aspx: 'Absentee Voting Begins: September 18, 2026' under 'General Election Date: November 3, 2026'. (2) https://sdsos.gov/elections-voting/voting/absentee-voting.aspx: 'Registered voters can vote in-person once Absentee Voting begins at their County Auditor's office by bringing along a valid photo identification card (ID).' and 'At any time prior to an election, a voter may apply for an absentee ballot in person at the office of and to the person in charge of the election during regular office hours or until five p.m. on the day before the election, whichever is later.' Hours: county office hours. Suggested states.js note: 'Vote absentee in person at your County Auditor's office through Mon., Nov. 2.' Not found: absentee eligibility stated plainly, ballot tracking, drop boxes, witness rule, cure, expired-ID rule, line rule.",

@@ -191,20 +191,20 @@
 		// Classic national set (October 26, sketches): drawn by the classic layouts only, never in the message list.
 		ivotedtoday: { hidden: true, label: 'I voted today', lines: ['I VOTED', 'TODAY'] },
 		// Spanish classics say YO VOTÉ, what US counties print on their bilingual stickers (Gwinnett, GA;
-		// Jefferson, CO; Doña Ana, NM; Pima, AZ). The maker keeps YA VOTÉ (docs/spanish-style.md).
+		// Jefferson, CO; Doña Ana, NM; Pima, AZ). The maker says YO VOTÉ too since Oct 31 (docs/spanish-style.md).
 		yovote: { hidden: true, es: true, label: 'Yo voté', lines: ['YO VOTÉ'] },
 		yovotehoy: { hidden: true, es: true, label: 'Yo voté hoy', lines: ['YO VOTÉ', 'HOY'] },
 		yovotetemprano: { hidden: true, es: true, label: 'Yo voté temprano', lines: ['YO VOTÉ', 'TEMPRANO'] },
 		yovotecorreo: { hidden: true, es: true, label: 'Yo voté por correo', lines: ['YO VOTÉ', 'POR CORREO'] },
-		// Spanish (October 19): tú, per the project glossary (docs/spanish-style.md); "Ya voté" is the
-		// everyday Mexican phrasing for "I voted". Date bars
+		// Spanish (October 19): tú, per the project glossary (docs/spanish-style.md); "Yo voté" since Oct 31, 2026: what
+		// U.S. election offices print and what people search (docs/LOOP-county-and-mail.md, pass 5). Date bars
 		// put the day first ("19–30 OCT", "HASTA EL 27 OCT").
 		votatemprano: { early: true, es: true, label: 'Vota temprano (español)', lines: ['VOTA', 'TEMPRANO'] },
 		votacorreo: { mail: true, es: true, label: 'Vota por correo (español)', lines: ['VOTA', 'POR CORREO'] },
 		vota3nov: { dated: true, es: true, label: 'Vota 3 de nov (español)', lines: ['VOTA', '3 DE NOV'] },
-		yavote: { es: true, label: 'Ya voté (español)', lines: ['YA VOTÉ'], stateLine: true },
-		yavotetemprano: { early: true, past: true, es: true, label: 'Ya voté temprano (español)', lines: ['YA VOTÉ', 'TEMPRANO'] },
-		yavotecorreo: { mail: true, es: true, label: 'Ya voté por correo (español)', lines: ['YA VOTÉ', 'POR CORREO'], stateLine: true },
+		yavote: { es: true, label: 'Yo voté (español)', lines: ['YO VOTÉ'], stateLine: true },
+		yavotetemprano: { early: true, past: true, es: true, label: 'Yo voté temprano (español)', lines: ['YO VOTÉ', 'TEMPRANO'] },
+		yavotecorreo: { mail: true, es: true, label: 'Yo voté por correo (español)', lines: ['YO VOTÉ', 'POR CORREO'], stateLine: true },
 		miprimervoto: { es: true, label: 'Mi primer voto (español)', lines: ['MI PRIMER', 'VOTO'], stateLine: true },
 		voyavotar: { es: true, label: 'Voy a votar (español)', lines: ['VOY A', 'VOTAR'], stateLine: true },
 		yotambien: { es: true, label: 'Yo también votaré (español)', lines: ['YO TAMBIÉN', 'VOTARÉ'], stateLine: true },
@@ -495,7 +495,7 @@
 		});
 		return items;
 	}
-	// Script case for a headline line: "VOTE" to "Vote", "I VOTED" to "I voted", "YA VOTÉ" to "Ya voté".
+	// Script case for a headline line: "VOTE" to "Vote", "I VOTED" to "I voted", "YO VOTÉ" to "Yo voté".
 	function scriptCase(s) { return s.charAt(0) + s.slice(1).toLowerCase(); }
 	// The darker and lighter of a palette's two base colors.
 	function darkOf(p) { return luminance(p.bg) < luminance(p.ink) ? p.bg : p.ink; }
@@ -1121,9 +1121,9 @@
 		},
 		// October 26 sketches (review only): six designs for one more tile.
 		// Ballot bubble: the filled-in oval from a ballot beside the stack. Filled when the message says it's
-		// done (I VOTED, YA VOTÉ, MY BALLOT IS IN), an empty keyline when it's a plan.
+		// done (I VOTED, YO VOTÉ, YA VOTÉ, MY BALLOT IS IN), an empty keyline when it's a plan.
 		bubble: function (st, p, lines, dateText) {
-			var done = /^(I VOTED|YA VOT|MY BALLOT|FIRST-TIME)/.test(lines[0]);
+			var done = /^(I VOTED|YA VOT|YO VOT|MY BALLOT|FIRST-TIME)/.test(lines[0]);
 			var head = textBlock(lines, DISPLAY, 560, 260, { justify: true, leading: 0.1, track: -0.01 });
 			var th = head.asc * lines.length + head.gap * (lines.length - 1);
 			var ry = Math.min(th * 0.42, 150), rx = ry * 1.55, gap = 64;

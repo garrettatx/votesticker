@@ -57,7 +57,7 @@
   },
   "cure": {
    "en": "Forgot to sign your absentee envelope? Your Town Clerk will try to reach you. You can sign it in person at the Town Clerk's office until the polls close at 8 p.m. on Tuesday, November 3, 2026.",
-   "es": "¿Se te olvidó firmar el sobre de tu boleta de voto en ausencia? El secretario municipal (Town Clerk) tratará de comunicarse contigo. Puedes firmarlo en persona en la oficina del secretario municipal hasta que cierren las casillas a las 8 p. m. del martes 3 de noviembre de 2026.",
+   "es": "¿Se te olvidó firmar el sobre de tu boleta de voto en ausencia? El secretario municipal (Town Clerk) tratará de comunicarse contigo. Puedes firmarlo en persona en la oficina del secretario municipal hasta que cierre la votación a las 8 p. m. del martes 3 de noviembre de 2026.",
    "src": "https://portal.ct.gov/-/media/sots/electionservices/lead_communications/2026/july/20260720finalmoderatorshandbooksupplement.pdf",
    "checked": "2026-10-28",
    "quote": "Absentee ballots received without a signed voter certification can be cured with the voter's signature in the presence of the municipal clerk until polls close on election day.",
@@ -150,7 +150,7 @@
   },
   "cure": {
    "en": "Only a missing signature can be fixed. Your Town Clerk will try to contact you, and you sign the envelope at the Town Clerk's office before the polls close on Election Day. Put your phone number and email on your application so they can reach you.",
-   "es": "Solo se puede corregir una firma que falta. El secretario municipal (Town Clerk) tratará de comunicarse contigo, y firmas el sobre en su oficina antes de que cierren las casillas el Día de las Elecciones. Pon tu número de teléfono y tu correo electrónico en tu solicitud para que puedan comunicarse contigo.",
+   "es": "Solo se puede corregir una firma que falta. El secretario municipal (Town Clerk) tratará de comunicarse contigo, y firmas el sobre en su oficina antes de que cierre la votación el Día de las Elecciones. Pon tu número de teléfono y tu correo electrónico en tu solicitud para que puedan comunicarse contigo.",
    "src": "https://portal.ct.gov/-/media/sots/early-voting/2026-voting-guide/2026_voter_guide-2-final-combined.pdf",
    "checked": "2026-10-28",
    "quote": "Curing is the process for correcting a missing signature on an absentee ballot return envelope. ... Be sure to provide a phone number and email address on your absentee ballot application so your Town Clerk can contact you if necessary.",

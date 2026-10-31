@@ -897,6 +897,19 @@ return array(
 			'until' => '2026-11-03',
 			'en_after' => 'Residents picked the city\'s own sticker for November 3, 2026, in a contest shared with Burlingame, Hillsborough, Millbrae and San Mateo. It was handed out at City Hall and at Foster City vote centers.',
 			'es_after' => 'Los residentes eligieron el sticker propio de la ciudad para el 3 de noviembre de 2026 en un concurso compartido con Burlingame, Hillsborough, Millbrae y San Mateo. Se repartió en el ayuntamiento (City Hall) y en los centros de votación de Foster City.',
+		), array(
+			'place' => array(
+				'en' => 'San Luis Obispo County',
+				'es' => 'Condado de San Luis Obispo',
+			),
+			'kind' => 'county',
+			'en' => 'The county\'s mayors picked four student stickers for 2026, among them a "Yo voté" design by Aurelia, a third grader at Pacheco Elementary. All four go out at every polling place on Election Day, November 3.',
+			'es' => 'Los alcaldes del condado eligieron cuatro stickers de estudiantes para 2026, entre ellos un diseño de "Yo voté" de Aurelia, alumna de tercer grado de Pacheco Elementary. Los cuatro se reparten en todos los lugares de votación el Día de las Elecciones, el 3 de noviembre.',
+			'src' => 'https://www.slocounty.ca.gov/departments/clerk-recorder/news-announcements/slo-county-elections-unveils-2026-sticker-design-contest-winners',
+			'checked' => '2026-10-31',
+			'until' => '2026-11-03',
+			'en_after' => 'The county\'s mayors picked four student stickers for 2026, among them a "Yo voté" design by Aurelia, a third grader at Pacheco Elementary. All four went out at every polling place on Election Day, November 3.',
+			'es_after' => 'Los alcaldes del condado eligieron cuatro stickers de estudiantes para 2026, entre ellos un diseño de "Yo voté" de Aurelia, alumna de tercer grado de Pacheco Elementary. Los cuatro se repartieron en todos los lugares de votación el Día de las Elecciones, el 3 de noviembre.',
 		) ),
 		'election_day.hours' => array(
 			'en' => 'Polling places are open 7 a.m. to 8 p.m. local time.',
@@ -1165,7 +1178,7 @@ return array(
 		),
 		'dates.cure' => array(
 			'en' => 'Forgot to sign your absentee envelope? Your Town Clerk will try to reach you. You can sign it in person at the Town Clerk\'s office until the polls close at 8 p.m. on Tuesday, November 3, 2026.',
-			'es' => '¿Se te olvidó firmar el sobre de tu boleta de voto en ausencia? El secretario municipal (Town Clerk) tratará de comunicarse contigo. Puedes firmarlo en persona en la oficina del secretario municipal hasta que cierren las casillas a las 8 p. m. del martes 3 de noviembre de 2026.',
+			'es' => '¿Se te olvidó firmar el sobre de tu boleta de voto en ausencia? El secretario municipal (Town Clerk) tratará de comunicarse contigo. Puedes firmarlo en persona en la oficina del secretario municipal hasta que cierre la votación a las 8 p. m. del martes 3 de noviembre de 2026.',
 			'src' => 'https://portal.ct.gov/-/media/sots/electionservices/lead_communications/2026/july/20260720finalmoderatorshandbooksupplement.pdf',
 			'checked' => '2026-10-28',
 		),
@@ -1220,7 +1233,7 @@ return array(
 		'mail.track_url' => 'https://portaldir.ct.gov/sots/LookUp.aspx',
 		'mail.cure' => array(
 			'en' => 'Only a missing signature can be fixed. Your Town Clerk will try to contact you, and you sign the envelope at the Town Clerk\'s office before the polls close on Election Day. Put your phone number and email on your application so they can reach you.',
-			'es' => 'Solo se puede corregir una firma que falta. El secretario municipal (Town Clerk) tratará de comunicarse contigo, y firmas el sobre en su oficina antes de que cierren las casillas el Día de las Elecciones. Pon tu número de teléfono y tu correo electrónico en tu solicitud para que puedan comunicarse contigo.',
+			'es' => 'Solo se puede corregir una firma que falta. El secretario municipal (Town Clerk) tratará de comunicarse contigo, y firmas el sobre en su oficina antes de que cierre la votación el Día de las Elecciones. Pon tu número de teléfono y tu correo electrónico en tu solicitud para que puedan comunicarse contigo.',
 			'src' => 'https://portal.ct.gov/-/media/sots/early-voting/2026-voting-guide/2026_voter_guide-2-final-combined.pdf',
 			'checked' => '2026-10-28',
 		),
@@ -1408,7 +1421,7 @@ return array(
 		),
 		'polls_rules.line' => array(
 			'en' => 'If you\'re in line at a vote center when the polls close, stay in line. You can still vote.',
-			'es' => 'Si estás en la fila de un centro de votación cuando cierran las casillas, no te salgas. Todavía puedes votar.',
+			'es' => 'Si estás en la fila de un centro de votación cuando cierra la votación, no te salgas. Todavía puedes votar.',
 			'src' => 'https://dcregs.dc.gov/Common/DCMR/SectionList.aspx?SectionNumber=3-703',
 			'checked' => '2026-10-26',
 		),
@@ -1432,7 +1445,7 @@ return array(
 		),
 		'faq.line' => array(
 			'en' => 'You can still vote. Anyone in line at a vote center when the polls close gets to vote.',
-			'es' => 'Igual puedes votar. Toda persona que esté en la fila de un centro de votación cuando cierran las casillas puede votar.',
+			'es' => 'Igual puedes votar. Toda persona que esté en la fila de un centro de votación cuando cierra la votación puede votar.',
 			'src' => 'https://dcregs.dc.gov/Common/DCMR/SectionList.aspx?SectionNumber=3-703',
 			'checked' => '2026-10-26',
 		),
@@ -1771,7 +1784,7 @@ return array(
 		),
 		'polls_rules.line' => array(
 			'en' => 'If you\'re in line when the polls close, stay in line. You can still vote.',
-			'es' => 'Si estás en la fila cuando cierran las casillas, no te salgas. Todavía puedes votar.',
+			'es' => 'Si estás en la fila cuando cierra la votación, no te salgas. Todavía puedes votar.',
 			'src' => 'https://www.flsenate.gov/Laws/Statutes/2025/100.011',
 			'checked' => '2026-10-26',
 		),
@@ -1847,7 +1860,7 @@ return array(
 		),
 		'faq.line' => array(
 			'en' => 'You can still vote. Anyone waiting in line when the polls close on Election Day gets to cast a ballot.',
-			'es' => 'Igual puedes votar. Toda persona que esté en la fila cuando cierran las casillas el Día de las Elecciones puede votar.',
+			'es' => 'Igual puedes votar. Toda persona que esté en la fila cuando cierra la votación el Día de las Elecciones puede votar.',
 			'src' => 'https://www.flsenate.gov/Laws/Statutes/2026/100.011',
 			'checked' => '2026-10-28',
 		),
@@ -2282,13 +2295,13 @@ return array(
 		'mail.track_url' => 'https://apps.sos.iowa.gov/elections/absenteeballotstatus/absentee/search',
 		'mail.cure' => array(
 			'en' => 'If your county auditor gets your ballot by 5 p.m. on Saturday, October 31, and you forgot to sign the envelope, they\'ll contact you within 24 hours. You can then sign it in person at the auditor\'s office, vote a replacement ballot or vote at the polls, by the time polls close on Election Day. If your signature doesn\'t seem to match, the only fix is a replacement ballot that reaches the auditor before polls close.',
-			'es' => 'Si el auditor de tu condado recibe tu boleta a más tardar a las 5 p. m. del sábado 31 de octubre y se te olvidó firmar el sobre, te contactará en un plazo de 24 horas. Entonces puedes firmarlo en persona en la oficina del auditor, votar con una boleta de reemplazo o votar en tu lugar de votación, antes de que cierren las casillas el Día de las Elecciones. Si tu firma no parece coincidir, la única forma de corregirlo es una boleta de reemplazo que llegue al auditor antes de que cierren las casillas.',
+			'es' => 'Si el auditor de tu condado recibe tu boleta a más tardar a las 5 p. m. del sábado 31 de octubre y se te olvidó firmar el sobre, te contactará en un plazo de 24 horas. Entonces puedes firmarlo en persona en la oficina del auditor, votar con una boleta de reemplazo o votar en tu lugar de votación, antes de que cierre la votación el Día de las Elecciones. Si tu firma no parece coincidir, la única forma de corregirlo es una boleta de reemplazo que llegue al auditor antes de que cierre la votación.',
 			'src' => 'https://www.legis.iowa.gov/docs/code/53.18.pdf',
 			'checked' => '2026-10-28',
 		),
 		'mail.dropbox' => array(
 			'en' => 'Some counties have one ballot drop box at the county auditor\'s office or on the county grounds around it. Counties don\'t have to offer one, so check with your auditor. The drop box closes when polls close on Election Day.',
-			'es' => 'Algunos condados tienen un buzón de entrega de boletas en la oficina del auditor del condado o en el terreno del condado que la rodea. Los condados no están obligados a tener uno, así que pregúntale a tu auditor. El buzón de entrega cierra cuando cierran las casillas el Día de las Elecciones.',
+			'es' => 'Algunos condados tienen un buzón de entrega de boletas en la oficina del auditor del condado o en el terreno del condado que la rodea. Los condados no están obligados a tener uno, así que pregúntale a tu auditor. El buzón de entrega cierra cuando cierra la votación el Día de las Elecciones.',
 			'src' => 'https://www.legis.iowa.gov/docs/code/53.17.pdf',
 			'checked' => '2026-10-28',
 		),
@@ -2640,7 +2653,7 @@ return array(
 		),
 		'polls_rules.line' => array(
 			'en' => 'Polls close at 7 p.m. If you\'re in line then, stay in line. You can still vote.',
-			'es' => 'Las casillas cierran a las 7 p. m. Si estás en la fila a esa hora, no te salgas. Todavía puedes votar.',
+			'es' => 'Los lugares de votación cierran a las 7 p. m. Si estás en la fila a esa hora, no te salgas. Todavía puedes votar.',
 			'src' => 'https://www.elections.il.gov/agencyforms/1%20PRECINCT%20ELECTION%20PUBLICATIONS/2025%20Precinct%20Election%20Manual.pdf',
 			'checked' => '2026-10-26',
 		),
@@ -2853,7 +2866,7 @@ return array(
 		),
 		'faq.line' => array(
 			'en' => 'You can still vote. Everyone in line when polls close at 6 p.m. local time gets to vote.',
-			'es' => 'Igual puedes votar. Toda persona que esté en la fila cuando cierran las casillas a las 6 p. m., hora local, puede votar.',
+			'es' => 'Igual puedes votar. Toda persona que esté en la fila cuando cierra la votación a las 6 p. m., hora local, puede votar.',
 			'src' => 'https://www.in.gov/dA/a8ee46432d/2026-Election-Day-Handbook.pdf',
 			'checked' => '2026-10-28',
 		),
@@ -2905,7 +2918,7 @@ return array(
 		),
 		'dates.mail_return' => array(
 			'en' => 'Drop your ballot at your county election office, an authorized drop box or a polling place before polls close on Tuesday, November 3, and it counts. Mailing it? The Secretary of State says a court order covers this election: mailed ballots postmarked by Election Day count if they arrive by the last mail delivery on Friday, November 6. Kansas law without that order requires arrival by the close of polls, so mail it early.',
-			'es' => 'Deja tu boleta en la oficina electoral de tu condado, en un buzón autorizado o en un lugar de votación antes de que cierren las casillas el martes 3 de noviembre, y cuenta. ¿La vas a mandar por correo? La Secretaría de Estado dice que una orden judicial cubre esta elección: las boletas por correo con matasellos del Día de las Elecciones cuentan si llegan con la última entrega de correo del viernes 6 de noviembre. Sin esa orden, la ley de Kansas exige que llegue antes del cierre de las casillas, así que mándala con tiempo.',
+			'es' => 'Deja tu boleta en la oficina electoral de tu condado, en un buzón autorizado o en un lugar de votación antes de que cierre la votación el martes 3 de noviembre, y cuenta. ¿La vas a mandar por correo? La Secretaría de Estado dice que una orden judicial cubre esta elección: las boletas por correo con matasellos del Día de las Elecciones cuentan si llegan con la última entrega de correo del viernes 6 de noviembre. Sin esa orden, la ley de Kansas exige que llegue antes del cierre de la votación, así que mándala con tiempo.',
 			'src' => 'https://sos.ks.gov/elections/advance-voting-information.html',
 			'checked' => '2026-10-26',
 		),
@@ -3164,7 +3177,7 @@ return array(
 		'mail.track_url' => 'https://govote.ky.gov/',
 		'mail.cure' => array(
 			'en' => 'Sign the outer envelope: an unsigned one is rejected automatically. If your signature doesn\'t match, your county clerk will try to reach you, and you must fix it before polls close on Election Day.',
-			'es' => 'Firma el sobre exterior: si no está firmado, se rechaza automáticamente. Si tu firma no coincide, la oficina del secretario de tu condado tratará de contactarte, y debes corregirlo antes de que cierren las casillas el Día de las Elecciones.',
+			'es' => 'Firma el sobre exterior: si no está firmado, se rechaza automáticamente. Si tu firma no coincide, la oficina del secretario de tu condado tratará de contactarte, y debes corregirlo antes de que cierre la votación el Día de las Elecciones.',
 			'src' => 'https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=52130',
 			'checked' => '2026-10-26',
 		),
@@ -4929,7 +4942,7 @@ return array(
 		),
 		'polls_rules.line' => array(
 			'en' => 'If you\'re in line when the polls close, stay in line. You can still vote.',
-			'es' => 'Si estás en la fila cuando cierran las casillas, no te salgas. Todavía puedes votar.',
+			'es' => 'Si estás en la fila cuando cierra la votación, no te salgas. Todavía puedes votar.',
 			'src' => 'https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_163/GS_163-166.25.html',
 			'checked' => '2026-10-26',
 		),
@@ -4986,7 +4999,7 @@ return array(
 		),
 		'faq.line' => array(
 			'en' => 'You can still vote. Anyone in line when the polls close gets to vote.',
-			'es' => 'Igual puedes votar. Toda persona que esté en la fila cuando cierran las casillas puede votar.',
+			'es' => 'Igual puedes votar. Toda persona que esté en la fila cuando cierra la votación puede votar.',
 			'src' => 'https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_163/GS_163-166.25.html',
 			'checked' => '2026-10-26',
 		),
@@ -5139,7 +5152,7 @@ return array(
 		),
 		'polls_rules.line' => array(
 			'en' => 'If you\'re in line when the polls close, stay in line. You can still vote. People who arrive after closing can\'t.',
-			'es' => 'Si estás en la fila cuando cierran las casillas, no te salgas. Todavía puedes votar. Quien llegue después del cierre ya no puede.',
+			'es' => 'Si estás en la fila cuando cierra la votación, no te salgas. Todavía puedes votar. Quien llegue después del cierre ya no puede.',
 			'src' => 'https://ndlegis.gov/cencode/t16-1c01.pdf',
 			'checked' => '2026-10-26',
 		),
@@ -5264,7 +5277,7 @@ return array(
 		),
 		'id.without' => array(
 			'en' => 'Bring the ID itself. A photo of it on your phone or a photocopy won\'t work at the polls. Forgot it? Go home and get it before polls close, or vote a provisional ballot and show your ID in person at your county election office by Tuesday, November 10. If a disability, illness, a religious objection to being photographed, or documents you can\'t get without real difficulty or expense keep you from getting an ID, fill out a Reasonable Impediment Certification.',
-			'es' => 'Lleva la identificación original. Una foto en tu teléfono o una fotocopia no sirve en el lugar de votación. ¿Se te olvidó? Ve a casa por ella antes de que cierren las casillas, o vota con una boleta provisional y muestra tu identificación en persona en la oficina electoral de tu condado a más tardar el martes 10 de noviembre. Si una discapacidad, una enfermedad, una objeción religiosa a que te tomen fotos o documentos que no puedes conseguir sin mucha dificultad o gasto te impiden obtener una identificación, llena una certificación de impedimento razonable (Reasonable Impediment Certification).',
+			'es' => 'Lleva la identificación original. Una foto en tu teléfono o una fotocopia no sirve en el lugar de votación. ¿Se te olvidó? Ve a casa por ella antes de que cierre la votación, o vota con una boleta provisional y muestra tu identificación en persona en la oficina electoral de tu condado a más tardar el martes 10 de noviembre. Si una discapacidad, una enfermedad, una objeción religiosa a que te tomen fotos o documentos que no puedes conseguir sin mucha dificultad o gasto te impiden obtener una identificación, llena una certificación de impedimento razonable (Reasonable Impediment Certification).',
 			'src' => 'https://sos.nebraska.gov/elections/voter-id',
 			'checked' => '2026-10-28',
 		),
@@ -5455,7 +5468,7 @@ return array(
 		),
 		'polls_rules.line' => array(
 			'en' => 'If you\'re in line when the polls close, including the line to register, stay in it. You can still register and vote.',
-			'es' => 'Si estás en la fila cuando cierran las casillas, incluida la fila para registrarte, no te salgas. Todavía puedes registrarte y votar.',
+			'es' => 'Si estás en la fila cuando cierra la votación, incluida la fila para registrarte, no te salgas. Todavía puedes registrarte y votar.',
 			'src' => 'https://gc.nh.gov/rsa/html/LXIII/659/659-12.htm',
 			'checked' => '2026-10-26',
 		),
@@ -5480,7 +5493,7 @@ return array(
 		),
 		'faq.line' => array(
 			'en' => 'You can still vote. Everyone in line when the polls close, including the line to register, gets to register if needed and vote.',
-			'es' => 'Igual puedes votar. Toda persona que esté en la fila cuando cierran las casillas, incluida la fila para registrarse, puede registrarse si hace falta y votar.',
+			'es' => 'Igual puedes votar. Toda persona que esté en la fila cuando cierra la votación, incluida la fila para registrarse, puede registrarse si hace falta y votar.',
 			'src' => 'https://gc.nh.gov/rsa/html/LXIII/659/659-12.htm',
 			'checked' => '2026-10-26',
 		),
@@ -5767,7 +5780,7 @@ return array(
 		),
 		'polls_rules.line' => array(
 			'en' => 'If you\'re in line when the polls close, stay in line. You can still vote.',
-			'es' => 'Si estás en la fila cuando cierran las casillas, no te salgas. Todavía puedes votar.',
+			'es' => 'Si estás en la fila cuando cierra la votación, no te salgas. Todavía puedes votar.',
 			'src' => 'https://sos.state.nm.us/voting-and-elections/voter-information/voter-bill-of-rights',
 			'checked' => '2026-10-26',
 		),
@@ -5947,8 +5960,8 @@ return array(
 			'checked' => '2026-10-28',
 		),
 		'sticker.early' => array(
-			'en' => 'In Clark County, the 2026 voter guide\'s in-person steps, for early voting October 17 to 30 and on Election Day, end with getting your "I Voted" sticker at the tabulator. Other counties set their own practice.',
-			'es' => 'En el condado de Clark, los pasos para votar en persona de la guía de 2026, para la votación anticipada del 17 al 30 de octubre y el Día de las Elecciones, terminan con recibir tu sticker de "I Voted" en la máquina tabuladora. Los demás condados deciden por su cuenta.',
+			'en' => 'In Clark County, the 2026 voter guide\'s in-person steps, for early voting and on Election Day, end with getting your "I Voted" sticker at the tabulator. Other counties set their own practice.',
+			'es' => 'En el condado de Clark, los pasos para votar en persona de la guía de 2026, para la votación anticipada y el Día de las Elecciones, terminan con recibir tu sticker de "I Voted" en la máquina tabuladora. Los demás condados deciden por su cuenta.',
 			'src' => 'https://www.clarkcountynv.gov/adobe/assets/urn:aaid:aem:62013096-adbe-425d-b324-ce5f4717b513/original/as/election-guide-26g.pdf',
 			'checked' => '2026-10-24',
 		),
@@ -7426,7 +7439,7 @@ return array(
 		),
 		'polls_rules.line' => array(
 			'en' => 'If you\'re at your polling place, inside or outside, before the polls close, stay. You can still vote.',
-			'es' => 'Si estás en tu lugar de votación, adentro o afuera, antes de que cierren las casillas, quédate. Todavía puedes votar.',
+			'es' => 'Si estás en tu lugar de votación, adentro o afuera, antes de que cierre la votación, quédate. Todavía puedes votar.',
 			'src' => 'https://sdlegislature.gov/api/Statutes/12-2-3.html',
 			'checked' => '2026-10-26',
 		),
@@ -7447,6 +7460,12 @@ return array(
 			'es' => 'Una boleta provisional solo se cuenta si tu condado confirma que te registraste en ese precinto antes de la fecha límite de registro. El condado lo revisa antes del escrutinio oficial.',
 			'src' => 'https://sdlegislature.gov/Statutes/12-20-5.1',
 			'checked' => '2026-10-21',
+		),
+		'faq.line' => array(
+			'en' => 'You can still vote. Polls are open 7 a.m. to 7 p.m. local time, and a polling place can\'t close until everyone who got there before closing, inside or outside, has had time to vote.',
+			'es' => 'Todavía puedes votar. La votación es de 7 a. m. a 7 p. m., hora local, y un lugar de votación no puede cerrar hasta que todas las personas que llegaron antes del cierre, adentro o afuera, hayan tenido tiempo de votar.',
+			'src' => 'https://sdlegislature.gov/api/Statutes/12-2-3.html',
+			'checked' => '2026-10-31',
 		),
 		'faq.track' => array(
 			'en' => 'Look yourself up on the Voter Information Portal at vip.sdsos.gov. It shows the date your county received your absentee ballot application, the date it sent your ballot, and the date it received your voted ballot.',
@@ -8843,7 +8862,7 @@ return array(
 		),
 		'polls_rules.line' => array(
 			'en' => 'If you\'re in line when the polls close, stay in line. You can still vote.',
-			'es' => 'Si estás en la fila cuando cierran las casillas, no te salgas. Todavía puedes votar.',
+			'es' => 'Si estás en la fila cuando cierra la votación, no te salgas. Todavía puedes votar.',
 			'src' => 'https://code.wvlegislature.gov/3-1-32/',
 			'checked' => '2026-10-26',
 		),
@@ -8867,7 +8886,7 @@ return array(
 		),
 		'faq.line' => array(
 			'en' => 'You can still vote. Anyone in line at the polling place when the polls close gets to vote, even if the line runs outside.',
-			'es' => 'Igual puedes votar. Toda persona que esté en la fila del lugar de votación cuando cierran las casillas puede votar, aunque la fila llegue hasta afuera.',
+			'es' => 'Igual puedes votar. Toda persona que esté en la fila del lugar de votación cuando cierra la votación puede votar, aunque la fila llegue hasta afuera.',
 			'src' => 'https://code.wvlegislature.gov/3-1-32/',
 			'checked' => '2026-10-26',
 		),

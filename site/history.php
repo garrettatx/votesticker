@@ -55,7 +55,7 @@ function vote_history_ld( $page, $url ) {
 // style of today's contests. Our own drawings, not copies of any printed design.
 function vote_history_art() {
 	$es = vote_es();
-	$a = $es ? 'YA VOTÉ' : 'I VOTED';
+	$a = $es ? 'YO VOTÉ' : 'I VOTED';
 	$star = function ( $x, $y, $r, $fill ) {
 		$p = array();
 		for ( $i = 0; $i < 10; $i++ ) { $rr = $i % 2 ? $r * 0.42 : $r; $an = -M_PI / 2 + $i * M_PI / 5; $p[] = round( $x + $rr * cos( $an ), 1 ) . ',' . round( $y + $rr * sin( $an ), 1 ); }

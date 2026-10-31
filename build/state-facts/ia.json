@@ -158,7 +158,7 @@
   "track_url": "https://apps.sos.iowa.gov/elections/absenteeballotstatus/absentee/search",
   "cure": {
    "en": "If your county auditor gets your ballot by 5 p.m. on Saturday, October 31, and you forgot to sign the envelope, they'll contact you within 24 hours. You can then sign it in person at the auditor's office, vote a replacement ballot or vote at the polls, by the time polls close on Election Day. If your signature doesn't seem to match, the only fix is a replacement ballot that reaches the auditor before polls close.",
-   "es": "Si el auditor de tu condado recibe tu boleta a más tardar a las 5 p. m. del sábado 31 de octubre y se te olvidó firmar el sobre, te contactará en un plazo de 24 horas. Entonces puedes firmarlo en persona en la oficina del auditor, votar con una boleta de reemplazo o votar en tu lugar de votación, antes de que cierren las casillas el Día de las Elecciones. Si tu firma no parece coincidir, la única forma de corregirlo es una boleta de reemplazo que llegue al auditor antes de que cierren las casillas.",
+   "es": "Si el auditor de tu condado recibe tu boleta a más tardar a las 5 p. m. del sábado 31 de octubre y se te olvidó firmar el sobre, te contactará en un plazo de 24 horas. Entonces puedes firmarlo en persona en la oficina del auditor, votar con una boleta de reemplazo o votar en tu lugar de votación, antes de que cierre la votación el Día de las Elecciones. Si tu firma no parece coincidir, la única forma de corregirlo es una boleta de reemplazo que llegue al auditor antes de que cierre la votación.",
    "src": "https://www.legis.iowa.gov/docs/code/53.18.pdf",
    "checked": "2026-10-28",
    "quote": "If the commissioner receives the return envelope containing the completed absentee ballot by 5:00 p.m. on the Saturday before the election for general elections ... If the affidavit lacks the signature of the registered voter, the commissioner shall, within twenty-four hours of the receipt of the envelope, notify the voter ... the voter may vote a replacement ballot as provided in subsection 3, cast a ballot as provided in section 53.19, subsection 3, or complete the affidavit in person at the office of the commissioner not later than the time polls close on election day.",
@@ -167,7 +167,7 @@
   },
   "dropbox": {
    "en": "Some counties have one ballot drop box at the county auditor's office or on the county grounds around it. Counties don't have to offer one, so check with your auditor. The drop box closes when polls close on Election Day.",
-   "es": "Algunos condados tienen un buzón de entrega de boletas en la oficina del auditor del condado o en el terreno del condado que la rodea. Los condados no están obligados a tener uno, así que pregúntale a tu auditor. El buzón de entrega cierra cuando cierran las casillas el Día de las Elecciones.",
+   "es": "Algunos condados tienen un buzón de entrega de boletas en la oficina del auditor del condado o en el terreno del condado que la rodea. Los condados no están obligados a tener uno, así que pregúntale a tu auditor. El buzón de entrega cierra cuando cierra la votación el Día de las Elecciones.",
    "src": "https://www.legis.iowa.gov/docs/code/53.17.pdf",
    "checked": "2026-10-28",
    "quote": "A commissioner is not required to establish a ballot drop box. ... A commissioner shall not establish more than one ballot drop box, which shall be located at the office of the commissioner, or on property owned and maintained by the county that directly surrounds the building where the office is located.",
