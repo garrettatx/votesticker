@@ -70,6 +70,23 @@ def main():
         attach(e, e['fact'], where)
     page['events'].sort(key=lambda e: (e['year'], e.get('order', 0)))
 
+    # The finding at the top of the page (Oct 31, pass 11): its own fact gives the link, every fact it
+    # mentions must be verified, and it must point at a real timeline entry.
+    co = page.get('callout')
+    if co:
+        for k in ('h', 'place', 'body', 'limits', 'source'):
+            text(co.get(k), f'callout {k}')
+        cite(co.get('facts'), 'callout')
+        attach(co, co['fact'], 'callout')
+        if co.get('event') not in {e['id'] for e in page['events']}:
+            errors.append(f'callout: no timeline entry "{co.get("event")}"')
+        # 1920 is "the earliest example we found", never the first or the origin (outreach-plan.md). The
+        # limits line may say "first adhesive sticker" because it says that one is unknown.
+        for lang, words in (('en', ('first', 'origin', 'invent')), ('es', ('primer', 'origen', 'invent'))):
+            s = ' '.join(co[k].get(lang, '') for k in ('h', 'place', 'body')).lower()
+            if any(w in s for w in words):
+                errors.append(f'callout ({lang}): says first, origin or invented about 1920')
+
     for key, c in page.get('charts', {}).items():
         where = f'chart {key}'
         text(c['title'], where + ' title')

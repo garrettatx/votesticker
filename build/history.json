@@ -1,6 +1,34 @@
 {
  "published": "2026-10-22",
  "sources": {},
+ "callout": {
+  "h": {
+   "en": "The Earliest Example We Found: 1920",
+   "es": "El ejemplo más antiguo que encontramos: 1920"
+  },
+  "place": {
+   "en": "St. Louis",
+   "es": "St. Louis"
+  },
+  "body": {
+   "en": "In October 1920, Blewett, a public school in St. Louis, held a student election. The school’s printing department made “I have voted” tags, enough to give one to each student as they voted. Of 1,250 students who registered, 1,170 voted.",
+   "es": "En octubre de 1920, Blewett, una escuela pública de St. Louis, celebró una elección estudiantil. El departamento de imprenta de la escuela hizo etiquetas de “I have voted” (yo voté), suficientes para darle una a cada estudiante al votar. De 1,250 estudiantes que se registraron, votaron 1,170."
+  },
+  "limits": {
+   "en": "These were paper tags, not adhesive stickers. Who printed the first adhesive “I Voted” sticker is still unknown. Later histories cite a 1950 Miami Herald mention of “I Have Voted” stickers, but we haven’t been able to read that page.",
+   "es": "Eran etiquetas de papel, no stickers adhesivos. Todavía no se sabe quién imprimió el primer sticker adhesivo de “I Voted”. Historias posteriores citan una mención de stickers de “I Have Voted” en el Miami Herald de 1950, pero no hemos podido leer esa página."
+  },
+  "source": {
+   "en": "St. Louis Board of Education, Annual Report, vol. 67 (1920–21), p. 52, on HathiTrust",
+   "es": "St. Louis Board of Education, Annual Report, vol. 67 (1920–21), p. 52, en HathiTrust"
+  },
+  "fact": "stlouis-blewett-1920",
+  "facts": [
+   "stlouis-blewett-1920",
+   "miami-herald-1950-cited"
+  ],
+  "event": "blewett-1920"
+ },
  "sections": [
   {
    "id": "answer",
@@ -27,7 +55,7 @@
      },
      "a": {
       "en": "The earliest examples we found are paper tags. In October 1920, a St. Louis public school printed “I have voted” tags for a student election and gave one to each student as he voted. In 1962, a Camp Fire Girls handbook suggested handing them out on Election Day, and a federal report describes the tags being pinned on voters leaving a Georgia polling place in 1966. Later histories cite a 1950 Miami Herald item about “I Have Voted” stickers at Miami polls, and a 1982 Miami Herald story described Fort Lauderdale shops giving discounts to people wearing voting stickers.",
-      "es": "Los ejemplos más antiguos que encontramos son etiquetas de papel. En octubre de 1920, una escuela pública de St. Louis imprimió etiquetas de “I have voted” (ya voté) para una elección estudiantil y le dio una a cada estudiante al votar. En 1962, un manual de las Camp Fire Girls sugería repartirlas el Día de las Elecciones, y un informe federal describe cómo se las ponían a los votantes al salir de un lugar de votación de Georgia en 1966. Historias posteriores citan una nota del Miami Herald de 1950 sobre stickers de “I Have Voted” en lugares de votación de Miami, y una nota del Miami Herald de 1982 describió tiendas de Fort Lauderdale que daban descuentos a quienes llevaban stickers de votación."
+      "es": "Los ejemplos más antiguos que encontramos son etiquetas de papel. En octubre de 1920, una escuela pública de St. Louis imprimió etiquetas de “I have voted” (yo voté) para una elección estudiantil y le dio una a cada estudiante al votar. En 1962, un manual de las Camp Fire Girls sugería repartirlas el Día de las Elecciones, y un informe federal describe cómo se las ponían a los votantes al salir de un lugar de votación de Georgia en 1966. Historias posteriores citan una nota del Miami Herald de 1950 sobre stickers de “I Have Voted” en lugares de votación de Miami, y una nota del Miami Herald de 1982 describió tiendas de Fort Lauderdale que daban descuentos a quienes llevaban stickers de votación."
      },
      "facts": [
       "stlouis-blewett-1920",
@@ -859,8 +887,8 @@
     "es": "“I Have Voted” en Miami"
    },
    "body": {
-    "en": "Later histories cite an October 1950 Miami Herald item about “I Have Voted” stickers at Miami polling places. It's the earliest reference located so far, but the original page hasn't been available to review.",
-    "es": "Historias posteriores citan una nota del Miami Herald de octubre de 1950 sobre stickers de “I Have Voted” en lugares de votación de Miami. Es la referencia más antigua encontrada hasta ahora, pero la página original no ha estado disponible para revisarla."
+    "en": "Later histories cite an October 1950 Miami Herald item about “I Have Voted” stickers at Miami polling places. It’s the earliest mention of a sticker we’ve seen cited, but the original page hasn’t been available to review.",
+    "es": "Historias posteriores citan una nota del Miami Herald de octubre de 1950 sobre stickers de “I Have Voted” en lugares de votación de Miami. Es la mención más antigua de un sticker que hemos visto citada, pero la página original no ha estado disponible para revisarla."
    },
    "fact": "miami-herald-1950-cited",
    "mark": {
@@ -1183,15 +1211,19 @@
    "year": 1920,
    "order": -1,
    "title": {
-    "en": "“I have voted” tags at a St. Louis school",
-    "es": "Etiquetas de “I have voted” en una escuela de St. Louis"
+    "en": "“I have voted” tags for a student election",
+    "es": "Etiquetas de “I have voted” para una elección estudiantil"
    },
    "body": {
-    "en": "For a student election at Blewett, a St. Louis public school, the print shop makes “I have voted” tags, one for each student as he votes. It’s the earliest example we found.",
-    "es": "Para una elección estudiantil en Blewett, una escuela pública de St. Louis, el taller de imprenta hace etiquetas de “I have voted” (ya voté), una para cada estudiante al votar. Es el ejemplo más antiguo que encontramos."
+    "en": "For a student election at Blewett, a St. Louis public school, the school’s printing department makes “I have voted” tags, one for each student as they vote. It’s the earliest example we found.",
+    "es": "Para una elección estudiantil en Blewett, una escuela pública de St. Louis, el departamento de imprenta de la escuela hace etiquetas de “I have voted” (yo voté), una para cada estudiante al votar. Es el ejemplo más antiguo que encontramos."
    },
    "fact": "stlouis-blewett-1920",
-   "kind": "precursor"
+   "kind": "precursor",
+   "chip": {
+    "en": "St. Louis",
+    "es": "St. Louis"
+   }
   },
   {
    "id": "campfire-1962",

@@ -1,7 +1,8 @@
 // QA for the history page's timeline overview (/history/, /es/history/), at phone to desktop widths.
 // Fails on: sideways scroll of the page or the overview; overview links (or era headings, gap labels) whose boxes
 // overlap; track dots that overlap; a link under 44px tall below 960px (touch layouts); an overview link with no
-// entry to land on; an entry with no overview link.
+// entry to land on; an entry with no overview link; the 1920 finding card (.hist-find, pass 11) missing, below the
+// overview, overflowing, without its source link, or with a timeline link that lands nowhere.
 //   node scripts/qa_history.mjs [--base http://127.0.0.1:8792/] [--plant overlap|overflow|dots]
 // --plant injects a known defect, to prove the check fires (it must then FAIL).
 import { chromium } from 'playwright';
@@ -11,6 +12,7 @@ const PLANT = arg('--plant', '');
 const PLANTS = {
 	overlap: '.tl-era__list li + li { margin-top: -26px !important; }',
 	overflow: '.tl-eras { min-width: 1500px; }',
+	find: '.hist-find__txt { min-width: 900px; }',
 	dots: '.tl-dot { left: 50% !important; }',
 };
 const WIDTHS = [320, 375, 414, 768, 1024, 1280, 1440];
@@ -26,6 +28,17 @@ for (const path of ['history/', 'es/history/']) {
 			const box = (el) => { const r = el.getBoundingClientRect(); return { l: r.left, t: r.top, r: r.right, b: r.bottom, h: r.height, txt: el.textContent.trim().slice(0, 30) }; };
 			const hit = (a, c, tol) => a.l < c.r - tol && c.l < a.r - tol && a.t < c.b - tol && c.t < a.b - tol;
 			const out = { pageOver: document.documentElement.scrollWidth - innerWidth, wrapOver: 0, overlaps: [], dotHits: [], small: [], noTarget: [], noLink: [] };
+			const find = document.querySelector('.hist-find');
+			if (!find) out.find = 'missing';
+			else {
+				const ov = document.querySelector('.tl-wrap');
+				const fo = Math.max(find.scrollWidth - find.clientWidth, ...[...find.querySelectorAll('*')].map((e) => e.getBoundingClientRect().right - find.getBoundingClientRect().right));
+				const to = find.querySelector('a[href^="#t-"]');
+				if (ov && find.getBoundingClientRect().top > ov.getBoundingClientRect().top) out.find = 'below the overview';
+				else if (fo > 0.5) out.find = `overflows by ${Math.round(fo)}px`;
+				else if (!find.querySelector('a[href*="hathitrust"], a[href*="hdl.handle.net"]')) out.find = 'no source link';
+				else if (!to || !document.getElementById(to.hash.slice(1))) out.find = 'timeline link lands nowhere';
+			}
 			const wrap = document.querySelector('.tl-wrap');
 			if (!wrap) { out.missing = true; return out; }
 			out.wrapOver = Math.max(wrap.scrollWidth - wrap.clientWidth, ...[...wrap.querySelectorAll('.tl-eras, .tl-era')].map((e) => e.scrollWidth - e.clientWidth));
@@ -44,6 +57,7 @@ for (const path of ['history/', 'es/history/']) {
 			return out;
 		});
 		const tag = `/${path} @${w}`;
+		if (r.find) fail(`${tag}: 1920 finding card ${r.find}`);
 		if (r.missing) { fail(`${tag}: no timeline overview`); await p.close(); continue; }
 		if (r.pageOver > 0) fail(`${tag}: page scrolls sideways ${r.pageOver}px`);
 		if (r.wrapOver > 0) fail(`${tag}: overview overflows its panel by ${r.wrapOver}px`);

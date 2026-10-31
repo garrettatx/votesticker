@@ -856,3 +856,23 @@ button.link-quiet:hover { text-decoration: underline; }
 .tl__era:first-child { margin-top: 0; }
 .tl__era p { margin: 0; font-size: var(--fs-xs); font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--ink); }
 .tl__era span { margin-left: 6px; color: var(--muted); font-variant-numeric: tabular-nums; letter-spacing: 0; }
+
+/* The finding at the top of the history page (Oct 31, pass 11): a record card, the year set like a stamp on a
+   navy block beside the text on wide screens and above it on phones. Full border, no side stripe. */
+.hist-find { display: grid; grid-template-columns: 1fr; margin: var(--s6) 0 0; max-width: 52rem; background: var(--cream); border: 1.5px solid var(--ink); border-radius: var(--radius-lg); box-shadow: 5px 5px 0 rgba(20, 41, 94, 0.12); overflow: hidden; }
+.hist-find__year { margin: 0; padding: var(--s3) var(--s5); display: flex; align-items: baseline; flex-wrap: wrap; gap: 2px var(--s3); background: var(--ink); color: var(--cream); }
+.hist-find__num { font-family: "Vote Display", Impact, sans-serif; font-size: 2.6rem; line-height: 1; letter-spacing: 0.02em; color: var(--gold); font-variant-numeric: tabular-nums; }
+.hist-find__place { font-size: var(--fs-xs); font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+.hist-find__txt { padding: var(--s4) var(--s5) var(--s5); min-width: 0; }
+.hist-find__h { margin: 0 0 var(--s2); font-size: var(--fs-h3); line-height: 1.2; color: var(--ink); }
+.hist-find p { margin: 0 0 var(--s3); max-width: 38rem; }
+.hist-find__limits { font-size: var(--fs-sm); color: var(--muted); }
+.hist-find__src { margin-bottom: 0 !important; font-size: var(--fs-xs); color: var(--muted); }
+.hist-find__src a { color: var(--ink); font-weight: 700; overflow-wrap: anywhere; }
+.hist-find + .guide--first { margin-top: var(--s6); }
+@media (min-width: 640px) {
+	.hist-find { grid-template-columns: 10rem minmax(0, 1fr); }
+	.hist-find__year { flex-direction: column; justify-content: center; align-items: center; gap: var(--s2); padding: var(--s5) var(--s3); text-align: center; }
+	.hist-find__num { font-size: 3.4rem; }
+	.hist-find__txt { padding: var(--s5) var(--s6) var(--s5) var(--s5); }
+}

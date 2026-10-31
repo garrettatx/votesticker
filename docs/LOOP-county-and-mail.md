@@ -1005,3 +1005,48 @@ description, FAQ and Portage entry.
 
 **Read-back.** Nov 5: rerun "where can I find a virtual I voted sticker" (and "is there a digital I voted sticker") in
 ChatGPT and Perplexity; note whether votesticker.org is cited. Also check GSC for "digital"/"virtual" queries on the home.
+
+### October 31: Pass 11, History Page Press Angle
+
+**Why.** Garrett's EIN Presswire release ("VoteSticker.org Finds Record of 'I Have Voted' Tags at a St. Louis School in
+1920", publishing Nov 2 to 4) sends readers to /history/. The 1920 finding sat in the third paragraph of "The Short
+Answer"; the title, description and lead never mentioned it, and the 1950 Miami timeline entry still called itself "the
+earliest reference located so far". Demand: "i voted sticker history" 133 impressions at 8.7.
+
+**Source confirmed.** HathiTrust catalog (API, Oct 31): uc1.b2987052 is "Annual Report", Saint Louis (Mo.). Board of
+Education, v. 67, 1920-21. The quote ("the Printing Department printed enough "I have voted" tags to give each student
+one as he voted") is from the Oct 29 read, p. 52 (seq 60); a fresh read was blocked by HathiTrust's Cloudflare
+challenge (curl 403), and Chrome wasn't used this pass.
+
+**Callout (EN and ES, top of the page under the hero; `callout` in `build/history.json`, checked by `history_text.py`,
+rendered by `vote_h_callout()`).** A record card: 1920 and St. Louis on a navy block (beside the text from 640px, above it
+on phones), full border, no side stripe.
+- "The Earliest Example We Found: 1920. In October 1920, Blewett, a public school in St. Louis, held a student election.
+  The school's printing department made "I have voted" tags, enough to give one to each student as they voted. Of 1,250
+  students who registered, 1,170 voted." Limits: "These were paper tags, not adhesive stickers. Who printed the first
+  adhesive "I Voted" sticker is still unknown. Later histories cite a 1950 Miami Herald mention of "I Have Voted"
+  stickers, but we haven't been able to read that page." Source: "St. Louis Board of Education, Annual Report, vol. 67
+  (1920–21), p. 52, on HathiTrust" · "See it in the timeline".
+- `history_text.py` now fails the build if the callout's heading or body says first, origin or invented (EN) or
+  primer, origen, invent (ES), if a fact it cites isn't verified, or if its timeline link has no entry.
+
+**Title, description, lead (EN; ES mirrors).**
+| Field | Before | After |
+|---|---|---|
+| title | History of the I Voted Sticker: Where It Came From | History of the I Voted Sticker: From 1920 Tags to Today (55) |
+| desc | The history of the I voted sticker: a 1950 Miami newspaper mention, a 1985 Phoenix campaign, ... | I voted sticker history with a source for each step: 1920 "I have voted" tags at a St. Louis school (the earliest example we found), a 1985 Phoenix campaign, the 1987 flag oval and today's contests. (198) |
+| lead | No one knows who made the first "I Voted" sticker. But over time, a small giveaway ... | No one knows who made the first "I Voted" sticker. The earliest example we found is from 1920: paper "I have voted" tags for a student election at a St. Louis school. Over time, ... |
+H1 unchanged. og and twitter text come from title and desc.
+
+**Timeline.** 1920 entry title "“I have voted” tags for a student election" (was "... at a St. Louis school"), body says
+"the school's printing department". New `chip` field: the phone overview chip reads "1920 St. Louis" (it read "1920"
+alone) without making it a bold turning point; a `mark` there pushed its larger dot into the 1920 ribbon's at 1024px
+(qa_history caught it). 1950 Miami entry: "It's the earliest mention of a sticker we've seen cited" (was "the earliest
+reference located so far", which contradicted 1920). Spanish glosses "(ya voté)" now "(yo voté)"; the hero's round
+sticker on /es/history/ read YA VOTÉ, now YO VOTÉ (pass 5 decision).
+
+**QA (local, 8792).** qa_facts (51 states, 102 pages), qa_es (54 pairs), qa_seo --no-legacy (54 pages, 1,049 links),
+qa_events, qa_save, qa_cards, qa_history: PASS. qa_history now also checks the callout (present, above the overview,
+no overflow, source link, timeline link lands); `--plant find` fails it as it should, and the overlap, overflow and dots
+plants still fail. qa_stale: 0 STALE on 10-31 (107 WINDOW), 11-02 (41), 11-04 (0). Screenshots:
+`docs/research/history-timeline-20261031/shots/history-callout-*.png` (EN and ES at 375 and 1280, overview chips at 375).

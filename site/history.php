@@ -29,12 +29,14 @@ function vote_h_md( $text ) {
 
 function vote_history_meta() {
 	return array(
-		'title' => t( 'History of the I Voted Sticker: Where It Came From' ),
+		'title' => t( 'History of the I Voted Sticker: From 1920 Tags to Today' ),
 		// A no-break space keeps "I Voted" on one line, so the H1 never ends a line on "I".
 		'h1' => t( "Where the I Voted Sticker Came From" ),
 		'eyebrow' => '', // the breadcrumb already says Sticker History
-		'lead' => t( 'No one knows who made the first “I Voted” sticker. But over time, a small giveaway at the polls became an Election Day tradition, and a chance for local artists, students and election offices to make their mark.' ),
-		'desc' => t( 'The history of the I voted sticker: a 1950 Miami newspaper mention, a 1985 Phoenix campaign, the 1987 flag oval, and today\'s state and county design contests, with a source for each.' ),
+		// Oct 31 (pass 11, press release): the 1920 St. Louis tags lead the description and the lead. Always
+		// "the earliest example we found", never the first or the origin (docs/outreach-plan.md).
+		'lead' => t( 'No one knows who made the first “I Voted” sticker. The earliest example we found is from 1920: paper “I have voted” tags for a student election at a St. Louis school. Over time, a small giveaway became an Election Day tradition, and a chance for local artists, students and election offices to make their mark.' ),
+		'desc' => t( 'I voted sticker history with a source for each step: 1920 “I have voted” tags at a St. Louis school (the earliest example we found), a 1985 Phoenix campaign, the 1987 flag oval and today\'s contests.' ),
 		'index' => ! vote_es() || VOTE_ES_INDEX,
 	);
 }
@@ -69,7 +71,7 @@ function vote_history_art() {
 		. '<text x="180" y="158" text-anchor="middle" font-family="Vote Display, Impact, sans-serif" font-size="78" fill="#14295E" letter-spacing="2">' . $a . '</text>'
 		. '<rect x="96" y="172" width="168" height="5" rx="2" fill="#C1272D"/></svg>'
 		. '<svg class="hist-art__disc" viewBox="0 0 240 240" width="240" height="240"><circle cx="120" cy="120" r="116" fill="#48203F"/><circle cx="120" cy="120" r="102" fill="none" stroke="#EFA978" stroke-width="3"/>'
-		. '<text x="120" y="112" text-anchor="middle" font-family="Vote Display, Impact, sans-serif" font-size="58" fill="#FFE8C1">' . ( $es ? 'YA' : 'I' ) . '</text>'
+		. '<text x="120" y="112" text-anchor="middle" font-family="Vote Display, Impact, sans-serif" font-size="58" fill="#FFE8C1">' . ( $es ? 'YO' : 'I' ) . '</text>'
 		. '<text x="120" y="166" text-anchor="middle" font-family="Vote Display, Impact, sans-serif" font-size="58" fill="#FFE8C1">' . ( $es ? 'VOTÉ' : 'VOTED' ) . '</text>'
 		. $star( 120, 52, 12, '#EFA978' ) . '</svg>'
 		. '</div>';
@@ -173,7 +175,8 @@ function vote_h_timeline( $events ) {
 			$kind = $e['kind'] ?? 'sticker';
 			$items .= '<li><a class="tl-i' . ( ! empty( $e['mark'] ) ? ' tl-i--key' : '' ) . '" href="#t-' . vote_e( $e['id'] ) . '">' . vote_h_shape( $kind )
 				. '<span class="tl-i__y">' . vote_e( $e['year'] ) . '</span> '
-				. '<span class="tl-i__txt">' . ( ! empty( $e['mark'] ) ? '<span class="tl-i__m">' . vote_e( vote_h_tx( $e['mark'] ) ) . '</span>' : '' )
+				// `mark` is a turning point (bold, bigger dot); `chip` only names the entry on phones, where titles are hidden.
+				. '<span class="tl-i__txt">' . ( ! empty( $e['mark'] ) || ! empty( $e['chip'] ) ? '<span class="tl-i__m">' . vote_e( vote_h_tx( $e['mark'] ?? $e['chip'] ) ) . '</span>' : '' )
 				. '<span class="tl-i__t">' . vote_e( vote_h_tx( $e['title'] ) ) . '</span>'
 				. ( 'uncertain' === $kind ? ' <span class="tl-i__q">' . vote_e( t( 'Evidence incomplete' ) ) . '</span>' : '' )
 				. '</span></a></li>';
@@ -361,11 +364,25 @@ function vote_history_why() {
 		. '<span>' . vote_e( t( 'Who started the I voted sticker? Nobody knows for sure. The waving American flag oval many people picture was drawn in 1987 by Janet Boudreau for Intab, an election supply company. The Smithsonian\'s National Museum of American History keeps a 1920 ribbon that marked a woman\'s first vote.' ) ) . ' <a href="' . vote_pbase() . VOTE_HISTORY_SLUG . '/">' . vote_e( t( 'How the I voted sticker became a tradition' ) ) . '</a></span></p>';
 }
 
+// The finding a reader from the press release came for (Oct 31, pass 11): the 1920 Blewett tags, what they
+// are and aren't, and the report they come from. Words and facts in build/history.json (`callout`).
+function vote_h_callout( $co ) {
+	if ( ! $co || ! empty( $co['pending'] ) ) { return ''; }
+	$lang = vote_es() ? ' lang="en"' : '';
+	return '<aside class="hist-find" aria-labelledby="find-h"><p class="hist-find__year" aria-hidden="true"><span class="hist-find__num">1920</span><span class="hist-find__place">' . vote_e( vote_h_tx( $co['place'] ) ) . '</span></p>'
+		. '<div class="hist-find__txt"><h2 class="hist-find__h" id="find-h">' . vote_e( vote_h_tx( $co['h'] ) ) . '</h2>'
+		. '<p>' . vote_h_md( vote_h_tx( $co['body'] ) ) . '</p>'
+		. '<p class="hist-find__limits">' . vote_h_md( vote_h_tx( $co['limits'] ) ) . '</p>'
+		. '<p class="hist-find__src">' . vote_e( t( 'Source:' ) ) . ' <a href="' . vote_e( $co['src'] ) . '" target="_blank" rel="noopener"' . $lang . '>' . vote_e( vote_h_tx( $co['source'] ) ) . '</a> · <a href="#t-' . vote_e( $co['event'] ) . '">' . vote_e( t( 'See it in the timeline' ) ) . '</a></p>'
+		. '</div></aside>';
+}
+
 function vote_history() {
 	$d = vote_history_data();
 	if ( ! $d ) { return '<div class="about"><p>' . vote_e( t( 'This page is being prepared.' ) ) . '</p></div>'; }
 	$out = '<div class="about hist">';
 	if ( ! empty( $d['draft'] ) ) { $out .= '<p class="h-draft">' . vote_e( t( 'Draft preview. Yellow labels mark text that still needs review, such as a missing translation. Anything we cannot support is revised or removed before publication.' ) ) . '</p>'; }
+	$out .= vote_h_callout( $d['callout'] ?? null );
 	foreach ( $d['sections'] as $i => $sec ) {
 		$hid = $sec['id'] . '-h';
 		$out .= '<section class="guide' . ( $i ? '' : ' guide--first' ) . '" aria-labelledby="' . $hid . '"><h2 class="display-h guide__h" id="' . $hid . '">' . vote_e( vote_h_tx( $sec['h'] ) ) . '</h2>';
