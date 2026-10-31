@@ -244,13 +244,18 @@
  },
  "sticker": {
   "tradition": {
-   "en": "Louisiana's 2026 I voted sticker has art by New Orleans artist Terrance Osborne. He said he pictured what Louisiana would look like if you could see its sound. It's the state's sixth I voted sticker and the fifth Louisiana artist in a series that started in 2016 with George Rodrigue's Blue Dog.",
-   "es": "El sticker de I voted de Louisiana para 2026 tiene arte de Terrance Osborne, artista de New Orleans. Él dijo que imaginó cómo se vería Louisiana si se pudiera ver su sonido. Es el sexto sticker de I voted del estado y el quinto artista de Louisiana en una serie que empezó en 2016 con el Blue Dog de George Rodrigue.",
+   "en": "Louisiana's 2026 I voted sticker has art by New Orleans artist Terrance Osborne. It's round and turquoise, with a gold trumpet, yellow magnolias and Mardi Gras beads above the words I VOTED in purple. He said he pictured what Louisiana would look like if you could see its sound. It's the state's sixth I voted sticker and the fifth Louisiana artist in a series that started in 2016 with George Rodrigue's Blue Dog.",
+   "es": "El sticker de I voted de Louisiana para 2026 tiene arte de Terrance Osborne, artista de New Orleans. Es redondo y turquesa, con una trompeta dorada, magnolias amarillas y collares de Mardi Gras sobre las palabras I VOTED en morado. Él dijo que imaginó cómo se vería Louisiana si se pudiera ver su sonido. Es el sexto sticker de I voted del estado y el quinto artista de Louisiana en una serie que empezó en 2016 con el Blue Dog de George Rodrigue.",
    "src": "https://www.sos.la.gov/news-events/secretary-landry-unveils-2026-i-voted-sticker-design",
-   "checked": "2026-10-28",
+   "checked": "2026-10-31",
    "quote": "The artwork for this year’s sticker was created by New Orleans artist Terrance Osborne, who also attended the unveiling. Osborne said that his inspiration for the art was the imagery of what Louisiana would look like if you could see its sound. “Today’s unveiling marks Louisiana’s 6th ‘I Voted’ sticker and the 5th Louisiana artist featured as part of the series,” Secretary Landry said.",
    "status": "verified",
-   "notes": "July 28, 2026 release, read Oct 28. Was 'sixth artist-designed sticker'; the release says sixth sticker, fifth Louisiana artist. 'Painted' changed to 'has art by' (release: 'created'). The release doesn't describe distribution."
+   "notes": "July 28, 2026 release, read Oct 28. Was 'sixth artist-designed sticker'; the release says sixth sticker, fifth Louisiana artist. 'Painted' changed to 'has art by' (release: 'created'). The release doesn't describe distribution. Oct 31 (pass 8): design described from the Secretary of State's own Facebook post of the sticker (https://www.facebook.com/Louisianasos/posts/here-it-is-the-new-i-voted-sticker-this-artwork-was-created-by-new-orleans-artis/1564587452362831/, July 28: 'Here it is! The new \"I Voted\" sticker! This artwork was created by New Orleans artist Terrance Osborne.'), image read in Chrome without logging in. The release page has no image."
+  },
+  "official_url": "https://www.facebook.com/Louisianasos/posts/here-it-is-the-new-i-voted-sticker-this-artwork-was-created-by-new-orleans-artis/1564587452362831/",
+  "official_by": {
+   "en": "Louisiana Secretary of State on Facebook",
+   "es": "Secretaría de Estado de Louisiana en Facebook"
   }
  },
  "faq": {

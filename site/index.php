@@ -519,6 +519,12 @@ function vote_sticker_story( $st, $lead = false ) {
 		if ( ! $f ) { continue; }
 		$sticker .= ( $q ? '<h3>' . vote_e( t( $q, $name ) ) . '</h3>' : '' ) . '<p>' . vote_e( $f['text'] ) . '</p>';
 		$ssrc[] = $f['src'];
+		// October 31: a link to the official design where the office shows it (linked, never hosted), kept apart from ours.
+		$ou = 'sticker.tradition' === $k ? vote_fact( $st, 'sticker.official_url' ) : null;
+		if ( $ou ) {
+			$by = vote_fact( $st, 'sticker.official_by' );
+			$sticker .= '<p><a href="' . vote_e( $ou ) . '" target="_blank" rel="noopener">' . vote_e( t( 'See the official 2026 %s I Voted sticker', $name ) ) . '</a>' . ( $by ? vote_e( t( ' (shown by the %s).', $by ) ) : '.' ) . ' ' . vote_e( t( 'The stickers on this page are free Vote Sticker designs, not the official one.' ) ) . '</p>';
+		}
 	}
 	if ( ! $sticker ) { return ''; }
 	return '<section class="guide' . ( $lead ? ' guide--lead' : '' ) . '" aria-labelledby="sticker-h"><h2 class="display-h guide__h" id="sticker-h">' . vote_e( t( '%s and the I Voted Sticker', $name ) ) . '</h2>' . $sticker . ( vote_files( $st['abbr'] ) ? '' : vote_more_stickers( $st ) ) . vote_history_more( $st )
@@ -1642,9 +1648,11 @@ $vote_ld = array(
 		<h2 id="official-h" class="display-h"><?php echo vote_e( t( 'Official Digital Stickers From Election Offices' ) ); ?></h2>
 		<p><?php echo vote_e( t( 'A few election offices post their own I voted sticker for you to share online. If yours does, use it. These are ones we found:' ) ); ?></p>
 		<ul>
+			<?php echo $vote_li( "Maryland's State Board of Elections has 2026 I voted stickers to download, including an America 250 design in English and Spanish.", 'https://elections.maryland.gov/elections/2026/index.html#i_voted', 'Get Maryland’s stickers' ); ?>
 			<?php echo $vote_li( "Washington's Secretary of State has eight I voted images to use as a profile picture.", 'https://www.sos.wa.gov/i-voted-downloadable-sticker', 'Get Washington’s sticker' ); ?>
 			<?php echo $vote_li( 'Multnomah County, Oregon, has a virtual sticker in 11 languages.', 'https://multco.us/info/virtual-i-voted-sticker', 'Get Multnomah County’s sticker' ); ?>
 			<?php echo $vote_li( "Oregon's Secretary of State has I Voted and I Voted By Mail virtual stickers.", 'https://results.oregonvotes.gov/Pages/media-resources.aspx', 'Get Oregon’s stickers' ); ?>
+			<?php echo $vote_li( 'Colorado voters signed up for BallotTrax get a digital Blucifer I Voted sticker once their mail ballot is accepted. It comes in the notification, not as a public download.', 'https://www.sos.state.co.us/pubs/newsRoom/pressReleases/2026/PR20261012StickerContest.html', 'Colorado’s announcement' ); ?>
 			<?php echo $vote_li( 'Grand Rapids, Michigan, has digital I voted stickers in nine languages, including Arabic, Burmese, Kinyarwanda and Nepali.', 'https://www.grandrapidsmi.gov/departments/clerks-office/elections/grvotes/', 'Get Grand Rapids’ stickers' ); ?>
 			<?php echo $vote_li( 'Ann Arbor, Michigan, has digital I voted stickers in eight languages, from Arabic to Korean.', 'https://www.a2gov.org/city-clerk/elections/a2votes/', 'Get Ann Arbor’s stickers' ); ?>
 			<?php echo $vote_li( 'Voting from another country? The Federal Voting Assistance Program has an "I Voted From" sticker for each country.', 'https://www.fvap.gov/IVotedSticker', 'Find your country' ); ?>

@@ -11,6 +11,10 @@
   "georgia.gov": {
    "en": "Georgia.gov",
    "es": "Georgia.gov"
+  },
+  "pickensgaelections.com": {
+   "en": "the Pickens County Board of Elections and Registration",
+   "es": "la junta electoral del condado de Pickens (Board of Elections and Registration)"
   }
  },
  "dates": {
@@ -188,20 +192,45 @@
  },
  "sticker": {
   "tradition": {
-   "en": "Georgia has a new statewide \"I Voted\" sticker for 2026, designed by Georgia artist Steve Penley. The Secretary of State printed five million and is sending them to all 159 counties.",
-   "es": "Georgia tiene un nuevo sticker estatal de \"I Voted\" para 2026, diseñado por el artista georgiano Steve Penley. La Secretaría de Estado imprimió cinco millones y los está enviando a los 159 condados.",
+   "en": "Georgia has a new statewide \"I Voted\" sticker for 2026, designed by Georgia artist Steve Penley. It's round, with the gold dome of the State Capitol painted in front of the Georgia flag and \"I voted\" in white brush letters. Penley said he made a design Georgians can take home with them from the polls. The Secretary of State printed five million and is sending them to all 159 counties.",
+   "es": "Georgia tiene un nuevo sticker estatal de \"I Voted\" para 2026, diseñado por el artista georgiano Steve Penley. Es redondo, con la cúpula dorada del Capitolio estatal pintada frente a la bandera de Georgia y \"I voted\" en letras blancas de pincel. Penley dijo que hizo un diseño que la gente de Georgia puede llevarse a casa desde los lugares de votación. La Secretaría de Estado imprimió cinco millones y los está enviando a los 159 condados.",
    "src": "https://sos.ga.gov/news/georgia-debuts-new-i-voted-sticker-2026-midterm-elections",
-   "checked": "2026-10-28",
+   "checked": "2026-10-31",
    "quote": "Five million stickers featuring the unique design have been printed and will be distributed to all 159 counties across Georgia.",
-   "status": "verified"
+   "status": "verified",
+   "notes": "Oct 31 (pass 8): design described from the official image the release links ('View the new \"I Voted\" Sticker here.', mcusercontent.com PNG, 600x600), read directly; Penley line from the release: 'I'm honored to create a design that Georgians can take home with them from polls'."
   },
   "early": {
-   "en": "Yes. The Secretary of State said voters could get the 2026 sticker starting the first day of early voting, October 13.",
-   "es": "Sí. La Secretaría de Estado dijo que los votantes podían recibir el sticker de 2026 desde el primer día de votación anticipada, el 13 de octubre.",
+   "en": "Yes. Georgia's Secretary of State said voters could get the new 2026 Steve Penley sticker starting the first day of early voting, October 13.",
+   "es": "Sí. La Secretaría de Estado de Georgia dijo que los votantes podían recibir el nuevo sticker de 2026 de Steve Penley desde el primer día de votación anticipada, el 13 de octubre.",
    "src": "https://sos.ga.gov/news/georgia-debuts-new-i-voted-sticker-2026-midterm-elections",
-   "checked": "2026-10-28",
+   "checked": "2026-10-31",
    "quote": "Voters can get the stickers when early voting starts on October 13.",
    "status": "verified"
+  },
+  "more": [
+   {
+    "place": {
+     "en": "Pickens County",
+     "es": "Condado de Pickens"
+    },
+    "kind": "county",
+    "en": "Classes across the county drew custom America 250 I Voted stickers, and voters get one when they vote. One is by Stormi, a sixth grader at Jasper Middle School.",
+    "es": "Grupos escolares de todo el condado dibujaron stickers de I Voted especiales por America 250, y los votantes reciben uno al votar. Uno es de Stormi, estudiante de sexto grado en Jasper Middle School.",
+    "until": "2026-11-03",
+    "en_after": "Classes across the county drew custom America 250 I Voted stickers, and voters got one when they voted in 2026. One is by Stormi, a sixth grader at Jasper Middle School.",
+    "es_after": "Grupos escolares de todo el condado dibujaron stickers de I Voted especiales por America 250, y los votantes recibieron uno al votar en 2026. Uno es de Stormi, estudiante de sexto grado en Jasper Middle School.",
+    "src": "https://pickensgaelections.com/2026-general-election",
+    "quote": "Across Pickens County, classrooms stepped up to celebrate democracy and America 250. Vote to receive one of these custom \"I Voted\" Stickers!",
+    "checked": "2026-10-31",
+    "status": "verified",
+    "notes": "Pickens County Board of Elections and Registration's own site (home page: 'Welcome to Pickens County Board of Elections and Registration', office address 3100 Camp Road, Jasper). Same text on its home page with the credit 'by Stormi Frix, Jasper Middle School 6th Grade'; first name and school only. Lead from Perplexity Deep Research (pass 8). Demand: 0 (no GSC query, no Ahrefs record checked)."
+   }
+  ],
+  "official_url": "https://sos.ga.gov/news/georgia-debuts-new-i-voted-sticker-2026-midterm-elections",
+  "official_by": {
+   "en": "Georgia Secretary of State",
+   "es": "Secretaría de Estado de Georgia"
   }
  },
  "faq": {

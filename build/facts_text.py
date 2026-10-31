@@ -49,10 +49,14 @@ ALLOW_HOSTS = {'goelect.txelections.civixapps.com',
                # County, KS | Official Website"); Perplexity pass 3 confirmed the same.
                'www.camdencounty.com', 'camdencounty.com', 'www.washco-md.net', 'washco-md.net',
                'www.jocoelection.org', 'jocoelection.org', 'www.jocogov.org', 'jocogov.org',
-               'www.mgcountyks.org', 'mgcountyks.org'}
+               'www.mgcountyks.org', 'mgcountyks.org',
+               # Pickens County GA Board of Elections and Registration (home page title and office address read Oct 31)
+               'pickensgaelections.com', 'www.pickensgaelections.com'}
 # An election office's own social account, for an announcement it posted only there (October 30: LA County's
 # Halloween sticker). The account, not the platform, is the source.
-ALLOW_ACCOUNTS = ('https://x.com/LACountyRRCC/',)  # BallotTrax tracker run for the state election office, linked from its own page     # the Champaign County Clerk, who runs elections there  # New Mexico's official statutes (NMSA), published by the NM Compilation Commission  # DC Board of Elections, the District's election office  # Texas My Voter Portal, linked from votetexas.gov/voting/where.html
+ALLOW_ACCOUNTS = ('https://x.com/LACountyRRCC/',
+                  'https://www.facebook.com/Louisianasos/',  # Louisiana Secretary of State's own page (Oct 31, the 2026 sticker post)
+                  'https://www.facebook.com/akelections/',)  # Alaska Division of Elections' own page (Oct 31, early-voting sticker post)  # BallotTrax tracker run for the state election office, linked from its own page     # the Champaign County Clerk, who runs elections there  # New Mexico's official statutes (NMSA), published by the NM Compilation Commission  # DC Board of Elections, the District's election office  # Texas My Voter Portal, linked from votetexas.gov/voting/where.html
 
 # Every fact the template knows, with its kind: text (en/es strings), list (en/es lists), url (a bare
 # string), rule (one of RULES).
@@ -67,6 +71,8 @@ FACTS = {
     'mail.who': 'text', 'mail.who_list': 'list', 'mail.track_url': 'url', 'mail.cure': 'text', 'mail.dropbox': 'text', 'mail.witness': 'text',
     'polls_rules.gear': 'text', 'polls_rules.phone': 'text', 'polls_rules.line': 'text',
     'sticker.tradition': 'text', 'sticker.early': 'text', 'sticker.mail': 'text',
+    'sticker.official_url': 'url',    # the office's own page or post showing the official design, linked (never hosted) under the story (October 31)
+    'sticker.official_by': 'label',   # who shows it, e.g. {"en": "Georgia Secretary of State", "es": "Secretaría de Estado de Georgia"}
     'sticker.lead': 'flag',  # true: the sticker story sits right after the gallery (October 31, Michigan; Clearscope read)
     'sticker.more': 'more',  # county or city sticker stories under the gallery: a list, each entry its own place, source and quote
     'election_day.hours': 'text',

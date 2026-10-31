@@ -11,6 +11,10 @@
   "www.akleg.gov": {
    "en": "Alaska law",
    "es": "la ley de Alaska"
+  },
+  "www.facebook.com": {
+   "en": "the Alaska Division of Elections on Facebook",
+   "es": "la División de Elecciones de Alaska (Division of Elections) en Facebook"
   }
  },
  "dates": {
@@ -199,6 +203,15 @@
    "quote": "Additionally, her artwork will be featured on the Division of Elections' \"I Voted\" stickers for the 2026 election.",
    "notes": "Quote is from the release image (Cover-Art-and-Stickers-791x1024.png, Sept 10, 2026), read in Chrome. Replaced the 2022 youth contest story (https://www.elections.alaska.gov/2022-i-voted-sticker-and-official-election-pamphlet-youth-artwork-contest/).",
    "status": "verified"
+  },
+  "early": {
+   "en": "Yes. During early voting for the November 3, 2026 election, the Alaska Division of Elections told voters to find their early voting location, vote, and get their \"I Voted\" sticker.",
+   "es": "Sí. Durante la votación anticipada para la elección del 3 de noviembre de 2026, la División de Elecciones de Alaska les dijo a los votantes que buscaran su lugar de votación anticipada, votaran y recibieran su sticker de \"I Voted\".",
+   "src": "https://www.facebook.com/akelections/posts/remember-early-voting-is-underway-across-alaska-if-you-want-to-vote-early-find-y/1420496263601916/",
+   "checked": "2026-10-31",
+   "quote": "#remember Early voting is underway across Alaska. If you want to vote early, find your location on our website, vote, and get your \"I Voted\" sticker.",
+   "status": "verified",
+   "notes": "Division of Elections' own Facebook post, October 20, 2026, 2:00 PM, read in Chrome Oct 31 without logging in. Lead from Perplexity (pass 8). Links www.elections.alaska.gov/avo/ for locations."
   }
  },
  "faq": {

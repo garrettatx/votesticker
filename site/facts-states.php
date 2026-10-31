@@ -12,6 +12,10 @@ return array(
 				'en' => 'Alaska law',
 				'es' => 'la ley de Alaska',
 			),
+			'www.facebook.com' => array(
+				'en' => 'the Alaska Division of Elections on Facebook',
+				'es' => 'la División de Elecciones de Alaska (Division of Elections) en Facebook',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Registration closed Sunday, October 4, 2026. Not sure you\'re registered? Check My Voter Portal before you go.',
@@ -120,6 +124,12 @@ return array(
 			'es' => 'Los stickers de I Voted de Alaska para 2026 llevan arte de Amanda Rose Warren, artista de Anchorage y la artista invitada de la División de Elecciones este año. Sus diseños "Under One Aurora" muestran cinco animales por las cinco regiones del estado (una ballena jorobada, un alce, un zorro, un buey almizclero y un oso) bajo la misma aurora, con las banderas de Estados Unidos y de Alaska.',
 			'src' => 'https://www.elections.alaska.gov/division-of-elections-unveils-cover-art-and-stickers-for-2026-election/',
 			'checked' => '2026-10-26',
+		),
+		'sticker.early' => array(
+			'en' => 'Yes. During early voting for the November 3, 2026 election, the Alaska Division of Elections told voters to find their early voting location, vote, and get their "I Voted" sticker.',
+			'es' => 'Sí. Durante la votación anticipada para la elección del 3 de noviembre de 2026, la División de Elecciones de Alaska les dijo a los votantes que buscaran su lugar de votación anticipada, votaran y recibieran su sticker de "I Voted".',
+			'src' => 'https://www.facebook.com/akelections/posts/remember-early-voting-is-underway-across-alaska-if-you-want-to-vote-early-find-y/1420496263601916/',
+			'checked' => '2026-10-31',
 		),
 		'election_day.hours' => array(
 			'en' => 'Polling places are open 7 a.m. to 8 p.m. local time.',
@@ -1888,6 +1898,10 @@ return array(
 				'en' => 'Georgia.gov',
 				'es' => 'Georgia.gov',
 			),
+			'pickensgaelections.com' => array(
+				'en' => 'the Pickens County Board of Elections and Registration',
+				'es' => 'la junta electoral del condado de Pickens (Board of Elections and Registration)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Registration closed Monday, October 5, 2026.',
@@ -1994,17 +2008,36 @@ return array(
 			'checked' => '2026-10-26',
 		),
 		'sticker.tradition' => array(
-			'en' => 'Georgia has a new statewide "I Voted" sticker for 2026, designed by Georgia artist Steve Penley. The Secretary of State printed five million and is sending them to all 159 counties.',
-			'es' => 'Georgia tiene un nuevo sticker estatal de "I Voted" para 2026, diseñado por el artista georgiano Steve Penley. La Secretaría de Estado imprimió cinco millones y los está enviando a los 159 condados.',
+			'en' => 'Georgia has a new statewide "I Voted" sticker for 2026, designed by Georgia artist Steve Penley. It\'s round, with the gold dome of the State Capitol painted in front of the Georgia flag and "I voted" in white brush letters. Penley said he made a design Georgians can take home with them from the polls. The Secretary of State printed five million and is sending them to all 159 counties.',
+			'es' => 'Georgia tiene un nuevo sticker estatal de "I Voted" para 2026, diseñado por el artista georgiano Steve Penley. Es redondo, con la cúpula dorada del Capitolio estatal pintada frente a la bandera de Georgia y "I voted" en letras blancas de pincel. Penley dijo que hizo un diseño que la gente de Georgia puede llevarse a casa desde los lugares de votación. La Secretaría de Estado imprimió cinco millones y los está enviando a los 159 condados.',
 			'src' => 'https://sos.ga.gov/news/georgia-debuts-new-i-voted-sticker-2026-midterm-elections',
-			'checked' => '2026-10-28',
+			'checked' => '2026-10-31',
 		),
 		'sticker.early' => array(
-			'en' => 'Yes. The Secretary of State said voters could get the 2026 sticker starting the first day of early voting, October 13.',
-			'es' => 'Sí. La Secretaría de Estado dijo que los votantes podían recibir el sticker de 2026 desde el primer día de votación anticipada, el 13 de octubre.',
+			'en' => 'Yes. Georgia\'s Secretary of State said voters could get the new 2026 Steve Penley sticker starting the first day of early voting, October 13.',
+			'es' => 'Sí. La Secretaría de Estado de Georgia dijo que los votantes podían recibir el nuevo sticker de 2026 de Steve Penley desde el primer día de votación anticipada, el 13 de octubre.',
 			'src' => 'https://sos.ga.gov/news/georgia-debuts-new-i-voted-sticker-2026-midterm-elections',
-			'checked' => '2026-10-28',
+			'checked' => '2026-10-31',
 		),
+		'sticker.official_url' => 'https://sos.ga.gov/news/georgia-debuts-new-i-voted-sticker-2026-midterm-elections',
+		'sticker.official_by' => array(
+			'en' => 'Georgia Secretary of State',
+			'es' => 'Secretaría de Estado de Georgia',
+		),
+		'sticker.more' => array( array(
+			'place' => array(
+				'en' => 'Pickens County',
+				'es' => 'Condado de Pickens',
+			),
+			'kind' => 'county',
+			'en' => 'Classes across the county drew custom America 250 I Voted stickers, and voters get one when they vote. One is by Stormi, a sixth grader at Jasper Middle School.',
+			'es' => 'Grupos escolares de todo el condado dibujaron stickers de I Voted especiales por America 250, y los votantes reciben uno al votar. Uno es de Stormi, estudiante de sexto grado en Jasper Middle School.',
+			'src' => 'https://pickensgaelections.com/2026-general-election',
+			'checked' => '2026-10-31',
+			'until' => '2026-11-03',
+			'en_after' => 'Classes across the county drew custom America 250 I Voted stickers, and voters got one when they voted in 2026. One is by Stormi, a sixth grader at Jasper Middle School.',
+			'es_after' => 'Grupos escolares de todo el condado dibujaron stickers de I Voted especiales por America 250, y los votantes recibieron uno al votar en 2026. Uno es de Stormi, estudiante de sexto grado en Jasper Middle School.',
+		) ),
 		'election_day.hours' => array(
 			'en' => 'Polling places are open 7 a.m. to 7 p.m. local time.',
 			'es' => 'Los lugares de votación abren de 7 a. m. a 7 p. m., hora local.',
@@ -3388,10 +3421,15 @@ return array(
 			'checked' => '2026-10-21',
 		),
 		'sticker.tradition' => array(
-			'en' => 'Louisiana\'s 2026 I voted sticker has art by New Orleans artist Terrance Osborne. He said he pictured what Louisiana would look like if you could see its sound. It\'s the state\'s sixth I voted sticker and the fifth Louisiana artist in a series that started in 2016 with George Rodrigue\'s Blue Dog.',
-			'es' => 'El sticker de I voted de Louisiana para 2026 tiene arte de Terrance Osborne, artista de New Orleans. Él dijo que imaginó cómo se vería Louisiana si se pudiera ver su sonido. Es el sexto sticker de I voted del estado y el quinto artista de Louisiana en una serie que empezó en 2016 con el Blue Dog de George Rodrigue.',
+			'en' => 'Louisiana\'s 2026 I voted sticker has art by New Orleans artist Terrance Osborne. It\'s round and turquoise, with a gold trumpet, yellow magnolias and Mardi Gras beads above the words I VOTED in purple. He said he pictured what Louisiana would look like if you could see its sound. It\'s the state\'s sixth I voted sticker and the fifth Louisiana artist in a series that started in 2016 with George Rodrigue\'s Blue Dog.',
+			'es' => 'El sticker de I voted de Louisiana para 2026 tiene arte de Terrance Osborne, artista de New Orleans. Es redondo y turquesa, con una trompeta dorada, magnolias amarillas y collares de Mardi Gras sobre las palabras I VOTED en morado. Él dijo que imaginó cómo se vería Louisiana si se pudiera ver su sonido. Es el sexto sticker de I voted del estado y el quinto artista de Louisiana en una serie que empezó en 2016 con el Blue Dog de George Rodrigue.',
 			'src' => 'https://www.sos.la.gov/news-events/secretary-landry-unveils-2026-i-voted-sticker-design',
-			'checked' => '2026-10-28',
+			'checked' => '2026-10-31',
+		),
+		'sticker.official_url' => 'https://www.facebook.com/Louisianasos/posts/here-it-is-the-new-i-voted-sticker-this-artwork-was-created-by-new-orleans-artis/1564587452362831/',
+		'sticker.official_by' => array(
+			'en' => 'Louisiana Secretary of State on Facebook',
+			'es' => 'Secretaría de Estado de Louisiana en Facebook',
 		),
 		'election_day.hours' => array(
 			'en' => 'Polling places are open 6 a.m. to 8 p.m. local time.',
@@ -6408,10 +6446,10 @@ return array(
 			'checked' => '2026-10-21',
 		),
 		'sticker.tradition' => array(
-			'en' => 'For 2026, the Secretary of State unveiled a limited-edition America 250 "I Voted" sticker for the nation\'s 250th birthday. Each of Ohio\'s 88 county boards of elections gets a limited supply for this election. Ohio\'s earlier sticker came from a 2019 contest for students, won by Emily, a senior at Teays Valley High School in Pickaway County.',
-			'es' => 'Para 2026, la Secretaría de Estado presentó un sticker de "I Voted" de edición limitada de America 250 por los 250 años del país. Cada una de las 88 juntas electorales de condado de Ohio recibe una cantidad limitada para esta elección. El sticker anterior de Ohio salió de un concurso para estudiantes en 2019, que ganó Emily, estudiante de último año en Teays Valley High School, en el condado de Pickaway.',
+			'en' => 'For 2026, the Secretary of State unveiled a limited-edition America 250 "I Voted" sticker for the nation\'s 250th birthday. It\'s round, with a red outline of Ohio that reads OHIO VOTED, a gold America ribbon between 1776 and 2026, and a big 250 at the bottom. Each of Ohio\'s 88 county boards of elections gets a limited supply for this election. Ohio\'s earlier sticker came from a 2019 contest for students, won by Emily, a senior at Teays Valley High School in Pickaway County.',
+			'es' => 'Para 2026, la Secretaría de Estado presentó un sticker de "I Voted" de edición limitada de America 250 por los 250 años del país. Es redondo, con el contorno de Ohio en rojo que dice OHIO VOTED, una cinta dorada que dice America entre 1776 y 2026, y un 250 grande abajo. Cada una de las 88 juntas electorales de condado de Ohio recibe una cantidad limitada para esta elección. El sticker anterior de Ohio salió de un concurso para estudiantes en 2019, que ganó Emily, estudiante de último año en Teays Valley High School, en el condado de Pickaway.',
 			'src' => 'https://www.ohiosos.gov/office/media-center/categories/press-releases/2026-06-12',
-			'checked' => '2026-10-28',
+			'checked' => '2026-10-31',
 		),
 		'sticker.early' => array(
 			'en' => 'Yes, while supplies last. If you vote in person, early or on Election Day, you get the America 250 "I Voted" sticker from your county\'s limited supply.',
