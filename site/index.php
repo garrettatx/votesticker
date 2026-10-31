@@ -216,6 +216,7 @@ function vote_meta( $st ) {
 	$name = vote_name( $st );
 	$kind = vote_verified( $st ) ? ( $st['kind'] ?? 'none' ) : 'unchecked';
 	$n = count( vote_files( $st['abbr'] ) );
+	$year = substr( VOTE_ELECTION_DAY, 0, 4 );
 	$save = $n ? ( vote_early_now( $st ) ? 'Save a ready-made I voted or I voted early sticker, or make your own' : 'Save a ready-made I voted sticker or make your own' ) : 'Make your own I voted or vote sticker';
 	// The lead says what to do and the one date that matters (Garrett's review, October 21): no counts, no repeats.
 	$grab = $n ? 'Grab a ready-made sticker or make your own, then set it as your profile picture.' : 'Make your sticker, then set it as your profile picture.';
@@ -288,8 +289,10 @@ function vote_meta( $st ) {
 	return array(
 		'slug' => vote_slug( $st['name'] ),
 		// "I voted sticker" is the term people search (Ahrefs, October 19); long names drop "and Vote" to fit.
-		// Once early voting closes the title names the sticker people still look for (October 25 review).
-		'title' => 'ended' === $kind ? ( strlen( $name . ' I Voted and I Voted Early Stickers: Vote Nov 3' ) > 65 ? $name . ' I Voted Early Stickers: Vote Nov 3' : $name . ' I Voted and I Voted Early Stickers: Vote Nov 3' )
+		// Once early voting closes, the title leads with what Election Day voters type, with the year ("i voted
+		// sticker 2026" lands on state pages; GSC Oct 29 to 31, Garrett's OK Oct 31). "I voted early" stays in the
+		// gallery heading, description and body. No "today" or "tomorrow": Google can show a title days after the crawl.
+		'title' => 'ended' === $kind ? ( strlen( $name . ' I Voted Stickers ' . $year . ': Vote Nov 3' ) > 65 ? $name . ' I Voted Stickers: Vote Nov 3' : $name . ' I Voted Stickers ' . $year . ': Vote Nov 3' )
 			// While early voting is open or coming, the title names the sticker people search for then: "i voted early
 			// sticker" lands on state pages without a state name (GSC Oct 21 to 28, ~400 a week; Garrett's OK Oct 28).
 			: ( 'early' === $family ? ( strlen( $name . ' I Voted and I Voted Early Stickers: ' . preg_replace( '/^Early Voting /', '', $tag ) ) > 62 ? $name . ' I Voted Early Stickers: ' . preg_replace( '/^Early Voting /', '', $tag ) : $name . ' I Voted and I Voted Early Stickers: ' . preg_replace( '/^Early Voting /', '', $tag ) )
@@ -298,7 +301,9 @@ function vote_meta( $st ) {
 		'crumb' => $name,
 		'ribbon' => $ribbon,
 		'lead' => $lead,
-		'desc' => $fact . ' ' . $save . ', sized for the profile-picture circle. Free and nonpartisan.',
+		// Ended states: one line for Election Day voters, one for early voters (Oct 31), no relative dates.
+		'desc' => 'ended' === $kind ? 'Early voting in ' . $name . ' ended ' . vote_day( $st['end'] ) . '. Voting on Election Day, Tuesday, November 3? ' . ( $n ? 'Save a ready-made I voted sticker or make your own.' : 'Make your own I voted sticker.' ) . ' Voted early? Get your I voted early sticker. Free and nonpartisan.'
+			: $fact . ' ' . $save . ', sized for the profile-picture circle. Free and nonpartisan.',
 		'status' => $status,
 		'family' => $family,
 		'name' => $st['name'],
@@ -314,6 +319,7 @@ function vote_meta_es( $st ) {
 	$name = vote_name( $st );
 	$kind = vote_verified( $st ) ? ( $st['kind'] ?? 'none' ) : 'unchecked';
 	$n = count( vote_files( $st['abbr'] ) );
+	$year = substr( VOTE_ELECTION_DAY, 0, 4 );
 	$save = $n ? 'Guarda un sticker listo para usar o crea el tuyo' : 'Crea tu propio sticker';
 	$grab = $n ? 'Toma un sticker listo para usar o crea el tuyo, y ponlo de foto de perfil.' : 'Crea tu sticker y ponlo de foto de perfil.';
 	if ( 'post' === vote_phase() ) {
@@ -373,12 +379,13 @@ function vote_meta_es( $st ) {
 	}
 	return array(
 		'slug' => vote_slug( $st['name'] ),
-		'title' => 'ended' === $kind ? 'Stickers de Yo voté y Yo voté temprano en ' . $name . ': vota el 3 nov' : ( 0 === strpos( $tag, 'votación anticipada' ) ? 'Stickers de Yo voté temprano en ' . $name . ': ' . $tag : 'Stickers para votar en ' . $name . ': ' . $tag ),
+		'title' => 'ended' === $kind ? 'Stickers de Yo voté ' . $year . ' en ' . $name . ': vota el 3 nov' : ( 0 === strpos( $tag, 'votación anticipada' ) ? 'Stickers de Yo voté temprano en ' . $name . ': ' . $tag : 'Stickers para votar en ' . $name . ': ' . $tag ),
 		'h1' => 'Stickers para votar en ' . $name,
 		'crumb' => $name,
 		'ribbon' => $ribbon,
 		'lead' => $lead,
-		'desc' => $fact . ' ' . $save . ', del tamaño del círculo de la foto de perfil. Gratis y no partidista.',
+		'desc' => 'ended' === $kind ? 'La votación anticipada en ' . $name . ' terminó el ' . vote_day( $st['end'] ) . '. ¿Votas el Día de las Elecciones, martes 3 de noviembre? ' . ( $n ? 'Guarda un sticker de Yo voté listo para usar o crea el tuyo.' : 'Crea tu sticker de Yo voté.' ) . ' ¿Votaste por anticipado? Toma tu sticker de Yo voté temprano. Gratis y no partidista.'
+			: $fact . ' ' . $save . ', del tamaño del círculo de la foto de perfil. Gratis y no partidista.',
 		'status' => $status,
 		'family' => 'ended' === $kind ? 'early_over' : $kind,
 		'name' => $name,
@@ -1146,7 +1153,8 @@ $vote_page = $vote_st ? $vote_meta[ $vote_abbr ] : array(
 	// October 26: title and H1 name what people search for ("i voted stickers by state", "i voted early sticker");
 	// the brand line moved to the eyebrow. After Election Day the home page leads with the sticker
 	// (docs/post-election-release.md); the title stays.
-	'title' => t( 'Free I Voted and I Voted Early Stickers by State | Vote Sticker' ),
+	// Oct 31: the year through the election and after it ("i voted sticker 2026"); never between elections.
+	'title' => t( vote_between() ? 'Free I Voted and I Voted Early Stickers by State | Vote Sticker' : 'Free I Voted and I Voted Early Stickers 2026 by State | Vote Sticker' ),
 	'h1' => t( vote_between() ? 'Free I voted stickers for every state' : ( 'post' === vote_phase() ? 'Voted? Get your sticker.' : 'Free I voted stickers for every state' ) ),
 	'eyebrow' => t( 'post' === vote_phase() ? 'Free voting stickers by state' : 'Make a voting plan. Share the sticker.' ),
 	'lead' => t( 'post' === vote_phase() ? 'Pick your state, choose a design and save it. Get an I voted, I voted early or I voted by mail sticker, or make your own.' : 'Make an I voted sticker or share your state’s voting dates, sized for your profile picture or a post.' ),

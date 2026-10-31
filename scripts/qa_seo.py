@@ -114,7 +114,9 @@ def main():
         pg = Page()
         pg.feed(html)
         pages[p] = pg
-        if not pg.title or len(pg.title) > 65:
+        # 65 characters before the brand suffix (Oct 31: the home title added the year and kept the brand; Google
+        # shows the site name on its own, so a cut-off brand costs nothing) and 80 in all.
+        if not pg.title or len(pg.title.removesuffix(' | Vote Sticker')) > 65 or len(pg.title) > 80:
             fail(f'/{p}: title length {len(pg.title)}: {pg.title!r}')
         d = pg.meta.get('description', '')
         if not 70 <= len(d) <= 230:

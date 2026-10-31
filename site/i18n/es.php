@@ -501,6 +501,7 @@ return array(
 		'Your sticker is made on your device and is never uploaded. We use basic, anonymous page analytics to see which state pages people visit.' => 'Tu sticker se hace en tu dispositivo y nunca se sube. Usamos analítica básica y anónima para ver qué páginas de estado visita la gente.',
 		'Privacy and Accessibility' => 'Privacidad y accesibilidad',
 		'Free I Voted and I Voted Early Stickers by State | Vote Sticker' => 'Stickers gratis de Yo voté y Yo voté temprano por estado | Vote Sticker',
+		'Free I Voted and I Voted Early Stickers 2026 by State | Vote Sticker' => 'Stickers gratis de Yo voté y Yo voté temprano 2026 por estado | Vote Sticker',
 		'Free I voted, I voted early and vote early stickers for every state. Pick yours, save a ready-made PNG or make your own for your profile picture, with official links for early voting, mail ballots and Election Day.' => 'Stickers gratis de Yo voté, Yo voté temprano y Vota temprano para cada estado. Elige el tuyo, guarda un PNG listo para usar o haz el tuyo para tu foto de perfil, con enlaces oficiales sobre votación anticipada, boletas por correo y el Día de las Elecciones.',
 		'Early voting is underway in %s states.' => 'La votación anticipada ya empezó en %s estados.',
 		'Early voting is underway in one state.' => 'La votación anticipada ya empezó en un estado.',
