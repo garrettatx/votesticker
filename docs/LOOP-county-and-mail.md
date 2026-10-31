@@ -37,9 +37,10 @@ last-minute answer for their state, both from an official source.
 | 2 | **Last-minute mail answers for every state**: "Is it too late to mail my ballot?", "How do I track my mail ballot?", "My name isn't on the list" (provisional ballot). Done for TX, NC, FL Oct 29. Postmark vs. receipt, and where to hand it in, vary by state | Election-week searches Nov 1 to 3; a wrong generic answer can cost a vote | Pass 2 Oct 30: 23 states filled or fixed. Pass 3 Oct 30: name-not-on-the-list answers for MN MS NH (new) and TN SC NJ NE NV IA (stronger); trackers for IL (county list), IN and SD (statewide; pass 2 had them wrong as missing). Left: MO tracker (local only), ME and IN provisional lines |
 | 3 | Open fact calls before the Nov 2 banner: NJ cure deadline (timeline vs. poster); ID affidavit routes AK AZ IA ND OK WY; ALLOW_HOSTS for official county sites on .com/.org (Camden NJ, Washington County MD, Johnson and Montgomery County KS) | Possible wrong answers on the busiest day | Pass 3 Oct 30: ID routes fixed (WY was wrong, ND incomplete; AK AZ IA OK right); ALLOW_HOSTS added; AR conflict gone (SOS FAQ now agrees); NJ left as is (Garrett) |
 | 4 | Spanish wording decided by evidence: "lugar de votación" vs. "casilla"; "Ya voté" vs. "Yo voté" on stickers. What official U.S. Spanish election pages and stickers say, plus Spanish search volume (Ahrefs US, GSC). Recommendation to Garrett, then apply | Open questions in `docs/spanish-style.md` | Open |
-| 5 | Michigan page order: official 2026 designs right after our gallery; trim repeated voting facts | Clearscope Michigan read | Open |
+| 5 | Michigan page order: official 2026 designs right after our gallery; trim repeated voting facts | Clearscope Michigan read | Done Oct 31 (pass 4): `sticker.lead`, story after the gallery, four repeats trimmed |
 | 6 | After Nov 3: each state's official results page link and certification date where the state publishes one | Nov 4 to 10 searches | Nov 4 to 5 |
 | 7 | History: notable designs prompt (not run Oct 29) | "i voted sticker history" 133 impressions at 8.7 | After Nov 3 |
+| 8 | Election Day readiness audit: every state's Nov 2 and Nov 3 banner, hours, line rule, lookup, ID, mail return and same-day registration, EN and ES, against official sources | Nov 2 to 3 is the busiest stretch; a wrong hour or a stale "through Nov 2" costs trust or a vote | Done Oct 31 (pass 4): 20 states fixed for Nov 2 and 3, AZ and NC content gaps, AL NM ND line answers, ME IN not-on-the-list lines |
 
 ## Log
 
@@ -318,7 +319,7 @@ home page) into the project, one at a time with each row's "..." menu, Add to pr
 voting thread in the Library now sits in the project; the non-voting ones (MVNO spam calls, piercing link building,
 GoDaddy staging, catfish food, outreach strategy, Freelance Finder work) stay where they are.
 
-**Next (after the Sunday Nov 1, 7 p.m. freeze: fact fixes and content inside existing slots only).**
+**Next (superseded by the pass 4 Next list below).**
 - Nov 1: index snapshot (`archive_search.py --index`); daily ended-early-voting check.
 - Nov 2: reread the Kansas advance voting page (court order); dispatch the build by hand if none by 7 a.m.; banner check.
 - Nov 4: post-election build deployed by 7 a.m. (dispatch with `2026-11-04` if not); spot-check EN and ES.
@@ -328,3 +329,125 @@ GoDaddy staging, catfish food, outreach strategy, Freelance Finder work) stay wh
 - Item 6: results certification per state after Nov 3 (`dates.certify` proposal; each date read on the state's own page).
 - Item 7: history, notable designs prompt.
 - NYC's 2026 Halloween, Marathon and Future Voter stickers: recheck vote.nyc and the BOE for an official post.
+
+### October 31: Pass 4, Election Day Readiness Audit
+
+**Goal.** Every state page right for a voter on Nov 2 and 3. Pulled first (one daily-build commit behind). Item 8 added.
+
+**Method.** Built with `VOTE_TODAY=2026-11-02` and `2026-11-03` and extracted each state's banner, summary-box hours,
+poll-hours, line, registration, ID and late-mail answers, EN and ES, into one table
+(`docs/research/eday-audit-20261031/extract-20261102.md`). Nov 2 and Nov 3 differ only in the state list and three
+mail-deadline answers. A clause-level date scan (scratch script) found what `qa_stale.py` misses: it skips any
+sentence containing "closed" or "was", so clauses like Minnesota's "register when you vote early in person through
+November 2" never showed. Curl on all 55 banner lookup URLs; the 13 that block curl were opened in Chrome.
+
+**Research.** Perplexity project "VoteSticker.org Research", six prompts (g1 to g6: 9 or 10 states each, the five
+mail states on their own), poll hours, time zones, line rule, lookup URL, vote centers vs. precincts, same-day
+registration, and changes Oct 24 to 31. Deep Research: picked once from the "+" menu for g1; no lock appeared this
+time, but the run "Finished 1m 26s", like a standard search. The other five ran in Search (45 s to 1 m 24 s, 103 to
+271 sources). The mode pill reset to Computer on each project-page load; every send was checked on a zoomed
+screenshot showing Search first, and nothing ran in Computer. get_page_text stops at about 10,000 characters;
+removing the sections already read from the page and reading again gets the rest. One attempt to post the answer
+text to a local receiver on 127.0.0.1 hung (Chrome holds such requests for a local-network permission, which wasn't
+granted); stopped. Condensed answers in `answer-g1.md` to `answer-g6.md`; prompts in `prompts.md`. No Firecrawl.
+
+**Audit table summary** (full table in `audit-summary.md`):
+
+| Check | States checked | What was wrong | Fixed |
+|---|---|---|---|
+| Poll hours and time zones | 51 (EN, ES) | Nothing; hours and splits match the official sources | None needed |
+| Line at closing | 51 | AL, MT, NM, ND, SD had no answer | AL, NM, ND added; MT, SD logged |
+| Lookup links | 55 URLs | AZ's button opened the general Voters page; NH shows a CAPTCHA to automated Chrome | AZ fixed; NH left (a person passes it) |
+| Past-dated text on Nov 2 or 3 | 102 pages | 20 states (below) | All fixed |
+| Same-day registration | 51 | NC missing the newly-eligible exception | Fixed |
+| Mail return on Election Day | 51 | AL CT LA NH OK late-mail answers said "It may be" on Nov 3 | Fixed |
+| ID | 51 | Nothing (matches pass 3) | None |
+| Past 7 days | 51 | No court order, extended hours, deadline change or outage; AZ flooding notice; NM weather closure (resolved Oct 26) | AZ notice added |
+
+**Fixes, with sources** (every one EN and ES; `qa_stale` Nov 2 30 to 26, Nov 3 24 to 15, the rest open windows or
+past tense):
+- Where You Can Vote after early voting ends: OH (Nov 1), KY (Oct 31), WV (Oct 31), MO (Nov 2), WY (Nov 2). Text from
+  each state's existing verified fact; no new facts.
+- Poll-hour answers: NJ and NY dropped "early voting runs October 24 to November 1" from Nov 2.
+- Registration answers: CT (same day only on Election Day from Nov 2), MN (polling place only on Nov 3), MA (new-citizen
+  window ended Nov 2), MO (military window ended Oct 30; stale since this morning).
+- Mail return and late mail: SC (early-voting-center drop-off ended Oct 31), CT, AL, OK (hand delivery ended Nov 2),
+  NH, LA ("Yes, for most voters"; military, overseas and hospitalized until 8 p.m.). NY mail.who (in-person
+  applications closed Nov 2). LA cure (deadline was Nov 2).
+- Second stage for after-text that names a later date (`until2`, `en_after2`, `es_after2`; `vote_fact` and
+  `facts_text.py`, guard mutation-tested): OH, NY, MA, LA mail requests; KY early voting; MA in-person absentee.
+- North Carolina: ncsbe.gov "10 Tips for Election Day Voters" (Oct 30, curl): "Voter registration is not permitted on
+  Election Day. While that is the general rule, voters who become eligible after the regular voter registration
+  deadline (Oct. 9), either due to becoming a U.S. citizen or having their rights restored following a felony
+  conviction, are permitted to register on Election Day." The registration after-text now says so; FAQ after-items
+  can carry their own source (`src_after`, `vote_faq_src`).
+- Arizona: `where.locator_url` to azsos.gov/elections/voting-locations ("2026 November 3rd General Election Voting
+  Locations", every county's Election Day locations, read in Chrome), and the page's notice in Where You Can Vote:
+  "Important: Flooding may affect roads and access to voting locations. Check for updates before traveling."
+- Line at closing (`faq.line`): AL (2026 Polling Official Guide PDF: "All voters who are in line to vote at 7:00 pm
+  shall be permitted to vote before closing the polling place."), NM (Voter Bill of Rights: "Cast a ballot if you are
+  in line to vote when the polls close"), ND (N.D.C.C. 16.1-01-03: "All electors standing in line to vote at the time
+  the polls are set to close must be allowed to vote").
+
+**Item 3 extras (small open items).**
+- Maine "not on the list": provisional answer now starts with Election Day registration. Voter guide on maine.gov:
+  "Registering in person: Close of the polls on Election Day." 21-A §122(4) read on legislature.maine.gov ("The
+  registrar shall accept registrations of applicants who appear in person on election day").
+- Indiana "not on the list": in.gov provisional page: "A provisional ballot allows you to cast a vote if: There is a
+  question about your qualification to vote in the precinct (for example, you are not on the poll book), which is not
+  resolved by a fail-safe procedure".
+- NYC 2026 Halloween, Marathon and Future Voter stickers: vote.nyc home and news pages have nothing; WebSearch finds
+  only Time Out (Oct 26) and NY1 (Oct 26). No official page or office post found; not shipped. Both days are early
+  voting days (Oct 31, Nov 1), so the entry would be past tense by Nov 2 anyway.
+
+**Item 5, Michigan page order.** New optional facts flag `sticker.lead` (kind `flag`, must be `true`; guard
+mutation-tested): the state's sticker story section renders right after its gallery (after the two-path panel and
+any county list) instead of after Key Dates. `vote_sticker_story()` is the same section the guide built before, so
+every other state renders exactly as before (Utah's live and local text compared: identical). app.js hides it with
+the two-path panel when the maker switches to another state. Michigan now reads: gallery, "Michigan and the I Voted
+Sticker" (the nine 2026 contest winners, the Northville mail-packet answer), then the maker, summary box and guide.
+Same title and H1 (checked against live), same facts. Trimmed repeats: the early-voting window was in the summary
+box, Key Dates and Where You Can Vote (now box and Key Dates); Election Day hours were in the box and Where You Can
+Vote (now box, FAQ and the line rule); "some add days" twice (once now); the cure deadline in Key Dates and again in
+Who Can Vote by Mail (Key Dates only). Where You Can Vote gets after-wording for Nov 3. Screenshots at 390 and 1280
+px, EN and ES: no horizontal scroll, the section matches the other guide sections.
+
+**QA.** Full suite before each push: qa_facts, qa_es (`--base` local), qa_seo `--no-legacy` (local), qa_events,
+qa_save, qa_cards (78,240 cards each in Chromium and WebKit, 0 outside the circle), qa_stale for Oct 31 (30, open
+windows), Nov 2 (26) and Nov 3 (15). One card run reported 10 "finder missing or too narrow" failures at phone
+widths, home page included: I had rebuilt `dist/` with Nov 2 and 3 dates while it ran. Rerun on a stable build of
+the commit (worktree, port 8793): PASS. Lesson: don't rebuild `dist/` while card QA is serving it.
+
+**Push 1 (audit fixes, commit 0b48307, about 12:56 p.m.).** Run 41226929314 succeeded; live QA passed on the first
+try (no retry needed); IndexNow HTTP 200, 16 URLs (most fixes are dated after-text that first renders Nov 1 to 3, so
+the daily builds submit those pages then). Live: Arizona EN and ES show the Voting Locations link and the flooding
+line, Alabama the line answer, Spanish Maine and Indiana the not-on-the-list lines.
+
+**Push 2 (Michigan, commit 05f35c0, about 1:08 p.m.).** Run 41227551367 succeeded; live QA first try; IndexNow
+HTTP 200, 104 URLs (the app.js change moves every page's hash). Live: Michigan EN and ES run gallery, official 2026
+designs, maker.
+
+**Open Fact Calls.**
+- Montana line rule: only Election Directive 04-08 (old) found; no 2026 page read. No answer added.
+- South Dakota line rule: the sentence on sdsos.gov's college-students page sits inside an HTML comment, so voters
+  don't see it; not used.
+- New Hampshire lookup (app.sos.nh.gov) shows a slider CAPTCHA to automated Chrome; a person passes it. Link kept.
+  Perplexity also names app.sos.nh.gov/statelistclerkandpolling (polling places and hours); not read.
+- NYC 2026 Halloween and Marathon stickers: news only (Time Out, NY1), no office page or post found.
+- Time zone county lists (MI, NE, ND, SD, TN, TX, KY): no complete official list; pages say "local time" or name
+  both zones, which the sources support.
+- Perplexity lead not checked: Arkansas' exact in-line wording (our answer cites the SOS; unchanged).
+
+**Next (after the Sunday Nov 1, 7 p.m. freeze: fact fixes and content inside existing slots only).**
+- Nov 1: index snapshot (`archive_search.py --index`); daily ended-early-voting check; confirm the Nov 1 build submits
+  the pages whose Nov 1 after-text turns on (OH, NJ, NY, CT, NC).
+- Nov 2: reread the Kansas advance voting page (court order) and Arizona's Voting Locations notice (flooding); dispatch
+  the build by hand if none by 7 a.m.; banner check on 5 states EN and ES; run the clause scan
+  (`docs/research/eday-audit-20261031/audit-summary.md` method) on the live pages.
+- Nov 3: spot-check AL, CT, LA, NH, OK late-mail answers read "Yes, by mail" and MN, MA registration answers.
+- Nov 4: post-election build deployed by 7 a.m. (dispatch with `2026-11-04` if not); spot-check EN and ES, Michigan's
+  lead section included.
+- Nov 5: remove the `30 6 4 11 *` cron; log the release in `docs/change-log.csv`.
+- Consider teaching `qa_stale.py` the clause split (it skips any sentence containing "closed", "was" or "ended").
+- Item 4: Spanish wording ("lugar de votación" vs "casilla", "Ya voté" vs "Yo voté"), decided by evidence.
+- Item 6: results certification per state after Nov 3. Item 7: history, notable designs prompt.
