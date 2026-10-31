@@ -662,3 +662,113 @@ post-election share cards above were the one time-sensitive find.
   lead section included.
 - Nov 5: remove the `30 6 4 11 *` cron; log the release in `docs/change-log.csv`.
 - Item 6: results certification per state. Item 7: history, notable designs prompt.
+
+### October 31: Pass 7, Election Day Titles
+
+**Goal.** Garrett approved, Oct 31: titles for states where early voting has ended lead with what Election Day voters
+search, with the year, and the home title adds 2026. Text in existing slots; shipped today, ahead of the Sunday freeze,
+because of crawl lag.
+
+**Evidence (GSC, Thu-Fri Oct 29 to 30 vs Oct 22 to 23).** Site clicks 212 to 626, impressions 1,952 to 6,230, average
+position flat (5.4 to 5.3): mostly election-week demand. The Oct 26 home title change (added "I Voted Early") was the
+clearest win: home clicks 5 to 34, and "i voted early sticker" is now the top query (159 impressions Oct 29 to 31).
+Election Day searchers drop "early": "i voted sticker 2026" 79 impressions at 8.9 (lands on state pages; the home title
+had no year), "voting sticker" 60 at 7.3, "i voted" 40 at 9.2, "i voted today sticker" 18 at 8.8, "where can i get an i
+voted sticker" 7 at 8.1, "i voted by mail sticker" 5 at 8.4. State + year queries ("texas i voted sticker 2026",
+"california i voted sticker 2026") already rank 2.5 to 5.5 where the page names 2026 in the content.
+
+**A correction to the brief.** The ended-state fallback (over 65 characters, drop "I Voted and") never fired: the
+longest ended title, North Carolina's, was 61. The fallback that drops "I Voted" is in the open-window branch (62
+characters): Washington, DC ("Washington, DC I Voted Early Stickers: Oct 26–Nov 1"), Rhode Island and South Dakota
+read that way until their windows close (DC Nov 2, RI and SD Nov 3). Left alone per the brief (open-window titles
+unchanged); it ends on its own.
+
+**Changes (`site/index.php`, `site/i18n/es.php`).**
+- Ended states (`'ended' === $kind`): "[State] I Voted Stickers 2026: Vote Nov 3"; ES "Stickers de Yo voté 2026 en
+  [State]: vota el 3 nov" (English state names). The year comes from `VOTE_ELECTION_DAY`. The 65-character fallback
+  stays ("[State] I Voted Stickers: Vote Nov 3") and keeps "I Voted"; no state reaches it (longest: Washington, DC, 48).
+  "I voted early" stays in the gallery heading, description and body. No "today" or "tomorrow".
+- Ended descriptions: "Early voting in Texas ended Friday, October 30. Voting on Election Day, Tuesday, November 3? Save
+  a ready-made I voted sticker or make your own. Voted early? Get your I voted early sticker. Free and nonpartisan." ES:
+  "La votación anticipada en Texas terminó el viernes 30 de octubre. ¿Votas el Día de las Elecciones, martes 3 de
+  noviembre? Guarda un sticker de Yo voté listo para usar o crea el tuyo. ¿Votaste por anticipado? Toma tu sticker de Yo
+  voté temprano. Gratis y no partidista." Absolute dates only, so it reads right Nov 1 to 3. EN 159 to 222 characters.
+- Home: "Free I Voted and I Voted Early Stickers 2026 by State | Vote Sticker" (68; 53 before the brand). Garrett's second
+  option without the comma, so "I Voted Early Stickers 2026" stays one phrase. ES "Stickers gratis de Yo voté y Yo voté
+  temprano 2026 por estado | Vote Sticker". `vote_between()` keeps the old title with no year (checked with
+  VOTE_BETWEEN=1). From Nov 4 the home keeps the 2026 title, which still reads right after voting.
+- `scripts/qa_seo.py`: titles may be 65 characters before " | Vote Sticker" and 80 in all (was 65 in all). Deliberate:
+  the home title is the only one past 65, and Google shows the site name separately.
+- og:title, twitter:title (none set; it falls back to og:title) and the JSON-LD names read `$vote_page['title']`; every
+  page's og:title equals its title on all five dated builds.
+
+**Before and after (live today, 12 ended states and home).**
+
+| Page | EN before | EN after | ES before | ES after |
+|---|---|---|---|---|
+| Home | Free I Voted and I Voted Early Stickers by State \| Vote Sticker | Free I Voted and I Voted Early Stickers 2026 by State \| Vote Sticker | Stickers gratis de Yo voté y Yo voté temprano por estado \| Vote Sticker | Stickers gratis de Yo voté y Yo voté temprano 2026 por estado \| Vote Sticker |
+| Arizona | Arizona I Voted and I Voted Early Stickers: Vote Nov 3 | Arizona I Voted Stickers 2026: Vote Nov 3 | Stickers de Yo voté y Yo voté temprano en Arizona: vota el 3 nov | Stickers de Yo voté 2026 en Arizona: vota el 3 nov |
+| Georgia | Georgia I Voted and I Voted Early Stickers: Vote Nov 3 | Georgia I Voted Stickers 2026: Vote Nov 3 | Stickers de Yo voté y Yo voté temprano en Georgia: vota el 3 nov | Stickers de Yo voté 2026 en Georgia: vota el 3 nov |
+| Idaho | Idaho I Voted and I Voted Early Stickers: Vote Nov 3 | Idaho I Voted Stickers 2026: Vote Nov 3 | Stickers de Yo voté y Yo voté temprano en Idaho: vota el 3 nov | Stickers de Yo voté 2026 en Idaho: vota el 3 nov |
+| Louisiana | Louisiana I Voted and I Voted Early Stickers: Vote Nov 3 | Louisiana I Voted Stickers 2026: Vote Nov 3 | Stickers de Yo voté y Yo voté temprano en Louisiana: vota el 3 nov | Stickers de Yo voté 2026 en Louisiana: vota el 3 nov |
+| Maine | Maine I Voted and I Voted Early Stickers: Vote Nov 3 | Maine I Voted Stickers 2026: Vote Nov 3 | Stickers de Yo voté y Yo voté temprano en Maine: vota el 3 nov | Stickers de Yo voté 2026 en Maine: vota el 3 nov |
+| Maryland | Maryland I Voted and I Voted Early Stickers: Vote Nov 3 | Maryland I Voted Stickers 2026: Vote Nov 3 | Stickers de Yo voté y Yo voté temprano en Maryland: vota el 3 nov | Stickers de Yo voté 2026 en Maryland: vota el 3 nov |
+| Massachusetts | Massachusetts I Voted and I Voted Early Stickers: Vote Nov 3 | Massachusetts I Voted Stickers 2026: Vote Nov 3 | Stickers de Yo voté y Yo voté temprano en Massachusetts: vota el 3 nov | Stickers de Yo voté 2026 en Massachusetts: vota el 3 nov |
+| Nevada | Nevada I Voted and I Voted Early Stickers: Vote Nov 3 | Nevada I Voted Stickers 2026: Vote Nov 3 | Stickers de Yo voté y Yo voté temprano en Nevada: vota el 3 nov | Stickers de Yo voté 2026 en Nevada: vota el 3 nov |
+| Pennsylvania | Pennsylvania I Voted and I Voted Early Stickers: Vote Nov 3 | Pennsylvania I Voted Stickers 2026: Vote Nov 3 | Stickers de Yo voté y Yo voté temprano en Pennsylvania: vota el 3 nov | Stickers de Yo voté 2026 en Pennsylvania: vota el 3 nov |
+| Tennessee | Tennessee I Voted and I Voted Early Stickers: Vote Nov 3 | Tennessee I Voted Stickers 2026: Vote Nov 3 | Stickers de Yo voté y Yo voté temprano en Tennessee: vota el 3 nov | Stickers de Yo voté 2026 en Tennessee: vota el 3 nov |
+| Texas | Texas I Voted and I Voted Early Stickers: Vote Nov 3 | Texas I Voted Stickers 2026: Vote Nov 3 | Stickers de Yo voté y Yo voté temprano en Texas: vota el 3 nov | Stickers de Yo voté 2026 en Texas: vota el 3 nov |
+| Utah | Utah I Voted and I Voted Early Stickers: Vote Nov 3 | Utah I Voted Stickers 2026: Vote Nov 3 | Stickers de Yo voté y Yo voté temprano en Utah: vota el 3 nov | Stickers de Yo voté 2026 en Utah: vota el 3 nov |
+
+**Flip schedule (dated builds, VOTE_TODAY).** Each state keeps its window title ("[State] I Voted and I Voted Early
+Stickers: Oct 19–Nov 2") while its window is open and takes the new pattern the day after it closes, EN and ES.
+- Nov 1 build: FL, KY, NM, NC, OK, SC, VA, WV switch (20 ended). Still open: AK, AR, CT, DE, DC, IL, IN, IA, KS, MI, MN,
+  MO, MT, NE, NJ, NY, ND, OH, RI, SD, VT, WI, WY.
+- Nov 2 build: CT, DE, DC, MI, NJ, NY, OH, WI switch (28). Still open: AK, AR, IL, IN, IA, KS, MN, MO, MT, NE, ND, RI,
+  SD, VT, WY.
+- Nov 3 build: those 15 switch (43 ended); no state open.
+- Not changed: mail states (CA, CO, HI, OR, WA: "Vote by Mail, Due Nov 3") and Election Day-only states (AL, MS, NH).
+- Nov 4 (post): titles go back to "[State] I Voted and I Voted Early Stickers" / "... I Voted by Mail Stickers" / "[State]
+  I Voted Stickers", ES "Stickers de Yo voté y Yo voté temprano en [State]". Nothing says "Vote Nov 3" or "Early" in a
+  stale way ("I voted early" is a post-election search). They carry no year; the home does. Left as is.
+
+**Last crawl before the push (URL Inspection API, 4:45 p.m. Central, times UTC).** Home Oct 31 14:32; TX Oct 31 21:06;
+CA Oct 31 19:04; FL Oct 31 18:03; NC Oct 31 15:03; MD Oct 28 18:02; NY Oct 31 19:04; OR Oct 31 19:35; WA Oct 31 16:01;
+IL Oct 31 03:59; OH Oct 31 02:31; GA Oct 30 10:01; LA Oct 30 15:08; AK Oct 31 18:34; PA Oct 31 20:00; MA Oct 31 17:00;
+AZ Oct 30 19:56; TN Oct 30 19:20; /es/ Oct 30 19:54; /es/texas/ Oct 30 17:28. Read: the top pages are crawled about
+daily (13 of 18 English pages within 24 hours); Maryland was the slowest at three days. A title change should reach the
+crawl within a day on the big pages; the shown title can lag further.
+
+**QA (local on 8792, before the push).** facts (51 states, 102 pages), Spanish (54 pairs), SEO `--no-legacy` (54
+pages, 1,049 links), events, save, cards (78,240 each in Chromium and WebKit, 0 outside the circle): all pass.
+`qa_stale.py`: 0 STALE on 10-31 (107 WINDOW), 11-01 (78), 11-02 (41), 11-03 (5), 11-04 (0). No duplicate titles or
+descriptions on any dated build; no em dashes.
+
+**Push (commit 6156083, 5:02 p.m.).** The push didn't start a build; dispatched run 41246381357: success, live QA
+passed, IndexNow HTTP 200; build records commit fddd3eb. Live (curl): home "Free I Voted and I Voted Early Stickers 2026
+by State | Vote Sticker"; Texas, Massachusetts, Maryland "[State] I Voted Stickers 2026: Vote Nov 3"; North Carolina
+still "North Carolina I Voted and I Voted Early Stickers: Oct 15–31" (its window ends today; flips in the Nov 1 build);
+Alaska (open) "Alaska I Voted and I Voted Early Stickers: Oct 19–Nov 2"; /es/texas/ "Stickers de Yo voté 2026 en Texas:
+vota el 3 nov"; /es/ "Stickers gratis de Yo voté y Yo voté temprano 2026 por estado | Vote Sticker".
+
+**Request Indexing (Chrome, Garrett's Search Console, about 5:10 to 5:30 p.m.).** "Indexing requested" for 9 URLs: home,
+Texas, Maryland, Louisiana, Tennessee, Utah, Massachusetts, Arizona, Pennsylvania (the ended states by 8-day
+impressions: TX 1,599, MD 560, LA 379, TN 301, UT 274, MA 212, AZ 206, PA 156). The 10th, /es/texas/, answered
+"Something went wrong. If the issue persists, try again in a few hours." on inspection: likely the daily quota, so I
+stopped. No CAPTCHA.
+
+**Read-back plan.**
+- Nov 5 (Nov 1 to 4 vs Oct 25 to 28) and Nov 12 (Nov 1 to 10 vs Oct 22 to 31): position, clicks and impressions for "i
+  voted sticker 2026", "i voted sticker", "i voted stickers", "voting sticker", "i voted today sticker" and "[state] i
+  voted sticker" (+ "2026") on the 12 states changed today and the 31 that changed Nov 1 to 3; split home vs state pages.
+  Also check that "i voted early sticker" on the home page held (the home title still has it). Remember Election Day
+  demand inflates every raw count: compare position and CTR, not clicks alone.
+- Check on Nov 2 which titles Google shows (site: search or GSC) against the crawl times above.
+
+**Open.**
+- /es/texas/ Request Indexing: retry Nov 1.
+- Nov 1 after the 6:05 a.m. build: Request Indexing for the states that switch that day, by impressions (FL 1,067, NC
+  677, SC 259, VA 196, NM 156, OK 121) and /es/texas/.
+- DC, RI and SD open-window titles drop "I Voted" until their windows close (not changed, per the brief).
+
+**Next.** Pass 6's list stands, plus the two Request Indexing items above.
