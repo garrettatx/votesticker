@@ -21,6 +21,10 @@ from other sites linking to and writing about this one.
 - **Say what the site isn't**: not a government site, and the stickers aren't official or proof of voting.
 - **Personal pitches over wire blasts**: a short note to a reporter who covers the topic beats a mass release.
 - **The release lives on our own site first**, and anything else points back to it.
+- **History claims (Perplexity check, Oct 31)**: 1920 is "the earliest example we found", never "the first" or
+  "the true origin", in the release, posts and pitches. Older "I Have Voted" references (1950 Miami) exist, and the
+  Phoenix Realtors' "first in the country" claim is never repeated as fact. Boudreau (1987) and Phoenix (1985) are
+  independently corroborated; 1920, 1962 and 1966 are our research, so say "VoteSticker.org traced".
 - **No faked mentions**: no planted forum posts, no paid "citation campaigns".
 
 ## What We Change or Drop
