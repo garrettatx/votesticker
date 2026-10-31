@@ -1163,8 +1163,8 @@ $vote_page = $vote_st ? $vote_meta[ $vote_abbr ] : array(
 	'title' => t( vote_between() ? 'Free I Voted and I Voted Early Stickers by State | Vote Sticker' : 'Free I Voted and I Voted Early Stickers 2026 by State | Vote Sticker' ),
 	'h1' => t( vote_between() ? 'Free I voted stickers for every state' : ( 'post' === vote_phase() ? 'Voted? Get your sticker.' : 'Free I voted stickers for every state' ) ),
 	'eyebrow' => t( 'post' === vote_phase() ? 'Free voting stickers by state' : 'Make a voting plan. Share the sticker.' ),
-	'lead' => t( 'post' === vote_phase() ? 'Pick your state, choose a design and save it. Get an I voted, I voted early or I voted by mail sticker, or make your own.' : 'Make an I voted sticker or share your state’s voting dates, sized for your profile picture or a post.' ),
-	'desc' => t( 'post' === vote_phase() ? 'Get a free I voted, I voted early or I voted by mail sticker. Choose your state, save a design or make your own.' : 'Free I voted, I voted early and vote early stickers for every state. Pick yours, save a ready-made PNG or make your own for your profile picture, with official links for early voting, mail ballots and Election Day.' ),
+	'lead' => t( 'post' === vote_phase() ? 'Pick your state, choose a design and save it. Get a digital I voted, I voted early or I voted by mail sticker, or make your own.' : 'Make a digital I voted sticker or share your state’s voting dates, sized for your profile picture or a post.' ),
+	'desc' => t( 'post' === vote_phase() ? 'Get a free digital I voted, I voted early or I voted by mail sticker. Choose your state, save a design or make your own.' : 'Free digital I voted, I voted early and vote early stickers for every state. Pick yours, save a ready-made PNG or make your own for your profile picture, with official links for early voting, mail ballots and Election Day.' ),
 	'index' => ! vote_es() || VOTE_ES_INDEX,
 );
 if ( $vote_about ) {
@@ -1655,6 +1655,8 @@ $vote_ld = array(
 			<?php echo $vote_li( 'Colorado voters signed up for BallotTrax get a digital Blucifer I Voted sticker once their mail ballot is accepted. It comes in the notification, not as a public download.', 'https://www.sos.state.co.us/pubs/newsRoom/pressReleases/2026/PR20261012StickerContest.html', 'Colorado’s announcement' ); ?>
 			<?php echo $vote_li( 'Grand Rapids, Michigan, has digital I voted stickers in nine languages, including Arabic, Burmese, Kinyarwanda and Nepali.', 'https://www.grandrapidsmi.gov/departments/clerks-office/elections/grvotes/', 'Get Grand Rapids’ stickers' ); ?>
 			<?php echo $vote_li( 'Ann Arbor, Michigan, has digital I voted stickers in eight languages, from Arabic to Korean.', 'https://www.a2gov.org/city-clerk/elections/a2votes/', 'Get Ann Arbor’s stickers' ); ?>
+			<?php // Oct 31 (pass 10): read on the city's page with curl: eight languages, "¡YO VOTÉ! - SPANISH STICKER", a First-Time Voter sticker. ?>
+			<?php echo $vote_li( 'Portage, Michigan, has #PortageVotes digital I voted stickers in eight languages, including a ¡YO VOTÉ! sticker in Spanish, plus a First-Time Voter sticker.', 'https://www.portagemi.gov/852/PortageVotes', 'Get Portage’s stickers' ); ?>
 			<?php echo $vote_li( 'Voting from another country? The Federal Voting Assistance Program has an "I Voted From" sticker for each country.', 'https://www.fvap.gov/IVotedSticker', 'Find your country' ); ?>
 		</ul>
 		<p><?php echo vote_e( t( "Don't see one for your state? Make your own above, sized for your profile picture." ) ); ?></p>
@@ -1700,6 +1702,8 @@ $vote_ld = array(
 		<?php endforeach; endif; ?>
 		<?php if ( ! $vote_st ) : // Home page only (visibility loop item 3, Oct 26): "how to get i voted sticker" sat at 9.3 on state pages. ?>
 		<details><summary><?php echo vote_e( t( 'Where can I get an I voted sticker?' ) ); ?></summary><p><?php echo vote_e( t( 'Poll workers at most polling places and vote centers hand you one after you vote. Each state or county picks its own design. Voted by mail? Some offices put a sticker in the ballot packet or post a digital one (see the list above). Or save a free one here, a classic one or one made for your state. Your state page links to its official ballot tracker where there is one, so you can check that your ballot arrived.' ) ); ?></p></details>
+		<?php // Oct 31 (pass 10): ChatGPT answered "where can I find a virtual I voted sticker" without us. True in every phase. ?>
+		<details><summary><?php echo vote_e( t( 'Is there a digital or virtual I voted sticker?' ) ); ?></summary><p><?php echo vote_e( t( 'Yes. Vote Sticker has free digital I voted stickers for every state and DC, with no account needed. Each one saves as a PNG for Instagram, Facebook, a story or your profile picture. Turn on Cut out the circle in the maker for see-through corners.' ) ); ?> <?php echo vote_e( t( 'Some election offices post their own digital stickers too. The ones we found are under' ) ); ?> <a href="#official-h"><?php echo vote_e( t( 'Official Digital Stickers From Election Offices' ) ); ?></a>.</p></details>
 		<?php endif; ?>
 		<details><summary><?php echo vote_e( t( 'How do I make it my profile picture?' ) ); ?></summary><p><?php echo vote_e( t( 'Save your sticker (Save to Photos on iPhone, Download picture elsewhere), then open your profile settings in the app and choose the saved image as your photo. The design stays inside the circle that profile photos are cropped to.' ) ); ?></p></details>
 		<?php if ( 'post' === vote_phase() ) : ?>
