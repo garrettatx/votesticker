@@ -487,7 +487,6 @@ select:hover, input:hover, textarea:hover { border-color: #A79D86; }
 .about .guide--first .guide__h { border-top: 0; padding-top: var(--s2); }
 .about .guide { margin-top: var(--s6); }
 .foot__links a { font-weight: 700; }
-.foot__gd-line { font-size: var(--fs-xs); }
 .hero__today { margin: var(--s3) 0 0; font-weight: 700; text-wrap: pretty; max-width: 34rem; }
 h2, .lead, .guide p, .info p, .section-intro { text-wrap: pretty; }
 .states__when { display: block; margin-top: 2px; font-size: var(--fs-sm); }
