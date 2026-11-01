@@ -1171,8 +1171,8 @@ $vote_page = $vote_st ? $vote_meta[ $vote_abbr ] : array(
 	// Oct 31: the year through the election and after it ("i voted sticker 2026"); never between elections.
 	'title' => t( vote_between() ? 'Free I Voted and I Voted Early Stickers by State | Vote Sticker' : 'Free I Voted and I Voted Early Stickers 2026 by State | Vote Sticker' ),
 	'h1' => t( vote_between() ? 'Free I voted stickers for every state' : ( 'post' === vote_phase() ? 'Voted? Get your sticker.' : 'Free I voted stickers for every state' ) ),
-	'eyebrow' => t( 'post' === vote_phase() ? 'Free voting stickers by state' : 'Make a voting plan. Share the sticker.' ),
-	'lead' => t( 'post' === vote_phase() ? 'Pick your state, choose a design and save it. Get a digital I voted, I voted early or I voted by mail sticker, or make your own.' : 'Make a digital I voted sticker or share your state’s voting dates, sized for your profile picture or a post.' ),
+	'eyebrow' => ( 'post' === vote_phase() ? t( 'Free voting stickers by state' ) : '' ),
+	'lead' => t( 'post' === vote_phase() ? 'Pick your state, choose a design and save it. Get a digital I voted, I voted early or I voted by mail sticker, or make your own.' : 'Choose a design or make your own with your state’s name and voting dates. Save it for your profile picture or a post.' ),
 	'desc' => t( 'post' === vote_phase() ? 'Get a free digital I voted, I voted early or I voted by mail sticker. Choose your state, save a design or make your own.' : 'Free digital I voted, I voted early and vote early stickers for every state. Pick yours, save a ready-made PNG or make your own for your profile picture, with official links for early voting, mail ballots and Election Day.' ),
 	'index' => ! vote_es() || VOTE_ES_INDEX,
 );
@@ -1232,7 +1232,7 @@ function vote_finder( $label, $placeholder, $button = 'Find' ) {
 		. '<div class="finder__box"><input id="state-find" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="state-options" autocomplete="off" autocapitalize="words" spellcheck="false" placeholder="' . vote_e( t( $placeholder ) ) . '">'
 		. '<button type="button" class="btn btn--gold" id="state-go">' . vote_e( t( $button ) ) . '</button>'
 		. '<ul id="state-options" role="listbox" aria-label="' . vote_e( t( 'Matching states' ) ) . '" hidden></ul></div>'
-		. '<p class="help" id="state-help">' . ( 'Get my sticker' === $button ? '<span class="finder__free">' . vote_e( t( 'Free, no account.' ) ) . '</span> ' : '' ) . '<a href="#states-h">' . vote_e( t( 'Or browse the full list of states' ) ) . '</a></p></div>';
+		. '<p class="help" id="state-help">' . ( 'Get my sticker' === $button ? '<span class="finder__free">' . vote_e( t( 'Free. No account needed.' ) ) . '</span> ' : '' ) . '<a href="#states-h">' . vote_e( t( 'Browse all states and DC' ) ) . '</a></p></div>';
 }
 
 $vote_ld = array(
@@ -1445,7 +1445,7 @@ $vote_ld = array(
 	<?php endif; ?>
 	<?php if ( $vote_showcase && ! $vote_st ) : ?>
 	<section class="showcase" id="showcase" aria-labelledby="showcase-h">
-		<h2 id="showcase-h" class="display-h"><?php echo vote_e( t( $vote_404 ? 'Popular States' : 'Find a Sticker You Like' ) ); ?></h2>
+		<h2 id="showcase-h" class="display-h"><?php echo vote_e( t( $vote_404 ? 'Popular States' : 'Featured State Sticker Designs' ) ); ?></h2>
 		<p class="section-intro"><?php echo vote_e( t( $vote_404 ? 'Ready-made stickers from the most populous states. Tap one to see that state’s page.' : 'Tap one to see every design for that state.' ) ); ?></p>
 		<div class="grid grid--showcase">
 			<?php foreach ( $vote_showcase as $abbr => $n ) : ?>
@@ -1493,7 +1493,7 @@ $vote_ld = array(
 	</section>
 	<section class="trust">
 		<svg aria-hidden="true" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#F2C14E" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M3 9l9-5 9 5"/><path d="M5 9v9M10 9v9M14 9v9M19 9v9M3 21h18"/></svg>
-		<p><b><?php echo vote_e( t( 'Nonpartisan, free, and private.' ) ); ?></b> <?php echo vote_e( t( 'No account, and nothing you make is uploaded. Dates come from official state election offices.' ) ); ?></p>
+		<p><b><?php echo vote_e( t( 'Nonpartisan and free.' ) ); ?></b> <?php echo vote_e( t( 'No account needed. Stickers are made in your browser and never uploaded. Voting dates link to official election sources.' ) ); ?></p>
 	</section>
 	<?php endif; ?>
 	<?php endif; ?>
@@ -1655,7 +1655,7 @@ $vote_ld = array(
 	?>
 	<section class="why" aria-labelledby="official-h">
 		<h2 id="official-h" class="display-h"><?php echo vote_e( t( 'Official Digital Stickers From Election Offices' ) ); ?></h2>
-		<p><?php echo vote_e( t( 'A few election offices post their own I voted sticker for you to share online. If yours does, use it. These are ones we found:' ) ); ?></p>
+		<p><?php echo vote_e( t( 'Some election offices post their own digital I voted sticker to share online. These are the ones we found:' ) ); ?></p>
 		<ul>
 			<?php echo $vote_li( "Maryland's State Board of Elections has 2026 I voted stickers to download, including an America 250 design in English and Spanish.", 'https://elections.maryland.gov/elections/2026/index.html#i_voted', 'Get Maryland’s stickers' ); ?>
 			<?php echo $vote_li( "Washington's Secretary of State has eight I voted images to use as a profile picture.", 'https://www.sos.wa.gov/i-voted-downloadable-sticker', 'Get Washington’s sticker' ); ?>
@@ -1668,7 +1668,7 @@ $vote_ld = array(
 			<?php echo $vote_li( 'Portage, Michigan, has #PortageVotes digital I voted stickers in eight languages, including a ¡YO VOTÉ! sticker in Spanish, plus a First-Time Voter sticker.', 'https://www.portagemi.gov/852/PortageVotes', 'Get Portage’s stickers' ); ?>
 			<?php echo $vote_li( 'Voting from another country? The Federal Voting Assistance Program has an "I Voted From" sticker for each country.', 'https://www.fvap.gov/IVotedSticker', 'Find your country' ); ?>
 		</ul>
-		<p><?php echo vote_e( t( "Don't see one for your state? Make your own above, sized for your profile picture." ) ); ?></p>
+		<p><?php echo vote_e( t( "No official one for your state? Make one above with your state’s name." ) ); ?></p>
 	</section>
 	<section class="why" aria-labelledby="contest-h">
 		<h2 id="contest-h" class="display-h"><?php echo vote_e( t( 'I Voted Sticker Contests' ) ); ?></h2>
@@ -1697,14 +1697,14 @@ $vote_ld = array(
 		<?php endif; ?>
 	</section>
 	<section class="why" aria-labelledby="why-h">
-		<h2 id="why-h" class="display-h"><?php echo vote_e( t( 'Why This Exists' ) ); ?></h2>
-		<p><?php echo vote_e( t( 'The paper I voted sticker is a small way of saying you showed up. These days more people see your profile picture than your shirt, so Vote Sticker puts that reminder where people look.' ) ); ?> <?php echo vote_e( t( 'Garrett Digital in Austin built it.' ) ); ?> <?php echo vote_e( t( "It's free, nonpartisan, and sells nothing." ) ); ?> <a href="<?php echo vote_pbase(); ?>about/"><?php echo vote_e( t( 'More about Vote Sticker' ) ); ?></a></p>
+		<h2 id="why-h" class="display-h"><?php echo vote_e( t( 'Why I Built VoteSticker.org' ) ); ?></h2>
+		<p><?php echo vote_e( t( 'I’m Garrett Nafzinger. I wanted an “I voted” sticker to share after voting early in Texas, so I built one. Then I got curious about where the sticker came from, and the history page grew out of that.' ) ); ?> <?php echo vote_e( t( 'I run Garrett Digital in Austin.' ) ); ?> <?php echo vote_e( t( "It's free, nonpartisan, and sells nothing." ) ); ?> <a href="<?php echo vote_pbase(); ?>about/"><?php echo vote_e( t( 'More about Vote Sticker' ) ); ?></a></p>
 		<?php echo vote_history_why(); ?>
 	</section>
 	<?php endif; ?>
 	<?php if ( ! $vote_404 ) : ?>
 	<section class="faq" aria-labelledby="faq-h">
-		<h2 id="faq-h"><?php echo vote_e( t( 'Questions People Ask' ) ); ?></h2>
+		<h2 id="faq-h"><?php echo vote_e( t( 'Sticker and Voting Questions' ) ); ?></h2>
 		<?php if ( $vote_st && vote_state_faq( $vote_st ) ) : ?><p class="help"><?php echo vote_e( t( 'Answers come from official %s sources.', vote_lname( $vote_st ) ) ); ?> <?php echo vote_e( t( 'Last checked %s.', vote_checked( vote_page_checked( $vote_st ) ) ) ); ?></p><?php endif; ?>
 		<?php if ( $vote_st ) : foreach ( vote_state_faq( $vote_st ) as $vote_q ) : ?>
 		<details class="faq__state"><summary><?php echo vote_e( $vote_q[0] ); ?></summary><p><?php echo vote_e( $vote_q[1] ); ?></p><p class="faq__src"><?php echo vote_es() ? 'Fuente: ' : 'From '; ?><a href="<?php echo vote_e( $vote_q[2] ); ?>" target="_blank" rel="noopener"><?php echo vote_e( vote_src_name( $vote_st, $vote_q[2] ) ); ?></a>.</p></details>
