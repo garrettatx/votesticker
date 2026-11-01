@@ -1122,3 +1122,81 @@ FAQs and 800-253-3931; /texas/ and /es/texas/ the who-to-call answer with 1-800-
   slot, any time before Nov 3.
 - After Nov 4: Perplexity's structure ideas above; check GSC Nov 5 for "i voted today sticker", "do you get an i voted
   sticker" and "voting sticker" positions on the home page.
+
+### November 1: Pass 13, County Stickers Round 2
+
+**Why.** Item 1, round 2: more official county and city stickers on state pages before Election Day, demand first, then
+the top-impression states that had none (Oregon, Washington, Illinois, Maryland, Ohio, Michigan, Minnesota, Colorado,
+Arizona, Pennsylvania, Virginia, New Jersey).
+
+**Demand.** Search Console, Oct 15 to 31, query x page (494 rows, 3,993 impressions). Place names: NYC 52 ("nyc early voting
+stickers" 24, "nyc voting stickers" 14, "nyc voting sticker" 6, "nyc i voted sticker" 4, "i voted sticker nyc" 3, "nyc voted
+sticker" 1), New Orleans 9, Alameda County 7, Chicago 7, LA County 6 (already listed), Durham 2, Austin 2, Wake 1, Orange
+County 1 (already listed), Santa Clara (operator queries only). Ahrefs US: "nyc i voted sticker" 30, "i voted sticker nyc" 30,
+Ulster County 700 (already the NY story), Santa Clara County 10 (already the CA story); 29 other county and city phrases 0
+(Alameda, Chicago, Durham, Austin, Wake, Multnomah, King, Denver, Maricopa, Philadelphia, Fairfax and more). Saved:
+`docs/research/county-stickers-20261101/gsc-query-page-20261015-31.json`.
+
+**Research.** Perplexity project "VoteSticker.org Research". The project composer had Computer preselected, so the first
+submit started a Computer task; stopped after 7 seconds, no answer. Deep Research then showed "Included in Pro", but
+clicking it opened "Upgrade for advanced research capabilities. Upgrade to Max for enhanced access to Perplexity deep
+research." Retried once: same screen. Both prompts ran in regular Search inside the project (Search confirmed pressed,
+Computer off, before each submit): p1 demand places (1m 9s, 205 sources), p2 priority states (1m 4s). WebSearch filled gaps
+(no Firecrawl). Every quote read on the page itself: curl, or Chrome for Larimer (curl 403) and the NYC Facebook post.
+Prompts, answers and quotes: `docs/research/county-stickers-20261101/` (`p1-demand-places.md`, `p2-priority-states.md`,
+`verification-20261101.md`).
+
+**Shipped: 10 entries, 6 states** (`sticker.more`; five states had no entries before: CO, PA, OR, VA, MD). Demand next to each.
+- NY: New York City (GSC 52, Ahrefs 30 + 30; first in the NY list). The Board of Elections' verified Facebook post, Oct 31:
+  "First 300 voters get a NEW DESIGN Limited-Edition Halloween Sticker! Polls open 9-5". `until` Oct 31, so it reads in
+  past tense from today. Heading is now "County and City I Voted Stickers in New York".
+- CO (0 each): El Paso County (six student designs, grades 3 to 11, in every ballot packet mailed Oct 5;
+  clerkandrecorder.elpasoco.com), Jefferson County (Alyssa's bighorn sheep and Marissa's landscape in ballot envelopes "this
+  November", Ellie's Future Voter sticker; jeffco.us), Larimer County (Kylie, Berthoud High School, ranked-choice public vote;
+  on the voter instructions in mail ballots, finalists at vote centers; design described from the page image), Mesa County
+  (four students, more than 175 entries; mesacounty.us).
+- PA (0 each): Montgomery County (contest for the Nov 3 stickers; handed out at polls, with mail ballots, at One Montgomery
+  Plaza, satellite offices and the outreach van; winners not on the county site, so none named), Erie County (Colin, General
+  McLane High School, "Peninsula"; the county's Jan 15 release says 2026 voters get a student-drawn sticker).
+- OR (0): Deschutes County (Rowan, Mountain View High School, America 250; on the Nov 3 Voters' Pamphlet cover, sticker
+  "available in November").
+- VA (0): City of Williamsburg (Rose, Berkeley Middle School, I Voted; Penny, Matthew Whaley Elementary, Future Voter; "used as
+  official vote stickers during the City of Williamsburg's 2026 election cycle this fall").
+- MD (0): Washington County (2026 winners Finnegan, Martha, Kelly and Ella with schools, washingtoncountymdvotes.gov; no
+  Nov 3 pickup place is stated, so none is claimed).
+Every entry has `until` Nov 3 (NYC Oct 31) and past-tense `en_after`/`es_after`; Spanish in tú, school names kept in English.
+
+**Build.** `facts_text.py`: ALLOW_HOSTS adds clerkandrecorder.elpasoco.com (www.elpasoco.com reads "Home - El Paso County,
+Colorado"); ALLOW_ACCOUNTS adds the NYC Board of Elections' Facebook page. Source names added for each new host (EN and ES).
+`qa_es.py` allows "Academy for Advanced and Creative Learning" and "Barbara Ingram School for the Arts". No template, FAQ or
+home edits.
+
+**Dropped, and why.** Alameda, Chicago, New Orleans (beyond the statewide Osborne story), Wake, Durham (already the NC story),
+Travis: no official 2026 local sticker statement. NYC marathon-day sticker: news only, no BOE post. Fayette County IL (winners
+blank, "an upcoming election"), Camden NJ (March call, no winners), Warren County NY (winners not on the county site), Wilkes
+NC (.net host, winners only in a document), Johnson County IA (contest call only). Already on the pages: Multnomah, Snohomish,
+Thurston, Sedgwick, Lake County IL, Sarasota. Nothing official found for OH, MI, MN, AZ, IL, NJ, WA counties beyond what the
+pages already say.
+
+**QA (local, 8792).** qa_facts (51 states, 102 pages) PASS; qa_es (54 pairs) PASS after the two school names; qa_seo
+--no-legacy (54 pages, 1,028 links) PASS; qa_events PASS; qa_save PASS (first run crashed with a Node error while another
+agent's qa_cards shared the server; rerun passed); qa_cards PASS. qa_stale on dated builds in a scratch copy: 0 STALE on
+11-01 (78 WINDOW), 11-02 (41), 11-03 (5), 11-04 (0); the Nov 4 build reads past tense (CO, PA ES, OR, VA checked). Playwright
+375 and 1280: Colorado EN and ES and New York, no horizontal scroll, list renders under the gallery; screenshots looked at
+(`docs/research/county-stickers-20261101/shot-*.png`).
+
+**Push (commit 99c417f, about 10:50 a.m.).** Pass 12's commit (fbc161f) landed first; this pass waited for it, then committed
+with explicit paths, pulled and pushed. The push reached GitHub while pass 12's run 41328063000 was deploying, so that run's
+last step, "Commit build records", was rejected (fetch first); its deploy, live QA and IndexNow had already succeeded.
+Dispatched run 41328412934 after it finished: every step passed, including live QA and "Commit build records" (67d25a3).
+IndexNow: "108 sitemap URLs, 30 to submit", "IndexNow answered HTTP 200" (the 12 county-sticker pages EN and ES, plus pass
+12's pages, whose record commit had been lost). Live curl: Colorado, Pennsylvania, Oregon, Virginia, Maryland and New York EN
+show the new headings (NY: "County and City I Voted Stickers in New York"); Spanish Colorado, New York ("Ciudad de Nueva
+York") and Maryland too.
+
+**For Garrett.** Washington County MD and Mesa County name winners but don't say where Nov 3 voters pick the stickers up, so
+the entries don't claim a place. Montgomery County PA names no winners on its own site (only social), so none are named.
+
+**Next.** NYC: a Board of Elections post on a marathon-day or Election Day sticker would go in the NYC entry (highest local
+demand). After Nov 3 every entry flips to past tense on its own. Recheck Alameda, Chicago and Wake if a local office posts a
+2026 sticker. More counties for OH, MI, MN, AZ, IL, NJ, WA only with an official 2026 statement.
