@@ -302,6 +302,14 @@
    "quote": "8 p.m. Nov. 3: Your county election office must RECEIVE your completed mail ballot by this time. A postmark by 8 p.m. Nov. 3 is not sufficient. ... Bring your ballot and the pre-addressed outer return envelope to your polling place to be voided. After you surrender your ballot and envelope and sign a declaration, you can then vote a regular ballot. If you don't surrender your ballot and return envelope, you can only vote by provisional ballot at your polling place.",
    "status": "verified",
    "notes": "Pass 2 Oct 30, read by curl. Return options and own-ballot rule: pa.gov .../mail-in-and-absentee-ballot/return-ballot ('Under Pennsylvania law, voters must return their own ballots. The only exceptions to this are for voters with a disability who have designated someone in writing')."
+  },
+  "problem": {
+   "en": "Ask a poll worker first. If you need information or run into a problem at your polling place, call Pennsylvania's official election hotline, toll free at 1-877-868-3772. Interpreters are available if English is not your first language.",
+   "es": "Primero pregúntale a un trabajador electoral. Si necesitas información o tienes un problema en tu lugar de votación, llama gratis a la línea oficial de elecciones de Pennsylvania al 1-877-868-3772. Hay intérpretes si el inglés no es tu primer idioma.",
+   "src": "https://www.pa.gov/agencies/vote/contact-us",
+   "checked": "2026-11-01",
+   "quote": "Pennsylvanians who need information or encounter problems at their polling place should call our official election hotline toll free at: 1-877-868-3772. ... Interpreters are available if English is not your first language.",
+   "status": "verified"
   }
  },
  "notes": "Read October 21, 2026 on pa.gov (the vote.pa.gov pages): Upcoming Elections, Mail-in and Absentee Ballot, On-Demand Mail Ballot Voting, Ballot Return Locations, Rules at the Polls, Provisional Ballot, First Time Voters (new-voters), FAQ. Pennsylvania has no early voting; the in-person mail ballot (states.js) is the early option, and county office hours are listed per county, not statewide, so early_hours is missing. No statewide cure process or deadline, no phone or photo rule, and no ballot selfie rule were found. Ballot tracking and polling place lookup are on pavoterservices.pa.gov, linked from pa.gov. No official I voted sticker program was found. ID rule follows docs/faq-sources.json (no_id: only first-time voters at a polling place show ID, photo or non-photo). October 28: Perplexity review checked against pa.gov and the Attorney General. Mail envelope copy now follows the Sept 30, 2026 county guidance (3.4.1): unsigned and no-secrecy-envelope ballots are set aside; undated ones are segregated with litigation pending, so the page makes no promise about a missing date. Ballot selfie answer from the Attorney General's voting page.",

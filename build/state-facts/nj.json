@@ -240,6 +240,14 @@
    "checked": "2026-10-21",
    "quote": "To make sure your ballot is postmarked on time, put your ballot in the mail at least a few days before election day, or go up to the counter at a U.S. Post Office and have a clerk manually stamp the postmark on your ballot envelope.",
    "status": "verified"
+  },
+  "problem": {
+   "en": "Ask a poll worker first. For anything they can't fix, call your county board of elections or the New Jersey Division of Elections' voter line at 1-877-658-6837 (1-877-NJ-VOTER).",
+   "es": "Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la junta electoral de tu condado (county Board of Elections) o a la línea para votantes de la División de Elecciones de New Jersey al 1-877-658-6837 (1-877-NJ-VOTER).",
+   "src": "https://www.nj.gov/state/elections/vote.shtml",
+   "checked": "2026-11-01",
+   "quote": "Voting Questions? Call 1-877-NJ-VOTER (1-877-658-6837) ... Voting Information & Assistance 1-877-NJ-VOTER (1-877-658-6837)",
+   "status": "verified"
   }
  },
  "notes": "Read October 21, 2026 on nj.gov/state/elections: Vote-By-Mail, In-Person Early Voting, Voter Registration, Polling Location, Secure Drop Boxes, Track My Ballot, County Election Officials, the 2026 General Election Timeline PDF (updated January 9, 2026) and the November 2026 Voters' Bill of Rights poster PDF. CONFLICT on the cure deadline (timeline: November 14, within 11 days, N.J.S.A. 19:63-17; poster: 48 hours before certification), so dates.cure is missing and mail.cure gives the process without a date. The early voting page also carries a stale line ('General Election In-Person Early Voting Polling period has passed.') next to the 2026 dates; the 2026 dates and hours match the poster. Mail return: the Vote-By-Mail page says received 'on or before 6 days after Election Day' in one place and 'by 8 pm on the sixth day after the close of the polls' in another; the poster and timeline both give 8 p.m. November 9, used here. No phone rule and no official sticker program found.",

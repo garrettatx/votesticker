@@ -700,6 +700,12 @@ return array(
 			'src' => 'https://www.azcleanelections.gov/state-general',
 			'checked' => '2026-10-21',
 		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your county elections office or the Arizona Secretary of State\'s Elections Division at 1-877-843-8683 (1-877-THE-VOTE) or 602-542-8683.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la oficina electoral de tu condado o a la División de Elecciones de la Secretaría de Estado de Arizona al 1-877-843-8683 (1-877-THE-VOTE) o al 602-542-8683.',
+			'src' => 'https://azsos.gov/elections',
+			'checked' => '2026-11-01',
+		),
 	),
 	'CA' => array(
 		'election' => '2026-11-03',
@@ -2158,6 +2164,12 @@ return array(
 			'src' => 'https://georgia.gov/vote-absentee-ballot',
 			'checked' => '2026-10-28',
 		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your county elections office or the Georgia Secretary of State\'s Elections Division at 404-656-2881.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la oficina electoral de tu condado o a la División de Elecciones de la Secretaría de Estado de Georgia al 404-656-2881.',
+			'src' => 'https://sos.ga.gov/elections-division-georgia-secretary-states-office',
+			'checked' => '2026-11-01',
+		),
 	),
 	'HI' => array(
 		'election' => '2026-11-03',
@@ -3560,6 +3572,12 @@ return array(
 			'en_after' => 'Yes, for most voters. Your parish Registrar of Voters had to receive it by 4:30 p.m. on Monday, November 2, and a postmark doesn\'t count. Military, overseas and hospitalized voters have until 8 p.m. on Election Day.',
 			'es_after' => 'Sí, para la mayoría de los votantes. El registrador de votantes de tu parroquia (parish Registrar of Voters) tenía que recibirla a más tardar a las 4:30 p. m. del lunes 2 de noviembre, y el matasellos no cuenta. Los votantes militares, en el extranjero u hospitalizados tienen hasta las 8 p. m. del Día de las Elecciones.',
 		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call the Louisiana Secretary of State\'s elections hotline at 1-800-883-2805.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la línea de elecciones de la Secretaría de Estado de Louisiana al 1-800-883-2805.',
+			'src' => 'https://www.sos.la.gov/elections-voting/contact-us',
+			'checked' => '2026-11-01',
+		),
 	),
 	'MA' => array(
 		'election' => '2026-11-03',
@@ -4271,6 +4289,12 @@ return array(
 			'es' => 'En las últimas dos semanas no se recomienda enviarla por correo. Debe llegar al secretario a más tardar a las 8 p. m. del Día de las Elecciones, así que mejor usa un buzón de entrega, la oficina del secretario o tu centro de votación anticipada.',
 			'src' => 'https://www.michigan.gov/sos/elections/voting/absentee-voting',
 			'checked' => '2026-10-21',
+		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your city or township clerk or the Michigan Bureau of Elections at 800-292-5973.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la oficina del secretario de tu ciudad o municipio (clerk) o a la Oficina de Elecciones de Michigan (Bureau of Elections) al 800-292-5973.',
+			'src' => 'https://www.michigan.gov/sos/elections',
+			'checked' => '2026-11-01',
 		),
 	),
 	'MN' => array(
@@ -5835,6 +5859,12 @@ return array(
 			'src' => 'https://www.nj.gov/state/elections/vote-by-mail.shtml',
 			'checked' => '2026-10-21',
 		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your county board of elections or the New Jersey Division of Elections\' voter line at 1-877-658-6837 (1-877-NJ-VOTER).',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la junta electoral de tu condado (county Board of Elections) o a la línea para votantes de la División de Elecciones de New Jersey al 1-877-658-6837 (1-877-NJ-VOTER).',
+			'src' => 'https://www.nj.gov/state/elections/vote.shtml',
+			'checked' => '2026-11-01',
+		),
 	),
 	'NM' => array(
 		'election' => '2026-11-03',
@@ -7178,6 +7208,12 @@ return array(
 			'src' => 'https://www.pa.gov/agencies/vote/voter-support/mail-in-and-absentee-ballot',
 			'checked' => '2026-10-30',
 		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. If you need information or run into a problem at your polling place, call Pennsylvania\'s official election hotline, toll free at 1-877-868-3772. Interpreters are available if English is not your first language.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si necesitas información o tienes un problema en tu lugar de votación, llama gratis a la línea oficial de elecciones de Pennsylvania al 1-877-868-3772. Hay intérpretes si el inglés no es tu primer idioma.',
+			'src' => 'https://www.pa.gov/agencies/vote/contact-us',
+			'checked' => '2026-11-01',
+		),
 	),
 	'RI' => array(
 		'election' => '2026-11-03',
@@ -7897,6 +7933,12 @@ return array(
 			'src' => 'https://sos.tn.gov/elections/faqs',
 			'checked' => '2026-10-30',
 		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your county election commission or the Tennessee Secretary of State\'s Division of Elections at 1-877-850-4959 or 615-741-7956.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la comisión electoral de tu condado (county election commission) o a la División de Elecciones de la Secretaría de Estado de Tennessee al 1-877-850-4959 o al 615-741-7956.',
+			'src' => 'https://sos.tn.gov/contact',
+			'checked' => '2026-11-01',
+		),
 	),
 	'TX' => array(
 		'election' => '2026-11-03',
@@ -8527,6 +8569,12 @@ return array(
 			'es' => 'No, si tiene matasellos del martes 3 de noviembre o antes y llega a la oficina de registro de tu localidad (general registrar) a más tardar al mediodía del viernes 6 de noviembre. Mandarla por correo tan tarde es un riesgo. El Día de las Elecciones, puedes dejarla en un lugar de votación de tu localidad o en la oficina de registro a más tardar a las 7 p. m.',
 			'src' => 'https://law.lis.virginia.gov/vacode/title24.2/chapter7/section24.2-707.1/',
 			'checked' => '2026-10-30',
+		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your local general registrar or the Virginia Department of Elections, toll free at 800-552-9745, or at 804-864-8901.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la oficina de registro de tu localidad (general registrar) o al Departamento de Elecciones de Virginia, gratis al 800-552-9745, o al 804-864-8901.',
+			'src' => 'https://www.elections.virginia.gov/contact-us/',
+			'checked' => '2026-11-01',
 		),
 	),
 	'VT' => array(

@@ -267,6 +267,14 @@
    "checked": "2026-10-21",
    "quote": "Return and submit an absentee ballot by mail (not recommended within 14 days of an election)",
    "status": "verified"
+  },
+  "problem": {
+   "en": "Ask a poll worker first. For anything they can't fix, call your city or township clerk or the Michigan Bureau of Elections at 800-292-5973.",
+   "es": "Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la oficina del secretario de tu ciudad o municipio (clerk) o a la Oficina de Elecciones de Michigan (Bureau of Elections) al 800-292-5973.",
+   "src": "https://www.michigan.gov/sos/elections",
+   "checked": "2026-11-01",
+   "quote": "Bureau of Elections contact information Contact us by phone: 800-292-5973 By email: Elections@Michigan.gov Monday through Friday, 8 a.m. - 4:45 p.m. (hours may change during elections and deadline periods)",
+   "status": "verified"
   }
  },
  "notes": "Read October 21, 2026 on michigan.gov/sos (Vote on Election Day, Register to Vote, Absentee Voting, Early In-Person Voting, Ballot Tracking, I Voted Sticker Contest) and legislature.mi.gov (MCL 168.720 hours and line, 168.720a early voting minimums, 168.766 cure deadline, 168.766a cure notice). The October 19 registration date is 15 days before November 3, per the SOS 15-day rule and the existing FAQ. Cure deadline: 5 p.m. on the third day after the election = Friday, November 6. Mail application deadline: 5 p.m. the Friday before = October 30. CONFLICT on photos: the Election Day page says not to take a photo within the voting area, while the early voting page and the SOS FAQ say voters may photograph their own ballot in the booth, so polls_rules.phone is missing. Detroit absentee voters can't tabulate at Election Day polling places (stated on the absentee page). No county offices list URL used; the clerk lookup is inside the Voter Information Center.",
