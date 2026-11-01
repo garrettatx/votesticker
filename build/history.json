@@ -11,8 +11,8 @@
    "es": "St. Louis"
   },
   "body": {
-   "en": "In October 1920, Blewett, a public school in St. Louis, held a student election. The school’s printing department made “I have voted” tags, enough to give one to each student as they voted. Of 1,250 students who registered, 1,170 voted.",
-   "es": "En octubre de 1920, Blewett, una escuela pública de St. Louis, celebró una elección estudiantil. El departamento de imprenta de la escuela hizo etiquetas de “I have voted” (yo voté), suficientes para darle una a cada estudiante al votar. De 1,250 estudiantes que se registraron, votaron 1,170."
+   "en": "In October 1920, Ben Blewett Junior High School in St. Louis held a student election run like a real one. The city’s Board of Election Commissioners swore in 60 student judges and clerks, and shop classes built 30 voting booths. The school’s printing department made “I have voted” tags, enough to give one to each student as they voted. Of 1,250 students who registered, 1,170 voted. The year before, its principal had described the school in a national education journal as [“an experiment in democracy.”](https://www.govinfo.gov/content/pkg/GOVPUB-I16-8f9fa4ec41144678e353945ec5542809/html/GOVPUB-I16-8f9fa4ec41144678e353945ec5542809.htm)",
+   "es": "En octubre de 1920, Ben Blewett Junior High School, una escuela secundaria pública de St. Louis, celebró una elección estudiantil organizada como una de verdad. La junta electoral de la ciudad tomó juramento a 60 estudiantes como jueces y secretarios electorales, y las clases de taller construyeron 30 cabinas de votación. El departamento de imprenta de la escuela hizo etiquetas de “I have voted” (yo voté), suficientes para darle una a cada estudiante al votar. De 1,250 estudiantes que se registraron, votaron 1,170. El año anterior, su director había descrito la escuela en una revista nacional de educación como [“an experiment in democracy”](https://www.govinfo.gov/content/pkg/GOVPUB-I16-8f9fa4ec41144678e353945ec5542809/html/GOVPUB-I16-8f9fa4ec41144678e353945ec5542809.htm) (un experimento de democracia)."
   },
   "limits": {
    "en": "These were paper tags, not adhesive stickers. Who printed the first adhesive “I Voted” sticker is still unknown. Later histories cite a 1950 Miami Herald mention of “I Have Voted” stickers, but we haven’t been able to read that page.",
@@ -25,6 +25,7 @@
   "fact": "stlouis-blewett-1920",
   "facts": [
    "stlouis-blewett-1920",
+   "blewett-school-1919",
    "miami-herald-1950-cited"
   ],
   "event": "blewett-1920"
@@ -1215,8 +1216,8 @@
     "es": "Etiquetas de “I have voted” para una elección estudiantil"
    },
    "body": {
-    "en": "For a student election at Blewett, a St. Louis public school, the school’s printing department makes “I have voted” tags, one for each student as they vote. It’s the earliest example we found.",
-    "es": "Para una elección estudiantil en Blewett, una escuela pública de St. Louis, el departamento de imprenta de la escuela hace etiquetas de “I have voted” (yo voté), una para cada estudiante al votar. Es el ejemplo más antiguo que encontramos."
+    "en": "For a student election at Ben Blewett Junior High School in St. Louis, the school’s printing department makes “I have voted” tags, one for each student as they vote. It’s the earliest example we found. A few years later, Tennessee Williams was a student there: [his 1925 Blewett yearbook](https://cdn.craft.cloud/97cd51c5-b816-4a93-aea9-fd7e2c5e47da/assets/TWAR_2005-07-Cave-HNOC_holdings.pdf) has one of his early poems.",
+    "es": "Para una elección estudiantil en Ben Blewett Junior High School, en St. Louis, el departamento de imprenta de la escuela hace etiquetas de “I have voted” (yo voté), una para cada estudiante al votar. Es el ejemplo más antiguo que encontramos. Unos años después, Tennessee Williams estudió allí: [su anuario de Blewett de 1925](https://cdn.craft.cloud/97cd51c5-b816-4a93-aea9-fd7e2c5e47da/assets/TWAR_2005-07-Cave-HNOC_holdings.pdf) tiene uno de sus primeros poemas."
    },
    "fact": "stlouis-blewett-1920",
    "kind": "precursor",

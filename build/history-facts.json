@@ -1267,8 +1267,8 @@
    "place": "St. Louis, Missouri",
    "evidence": "official record",
    "status": "verified",
-   "checked": "2026-10-29",
-   "claim": "For a student election at Blewett, a St. Louis public school, on October 29, 1920, the school print shop printed \"I have voted\" tags, enough to give each student one as he voted. 1,250 students registered and 1,170 (94%) voted, the St. Louis Board of Education reported.",
+   "checked": "2026-11-01",
+   "claim": "For a student election at Ben Blewett Junior High School, a St. Louis public school, on October 29, 1920, the city Board of Election Commissioners qualified the 60 student judges and clerks, the Manual Training Department built 30 booths, and the school print shop printed \"I have voted\" tags, enough to give each student one as he voted. 1,250 students registered and 1,170 (94%) voted, the St. Louis Board of Education reported.",
    "src": "https://hdl.handle.net/2027/uc1.b2987052?urlappend=%3Bseq=60",
    "quote": "the Printing Department printed enough \"I have voted\" tags to give each student one as he voted; and the study hall pupils cut into strips 1400 ballot sheets.",
    "also": [
@@ -1279,9 +1279,17 @@
     {
      "src": "https://hdl.handle.net/2027/uc1.b2987052?urlappend=%3Bseq=60",
      "quote": "Out of 1250 who registered 1170 or 94% voted"
+    },
+    {
+     "src": "https://hdl.handle.net/2027/uc1.b2987052?urlappend=%3Bseq=60",
+     "quote": "Notices, printed by the Blewett print shop, were served on the sixty judges and clerks, all of whom appeared before the Board of Election Commissioners the following morning for the purpose of being qualified and taking oath of office."
+    },
+    {
+     "src": "https://hdl.handle.net/2027/uc1.b2987052?urlappend=%3Bseq=60",
+     "quote": "the Manual Training Department made the frame work for 30 booths which were covered and provided with pencils by the Civics Department"
     }
    ],
-   "notes": "St. Louis Board of Education, Annual Report v. 67 (1920-21), p. 52 (HathiTrust uc1.b2987052, seq 60), read Oct 29, 2026 in HathiTrust full-text search snippets in Chrome (page images blocked to automation; OCR snippets read). A student mock election run with the city Board of Election Commissioners qualifying the student judges, not a public election. Year from the 1920-21 report and the Oct 28 Junior Life election issue. Earliest \"I have voted\" item found; say \"the earliest example we found\", a tag, not a sticker."
+   "notes": "St. Louis Board of Education, Annual Report v. 67 (1920-21), p. 52 (HathiTrust uc1.b2987052, seq 60), read Oct 29, 2026 in HathiTrust full-text search snippets in Chrome (page images blocked to automation; OCR snippets read). A student mock election run with the city Board of Election Commissioners qualifying the student judges, not a public election. Year from the 1920-21 report and the Oct 28 Junior Life election issue. Earliest \"I have voted\" item found; say \"the earliest example we found\", a tag, not a sticker. Nov 1, 2026: page re-read in HathiTrust in-item search in Chrome; the report says \"Blewett\" only, full name from the blewett-school-1919 fact."
   },
   {
    "id": "campfire-1962-tags",
@@ -1314,6 +1322,38 @@
     }
    ],
    "notes": "U.S. Commission on Civil Rights, Political Participation (1968), p. 113 (HathiTrust uiug.30112105087479 seq 123), snippet read in Chrome Oct 29, 2026. A federal report; quote keeps the report's 1968 wording, page copy says Black residents. Neutral, factual use only."
+  },
+  {
+   "id": "blewett-school-1919",
+   "year": 1919,
+   "date": "1919-05",
+   "place": "St. Louis, Missouri",
+   "evidence": "official record",
+   "status": "verified",
+   "checked": "2026-11-01",
+   "claim": "Ben Blewett Junior High School's principal from September 1917 to June 1920, Philip W. L. Cox, described the school in School Review (May 1919) as \"an experiment in democracy\", an article the U.S. Bureau of Education listed in its junior high school references.",
+   "src": "https://www.govinfo.gov/content/pkg/GOVPUB-I16-8f9fa4ec41144678e353945ec5542809/html/GOVPUB-I16-8f9fa4ec41144678e353945ec5542809.htm",
+   "quote": "Cox, Philip W. L. The Ben Blewett junior high school : an experiment in democracy. School review, 27: 345-59, May 1919.",
+   "also": [
+    {
+     "src": "https://archive.org/stream/n4reportclass1906harvuoft/n4reportclass1906harvuoft_djvu.txt",
+     "quote": "in September, 1917 I became principal of the Ben Blewett Junior High School, St. Louis; in June, 1920 I became headmaster of the Washington School of New York."
+    }
+   ],
+   "notes": "Bureau of Education Library Leaflet No. 20, List of References on the Junior High School (govinfo); Harvard College Class of 1906 Fifteenth Anniversary Report (1921), Cox entry, archive.org full text. Both read Nov 1, 2026. Cox had left before the October 1920 election; don't name him as its organizer."
+  },
+  {
+   "id": "williams-blewett-1925",
+   "year": 1925,
+   "date": "1925",
+   "place": "St. Louis, Missouri",
+   "evidence": "scholarship",
+   "status": "verified",
+   "checked": "2026-11-01",
+   "claim": "Tennessee Williams's junior high school yearbook, The Blewett Junior Life Yearbook for 1925, contains an early Williams poem, \"Demon Smoke\" (Historic New Orleans Collection holdings).",
+   "src": "https://cdn.craft.cloud/97cd51c5-b816-4a93-aea9-fd7e2c5e47da/assets/TWAR_2005-07-Cave-HNOC_holdings.pdf",
+   "quote": "beginning with The Blewett Junior Life Yearbook for 1925, Williams's junior high school yearbook—and contain an early Williams poem entitled \"Demon Smoke.\"",
+   "notes": "Mark Cave, Tennessee Williams Annual Review 7 (2005), para. 27, read Nov 1, 2026. Junior Life is the school paper that made its Oct 28, 1920 issue an Election Issue. His first story \"Isolated\" in Junior Life (1924) is reported by Kolin 1998 but the date conflicts; not used."
   }
  ],
  "numbers": [
