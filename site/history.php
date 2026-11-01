@@ -409,7 +409,7 @@ function vote_history() {
 	}
 	$out .= '<section class="guide" aria-labelledby="method-h"><h2 class="display-h guide__h" id="method-h">' . vote_e( t( 'How We Check the Story' ) ) . '</h2>'
 		. '<p>' . vote_e( t( '“I Voted” sticker history is full of claims repeated so often that their original source gets lost. This page starts with museum records, election office materials, laws, original research and reporting from the time. When the best evidence is a later retelling, the page says so. If a claim can\'t be verified well enough, it isn\'t here.' ) ) . '</p>'
-		. '<p>' . vote_e( t( 'Sources are linked throughout the page. Some entries rest on a museum object or an official record; others rely on later reporting when the original isn\'t available.' ) ) . '</p>'
+		. '<p>' . vote_e( t( 'Sources are linked throughout the page.' ) ) . '</p>'
 		. '<p class="cite">' . vote_e( t( 'Last reviewed %s', vote_checked( $d['checked'] ) ) ) . ' · <a href="' . vote_pbase() . 'about/#fix-h">' . vote_e( t( 'Share a source or correction' ) ) . '</a></p></section>';
 	return $out . '</div>';
 }

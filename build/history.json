@@ -39,13 +39,13 @@
    },
    "paras": [
     {
-     "en": "There’s no settled origin story. Paper “I have voted” tags go back at least to 1920, and the sticker most people picture took shape in the 1980s. These dates each tell a different part of it.",
+     "en": "There’s no settled origin story. Paper “I have voted” tags go back at least to 1920, and the sticker most people picture took shape in the 1980s.",
      "facts": [
       "stlouis-blewett-1920",
       "phoenix-realtors-1985",
       "boudreau-1987"
      ],
-     "es": "No hay una historia de origen definitiva. Las etiquetas de papel de “I have voted” existen por lo menos desde 1920, y el sticker que la mayoría imagina tomó forma en los años ochenta. Cada una de estas fechas cuenta una parte distinta."
+     "es": "No hay una historia de origen definitiva. Las etiquetas de papel de “I have voted” existen por lo menos desde 1920, y el sticker que la mayoría imagina tomó forma en los años ochenta."
     }
    ],
    "answer": [
@@ -55,8 +55,8 @@
       "es": "Los ejemplos más antiguos que encontramos"
      },
      "a": {
-      "en": "The earliest examples we found are paper tags. In October 1920, a St. Louis public school printed “I have voted” tags for a student election and gave one to each student as he voted. In 1962, a Camp Fire Girls handbook suggested handing them out on Election Day, and a federal report describes the tags being pinned on voters leaving a Georgia polling place in 1966. Later histories cite a 1950 Miami Herald item about “I Have Voted” stickers at Miami polls, and a 1982 Miami Herald story described Fort Lauderdale shops giving discounts to people wearing voting stickers.",
-      "es": "Los ejemplos más antiguos que encontramos son etiquetas de papel. En octubre de 1920, una escuela pública de St. Louis imprimió etiquetas de “I have voted” (yo voté) para una elección estudiantil y le dio una a cada estudiante al votar. En 1962, un manual de las Camp Fire Girls sugería repartirlas el Día de las Elecciones, y un informe federal describe cómo se las ponían a los votantes al salir de un lugar de votación de Georgia en 1966. Historias posteriores citan una nota del Miami Herald de 1950 sobre stickers de “I Have Voted” en lugares de votación de Miami, y una nota del Miami Herald de 1982 describió tiendas de Fort Lauderdale que daban descuentos a quienes llevaban stickers de votación."
+      "en": "In October 1920, Ben Blewett Junior High School in St. Louis printed paper “I have voted” tags for a student election and gave one to each student as he voted. In 1962, a Camp Fire Girls handbook suggested handing them out on Election Day, and a federal report describes the tags being pinned on voters leaving a Georgia polling place in 1966. Later histories cite a 1950 Miami Herald item about “I Have Voted” stickers at Miami polls, and a 1982 Miami Herald story described Fort Lauderdale shops giving discounts to people wearing voting stickers.",
+      "es": "En octubre de 1920, Ben Blewett Junior High School, en St. Louis, imprimió etiquetas de papel de “I have voted” (yo voté) para una elección estudiantil y le dio una a cada estudiante al votar. En 1962, un manual de las Camp Fire Girls sugería repartirlas el Día de las Elecciones, y un informe federal describe cómo se las ponían a los votantes al salir de un lugar de votación de Georgia en 1966. Historias posteriores citan una nota del Miami Herald de 1950 sobre stickers de “I Have Voted” en lugares de votación de Miami, y una nota del Miami Herald de 1982 describió tiendas de Fort Lauderdale que daban descuentos a quienes llevaban stickers de votación."
      },
      "facts": [
       "stlouis-blewett-1920",
@@ -99,22 +99,23 @@
       "en": "What We Still Don't Know",
       "es": "Lo que todavía no sabemos"
      },
-     "en": "The 1950 page hasn’t been available to review, so its details remain unclear. The tags in the 1920 school report and the 1960s sources were paper tags, and we haven’t found who first printed an adhesive “I Voted” sticker. Phoenix’s Realtors later called their sticker the first in the country, but the Miami references are older. No patent for Boudreau’s flag oval has turned up; she has said she copyrighted the design.",
+     "en": "The 1950 page hasn’t been available to review, so its details remain unclear. The tags in the 1920 school report and the 1960s sources were paper tags, and we haven’t found who first printed an adhesive “I Voted” sticker. Phoenix’s Realtors later called their sticker the first in the country, but a 1982 Miami Herald story had already described shops giving discounts to people wearing voting stickers. No patent for Boudreau’s flag oval has turned up; she has said she copyrighted the design.",
      "facts": [
       "miami-herald-1950-cited",
       "stlouis-blewett-1920",
       "phoenix-realtors-1985",
-      "boudreau-1987"
+      "boudreau-1987",
+      "fort-lauderdale-1982"
      ],
-     "es": "La página de 1950 no ha estado disponible para revisarla, así que sus detalles siguen sin estar claros. Las etiquetas del informe escolar de 1920 y de las fuentes de los años sesenta eran de papel, y no hemos encontrado quién imprimió el primer sticker adhesivo de “I Voted”. Los agentes inmobiliarios de Phoenix dijeron después que su sticker fue el primero del país, pero las referencias de Miami son más antiguas. No ha aparecido ninguna patente del óvalo de Boudreau; ella ha dicho que registró los derechos de autor del diseño."
+     "es": "La página de 1950 no ha estado disponible para revisarla, así que sus detalles siguen sin estar claros. Las etiquetas del informe escolar de 1920 y de las fuentes de los años sesenta eran de papel, y no hemos encontrado quién imprimió el primer sticker adhesivo de “I Voted”. Los agentes inmobiliarios de Phoenix dijeron después que su sticker fue el primero del país, pero una nota del Miami Herald de 1982 ya describía tiendas que daban descuentos a quienes llevaban stickers de votación. No ha aparecido ninguna patente del óvalo de Boudreau; ella ha dicho que registró los derechos de autor del diseño."
     }
    ]
   },
   {
    "id": "timeline",
    "h": {
-    "en": "From First-Vote Ribbon to Digital Sticker",
-    "es": "Del listón del primer voto al sticker digital"
+    "en": "I Voted Sticker Timeline",
+    "es": "Cronología del sticker de I Voted"
    },
    "paras": [
     {
@@ -296,11 +297,11 @@
    },
    "paras": [
     {
-     "en": "Secret ballots made voting private. For much of the 1800s, many Americans used party-printed tickets that were easy to tell apart, often by color, and handed them in where others could see. An “I Voted” sticker brings back a small piece of that public signal without revealing how anyone voted. It says one thing: I took part.",
+     "en": "States began adopting the secret ballot in 1888, and how someone votes has stayed private since. An “I Voted” sticker shows that a person voted without revealing how. It says one thing: I took part.",
      "facts": [
       "secret-ballot-1888"
      ],
-     "es": "El voto secreto hizo que votar fuera privado. Durante buena parte del siglo XIX, muchos estadounidenses usaban papeletas impresas por los partidos, fáciles de distinguir, a menudo por el color, y las entregaban donde otros podían verlas. Un sticker de “I Voted” recupera una pequeña parte de esa señal pública sin revelar por quién votó nadie. Dice una sola cosa: participé."
+     "es": "Los estados empezaron a adoptar el voto secreto en 1888, y desde entonces el voto de cada persona es privado. Un sticker de “I Voted” muestra que alguien votó sin revelar por quién. Dice una sola cosa: participé."
     },
     {
      "h3": {
@@ -319,12 +320,12 @@
       "en": "Facebook, Election Day 2010",
       "es": "Facebook, Día de las Elecciones de 2010"
      },
-     "en": "On Election Day 2010, Facebook showed 61 million users a message with an “I Voted” button. Some also saw photos of friends who had already clicked it. Researchers estimated the message raised turnout a little directly, and more through friends: close friends accounted for most of the effect. A repeat test in the 2012 presidential election found a similar small rise.",
+     "en": "On Election Day 2010, Facebook showed 61 million users a message with an “I Voted” button. Some also saw photos of friends who had already clicked it. Researchers estimated a small rise in turnout, most of it passed along through close friends rather than from the message itself. A repeat test in the 2012 presidential election found a similar small rise.",
      "facts": [
       "facebook-2010",
       "facebook-2012-replication"
      ],
-     "es": "El Día de las Elecciones de 2010, Facebook mostró a 61 millones de usuarios un mensaje con un botón de “I Voted”. Algunos también vieron fotos de amigos que ya lo habían presionado. Los investigadores estimaron que el mensaje aumentó un poco la participación de forma directa, y más a través de los amigos: los amigos cercanos explicaron la mayor parte del efecto. Una prueba repetida en la elección presidencial de 2012 encontró un aumento pequeño parecido."
+     "es": "El Día de las Elecciones de 2010, Facebook mostró a 61 millones de usuarios un mensaje con un botón de “I Voted”. Algunos también vieron fotos de amigos que ya lo habían presionado. Los investigadores estimaron un pequeño aumento en la participación, en su mayor parte transmitido por amigos cercanos y no por el mensaje mismo. Una prueba repetida en la elección presidencial de 2012 encontró un aumento pequeño parecido."
     },
     {
      "h3": {
@@ -356,8 +357,8 @@
   {
    "id": "contests",
    "h": {
-    "en": "When Voters Get to Choose",
-    "es": "Cuando los votantes eligen"
+    "en": "Sticker Design Contests",
+    "es": "Concursos de diseño de stickers"
    },
    "paras": [
     {
@@ -845,24 +846,6 @@
  },
  "events": [
   {
-   "id": "ballot-1888",
-   "year": 1888,
-   "title": {
-    "en": "Voting goes private",
-    "es": "El voto se vuelve privado"
-   },
-   "body": {
-    "en": "Louisville and Massachusetts adopt government-printed secret ballots. Before then, many voters handed in party tickets that were easy to identify, often by color, where others could see.",
-    "es": "Louisville y Massachusetts adoptan boletas secretas impresas por el gobierno. Antes, muchos votantes entregaban papeletas de partido fáciles de identificar, a menudo por el color, donde otros podían verlas."
-   },
-   "fact": "secret-ballot-1888",
-   "mark": {
-    "en": "Secret ballot",
-    "es": "Voto secreto"
-   },
-   "kind": "precursor"
-  },
-  {
    "id": "ribbon-1920",
    "year": 1920,
    "title": {
@@ -1008,8 +991,8 @@
    "id": "facebook-2010",
    "year": 2010,
    "title": {
-    "en": "The button goes online",
-    "es": "El botón llega a internet"
+    "en": "Facebook’s turnout study",
+    "es": "El estudio de participación de Facebook"
    },
    "body": {
     "en": "Facebook shows 61 million users an Election Day message with an “I Voted” button. Researchers later measure its effect on turnout.",
@@ -1160,8 +1143,8 @@
    "id": "michigan-2026",
    "year": 2026,
    "title": {
-    "en": "2,095 entries",
-    "es": "2,095 diseños"
+    "en": "Michigan’s 2026 contest",
+    "es": "El concurso de Michigan de 2026"
    },
    "body": {
     "en": "Michigan's second statewide contest draws 2,095 entries. The state screens qualifying designs for AI-generated and copied artwork before the public vote.",
@@ -1323,8 +1306,8 @@
     }
    ],
    "note": {
-    "en": "The online vote was open to anyone, anywhere. That's why a county contest drew more votes than the county has residents.",
-    "es": "La votación en línea estaba abierta a cualquiera, desde cualquier lugar. Por eso un concurso de condado recibió más votos que habitantes tiene el condado."
+    "en": "The online vote was open to anyone, anywhere, so a county contest drew more votes than the county has residents.",
+    "es": "La votación en línea estaba abierta a cualquiera, desde cualquier lugar, así que un concurso de condado recibió más votos que habitantes tiene el condado."
    },
    "facts": [
     "ulster-rowan-2022"

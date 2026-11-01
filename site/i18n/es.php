@@ -327,7 +327,7 @@ return array(
 		'See the evidence' => 'Ver la evidencia',
 		'Select a highlighted state to preview its story.' => 'Elige un estado resaltado para ver su historia.',
 		'Selected' => 'Seleccionado',
-		'Sources are linked throughout the page. Some entries rest on a museum object or an official record; others rely on later reporting when the original isn\'t available.' => 'Las fuentes están enlazadas en toda la página. Algunas entradas se basan en un objeto de museo o un registro oficial; otras dependen de noticias posteriores cuando el original no está disponible.',
+		'Sources are linked throughout the page.' => 'Las fuentes están enlazadas en toda la página.',
 		'States with a featured sticker story' => 'Estados con una historia destacada del sticker',
 		'Sticker milestone' => 'Momento clave del sticker',
 		'I voted sticker history with a source for each step: 1920 “I have voted” tags at a St. Louis school (the earliest example we found), a 1985 Phoenix campaign, the 1987 flag oval and today\'s contests.' => 'La historia del sticker de “I Voted”, con una fuente para cada paso: etiquetas de “I have voted” de 1920 en una escuela de St. Louis (el ejemplo más antiguo que encontramos), una campaña en Phoenix en 1985, el óvalo con la bandera de 1987 y los concursos de hoy.',
