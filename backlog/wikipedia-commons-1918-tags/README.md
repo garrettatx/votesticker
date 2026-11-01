@@ -1,6 +1,6 @@
 # Upload the 1918 "Tag Every Voter" Notice to Wikimedia Commons
 
-**Uploaded November 1, 2026:** https://commons.wikimedia.org/wiki/File:Lowell_Ledger_1918-10-31_tag_every_voter_notice.png (public domain, PD-US-expired, in the "I voted" stickers category). Remaining: Talk page reply; optional SDC copyright status.
+**Uploaded November 1, 2026:** https://commons.wikimedia.org/wiki/File:Lowell_Ledger_1918-10-31_tag_every_voter_notice.png (public domain, PD-US-expired, in the "I voted" stickers category). SDC copyright status and full description added Nov 1; Talk page reply posted Nov 1 (Talk:I Voted sticker, section 2). Done: wait for an editor.
 
 Backlogged November 1, 2026 (Garrett: "it should be on the Wikipedia I Voted sticker page, I think. Let's
 backlog it"). Not started. Garrett uploads; Claude never posts to Wikipedia or Commons.
