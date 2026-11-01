@@ -1200,3 +1200,68 @@ the entries don't claim a place. Montgomery County PA names no winners on its ow
 **Next.** NYC: a Board of Elections post on a marathon-day or Election Day sticker would go in the NYC entry (highest local
 demand). After Nov 3 every entry flips to past tense on its own. Recheck Alameda, Chicago and Wake if a local office posts a
 2026 sticker. More counties for OH, MI, MN, AZ, IL, NJ, WA only with an official 2026 statement.
+
+### November 1: Pass 14, Voter Help Lines
+
+**Why.** Pass 12 answered "Who do I call if I have a problem voting in [State]?" for 11 states. This pass covers the other 40
+and DC, EN and ES, in the same slot (`faq.problem` in `build/state-facts/<abbr>.json`, rendered from `VOTE_FACT_Q` in
+`site/index.php`, shown through Nov 3 and dropped in the post phase from Nov 4). Text in an existing slot, no template change.
+Order by Search Console page impressions, Oct 18 to 31: GA 223, PA 178, LA 424, TN 302, AZ 237, MI 272, VA 232, NJ 346
+first (as asked), then SC 344, UT 327, CO 293, MN 283, MA 244, NM 218, WI 160, KS 152, AL 147, HI 142, IN 140, MO 140,
+CT 132, OK 130, NV 126, AR 120, DC 97, ID 85, NE 78, KY 77, ME 76, MS 65, RI 65, MT 56, VT 47, IA 46, WV 38, DE 37, NH 29,
+WY 23, SD 21, ND 10.
+
+**Research.** Every number read on the state election office's own page Nov 1, curl or Claude in Chrome (my own tab, closed
+after); WebSearch only to find which page lists the line; no Perplexity, no Firecrawl. No advocacy hotlines. Quote, URL and
+how each was read: `docs/research/election-day-20261101/help-lines.md`.
+
+**Shipped (number, source).**
+- GA 404-656-2881 (sos.ga.gov Elections Division page) · PA 1-877-868-3772, interpreters (pa.gov/agencies/vote/contact-us) ·
+  LA 1-800-883-2805 (sos.la.gov/elections-voting/contact-us) · TN 1-877-850-4959, 615-741-7956 (sos.tn.gov/contact) ·
+  AZ 1-877-843-8683 (THE-VOTE), 602-542-8683 (azsos.gov/elections) · MI 800-292-5973 (michigan.gov/sos/elections) ·
+  VA 800-552-9745, 804-864-8901 (elections.virginia.gov/contact-us) · NJ 1-877-658-6837 (NJ-VOTER) (nj.gov/state/elections/vote.shtml)
+- SC 803-734-9060 (scvotes.gov/contact) · UT 801-538-1041, Lt. Governor's Office (vote.utah.gov/additional-resources-for-voters) ·
+  CO 303-894-2200 (coloradosos.gov contact page) · MN 651-215-1440, 1-877-600-8683 (sos.mn.gov) · MA 1-800-462-8683,
+  617-727-2828 (sec.state.ma.us Elections Division) · NM Election Day Voter Hotline 1-800-477-3632, 505-827-3600 opt. 2
+  (sos.nm.gov/contact-us) · WI 1-866-868-3947 (VOTE-WIS), 608-266-8005 (elections.wi.gov/contact-us) · KS 800-262-8683
+  (sos.ks.gov elections) · AL 1-800-274-8683 (sos.alabama.gov/alabama-votes) · HI 808-453-8683, 1-800-442-8683
+  (elections.hawaii.gov contact) · IN 317-232-3939 (in.gov/sos/elections) · MO 800-669-8683, 573-751-2301 (sos.mo.gov/elections) ·
+  CT 860-509-6100 (CT Voter Fact Sheet) · OK 405-521-2391 (oklahoma.gov/elections contact) · NV 775-684-5708 (nvsos.gov/elections) ·
+  AR 501-682-5070, 800-482-1127 (sos.arkansas.gov contact) · DC 202-727-2525, 1-866-328-6837 (DC-VOTES) (dcboe.org) ·
+  ID 208-334-2852 (voteidaho.gov) · NE 402-471-2554 (sos.nebraska.gov/elections) · KY 502-573-7100 (elect.ky.gov contact) ·
+  ME 207-624-7650 (maine.gov/sos upcoming elections) · MS 800-829-6786 (sos.ms.gov/elections-voting) · RI 401-222-2340
+  (vote.sos.ri.gov contact) · MT 406-444-9608 (sosmt.gov/contact-feedback) · VT 802-828-2363 (sos.vermont.gov/elections) ·
+  IA 1-888-767-8683 (SOS-VOTE) (sos.iowa.gov/voter-hotline) · WV 304-558-6000 (sos.wv.gov/contact-wvsos) · DE the three county
+  Department of Elections offices 302-577-3464, 302-739-4498, 302-856-5367 and 302-739-4277 (elections.delaware.gov/locations.html) ·
+  NH 603-271-3242 (sos.nh.gov election-integrity) · WY 307-777-5860 (sos.wyo.gov/ContactUs.aspx) · SD 605-773-3537 (the
+  office's May 18, 2026 press release letterhead PDF; the HTML pages show no phone) · ND 1-800-352-0867, 701-328-2900 (sos.nd.gov/elections)
+
+Wording copies pass 12: "Ask a poll worker first. For anything they can't fix, call [local office] or [state office] at ...";
+Hawaii (all-mail) starts with the county elections division, as OR and WA do. Each local office uses the term the state's
+facts file already uses (county clerk, municipal clerk, county auditor, local board of canvassers, registrars of voters...).
+No state fell back to the county alone. AL and LA name the state line only (the county Election Day office wasn't read on an
+official page). No office page read lists a separate Spanish line; Spanish answers are in tú, office names in Spanish with the
+English name in parentheses where the page uses it, state names in English.
+
+**QA (local, 8792; 8791 for the node scripts' default).** Before each push: qa_facts (51 states, 102 pages), qa_es (54 pairs),
+qa_seo --no-legacy (54 pages, 1,028 links), qa_events, qa_save, qa_history, qa_cards (76,320 WebKit cards, 0 outside the
+circle): PASS. qa_stale on dated builds in a scratch copy: 0 STALE on 11-01 (78 WINDOW), 11-02 (41), 11-03 (5), 11-04 (0);
+the problem FAQ is on all 51 states EN and ES through Nov 3 and on none on Nov 4. Playwright 375 on the Nov 3 build: Georgia,
+Spanish Pennsylvania, Spanish Delaware, Minnesota; no sideways scroll; screenshots looked at (Spanish Delaware's last line
+reworded after the look).
+
+**Push.** Batch 1 (commit 85bab13, GA PA LA TN AZ MI VA NJ): run 41330395809, every step passed; IndexNow "108 sitemap URLs,
+16 to submit", "IndexNow answered HTTP 200". Live: /georgia/ shows 404-656-2881, /es/pennsylvania/ 1-877-868-3772. (The
+scheduled run 41329571561 before it deployed fine but its "Commit build records" was rejected by a push from another run; the
+next run committed the records.) Batch 2 (commit 8514ea7, 32 states): run 41331464020, every step passed, including "Commit
+build records" (e6b8073); IndexNow "108 sitemap URLs, 64 to submit", HTTP 200. Live: /delaware/ 302-577-3464, /es/south-dakota/
+605-773-3537, /connecticut/ 860-509-6100.
+
+**For Garrett.**
+- New Mexico's own hotline line says "available on Election Day, November 2". Election Day is Nov 3; the answer leaves the date
+  and hours out. Worth a note to the NM SOS if you want.
+- Connecticut ran an SEEC Election Day hotline (1-866-733-2463) for the August primary; no November release yet. If one posts
+  Nov 2, swap it into `ct.json` (text in the same slot).
+
+**Next.** Nov 2 morning: check portal.ct.gov press releases for a November hotline. From Nov 4 the answer leaves every page on
+its own (post phase).
