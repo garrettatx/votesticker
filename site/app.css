@@ -568,7 +568,7 @@ h2, .lead, .guide p, .info p, .section-intro { text-wrap: pretty; }
 .tl__body p { margin: 0 0 var(--s2); }
 .tl__ev { font-size: var(--fs-xs); color: var(--muted); }
 .tl__ev a { color: var(--muted); }
-.tl__badge { display: inline-block; padding: 1px 8px; border: 1px solid var(--line-strong); border-radius: 999px; font-weight: 700; color: var(--ink); background: var(--panel); }
+.tl__badge { display: inline-block; padding: 1px 8px; border: 1px solid var(--line-strong); border-radius: 5px; font-weight: 700; color: var(--ink); background: var(--panel); }
 @media (max-width: 559px) { .tl__item { grid-template-columns: 1fr; gap: var(--s1); } }
 .bars, .smap { margin: var(--s5) 0; padding: var(--s5); background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius-lg); }
 .bars__title { margin: 0 0 var(--s4); font-weight: 700; color: var(--ink); }

@@ -203,10 +203,25 @@
       "en": "Mental Floss"
     },
     "www.proquest.com": {
-      "en": "The Austin Statesman (ProQuest Historical Newspapers)"
+      "en": "The Austin Statesman (ProQuest)"
     },
     "www.jstor.org": {
       "en": "JSTOR"
+    },
+    "www.gutenberg.org": {
+      "en": "Gavit, Americans by Choice (1922)"
+    },
+    "archives.kdl.org": {
+      "en": "The Lowell Ledger (Kent District Library)"
+    },
+    "newspapers.swco.ttu.edu": {
+      "en": "The Morton Tribune (Texas Tech)"
+    },
+    "www.revisor.mn.gov": {
+      "en": "Minnesota Session Laws"
+    },
+    "www.wkyt.com": {
+      "en": "WKYT"
     }
   },
   "events": [
@@ -1409,6 +1424,117 @@
         }
       ],
       "notes": "JSTOR Shared Collections image record, catalogued 2020-21 by Claralyn Burt; local id sag_us_misc_historical_288_se.tif. Date is the collection's catalog date; no maker named. Partisan car sticker, not a polling-place giveaway. Read Nov 1, 2026 via Austin Public Library JSTOR access (record is FREE)."
+    },
+    {
+      "id": "grandrapids-1919-tags",
+      "year": 1919,
+      "date": "1919-03",
+      "place": "Grand Rapids, Michigan",
+      "evidence": "contemporary account",
+      "status": "verified",
+      "checked": "2026-11-01",
+      "claim": "In Grand Rapids, Michigan's March and April 1919 city elections, committees of women gave paper tags reading \"I am an American. I voted. Did you?\" to voters at the polls; only voters could get one, and schoolchildren collected them afterward, with flags as prizes for the schools with the highest totals.",
+      "src": "https://www.gutenberg.org/files/60576/60576-h/60576-h.htm",
+      "quote": "For the tag said: “I am an American. I voted. Did you?”",
+      "also": [
+        {
+          "src": "https://www.gutenberg.org/files/60576/60576-h/60576-h.htm",
+          "quote": "Committees of women, drawn from mothers’ clubs, women’s clubs, parents’ associations, etc., gave out the tags at the polls, asked the voters to wear them, and pinned them on when they could. The only way to get a tag was to vote"
+        },
+        {
+          "src": "https://www.gutenberg.org/files/60576/60576-h/60576-h.htm",
+          "quote": "For the primary election in March the tag system got out 28,700 votes"
+        },
+        {
+          "src": "https://www.gutenberg.org/files/60576/60576-h/60576-h.htm",
+          "quote": "Out of 29,000 tags given out at one election, they brought back more than 17,000. After the next election they brought back 27,000 out of 37,000. Flags were given as prizes to the schools showing the highest totals."
+        },
+        {
+          "src": "https://www.gutenberg.org/files/60576/60576-h/60576-h.htm",
+          "quote": "Whether or not you vote is not your business; it is Uncle Sam’s business. HOW you vote is your business."
+        }
+      ],
+      "notes": "John Palmer Gavit, Americans by Choice (Harper, 1922; Carnegie Americanization Studies), ch. X, 'A Specific Example—It Works' and 'What the Children Did', pp. 330-333. Read in full on Project Gutenberg #60576, Nov 1, 2026 (lead from Garrett's research). Work of the Grand Rapids Americanization Society 'since the fall of 1918'; tags documented for the March primary and April 1919 election. Contemporary account, not a newspaper; the tags may predate March 1919."
+    },
+    {
+      "id": "lowell-1918-tag-notice",
+      "year": 1918,
+      "date": "1918-10-31",
+      "place": "Lowell, Michigan",
+      "evidence": "newspaper",
+      "status": "verified",
+      "checked": "2026-11-01",
+      "claim": "The Lowell Ledger of October 31, 1918 reported that the Americanization society had started a movement to tag every voter and that tags reading \"I am an American. I voted. Did you?\" would be distributed at the November election.",
+      "src": "https://archives.kdl.org/The%20Lowell%20Ledger/1918/10_October/10-31-1918.pdf",
+      "quote": "Recently the Americanization society inaugurated a movement to tag every voter, which has already brought good results. The effort will be continued in the November election and tags bearing the words “I am an American. I voted. Did you?” Will be distributed.",
+      "also": [],
+      "notes": "Lowell Ledger, Oct 31, 1918, p. 2, editorial column; read on the scan (pdftoppm crop) Nov 1, 2026; lead from Garrett's ChatGPT research memo. The notice names no city; Gavit (1922) ties the same tag to Grand Rapids' Americanization Society, active 'since the fall of 1918'. A plan for November, not proof the November distribution happened."
+    },
+    {
+      "id": "lowell-1952-badges",
+      "year": 1952,
+      "date": "1952-10-30",
+      "place": "Lowell, Michigan",
+      "evidence": "newspaper",
+      "status": "verified",
+      "checked": "2026-11-01",
+      "claim": "Before the 1952 general election, the Lowell Ledger reported that Boy Scouts would hand out \"I Voted\" badges at the polling place and grade-school pupils would collect the \"I Have Voted\" tags a block away, with an award for the classroom collecting the most.",
+      "src": "https://archives.kdl.org/The%20Lowell%20Ledger/1952/10_October/10-30-1952.pdf",
+      "quote": "Mr. Rivette will also provide Boy Scouts at the polling place to pass out “I Voted” badges.",
+      "also": [
+        {
+          "src": "https://archives.kdl.org/The%20Lowell%20Ledger/1952/10_October/10-30-1952.pdf",
+          "quote": "While the Boy Scouts hand out the “I Have Voted” tags at the polls, the grade school pupils will collect them at a distance of at least a block away from the polls, and the grade room collecting the largest number will receive an award, according to Supt. W. W. Gumser."
+        }
+      ],
+      "notes": "Lowell Ledger, Oct 30, 1952, p. 1; read on the scan Nov 1, 2026. Pre-election plan. The same item calls them badges and tags."
+    },
+    {
+      "id": "morton-1960-tags",
+      "year": 1960,
+      "date": "1960-11-24",
+      "place": "Morton, Texas",
+      "evidence": "newspaper",
+      "status": "verified",
+      "checked": "2026-11-01",
+      "claim": "The Morton Tribune of November 24, 1960 reported that the Wocaha Camp Fire group had helped a get-out-the-vote campaign by pinning \"I Have Voted\" tags on voters.",
+      "src": "https://newspapers.swco.ttu.edu/bitstreams/955f8916-b659-424a-8739-13dff5dd4c27/download",
+      "quote": "In another recent activity, the Wocaha’s were also helpful in the get-out-the-vote campaign, aiding in pinning “I Have Voted,” tags on voters.",
+      "also": [],
+      "notes": "Morton Tribune, Thursday, Nov 24, 1960, p. 2 ('Candy Sale Ends This Week'); read on the scan Nov 1, 2026 (date partly in the gutter; matches the research memo)."
+    },
+    {
+      "id": "minnesota-1989-law",
+      "year": 1989,
+      "date": "1989",
+      "place": "Minnesota",
+      "evidence": "law",
+      "status": "verified",
+      "checked": "2026-11-01",
+      "claim": "Minnesota's 1989 election law let the secretary of state distribute donated stickers reading only \"I VOTED\" to county auditors, and let election judges offer one to each voter who had signed the polling place roster.",
+      "src": "https://www.revisor.mn.gov/laws/1989/0/291/",
+      "quote": "The secretary of state may distribute stickers to the county auditors which contain the words \"I VOTED\" and nothing more, and which have been donated to the state without cost.",
+      "also": [
+        {
+          "src": "https://www.revisor.mn.gov/laws/1989/0/291/",
+          "quote": "Election judges may offer a sticker of this type to each voter who has signed the polling place roster."
+        }
+      ],
+      "notes": "Laws of Minnesota 1989, ch. 291, art. 1, sec. 32 area (same section bans political badges at polls). Read Nov 1, 2026."
+    },
+    {
+      "id": "boudreau-washington-1987",
+      "year": 1987,
+      "date": "2026-10-31",
+      "place": "Washington state",
+      "evidence": "interview",
+      "status": "verified",
+      "checked": "2026-11-01",
+      "claim": "Janet Boudreau told WKYT in 2026 that in 1987 she saw a Washington state county handing out a black-and-white Election Day sticker with an X in a square, and drew her flag oval in response.",
+      "src": "https://www.wkyt.com/2026/10/31/i-voted-sticker-creator-talks-about-how-it-started/",
+      "quote": "She noticed a county in Washington state had started handing out stickers on Election Day. “It was black and white and had an X in a square. And that’s it. And I thought, this is not inspiring,” Boudreau said.",
+      "also": [],
+      "notes": "WKYT, Oct 31, 2026. Her recollection; county not named."
     }
   ],
   "numbers": [

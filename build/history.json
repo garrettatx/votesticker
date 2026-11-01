@@ -3,32 +3,34 @@
  "sources": {},
  "callout": {
   "h": {
-   "en": "The Earliest Example We Found: 1920",
-   "es": "El ejemplo más antiguo que encontramos: 1920"
+   "en": "The Earliest Example We Found: 1918",
+   "es": "El ejemplo más antiguo que encontramos: 1918"
   },
   "place": {
-   "en": "St. Louis",
-   "es": "St. Louis"
+   "en": "Michigan",
+   "es": "Michigan"
   },
   "body": {
-   "en": "In October 1920, Ben Blewett Junior High School in St. Louis held a student election run like a real one. The city’s Board of Election Commissioners swore in 60 student judges and clerks, and shop classes built 30 voting booths. The school’s printing department made “I have voted” tags, enough to give one to each student as they voted. Of 1,250 students who registered, 1,170 voted. The year before, its principal had described the school in a national education journal as [“an experiment in democracy.”](https://www.jstor.org/stable/1078421)",
-   "es": "En octubre de 1920, Ben Blewett Junior High School, una escuela secundaria pública de St. Louis, celebró una elección estudiantil organizada como una de verdad. La junta electoral de la ciudad tomó juramento a 60 estudiantes como jueces y secretarios electorales, y las clases de taller construyeron 30 cabinas de votación. El departamento de imprenta de la escuela hizo etiquetas de “I have voted” (yo voté), suficientes para darle una a cada estudiante al votar. De 1,250 estudiantes que se registraron, votaron 1,170. El año anterior, su director había descrito la escuela en una revista nacional de educación como [“an experiment in democracy”](https://www.jstor.org/stable/1078421) (un experimento de democracia)."
+   "en": "On October 31, 1918, a weekly paper near Grand Rapids, Michigan, the Lowell Ledger, reported that a local Americanization society had started “a movement to tag every voter.” At the November election, it said, tags reading “I am an American. I voted. Did you?” would be handed out. A 1922 book describes the Grand Rapids campaign at the city’s March and April 1919 elections: committees of women gave voters the tags at the polls, and the only way to get one was to vote. Afterward, schoolchildren collected the tags, and the schools with the most won flags.",
+   "es": "El 31 de octubre de 1918, un semanario cerca de Grand Rapids, Michigan, el Lowell Ledger, informó que una sociedad local de americanización había iniciado un movimiento para ponerle una etiqueta a cada votante (“a movement to tag every voter”). En la elección de noviembre, decía, se repartirían etiquetas con el texto “I am an American. I voted. Did you?” (soy estadounidense, voté, ¿y tú?). Un libro de 1922 describe la campaña de Grand Rapids en las elecciones municipales de marzo y abril de 1919: comités de mujeres les daban las etiquetas a los votantes en los lugares de votación, y la única forma de conseguir una era votar. Después, los niños juntaban las etiquetas, y las escuelas que reunían más ganaban banderas."
   },
   "limits": {
-   "en": "These were paper tags, not adhesive stickers. We haven’t found a record of who printed the first adhesive “I Voted” sticker. The earliest adhesive one we found is a 1950 car-window sticker reading “Thank Me I Voted Republican.”",
-   "es": "Eran etiquetas de papel, no stickers adhesivos. No hemos encontrado un registro de quién imprimió el primer sticker adhesivo de “I Voted”. El adhesivo más antiguo que encontramos es un sticker de 1950 para la ventana del carro que dice “Thank Me I Voted Republican”."
+   "en": "These were paper tags, pinned on, not adhesive stickers. In October 1920, a St. Louis junior high school printed “I have voted” tags for a student election. We haven’t found a record of who printed the first adhesive “I Voted” sticker. The earliest adhesive one we found is a 1950 car-window sticker reading “Thank Me I Voted Republican.”",
+   "es": "Eran etiquetas de papel que se prendían a la ropa, no stickers adhesivos. En octubre de 1920, una escuela secundaria de St. Louis imprimió etiquetas de “I have voted” para una elección estudiantil. No hemos encontrado un registro de quién imprimió el primer sticker adhesivo de “I Voted”. El adhesivo más antiguo que encontramos es un sticker de 1950 para la ventana del carro que dice “Thank Me I Voted Republican”."
   },
   "source": {
-   "en": "St. Louis Board of Education, Annual Report, vol. 67 (1920–21), p. 52, on HathiTrust",
-   "es": "St. Louis Board of Education, Annual Report, vol. 67 (1920–21), p. 52, en HathiTrust"
+   "en": "The Lowell Ledger, Oct. 31, 1918, p. 2, on Kent District Library",
+   "es": "The Lowell Ledger, 31 de octubre de 1918, p. 2, en Kent District Library"
   },
-  "fact": "stlouis-blewett-1920",
+  "fact": "lowell-1918-tag-notice",
   "facts": [
-   "stlouis-blewett-1920",
-   "blewett-school-1919",
-   "thank-me-1950-sticker"
+   "lowell-1918-tag-notice",
+   "grandrapids-1919-tags",
+   "thank-me-1950-sticker",
+   "stlouis-blewett-1920"
   ],
-  "event": "blewett-1920"
+  "event": "lowell-1918",
+  "year": 1918
  },
  "sections": [
   {
@@ -39,13 +41,15 @@
    },
    "paras": [
     {
-     "en": "There’s no settled origin story. Paper “I have voted” tags go back at least to 1920, and the sticker most people picture took shape in the 1980s.",
+     "en": "There’s no settled origin story. Paper “I have voted” tags go back at least to 1918, and the sticker most people picture took shape in the 1980s.",
      "facts": [
+      "lowell-1918-tag-notice",
+      "grandrapids-1919-tags",
       "stlouis-blewett-1920",
       "phoenix-realtors-1985",
       "boudreau-1987"
      ],
-     "es": "No hay una historia de origen definitiva. Las etiquetas de papel de “I have voted” existen por lo menos desde 1920, y el sticker que la mayoría imagina tomó forma en los años ochenta."
+     "es": "No hay una historia de origen definitiva. Las etiquetas de papel de “I have voted” existen por lo menos desde 1918, y el sticker que la mayoría imagina tomó forma en los años ochenta."
     }
    ],
    "answer": [
@@ -55,10 +59,12 @@
       "es": "Los ejemplos más antiguos que encontramos"
      },
      "a": {
-      "en": "In October 1920, Ben Blewett Junior High School in St. Louis printed paper “I have voted” tags for a student election and gave one to each student who voted. In 1962, a Camp Fire Girls handbook suggested handing them out on Election Day, and a federal report describes the tags being pinned on voters leaving a Georgia polling place in 1966. Later histories cite a 1950 Miami Herald item about “I Have Voted” stickers at Miami polls, and a 1982 Miami Herald story described Fort Lauderdale shops giving discounts to people wearing voting stickers.",
-      "es": "En octubre de 1920, Ben Blewett Junior High School, en St. Louis, imprimió etiquetas de papel de “I have voted” (yo voté) para una elección estudiantil y le dio una a cada estudiante al votar. En 1962, un manual de las Camp Fire Girls sugería repartirlas el Día de las Elecciones, y un informe federal describe cómo se las ponían a los votantes al salir de un lugar de votación de Georgia en 1966. Historias posteriores citan una nota del Miami Herald de 1950 sobre stickers de “I Have Voted” en lugares de votación de Miami, y una nota del Miami Herald de 1982 describió tiendas de Fort Lauderdale que daban descuentos a quienes llevaban stickers de votación."
+      "en": "In October 1918, a Michigan paper reported plans to hand voters tags reading “I am an American. I voted. Did you?”, and a 1922 book describes Grand Rapids voters getting them at the polls in 1919. In October 1920, Ben Blewett Junior High School in St. Louis printed paper “I have voted” tags for a student election and gave one to each student who voted. In 1962, a Camp Fire Girls handbook suggested handing them out on Election Day, and a federal report describes the tags being pinned on voters leaving a Georgia polling place in 1966. Later histories cite a 1950 Miami Herald item about “I Have Voted” stickers at Miami polls, and a 1982 Miami Herald story described Fort Lauderdale shops giving discounts to people wearing voting stickers.",
+      "es": "En octubre de 1918, un periódico de Michigan informó que se repartirían etiquetas con el texto “I am an American. I voted. Did you?” (soy estadounidense, voté, ¿y tú?), y un libro de 1922 describe cómo los votantes de Grand Rapids las recibían en los lugares de votación en 1919. En octubre de 1920, Ben Blewett Junior High School, en St. Louis, imprimió etiquetas de papel de “I have voted” (yo voté) para una elección estudiantil y le dio una a cada estudiante al votar. En 1962, un manual de las Camp Fire Girls sugería repartirlas el Día de las Elecciones, y un informe federal describe cómo se las ponían a los votantes al salir de un lugar de votación de Georgia en 1966. Historias posteriores citan una nota del Miami Herald de 1950 sobre stickers de “I Have Voted” en lugares de votación de Miami, y una nota del Miami Herald de 1982 describió tiendas de Fort Lauderdale que daban descuentos a quienes llevaban stickers de votación."
      },
      "facts": [
+      "lowell-1918-tag-notice",
+      "grandrapids-1919-tags",
       "stlouis-blewett-1920",
       "campfire-1962-tags",
       "americus-1966-tags",
@@ -99,15 +105,16 @@
       "en": "What We Still Don't Know",
       "es": "Lo que todavía no sabemos"
      },
-     "en": "We haven’t read the 1950 Miami Herald page itself, which is in a subscription newspaper archive, so we can’t say what the stickers looked like or whether they were handed out. The tags in the 1920 school report and the 1960s sources were paper tags, and we haven’t found who first printed an adhesive “I Voted” sticker. Phoenix’s Realtors later called their sticker the first in the country, but a 1982 Miami Herald story had already described shops giving discounts to people wearing voting stickers. No patent for Boudreau’s flag oval has turned up; she has said she copyrighted the design.",
+     "en": "We haven’t read the 1950 Miami Herald page itself, which is in a subscription newspaper archive, so we can’t say what the stickers looked like or whether they were handed out. The tags in sources from 1918 to the 1960s were paper, and we haven’t found who first printed an adhesive “I Voted” sticker. Phoenix’s Realtors later called their sticker the first in the country, but a 1982 Miami Herald story had already described shops giving discounts to people wearing voting stickers. No patent for Boudreau’s flag oval has turned up; she has said she copyrighted the design.",
      "facts": [
       "miami-herald-1950-cited",
       "stlouis-blewett-1920",
       "phoenix-realtors-1985",
       "boudreau-1987",
-      "fort-lauderdale-1982"
+      "fort-lauderdale-1982",
+      "grandrapids-1919-tags"
      ],
-     "es": "No hemos leído la página del Miami Herald de 1950, que está en un archivo de periódicos por suscripción, así que no podemos decir cómo eran los stickers ni si llegaron a repartirse. Las etiquetas del informe escolar de 1920 y de las fuentes de los años sesenta eran de papel, y no hemos encontrado quién imprimió el primer sticker adhesivo de “I Voted”. Los agentes inmobiliarios de Phoenix dijeron después que su sticker fue el primero del país, pero una nota del Miami Herald de 1982 ya describía tiendas que daban descuentos a quienes llevaban stickers de votación. No ha aparecido ninguna patente del óvalo de Boudreau; ella ha dicho que registró los derechos de autor del diseño."
+     "es": "No hemos leído la página del Miami Herald de 1950, que está en un archivo de periódicos por suscripción, así que no podemos decir cómo eran los stickers ni si llegaron a repartirse. Las etiquetas de las fuentes de 1918 a los años sesenta eran de papel, y no hemos encontrado quién imprimió el primer sticker adhesivo de “I Voted”. Los agentes inmobiliarios de Phoenix dijeron después que su sticker fue el primero del país, pero una nota del Miami Herald de 1982 ya describía tiendas que daban descuentos a quienes llevaban stickers de votación. No ha aparecido ninguna patente del óvalo de Boudreau; ella ha dicho que registró los derechos de autor del diseño."
     }
    ]
   },
@@ -297,11 +304,12 @@
    },
    "paras": [
     {
-     "en": "States began adopting the secret ballot in 1888, and how someone votes has stayed private since. An “I Voted” sticker shows that a person voted without revealing how. It says one thing: I took part.",
+     "en": "Through most of the 1800s, many Americans voted with ballots printed by the political parties. The tickets were often easy to tell apart, sometimes by color, and voters handed them in where others could see. States began adopting a government-printed secret ballot in 1888, starting with Louisville and Massachusetts, and how someone votes has been private since. An “I Voted” sticker shows that a person voted without revealing how. A 1919 Grand Rapids campaign put it plainly: “Whether or not you vote is not your business; it is Uncle Sam’s business. HOW you vote is your business.”",
      "facts": [
-      "secret-ballot-1888"
+      "secret-ballot-1888",
+      "grandrapids-1919-tags"
      ],
-     "es": "Los estados empezaron a adoptar el voto secreto en 1888, y desde entonces el voto de cada persona es privado. Un sticker de “I Voted” muestra que alguien votó sin revelar por quién. Dice una sola cosa: participé."
+     "es": "Durante buena parte del siglo XIX, muchos estadounidenses votaban con boletas impresas por los partidos políticos. Era fácil distinguirlas, a veces por el color, y los votantes las entregaban a la vista de otros. Los estados empezaron a adoptar una boleta secreta impresa por el gobierno en 1888, comenzando por Louisville y Massachusetts, y desde entonces el voto de cada persona es privado. Un sticker de “I Voted” muestra que alguien votó sin revelar por quién. Una campaña de Grand Rapids de 1919 lo dijo claramente: votar o no es asunto del Tío Sam, y cómo votas es asunto tuyo (“Whether or not you vote is not your business; it is Uncle Sam’s business. HOW you vote is your business.”)."
     },
     {
      "h3": {
@@ -344,13 +352,13 @@
    ],
    "after": [
     {
-     "en": "None of these studies tested whether a paper “I Voted” sticker increases turnout. The mailer and Facebook studies tested what happens when voting becomes visible to neighbors or friends, and the one test of a digital sticker link found no extra effect. A paper sticker may carry a similar signal, but that specific effect hasn’t been measured.",
+     "en": "None of these studies tested whether a paper “I Voted” sticker increases turnout. The mailer and Facebook studies tested what happens when voting becomes visible to neighbors or friends, and the one test of a digital sticker link found no extra effect. A paper sticker may send a similar signal, but none of these studies measured it.",
      "facts": [
       "facebook-2010",
       "social-pressure-2006",
       "voteorg-2018-sticker-sms"
      ],
-     "es": "Ninguno de estos estudios probó si un sticker de papel de “I Voted” aumenta la participación. Los estudios del correo y de Facebook probaron qué pasa cuando el voto se vuelve visible para los vecinos o los amigos, y la única prueba de un enlace a un sticker digital no encontró un efecto extra. Un sticker de papel puede mandar una señal parecida, pero ese efecto en particular no se ha medido."
+     "es": "Ninguno de estos estudios probó si un sticker de papel de “I Voted” aumenta la participación. Los estudios del correo y de Facebook probaron qué pasa cuando el voto se vuelve visible para los vecinos o los amigos, y la única prueba de un enlace a un sticker digital no encontró un efecto extra. Un sticker de papel puede mandar una señal parecida, pero ninguno de estos estudios lo midió."
     }
    ]
   },
@@ -857,10 +865,6 @@
     "es": "Un listón del Smithsonian marca el primer voto de una mujer bajo la Enmienda 19. Apoya a la fórmula de Harding y Coolidge, un recordatorio de que los recuerdos del voto no siempre fueron no partidistas."
    },
    "fact": "nmah-1920-first-vote-badge",
-   "mark": {
-    "en": "Ribbon",
-    "es": "Listón"
-   },
    "kind": "precursor"
   },
   {
@@ -977,14 +981,28 @@
     "es": "El óvalo con la bandera"
    },
    "body": {
-    "en": "Janet Boudreau designs a white oval with a waving flag for Intab. It becomes one of the country's most recognizable voting sticker designs.",
-    "es": "Janet Boudreau diseña un óvalo blanco con una bandera ondeando para Intab. Se vuelve uno de los diseños de stickers para votar más reconocibles del país."
+    "en": "Janet Boudreau designs a white oval with a waving flag for Intab. It becomes one of the country's most recognizable voting sticker designs. She has said she drew it after seeing a Washington state county hand out a plain black-and-white sticker [with an X in a square](https://www.wkyt.com/2026/10/31/i-voted-sticker-creator-talks-about-how-it-started/).",
+    "es": "Janet Boudreau diseña un óvalo blanco con una bandera ondeando para Intab. Se vuelve uno de los diseños de stickers para votar más reconocibles del país. Ella ha dicho que lo dibujó después de ver que un condado del estado de Washington repartía un sticker sencillo en blanco y negro [con una X en un cuadro](https://www.wkyt.com/2026/10/31/i-voted-sticker-creator-talks-about-how-it-started/)."
    },
    "fact": "boudreau-1987",
    "mark": {
     "en": "Flag oval",
     "es": "Óvalo"
    },
+   "kind": "sticker"
+  },
+  {
+   "id": "minnesota-1989",
+   "year": 1989,
+   "title": {
+    "en": "“I VOTED” and nothing more",
+    "es": "“I VOTED” y nada más"
+   },
+   "body": {
+    "en": "Minnesota’s election law lets the secretary of state send counties donated stickers that say “I VOTED” and nothing more. Election judges may offer one to each voter who has signed the polling place roster.",
+    "es": "La ley electoral de Minnesota permite que la secretaría de estado envíe a los condados stickers donados que digan “I VOTED” y nada más. Los jueces electorales pueden ofrecerle uno a cada votante que haya firmado el registro del lugar de votación."
+   },
+   "fact": "minnesota-1989-law",
    "kind": "sticker"
   },
   {
@@ -1219,6 +1237,46 @@
    "kind": "digital"
   },
   {
+   "id": "lowell-1918",
+   "year": 1918,
+   "title": {
+    "en": "“Tag every voter”",
+    "es": "Una etiqueta para cada votante"
+   },
+   "body": {
+    "en": "The Lowell Ledger, a weekly near Grand Rapids, Michigan, reports that a local Americanization society has started “a movement to tag every voter” and will hand out tags reading “I am an American. I voted. Did you?” at the November election. It’s the earliest example we found.",
+    "es": "El Lowell Ledger, un semanario cerca de Grand Rapids, Michigan, informa que una sociedad local de americanización inició un movimiento para ponerle una etiqueta a cada votante y que repartirá etiquetas con el texto “I am an American. I voted. Did you?” (soy estadounidense, voté, ¿y tú?) en la elección de noviembre. Es el ejemplo más antiguo que encontramos."
+   },
+   "fact": "lowell-1918-tag-notice",
+   "kind": "precursor",
+   "chip": {
+    "en": "Michigan",
+    "es": "Michigan"
+   },
+   "mark": {
+    "en": "Paper tags",
+    "es": "Etiquetas"
+   }
+  },
+  {
+   "id": "grand-rapids-1919",
+   "year": 1919,
+   "title": {
+    "en": "“I voted. Did you?” tags at the polls",
+    "es": "Etiquetas de “I voted. Did you?” en los lugares de votación"
+   },
+   "body": {
+    "en": "In Grand Rapids, Michigan, committees of women hand voters paper tags at the polls reading “I am an American. I voted. Did you?” Only voters can get one. After each election, schoolchildren collect the tags, and the schools that bring back the most win flags. The campaign was part of the city’s Americanization work, which pushed immigrants to become citizens and vote.",
+    "es": "En Grand Rapids, Michigan, comités de mujeres les dan a los votantes etiquetas de papel en los lugares de votación que dicen “I am an American. I voted. Did you?” (soy estadounidense, voté, ¿y tú?). Solo quien vota puede recibir una. Después de cada elección, los niños juntan las etiquetas, y las escuelas que reúnen más ganan banderas. La campaña era parte del trabajo de americanización de la ciudad, que impulsaba a los inmigrantes a hacerse ciudadanos y votar."
+   },
+   "fact": "grandrapids-1919-tags",
+   "kind": "precursor",
+   "chip": {
+    "en": "Grand Rapids",
+    "es": "Grand Rapids"
+   }
+  },
+  {
    "id": "blewett-1920",
    "year": 1920,
    "order": -1,
@@ -1227,8 +1285,8 @@
     "es": "Etiquetas de “I have voted” para una elección estudiantil"
    },
    "body": {
-    "en": "For a student election at Ben Blewett Junior High School in St. Louis, the school’s printing department makes “I have voted” tags, one for each student as they vote. It’s the earliest example we found. The school, open since 1917, already ran its own student government: each homeroom elected two delegates to a grade congress, [its first principal wrote in 1919](https://www.jstor.org/stable/1078421). A few years later, Tennessee Williams was a student there: [his 1925 Blewett yearbook](https://cdn.craft.cloud/97cd51c5-b816-4a93-aea9-fd7e2c5e47da/assets/TWAR_2005-07-Cave-HNOC_holdings.pdf) has one of his early poems.",
-    "es": "Para una elección estudiantil en Ben Blewett Junior High School, en St. Louis, el departamento de imprenta de la escuela hace etiquetas de “I have voted” (yo voté), una para cada estudiante al votar. Es el ejemplo más antiguo que encontramos. La escuela, abierta desde 1917, ya tenía su propio gobierno estudiantil: cada grupo elegía a dos delegados para un congreso de su grado, [según escribió su primer director en 1919](https://www.jstor.org/stable/1078421). Unos años después, Tennessee Williams estudió allí: [su anuario de Blewett de 1925](https://cdn.craft.cloud/97cd51c5-b816-4a93-aea9-fd7e2c5e47da/assets/TWAR_2005-07-Cave-HNOC_holdings.pdf) tiene uno de sus primeros poemas."
+    "en": "For a student election at Ben Blewett Junior High School in St. Louis, the school’s printing department makes “I have voted” tags, one for each student as they vote. The school, open since 1917, already ran its own student government: each homeroom elected two delegates to a grade congress, [its first principal wrote in 1919](https://www.jstor.org/stable/1078421). A few years later, Tennessee Williams was a student there: [his 1925 Blewett yearbook](https://cdn.craft.cloud/97cd51c5-b816-4a93-aea9-fd7e2c5e47da/assets/TWAR_2005-07-Cave-HNOC_holdings.pdf) has one of his early poems.",
+    "es": "Para una elección estudiantil en Ben Blewett Junior High School, en St. Louis, el departamento de imprenta de la escuela hace etiquetas de “I have voted” (yo voté), una para cada estudiante al votar. La escuela, abierta desde 1917, ya tenía su propio gobierno estudiantil: cada grupo elegía a dos delegados para un congreso de su grado, [según escribió su primer director en 1919](https://www.jstor.org/stable/1078421). Unos años después, Tennessee Williams estudió allí: [su anuario de Blewett de 1925](https://cdn.craft.cloud/97cd51c5-b816-4a93-aea9-fd7e2c5e47da/assets/TWAR_2005-07-Cave-HNOC_holdings.pdf) tiene uno de sus primeros poemas."
    },
    "fact": "stlouis-blewett-1920",
    "kind": "precursor",
@@ -1236,6 +1294,34 @@
     "en": "St. Louis",
     "es": "St. Louis"
    }
+  },
+  {
+   "id": "lowell-1952",
+   "year": 1952,
+   "title": {
+    "en": "Scouts at the polls, pupils down the block",
+    "es": "Scouts en el lugar de votación, alumnos a una cuadra"
+   },
+   "body": {
+    "en": "In Lowell, Michigan, the local paper reports that Boy Scouts will hand out “I Voted” badges at the polling place on Election Day. Grade-school pupils will collect the “I Have Voted” tags at least a block away, and the classroom that gathers the most will win an award.",
+    "es": "En Lowell, Michigan, el periódico local informa que los Boy Scouts repartirán insignias de “I Voted” en el lugar de votación el Día de las Elecciones. Los alumnos de primaria juntarán las etiquetas de “I Have Voted” por lo menos a una cuadra de distancia, y el salón que reúna más ganará un premio."
+   },
+   "fact": "lowell-1952-badges",
+   "kind": "precursor"
+  },
+  {
+   "id": "morton-1960",
+   "year": 1960,
+   "title": {
+    "en": "Camp Fire members pin on tags in Texas",
+    "es": "Integrantes de Camp Fire ponen etiquetas en Texas"
+   },
+   "body": {
+    "en": "In Morton, Texas, the Wocaha Camp Fire group helps a get-out-the-vote campaign by pinning “I Have Voted” tags on voters, the Morton Tribune reports.",
+    "es": "En Morton, Texas, el grupo Wocaha de Camp Fire ayuda en una campaña para salir a votar poniéndoles etiquetas de “I Have Voted” a los votantes, según el Morton Tribune."
+   },
+   "fact": "morton-1960-tags",
+   "kind": "precursor"
   },
   {
    "id": "campfire-1962",

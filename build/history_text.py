@@ -80,12 +80,12 @@ def main():
         attach(co, co['fact'], 'callout')
         if co.get('event') not in {e['id'] for e in page['events']}:
             errors.append(f'callout: no timeline entry "{co.get("event")}"')
-        # 1920 is "the earliest example we found", never the first or the origin (outreach-plan.md). The
+        # The callout's year (1918 Michigan since Nov 1) is "the earliest example we found", never the first or the origin (outreach-plan.md). The
         # limits line may say "first adhesive sticker" because it says that one is unknown.
         for lang, words in (('en', ('first', 'origin', 'invent')), ('es', ('primer', 'origen', 'invent'))):
             s = ' '.join(co[k].get(lang, '') for k in ('h', 'place', 'body')).lower()
             if any(w in s for w in words):
-                errors.append(f'callout ({lang}): says first, origin or invented about 1920')
+                errors.append(f'callout ({lang}): says first, origin or invented about the earliest example')
 
     for key, c in page.get('charts', {}).items():
         where = f'chart {key}'

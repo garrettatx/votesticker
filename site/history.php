@@ -29,14 +29,14 @@ function vote_h_md( $text ) {
 
 function vote_history_meta() {
 	return array(
-		'title' => t( 'History of the I Voted Sticker: From 1920 Tags to Today' ),
+		'title' => t( 'History of the I Voted Sticker: From 1918 Tags to Today' ),
 		// A no-break space keeps "I Voted" on one line, so the H1 never ends a line on "I".
 		'h1' => t( "Where the I Voted Sticker Came From" ),
 		'eyebrow' => '', // the breadcrumb already says Sticker History
 		// Oct 31 (pass 11, press release): the 1920 St. Louis tags lead the description and the lead. Always
 		// "the earliest example we found", never the first or the origin (docs/outreach-plan.md).
-		'lead' => t( 'The earliest example we found is from 1920: paper “I have voted” tags for a student election at a St. Louis school. Over time, a small giveaway became an Election Day tradition, and a chance for local artists, students and election offices to make their mark.' ),
-		'desc' => t( 'I voted sticker history with a source for each step: 1920 “I have voted” tags at a St. Louis school (the earliest example we found), a 1985 Phoenix campaign, the 1987 flag oval and today\'s contests.' ),
+		'lead' => t( 'The earliest example we found is from 1918: paper “I voted. Did you?” tags for voters around Grand Rapids, Michigan. Over time, a small giveaway became an Election Day tradition, and a chance for local artists, students and election offices to make their mark.' ),
+		'desc' => t( 'I voted sticker history with a source for each step: 1918 “I voted. Did you?” tags in Michigan (the earliest example we found), a 1950 car-window sticker, a 1985 Phoenix campaign, the 1987 flag oval and today\'s contests.' ),
 		'index' => ! vote_es() || VOTE_ES_INDEX,
 	);
 }
@@ -143,7 +143,7 @@ function vote_h_track_x( $events ) {
 	$n = count( $events ); $lo = 5; $hi = 95;
 	if ( 1 === $n ) { return array( 50 ); }
 	$y0 = $events[0]['year']; $y1 = $events[ $n - 1 ]['year'];
-	$gap = min( 9, ( $hi - $lo ) / ( $n - 1 ) * 0.9 );
+	$gap = min( 9, ( $hi - $lo ) / ( $n - 1 ) ); // full even spacing when crowded (Nov 1: 11 Origins entries overlapped at 1024)
 	$x = array();
 	foreach ( $events as $i => $e ) { $x[ $i ] = $y1 > $y0 ? $lo + ( $e['year'] - $y0 ) / ( $y1 - $y0 ) * ( $hi - $lo ) : $lo + $i * $gap; }
 	for ( $i = 1; $i < $n; $i++ ) { $x[ $i ] = max( $x[ $i ], $x[ $i - 1 ] + $gap ); }
@@ -361,15 +361,15 @@ function vote_history_jump() {
 
 function vote_history_why() {
 	return '<p class="why__hist"><span class="why__pic" aria-hidden="true"><svg viewBox="0 0 160 140" width="56" height="49"><path d="M50 14 L20 30 L6 62 L30 72 L36 58 L36 132 L124 132 L124 58 L130 72 L154 62 L140 30 L110 14 Q80 34 50 14Z" fill="#DCE3F2" stroke="#14295E" stroke-width="5" stroke-linejoin="round"/><ellipse cx="104" cy="64" rx="19" ry="12" fill="#FBF6E8" stroke="#C1272D" stroke-width="4"/></svg><span class="why__arrow">→</span><img src="' . vote_v( 'assets/states/tx/tx-vote-2.jpg' ) . '" alt="" width="48" height="48" loading="lazy"></span>'
-		. '<span>' . vote_e( t( 'Who started the I voted sticker? The earliest record we found is from 1920: paper “I have voted” tags at a St. Louis school. The waving American flag oval many people picture was drawn in 1987 by Janet Boudreau for Intab, an election supply company. The Smithsonian\'s National Museum of American History keeps a 1920 ribbon that marked a woman\'s first vote.' ) ) . ' <a href="' . vote_pbase() . VOTE_HISTORY_SLUG . '/">' . vote_e( t( 'How the I voted sticker became a tradition' ) ) . '</a></span></p>';
+		. '<span>' . vote_e( t( 'Who started the I voted sticker? The earliest record we found is from 1918: paper “I voted. Did you?” tags for voters around Grand Rapids, Michigan. The waving American flag oval many people picture was drawn in 1987 by Janet Boudreau for Intab, an election supply company. The Smithsonian\'s National Museum of American History keeps a 1920 ribbon that marked a woman\'s first vote.' ) ) . ' <a href="' . vote_pbase() . VOTE_HISTORY_SLUG . '/">' . vote_e( t( 'How the I voted sticker became a tradition' ) ) . '</a></span></p>';
 }
 
-// The finding a reader from the press release came for (Oct 31, pass 11): the 1920 Blewett tags, what they
+// The finding a reader from the press release came for (Oct 31, pass 11; 1919 Grand Rapids since Nov 1): what they
 // are and aren't, and the report they come from. Words and facts in build/history.json (`callout`).
 function vote_h_callout( $co ) {
 	if ( ! $co || ! empty( $co['pending'] ) ) { return ''; }
 	$lang = vote_es() ? ' lang="en"' : '';
-	return '<aside class="hist-find" aria-labelledby="find-h"><p class="hist-find__year" aria-hidden="true"><span class="hist-find__num">1920</span><span class="hist-find__place">' . vote_e( vote_h_tx( $co['place'] ) ) . '</span></p>'
+	return '<aside class="hist-find" aria-labelledby="find-h"><p class="hist-find__year" aria-hidden="true"><span class="hist-find__num">' . (int) ( $co['year'] ?? 1918 ) . '</span><span class="hist-find__place">' . vote_e( vote_h_tx( $co['place'] ) ) . '</span></p>'
 		. '<div class="hist-find__txt"><h2 class="hist-find__h" id="find-h">' . vote_e( vote_h_tx( $co['h'] ) ) . '</h2>'
 		. '<p>' . vote_h_md( vote_h_tx( $co['body'] ) ) . '</p>'
 		. '<p class="hist-find__limits">' . vote_h_md( vote_h_tx( $co['limits'] ) ) . '</p>'
@@ -408,7 +408,7 @@ function vote_history() {
 		$out .= '</section>';
 	}
 	$out .= '<section class="guide" aria-labelledby="method-h"><h2 class="display-h guide__h" id="method-h">' . vote_e( t( 'How We Check the Story' ) ) . '</h2>'
-		. '<p>' . vote_e( t( '“I Voted” sticker history is full of claims repeated so often that their original source gets lost. This page starts with museum records, election office materials, laws, original research and reporting from the time. When the best evidence is a later retelling, the page says so. If a claim can\'t be verified well enough, it isn\'t here.' ) ) . '</p>'
+		. '<p>' . vote_e( t( '“I Voted” sticker history is full of claims repeated so often that their original source gets lost. This page starts with museum records, election office materials, laws, original research and reporting from the time. When the best evidence is a later retelling, the page says so. When we haven\'t read the original source ourselves, we say so.' ) ) . '</p>'
 		. '<p>' . vote_e( t( 'Sources are linked throughout the page.' ) ) . '</p>'
 		. '<p class="cite">' . vote_e( t( 'Last reviewed %s', vote_checked( $d['checked'] ) ) ) . ' · <a href="' . vote_pbase() . 'about/#fix-h">' . vote_e( t( 'Share a source or correction' ) ) . '</a></p></section>';
 	return $out . '</div>';
