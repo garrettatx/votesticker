@@ -141,3 +141,20 @@ sticker's history (tags back to 1920). Garrett
 - Blocked on EIN's new-account review (up to two business days). When EIN emails approval: recheck the dateline and
   the history page callout, then Garrett clicks Submit on the draft (editorial review about two hours).
 - Final copy: `docs/press-release-ein.html`. Spare image for pitches and social: the timeline graphic (option C).
+
+## Local Media Outreach Log (November 1, 2026)
+
+Pitch + full release (dateline Nov 1), subject `Austin creator found what voters wore before "I Voted" stickers`,
+from garrett@garrettdigital.com, one outlet per message, on-camera offer included (Garrett approved). Drafts:
+`docs/media-outreach-20261102.html`. Press kit: https://votesticker.org/press/
+
+| Outlet | Route | Status |
+|---|---|---|
+| CBS Austin (KEYE) | news@cbsaustin.com (verified on station page) | Sent 5:53 p.m., both images attached |
+| FOX 7 (KTBC) | ktbcnews@fox.com (verified on station page) | Sent ~6:00 p.m., both images attached |
+| Community Impact | Contact the newsroom form, Newsroom / Central Austin | Submitted; "Message Sent" confirmation |
+| KXAN | ReportIt@KXAN.com (unverified: bot check) | Held until Garrett confirms the address |
+| KVUE | Typeform has no newsroom option | Skipped; call (512) 459-9442 or pick a reporter later |
+| KUT, Statesman | No verified address | Held |
+
+Follow-up: none before Nov 4. Replies go to garrett@garrettdigital.com.
