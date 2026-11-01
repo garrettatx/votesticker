@@ -865,7 +865,7 @@ button.link-quiet:hover { text-decoration: underline; }
 .hist-find__place { font-size: var(--fs-xs); font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
 .hist-find__txt { padding: var(--s4) var(--s5) var(--s5); min-width: 0; }
 .hist-find__h { margin: 0 0 var(--s2); font-size: var(--fs-h3); line-height: 1.2; color: var(--ink); }
-.hist-find p { margin: 0 0 var(--s3); max-width: 38rem; }
+.hist-find__txt p { margin: 0 0 var(--s3); max-width: 38rem; }  /* Nov 1: was `.hist-find p`, which also gave the year panel (a <p>) a bottom margin: a cream strip under the navy block */
 .hist-find__limits { font-size: var(--fs-sm); color: var(--muted); }
 .hist-find__src { margin-bottom: 0 !important; font-size: var(--fs-xs); color: var(--muted); }
 .hist-find__src a { color: var(--ink); font-weight: 700; overflow-wrap: anywhere; }
