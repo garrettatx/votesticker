@@ -34,7 +34,7 @@ function vote_history_meta() {
 		'h1' => t( "Where the I Voted Sticker Came From" ),
 		'eyebrow' => '', // the breadcrumb already says Sticker History
 		// Oct 31 (pass 11, press release): the 1920 St. Louis tags lead the description and the lead. Always
-		// "the earliest example we found", never the first or the origin (docs/outreach-plan.md).
+		// "the earliest example we found", never the first or the origin (outreach plan, kept privately).
 		'lead' => t( 'The earliest example we found is from 1918: paper “I voted. Did you?” tags for voters around Grand Rapids, Michigan. This history follows those tags to the flag oval of 1987 and the local designs voters wear today.' ),
 		'desc' => t( 'I voted sticker history with a source for each step: 1918 “I voted. Did you?” tags in Michigan (the earliest example we found), a 1950 car-window sticker, a 1985 Phoenix campaign, the 1987 flag oval and today\'s contests.' ),
 		'index' => ! vote_es() || VOTE_ES_INDEX,

@@ -1265,3 +1265,34 @@ build records" (e6b8073); IndexNow "108 sitemap URLs, 64 to submit", HTTP 200. L
 
 **Next.** Nov 2 morning: check portal.ct.gov press releases for a November hotline. From Nov 4 the answer leaves every page on
 its own (post phase).
+
+---
+
+## November 1, Afternoon: History, Press Page, Home Copy (Main Session)
+
+Outreach, press-release and Wikipedia work from this session is logged privately (seo-command-center,
+`clients/hobby-sites/votesticker-ops/`); this public repo keeps only the site changes.
+
+**History page.** Earliest example is now the October 31, 1918 Lowell Ledger notice of "I am an American. I voted. Did
+you?" tags (read on the scan), with Gavit's *Americans by Choice* (1922, pp. 330–333) for the March/April 1919 Grand Rapids
+polls. New entries: 1950 car-window "Thank Me I Voted Republican" sticker (JSTOR, Brush Gallery), 1952 Sherman TX
+"I have voted, have you?" badges (Austin Statesman via ProQuest), 1952 Lowell Scouts and badges, 1960 Morton TX Camp Fire tags,
+1989 Minnesota "I VOTED and nothing more" law, Boudreau's Washington X-in-a-square note (WKYT 2026), Blewett student
+government (Cox 1919). 55 headings renamed to name their subject; secret-ballot paragraph explains party tickets; Miami 1950
+badge credits Mental Floss; "No one knows" phrasing gone; source badges 5px corners; mobile answer-table and callout-corner
+fixes. Commits 3b60be3, 052cf23, 87b3334, 38ae9e4, 9852878.
+
+**Press kit.** Static `/press/` (981c0a0): release, sticker image, 1918 notice scan (public domain), headshot, captions,
+ZIP. Indexable, unlinked and out of the sitemap until after the election.
+
+**Home page.** Plainer hero lead, no eyebrow slogan, "Free. No account needed.", privacy line narrowed to what the code does
+(stickers made in the browser, never uploaded; checked app.js), first-person "Why I Built VoteSticker.org", descriptive
+headings (99e1204). Footer consultancy line removed (cb9dc66). Every deploy passed QA and live checks.
+
+**After Nov 4 (added today).**
+- Footer "Press" link and a sitemap entry for /press/.
+- Redo the history timeline graphic (it still says "From 1920").
+- Home page: consider merging How It Works and the overlapping FAQs (structure, so after the freeze).
+- History page ideas from the Wikipedia comparison: Intab's original name and the oval's size, regional designs (Travis County
+  bluebonnet), the Butkowski 2023 selfie study, the 2020 plastic shield on Anthony's headstone. Verify each first.
+- Grosse Pointe News, Aug 7, 1952 ("You Bet I Voted. Did You?" tags): server unreachable Nov 1; read it before adding.
