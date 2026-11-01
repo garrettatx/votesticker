@@ -11,6 +11,10 @@
   "mgaleg.maryland.gov": {
    "en": "Maryland law",
    "es": "la ley de Maryland"
+  },
+  "washingtoncountymdvotes.gov": {
+   "en": "the Washington County Board of Elections",
+   "es": "la junta electoral del condado de Washington (Board of Elections)"
   }
  },
  "dates": {
@@ -189,7 +193,26 @@
    "checked": "2026-10-21",
    "quote": "Click to download the I VOTED sticker you like!",
    "status": "verified"
-  }
+  },
+  "more": [
+   {
+    "place": {
+     "en": "Washington County",
+     "es": "Condado de Washington"
+    },
+    "kind": "county",
+    "en": "Students won the county's 2026 I Voted sticker contest after a public vote: Finnegan of Smithsburg Elementary, Martha of Emmanuel Christian School and Kelly of the Barbara Ingram School for the Arts for I Voted, and Ella of Cascade Elementary for Future Voter. The Board of Elections puts the winning art on its I Voted stickers.",
+    "es": "Estudiantes ganaron el concurso de stickers I Voted 2026 del condado tras una votación pública: Finnegan, de Smithsburg Elementary; Martha, de Emmanuel Christian School; y Kelly, de Barbara Ingram School for the Arts, en I Voted, y Ella, de Cascade Elementary, en Future Voter. La junta electoral pone el arte ganador en sus stickers I Voted.",
+    "until": "2026-11-03",
+    "en_after": "Students won the county's 2026 I Voted sticker contest after a public vote: Finnegan of Smithsburg Elementary, Martha of Emmanuel Christian School and Kelly of the Barbara Ingram School for the Arts for I Voted, and Ella of Cascade Elementary for Future Voter. The Board of Elections put the winning art on its I Voted stickers.",
+    "es_after": "Estudiantes ganaron el concurso de stickers I Voted 2026 del condado tras una votación pública: Finnegan, de Smithsburg Elementary; Martha, de Emmanuel Christian School; y Kelly, de Barbara Ingram School for the Arts, en I Voted, y Ella, de Cascade Elementary, en Future Voter. La junta electoral puso el arte ganador en sus stickers I Voted.",
+    "src": "https://washingtoncountymdvotes.gov/?page_id=1711",
+    "quote": "Congratulations to our 2026 “I Voted” Sticker Contest Winners",
+    "checked": "2026-11-01",
+    "status": "verified",
+    "notes": "Washington County MD Board of Elections (new site; old washco-mdelections.org says it moved). Winners by category with schools. County release Jan 5, 2026 (washco-md.net): public vote 'to help select the artwork that will be featured on future “I Voted” stickers used during elections in Washington County.' No page names Nov 3 pickup places, so none are claimed. curl read. Demand 0."
+   }
+  ]
  },
  "faq": {
   "provisional": {

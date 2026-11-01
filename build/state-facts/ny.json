@@ -35,6 +35,10 @@
   "elections.dutchessny.gov": {
    "en": "the Dutchess County Board of Elections",
    "es": "la junta electoral del condado de Dutchess (Board of Elections)"
+  },
+  "www.facebook.com": {
+   "en": "the Board of Elections in the City of New York on Facebook",
+   "es": "la Junta Electoral de la Ciudad de Nueva York en Facebook"
   }
  },
  "dates": {
@@ -259,6 +263,23 @@
    "notes": "Checked 2026-10-28, no official statement found on stickers for early mail or absentee voters: NYC311 general election guide (sticker only at poll sites), Ulster County contest page ('distributed to all voters at the November 3, 2026 General Election', no word on how mail voters get one), elections.ny.gov, Monroe, Erie and Westchester board sites (no sticker pages found), Genesee, Albany and Tioga contests (polling sites). WHEC news quotes the State Board saying counties may buy stickers at their discretion; news only, not used."
   },
   "more": [
+   {
+    "place": {
+     "en": "New York City",
+     "es": "Ciudad de Nueva York"
+    },
+    "kind": "city",
+    "en": "Vote early on Halloween, Saturday, October 31: the Board of Elections says the first 300 voters get a new limited-edition Halloween sticker. Polls are open 9 a.m. to 5 p.m.",
+    "es": "Vota por anticipado en Halloween, el sábado 31 de octubre: la Junta Electoral dice que los primeros 300 votantes reciben un nuevo sticker de Halloween de edición limitada. Los lugares de votación abren de 9 a.m. a 5 p.m.",
+    "until": "2026-10-31",
+    "en_after": "On Halloween, October 31, the Board of Elections offered the first 300 voters a new limited-edition Halloween sticker during early voting.",
+    "es_after": "En Halloween, el 31 de octubre, la Junta Electoral ofreció a los primeros 300 votantes un nuevo sticker de Halloween de edición limitada durante la votación anticipada.",
+    "src": "https://www.facebook.com/theNYCBoardofElections/posts/vote-early-on-halloween-first-300-voters-get-a-new-design-limited-edition-hallow/1534236132071631/",
+    "quote": "First 300 voters get a NEW DESIGN Limited-Edition Halloween Sticker! Polls open 9-5",
+    "checked": "2026-11-01",
+    "status": "verified",
+    "notes": "Verified Facebook page of The Board of Elections in the City of New York (blue badge), post dated Oct 31, 2026, 6:50 a.m. ('Yesterday' when read Nov 1); opens as reel 2671560113261294. Read in Chrome. Demand: GSC Oct 15-31, 52 impressions on NYC sticker queries; Ahrefs 'nyc i voted sticker' 30, 'i voted sticker nyc' 30. No official marathon-day post found."
+   },
    {
     "place": {
      "en": "Madison County",

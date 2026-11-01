@@ -19,6 +19,10 @@
   "www.oag.state.va.us": {
    "en": "the Virginia Attorney General",
    "es": "la Fiscalía General de Virginia (Attorney General)"
+  },
+  "www.williamsburgva.gov": {
+   "en": "the City of Williamsburg",
+   "es": "la ciudad de Williamsburg"
   }
  },
  "dates": {
@@ -228,7 +232,26 @@
    "checked": "2026-10-23",
    "quote": "Limited quantities of America 250 \"I Voted\" stickers will be distributed during early voting and at each precinct on Election Day.",
    "status": "verified"
-  }
+  },
+  "more": [
+   {
+    "place": {
+     "en": "City of Williamsburg",
+     "es": "Ciudad de Williamsburg"
+    },
+    "kind": "city",
+    "en": "Rose, a Berkeley Middle School student, drew the city's I Voted sticker, and Penny, from Matthew Whaley Elementary, drew its Future Voter sticker. They're the city's official vote stickers this fall, from a contest tied to the nation's 250th anniversary.",
+    "es": "Rose, estudiante de Berkeley Middle School, dibujó el sticker I Voted de la ciudad, y Penny, de Matthew Whaley Elementary, dibujó su sticker Future Voter. Son los stickers oficiales de votación de la ciudad este otoño, de un concurso dedicado a los 250 años del país.",
+    "until": "2026-11-03",
+    "en_after": "Rose, a Berkeley Middle School student, drew the city's I Voted sticker, and Penny, from Matthew Whaley Elementary, drew its Future Voter sticker. They were the city's official vote stickers in fall 2026, from a contest tied to the nation's 250th anniversary.",
+    "es_after": "Rose, estudiante de Berkeley Middle School, dibujó el sticker I Voted de la ciudad, y Penny, de Matthew Whaley Elementary, dibujó su sticker Future Voter. Fueron los stickers oficiales de votación de la ciudad en el otoño de 2026, de un concurso dedicado a los 250 años del país.",
+    "src": "https://www.williamsburgva.gov/m/newsflash/Home/Detail/1282",
+    "quote": "The winning designs will be used as official vote stickers during the City of Williamsburg’s 2026 election cycle this fall, allowing residents to celebrate their participation in the democratic process through artwork created by local students.",
+    "checked": "2026-11-01",
+    "status": "verified",
+    "notes": "City of Williamsburg news flash, July 9, 2026; run with the Voter Registrar's Office and the Williamsburg Public Art Council; public online poll picked winners. curl read. Demand 0."
+   }
+  ]
  },
  "faq": {
   "provisional": {

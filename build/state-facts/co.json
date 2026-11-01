@@ -23,6 +23,22 @@
   "leg.colorado.gov": {
    "en": "the Colorado General Assembly",
    "es": "la Asamblea General de Colorado (Colorado General Assembly)"
+  },
+  "clerkandrecorder.elpasoco.com": {
+   "en": "the El Paso County Clerk and Recorder",
+   "es": "la oficina del secretario y registrador del condado de El Paso (Clerk and Recorder)"
+  },
+  "www.jeffco.us": {
+   "en": "Jefferson County Elections",
+   "es": "la oficina electoral del condado de Jefferson (Elections)"
+  },
+  "www.larimer.gov": {
+   "en": "the Larimer County Clerk and Recorder",
+   "es": "la oficina del secretario y registrador del condado de Larimer (Clerk and Recorder)"
+  },
+  "www.mesacounty.us": {
+   "en": "Mesa County Elections",
+   "es": "la oficina electoral del condado de Mesa (Elections)"
   }
  },
  "dates": {
@@ -239,7 +255,77 @@
    "checked": "2026-10-23",
    "quote": "available at ballot drop boxes and vote centers while supplies last",
    "status": "verified"
-  }
+  },
+  "more": [
+   {
+    "place": {
+     "en": "El Paso County",
+     "es": "Condado de El Paso"
+    },
+    "kind": "county",
+    "en": "Look in your ballot packet. Six students drew this year's stickers, from Mia, a 3rd grader at the Academy for Advanced and Creative Learning, to Olivia, an 11th grader at Pine Creek High School. The county put the winning designs in every ballot packet it mailed to active voters on October 5.",
+    "es": "Busca en tu paquete de boleta. Seis estudiantes dibujaron los stickers de este año, desde Mia, de 3.er grado en Academy for Advanced and Creative Learning, hasta Olivia, de 11.º grado en Pine Creek High School. El condado puso los diseños ganadores en cada paquete de boleta que envió por correo a los votantes activos el 5 de octubre.",
+    "until": "2026-11-03",
+    "en_after": "Six students drew the county's 2026 stickers, from Mia, a 3rd grader at the Academy for Advanced and Creative Learning, to Olivia, an 11th grader at Pine Creek High School. The winning designs were in every ballot packet mailed to active voters on October 5.",
+    "es_after": "Seis estudiantes dibujaron los stickers 2026 del condado, desde Mia, de 3.er grado en Academy for Advanced and Creative Learning, hasta Olivia, de 11.º grado en Pine Creek High School. Los diseños ganadores iban en cada paquete de boleta enviado por correo a los votantes activos el 5 de octubre.",
+    "src": "https://clerkandrecorder.elpasoco.com/i-voted-sticker-design-winners-for-2026-general-election/",
+    "quote": "The winning sticker designs will be included in all election ballot packets sent to active, registered voters Monday, October 5.",
+    "checked": "2026-11-01",
+    "status": "verified",
+    "notes": "El Paso County Clerk and Recorder news, Sept 29, 2026, headline 'I Voted sticker design winners announced for 2026 General Election'; six winners grades 3 to 11 named with schools. curl read. Host clerkandrecorder.elpasoco.com added to ALLOW_HOSTS (www.elpasoco.com home title 'Home - El Paso County, Colorado'; clerk home lists the Oct 5, 2026 ballot mailing). Demand 0."
+   },
+   {
+    "place": {
+     "en": "Jefferson County",
+     "es": "Condado de Jefferson"
+    },
+    "kind": "county",
+    "en": "Look in your ballot envelope. Alyssa of Arvada drew a bighorn sheep with a butterfly, mountains and a sunset, and Marissa, a 7th grader from Littleton, drew a Colorado landscape. Both stickers go in ballot envelopes across the county this November. Ellie, a 4th grader from Golden, drew the Future Voter sticker for kids at vote centers.",
+    "es": "Busca en el sobre de tu boleta. Alyssa, de Arvada, dibujó un borrego cimarrón con una mariposa, montañas y un atardecer, y Marissa, de 7.º grado en Littleton, dibujó un paisaje de Colorado. Los dos stickers van en los sobres de las boletas de todo el condado este noviembre. Ellie, de 4.º grado en Golden, dibujó el sticker Future Voter para los niños en los centros de votación.",
+    "until": "2026-11-03",
+    "en_after": "Alyssa of Arvada drew a bighorn sheep with a butterfly, mountains and a sunset, and Marissa, a 7th grader from Littleton, drew a Colorado landscape. Both stickers went in ballot envelopes across the county for November 3, 2026. Ellie, a 4th grader from Golden, drew the Future Voter sticker for kids.",
+    "es_after": "Alyssa, de Arvada, dibujó un borrego cimarrón con una mariposa, montañas y un atardecer, y Marissa, de 7.º grado en Littleton, dibujó un paisaje de Colorado. Los dos stickers fueron en los sobres de las boletas de todo el condado para el 3 de noviembre de 2026. Ellie, de 4.º grado en Golden, dibujó el sticker Future Voter para los niños.",
+    "src": "https://www.jeffco.us/m/newsflash/Home/Detail/2572",
+    "quote": "Marissa's design, along with Alyssa’s, will be included in ballot envelopes across the county this November, so keep an eye out for their artwork!",
+    "checked": "2026-11-01",
+    "status": "verified",
+    "notes": "Jefferson County CO Elections news flash, posted March 23, 2026 ('Celebrating Our I Voted Sticker Design Contest Winners'); Future Voter: 'Her sticker will be shared with kids across the county at community events and vote centers'. curl read. Demand 0."
+   },
+   {
+    "place": {
+     "en": "Larimer County",
+     "es": "Condado de Larimer"
+    },
+    "kind": "county",
+    "en": "Kylie of Berthoud High School won the 2026 contest with nearly 2,500 community votes, cast by ranked choice. Kylie's sticker, printed on the voter instructions in your mail ballot, puts colorful I VOTED letters over mountains at sunset, a lake and columbines, ringed by the county's towns. Finalists' stickers are at vote centers while supplies last.",
+    "es": "Kylie, de Berthoud High School, ganó el concurso 2026 con casi 2,500 votos de la comunidad, emitidos por voto preferencial. El sticker de Kylie, impreso en las instrucciones que vienen con tu boleta por correo, pone letras de colores que dicen I VOTED sobre montañas al atardecer, un lago y aguileñas, rodeadas por los nombres de los pueblos del condado. Los stickers de los finalistas están en los centros de votación mientras duren.",
+    "until": "2026-11-03",
+    "en_after": "Kylie of Berthoud High School won the 2026 contest with nearly 2,500 community votes, cast by ranked choice. Kylie's sticker, printed on the voter instructions in mail ballots, put colorful I VOTED letters over mountains at sunset, a lake and columbines, ringed by the county's towns. Finalists' stickers were at vote centers while supplies lasted.",
+    "es_after": "Kylie, de Berthoud High School, ganó el concurso 2026 con casi 2,500 votos de la comunidad, emitidos por voto preferencial. El sticker de Kylie, impreso en las instrucciones de las boletas por correo, ponía letras de colores que dicen I VOTED sobre montañas al atardecer, un lago y aguileñas, rodeadas por los nombres de los pueblos del condado. Los stickers de los finalistas estuvieron en los centros de votación mientras duraron.",
+    "src": "https://www.larimer.gov/clerk/elections/i-voted-sticker-contest",
+    "quote": "Kylie's sticker will be included on your voter instructions with your mail ballot. Finalist stickers will be available at vote centers across Larimer County starting October 19 while supplies last.",
+    "checked": "2026-11-01",
+    "status": "verified",
+    "notes": "Larimer County Clerk and Recorder contest page, read in Chrome (curl gets a 403 challenge). 'winner of our I Voted Sticker Contest for 2026'; ranked choice voting explained on the page. Design described from the winning image on the page (looked at): round, I VOTED in colored letters over mountains at sunset, lake, columbines, an elk; ring lists Berthoud, Loveland, Fort Collins, Wellington, Estes Park, Johnstown, Timnath, Windsor, EST. 1861. Demand 0."
+   },
+   {
+    "place": {
+     "en": "Mesa County",
+     "es": "Condado de Mesa"
+    },
+    "kind": "county",
+    "en": "Four students drew the county's 2026 I Voted stickers: Alayna of New Emerson Elementary, Rhett and Jacob of Independence Academy, and Amora of Grand Junction High School, the contest's first high school winner. More than 175 students entered, and the public voted for the winners.",
+    "es": "Cuatro estudiantes dibujaron los stickers I Voted 2026 del condado: Alayna, de New Emerson Elementary; Rhett y Jacob, de Independence Academy; y Amora, de Grand Junction High School. Es la primera vez que gana alguien de preparatoria. Participaron más de 175 estudiantes, y el público votó por los ganadores.",
+    "until": "2026-11-03",
+    "en_after": "Four students drew the county's 2026 I Voted stickers: Alayna of New Emerson Elementary, Rhett and Jacob of Independence Academy, and Amora of Grand Junction High School, the contest's first high school winner. More than 175 students entered, and the public voted for the winners.",
+    "es_after": "Cuatro estudiantes dibujaron los stickers I Voted 2026 del condado: Alayna, de New Emerson Elementary; Rhett y Jacob, de Independence Academy; y Amora, de Grand Junction High School. Es la primera vez que gana alguien de preparatoria. Participaron más de 175 estudiantes, y el público votó por los ganadores.",
+    "src": "https://www.mesacounty.us/news/elections/student-designed-stickers-appear-mesa-county-2026-elections",
+    "quote": "Their artwork will be featured on official “I Voted” stickers distributed during the 2026 election season.",
+    "checked": "2026-11-01",
+    "status": "verified",
+    "notes": "Mesa County news, Jan 14, 2026; winners list also in the Jan 8 release (elections-announce-winners-2026-i-voted-sticker-contest). 'Wilson is the first high school student to win the contest.' curl read. Demand 0."
+   }
+  ]
  },
  "faq": {
   "provisional": {

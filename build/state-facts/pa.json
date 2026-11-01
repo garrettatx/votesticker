@@ -15,6 +15,14 @@
   "www.attorneygeneral.gov": {
    "en": "the Pennsylvania Attorney General",
    "es": "la Fiscalía General de Pennsylvania (Attorney General)"
+  },
+  "www.montgomerycountypa.gov": {
+   "en": "Montgomery County Voter Services",
+   "es": "la oficina de servicios al votante del condado de Montgomery (Voter Services)"
+  },
+  "www.eriecountycouncilpa.gov": {
+   "en": "Erie County Elections and Voter Registration",
+   "es": "la oficina de elecciones e inscripción de votantes del condado de Erie"
   }
  },
  "dates": {
@@ -215,7 +223,43 @@
    "quote": "I Voted N'at design of \"balancing civic duty and Pittsburgh pride\" was printed for the 2025 and 2026 elections cycles in Allegheny County.",
    "notes": "Quote is the end of the sentence, which names the student by surname; the page gives first name, grade and school. Read in Chrome (curl 403). A contest for 2027 is open.",
    "status": "verified"
-  }
+  },
+  "more": [
+   {
+    "place": {
+     "en": "Montgomery County",
+     "es": "Condado de Montgomery"
+    },
+    "kind": "county",
+    "en": "The county ran a contest, open to all residents and aimed at K to 12 students, to design its official I Voted stickers for November 3. The winning designs go out countywide: at polling places, with mail ballots, at One Montgomery Plaza, at satellite election offices and at the Voter Services van.",
+    "es": "El condado organizó un concurso, abierto a todos los residentes y pensado para estudiantes de kínder a 12.º grado, para diseñar sus stickers I Voted oficiales del 3 de noviembre. Los diseños ganadores se reparten en todo el condado: en los lugares de votación, con las boletas por correo, en One Montgomery Plaza, en las oficinas electorales satélite y en la camioneta de Voter Services.",
+    "until": "2026-11-03",
+    "en_after": "The county ran a contest, open to all residents and aimed at K to 12 students, to design its official I Voted stickers for November 3, 2026. The winning designs went out countywide: at polling places, with mail ballots, at One Montgomery Plaza, at satellite election offices and at the Voter Services van.",
+    "es_after": "El condado organizó un concurso, abierto a todos los residentes y pensado para estudiantes de kínder a 12.º grado, para diseñar sus stickers I Voted oficiales del 3 de noviembre de 2026. Los diseños ganadores se repartieron en todo el condado: en los lugares de votación, con las boletas por correo, en One Montgomery Plaza, en las oficinas electorales satélite y en la camioneta de Voter Services.",
+    "src": "https://www.montgomerycountypa.gov/departments/voter-services/i-voted-general-election-sticker-contest",
+    "quote": "Winning sticker designs will be distributed Countywide to voters who cast ballots in person at polling places, receive mail-in ballots, visit One Montgomery Plaza, or use satellite election offices, including the Voter Services Mobile Outreach Van.",
+    "checked": "2026-11-01",
+    "status": "verified",
+    "notes": "Montgomery County PA Voter Services page: 'design the official “I Voted” stickers for the November 3, 2026, General Election!' Submissions closed; winners not named on the county site (it points to Facebook and Instagram), so none are named here. curl read. Demand 0."
+   },
+   {
+    "place": {
+     "en": "Erie County",
+     "es": "Condado de Erie"
+    },
+    "kind": "county",
+    "en": "For the first time, Erie County voters get an I Voted sticker drawn by a local high school student. Colin of General McLane High School won the 2026 contest with the Peninsula design, chosen by a public vote from 10 finalists.",
+    "es": "Por primera vez, los votantes del condado de Erie reciben un sticker I Voted dibujado por un estudiante de preparatoria de la zona. Colin, de General McLane High School, ganó el concurso 2026 con el diseño Peninsula, elegido por voto público entre 10 finalistas.",
+    "until": "2026-11-03",
+    "en_after": "In 2026, for the first time, Erie County voters got an I Voted sticker drawn by a local high school student. Colin of General McLane High School won the contest with the Peninsula design, chosen by a public vote from 10 finalists.",
+    "es_after": "En 2026, por primera vez, los votantes del condado de Erie recibieron un sticker I Voted dibujado por un estudiante de preparatoria de la zona. Colin, de General McLane High School, ganó el concurso con el diseño Peninsula, elegido por voto público entre 10 finalistas.",
+    "src": "https://www.eriecountycouncilpa.gov/i-voted-sticker-contest",
+    "quote": "2026 Winners 1st Place Colin - Peninsula I Voted Inclusion Sticker General McLane High School",
+    "checked": "2026-11-01",
+    "status": "verified",
+    "notes": "Erie County Council / Elections and Voter Registration contest page (the 2027 contest is open now). County media release Jan 15, 2026 (eriecountycouncilpa.gov/uploads/media_release_for_i_voted_sticker_contest_january_2026.pdf, pdftotext): 'In past elections, Erie County voters have received a familiar “I Voted” sticker at the polls. In 2026, that tradition is getting a fresh new look. Voters will receive an “I Voted” sticker created by a local student through the design contest.' Top 10 by committee, then public vote. curl read. Demand 0."
+   }
+  ]
  },
  "faq": {
   "provisional": {

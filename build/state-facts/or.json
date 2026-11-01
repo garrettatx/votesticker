@@ -19,6 +19,10 @@
   "apps.oregon.gov": {
    "en": "the Oregon Secretary of State (Oregon Newsroom)",
    "es": "la Secretaría de Estado de Oregon (Oregon Newsroom)"
+  },
+  "www.deschutescounty.gov": {
+   "en": "the Deschutes County Clerk's Office",
+   "es": "la oficina del secretario del condado de Deschutes (County Clerk)"
   }
  },
  "dates": {
@@ -182,7 +186,26 @@
    "checked": "2026-10-23",
    "quote": "You'll even receive a virtual \"I Voted\" sticker that's ready to share on social media.",
    "status": "verified"
-  }
+  },
+  "more": [
+   {
+    "place": {
+     "en": "Deschutes County",
+     "es": "Condado de Deschutes"
+    },
+    "kind": "county",
+    "en": "Rowan, an 11th grader at Mountain View High School, drew the county's November sticker for America's 250th birthday. It's on the cover of the November 3 Voters' Pamphlet, and the sticker itself is out in November. Bodhi, a kindergartner at Buckingham Elementary, drew the May primary sticker.",
+    "es": "Rowan, de 11.º grado en Mountain View High School, dibujó el sticker de noviembre del condado por los 250 años del país. Está en la portada del folleto para votantes del 3 de noviembre (Voters' Pamphlet), y el sticker se reparte en noviembre. Bodhi, de kínder en Buckingham Elementary, dibujó el sticker de las primarias de mayo.",
+    "until": "2026-11-03",
+    "en_after": "Rowan, an 11th grader at Mountain View High School, drew the county's November 2026 sticker for America's 250th birthday. It was on the cover of the November 3 Voters' Pamphlet, and the sticker was available in November. Bodhi, a kindergartner at Buckingham Elementary, drew the May primary sticker.",
+    "es_after": "Rowan, de 11.º grado en Mountain View High School, dibujó el sticker de noviembre de 2026 del condado por los 250 años del país. Estuvo en la portada del folleto para votantes del 3 de noviembre (Voters' Pamphlet), y el sticker estuvo disponible en noviembre. Bodhi, de kínder en Buckingham Elementary, dibujó el sticker de las primarias de mayo.",
+    "src": "https://www.deschutescounty.gov/1294/Deschutes-County-2026-I-Voted-Sticker-Co",
+    "quote": "Rowan's \"I Voted\" sticker will be featured on the November 3, 2026 General Election Voters' Pamphlet cover.",
+    "checked": "2026-11-01",
+    "status": "verified",
+    "notes": "Deschutes County Clerk's Office page 'Deschutes County 2026 “I Voted” Sticker Contest', heading 'Celebrating America's Semiquincentennial!'; also: 'Rowan's \"I Voted\" sticker will be available in November.' Pickup places are given only for the May sticker (office and city halls), so none are claimed for November. curl read. Demand 0."
+   }
+  ]
  },
  "faq": {
   "provisional": {

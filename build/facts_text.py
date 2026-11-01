@@ -51,12 +51,15 @@ ALLOW_HOSTS = {'goelect.txelections.civixapps.com',
                'www.jocoelection.org', 'jocoelection.org', 'www.jocogov.org', 'jocogov.org',
                'www.mgcountyks.org', 'mgcountyks.org',
                # Pickens County GA Board of Elections and Registration (home page title and office address read Oct 31)
-               'pickensgaelections.com', 'www.pickensgaelections.com'}
+               'pickensgaelections.com', 'www.pickensgaelections.com',
+               # El Paso County CO Clerk and Recorder (www.elpasoco.com home title "Home - El Paso County, Colorado", read Nov 1)
+               'clerkandrecorder.elpasoco.com'}
 # An election office's own social account, for an announcement it posted only there (October 30: LA County's
 # Halloween sticker). The account, not the platform, is the source.
 ALLOW_ACCOUNTS = ('https://x.com/LACountyRRCC/',
                   'https://www.facebook.com/Louisianasos/',  # Louisiana Secretary of State's own page (Oct 31, the 2026 sticker post)
-                  'https://www.facebook.com/akelections/',)  # Alaska Division of Elections' own page (Oct 31, early-voting sticker post)  # BallotTrax tracker run for the state election office, linked from its own page     # the Champaign County Clerk, who runs elections there  # New Mexico's official statutes (NMSA), published by the NM Compilation Commission  # DC Board of Elections, the District's election office  # Texas My Voter Portal, linked from votetexas.gov/voting/where.html
+                  'https://www.facebook.com/akelections/',  # Alaska Division of Elections' own page (Oct 31, early-voting sticker post)
+                  'https://www.facebook.com/theNYCBoardofElections/',)  # NYC Board of Elections' verified page (Nov 1, the Oct 31 Halloween sticker post)  # BallotTrax tracker run for the state election office, linked from its own page     # the Champaign County Clerk, who runs elections there  # New Mexico's official statutes (NMSA), published by the NM Compilation Commission  # DC Board of Elections, the District's election office  # Texas My Voter Portal, linked from votetexas.gov/voting/where.html
 
 # Every fact the template knows, with its kind: text (en/es strings), list (en/es lists), url (a bare
 # string), rule (one of RULES).

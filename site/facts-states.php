@@ -167,6 +167,12 @@ return array(
 			'src' => 'https://www.elections.alaska.gov/calendar/',
 			'checked' => '2026-10-28',
 		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call the Alaska Division of Elections, toll free within the U.S. at 866-952-8683, or at 907-465-4611.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la División de Elecciones de Alaska, gratis desde EE. UU. al 866-952-8683, o al 907-465-4611.',
+			'src' => 'https://www.elections.alaska.gov/contact/',
+			'checked' => '2026-11-01',
+		),
 	),
 	'AL' => array(
 		'election' => '2026-11-03',
@@ -746,6 +752,9 @@ return array(
 			'es' => 'Buzón o lugar de votación: a más tardar a las 8 p. m. del martes 3 de noviembre. Correo: con matasellos del 3 de noviembre o antes y recibida por tu condado a más tardar el martes 10 de noviembre, y no necesita estampilla. Envíala por lo menos 7 días antes del Día de las Elecciones; después de eso, usa un buzón o pide a un empleado postal que le ponga el matasellos a mano.',
 			'src' => 'https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026/key-dates-deadlines',
 			'checked' => '2026-10-21',
+			'until' => '2026-10-27',
+			'en_after' => 'Drop box or voting location: by 8 p.m. on Tuesday, November 3. Mail: postmarked on or before November 3 and received by your county by Tuesday, November 10, and no stamp needed. Mailing it now? Use a drop box, or ask a postal employee for a hand postmark.',
+			'es_after' => 'Buzón o lugar de votación: a más tardar a las 8 p. m. del martes 3 de noviembre. Correo: con matasellos del 3 de noviembre o antes y recibida por tu condado a más tardar el martes 10 de noviembre, y no necesita estampilla. ¿La vas a enviar ahora? Usa un buzón o pide a un empleado postal que le ponga el matasellos a mano.',
 		),
 		'dates.early_hours' => array(
 			'en' => 'Early voting sites opened October 5, and the first vote centers opened October 24 in the 30 Voter\'s Choice Act counties. More in-person voting locations open across the state on Saturday, October 31. Each county sets its hours.',
@@ -957,6 +966,12 @@ return array(
 			'src' => 'https://elections.cdn.sos.ca.gov/pdfs/trusted-info/vbm-faq.pdf',
 			'checked' => '2026-10-21',
 		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. If you believe you\'ve been denied a voting right, or you know of election fraud or misconduct, call the California Secretary of State\'s confidential, toll-free Voter Hotline at 800-345-8683 (800-345-VOTE).',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si crees que te negaron un derecho como votante, o sabes de un fraude o una irregularidad electoral, llama a la línea confidencial y gratuita para votantes de la Secretaría de Estado de California al 800-345-8683 (800-345-VOTE).',
+			'src' => 'https://www.sos.ca.gov/elections/voter-bill-rights',
+			'checked' => '2026-11-01',
+		),
 	),
 	'CO' => array(
 		'election' => '2026-11-03',
@@ -980,6 +995,22 @@ return array(
 			'leg.colorado.gov' => array(
 				'en' => 'the Colorado General Assembly',
 				'es' => 'la Asamblea General de Colorado (Colorado General Assembly)',
+			),
+			'clerkandrecorder.elpasoco.com' => array(
+				'en' => 'the El Paso County Clerk and Recorder',
+				'es' => 'la oficina del secretario y registrador del condado de El Paso (Clerk and Recorder)',
+			),
+			'www.jeffco.us' => array(
+				'en' => 'Jefferson County Elections',
+				'es' => 'la oficina electoral del condado de Jefferson (Elections)',
+			),
+			'www.larimer.gov' => array(
+				'en' => 'the Larimer County Clerk and Recorder',
+				'es' => 'la oficina del secretario y registrador del condado de Larimer (Clerk and Recorder)',
+			),
+			'www.mesacounty.us' => array(
+				'en' => 'Mesa County Elections',
+				'es' => 'la oficina electoral del condado de Mesa (Elections)',
 			),
 		),
 		'dates.reg_deadline' => array(
@@ -1113,6 +1144,59 @@ return array(
 			'src' => 'https://www.sos.state.co.us/pubs/newsRoom/pressReleases/2026/PR20261012StickerContest.html',
 			'checked' => '2026-10-28',
 		),
+		'sticker.more' => array( array(
+			'place' => array(
+				'en' => 'El Paso County',
+				'es' => 'Condado de El Paso',
+			),
+			'kind' => 'county',
+			'en' => 'Look in your ballot packet. Six students drew this year\'s stickers, from Mia, a 3rd grader at the Academy for Advanced and Creative Learning, to Olivia, an 11th grader at Pine Creek High School. The county put the winning designs in every ballot packet it mailed to active voters on October 5.',
+			'es' => 'Busca en tu paquete de boleta. Seis estudiantes dibujaron los stickers de este año, desde Mia, de 3.er grado en Academy for Advanced and Creative Learning, hasta Olivia, de 11.º grado en Pine Creek High School. El condado puso los diseños ganadores en cada paquete de boleta que envió por correo a los votantes activos el 5 de octubre.',
+			'src' => 'https://clerkandrecorder.elpasoco.com/i-voted-sticker-design-winners-for-2026-general-election/',
+			'checked' => '2026-11-01',
+			'until' => '2026-11-03',
+			'en_after' => 'Six students drew the county\'s 2026 stickers, from Mia, a 3rd grader at the Academy for Advanced and Creative Learning, to Olivia, an 11th grader at Pine Creek High School. The winning designs were in every ballot packet mailed to active voters on October 5.',
+			'es_after' => 'Seis estudiantes dibujaron los stickers 2026 del condado, desde Mia, de 3.er grado en Academy for Advanced and Creative Learning, hasta Olivia, de 11.º grado en Pine Creek High School. Los diseños ganadores iban en cada paquete de boleta enviado por correo a los votantes activos el 5 de octubre.',
+		), array(
+			'place' => array(
+				'en' => 'Jefferson County',
+				'es' => 'Condado de Jefferson',
+			),
+			'kind' => 'county',
+			'en' => 'Look in your ballot envelope. Alyssa of Arvada drew a bighorn sheep with a butterfly, mountains and a sunset, and Marissa, a 7th grader from Littleton, drew a Colorado landscape. Both stickers go in ballot envelopes across the county this November. Ellie, a 4th grader from Golden, drew the Future Voter sticker for kids at vote centers.',
+			'es' => 'Busca en el sobre de tu boleta. Alyssa, de Arvada, dibujó un borrego cimarrón con una mariposa, montañas y un atardecer, y Marissa, de 7.º grado en Littleton, dibujó un paisaje de Colorado. Los dos stickers van en los sobres de las boletas de todo el condado este noviembre. Ellie, de 4.º grado en Golden, dibujó el sticker Future Voter para los niños en los centros de votación.',
+			'src' => 'https://www.jeffco.us/m/newsflash/Home/Detail/2572',
+			'checked' => '2026-11-01',
+			'until' => '2026-11-03',
+			'en_after' => 'Alyssa of Arvada drew a bighorn sheep with a butterfly, mountains and a sunset, and Marissa, a 7th grader from Littleton, drew a Colorado landscape. Both stickers went in ballot envelopes across the county for November 3, 2026. Ellie, a 4th grader from Golden, drew the Future Voter sticker for kids.',
+			'es_after' => 'Alyssa, de Arvada, dibujó un borrego cimarrón con una mariposa, montañas y un atardecer, y Marissa, de 7.º grado en Littleton, dibujó un paisaje de Colorado. Los dos stickers fueron en los sobres de las boletas de todo el condado para el 3 de noviembre de 2026. Ellie, de 4.º grado en Golden, dibujó el sticker Future Voter para los niños.',
+		), array(
+			'place' => array(
+				'en' => 'Larimer County',
+				'es' => 'Condado de Larimer',
+			),
+			'kind' => 'county',
+			'en' => 'Kylie of Berthoud High School won the 2026 contest with nearly 2,500 community votes, cast by ranked choice. Kylie\'s sticker, printed on the voter instructions in your mail ballot, puts colorful I VOTED letters over mountains at sunset, a lake and columbines, ringed by the county\'s towns. Finalists\' stickers are at vote centers while supplies last.',
+			'es' => 'Kylie, de Berthoud High School, ganó el concurso 2026 con casi 2,500 votos de la comunidad, emitidos por voto preferencial. El sticker de Kylie, impreso en las instrucciones que vienen con tu boleta por correo, pone letras de colores que dicen I VOTED sobre montañas al atardecer, un lago y aguileñas, rodeadas por los nombres de los pueblos del condado. Los stickers de los finalistas están en los centros de votación mientras duren.',
+			'src' => 'https://www.larimer.gov/clerk/elections/i-voted-sticker-contest',
+			'checked' => '2026-11-01',
+			'until' => '2026-11-03',
+			'en_after' => 'Kylie of Berthoud High School won the 2026 contest with nearly 2,500 community votes, cast by ranked choice. Kylie\'s sticker, printed on the voter instructions in mail ballots, put colorful I VOTED letters over mountains at sunset, a lake and columbines, ringed by the county\'s towns. Finalists\' stickers were at vote centers while supplies lasted.',
+			'es_after' => 'Kylie, de Berthoud High School, ganó el concurso 2026 con casi 2,500 votos de la comunidad, emitidos por voto preferencial. El sticker de Kylie, impreso en las instrucciones de las boletas por correo, ponía letras de colores que dicen I VOTED sobre montañas al atardecer, un lago y aguileñas, rodeadas por los nombres de los pueblos del condado. Los stickers de los finalistas estuvieron en los centros de votación mientras duraron.',
+		), array(
+			'place' => array(
+				'en' => 'Mesa County',
+				'es' => 'Condado de Mesa',
+			),
+			'kind' => 'county',
+			'en' => 'Four students drew the county\'s 2026 I Voted stickers: Alayna of New Emerson Elementary, Rhett and Jacob of Independence Academy, and Amora of Grand Junction High School, the contest\'s first high school winner. More than 175 students entered, and the public voted for the winners.',
+			'es' => 'Cuatro estudiantes dibujaron los stickers I Voted 2026 del condado: Alayna, de New Emerson Elementary; Rhett y Jacob, de Independence Academy; y Amora, de Grand Junction High School. Es la primera vez que gana alguien de preparatoria. Participaron más de 175 estudiantes, y el público votó por los ganadores.',
+			'src' => 'https://www.mesacounty.us/news/elections/student-designed-stickers-appear-mesa-county-2026-elections',
+			'checked' => '2026-11-01',
+			'until' => '2026-11-03',
+			'en_after' => 'Four students drew the county\'s 2026 I Voted stickers: Alayna of New Emerson Elementary, Rhett and Jacob of Independence Academy, and Amora of Grand Junction High School, the contest\'s first high school winner. More than 175 students entered, and the public voted for the winners.',
+			'es_after' => 'Cuatro estudiantes dibujaron los stickers I Voted 2026 del condado: Alayna, de New Emerson Elementary; Rhett y Jacob, de Independence Academy; y Amora, de Grand Junction High School. Es la primera vez que gana alguien de preparatoria. Participaron más de 175 estudiantes, y el público votó por los ganadores.',
+		) ),
 		'election_day.hours' => array(
 			'en' => 'In-person voting is open 7 a.m. to 7 p.m. local time.',
 			'es' => 'Puedes votar en persona de 7 a. m. a 7 p. m., hora local.',
@@ -1885,6 +1969,12 @@ return array(
 			'es' => 'Puede que sí. El Supervisor de Elecciones (Supervisor of Elections) debe recibirla a más tardar a las 7 p. m., hora local, del martes 3 de noviembre, y el matasellos no cuenta. Todavía puedes dejarla en un buzón de entrega seguro en la oficina principal o en una sucursal del Supervisor de Elecciones hasta esa hora.',
 			'src' => 'https://dos.fl.gov/elections/for-voters/voting/vote-by-mail/',
 			'checked' => '2026-10-29',
+		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your county elections office or the Florida Division of Elections\' Voter Assistance Hotline at 1-866-308-6739, in English and Spanish, with extended hours on Election Day.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la oficina electoral de tu condado o a la línea de asistencia para votantes de la División de Elecciones de Florida al 1-866-308-6739, en inglés y español, con horario extendido el Día de las Elecciones.',
+			'src' => 'https://dos.fl.gov/elections/',
+			'checked' => '2026-11-01',
 		),
 	),
 	'GA' => array(
@@ -2737,6 +2827,12 @@ return array(
 			'es' => 'No está garantizado que tu sobre reciba matasellos el mismo día que lo envías. Cerca del Día de las Elecciones, pide en el mostrador de la oficina de correos que le pongan el matasellos a mano, o usa un buzón de entrega o la oficina de tu autoridad electoral a más tardar a las 7 p. m. del 3 de noviembre.',
 			'src' => 'https://www.elections.il.gov/NewDocDisplay.aspx?%2fM0cs48zOKVZyk9eAbpEoxjoGz9b5YaGE%2bEuf7JVd2Tlx2Mybp2RbacEJVh848tnFOLoTd3G4cRsCxSj%2bcrL1MmhG9QsYgJ993sRKyHy6NSrOeqhGSgJZjOQiDLWY39IoNmqSBb0J5o%3d',
 			'checked' => '2026-10-21',
+		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your local election authority or the Illinois State Board of Elections at 217-782-4141 (Springfield) or 312-814-6440 (Chicago).',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a tu autoridad electoral local o a la Junta Electoral del Estado de Illinois (Illinois State Board of Elections) al 217-782-4141 (Springfield) o al 312-814-6440 (Chicago).',
+			'src' => 'https://www.elections.il.gov/',
+			'checked' => '2026-11-01',
 		),
 	),
 	'IN' => array(
@@ -3662,6 +3758,10 @@ return array(
 				'en' => 'Maryland law',
 				'es' => 'la ley de Maryland',
 			),
+			'washingtoncountymdvotes.gov' => array(
+				'en' => 'the Washington County Board of Elections',
+				'es' => 'la junta electoral del condado de Washington (Board of Elections)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'The advance deadline was Tuesday, October 13, 2026. You can still register and vote during early voting or at your polling place on Election Day. Bring proof of where you live, such as your MVA license or ID card, or a paycheck, bank statement, utility bill or other government document with your name and address.',
@@ -3777,6 +3877,20 @@ return array(
 			'src' => 'https://elections.maryland.gov/elections/2026/index.html',
 			'checked' => '2026-10-21',
 		),
+		'sticker.more' => array( array(
+			'place' => array(
+				'en' => 'Washington County',
+				'es' => 'Condado de Washington',
+			),
+			'kind' => 'county',
+			'en' => 'Students won the county\'s 2026 I Voted sticker contest after a public vote: Finnegan of Smithsburg Elementary, Martha of Emmanuel Christian School and Kelly of the Barbara Ingram School for the Arts for I Voted, and Ella of Cascade Elementary for Future Voter. The Board of Elections puts the winning art on its I Voted stickers.',
+			'es' => 'Estudiantes ganaron el concurso de stickers I Voted 2026 del condado tras una votación pública: Finnegan, de Smithsburg Elementary; Martha, de Emmanuel Christian School; y Kelly, de Barbara Ingram School for the Arts, en I Voted, y Ella, de Cascade Elementary, en Future Voter. La junta electoral pone el arte ganador en sus stickers I Voted.',
+			'src' => 'https://washingtoncountymdvotes.gov/?page_id=1711',
+			'checked' => '2026-11-01',
+			'until' => '2026-11-03',
+			'en_after' => 'Students won the county\'s 2026 I Voted sticker contest after a public vote: Finnegan of Smithsburg Elementary, Martha of Emmanuel Christian School and Kelly of the Barbara Ingram School for the Arts for I Voted, and Ella of Cascade Elementary for Future Voter. The Board of Elections put the winning art on its I Voted stickers.',
+			'es_after' => 'Estudiantes ganaron el concurso de stickers I Voted 2026 del condado tras una votación pública: Finnegan, de Smithsburg Elementary; Martha, de Emmanuel Christian School; y Kelly, de Barbara Ingram School for the Arts, en I Voted, y Ella, de Cascade Elementary, en Future Voter. La junta electoral puso el arte ganador en sus stickers I Voted.',
+		) ),
 		'election_day.hours' => array(
 			'en' => 'Polling places are open 7 a.m. to 8 p.m. local time.',
 			'es' => 'Los lugares de votación abren de 7 a. m. a 8 p. m., hora local.',
@@ -3806,6 +3920,12 @@ return array(
 			'es' => 'No, si tiene matasellos del martes 3 de noviembre o antes y llega a más tardar el viernes 13 de noviembre. Pero una boleta que echas al buzón el Día de las Elecciones quizás no reciba el matasellos de ese día. Para no correr riesgos, llévala a un buzón de entrega de boletas, a la junta electoral local (local board of elections) o a un lugar de votación a más tardar a las 8 p. m. del 3 de noviembre.',
 			'src' => 'https://elections.maryland.gov/elections/2026/index.html',
 			'checked' => '2026-10-30',
+		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your local board of elections or the Maryland State Board of Elections at 800-222-8683.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la junta electoral local o a la Junta Electoral del Estado de Maryland (Maryland State Board of Elections) al 800-222-8683.',
+			'src' => 'https://elections.maryland.gov/',
+			'checked' => '2026-11-01',
 		),
 	),
 	'ME' => array(
@@ -5053,6 +5173,12 @@ return array(
 			'src' => 'https://www.ncsbe.gov/voting/vote-mail/detailed-instructions-voting-mail',
 			'checked' => '2026-10-29',
 		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your county board of elections or the North Carolina State Board of Elections at 919-814-0700.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la junta electoral de tu condado o a la Junta Electoral del Estado de North Carolina (State Board of Elections) al 919-814-0700.',
+			'src' => 'https://www.ncsbe.gov/',
+			'checked' => '2026-11-01',
+		),
 	),
 	'ND' => array(
 		'election' => '2026-11-03',
@@ -6075,6 +6201,10 @@ return array(
 				'en' => 'the Dutchess County Board of Elections',
 				'es' => 'la junta electoral del condado de Dutchess (Board of Elections)',
 			),
+			'www.facebook.com' => array(
+				'en' => 'the Board of Elections in the City of New York on Facebook',
+				'es' => 'la Junta Electoral de la Ciudad de Nueva York en Facebook',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Your application must reach a board of elections by Saturday, October 24, 2026, by mail or in person. New York has no Election Day registration.',
@@ -6224,6 +6354,19 @@ return array(
 		),
 		'sticker.more' => array( array(
 			'place' => array(
+				'en' => 'New York City',
+				'es' => 'Ciudad de Nueva York',
+			),
+			'kind' => 'city',
+			'en' => 'Vote early on Halloween, Saturday, October 31: the Board of Elections says the first 300 voters get a new limited-edition Halloween sticker. Polls are open 9 a.m. to 5 p.m.',
+			'es' => 'Vota por anticipado en Halloween, el sábado 31 de octubre: la Junta Electoral dice que los primeros 300 votantes reciben un nuevo sticker de Halloween de edición limitada. Los lugares de votación abren de 9 a.m. a 5 p.m.',
+			'src' => 'https://www.facebook.com/theNYCBoardofElections/posts/vote-early-on-halloween-first-300-voters-get-a-new-design-limited-edition-hallow/1534236132071631/',
+			'checked' => '2026-11-01',
+			'until' => '2026-10-31',
+			'en_after' => 'On Halloween, October 31, the Board of Elections offered the first 300 voters a new limited-edition Halloween sticker during early voting.',
+			'es_after' => 'En Halloween, el 31 de octubre, la Junta Electoral ofreció a los primeros 300 votantes un nuevo sticker de Halloween de edición limitada durante la votación anticipada.',
+		), array(
+			'place' => array(
 				'en' => 'Madison County',
 				'es' => 'Condado de Madison',
 			),
@@ -6304,6 +6447,12 @@ return array(
 			'es' => 'Debe tener matasellos del 3 de noviembre o antes y llegar a la junta electoral de tu condado a más tardar el 10 de noviembre. El Servicio Postal sugiere enviarla unos siete días antes. ¿La mandas el Día de las Elecciones? Revisa la última hora de recolección del buzón, o mejor entrégala en un lugar de votación de tu condado antes de las 9 p. m.',
 			'src' => 'https://elections.ny.gov/request-ballot',
 			'checked' => '2026-10-21',
+		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your county board of elections or the New York State Board of Elections voter information line at 1-800-367-8683.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la junta electoral de tu condado o a la línea de información para votantes de la Junta Electoral del Estado de New York (State Board of Elections) al 1-800-367-8683.',
+			'src' => 'https://elections.ny.gov/contact-us',
+			'checked' => '2026-11-01',
 		),
 	),
 	'OH' => array(
@@ -6493,6 +6642,12 @@ return array(
 			'src' => 'https://codes.ohio.gov/ohio-revised-code/section-3509.05',
 			'checked' => '2026-10-28',
 		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For questions about polling locations, curbside voting or accessible ballots, contact your county board of elections or the Ohio Secretary of State\'s office at 877-767-6446.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Para preguntas sobre lugares de votación, votar desde el auto o boletas accesibles, comunícate con la junta electoral de tu condado o con la oficina de la Secretaría de Estado de Ohio al 877-767-6446.',
+			'src' => 'https://www.ohiosos.gov/elections/frequently-asked-questions',
+			'checked' => '2026-11-01',
+		),
 	),
 	'OK' => array(
 		'election' => '2026-11-03',
@@ -6663,6 +6818,10 @@ return array(
 				'en' => 'the Oregon Secretary of State (Oregon Newsroom)',
 				'es' => 'la Secretaría de Estado de Oregon (Oregon Newsroom)',
 			),
+			'www.deschutescounty.gov' => array(
+				'en' => 'the Deschutes County Clerk\'s Office',
+				'es' => 'la oficina del secretario del condado de Deschutes (County Clerk)',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Registration closed October 13, 2026. Not sure you\'re registered or active? Check My Vote, because ballots aren\'t mailed to inactive voters.',
@@ -6759,6 +6918,20 @@ return array(
 			'src' => 'https://multco.us/news/oct-22-2026-all-registered-voters-should-have-received-their-ballots',
 			'checked' => '2026-10-23',
 		),
+		'sticker.more' => array( array(
+			'place' => array(
+				'en' => 'Deschutes County',
+				'es' => 'Condado de Deschutes',
+			),
+			'kind' => 'county',
+			'en' => 'Rowan, an 11th grader at Mountain View High School, drew the county\'s November sticker for America\'s 250th birthday. It\'s on the cover of the November 3 Voters\' Pamphlet, and the sticker itself is out in November. Bodhi, a kindergartner at Buckingham Elementary, drew the May primary sticker.',
+			'es' => 'Rowan, de 11.º grado en Mountain View High School, dibujó el sticker de noviembre del condado por los 250 años del país. Está en la portada del folleto para votantes del 3 de noviembre (Voters\' Pamphlet), y el sticker se reparte en noviembre. Bodhi, de kínder en Buckingham Elementary, dibujó el sticker de las primarias de mayo.',
+			'src' => 'https://www.deschutescounty.gov/1294/Deschutes-County-2026-I-Voted-Sticker-Co',
+			'checked' => '2026-11-01',
+			'until' => '2026-11-03',
+			'en_after' => 'Rowan, an 11th grader at Mountain View High School, drew the county\'s November 2026 sticker for America\'s 250th birthday. It was on the cover of the November 3 Voters\' Pamphlet, and the sticker was available in November. Bodhi, a kindergartner at Buckingham Elementary, drew the May primary sticker.',
+			'es_after' => 'Rowan, de 11.º grado en Mountain View High School, dibujó el sticker de noviembre de 2026 del condado por los 250 años del país. Estuvo en la portada del folleto para votantes del 3 de noviembre (Voters\' Pamphlet), y el sticker estuvo disponible en noviembre. Bodhi, de kínder en Buckingham Elementary, dibujó el sticker de las primarias de mayo.',
+		) ),
 		'faq.provisional' => array(
 			'en' => 'If your eligibility to vote can\'t be confirmed, for example if you\'re told you aren\'t registered, you have the right to a provisional ballot. Go to your county elections office in person and fill out a Provisional Ballot Request Form. It counts only if you\'re found eligible, and you have the right to know whether it was accepted.',
 			'es' => 'Si no se puede confirmar que tienes derecho a votar, por ejemplo, si te dicen que no estás registrado, tienes derecho a una boleta provisional. Ve en persona a la oficina electoral de tu condado y llena un formulario de solicitud de boleta provisional (Provisional Ballot Request Form). Solo cuenta si se confirma que puedes votar, y tienes derecho a saber si fue aceptada.',
@@ -6789,6 +6962,12 @@ return array(
 			'src' => 'https://apps.oregon.gov/oregon-newsroom/OR/SOS/Posts/Post/last-recommended-day-to-mail-ballots-october-27',
 			'checked' => '2026-10-30',
 		),
+		'faq.problem' => array(
+			'en' => 'Call your county elections office first. You can also call the Oregon Secretary of State\'s Elections Division toll free at 1-866-673-8683 (1-866-673-VOTE).',
+			'es' => 'Primero llama a la oficina electoral de tu condado. También puedes llamar gratis a la División de Elecciones de la Secretaría de Estado de Oregon al 1-866-673-8683 (1-866-673-VOTE).',
+			'src' => 'https://sos.oregon.gov/voting/Pages/default.aspx',
+			'checked' => '2026-11-01',
+		),
 	),
 	'PA' => array(
 		'election' => '2026-11-03',
@@ -6804,6 +6983,14 @@ return array(
 			'www.attorneygeneral.gov' => array(
 				'en' => 'the Pennsylvania Attorney General',
 				'es' => 'la Fiscalía General de Pennsylvania (Attorney General)',
+			),
+			'www.montgomerycountypa.gov' => array(
+				'en' => 'Montgomery County Voter Services',
+				'es' => 'la oficina de servicios al votante del condado de Montgomery (Voter Services)',
+			),
+			'www.eriecountycouncilpa.gov' => array(
+				'en' => 'Erie County Elections and Voter Registration',
+				'es' => 'la oficina de elecciones e inscripción de votantes del condado de Erie',
 			),
 		),
 		'dates.reg_deadline' => array(
@@ -6928,6 +7115,33 @@ return array(
 			'en_after' => 'Allegheny County\'s I Voted N\'at sticker, by Molly, a 10th grader at Mt. Lebanon High School, won the county\'s first sticker contest with more than 13,000 public votes and was its sticker for the 2025 and 2026 elections.',
 			'es_after' => 'El sticker I Voted N\'at del condado de Allegheny, de Molly, estudiante de 10.º grado de Mt. Lebanon High School, ganó el primer concurso de stickers del condado con más de 13,000 votos del público y fue su sticker para las elecciones de 2025 y 2026.',
 		),
+		'sticker.more' => array( array(
+			'place' => array(
+				'en' => 'Montgomery County',
+				'es' => 'Condado de Montgomery',
+			),
+			'kind' => 'county',
+			'en' => 'The county ran a contest, open to all residents and aimed at K to 12 students, to design its official I Voted stickers for November 3. The winning designs go out countywide: at polling places, with mail ballots, at One Montgomery Plaza, at satellite election offices and at the Voter Services van.',
+			'es' => 'El condado organizó un concurso, abierto a todos los residentes y pensado para estudiantes de kínder a 12.º grado, para diseñar sus stickers I Voted oficiales del 3 de noviembre. Los diseños ganadores se reparten en todo el condado: en los lugares de votación, con las boletas por correo, en One Montgomery Plaza, en las oficinas electorales satélite y en la camioneta de Voter Services.',
+			'src' => 'https://www.montgomerycountypa.gov/departments/voter-services/i-voted-general-election-sticker-contest',
+			'checked' => '2026-11-01',
+			'until' => '2026-11-03',
+			'en_after' => 'The county ran a contest, open to all residents and aimed at K to 12 students, to design its official I Voted stickers for November 3, 2026. The winning designs went out countywide: at polling places, with mail ballots, at One Montgomery Plaza, at satellite election offices and at the Voter Services van.',
+			'es_after' => 'El condado organizó un concurso, abierto a todos los residentes y pensado para estudiantes de kínder a 12.º grado, para diseñar sus stickers I Voted oficiales del 3 de noviembre de 2026. Los diseños ganadores se repartieron en todo el condado: en los lugares de votación, con las boletas por correo, en One Montgomery Plaza, en las oficinas electorales satélite y en la camioneta de Voter Services.',
+		), array(
+			'place' => array(
+				'en' => 'Erie County',
+				'es' => 'Condado de Erie',
+			),
+			'kind' => 'county',
+			'en' => 'For the first time, Erie County voters get an I Voted sticker drawn by a local high school student. Colin of General McLane High School won the 2026 contest with the Peninsula design, chosen by a public vote from 10 finalists.',
+			'es' => 'Por primera vez, los votantes del condado de Erie reciben un sticker I Voted dibujado por un estudiante de preparatoria de la zona. Colin, de General McLane High School, ganó el concurso 2026 con el diseño Peninsula, elegido por voto público entre 10 finalistas.',
+			'src' => 'https://www.eriecountycouncilpa.gov/i-voted-sticker-contest',
+			'checked' => '2026-11-01',
+			'until' => '2026-11-03',
+			'en_after' => 'In 2026, for the first time, Erie County voters got an I Voted sticker drawn by a local high school student. Colin of General McLane High School won the contest with the Peninsula design, chosen by a public vote from 10 finalists.',
+			'es_after' => 'En 2026, por primera vez, los votantes del condado de Erie recibieron un sticker I Voted dibujado por un estudiante de preparatoria de la zona. Colin, de General McLane High School, ganó el concurso con el diseño Peninsula, elegido por voto público entre 10 finalistas.',
+		) ),
 		'election_day.hours' => array(
 			'en' => 'Polling places are open 7 a.m. to 8 p.m. local time.',
 			'es' => 'Los lugares de votación abren de 7 a. m. a 8 p. m., hora local.',
@@ -7914,8 +8128,8 @@ return array(
 			'checked' => '2026-10-25',
 		),
 		'faq.provisional' => array(
-			'en' => 'You vote a provisional ballot when poll workers can\'t verify your registration, or when you have an accepted photo ID but didn\'t bring it. In that case, take the ID to your county voter registrar\'s office within six days after Election Day, by Monday, November 9, or your ballot won\'t count. You\'ll get a notice in the mail telling you whether it counted. Name not on the list? Your voter registration certificate and an accepted photo ID may let you vote a regular ballot instead.',
-			'es' => 'Votas con una boleta provisional cuando los trabajadores electorales no pueden verificar tu registro, o cuando tienes una identificación con foto aceptada pero no la llevaste. En ese caso, lleva la identificación a la oficina del registrador de votantes de tu condado (voter registrar) dentro de los seis días después del Día de las Elecciones, a más tardar el lunes 9 de noviembre, o tu boleta no contará. Te llegará un aviso por correo que te dice si contó. ¿Tu nombre no aparece en la lista? Tu certificado de registro de votante (voter registration certificate) y una identificación con foto aceptada pueden permitirte votar con una boleta regular.',
+			'en' => 'You vote a provisional ballot when poll workers can\'t verify your registration, or when you have an accepted photo ID but didn\'t bring it. If you didn\'t bring your ID, take it to your county voter registrar\'s office within six days after Election Day, by Monday, November 9, or your ballot won\'t count. You\'ll get a notice in the mail telling you whether it counted. Name not on the list? Your voter registration certificate and an accepted photo ID may let you vote a regular ballot instead.',
+			'es' => 'Votas con una boleta provisional cuando los trabajadores electorales no pueden verificar tu registro, o cuando tienes una identificación con foto aceptada pero no la llevaste. Si no llevaste tu identificación, llévala a la oficina del registrador de votantes de tu condado (voter registrar) dentro de los seis días después del Día de las Elecciones, a más tardar el lunes 9 de noviembre, o tu boleta no contará. Te llegará un aviso por correo que te dice si contó. ¿Tu nombre no aparece en la lista? Tu certificado de registro de votante (voter registration certificate) y una identificación con foto aceptada pueden permitirte votar con una boleta regular.',
 			'src' => 'https://www.votetexas.gov/voting/need-id.html',
 			'checked' => '2026-10-28',
 		),
@@ -7936,6 +8150,12 @@ return array(
 			'es' => 'No, si tiene matasellos de las 7 p. m. del martes 3 de noviembre o antes y llega al secretario de votación anticipada de tu condado (early voting clerk) a más tardar a las 5 p. m. del miércoles 4 de noviembre. ¿No sabes si llegará a tiempo? Entrégala tú en persona en la oficina del secretario de votación anticipada el Día de las Elecciones, mientras estén abiertos los lugares de votación. Lleva una identificación aceptada.',
 			'src' => 'https://www.sos.state.tx.us/elections/voter/important-election-dates.shtml',
 			'checked' => '2026-10-29',
+		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your county elections office or the Texas Secretary of State at 1-800-252-8683 (1-800-252-VOTE).',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la oficina electoral de tu condado o a la Secretaría de Estado de Texas al 1-800-252-8683 (1-800-252-VOTE).',
+			'src' => 'https://www.votetexas.gov/faq/index.html',
+			'checked' => '2026-11-01',
 		),
 	),
 	'UT' => array(
@@ -8140,6 +8360,10 @@ return array(
 				'en' => 'the Virginia Attorney General',
 				'es' => 'la Fiscalía General de Virginia (Attorney General)',
 			),
+			'www.williamsburgva.gov' => array(
+				'en' => 'the City of Williamsburg',
+				'es' => 'la ciudad de Williamsburg',
+			),
 		),
 		'dates.reg_deadline' => array(
 			'en' => 'Register or update your registration by Friday, October 23, 2026. After that, you can still register in person and vote a provisional ballot through Election Day.',
@@ -8260,6 +8484,20 @@ return array(
 			'src' => 'https://www.roanokeva.gov/m/newsflash/home/detail/2459',
 			'checked' => '2026-10-23',
 		),
+		'sticker.more' => array( array(
+			'place' => array(
+				'en' => 'City of Williamsburg',
+				'es' => 'Ciudad de Williamsburg',
+			),
+			'kind' => 'city',
+			'en' => 'Rose, a Berkeley Middle School student, drew the city\'s I Voted sticker, and Penny, from Matthew Whaley Elementary, drew its Future Voter sticker. They\'re the city\'s official vote stickers this fall, from a contest tied to the nation\'s 250th anniversary.',
+			'es' => 'Rose, estudiante de Berkeley Middle School, dibujó el sticker I Voted de la ciudad, y Penny, de Matthew Whaley Elementary, dibujó su sticker Future Voter. Son los stickers oficiales de votación de la ciudad este otoño, de un concurso dedicado a los 250 años del país.',
+			'src' => 'https://www.williamsburgva.gov/m/newsflash/Home/Detail/1282',
+			'checked' => '2026-11-01',
+			'until' => '2026-11-03',
+			'en_after' => 'Rose, a Berkeley Middle School student, drew the city\'s I Voted sticker, and Penny, from Matthew Whaley Elementary, drew its Future Voter sticker. They were the city\'s official vote stickers in fall 2026, from a contest tied to the nation\'s 250th anniversary.',
+			'es_after' => 'Rose, estudiante de Berkeley Middle School, dibujó el sticker I Voted de la ciudad, y Penny, de Matthew Whaley Elementary, dibujó su sticker Future Voter. Fueron los stickers oficiales de votación de la ciudad en el otoño de 2026, de un concurso dedicado a los 250 años del país.',
+		) ),
 		'election_day.hours' => array(
 			'en' => 'Polling places are open 6 a.m. to 7 p.m. local time.',
 			'es' => 'Los lugares de votación abren de 6 a. m. a 7 p. m., hora local.',
@@ -8600,6 +8838,12 @@ return array(
 			'es' => 'Una boleta por correo todavía cuenta si tiene matasellos del 3 de noviembre o antes, pero el matasellos no está garantizado el mismo día que la envías. A estas alturas, la Secretaría de Estado recomienda usar un buzón de entrega. Una boleta que está en un buzón oficial a más tardar a las 8 p. m. del 3 de noviembre llega a tiempo, y también puedes entregarla en la oficina electoral de tu condado o en un centro de votación. Busca los lugares en VoteWA.gov.',
 			'src' => 'https://www.sos.wa.gov/elections/voters/helpful-information/frequently-asked-questions-voting-mail',
 			'checked' => '2026-10-30',
+		),
+		'faq.problem' => array(
+			'en' => 'Call your county elections office first. You can also call the Washington Secretary of State\'s Elections Division at 1-800-448-4881.',
+			'es' => 'Primero llama a la oficina electoral de tu condado. También puedes llamar a la División de Elecciones de la Secretaría de Estado de Washington al 1-800-448-4881.',
+			'src' => 'https://www.sos.wa.gov/elections',
+			'checked' => '2026-11-01',
 		),
 	),
 	'WI' => array(
