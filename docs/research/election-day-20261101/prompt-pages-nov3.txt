@@ -1,0 +1,500 @@
+You are reviewing three pages of VoteSticker.org (a free, nonpartisan, unofficial site that makes digital I voted stickers and links to official election offices; it never builds its own voting planner). Below is the full rendered text of each page as a voter will see it on Election Day morning, Tuesday, November 3, 2026: the home page https://votesticker.org/, https://votesticker.org/texas/ and https://votesticker.org/california/.
+
+Searches these pages need to win on November 2 and 3 (Google Search Console, our average position): "i voted early sticker" (5.5), "voting sticker" (7.0), "i voted" (9.0), "i voted sticker 2026" (8.5), "i voted today sticker" (8.9), "voted sticker" (7.9), "i voted 2026" (6.2), "just voted sticker" (7.3), "how to get i voted sticker" (6.6), "where can i get an i voted sticker" (8.8), "do you get an i voted sticker with mail in ballot" (7.0), "i voted yo vote" (4.0), plus "texas i voted sticker" and "california i voted sticker".
+
+Pages that outrank us for these queries (read Oct 31): USA Today 2026 I voted sticker roundup; Ballotpedia's I voted sticker page; KUT (Williamson County sticker); Austin American-Statesman Election Day freebies; Don Moynihan's Substack "The Best I Voted Stickers of 2026"; FVAP "I Voted From" sticker page (https://www.fvap.gov/IVotedSticker); shops (Amazon, ElectionSource, Intab, Walmart, LabelValue, A. Rifkin, Etsy); for Texas: Williamson County 2026 sticker contest winners page (https://www.wilcotx.gov/2094/2026-Sticker-Contest-Winners) and the Texas Secretary of State's Facebook; for California: Santa Clara County ROV sticker contest page and county election pages.
+
+Question: For someone searching on Election Day itself (or the day before), what specifically would make these three pages more human, more helpful, better evidenced, and 10 times better than those competitors? Be concrete: name the missing answers or confusing, stale, buried or wrong items in our text, and suggest exact wording for answers to "Do you get an I voted sticker if you vote by mail?", "Where can I get an I voted today sticker?" and "What do I do if there is a problem at my polling place?" (official sources only: state or county election offices, the U.S. Election Assistance Commission, the U.S. Department of Justice). Cite an official source for every fact you suggest. Don't suggest a voting planner, a turnout claim, or calling the site official. Keep it to the 10 best ideas, ranked.
+
+=== HOME PAGE (Nov 3 build) ===
+Free I Voted and I Voted Early Stickers 2026 by State | Vote Sticker 
+ ¿Prefieres ver esta página en español?
+Ver en español No, gracias 
+ VOTE STICKER 
+ Show your friends you're voting. 
+ Español
+ November 3, 2026 · Election Day
+## Find your state's voting locations, hours and ballot return rules.
+ Choose your state Already voted? Get your sticker.
+ Make a voting plan. Share the sticker.
+## Free I voted stickers for every state
+ Make a digital I voted sticker or share your state’s voting dates, sized for your profile picture or a post.
+ Your state Get my sticker 
+ Free, no account. Or browse the full list of states
+ Election Day: Tuesday, Nov. 3 
+## Classic I Voted Stickers
+ Red, white and blue I voted stickers for any state: I voted, I voted today, I voted early, I voted by mail, first-time voter, and future voter for kids who came along. Tap one to save it as a round PNG with no background, ready to post or send.
+ Show 36 more stickers 
+ Want your state’s name and dates on it? Make your sticker
+## Find a Sticker You Like
+ Tap one to see every design for that state.
+ New York 
+ North Carolina 
+ Don’t see your state? See all 50 states and DC ↓
+## I Voted Early Stickers
+ Voted early? Save a ready-made I voted early sticker from your state, or choose I voted early in the sticker maker on your state’s page.
+ New Jersey 
+ South Carolina 
+ Don’t see your state? See all 50 states and DC ↓
+## How It Works
+ Pick your state See its voting dates and sticker designs.
+ Make it yours Choose a ready-made sticker or make your own.
+ Save and share Download it for your profile picture or a post.
+ Need polling places, hours or ID rules? Find your election office.
+ Nonpartisan, free, and private. No account, and nothing you make is uploaded. Dates come from official state election offices.
+## Ready-Made Stickers
+ Tap a sticker to save it. The words stay inside the circle, so they fit a round profile photo.
+ Free designs by Vote Sticker, not affiliated with any election office. They aren’t proof of voting.
+## Make Your Sticker
+ How it appears as a profile picture 
+ What should it say? 
+## Choose a Layout
+ Every design fits inside a profile-picture circle.
+ Download picture
+ Open full image
+ Curious where the I voted sticker came from? Read its history
+ Send this page to someone who hasn't voted yet. Share the page 
+ More options
+ Dates or extra text Reset dates 
+ Picture size
+ Profile picture 
+ Sunburst background 
+ Tilt the sticker 
+ Show the profile-picture crop 
+ Cut out the circle See-through corners, so you can place it on a photo or story. Saves as a PNG. 
+ Copy image description 
+ Caption to share with your sticker
+ Plan Short Friends Official info 
+ Copy caption and link 
+## When, Where, and What to Bring
+## I Voted Stickers by State
+ Show all 50 states and DC
+## Official Digital Stickers From Election Offices
+ A few election offices post their own I voted sticker for you to share online. If yours does, use it. These are ones we found:
+ Maryland's State Board of Elections has 2026 I voted stickers to download, including an America 250 design in English and Spanish. Get Maryland’s stickers
+ Washington's Secretary of State has eight I voted images to use as a profile picture. Get Washington’s sticker
+ Multnomah County, Oregon, has a virtual sticker in 11 languages. Get Multnomah County’s sticker
+ Oregon's Secretary of State has I Voted and I Voted By Mail virtual stickers. Get Oregon’s stickers
+ Colorado voters signed up for BallotTrax get a digital Blucifer I Voted sticker once their mail ballot is accepted. It comes in the notification, not as a public download. Colorado’s announcement
+ Grand Rapids, Michigan, has digital I voted stickers in nine languages, including Arabic, Burmese, Kinyarwanda and Nepali. Get Grand Rapids’ stickers
+ Ann Arbor, Michigan, has digital I voted stickers in eight languages, from Arabic to Korean. Get Ann Arbor’s stickers
+ Portage, Michigan, has #PortageVotes digital I voted stickers in eight languages, including a ¡YO VOTÉ! sticker in Spanish, plus a First-Time Voter sticker. Get Portage’s stickers
+ Voting from another country? The Federal Voting Assistance Program has an "I Voted From" sticker for each country. Find your country
+ Don't see one for your state? Make your own above, sized for your profile picture.
+## I Voted Sticker Contests
+ Some election offices hold sticker design contests. Students or voters send in designs, a panel or a public vote picks the winning stickers, and poll workers hand them out. Some 2026 winners, from the offices that ran the contests:
+ Kentucky: Ryker, a student at Bush Elementary in Laurel County, drew a smiling sun over Kentucky pasture. Voters at the State Fair picked it. Announcement
+ New Hampshire: Six fourth and fifth graders drew the stickers, chosen from more than 2,800 entries. Announcement
+ North Dakota: "You Betcha I Voted" won the Secretary of State’s first sticker contest. Announcement
+ West Virginia: More than 1,100 eighth graders entered the state’s first contest. Announcement
+ South Dakota: Students designed this year’s stickers through the Civics in the 605 showcase. Announcement
+ Kansas: In Sedgwick County, a high school sophomore drew the I voted sticker and a third grader drew the first Future Voter sticker. Announcement
+ Not every new sticker comes from a contest. Georgia’s 2026 sticker uses art by Georgia artist Steve Penley. Running a contest at your election office? The U.S. Election Assistance Commission has tips.
+ Sticker stories from 46 states
+ Alabama: For the November 3, 2026 general election, Alabama's Secretary of State released newly designed America 250 I Voted stickers, marking the country's 250th anniversary.
+ Alaska: Alaska's 2026 I Voted stickers carry art by Anchorage artist Amanda Rose Warren, the Division of Elections' featured artist this year.
+ Arizona: Maricopa County held its first I Voted sticker contests in 2024 and used four winning designs that year.
+ California: Santa Clara County's first I Voted sticker contest drew 203 student designs, and more than 10,000 public votes picked six winners.
+ Colorado: Colorado's Secretary of State runs a digital "I Voted" sticker contest for high school students.
+ Connecticut: For the 2020 election, the 100th anniversary of the 19th Amendment, Connecticut's Secretary of the State put out "I Voted" stickers honoring Connecticut women who fought for the vote.
+ Florida: Some Florida counties pick their stickers in student contests.
+ Georgia: Georgia has a new statewide "I Voted" sticker for 2026, designed by Georgia artist Steve Penley.
+ Hawaii: Hawaii tied its sticker to ballot tracking.
+ Idaho: Idaho's own voting guide ends with a sticker: after you turn in your ballot, grab an I Voted sticker and wear it proudly.
+ Illinois: In Lake County, students designed the 2026 sticker.
+ Indiana: In 2024 the Indiana Secretary of State held an I Voted sticker contest for students in kindergarten through 12th grade.
+ Iowa: For the November 3, 2026 election, Johnson County gave people who voted early after 5 p.m. during its Voting After Dark evening hours a special I Voted After Dark sticker.
+ Kansas: Sedgwick County's 2026 I Voted sticker is a picture of Kansas: a Western Meadowlark, a barn, wheat, a sunflower, the state motto "Ad Astra Per Aspera" and a road across the prairie to the State Capitol.
+ Kentucky: Kentucky's 2026 I voted sticker is a smiling sun over rolling Kentucky pasture with a blue outline of the state, drawn by Ryker, a student at Bush Elementary in Laurel County.
+ Louisiana: Louisiana's 2026 I voted sticker has art by New Orleans artist Terrance Osborne.
+ Maine: For its 2020 student mock election, the Maine Secretary of State gave schools two printable "I Voted Today" sticker designs, made for Avery 5160 mailing labels.
+ Maryland: The State Board of Elections has I voted sticker designs you can download, including two that say it in English and Spanish.
+ Massachusetts: In Middleborough, four young artists, Nolan, Abby, Calleigh and Colette, won the Town Clerk's 2026 I Voted sticker contest.
+ Michigan: Michigan's 2026 I Voted stickers come from a statewide contest run by the Michigan Department of State.
+ Minnesota: Minnesota's I voted sticker is written into state law: it says "I VOTED," and nothing more.
+ Mississippi: In 2025, Mississippi's Secretary of State held a contest for registered voters 18 and older to design the I Voted sticker for all 82 counties to use during the 2026 election cycle.
+ Missouri: In Boone County, high school students design the sticker.
+ Montana: Montana's Secretary of State unveiled a new I Voted sticker for the 2026 elections.
+ Nebraska: Lancaster County picked new “I Voted” and “Future Voter” stickers in its first sticker contest.
+ Nevada: For Election Day 2024, Allegiant Stadium was an official Clark County polling place, and voters who cast a ballot there got an "I VOTED" sticker made by the Las Vegas Raiders.
+ New Hampshire: New Hampshire's 2026 I Voted stickers were drawn by six fourth- and fifth-grade students from Milford, Windham, Lebanon, Chester, Etna and Nottingham.
+ New Mexico: In Bernalillo County, students drew this year's I Voted stickers.
+ New York: Ulster County's Board of Elections runs a student I Voted sticker contest, now in its sixth year.
+ North Carolina: Some North Carolina counties let residents help pick the sticker.
+ North Dakota: For 2026, the North Dakota Secretary of State's office held its first I Voted sticker contest.
+ Ohio: For 2026, the Secretary of State unveiled a limited-edition America 250 "I Voted" sticker for the nation's 250th birthday.
+ Oklahoma: For America's 250th birthday, the State Election Board brought out two limited-edition I Voted sticker designs for the June 16, 2026 election, at early voting sites and polling places across the state while supplies lasted.
+ Oregon: Oregon votes by mail, so the Secretary of State offers two virtual stickers to download and share: "I Voted," with a checked ballot box on an Oregon-shaped flag, and "I Voted By Mail," with a signed ballot envelope.
+ Pennsylvania: Allegheny County's first I Voted sticker contest drew more than 13,000 public votes.
+ Rhode Island: In Cranston, high school students design the city's I Voted stickers.
+ South Carolina: South Carolina's State Election Commission introduced two new statewide "I Voted" sticker designs for the 2022 elections, and they won a national Clearie Award from the U.S.
+ South Dakota: South Dakota students designed the 2026 I Voted stickers through the Secretary of State's Civics in the 605 Statewide Sticker Showcase.
+ Tennessee: For 2026, the Tennessee Secretary of State made a special America 250 I Voted sticker, with patriotic artwork for the country's 250th anniversary.
+ Texas: In El Paso County, voters get student-designed stickers during the 2026 elections.
+ Utah: For 2026, Weber County Elections held an America 250 "I Voted" sticker contest for local high school students.
+ Vermont: Each year the Secretary of State's office supports a contest, part of the Good Citizen Challenge hosted by Seven Days, where K-8 students design an alternative "I Voted" sticker.
+ Washington: Snohomish County has seven new I Voted designs for the November 3 election, showing the county's landscapes, industries and cultures.
+ West Virginia: West Virginia held its first statewide I Voted! sticker contest in 2026, and more than 1,100 eighth graders entered.
+ Wisconsin: Washington County’s clerk asked students in kindergarten through 12th grade to design the 2026 “I Voted” sticker.
+ Wyoming: In 2019, the Secretary of State's office ran an I Voted sticker contest for Wyoming high school juniors and seniors and college students, marking 150 years of women's suffrage in Wyoming.
+## Why This Exists
+ The paper I voted sticker is a small way of saying you showed up. These days more people see your profile picture than your shirt, so Vote Sticker puts that reminder where people look. Garrett Digital in Austin built it. It's free, nonpartisan, and sells nothing. More about Vote Sticker
+ → Who started the I voted sticker? Nobody knows for sure. The waving American flag oval many people picture was drawn in 1987 by Janet Boudreau for Intab, an election supply company. The Smithsonian's National Museum of American History keeps a 1920 ribbon that marked a woman's first vote. How the I voted sticker became a tradition 
+## Questions People Ask
+ Where can I get an I voted sticker?
+ Poll workers at most polling places and vote centers hand you one after you vote. Each state or county picks its own design. Voted by mail? Some offices put a sticker in the ballot packet or post a digital one (see the list above). Or save a free one here, a classic one or one made for your state. Your state page links to its official ballot tracker where there is one, so you can check that your ballot arrived.
+ Is there a digital or virtual I voted sticker?
+ Yes. Vote Sticker has free digital I voted stickers for every state and DC, with no account needed. Each one saves as a PNG for Instagram, Facebook, a story or your profile picture. Turn on Cut out the circle in the maker for see-through corners. Some election offices post their own digital stickers too. The ones we found are under Official Digital Stickers From Election Offices.
+ How do I make it my profile picture?
+ Save your sticker (Save to Photos on iPhone, Download picture elsewhere), then open your profile settings in the app and choose the saved image as your photo. The design stays inside the circle that profile photos are cropped to.
+ When should I switch to I voted?
+ After you vote. Under What should it say?, choose I voted, or I voted early or I voted by mail if that fits.
+ Do I voted stickers get more people to vote?
+ The research gives no simple yes or no. A 2025 study found that seeing an "I Will Vote" sticker raised people’s plans to vote more than an "I Voted" sticker did, but it measured plans, not votes. A 2010 Facebook experiment with 61 million people found a small rise in voter turnout when people saw friends who said they had voted. That was a message inside Facebook, not a profile picture. That’s why the maker has messages for before you vote, like Vote early and Vote Nov 3, as well as I voted for after.
+ Is it really free?
+ Yes. There's nothing to buy, no account and no email list. Garrett Digital built it as a public service and pays for the hosting.
+ Do you keep my information?
+ Your sticker is made in your browser and never uploaded, and the site never asks for a photo, a name or an email address. Google Analytics and Ahrefs Web Analytics count visits; the About page lists exactly what they record.
+ Is this an official election site?
+ No. Vote Sticker is an independent, nonpartisan tool made by one person. For voter registration, polling places, and deadlines, go to your state or local election office. Each state page links to it.
+ Where do the dates come from?
+ From official state sources: the election office's own pages or state law, checked and dated. Until a state's dates are confirmed, its stickers say Election Day.
+ Why do some states say hours or start dates vary?
+ In some states, counties or towns set their own early voting days, hours, and locations. Your local election office has the final details.
+ What if my state doesn't have early voting?
+ Your sticker says VOTE NOV 3. If you can't vote in person on Election Day, you may qualify for an absentee ballot. Your state's page links to the rules.
+ Can I post a photo of my ballot?
+ It depends on the state. Some states allow a picture of your own marked ballot, and some make it illegal to show one. Each state page says what that state allows, where we could confirm it. The stickers made here show no ballot.
+ Who made this?
+ Garrett Digital, an SEO and search marketing consultancy in Austin, Texas. More on the About page.
+ Vote Sticker is independent and nonpartisan. It isn't affiliated with any government office, campaign or party. Voting dates and links come from official election sources. Before you vote, confirm your registration, polling place, hours, and ID requirements with your state or local election office. Find your election office.
+ Make a sticker State stickers Sticker History About Vote Sticker Share a source or correction 
+ Built in Austin by
+ An SEO and search marketing consultancy that builds useful websites, tools and measurement for businesses and nonprofits. Let's talk.
+
+=== TEXAS PAGE (Nov 3 build) ===
+Texas I Voted Stickers 2026: Vote Nov 3 
+ VOTE STICKER 
+ Show your friends you're voting. 
+ Español
+ Vote Sticker
+ November 3, 2026 · Election Day
+## Find your Election Day voting location and hours.
+ Scheduled voting hours: Polling places are open 7 a.m. to 7 p.m. local time.
+ Find my voting location ↗ Already voted? Get your sticker.
+## Texas I Voted and Vote Stickers
+ EARLY VOTING HAS ENDED. VOTE NOV 3
+ Grab a ready-made sticker or make your own, then set it as your profile picture. Early voting ended October 30; vote on Election Day, Tuesday, November 3.
+ Election Day: Tuesday, Nov. 3 
+ See Texas stickers ↓ Make your own ↓
+ Official info: votetexas.gov ↗
+ When, Where, and What to Bring ↓
+ Copy link to this Texas page 
+## Pick a Texas Sticker
+ Tap a sticker to save it. The words stay inside the circle, so they fit a round profile photo.
+ Prefer something traditional? See the red, white and blue I voted stickers.
+ Free designs by Vote Sticker, not affiliated with any election office. They aren’t proof of voting. See the stickers election offices hand out.
+## County I Voted Stickers in Texas
+ Guadalupe County: Julianna's hand-drawn bluebonnet won the county's first I Voted sticker contest, and Laila drew the Future Voter sticker. The first-place designs are on the county's stickers for the 2025 and 2026 elections.
+ Gaines County: Mattie, an 11th grader at Seminole High School, won the county's first high school sticker contest with a red I Voted! sticker and a row of stars. It is handed out at every early voting site and Election Day vote center in 2026.
+ Each link goes to the election office that announced it. Last checked October 30, 2026.
+## Or Make Your Own
+ How it appears as a profile picture 
+ What should it say? 
+## Choose a Layout
+ Every design fits inside a profile-picture circle.
+ Download picture
+ Open full image
+ Curious where the I voted sticker came from? Read its history
+ Send this page to someone who hasn't voted yet. Share the page 
+ More options
+ Dates or extra text Reset dates 
+ Picture size
+ Profile picture 
+ Sunburst background 
+ Tilt the sticker 
+ Show the profile-picture crop 
+ Cut out the circle See-through corners, so you can place it on a photo or story. Saves as a PNG. 
+ Copy image description 
+ Caption to share with your sticker
+ Plan Short Friends Official info 
+ I'm voting on Election Day. Early voting in Texas ended October 30. Election Day is Tuesday, November 3, 2026. Find your polling place at votetexas.gov. What's your plan to vote?
+Want one? Make your own free Texas vote sticker: https://votesticker.org/go/texas/plan
+#ElectionDay #VoteSticker #VoteTexas 
+ Copy caption and link 
+## When, Where, and What to Bring
+## Vote on Election Day
+ Early voting in Texas ended Friday, October 30. Election Day is Tuesday, November 3, 2026.
+ Election Day hours: Polls are open 7 a.m. to 7 p.m. local time. Texas has two time zones.
+ ID: Show one of seven accepted photo IDs, such as a Texas driver's license or a U.S. passport. If you can't reasonably get one, you can sign a Reasonable Impediment Declaration and show supporting ID, such as your voter registration certificate.
+ Find my polling place My Voter Portal (Texas Secretary of State)
+ Official Texas voting information
+ Add to my calendar Your voting dates in Texas, with a reminder the day before. Opens in your phone or computer calendar. 
+ Make a voting plan ↗ Planning help on VOTE411, from the nonpartisan League of Women Voters Education Fund. 
+ From the Texas Secretary of State and VoteTexas.gov. Last checked October 30, 2026.
+## Key Dates for Nov. 3
+ Texas voting dates and deadlines for the November 3, 2026 election Voter registration Registration closed October 5, 2026. Texas has no same-day or Election Day registration, and the limited ballot for voters who moved counties was only available during early voting. Check your registration status. 
+ Early voting (ended) Monday, October 19 to Friday, October 30, 2026. 
+ Early voting hours Early voting ended Friday, October 30. Vote on Election Day, November 3, 7 a.m. to 7 p.m. local time. 
+ Mail ballot requests Your county's early voting clerk must receive your application by Friday, October 23, 2026. 
+ Mail ballot return In hand by 7 p.m. on Tuesday, November 3, or postmarked by 7 p.m. that day and received by 5 p.m. on Wednesday, November 4, 2026. Overseas and military deadlines differ. 
+ Fixing a mail ballot problem Got a notice of a defect on your mail ballot? Correct it by Monday, November 9, 2026. 
+ Election Day Tuesday, November 3, 2026. 
+ From VoteTexas.gov and the Texas Secretary of State. Last checked October 30, 2026.
+ Missed a registration deadline? What you can still do, state by state.
+## Texas and the I Voted Sticker
+ In El Paso County, voters get student-designed stickers during the 2026 elections. Novalie, then a 10th grader at Eastwood High School, drew the I Voted sticker. Sophia, then a 4th grader at Coach Wally Hartley PK-8 School, drew the Future Voter sticker. They won first place in the county's 2025 sticker contest, out of 162 entries.
+## Do I get an I voted sticker if I vote early in Texas?
+ In Williamson County, yes, while supplies last. Its 2026 student-designed stickers are handed out from the first day of early voting, October 19, through Election Day, November 3. Austin, an eighth grader at Santa Rita Ranch Middle School, and Brinda, a 12th grader at Rouse High School, won first place in the I Voted contest. Felicity, a second grader at Naumann Elementary School, won first place for the Future Voter sticker.
+## I voted by mail in Texas. How do I get a sticker?
+ In El Paso County, save a digital one. The county elections department posts a free digital "I Voted" sticker for mail voters: save the image to your phone or computer. In another county? Ask your county elections office.
+ How sticker design contests spread across the country
+ Make your own Texas I voted sticker
+ From the El Paso County Elections Department and Williamson County Elections. Last checked October 30, 2026.
+## Where You Can Vote
+ During early voting you can vote at any early voting location in the county where you live. On Election Day, it depends on your county: counties in the Countywide Polling Place Program let you vote at any location in the county, and the rest send you to your assigned precinct.
+ My Voter Portal shows your registration and where you can vote. Your county elections office lists early voting sites and their hours.
+ Texas county and local election offices
+ From VoteTexas.gov. Last checked October 30, 2026.
+## What ID to Bring
+ Bring one of these:
+ Texas driver license
+ Texas Election Identification Certificate
+ Texas personal identification card
+ Texas handgun license
+ U.S. military ID card with your photo
+ U.S. citizenship certificate with your photo
+ U.S. passport, book or card
+ If you are 18 to 69, your ID can be expired up to four years. If you are 70 or older, it can be expired for any length of time. The citizenship certificate doesn't expire.
+ Don't have one of these and can't reasonably get one? You can still vote a regular ballot. Bring one supporting document, such as your voter registration certificate, a certified birth certificate, or a current utility bill, bank statement, paycheck, government check or other government document with your name and an address. Then sign a short form called a Reasonable Impediment Declaration.
+ From VoteTexas.gov. Last checked October 30, 2026.
+ Forgot your ID, or want to see how other states compare? Voter ID rules in every state.
+## Who Can Vote by Mail
+ You can vote by mail in Texas if you:
+ are 65 or older on Election Day
+ are sick or disabled
+ are expected to give birth within three weeks before or after Election Day
+ will be away from your county on Election Day and during early voting hours
+ are confined in jail or involuntary civil commitment but otherwise eligible
+ If someone helps you with your mail ballot, their name and address go on the carrier envelope and they sign it.
+ Texas has no drop boxes. Your marked ballot can go back by mail, by a delivery company, or by you in person to the early voting clerk's office, only while polls are open on Election Day and with an accepted ID. No one else can drop it off for you. Changed your mind? Bring the mail ballot with you and hand it in at a polling place so you can vote in person. Without it, you can vote only a provisional ballot.
+ Missing signature, a signature that doesn't match, or missing ID or witness information? You'll get a notice with a corrective action form on the back. Return it by mail or in person, or fix an ID number online in the Ballot by Mail Tracker, by Monday, November 9.
+ Track your Texas mail ballot
+ From VoteTexas.gov and the Texas Election Code. Last checked October 30, 2026.
+ Why mail ballots get rejected, and how to fix a signature problem: the mail voting guide.
+## Phones, Photos, and Campaign Gear
+ Leave the campaign shirts and hats at home. Within 100 feet of any outside door to the polling place, you can't wear a badge, button or anything else about a candidate, party or measure on the ballot. Political signs and handouts are out in that zone too, and within 20 feet of curbside voting spaces.
+ Keep your phone put away in the room where voting happens. Texas bans recording images or sound within 100 feet of a voting station, so take your sticker selfie outside and well away from the door.
+ Inside or in line at your polling place at 7 p.m.? Stay. You can still vote.
+ From the Texas Election Code. Last checked October 30, 2026.
+ Looking for another state? Find 
+ Or browse the full list of states
+## Other States Where Early Voting Has Ended
+## States Next Door
+ Previous state Tennessee Next state Utah 
+## All States
+ Show all 50 states and DC
+ Texas Election Day Nov 3 
+## Questions People Ask
+ Answers come from official Texas sources. Last checked October 30, 2026.
+ When are polls open in Texas on Election Day?
+ Polls are open 7 a.m. to 7 p.m. local time. Texas has two time zones.
+ From VoteTexas.gov.
+ Do I need ID to vote in Texas?
+ Show one of seven accepted photo IDs, such as a Texas driver's license or a U.S. passport. If you can't reasonably get one, you can sign a Reasonable Impediment Declaration and show supporting ID, such as your voter registration certificate.
+ From VoteTexas.gov.
+ Can I still register to vote in Texas?
+ No, not for the November 3 election. The deadline was October 5, 2026, and Texas has no Election Day registration.
+ From VoteTexas.gov.
+ Can I take a picture of my ballot in Texas?
+ Not at the polls. Texas law bars recording images or sound within 100 feet of a voting station, so take your sticker photo well away from it.
+ From the Texas Election Code.
+ When is the mail ballot deadline in Texas?
+ In hand by 7 p.m. on Tuesday, November 3, or postmarked by 7 p.m. that day and received by 5 p.m. on Wednesday, November 4, 2026. Overseas and military deadlines differ.
+ From the Texas Secretary of State.
+ What is a provisional ballot in Texas, and does it count?
+ You vote a provisional ballot when poll workers can't verify your registration, or when you have an accepted photo ID but didn't bring it. In that case, take the ID to your county voter registrar's office within six days after Election Day, by Monday, November 9, or your ballot won't count. You'll get a notice in the mail telling you whether it counted. Name not on the list? Your voter registration certificate and an accepted photo ID may let you vote a regular ballot instead.
+ From VoteTexas.gov.
+ What if I am in line when the polls close in Texas?
+ You can still vote. Anyone inside or waiting to enter their polling place at 7 p.m. gets to vote.
+ From the Texas Election Code.
+ How do I track my mail ballot in Texas?
+ Use the Ballot by Mail Tracker on the Texas Secretary of State's My Voter Portal once you've sent your ballot back. You'll need your name, date of birth, the last 4 digits of your Social Security number, and your Texas driver's license or DPS personal ID number.
+ From VoteTexas.gov.
+ Is it too late to mail my ballot in Texas?
+ Not if it's postmarked by 7 p.m. on Tuesday, November 3, and reaches your county's early voting clerk by 5 p.m. on Wednesday, November 4. Not sure it will make it? Hand it in yourself at the early voting clerk's office on Election Day while polls are open. Bring an accepted ID.
+ From the Texas Secretary of State.
+ How do I make it my profile picture?
+ Save your sticker (Save to Photos on iPhone, Download picture elsewhere), then open your profile settings in the app and choose the saved image as your photo. The design stays inside the circle that profile photos are cropped to.
+ When should I switch to I voted?
+ After you vote. Under What should it say?, choose I voted, or I voted early or I voted by mail if that fits.
+ Do I voted stickers get more people to vote?
+ The research gives no simple yes or no. A 2025 study found that seeing an "I Will Vote" sticker raised people’s plans to vote more than an "I Voted" sticker did, but it measured plans, not votes. A 2010 Facebook experiment with 61 million people found a small rise in voter turnout when people saw friends who said they had voted. That was a message inside Facebook, not a profile picture. That’s why the maker has messages for before you vote, like Vote early and Vote Nov 3, as well as I voted for after.
+ Is this an official election site?
+ No. Vote Sticker is an independent, nonpartisan tool made by one person. For voter registration, polling places, and deadlines, go to your state or local election office. Each state page links to it.
+ Where do the dates come from?
+ From official state sources: the election office's own pages or state law, checked and dated. Until a state's dates are confirmed, its stickers say Election Day.
+ Why do some states say hours or start dates vary?
+ In some states, counties or towns set their own early voting days, hours, and locations. Your local election office has the final details.
+ What if my state doesn't have early voting?
+ Your sticker says VOTE NOV 3. If you can't vote in person on Election Day, you may qualify for an absentee ballot. Your state's page links to the rules.
+ Do you keep my information?
+ Your sticker is made in your browser and never uploaded, and the site never asks for a photo, a name or an email address. Google Analytics and Ahrefs Web Analytics count visits; the About page lists exactly what they record.
+ Vote Sticker is independent and nonpartisan. It isn't affiliated with any government office, campaign or party. Voting dates and links come from official election sources. Before you vote, confirm your registration, polling place, hours, and ID requirements with your state or local election office. Find your election office.
+ Make a sticker State stickers Sticker History About Vote Sticker Share a source or correction 
+ Built in Austin by
+ An SEO and search marketing consultancy that builds useful websites, tools and measurement for businesses and nonprofits. Let's talk.
+
+=== CALIFORNIA PAGE (Nov 3 build) ===
+California I Voted and Vote Stickers: Vote by Mail, Due Nov 3 
+ VOTE STICKER 
+ Show your friends you're voting. 
+ Español
+ Vote Sticker
+ November 3, 2026 · Ballot return deadline
+## Still have your ballot? Check how to return it.
+ Drop box or voting location: by 8 p.m. on Tuesday, November 3. Mail: postmarked on or before November 3 and received by your county by Tuesday, November 10, and no stamp needed. Mail it at least 7 days before Election Day; after that, use a drop box or ask a postal employee for a hand postmark.
+ Find a drop box ↗ Already returned it? Track your ballot.
+## California I Voted and Vote Stickers
+ MAIL OR DROP OFF BY NOV 3
+ Your ballot came in the mail. Pick a day to send it back, then grab a sticker so your friends remember theirs.
+ Election Day: Tuesday, Nov. 3 
+ See California stickers ↓ Make your own ↓
+ Official info: caearlyvoting.sos.ca.gov ↗
+ How to Get Your Ballot In ↓
+ Copy link to this California page 
+## Pick a California Sticker
+ Tap a sticker to save it. The words stay inside the circle, so they fit a round profile photo.
+ Prefer something traditional? See the red, white and blue I voted stickers.
+ Free designs by Vote Sticker, not affiliated with any election office. They aren’t proof of voting. See the stickers election offices hand out.
+## County and City I Voted Stickers in California
+ San Francisco: Look in your vote-by-mail packet. The Department of Elections mails every locally registered voter an "I Voted!" sticker with the ballot, instructions and a postage-paid return envelope.
+ Los Angeles County: On October 31, voters at the county's 11-day Vote Centers got a Halloween sticker while supplies lasted.
+ Orange County: Look in your vote-by-mail packet. The county's November 3 instructions include a peel-off I Voted sticker for voters who return their ballot.
+ Foster City: Residents picked the city's own sticker for November 3 in a contest shared with Burlingame, Hillsborough, Millbrae and San Mateo. Get it at City Hall, or at Foster City vote centers from October 31 through Election Day.
+ San Luis Obispo County: The county's mayors picked four student stickers for 2026, among them a "Yo voté" design by Aurelia, a third grader at Pacheco Elementary. All four go out at every polling place on Election Day, November 3.
+ Each link goes to the election office that announced it. Last checked October 31, 2026.
+## Or Make Your Own
+ How it appears as a profile picture 
+ What should it say? 
+## Choose a Layout
+ Every design fits inside a profile-picture circle.
+ Download picture
+ Open full image
+ Curious where the I voted sticker came from? Read its history
+ Send this page to someone who hasn't voted yet. Share the page 
+ More options
+ Dates or extra text Reset dates 
+ Picture size
+ Profile picture 
+ Sunburst background 
+ Tilt the sticker 
+ Show the profile-picture crop 
+ Cut out the circle See-through corners, so you can place it on a photo or story. Saves as a PNG. 
+ Copy image description 
+ Caption to share with your sticker
+ Plan Short Friends Official info 
+ I'm getting my ballot in early. California votes by mail. Return your ballot by November 3. Details at caearlyvoting.sos.ca.gov. When are you sending yours back?
+Want one? Make your own free California vote sticker: https://votesticker.org/go/california/plan
+#VoteByMail #VoteSticker #VoteCalifornia 
+ Copy caption and link 
+## How to Get Your Ballot In
+## Sign the Envelope, Then Send It Back
+ Drop box or voting location: by 8 p.m. on Tuesday, November 3. Mail: postmarked on or before November 3 and received by your county by Tuesday, November 10, and no stamp needed. Mail it at least 7 days before Election Day; after that, use a drop box or ask a postal employee for a hand postmark.
+ ID: Usually not. Most California voters don't show ID. Some first-time voters who registered without an ID number may be asked for one, such as a driver's license, passport, or utility bill.
+ Find a drop box CAEarlyVoting.sos.ca.gov drop boxes and voting locations
+ Official California voting information
+ Add to my calendar Your voting dates in California, with a reminder the day before. Opens in your phone or computer calendar. 
+ Make a voting plan ↗ Planning help on VOTE411, from the nonpartisan League of Women Voters Education Fund. 
+ From the California Secretary of State and vigarchive.sos.ca.gov. Last checked October 31, 2026.
+## Key Dates for Nov. 3
+ California voting dates and deadlines for the November 3, 2026 election Voter registration Online registration closed October 19. You can still register and vote the same day, through Election Day, at your county elections office or any in-person voting location in your county. Check your registration status. 
+ Early voting hours Early voting sites opened October 5, and the first vote centers opened October 24 in the 30 Voter's Choice Act counties. More in-person voting locations open across the state on Saturday, October 31. Each county sets its hours. 
+ Fixing a mail ballot problem Forgot to sign your ballot envelope, or your signature doesn't match? Your county must receive the signature statement by 5 p.m. on Wednesday, November 25, 2026. 
+ Election Day Tuesday, November 3, 2026. 
+ From the California Secretary of State. Last checked October 31, 2026.
+ Missed a registration deadline? What you can still do, state by state.
+## California and the I Voted Sticker
+ Santa Clara County's first I Voted sticker contest drew 203 student designs, and more than 10,000 public votes picked six winners. More than one million vote-by-mail packets for November 3 include one of the six, and all six are handed out at the county's Vote Centers.
+## Do I get an I voted sticker if I vote early in California?
+ In San Luis Obispo County, yes. The county's 2026 student-designed stickers are handed out at both of its elections offices, where you can vote early, and at polling locations during the November election.
+## I voted by mail in California. How do I get a sticker?
+ Look in your ballot packet. In San Diego County, the November 3 packet includes an "I Voted" sticker with the voting instructions and the two-card ballot. In another county? Check your own ballot packet.
+ How sticker design contests spread across the country
+ Make your own California I voted sticker
+ From the Santa Clara County Registrar of Voters, the San Luis Obispo County Clerk-Recorder and San Diego County. Last checked October 31, 2026.
+## Drop Boxes and Voting Centers
+ Your ballot comes to you by mail, and you can vote in person instead. On Election Day, polls are open 7 a.m. to 8 p.m.
+ Find your nearest drop box, polling place or vote center at CAEarlyVoting.sos.ca.gov, or ask your county elections office. You can drop off your finished ballot at any polling place or ballot drop-off location in California.
+ Missed the deadline? Go to your county elections office, a vote center or a polling place to register conditionally and vote a provisional ballot, through Election Day. It's often called Same Day Voter Registration.
+ California county and local election offices
+ From the California Secretary of State. Last checked October 31, 2026.
+## What ID to Bring
+ Asked for ID and don't have it? You can still vote a provisional ballot. It's counted once your eligibility is confirmed.
+ From the California Secretary of State. Last checked October 31, 2026.
+ Forgot your ID, or want to see how other states compare? Voter ID rules in every state.
+## Returning Your Ballot
+ Every active registered voter gets a ballot in the mail with a postage-paid return envelope. Didn't get yours, or it got lost or damaged? In the 30 Voter's Choice Act counties, any vote center in your county can give you a replacement ballot. In other counties, ask your county elections office.
+ Sign and date the outside of the return envelope, with a signature that matches your California driver's license, state ID or registration. Can't return it yourself? Fill out the authorization on the envelope and anyone can take it in for you, as long as they aren't paid per ballot.
+ Drop it at any polling place or ballot drop-off location in California by 8 p.m. on Election Day. Drop boxes are clearly marked "Official Ballot Drop Box."
+ If you forgot to sign or your signature doesn't compare, your county will reach you by mail, phone, email or Where's My Ballot? and send a form. Fill it out and return it by 5 p.m. on November 25.
+ Track your California mail ballot
+ From the California Secretary of State. Last checked October 31, 2026.
+ Why mail ballots get rejected, and how to fix a signature problem: the mail voting guide.
+## Phones, Photos, and Campaign Gear
+ Leave the campaign shirts, hats, buttons and stickers at home. Within 100 feet of a polling place, vote center or elections office, you can't show a candidate's name, likeness or logo, or a ballot measure's number, title or logo.
+ Polls close at 8 p.m. If you're still in line then, stay put. You have the right to vote.
+ From the California Secretary of State. Last checked October 31, 2026.
+ Looking for another state? Find 
+ Or browse the full list of states
+## Other States That Vote by Mail
+## States Next Door
+ Previous state Arkansas Next state Colorado 
+## All States
+ Show all 50 states and DC
+ California Votes by mail 
+## Questions People Ask
+ Answers come from official California sources. Last checked October 31, 2026.
+ When is the ballot deadline in California?
+ Every active registered voter gets a ballot by mail. Mail it postmarked by November 3 so it arrives within seven days, or drop it off by 8 p.m. that day. Polling places and vote centers are open 7 a.m. to 8 p.m. on November 3.
+ From the California Secretary of State.
+ Do I need ID to vote in California?
+ Usually not. Most California voters don't show ID. Some first-time voters who registered without an ID number may be asked for one, such as a driver's license, passport, or utility bill.
+ From vigarchive.sos.ca.gov.
+ Can I still register to vote in California?
+ Yes. The regular deadline was October 19, 2026. You can still register and vote the same day at your county elections office, a vote center, or a polling place, through Election Day.
+ From the California Secretary of State.
+ Can I take a picture of my ballot in California?
+ Yes. Since 2017, California law lets you photograph your own ballot and share it. You can't photograph other voters going in or out.
+ From the California Secretary of State.
+ What is a provisional ballot in California, and does it count?
+ If your name isn't on the list, you can still vote with a provisional ballot. It counts if elections officials find you're eligible. Registering the same day also means voting a provisional ballot.
+ From the California Secretary of State.
+ What if I am in line when the polls close in California?
+ You can still vote. California's Voter Bill of Rights gives you the right to vote if you're still in line when the polls close.
+ From the California Secretary of State.
+ How do I track my mail ballot in California?
+ Sign up for Where's My Ballot? at WheresMyBallot.sos.ca.gov to get text, email or voice call updates when your ballot is mailed, received and counted, or if there's a problem to fix.
+ From the California Secretary of State.
+ What if I forgot to sign my ballot envelope in California?
+ Your county will contact you and send a form to sign. Return it by 5 p.m. on November 25, 2026, or your ballot won't count. Fill it out right away.
+ From the California Secretary of State.
+ Is it too late to mail my ballot in California?
+ A mailed ballot counts if it's postmarked by November 3 and arrives within 7 days. Mailing it in the last week? Take it to a post office and ask a postal employee for a hand postmark, or use a drop box.
+ From the California Secretary of State.
+ How do I make it my profile picture?
+ Save your sticker (Save to Photos on iPhone, Download picture elsewhere), then open your profile settings in the app and choose the saved image as your photo. The design stays inside the circle that profile photos are cropped to.
+ When should I switch to I voted?
+ After you vote. Under What should it say?, choose I voted, or I voted early or I voted by mail if that fits.
+ Do I voted stickers get more people to vote?
+ The research gives no simple yes or no. A 2025 study found that seeing an "I Will Vote" sticker raised people’s plans to vote more than an "I Voted" sticker did, but it measured plans, not votes. A 2010 Facebook experiment with 61 million people found a small rise in voter turnout when people saw friends who said they had voted. That was a message inside Facebook, not a profile picture. That’s why the maker has messages for before you vote, like Vote early and Vote Nov 3, as well as I voted for after.
+ Is this an official election site?
+ No. Vote Sticker is an independent, nonpartisan tool made by one person. For voter registration, polling places, and deadlines, go to your state or local election office. Each state page links to it.
+ Where do the dates come from?
+ From official state sources: the election office's own pages or state law, checked and dated. Until a state's dates are confirmed, its stickers say Election Day.
+ Do you keep my information?
+ Your sticker is made in your browser and never uploaded, and the site never asks for a photo, a name or an email address. Google Analytics and Ahrefs Web Analytics count visits; the About page lists exactly what they record.
+ Vote Sticker is independent and nonpartisan. It isn't affiliated with any government office, campaign or party. Voting dates and links come from official election sources. Before you vote, check your registration, ballot status, and drop box locations with your county elections office. Find your election office.
+ Make a sticker State stickers Sticker History About Vote Sticker Share a source or correction 
+ Built in Austin by
+ An SEO and search marketing consultancy that builds useful websites, tools and measurement for businesses and nonprofits. Let's talk.

@@ -245,7 +245,9 @@ function vote_meta( $st ) {
 		// The state's own return rule where it's verified (drop box by 8 p.m., received by 7 p.m.): states.js `ribbon`.
 		$ribbon = $st['ribbon'] ?? 'VOTE BY MAIL, DUE ' . strtoupper( vote_short( $st['end'] ) );
 		$fact = $name . ' votes by mail, with ballots due ' . vote_long( $st['end'] ) . '.';
-		$lead = 'Your ballot came in the mail. Pick a day to send it back, then grab a sticker so your friends remember theirs.';
+		// Nov 2 and 3 (pass 12): "pick a day" reads stale on the deadline's eve; say the deadline instead.
+		$lead = 'eday' === vote_phase() ? 'Still have your ballot? Get it in by ' . vote_long( $st['end'] ) . ', then grab a sticker so your friends remember theirs.'
+			: 'Your ballot came in the mail. Pick a day to send it back, then grab a sticker so your friends remember theirs.';
 		$status = 'Votes by mail';
 		$family = 'mail';
 	} elseif ( 'ended' === $kind ) {
@@ -342,7 +344,8 @@ function vote_meta_es( $st ) {
 		$tag = 'vota por correo hasta el ' . vote_short( $st['end'] );
 		$ribbon = vote_sfield( $st, 'ribbon' ) ?: 'VOTA POR CORREO, HASTA EL ' . vote_upper( vote_short( $st['end'] ) );
 		$fact = $name . ' vota por correo y las boletas deben entregarse a más tardar el ' . vote_long( $st['end'] ) . '.';
-		$lead = 'Tu boleta te llegó por correo. Escoge un día para devolverla y luego toma un sticker para que tus amigos se acuerden de la suya.';
+		$lead = 'eday' === vote_phase() ? '¿Todavía tienes tu boleta? Entrégala a más tardar el ' . vote_long( $st['end'] ) . ' y luego toma un sticker para que tus amigos se acuerden de la suya.'
+			: 'Tu boleta te llegó por correo. Escoge un día para devolverla y luego toma un sticker para que tus amigos se acuerden de la suya.';
 		$status = 'Vota por correo';
 	} elseif ( 'ended' === $kind ) {
 		$tag = 'vota el Día de las Elecciones, 3 nov';
@@ -420,7 +423,7 @@ function vote_state_faq( $st ) {
 	// After Election Day (post phase), questions about voting that's over leave the page and the FAQ
 	// markup: poll hours, ballot and registration deadlines, lines, late mail. ID, ballot photos,
 	// provisional ballots, tracking and envelope fixes can still apply (docs/post-election-release.md).
-	$gone = 'post' === vote_phase() ? array( 'polls', 'mail', 'reg', 'dates.mail_return', 'faq.line', 'faq.late_mail' ) : array();
+	$gone = 'post' === vote_phase() ? array( 'polls', 'mail', 'reg', 'dates.mail_return', 'faq.line', 'faq.late_mail', 'faq.problem' ) : array();
 	// Between elections, ballot tracking, envelope fixes and provisional ballots are about a count that's done.
 	if ( vote_between() ) { $gone = array_merge( $gone, array( 'faq.track', 'faq.unsigned', 'faq.provisional' ) ); }
 	foreach ( VOTE_FAQ_Q as $key => $q ) {
@@ -442,6 +445,7 @@ const VOTE_FACT_Q = array(
 	'dates.mail_return' => 'When is the mail ballot deadline in %s?',
 	'faq.provisional'   => 'What is a provisional ballot in %s, and does it count?',
 	'faq.line'          => 'What if I am in line when the polls close in %s?',
+	'faq.problem'       => 'Who do I call if I have a problem voting in %s?',  // Nov 1 (pass 12): the state office's own voter line
 	'faq.track'         => 'How do I track my mail ballot in %s?',
 	'faq.unsigned'      => 'What if I forgot to sign my ballot envelope in %s?',
 	'faq.late_mail'     => 'Is it too late to mail my ballot in %s?',
@@ -742,6 +746,11 @@ function vote_post( $st, $kind = null, $variant = 'plan' ) {
 	$ask = $es
 		? array( 'pre_mail' => '¿Cuándo vas a devolver tu boleta?', 'post' => '¿Y tú, ya tienes tu plan para votar?', 'default' => '¿Ya tienes tu plan para votar?' )
 		: array( 'pre_mail' => 'When are you sending yours back?', 'post' => "What's your plan to vote?", 'default' => "What's your plan to vote?" );
+	// Nov 2 and 3 (pass 12): a mail voter's caption no longer says "early" or asks when they'll send it.
+	if ( 'eday' === vote_phase() ) {
+		$open['pre_mail'] = $es ? 'Voy a entregar mi boleta a más tardar el ' . vote_long( $st['end'] ?? VOTE_ELECTION_DAY ) . '.' : "I'm getting my ballot in by " . vote_long( $st['end'] ?? VOTE_ELECTION_DAY ) . '.';
+		$ask['pre_mail'] = $es ? '¿Ya entregaste la tuya?' : 'Is yours in yet?';
+	}
 	$question = $ask[ $after ? 'post' : $kind ] ?? $ask['default'];
 	// After Election Day: what the person did and where the sticker is. No plan question, no "haven't voted
 	// yet" (docs/post-election-release.md).
@@ -967,7 +976,7 @@ function vote_eday_banner( $st ) {
 function vote_eday_banner_hub() {
 	if ( 'eday' !== vote_phase() ) { return ''; }
 	return '<section class="eday" aria-labelledby="eday-h"><p class="eday__eyebrow">' . vote_e( t( 'November 3, 2026 · Election Day' ) ) . '</p><h2 class="eday__h" id="eday-h">' . vote_e( t( "Find your state's voting locations, hours and ballot return rules." ) ) . '</h2>'
-		. '<p class="eday__links"><a class="btn btn--gold" href="#state-find">' . vote_e( t( 'Choose your state' ) ) . '</a> <a class="eday__more" href="#states-h">' . vote_e( t( 'Already voted? Get your sticker.' ) ) . '</a></p></section>';
+		. '<p class="eday__links"><a class="btn btn--gold" href="#state-find">' . vote_e( t( 'Choose your state' ) ) . '</a> <a class="eday__more" href="#ready-to-share">' . vote_e( t( 'Voted today? Save an I voted today sticker.' ) ) . '</a></p></section>';
 }
 
 // The state panel, server-rendered; app.js infoHtml() draws the same markup when the menu changes.
@@ -1701,7 +1710,13 @@ $vote_ld = array(
 		<details class="faq__state"><summary><?php echo vote_e( $vote_q[0] ); ?></summary><p><?php echo vote_e( $vote_q[1] ); ?></p><p class="faq__src"><?php echo vote_es() ? 'Fuente: ' : 'From '; ?><a href="<?php echo vote_e( $vote_q[2] ); ?>" target="_blank" rel="noopener"><?php echo vote_e( vote_src_name( $vote_st, $vote_q[2] ) ); ?></a>.</p></details>
 		<?php endforeach; endif; ?>
 		<?php if ( ! $vote_st ) : // Home page only (visibility loop item 3, Oct 26): "how to get i voted sticker" sat at 9.3 on state pages. ?>
-		<details><summary><?php echo vote_e( t( 'Where can I get an I voted sticker?' ) ); ?></summary><p><?php echo vote_e( t( 'Poll workers at most polling places and vote centers hand you one after you vote. Each state or county picks its own design. Voted by mail? Some offices put a sticker in the ballot packet or post a digital one (see the list above). Or save a free one here, a classic one or one made for your state. Your state page links to its official ballot tracker where there is one, so you can check that your ballot arrived.' ) ); ?></p></details>
+		<details><summary><?php echo vote_e( t( 'Where can I get an I voted sticker?' ) ); ?></summary><p><?php echo vote_e( t( 'In many places, a poll worker hands you one after you vote. Each state or county decides whether to give them out and picks its own design, and some give them out only while supplies last. Voted by mail? Some offices put a sticker in the ballot packet or post a digital one (see the list above). Or save a free one here, a classic one or one made for your state. Your state page links to its official ballot tracker where there is one, so you can check that your ballot arrived.' ) ); ?></p></details>
+		<?php // Nov 1 (pass 12): Election Day searches ("i voted today sticker" 16 at 8.9; "do you get an i voted sticker with mail in ballot" 4 at 7.0). Every office named below is verified on its state page or in the official list above. ?>
+		<details><summary><?php echo vote_e( t( 'Where can I get an I voted today sticker?' ) ); ?></summary><p><?php echo vote_e( t( 'At your polling place, if your county gives them out: ask a poll worker after you vote. For a digital one, the' ) ); ?> <a href="#ready-to-share"><?php echo vote_e( t( 'Classic I Voted Stickers' ) ); ?></a> <?php echo vote_e( t( 'near the top of this page include I voted today stickers in several designs. Tap one to save it as a PNG, free and with no account. Your state page has stickers made for your state too.' ) ); ?></p></details>
+		<details><summary><?php echo vote_e( t( 'Do you get an I voted sticker if you vote by mail?' ) ); ?></summary><p><?php echo vote_e( t( 'Sometimes. It depends on your county or state. Some put one in the ballot packet: in California, San Francisco, Orange County and San Diego County include an I Voted sticker with the November 3 ballot, and Santa Clara County put one in more than a million packets. Others post a digital one, like the Oregon and Washington Secretaries of State, Multnomah County in Oregon, and El Paso County in Texas. Colorado voters who get BallotTrax updates receive a digital sticker once their ballot is accepted. Nothing in your packet? Save a free I voted by mail sticker here, or see the' ) ); ?> <a href="#official-h"><?php echo vote_e( t( 'official digital stickers we found' ) ); ?></a>.</p></details>
+		<?php if ( 'post' !== vote_phase() ) : // Only official contacts: the state page's own office, and the DOJ Voting Section's toll-free line (justice.gov/crt/voting-section, read Nov 1). ?>
+		<details><summary><?php echo vote_e( t( 'What if I have a problem when I go to vote?' ) ); ?></summary><p><?php echo vote_e( t( 'Ask a poll worker first. If your name isn’t on the list, your state page explains provisional ballots and whether they count, and what happens if you’re in line when the polls close. For anything else, call your county or state election office; your state page links to it, and for some states it lists the office’s voter phone line. To report a possible violation of federal voting rights law, call the U.S. Department of Justice Voting Section at 800-253-3931.' ) ); ?> <a href="https://www.justice.gov/crt/voting-section" target="_blank" rel="noopener"><?php echo vote_e( t( 'Voting Section contacts' ) ); ?></a>.</p></details>
+		<?php endif; ?>
 		<?php // Oct 31 (pass 10): ChatGPT answered "where can I find a virtual I voted sticker" without us. True in every phase. ?>
 		<details><summary><?php echo vote_e( t( 'Is there a digital or virtual I voted sticker?' ) ); ?></summary><p><?php echo vote_e( t( 'Yes. Vote Sticker has free digital I voted stickers for every state and DC, with no account needed. Each one saves as a PNG for Instagram, Facebook, a story or your profile picture. Turn on Cut out the circle in the maker for see-through corners.' ) ); ?> <?php echo vote_e( t( 'Some election offices post their own digital stickers too. The ones we found are under' ) ); ?> <a href="#official-h"><?php echo vote_e( t( 'Official Digital Stickers From Election Offices' ) ); ?></a>.</p></details>
 		<?php endif; ?>

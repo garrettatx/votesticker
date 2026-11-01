@@ -362,6 +362,14 @@
    "checked": "2026-10-21",
    "quote": "ballots entered after the last posted collection time will not be postmarked until the following business day.",
    "status": "verified"
+  },
+  "problem": {
+   "en": "Ask a poll worker first. For anything they can't fix, call your county board of elections or the New York State Board of Elections voter information line at 1-800-367-8683.",
+   "es": "Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la junta electoral de tu condado o a la línea de información para votantes de la Junta Electoral del Estado de New York (State Board of Elections) al 1-800-367-8683.",
+   "src": "https://elections.ny.gov/contact-us",
+   "checked": "2026-11-01",
+   "quote": "Election Operations Voter Information 1-800-367-8683",
+   "status": "verified"
   }
  },
  "notes": "Read October 21, 2026 in Chrome (elections.ny.gov and nysenate.gov return 403 to curl and WebFetch): Early Voting, Registration and Voting Deadlines, Request a Ballot, Ways to Vote; Election Law 8-104 (electioneering, line rule), 8-302 (affidavit ballots), 8-303 (first-time voter ID). The 2026 Political Calendar is a PDF that could not be read in this session, so the cure deadline was not found; the Board's cure page redirects to a 2021 guidance PDF. The early mail ballot in-person deadline ('no later than the day before the election') is November 2. No phone rule found. Sticker tradition is Ulster County's official contest page; the winner is named only in news reports, so it is not stated.",

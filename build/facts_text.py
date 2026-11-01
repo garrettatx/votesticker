@@ -77,6 +77,7 @@ FACTS = {
     'sticker.more': 'more',  # county or city sticker stories under the gallery: a list, each entry its own place, source and quote
     'election_day.hours': 'text',
     'faq.provisional': 'text', 'faq.line': 'text', 'faq.track': 'text', 'faq.unsigned': 'text', 'faq.late_mail': 'text',
+    'faq.problem': 'text',  # who to call: the state election office's own voter line (Nov 1, pass 12)
 }
 RULES = ('photo_required', 'photo_requested', 'id_nonphoto', 'no_id')
 

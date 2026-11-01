@@ -227,6 +227,14 @@
    "quote": "To be counted, all ballots must either be put into a drop box by 8 p.m. on Election Day or postmarked by Election Day and received within the 7-day post-election grace period.",
    "status": "verified",
    "notes": "Pass 2 Oct 30, read by curl. Nov 10: SOS 2026 Elections Calendar. Drop Box Locator: sos.oregon.gov/elections/Pages/drop-box-locator.aspx. Replaces: A mailed ballot counts if it's postmarked by November 3 and reaches your county by November 10. Since October 28, the Secretary of State recommends a drop box. If you have to mail it, ask a post office staff member to hand-stamp the postmark."
+  },
+  "problem": {
+   "en": "Call your county elections office first. You can also call the Oregon Secretary of State's Elections Division toll free at 1-866-673-8683 (1-866-673-VOTE).",
+   "es": "Primero llama a la oficina electoral de tu condado. También puedes llamar gratis a la División de Elecciones de la Secretaría de Estado de Oregon al 1-866-673-8683 (1-866-673-VOTE).",
+   "src": "https://sos.oregon.gov/voting/Pages/default.aspx",
+   "checked": "2026-11-01",
+   "quote": "Oregon Secretary of State Elections Division ... Call Elections: 503-986-1518 Toll free: 1-866-673-VOTE (1-866-673-8683)",
+   "status": "verified"
   }
  },
  "notes": "Read October 21, 2026 on sos.oregon.gov (curl worked): General Election – November 3, 2026 (current-election), Elections FAQ, Oregon Drop Box Locator, Track Your Ballot, Media Resources (virtual I Voted stickers); and ORS 260.695(3) on oregonlegislature.gov. states.js matches: ballots mailed starting October 14 ('Counties begin mailing ballots to active voters in Oregon : October 14'), recommended mail-by date October 27, drop box deadline 'November 3 at 8 p.m.'. The 21-day cure deadline is stated relative to the election and was not converted to a date. Provisional ballots, phone rules and first-time voter ID (HAVA) were not found on an Oregon page; left missing. The selfie stays out (faq-sources.json has no official source)."

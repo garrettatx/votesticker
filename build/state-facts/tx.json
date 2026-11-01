@@ -288,8 +288,8 @@
  },
  "faq": {
   "provisional": {
-   "en": "You vote a provisional ballot when poll workers can't verify your registration, or when you have an accepted photo ID but didn't bring it. In that case, take the ID to your county voter registrar's office within six days after Election Day, by Monday, November 9, or your ballot won't count. You'll get a notice in the mail telling you whether it counted. Name not on the list? Your voter registration certificate and an accepted photo ID may let you vote a regular ballot instead.",
-   "es": "Votas con una boleta provisional cuando los trabajadores electorales no pueden verificar tu registro, o cuando tienes una identificación con foto aceptada pero no la llevaste. En ese caso, lleva la identificación a la oficina del registrador de votantes de tu condado (voter registrar) dentro de los seis días después del Día de las Elecciones, a más tardar el lunes 9 de noviembre, o tu boleta no contará. Te llegará un aviso por correo que te dice si contó. ¿Tu nombre no aparece en la lista? Tu certificado de registro de votante (voter registration certificate) y una identificación con foto aceptada pueden permitirte votar con una boleta regular.",
+   "en": "You vote a provisional ballot when poll workers can't verify your registration, or when you have an accepted photo ID but didn't bring it. If you didn't bring your ID, take it to your county voter registrar's office within six days after Election Day, by Monday, November 9, or your ballot won't count. You'll get a notice in the mail telling you whether it counted. Name not on the list? Your voter registration certificate and an accepted photo ID may let you vote a regular ballot instead.",
+   "es": "Votas con una boleta provisional cuando los trabajadores electorales no pueden verificar tu registro, o cuando tienes una identificación con foto aceptada pero no la llevaste. Si no llevaste tu identificación, llévala a la oficina del registrador de votantes de tu condado (voter registrar) dentro de los seis días después del Día de las Elecciones, a más tardar el lunes 9 de noviembre, o tu boleta no contará. Te llegará un aviso por correo que te dice si contó. ¿Tu nombre no aparece en la lista? Tu certificado de registro de votante (voter registration certificate) y una identificación con foto aceptada pueden permitirte votar con una boleta regular.",
    "src": "https://www.votetexas.gov/voting/need-id.html",
    "checked": "2026-10-28",
    "quote": "If a voter states that they (a) do not possess an acceptable form of photo identification listed above, and the voter can reasonably obtain one of these acceptable forms of identification or (b) possesses, but did not bring to the polling place, one of the seven forms of acceptable photo identification listed above, the voter may cast a provisional ballot at the polls. However, in order to have the provisional ballot counted, the voter will be required to visit the voter registrar’s office within six calendar days of the date of the election to present one of the above forms of photo ID",
@@ -321,6 +321,14 @@
    "quote": "Wednesday, November 4, 2026 (next business day after Election Day) at 5:00 p.m. if carrier envelope is postmarked by 7:00 p.m. at the location of the election on Election Day (unless overseas or military voter deadlines apply)",
    "status": "verified",
    "notes": "Loop 1 election-week pass 2026-10-29; built from the state's verified return deadline and in-person return rule."
+  },
+  "problem": {
+   "en": "Ask a poll worker first. For anything they can't fix, call your county elections office or the Texas Secretary of State at 1-800-252-8683 (1-800-252-VOTE).",
+   "es": "Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la oficina electoral de tu condado o a la Secretaría de Estado de Texas al 1-800-252-8683 (1-800-252-VOTE).",
+   "src": "https://www.votetexas.gov/faq/index.html",
+   "checked": "2026-11-01",
+   "quote": "Should you need additional information, please e-mail or call us at 1-800-252-VOTE(8683).",
+   "status": "verified"
   }
  },
  "notes": "Read October 21, 2026. Early voting minimum hours (Election Code 85.005), the cure deadline, the ballot tracker URL and the in-line-at-closing rule were not confirmed on an official page; left missing. Williamson County's sticker contest page blocks automated reading. The ID rule class follows docs/faq-sources.json (photo_requested: a Reasonable Impediment Declaration lets a voter without photo ID vote a regular ballot).",

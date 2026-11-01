@@ -355,6 +355,14 @@
    "quote": "A returned voted ballot must be received, regardless of postmark, by the Supervisor of Elections' office no later than 7:00 pm (local time) on Election Day. ... Vote-by-mail ballots may also be deposited into secure drop boxes at Supervisors of Elections' main and branch offices until 7:00 pm (local time) on Election Day.",
    "status": "verified",
    "notes": "Loop 1 election-week pass 2026-10-29; built from the state's verified return deadline and in-person return rule."
+  },
+  "problem": {
+   "en": "Ask a poll worker first. For anything they can't fix, call your county elections office or the Florida Division of Elections' Voter Assistance Hotline at 1-866-308-6739, in English and Spanish, with extended hours on Election Day.",
+   "es": "Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la oficina electoral de tu condado o a la línea de asistencia para votantes de la División de Elecciones de Florida al 1-866-308-6739, en inglés y español, con horario extendido el Día de las Elecciones.",
+   "src": "https://dos.fl.gov/elections/",
+   "checked": "2026-11-01",
+   "quote": "VOTER ASSISTANCE HOTLINE Toll Free 1.866.308.6739 (in English and Español), available Monday - Friday, 8:00 a.m. - 5:00 p.m., with extended hours on the day registration ends and on Election Day for the upcoming statewide elections.",
+   "status": "verified"
   }
  },
  "notes": "Read October 21, 2026 on dos.fl.gov (curl worked), flsenate.gov and sarasotavotes.gov (Chrome; WebFetch got 403). Early voting dates in states.js (Oct. 24 to 31) match dos.fl.gov/elections/for-voters/election-dates/: 'Early voting period (mandatory period): October 24 – 31, 2026'. ID CONFLICT, resolved: the 2026 Florida Statutes on flsenate.gov (s. 101.043, amended by ch. 2026-26) list seven IDs and drop debit/credit cards, student IDs, retirement center, neighborhood association and public assistance IDs, but the Division of Elections' 'Florida History of Voter Identification Requirements' guide (DE Reference Guide 0006, updated 06/2026, soe.dos.state.fl.us) says that list is 'eff. January 1, 2027'. The 12-item list on dos.fl.gov's Election Day Voting page (updated August 7, 2026) is the one for November 3, 2026, and is used here. Re-check before any 2027 election; the student ID change is also in federal litigation (complaint filed October 16, 2026, read only in search results). The 2026 statute page is cited only for 102.031 (no-solicitation zone and photography), which ch. 2026-26 did not touch (last amended 2022). Mail return, cure and provisional deadlines are relative to the election on the official pages; no calendar dates computed. Clothing: 102.031 bans solicitation within 150 feet but no official page says whether campaign clothing counts, so the gear fact doesn't mention clothing. No statewide sticker found; the sticker fact is Sarasota County only.",

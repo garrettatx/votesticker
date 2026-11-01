@@ -57,6 +57,9 @@
   "mail_return": {
    "en": "Drop box or voting location: by 8 p.m. on Tuesday, November 3. Mail: postmarked on or before November 3 and received by your county by Tuesday, November 10, and no stamp needed. Mail it at least 7 days before Election Day; after that, use a drop box or ask a postal employee for a hand postmark.",
    "es": "Buzón o lugar de votación: a más tardar a las 8 p. m. del martes 3 de noviembre. Correo: con matasellos del 3 de noviembre o antes y recibida por tu condado a más tardar el martes 10 de noviembre, y no necesita estampilla. Envíala por lo menos 7 días antes del Día de las Elecciones; después de eso, usa un buzón o pide a un empleado postal que le ponga el matasellos a mano.",
+   "until": "2026-10-27",
+   "en_after": "Drop box or voting location: by 8 p.m. on Tuesday, November 3. Mail: postmarked on or before November 3 and received by your county by Tuesday, November 10, and no stamp needed. Mailing it now? Use a drop box, or ask a postal employee for a hand postmark.",
+   "es_after": "Buzón o lugar de votación: a más tardar a las 8 p. m. del martes 3 de noviembre. Correo: con matasellos del 3 de noviembre o antes y recibida por tu condado a más tardar el martes 10 de noviembre, y no necesita estampilla. ¿La vas a enviar ahora? Usa un buzón o pide a un empleado postal que le ponga el matasellos a mano.",
    "src": "https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026/key-dates-deadlines",
    "checked": "2026-10-21",
    "quote": "Vote‐By‐Mail Ballots returned by mail, in order to be counted, must be postmarked on or before Election Day and received by your county elections office.",
@@ -353,6 +356,14 @@
    "src": "https://elections.cdn.sos.ca.gov/pdfs/trusted-info/vbm-faq.pdf",
    "checked": "2026-10-21",
    "quote": "If you mail it closer to Election Day, take it to a United States Post Office and ask a postal employee for a manual postmark.",
+   "status": "verified"
+  },
+  "problem": {
+   "en": "Ask a poll worker first. If you believe you've been denied a voting right, or you know of election fraud or misconduct, call the California Secretary of State's confidential, toll-free Voter Hotline at 800-345-8683 (800-345-VOTE).",
+   "es": "Primero pregúntale a un trabajador electoral. Si crees que te negaron un derecho como votante, o sabes de un fraude o una irregularidad electoral, llama a la línea confidencial y gratuita para votantes de la Secretaría de Estado de California al 800-345-8683 (800-345-VOTE).",
+   "src": "https://www.sos.ca.gov/elections/voter-bill-rights",
+   "checked": "2026-11-01",
+   "quote": "If you believe you have been denied any of these rights, or you are aware of any election fraud or misconduct, please call the Secretary of State's confidential toll-free Voter Hotline at (800) 345-VOTE (8683).",
    "status": "verified"
   }
  },
