@@ -876,3 +876,4 @@ button.link-quiet:hover { text-decoration: underline; }
 	.hist-find__num { font-size: 3.4rem; }
 	.hist-find__txt { padding: var(--s5) var(--s6) var(--s5) var(--s5); }
 }
+.tl-i__t { overflow-wrap: anywhere; hyphens: auto; }  /* Nov 1: long Spanish words ("inmobiliarios") overflowed the 1024px three-column overview */

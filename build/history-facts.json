@@ -1161,19 +1161,19 @@
       "claim": "Later histories cite an October 27, 1950 Miami Herald story, about a vote on a $6 million hospital expansion bond, saying \"I Have Voted\" stickers would be handed out at the polls. We have not read the Herald page itself, which is in a subscription archive.",
       "evidence": "secondary",
       "status": "verified",
-      "src": "https://www.coloradopolitics.com/2024/11/04/the-history-behind-the-i-voted-sticker-478cdd9f-04a0-56fd-aac9-8af069f9df5a/",
-      "quote": "The Miami Herald mentioned the distribution of an “I Have Voted” sticker at Miami polls as early as 1950 .",
+      "src": "https://www.mentalfloss.com/history/government-politics/i-voted-sticker-history",
+      "quote": "The article went on to report that “I Have Voted” stickers would be handed out at the polls “as a reminder to others to cast their vote.”",
       "also": [
         {
           "src": "https://www.newspapers.com/image/618114799/",
           "quote": "Oct 27, 1950, page 25 - The Miami Herald at Newspapers.com"
         },
         {
-          "src": "https://www.mentalfloss.com/history/government-politics/i-voted-sticker-history",
-          "quote": "The article went on to report that “I Have Voted” stickers would be handed out at the polls “as a reminder to others to cast their vote.”"
+          "src": "https://www.coloradopolitics.com/2024/11/04/the-history-behind-the-i-voted-sticker-478cdd9f-04a0-56fd-aac9-8af069f9df5a/",
+          "quote": "The Miami Herald mentioned the distribution of an “I Have Voted” sticker at Miami polls as early as 1950 ."
         }
       ],
-      "notes": "Editor, Oct 22: narrower claim than miami-herald-1950 (what later histories say, not what the Herald says). The page exists (Oct 27, 1950, p. 25, Newspapers.com) but is paywalled. Nov 1: Mental Floss (Jake Rossen, updated Oct 29, 2024) gives the date, the hospital-bond context and the quoted phrase; read by curl. Herald page still unread.",
+      "notes": "Editor, Oct 22: narrower claim than miami-herald-1950 (what later histories say, not what the Herald says). The page exists (Oct 27, 1950, p. 25, Newspapers.com) but is paywalled. Nov 1: Mental Floss (Jake Rossen, updated Oct 29, 2024) gives the date, the hospital-bond context and the quoted phrase; read by curl. Herald page still unread. Nov 1: primary source switched to Mental Floss (the account the page quotes); Colorado Politics kept as also.",
       "checked": "2026-11-01"
     },
     {

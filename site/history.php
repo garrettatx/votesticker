@@ -35,7 +35,7 @@ function vote_history_meta() {
 		'eyebrow' => '', // the breadcrumb already says Sticker History
 		// Oct 31 (pass 11, press release): the 1920 St. Louis tags lead the description and the lead. Always
 		// "the earliest example we found", never the first or the origin (docs/outreach-plan.md).
-		'lead' => t( 'The earliest example we found is from 1918: paper “I voted. Did you?” tags for voters around Grand Rapids, Michigan. Over time, a small giveaway became an Election Day tradition, and a chance for local artists, students and election offices to make their mark.' ),
+		'lead' => t( 'The earliest example we found is from 1918: paper “I voted. Did you?” tags for voters around Grand Rapids, Michigan. This history follows those tags to the flag oval of 1987 and the local designs voters wear today.' ),
 		'desc' => t( 'I voted sticker history with a source for each step: 1918 “I voted. Did you?” tags in Michigan (the earliest example we found), a 1950 car-window sticker, a 1985 Phoenix campaign, the 1987 flag oval and today\'s contests.' ),
 		'index' => ! vote_es() || VOTE_ES_INDEX,
 	);
@@ -407,7 +407,7 @@ function vote_history() {
 		if ( ! empty( $sec['cta'] ) ) { $out .= '<p class="jump"><a class="btn btn--gold" href="' . vote_pbase() . '#state-find">' . vote_e( t( 'Make a sticker for your state' ) ) . '</a></p>'; }
 		$out .= '</section>';
 	}
-	$out .= '<section class="guide" aria-labelledby="method-h"><h2 class="display-h guide__h" id="method-h">' . vote_e( t( 'How We Check the Story' ) ) . '</h2>'
+	$out .= '<section class="guide" aria-labelledby="method-h"><h2 class="display-h guide__h" id="method-h">' . vote_e( t( 'How We Research Voting Sticker History' ) ) . '</h2>'
 		. '<p>' . vote_e( t( '“I Voted” sticker history is full of claims repeated so often that their original source gets lost. This page starts with museum records, election office materials, laws, original research and reporting from the time. When the best evidence is a later retelling, the page says so. When we haven\'t read the original source ourselves, we say so.' ) ) . '</p>'
 		. '<p>' . vote_e( t( 'Sources are linked throughout the page.' ) ) . '</p>'
 		. '<p class="cite">' . vote_e( t( 'Last reviewed %s', vote_checked( $d['checked'] ) ) ) . ' · <a href="' . vote_pbase() . 'about/#fix-h">' . vote_e( t( 'Share a source or correction' ) ) . '</a></p></section>';

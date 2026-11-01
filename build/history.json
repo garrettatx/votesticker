@@ -3,8 +3,8 @@
  "sources": {},
  "callout": {
   "h": {
-   "en": "The Earliest Example We Found: 1918",
-   "es": "El ejemplo más antiguo que encontramos: 1918"
+   "en": "1918: The Earliest Voting Tags We Found",
+   "es": "1918: las etiquetas para votar más antiguas que encontramos"
   },
   "place": {
    "en": "Michigan",
@@ -36,8 +36,8 @@
   {
    "id": "answer",
    "h": {
-    "en": "The Short Answer",
-    "es": "La respuesta corta"
+    "en": "What We Know About the Sticker’s Origins",
+    "es": "Lo que sabemos del origen del sticker"
    },
    "paras": [
     {
@@ -59,17 +59,14 @@
       "es": "Los ejemplos más antiguos que encontramos"
      },
      "a": {
-      "en": "In October 1918, a Michigan paper reported plans to hand voters tags reading “I am an American. I voted. Did you?”, and a 1922 book describes Grand Rapids voters getting them at the polls in 1919. In October 1920, Ben Blewett Junior High School in St. Louis printed paper “I have voted” tags for a student election and gave one to each student who voted. In 1962, a Camp Fire Girls handbook suggested handing them out on Election Day, and a federal report describes the tags being pinned on voters leaving a Georgia polling place in 1966. Later histories cite a 1950 Miami Herald item about “I Have Voted” stickers at Miami polls, and a 1982 Miami Herald story described Fort Lauderdale shops giving discounts to people wearing voting stickers.",
-      "es": "En octubre de 1918, un periódico de Michigan informó que se repartirían etiquetas con el texto “I am an American. I voted. Did you?” (soy estadounidense, voté, ¿y tú?), y un libro de 1922 describe cómo los votantes de Grand Rapids las recibían en los lugares de votación en 1919. En octubre de 1920, Ben Blewett Junior High School, en St. Louis, imprimió etiquetas de papel de “I have voted” (yo voté) para una elección estudiantil y le dio una a cada estudiante al votar. En 1962, un manual de las Camp Fire Girls sugería repartirlas el Día de las Elecciones, y un informe federal describe cómo se las ponían a los votantes al salir de un lugar de votación de Georgia en 1966. Historias posteriores citan una nota del Miami Herald de 1950 sobre stickers de “I Have Voted” en lugares de votación de Miami, y una nota del Miami Herald de 1982 describió tiendas de Fort Lauderdale que daban descuentos a quienes llevaban stickers de votación."
+      "en": "In October 1918, a Michigan paper announced plans to hand voters paper tags reading “I am an American. I voted. Did you?”, and a 1922 book describes Grand Rapids voters getting them at the polls in 1919. Later histories cite a 1950 Miami Herald item about “I Have Voted” stickers at the polls, but we haven’t read that page. The earliest adhesive “I voted” sticker we found is a 1950 party sticker for car windows.",
+      "es": "En octubre de 1918, un periódico de Michigan anunció que se repartirían etiquetas de papel con el texto “I am an American. I voted. Did you?” (soy estadounidense, voté, ¿y tú?), y un libro de 1922 describe cómo los votantes de Grand Rapids las recibían en los lugares de votación en 1919. Historias posteriores citan una nota del Miami Herald de 1950 sobre stickers de “I Have Voted” en los lugares de votación, pero no hemos leído esa página. El sticker adhesivo de “I voted” más antiguo que encontramos es un sticker de partido de 1950 para la ventana del carro."
      },
      "facts": [
       "lowell-1918-tag-notice",
       "grandrapids-1919-tags",
-      "stlouis-blewett-1920",
-      "campfire-1962-tags",
-      "americus-1966-tags",
       "miami-herald-1950-cited",
-      "fort-lauderdale-1982"
+      "thank-me-1950-sticker"
      ]
     },
     {
@@ -102,8 +99,8 @@
    "after": [
     {
      "h3": {
-      "en": "What We Still Don't Know",
-      "es": "Lo que todavía no sabemos"
+      "en": "What We Haven’t Verified",
+      "es": "Lo que no hemos verificado"
      },
      "en": "We haven’t read the 1950 Miami Herald page itself, which is in a subscription newspaper archive, so we can’t say what the stickers looked like or whether they were handed out. The tags in sources from 1918 to the 1960s were paper, and we haven’t found who first printed an adhesive “I Voted” sticker. Phoenix’s Realtors later called their sticker the first in the country, but a 1982 Miami Herald story had already described shops giving discounts to people wearing voting stickers. No patent for Boudreau’s flag oval has turned up; she has said she copyrighted the design.",
      "facts": [
@@ -136,8 +133,8 @@
   {
    "id": "makers",
    "h": {
-    "en": "Meet the People Behind the Stickers",
-    "es": "Las personas detrás de los stickers"
+    "en": "The People Who Designed and Spread Voting Stickers",
+    "es": "Las personas que diseñaron y difundieron los stickers"
    },
    "paras": [
     {
@@ -159,8 +156,8 @@
       "es": "Janet Boudreau"
      },
      "title": {
-      "en": "The oval with the waving flag",
-      "es": "El óvalo con la bandera"
+      "en": "Designing the Familiar Flag Oval",
+      "es": "El diseño del óvalo con la bandera"
      },
      "body": {
       "en": "Soon after buying Intab from her father for $1, Boudreau designed the flag oval. By 2000, she said, the company sold more than 100 million “I Voted” stickers in each election year. Her practical advice: use garment-safe adhesive, or risk damaging leather, silk and fine wool.",
@@ -180,8 +177,8 @@
       "es": "Skip Rimsza y Dennis M. Burke"
      },
      "title": {
-      "en": "A fix for slow afternoons",
-      "es": "Una solución para las tardes lentas"
+      "en": "Using Stickers to Lift Afternoon Turnout",
+      "es": "Stickers para animar la votación de la tarde"
      },
      "body": {
       "en": "Morning turnout was strong; afternoons lagged. During a freeway bond election, Phoenix Board of Realtors president Skip Rimsza, later the city's mayor, and operations director Dennis M. Burke came up with an “I Voted Today” sticker to remind late-day voters.",
@@ -201,8 +198,8 @@
       "es": "Milka Negasi, estudiante de último año de prepa"
      },
      "title": {
-      "en": "The sticker that ran out",
-      "es": "El sticker que se acabó"
+      "en": "A Student’s Suffrage Centennial Design",
+      "es": "Un diseño estudiantil por el centenario del sufragio femenino"
      },
      "body": {
       "en": "Negasi's design marked the 100th anniversary of women's suffrage. When several polling places ran out during the August 2020 election, Metro Arts posted a free download.",
@@ -222,8 +219,8 @@
       "es": "Hudson Rowan, 14 años"
      },
      "title": {
-      "en": "The sticker the internet voted for",
-      "es": "El sticker que eligió internet"
+      "en": "Ulster County’s Online Contest Winner",
+      "es": "El ganador en línea del concurso de Ulster County"
      },
      "body": {
       "en": "Rowan designed the wild-eyed head on spidery legs for one county's election, not all of New York. Election commissioner Ashley Dittus opened his emailed entry first and championed it; an online vote open to anyone turned it into a national curiosity.",
@@ -243,8 +240,8 @@
       "es": "Jane Hynous, 12 años"
      },
      "title": {
-      "en": "The werewolf",
-      "es": "El hombre lobo"
+      "en": "Michigan’s Werewolf Sticker",
+      "es": "El sticker del hombre lobo de Michigan"
      },
      "body": {
       "en": "Hynous's design shows a werewolf tearing open its shirt in front of an American flag. It was one of nine winners in Michigan's first statewide contest, and a sheet of the 2024 designs is now in the collection at The Henry Ford.",
@@ -264,8 +261,8 @@
       "es": "Barbara Lavallee"
      },
      "title": {
-      "en": "A sticker in ten languages",
-      "es": "Un sticker en diez idiomas"
+      "en": "Alaska Designs in Ten Languages",
+      "es": "Diseños de Alaska en diez idiomas"
      },
      "body": {
       "en": "Lavallee created four designs featuring Alaskan women. They came in English, Spanish, Tagalog and seven Alaska Native languages, including Koyukon, Gwich'in and Yup'ik, and people voting from home could download them.",
@@ -285,8 +282,8 @@
       "es": "Julia Boren, 11 años"
      },
      "title": {
-      "en": "I Voted at Home",
-      "es": "“I Voted at Home”"
+      "en": "A Mailbox Sticker for Absentee Voters",
+      "es": "Un sticker con buzón para quienes votan en ausencia"
      },
      "body": {
       "en": "Boren's hand-drawn entry featured a mailbox, so the county turned it into an “I Voted at Home” sticker that goes out with absentee ballots.",
@@ -299,17 +296,22 @@
   {
    "id": "why",
    "h": {
-    "en": "Why People Wear Them",
-    "es": "Por qué la gente los usa"
+    "en": "Why Voters Wear Them, and What Research Shows",
+    "es": "Por qué los votantes los usan y qué dicen los estudios"
    },
    "paras": [
     {
-     "en": "Through most of the 1800s, many Americans voted with ballots printed by the political parties. The tickets were often easy to tell apart, sometimes by color, and voters handed them in where others could see. States began adopting a government-printed secret ballot in 1888, starting with Louisville and Massachusetts, and how someone votes has been private since. An “I Voted” sticker shows that a person voted without revealing how. A 1919 Grand Rapids campaign put it plainly: “Whether or not you vote is not your business; it is Uncle Sam’s business. HOW you vote is your business.”",
+     "en": "Through most of the 1800s, many Americans voted with ballots printed by the political parties. The tickets were often easy to tell apart, sometimes by color, and voters handed them in where others could see. States began adopting a government-printed secret ballot in 1888, starting with Louisville and Massachusetts. As it replaced party tickets, voters could keep their choices to themselves. An “I Voted” sticker shows that a person voted without revealing how. A 1919 Grand Rapids campaign put it plainly: “Whether or not you vote is not your business; it is Uncle Sam’s business. HOW you vote is your business.”",
      "facts": [
       "secret-ballot-1888",
       "grandrapids-1919-tags"
      ],
-     "es": "Durante buena parte del siglo XIX, muchos estadounidenses votaban con boletas impresas por los partidos políticos. Era fácil distinguirlas, a veces por el color, y los votantes las entregaban a la vista de otros. Los estados empezaron a adoptar una boleta secreta impresa por el gobierno en 1888, comenzando por Louisville y Massachusetts, y desde entonces el voto de cada persona es privado. Un sticker de “I Voted” muestra que alguien votó sin revelar por quién. Una campaña de Grand Rapids de 1919 lo dijo claramente: votar o no es asunto del Tío Sam, y cómo votas es asunto tuyo (“Whether or not you vote is not your business; it is Uncle Sam’s business. HOW you vote is your business.”)."
+     "es": "Durante buena parte del siglo XIX, muchos estadounidenses votaban con boletas impresas por los partidos políticos. Era fácil distinguirlas, a veces por el color, y los votantes las entregaban a la vista de otros. Los estados empezaron a adoptar una boleta secreta impresa por el gobierno en 1888, comenzando por Louisville y Massachusetts. A medida que reemplazó a las boletas de los partidos, los votantes pudieron guardarse su elección. Un sticker de “I Voted” muestra que alguien votó sin revelar por quién. Una campaña de Grand Rapids de 1919 lo dijo claramente: votar o no es asunto del Tío Sam, y cómo votas es asunto tuyo (“Whether or not you vote is not your business; it is Uncle Sam’s business. HOW you vote is your business.”)."
+    },
+    {
+     "en": "Researchers have tested what happens when voting becomes visible to neighbors and friends. None of the studies below tested paper “I Voted” stickers.",
+     "es": "Hay investigaciones sobre lo que pasa cuando el voto se vuelve visible para vecinos y amigos. Ninguno de los estudios de abajo probó stickers de papel de “I Voted”.",
+     "facts": []
     },
     {
      "h3": {
@@ -352,21 +354,21 @@
    ],
    "after": [
     {
-     "en": "None of these studies tested whether a paper “I Voted” sticker increases turnout. The mailer and Facebook studies tested what happens when voting becomes visible to neighbors or friends, and the one test of a digital sticker link found no extra effect. A paper sticker may send a similar signal, but none of these studies measured it.",
+     "en": "The mailer and Facebook studies tested voting made visible to neighbors or friends, and the one test of a digital sticker link found no extra effect. A paper sticker may work the same way, but these studies don’t show it.",
      "facts": [
       "facebook-2010",
       "social-pressure-2006",
       "voteorg-2018-sticker-sms"
      ],
-     "es": "Ninguno de estos estudios probó si un sticker de papel de “I Voted” aumenta la participación. Los estudios del correo y de Facebook probaron qué pasa cuando el voto se vuelve visible para los vecinos o los amigos, y la única prueba de un enlace a un sticker digital no encontró un efecto extra. Un sticker de papel puede mandar una señal parecida, pero ninguno de estos estudios lo midió."
+     "es": "Los estudios del correo y de Facebook probaron qué pasa cuando el voto se vuelve visible para vecinos o amigos, y la única prueba de un enlace a un sticker digital no encontró un efecto extra. Un sticker de papel puede funcionar igual, pero estos estudios no lo demuestran."
     }
    ]
   },
   {
    "id": "contests",
    "h": {
-    "en": "Sticker Design Contests",
-    "es": "Concursos de diseño de stickers"
+    "en": "How Communities Choose Their Voting Stickers",
+    "es": "Cómo las comunidades eligen sus stickers"
    },
    "paras": [
     {
@@ -424,8 +426,8 @@
     },
     {
      "h3": {
-      "en": "Mail Voters Get Stickers Too",
-      "es": "Quienes votan por correo también reciben sticker"
+      "en": "How Mail Voters Get “I Voted” Stickers",
+      "es": "Cómo reciben el sticker quienes votan por correo"
      },
      "en": "Some offices make sure mail voters get one too. After noticing voters dropping off mail ballots in person just to collect a sticker, San Mateo County started putting one in every mailed ballot package in 2019. Pima County, Arizona sends a trilingual sticker in English, Tohono O'odham and Spanish. In 2012, Santa Clara County made the opposite choice and saved more than $90,000 by leaving stickers out of mail packets.",
      "facts": [
@@ -444,8 +446,8 @@
     },
     {
      "h3": {
-      "en": "When Popular Stickers Run Out",
-      "es": "Cuando se acaban los stickers populares"
+      "en": "Sticker Shortages and Cleanup",
+      "es": "Stickers agotados y limpieza"
      },
      "en": "Popular designs can cause a supply problem. Ulster County had 100,000 of Hudson Rowan's stickers for about 90,000 expected voters in 2022 and told poll workers to give out one per person. That year the Election Assistance Commission also advised offices to order stickers at least four months ahead, because paper supplies were tight.",
      "facts": [
@@ -467,15 +469,10 @@
   {
    "id": "law",
    "h": {
-    "en": "Free Coffee, Free Ice Cream, and Election Law",
-    "es": "Café gratis, helado gratis y la ley electoral"
+    "en": "Election Day Giveaways and Voting Laws",
+    "es": "Regalos del Día de las Elecciones y la ley electoral"
    },
    "paras": [
-    {
-     "en": "A free coffee for voters sounds simple. Election law can make it complicated.",
-     "facts": [],
-     "es": "Regalar un café a quien vota suena sencillo. La ley electoral puede complicarlo."
-    },
     {
      "en": "In 2008, Starbucks and Ben & Jerry's planned Election Day giveaways for customers wearing an “I Voted” sticker. After a reminder that election law bars rewarding people for voting, both opened the offers to everyone. Federal law makes it a crime to pay or offer something of value to get someone to vote.",
      "facts": [
@@ -527,8 +524,8 @@
   {
    "id": "states",
    "h": {
-    "en": "Sticker Stories by State",
-    "es": "Historias de stickers por estado"
+    "en": "Local Voting Sticker Stories by State",
+    "es": "Historias locales de stickers por estado"
    },
    "paras": [
     {
@@ -542,18 +539,18 @@
   {
    "id": "profile",
    "h": {
-    "en": "From Your Shirt to Your Profile Picture",
-    "es": "De tu camisa a tu foto de perfil"
+    "en": "Share an “I Voted” Sticker Online",
+    "es": "Comparte un sticker de “I Voted” en línea"
    },
    "paras": [
     {
-     "en": "Polling places still hand out paper stickers. Now that same small signal can travel online.",
+     "en": "Polling places still hand out paper stickers, and social apps put them online years ago.",
      "facts": [],
-     "es": "Los lugares de votación siguen repartiendo stickers de papel. Ahora esa misma pequeña señal también puede viajar en línea."
+     "es": "Los lugares de votación siguen repartiendo stickers de papel, y las redes sociales los llevaron a internet hace años."
     },
     {
-     "en": "Social apps took the signal online years ago. Facebook’s Election Day button ran in 2008, when more than 5.4 million people used it to say they voted, and by 2014 it came in Spanish, Chinese and Korean. In 2018 Instagram added an “I Voted” sticker for Stories, with a “Yo Voté” version.",
-     "es": "Las redes sociales llevaron esa señal a internet hace años. El botón del Día de las Elecciones de Facebook apareció en 2008, cuando más de 5.4 millones de personas lo usaron para decir que votaron, y para 2014 ya venía en español, chino y coreano. En 2018 Instagram agregó un sticker de “I Voted” para Stories, con una versión “Yo Voté”.",
+     "en": "Facebook’s Election Day button ran in 2008, when more than 5.4 million people used it to say they voted, and by 2014 it came in Spanish, Chinese and Korean. In 2018 Instagram added an “I Voted” sticker for Stories, with a “Yo Voté” version.",
+     "es": "El botón del Día de las Elecciones de Facebook apareció en 2008, cuando más de 5.4 millones de personas lo usaron para decir que votaron, y para 2014 ya venía en español, chino y coreano. En 2018 Instagram agregó un sticker de “I Voted” para Stories, con una versión “Yo Voté”.",
      "facts": [
       "facebook-2008",
       "facebook-2014-languages",
@@ -610,9 +607,9 @@
    ],
    "after": [
     {
-     "en": "Vote Sticker brings that signal online. Make a free sticker for your state, add the voting date that matters there, and share it as your profile picture. Planning a photo at the polling place? Ballot selfie rules vary by state, so check yours first.",
+     "en": "Make a free sticker for your state and share it as your profile picture. Before you vote, add your early voting or Election Day date in the “Dates or extra text” box; afterward, pick an “I voted” design. Planning a photo at the polling place? Ballot selfie rules vary by state, so check yours first.",
      "facts": [],
-     "es": "Vote Sticker lleva esa señal a internet. Haz un sticker gratis para tu estado, agrega la fecha para votar que importa allí y compártelo como tu foto de perfil. ¿Piensas tomarte una foto en el lugar de votación? Las reglas sobre selfies con la boleta cambian según el estado, así que revisa las del tuyo primero."
+     "es": "Haz un sticker gratis para tu estado y compártelo como tu foto de perfil. Antes de votar, agrega tu fecha de votación anticipada o del Día de las Elecciones en el campo de fechas o texto extra; después, elige un diseño de “I voted”. ¿Piensas tomarte una foto en el lugar de votación? Las reglas sobre selfies con la boleta cambian según el estado, así que revisa las del tuyo primero."
     }
    ],
    "cta": true
@@ -857,8 +854,8 @@
    "id": "ribbon-1920",
    "year": 1920,
    "title": {
-    "en": "A first-vote ribbon",
-    "es": "Un listón del primer voto"
+    "en": "A Woman’s First-Vote Ribbon",
+    "es": "Un listón por el primer voto de una mujer"
    },
    "body": {
     "en": "A ribbon badge in the Smithsonian marks a woman's first vote under the 19th Amendment. It supports the Harding and Coolidge ticket, a reminder that voting souvenirs weren't always nonpartisan.",
@@ -871,8 +868,8 @@
    "id": "miami-1950",
    "year": 1950,
    "title": {
-    "en": "\"I Have Voted\" in Miami",
-    "es": "“I Have Voted” en Miami"
+    "en": "A Miami Herald Report of “I Have Voted” Stickers",
+    "es": "Una nota del Miami Herald sobre stickers de “I Have Voted”"
    },
    "body": {
     "en": "An October 27, 1950 Miami Herald story about a vote on a $6 million hospital expansion bond said “I Have Voted” stickers would be handed out at the polls “as a reminder to others to cast their vote,” according to [Mental Floss](https://www.mentalfloss.com/history/government-politics/i-voted-sticker-history). It’s the earliest mention of a sticker we’ve seen cited. The Herald page is in a subscription archive, and we haven’t read it ourselves.",
@@ -889,7 +886,7 @@
    "id": "thank-me-1950",
    "year": 1950,
    "title": {
-    "en": "A car-window “I Voted” sticker",
+    "en": "A Car-Window “I Voted” Sticker",
     "es": "Un sticker de “I Voted” para la ventana del carro"
    },
    "body": {
@@ -903,8 +900,8 @@
    "id": "sherman-1952",
    "year": 1952,
    "title": {
-    "en": "“I have voted, have you?” badges in Texas",
-    "es": "Insignias de “I have voted, have you?” en Texas"
+    "en": "Texas Voters Wear “I Have Voted, Have You?” Badges",
+    "es": "Votantes de Texas usan insignias de “I have voted, have you?”"
    },
    "body": {
     "en": "On Election Day in Sherman, Texas, “citizens who had voted put on badges: ‘I have voted, have you?’” an Associated Press report in The Austin Statesman says. It’s the earliest example we found of the “have you?” line that later stickers made familiar.",
@@ -917,8 +914,8 @@
    "id": "ftl-1982",
    "year": 1982,
    "title": {
-    "en": "Discounts for sticker wearers",
-    "es": "Descuentos por llevar el sticker"
+    "en": "Fort Lauderdale Shops Offer Sticker Discounts",
+    "es": "Tiendas de Fort Lauderdale ofrecen descuentos por el sticker"
    },
    "body": {
     "en": "A Miami Herald story reports Fort Lauderdale businesses offering discounts to customers wearing voting stickers.",
@@ -931,8 +928,8 @@
    "id": "bush-1984",
    "year": 1984,
    "title": {
-    "en": "“I Voted Today, Have You?”",
-    "es": "“I Voted Today, Have You?”"
+    "en": "George H. W. Bush Wears “I Voted Today, Have You?”",
+    "es": "George H. W. Bush lleva un “I Voted Today, Have You?”"
    },
    "body": {
     "en": "A wire report says Vice President George H. W. Bush got one when he voted in Houston. The question turns the wearer into a reminder to others.",
@@ -945,8 +942,8 @@
    "id": "phoenix-1985",
    "year": 1985,
    "title": {
-    "en": "Phoenix makes it a campaign",
-    "es": "Phoenix lo convierte en campaña"
+    "en": "Phoenix Realtors Hand Out “I Voted Today” Stickers",
+    "es": "Agentes inmobiliarios de Phoenix reparten stickers"
    },
    "body": {
     "en": "During a freeway bond election, the Phoenix Board of Realtors hands out “I Voted Today” stickers, one of the earliest organized sticker campaigns documented so far.",
@@ -963,8 +960,8 @@
    "id": "ncs-1986",
    "year": 1986,
    "title": {
-    "en": "Stickers for sale",
-    "es": "Stickers a la venta"
+    "en": "National Campaign Supply Starts Selling Voting Stickers",
+    "es": "National Campaign Supply empieza a vender stickers para votar"
    },
    "body": {
     "en": "National Campaign Supply, a Florida company, says it began selling voting stickers.",
@@ -977,8 +974,8 @@
    "id": "boudreau-1987",
    "year": 1987,
    "title": {
-    "en": "The flag oval",
-    "es": "El óvalo con la bandera"
+    "en": "Janet Boudreau Designs the Flag Oval",
+    "es": "Janet Boudreau diseña el óvalo con la bandera"
    },
    "body": {
     "en": "Janet Boudreau designs a white oval with a waving flag for Intab. It becomes one of the country's most recognizable voting sticker designs. She has said she drew it after seeing a Washington state county hand out a plain black-and-white sticker [with an X in a square](https://www.wkyt.com/2026/10/31/i-voted-sticker-creator-talks-about-how-it-started/).",
@@ -995,8 +992,8 @@
    "id": "minnesota-1989",
    "year": 1989,
    "title": {
-    "en": "“I VOTED” and nothing more",
-    "es": "“I VOTED” y nada más"
+    "en": "Minnesota Law Says “I VOTED” and Nothing More",
+    "es": "La ley de Minnesota: “I VOTED” y nada más"
    },
    "body": {
     "en": "Minnesota’s election law lets the secretary of state send counties donated stickers that say “I VOTED” and nothing more. Election judges may offer one to each voter who has signed the polling place roster.",
@@ -1009,8 +1006,8 @@
    "id": "mailer-2006",
    "year": 2006,
    "title": {
-    "en": "Voting where neighbors can see",
-    "es": "Votar a la vista de los vecinos"
+    "en": "Michigan Study Tests Voting-History Mailers",
+    "es": "Un estudio en Michigan prueba cartas con el historial de voto"
    },
    "body": {
     "en": "A Michigan field experiment finds turnout rose when voters were told their neighbors would see whether they had voted.",
@@ -1023,8 +1020,8 @@
    "id": "freebies-2008",
    "year": 2008,
    "title": {
-    "en": "Free coffee meets election law",
-    "es": "El café gratis y la ley electoral"
+    "en": "Starbucks and Ben & Jerry's Open Giveaways to All",
+    "es": "Starbucks y Ben & Jerry's abren sus regalos a todos"
    },
    "body": {
     "en": "After a reminder about election law, Starbucks and Ben & Jerry's open their Election Day offers to everyone, not just customers wearing “I Voted” stickers.",
@@ -1037,8 +1034,8 @@
    "id": "facebook-2010",
    "year": 2010,
    "title": {
-    "en": "Facebook’s turnout study",
-    "es": "El estudio de participación de Facebook"
+    "en": "Facebook Studies Its “I Voted” Button and Turnout",
+    "es": "Facebook estudia su botón de “I Voted” y la participación"
    },
    "body": {
     "en": "Facebook shows 61 million users an Election Day message with an “I Voted” button. Researchers later measure its effect on turnout.",
@@ -1055,8 +1052,8 @@
    "id": "anthony-2014",
    "year": 2014,
    "title": {
-    "en": "Stickers on Susan B. Anthony's grave",
-    "es": "Stickers en la tumba de Susan B. Anthony"
+    "en": "Voters Leave Stickers on Susan B. Anthony’s Grave",
+    "es": "Votantes dejan stickers en la tumba de Susan B. Anthony"
    },
    "body": {
     "en": "By 2014, news reports describe voters leaving “I Voted” stickers on Susan B. Anthony's grave in Rochester.",
@@ -1069,8 +1066,8 @@
    "id": "chicago-2016",
    "year": 2016,
    "title": {
-    "en": "Chicago tries wristbands",
-    "es": "Chicago prueba con pulseras"
+    "en": "Chicago Hands Out Wristbands Instead",
+    "es": "Chicago reparte pulseras en lugar de stickers"
    },
    "body": {
     "en": "Chicago hands out a million wristbands instead of stickers, after years of custodians scraping stickers off fountains, windows and doors.",
@@ -1083,8 +1080,8 @@
    "id": "nyc-2017",
    "year": 2017,
    "title": {
-    "en": "Subway lines through the O",
-    "es": "Líneas del metro en la O"
+    "en": "New York City Picks a Subway-Themed Sticker",
+    "es": "Nueva York elige un sticker con líneas del metro"
    },
    "body": {
     "en": "A public vote picks a New York City sticker with colored subway lines running through the “O” in “I Voted.”",
@@ -1098,8 +1095,8 @@
    "year": 2019,
    "order": 1,
    "title": {
-    "en": "A national award for stickers",
-    "es": "Un premio nacional para stickers"
+    "en": "Federal Award Adds a Sticker Category",
+    "es": "Un premio federal agrega una categoría de stickers"
    },
    "body": {
     "en": "The U.S. Election Assistance Commission adds a Clearie Award category for original and creative “I Voted” stickers.",
@@ -1113,8 +1110,8 @@
    "year": 2019,
    "order": 2,
    "title": {
-    "en": "A sticker in the mail",
-    "es": "Un sticker en el correo"
+    "en": "San Mateo Mails a Sticker With Every Ballot",
+    "es": "San Mateo envía un sticker con cada boleta"
    },
    "body": {
     "en": "San Mateo County begins including a sticker in every mailed ballot package.",
@@ -1128,8 +1125,8 @@
    "year": 2020,
    "order": 1,
    "title": {
-    "en": "Ten languages in Alaska",
-    "es": "Diez idiomas en Alaska"
+    "en": "Alaska Offers Stickers in Ten Languages",
+    "es": "Alaska ofrece stickers en diez idiomas"
    },
    "body": {
     "en": "Barbara Lavallee's designs appear in ten languages, with downloadable versions for voters at home.",
@@ -1143,8 +1140,8 @@
    "year": 2020,
    "order": 2,
    "title": {
-    "en": "Nashville runs out",
-    "es": "Se acaban en Nashville"
+    "en": "Nashville Runs Out of a Student’s Design",
+    "es": "Se agota en Nashville un diseño estudiantil"
    },
    "body": {
     "en": "Several polling places run out of a high school student's women's suffrage centennial sticker.",
@@ -1157,8 +1154,8 @@
    "id": "ulster-2022",
    "year": 2022,
    "title": {
-    "en": "Ulster County's famous sticker",
-    "es": "El famoso sticker de Ulster County"
+    "en": "Hudson Rowan Wins Ulster County’s Contest",
+    "es": "Hudson Rowan gana el concurso de Ulster County"
    },
    "body": {
     "en": "A 14-year-old's surreal design wins Ulster County's contest with more online votes than the county has residents.",
@@ -1175,8 +1172,8 @@
    "id": "michigan-2024",
    "year": 2024,
    "title": {
-    "en": "Michigan goes statewide",
-    "es": "Michigan lo hace estatal"
+    "en": "Michigan Holds Its First Statewide Contest",
+    "es": "Michigan hace su primer concurso estatal"
    },
    "body": {
     "en": "Michigan's first statewide sticker contest selects nine winning designs, including a werewolf.",
@@ -1189,8 +1186,8 @@
    "id": "michigan-2026",
    "year": 2026,
    "title": {
-    "en": "Michigan’s 2026 contest",
-    "es": "El concurso de Michigan de 2026"
+    "en": "Michigan’s Second Statewide Contest",
+    "es": "El segundo concurso estatal de Michigan"
    },
    "body": {
     "en": "Michigan's second statewide contest draws 2,095 entries. The state screens qualifying designs for AI-generated and copied artwork before the public vote.",
@@ -1204,8 +1201,8 @@
    "year": 2008,
    "order": 1,
    "title": {
-    "en": "A voting button on Facebook",
-    "es": "Un botón para votar en Facebook"
+    "en": "Facebook Adds an Election Day Button",
+    "es": "Facebook agrega un botón del Día de las Elecciones"
    },
    "body": {
     "en": "Facebook adds an Election Day button so people can tell friends they voted. More than 5.4 million people use it.",
@@ -1222,8 +1219,8 @@
    "id": "instagram-2018",
    "year": 2018,
    "title": {
-    "en": "An I Voted sticker for Stories",
-    "es": "Un sticker de I Voted para Stories"
+    "en": "Instagram Adds an “I Voted” Sticker to Stories",
+    "es": "Instagram agrega un sticker de “I Voted” a Stories"
    },
    "body": {
     "en": "Instagram adds an “I Voted” sticker to Stories, with a “Yo Voté” version for phones set to Spanish.",
@@ -1240,8 +1237,8 @@
    "id": "lowell-1918",
    "year": 1918,
    "title": {
-    "en": "“Tag every voter”",
-    "es": "Una etiqueta para cada votante"
+    "en": "Michigan Paper Announces Plans to Tag Every Voter",
+    "es": "Un periódico de Michigan anuncia etiquetas para cada votante"
    },
    "body": {
     "en": "The Lowell Ledger, a weekly near Grand Rapids, Michigan, reports that a local Americanization society has started “a movement to tag every voter” and will hand out tags reading “I am an American. I voted. Did you?” at the November election. It’s the earliest example we found.",
@@ -1262,8 +1259,8 @@
    "id": "grand-rapids-1919",
    "year": 1919,
    "title": {
-    "en": "“I voted. Did you?” tags at the polls",
-    "es": "Etiquetas de “I voted. Did you?” en los lugares de votación"
+    "en": "Grand Rapids Hands Out Voting Tags at the Polls",
+    "es": "Grand Rapids reparte etiquetas en los lugares de votación"
    },
    "body": {
     "en": "In Grand Rapids, Michigan, committees of women hand voters paper tags at the polls reading “I am an American. I voted. Did you?” Only voters can get one. After each election, schoolchildren collect the tags, and the schools that bring back the most win flags. The campaign was part of the city’s Americanization work, which pushed immigrants to become citizens and vote.",
@@ -1281,8 +1278,8 @@
    "year": 1920,
    "order": -1,
    "title": {
-    "en": "“I have voted” tags for a student election",
-    "es": "Etiquetas de “I have voted” para una elección estudiantil"
+    "en": "St. Louis Students Get “I Have Voted” Tags",
+    "es": "Estudiantes de St. Louis reciben etiquetas de “I have voted”"
    },
    "body": {
     "en": "For a student election at Ben Blewett Junior High School in St. Louis, the school’s printing department makes “I have voted” tags, one for each student as they vote. The school, open since 1917, already ran its own student government: each homeroom elected two delegates to a grade congress, [its first principal wrote in 1919](https://www.jstor.org/stable/1078421). A few years later, Tennessee Williams was a student there: [his 1925 Blewett yearbook](https://cdn.craft.cloud/97cd51c5-b816-4a93-aea9-fd7e2c5e47da/assets/TWAR_2005-07-Cave-HNOC_holdings.pdf) has one of his early poems.",
@@ -1299,8 +1296,8 @@
    "id": "lowell-1952",
    "year": 1952,
    "title": {
-    "en": "Scouts at the polls, pupils down the block",
-    "es": "Scouts en el lugar de votación, alumnos a una cuadra"
+    "en": "Lowell Scouts Hand Out “I Voted” Badges",
+    "es": "Scouts de Lowell reparten insignias de “I Voted”"
    },
    "body": {
     "en": "In Lowell, Michigan, the local paper reports that Boy Scouts will hand out “I Voted” badges at the polling place on Election Day. Grade-school pupils will collect the “I Have Voted” tags at least a block away, and the classroom that gathers the most will win an award.",
@@ -1313,8 +1310,8 @@
    "id": "morton-1960",
    "year": 1960,
    "title": {
-    "en": "Camp Fire members pin on tags in Texas",
-    "es": "Integrantes de Camp Fire ponen etiquetas en Texas"
+    "en": "Camp Fire Members Pin Tags on Texas Voters",
+    "es": "Integrantes de Camp Fire ponen etiquetas a votantes de Texas"
    },
    "body": {
     "en": "In Morton, Texas, the Wocaha Camp Fire group helps a get-out-the-vote campaign by pinning “I Have Voted” tags on voters, the Morton Tribune reports.",
@@ -1327,8 +1324,8 @@
    "id": "campfire-1962",
    "year": 1962,
    "title": {
-    "en": "Tags as a citizenship project",
-    "es": "Etiquetas como proyecto cívico"
+    "en": "Camp Fire Handbook Suggests Election Day Tags",
+    "es": "Un manual de Camp Fire sugiere etiquetas para el Día de las Elecciones"
    },
    "body": {
     "en": "The Book of the Camp Fire Girls suggests members give out “I Have Voted” tags on Election Day.",
@@ -1341,8 +1338,8 @@
    "id": "americus-1966",
    "year": 1966,
    "title": {
-    "en": "Tags at a Georgia polling place",
-    "es": "Etiquetas en un lugar de votación de Georgia"
+    "en": "Black Residents Pin Tags on Voters in Americus, Georgia",
+    "es": "Residentes afroamericanos ponen etiquetas a votantes en Americus, Georgia"
    },
    "body": {
     "en": "At an Americus, Georgia city primary, Black residents pin “I have voted” tags on voters as they leave, while every clerk and manager is white, a 1968 U.S. Commission on Civil Rights report says.",
@@ -1357,8 +1354,8 @@
    "type": "split",
    "unit": 10000,
    "title": {
-    "en": "Most of the estimated effect traveled through friends",
-    "es": "La mayor parte del efecto estimado llegó a través de los amigos"
+    "en": "Facebook’s Estimated Turnout Effect: Direct vs. Through Friends",
+    "es": "Efecto estimado de Facebook: directo y a través de amigos"
    },
    "rows": [
     {
@@ -1396,8 +1393,8 @@
   },
   "ulster": {
    "title": {
-    "en": "A county contest that drew votes from far beyond the county",
-    "es": "Un concurso de condado con votos de mucho más allá del condado"
+    "en": "Ulster County Contest: Online Votes vs. County Population",
+    "es": "Concurso de Ulster County: votos en línea y población del condado"
    },
    "rows": [
     {
@@ -1433,8 +1430,8 @@
   },
   "michigan": {
    "title": {
-    "en": "About four times as many entries in two years",
-    "es": "Unas cuatro veces más diseños en dos años"
+    "en": "Michigan Sticker Contest Entries, 2024 and 2026",
+    "es": "Diseños enviados al concurso de Michigan, 2024 y 2026"
    },
    "rows": [
     {
@@ -1457,8 +1454,8 @@
     }
    ],
    "note": {
-    "en": "2024 is a minimum (\"more than 480\"); 2026 is the published total. The first contest also drew more than 57,700 public votes.",
-    "es": "2024 es un mínimo (“más de 480”); 2026 es el total publicado. El primer concurso también recibió más de 57,700 votos del público."
+    "en": "Entries grew about fourfold in two years. 2024 is a minimum (\"more than 480\"); 2026 is the published total. The first contest also drew more than 57,700 public votes.",
+    "es": "Los diseños enviados se multiplicaron por cuatro en dos años. 2024 es un mínimo (“más de 480”); 2026 es el total publicado. El primer concurso también recibió más de 57,700 votos del público."
    },
    "facts": [
     "mi-contest-2024",
