@@ -558,7 +558,7 @@ h2, .lead, .guide p, .info p, .section-intro { text-wrap: pretty; }
 .hist-art__disc { position: absolute; width: min(40%, 170px); right: 4%; bottom: -4%; transform: rotate(8deg); }
 @media (max-width: 759px) { .hist-art { min-height: 0; padding: var(--s4) 0 var(--s6); } }
 .hist .guide p { max-width: 68ch; }
-.hist-answer th { width: 38%; }
+@media (min-width: 560px) { .hist-answer th { width: 38%; } }  /* Nov 1: unscoped, it beat the mobile stacking rule and left the heading at 38% on phones */
 .tl { list-style: none; margin: 0; padding: 0; border-left: 3px solid var(--line-strong); }
 .tl__item { display: grid; grid-template-columns: 5.5rem 1fr; gap: var(--s4); padding: var(--s4) 0 var(--s4) var(--s4); scroll-margin-top: var(--s5); position: relative; }
 .tl__item::before { content: ""; position: absolute; left: -9px; top: 1.45rem; width: 15px; height: 10px; border-radius: 50%; background: var(--bg); border: 2px solid var(--ink); }

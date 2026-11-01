@@ -15,8 +15,8 @@
    "es": "En octubre de 1920, Ben Blewett Junior High School, una escuela secundaria pública de St. Louis, celebró una elección estudiantil organizada como una de verdad. La junta electoral de la ciudad tomó juramento a 60 estudiantes como jueces y secretarios electorales, y las clases de taller construyeron 30 cabinas de votación. El departamento de imprenta de la escuela hizo etiquetas de “I have voted” (yo voté), suficientes para darle una a cada estudiante al votar. De 1,250 estudiantes que se registraron, votaron 1,170. El año anterior, su director había descrito la escuela en una revista nacional de educación como [“an experiment in democracy”](https://www.govinfo.gov/content/pkg/GOVPUB-I16-8f9fa4ec41144678e353945ec5542809/html/GOVPUB-I16-8f9fa4ec41144678e353945ec5542809.htm) (un experimento de democracia)."
   },
   "limits": {
-   "en": "These were paper tags, not adhesive stickers. Who printed the first adhesive “I Voted” sticker is still unknown. Later histories cite a 1950 Miami Herald mention of “I Have Voted” stickers, but we haven’t been able to read that page.",
-   "es": "Eran etiquetas de papel, no stickers adhesivos. Todavía no se sabe quién imprimió el primer sticker adhesivo de “I Voted”. Historias posteriores citan una mención de stickers de “I Have Voted” en el Miami Herald de 1950, pero no hemos podido leer esa página."
+   "en": "These were paper tags, not adhesive stickers. We haven’t found a record of who printed the first adhesive “I Voted” sticker. The earliest sticker mention we’ve seen cited is a 1950 Miami Herald story.",
+   "es": "Eran etiquetas de papel, no stickers adhesivos. No hemos encontrado un registro de quién imprimió el primer sticker adhesivo de “I Voted”. La mención más antigua de un sticker que hemos visto citada es una nota del Miami Herald de 1950."
   },
   "source": {
    "en": "St. Louis Board of Education, Annual Report, vol. 67 (1920–21), p. 52, on HathiTrust",
@@ -55,7 +55,7 @@
       "es": "Los ejemplos más antiguos que encontramos"
      },
      "a": {
-      "en": "In October 1920, Ben Blewett Junior High School in St. Louis printed paper “I have voted” tags for a student election and gave one to each student as he voted. In 1962, a Camp Fire Girls handbook suggested handing them out on Election Day, and a federal report describes the tags being pinned on voters leaving a Georgia polling place in 1966. Later histories cite a 1950 Miami Herald item about “I Have Voted” stickers at Miami polls, and a 1982 Miami Herald story described Fort Lauderdale shops giving discounts to people wearing voting stickers.",
+      "en": "In October 1920, Ben Blewett Junior High School in St. Louis printed paper “I have voted” tags for a student election and gave one to each student who voted. In 1962, a Camp Fire Girls handbook suggested handing them out on Election Day, and a federal report describes the tags being pinned on voters leaving a Georgia polling place in 1966. Later histories cite a 1950 Miami Herald item about “I Have Voted” stickers at Miami polls, and a 1982 Miami Herald story described Fort Lauderdale shops giving discounts to people wearing voting stickers.",
       "es": "En octubre de 1920, Ben Blewett Junior High School, en St. Louis, imprimió etiquetas de papel de “I have voted” (yo voté) para una elección estudiantil y le dio una a cada estudiante al votar. En 1962, un manual de las Camp Fire Girls sugería repartirlas el Día de las Elecciones, y un informe federal describe cómo se las ponían a los votantes al salir de un lugar de votación de Georgia en 1966. Historias posteriores citan una nota del Miami Herald de 1950 sobre stickers de “I Have Voted” en lugares de votación de Miami, y una nota del Miami Herald de 1982 describió tiendas de Fort Lauderdale que daban descuentos a quienes llevaban stickers de votación."
      },
      "facts": [
@@ -99,7 +99,7 @@
       "en": "What We Still Don't Know",
       "es": "Lo que todavía no sabemos"
      },
-     "en": "The 1950 page hasn’t been available to review, so its details remain unclear. The tags in the 1920 school report and the 1960s sources were paper tags, and we haven’t found who first printed an adhesive “I Voted” sticker. Phoenix’s Realtors later called their sticker the first in the country, but a 1982 Miami Herald story had already described shops giving discounts to people wearing voting stickers. No patent for Boudreau’s flag oval has turned up; she has said she copyrighted the design.",
+     "en": "We haven’t read the 1950 Miami Herald page itself, which is in a subscription newspaper archive, so we can’t say what the stickers looked like or whether they were handed out. The tags in the 1920 school report and the 1960s sources were paper tags, and we haven’t found who first printed an adhesive “I Voted” sticker. Phoenix’s Realtors later called their sticker the first in the country, but a 1982 Miami Herald story had already described shops giving discounts to people wearing voting stickers. No patent for Boudreau’s flag oval has turned up; she has said she copyrighted the design.",
      "facts": [
       "miami-herald-1950-cited",
       "stlouis-blewett-1920",
@@ -107,7 +107,7 @@
       "boudreau-1987",
       "fort-lauderdale-1982"
      ],
-     "es": "La página de 1950 no ha estado disponible para revisarla, así que sus detalles siguen sin estar claros. Las etiquetas del informe escolar de 1920 y de las fuentes de los años sesenta eran de papel, y no hemos encontrado quién imprimió el primer sticker adhesivo de “I Voted”. Los agentes inmobiliarios de Phoenix dijeron después que su sticker fue el primero del país, pero una nota del Miami Herald de 1982 ya describía tiendas que daban descuentos a quienes llevaban stickers de votación. No ha aparecido ninguna patente del óvalo de Boudreau; ella ha dicho que registró los derechos de autor del diseño."
+     "es": "No hemos leído la página del Miami Herald de 1950, que está en un archivo de periódicos por suscripción, así que no podemos decir cómo eran los stickers ni si llegaron a repartirse. Las etiquetas del informe escolar de 1920 y de las fuentes de los años sesenta eran de papel, y no hemos encontrado quién imprimió el primer sticker adhesivo de “I Voted”. Los agentes inmobiliarios de Phoenix dijeron después que su sticker fue el primero del país, pero una nota del Miami Herald de 1982 ya describía tiendas que daban descuentos a quienes llevaban stickers de votación. No ha aparecido ninguna patente del óvalo de Boudreau; ella ha dicho que registró los derechos de autor del diseño."
     }
    ]
   },
@@ -871,8 +871,8 @@
     "es": "“I Have Voted” en Miami"
    },
    "body": {
-    "en": "Later histories cite an October 1950 Miami Herald item about “I Have Voted” stickers at Miami polling places. It’s the earliest mention of a sticker we’ve seen cited, but the original page hasn’t been available to review.",
-    "es": "Historias posteriores citan una nota del Miami Herald de octubre de 1950 sobre stickers de “I Have Voted” en lugares de votación de Miami. Es la mención más antigua de un sticker que hemos visto citada, pero la página original no ha estado disponible para revisarla."
+    "en": "An October 27, 1950 Miami Herald story about a vote on a $6 million hospital expansion bond said “I Have Voted” stickers would be handed out at the polls “as a reminder to others to cast their vote,” according to [Mental Floss](https://www.mentalfloss.com/history/government-politics/i-voted-sticker-history). It’s the earliest mention of a sticker we’ve seen cited. The Herald page is in a subscription archive, and we haven’t read it ourselves.",
+    "es": "Una nota del Miami Herald del 27 de octubre de 1950, sobre una votación de bonos de 6 millones de dólares para ampliar un hospital, decía que se repartirían stickers de “I Have Voted” en los lugares de votación “as a reminder to others to cast their vote” (como recordatorio para que otros voten), según [Mental Floss](https://www.mentalfloss.com/history/government-politics/i-voted-sticker-history). Es la mención más antigua de un sticker que hemos visto citada. La página del Herald está en un archivo por suscripción y no la hemos leído directamente."
    },
    "fact": "miami-herald-1950-cited",
    "mark": {

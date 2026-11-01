@@ -35,7 +35,7 @@ function vote_history_meta() {
 		'eyebrow' => '', // the breadcrumb already says Sticker History
 		// Oct 31 (pass 11, press release): the 1920 St. Louis tags lead the description and the lead. Always
 		// "the earliest example we found", never the first or the origin (docs/outreach-plan.md).
-		'lead' => t( 'No one knows who made the first “I Voted” sticker. The earliest example we found is from 1920: paper “I have voted” tags for a student election at a St. Louis school. Over time, a small giveaway became an Election Day tradition, and a chance for local artists, students and election offices to make their mark.' ),
+		'lead' => t( 'The earliest example we found is from 1920: paper “I have voted” tags for a student election at a St. Louis school. Over time, a small giveaway became an Election Day tradition, and a chance for local artists, students and election offices to make their mark.' ),
 		'desc' => t( 'I voted sticker history with a source for each step: 1920 “I have voted” tags at a St. Louis school (the earliest example we found), a 1985 Phoenix campaign, the 1987 flag oval and today\'s contests.' ),
 		'index' => ! vote_es() || VOTE_ES_INDEX,
 	);
@@ -361,7 +361,7 @@ function vote_history_jump() {
 
 function vote_history_why() {
 	return '<p class="why__hist"><span class="why__pic" aria-hidden="true"><svg viewBox="0 0 160 140" width="56" height="49"><path d="M50 14 L20 30 L6 62 L30 72 L36 58 L36 132 L124 132 L124 58 L130 72 L154 62 L140 30 L110 14 Q80 34 50 14Z" fill="#DCE3F2" stroke="#14295E" stroke-width="5" stroke-linejoin="round"/><ellipse cx="104" cy="64" rx="19" ry="12" fill="#FBF6E8" stroke="#C1272D" stroke-width="4"/></svg><span class="why__arrow">→</span><img src="' . vote_v( 'assets/states/tx/tx-vote-2.jpg' ) . '" alt="" width="48" height="48" loading="lazy"></span>'
-		. '<span>' . vote_e( t( 'Who started the I voted sticker? Nobody knows for sure. The waving American flag oval many people picture was drawn in 1987 by Janet Boudreau for Intab, an election supply company. The Smithsonian\'s National Museum of American History keeps a 1920 ribbon that marked a woman\'s first vote.' ) ) . ' <a href="' . vote_pbase() . VOTE_HISTORY_SLUG . '/">' . vote_e( t( 'How the I voted sticker became a tradition' ) ) . '</a></span></p>';
+		. '<span>' . vote_e( t( 'Who started the I voted sticker? The earliest record we found is from 1920: paper “I have voted” tags at a St. Louis school. The waving American flag oval many people picture was drawn in 1987 by Janet Boudreau for Intab, an election supply company. The Smithsonian\'s National Museum of American History keeps a 1920 ribbon that marked a woman\'s first vote.' ) ) . ' <a href="' . vote_pbase() . VOTE_HISTORY_SLUG . '/">' . vote_e( t( 'How the I voted sticker became a tradition' ) ) . '</a></span></p>';
 }
 
 // The finding a reader from the press release came for (Oct 31, pass 11): the 1920 Blewett tags, what they
