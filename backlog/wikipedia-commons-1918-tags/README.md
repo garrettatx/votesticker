@@ -23,8 +23,8 @@ VoteSticker.org design (out of scope, promotional).
 
 ## Steps
 
-1. Wait for the Talk page edit request to be posted (and ideally answered), so the upload and the
-   request support each other.
+1. Done Nov 1, 2026: Garrett posted the `{{edit COI}}` request on Talk:I Voted sticker. Check it for
+   replies before uploading; the upload and the request support each other.
 2. Logged in as Usableweb, open https://commons.wikimedia.org/wiki/Special:UploadWizard and upload the
    PNG. Choose "This file is not my own work" and the public-domain option for works published before
    1929, then paste the description below in place of the wizard's fields if it offers source mode.
