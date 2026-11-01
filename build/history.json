@@ -11,12 +11,12 @@
    "es": "St. Louis"
   },
   "body": {
-   "en": "In October 1920, Ben Blewett Junior High School in St. Louis held a student election run like a real one. The city’s Board of Election Commissioners swore in 60 student judges and clerks, and shop classes built 30 voting booths. The school’s printing department made “I have voted” tags, enough to give one to each student as they voted. Of 1,250 students who registered, 1,170 voted. The year before, its principal had described the school in a national education journal as [“an experiment in democracy.”](https://www.govinfo.gov/content/pkg/GOVPUB-I16-8f9fa4ec41144678e353945ec5542809/html/GOVPUB-I16-8f9fa4ec41144678e353945ec5542809.htm)",
-   "es": "En octubre de 1920, Ben Blewett Junior High School, una escuela secundaria pública de St. Louis, celebró una elección estudiantil organizada como una de verdad. La junta electoral de la ciudad tomó juramento a 60 estudiantes como jueces y secretarios electorales, y las clases de taller construyeron 30 cabinas de votación. El departamento de imprenta de la escuela hizo etiquetas de “I have voted” (yo voté), suficientes para darle una a cada estudiante al votar. De 1,250 estudiantes que se registraron, votaron 1,170. El año anterior, su director había descrito la escuela en una revista nacional de educación como [“an experiment in democracy”](https://www.govinfo.gov/content/pkg/GOVPUB-I16-8f9fa4ec41144678e353945ec5542809/html/GOVPUB-I16-8f9fa4ec41144678e353945ec5542809.htm) (un experimento de democracia)."
+   "en": "In October 1920, Ben Blewett Junior High School in St. Louis held a student election run like a real one. The city’s Board of Election Commissioners swore in 60 student judges and clerks, and shop classes built 30 voting booths. The school’s printing department made “I have voted” tags, enough to give one to each student as they voted. Of 1,250 students who registered, 1,170 voted. The year before, its principal had described the school in a national education journal as [“an experiment in democracy.”](https://www.jstor.org/stable/1078421)",
+   "es": "En octubre de 1920, Ben Blewett Junior High School, una escuela secundaria pública de St. Louis, celebró una elección estudiantil organizada como una de verdad. La junta electoral de la ciudad tomó juramento a 60 estudiantes como jueces y secretarios electorales, y las clases de taller construyeron 30 cabinas de votación. El departamento de imprenta de la escuela hizo etiquetas de “I have voted” (yo voté), suficientes para darle una a cada estudiante al votar. De 1,250 estudiantes que se registraron, votaron 1,170. El año anterior, su director había descrito la escuela en una revista nacional de educación como [“an experiment in democracy”](https://www.jstor.org/stable/1078421) (un experimento de democracia)."
   },
   "limits": {
-   "en": "These were paper tags, not adhesive stickers. We haven’t found a record of who printed the first adhesive “I Voted” sticker. The earliest sticker mention we’ve seen cited is a 1950 Miami Herald story.",
-   "es": "Eran etiquetas de papel, no stickers adhesivos. No hemos encontrado un registro de quién imprimió el primer sticker adhesivo de “I Voted”. La mención más antigua de un sticker que hemos visto citada es una nota del Miami Herald de 1950."
+   "en": "These were paper tags, not adhesive stickers. We haven’t found a record of who printed the first adhesive “I Voted” sticker. The earliest adhesive one we found is a 1950 car-window sticker reading “Thank Me I Voted Republican.”",
+   "es": "Eran etiquetas de papel, no stickers adhesivos. No hemos encontrado un registro de quién imprimió el primer sticker adhesivo de “I Voted”. El adhesivo más antiguo que encontramos es un sticker de 1950 para la ventana del carro que dice “Thank Me I Voted Republican”."
   },
   "source": {
    "en": "St. Louis Board of Education, Annual Report, vol. 67 (1920–21), p. 52, on HathiTrust",
@@ -26,7 +26,7 @@
   "facts": [
    "stlouis-blewett-1920",
    "blewett-school-1919",
-   "miami-herald-1950-cited"
+   "thank-me-1950-sticker"
   ],
   "event": "blewett-1920"
  },
@@ -882,6 +882,34 @@
    "kind": "uncertain"
   },
   {
+   "id": "thank-me-1950",
+   "year": 1950,
+   "title": {
+    "en": "A car-window “I Voted” sticker",
+    "es": "Un sticker de “I Voted” para la ventana del carro"
+   },
+   "body": {
+    "en": "A gummed sticker reading “Thank Me I Voted Republican,” printed with “Moisten and stick to car window,” is dated 1950 in St. Lawrence University’s Richard F. Brush Art Gallery collection. It was a party sticker for a car, not a polling-place giveaway, and it’s the earliest adhesive “I voted” sticker we found.",
+    "es": "Un sticker engomado que dice “Thank Me I Voted Republican” (agradéceme, voté republicano), con la instrucción “Moisten and stick to car window” (humedezca y pegue en la ventana del carro), tiene fecha de 1950 en la colección de la galería Richard F. Brush de St. Lawrence University. Era un sticker de partido para el carro, no uno que se repartía en los lugares de votación, y es el sticker adhesivo de “I voted” más antiguo que encontramos."
+   },
+   "fact": "thank-me-1950-sticker",
+   "kind": "precursor"
+  },
+  {
+   "id": "sherman-1952",
+   "year": 1952,
+   "title": {
+    "en": "“I have voted, have you?” badges in Texas",
+    "es": "Insignias de “I have voted, have you?” en Texas"
+   },
+   "body": {
+    "en": "On Election Day in Sherman, Texas, “citizens who had voted put on badges: ‘I have voted, have you?’” an Associated Press report in The Austin Statesman says. It’s the earliest example we found of the “have you?” line that later stickers made familiar.",
+    "es": "El Día de las Elecciones en Sherman, Texas, quienes ya habían votado se pusieron insignias que decían “I have voted, have you?” (ya voté, ¿y tú?), según un reporte de Associated Press en un diario de Austin (The Austin Statesman). Es el ejemplo más antiguo que encontramos de la pregunta “¿y tú?” que después se volvió común en los stickers."
+   },
+   "fact": "sherman-1952-badges",
+   "kind": "precursor"
+  },
+  {
    "id": "ftl-1982",
    "year": 1982,
    "title": {
@@ -1199,8 +1227,8 @@
     "es": "Etiquetas de “I have voted” para una elección estudiantil"
    },
    "body": {
-    "en": "For a student election at Ben Blewett Junior High School in St. Louis, the school’s printing department makes “I have voted” tags, one for each student as they vote. It’s the earliest example we found. A few years later, Tennessee Williams was a student there: [his 1925 Blewett yearbook](https://cdn.craft.cloud/97cd51c5-b816-4a93-aea9-fd7e2c5e47da/assets/TWAR_2005-07-Cave-HNOC_holdings.pdf) has one of his early poems.",
-    "es": "Para una elección estudiantil en Ben Blewett Junior High School, en St. Louis, el departamento de imprenta de la escuela hace etiquetas de “I have voted” (yo voté), una para cada estudiante al votar. Es el ejemplo más antiguo que encontramos. Unos años después, Tennessee Williams estudió allí: [su anuario de Blewett de 1925](https://cdn.craft.cloud/97cd51c5-b816-4a93-aea9-fd7e2c5e47da/assets/TWAR_2005-07-Cave-HNOC_holdings.pdf) tiene uno de sus primeros poemas."
+    "en": "For a student election at Ben Blewett Junior High School in St. Louis, the school’s printing department makes “I have voted” tags, one for each student as they vote. It’s the earliest example we found. The school, open since 1917, already ran its own student government: each homeroom elected two delegates to a grade congress, [its first principal wrote in 1919](https://www.jstor.org/stable/1078421). A few years later, Tennessee Williams was a student there: [his 1925 Blewett yearbook](https://cdn.craft.cloud/97cd51c5-b816-4a93-aea9-fd7e2c5e47da/assets/TWAR_2005-07-Cave-HNOC_holdings.pdf) has one of his early poems.",
+    "es": "Para una elección estudiantil en Ben Blewett Junior High School, en St. Louis, el departamento de imprenta de la escuela hace etiquetas de “I have voted” (yo voté), una para cada estudiante al votar. Es el ejemplo más antiguo que encontramos. La escuela, abierta desde 1917, ya tenía su propio gobierno estudiantil: cada grupo elegía a dos delegados para un congreso de su grado, [según escribió su primer director en 1919](https://www.jstor.org/stable/1078421). Unos años después, Tennessee Williams estudió allí: [su anuario de Blewett de 1925](https://cdn.craft.cloud/97cd51c5-b816-4a93-aea9-fd7e2c5e47da/assets/TWAR_2005-07-Cave-HNOC_holdings.pdf) tiene uno de sus primeros poemas."
    },
    "fact": "stlouis-blewett-1920",
    "kind": "precursor",

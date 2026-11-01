@@ -201,6 +201,12 @@
     },
     "www.mentalfloss.com": {
       "en": "Mental Floss"
+    },
+    "www.proquest.com": {
+      "en": "The Austin Statesman (ProQuest Historical Newspapers)"
+    },
+    "www.jstor.org": {
+      "en": "JSTOR"
     }
   },
   "events": [
@@ -1339,16 +1345,24 @@
       "evidence": "official record",
       "status": "verified",
       "checked": "2026-11-01",
-      "claim": "Ben Blewett Junior High School's principal from September 1917 to June 1920, Philip W. L. Cox, described the school in School Review (May 1919) as \"an experiment in democracy\", an article the U.S. Bureau of Education listed in its junior high school references.",
-      "src": "https://www.govinfo.gov/content/pkg/GOVPUB-I16-8f9fa4ec41144678e353945ec5542809/html/GOVPUB-I16-8f9fa4ec41144678e353945ec5542809.htm",
-      "quote": "Cox, Philip W. L. The Ben Blewett junior high school : an experiment in democracy. School review, 27: 345-59, May 1919.",
+      "claim": "Ben Blewett Junior High School opened in September 1917. Its principal from then until June 1920, Philip W. L. Cox, described the school in School Review (May 1919) as \"an experiment in democracy\", with a student government in which each advisory group elected two delegates to a grade congress.",
+      "src": "https://www.jstor.org/stable/1078421",
+      "quote": "Two members of each advisory group are elected as delegates to the Grade Congress",
       "also": [
+        {
+          "src": "https://www.jstor.org/stable/1078421",
+          "quote": "The Ben Blewett Junior High School was established in September, 1917"
+        },
+        {
+          "src": "https://www.govinfo.gov/content/pkg/GOVPUB-I16-8f9fa4ec41144678e353945ec5542809/html/GOVPUB-I16-8f9fa4ec41144678e353945ec5542809.htm",
+          "quote": "Cox, Philip W. L. The Ben Blewett junior high school : an experiment in democracy. School review, 27: 345-59, May 1919."
+        },
         {
           "src": "https://archive.org/stream/n4reportclass1906harvuoft/n4reportclass1906harvuoft_djvu.txt",
           "quote": "in September, 1917 I became principal of the Ben Blewett Junior High School, St. Louis; in June, 1920 I became headmaster of the Washington School of New York."
         }
       ],
-      "notes": "Bureau of Education Library Leaflet No. 20, List of References on the Junior High School (govinfo); Harvard College Class of 1906 Fifteenth Anniversary Report (1921), Cox entry, archive.org full text. Both read Nov 1, 2026. Cox had left before the October 1920 election; don't name him as its organizer."
+      "notes": "Bureau of Education Library Leaflet No. 20, List of References on the Junior High School (govinfo); Harvard College Class of 1906 Fifteenth Anniversary Report (1921), Cox entry, archive.org full text. Both read Nov 1, 2026. Cox had left before the October 1920 election; don't name him as its organizer. Nov 1: full article read (JSTOR Early Journal Content, free; text via archive.org jstor-1078421 and the May 1919 issue). R. L. Lyman, School Review Jan 1920 (jstor 1077496), adds 1,350 pupils, a boy and a girl per room to the congress, and printing as a boys' shop elective; not cited on the page."
     },
     {
       "id": "williams-blewett-1925",
@@ -1362,6 +1376,39 @@
       "src": "https://cdn.craft.cloud/97cd51c5-b816-4a93-aea9-fd7e2c5e47da/assets/TWAR_2005-07-Cave-HNOC_holdings.pdf",
       "quote": "beginning with The Blewett Junior Life Yearbook for 1925, Williams's junior high school yearbook—and contain an early Williams poem entitled \"Demon Smoke.\"",
       "notes": "Mark Cave, Tennessee Williams Annual Review 7 (2005), para. 27, read Nov 1, 2026. Junior Life is the school paper that made its Oct 28, 1920 issue an Election Issue. His first story \"Isolated\" in Junior Life (1924) is reported by Kolin 1998 but the date conflicts; not used."
+    },
+    {
+      "id": "sherman-1952-badges",
+      "year": 1952,
+      "date": "1952-11-04",
+      "place": "Sherman, Texas",
+      "evidence": "newspaper",
+      "status": "verified",
+      "checked": "2026-11-01",
+      "claim": "On Election Day 1952, an Associated Press roundup of Texas voting reported that in Sherman, voters who had already voted wore badges reading \"I have voted, have you?\"",
+      "src": "https://www.proquest.com/hnpaustinamericanstatesman/docview/1559484012",
+      "quote": "Citizens who had voted put on badges: \"I have voted, have you?\"",
+      "also": [],
+      "notes": "\"Eager Texans Storm Polls; Record Sure\", By Associated Press, The Austin Statesman, Nov 4, 1952, p. 1, continued p. 10 (ProQuest Historical Newspapers, docview 1559484012, scanned page; no text layer). Read by eye in Chrome via Austin Public Library access, Nov 1, 2026. Paywalled; badges, not stickers."
+    },
+    {
+      "id": "thank-me-1950-sticker",
+      "year": 1950,
+      "date": "1950",
+      "place": "United States",
+      "evidence": "collection record",
+      "status": "verified",
+      "checked": "2026-11-01",
+      "claim": "A gummed political sticker reading \"Thank Me I Voted Republican\", printed with \"Moisten and stick to car window\", is dated 1950 in the Richard F. Brush Art Gallery's Street Art Graphics collection (St. Lawrence University), shared on JSTOR.",
+      "src": "https://www.jstor.org/stable/community.29460360",
+      "quote": "Additional text includes: Moisten and stick to car window.",
+      "also": [
+        {
+          "src": "https://www.jstor.org/stable/community.29460360",
+          "quote": "TITLE Thank Me I Voted Republican WORK TYPE Political sticker Sticker DATE 1950"
+        }
+      ],
+      "notes": "JSTOR Shared Collections image record, catalogued 2020-21 by Claralyn Burt; local id sag_us_misc_historical_288_se.tif. Date is the collection's catalog date; no maker named. Partisan car sticker, not a polling-place giveaway. Read Nov 1, 2026 via Austin Public Library JSTOR access (record is FREE)."
     }
   ],
   "numbers": [
