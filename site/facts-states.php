@@ -346,6 +346,12 @@ return array(
 			'en_after' => 'Yes, by mail. Your county\'s Absentee Election Manager must receive a mailed ballot by noon on Tuesday, November 3, and a postmark doesn\'t count. Hand delivery ended at close of business on Monday, November 2.',
 			'es_after' => 'Sí, por correo. El administrador electoral de voto en ausencia de tu condado (Absentee Election Manager) debe recibir la boleta por correo a más tardar al mediodía del martes 3 de noviembre, y el matasellos no cuenta. La entrega en persona terminó al cierre del lunes 2 de noviembre.',
 		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call the Alabama Secretary of State\'s office, toll free at 1-800-274-8683.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama gratis a la oficina de la Secretaría de Estado de Alabama al 1-800-274-8683.',
+			'src' => 'https://www.sos.alabama.gov/alabama-votes',
+			'checked' => '2026-11-01',
+		),
 	),
 	'AR' => array(
 		'election' => '2026-11-03',
@@ -515,6 +521,12 @@ return array(
 			'until' => '2026-10-30',
 			'en_after' => 'It may be. Your county clerk must receive a mailed ballot by 7:30 p.m. on Tuesday, November 3, and a postmark doesn\'t count. Delivery in person or by a designated bearer closed at close of business on Friday, October 30. If you\'re a patient in a hospital or nursing home, an authorized agent can deliver it by 7:30 p.m. on Election Day. Not sure? Check with your county clerk.',
 			'es_after' => 'Puede que sí. El secretario de tu condado (county clerk) debe recibir la boleta por correo a más tardar a las 7:30 p. m. del martes 3 de noviembre, y el matasellos no cuenta. La entrega en persona o por un portador designado (designated bearer) cerró al cierre de la oficina el viernes 30 de octubre. Si estás internado en un hospital o en un centro de cuidado (nursing home), un agente autorizado (authorized agent) puede entregarla hasta las 7:30 p. m. del Día de las Elecciones. ¿Tienes dudas? Pregúntale al secretario de tu condado.',
+		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your county clerk or the Arkansas Secretary of State\'s Elections Division at 501-682-5070, or toll free outside the Little Rock area at 800-482-1127.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la secretaría de tu condado (county clerk) o a la División de Elecciones de la Secretaría de Estado de Arkansas al 501-682-5070, o gratis fuera de la zona de Little Rock al 800-482-1127.',
+			'src' => 'https://www.sos.arkansas.gov/about-the-office/contact-us',
+			'checked' => '2026-11-01',
 		),
 	),
 	'AZ' => array(
@@ -1233,6 +1245,12 @@ return array(
 			'src' => 'https://www.coloradosos.gov/pubs/elections/FAQs/ElectionDay.html',
 			'checked' => '2026-10-21',
 		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your county clerk or the Colorado Secretary of State\'s elections office at 303-894-2200.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la secretaría de tu condado (county clerk) o a la oficina de elecciones de la Secretaría de Estado de Colorado al 303-894-2200.',
+			'src' => 'https://www.coloradosos.gov/pubs/info_center/contact.html',
+			'checked' => '2026-11-01',
+		),
 	),
 	'CT' => array(
 		'election' => '2026-11-03',
@@ -1400,6 +1418,12 @@ return array(
 			'en_after' => 'Yes, by mail. Your Town Clerk must receive it by 8 p.m. on Tuesday, November 3, and a postmark doesn\'t count. Use your town\'s official drop box by 8 p.m. instead.',
 			'es_after' => 'Sí, por correo. El secretario de tu municipio (Town Clerk) debe recibirla a más tardar a las 8 p. m. del martes 3 de noviembre, y el matasellos no cuenta. Mejor usa el buzón oficial de entrega de tu municipio a más tardar a las 8 p. m.',
 		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your town\'s registrars of voters or the Connecticut Secretary of the State\'s elections division at 860-509-6100.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a los registradores de votantes de tu pueblo (registrars of voters) o a la división de elecciones de la Secretaría del Estado de Connecticut al 860-509-6100.',
+			'src' => 'https://portal.ct.gov/SOTS/Election-Services/Voter-Information/Voter-Fact-Sheet',
+			'checked' => '2026-11-01',
+		),
 	),
 	'DC' => array(
 		'election' => '2026-11-03',
@@ -1560,6 +1584,12 @@ return array(
 			'es' => 'Una boleta por correo debe tener matasellos del 3 de noviembre o antes y llegar a más tardar el viernes 13 de noviembre. El Servicio Postal no siempre pone el matasellos el mismo día que recoge el correo. ¿Ya casi es la fecha límite? Usa un buzón de entrega a más tardar a las 8 p. m. del Día de las Elecciones, o pide en una oficina de correos que la sellen a mano.',
 			'src' => 'https://www.dcboe.org/getContentAsset/5a9ceeda-114c-4171-810d-1317c9e06b0e/5ebbd046-860b-4ee1-81c8-43d0e3bc446e/_-DCBOE-Voter-Guide-Web-Smaller-File.pdf?language=en',
 			'checked' => '2026-10-28',
+		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call the DC Board of Elections at 202-727-2525, or toll free at 1-866-328-6837 (1-866-DC-VOTES).',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la Junta Electoral de DC (DC Board of Elections) al 202-727-2525, o gratis al 1-866-328-6837 (1-866-DC-VOTES).',
+			'src' => 'https://www.dcboe.org/',
+			'checked' => '2026-11-01',
 		),
 	),
 	'DE' => array(
@@ -1730,6 +1760,12 @@ return array(
 			'es' => 'Debe llegar a la oficina de tu condado a más tardar a las 8 p. m. del 3 de noviembre, y el matasellos no cuenta. En los últimos días, llévala a la oficina del Departamento de Elecciones de tu condado.',
 			'src' => 'https://elections.delaware.gov/voter/waystovote.html',
 			'checked' => '2026-10-28',
+		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call the Delaware Department of Elections office for your county: New Castle 302-577-3464, Kent 302-739-4498, Sussex 302-856-5367. You can also call the State Election Commissioner\'s office at 302-739-4277.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la oficina del Departamento de Elecciones de Delaware de tu condado: New Castle 302-577-3464, Kent 302-739-4498, Sussex 302-856-5367. También puedes llamar a la oficina del Comisionado Electoral del Estado (State Election Commissioner) al 302-739-4277.',
+			'src' => 'https://elections.delaware.gov/locations.html',
+			'checked' => '2026-11-01',
 		),
 	),
 	'FL' => array(
@@ -2322,6 +2358,12 @@ return array(
 			'src' => 'https://elections.hawaii.gov/wp-content/uploads/VoterGuide_2026_General_English.pdf',
 			'checked' => '2026-10-28',
 		),
+		'faq.problem' => array(
+			'en' => 'Call your county elections division first. You can also call the Hawaii Office of Elections at 808-453-8683 (808-453-VOTE), or toll free from the neighbor islands at 1-800-442-8683 (1-800-442-VOTE).',
+			'es' => 'Primero llama a la división electoral de tu condado. También puedes llamar a la Oficina de Elecciones de Hawaii (Office of Elections) al 808-453-8683 (808-453-VOTE), o gratis desde las otras islas al 1-800-442-8683 (1-800-442-VOTE).',
+			'src' => 'https://elections.hawaii.gov/about-us/contact-us/',
+			'checked' => '2026-11-01',
+		),
 	),
 	'IA' => array(
 		'election' => '2026-11-03',
@@ -2503,6 +2545,12 @@ return array(
 			'src' => 'https://sos.iowa.gov/voters/absentee-voting',
 			'checked' => '2026-10-30',
 		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your county auditor or the Iowa Secretary of State\'s Voter Hotline at 1-888-767-8683 (1-888-SOS-VOTE).',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama al auditor de tu condado (county auditor) o a la línea para votantes de la Secretaría de Estado de Iowa al 1-888-767-8683 (1-888-SOS-VOTE).',
+			'src' => 'https://sos.iowa.gov/voter-hotline',
+			'checked' => '2026-11-01',
+		),
 	),
 	'ID' => array(
 		'election' => '2026-11-03',
@@ -2663,6 +2711,12 @@ return array(
 			'es' => 'El secretario de tu condado debe recibirla a más tardar a las 8 p. m. del Día de las Elecciones. ¿Se te hizo tarde? Mejor usa un buzón electoral oficial o llévala a la oficina electoral de tu condado en lugar de mandarla por correo.',
 			'src' => 'https://archive.voteidaho.gov/download/2026-election-calendar.pdf',
 			'checked' => '2026-10-21',
+		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your county clerk or the Idaho Secretary of State\'s elections office at 208-334-2852.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la secretaría de tu condado (county clerk) o a la oficina de elecciones de la Secretaría de Estado de Idaho al 208-334-2852.',
+			'src' => 'https://voteidaho.gov/',
+			'checked' => '2026-11-01',
 		),
 	),
 	'IL' => array(
@@ -3017,6 +3071,12 @@ return array(
 			'src' => 'https://www.in.gov/dA/0860f5ebaf/2026-Election-Administrators-Manual-Revised-Apr-2026.pdf',
 			'checked' => '2026-10-30',
 		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your county election office or the Indiana Election Division at 317-232-3939.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la oficina electoral de tu condado o a la División Electoral de Indiana (Indiana Election Division) al 317-232-3939.',
+			'src' => 'https://www.in.gov/sos/elections/',
+			'checked' => '2026-11-01',
+		),
 	),
 	'KS' => array(
 		'election' => '2026-11-03',
@@ -3206,6 +3266,12 @@ return array(
 			'src' => 'https://sos.ks.gov/elections/advance-voting-information.html',
 			'checked' => '2026-10-30',
 		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your county election office or the Kansas Secretary of State\'s Elections Division at 800-262-8683 (800-262-VOTE).',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la oficina electoral de tu condado o a la División de Elecciones de la Secretaría de Estado de Kansas al 800-262-8683 (800-262-VOTE).',
+			'src' => 'https://sos.ks.gov/elections/elections.html',
+			'checked' => '2026-11-01',
+		),
 	),
 	'KY' => array(
 		'election' => '2026-11-03',
@@ -3381,6 +3447,12 @@ return array(
 			'es' => 'Puede que sí. El secretario de tu condado (county clerk) debe recibirla a más tardar a las 6 p. m., hora local, del martes 3 de noviembre, y el matasellos no cuenta. Mejor entrégala lo antes posible en el buzón de entrega de tu condado o en la oficina del secretario del condado, sin esperar al Día de las Elecciones.',
 			'src' => 'https://elect.ky.gov/Voters/Pages/Voting-In-Person-and-By-Mail.aspx',
 			'checked' => '2026-10-30',
+		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your county clerk or the Kentucky State Board of Elections at 502-573-7100.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la secretaría de tu condado (county clerk) o a la Junta Electoral del Estado de Kentucky (State Board of Elections) al 502-573-7100.',
+			'src' => 'https://elect.ky.gov/About-Us/Pages/Contact-Us.aspx',
+			'checked' => '2026-11-01',
 		),
 	),
 	'LA' => array(
@@ -3764,6 +3836,12 @@ return array(
 			'src' => 'https://www.sec.state.ma.us/divisions/elections/research-and-statistics/2026-Information-for-voters/2026-voting-options.htm',
 			'checked' => '2026-10-28',
 		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your local election office or the Massachusetts Elections Division at 1-800-462-8683 (1-800-462-VOTE) or 617-727-2828.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la oficina electoral local o a la División de Elecciones de Massachusetts (Elections Division) al 1-800-462-8683 (1-800-462-VOTE) o al 617-727-2828.',
+			'src' => 'https://www.sec.state.ma.us/divisions/elections/elections-and-voting.htm',
+			'checked' => '2026-11-01',
+		),
 	),
 	'MD' => array(
 		'election' => '2026-11-03',
@@ -4102,6 +4180,12 @@ return array(
 			'es' => 'Mandarla por correo en la última semana es arriesgado. Tiene que llegar al secretario a más tardar a las 8 p. m. del Día de las Elecciones, así que entrégala en la oficina de tu pueblo o en su buzón de entrega, o vota en persona en el lugar de votación.',
 			'src' => 'https://www.maine.gov/sos/elections-voting/absentee-guide',
 			'checked' => '2026-10-21',
+		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your town or city clerk or the Maine Elections Division at 207-624-7650.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la secretaría de tu pueblo o ciudad (town or city clerk) o a la División de Elecciones de Maine (Elections Division) al 207-624-7650.',
+			'src' => 'https://www.maine.gov/sos/cec/elec/upcoming/index.html',
+			'checked' => '2026-11-01',
 		),
 	),
 	'MI' => array(
@@ -4460,6 +4544,12 @@ return array(
 			'src' => 'https://www.sos.mn.gov/elections-voting/other-ways-to-vote/return-your-ballot/',
 			'checked' => '2026-10-28',
 		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your county election office or the Minnesota Secretary of State\'s elections line at 651-215-1440 (Twin Cities area) or 1-877-600-8683 (1-877-600-VOTE, Greater Minnesota).',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la oficina electoral de tu condado o a la línea de elecciones de la Secretaría de Estado de Minnesota al 651-215-1440 (zona de las Twin Cities) o al 1-877-600-8683 (1-877-600-VOTE, resto de Minnesota).',
+			'src' => 'https://www.sos.mn.gov/',
+			'checked' => '2026-11-01',
+		),
 	),
 	'MO' => array(
 		'election' => '2026-11-03',
@@ -4646,6 +4736,12 @@ return array(
 			'src' => 'https://revisor.mo.gov/main/OneSection.aspx?section=115.291',
 			'checked' => '2026-10-28',
 		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your local election authority or the Missouri Secretary of State\'s elections office, toll free at 800-669-8683, or 573-751-2301.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a tu autoridad electoral local o a la oficina de elecciones de la Secretaría de Estado de Missouri, gratis al 800-669-8683, o al 573-751-2301.',
+			'src' => 'https://www.sos.mo.gov/elections',
+			'checked' => '2026-11-01',
+		),
 	),
 	'MS' => array(
 		'election' => '2026-11-03',
@@ -4799,6 +4895,12 @@ return array(
 			'es' => 'No, si tiene matasellos del martes 3 de noviembre o antes y la oficina del secretario del tribunal de circuito (Circuit Clerk) la recibe a más tardar a las 5 p. m. del martes 10 de noviembre. Envíala lo antes posible.',
 			'src' => 'https://www.sos.ms.gov/content/documents/elections/2026%20Elections%20Calendar.pdf',
 			'checked' => '2026-10-30',
+		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your circuit clerk or the Mississippi Secretary of State\'s elections hotline at 800-829-6786.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la secretaría del tribunal de circuito de tu condado (circuit clerk) o a la línea de elecciones de la Secretaría de Estado de Mississippi al 800-829-6786.',
+			'src' => 'https://www.sos.ms.gov/elections-voting',
+			'checked' => '2026-11-01',
 		),
 	),
 	'MT' => array(
@@ -4969,6 +5071,12 @@ return array(
 			'es' => 'Mandarla por correo en la última semana es arriesgado. Tiene que llegar a la oficina electoral de tu condado o a un lugar de votación de tu condado a más tardar a las 8 p. m. del Día de las Elecciones, así que mejor entrégala en persona.',
 			'src' => 'https://votemt.gov/absentee-ballot/',
 			'checked' => '2026-10-28',
+		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your county election office or the Montana Secretary of State\'s Elections and Voter Services at 406-444-9608.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la oficina electoral de tu condado o a la oficina de Elecciones y Servicios al Votante de la Secretaría de Estado de Montana al 406-444-9608.',
+			'src' => 'https://sosmt.gov/contact-feedback/',
+			'checked' => '2026-11-01',
 		),
 	),
 	'NC' => array(
@@ -5381,6 +5489,12 @@ return array(
 			'src' => 'https://www.sos.nd.gov/elections/voter/voting-north-dakota/how-do-i-vote/absentee-voting',
 			'checked' => '2026-10-21',
 		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your county auditor or the North Dakota Secretary of State at 1-800-352-0867 or 701-328-2900.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama al auditor de tu condado (county auditor) o a la Secretaría de Estado de North Dakota al 1-800-352-0867 o al 701-328-2900.',
+			'src' => 'https://www.sos.nd.gov/elections',
+			'checked' => '2026-11-01',
+		),
 	),
 	'NE' => array(
 		'election' => '2026-11-03',
@@ -5535,6 +5649,12 @@ return array(
 			'es' => 'Puede que sí. Tu boleta debe llegar a la oficina electoral de tu condado a más tardar a las 8 p. m., hora del Centro (7 p. m., hora de la Montaña), del martes 3 de noviembre, y el matasellos no basta. Mejor llévala a la oficina electoral de tu condado o déjala en el buzón seguro de entrega de tu condado antes de esa hora. Un representante (agent) puede entregarla por ti.',
 			'src' => 'https://sos.nebraska.gov/elections/early-voting',
 			'checked' => '2026-10-30',
+		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your county election office or the Nebraska Secretary of State at 402-471-2554.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la oficina electoral de tu condado o a la Secretaría de Estado de Nebraska al 402-471-2554.',
+			'src' => 'https://sos.nebraska.gov/elections',
+			'checked' => '2026-11-01',
 		),
 	),
 	'NH' => array(
@@ -5699,6 +5819,12 @@ return array(
 			'until' => '2026-11-02',
 			'en_after' => 'Yes, by mail. Your town or city clerk must receive it by 5 p.m. on Tuesday, November 3, and a postmark doesn\'t count. A delivery agent, such as a close family member with the signed form, has until 5 p.m. on Election Day.',
 			'es_after' => 'Sí, por correo. El secretario de tu municipio o ciudad (town or city clerk) debe recibirla a más tardar a las 5 p. m. del martes 3 de noviembre, y el matasellos no cuenta. Un representante de entrega (delivery agent), como un familiar cercano con el formulario firmado, tiene hasta las 5 p. m. del Día de las Elecciones.',
+		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your town or city clerk or the New Hampshire Secretary of State\'s Office at 603-271-3242.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la secretaría de tu pueblo o ciudad (town or city clerk) o a la oficina de la Secretaría de Estado de New Hampshire al 603-271-3242.',
+			'src' => 'https://www.sos.nh.gov/elections/election-integrity',
+			'checked' => '2026-11-01',
 		),
 	),
 	'NJ' => array(
@@ -6020,6 +6146,12 @@ return array(
 			'src' => 'https://www.sos.nm.gov/voting-and-elections/voter-information-portal-nmvote-org/returning-your-absentee-ballot/',
 			'checked' => '2026-10-28',
 		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your county clerk or the New Mexico Secretary of State\'s Election Day Voter Hotline, toll free at 1-800-477-3632, or 505-827-3600 (option 2).',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la secretaría de tu condado (county clerk) o a la línea para votantes del Día de las Elecciones de la Secretaría de Estado de New Mexico, gratis al 1-800-477-3632, o al 505-827-3600 (opción 2).',
+			'src' => 'https://www.sos.nm.gov/contact-us/',
+			'checked' => '2026-11-01',
+		),
 	),
 	'NV' => array(
 		'election' => '2026-11-03',
@@ -6194,6 +6326,12 @@ return array(
 			'es' => 'Una boleta por correo cuenta si tiene matasellos del 3 de noviembre o antes y llega al secretario de tu condado a más tardar a las 5 p. m. del 7 de noviembre. La Secretaría de Estado recomienda enviarla por lo menos una semana antes, así que en la última semana usa un buzón de entrega.',
 			'src' => 'https://www.nvsos.gov/elections/election-information/2026-election-information',
 			'checked' => '2026-10-21',
+		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your county clerk or registrar of voters, or the Nevada Secretary of State\'s office at 775-684-5708.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la secretaría (county clerk) o al registro de votantes (registrar of voters) de tu condado, o a la oficina de la Secretaría de Estado de Nevada al 775-684-5708.',
+			'src' => 'https://www.nvsos.gov/elections',
+			'checked' => '2026-11-01',
 		),
 	),
 	'NY' => array(
@@ -6828,6 +6966,12 @@ return array(
 			'en_after' => 'Yes, by mail. Your County Election Board must receive a mailed ballot by 7 p.m. on Tuesday, November 3, and a postmark doesn\'t count. Hand delivery to the board ended at the end of business hours on Monday, November 2.',
 			'es_after' => 'Sí, por correo. La junta electoral de tu condado (County Election Board) debe recibir la boleta por correo a más tardar a las 7 p. m. del martes 3 de noviembre, y el matasellos no cuenta. La entrega en persona en la junta terminó al final del horario del lunes 2 de noviembre.',
 		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your county election board or the Oklahoma State Election Board at 405-521-2391.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la junta electoral de tu condado (county election board) o a la Junta Electoral del Estado de Oklahoma (State Election Board) al 405-521-2391.',
+			'src' => 'https://oklahoma.gov/elections/about-us/contact-us.html',
+			'checked' => '2026-11-01',
+		),
 	),
 	'OR' => array(
 		'election' => '2026-11-03',
@@ -7416,6 +7560,12 @@ return array(
 			'src' => 'https://vote.sos.ri.gov/Voter/VoteByMail',
 			'checked' => '2026-10-30',
 		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your local board of canvassers or the Rhode Island Department of State\'s Elections Division at 401-222-2340.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la junta local de escrutinio (local board of canvassers) o a la División de Elecciones del Departamento de Estado de Rhode Island al 401-222-2340.',
+			'src' => 'https://vote.sos.ri.gov/DataInformation/ContactUs',
+			'checked' => '2026-11-01',
+		),
 	),
 	'SC' => array(
 		'election' => '2026-11-03',
@@ -7618,6 +7768,12 @@ return array(
 			'src' => 'https://scvotes.gov/voters/voter-faq/',
 			'checked' => '2026-10-28',
 		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your county voter registration and elections office or the South Carolina Election Commission at 803-734-9060.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la oficina de registro de votantes y elecciones de tu condado o a la Comisión Electoral de South Carolina (South Carolina Election Commission) al 803-734-9060.',
+			'src' => 'https://scvotes.gov/contact/',
+			'checked' => '2026-11-01',
+		),
 	),
 	'SD' => array(
 		'election' => '2026-11-03',
@@ -7766,6 +7922,12 @@ return array(
 			'es' => '¿Se te hizo tarde? Entrégala al funcionario electoral de tu condado el Día de las Elecciones con tiempo para que llegue a tu precinto antes de las 7 p. m. hora local. Las boletas que llegan después del cierre no se cuentan.',
 			'src' => 'https://sdlegislature.gov/Statutes/12-19-12',
 			'checked' => '2026-10-21',
+		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your county auditor or the South Dakota Secretary of State\'s office at 605-773-3537.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama al auditor de tu condado (county auditor) o a la oficina de la Secretaría de Estado de South Dakota al 605-773-3537.',
+			'src' => 'https://sdsos.gov/about-the-office/assets/Press%20Releases/2026/2026VoterRegistrationDeadlinePrimaryreminder.pdf',
+			'checked' => '2026-11-01',
 		),
 	),
 	'TN' => array(
@@ -8382,6 +8544,12 @@ return array(
 			'src' => 'https://vote.utah.gov/learn-about-voting-by-mail-and-absentee-voting/',
 			'checked' => '2026-10-30',
 		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your county clerk or the Utah Lieutenant Governor\'s Office, which runs state elections, at 801-538-1041.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la secretaría de tu condado (county clerk) o a la Oficina del Vicegobernador de Utah (Lieutenant Governor\'s Office), que dirige las elecciones del estado, al 801-538-1041.',
+			'src' => 'https://vote.utah.gov/additional-resources-for-voters',
+			'checked' => '2026-11-01',
+		),
 	),
 	'VA' => array(
 		'election' => '2026-11-03',
@@ -8744,6 +8912,12 @@ return array(
 			'src' => 'https://legislature.vermont.gov/statutes/section/17/051/02543',
 			'checked' => '2026-10-28',
 		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your town or city clerk or the Vermont Secretary of State\'s Elections Division at 802-828-2363.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la secretaría de tu pueblo o ciudad (town or city clerk) o a la División de Elecciones de la Secretaría de Estado de Vermont al 802-828-2363.',
+			'src' => 'https://sos.vermont.gov/elections/',
+			'checked' => '2026-11-01',
+		),
 	),
 	'WA' => array(
 		'election' => '2026-11-03',
@@ -9069,6 +9243,12 @@ return array(
 			'src' => 'https://elections.wi.gov/voters/voting-absentee',
 			'checked' => '2026-10-30',
 		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your municipal clerk or the Wisconsin Elections Commission, toll free at 1-866-868-3947 (1-866-VOTE-WIS), or 608-266-8005.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la secretaría de tu municipio (municipal clerk) o a la Comisión Electoral de Wisconsin (Wisconsin Elections Commission), gratis al 1-866-868-3947 (1-866-VOTE-WIS), o al 608-266-8005.',
+			'src' => 'https://elections.wi.gov/contact-us',
+			'checked' => '2026-11-01',
+		),
 	),
 	'WV' => array(
 		'election' => '2026-11-03',
@@ -9232,6 +9412,12 @@ return array(
 			'src' => 'https://sos.wv.gov/govotewv',
 			'checked' => '2026-10-28',
 		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your county clerk or the West Virginia Secretary of State\'s call center at 304-558-6000.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la secretaría de tu condado (county clerk) o al centro de llamadas de la Secretaría de Estado de West Virginia al 304-558-6000.',
+			'src' => 'https://sos.wv.gov/contact-wvsos',
+			'checked' => '2026-11-01',
+		),
 	),
 	'WY' => array(
 		'election' => '2026-11-03',
@@ -9375,6 +9561,12 @@ return array(
 			'es' => 'Solo cuenta si el secretario de tu condado (county clerk) la recibe a más tardar a las 7 p. m. del Día de las Elecciones, sin importar el matasellos. Si queda poco tiempo, llévala tú a la oficina del secretario.',
 			'src' => 'https://sos.wyo.gov/Elections/State/AbsenteeVoting.aspx',
 			'checked' => '2026-10-28',
+		),
+		'faq.problem' => array(
+			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your county clerk or the Wyoming Secretary of State\'s Election Division at 307-777-5860.',
+			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la secretaría de tu condado (county clerk) o a la División Electoral de la Secretaría de Estado de Wyoming al 307-777-5860.',
+			'src' => 'https://sos.wyo.gov/ContactUs.aspx',
+			'checked' => '2026-11-01',
 		),
 	),
 );

@@ -232,6 +232,14 @@
    "checked": "2026-10-28",
    "quote": "The US Postal Service recently clarified its postmarking procedure, noting that it does not always postmark mail the day it collects it. DCBOE encourages voters to mail their ballots early or to request a hand-stamped postmark at a post office.",
    "status": "verified"
+  },
+  "problem": {
+   "en": "Ask a poll worker first. For anything they can't fix, call the DC Board of Elections at 202-727-2525, or toll free at 1-866-328-6837 (1-866-DC-VOTES).",
+   "es": "Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la Junta Electoral de DC (DC Board of Elections) al 202-727-2525, o gratis al 1-866-328-6837 (1-866-DC-VOTES).",
+   "src": "https://www.dcboe.org/",
+   "checked": "2026-11-01",
+   "quote": "DC Board of Elections 1015 Half Street, SE, Suite 750 Washington, DC 20003 Monday to Friday 8:15 AM to 4:45 PM Tel: (202) 727-2525 Tollfree: 1-866-DC-VOTES",
+   "status": "verified"
   }
  },
  "notes": "Read October 21, 2026 on code.dccouncil.gov (D.C. Code 1-1001.05, .07, .09, .10). VALIDATOR HOST: dcboe.org and earlyvoting.dcboe.org, the DC Board of Elections' own domains, fail the OFFICIAL pattern in build/facts_text.py, so nothing is cited from them and no where.locator_url, track_url or local_offices_url is set. Facts that only DCBOE states are missing: the mail request (every voter is mailed a ballot), early voting hours, the cure process and deadline, the in-line rule, witness, phone rule and sticker. The Early Vote Centers page (read in Chrome) says 'Early Vote Centers open from Monday, October 26 through Sunday, November 1, between 8:30 a.m. and 7:00 p.m.', matching states.js. Mail return: the Code gives the 10th day after Election Day; faq-sources.json records DCBOE's calendar as November 13, 2026. No calendar date is computed here. 1-1001.05(a)(10A) has a separate 7th-day rule for absentee ballots (UOCAVA context); mail-in ballots follow (10B). Provisional (special) ballot hearing: 8 to 10 days after the election, 1-1001.09(e). UPDATE Oct 28, 2026: dcboe.org is now in ALLOW_HOSTS, so DCBOE facts are cited from the 2026 General Election voter guide PDF and the 2026 General Election calendar (Rev. 10/1/2026): mail return Nov 13 and postmark warning, early hours, cure Nov 19, special ballot proof Nov 10, locator, drop boxes, The Queue.",

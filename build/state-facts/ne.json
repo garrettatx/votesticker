@@ -240,6 +240,14 @@
    "quote": "All Early Voting ballots, whether personally delivered, delivered by agent, delivered by mail or other carriers must arrive at the county election official's office by the closing of the polls on Election Day (8:00 pm Central Time / 7:00 pm Mountain Time). Where can I find my county's secure ballot drop box? Nebraska Drop Box Locator",
    "status": "verified",
    "notes": "Pass 2 Oct 30, read by curl. Postmark: SOS May 2026 reminder 'Ballots which are postmarked on or before Election Day but are not received until after polls close will not be accepted.' (Perplexity lead)."
+  },
+  "problem": {
+   "en": "Ask a poll worker first. For anything they can't fix, call your county election office or the Nebraska Secretary of State at 402-471-2554.",
+   "es": "Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la oficina electoral de tu condado o a la Secretaría de Estado de Nebraska al 402-471-2554.",
+   "src": "https://sos.nebraska.gov/elections",
+   "checked": "2026-11-01",
+   "quote": "Nebraska Secretary of State Phone 402.471.2554 Fax 402.471.3237 Mailing Address P.O. Box 94608 Lincoln, NE 68509-4608",
+   "status": "verified"
   }
  },
  "notes": "Read October 21, 2026 on sos.nebraska.gov (curl worked): Early Voting, Election Day FAQ, Voter ID, Nebraska Drop Box Locator, the 2026 Official Election Calendar PDF; and nebraskalegislature.gov statutes 32-908 (hours, line), 32-1524 (electioneering, 200 feet), 32-1527 (ballot photo), 32-950.01 (drop boxes). EARLY VOTING vs states.js: states.js has end 2026-11-02 and no start. The calendar gives the start: '5-Oct First day for early voting - in person - at the county clerk or election commissioner office.' and '2-Nov Last day for early voting - in person - at the county clerk or election commissioner office. §32-942'. The provisional photo ID deadline is November 10 per the calendar ('Deadline to present valid photographic identification ... on or before the Tuesday after the election'); id.without says 'the Tuesday after the election'. Phone rule, mail ballot cure, first-time voter rules and a sticker tradition on an official page were not found; left missing.",

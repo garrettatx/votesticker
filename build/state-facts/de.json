@@ -257,6 +257,14 @@
    "checked": "2026-10-28",
    "quote": "You may return your absentee ballot by mail. If mailing your absentee ballot, please mail it as soon as possible to avoid delays.",
    "status": "verified"
+  },
+  "problem": {
+   "en": "Ask a poll worker first. For anything they can't fix, call the Delaware Department of Elections office for your county: New Castle 302-577-3464, Kent 302-739-4498, Sussex 302-856-5367. You can also call the State Election Commissioner's office at 302-739-4277.",
+   "es": "Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la oficina del Departamento de Elecciones de Delaware de tu condado: New Castle 302-577-3464, Kent 302-739-4498, Sussex 302-856-5367. También puedes llamar a la oficina del Comisionado Electoral del Estado (State Election Commissioner) al 302-739-4277.",
+   "src": "https://elections.delaware.gov/locations.html",
+   "checked": "2026-11-01",
+   "quote": "State Election Commissioner ... Telephone: (302) 739-4277 ... Kent County Office ... Phone: (302) 739-4498 ... 820 North French St Suite 400 Wilmington DE 19801 ... Phone: (302) 577-3464 ... 119 N. Race St P.O. Box 457 Georgetown DE 19947 ... Phone: (302) 856-5367",
+   "status": "verified"
   }
  },
  "notes": "Read October 21, 2026 on elections.delaware.gov (General Election, Ways to Vote and Voting Locations by curl; the Absentee page in Chrome, because the site's firewall rejected curl and WebFetch after a few requests; the 2026 Election Calendar PDF and the FAQ page were also rejected and not read) and delcode.delaware.gov (Title 15, ch. 49 subch. II: 4937 ID, 4942 electioneering, 4947 closing and line, 4948 provisional; ch. 55: 5502 eligibility, 5507 envelope, 5508 return, 5509A cure). Early voting dates in states.js (October 22 to November 1, no early voting Sunday, October 25) match the Voting Locations page. 'A postmark isn't enough' rests on 5508(b) and the received-by wording; no page says 'postmark' outright. The waystovote page links to a 2024 election calendar PDF; the general page links the 2026 one. Delaware absentee voting needs a reason (5502; the Absentee page says permanent absentee status 'is affirmed by the Delaware Supreme Court'). Provisional ballots under 4948 are for federal offices only. No phone rule, expired-ID rule or sticker tradition found. Oct 28 pass: VotingFAQ.html (photo ID not required, no defined ID list, cell phone rule, provisional), general page (Oct 19 UOCAVA registration, noon Nov 2 absentee issue deadline), 36-01 polling place alert on news.delaware.gov (Oct 26), ch. 49 4948(h) provisional tally rules. No Delaware law or Department rule on photographing a ballot found; 4942 covers electioneering only.",

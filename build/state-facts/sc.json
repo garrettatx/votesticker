@@ -302,6 +302,14 @@
    "checked": "2026-10-28",
    "quote": "You may also vote a provisional ballot in person that will count as long as your absentee ballot is not returned before the polls close on Election Day.",
    "status": "verified"
+  },
+  "problem": {
+   "en": "Ask a poll worker first. For anything they can't fix, call your county voter registration and elections office or the South Carolina Election Commission at 803-734-9060.",
+   "es": "Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la oficina de registro de votantes y elecciones de tu condado o a la Comisión Electoral de South Carolina (South Carolina Election Commission) al 803-734-9060.",
+   "src": "https://scvotes.gov/contact/",
+   "checked": "2026-11-01",
+   "quote": "State Election Commission P.O. Box 5987 Columbia, SC 29250-5987 Main: (803) 734-9060",
+   "status": "verified"
   }
  },
  "notes": "Read October 21, 2026 on scvotes.gov by curl (Early Voting, Prep for the 2026 Statewide General Election, Absentee Voting, Photo ID Requirements, General FAQs, How to Vote), the 2026 Voter and Absentee Go-To Guides (PDFs, September 2026), and S.C. Code Title 7 Chapter 13 on scstatehouse.gov (not cited in a fact). South Carolina is already verified in states.js (October 19 to 31, closed Sunday, October 25); the early voting page still says 'Early Voting for 2026 Statewide General Election are Monday, October 19 - Saturday, October 31.' and 'Closed Sunday, October 25'. CONFLICT on early voting hours: see dates.early_hours notes (6 p.m. in the 2026 lines, guides and statute; 5 p.m. in the page's general schedule table). Mail request date: the absentee page says '5:00 p.m. on the 11th day prior to the election'; the 2026 Absentee Go-To Guide gives Friday, October 23. Registration also closed by mail (postmarked) on October 5 and in person at most offices at 5 p.m. October 2. Campaign rules: the FAQ covers literature, signs and posters within 500 feet and candidate badges, but not voters' clothing, so gear doesn't tell voters what to wear. Drop boxes are not mentioned anywhere; in-person return is to the county office or an early voting center, with photo ID.",

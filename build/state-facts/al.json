@@ -278,6 +278,14 @@
    "until": "2026-11-02",
    "en_after": "Yes, by mail. Your county's Absentee Election Manager must receive a mailed ballot by noon on Tuesday, November 3, and a postmark doesn't count. Hand delivery ended at close of business on Monday, November 2.",
    "es_after": "Sí, por correo. El administrador electoral de voto en ausencia de tu condado (Absentee Election Manager) debe recibir la boleta por correo a más tardar al mediodía del martes 3 de noviembre, y el matasellos no cuenta. La entrega en persona terminó al cierre del lunes 2 de noviembre."
+  },
+  "problem": {
+   "en": "Ask a poll worker first. For anything they can't fix, call the Alabama Secretary of State's office, toll free at 1-800-274-8683.",
+   "es": "Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama gratis a la oficina de la Secretaría de Estado de Alabama al 1-800-274-8683.",
+   "src": "https://www.sos.alabama.gov/alabama-votes",
+   "checked": "2026-11-01",
+   "quote": "Alabama Votes Secretary of State Wes Allen Call Toll Free: 1-800-274-8683",
+   "status": "verified"
   }
  },
  "notes": "Read October 21, 2026 with curl on sos.alabama.gov: the 2026 Voter Guide PDF, Absentee Voting Information, the Alabama Votes FAQ, the Photo Voter ID page, and myinfo.alabamavotes.gov/voterview (page labeled VoterView; the Voter Guide calls the tool 'My Voting Information'). The Voter Guide's deadline chart labels the mail ballot row 'must be postmarked no later than noon', but its text, its dates list ('Absentee ballots returned by mail must be received by noon') and the SOS absentee page all say received by noon; the file uses received. Absentee voting starts 'no later than' September 9 per the guide's chart. Photo rule: the FAQ says camera phones can't take photos or video inside, but in the same FAQ voters may take a picture 'of or with their ballot'; polls_rules.phone keeps both. Sticker tradition not found. States.js has AL verified as kind 'none'; nothing here contradicts it. October 28: Perplexity review checked on sos.alabama.gov. Digital ID: the page now follows the SOS release that digital IDs are not accepted (HB110, effective Oct 1, 2026, says the same); the 2026 Voter Guide and valid-IDs page still list the digital license and conflict. Hand delivery is by close of business, no later than 5 p.m., Nov 2. Emergency and medical emergency absentee routes added after the Oct 29 deadline. Unverified: the two-official affidavit detail (not in the Voter Guide text read).",
