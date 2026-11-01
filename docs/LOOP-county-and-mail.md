@@ -33,7 +33,7 @@ last-minute answer for their state, both from an official source.
 | # | Item | Evidence | Status |
 |---|---|---|---|
 | 0 | Push loop 2's waiting commits (history, post-election results answer), missed Oct 30 6:30 a.m. slot | 3 commits local | Done Oct 30 (run 41084630854) |
-| 1 | **County Stickers**: a heading under the state's premade sticker gallery listing official county sticker stories (design, who made it, where voters get it, paper or digital), each with its own official source and quote. Optional `sticker.more` list in `build/state-facts/<abbr>.json`, rendered by `facts_text.py` and `site/index.php`, checked by `qa_facts`. Order by search demand (Garrett, Oct 30): counties with Search Console queries on our pages first, then counties with Ahrefs volume for "[county] i voted sticker", then strong verified entries with no measured demand. Demand-backed counties go first in each state's list, and the log shows each county's number. The dozen verified Oct 29 (LOOP-state-pages.md, loop 1 entry) are candidates, not a given | "[state] i voted sticker" is the top query on every state page; county contest pages outrank us; check GSC queries with county names and Ahrefs "[county] i voted sticker" first | Built Oct 30: 17 entries in 7 states (pass 1); more states next |
+| 1 | **County Stickers**: a heading under the state's premade sticker gallery listing official county sticker stories (design, who made it, where voters get it, paper or digital), each with its own official source and quote. Optional `sticker.more` list in `build/state-facts/<abbr>.json`, rendered by `facts_text.py` and `site/index.php`, checked by `qa_facts`. Order by search demand (Garrett, Oct 30): counties with Search Console queries on our pages first, then counties with Ahrefs volume for "[county] i voted sticker", then strong verified entries with no measured demand. Demand-backed counties go first in each state's list, and the log shows each county's number. The dozen verified Oct 29 (LOOP-state-pages.md, loop 1 entry) are candidates, not a given | "[state] i voted sticker" is the top query on every state page; county contest pages outrank us; check GSC queries with county names and Ahrefs "[county] i voted sticker" first | Built Oct 30: 17 entries in 7 states (pass 1). Nov 1 (pass 13): 10 more in 6 states (NYC Halloween; CO, PA, OR, VA, MD new); demand places Alameda, Chicago, New Orleans, Wake have no official 2026 local sticker |
 | 2 | **Last-minute mail answers for every state**: "Is it too late to mail my ballot?", "How do I track my mail ballot?", "My name isn't on the list" (provisional ballot). Done for TX, NC, FL Oct 29. Postmark vs. receipt, and where to hand it in, vary by state | Election-week searches Nov 1 to 3; a wrong generic answer can cost a vote | Pass 2 Oct 30: 23 states filled or fixed. Pass 3 Oct 30: name-not-on-the-list answers for MN MS NH (new) and TN SC NJ NE NV IA (stronger); trackers for IL (county list), IN and SD (statewide; pass 2 had them wrong as missing). Left: MO tracker (local only), ME and IN provisional lines |
 | 3 | Open fact calls before the Nov 2 banner: NJ cure deadline (timeline vs. poster); ID affidavit routes AK AZ IA ND OK WY; ALLOW_HOSTS for official county sites on .com/.org (Camden NJ, Washington County MD, Johnson and Montgomery County KS) | Possible wrong answers on the busiest day | Pass 3 Oct 30: ID routes fixed (WY was wrong, ND incomplete; AK AZ IA OK right); ALLOW_HOSTS added; AR conflict gone (SOS FAQ now agrees); NJ left as is (Garrett) |
 | 4 | Spanish wording decided by evidence: "lugar de votación" vs. "casilla"; "Ya voté" vs. "Yo voté" on stickers. What official U.S. Spanish election pages and stickers say, plus Spanish search volume (Ahrefs US, GSC). Recommendation to Garrett, then apply | Open questions in `docs/spanish-style.md` | Done Oct 31 (pass 5): "lugar de votación" and "cierra la votación" (no "casillas"); "Yo voté" in text, titles and the maker. Images: Done Oct 31 (pass 6): 204 bespoke stickers redrawn as YO VOTÉ, 204 301s, Spanish post-election share cards redrawn |
@@ -1060,3 +1060,65 @@ https://votesticker.org/: OK at all seven widths.
 **For Garrett.** The title now reads "From 1920 Tags to Today": it's the page's span, not an origin claim, but say if you'd
 rather keep "Where It Came From". The release could cite the source the way the page now does: "St. Louis Board of
 Education, Annual Report, vol. 67 (1920–21)".
+
+### November 1: Pass 12, Election Day Experience
+
+**Why.** Garrett: "prepare for election day and make our content 10x our competition." On Nov 2 and 3 demand moves from
+"early" to Election Day and generic sticker queries (GSC Oct 30, impressions at position): "voting sticker" 33 at 7.0,
+"i voted" 22 at 9.0, "i voted sticker 2026" 19 at 8.5, "i voted today sticker" 16 at 8.9, "how to get i voted sticker"
+5 at 6.6, "where can i get an i voted sticker" 5 at 8.8, "do you get an i voted sticker with mail in ballot" 4 at 7.0.
+Top pages: TX, CA, home, FL, NC, OR, WA, NY, IL, MD, OH, AK. Titles left alone (pass 7; no new evidence).
+
+**Read as a voter (dated builds, VOTE_TODAY 2026-11-02 and 11-03, EN and ES).** Hours, banners, lookups and return rules
+were right on all 12 states. Gaps: no "I voted today" answer anywhere; no direct "sticker if I vote by mail?" answer on
+the home page; no "who do I call if something goes wrong" on any page; the home banner's "Already voted?" link went to the
+state list, not to stickers; mail states still said "Pick a day to send it back" and captioned "I'm getting my ballot in
+early" on the deadline's eve; California's return rule still said "Mail it at least 7 days before Election Day"; the
+Texas provisional answer read as if the six-day ID step applied to every provisional ballot.
+
+**Perplexity** (project "VoteSticker.org Research", thread https://www.perplexity.ai/search/7f603849-8ea8-4459-9bc1-89033f76842b).
+Deep Research opened the upgrade screen twice: "Upgrade for advanced research capabilities. Upgrade to Max for
+enhanced access to Perplexity deep research." So regular Search, with the full Nov 3 text of home, Texas and
+California plus the pages that outrank us (prompt over the paste limit, attached as paste.txt). Prompt, answer and
+verification: `docs/research/election-day-20261101/`. Used: who-to-call answers with real phone numbers (its #3), a
+direct mail-voter answer (#2), an "I voted today" answer (#1), bounded "where to get one" wording, California's stale
+7-day line, caption and lead (#4), the Texas provisional wording (#5). Not used, and why: moving Williamson County out of
+the early question, reordering California's county list, the Halloween item (past tense already), a visible "Yo voté"
+chip, claim-level source labels, moving the 46-state list and the footer (structure, not worth the risk two days out;
+after Nov 4); California's Spanish hotline (not on the page we read); "I voted today" in the maker (qa_cards
+matrix change).
+
+**Changes (EN and ES; facts each read on the office's own page, quotes in `verification.md`).**
+
+| Where | Before | After |
+|---|---|---|
+| 11 state FAQs (TX CA FL NC OR WA NY IL MD OH AK) | none | "Who do I call if I have a problem voting in Texas?" "Ask a poll worker first. For anything they can't fix, call your county elections office or the Texas Secretary of State at 1-800-252-8683 (1-800-252-VOTE)." New optional fact `faq.problem`, gone from Nov 4 |
+| Home FAQ | none | "Where can I get an I voted today sticker?" (poll worker if your county gives them out; classic I voted today PNGs) |
+| Home FAQ | none | "Do you get an I voted sticker if you vote by mail?" "Sometimes..." SF, Orange, San Diego, Santa Clara packets; OR and WA SOS, Multnomah, El Paso digital; Colorado BallotTrax (all already verified on the site) |
+| Home FAQ | none | "What if I have a problem when I go to vote?" poll worker, state page's provisional and line answers, county or state office, DOJ Voting Section 800-253-3931 (Nov 1 to 3 only) |
+| Home FAQ, where to get | "Poll workers at most polling places and vote centers hand you one" | "In many places, a poll worker hands you one ... Each state or county decides whether to give them out ... some only while supplies last" |
+| Home banner, Nov 2 to 3 | "Already voted? Get your sticker." to #states-h | "Voted today? Save an I voted today sticker." to #ready-to-share |
+| Mail-state lead, Nov 2 to 3 | "Your ballot came in the mail. Pick a day to send it back, ..." | "Still have your ballot? Get it in by November 3, then grab a sticker ..." |
+| Mail-state caption, Nov 2 to 3 | "I'm getting my ballot in early. ... When are you sending yours back?" | "I'm getting my ballot in by November 3. ... Is yours in yet?" |
+| California mail return (from Oct 28) | "... Mail it at least 7 days before Election Day; after that, use a drop box or ask a postal employee for a hand postmark." | "... Mailing it now? Use a drop box, or ask a postal employee for a hand postmark." |
+| Texas provisional | "... In that case, take the ID to ..." | "... If you didn't bring your ID, take it to ..." |
+
+**QA (local, 8792).** qa_facts (51 states, 102 pages), qa_es (54 pairs), qa_seo --no-legacy (54 pages, 1,028 links),
+qa_events, qa_save, qa_history, qa_cards (Chromium and WebKit, 76,320 WebKit cards, 0 outside the circle): PASS.
+qa_stale: 0 STALE on 11-01 (78 WINDOW), 11-02 (41), 11-03 (5), 11-04 (0). Nov 3 build: no sideways scroll at 375 or 1280
+on home, /es/, Texas, California; screenshots of the banner and FAQ checked. The staged commit alone (checkout-index
+snapshot) validated and built: pass 13's uncommitted county edits in md, ny, or and facts_text.py were left out of my
+commit by staging only my hunks.
+
+**Push (commit fbc161f, about 11:45 a.m.).** Dispatched run 41328063000: build, local QA, deploy, live QA passed;
+IndexNow "108 sitemap URLs, 24 to submit", "IndexNow answered HTTP 200". "Commit build records" was rejected because pass
+13 pushed 99c417f mid-run; pass 13's run 41328412934 then passed every step, including "Commit build records" (67d25a3; IndexNow "30 to
+submit", HTTP 200). Live curl: home and /es/ show the three new
+FAQs and 800-253-3931; /texas/ and /es/texas/ the who-to-call answer with 1-800-252-8683; /california/ 800-345-8683 and
+"Mailing it now"; /maryland/ 800-222-8683.
+
+**Next.**
+- Who-to-call answers for the other 40 states (GA, PA, LA, TN, AZ, MI, VA, NJ first by impressions), text in the existing
+  slot, any time before Nov 3.
+- After Nov 4: Perplexity's structure ideas above; check GSC Nov 5 for "i voted today sticker", "do you get an i voted
+  sticker" and "voting sticker" positions on the home page.
