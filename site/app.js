@@ -2119,9 +2119,18 @@
 			a.addEventListener('touchstart', function () { keepBlob(src); }, { passive: true });
 		});
 	}
+	// A ready-made gallery: the state page's (#gallery-grid) or each state's row on /stickers/ (.grid--all,
+	// data-state), the same save path either way.
 	function wireGallery() {
 		var grid = $('gallery-grid');
-		if (!grid) { return; }
+		if (grid) { wireTiles(grid, function () { return state.state; }); }
+	}
+	function wireAll() {
+		Array.prototype.forEach.call(document.querySelectorAll('.grid--all'), function (g) {
+			wireTiles(g, function () { return g.getAttribute('data-state'); });
+		});
+	}
+	function wireTiles(grid, abbrOf) {
 		grid.addEventListener('click', function (e) {
 			var a = e.target.closest ? e.target.closest('a.tile') : null;
 			if (!a) { return; }
@@ -2130,10 +2139,11 @@
 			// ready-mades start with its postal code. Bespoke saves report the design (a short preset id), so
 			// GA4 can compare ready-made, bespoke and maker saves.
 			var file = (a.getAttribute('href') || '').split('?')[0].split('/').pop().replace(/\.jpg$/, '');
-			var bespoke = file.indexOf(state.state.toLowerCase() + '-') !== 0 && /-sticker(-2)?$/.test(file);
+			var abbr = abbrOf();
+			var bespoke = file.indexOf(abbr.toLowerCase() + '-') !== 0 && /-sticker(-2)?$/.test(file);
 			var done = saved(bespoke
-				? { state: state.state, sticker_source: 'bespoke', design: file.replace(/-sticker(-2)?$/, '').split('-').pop() }
-				: { state: state.state, sticker_source: 'ready_made', design: 'ready_' + (a.dataset.n || '0') });
+				? { state: abbr, sticker_source: 'bespoke', design: file.replace(/-sticker(-2)?$/, '').split('-').pop() }
+				: { state: abbr, sticker_source: 'ready_made', design: 'ready_' + (a.dataset.n || '0') });
 			if (DEVICE !== 'ios') { done('download'); return; }
 			e.preventDefault();
 			var src = a.getAttribute('href'), b = readyBlobs[src], img = a.querySelector('img');
@@ -2407,6 +2417,7 @@
 		spanishArt();
 		finder();
 		wireClassic();
+		wireAll();
 		if (!$('maker')) { return; }  // the About page: header and footer only
 		var headSel = $('headline');
 		$('circle').checked = state.circle;

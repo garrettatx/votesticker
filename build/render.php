@@ -7,6 +7,7 @@
  *   php build/render.php 404        the not-found page
  *   php build/render.php about      the About page (also: es/about)
  *   php build/render.php history    the sticker history page (also: es/history)
+ *   php build/render.php stickers   the All Stickers page (also: es/stickers)
  *   php build/render.php cal/texas  the Texas calendar file (also: es/cal/texas)
  *   php build/render.php es/texas   the Spanish page (also: es, es/404)
  *
@@ -22,7 +23,7 @@ if ( '404' === $arg ) {
 } elseif ( 0 === strpos( $arg, 'cal/' ) ) {
 	define( 'VOTE_CAL', true );  // the state's .ics file (vote_ics() in index.php)
 	define( 'VOTE_SLUG', substr( $arg, 4 ) );
-} elseif ( 'about' === $arg || 'history' === $arg ) {
+} elseif ( 'about' === $arg || 'history' === $arg || 'stickers' === $arg ) {
 	define( 'VOTE_PAGE', $arg );
 } elseif ( '' !== $arg ) {
 	define( 'VOTE_SLUG', $arg );

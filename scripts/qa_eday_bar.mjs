@@ -20,7 +20,7 @@ const PLANTS = {
 	overflow: '.notice p { min-width: 700px; }',
 };
 const KEY = 'vote-sticker:eday-bar-2026';
-const PAGES = ['', 'es/', 'pennsylvania/', 'es/pennsylvania/', 'washington/', 'texas/', 'history/', 'es/history/', 'about/', 'es/about/'];
+const PAGES = ['', 'es/', 'pennsylvania/', 'es/pennsylvania/', 'washington/', 'texas/', 'history/', 'es/history/', 'about/', 'es/about/', 'stickers/', 'es/stickers/'];
 const WIDTHS = [320, 390, 768, 1280];
 let fails = 0;
 const fail = (m) => { console.log('  FAIL ' + m); fails++; };

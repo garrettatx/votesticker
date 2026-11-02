@@ -1337,3 +1337,12 @@ headings (99e1204). Footer consultancy line removed (cb9dc66). Every deploy pass
   images new URLs on every build. URLs change once with this deploy, then only when a file changes.
 - GSC image search Oct 18 to Nov 2: 570 impressions, 3 clicks, average position 52 (web: 22,777 and 2,416). Google
   is crawling the sticker images; image search is not a traffic source yet.
+- **All Stickers page, `/stickers/` and `/es/stickers/` (November 2, Garrett: go ahead).** Every current design
+  (847 English, 306 Spanish) in 51 state rows A to Z, with a jump list. Same tiles and save path as the state
+  galleries (`wireTiles` in app.js; tap saves the full 1080px JPG as `vote-xx-n.jpg`, same GA4 event, iOS share
+  sheet). 360px WebP thumbnails (`build/thumbs.py`, 11 MB for 1,191, committed; the page falls back to the JPG).
+  Rows ordered by `vote_sticker_mix` (messages dealt in turn, then colors, then a swap pass): 0 same-color
+  neighbors in 796 pairs. The sitemap lists each tile's full JPG for `/stickers/`, not the thumbnail. Links in:
+  footer "All stickers" (every page), each state gallery ("See every state’s stickers", to its row), the home
+  state list. QA: `scripts/qa_stickers.mjs` (`--plant overflow|order|nothumb` fire); qa_seo, qa_es and the bar QA
+  include the page; CI runs `thumbs.py --check`. Plan: `docs/sticker-library-and-next-cycle-plan.md`.

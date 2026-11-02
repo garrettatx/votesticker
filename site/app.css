@@ -895,3 +895,24 @@ button.link-quiet:hover { text-decoration: underline; }
 	.hist-find__txt { padding: var(--s5) var(--s6) var(--s5) var(--s5); }
 }
 .tl-i__t { overflow-wrap: anywhere; hyphens: auto; }  /* Nov 1: long Spanish words ("inmobiliarios") overflowed the 1024px three-column overview */
+
+/* All Stickers page (/stickers/, index.php vote_stickers_page). Same tiles as the state galleries, smaller:
+   three a row on a phone, about seven on a laptop. */
+.all { padding: var(--s6) 0 var(--s7); }
+.all__intro { max-width: 62ch; margin: 0 0 var(--s2); }
+.all__total { margin: 0 0 var(--s4); font-weight: 700; color: var(--ink); }
+.all__jump ul { display: flex; flex-wrap: wrap; gap: 6px 8px; margin: 0 0 var(--s6); padding: 0; list-style: none; }
+.all__jump a { display: inline-flex; align-items: center; min-height: 36px; padding: 4px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--panel); color: var(--ink); font-size: var(--fs-sm); font-weight: 600; text-decoration: none; }
+.all__jump a:hover { border-color: var(--ink); }
+.all__state { padding-top: var(--s5); border-top: 1px solid var(--line); margin-top: var(--s5); scroll-margin-top: var(--s4); }
+.all__head { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--s1) var(--s3); margin-bottom: var(--s3); }
+.all__head h2 { margin: 0; font-size: var(--fs-h3); }
+.all__head h2 a { color: var(--ink); text-decoration: none; }
+.all__head h2 a:hover { text-decoration: underline; text-underline-offset: 0.16em; }
+.all__count { color: var(--muted, #555d70); font-size: var(--fs-sm); }
+.grid.grid--all { grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 10px; }
+@media (min-width: 860px) { .grid.grid--all { grid-template-columns: repeat(auto-fill, minmax(132px, 1fr)); gap: 14px; } }
+.all__more { margin: var(--s3) 0 0; font-size: var(--fs-sm); }
+.all__more a { color: var(--ink); font-weight: 700; }
+.states__allpage { margin: 0 0 var(--s3); font-weight: 700; }
+.states__allpage a { color: var(--ink); }

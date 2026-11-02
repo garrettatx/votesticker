@@ -152,6 +152,72 @@ function vote_files( $abbr ) {
 	$files = array_values( array_filter( $files, function ( $f ) use ( $abbr ) { return vote_file_current( $abbr, $f ); } ) );
 	return array_map( function ( $f ) use ( $abbr ) { return vote_v( 'assets/states/' . strtolower( $abbr ) . '/' . $f ); }, $files );
 }
+// The All Stickers page (/stickers/, November 2; docs/sticker-library-and-next-cycle-plan.md). Every current
+// design for every state, the same tiles and save script as the state galleries, thumbnails for weight.
+// The 360px WebP thumbnail beside a sticker (build/thumbs.py), or the JPG itself when none was made.
+function vote_thumb( $src ) {
+	$rel = preg_replace( '#^.*?(assets/states/[^?]+)\.jpg.*$#', '$1', $src );
+	$t = str_replace( 'assets/states/', 'assets/thumbs/', $rel ) . '.webp';
+	return is_file( __DIR__ . '/' . $t ) ? vote_v( $t ) : $src;
+}
+// What a sticker shows, from its alt text ("Navy sticker with a Colorado outline, reading Vote by mail, due
+// Nov 3"): message, color and layout, so the page can keep look-alikes apart.
+function vote_sticker_traits( $src ) {
+	static $alts = null;
+	if ( null === $alts ) { $f = __DIR__ . '/assets/states/alts.json'; $alts = is_file( $f ) ? json_decode( file_get_contents( $f ), true ) : array(); }
+	$alt = $alts[ preg_replace( '#^.*/|\.jpg.*$#', '', $src ) ] ?? '';
+	$msg = preg_match( '/reading ([^,]+)/i', $alt, $m ) ? strtolower( trim( $m[1] ) ) : '';
+	$color = preg_match( '/^(.*?) sticker/i', $alt, $m ) ? strtolower( $m[1] ) : '';
+	$layout = preg_match( '/sticker (.*?), reading/i', $alt, $m ) ? strtolower( $m[1] ) : '';
+	return array( 'msg' => $msg, 'color' => $color, 'layout' => $layout );
+}
+// Order a set so neighbors differ: deal the messages out in turn (I voted, by mail, first-time ...), each
+// message's stickers dealt by color, then swap forward wherever two side by side still share a color or a
+// message and layout.
+function vote_sticker_mix( $files ) {
+	$t = array();
+	foreach ( $files as $f ) { $t[ $f ] = vote_sticker_traits( $f ); }
+	$deal = function ( $groups ) { $out = array(); while ( $groups ) { foreach ( $groups as $k => &$g ) { $out[] = array_shift( $g ); if ( ! $g ) { unset( $groups[ $k ] ); } } unset( $g ); } return $out; };
+	$by_msg = array();
+	foreach ( $files as $f ) { $by_msg[ $t[ $f ]['msg'] ][] = $f; }
+	foreach ( $by_msg as $m => $list ) { $by_color = array(); foreach ( $list as $f ) { $by_color[ $t[ $f ]['color'] ][] = $f; } $by_msg[ $m ] = $deal( $by_color ); }
+	$out = $deal( $by_msg );
+	$clash = function ( $a, $b ) use ( $t ) { return $t[ $a ]['color'] === $t[ $b ]['color'] || ( $t[ $a ]['msg'] === $t[ $b ]['msg'] && $t[ $a ]['layout'] === $t[ $b ]['layout'] ); };
+	for ( $i = 1, $n = count( $out ); $i < $n; $i++ ) {
+		if ( ! $clash( $out[ $i - 1 ], $out[ $i ] ) ) { continue; }
+		for ( $j = $i + 1; $j < $n; $j++ ) {
+			if ( ! $clash( $out[ $i - 1 ], $out[ $j ] ) && ( $j + 1 >= $n || ! $clash( $out[ $i ], $out[ $j + 1 ] ) ) ) { $x = $out[ $i ]; $out[ $i ] = $out[ $j ]; $out[ $j ] = $x; break; }
+		}
+	}
+	return $out;
+}
+function vote_stickers_page() {
+	$rows = vote_states();
+	uasort( $rows, function ( $a, $b ) { return strcmp( vote_lname( $a ), vote_lname( $b ) ); } );
+	$total = 0; $sections = ''; $jump = '';
+	foreach ( $rows as $abbr => $st ) {
+		$files = vote_sticker_mix( vote_files( $abbr ) );
+		if ( ! $files ) { continue; }
+		$total += count( $files );
+		$slug = vote_slug( $st['name'] );
+		$name = vote_lname( $st );
+		$id = 'st-' . $slug;
+		$jump .= '<li><a href="#' . $id . '">' . vote_e( $name ) . '</a></li>';
+		$tiles = '';
+		foreach ( $files as $i => $src ) {
+			$tiles .= '<a class="tile" href="' . vote_e( $src ) . '" download="vote-' . strtolower( $abbr ) . '-' . ( $i + 1 ) . '.jpg" data-n="' . ( $i + 1 ) . '"><img src="' . vote_e( vote_thumb( $src ) ) . '" alt="' . vote_e( vote_alt( $src, $st, $i ) ) . '" width="360" height="360" loading="lazy" decoding="async"></a>';
+		}
+		$sections .= '<section class="all__state" id="' . $id . '" aria-labelledby="' . $id . '-h"><div class="all__head"><h2 id="' . $id . '-h"><a href="' . vote_pbase() . $slug . '/">' . vote_e( t( '%s Stickers', $name ) ) . '</a></h2>'
+			. '<span class="all__count">' . vote_e( t( '%s designs', count( $files ) ) ) . '</span></div>'
+			. '<div class="grid grid--gallery grid--all" data-state="' . $abbr . '">' . $tiles . '</div>'
+			. '<p class="all__more"><a href="' . vote_pbase() . $slug . '/#maker-h">' . vote_e( t( 'Make your own %s sticker', $name ) ) . '</a></p></section>';
+	}
+	$intro = '<p class="all__intro">' . vote_e( t( 'Tap a sticker to save it. Each one is a free, nonpartisan design from Vote Sticker, not an official election-office sticker.' ) ) . ' '
+		. ( vote_es() ? '' : '<a href="' . vote_pbase() . '#ready-to-share">' . vote_e( t( 'Classic red, white and blue stickers' ) ) . '</a> ' . vote_e( t( 'are on the home page.' ) ) ) . '</p>';
+	return '<div class="all">' . $intro . '<p class="all__total">' . vote_e( t( '%1$s designs for %2$s states and DC', $total, 50 ) ) . '</p>'
+		. '<nav class="all__jump" aria-label="' . vote_e( t( 'Jump to a state' ) ) . '"><ul>' . $jump . '</ul></nav>' . $sections . '</div>';
+}
+
 // Whether a ready-made still says something true (October 25). Its alt text records the message: after a
 // state's early voting closes, "Vote early" leaves the gallery; after Election Day only the I voted family
 // and "[State] votes" stay. The files keep their URLs; they just aren't shown.
@@ -678,7 +744,7 @@ function vote_classic_link( $st ) {
 	if ( null === $order ) { $order = array_flip( array_keys( vote_states() ) ); }
 	$a = $anchors[ ( $order[ $st['abbr'] ] ?? 0 ) % count( $anchors ) ];
 	return '<p class="gallery__classic">' . vote_e( t( 'Prefer something traditional?' ) ) . ' <a href="' . vote_pbase() . '#ready-to-share">'
-		. vote_e( ( vote_es() ? 'Mira ' : 'See the ' ) . $a ) . '</a>.</p>';
+		. vote_e( ( vote_es() ? 'Mira ' : 'See the ' ) . $a ) . '</a>. <a href="' . vote_pbase() . 'stickers/#st-' . vote_slug( $st['name'] ) . '">' . vote_e( t( 'See every state’s stickers' ) ) . '</a></p>';
 }
 
 function vote_early_countdown( $st ) {
@@ -1175,7 +1241,8 @@ $vote_abbr = defined( 'VOTE_SLUG' ) ? ( $vote_by_slug[ VOTE_SLUG ] ?? '' ) : '';
 $vote_about = defined( 'VOTE_PAGE' ) && 'about' === VOTE_PAGE;
 // /history/ (site/history.php): the sourced history of the sticker.
 $vote_history = defined( 'VOTE_PAGE' ) && 'history' === VOTE_PAGE;
-$vote_doc = $vote_about || $vote_history; // pages with no maker, finder or state
+$vote_stickers = defined( 'VOTE_PAGE' ) && 'stickers' === VOTE_PAGE;  // /stickers/, every design (November 2)
+$vote_doc = $vote_about || $vote_history || $vote_stickers; // pages with no maker, finder or state
 $vote_path = (string) parse_url( $_SERVER['REQUEST_URI'] ?? VOTE_BASE, PHP_URL_PATH );
 // Unknown addresses get a real 404 with the finder, popular states, and the full state list
 // (Nielsen Norman Group's error-page guidance: say it plainly, keep the site's navigation, offer search
@@ -1210,6 +1277,16 @@ if ( $vote_about ) {
 	);
 }
 if ( $vote_history ) { $vote_page = vote_history_meta(); }
+if ( $vote_stickers ) {
+	$vote_page = array(
+		'title' => t( 'All I Voted Stickers by State: Every Free Design | Vote Sticker' ),
+		'h1' => t( 'All I Voted Stickers' ),
+		'eyebrow' => t( 'Every state, every design' ),
+		'lead' => t( 'Every ready-made Vote Sticker design for all 50 states and DC on one page. Tap one to save it, or open your state to make your own.' ),
+		'desc' => t( 'See every free digital I voted sticker from Vote Sticker in one place, for all 50 states and DC. Tap a design to save it, or make your own with your state’s name.' ),
+		'index' => ! vote_es() || VOTE_ES_INDEX,
+	);
+}
 if ( $vote_404 ) {
 	$vote_page = array(
 		'title' => t( 'Page Not Found | Vote Sticker' ),
@@ -1220,7 +1297,7 @@ if ( $vote_404 ) {
 		'index' => false,
 	);
 }
-$vote_tail = $vote_st ? $vote_page['slug'] . '/' : ( $vote_about ? 'about/' : ( $vote_history ? VOTE_HISTORY_SLUG . '/' : '' ) );
+$vote_tail = $vote_st ? $vote_page['slug'] . '/' : ( $vote_about ? 'about/' : ( $vote_history ? VOTE_HISTORY_SLUG . '/' : ( $vote_stickers ? 'stickers/' : '' ) ) );
 $vote_url = VOTE_SITE . vote_pbase() . $vote_tail;
 // The same page in each language, for hreflang and the language switch.
 $vote_alt = array( 'en' => VOTE_SITE . VOTE_BASE . $vote_tail, 'es' => VOTE_SITE . VOTE_BASE . 'es/' . $vote_tail );
@@ -1246,6 +1323,7 @@ $vote_crumbs = array( array( VOTE_BRAND, VOTE_SITE . vote_pbase() ) );
 if ( $vote_st ) { $vote_crumbs[] = array( $vote_page['crumb'], $vote_url ); }
 if ( $vote_about ) { $vote_crumbs[] = array( t( 'About' ), $vote_url ); }
 if ( $vote_history ) { $vote_crumbs[] = array( t( 'Sticker History' ), $vote_url ); }
+if ( $vote_stickers ) { $vote_crumbs[] = array( t( 'All Stickers' ), $vote_url ); }
 $vote_share = '<p class="share"><button type="button" class="share__btn" id="share-link" data-url="' . vote_e( $vote_url ) . '" data-title="' . vote_e( $vote_page['title'] ) . '"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7L12 19"/></svg><span id="share-label">' . ( $vote_st ? vote_e( t( 'Copy link to this %s page', vote_lname( $vote_st ) ) ) : vote_e( t( 'Copy page link' ) ) ) . '</span></button></p>';
 
 // The state finder: a type-ahead box (app.js fills the suggestions). Without JavaScript the full list of
@@ -1309,7 +1387,8 @@ $vote_ld = array(
 		'founder' => array( '@type' => 'Person', 'name' => 'Garrett Nafzinger' ) ) ) ); ?></script><?php echo "\n"; endif; ?>
 <?php if ( $vote_st && ( $vote_faq_ld = vote_state_faq( $vote_st ) ) ) : ?><script type="application/ld+json"><?php echo vote_json( array( '@context' => 'https://schema.org', '@type' => 'FAQPage', 'inLanguage' => $vote_lang, 'mainEntity' => array_map( function ( $q ) { return array( '@type' => 'Question', 'name' => $q[0], 'acceptedAnswer' => array( '@type' => 'Answer', 'text' => $q[1] ) ); }, $vote_faq_ld ) ) ); ?></script><?php echo "\n"; endif; ?>
 <?php if ( $vote_history ) : ?><script type="application/ld+json"><?php echo vote_json( vote_history_ld( $vote_page, $vote_url ) ); ?></script><?php echo "\n"; endif; ?>
-<?php if ( ! $vote_st && ! $vote_404 && ! $vote_history ) : ?><script type="application/ld+json"><?php echo vote_json( array( '@context' => 'https://schema.org', '@type' => 'WebSite', 'name' => VOTE_BRAND, 'alternateName' => 'VoteSticker.org', 'url' => VOTE_SITE . vote_pbase(), 'inLanguage' => $vote_lang ) ); ?></script><?php echo "\n"; endif; ?>
+<?php if ( $vote_stickers ) : ?><script type="application/ld+json"><?php echo vote_json( array( '@context' => 'https://schema.org', '@type' => 'CollectionPage', 'name' => $vote_page['h1'], 'url' => $vote_url, 'description' => $vote_page['desc'], 'inLanguage' => vote_es() ? 'es' : 'en' ) ); ?></script><?php echo "\n"; endif; ?>
+<?php if ( ! $vote_st && ! $vote_404 && ! $vote_history && ! $vote_stickers ) : ?><script type="application/ld+json"><?php echo vote_json( array( '@context' => 'https://schema.org', '@type' => 'WebSite', 'name' => VOTE_BRAND, 'alternateName' => 'VoteSticker.org', 'url' => VOTE_SITE . vote_pbase(), 'inLanguage' => $vote_lang ) ); ?></script><?php echo "\n"; endif; ?>
 <!-- Google tag (gtag.js) and Ahrefs analytics: only on votesticker.org, and never in an automated browser
      (navigator.webdriver), so local previews and the QA scripts don't count as visits (October 23). -->
 <script>
@@ -1420,7 +1499,7 @@ $vote_ld = array(
 </header>
 
 <main class="wrap">
-<?php if ( $vote_about ) : echo vote_about(); elseif ( $vote_history ) : echo vote_history(); else : ?>
+<?php if ( $vote_about ) : echo vote_about(); elseif ( $vote_history ) : echo vote_history(); elseif ( $vote_stickers ) : echo vote_stickers_page(); else : ?>
 
 	<?php
 	// Landing showcase: one sticker per state, linking to its page. October 26 (Garrett: "highlight our highest
@@ -1657,6 +1736,7 @@ $vote_ld = array(
 
 	<nav class="states" aria-labelledby="states-h">
 		<h2 id="states-h"><?php echo vote_e( t( $vote_st ? 'All States' : 'I Voted Stickers by State' ) ); ?></h2>
+		<?php if ( ! $vote_st ) : ?><p class="states__allpage"><a href="<?php echo vote_pbase(); ?>stickers/"><?php echo vote_e( t( 'See every state’s stickers on one page' ) ); ?></a></p><?php endif; ?>
 		<details class="states__all"<?php echo $vote_st ? '' : ' open'; ?>><summary><?php echo vote_e( t( 'Show all 50 states and DC' ) ); ?></summary>
 		<ul>
 			<?php foreach ( $vote_rows as $abbr => $row ) : ?>
@@ -1778,7 +1858,7 @@ $vote_ld = array(
 <footer class="foot">
 	<div class="wrap">
 		<p><b><?php echo vote_e( t( 'Vote Sticker is independent and nonpartisan.' ) ); ?></b> <?php echo vote_e( t( "It isn't affiliated with any government office, campaign or party." ) ); ?> <?php echo vote_e( t( 'Voting dates and links come from official election sources.' ) ); ?> <?php echo vote_e( t( $vote_st && vote_verified( $vote_st ) && 'mail' === $vote_st['kind'] ? 'Before you vote, check your registration, ballot status, and drop box locations with your county elections office.' : 'Before you vote, confirm your registration, polling place, hours, and ID requirements with your state or local election office.' ) ); ?> <a href="<?php echo vote_e( t( 'https://www.usa.gov/state-election-office' ) ); ?>"><?php echo vote_e( t( 'Find your election office' ) ); ?></a>.</p>
-		<nav class="foot__links" aria-label="<?php echo vote_e( t( 'Site' ) ); ?>"><a href="<?php echo vote_pbase(); ?>#state-find"><?php echo vote_e( t( 'Make a sticker' ) ); ?></a> <a href="<?php echo vote_pbase(); ?>#states-h"><?php echo vote_e( t( 'State stickers' ) ); ?></a> <a href="<?php echo vote_pbase() . VOTE_HISTORY_SLUG; ?>/"<?php echo $vote_history ? ' aria-current="page"' : ''; ?>><?php echo vote_e( t( 'Sticker History' ) ); ?></a> <a href="<?php echo vote_pbase(); ?>about/"<?php echo $vote_about ? ' aria-current="page"' : ''; ?>><?php echo vote_e( t( 'About Vote Sticker' ) ); ?></a> <a href="<?php echo vote_pbase(); ?>about/#fix-h"><?php echo vote_e( t( 'Share a source or correction' ) ); ?></a></nav>
+		<nav class="foot__links" aria-label="<?php echo vote_e( t( 'Site' ) ); ?>"><a href="<?php echo vote_pbase(); ?>#state-find"><?php echo vote_e( t( 'Make a sticker' ) ); ?></a> <a href="<?php echo vote_pbase(); ?>#states-h"><?php echo vote_e( t( 'State stickers' ) ); ?></a> <a href="<?php echo vote_pbase(); ?>stickers/"<?php echo $vote_stickers ? ' aria-current="page"' : ''; ?>><?php echo vote_e( t( 'All stickers' ) ); ?></a> <a href="<?php echo vote_pbase() . VOTE_HISTORY_SLUG; ?>/"<?php echo $vote_history ? ' aria-current="page"' : ''; ?>><?php echo vote_e( t( 'Sticker History' ) ); ?></a> <a href="<?php echo vote_pbase(); ?>about/"<?php echo $vote_about ? ' aria-current="page"' : ''; ?>><?php echo vote_e( t( 'About Vote Sticker' ) ); ?></a> <a href="<?php echo vote_pbase(); ?>about/#fix-h"><?php echo vote_e( t( 'Share a source or correction' ) ); ?></a></nav>
 		<p class="foot__made"><span><?php echo vote_e( t( 'Built in Austin by' ) ); ?></span> <a class="foot__gd" href="https://www.garrettdigital.com/"><img src="<?php echo vote_v( 'assets/gd-logo.svg' ); ?>" alt="Garrett Digital" width="152" height="40"></a></p>
 	</div>
 </footer>

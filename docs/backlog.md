@@ -7,7 +7,7 @@ Open items, newest first. Started October 21, 2026. Move an item to `docs/histor
 Plan: `docs/sticker-library-and-next-cycle-plan.md`. `/stickers/` with every current design (gallery tiles,
 tap saves, ordered so neighbors differ, WebP thumbnails), linked from the footer and galleries, built
 November 4 to 6; 2026 archive labels at the December 1 review; `build/election.json` so the next election
-is a data change. Not approved.
+is a data change. **`/stickers/` built November 2** (Garrett asked to go ahead): see the LOOP log. Archive and `election.json` still open.
 
 ## Sticker Ideas for the Sets (October 27)
 

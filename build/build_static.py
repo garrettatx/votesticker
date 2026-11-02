@@ -80,6 +80,8 @@ def main():
         raise SystemExit('site/history-data.php is missing or a draft: run build/history_text.py once the facts are checked')
     pages['history/'] = render('history')
     pages['es/history/'] = render('es/history')
+    pages['stickers/'] = render('stickers')
+    pages['es/stickers/'] = render('es/stickers')
     for path, html in pages.items():
         d = DIST / path
         d.mkdir(parents=True, exist_ok=True)
@@ -115,7 +117,9 @@ def main():
     # Each page also lists the sticker images it shows (Google's image sitemap), by the exact src on the page.
     def imgs(u):
         html = pages[u[len(SITE_URL):]]
-        srcs = dict.fromkeys(s for s in re.findall(r'<img[^>]+src="(/assets/[^"]+)"', html) if 'logo' not in s)
+        srcs = dict.fromkeys(s for s in re.findall(r'<img[^>]+src="(/assets/[^"]+)"', html) if 'logo' not in s and '/assets/thumbs/' not in s)
+        # /stickers/ shows thumbnails; the image Google should index is the full JPG each tile saves.
+        srcs.update(dict.fromkeys(re.findall(r'<a class="tile" href="(/assets/states/[^"]+)"', html)))
         return ''.join(f'\n    <image:image><image:loc>{SITE_URL}{s[1:].replace("&", "&amp;")}</image:loc></image:image>' for s in srcs)
     xml = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">']
     xml += [f'  <url>\n    <loc>{u}</loc>\n    <lastmod>{m}</lastmod>{alts(u)}{imgs(u)}\n  </url>' for u, m in urls]

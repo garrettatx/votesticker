@@ -85,6 +85,8 @@ jobs:
           python3 -I scripts/qa_seo.py --base http://127.0.0.1:8792/ --no-legacy
           python3 -I scripts/qa_es.py --base http://127.0.0.1:8792/
           python3 -I scripts/qa_facts.py --base http://127.0.0.1:8792/
+          # Every sticker has its /stickers/ thumbnail and no thumbnail is orphaned (build/thumbs.py makes them locally).
+          python3 -I build/thumbs.py --check
 
       - name: Check the phase the pages were built for
         run: |
