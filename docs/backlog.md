@@ -2,6 +2,13 @@
 
 Open items, newest first. Started October 21, 2026. Move an item to `docs/history.md` when it ships.
 
+## All Stickers Page, 2026 Archive, Next-Cycle Setup (November 2)
+
+Plan: `docs/sticker-library-and-next-cycle-plan.md`. `/stickers/` with every current design (gallery tiles,
+tap saves, ordered so neighbors differ, WebP thumbnails), linked from the footer and galleries, built
+November 4 to 6; 2026 archive labels at the December 1 review; `build/election.json` so the next election
+is a data change. Not approved.
+
 ## Sticker Ideas for the Sets (October 27)
 
 Garrett asked for 12 state and 12 general designs, classic and futuristic, to pick about six of each.
