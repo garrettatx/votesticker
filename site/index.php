@@ -972,11 +972,13 @@ function vote_eday_banner( $st ) {
 	return '<section class="eday" aria-labelledby="eday-h"><p class="eday__eyebrow">' . vote_e( $eyebrow ) . '</p><h2 class="eday__h" id="eday-h">' . vote_e( $head ) . '</h2><p class="eday__line">' . vote_e( $line ) . '</p>'
 		. '<p class="eday__links"><a class="btn btn--gold" href="' . vote_e( $go ) . '" target="_blank" rel="noopener">' . vote_e( $go_label ) . ' <span aria-hidden="true">↗</span></a> <a class="eday__more" href="' . vote_e( $second[0] ) . '"' . ( $second[2] ? ' target="_blank" rel="noopener"' : '' ) . '>' . vote_e( $second[1] ) . '</a></p></section>';
 }
-// The home page's version points at the state picker; no national hours.
+// The home page's version points at the state picker; no national hours. "Voted today?" only on Election Day
+// itself; the November 2 build says "Already voted?".
 function vote_eday_banner_hub() {
 	if ( 'eday' !== vote_phase() ) { return ''; }
+	$more = vote_today() >= '2026-11-03' ? t( 'Voted today? Save an I voted today sticker.' ) : t( 'Already voted? Get your sticker.' );
 	return '<section class="eday" aria-labelledby="eday-h"><p class="eday__eyebrow">' . vote_e( t( 'November 3, 2026 · Election Day' ) ) . '</p><h2 class="eday__h" id="eday-h">' . vote_e( t( "Find your state's voting locations, hours and ballot return rules." ) ) . '</h2>'
-		. '<p class="eday__links"><a class="btn btn--gold" href="#state-find">' . vote_e( t( 'Choose your state' ) ) . '</a> <a class="eday__more" href="#ready-to-share">' . vote_e( t( 'Voted today? Save an I voted today sticker.' ) ) . '</a></p></section>';
+		. '<p class="eday__links"><a class="btn btn--gold" href="#state-find">' . vote_e( t( 'Choose your state' ) ) . '</a> <a class="eday__more" href="#ready-to-share">' . vote_e( $more ) . '</a></p></section>';
 }
 
 // The state panel, server-rendered; app.js infoHtml() draws the same markup when the menu changes.
