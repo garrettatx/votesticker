@@ -1,7 +1,8 @@
 // QA for the All Stickers page (/stickers/, /es/stickers/; index.php vote_stickers_page), at phone to desktop
 // widths. Fails on: a missing state section or jump link; a state whose row doesn't hold the same stickers as its
 // own gallery; a tile without a full-size JPG to save, a download name or alt text; a thumbnail that doesn't load;
-// two stickers of the same color side by side; sideways scroll; a tap that doesn't download the JPG; a page with
+// two stickers of the same color side by side; the classic set missing or not saving its PNG; the state box
+// not jumping to the row; sideways scroll; a tap that doesn't download the JPG; a page with
 // no link to /stickers/ (home, a state, history); a sticker without a thumbnail file (build/thumbs.py --check).
 //   node scripts/qa_stickers.mjs [--base http://127.0.0.1:8792/] [--plant overflow|order|nothumb]
 // --plant injects a known defect, to prove the check fires (it must then FAIL).
@@ -26,9 +27,9 @@ for (const lang of ['', 'es/']) {
 	if (!res || res.status() !== 200) { fail(`${lang}stickers/: HTTP ${res && res.status()}`); await p.close(); continue; }
 	await plant(p);
 	const r = await p.evaluate(() => {
-		const out = { sections: [], jump: document.querySelectorAll('.all__jump a').length, bad: [], same: [] };
+		const out = { sections: [], jump: document.querySelectorAll('.all__az a').length, bad: [], same: [], classic: [...document.querySelectorAll('#classic-grid a.pick')].map((a) => [a.getAttribute('href').split('?')[0], a.getAttribute('download'), (a.querySelector('img') || {}).alt || '']) };
 		const color = (alt) => (alt.match(/^(.*?) (sticker|de |con )/i) || [, alt])[1].toLowerCase();
-		document.querySelectorAll('.all__state').forEach((sec) => {
+		document.querySelectorAll('.all__state:not(.all__state--classic)').forEach((sec) => {
 			const tiles = [...sec.querySelectorAll('a.tile')];
 			out.sections.push({ id: sec.id, state: sec.querySelector('.grid--all').dataset.state, files: tiles.map((a) => a.getAttribute('href').split('?')[0]) });
 			tiles.forEach((a, i) => {
@@ -41,14 +42,16 @@ for (const lang of ['', 'es/']) {
 		});
 		return out;
 	});
+	if (r.classic.length < 40) { fail(`${lang}stickers/: ${r.classic.length} classic stickers, want 42`); }
+	r.classic.filter((c) => !/\/assets\/classic\/.+\.png$/.test(c[0]) || !c[1] || !c[2]).slice(0, 3).forEach((c) => fail(`${lang}stickers/ classic ${c[0]}: missing PNG link, download name or alt`));
 	if (r.sections.length !== 51) { fail(`${lang}stickers/: ${r.sections.length} state sections, want 51`); }
 	if (r.jump !== r.sections.length) { fail(`${lang}stickers/: ${r.jump} jump links for ${r.sections.length} sections`); }
 	r.bad.slice(0, 5).forEach((m) => fail(`${lang}stickers/ ${m}`));
 	if (r.same.length) { fail(`${lang}stickers/: ${r.same.length} same-color neighbors, e.g. ${r.same.slice(0, 3).join(', ')}`); }
 	// Thumbnails: every image in the first three rows and in Texas's row must load.
-	await p.evaluate(() => { document.querySelectorAll('#st-alabama img, #st-alaska img, #st-arizona img, #st-texas img').forEach((i) => { i.loading = 'eager'; }); });
+	await p.evaluate(() => { document.querySelectorAll('#st-classic img, #st-alabama img, #st-alaska img, #st-arizona img, #st-texas img').forEach((i) => { i.loading = 'eager'; }); });
 	await p.waitForTimeout(1500);
-	const broken = await p.evaluate(() => [...document.querySelectorAll('#st-alabama img, #st-alaska img, #st-arizona img, #st-texas img')].filter((i) => !i.complete || !i.naturalWidth).map((i) => i.getAttribute('src')));
+	const broken = await p.evaluate(() => [...document.querySelectorAll('#st-classic img, #st-alabama img, #st-alaska img, #st-arizona img, #st-texas img')].filter((i) => !i.complete || !i.naturalWidth).map((i) => i.getAttribute('src')));
 	if (broken.length) { fail(`${lang}stickers/: ${broken.length} thumbnails didn't load, e.g. ${broken[0]}`); }
 	// Same stickers as the state's own gallery, for four states.
 	for (const slug of ['texas', 'california', 'district-of-columbia', 'colorado']) {
@@ -61,8 +64,19 @@ for (const lang of ['', 'es/']) {
 		if (JSON.stringify(row) !== JSON.stringify(gal)) { fail(`${lang}stickers/ #st-${slug}: ${row.length} stickers, its gallery has ${gal.length} (or different files)`); }
 		if (!links.some((h) => h.includes('stickers/#st-' + slug))) { fail(`${lang}${slug}/: no link to its row on the All Stickers page`); }
 	}
-	// A tap downloads the full JPG (desktop path; iOS uses the share sheet, tested in qa_save.mjs).
+	// The state box jumps to the row: type, Enter, land on Texas with the hash set; no navigation away.
+	await p.evaluate(() => scrollTo(0, 0));
+	await p.fill('#state-find', 'Tex');
+	await p.keyboard.press('Enter');
+	await p.waitForTimeout(600);
+	const j = await p.evaluate(() => ({ path: location.pathname, hash: location.hash, top: Math.round(document.getElementById('st-texas').getBoundingClientRect().top) }));
+	if (!/stickers\/$/.test(j.path) || j.hash !== '#st-texas' || j.top < -2 || j.top > 60) { fail(`${lang}stickers/: state box jump landed at ${j.path}${j.hash}, row top ${j.top}px`); }
+	// A tap downloads the full file (desktop path; iOS uses the share sheet, tested in qa_save.mjs).
 	if (!lang) {
+		const c = p.locator('#classic-grid a.pick').first();
+		await c.scrollIntoViewIfNeeded();
+		const [cd] = await Promise.all([p.waitForEvent('download', { timeout: 8000 }).catch(() => null), c.click()]);
+		if (!cd || !/\.png$/.test(cd.suggestedFilename())) { fail(`stickers/: tapping a classic sticker gave ${cd ? cd.suggestedFilename() : 'no download'}`); }
 		const first = p.locator('#st-texas a.tile').first();
 		await first.scrollIntoViewIfNeeded();
 		const [dl] = await Promise.all([p.waitForEvent('download', { timeout: 8000 }).catch(() => null), first.click()]);

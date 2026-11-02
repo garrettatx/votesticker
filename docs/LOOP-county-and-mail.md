@@ -1346,3 +1346,9 @@ headings (99e1204). Footer consultancy line removed (cb9dc66). Every deploy pass
   footer "All stickers" (every page), each state gallery ("See every state’s stickers", to its row), the home
   state list. QA: `scripts/qa_stickers.mjs` (`--plant overflow|order|nothumb` fire); qa_seo, qa_es and the bar QA
   include the page; CI runs `thumbs.py --check`. Plan: `docs/sticker-library-and-next-cycle-plan.md`.
+- `/stickers/` round 2: the 50 pills are now the state box (`vote_finder` with `$jump`: a pick scrolls to the
+  row and sets `#st-<slug>`) with a folded "All states A to Z" list for browsing and no JavaScript; the classic
+  set (42 per language) leads, grouped by message (I Voted, I Voted Today, I Voted Early, I Voted by Mail,
+  First-Time Voter, Future Voter), WebP thumbnails, each saves its PNG through `wireClassic`; the sitemap lists
+  the classic PNGs for `/stickers/` too (889 images). Links in stay at three: footer, each state gallery (to its
+  row), the home state list.

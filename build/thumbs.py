@@ -1,5 +1,6 @@
 """
-Write a 360px WebP thumbnail for every sticker in site/assets/states/<abbr>/ to site/assets/thumbs/<abbr>/
+Write a 360px WebP thumbnail for every sticker in site/assets/states/<abbr>/ to site/assets/thumbs/<abbr>/,
+and for the classic set (site/assets/classic/*.png) to site/assets/thumbs/classic/
 (the All Stickers page, /stickers/, November 2). The page shows the thumbnail and a tap still saves the full
 1080px JPG, so a visitor scrolling every state downloads about 13 MB, not 84.
 
@@ -15,6 +16,8 @@ SITE = Path(__file__).resolve().parent.parent / 'site'
 SRC, OUT = SITE / 'assets' / 'states', SITE / 'assets' / 'thumbs'
 jpgs = sorted(SRC.glob('*/*.jpg'))
 want = {OUT / j.parent.name / (j.stem + '.webp'): j for j in jpgs}
+# The classic red, white and blue set (round PNGs with no background; WebP keeps the transparency).
+want.update({OUT / 'classic' / (c.stem + '.webp'): c for c in sorted((SITE / 'assets' / 'classic').glob('*.png'))})
 if '--check' in sys.argv:
     missing = [str(t.relative_to(SITE)) for t in want if not t.exists()]
     extra = [str(t.relative_to(SITE)) for t in OUT.glob('*/*.webp') if t not in want]

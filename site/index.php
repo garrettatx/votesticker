@@ -156,8 +156,8 @@ function vote_files( $abbr ) {
 // design for every state, the same tiles and save script as the state galleries, thumbnails for weight.
 // The 360px WebP thumbnail beside a sticker (build/thumbs.py), or the JPG itself when none was made.
 function vote_thumb( $src ) {
-	$rel = preg_replace( '#^.*?(assets/states/[^?]+)\.jpg.*$#', '$1', $src );
-	$t = str_replace( 'assets/states/', 'assets/thumbs/', $rel ) . '.webp';
+	$rel = preg_replace( '#^.*?(assets/(states|classic)/[^?]+)\.(jpg|png).*$#', '$1', $src );
+	$t = preg_replace( '#^assets/classic/#', 'assets/thumbs/classic/', str_replace( 'assets/states/', 'assets/thumbs/', $rel ) ) . '.webp';
 	return is_file( __DIR__ . '/' . $t ) ? vote_v( $t ) : $src;
 }
 // What a sticker shows, from its alt text ("Navy sticker with a Colorado outline, reading Vote by mail, due
@@ -212,10 +212,42 @@ function vote_stickers_page() {
 			. '<div class="grid grid--gallery grid--all" data-state="' . $abbr . '">' . $tiles . '</div>'
 			. '<p class="all__more"><a href="' . vote_pbase() . $slug . '/#maker-h">' . vote_e( t( 'Make your own %s sticker', $name ) ) . '</a></p></section>';
 	}
-	$intro = '<p class="all__intro">' . vote_e( t( 'Tap a sticker to save it. Each one is a free, nonpartisan design from Vote Sticker, not an official election-office sticker.' ) ) . ' '
-		. ( vote_es() ? '' : '<a href="' . vote_pbase() . '#ready-to-share">' . vote_e( t( 'Classic red, white and blue stickers' ) ) . '</a> ' . vote_e( t( 'are on the home page.' ) ) ) . '</p>';
-	return '<div class="all">' . $intro . '<p class="all__total">' . vote_e( t( '%1$s designs for %2$s states and DC', $total, 50 ) ) . '</p>'
-		. '<nav class="all__jump" aria-label="' . vote_e( t( 'Jump to a state' ) ) . '"><ul>' . $jump . '</ul></nav>' . $sections . '</div>';
+	$classic = vote_classic();
+	// Grouped by message (Garrett: 42 is a lot to scan), in the order the home page leads with; each group keeps
+	// the curated order. Spanish has its own six messages.
+	$order = vote_es() ? array( 'yovote', 'yovotehoy', 'yovotetemprano', 'yovotecorreo', 'miprimervoto', 'yotambien' ) : array( 'ivoted', 'ivotedtoday', 'voted', 'mailed', 'firsttime', 'futurevoter' );
+	$groups = array_fill_keys( $order, array() );
+	foreach ( $classic as $c ) { $groups[ $c['headline'] ][] = $c; }
+	$ctiles = '';
+	foreach ( array_filter( $groups ) as $g ) {
+		$says = vote_es() ? $g[0]['says'] : str_replace( array( ' By ', 'First-time' ), array( ' by ', 'First-Time' ), ucwords( $g[0]['says'] ) );  // English headings in Title Case
+		$ctiles .= '<h3 class="all__type">' . vote_e( $says ) . '</h3><div class="grid grid--classic grid--all-classic">';
+		foreach ( $g as $c ) {
+		$src = vote_v( "assets/classic/{$c['stem']}.png" );
+		$ctiles .= '<a class="pick pick--classic" href="' . vote_e( $src ) . '" download="' . vote_e( $c['stem'] ) . '.png" data-layout="' . vote_e( $c['layout'] ) . '" data-message="' . vote_e( $c['headline'] ) . '"><img src="' . vote_e( vote_thumb( $src ) ) . '" alt="' . vote_e( $c['alt'] ) . '" width="360" height="360" loading="lazy" decoding="async"><span class="sr-only">' . vote_e( t( '(download PNG)' ) ) . '</span></a>';
+		}
+		$ctiles .= '</div>';
+	}
+	$intro = '<p class="all__intro">' . vote_e( t( 'Tap a sticker to save it. Each one is a free, nonpartisan design from Vote Sticker, not an official election-office sticker.' ) ) . '</p>'
+		. '<p class="all__total">' . vote_e( t( '%1$s designs: %2$s classic and %3$s for the 50 states and DC', $total + count( $classic ), count( $classic ), $total ) ) . '</p>';
+	$az = '<details class="all__az"><summary>' . vote_e( t( 'All states A to Z' ) ) . '</summary><nav aria-label="' . vote_e( t( 'Jump to a state' ) ) . '"><ul>' . $jump . '</ul></nav></details>';
+	$finder = vote_finder( 'Jump to your state', 'Type your state', 'Go', true, $az );
+	$csec = $classic ? '<section class="all__state all__state--classic" id="st-classic" aria-labelledby="st-classic-h"><div class="all__head"><h2 id="st-classic-h">' . vote_e( t( 'Classic I Voted Stickers' ) ) . '</h2>'
+		. '<span class="all__count">' . vote_e( t( '%s designs', count( $classic ) ) ) . '</span></div><p class="all__note">' . vote_e( t( 'Red, white and blue, for any state. Each saves as a round PNG with no background.' ) ) . '</p>'
+		. '<div class="all__classic" id="classic-grid">' . $ctiles . '</div></section>' : '';
+	return '<div class="all">' . $intro . $finder . $csec . $sections . '</div>';
+}
+
+// The classic red, white and blue set in the page language, in its curated order (scripts/render_classic.mjs:
+// look-alikes kept apart in 3 and 6 columns, the six messages first). The home page and /stickers/.
+function vote_classic() {
+	$out = array();
+	if ( ! is_file( __DIR__ . '/assets/classic/classic.json' ) ) { return $out; }
+	foreach ( json_decode( (string) file_get_contents( __DIR__ . '/assets/classic/classic.json' ), true ) as $c ) {
+		if ( $c['lang'] === ( vote_es() ? 'es' : 'en' ) && is_file( __DIR__ . "/assets/classic/{$c['stem']}.png" ) ) { $out[ $c['pos'] ] = $c; }
+	}
+	ksort( $out );
+	return $out;
 }
 
 // Whether a ready-made still says something true (October 25). Its alt text records the message: after a
@@ -1328,12 +1360,14 @@ $vote_share = '<p class="share"><button type="button" class="share__btn" id="sha
 
 // The state finder: a type-ahead box (app.js fills the suggestions). Without JavaScript the full list of
 // state links below the maker does the same job.
-function vote_finder( $label, $placeholder, $button = 'Find' ) {
-	return '<div class="finder"><label for="state-find">' . vote_e( t( $label ) ) . '</label>'
+// $jump (the All Stickers page): a pick scrolls to that state's row instead of opening its page, and $help
+// replaces the line under the box.
+function vote_finder( $label, $placeholder, $button = 'Find', $jump = false, $help = null ) {
+	return '<div class="finder"' . ( $jump ? ' data-jump' : '' ) . '><label for="state-find">' . vote_e( t( $label ) ) . '</label>'
 		. '<div class="finder__box"><input id="state-find" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="state-options" autocomplete="off" autocapitalize="words" spellcheck="false" enterkeyhint="go" placeholder="' . vote_e( t( $placeholder ) ) . '">'
 		. '<button type="button" class="btn btn--gold" id="state-go">' . vote_e( t( $button ) ) . '</button>'
 		. '<ul id="state-options" role="listbox" aria-label="' . vote_e( t( 'Matching states' ) ) . '" hidden></ul></div>'
-		. '<p class="help" id="state-help">' . ( 'Get my sticker' === $button ? '<span class="finder__free">' . vote_e( t( 'Free. No account needed.' ) ) . '</span> ' : '' ) . '<a href="#states-h">' . vote_e( t( 'Browse all states and DC' ) ) . '</a></p></div>';
+		. ( null !== $help ? $help : '<p class="help" id="state-help">' . ( 'Get my sticker' === $button ? '<span class="finder__free">' . vote_e( t( 'Free. No account needed.' ) ) . '</span> ' : '' ) . '<a href="#states-h">' . vote_e( t( 'Browse all states and DC' ) ) . '</a></p>' ) . '</div>';
 }
 
 $vote_ld = array(
@@ -1521,13 +1555,7 @@ $vote_ld = array(
 	// Ready-to-share stickers (October 26, Garrett: classic red, white and blue, "no state needed"; 42 per language since October 27): 18 per
 	// language from scripts/render_classic.mjs, round PNGs with no background, each a direct download. The
 	// order keeps look-alikes apart in 3 and 6 columns; the first six are the six messages. Home page only.
-	$vote_classic = array();
-	if ( ! $vote_st && ! $vote_404 && is_file( __DIR__ . '/assets/classic/classic.json' ) ) {
-		foreach ( json_decode( (string) file_get_contents( __DIR__ . '/assets/classic/classic.json' ), true ) as $c ) {
-			if ( $c['lang'] === ( vote_es() ? 'es' : 'en' ) && is_file( __DIR__ . "/assets/classic/{$c['stem']}.png" ) ) { $vote_classic[ $c['pos'] ] = $c; }
-		}
-		ksort( $vote_classic );
-	}
+	$vote_classic = ! $vote_st && ! $vote_404 ? vote_classic() : array();
 	if ( $vote_classic ) : ?>
 	<section class="showcase showcase--classic" id="ready-to-share" aria-labelledby="classic-h">
 		<h2 id="classic-h" class="display-h"><?php echo vote_e( t( 'Classic I Voted Stickers' ) ); ?></h2>

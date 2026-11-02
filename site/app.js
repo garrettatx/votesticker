@@ -2586,7 +2586,20 @@
 		var input = $('state-find'), list = $('state-options'), go = $('state-go');
 		if (!input) { return; }
 		var meta = window.VOTE_META || {}, matches = [], active = -1;
-		var visit = function (abbr) { if (meta[abbr]) { window.location.href = (window.VOTE_BASE || '/') + meta[abbr].slug + '/'; } };
+		// On /stickers/ (.finder[data-jump]) a pick scrolls to that state's row; everywhere else it opens the state.
+		var jump = input.closest('.finder') && input.closest('.finder').hasAttribute('data-jump');
+		var visit = function (abbr) {
+			if (!meta[abbr]) { return; }
+			if (!jump) { window.location.href = (window.VOTE_BASE || '/') + meta[abbr].slug + '/'; return; }
+			var row = document.getElementById('st-' + meta[abbr].slug);
+			if (!row) { return; }
+			close();
+			input.value = '';
+			row.scrollIntoView();
+			if (history.replaceState) { history.replaceState(null, '', '#st-' + meta[abbr].slug); }
+			var h = row.querySelector('h2 a');
+			if (h) { h.focus({ preventScroll: true }); }
+		};
 		// Accent-free matching, on the page-language name and the English name ("nueva", "new", "nuev").
 		var fold = function (x) { return x.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z ]/g, ''); };
 		var find = function (q) {

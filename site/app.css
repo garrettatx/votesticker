@@ -901,9 +901,18 @@ button.link-quiet:hover { text-decoration: underline; }
 .all { padding: var(--s6) 0 var(--s7); }
 .all__intro { max-width: 62ch; margin: 0 0 var(--s2); }
 .all__total { margin: 0 0 var(--s4); font-weight: 700; color: var(--ink); }
-.all__jump ul { display: flex; flex-wrap: wrap; gap: 6px 8px; margin: 0 0 var(--s6); padding: 0; list-style: none; }
-.all__jump a { display: inline-flex; align-items: center; min-height: 36px; padding: 4px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--panel); color: var(--ink); font-size: var(--fs-sm); font-weight: 600; text-decoration: none; }
-.all__jump a:hover { border-color: var(--ink); }
+/* The state box jumps to a row (app.js finder, data-jump); the A to Z list under it is folded away, for
+   browsing and for no JavaScript. */
+.all .finder { margin: 0 0 var(--s5); }
+.all__az { margin-top: var(--s2); font-size: var(--fs-sm); }
+.all__az summary { cursor: pointer; font-weight: 700; color: var(--ink); min-height: 32px; display: inline-flex; align-items: center; }
+.all__az ul { columns: 2 9rem; column-gap: var(--s4); margin: var(--s2) 0 0; padding: 0; list-style: none; }
+@media (min-width: 760px) { .all__az ul { columns: 4 10rem; } }
+.all__az li { break-inside: avoid; }
+.all__az a { display: inline-block; padding: 4px 0; color: var(--ink); }
+.all__note { margin: 0 0 var(--s3); font-size: var(--fs-sm); }
+.grid.grid--all-classic { grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 10px; }
+@media (min-width: 860px) { .grid.grid--all-classic { grid-template-columns: repeat(auto-fill, minmax(132px, 1fr)); gap: 14px; } }
 .all__state { padding-top: var(--s5); border-top: 1px solid var(--line); margin-top: var(--s5); scroll-margin-top: var(--s4); }
 .all__head { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--s1) var(--s3); margin-bottom: var(--s3); }
 .all__head h2 { margin: 0; font-size: var(--fs-h3); }
@@ -916,3 +925,5 @@ button.link-quiet:hover { text-decoration: underline; }
 .all__more a { color: var(--ink); font-weight: 700; }
 .states__allpage { margin: 0 0 var(--s3); font-weight: 700; }
 .states__allpage a { color: var(--ink); }
+.all__type { margin: var(--s4) 0 var(--s2); font-size: var(--fs-base); color: var(--ink); }
+.all__classic .all__type:first-child { margin-top: 0; }
