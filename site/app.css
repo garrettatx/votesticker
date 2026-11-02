@@ -298,25 +298,28 @@ select:hover, input:hover, textarea:hover { border-color: #A79D86; }
 .maker { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s5); }  /* minmax(0): the sideways layout row must not widen the page */
 .maker__finish .colors { margin-top: 0; }
 @media (max-width: 859px) {
-	.maker__preview .frame { max-width: 300px; margin: 0 auto; }
+	.maker__preview .frame { max-width: 240px; margin: 0 auto; }  /* November 2: was 300; the 15 layouts and Download sit closer */
 	.maker__preview .tiny { justify-content: center; }
 	.maker__designs .designs-help { margin-bottom: var(--s2); }
 	/* About three and a half layouts in view, so the row reads as one you can scroll. */
-	#grid { display: flex; overflow-x: auto; gap: 10px; padding: 2px 2px var(--s2); scroll-snap-type: x proximity; -webkit-overflow-scrolling: touch; }
-	#grid .tile { flex: 0 0 30%; scroll-snap-align: start; }
+	/* November 2 (15 layouts with the classics): every layout in view, four a row on a phone, instead of a
+	   sideways row that showed three and hid twelve. */
+	#grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+	#grid .tile__name { font-size: 0.78rem; line-height: 1.2; padding-top: 4px; }
 }
-@media (min-width: 600px) and (max-width: 859px) { #grid .tile { flex-basis: 20%; } .maker__preview .frame { max-width: 340px; } }  /* tablets: five in view, not three oversized */
+@media (min-width: 600px) and (max-width: 859px) { #grid { grid-template-columns: repeat(5, minmax(0, 1fr)); } .maker__preview .frame { max-width: 340px; } }  /* tablets: five a row */
 @media (min-width: 860px) {
 	/* November 2: the preview column holds only the preview, sticky, and the controls stack on the right in page
 	   order (message, layouts, colors and More options), so the sticker stays in view while you change it. */
-	.maker { grid-template-columns: minmax(320px, 420px) 1fr; grid-template-rows: auto auto 1fr; grid-template-areas: "preview message" "preview designs" "preview finish"; align-items: start; column-gap: var(--s6); }
+	.maker { grid-template-columns: minmax(280px, 360px) 1fr; grid-template-rows: auto auto 1fr; grid-template-areas: "preview message" "preview designs" "preview finish"; align-items: start; column-gap: var(--s6); }
 	.maker__preview { position: sticky; top: var(--s4); }
 	.maker__preview { grid-area: preview; }
 	.maker__message { grid-area: message; }
 	.maker__finish { grid-area: finish; }
 	.maker__designs { grid-area: designs; }
 	/* Three layouts a row from 860 px, so the grid isn't twice as tall as the preview column (514 px of blank under the caption at 1024 before Oct 27). */
-	#grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+	#grid { grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); max-width: 660px; }  /* 15 layouts in three rows of five or six, about 100 px each (was 140 px: five rows of three) */
+	#grid .tile__name { font-size: 0.86rem; }
 }
 .maker-label { margin: 0 0 var(--s2); font-weight: 700; font-size: var(--fs-sm); color: var(--ink); }
 .more { margin-top: var(--s4); border-top: 1px solid var(--line); padding-top: var(--s3); }
@@ -347,6 +350,9 @@ select:hover, input:hover, textarea:hover { border-color: #A79D86; }
 .is-story .frame img { border-radius: 0 !important; max-height: 70vh; max-width: 100%; width: auto; margin: 0 auto; }  /* max-width: Story ran 14 px past a 390 px screen before October 26 */
 .tiny { display: flex; align-items: center; gap: var(--s3); margin: var(--s3) 0 0; color: var(--muted); font-size: var(--fs-sm); }
 .tiny img { border-radius: 50%; flex: none; box-shadow: 0 0 0 1px var(--line); }
+/* November 2: the profile-picture check a size up: 56 px on a phone, 80 on desktop (it was 48 everywhere). */
+.tiny img { width: 56px; height: 56px; }
+@media (min-width: 860px) { .tiny img { width: 80px; height: 80px; } }
 .tiny img[src="data:,"] { visibility: hidden; }
 .is-story .tiny { display: none; }
 .is-story #circle-check, .is-story #round-check { display: none; }
@@ -391,6 +397,7 @@ select:hover, input:hover, textarea:hover { border-color: #A79D86; }
 /* Color swatches under the preview: one dot per palette, cut into background, ink and accent. */
 .colors { margin: var(--s4) 0 var(--s4); }
 .swatches { display: flex; flex-wrap: wrap; gap: 6px; }
+.swatches[hidden] { display: none; }  /* the classic layouts: no color choice (app.js drawSwatches) */
 .swatch { width: 44px; height: 44px; min-height: 0; padding: 0; border: 3px solid transparent; border-radius: 50%; background: none; cursor: pointer; }
 .swatch span { display: block; width: 100%; height: 100%; border-radius: 50%; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.18); }
 .swatch:hover { border-color: #B9B3A6; }

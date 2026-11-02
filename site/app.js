@@ -117,6 +117,14 @@
 		// Check came back: the only design built on a symbol, and it reads as a check at 40 px.
 		{ id: 'check', name: 'Check', palette: 'teal' }
 	];
+	// November 2 (Garrett's favorites from the classic set; docs/spec-classic-layouts-in-builder.md): three
+	// classics lead the row, always red, white and blue (`classic`: the swatches give way to a note), each with
+	// the state as a small mark and the dates line. The message picker above them still applies.
+	DESIGNS.unshift(
+		{ id: 'wave', name: 'Wave', palette: 'classicnavy', classic: true },
+		{ id: 'cring', name: 'Star ring', palette: 'classicnavy', classic: true },
+		{ id: 'cflag', name: 'Flag', palette: 'classicnavy', classic: true }
+	);
 	// October 22: layouts under review, rendered by scripts/sheet_new.mjs and not in the tile row. The
 	// first four mimic a printed sticker (a kiss-cut edge, a scalloped seal, script lettering, a vertical
 	// name); Garrett passed on them because these are stickers people save, not print. The twelve after
@@ -135,7 +143,6 @@
 		// Retired from the row October 26: kept so saved links and the bespoke renderer still draw them.
 		{ id: 'shadow', name: 'Shadow', palette: 'cream' }, { id: 'below', name: 'Map below', palette: 'forest' },
 		{ id: 'split', name: 'Split', palette: 'cobalt' },
-		{ id: 'cflag', name: 'Classic stars and stripes', palette: 'navy' }, { id: 'cring', name: 'Classic star ring', palette: 'navy' },
 		{ id: 'cband', name: 'Classic banded', palette: 'navy' }
 	];
 	// October 27 ideation: twelve state designs and twelve general ones (no state shape) for Garrett to pick
@@ -638,7 +645,18 @@
 		padMin: 70, padMax: 110, // ...within these limits
 		accWeight: 0.75,     // how much of an accent's height counts when centering and padding (it is small)
 		ringStar: 0.12,      // Star ring: red star radius (x primary cap); big enough to read at 96 px
+		ringStarBig: 0.15,   // ...in the builder, with the state in the middle (Garrett, November 2)
 		ringStarWeight: 0.3, // Star ring: how much the light star row counts when centering the composition
+		// The builder's dates line on the two classics that had none (November 2):
+		flagDateGap: 120,    // Stars and stripes: label top below the white band's edge (60 sat too high: Garrett)
+		flagDateW: 1100,     // ...widest the label text may run (the circle is about 1,680 wide there; long names need it)
+		flagDateAsc: 140,    // ...its cap height before width fitting (62, 96 and 120 read too small: Garrett)
+		ringDateGap: 0.3,    // Star ring: gap under the message (x primary cap)
+		ringDateAsc: 0.46,   // ...cap height (x primary cap; 0.34 read too small: Garrett)
+		markH: 96,           // Wave: the state in place of the middle star (64 read small: Garrett)
+		waveStar: 34,        // Wave: the builder's stars (the classic set's are 26)
+		waveDateAsc: 0.72,   // Wave: the builder's tagline as large as the waves' width allows (x headline cap; the classic set's is 0.38)
+		flagMarkH: 150,      // Stars and stripes: the state at the middle of the star field
 		bold: 0              // optional same-color outline (share of cap height per side); off: Garrett, Oct 27
 	};
 	// The white band, set per message (October 27, Garrett: short messages "custom", not held to the rules
@@ -1143,14 +1161,27 @@
 		// a fixed circle, radius CR, with invisible markers at the safe radius so fit() maps that circle onto
 		// the profile-picture circle exactly. The white band is centered on the sticker; star rows sit in the
 		// middle of the visible navy cap, a second word in the middle of the visible red base.
-		cflag: function (st, p, lines) {
+		cflag: function (st, p, lines, dateText, o) {
 			var C = CLASSIC, items = bandText(lines, C.red, C.navy), FB = items.band;
 			var deco = [{ t: 'box', box: [-4000, -4000, 4000, 4000], color: C.white, nofit: true }, { t: 'box', box: [-4000, -4000, 4000, -FB], color: C.navy, nofit: true }];
 			// The first red stripe starts at the band's edge, so the white band reads as exactly the band.
 			for (var k = 0; k < 8; k++) { var y = FB + k * 150; deco.push({ t: 'box', box: [-4000, y, 4000, y + 75], color: C.red, nofit: true }); }
-			return { items: deco.concat(classicStars(-(FB + CR) / 2, CR, C.white), items, classicFrame()), safe: SAFE };
+			// The builder's dates line (November 2): white on a navy label across the stripes, inside the circle
+			// (a white label vanished into the white stripes on the first contact sheet).
+			// The classic set passes none, so its PNGs are unchanged.
+			var date = dateText ? dateItems(dateText, 0, FB + CT.flagDateGap, CT.flagDateW, CT.flagDateAsc, C.white, C.navy).items : [];
+			// In the builder the state sits at the middle of the star field, in white, the stars cleared around
+			// it (November 2); the classic set (o.plain) keeps the plain field.
+			var scy = -(FB + CR) / 2, stars = classicStars(scy, CR, C.white), mark = [];
+			if (!(o && o.plain)) {
+				var mh = CT.flagMarkH;
+				stars = stars.filter(function (q) { return Math.abs(q.cx) > mh * 0.95 || Math.abs(q.cy - scy) > mh * 0.75; });
+				mark = iconItem(st, 0, scy - mh / 2, mh, mh * 1.3, C.white).items;
+				mark.forEach(function (it) { it.nofit = true; });
+			}
+			return { items: deco.concat(stars, mark, items, date, classicFrame()), safe: SAFE };
 		},
-		cring: function (st, p, lines) {
+		cring: function (st, p, lines, dateText, o) {
 			// Stars, message and ring as one composition: the red star row sits a set gap above the message
 			// (above any accent), the group is centered on its bounds, and the white disc clears the farthest
 			// corner by CT.ringClear.
@@ -1158,13 +1189,25 @@
 			var head = placeText(big, 0, 0, C.navy);
 			head.items[0].color = C.red;
 			embolden(head.items);
-			var row = [], k, sr = l0.asc * CT.ringStar, cy = -(l0.acc + l0.asc * CT.ringStarGap + sr);
-			for (k = -2; k <= 2; k++) { row.push({ t: 'star', cx: k * sr * 3, cy: cy, r: sr, color: C.red }); }
+			var row = [], k, sr = l0.asc * (o && o.plain ? CT.ringStar : CT.ringStarBig), cy = -(l0.acc + l0.asc * CT.ringStarGap + sr);
+			for (k = -2; k <= 2; k++) { if (k || (o && o.plain)) { row.push({ t: 'star', cx: k * sr * 3, cy: cy, r: sr, color: C.red }); } }
+			// In the builder the middle star is the state (November 2); the classic set keeps five.
+			if (!(o && o.plain)) { var mh = sr * 3.1; row = row.concat(iconItem(st, 0, cy - mh / 2, mh, mh * 1.3, C.red).items); }
 			// Optical centering (Garrett, October 27: more white above than below): the five small stars weigh
 			// far less than the words, so centering the full bounds dropped the words 28 to 46 px below the
 			// disc's middle at export size. The star row now counts for CT.ringStarWeight of its height.
+			// The builder's dates line (November 2) sits under the message inside the white disc and counts toward
+			// the disc's size; the classic set passes none.
+			if (dateText) { head.items = head.items.concat(dateItems(dateText, 0, head.bottom + l0.asc * CT.ringDateGap, 600, l0.asc * CT.ringDateAsc, C.navy).items); }
 			var group = row.concat(head.items), b = bounds(group), wb = bounds(head.items), starBlock = wb[1] - b[1];
-			shift(group, 0, -(b[1] + b[3]) / 2 - starBlock * (1 - CT.ringStarWeight) / 2);
+			if (dateText && !(o && o.plain)) {
+				// In the builder the message itself sits on the disc's center (Garrett: the most important text
+				// centered), the stars above and the dates line below it; the classic set keeps its weighting.
+				var mb = bounds(head.items.filter(function (it) { return it.t === 'text' && it.font.indexOf(DISPLAY) >= 0; }));
+				shift(group, 0, -(mb[1] + mb[3]) / 2);
+			} else {
+				shift(group, 0, -(b[1] + b[3]) / 2 - starBlock * (1 - CT.ringStarWeight) / 2);
+			}
 			var pts = []; group.forEach(function (it) { pts = pts.concat(itemPoints(it)); });
 			// The disc is sized from the center, so it still clears every corner, stars included.
 			var far = Math.max.apply(null, pts.map(function (q) { return Math.hypot(q[0], q[1]); }));
@@ -1456,9 +1499,12 @@
 			return { items: [body, bOut, paper, chk, lid, slot].concat(placed.items, date.items), safe: SAFE };
 		},
 		// Wave: five stars over the stack, three rippling bands under it (the flag's motion, no flag).
-		wave: function (st, p, lines, dateText) {
+		wave: function (st, p, lines, dateText, o) {
 			var sc = contrast(p.accent, p.bg) >= 1.6 ? p.accent : p.ink, stars = [], k;
-			for (k = -2; k <= 2; k++) { stars.push({ t: 'star', cx: k * 100, cy: -76, r: 26, color: sc }); }
+			// In the builder (November 2) the middle star is the state, small; the classic set (o.plain) keeps five stars.
+			var big = !(o && o.plain), sr = big ? CT.waveStar : 26, sy = big ? -96 : -76;  // the builder's a size up (Garrett, Nov 2)
+			for (k = -2; k <= 2; k++) { if (k || !big) { stars.push({ t: 'star', cx: k * sr * 3.85, cy: sy, r: sr, color: sc }); } }
+			if (big) { stars = stars.concat(iconItem(st, 0, sy - CT.markH / 2, CT.markH, CT.markH * 1.3, sc).items); }
 			var head = textBlock(lines, DISPLAY, 760, 270, { justify: true, leading: 0.1, track: -0.01 });
 			var placed = placeText(head, 0, 0, p.ink);
 			var mid = p.split && contrast(p.split, p.bg) >= 1.6 ? p.split : shade(p.bg, 0.22);
@@ -1470,7 +1516,8 @@
 				waves.push({ t: 'poly', color: c, pts: poly });
 			});
 			var wb = bounds(waves);
-			var date = dateItems(dateText, 0, wb[3] + 50, 560, head.asc * 0.38, dateColor(p));
+			// The builder's tagline (NC 2026) a size up from the classic set's ELECTION 2026 (Garrett, November 2).
+			var plain = o && o.plain, date = dateItems(dateText, 0, wb[3] + (plain ? 50 : 56), plain ? 560 : 800, head.asc * (plain ? 0.38 : CT.waveDateAsc), dateColor(p));
 			return { items: waves.concat(stars, placed.items, date.items), safe: SAFE };
 		},
 		// Fireworks: four bursts around the stack, the biggest in the accent.
@@ -1812,7 +1859,7 @@
 	// middle (or a 4:5 portrait, opts.tall 1350). No site address on any image (Garrett, October 19).
 	function render(canvas, px, opts) {
 		var st = byAbbr[opts.state], p = paletteFor(opts.palette, st);
-		var layout = LAYOUTS[opts.design](st, p, headlineLines(opts.headline, st), opts.dateText);
+		var layout = LAYOUTS[opts.design](st, p, headlineLines(opts.headline, st), opts.dateText, opts);
 		// An optional tilt of the whole card (radians), on top of whatever the design does (October 26:
 		// the content turns about the canvas center after fitting, so it stays inside the safe circle and
 		// a design's own rotations survive). Designs with full-bleed decoration (Half) don't tilt: their
@@ -2184,7 +2231,8 @@
 	var previewSeq = 0;
 
 	function opts() {
-		return { state: state.state, design: state.design, palette: state.palette, headline: state.headline, dateText: state.dateText.toUpperCase(), tilt: TILTS[state.tilt] || 0, rays: state.rays };
+		// The classics are always their own red, white and blue, whatever palette a past visit remembered.
+		return { state: state.state, design: state.design, palette: (designOf(state.design) || {}).classic ? designOf(state.design).palette : state.palette, headline: state.headline, dateText: state.dateText.toUpperCase(), tilt: TILTS[state.tilt] || 0, rays: state.rays };
 	}
 
 	// The state panel and suggested post text are rendered by index.php in the page's language (October 19);
@@ -2215,7 +2263,7 @@
 		Array.prototype.forEach.call(document.querySelectorAll('#grid .tile'), function (b) {
 			var o = opts();
 			o.design = b.dataset.design;
-			o.palette = o.design === state.design ? state.palette : designOf(o.design).palette;
+			o.palette = o.design === state.design && !designOf(o.design).classic ? state.palette : designOf(o.design).palette;
 			render(b.querySelector('canvas'), px, o);
 		});
 	}
@@ -2238,18 +2286,24 @@
 		var box = $('tilt-check');
 		if (!box || !state.state) { return; }
 		var st = byAbbr[state.state];
-		box.hidden = hasDecor(LAYOUTS[state.design](st, paletteFor(state.palette, st), headlineLines(state.headline, st), ''));
+		var decor = hasDecor(LAYOUTS[state.design](st, paletteFor(state.palette, st), headlineLines(state.headline, st), ''));
+		box.hidden = decor;
+		// A classic with full-bleed bands (Flag) covers the sunburst completely, so it isn't offered there.
+		$('rays-check').hidden = decor && !!(designOf(state.design) || {}).classic;
 		$('tilt').checked = state.tilt !== 'straight';
 	}
 	function drawSwatches() {
 		var st = byAbbr[state.state];
+		// The classic layouts keep their red, white and blue: no swatches, one line saying so.
+		var classic = !!(designOf(state.design) || {}).classic;
+		$('swatches').hidden = classic;
 		Array.prototype.forEach.call(document.querySelectorAll('#swatches .swatch'), function (b) {
 			var p = paletteFor(b.dataset.palette, st);
 			b.firstChild.style.background = 'linear-gradient(135deg, ' + p.bg + ' 0 56%, ' + p.ink + ' 56% 80%, ' + p.accent + ' 80%)';
 			b.setAttribute('aria-pressed', String(b.dataset.palette === state.palette));
 		});
 		var pal = paletteFor(state.palette, st);
-		$('swatch-name').textContent = pal.id === 'state' ? T('%s colors', nameOf(st)) : T(pal.name);  // "Colores de Texas" in Spanish
+		$('swatch-name').textContent = classic ? T('Red, white and blue. Classic designs use a fixed color palette.') : pal.id === 'state' ? T('%s colors', nameOf(st)) : T(pal.name);  // "Colores de Texas" in Spanish
 		setTilts();
 	}
 
@@ -2531,6 +2585,7 @@
 		function altText() {
 			var st = byAbbr[state.state], o = opts();
 			var words = [headlineLines(state.headline, st).join(' ')].concat(o.dateText ? [o.dateText] : []).join(', ');
+			if ((designOf(state.design) || {}).classic) { return T('Red, white and blue sticker for %s reading %s.', nameOf(st), words); }
 			if (state.palette === 'state') { return T('Sticker in %s state colors reading %s.', nameOf(st), words); }
 			return T('Sticker in %s for %s reading %s.', T(paletteFor(state.palette, st).name).toLowerCase(), nameOf(st), words);
 		}
@@ -2676,7 +2731,7 @@
 	}
 
 	// For the QA script: draw any card and report how far its content reaches from the center.
-	window.VOTE_CARDS = { CT: CT, stateHeadline: stateHeadline, paletteFor: paletteFor, render: render, fit: fit, LAYOUTS: LAYOUTS, PALETTES: PALETTES, EXTRA_PALETTES: EXTRA_PALETTES, DESIGNS: DESIGNS, REVIEW: REVIEW, IDEAS: IDEAS, HEADLINES: HEADLINES, headlinesFor: headlinesFor, defaultHeadline: defaultHeadline, defaultDateLine: defaultDateLine, SAFE: SAFE,
+	window.VOTE_CARDS = { CT: CT, headlineLines: headlineLines, stateHeadline: stateHeadline, paletteFor: paletteFor, render: render, fit: fit, LAYOUTS: LAYOUTS, PALETTES: PALETTES, EXTRA_PALETTES: EXTRA_PALETTES, DESIGNS: DESIGNS, REVIEW: REVIEW, IDEAS: IDEAS, HEADLINES: HEADLINES, headlinesFor: headlinesFor, defaultHeadline: defaultHeadline, defaultDateLine: defaultDateLine, SAFE: SAFE,
 		setBrush: function (family, url) { return new FontFace(family, 'url(' + url + ')').load().then(function (l) { document.fonts.add(l); BRUSH = '"' + family + '"'; }); },
 		readyCount: function () { return Object.keys(readyBlobs).filter(function (k) { return readyBlobs[k] !== 'loading'; }).length; },
 		setScript: function (family, url) { return new FontFace(family, 'url(' + url + ')').load().then(function (l) { document.fonts.add(l); SCRIPT = '"' + family + '"'; }); } };

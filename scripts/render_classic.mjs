@@ -105,7 +105,7 @@ await p.goto(BASE + 'texas/', { waitUntil: 'networkidle' });
 await p.waitForFunction(() => window.VOTE_CARDS && ['Vote Display', 'Vote Date'].every((f) => [...document.fonts].some((x) => x.family.replace(/"/g, '') === f && x.status === 'loaded')));
 const out = await p.evaluate(({ plan, SIZE }) => plan.map((x) => {
   const V = window.VOTE_CARDS, c = document.createElement('canvas');
-  V.render(c, SIZE, { state: 'DC', design: x.layout, palette: x.palette || 'navy', headline: x.headline, dateText: x.dateText || '', tilt: 0 });
+  V.render(c, SIZE, { state: 'DC', design: x.layout, palette: x.palette || 'navy', headline: x.headline, dateText: x.dateText || '', tilt: 0, plain: true });  // plain: no state mark (the builder adds one)
   // Round with transparent corners: the sticker is the circle.
   const g = c.getContext('2d');
   // An opaque fill: the renderer can leave fillStyle transparent (the classic layouts' invisible frame marks).

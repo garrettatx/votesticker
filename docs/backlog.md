@@ -6,7 +6,7 @@ Open items, newest first. Started October 21, 2026. Move an item to `docs/histor
 
 Spec: `docs/spec-classic-layouts-in-builder.md`. Garrett's favorites: Wave (by mail, early), Star ring
 (first-time voter), Stars and stripes, Dusk. Proposed three: Wave, Star ring, Stars and stripes, locked to red,
-white and blue with a state or date line added. About two to three hours; after Election Day. Not approved.
+white and blue with a state or date line added. **Built November 2** at Garrett's request (LOOP log).
 
 ## All Stickers Page, 2026 Archive, Next-Cycle Setup (November 2)
 

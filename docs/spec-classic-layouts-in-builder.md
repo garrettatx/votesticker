@@ -1,6 +1,6 @@
 # Spec: Classic Layouts in the Sticker Builder
 
-Status: spec, not approved. Written November 2, 2026 from Garrett's five favorites in the classic set: I voted
+Status: **built November 2** (Garrett: go ahead, in a loop; see the LOOP log). Originally a spec. Written November 2, 2026 from Garrett's five favorites in the classic set: I voted
 by mail and I voted early in the **Wave** layout, First-time voter in the **Star ring**, I voted in **Stars and
 stripes**, and I voted in **Dusk**. Aim: three classic options in the builder's layout row.
 

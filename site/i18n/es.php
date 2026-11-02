@@ -433,7 +433,7 @@ return array(
 		'Tuesday, November 3, 2026' => 'martes 3 de noviembre de 2026',
 		'Sticker' => 'Sticker', 'Poster' => 'Póster', 'Stamp' => 'Sello', 'Big type' => 'Letra grande', 'Tilt' => 'Inclinado',
 		'Brush' => 'Pincel', 'Side by side' => 'Lado a lado', 'Arch' => 'Arco', 'Plate' => 'Placa', 'Split' => 'Dividido', 'Map below' => 'Mapa abajo',
-		'Shadow' => 'Sombra', 'Ring' => 'Anillo', 'Half' => 'Mitad', 'Varsity' => 'Deportivo', 'Masthead' => 'Periódico', 'Check' => 'Palomita',
+		'Shadow' => 'Sombra', 'Ring' => 'Anillo', 'Half' => 'Mitad', 'Varsity' => 'Deportivo', 'Masthead' => 'Periódico', 'Check' => 'Palomita', 'Wave' => 'Ondas', 'Star ring' => 'Estrellas', 'Flag' => 'Bandera', 'Red, white and blue. Classic designs use a fixed color palette.' => 'Rojo, blanco y azul. Los diseños clásicos usan colores fijos.',
 		'Colors' => 'Colores',
 		// About page (October 21).
 		'About' => 'Acerca de', 'About Vote Sticker' => 'Acerca de Vote Sticker',
@@ -547,6 +547,7 @@ return array(
 		'How it appears as a profile picture' => 'Así se ve como foto de perfil',
 		'Copy image description' => 'Copiar descripción de la imagen',
 		'Sticker in %s for %s reading %s.' => 'Sticker en %s para %s que dice: %s.',
+		'Red, white and blue sticker for %s reading %s.' => 'Sticker rojo, blanco y azul para %s que dice: %s.',
 		'Sticker in %s state colors reading %s.' => 'Sticker con los colores de %s que dice: %s.',
 		'%s colors' => 'Colores de %s',
 		"Send this page to someone who hasn't voted yet." => 'Mándale esta página a alguien que todavía no ha votado.',

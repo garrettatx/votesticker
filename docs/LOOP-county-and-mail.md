@@ -1352,3 +1352,17 @@ headings (99e1204). Footer consultancy line removed (cb9dc66). Every deploy pass
   First-Time Voter, Future Voter), WebP thumbnails, each saves its PNG through `wireClassic`; the sitemap lists
   the classic PNGs for `/stickers/` too (889 images). Links in stay at three: footer, each state gallery (to its
   row), the home state list.
+- **Classic layouts in the builder (November 2, Garrett's favorites).** Wave, Star ring and Flag lead the layout
+  row (`DESIGNS.unshift`, `classic: true`, palette `classicnavy`): no color swatches, the Colors line says "Red,
+  white and blue. Classic designs use a fixed color palette." The state is a small mark (Wave and Star ring: the
+  middle star; Flag: the middle of the star field) and the dates line is the tagline (Flag: white on a navy label
+  across the stripes; Star ring: under the message in the disc; Wave: as large as the waves' width allows). Star
+  ring centers on the message itself: 0 px off for every message, EN and ES, five states; Flag 0 px (accented
+  Spanish up to 27 px, the October 27 accent weighting). The home page's classic PNGs are unchanged (`plain`
+  flag in `render_classic.mjs`; 0 differing pixels). Sunburst is hidden on Flag (its stripes cover it).
+  QA: `scripts/qa_classic_builder.mjs` (270 renders; `--plant offcenter|tiny` fire), qa_cards (93,000 cards, 0
+  outside the safe circle), qa_save.
+- **Builder made compact.** Layout row: four a row on a phone (was a sideways row showing 3 of 15), about 100 px
+  tiles in rows of six on desktop; preview column 280 to 360 px; phone preview 240 px; caption panel folded;
+  profile-picture check 56 px on a phone, 80 on desktop (was 48). At 1440 x 900 the preview, message, all 15
+  layouts, colors and Download fit on one screen.
