@@ -2,6 +2,12 @@
 
 Open items, newest first. Started October 21, 2026. Move an item to `docs/history.md` when it ships.
 
+## Classic Layouts in the Builder (November 2)
+
+Spec: `docs/spec-classic-layouts-in-builder.md`. Garrett's favorites: Wave (by mail, early), Star ring
+(first-time voter), Stars and stripes, Dusk. Proposed three: Wave, Star ring, Stars and stripes, locked to red,
+white and blue with a state or date line added. About two to three hours; after Election Day. Not approved.
+
 ## All Stickers Page, 2026 Archive, Next-Cycle Setup (November 2)
 
 Plan: `docs/sticker-library-and-next-cycle-plan.md`. `/stickers/` with every current design (gallery tiles,
