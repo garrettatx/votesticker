@@ -1296,3 +1296,14 @@ headings (99e1204). Footer consultancy line removed (cb9dc66). Every deploy pass
 - History page ideas from the Wikipedia comparison: Intab's original name and the oval's size, regional designs (Travis County
   bluebonnet), the Butkowski 2023 selfie study, the 2020 plastic shield on Anthony's headstone. Verify each first.
 - Grosse Pointe News, Aug 7, 1952 ("You Bet I Voted. Did You?" tags): server unreachable Nov 1; read it before adding.
+
+### November 2, Midday
+
+- Press page: dropped "and nothing is for sale" to match the published EIN release (1e85554).
+- Home Election Day banner stays up from November 2 (GitHub's scheduled builds start hours late, so a day
+  early beats missing the morning). Its second link says "Already voted? Get your sticker." on both days; the
+  "Voted today?" string is gone (47c2bce).
+- New build at 8 p.m. CST November 2 (`0 2 3 11 *`) that builds as November 3 by name, so the Election Day
+  version (early voting ended, Monday deadlines past) is live overnight even if the start is late. The 12:05
+  and 3:05 a.m. runs still follow. Remove all election-week crons November 5.
+- Links to `#state-find` now leave 5.5rem above the input so its label shows (was cut off 37px above the top).
