@@ -16,6 +16,9 @@ on:
     # morning even with that delay: 00:05 and 3:05 a.m. CST on November 2 and 3. Remove after the 2026 election.
     - cron: '5 6 2,3 11 *'
     - cron: '5 9 2,3 11 *'
+    # The Election Day build the evening before: 02:00 UTC November 3 is 8 p.m. CST November 2, and it builds as
+    # November 3 by name (VOTE_TODAY below), so a late start still lands before morning. Remove after the 2026 election.
+    - cron: '0 2 3 11 *'
     # Post-election switch (docs/election-lifecycle-plan-20261025.md): 06:30 UTC November 4, after the last
     # scheduled poll closing (Alaska's Aleutians, 8 p.m. HST = 06:00 UTC). Remove after the 2026 election.
     - cron: '30 6 4 11 *'
@@ -49,8 +52,9 @@ jobs:
     timeout-minutes: 20
     env:
       TZ: America/Chicago
-      # index.php vote_today(): the post-election run builds as November 4 by name, not by clock.
-      VOTE_TODAY: ${{ github.event.inputs.vote_today || (github.event.schedule == '30 6 4 11 *' && '2026-11-04') || '' }}
+      # index.php vote_today(): the 8 p.m. November 2 run builds as November 3 and the post-election run as
+      # November 4, by name, not by clock.
+      VOTE_TODAY: ${{ github.event.inputs.vote_today || (github.event.schedule == '30 6 4 11 *' && '2026-11-04') || (github.event.schedule == '0 2 3 11 *' && '2026-11-03') || '' }}
       DRY_RUN: ${{ github.event.inputs.dry_run == 'true' }}
       # Between elections (index.php vote_between()): off until the December 1 review turns it on.
       VOTE_BETWEEN: ${{ (github.event.inputs.between == 'true' && '1') || vars.VOTE_BETWEEN || '' }}

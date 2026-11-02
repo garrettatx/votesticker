@@ -219,6 +219,8 @@ select:hover, input:hover, textarea:hover { border-color: #A79D86; }
 
 /* State finder: type-ahead combobox. */
 .finder { max-width: 600px; }
+/* Links to #state-find land on the input; leave room for its label and a line of context above. */
+#state-find { scroll-margin-top: 5.5rem; }
 .finder label { display: block; font-weight: 800; font-size: var(--fs-base); margin-bottom: var(--s3); }
 .finder__box { position: relative; display: flex; gap: 10px; }
 .finder input { flex: 1; min-width: 0; min-height: 56px; padding-inline: var(--s4); border: 2px solid #9AA6C4; font-size: 1.06rem; font-weight: 600; color: var(--ink); }
