@@ -536,6 +536,7 @@ h2, .lead, .guide p, .info p, .section-intro { text-wrap: pretty; }
 .notice { background: var(--cream); color: var(--ink); border-bottom: 1px solid #E8D59C; font-size: var(--fs-base); line-height: 1.45; }
 .notice__in { display: flex; align-items: center; gap: var(--s3); min-height: 44px; padding-top: 4px; padding-bottom: 4px; }
 .notice p { margin: 0; flex: 1; }
+.notice b { font-weight: 600; }
 .notice a { color: var(--ink); font-weight: 700; text-decoration: underline; text-underline-offset: 0.16em; }
 /* Close: a 44px tap target with a visible 32px ring, so it reads as a button on a phone. */
 .notice__x { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; margin-right: -6px; padding: 0; border: 0; background: none; color: var(--ink); cursor: pointer; }
@@ -724,7 +725,7 @@ nav.foot__links a + a { margin-left: 0; }
 @media (min-width: 860px) { .top--hub { padding: var(--s5) 0 var(--s7); } .hero__art { max-width: 360px; } }
 .how__more { margin: var(--s4) 0 0; font-size: var(--fs-sm); }
 .how__more a { font-weight: 700; }
-.top .finder__free { color: var(--cream); font-weight: 600; }
+.top .finder__free { display: block; margin-bottom: 2px; color: var(--cream); font-weight: 600; }  /* its own line, apart from the browse link */
 
 /* iOS press-and-hold saver (October 22): the picture full screen, for Save to Photos. */
 .hold-save { position: fixed; inset: 0; z-index: 50; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--s4); padding: var(--s5) 16px; background: rgba(10, 18, 40, 0.94); color: var(--cream); text-align: center; }

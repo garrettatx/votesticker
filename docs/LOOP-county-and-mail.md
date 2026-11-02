@@ -1322,3 +1322,12 @@ headings (99e1204). Footer consultancy line removed (cb9dc66). Every deploy pass
 - QA: `scripts/qa_eday_bar.mjs` (pages x widths, close persistence, flash, no-JS, jump target; `--plant
   small|overflow|nostore` all fire). The build's phase step now fails if the bar is missing in the eday phase,
   present after, or the old banner is anywhere.
+- Copy and small fixes (from Garrett's pasted review, the ones that clear up a page without touching titles):
+  home row's Texas "Vote early Oct 19–30" is "Vote Nov 3" after early voting; mail-state Election Day lead
+  "Return it by November 3. Then save a sticker for your profile picture or a post." (was "so your friends
+  remember theirs"); "Sign the Envelope, Then Return It" (was "Send It Back", above "don't mail it now"); "Don’t see
+  your state? Make a sticker with your state’s name above." (was "No official one..."); founder line "Vote Sticker
+  is free..." (was "It's free" after "I run Garrett Digital"); state hero drops its Election Day date line Nov 2-3
+  (the ribbon and bar say it); "Free. No account needed." on its own line; `enterkeyhint="go"` on the state box.
+  Kept on purpose: H1s and titles (the keywords), "Get my sticker" (tap goes straight to the state), the ringed ×,
+  the red ribbon, the gallery and "Phones, Photos" headings (state-specific content, ranking terms).

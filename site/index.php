@@ -246,7 +246,7 @@ function vote_meta( $st ) {
 		$ribbon = $st['ribbon'] ?? 'VOTE BY MAIL, DUE ' . strtoupper( vote_short( $st['end'] ) );
 		$fact = $name . ' votes by mail, with ballots due ' . vote_long( $st['end'] ) . '.';
 		// Nov 2 and 3 (pass 12): "pick a day" reads stale on the deadline's eve; say the deadline instead.
-		$lead = 'eday' === vote_phase() ? 'Still have your ballot? Get it in by ' . vote_long( $st['end'] ) . ', then grab a sticker so your friends remember theirs.'
+		$lead = 'eday' === vote_phase() ? 'Still have your ballot? Return it by ' . vote_long( $st['end'] ) . '. Then save a sticker for your profile picture or a post.'
 			: 'Your ballot came in the mail. Pick a day to send it back, then grab a sticker so your friends remember theirs.';
 		$status = 'Votes by mail';
 		$family = 'mail';
@@ -344,7 +344,7 @@ function vote_meta_es( $st ) {
 		$tag = 'vota por correo hasta el ' . vote_short( $st['end'] );
 		$ribbon = vote_sfield( $st, 'ribbon' ) ?: 'VOTA POR CORREO, HASTA EL ' . vote_upper( vote_short( $st['end'] ) );
 		$fact = $name . ' vota por correo y las boletas deben entregarse a más tardar el ' . vote_long( $st['end'] ) . '.';
-		$lead = 'eday' === vote_phase() ? '¿Todavía tienes tu boleta? Entrégala a más tardar el ' . vote_long( $st['end'] ) . ' y luego toma un sticker para que tus amigos se acuerden de la suya.'
+		$lead = 'eday' === vote_phase() ? '¿Todavía tienes tu boleta? Entrégala a más tardar el ' . vote_long( $st['end'] ) . '. Luego guarda un sticker para tu foto de perfil o una publicación.'
 			: 'Tu boleta te llegó por correo. Escoge un día para devolverla y luego toma un sticker para que tus amigos se acuerden de la suya.';
 		$status = 'Vota por correo';
 	} elseif ( 'ended' === $kind ) {
@@ -641,6 +641,8 @@ function vote_countdown_text( $days ) {
 function vote_countdown( $class = '' ) {
 	// From November 2 the line keeps the date and drops "Today" and "Tomorrow"; after Election Day it goes.
 	if ( 'post' === vote_phase() ) { return ''; }
+	// State pages on November 2 and 3: the ribbon and the bar above the header already say Nov 3.
+	if ( 'eday' === vote_phase() && 'countdown--state' === $class ) { return ''; }
 	if ( 'eday' === vote_phase() ) { return '<p class="countdown' . ( $class ? ' ' . $class : '' ) . '"><span>' . vote_e( t( 'Election Day:' ) ) . ' <time datetime="' . VOTE_ELECTION_DAY . '">' . vote_e( t( 'Tuesday, Nov. 3' ) ) . '</time></span></p>'; }
 	$days = (int) round( ( strtotime( VOTE_ELECTION_DAY ) - strtotime( vote_today() ) ) / 86400 );
 	$rel = vote_countdown_text( $days );
@@ -1029,7 +1031,7 @@ function vote_info( $st ) {
 	$ret = 'mail' === $kind ? vote_fact( $st, 'dates.mail_return' ) : null;
 	if ( $ret ) {
 		// All-mail state with a verified return rule: the action first, said once (Washington review).
-		$html = '<h2>' . ( $es ? 'Firma el sobre y devuélvela' : 'Sign the Envelope, Then Send It Back' ) . '</h2><p>' . vote_e( $ret['text'] ) . '</p>';
+		$html = '<h2>' . ( $es ? 'Firma el sobre y devuélvela' : 'Sign the Envelope, Then Return It' ) . '</h2><p>' . vote_e( $ret['text'] ) . '</p>';
 		$srcs[] = $ret['src'];
 	} else {
 		$html = '<h2>' . $head . '</h2><p><b>' . $fact . '</b> ' . ( 'none' === $kind ? '' : $eday ) . '</p>';
@@ -1245,7 +1247,7 @@ $vote_share = '<p class="share"><button type="button" class="share__btn" id="sha
 // state links below the maker does the same job.
 function vote_finder( $label, $placeholder, $button = 'Find' ) {
 	return '<div class="finder"><label for="state-find">' . vote_e( t( $label ) ) . '</label>'
-		. '<div class="finder__box"><input id="state-find" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="state-options" autocomplete="off" autocapitalize="words" spellcheck="false" placeholder="' . vote_e( t( $placeholder ) ) . '">'
+		. '<div class="finder__box"><input id="state-find" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="state-options" autocomplete="off" autocapitalize="words" spellcheck="false" enterkeyhint="go" placeholder="' . vote_e( t( $placeholder ) ) . '">'
 		. '<button type="button" class="btn btn--gold" id="state-go">' . vote_e( t( $button ) ) . '</button>'
 		. '<ul id="state-options" role="listbox" aria-label="' . vote_e( t( 'Matching states' ) ) . '" hidden></ul></div>'
 		. '<p class="help" id="state-help">' . ( 'Get my sticker' === $button ? '<span class="finder__free">' . vote_e( t( 'Free. No account needed.' ) ) . '</span> ' : '' ) . '<a href="#states-h">' . vote_e( t( 'Browse all states and DC' ) ) . '</a></p></div>';
@@ -1402,7 +1404,7 @@ $vote_ld = array(
 				// the middle two are bespoke (an arched I VOTED on a sunburst, Varsity by mail) for range.
 				// Spanish pages draw the same four messages in Spanish (app.js spanishArt()). Values: state, file stem,
 				// then the design, Spanish message and palette spanishArt() redraws with.
-				foreach ( array( array( 'tx', 'tx-vote-2', 'type', 'votatemprano', 'forest' ), array( 'nc', 'north-carolina-i-voted-arch-sticker', 'arch', 'yavote', 'navy' ), array( 'co', 'colorado-i-voted-by-mail-varsity-sticker', 'varsity', 'yavotecorreo', 'plum' ), array( 'az', 'az-vote-9', 'side', 'voyavotar', 'plum' ) ) as $k => $h ) : if ( is_file( __DIR__ . "/assets/states/{$h[0]}/{$h[1]}.jpg" ) ) : ?>
+				foreach ( array( 'pre' === vote_phase() ? array( 'tx', 'tx-vote-2', 'type', 'votatemprano', 'forest' ) : array( 'tx', 'tx-vote-nov-3', 'type', 'vota3nov', 'forest' ), array( 'nc', 'north-carolina-i-voted-arch-sticker', 'arch', 'yavote', 'navy' ), array( 'co', 'colorado-i-voted-by-mail-varsity-sticker', 'varsity', 'yavotecorreo', 'plum' ), array( 'az', 'az-vote-9', 'side', 'voyavotar', 'plum' ) ) as $k => $h ) : if ( is_file( __DIR__ . "/assets/states/{$h[0]}/{$h[1]}.jpg" ) ) : ?>
 				<img class="hero__sticker hero__sticker--<?php echo $k + 1; ?>" src="<?php echo vote_v( "assets/states/{$h[0]}/{$h[1]}.jpg" ); ?>" alt="" width="1080" height="1080"<?php echo $k ? ' loading="lazy"' : ''; ?><?php echo vote_es() ? ' data-es-state="' . strtoupper( $h[0] ) . '" data-es-design="' . $h[2] . '" data-es-headline="' . $h[3] . '" data-es-palette="' . $h[4] . '"' : ''; ?>>
 				<?php endif; endforeach; ?>
 			</div>
@@ -1684,7 +1686,7 @@ $vote_ld = array(
 			<?php echo $vote_li( 'Portage, Michigan, has #PortageVotes digital I voted stickers in eight languages, including a ¡YO VOTÉ! sticker in Spanish, plus a First-Time Voter sticker.', 'https://www.portagemi.gov/852/PortageVotes', 'Get Portage’s stickers' ); ?>
 			<?php echo $vote_li( 'Voting from another country? The Federal Voting Assistance Program has an "I Voted From" sticker for each country.', 'https://www.fvap.gov/IVotedSticker', 'Find your country' ); ?>
 		</ul>
-		<p><?php echo vote_e( t( "No official one for your state? Make one above with your state’s name." ) ); ?></p>
+		<p><?php echo vote_e( t( 'Don’t see your state? Make a sticker with your state’s name above.' ) ); ?></p>
 	</section>
 	<section class="why" aria-labelledby="contest-h">
 		<h2 id="contest-h" class="display-h"><?php echo vote_e( t( 'I Voted Sticker Contests' ) ); ?></h2>
@@ -1714,7 +1716,7 @@ $vote_ld = array(
 	</section>
 	<section class="why" aria-labelledby="why-h">
 		<h2 id="why-h" class="display-h"><?php echo vote_e( t( 'Why I Built VoteSticker.org' ) ); ?></h2>
-		<p><?php echo vote_e( t( 'I’m Garrett Nafzinger. I wanted an “I voted” sticker to share after voting early in Texas, so I built one. Then I got curious about where the sticker came from, and the history page grew out of that.' ) ); ?> <?php echo vote_e( t( 'I run Garrett Digital in Austin.' ) ); ?> <?php echo vote_e( t( "It's free, nonpartisan, and sells nothing." ) ); ?> <a href="<?php echo vote_pbase(); ?>about/"><?php echo vote_e( t( 'More about Vote Sticker' ) ); ?></a></p>
+		<p><?php echo vote_e( t( 'I’m Garrett Nafzinger. I wanted an “I voted” sticker to share after voting early in Texas, so I built one. Then I got curious about where the sticker came from, and the history page grew out of that.' ) ); ?> <?php echo vote_e( t( 'I run Garrett Digital in Austin.' ) ); ?> <?php echo vote_e( t( 'Vote Sticker is free, nonpartisan, and sells nothing.' ) ); ?> <a href="<?php echo vote_pbase(); ?>about/"><?php echo vote_e( t( 'More about Vote Sticker' ) ); ?></a></p>
 		<?php echo vote_history_why(); ?>
 	</section>
 	<?php endif; ?>
