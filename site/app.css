@@ -290,7 +290,7 @@ select:hover, input:hover, textarea:hover { border-color: #A79D86; }
 .maker-h { margin: var(--s4) 0 var(--s4); padding-top: var(--s7); border-top: 1px solid var(--line);  scroll-margin-top: var(--s4); }
 .maker-h--first { border-top: 0; }
 #gallery { padding-top: var(--s6); scroll-margin-top: var(--s4); }
-.before-h { margin: var(--s7) 0 var(--s4); padding-top: var(--s6); border-top: 1px solid var(--line); }
+.before-h { margin: var(--s7) 0 var(--s4); padding-top: var(--s6); border-top: 1px solid var(--line); scroll-margin-top: var(--s4); }
 .discover__find { padding-bottom: var(--s5); border-bottom: 1px solid var(--line-strong); }
 /* The maker (October 27): phones read preview, message, a sideways row of layouts, then colors and Save.
    Desktop keeps the preview column on the left and the layout grid on the right. */
@@ -531,6 +531,18 @@ h2, .lead, .guide p, .info p, .section-intro { text-wrap: pretty; }
 .top__bar .brand { margin: 0; min-width: 0; }
 .lang-switch { flex: none; display: inline-flex; align-items: center; min-height: 40px; padding: 6px 14px; border: 1.5px solid #7D8DB6; border-radius: 999px; color: var(--cream); font-size: var(--fs-sm); font-weight: 700; text-decoration: none; }
 .lang-switch:hover { background: var(--cream); border-color: var(--cream); color: var(--ink); }
+/* Election Day bar above the header (index.php vote_eday_bar). In the page flow, one line on desktop, wraps on
+   phones; closed bars are hidden before paint by a class the <head> script sets. */
+.notice { background: var(--cream); color: var(--ink); border-bottom: 1px solid #E8D59C; font-size: var(--fs-base); line-height: 1.45; }
+.notice__in { display: flex; align-items: center; gap: var(--s3); min-height: 44px; padding-top: 4px; padding-bottom: 4px; }
+.notice p { margin: 0; flex: 1; }
+.notice a { color: var(--ink); font-weight: 700; text-decoration: underline; text-underline-offset: 0.16em; }
+/* Close: a 44px tap target with a visible 32px ring, so it reads as a button on a phone. */
+.notice__x { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; margin-right: -6px; padding: 0; border: 0; background: none; color: var(--ink); cursor: pointer; }
+.notice__x span { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; border: 1.5px solid var(--ink); border-radius: 50%; font-size: 1.35rem; line-height: 1; }
+.notice__x:hover span { background: var(--ink); color: var(--cream); }
+.notice__x[hidden] { display: none; }
+.notice[hidden], .eday-bar-closed .notice, .lang-suggest:not([hidden]) ~ .notice { display: none; }
 .lang-suggest { background: #FBF0D2; border-bottom: 1px solid #E8D59C; color: var(--ink); }
 .lang-suggest .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s2) var(--s4); padding-top: var(--s3); padding-bottom: var(--s3); }
 .lang-suggest p { margin: 0; font-weight: 700; }

@@ -1311,3 +1311,14 @@ headings (99e1204). Footer consultancy line removed (cb9dc66). Every deploy pass
   "Election Day: Tuesday, Nov. 3. Pick your state for voting hours and locations." (Spanish too), so
   "Get my sticker" is the one primary button and the state box is on the first phone screen (384px, was 660px).
   State pages keep their full Election Day banner.
+- Election Day bar above the header (`vote_eday_bar`), November 2 and 3, every page but /press/: one line, "Vote
+  Nov. 3, then share your sticker." on the home page (no link; its state box is right below), "Vote Nov. 3.
+  Find where to vote" on history and about (to the state box), "Vote Nov. 3. Pennsylvania voting info ↓" on state
+  pages (to "When, Where, and What to Bring"). Spanish: "Vota el 3 de nov. ..." The yellow in-page banners and
+  the hero's extra line are gone. Close (44px target, ringed ×) keeps it closed site-wide in that browser
+  (localStorage `vote-sticker:eday-bar-2026`, applied in `<head>`, no flash; open tabs follow; × hidden without
+  JavaScript). The Spanish-suggestion bar hides it. Sources: NN/g Banner Blindness Revisited (2018), GOV.UK
+  notification banner. 53px tall (one line) on most pages and widths; 320px and long Spanish names wrap (55px).
+- QA: `scripts/qa_eday_bar.mjs` (pages x widths, close persistence, flash, no-JS, jump target; `--plant
+  small|overflow|nostore` all fire). The build's phase step now fails if the bar is missing in the eday phase,
+  present after, or the old banner is anywhere.

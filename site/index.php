@@ -641,9 +641,7 @@ function vote_countdown_text( $days ) {
 function vote_countdown( $class = '' ) {
 	// From November 2 the line keeps the date and drops "Today" and "Tomorrow"; after Election Day it goes.
 	if ( 'post' === vote_phase() ) { return ''; }
-	// On the home page (no class) the Election Day line also says what the state box above it gives; this replaced
-	// a separate banner above the heading (November 2), so "Get my sticker" stays the one primary button.
-	if ( 'eday' === vote_phase() ) { return '<p class="countdown' . ( $class ? ' ' . $class : '' ) . '"><span>' . vote_e( t( 'Election Day:' ) ) . ' <time datetime="' . VOTE_ELECTION_DAY . '">' . vote_e( t( 'Tuesday, Nov. 3' ) ) . '</time>' . ( $class ? '' : '. ' . vote_e( t( 'Pick your state for voting hours and locations.' ) ) ) . '</span></p>'; }
+	if ( 'eday' === vote_phase() ) { return '<p class="countdown' . ( $class ? ' ' . $class : '' ) . '"><span>' . vote_e( t( 'Election Day:' ) ) . ' <time datetime="' . VOTE_ELECTION_DAY . '">' . vote_e( t( 'Tuesday, Nov. 3' ) ) . '</time></span></p>'; }
 	$days = (int) round( ( strtotime( VOTE_ELECTION_DAY ) - strtotime( vote_today() ) ) / 86400 );
 	$rel = vote_countdown_text( $days );
 	return '<p class="countdown' . ( $class ? ' ' . $class : '' ) . '" data-countdown data-today="' . vote_e( t( 'Today' ) ) . '" data-tomorrow="' . vote_e( t( 'Tomorrow' ) ) . '" data-away="' . vote_e( t( '%s days away' ) ) . '">'
@@ -974,6 +972,29 @@ function vote_eday_banner( $st ) {
 	return '<section class="eday" aria-labelledby="eday-h"><p class="eday__eyebrow">' . vote_e( $eyebrow ) . '</p><h2 class="eday__h" id="eday-h">' . vote_e( $head ) . '</h2><p class="eday__line">' . vote_e( $line ) . '</p>'
 		. '<p class="eday__links"><a class="btn btn--gold" href="' . vote_e( $go ) . '" target="_blank" rel="noopener">' . vote_e( $go_label ) . ' <span aria-hidden="true">↗</span></a> <a class="eday__more" href="' . vote_e( $second[0] ) . '"' . ( $second[2] ? ' target="_blank" rel="noopener"' : '' ) . '>' . vote_e( $second[1] ) . '</a></p></section>';
 }
+// The Election Day bar above the header (November 2 and 3; replaced the yellow panels, November 2). One line
+// in the page flow, the same message on every page: vote, then share a sticker. The link goes to the state box
+// (history and about; the home page has none, its box is right below) or, on a state page, to its "When, Where, and What to Bring" section, which has the
+// hours and the official polling-place link, so nothing lives only in the bar (Baymard: banners get skipped).
+// Styled like the site, not like an ad (NN/g, Banner Blindness Revisited, 2018). Closing it keeps it closed in
+// this browser for the rest of the election (localStorage, read in <head> before paint so it never flashes; a
+// new message needs a new key). The close button shows only once its script runs. The Spanish suggestion bar
+// hides it, so there's one bar at a time.
+function vote_eday_bar( $st, $on_hub ) {
+	if ( 'eday' !== vote_phase() ) { return ''; }
+	// The home page has no link: its state box is right under the bar.
+	$href = $st ? '#before-h' : vote_pbase() . '#state-find';
+	// Short enough for one line on most phones; long state names (and larger text settings) wrap, never clip.
+	$msg = $on_hub ? t( 'Vote Nov. 3, then share your sticker.' ) : t( 'Vote Nov. 3.' );
+	$text = $st ? vote_e( t( '%s voting info', vote_es() ? vote_lname( $st ) : $st['name'] ) ) . ' <span aria-hidden="true">↓</span>' : vote_e( t( 'Find where to vote' ) );
+	$link = $on_hub ? '' : '<a href="' . vote_e( $href ) . '">' . $text . '</a>';
+	return '<aside class="notice" id="eday-bar" aria-label="' . vote_e( t( 'Election Day' ) ) . '"><div class="wrap notice__in"><p><b>' . vote_e( $msg ) . '</b> ' . $link . '</p>'
+		. '<button type="button" class="notice__x" id="eday-bar-x" hidden aria-label="' . vote_e( t( 'Dismiss Election Day notice' ) ) . '"><span aria-hidden="true">×</span></button></div></aside>'
+		. '<script>(function () { var bar = document.getElementById(\'eday-bar\'), x = document.getElementById(\'eday-bar-x\');'
+		. ' x.addEventListener(\'click\', function () { bar.hidden = true; try { localStorage.setItem(\'vote-sticker:eday-bar-2026\', \'closed\'); } catch (e) { /* private window */ }'
+		. ' if (document.activeElement === x || document.activeElement === document.body) { var h = document.querySelector(\'.brand\'); if (h) { h.focus(); } } }); x.hidden = false; window.addEventListener(\'storage\', function (e) { if (e.key === \'vote-sticker:eday-bar-2026\' && e.newValue === \'closed\') { bar.hidden = true; } }); })();</script>';
+}
+
 // The state panel, server-rendered; app.js infoHtml() draws the same markup when the menu changes.
 // The summary box under the maker (id="info"; the card QA compares it with the page's own copy): the dates,
 // Election Day hours, ID in one line, and where to vote. Most people need only this; the guide has the rest.
@@ -1297,11 +1318,13 @@ $vote_ld = array(
     gtag('config', 'G-PZWZTXDSDE');
   }
 </script>
+<?php if ( 'eday' === vote_phase() && ! $vote_404 ) : ?><script>try { if (localStorage.getItem('vote-sticker:eday-bar-2026') === 'closed') { document.documentElement.classList.add('eday-bar-closed'); } } catch (e) { /* private window */ }</script><?php endif; ?>
 </head>
 <body>
 <?php if ( ! vote_es() && ! $vote_st && ! $vote_404 && ! $vote_doc ) : ?>
 <div class="lang-suggest" id="lang-suggest" lang="es" hidden><div class="wrap"><p>¿Prefieres ver esta página en español?</p><a class="btn btn--gold" href="<?php echo vote_e( $vote_alt['es'] ); ?>" data-lang-choice="es">Ver en español</a><button type="button" class="btn btn--quiet" id="lang-suggest-no">No, gracias</button></div></div>
 <?php endif; ?>
+<?php echo ! $vote_404 ? vote_eday_bar( $vote_st, ! $vote_doc && ! $vote_st ) : ''; ?>
 <header class="top<?php echo $vote_st ? "" : " top--hub"; ?>">
 	<div class="wrap">
 		<div class="top__bar">
@@ -1321,7 +1344,6 @@ $vote_ld = array(
 		</ol></nav>
 		<?php endif; ?>
 		<?php if ( $vote_st ) : $vote_lead_img = vote_hero_file( $vote_abbr ); $vote_art = vote_es() ? 'data:image/gif;base64,R0lGODlhAQABAAAAACw=' : $vote_lead_img; ?>
-		<?php echo vote_eday_banner( $vote_st ); ?>
 		<div class="state-hero<?php echo $vote_art ? ' state-hero--art' : ''; ?>">
 			<div>
 				<?php // "I Voted" and "Yo voté" never split across lines ("Washington I / Voted Stickers" on phones). ?>

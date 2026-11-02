@@ -94,6 +94,14 @@ jobs:
           got=$(grep -o 'window.VOTE_PHASE = "[a-z]*"' dist/texas/index.html | grep -o '"[a-z]*"' | tr -d '"')
           echo "Built as $d: phase $got (expected $want)"
           [ "$got" = "$want" ]
+          # The Election Day bar (index.php vote_eday_bar): on every built page in the eday phase, on none after;
+          # the old yellow in-page banner on none. Browser checks: scripts/qa_eday_bar.mjs (run locally).
+          pages=$(find dist -name index.html | wc -l | tr -d ' ')
+          bars=$(grep -l 'id="eday-bar"' $(find dist -name index.html) | wc -l | tr -d ' ')
+          old=$(grep -l '<section class="eday"' $(find dist -name index.html) | wc -l | tr -d ' ')
+          echo "Election Day bar on $bars of $pages pages; old banner on $old"
+          [ "$old" = 0 ]
+          if [ "$want" = eday ]; then [ "$bars" -ge 100 ]; else [ "$bars" = 0 ]; fi
 
       - name: Deploy to Cloudflare Pages
         if: env.DRY_RUN != 'true'
