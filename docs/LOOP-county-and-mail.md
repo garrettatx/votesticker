@@ -1331,3 +1331,9 @@ headings (99e1204). Footer consultancy line removed (cb9dc66). Every deploy pass
   (the ribbon and bar say it); "Free. No account needed." on its own line; `enterkeyhint="go"` on the state box.
   Kept on purpose: H1s and titles (the keywords), "Get my sticker" (tap goes straight to the state), the ringed ×,
   the red ribbon, the gallery and "Phones, Photos" headings (state-specific content, ranking terms).
+- Desktop maker (860px+): the preview column holds only the preview, sticky; message, layouts and finish stack on
+  the right in page order, so the sticker stays in view under More options (static below 640px tall windows).
+- Asset `?v=` stamps are now a crc32 of the file, not its mtime: every CI checkout had given all 1,271 sitemap
+  images new URLs on every build. URLs change once with this deploy, then only when a file changes.
+- GSC image search Oct 18 to Nov 2: 570 impressions, 3 clicks, average position 52 (web: 22,777 and 2,416). Google
+  is crawling the sticker images; image search is not a traffic source yet.

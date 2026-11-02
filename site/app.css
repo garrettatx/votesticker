@@ -307,7 +307,10 @@ select:hover, input:hover, textarea:hover { border-color: #A79D86; }
 }
 @media (min-width: 600px) and (max-width: 859px) { #grid .tile { flex-basis: 20%; } .maker__preview .frame { max-width: 340px; } }  /* tablets: five in view, not three oversized */
 @media (min-width: 860px) {
-	.maker { grid-template-columns: minmax(320px, 420px) 1fr; grid-template-rows: auto auto 1fr; grid-template-areas: "preview designs" "message designs" "finish designs"; align-items: start; column-gap: var(--s6); }
+	/* November 2: the preview column holds only the preview, sticky, and the controls stack on the right in page
+	   order (message, layouts, colors and More options), so the sticker stays in view while you change it. */
+	.maker { grid-template-columns: minmax(320px, 420px) 1fr; grid-template-rows: auto auto 1fr; grid-template-areas: "preview message" "preview designs" "preview finish"; align-items: start; column-gap: var(--s6); }
+	.maker__preview { position: sticky; top: var(--s4); }
 	.maker__preview { grid-area: preview; }
 	.maker__message { grid-area: message; }
 	.maker__finish { grid-area: finish; }
@@ -324,7 +327,8 @@ select:hover, input:hover, textarea:hover { border-color: #A79D86; }
 .as-circle:not(.is-story) .more__thumb { border-radius: 50%; }
 .more__thumb[src="data:,"] { visibility: hidden; }
 .more::after { content: ""; display: block; clear: both; }
-@media (min-width: 860px) { .more__thumb { display: none; } }  /* desktop keeps the preview column in view */
+@media (min-width: 860px) { .more__thumb { display: none; } }  /* desktop: the sticky preview column stays in view */
+@media (min-width: 860px) and (max-height: 640px) { .maker__preview { position: static; } }  /* short windows: a sticky preview would cover the page */
 .more__field { display: flex; flex-direction: column; gap: var(--s2); margin: 0 0 var(--s4); font-weight: 700; font-size: var(--fs-sm); }
 .more .link-quiet { padding-left: 0; }
 .check[hidden] { display: none; }

@@ -15,9 +15,14 @@ function vote_json( $data ) {
 	return json_encode( $data, JSON_UNESCAPED_SLASHES | JSON_HEX_TAG );
 }
 
+// The ?v= stamp is a checksum of the file, not its modified time (November 2): a CI checkout gives every file a
+// new mtime, so each build handed Google 1,271 "new" image URLs. Google asks for one stable URL per image. Digits
+// only, so build_static.py's lastmod hash still strips it.
 function vote_v( $file ) {
+	static $seen = array();
 	$path = __DIR__ . '/' . $file;
-	return VOTE_BASE . $file . '?v=' . ( is_file( $path ) ? filemtime( $path ) : '0' );
+	if ( ! isset( $seen[ $file ] ) ) { $seen[ $file ] = is_file( $path ) ? sprintf( '%u', crc32( file_get_contents( $path ) ) ) : '0'; }
+	return VOTE_BASE . $file . '?v=' . $seen[ $file ];
 }
 
 // Pages: the hub at / and one page per state at /<slug>/. Each state folder holds the same two-line
