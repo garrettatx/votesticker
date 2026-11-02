@@ -1307,3 +1307,7 @@ headings (99e1204). Footer consultancy line removed (cb9dc66). Every deploy pass
   version (early voting ended, Monday deadlines past) is live overnight even if the start is late. The 12:05
   and 3:05 a.m. runs still follow. Remove all election-week crons November 5.
 - Links to `#state-find` now leave 5.5rem above the input so its label shows (was cut off 37px above the top).
+- Home page: the separate Election Day banner above the heading is gone. The hero's date line now reads
+  "Election Day: Tuesday, Nov. 3. Pick your state for voting hours and locations." (Spanish too), so
+  "Get my sticker" is the one primary button and the state box is on the first phone screen (384px, was 660px).
+  State pages keep their full Election Day banner.

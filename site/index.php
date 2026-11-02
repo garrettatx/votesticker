@@ -641,7 +641,9 @@ function vote_countdown_text( $days ) {
 function vote_countdown( $class = '' ) {
 	// From November 2 the line keeps the date and drops "Today" and "Tomorrow"; after Election Day it goes.
 	if ( 'post' === vote_phase() ) { return ''; }
-	if ( 'eday' === vote_phase() ) { return '<p class="countdown' . ( $class ? ' ' . $class : '' ) . '"><span>' . vote_e( t( 'Election Day:' ) ) . ' <time datetime="' . VOTE_ELECTION_DAY . '">' . vote_e( t( 'Tuesday, Nov. 3' ) ) . '</time></span></p>'; }
+	// On the home page (no class) the Election Day line also says what the state box above it gives; this replaced
+	// a separate banner above the heading (November 2), so "Get my sticker" stays the one primary button.
+	if ( 'eday' === vote_phase() ) { return '<p class="countdown' . ( $class ? ' ' . $class : '' ) . '"><span>' . vote_e( t( 'Election Day:' ) ) . ' <time datetime="' . VOTE_ELECTION_DAY . '">' . vote_e( t( 'Tuesday, Nov. 3' ) ) . '</time>' . ( $class ? '' : '. ' . vote_e( t( 'Pick your state for voting hours and locations.' ) ) ) . '</span></p>'; }
 	$days = (int) round( ( strtotime( VOTE_ELECTION_DAY ) - strtotime( vote_today() ) ) / 86400 );
 	$rel = vote_countdown_text( $days );
 	return '<p class="countdown' . ( $class ? ' ' . $class : '' ) . '" data-countdown data-today="' . vote_e( t( 'Today' ) ) . '" data-tomorrow="' . vote_e( t( 'Tomorrow' ) ) . '" data-away="' . vote_e( t( '%s days away' ) ) . '">'
@@ -972,15 +974,6 @@ function vote_eday_banner( $st ) {
 	return '<section class="eday" aria-labelledby="eday-h"><p class="eday__eyebrow">' . vote_e( $eyebrow ) . '</p><h2 class="eday__h" id="eday-h">' . vote_e( $head ) . '</h2><p class="eday__line">' . vote_e( $line ) . '</p>'
 		. '<p class="eday__links"><a class="btn btn--gold" href="' . vote_e( $go ) . '" target="_blank" rel="noopener">' . vote_e( $go_label ) . ' <span aria-hidden="true">↗</span></a> <a class="eday__more" href="' . vote_e( $second[0] ) . '"' . ( $second[2] ? ' target="_blank" rel="noopener"' : '' ) . '>' . vote_e( $second[1] ) . '</a></p></section>';
 }
-// The home page's version points at the state picker; no national hours. The link says "Already voted?", not
-// "Voted today?", since the banner is up from November 2 and the Election Day build can land the evening before.
-function vote_eday_banner_hub() {
-	if ( 'eday' !== vote_phase() ) { return ''; }
-	$more = t( 'Already voted? Get your sticker.' );
-	return '<section class="eday" aria-labelledby="eday-h"><p class="eday__eyebrow">' . vote_e( t( 'November 3, 2026 · Election Day' ) ) . '</p><h2 class="eday__h" id="eday-h">' . vote_e( t( "Find your state's voting locations, hours and ballot return rules." ) ) . '</h2>'
-		. '<p class="eday__links"><a class="btn btn--gold" href="#state-find">' . vote_e( t( 'Choose your state' ) ) . '</a> <a class="eday__more" href="#ready-to-share">' . vote_e( $more ) . '</a></p></section>';
-}
-
 // The state panel, server-rendered; app.js infoHtml() draws the same markup when the menu changes.
 // The summary box under the maker (id="info"; the card QA compares it with the page's own copy): the dates,
 // Election Day hours, ID in one line, and where to vote. Most people need only this; the guide has the rest.
@@ -1352,7 +1345,6 @@ $vote_ld = array(
 			<?php if ( $vote_art ) : ?><img class="state-hero__sticker" src="<?php echo vote_e( $vote_art ); ?>" alt="" width="1080" height="1080" aria-hidden="true"<?php echo vote_es() ? ' data-es-state="' . $vote_abbr . '"' : ''; ?>><?php endif; ?>
 		</div>
 		<?php else : ?>
-		<?php echo ( ! $vote_doc && ! $vote_404 ) ? vote_eday_banner_hub() : ''; ?>
 		<div class="hero">
 			<div class="hero__text">
 				<?php if ( $vote_page['eyebrow'] ) : ?><p class="<?php echo $vote_404 ? 'ribbon ribbon--err' : 'eyebrow'; ?>"><?php echo vote_e( $vote_page['eyebrow'] ); ?></p><?php endif; ?>
