@@ -4,7 +4,7 @@
 import { chromium } from 'playwright';
 import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
-const BASE = 'http://127.0.0.1:8792/'; const OUT = (await import('node:os')).tmpdir() + '/vs-dl/'; (await import('node:fs')).mkdirSync(OUT, { recursive: true });
+const BASE = process.argv[2] || 'http://127.0.0.1:8792/'; const OUT = (await import('node:os')).tmpdir() + '/vs-dl/'; (await import('node:fs')).mkdirSync(OUT, { recursive: true });
 const b = await chromium.launch(); let fails = 0;
 const ok = (c, m) => { console.log((c ? '  ok   ' : '  FAIL ') + m); if (!c) fails++; };
 const dims = (buf) => buf[0] === 0x89 ? [buf.readUInt32BE(16), buf.readUInt32BE(20)] : (() => { let i = 2; while (i < buf.length) { const m = buf[i + 1], l = buf.readUInt16BE(i + 2); if (m >= 0xC0 && m <= 0xC2) return [buf.readUInt16BE(i + 7), buf.readUInt16BE(i + 5)]; i += 2 + l; } return null; })();
