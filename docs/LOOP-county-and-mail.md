@@ -1366,3 +1366,11 @@ headings (99e1204). Footer consultancy line removed (cb9dc66). Every deploy pass
   tiles in rows of six on desktop; preview column 280 to 360 px; phone preview 240 px; caption panel folded;
   profile-picture check 56 px on a phone, 80 on desktop (was 48). At 1440 x 900 the preview, message, all 15
   layouts, colors and Download fit on one screen.
+- **History page: werewolf card names the meme (November 2).** Searches for "i voted sticker meme" (Ahrefs US 100 a
+  month) and "funny i voted sticker" (40) get no impressions for us (GSC Oct 1 to Nov 2: no query with meme, funny
+  or custom). The Michigan 2024 card is now "Michigan’s Werewolf Meme Sticker" ("El sticker meme del hombre lobo
+  de Michigan") and says the design was inspired by an internet meme and went viral on social media. Sources added
+  to fact `mi-werewolf-2024`: YPulse (Sept 11, 2024) and the Boston Globe; neither names the meme, so the page
+  doesn't. Decided against a meme page or funny builder messages: partisan drift, other people's images, and
+  EN/ES fit QA per message for 30 to 100 searches a month. Ulster County's 2022 sticker is the spider-legged
+  head, not a werewolf.

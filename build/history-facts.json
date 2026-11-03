@@ -1058,7 +1058,7 @@
       "year": 2024,
       "date": "2024",
       "place": "Michigan",
-      "claim": "The best-known 2024 Michigan winner, by 12-year-old Jane Hynous of Grosse Pointe, shows a werewolf tearing open its shirt in front of an American flag, howling upward under the words I Voted.",
+      "claim": "The best-known 2024 Michigan winner, by 12-year-old Jane Hynous of Grosse Pointe, shows a werewolf tearing open its shirt in front of an American flag, howling upward under the words I Voted. The design was inspired by an internet meme, and it went viral on social media.",
       "evidence": "official record",
       "status": "verified",
       "src": "https://www.michigan.gov/sos/resources/news/2024/09/04/secretary-benson-announces-2024-i-voted-sticker-design-contest-winners",
@@ -1071,9 +1071,17 @@
         {
           "src": "https://www.michiganpublic.org/politics-government/2026-08-19/michigan-i-voted-sticker-contest-winners-chosen",
           "quote": "The first contest produced the iconic werewolf ripping its shirt off with the U.S. flag in the background by then-12-year-old Jane Hynous."
+        },
+        {
+          "src": "https://www.ypulse.com/newsfeed/2024/09/11/michigan-is-using-a-seventh-graders-meme-design-for-its-i-voted-stickers/",
+          "quote": "meme-lovers will likely recognize the werewolf image it's inspired by"
+        },
+        {
+          "src": "https://www.bostonglobe.com/2024/09/11/nation/michigan-werewolf-i-voted-sticker/",
+          "quote": "Jane’s drawing has gone viral on social media and appeared on national TV programs"
         }
       ],
-      "notes": "Official image alt text is only 'Werewolf I voted sticker'. Image itself (michigan.gov 2024-winners/Werewolf.jpg) checked: werewolf ripping its shirt open, flag behind, head tilted up with mouth open. No moon appears, so 'howling at the moon' is wrong. Age 12 comes from Michigan Public, not michigan.gov."
+      "notes": "Official image alt text is only 'Werewolf I voted sticker'. Image itself (michigan.gov 2024-winners/Werewolf.jpg) checked: werewolf ripping its shirt open, flag behind, head tilted up with mouth open. No moon appears, so 'howling at the moon' is wrong. Age 12 comes from Michigan Public, not michigan.gov. Nov 2, 2026: meme and viral wording added for 'i voted sticker meme' searches (YPulse, Boston Globe quotes, checked Nov 2). Neither names the meme; don't name it on the page."
     },
     {
       "id": "unv-mi-2024-print-run",
