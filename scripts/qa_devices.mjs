@@ -22,8 +22,10 @@ for (const [type, dev] of [[webkit, 'iPhone 13'], [webkit, 'iPhone SE'], [webkit
 	const first = await p.textContent('#state-opt-0');
 	if (!/^New York/.test(first || '')) { console.log(`  FAIL ${dev} es finder: "nueva y" first is ${first}`); fails++; }
 	await p.tap('#state-opt-0'); await p.waitForURL(BASE + 'es/new-york/');
-	const head = await p.$eval('#headline', (s) => s.options[s.selectedIndex].textContent);
-	if (head !== 'Vota temprano') { console.log(`  FAIL ${dev} es default message is ${head}`); fails++; }
+	// The default changes with the date (Vota temprano, then Vota el 3 nov, then Yo voté on Election Day); what has to
+	// hold is that it is one of the Spanish messages (app.js defaultHeadline).
+	const head = await p.$eval('#headline', (s) => s.value + ' ' + s.options[s.selectedIndex].textContent);
+	if (!/^(votatemprano|votacorreo|vota3nov|yavote) /.test(head)) { console.log(`  FAIL ${dev} es default message is ${head}, not a Spanish one`); fails++; }
 	const art = await p.$eval('.state-hero__sticker', (i) => i.src.slice(0, 22)).catch(() => 'none');
 	if (art !== 'data:image/png;base64,' && (await p.evaluate(() => innerWidth)) >= 860) { console.log(`  FAIL ${dev} es header sticker not drawn (${art})`); fails++; }
 	if (errs.length) { console.log(`  FAIL ${dev} errors: ${errs[0]}`); fails++; }

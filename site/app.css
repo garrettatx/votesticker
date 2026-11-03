@@ -156,6 +156,10 @@ h2 { margin: 0 0 var(--s3); color: var(--ink); font-size: var(--fs-h3); line-hei
 .jump .btn--line:hover { background: var(--cream); border-color: var(--cream); color: var(--ink); }
 .hero-meta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s2) var(--s4); margin-top: var(--s4); }
 .hero-meta .share { margin: 0; }
+/* In the hero's link row (November 2 polish): Copy link reads as a quiet link like Official info and the jump, not
+   a third button beside See stickers and Make your own. Same 44 px target (11 px above and below the line). */
+.hero-meta .share__btn { min-height: 0; padding: 11px 0; margin: -11px 0; border: 0; border-radius: 0; color: var(--band-text); font-weight: 600; }
+.hero-meta .share__btn:hover { background: transparent; color: var(--cream); text-decoration: underline; }
 .hero-meta__official, .hero-meta__jump { color: var(--band-text); font-size: var(--fs-sm); font-weight: 600; text-decoration: none; }
 .hero-meta__official:hover, .hero-meta__jump:hover { color: var(--cream); text-decoration: underline; }
 
@@ -821,8 +825,8 @@ button.link-quiet:hover { text-decoration: underline; }
 .paths a { color: var(--ink); font-weight: 700; text-decoration: underline; text-underline-offset: 0.16em; }
 
 /* County and city stickers under the state gallery (October 30): a plain list, place names linked to the office. */
-.more-stickers { margin: var(--s5) 0 0; max-width: 46rem; }
-.more-stickers h3 { margin: 0 0 var(--s2); color: var(--ink); font-size: var(--fs-h3); line-height: 1.2; }
+.more-stickers { margin: var(--s7) 0 0; max-width: 46rem; }
+.more-stickers h2 { margin: 0 0 var(--s2); color: var(--ink); font-size: var(--fs-h3); line-height: 1.2; }
 .more-stickers ul { margin: 0; padding-left: 1.2em; }
 .more-stickers li + li { margin-top: var(--s2); }
 .more-stickers a { color: var(--ink); font-weight: 700; text-decoration: underline; text-underline-offset: 0.16em; }
@@ -952,5 +956,6 @@ button.link-quiet:hover { text-decoration: underline; }
 .all__more a { color: var(--ink); font-weight: 700; }
 .states__allpage { margin: 0 0 var(--s3); font-weight: 700; }
 .states__allpage a { color: var(--ink); }
-.all__type { margin: var(--s4) 0 var(--s2); font-size: var(--fs-base); color: var(--ink); }
+/* Group labels (November 2 polish): a step larger, more room above than below, so each label reads as its row's. */
+.all__type { margin: var(--s6) 0 var(--s3); font-size: 1.125rem; line-height: 1.3; color: var(--ink); }
 .all__classic .all__type:first-child { margin-top: 0; }

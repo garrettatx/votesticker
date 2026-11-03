@@ -1391,3 +1391,14 @@ headings (99e1204). Footer consultancy line removed (cb9dc66). Every deploy pass
   peel. Logo 44 px and wordmark 1.75rem on phones, 48 px and 1.95rem from 600 px (were 40 px and 1.6rem); at 320 px
   the language button still has 12 px to spare. /stickers/ loses its "Every state, every design" eyebrow (the H1
   and lead say it). Mockup: scratchpad logo-animation-mockup.html (not in the repo).
+- **Polish from the outside design read (November 2).** Hero Copy link now a quiet link in the Official info row
+  (same 44 px target, still copies, GA4 event unchanged); /stickers/ group labels 1.125rem with 32 px above and 12
+  below. The rest is sorted in `docs/backlog.md` (Polish Pass): type and spacing scales after November 4, history
+  and home copy at December 1, four ideas left behind.
+- **Maker back right under the ready-made stickers (November 2, Garrett).** The County I Voted Stickers block (Oct
+  30) and Michigan's lead sticker story (Oct 31) sat between the gallery and the maker; both now follow the maker,
+  before the voting information. The county heading is an H2 now (it no longer belongs to the gallery). qa_facts
+  fails if any H2 sits between the gallery heading and the maker heading (plant: block moved back into the gallery,
+  fails on Texas). qa_devices' Spanish default check took "Vota temprano" literally; it now accepts any of the
+  Spanish defaults, since the default changes with the date. Known flake: iPad Mini (WebKit) on the local server
+  can report a sticker prefetch cut off by navigation; the same run against live passes.

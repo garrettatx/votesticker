@@ -1038,7 +1038,7 @@ function vote_more_stickers( $st ) {
 		$items .= '<li><a href="' . vote_e( $e['src'] ) . '" target="_blank" rel="noopener">' . vote_e( $e['place'][ $lang ] ) . '</a>: ' . vote_e( $text ) . '</li>';
 		$last = max( $last, $e['checked'] );
 	}
-	return '<div class="more-stickers"><h3 id="county-h">' . vote_e( sprintf( $h[ $es ? 1 : 0 ], $name ) ) . '</h3><ul>' . $items . '</ul><p class="hint">'
+	return '<div class="more-stickers"><h2 id="county-h">' . vote_e( sprintf( $h[ $es ? 1 : 0 ], $name ) ) . '</h2><ul>' . $items . '</ul><p class="hint">'
 		. vote_e( $es ? 'Cada enlace lleva a la oficina electoral que lo anunció. Revisado el ' . vote_checked( $last ) . '.' : 'Each link goes to the election office that announced it. Last checked ' . vote_checked( $last ) . '.' ) . '</p></div>';
 }
 
@@ -1656,9 +1656,7 @@ $vote_ld = array(
 			<?php // Not official (October 28, Garrett's OK): our designs are ours; where the state or a county hands out its own sticker, the story further down says which. ?>
 			<p class="hint gallery__note"><?php echo vote_e( t( 'Free designs by Vote Sticker, not affiliated with any election office. They aren’t proof of voting.' ) ); ?><?php if ( $vote_st && vote_fact( $vote_st, 'sticker.tradition' ) ) : ?> <a href="#sticker-h"><?php echo vote_e( t( 'See the stickers election offices hand out' ) ); ?></a>.<?php endif; ?></p>
 			<?php echo $vote_st ? vote_paths( $vote_st ) : ''; ?>
-			<?php echo $vote_st && $vote_files ? vote_more_stickers( $vote_st ) : ''; ?>
 		</section>
-		<?php echo $vote_st && vote_sticker_lead( $vote_st ) ? vote_sticker_story( $vote_st, true ) : ''; ?>
 
 		<?php $vote_maker_first = ! $vote_files; ?>
 		<h2 class="maker-h display-h<?php echo $vote_maker_first ? ' maker-h--first' : ''; ?>" id="maker-h"><?php echo vote_e( $vote_maker_first ? t( 'Make Your %s Sticker', $vote_st ? vote_lname( $vote_st ) : '' ) : t( 'Or Make Your Own' ) ); ?></h2>
@@ -1724,6 +1722,10 @@ $vote_ld = array(
 				</details>
 			</div>
 		</div>
+
+		<?php // County stickers and a state's lead sticker story sit after the maker (November 2, Garrett): the maker stays right under the ready-made stickers. ?>
+		<?php echo $vote_st && $vote_files ? vote_more_stickers( $vote_st ) : ''; ?>
+		<?php echo $vote_st && vote_sticker_lead( $vote_st ) ? vote_sticker_story( $vote_st, true ) : ''; ?>
 
 		<h2 class="display-h before-h" id="before-h"><?php echo vote_e( t( 'post' === vote_phase() ? 'Official Election Information' : ( $vote_st && vote_verified( $vote_st ) && 'mail' === $vote_st['kind'] ? 'How to Get Your Ballot In' : 'When, Where, and What to Bring' ) ) ); ?></h2>
 		<section class="info" id="info" aria-live="polite" aria-labelledby="before-h"><?php echo $vote_st ? vote_info( $vote_st ) : ''; ?></section>

@@ -61,7 +61,14 @@ for abbr, slug in slugs.items():
         if not guide and os.environ.get('VOTE_BETWEEN') != '1':
             fails.append(f'{lang}{slug}: facts file but no guide sections')
         # County and city stickers (sticker.more): one block, one item per entry, each linked to its source,
-        # an H3 that follows an H2 (no skipped level), and nothing on a state without entries.
+        # its heading after an H2 or H3 (no skipped level; an H2 since November 2, below the maker), and nothing on a
+        # state without entries.
+        # The maker sits right under the ready-made stickers (November 2, Garrett): no H2 between the gallery heading
+        # and the maker heading (county stickers and lead sticker stories go after the maker).
+        if 'id="gallery-h"' in h and 'id="maker-h"' in h:
+            between = h[h.index('id="gallery-h"'):h.rindex('<h2', 0, h.index('id="maker-h"'))]
+            if re.search(r'<h2\b', between):
+                fails.append(f'{lang}{slug}: a section heading sits between the sticker gallery and the maker')
         more = (json.loads((ROOT / 'build' / 'state-facts' / f'{abbr.lower()}.json').read_text()).get('sticker') or {}).get('more') or []
         blocks = re.findall(r'<div class="more-stickers">.*?</div>', h, re.S)
         if not more and blocks:
@@ -75,7 +82,7 @@ for abbr, slug in slugs.items():
                     fails.append(f'{lang}{slug}: county sticker links do not match the entries\' sources')
                 prev = re.findall(r'<h([1-6])\b', h[:h.index('<div class="more-stickers">')])
                 if not prev or prev[-1] not in ('2', '3'):
-                    fails.append(f'{lang}{slug}: county sticker H3 does not follow an H2 (last heading h{prev[-1] if prev else "none"})')
+                    fails.append(f'{lang}{slug}: county sticker heading does not follow an H2 or H3 (last heading h{prev[-1] if prev else "none"})')
                 if '—' in blocks[0]:
                     fails.append(f'{lang}{slug}: em dash in the county sticker block')
         g = ''.join(guide)
