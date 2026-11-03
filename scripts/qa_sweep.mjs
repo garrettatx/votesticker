@@ -42,7 +42,8 @@ for (const w of [390, 1280]) {
 			});
 			document.querySelectorAll('img').forEach((i) => { if (!i.closest('[hidden]') && i.getAttribute('src') !== 'data:,' && i.complete && i.currentSrc && !i.naturalWidth && i.loading !== 'lazy') { out.push('image failed: ' + i.getAttribute('src').slice(0, 60)); } });
 			const folded = (el) => { const d = el.closest('details:not([open])'); return d && !el.closest('summary'); };
-			document.querySelectorAll('a[href]').forEach((a) => { if (!a.closest('[hidden]') && !folded(a) && !(a.innerText || '').trim() && !a.getAttribute('aria-label') && !a.querySelector('img[alt]:not([alt=""]), svg[aria-label]')) { out.push('link with no name: ' + a.getAttribute('href').slice(0, 50)); } });
+			// /cdn-cgi/ links are Cloudflare's hidden bot-trap links, injected for automated browsers on the live site.
+			document.querySelectorAll('a[href]:not([href*="/cdn-cgi/"])').forEach((a) => { if (!a.closest('[hidden]') && !folded(a) && !(a.innerText || '').trim() && !a.getAttribute('aria-label') && !a.querySelector('img[alt]:not([alt=""]), svg[aria-label]')) { out.push('link with no name: ' + a.getAttribute('href').slice(0, 50)); } });
 			let last = 0;
 			document.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach((h) => {
 				if (h.closest('[hidden]')) { return; }
