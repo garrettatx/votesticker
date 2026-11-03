@@ -153,6 +153,7 @@ def main():
     # One rule per version: production Pages leaves a placeholder in the query string unfilled
     # (utm_content=%3Aversion live on October 24), though the path placeholder works.
     utm = 'utm_source=sticker_post&utm_medium=social&utm_campaign=vote_2026'
+    SHARE_NETS = ('facebook', 'threads', 'bluesky', 'whatsapp')  # index.php vote_share_row() links to these
     # Renamed sticker images (October 31: the Spanish bespoke stickers went from YA VOTÉ to YO VOTÉ, files
     # <state>-ya-vote-... to <state>-yo-vote-...): one static 301 per old URL, from build/image-renames.json.
     # Cloudflare Pages allows 2,000 static and 100 dynamic rules; a splat can't match part of a file name.
@@ -164,6 +165,8 @@ def main():
         raise SystemExit(f'{len(renames)} static redirects; Cloudflare Pages allows 2,000')
     (DIST / '_redirects').write_text(''.join(f"{r['old']} {r['new']} 301\n" for r in renames) + ''.join(
         ''.join(f'{p}go/:state/{v} /{p[1:]}:state/?{utm}&utm_content={v} 302\n' for v in ('plan', 'short', 'friends', 'official'))
+        # Share row under the maker (November 3): one short link per network, tagged with that network as the source.
+        + ''.join(f'{p}go/:state/{n} /{p[1:]}:state/?utm_source={n}&utm_medium=social&utm_campaign=vote_2026&utm_content=share_row 302\n' for n in SHARE_NETS)
         + f'{p}go/:state/* /{p[1:]}:state/?{utm} 302\n{p}go/:state /{p[1:]}:state/?{utm} 302\n'
         for p in ('/es/', '/')))
     print(f'dist/: {copied} files copied, {len(pages)} pages rendered, sitemap {len(urls)} URLs, {cals} calendar files')

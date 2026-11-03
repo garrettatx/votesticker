@@ -2,6 +2,21 @@
 
 Open items, newest first. Started October 21, 2026. Move an item to `docs/history.md` when it ships.
 
+## Share Row Follow-Ups (November 3)
+
+- **Share row under the ready-made gallery too.** Today the row sits only under the maker's download buttons, so
+  someone who saves a ready-made sticker sees just the hero's Copy link. One more row right under the gallery
+  (not inside the sticker cards, no popup) needs the component to render twice: classes instead of ids, each Copy
+  link with its own feedback, and a placement parameter on the `share` event (`gallery`, `maker`).
+- **Gallery note to the footer? (Garrett, November 3).** Proposal: move "More designs: classic stickers · every
+  state's stickers" into the footer's links, and keep one short line under the stickers, "Not official and not
+  proof of voting. Official stickers ↓". That disclaimer earns its spot next to the stickers people save; in the
+  footer nobody reads it before they save one.
+- **Hero link label.** Perplexity suggested "Copy page link" in place of "Copy link to this Tennessee page"
+  (shorter in the hero's utility row). Keep the hero link either way: a jump to the share row would skip the gallery.
+- **X in the share row.** Left out on November 3 (Garrett: not needed); phones reach it through the share sheet.
+  Add `x` to SHARE_NETS and vote_share_row() if GA4 shows people asking for it.
+
 ## Polish Pass From the Outside Design Read (November 2)
 
 Garrett pasted an outside read (state hero, /stickers/, history, home) and asked for the polish items that add the

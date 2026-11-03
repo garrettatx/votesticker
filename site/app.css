@@ -793,6 +793,26 @@ body.is-holding { overflow: hidden; }
 .link-quiet { display: inline-flex; align-items: center; }
 button.link-quiet { background: none; border: 0; color: var(--ink); font: inherit; font-size: var(--fs-sm); font-weight: 700; cursor: pointer; }
 button.link-quiet:hover { text-decoration: underline; }
+.share-block { margin: var(--s4) 0 0; }
+.share-block__h { margin: 0; color: var(--ink); font-size: var(--fs-sm); font-weight: 700; }
+/* Quiet controls (Nov 3): no borders, a light tint on hover, so Download stays the one strong button. The list
+   sits 10px left so the first icon lines up with the heading. Phones: a two-column grid that wraps evenly. */
+.share-to { display: flex; flex-wrap: wrap; gap: 2px 4px; margin: var(--s1) 0 0 -10px; padding: 0; list-style: none; }
+.share-to .pill { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 10px; border: 0; border-radius: 8px; background: transparent; color: var(--ink); font: inherit; font-size: var(--fs-sm); font-weight: 600; line-height: 1.2; text-decoration: none; white-space: nowrap; cursor: pointer; }
+.share-to .pill svg { flex: none; }
+.share-to .pill:visited { color: var(--ink); }
+@media (hover: hover) { .share-to .pill:hover { background: var(--line); text-decoration: underline; } }
+.share-to .pill:focus-visible { outline: 2px solid var(--ink); outline-offset: 0; }
+@media (max-width: 30rem) {
+	.share-to { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+	.share-to .pill { width: 100%; white-space: normal; }
+}
+.share-to .i-check { display: none; }
+.share-to .is-copied .i-link { display: none; }
+.share-to .is-copied .i-check { display: inline; }
+.share-to .is-copied { background: var(--line); }
+.share-manual { margin: var(--s2) 0 0; font-size: var(--fs-sm); }
+.share-manual input { width: 100%; max-width: 28rem; min-height: 44px; margin-top: var(--s1); padding: 0 10px; border: 1.5px solid #7D8DB6; border-radius: 8px; background: #fff; color: var(--ink); font: inherit; }
 .post summary, .more summary, .states__all summary, .faq summary { min-height: 44px; padding: 8px 0; box-sizing: border-box; }
 .faq summary { padding: 0; }
 .near li { padding: 0; }

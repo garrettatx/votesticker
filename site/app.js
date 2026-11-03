@@ -2110,9 +2110,10 @@
 		// After the picture is on its way, one quiet line about the sticker's history (never before).
 		var more = $('after-save');
 		if (more) { setTimeout(function () { more.hidden = false; }, 600); }
-		// An I voted message (any language): ask them to pass the page on (index.php leaves #nudge out after Nov 3).
-		var nudge = $('nudge');
-		if (nudge && /^(ivoted|yavote|voted|yavotetemprano|mailed|ballotin|yavotecorreo|firsttime|miprimervoto)$/.test(state.headline)) { setTimeout(function () { nudge.hidden = false; }, 600); }
+		// An I voted message (any language): the share row's heading asks them to pass the page on. The row itself is
+		// always there, in the same place; only the words change. Not after Election Day (nobody left to nudge).
+		var shareH = $('share-h');
+		if (shareH && window.VOTE_PHASE !== 'post' && /^(ivoted|yavote|voted|yavotetemprano|mailed|ballotin|yavotecorreo|firsttime|miprimervoto)$/.test(state.headline)) { shareH.textContent = T("Send this page to someone who hasn't voted yet."); }
 	}
 
 	var current = { blob: null, url: null, name: '' };
@@ -2609,25 +2610,88 @@
 		// the share sheet instead; the clipboard is the fallback everywhere.
 		var shareBtn = $('share-link');
 		if (shareBtn) {
-			if ($('nudge-share')) { $('nudge-share').addEventListener('click', function () { shareBtn.click(); }); }
 			var shareUrl = shareBtn.dataset.url, shareTitle = shareBtn.dataset.title, shareLabel = $('share-label').textContent;
 			var said = function (t) { $('share-label').textContent = t; setTimeout(function () { $('share-label').textContent = shareLabel; }, 2200); };
-			shareBtn.addEventListener('click', function () {
-				// GA4's recommended share event; content_type page tells it apart from a saved sticker.
-				var shared = function (method) { track('share', { method: method, content_type: 'page', item_id: state.state || 'hub' }); };
-				if (navigator.share && /Android|iPhone|iPad/.test(navigator.userAgent)) {
-					navigator.share({ title: shareTitle, url: shareUrl }).then(function () { shared('share_sheet'); }, function () {});
-					return;
-				}
+			// GA4's recommended share event; content_type page tells it apart from a saved sticker.
+			var shared = function (method) { track('share', { method: method, content_type: 'page', item_id: state.state || 'hub' }); };
+			var copyLink = function () {
 				var copied = function () { said(T('Link copied')); shared('copy_link'); };
 				var fallback = function () {
 					var t = document.createElement('textarea');
 					t.value = shareUrl; t.setAttribute('readonly', ''); t.style.position = 'fixed'; t.style.left = '-9999px';
 					document.body.appendChild(t); t.select();
-					try { document.execCommand('copy'); copied(); } catch (e) { said(T('Copy this: ') + shareUrl); }
+					try { if (!document.execCommand('copy')) { throw new Error('copy'); } copied(); } catch (e) { said(T('Copy this: ') + shareUrl); }
 					document.body.removeChild(t);
 				};
 				if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(shareUrl).then(copied, fallback); } else { fallback(); }
+			};
+			shareBtn.addEventListener('click', function () {
+				if (navigator.share && /Android|iPhone|iPad/.test(navigator.userAgent)) {
+					navigator.share({ title: shareTitle, url: shareUrl }).then(function () { shared('share_sheet'); }, function () {});
+					return;
+				}
+				copyLink();
+			});
+		}
+
+		// The share row under the nudge (Nov 3): a share-sheet pill where the device has one, plain network links, and
+		// Copy link. All of them send GA4's recommended share event with method = where it went; a network link counts
+		// the composer opening (an intent, not a finished post), Copy link only a write that succeeded.
+		var row = document.querySelector('.share-to');
+		if (row) {
+			var rowUrl = row.dataset.url, rowTitle = row.dataset.title, status = $('share-status');
+			var rowShared = function (method) { track('share', { method: method, content_type: 'page', item_id: state.state || 'hub' }); };
+			var sheet = $('share-sheet'), sheetData = { title: rowTitle, url: rowUrl }, sheetOpen = false;
+			// Shown wherever the browser can share this payload, desktop included (feature check, not a device guess:
+			// Perplexity edge-case read, Nov 3).
+			var canSheet = typeof navigator.share === 'function';
+			if (canSheet && typeof navigator.canShare === 'function') { try { canSheet = navigator.canShare(sheetData); } catch (e) { canSheet = false; } }
+			if (canSheet) {
+				$('share-sheet-li').hidden = false;
+				sheet.addEventListener('click', function () {
+					if (sheetOpen) { return; }  // a second tap while the sheet is up throws InvalidStateError
+					sheetOpen = true;
+					// Called straight from the tap: share() needs the tap's activation, so nothing is awaited first.
+					navigator.share(sheetData).then(function () { sheetOpen = false; rowShared('share_sheet'); }, function (e) {
+						sheetOpen = false;
+						// AbortError is the person closing the sheet: nothing to say. Anything else (an in-app browser that
+						// refuses, a policy block) gets a short note; the links and Copy link are still right there.
+						if (!e || e.name !== 'AbortError') { $('share-note').textContent = T("Sharing isn't available here. Use a link below or copy the page link."); $('share-note').hidden = false; }
+					});
+				});
+			}
+			Array.prototype.forEach.call(row.querySelectorAll('a[data-net]'), function (a) {
+				a.addEventListener('click', function () { rowShared(a.dataset.net); });
+			});
+			var copyBtn = $('copy-link'), copyLabel = $('copy-link-label'), copyText = copyLabel.textContent, copyTimer;
+			var manual = $('share-manual'), manualUrl = $('share-manual-url');
+			var copyDone = function () {
+				clearTimeout(copyTimer);
+				manual.hidden = true;
+				copyLabel.textContent = T('Link copied'); copyBtn.classList.add('is-copied'); status.textContent = T('Link copied');
+				copyTimer = setTimeout(function () { copyLabel.textContent = copyText; copyBtn.classList.remove('is-copied'); status.textContent = ''; }, 2000);
+				try { rowShared('copy_link'); } catch (e) {}
+			};
+			// Last resort: the URL in a selected field to copy by hand. No share event: nothing was copied.
+			var copyManual = function () {
+				clearTimeout(copyTimer);
+				copyLabel.textContent = copyText; copyBtn.classList.remove('is-copied');
+				manual.hidden = false; manualUrl.focus(); manualUrl.select();
+			};
+			// The old textarea copy, run inside the tap (it fails once the tap's activation is spent).
+			var legacyCopy = function () {
+				var t = document.createElement('textarea'), ok = false;
+				t.value = rowUrl; t.setAttribute('readonly', ''); t.style.position = 'fixed'; t.style.left = '-9999px';
+				document.body.appendChild(t); t.select();
+				try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+				document.body.removeChild(t);
+				copyBtn.focus();
+				return ok;
+			};
+			copyBtn.addEventListener('click', function () {
+				if (navigator.clipboard && navigator.clipboard.writeText) {
+					navigator.clipboard.writeText(rowUrl).then(copyDone, copyManual);
+				} else if (legacyCopy()) { copyDone(); } else { copyManual(); }
 			});
 		}
 

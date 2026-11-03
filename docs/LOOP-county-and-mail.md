@@ -1421,3 +1421,19 @@ headings (99e1204). Footer consultancy line removed (cb9dc66). Every deploy pass
   doubled words, a space before punctuation, em dashes, "tomorrow/tonight". First run: only the script's own false
   positives (folded A to Z links, a heading word repeated on the next line, "en la mañana", hidden maker
   placeholders); after tuning, PASS. Plants: `--plant text` and `--plant overflow` both fail.
+- **Share this page row (November 3, Garrett, with five Perplexity reads).** Under the maker's Download / Open full
+  image, visible from the start: "Share this page", then quiet icon-and-label controls in the site's navy (no
+  borders, light tint on hover, two columns on phones): Share… (only where `navigator.share` takes the payload,
+  desktop included), Facebook, Threads, Bluesky, WhatsApp, Copy link. After an I voted save the heading becomes
+  "Send this page to someone who hasn't voted yet." (not after Election Day). Plain links built in PHP
+  (`vote_share_row()`), no library, nothing from a social site loads before a click; brand marks are Simple Icons
+  13.0.0 (CC0), inline. Each network link carries `/go/<state>/<network>`, a new 302 in dist/_redirects to the
+  state page tagged utm_source=<network>, utm_medium=social, utm_campaign=vote_2026, utm_content=share_row; the
+  caption's /go/ versions are unchanged. Copy link copies the plain page URL; checkmark + "Link copied" for 2 s, a
+  live region announces it; a refused clipboard shows the URL in a selected field and sends no event. GA4: the
+  recommended `share` event, method = the network, copy only after the write, share_sheet only after it resolved.
+  The caption section is relabeled "Copy a caption for your sticker", still folded, now right after the row; the
+  history line follows it. X left out (Garrett). QA: `scripts/qa_share.mjs` (4 widths x 3 pages, real paste round
+  trip, decoded hrefs, focus, targets, share-sheet resolve/cancel/refuse/double tap, WebKit; plants href and copy
+  fail) and `scripts/qa_share_downloads.mjs` (real downloaded files before and after share actions, edits not
+  stale, two ready-made files, caption versions and paste). Follow-ups in docs/backlog.md (Share Row Follow-Ups).

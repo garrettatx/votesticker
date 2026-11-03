@@ -32,7 +32,7 @@ Search Console `sc-domain:votesticker.org`. Both are read by the shared service 
 | `sticker_save_cancel` | iPhone share sheet closed (AbortError) | same as `sticker_save`, `save_method` `cancelled` |
 | `sticker_hold_open` | The press-and-hold view opened instead (from Oct 27; before that it counted as `sticker_save`). Not a save | same as `sticker_save`, `save_method` `press_hold` (no file ready, or no file sharing) or `share_error` (the share sheet failed for a reason other than closing) |
 | `post_text_copy` | Copy post text | `state`, `message`, `post_variant` (`plan`, `short`, `friends`, `official`), `post_edited` (`yes`, `no`) |
-| `share` | Page link shared or copied | `method` (`share_sheet`, `copy_link`), `content_type` `page`, `item_id` (state or `hub`) |
+| `share` | Page link shared or copied. For a network it is the composer opening (an intent, not a finished post); `copy_link` only after the clipboard write succeeded; `share_sheet` only after the share promise resolved | `method` (`share_sheet`, `copy_link`, and from Nov 3 the share row's `facebook`, `threads`, `bluesky`, `whatsapp`), `content_type` `page`, `item_id` (state or `hub`). GA4 also logs its own outbound `click` for the network links; that is a separate event, not a second share |
 | `state_search_miss` | The state finder matched nothing (on Enter, Go or leaving the box; once per term per page) | `search_term` |
 
 Message ids are per language: English `early`, `nov3`, `ivoted`, `voted`, `mail`, `mailed`, `ballotin`,
