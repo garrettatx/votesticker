@@ -1811,12 +1811,16 @@ $vote_ld = array(
 			<?php echo $vote_li( "Maryland's State Board of Elections has 2026 I voted stickers to download, including an America 250 design in English and Spanish.", 'https://elections.maryland.gov/elections/2026/index.html#i_voted', 'Get Maryland’s stickers' ); ?>
 			<?php echo $vote_li( "Washington's Secretary of State has eight I voted images to use as a profile picture.", 'https://www.sos.wa.gov/i-voted-downloadable-sticker', 'Get Washington’s sticker' ); ?>
 			<?php echo $vote_li( 'Multnomah County, Oregon, has a virtual sticker in 11 languages.', 'https://multco.us/info/virtual-i-voted-sticker', 'Get Multnomah County’s sticker' ); ?>
-			<?php echo $vote_li( "Oregon's Secretary of State has I Voted and I Voted By Mail virtual stickers.", 'https://results.oregonvotes.gov/Pages/media-resources.aspx', 'Get Oregon’s stickers' ); ?>
+			<?php echo $vote_li( "Oregon's Secretary of State has I Voted and I Voted By Mail virtual stickers.", 'https://sos.oregon.gov/pages/media-resources.aspx', 'Get Oregon’s stickers' ); ?>
+			<?php // Nov 2: the old results.oregonvotes.gov link redirected to an error page; Lane County read the same night (English and Spanish PNGs download). ?>
+			<?php echo $vote_li( 'Lane County, Oregon, has a virtual I Voted sticker in English and Spanish.', 'https://www.lanecountyor.gov/government/county_departments/county_administration/general_county_administration/operations/county_clerk/elections/i_voted_stickers', 'Get Lane County’s stickers' ); ?>
 			<?php echo $vote_li( 'Colorado voters signed up for BallotTrax get a digital Blucifer I Voted sticker once their mail ballot is accepted. It comes in the notification, not as a public download.', 'https://www.sos.state.co.us/pubs/newsRoom/pressReleases/2026/PR20261012StickerContest.html', 'Colorado’s announcement' ); ?>
 			<?php echo $vote_li( 'Grand Rapids, Michigan, has digital I voted stickers in nine languages, including Arabic, Burmese, Kinyarwanda and Nepali.', 'https://www.grandrapidsmi.gov/departments/clerks-office/elections/grvotes/', 'Get Grand Rapids’ stickers' ); ?>
 			<?php echo $vote_li( 'Ann Arbor, Michigan, has digital I voted stickers in eight languages, from Arabic to Korean.', 'https://www.a2gov.org/city-clerk/elections/a2votes/', 'Get Ann Arbor’s stickers' ); ?>
 			<?php // Oct 31 (pass 10): read on the city's page with curl: eight languages, "¡YO VOTÉ! - SPANISH STICKER", a First-Time Voter sticker. ?>
 			<?php echo $vote_li( 'Portage, Michigan, has #PortageVotes digital I voted stickers in eight languages, including a ¡YO VOTÉ! sticker in Spanish, plus a First-Time Voter sticker.', 'https://www.portagemi.gov/852/PortageVotes', 'Get Portage’s stickers' ); ?>
+			<?php // Nov 2: read on the board's page (Ohio outline I Voted sticker, 600 px PNG, "save it, and share it"). ?>
+			<?php echo $vote_li( 'Cuyahoga County, Ohio, has a digital I Voted sticker to save and share after you vote by mail.', 'https://boe.cuyahogacounty.gov/i-voted-sticker', 'Get Cuyahoga County’s sticker' ); ?>
 			<?php echo $vote_li( 'Voting from another country? The Federal Voting Assistance Program has an "I Voted From" sticker for each country.', 'https://www.fvap.gov/IVotedSticker', 'Find your country' ); ?>
 		</ul>
 		<p><?php echo vote_e( t( 'Don’t see your state? Make a sticker with your state’s name above.' ) ); ?></p>

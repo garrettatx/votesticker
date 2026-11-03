@@ -7794,7 +7794,7 @@ return array(
 		'dates.reg_deadline' => array(
 			'en' => 'Registration for the general election closed October 19, 2026. Not sure you\'re registered? Check the state\'s Voter Information Portal.',
 			'es' => 'El registro para la elección general cerró el 19 de octubre de 2026. ¿No sabes si estás registrado? Revisa el portal oficial de información para votantes del estado (Voter Information Portal).',
-			'src' => 'https://sdsos.gov/elections-voting/upcoming-elections/general-information/2026%20Election%20Information/2026-Election-Information.aspx',
+			'src' => 'https://sdsos.gov/elections-voting/upcoming-elections/general-information/2026-Election-Information.aspx',
 			'checked' => '2026-10-21',
 		),
 		'dates.mail_request' => array(

@@ -1402,3 +1402,13 @@ headings (99e1204). Footer consultancy line removed (cb9dc66). Every deploy pass
   fails on Texas). qa_devices' Spanish default check took "Vota temprano" literally; it now accepts any of the
   Spanish defaults, since the default changes with the date. Known flake: iPad Mini (WebKit) on the local server
   can report a sticker prefetch cut off by navigation; the same run against live passes.
+- **Official digital stickers rechecked (November 2, Garrett: remove dead links, add verified ones).** Every link
+  in the home page's Official Digital Stickers and contest lists rendered in Chrome. Oregon's results.oregonvotes.gov
+  media page redirected to an error page with a 200: now sos.oregon.gov/pages/media-resources.aspx (I Voted and I
+  Voted By Mail JPGs, both 200). Added Lane County, Oregon (English and Spanish PNGs download) and Cuyahoga County,
+  Ohio (Ohio-outline I Voted PNG, 600 px). Left out from the pasted list: Pierce County (a 2023 toolkit) and
+  contest-only pages (Ohio America 250, Williamson, Johnson, El Paso), which offer no download. New Hampshire's
+  contest PDF answers 403 to scripts but loads in Chrome. qa_links now covers the home pages and treats a 200 on an
+  error page as dead (path only; plant: the old Oregon URL fails). It found two dead South Dakota links (2026
+  election information, voter ID), now the moved election page and the Voting page's photo ID list, fixed in
+  sd.json and docs/faq-sources.json and regenerated.

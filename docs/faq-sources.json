@@ -1198,7 +1198,7 @@
   "id": {
    "rule": "photo_requested",
    "summary": "You will be asked for a photo ID, such as a South Dakota driver's license. Without one, you can sign a personal identification affidavit and vote a regular ballot.",
-   "source": "https://sdsos.gov/elections-voting/voting/voter-id.aspx",
+   "source": "https://sdsos.gov/elections-voting/voting/default.aspx",
    "quote": "If you do not have a photo ID, you can sign a personal identification affidavit, and will still be allowed to vote a regular ballot."
   },
   "registration": {
