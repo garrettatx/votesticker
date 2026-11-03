@@ -1383,3 +1383,11 @@ headings (99e1204). Footer consultancy line removed (cb9dc66). Every deploy pass
   yet?". No "today" anywhere: the post-election build can start hours late on November 4. Titles and
   descriptions unchanged. Built as November 2, nothing changes. QA on the November 3 build: qa_seo, qa_es,
   qa_facts, qa_stale (0 stale), qa_eday_bar --expect on, qa_save, qa_stickers, qa_history all pass.
+- **Logo animation and a bigger logo (November 2, Garrett picked B then E from the mockup).** Once per page load,
+  about two seconds, left to right: a light band crosses the red star (clipped to the star), then the peeled corner
+  lifts a little and settles. Inline SVG plus CSS, no JavaScript; the moving parts start still and invisible and
+  only animate inside `prefers-reduced-motion: no-preference`, so reduced motion gets the plain logo (and a
+  preference switched on mid-play stops it). Tried and dropped: an outside sparkle, a press-flat fold, a deeper
+  peel. Logo 44 px and wordmark 1.75rem on phones, 48 px and 1.95rem from 600 px (were 40 px and 1.6rem); at 320 px
+  the language button still has 12 px to spare. /stickers/ loses its "Every state, every design" eyebrow (the H1
+  and lead say it). Mockup: scratchpad logo-animation-mockup.html (not in the repo).

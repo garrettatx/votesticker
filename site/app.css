@@ -96,9 +96,29 @@ h2 { margin: 0 0 var(--s3); color: var(--ink); font-size: var(--fs-h3); line-hei
 .top .lead { margin: 0; max-width: 38rem; font-size: var(--fs-lg); line-height: 1.5; color: var(--band-text); }
 
 .brand { display: inline-flex; align-items: center; gap: 10px; margin: 0 0 var(--s5); color: var(--cream); }
-.brand__mark { flex: none; width: 40px; height: 40px; transform: rotate(-8deg); }
-.brand__name { font-family: "Vote Display", Impact, sans-serif; font-size: 1.6rem; letter-spacing: 0.02em; line-height: 1; white-space: nowrap; }
+.brand__mark { flex: none; width: 44px; height: 44px; transform: rotate(-8deg); }
+.brand__name { font-family: "Vote Display", Impact, sans-serif; font-size: 1.75rem; letter-spacing: 0.02em; line-height: 1; white-space: nowrap; }
+/* Logo and wordmark one step larger (November 2, Garrett): 44 px and 1.75rem on phones, 48 px and 1.95rem from 600 px. */
+@media (min-width: 600px) { .brand__mark { width: 48px; height: 48px; } .brand__name { font-size: 1.95rem; } }
 .brand__hi { color: var(--gold); }
+/* Logo animation (November 2, Garrett's pick: options B then E from the mockup). Once per page load, about two
+   seconds, left to right: a light band crosses the star, then the peeled corner lifts a little and settles back. CSS only. It starts and
+   ends on the resting logo, so reduced motion (or a preference switched on mid-play) gets the plain logo. */
+.brand__glint { opacity: 0; }
+.brand__curl { transform-box: view-box; transform-origin: 30.7px 30.7px; }
+@media (prefers-reduced-motion: no-preference) {
+	.brand__glint { animation: brand-glint 750ms ease-out 450ms 1 both; }
+	.brand__curl { animation: brand-peel 900ms ease-in-out 1050ms 1 both; }
+}
+@keyframes brand-peel {
+	0%, 100% { transform: scale(1); }
+	45% { transform: scale(1.45); }
+}
+@keyframes brand-glint {
+	0% { opacity: 0; transform: translateX(0); }
+	20%, 75% { opacity: .85; }
+	100% { opacity: 0; transform: translateX(24px); }
+}
 .brand__tag { display: none; font-size: var(--fs-sm); color: var(--band-text); padding-left: var(--s3); border-left: 1px solid #5D6F9C; }
 @media (min-width: 600px) { .brand__tag { display: inline; } }
 .brand:hover .brand__name { text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 2px; }

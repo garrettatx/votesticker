@@ -1331,8 +1331,8 @@ if ( $vote_stickers ) {
 	$vote_page = array(
 		'title' => t( 'All I Voted Stickers by State: Every Free Design | Vote Sticker' ),
 		'h1' => t( 'All I Voted Stickers' ),
-		'eyebrow' => t( 'Every state, every design' ),
-		'lead' => t( 'Every ready-made Vote Sticker design for all 50 states and DC on one page. Tap one to save it, or open your state to make your own.' ),
+		'eyebrow' => '',  // the H1 and lead already say every state (November 2 polish pass)
+				'lead' => t( 'Every ready-made Vote Sticker design for all 50 states and DC on one page. Tap one to save it, or open your state to make your own.' ),
 		'desc' => t( 'See every free digital I voted sticker from Vote Sticker in one place, for all 50 states and DC. Tap a design to save it, or make your own with your state’s name.' ),
 		'index' => ! vote_es() || VOTE_ES_INDEX,
 	);
@@ -1467,7 +1467,7 @@ $vote_ld = array(
 	<div class="wrap">
 		<div class="top__bar">
 		<a class="brand" href="<?php echo vote_pbase(); ?>"<?php echo $vote_st ? '' : ' aria-current="page"'; ?>>
-			<svg class="brand__mark" aria-hidden="true" viewBox="0 0 40 40" width="40" height="40"><path d="M37.61 23.74A18 18 0 1 0 23.74 37.61Z" fill="#FBF6E8"/><path d="M37.61 23.74A18 18 0 1 0 23.74 37.61Z" fill="none" stroke="#14295E" stroke-width="1.6" transform="translate(20 20) scale(.8) translate(-20 -20)"/><path d="M37.61 23.74L23.74 37.61Q26.4 26.4 37.61 23.74Z" fill="#D9C99A"/><path d="M18.60 9.80 L20.77 15.61 L26.97 15.88 L22.12 19.74 L23.77 25.72 L18.60 22.30 L13.43 25.72 L15.08 19.74 L10.23 15.88 L16.43 15.61Z" fill="#C1272D"/>
+			<svg class="brand__mark" aria-hidden="true" viewBox="0 0 40 40" width="40" height="40"><path d="M37.61 23.74A18 18 0 1 0 23.74 37.61Z" fill="#FBF6E8"/><path d="M37.61 23.74A18 18 0 1 0 23.74 37.61Z" fill="none" stroke="#14295E" stroke-width="1.6" transform="translate(20 20) scale(.8) translate(-20 -20)"/><path class="brand__curl" d="M37.61 23.74L23.74 37.61Q26.4 26.4 37.61 23.74Z" fill="#D9C99A"/><path d="M18.60 9.80 L20.77 15.61 L26.97 15.88 L22.12 19.74 L23.77 25.72 L18.60 22.30 L13.43 25.72 L15.08 19.74 L10.23 15.88 L16.43 15.61Z" fill="#C1272D"/><clipPath id="brand-star-clip"><path d="M18.60 9.80 L20.77 15.61 L26.97 15.88 L22.12 19.74 L23.77 25.72 L18.60 22.30 L13.43 25.72 L15.08 19.74 L10.23 15.88 L16.43 15.61Z"/></clipPath><g clip-path="url(#brand-star-clip)"><path class="brand__glint" d="M7 6h4l-5 22h-4z" fill="#FFF4D6"/></g>
 </svg>
 			<span class="brand__name">VOTE <span class="brand__hi">STICKER</span></span>
 			<span class="brand__tag"><?php echo vote_e( t( "Show your friends you're voting." ) ); ?></span>
