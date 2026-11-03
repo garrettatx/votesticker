@@ -249,8 +249,9 @@
 	}
 	// The state's own message (VOTE EARLY, VOTE BY MAIL, VOTE NOV 3): share images and the ready-made sets.
 	function stateHeadline(st) { return PHASE === 'post' ? 'ivoted' : !hasEarly(st) || earlyOver(st) ? 'nov3' : st.kind === 'mail' ? 'mail' : 'early'; }
+	// Election Day itself (index.php vote_day_of()): the maker opens on I voted; share images keep the state's message.
 	function defaultHeadline(st) {
-		var k = stateHeadline(st);
+		var k = window.VOTE_DAY_OF ? 'ivoted' : stateHeadline(st);
 		return LANG === 'es' ? { early: 'votatemprano', mail: 'votacorreo', nov3: 'vota3nov', ivoted: 'yavote' }[k] : k;
 	}
 	function headlineLines(key, st) {

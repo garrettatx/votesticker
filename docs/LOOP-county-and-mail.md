@@ -1374,3 +1374,12 @@ headings (99e1204). Footer consultancy line removed (cb9dc66). Every deploy pass
   doesn't. Decided against a meme page or funny builder messages: partisan drift, other people's images, and
   EN/ES fit QA per message for 30 to 100 searches a month. Ulster County's 2022 sticker is the spider-legged
   head, not a werewolf.
+- **Election Day build: I voted is the default, heroes lead with voting (November 2, Garrett: "after 8p push
+  and onward").** `vote_day_of()` is true for pages built as November 3 (the 8 p.m. run and the November 3 runs).
+  The maker opens on I voted (Yo voté) in every state; VOTE NOV 3 stays in the list. State heroes for ended and
+  Election-Day-only states: ribbon VOTE ON ELECTION DAY, NOV 3 and the lead "Election Day is Tuesday, November 3.
+  Vote, then grab a ready-made sticker or make your own for your profile picture." (Spanish too); mail states keep
+  their deadline ribbon and lead. The I voted caption drops "Early voting ended..." and asks "Have you voted
+  yet?". No "today" anywhere: the post-election build can start hours late on November 4. Titles and
+  descriptions unchanged. Built as November 2, nothing changes. QA on the November 3 build: qa_seo, qa_es,
+  qa_facts, qa_stale (0 stale), qa_eday_bar --expect on, qa_save, qa_stickers, qa_history all pass.

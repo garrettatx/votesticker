@@ -391,6 +391,12 @@ function vote_meta( $st ) {
 		$status = 'Election Day · Nov 3';
 		$family = 'unchecked';
 	}
+	// Built as Election Day (vote_day_of(), the 8 p.m. November 2 run onward): the hero leads with voting, not with
+	// early voting having ended. No "today": the post-election build can start hours late on November 4.
+	if ( vote_day_of() && 'mail' !== $kind ) {
+		$ribbon = 'VOTE ON ELECTION DAY, NOV 3';
+		$lead = 'Election Day is Tuesday, November 3. Vote, then ' . ( $n ? 'grab a ready-made sticker or make your own for your profile picture.' : 'make your sticker for your profile picture.' );
+	}
 	return array(
 		'slug' => vote_slug( $st['name'] ),
 		// "I voted sticker" is the term people search (Ahrefs, October 19); long names drop "and Vote" to fit.
@@ -482,6 +488,10 @@ function vote_meta_es( $st ) {
 		$fact = 'El Día de las Elecciones es el martes 3 de noviembre. Aún no hemos verificado las fechas de votación anticipada de ' . $name . '.';
 		$lead = $grab . ' El Día de las Elecciones es el martes 3 de noviembre. Aún no hemos verificado las fechas de votación anticipada de ' . $name . ', así que estos stickers dicen Día de las Elecciones.';
 		$status = 'Día de las Elecciones · 3 nov';
+	}
+	if ( vote_day_of() && 'mail' !== $kind ) {
+		$ribbon = 'VOTA EL DÍA DE LAS ELECCIONES, 3 NOV';
+		$lead = 'El Día de las Elecciones es el martes 3 de noviembre. Vota y luego ' . ( $n ? 'toma un sticker listo para usar o crea el tuyo para tu foto de perfil.' : 'crea tu sticker para tu foto de perfil.' );
 	}
 	return array(
 		'slug' => vote_slug( $st['name'] ),
@@ -832,9 +842,13 @@ const VOTE_POST_KINDS = array( 'pre_early', 'pre_mail', 'pre_day', 'post', 'post
 // Every version ends with the invite to make a sticker and three or four matching hashtags.
 const VOTE_POST_VARIANTS = array( 'plan' => 'Plan', 'short' => 'Short', 'friends' => 'Friends', 'official' => 'Official info' );
 
-// The version that matches the state's default sticker (app.js stateHeadline()).
+// Pages built as Election Day itself (the 8 p.m. November 2 run onward): the maker opens on I voted, since most
+// people making a sticker that day have voted or are on their way. VOTE NOV 3 stays one tap away in the list.
+function vote_day_of() { return 'eday' === vote_phase() && vote_today() >= VOTE_ELECTION_DAY; }
+
+// The version that matches the state's default sticker (app.js defaultHeadline()).
 function vote_post_default( $st ) {
-	if ( 'post' === vote_phase() ) { return 'post'; }
+	if ( 'post' === vote_phase() || vote_day_of() ) { return 'post'; }
 	if ( ! vote_verified( $st ) || ! in_array( $st['kind'], array( 'in-person', 'mail' ), true ) ) { return 'pre_day'; }
 	return 'mail' === $st['kind'] ? 'pre_mail' : 'pre_early';
 }
@@ -856,6 +870,8 @@ function vote_post( $st, $kind = null, $variant = 'plan' ) {
 		$open['pre_mail'] = $es ? 'Voy a entregar mi boleta a más tardar el ' . vote_long( $st['end'] ?? VOTE_ELECTION_DAY ) . '.' : "I'm getting my ballot in by " . vote_long( $st['end'] ?? VOTE_ELECTION_DAY ) . '.';
 		$ask['pre_mail'] = $es ? '¿Ya entregaste la tuya?' : 'Is yours in yet?';
 	}
+	// Built as Election Day, with I voted as the default: ask friends whether they've voted.
+	if ( vote_day_of() ) { $ask['post'] = $es ? '¿Y tú, ya votaste?' : 'Have you voted yet?'; }
 	$question = $ask[ $after ? 'post' : $kind ] ?? $ask['default'];
 	// After Election Day: what the person did and where the sticker is. No plan question, no "haven't voted
 	// yet" (docs/post-election-release.md).
@@ -987,6 +1003,7 @@ function vote_post_body( $st ) {
 			$same = date( 'n', strtotime( $st['start'] ) ) === date( 'n', strtotime( $st['end'] ) );
 			return 'La votación anticipada en ' . $name . ' es del ' . ( $same ? date( 'j', strtotime( $st['start'] ) ) : vote_long( $st['start'] ) ) . ' al ' . vote_long( $st['end'] ) . '. Busca tu lugar de votación en ' . $label . '.';
 		}
+		if ( vote_day_of() && vote_verified( $st ) && in_array( $st['kind'], array( 'ended', 'none' ), true ) ) { return 'El Día de las Elecciones es el martes 3 de noviembre de 2026. Busca tu lugar de votación en ' . $label . '.'; }
 		if ( vote_verified( $st ) && 'ended' === $st['kind'] ) { return 'La votación anticipada en ' . $name . ' terminó el ' . vote_long( $st['end'] ) . '. El Día de las Elecciones es el martes 3 de noviembre de 2026. Busca tu lugar de votación en ' . $label . '.'; }
 		if ( vote_verified( $st ) && 'none' === $st['kind'] ) { return 'El Día de las Elecciones en ' . $name . ' es el martes 3 de noviembre de 2026. Haz tu plan para votar. Los lugares de votación y las reglas del voto en ausencia están en ' . $label . '.'; }
 		return 'El Día de las Elecciones es el martes 3 de noviembre de 2026. Haz tu plan para votar y revisa en vote411.org si puedes votar por anticipado en ' . $name . '.';
@@ -997,6 +1014,7 @@ function vote_post_body( $st ) {
 		$same = date( 'n', strtotime( $st['start'] ) ) === date( 'n', strtotime( $st['end'] ) );
 		return 'Early voting in ' . $name . ' runs ' . vote_long( $st['start'] ) . ' to ' . ( $same ? date( 'j', strtotime( $st['end'] ) ) : vote_long( $st['end'] ) ) . '. Find your polling place at ' . $label . '.';
 	}
+	if ( vote_day_of() && vote_verified( $st ) && in_array( $st['kind'], array( 'ended', 'none' ), true ) ) { return 'Election Day is Tuesday, November 3, 2026. Find your polling place at ' . $label . '.'; }
 	if ( vote_verified( $st ) && 'ended' === $st['kind'] ) { return 'Early voting in ' . $name . ' ended ' . vote_long( $st['end'] ) . '. Election Day is Tuesday, November 3, 2026. Find your polling place at ' . $label . '.'; }
 	if ( vote_verified( $st ) && 'none' === $st['kind'] ) { return 'Election Day in ' . $name . ' is Tuesday, November 3, 2026. Make a plan to vote. Polling places and absentee rules are at ' . $label . '.'; }
 	return 'Election Day is Tuesday, November 3, 2026. Make a plan to vote, and check whether you can vote early in ' . $name . ' at vote411.org.';
@@ -1902,6 +1920,7 @@ window.VOTE_ALTS = <?php echo vote_json( $vote_st ? array_map( function ( $f, $i
 window.VOTE_BASE = <?php echo vote_json( vote_pbase() ); ?>;
 window.VOTE_LANG = <?php echo vote_json( $vote_lang ); ?>;
 window.VOTE_PHASE = <?php echo vote_json( vote_phase() ); ?>;
+window.VOTE_DAY_OF = <?php echo vote_json( vote_day_of() ); ?>;
 window.VOTE_T = <?php
 // Maker strings, from the same dictionary as the page.
 $vote_js = array();
