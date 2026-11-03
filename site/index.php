@@ -785,8 +785,9 @@ function vote_classic_link( $st ) {
 	static $order = null;
 	if ( null === $order ) { $order = array_flip( array_keys( vote_states() ) ); }
 	$a = $anchors[ ( $order[ $st['abbr'] ] ?? 0 ) % count( $anchors ) ];
-	return '<p class="gallery__classic">' . vote_e( t( 'Prefer something traditional?' ) ) . ' <a href="' . vote_pbase() . '#ready-to-share">'
-		. vote_e( ( vote_es() ? 'Mira ' : 'See the ' ) . $a ) . '</a>. <a href="' . vote_pbase() . 'stickers/#st-' . vote_slug( $st['name'] ) . '">' . vote_e( t( 'See every state’s stickers' ) ) . '</a></p>';
+	// One short line (November 2, Garrett: more concise): the classic set (anchor varies by state) and the state's row on /stickers/.
+	return '<p class="gallery__classic">' . vote_e( t( 'More designs:' ) ) . ' <a href="' . vote_pbase() . '#ready-to-share">'
+		. vote_e( $a ) . '</a> <span aria-hidden="true">·</span> <a href="' . vote_pbase() . 'stickers/#st-' . vote_slug( $st['name'] ) . '">' . vote_e( t( 'every state’s stickers' ) ) . '</a></p>';
 }
 
 function vote_early_countdown( $st ) {
@@ -1654,7 +1655,8 @@ $vote_ld = array(
 			<div class="grid grid--gallery" id="gallery-grid" style="--cols: <?php echo vote_cols( count( $vote_files ) ); ?>"><?php foreach ( $vote_files as $i => $src ) : ?><a class="tile" href="<?php echo vote_e( $src ); ?>" download="vote-<?php echo strtolower( $vote_abbr ) . '-' . ( $i + 1 ); ?>.jpg"><img src="<?php echo vote_e( $src ); ?>" alt="<?php echo vote_e( vote_alt( $src, $vote_st, $i ) ); ?>" width="1080" height="1080" loading="lazy"></a><?php endforeach; ?></div>
 			<?php echo vote_classic_link( $vote_st ); ?>
 			<?php // Not official (October 28, Garrett's OK): our designs are ours; where the state or a county hands out its own sticker, the story further down says which. ?>
-			<p class="hint gallery__note"><?php echo vote_e( t( 'Free designs by Vote Sticker, not affiliated with any election office. They aren’t proof of voting.' ) ); ?><?php if ( $vote_st && vote_fact( $vote_st, 'sticker.tradition' ) ) : ?> <a href="#sticker-h"><?php echo vote_e( t( 'See the stickers election offices hand out' ) ); ?></a>.<?php endif; ?></p>
+			<?php $vote_off = $vote_st && vote_fact( $vote_st, 'sticker.tradition' ) ? '#sticker-h' : ( $vote_st && ! empty( vote_facts( $vote_st['abbr'] )['sticker.more'] ) ? '#county-h' : '' ); ?>
+			<p class="hint gallery__note"><?php echo vote_e( t( 'Free designs by Vote Sticker, not official and not proof of voting.' ) ); ?><?php if ( $vote_off ) : ?> <a href="<?php echo $vote_off; ?>"><?php echo vote_e( t( 'Official stickers' ) ); ?> <span aria-hidden="true">↓</span></a><?php endif; ?></p>
 			<?php echo $vote_st ? vote_paths( $vote_st ) : ''; ?>
 		</section>
 

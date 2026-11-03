@@ -1412,3 +1412,12 @@ headings (99e1204). Footer consultancy line removed (cb9dc66). Every deploy pass
   error page as dead (path only; plant: the old Oregon URL fails). It found two dead South Dakota links (2026
   election information, voter ID), now the moved election page and the Voting page's photo ID list, fixed in
   sd.json and docs/faq-sources.json and regenerated.
+- **Gallery note, shorter (November 2, Garrett).** Under the ready-made stickers: "More designs: [classic I voted
+  stickers] · every state's stickers" (the classic anchor still rotates by state) and "Free designs by Vote Sticker,
+  not official and not proof of voting. Official stickers ↓" (to the state's sticker story, or its county stickers).
+  The gap from the note to the maker's rule went from 80 px to about 24.
+- **Whole-site sweep, `scripts/qa_sweep.mjs`.** All 110 sitemap pages at 390 and 1280: sideways scroll, elements
+  past the right edge, failed images, script errors, unnamed links, skipped heading levels, leftover template text,
+  doubled words, a space before punctuation, em dashes, "tomorrow/tonight". First run: only the script's own false
+  positives (folded A to Z links, a heading word repeated on the next line, "en la mañana", hidden maker
+  placeholders); after tuning, PASS. Plants: `--plant text` and `--plant overflow` both fail.

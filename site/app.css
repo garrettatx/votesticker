@@ -305,7 +305,8 @@ select:hover, input:hover, textarea:hover { border-color: #A79D86; }
 /* ------------------------------------------------------------------ */
 /* Sticker zone: gallery and maker                                     */
 /* ------------------------------------------------------------------ */
-.gallery { margin: 0 0 var(--s7); }
+.gallery { margin: 0 0 var(--s2); }  /* November 2: about 24 px from the note to the maker's rule, was 80 */
+.gallery > p:last-child { margin-bottom: 0; }
 .gallery p { margin: 0 0 var(--s4); }
 .gallery p.gallery__classic { margin: var(--s4) 0 0; }  /* Garrett, Oct 27: a bit more room above the classic link, less below */
 .grid.grid--gallery { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: var(--s4); }
