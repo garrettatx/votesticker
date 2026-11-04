@@ -1437,3 +1437,19 @@ headings (99e1204). Footer consultancy line removed (cb9dc66). Every deploy pass
   trip, decoded hrefs, focus, targets, share-sheet resolve/cancel/refuse/double tap, WebKit; plants href and copy
   fail) and `scripts/qa_share_downloads.mjs` (real downloaded files before and after share actions, edits not
   stale, two ready-made files, caption versions and paste). Follow-ups in docs/backlog.md (Share Row Follow-Ups).
+
+### November 4: Post-Election Thanks and Cron Cleanup
+
+- **Thank you for voting (Garrett: "Thank Americans for voting," where appropriate).** The post-election hero
+  leads now open with "Thank you for voting." ("Gracias por votar."): the home page ("Thank you for voting. Pick
+  your state, choose a design and save it...") and every state page in both languages ("Thank you for voting.
+  Pick a design below and save it, or make your own."). It was "Voted? Get your sticker." in the state leads; the
+  home H1 and the state info box heading still say that. Titles, H1s and descriptions are unchanged. Nonpartisan,
+  and nothing says a vote was counted. The line drops when between-elections mode turns on (`vote_between()`,
+  about December 1).
+- **Election-week crons removed.** The 00:05 and 3:05 a.m. runs on November 2 and 3, the 8 p.m. November 2 build
+  and the November 4 post-election switch are gone from `daily-build.yml`, along with their `VOTE_TODAY`
+  mapping, so none fire again in 2027. The daily 11:05 UTC run remains; it builds as today's date, which is now
+  the post phase.
+- QA on the November 4 build: qa_stale (0 stale), qa_es, qa_seo, qa_sweep (110 pages x 2 widths), qa_eday_bar
+  (expect off), qa_share all pass.

@@ -129,6 +129,7 @@ return array(
 		'Find my voting location' => 'Buscar mi lugar de votación',
 		'November 3, 2026 Election: Past Voting Dates' => 'Elección del 3 de noviembre de 2026: fechas pasadas',
 		'Free voting stickers by state' => 'Stickers para votar, gratis, por estado',
+		'Thank you for voting.' => 'Gracias por votar.',
 		'Pick your state, choose a design and save it. Get a digital I voted, I voted early or I voted by mail sticker, or make your own.' => 'Escoge tu estado y un diseño, y guárdalo. Consigue un sticker digital de Yo voté, Yo voté temprano o Yo voté por correo, o crea el tuyo.',
 		'Get a free digital I voted, I voted early or I voted by mail sticker. Choose your state, save a design or make your own.' => 'Consigue gratis un sticker digital de Yo voté, Yo voté temprano o Yo voté por correo. Escoge tu estado, guarda un diseño o crea el tuyo.',
 		// Head, header, hub

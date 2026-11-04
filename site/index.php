@@ -368,7 +368,7 @@ function vote_meta( $st ) {
 			'crumb' => $name,
 			'ribbon' => 'FREE I VOTED STICKERS',
 			'lead' => vote_between() ? ( $n ? 'Free ' . $name . ' I voted stickers. Pick a design below and save it, or make your own.' : 'Make a free ' . $name . ' I voted sticker, then save it and share it.' )
-				: ( $n ? 'Voted? Get your sticker. Pick a design below and save it, or make your own.' : 'Voted? Make your ' . $name . ' sticker, then save it and share it.' ),
+				: ( $n ? 'Thank you for voting. Pick a design below and save it, or make your own.' : 'Thank you for voting. Make your ' . $name . ' sticker, then save it and share it.' ),
 			'desc' => 'Download free ' . $name . ' I voted' . $also_l . ' stickers, or make your own. Find official ballot resources for ' . $name . '.',
 			'status' => 'I voted stickers',
 			'family' => 'post',
@@ -474,7 +474,7 @@ function vote_meta_es( $st ) {
 			'h1' => 'Stickers de Yo voté en ' . $name,
 			'crumb' => $name,
 			'ribbon' => 'STICKERS DE YO VOTÉ, GRATIS',
-			'lead' => vote_between() ? 'Stickers de Yo voté gratis para ' . $name . '. Crea el tuyo, guárdalo y compártelo.' : '¿Ya votaste? Consigue tu sticker. Crea el tuyo para ' . $name . ', guárdalo y compártelo.',
+			'lead' => vote_between() ? 'Stickers de Yo voté gratis para ' . $name . '. Crea el tuyo, guárdalo y compártelo.' : 'Gracias por votar. Crea tu sticker para ' . $name . ', guárdalo y compártelo.',
 			'desc' => 'Crea gratis tu sticker de Yo voté para ' . $name . '. Encuentra también los recursos oficiales sobre tu boleta en ' . $name . '.',
 			'status' => 'Stickers de Yo voté',
 			'family' => 'post',
@@ -1346,7 +1346,7 @@ $vote_page = $vote_st ? $vote_meta[ $vote_abbr ] : array(
 	'title' => t( vote_between() ? 'Free I Voted and I Voted Early Stickers by State | Vote Sticker' : 'Free I Voted and I Voted Early Stickers 2026 by State | Vote Sticker' ),
 	'h1' => t( vote_between() ? 'Free I voted stickers for every state' : ( 'post' === vote_phase() ? 'Voted? Get your sticker.' : 'Free I voted stickers for every state' ) ),
 	'eyebrow' => ( 'post' === vote_phase() ? t( 'Free voting stickers by state' ) : '' ),
-	'lead' => t( 'post' === vote_phase() ? 'Pick your state, choose a design and save it. Get a digital I voted, I voted early or I voted by mail sticker, or make your own.' : 'Choose a design or make your own with your state’s name and voting dates. Save it for your profile picture or a post.' ),
+	'lead' => 'post' === vote_phase() ? ( vote_between() ? '' : t( 'Thank you for voting.' ) . ' ' ) . t( 'Pick your state, choose a design and save it. Get a digital I voted, I voted early or I voted by mail sticker, or make your own.' ) : t( 'Choose a design or make your own with your state’s name and voting dates. Save it for your profile picture or a post.' ),
 	'desc' => t( 'post' === vote_phase() ? 'Get a free digital I voted, I voted early or I voted by mail sticker. Choose your state, save a design or make your own.' : 'Free digital I voted, I voted early and vote early stickers for every state. Pick yours, save a ready-made PNG or make your own for your profile picture, with official links for early voting, mail ballots and Election Day.' ),
 	'index' => ! vote_es() || VOTE_ES_INDEX,
 );
