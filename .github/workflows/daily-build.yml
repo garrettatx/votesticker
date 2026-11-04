@@ -76,6 +76,9 @@ jobs:
           python3 -I scripts/qa_facts.py --base http://127.0.0.1:8792/
           # Every sticker has its /stickers/ thumbnail and no thumbnail is orphaned (build/thumbs.py makes them locally).
           python3 -I build/thumbs.py --check
+          # No instruction points to a deadline already past on the build date, and after Election Day no FAQ or
+          # mail-fix answer keeps an Election Day deadline (index.php vote_post_expired drops them).
+          python3 -I scripts/qa_stale.py "${VOTE_TODAY:-$(date +%F)}" dist
 
       - name: Check the phase the pages were built for
         run: |

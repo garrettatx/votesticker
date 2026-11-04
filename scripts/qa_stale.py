@@ -56,6 +56,24 @@ for f in sorted(glob.glob(root + '/*/index.html') + glob.glob(root + '/es/*/inde
                 window.append(f'{page} | {c[:200]}')
             else:
                 stale.append(f'{page} | {c[:200]}  [in: {s[:160]}]' if c != s else f'{page} | {c[:200]}')
+# After Election Day (Nov 4 audit): the FAQ and "Check or Fix Your Mail Ballot" sections must not keep a deadline
+# set by Election Day itself ("before the polls close on Election Day"), which names no date for the check above.
+# The past-dates table (dates-h) is labeled as past and is exempt. Plant: --plant-eday adds one to a page.
+if build > ELECTION:
+    eday = re.compile(r"\b(before|by|until|through)\b[^.;]{0,40}\b(polls close|Election Day)\b|hasta que cierren|antes de que cierre"
+                      r"|(a más tardar|antes|hasta)[^.;]{0,40}(del|el) Día de las Elecciones", re.I)
+    later = re.compile(r"after (the )?(Election Day|election)|election is certified|después (del Día de las Elecciones|de la elección)", re.I)
+    for f in sorted(glob.glob(root + '/*/index.html') + glob.glob(root + '/es/*/index.html')):
+        s = open(f).read()
+        if '--plant-eday' in sys.argv and f.endswith('/texas/index.html'):
+            s = s.replace('aria-labelledby="faq-h">', 'aria-labelledby="faq-h"><p>Fix it before the polls close on Election Day.</p>', 1)
+        for sec in ('faq-h', 'mail-h'):
+            m = re.search(r'<section[^>]*aria-labelledby="' + sec + r'".*?</section>', s, re.S)
+            if not m: continue
+            for para in re.findall(r'<(?:p|dd)[^>]*>(.*?)</(?:p|dd)>', m.group(0), re.S):
+                t = re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', '', para)))
+                if eday.search(t) and not later.search(t):
+                    stale.append(f[len(root):] + ' ' + sec + ': ' + t[:140])
 for w in window: print('WINDOW', w)
 for s in stale: print('STALE ', s)
 print(len(stale), 'stale clauses,', len(window), 'open-window clauses on', build)

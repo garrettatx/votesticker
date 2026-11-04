@@ -1453,3 +1453,26 @@ headings (99e1204). Footer consultancy line removed (cb9dc66). Every deploy pass
   the post phase.
 - QA on the November 4 build: qa_stale (0 stale), qa_es, qa_seo, qa_sweep (110 pages x 2 widths), qa_eday_bar
   (expect off), qa_share all pass.
+
+### November 4: Post-Election Release Audit
+
+- **Audit against `docs/post-election-release.md`** on the November 4 build: searched every page for "vote
+  today", "still time", "polls close", "today", "tomorrow", "counted", "accepted" and the Spanish equivalents.
+  Sticker names ("I Voted Today"), history lines and the labeled past-dates table were fine. Found: 15 FAQ and
+  "Check or Fix Your Mail Ballot" answers per language whose deadline had passed but named no date, so
+  `qa_stale.py` couldn't see them ("before the polls close on Election Day", "until the polls close", "you can
+  still vote in person, early or on Election Day", "more than five days before the election"). States: CO, CT,
+  DE, IN, IA, KY, ME, MA, MN, NV, NY, PA, VT.
+- **Fix: `vote_post_expired()` in `site/index.php`.** In the post phase only, an FAQ or mail-fix answer is dropped
+  when its deadline has passed on the build date: an October or November date after by, before, until or through
+  (or hasta, antes del, a más tardar) decides when there is one ("the Tuesday after the election" counts as
+  November 10); without one, a deadline set by Election Day, the polls closing or "before the election" has passed.
+  Answers counted after Election Day stay (Hawaii's five business days, Georgia's three days, Massachusetts' 12 days,
+  South Carolina's "before the election is certified", Illinois' Tuesday after). Washington's November 23 cure
+  deadline stays until November 24 and Wyoming's November 4 one until November 5 (both checked with builds dated
+  November 5 and 24). Evergreen ID, photo and tracking answers are untouched. The mail section disappears where its
+  only text was the expired fix; the tracker link stays in the summary box.
+- **`qa_stale.py` now also fails** on an FAQ or mail-fix paragraph with an Election Day deadline after November 3
+  (the past-dates table is exempt); `--plant-eday` fires; the build from before the fix fails with 20 lines. CI now
+  runs `qa_stale.py` on every build, so a deadline that passes stops the deploy instead of going live.
+- QA: qa_stale (Nov 4, 5 and 24 builds), qa_seo, qa_es, qa_facts, thumbs --check, qa_sweep all pass.

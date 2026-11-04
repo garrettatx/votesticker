@@ -562,6 +562,20 @@ function vote_faq_src( $a ) {
 	return ! empty( $a['src_after'] ) && ! empty( $a['until'] ) && vote_today() > $a['until'] ? $a['src_after'] : $a['src'];
 }
 // The verified state questions for this page, in VOTE_FAQ_Q order: [question, answer, source URL].
+// After Election Day: true when a fix or FAQ answer's deadline has passed on the build date (Nov 4 audit: CT, DE, IA,
+// KY, ME, NV and VT still said "before the polls close on Election Day"). October and November dates after by, before or until decide;
+// with none, a deadline set by Election Day, the polls closing or "before the election" has passed, and so has
+// "you can still vote". Anything counted after Election Day ("five business days after") stays.
+function vote_post_expired( $text ) {
+	if ( 'post' !== vote_phase() ) { return false; }
+	$t = preg_replace( '/\b(the )?Tuesday after the election\b|\bel martes (siguiente a|después de) la elección\b/iu', 'November 10', $text );
+	preg_match_all( '/\b(?:by|before|until|through)\b[^.;]{0,50}?\b(Oct|Nov)(?:ober|ember|\.)? (\d{1,2})\b|\b(?:hasta|antes del?|a más tardar)\b[^.;]{0,50}?\b(\d{1,2}) de (octubre|noviembre)\b/iu', $t, $m, PREG_SET_ORDER );
+	$dates = array();
+	foreach ( $m as $x ) { $mon = strtolower( substr( $x[1] ?: $x[4], 0, 3 ) ); $dates[] = sprintf( '2026-%s-%02d', 'oct' === $mon ? '10' : '11', $x[2] ?: $x[3] ); }
+	if ( $dates ) { return max( $dates ) < vote_today(); }
+	if ( preg_match( '/after (the )?(Election Day|election)|election is certified|después (del Día de las Elecciones|de la elección)|se certifique/iu', $t ) ) { return false; }
+	return (bool) preg_match( '/\b(before|by|until|through)\b[^.;]{0,40}\b(polls close|Election Day)\b|\bbefore the election\b|\byou can still vote\b[^.;]{0,60}\b(in person|Election Day|early)\b|antes de que cierre|hasta que cierren|(a más tardar|antes|hasta)[^.;]{0,40}(del|el) Día de las Elecciones|antes de la elección|(todavía|igual) puedes votar[^.;]{0,60}(en persona|Día de las Elecciones|anticipad)/iu', $t );
+}
 function vote_state_faq( $st ) {
 	static $all = null;
 	if ( null === $all ) { $all = require __DIR__ . '/faq-states.php'; }
@@ -576,6 +590,7 @@ function vote_state_faq( $st ) {
 		if ( in_array( $key, $gone, true ) ) { continue; }
 		$a = $all[ $st['abbr'] ][ $key ] ?? null;
 		if ( ! $a || empty( $a['src'] ) || empty( $a[ vote_es() ? 'es' : 'en' ] ) ) { continue; }
+		if ( vote_post_expired( vote_faq_text( $a ) ) ) { continue; }
 		$out[] = array( t( $q, vote_name( $st ) ), vote_faq_text( $a ), vote_faq_src( $a ), VOTE_FAQ_CHECKED );
 	}
 	// Extra questions answered in the state's facts file (build/state-facts/), each with its own check date.
@@ -583,7 +598,7 @@ function vote_state_faq( $st ) {
 		if ( in_array( $path, $gone, true ) ) { continue; }
 		if ( 'dates.mail_return' === $path && ( $all[ $st['abbr'] ]['mail'] ?? null ) ) { continue; }  // same question as the mail FAQ
 		$f = vote_fact( $st, $path );
-		if ( $f ) { $out[] = array( t( $q, vote_name( $st ) ), $f['text'], $f['src'], $f['checked'] ); }
+		if ( $f && ! vote_post_expired( $f['text'] ) ) { $out[] = array( t( $q, vote_name( $st ) ), $f['text'], $f['src'], $f['checked'] ); }
 	}
 	return $out;
 }
@@ -760,7 +775,7 @@ function vote_guide( $st ) {
 	$wl = $post ? null : ( vote_facts( $st['abbr'] )['mail.who_list'] ?? null );
 	$wlist = $wl ? ( vote_es() ? $wl['es'] : $wl['en'] ) : array();
 	if ( $wlist ) { $mail .= '<ul class="guide__list guide__list--one">'; foreach ( $wlist as $item ) { $mail .= '<li>' . vote_e( $item ) . '</li>'; } $mail .= '</ul>'; $srcs[] = $wl['src']; }
-	foreach ( $post ? array( 'mail.cure' ) : array( 'mail.witness', 'mail.dropbox', 'mail.cure' ) as $k ) { $f = vote_fact( $st, $k ); if ( $f ) { $mail .= '<p>' . vote_e( $f['text'] ) . '</p>'; $srcs[] = $f['src']; } }
+	foreach ( $post ? array( 'mail.cure' ) : array( 'mail.witness', 'mail.dropbox', 'mail.cure' ) as $k ) { $f = vote_fact( $st, $k ); if ( $f && ! vote_post_expired( $f['text'] ) ) { $mail .= '<p>' . vote_e( $f['text'] ) . '</p>'; $srcs[] = $f['src']; } }
 	$track = vote_fact( $st, 'mail.track_url' );
 	// The tracker joins a section that has something to say; on its own it waits for the Election Day banner.
 	if ( $track && $mail ) { $mail .= '<p class="guide__more"><a href="' . vote_e( $track ) . '" target="_blank" rel="noopener">' . vote_e( t( 'Track your %s mail ballot', $name ) ) . '</a></p>'; }
