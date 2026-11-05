@@ -283,5 +283,8 @@
    "quote": "For any election called pursuant to the laws of this state, the polls shall be opened in every precinct at 6:00 a.m. on the day of election and shall be closed at 7:00 p.m.",
    "status": "verified"
   }
+ },
+ "results": {
+  "url": "https://results.arizona.vote/"
  }
 }

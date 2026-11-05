@@ -733,6 +733,7 @@ return array(
 			'src' => 'https://www.azcleanelections.gov/state-general',
 			'checked' => '2026-10-21',
 		),
+		'results.url' => 'https://results.arizona.vote/',
 		'faq.problem' => array(
 			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your county elections office or the Arizona Secretary of State\'s Elections Division at 1-877-843-8683 (1-877-THE-VOTE) or 602-542-8683.',
 			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la oficina electoral de tu condado o a la División de Elecciones de la Secretaría de Estado de Arizona al 1-877-843-8683 (1-877-THE-VOTE) o al 602-542-8683.',
@@ -6006,6 +6007,7 @@ return array(
 			'en_after' => 'Yes, by mail. Your town or city clerk must receive it by 5 p.m. on Tuesday, November 3, and a postmark doesn\'t count. A delivery agent, such as a close family member with the signed form, has until 5 p.m. on Election Day.',
 			'es_after' => 'Sí, por correo. El secretario de tu municipio o ciudad (town or city clerk) debe recibirla a más tardar a las 5 p. m. del martes 3 de noviembre, y el matasellos no cuenta. Un representante de entrega (delivery agent), como un familiar cercano con el formulario firmado, tiene hasta las 5 p. m. del Día de las Elecciones.',
 		),
+		'results.url' => 'https://www.sos.nh.gov/2026-election-results',
 		'faq.problem' => array(
 			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your town or city clerk or the New Hampshire Secretary of State\'s Office at 603-271-3242.',
 			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la secretaría de tu pueblo o ciudad (town or city clerk) o a la oficina de la Secretaría de Estado de New Hampshire al 603-271-3242.',
@@ -6533,6 +6535,7 @@ return array(
 			'src' => 'https://www.nvsos.gov/elections/election-information/2026-election-information',
 			'checked' => '2026-10-21',
 		),
+		'results.url' => 'https://silverstateelection.nv.gov/',
 		'faq.problem' => array(
 			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your county clerk or registrar of voters, or the Nevada Secretary of State\'s office at 775-684-5708.',
 			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la secretaría (county clerk) o al registro de votantes (registrar of voters) de tu condado, o a la oficina de la Secretaría de Estado de Nevada al 775-684-5708.',
@@ -6821,6 +6824,16 @@ return array(
 			'es' => 'Debe tener matasellos del 3 de noviembre o antes y llegar a la junta electoral de tu condado a más tardar el 10 de noviembre. El Servicio Postal sugiere enviarla unos siete días antes. ¿La mandas el Día de las Elecciones? Revisa la última hora de recolección del buzón, o mejor entrégala en un lugar de votación de tu condado antes de las 9 p. m.',
 			'src' => 'https://elections.ny.gov/request-ballot',
 			'checked' => '2026-10-21',
+		),
+		'results.url' => 'https://nyenr.elections.ny.gov/',
+		'results.certify' => array(
+			'en' => 'New York law requires the State Board of Canvassers to meet by December 15, 2026 to canvass the county results. The board may adjourn for up to five days, so this is a meeting deadline, not a confirmed certification date.',
+			'es' => 'La ley de Nueva York exige que la junta estatal de escrutinio (State Board of Canvassers) se reúna a más tardar el 15 de diciembre de 2026 para revisar los resultados de los condados. La junta puede aplazar la reunión hasta por cinco días, así que esta es la fecha límite para reunirse, no una fecha confirmada de certificación.',
+			'src' => 'https://www.nysenate.gov/legislation/laws/ELN/9-216',
+			'checked' => '2026-11-05',
+			'until' => '2026-12-15',
+			'en_after' => 'New York law set December 15, 2026 as the latest date for the State Board of Canvassers to meet and canvass the county results. The board could adjourn for up to five days, so that was a meeting deadline, not a confirmed certification date.',
+			'es_after' => 'La ley de Nueva York fijó el 15 de diciembre de 2026 como la fecha más tardía para que la junta estatal de escrutinio (State Board of Canvassers) se reuniera y revisara los resultados de los condados. La junta podía aplazar la reunión hasta por cinco días, así que esa era la fecha límite para reunirse, no una fecha confirmada de certificación.',
 		),
 		'faq.problem' => array(
 			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your county board of elections or the New York State Board of Elections voter information line at 1-800-367-8683.',
@@ -8326,6 +8339,7 @@ return array(
 			'src' => 'https://sos.tn.gov/elections/faqs',
 			'checked' => '2026-10-30',
 		),
+		'results.url' => 'https://sos.tn.gov/elections/results',
 		'faq.problem' => array(
 			'en' => 'Ask a poll worker first. For anything they can\'t fix, call your county election commission or the Tennessee Secretary of State\'s Division of Elections at 1-877-850-4959 or 615-741-7956.',
 			'es' => 'Primero pregúntale a un trabajador electoral. Si no lo puede resolver, llama a la comisión electoral de tu condado (county election commission) o a la División de Elecciones de la Secretaría de Estado de Tennessee al 1-877-850-4959 o al 615-741-7956.',
@@ -9515,6 +9529,7 @@ return array(
 			'src' => 'https://elections.wi.gov/voters/voting-absentee',
 			'checked' => '2026-10-30',
 		),
+		'results.url' => 'https://elections.wi.gov/elections/election-results',
 		'results.certify' => array(
 			'en' => 'The Elections Commission\'s chair has until December 1, 2026 to certify general election results.',
 			'es' => 'La presidencia de la Comisión de Elecciones tiene hasta el 1 de diciembre de 2026 para certificar los resultados de la elección general.',

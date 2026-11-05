@@ -403,5 +403,20 @@
    "quote": "the general election from six o'clock in the morning until nine o'clock in the evening",
    "status": "verified"
   }
+ },
+ "results": {
+  "url": "https://nyenr.elections.ny.gov/",
+  "certify": {
+   "status": "verified",
+   "en": "New York law requires the State Board of Canvassers to meet by December 15, 2026 to canvass the county results. The board may adjourn for up to five days, so this is a meeting deadline, not a confirmed certification date.",
+   "es": "La ley de Nueva York exige que la junta estatal de escrutinio (State Board of Canvassers) se reúna a más tardar el 15 de diciembre de 2026 para revisar los resultados de los condados. La junta puede aplazar la reunión hasta por cinco días, así que esta es la fecha límite para reunirse, no una fecha confirmada de certificación.",
+   "en_after": "New York law set December 15, 2026 as the latest date for the State Board of Canvassers to meet and canvass the county results. The board could adjourn for up to five days, so that was a meeting deadline, not a confirmed certification date.",
+   "es_after": "La ley de Nueva York fijó el 15 de diciembre de 2026 como la fecha más tardía para que la junta estatal de escrutinio (State Board of Canvassers) se reuniera y revisara los resultados de los condados. La junta podía aplazar la reunión hasta por cinco días, así que esa era la fecha límite para reunirse, no una fecha confirmada de certificación.",
+   "until": "2026-12-15",
+   "src": "https://www.nysenate.gov/legislation/laws/ELN/9-216",
+   "checked": "2026-11-05",
+   "quote": "The state board of canvassers shall meet on or before the fifteenth day, or, in a year when electors of president and vice-president are chosen on or before the first Monday after the first Wednesday, of December next after each general election",
+   "notes": "Kind: statute_deadline (Nov 5 rule: a current state-published statute can source a labeled legal deadline, not a scheduled or actual certification date). Read in Chrome, Election Law 9-216(2), revision 2014-09-22; also 'The board may adjourn from day to day, not exceeding a term of five days.' 2026 is not a presidential year, so the fifteenth applies. Ballotpedia lists Dec 9, 2026 (Perplexity lead, unread, unofficial); the Board's own calendar was not found. Replace with the Board's date if it prints one."
+  }
  }
 }

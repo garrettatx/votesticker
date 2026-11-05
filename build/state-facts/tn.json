@@ -297,5 +297,8 @@
    "status": "verified",
    "varies": true
   }
+ },
+ "results": {
+  "url": "https://sos.tn.gov/elections/results"
  }
 }

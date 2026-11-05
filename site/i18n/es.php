@@ -130,7 +130,7 @@ return array(
 		'the U.S. Election Assistance Commission' => 'la Comisión de Asistencia Electoral de Estados Unidos',
 		'%s Election Results' => 'Resultados de la elección en %s',
 		'Results posted on election night are unofficial until they are certified.' => 'Los resultados publicados la noche de la elección no son oficiales hasta que se certifican.',
-		'Official %s election results' => 'Resultados oficiales de la elección en %s',
+		'%s election results' => 'Resultados electorales de %s',
 		'November 3, 2026 Election: Past Voting Dates' => 'Elección del 3 de noviembre de 2026: fechas pasadas',
 		'Free voting stickers by state' => 'Stickers para votar, gratis, por estado',
 		'Thank you for voting.' => 'Gracias por votar.',

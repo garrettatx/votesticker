@@ -1544,6 +1544,9 @@ one line), and now stops at `#copy`, the plan post text that post-phase pages hi
 
 ## Resume Here (November 4, End of Session)
 
+**Next loop (Nov 5): `docs/LOOP-results-and-deadlines.md`.** It answers the statute question and takes over the results
+section's open reads below.
+
 **State.** Everything is committed, pushed and live; the results and history pass above is the latest. The site is in the
 post phase and the daily 11:05 UTC build is the only cron. CI now runs `qa_stale.py`, so a deadline that passes stops
 the deploy. Untracked files are excluded on purpose (data/, the three Oct 23 research docs, docs/research/).

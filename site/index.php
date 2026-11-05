@@ -743,7 +743,7 @@ function vote_guide( $st ) {
 	if ( 'post' === vote_phase() && ! vote_between() && ( $res_url || $cert ) ) {
 		$out .= '<section class="guide" aria-labelledby="results-h">' . $h( 'results-h', t( '%s Election Results', $name ) )
 			. '<p>' . vote_e( t( 'Results posted on election night are unofficial until they are certified.' ) ) . ( $cert ? ' ' . vote_e( $cert['text'] ) : '' ) . '</p>'
-			. ( $res_url ? '<p class="guide__more"><a href="' . vote_e( $res_url ) . '" target="_blank" rel="noopener">' . vote_e( t( 'Official %s election results', $name ) ) . '</a></p>' : '' )
+			. ( $res_url ? '<p class="guide__more"><a href="' . vote_e( $res_url ) . '" target="_blank" rel="noopener">' . vote_e( t( '%s election results', $name ) ) . '</a></p>' : '' )
 			. vote_sources_line( $st, array_filter( array( $cert['src'] ?? '', VOTE_EAC_RESULTS ) ) ) . '</section>';
 	}
 	// A section is a list of facts; each adds its source to the section's line.
