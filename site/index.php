@@ -669,9 +669,9 @@ function vote_faq_raw( $st, $key ) {
 	return $a && ! empty( $a['src'] ) && ! empty( $a[ vote_es() ? 'es' : 'en' ] ) ? array( vote_faq_text( $a ), vote_faq_src( $a ) ) : null;
 }
 
-// One "go deeper" line to a Resist Now Learn guide (Garrett, October 21): only where the guide answers the next
-// question a reader of that section has. English only, so Spanish pages say so.
-function vote_rn( $path, $lead, $label ) {
+// One "go deeper" line to an outside guide, only where it answers the next question a reader of that section has.
+// English only, so Spanish pages say so.
+function vote_guide_more( $path, $lead, $label ) {
 	return '<p class="guide__more">' . vote_e( t( $lead ) ) . ' <a href="https://resistnow.net/learn/' . $path . '/">' . vote_e( t( $label ) ) . '</a>' . ( vote_es() ? ' (en inglés)' : '' ) . '.</p>';
 }
 
@@ -728,7 +728,7 @@ function vote_guide( $st ) {
 	if ( count( $rows ) > 1 && ! vote_between() ) {
 		$out .= '<section class="guide" aria-labelledby="dates-h">' . $h( 'dates-h', t( 'post' === vote_phase() ? 'November 3, 2026 Election: Past Voting Dates' : 'Key Dates for Nov. 3' ) )
 			. '<table class="dates"><caption class="sr-only">' . vote_e( t( '%s voting dates and deadlines for the November 3, 2026 election', $name ) ) . '</caption><tbody>' . implode( '', $rows ) . '</tbody></table>' . vote_sources_line( $st, $srcs )
-			. ( vote_fact( $st, 'dates.reg_deadline' ) && 'post' !== vote_phase() ? vote_rn( 'voter-registration', 'Missed a registration deadline?', 'What you can still do, state by state' ) : '' ) . '</section>';
+			. ( vote_fact( $st, 'dates.reg_deadline' ) && 'post' !== vote_phase() ? vote_guide_more( 'voter-registration', 'Missed a registration deadline?', 'What you can still do, state by state' ) : '' ) . '</section>';
 	}
 
 	// Right after the dates (October 29: "[state] i voted sticker" searchers want the official designs near the
@@ -779,7 +779,7 @@ function vote_guide( $st ) {
 		$id .= '</ul>'; $srcs[] = $ids['src'];
 	}
 	foreach ( $post ? array() : array( 'id.expired', 'id.without' ) as $k ) { $f = vote_fact( $st, $k ); if ( $f ) { $id .= '<p>' . vote_e( $f['text'] ) . '</p>'; $srcs[] = $f['src']; } }
-	if ( $id ) { $out .= '<section class="guide" aria-labelledby="id-h">' . $h( 'id-h', t( 'What ID to Bring' ) ) . $id . vote_sources_line( $st, $srcs ) . vote_rn( 'voter-id-laws', 'Forgot your ID, or want to see how other states compare?', 'Voter ID rules in every state' ) . '</section>'; }
+	if ( $id ) { $out .= '<section class="guide" aria-labelledby="id-h">' . $h( 'id-h', t( 'What ID to Bring' ) ) . $id . vote_sources_line( $st, $srcs ) . vote_guide_more( 'voter-id-laws', 'Forgot your ID, or want to see how other states compare?', 'Voter ID rules in every state' ) . '</section>'; }
 
 	// Voting by mail: who qualifies (a list where the state has conditions), then the rest.
 	$mail = ''; $srcs = array();
@@ -792,7 +792,7 @@ function vote_guide( $st ) {
 	$track = vote_fact( $st, 'mail.track_url' );
 	// The tracker joins a section that has something to say; on its own it waits for the Election Day banner.
 	if ( $track && $mail ) { $mail .= '<p class="guide__more"><a href="' . vote_e( $track ) . '" target="_blank" rel="noopener">' . vote_e( t( 'Track your %s mail ballot', $name ) ) . '</a></p>'; }
-	if ( $mail && ! vote_between() ) { $out .= '<section class="guide" aria-labelledby="mail-h">' . $h( 'mail-h', t( $post ? 'Check or Fix Your Mail Ballot' : ( 'mail' === ( $st['kind'] ?? '' ) && vote_verified( $st ) ? 'Returning Your Ballot' : 'Who Can Vote by Mail' ) ) ) . $mail . vote_sources_line( $st, $srcs ) . vote_rn( 'mail-in-voting', ( vote_fact( $st, 'mail.cure' ) || vote_fact( $st, 'dates.cure' ) ) && 'AK' !== $st['abbr'] /* Alaska: no cure once the Division has the ballot */ ? 'Why mail ballots get rejected, and how to fix a signature problem:' : 'Why mail ballots get rejected:', 'the mail voting guide' ) . '</section>'; }
+	if ( $mail && ! vote_between() ) { $out .= '<section class="guide" aria-labelledby="mail-h">' . $h( 'mail-h', t( $post ? 'Check or Fix Your Mail Ballot' : ( 'mail' === ( $st['kind'] ?? '' ) && vote_verified( $st ) ? 'Returning Your Ballot' : 'Who Can Vote by Mail' ) ) ) . $mail . vote_sources_line( $st, $srcs ) . vote_guide_more( 'mail-in-voting', ( vote_fact( $st, 'mail.cure' ) || vote_fact( $st, 'dates.cure' ) ) && 'AK' !== $st['abbr'] /* Alaska: no cure once the Division has the ballot */ ? 'Why mail ballots get rejected, and how to fix a signature problem:' : 'Why mail ballots get rejected:', 'the mail voting guide' ) . '</section>'; }
 
 	// Rules at the polls.
 	$p = $post ? '' : $section( 'polls-h', t( 'Phones, Photos, and Campaign Gear' ), array( 'polls_rules.gear', 'polls_rules.phone', 'polls_rules.line' ) );

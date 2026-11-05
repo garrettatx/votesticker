@@ -69,8 +69,6 @@ from right now? Five spots pass. One link per page, at most.
   comes first; a history link there pulls people out of the one thing they came to do.
 - **Post text.** The suggested posts ask a friend to vote; a history link would dilute that.
 - **Every state page by default.** Only where the state has a tradition to connect it to.
-- **Resist Now.** Not a topic for their Learn guides, and the history page has no reason to link out
-  there.
 
 ## Spanish
 
@@ -83,7 +81,7 @@ The FAQ answer follows the same rule as the state FAQs: the visible answer and t
    file (`build/state-facts/` style, probably `build/history-facts.json`), and drop anything we
    can't source.
 2. Write the page in English, humanizer pass, then Spanish.
-3. Add the callouts (spots 1, 3, 4, 5, 6) in `site/index.php`, through one helper like `vote_rn()`.
+3. Add the callouts (spots 1, 3, 4, 5, 6) in `site/index.php`, through one helper.
 4. QA: `qa_seo.py`, `qa_es.py`, `qa_facts.py` (extend it to check the history page's source lines).
 5. Deploy, IndexNow, add the page to the Ahrefs rank tracker with the history phrasings.
 6. Data visualization, once we know what the data supports.

@@ -141,15 +141,11 @@ Paste at the top of any writing request:
 > or "empower," no em dashes. Never state a voting rule unless the official source is provided. End
 > with one clear next step.
 
-## Links to Resist Now
+## Links to Outside Guides
 
-Garrett, October 21: link to a Resist Now Learn guide only where it answers the next question a reader
-of that section has, in a natural line of text. Three today, one per guide section, through `vote_rn()`
-in `site/index.php`: voter registration (under the dates table), voter ID laws (under What ID to Bring)
-and mail-in voting (under the mail section). Spanish pages mark them "(en inglés)". Learn pages only,
-factual reference pages only; nothing from issue hubs, briefs or action pages, and nothing whose framing
-argues a position, because Vote Sticker's own copy stays nonpartisan. Ranked-choice voting is a
-candidate for Alaska and Maine once their guides exist.
+Link to an outside guide only where it answers the next question a reader of that section has, in a natural line
+of text, through `vote_guide_more()` in `site/index.php`. Factual reference pages only, and nothing whose framing argues
+a position, because Vote Sticker's own copy stays nonpartisan. Spanish pages mark English-only guides "(en inglés)".
 
 ## Writing Rules From the History Page Reviews (October 22)
 

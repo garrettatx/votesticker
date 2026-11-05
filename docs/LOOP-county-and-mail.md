@@ -780,7 +780,7 @@ Garrett's screenshots showed the /history/ overview chart failing on desktop and
 axis left 1888 to 1980 empty and piled 2008 to 2024 on top of each other, labels overprinted (2010 Facebook over 2022
 Ulster County, 2008 Facebook over 2018 Instagram, 1985 Phoenix against 1987 Flag oval), a 640px minimum width scrolled
 sideways, and on a phone it shrank to an unreadable strip. Later he widened the brief: format the whole page as an
-editorial page, learn from resistnow, and list ideas for the other page types.
+editorial page, and list ideas for the other page types.
 
 **Design decision (delegated; reasons).** The chart's job is navigation: an at-a-glance overview whose marks jump to the
 26 entries below. Navigation needs readable, tappable labels more than a true time scale, so the overview is now an era
@@ -804,7 +804,7 @@ index in plain HTML, not an SVG axis.
   incomplete" in words next to its dashed mark.
 - The full timeline list below gets the same era names as dividers.
 
-**Page layout.** Following resistnow's layout system (flush left, prose capped, exhibits fill the column): exhibits (the
+**Page layout.** Layout system (flush left, prose capped, exhibits fill the column): exhibits (the
 overview, maker cards, scenes) use the full 1088px column; paragraphs are capped at 36rem (the probe measured 87 to 98
 characters per line at 1280 before, 76 to 79 after); "What We Still Don't Know" is a set-apart note (paper background,
 no side border). Before/after design probe (visual-design-audit) at 375 and 1280: measure fixed; radius count unchanged
@@ -813,9 +813,9 @@ the data-visualization emphasis rules) and the timeline list's rail (a real time
 about at 375 and 1280 are pixel-identical before and after (the CSS is scoped to `.hist` and the new `.tl-*` classes;
 the old SVG timeline rules were removed after a grep found no other users).
 
-**Borrowed from resistnow.** MilestoneTimeline: HTML rather than SVG, automatic vertical layout when narrow or dense,
+**Patterns used.** MilestoneTimeline: HTML rather than SVG, automatic vertical layout when narrow or dense,
 an era separator, no hover-only content. EventDensity: annotate a silence with its duration ("16 years" lands, a date
-range does not). layout-system.md: flush-left alignment, prose measure cap, components fill the column. Not borrowed:
+range does not). Layout: flush-left alignment, prose measure cap, components fill the column. Not borrowed:
 color-coded win/setback dots (our marks are kinds, said in words) and the sr-only duplicate (the visible links are the
 equivalent).
 

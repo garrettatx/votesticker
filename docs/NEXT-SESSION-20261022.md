@@ -39,8 +39,6 @@ reverted. Start there.
   run had printed FAILED for this, and it was live from the home polish until this deploy.
 - **Designs (Oct 22, late):** Shadow, Ring and Half replaced Poster and Stamp; history and the rejected
   sketches are in `docs/backlog.md` under Sticker Designs.
-- **Resist Now:** three Learn-guide links on state pages (registration, voter ID, mail voting);
-  rule in `docs/brand-brief.md`.
 - **IndexNow:** all 108 URLs submitted October 22 (200).
 - **Traffic (Ahrefs Web Analytics, Oct 20 to 22):** 213 visitors, 120 from Google, mostly to state
   pages (TX, NC, NY first). GSC isn't connected to the Ahrefs project; connect it to see queries.
@@ -85,7 +83,7 @@ reverted. Start there.
 7. **Maker ideas** in `docs/backlog.md`: "First time voter" message, 48 px profile preview, copy alt
    text, cut-out PNG, 1080 x 1350. Design follow-ons (tilt control, Stack as a fix to Big type,
    cover photo) are under Sticker Designs in the same file.
-8. **History page, later:** Alaska and Maine ranked-choice Resist Now link; more state and county
+8. **History page, later:** more state and county
    stories (blank states are fine as "No featured story yet"); records requests and interviews
    (Boudreau, Rowan, Michigan, Ulster) need a person to send them.
 9. **After the election:** privacy and accessibility section on About; "Submit a sticker" needs a
