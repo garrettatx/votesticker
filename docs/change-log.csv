@@ -37,3 +37,4 @@ date,area,change,commit
 2026-11-04,content,"Post-election audit: FAQ and mail-fix answers whose deadline passed dropped in 13 states, both languages (vote_post_expired); qa_stale checks Election Day deadlines and now runs in CI",04b400f
 2026-11-04,design,"Type and spacing pass: three heading roles as CSS tokens (Section, Subsection, Card); FAQ and county headings use the display face",6e86fa2
 2026-11-04,content,"State pages: official results links (45 states) and certification dates (27), EN and ES, post phase only; history adds braille, Tohono O'odham, digital and scratch-and-sniff stickers; fact age counts to Election Day so the daily build keeps running",90a43d8
+2026-11-05,content,"State pages: results links for AZ NH NV NY TN WI (now 51 of 51); NY's statute meeting deadline under the new date rule; link label now '[State] election results', EN and ES",6045fa7
