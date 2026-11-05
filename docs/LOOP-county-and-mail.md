@@ -1493,3 +1493,26 @@ headings (99e1204). Footer consultancy line removed (cb9dc66). Every deploy pass
   (FAQ and county heads at 390 and 1280, history subheads).
 - QA: qa_seo, qa_es, qa_facts, qa_stale, qa_sweep (110 x 2), qa_cards, qa_devices, qa_history, qa_stickers,
   qa_save, qa_share.
+
+## Resume Here (November 4, End of Session)
+
+**State.** Everything is committed, pushed and live (last commit 6e86fa2, deploy run 41938209650). The site is in the
+post phase and the daily 11:05 UTC build is the only cron. CI now runs `qa_stale.py`, so a deadline that passes stops
+the deploy. Untracked files are excluded on purpose (data/, the three Oct 23 research docs, docs/research/).
+
+**Dated checks (none need code).**
+- Nov 5: Wyoming's provisional-ballot answer drops on the morning build; confirm on /wyoming/ and /es/wyoming/.
+- Nov 5: GSC read-back for the Election Day titles (Nov 1 to 4 vs Oct 25 to 28; position and CTR, not clicks), home
+  queries "i voted today sticker", "do you get an i voted sticker", "voting sticker", "i voted early sticker".
+- Nov 5: rerun "where can I find a virtual I voted sticker" and "is there a digital I voted sticker" in ChatGPT and
+  Perplexity; note whether votesticker.org is cited.
+- Nov 12: second GSC read-back (Nov 1 to 10 vs Oct 22 to 31).
+- Nov 24: Washington's November 23 signature-fix answer drops on the morning build; confirm.
+
+**December 1 review (approved schedule, not yet built).** Turn on between-elections mode (repository variable
+`VOTE_BETWEEN=1`; the "Thank you for voting" line drops with it), history-as-article and home copy passes, 2026
+archive labels, `build/election.json` for the next cycle (backlog: All Stickers Page, 2026 Archive).
+
+**Waiting on Garrett's OK (backlog.md).** Share row follow-ups (gallery share row, gallery note to footer, hero
+"Copy page link", X); After the Election items (Privacy and Accessibility section on About, "Submit a sticker");
+the press page type pass (standalone file, left out of the Nov 4 pass).
