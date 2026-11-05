@@ -298,5 +298,20 @@
    "quote": "On Election Day, polls will be open 7 am to 7 pm.",
    "status": "verified"
   }
+ },
+ "results": {
+  "url": "https://www2.alabamavotes.gov/electionNight/statewideResultsByContest.aspx?ecode=1001305",
+  "certify": {
+   "status": "verified",
+   "en": "The Governor, Secretary of State and Attorney General have until November 25, 2026 to canvass the returns.",
+   "es": "El gobernador, la Secretaría de Estado y el fiscal general tienen hasta el 25 de noviembre de 2026 para revisar los resultados.",
+   "en_after": "The Governor, Secretary of State and Attorney General had until November 25, 2026 to canvass the returns.",
+   "es_after": "El gobernador, la Secretaría de Estado y el fiscal general tenían hasta el 25 de noviembre de 2026 para revisar los resultados.",
+   "until": "2026-11-25",
+   "src": "https://www.sos.alabama.gov/sites/default/files/election-2026/AdminCalendar%20-2026.pdf",
+   "checked": "2026-11-04",
+   "quote": "The last day for the Governor, Secretary of State, and Attorney General to canvass election returns required by law to be sent to Secretary of State is within 22 days after the election. (§ 17-12-17) Wednesday, November 25, 2026",
+   "notes": "Kind: certify_by. Table row from the SOS 2026 administrative calendar; the sentence wraps across lines in the PDF and the date is the row's Date cell. Wording is 'canvass', a deadline. Results page reads '2026 GENERAL ELECTION Statewide Results' and is labeled unofficial. The ecode in the URL is specific to this election."
+  }
  }
 }

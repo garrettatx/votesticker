@@ -345,5 +345,20 @@
    "quote": "Polling places will be open from 6:30 a.m. to 7:30 p.m. on Election Day.",
    "status": "verified"
   }
+ },
+ "results": {
+  "url": "https://er.ncsbe.gov/",
+  "certify": {
+   "status": "verified",
+   "en": "The State Board of Elections is scheduled to certify its contests at the state canvass on November 24, 2026.",
+   "es": "La Junta Estatal de Elecciones tiene programado certificar sus contiendas en el escrutinio estatal del 24 de noviembre de 2026.",
+   "en_after": "The State Board of Elections was scheduled to certify its contests at the state canvass on November 24, 2026.",
+   "es_after": "La Junta Estatal de Elecciones tenía programado certificar sus contiendas en el escrutinio estatal del 24 de noviembre de 2026.",
+   "until": "2026-11-24",
+   "src": "https://www.ncsbe.gov/news/press-releases/2026/10/27/reporters-primer-2026-general-election-nc",
+   "checked": "2026-11-04",
+   "quote": "For contests in the jurisdiction of the State Board, the county boards will authenticate the count of the contests, and the State Board will certify the contests at the state canvass, scheduled for Nov. 24.",
+   "notes": "Kind: certify_on. Second official source, the Nov 4, 2026 press release: 'State canvass will be held at 11 a.m. Tuesday, November 24.' (https://www.ncsbe.gov/news/press-releases/2026/11/04/state-board-releases-number-provisional-ballots-cast-county-2026-general-election). County canvass is Nov 13. The dashboard is a JavaScript page, but its data file at er.ncsbe.gov/enr/20261103/data/results_0.txt returned 2026 contest totals, and the same release says unofficial 2026 results are on the dashboard."
+  }
  }
 }

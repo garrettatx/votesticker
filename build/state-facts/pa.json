@@ -322,5 +322,8 @@
    "quote": "Polls are open from 7 a.m. to 8 p.m. on Election Day.",
    "status": "verified"
   }
+ },
+ "results": {
+  "url": "https://www.electionreturns.pa.gov/"
  }
 }

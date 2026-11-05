@@ -267,5 +267,20 @@
    "quote": "(a) On an election day, a polling place shall be open from 7 a.m. until 8 p.m.",
    "status": "verified"
   }
+ },
+ "results": {
+  "url": "https://elections.maryland.gov/elections/2026/general_results/index.html",
+  "certify": {
+   "status": "verified",
+   "en": "The State Board of Canvassers must convene to certify by December 3, 2026.",
+   "es": "La junta estatal de escrutinio (State Board of Canvassers) debe reunirse para certificar a más tardar el 3 de diciembre de 2026.",
+   "en_after": "The State Board of Canvassers' deadline to convene to certify was December 3, 2026.",
+   "es_after": "La fecha límite de la junta estatal de escrutinio (State Board of Canvassers) para reunirse a certificar fue el 3 de diciembre de 2026.",
+   "until": "2026-12-03",
+   "src": "https://elections.maryland.gov/elections/2026/2026_Election_Calendar.pdf",
+   "checked": "2026-11-04",
+   "quote": "Thursday, December 3, 2026 | COB | Statewide Certification of Results | Deadline for the State Board of Canvassers to convene to certify election results. | Within 30 days after a general election. | EL § 11-503(a)(1)(i)",
+   "notes": "Kind: meets. This is a deadline to convene to certify, so the board can meet earlier and the wording does not say certification is complete by then; hence 'meets', not 'certify_by'. Results page reads 'Unofficial 2026 Gubernatorial General Election Results'. The Maryland home page showed 1969 of 1979 precincts reported, last updated 11/04/2026 09:16:41 PM."
+  }
  }
 }

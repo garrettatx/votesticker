@@ -262,5 +262,20 @@
    "status": "verified",
    "varies": true
   }
+ },
+ "results": {
+  "url": "https://electionresults.mt.gov/",
+  "certify": {
+   "status": "verified",
+   "en": "The State Canvass Board is scheduled to meet and declare winners on November 30, 2026.",
+   "es": "La junta estatal de escrutinio (State Canvass Board) tiene programado reunirse y declarar ganadores el 30 de noviembre de 2026.",
+   "en_after": "The State Canvass Board was scheduled to meet and declare winners on November 30, 2026.",
+   "es_after": "La junta estatal de escrutinio (State Canvass Board) tenía programado reunirse y declarar ganadores el 30 de noviembre de 2026.",
+   "until": "2026-11-30",
+   "src": "https://sosmt.gov/wp-content/uploads/wpfd/preview_files/2026-Federal-Election-Calendar(6fec86338c652319befedd4fd798de5b).pdf",
+   "checked": "2026-11-04",
+   "quote": "Monday, November 30 (Scheduled) | Meeting of the State Canvass Board—The Canvass Board declares elected the individuals having received the highest number of votes cast for each state-certified office, proclaims the adoption or rejection of statewide ballot issues, and sends",
+   "notes": "Kind: meets. Quote is a table row with two columns (date, activity); PDF text extraction interleaves the columns, so it is reassembled from the row and the activity cell continues past the quote. Calendar is marked Updated May 2026 and the date is marked (Scheduled); the row's timing column says 'Within 27 days of the election, or sooner if all returns are received.' so the board could meet earlier. Results page reads 'General Election - November 3, 2026' with live turnout, but its HTML also carries a header banner reading TEST (<div class=\"header-banner\">TEST</div>). Curl cannot tell whether CSS hides it; look at it in a browser before linking. sosmt.gov HTML pages returned 403 to curl, so the SOS page linking to the results site was not read."
+  }
  }
 }

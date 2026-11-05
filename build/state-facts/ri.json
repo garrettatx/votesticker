@@ -301,5 +301,8 @@
    "status": "verified",
    "varies": true
   }
+ },
+ "results": {
+  "url": "https://electionresults.ri.gov/results/public/RhodeIsland/elections/2026StatewideGeneralElection"
  }
 }

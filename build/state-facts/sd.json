@@ -247,5 +247,8 @@
    "quote": "Polls are open from 7 a.m. to 7 p.m. local time.",
    "status": "verified"
   }
+ },
+ "results": {
+  "url": "https://electionresults.sd.gov/"
  }
 }

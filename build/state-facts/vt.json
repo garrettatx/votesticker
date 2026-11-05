@@ -248,5 +248,8 @@
    "status": "verified",
    "varies": true
   }
+ },
+ "results": {
+  "url": "https://electionresults.vermont.gov/"
  }
 }

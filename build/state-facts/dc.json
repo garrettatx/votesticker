@@ -252,5 +252,20 @@
    "quote": "Election Day Vote Centers are open from 7:00 A.M. to 8:00 P.M.",
    "status": "verified"
   }
+ },
+ "results": {
+  "url": "https://electionresults.dcboe.org/",
+  "certify": {
+   "status": "verified",
+   "en": "Certification is tentatively scheduled for December 2, 2026.",
+   "es": "La certificación está programada de forma tentativa para el 2 de diciembre de 2026.",
+   "en_after": "Certification was tentatively scheduled for December 2, 2026.",
+   "es_after": "La certificación estaba programada de forma tentativa para el 2 de diciembre de 2026.",
+   "until": "2026-12-02",
+   "src": "https://www.dcboe.org/getContentAsset/5a9ceeda-114c-4171-810d-1317c9e06b0e/5ebbd046-860b-4ee1-81c8-43d0e3bc446e/_-DCBOE-Voter-Guide-Web-Smaller-File.pdf?language=en",
+   "checked": "2026-11-04",
+   "quote": "The certification of election results is tentatively scheduled for Wednesday, December 2, 2026.",
+   "notes": "Kind: certify_on. TENTATIVE per the DCBOE voter guide; say so if used. The sentence wraps across lines in the PDF. Its calendar repeats it: 'Wednesday, December 2, 2026' 'Official election results are tentatively scheduled to be certified.' Results app shell only to curl, so results_shows_2026 is null."
+  }
  }
 }

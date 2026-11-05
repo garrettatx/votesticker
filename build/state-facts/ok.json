@@ -241,5 +241,20 @@
    "quote": "Polls Open 7 a.m. - 7 p.m.",
    "status": "verified"
   }
+ },
+ "results": {
+  "url": "https://oklahoma.gov/elections/elections-results/election-results/2026-election-results/november-general-election.html",
+  "certify": {
+   "status": "verified",
+   "en": "The State Election Board meets on November 10, 2026 to certify state and federal elections.",
+   "es": "La Junta Estatal de Elecciones se reúne el 10 de noviembre de 2026 para certificar las elecciones estatales y federales.",
+   "en_after": "The State Election Board's meeting to certify state and federal elections was set for November 10, 2026.",
+   "es_after": "La reunión de la Junta Estatal de Elecciones para certificar las elecciones estatales y federales se fijó para el 10 de noviembre de 2026.",
+   "until": "2026-11-10",
+   "src": "https://oklahoma.gov/elections/elections-results/election-results/2026-election-results/november-general-election.html",
+   "checked": "2026-11-04",
+   "quote": "The State Election Board meets Tuesday, November 10 to certify state and federal elections.",
+   "notes": "Kind: meets. Year is not in the sentence; it is on the page headed 'NOVEMBER 3, 2026 GENERAL ELECTION'. Same passage: 'County election boards meet Friday at 5 p.m. to certify county-level results.' The recorded URL is the state's landing page, headed 'UNOFFICIAL RESULTS'. Its 'OK ELECTION RESULTS PAGE' button goes to the vendor page https://results.okelections.us/OKER/?elecDate=20261103, which returned 403 to curl, as did results.okelections.gov. Vote totals were therefore not seen, hence null."
+  }
  }
 }

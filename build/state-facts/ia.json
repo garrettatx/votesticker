@@ -282,5 +282,8 @@
    "status": "verified",
    "quote2": "The polling places shall be closed at 8:00 p.m. for all elections."
   }
+ },
+ "results": {
+  "url": "https://electionresults.iowa.gov/IA/"
  }
 }

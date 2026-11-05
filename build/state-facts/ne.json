@@ -260,5 +260,20 @@
    "quote": "At all elections in the area of this state lying within the Mountain Standard or Mountain Daylight time zone, the polls shall open at 7 a.m. and close at 7 p.m. of the same day, and in the area lying within the Central Standard or Central Daylight time zone, the polls shall open at 8 a.m. and close at 8 p.m. of the same day.",
    "status": "verified"
   }
+ },
+ "results": {
+  "url": "https://electionresults.nebraska.gov/",
+  "certify": {
+   "status": "verified",
+   "en": "The Board of State Canvassers meets to certify results on November 30, 2026.",
+   "es": "La junta estatal de escrutinio (Board of State Canvassers) se reúne para certificar los resultados el 30 de noviembre de 2026.",
+   "en_after": "The Board of State Canvassers' meeting to certify results was set for November 30, 2026.",
+   "es_after": "La reunión de la junta estatal de escrutinio (Board of State Canvassers) para certificar los resultados se fijó para el 30 de noviembre de 2026.",
+   "until": "2026-11-30",
+   "src": "https://sos.nebraska.gov/sites/default/files/doc/elections/2026/2026_Election_Calendar.pdf",
+   "checked": "2026-11-04",
+   "quote": "30-Nov Board of State Canvassers meets to certify the election results. §32-1037 4th Monday after each statewide general election",
+   "notes": "Kind: meets. Row from the 2026 Official Election Calendar, general election section. Results page reads 'Unofficial Results General Election November 3, 2026'. The row's last column wraps onto a second line in the PDF."
+  }
  }
 }

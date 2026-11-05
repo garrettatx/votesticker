@@ -288,5 +288,8 @@
    "quote": "Polls are open 6:00 a.m. to 6:00 p.m., prevailing local time.",
    "status": "verified"
   }
+ },
+ "results": {
+  "url": "https://enr.indianavoters.in.gov/site/index.html"
  }
 }

@@ -39,6 +39,10 @@
   "www.votepalmbeach.gov": {
    "en": "the Palm Beach County Supervisor of Elections",
    "es": "la Supervisora de Elecciones del condado de Palm Beach (Supervisor of Elections)"
+  },
+  "files.floridados.gov": {
+   "en": "the Florida Division of Elections",
+   "es": "la División de Elecciones de Florida"
   }
  },
  "dates": {
@@ -375,6 +379,21 @@
    "quote": "The polls shall be open at the voting places at 7:00 a.m., on the day of the election, and shall be kept open until 7:00 p.m., of the same day, and the time shall be regulated by the customary time in standard use in the county seat of the locality.",
    "status": "verified",
    "notes": "Gulf County Supervisor of Elections, votegulf.gov/voters/vote-on-election-day/ (read 2026-10-28): 'Polls open at 7:00 AM (ET), 6:00 AM (CT) Polls close at 7:00 PM (ET), 6:00 PM (CT)'. Gulf is the county split between time zones (Perplexity lead; split not checked against an official map)."
+  }
+ },
+ "results": {
+  "url": "https://floridaelectionwatch.gov/",
+  "certify": {
+   "status": "verified",
+   "en": "The Elections Canvassing Commission certifies official returns by November 17, 2026.",
+   "es": "La Comisión de Escrutinio Electoral (Elections Canvassing Commission) certifica los resultados oficiales a más tardar el 17 de noviembre de 2026.",
+   "en_after": "The Elections Canvassing Commission's deadline to certify official returns was November 17, 2026.",
+   "es_after": "La fecha límite de la Comisión de Escrutinio Electoral (Elections Canvassing Commission) para certificar los resultados oficiales fue el 17 de noviembre de 2026.",
+   "until": "2026-11-17",
+   "src": "https://files.floridados.gov/media/709430/election-results-reporting-timeline-ge-2026-v20250821.pdf",
+   "checked": "2026-11-04",
+   "quote": "Elections Canvassing Commission Certifies official returns by 8 am/14th day (s. 102.111, FS.)",
+   "notes": "Kind: certify_by. From the Division of Elections 'General Election Results Reporting Timeline – 2026' (Updated 20250821), linked from https://dos.fl.gov/elections/for-voters/election-dates/. The quoted box sits under the printed column head 'Nov. 17 (Tue)'. Results site reads '2026 General Election', 'November 3, 2026', 'Unofficial Election Night Results'."
   }
  }
 }

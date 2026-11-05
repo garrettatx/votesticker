@@ -635,10 +635,12 @@ function vote_fact( $st, $path ) {
 function vote_host( $url ) { return preg_replace( '#^www\.#', '', (string) parse_url( $url, PHP_URL_HOST ) ); }
 function vote_checked( $ymd ) { $t = strtotime( $ymd ); return vote_es() ? date( 'j', $t ) . ' de ' . VOTE_MESES[ date( 'n', $t ) - 1 ] . ' de ' . date( 'Y', $t ) : date( 'F j, Y', $t ); }
 // A source's readable name ("the Texas Secretary of State"), from the facts file's `sources` map; the host otherwise.
+const VOTE_EAC_RESULTS = 'https://www.eac.gov/election-officials/election-results-canvass-and-certification';  // results are unofficial until certified (read Oct 29)
 function vote_src_name( $st, $url ) {
 	$host = vote_host( $url );
 	$map = vote_facts( $st['abbr'] )['sources'] ?? array();
 	$n = $map[ $host ] ?? $map[ 'www.' . $host ] ?? null;
+	if ( ! $n && 'eac.gov' === $host ) { return t( 'the U.S. Election Assistance Commission' ); }
 	return $n ? ( $n[ vote_es() ? 'es' : 'en' ] ?: $n['en'] ) : $host;
 }
 // One check date for the whole page: the newest of the dates, the FAQ research and the facts file.
@@ -733,6 +735,17 @@ function vote_guide( $st ) {
 	// top; Michigan and Kansas Clearscope reads). A state whose facts set sticker.lead shows it right after the
 	// gallery instead (October 31, Michigan), so the guide skips it here.
 	if ( ! vote_sticker_lead( $st ) ) { $out .= vote_sticker_story( $st ); }
+
+	// After Election Day, until between-elections mode (loop item 6, Nov 4): the state's own results page and, where
+	// the state prints one, the date results become official. Dates read on the state's page (build/state-facts/).
+	$res_url = vote_fact( $st, 'results.url' );
+	$cert = vote_fact( $st, 'results.certify' );
+	if ( 'post' === vote_phase() && ! vote_between() && ( $res_url || $cert ) ) {
+		$out .= '<section class="guide" aria-labelledby="results-h">' . $h( 'results-h', t( '%s Election Results', $name ) )
+			. '<p>' . vote_e( t( 'Results posted on election night are unofficial until they are certified.' ) ) . ( $cert ? ' ' . vote_e( $cert['text'] ) : '' ) . '</p>'
+			. ( $res_url ? '<p class="guide__more"><a href="' . vote_e( $res_url ) . '" target="_blank" rel="noopener">' . vote_e( t( 'Official %s election results', $name ) ) . '</a></p>' : '' )
+			. vote_sources_line( $st, array_filter( array( $cert['src'] ?? '', VOTE_EAC_RESULTS ) ) ) . '</section>';
+	}
 	// A section is a list of facts; each adds its source to the section's line.
 	$section = function ( $id, $heading, $keys, $after = '' ) use ( $st, $h ) {
 		$body = ''; $srcs = array();

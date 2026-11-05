@@ -275,5 +275,19 @@
    "quote": "(1m) The polls at every election shall be open from 7 a.m. until 8 p.m.",
    "status": "verified"
   }
+ },
+ "results": {
+  "certify": {
+   "status": "verified",
+   "en": "The Elections Commission's chair has until December 1, 2026 to certify general election results.",
+   "es": "La presidencia de la Comisión de Elecciones tiene hasta el 1 de diciembre de 2026 para certificar los resultados de la elección general.",
+   "en_after": "The Elections Commission's chair had until December 1, 2026 to certify general election results.",
+   "es_after": "La presidencia de la Comisión de Elecciones tenía hasta el 1 de diciembre de 2026 para certificar los resultados de la elección general.",
+   "until": "2026-12-01",
+   "src": "https://elections.wi.gov/sites/default/files/documents/2026_2027%20Election%20Calendar_0.pdf",
+   "checked": "2026-11-04",
+   "quote": "Last day for chairperson of the Wisconsin Elections Commission to certify the results of the General Election.",
+   "notes": "Kind: certify_by. Row 1-Dec under 'December 2026', statute 7.70(3)(a). Results URL is null because it could not be tested: elections.wi.gov HTML pages, including https://elections.wi.gov/elections/election-results, returned 403 to curl and WebFetch. Check that URL in a real browser. The PDF on the same host was served. The earlier research note says Wisconsin posts no statewide election-night results; not confirmed here."
+  }
  }
 }

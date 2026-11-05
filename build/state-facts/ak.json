@@ -275,5 +275,20 @@
    "quote": "General Election Day – Polling Places are open from 7am to 8pm.",
    "status": "verified"
   }
+ },
+ "results": {
+  "url": "https://www.elections.alaska.gov/election-results/",
+  "certify": {
+   "status": "verified",
+   "en": "Alaska's calendar sets November 25, 2026 as the target date to certify the general election.",
+   "es": "El calendario de Alaska fija el 25 de noviembre de 2026 como la fecha prevista para certificar la elección general.",
+   "en_after": "Alaska's calendar set November 25, 2026 as the target date to certify the general election.",
+   "es_after": "El calendario de Alaska fijó el 25 de noviembre de 2026 como la fecha prevista para certificar la elección general.",
+   "until": "2026-11-25",
+   "src": "https://www.elections.alaska.gov/calendar/",
+   "checked": "2026-11-04",
+   "quote": "11/25/2026 | Target date to certify the General Election | Reference is not for specific date. In a gubernatorial year, the Gov/Lt. Gov are sworn into office after Noon on the first Monday in Dec when the previous term ends. | AS 15.15.450",
+   "notes": "Kind: certify_on. TARGET date, not a legal deadline, and the row itself says the reference is not for a specific date; suggest wording it as a target. Cells joined with ' | '. Body comes from https://www.elections.alaska.gov/election-information/ : 'all results are unofficial until the State Review Board certifies the election'. Results page lists '2026 General Election – November 3, 2026' with a table updated Nov 4, and says ranked choice results come November 18, 2026."
+  }
  }
 }

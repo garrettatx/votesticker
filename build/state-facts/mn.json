@@ -246,5 +246,20 @@
    "status": "verified",
    "varies": true
   }
+ },
+ "results": {
+  "url": "https://electionresults.sos.mn.gov/",
+  "certify": {
+   "status": "verified",
+   "en": "Results become official on November 19, 2026, when the State Canvassing Board meets.",
+   "es": "Los resultados se vuelven oficiales el 19 de noviembre de 2026, cuando se reúne la junta estatal de escrutinio (State Canvassing Board).",
+   "en_after": "The State Canvassing Board's meeting to make results official was set for November 19, 2026.",
+   "es_after": "La reunión de la junta estatal de escrutinio (State Canvassing Board) para hacer oficiales los resultados se fijó para el 19 de noviembre de 2026.",
+   "until": "2026-11-19",
+   "src": "https://www.sos.mn.gov/about-the-office/news-room/unofficial-2026-election-results-reported-starting-after-8-pm/",
+   "checked": "2026-11-04",
+   "quote": "Election results will become official on Thursday, November 19, 2026, when the State Canvassing Board will meet to canvass the votes for state and federal candidates for the election.",
+   "notes": "Kind: certify_on. WebFetch caps quotes at 125 characters, so this sentence was read in two consecutive pieces from one Nov 3, 2026 page. Results site adds: 'Results for state and federal offices are unofficial until the Minnesota State Canvassing Board meets on Thursday, November 19, 2026 to certify results.' Also read in overlapping pieces. HTTP test: curl was sent to a Radware captcha page (validate.perfdrive.com); WebFetch read the landing page, which names State General Election, Tuesday, November 3, 2026, and links results for election ID 201. A deeper results page redirected to the captcha, so vote totals were not read. County canvass and recounts can change the final status."
+  }
  }
 }

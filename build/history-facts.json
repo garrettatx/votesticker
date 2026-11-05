@@ -1,5 +1,5 @@
 {
-  "checked": "2026-10-29",
+  "checked": "2026-11-04",
   "sources": {
     "www.aarp.org": {
       "en": "AARP"
@@ -1543,6 +1543,73 @@
       "quote": "She noticed a county in Washington state had started handing out stickers on Election Day. “It was black and white and had an X in a square. And that’s it. And I thought, this is not inspiring,” Boudreau said.",
       "also": [],
       "notes": "WKYT, Oct 31, 2026. Her recollection; county not named."
+    },
+    {
+      "id": "douglas-braille-2019",
+      "year": 2019,
+      "date": "2019",
+      "place": "Douglas County, Nevada",
+      "claim": "The county, the Nevada Secretary of State and a local artist created a braille I Voted sticker for use in the 2020 elections.",
+      "evidence": "official record",
+      "status": "verified",
+      "src": "https://www.eac.gov/clearinghouse-awards/2019-winner-creative-and-original-i-voted-stickers-nevada-72116",
+      "quote": "In the fall of 2019, the county collaborated with the Nevadas Office of the Secretary of State and a local artist to create an accessible braille I voted sticker for use in the 2020 elections.",
+      "also": [],
+      "notes": "EAC Clearie entry, read with curl Nov 4, 2026; apostrophe and quote marks missing on the EAC page as served."
+    },
+    {
+      "id": "palm-beach-braille-2024",
+      "year": 2024,
+      "date": "2024",
+      "place": "Palm Beach County, Florida",
+      "claim": "Two braille I Voted stickers for the 2024 general election, each also using American Sign Language; one designed with Pyramid, Inc., an arts program for people with disabilities.",
+      "evidence": "official record",
+      "status": "verified",
+      "src": "https://eac.gov/sites/default/files/2025-04/Clearies24_FL_PalmBeach_BrailleStickers_508.pdf",
+      "quote": "The two stickers each incorporate braille and American Sign Language in their designs,",
+      "also": [
+        {
+          "src": "https://www.eac.gov/clearinghouse-awards/2024-winner-creative-and-original-i-voted-stickers-florida-72851",
+          "quote": "The 2024 general election in Palm Beach County included a groundbreaking initiative, introducing two Braille I Voted stickers."
+        }
+      ],
+      "notes": "The submission calls it first-of-its-kind; Douglas County, NV made a braille sticker in 2019, so the page does not repeat that."
+    },
+    {
+      "id": "colorado-digital-2022",
+      "year": 2022,
+      "date": "2022-09-23",
+      "place": "Colorado",
+      "claim": "Colorado's first I Voted digital sticker contest; the winning design went to voters through BallotTrax once they had voted.",
+      "evidence": "official record",
+      "status": "verified",
+      "src": "https://www.sos.state.co.us/pubs/newsRoom/pressReleases/2022/PR20220923Contest.html",
+      "quote": "Today, Secretary of State Jena Griswold announced that Holy Family High School senior Matthew H. is the winner of Colorado’s first ever “I Voted” Digital Sticker Design Contest.",
+      "also": [
+        {
+          "src": "https://www.sos.state.co.us/pubs/newsRoom/pressReleases/2022/PR20220923Contest.html",
+          "quote": "The new digital sticker designed by Matthew will be sent to voters via BallotTrax once they have voted in the upcoming General Election."
+        }
+      ],
+      "notes": "Student by first name and school, per the loop rules."
+    },
+    {
+      "id": "jeffco-scratch-2025",
+      "year": 2025,
+      "date": "2025-10-24",
+      "place": "Jefferson County, Colorado",
+      "claim": "A scratch-and-sniff I Voted sticker in the 2025 election, with the scent chosen after students voted on swatches. The EAC entry calls it the first in the nation; the page attributes that.",
+      "evidence": "official record",
+      "status": "verified",
+      "src": "https://www.eac.gov/clearinghouse-awards/2025-winner-creative-and-original-i-voted-stickers-colorado-74206",
+      "quote": "To revitalize interest in an odd-year election, Jefferson County tapped into voter nostalgia by launching the nations first-ever scratch-and-sniff I Voted sticker.",
+      "also": [
+        {
+          "src": "https://www.jeffco.us/CivicAlerts.asp?AID=2484",
+          "quote": "This year’s sticker is scratch ‘n’ sniff, designed to add a little fun and nostalgia to the voting experience."
+        }
+      ],
+      "notes": "First in the nation is the award entry's claim, not independently checked. The entry's turnout claims are left out."
     }
   ],
   "numbers": [

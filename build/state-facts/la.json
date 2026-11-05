@@ -314,5 +314,8 @@
    "quote": "On election day, the polls are open from 6 a.m.-8 p.m.",
    "status": "verified"
   }
+ },
+ "results": {
+  "url": "https://voterportal.sos.la.gov/graphical"
  }
 }

@@ -277,5 +277,20 @@
    "quote": "Polls will open at 7:00 a.m. and close at 7:00 p.m.",
    "status": "verified"
   }
+ },
+ "results": {
+  "url": "https://www.sos.ms.gov/elections-voting/election-results",
+  "certify": {
+   "status": "verified",
+   "en": "The state's elections calendar lists December 3, 2026 for the Secretary of State to declare results.",
+   "es": "El calendario electoral del estado indica el 3 de diciembre de 2026 para que la Secretaría de Estado declare los resultados.",
+   "en_after": "The state's elections calendar listed December 3, 2026 for the Secretary of State to declare results.",
+   "es_after": "El calendario electoral del estado indicó el 3 de diciembre de 2026 para que la Secretaría de Estado declarara los resultados.",
+   "until": "2026-12-03",
+   "src": "https://www.sos.ms.gov/content/documents/elections/2026%20Elections%20Calendar.pdf",
+   "checked": "2026-11-04",
+   "quote": "3rd Declaration of General/Special Election Results by Secretary of State. (Miss. Code Ann. §§ 23-15-605).",
+   "notes": "Kind: certify_on. Row is under the DECEMBER heading of the 2026 Elections Calendar, Last Revised 9/8/2026. The calendar says it 'is provided for planning purposes only. Dates are subject to change or revision.' It lists a date without saying deadline, so the kind is a best reading. Declaration of Dec 1 runoff results is a separate row on the 31st. Results page's newest 2026 entries are the March 10 primaries."
+  }
  }
 }

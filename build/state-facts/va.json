@@ -307,5 +307,20 @@
    "quote": "At all elections, the polls shall be open at each polling place at 6:00 a.m. on the day of the election and closed at 7:00 p.m. on the same day",
    "status": "verified"
   }
+ },
+ "results": {
+  "url": "https://enr.elections.virginia.gov/results/public/virginia/elections/2026-November-General",
+  "certify": {
+   "status": "verified",
+   "en": "The State Board of Elections certifies results on December 7, 2026.",
+   "es": "La Junta Estatal de Elecciones certifica los resultados el 7 de diciembre de 2026.",
+   "en_after": "The State Board of Elections' date to certify results was December 7, 2026.",
+   "es_after": "La fecha de la Junta Estatal de Elecciones para certificar los resultados fue el 7 de diciembre de 2026.",
+   "until": "2026-12-07",
+   "src": "https://www.elections.virginia.gov/news-releases/early-voting-for-2026-november-general-election-begins-sept-18-2.html",
+   "checked": "2026-11-04",
+   "quote": "Dec. 7 – State Board of Elections certifies results.",
+   "notes": "Kind: certify_on. ELECT's backgrounder says 'For November elections, the State Board of Elections must certify results on the first Monday of December', which matches. Local office results become official earlier, when the local electoral board certifies. Results URL returned 200 with plain curl and is linked as 'November 3, 2026 General and Special Elections' under 'Unofficial Results'. It is a JavaScript app, so 2026 content was not read directly."
+  }
  }
 }

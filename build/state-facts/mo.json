@@ -295,5 +295,8 @@
    "quote": "Polling places open at 6:00 a.m. and remain open until 7:00 p.m.",
    "status": "verified"
   }
+ },
+ "results": {
+  "url": "https://www.sos.mo.gov/elections/results"
  }
 }

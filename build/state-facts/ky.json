@@ -290,5 +290,20 @@
    "quote": "Polls are open from 6:00 AM to 6:00 PM local time on Tuesday, November 3rd, 2026.",
    "status": "verified"
   }
+ },
+ "results": {
+  "url": "https://elect.ky.gov/results/Pages/default.aspx",
+  "certify": {
+   "status": "verified",
+   "en": "The State Board of Elections has until November 23, 2026 to meet, tabulate votes and make out certificates of election.",
+   "es": "La Junta Estatal de Elecciones tiene hasta el 23 de noviembre de 2026 para reunirse, contar los votos y emitir los certificados de elección.",
+   "en_after": "The State Board of Elections had until November 23, 2026 to meet, tabulate votes and make out certificates of election.",
+   "es_after": "La Junta Estatal de Elecciones tenía hasta el 23 de noviembre de 2026 para reunirse, contar los votos y emitir los certificados de elección.",
+   "until": "2026-11-23",
+   "src": "https://elect.ky.gov/Resources/Documents/2026%20Election%20Calendar.pdf",
+   "checked": "2026-11-04",
+   "quote": "Monday 11/23 | Last day for State Board of Elections to meet to tabulate votes and make out certificates of election (not later than third Monday after election). | KRS 118.425(5)",
+   "notes": "Kind: certify_by. The wording is tabulate and make out certificates, a last day to do so; it does not use the word certify. Results URL is the State Board's results archive, newest entry 2026 Primary Recap Sheets. Live page https://vrsws.sos.ky.gov/liveresults?id=81 is linked from https://elect.ky.gov/Pages/default.aspx but returned a 403 'KY SBE Acceptable Use Policy' page to curl and WebFetch, so it fails the 200 test from here."
+  }
  }
 }

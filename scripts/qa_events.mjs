@@ -63,11 +63,12 @@ console.log('Desktop Chrome, Texas');
 	check(tags.length === 0, `no analytics scripts in an automated browser (${tags.length})`);
 	check((await events(page)).length === 0, 'nothing on page load');
 	// The first deliberate maker change sends sticker_builder_start once; later picks send nothing.
-	await page.locator('#grid .tile').nth(2).click();
+	// Past the classics, which lead the row since Nov 2 and hide the swatches.
+	await page.locator('#grid .tile').nth(5).click();
 	await page.waitForTimeout(200);
 	one(await events(page), 'sticker_builder_start', { state: 'TX', first_action: 'layout' }, 'first layout pick starts the builder');
 	await page.locator('#swatches .swatch').nth(3).click();
-	await page.locator('#grid .tile').nth(4).click();
+	await page.locator('#grid .tile').nth(6).click();
 	await page.selectOption('#headline', { index: 1 });
 	await page.waitForTimeout(200);
 	check((await events(page)).length === 0, 'later design, color and message picks send nothing');

@@ -383,5 +383,20 @@
    "quote": "Tuesday, November 3, 2026 (Election Day) 7:00 a.m. – 7:00 p.m. Polls open. (Sec. 41.031).",
    "status": "verified"
   }
+ },
+ "results": {
+  "url": "https://goelect.txelections.civixapps.com/ivis-enr-ui/races",
+  "certify": {
+   "status": "verified",
+   "en": "The Governor has until December 7, 2026 to conduct the state canvass for state and county officers.",
+   "es": "El gobernador tiene hasta el 7 de diciembre de 2026 para hacer el escrutinio estatal de los cargos estatales y de condado.",
+   "en_after": "The Governor had until December 7, 2026 to conduct the state canvass for state and county officers.",
+   "es_after": "El gobernador tenía hasta el 7 de diciembre de 2026 para hacer el escrutinio estatal de los cargos estatales y de condado.",
+   "until": "2026-12-07",
+   "src": "https://www.sos.texas.gov/elections/laws/advisory2026-21-november-3-election-law-calendar.shtml",
+   "checked": "2026-11-04",
+   "quote": "Last day for the Governor to conduct the state canvass for the November General Election for state and county officers.",
+   "notes": "Kind: certify_by. Row dated Monday, December 7, 2026. Earliest date is Saturday, November 21, 2026 (same calendar). Advisory 2026-28 agrees and says 'The final state canvass date for the general election has not been set at press time'. Results URL is vendor-hosted (Civix), returned 200 with plain curl, and is linked from the SOS page and calendar. It is a JavaScript app, so 2026 content was not read. results.texas-election.com/races has title 'Texas Election Night Results' but returned 403 to plain curl."
+  }
  }
 }

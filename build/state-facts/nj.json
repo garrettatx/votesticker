@@ -260,5 +260,20 @@
    "quote": "Vote in person at your polling place, from 6:00 a.m. to 8:00 p.m. on Election Day, Tuesday,",
    "status": "verified"
   }
+ },
+ "results": {
+  "url": "https://www.nj.gov/state/elections/election-information-2026.shtml",
+  "certify": {
+   "status": "verified",
+   "en": "The Board of State Canvassers must meet to certify by December 3, 2026.",
+   "es": "La junta estatal de escrutinio (Board of State Canvassers) debe reunirse para certificar a más tardar el 3 de diciembre de 2026.",
+   "en_after": "The Board of State Canvassers' deadline to meet to certify was December 3, 2026.",
+   "es_after": "La fecha límite de la junta estatal de escrutinio (Board of State Canvassers) para reunirse a certificar fue el 3 de diciembre de 2026.",
+   "until": "2026-12-03",
+   "src": "https://www.nj.gov/state/elections/assets/pdf/chrons/2026-chron-general-election-0109.pdf",
+   "checked": "2026-11-04",
+   "quote": "Deadline for Meeting of Board of State Canvassers to Certify General Election Results",
+   "notes": "Kind: certify_by. Listed under 'December 3' in the 2026 General Election Timeline, with '(on or before the 30th day after election)' and N.J.S.A. 19:21-1. Results URL is the state's 2026 information and results page, footer 'Page Last Updated: 09/04/26'. It lists 'Official General Election Results' links, but the two I tested (U.S. Senate, voter turnout) return 404, so 2026 general results are not posted yet. Unlike other states this is not an election-night results site."
+  }
  }
 }

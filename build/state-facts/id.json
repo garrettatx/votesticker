@@ -256,5 +256,20 @@
    "status": "verified",
    "varies": true
   }
+ },
+ "results": {
+  "url": "https://results.voteidaho.gov/results/public/id/elections/nov2026",
+  "certify": {
+   "status": "verified",
+   "en": "The State Board of Canvassers has until November 24, 2026 to meet and canvass the general election.",
+   "es": "La junta estatal de escrutinio (State Board of Canvassers) tiene hasta el 24 de noviembre de 2026 para reunirse y revisar la elección general.",
+   "en_after": "The State Board of Canvassers had until November 24, 2026 to meet and canvass the general election.",
+   "es_after": "La junta estatal de escrutinio (State Board of Canvassers) tenía hasta el 24 de noviembre de 2026 para reunirse y revisar la elección general.",
+   "until": "2026-11-24",
+   "src": "https://voteidaho.gov/calendar/",
+   "checked": "2026-11-04",
+   "quote": "State Canvass November 24 Deadline for the state board of canvassers to meet and conduct the canvass – of the general election.",
+   "notes": "Kind: certify_by. Calendar entry prints 'November 24' with no year; the page's event data gives startDate 2026-11-24 for 'State Canvass'. Wording is meet and conduct the canvass, by a deadline. Results: JavaScript app; its data feed reads 'General Election - November 3, 2026', isOfficialResults false, last updated 2026-11-04."
+  }
  }
 }

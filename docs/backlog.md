@@ -2,6 +2,14 @@
 
 Open items, newest first. Started October 21, 2026. Move an item to `docs/history.md` when it ships.
 
+## Results Section Follow-Ups (November 4)
+
+- **Chrome read for the held-back states.** Results links: AZ, NH, NV, NY, TN, WI. Date pages: AZ, GA, HI, IA, MA, RI, TN and others in the LOOP log. Needs the Chrome extension connected.
+- **New York's date (Garrett's call).** Election Law 9-216 fixes December 15, but no readable page prints it for 2026, so the page has no date. Does a fixed date in a statute count?
+- **South Carolina's date.** Four official sources disagree. Add it once the Election Commission posts a meeting notice.
+- **`qa_events.mjs` post-phase flows.** It stops at `#copy`, the plan post text that post-phase pages hide. Rewrite those steps or run it against a Nov 2 build.
+- **Item 7's Perplexity prompt.** Still unrun: `docs/research/history-postelection-20261029/designs-prompt.txt`. Coconino County's 2024 Navajo and Hopi contest is the first lead to read in Chrome.
+
 ## Share Row Follow-Ups (November 3)
 
 - **Share row under the ready-made gallery too.** Today the row sits only under the maker's download buttons, so

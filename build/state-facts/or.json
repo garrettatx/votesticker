@@ -260,5 +260,20 @@
    "status": "verified"
   }
  },
- "notes": "Read October 21, 2026 on sos.oregon.gov (curl worked): General Election – November 3, 2026 (current-election), Elections FAQ, Oregon Drop Box Locator, Track Your Ballot, Media Resources (virtual I Voted stickers); and ORS 260.695(3) on oregonlegislature.gov. states.js matches: ballots mailed starting October 14 ('Counties begin mailing ballots to active voters in Oregon : October 14'), recommended mail-by date October 27, drop box deadline 'November 3 at 8 p.m.'. The 21-day cure deadline is stated relative to the election and was not converted to a date. Provisional ballots, phone rules and first-time voter ID (HAVA) were not found on an Oregon page; left missing. The selfie stays out (faq-sources.json has no official source)."
+ "notes": "Read October 21, 2026 on sos.oregon.gov (curl worked): General Election – November 3, 2026 (current-election), Elections FAQ, Oregon Drop Box Locator, Track Your Ballot, Media Resources (virtual I Voted stickers); and ORS 260.695(3) on oregonlegislature.gov. states.js matches: ballots mailed starting October 14 ('Counties begin mailing ballots to active voters in Oregon : October 14'), recommended mail-by date October 27, drop box deadline 'November 3 at 8 p.m.'. The 21-day cure deadline is stated relative to the election and was not converted to a date. Provisional ballots, phone rules and first-time voter ID (HAVA) were not found on an Oregon page; left missing. The selfie stays out (faq-sources.json has no official source).",
+ "results": {
+  "url": "https://results.oregonvotes.gov/",
+  "certify": {
+   "status": "verified",
+   "en": "The deadline for results to be official and the election certified is December 10, 2026.",
+   "es": "La fecha límite para que los resultados sean oficiales y se certifique la elección es el 10 de diciembre de 2026.",
+   "en_after": "The deadline for results to be official and the election certified was December 10, 2026.",
+   "es_after": "La fecha límite para que los resultados fueran oficiales y se certificara la elección fue el 10 de diciembre de 2026.",
+   "until": "2026-12-10",
+   "src": "https://sos.oregon.gov/elections/Voters-Pamphlet/Documents/VP_G26-Book1_web.pdf",
+   "checked": "2026-11-04",
+   "quote": "The deadline for the results to be official and for the election to be certified is December 10, 2026.",
+   "notes": "Kind: certify_by. Agrees with the 2026 Elections Calendar row 'December 10, 2026 Last day for Secretary of State to canvass votes, prepare and deliver certificates of election' (https://sos.oregon.gov/elections/Documents/current-elections-calendar.pdf). Rechecked results.oregonvotes.gov: the Nov 2 error page is gone; it returns 200 and reads 'Unofficial General Election November 3, 2026'. The pamphlet also prints 'results.oregon.gov' beside 'Final, certified results will be available December 10.'; that host did not resolve on Nov 4, so do not use it."
+  }
+ }
 }

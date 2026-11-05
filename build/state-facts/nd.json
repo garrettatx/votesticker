@@ -268,5 +268,20 @@
    "quote2": "The polls must remain open continuously until seven p.m. or a later hour, not later than nine p.m.",
    "varies": true
   }
+ },
+ "results": {
+  "url": "https://resultsnd.sos.nd.gov/#election=348",
+  "certify": {
+   "status": "verified",
+   "en": "The State Canvassing Board meets on November 18, 2026.",
+   "es": "La junta estatal de escrutinio (State Canvassing Board) se reúne el 18 de noviembre de 2026.",
+   "en_after": "The State Canvassing Board's meeting was set for November 18, 2026.",
+   "es_after": "La reunión de la junta estatal de escrutinio (State Canvassing Board) se fijó para el 18 de noviembre de 2026.",
+   "until": "2026-11-18",
+   "src": "https://www.sos.nd.gov/sites/default/files/documents/news/2026-general-election-media-info-aug26.pdf",
+   "checked": "2026-11-04",
+   "quote": "State canvassing board meets within 17 days after election day – November 18, 2026 at 10:00 a.m. CST in the Secretary of State’s office in the North Dakota State Capitol.",
+   "notes": "Kind: meets. OFFICIAL SOURCES DISAGREE. The 2026 Election & Candidate Filing Guide row reads 'State Canvassing Board Meets to Certify Election Results Must meet by November 20, 2026' (https://www.sos.nd.gov/sites/www/files/documents/elections/election-candidate-filing-info.pdf). NDCC 16.1-15-35: 'Not later than seventeen days'. Likely reading: Nov 18 is the scheduled meeting, Nov 20 the legal deadline, but no source says so. Separately, sos.nd.gov/elections/voter/elections-currentpast says 'November 18, 2026 – County Canvassing Boards Meet', while the media guide and filing guide put county boards on Nov 16. Results: the old results.sos.nd.gov still shows 'Official 2024 General Election Results', so do not use it. The SOS page links 'General Election Results - November 3, 2026' to the new app at the recorded URL. The app root returns 200 but is a JavaScript shell, so 2026 content was not seen."
+  }
  }
 }

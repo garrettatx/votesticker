@@ -288,5 +288,8 @@
    "quote": "November 3, 2026 General Election Day - Polls open 7:30 am to 7:30 pm",
    "status": "verified"
   }
+ },
+ "results": {
+  "url": "https://arkansas.tally-enr.com/"
  }
 }

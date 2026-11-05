@@ -37,6 +37,8 @@ OFFICIAL = re.compile(r'(\.gov$|\.us$|^sos\.|^elections?\.|^vote|statutes|legis|
 BANNED_WORDS = re.compile(r'RE-VERIFY|\bTODO\b|(?i:\blikely\b|\bprobably\b|\btypically\b|\bgenerally\b|\busually\b)|—')
 # State election offices that run tools on a vendor's host, linked from the state's own page.
 ALLOW_HOSTS = {'goelect.txelections.civixapps.com',
+               # Results sites run for the state on a vendor's host, each linked from the state's own page (Nov 4, loop item 6).
+               'arkansas.tally-enr.com', 'results.enr.clarityelections.com', 'ctemspublic.tgstg.net', 'electionresults.dcboe.org',
                'dcboe.org', 'www.dcboe.org', 'earlyvoting.dcboe.org',
                'nmonesource.com',
                'www.countynewscenter.com',     # San Diego County's own news site (County News Center)
@@ -80,6 +82,8 @@ FACTS = {
     'sticker.more': 'more',  # county or city sticker stories under the gallery: a list, each entry its own place, source and quote
     'election_day.hours': 'text',
     'faq.provisional': 'text', 'faq.line': 'text', 'faq.track': 'text', 'faq.unsigned': 'text', 'faq.late_mail': 'text',
+    'results.url': 'url',       # the state's official election results page (post phase only; Nov 4, loop item 6)
+    'results.certify': 'text',  # when results become official: a state-level date read on the state's own page
     'faq.problem': 'text',  # who to call: the state election office's own voter line (Nov 1, pass 12)
 }
 RULES = ('photo_required', 'photo_requested', 'id_nonphoto', 'no_id')
@@ -91,6 +95,12 @@ def get(d, path):
             return None
         d = d[k]
     return d
+
+
+def age_ref(today):
+    """The freshness limit protects voters before the election. After Election Day the voting facts are past
+    dates that no re-read changes, so age counts to Election Day and the daily build keeps running (Nov 4)."""
+    return min(today, date.fromisoformat(ELECTION))
 
 
 def check(abbr, d, today):
@@ -179,7 +189,7 @@ def check(abbr, d, today):
             c = date.fromisoformat(v.get('checked', ''))
             if c < SEASON_START:
                 errs.append(f'{path}: checked {c} is before this season ({SEASON_START}); read it again')
-            elif (today - c).days > MAX_AGE_DAYS:
+            elif (age_ref(today) - c).days > MAX_AGE_DAYS:
                 errs.append(f'{path}: checked {c} is more than {MAX_AGE_DAYS} days old; read it again')
             elif c > today:
                 errs.append(f'{path}: checked {c} is in the future')
@@ -230,7 +240,7 @@ def more_errors(e, today):
         errs.append('quote (the source sentence) is required')
     try:
         c = date.fromisoformat(e.get('checked', ''))
-        if c < SEASON_START or (today - c).days > MAX_AGE_DAYS or c > today:
+        if c < SEASON_START or (age_ref(today) - c).days > MAX_AGE_DAYS or c > today:
             errs.append(f'checked {c} is outside this season, older than {MAX_AGE_DAYS} days, or in the future')
     except ValueError:
         errs.append('checked must be YYYY-MM-DD')

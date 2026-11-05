@@ -287,5 +287,20 @@
    "quote": "On the day of any election, the polls shall be opened at 7 o'clock in the forenoon, and shall be continuously open until 8 o'clock in the afternoon and no longer.",
    "status": "verified"
   }
+ },
+ "results": {
+  "url": "https://www.michigan.gov/sos/elections/election-results-and-data",
+  "certify": {
+   "status": "verified",
+   "en": "The Board of State Canvassers must vote to certify by November 23, 2026.",
+   "es": "La junta estatal de escrutinio (Board of State Canvassers) debe votar para certificar a más tardar el 23 de noviembre de 2026.",
+   "en_after": "The Board of State Canvassers' deadline to vote to certify was November 23, 2026.",
+   "es_after": "La fecha límite de la junta estatal de escrutinio (Board of State Canvassers) para votar la certificación fue el 23 de noviembre de 2026.",
+   "until": "2026-11-23",
+   "src": "https://www.michigan.gov/sos/resources/news/2026/11/03/strong-election-day-voter-turnout-over-84-percent",
+   "checked": "2026-11-04",
+   "quote": "The Board of State Canvassers then conducts its own review of the processes and accuracy of the election, and must vote to certify the results by Monday, Nov. 23.",
+   "notes": "Kind: certify_by. Next sentence: 'After the Board of State Canvassers certifies, the General Election results are final and official.' Agrees with the SOS Election Dates chart row: 'Deadline for Board of State Canvassers to meet to canvass November General Election.' on Monday, Nov. 23, 2026, and with the board's 2026 schedule listing November 23, 2026. Same release: 'After unofficial results are reported by all Michigan counties, they will be available online at mi.gov/vote .' mi.gov/vote redirects to https://mvic.sos.state.mi.us/, which returned 403 to curl and WebFetch, so it fails the 200 test from here. Results URL is the SOS landing page, with no 2026 general results on it. It links county sites for unofficial results."
+  }
  }
 }

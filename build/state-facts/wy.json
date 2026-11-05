@@ -255,5 +255,20 @@
    "quote": "Polls are open from 7 a.m. to 7 p.m., or until the last person in line at 7 p.m. has voted.",
    "status": "verified"
   }
+ },
+ "results": {
+  "url": "https://sos.wyo.gov/Elections/Docs/2026/2026GeneralResults.aspx",
+  "certify": {
+   "status": "verified",
+   "en": "The State Canvassing Board meets on November 10, 2026 to certify the state abstract.",
+   "es": "La junta estatal de escrutinio (State Canvassing Board) se reúne el 10 de noviembre de 2026 para certificar el resumen estatal.",
+   "en_after": "The State Canvassing Board's meeting to certify the state abstract was set for November 10, 2026.",
+   "es_after": "La reunión de la junta estatal de escrutinio (State Canvassing Board) para certificar el resumen estatal se fijó para el 10 de noviembre de 2026.",
+   "until": "2026-11-10",
+   "src": "https://sos.wyo.gov/Elections/Docs/2026/2026_Election_Calendar.pdf",
+   "checked": "2026-11-04",
+   "quote": "State Canvassing Board meets to certify state abstract.",
+   "notes": "Kind: meets. Row 'Tue Nov 10, 2026'. It continues: 'This is prior to the statutory deadline due to federal holiday.' HB0052 (2026) would have changed the dates, but its digest ends with 'S COW:S Did not consider for COW' on 3/3/2026, so it does not appear to have passed. Results page is headed '2026 Unofficial General Election Results'; statewide summary links are present, but vote totals in them were not opened."
+  }
  }
 }

@@ -288,5 +288,8 @@
    "status": "verified",
    "varies": true
   }
+ },
+ "results": {
+  "url": "https://electionstats.state.ma.us/"
  }
 }

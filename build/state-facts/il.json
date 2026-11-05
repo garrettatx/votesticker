@@ -265,5 +265,20 @@
    "quote": "The polls shall be opened at the hour of 6:00 a.m. and continued open until 7:00 p.m. of the same day",
    "status": "verified"
   }
+ },
+ "results": {
+  "url": "https://www.elections.il.gov/electionoperations/ElectionVoteTotals.aspx",
+  "certify": {
+   "status": "verified",
+   "en": "The State Board of Elections plans to proclaim the general election results at its December 4, 2026 meeting.",
+   "es": "La Junta Estatal de Elecciones planea proclamar los resultados de la elección general en su reunión del 4 de diciembre de 2026.",
+   "en_after": "The State Board of Elections set its December 4, 2026 meeting to proclaim the general election results.",
+   "es_after": "La Junta Estatal de Elecciones fijó su reunión del 4 de diciembre de 2026 para proclamar los resultados de la elección general.",
+   "until": "2026-12-04",
+   "src": "https://www.elections.il.gov/abouttheboard/agenda.aspx",
+   "checked": "2026-11-04",
+   "quote": "Fri, December 4, 2026 | 10:00 a.m. | Chicago | Springfield | Proclamation of results of the November General Election",
+   "notes": "Kind: meets. Board meeting schedule row: the board meets that day to proclaim results. The newest election on the vote totals page is 2026 General Primary. ElectionResults.aspx says unofficial local results are not reported to the State Board or posted on its site, so election-night numbers are with local election authorities. Statute lead 10 ILCS 5/22-7 was not read; the printed date does not depend on it."
+  }
  }
 }

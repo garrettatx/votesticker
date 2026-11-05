@@ -297,5 +297,20 @@
    "quote": "(a) The provisions of this subsection shall apply to all counties in Kansas located in the central time zone. At all national, state, county and township primary and general elections the polls shall open at 7:00 a.m. and close at 7:00 p.m., unless different hours are set and publicly announced by the county election officer. If different hours are set, the polls shall be open at least 12 continuous hours commencing not earlier than 6:00 a.m. and ending not later than 8:00 p.m. ... (b) The provisions of this subsection shall apply to all counties in Kansas located in the mountain time zone. At all national, state, county and township primary and general elections the polls shall open at 6:00 a.m. and close at 6:00 p.m., unless different hours are set and publicly announced by the county election officer.",
    "status": "verified"
   }
+ },
+ "results": {
+  "url": "https://sos.ks.gov/elections/election-results.html",
+  "certify": {
+   "status": "verified",
+   "en": "The State Board of Canvassers must certify by December 1, 2026.",
+   "es": "La junta estatal de escrutinio (State Board of Canvassers) debe certificar a más tardar el 1 de diciembre de 2026.",
+   "en_after": "The State Board of Canvassers' deadline to certify was December 1, 2026.",
+   "es_after": "La fecha límite de la junta estatal de escrutinio (State Board of Canvassers) para certificar fue el 1 de diciembre de 2026.",
+   "until": "2026-12-01",
+   "src": "https://sos.ks.gov/media/press-releases/2026/11-03-26-schwab-reminds-kansans-of-election-night-website.html",
+   "checked": "2026-11-04",
+   "quote": "Certification must take place by December 1.",
+   "notes": "Kind: certify_by. Agrees with the 2026 General Election Dates PDF (https://sos.ks.gov/Pubs/Elections/2026-General-Election-Dates.pdf), Dec 1 row: 'Last day for State Board of Canvassers to certify official results.' The results URL is the official results archive; its newest entries are the 2026 primary. Election-night site https://ent.sos.ks.gov/kssos_ent.html is linked from elections.html as 'Click to View Unofficial Election Results' but returned 403 to curl and WebFetch, so it fails the 200 test from here; it may well work in a browser. Separate from the date: the same PDF says all mail ballots must be received on Election Day, while the Nov 3 release says a court injunction allows receipt through Nov 6."
+  }
  }
 }

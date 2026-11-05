@@ -287,5 +287,8 @@
    "quote": "All polling places in Ohio are open from 6:30 a.m. to 7:30 p.m. on Election Day.",
    "status": "verified"
   }
+ },
+ "results": {
+  "url": "https://liveresults.ohiosos.gov/"
  }
 }

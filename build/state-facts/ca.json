@@ -377,5 +377,20 @@
    "quote": "Polling locations are established by county elections officials and are open from 7:00 a.m. to 8:00 p.m. on Election Day, Tuesday, November 3, 2026.",
    "status": "verified"
   }
+ },
+ "results": {
+  "url": "https://electionresults.sos.ca.gov/",
+  "certify": {
+   "status": "verified",
+   "en": "The Secretary of State will certify results on December 11, 2026.",
+   "es": "La Secretaría de Estado certificará los resultados el 11 de diciembre de 2026.",
+   "en_after": "The Secretary of State's schedule set December 11, 2026 to certify results.",
+   "es_after": "El calendario de la Secretaría de Estado fijó el 11 de diciembre de 2026 para certificar los resultados.",
+   "until": "2026-12-11",
+   "src": "https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026",
+   "checked": "2026-11-04",
+   "quote": "The Secretary of State will certify results on December 11, 2026.",
+   "notes": "Kind: certify_on. Results URL returns 200 but serves an Incapsula bot-check stub to curl and WebFetch, so content was not seen and results_shows_2026 is null. Same page: 'County elections officials must complete final official results by December 3, 2026.' (county, rejected). The SOS calendar (https://elections.cdn.sos.ca.gov/statewide-elections/2026-primary/election-guide/section-07-general-election-calendar.pdf, Rev: 09/24/2026) gives the same date as a deadline: 'Last day for the Secretary of State to prepare, certify, and file a statement of the vote' 12/11/26."
+  }
  }
 }

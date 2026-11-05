@@ -250,5 +250,20 @@
    "quote": "November 3, 2026: General Election Day • POLLS OPEN FROM 7:00 A.M. TO 7:00 P.M.",
    "status": "verified"
   }
+ },
+ "results": {
+  "url": "https://electionresults.sos.nm.gov/",
+  "certify": {
+   "status": "verified",
+   "en": "The State Board of Canvass will meet on November 24, 2026 to certify the official results.",
+   "es": "La junta estatal de escrutinio (State Board of Canvass) se reunirá el 24 de noviembre de 2026 para certificar los resultados oficiales.",
+   "en_after": "The State Board of Canvass's meeting to certify the official results was set for November 24, 2026.",
+   "es_after": "La reunión de la junta estatal de escrutinio (State Board of Canvass) para certificar los resultados oficiales se fijó para el 24 de noviembre de 2026.",
+   "until": "2026-11-24",
+   "src": "https://www.sos.nm.gov/2026/11/03/secretary-of-state-maggie-toulouse-oliver-celebrates-a-successful-2026-general-election/",
+   "checked": "2026-11-04",
+   "quote": "The State Board of Canvass will meet on Tuesday, November 24, 2026, to certify the official results and order any automatic recounts.",
+   "notes": "Kind: meets. SOS release dated Nov 3, 2026. Agrees with the 2026 Candidate Guide heading 'November 24, 2026: CERTIFICATION OF ELECTION RESULTS (STATEWIDE)'. Results page reads 'Unofficial Results GENERAL 2026 November 3, 2026'."
+  }
  }
 }

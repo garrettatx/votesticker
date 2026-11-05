@@ -287,5 +287,8 @@
    "quote": "polls shall be opened in each precinct on the day of the election at 6:30 in the morning and be closed at 7:30 in the evening.",
    "status": "verified"
   }
+ },
+ "results": {
+  "url": "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
  }
 }

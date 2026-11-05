@@ -247,5 +247,8 @@
    "quote2": "The polls must be closed at 8 p.m. on election day",
    "varies": true
   }
+ },
+ "results": {
+  "url": "https://www.maine.gov/sos/elections-voting/election-results-data"
  }
 }
