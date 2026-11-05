@@ -1087,7 +1087,7 @@ function vote_more_stickers( $st ) {
 		$items .= '<li><a href="' . vote_e( $e['src'] ) . '" target="_blank" rel="noopener">' . vote_e( $e['place'][ $lang ] ) . '</a>: ' . vote_e( $text ) . '</li>';
 		$last = max( $last, $e['checked'] );
 	}
-	return '<div class="more-stickers"><h2 id="county-h">' . vote_e( sprintf( $h[ $es ? 1 : 0 ], $name ) ) . '</h2><ul>' . $items . '</ul><p class="hint">'
+	return '<div class="more-stickers"><h2 id="county-h" class="display-h">' . vote_e( sprintf( $h[ $es ? 1 : 0 ], $name ) ) . '</h2><ul>' . $items . '</ul><p class="hint">'
 		. vote_e( $es ? 'Cada enlace lleva a la oficina electoral que lo anunció. Revisado el ' . vote_checked( $last ) . '.' : 'Each link goes to the election office that announced it. Last checked ' . vote_checked( $last ) . '.' ) . '</p></div>';
 }
 
@@ -1911,7 +1911,7 @@ $vote_ld = array(
 	<?php endif; ?>
 	<?php if ( ! $vote_404 ) : ?>
 	<section class="faq" aria-labelledby="faq-h">
-		<h2 id="faq-h"><?php echo vote_e( t( 'Sticker and Voting Questions' ) ); ?></h2>
+		<h2 id="faq-h" class="display-h"><?php echo vote_e( t( 'Sticker and Voting Questions' ) ); ?></h2>
 		<?php if ( $vote_st && vote_state_faq( $vote_st ) ) : ?><p class="help"><?php echo vote_e( t( 'Answers come from official %s sources.', vote_lname( $vote_st ) ) ); ?> <?php echo vote_e( t( 'Last checked %s.', vote_checked( vote_page_checked( $vote_st ) ) ) ); ?></p><?php endif; ?>
 		<?php if ( $vote_st ) : foreach ( vote_state_faq( $vote_st ) as $vote_q ) : ?>
 		<details class="faq__state"><summary><?php echo vote_e( $vote_q[0] ); ?></summary><p><?php echo vote_e( $vote_q[1] ); ?></p><p class="faq__src"><?php echo vote_es() ? 'Fuente: ' : 'From '; ?><a href="<?php echo vote_e( $vote_q[2] ); ?>" target="_blank" rel="noopener"><?php echo vote_e( vote_src_name( $vote_st, $vote_q[2] ) ); ?></a>.</p></details>

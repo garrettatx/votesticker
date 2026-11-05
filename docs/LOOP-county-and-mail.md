@@ -1476,3 +1476,20 @@ headings (99e1204). Footer consultancy line removed (cb9dc66). Every deploy pass
   (the past-dates table is exempt); `--plant-eday` fires; the build from before the fix fails with 20 lines. CI now
   runs `qa_stale.py` on every build, so a deadline that passes stops the deploy instead of going live.
 - QA: qa_stale (Nov 4, 5 and 24 builds), qa_seo, qa_es, qa_facts, thumbs --check, qa_sweep all pass.
+
+### November 4: Type and Spacing Pass (Backlog "After November 4, One Pass")
+
+- **Measured first** (a probe of every visible heading in main on home, Texas, Oregon, history, /stickers/, about
+  and press at 390 and 1280): primary section heads were display type with a 12 or 16 px gap underneath; two
+  primary sections on state pages (Sticker and Voting Questions, County I Voted Stickers) used the small body
+  heading instead; headings below section level came in seven sizes (15 to 21 px) with 4 to 19 px gaps; the
+  state guide's sticker questions were the browser's default h3 (18.72 px, 19 px margins).
+- **Three heading roles, as tokens in `app.css`:** Section (Anton, `--fs-h2`, `--gap-section-h` 16 px), Subsection
+  (body bold, `--fs-h3`, `--gap-sub-h` 12 px: link lists, panels, history subheads), Card (body bold, `--fs-lg`,
+  `--gap-card-h` 8 px: timeline entries, scenes, guide questions, /stickers/ message groups). The FAQ and county
+  headings are `display-h` now. Kept on purpose: the history cards' small italic kicker, the share row's label,
+  section spacing (already `--s7` between guide sections), and the press page (standalone file with its own styles).
+- Page heights moved -200 to +49 px; before and after screenshots of 7 pages at 320, 390, 860 and 1280 compared
+  (FAQ and county heads at 390 and 1280, history subheads).
+- QA: qa_seo, qa_es, qa_facts, qa_stale, qa_sweep (110 x 2), qa_cards, qa_devices, qa_history, qa_stickers,
+  qa_save, qa_share.

@@ -31,6 +31,13 @@
 	--fs-hero: clamp(2.7rem, 7.4vw, 4.5rem);
 	/* Space */
 	--s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s5: 24px; --s6: 32px; --s7: 48px; --s8: 64px;
+	/* Heading roles (November 4 type and spacing pass): the gap from each heading to what it introduces.
+	   Section: Anton display, --fs-h2, for the page's primary sections (.display-h).
+	   Subsection: body face bold, --fs-h3, for link lists, panels and groups inside a section.
+	   Card: body face bold, --fs-lg, for timeline entries, cards and questions inside a section. */
+	--gap-section-h: var(--s4);
+	--gap-sub-h: var(--s3);
+	--gap-card-h: var(--s2);
 	--radius: 12px;
 	--radius-lg: 16px;
 }
@@ -67,14 +74,14 @@ a:hover { text-decoration-thickness: 2px; text-decoration-color: currentColor; }
 /* ------------------------------------------------------------------ */
 /* Headings                                                            */
 /* ------------------------------------------------------------------ */
-h2 { margin: 0 0 var(--s3); color: var(--ink); font-size: var(--fs-h3); line-height: 1.2; }
+h2 { margin: 0 0 var(--gap-sub-h); color: var(--ink); font-size: var(--fs-h3); line-height: 1.2; }
 .display-h, .gallery h2 {
 	font-family: "Vote Display", Impact, sans-serif;
 	font-weight: 400;
 	font-size: var(--fs-h2);
 	line-height: 1.05;
 	letter-spacing: 0.01em;
-	margin: 0 0 var(--s3);
+	margin: 0 0 var(--gap-section-h);
 }
 .section-intro { margin: 0 0 var(--s5); max-width: 40rem; color: var(--text); }
 .label { margin: 0 0 var(--s2); font-size: var(--fs-xs); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
@@ -278,7 +285,7 @@ select:hover, input:hover, textarea:hover { border-color: #A79D86; }
 	box-shadow: 0 1px 2px rgba(20, 41, 94, 0.05);
 }
 @media (min-width: 860px) { .info { padding: 28px 32px 24px; } }
-.info h2 { margin: 0 0 var(--s3); font-size: var(--fs-h3); }
+.info h2 { margin: 0 0 var(--gap-sub-h); font-size: var(--fs-h3); }
 .info p { margin: 0 0 var(--s3); max-width: 46rem; }
 .info .source { margin: var(--s4) 0 0; font-size: var(--fs-xs); color: var(--muted); }
 .info .source a { color: var(--muted); }
@@ -505,6 +512,7 @@ select:hover, input:hover, textarea:hover { border-color: #A79D86; }
 .guide { margin: var(--s7) 0 0; max-width: 46rem; }
 .guide__h { margin: 0 0 var(--s4); padding-top: var(--s6); border-top: 1px solid var(--line); scroll-margin-top: var(--s4); }
 .guide p { margin: 0 0 var(--s4); }
+.guide h3:not([class]) { margin: var(--s5) 0 var(--gap-card-h); font-size: var(--fs-lg); line-height: 1.3; color: var(--ink); }
 .guide p:has(> .official) { margin: var(--s5) 0; }
 .guide__list { margin: 0 0 var(--s4); padding-left: 1.25rem; columns: 2 16rem; column-gap: var(--s6); }
 .guide__list--one { columns: 1; }
@@ -539,7 +547,7 @@ h2, .lead, .guide p, .info p, .section-intro { text-wrap: pretty; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 
 .faq { margin: var(--s7) 0 0; max-width: 46rem; }
-.faq h2 { margin-bottom: var(--s4); }
+.faq h2 { margin-bottom: var(--gap-section-h); }
 .faq details { border-top: 1px solid var(--line); padding: var(--s4) 0; }
 .faq details:last-child { border-bottom: 1px solid var(--line); }
 .faq summary { display: flex; justify-content: space-between; gap: var(--s4); align-items: center; cursor: pointer; font-weight: 700; color: var(--ink); line-height: 1.35; list-style: none; min-height: 28px; }
@@ -614,7 +622,7 @@ h2, .lead, .guide p, .info p, .section-intro { text-wrap: pretty; }
 .tl__item::before { content: ""; position: absolute; left: -9px; top: 1.45rem; width: 15px; height: 10px; border-radius: 50%; background: var(--bg); border: 2px solid var(--ink); }
 .tl__item:target { background: rgba(242, 193, 78, 0.16); border-radius: 0 var(--radius) var(--radius) 0; }
 .tl__year { margin: 0; font-family: "Vote Display", Impact, sans-serif; font-size: 1.75rem; line-height: 1; color: var(--accent); font-variant-numeric: tabular-nums; }
-.tl__title { margin: 0 0 var(--s1); font-size: var(--fs-lg); color: var(--ink); }
+.tl__title { margin: 0 0 var(--gap-card-h); font-size: var(--fs-lg); line-height: 1.3; color: var(--ink); }
 .tl__body p { margin: 0 0 var(--s2); }
 .tl__ev { font-size: var(--fs-xs); color: var(--muted); }
 .tl__ev a { color: var(--muted); }
@@ -668,7 +676,7 @@ h2, .lead, .guide p, .info p, .section-intro { text-wrap: pretty; }
 .hscene__lines { display: grid; gap: 8px; }
 .hscene__lines i { display: block; width: 64px; height: 9px; border-radius: 5px; background: var(--line-strong); }
 .hscene__lines i + i { width: 42px; background: var(--line); }
-.hscene__title { margin: 0 0 var(--s2); font-size: var(--fs-lg); color: var(--ink); }
+.hscene__title { margin: 0 0 var(--gap-card-h); font-size: var(--fs-lg); line-height: 1.3; color: var(--ink); }
 .hscene__n { display: inline-flex; align-items: center; justify-content: center; width: 1.6em; height: 1.6em; margin-right: 4px; border-radius: 50%; background: var(--ink); color: var(--cream); font-size: .8em; }
 .hscene p { margin: 0; }
 .units { display: grid; gap: var(--s4); }
@@ -690,7 +698,7 @@ h2, .lead, .guide p, .info p, .section-intro { text-wrap: pretty; }
 .why__arrow { color: var(--muted); font-weight: 700; }
 .why__hist a { font-weight: 700; }
 @media (max-width: 479px) { .why__hist { align-items: flex-start; } .why__pic svg { width: 40px; height: 35px; } .why__pic img { width: 36px; height: 36px; } }
-.hist-h3 { margin: var(--s5) 0 var(--s2); font-size: var(--fs-h3); color: var(--ink); }
+.hist-h3 { margin: var(--s5) 0 var(--gap-sub-h); font-size: var(--fs-h3); line-height: 1.2; color: var(--ink); }
 .hero .jump + .share { margin-top: var(--s3); }
 .units__grid { display: grid; grid-template-columns: repeat(14, 16px); gap: 5px; max-width: none; }
 @media (max-width: 379px) { .units__grid { grid-template-columns: repeat(14, 13px); gap: 4px; } .units__grid span { width: 13px; height: 13px; } }
@@ -847,7 +855,7 @@ button.link-quiet:hover { text-decoration: underline; }
 
 /* County and city stickers under the state gallery (October 30): a plain list, place names linked to the office. */
 .more-stickers { margin: var(--s7) 0 0; max-width: 46rem; }
-.more-stickers h2 { margin: 0 0 var(--s2); color: var(--ink); font-size: var(--fs-h3); line-height: 1.2; }
+.more-stickers h2 { margin: 0 0 var(--gap-section-h); }
 .more-stickers ul { margin: 0; padding-left: 1.2em; }
 .more-stickers li + li { margin-top: var(--s2); }
 .more-stickers a { color: var(--ink); font-weight: 700; text-decoration: underline; text-underline-offset: 0.16em; }
@@ -934,7 +942,7 @@ button.link-quiet:hover { text-decoration: underline; }
 .hist-find__num { font-family: "Vote Display", Impact, sans-serif; font-size: 2.6rem; line-height: 1; letter-spacing: 0.02em; color: var(--gold); font-variant-numeric: tabular-nums; }
 .hist-find__place { font-size: var(--fs-xs); font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
 .hist-find__txt { padding: var(--s4) var(--s5) var(--s5); min-width: 0; }
-.hist-find__h { margin: 0 0 var(--s2); font-size: var(--fs-h3); line-height: 1.2; color: var(--ink); }
+.hist-find__h { margin: 0 0 var(--gap-sub-h); font-size: var(--fs-h3); line-height: 1.2; color: var(--ink); }
 .hist-find__txt p { margin: 0 0 var(--s3); max-width: 38rem; }  /* Nov 1: was `.hist-find p`, which also gave the year panel (a <p>) a bottom margin: a cream strip under the navy block */
 .hist-find__limits { font-size: var(--fs-sm); color: var(--muted); }
 .hist-find__src { margin-bottom: 0 !important; font-size: var(--fs-xs); color: var(--muted); }
@@ -978,5 +986,5 @@ button.link-quiet:hover { text-decoration: underline; }
 .states__allpage { margin: 0 0 var(--s3); font-weight: 700; }
 .states__allpage a { color: var(--ink); }
 /* Group labels (November 2 polish): a step larger, more room above than below, so each label reads as its row's. */
-.all__type { margin: var(--s6) 0 var(--s3); font-size: 1.125rem; line-height: 1.3; color: var(--ink); }
+.all__type { margin: var(--s6) 0 var(--gap-card-h); font-size: var(--fs-lg); line-height: 1.3; color: var(--ink); }
 .all__classic .all__type:first-child { margin-top: 0; }

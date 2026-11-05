@@ -25,7 +25,7 @@ most, without a redesign before Election Day. Sorted:
 - **Shipped November 2:** the logo animation (star glint, then the corner peel; CSS, reduced-motion safe) and a
   larger logo and wordmark; /stickers/ eyebrow removed; hero Copy link styled as a quiet link beside Official info
   and the jump, not a third button; /stickers/ group labels a step larger with more room above.
-- **After November 4, one pass:** (1) a type scale with named roles (display face for H1 and section heads only,
+- **Done November 4 (LOOP log), after November 4, one pass:** (1) a type scale with named roles (display face for H1 and section heads only,
   the body face semibold for card and subsection heads) and (2) a spacing scale applied to section padding and
   heading-to-content gaps. Both touch every page, so they need the full QA set (qa_cards, qa_devices, qa_history)
   and before/after screenshots at 320, 390, 860 and 1280.
