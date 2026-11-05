@@ -33,8 +33,8 @@ Thread: https://www.perplexity.ai/search/ac2e1c47-925f-4040-bc59-d3f57a2cd3fc
 
 | # | Item | Evidence | Status |
 |---|---|---|---|
-| 1 | New York: statute deadline under the new rule | Election Law 9-216(2), read in Chrome | Built Nov 5, not pushed |
-| 2 | Results links for AZ, NH, NV, NY, TN, WI | The six held back Nov 4 | Built Nov 5, not pushed |
+| 1 | New York: statute deadline under the new rule | Election Law 9-216(2), read in Chrome | Live Nov 5 (run 42063246754) |
+| 2 | Results links for AZ, NH, NV, NY, TN, WI | The six held back Nov 4 | Live Nov 5 (run 42063246754) |
 | 3 | Link label: "Official [state] election results" points at pages headed "Unofficial" on election-night sites (NY, AZ seen) | The source is official, the totals aren't yet | Done Nov 5: "[State] election results" / "Resultados electorales de [Estado]" (Perplexity, thread below) |
 | 3b | Availability note where the link opens a page with no November totals yet (TN, WI read Nov 5; IL, KS, KY, MA, ME, MI, MS, NJ from Nov 4). Per-state fact with a recheck date, so it can't go stale | NN/g: a link should set the right expectation of the page | Open |
 | 4 | Statute deadlines for the other states with no date: AR, AZ, CO, CT, GA, HI, IA, LA, MA, ME, MO, NH, NV, OH, PA, RI, TN, WV. One Perplexity prompt for leads, then read each statute. Skip any state whose office prints a date (item 5) | No demand number yet: pull Search Console for results and certification queries first | Open |
@@ -76,7 +76,7 @@ behind the rule. Two guessed URLs for the Board's calendar returned its 404 page
 **QA (local, build dated Nov 5).** Pass: `facts_text --check`, `qa_facts`, `qa_es`, `qa_seo --no-legacy`, `qa_stale`. All six
 sections read in the built EN and ES pages. A Dec 16 build caught a problem: `qa_stale` flagged New York's past-tense "to meet
 by December 15", and CI runs that check, so the deploy would have stopped if the section were still up then. Reworded to "set
-December 15, 2026 as the latest date". Not run: `qa_events` (item 9), browser suites. Not committed or pushed.
+December 15, 2026 as the latest date". `qa_events` not run (item 9).
 
 ### November 5: Pass 2, the Link Label
 
@@ -85,3 +85,10 @@ https://www.perplexity.ai/search/801fce6b-d314-42dc-afa2-7426eb125102. It recomm
 topic, and the sentence above the link gives the status. Its reasons: the EAC separates unofficial results on state sites from
 certified ones; NN/g and WCAG on descriptive link text. The EAC, NN/g and WCAG points are as Perplexity reports them, not read
 here. The Spanish is its proposed wording, not an agency's. Applied in EN and ES.
+
+### November 5: Pass 3, Push
+
+Full QA passed before the push: `qa_facts`, `qa_es`, `qa_seo --no-legacy`, `qa_stale`, `qa_save`, `qa_cards`, `qa_history`, `qa_devices`.
+Commits 6045fa7 and c311a65; run 42063246754 succeeded; IndexNow 200. Live: the new label on /new-york/, /es/new-york/, /arizona/,
+/wisconsin/; New York's deadline line on /new-york/. Results links now cover all 51. Wyoming's provisional answer is gone from
+/wyoming/ (item 8, English read only).
