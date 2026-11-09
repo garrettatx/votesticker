@@ -580,7 +580,7 @@ return array(
 		'tell us through the Garrett Digital contact page' => 'avísanos en la página de contacto de Garrett Digital',
 		"and we'll fix it." => 'y lo arreglamos.',
 		'Who Made It' => 'Quién lo hizo',
-		'Vote Sticker is an independent public-service project built and maintained by' => 'Vote Sticker es un proyecto independiente de servicio público, construido y mantenido por',
+		'Vote Sticker is a public-service project built and maintained by' => 'Vote Sticker es un proyecto de servicio público, construido y mantenido por',
 		'an SEO and search marketing consultancy in Austin, Texas.' => 'una consultoría de SEO y marketing en buscadores en Austin, Texas.',
 		"I'm Garrett Nafzinger. I built Vote Sticker in October 2026 because a clear voting reminder that people can share seemed like a useful thing to put into the world. It isn't affiliated with any government office, campaign or party." => 'Soy Garrett Nafzinger. Construí Vote Sticker en octubre de 2026 porque un recordatorio claro para votar, que la gente pueda compartir, me pareció algo útil para el mundo. No está afiliado a ninguna oficina de gobierno, campaña ni partido.',
 		'Day to day, Garrett Digital helps healthcare practices, online stores and service businesses get found on Google, turn visits into leads, and measure what works, through SEO, Google Ads, websites and analytics.' => 'En el día a día, Garrett Digital ayuda a consultorios de salud, tiendas en línea y negocios de servicios a aparecer en Google, convertir visitas en clientes potenciales y medir lo que funciona, con SEO, Google Ads, sitios web y analítica.',
