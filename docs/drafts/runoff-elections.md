@@ -81,13 +81,23 @@ For each state with runoffs, the picker shows:
 
 ## Who Can Vote in a Runoff
 
-[To confirm per state before writing a general rule: whether you must have voted in the first round. Not yet read for any
-state.] For a primary runoff, which party's primary you voted in can matter.
+For a primary runoff, two things matter: which party's primary you voted in, and whether you voted at all.
 
-- **Texas:** the law voids a vote in a second party's primary in the same year (Elec. Code 162.013). [Read 162.013 to confirm
-  how it applies to runoffs before publishing.]
-- **North Carolina:** a runoff continues the first primary, so no new voter registrations are accepted between the two.
-- **Other states:** [rows from the state data once read on the official source].
+**If you voted in a party's primary,** you stay with that party for the runoff. Every state we checked keeps you from crossing
+over to another party's runoff. [Count and list from data.]
+
+**If you skipped the first round,** you can still vote in a runoff in [Alabama, Georgia, Oklahoma, South Carolina and Texas],
+and you can choose either party's runoff in [Alabama, Georgia, South Carolina and Texas]. [Arkansas, Mississippi, North
+Carolina and South Dakota: not yet confirmed on an official page.]
+
+**Registering between rounds** depends on the state:
+- **North Carolina:** the runoff continues the first primary, so new registrations aren't accepted in between.
+- **Texas:** a new registration takes effect 30 days after it's submitted, so it may not be active in time.
+- **South Dakota:** you can register up to 15 days before the runoff.
+- **Georgia:** the registration deadline is the same as the first primary's, except for federal races.
+
+[Each line above becomes a state row with its source and checked date. Sources: `docs/research/guide-runoff-elections.md`,
+Third Check.]
 
 Check with your county election office if you're unsure. Your state's page links to it.
 
@@ -101,8 +111,8 @@ the fourth Tuesday in May, about 12 weeks after the March primary. Your state's 
 No candidate reaching the state's threshold, usually because three or more strong candidates split the vote.
 
 **Can I vote in a runoff if I didn't vote the first time?**
-[Answer once the per-state rules are read.] Some states limit primary runoffs based on which party's primary you voted in. See
-Who Can Vote in a Runoff.
+In the states we've confirmed so far, yes, if you're registered: [Alabama, Georgia, Oklahoma, South Carolina and Texas]. If
+you did vote, you stay with the party whose primary you chose. See Who Can Vote in a Runoff.
 
 **Is a runoff the same as a recount?**
 No. A recount counts the same ballots again. A runoff is a new election with a new ballot.

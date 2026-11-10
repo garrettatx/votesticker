@@ -137,8 +137,10 @@ No separate bibliography; sources are inline. State pages link to the guide, and
 - **Map only when all 51 rows are checked.** Until then, show a table of the checked states. A map with grey gaps looks complete
   and isn't.
 - **Contrast:** 3:1 for chart shapes against their background, 4.5:1 for text.
-- **Colors** from the brand: ink navy `#14295E`, a mid blue `#3F64B0`, gold `#F2C14E` with a navy outline, cream with navy
-  hatching, and grey `#8C8F96` for no data. **Red `#C1272D` is never a data color**, because red against blue reads as party.
+- **Colors** from the brand, as different treatments rather than shades of one color, because categories aren't a ranking:
+  navy fill, gold fill with a navy outline, cream with navy hatching, outline only. "Not yet checked" gets a dashed outline and
+  text, never the same grey as "none". **Red `#C1272D` is never a data color**, because red against blue reads as party. Full
+  detail in `docs/guide-visuals-spec.md`.
 - **Illustrative diagrams say so** ("Example with made-up numbers").
 - **Check every visual at 320, 375, 768 and 1280 pixels,** in English and Spanish.
 
