@@ -1,4 +1,6 @@
 <!--
+SUPERSEDED Nov 10, 2026: the published text lives in build/guides/runoff-elections.json (English and Spanish),
+rendered by site/guides.php. Edit there, not here.
 DRAFT, not published. Written November 9, 2026, for /voting/runoff-elections/.
 Standards: docs/editorial-standards.md. Facts: docs/research/guide-runoff-elections.md.
 Before publishing: read Georgia, Arkansas and Mississippi on their official code sites; recheck every row; build the state

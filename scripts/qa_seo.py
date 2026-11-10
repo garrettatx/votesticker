@@ -106,7 +106,7 @@ def main():
         fail(f'states.js has {len(rows)} rows')
 
     pages, titles, descs = {}, {}, {}
-    for p in paths + ['about/', 'history/', 'stickers/']:  # pages, not states (no prev/next, hub share image)
+    for p in paths + ['about/', 'history/', 'stickers/', 'voting/runoff-elections/']:  # pages, not states (no prev/next, hub share image)
         status, _, html = fetch(urljoin(base, p))
         if status != 200:
             fail(f'/{p}: HTTP {status}')
@@ -144,7 +144,7 @@ def main():
             fail(f'/{p}: has a ?state= link')
         og = pg.meta.get('og:image', '')
         # The card can come from the phase's set (index.php: og/ended/, og/post/, og-hub-post.jpg).
-        want_og = (rf'{PROD}assets/og/((ended|post)/)?{re.escape(p[:-1])}\.jpg\?v=' if p and p not in ('about/', 'history/', 'stickers/')
+        want_og = (rf'{PROD}assets/og/((ended|post)/)?{re.escape(p[:-1])}\.jpg\?v=' if p and p not in ('about/', 'history/', 'stickers/', 'voting/runoff-elections/')
                    else rf'{PROD}assets/og-hub(-post)?\.jpg\?v=')
         if not re.match(want_og, og):
             fail(f'/{p}: og:image {og}')
@@ -220,7 +220,7 @@ def main():
     if status != 200 or locs != want:
         fail(f'sitemap: HTTP {status}, extra {sorted(locs - want)[:3]}, missing {sorted(want - locs)[:3]}')
 
-    print(f'{len(pages)} pages, {len(internal)} internal links, {len([p for p in pages if p and p not in ("about/", "history/", "stickers/")])} indexable states')
+    print(f'{len(pages)} pages, {len(internal)} internal links, {len([p for p in pages if p and p not in ("about/", "history/", "stickers/", "voting/runoff-elections/")])} indexable states')
     for f in fails[:40]:
         print('  FAIL ' + f)
     print('FAILED (%d)' % len(fails) if fails else 'PASS')

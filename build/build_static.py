@@ -82,6 +82,16 @@ def main():
     pages['es/history/'] = render('es/history')
     pages['stickers/'] = render('stickers')
     pages['es/stickers/'] = render('es/stickers')
+    # Guides under /voting/ (November 10): checked first (build/guide_check.py), one page per language.
+    subprocess.run([sys.executable, '-I', str(ROOT / 'build' / 'guide_check.py')], check=True, stdout=subprocess.DEVNULL)
+    guide_dates = {}
+    for g in sorted((ROOT / 'build' / 'guides').glob('*.json')):
+        gd = json.loads(g.read_text())
+        for lang, p in (('en', ''), ('es', 'es/')):
+            path = f'{p}voting/{g.stem}/'
+            pages[path] = render(path[:-1])
+            d = gd['dates'][lang]
+            guide_dates[path] = d.get('updated') or d['published']
     for path, html in pages.items():
         d = DIST / path
         d.mkdir(parents=True, exist_ok=True)
@@ -101,6 +111,8 @@ def main():
         h = hashlib.sha256(re.sub(r'<span data-countdown-label>[^<]*</span>', '', re.sub(r'\?v=\d+', '', html)).encode()).hexdigest()[:16]
         prev = old.get(path)
         new[path] = [h, prev[1] if prev and prev[0] == h else today]
+        if path in guide_dates:  # a guide's lastmod is its Updated date (editorial standards), not the build date
+            new[path] = [h, guide_dates[path]]
         urls.append((url, new[path][1]))
     LASTMOD.write_text(json.dumps(new, indent=1, sort_keys=True) + '\n')
     # Each URL lists its language pair (Google's sitemap form of hreflang) when both pages are indexable.

@@ -8,6 +8,7 @@
  *   php build/render.php about      the About page (also: es/about)
  *   php build/render.php history    the sticker history page (also: es/history)
  *   php build/render.php stickers   the All Stickers page (also: es/stickers)
+ *   php build/render.php voting/runoff-elections   a guide (also: es/voting/runoff-elections)
  *   php build/render.php cal/texas  the Texas calendar file (also: es/cal/texas)
  *   php build/render.php es/texas   the Spanish page (also: es, es/404)
  *
@@ -25,6 +26,9 @@ if ( '404' === $arg ) {
 	define( 'VOTE_SLUG', substr( $arg, 4 ) );
 } elseif ( 'about' === $arg || 'history' === $arg || 'stickers' === $arg ) {
 	define( 'VOTE_PAGE', $arg );
+} elseif ( 0 === strpos( $arg, 'voting/' ) ) {
+	define( 'VOTE_PAGE', 'guide' );  // the guides (site/guides.php): voting/runoff-elections
+	define( 'VOTE_GUIDE', substr( $arg, 7 ) );
 } elseif ( '' !== $arg ) {
 	define( 'VOTE_SLUG', $arg );
 }

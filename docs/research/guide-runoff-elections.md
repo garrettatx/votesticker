@@ -95,6 +95,61 @@ named. Quotes are under 25 words.
 - **Louisiana SOS "ElectionDeadlinesAndChanges" PDF** (Perplexity lead) returned 404.
 - **Oklahoma 26 O.S. 1-104** was not found on OSCN in this pass; the State Election Board page was used instead.
 
+## Fourth Check (Nov 10)
+
+Leads came from one Perplexity prompt in the "VoteSticker.org Research" project, Search mode:
+https://www.perplexity.ai/session/6f8d5f88-70d8-440f-ab6a-3d672dc91e3d , plus WebSearch. Every fact below was read on the page
+named, in Chrome, with WebFetch, or from the downloaded PDF. Quotes are under 25 words.
+
+### What Was Read
+
+| State | Page read (URL) | Section | Short quote |
+|---|---|---|---|
+| Arkansas | SOS "Voting 101" booklet (dated 8-2020): https://www.sos.arkansas.gov/uploads/elections/voting_101_8-2020_grayscaleb.pdf | FAQ, "If I didn't vote in the primary election, can I vote in the runoff election?" | "Any voter who did not vote in a party primary election or who only voted in the nonpartisan election may vote in a runoff election." |
+| Arkansas | Same | Same | "If you did vote in the primary, you would only be eligible to vote in the same party's runoff." |
+| Arkansas | Faulkner County Election Commission, notice for the March 31, 2026 runoff: https://www.votefaulknerar.gov/wp-content/uploads/2026/03/Notice-of-Election-Primary-RUNOFF-3.31.26.pdf | Notice text | "If they voted a non-partisan ballot or did not vote, they can vote in either party runoff." Also: "Crossover voting is prohibited in a runoff." |
+| Arkansas | SBEC 2026 Election Calendar (Rev. 6-2025): https://sbec.arkansas.gov/wp-content/uploads/2026-Election-Calendar-Rev.-6-2025.pdf | March 1, 2026 entry, citing 7-5-201(a) and Amendment 51 § 9(b) | "30 DAYS PRIOR TO THE GENERAL PRIMARY. Deadline to register to vote to participate in the General Primary Election." Actual deadline Monday, March 2; the preferential primary was March 3. |
+| Mississippi | SOS news post, July 28, 2022: https://www.sos.ms.gov/news/update-republican-primary-runoff-elections | "Crossover Voting" | "voters who did not cast a ballot in the Primary Election are still eligible to vote in the Republican Primary Runoff Elections." |
+| Mississippi | SOS email bulletin, April 1, 2024: https://content.govdelivery.com/accounts/MSSOS/bulletins/392bfb6 | Bulletin text | "only those who cast a Republican ballot or did not vote in the primary election may cast a runoff ballot." |
+| Mississippi | SOS "Elections 101": https://www.sos.ms.gov/yall-vote/elections-101 | Question 3, citing 97-13-35 | "If a primary runoff is needed, a person cannot vote in that election if they previously voted in another party's primary." |
+| Mississippi | SOS 2026 Elections Calendar (last revised 9/8/2026): https://www.sos.ms.gov/content/documents/elections/2026%20Elections%20Calendar.pdf | February 9 and March 9 entries, citing 23-15-37, 23-15-47, 23-15-125 | Feb. 9: "Primary Election Voter Registration Deadline." March 9: "Primary Runoff Elections Voter Registration Deadline" (the PDF says "April 7, 2025," a typo for 2026). Primary was March 10. |
+| Mississippi | SOS 2026 County Election Handbook: https://www.sos.ms.gov/content/documents/elections/2026%20County%20Election%20Handbook.revised%2012-30-2025.pdf | II.D "Deadline," citing 23-15-47 | Registration "must either be received by the circuit clerk or postmarked on or before 30 days prior to an election." |
+| Mississippi | SOS "Mississippi Law" page (lead from Perplexity; not opened): https://www.sos.ms.gov/publications-external-affairs/mississippi-law | | Per Perplexity, names LexisNexis as the official publisher of the code. No official free copy of 23-15-191 or 23-15-193 found. |
+| North Carolina | State Board Numbered Memo 2024-02, March 14, 2024: https://www.ncsbe.gov/blog/2024/03/14/numbered-memo-2024-02-second-primary-preparations | Unaffiliated voters in the second primary | "unaffiliated voters who did not vote in the first primary may vote in the second primary" and "will be issued the second primary ballot of their choice." |
+| North Carolina | Same | Same | "Unaffiliated voters who voted a party's ballot in the first primary may only be given the ballot of the same party." |
+| North Carolina | Same | Registration | "New voter registrations in the county are not permitted between the dates of the first and second primaries." Voters "may not change their party affiliation." |
+| North Carolina | G.S. 163-111(e): https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_163/GS_163-111.html | 163-111(e) | Reread: no sentence on voters who skipped the first primary. "The second primary is a continuation of the first primary." |
+| Oklahoma | State Election Board release, July 30, 2026: https://oklahoma.gov/elections/newsroom/2026/july/voter-registration-deadline-is-friday.html | Release text | "The deadline to register to vote or update a voter registration for the August 25 Election is Friday, July 31." Runoffs "are closed." |
+| Oklahoma | State Election Board, "Register to Vote": https://oklahoma.gov/elections/voter-registration/register-to-vote.html | "When to Register" | "the voter registration deadline is 25 days prior to the date of an election." Party changes not allowed "from April 1 through August 31, inclusive." |
+| South Carolina | S.C. Code 7-5-150: https://www.scstatehouse.gov/code/t07c005.php | 7-5-150 | "the registration books shall be closed thirty days before the June primary and shall remain closed until after the second primary" |
+| South Carolina | Same | 7-5-220 | Registration 30 days or less before an election "is not valid for that election or any second race or runoff resulting from that election" |
+| South Dakota | SOS release, June 4, 2026: https://sdsos.gov/about-the-office/assets/Press%20Releases/2026/AbsenteeRunOff.pdf | Release text | "Because the Republican runoff election is a continuation of the primary election," prior absentee requesters get a runoff ballot. Says nothing about voters who skipped. |
+| Georgia | Georgia Code public access portal (LexisNexis), with the config URL Perplexity gave: https://advance.lexis.com/container?config=00JAAzZDgzNzU2ZC05MDA0LTRmMDItYjkzMS0xOGY3MjE3OWNlODIKAFBvZENhdGFsb2fcIFfJnJ2IC8XZi1AYM4Ne | | The portal loaded this time (the earlier config string gave "Page Unavailable"), but neither the search box nor the table of contents responded. 21-2-224 not read. Stopped, per instructions. |
+
+### Not Used
+
+- **Arkansas older SBEC poll worker files** (static.ark.org, 2016 and 2022): 410 Gone. The 2024 SBEC Election Coordinator Guide
+  (https://sbec.arkansas.gov/wp-content/uploads/Election-Coordinator-Guide-Draft-FINAL.pdf) covers runoff logistics but not who
+  can vote.
+- **Georgia State Election Board transcript, Dec. 10, 2025** (Perplexity lead,
+  https://sos.ga.gov/sites/default/files/2026-02/december_10_2025_transcript.pdf): returned 403 to scripts and showed no text in
+  Chrome. Perplexity says it quotes "a runoff primary shall be a continuation of the primary." Not verified.
+- **Mississippi 2026 Voter Registration Toolkit** (Perplexity lead) not opened; the SOS 2026 calendar was read instead.
+- **South Dakota 2026 runoff calendar** linked from the SOS release returned an HTML error page; the SOS "2026 Election
+  Information" page returned 404.
+- **News pages** (AP, KOTA, Dakota News Now, Mississippi Free Press and others) were leads only.
+
+### What It Means
+
+- **Skipped the first round:** confirmed yes in Arkansas, Mississippi and North Carolina (unaffiliated voters), joining
+  Alabama, Georgia, Oklahoma, South Carolina and Texas. South Dakota is still not stated on an official page.
+- **Registering between rounds:** in Arkansas, Mississippi and South Carolina the runoff's registration deadline falls before
+  the first election, so a new registration after the first election is too late. In Mississippi and Arkansas the runoff has its
+  own deadline (30 days before the runoff), which falls about a day before the first primary, so someone who registers in that
+  window can vote in the runoff but not the first primary. South Carolina keeps the first primary's deadline. Oklahoma (about
+  ten weeks between rounds, 25-day deadline) and South Dakota (15 days before) allow registering between rounds. North Carolina
+  does not, except for people who newly qualify.
+
 ## Who Can Vote in a Runoff
 
 Primary runoffs only. "Skipped the first round" means a registered voter who voted in no party's first primary. Every cell
@@ -103,14 +158,14 @@ comes from a page listed under Third Check or State Notes; "Not read" means no o
 | State | Voted in party A's primary: can vote in party B's runoff? | Skipped the first round: can vote? | Register between rounds? | Source |
 |---|---|---|---|---|
 | Alabama | No, same party only | Yes, either party's runoff | Yes; 2026 runoff deadline June 1 (15 days before) | SOS Poll Worker Guide (17-13-7.1); SOS 2026 Admin Calendar (17-3-50(a)) |
-| Arkansas | No (7-1-103(a)(18)(B)) | Not read | Not read | SOS 2025 code compilation |
+| Arkansas | No (7-1-103(a)(18)(B)) | Yes, either party's runoff (SOS Voting 101, 2020; Faulkner County notice, 2026) | No: the runoff's 30-day deadline (March 2, 2026) fell the day before the preferential primary | SOS 2025 code compilation; SOS Voting 101 (2020); Faulkner County Election Commission notice; SBEC 2026 Election Calendar |
 | Georgia | No, same party ballot only | Yes, any party | For state and local races, no: runoff deadline equals the primary's (April 20, 2026). For federal races, yes, to May 18, 2026 | SOS Elections FAQ; SOS 2026 Election Calendar; 21-2-501(a) (SB 202 text: only electors entitled to vote in the first primary) |
 | Louisiana (closed party primaries) | Party members vote only their own party. Unaffiliated voters who chose one party's first primary may not vote in another party's second primary | Not stated for unaffiliated voters who skipped; not read | Calendar lists separate registration deadlines for the June 27 second party primary | R.S. 18:410.3; SOS closed party primary page; SOS 2026 calendar |
-| Mississippi | No, per Attorney General opinions as summarized by the SOS (no party registration) | Not read | Not read | SOS 2014 presentation |
-| North Carolina | Unaffiliated voters choose one primary; the second primary "is a continuation of the first" | Not read | No, except people who became qualified between primaries | G.S. 163-111(e), 163-119 |
-| Oklahoma | Closed primaries: only that party's registered members (no party let Independents in for 2026-2027) | Yes | Not read | State Election Board page |
-| South Carolina | No, same party only | Yes, either party | Not read | SEC 2026 Primary FAQ; S.C. Code 7-13-1040 |
-| South Dakota | Party members only, unless the party opens to no-party voters | Not read | Yes, registered by 5 p.m. 15 days before the runoff | SDCL 12-6-26, 12-4-5, 12-6-51.1 |
+| Mississippi | No, per Attorney General opinions as summarized by the SOS (no party registration) | Yes (SOS news post, 2022, and SOS bulletin, 2024: voters who did not vote in the primary may vote in the runoff) | No: the runoff's deadline (March 9, 2026) was the day before the March 10 primary. Registering between the primary deadline (Feb. 9) and March 9 counted for the runoff only | SOS 2014 presentation; SOS Elections 101; SOS news post July 28, 2022; SOS bulletin April 1, 2024; SOS 2026 Elections Calendar; Miss. Code 23-15-47 |
+| North Carolina | Unaffiliated voters choose one primary; the second primary "is a continuation of the first." Unaffiliated voters who voted a party's ballot get only that party's second primary ballot | Yes. Unaffiliated voters who skipped get "the second primary ballot of their choice." No party changes before the second primary | No, except people who became qualified between primaries | G.S. 163-111(e), 163-119; State Board Numbered Memo 2024-02 |
+| Oklahoma | Closed primaries: only that party's registered members (no party let Independents in for 2026-2027) | Yes | Yes. 2026: primary June 16, runoff registration deadline July 31 for the Aug. 25 runoff | State Election Board page; State Election Board release, July 30, 2026 |
+| South Carolina | No, same party only | Yes, either party | No: books close 30 days before the June primary "and shall remain closed until after the second primary" | SEC 2026 Primary FAQ; S.C. Code 7-13-1040, 7-5-150, 7-5-220 |
+| South Dakota | Party members only, unless the party opens to no-party voters | Not stated on an official page. Implied yes for party members: 12-4-5 adds voters registered after the primary to the runoff file | Yes, registered by 5 p.m. 15 days before the runoff | SDCL 12-6-26, 12-4-5, 12-6-51.1; SOS release June 4, 2026 |
 | Texas | No: a vote is void, and the SOS says primary voters may vote only in that party's runoff | Yes, either party's runoff, unless affiliated with a third party | Yes, if the registration is effective (30 days after submission) by runoff day | Elec. Code 1.005(14), 162.003, 162.012, 162.013, 13.143; SOS Advisory 2022-11; SOS release May 13, 2026 |
 
 **How the Texas sections apply to runoffs.** Voting in a party's primary affiliates you with that party (162.003). Once
@@ -221,16 +276,19 @@ Louisiana now runs two systems.
 
 Resolved on Nov 9 and moved out of this list: Alabama UOCAVA ballots and codified text (Second Check); Alabama crossover ban in runoffs (SOS Poll Worker Guide); Arkansas primary threshold (7-7-304(f) in the SOS compilation); Georgia runoff voter rules and 2026 runoff dates (SOS FAQ and calendar); Louisiana 2026 dates and unaffiliated voters (SOS calendar, R.S. 18:410.3); Mississippi crossover rule (SOS); Oklahoma, South Carolina and South Dakota runoff voter rules.
 
+Resolved on Nov 10 (see Fourth Check): Arkansas, Mississippi and North Carolina skip-the-first-round rules; Arkansas,
+Mississippi, Oklahoma and South Carolina registration between rounds.
+
 1. **Alabama.** Governor's signature on 2025 HB258 not confirmed. 17-13-7.1 read only as cited in the SOS Poll Worker Guide, not in the code.
-2. **Arkansas.** Code read in the SOS 2025 compilation, not on the LexisNexis portal; 2026 amendments, if any, not checked. Whether a voter who skipped the preferential primary may vote in the general primary, and registration between rounds, not read.
-3. **Georgia codified text.** The LexisNexis Georgia Code portal returned an error in Chrome, so 21-2-501 (current wording, including 28 days) and 21-2-224 were not read on the code. The 28-day timing rests on SB 202 as passed plus the SOS 2026 calendar.
+2. **Arkansas.** Code read in the SOS 2025 compilation, not on the LexisNexis portal; 2026 amendments, if any, not checked. The skip-the-first-round rule rests on the SOS Voting 101 booklet dated 2020 and one county election commission's 2026 notice; no newer State Board or SOS statement was found (older SBEC poll worker files on static.ark.org return 410 Gone).
+3. **Georgia codified text.** The LexisNexis Georgia Code portal returned "Page Unavailable" again on Nov 10, so 21-2-501 (current wording, including 28 days) and 21-2-224 were not read on the code. Not retried. The 28-day timing rests on SB 202 as passed plus the SOS 2026 calendar.
 4. **Louisiana session laws.** Act 640 of 2024, Act 1 of the 2025 First Extraordinary Session and Act 7 of the 2026 Regular Session were cited by the SOS calendar but not read. 2026 HB 906 and HB 529 status not confirmed. Whether an unaffiliated voter who skipped the May 16 party primary may vote in the June 27 second party primary not read.
 5. **Louisiana general election result rule for party primary offices** (whether the November general is plurality) was not read.
-6. **Mississippi codified text.** 23-15-191 and 23-15-193 were read only in SB 2144 as enacted, plus the SOS handbook for four weeks. The crossover rule rests on AG opinions summarized in a 2014 SOS slide deck; the AG opinions themselves and the current 23-15-575 text were not read. Skip-the-first-round and registration between rounds not read.
-7. **North Carolina.** Whether a voter who skipped the first primary may vote in the second primary not read.
-8. **Oklahoma.** 26 O.S. 1-104 statute text not read (Election Board page used). Registration between rounds not read.
-9. **South Carolina.** Registration between rounds not read; the FAQ gives only the primary deadline.
-10. **South Dakota.** Whether a voter who skipped the first primary may vote in the runoff not stated in the sections read.
+6. **Mississippi codified text.** 23-15-191 and 23-15-193 were read only in SB 2144 as enacted, plus the SOS handbook for four weeks. No official free copy of the current code was found (the state's code is published through LexisNexis, not on the legislature site). The crossover rule rests on AG opinions summarized in a 2014 SOS slide deck; the AG opinions themselves and the current 23-15-575 text were not read. The skip rule rests on SOS posts about specific runoffs (2022 and 2024), not a general rule statement or the AG opinions.
+7. **North Carolina.** Resolved for unaffiliated voters (Memo 2024-02). The memo is written for the 2024 second primary; recheck the memo for the next cycle.
+8. **Oklahoma.** 26 O.S. 1-104 and the registration deadline statute were not read (Election Board pages used).
+9. **South Carolina.** Resolved (7-5-150, 7-5-220).
+10. **South Dakota.** Whether a party member who skipped the first primary may vote in the runoff is not stated on an official page read. 12-4-5 (new registrants are added to the runoff file) and the SOS's "continuation of the primary" wording point to yes. News Q&A pages say yes; they are leads only.
 
 ## NCSL Disagreements
 
@@ -262,3 +320,23 @@ Resolved on Nov 9 and moved out of this list: Alabama UOCAVA ballots and codifie
    primary may vote in a Republican runoff, and Ballotpedia calls Mississippi primaries "open." The SOS says crossover from
    one party's first primary to another party's runoff is prohibited per AG opinions. These do not conflict (one is about
    skippers, the other about crossover), but the skipper rule was not read on an official page.
+   (Resolved Nov 10: the SOS says skippers may vote in the runoff. See Fourth Check.)
+
+## Lead Disagreements (Fourth Check)
+
+Thread: https://www.perplexity.ai/session/6f8d5f88-70d8-440f-ab6a-3d672dc91e3d . Its answers on the gaps matched the official
+pages read. It marked its own inferences (Mississippi and South Dakota) as inferences. Points to note:
+
+1. **Search summary, Mississippi runoff registration.** A WebSearch summary, citing Ballotpedia, gave the 2026 primary runoff
+   registration deadline as Feb. 9 (the first primary's deadline). The SOS 2026 calendar lists a separate runoff deadline of
+   March 9. Use the SOS date.
+2. **Perplexity, Georgia portal.** It gave a different LexisNexis config string from the one tried first. Its string loaded
+   the portal, but the search and table of contents did not respond, so 21-2-224 is still unread. Its "official SOS-hosted
+   transcript" quote of 21-2-224 language could not be opened and is not used.
+3. **Perplexity, Mississippi handbook URL.** It cited a "revised 12-26-2025" copy at a different path; the file read here is
+   "revised 12-30-2025" (page footer "Rev. 12/24/2025"). Same text on the points used.
+4. **Perplexity (visuals thread), South Dakota wording.** It pointed out that 12-6-51.1 says a runoff is needed when no
+   candidate "receives thirty-five percent," so exactly 35% avoids a runoff: "35% or more," not "more than 35%." This matches
+   the statute text quoted above. The draft's "more than 30% and 35%" should read "more than 30%" and "at least 35%."
+5. **Perplexity (visuals thread), South Dakota municipal runoffs.** It says municipalities can adopt a majority rule with a
+   three-week runoff. Not read; local, out of scope.

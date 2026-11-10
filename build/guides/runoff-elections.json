@@ -1,0 +1,1131 @@
+{
+ "slug": "runoff-elections",
+ "about": "Runoff election",
+ "dates": {
+  "en": {
+   "published": "2026-11-10",
+   "updated": null,
+   "reviewed": "2026-11-10"
+  },
+  "es": {
+   "published": "2026-11-10",
+   "updated": null,
+   "reviewed": "2026-11-10"
+  }
+ },
+ "review_due": "2027-10-01",
+ "notes": "Facts: docs/research/guide-runoff-elections.md. Standards: docs/editorial-standards.md. Checked by build/guide_check.py. Counts in the text come from the states list: {n_states}, {n_general}, {general_list}, {skip_yes_list}, {skip_either_list}.",
+ "meta": {
+  "title": {
+   "en": "Runoff Elections: When They Happen and Who Can Vote | Vote Sticker",
+   "es": "Segunda vuelta: cuándo se hace y quién puede votar | Vote Sticker"
+  },
+  "h1": {
+   "en": "Runoff Elections",
+   "es": "Elecciones de segunda vuelta"
+  },
+  "crumb": {
+   "en": "Runoff Elections",
+   "es": "Segunda vuelta"
+  },
+  "lead": {
+   "en": "A runoff is a second election between the top two candidates when no one won enough votes the first time. Most states with runoffs require a majority, meaning more than half the votes. If no one gets there, the top two meet again a few weeks later, and only they are on the ballot.",
+   "es": "Una segunda vuelta (runoff, en inglés) es una nueva elección entre los dos candidatos con más votos cuando nadie ganó con suficientes votos la primera vez. Casi todos los estados que la usan exigen mayoría, es decir, más de la mitad de los votos. Si nadie la alcanza, los dos primeros vuelven a competir unas semanas después, y solo ellos aparecen en la boleta."
+  },
+  "desc": {
+   "en": "What a runoff election is, what triggers one, when it happens and who can vote, with each state's rule, the law it comes from and the date we checked it.",
+   "es": "Qué es una segunda vuelta, qué la provoca, cuándo se hace y quién puede votar, con la regla de cada estado, la ley de donde sale y la fecha en que la revisamos."
+  }
+ },
+ "key_facts": [
+  {
+   "en": "{n_states} states hold runoffs in party primaries for state or federal offices. Most are in the South.",
+   "es": "{n_states} estados hacen segunda vuelta en las primarias de partido para cargos estatales o federales. Casi todos están en el sur."
+  },
+  {
+   "en": "{n_general} states can also hold a runoff after the November general election: {general_list}.",
+   "es": "{n_general} estados también pueden hacer una segunda vuelta después de la elección general de noviembre: {general_list}."
+  },
+  {
+   "en": "The usual rule is a majority. North Carolina and South Dakota use lower bars: more than 30%, and at least 35%.",
+   "es": "La regla más común es la mayoría. North Carolina y South Dakota piden menos: más del 30%, y al menos 35%."
+  },
+  {
+   "en": "The runoff comes two to twelve weeks after the first election, depending on the state.",
+   "es": "La segunda vuelta llega entre dos y doce semanas después de la primera elección, según el estado."
+  }
+ ],
+ "sections": [
+  {
+   "id": "how",
+   "h": {
+    "en": "How a Runoff Works",
+    "es": "Cómo funciona una segunda vuelta"
+   },
+   "paras": [
+    {
+     "en": "Every runoff starts with the same question: did anyone reach the share of votes the state requires?",
+     "es": "Toda segunda vuelta empieza con la misma pregunta: ¿alguien llegó al porcentaje de votos que pide el estado?"
+    }
+   ],
+   "component": "flow",
+   "after": [
+    {
+     "en": "Here's an example with made-up numbers. Four candidates split 100 votes 40, 30, 20 and 10. In a majority state, 40 isn't more than half, so the top two, with 40 and 30, meet in a runoff. In North Carolina, 40 is more than 30%, so the leader would win outright.",
+     "es": "Un ejemplo con números inventados: cuatro candidatos se reparten 100 votos así: 40, 30, 20 y 10. En un estado que pide mayoría, 40 no es más de la mitad, así que los dos primeros, con 40 y 30, van a una segunda vuelta. En North Carolina, 40 es más del 30%, así que el primer lugar ganaría sin segunda vuelta."
+    }
+   ]
+  },
+  {
+   "id": "threshold",
+   "h": {
+    "en": "What Share of the Vote Wins",
+    "es": "Qué porcentaje de votos se necesita para ganar"
+   },
+   "paras": [
+    {
+     "en": "Eight of the states need more than half the votes to win without a runoff. Two set a lower bar, and South Dakota uses its runoff only for three offices.",
+     "es": "Ocho de los estados piden más de la mitad de los votos para ganar sin segunda vuelta. Dos piden menos, y South Dakota solo la usa para tres cargos."
+    }
+   ],
+   "component": "threshold"
+  },
+  {
+   "id": "when",
+   "h": {
+    "en": "When a Runoff Happens",
+    "es": "Cuándo se hace la segunda vuelta"
+   },
+   "paras": [
+    {
+     "en": "The gap between the first election and the runoff ranges from two weeks in South Carolina to about twelve in Texas. Most states set a fixed number of weeks. Oklahoma and Texas set calendar days instead, so the gap shifts by a week from year to year.",
+     "es": "El tiempo entre la primera elección y la segunda vuelta va de dos semanas en South Carolina a unas doce en Texas. Casi todos los estados fijan un número de semanas. Oklahoma y Texas fijan días del calendario, así que el tiempo cambia una semana de un año a otro."
+    }
+   ],
+   "component": "timing",
+   "after": [
+    {
+     "en": "This year's dates are on each state's page.",
+     "es": "Las fechas de este año están en la página de cada estado."
+    }
+   ]
+  },
+  {
+   "id": "kinds",
+   "h": {
+    "en": "Primary Runoffs and General Runoffs",
+    "es": "Segunda vuelta en primarias y en la elección general"
+   },
+   "paras": [
+    {
+     "en": "Most runoffs happen in party primaries, where a party picks its nominee. A few states also hold them after the November election.",
+     "es": "Casi todas las segundas vueltas son en las primarias, donde cada partido elige a su candidato. Algunos estados también las hacen después de la elección de noviembre."
+    }
+   ],
+   "component": "kinds"
+  },
+  {
+   "id": "compare",
+   "h": {
+    "en": "Runoffs Compared With Similar Systems",
+    "es": "La segunda vuelta y otros sistemas parecidos"
+   },
+   "paras": [
+    {
+     "en": "Some systems that sound alike work differently. This table explains how each one works; it doesn't rank them.",
+     "es": "Algunos sistemas suenan parecido pero funcionan distinto. Esta tabla explica cómo funciona cada uno; no los compara para decir cuál es mejor."
+    }
+   ],
+   "component": "compare",
+   "after": [
+    {
+     "en": "Alabama uses both for some voters. Military and overseas voters get a ranked ballot in federal primaries with three or more candidates, other than for President.",
+     "es": "Alabama usa las dos cosas para algunos votantes. Los militares y los votantes en el extranjero reciben una boleta para ordenar candidatos por preferencia en las primarias federales con tres o más candidatos (menos la presidencial)."
+    }
+   ]
+  },
+  {
+   "id": "states",
+   "h": {
+    "en": "Runoff Rules by State",
+    "es": "Reglas de segunda vuelta por estado"
+   },
+   "paras": [
+    {
+     "en": "Pick your state to jump to its rule, the law it comes from and the date we checked it.",
+     "es": "Elige tu estado para ir a su regla, la ley de donde sale y la fecha en que la revisamos."
+    }
+   ],
+   "component": "states"
+  },
+  {
+   "id": "who",
+   "h": {
+    "en": "Who Can Vote in a Runoff",
+    "es": "Quién puede votar en una segunda vuelta"
+   },
+   "paras": [
+    {
+     "en": "For a primary runoff, two things matter: which party's primary you voted in, and whether you voted at all.",
+     "es": "En una segunda vuelta de primarias importan dos cosas: en la primaria de qué partido votaste, y si votaste o no."
+    },
+    {
+     "en": "**If you voted in a party's primary,** you stay with that party for the runoff. Every state here keeps you from crossing over to another party's runoff.",
+     "es": "**Si votaste en la primaria de un partido,** te quedas con ese partido en la segunda vuelta. Todos estos estados te impiden pasarte a la segunda vuelta de otro partido."
+    },
+    {
+     "en": "**If you skipped the first round,** you can still vote in a runoff in {skip_yes_list}, if you're registered. In {skip_either_list} you can choose either party's runoff.",
+     "es": "**Si no votaste en la primera ronda,** todavía puedes votar en la segunda vuelta en {skip_yes_list}, si estás registrado. En {skip_either_list} puedes elegir la segunda vuelta de cualquier partido."
+    }
+   ],
+   "component": "who",
+   "after": [
+    {
+     "en": "If you're unsure, check with your county election office. Your state's page links to it.",
+     "es": "Si tienes dudas, pregunta en la oficina electoral de tu condado. La página de tu estado tiene el enlace."
+    }
+   ]
+  },
+  {
+   "id": "faq",
+   "h": {
+    "en": "Questions People Ask",
+    "es": "Preguntas frecuentes"
+   },
+   "component": "faq"
+  },
+  {
+   "id": "limits",
+   "h": {
+    "en": "What This Guide Doesn't Cover",
+    "es": "Lo que esta guía no cubre"
+   },
+   "list": [
+    {
+     "en": "Runoffs for city, county and school board races, which follow local rules",
+     "es": "La segunda vuelta en elecciones de ciudad, condado y consejo escolar, que siguen reglas locales"
+    },
+    {
+     "en": "Special elections, which can have their own runoff rules",
+     "es": "Las elecciones especiales, que pueden tener sus propias reglas"
+    },
+    {
+     "en": "Arguments for and against runoffs",
+     "es": "Los argumentos a favor y en contra de la segunda vuelta"
+    }
+   ],
+   "after": [
+    {
+     "en": "For your election, your state or local election office has the final word.",
+     "es": "Para tu elección, la última palabra la tiene la oficina electoral de tu estado o condado."
+    }
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": {
+    "en": "When does a runoff election happen?",
+    "es": "¿Cuándo se hace una segunda vuelta?"
+   },
+   "a": {
+    "en": "Between two and twelve weeks after the first election. South Carolina's comes two weeks later. Texas holds its primary runoff on the fourth Tuesday in May, about 12 weeks after the March primary. Your state's page has this year's date.",
+    "es": "Entre dos y doce semanas después de la primera elección. En South Carolina es dos semanas después. Texas hace su segunda vuelta de primarias el cuarto martes de mayo, unas 12 semanas después de la primaria de marzo. La página de tu estado tiene la fecha de este año."
+   }
+  },
+  {
+   "q": {
+    "en": "What causes a runoff election?",
+    "es": "¿Qué provoca una segunda vuelta?"
+   },
+   "a": {
+    "en": "No candidate reaching the state's threshold, usually because three or more candidates split the vote.",
+    "es": "Que ningún candidato llegue al porcentaje que pide el estado, casi siempre porque tres o más candidatos se reparten los votos."
+   }
+  },
+  {
+   "q": {
+    "en": "Is a runoff automatic?",
+    "es": "¿La segunda vuelta es automática?"
+   },
+   "a": {
+    "en": "In most of these states, yes: if no one passes the threshold, the runoff happens. In North Carolina it happens only if the second-place candidate asks for it.",
+    "es": "En casi todos estos estados, sí: si nadie llega al porcentaje, hay segunda vuelta. En North Carolina solo la hay si el segundo lugar la pide."
+   }
+  },
+  {
+   "q": {
+    "en": "Can I vote in a runoff if I didn't vote the first time?",
+    "es": "¿Puedo votar en la segunda vuelta si no voté la primera vez?"
+   },
+   "a": {
+    "en": "Yes in {skip_yes_list}, if you're registered. If you did vote, you stay with the party whose primary you chose.",
+    "es": "Sí en {skip_yes_list}, si estás registrado. Si sí votaste, te quedas con el partido de la primaria que elegiste."
+   }
+  },
+  {
+   "q": {
+    "en": "Can I switch parties for a primary runoff?",
+    "es": "¿Puedo cambiar de partido para la segunda vuelta de una primaria?"
+   },
+   "a": {
+    "en": "No. In every state here, a voter who took one party's primary ballot can't vote in another party's runoff.",
+    "es": "No. En todos estos estados, quien votó con la boleta de un partido en la primaria no puede votar en la segunda vuelta de otro partido."
+   }
+  },
+  {
+   "q": {
+    "en": "Is a runoff the same as a recount?",
+    "es": "¿La segunda vuelta es lo mismo que un reconteo?"
+   },
+   "a": {
+    "en": "No. A recount counts the same ballots again. A runoff is a new election with a new ballot.",
+    "es": "No. Un reconteo vuelve a contar las mismas boletas. La segunda vuelta es una elección nueva, con una boleta nueva."
+   }
+  }
+ ],
+ "flow": [
+  {
+   "en": "**The first election.** Several candidates run for the same office.",
+   "es": "**La primera elección.** Varios candidatos compiten por el mismo cargo."
+  },
+  {
+   "en": "**The count.** Officials check whether the leader passed the state's threshold.",
+   "es": "**El conteo.** Las autoridades revisan si el primer lugar pasó el porcentaje que pide el estado."
+  },
+  {
+   "yes": {
+    "en": "**Yes:** the leader wins. There's no runoff.",
+    "es": "**Sí:** gana el primer lugar. No hay segunda vuelta."
+   },
+   "no": {
+    "en": "**No:** the top two go to a runoff. Everyone else is out.",
+    "es": "**No:** los dos primeros van a una segunda vuelta. Los demás quedan fuera."
+   }
+  },
+  {
+   "en": "**The runoff.** Whoever gets more votes wins.",
+   "es": "**La segunda vuelta.** Gana quien saque más votos."
+  }
+ ],
+ "compare": {
+  "cols": [
+   {
+    "en": "System",
+    "es": "Sistema"
+   },
+   {
+    "en": "How the winner is decided",
+    "es": "Cómo se decide quién gana"
+   },
+   {
+    "en": "Second election?",
+    "es": "¿Hay otra elección?"
+   }
+  ],
+  "rows": [
+   [
+    {
+     "en": "Runoff",
+     "es": "Segunda vuelta"
+    },
+    {
+     "en": "If no one passes the threshold, the top two face off later",
+     "es": "Si nadie llega al porcentaje, los dos primeros compiten de nuevo después"
+    },
+    {
+     "en": "Yes, weeks later",
+     "es": "Sí, semanas después"
+    }
+   ],
+   [
+    {
+     "en": "Top-two primary",
+     "es": "Primaria de los dos primeros (top-two)"
+    },
+    {
+     "en": "The top two in the primary advance to November, whatever their vote share",
+     "es": "Los dos primeros de la primaria pasan a noviembre, sin importar su porcentaje"
+    },
+    {
+     "en": "No separate runoff",
+     "es": "No hay segunda vuelta aparte"
+    }
+   ],
+   [
+    {
+     "en": "Ranked choice voting",
+     "es": "Voto por orden de preferencia"
+    },
+    {
+     "en": "Voters rank candidates; counting happens in rounds on the same ballots",
+     "es": "Los votantes ordenan a los candidatos; el conteo se hace por rondas con las mismas boletas"
+    },
+    {
+     "en": "No",
+     "es": "No"
+    }
+   ]
+  ]
+ },
+ "kinds": {
+  "cols": [
+   {
+    "en": "",
+    "es": ""
+   },
+   {
+    "en": "Primary runoff",
+    "es": "En primarias"
+   },
+   {
+    "en": "General election runoff",
+    "es": "En la elección general"
+   }
+  ],
+  "rows": [
+   [
+    {
+     "en": "What it decides",
+     "es": "Qué decide"
+    },
+    {
+     "en": "A party's nominee",
+     "es": "El candidato de un partido"
+    },
+    {
+     "en": "Who takes office",
+     "es": "Quién ocupa el cargo"
+    }
+   ],
+   [
+    {
+     "en": "Who's on the ballot",
+     "es": "Quién está en la boleta"
+    },
+    {
+     "en": "The top two from one party's primary",
+     "es": "Los dos primeros de la primaria de un partido"
+    },
+    {
+     "en": "The top two from the November ballot",
+     "es": "Los dos primeros de la boleta de noviembre"
+    }
+   ],
+   [
+    {
+     "en": "Where",
+     "es": "Dónde"
+    },
+    {
+     "en": "{n_states} states, mostly in the South",
+     "es": "{n_states} estados, casi todos en el sur"
+    },
+    {
+     "en": "{general_list}",
+     "es": "{general_list}"
+    }
+   ]
+  ]
+ },
+ "categories": {
+  "G": {
+   "en": "Primary and general runoffs",
+   "es": "Segunda vuelta en primarias y en la general"
+  },
+  "P": {
+   "en": "Primary runoffs only",
+   "es": "Segunda vuelta solo en primarias"
+  },
+  "L": {
+   "en": "Only on request or for some offices",
+   "es": "Solo si se pide o para algunos cargos"
+  }
+ },
+ "coverage": {
+  "en": "We read the law in each of these {n_states} states. NCSL's 50-state list of runoff states names no others; we haven't yet checked every remaining state ourselves.",
+  "es": "Leímos la ley de cada uno de estos {n_states} estados. La lista de NCSL de los 50 estados no menciona otros; todavía no revisamos nosotros cada uno de los demás estados."
+ },
+ "coverage_src": "https://www.ncsl.org/elections-and-campaigns/primary-runoffs",
+ "cta": {
+  "en": "Voting in a runoff? Make a sticker for your state and remind your friends there's one more election.",
+  "es": "¿Vas a votar en una segunda vuelta? Haz un sticker de tu estado y recuérdales a tus amigos que hay una elección más."
+ },
+ "states": [
+  {
+   "abbr": "AL",
+   "cat": "P",
+   "checked": "2026-11-09",
+   "offices": {
+    "en": "Party primaries for any office with more than two candidates",
+    "es": "Primarias de partido para cualquier cargo con más de dos candidatos"
+   },
+   "threshold": {
+    "value": 50,
+    "op": ">",
+    "words": {
+     "en": "More than half",
+     "es": "Más de la mitad"
+    },
+    "quote": "a majority of all of the votes cast in such primary election",
+    "cite": "Ala. Code 17-13-18(b)"
+   },
+   "timing": {
+    "min": 4,
+    "max": 4,
+    "words": {
+     "en": "The fourth Tuesday after the primary",
+     "es": "El cuarto martes después de la primaria"
+    }
+   },
+   "general": null,
+   "extra": {
+    "en": "Military and overseas voters get a ranked ballot in federal primaries with three or more candidates, other than for President (17-13-8.1).",
+    "es": "Los militares y votantes en el extranjero reciben una boleta para ordenar candidatos en primarias federales con tres o más candidatos, menos la presidencial (17-13-8.1)."
+   },
+   "who": {
+    "cross": {
+     "v": "no",
+     "en": "Same party only",
+     "es": "Solo el mismo partido"
+    },
+    "skip": {
+     "v": "yes",
+     "either": true,
+     "en": "Either party's runoff",
+     "es": "La de cualquier partido"
+    },
+    "register": {
+     "v": "yes",
+     "en": "Until 15 days before the runoff",
+     "es": "Hasta 15 días antes de la segunda vuelta"
+    }
+   },
+   "sources": [
+    {
+     "title": "Code of Alabama 17-13-18",
+     "url": "https://alison.legislature.state.al.us/code-of-alabama?section=17-13-18"
+    },
+    {
+     "title": "Code of Alabama 17-13-3",
+     "url": "https://alison.legislature.state.al.us/code-of-alabama?section=17-13-3"
+    },
+    {
+     "title": "Alabama Secretary of State, 2026 Poll Worker Guide",
+     "url": "https://www.sos.alabama.gov/sites/default/files/election-2026/2026%20Poll%20Worker%20Guide%20Complete.pdf"
+    }
+   ]
+  },
+  {
+   "abbr": "AR",
+   "cat": "P",
+   "checked": "2026-11-10",
+   "offices": {
+    "en": "Party primaries when a race has three or more candidates, or to break a tie",
+    "es": "Primarias de partido cuando hay tres o más candidatos, o para romper un empate"
+   },
+   "threshold": {
+    "value": 50,
+    "op": ">",
+    "words": {
+     "en": "More than half",
+     "es": "Más de la mitad"
+    },
+    "quote": "a majority of the votes cast for that office or position",
+    "cite": "Ark. Code 7-7-304(f)"
+   },
+   "timing": {
+    "min": 4,
+    "max": 4,
+    "words": {
+     "en": "The Tuesday four weeks after the preferential primary",
+     "es": "El martes cuatro semanas después de la primaria preferencial"
+    }
+   },
+   "general": null,
+   "extra": {
+    "en": "County and city offices can also go to a runoff four weeks after the November election (7-5-106). This guide counts statewide rules only.",
+    "es": "Los cargos de condado y de ciudad también pueden ir a segunda vuelta cuatro semanas después de la elección de noviembre (7-5-106). Esta guía solo cuenta las reglas estatales."
+   },
+   "who": {
+    "cross": {
+     "v": "no",
+     "en": "Barred by Ark. Code 7-1-103",
+     "es": "Lo prohíbe el Ark. Code 7-1-103"
+    },
+    "skip": {
+     "v": "yes",
+     "en": "Either party's runoff",
+     "es": "La de cualquier partido",
+     "either": true
+    },
+    "register": {
+     "v": "no",
+     "en": "The runoff's deadline falls before the first primary",
+     "es": "La fecha límite de la segunda vuelta es antes de la primera primaria"
+    }
+   },
+   "sources": [
+    {
+     "title": "Arkansas Secretary of State, Election Laws of Arkansas, 2025 edition (7-7-203, 7-7-304)",
+     "url": "https://www.sos.arkansas.gov/uploads/elections/Arkansas_Election_Laws_and_Constitution_2025_Edition.pdf"
+    },
+    {
+     "title": "Arkansas State Board of Election Commissioners, Running for Public Office handbook",
+     "url": "https://sbec.arkansas.gov/wp-content/uploads/2025-Running-for-Public-Office-9-2-25-FINAL-small-1.pdf"
+    },
+    {
+     "title": "Arkansas Secretary of State, Voting 101",
+     "url": "https://www.sos.arkansas.gov/uploads/elections/voting_101_8-2020_grayscaleb.pdf"
+    },
+    {
+     "title": "Arkansas State Board of Election Commissioners, 2026 Election Calendar",
+     "url": "https://sbec.arkansas.gov/wp-content/uploads/2026-Election-Calendar-Rev.-6-2025.pdf"
+    }
+   ]
+  },
+  {
+   "abbr": "GA",
+   "cat": "G",
+   "checked": "2026-11-09",
+   "offices": {
+    "en": "All primaries, plus November general elections except for President",
+    "es": "Todas las primarias, y la elección general de noviembre menos la presidencial"
+   },
+   "threshold": {
+    "value": 50,
+    "op": ">",
+    "words": {
+     "en": "More than half",
+     "es": "Más de la mitad"
+    },
+    "quote": "a majority of the votes cast",
+    "cite": "O.C.G.A. 21-2-501(a)(1)"
+   },
+   "timing": {
+    "min": 4,
+    "max": 4,
+    "words": {
+     "en": "28 days after the primary or general election",
+     "es": "28 días después de la primaria o de la elección general"
+    }
+   },
+   "general": {
+    "en": "Yes, for every office on the November ballot except presidential electors, four weeks later",
+    "es": "Sí, para todos los cargos de la boleta de noviembre menos los electores presidenciales, cuatro semanas después"
+   },
+   "who": {
+    "cross": {
+     "v": "no",
+     "en": "Same party's ballot only",
+     "es": "Solo la boleta del mismo partido"
+    },
+    "skip": {
+     "v": "yes",
+     "either": true,
+     "en": "Any party's runoff",
+     "es": "La de cualquier partido"
+    },
+    "register": {
+     "v": "dep",
+     "en": "Federal races only: state and local races keep the first primary's deadline",
+     "es": "Solo para cargos federales: los cargos estatales y locales usan la fecha límite de la primaria"
+    }
+   },
+   "sources": [
+    {
+     "title": "Georgia SB 202 (2021), O.C.G.A. 21-2-501",
+     "url": "https://www.legis.ga.gov/api/legislation/document/20212022/201498"
+    },
+    {
+     "title": "Georgia Secretary of State, Elections FAQ",
+     "url": "https://sos.ga.gov/page/elections-faq"
+    },
+    {
+     "title": "Georgia Secretary of State, 2026 Elections Calendar",
+     "url": "https://sos.ga.gov/sites/default/files/forms/2026%20Elections%20Calendar_0.pdf"
+    },
+    {
+     "title": "Georgia.gov, Vote in Runoff Elections",
+     "url": "https://georgia.gov/vote-runoff-elections"
+    }
+   ]
+  },
+  {
+   "abbr": "LA",
+   "cat": "G",
+   "checked": "2026-11-09",
+   "offices": {
+    "en": "Closed party primaries for U.S. Senate, the state Supreme Court, the Board of Elementary and Secondary Education and the Public Service Commission. Most other offices use Louisiana's open primary, with every candidate on one ballot",
+    "es": "Primarias cerradas de partido para el Senado federal, la Corte Suprema estatal, la Junta de Educación Primaria y Secundaria y la Comisión de Servicios Públicos. Casi todos los demás cargos usan la primaria abierta de Louisiana, con todos los candidatos en una sola boleta"
+   },
+   "threshold": {
+    "value": 50,
+    "op": ">",
+    "words": {
+     "en": "More than half",
+     "es": "Más de la mitad"
+    },
+    "quote": "the majority of votes in the party primary",
+    "cite": "La. R.S. 18:410.7(A)"
+   },
+   "timing": {
+    "min": 6,
+    "max": 6,
+    "words": {
+     "en": "A second party primary six Saturdays after the first",
+     "es": "Una segunda primaria de partido seis sábados después de la primera"
+    }
+   },
+   "general": {
+    "en": "Yes, in effect: in the open primary, a candidate with a majority wins outright; otherwise the top two meet in a general election six Saturdays later",
+    "es": "En la práctica, sí: en la primaria abierta, quien saca mayoría gana; si nadie la saca, los dos primeros compiten en una elección general seis sábados después"
+   },
+   "extra": {
+    "en": "For fall 2026, U.S. House races used the open primary instead, under Act 7 of 2026, according to the Secretary of State.",
+    "es": "En el otoño de 2026, las elecciones para la Cámara de Representantes federal usaron la primaria abierta, según la Ley 7 de 2026 y la Secretaría de Estado."
+   },
+   "who": {
+    "cross": {
+     "v": "no",
+     "en": "Voters with no party who pick one party's ballot stay with it",
+     "es": "Quien no tiene partido y elige la boleta de uno se queda con ese partido"
+    },
+    "skip": {
+     "v": "unk",
+     "en": "Not confirmed yet",
+     "es": "Aún sin confirmar"
+    },
+    "register": {
+     "v": "yes",
+     "en": "The second primary has its own deadlines",
+     "es": "La segunda primaria tiene sus propias fechas límite"
+    }
+   },
+   "sources": [
+    {
+     "title": "La. R.S. 18:410.7",
+     "url": "https://www.legis.la.gov/legis/Law.aspx?d=1341864"
+    },
+    {
+     "title": "La. R.S. 18:410.3",
+     "url": "https://legis.la.gov/legis/Law.aspx?d=1341857"
+    },
+    {
+     "title": "La. R.S. 18:402",
+     "url": "https://legis.la.gov/Legis/Law.aspx?d=81545"
+    },
+    {
+     "title": "La. R.S. 18:511",
+     "url": "https://legis.la.gov/legis/Law.aspx?d=81616"
+    },
+    {
+     "title": "Louisiana Secretary of State, Closed Party Primary Elections",
+     "url": "https://www.sos.la.gov/elections-voting/closed-party-primary-elections"
+    },
+    {
+     "title": "Louisiana Secretary of State, 2026 Elections Calendar",
+     "url": "https://www.sos.la.gov/media/p31j4zkc/elections-calendar-2026.pdf"
+    }
+   ]
+  },
+  {
+   "abbr": "MS",
+   "cat": "G",
+   "checked": "2026-11-10",
+   "offices": {
+    "en": "Party primaries; in November, the eight statewide offices such as Governor",
+    "es": "Primarias de partido; en noviembre, los ocho cargos estatales como el de gobernador"
+   },
+   "threshold": {
+    "value": 50,
+    "op": ">",
+    "words": {
+     "en": "More than half",
+     "es": "Más de la mitad"
+    },
+    "quote": "a majority vote",
+    "cite": "Miss. Code 23-15-191, as amended by SB 2144 (2024)"
+   },
+   "timing": {
+    "min": 4,
+    "max": 4,
+    "words": {
+     "en": "Four weeks later (three weeks for city primaries)",
+     "es": "Cuatro semanas después (tres en las primarias municipales)"
+    }
+   },
+   "general": {
+    "en": "Yes, for Governor and the other statewide offices, four weeks later",
+    "es": "Sí, para gobernador y los demás cargos estatales, cuatro semanas después"
+   },
+   "who": {
+    "cross": {
+     "v": "no",
+     "en": "Per Attorney General opinions cited by the Secretary of State",
+     "es": "Según opiniones del Procurador General citadas por la Secretaría de Estado"
+    },
+    "skip": {
+     "v": "yes",
+     "en": "If you didn't vote in another party's primary",
+     "es": "Si no votaste en la primaria de otro partido",
+     "either": false
+    },
+    "register": {
+     "v": "no",
+     "en": "The runoff's deadline falls before the first primary",
+     "es": "La fecha límite de la segunda vuelta es antes de la primera primaria"
+    }
+   },
+   "sources": [
+    {
+     "title": "Mississippi SB 2144 (2024), Miss. Code 23-15-191 and 23-15-193",
+     "url": "https://billstatus.ls.state.ms.us/documents/2024/html/SB/2100-2199/SB2144SG.htm"
+    },
+    {
+     "title": "Mississippi Constitution, Art. 5, Sec. 140 (Secretary of State)",
+     "url": "https://sos.ms.gov/sites/default/files/publications/Mississippi_Constitution.pdf"
+    },
+    {
+     "title": "Mississippi Attorney General opinion, Nov. 2, 2023",
+     "url": "https://attorneygenerallynnfitch.com/wp-content/uploads/2023/11/K.Butler-November-2-2023-Runoff-Election-for-State-Officers.pdf"
+    },
+    {
+     "title": "Mississippi Secretary of State, Party Primary System presentation",
+     "url": "https://www.sos.ms.gov/content/documents/pol_res/Presentation%20Mississippi%20Party%20Primary%20System.pdf"
+    },
+    {
+     "title": "Mississippi Secretary of State, update on primary runoff elections",
+     "url": "https://www.sos.ms.gov/news/update-republican-primary-runoff-elections"
+    },
+    {
+     "title": "Mississippi Secretary of State, 2026 Elections Calendar",
+     "url": "https://www.sos.ms.gov/content/documents/elections/2026%20Elections%20Calendar.pdf"
+    }
+   ]
+  },
+  {
+   "abbr": "NC",
+   "cat": "L",
+   "checked": "2026-11-10",
+   "offices": {
+    "en": "Party primaries, only if the second-place candidate asks for one by noon on the ninth day after the primary",
+    "es": "Primarias de partido, solo si el segundo lugar la pide antes del mediodía del noveno día después de la primaria"
+   },
+   "threshold": {
+    "value": 30,
+    "op": ">",
+    "words": {
+     "en": "More than 30%",
+     "es": "Más del 30%"
+    },
+    "quote": "Any excess of the sum so ascertained shall be a substantial plurality",
+    "cite": "N.C.G.S. 163-111(a)(1)"
+   },
+   "timing": {
+    "min": 10,
+    "max": 10,
+    "words": {
+     "en": "10 weeks after the first primary",
+     "es": "10 semanas después de la primera primaria"
+    }
+   },
+   "general": null,
+   "who": {
+    "cross": {
+     "v": "no",
+     "en": "The second primary continues the first",
+     "es": "La segunda primaria continúa la primera"
+    },
+    "skip": {
+     "v": "yes",
+     "en": "Unaffiliated voters can choose a party's ballot",
+     "es": "Quien no tiene partido puede elegir la boleta de un partido",
+     "either": false
+    },
+    "register": {
+     "v": "no",
+     "en": "Except people who become eligible in between",
+     "es": "Salvo quien cumple los requisitos entre una y otra"
+    }
+   },
+   "sources": [
+    {
+     "title": "N.C.G.S. 163-111",
+     "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_163/GS_163-111.html"
+    },
+    {
+     "title": "N.C.G.S. 163-119",
+     "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_163/GS_163-119.html"
+    },
+    {
+     "title": "N.C. State Board of Elections, Numbered Memo 2024-02",
+     "url": "https://www.ncsbe.gov/blog/2024/03/14/numbered-memo-2024-02-second-primary-preparations"
+    }
+   ]
+  },
+  {
+   "abbr": "OK",
+   "cat": "P",
+   "checked": "2026-11-10",
+   "offices": {
+    "en": "Party primaries, which are closed to voters outside the party",
+    "es": "Primarias de partido, cerradas a quien no es del partido"
+   },
+   "threshold": {
+    "value": 50,
+    "op": ">",
+    "words": {
+     "en": "More than half",
+     "es": "Más de la mitad"
+    },
+    "quote": "a majority of all votes cast for all candidates of such party for the office",
+    "cite": "26 O.S. 1-103"
+   },
+   "timing": {
+    "min": 9,
+    "max": 10,
+    "words": {
+     "en": "The fourth Tuesday of August; the primary is the third Tuesday in June",
+     "es": "El cuarto martes de agosto; la primaria es el tercer martes de junio"
+    }
+   },
+   "general": null,
+   "who": {
+    "cross": {
+     "v": "no",
+     "en": "Only the party's registered members can vote",
+     "es": "Solo votan los miembros registrados del partido"
+    },
+    "skip": {
+     "v": "yes",
+     "either": false,
+     "en": "In your own party's runoff",
+     "es": "En la de tu propio partido"
+    },
+    "register": {
+     "v": "yes",
+     "en": "Until 25 days before the runoff",
+     "es": "Hasta 25 días antes de la segunda vuelta"
+    }
+   },
+   "sources": [
+    {
+     "title": "26 O.S. 1-103 (OSCN)",
+     "url": "https://www.oscn.net/applications/oscn/DeliverDocument.asp?CiteID=436447"
+    },
+    {
+     "title": "26 O.S. 1-102 (OSCN)",
+     "url": "https://www.oscn.net/applications/oscn/DeliverDocument.asp?CiteID=436446"
+    },
+    {
+     "title": "Oklahoma State Election Board, Primary and Runoff Primary Elections",
+     "url": "https://oklahoma.gov/elections/elections-results/primary-and-runoff-primary-elections.html"
+    },
+    {
+     "title": "Oklahoma State Election Board, Register to Vote",
+     "url": "https://oklahoma.gov/elections/voter-registration/register-to-vote.html"
+    }
+   ]
+  },
+  {
+   "abbr": "SC",
+   "cat": "P",
+   "checked": "2026-11-10",
+   "offices": {
+    "en": "Party primaries",
+    "es": "Primarias de partido"
+   },
+   "threshold": {
+    "value": 50,
+    "op": ">",
+    "words": {
+     "en": "More than half",
+     "es": "Más de la mitad"
+    },
+    "quote": "a majority of the votes cast",
+    "cite": "S.C. Code 7-17-600"
+   },
+   "timing": {
+    "min": 2,
+    "max": 2,
+    "words": {
+     "en": "Two weeks after the first primary",
+     "es": "Dos semanas después de la primera primaria"
+    }
+   },
+   "general": null,
+   "who": {
+    "cross": {
+     "v": "no",
+     "en": "Same party only",
+     "es": "Solo el mismo partido"
+    },
+    "skip": {
+     "v": "yes",
+     "either": true,
+     "en": "Either party's runoff",
+     "es": "La de cualquier partido"
+    },
+    "register": {
+     "v": "no",
+     "en": "Registration stays closed until after the runoff",
+     "es": "El registro sigue cerrado hasta después de la segunda vuelta"
+    }
+   },
+   "sources": [
+    {
+     "title": "S.C. Code Title 7, Chapter 13 (7-13-50)",
+     "url": "https://www.scstatehouse.gov/code/t07c013.php"
+    },
+    {
+     "title": "S.C. Code Title 7, Chapter 17 (7-17-600)",
+     "url": "https://www.scstatehouse.gov/code/t07c017.php"
+    },
+    {
+     "title": "S.C. Election Commission, FAQs for the 2026 Statewide Primaries and Runoffs",
+     "url": "https://scvotes.gov/wp-content/uploads/2026/04/2026-04-26-Primary-FAQs.pdf"
+    },
+    {
+     "title": "S.C. Code Title 7, Chapter 5 (7-5-150)",
+     "url": "https://www.scstatehouse.gov/code/t07c005.php"
+    }
+   ]
+  },
+  {
+   "abbr": "SD",
+   "cat": "L",
+   "checked": "2026-11-09",
+   "offices": {
+    "en": "Party primaries for U.S. Senate, U.S. House and Governor, with three or more candidates",
+    "es": "Primarias de partido para el Senado federal, la Cámara federal y gobernador, con tres o más candidatos"
+   },
+   "threshold": {
+    "value": 35,
+    "op": ">=",
+    "words": {
+     "en": "At least 35% of the party's votes",
+     "es": "Al menos 35% de los votos del partido"
+    },
+    "quote": "thirty-five percent of the votes of the candidate's party",
+    "cite": "SDCL 12-6-51.1"
+   },
+   "timing": {
+    "min": 8,
+    "max": 8,
+    "words": {
+     "en": "Eight weeks after the first primary",
+     "es": "Ocho semanas después de la primera primaria"
+    }
+   },
+   "general": null,
+   "extra": {
+    "en": "If two or more candidates tie for second, all of them go on the runoff ballot.",
+    "es": "Si dos o más candidatos empatan en segundo lugar, todos aparecen en la boleta de la segunda vuelta."
+   },
+   "who": {
+    "cross": {
+     "v": "no",
+     "en": "Only the party's registered members, unless the party opens its primary to voters with no party",
+     "es": "Solo los miembros registrados del partido, salvo que el partido abra su primaria a quienes no tienen partido"
+    },
+    "skip": {
+     "v": "unk",
+     "en": "Not confirmed yet",
+     "es": "Aún sin confirmar"
+    },
+    "register": {
+     "v": "yes",
+     "en": "By 5 p.m. 15 days before the runoff",
+     "es": "Hasta las 5 p. m. 15 días antes de la segunda vuelta"
+    }
+   },
+   "sources": [
+    {
+     "title": "SDCL 12-6-51.1",
+     "url": "https://sdlegislature.gov/api/Statutes/12-6-51.1.html"
+    },
+    {
+     "title": "SDCL 12-6-26",
+     "url": "https://sdlegislature.gov/api/Statutes/12-6-26.html"
+    },
+    {
+     "title": "SDCL 12-4-5",
+     "url": "https://sdlegislature.gov/api/Statutes/12-4-5.html"
+    }
+   ]
+  },
+  {
+   "abbr": "TX",
+   "cat": "P",
+   "checked": "2026-11-09",
+   "offices": {
+    "en": "Party primaries",
+    "es": "Primarias de partido"
+   },
+   "threshold": {
+    "value": 50,
+    "op": ">",
+    "words": {
+     "en": "More than half",
+     "es": "Más de la mitad"
+    },
+    "quote": "a majority of the total number of votes received by all the candidates for the nomination",
+    "cite": "Tex. Elec. Code 172.003"
+   },
+   "timing": {
+    "min": 11,
+    "max": 12,
+    "words": {
+     "en": "The fourth Tuesday in May; the primary is the first Tuesday in March",
+     "es": "El cuarto martes de mayo; la primaria es el primer martes de marzo"
+    }
+   },
+   "general": null,
+   "extra": {
+    "en": "Some local and special elections that require a majority also have runoffs.",
+    "es": "Algunas elecciones locales y especiales que exigen mayoría también tienen segunda vuelta."
+   },
+   "who": {
+    "cross": {
+     "v": "no",
+     "en": "A vote in a second party's primary or runoff is void",
+     "es": "El voto en la primaria o segunda vuelta de otro partido es nulo"
+    },
+    "skip": {
+     "v": "yes",
+     "either": true,
+     "en": "Either party's runoff, unless you're affiliated with a third party",
+     "es": "La de cualquier partido, salvo que estés afiliado a un tercer partido"
+    },
+    "register": {
+     "v": "dep",
+     "en": "Only if it takes effect by runoff day: 30 days after you apply",
+     "es": "Solo si entra en vigor antes del día de la segunda vuelta: 30 días después de solicitarlo"
+    }
+   },
+   "sources": [
+    {
+     "title": "Texas Election Code 172.003",
+     "url": "https://statutes.capitol.texas.gov/Docs/EL/htm/EL.172.htm#172.003"
+    },
+    {
+     "title": "Texas Election Code 41.007",
+     "url": "https://statutes.capitol.texas.gov/Docs/EL/htm/EL.41.htm#41.007"
+    },
+    {
+     "title": "Texas Election Code 162.013",
+     "url": "https://statutes.capitol.texas.gov/Docs/EL/htm/EL.162.htm#162.013"
+    },
+    {
+     "title": "Texas Election Code 13.143",
+     "url": "https://statutes.capitol.texas.gov/Docs/EL/htm/EL.13.htm#13.143"
+    },
+    {
+     "title": "Texas Secretary of State, news release, May 13, 2026",
+     "url": "https://www.sos.texas.gov/about/newsreleases/2026/051326.shtml"
+    }
+   ]
+  }
+ ]
+}

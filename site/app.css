@@ -988,3 +988,148 @@ button.link-quiet:hover { text-decoration: underline; }
 /* Group labels (November 2 polish): a step larger, more room above than below, so each label reads as its row's. */
 .all__type { margin: var(--s6) 0 var(--gap-card-h); font-size: var(--fs-lg); line-height: 1.3; color: var(--ink); }
 .all__classic .all__type:first-child { margin-top: 0; }
+
+/* ---- Guides under /voting/ (site/guides.php, November 10). Spec: docs/guide-visuals-spec.md.
+   Categories are treatments, not shades (navy fill, gold with a navy outline, hatching, outline only), and
+   every mark has a word or letter beside it. Red (--accent) is never a data color. No animation. ---- */
+.top .byline { margin: var(--s4) 0 0; max-width: 38rem; font-size: var(--fs-sm); color: var(--band-text); }
+.top .byline a { color: var(--cream); text-decoration-color: rgba(251, 246, 232, 0.55); }
+.gguide { --g-tint: rgba(20, 41, 94, 0.1); --g-hatch: repeating-linear-gradient(45deg, var(--ink) 0 1.5px, transparent 1.5px 6px); }
+.gkey { max-width: 46rem; margin: var(--s6) 0 0; padding: var(--s5); background: var(--panel); border: 1px solid var(--line); border-left: 6px solid var(--gold); border-radius: var(--radius-lg); }
+.gkey__h { margin: 0 0 var(--s3); font-size: var(--fs-lg); }
+.gkey ul { margin: 0; padding-left: 1.2rem; }
+.gkey li { margin: 0 0 var(--s2); }
+.gkey li:last-child { margin-bottom: 0; }
+.gguide .guide--first .guide__h { border-top: 0; padding-top: var(--s2); }
+.gguide .guide h3 { margin: var(--s5) 0 var(--gap-card-h); font-size: var(--fs-lg); line-height: 1.3; color: var(--ink); }
+.gfig__title { display: block; margin: 0 0 var(--s4); font-weight: 700; color: var(--ink); }
+.gguide figure { margin: var(--s5) 0; }
+
+/* Step flow */
+.gflow { padding: var(--s5); background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius-lg); }
+.gflow__steps { margin: 0; padding: 0; list-style: none; display: grid; gap: var(--s5); }
+.gflow__steps > li { position: relative; }
+.gflow__steps > li + li::before { content: "↓"; position: absolute; top: calc(-1 * var(--s5)); left: 1.1rem; line-height: var(--s5); color: var(--muted); font-weight: 700; }
+.gflow__step p, .gflow__b { margin: 0; padding: var(--s3) var(--s4); border: 2px solid var(--ink); border-radius: var(--radius); background: var(--bg); }
+.gflow__q { margin: 0 0 var(--s3); font-weight: 700; color: var(--ink); }
+.gflow__branches { display: grid; gap: var(--s3); grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); }
+.gflow__b--yes { background: var(--ink); color: var(--cream); }
+.gflow__b--yes strong { color: var(--gold); }
+.gflow__b--no { background: var(--gold); color: var(--ink); }
+
+/* Dot plots (thresholds, timing): HTML rows over a shared axis, so labels stay body size on a phone */
+.gplot { container-type: inline-size; padding: var(--s5); background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius-lg); }
+.gplot__rows { margin: 0; padding: 0; list-style: none; display: grid; gap: var(--s4); }
+.gplot__row { display: grid; gap: 0; align-items: center; }
+.gplot__label { margin: 0; line-height: 1.35; }
+.gplot__label span { color: var(--muted); font-variant-numeric: tabular-nums; }
+.gplot--th .gplot__label span { display: block; }
+.gplot__track { position: relative; height: 28px; }
+.gplot__track::before { content: ""; position: absolute; left: 0; right: 0; top: 50%; border-top: 1px solid var(--line-strong); }
+.gplot--th .gplot__track::after { content: ""; position: absolute; top: 0; bottom: 0; left: 50%; border-left: 1px dashed var(--muted); }
+.gplot__zone { position: absolute; top: 3px; bottom: 3px; left: calc(var(--v) * 1%); right: 0; background: var(--g-tint); border-left: 2px solid var(--ink); border-radius: 0 6px 6px 0; display: flex; align-items: center; justify-content: flex-end; overflow: hidden; }
+.gplot__zlabel { display: none; padding: 0 var(--s2); font-size: var(--fs-xs); font-weight: 700; color: var(--ink); white-space: nowrap; }
+.gplot__dot { position: absolute; top: 50%; left: calc(var(--v, var(--a)) * 1%); width: 0; height: 0; border: 8px solid var(--ink); border-radius: 50%; transform: translate(-50%, -50%); box-shadow: 0 0 0 2px var(--panel); }
+.gplot__val { position: absolute; top: 50%; left: calc(var(--v) * 1%); transform: translate(calc(-100% - 12px), -50%); font-size: var(--fs-xs); font-weight: 700; color: var(--ink); font-variant-numeric: tabular-nums; }
+.gplot__range { position: absolute; top: 50%; left: calc(var(--a) * 1%); width: calc((var(--b) - var(--a)) * 1%); height: 14px; transform: translateY(-50%); border: 0 solid var(--ink); border-width: 0 3px; background: linear-gradient(var(--ink), var(--ink)) center / 100% 4px no-repeat; }
+.gplot__axis { position: relative; height: 1.4em; margin-top: var(--s2); border-top: 1px solid var(--ink); font-size: var(--fs-xs); color: var(--muted); font-variant-numeric: tabular-nums; }
+.gplot__axis span { position: absolute; top: 4px; left: calc(var(--v) * 1%); transform: translateX(calc(var(--v) * -1%)); line-height: 1; }
+.gplot__axislabel { margin: var(--s2) 0 0; font-size: var(--fs-xs); color: var(--muted); }
+.gplot__key { display: flex; align-items: center; gap: var(--s2); margin: calc(-1 * var(--s2)) 0 var(--s4); font-size: var(--fs-sm); }
+.gplot__key i { display: inline-block; width: 2rem; height: 0.9rem; background: var(--g-tint); border-left: 2px solid var(--ink); }
+.gplot__note { margin: var(--s3) 0 0; font-size: var(--fs-sm); }
+.gplot .cite { margin-top: var(--s3); }
+@container (min-width: 34rem) {
+	.gplot__row { grid-template-columns: 13rem 1fr; gap: var(--s4); }
+	.gplot__zlabel { display: block; }
+	.gplot__key { display: none; }
+	.gplot--th .gplot__row { grid-template-columns: 15rem 1fr; }
+	.gplot__axis, .gplot__axislabel { margin-left: calc(13rem + var(--s4)); }
+	.gplot--th .gplot__axis, .gplot--th .gplot__axislabel { margin-left: calc(15rem + var(--s4)); }
+}
+
+/* Tables that stack into labeled cards on phones */
+.gtable-wrap { max-width: 100%; margin: 0 0 var(--s5); }
+.gtable { width: 100%; border-collapse: collapse; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden; }
+.gtable th, .gtable td { padding: 12px 14px; text-align: left; vertical-align: top; border-top: 1px solid var(--line); }
+.gtable thead th { border-top: 0; background: rgba(20, 41, 94, 0.06); color: var(--ink); font-size: var(--fs-sm); }
+.gtable tbody th { color: var(--ink); }
+@media (max-width: 639px) {
+	.gtable thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); }
+	.gtable, .gtable tbody, .gtable tr, .gtable th, .gtable td { display: block; width: auto; }
+	.gtable tr { border-top: 1px solid var(--line); padding: var(--s2) 0; }
+	.gtable tbody tr:first-child { border-top: 0; }
+	.gtable th, .gtable td { border-top: 0; padding: 4px 14px; }
+	.gtable td::before { content: attr(data-label); display: block; font-size: var(--fs-xs); font-weight: 700; color: var(--muted); }
+	.gtable--kinds td::before { content: attr(data-label); }
+}
+
+/* Category badges: a letter mark plus words */
+.gcat { display: inline-flex; align-items: center; gap: var(--s2); font-size: var(--fs-sm); font-weight: 700; color: var(--ink); }
+.gcat__mark { display: inline-grid; place-items: center; width: 1.7em; height: 1.7em; flex: none; border: 2px solid var(--ink); border-radius: 5px; font-size: var(--fs-xs); line-height: 1; }
+.gcat--g .gcat__mark { background: var(--ink); color: var(--cream); }
+.gcat--p .gcat__mark { background: var(--gold); color: var(--ink); }
+.gcat--l .gcat__mark { background: var(--g-hatch), var(--bg); color: var(--ink); }
+.gcat--l .gcat__mark span { padding: 1px 3px; background: var(--bg); border-radius: 3px; }
+.gcat--none { color: var(--muted); }
+
+/* State groups, picker and sections */
+.gcover { font-size: var(--fs-sm); color: var(--muted); }
+.gcover a { color: var(--muted); }
+.ggroups { display: grid; gap: var(--s4); grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); margin: var(--s4) 0; padding: var(--s4) var(--s5); background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius-lg); }
+.ggroups ul { margin: var(--s2) 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 4px var(--s3); }
+.ggroups a { font-weight: 600; }
+.gpick { display: grid; gap: var(--s2); margin: var(--s4) 0; }
+.gpick[hidden] { display: none; }
+.gpick label { font-weight: 700; color: var(--ink); }
+.gpick__row { display: flex; flex-wrap: wrap; gap: var(--s2); }
+.gpick select { flex: 1 1 14rem; min-height: 48px; padding: 0 var(--s3); border: 2px solid #9AA6C4; border-radius: var(--radius); background: #fff; color: var(--ink); font: inherit; font-weight: 600; }
+.gpick select:hover, .gpick select:focus { border-color: var(--ink); }
+.gstates { display: grid; gap: var(--s4); margin: var(--s5) 0 0; }
+.gstate { padding: var(--s4) var(--s5); background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius-lg); scroll-margin-top: var(--s4); }
+.gstate:target, .gstate--on { border-color: var(--ink); box-shadow: 0 0 0 3px var(--gold); outline: none; }
+.gstate:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+.gstate__head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--s2) var(--s4); margin: 0 0 var(--s3); }
+.gguide .gstate h3 { margin: 0; font-size: var(--fs-h3); }
+.gstate__dl { margin: 0; }
+.gstate__row { padding: var(--s2) 0; border-top: 1px solid var(--line); }
+.gstate__row dt { font-size: var(--fs-xs); font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
+.gstate__row dd { margin: 2px 0 0; }
+.gstate__row q { font-style: italic; }
+@container (min-width: 36rem) { .gstate__row { display: grid; grid-template-columns: 11rem 1fr; gap: var(--s4); } .gstate__row dd { margin: 0; } }
+.gstates { container-type: inline-size; }
+.gstate__sub { margin: var(--s3) 0 var(--s2); padding-top: var(--s3); border-top: 1px solid var(--line); font-size: var(--fs-base); color: var(--ink); }
+.gstate__who { margin: 0; padding: 0; list-style: none; display: grid; gap: var(--s2); }
+.gstate__q { display: block; font-size: var(--fs-sm); font-weight: 700; color: var(--ink); }
+.gstate__src { margin: var(--s3) 0 0; font-size: var(--fs-xs); color: var(--muted); }
+.gstate__src span { font-weight: 700; }
+.gstate__src a { color: var(--muted); }
+.gstate__more { margin: var(--s2) 0 0; font-weight: 700; }
+.gstate--other p { margin: 0 0 var(--s2); }
+
+/* Who-can-vote values: symbol and word, so meaning never rests on color */
+.gv { display: inline-flex; align-items: center; gap: 6px; font-weight: 700; color: var(--ink); white-space: nowrap; }
+.gv__sym { display: inline-grid; place-items: center; width: 1.45em; height: 1.45em; border: 2px solid var(--ink); border-radius: 50%; font-size: 0.8em; line-height: 1; }
+.gv--yes .gv__sym { background: var(--ink); color: var(--cream); }
+.gv--dep .gv__sym { background: var(--gold); }
+.gv--unk .gv__sym { border-style: dashed; color: var(--muted); }
+.gv--unk { color: var(--muted); }
+.gv__text { color: var(--text); }
+.gtable--who td .gv__text { display: block; margin-top: 2px; font-size: var(--fs-sm); color: var(--muted); }
+.gwho .cite { margin-top: var(--s3); }
+
+@media (forced-colors: active) {
+	.gcat .gcat__mark, .gv .gv__sym, .gplot__dot { forced-color-adjust: none; border-color: CanvasText; background: Canvas; color: CanvasText; }
+	.gcat--g .gcat__mark, .gv--yes .gv__sym, .gplot__dot { background: CanvasText; color: Canvas; }
+	.gcat--l .gcat__mark { background: repeating-linear-gradient(45deg, CanvasText 0 1.5px, Canvas 1.5px 6px); }
+	.gcat--l .gcat__mark span { background: Canvas; }
+	.gplot__zone { border: 1px solid CanvasText; }
+	.gplot__range { background: linear-gradient(CanvasText, CanvasText) center / 100% 4px no-repeat; forced-color-adjust: none; border-color: CanvasText; }
+	.gstate:target, .gstate--on { outline: 3px solid Highlight; }
+}
+@media print {
+	.gpick, .share, .top .jump { display: none !important; }
+	.gstate, .gplot, .gflow, .gtable tr, .gkey { break-inside: avoid; }
+	.gtable thead { display: table-header-group; }
+	.gstate__src a::after { content: " (" attr(href) ")"; word-break: break-all; }
+}

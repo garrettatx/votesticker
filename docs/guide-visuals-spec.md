@@ -6,6 +6,18 @@ Research: a Perplexity thread in the project "VoteSticker.org Research", Search 
 Urban Institute, Datawrapper, W3C and the UK Government Analysis Function chart guidance. Those sources weren't read directly
 this pass, so treat the guidance as Perplexity reports it.
 
+## Built Nov 10 (runoff guide)
+
+- **Dot plots are HTML and CSS, not SVG.** Each row is a label above (phones) or beside (34rem and wider, container query) a
+  track; dots are bordered spans, so text stays body size at 320 px and survives Windows contrast themes. This settles the
+  "narrow SVG" question from `docs/research/guide-runoff-visuals-2.md`.
+- **No map yet.** Not all 51 rows are checked, so the guide shows grouped state links by category plus a coverage line.
+- **Rule labels say the operator:** "More than 30%", "At least 35% of the party's votes" (South Dakota), "More than half".
+- **Who can vote** is an HTML table with a symbol and a word in each cell (Can, Can't, Depends, Not confirmed yet), stacked
+  into labeled cards under 640 px.
+- Code: `site/guides.php`, styles under "Guides under /voting/" in `site/app.css`, data `build/guides/runoff-elections.json`,
+  checks `build/guide_check.py`.
+
 ## What "Better Than Anything Else" Means Here
 
 A reader can understand the main comparison, find their state, read the exception, and open the official source. None of that

@@ -362,6 +362,7 @@ return array(
 		'Before you vote, confirm your registration, polling place, hours, and ID requirements with your state or local election office.' => 'Antes de votar, confirma tu registro de votante, tu lugar de votación, el horario y los requisitos de identificación con la oficina electoral de tu estado o localidad.',
 		'Find your election office' => 'Encuentra tu oficina electoral',
 		'Sticker History' => 'Historia del sticker',
+		'Runoff Elections' => 'Segunda vuelta',
 		'Voting dates and links come from official state election sources. Before you vote, check your registration, polling place, hours, and ID rules with your state or local election office.' => 'Las fechas y los enlaces vienen de fuentes electorales oficiales de cada estado. Antes de votar, verifica tu registro de votante, tu lugar de votación, los horarios y los requisitos de identificación con la oficina electoral de tu estado o localidad.',
 		'Find your state or local election office' => 'Encuentra la oficina electoral de tu estado o localidad',
 		'https://www.usa.gov/state-election-office' => 'https://www.usa.gov/es/oficina-elecciones-estatal-local',
