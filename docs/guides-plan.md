@@ -36,7 +36,17 @@ Read or seen Nov 9:
   answer by state on the page.
 - **"special election"** is mostly news results. CRS ranks second with a short explainer.
 
-Ballotpedia's and NCSL's pages haven't been read closely yet.
+- **"what is a runoff election" (read Nov 9):**
+  - Ballotpedia (#1): an encyclopedia entry with 23 footnotes and no visible date. Its tables are navigation boxes, not state data.
+  - MultiState (#2), the strongest: a map, a nine-state table and state profiles. But the table rows cite no sources (one
+    government link on the whole page), show no date and give no runoff timing.
+  - NCSL: says "Seven states", then lists nine. It also gets Texas's runoff timing wrong: six weeks, where the statute puts it
+    about 12 weeks after the primary.
+- **Runoff questions people search:** "when is the runoff election in Texas" adds up to about 1,600 a month across phrasings,
+  Georgia about 650, and "who can vote in a runoff election" 200. The guide gives each state's timing rule; the state pages
+  give the year's date.
+
+Research: `docs/research/guide-runoff-elections.md`. Draft: `docs/drafts/runoff-elections.md`.
 
 **Our edge:** a neutral answer for your state on the page, with its source and checked date. Then a labeled map, a visible table
 and plain language, in English and Spanish, from a site people already use for their state's dates.
