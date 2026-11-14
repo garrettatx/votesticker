@@ -1,0 +1,568 @@
+[
+  {
+    "abbr": "AL", "type": "open_record", "checked": "2026-11-14",
+    "rule": {
+      "en": "Alabama has no party registration, so any voter can ask for one party's primary ballot, and poll workers record which party's primary you chose.",
+      "es": "Alabama no registra a los votantes por partido, así que puedes pedir la boleta de un partido en la primaria, y el personal electoral anota qué primaria elegiste."
+    },
+    "quote": "A voter may participate in only one political party's primary [§ 17-13-7(a)]",
+    "cite": "Ala. Code 17-13-7 (as quoted in the SOS 2026 Poll Worker Guide); 17-13-7.1; 17-13-100",
+    "unaffiliated": {
+      "v": "yes",
+      "en": "Every voter picks a party's ballot at the primary; there is no party to join first.",
+      "es": "Cada votante elige la boleta de un partido en la primaria; no hay que afiliarse antes."
+    },
+    "change": {
+      "v": "yes", "deadline_days": null,
+      "en": "No party registration to change. You can pick a different party at each new primary, but if you vote in one party's primary you can only vote in that party's runoff.",
+      "es": "No hay afiliación que cambiar. Puedes elegir otro partido en cada primaria nueva, pero si votas en la primaria de un partido, solo puedes votar en la segunda vuelta de ese partido."
+    },
+    "by_party": null,
+    "presidential": {
+      "en": "The presidential preference primary is held the first Tuesday in March of presidential years, separate from the state primary; the same pick-one-party rule applies.",
+      "es": "La primaria presidencial se hace el primer martes de marzo de los años de elección presidencial, aparte de la primaria estatal; se aplica la misma regla de elegir un solo partido."
+    },
+    "sources": [
+      {"title": "Alabama Secretary of State, 2026 Voter Guide (Political Party Registration; Crossover Voting Rules)", "url": "https://www.sos.alabama.gov/sites/default/files/election-2026/2026-VoterGuide.pdf"},
+      {"title": "Alabama Secretary of State, 2026 Poll Worker Guide (citing Ala. Code 17-13-7 and 17-13-7.1)", "url": "https://www.sos.alabama.gov/sites/default/files/election-2026/2026%20Poll%20Worker%20Guide%20Complete.pdf"},
+      {"title": "Code of Alabama 17-13-100", "url": "https://alison.legislature.state.al.us/code-of-alabama?section=17-13-100"}
+    ],
+    "open_questions": [
+      "Ala. Code 17-13-7 not read on the Code of Alabama site (the tab failed); text comes from the SOS Poll Worker Guide's citation.",
+      "The SOS register-to-vote page shows an image named 'political party designation on VR app'; the 2026 Voter Guide says Alabama has no party registration law. Check the current registration form."
+    ]
+  },
+  {
+    "abbr": "AK", "type": "top4", "checked": "2026-11-14",
+    "rule": {
+      "en": "All candidates for state and congressional offices are on one primary ballot, every voter can vote for anyone, and the top four go on to the general election.",
+      "es": "Todos los candidatos a cargos estatales y del Congreso aparecen en una sola boleta en la primaria, cualquier votante puede votar por quien quiera, y los cuatro con más votos pasan a la elección general."
+    },
+    "quote": "The primary election does not serve to determine the nominee of a political party or political group",
+    "cite": "AS 15.25.010, 15.25.100",
+    "unaffiliated": {
+      "v": "yes",
+      "en": "Every voter gets the same ballot, whatever their party registration.",
+      "es": "Todos los votantes reciben la misma boleta, sin importar su afiliación."
+    },
+    "change": {
+      "v": "yes", "deadline_days": null,
+      "en": "Not needed: party registration does not limit which candidates you can vote for.",
+      "es": "No hace falta: tu afiliación no limita por quién puedes votar."
+    },
+    "by_party": null,
+    "presidential": {
+      "en": "Alaska has no state presidential primary; each party picks its presidential nominee through its own process, usually caucuses.",
+      "es": "Alaska no tiene primaria presidencial estatal; cada partido elige a su candidato presidencial con su propio proceso, casi siempre por caucus."
+    },
+    "sources": [
+      {"title": "Alaska Statutes 15.25.010 and 15.25.100", "url": "https://www.akleg.gov/basis/statutes.asp#15.25.010"},
+      {"title": "Alaska Division of Elections, Election Information (Top Four Primary; presidential)", "url": "https://www.elections.alaska.gov/election-information/"},
+      {"title": "Alaska Division of Elections, 2026 General Election Summary Report, unofficial (Nov. 13, 2026)", "url": "https://www.elections.alaska.gov/enr/26GENR/results/ElectionSummaryReportRPT.pdf"}
+    ],
+    "open_questions": [
+      "Ballot Measure 2 (Nov. 3, 2026) would repeal the top-four primary. Unofficial results as of Nov. 13, 2026: No 141,750 (53.52%), Yes 123,095 (46.48%). Recheck after certification before publishing."
+    ]
+  },
+  {
+    "abbr": "AZ", "type": "partial", "checked": "2026-11-14",
+    "rule": {
+      "en": "Party members get their own party's ballot, and voters registered as independent or with no party choose one recognized party's ballot.",
+      "es": "Los miembros de un partido reciben la boleta de su partido, y los votantes registrados como independientes o sin partido eligen la boleta de un partido reconocido."
+    },
+    "quote": "there shall be provided a separate ballot for each party entitled to participate in the primary",
+    "cite": "A.R.S. 16-467",
+    "unaffiliated": {
+      "v": "yes",
+      "en": "Independent and no-party voters choose one recognized party's ballot for the state primary.",
+      "es": "Los votantes independientes o sin partido eligen la boleta de un partido reconocido para la primaria estatal."
+    },
+    "change": {
+      "v": "yes", "deadline_days": 29,
+      "en": "Update your party registration by the registration deadline, midnight 29 days before the election.",
+      "es": "Actualiza tu afiliación antes del cierre del registro, a medianoche 29 días antes de la elección."
+    },
+    "by_party": null,
+    "presidential": {
+      "en": "Independent voters cannot vote in the Presidential Preference Election; only voters registered with a participating party can.",
+      "es": "Los votantes independientes no pueden votar en la elección de preferencia presidencial; solo pueden votar quienes están registrados con un partido participante."
+    },
+    "sources": [
+      {"title": "Arizona Revised Statutes 16-467", "url": "https://www.azleg.gov/ars/16/00467.htm"},
+      {"title": "Arizona Revised Statutes 16-241", "url": "https://www.azleg.gov/ars/16/00241.htm"},
+      {"title": "Arizona Revised Statutes 16-120", "url": "https://www.azleg.gov/ars/16/00120.htm"},
+      {"title": "Arizona Secretary of State, news release of June 21, 2024 on independent voters", "url": "https://azsos.gov/news/799"}
+    ],
+    "open_questions": [
+      "No Arizona page read says in plain words that choosing a party ballot leaves an independent's registration unchanged; 16-467(B) describes choosing a ballot, not changing registration.",
+      "16-467 limits the choice to parties with continued representation under 16-804; check which parties qualify each cycle."
+    ]
+  },
+  {
+    "abbr": "AR", "type": "open_record", "checked": "2026-11-14",
+    "rule": {
+      "en": "Any voter can choose one party's primary ballot or a nonpartisan ballot, and the poll worker marks your choice on the voter list.",
+      "es": "Cualquier votante puede elegir la boleta de un partido o una boleta no partidista, y el personal electoral anota tu elección en la lista de votantes."
+    },
+    "quote": "the election official shall mark next to the voter's name on the precinct voter registration list the party primary",
+    "cite": "Ark. Code 7-7-308(b)",
+    "unaffiliated": {
+      "v": "yes",
+      "en": "You state which party primary you want at the polls; no advance party membership is required.",
+      "es": "En la casilla dices en qué primaria quieres votar; no hace falta afiliarte antes."
+    },
+    "change": {
+      "v": "yes", "deadline_days": null,
+      "en": "No switch needed before the primary. A voter who votes in one party's primary cannot vote in another party's runoff.",
+      "es": "No hace falta cambiar nada antes de la primaria. Quien vota en la primaria de un partido no puede votar en la segunda vuelta de otro partido."
+    },
+    "by_party": null,
+    "presidential": null,
+    "sources": [
+      {"title": "Arkansas Code 7-7-308 and 7-8-201 (Election Laws of Arkansas, 2025 Edition, Secretary of State)", "url": "https://www.sos.arkansas.gov/uploads/elections/Arkansas_Election_Laws_and_Constitution_2025_Edition.pdf"},
+      {"title": "Arkansas Secretary of State, Voting in Arkansas", "url": "https://www.sos.arkansas.gov/elections/voter-information/voter-registration-information/voting-in-arkansas"}
+    ],
+    "open_questions": [
+      "The registration form has a party affiliation field (Amendment 51, as printed in the 2025 compilation). No page read says whether a party listed on registration limits ballot choice; the SOS page says you state your choice at the polls.",
+      "Presidential: 7-8-201 requires a party preferential primary for national delegates; with 7-7-203(b) setting the preferential primary in March, it appears to share the state primary date. Confirm on the next presidential calendar."
+    ]
+  },
+  {
+    "abbr": "CA", "type": "top2", "checked": "2026-11-14",
+    "rule": {
+      "en": "For state and congressional offices, all candidates are on one ballot, every voter can vote for anyone, and the top two go on to November, even if they share a party.",
+      "es": "Para cargos estatales y del Congreso, todos los candidatos están en una sola boleta, cualquier votante puede votar por quien quiera, y los dos con más votos pasan a noviembre, aunque sean del mismo partido."
+    },
+    "quote": "The candidates who are the top two vote-getters at a voter-nominated primary election ... shall, regardless of party preference, compete in the ensuing general election.",
+    "cite": "Cal. Const. art. II, sec. 5(a); Elections Code 13102",
+    "unaffiliated": {
+      "v": "yes",
+      "en": "No Party Preference voters vote in all top-two contests without joining a party.",
+      "es": "Los votantes sin preferencia de partido votan en todas las contiendas de los dos primeros lugares sin afiliarse."
+    },
+    "change": {
+      "v": "yes", "deadline_days": null,
+      "en": "Not needed for state and congressional races. It matters only for the presidential primary.",
+      "es": "No hace falta para cargos estatales y del Congreso. Solo importa en la primaria presidencial."
+    },
+    "by_party": {
+      "en": "Presidential primary only: each party decides by rule, sent to the Secretary of State, whether No Party Preference voters may ask for its ballot. For March 2024: American Independent, Democratic and Libertarian.",
+      "es": "Solo en la primaria presidencial: cada partido decide, con una regla enviada a la Secretaría de Estado, si los votantes sin partido pueden pedir su boleta. En marzo de 2024: American Independent, Demócrata y Libertario."
+    },
+    "presidential": {
+      "en": "The presidential primary is a party primary, not top-two. Party members vote their party's ballot; No Party Preference voters can ask for a ballot only from a party that allows it.",
+      "es": "La primaria presidencial es por partido, no de los dos primeros lugares. Los miembros votan la boleta de su partido; los votantes sin partido solo pueden pedir la boleta de un partido que lo permita."
+    },
+    "sources": [
+      {"title": "California Constitution, Article II, Section 5", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CONS&sectionNum=SEC.%205.&article=II"},
+      {"title": "California Elections Code 13102", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=ELEC&sectionNum=13102."},
+      {"title": "California Secretary of State, Primary Elections in California", "url": "https://www.sos.ca.gov/elections/primary-elections-california"},
+      {"title": "California Secretary of State, History of Political Parties That Have Adopted Party Rules Regarding No Party Preference Voters", "url": "https://www.sos.ca.gov/elections/political-parties/no-party-preference/history-political-parties-have-adopted-party-rules-regarding-no-party-preference-voters"}
+    ],
+    "open_questions": [
+      "Party list for the 2028 presidential primary not yet published; recheck the SOS history page.",
+      "Conditional (same-day) registration under Elections Code 2170 lets a voter re-register with a party late; 2170 was not read in this pass."
+    ]
+  },
+  {
+    "abbr": "CO", "type": "partial", "checked": "2026-11-14",
+    "rule": {
+      "en": "Party members vote their own party's primary, and unaffiliated voters choose one major party's primary without joining it.",
+      "es": "Los miembros de un partido votan en la primaria de su partido, y los votantes no afiliados eligen la primaria de un partido mayoritario sin afiliarse."
+    },
+    "quote": "An eligible unaffiliated elector ... is entitled to vote in the primary election of a major political party without affiliating with that political party.",
+    "cite": "C.R.S. 1-7-201(2.3)",
+    "unaffiliated": {
+      "v": "yes",
+      "en": "Unaffiliated voters get both major-party ballots and return only one; they stay unaffiliated.",
+      "es": "Los votantes no afiliados reciben las boletas de los dos partidos mayoritarios y devuelven solo una; siguen sin afiliación."
+    },
+    "change": {
+      "v": "yes", "deadline_days": 22,
+      "en": "A party member can change or drop their party up to the 22nd day before the primary.",
+      "es": "Un miembro de un partido puede cambiar o dejar su afiliación hasta el día 22 antes de la primaria."
+    },
+    "by_party": {
+      "en": "Major parties must admit unaffiliated voters. A minor party may bar them by telling the Secretary of State at least 75 days before the primary. A party can also skip the primary and nominate by assembly with a three-fourths vote of its state central committee.",
+      "es": "Los partidos mayoritarios deben admitir a los no afiliados. Un partido minoritario puede excluirlos si avisa a la Secretaría de Estado al menos 75 días antes de la primaria. Un partido también puede dejar la primaria y nominar por asamblea con el voto de tres cuartas partes de su comité central."
+    },
+    "presidential": {
+      "en": "The presidential primary is a separate election in March or earlier, set by the governor. Unaffiliated voters can vote in it, and the same 22-day party-change deadline applies.",
+      "es": "La primaria presidencial es una elección aparte, en marzo o antes, en la fecha que fija el gobernador. Los no afiliados pueden votar, y aplica el mismo plazo de 22 días para cambiar de partido."
+    },
+    "sources": [
+      {"title": "Colorado Revised Statutes 1-7-201, 1-2-219, 1-4-702, 1-4-1203, 1-4-1304 (2024 printout, Colorado General Assembly)", "url": "https://content.leg.colorado.gov/sites/default/files/images/olls/crs2024-title-01.pdf"},
+      {"title": "Colorado Secretary of State, Primary Elections FAQ", "url": "https://www.sos.state.co.us/pubs/elections/FAQs/primaryElectionsFAQ.html"}
+    ],
+    "open_questions": [
+      "Statutes read in the 2024 uncertified printout; 2025 and 2026 amendments not checked.",
+      "Which minor parties barred unaffiliated voters in 2026: the SOS FAQ says Unity was the only minor party holding a primary that allowed them. It does not name the others."
+    ]
+  },
+  {
+    "abbr": "CT", "type": "closed", "checked": "2026-11-14",
+    "rule": {
+      "en": "Only voters enrolled in a party can vote in its primary; unaffiliated voters can enroll until noon the day before the primary.",
+      "es": "Solo los votantes inscritos en un partido pueden votar en su primaria; los no afiliados pueden inscribirse hasta el mediodía del día antes de la primaria."
+    },
+    "quote": "No person shall be permitted to vote at a primary of a party unless (1) he is on the last-completed enrollment list of such party",
+    "cite": "Conn. Gen. Stat. 9-431(a), 9-56, 9-59",
+    "unaffiliated": {
+      "v": "yes",
+      "en": "Only by enrolling in the party, by noon the day before the primary (or before early voting starts, to vote early). Enrollment stays until you change it.",
+      "es": "Solo si te inscribes en el partido, antes del mediodía del día antes de la primaria (o antes de que empiece el voto anticipado, para votar antes). La inscripción sigue hasta que la cambies."
+    },
+    "change": {
+      "v": "yes", "deadline_days": null,
+      "en": "A voter who switches parties must wait three months before voting in the new party's primary (for Aug. 11, 2026, the deadline was May 11).",
+      "es": "Quien cambia de partido debe esperar tres meses antes de votar en la primaria del nuevo partido (para el 11 de agosto de 2026, el plazo fue el 11 de mayo)."
+    },
+    "by_party": {
+      "en": "State law lets a party's filed rules open its primary to unaffiliated voters. For 2026 the Secretary of the State says only registered party members can vote in that party's primary.",
+      "es": "La ley permite que un partido abra su primaria a los no afiliados con sus reglas registradas. Para 2026, la Secretaría de Estado dice que solo los miembros registrados pueden votar en la primaria de su partido."
+    },
+    "presidential": {
+      "en": "A separate presidential preference primary is held the first Tuesday in April of presidential years.",
+      "es": "La primaria presidencial se hace aparte, el primer martes de abril de los años de elección presidencial."
+    },
+    "sources": [
+      {"title": "Connecticut General Statutes 9-431 (Chapter 153)", "url": "https://www.cga.ct.gov/current/pub/chap_153.htm"},
+      {"title": "Connecticut General Statutes 9-56 and 9-59 (Chapter 143)", "url": "https://www.cga.ct.gov/current/pub/chap_143.htm"},
+      {"title": "Connecticut General Statutes 9-464 (Chapter 154)", "url": "https://www.cga.ct.gov/current/pub/chap_154.htm"},
+      {"title": "Connecticut Secretary of the State, press release, May 7, 2026 (updated July 15, 2026)", "url": "https://portal.ct.gov/sots/press-releases/2026-press-releases/deadline-approaching---connecticut-voters-who-want-to-change-parties-and-vote-in-2026-primaries"}
+    ],
+    "open_questions": [
+      "Labeling: unaffiliated voters can join up to the day before, which some sources call partially closed. Kept as closed because the voter must enroll and the SOTS says only members vote.",
+      "Whether the same enrollment rules apply to the presidential primary was not read in the statute (9-464 sets only the date)."
+    ]
+  },
+  {
+    "abbr": "DE", "type": "closed", "checked": "2026-11-14",
+    "rule": {
+      "en": "Only voters registered with a party can vote in that party's primary; voters with no party cannot vote in a primary.",
+      "es": "Solo los votantes registrados con un partido pueden votar en la primaria de ese partido; quienes no tienen partido no pueden votar en primarias."
+    },
+    "quote": "An elector may vote in the primary election of a political party only if the elector is a duly registered voter",
+    "cite": "15 Del. C. 3110, 2049(a), 3189",
+    "unaffiliated": {
+      "v": "no",
+      "en": "Must register with the party by the party-change deadline. In 2026 only, voters registered automatically at the DMV without a party could pick one through primary day.",
+      "es": "Tienes que registrarte con el partido antes del plazo para cambiar de partido. Solo en 2026, quienes se registraron automáticamente en el DMV sin partido pudieron elegir uno hasta el día de la primaria."
+    },
+    "change": {
+      "v": "yes", "deadline_days": null,
+      "en": "Party changes stop from the last Saturday in May through primary day (in 2026, the last day was Friday, May 29, for the Sept. 15 primary).",
+      "es": "Los cambios de partido se suspenden desde el último sábado de mayo hasta el día de la primaria (en 2026, el último día fue el viernes 29 de mayo, para la primaria del 15 de septiembre)."
+    },
+    "by_party": null,
+    "presidential": {
+      "en": "The presidential primary is also closed, but the party-change deadline is 60 days before it.",
+      "es": "La primaria presidencial también es cerrada, pero el plazo para cambiar de partido es 60 días antes."
+    },
+    "sources": [
+      {"title": "Delaware Code Title 15, 3110 (Chapter 31, Subchapter I)", "url": "https://delcode.delaware.gov/title15/c031/sc01/index.html"},
+      {"title": "Delaware Code Title 15, 2049 (Chapter 20, Subchapter VI)", "url": "https://delcode.delaware.gov/title15/c020/sc06/index.html"},
+      {"title": "Delaware Code Title 15, 3189 (Chapter 31, Subchapter V)", "url": "https://delcode.delaware.gov/title15/c031/sc05/index.html"},
+      {"title": "Delaware Department of Elections, Primary Election page", "url": "https://elections.delaware.gov/elections/primary/primary.html"},
+      {"title": "Delaware Department of Elections, Voter Registration FAQ", "url": "https://elections.delaware.gov/voter/VoterRegistrationFAQ.html"}
+    ],
+    "open_questions": [
+      "The Voter Registration FAQ gives Aug. 22, 2026 for AVR voters to pick a party; the Primary Election page says through Sept. 15, 2026. Same office, two dates.",
+      "The 2026 AVR exception's statute (a 'recent change in Delaware law') was not read; the Department says 2026 is the last election it applies."
+    ]
+  },
+  {
+    "abbr": "DC", "type": "closed", "checked": "2026-11-14",
+    "rule": {
+      "en": "In the 2026 primary, only voters registered with the Democratic, Republican or DC Statehood Green party could vote in that party's primary.",
+      "es": "En la primaria de 2026, solo los votantes registrados con el Partido Demócrata, Republicano o DC Statehood Green pudieron votar en la primaria de ese partido."
+    },
+    "quote": "A qualified elector shall not change the qualified elector's party affiliation after the 21st day preceding an election",
+    "cite": "D.C. Code 1-1001.07(g)(4)",
+    "unaffiliated": {
+      "v": "no",
+      "en": "Voters not in a party got only the non-primary contests in 2026. First-time DC registrants can pick a party when they register on the same day.",
+      "es": "En 2026, los votantes sin partido solo recibieron las contiendas que no eran de la primaria. Quien se registra por primera vez en DC puede elegir partido al registrarse el mismo día."
+    },
+    "change": {
+      "v": "yes", "deadline_days": 21,
+      "en": "Party changes must be made at least 21 days before the primary; later changes take effect after it.",
+      "es": "Los cambios de partido deben hacerse al menos 21 días antes de la primaria; los cambios posteriores cuentan después."
+    },
+    "by_party": null,
+    "presidential": {
+      "en": "Not checked on an official page in this pass.",
+      "es": "No se revisó en una página oficial en esta ronda."
+    },
+    "sources": [
+      {"title": "D.C. Code 1-1001.07", "url": "https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.07"},
+      {"title": "DC Board of Elections, Voter Registration FAQ", "url": "https://www.dcboe.org/FAQS/Voter-Registration/"},
+      {"title": "DC Board of Elections, 2026 Primary Voter Guide", "url": "https://www.dcboe.org/getmedia/50133a18-05de-4aaf-9212-9f731dd97301/DCBOE-Voter-Guide-PRIMARY-2026-WEB2.pdf"}
+    ],
+    "open_questions": [
+      "Initiative 83 (2024) adds semi-open primaries for unaffiliated voters, subject to funding. News reports (leads only) say the Council funded them in June 2026 for the 2028 cycle. No DCBOE or D.C. Code page read confirms the start date. This row may change before 2028.",
+      "Presidential primary rules and the party-run 2024 Republican contest not read."
+    ]
+  },
+  {
+    "abbr": "FL", "type": "closed", "checked": "2026-11-14",
+    "rule": {
+      "en": "Only voters registered with a party can vote in its primary, except that all voters can vote in a race where every candidate is from one party and no one will oppose the winner in November.",
+      "es": "Solo los votantes registrados con un partido pueden votar en su primaria, salvo que todos pueden votar en una contienda donde todos los candidatos son del mismo partido y nadie se enfrentará al ganador en noviembre."
+    },
+    "quote": "In a primary election a qualified elector is entitled to vote the official primary election ballot of the political party designated in the elector's registration, and no other.",
+    "cite": "Fla. Stat. 101.021, 97.055",
+    "unaffiliated": {
+      "v": "no",
+      "en": "Only in universal primary contests and nonpartisan races; otherwise you must be registered with the party.",
+      "es": "Solo en contiendas de primaria universal y en contiendas no partidistas; para lo demás, tienes que estar registrado con el partido."
+    },
+    "change": {
+      "v": "yes", "deadline_days": 29,
+      "en": "Change your party by the registration deadline, 29 days before the primary. Later changes count only for later elections.",
+      "es": "Cambia de partido antes del cierre del registro, 29 días antes de la primaria. Los cambios posteriores cuentan solo para elecciones futuras."
+    },
+    "by_party": null,
+    "presidential": null,
+    "sources": [
+      {"title": "Florida Statutes 101.021", "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0101/Sections/0101.021.html"},
+      {"title": "Florida Statutes 97.055", "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0097/Sections/0097.055.html"},
+      {"title": "Florida Division of Elections, Closed Primary Elections", "url": "https://dos.fl.gov/elections/for-voters/voter-registration/closed-primary-elections/"}
+    ],
+    "open_questions": [
+      "The Division of Elections page says the same closed rule and deadline apply to the presidential preference primary; its date (Fla. Stat. 103.101) was not read, so 'presidential' is null for type only.",
+      "The Closed Primary page says 'last updated: January 31, 2020'."
+    ]
+  },
+  {
+    "abbr": "GA", "type": "open_record", "checked": "2026-11-14",
+    "rule": {
+      "en": "Georgia has no party registration; at each primary you choose a Republican, Democratic or nonpartisan ballot, and your choice becomes public record.",
+      "es": "Georgia no registra a los votantes por partido; en cada primaria eliges una boleta republicana, demócrata o no partidista, y tu elección queda como registro público."
+    },
+    "quote": "Voters do not register with a political party because Georgia is an open primary state.",
+    "cite": "Georgia Secretary of State, Elections FAQ (O.C.G.A. not read)",
+    "unaffiliated": {
+      "v": "yes",
+      "en": "Every voter chooses a party ballot at the primary; there is no party to join.",
+      "es": "Cada votante elige la boleta de un partido en la primaria; no hay partido al que afiliarse."
+    },
+    "change": {
+      "v": "yes", "deadline_days": null,
+      "en": "Your choice can be different at each primary, but a voter who took a party ballot gets the same party's ballot in the runoff.",
+      "es": "Puedes elegir otro partido en cada primaria, pero quien votó con la boleta de un partido recibe la de ese mismo partido en la segunda vuelta."
+    },
+    "by_party": null,
+    "presidential": {
+      "en": "The presidential preference primary is held on its own date (March 12 in 2024); its rules were not read on an official page.",
+      "es": "La primaria presidencial se hace en otra fecha (el 12 de marzo en 2024); sus reglas no se leyeron en una página oficial."
+    },
+    "sources": [
+      {"title": "Georgia Secretary of State, Elections FAQ", "url": "https://sos.ga.gov/page/elections-faq"}
+    ],
+    "open_questions": [
+      "O.C.G.A. 21-2-224 and related sections are only on the LexisNexis portal, which failed in earlier passes; not retried.",
+      "The 2024 presidential date comes from a search result for the SOS 2024 calendar; the PDF returned 403. Read it in Chrome before using the date."
+    ]
+  },
+  {
+    "abbr": "HI", "type": "open", "checked": "2026-11-14",
+    "rule": {
+      "en": "Voters don't register by party; on the primary ballot you pick one party (or nonpartisan) and vote only in that party's races, and the pick does not make you a member.",
+      "es": "Los votantes no se registran por partido; en la boleta de la primaria eliges un partido (o no partidista) y votas solo en sus contiendas, y esa elección no te hace miembro."
+    },
+    "quote": "No person shall be required to state a party preference or nonpartisanship as a condition of voting.",
+    "cite": "HRS 12-31",
+    "unaffiliated": {
+      "v": "yes",
+      "en": "Every voter picks a party on the ballot itself; party affiliation is not part of voter registration.",
+      "es": "Cada votante elige el partido en la propia boleta; la afiliación no forma parte del registro de votantes."
+    },
+    "change": {
+      "v": "yes", "deadline_days": null,
+      "en": "Nothing to change: you can pick a different party at every primary.",
+      "es": "No hay nada que cambiar: puedes elegir otro partido en cada primaria."
+    },
+    "by_party": null,
+    "presidential": {
+      "en": "Hawaii does not hold a presidential primary; the parties run their own presidential caucuses.",
+      "es": "Hawaii no tiene primaria presidencial; los partidos hacen sus propios caucus presidenciales."
+    },
+    "sources": [
+      {"title": "Hawaii Revised Statutes 12-31", "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol01_Ch0001-0042F/HRS0012/HRS_0012-0031.htm"},
+      {"title": "Hawaii Office of Elections, Voting in Hawaii", "url": "https://elections.hawaii.gov/voting/voting-in-hawaii/"}
+    ],
+    "open_questions": []
+  },
+  {
+    "abbr": "ID", "type": "partial", "checked": "2026-11-14",
+    "rule": {
+      "en": "Each party decides who can vote in its primary. In 2026 the Democratic primary was open to all voters, while the Republican and Libertarian primaries were for party members only.",
+      "es": "Cada partido decide quién puede votar en su primaria. En 2026, la primaria demócrata estuvo abierta a todos, mientras que las primarias republicana y libertaria fueron solo para miembros."
+    },
+    "quote": "shall not change or affect the elector's unaffiliated designation",
+    "cite": "Idaho Code 34-904A, 34-411A",
+    "unaffiliated": {
+      "v": "dep",
+      "en": "They can vote in an opened primary and stay unaffiliated, or join a closed party's primary by affiliating up to and on election day; that affiliation stays.",
+      "es": "Pueden votar en una primaria abierta y seguir sin afiliación, o votar en la primaria de un partido cerrado si se afilian, incluso el día de la elección; esa afiliación queda."
+    },
+    "change": {
+      "v": "yes", "deadline_days": null,
+      "en": "A party member must switch by the last day for candidates to file (March 13 for the May 19, 2026 primary).",
+      "es": "Un miembro de un partido debe cambiar antes del último día de inscripción de candidatos (el 13 de marzo para la primaria del 19 de mayo de 2026)."
+    },
+    "by_party": {
+      "en": "A party opens its primary by written notice to the Secretary of State by the last Tuesday in November before the primary. 2026 absentee form: Democratic ballot open to anyone; Republican and Libertarian ballots require affiliation.",
+      "es": "Un partido abre su primaria con un aviso por escrito a la Secretaría de Estado a más tardar el último martes de noviembre antes de la primaria. Formulario de voto en ausencia 2026: la boleta demócrata está abierta a todos; las boletas republicana y libertaria exigen afiliación."
+    },
+    "presidential": {
+      "en": "Not confirmed on an official page in this pass.",
+      "es": "No se confirmó en una página oficial en esta ronda."
+    },
+    "sources": [
+      {"title": "Idaho Code 34-904A", "url": "https://legislature.idaho.gov/statutesrules/idstat/Title34/T34CH9/SECT34-904A/"},
+      {"title": "Idaho Code 34-411A", "url": "https://legislature.idaho.gov/statutesrules/idstat/title34/t34ch4/sect34-411a/"},
+      {"title": "Idaho Secretary of State, 2026 Absentee Ballot Request form (EA-5, revised 03/31/2026)", "url": "https://archive.voteidaho.gov/download/forms/absentee_ballot_request.pdf"},
+      {"title": "Idaho Secretary of State, 2026 Election Calendar", "url": "https://archive.voteidaho.gov/download/2026-election-calendar.pdf"}
+    ],
+    "open_questions": [
+      "Party choices are set each cycle; recheck the notices before the 2028 primary.",
+      "Presidential: 2026 H0638 ('to provide for a presidential primary election') passed the House 45-23-2 on 3/09 and was referred to Senate State Affairs on 3/10; no later action shown. Whether Idaho has any state presidential primary in current law was not read."
+    ]
+  },
+  {
+    "abbr": "IL", "type": "open_record", "checked": "2026-11-14",
+    "rule": {
+      "en": "Any voter can vote in a party primary by stating that party to the election judges, who record it; you get only that party's ballot.",
+      "es": "Cualquier votante puede votar en la primaria de un partido si lo dice a los jueces electorales, quienes lo anotan; recibes solo la boleta de ese partido."
+    },
+    "quote": "No person shall be entitled to vote at a primary: (a) Unless he declares his party affiliations as required by this Article.",
+    "cite": "10 ILCS 5/7-43, 5/7-44",
+    "unaffiliated": {
+      "v": "yes",
+      "en": "Declare a party when you vote; there is no advance party registration.",
+      "es": "Declara un partido al votar; no hay registro de partido por adelantado."
+    },
+    "change": {
+      "v": "yes", "deadline_days": 0,
+      "en": "You can declare a different party at each primary. One exception: signing in at another party's town caucus within 45 days before the primary's month bars you.",
+      "es": "Puedes declarar otro partido en cada primaria. Una excepción: si firmaste en el caucus municipal de otro partido dentro de los 45 días antes del mes de la primaria, no puedes votar."
+    },
+    "by_party": null,
+    "presidential": null,
+    "sources": [
+      {"title": "Illinois Compiled Statutes 10 ILCS 5/7-43", "url": "https://www.ilga.gov/documents/legislation/ilcs/documents/001000050K7-43.htm"},
+      {"title": "Illinois Compiled Statutes 10 ILCS 5/7-44", "url": "https://www.ilga.gov/documents/legislation/ilcs/documents/001000050K7-44.htm"},
+      {"title": "Illinois Compiled Statutes 10 ILCS 5/7-11", "url": "https://www.ilga.gov/documents/legislation/ilcs/documents/001000050K7-11.htm"}
+    ],
+    "open_questions": [
+      "No Illinois State Board of Elections plain-language page was read in this pass.",
+      "Presidential: 7-11 puts presidential candidates on the party's general primary ballot, so null here; confirm the primary date statute (2A-1.1) before publishing."
+    ]
+  },
+  {
+    "abbr": "IN", "type": "other", "checked": "2026-11-14",
+    "rule": {
+      "en": "Voters don't register by party; you ask for a party's ballot, and you can be challenged unless you voted mostly for that party last time or plan to next time.",
+      "es": "Los votantes no se registran por partido; pides la boleta de un partido, y te pueden impugnar salvo que en la última elección hayas votado sobre todo por ese partido o pienses hacerlo en la próxima."
+    },
+    "quote": "Indiana strikes a balance between the two and is closer to a closed primary than an open one.",
+    "cite": "IC 3-10-1-6 (as explained by the Indiana Election Division)",
+    "unaffiliated": {
+      "v": "yes",
+      "en": "Any voter can ask for a party ballot; if challenged, you sign an affidavit that you meet the party-support test and get a regular ballot.",
+      "es": "Cualquier votante puede pedir la boleta de un partido; si te impugnan, firmas una declaración de que cumples la prueba de apoyo al partido y recibes una boleta normal."
+    },
+    "change": {
+      "v": "yes", "deadline_days": null,
+      "en": "No registration to change. Your past primary ballot choice is kept as voting history, and the party-support test still applies.",
+      "es": "No hay afiliación que cambiar. Tu elección de boleta en primarias pasadas queda en tu historial, y la prueba de apoyo al partido sigue aplicando."
+    },
+    "by_party": null,
+    "presidential": {
+      "en": "Not checked on an official page in this pass.",
+      "es": "No se revisó en una página oficial en esta ronda."
+    },
+    "sources": [
+      {"title": "Indiana Election Division, The Dispatch, May 2024 (Party Affiliation Challenge, IC 3-10-1-6)", "url": "https://www.in.gov/sos/elections/files/Dispatch.May-2024.FINAL.pdf"},
+      {"title": "Indiana Election Division, 2026 Indiana Voter Information Guide", "url": "https://www.in.gov/sos/elections/voter-information/files/2026-Indiana-Voter-Information-Guide.pdf"}
+    ],
+    "open_questions": [
+      "IC 3-10-1-6 not read on iga.in.gov (the code viewer is a JavaScript app and did not show the section). Text comes from the Election Division's newsletter.",
+      "Type label: 'other' because Indiana fits neither open nor closed; the Election Division calls it closer to closed."
+    ]
+  },
+  {
+    "abbr": "IA", "type": "open_record", "checked": "2026-11-14",
+    "rule": {
+      "en": "You vote only your registered party's ballot, but any registered voter can join or switch parties at the polls on primary day, and the change goes on your record.",
+      "es": "Votas solo la boleta del partido con el que estás registrado, pero cualquier votante registrado puede afiliarse o cambiar de partido en la casilla el día de la primaria, y el cambio queda en tu registro."
+    },
+    "quote": "Any registered voter may change or declare a party affiliation at the polls on election day and shall be entitled to vote at any primary election.",
+    "cite": "Iowa Code 43.42(1)",
+    "unaffiliated": {
+      "v": "yes",
+      "en": "Declare a party at the polls; it is entered on your registration and stays until you change it.",
+      "es": "Declara un partido en la casilla; queda en tu registro hasta que lo cambies."
+    },
+    "change": {
+      "v": "yes", "deadline_days": 0,
+      "en": "Change before registration closes, or at the polls on primary day.",
+      "es": "Cambia antes del cierre del registro o en la casilla el día de la primaria."
+    },
+    "by_party": null,
+    "presidential": {
+      "en": "Presidential delegates start at party-run precinct caucuses, with dates set by each party's state central committee.",
+      "es": "La selección de delegados presidenciales empieza en caucus por distrito que organizan los partidos, en fechas que fija el comité central de cada partido."
+    },
+    "sources": [
+      {"title": "Iowa Code 43.42 (2026)", "url": "https://www.legis.iowa.gov/docs/code/43.42.pdf"},
+      {"title": "Iowa Code 43.41 (2026)", "url": "https://www.legis.iowa.gov/docs/code/43.41.pdf"},
+      {"title": "Iowa Code 43.38 (2026)", "url": "https://www.legis.iowa.gov/docs/code/43.38.pdf"},
+      {"title": "Iowa Code 43.4 (2026)", "url": "https://www.legis.iowa.gov/docs/code/43.4.pdf"}
+    ],
+    "open_questions": [
+      "Iowa Secretary of State voter FAQ returned 403; no plain-language office page was read.",
+      "Whether a party runs a mail-in presidential preference process instead of caucus voting is a party choice; not read."
+    ]
+  },
+  {
+    "abbr": "KS", "type": "partial", "checked": "2026-11-14",
+    "rule": {
+      "en": "Party members vote in their own party's primary, and unaffiliated voters can join a party at the polls on primary day to vote its ballot.",
+      "es": "Los miembros de un partido votan en la primaria de su partido, y los votantes no afiliados pueden afiliarse en la casilla el día de la primaria para votar esa boleta."
+    },
+    "quote": "Such declaration cannot be filed during the time from the candidate filing deadline",
+    "cite": "K.S.A. 25-3301, 25-3304(b)",
+    "unaffiliated": {
+      "v": "yes",
+      "en": "Under current party rules, by signing a party affiliation form at the polls; the affiliation stays after the primary.",
+      "es": "Con las reglas actuales de los partidos, firmando un formulario de afiliación en la casilla; la afiliación sigue después de la primaria."
+    },
+    "change": {
+      "v": "yes", "deadline_days": null,
+      "en": "A party member can't switch from the candidate filing deadline (June 1) until primary results are certified.",
+      "es": "Un miembro de un partido no puede cambiar desde el cierre de inscripción de candidatos (1 de junio) hasta que se certifiquen los resultados de la primaria."
+    },
+    "by_party": {
+      "en": "Each party tells the Secretary of State by January 15 whether unaffiliated voters may vote in its primary. Both major parties currently require them to join the party.",
+      "es": "Cada partido avisa a la Secretaría de Estado antes del 15 de enero si los no afiliados pueden votar en su primaria. Los dos partidos mayoritarios hoy exigen que se afilien."
+    },
+    "presidential": {
+      "en": "Kansas held a one-time state presidential primary in 2024; another requires a new law. Otherwise parties pick delegates by caucus or convention.",
+      "es": "Kansas hizo una primaria presidencial estatal una sola vez en 2024; otra requiere una nueva ley. Si no, los partidos eligen delegados por caucus o convención."
+    },
+    "sources": [
+      {"title": "Kansas Statutes 25-3301", "url": "https://www.ksrevisor.gov/statutes/chapters/ch25/025_033_0001.html"},
+      {"title": "Kansas Statutes 25-3304", "url": "https://www.ksrevisor.gov/statutes/chapters/ch25/025_033_0004.html"},
+      {"title": "Kansas Secretary of State, Election Standards Chapter II (revised 08/01/25)", "url": "https://sos.ks.gov/elections/election-standards/Kansas-Election-Standards-Chapter-II-Election-Administration.pdf"},
+      {"title": "Kansas Secretary of State, press release, May 28, 2026", "url": "https://sos.ks.gov/media/press-releases/2026/05-28-26-june-1st-marks-the-deadline-to-change-party-affiliation.html"},
+      {"title": "Kansas Secretary of State, Presidential Preference Primary", "url": "https://sos.ks.gov/elections/presidential-preference-primary.html"}
+    ],
+    "open_questions": [
+      "The parties' January 15, 2026 notices were not read; the Election Standards (Aug. 2025) describe the parties' practice since 2004 (Republican) and 2014 (Democratic).",
+      "Labeling: 'partial' because unaffiliated voters can join at the polls; editors may prefer 'closed' with a note. Decide one rule for KS, CT and similar states."
+    ]
+  }
+]
