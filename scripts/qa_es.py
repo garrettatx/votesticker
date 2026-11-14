@@ -168,7 +168,7 @@ def main():
                 fail(f'/{p}: noindex en={en_noindex} es={noindex}')
         if urljoin(base, es.switch) not in (PROD + p, urljoin(base, p)) or urljoin(base, en.switch) not in (PROD + 'es/' + p, urljoin(base, 'es/' + p)):
             fail(f'/{p}: language switch en->{en.switch} es->{es.switch}')
-        if es.meta.get('og:locale') != 'es_MX' or not re.search(r'/assets/(og/es/|og-hub-es)', es.meta.get('og:image', '')):
+        if es.meta.get('og:locale') != 'es_MX' or not re.search(r'/assets/(og/es/|og/guides/es/|og-hub-es)', es.meta.get('og:image', '')):
             fail(f'/es/{p}: og:locale {es.meta.get("og:locale")} og:image {es.meta.get("og:image")}')
         try:
             crumbs = json.loads(es.ld[0])['itemListElement']

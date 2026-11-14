@@ -144,7 +144,8 @@ def main():
             fail(f'/{p}: has a ?state= link')
         og = pg.meta.get('og:image', '')
         # The card can come from the phase's set (index.php: og/ended/, og/post/, og-hub-post.jpg).
-        want_og = (rf'{PROD}assets/og/((ended|post)/)?{re.escape(p[:-1])}\.jpg\?v=' if p and p not in ('about/', 'history/', 'stickers/', 'voting/runoff-elections/')
+        want_og = (rf'{PROD}assets/og/guides/(es/)?{re.escape(p[7:-1])}\.jpg\?v=' if p.startswith('voting/')
+                   else rf'{PROD}assets/og/((ended|post)/)?{re.escape(p[:-1])}\.jpg\?v=' if p and p not in ('about/', 'history/', 'stickers/')
                    else rf'{PROD}assets/og-hub(-post)?\.jpg\?v=')
         if not re.match(want_og, og):
             fail(f'/{p}: og:image {og}')

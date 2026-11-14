@@ -568,8 +568,8 @@ function vote_faq_src( $a ) {
 // "you can still vote". Anything counted after Election Day ("five business days after") stays.
 function vote_post_expired( $text ) {
 	if ( 'post' !== vote_phase() ) { return false; }
-	$t = preg_replace( '/\b(the )?Tuesday after the election\b|\bel martes (siguiente a|después de) la elección\b/iu', 'November 10', $text );
-	preg_match_all( '/\b(?:by|before|until|through)\b[^.;]{0,50}?\b(Oct|Nov)(?:ober|ember|\.)? (\d{1,2})\b|\b(?:hasta|antes del?|a más tardar|para cuándo)\b[^.;]{0,50}?\b(\d{1,2}) de (octubre|noviembre)\b/iu', $t, $m, PREG_SET_ORDER );
+	$t = preg_replace( '/\b(the )?Tuesday after the election\b|\bd?el martes (siguiente a|después de) la elección\b/iu', 'November 10', $text );
+	preg_match_all( '/\b(?:by|before|until|through)\b[^.;]{0,50}?\b(Oct|Nov)(?:ober|ember|\.)? (\d{1,2})\b|\b(?:hasta|antes del?|a más tardar|para cuándo)\b[^.;]{0,70}?\b(\d{1,2}) de (octubre|noviembre)\b/iu', $t, $m, PREG_SET_ORDER );
 	$dates = array();
 	foreach ( $m as $x ) { $mon = strtolower( substr( $x[1] ?: $x[4], 0, 3 ) ); $dates[] = sprintf( '2026-%s-%02d', 'oct' === $mon ? '10' : '11', $x[2] ?: $x[3] ); }
 	if ( $dates ) { return max( $dates ) < vote_today(); }
@@ -1431,10 +1431,13 @@ foreach ( array_unique( array( $vote_og_set, '' ) ) as $vote_set ) {
 	if ( $vote_st && is_file( __DIR__ . '/' . $vote_og_dir . $vote_set . $vote_page['slug'] . '.jpg' ) ) { $vote_og = $vote_og_dir . $vote_set . $vote_page['slug'] . '.jpg'; break; }
 }
 $vote_hub_og = ( vote_es() ? 'assets/og-hub-es' : 'assets/og-hub' ) . ( 'post' === vote_phase() ? '-post' : '' ) . '.jpg';
+if ( $vote_guide && is_file( __DIR__ . '/assets/og/guides/' . ( vote_es() ? 'es/' : '' ) . vote_guide_slug() . '.jpg' ) ) { $vote_og = 'assets/og/guides/' . ( vote_es() ? 'es/' : '' ) . vote_guide_slug() . '.jpg'; }
 $vote_og = $vote_og ?: ( is_file( __DIR__ . '/' . $vote_hub_og ) ? $vote_hub_og : ( vote_es() && is_file( __DIR__ . '/assets/og-hub-es.jpg' ) ? 'assets/og-hub-es.jpg' : 'assets/og-hub.jpg' ) );
-$vote_og_alt = vote_es()
+$vote_og_alt = $vote_guide && 0 === strpos( $vote_og, 'assets/og/guides/' ) && ! empty( $vote_page['og_alt'] )
+	? $vote_page['og_alt']
+	: ( vote_es()
 	? ( $vote_st ? $vote_page['h1'] . ': ' . $vote_page['status'] . '. Un sticker para votar de ' . $vote_page['crumb'] . ' sobre papel color crema.' : 'Vote Sticker: muéstrales a tus amigos que vas a votar. Stickers para votar en los 50 estados y DC.' )
-	: ( $vote_st ? $vote_page['h1'] . ': ' . $vote_page['status'] . '. A ' . $vote_page['crumb'] . ' voting sticker on cream paper.' : ( 'post' === vote_phase() ? 'Vote Sticker: voted? Get your sticker. Voting stickers for all 50 states and DC.' : "Vote Sticker: show your friends you're voting. Voting stickers for all 50 states and DC, with ready-made designs from Texas, Washington, Pennsylvania, and California." ) );
+	: ( $vote_st ? $vote_page['h1'] . ': ' . $vote_page['status'] . '. A ' . $vote_page['crumb'] . ' voting sticker on cream paper.' : ( 'post' === vote_phase() ? 'Vote Sticker: voted? Get your sticker. Voting stickers for all 50 states and DC.' : "Vote Sticker: show your friends you're voting. Voting stickers for all 50 states and DC, with ready-made designs from Texas, Washington, Pennsylvania, and California." ) ) );
 
 // Breadcrumbs start at the tool's hub, never the WordPress site (Garrett: no links back to the root).
 $vote_crumbs = array( array( VOTE_BRAND, VOTE_SITE . vote_pbase() ) );

@@ -119,7 +119,7 @@ function vote_guide_meta() {
 	return array(
 		'title' => vote_g_tx( $m['title'] ?? '' ), 'h1' => vote_g_tx( $m['h1'] ?? '' ), 'eyebrow' => '',
 		'lead' => strtr( vote_g_tx( $m['lead'] ?? '' ), vote_g_tokens() ), 'desc' => vote_g_tx( $m['desc'] ?? '' ),
-		'crumb' => vote_g_tx( $m['crumb'] ?? '' ),
+		'crumb' => vote_g_tx( $m['crumb'] ?? '' ), 'og_alt' => vote_g_tx( $m['og_alt'] ?? '' ),
 		'index' => ! vote_es() || VOTE_ES_INDEX,
 	);
 }
@@ -133,7 +133,7 @@ function vote_guide_ld( $page, $url ) {
 		'author' => array( '@type' => 'Organization', 'name' => VOTE_BRAND, 'url' => VOTE_SITE . VOTE_BASE . ( vote_es() ? 'es/' : '' ) . 'about/' ),
 		'publisher' => array( '@type' => 'Organization', 'name' => 'Garrett Digital', 'url' => 'https://www.garrettdigital.com/', 'logo' => array( '@type' => 'ImageObject', 'url' => VOTE_SITE . VOTE_BASE . 'assets/gd-logo.svg' ) ),
 		'about' => array( '@type' => 'Thing', 'name' => vote_guide_data()['about'] ?? $page['h1'] ),
-	);
+	) + ( 0 === strpos( $GLOBALS['vote_og'] ?? '', 'assets/og/guides/' ) ? array( 'image' => VOTE_SITE . VOTE_BASE . $GLOBALS['vote_og'] ) : array() );
 }
 
 // The byline under the answer: who, when it went live, when the facts were last reviewed, and how.

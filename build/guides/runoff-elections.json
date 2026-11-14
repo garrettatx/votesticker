@@ -35,6 +35,10 @@
   "desc": {
    "en": "What a runoff election is, what triggers one, when it happens and who can vote, with each state's rule, the law it comes from and the date we checked it.",
    "es": "Qué es una segunda vuelta, qué la provoca, cuándo se hace y quién puede votar, con la regla de cada estado, la ley de donde sale y la fecha en que la revisamos."
+  },
+  "og_alt": {
+   "en": "Runoff Elections: when they happen and who can vote, with a chart of the vote share each state requires to win without a runoff.",
+   "es": "Elecciones de segunda vuelta: cuándo se hace y quién puede votar, con un gráfico del porcentaje de votos que pide cada estado para ganar sin segunda vuelta."
   }
  },
  "key_facts": [
